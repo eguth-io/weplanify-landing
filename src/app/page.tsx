@@ -296,7 +296,9 @@ export default async function HomePage() {
         </div>
         <div className="flex flex-col">
           <p className="text-sm text-black font-medium">Legal</p>
-          <p className="text-black/75 text-sm mt-6">Condition d'utilisation</p>
+          <p className="text-black/75 text-sm mt-6">
+            Condition d&apos;utilisation
+          </p>
         </div>
       </footer>
       <div className="flex justify-between items-center mx-[60px] mt-6">
