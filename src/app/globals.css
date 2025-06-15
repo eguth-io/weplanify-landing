@@ -2,20 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  scroll-behavior: smooth;
+  color: #1d2026;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+img,
+p,
+span,
+div {
+  -webkit-user-drag: none; /* empêche le drag d'images sur WebKit */
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+
+  -webkit-user-select: none; /* empêche la sélection de texte */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffcfb;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.text-orange {
+  color: #f6391a;
+}
+
+.text-orange p {
+  color: #f6391a;
+}
+
+.font-unbounded {
+  font-family: var(--font-unbounded);
+}
+
+.bg-orange {
+  background-color: #f6391a;
+}
+
+.bg-light {
+  background-color: #feedea;
+}
+
+body {
+  font-family: var(--font-raleway);
 }

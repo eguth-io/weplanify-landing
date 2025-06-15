@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Raleway, Unbounded } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const ralewayFont = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const UnboundedFont = Unbounded({
+  variable: "--font-unbounded",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${ralewayFont.variable} ${UnboundedFont.variable}`}>
         {children}
       </body>
     </html>
