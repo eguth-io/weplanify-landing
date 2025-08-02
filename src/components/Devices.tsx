@@ -4,7 +4,6 @@ import { Features } from "@/sanity/lib/type";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { Iphone16Pro } from "./ui/iphone-16-pro";
 import { MacbookPro } from "./ui/macbook-pro";
 
 export default function Devices({ features }: { features: Features }) {
@@ -20,17 +19,19 @@ export default function Devices({ features }: { features: Features }) {
   // Gestion responsive de la taille des cartes
   useEffect(() => {
     const updateCardWidth = () => {
-      const width = window.innerWidth;
-      if (width < 480) {
-        setCardWidth(Math.floor(width * 0.9)); // Mobile très petit - 90% de la largeur
-      } else if (width < 640) {
-        setCardWidth(Math.floor(width * 0.85)); // Mobile - 85% de la largeur
-      } else if (width < 768) {
-        setCardWidth(Math.floor(width * 0.8)); // Mobile large - 80% de la largeur
-      } else if (width < 1024) {
-        setCardWidth(350); // Tablet
-      } else {
-        setCardWidth(370); // Desktop
+      if (typeof window !== "undefined") {
+        const width = window.innerWidth;
+        if (width < 480) {
+          setCardWidth(Math.floor(width * 0.9)); // Mobile très petit - 90% de la largeur
+        } else if (width < 640) {
+          setCardWidth(Math.floor(width * 0.85)); // Mobile - 85% de la largeur
+        } else if (width < 768) {
+          setCardWidth(Math.floor(width * 0.8)); // Mobile large - 80% de la largeur
+        } else if (width < 1024) {
+          setCardWidth(350); // Tablet
+        } else {
+          setCardWidth(370); // Desktop
+        }
       }
     };
 
@@ -131,9 +132,12 @@ export default function Devices({ features }: { features: Features }) {
   return (
     <div>
       <div className="relative flex justify-center px-4 md:px-6 lg:px-0">
-        <Iphone16Pro
-          className="hidden sm:block absolute right-[5%] md:right-[7%] top-[5%] md:top-[7%] w-[180px] h-[360px] sm:w-[220px] sm:h-[440px] md:w-[250px] md:h-[500px] lg:w-[300px] lg:h-[600px]"
+        <Image
           src={currentFeature.imageMobile}
+          className="hidden sm:block absolute right-[5%] md:right-[7%] top-[5%] md:top-[7%] w-[180px] h-[360px] sm:w-[220px] sm:h-[440px] md:w-[250px] md:h-[500px] lg:w-[300px] lg:h-[600px]"
+          alt={currentFeature.title}
+          width={250}
+          height={500}
         />
 
         <MacbookPro
@@ -142,14 +146,16 @@ export default function Devices({ features }: { features: Features }) {
         />
       </div>
 
+      {/* Features Carousel Section - Responsive */}
       <div className="py-8 md:py-12 lg:py-16">
+        {/* Carousel Container */}
         <div className="relative">
           <div
             ref={containerRef}
             className="flex gap-3 md:gap-4 lg:gap-6 overflow-x-auto scrollbar-hide pb-4 cursor-grab active:cursor-grabbing select-none px-4 md:px-6 lg:px-8"
             style={{
               scrollBehavior: "auto",
-              scrollSnapType: window.innerWidth < 768 ? "none" : "x mandatory",
+              scrollSnapType: "x mandatory",
             }}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
@@ -181,7 +187,7 @@ export default function Devices({ features }: { features: Features }) {
                         : "270px",
                   // Ajout de margin pour éviter le crop lors du scale
                   margin: activeIndex === index ? "5px md:10px" : "0px",
-                  scrollSnapAlign: window.innerWidth >= 768 ? "start" : "none",
+                  scrollSnapAlign: "start",
                 }}
                 onClick={() => handleFeatureClick(index)}
                 onMouseDown={(e: React.MouseEvent<HTMLDivElement>) =>
