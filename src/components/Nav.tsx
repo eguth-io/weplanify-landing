@@ -12,9 +12,31 @@ export default async function Nav() {
   });
 
   return (
-    <nav className="flex justify-between items-center px-[70px] py-[30px] fixed w-full z-50">
-      <Image src={navData.logo} alt="logo" width={154} height={66} />
-      <div className="flex items-center gap-6">
+    <nav className="bg-[#FFFCFB] flex justify-between items-center px-[30px] lg:px-[70px] py-[30px] fixed w-full z-50">
+      <Image
+        src={navData.logo}
+        alt="logo"
+        width={155}
+        height={66}
+        className="hidden lg:block"
+      />
+      <Image
+        src={navData.logoMobile}
+        alt="logo"
+        width={41}
+        height={21}
+        className="lg:hidden"
+      />
+
+      <Image
+        src={"/burgerMenu.svg"}
+        alt="burger menu"
+        width={18}
+        height={12}
+        className="lg:hidden"
+      />
+
+      <div className="lg:flex items-center gap-6 hidden">
         <Link href={navData.ctaLink} className="text-sm font-[500]">
           Connexion
         </Link>

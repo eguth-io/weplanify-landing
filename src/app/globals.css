@@ -39,6 +39,7 @@ strong {
   font-weight: 600;
 }
 
+
 .text-orange {
   color: #f6391a;
 }
@@ -61,4 +62,11 @@ strong {
 
 body {
   font-family: var(--font-raleway);
+}
+
+@media screen and (max-width: 1024px){
+  .noBr br{
+    display: none;
+  }
+
 }

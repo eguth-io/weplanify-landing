@@ -13,8 +13,31 @@ export default function Devices({ features }: { features: Features }) {
   const [startX, setStartX] = useState<number>(0);
   const [scrollLeft, setScrollLeft] = useState<number>(0);
   const [isInitialized, setIsInitialized] = useState<boolean>(false);
+  const [cardWidth, setCardWidth] = useState<number>(370);
   const containerRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // Gestion responsive de la taille des cartes
+  useEffect(() => {
+    const updateCardWidth = () => {
+      const width = window.innerWidth;
+      if (width < 480) {
+        setCardWidth(Math.floor(width * 0.9)); // Mobile très petit - 90% de la largeur
+      } else if (width < 640) {
+        setCardWidth(Math.floor(width * 0.85)); // Mobile - 85% de la largeur
+      } else if (width < 768) {
+        setCardWidth(Math.floor(width * 0.8)); // Mobile large - 80% de la largeur
+      } else if (width < 1024) {
+        setCardWidth(350); // Tablet
+      } else {
+        setCardWidth(370); // Desktop
+      }
+    };
+
+    updateCardWidth();
+    window.addEventListener("resize", updateCardWidth);
+    return () => window.removeEventListener("resize", updateCardWidth);
+  }, []);
 
   // Initialisation après le premier rendu
   useEffect(() => {
@@ -66,7 +89,7 @@ export default function Devices({ features }: { features: Features }) {
 
     e.preventDefault();
     const x = e.pageX - containerRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
+    const walk = (x - startX) * 1.5; // Sensibilité réduite pour un scroll plus fluide
     containerRef.current.scrollLeft = scrollLeft - walk;
   };
 
@@ -78,6 +101,27 @@ export default function Devices({ features }: { features: Features }) {
     setIsDragging(false);
   };
 
+  // Gestion du touch pour mobile
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!containerRef.current) return;
+
+    setIsDragging(true);
+    setStartX(e.touches[0].pageX - containerRef.current.offsetLeft);
+    setScrollLeft(containerRef.current.scrollLeft);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!isDragging || !containerRef.current) return;
+
+    const x = e.touches[0].pageX - containerRef.current.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    containerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
+
   const handleFeatureClick = (index: number) => {
     setActiveIndex(index);
   };
@@ -86,29 +130,34 @@ export default function Devices({ features }: { features: Features }) {
 
   return (
     <div>
-      {/* Devices Section avec images dynamiques */}
-      <div className="relative flex justify-center">
+      <div className="relative flex justify-center px-4 md:px-6 lg:px-0">
         <Iphone16Pro
-          className="absolute right-[7%] top-[7%] w-[300px] h-[600px]"
+          className="hidden sm:block absolute right-[5%] md:right-[7%] top-[5%] md:top-[7%] w-[180px] h-[360px] sm:w-[220px] sm:h-[440px] md:w-[250px] md:h-[500px] lg:w-[300px] lg:h-[600px]"
           src={currentFeature.imageMobile}
         />
+
         <MacbookPro
-          className="w-[1250px] h-full"
+          className="w-full max-w-[350px] sm:max-w-[500px] md:max-w-[800px] lg:max-w-[1000px] xl:w-[1250px] h-auto"
           src={currentFeature.imageDesktop}
         />
       </div>
 
-      {/* Features Carousel Section */}
-      <div className="py-16">
-        {/* Carousel Container */}
+      <div className="py-8 md:py-12 lg:py-16">
         <div className="relative">
           <div
             ref={containerRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4 cursor-grab active:cursor-grabbing select-none justify-center px-8"
+            className="flex gap-3 md:gap-4 lg:gap-6 overflow-x-auto scrollbar-hide pb-4 cursor-grab active:cursor-grabbing select-none px-4 md:px-6 lg:px-8"
+            style={{
+              scrollBehavior: "auto",
+              scrollSnapType: window.innerWidth < 768 ? "none" : "x mandatory",
+            }}
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseLeave}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           >
             {features.featuresList.map((feature, index) => (
               <div
@@ -116,38 +165,45 @@ export default function Devices({ features }: { features: Features }) {
                 ref={(el) => {
                   itemRefs.current[index] = el;
                 }}
-                className={`p-6 relative flex-shrink-0 snap-start rounded-2xl transition-all duration-300 cursor-pointer ${
+                className={`p-4 md:p-5 lg:p-6 relative flex-shrink-0 rounded-xl md:rounded-2xl transition-all duration-300 cursor-pointer ${
                   activeIndex === index
                     ? "bg-[#006F8E] scale-105"
                     : "border border-[#FDD7D1] bg-white"
                 }`}
                 style={{
-                  minWidth: "370px",
-                  maxWidth: "370px",
-                  height: "270px",
+                  minWidth: `${cardWidth}px`,
+                  maxWidth: `${cardWidth}px`,
+                  height:
+                    cardWidth < 300
+                      ? "200px"
+                      : cardWidth < 350
+                        ? "230px"
+                        : "270px",
                   // Ajout de margin pour éviter le crop lors du scale
-                  margin: activeIndex === index ? "10px" : "0px",
+                  margin: activeIndex === index ? "5px md:10px" : "0px",
+                  scrollSnapAlign: window.innerWidth >= 768 ? "start" : "none",
                 }}
                 onClick={() => handleFeatureClick(index)}
                 onMouseDown={(e: React.MouseEvent<HTMLDivElement>) =>
                   e.stopPropagation()
                 }
+                onTouchStart={(e: React.TouchEvent<HTMLDivElement>) =>
+                  e.stopPropagation()
+                }
               >
-                <div>
-                  {/* Title */}
+                <div className="h-full flex flex-col">
+                  {/* Title - Responsive */}
                   <h3
-                    className={`text-3xl transition-colors ${
-                      activeIndex === index
-                        ? "text-white"
-                        : "text-[#8E9093] text-2xl"
+                    className={`text-lg md:text-2xl lg:text-3xl font-medium mb-2 md:mb-3 transition-colors ${
+                      activeIndex === index ? "text-white" : "text-[#8E9093]"
                     }`}
                   >
                     {feature.title}
                   </h3>
 
-                  {/* Description */}
+                  {/* Description - Responsive */}
                   <div
-                    className={`text-xl transition-colors ${
+                    className={`text-sm md:text-lg lg:text-xl flex-1 transition-colors leading-tight ${
                       activeIndex === index
                         ? "[&_p]:text-white"
                         : "[&_p]:text-[#8E9093]"
@@ -156,8 +212,8 @@ export default function Devices({ features }: { features: Features }) {
                     <PortableText value={feature.description} />
                   </div>
 
-                  {/* Barre de progression */}
-                  <div className="absolute bottom-6 left-6 h-1 bg-white/30 rounded-2xl overflow-hidden w-1/2">
+                  {/* Barre de progression - Responsive */}
+                  <div className="absolute bottom-3 md:bottom-4 lg:bottom-6 left-4 md:left-5 lg:left-6 h-0.5 md:h-1 bg-white/30 rounded-2xl overflow-hidden w-1/2">
                     <div
                       className="h-full bg-white transition-all duration-300"
                       style={{
@@ -172,12 +228,13 @@ export default function Devices({ features }: { features: Features }) {
                       }}
                     />
                   </div>
-                  {/* Icon */}
+
+                  {/* Icon - Responsive */}
                   <Image
                     src={feature.icon}
                     alt={`${feature.title} icon`}
-                    width={150}
-                    height={130}
+                    width={cardWidth < 300 ? 80 : cardWidth < 350 ? 120 : 150}
+                    height={cardWidth < 300 ? 70 : cardWidth < 350 ? 100 : 130}
                     className="object-cover absolute bottom-0 right-0"
                   />
                 </div>
@@ -186,14 +243,14 @@ export default function Devices({ features }: { features: Features }) {
           </div>
         </div>
 
-        {/* Navigation dots (optionnel) */}
-        <div className="flex justify-center mt-6 gap-2">
+        {/* Navigation dots - Responsive */}
+        <div className="flex justify-center mt-4 md:mt-6 gap-1.5 md:gap-2">
           {features.featuresList.map((_, index) => (
             <button
               key={index}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${
                 activeIndex === index
-                  ? "bg-blue-500 w-6"
+                  ? "bg-blue-500 w-4 md:w-6"
                   : "bg-gray-300 hover:bg-gray-400"
               }`}
               onClick={() => handleFeatureClick(index)}

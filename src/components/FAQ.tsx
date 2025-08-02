@@ -13,10 +13,10 @@ export default function FAQ({ faq }: { faq: FAQType }) {
 
   return (
     <div className="mt-28">
-      <div className="text-[40px] font-unbounded [&_p]:text-black [&_strong]:text-[#F6391A] font-semibold text-center">
+      <div className="text-xl lg:text-[40px] font-unbounded [&_p]:text-black [&_strong]:text-[#F6391A] font-semibold text-center">
         <PortableText value={faq.title} />
       </div>
-      <div className="flex flex-col items-center justify-center gap-4 w-[700px] mx-auto mt-12">
+      <div className="flex flex-col items-center justify-center gap-4 lg:w-[700px] mx-auto mt-12 w-full">
         {faq.questions.map(
           (question: FAQType["questions"][0], index: number) => (
             <div
@@ -71,7 +71,7 @@ export default function FAQ({ faq }: { faq: FAQType }) {
                 </div>
               </div>
             </div>
-          )
+          ),
         )}
       </div>
     </div>

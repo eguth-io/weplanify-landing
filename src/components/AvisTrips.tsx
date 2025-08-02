@@ -8,7 +8,6 @@ import { useState } from "react";
 export default function AvisTrips({ trips }: { trips: TripsType }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Nombre d'éléments visibles selon la taille d'écran
   const getVisibleItems = () => {
     if (typeof window !== "undefined") {
       if (window.innerWidth >= 1024) return 3; // lg: 3 éléments
@@ -27,21 +26,37 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? maxIndex : prevIndex - 1
+      prevIndex === 0 ? maxIndex : prevIndex - 1,
     );
   };
 
-  // Calculer la largeur totale d'un élément (340px + gap)
   const itemWidth = 340 + 16; // 340px width + 16px gap (gap-4)
 
   return (
     <div className="relative mt-40 flex flex-col items-center justify-center">
-      <div className="text-[40px] font-unbounded [&_p]:text-black [&_strong]:text-[#F6391A]">
+      <div className="text-xl lg:text-[40px] font-unbounded [&_p]:text-black lg:[&_strong]:text-[#F6391A]">
         <PortableText value={trips.title} />
       </div>
-      <img src="/line1.png" alt="pass" className="absolute top-0 left-0" />
-      <img src="/line2.png" alt="pass" className="absolute -right-0 top-28" />
-
+      <img
+        src="/line1.png"
+        alt="pass"
+        className="hidden lg:block -z-10 absolute top-0 left-0"
+      />
+      <img
+        src="/line2.png"
+        alt="pass"
+        className="hidden lg:block -z-10 absolute -right-0 top-28"
+      />
+      <img
+        src="/line1Mobile.png"
+        alt="pass"
+        className="lg:hidden -z-10 absolute top-0 left-0"
+      />
+      <img
+        src="/line2Mobile.png"
+        alt="pass"
+        className="lg:hidden absolute -right-0 bottom-24"
+      />
       <div className="relative w-4/5 mt-16">
         <div className="relative overflow-hidden rounded-lg">
           <div
@@ -56,13 +71,14 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
                 key={index}
                 className="w-[340px] flex-shrink-0 flex flex-col"
               >
-                <div className="relative">
+                <div className="relative rounded-lg">
                   <Image
                     src={trip.tripImage}
                     alt={`Trip ${trip.firstName}`}
                     width={338}
                     height={340}
-                    className="w-full h-[400px] object-cover rounded-lg"
+                    style={{ borderRadius: "8px" }}
+                    className="w-[300px] h-[300px] lg:w-full lg:h-[400px] object-cover"
                   />
 
                   <div className="absolute top-4 left-4 flex items-center gap-3">
@@ -71,7 +87,6 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
                       alt="profile"
                       width={48}
                       height={48}
-                      className="rounded-full"
                     />
                     <div className="text-white font-semibold text-[13px] drop-shadow-lg">
                       {trip.firstName}
@@ -90,7 +105,7 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-[-64px] top-1/2 transform -translate-y-1/2 z-10 hover:scale-110 transition-transform duration-200"
+          className="hidden lg:block absolute left-[-64px] top-1/2 transform -translate-y-1/2 z-10 hover:scale-110 transition-transform duration-200"
           disabled={trips.tripsList.length <= visibleItems}
         >
           <Image src="/arrow.svg" alt="Previous" width={47} height={47} />
@@ -98,7 +113,7 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
 
         <button
           onClick={nextSlide}
-          className="absolute right-[-64px] top-1/2 transform -translate-y-1/2 z-10 rotate-180 hover:scale-110 transition-transform duration-200"
+          className="hidden lg:block absolute right-[-64px] top-1/2 transform -translate-y-1/2 z-10 rotate-180 hover:scale-110 transition-transform duration-200"
           disabled={trips.tripsList.length <= visibleItems}
         >
           <Image src="/arrow.svg" alt="Next" width={47} height={47} />

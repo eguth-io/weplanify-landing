@@ -9,7 +9,9 @@ interface ContentBlock {
 
 export interface Home {
   subtitle: string;
+  subtitleMobile: string;
   title: PortableTextBlock[];
+  titleMobile: PortableTextBlock[];
   title2: PortableTextBlock[];
   description: PortableTextBlock[];
   buttonDemo: string;
@@ -18,6 +20,7 @@ export interface Home {
 
 export type NavType = {
   logo: string;
+  logoMobile: string;
   connexionLink: string;
   ctaButton: string;
   ctaLink: string;

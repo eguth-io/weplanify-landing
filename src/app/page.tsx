@@ -90,22 +90,27 @@ export default async function HomePage() {
   return (
     <div>
       <Nav />
-      <div className="relative pt-[150px] pb-20 flex flex-col items-center justify-center">
-        <h2 className="text-orange bg-light px-4 py-2 rounded-full">
+      <div className="relative pt-[100px] lg:pt-[150px] pb-20 flex flex-col items-center justify-center">
+        <h2 className="text-orange bg-light px-4 py-2 rounded-full lg:text-[10px] hidden lg:block">
           {home.subtitle}
         </h2>
-        <div className="mt-4 text-orange text-[52px] font-[600] font-unbounded">
+        <h2 className="lg:hidden text-center text-orange bg-light px-3 py-1 lg:px-4 lg:py-2 rounded-full text-[12px] lg:text-base">
+          {home.subtitleMobile}
+        </h2>
+        <div className="mt-4 text-orange lg:text-[52px] text-2xl font-[600] font-unbounded text-center lg:text-start">
           <PortableText value={home.title} />
         </div>
-        <div className="text-[52px] font-[600] font-unbounded">
+        <div className="text-[52px] font-[600] font-unbounded hidden lg:block">
           <PortableText value={home.title2} />
         </div>
-        <div className="mt-2 text-center font-[500] text-xl">
+        <div className="text-[#1D2026] text-opacity-70 mt-3 lg:mt-2 text-center font-[500] text-sm lg:text-xl noBr ">
           <PortableText value={home.description} />
         </div>
-        <div className="flex gap-4 mt-11">
-          <PulsatingButton>{ctaData.ctaButton}</PulsatingButton>
-          <button className="font-[700] text-orange border border-[#f6391a] rounded-xl px-4 py-2">
+        <div className="flex-col lg:flex-row flex gap-4 mt-6 lg:mt-11 w-full lg:w-auto justify-center items-center">
+          <PulsatingButton className="w-4/5 lg:w-auto">
+            {ctaData.ctaButton}
+          </PulsatingButton>
+          <button className="w-3/5 lg:w-auto font-[700] text-orange border border-[#f6391a] rounded-xl px-4 py-2">
             {home.buttonDemo}
           </button>
         </div>
@@ -162,7 +167,7 @@ export default async function HomePage() {
         </div>
       </div>
 
-      <div className="relative mx-16 mt-20 flex justify-center items-center gap-48">
+      <div className="relative mx-3 lg:mx-16 mt-20 flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-48">
         <Image
           src="/planes.png"
           width={785}
@@ -171,10 +176,10 @@ export default async function HomePage() {
           className="absolute bottom-0"
         />
         <div className="flex flex-col">
-          <p className="font-unbounded text-[40px] text-black font-medium">
+          <p className="text-center lg:text-start font-unbounded text-xl lg:text-[40px] text-black lg:font-medium">
             {ia.title}
           </p>
-          <div className="mb-24 mt-6 relative flex items-center bg-[#F8F7F8] rounded-full shadow-lg border border-gray-200 overflow-hidden max-w-2xl pr-4">
+          <div className="mb-6 lg:mb-24 mt-6 relative flex items-center bg-[#F8F7F8] rounded-full shadow-lg border border-gray-200 overflow-hidden max-w-2xl pr-4">
             <input
               type="text"
               placeholder={ia.placeholder}
@@ -186,7 +191,7 @@ export default async function HomePage() {
               <Image src="/input.svg" alt="Submit" width={32} height={32} />
             </button>
           </div>
-          <Link href={ctaData.ctaLink}>
+          <Link href={ctaData.ctaLink} className="hidden lg:block">
             <PulsatingButton>{ctaData.ctaButton}</PulsatingButton>
           </Link>
         </div>
@@ -243,7 +248,7 @@ export default async function HomePage() {
           alt="logo"
           className="absolute bottom-0 right-0 rounded-b-[40px]"
         />
-        <div className="text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white font-semibold">
+        <div className="text-xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white font-semibold">
           <PortableText value={footer.title} />
         </div>
         <div className="text-xl text-center [&_p]:text-white mt-3">
@@ -253,60 +258,144 @@ export default async function HomePage() {
           {home.buttonDemo}
         </p>
       </div>
-      <footer className="mt-[230px] mx-[60px] border-t border-b border-[#E5E5E5] py-6 flex gap-[100px]">
-        <div className="flex flex-col">
-          <Image src="/logo.png" alt="logo" width={155} height={66} />
-          <p className="text-sm text-black/75 mt-4">
-            Planifiez, partagez, partez :
-            <br />
-            une seule appli pour tout gérer
-          </p>
-          <p className="mt-11 font-semibold text-black text-sm ">
-            Rejoignez nous
-          </p>
-          <div className="flex gap-3 mt-3">
-            <Image
-              src="/instagram.svg"
-              alt="instagram"
-              width={38}
-              height={38}
-              className="cursor-pointer"
-            />
-            <Image
-              src="/instagram.svg"
-              alt="instagram"
-              width={38}
-              height={38}
-              className="cursor-pointer"
-            />
+      <footer className="mt-[120px] md:mt-[180px] lg:mt-[230px] mx-4 md:mx-8 lg:mx-[60px] border-t border-b border-[#E5E5E5] py-6 md:py-8 lg:py-6">
+        {/* Desktop Layout */}
+        <div className="hidden lg:flex gap-[100px]">
+          <div className="flex flex-col">
+            <Image src="/logo.png" alt="logo" width={155} height={66} />
+            <p className="text-sm text-black/75 mt-4">
+              Planifiez, partagez, partez :
+              <br />
+              une seule appli pour tout gérer
+            </p>
+            <p className="mt-11 font-semibold text-black text-sm">
+              Rejoignez nous
+            </p>
+            <div className="flex gap-3 mt-3">
+              <Image
+                src="/instagram.svg"
+                alt="instagram"
+                width={38}
+                height={38}
+                className="cursor-pointer"
+              />
+              <Image
+                src="/instagram.svg"
+                alt="instagram"
+                width={38}
+                height={38}
+                className="cursor-pointer"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-sm text-black font-medium">Produit</p>
+            <p className="text-black/75 text-sm mt-4">Acceuil</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-sm text-black font-medium">Companie</p>
+            <p className="text-black/75 text-sm mt-6">A propos</p>
+            <p className="text-black/75 text-sm mt-4">Contact</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-sm text-black font-medium">Ressources</p>
+            <p className="text-black/75 text-sm mt-6">Blog</p>
+          </div>
+          <div className="flex flex-col">
+            <p className="text-sm text-black font-medium">Legal</p>
+            <p className="text-black/75 text-sm mt-6">
+              Condition d&apos;utilisation
+            </p>
           </div>
         </div>
-        <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">Produit</p>
-          <p className="text-black/75 text-sm mt-4">Acceuil</p>
-        </div>
-        <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">Companie</p>
-          <p className="text-black/75 text-sm mt-6">A propos</p>
-          <p className="text-black/75 text-sm mt-4">Contact</p>
-        </div>
-        <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">Ressources</p>
-          <p className="text-black/75 text-sm mt-6">Blog</p>
-        </div>
-        <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">Legal</p>
-          <p className="text-black/75 text-sm mt-6">
-            Condition d&apos;utilisation
-          </p>
+
+        {/* Mobile/Tablet Layout */}
+        <div className="lg:hidden">
+          {/* Logo et description */}
+          <div className="flex flex-col items-start mb-8 md:mb-10">
+            <Image
+              src="/logo.png"
+              alt="logo"
+              width={120}
+              height={51}
+              className="md:w-[140px] md:h-[60px]"
+            />
+            <p className="text-sm md:text-base text-black/75 mt-3 md:mt-4">
+              Planifiez, partagez, partez :
+              <br />
+              une seule appli pour tout gérer
+            </p>
+
+            {/* Réseaux sociaux */}
+            <div className="mt-6 md:mt-8">
+              <p className="font-semibold text-black text-sm md:text-base mb-3 text-center md:text-left">
+                Rejoignez nous
+              </p>
+              <div className="flex gap-3">
+                <Image
+                  src="/instagram.svg"
+                  alt="instagram"
+                  width={32}
+                  height={32}
+                  className="cursor-pointer md:w-[38px] md:h-[38px]"
+                />
+                <Image
+                  src="/instagram.svg"
+                  alt="instagram"
+                  width={32}
+                  height={32}
+                  className="cursor-pointer md:w-[38px] md:h-[38px]"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Liens en grille responsive */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div className="flex flex-col">
+              <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
+                Produit
+              </p>
+              <p className="text-black/75 text-sm md:text-base hover:text-black cursor-pointer transition-colors">
+                Acceuil
+              </p>
+            </div>
+
+            <div className="flex flex-col">
+              <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
+                Companie
+              </p>
+              <p className="text-black/75 text-sm md:text-base hover:text-black cursor-pointer transition-colors mb-2 md:mb-3">
+                A propos
+              </p>
+              <p className="text-black/75 text-sm md:text-base hover:text-black cursor-pointer transition-colors">
+                Contact
+              </p>
+            </div>
+
+            <div className="flex flex-col">
+              <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
+                Ressources
+              </p>
+              <p className="text-black/75 text-sm md:text-base hover:text-black cursor-pointer transition-colors">
+                Blog
+              </p>
+            </div>
+
+            <div className="flex flex-col">
+              <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
+                Legal
+              </p>
+              <p className="text-black/75 text-sm md:text-base hover:text-black cursor-pointer transition-colors leading-tight">
+                Condition d&apos;utilisation
+              </p>
+            </div>
+          </div>
         </div>
       </footer>
-      <div className="flex justify-between items-center mx-[60px] mt-6">
+      <div className="flex justify-end items-center mx-[60px] mt-6 pb-2">
         <p className="text-sm text-black/75 font-medium">
-          © 2025 Lightning Proxies
-        </p>
-        <p className="text-sm text-black/75 font-medium">
-          Réaliser par : La-landing
+          Réalisé par : La-landing
         </p>
       </div>
     </div>

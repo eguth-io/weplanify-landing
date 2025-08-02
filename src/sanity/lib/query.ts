@@ -10,6 +10,7 @@ export const ctaQuery = groq`
 export const navQuery = groq`
   *[_type == "nav"][0] {
     "logo": logo.asset->url,
+    "logoMobile": logoMobile.asset->url,
     connexionLink,
     ctaButton,
     ctaLink,
@@ -18,7 +19,9 @@ export const navQuery = groq`
 
 export const homeQuery = groq`*[_type == "home"][0] {
   subtitle,
+  subtitleMobile,
   title,
+  titleMobile,
   title2,
   description,
   buttonDemo,

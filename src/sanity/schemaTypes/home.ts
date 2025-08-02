@@ -12,8 +12,20 @@ export const home = defineType({
       initialValue: "Welcome to WePlanify",
     },
     {
+      name: "subtitleMobile",
+      title: "SubtitleMobile",
+      type: "string",
+      initialValue: "Welcome to WePlanify",
+    },
+    {
       name: "title",
       title: "Title",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+    {
+      name: "titleMobile",
+      title: "TitleMobile",
       type: "array",
       of: [{ type: "block" }],
     },
