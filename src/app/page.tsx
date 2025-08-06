@@ -35,6 +35,7 @@ import {
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
+import { Safari } from "@/components/magicui/safari";
 
 export default async function HomePage() {
   const ctaData: CtaType = await sanityFetch({
@@ -161,7 +162,7 @@ export default async function HomePage() {
                 height={14}
                 alt="five stars"
               />
-              <p className="text-sm text-black">{organization.clientText}</p>
+              <p className="text-sm text-white">{organization.clientText}</p>
             </div>
           </div>
         </div>
@@ -220,12 +221,9 @@ export default async function HomePage() {
         <div className="text-[40px] font-unbounded [&_p]:text-black [&_strong]:text-[#F6391A] font-semibold text-center">
           <PortableText value={logiciel.title} />
         </div>
-        <Image
-          src={logiciel.image}
-          alt="logiciel"
-          width={1280}
-          height={775}
-          className="mt-16 object-cover z-10"
+        <Safari
+          className="z-10 mt-12 object-cover w-[375px] h-[250px] lg:max-w-[1300px] xl:w-[1280px] lg:h-[775px]"
+          imageSrc={logiciel.image}
         />
       </div>
 

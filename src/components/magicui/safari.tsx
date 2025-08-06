@@ -129,8 +129,9 @@ export function Safari({
             height="700"
             x="1"
             y="52"
-            preserveAspectRatio="xMidYMid slice"
+            preserveAspectRatio="none"
             clipPath="url(#roundedBottom)"
+            className="object-contain"
           />
         )}
         {videoSrc && (
@@ -139,7 +140,7 @@ export function Safari({
             y="52"
             width="1200"
             height="700"
-            preserveAspectRatio="xMidYMid slice"
+            preserveAspectRatio="none"
             clipPath="url(#roundedBottom)"
           >
             <video

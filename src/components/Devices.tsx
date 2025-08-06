@@ -44,8 +44,7 @@ export default function Devices({ features }: { features: Features }) {
         />
 
         <Safari
-          url="magicui.design"
-          className="w-[375px] h-[250px] lg:max-w-[1300px] xl:w-[1200px] lg:h-[810px]"
+          className="object-cover w-[375px] h-[250px] lg:max-w-[1300px] xl:w-[1200px] lg:h-[810px]"
           imageSrc={currentFeature.imageDesktop}
         />
       </div>

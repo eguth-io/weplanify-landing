@@ -6,11 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/free-mode";
 
 interface Block {
   image: string;
@@ -32,25 +31,22 @@ export default function Trips({ blocks }: CarouselProps) {
         className="-z-10 absolute bottom-0 md:bottom-[200px] lg:bottom-[300px] left-0 w-auto h-auto max-w-[150px] md:max-w-none"
       />
 
-      <div className="overflow-hidden px-3 md:px-4 lg:px-6 max-w-[1500px] mx-auto">
+      <div className="overflow-hidden mx-auto relative">
+        {/* Gradient fade effects */}
+        <div className="pointer-events-none absolute inset-y-0 -left-8 h-full w-[100px] bg-gradient-to-r from-white via-white/40 to-transparent z-10"></div>
+        <div className="pointer-events-none absolute inset-y-0 -right-8 h-full w-[100px] bg-gradient-to-l from-white via-white/40 to-transparent z-10"></div>
         <Swiper
-          modules={[FreeMode, Autoplay]}
+          modules={[Autoplay]}
           spaceBetween={20}
           loop={true}
-          slidesPerView={1.5}
-          freeMode={{
-            enabled: true,
-            sticky: false,
-            momentumRatio: 0.25,
-            momentumVelocityRatio: 0.25,
-          }}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
-            pauseOnMouseEnter: true,
+            pauseOnMouseEnter: false,
+            waitForTransition: false,
+            stopOnLastSlide: false,
           }}
-          speed={2000 * blocks.length}
-          grabCursor={true}
+          speed={10000} // Vitesse de transition fluide (3 secondes)
           className="pb-4"
           breakpoints={{
             640: {
