@@ -4,12 +4,13 @@ import { Features } from "@/sanity/lib/type";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import { useState } from "react";
-import { MacbookPro } from "./ui/macbook-pro";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 
 import "swiper/css";
+import { Safari } from "@/components/magicui/safari";
+import Iphone15Pro from "@/components/magicui/iphone-15-pro";
 
 export default function Devices({ features }: { features: Features }) {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -31,17 +32,21 @@ export default function Devices({ features }: { features: Features }) {
   return (
     <div>
       <div className="relative flex justify-center px-4 md:px-6 lg:px-0">
-        <Image
+        <img src="/deviceLeftCloud.png" className="absolute right-0 " alt="" />
+        <img
+          src="/deviceRightCloud.png"
+          className="absolute left-0 -top-[5%] -z-10"
+          alt=""
+        />
+        <Iphone15Pro
+          className="hidden sm:block absolute right-[5%] md:right-[5%] top-[10%] md:top-[15%] w-[180px] h-[360px] sm:w-[220px] sm:h-[440px] md:w-[250px] md:h-[500px] lg:w-[300px] lg:h-[600px]"
           src={currentFeature.imageMobile}
-          className="hidden sm:block absolute right-[5%] md:right-[5%] top-[10%] md:top-[10%] w-[180px] h-[360px] sm:w-[220px] sm:h-[440px] md:w-[250px] md:h-[500px] lg:w-[300px] lg:h-[600px]"
-          alt={currentFeature.title}
-          width={250}
-          height={500}
         />
 
-        <MacbookPro
+        <Safari
+          url="magicui.design"
           className="w-[375px] h-[250px] lg:max-w-[1300px] xl:w-[1200px] lg:h-[810px]"
-          src={currentFeature.imageDesktop}
+          imageSrc={currentFeature.imageDesktop}
         />
       </div>
 
