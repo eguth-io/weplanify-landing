@@ -78,7 +78,7 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
                     width={338}
                     height={340}
                     style={{ borderRadius: "8px" }}
-                    className="w-[300px] h-[300px] lg:w-full lg:h-[400px] object-cover"
+                    className="w-[300px] h-[300px] lg:w-full lg:h-[400px] object-cover rounded-2xl"
                   />
 
                   <div className="absolute top-4 left-4 flex items-center gap-3">

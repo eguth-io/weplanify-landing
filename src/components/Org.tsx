@@ -354,7 +354,7 @@ export default function Org({
 
             {/* Image Section - Responsive */}
             <div
-              className={`w-full h-[250px] sm:h-[300px] md:h-[350px] lg:w-[630px] lg:h-[440px] min-h-[200px] ${
+              className={`w-full h-[250px] sm:h-[300px] md:h-[350px] w-4/5 lg:w-[630px] lg:h-[440px] min-h-[200px] ${
                 ltr && "lg:order-1"
               }`}
             >
@@ -377,7 +377,7 @@ export default function Org({
             {/* Mobile Carousel - Fluide avec aperçu des cartes adjacentes */}
             <ul
               ref={carouselRef}
-              className="flex h-full overflow-x-auto py-6 md:py-8 lg:py-10 lg:hidden scrollbar-hide cursor-grab active:cursor-grabbing select-none"
+              className="flex h-full overflow-x-auto py-0 md:py-8 lg:py-10 lg:hidden scrollbar-hide cursor-grab active:cursor-grabbing select-none"
               style={{
                 padding: "20px calc(10%)", // Permet de voir les cartes adjacentes
                 scrollBehavior: "auto",
@@ -395,7 +395,7 @@ export default function Org({
               {data.map((item, index) => (
                 <li
                   key={index}
-                  className="card relative flex-shrink-0 grid h-full items-start justify-center py-3 md:py-4 bg-white/10 rounded-lg md:rounded-xl backdrop-blur-sm border border-white/20 transition-all duration-300"
+                  className="card relative flex-shrink-0 grid h-full items-start justify-center py-3 md:py-4 lg:bg-white/10 rounded-lg md:rounded-xl lg:backdrop-blur-sm lg:border border-white/20 transition-all duration-300"
                   onClick={() => setCurrentIndex(index)}
                   style={{
                     minWidth: `${cardWidth}px`,
@@ -408,7 +408,7 @@ export default function Org({
                     <div
                       className={`absolute left-0 top-0 h-full ${
                         currentIndex === index ? "w-full" : "w-0"
-                      } origin-left bg-[#6B8DFF] transition-all ease-linear`}
+                      } origin-left bg-[#fff] transition-all ease-linear`}
                       style={{
                         transitionDuration:
                           currentIndex === index ? `${collapseDelay}ms` : "0s",
@@ -433,7 +433,7 @@ export default function Org({
                   </div>
 
                   {/* Description responsive */}
-                  <div className="mx-0 max-w-sm text-balance text-xs md:text-sm text-white/90 px-2">
+                  <div className="[&_p]:text-white mx-0 max-w-sm text-balance text-xs md:text-sm text-white px-2">
                     <PortableText value={item.description} />
                   </div>
                 </li>

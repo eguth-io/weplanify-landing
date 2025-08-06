@@ -91,10 +91,10 @@ export default async function HomePage() {
     <div>
       <Nav />
       <div className="relative pt-[100px] lg:pt-[150px] pb-20 flex flex-col items-center justify-center">
-        <h2 className="text-orange bg-light px-4 py-2 rounded-full lg:text-[10px] hidden lg:block">
+        <h2 className="text-orange bg-light px-4 py-2 rounded-full lg:text-base text-[10px] hidden lg:block mb-[20px]">
           {home.subtitle}
         </h2>
-        <h2 className="lg:hidden text-center text-orange bg-light px-3 py-1 lg:px-4 lg:py-2 rounded-full text-[12px] lg:text-base">
+        <h2 className="lg:hidden text-center text-orange bg-light px-3 py-1 lg:px-4 lg:py-2 rounded-full text-[12px]  lg:text-base">
           {home.subtitleMobile}
         </h2>
         <div className="mt-4 text-orange lg:text-[52px] text-2xl font-[600] font-unbounded text-center lg:text-start">
@@ -130,7 +130,7 @@ export default async function HomePage() {
           className="absolute right-0 top-0"
         />
         <div className="pt-52 text-center [&_p]:text-white [&_strong]:text-white">
-          <div className="text-[40px] font-unbounded">
+          <div className="text-xl lg:text-[40px] font-unbounded">
             <PortableText value={organization.title} />
           </div>
           <div className="mt-6 text-xl">
@@ -176,7 +176,7 @@ export default async function HomePage() {
           className="absolute bottom-0"
         />
         <div className="flex flex-col">
-          <p className="text-center lg:text-start font-unbounded text-xl lg:text-[40px] text-black lg:font-medium">
+          <p className="leading-normal text-center lg:text-start font-unbounded text-xl lg:text-[40px] text-black lg:font-medium">
             {ia.title}
           </p>
           <div className="mb-6 lg:mb-24 mt-6 relative flex items-center bg-[#F8F7F8] rounded-full shadow-lg border border-gray-200 overflow-hidden max-w-2xl pr-4">
@@ -232,23 +232,23 @@ export default async function HomePage() {
       <Avis data={avis} />
       <FAQ faq={faq} />
 
-      <div className="relative py-[100px] bg-[#F6391A] mt-32 rounded-[40px] mx-[60px] text-center">
+      <div className="overflow-hidden relative py-[100px] bg-[#F6391A] mt-32 rounded-[40px] lg:mx-[60px] text-center">
         <img
           src="/footer/top.png"
           alt="logo"
-          className="absolute top-0 right-0 rounded-tr-[40px]"
+          className="absolute -top-4 lg:top-0 -right-[70%] lg:right-0 rounded-tr-[40px]"
         />
         <img
           src="/footer/left.png"
           alt="logo"
-          className="absolute left-0 bottom-0 rounded-bl-[40px]"
+          className="absolute -left-[20%] -bottom-16 lg:left-0 lg:bottom-0 rounded-bl-[40px]"
         />
         <img
           src="/footer/right.png"
           alt="logo"
-          className="absolute bottom-0 right-0 rounded-b-[40px]"
+          className="absolute -bottom-16 -right-[20%] lg:-bottom-6 lg:right-0 rounded-b-[40px]"
         />
-        <div className="text-xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white font-semibold">
+        <div className="text-xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white font-semibold leading-normal">
           <PortableText value={footer.title} />
         </div>
         <div className="text-xl text-center [&_p]:text-white mt-3">
@@ -260,7 +260,7 @@ export default async function HomePage() {
       </div>
       <footer className="mt-[120px] md:mt-[180px] lg:mt-[230px] mx-4 md:mx-8 lg:mx-[60px] border-t border-b border-[#E5E5E5] py-6 md:py-8 lg:py-6">
         {/* Desktop Layout */}
-        <div className="hidden lg:flex gap-[100px]">
+        <div className="hidden lg:flex gap-[100px] justify-between">
           <div className="flex flex-col">
             <Image src="/logo.png" alt="logo" width={155} height={66} />
             <p className="text-sm text-black/75 mt-4">
