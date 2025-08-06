@@ -18,14 +18,7 @@ export default async function Nav() {
         alt="logo"
         width={155}
         height={66}
-        className="hidden lg:block"
-      />
-      <Image
-        src={navData.logoMobile}
-        alt="logo"
-        width={41}
-        height={21}
-        className="lg:hidden"
+        className="block w-[66px] h-[30px] lg:w-[155px] lg:h-[66px]"
       />
 
       <Image

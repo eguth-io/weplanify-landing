@@ -39,10 +39,9 @@ export default function Devices({ features }: { features: Features }) {
           alt=""
         />
         <Iphone15Pro
-          className="hidden sm:block absolute right-[5%] md:right-[5%] top-[10%] md:top-[15%] w-[180px] h-[360px] sm:w-[220px] sm:h-[440px] md:w-[250px] md:h-[500px] lg:w-[300px] lg:h-[600px]"
+          className="absolute right-0 -top-10 w-[90px] h-[170px] sm:w-[220px] sm:h-[440px] md:top-[15%] md:right-[5%] md:w-[250px] md:h-[500px] lg:w-[300px] lg:h-[600px]"
           src={currentFeature.imageMobile}
         />
-
         <Safari
           className="object-cover w-[375px] h-[250px] lg:max-w-[1300px] xl:w-[1200px] lg:h-[810px]"
           imageSrc={currentFeature.imageDesktop}
@@ -53,7 +52,7 @@ export default function Devices({ features }: { features: Features }) {
         <div className="relative px-4 md:px-6 lg:px-8">
           <Swiper
             modules={[Autoplay]}
-            spaceBetween={20}
+            spaceBetween={12}
             slidesPerView={1.1}
             centeredSlides={false}
             loop={false}
@@ -66,26 +65,34 @@ export default function Devices({ features }: { features: Features }) {
             className="pb-4"
             breakpoints={{
               480: {
-                slidesPerView: 1.2,
+                slidesPerView: 1.3,
+                spaceBetween: 16,
               },
               640: {
-                slidesPerView: 1.5,
+                slidesPerView: 1.8,
+                spaceBetween: 20,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: 2.5,
+                spaceBetween: 20,
               },
               1024: {
-                slidesPerView: 2.5,
+                slidesPerView: 3,
+                spaceBetween: 20,
               },
               1280: {
-                slidesPerView: 3,
+                slidesPerView: 3.5,
+                spaceBetween: 20,
               },
             }}
           >
             {features.featuresList.map((feature, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide
+                key={index}
+                className="!w-[220px] !h-[160px] sm:h-[200px] md:h-[230px] lg:h-[270px]"
+              >
                 <div
-                  className={`p-4 md:p-5 lg:p-6 relative rounded-xl md:rounded-2xl transition-all duration-300 cursor-pointer h-[200px] sm:h-[230px] lg:h-[270px] ${
+                  className={`p-3 md:p-5 lg:p-6 relative rounded-xl md:rounded-2xl transition-all duration-300 cursor-pointer w-[220px] h-[160px] sm:h-[200px] md:h-[230px] lg:h-[270px] md:w-auto ${
                     activeIndex === index
                       ? "bg-[#006F8E]"
                       : "border border-[#FDD7D1] bg-white hover:scale-102"
@@ -94,7 +101,7 @@ export default function Devices({ features }: { features: Features }) {
                 >
                   <div className="h-full flex flex-col">
                     <h3
-                      className={`text-lg md:text-2xl lg:text-3xl font-medium mb-2 md:mb-3 transition-colors ${
+                      className={`text-base md:text-2xl lg:text-3xl font-medium mb-1 md:mb-3 transition-colors ${
                         activeIndex === index ? "text-white" : "text-[#8E9093]"
                       }`}
                     >
@@ -102,7 +109,7 @@ export default function Devices({ features }: { features: Features }) {
                     </h3>
 
                     <div
-                      className={`text-sm md:text-lg lg:text-xl flex-1 transition-colors leading-tight ${
+                      className={`text-xs md:text-lg lg:text-xl flex-1 transition-colors leading-tight ${
                         activeIndex === index
                           ? "[&_p]:text-white"
                           : "[&_p]:text-[#8E9093]"
@@ -113,7 +120,7 @@ export default function Devices({ features }: { features: Features }) {
 
                     {/* Barre de progression - affichée seulement sur slide actif */}
                     {activeIndex === index && (
-                      <div className="absolute bottom-3 md:bottom-4 lg:bottom-6 left-4 md:left-5 lg:left-6 h-0.5 md:h-1 bg-white/30 rounded-2xl overflow-hidden w-1/2">
+                      <div className="absolute bottom-2 md:bottom-4 lg:bottom-6 left-3 md:left-5 lg:left-6 h-0.5 md:h-1 bg-white/30 rounded-2xl overflow-hidden w-1/2">
                         <div
                           className="h-full bg-white rounded-2xl"
                           style={{
@@ -129,7 +136,7 @@ export default function Devices({ features }: { features: Features }) {
                       alt={`${feature.title} icon`}
                       width={120}
                       height={100}
-                      className="object-cover absolute bottom-0 right-0 w-[80px] h-[70px] sm:w-[120px] sm:h-[100px] lg:w-[150px] lg:h-[130px]"
+                      className="object-cover absolute bottom-0 right-0 w-[50px] h-[45px] md:w-[120px] md:h-[100px] lg:w-[150px] lg:h-[130px]"
                     />
                   </div>
                 </div>

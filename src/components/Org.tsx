@@ -354,7 +354,7 @@ export default function Org({
 
             {/* Image Section - Responsive */}
             <div
-              className={`w-full h-[250px] sm:h-[300px] md:h-[350px] w-4/5 lg:w-[630px] lg:h-[440px] min-h-[200px] ${
+              className={`w-full h-[250px] sm:h-[300px] md:h-[350px] lg:w-[630px] lg:h-[440px] min-h-[200px] object-cover ${
                 ltr && "lg:order-1"
               }`}
             >
@@ -439,21 +439,6 @@ export default function Org({
                 </li>
               ))}
             </ul>
-
-            {/* Navigation dots - Visible uniquement sur mobile */}
-            <div className="flex justify-center mt-4 gap-2 lg:hidden">
-              {data.map((_, index) => (
-                <button
-                  key={index}
-                  className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${
-                    currentIndex === index
-                      ? "bg-blue-500 w-4 md:w-6"
-                      : "bg-gray-300 hover:bg-gray-400"
-                  }`}
-                  onClick={() => setCurrentIndex(index)}
-                />
-              ))}
-            </div>
           </div>
         </div>
       </div>

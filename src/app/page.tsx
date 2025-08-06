@@ -131,25 +131,28 @@ export default async function HomePage() {
           className="absolute right-0 top-0"
         />
         <div className="pt-52 text-center [&_p]:text-white [&_strong]:text-white">
-          <div className="text-xl lg:text-[40px] font-unbounded">
+          <div className="text-2xl lg:text-[40px] font-unbounded px-8 lg:px-0">
             <PortableText value={organization.title} />
           </div>
-          <div className="mt-6 text-xl">
+          <div className="mt-6 text-base lg:text-xl noBr px-6 lg:px-0">
             <PortableText value={organization.description} />
           </div>
         </div>
         <Org data={organization.featuresList} />
         <div className="flex flex-col items-center justify-center">
-          <div className="flex gap-6 items-center">
-            <Link href={ctaData.ctaLink}>
-              <PulsatingButtonWhite>{ctaData.ctaButton}</PulsatingButtonWhite>
+          <div className="flex gap-6 items-center flex-col lg:flex-row w-full">
+            <Link href={ctaData.ctaLink} className={"w-full"}>
+              <PulsatingButtonWhite className="w-4/5 mx-auto lg:w-full text-nowrap">
+                {ctaData.ctaButton}
+              </PulsatingButtonWhite>
             </Link>
-            <p className="text-white font-semibold underline">
+            <p className="text-white font-semibold underline  text-nowrap">
               {home.buttonDemo}
             </p>
           </div>
           <div className="mt-8 flex items-center flex-col">
             <Image
+              className="w-[140px] lg:w-[280px]"
               src={organization.clientImage}
               alt="client"
               width={280}
@@ -161,6 +164,7 @@ export default async function HomePage() {
                 width={80}
                 height={14}
                 alt="five stars"
+                className="hidden lg:block"
               />
               <p className="text-sm text-white">{organization.clientText}</p>
             </div>
@@ -211,14 +215,14 @@ export default async function HomePage() {
         <img
           src="/linesRight.svg"
           alt="pass"
-          className="absolute top-1/2 right-0 z-0 transform -translate-y-1/2"
+          className="hidden lg:block absolute top-1/2 right-0 z-0 transform -translate-y-1/2"
         />
         <img
           src="/linesLeft.svg"
           alt="pass"
-          className="absolute top-1/2 left-0 z-0 transform -translate-y-1/2"
+          className="hidden lg:block absolute top-1/2 left-0 z-0 transform -translate-y-1/2"
         />
-        <div className="text-[40px] font-unbounded [&_p]:text-black [&_strong]:text-[#F6391A] font-semibold text-center">
+        <div className="text-[20px] lg:text-[40px] font-unbounded [&_p]:text-black [&_strong]:text-[#F6391A] font-semibold text-center">
           <PortableText value={logiciel.title} />
         </div>
         <Safari
@@ -246,10 +250,10 @@ export default async function HomePage() {
           alt="logo"
           className="absolute -bottom-16 -right-[20%] lg:-bottom-6 lg:right-0 rounded-b-[40px]"
         />
-        <div className="text-xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white font-semibold leading-normal">
+        <div className="noBr px-4 lg:px-0 text-xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white font-semibold leading-normal">
           <PortableText value={footer.title} />
         </div>
-        <div className="text-xl text-center [&_p]:text-white mt-3">
+        <div className="px-4 lg:px-0 text-xl text-center [&_p]:text-white mt-3">
           <PortableText value={footer.subtitle} />
         </div>
         <p className="text-[#F6391A] bg-white w-fit mx-auto mt-[34px] rounded-xl px-6 py-2 font-semibold">
