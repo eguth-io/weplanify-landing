@@ -31,6 +31,11 @@ div {
   display: none;
 }
 
+.gradient-container {
+  background: #57CFFF;
+  background: linear-gradient(180deg, rgba(87, 207, 255, 1) 0%, rgba(237, 250, 255, 1) 89%, rgba(255, 252, 251, 1) 100%);
+}
+
 body {
   background-color: #fffcfb;
 }
@@ -45,6 +50,10 @@ strong {
 }
 
 .text-orange p {
+  color: #f6391a;
+}
+
+.orangeStrong strong{
   color: #f6391a;
 }
 

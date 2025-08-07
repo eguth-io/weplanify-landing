@@ -36,6 +36,7 @@ import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
+import CloudEffects from "@/components/CloudEffects";
 
 export default async function HomePage() {
   const ctaData: CtaType = await sanityFetch({
@@ -90,21 +91,25 @@ export default async function HomePage() {
 
   return (
     <div>
+      <CloudEffects />
       <Nav />
       <div className="relative pt-[100px] lg:pt-[150px] pb-20 flex flex-col items-center justify-center">
         <h2 className="text-orange bg-light px-4 py-2 rounded-full lg:text-base text-[10px] hidden lg:block mb-[20px]">
           {home.subtitle}
         </h2>
-        <h2 className="lg:hidden text-center text-orange bg-light px-3 py-1 lg:px-4 lg:py-2 rounded-full text-[12px]  lg:text-base">
+        <h2 className="lg:hidden text-center  text-orange bg-light px-3 py-1 lg:px-4 lg:py-2 rounded-full text-[12px]  lg:text-base">
           {home.subtitleMobile}
         </h2>
-        <div className="mt-4 text-orange lg:text-[52px] text-2xl font-[600] font-unbounded text-center lg:text-start">
+        <div className="hidden lg:block mt-4 text-orange lg:text-[52px] text-2xl font-[600] font-unbounded text-center lg:text-start">
           <PortableText value={home.title} />
+        </div>
+        <div className="lg:hidden orangeStrong [&_p]:font-bold text-black text-2xl px-6  mt-4 text-center">
+          <PortableText value={home.titleMobile} />
         </div>
         <div className="text-[52px] font-[600] font-unbounded hidden lg:block">
           <PortableText value={home.title2} />
         </div>
-        <div className="text-[#1D2026] text-opacity-70 mt-3 lg:mt-2 text-center font-[500] text-sm lg:text-xl noBr ">
+        <div className="px-4 lg:px-0 text-[#1D2026] text-opacity-70 mt-3 lg:mt-2 text-center font-[500] text-sm lg:text-xl noBr ">
           <PortableText value={home.description} />
         </div>
         <div className="flex-col lg:flex-row flex gap-4 mt-6 lg:mt-11 w-full lg:w-auto justify-center items-center">
@@ -123,12 +128,22 @@ export default async function HomePage() {
         <img
           src="/leftCloud.png"
           alt="weplanify"
-          className="absolute left-0 top-0"
+          className="hidden lg:block absolute left-0 top-0"
         />
         <img
           src="/rightCloud.png"
           alt="weplanify"
-          className="absolute right-0 top-0"
+          className="hidden lg:block absolute right-0 top-0"
+        />
+        <img
+          src="/leftCloudMobile.png"
+          alt="weplanify"
+          className="lg:hidden absolute left-0 top-0"
+        />
+        <img
+          src="/rightCloudMobile.png"
+          alt="weplanify"
+          className="lg:hidden absolute right-0 bottom-0"
         />
         <div className="pt-52 text-center [&_p]:text-white [&_strong]:text-white">
           <div className="text-2xl lg:text-[40px] font-unbounded px-8 lg:px-0">
@@ -178,7 +193,14 @@ export default async function HomePage() {
           width={785}
           height={191}
           alt="planes"
-          className="absolute bottom-0"
+          className="absolute bottom-0 hidden lg:block"
+        />
+        <Image
+          src="/planesMobile.png"
+          width={170}
+          height={70}
+          alt="planes"
+          className="absolute bottom-0 lg:hidden right-0"
         />
         <div className="flex flex-col">
           <p className="leading-normal text-center lg:text-start font-unbounded text-xl lg:text-[40px] text-black lg:font-medium">
@@ -207,6 +229,38 @@ export default async function HomePage() {
           height={640}
           className="object-cover"
         />
+      </div>
+
+      <div className="mt-12 lg:hidden flex flex-col justify-center items-center">
+        <div className="flex gap-6 items-center flex-col lg:flex-row w-full">
+          <Link href={ctaData.ctaLink} className={"w-full"}>
+            <PulsatingButton className="w-4/5 mx-auto lg:w-full text-nowrap">
+              {ctaData.ctaButton}
+            </PulsatingButton>
+          </Link>
+          <button className="w-3/5 lg:w-auto font-[700] text-orange border border-[#f6391a] rounded-xl px-4 py-2">
+            {home.buttonDemo}
+          </button>
+        </div>
+        <div className="mt-8 flex items-center flex-col">
+          <Image
+            className="w-[140px] lg:w-[280px]"
+            src={organization.clientImage}
+            alt="client"
+            width={280}
+            height={62}
+          />
+          <div className="flex gap-2 items-center mt-2">
+            <Image
+              src="/fiveStars.svg"
+              width={80}
+              height={14}
+              alt="five stars"
+              className="hidden lg:block"
+            />
+            <p className="text-sm">{organization.clientText}</p>
+          </div>
+        </div>
       </div>
 
       <AvisTrips trips={trips} />

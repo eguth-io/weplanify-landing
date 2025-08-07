@@ -30,12 +30,26 @@ export default function Devices({ features }: { features: Features }) {
   const currentFeature = features.featuresList[activeIndex];
 
   return (
-    <div>
+    <div className="pt-[200px] lg:pt-0 pb-[200px] lg:pb-0 relative">
+      <img
+        src="/deviceLeftCloudMobile.png"
+        className="lg:hidden -top-[7%] absolute left-0 "
+        alt=""
+      />
+      <img
+        src="/deviceRightCloudMobile.png"
+        className="lg:hidden absolute right-0 bottom-0 -z-10"
+        alt=""
+      />
       <div className="relative flex justify-center px-4 md:px-6 lg:px-0">
-        <img src="/deviceLeftCloud.png" className="absolute right-0 " alt="" />
+        <img
+          src="/deviceLeftCloud.png"
+          className="hidden lg:block absolute right-0 "
+          alt=""
+        />
         <img
           src="/deviceRightCloud.png"
-          className="absolute left-0 -top-[5%] -z-10"
+          className="hidden lg:block absolute left-0 -top-[5%] -z-10"
           alt=""
         />
         <Iphone15Pro
@@ -49,7 +63,7 @@ export default function Devices({ features }: { features: Features }) {
       </div>
 
       <div className="py-8 md:py-12 lg:py-16">
-        <div className="relative px-4 md:px-6 lg:px-8">
+        <div className="relative">
           <Swiper
             modules={[Autoplay]}
             spaceBetween={12}
@@ -62,7 +76,7 @@ export default function Devices({ features }: { features: Features }) {
             }}
             onSwiper={(swiper) => setSwiperInstance(swiper)}
             onSlideChange={handleSlideChange}
-            className="pb-4"
+            className="pb-4 !px-4 md:!px-6 lg:!px-8"
             breakpoints={{
               480: {
                 slidesPerView: 1.3,
@@ -89,10 +103,10 @@ export default function Devices({ features }: { features: Features }) {
             {features.featuresList.map((feature, index) => (
               <SwiperSlide
                 key={index}
-                className="!w-[220px] !h-[160px] sm:h-[200px] md:h-[230px] lg:h-[270px]"
+                className="!h-[160px] sm:!h-[200px] md:!h-[230px] lg:!h-[270px]"
               >
                 <div
-                  className={`p-3 md:p-5 lg:p-6 relative rounded-xl md:rounded-2xl transition-all duration-300 cursor-pointer w-[220px] h-[160px] sm:h-[200px] md:h-[230px] lg:h-[270px] md:w-auto ${
+                  className={`p-3 md:p-5 lg:p-6 relative rounded-xl md:rounded-2xl transition-all duration-300 cursor-pointer h-full w-full ${
                     activeIndex === index
                       ? "bg-[#006F8E]"
                       : "border border-[#FDD7D1] bg-white hover:scale-102"
@@ -146,7 +160,7 @@ export default function Devices({ features }: { features: Features }) {
         </div>
 
         {/* Navigation dots */}
-        <div className="flex justify-center mt-4 md:mt-6 gap-1.5 md:gap-2">
+        <div className="hidden lg:flex justify-center mt-4 md:mt-6 gap-1.5 md:gap-2">
           {features.featuresList.map((_, index) => (
             <button
               key={index}

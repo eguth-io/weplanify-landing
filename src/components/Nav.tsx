@@ -12,7 +12,7 @@ export default async function Nav() {
   });
 
   return (
-    <nav className="bg-[#FFFCFB] flex justify-between items-center px-[30px] lg:px-[70px] py-[30px] fixed w-full z-50">
+    <nav className=" bg-[#FFFCFB] flex justify-between items-center px-[30px] lg:px-[70px] py-[30px] sticky w-full z-50 fixed top-0">
       <Image
         src={navData.logo}
         alt="logo"

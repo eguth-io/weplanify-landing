@@ -4,64 +4,36 @@ import { AvisType } from "@/sanity/lib/type";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import { useState, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, EffectFade } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 export default function Avis({ data }: { data: AvisType }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const swiperRef = useRef<SwiperType>(null);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === data.testimonials.length - 1 ? 0 : prevIndex + 1,
-    );
+    swiperRef.current?.slideNext();
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? data.testimonials.length - 1 : prevIndex - 1,
-    );
+    swiperRef.current?.slidePrev();
   };
 
-  // Gestion du drag/touch pour mobile
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!containerRef.current) return;
-    setIsDragging(true);
-    setStartX(e.touches[0].pageX - containerRef.current.offsetLeft);
-    setScrollLeft(containerRef.current.scrollLeft);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (!isDragging || !containerRef.current) return;
-    const x = e.touches[0].pageX - containerRef.current.offsetLeft;
-    const walk = (x - startX) * 1.5;
-    containerRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  const handleTouchEnd = () => {
-    setIsDragging(false);
-
-    // Snap vers la carte la plus proche après le swipe
-    if (containerRef.current) {
-      const container = containerRef.current;
-      const cardWidth = container.clientWidth;
-      const scrollPosition = container.scrollLeft;
-      const newIndex = Math.round(scrollPosition / cardWidth);
-
-      setCurrentIndex(Math.min(newIndex, data.testimonials.length - 1));
-
-      container.scrollTo({
-        left: newIndex * cardWidth,
-        behavior: "smooth",
-      });
-    }
+  const handleSlideChange = (swiper: SwiperType) => {
+    setCurrentIndex(swiper.activeIndex);
   };
 
   return (
     <div className="mt-20 md:mt-32 lg:mt-40 bg-[#006F8E] relative">
       {/* Titre responsive */}
-      <div className="pt-8 md:pt-12 lg:pt-16 text-center text-xl md:text-3xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white px-4 md:px-6">
+      <div className="w-3/4 mx-auto pt-8 md:pt-12 lg:pt-16 text-center text-xl md:text-3xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white px-4 md:px-6">
         <PortableText value={data.title} />
       </div>
 
@@ -74,79 +46,56 @@ export default function Avis({ data }: { data: AvisType }) {
         className="mx-auto mt-6 md:mt-8 lg:mt-10 w-[100px] h-[20px] md:w-[115px] md:h-[23px] lg:w-[130px] lg:h-[26px]"
       />
 
-      {/* Desktop: Carousel classique avec flèches */}
-      <div className="hidden lg:block relative overflow-hidden">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {data.testimonials.map(
-            (testimonial: AvisType["testimonials"][0], index: number) => (
-              <div
-                key={index}
-                className="w-full flex-shrink-0 flex flex-col items-center justify-center py-16 px-8"
-              >
-                <div className="text-center text-4xl font-semibold [&_p]:text-white max-w-4xl">
-                  <PortableText value={testimonial.description} />
-                </div>
-                <Image
-                  src={testimonial.profileImage}
-                  alt="profile"
-                  width={60}
-                  height={60}
-                  className="rounded-full mt-10"
-                />
-                <p className="mt-4 text-white font-semibold text-xl">
-                  {testimonial.name}
-                </p>
-              </div>
-            ),
-          )}
-        </div>
-      </div>
-
-      {/* Mobile/Tablet: Carousel avec swipe */}
-      <div className="lg:hidden relative">
-        <div
-          ref={containerRef}
-          className="flex overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing select-none"
-          style={{
-            scrollBehavior: "smooth",
-            scrollSnapType: "x mandatory",
+      {/* Swiper Container */}
+      <div className="relative">
+        <Swiper
+          modules={[Navigation, Pagination, EffectFade]}
+          spaceBetween={0}
+          slidesPerView={1}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
           }}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
+          onSlideChange={handleSlideChange}
+          effect="slide"
+          speed={500}
+          touchRatio={1}
+          touchAngle={45}
+          threshold={10}
+          longSwipes={true}
+          longSwipesRatio={0.5}
+          longSwipesMs={300}
+          followFinger={true}
+          allowTouchMove={true}
+          resistanceRatio={0.85}
+          className="testimonials-swiper"
         >
           {data.testimonials.map(
             (testimonial: AvisType["testimonials"][0], index: number) => (
-              <div
-                key={index}
-                className="w-full flex-shrink-0 flex flex-col items-center justify-center py-8 md:py-12 px-4 md:px-6"
-                style={{ scrollSnapAlign: "start" }}
-              >
-                {/* Description responsive */}
-                <div className="text-center text-lg md:text-2xl lg:text-4xl font-medium md:font-semibold [&_p]:text-white max-w-3xl leading-relaxed">
-                  <PortableText value={testimonial.description} />
+              <SwiperSlide key={index}>
+                <div className="w-full flex flex-col items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
+                  {/* Description responsive */}
+                  <div className="text-center text-lg md:text-2xl lg:text-4xl font-medium md:font-semibold lg:font-semibold [&_p]:text-white max-w-3xl lg:max-w-4xl leading-relaxed">
+                    <PortableText value={testimonial.description} />
+                  </div>
+
+                  {/* Profile image responsive */}
+                  <Image
+                    src={testimonial.profileImage}
+                    alt="profile"
+                    width={60}
+                    height={60}
+                    className="rounded-full mt-6 md:mt-8 lg:mt-10 w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
+                  />
+
+                  {/* Nom responsive */}
+                  <p className="mt-3 md:mt-4 text-white font-medium md:font-semibold text-lg md:text-xl">
+                    {testimonial.name}
+                  </p>
                 </div>
-
-                {/* Profile image responsive */}
-                <Image
-                  src={testimonial.profileImage}
-                  alt="profile"
-                  width={50}
-                  height={50}
-                  className="rounded-full mt-6 md:mt-8 lg:mt-10 w-[50px] h-[50px] md:w-[60px] md:h-[60px]"
-                />
-
-                {/* Nom responsive */}
-                <p className="mt-3 md:mt-4 text-white font-medium md:font-semibold text-lg md:text-xl">
-                  {testimonial.name}
-                </p>
-              </div>
+              </SwiperSlide>
             ),
           )}
-        </div>
+        </Swiper>
       </div>
 
       {/* Navigation Arrows - Desktop uniquement */}
@@ -175,16 +124,7 @@ export default function Avis({ data }: { data: AvisType }) {
             <button
               key={index}
               onClick={() => {
-                setCurrentIndex(index);
-                // Sur mobile, scroll vers la bonne position
-                if (window.innerWidth < 1024 && containerRef.current) {
-                  const container = containerRef.current;
-                  const cardWidth = container.clientWidth;
-                  container.scrollTo({
-                    left: index * cardWidth,
-                    behavior: "smooth",
-                  });
-                }
+                swiperRef.current?.slideTo(index);
               }}
               className={`rounded-full transition-all duration-200 ${
                 index === currentIndex
@@ -195,6 +135,26 @@ export default function Avis({ data }: { data: AvisType }) {
           ))}
         </div>
       )}
+
+      <style jsx global>{`
+        .testimonials-swiper {
+          width: 100%;
+          height: auto;
+        }
+
+        .testimonials-swiper .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .testimonials-swiper .swiper-wrapper {
+          align-items: stretch;
+        }
+      `}</style>
     </div>
   );
 }

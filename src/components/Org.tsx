@@ -354,7 +354,7 @@ export default function Org({
 
             {/* Image Section - Responsive */}
             <div
-              className={`w-full h-[250px] sm:h-[300px] md:h-[350px] lg:w-[630px] lg:h-[440px] min-h-[200px] object-cover ${
+              className={`w-full h-[350px] sm:h-[300px] md:h-[350px] lg:w-[630px] lg:h-[440px] min-h-[200px] object-cover ${
                 ltr && "lg:order-1"
               }`}
             >
@@ -363,7 +363,7 @@ export default function Org({
                   key={currentIndex}
                   src={data[currentIndex].image}
                   alt="feature"
-                  className="aspect-auto h-full w-full rounded-lg md:rounded-xl object-cover object-left-top px-2 md:px-4 lg:px-none lg:p-1 shadow-lg"
+                  className="aspect-auto h-full w-full rounded-lg md:rounded-xl lg:object-cover object-left-top px-2 md:px-4 lg:px-none lg:p-1 shadow-lg"
                   initial={{ opacity: 0, scale: 0.98 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.98 }}
