@@ -57,41 +57,41 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
 
       {/* Images de décoration */}
       <img
-        src="/line1.png"
+        src="/line1.svg"
         alt="pass"
         className="hidden lg:block -z-10 absolute top-0 left-0"
       />
       <img
-        src="/line2.png"
+        src="/line2.svg"
         alt="pass"
         className="hidden lg:block -z-10 absolute -right-0 top-28"
       />
       <img
-        src="/line1Mobile.png"
+        src="/line1Mobile.svg"
         alt="pass"
         className="lg:hidden -z-10 absolute top-0 left-0"
       />
       <img
-        src="/line2Mobile.png"
+        src="/line2Mobile.svg"
         alt="pass"
-        className="lg:hidden absolute -right-0 bottom-24"
+        className="lg:hidden absolute -right-0 bottom-40"
       />
 
       <div className="relative w-4/5 mt-16">
         {/* Navigation Arrows Mobile - En haut à droite */}
-        {trips.tripsList.length > slidesPerView && (
-          <div className="lg:hidden flex gap-2 justify-end mb-4 z-20 relative">
-            <button onClick={prevSlide} className="transition-all duration-200">
-              <Image src="/arrow.svg" alt="Previous" width={24} height={24} />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="transition-all duration-200 rotate-180"
-            >
-              <Image src="/arrow.svg" alt="Next" width={24} height={24} />
-            </button>
-          </div>
-        )}
+        {/*{trips.tripsList.length > slidesPerView && (*/}
+        {/*  <div className="lg:hidden flex gap-2 justify-end mb-4 z-20 relative">*/}
+        {/*    <button onClick={prevSlide} className="transition-all duration-200">*/}
+        {/*      <Image src="/arrow.svg" alt="Previous" width={24} height={24} />*/}
+        {/*    </button>*/}
+        {/*    <button*/}
+        {/*      onClick={nextSlide}*/}
+        {/*      className="transition-all duration-200 rotate-180"*/}
+        {/*    >*/}
+        {/*      <Image src="/arrow.svg" alt="Next" width={24} height={24} />*/}
+        {/*    </button>*/}
+        {/*  </div>*/}
+        {/*)}*/}
 
         {/* Swiper Container */}
         <div className="relative overflow-hidden rounded-lg">
@@ -135,7 +135,7 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
                       width={338}
                       height={340}
                       style={{ borderRadius: "8px" }}
-                      className="w-[300px] h-[300px] lg:w-full lg:h-[400px] object-cover rounded-2xl"
+                      className="w-[350px] h-[370px] lg:w-full lg:h-[400px] object-cover rounded-2xl"
                     />
 
                     <div className="absolute top-4 left-4 flex items-center gap-3">

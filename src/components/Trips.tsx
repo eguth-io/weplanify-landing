@@ -26,9 +26,9 @@ export default function Trips({ blocks }: CarouselProps) {
   return (
     <div className="w-full mt-10 md:mt-16 lg:mt-24 relative">
       <img
-        src="/pass.png"
+        src="/pass.svg"
         alt="pass"
-        className="hidden lg:block -z-10 absolute bottom-[300px] left-0 w-auto h-auto "
+        className="hidden lg:block -z-10 absolute bottom-[0] left-0 w-auto h-auto "
       />
       <img
         src="/passMobile.svg"
