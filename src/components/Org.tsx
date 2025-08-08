@@ -433,7 +433,7 @@ export default function Org({
                   </div>
 
                   {/* Description responsive */}
-                  <div className="[&_p]:text-white mx-0 max-w-sm text-balance text-xs md:text-sm text-white px-2">
+                  <div className="[&_p]:text-white w-full text-sm">
                     <PortableText value={item.description} />
                   </div>
                 </li>

@@ -103,7 +103,7 @@ export default function Devices({ features }: { features: Features }) {
             {features.featuresList.map((feature, index) => (
               <SwiperSlide
                 key={index}
-                className="!h-[160px] sm:!h-[200px] md:!h-[230px] lg:!h-[270px]"
+                className="!w-[220px] lg:!w-[370px] !h-[160px] sm:!h-[200px] md:!h-[230px] lg:!h-[270px]"
               >
                 <div
                   className={`p-3 md:p-5 lg:p-6 relative rounded-xl md:rounded-2xl transition-all duration-300 cursor-pointer h-full w-full ${

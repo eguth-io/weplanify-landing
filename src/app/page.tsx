@@ -17,6 +17,7 @@ import {
   homeQuery,
   iaQuery,
   logicielQuery,
+  navQuery,
   organizationQuery,
   tripsQuery,
 } from "@/sanity/lib/query";
@@ -29,6 +30,7 @@ import {
   Home,
   IA,
   Logiciel,
+  NavType,
   Organization,
   TripsType,
 } from "@/sanity/lib/type";
@@ -47,6 +49,11 @@ export default async function HomePage() {
   const home: Home = await sanityFetch({
     query: homeQuery,
     tags: ["home"],
+  });
+
+  const navData: NavType = await sanityFetch({
+    query: navQuery,
+    tags: ["nav"],
   });
 
   const features: Features = await sanityFetch({
@@ -92,7 +99,7 @@ export default async function HomePage() {
   return (
     <div>
       <CloudEffects />
-      <Nav />
+      <Nav navData={navData} />
       <div className="relative pt-[100px] lg:pt-[150px] pb-20 flex flex-col items-center justify-center">
         <h2 className="text-orange bg-light px-4 py-2 rounded-full lg:text-base text-[10px] hidden lg:block mb-[20px]">
           {home.subtitle}
@@ -136,16 +143,19 @@ export default async function HomePage() {
           className="hidden lg:block absolute right-0 top-0"
         />
         <img
-          src="/leftCloudMobile.png"
+          src="/leftCloudMobile.svg"
           alt="weplanify"
-          className="lg:hidden absolute left-0 top-0"
+          className="lg:hidden absolute left-0 -top-[50px]"
         />
         <img
-          src="/rightCloudMobile.png"
+          src="/rightCloudMobile.svg"
           alt="weplanify"
-          className="lg:hidden absolute right-0 bottom-0"
+          className="lg:hidden absolute right-0 -bottom-[50px]"
         />
-        <div className="pt-52 text-center [&_p]:text-white [&_strong]:text-white">
+        <div
+          id="fonctionnement"
+          className="pt-[50px] lg:pt-52 text-center [&_p]:text-white [&_strong]:text-white"
+        >
           <div className="text-2xl lg:text-[40px] font-unbounded px-8 lg:px-0">
             <PortableText value={organization.title} />
           </div>
@@ -206,16 +216,22 @@ export default async function HomePage() {
           <p className="leading-normal text-center lg:text-start font-unbounded text-xl lg:text-[40px] text-black lg:font-medium">
             {ia.title}
           </p>
-          <div className="mb-6 lg:mb-24 mt-6 relative flex items-center bg-[#F8F7F8] rounded-full shadow-lg border border-gray-200 overflow-hidden max-w-2xl pr-4">
+          <div className="mb-6 lg:mb-24 mt-6 relative flex items-center bg-[#F8F7F8] rounded-full shadow-md border border-gray-200 overflow-hidden max-w-2xl pr-4">
             <input
               type="text"
               placeholder={ia.placeholder}
-              className="flex-1 px-6 py-4 text-[#4C3F4A] text-lg bg-[#F8F7F8] outline-none placeholder-[#4C3F4A]"
+              className="flex-1 px-6 py-4 text-[#4C3F4A] h-[35px] lg:h-auto text-xs lg:text-lg bg-[#F8F7F8] outline-none placeholder-[#4C3F4A]"
             />
 
             {/* Submit Button */}
             <button type="submit">
-              <Image src="/input.svg" alt="Submit" width={32} height={32} />
+              <Image
+                src="/input.svg"
+                alt="Submit"
+                width={32}
+                height={32}
+                className="w-[23px] h-[23px] lg:w-[33px] lg:h-[33px]"
+              />
             </button>
           </div>
           <Link href={ctaData.ctaLink} className="hidden lg:block">
@@ -284,7 +300,7 @@ export default async function HomePage() {
           imageSrc={logiciel.image}
         />
       </div>
-
+      <div id="avis"></div>
       <Avis data={avis} />
       <FAQ faq={faq} />
 

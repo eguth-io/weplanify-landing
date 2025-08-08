@@ -119,7 +119,10 @@ export default function Avis({ data }: { data: AvisType }) {
 
       {/* Indicateurs de progression - Responsive */}
       {data.testimonials.length > 1 && (
-        <div className="flex justify-center pb-6 md:pb-8 gap-1.5 md:gap-2">
+        <div
+          id="faq"
+          className="flex justify-center pb-6 md:pb-8 gap-1.5 md:gap-2"
+        >
           {data.testimonials.map((_, index) => (
             <button
               key={index}

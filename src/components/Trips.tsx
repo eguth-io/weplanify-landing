@@ -31,9 +31,9 @@ export default function Trips({ blocks }: CarouselProps) {
         className="hidden lg:block -z-10 absolute bottom-[300px] left-0 w-auto h-auto "
       />
       <img
-        src="/passMobile.png"
+        src="/passMobile.svg"
         alt="pass"
-        className="lg:hidden -z-10 absolute -bottom-[25%] left-0 w-auto h-auto "
+        className="lg:hidden -z-10 absolute bottom-0 left-0"
       />
 
       <div className="overflow-hidden mx-auto relative">
@@ -78,8 +78,8 @@ export default function Trips({ blocks }: CarouselProps) {
           }}
         >
           {blocks.map((block: Block, index: number) => (
-            <SwiperSlide key={index} className={"!w-[240px] lg:!w-[420px]"}>
-              <div className="relative rounded-xl md:rounded-2xl w-[220px] sm:w-[240px] h-[220px] sm:h-[240px] md:h-[264px] lg:h-[420px] xl:h-[435px] md:w-auto">
+            <SwiperSlide key={index} className={"!w-[264px] lg:!w-[420px]"}>
+              <div className="relative rounded-xl md:rounded-2xl w-[264px] h-[264px] lg:h-[420px] xl:h-[435px] md:w-auto">
                 <Image
                   src={block.image}
                   alt={block.tooltip}

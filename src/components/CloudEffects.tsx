@@ -4,20 +4,27 @@ import { useEffect } from "react";
 
 export default function CloudEffects() {
   useEffect(() => {
-    // Déclenche le scroll après 3 secondes
-    const timer = setTimeout(() => {
-      // Scroll fluide vers la section suivante (100vh vers le bas)
-      window.scrollTo({
-        top: window.innerHeight,
-        behavior: "smooth",
-      });
-    }, 1500);
+    // Déclenche le scroll après 3 secondes (uniquement sur desktop)
+    const handleAutoScroll = () => {
+      if (window.innerWidth >= 1024) {
+        // lg breakpoint
+        const timer = setTimeout(() => {
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: "smooth",
+          });
+        }, 1500);
+        return () => clearTimeout(timer);
+      }
+    };
 
-    return () => clearTimeout(timer);
+    const cleanup = handleAutoScroll();
+    return cleanup;
   }, []);
 
   return (
     <>
+      {/* Version desktop avec animations */}
       <motion.div
         className="hidden lg:flex relative h-[100vh] justify-center items-center gradient-container"
         initial={{ opacity: 0 }}
