@@ -13,7 +13,7 @@ const UnboundedFont = Unbounded({
 });
 
 export const metadata: Metadata = {
-  title: "WePlanify",
+  title: "Weplanify",
   description: "Planifiez, partagez, partez : une seule appli pour tout gérer",
 };
 
