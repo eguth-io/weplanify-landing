@@ -56,24 +56,32 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
       </div>
 
       {/* Images de décoration */}
-      <img
+      <Image
         src="/line1.svg"
-        alt="pass"
+        alt="Ligne décorative 1 - Weplanify"
+        width={200}
+        height={400}
         className="hidden lg:block -z-10 absolute top-0 left-0"
       />
-      <img
+      <Image
         src="/line2.svg"
-        alt="pass"
+        alt="Ligne décorative 2 - Weplanify"
+        width={200}
+        height={400}
         className="hidden lg:block -z-10 absolute -right-0 top-28"
       />
-      <img
+      <Image
         src="/line1Mobile.svg"
-        alt="pass"
+        alt="Ligne décorative 1 mobile - Weplanify"
+        width={150}
+        height={300}
         className="lg:hidden -z-10 absolute top-0 left-0"
       />
-      <img
+      <Image
         src="/line2Mobile.svg"
-        alt="pass"
+        alt="Ligne décorative 2 mobile - Weplanify"
+        width={150}
+        height={300}
         className="lg:hidden absolute -right-0 bottom-40"
       />
 

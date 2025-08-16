@@ -31,26 +31,34 @@ export default function Devices({ features }: { features: Features }) {
 
   return (
     <div className="pt-[200px] lg:pt-0 pb-[200px] lg:pb-0 relative">
-      <img
+      <Image
         src="/deviceLeftCloudMobile.png"
         className="lg:hidden -top-[7%] absolute left-0 "
-        alt=""
+        alt="Nuage décoratif gauche mobile - Weplanify"
+        width={150}
+        height={150}
       />
-      <img
+      <Image
         src="/deviceRightCloudMobile.png"
         className="lg:hidden absolute right-0 bottom-0 -z-10"
-        alt=""
+        alt="Nuage décoratif droit mobile - Weplanify"
+        width={150}
+        height={150}
       />
       <div className="relative flex justify-center px-4 md:px-6 lg:px-0">
-        <img
+        <Image
           src="/deviceLeftCloud.png"
           className="hidden lg:block absolute right-0 "
-          alt=""
+          alt="Nuage décoratif gauche - Weplanify"
+          width={200}
+          height={200}
         />
-        <img
+        <Image
           src="/deviceRightCloud.png"
           className="hidden lg:block absolute left-0 -top-[5%] -z-10"
-          alt=""
+          alt="Nuage décoratif droit - Weplanify"
+          width={200}
+          height={200}
         />
         <Iphone15Pro
           className="absolute right-0 -top-10 w-[90px] h-[170px] sm:w-[220px] sm:h-[440px] md:top-[15%] md:right-[5%] md:w-[250px] md:h-[500px] lg:w-[300px] lg:h-[600px]"

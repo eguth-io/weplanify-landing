@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function CloudEffects() {
   useEffect(() => {
@@ -31,9 +32,7 @@ export default function CloudEffects() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <motion.img
-          src="/CloudsEffects/topLeft.png"
-          alt=""
+        <motion.div
           className="absolute top-0 left-0"
           animate={{
             x: [0, 10, -5, 0],
@@ -44,11 +43,16 @@ export default function CloudEffects() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-        />
+        >
+          <Image
+            src="/CloudsEffects/topLeft.png"
+            alt="Nuage décoratif haut gauche - Weplanify"
+            width={200}
+            height={200}
+          />
+        </motion.div>
 
-        <motion.img
-          src="/CloudsEffects/topRight.png"
-          alt=""
+        <motion.div
           className="absolute top-0 right-0"
           animate={{
             x: [0, -8, 12, 0],
@@ -60,7 +64,14 @@ export default function CloudEffects() {
             ease: "easeInOut",
             delay: 0.5,
           }}
-        />
+        >
+          <Image
+            src="/CloudsEffects/topRight.png"
+            alt="Nuage décoratif haut droit - Weplanify"
+            width={200}
+            height={200}
+          />
+        </motion.div>
 
         <motion.p
           className="text-white font-bold text-[62px] text-center px-4"
@@ -72,9 +83,7 @@ export default function CloudEffects() {
           Planifiez, partagez, partez !
         </motion.p>
 
-        <motion.img
-          src="/CloudsEffects/bottomLeft.png"
-          alt=""
+        <motion.div
           className="absolute bottom-0 left-0"
           animate={{
             x: [0, 15, -8, 0],
@@ -86,11 +95,16 @@ export default function CloudEffects() {
             ease: "easeInOut",
             delay: 1,
           }}
-        />
+        >
+          <Image
+            src="/CloudsEffects/bottomLeft.png"
+            alt="Nuage décoratif bas gauche - Weplanify"
+            width={200}
+            height={200}
+          />
+        </motion.div>
 
-        <motion.img
-          src="/CloudsEffects/bottomRight.png"
-          alt=""
+        <motion.div
           className="absolute bottom-0 right-0"
           animate={{
             x: [0, -12, 6, 0],
@@ -102,7 +116,14 @@ export default function CloudEffects() {
             ease: "easeInOut",
             delay: 1.5,
           }}
-        />
+        >
+                      <Image
+              src="/CloudsEffects/bottomRight.png"
+              alt="Nuage décoratif bas droit - Weplanify"
+              width={200}
+              height={200}
+            />
+        </motion.div>
 
         <motion.div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
