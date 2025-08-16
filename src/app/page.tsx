@@ -362,7 +362,7 @@ export default async function HomePage() {
           </div>
           <div className="flex flex-col">
             <p className="text-sm text-black font-medium">Produit</p>
-            <p className="text-black/75 text-sm mt-4">Acceuil</p>
+            <p className="text-black/75 text-sm mt-4">Accueil</p>
           </div>
           <div className="flex flex-col">
             <p className="text-sm text-black font-medium">Companie</p>
@@ -376,7 +376,7 @@ export default async function HomePage() {
           <div className="flex flex-col">
             <p className="text-sm text-black font-medium">Legal</p>
             <p className="text-black/75 text-sm mt-6">
-              Condition d&apos;utilisation
+              CGU
             </p>
           </div>
         </div>
@@ -429,7 +429,7 @@ export default async function HomePage() {
                 Produit
               </p>
               <p className="text-black/75 text-sm md:text-base hover:text-black cursor-pointer transition-colors">
-                Acceuil
+                Accueil
               </p>
             </div>
 
@@ -459,7 +459,7 @@ export default async function HomePage() {
                 Legal
               </p>
               <p className="text-black/75 text-sm md:text-base hover:text-black cursor-pointer transition-colors leading-tight">
-                Condition d&apos;utilisation
+                CGU
               </p>
             </div>
           </div>
