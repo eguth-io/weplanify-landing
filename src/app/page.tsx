@@ -344,13 +344,15 @@ export default async function HomePage() {
               Rejoignez nous
             </p>
             <div className="flex gap-3 mt-3">
-              <Image
-                src="/instagram.svg"
-                alt="instagram"
-                width={38}
-                height={38}
-                className="cursor-pointer"
-              />
+              <Link href={'https://www.instagram.com/weplanify/'} target="_blank">
+                <Image
+                  src="/instagram.svg"
+                  alt="instagram"
+                  width={38}
+                  height={38}
+                  className="cursor-pointer"
+                />
+              </Link>
             </div>
           </div>
           <div className="flex flex-col">
@@ -397,13 +399,15 @@ export default async function HomePage() {
                 Rejoignez nous
               </p>
               <div className="flex gap-3">
-                <Image
-                  src="/instagram.svg"
-                  alt="instagram"
-                  width={32}
-                  height={32}
-                  className="cursor-pointer md:w-[38px] md:h-[38px]"
-                />
+                <Link href={'https://www.instagram.com/weplanify/'} target="_blank">
+                  <Image
+                    src="/instagram.svg"
+                    alt="instagram"
+                    width={32}
+                    height={32}
+                    className="cursor-pointer md:w-[38px] md:h-[38px]"
+                  />
+                </Link>
               </div>
             </div>
           </div>
