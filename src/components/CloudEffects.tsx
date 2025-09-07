@@ -8,6 +8,9 @@ export default function CloudEffects() {
   const [isExiting, setIsExiting] = useState(false);
 
   useEffect(() => {
+    // Bloquer le scroll pendant l'intro
+    document.body.style.overflow = 'hidden';
+    
     // Commencer l'animation de sortie après 2.5 secondes
     const exitTimer = setTimeout(() => {
       setIsExiting(true);
@@ -16,11 +19,15 @@ export default function CloudEffects() {
     // Masquer complètement l'intro après 3 secondes
     const hideTimer = setTimeout(() => {
       setIsVisible(false);
+      // Réactiver le scroll après la disparition de l'intro
+      document.body.style.overflow = 'unset';
     }, 3000);
 
     return () => {
       clearTimeout(exitTimer);
       clearTimeout(hideTimer);
+      // S'assurer que le scroll est réactivé si le composant est démonté
+      document.body.style.overflow = 'unset';
     };
   }, []);
 
