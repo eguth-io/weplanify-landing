@@ -217,6 +217,20 @@ export default async function HomePage() {
 
         {/* IA Section */}
         <section className="relative mx-3 lg:mx-16 mt-20 flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-48" aria-labelledby="ia-title">
+        <Image
+          src="/planes.png"
+          width={785}
+          height={191}
+          alt="Avions décoratifs - Weplanify"
+          className="absolute bottom-0 hidden lg:block"
+        />
+        <Image
+          src="/planesMobile.png"
+          width={170}
+          height={70}
+          alt="Avions décoratifs mobile - Weplanify"
+          className="absolute bottom-0 lg:hidden right-0"
+        />
         <div className="flex flex-col">
           <p id="ia-title" className="leading-normal text-center lg:text-start font-unbounded text-xl lg:text-[40px] text-black lg:font-medium">
             {ia.title}
