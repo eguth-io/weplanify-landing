@@ -126,9 +126,6 @@ export default async function HomePage() {
           <PulsatingButton className="w-4/5 lg:w-auto">
             {ctaData.ctaButton}
           </PulsatingButton>
-          <button className="w-3/5 lg:w-auto font-[700] text-orange border border-[#f6391a] rounded-xl px-4 py-2">
-            {home.buttonDemo}
-          </button>
         </div>
         <Trips blocks={home.blocks} />
         </section>
@@ -189,9 +186,6 @@ export default async function HomePage() {
                 {ctaData.ctaButton}
               </PulsatingButtonWhite>
             </Link>
-            <p className="text-white font-semibold underline  text-nowrap">
-              {home.buttonDemo}
-            </p>
           </div>
           <div className="mt-8 flex items-center flex-col">
             <Image
