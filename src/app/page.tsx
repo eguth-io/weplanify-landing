@@ -39,6 +39,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
 import CloudEffects from "@/components/CloudEffects";
+import BlogPreview from "@/components/BlogPreview";
+import RecentBlogPosts from "@/components/RecentBlogPosts";
 
 export default async function HomePage() {
   const ctaData: CtaType = await sanityFetch({
@@ -325,6 +327,9 @@ export default async function HomePage() {
         <section aria-labelledby="faq-title">
           <FAQ faq={faq} />
         </section>
+        
+        {/* Blog Preview Section */}
+        <BlogPreview />
 
         {/* CTA Section */}
         <section className="overflow-hidden relative py-[100px] bg-[#F6391A] mt-32 rounded-[40px] lg:mx-[60px] text-center" aria-labelledby="cta-title">
@@ -395,10 +400,7 @@ export default async function HomePage() {
             <p className="text-black/75 text-sm mt-6">A propos</p>
             <p className="text-black/75 text-sm mt-4">Contact</p>
           </div>
-          <div className="flex flex-col">
-            <p className="text-sm text-black font-medium">Ressources</p>
-            <p className="text-black/75 text-sm mt-6">Blog</p>
-          </div>
+          <RecentBlogPosts />
           <div className="flex flex-col">
             <p className="text-sm text-black font-medium">Legal</p>
             <p className="text-black/75 text-sm mt-6">
@@ -467,12 +469,7 @@ export default async function HomePage() {
             </div>
 
             <div className="flex flex-col">
-              <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
-                Ressources
-              </p>
-              <p className="text-black/75 text-sm md:text-base hover:text-black cursor-pointer transition-colors">
-                Blog
-              </p>
+              <RecentBlogPosts />
             </div>
 
             <div className="flex flex-col">
