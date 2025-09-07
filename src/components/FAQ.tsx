@@ -18,14 +18,15 @@ export default function FAQ({ faq }: { faq: FAQType }) {
     "mainEntity": faq.questions.map((item) => ({
       "@type": "Question",
       "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-          .map((block: any) =>
-            block.children?.map((child: any) => child.text).join('') || ''
-          )
-          .join(' ')
-      }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer
+            .map((block: unknown) => {
+              const blockWithChildren = block as { children?: Array<{ text?: string }> };
+              return blockWithChildren?.children?.map((child: { text?: string }) => child.text || '').join('') || '';
+            })
+            .join(' ')
+        }
     }))
   };
 
