@@ -1,36 +1,52 @@
 "use client";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function CloudEffects() {
-  useEffect(() => {
-    // Déclenche le scroll après 3 secondes (uniquement sur desktop)
-    const handleAutoScroll = () => {
-      if (window.innerWidth >= 1024) {
-        // lg breakpoint
-        const timer = setTimeout(() => {
-          window.scrollTo({
-            top: window.innerHeight,
-            behavior: "smooth",
-          });
-        }, 1500);
-        return () => clearTimeout(timer);
-      }
-    };
+  const [isVisible, setIsVisible] = useState(true);
+  const [isExiting, setIsExiting] = useState(false);
 
-    const cleanup = handleAutoScroll();
-    return cleanup;
+  useEffect(() => {
+    // Bloquer le scroll pendant l'intro
+    document.body.style.overflow = 'hidden';
+    
+    // Commencer l'animation de sortie après 2.5 secondes
+    const exitTimer = setTimeout(() => {
+      setIsExiting(true);
+    }, 2500);
+
+    // Masquer complètement l'intro après 3 secondes
+    const hideTimer = setTimeout(() => {
+      setIsVisible(false);
+      // Réactiver le scroll après la disparition de l'intro
+      document.body.style.overflow = 'unset';
+    }, 3000);
+
+    return () => {
+      clearTimeout(exitTimer);
+      clearTimeout(hideTimer);
+      // S'assurer que le scroll est réactivé si le composant est démonté
+      document.body.style.overflow = 'unset';
+    };
   }, []);
+
+  // Si l'intro n'est plus visible, ne pas afficher
+  if (!isVisible) {
+    return null;
+  }
 
   return (
     <>
       {/* Version desktop avec animations */}
       <motion.div
-        className="hidden lg:flex relative h-[100vh] justify-center items-center gradient-container"
+        className="hidden lg:flex relative h-[100vh] justify-center items-center gradient-container fixed top-0 left-0 w-full z-50"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        animate={{ 
+          opacity: isExiting ? 0 : 1,
+          y: isExiting ? -100 : 0
+        }}
+        transition={{ duration: 0.5 }}
       >
         <motion.div
           className="absolute top-0 left-0"
@@ -124,6 +140,41 @@ export default function CloudEffects() {
               height={200}
             />
         </motion.div>
+
+        <motion.div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+            <motion.div
+              className="w-1 h-3 bg-white rounded-full mt-2"
+              animate={{ y: [0, 14, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            />
+          </div>
+        </motion.div>
+      </motion.div>
+
+      {/* Version mobile avec animations */}
+      <motion.div
+        className="lg:hidden flex relative h-[100vh] justify-center items-center gradient-container fixed top-0 left-0 w-full z-50"
+        initial={{ opacity: 0 }}
+        animate={{ 
+          opacity: isExiting ? 0 : 1,
+          y: isExiting ? -100 : 0
+        }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.p
+          className="text-white font-bold text-[32px] text-center px-4"
+          style={{ fontFamily: "Unbounded, sans-serif" }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          Planifiez, partagez, partez !
+        </motion.p>
 
         <motion.div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
