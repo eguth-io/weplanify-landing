@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function CloudEffects() {
   useEffect(() => {
-    // Déclenche le scroll après 3 secondes (uniquement sur desktop)
+    // Trigger scroll after 3 seconds (desktop only)
     const handleAutoScroll = () => {
       if (window.innerWidth >= 1024) {
         // lg breakpoint
@@ -25,7 +25,7 @@ export default function CloudEffects() {
 
   return (
     <>
-      {/* Version desktop avec animations */}
+      {/* Desktop version with animations */}
       <motion.div
         className="hidden lg:flex relative h-[100vh] justify-center items-center gradient-container"
         initial={{ opacity: 0 }}
@@ -46,7 +46,7 @@ export default function CloudEffects() {
         >
           <Image
             src="/CloudsEffects/topLeft.png"
-            alt="Nuage décoratif haut gauche - Weplanify"
+            alt="Decorative cloud top left - WePlanify"
             width={200}
             height={200}
           />
@@ -67,7 +67,7 @@ export default function CloudEffects() {
         >
           <Image
             src="/CloudsEffects/topRight.png"
-            alt="Nuage décoratif haut droit - Weplanify"
+            alt="Decorative cloud top right - WePlanify"
             width={200}
             height={200}
           />
@@ -98,7 +98,7 @@ export default function CloudEffects() {
         >
           <Image
             src="/CloudsEffects/bottomLeft.png"
-            alt="Nuage décoratif bas gauche - Weplanify"
+            alt="Decorative cloud bottom left - WePlanify"
             width={200}
             height={200}
           />
@@ -119,7 +119,7 @@ export default function CloudEffects() {
         >
                       <Image
               src="/CloudsEffects/bottomRight.png"
-              alt="Nuage décoratif bas droit - Weplanify"
+              alt="Decorative cloud bottom right - WePlanify"
               width={200}
               height={200}
             />

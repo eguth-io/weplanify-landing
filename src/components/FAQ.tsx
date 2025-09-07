@@ -11,7 +11,7 @@ export default function FAQ({ faq }: { faq: FAQType }) {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Génération des données structurées JSON-LD
+  // Generate JSON-LD structured data
   const faqStructuredData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -31,7 +31,7 @@ export default function FAQ({ faq }: { faq: FAQType }) {
 
   return (
     <div className="mt-28">
-      {/* Données structurées JSON-LD pour le SEO */}
+      {/* JSON-LD structured data for SEO */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -64,7 +64,9 @@ export default function FAQ({ faq }: { faq: FAQType }) {
                 id={`faq-question-${index}`}
               >
                 <h3 
-                  className="text-base text-[#F6391A] font-semibold pr-4"
+                  className={`text-base font-semibold pr-4 ${
+                    openIndex === index ? "text-white" : "text-[#F6391A]"
+                  }`}
                   itemProp="name"
                 >
                   {question.question}

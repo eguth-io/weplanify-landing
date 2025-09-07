@@ -11,13 +11,13 @@ img,
 p,
 span,
 div {
-  -webkit-user-drag: none; /* empêche le drag d'images sur WebKit */
+  -webkit-user-drag: none; /* prevents image drag on WebKit */
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
 
-  -webkit-user-select: none; /* empêche la sélection de texte */
+  -webkit-user-select: none; /* prevents text selection */
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -79,7 +79,7 @@ body {
   }
 }
 
-/* Accessibilité - Éléments masqués visuellement mais accessibles aux lecteurs d'écran */
+/* Accessibility - Elements hidden visually but accessible to screen readers */
 .sr-only {
   position: absolute;
   width: 1px;

@@ -118,7 +118,7 @@ export default function Org({
     const updateCardWidth = () => {
       const width = window.innerWidth;
       if (width < 480) {
-        setCardWidth(Math.floor(width * 0.85)); // Mobile très petit
+        setCardWidth(Math.floor(width * 0.85)); // Very small mobile
       } else if (width < 640) {
         setCardWidth(Math.floor(width * 0.8)); // Mobile
       } else if (width < 768) {
@@ -374,7 +374,7 @@ export default function Org({
               )}
             </div>
 
-            {/* Mobile Carousel - Fluide avec aperçu des cartes adjacentes */}
+            {/* Mobile Carousel - Fluid with adjacent card preview */}
             <ul
               ref={carouselRef}
               className="flex h-full overflow-x-auto py-0 md:py-8 lg:py-10 lg:hidden scrollbar-hide cursor-grab active:cursor-grabbing select-none"
@@ -416,7 +416,7 @@ export default function Org({
                     ></div>
                   </div>
 
-                  {/* Icône responsive */}
+                  {/* Responsive icon */}
                   <div className="flex items-center mb-3 md:mb-4">
                     <div className="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-full flex items-center justify-center mr-3">
                       <Image

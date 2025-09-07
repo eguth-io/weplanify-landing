@@ -14,8 +14,8 @@ const UnboundedFont = Unbounded({
 });
 
 export const metadata: Metadata = {
-  title: "Weplanify - Planifiez, partagez, partez : une seule appli pour tout gérer",
-  description: "Weplanify est l'application de planification de voyage qui simplifie l'organisation de vos séjours. Planifiez, partagez et partez en toute simplicité avec une interface intuitive et collaborative.",
+  title: "WePlanify - Planifiez, partagez, partez : une seule appli pour tout gérer",
+  description: "WePlanify est l'application de planification de voyage qui simplifie l'organisation de vos séjours. Planifiez, partagez et partez en toute simplicité avec une interface intuitive et collaborative.",
   keywords: [
     "planification voyage",
     "organisation séjour",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     "organisation vacances",
     "voyage en groupe"
   ],
-  authors: [{ name: "Weplanify" }],
-  creator: "Weplanify",
-  publisher: "Weplanify",
+  authors: [{ name: "WePlanify" }],
+  creator: "WePlanify",
+  publisher: "WePlanify",
   formatDetection: {
     email: false,
     address: false,
@@ -44,22 +44,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://weplanify.com',
-    title: 'Weplanify - Planifiez, partagez, partez : une seule appli pour tout gérer',
-    description: 'Weplanify est l\'application de planification de voyage qui simplifie l\'organisation de vos séjours. Planifiez, partagez et partez en toute simplicité.',
-    siteName: 'Weplanify',
+    title: 'WePlanify - Planifiez, partagez, partez : une seule appli pour tout gérer',
+    description: 'WePlanify est l\'application de planification de voyage qui simplifie l\'organisation de vos séjours. Planifiez, partagez et partez en toute simplicité.',
+    siteName: 'WePlanify',
     images: [
       {
         url: '/logo.png',
         width: 155,
         height: 66,
-        alt: 'Logo Weplanify',
+        alt: 'Logo WePlanify',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Weplanify - Planifiez, partagez, partez : une seule appli pour tout gérer',
-    description: 'Weplanify est l\'application de planification de voyage qui simplifie l\'organisation de vos séjours.',
+    title: 'WePlanify - Planifiez, partagez, partez : une seule appli pour tout gérer',
+    description: 'WePlanify est l\'application de planification de voyage qui simplifie l\'organisation de vos séjours.',
     images: ['/logo.png'],
   },
   robots: {
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code', // À remplacer par votre code de vérification Google
+    google: 'your-google-verification-code', // Replace with your Google verification code
   },
 };
 
@@ -91,10 +91,10 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#F6391A" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="application-name" content="Weplanify" />
+        <meta name="application-name" content="WePlanify" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Weplanify" />
+        <meta name="apple-mobile-web-app-title" content="WePlanify" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <StructuredData />

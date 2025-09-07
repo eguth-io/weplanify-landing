@@ -18,15 +18,15 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
   const [slidesPerView, setSlidesPerView] = useState(1);
   const swiperRef = useRef<SwiperType>(null);
 
-  // Déterminer le nombre de slides visibles selon la taille d'écran
+  // Determine number of visible slides based on screen size
   useEffect(() => {
     const updateSlidesPerView = () => {
       if (window.innerWidth >= 1024) {
-        setSlidesPerView(3); // lg: 3 éléments
+        setSlidesPerView(3); // lg: 3 items
       } else if (window.innerWidth >= 768) {
-        setSlidesPerView(2); // md: 2 éléments
+        setSlidesPerView(2); // md: 2 items
       } else {
-        setSlidesPerView(1); // sm: 1 élément
+        setSlidesPerView(1); // sm: 1 item
       }
     };
 
@@ -55,38 +55,38 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
         <PortableText value={trips.title} />
       </div>
 
-      {/* Images de décoration */}
+      {/* Decorative images */}
       <Image
         src="/line1.svg"
-        alt="Ligne décorative 1 - Weplanify"
+        alt="Ligne décorative 1 - WePlanify"
         width={200}
         height={400}
         className="hidden lg:block -z-10 absolute top-0 left-0"
       />
       <Image
         src="/line2.svg"
-        alt="Ligne décorative 2 - Weplanify"
+        alt="Ligne décorative 2 - WePlanify"
         width={200}
         height={400}
         className="hidden lg:block -z-10 absolute -right-0 top-28"
       />
       <Image
         src="/line1Mobile.svg"
-        alt="Ligne décorative 1 mobile - Weplanify"
+        alt="Ligne décorative 1 mobile - WePlanify"
         width={150}
         height={300}
         className="lg:hidden -z-10 absolute top-0 left-0"
       />
       <Image
         src="/line2Mobile.svg"
-        alt="Ligne décorative 2 mobile - Weplanify"
+        alt="Ligne décorative 2 mobile - WePlanify"
         width={150}
         height={300}
         className="lg:hidden absolute -right-0 bottom-40"
       />
 
       <div className="relative w-4/5 mt-16">
-        {/* Navigation Arrows Mobile - En haut à droite */}
+        {/* Mobile Navigation Arrows - Top right */}
         {/*{trips.tripsList.length > slidesPerView && (*/}
         {/*  <div className="lg:hidden flex gap-2 justify-end mb-4 z-20 relative">*/}
         {/*    <button onClick={prevSlide} className="transition-all duration-200">*/}
