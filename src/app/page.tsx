@@ -2,7 +2,6 @@ import Avis from "@/components/Avis";
 import AvisTrips from "@/components/AvisTrips";
 import Devices from "@/components/Devices";
 import FAQ from "@/components/FAQ";
-import FAQStructuredData from "@/components/FAQStructuredData";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { PulsatingButtonWhite } from "@/components/magicui/pulsating-button-white";
 import Nav from "@/components/Nav";
@@ -324,7 +323,6 @@ export default async function HomePage() {
         
         {/* FAQ Section */}
         <section aria-labelledby="faq-title">
-          <FAQStructuredData faq={faq} />
           <FAQ faq={faq} />
         </section>
 

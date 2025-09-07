@@ -11,8 +11,33 @@ export default function FAQ({ faq }: { faq: FAQType }) {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // Génération des données structurées JSON-LD
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faq.questions.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+          .map((block: any) =>
+            block.children?.map((child: any) => child.text).join('') || ''
+          )
+          .join(' ')
+      }
+    }))
+  };
+
   return (
     <div className="mt-28">
+      {/* Données structurées JSON-LD pour le SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqStructuredData)
+        }}
+      />
       <div className="text-xl lg:text-[40px] font-unbounded [&_p]:text-black [&_strong]:text-[#F6391A] font-semibold text-center">
         <PortableText value={faq.title} />
       </div>
