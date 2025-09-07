@@ -19,27 +19,36 @@ export default function FAQ({ faq }: { faq: FAQType }) {
       <div className="px-[30px] flex flex-col items-center justify-center gap-4 lg:w-[700px] mx-auto mt-12 w-full">
         {faq.questions.map(
           (question: FAQType["questions"][0], index: number) => (
-            <div
+            <article
               key={index}
               className={`w-full border border-[#F6391A] rounded-xl transition-all duration-300 ${
                 openIndex === index
                   ? "border-[#F6391A] bg-[#F6391A] [&_p]:text-white"
                   : "border-gray-200"
               }`}
+              itemScope
+              itemType="https://schema.org/Question"
             >
               <button
                 onClick={() => toggleQuestion(index)}
                 className={`w-full flex items-center justify-between px-6 py-4 text-left transition-colors duration-300 ${
                   openIndex === index ? "text-[#F6391A]" : "text-black"
                 }`}
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
+                id={`faq-question-${index}`}
               >
-                <p className="text-base text-[#F6391A] font-semibold pr-4">
+                <h3 
+                  className="text-base text-[#F6391A] font-semibold pr-4"
+                  itemProp="name"
+                >
                   {question.question}
-                </p>
+                </h3>
                 <div
                   className={`transition-transform duration-300 flex-shrink-0 ${
                     openIndex === index ? "rotate-90" : "rotate-0"
                   }`}
+                  aria-hidden="true"
                 >
                   <svg
                     width="24"
@@ -60,17 +69,23 @@ export default function FAQ({ faq }: { faq: FAQType }) {
               </button>
 
               <div
+                id={`faq-answer-${index}`}
                 className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index
                     ? "max-h-96 opacity-100"
                     : "max-h-0 opacity-0"
                 }`}
+                itemScope
+                itemType="https://schema.org/Answer"
+                role="region"
+                aria-labelledby={`faq-question-${index}`}
+                aria-hidden={openIndex !== index}
               >
-                <div className="px-6 pb-6 [&_p]:text-white">
+                <div className="px-6 pb-6 [&_p]:text-white" itemProp="text">
                   <PortableText value={question.answer} />
                 </div>
               </div>
-            </div>
+            </article>
           ),
         )}
       </div>
