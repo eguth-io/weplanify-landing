@@ -34,14 +34,14 @@ export default function Devices({ features }: { features: Features }) {
       <Image
         src="/deviceLeftCloudMobile.png"
         className="lg:hidden -top-[7%] absolute left-0 "
-        alt="Nuage décoratif gauche mobile - Weplanify"
+        alt="Nuage décoratif gauche mobile - WePlanify"
         width={150}
         height={150}
       />
       <Image
         src="/deviceRightCloudMobile.png"
         className="lg:hidden absolute right-0 bottom-0 -z-10"
-        alt="Nuage décoratif droit mobile - Weplanify"
+        alt="Nuage décoratif droit mobile - WePlanify"
         width={150}
         height={150}
       />
@@ -49,14 +49,14 @@ export default function Devices({ features }: { features: Features }) {
         <Image
           src="/deviceLeftCloud.png"
           className="hidden lg:block absolute right-0 "
-          alt="Nuage décoratif gauche - Weplanify"
+          alt="Nuage décoratif gauche - WePlanify"
           width={200}
           height={200}
         />
         <Image
           src="/deviceRightCloud.png"
           className="hidden lg:block absolute left-0 -top-[5%] -z-10"
-          alt="Nuage décoratif droit - Weplanify"
+          alt="Nuage décoratif droit - WePlanify"
           width={200}
           height={200}
         />
@@ -140,7 +140,7 @@ export default function Devices({ features }: { features: Features }) {
                       <PortableText value={feature.description} />
                     </div>
 
-                    {/* Barre de progression - affichée seulement sur slide actif */}
+                    {/* Progress bar - displayed only on active slide */}
                     {activeIndex === index && (
                       <div className="absolute bottom-2 md:bottom-4 lg:bottom-6 left-3 md:left-5 lg:left-6 h-0.5 md:h-1 bg-white/30 rounded-2xl overflow-hidden w-1/2">
                         <div

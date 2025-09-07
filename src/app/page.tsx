@@ -126,9 +126,6 @@ export default async function HomePage() {
           <PulsatingButton className="w-4/5 lg:w-auto">
             {ctaData.ctaButton}
           </PulsatingButton>
-          <button className="w-3/5 lg:w-auto font-[700] text-orange border border-[#f6391a] rounded-xl px-4 py-2">
-            {home.buttonDemo}
-          </button>
         </div>
         <Trips blocks={home.blocks} />
         </section>
@@ -142,28 +139,28 @@ export default async function HomePage() {
         <section className="relative pb-28 flex flex-col items-center justify-center bg-[#4D9F79]">
         <Image
           src="/leftCloud.png"
-          alt="Nuage décoratif gauche - Weplanify"
+          alt="Nuage décoratif gauche - WePlanify"
           width={200}
           height={200}
           className="hidden lg:block absolute left-0 top-0"
         />
         <Image
           src="/rightCloud.png"
-          alt="Nuage décoratif droit - Weplanify"
+          alt="Nuage décoratif droit - WePlanify"
           width={200}
           height={200}
           className="hidden lg:block absolute right-0 top-0"
         />
         <Image
           src="/leftCloudMobile.svg"
-          alt="Nuage décoratif gauche mobile - Weplanify"
+          alt="Nuage décoratif gauche mobile - WePlanify"
           width={150}
           height={150}
           className="lg:hidden absolute left-0 -top-[50px]"
         />
         <Image
           src="/rightCloudMobile.svg"
-          alt="Nuage décoratif droit mobile - Weplanify"
+          alt="Nuage décoratif droit mobile - WePlanify"
           width={150}
           height={150}
           className="lg:hidden absolute right-0 -bottom-[50px]"
@@ -189,15 +186,12 @@ export default async function HomePage() {
                 {ctaData.ctaButton}
               </PulsatingButtonWhite>
             </Link>
-            <p className="text-white font-semibold underline  text-nowrap">
-              {home.buttonDemo}
-            </p>
           </div>
           <div className="mt-8 flex items-center flex-col">
             <Image
               className="w-[140px] lg:w-[280px]"
               src={organization.clientImage}
-              alt="Logo client satisfait - Weplanify"
+              alt="Logo client satisfait - WePlanify"
               width={280}
               height={62}
             />
@@ -206,7 +200,7 @@ export default async function HomePage() {
                 src="/fiveStars.svg"
                 width={80}
                 height={14}
-                alt="5 étoiles - Évaluation client Weplanify"
+                alt="5 étoiles - Évaluation client WePlanify"
                 className="hidden lg:block"
               />
               <p className="text-sm text-white">{organization.clientText}</p>
@@ -232,7 +226,7 @@ export default async function HomePage() {
             <button type="submit" aria-label="Soumettre la recherche">
               <Image
                 src="/input.svg"
-                alt="Bouton de soumission - Weplanify"
+                alt="Bouton de soumission - WePlanify"
                 width={32}
                 height={32}
                 className="w-[23px] h-[23px] lg:w-[33px] lg:h-[33px]"
@@ -278,7 +272,7 @@ export default async function HomePage() {
               src="/fiveStars.svg"
               width={80}
               height={14}
-              alt="5 étoiles - Évaluation client Weplanify"
+              alt="5 étoiles - Évaluation client WePlanify"
               className="hidden lg:block"
             />
             <p className="text-sm">{organization.clientText}</p>
@@ -295,14 +289,14 @@ export default async function HomePage() {
         <section className="relative mt-40 flex flex-col items-center justify-center" aria-labelledby="logiciel-title">
         <Image
           src="/linesRight.svg"
-          alt="Lignes décoratives droites - Weplanify"
+          alt="Lignes décoratives droites - WePlanify"
           width={100}
           height={400}
           className="hidden lg:block absolute top-1/2 right-0 z-0 transform -translate-y-1/2"
         />
         <Image
           src="/linesLeft.svg"
-          alt="Lignes décoratives gauches - Weplanify"
+          alt="Lignes décoratives gauches - WePlanify"
           width={100}
           height={400}
           className="hidden lg:block absolute top-1/2 left-0 z-0 transform -translate-y-1/2"
@@ -330,21 +324,21 @@ export default async function HomePage() {
         <section className="overflow-hidden relative py-[100px] bg-[#F6391A] mt-32 rounded-[40px] lg:mx-[60px] text-center" aria-labelledby="cta-title">
         <Image
           src="/footer/top.png"
-          alt="Élément décoratif supérieur - Weplanify"
+          alt="Élément décoratif supérieur - WePlanify"
           width={300}
           height={200}
           className="absolute -top-4 lg:top-0 -right-[70%] lg:right-0 rounded-tr-[40px]"
         />
         <Image
           src="/footer/left.png"
-          alt="Élément décoratif gauche - Weplanify"
+          alt="Élément décoratif gauche - WePlanify"
           width={250}
           height={150}
           className="absolute -left-[20%] -bottom-16 lg:left-0 lg:bottom-0 rounded-bl-[40px]"
         />
         <Image
           src="/footer/right.png"
-          alt="Élément décoratif droit - Weplanify"
+          alt="Élément décoratif droit - WePlanify"
           width={250}
           height={150}
           className="absolute -bottom-16 -right-[20%] lg:-bottom-6 lg:right-0 rounded-b-[40px]"
@@ -365,7 +359,7 @@ export default async function HomePage() {
         {/* Desktop Layout */}
         <div className="hidden lg:flex gap-[100px] justify-between">
           <div className="flex flex-col">
-            <Image src="/logo.png" alt="Logo Weplanify" width={155} height={66} />
+            <Image src="/logo.png" alt="Logo WePlanify" width={155} height={66} />
             <p className="text-sm text-black/75 mt-4">
               Planifiez, partagez, partez :
               <br />
@@ -375,10 +369,10 @@ export default async function HomePage() {
               Rejoignez nous
             </p>
             <div className="flex gap-3 mt-3">
-              <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez Weplanify sur Instagram">
+              <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
                 <Image
                   src="/instagram.svg"
-                  alt="Icône Instagram - Suivez Weplanify"
+                  alt="Icône Instagram - Suivez WePlanify"
                   width={38}
                   height={38}
                   className="cursor-pointer"
@@ -413,7 +407,7 @@ export default async function HomePage() {
           <div className="flex flex-col items-start mb-8 md:mb-10">
             <Image
               src="/logo.png"
-              alt="Logo Weplanify"
+              alt="Logo WePlanify"
               width={120}
               height={51}
               className="md:w-[140px] md:h-[60px]"
@@ -424,16 +418,16 @@ export default async function HomePage() {
               une seule appli pour tout gérer
             </p>
 
-            {/* Réseaux sociaux */}
+            {/* Social networks */}
             <div className="mt-6 md:mt-8">
               <p className="font-semibold text-black text-sm md:text-base mb-3 text-center md:text-left">
                 Rejoignez nous
               </p>
               <div className="flex gap-3">
-                <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez Weplanify sur Instagram">
+                <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
                   <Image
                     src="/instagram.svg"
-                    alt="Icône Instagram - Suivez Weplanify"
+                    alt="Icône Instagram - Suivez WePlanify"
                     width={32}
                     height={32}
                     className="cursor-pointer md:w-[38px] md:h-[38px]"

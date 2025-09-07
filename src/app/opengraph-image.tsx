@@ -25,7 +25,7 @@ export default async function Image() {
       >
         <div style={{ fontSize: 64, marginBottom: 20 }}>✈️</div>
         <div style={{ fontSize: 80, fontWeight: 'bold', textAlign: 'center', maxWidth: 1000 }}>
-          Weplanify
+          WePlanify
         </div>
         <div style={{ fontSize: 40, textAlign: 'center', maxWidth: 1000, marginTop: 20 }}>
           Planifiez, partagez, partez

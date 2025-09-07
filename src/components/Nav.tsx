@@ -12,7 +12,7 @@ export default function Nav({ navData }: { navData: NavType }) {
     const newState = !isMenuOpen;
     setIsMenuOpen(newState);
 
-    // Gère le scroll directement dans la fonction
+    // Handle scroll directly in the function
     if (newState) {
       document.body.style.overflow = "hidden";
     } else {

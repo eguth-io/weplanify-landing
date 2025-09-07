@@ -1,6 +1,6 @@
 {
-  "name": "Weplanify - Planifiez, partagez, partez",
-  "short_name": "Weplanify",
+  "name": "WePlanify - Planifiez, partagez, partez",
+  "short_name": "WePlanify",
   "description": "Application de planification de voyage qui simplifie l'organisation de vos séjours",
   "start_url": "/",
   "display": "standalone",

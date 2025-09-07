@@ -27,27 +27,27 @@ export default function Trips({ blocks }: CarouselProps) {
     <div className="w-full mt-10 md:mt-16 lg:mt-24 relative">
       <Image
         src="/pass.svg"
-        alt="Passeport décoratif - Weplanify"
+        alt="Passeport décoratif - WePlanify"
         width={200}
         height={200}
         className="hidden lg:block -z-10 absolute bottom-[0] left-0 w-auto h-auto "
       />
       <Image
         src="/passMobile.svg"
-        alt="Passeport décoratif mobile - Weplanify"
+        alt="Passeport décoratif mobile - WePlanify"
         width={150}
         height={150}
         className="lg:hidden -z-10 absolute bottom-0 left-0"
       />
 
       <div className="overflow-hidden mx-auto relative">
-        {/* Gradient fade effects - réduites sur mobile */}
+        {/* Gradient fade effects - reduced on mobile */}
         <div className="pointer-events-none absolute inset-y-0 -left-4 md:-left-8 h-full w-[50px] md:w-[100px] bg-gradient-to-r from-white via-white/40 to-transparent z-10"></div>
         <div className="pointer-events-none absolute inset-y-0 -right-4 md:-right-8 h-full w-[50px] md:w-[100px] bg-gradient-to-l from-white via-white/40 to-transparent z-10"></div>
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={8} // Très réduit pour mobile
-          slidesPerView={1.2} // Ajout du slidesPerView par défaut mobile
+          spaceBetween={8} // Very reduced for mobile
+          slidesPerView={1.2} // Default mobile slidesPerView
           loop={true}
           autoplay={{
             delay: 0,

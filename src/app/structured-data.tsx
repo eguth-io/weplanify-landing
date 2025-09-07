@@ -2,7 +2,7 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Weplanify",
+    "name": "WePlanify",
     "description": "Application de planification de voyage qui simplifie l'organisation de vos séjours. Planifiez, partagez et partez en toute simplicité avec une interface intuitive et collaborative.",
     "url": "https://weplanify.com",
     "applicationCategory": "TravelApplication",
@@ -21,7 +21,7 @@ export default function StructuredData() {
     },
     "author": {
       "@type": "Organization",
-      "name": "Weplanify",
+      "name": "WePlanify",
       "url": "https://weplanify.com"
     },
     "featureList": [
