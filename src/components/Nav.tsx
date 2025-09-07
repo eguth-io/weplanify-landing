@@ -68,7 +68,7 @@ export default function Nav({ navData }: { navData: NavType }) {
           <Link href="#fonctionnement">Fonctionnement</Link>
           <Link href="#faq">FAQ</Link>
           <Link href="#avis">Avis</Link>
-          <Link href="/blogs">Blog</Link>
+          <Link href="/blog">Blog</Link>
         </div>
 
         <div className="lg:flex items-center gap-6 hidden">
@@ -154,7 +154,7 @@ export default function Nav({ navData }: { navData: NavType }) {
               Avis
             </Link>
             <Link
-              href="/blogs"
+              href="/blog"
               onClick={closeMenu}
               className="text-lg font-medium hover:text-blue-600 transition-colors"
             >
