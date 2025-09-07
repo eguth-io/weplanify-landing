@@ -28,13 +28,15 @@ export default function Nav({ navData }: { navData: NavType }) {
   return (
     <>
       <nav className="bg-[#FFFCFB] flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] sticky w-full z-50 fixed top-0">
-        <Image
-          src={navData.logo}
-          alt="logo"
-          width={155}
-          height={66}
-          className="block w-[75px] h-[45px] lg:w-[155px] lg:h-[66px]"
-        />
+        <Link href="/">
+          <Image
+            src={navData.logo}
+            alt="logo"
+            width={155}
+            height={66}
+            className="block w-[75px] h-[45px] lg:w-[155px] lg:h-[66px]"
+          />
+        </Link>
 
         {/* Burger Menu Button */}
         <button
@@ -96,13 +98,15 @@ export default function Nav({ navData }: { navData: NavType }) {
         <div className="flex flex-col h-full">
           {/* Header du menu */}
           <div className="flex justify-between items-center p-6 border-b">
-            <Image
-              src={navData.logo}
-              alt="logo"
-              width={120}
-              height={50}
-              className="w-[120px] h-[50px]"
-            />
+            <Link href="/">
+              <Image
+                src={navData.logo}
+                alt="logo"
+                width={120}
+                height={50}
+                className="w-[120px] h-[50px]"
+              />
+            </Link>
             <button
               onClick={closeMenu}
               className="w-8 h-8 flex items-center justify-center"
