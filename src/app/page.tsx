@@ -1,5 +1,4 @@
 import Avis from "@/components/Avis";
-import AvisTrips from "@/components/AvisTrips";
 import Devices from "@/components/Devices";
 import FAQ from "@/components/FAQ";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
@@ -19,7 +18,6 @@ import {
   logicielQuery,
   navQuery,
   organizationQuery,
-  tripsQuery,
 } from "@/sanity/lib/query";
 import {
   AvisType,
@@ -32,7 +30,6 @@ import {
   Logiciel,
   NavType,
   Organization,
-  TripsType,
 } from "@/sanity/lib/type";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
@@ -71,10 +68,6 @@ export default async function HomePage() {
     tags: ["ia"],
   });
 
-  const trips: TripsType = await sanityFetch({
-    query: tripsQuery,
-    tags: ["trips"],
-  });
 
   const logiciel: Logiciel = await sanityFetch({
     query: logicielQuery,
