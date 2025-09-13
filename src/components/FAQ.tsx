@@ -57,7 +57,7 @@ export default function FAQ({ faq }: { faq: FAQType }) {
             >
               <button
                 onClick={() => toggleQuestion(index)}
-                className={`w-full flex items-center justify-between px-6 py-4 text-left transition-colors duration-300 ${
+                className={`w-full flex items-center justify-between px-6 py-3 text-left transition-colors duration-300 ${
                   openIndex === index ? "text-[#F6391A]" : "text-black"
                 }`}
                 aria-expanded={openIndex === index}
@@ -109,7 +109,7 @@ export default function FAQ({ faq }: { faq: FAQType }) {
                 aria-labelledby={`faq-question-${index}`}
                 aria-hidden={openIndex !== index}
               >
-                <div className="px-6 pb-6 [&_p]:text-white" itemProp="text">
+                <div className="px-6 pb-4 [&_p]:text-white" itemProp="text">
                   <PortableText value={question.answer} />
                 </div>
               </div>

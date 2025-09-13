@@ -34,7 +34,7 @@ export default function Nav({ navData }: { navData: NavType }) {
             alt="logo"
             width={155}
             height={66}
-            className="block w-[75px] h-[45px] lg:w-[155px] lg:h-[66px]"
+            className="block w-[95px] h-[57px] lg:w-[155px] lg:h-[66px]"
           />
         </Link>
 
