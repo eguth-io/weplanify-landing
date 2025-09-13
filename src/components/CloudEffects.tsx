@@ -5,15 +5,18 @@ import Image from "next/image";
 
 export default function CloudEffects() {
   useEffect(() => {
-    // Trigger scroll after 3 seconds (desktop only)
+    // Trigger scroll only if user is at the top of the page (desktop only)
     const handleAutoScroll = () => {
       if (window.innerWidth >= 1024) {
         // lg breakpoint
         const timer = setTimeout(() => {
-          window.scrollTo({
-            top: window.innerHeight,
-            behavior: "smooth",
-          });
+          // Only scroll if user is at the very top of the page
+          if (window.scrollY < 50) {
+            window.scrollTo({
+              top: window.innerHeight,
+              behavior: "smooth",
+            });
+          }
         }, 1500);
         return () => clearTimeout(timer);
       }
