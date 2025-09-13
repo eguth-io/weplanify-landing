@@ -19,9 +19,6 @@ export default function MobileCTASection({ ctaData, home, organization }: Mobile
             {ctaData.ctaButton}
           </PulsatingButton>
         </Link>
-        <PulsatingButton className="w-3/5 lg:w-auto">
-          {home.buttonDemo}
-        </PulsatingButton>
       </div>
       <div className="mt-8 flex items-center flex-col">
         <Image

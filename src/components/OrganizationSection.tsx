@@ -54,7 +54,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
         </div>
       </div>
       <Org data={organization.featuresList} />
-      <div className="flex flex-col items-center justify-center mt-2 lg:mt-4">
+      <div className="flex flex-col items-center justify-center mt-10 lg:mt-4">
         <div className="flex gap-6 items-center flex-col lg:flex-row w-full">
           <Link href={ctaData.ctaLink} className={"w-full"}>
             <PulsatingButtonWhite className="w-4/5 mx-auto lg:w-full text-nowrap">
