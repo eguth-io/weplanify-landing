@@ -32,7 +32,7 @@ export default function HeroSection({ home, ctaData }: HeroSectionProps) {
       </div>
       <div className="flex-col lg:flex-row flex gap-4 mt-6 lg:mt-11 w-full lg:w-auto justify-center items-center">
         <Link href={ctaData.ctaLink}>
-          <PulsatingButton className="w-4/5 lg:w-80">
+          <PulsatingButton className="w-full lg:w-80">
             {ctaData.ctaButton}
           </PulsatingButton>
         </Link>
