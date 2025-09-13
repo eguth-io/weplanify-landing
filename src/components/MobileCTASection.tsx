@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
-import { CtaType, Home, Organization } from "@/sanity/lib/type";
+import { CtaType, Organization } from "@/sanity/lib/type";
 
 interface MobileCTASectionProps {
   ctaData: CtaType;
-  home: Home;
   organization: Organization;
 }
 
-export default function MobileCTASection({ ctaData, home, organization }: MobileCTASectionProps) {
+export default function MobileCTASection({ ctaData, organization }: MobileCTASectionProps) {
   return (
     <section className="mt-12 lg:hidden flex flex-col justify-center items-center" aria-labelledby="mobile-cta-title">
       <h2 id="mobile-cta-title" className="sr-only">Actions mobiles</h2>
@@ -19,9 +18,6 @@ export default function MobileCTASection({ ctaData, home, organization }: Mobile
             {ctaData.ctaButton}
           </PulsatingButton>
         </Link>
-        <button className="w-3/5 lg:w-auto font-[700] text-orange border border-[#f6391a] rounded-[6px] px-4 py-2">
-          {home.buttonDemo}
-        </button>
       </div>
       <div className="mt-8 flex items-center flex-col">
         <Image

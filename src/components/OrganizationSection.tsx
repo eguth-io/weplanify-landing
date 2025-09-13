@@ -12,38 +12,37 @@ interface OrganizationSectionProps {
 
 export default function OrganizationSection({ organization, ctaData }: OrganizationSectionProps) {
   return (
-    <section className="relative pb-28 flex flex-col items-center justify-center bg-[#4D9F79]">
+    <section id="fonctionnement" className="relative pb-28 flex flex-col items-center justify-center bg-[#4D9F79]">
       <Image
         src="/leftCloud.png"
         alt="Nuage décoratif gauche - WePlanify"
         width={200}
         height={200}
-        className="hidden lg:block absolute left-0 top-0"
+        className="hidden lg:block absolute left-0 top-0 z-0"
       />
       <Image
         src="/rightCloud.png"
         alt="Nuage décoratif droit - WePlanify"
         width={200}
         height={200}
-        className="hidden lg:block absolute right-0 top-0"
+        className="hidden lg:block absolute right-0 top-0 z-0"
       />
       <Image
         src="/leftCloudMobile.svg"
         alt="Nuage décoratif gauche mobile - WePlanify"
         width={150}
         height={150}
-        className="lg:hidden absolute left-0 -top-[50px]"
+        className="lg:hidden absolute left-0 -top-[100px] z-0"
       />
       <Image
         src="/rightCloudMobile.svg"
         alt="Nuage décoratif droit mobile - WePlanify"
         width={150}
         height={150}
-        className="lg:hidden absolute right-0 -bottom-[50px]"
+        className="lg:hidden absolute right-0 -bottom-[50px] z-0"
       />
       <div
-        id="fonctionnement"
-        className="pt-[50px] lg:pt-52 text-center [&_p]:text-white [&_strong]:text-white"
+        className="pt-[50px] lg:pt-52 text-center [&_p]:text-white [&_strong]:text-white relative z-10"
         role="region"
         aria-labelledby="fonctionnement-title"
       >
@@ -55,7 +54,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
         </div>
       </div>
       <Org data={organization.featuresList} />
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center mt-10 lg:mt-4">
         <div className="flex gap-6 items-center flex-col lg:flex-row w-full">
           <Link href={ctaData.ctaLink} className={"w-full"}>
             <PulsatingButtonWhite className="w-4/5 mx-auto lg:w-full text-nowrap">
