@@ -105,7 +105,7 @@ export default async function HomePage() {
 
         <IASection ia={ia} />
 
-        <MobileCTASection ctaData={ctaData} home={home} organization={organization} />
+        <MobileCTASection ctaData={ctaData} organization={organization} />
 
         {/* Avis Trips Section */}
         {/* <section aria-labelledby="avis-trips-title">
