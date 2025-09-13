@@ -43,39 +43,17 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
 
 
   return (
-    <div className="relative mt-40 flex flex-col items-center justify-center">
+    <div className="relative mt-8 md:mt-40 flex flex-col items-center justify-center">
       <div className="w-2/3 mx-auto lg:w-full text-center text-xl lg:text-[40px] font-unbounded [&_p]:text-black lg:[&_strong]:text-[#F6391A]">
         <PortableText value={trips.title} />
       </div>
 
-      {/* Decorative images */}
-      <Image
-        src="/line1.svg"
-        alt="Ligne décorative 1 - WePlanify"
-        width={200}
-        height={400}
-        className="hidden lg:block -z-10 absolute top-0 left-0"
-      />
-      <Image
-        src="/line2.svg"
-        alt="Ligne décorative 2 - WePlanify"
-        width={200}
-        height={400}
-        className="hidden lg:block -z-10 absolute -right-0 top-28"
-      />
-      <Image
-        src="/line1Mobile.svg"
-        alt="Ligne décorative 1 mobile - WePlanify"
-        width={150}
-        height={300}
-        className="lg:hidden -z-10 absolute top-0 left-0"
-      />
-      <Image
-        src="/line2Mobile.svg"
-        alt="Ligne décorative 2 mobile - WePlanify"
-        width={150}
-        height={300}
-        className="lg:hidden absolute -right-0 bottom-40"
+      {/* Decorative gradient */}
+      <div 
+        className="absolute inset-0 -z-10 pointer-events-none"
+        style={{
+          background: 'linear-gradient(135deg, transparent 0%, transparent 40%, rgba(246, 57, 26, 0.15) 70%, rgba(246, 57, 26, 0.08) 100%)'
+        }}
       />
 
       <div className="relative w-full mt-16 px-4 lg:px-0">

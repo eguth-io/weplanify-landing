@@ -103,7 +103,7 @@ export default async function HomePage() {
       
               {/* Hero Section */}
         <main>
-          <section className="relative pt-[100px] lg:pt-[150px] pb-20 flex flex-col items-center justify-center" aria-labelledby="hero-title">
+          <section className="relative pt-[40px] lg:pt-[100px] pb-20 flex flex-col items-center justify-center" aria-labelledby="hero-title">
         <h2 className="text-orange bg-light px-4 py-2 rounded-full lg:text-base text-[10px] hidden lg:block mb-[20px]">
           {home.subtitle}
         </h2>
@@ -286,7 +286,7 @@ export default async function HomePage() {
         </section> */}
 
         {/* Logiciel Section */}
-        <section className="relative mt-40 flex flex-col items-center justify-center" aria-labelledby="logiciel-title">
+        <section className="relative mt-8 md:mt-40 flex flex-col items-center justify-center" aria-labelledby="logiciel-title">
         <Image
           src="/linesRight.svg"
           alt="Lignes décoratives droites - WePlanify"
