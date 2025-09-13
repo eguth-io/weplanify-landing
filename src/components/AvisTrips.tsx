@@ -137,7 +137,7 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
             {trips.tripsList.map((trip: Trip, index: number) => (
               <SwiperSlide key={index}>
                 <div 
-                  className="w-full bg-white rounded-2xl overflow-hidden shadow-sm md:shadow-lg hover:shadow-md md:hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 md:hover:-translate-y-2 group cursor-pointer my-2 md:my-0"
+                  className="w-full bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 md:hover:-translate-y-2 group cursor-pointer my-4"
                   onClick={() => {
                     swiperRef.current?.slideTo(index);
                   }}
