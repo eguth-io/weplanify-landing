@@ -7,7 +7,7 @@ interface IASectionProps {
 
 export default function IASection({ ia }: IASectionProps) {
   return (
-    <section className="relative mx-3 lg:mx-16 py-20 flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-48 border-b border-gray-200" aria-labelledby="ia-title">
+    <section className="relative px-3 lg:px-16 py-20 flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-48 border-b border-gray-200" aria-labelledby="ia-title">
       <div className="flex flex-col">
         <p id="ia-title" className="leading-normal text-center lg:text-start font-unbounded text-xl lg:text-[40px] text-black lg:font-medium">
           {ia.title}
@@ -40,7 +40,7 @@ export default function IASection({ ia }: IASectionProps) {
         alt="ia"
         width={540}
         height={640}
-        className="object-cover"
+        className="object-cover hidden lg:block"
       />
     </section>
   );

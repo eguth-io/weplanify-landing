@@ -1,5 +1,4 @@
 import Avis from "@/components/Avis";
-import Devices from "@/components/Devices";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
@@ -7,7 +6,6 @@ import OrganizationSection from "@/components/OrganizationSection";
 import IASection from "@/components/IASection";
 import LogicielSection from "@/components/LogicielSection";
 import CTASection from "@/components/CTASection";
-import MobileCTASection from "@/components/MobileCTASection";
 import Nav from "@/components/Nav";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import {
@@ -96,28 +94,23 @@ export default async function HomePage() {
       <main>
         <HeroSection home={home} ctaData={ctaData} />
 
-        {/* Features Section */}
-        <section aria-labelledby="features-title">
-          <Devices features={features} />
-        </section>
-
         <OrganizationSection organization={organization} ctaData={ctaData} />
 
-        <IASection ia={ia} />
-
-        <MobileCTASection ctaData={ctaData} organization={organization} />
+        {/* <MobileCTASection ctaData={ctaData} organization={organization} /> */}
 
         {/* Avis Trips Section */}
         {/* <section aria-labelledby="avis-trips-title">
           <AvisTrips trips={trips} />
         </section> */}
 
-        <LogicielSection logiciel={logiciel} />
+        <LogicielSection logiciel={logiciel} features={features} />
 
         {/* Avis Section */}
         <section id="avis" aria-labelledby="avis-title">
           <Avis data={avis} />
         </section>
+
+        <IASection ia={ia} />
 
         {/* FAQ Section */}
         <section aria-labelledby="faq-title">

@@ -31,7 +31,7 @@ export default function FAQ({ faq }: { faq: FAQType }) {
   };
 
   return (
-    <div className="mt-28">
+    <div className="py-20">
       {/* JSON-LD structured data for SEO */}
       <script
         type="application/ld+json"
