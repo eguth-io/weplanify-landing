@@ -15,7 +15,7 @@ export default async function ContactPage() {
   return (
     <>
       <Nav navData={navData} />
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen">
         {/* Contact Form Section */}
         <section className="relative pt-[40px] lg:pt-[80px] pb-12">
           <div className="container mx-auto px-4 lg:px-0">

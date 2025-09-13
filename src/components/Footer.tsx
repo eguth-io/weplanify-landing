@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface FooterProps {
-  variant?: 'home' | 'contact';
+  variant?: 'home' | 'contact' | 'blog';
 }
 
 export default function Footer({ variant = 'home' }: FooterProps) {
@@ -10,12 +10,17 @@ export default function Footer({ variant = 'home' }: FooterProps) {
     home: {
       marginTop: 'mt-[120px] md:mt-[180px] lg:mt-[230px]',
       borderTop: 'border-t',
-      borderBottom: 'border-b'
+      borderBottom: ''
     },
     contact: {
       marginTop: '',
       borderTop: '',
-      borderBottom: 'border-b'
+      borderBottom: ''
+    },
+    blog: {
+      marginTop: 'mt-16',
+      borderTop: 'border-t',
+      borderBottom: ''
     }
   };
 
@@ -111,18 +116,12 @@ export default function Footer({ variant = 'home' }: FooterProps) {
               À venir
             </span>
           </span>
-          <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
+          <Link href="/faq" className="text-black/75 text-sm mt-3 hover:text-orange transition-colors">
             FAQ
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
-            </span>
-          </span>
-          <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
+          </Link>
+          <Link href="/blog" className="text-black/75 text-sm mt-3 hover:text-orange transition-colors">
             Blog
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
-            </span>
-          </span>
+          </Link>
           <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
             Témoignages
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
@@ -251,18 +250,12 @@ export default function Footer({ variant = 'home' }: FooterProps) {
                     À venir
                   </span>
                 </span>
-                <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
+                <Link href="/faq" className="text-black/75 text-sm md:text-base mb-2 md:mb-3 hover:text-orange transition-colors">
                   FAQ
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
-                  </span>
-                </span>
-                <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
+                </Link>
+                <Link href="/blog" className="text-black/75 text-sm md:text-base mb-2 md:mb-3 hover:text-orange transition-colors">
                   Blog
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
-                  </span>
-                </span>
+                </Link>
                 <span className="text-gray-400 text-sm md:text-base cursor-not-allowed relative group">
                   Témoignages
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
