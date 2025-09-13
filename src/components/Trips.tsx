@@ -24,7 +24,7 @@ interface CarouselProps {
 
 export default function Trips({ blocks }: CarouselProps) {
   return (
-    <div className="w-full mt-10 md:mt-16 lg:mt-24 relative">
+    <div className="w-full mt-16 lg:mt-24 relative">
       <Image
         src="/pass.svg"
         alt="Passeport décoratif - WePlanify"
