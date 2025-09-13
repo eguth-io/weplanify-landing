@@ -281,9 +281,9 @@ export default async function HomePage() {
         </section>
 
         {/* Avis Trips Section */}
-        <section aria-labelledby="avis-trips-title">
+        {/* <section aria-labelledby="avis-trips-title">
           <AvisTrips trips={trips} />
-        </section>
+        </section> */}
 
         {/* Logiciel Section */}
         <section className="relative mt-40 flex flex-col items-center justify-center" aria-labelledby="logiciel-title">
