@@ -44,81 +44,99 @@ export default function Trips({ blocks }: CarouselProps) {
         {/* Gradient fade effects - reduced on mobile */}
         <div className="pointer-events-none absolute inset-y-0 -left-4 md:-left-8 h-full w-[50px] md:w-[100px] bg-gradient-to-r from-white via-white/40 to-transparent z-10"></div>
         <div className="pointer-events-none absolute inset-y-0 -right-4 md:-right-8 h-full w-[50px] md:w-[100px] bg-gradient-to-l from-white via-white/40 to-transparent z-10"></div>
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={16}
-          slidesPerView={1.3}
-          loop={true}
-          allowTouchMove={true}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: false,
-            waitForTransition: false,
-            stopOnLastSlide: false,
-            reverseDirection: false,
-          }}
-          speed={10000}
-          loopAdditionalSlides={1}
-          className="pb-2 md:pb-4"
-          breakpoints={{
-            480: {
-              slidesPerView: 1.5,
-              spaceBetween: 16,
-            },
-            640: {
-              slidesPerView: 1.9,
-              spaceBetween: 12,
-            },
-            768: {
-              slidesPerView: 2.3,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 2.8,
-              spaceBetween: 20,
-            },
-            1280: {
-              slidesPerView: 3.2,
-              spaceBetween: 20,
-            },
-          }}
-        >
-          {blocks.map((block: Block, index: number) => (
-            <SwiperSlide key={index} className={"!w-[264px] lg:!w-[420px]"}>
-              <div className="relative rounded-xl md:rounded-2xl w-[264px] h-[264px] lg:h-[420px] xl:h-[435px] md:w-auto">
-                <Image
-                  src={block.image}
-                  alt={block.tooltip}
-                  fill
-                  className="rounded-xl md:rounded-2xl object-cover"
-                />
+        
+        {/* Marquee Container */}
+        <div className="marquee-container pb-2 md:pb-4">
+          <div className="marquee-content">
+            {/* Duplicate blocks for seamless loop */}
+            {[...blocks, ...blocks].map((block: Block, index: number) => (
+              <div key={index} className="marquee-item w-[264px] lg:w-[420px] flex-shrink-0">
+                <div className="relative rounded-xl md:rounded-2xl w-[264px] h-[264px] lg:h-[420px] xl:h-[435px] md:w-auto">
+                  <Image
+                    src={block.image}
+                    alt={block.tooltip}
+                    fill
+                    className="rounded-xl md:rounded-2xl object-cover"
+                  />
 
-                {/* Overlay content */}
-                <div className="absolute top-3 md:top-6 lg:top-8 left-3 md:left-6 lg:left-8 bg-transparent">
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <span className="bg-white w-2 h-2 md:w-3 md:h-3 rounded-full"></span>
-                    <p className="text-xs md:text-sm font-[600] text-white">
-                      {block.tooltip}
-                    </p>
+                  {/* Overlay content */}
+                  <div className="absolute top-3 md:top-6 lg:top-8 left-3 md:left-6 lg:left-8 bg-transparent">
+                    <div className="flex items-center gap-2 md:gap-3">
+                      <span className="bg-white w-2 h-2 md:w-3 md:h-3 rounded-full"></span>
+                      <p className="text-xs md:text-sm font-[600] text-white">
+                        {block.tooltip}
+                      </p>
+                    </div>
+
+                    <div className="font-unbounded mt-2 md:mt-3 lg:mt-4 text-base md:text-2xl lg:text-3xl font-[400] [&_p]:text-white [&_p]:leading-tight">
+                      <PortableText value={block.text} />
+                    </div>
                   </div>
 
-                  <div className="font-unbounded mt-2 md:mt-3 lg:mt-4 text-base md:text-2xl lg:text-3xl font-[400] [&_p]:text-white [&_p]:leading-tight">
-                    <PortableText value={block.text} />
-                  </div>
+                  {/* CTA Button */}
+                  <Link
+                    href={block.link}
+                    className="absolute bottom-3 md:bottom-6 lg:bottom-8 left-3 md:left-6 lg:left-8 px-3 md:px-4 lg:px-[21px] py-1.5 md:py-2 lg:py-[7px] rounded-full text-white border border-white bg-[#ffffff33] text-xs md:text-sm font-[600] hover:bg-[#ffffff55] transition-colors pointer-events-auto"
+                  >
+                    Voir plus
+                  </Link>
                 </div>
-
-                {/* CTA Button */}
-                <Link
-                  href={block.link}
-                  className="absolute bottom-3 md:bottom-6 lg:bottom-8 left-3 md:left-6 lg:left-8 px-3 md:px-4 lg:px-[21px] py-1.5 md:py-2 lg:py-[7px] rounded-full text-white border border-white bg-[#ffffff33] text-xs md:text-sm font-[600] hover:bg-[#ffffff55] transition-colors pointer-events-auto"
-                >
-                  Voir plus
-                </Link>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            ))}
+          </div>
+        </div>
+
+        <style jsx>{`
+          .marquee-container {
+            width: 100%;
+            overflow: hidden;
+          }
+          
+          .marquee-content {
+            display: flex;
+            gap: 16px;
+            animation: marquee 100s linear infinite;
+            width: fit-content;
+            transition: animation-play-state 0.3s ease-in-out;
+          }
+          
+          .marquee-content:hover {
+            animation-play-state: paused;
+          }
+          
+          @keyframes marquee {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          
+          @media (min-width: 480px) {
+            .marquee-content {
+              gap: 16px;
+            }
+          }
+          
+          @media (min-width: 640px) {
+            .marquee-content {
+              gap: 12px;
+            }
+          }
+          
+          @media (min-width: 768px) {
+            .marquee-content {
+              gap: 20px;
+            }
+          }
+          
+          @media (min-width: 1024px) {
+            .marquee-content {
+              gap: 20px;
+            }
+          }
+        `}</style>
       </div>
     </div>
   );
