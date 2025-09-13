@@ -17,7 +17,7 @@ export default function CloudEffects() {
               behavior: "smooth",
             });
           }
-        }, 1500);
+        }, 3000);
         return () => clearTimeout(timer);
       }
     };
@@ -76,15 +76,37 @@ export default function CloudEffects() {
           />
         </motion.div>
 
-        <motion.p
+        <motion.div
           className="text-white font-bold text-[62px] text-center px-4"
-          style={{ fontFamily: "Unbounded, sans-serif" }}
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          style={{ fontFamily: "Unbounded, sans-serif", color: "white" }}
         >
-          Planifiez, partagez, partez !
-        </motion.p>
+          <motion.span
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            style={{ color: "white" }}
+          >
+            Planifiez,
+          </motion.span>
+          <span style={{ color: "white" }}> </span>
+          <motion.span
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+            style={{ color: "white" }}
+          >
+            partagez,
+          </motion.span>
+          <span style={{ color: "white" }}> </span>
+          <motion.span
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.5 }}
+            style={{ color: "white" }}
+          >
+            partez !
+          </motion.span>
+        </motion.div>
 
         <motion.div
           className="absolute bottom-0 left-0"
