@@ -101,164 +101,108 @@ export default function Org({
   linePosition = "left",
   data,
 }: FeaturesProps) {
-  const [currentIndex, setCurrentIndex] = useState<number>(-1);
-  const [cardWidth, setCardWidth] = useState<number>(350);
-  const [isDragging, setIsDragging] = useState<boolean>(false);
-  const [startX, setStartX] = useState<number>(0);
-  const [scrollLeft, setScrollLeft] = useState<number>(0);
-  const carouselRef = useRef<HTMLUListElement>(null);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(true);
+  const [progress, setProgress] = useState<number>(0);
   const ref = useRef(null);
   const isInView = useInView(ref, {
     once: true,
     amount: 0.5,
   });
 
-  // Gestion responsive de la taille des cartes
+  // Auto-scroll simple
   useEffect(() => {
-    const updateCardWidth = () => {
-      const width = window.innerWidth;
-      if (width < 480) {
-        setCardWidth(Math.floor(width * 0.85)); // Very small mobile
-      } else if (width < 640) {
-        setCardWidth(Math.floor(width * 0.8)); // Mobile
-      } else if (width < 768) {
-        setCardWidth(Math.floor(width * 0.75)); // Mobile large
-      } else {
-        setCardWidth(350); // Tablet et plus
-      }
-    };
-
-    updateCardWidth();
-    window.addEventListener("resize", updateCardWidth);
-    return () => window.removeEventListener("resize", updateCardWidth);
-  }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (isInView) {
-        setCurrentIndex(0);
-      } else {
-        setCurrentIndex(-1);
-      }
-    }, 100);
-
-    return () => clearTimeout(timer);
-  }, [isInView]);
-
-  const scrollToIndex = (index: number) => {
-    if (carouselRef.current) {
-      const card = carouselRef.current.querySelectorAll(".card")[index];
-      if (card) {
-        const cardRect = card.getBoundingClientRect();
-        const carouselRect = carouselRef.current.getBoundingClientRect();
-        const offset =
-          cardRect.left -
-          carouselRect.left -
-          (carouselRect.width - cardRect.width) / 2;
-
-        carouselRef.current.scrollTo({
-          left: carouselRef.current.scrollLeft + offset,
-          behavior: "smooth",
-        });
-      }
+    if (!isInView || !isAutoPlaying) {
+      setProgress(0);
+      return;
     }
-  };
 
-  useEffect(() => {
-    if (isDragging) return; // Pause l'auto-scroll pendant le drag
+    setProgress(0);
+    const interval = 50; // Mise à jour toutes les 50ms
+    const steps = collapseDelay / interval;
+    let currentStep = 0;
 
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex !== undefined ? (prevIndex + 1) % data.length : 0,
-      );
+    const progressTimer = setInterval(() => {
+      currentStep++;
+      const newProgress = (currentStep / steps) * 100;
+      setProgress(newProgress);
+    }, interval);
+
+    const slideTimer = setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+      setProgress(0);
     }, collapseDelay);
 
-    return () => clearInterval(timer);
-  }, [collapseDelay, currentIndex, data.length, isDragging]);
-
-  useEffect(() => {
-    if (isDragging) return; // Pause l'auto-scroll pendant le drag
-
-    const handleAutoScroll = () => {
-      const nextIndex =
-        (currentIndex !== undefined ? currentIndex + 1 : 0) % data.length;
-      scrollToIndex(nextIndex);
+    return () => {
+      clearInterval(progressTimer);
+      clearTimeout(slideTimer);
     };
+  }, [isInView, collapseDelay, data.length, isAutoPlaying, currentIndex]);
 
-    const autoScrollTimer = setInterval(handleAutoScroll, collapseDelay);
+  // Gestion du swipe mobile
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
-    return () => clearInterval(autoScrollTimer);
-  }, [collapseDelay, currentIndex, data.length, isDragging]);
-
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    if (carousel) {
-      const handleScroll = () => {
-        if (isDragging) return; // Évite les conflits pendant le drag
-
-        const scrollLeft = carousel.scrollLeft;
-        const cardWidth = carousel.querySelector(".card")?.clientWidth || 0;
-        const newIndex = Math.min(
-          Math.floor(scrollLeft / cardWidth),
-          data.length - 1,
-        );
-        setCurrentIndex(newIndex);
-      };
-
-      carousel.addEventListener("scroll", handleScroll);
-      return () => carousel.removeEventListener("scroll", handleScroll);
-    }
-  }, [data.length, isDragging]);
-
-  // Gestion du drag/touch pour mobile
-  const handleMouseDown = (e: React.MouseEvent<HTMLUListElement>) => {
-    if (!carouselRef.current) return;
-
-    setIsDragging(true);
-    setStartX(e.pageX - carouselRef.current.offsetLeft);
-    setScrollLeft(carouselRef.current.scrollLeft);
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setIsAutoPlaying(false);
+    setTouchStart(e.targetTouches[0].clientX);
   };
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLUListElement>) => {
-    if (!isDragging || !carouselRef.current) return;
-
-    e.preventDefault();
-    const x = e.pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX) * 1.5;
-    carouselRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  const handleMouseLeave = () => {
-    setIsDragging(false);
-  };
-
-  const handleTouchStart = (e: React.TouchEvent<HTMLUListElement>) => {
-    if (!carouselRef.current) return;
-
-    setIsDragging(true);
-    setStartX(e.touches[0].pageX - carouselRef.current.offsetLeft);
-    setScrollLeft(carouselRef.current.scrollLeft);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent<HTMLUListElement>) => {
-    if (!isDragging || !carouselRef.current) return;
-
-    const x = e.touches[0].pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX) * 1.5;
-    carouselRef.current.scrollLeft = scrollLeft - walk;
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
   };
 
   const handleTouchEnd = () => {
-    setIsDragging(false);
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      // Swipe gauche -> slide suivant
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+    } else if (isRightSwipe) {
+      // Swipe droite -> slide précédent
+      setCurrentIndex((prevIndex) => 
+        prevIndex === 0 ? data.length - 1 : prevIndex - 1
+      );
+    }
+
+    // Reprendre l'auto-play après 3 secondes
+    setTimeout(() => {
+      setIsAutoPlaying(true);
+    }, 3000);
+  };
+
+  // Gestion du clavier
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    setIsAutoPlaying(false);
+    
+    if (e.key === 'ArrowLeft') {
+      // Flèche gauche -> slide précédent
+      setCurrentIndex((prevIndex) => 
+        prevIndex === 0 ? data.length - 1 : prevIndex - 1
+      );
+    } else if (e.key === 'ArrowRight') {
+      // Flèche droite -> slide suivant
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+    }
+
+    // Reprendre l'auto-play après 3 secondes
+    setTimeout(() => {
+      setIsAutoPlaying(true);
+    }, 3000);
   };
 
   return (
-    <section ref={ref} id="features">
-      <div className="container px-4 md:px-6 lg:px-8">
+    <section 
+      ref={ref}
+      tabIndex={0}
+      onKeyDown={handleKeyDown}
+      className="focus:outline-none"
+    >
+      <div className="container px-5 md:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="mx-auto lg:mb-20 mt-8 md:mt-12 lg:mt-16 h-full grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 items-center">
             {/* Accordion Desktop - Hidden sur mobile */}
@@ -354,7 +298,7 @@ export default function Org({
 
             {/* Image Section - Responsive */}
             <div
-              className={`w-full h-[350px] sm:h-[300px] md:h-[350px] lg:w-[630px] lg:h-[440px] min-h-[200px] object-cover ${
+              className={`w-full h-[350px] sm:h-[300px] md:h-[350px] lg:w-[630px] lg:h-[440px] relative overflow-hidden rounded-2xl shadow-lg ${
                 ltr && "lg:order-1"
               }`}
             >
@@ -362,83 +306,53 @@ export default function Org({
                 <motion.img
                   key={currentIndex}
                   src={data[currentIndex].image}
-                  alt="feature"
-                  className="aspect-auto h-full w-full rounded-lg md:rounded-xl lg:object-cover object-left-top px-2 md:px-4 lg:px-none lg:p-1 shadow-lg"
-                  initial={{ opacity: 0, scale: 0.98 }}
+                  alt={data[currentIndex].title || "feature"}
+                  className="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-lg"
+                  initial={{ opacity: 0, scale: 1.05 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.25, ease: "easeOut" }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.4, ease: "easeOut" }}
                 />
               ) : (
-                <div className="aspect-auto h-full w-full rounded-lg md:rounded-xl border border-neutral-300/50 bg-gray-200 p-1"></div>
+                <div className="absolute inset-0 w-full h-full rounded-lg md:rounded-xl border border-neutral-300/50 bg-gray-200 flex items-center justify-center">
+                  <span className="text-gray-400 text-sm">Aucune image</span>
+                </div>
               )}
             </div>
 
-            {/* Mobile Carousel - Fluid with adjacent card preview */}
-            <ul
-              ref={carouselRef}
-              className="flex h-full overflow-x-auto py-0 md:py-8 lg:py-10 lg:hidden scrollbar-hide cursor-grab active:cursor-grabbing select-none"
-              style={{
-                padding: "20px calc(10%)", // Permet de voir les cartes adjacentes
-                scrollBehavior: "auto",
-                scrollSnapType: "none", // Scroll fluide sans snap
-                gap: "16px",
-              }}
-              onMouseDown={handleMouseDown}
-              onMouseMove={handleMouseMove}
-              onMouseUp={handleMouseUp}
-              onMouseLeave={handleMouseLeave}
+            {/* Mobile Carousel - Simple */}
+            <div 
+              className="lg:hidden px-4 -mt-2"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
             >
-              {data.map((item, index) => (
-                <li
-                  key={index}
-                  className="card relative flex-shrink-0 grid h-full items-start justify-center py-3 md:py-4 lg:bg-white/10 rounded-lg md:rounded-xl lg:backdrop-blur-sm lg:border border-white/20 transition-all duration-300"
-                  onClick={() => setCurrentIndex(index)}
-                  style={{
-                    minWidth: `${cardWidth}px`,
-                    maxWidth: `${cardWidth}px`,
-                    marginRight: "12px",
-                  }}
-                >
-                  {/* Barre de progression responsive */}
-                  <div className="absolute bottom-0 left-0 right-auto top-0 h-0.5 md:h-1 w-full overflow-hidden rounded-lg bg-neutral-300/50 dark:bg-neutral-300/30">
-                    <div
-                      className={`absolute left-0 top-0 h-full ${
-                        currentIndex === index ? "w-full" : "w-0"
-                      } origin-left bg-[#fff] transition-all ease-linear`}
-                      style={{
-                        transitionDuration:
-                          currentIndex === index ? `${collapseDelay}ms` : "0s",
-                      }}
-                    ></div>
+              <div className="h-[150px] flex items-center">
+                {data[currentIndex] && (
+                  <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 transition-all duration-300 w-full">
+                  {/* Barre de progression */}
+                  <div className="mb-4 h-1 w-full bg-neutral-300/30 rounded overflow-hidden">
+                    <div 
+                      className="h-full bg-white transition-all duration-75" 
+                      style={{ width: `${progress}%` }}
+                    />
                   </div>
 
-                  {/* Responsive icon */}
-                  <div className="flex items-center mb-3 md:mb-4">
-                    <div className="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-full flex items-center justify-center mr-3">
-                      <Image
-                        src={item.icon}
-                        alt={item.title}
-                        width={24}
-                        height={24}
-                        className="md:w-6 md:h-6"
-                      />
-                    </div>
-                    <h2 className="text-base md:text-lg lg:text-xl font-bold text-white">
-                      {item.title}
+                  {/* Titre */}
+                  <div className="mb-3">
+                    <h2 className="text-lg font-bold text-white">
+                      {data[currentIndex].title}
                     </h2>
                   </div>
 
-                  {/* Description responsive */}
-                  <div className="[&_p]:text-white w-full text-sm">
-                    <PortableText value={item.description} />
+                  {/* Description */}
+                  <div className="[&_p]:text-white text-sm">
+                    <PortableText value={data[currentIndex].description} />
                   </div>
-                </li>
-              ))}
-            </ul>
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -30,11 +30,18 @@ export default function Nav({ navData }: { navData: NavType }) {
       <nav className="bg-[#FFFCFB] flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] sticky w-full z-50 fixed top-0">
         <Link href="/">
           <Image
+            src={navData.logoMobile}
+            alt="logo"
+            width={155}
+            height={66}
+            className="block w-[80px] h-[48px] lg:w-[155px] lg:h-[66px] lg:hidden"
+          />
+          <Image
             src={navData.logo}
             alt="logo"
             width={155}
             height={66}
-            className="block w-[95px] h-[57px] lg:w-[155px] lg:h-[66px]"
+            className="hidden lg:block w-[155px] h-[66px]"
           />
         </Link>
 

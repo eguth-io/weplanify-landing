@@ -1,14 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
-import { PulsatingButton } from "@/components/magicui/pulsating-button";
-import { CtaType, IA } from "@/sanity/lib/type";
+import { IA } from "@/sanity/lib/type";
 
 interface IASectionProps {
   ia: IA;
-  ctaData: CtaType;
 }
 
-export default function IASection({ ia, ctaData }: IASectionProps) {
+export default function IASection({ ia }: IASectionProps) {
   return (
     <section className="relative mx-3 lg:mx-16 mt-20 flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-48" aria-labelledby="ia-title">
       <div className="flex flex-col">
@@ -34,9 +31,6 @@ export default function IASection({ ia, ctaData }: IASectionProps) {
             />
           </button>
         </div>
-        <Link href={ctaData.ctaLink} className="hidden lg:block">
-          <PulsatingButton>{ctaData.ctaButton}</PulsatingButton>
-        </Link>
       </div>
       <Image
         src={ia.image}

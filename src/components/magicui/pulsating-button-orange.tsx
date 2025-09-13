@@ -1,21 +1,21 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-interface PulsatingButtonProps
+interface PulsatingButtonWhiteProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   pulseColor?: string;
   duration?: string;
 }
 
-export const PulsatingButton = React.forwardRef<
+export const PulsatingButtonWhite = React.forwardRef<
   HTMLButtonElement,
-  PulsatingButtonProps
+  PulsatingButtonWhiteProps
 >(
   (
     {
       className,
       children,
-      pulseColor = "#F6391A26",
+      pulseColor = "#ffffff80",
       duration = "1.5s",
       disabled = false,
       ...props
@@ -27,10 +27,10 @@ export const PulsatingButton = React.forwardRef<
         ref={ref}
         disabled={disabled}
         className={cn(
-          "relative flex items-center justify-center px-6 py-2 text-center text-white bg-orange rounded-xl transition-all duration-200",
+          "relative flex items-center justify-center px-6 py-2 text-center text-black bg-white rounded-xl transition-all duration-200",
           disabled 
             ? "cursor-not-allowed opacity-50 bg-gray-400" 
-            : "cursor-pointer hover:bg-[#e53415]",
+            : "cursor-pointer hover:bg-gray-50",
           className
         )}
         style={
@@ -43,16 +43,16 @@ export const PulsatingButton = React.forwardRef<
       >
         <div className={cn(
           "relative z-10 font-[600]",
-          disabled ? "text-gray-600" : "text-white"
+          disabled ? "text-gray-600" : "text-black"
         )}>
           {children}
         </div>
         {!disabled && (
-          <div className="absolute left-1/2 top-1/2 size-full -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-xl text-white bg-orange" />
+          <div className="absolute left-1/2 top-1/2 size-full -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-xl text-black bg-white" />
         )}
       </button>
     );
   }
 );
 
-PulsatingButton.displayName = "PulsatingButton";
+PulsatingButtonWhite.displayName = "PulsatingButtonWhite";

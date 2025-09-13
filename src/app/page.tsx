@@ -103,7 +103,7 @@ export default async function HomePage() {
 
         <OrganizationSection organization={organization} ctaData={ctaData} />
 
-        <IASection ia={ia} ctaData={ctaData} />
+        <IASection ia={ia} />
 
         <MobileCTASection ctaData={ctaData} home={home} organization={organization} />
 
@@ -124,7 +124,7 @@ export default async function HomePage() {
           <FAQ faq={faq} />
         </section>
 
-        <CTASection footer={footer} home={home} />
+        <CTASection footer={footer} ctaData={ctaData} />
 
         {/* Footer */}
         <Footer variant="home" />

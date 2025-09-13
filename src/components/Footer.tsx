@@ -94,7 +94,7 @@ export default function Footer({ variant = 'home' }: FooterProps) {
             </span>
           </span>
           <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Léquipe
+            L&apos;équipe
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
               À venir
             </span>
@@ -106,7 +106,7 @@ export default function Footer({ variant = 'home' }: FooterProps) {
         <div className="flex flex-col">
           <p className="text-sm text-black font-medium">Support</p>
           <span className="text-gray-400 text-sm mt-6 cursor-not-allowed relative group">
-            Guide dutilisation
+            Guide d&apos;utilisation
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
               À venir
             </span>

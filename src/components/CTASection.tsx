@@ -1,13 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import { PortableText } from "@portabletext/react";
-import { FooterType, Home } from "@/sanity/lib/type";
+import { FooterType, CtaType } from "@/sanity/lib/type";
+import { PulsatingButtonWhite } from "@/components/magicui/pulsating-button-white-black";
 
 interface CTASectionProps {
   footer: FooterType;
-  home: Home;
+  ctaData: CtaType;
 }
 
-export default function CTASection({ footer, home }: CTASectionProps) {
+export default function CTASection({ footer, ctaData }: CTASectionProps) {
   return (
     <section className="overflow-hidden relative py-[100px] bg-[#F6391A] mt-32 rounded-[40px] mx-3 lg:mx-[60px] text-center" aria-labelledby="cta-title">
       <Image
@@ -31,15 +33,21 @@ export default function CTASection({ footer, home }: CTASectionProps) {
         height={150}
         className="absolute -bottom-16 -right-[20%] lg:-bottom-6 lg:right-0 rounded-b-[40px]"
       />
-      <div id="cta-title" className="noBr px-4 lg:px-0 text-xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white font-semibold leading-normal">
-        <PortableText value={footer.title} />
+      <div className="relative z-10">
+        <div id="cta-title" className="noBr px-4 lg:px-0 text-xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white font-semibold leading-normal">
+          <PortableText value={footer.title} />
+        </div>
+        <div className="px-4 lg:px-0 text-xl text-center [&_p]:text-white mt-3">
+          <PortableText value={footer.subtitle} />
+        </div>
+        <div className="mt-[34px] flex justify-center">
+          <Link href={ctaData.ctaLink}>
+            <PulsatingButtonWhite>
+              {ctaData.ctaButton}
+            </PulsatingButtonWhite>
+          </Link>
+        </div>
       </div>
-      <div className="px-4 lg:px-0 text-xl text-center [&_p]:text-white mt-3">
-        <PortableText value={footer.subtitle} />
-      </div>
-      <p className="text-[#F6391A] bg-white w-fit mx-auto mt-[34px] rounded-[6px] px-6 py-2 font-semibold">
-        {home.buttonDemo}
-      </p>
     </section>
   );
 }

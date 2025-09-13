@@ -19,9 +19,9 @@ export default function MobileCTASection({ ctaData, home, organization }: Mobile
             {ctaData.ctaButton}
           </PulsatingButton>
         </Link>
-        <button className="w-3/5 lg:w-auto font-[700] text-orange border border-[#f6391a] rounded-[6px] px-4 py-2">
+        <PulsatingButton className="w-3/5 lg:w-auto">
           {home.buttonDemo}
-        </button>
+        </PulsatingButton>
       </div>
       <div className="mt-8 flex items-center flex-col">
         <Image
