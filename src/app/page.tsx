@@ -314,7 +314,7 @@ export default async function HomePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="overflow-hidden relative py-[100px] bg-[#F6391A] mt-32 rounded-[40px] lg:mx-[60px] text-center" aria-labelledby="cta-title">
+        <section className="overflow-hidden relative py-[100px] bg-[#F6391A] mt-32 rounded-[40px] mx-3 lg:mx-[60px] text-center" aria-labelledby="cta-title">
         <Image
           src="/footer/top.png"
           alt="Élément décoratif supérieur - WePlanify"

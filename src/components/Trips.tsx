@@ -46,29 +46,32 @@ export default function Trips({ blocks }: CarouselProps) {
         <div className="pointer-events-none absolute inset-y-0 -right-4 md:-right-8 h-full w-[50px] md:w-[100px] bg-gradient-to-l from-white via-white/40 to-transparent z-10"></div>
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={8} // Very reduced for mobile
-          slidesPerView={1.2} // Default mobile slidesPerView
+          spaceBetween={16}
+          slidesPerView={1.3}
           loop={true}
+          allowTouchMove={true}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
             pauseOnMouseEnter: false,
             waitForTransition: false,
             stopOnLastSlide: false,
+            reverseDirection: false,
           }}
           speed={10000}
+          loopAdditionalSlides={1}
           className="pb-2 md:pb-4"
           breakpoints={{
             480: {
-              slidesPerView: 1.4,
-              spaceBetween: 0,
+              slidesPerView: 1.5,
+              spaceBetween: 16,
             },
             640: {
-              slidesPerView: 1.8,
+              slidesPerView: 1.9,
               spaceBetween: 12,
             },
             768: {
-              slidesPerView: 2.2,
+              slidesPerView: 2.3,
               spaceBetween: 20,
             },
             1024: {
