@@ -200,9 +200,6 @@ export default function Footer({ variant = 'home' }: FooterProps) {
                 <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
                   Fonctionnalités
                 </p>
-                <Link href="/" className="text-black/75 text-sm md:text-base hover:text-orange transition-colors mb-2 md:mb-3">
-                  Accueil
-                </Link>
                 <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
                   Planificateur
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">

@@ -39,7 +39,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
         alt="Nuage décoratif droit mobile - WePlanify"
         width={150}
         height={150}
-        className="lg:hidden absolute right-0 -bottom-[50px] z-0"
+        className="lg:hidden absolute right-0 -bottom-[50px] z-20"
       />
       <div
         className="pt-[50px] lg:pt-52 text-center [&_p]:text-white [&_strong]:text-white relative z-10"

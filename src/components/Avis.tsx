@@ -31,7 +31,7 @@ export default function Avis({ data }: { data: AvisType }) {
   };
 
   return (
-    <div className="mt-20 md:mt-32 lg:mt-40 bg-gradient-to-br from-[#006F8E] to-[#005a73] relative overflow-hidden">
+    <div className="bg-gradient-to-br from-[#006F8E] to-[#005a73] relative overflow-hidden py-8 md:py-12 lg:py-16">
       <div className="w-3/4 mx-auto pt-8 md:pt-12 lg:pt-16 text-center text-xl md:text-3xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white px-4 md:px-6 relative z-10">
         <div className="inline-block">
           <PortableText value={data.title} />

@@ -2,6 +2,7 @@ import { PortableText } from "@portabletext/react";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { CtaType, Home } from "@/sanity/lib/type";
 import Trips from "@/components/Trips";
+import Link from "next/link";
 
 interface HeroSectionProps {
   home: Home;
@@ -30,9 +31,11 @@ export default function HeroSection({ home, ctaData }: HeroSectionProps) {
         <PortableText value={home.description} />
       </div>
       <div className="flex-col lg:flex-row flex gap-4 mt-6 lg:mt-11 w-full lg:w-auto justify-center items-center">
-        <PulsatingButton className="w-4/5 lg:w-80">
-          {ctaData.ctaButton}
-        </PulsatingButton>
+        <Link href={ctaData.ctaLink}>
+          <PulsatingButton className="w-4/5 lg:w-80">
+            {ctaData.ctaButton}
+          </PulsatingButton>
+        </Link>
       </div>
       <Trips blocks={home.blocks} />
     </section>
