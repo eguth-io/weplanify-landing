@@ -41,7 +41,6 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
     setCurrentIndex(swiper.activeIndex);
   };
 
-  const maxIndex = Math.max(0, trips.tripsList.length - 1);
 
   return (
     <div className="relative mt-40 flex flex-col items-center justify-center">
@@ -138,7 +137,7 @@ export default function AvisTrips({ trips }: { trips: TripsType }) {
             {trips.tripsList.map((trip: Trip, index: number) => (
               <SwiperSlide key={index}>
                 <div 
-                  className="w-full bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer"
+                  className="w-full bg-white rounded-2xl overflow-hidden shadow-sm md:shadow-lg hover:shadow-md md:hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 md:hover:-translate-y-2 group cursor-pointer my-2 md:my-0"
                   onClick={() => {
                     swiperRef.current?.slideTo(index);
                   }}
