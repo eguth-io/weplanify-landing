@@ -73,7 +73,7 @@ export default function Nav({ navData }: { navData: NavType }) {
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-[40px] text-sm">
           <Link href="/#fonctionnement">Fonctionnement</Link>
-          <Link href="/#faq">FAQ</Link>
+          <Link href="/faq">FAQ</Link>
           <Link href="/#avis">Avis</Link>
           <Link href="/blog">Blog</Link>
         </div>
@@ -147,7 +147,7 @@ export default function Nav({ navData }: { navData: NavType }) {
               Fonctionnement
             </Link>
             <Link
-              href="/#faq"
+              href="/faq"
               onClick={closeMenu}
               className="text-lg font-medium hover:text-blue-600 transition-colors"
             >
