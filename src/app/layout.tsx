@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Raleway, Unbounded } from "next/font/google";
 import "./globals.css";
 import StructuredData from "./structured-data";
+import { Analytics } from '@vercel/analytics/next';
 
 const ralewayFont = Raleway({
   variable: "--font-raleway",
@@ -101,6 +102,7 @@ export default function RootLayout({
       </head>
       <body className={`${ralewayFont.variable} ${UnboundedFont.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
