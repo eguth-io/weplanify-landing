@@ -8,7 +8,7 @@ interface FooterProps {
 export default function Footer({ variant = 'home' }: FooterProps) {
   const config = {
     home: {
-      marginTop: 'mt-[120px] md:mt-[180px] lg:mt-[230px]',
+      marginTop: 'mt-[100px] md:mt-[180px] lg:mt-[100px]',
       borderTop: 'border-t',
       borderBottom: ''
     },
