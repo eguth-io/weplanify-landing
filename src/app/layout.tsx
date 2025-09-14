@@ -16,7 +16,7 @@ const UnboundedFont = Unbounded({
 
 export const metadata: Metadata = {
   title: "WePlanify - Planifiez, partagez, partez : une seule appli pour tout gérer",
-  description: "WePlanify est l'application de planification de voyage qui simplifie l'organisation de vos séjours. Planifiez, partagez et partez en toute simplicité avec une interface intuitive et collaborative.",
+  description: "WePlanify est l'application qui simplifie l'organisation de vos voyages. Planifiez, partagez et partez facilement avec une interface intuitive.",
   keywords: [
     "planification voyage",
     "organisation séjour",

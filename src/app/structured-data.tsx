@@ -3,7 +3,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "WePlanify",
-    "description": "Application de planification de voyage qui simplifie l'organisation de vos séjours. Planifiez, partagez et partez en toute simplicité avec une interface intuitive et collaborative.",
+    "description": "WePlanify est l'application qui simplifie l'organisation de vos voyages. Planifiez, partagez et partez facilement avec une interface intuitive.",
     "url": "https://weplanify.com",
     "applicationCategory": "TravelApplication",
     "operatingSystem": "Web, iOS, Android",
