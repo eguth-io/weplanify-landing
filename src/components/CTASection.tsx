@@ -41,7 +41,7 @@ export default function CTASection({ footer, ctaData }: CTASectionProps) {
           <PortableText value={footer.subtitle} />
         </div>
         <div className="mt-[34px] flex justify-center">
-          <Link href={ctaData.ctaLink}>
+          <Link href={ctaData.ctaLink} rel="nofollow">
             <PulsatingButtonWhite>
               {ctaData.ctaButton}
             </PulsatingButtonWhite>

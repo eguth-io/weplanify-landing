@@ -79,10 +79,10 @@ export default function Nav({ navData }: { navData: NavType }) {
         </div>
 
         <div className="lg:flex items-center gap-6 hidden">
-          <Link href={navData.ctaLink} className="text-sm font-[500]">
+          <Link href={navData.ctaLink} className="text-sm font-[500]" rel="nofollow">
             Connexion
           </Link>
-          <Link href={navData.ctaLink}>
+          <Link href={navData.ctaLink} rel="nofollow">
             <PulsatingButton>{navData.ctaButton}</PulsatingButton>
           </Link>
         </div>
@@ -175,10 +175,11 @@ export default function Nav({ navData }: { navData: NavType }) {
               href={navData.ctaLink}
               onClick={closeMenu}
               className="block text-center py-3 px-4 text-lg font-medium hover:bg-gray-50 transition-colors rounded-lg"
+              rel="nofollow"
             >
               Connexion
             </Link>
-            <Link href={navData.ctaLink} onClick={closeMenu} className="block">
+            <Link href={navData.ctaLink} onClick={closeMenu} className="block" rel="nofollow">
               <PulsatingButton className="w-full justify-center">
                 {navData.ctaButton}
               </PulsatingButton>

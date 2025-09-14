@@ -13,7 +13,7 @@ export default function MobileCTASection({ ctaData, organization }: MobileCTASec
     <section className="mt-12 lg:hidden flex flex-col justify-center items-center" aria-labelledby="mobile-cta-title">
       <h2 id="mobile-cta-title" className="sr-only">Actions mobiles</h2>
       <div className="flex gap-6 items-center flex-col lg:flex-row w-full">
-        <Link href={ctaData.ctaLink} className={"w-full"}>
+        <Link href={ctaData.ctaLink} className={"w-full"} rel="nofollow">
           <PulsatingButton className="w-4/5 mx-auto lg:w-full text-nowrap">
             {ctaData.ctaButton}
           </PulsatingButton>
