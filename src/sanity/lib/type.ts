@@ -124,6 +124,7 @@ export interface BlogPost {
     lastName: string;
     avatar?: string;
   };
+  relatedArticles?: BlogPostPreview[];
   seo?: {
     metaTitle?: string;
     metaDescription?: string;

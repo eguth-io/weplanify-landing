@@ -1,11 +1,8 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import RelatedArticles from "@/components/RelatedArticles";
-import CTASection from "@/components/CTASection";
-import Breadcrumb from "@/components/Breadcrumb";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, blogPostQuery, footerQuery, ctaQuery } from "@/sanity/lib/query";
-import { NavType, BlogPost, FooterType, CtaType } from "@/sanity/lib/type";
+import { navQuery, blogPostQuery } from "@/sanity/lib/query";
+import { NavType, BlogPost } from "@/sanity/lib/type";
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -16,25 +13,16 @@ interface BlogPostPageProps {
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
   
-  const [navData, article, footerData, ctaData]: [NavType, BlogPost | null, FooterType, CtaType] = await Promise.all([
-    sanityFetch({
-      query: navQuery,
-      tags: ["nav"],
-    }),
-    sanityFetch({
-      query: blogPostQuery,
-      params: { slug },
-      tags: ["blogPost"],
-    }),
-    sanityFetch({
-      query: footerQuery,
-      tags: ["footer"],
-    }),
-    sanityFetch({
-      query: ctaQuery,
-      tags: ["nav"],
-    }),
-  ]);
+  const navData: NavType = await sanityFetch({
+    query: navQuery,
+    tags: ["nav"],
+  });
+
+  const article: BlogPost | null = await sanityFetch({
+    query: blogPostQuery,
+    params: { slug },
+    tags: ["blogPost"],
+  });
 
   if (!article) {
     return (
@@ -64,14 +52,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <>
       <Nav navData={navData} />
       <main className="min-h-screen">
-        <article className="max-w-7xl mx-auto px-[30px] lg:px-[70px] py-8 lg:py-12">
-          <Breadcrumb
-            items={[
-              { label: "Accueil", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: article.title }
-            ]}
-          />
+        <article className="px-[30px] lg:px-[70px] py-8 lg:py-12">
           <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6 lg:mb-8">
             {article.title}
           </h1>
@@ -120,11 +101,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             ></div>
           </div>
         </article>
-
-        {/* Articles similaires */}
-        <RelatedArticles articles={article.relatedArticles || []} />
-
-        <CTASection footer={footerData} ctaData={ctaData} />
 
       </main>
       <Footer variant="home" />

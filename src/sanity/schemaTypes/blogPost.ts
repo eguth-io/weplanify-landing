@@ -70,6 +70,18 @@ export const blogPost = defineType({
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "relatedArticles",
+      title: "Articles similaires",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: [{ type: "blogPost" }],
+        },
+      ],
+      validation: (Rule) => Rule.max(3),
+    },
+    {
       name: "seo",
       title: "SEO",
       type: "object",

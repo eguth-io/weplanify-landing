@@ -132,6 +132,21 @@ export const blogPostQuery = groq`*[_type == "blogPost" && slug.current == $slug
     lastName,
     "avatar": avatar.asset->url
   },
+  relatedArticles[]-> {
+    _id,
+    title,
+    slug,
+    excerpt,
+    readTime,
+    "heroImage": heroImage.asset->url,
+    publishedAt,
+    author-> {
+      _id,
+      firstName,
+      lastName,
+      "avatar": avatar.asset->url
+    }
+  },
   seo {
     metaTitle,
     metaDescription
