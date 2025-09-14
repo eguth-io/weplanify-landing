@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { BlogPost, BlogPostPreview } from "@/sanity/lib/type";
 
 interface ArticleCardProps {
@@ -13,15 +14,15 @@ export default function ArticleCard({ article }: ArticleCardProps) {
     >
       <div className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-sm transition-shadow duration-300">
         <div className="relative h-48 mx-4 mt-4 overflow-hidden rounded-md" style={{ borderRadius: '6px' }}>
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat group-hover:scale-105 transition-transform duration-300 rounded-md"
-            style={{
-              backgroundImage: `url('${article.heroImage}')`,
-              borderRadius: '6px'
-            }}
-          ></div>
+          <Image
+            src={article.heroImage}
+            alt={article.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300 rounded-md"
+            style={{ borderRadius: '6px' }}
+          />
           <div 
-            className="absolute inset-0 bg-black/20 rounded-md group-hover:bg-black/0 transition-colors duration-300"
+            className="absolute inset-0 bg-black/20 rounded-md group-hover:bg-black/0 transition-colors duration-300 z-10"
             style={{
               borderRadius: '6px'
             }}
@@ -37,10 +38,12 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               {article.author?.avatar ? (
-                <img 
+                <Image 
                   src={article.author.avatar} 
                   alt={`${article.author?.firstName || ''} ${article.author?.lastName || ''}`}
-                  className="w-6 h-6 rounded-full object-cover"
+                  width={24}
+                  height={24}
+                  className="rounded-full object-cover"
                 />
               ) : (
                 <div className="w-6 h-6 bg-gray-300 rounded-full"></div>

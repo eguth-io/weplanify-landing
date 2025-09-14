@@ -16,24 +16,24 @@ interface BlogPostPageProps {
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
   
-  const [navData, article, footerData, ctaData]: [NavType, BlogPost | null, FooterType, CtaType] = await Promise.all([
+  const [navData, article, footerData, ctaData] = await Promise.all([
     sanityFetch({
       query: navQuery,
       tags: ["nav"],
-    }),
+    }) as Promise<NavType>,
     sanityFetch({
       query: blogPostQuery,
       params: { slug },
       tags: ["blogPost"],
-    }),
+    }) as Promise<BlogPost | null>,
     sanityFetch({
       query: footerQuery,
       tags: ["footer"],
-    }),
+    }) as Promise<FooterType>,
     sanityFetch({
       query: ctaQuery,
       tags: ["nav"],
-    }),
+    }) as Promise<CtaType>,
   ]);
 
   if (!article) {

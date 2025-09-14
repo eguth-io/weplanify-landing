@@ -1,8 +1,8 @@
-import { BlogPost } from "@/sanity/lib/type";
+import { BlogPost, BlogPostPreview } from "@/sanity/lib/type";
 import ArticleCard from "./ArticleCard";
 
 interface RelatedArticlesProps {
-  articles: BlogPost[];
+  articles: (BlogPost | BlogPostPreview)[];
 }
 
 export default function RelatedArticles({ articles }: RelatedArticlesProps) {
