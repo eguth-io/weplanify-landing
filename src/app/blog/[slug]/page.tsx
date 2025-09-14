@@ -66,12 +66,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <Nav navData={navData} />
       <main className="min-h-screen">
         <article className="max-w-7xl mx-auto px-[30px] lg:px-[70px] py-8 lg:py-12">
-          <Breadcrumb
-            items={[
-              { label: "Blog", href: "/blog" },
-              { label: article.title }
-            ]}
-          />
+          <div className="hidden lg:block">
+            <Breadcrumb
+              items={[
+                { label: "Blog", href: "/blog" },
+                { label: article.title }
+              ]}
+            />
+          </div>
           <h1 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6 lg:mb-8">
             {article.title}
           </h1>
