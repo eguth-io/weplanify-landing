@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "how_it_works": "How it works",
+    "faq": "FAQ",
+    "reviews": "Reviews",
+    "blog": "Blog",
+    "login": "Login",
+    "get_started": "Get started"
+  },
+  "hero": {
+    "subtitle": "Plan, share, travel",
+    "title": "One app to manage everything",
+    "description": "WePlanify is the travel planning app that simplifies organizing your trips.",
+    "cta_button": "Try for free"
+  },
+  "features": {
+    "title": "Features",
+    "organization": {
+      "title": "Collaborative organization",
+      "description": "Plan your trips as a team with intuitive collaborative tools."
+    }
+  },
+  "ia": {
+    "title": "Built-in AI Assistant",
+    "description": "Our revolutionary AI assistant generates your personalized travel itinerary in seconds.",
+    "placeholder": "Where would you like to travel?"
+  },
+  "testimonials": {
+    "title": "What our users say"
+  },
+  "faq": {
+    "title": "Frequently asked questions"
+  },
+  "footer": {
+    "title": "Ready to plan your next trip?",
+    "subtitle": "Join thousands of users who trust WePlanify."
+  },
+  "blog": {
+    "title": "Blog",
+    "read_more": "Read more",
+    "by": "By",
+    "published_on": "Published on",
+    "related_articles": "Related articles"
+  },
+  "contact": {
+    "title": "Contact us",
+    "description": "Have a question? Don't hesitate to contact us."
+  },
+  "common": {
+    "read_time": "min read",
+    "see_more": "See more",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "not_found": "Page not found"
+  }
+}

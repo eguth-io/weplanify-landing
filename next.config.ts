@@ -1,4 +1,7 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   experimental: {
@@ -10,6 +13,21 @@ const nextConfig: NextConfig = {
         },
       },
     },
+  },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'weplanify.com',
+          },
+        ],
+        destination: 'https://www.weplanify.com/:path*',
+        permanent: true,
+      },
+    ];
   },
   async headers() {
     return [
@@ -47,4 +65,4 @@ const nextConfig: NextConfig = {
   generateEtags: false,
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);
