@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@portabletext/react": "^3.2.1",
+    "@portabletext/react": "^3.2.4",
     "@radix-ui/react-accordion": "^1.2.11",
     "@sanity/client": "^7.6.0",
     "@sanity/image-url": "^1.1.0",

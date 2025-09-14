@@ -1,5 +1,7 @@
 import { type SchemaTypeDefinition } from "sanity";
+import { author } from "./author";
 import { avis } from "./avis";
+import { blogPost } from "./blogPost";
 import { faq } from "./faq";
 import { features } from "./features";
 import { footer } from "./footer";
@@ -22,5 +24,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     avis,
     faq,
     footer,
+    author,
+    blogPost,
   ],
 };

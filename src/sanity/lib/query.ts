@@ -100,3 +100,56 @@ export const footerQuery = groq`*[_type == "footer"][0] {
   title,
   subtitle
 }`;
+
+export const blogPostsQuery = groq`*[_type == "blogPost"] | order(publishedAt desc) {
+  _id,
+  title,
+  slug,
+  excerpt,
+  readTime,
+  "heroImage": heroImage.asset->url,
+  publishedAt,
+  author-> {
+    _id,
+    firstName,
+    lastName,
+    "avatar": avatar.asset->url
+  }
+}`;
+
+export const blogPostQuery = groq`*[_type == "blogPost" && slug.current == $slug][0] {
+  _id,
+  title,
+  slug,
+  excerpt,
+  readTime,
+  content,
+  "heroImage": heroImage.asset->url,
+  publishedAt,
+  author-> {
+    _id,
+    firstName,
+    lastName,
+    "avatar": avatar.asset->url
+  },
+  seo {
+    metaTitle,
+    metaDescription
+  }
+}`;
+
+export const relatedBlogPostsQuery = groq`*[_type == "blogPost" && slug.current != $slug] | order(publishedAt desc) [0...3] {
+  _id,
+  title,
+  slug,
+  excerpt,
+  readTime,
+  "heroImage": heroImage.asset->url,
+  publishedAt,
+  author-> {
+    _id,
+    firstName,
+    lastName,
+    "avatar": avatar.asset->url
+  }
+}`;

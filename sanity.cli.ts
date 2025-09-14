@@ -7,4 +7,7 @@ import { defineCliConfig } from "sanity/cli";
 const projectId = "8ibxl0ow";
 const dataset = "production";
 
-export default defineCliConfig({ api: { projectId, dataset } });
+export default defineCliConfig({ 
+  api: { projectId, dataset },
+  studioHost: 'weplanify'
+});
