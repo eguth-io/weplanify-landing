@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
 import CTASection from "@/components/CTASection";
 import Breadcrumb from "@/components/Breadcrumb";
+import Image from "next/image";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, blogPostQuery, footerQuery, ctaQuery } from "@/sanity/lib/query";
 import { NavType, BlogPost, FooterType, CtaType } from "@/sanity/lib/type";
@@ -67,7 +68,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <article className="max-w-7xl mx-auto px-[30px] lg:px-[70px] py-8 lg:py-12">
           <Breadcrumb
             items={[
-              { label: "Accueil", href: "/" },
               { label: "Blog", href: "/blog" },
               { label: article.title }
             ]}
@@ -78,10 +78,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
           <div className="flex items-center gap-4 mb-4 lg:mb-6">
             {article.author?.avatar ? (
-              <img 
+              <Image 
                 src={article.author.avatar} 
                 alt={`${article.author?.firstName || ''} ${article.author?.lastName || ''}`}
-                className="w-12 h-12 rounded-full object-cover"
+                width={48}
+                height={48}
+                className="rounded-full object-cover"
               />
             ) : (
               <div className="w-12 h-12 bg-gray-300 rounded-full"></div>

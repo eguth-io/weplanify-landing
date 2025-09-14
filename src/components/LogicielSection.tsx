@@ -10,7 +10,7 @@ interface LogicielSectionProps {
 
 export default function LogicielSection({ logiciel }: LogicielSectionProps) {
   return (
-    <section className="relative border-t border-gray-200 py-32 border-t border-gray-200 flex flex-col items-center justify-center" aria-labelledby="logiciel-title">
+    <section className="relative border-t border-gray-200 py-16 lg:py-32 border-t border-gray-200 flex flex-col items-center justify-center" aria-labelledby="logiciel-title">
       <Image
         src="/linesRight.svg"
         alt="Lignes décoratives droites - WePlanify"
@@ -29,7 +29,7 @@ export default function LogicielSection({ logiciel }: LogicielSectionProps) {
         <PortableText value={logiciel.title} />
       </div>
       <Safari
-        className="z-10 mt-12 object-cover w-[375px] h-[250px] lg:max-w-[900px] xl:w-[880px] lg:h-[550px] shadow-lg"
+        className="z-10 mt-8 lg:mt-12 object-cover w-[375px] h-[250px] lg:max-w-[900px] xl:w-[880px] lg:h-[550px] shadow-lg"
         imageSrc={logiciel.image}
       />
     </section>

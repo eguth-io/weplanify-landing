@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
+import Image from "next/image";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, blogPostsQuery } from "@/sanity/lib/query";
 import { NavType, BlogPostPreview } from "@/sanity/lib/type";
@@ -77,10 +78,12 @@ export default async function BlogPage() {
                   </h1>
                   <div className="flex items-center gap-3 text-white">
                     {heroArticle.author?.avatar ? (
-                      <img 
+                      <Image 
                         src={heroArticle.author.avatar} 
                         alt={`${heroArticle.author?.firstName || ''} ${heroArticle.author?.lastName || ''}`}
-                        className="w-8 h-8 rounded-full object-cover"
+                        width={32}
+                        height={32}
+                        className="rounded-full object-cover"
                       />
                     ) : (
                       <div className="w-8 h-8 bg-gray-300 rounded-full"></div>

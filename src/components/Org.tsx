@@ -308,10 +308,10 @@ export default function Org({
                   src={data[currentIndex].image}
                   alt={data[currentIndex].title || "feature"}
                   className="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-lg"
-                  initial={{ opacity: 0, scale: 1.05 }}
+                  initial={{ opacity: 0, scale: 1 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.4, ease: "easeOut" }}
+                  exit={{ opacity: 0, scale: 1 }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
                 />
               ) : (
                 <div className="absolute inset-0 w-full h-full rounded-lg md:rounded-xl border border-neutral-300/50 bg-gray-200 flex items-center justify-center">
@@ -327,26 +327,26 @@ export default function Org({
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
             >
-              <div className="h-[150px] flex items-center">
+              <div className="h-[180px] flex items-center">
                 {data[currentIndex] && (
-                  <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 transition-all duration-300 w-full">
+                  <div className="h-full p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 transition-all duration-500 ease-in-out w-full flex flex-col relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/30 before:via-white/10 before:to-transparent before:opacity-60 before:transition-opacity before:duration-500 before:pointer-events-none after:absolute after:top-0 after:left-0 after:w-full after:h-1/3 after:bg-gradient-to-b after:from-white/20 after:to-transparent after:opacity-40 after:pointer-events-none">
                   {/* Barre de progression */}
-                  <div className="mb-4 h-1 w-full bg-neutral-300/30 rounded overflow-hidden">
+                  <div className="mb-4 h-1 w-full bg-neutral-300/30 rounded overflow-hidden relative z-10">
                     <div 
-                      className="h-full bg-white transition-all duration-75" 
+                      className="h-full bg-white transition-all duration-300 ease-out" 
                       style={{ width: `${progress}%` }}
                     />
                   </div>
 
                   {/* Titre */}
-                  <div className="mb-3">
-                    <h2 className="text-lg font-bold text-white">
+                  <div className="mb-3 relative z-10">
+                    <h2 className="text-lg font-bold text-white line-clamp-2">
                       {data[currentIndex].title}
                     </h2>
                   </div>
 
                   {/* Description */}
-                  <div className="[&_p]:text-white text-sm">
+                  <div className="[&_p]:text-white text-sm flex-1 overflow-hidden [&_p]:line-clamp-3 relative z-10">
                     <PortableText value={data[currentIndex].description} />
                   </div>
                   </div>

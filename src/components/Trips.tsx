@@ -84,13 +84,6 @@ export default function Trips({ blocks }: CarouselProps) {
         height={200}
         className="hidden lg:block -z-10 absolute bottom-[0] left-0 w-auto h-auto "
       />
-      <Image
-        src="/passMobile.svg"
-        alt="Passeport décoratif mobile - WePlanify"
-        width={150}
-        height={150}
-        className="lg:hidden -z-10 absolute bottom-0 left-0"
-      />
 
       <div className="overflow-hidden mx-auto relative">
         {/* Gradient fade effects - reduced on mobile */}

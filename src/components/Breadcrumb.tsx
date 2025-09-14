@@ -17,7 +17,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
           <li key={index} className="flex items-center">
             {index > 0 && (
               <svg
-                className="w-4 h-4 mx-2 text-gray-400"
+                className="w-4 h-4 mx-2 text-gray-200"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
