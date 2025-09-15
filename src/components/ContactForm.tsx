@@ -28,8 +28,6 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus('idle');
-    setErrorMessage('');
 
     try {
       const response = await fetch('https://api.weplanify.com/api/contact/request', {
