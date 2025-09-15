@@ -21,8 +21,6 @@ export default function LaunchNotificationForm() {
     if (!email.trim()) return;
 
     setIsSubmitting(true);
-    setSubmitStatus('idle');
-    setErrorMessage('');
 
     try {
       const response = await fetch('https://api.weplanify.com/api/contact/request', {
