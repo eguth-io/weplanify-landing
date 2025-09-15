@@ -16,8 +16,6 @@ export default function ContactForm() {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -47,7 +45,6 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        setSubmitStatus('success');
         setFormData({
           email: '',
           content: ''
@@ -57,15 +54,11 @@ export default function ContactForm() {
         });
       } else {
         const errorData = await response.json().catch(() => ({}));
-        setSubmitStatus('error');
-        setErrorMessage(errorData.message || 'Une erreur s\'est produite lors de l\'envoi du message.');
         toast.error("Erreur", {
           description: errorData.message || 'Une erreur s\'est produite lors de l\'envoi du message.',
         });
       }
     } catch {
-      setSubmitStatus('error');
-      setErrorMessage('Impossible de joindre le serveur. Veuillez réessayer plus tard.');
       toast.error("Erreur de connexion", {
         description: 'Impossible de joindre le serveur. Veuillez réessayer plus tard.',
       });

@@ -8,7 +8,7 @@ interface HeroSectionProps {
   ctaData: CtaType;
 }
 
-export default function HeroSection({ home, ctaData }: HeroSectionProps) {
+export default function HeroSection({ home }: HeroSectionProps) {
   return (
     <section className="relative pt-[40px] lg:pt-[100px] pb-20 flex flex-col items-center justify-center" aria-labelledby="hero-title">
       <h2 className="text-orange bg-light px-4 py-2 rounded-full lg:text-base text-[10px] hidden lg:block mb-[20px]">

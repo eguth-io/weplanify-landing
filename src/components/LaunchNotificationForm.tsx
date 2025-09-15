@@ -7,7 +7,6 @@ export default function LaunchNotificationForm() {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
     const savedEmail = localStorage.getItem('launch_notification_email');
@@ -41,13 +40,10 @@ export default function LaunchNotificationForm() {
         setSubmitStatus('success');
         localStorage.setItem('launch_notification_email', email.trim());
       } else {
-        const errorData = await response.json().catch(() => ({}));
         setSubmitStatus('error');
-        setErrorMessage(errorData.message || 'Une erreur s\'est produite. Veuillez réessayer.');
       }
     } catch {
       setSubmitStatus('error');
-      setErrorMessage('Impossible de joindre le serveur. Veuillez réessayer plus tard.');
     } finally {
       setIsSubmitting(false);
     }
