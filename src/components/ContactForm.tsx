@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { toast } from "sonner";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
 interface ContactFormData {
@@ -15,8 +16,6 @@ export default function ContactForm() {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -29,8 +28,6 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus('idle');
-    setErrorMessage('');
 
     try {
       const response = await fetch('https://api.weplanify.com/api/contact/request', {
@@ -46,19 +43,23 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        setSubmitStatus('success');
         setFormData({
           email: '',
           content: ''
         });
+        toast.success("Message envoyé !", {
+          description: "Nous vous répondrons dans les plus brefs délais",
+        });
       } else {
         const errorData = await response.json().catch(() => ({}));
-        setSubmitStatus('error');
-        setErrorMessage(errorData.message || 'Une erreur s\'est produite lors de l\'envoi du message.');
+        toast.error("Erreur", {
+          description: errorData.message || 'Une erreur s\'est produite lors de l\'envoi du message.',
+        });
       }
     } catch {
-      setSubmitStatus('error');
-      setErrorMessage('Impossible de joindre le serveur. Veuillez réessayer plus tard.');
+      toast.error("Erreur de connexion", {
+        description: 'Impossible de joindre le serveur. Veuillez réessayer plus tard.',
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -103,20 +104,6 @@ export default function ContactForm() {
             disabled={isSubmitting}
           />
         </div>
-
-        {/* Status Messages */}
-        {submitStatus === 'success' && (
-          <div className="p-3 bg-green-50 border border-green-200 rounded-xl text-green-700 text-sm">
-            Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais. ✅
-          </div>
-        )}
-
-        {submitStatus === 'error' && (
-          <div className="p-3 bg-red-50 border border-red-200 rounded-xl text-red-700 text-sm">
-            {errorMessage} ❌
-          </div>
-        )}
-        
         <div className="pt-2 flex justify-center">
           <PulsatingButton 
             type="submit" 
