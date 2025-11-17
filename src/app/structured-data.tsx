@@ -14,8 +14,8 @@ export default function StructuredData() {
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "100",
+      "ratingValue": "4.9",
+      "ratingCount": "47",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -31,7 +31,7 @@ export default function StructuredData() {
       "Gestion de groupe",
       "Interface intuitive"
     ],
-    "screenshot": "https://weplanify.com/logo.png",
+    "screenshot": "https://weplanify.com/app-screenshot.png",
     "softwareVersion": "1.0.0",
     "releaseNotes": "Version initiale avec toutes les fonctionnalités de base"
   };

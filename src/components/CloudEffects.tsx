@@ -48,7 +48,7 @@ export default function CloudEffects() {
           }}
         >
           <Image
-            src="/CloudsEffects/topLeft.png"
+            src="/CloudsEffects/topLeft.webp"
             alt="Decorative cloud top left - WePlanify"
             width={200}
             height={200}
@@ -69,7 +69,7 @@ export default function CloudEffects() {
           }}
         >
           <Image
-            src="/CloudsEffects/topRight.png"
+            src="/CloudsEffects/topRight.webp"
             alt="Decorative cloud top right - WePlanify"
             width={200}
             height={200}
@@ -122,7 +122,7 @@ export default function CloudEffects() {
           }}
         >
           <Image
-            src="/CloudsEffects/bottomLeft.png"
+            src="/CloudsEffects/bottomLeft.webp"
             alt="Decorative cloud bottom left - WePlanify"
             width={200}
             height={200}
@@ -143,7 +143,7 @@ export default function CloudEffects() {
           }}
         >
                       <Image
-              src="/CloudsEffects/bottomRight.png"
+              src="/CloudsEffects/bottomRight.webp"
               alt="Decorative cloud bottom right - WePlanify"
               width={200}
               height={200}

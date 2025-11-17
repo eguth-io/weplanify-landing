@@ -14,31 +14,35 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
   return (
     <section id="fonctionnement" className="relative pb-28 flex flex-col items-center justify-center bg-[#4D9F79]">
       <Image
-        src="/leftCloud.png"
+        src="/leftCloud.webp"
         alt="Nuage décoratif gauche - WePlanify"
         width={200}
         height={200}
+        loading="lazy"
         className="hidden lg:block absolute left-0 top-0 z-0"
       />
       <Image
-        src="/rightCloud.png"
+        src="/rightCloud.webp"
         alt="Nuage décoratif droit - WePlanify"
         width={200}
         height={200}
+        loading="lazy"
         className="hidden lg:block absolute right-0 top-0 z-0"
       />
       <Image
-        src="/leftCloudMobile.svg"
+        src="/leftCloudMobile.webp"
         alt="Nuage décoratif gauche mobile - WePlanify"
         width={150}
         height={150}
+        loading="lazy"
         className="lg:hidden absolute left-0 -top-[100px] z-0"
       />
       <Image
-        src="/rightCloudMobile.svg"
+        src="/rightCloudMobile.webp"
         alt="Nuage décoratif droit mobile - WePlanify"
         width={150}
         height={150}
+        loading="lazy"
         className="lg:hidden absolute right-0 -bottom-[50px] z-20"
       />
       <div

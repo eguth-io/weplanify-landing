@@ -14,7 +14,7 @@ export default function ContactForm() {
     email: '',
     content: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -27,6 +27,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     setIsSubmitting(true);
 
     try {
@@ -104,9 +105,10 @@ export default function ContactForm() {
             disabled={isSubmitting}
           />
         </div>
+
         <div className="pt-2 flex justify-center">
-          <PulsatingButton 
-            type="submit" 
+          <PulsatingButton
+            type="submit"
             className="w-full lg:w-64"
             disabled={isSubmitting}
           >

@@ -17,6 +17,7 @@ export default function CTASection({ footer, ctaData }: CTASectionProps) {
         alt="Élément décoratif supérieur - WePlanify"
         width={300}
         height={200}
+        loading="lazy"
         className="absolute -top-4 lg:top-0 -right-[70%] lg:right-0 rounded-tr-[40px]"
       />
       <Image
@@ -24,6 +25,7 @@ export default function CTASection({ footer, ctaData }: CTASectionProps) {
         alt="Élément décoratif gauche - WePlanify"
         width={250}
         height={150}
+        loading="lazy"
         className="absolute -left-[20%] -bottom-16 lg:left-0 lg:bottom-0 rounded-bl-[40px]"
       />
       <Image
@@ -31,6 +33,7 @@ export default function CTASection({ footer, ctaData }: CTASectionProps) {
         alt="Élément décoratif droit - WePlanify"
         width={250}
         height={150}
+        loading="lazy"
         className="absolute -bottom-16 -right-[20%] lg:-bottom-6 lg:right-0 rounded-b-[40px]"
       />
       <div className="relative z-10">
