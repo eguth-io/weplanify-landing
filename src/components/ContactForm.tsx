@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { toast } from "sonner";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
+import { Turnstile } from '@marsidev/react-turnstile';
 
 interface ContactFormData {
   email: string;
@@ -14,8 +15,9 @@ export default function ContactForm() {
     email: '',
     content: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -27,6 +29,14 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!turnstileToken) {
+      toast.error("Erreur", {
+        description: 'Veuillez compléter la vérification anti-bot.',
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -38,7 +48,8 @@ export default function ContactForm() {
         body: JSON.stringify({
           email: formData.email,
           content: formData.content,
-          type: 'custom'
+          type: 'custom',
+          turnstileToken: turnstileToken
         }),
       });
 
@@ -47,6 +58,7 @@ export default function ContactForm() {
           email: '',
           content: ''
         });
+        setTurnstileToken(null);
         toast.success("Message envoyé !", {
           description: "Nous vous répondrons dans les plus brefs délais",
         });
@@ -104,11 +116,22 @@ export default function ContactForm() {
             disabled={isSubmitting}
           />
         </div>
+
+        {/* Cloudflare Turnstile */}
+        <div className="flex justify-center">
+          <Turnstile
+            siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ''}
+            onSuccess={(token) => setTurnstileToken(token)}
+            onError={() => setTurnstileToken(null)}
+            onExpire={() => setTurnstileToken(null)}
+          />
+        </div>
+
         <div className="pt-2 flex justify-center">
-          <PulsatingButton 
-            type="submit" 
+          <PulsatingButton
+            type="submit"
             className="w-full lg:w-64"
-            disabled={isSubmitting}
+            disabled={isSubmitting || !turnstileToken}
           >
             {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
           </PulsatingButton>

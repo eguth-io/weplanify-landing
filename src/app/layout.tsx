@@ -91,6 +91,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo.png" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="preconnect" href="https://cdn.sanity.io" />
+        <link rel="dns-prefetch" href="https://cdn.sanity.io" />
         <meta name="theme-color" content="#F6391A" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="application-name" content="WePlanify" />
