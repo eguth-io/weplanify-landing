@@ -320,3 +320,47 @@ export interface BlogPostPreview {
     avatar?: string;
   };
 }
+
+// Type aliases for backward compatibility
+export type FooterType = Footer;
+export type CtaType = LandingPage["ctaBanner"];
+export type FAQType = LandingPage["faq"];
+export type Home = LandingPage;
+
+// IA type - placeholder for AI section
+export interface IA {
+  title?: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  placeholder?: string;
+  button?: string;
+}
+
+// Features and Logiciel types
+export type Features = LandingPage["features"];
+export interface Logiciel {
+  title?: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  features?: Array<{
+    title: string;
+    description: string;
+    icon?: string;
+  }>;
+}
+
+// Organization type
+export interface Organization {
+  name?: string;
+  logo?: string;
+  logoAlt?: string;
+  title?: unknown;
+  description?: unknown;
+  featuresList?: unknown;
+  clientImage?: string;
+  clientText?: string;
+  ctaButton?: string;
+  ctaLink?: string;
+}

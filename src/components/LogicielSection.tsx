@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { PortableText } from "@portabletext/react";
 import { Features, Logiciel } from "@/sanity/lib/type";
 import { Safari } from "@/components/magicui/safari";
 
@@ -25,13 +24,15 @@ export default function LogicielSection({ logiciel }: LogicielSectionProps) {
         height={400}
         className="hidden lg:block absolute top-1/2 left-0 z-0 transform -translate-y-1/2"
       />
-      <div id="logiciel-title" className="text-[20px] lg:text-[40px] font-unbounded [&_p]:text-black [&_strong]:text-[#F6391A] font-semibold text-center">
-        <PortableText value={logiciel.title} />
+      <div id="logiciel-title" className="text-[20px] lg:text-[40px] font-unbounded text-black font-semibold text-center">
+        {logiciel.title}
       </div>
-      <Safari
-        className="z-10 mt-8 lg:mt-12 object-cover w-[375px] h-[250px] lg:max-w-[900px] xl:w-[880px] lg:h-[550px] shadow-lg"
-        imageSrc={logiciel.image}
-      />
+      {logiciel.image && (
+        <Safari
+          className="z-10 mt-8 lg:mt-12 object-cover w-[375px] h-[250px] lg:max-w-[900px] xl:w-[880px] lg:h-[550px] shadow-lg"
+          imageSrc={logiciel.image}
+        />
+      )}
     </section>
   );
 }

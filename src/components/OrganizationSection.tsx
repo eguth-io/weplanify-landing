@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PortableText } from "@portabletext/react";
-import { PulsatingButtonWhite } from "@/components/magicui/pulsating-button-white";
+import { PulsatingButtonWhite } from "@/components/magicui/pulsating-button-white-black";
 import { CtaType, Organization } from "@/sanity/lib/type";
 import Org from "@/components/Org";
 
@@ -46,34 +45,36 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
         className="lg:hidden absolute right-0 -bottom-[50px] z-20"
       />
       <div
-        className="pt-[50px] lg:pt-52 text-center [&_p]:text-white [&_strong]:text-white relative z-10"
+        className="pt-[50px] lg:pt-52 text-center text-white relative z-10"
         role="region"
         aria-labelledby="fonctionnement-title"
       >
         <div id="fonctionnement-title" className="text-2xl lg:text-[40px] font-unbounded px-8 lg:px-0">
-          <PortableText value={organization.title} />
+          {organization.name || ''}
         </div>
         <div className="mt-6 text-base lg:text-xl noBr px-6 lg:px-0">
-          <PortableText value={organization.description} />
+          {typeof organization.description === 'string' ? organization.description : ''}
         </div>
       </div>
       <Org data={organization.featuresList} />
       <div className="flex flex-col items-center justify-center mt-10 lg:mt-4">
         <div className="flex gap-6 items-center flex-col lg:flex-row w-full">
-          <Link href={ctaData.ctaLink} className={"w-full"} rel="nofollow">
+          <Link href={ctaData.buttonUrl || '#'} className={"w-full"} rel="nofollow">
             <PulsatingButtonWhite className="w-4/5 mx-auto lg:w-full text-nowrap">
-              {ctaData.ctaButton}
+              {ctaData.buttonText}
             </PulsatingButtonWhite>
           </Link>
         </div>
         <div className="mt-8 flex items-center flex-col">
-          <Image
-            className="w-[140px] lg:w-[280px]"
-            src={organization.clientImage}
-            alt="Logo client satisfait - WePlanify"
-            width={280}
-            height={62}
-          />
+          {organization.clientImage && (
+            <Image
+              className="w-[140px] lg:w-[280px]"
+              src={organization.clientImage}
+              alt="Logo client satisfait - WePlanify"
+              width={280}
+              height={62}
+            />
+          )}
           <div className="flex gap-2 items-center mt-2">
             <Image
               src="/fiveStars.svg"
@@ -82,7 +83,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
               alt="5 étoiles - Évaluation client WePlanify"
               className="hidden lg:block"
             />
-            <p className="text-sm text-white">{organization.clientText}</p>
+            <p className="text-sm text-white">{organization.clientText || ''}</p>
           </div>
         </div>
       </div>

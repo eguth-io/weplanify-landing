@@ -5,7 +5,7 @@ import Link from "next/link";
 import { PulsatingButton } from "./magicui/pulsating-button";
 import { useState } from "react";
 
-export default function Nav({ navData }: { navData: NavType }) {
+export default function Nav({ navData }: { navData: NavType | null }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,6 +24,17 @@ export default function Nav({ navData }: { navData: NavType }) {
     setIsMenuOpen(false);
     document.body.style.overflow = "unset";
   };
+
+  // If no navData, render a minimal nav
+  if (!navData || !navData.logo) {
+    return (
+      <div className="fixed w-full z-50 top-0 px-4 lg:px-8">
+        <nav className="bg-white shadow-sm flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] rounded-b-[16px] lg:rounded-b-[20px] max-w-[1536px] mx-auto">
+          <div className="w-[155px] h-[66px]"></div>
+        </nav>
+      </div>
+    );
+  }
 
   return (
     <>

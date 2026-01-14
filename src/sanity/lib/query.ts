@@ -70,6 +70,9 @@ export const navigationQuery = groq`
   }
 `;
 
+// Alias for backward compatibility
+export const navQuery = navigationQuery;
+
 // ============================================
 // Footer Query
 // ============================================
@@ -303,6 +306,97 @@ export const landingPageQuery = groq`
         keywords,
         "ogImage": ogImage.asset->url
       }
+    }
+  }
+`;
+
+// ============================================
+// Blog Post Query (Single)
+// ============================================
+export const blogPostQuery = groq`
+  *[_type == "blogPost" && slug.current == $slug][0] {
+    _id,
+    title,
+    "slug": slug.current,
+    excerpt,
+    readTime,
+    content,
+    "heroImage": heroImage.asset->url,
+    "heroImageAlt": heroImage.alt,
+    publishedAt,
+    author->{
+      name,
+      "image": image.asset->url,
+      "imageAlt": image.alt,
+      bio
+    },
+    relatedArticles[]->{
+      _id,
+      title,
+      "slug": slug.current,
+      excerpt,
+      readTime,
+      "heroImage": heroImage.asset->url,
+      "heroImageAlt": heroImage.alt,
+      publishedAt
+    },
+    seo {
+      metaTitle,
+      metaDescription
+    }
+  }
+`;
+
+// ============================================
+// Blog Posts Query (List)
+// ============================================
+export const blogPostsQuery = groq`
+  *[_type == "blogPost"] | order(publishedAt desc) {
+    _id,
+    title,
+    "slug": slug.current,
+    excerpt,
+    readTime,
+    "heroImage": heroImage.asset->url,
+    "heroImageAlt": heroImage.alt,
+    publishedAt,
+    author->{
+      name,
+      "image": image.asset->url
+    }
+  }
+`;
+
+// ============================================
+// FAQ Query
+// ============================================
+export const faqQuery = groq`
+  *[_type == "landingPage"][0] {
+    faq {
+      title,
+      items[] {
+        question,
+        answer
+      }
+    }
+  }
+`;
+
+// ============================================
+// CTA Query
+// ============================================
+export const ctaQuery = groq`
+  *[_type == "landingPage"][0] {
+    ctaBanner {
+      titlePart1,
+      titlePart2,
+      titlePart3,
+      titlePart4,
+      description,
+      buttonText,
+      buttonUrl,
+      "backgroundImage": backgroundImage.asset->url,
+      "backgroundImageAlt": backgroundImage.alt
     }
   }
 `;

@@ -35,13 +35,15 @@ export default function IASection({ ia }: IASectionProps) {
           </button>
         </div>
       </div>
-      <Image
-        src={ia.image}
-        alt="ia"
-        width={540}
-        height={640}
-        className="object-cover hidden lg:block"
-      />
+      {ia.image && (
+        <Image
+          src={ia.image}
+          alt={ia.imageAlt || "ia"}
+          width={540}
+          height={640}
+          className="object-cover hidden lg:block"
+        />
+      )}
     </section>
   );
 }

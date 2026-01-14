@@ -1,15 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PortableText } from "@portabletext/react";
-import { FooterType, CtaType } from "@/sanity/lib/type";
+import { CtaType } from "@/sanity/lib/type";
 import { PulsatingButtonWhite } from "@/components/magicui/pulsating-button-white-black";
 
 interface CTASectionProps {
-  footer: FooterType;
+  footer?: unknown; // Deprecated - kept for compatibility but not used
   ctaData: CtaType;
 }
 
-export default function CTASection({ footer, ctaData }: CTASectionProps) {
+export default function CTASection({ ctaData }: CTASectionProps) {
+  // Extract parts from ctaData
+  const title = [
+    ctaData.titlePart1,
+    ctaData.titlePart2,
+    ctaData.titlePart3,
+    ctaData.titlePart4,
+  ].filter(Boolean).join(' ');
+
   return (
     <section className="overflow-hidden relative pt-[100px] pb-[40px] bg-[#F6391A] rounded-[40px] mx-3 lg:mx-[60px] text-center" aria-labelledby="cta-title">
       <Image
@@ -37,16 +44,16 @@ export default function CTASection({ footer, ctaData }: CTASectionProps) {
         className="absolute -bottom-16 -right-[20%] lg:-bottom-6 lg:right-0 rounded-b-[40px]"
       />
       <div className="relative z-10">
-        <div id="cta-title" className="noBr px-4 lg:px-0 text-xl lg:text-[40px] font-unbounded [&_p]:text-white [&_strong]:text-white font-semibold leading-normal">
-          <PortableText value={footer.title} />
+        <div id="cta-title" className="noBr px-4 lg:px-0 text-xl lg:text-[40px] font-unbounded text-white font-semibold leading-normal">
+          {title}
         </div>
-        <div className="px-4 lg:px-0 text-xl text-center [&_p]:text-white mt-3">
-          <PortableText value={footer.subtitle} />
+        <div className="px-4 lg:px-0 text-xl text-center text-white mt-3">
+          {ctaData.description}
         </div>
         <div className="mt-[34px] flex justify-center">
-          <Link href={ctaData.ctaLink} rel="nofollow">
+          <Link href={ctaData.buttonUrl || '#'} rel="nofollow">
             <PulsatingButtonWhite>
-              {ctaData.ctaButton}
+              {ctaData.buttonText}
             </PulsatingButtonWhite>
           </Link>
         </div>

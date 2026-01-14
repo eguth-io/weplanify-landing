@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, faqQuery } from "@/sanity/lib/query";
 import { NavType, FAQType } from "@/sanity/lib/type";
-import { PortableText } from "next-sanity";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 
@@ -38,9 +37,9 @@ export default async function FAQPage() {
               </div>
 
               {/* FAQ List */}
-              {faqData.questions && faqData.questions.length > 0 ? (
+              {faqData && faqData.items && faqData.items.length > 0 ? (
                 <div className="space-y-6 mb-12">
-                  {faqData.questions.map((item, index) => (
+                  {faqData.items.map((item, index) => (
                     <div key={index} className="group">
                       <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-sm hover:border-orange/20 transition-all duration-300">
                         <div className="flex items-start gap-4">
@@ -51,9 +50,9 @@ export default async function FAQPage() {
                             <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-orange transition-colors">
                               {item.question}
                             </h3>
-                            <div className="text-gray-600 leading-relaxed [&_p]:mb-3 [&_p]:last:mb-0 [&_strong]:text-gray-900 [&_strong]:font-semibold [&_ul]:ml-4 [&_ul]:mb-3 [&_li]:mb-1">
-                              <PortableText value={item.answer} />
-                            </div>
+                            <p className="text-gray-600 leading-relaxed">
+                              {item.answer}
+                            </p>
                           </div>
                         </div>
                       </div>

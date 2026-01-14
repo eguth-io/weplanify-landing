@@ -1,4 +1,3 @@
-import { PortableText } from "@portabletext/react";
 import { CtaType, Home } from "@/sanity/lib/type";
 import Trips from "@/components/Trips";
 import LaunchNotificationForm from "@/components/LaunchNotificationForm";
@@ -12,27 +11,27 @@ export default function HeroSection({ home }: HeroSectionProps) {
   return (
     <section className="relative pt-[40px] lg:pt-[100px] pb-20 flex flex-col items-center justify-center" aria-labelledby="hero-title">
       <h2 className="text-orange bg-light px-4 py-2 rounded-full lg:text-base text-[10px] hidden lg:block mb-[20px]">
-        {home.subtitle}
+        {home.hero?.affiliateTag || ''}
       </h2>
       <h2 className="lg:hidden text-center text-orange bg-light px-3 py-1 lg:px-4 lg:py-2 rounded-full text-[12px] lg:text-base">
-        {home.subtitleMobile}
+        {home.hero?.affiliateTag || ''}
       </h2>
       <div id="hero-title" className="hidden lg:block mt-4 text-orange lg:text-[52px] text-2xl font-[600] font-unbounded text-center lg:text-start">
-        <PortableText value={home.title} />
+        {home.hero?.title}
       </div>
       <div className="lg:hidden orangeStrong [&_p]:font-bold text-black text-2xl px-6 mt-4 text-center">
-        <PortableText value={home.titleMobile} />
+        {home.hero?.title}
       </div>
       <div className="text-[52px] font-[600] font-unbounded hidden lg:block">
-        <PortableText value={home.title2} />
+        {/* Secondary title not available in current schema */}
       </div>
       <div className="px-4 lg:px-0 text-[#1D2026] text-opacity-70 mt-3 lg:mt-2 text-center font-[500] text-sm lg:text-xl noBr">
-        <PortableText value={home.description} />
+        {home.hero?.description}
       </div>
       <div className="mt-6 lg:mt-11 w-full flex justify-center items-center px-4 lg:px-0">
         <LaunchNotificationForm />
       </div>
-      <Trips blocks={home.blocks} />
+      <Trips blocks={undefined} />
     </section>
   );
 }
