@@ -82,7 +82,8 @@ export const navigation = defineType({
               hidden: ({ parent }) => parent?.linkType === "anchor",
               validation: (Rule) =>
                 Rule.custom((url, context) => {
-                  const linkType = (context.parent as any)?.linkType;
+                  const parent = context.parent as { linkType?: string } | undefined;
+                  const linkType = parent?.linkType;
                   if (linkType === "page" && !url) {
                     return "URL is required for page links";
                   }
@@ -106,7 +107,8 @@ export const navigation = defineType({
               },
               validation: (Rule) =>
                 Rule.custom((anchorId, context) => {
-                  const linkType = (context.parent as any)?.linkType;
+                  const parent = context.parent as { linkType?: string } | undefined;
+                  const linkType = parent?.linkType;
                   if (linkType === "anchor" && !anchorId) {
                     return "Section anchor is required for anchor links";
                   }
