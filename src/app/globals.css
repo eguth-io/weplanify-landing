@@ -4,7 +4,11 @@
 
 * {
   scroll-behavior: smooth;
-  color: #1d2026;
+}
+
+/* Applique la couleur par défaut sur la landing page */
+.landing-page {
+  color: #001E13;
 }
 
 img,
@@ -37,7 +41,7 @@ div {
 }
 
 body {
-  background-color: #fffcfb;
+  background-color: #FFFBF5;
 }
 
 strong {
@@ -61,6 +65,18 @@ strong {
   font-family: var(--font-unbounded);
 }
 
+.font-londrina-solid {
+  font-family: var(--font-londrina-solid);
+}
+
+.font-karla {
+  font-family: var(--font-karla);
+}
+
+.font-nanum-pen {
+  font-family: var(--font-nanum-pen);
+}
+
 .bg-orange {
   background-color: #f6391a;
 }
@@ -70,7 +86,15 @@ strong {
 }
 
 body {
-  font-family: var(--font-raleway);
+  font-family: var(--font-karla);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-londrina-solid);
+}
+
+p, span, a, button, input, textarea, select {
+  font-family: var(--font-karla);
 }
 
 @media screen and (max-width: 1024px){
@@ -78,6 +102,19 @@ body {
     display: none;
   }
 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
 }
 
 

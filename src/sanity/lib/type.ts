@@ -1,108 +1,271 @@
-import { PortableTextBlock } from "@portabletext/types";
+// ============================================
+// SEO Types
+// ============================================
 
-interface ContentBlock {
-  tooltip: string;
-  image: string;
-  text: PortableTextBlock[];
-  link: string;
+export interface SectionSEO {
+  title?: string;
+  description?: string;
+  keywords?: string[];
+  ogImage?: string;
 }
 
-export interface Home {
-  subtitle: string;
-  subtitleMobile: string;
-  title: PortableTextBlock[];
-  titleMobile: PortableTextBlock[];
-  title2: PortableTextBlock[];
-  description: PortableTextBlock[];
-  buttonDemo: string;
-  blocks: ContentBlock[];
+export interface SeoSettings {
+  // General SEO
+  siteName: string;
+  defaultTitle: string;
+  titleTemplate: string;
+  defaultDescription: string;
+  keywords: string[];
+  language: string;
+
+  // Open Graph / Social
+  ogImage: string;
+  ogType: "website" | "article" | "product";
+  twitterCard: "summary" | "summary_large_image" | "app";
+  twitterHandle?: string;
+  facebookAppId?: string;
+
+  // Structured Data
+  organizationName: string;
+  organizationLogo: string;
+  organizationUrl: string;
+  organizationSocialLinks: Array<{
+    platform: string;
+    url: string;
+  }>;
+  contactEmail?: string;
+  contactPhone?: string;
+
+  // Technical SEO
+  siteUrl: string;
+  robotsSettings: {
+    allowIndexing: boolean;
+    customRobotsTxt?: string;
+  };
+  favicon?: string;
+  appleTouchIcon?: string;
+  manifest?: {
+    themeColor: string;
+    backgroundColor: string;
+  };
+
+  // Analytics & Tracking
+  googleAnalyticsId?: string;
+  googleTagManagerId?: string;
+  facebookPixelId?: string;
+  hotjarId?: string;
+  microsoftClarityId?: string;
 }
 
-export type NavType = {
+// ============================================
+// Navigation Types
+// ============================================
+
+export interface Navigation {
   logo: string;
-  logoMobile: string;
-  connexionLink: string;
-  ctaButton: string;
-  ctaLink: string;
-};
+  navigationLinks: Array<{
+    label: string;
+    url: string;
+    isExternal: boolean;
+    openInNewTab: boolean;
+  }>;
+  ctaButton: {
+    text: string;
+    url: string;
+    style: "primary" | "secondary" | "light";
+    icon: boolean;
+  };
+  mobileMenuLabel: string;
+  headerSchema?: {
+    enableSchema: boolean;
+  };
+}
 
-export type CtaType = {
-  ctaButton: string;
-  ctaLink: string;
-};
+// ============================================
+// Footer Types
+// ============================================
 
-export interface Features {
-  title: string;
-  description: PortableTextBlock[];
-  featuresList: {
+export interface Footer {
+  logo?: string;
+  tagline?: string;
+  companyDescription?: string;
+  footerColumns: Array<{
     title: string;
-    description: PortableTextBlock[];
-    icon: string;
-    imageMobile: string;
-    imageDesktop: string;
-  }[];
+    links: Array<{
+      label: string;
+      url: string;
+      isExternal: boolean;
+    }>;
+  }>;
+  socialLinks: Array<{
+    platform: string;
+    url: string;
+    ariaLabel: string;
+  }>;
+  ctaSection?: {
+    showCta: boolean;
+    title?: string;
+    description?: string;
+    buttonText?: string;
+    buttonUrl?: string;
+  };
+  copyrightText: string;
+  legalLinks: Array<{
+    label: string;
+    url: string;
+  }>;
+  additionalLegalText?: string;
 }
 
-export interface Organization {
-  title: PortableTextBlock[];
-  description: PortableTextBlock[];
-  featuresList: OrganizationData[];
-  clientImage: string;
-  clientText: string;
-}
+// ============================================
+// Landing Page Types
+// ============================================
 
-export interface OrganizationData {
-  icon: string;
-  title: string;
-  description: PortableTextBlock[];
-  image: string;
-}
+export interface LandingPage {
+  // Hero Section
+  hero: {
+    affiliateTag: string;
+    title: string;
+    description: string;
+    ctaText: string;
+    ctaUrl: string;
+    backgroundImage: string;
+    seo?: SectionSEO;
+  };
 
-export interface IA {
-  title: string;
-  placeholder: string;
-  image: string;
-}
+  // Testimonial & Stats
+  testimonialStats: {
+    featuredTestimonials: Array<{
+      quote: string;
+      author: string;
+      authorRole?: string;
+    }>;
+    statsTitle: string;
+    stats: Array<{
+      value: string;
+      label: string;
+      showStar: boolean;
+    }>;
+    seo?: SectionSEO;
+  };
 
-export interface Trip {
-  firstName: string;
-  profileImage: string;
-  tripImage: string;
-  description: PortableTextBlock[];
-}
+  // World Section
+  worldSection: {
+    title: string;
+    description: string;
+    ctaText: string;
+    ctaUrl: string;
+    images: Array<{
+      url: string;
+      alt?: string;
+      caption?: string;
+    }>;
+    seo?: SectionSEO;
+  };
 
-export interface TripsType {
-  title: PortableTextBlock;
-  tripsList: Trip[];
-}
+  // Scrolling Banner
+  banner: {
+    items: string[];
+    backgroundColor?: string;
+    textColor?: string;
+  };
 
-export interface Logiciel {
-  title: PortableTextBlock[];
-  image: string;
-}
+  // Features
+  features: {
+    stackingCardsTitle: string;
+    stackingCards: Array<{
+      imagePosition: "left" | "right";
+      title: string;
+      description: string;
+      image: string;
+      imageAlt?: string;
+      backgroundColor: string;
+      ctaLabel?: string;
+      ctaTextColor?: string;
+      ctaBackgroundColor?: string;
+      stats?: Array<{
+        value: string;
+        label: string;
+      }>;
+    }>;
+    seo?: SectionSEO;
+  };
 
-export interface Testimonial {
-  description: PortableTextBlock[];
-  name: string;
-  profileImage: string;
-}
+  // Travel Steps (3 Cards Section)
+  travelSteps: {
+    title: string;
+    description: string;
+    badge: string;
+    card1: {
+      title: string;
+      description: string;
+      durationValue: string;
+      durationLabel: string;
+    };
+    card2: {
+      image: string;
+    };
+    card3: {
+      title: string;
+      description: string;
+      statValue: string;
+      statLabel: string;
+    };
+    seo?: SectionSEO;
+  };
 
-export interface AvisType {
-  title: PortableTextBlock[];
-  testimonials: Testimonial[];
-}
+  // Testimonials
+  testimonials: {
+    list: Array<{
+      quote: string;
+      author: string;
+      role: string;
+      image: string;
+    }>;
+    seo?: SectionSEO;
+  };
 
-export interface FAQItem {
-  question: string;
-  answer: PortableTextBlock[];
-}
+  // Feature Image Section
+  featureImageSection: {
+    title: string;
+    image: string;
+    seo?: SectionSEO;
+  };
 
-export interface FAQType {
-  title: PortableTextBlock[];
-  questions: FAQItem[];
-}
+  // CTA Banner
+  ctaBanner: {
+    titlePart1?: string;
+    titlePart2?: string;
+    titlePart3?: string;
+    titlePart4?: string;
+    description: string;
+    buttonText: string;
+    buttonUrl: string;
+    backgroundImage: string;
+  };
 
-export interface FooterType {
-  title: PortableTextBlock[];
-  subtitle: PortableTextBlock[];
+  // Ready Banner
+  readyBanner: {
+    title: string;
+    description?: string;
+    badges?: Array<{
+      emoji: string;
+      text: string;
+      backgroundColor: string;
+      textColor: string;
+      position: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+    }>;
+    buttonText: string;
+    buttonUrl: string;
+  };
+
+  // FAQ
+  faq: {
+    title: string;
+    items: Array<{
+      question: string;
+      answer: string;
+    }>;
+    seo?: SectionSEO;
+  };
 }

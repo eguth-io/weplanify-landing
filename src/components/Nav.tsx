@@ -27,14 +27,15 @@ export default function Nav({ navData }: { navData: NavType }) {
 
   return (
     <>
-      <nav className="bg-[#FFFCFB] flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] sticky w-full z-50 fixed top-0">
-        <Image
-          src={navData.logo}
-          alt="logo"
-          width={155}
-          height={66}
-          className="block w-[75px] h-[45px] lg:w-[155px] lg:h-[66px]"
-        />
+      <div className="fixed w-full z-50 top-0 px-4 lg:px-8">
+        <nav className="bg-white shadow-sm flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] rounded-b-[16px] lg:rounded-b-[20px] max-w-[1536px] mx-auto">
+          <Image
+            src={navData.logo}
+            alt="logo"
+            width={155}
+            height={66}
+            className="block w-[75px] h-[45px] lg:w-[155px] lg:h-[66px]"
+          />
 
         {/* Burger Menu Button */}
         <button
@@ -69,15 +70,16 @@ export default function Nav({ navData }: { navData: NavType }) {
           <Link href="/blogs">Blog</Link>
         </div>
 
-        <div className="lg:flex items-center gap-6 hidden">
-          <Link href={navData.ctaLink} className="text-sm font-[500]">
-            Connexion
-          </Link>
-          <Link href={navData.ctaLink}>
-            <PulsatingButton>{navData.ctaButton}</PulsatingButton>
-          </Link>
-        </div>
-      </nav>
+          <div className="lg:flex items-center gap-6 hidden">
+            <Link href={navData.ctaLink} className="text-sm font-[500]">
+              Connexion
+            </Link>
+            <Link href={navData.ctaLink}>
+              <PulsatingButton>{navData.ctaButton}</PulsatingButton>
+            </Link>
+          </div>
+        </nav>
+      </div>
 
       {/* Mobile Menu Overlay */}
       <div
@@ -89,7 +91,7 @@ export default function Nav({ navData }: { navData: NavType }) {
 
       {/* Mobile Menu Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-[280px] bg-[#FFFCFB] z-[60] lg:hidden transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-[280px] bg-white z-[60] lg:hidden transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

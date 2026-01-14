@@ -4,14 +4,51 @@ export const structure: StructureResolver = (S) =>
   S.list()
     .title("Content")
     .items([
-      S.documentTypeListItem("nav").title("Navigation"),
-      S.documentTypeListItem("home").title("Home"),
-      S.documentTypeListItem("features").title("Features"),
-      S.documentTypeListItem("organization").title("Organization"),
-      S.documentTypeListItem("ia").title("IA"),
-      S.documentTypeListItem("trips").title("Leurs voyages"),
-      S.documentTypeListItem("logiciel").title("Logiciel"),
-      S.documentTypeListItem("avis").title("Avis"),
-      S.documentTypeListItem("faq").title("FAQ"),
-      S.documentTypeListItem("footer").title("Footer"),
+      // Landing Page
+      S.listItem()
+        .title("Landing Page")
+        .icon(() => "🏠")
+        .child(
+          S.document()
+            .schemaType("landingPage")
+            .documentId("landingPage")
+        ),
+
+      // Divider
+      S.divider(),
+
+      // Global Settings Section
+      S.listItem()
+        .title("Global Settings")
+        .icon(() => "⚙️")
+        .child(
+          S.list()
+            .title("Global Settings")
+            .items([
+              S.listItem()
+                .title("SEO Settings")
+                .icon(() => "🔍")
+                .child(
+                  S.document()
+                    .schemaType("seoSettings")
+                    .documentId("seoSettings")
+                ),
+              S.listItem()
+                .title("Navigation")
+                .icon(() => "🧭")
+                .child(
+                  S.document()
+                    .schemaType("navigation")
+                    .documentId("navigation")
+                ),
+              S.listItem()
+                .title("Footer")
+                .icon(() => "🦶")
+                .child(
+                  S.document()
+                    .schemaType("footer")
+                    .documentId("footer")
+                ),
+            ])
+        ),
     ]);
