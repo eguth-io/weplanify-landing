@@ -3108,10 +3108,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:15.0.5":
-  version: 15.0.5
-  resolution: "@next/env@npm:15.0.5"
-  checksum: 10c0/9b185aa37ceee2351ff93c850915482ad25fb6d542872d32823557266435eb03fba4f82327f8629e4d58ea9896812eb3f40083a7185685a84e95200e95652933
+"@next/env@npm:15.1.7":
+  version: 15.1.7
+  resolution: "@next/env@npm:15.1.7"
+  checksum: 10c0/ad7761078552d8c88fe3c87224a3761d1bca82a15c747f417f561f92a4521898f227e3e7d2e8e65227a5ac8364ea8a2351c1febec5b5aa2ac1dcf016dd065edd
   languageName: node
   linkType: hard
 
@@ -3124,58 +3124,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:15.0.5":
-  version: 15.0.5
-  resolution: "@next/swc-darwin-arm64@npm:15.0.5"
+"@next/swc-darwin-arm64@npm:15.1.7":
+  version: 15.1.7
+  resolution: "@next/swc-darwin-arm64@npm:15.1.7"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-x64@npm:15.0.5":
-  version: 15.0.5
-  resolution: "@next/swc-darwin-x64@npm:15.0.5"
+"@next/swc-darwin-x64@npm:15.1.7":
+  version: 15.1.7
+  resolution: "@next/swc-darwin-x64@npm:15.1.7"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-gnu@npm:15.0.5":
-  version: 15.0.5
-  resolution: "@next/swc-linux-arm64-gnu@npm:15.0.5"
+"@next/swc-linux-arm64-gnu@npm:15.1.7":
+  version: 15.1.7
+  resolution: "@next/swc-linux-arm64-gnu@npm:15.1.7"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-arm64-musl@npm:15.0.5":
-  version: 15.0.5
-  resolution: "@next/swc-linux-arm64-musl@npm:15.0.5"
+"@next/swc-linux-arm64-musl@npm:15.1.7":
+  version: 15.1.7
+  resolution: "@next/swc-linux-arm64-musl@npm:15.1.7"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-gnu@npm:15.0.5":
-  version: 15.0.5
-  resolution: "@next/swc-linux-x64-gnu@npm:15.0.5"
+"@next/swc-linux-x64-gnu@npm:15.1.7":
+  version: 15.1.7
+  resolution: "@next/swc-linux-x64-gnu@npm:15.1.7"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@next/swc-linux-x64-musl@npm:15.0.5":
-  version: 15.0.5
-  resolution: "@next/swc-linux-x64-musl@npm:15.0.5"
+"@next/swc-linux-x64-musl@npm:15.1.7":
+  version: 15.1.7
+  resolution: "@next/swc-linux-x64-musl@npm:15.1.7"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@next/swc-win32-arm64-msvc@npm:15.0.5":
-  version: 15.0.5
-  resolution: "@next/swc-win32-arm64-msvc@npm:15.0.5"
+"@next/swc-win32-arm64-msvc@npm:15.1.7":
+  version: 15.1.7
+  resolution: "@next/swc-win32-arm64-msvc@npm:15.1.7"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@next/swc-win32-x64-msvc@npm:15.0.5":
-  version: 15.0.5
-  resolution: "@next/swc-win32-x64-msvc@npm:15.0.5"
+"@next/swc-win32-x64-msvc@npm:15.1.7":
+  version: 15.1.7
+  resolution: "@next/swc-win32-x64-msvc@npm:15.1.7"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -4003,7 +4003,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/client@npm:^7.3.0, @sanity/client@npm:^7.6.0, @sanity/client@npm:^7.7.0, @sanity/client@npm:^7.8.2, @sanity/client@npm:^7.9.0":
+"@sanity/client@npm:^7.1.0, @sanity/client@npm:^7.3.0, @sanity/client@npm:^7.6.0, @sanity/client@npm:^7.7.0, @sanity/client@npm:^7.8.2, @sanity/client@npm:^7.9.0":
   version: 7.14.0
   resolution: "@sanity/client@npm:7.14.0"
   dependencies:
@@ -4298,7 +4298,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/next-loader@npm:^1.7.0":
+"@sanity/next-loader@npm:^1.6.0":
   version: 1.7.5
   resolution: "@sanity/next-loader@npm:1.7.5"
   dependencies:
@@ -4324,7 +4324,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/preview-kit@npm:^6.1.2":
+"@sanity/preview-kit@npm:^6.1.0":
   version: 6.1.3
   resolution: "@sanity/preview-kit@npm:6.1.3"
   dependencies:
@@ -4341,7 +4341,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/preview-url-secret@npm:^2.1.11, @sanity/preview-url-secret@npm:^2.1.12, @sanity/preview-url-secret@npm:^2.1.14":
+"@sanity/preview-url-secret@npm:^2.1.10, @sanity/preview-url-secret@npm:^2.1.11, @sanity/preview-url-secret@npm:^2.1.14":
   version: 2.1.16
   resolution: "@sanity/preview-url-secret@npm:2.1.16"
   dependencies:
@@ -4597,7 +4597,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/visual-editing@npm:^2.15.2":
+"@sanity/visual-editing@npm:^2.14.0":
   version: 2.15.4
   resolution: "@sanity/visual-editing@npm:2.15.4"
   dependencies:
@@ -4748,12 +4748,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/helpers@npm:0.5.13":
-  version: 0.5.13
-  resolution: "@swc/helpers@npm:0.5.13"
+"@swc/helpers@npm:0.5.15":
+  version: 0.5.15
+  resolution: "@swc/helpers@npm:0.5.15"
   dependencies:
-    tslib: "npm:^2.4.0"
-  checksum: 10c0/b9df578401fc62405da9a6c31e79e447a2fd90f68b25b1daee12f2caf2821991bb89106f0397bc1acb4c4d84a8ce079d04b60b65f534496952e3bf8c9a52f40f
+    tslib: "npm:^2.8.0"
+  checksum: 10c0/33002f74f6f885f04c132960835fdfc474186983ea567606db62e86acd0680ca82f34647e8e610f4e1e422d1c16fce729dde22cd3b797ab1fd9061a825dabca4
   languageName: node
   linkType: hard
 
@@ -4939,12 +4939,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19":
-  version: 19.2.3
-  resolution: "@types/react-dom@npm:19.2.3"
+"@types/prop-types@npm:*":
+  version: 15.7.15
+  resolution: "@types/prop-types@npm:15.7.15"
+  checksum: 10c0/b59aad1ad19bf1733cf524fd4e618196c6c7690f48ee70a327eb450a42aab8e8a063fbe59ca0a5701aebe2d92d582292c0fb845ea57474f6a15f6994b0e260b2
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^18":
+  version: 18.3.7
+  resolution: "@types/react-dom@npm:18.3.7"
   peerDependencies:
-    "@types/react": ^19.2.0
-  checksum: 10c0/b486ebe0f4e2fb35e2e108df1d8fc0927ca5d6002d5771e8a739de11239fe62d0e207c50886185253c99eb9dedfeeb956ea7429e5ba17f6693c7acb4c02f8cd1
+    "@types/react": ^18.0.0
+  checksum: 10c0/8bd309e2c3d1604a28a736a24f96cbadf6c05d5288cfef8883b74f4054c961b6b3a5e997fd5686e492be903c8f3380dba5ec017eff3906b1256529cd2d39603e
   languageName: node
   linkType: hard
 
@@ -4957,12 +4964,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^19":
+"@types/react@npm:*":
   version: 19.2.8
   resolution: "@types/react@npm:19.2.8"
   dependencies:
     csstype: "npm:^3.2.2"
   checksum: 10c0/832834998c4ee971fca72ecf1eb95dc924ad3931a2112c687a4dae498aabd115c5fa4db09186853e34a646226b0223808c8f867df03d17601168f9cf119448de
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18":
+  version: 18.3.27
+  resolution: "@types/react@npm:18.3.27"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    csstype: "npm:^3.2.2"
+  checksum: 10c0/a761d2f58de03d0714806cc65d32bb3d73fb33a08dd030d255b47a295e5fff2a775cf1c20b786824d8deb6454eaccce9bc6998d9899c14fc04bbd1b0b0b72897
   languageName: node
   linkType: hard
 
@@ -8819,7 +8836,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"groq@npm:3.99.0, groq@npm:^3.99.0":
+"groq@npm:3.99.0, groq@npm:^3.88.2":
   version: 3.99.0
   resolution: "groq@npm:3.99.0"
   checksum: 10c0/383c5160a334326af57b89f9af7beb5d1edf5a4b28f9bdb0d189942d5bb2b3e72968cf299223ea8ecff6111be0d420df1fa5e3c456250a34af7c1a7cb92b20e7
@@ -10170,7 +10187,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.4.0":
+"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -10766,27 +10783,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sanity@npm:^9.12.0":
-  version: 9.12.3
-  resolution: "next-sanity@npm:9.12.3"
+"next-sanity@npm:9.12.0":
+  version: 9.12.0
+  resolution: "next-sanity@npm:9.12.0"
   dependencies:
     "@portabletext/react": "npm:^3.2.1"
-    "@sanity/client": "npm:^7.6.0"
-    "@sanity/next-loader": "npm:^1.7.0"
-    "@sanity/preview-kit": "npm:^6.1.2"
-    "@sanity/preview-url-secret": "npm:^2.1.12"
-    "@sanity/visual-editing": "npm:^2.15.2"
-    groq: "npm:^3.99.0"
+    "@sanity/client": "npm:^7.1.0"
+    "@sanity/next-loader": "npm:^1.6.0"
+    "@sanity/preview-kit": "npm:^6.1.0"
+    "@sanity/preview-url-secret": "npm:^2.1.10"
+    "@sanity/visual-editing": "npm:^2.14.0"
+    groq: "npm:^3.88.2"
     history: "npm:^5.3.0"
   peerDependencies:
-    "@sanity/client": ^7.6.0
-    "@sanity/ui": ^2.16.7
+    "@sanity/client": ^7.1.0
+    "@sanity/icons": ^3.7.0
+    "@sanity/types": ^3.88.2
+    "@sanity/ui": ^2.15.17
     next: ^14.2 || ^15.0.0-0
     react: ^18.3 || ^19.0.0-0
     react-dom: ^18.3 || ^19.0.0-0
-    sanity: ^3.99.0
+    sanity: ^3.88.2
     styled-components: ^6.1
-  checksum: 10c0/95f2c206442d091ef004c920435d242e55f1b9aab49c42a3183b45c0f0796bc96af9d39bd5327815fbd0cb2adc36f7cd4699cd8d6bf84c82b72326fdb1e96b5f
+  checksum: 10c0/e324abe84d9453c6c6b020189748248fca9bcc816ad7f446a807512b74d379592eae25db8ee1864a4f7e1ec168a988f7576fab7c2a361f16df78b99936125a73
   languageName: node
   linkType: hard
 
@@ -10800,21 +10819,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:15.0.5":
-  version: 15.0.5
-  resolution: "next@npm:15.0.5"
+"next@npm:15.1.7":
+  version: 15.1.7
+  resolution: "next@npm:15.1.7"
   dependencies:
-    "@next/env": "npm:15.0.5"
-    "@next/swc-darwin-arm64": "npm:15.0.5"
-    "@next/swc-darwin-x64": "npm:15.0.5"
-    "@next/swc-linux-arm64-gnu": "npm:15.0.5"
-    "@next/swc-linux-arm64-musl": "npm:15.0.5"
-    "@next/swc-linux-x64-gnu": "npm:15.0.5"
-    "@next/swc-linux-x64-musl": "npm:15.0.5"
-    "@next/swc-win32-arm64-msvc": "npm:15.0.5"
-    "@next/swc-win32-x64-msvc": "npm:15.0.5"
+    "@next/env": "npm:15.1.7"
+    "@next/swc-darwin-arm64": "npm:15.1.7"
+    "@next/swc-darwin-x64": "npm:15.1.7"
+    "@next/swc-linux-arm64-gnu": "npm:15.1.7"
+    "@next/swc-linux-arm64-musl": "npm:15.1.7"
+    "@next/swc-linux-x64-gnu": "npm:15.1.7"
+    "@next/swc-linux-x64-musl": "npm:15.1.7"
+    "@next/swc-win32-arm64-msvc": "npm:15.1.7"
+    "@next/swc-win32-x64-msvc": "npm:15.1.7"
     "@swc/counter": "npm:0.1.3"
-    "@swc/helpers": "npm:0.5.13"
+    "@swc/helpers": "npm:0.5.15"
     busboy: "npm:1.6.0"
     caniuse-lite: "npm:^1.0.30001579"
     postcss: "npm:8.4.31"
@@ -10824,8 +10843,8 @@ __metadata:
     "@opentelemetry/api": ^1.1.0
     "@playwright/test": ^1.41.2
     babel-plugin-react-compiler: "*"
-    react: ^18.2.0 || 19.0.0-rc-66855b96-20241106 || ^19.0.0
-    react-dom: ^18.2.0 || 19.0.0-rc-66855b96-20241106 || ^19.0.0
+    react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+    react-dom: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
     sass: ^1.3.0
   dependenciesMeta:
     "@next/swc-darwin-arm64":
@@ -10857,7 +10876,7 @@ __metadata:
       optional: true
   bin:
     next: dist/bin/next
-  checksum: 10c0/6c51473a3ca518fec50cb4355c89bc30f007e19853467c866c5c0cfb7782b51d430f8774aa20fdafe3ca0d3fcb04f298917f039aecd957e264fd81d49ee0fa17
+  checksum: 10c0/9d0f26c3742fb4339b931124607f267558357f2a9cd1cde4ea7d5755cea56a2f751b5898e1babd686ae97ee1f6043c94177f1dcc9c69db50b61d27e441970dfe
   languageName: node
   linkType: hard
 
@@ -11899,14 +11918,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.0.0":
-  version: 19.2.3
-  resolution: "react-dom@npm:19.2.3"
+"react-dom@npm:^18":
+  version: 18.3.1
+  resolution: "react-dom@npm:18.3.1"
   dependencies:
-    scheduler: "npm:^0.27.0"
+    loose-envify: "npm:^1.1.0"
+    scheduler: "npm:^0.23.2"
   peerDependencies:
-    react: ^19.2.3
-  checksum: 10c0/dc43f7ede06f46f3acc16ee83107c925530de9b91d1d0b3824583814746ff4c498ea64fd65cd83aba363205268adff52e2827c582634ae7b15069deaeabc4892
+    react: ^18.3.1
+  checksum: 10c0/a752496c1941f958f2e8ac56239172296fcddce1365ce45222d04a1947e0cc5547df3e8447f855a81d6d39f008d7c32eab43db3712077f09e3f67c4874973e85
   languageName: node
   linkType: hard
 
@@ -12003,10 +12023,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^19.0.0":
-  version: 19.2.3
-  resolution: "react@npm:19.2.3"
-  checksum: 10c0/094220b3ba3a76c1b668f972ace1dd15509b157aead1b40391d1c8e657e720c201d9719537375eff08f5e0514748c0319063392a6f000e31303aafc4471f1436
+"react@npm:^18":
+  version: 18.3.1
+  resolution: "react@npm:18.3.1"
+  dependencies:
+    loose-envify: "npm:^1.1.0"
+  checksum: 10c0/283e8c5efcf37802c9d1ce767f302dd569dd97a70d9bb8c7be79a789b9902451e0d16334b05d73299b20f048cbc3c7d288bbbde10b701fa194e2089c237dbea3
   languageName: node
   linkType: hard
 
@@ -12611,7 +12633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sanity@npm:^3.92.0":
+"sanity@npm:3.99.0":
   version: 3.99.0
   resolution: "sanity@npm:3.99.0"
   dependencies:
@@ -12774,10 +12796,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.27.0":
-  version: 0.27.0
-  resolution: "scheduler@npm:0.27.0"
-  checksum: 10c0/4f03048cb05a3c8fddc45813052251eca00688f413a3cee236d984a161da28db28ba71bd11e7a3dd02f7af84ab28d39fb311431d3b3772fed557945beb00c452
+"scheduler@npm:^0.23.2":
+  version: 0.23.2
+  resolution: "scheduler@npm:0.23.2"
+  dependencies:
+    loose-envify: "npm:^1.1.0"
+  checksum: 10c0/26383305e249651d4c58e6705d5f8425f153211aef95f15161c151f7b8de885f24751b377e4a0b3dd42cce09aad3f87a61dab7636859c0d89b7daf1a1e2a5c78
   languageName: node
   linkType: hard
 
@@ -14073,7 +14097,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.8.1, tslib@npm:^2.0.0, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0":
+"tslib@npm:2.8.1, tslib@npm:^2.0.0, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.8.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
@@ -14790,8 +14814,8 @@ __metadata:
     "@sanity/vision": "npm:^3.92.0"
     "@squoosh/cli": "npm:^0.7.3"
     "@types/node": "npm:^20"
-    "@types/react": "npm:^19"
-    "@types/react-dom": "npm:^19"
+    "@types/react": "npm:^18"
+    "@types/react-dom": "npm:^18"
     "@vercel/analytics": "npm:^1.5.0"
     class-variance-authority: "npm:^0.7.1"
     clsx: "npm:^2.1.1"
@@ -14799,13 +14823,13 @@ __metadata:
     eslint-config-next: "npm:15.0.4"
     framer-motion: "npm:^12.26.2"
     lucide-react: "npm:^0.515.0"
-    next: "npm:15.0.5"
-    next-sanity: "npm:^9.12.0"
+    next: "npm:15.1.7"
+    next-sanity: "npm:9.12.0"
     next-themes: "npm:^0.4.6"
     postcss: "npm:^8"
-    react: "npm:^19.0.0"
-    react-dom: "npm:^19.0.0"
-    sanity: "npm:^3.92.0"
+    react: "npm:^18"
+    react-dom: "npm:^18"
+    sanity: "npm:3.99.0"
     sharp: "npm:^0.34.5"
     sonner: "npm:^2.0.7"
     styled-components: "npm:^6.1.19"

@@ -47,20 +47,25 @@ export default function Nav({ navData, navigationData }: NavProps) {
   };
 
   const toggleMenu = () => {
-    const newState = !isMenuOpen;
-    setIsMenuOpen(newState);
-
-    // Handle scroll directly in the function
-    if (newState) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
+    setIsMenuOpen((prev) => {
+      const newState = !prev;
+      // Use setTimeout to avoid SSR issues with document access
+      if (typeof window !== 'undefined') {
+        setTimeout(() => {
+          document.body.style.overflow = newState ? "hidden" : "unset";
+        }, 0);
+      }
+      return newState;
+    });
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-    document.body.style.overflow = "unset";
+    if (typeof window !== 'undefined') {
+      setTimeout(() => {
+        document.body.style.overflow = "unset";
+      }, 0);
+    }
   };
 
   return (

@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { toast } from "sonner";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
 interface ContactFormData {
@@ -48,19 +47,13 @@ export default function ContactForm() {
           email: '',
           content: ''
         });
-        toast.success("Message envoyé !", {
-          description: "Nous vous répondrons dans les plus brefs délais",
-        });
+        alert("Message envoyé ! Nous vous répondrons dans les plus brefs délais.");
       } else {
         const errorData = await response.json().catch(() => ({}));
-        toast.error("Erreur", {
-          description: errorData.message || 'Une erreur s\'est produite lors de l\'envoi du message.',
-        });
+        alert(errorData.message || 'Une erreur s\'est produite lors de l\'envoi du message.');
       }
     } catch {
-      toast.error("Erreur de connexion", {
-        description: 'Impossible de joindre le serveur. Veuillez réessayer plus tard.',
-      });
+      alert('Impossible de joindre le serveur. Veuillez réessayer plus tard.');
     } finally {
       setIsSubmitting(false);
     }

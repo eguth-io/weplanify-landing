@@ -1,3 +1,7 @@
+// Force dynamic rendering pour éviter le bug de static generation avec Next.js 15 + React 18
+// Les pages seront rendues côté serveur mais mises en cache par CDN (Vercel/Cloudflare)
+export const dynamic = 'force-dynamic';
+
 import type { Metadata } from "next";
 import { Raleway, Unbounded, Londrina_Solid, Karla, Nanum_Pen_Script } from "next/font/google";
 import "./globals.css";
