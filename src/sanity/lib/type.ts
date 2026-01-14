@@ -20,7 +20,7 @@ export interface SeoSettings {
 
   // Open Graph / Social
   ogImage: string;
-  ogType: "website" | "article" | "product";
+  ogType: "website" | "article";
   twitterCard: "summary" | "summary_large_image" | "app";
   twitterHandle?: string;
   facebookAppId?: string;
@@ -79,6 +79,15 @@ export interface Navigation {
   headerSchema?: {
     enableSchema: boolean;
   };
+}
+
+// Type simplifié pour le composant Nav
+export interface NavType {
+  logo: string;
+  logoMobile?: string;
+  connexionLink?: string;
+  ctaButton: string;
+  ctaLink: string;
 }
 
 // ============================================

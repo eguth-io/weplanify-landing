@@ -232,7 +232,7 @@ export const footer = defineType({
           type: "string",
           validation: (Rule) =>
             Rule.custom((title, context) => {
-              // @ts-ignore
+              // @ts-expect-error - Sanity context.parent is not fully typed
               if (context.parent?.showCta && !title) {
                 return "Title is required when CTA is enabled";
               }
@@ -251,7 +251,7 @@ export const footer = defineType({
           type: "string",
           validation: (Rule) =>
             Rule.custom((text, context) => {
-              // @ts-ignore
+              // @ts-expect-error - Sanity context.parent is not fully typed
               if (context.parent?.showCta && !text) {
                 return "Button text is required when CTA is enabled";
               }
@@ -264,7 +264,7 @@ export const footer = defineType({
           type: "string",
           validation: (Rule) =>
             Rule.custom((url, context) => {
-              // @ts-ignore
+              // @ts-expect-error - Sanity context.parent is not fully typed
               if (context.parent?.showCta && !url) {
                 return "Button URL is required when CTA is enabled";
               }

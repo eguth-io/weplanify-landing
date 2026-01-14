@@ -142,9 +142,10 @@ export const seoSettings = defineType({
       description: "Your Twitter/X username (e.g., '@weplanify')",
       group: "openGraph",
       validation: (Rule) =>
-        Rule.custom((value) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        Rule.custom((value: any) => {
           if (!value) return true;
-          if (!value.startsWith("@")) {
+          if (typeof value === 'string' && !value.startsWith("@")) {
             return "Twitter handle must start with @";
           }
           return true;
@@ -334,9 +335,10 @@ export const seoSettings = defineType({
       description: "Google Analytics Measurement ID (e.g., 'G-XXXXXXXXXX')",
       group: "analytics",
       validation: (Rule) =>
-        Rule.custom((value) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        Rule.custom((value: any) => {
           if (!value) return true;
-          if (!value.match(/^G-[A-Z0-9]+$/)) {
+          if (typeof value === 'string' && !value.match(/^G-[A-Z0-9]+$/)) {
             return "Must be a valid GA4 Measurement ID (e.g., G-XXXXXXXXXX)";
           }
           return true;
@@ -349,9 +351,10 @@ export const seoSettings = defineType({
       description: "GTM Container ID (e.g., 'GTM-XXXXXXX')",
       group: "analytics",
       validation: (Rule) =>
-        Rule.custom((value) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        Rule.custom((value: any) => {
           if (!value) return true;
-          if (!value.match(/^GTM-[A-Z0-9]+$/)) {
+          if (typeof value === 'string' && !value.match(/^GTM-[A-Z0-9]+$/)) {
             return "Must be a valid GTM ID (e.g., GTM-XXXXXXX)";
           }
           return true;

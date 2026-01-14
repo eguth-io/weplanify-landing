@@ -1,5 +1,14 @@
 import { defineType } from "sanity";
 
+// Types pour les previews
+interface PreviewPrepareParams {
+  [key: string]: string | undefined;
+}
+
+interface PositionLabels {
+  [key: string]: string;
+}
+
 // Objet réutilisable pour le SEO de chaque section
 const seoField = {
   name: "seo",
@@ -16,6 +25,7 @@ const seoField = {
       title: "Titre SEO",
       type: "string",
       description: "Titre optimisé pour les moteurs de recherche (50-60 caractères)",
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       validation: (Rule: any) => Rule.max(60),
     },
     {
@@ -24,6 +34,7 @@ const seoField = {
       type: "text",
       rows: 3,
       description: "Description pour les moteurs de recherche (150-160 caractères)",
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       validation: (Rule: any) => Rule.max(160),
     },
     {
@@ -281,7 +292,8 @@ export const landingPage = defineType({
               ],
             },
           ],
-          validation: (Rule) => Rule.max(4),
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          validation: (Rule: any) => Rule.max(4),
         },
         seoField,
       ],
@@ -358,6 +370,7 @@ export const landingPage = defineType({
                     layout: "radio",
                   },
                   initialValue: "left",
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   validation: (Rule: any) => Rule.required(),
                 },
                 {
@@ -424,6 +437,7 @@ export const landingPage = defineType({
                           title: "Valeur",
                           type: "string",
                           description: "Ex: 120+, 4.8, 1000+",
+                          // eslint-disable-next-line @typescript-eslint/no-explicit-any
                           validation: (Rule: any) => Rule.required(),
                         },
                         {
@@ -431,6 +445,7 @@ export const landingPage = defineType({
                           title: "Label",
                           type: "string",
                           description: "Ex: Destination possible, Utilisateurs actifs",
+                          // eslint-disable-next-line @typescript-eslint/no-explicit-any
                           validation: (Rule: any) => Rule.required(),
                         },
                       ],
@@ -439,7 +454,7 @@ export const landingPage = defineType({
                           value: "value",
                           label: "label",
                         },
-                        prepare({ value, label }: any) {
+                        prepare({ value, label }: PreviewPrepareParams) {
                           return {
                             title: value || "Stat",
                             subtitle: label,
@@ -457,7 +472,7 @@ export const landingPage = defineType({
                   image: "image",
                   imagePosition: "imagePosition",
                 },
-                prepare({ title, description, image, imagePosition }: any) {
+                prepare({ title, description, image, imagePosition }: PreviewPrepareParams & { image?: string }) {
                   const positionLabel = imagePosition === "left" ? "📷 ← Gauche" : "📷 → Droite";
                   return {
                     title: title || "Carte sans titre",
@@ -790,12 +805,14 @@ export const landingPage = defineType({
                   title: "Emoji",
                   type: "string",
                   description: "Ex: 🆕, 🌍, ⭐, ✈️",
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   validation: (Rule: any) => Rule.required(),
                 },
                 {
                   name: "text",
                   title: "Texte",
                   type: "string",
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   validation: (Rule: any) => Rule.required(),
                 },
                 {
@@ -803,6 +820,7 @@ export const landingPage = defineType({
                   title: "Couleur de fond",
                   type: "string",
                   description: "Code couleur hex (ex: #F6391A, #61DBD5, #005939)",
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   validation: (Rule: any) => Rule.required(),
                 },
                 {
@@ -810,6 +828,7 @@ export const landingPage = defineType({
                   title: "Couleur du texte",
                   type: "string",
                   description: "Code couleur hex (ex: #FFFFFF pour blanc, #001E13 pour vert foncé)",
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   validation: (Rule: any) => Rule.required(),
                 },
                 {
@@ -825,6 +844,7 @@ export const landingPage = defineType({
                       { title: "En bas à droite", value: "bottom-right" },
                     ],
                   },
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   validation: (Rule: any) => Rule.required(),
                 },
               ],
@@ -834,8 +854,8 @@ export const landingPage = defineType({
                   text: "text",
                   position: "position",
                 },
-                prepare({ emoji, text, position }: any) {
-                  const positionLabels: any = {
+                prepare({ emoji, text, position }: PreviewPrepareParams) {
+                  const positionLabels: PositionLabels = {
                     "top-left": "↖️ Haut gauche",
                     "top-right": "↗️ Haut droite",
                     "bottom-left": "↙️ Bas gauche",
@@ -843,12 +863,13 @@ export const landingPage = defineType({
                   };
                   return {
                     title: `${emoji} ${text}`,
-                    subtitle: positionLabels[position] || position,
+                    subtitle: position ? (positionLabels[position] || position) : "",
                   };
                 },
               },
             },
           ],
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           validation: (Rule: any) => Rule.max(4),
         },
         {

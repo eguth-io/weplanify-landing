@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useMemo } from "react";
 
 interface Badge {
   emoji: string;
@@ -24,28 +24,51 @@ interface ReadyBannerProps {
 export default function ReadyBanner({ data }: ReadyBannerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Configurations spring différentes pour chaque badge
-  const springConfigs = [
+  // Configurations spring différentes pour chaque badge - mémorisées pour éviter re-render
+  const springConfigs = useMemo(() => [
     { damping: 20, stiffness: 120 },
     { damping: 30, stiffness: 100 },
     { damping: 15, stiffness: 180 },
     { damping: 25, stiffness: 140 },
-  ];
+  ], []);
 
-  // Paramètres de mouvement pour chaque badge
-  const moveParams = [
+  // Paramètres de mouvement pour chaque badge - mémorisés pour éviter re-render
+  const moveParams = useMemo(() => [
     { x: 15, y: 15 },
     { x: -22, y: 18 },
     { x: 10, y: -14 },
     { x: 20, y: 12 },
-  ];
+  ], []);
 
-  // Créer des springs dynamiquement pour chaque badge
-  const badges = data.badges || [];
-  const springs = badges.map((_, index) => ({
-    x: useSpring(useMotionValue(0), springConfigs[index % springConfigs.length]),
-    y: useSpring(useMotionValue(0), springConfigs[index % springConfigs.length]),
-  }));
+  // Initialiser les springs pour chaque badge (max 4 badges)
+  const x0 = useMotionValue(0);
+  const y0 = useMotionValue(0);
+  const x1 = useMotionValue(0);
+  const y1 = useMotionValue(0);
+  const x2 = useMotionValue(0);
+  const y2 = useMotionValue(0);
+  const x3 = useMotionValue(0);
+  const y3 = useMotionValue(0);
+
+  const springX0 = useSpring(x0, springConfigs[0]);
+  const springY0 = useSpring(y0, springConfigs[0]);
+  const springX1 = useSpring(x1, springConfigs[1]);
+  const springY1 = useSpring(y1, springConfigs[1]);
+  const springX2 = useSpring(x2, springConfigs[2]);
+  const springY2 = useSpring(y2, springConfigs[2]);
+  const springX3 = useSpring(x3, springConfigs[3]);
+  const springY3 = useSpring(y3, springConfigs[3]);
+
+  // Mémoriser les springs pour éviter re-render
+  const springs = useMemo(() => [
+    { x: springX0, y: springY0 },
+    { x: springX1, y: springY1 },
+    { x: springX2, y: springY2 },
+    { x: springX3, y: springY3 },
+  ], [springX0, springY0, springX1, springY1, springX2, springY2, springX3, springY3]);
+
+  // Mémoriser badges pour éviter re-render
+  const badges = useMemo(() => data.badges || [], [data.badges]);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -58,16 +81,17 @@ export default function ReadyBanner({ data }: ReadyBannerProps) {
       const deltaX = (e.clientX - centerX) / rect.width;
       const deltaY = (e.clientY - centerY) / rect.height;
 
-      springs.forEach((spring, index) => {
+      badges.forEach((_, index) => {
+        if (index >= springs.length) return;
         const params = moveParams[index % moveParams.length];
-        spring.x.set(deltaX * params.x);
-        spring.y.set(deltaY * params.y);
+        springs[index].x.set(deltaX * params.x);
+        springs[index].y.set(deltaY * params.y);
       });
     };
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, [springs]);
+  }, [badges, springs, moveParams]);
 
   if (!data) return null;
 

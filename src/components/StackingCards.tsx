@@ -63,7 +63,7 @@ const defaultCards: Card[] = [
   },
 ];
 
-function Card({ card, index, range, targetScale }: { card: Card; index: number; range: [number, number]; targetScale: number }) {
+function Card({ card, index }: { card: Card; index: number }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -197,10 +197,6 @@ function Card({ card, index, range, targetScale }: { card: Card; index: number; 
 
 export default function StackingCards({ data }: StackingCardsProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"]
-  });
 
   const cards = data?.stackingCards || defaultCards;
 
@@ -212,18 +208,13 @@ export default function StackingCards({ data }: StackingCardsProps) {
         </h2>
       </div>
       <div className="relative h-[400vh]">
-        {cards.map((card, index) => {
-          const targetScale = 1 - ((cards.length - index) * 0.05);
-          return (
-            <Card
-              key={index}
-              card={card}
-              index={index}
-              range={[index * 0.25, 1]}
-              targetScale={targetScale}
-            />
-          );
-        })}
+        {cards.map((card, index) => (
+          <Card
+            key={index}
+            card={card}
+            index={index}
+          />
+        ))}
       </div>
     </div>
   );
