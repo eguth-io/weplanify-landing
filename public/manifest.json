@@ -1,0 +1,21 @@
+{
+  "name": "WePlanify - Planifiez, partagez, partez",
+  "short_name": "WePlanify",
+  "description": "Application de planification de voyage qui simplifie l'organisation de vos séjours",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#F6391A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "155x66",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "productivity", "planning"],
+  "lang": "fr",
+  "dir": "ltr"
+}

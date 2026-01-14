@@ -12,7 +12,7 @@ export default function Nav({ navData }: { navData: NavType }) {
     const newState = !isMenuOpen;
     setIsMenuOpen(newState);
 
-    // Gère le scroll directement dans la fonction
+    // Handle scroll directly in the function
     if (newState) {
       document.body.style.overflow = "hidden";
     } else {
@@ -64,10 +64,10 @@ export default function Nav({ navData }: { navData: NavType }) {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-[40px] text-sm">
-          <Link href="#fonctionnement">Fonctionnement</Link>
-          <Link href="#faq">FAQ</Link>
-          <Link href="#avis">Avis</Link>
-          <Link href="/blogs">Blog</Link>
+          <Link href="/#fonctionnement">Fonctionnement</Link>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/#avis">Avis</Link>
+          <Link href="/blog">Blog</Link>
         </div>
 
           <div className="lg:flex items-center gap-6 hidden">
@@ -98,13 +98,15 @@ export default function Nav({ navData }: { navData: NavType }) {
         <div className="flex flex-col h-full">
           {/* Header du menu */}
           <div className="flex justify-between items-center p-6 border-b">
-            <Image
-              src={navData.logo}
-              alt="logo"
-              width={120}
-              height={50}
-              className="w-[120px] h-[50px]"
-            />
+            <Link href="/">
+              <Image
+                src={navData.logo}
+                alt="logo"
+                width={120}
+                height={50}
+                className="w-[120px] h-[50px]"
+              />
+            </Link>
             <button
               onClick={closeMenu}
               className="w-8 h-8 flex items-center justify-center"
@@ -131,28 +133,28 @@ export default function Nav({ navData }: { navData: NavType }) {
           {/* Navigation Links */}
           <div className="flex flex-col px-6 py-8 space-y-6">
             <Link
-              href="#fonctionnement"
+              href="/#fonctionnement"
               onClick={closeMenu}
               className="text-lg font-medium hover:text-blue-600 transition-colors"
             >
               Fonctionnement
             </Link>
             <Link
-              href="#faq"
+              href="/faq"
               onClick={closeMenu}
               className="text-lg font-medium hover:text-blue-600 transition-colors"
             >
               FAQ
             </Link>
             <Link
-              href="#avis"
+              href="/#avis"
               onClick={closeMenu}
               className="text-lg font-medium hover:text-blue-600 transition-colors"
             >
               Avis
             </Link>
             <Link
-              href="/blogs"
+              href="/blog"
               onClick={closeMenu}
               className="text-lg font-medium hover:text-blue-600 transition-colors"
             >
@@ -166,10 +168,11 @@ export default function Nav({ navData }: { navData: NavType }) {
               href={navData.ctaLink}
               onClick={closeMenu}
               className="block text-center py-3 px-4 text-lg font-medium hover:bg-gray-50 transition-colors rounded-lg"
+              rel="nofollow"
             >
               Connexion
             </Link>
-            <Link href={navData.ctaLink} onClick={closeMenu} className="block">
+            <Link href={navData.ctaLink} onClick={closeMenu} className="block" rel="nofollow">
               <PulsatingButton className="w-full justify-center">
                 {navData.ctaButton}
               </PulsatingButton>

@@ -17,6 +17,7 @@ export const PulsatingButton = React.forwardRef<
       children,
       pulseColor = "#F6391A26",
       duration = "1.5s",
+      disabled = false,
       ...props
     },
     ref
@@ -24,13 +25,14 @@ export const PulsatingButton = React.forwardRef<
     return (
       <button
         ref={ref}
+        disabled={disabled}
         className={cn(
           "relative flex cursor-pointer items-center justify-center px-6 py-2 text-center text-[#FFFBF5] bg-orange rounded-full",
           className
         )}
         style={
           {
-            "--pulse-color": pulseColor,
+            "--pulse-color": disabled ? "#transparent" : pulseColor,
             "--duration": duration,
           } as React.CSSProperties
         }
