@@ -3,20 +3,25 @@ import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
 import Image from "next/image";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, blogPostsQuery } from "@/sanity/lib/query";
-import { NavType, BlogPostPreview } from "@/sanity/lib/type";
+import { navQuery, blogPostsQuery, footerQuery } from "@/sanity/lib/query";
+import { NavType, BlogPostPreview, Footer as FooterType } from "@/sanity/lib/type";
 import Link from "next/link";
 
 export default async function BlogPage() {
-  const navData: NavType = await sanityFetch({
-    query: navQuery,
-    tags: ["nav"],
-  });
-
-  const blogPosts: BlogPostPreview[] = await sanityFetch({
-    query: blogPostsQuery,
-    tags: ["blogPost"],
-  });
+  const [navData, blogPosts, footerData]: [NavType, BlogPostPreview[], FooterType | null] = await Promise.all([
+    sanityFetch<NavType>({
+      query: navQuery,
+      tags: ["nav"],
+    }),
+    sanityFetch<BlogPostPreview[]>({
+      query: blogPostsQuery,
+      tags: ["blogPost"],
+    }),
+    sanityFetch<FooterType>({
+      query: footerQuery,
+      tags: ["footer"],
+    }),
+  ]);
 
   // First article as hero article
   const heroArticle = blogPosts[0];
@@ -43,7 +48,7 @@ export default async function BlogPage() {
             </div>
           </div>
         </main>
-        <Footer variant="blog" />
+        <Footer variant="blog" footerData={footerData} />
       </>
     );
   }
@@ -117,7 +122,7 @@ export default async function BlogPage() {
         )}
 
       </main>
-      <Footer variant="blog" />
+      <Footer variant="blog" footerData={footerData} />
     </>
   );
 }

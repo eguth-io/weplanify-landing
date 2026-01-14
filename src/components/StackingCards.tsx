@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Card {
   imagePosition: "left" | "right";
@@ -12,6 +13,7 @@ interface Card {
   imageAlt?: string;
   backgroundColor: string;
   ctaLabel?: string;
+  ctaUrl?: string;
   ctaTextColor?: string;
   ctaBackgroundColor?: string;
   stats?: Array<{
@@ -120,16 +122,18 @@ function Card({ card, index }: { card: Card; index: number }) {
         )}
 
         {card.ctaLabel && (
-          <button
-            className="px-8 py-3 rounded-full font-karla font-bold text-sm lg:text-base hover:opacity-90 transition-all ring-4"
-            style={{
-              backgroundColor: card.ctaBackgroundColor || "#F6391A",
-              color: card.ctaTextColor || "#FFFFFF",
-              boxShadow: `0 0 0 4px ${card.ctaBackgroundColor || "#F6391A"}40`,
-            }}
-          >
-            {card.ctaLabel}
-          </button>
+          <Link href={card.ctaUrl || "#"}>
+            <button
+              className="px-8 py-3 rounded-full font-karla font-bold text-sm lg:text-base hover:opacity-90 transition-all ring-4"
+              style={{
+                backgroundColor: card.ctaBackgroundColor || "#F6391A",
+                color: card.ctaTextColor || "#FFFFFF",
+                boxShadow: `0 0 0 4px ${card.ctaBackgroundColor || "#F6391A"}40`,
+              }}
+            >
+              {card.ctaLabel}
+            </button>
+          </Link>
         )}
       </div>
     </div>

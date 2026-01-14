@@ -65,9 +65,11 @@ export interface Navigation {
   logo: string;
   navigationLinks: Array<{
     label: string;
-    url: string;
-    isExternal: boolean;
-    openInNewTab: boolean;
+    linkType: "page" | "anchor";
+    url?: string;
+    anchorId?: string;
+    isExternal?: boolean;
+    openInNewTab?: boolean;
   }>;
   ctaButton: {
     text: string;
@@ -190,6 +192,7 @@ export interface LandingPage {
       imageAlt?: string;
       backgroundColor: string;
       ctaLabel?: string;
+      ctaUrl?: string;
       ctaTextColor?: string;
       ctaBackgroundColor?: string;
       stats?: Array<{

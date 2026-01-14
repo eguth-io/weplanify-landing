@@ -53,7 +53,9 @@ export const navigationQuery = groq`
     "logoAlt": logo.alt,
     navigationLinks[] {
       label,
+      linkType,
       url,
+      anchorId,
       isExternal,
       openInNewTab
     },
@@ -191,6 +193,7 @@ export const landingPageQuery = groq`
         "imageAlt": image.alt,
         backgroundColor,
         ctaLabel,
+        ctaUrl,
         ctaTextColor,
         ctaBackgroundColor,
         stats[] {

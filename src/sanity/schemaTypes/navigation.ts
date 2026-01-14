@@ -61,17 +61,64 @@ export const navigation = defineType({
               validation: (Rule) => Rule.required(),
             },
             {
+              name: "linkType",
+              title: "Link Type",
+              type: "string",
+              description: "Type of link (page or anchor)",
+              options: {
+                list: [
+                  { title: "Page Link", value: "page" },
+                  { title: "Anchor Link", value: "anchor" },
+                ],
+              },
+              initialValue: "page",
+              validation: (Rule) => Rule.required(),
+            },
+            {
               name: "url",
               title: "URL",
               type: "string",
-              description: "Link destination (e.g., '#features', '/about', or full URL)",
-              validation: (Rule) => Rule.required(),
+              description: "Link destination (e.g., '/about', or full URL)",
+              hidden: ({ parent }) => parent?.linkType === "anchor",
+              validation: (Rule) =>
+                Rule.custom((url, context) => {
+                  const linkType = (context.parent as any)?.linkType;
+                  if (linkType === "page" && !url) {
+                    return "URL is required for page links";
+                  }
+                  return true;
+                }),
+            },
+            {
+              name: "anchorId",
+              title: "Section à cibler",
+              type: "string",
+              description: "Sélectionnez la section vers laquelle rediriger",
+              hidden: ({ parent }) => parent?.linkType !== "anchor",
+              options: {
+                list: [
+                  { title: "Hero (Section d'accueil)", value: "hero" },
+                  { title: "Avis (Témoignages & Stats)", value: "avis" },
+                  { title: "Fonctionnement (Fonctionnalités)", value: "fonctionnement" },
+                  { title: "Étapes", value: "etapes" },
+                  { title: "FAQ", value: "faq" },
+                ],
+              },
+              validation: (Rule) =>
+                Rule.custom((anchorId, context) => {
+                  const linkType = (context.parent as any)?.linkType;
+                  if (linkType === "anchor" && !anchorId) {
+                    return "Section anchor is required for anchor links";
+                  }
+                  return true;
+                }),
             },
             {
               name: "isExternal",
               title: "External Link",
               type: "boolean",
               description: "Check if this links to an external site",
+              hidden: ({ parent }) => parent?.linkType === "anchor",
               initialValue: false,
             },
             {
@@ -79,6 +126,7 @@ export const navigation = defineType({
               title: "Open in New Tab",
               type: "boolean",
               description: "Open link in a new browser tab",
+              hidden: ({ parent }) => parent?.linkType === "anchor",
               initialValue: false,
             },
           ],
@@ -86,12 +134,16 @@ export const navigation = defineType({
             select: {
               label: "label",
               url: "url",
+              anchorId: "anchorId",
+              linkType: "linkType",
               isExternal: "isExternal",
             },
-            prepare({ label, url, isExternal }) {
+            prepare({ label, url, anchorId, linkType, isExternal }) {
+              const destination = linkType === "anchor" ? `#${anchorId}` : url;
+              const type = linkType === "anchor" ? "anchor" : isExternal ? "external" : "page";
               return {
                 title: label || "Untitled Link",
-                subtitle: `${url || "No URL"}${isExternal ? " (external)" : ""}`,
+                subtitle: `${destination || "No destination"} (${type})`,
               };
             },
           },

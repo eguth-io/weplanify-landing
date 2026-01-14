@@ -2,6 +2,7 @@
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useRef, useEffect, useMemo } from "react";
+import Link from "next/link";
 
 interface Badge {
   emoji: string;
@@ -144,9 +145,11 @@ export default function ReadyBanner({ data }: ReadyBannerProps) {
               </p>
             )}
 
-            <button className="bg-[#EEF899] text-[#001E13] px-6 py-2 rounded-full font-karla font-bold text-sm lg:text-base hover:bg-[#EEF899]/90 transition-colors ring-4 ring-[#EEF899] ring-opacity-15">
-              {data.buttonText}
-            </button>
+            <Link href={data.buttonUrl || "#"}>
+              <button className="bg-[#EEF899] text-[#001E13] px-6 py-2 rounded-full font-karla font-bold text-sm lg:text-base hover:bg-[#EEF899]/90 transition-colors ring-4 ring-[#EEF899] ring-opacity-15">
+                {data.buttonText}
+              </button>
+            </Link>
           </div>
         </div>
       </div>

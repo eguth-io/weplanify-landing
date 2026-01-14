@@ -1,11 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Footer as FooterType } from "@/sanity/lib/type";
 
 interface FooterProps {
   variant?: 'home' | 'contact' | 'blog';
+  footerData?: FooterType | null;
 }
 
-export default function Footer({ variant = 'home' }: FooterProps) {
+// Social media icon mapping
+const SOCIAL_ICONS: Record<string, string> = {
+  instagram: "/instagram.svg",
+  tiktok: "/tiktok.svg",
+  facebook: "/facebook.svg",
+  twitter: "/twitter.svg",
+  linkedin: "/linkedin.svg",
+  youtube: "/youtube.svg"
+};
+
+export default function Footer({ variant = 'home', footerData }: FooterProps) {
   const config = {
     home: {
       marginTop: 'mt-[100px] md:mt-[180px] lg:mt-[100px]',
@@ -42,28 +54,55 @@ export default function Footer({ variant = 'home' }: FooterProps) {
             Rejoignez nous
           </p>
           <div className="flex gap-3 mt-3">
-            <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
-              <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                <Image
-                  src="/instagram.svg"
-                  alt="Icône Instagram - Suivez WePlanify"
-                  width={24}
-                  height={24}
-                  className="brightness-0 invert"
-                />
-              </div>
-            </Link>
-            <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Suivez WePlanify sur TikTok">
-              <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                <Image
-                  src="/tiktok.svg"
-                  alt="Icône TikTok - Suivez WePlanify"
-                  width={24}
-                  height={24}
-                  className="brightness-0 invert"
-                />
-              </div>
-            </Link>
+            {footerData?.socialLinks && footerData.socialLinks.length > 0 ? (
+              footerData.socialLinks.map((social, index) => {
+                const iconSrc = SOCIAL_ICONS[social.platform.toLowerCase()] || "/instagram.svg";
+                return (
+                  <Link
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.ariaLabel || `Suivez-nous sur ${social.platform}`}
+                  >
+                    <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
+                      <Image
+                        src={iconSrc}
+                        alt={`Icône ${social.platform}`}
+                        width={24}
+                        height={24}
+                        className="brightness-0 invert"
+                      />
+                    </div>
+                  </Link>
+                );
+              })
+            ) : (
+              <>
+                <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
+                  <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
+                    <Image
+                      src="/instagram.svg"
+                      alt="Icône Instagram"
+                      width={24}
+                      height={24}
+                      className="brightness-0 invert"
+                    />
+                  </div>
+                </Link>
+                <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Suivez WePlanify sur TikTok">
+                  <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
+                    <Image
+                      src="/tiktok.svg"
+                      alt="Icône TikTok"
+                      width={24}
+                      height={24}
+                      className="brightness-0 invert"
+                    />
+                  </div>
+                </Link>
+              </>
+            )}
           </div>
         </div>
         <div className="flex flex-col">
@@ -165,28 +204,55 @@ export default function Footer({ variant = 'home' }: FooterProps) {
               Rejoignez nous
             </p>
             <div className="flex gap-3">
-              <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
-                <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                  <Image
-                    src="/instagram.svg"
-                    alt="Icône Instagram - Suivez WePlanify"
-                    width={20}
-                    height={20}
-                    className="brightness-0 invert md:w-6 md:h-6"
-                  />
-                </div>
-              </Link>
-              <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Suivez WePlanify sur TikTok">
-                <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                  <Image
-                    src="/tiktok.svg"
-                    alt="Icône TikTok - Suivez WePlanify"
-                    width={20}
-                    height={20}
-                    className="brightness-0 invert md:w-6 md:h-6"
-                  />
-                </div>
-              </Link>
+              {footerData?.socialLinks && footerData.socialLinks.length > 0 ? (
+                footerData.socialLinks.map((social, index) => {
+                  const iconSrc = SOCIAL_ICONS[social.platform.toLowerCase()] || "/instagram.svg";
+                  return (
+                    <Link
+                      key={index}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={social.ariaLabel || `Suivez-nous sur ${social.platform}`}
+                    >
+                      <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
+                        <Image
+                          src={iconSrc}
+                          alt={`Icône ${social.platform}`}
+                          width={20}
+                          height={20}
+                          className="brightness-0 invert md:w-6 md:h-6"
+                        />
+                      </div>
+                    </Link>
+                  );
+                })
+              ) : (
+                <>
+                  <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
+                    <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
+                      <Image
+                        src="/instagram.svg"
+                        alt="Icône Instagram"
+                        width={20}
+                        height={20}
+                        className="brightness-0 invert md:w-6 md:h-6"
+                      />
+                    </div>
+                  </Link>
+                  <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Suivez WePlanify sur TikTok">
+                    <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
+                      <Image
+                        src="/tiktok.svg"
+                        alt="Icône TikTok"
+                        width={20}
+                        height={20}
+                        className="brightness-0 invert md:w-6 md:h-6"
+                      />
+                    </div>
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -280,10 +346,115 @@ export default function Footer({ variant = 'home' }: FooterProps) {
               </div>
         </div>
       </div>
-      <div className="flex justify-end items-center mx-[60px] mt-6 pb-2">
-        <p className="text-sm text-black/75 font-medium">
-          Réalisé par : La-landing
-        </p>
+
+      {/* Footer bottom section - Desktop */}
+      <div className="hidden lg:flex justify-between items-center mt-8 pt-6 border-t border-gray-200">
+        {/* Social Links - Left */}
+        <div className="flex gap-3">
+          {footerData?.socialLinks && footerData.socialLinks.length > 0 ? (
+            footerData.socialLinks.map((social, index) => {
+              const iconSrc = SOCIAL_ICONS[social.platform.toLowerCase()] || "/instagram.svg";
+              return (
+                <Link
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.ariaLabel || `Suivez-nous sur ${social.platform}`}
+                >
+                  <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
+                    <Image
+                      src={iconSrc}
+                      alt={`Icône ${social.platform}`}
+                      width={24}
+                      height={24}
+                      className="brightness-0 invert"
+                    />
+                  </div>
+                </Link>
+              );
+            })
+          ) : (
+            <>
+              <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
+                <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
+                  <Image
+                    src="/instagram.svg"
+                    alt="Icône Instagram"
+                    width={24}
+                    height={24}
+                    className="brightness-0 invert"
+                  />
+                </div>
+              </Link>
+              <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Suivez WePlanify sur TikTok">
+                <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
+                  <Image
+                    src="/tiktok.svg"
+                    alt="Icône TikTok"
+                    width={24}
+                    height={24}
+                    className="brightness-0 invert"
+                  />
+                </div>
+              </Link>
+            </>
+          )}
+        </div>
+
+        {/* Legal Links - Center */}
+        <div className="flex gap-6 items-center">
+          {footerData?.legalLinks && footerData.legalLinks.length > 0 ? (
+            footerData.legalLinks.map((link, index) => (
+              <Link
+                key={index}
+                href={link.url}
+                className="text-sm text-black/75 hover:text-orange transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))
+          ) : (
+            <>
+              <span className="text-sm text-gray-400 cursor-not-allowed">CGU</span>
+              <span className="text-sm text-gray-400 cursor-not-allowed">Politique de confidentialité</span>
+            </>
+          )}
+        </div>
+
+        {/* Copyright - Right */}
+        <div className="text-sm text-black/75">
+          {footerData?.copyrightText || footerData?.additionalLegalText || '© 2026 All Rights Reserved'}
+        </div>
+      </div>
+
+      {/* Footer bottom section - Mobile */}
+      <div className="lg:hidden mt-8 pt-6 border-t border-gray-200 text-center">
+        <div className="flex flex-col gap-4">
+          {/* Legal Links */}
+          <div className="flex flex-wrap gap-4 justify-center">
+            {footerData?.legalLinks && footerData.legalLinks.length > 0 ? (
+              footerData.legalLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.url}
+                  className="text-sm text-black/75 hover:text-orange transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))
+            ) : (
+              <>
+                <span className="text-sm text-gray-400">CGU</span>
+                <span className="text-sm text-gray-400">Politique de confidentialité</span>
+              </>
+            )}
+          </div>
+          {/* Copyright */}
+          <p className="text-sm text-black/75">
+            {footerData?.copyrightText || footerData?.additionalLegalText || '© 2026 All Rights Reserved'}
+          </p>
+        </div>
       </div>
     </footer>
   );

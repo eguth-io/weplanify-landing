@@ -1,16 +1,22 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery } from "@/sanity/lib/query";
-import { NavType } from "@/sanity/lib/type";
+import { navQuery, footerQuery } from "@/sanity/lib/query";
+import { NavType, Footer as FooterType } from "@/sanity/lib/type";
 import Link from "next/link";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
 export default async function NotFound() {
-  const navData: NavType = await sanityFetch({
-    query: navQuery,
-    tags: ["nav"],
-  });
+  const [navData, footerData]: [NavType, FooterType | null] = await Promise.all([
+    sanityFetch<NavType>({
+      query: navQuery,
+      tags: ["nav"],
+    }),
+    sanityFetch<FooterType>({
+      query: footerQuery,
+      tags: ["footer"],
+    }),
+  ]);
 
   return (
     <>
@@ -38,7 +44,7 @@ export default async function NotFound() {
         </div>
 
       </main>
-      <Footer variant="home" />
+      <Footer variant="home" footerData={footerData} />
     </>
   );
 }

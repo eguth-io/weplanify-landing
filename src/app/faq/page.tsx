@@ -1,13 +1,40 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, faqQuery } from "@/sanity/lib/query";
-import { NavType, FAQType } from "@/sanity/lib/type";
+import { navQuery, faqQuery, footerQuery } from "@/sanity/lib/query";
+import { NavType, FAQType, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 
+// Default FAQ data
+const DEFAULT_FAQ_DATA: FAQType = {
+  title: "Questions fréquentes",
+  items: [
+    {
+      question: "Qu'est-ce que WePlanify ?",
+      answer: "WePlanify est votre assistant de voyage intelligent qui vous aide à planifier vos voyages de manière simple et efficace."
+    },
+    {
+      question: "Comment fonctionne WePlanify ?",
+      answer: "Il vous suffit de nous indiquer votre destination et vos préférences, et notre IA créera un itinéraire personnalisé adapté à vos besoins."
+    },
+    {
+      question: "Est-ce que WePlanify est gratuit ?",
+      answer: "Nous proposons une version gratuite avec des fonctionnalités de base, ainsi que des plans premium pour des fonctionnalités avancées."
+    },
+    {
+      question: "Dans quels pays WePlanify est-il disponible ?",
+      answer: "WePlanify est disponible dans le monde entier et supporte des destinations dans plus de 150 pays."
+    },
+    {
+      question: "Comment puis-je contacter le support ?",
+      answer: "Vous pouvez nous contacter via notre page de contact ou par email à support@weplanify.com"
+    }
+  ]
+};
+
 export default async function FAQPage() {
-  const [navData, faqData]: [NavType, FAQType] = await Promise.all([
+  const [navData, faqData, footerData]: [NavType, FAQType, FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
       query: navQuery,
       tags: ["nav"],
@@ -16,7 +43,14 @@ export default async function FAQPage() {
       query: faqQuery,
       tags: ["faq"],
     }),
+    sanityFetch<FooterType>({
+      query: footerQuery,
+      tags: ["footer"],
+    }),
   ]);
+
+  // Use default FAQ data if none is available
+  const faq = faqData || DEFAULT_FAQ_DATA;
 
   return (
     <>
@@ -37,9 +71,9 @@ export default async function FAQPage() {
               </div>
 
               {/* FAQ List */}
-              {faqData && faqData.items && faqData.items.length > 0 ? (
+              {faq && faq.items && faq.items.length > 0 ? (
                 <div className="space-y-6 mb-12">
-                  {faqData.items.map((item, index) => (
+                  {faq.items.map((item, index) => (
                     <div key={index} className="group">
                       <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-sm hover:border-orange/20 transition-all duration-300">
                         <div className="flex items-start gap-4">
@@ -90,7 +124,7 @@ export default async function FAQPage() {
           </div>
         </section>
       </main>
-      <Footer variant="contact" />
+      <Footer variant="contact" footerData={footerData} />
     </>
   );
 }

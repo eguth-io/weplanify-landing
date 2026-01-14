@@ -9,6 +9,7 @@ import CTABanner from "@/components/CTABanner";
 import FeatureImageSection from "@/components/FeatureImageSection";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Image from "next/image";
+import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import {
   landingPageQuery,
@@ -49,10 +50,11 @@ export default async function HomePage() {
           ctaButton: navigationData?.ctaButton?.text || "Connexion",
           ctaLink: navigationData?.ctaButton?.url || "#",
         }}
+        navigationData={navigationData}
       />
 
       {/* Hero Section */}
-      <div className="pt-[100px] lg:pt-[120px] px-4 lg:px-8 pb-4 lg:pb-6">
+      <div id="hero" className="pt-[100px] lg:pt-[120px] px-4 lg:px-8 pb-4 lg:pb-6">
         <div className="max-w-[1536px] mx-auto">
           <section className="relative overflow-hidden rounded-[24px] lg:rounded-[40px]">
             {/* Background Image */}
@@ -101,7 +103,7 @@ export default async function HomePage() {
       </div>
 
       {/* Testimonial & Stats Section */}
-      <div className="px-4 lg:px-8 pb-8 lg:pb-12">
+      <div id="avis" className="px-4 lg:px-8 pb-8 lg:pb-12">
         <div className="max-w-[1536px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
             {/* Left Block - Testimonial Carousel */}
@@ -218,12 +220,14 @@ export default async function HomePage() {
                 </p>
                 {worldSection.ctaText && (
                   <div>
-                    <button className="relative flex cursor-pointer items-center justify-center px-6 py-2 text-center text-[#001E13] bg-[#EEF899] rounded-full font-karla font-bold text-sm lg:text-base ring-4 ring-[#EEF899] ring-opacity-15">
-                      <span className="relative z-10 bg-[#EEF899] text-[#001E13] font-bold">
-                        {worldSection.ctaText}
-                      </span>
-                      <div className="absolute left-1/2 top-1/2 size-full -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-full bg-[#EEF899] opacity-75" />
-                    </button>
+                    <Link href={worldSection.ctaUrl || "#"}>
+                      <button className="relative flex cursor-pointer items-center justify-center px-6 py-2 text-center text-[#001E13] bg-[#EEF899] rounded-full font-karla font-bold text-sm lg:text-base ring-4 ring-[#EEF899] ring-opacity-15">
+                        <span className="relative z-10 bg-[#EEF899] text-[#001E13] font-bold">
+                          {worldSection.ctaText}
+                        </span>
+                        <div className="absolute left-1/2 top-1/2 size-full -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-full bg-[#EEF899] opacity-75" />
+                      </button>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -271,12 +275,20 @@ export default async function HomePage() {
       )}
 
       {/* Stacking Cards Section */}
-      {features && <StackingCards data={features} />}
+      {features && (
+        <div id="fonctionnement">
+          <StackingCards data={features} />
+        </div>
+      )}
 
       
 
       {/* Travel Steps */}
-      {travelSteps && <TravelSteps data={travelSteps} />}
+      {travelSteps && (
+        <div id="etapes">
+          <TravelSteps data={travelSteps} />
+        </div>
+      )}
 
       {/* Testimonials */}
       {testimonials && <Testimonial data={testimonials} />}
@@ -288,7 +300,11 @@ export default async function HomePage() {
       {ctaBanner && <CTABanner data={ctaBanner} />}
 
       {/* FAQ Support */}
-      {faq && <FAQSupport data={faq} />}
+      {faq && (
+        <div id="faq">
+          <FAQSupport data={faq} />
+        </div>
+      )}
 
       {/* Ready Banner */}
       {readyBanner && <ReadyBanner data={readyBanner} />}
@@ -345,9 +361,11 @@ export default async function HomePage() {
                     </p>
                   )}
                   {footerData.ctaSection.buttonText && (
-                    <button className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-base hover:bg-[#F6391A]/90 transition-colors w-fit">
-                      {footerData.ctaSection.buttonText}
-                    </button>
+                    <Link href={footerData.ctaSection.buttonUrl || "#"}>
+                      <button className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-base hover:bg-[#F6391A]/90 transition-colors w-fit">
+                        {footerData.ctaSection.buttonText}
+                      </button>
+                    </Link>
                   )}
                 </div>
               )}

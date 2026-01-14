@@ -2,6 +2,7 @@
 
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Image from "next/image";
+import Link from "next/link";
 
 interface CTABannerProps {
   data: {
@@ -63,9 +64,11 @@ export default function CTABanner({ data }: CTABannerProps) {
 
               {/* Right side - CTA Button */}
               <div className="flex-shrink-0">
-                <PulsatingButton className="font-karla font-bold">
-                  {data.buttonText}
-                </PulsatingButton>
+                <Link href={data.buttonUrl || "#"}>
+                  <PulsatingButton className="font-karla font-bold">
+                    {data.buttonText}
+                  </PulsatingButton>
+                </Link>
               </div>
             </div>
           </div>

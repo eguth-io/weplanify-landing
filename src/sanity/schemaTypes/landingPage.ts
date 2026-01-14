@@ -412,6 +412,12 @@ export const landingPage = defineType({
                   description: "Texte du bouton d'appel à l'action (optionnel)",
                 },
                 {
+                  name: "ctaUrl",
+                  title: "URL du bouton CTA",
+                  type: "string",
+                  description: "Lien de redirection du bouton (ex: /contact, https://example.com)",
+                },
+                {
                   name: "ctaTextColor",
                   title: "Couleur du texte du CTA",
                   type: "string",

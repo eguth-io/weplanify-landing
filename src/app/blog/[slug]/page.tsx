@@ -56,7 +56,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </div>
         </main>
-        <Footer variant="home" />
+        <Footer variant="home" footerData={footerData} />
       </>
     );
   }
@@ -131,7 +131,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <CTASection footer={footerData} ctaData={ctaData} />
 
       </main>
-      <Footer variant="home" />
+      <Footer variant="home" footerData={footerData} />
     </>
   );
 }

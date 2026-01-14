@@ -2,14 +2,20 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery } from "@/sanity/lib/query";
-import { NavType } from "@/sanity/lib/type";
+import { navQuery, footerQuery } from "@/sanity/lib/query";
+import { NavType, Footer as FooterType } from "@/sanity/lib/type";
 
 export default async function ContactPage() {
-  const navData: NavType = await sanityFetch({
-    query: navQuery,
-    tags: ["nav"],
-  });
+  const [navData, footerData]: [NavType, FooterType | null] = await Promise.all([
+    sanityFetch<NavType>({
+      query: navQuery,
+      tags: ["nav"],
+    }),
+    sanityFetch<FooterType>({
+      query: footerQuery,
+      tags: ["footer"],
+    }),
+  ]);
 
 
   return (
@@ -41,7 +47,7 @@ export default async function ContactPage() {
       </main>
 
       {/* Footer */}
-      <Footer variant="contact" />
+      <Footer variant="contact" footerData={footerData} />
     </>
   );
 }
