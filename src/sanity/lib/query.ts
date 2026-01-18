@@ -59,6 +59,10 @@ export const navigationQuery = groq`
       isExternal,
       openInNewTab
     },
+    connectionButton {
+      text,
+      url
+    },
     ctaButton {
       text,
       url,

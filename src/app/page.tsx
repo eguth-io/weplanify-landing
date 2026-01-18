@@ -46,9 +46,9 @@ export default async function HomePage() {
         navData={{
           logo: navigationData?.logo || "/logo.webp",
           logoMobile: navigationData?.logo || "/logo.webp",
-          connexionLink: navigationData?.ctaButton?.url || "#",
-          ctaButton: navigationData?.ctaButton?.text || "Connexion",
-          ctaLink: navigationData?.ctaButton?.url || "#",
+          connexionLink: navigationData?.connectionButton?.url || "/connexion",
+          ctaButton: navigationData?.ctaButton?.text || "Commencer",
+          ctaLink: navigationData?.ctaButton?.url || "/contact",
         }}
         navigationData={navigationData}
       />
