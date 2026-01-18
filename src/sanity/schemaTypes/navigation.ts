@@ -158,6 +158,32 @@ export const navigation = defineType({
     // CALL TO ACTION
     // ============================================
     {
+      name: "connectionButton",
+      title: "Connection Button",
+      type: "object",
+      description: "Connection/Login button in header",
+      group: "cta",
+      fields: [
+        {
+          name: "text",
+          title: "Button Text",
+          type: "string",
+          description: "Text displayed for the connection link",
+          initialValue: "Connexion",
+          validation: (Rule) => Rule.required().max(30),
+        },
+        {
+          name: "url",
+          title: "Connection URL",
+          type: "string",
+          description: "Link to login/connection page",
+          initialValue: "/connexion",
+          validation: (Rule) => Rule.required(),
+        },
+      ],
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "ctaButton",
       title: "CTA Button",
       type: "object",

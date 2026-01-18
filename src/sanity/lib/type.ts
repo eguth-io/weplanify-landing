@@ -71,6 +71,10 @@ export interface Navigation {
     isExternal?: boolean;
     openInNewTab?: boolean;
   }>;
+  connectionButton: {
+    text: string;
+    url: string;
+  };
   ctaButton: {
     text: string;
     url: string;

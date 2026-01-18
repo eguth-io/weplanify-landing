@@ -130,11 +130,11 @@ export default function Nav({ navData, navigationData }: NavProps) {
         </div>
 
           <div className="lg:flex items-center gap-6 hidden">
-            <Link href={nav.ctaLink} className="text-sm font-[500]">
-              Connexion
+            <Link href={navigationData?.connectionButton?.url || nav.connexionLink || "/connexion"} className="text-sm font-[500]">
+              {navigationData?.connectionButton?.text || "Connexion"}
             </Link>
-            <Link href={nav.ctaLink}>
-              <PulsatingButton>{nav.ctaButton}</PulsatingButton>
+            <Link href={navigationData?.ctaButton?.url || nav.ctaLink}>
+              <PulsatingButton>{navigationData?.ctaButton?.text || nav.ctaButton}</PulsatingButton>
             </Link>
           </div>
         </nav>
@@ -244,16 +244,16 @@ export default function Nav({ navData, navigationData }: NavProps) {
           {/* CTA Buttons */}
           <div className="mt-auto px-6 py-8 border-t space-y-4">
             <Link
-              href={nav.ctaLink}
+              href={navigationData?.connectionButton?.url || nav.connexionLink || "/connexion"}
               onClick={closeMenu}
               className="block text-center py-3 px-4 text-lg font-medium hover:bg-gray-50 transition-colors rounded-lg"
               rel="nofollow"
             >
-              Connexion
+              {navigationData?.connectionButton?.text || "Connexion"}
             </Link>
-            <Link href={nav.ctaLink} onClick={closeMenu} className="block" rel="nofollow">
+            <Link href={navigationData?.ctaButton?.url || nav.ctaLink} onClick={closeMenu} className="block" rel="nofollow">
               <PulsatingButton className="w-full justify-center">
-                {nav.ctaButton}
+                {navigationData?.ctaButton?.text || nav.ctaButton}
               </PulsatingButton>
             </Link>
           </div>
