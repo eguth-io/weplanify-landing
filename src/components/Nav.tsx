@@ -9,9 +9,9 @@ import { useState } from "react";
 const DEFAULT_NAV_DATA: NavType = {
   logo: "/logo.svg",
   logoMobile: "/logo.svg",
-  ctaButton: "Commencer",
+  ctaButton: "Get started",
   ctaLink: "/contact",
-  connexionLink: "/connexion"
+  connexionLink: "/login"
 };
 
 interface NavProps {
@@ -121,17 +121,17 @@ export default function Nav({ navData, navigationData }: NavProps) {
             ))
           ) : (
             <>
-              <Link href="/#fonctionnement">Fonctionnement</Link>
+              <Link href="/#fonctionnement">Features</Link>
               <Link href="/faq">FAQ</Link>
-              <Link href="/#avis">Avis</Link>
+              <Link href="/#avis">Reviews</Link>
               <Link href="/blog">Blog</Link>
             </>
           )}
         </div>
 
           <div className="lg:flex items-center gap-6 hidden">
-            <Link href={navigationData?.connectionButton?.url || nav.connexionLink || "/connexion"} className="text-sm font-[500]">
-              {navigationData?.connectionButton?.text || "Connexion"}
+            <Link href={navigationData?.connectionButton?.url || nav.connexionLink || "/login"} className="text-sm font-[500]">
+              {navigationData?.connectionButton?.text || "Login"}
             </Link>
             <Link href={navigationData?.ctaButton?.url || nav.ctaLink}>
               <PulsatingButton>{navigationData?.ctaButton?.text || nav.ctaButton}</PulsatingButton>
@@ -214,7 +214,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
                   onClick={closeMenu}
                   className="text-lg font-medium hover:text-blue-600 transition-colors"
                 >
-                  Fonctionnement
+                  Features
                 </Link>
                 <Link
                   href="/faq"
@@ -228,7 +228,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
                   onClick={closeMenu}
                   className="text-lg font-medium hover:text-blue-600 transition-colors"
                 >
-                  Avis
+                  Reviews
                 </Link>
                 <Link
                   href="/blog"
@@ -244,12 +244,12 @@ export default function Nav({ navData, navigationData }: NavProps) {
           {/* CTA Buttons */}
           <div className="mt-auto px-6 py-8 border-t space-y-4">
             <Link
-              href={navigationData?.connectionButton?.url || nav.connexionLink || "/connexion"}
+              href={navigationData?.connectionButton?.url || nav.connexionLink || "/login"}
               onClick={closeMenu}
               className="block text-center py-3 px-4 text-lg font-medium hover:bg-gray-50 transition-colors rounded-lg"
               rel="nofollow"
             >
-              {navigationData?.connectionButton?.text || "Connexion"}
+              {navigationData?.connectionButton?.text || "Login"}
             </Link>
             <Link href={navigationData?.ctaButton?.url || nav.ctaLink} onClick={closeMenu} className="block" rel="nofollow">
               <PulsatingButton className="w-full justify-center">

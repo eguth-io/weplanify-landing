@@ -48,7 +48,7 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
             <button
               onClick={handlePrevious}
               className="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-[#FFFBF4] flex items-center justify-center hover:opacity-80 transition-opacity"
-              aria-label="Témoignage précédent"
+              aria-label="Previous testimonial"
             >
               <svg
                 width="20"
@@ -64,7 +64,7 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
             <button
               onClick={handleNext}
               className="w-8 h-8 lg:w-10 lg:h-10 rounded-full bg-[#FFFBF4] flex items-center justify-center hover:opacity-80 transition-opacity"
-              aria-label="Témoignage suivant"
+              aria-label="Next testimonial"
             >
               <svg
                 width="20"

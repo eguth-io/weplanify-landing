@@ -32,36 +32,36 @@ interface StackingCardsProps {
 const defaultCards: Card[] = [
   {
     imagePosition: "left",
-    title: "Structure de votre voyage",
+    title: "Structure your trip",
     description:
-      "Planifiez votre voyage / événement en toute simplicité. Créez des itinéraires, partagez vos activités et partez l'esprit tranquille.",
+      "Plan your trip or event with ease. Create itineraries, share activities, and travel with peace of mind.",
     image: "/placeholder-card-1.jpg",
     backgroundColor: "#FFFBF5",
-    ctaLabel: "Commencer mon voyage",
+    ctaLabel: "Start my journey",
     ctaTextColor: "#FFFFFF",
     ctaBackgroundColor: "#F6391A",
     stats: [
-      { value: "120+", label: "Destination possible" },
-      { value: "120+", label: "Destination possible" },
+      { value: "120+", label: "Possible destinations" },
+      { value: "120+", label: "Possible destinations" },
     ],
   },
   {
     imagePosition: "right",
-    title: "Collaborez en équipe",
+    title: "Collaborate as a team",
     description:
-      "Invitez vos amis et partagez vos idées. Organisez votre voyage ensemble et créez des souvenirs inoubliables.",
+      "Invite your friends and share your ideas. Plan your trip together and create unforgettable memories.",
     image: "/placeholder-card-2.jpg",
     backgroundColor: "#EEF899",
-    stats: [{ value: "120+", label: "Destination possible" }],
+    stats: [{ value: "120+", label: "Possible destinations" }],
   },
   {
     imagePosition: "left",
-    title: "Restez organisé",
+    title: "Stay organized",
     description:
-      "Gardez tous vos documents et informations au même endroit. Accédez à tout, n'importe où, n'importe quand.",
+      "Keep all your documents and information in one place. Access everything, anywhere, anytime.",
     image: "/placeholder-card-3.jpg",
     backgroundColor: "#61DBD5",
-    stats: [{ value: "120+", label: "Destination possible" }],
+    stats: [{ value: "120+", label: "Possible destinations" }],
   },
 ];
 
@@ -87,7 +87,7 @@ function Card({ card, index }: { card: Card; index: number }) {
         />
       ) : (
         <div className="w-full h-full flex items-center justify-center text-gray-500 font-karla text-center px-4">
-          Format recommandé: 800x600px (ratio 4:3)
+          Recommended format: 800x600px (4:3 ratio)
         </div>
       )}
     </div>
@@ -208,7 +208,7 @@ export default function StackingCards({ data }: StackingCardsProps) {
     <div ref={containerRef} className="bg-[#FFFBF5]">
       <div className="max-w-[1536px] mx-auto px-4 lg:px-8 pt-12 lg:pt-20 pb-6 lg:pb-10">
         <h2 className="text-[#001E13] text-4xl lg:text-5xl xl:text-6xl font-londrina-solid text-center">
-          {data?.stackingCardsTitle || "De l'idée au voyage parfait en quelques clics."}
+          {data?.stackingCardsTitle || "From idea to perfect trip in just a few clicks."}
         </h2>
       </div>
       <div className="relative h-[400vh]">

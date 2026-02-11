@@ -29,10 +29,10 @@ export default async function ContactPage() {
               {/* Title and Description */}
               <div className="text-center mb-6 mt-4 md:mt-0">
                 <h2 className="text-2xl lg:text-3xl font-unbounded font-bold text-black mb-1">
-                  Envoyez-nous un message
+                  Send us a message
                 </h2>
                 <p className="text-gray-600 text-sm">
-                  Notre équipe vous répondra dans les plus brefs délais
+                  Our team will get back to you as soon as possible
                 </p>
               </div>
               

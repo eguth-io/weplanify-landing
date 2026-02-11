@@ -115,25 +115,25 @@ export async function generateMetadataFromSanity(): Promise<Metadata> {
 function getDefaultMetadata(): Metadata {
   return {
     title: {
-      default: "WePlanify - Votre assistant voyage IA",
+      default: "WePlanify - Your AI travel assistant",
       template: "%s | WePlanify",
     },
     description:
-      "Planifiez vos voyages en toute simplicité avec WePlanify, votre assistant personnel alimenté par l'IA.",
-    keywords: ["voyage", "planification", "IA", "assistant voyage", "itinéraire"],
+      "Plan your trips with ease using WePlanify, your AI-powered personal travel assistant.",
+    keywords: ["travel", "planning", "AI", "travel assistant", "itinerary"],
     openGraph: {
       type: "website",
-      locale: "fr_FR",
+      locale: "en_US",
       siteName: "WePlanify",
-      title: "WePlanify - Votre assistant voyage IA",
+      title: "WePlanify - Your AI travel assistant",
       description:
-        "Planifiez vos voyages en toute simplicité avec WePlanify, votre assistant personnel alimenté par l'IA.",
+        "Plan your trips with ease using WePlanify, your AI-powered personal travel assistant.",
     },
     twitter: {
       card: "summary_large_image",
-      title: "WePlanify - Votre assistant voyage IA",
+      title: "WePlanify - Your AI travel assistant",
       description:
-        "Planifiez vos voyages en toute simplicité avec WePlanify, votre assistant personnel alimenté par l'IA.",
+        "Plan your trips with ease using WePlanify, your AI-powered personal travel assistant.",
     },
   };
 }

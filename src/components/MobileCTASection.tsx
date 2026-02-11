@@ -11,7 +11,7 @@ interface MobileCTASectionProps {
 export default function MobileCTASection({ ctaData, organization }: MobileCTASectionProps) {
   return (
     <section className="mt-12 lg:hidden flex flex-col justify-center items-center" aria-labelledby="mobile-cta-title">
-      <h2 id="mobile-cta-title" className="sr-only">Actions mobiles</h2>
+      <h2 id="mobile-cta-title" className="sr-only">Mobile actions</h2>
       <div className="flex gap-6 items-center flex-col lg:flex-row w-full">
         <Link href={ctaData.buttonUrl || '#'} className={"w-full"} rel="nofollow">
           <PulsatingButton className="w-4/5 mx-auto lg:w-full text-nowrap">
@@ -34,7 +34,7 @@ export default function MobileCTASection({ ctaData, organization }: MobileCTASec
             src="/fiveStars.svg"
             width={80}
             height={14}
-            alt="5 étoiles - Évaluation client WePlanify"
+            alt="5 stars - WePlanify customer rating"
             className="hidden lg:block"
           />
           <p className="text-sm">{typeof organization.description === 'string' ? organization.description : (organization.clientText || '')}</p>

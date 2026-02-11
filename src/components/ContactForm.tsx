@@ -47,13 +47,13 @@ export default function ContactForm() {
           email: '',
           content: ''
         });
-        alert("Message envoyé ! Nous vous répondrons dans les plus brefs délais.");
+        alert("Message sent! We will get back to you as soon as possible.");
       } else {
         const errorData = await response.json().catch(() => ({}));
-        alert(errorData.message || 'Une erreur s\'est produite lors de l\'envoi du message.');
+        alert(errorData.message || 'An error occurred while sending the message.');
       }
     } catch {
-      alert('Impossible de joindre le serveur. Veuillez réessayer plus tard.');
+      alert('Unable to reach the server. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
@@ -75,7 +75,7 @@ export default function ContactForm() {
             required
             className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-all bg-gray-50 focus:bg-white"
             style={{ borderRadius: '8px' }}
-            placeholder="votre@email.com"
+            placeholder="your@email.com"
             disabled={isSubmitting}
           />
         </div>
@@ -94,7 +94,7 @@ export default function ContactForm() {
             rows={4}
             className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-all bg-gray-50 focus:bg-white resize-none"
             style={{ borderRadius: '8px' }}
-            placeholder="Décrivez votre question ou votre demande..."
+            placeholder="Describe your question or request..."
             disabled={isSubmitting}
           />
         </div>
@@ -105,7 +105,7 @@ export default function ContactForm() {
             className="w-full lg:w-64"
             disabled={isSubmitting}
           >
-            {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
+            {isSubmitting ? 'Sending...' : 'Send message'}
           </PulsatingButton>
         </div>
       </form>

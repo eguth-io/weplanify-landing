@@ -114,6 +114,14 @@ export const landingPage = defineType({
           description: "Destination du bouton (ex: #features, /signup, https://app.weplanify.com)",
         },
         {
+          name: "taglineWords",
+          title: "Tagline Words",
+          type: "array",
+          of: [{ type: "string" }],
+          description: "Words displayed in the animated tagline (e.g. 'Plan,', 'share,', 'go!')",
+          initialValue: ["Plan,", "share,", "go!"],
+        },
+        {
           name: "backgroundImage",
           title: "Image de fond Hero",
           type: "image",
@@ -904,6 +912,31 @@ export const landingPage = defineType({
           name: "title",
           title: "Titre de la section FAQ",
           type: "string",
+        },
+        {
+          name: "supportTitle",
+          title: "Support Section Title",
+          type: "string",
+          description: "Title for the support panel next to the FAQ (e.g. '24/7 Support')",
+          initialValue: "24/7 Support",
+        },
+        {
+          name: "supportDescription",
+          title: "Support Section Description",
+          type: "text",
+          description: "Description text for the support panel",
+        },
+        {
+          name: "supportButtonText",
+          title: "Support Button Text",
+          type: "string",
+          initialValue: "Contact the team",
+        },
+        {
+          name: "supportButtonUrl",
+          title: "Support Button URL",
+          type: "string",
+          initialValue: "/contact",
         },
         {
           name: "items",

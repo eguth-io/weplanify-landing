@@ -46,12 +46,10 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
             <Image src="/logo.png" alt="Logo WePlanify" width={155} height={66} />
           </Link>
           <p className="text-sm text-black/75 mt-4">
-            Planifiez, partagez, partez :
-            <br />
-            une seule appli pour tout gérer
+            {footerData?.tagline || "Plan, share, go: one app to manage it all"}
           </p>
           <p className="mt-11 font-semibold text-black text-sm">
-            Rejoignez nous
+            Follow us
           </p>
           <div className="flex gap-3 mt-3">
             {footerData?.socialLinks && footerData.socialLinks.length > 0 ? (
@@ -63,12 +61,12 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={social.ariaLabel || `Suivez-nous sur ${social.platform}`}
+                    aria-label={social.ariaLabel || `Follow us on ${social.platform}`}
                   >
                     <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                       <Image
                         src={iconSrc}
-                        alt={`Icône ${social.platform}`}
+                        alt={`${social.platform} icon`}
                         width={24}
                         height={24}
                         className="brightness-0 invert"
@@ -79,22 +77,22 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
               })
             ) : (
               <>
-                <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
+                <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Follow WePlanify on Instagram">
                   <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                     <Image
                       src="/instagram.svg"
-                      alt="Icône Instagram"
+                      alt="Instagram icon"
                       width={24}
                       height={24}
                       className="brightness-0 invert"
                     />
                   </div>
                 </Link>
-                <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Suivez WePlanify sur TikTok">
+                <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Follow WePlanify on TikTok">
                   <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                     <Image
                       src="/tiktok.svg"
-                      alt="Icône TikTok"
+                      alt="TikTok icon"
                       width={24}
                       height={24}
                       className="brightness-0 invert"
@@ -106,38 +104,38 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
           </div>
         </div>
         <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">Fonctionnalités</p>
+          <p className="text-sm text-black font-medium">Features</p>
           <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Planificateur de voyage
+            Trip planner
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
+              Coming soon
             </span>
           </span>
           <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Gestion du budget
+            Budget management
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
+              Coming soon
             </span>
           </span>
           <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Collaboration en équipe
+            Team collaboration
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
+              Coming soon
             </span>
           </span>
         </div>
         <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">À propos</p>
+          <p className="text-sm text-black font-medium">About</p>
           <span className="text-gray-400 text-sm mt-6 cursor-not-allowed relative group">
-            Notre mission
+            Our mission
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
+              Coming soon
             </span>
           </span>
           <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            L&apos;équipe
+            The team
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
+              Coming soon
             </span>
           </span>
           <Link href="/contact" className="text-black/75 text-sm mt-3 hover:text-orange transition-colors">
@@ -147,9 +145,9 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
         <div className="flex flex-col">
           <p className="text-sm text-black font-medium">Support</p>
           <span className="text-gray-400 text-sm mt-6 cursor-not-allowed relative group">
-            Guide d&apos;utilisation
+            User guide
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
+              Coming soon
             </span>
           </span>
           <Link href="/faq" className="text-black/75 text-sm mt-3 hover:text-orange transition-colors">
@@ -159,24 +157,24 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
             Blog
           </Link>
           <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Témoignages
+            Testimonials
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
+              Coming soon
             </span>
           </span>
         </div>
         <div className="flex flex-col">
           <p className="text-sm text-black font-medium">Legal</p>
           <span className="text-gray-400 text-sm mt-6 cursor-not-allowed relative group">
-            CGU
+            Terms of use
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
+              Coming soon
             </span>
           </span>
           <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Politique de confidentialité
+            Privacy policy
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              À venir
+              Coming soon
             </span>
           </span>
         </div>
@@ -194,14 +192,12 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
               />
             </Link>
           <p className="text-sm md:text-base text-black/75 mt-3 md:mt-4">
-            Planifiez, partagez, partez :
-            <br />
-            une seule appli pour tout gérer
+            {footerData?.tagline || "Plan, share, go: one app to manage it all"}
           </p>
 
           <div className="mt-6 md:mt-8">
             <p className="font-semibold text-black text-sm md:text-base mb-3 text-center md:text-left">
-              Rejoignez nous
+              Follow us
             </p>
             <div className="flex gap-3">
               {footerData?.socialLinks && footerData.socialLinks.length > 0 ? (
@@ -213,12 +209,12 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={social.ariaLabel || `Suivez-nous sur ${social.platform}`}
+                      aria-label={social.ariaLabel || `Follow us on ${social.platform}`}
                     >
                       <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                         <Image
                           src={iconSrc}
-                          alt={`Icône ${social.platform}`}
+                          alt={`${social.platform} icon`}
                           width={20}
                           height={20}
                           className="brightness-0 invert md:w-6 md:h-6"
@@ -229,22 +225,22 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
                 })
               ) : (
                 <>
-                  <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
+                  <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Follow WePlanify on Instagram">
                     <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                       <Image
                         src="/instagram.svg"
-                        alt="Icône Instagram"
+                        alt="Instagram icon"
                         width={20}
                         height={20}
                         className="brightness-0 invert md:w-6 md:h-6"
                       />
                     </div>
                   </Link>
-                  <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Suivez WePlanify sur TikTok">
+                  <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Follow WePlanify on TikTok">
                     <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                       <Image
                         src="/tiktok.svg"
-                        alt="Icône TikTok"
+                        alt="TikTok icon"
                         width={20}
                         height={20}
                         className="brightness-0 invert md:w-6 md:h-6"
@@ -260,42 +256,42 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
               <div className="flex flex-col">
                 <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
-                  Fonctionnalités
+                  Features
                 </p>
                 <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  Planificateur
+                  Planner
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
+                    Coming soon
                   </span>
                 </span>
                 <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
                   Budget
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
+                    Coming soon
                   </span>
                 </span>
                 <span className="text-gray-400 text-sm md:text-base cursor-not-allowed relative group">
                   Collaboration
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
+                    Coming soon
                   </span>
                 </span>
               </div>
 
               <div className="flex flex-col">
                 <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
-                  À propos
+                  About
                 </p>
                 <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  Notre mission
+                  Our mission
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
+                    Coming soon
                   </span>
                 </span>
                 <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  Léquipe
+                  The team
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
+                    Coming soon
                   </span>
                 </span>
                 <Link href="/contact" className="text-black/75 text-sm md:text-base hover:text-orange transition-colors">
@@ -310,7 +306,7 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
                 <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
                   Guide
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
+                    Coming soon
                   </span>
                 </span>
                 <Link href="/faq" className="text-black/75 text-sm md:text-base mb-2 md:mb-3 hover:text-orange transition-colors">
@@ -320,9 +316,9 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
                   Blog
                 </Link>
                 <span className="text-gray-400 text-sm md:text-base cursor-not-allowed relative group">
-                  Témoignages
+                  Testimonials
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
+                    Coming soon
                   </span>
                 </span>
               </div>
@@ -332,15 +328,15 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
                   Legal
                 </p>
                 <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  CGU
+                  Terms of use
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
+                    Coming soon
                   </span>
                 </span>
                 <span className="text-gray-400 text-sm md:text-base cursor-not-allowed relative group">
-                  Confidentialité
+                  Privacy policy
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    À venir
+                    Coming soon
                   </span>
                 </span>
               </div>
@@ -360,12 +356,12 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={social.ariaLabel || `Suivez-nous sur ${social.platform}`}
+                  aria-label={social.ariaLabel || `Follow us on ${social.platform}`}
                 >
                   <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                     <Image
                       src={iconSrc}
-                      alt={`Icône ${social.platform}`}
+                      alt={`${social.platform} icon`}
                       width={24}
                       height={24}
                       className="brightness-0 invert"
@@ -376,22 +372,22 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
             })
           ) : (
             <>
-              <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Suivez WePlanify sur Instagram">
+              <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Follow WePlanify on Instagram">
                 <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                   <Image
                     src="/instagram.svg"
-                    alt="Icône Instagram"
+                    alt="Instagram icon"
                     width={24}
                     height={24}
                     className="brightness-0 invert"
                   />
                 </div>
               </Link>
-              <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Suivez WePlanify sur TikTok">
+              <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Follow WePlanify on TikTok">
                 <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                   <Image
                     src="/tiktok.svg"
-                    alt="Icône TikTok"
+                    alt="TikTok icon"
                     width={24}
                     height={24}
                     className="brightness-0 invert"
@@ -416,8 +412,8 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
             ))
           ) : (
             <>
-              <span className="text-sm text-gray-400 cursor-not-allowed">CGU</span>
-              <span className="text-sm text-gray-400 cursor-not-allowed">Politique de confidentialité</span>
+              <span className="text-sm text-gray-400 cursor-not-allowed">Terms of use</span>
+              <span className="text-sm text-gray-400 cursor-not-allowed">Privacy policy</span>
             </>
           )}
         </div>
@@ -445,8 +441,8 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
               ))
             ) : (
               <>
-                <span className="text-sm text-gray-400">CGU</span>
-                <span className="text-sm text-gray-400">Politique de confidentialité</span>
+                <span className="text-sm text-gray-400">Terms of use</span>
+                <span className="text-sm text-gray-400">Privacy policy</span>
               </>
             )}
           </div>

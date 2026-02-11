@@ -144,6 +144,7 @@ export interface LandingPage {
     description: string;
     ctaText: string;
     ctaUrl: string;
+    taglineWords?: string[];
     backgroundImage: string;
     seo?: SectionSEO;
   };
@@ -278,6 +279,10 @@ export interface LandingPage {
   // FAQ
   faq: {
     title: string;
+    supportTitle?: string;
+    supportDescription?: string;
+    supportButtonText?: string;
+    supportButtonUrl?: string;
     items: Array<{
       question: string;
       answer: string;

@@ -26,12 +26,12 @@ export default async function HomePage() {
     client.fetch<Footer>(footerQuery),
   ]);
 
-  // Fallback si les données ne sont pas encore remplies dans Sanity
+  // Fallback if data is not yet filled in Sanity
   if (!landingPageData) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <p className="text-lg">
-          Veuillez remplir les données dans Sanity Studio (/studio)
+          Please fill in the data in Sanity Studio (/studio)
         </p>
       </div>
     );
@@ -47,7 +47,7 @@ export default async function HomePage() {
           logo: navigationData?.logo || "/logo.webp",
           logoMobile: navigationData?.logo || "/logo.webp",
           connexionLink: navigationData?.connectionButton?.url || "/connexion",
-          ctaButton: navigationData?.ctaButton?.text || "Commencer",
+          ctaButton: navigationData?.ctaButton?.text || "Get started",
           ctaLink: navigationData?.ctaButton?.url || "/contact",
         }}
         navigationData={navigationData}

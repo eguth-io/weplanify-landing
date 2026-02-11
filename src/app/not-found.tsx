@@ -28,15 +28,15 @@ export default async function NotFound() {
               404
             </h1>
                         <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 mb-6">
-                          Page non trouvée
+                          Page not found
                         </h2>
                         <p className="text-lg text-gray-600 mb-8">
-                          Oups ! Il semble que vous vous soyez égaré dans les nuages. Cette page n&apos;existe pas.
+                          Oops! It seems you got lost in the clouds. This page doesn&apos;t exist.
                         </p>
             <div className="flex justify-center">
               <Link href="/">
                 <PulsatingButton className="w-full sm:w-auto">
-                  Retour à l&apos;accueil
+                  Back to home
                 </PulsatingButton>
               </Link>
             </div>

@@ -129,6 +129,7 @@ export const landingPageQuery = groq`
       description,
       ctaText,
       ctaUrl,
+      taglineWords,
       "backgroundImage": backgroundImage.asset->url,
       "backgroundImageAlt": backgroundImage.alt,
       seo {
@@ -303,6 +304,10 @@ export const landingPageQuery = groq`
     // FAQ
     faq {
       title,
+      supportTitle,
+      supportDescription,
+      supportButtonText,
+      supportButtonUrl,
       items[] {
         question,
         answer
@@ -381,6 +386,10 @@ export const faqQuery = groq`
   *[_type == "landingPage"][0] {
     faq {
       title,
+      supportTitle,
+      supportDescription,
+      supportButtonText,
+      supportButtonUrl,
       items[] {
         question,
         answer
