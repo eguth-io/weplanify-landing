@@ -3,21 +3,14 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "WePlanify",
-    "description": "WePlanify is the app that simplifies trip planning. Plan, share, and go with an intuitive interface.",
+    "description": "WePlanify is a free collaborative group trip planner. Plan itineraries together, vote with group polls, track shared budgets, and organize every detail of your group travel in one app.",
     "url": "https://weplanify.com",
     "applicationCategory": "TravelApplication",
-    "operatingSystem": "Web, iOS, Android",
+    "operatingSystem": "Web",
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "EUR"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "47",
-      "bestRating": "5",
-      "worstRating": "1"
+      "priceCurrency": "USD"
     },
     "author": {
       "@type": "Organization",
@@ -25,15 +18,16 @@ export default function StructuredData() {
       "url": "https://weplanify.com"
     },
     "featureList": [
-      "Trip planning",
-      "Collaborative organization",
-      "Itinerary sharing",
-      "Group management",
-      "Intuitive interface"
+      "Collaborative group trip planning",
+      "Day-by-day itinerary builder",
+      "Group polls and voting system",
+      "Shared budget tracker",
+      "Activity and restaurant discovery",
+      "Shared packing lists",
+      "Real-time group collaboration"
     ],
     "screenshot": "https://weplanify.com/app-screenshot.png",
-    "softwareVersion": "1.0.0",
-    "releaseNotes": "Initial release with all core features"
+    "softwareVersion": "1.0.0"
   };
 
   return (

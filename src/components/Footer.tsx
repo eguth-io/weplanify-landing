@@ -58,7 +58,7 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
                 return (
                   <Link
                     key={index}
-                    href={social.url}
+                    href={social.url || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.ariaLabel || `Follow us on ${social.platform}`}
@@ -206,7 +206,7 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
                   return (
                     <Link
                       key={index}
-                      href={social.url}
+                      href={social.url || "#"}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={social.ariaLabel || `Follow us on ${social.platform}`}
@@ -353,7 +353,7 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
               return (
                 <Link
                   key={index}
-                  href={social.url}
+                  href={social.url || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.ariaLabel || `Follow us on ${social.platform}`}
@@ -404,7 +404,7 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
             footerData.legalLinks.map((link, index) => (
               <Link
                 key={index}
-                href={link.url}
+                href={link.url || "#"}
                 className="text-sm text-black/75 hover:text-orange transition-colors"
               >
                 {link.label}
@@ -433,7 +433,7 @@ export default function Footer({ variant = 'home', footerData }: FooterProps) {
               footerData.legalLinks.map((link, index) => (
                 <Link
                   key={index}
-                  href={link.url}
+                  href={link.url || "#"}
                   className="text-sm text-black/75 hover:text-orange transition-colors"
                 >
                   {link.label}

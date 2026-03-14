@@ -20,6 +20,13 @@ export const navigation = defineType({
     },
   ],
   fields: [
+    // Language field for internationalization
+    {
+      name: "language",
+      type: "string",
+      readOnly: true,
+      hidden: true,
+    },
     // ============================================
     // HEADER
     // ============================================

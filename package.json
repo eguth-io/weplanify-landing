@@ -10,9 +10,11 @@
     "optimize:images": "node scripts/optimize-images.js"
   },
   "dependencies": {
+    "@next/swc-darwin-arm64": "^16.1.6",
     "@portabletext/react": "^3.2.4",
     "@radix-ui/react-accordion": "^1.2.11",
     "@sanity/client": "^7.6.0",
+    "@sanity/document-internationalization": "^6.0.1",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.92.0",
     "@vercel/analytics": "^1.5.0",
@@ -21,11 +23,15 @@
     "framer-motion": "^12.26.2",
     "lucide-react": "^0.515.0",
     "next": "15.1.9",
+    "next-intl": "^4.8.3",
     "next-sanity": "9.12.0",
     "next-themes": "^0.4.6",
     "react": "^18",
     "react-dom": "^18",
+    "react-is": "^19.2.4",
     "sanity": "3.99.0",
+    "sanity-plugin-internationalized-array": "^5.0.1",
+    "sanity-plugin-utils": "^1.8.0",
     "sonner": "^2.0.7",
     "styled-components": "^6.1.19",
     "swiper": "^11.2.10",
@@ -44,5 +50,5 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   },
-  "packageManager": "yarn@4.8.0+sha512.85ec3149b1ec48f47c2690e13b29197a8a84b09c2c936cc596dddfb49c517e3bc3b1881ec52b5d35ca4b7c437c3f0daae3a80e39438c93bbcc5fcece2df5f15a"
+  "packageManager": "yarn@4.13.0"
 }

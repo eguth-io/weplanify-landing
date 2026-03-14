@@ -1,16 +1,20 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { AiGlobeJourney, SwipeExplorer, LiveCollaboration, LiveVoting } from "@/components/animations";
+
+type AnimationType = "ai-globe" | "swipe-explorer" | "live-collaboration" | "live-voting";
 
 interface Card {
   imagePosition: "left" | "right";
   title: string;
   description: string;
-  image: string;
+  image?: string;
   imageAlt?: string;
+  animation?: AnimationType;
   backgroundColor: string;
   ctaLabel?: string;
   ctaUrl?: string;
@@ -32,41 +36,55 @@ interface StackingCardsProps {
 const defaultCards: Card[] = [
   {
     imagePosition: "left",
-    title: "Structure your trip",
+    title: "A clear itinerary, day by day",
     description:
-      "Plan your trip or event with ease. Create itineraries, share activities, and travel with peace of mind.",
-    image: "/placeholder-card-1.jpg",
+      "Let AI create your perfect itinerary in seconds. Just describe your dream trip and get a detailed day-by-day plan with activities, restaurants, and hidden gems.",
+    animation: "ai-globe",
     backgroundColor: "#FFFBF5",
-    ctaLabel: "Start my journey",
+    ctaLabel: "Plan my trip with AI",
     ctaTextColor: "#FFFFFF",
     ctaBackgroundColor: "#F6391A",
     stats: [
-      { value: "120+", label: "Possible destinations" },
-      { value: "120+", label: "Possible destinations" },
+      { value: "30s", label: "Average planning time" },
+      { value: "12k+", label: "Trips planned" },
     ],
   },
   {
     imagePosition: "right",
-    title: "Collaborate as a team",
+    title: "Decide together with polls",
     description:
-      "Invite your friends and share your ideas. Plan your trip together and create unforgettable memories.",
-    image: "/placeholder-card-2.jpg",
+      "No more endless WhatsApp debates. Create instant polls for destinations, dates, restaurants - and let the group decide in minutes.",
+    animation: "live-voting",
     backgroundColor: "#EEF899",
-    stats: [{ value: "120+", label: "Possible destinations" }],
+    ctaLabel: "Create a poll",
+    ctaTextColor: "#FFFFFF",
+    ctaBackgroundColor: "#8B5CF6",
+    stats: [
+      { value: "50k+", label: "Decisions made" },
+      { value: "2min", label: "Average decision time" },
+    ],
   },
   {
     imagePosition: "left",
-    title: "Stay organized",
+    title: "Real-time collaboration",
     description:
-      "Keep all your documents and information in one place. Access everything, anywhere, anytime.",
-    image: "/placeholder-card-3.jpg",
+      "Everyone edits the same trip simultaneously. See changes live, leave comments, and stay perfectly synced - no more version chaos.",
+    animation: "live-collaboration",
     backgroundColor: "#61DBD5",
-    stats: [{ value: "120+", label: "Possible destinations" }],
+    ctaLabel: "Invite my friends",
+    ctaTextColor: "#FFFFFF",
+    ctaBackgroundColor: "#F6391A",
+    stats: [
+      { value: "45s", label: "To invite your group" },
+      { value: "100%", label: "Real-time sync" },
+    ],
   },
 ];
 
 function Card({ card, index }: { card: Card; index: number }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const animationRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(animationRef, { once: false, margin: "-100px" });
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "start start"]
@@ -74,10 +92,28 @@ function Card({ card, index }: { card: Card; index: number }) {
 
   const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
 
-  // Image component
+  // Animation component based on type
+  const AnimationComponent = () => {
+    switch (card.animation) {
+      case "ai-globe":
+        return <AiGlobeJourney autoPlay={isInView} />;
+      case "swipe-explorer":
+        return <SwipeExplorer autoPlay={isInView} />;
+      case "live-collaboration":
+        return <LiveCollaboration autoPlay={isInView} />;
+      case "live-voting":
+        return <LiveVoting autoPlay={isInView} />;
+      default:
+        return null;
+    }
+  };
+
+  // Image/Animation section
   const ImageSection = () => (
-    <div className="relative min-h-[300px] lg:min-h-full bg-gray-300">
-      {card.image ? (
+    <div ref={animationRef} className="relative h-full min-h-[300px] lg:min-h-[600px] overflow-hidden">
+      {card.animation ? (
+        <AnimationComponent />
+      ) : card.image ? (
         <Image
           src={card.image}
           alt={card.imageAlt || card.title}
@@ -97,9 +133,9 @@ function Card({ card, index }: { card: Card; index: number }) {
   const ContentWithCTA = () => (
     <div className="p-8 lg:p-12 xl:p-16 flex flex-col justify-between">
       <div>
-        <h2 className="text-[#001E13] text-3xl lg:text-4xl xl:text-5xl font-londrina-solid leading-tight mb-6 lg:mb-8">
+        <h3 className="text-[#001E13] text-3xl lg:text-4xl xl:text-5xl font-londrina-solid leading-tight mb-6 lg:mb-8">
           {card.title}
-        </h2>
+        </h3>
         <p className="text-[#001E13] text-sm lg:text-base font-karla leading-relaxed mb-8 lg:mb-10">
           {card.description}
         </p>
@@ -142,9 +178,9 @@ function Card({ card, index }: { card: Card; index: number }) {
   // Content component - without CTA button
   const ContentWithoutCTA = () => (
     <div className="p-8 lg:p-12 xl:p-16 flex flex-col justify-center">
-      <h2 className="text-[#001E13] text-3xl lg:text-4xl xl:text-5xl font-londrina-solid leading-tight mb-6 lg:mb-8">
+      <h3 className="text-[#001E13] text-3xl lg:text-4xl xl:text-5xl font-londrina-solid leading-tight mb-6 lg:mb-8">
         {card.title}
-      </h2>
+      </h3>
       <p className="text-[#001E13] text-sm lg:text-base font-karla leading-relaxed mb-8 lg:mb-10">
         {card.description}
       </p>
@@ -181,7 +217,7 @@ function Card({ card, index }: { card: Card; index: number }) {
         }}
         className="w-full max-w-[1536px] rounded-[24px] lg:rounded-[40px] shadow-2xl overflow-hidden origin-top"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] lg:min-h-[600px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px] lg:min-h-[600px] [&>*]:h-full">
           {isImageLeft ? (
             <>
               <ImageSection />
@@ -202,7 +238,19 @@ function Card({ card, index }: { card: Card; index: number }) {
 export default function StackingCards({ data }: StackingCardsProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const cards = data?.stackingCards || defaultCards;
+  // Merge Sanity data with default animations - use animation from defaults if Sanity card doesn't have one
+  const cards = (data?.stackingCards || defaultCards).map((card, index) => {
+    // If card already has animation, use it
+    if (card.animation) return card;
+
+    // Otherwise, try to use animation from defaultCards at same index
+    const defaultAnimation = defaultCards[index]?.animation;
+    if (defaultAnimation) {
+      return { ...card, animation: defaultAnimation };
+    }
+
+    return card;
+  });
 
   return (
     <div ref={containerRef} className="bg-[#FFFBF5]">

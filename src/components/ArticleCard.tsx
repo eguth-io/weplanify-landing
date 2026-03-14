@@ -8,8 +8,8 @@ interface ArticleCardProps {
 
 export default function ArticleCard({ article }: ArticleCardProps) {
   return (
-    <Link 
-      href={`/blog/${article.slug.current}`} 
+    <Link
+      href={`/blog/${article.slug?.current || '#'}`}
       className="group block"
     >
       <div className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-sm transition-shadow duration-300">
@@ -53,11 +53,11 @@ export default function ArticleCard({ article }: ArticleCardProps) {
               </span>
             </div>
             <span className="text-sm text-gray-500">
-              {new Date(article.publishedAt).toLocaleDateString("fr-FR", {
+              {new Date(article.publishedAt).toLocaleDateString("en-US", {
                 day: "numeric",
                 month: "long",
                 year: "numeric"
-              }).replace(/^\w/, c => c.toUpperCase()).replace(/(\d+) (\w+)/, '$1 $2,')}
+              })}
             </span>
           </div>
         </div>

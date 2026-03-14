@@ -1,8 +1,8 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, faqQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, FAQType, Footer as FooterType } from "@/sanity/lib/type";
+import { navQuery, navigationQuery, faqQuery, footerQuery } from "@/sanity/lib/query";
+import { NavType, Navigation, FAQType, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 
@@ -34,10 +34,14 @@ const DEFAULT_FAQ_DATA: FAQType = {
 };
 
 export default async function FAQPage() {
-  const [navData, faqData, footerData]: [NavType, FAQType, FooterType | null] = await Promise.all([
+  const [navData, navigationData, faqData, footerData]: [NavType, Navigation | null, FAQType, FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
       query: navQuery,
       tags: ["nav"],
+    }),
+    sanityFetch<Navigation>({
+      query: navigationQuery,
+      tags: ["navigation"],
     }),
     sanityFetch<FAQType>({
       query: faqQuery,
@@ -54,7 +58,7 @@ export default async function FAQPage() {
 
   return (
     <>
-      <Nav navData={navData} />
+      <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen">
         {/* FAQ Section */}
         <section className="relative pt-[40px] lg:pt-[80px] pb-16 lg:pb-20">

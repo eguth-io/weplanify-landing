@@ -75,6 +75,13 @@ export const landingPage = defineType({
     { name: "faq", title: "FAQ" },
   ],
   fields: [
+    // Language field for internationalization
+    {
+      name: "language",
+      type: "string",
+      readOnly: true,
+      hidden: true,
+    },
     // ============================================
     // HERO SECTION
     // ============================================
@@ -395,7 +402,7 @@ export const landingPage = defineType({
                   name: "image",
                   title: "Image",
                   type: "image",
-                  description: "Format recommandé: 800x600px (ratio 4:3)",
+                  description: "Format recommandé: 800x600px (ratio 4:3). Laissez vide si vous utilisez une animation.",
                   options: {
                     hotspot: true,
                   },
@@ -406,6 +413,21 @@ export const landingPage = defineType({
                       type: "string",
                     },
                   ],
+                },
+                {
+                  name: "animation",
+                  title: "Animation (au lieu de l'image)",
+                  type: "string",
+                  description: "Choisir une animation au lieu d'une image statique",
+                  options: {
+                    list: [
+                      { title: "Aucune (utiliser l'image)", value: "" },
+                      { title: "AI Globe Journey", value: "ai-globe" },
+                      { title: "Swipe Explorer", value: "swipe-explorer" },
+                      { title: "Live Collaboration", value: "live-collaboration" },
+                      { title: "Live Voting", value: "live-voting" },
+                    ],
+                  },
                 },
                 {
                   name: "backgroundColor",

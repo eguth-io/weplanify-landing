@@ -81,7 +81,7 @@ export const seoSettings = defineType({
       type: "string",
       description: "Primary language code (e.g., 'fr', 'en', 'es')",
       group: "general",
-      initialValue: "fr",
+      initialValue: "en",
       validation: (Rule) => Rule.required(),
     },
 

@@ -13,7 +13,7 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
     return {
       name: seoSettings?.siteName || "WePlanify",
       short_name: seoSettings?.siteName || "WePlanify",
-      description: seoSettings?.defaultDescription || "Votre assistant voyage IA",
+      description: seoSettings?.defaultDescription || "Plan group trips together. Collaborative itinerary, shared budget & group polls.",
       start_url: "/",
       display: "standalone",
       background_color: seoSettings?.manifest?.backgroundColor || "#FFFBF5",
@@ -47,7 +47,7 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
     return {
       name: "WePlanify",
       short_name: "WePlanify",
-      description: "Votre assistant voyage IA",
+      description: "Plan group trips together. Collaborative itinerary, shared budget & group polls.",
       start_url: "/",
       display: "standalone",
       background_color: "#FFFBF5",
