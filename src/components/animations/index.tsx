@@ -192,11 +192,7 @@ export function AiGlobeJourney({ autoPlay = true }: { autoPlay?: boolean }) {
 
       {/* Globe */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <motion.div
-          animate={{ rotateY: [0, 360] }}
-          transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-          className="relative"
-        >
+        <div className="relative">
           <div
             className="relative w-44 h-44 rounded-full"
             style={{
@@ -236,7 +232,7 @@ export function AiGlobeJourney({ autoPlay = true }: { autoPlay?: boolean }) {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Active destination label */}
