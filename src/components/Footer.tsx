@@ -3,454 +3,123 @@ import Link from "next/link";
 import { Footer as FooterType } from "@/sanity/lib/type";
 
 interface FooterProps {
-  variant?: 'home' | 'contact' | 'blog';
+  variant?: 'home' | 'contact' | 'blog' | 'features';
   footerData?: FooterType | null;
 }
 
-// Social media icon mapping
-const SOCIAL_ICONS: Record<string, string> = {
-  instagram: "/instagram.svg",
-  tiktok: "/tiktok.svg",
-  facebook: "/facebook.svg",
-  twitter: "/twitter.svg",
-  linkedin: "/linkedin.svg",
-  youtube: "/youtube.svg"
-};
-
 export default function Footer({ variant = 'home', footerData }: FooterProps) {
-  const config = {
-    home: {
-      marginTop: 'mt-[100px] md:mt-[180px] lg:mt-[100px]',
-      borderTop: 'border-t',
-      borderBottom: ''
-    },
-    contact: {
-      marginTop: '',
-      borderTop: '',
-      borderBottom: ''
-    },
-    blog: {
-      marginTop: 'mt-16',
-      borderTop: 'border-t',
-      borderBottom: ''
-    }
-  };
-
-  const currentConfig = config[variant];
-
   return (
-    <footer className={`${currentConfig.marginTop} mx-4 md:mx-8 lg:mx-[60px] ${currentConfig.borderTop} ${currentConfig.borderBottom} border-[#E5E5E5] py-6 md:py-8 lg:py-6`}>
-      <div className="hidden lg:flex gap-[100px] justify-between">
-        <div className="flex flex-col">
-          <Link href="/" className="cursor-pointer hover:opacity-80 transition-opacity">
-            <Image src="/logo.png" alt="Logo WePlanify" width={155} height={66} />
-          </Link>
-          <p className="text-sm text-black/75 mt-4">
-            {footerData?.tagline || "Plan, share, go: one app to manage it all"}
-          </p>
-          <p className="mt-11 font-semibold text-black text-sm">
-            Follow us
-          </p>
-          <div className="flex gap-3 mt-3">
-            {footerData?.socialLinks && footerData.socialLinks.length > 0 ? (
-              footerData.socialLinks.map((social, index) => {
-                const iconSrc = SOCIAL_ICONS[social.platform.toLowerCase()] || "/instagram.svg";
-                return (
-                  <Link
-                    key={index}
-                    href={social.url || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.ariaLabel || `Follow us on ${social.platform}`}
-                  >
-                    <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                      <Image
-                        src={iconSrc}
-                        alt={`${social.platform} icon`}
-                        width={24}
-                        height={24}
-                        className="brightness-0 invert"
-                      />
-                    </div>
-                  </Link>
-                );
-              })
-            ) : (
-              <>
-                <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Follow WePlanify on Instagram">
-                  <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                    <Image
-                      src="/instagram.svg"
-                      alt="Instagram icon"
-                      width={24}
-                      height={24}
-                      className="brightness-0 invert"
-                    />
-                  </div>
-                </Link>
-                <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Follow WePlanify on TikTok">
-                  <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                    <Image
-                      src="/tiktok.svg"
-                      alt="TikTok icon"
-                      width={24}
-                      height={24}
-                      className="brightness-0 invert"
-                    />
-                  </div>
-                </Link>
-              </>
-            )}
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">Features</p>
-          <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Trip planner
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              Coming soon
-            </span>
-          </span>
-          <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Budget management
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              Coming soon
-            </span>
-          </span>
-          <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Team collaboration
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              Coming soon
-            </span>
-          </span>
-        </div>
-        <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">About</p>
-          <span className="text-gray-400 text-sm mt-6 cursor-not-allowed relative group">
-            Our mission
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              Coming soon
-            </span>
-          </span>
-          <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            The team
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              Coming soon
-            </span>
-          </span>
-          <Link href="/contact" className="text-black/75 text-sm mt-3 hover:text-orange transition-colors">
-            Contact
-          </Link>
-        </div>
-        <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">Support</p>
-          <span className="text-gray-400 text-sm mt-6 cursor-not-allowed relative group">
-            User guide
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              Coming soon
-            </span>
-          </span>
-          <Link href="/faq" className="text-black/75 text-sm mt-3 hover:text-orange transition-colors">
-            FAQ
-          </Link>
-          <Link href="/blog" className="text-black/75 text-sm mt-3 hover:text-orange transition-colors">
-            Blog
-          </Link>
-          <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Testimonials
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              Coming soon
-            </span>
-          </span>
-        </div>
-        <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">Legal</p>
-          <span className="text-gray-400 text-sm mt-6 cursor-not-allowed relative group">
-            Terms of use
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              Coming soon
-            </span>
-          </span>
-          <span className="text-gray-400 text-sm mt-3 cursor-not-allowed relative group">
-            Privacy policy
-            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-              Coming soon
-            </span>
-          </span>
-        </div>
-      </div>
-
-      <div className="lg:hidden">
-          <div className="flex flex-col items-start mb-8 md:mb-10">
-            <Link href="/" className="cursor-pointer hover:opacity-80 transition-opacity">
+    <footer className="px-4 lg:px-8 py-12 lg:py-16 bg-white">
+      <div className="max-w-[1536px] mx-auto">
+        {/* Footer Logo */}
+        {footerData?.logo && (
+          <div className="mb-8 lg:mb-10">
+            <Link href="/">
               <Image
-                src="/logo.png"
-                alt="Logo WePlanify"
-                width={120}
-                height={51}
-                className="md:w-[140px] md:h-[60px]"
+                src={footerData.logo}
+                alt={footerData.tagline || "WePlanify"}
+                width={155}
+                height={66}
               />
             </Link>
-          <p className="text-sm md:text-base text-black/75 mt-3 md:mt-4">
-            {footerData?.tagline || "Plan, share, go: one app to manage it all"}
-          </p>
+          </div>
+        )}
 
-          <div className="mt-6 md:mt-8">
-            <p className="font-semibold text-black text-sm md:text-base mb-3 text-center md:text-left">
-              Follow us
-            </p>
-            <div className="flex gap-3">
-              {footerData?.socialLinks && footerData.socialLinks.length > 0 ? (
-                footerData.socialLinks.map((social, index) => {
-                  const iconSrc = SOCIAL_ICONS[social.platform.toLowerCase()] || "/instagram.svg";
-                  return (
-                    <Link
-                      key={index}
-                      href={social.url || "#"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={social.ariaLabel || `Follow us on ${social.platform}`}
-                    >
-                      <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                        <Image
-                          src={iconSrc}
-                          alt={`${social.platform} icon`}
-                          width={20}
-                          height={20}
-                          className="brightness-0 invert md:w-6 md:h-6"
-                        />
-                      </div>
-                    </Link>
-                  );
-                })
-              ) : (
-                <>
-                  <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Follow WePlanify on Instagram">
-                    <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                      <Image
-                        src="/instagram.svg"
-                        alt="Instagram icon"
-                        width={20}
-                        height={20}
-                        className="brightness-0 invert md:w-6 md:h-6"
-                      />
-                    </div>
-                  </Link>
-                  <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Follow WePlanify on TikTok">
-                    <div className="w-[28px] h-[28px] md:w-[30px] md:h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                      <Image
-                        src="/tiktok.svg"
-                        alt="TikTok icon"
-                        width={20}
-                        height={20}
-                        className="brightness-0 invert md:w-6 md:h-6"
-                      />
-                    </div>
-                  </Link>
-                </>
+        {/* Footer Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 lg:mb-20">
+          {/* Footer Columns */}
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-6">
+            {footerData?.footerColumns?.map((column, index) => (
+              <div key={index} className="flex flex-col">
+                <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
+                  {column.title}
+                </h3>
+                {column.links?.map((link, linkIndex) => (
+                  <a
+                    key={linkIndex}
+                    href={link.url || "#"}
+                    className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+                    target={link.isExternal ? "_blank" : undefined}
+                    rel={link.isExternal ? "noopener noreferrer" : undefined}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          {/* Footer CTA Section */}
+          {footerData?.ctaSection?.showCta && (
+            <div className="flex flex-col lg:border-l border-[#001E13]/10 pl-0 lg:pl-12">
+              <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
+                {footerData.ctaSection.title}
+              </h3>
+              {footerData.ctaSection.description && (
+                <p className="text-[#001E13] text-base font-karla mb-6 leading-relaxed">
+                  {footerData.ctaSection.description}
+                </p>
+              )}
+              {footerData.ctaSection.buttonText && (
+                <Link href={footerData.ctaSection.buttonUrl || "#"}>
+                  <button className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-base hover:bg-[#F6391A]/90 transition-colors w-fit">
+                    {footerData.ctaSection.buttonText}
+                  </button>
+                </Link>
               )}
             </div>
-          </div>
+          )}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              <div className="flex flex-col">
-                <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
-                  Features
-                </p>
-                <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  Planner
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    Coming soon
-                  </span>
-                </span>
-                <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  Budget
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    Coming soon
-                  </span>
-                </span>
-                <span className="text-gray-400 text-sm md:text-base cursor-not-allowed relative group">
-                  Collaboration
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    Coming soon
-                  </span>
-                </span>
-              </div>
-
-              <div className="flex flex-col">
-                <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
-                  About
-                </p>
-                <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  Our mission
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    Coming soon
-                  </span>
-                </span>
-                <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  The team
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    Coming soon
-                  </span>
-                </span>
-                <Link href="/contact" className="text-black/75 text-sm md:text-base hover:text-orange transition-colors">
-                  Contact
-                </Link>
-              </div>
-
-              <div className="flex flex-col">
-                <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
-                  Support
-                </p>
-                <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  Guide
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    Coming soon
-                  </span>
-                </span>
-                <Link href="/faq" className="text-black/75 text-sm md:text-base mb-2 md:mb-3 hover:text-orange transition-colors">
-                  FAQ
-                </Link>
-                <Link href="/blog" className="text-black/75 text-sm md:text-base mb-2 md:mb-3 hover:text-orange transition-colors">
-                  Blog
-                </Link>
-                <span className="text-gray-400 text-sm md:text-base cursor-not-allowed relative group">
-                  Testimonials
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    Coming soon
-                  </span>
-                </span>
-              </div>
-
-              <div className="flex flex-col">
-                <p className="text-sm md:text-base text-black font-medium mb-3 md:mb-4">
-                  Legal
-                </p>
-                <span className="text-gray-400 text-sm md:text-base mb-2 md:mb-3 cursor-not-allowed relative group">
-                  Terms of use
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    Coming soon
-                  </span>
-                </span>
-                <span className="text-gray-400 text-sm md:text-base cursor-not-allowed relative group">
-                  Privacy policy
-                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10">
-                    Coming soon
-                  </span>
-                </span>
-              </div>
-        </div>
-      </div>
-
-      {/* Footer bottom section - Desktop */}
-      <div className="hidden lg:flex justify-between items-center mt-8 pt-6 border-t border-gray-200">
-        {/* Social Links - Left */}
-        <div className="flex gap-3">
-          {footerData?.socialLinks && footerData.socialLinks.length > 0 ? (
-            footerData.socialLinks.map((social, index) => {
-              const iconSrc = SOCIAL_ICONS[social.platform.toLowerCase()] || "/instagram.svg";
-              return (
-                <Link
+        {/* Footer Bottom */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 lg:pt-10 border-t border-[#001E13]/10">
+          {/* Social Links */}
+          {footerData?.socialLinks && footerData.socialLinks.length > 0 && (
+            <div className="flex gap-4 items-center order-2 md:order-1">
+              {footerData.socialLinks.map((social, index) => (
+                <a
                   key={index}
                   href={social.url || "#"}
+                  className="hover:opacity-70 transition-opacity"
+                  aria-label={social.ariaLabel}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={social.ariaLabel || `Follow us on ${social.platform}`}
                 >
-                  <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                    <Image
-                      src={iconSrc}
-                      alt={`${social.platform} icon`}
-                      width={24}
-                      height={24}
-                      className="brightness-0 invert"
-                    />
-                  </div>
-                </Link>
-              );
-            })
-          ) : (
-            <>
-              <Link href={'https://www.instagram.com/weplanify/'} target="_blank" aria-label="Follow WePlanify on Instagram">
-                <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
                   <Image
                     src="/instagram.svg"
-                    alt="Instagram icon"
+                    alt={social.platform}
                     width={24}
                     height={24}
-                    className="brightness-0 invert"
                   />
-                </div>
-              </Link>
-              <Link href={'https://www.tiktok.com/@weplanify'} target="_blank" aria-label="Follow WePlanify on TikTok">
-                <div className="w-[30px] h-[30px] bg-orange rounded-[6px] flex items-center justify-center cursor-pointer hover:bg-[#e53415] transition-colors">
-                  <Image
-                    src="/tiktok.svg"
-                    alt="TikTok icon"
-                    width={24}
-                    height={24}
-                    className="brightness-0 invert"
-                  />
-                </div>
-              </Link>
-            </>
+                </a>
+              ))}
+            </div>
           )}
-        </div>
 
-        {/* Legal Links - Center */}
-        <div className="flex gap-6 items-center">
-          {footerData?.legalLinks && footerData.legalLinks.length > 0 ? (
-            footerData.legalLinks.map((link, index) => (
-              <Link
-                key={index}
-                href={link.url || "#"}
-                className="text-sm text-black/75 hover:text-orange transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))
-          ) : (
-            <>
-              <span className="text-sm text-gray-400 cursor-not-allowed">Terms of use</span>
-              <span className="text-sm text-gray-400 cursor-not-allowed">Privacy policy</span>
-            </>
-          )}
-        </div>
-
-        {/* Copyright - Right */}
-        <div className="text-sm text-black/75">
-          {footerData?.copyrightText || footerData?.additionalLegalText || '© 2026 All Rights Reserved'}
-        </div>
-      </div>
-
-      {/* Footer bottom section - Mobile */}
-      <div className="lg:hidden mt-8 pt-6 border-t border-gray-200 text-center">
-        <div className="flex flex-col gap-4">
           {/* Legal Links */}
-          <div className="flex flex-wrap gap-4 justify-center">
-            {footerData?.legalLinks && footerData.legalLinks.length > 0 ? (
-              footerData.legalLinks.map((link, index) => (
-                <Link
+          {footerData?.legalLinks && footerData.legalLinks.length > 0 && (
+            <div className="flex flex-wrap justify-center md:justify-end items-center gap-4 md:gap-8 order-1 md:order-2">
+              {footerData.legalLinks.map((link, index) => (
+                <a
                   key={index}
                   href={link.url || "#"}
-                  className="text-sm text-black/75 hover:text-orange transition-colors"
+                  className="text-[#001E13] text-sm font-karla hover:underline"
                 >
                   {link.label}
-                </Link>
-              ))
-            ) : (
-              <>
-                <span className="text-sm text-gray-400">Terms of use</span>
-                <span className="text-sm text-gray-400">Privacy policy</span>
-              </>
-            )}
-          </div>
-          {/* Copyright */}
-          <p className="text-sm text-black/75">
-            {footerData?.copyrightText || footerData?.additionalLegalText || '© 2026 All Rights Reserved'}
-          </p>
+                </a>
+              ))}
+            </div>
+          )}
         </div>
+
+        {/* Copyright */}
+        {footerData?.copyrightText && (
+          <div className="text-center mt-8">
+            <p className="text-[#001E13]/60 text-sm font-karla">
+              {footerData.copyrightText}
+            </p>
+          </div>
+        )}
       </div>
     </footer>
   );
