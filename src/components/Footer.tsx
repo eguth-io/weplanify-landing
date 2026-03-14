@@ -3,11 +3,10 @@ import Link from "next/link";
 import { Footer as FooterType } from "@/sanity/lib/type";
 
 interface FooterProps {
-  variant?: 'home' | 'contact' | 'blog' | 'features';
   footerData?: FooterType | null;
 }
 
-export default function Footer({ variant = 'home', footerData }: FooterProps) {
+export default function Footer({ footerData }: FooterProps) {
   return (
     <footer className="px-4 lg:px-8 py-12 lg:py-16 bg-white">
       <div className="max-w-[1536px] mx-auto">

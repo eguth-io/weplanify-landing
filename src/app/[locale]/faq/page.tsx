@@ -140,7 +140,7 @@ export default async function FAQPage({ params }: Props) {
           </div>
         </section>
       </main>
-      <Footer variant="contact" footerData={footerData} />
+      <Footer footerData={footerData} />
     </>
   );
 }

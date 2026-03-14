@@ -62,7 +62,7 @@ export default async function ContactPage({ params }: Props) {
       </main>
 
       {/* Footer */}
-      <Footer variant="contact" footerData={footerData} />
+      <Footer footerData={footerData} />
     </>
   );
 }

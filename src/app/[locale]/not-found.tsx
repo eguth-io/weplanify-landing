@@ -49,7 +49,7 @@ export default async function NotFound() {
         </div>
 
       </main>
-      <Footer variant="home" footerData={footerData} />
+      <Footer footerData={footerData} />
     </>
   );
 }

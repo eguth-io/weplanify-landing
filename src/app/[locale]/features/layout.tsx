@@ -38,7 +38,7 @@ export default async function FeaturesLayout({ children, params }: Props) {
       </main>
 
       {/* Footer */}
-      <Footer variant="home" footerData={footerData} />
+      <Footer footerData={footerData} />
     </div>
   );
 }

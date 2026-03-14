@@ -323,7 +323,7 @@ export default async function HomePage({ params }: Props) {
       {readyBanner && <ReadyBanner data={readyBanner} />}
 
       {/* Footer */}
-      <Footer variant="home" footerData={footerData} />
+      <Footer footerData={footerData} />
     </div>
   );
 }

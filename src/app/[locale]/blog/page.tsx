@@ -63,7 +63,7 @@ export default async function BlogPage({ params }: Props) {
             </div>
           </div>
         </main>
-        <Footer variant="blog" footerData={footerData} />
+        <Footer footerData={footerData} />
       </>
     );
   }
@@ -137,7 +137,7 @@ export default async function BlogPage({ params }: Props) {
         )}
 
       </main>
-      <Footer variant="blog" footerData={footerData} />
+      <Footer footerData={footerData} />
     </>
   );
 }
