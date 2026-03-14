@@ -195,7 +195,7 @@ export default function TransportPage() {
                 className="text-lg text-[#FFFBF5]/70 font-karla max-w-xl mx-auto mb-8"
               >
                 Forward your confirmation emails, we extract everything automatically.
-                Flight delayed? You'll know before the airline tells you.
+                Flight delayed? You&apos;ll know before the airline tells you.
               </motion.p>
 
               <motion.div
