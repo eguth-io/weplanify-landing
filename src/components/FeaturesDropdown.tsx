@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 interface FeatureItem {
   icon: string;
@@ -69,6 +70,8 @@ export default function FeaturesDropdown({ isMobile = false, onItemClick }: Feat
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const pathname = usePathname();
+  const locale = pathname?.split('/')[1] || 'en';
 
   // Handle click outside to close dropdown (desktop)
   useEffect(() => {
@@ -148,7 +151,7 @@ export default function FeaturesDropdown({ isMobile = false, onItemClick }: Feat
             {features.map((feature) => (
               <Link
                 key={feature.slug}
-                href={`/features/${feature.slug}`}
+                href={`/${locale}/features/${feature.slug}`}
                 onClick={handleItemClick}
                 className="flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-[#F6391A]/5 transition-colors"
               >
@@ -201,7 +204,7 @@ export default function FeaturesDropdown({ isMobile = false, onItemClick }: Feat
           {features.map((feature) => (
             <Link
               key={feature.slug}
-              href={`/features/${feature.slug}`}
+              href={`/${locale}/features/${feature.slug}`}
               onClick={handleItemClick}
               className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FFFBF5] transition-colors group"
             >
