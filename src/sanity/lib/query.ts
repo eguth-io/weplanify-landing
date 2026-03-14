@@ -416,3 +416,41 @@ export const ctaQuery = groq`
     }
   }
 `;
+
+// ============================================
+// Feature Page Query (with locale and slug filter)
+// ============================================
+export const featurePageQuery = groq`
+  *[_type == "featurePage" && language == $locale && slug == $slug][0] {
+    slug,
+    icon,
+    accentColor,
+    gradientFrom,
+    heroBadge,
+    heroTitle,
+    heroTitleHighlight,
+    heroSubtitle,
+    socialProofText,
+    heroCta,
+    heroCtaSubtext,
+    stats[] {
+      value,
+      label
+    },
+    featuresTitle,
+    features[] {
+      icon,
+      title,
+      description
+    },
+    faqItems[] {
+      question,
+      answer
+    },
+    ctaTitle,
+    ctaSubtitle,
+    ctaButton,
+    seoTitle,
+    seoDescription
+  }
+`;

@@ -376,3 +376,39 @@ export interface Organization {
   ctaButton?: string;
   ctaLink?: string;
 }
+
+// ============================================
+// Feature Page Types
+// ============================================
+export interface FeaturePage {
+  slug: string;
+  icon: string;
+  accentColor: string;
+  gradientFrom: string;
+  heroBadge: string;
+  heroTitle: string;
+  heroTitleHighlight: string;
+  heroSubtitle: string;
+  socialProofText: string;
+  heroCta: string;
+  heroCtaSubtext: string;
+  stats: Array<{
+    value: string;
+    label: string;
+  }>;
+  featuresTitle: string;
+  features: Array<{
+    icon: string;
+    title: string;
+    description: string;
+  }>;
+  faqItems: Array<{
+    question: string;
+    answer: string;
+  }>;
+  ctaTitle: string;
+  ctaSubtitle: string;
+  ctaButton: string;
+  seoTitle: string;
+  seoDescription: string;
+}
