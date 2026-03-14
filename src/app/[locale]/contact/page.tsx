@@ -4,19 +4,30 @@ import ContactForm from "@/components/ContactForm";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
+import { setRequestLocale } from 'next-intl/server';
 
-export default async function ContactPage() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function ContactPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
       query: navQuery,
+      params: { locale },
       tags: ["nav"],
     }),
     sanityFetch<Navigation>({
       query: navigationQuery,
+      params: { locale },
       tags: ["navigation"],
     }),
     sanityFetch<FooterType>({
       query: footerQuery,
+      params: { locale },
       tags: ["footer"],
     }),
   ]);

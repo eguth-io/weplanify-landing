@@ -45,10 +45,10 @@ export const seoSettingsQuery = groq`
 `;
 
 // ============================================
-// Navigation Query
+// Navigation Query (with locale filter)
 // ============================================
 export const navigationQuery = groq`
-  *[_type == "navigation"][0] {
+  *[_type == "navigation" && language == $locale][0] {
     "logo": logo.asset->url,
     "logoAlt": logo.alt,
     navigationLinks[] {
@@ -80,10 +80,10 @@ export const navigationQuery = groq`
 export const navQuery = navigationQuery;
 
 // ============================================
-// Footer Query
+// Footer Query (with locale filter)
 // ============================================
 export const footerQuery = groq`
-  *[_type == "footer"][0] {
+  *[_type == "footer" && language == $locale][0] {
     "logo": logo.asset->url,
     "logoAlt": logo.alt,
     tagline,
@@ -118,10 +118,10 @@ export const footerQuery = groq`
 `;
 
 // ============================================
-// Landing Page Query
+// Landing Page Query (with locale filter)
 // ============================================
 export const landingPageQuery = groq`
-  *[_type == "landingPage"][0] {
+  *[_type == "landingPage" && language == $locale][0] {
     // Hero Section
     hero {
       affiliateTag,
@@ -380,10 +380,10 @@ export const blogPostsQuery = groq`
 `;
 
 // ============================================
-// FAQ Query
+// FAQ Query (with locale filter)
 // ============================================
 export const faqQuery = groq`
-  *[_type == "landingPage"][0] {
+  *[_type == "landingPage" && language == $locale][0] {
     faq {
       title,
       supportTitle,
@@ -399,10 +399,10 @@ export const faqQuery = groq`
 `;
 
 // ============================================
-// CTA Query
+// CTA Query (with locale filter)
 // ============================================
 export const ctaQuery = groq`
-  *[_type == "landingPage"][0] {
+  *[_type == "landingPage" && language == $locale][0] {
     ctaBanner {
       titlePart1,
       titlePart2,

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { PulsatingButton } from "./magicui/pulsating-button";
 import FeaturesDropdown from "./FeaturesDropdown";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 // Default navigation data
 const DEFAULT_NAV_DATA: NavType = {
@@ -22,6 +23,10 @@ interface NavProps {
 
 export default function Nav({ navData, navigationData }: NavProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Extract locale from pathname (e.g., /en/blog -> en)
+  const locale = pathname?.split('/')[1] || 'en';
 
   // Use default data if navData is null
   const nav = navData || DEFAULT_NAV_DATA;
@@ -73,7 +78,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
     <>
       <div className="fixed w-full z-50 top-0 px-4 lg:px-8">
         <nav className="bg-white shadow-sm flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] rounded-b-[16px] lg:rounded-b-[20px] max-w-[1536px] mx-auto">
-          <Link href="/">
+          <Link href={`/${locale}`}>
             <Image
               src={nav.logo}
               alt="logo"
@@ -131,9 +136,9 @@ export default function Nav({ navData, navigationData }: NavProps) {
           ) : (
             <>
               <FeaturesDropdown />
-              <Link href="/faq">FAQ</Link>
-              <Link href="/#reviews">Reviews</Link>
-              <Link href="/blog">Blog</Link>
+              <Link href={`/${locale}/faq`}>FAQ</Link>
+              <Link href={`/${locale}#reviews`}>Reviews</Link>
+              <Link href={`/${locale}/blog`}>Blog</Link>
             </>
           )}
         </div>
@@ -166,7 +171,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
         <div className="flex flex-col h-full">
           {/* Header du menu */}
           <div className="flex justify-between items-center p-6 border-b">
-            <Link href="/">
+            <Link href={`/${locale}`}>
               <Image
                 src={nav.logo}
                 alt="logo"
@@ -226,21 +231,21 @@ export default function Nav({ navData, navigationData }: NavProps) {
               <>
                 <FeaturesDropdown isMobile onItemClick={closeMenu} />
                 <Link
-                  href="/faq"
+                  href={`/${locale}/faq`}
                   onClick={closeMenu}
                   className="text-lg font-medium hover:text-[#F6391A] transition-colors"
                 >
                   FAQ
                 </Link>
                 <Link
-                  href="/#reviews"
+                  href={`/${locale}#reviews`}
                   onClick={closeMenu}
                   className="text-lg font-medium hover:text-[#F6391A] transition-colors"
                 >
                   Reviews
                 </Link>
                 <Link
-                  href="/blog"
+                  href={`/${locale}/blog`}
                   onClick={closeMenu}
                   className="text-lg font-medium hover:text-[#F6391A] transition-colors"
                 >

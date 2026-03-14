@@ -5,6 +5,7 @@ import { navQuery, navigationQuery, faqQuery, footerQuery } from "@/sanity/lib/q
 import { NavType, Navigation, FAQType, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
+import { setRequestLocale } from 'next-intl/server';
 
 // Default FAQ data
 const DEFAULT_FAQ_DATA: FAQType = {
@@ -33,22 +34,33 @@ const DEFAULT_FAQ_DATA: FAQType = {
   ]
 };
 
-export default async function FAQPage() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function FAQPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const [navData, navigationData, faqData, footerData]: [NavType, Navigation | null, FAQType, FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
       query: navQuery,
+      params: { locale },
       tags: ["nav"],
     }),
     sanityFetch<Navigation>({
       query: navigationQuery,
+      params: { locale },
       tags: ["navigation"],
     }),
     sanityFetch<FAQType>({
       query: faqQuery,
+      params: { locale },
       tags: ["faq"],
     }),
     sanityFetch<FooterType>({
       query: footerQuery,
+      params: { locale },
       tags: ["footer"],
     }),
   ]);

@@ -31,11 +31,11 @@ export function generateStaticParams() {
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  // Fetch all data from Sanity
+  // Fetch all data from Sanity with locale filter
   const [landingPageData, navigationData, footerData] = await Promise.all([
-    client.fetch<LandingPage>(landingPageQuery),
-    client.fetch<Navigation>(navigationQuery),
-    client.fetch<Footer>(footerQuery),
+    client.fetch<LandingPage>(landingPageQuery, { locale }),
+    client.fetch<Navigation>(navigationQuery, { locale }),
+    client.fetch<Footer>(footerQuery, { locale }),
   ]);
 
   // Fallback if data is not yet filled in Sanity
