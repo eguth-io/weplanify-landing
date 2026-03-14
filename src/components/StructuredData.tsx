@@ -14,12 +14,31 @@ export async function StructuredData() {
   try {
     const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
 
-    if (!seoSettings) {
-      return null;
-    }
+    const fallbackSettings: SeoSettings = {
+      siteName: "WePlanify",
+      defaultTitle: "WePlanify — Free Group Trip Planner | Plan Together",
+      titleTemplate: "%s | WePlanify",
+      defaultDescription: "Free collaborative group trip planner. Plan itineraries together, vote with group polls, track shared budgets.",
+      keywords: ["group trip planner", "collaborative travel app"],
+      language: "en",
+      ogImage: "",
+      ogType: "website",
+      twitterCard: "summary_large_image",
+      organizationName: "WePlanify",
+      organizationLogo: "https://weplanify.com/logo.svg",
+      organizationUrl: "https://weplanify.com",
+      organizationSocialLinks: [],
+      siteUrl: "https://weplanify.com",
+      robotsSettings: { allowIndexing: true },
+      favicon: "/favicon.ico",
+      appleTouchIcon: "/apple-touch-icon.png",
+      manifest: { themeColor: "#f6391a", backgroundColor: "#ffffff" },
+    } as SeoSettings;
 
-    const organizationSchema = generateOrganizationSchema(seoSettings);
-    const websiteSchema = generateWebsiteSchema(seoSettings);
+    const settings = seoSettings || fallbackSettings;
+
+    const organizationSchema = generateOrganizationSchema(settings);
+    const websiteSchema = generateWebsiteSchema(settings);
 
     return (
       <>

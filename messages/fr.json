@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "features": "Fonctionnalites",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "login": "Connexion",
+    "startMyJourney": "Commencer mon voyage"
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "getStarted": "Commencer",
+    "readMore": "Lire la suite",
+    "seeAll": "Voir tout",
+    "close": "Fermer",
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "tryAgain": "Reessayer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Precedent",
+    "submit": "Envoyer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher",
+    "noResults": "Aucun resultat trouve"
+  },
+  "hero": {
+    "affiliateTag": "Planifiez votre voyage parfait",
+    "ctaButton": "Commencer a planifier"
+  },
+  "footer": {
+    "copyright": "Tous droits reserves.",
+    "privacyPolicy": "Politique de confidentialite",
+    "termsOfService": "Conditions d'utilisation",
+    "cookiePolicy": "Politique des cookies"
+  },
+  "metadata": {
+    "title": "Weplanify - Planifiez votre voyage parfait",
+    "description": "Weplanify vous aide a planifier votre voyage parfait avec des recommandations basees sur l'IA et des itineraires personnalises."
+  }
+}

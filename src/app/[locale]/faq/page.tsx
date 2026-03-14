@@ -1,43 +1,47 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, faqQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, FAQType, Footer as FooterType } from "@/sanity/lib/type";
+import { navQuery, navigationQuery, faqQuery, footerQuery } from "@/sanity/lib/query";
+import { NavType, Navigation, FAQType, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 
 // Default FAQ data
 const DEFAULT_FAQ_DATA: FAQType = {
-  title: "Questions fréquentes",
+  title: "Frequently asked questions",
   items: [
     {
-      question: "Qu'est-ce que WePlanify ?",
-      answer: "WePlanify est votre assistant de voyage intelligent qui vous aide à planifier vos voyages de manière simple et efficace."
+      question: "What is WePlanify?",
+      answer: "WePlanify is your smart travel assistant that helps you plan trips simply and efficiently."
     },
     {
-      question: "Comment fonctionne WePlanify ?",
-      answer: "Il vous suffit de nous indiquer votre destination et vos préférences, et notre IA créera un itinéraire personnalisé adapté à vos besoins."
+      question: "How does WePlanify work?",
+      answer: "Simply tell us your destination and preferences, and our AI will create a personalized itinerary tailored to your needs."
     },
     {
-      question: "Est-ce que WePlanify est gratuit ?",
-      answer: "Nous proposons une version gratuite avec des fonctionnalités de base, ainsi que des plans premium pour des fonctionnalités avancées."
+      question: "Is WePlanify free?",
+      answer: "We offer a free version with basic features, as well as premium plans for advanced functionality."
     },
     {
-      question: "Dans quels pays WePlanify est-il disponible ?",
-      answer: "WePlanify est disponible dans le monde entier et supporte des destinations dans plus de 150 pays."
+      question: "In which countries is WePlanify available?",
+      answer: "WePlanify is available worldwide and supports destinations in over 150 countries."
     },
     {
-      question: "Comment puis-je contacter le support ?",
-      answer: "Vous pouvez nous contacter via notre page de contact ou par email à support@weplanify.com"
+      question: "How can I contact support?",
+      answer: "You can reach us via our contact page or by email at support@weplanify.com"
     }
   ]
 };
 
 export default async function FAQPage() {
-  const [navData, faqData, footerData]: [NavType, FAQType, FooterType | null] = await Promise.all([
+  const [navData, navigationData, faqData, footerData]: [NavType, Navigation | null, FAQType, FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
       query: navQuery,
       tags: ["nav"],
+    }),
+    sanityFetch<Navigation>({
+      query: navigationQuery,
+      tags: ["navigation"],
     }),
     sanityFetch<FAQType>({
       query: faqQuery,
@@ -54,7 +58,7 @@ export default async function FAQPage() {
 
   return (
     <>
-      <Nav navData={navData} />
+      <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen">
         {/* FAQ Section */}
         <section className="relative pt-[40px] lg:pt-[80px] pb-16 lg:pb-20">
@@ -66,7 +70,7 @@ export default async function FAQPage() {
                   FAQ
                 </h1>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                  Trouvez rapidement les réponses à vos questions les plus fréquentes
+                  Quickly find answers to your most frequently asked questions
                 </p>
               </div>
 
@@ -100,22 +104,22 @@ export default async function FAQPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <p className="text-gray-500 text-lg">Aucune FAQ disponible pour le moment.</p>
+                  <p className="text-gray-500 text-lg">No FAQ available at the moment.</p>
                 </div>
               )}
 
               {/* CTA */}
               <div className="text-center bg-gradient-to-r from-orange/5 to-orange/10 rounded-3xl p-8 lg:p-12">
                 <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-                  Toujours des questions ?
+                  Still have questions?
                 </h2>
                 <p className="text-gray-600 mb-6 text-lg">
-                  Notre équipe est là pour vous aider à planifier votre voyage parfait
+                  Our team is here to help you plan your perfect trip
                 </p>
                 <div className="flex justify-center">
                   <Link href="/contact">
                     <PulsatingButton className="w-full sm:w-auto">
-                      Nous contacter
+                      Contact us
                     </PulsatingButton>
                   </Link>
                 </div>

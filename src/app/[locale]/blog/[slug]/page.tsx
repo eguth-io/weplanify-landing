@@ -95,11 +95,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 {article.author ? `${article.author.firstName} ${article.author.lastName}` : 'Auteur inconnu'}
               </span>
               <span className="text-gray-500 mx-2">•</span>
-              <span className="text-gray-500">{new Date(article.publishedAt).toLocaleDateString("fr-FR", {
+              <span className="text-gray-500">{new Date(article.publishedAt).toLocaleDateString("en-US", {
                 day: "numeric",
                 month: "long",
                 year: "numeric"
-              }).replace(/^\w/, c => c.toUpperCase()).replace(/(\d+) (\w+)/, '$1 $2,')}</span>
+              })}</span>
               <span className="text-gray-500 mx-2">•</span>
               <span className="text-gray-500">{article.readTime}</span>
             </div>

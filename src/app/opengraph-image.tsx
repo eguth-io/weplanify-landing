@@ -28,10 +28,10 @@ export default async function Image() {
           WePlanify
         </div>
         <div style={{ fontSize: 40, textAlign: 'center', maxWidth: 1000, marginTop: 20 }}>
-          Planifiez, partagez, partez
+          Plan, share, go
         </div>
         <div style={{ fontSize: 24, textAlign: 'center', maxWidth: 1000, marginTop: 20 }}>
-          Une seule appli pour tout gérer
+          One app to manage it all
         </div>
       </div>
     ),

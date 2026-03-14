@@ -2,14 +2,18 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Footer as FooterType } from "@/sanity/lib/type";
+import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
+import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 
 export default async function ContactPage() {
-  const [navData, footerData]: [NavType, FooterType | null] = await Promise.all([
+  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
       query: navQuery,
       tags: ["nav"],
+    }),
+    sanityFetch<Navigation>({
+      query: navigationQuery,
+      tags: ["navigation"],
     }),
     sanityFetch<FooterType>({
       query: footerQuery,
@@ -20,7 +24,7 @@ export default async function ContactPage() {
 
   return (
     <>
-      <Nav navData={navData} />
+      <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen">
         {/* Contact Form Section */}
         <section className="relative pt-[40px] lg:pt-[80px] pb-12">
@@ -29,10 +33,10 @@ export default async function ContactPage() {
               {/* Title and Description */}
               <div className="text-center mb-6 mt-4 md:mt-0">
                 <h2 className="text-2xl lg:text-3xl font-unbounded font-bold text-black mb-1">
-                  Envoyez-nous un message
+                  Send us a message
                 </h2>
                 <p className="text-gray-600 text-sm">
-                  Notre équipe vous répondra dans les plus brefs délais
+                  Our team will get back to you as soon as possible
                 </p>
               </div>
               

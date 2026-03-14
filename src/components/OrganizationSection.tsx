@@ -14,7 +14,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
     <section id="fonctionnement" className="relative pb-28 flex flex-col items-center justify-center bg-[#4D9F79]">
       <Image
         src="/leftCloud.webp"
-        alt="Nuage décoratif gauche - WePlanify"
+        alt="Left decorative cloud - WePlanify"
         width={200}
         height={200}
         loading="lazy"
@@ -22,7 +22,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
       />
       <Image
         src="/rightCloud.webp"
-        alt="Nuage décoratif droit - WePlanify"
+        alt="Right decorative cloud - WePlanify"
         width={200}
         height={200}
         loading="lazy"
@@ -30,7 +30,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
       />
       <Image
         src="/leftCloudMobile.webp"
-        alt="Nuage décoratif gauche mobile - WePlanify"
+        alt="Left decorative cloud mobile - WePlanify"
         width={150}
         height={150}
         loading="lazy"
@@ -38,7 +38,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
       />
       <Image
         src="/rightCloudMobile.webp"
-        alt="Nuage décoratif droit mobile - WePlanify"
+        alt="Right decorative cloud mobile - WePlanify"
         width={150}
         height={150}
         loading="lazy"
@@ -70,7 +70,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
             <Image
               className="w-[140px] lg:w-[280px]"
               src={organization.clientImage}
-              alt="Logo client satisfait - WePlanify"
+              alt="Satisfied customer logo - WePlanify"
               width={280}
               height={62}
             />
@@ -80,7 +80,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
               src="/fiveStars.svg"
               width={80}
               height={14}
-              alt="5 étoiles - Évaluation client WePlanify"
+              alt="5 stars - WePlanify customer rating"
               className="hidden lg:block"
             />
             <p className="text-sm text-white">{organization.clientText || ''}</p>

@@ -21,7 +21,7 @@ export default function CTASection({ ctaData }: CTASectionProps) {
     <section className="overflow-hidden relative pt-[100px] pb-[40px] bg-[#F6391A] rounded-[40px] mx-3 lg:mx-[60px] text-center" aria-labelledby="cta-title">
       <Image
         src="/footer/top.png"
-        alt="Élément décoratif supérieur - WePlanify"
+        alt="Top decorative element - WePlanify"
         width={300}
         height={200}
         loading="lazy"
@@ -29,7 +29,7 @@ export default function CTASection({ ctaData }: CTASectionProps) {
       />
       <Image
         src="/footer/left.png"
-        alt="Élément décoratif gauche - WePlanify"
+        alt="Left decorative element - WePlanify"
         width={250}
         height={150}
         loading="lazy"
@@ -37,7 +37,7 @@ export default function CTASection({ ctaData }: CTASectionProps) {
       />
       <Image
         src="/footer/right.png"
-        alt="Élément décoratif droit - WePlanify"
+        alt="Right decorative element - WePlanify"
         width={250}
         height={150}
         loading="lazy"

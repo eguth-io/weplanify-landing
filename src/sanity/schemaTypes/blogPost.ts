@@ -114,8 +114,8 @@ export const blogPost = defineType({
         title: title,
         media: media,
         subtitle: publishedAt
-          ? new Date(publishedAt).toLocaleDateString("fr-FR")
-          : "Non publié",
+          ? new Date(publishedAt).toLocaleDateString("en-US")
+          : "Unpublished",
       };
     },
   },

@@ -58,7 +58,7 @@ export default function LaunchNotificationForm() {
               "--duration": "1.5s",
             } as React.CSSProperties}
           >
-            <span className="relative z-10 text-white font-[600] text-sm">Vous serez alerté du lancement ! 🚀</span>
+            <span className="relative z-10 text-white font-[600] text-sm">You will be notified at launch! 🚀</span>
             <div className="absolute left-1/2 top-1/2 size-full -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-xl bg-green-500" />
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function LaunchNotificationForm() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="votre@email.com"
+              placeholder="your@email.com"
               required
               disabled={isSubmitting}
               className="w-full pl-4 pr-44 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange focus:border-orange outline-none transition-all bg-white/90 backdrop-blur-sm placeholder-gray-500"
@@ -80,7 +80,7 @@ export default function LaunchNotificationForm() {
                 className="text-xs px-3 py-2 h-8"
                 disabled={isSubmitting || !email.trim()}
               >
-                {isSubmitting ? 'Envoi...' : 'Notifier du lancement'}
+                {isSubmitting ? 'Sending...' : 'Notify me at launch'}
               </PulsatingButton>
             </div>
           </div>

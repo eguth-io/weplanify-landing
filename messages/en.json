@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "features": "Features",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "login": "Login",
+    "startMyJourney": "Start my journey"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "readMore": "Read more",
+    "seeAll": "See all",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "tryAgain": "Try again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "noResults": "No results found"
+  },
+  "hero": {
+    "affiliateTag": "Plan your perfect trip",
+    "ctaButton": "Start planning"
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "metadata": {
+    "title": "Weplanify - Plan your perfect trip",
+    "description": "Weplanify helps you plan your perfect trip with AI-powered recommendations and personalized itineraries."
+  }
+}

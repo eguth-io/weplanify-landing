@@ -3,15 +3,16 @@ import { NavType, Navigation } from "@/sanity/lib/type";
 import Image from "next/image";
 import Link from "next/link";
 import { PulsatingButton } from "./magicui/pulsating-button";
+import FeaturesDropdown from "./FeaturesDropdown";
 import { useState } from "react";
 
 // Default navigation data
 const DEFAULT_NAV_DATA: NavType = {
   logo: "/logo.svg",
   logoMobile: "/logo.svg",
-  ctaButton: "Commencer",
+  ctaButton: "Get started",
   ctaLink: "/contact",
-  connexionLink: "/connexion"
+  connexionLink: "/login"
 };
 
 interface NavProps {
@@ -72,13 +73,15 @@ export default function Nav({ navData, navigationData }: NavProps) {
     <>
       <div className="fixed w-full z-50 top-0 px-4 lg:px-8">
         <nav className="bg-white shadow-sm flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] rounded-b-[16px] lg:rounded-b-[20px] max-w-[1536px] mx-auto">
-          <Image
-            src={nav.logo}
-            alt="logo"
-            width={155}
-            height={66}
-            className="block w-[75px] h-[45px] lg:w-[155px] lg:h-[66px]"
-          />
+          <Link href="/">
+            <Image
+              src={nav.logo}
+              alt="logo"
+              width={155}
+              height={66}
+              className="block w-[75px] h-[45px] lg:w-[155px] lg:h-[66px]"
+            />
+          </Link>
 
         {/* Burger Menu Button */}
         <button
@@ -106,35 +109,41 @@ export default function Nav({ navData, navigationData }: NavProps) {
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex gap-[40px] text-sm">
+        <div className="hidden lg:flex gap-[40px] text-sm items-center">
           {navigationData?.navigationLinks && navigationData.navigationLinks.length > 0 ? (
-            navigationData.navigationLinks.map((link, index) => (
-              <Link
-                key={index}
-                href={getLinkHref(link)}
-                onClick={(e) => handleAnchorClick(e, link)}
-                target={link.openInNewTab ? "_blank" : undefined}
-                rel={link.isExternal ? "noopener noreferrer" : undefined}
-              >
-                {link.label}
-              </Link>
-            ))
+            navigationData.navigationLinks.map((link, index) => {
+              // Check if this is a "Features" link to replace with dropdown
+              if (link.label.toLowerCase() === "features") {
+                return <FeaturesDropdown key={index} />;
+              }
+              return (
+                <Link
+                  key={index}
+                  href={getLinkHref(link)}
+                  onClick={(e) => handleAnchorClick(e, link)}
+                  target={link.openInNewTab ? "_blank" : undefined}
+                  rel={link.isExternal ? "noopener noreferrer" : undefined}
+                >
+                  {link.label}
+                </Link>
+              );
+            })
           ) : (
             <>
-              <Link href="/#fonctionnement">Fonctionnement</Link>
+              <FeaturesDropdown />
               <Link href="/faq">FAQ</Link>
-              <Link href="/#avis">Avis</Link>
+              <Link href="/#reviews">Reviews</Link>
               <Link href="/blog">Blog</Link>
             </>
           )}
         </div>
 
           <div className="lg:flex items-center gap-6 hidden">
-            <Link href={navigationData?.connectionButton?.url || nav.connexionLink || "/connexion"} className="text-sm font-[500]">
-              {navigationData?.connectionButton?.text || "Connexion"}
+            <Link href={navigationData?.connectionButton?.url || nav.connexionLink || "/login"} className="text-sm font-[500]" rel="nofollow">
+              {navigationData?.connectionButton?.text || "Login"}
             </Link>
-            <Link href={navigationData?.ctaButton?.url || nav.ctaLink}>
-              <PulsatingButton>{navigationData?.ctaButton?.text || nav.ctaButton}</PulsatingButton>
+            <Link href={navigationData?.ctaButton?.url || nav.ctaLink || "#"} rel="nofollow">
+              <PulsatingButton>{navigationData?.ctaButton?.text || (typeof nav.ctaButton === 'string' ? nav.ctaButton : (nav.ctaButton as { text?: string })?.text) || "Get started"}</PulsatingButton>
             </Link>
           </div>
         </nav>
@@ -192,48 +201,48 @@ export default function Nav({ navData, navigationData }: NavProps) {
           {/* Navigation Links */}
           <div className="flex flex-col px-6 py-8 space-y-6">
             {navigationData?.navigationLinks && navigationData.navigationLinks.length > 0 ? (
-              navigationData.navigationLinks.map((link, index) => (
-                <Link
-                  key={index}
-                  href={getLinkHref(link)}
-                  onClick={(e) => {
-                    handleAnchorClick(e, link);
-                    closeMenu();
-                  }}
-                  className="text-lg font-medium hover:text-blue-600 transition-colors"
-                  target={link.openInNewTab ? "_blank" : undefined}
-                  rel={link.isExternal ? "noopener noreferrer" : undefined}
-                >
-                  {link.label}
-                </Link>
-              ))
+              navigationData.navigationLinks.map((link, index) => {
+                // Check if this is a "Features" link to replace with dropdown
+                if (link.label.toLowerCase() === "features") {
+                  return <FeaturesDropdown key={index} isMobile onItemClick={closeMenu} />;
+                }
+                return (
+                  <Link
+                    key={index}
+                    href={getLinkHref(link)}
+                    onClick={(e) => {
+                      handleAnchorClick(e, link);
+                      closeMenu();
+                    }}
+                    className="text-lg font-medium hover:text-[#F6391A] transition-colors"
+                    target={link.openInNewTab ? "_blank" : undefined}
+                    rel={link.isExternal ? "noopener noreferrer" : undefined}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })
             ) : (
               <>
-                <Link
-                  href="/#fonctionnement"
-                  onClick={closeMenu}
-                  className="text-lg font-medium hover:text-blue-600 transition-colors"
-                >
-                  Fonctionnement
-                </Link>
+                <FeaturesDropdown isMobile onItemClick={closeMenu} />
                 <Link
                   href="/faq"
                   onClick={closeMenu}
-                  className="text-lg font-medium hover:text-blue-600 transition-colors"
+                  className="text-lg font-medium hover:text-[#F6391A] transition-colors"
                 >
                   FAQ
                 </Link>
                 <Link
-                  href="/#avis"
+                  href="/#reviews"
                   onClick={closeMenu}
-                  className="text-lg font-medium hover:text-blue-600 transition-colors"
+                  className="text-lg font-medium hover:text-[#F6391A] transition-colors"
                 >
-                  Avis
+                  Reviews
                 </Link>
                 <Link
                   href="/blog"
                   onClick={closeMenu}
-                  className="text-lg font-medium hover:text-blue-600 transition-colors"
+                  className="text-lg font-medium hover:text-[#F6391A] transition-colors"
                 >
                   Blog
                 </Link>
@@ -244,16 +253,16 @@ export default function Nav({ navData, navigationData }: NavProps) {
           {/* CTA Buttons */}
           <div className="mt-auto px-6 py-8 border-t space-y-4">
             <Link
-              href={navigationData?.connectionButton?.url || nav.connexionLink || "/connexion"}
+              href={navigationData?.connectionButton?.url || nav.connexionLink || "/login"}
               onClick={closeMenu}
               className="block text-center py-3 px-4 text-lg font-medium hover:bg-gray-50 transition-colors rounded-lg"
               rel="nofollow"
             >
-              {navigationData?.connectionButton?.text || "Connexion"}
+              {navigationData?.connectionButton?.text || "Login"}
             </Link>
-            <Link href={navigationData?.ctaButton?.url || nav.ctaLink} onClick={closeMenu} className="block" rel="nofollow">
+            <Link href={navigationData?.ctaButton?.url || nav.ctaLink || "#"} onClick={closeMenu} className="block" rel="nofollow">
               <PulsatingButton className="w-full justify-center">
-                {navigationData?.ctaButton?.text || nav.ctaButton}
+                {navigationData?.ctaButton?.text || (typeof nav.ctaButton === 'string' ? nav.ctaButton : (nav.ctaButton as { text?: string })?.text) || "Get started"}
               </PulsatingButton>
             </Link>
           </div>

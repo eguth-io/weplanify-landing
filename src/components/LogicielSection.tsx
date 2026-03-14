@@ -12,14 +12,14 @@ export default function LogicielSection({ logiciel }: LogicielSectionProps) {
     <section className="relative border-t border-gray-200 py-16 lg:py-32 border-t border-gray-200 flex flex-col items-center justify-center" aria-labelledby="logiciel-title">
       <Image
         src="/linesRight.svg"
-        alt="Lignes décoratives droites - WePlanify"
+        alt="Right decorative lines - WePlanify"
         width={100}
         height={400}
         className="hidden lg:block absolute top-1/2 right-0 z-0 transform -translate-y-1/2"
       />
       <Image
         src="/linesLeft.svg"
-        alt="Lignes décoratives gauches - WePlanify"
+        alt="Left decorative lines - WePlanify"
         width={100}
         height={400}
         className="hidden lg:block absolute top-1/2 left-0 z-0 transform -translate-y-1/2"

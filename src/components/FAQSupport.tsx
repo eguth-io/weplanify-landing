@@ -10,6 +10,10 @@ interface FAQItem {
 interface FAQSupportProps {
   data: {
     title: string;
+    supportTitle?: string;
+    supportDescription?: string;
+    supportButtonText?: string;
+    supportButtonUrl?: string;
     items: FAQItem[];
   };
 }
@@ -25,8 +29,25 @@ export default function FAQSupport({ data }: FAQSupportProps) {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.items.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="px-4 lg:px-8 pb-4 lg:pb-6 pt-2 lg:pt-3">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-[1536px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
           {/* Left Side - FAQ */}
@@ -87,28 +108,21 @@ export default function FAQSupport({ data }: FAQSupportProps) {
           {/* Right Side - 24/7 Support */}
           <div className="bg-[#EEF899] rounded-[24px] lg:rounded-[32px] p-8 lg:p-12 flex flex-col">
             <h2 className="text-[#001E13] text-3xl lg:text-5xl font-londrina-solid mb-4 lg:mb-6">
-              24/7 Support
+              {data.supportTitle || "24/7 Support"}
             </h2>
 
             <div className="flex-grow">
-              <p className="text-[#001E13] text-sm lg:text-base font-karla font-semibold leading-relaxed mb-1">
-                Une question sur une fonctionnalité ?
-              </p>
-              <p className="text-[#001E13] text-sm lg:text-base font-karla font-semibold leading-relaxed mb-1">
-                Besoin d&apos;inspiration pour un itinéraire ?
-              </p>
-              <p className="text-[#001E13] text-sm lg:text-base font-karla font-semibold leading-relaxed mb-6">
-                Notre équipe répond rapidement et vous guide pour tirer le meilleur de WePlanify.
-              </p>
-              <p className="text-[#001E13] text-sm lg:text-base font-karla font-semibold leading-relaxed">
-                Parce que votre réussite, c&apos;est notre priorité.
+              <p className="text-[#001E13] text-sm lg:text-base font-karla font-semibold leading-relaxed whitespace-pre-line">
+                {data.supportDescription || "Have a question about a feature?\nNeed inspiration for an itinerary?\nOur team responds quickly and guides you to get the most out of WePlanify.\n\nBecause your success is our priority."}
               </p>
             </div>
 
             <div className="mt-8 lg:mt-12">
-              <button className="bg-[#001E13] text-white px-6 py-2 rounded-full font-karla font-bold text-sm lg:text-base hover:bg-[#001E13]/90 transition-colors ring-4 ring-[#001E13] ring-opacity-15">
-                Contacter l&apos;équipe
-              </button>
+              <a href={data.supportButtonUrl || "/contact"}>
+                <button className="bg-[#001E13] text-white px-6 py-2 rounded-full font-karla font-bold text-sm lg:text-base hover:bg-[#001E13]/90 transition-colors ring-4 ring-[#001E13] ring-opacity-15">
+                  {data.supportButtonText || "Contact the team"}
+                </button>
+              </a>
             </div>
           </div>
         </div>

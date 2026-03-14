@@ -3,7 +3,14 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Image from "next/image";
 
-export default function CloudEffects() {
+interface CloudEffectsProps {
+  taglineWords?: string[];
+}
+
+const DEFAULT_TAGLINE_WORDS = ["Plan,", "share,", "go!"];
+
+export default function CloudEffects({ taglineWords }: CloudEffectsProps) {
+  const words = taglineWords && taglineWords.length > 0 ? taglineWords : DEFAULT_TAGLINE_WORDS;
   useEffect(() => {
     // Trigger scroll only if user is at the top of the page (desktop only)
     const handleAutoScroll = () => {
@@ -80,32 +87,19 @@ export default function CloudEffects() {
           className="text-white font-bold text-[62px] text-center px-4"
           style={{ fontFamily: "Unbounded, sans-serif", color: "white" }}
         >
-          <motion.span
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            style={{ color: "white" }}
-          >
-            Planifiez,
-          </motion.span>
-          <span style={{ color: "white" }}> </span>
-          <motion.span
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            style={{ color: "white" }}
-          >
-            partagez,
-          </motion.span>
-          <span style={{ color: "white" }}> </span>
-          <motion.span
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.5 }}
-            style={{ color: "white" }}
-          >
-            partez !
-          </motion.span>
+          {words.map((word, index) => (
+            <span key={index}>
+              {index > 0 && <span style={{ color: "white" }}> </span>}
+              <motion.span
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 + index * 0.5 }}
+                style={{ color: "white" }}
+              >
+                {word}
+              </motion.span>
+            </span>
+          ))}
         </motion.div>
 
         <motion.div

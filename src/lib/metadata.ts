@@ -39,7 +39,7 @@ export async function generateMetadataFromSanity(): Promise<Metadata> {
       // Open Graph
       openGraph: {
         type: seoSettings.ogType || "website",
-        locale: seoSettings.language || "fr_FR",
+        locale: seoSettings.language || "en_US",
         url: seoSettings.siteUrl || "https://weplanify.com",
         siteName: seoSettings.siteName || "WePlanify",
         title: seoSettings.defaultTitle || "WePlanify",
@@ -115,25 +115,25 @@ export async function generateMetadataFromSanity(): Promise<Metadata> {
 function getDefaultMetadata(): Metadata {
   return {
     title: {
-      default: "WePlanify - Votre assistant voyage IA",
+      default: "WePlanify — Free Group Trip Planner | Plan Together",
       template: "%s | WePlanify",
     },
     description:
-      "Planifiez vos voyages en toute simplicité avec WePlanify, votre assistant personnel alimenté par l'IA.",
-    keywords: ["voyage", "planification", "IA", "assistant voyage", "itinéraire"],
+      "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists. Free group travel planning app.",
+    keywords: ["group trip planner", "plan trip with friends", "collaborative travel app", "group travel itinerary", "travel planning app", "group vacation planner", "shared trip planner", "trip planner for groups"],
     openGraph: {
       type: "website",
-      locale: "fr_FR",
+      locale: "en_US",
       siteName: "WePlanify",
-      title: "WePlanify - Votre assistant voyage IA",
+      title: "WePlanify — Free Group Trip Planner | Plan Together",
       description:
-        "Planifiez vos voyages en toute simplicité avec WePlanify, votre assistant personnel alimenté par l'IA.",
+        "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists. Free group travel planning app.",
     },
     twitter: {
       card: "summary_large_image",
-      title: "WePlanify - Votre assistant voyage IA",
+      title: "WePlanify — Free Group Trip Planner | Plan Together",
       description:
-        "Planifiez vos voyages en toute simplicité avec WePlanify, votre assistant personnel alimenté par l'IA.",
+        "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists. Free group travel planning app.",
     },
   };
 }

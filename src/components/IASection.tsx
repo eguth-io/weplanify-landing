@@ -13,7 +13,7 @@ export default function IASection({ ia }: IASectionProps) {
           {ia.title}
         </p>
         <p className="text-gray-600 text-sm lg:text-base text-center lg:text-start mt-4 mb-6">
-          Notre assistant IA révolutionnaire génère votre itinéraire de voyage personnalisé en quelques secondes. Posez-lui toutes vos questions pour obtenir des recommandations expertes.
+          {ia.description || "Our revolutionary AI assistant generates your personalized travel itinerary in seconds. Ask any question to get expert recommendations."}
         </p>
         <div className="mb-6 lg:mb-24 mt-6 relative flex items-center bg-[#F8F7F8] rounded-full shadow-md border border-gray-200 overflow-hidden max-w-2xl pr-4">
           <input
