@@ -115,13 +115,11 @@ export default function Nav({ navData, navigationData }: NavProps) {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-[40px] text-sm items-center">
+          <FeaturesDropdown />
           {navigationData?.navigationLinks && navigationData.navigationLinks.length > 0 ? (
-            navigationData.navigationLinks.map((link, index) => {
-              // Check if this is a "Features" link to replace with dropdown
-              if (link.label.toLowerCase() === "features") {
-                return <FeaturesDropdown key={index} />;
-              }
-              return (
+            navigationData.navigationLinks
+              .filter((link) => !["features", "fonctionnalités"].includes(link.label.toLowerCase()))
+              .map((link, index) => (
                 <Link
                   key={index}
                   href={getLinkHref(link)}
@@ -131,11 +129,9 @@ export default function Nav({ navData, navigationData }: NavProps) {
                 >
                   {link.label}
                 </Link>
-              );
-            })
+              ))
           ) : (
             <>
-              <FeaturesDropdown />
               <Link href={`/${locale}/faq`}>FAQ</Link>
               <Link href={`/${locale}#reviews`}>Reviews</Link>
               <Link href={`/${locale}/blog`}>Blog</Link>
@@ -205,13 +201,11 @@ export default function Nav({ navData, navigationData }: NavProps) {
 
           {/* Navigation Links */}
           <div className="flex flex-col px-6 py-8 space-y-6">
+            <FeaturesDropdown isMobile onItemClick={closeMenu} />
             {navigationData?.navigationLinks && navigationData.navigationLinks.length > 0 ? (
-              navigationData.navigationLinks.map((link, index) => {
-                // Check if this is a "Features" link to replace with dropdown
-                if (link.label.toLowerCase() === "features") {
-                  return <FeaturesDropdown key={index} isMobile onItemClick={closeMenu} />;
-                }
-                return (
+              navigationData.navigationLinks
+                .filter((link) => !["features", "fonctionnalités"].includes(link.label.toLowerCase()))
+                .map((link, index) => (
                   <Link
                     key={index}
                     href={getLinkHref(link)}
@@ -225,11 +219,9 @@ export default function Nav({ navData, navigationData }: NavProps) {
                   >
                     {link.label}
                   </Link>
-                );
-              })
+                ))
             ) : (
               <>
-                <FeaturesDropdown isMobile onItemClick={closeMenu} />
                 <Link
                   href={`/${locale}/faq`}
                   onClick={closeMenu}
