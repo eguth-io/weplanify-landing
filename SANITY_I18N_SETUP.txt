@@ -1,0 +1,99 @@
+CONFIGURATION I18N SANITY - INSTRUCTIONS POUR CLAUDE
+=====================================================
+
+CONTEXTE:
+- Projet: Weplanify Landing Page
+- Sanity Project ID: pkczubdf
+- Dataset: production
+- Studio URL: http://localhost:3000/studio
+- Plugin installe: @sanity/document-internationalization
+
+PROBLEME:
+Le champ "language" a ete ajoute aux schemas locaux mais n'est pas encore deploye sur Sanity Cloud.
+Les documents existants (landingPage, navigation, footer) n'ont pas de langue definie.
+
+---
+
+ETAPE 1: DEPLOYER LE SCHEMA
+---------------------------
+Dans le terminal, depuis /Users/tc/eguth/wp/landing :
+
+npx sanity schema extract
+npx sanity schema deploy
+
+Si ca echoue (erreur React), alternative:
+- Aller sur https://www.sanity.io/manage
+- Selectionner le projet "pkczubdf"
+- Le schema se synchronise automatiquement quand le Studio est ouvert
+
+---
+
+ETAPE 2: OUVRIR LE STUDIO
+-------------------------
+1. Aller sur http://localhost:3000/studio
+2. Se connecter avec Google/GitHub/Email
+
+---
+
+ETAPE 3: CONFIGURER LA LANGUE DES DOCUMENTS EXISTANTS
+------------------------------------------------------
+Pour chaque document (landingPage, navigation, footer):
+
+1. Cliquer sur le document dans la liste
+2. Chercher le panneau "Translations" (ajoute par le plugin)
+3. Definir la langue sur "English" (en)
+4. Publier le document
+
+OU via l'API (si tu as un token):
+
+curl -X POST "https://pkczubdf.api.sanity.io/v2024-01-01/data/mutate/production" \
+  -H "Authorization: Bearer TON_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "mutations": [
+      {"patch": {"id": "landingPage", "set": {"language": "en"}}},
+      {"patch": {"id": "navigation", "set": {"language": "en"}}},
+      {"patch": {"id": "footer", "set": {"language": "en"}}}
+    ]
+  }'
+
+---
+
+ETAPE 4: CREER LES VERSIONS FRANCAISES
+--------------------------------------
+Pour chaque document EN:
+
+1. Ouvrir le document (ex: landingPage)
+2. Dans le panneau "Translations", cliquer "Add translation"
+3. Selectionner "French"
+4. Un nouveau document sera cree avec le suffixe __i18n_fr
+5. Traduire le contenu
+6. Publier
+
+---
+
+ETAPE 5: VERIFICATION
+---------------------
+Requete GROQ pour verifier:
+
+*[_type in ["landingPage", "featurePage", "navigation", "footer"]]{
+  _id,
+  _type,
+  language
+}
+
+Resultat attendu:
+- landingPage (language: "en")
+- landingPage__i18n_fr (language: "fr")
+- navigation (language: "en")
+- navigation__i18n_fr (language: "fr")
+- footer (language: "en")
+- footer__i18n_fr (language: "fr")
+
+---
+
+NOTES TECHNIQUES:
+- Le plugin @sanity/document-internationalization gere automatiquement les liens entre versions
+- Les documents traduits ont un _id avec suffixe __i18n_{locale}
+- Le champ "language" est cache dans l'UI (readOnly: true, hidden: true)
+- Le frontend utilise next-intl avec routes /en et /fr

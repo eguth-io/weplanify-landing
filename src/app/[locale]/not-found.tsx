@@ -7,13 +7,18 @@ import Link from "next/link";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
 export default async function NotFound() {
+  // Not-found pages don't have access to params, default to 'en'
+  const locale = 'en';
+
   const [navData, footerData]: [NavType, FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
       query: navQuery,
+      params: { locale },
       tags: ["nav"],
     }),
     sanityFetch<FooterType>({
       query: footerQuery,
+      params: { locale },
       tags: ["footer"],
     }),
   ]);

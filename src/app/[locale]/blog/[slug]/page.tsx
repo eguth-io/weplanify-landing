@@ -7,19 +7,23 @@ import Image from "next/image";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, blogPostQuery, footerQuery, ctaQuery } from "@/sanity/lib/query";
 import { NavType, BlogPost, FooterType, CtaType } from "@/sanity/lib/type";
+import { setRequestLocale } from 'next-intl/server';
 
 interface BlogPostPageProps {
   params: Promise<{
+    locale: string;
     slug: string;
   }>;
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const { slug } = await params;
-  
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+
   const [navData, article, footerData, ctaData] = await Promise.all([
     sanityFetch({
       query: navQuery,
+      params: { locale },
       tags: ["nav"],
     }) as Promise<NavType>,
     sanityFetch({
@@ -29,10 +33,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     }) as Promise<BlogPost | null>,
     sanityFetch({
       query: footerQuery,
+      params: { locale },
       tags: ["footer"],
     }) as Promise<FooterType>,
     sanityFetch({
       query: ctaQuery,
+      params: { locale },
       tags: ["nav"],
     }) as Promise<CtaType>,
   ]);
