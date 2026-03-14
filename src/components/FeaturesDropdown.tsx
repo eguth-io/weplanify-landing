@@ -208,7 +208,7 @@ export default function FeaturesDropdown({ isMobile = false, onItemClick }: Feat
               onClick={handleItemClick}
               className="flex items-start gap-3 p-3 rounded-lg hover:bg-[#FFFBF5] transition-colors group"
             >
-              <span className="text-xl group-hover:scale-110 transition-transform">{feature.icon}</span>
+              <span className="text-xl">{feature.icon}</span>
               <div>
                 <div className="font-medium text-[#001E13] group-hover:text-[#F6391A] transition-colors">
                   {feature.title}
