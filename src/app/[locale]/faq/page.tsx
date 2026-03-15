@@ -73,7 +73,7 @@ export default async function FAQPage({ params }: Props) {
       <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen">
         {/* FAQ Section */}
-        <section className="relative pt-[40px] lg:pt-[80px] pb-16 lg:pb-20">
+        <section className="relative pt-[128px] lg:pt-[180px] pb-16 lg:pb-20">
           <div className="container mx-auto px-4 lg:px-0">
             <div className="max-w-4xl mx-auto">
               {/* Title and Description */}

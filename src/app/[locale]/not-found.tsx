@@ -1,8 +1,8 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Footer as FooterType } from "@/sanity/lib/type";
+import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
+import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import Link from "next/link";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
@@ -10,11 +10,16 @@ export default async function NotFound() {
   // Not-found pages don't have access to params, default to 'en'
   const locale = 'en';
 
-  const [navData, footerData]: [NavType, FooterType | null] = await Promise.all([
+  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
       query: navQuery,
       params: { locale },
       tags: ["nav"],
+    }),
+    sanityFetch<Navigation>({
+      query: navigationQuery,
+      params: { locale },
+      tags: ["navigation"],
     }),
     sanityFetch<FooterType>({
       query: footerQuery,
@@ -25,7 +30,7 @@ export default async function NotFound() {
 
   return (
     <>
-      <Nav navData={navData} />
+      <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen bg-white flex items-center justify-center">
         <div className="container mx-auto px-4 lg:px-8 text-center">
           <div className="max-w-2xl mx-auto">
