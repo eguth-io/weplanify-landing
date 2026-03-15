@@ -8,29 +8,28 @@ import { SwipeExplorer } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-// FAQ Data for SEO
-const faqItems = [
-  {
-    question: "How does Weplanify's Explore mode work?",
-    answer: "Explore mode lets you discover places (restaurants, museums, activities) by swiping like a dating app. Swipe right to save, left to skip. Your favorites are automatically added to your itinerary."
-  },
-  {
-    question: "Are places filtered based on my destination?",
-    answer: "Yes, the Explorer only shows places relevant to your destination and travel dates. You can also filter by category (restaurants, nature, culture, shopping) and by rating."
-  },
-  {
-    question: "Where do the recommendations come from?",
-    answer: "Our recommendations combine multiple sources: Weplanify traveler reviews, Google Places data, TripAdvisor, and our local curators. AI also personalizes suggestions based on your preferences."
-  },
-  {
-    question: "Can I use Explorer offline?",
-    answer: "Yes! Download places from your destination before you leave. You'll have access to information, photos, and addresses even without an internet connection."
-  },
-  {
-    question: "How do I add an explored place to my itinerary?",
-    answer: "When you swipe right (like), the place is saved to your favorites. From there, a simple tap lets you add it to a specific day in your itinerary at your preferred time."
-  }
-];
+interface FeaturePageData {
+  slug: string;
+  icon: string;
+  accentColor: string;
+  gradientFrom: string;
+  heroBadge: string;
+  heroTitle: string;
+  heroTitleHighlight: string;
+  heroSubtitle: string;
+  socialProofText: string;
+  heroCta: string;
+  heroCtaSubtext: string;
+  stats: { value: string; label: string }[];
+  featuresTitle: string;
+  features: { icon: string; title: string; description: string }[];
+  faqItems: { question: string; answer: string }[];
+  ctaTitle: string;
+  ctaSubtitle: string;
+  ctaButton: string;
+  seoTitle: string;
+  seoDescription: string;
+}
 
 // Swipeable card component
 function SwipeCard({
@@ -92,24 +91,24 @@ function SwipeCard({
           <div className="flex items-start justify-between mb-2">
             <h3 className="font-londrina-solid text-2xl text-[#001E13]">{place.name}</h3>
             <div className="flex items-center gap-1 bg-[#EEF899] px-2 py-1 rounded-full">
-              <span className="text-sm">⭐</span>
+              <span className="text-sm">*</span>
               <span className="text-sm font-bold text-[#001E13]">{place.rating}</span>
             </div>
           </div>
-          <p className="text-[#001E13]/60 font-karla text-sm">📍 {place.distance}</p>
+          <p className="text-[#001E13]/60 font-karla text-sm">{place.distance}</p>
         </div>
       </div>
     </motion.div>
   );
 }
 
-export default function ExplorePage() {
+export default function ExploreFeature({ data }: { data: FeaturePageData }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const places = [
-    { name: "Cafe da Garagem", image: "/places/cafe.jpg", rating: 4.8, category: "☕ Cafe", distance: "350m from center" },
-    { name: "Miradouro da Senhora do Monte", image: "/places/viewpoint.jpg", rating: 4.9, category: "🌅 View", distance: "1.2km" },
-    { name: "Time Out Market", image: "/places/market.jpg", rating: 4.6, category: "🍽️ Food Hall", distance: "800m" },
+    { name: "Cafe da Garagem", image: "/places/cafe.jpg", rating: 4.8, category: "Cafe", distance: "350m from center" },
+    { name: "Miradouro da Senhora do Monte", image: "/places/viewpoint.jpg", rating: 4.9, category: "View", distance: "1.2km" },
+    { name: "Time Out Market", image: "/places/market.jpg", rating: 4.6, category: "Food Hall", distance: "800m" },
   ];
 
   const handleSwipe = () => {
@@ -119,10 +118,10 @@ export default function ExplorePage() {
   return (
     <>
       <FeatureJsonLd
-        featureName="Explorer - Discover Travel Destinations"
-        featureDescription="Discover amazing places with our exploration mode. Swipe to explore restaurants, museums, and activities, save your favorites, and add them to your trip."
-        featureUrl="https://weplanify.com/features/explore"
-        faqItems={faqItems}
+        featureName={data.seoTitle}
+        featureDescription={data.seoDescription}
+        featureUrl={`https://weplanify.com/features/${data.slug}`}
+        faqItems={data.faqItems}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-[#001E13] via-[#001E13] to-[#61DBD5]/20">
@@ -137,7 +136,7 @@ export default function ExplorePage() {
                   animate={{ opacity: 1 }}
                   className="inline-block px-4 py-1 bg-[#61DBD5]/20 text-[#61DBD5] rounded-full text-sm font-karla mb-4"
                 >
-                  🗺️ Explore Mode
+                  {data.heroBadge}
                 </motion.span>
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
@@ -145,11 +144,9 @@ export default function ExplorePage() {
                   transition={{ delay: 0.1 }}
                   className="text-4xl lg:text-6xl font-londrina-solid text-[#FFFBF5] mb-6"
                 >
-                  Discover the
+                  {data.heroTitle}
                   <br />
-                  <span className="text-[#61DBD5]">best spots</span>
-                  <br />
-                  by swiping
+                  <span className="text-[#61DBD5]">{data.heroTitleHighlight}</span>
                 </motion.h1>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -157,8 +154,7 @@ export default function ExplorePage() {
                   transition={{ delay: 0.2 }}
                   className="text-lg text-[#FFFBF5]/70 font-karla mb-8"
                 >
-                  No more dozens of Chrome tabs open. Swipe right to save,
-                  left to skip. As simple as creating a travel playlist.
+                  {data.heroSubtitle}
                 </motion.p>
 
                 {/* Action buttons */}
@@ -169,13 +165,13 @@ export default function ExplorePage() {
                   className="flex justify-center lg:justify-start gap-4 mb-8"
                 >
                   <button className="w-14 h-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-2xl hover:bg-red-500/20 hover:border-red-500 transition-colors">
-                    ❌
+                    X
                   </button>
                   <button className="w-14 h-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-2xl hover:bg-yellow-500/20 hover:border-yellow-500 transition-colors">
-                    ⭐
+                    *
                   </button>
                   <button className="w-14 h-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-2xl hover:bg-green-500/20 hover:border-green-500 transition-colors">
-                    💚
+                    +
                   </button>
                 </motion.div>
 
@@ -186,7 +182,7 @@ export default function ExplorePage() {
                 >
                   <Link href="/signup" className="inline-block">
                     <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                      Swipe your first spots
+                      {data.heroCta}
                     </PulsatingButton>
                   </Link>
                 </motion.div>
@@ -274,7 +270,7 @@ export default function ExplorePage() {
                 >
                   <div className="relative">
                     <div className="w-10 h-10 bg-[#F6391A] rounded-full flex items-center justify-center text-white shadow-lg">
-                      📍
+                      Pin
                     </div>
                     <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs font-karla text-[#001E13] whitespace-nowrap bg-white px-2 py-0.5 rounded-full shadow">
                       {pin.label}
@@ -305,16 +301,7 @@ export default function ExplorePage() {
             </motion.h2>
 
             <div className="flex flex-wrap justify-center gap-4">
-              {[
-                { icon: "🍽️", label: "Restaurants" },
-                { icon: "☕", label: "Cafes" },
-                { icon: "🏛️", label: "Museums" },
-                { icon: "🌳", label: "Nature" },
-                { icon: "🛍️", label: "Shopping" },
-                { icon: "🎭", label: "Culture" },
-                { icon: "🌅", label: "Viewpoints" },
-                { icon: "🏖️", label: "Beaches" },
-              ].map((cat, i) => (
+              {data.features.map((feature, i) => (
                 <motion.button
                   key={i}
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -324,8 +311,8 @@ export default function ExplorePage() {
                   whileHover={{ scale: 1.05, y: -2 }}
                   className="px-5 py-3 bg-white/10 hover:bg-white/20 rounded-full flex items-center gap-2 transition-colors"
                 >
-                  <span className="text-xl">{cat.icon}</span>
-                  <span className="font-karla text-[#FFFBF5]">{cat.label}</span>
+                  <span className="text-xl">{feature.icon}</span>
+                  <span className="font-karla text-[#FFFBF5]">{feature.title}</span>
                 </motion.button>
               ))}
             </div>
@@ -333,7 +320,7 @@ export default function ExplorePage() {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={faqItems} accentColor="#61DBD5" />
+        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-16 bg-[#FFFBF5]">
@@ -343,16 +330,16 @@ export default function ExplorePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-6xl mb-6 block">🗺️</span>
+              <span className="text-6xl mb-6 block">{data.icon}</span>
               <h2 className="text-3xl lg:text-4xl font-londrina-solid text-[#001E13] mb-4">
-                Ready to explore?
+                {data.ctaTitle}
               </h2>
               <p className="text-[#001E13]/60 font-karla mb-8 max-w-md mx-auto">
-                Discover thousands of amazing places for your next trip
+                {data.ctaSubtitle}
               </p>
               <Link href="/signup" className="inline-block">
                 <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                  Explore my destination
+                  {data.ctaButton}
                 </PulsatingButton>
               </Link>
               <p className="text-sm text-[#001E13]/50 mt-3 font-karla">Free, no credit card required</p>

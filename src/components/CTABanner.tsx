@@ -62,13 +62,16 @@ export default function CTABanner({ data }: CTABannerProps) {
                 </p>
               </div>
 
-              {/* Right side - CTA Button */}
-              <div className="flex-shrink-0">
+              {/* Right side - CTA Button with social proof */}
+              <div className="flex-shrink-0 flex flex-col items-start lg:items-end gap-2">
                 <Link href={data.buttonUrl || "#"}>
                   <PulsatingButton className="font-karla font-bold">
                     {data.buttonText}
                   </PulsatingButton>
                 </Link>
+                <p className="text-[#FFFBF5]/80 text-xs lg:text-sm font-karla">
+                  50k+ trips planned. Free forever.
+                </p>
               </div>
             </div>
           </div>

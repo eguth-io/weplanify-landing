@@ -5,15 +5,23 @@ import { SeoSettings } from "@/sanity/lib/type";
 
 /**
  * Génère les metadata Next.js depuis les SEO Settings de Sanity
+ * @param locale - Current locale (en, fr)
+ * @param pathname - Current pathname without locale prefix (e.g., "/blog", "/contact")
  */
-export async function generateMetadataFromSanity(): Promise<Metadata> {
+export async function generateMetadataFromSanity(
+  locale: string = "en",
+  pathname: string = ""
+): Promise<Metadata> {
   try {
     const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
 
     if (!seoSettings) {
       console.warn("SEO Settings not found in Sanity, using defaults");
-      return getDefaultMetadata();
+      return getDefaultMetadata(locale, pathname);
     }
+
+    const baseUrl = seoSettings.siteUrl || "https://weplanify.com";
+    const currentUrl = `${baseUrl}/${locale}${pathname}`;
 
     const metadata: Metadata = {
       title: {
@@ -39,8 +47,8 @@ export async function generateMetadataFromSanity(): Promise<Metadata> {
       // Open Graph
       openGraph: {
         type: seoSettings.ogType || "website",
-        locale: seoSettings.language || "en_US",
-        url: seoSettings.siteUrl || "https://weplanify.com",
+        locale: locale === "fr" ? "fr_FR" : "en_US",
+        url: currentUrl,
         siteName: seoSettings.siteName || "WePlanify",
         title: seoSettings.defaultTitle || "WePlanify",
         description: seoSettings.defaultDescription || "",
@@ -68,51 +76,41 @@ export async function generateMetadataFromSanity(): Promise<Metadata> {
 
       // Icons
       icons: {
-        icon: seoSettings.favicon || "/favicon.ico",
-        apple: seoSettings.appleTouchIcon || "/apple-touch-icon.png",
+        icon: seoSettings.favicon || "/icon.svg",
+        apple: seoSettings.appleTouchIcon || "/apple-icon.png",
       },
 
       // Manifest
       manifest: "/manifest.json",
 
       // Theme Color
-      themeColor: seoSettings.manifest?.themeColor || "#f6391a",
+      themeColor: seoSettings.manifest?.themeColor || "#D42D10",
 
-      // Verification (si tu as des codes de vérification Google/Bing)
-      // verification: {
-      //   google: "your-google-verification-code",
-      //   yandex: "your-yandex-verification-code",
-      // },
-
-      // Alternate languages (si tu as plusieurs langues)
+      // Hreflang + Canonical
       alternates: {
-        canonical: seoSettings.siteUrl || "https://weplanify.com",
+        canonical: currentUrl,
+        languages: {
+          en: `${baseUrl}/en${pathname}`,
+          fr: `${baseUrl}/fr${pathname}`,
+          "x-default": `${baseUrl}/en${pathname}`,
+        },
       },
-
-      // App Links (si tu as une app mobile)
-      // appLinks: {
-      //   ios: {
-      //     url: "https://apps.apple.com/app/weplanify",
-      //     app_store_id: "app-store-id",
-      //   },
-      //   android: {
-      //     package: "com.weplanify.app",
-      //     url: "https://play.google.com/store/apps/details?id=com.weplanify.app",
-      //   },
-      // },
     };
 
     return metadata;
   } catch (error) {
     console.error("Error fetching SEO settings from Sanity:", error);
-    return getDefaultMetadata();
+    return getDefaultMetadata(locale, pathname);
   }
 }
 
 /**
  * Metadata par défaut en cas d'erreur
  */
-function getDefaultMetadata(): Metadata {
+function getDefaultMetadata(locale: string = "en", pathname: string = ""): Metadata {
+  const baseUrl = "https://weplanify.com";
+  const currentUrl = `${baseUrl}/${locale}${pathname}`;
+
   return {
     title: {
       default: "WePlanify — Free Group Trip Planner | Plan Together",
@@ -123,7 +121,8 @@ function getDefaultMetadata(): Metadata {
     keywords: ["group trip planner", "plan trip with friends", "collaborative travel app", "group travel itinerary", "travel planning app", "group vacation planner", "shared trip planner", "trip planner for groups"],
     openGraph: {
       type: "website",
-      locale: "en_US",
+      locale: locale === "fr" ? "fr_FR" : "en_US",
+      url: currentUrl,
       siteName: "WePlanify",
       title: "WePlanify — Free Group Trip Planner | Plan Together",
       description:
@@ -134,6 +133,14 @@ function getDefaultMetadata(): Metadata {
       title: "WePlanify — Free Group Trip Planner | Plan Together",
       description:
         "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists. Free group travel planning app.",
+    },
+    alternates: {
+      canonical: currentUrl,
+      languages: {
+        en: `${baseUrl}/en${pathname}`,
+        fr: `${baseUrl}/fr${pathname}`,
+        "x-default": `${baseUrl}/en${pathname}`,
+      },
     },
   };
 }

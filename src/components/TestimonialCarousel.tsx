@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface TestimonialCarouselProps {
   testimonials: Array<{
     quote: string;
     author: string;
     authorRole?: string;
+    avatar?: string;
   }>;
 }
 
@@ -33,15 +35,27 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
         &quot;{currentTestimonial.quote}&quot;
       </blockquote>
       <div className="mt-10 lg:mt-14 flex items-center justify-between">
-        <div>
-          <p className="text-[#001E13] font-londrina-solid text-xl lg:text-[24px]">
-            {currentTestimonial.author}
-          </p>
-          {currentTestimonial.authorRole && (
-            <p className="text-[#001E13]/60 text-sm font-karla">
-              {currentTestimonial.authorRole}
-            </p>
+        <div className="flex items-center gap-3">
+          {currentTestimonial.avatar && (
+            <div className="relative w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden flex-shrink-0">
+              <Image
+                src={currentTestimonial.avatar}
+                alt={currentTestimonial.author}
+                fill
+                className="object-cover"
+              />
+            </div>
           )}
+          <div>
+            <p className="text-[#001E13] font-londrina-solid text-xl lg:text-[24px]">
+              {currentTestimonial.author}
+            </p>
+            {currentTestimonial.authorRole && (
+              <p className="text-[#001E13]/60 text-sm font-karla">
+                {currentTestimonial.authorRole}
+              </p>
+            )}
+          </div>
         </div>
         {testimonials.length > 1 && (
           <div className="flex gap-2">

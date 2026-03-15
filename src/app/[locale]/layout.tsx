@@ -38,9 +38,10 @@ const nanumPenFont = Nanum_Pen_Script({
   weight: ["400"],
 });
 
-// Generate metadata dynamically from Sanity
-export async function generateMetadata(): Promise<Metadata> {
-  return generateMetadataFromSanity();
+// Generate metadata dynamically from Sanity with hreflang
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return generateMetadataFromSanity(locale, "");
 }
 
 type Props = {

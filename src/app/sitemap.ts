@@ -5,11 +5,12 @@ import { SeoSettings } from "@/sanity/lib/type";
 
 const locales = ["en", "fr"];
 const featureSlugs = [
-  "ai-planning",
+  "planning",
   "budget",
   "collaboration",
   "explore",
   "itinerary",
+  "memories",
   "packing",
   "polls",
   "transport",

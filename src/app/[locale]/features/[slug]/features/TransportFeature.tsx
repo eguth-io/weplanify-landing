@@ -7,29 +7,28 @@ import { TransportJourney } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-// FAQ Data for SEO
-const faqItems = [
-  {
-    question: "How do I import my transport bookings?",
-    answer: "Three ways: forward your confirmation emails, connect Gmail/Outlook for automatic import, or scan your ticket QR code. All the info is extracted automatically."
-  },
-  {
-    question: "What types of transport are supported?",
-    answer: "All of them! Flights (all airlines), trains (Amtrak, Eurostar, national railways...), buses, ferries, car rentals, and even rideshares. Everything is centralized in one place."
-  },
-  {
-    question: "Do I get alerts for delays?",
-    answer: "Yes, Weplanify monitors your flights and trains in real time. If there's a delay, cancellation, or gate change, you get an instant push notification."
-  },
-  {
-    question: "Can my travel group see the transport details?",
-    answer: "Yes! All trip participants can see the added transport. Perfect for coordinating arrivals and departures when everyone isn't traveling together."
-  },
-  {
-    question: "Can I access my tickets offline?",
-    answer: "Absolutely. Download your tickets (PDFs, QR codes) to access them even without an internet connection. No more stress searching for your ticket at the airport without wifi."
-  }
-];
+interface FeaturePageData {
+  slug: string;
+  icon: string;
+  accentColor: string;
+  gradientFrom: string;
+  heroBadge: string;
+  heroTitle: string;
+  heroTitleHighlight: string;
+  heroSubtitle: string;
+  socialProofText: string;
+  heroCta: string;
+  heroCtaSubtext: string;
+  stats: { value: string; label: string }[];
+  featuresTitle: string;
+  features: { icon: string; title: string; description: string }[];
+  faqItems: { question: string; answer: string }[];
+  ctaTitle: string;
+  ctaSubtitle: string;
+  ctaButton: string;
+  seoTitle: string;
+  seoDescription: string;
+}
 
 // Journey segment component
 function JourneySegment({
@@ -139,14 +138,14 @@ function TicketStub({
   );
 }
 
-export default function TransportPage() {
+export default function TransportFeature({ data }: { data: FeaturePageData }) {
   return (
     <>
       <FeatureJsonLd
-        featureName="Transport Management - Flights, Trains & Journeys"
-        featureDescription="Manage all your travel journeys in one place. Automatic import of flights and trains, real-time alerts, and offline access to your tickets."
-        featureUrl="https://weplanify.com/features/transport"
-        faqItems={faqItems}
+        featureName={data.seoTitle}
+        featureDescription={data.seoDescription}
+        featureUrl={`https://weplanify.com/features/${data.slug}`}
+        faqItems={data.faqItems}
       />
 
       <div className="min-h-screen bg-[#FFFBF5]">
@@ -183,9 +182,9 @@ export default function TransportPage() {
                 transition={{ delay: 0.1 }}
                 className="text-4xl lg:text-6xl font-londrina-solid text-[#FFFBF5] mb-6"
               >
-                Flights, trains, cars:
+                {data.heroTitle}
                 <br />
-                <span className="text-[#61DBD5]">no more lost tickets</span>
+                <span className="text-[#61DBD5]">{data.heroTitleHighlight}</span>
               </motion.h1>
 
               <motion.p
@@ -194,8 +193,7 @@ export default function TransportPage() {
                 transition={{ delay: 0.2 }}
                 className="text-lg text-[#FFFBF5]/70 font-karla max-w-xl mx-auto mb-8"
               >
-                Forward your confirmation emails, we extract everything automatically.
-                Flight delayed? You&apos;ll know before the airline tells you.
+                {data.heroSubtitle}
               </motion.p>
 
               <motion.div
@@ -205,7 +203,7 @@ export default function TransportPage() {
               >
                 <Link href="/signup" className="inline-block">
                   <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                    Centralize my journeys
+                    {data.heroCta}
                   </PulsatingButton>
                 </Link>
               </motion.div>
@@ -218,7 +216,7 @@ export default function TransportPage() {
                 to={{ city: "Lisbon", code: "LIS", time: "10:30" }}
                 type="flight"
                 time="2h45"
-                details="TAP Portugal TP443 • Economy Class"
+                details="TAP Portugal TP443 - Economy Class"
                 delay={0.4}
               />
               <JourneySegment
@@ -226,7 +224,7 @@ export default function TransportPage() {
                 to={{ city: "Porto", code: "PRT", time: "17:15" }}
                 type="train"
                 time="3h15"
-                details="Alfa Pendular • First Class"
+                details="Alfa Pendular - First Class"
                 delay={0.5}
               />
             </div>
@@ -258,9 +256,9 @@ export default function TransportPage() {
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <TicketStub type="flight" code="AF1234" details="Paris → Lisbon • April 15" delay={0.1} />
-              <TicketStub type="train" code="CP5678" details="Lisbon → Porto • April 18" delay={0.2} />
-              <TicketStub type="hotel" code="BOOKING-9012" details="Hotel Porto • 4 nights" delay={0.3} />
+              <TicketStub type="flight" code="AF1234" details="Paris to Lisbon - April 15" delay={0.1} />
+              <TicketStub type="train" code="CP5678" details="Lisbon to Porto - April 18" delay={0.2} />
+              <TicketStub type="hotel" code="BOOKING-9012" details="Hotel Porto - 4 nights" delay={0.3} />
             </div>
 
             <motion.div
@@ -285,12 +283,7 @@ export default function TransportPage() {
         <section className="px-4 lg:px-8 py-16 bg-[#001E13]">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-6">
-              {[
-                { icon: "📧", title: "Email Import", desc: "Automatic scanning" },
-                { icon: "🔔", title: "Alerts", desc: "Delays and changes" },
-                { icon: "📱", title: "Offline", desc: "Access without connection" },
-                { icon: "👥", title: "Sharing", desc: "Info for the group" },
-              ].map((f, i) => (
+              {data.features.map((f, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -301,7 +294,7 @@ export default function TransportPage() {
                 >
                   <span className="text-4xl block mb-3">{f.icon}</span>
                   <h3 className="font-londrina-solid text-lg text-[#FFFBF5] mb-1">{f.title}</h3>
-                  <p className="text-sm text-[#FFFBF5]/60 font-karla">{f.desc}</p>
+                  <p className="text-sm text-[#FFFBF5]/60 font-karla">{f.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -334,7 +327,7 @@ export default function TransportPage() {
               {/* Mini timeline */}
               <div className="space-y-4">
                 {[
-                  { time: "08:45", event: "Flight CDG → LIS", icon: "✈️", color: "#61DBD5" },
+                  { time: "08:45", event: "Flight CDG to LIS", icon: "✈️", color: "#61DBD5" },
                   { time: "10:30", event: "Arrive Lisbon", icon: "📍", color: "#F6391A" },
                   { time: "11:00", event: "Hotel transfer", icon: "🚕", color: "#EEF899" },
                   { time: "14:00", event: "Check-in Hotel Alfama", icon: "🏨", color: "#8B5CF6" },
@@ -359,7 +352,7 @@ export default function TransportPage() {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={faqItems} accentColor="#61DBD5" />
+        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-16">
@@ -372,17 +365,17 @@ export default function TransportPage() {
             >
               <span className="text-5xl mb-4 block">🗺️</span>
               <h2 className="text-3xl font-londrina-solid text-white mb-4">
-                Never lose a ticket again
+                {data.ctaTitle}
               </h2>
               <p className="text-white/90 font-karla mb-8 max-w-md mx-auto">
-                All your journeys accessible in 2 seconds, even offline
+                {data.ctaSubtitle}
               </p>
               <Link href="/signup" className="inline-block">
                 <button className="bg-[#001E13] text-white font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
-                  Find all my tickets
+                  {data.ctaButton}
                 </button>
               </Link>
-              <p className="text-sm text-white/60 mt-3 font-karla">Free, no credit card required</p>
+              <p className="text-sm text-white/60 mt-3 font-karla">{data.heroCtaSubtext}</p>
             </motion.div>
           </div>
         </section>

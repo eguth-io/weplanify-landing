@@ -145,7 +145,8 @@ export const landingPageQuery = groq`
       featuredTestimonials[] {
         quote,
         author,
-        authorRole
+        authorRole,
+        "avatar": avatar.asset->url
       },
       statsTitle,
       stats[] {
@@ -383,17 +384,15 @@ export const blogPostsQuery = groq`
 // FAQ Query (with locale filter)
 // ============================================
 export const faqQuery = groq`
-  *[_type == "landingPage" && language == $locale][0] {
-    faq {
-      title,
-      supportTitle,
-      supportDescription,
-      supportButtonText,
-      supportButtonUrl,
-      items[] {
-        question,
-        answer
-      }
+  *[_type == "landingPage" && language == $locale][0].faq {
+    title,
+    supportTitle,
+    supportDescription,
+    supportButtonText,
+    supportButtonUrl,
+    items[] {
+      question,
+      answer
     }
   }
 `;

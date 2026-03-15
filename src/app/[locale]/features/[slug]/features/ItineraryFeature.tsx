@@ -6,29 +6,28 @@ import { TimelineCalendar } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-// FAQ Data for SEO
-const faqItems = [
-  {
-    question: "How do I create a day-by-day travel itinerary?",
-    answer: "With Weplanify, simply add your stops (accommodations, activities, restaurants) and they automatically appear on the timeline. You can then reorganize with drag-and-drop while the app calculates travel times between each point."
-  },
-  {
-    question: "Does the app calculate travel times?",
-    answer: "Yes, Weplanify automatically calculates travel times between each stop on your itinerary, whether by car, public transit, or on foot. You can immediately see if your schedule is realistic."
-  },
-  {
-    question: "Can I export the itinerary to PDF?",
-    answer: "Absolutely! Export your complete itinerary to PDF to have it offline or print it out. The PDF includes all addresses, schedules, and booking information."
-  },
-  {
-    question: "How do I reorganize activities in the itinerary?",
-    answer: "Just use drag-and-drop! Move any activity to another day or change the order within the same day. The app automatically recalculates travel times."
-  },
-  {
-    question: "Is the itinerary shared with the whole group?",
-    answer: "Yes, all trip participants see the same itinerary in real time. Changes are synchronized instantly so everyone stays up to date."
-  }
-];
+interface FeaturePageData {
+  slug: string;
+  icon: string;
+  accentColor: string;
+  gradientFrom: string;
+  heroBadge: string;
+  heroTitle: string;
+  heroTitleHighlight: string;
+  heroSubtitle: string;
+  socialProofText: string;
+  heroCta: string;
+  heroCtaSubtext: string;
+  stats: { value: string; label: string }[];
+  featuresTitle: string;
+  features: { icon: string; title: string; description: string }[];
+  faqItems: { question: string; answer: string }[];
+  ctaTitle: string;
+  ctaSubtitle: string;
+  ctaButton: string;
+  seoTitle: string;
+  seoDescription: string;
+}
 
 // Timeline item component
 function TimelineItem({
@@ -97,14 +96,14 @@ function DragHandle() {
   );
 }
 
-export default function ItineraryPage() {
+export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
   return (
     <>
       <FeatureJsonLd
-        featureName="Travel Itinerary - Day-by-Day Planning"
-        featureDescription="Organize your trip day by day with our interactive timeline. Visualize, reorganize, and optimize your vacation schedule easily with automatic travel time calculations."
-        featureUrl="https://weplanify.com/features/itinerary"
-        faqItems={faqItems}
+        featureName={data.seoTitle}
+        featureDescription={data.seoDescription}
+        featureUrl={`https://weplanify.com/features/${data.slug}`}
+        faqItems={data.faqItems}
       />
 
       <div className="min-h-screen bg-[#FFFBF5]">
@@ -117,7 +116,7 @@ export default function ItineraryPage() {
                 animate={{ opacity: 1 }}
                 className="inline-block px-4 py-1 bg-[#F6391A]/10 text-[#F6391A] rounded-full text-sm font-karla mb-4"
               >
-                📅 Interactive Timeline
+                {data.icon} {data.heroBadge}
               </motion.span>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -125,9 +124,9 @@ export default function ItineraryPage() {
                 transition={{ delay: 0.1 }}
                 className="text-4xl lg:text-6xl font-londrina-solid text-[#001E13] mb-6"
               >
-                Travel planning
+                {data.heroTitle}
                 <br />
-                <span className="text-[#F6391A]">that actually works</span>
+                <span className="text-[#F6391A]">{data.heroTitleHighlight}</span>
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -135,8 +134,7 @@ export default function ItineraryPage() {
                 transition={{ delay: 0.2 }}
                 className="text-lg text-[#001E13]/70 font-karla max-w-xl mx-auto"
               >
-                The app calculates travel times and warns you if the 8pm restaurant is 2 hours from the 6pm museum.
-                Zero surprises on the ground.
+                {data.heroSubtitle}
               </motion.p>
             </div>
 
@@ -239,16 +237,11 @@ export default function ItineraryPage() {
               viewport={{ once: true }}
               className="text-3xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-12"
             >
-              Organize like a pro
+              {data.featuresTitle}
             </motion.h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { icon: "✋", title: "Drag & Drop", desc: "Reorganize by dragging" },
-                { icon: "🚗", title: "Auto Travel Times", desc: "Calculated between stops" },
-                { icon: "⚠️", title: "Alerts", desc: "Schedule conflicts detected" },
-                { icon: "📤", title: "PDF Export", desc: "Share your schedule" },
-              ].map((f, i) => (
+              {data.features.map((f, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -259,7 +252,7 @@ export default function ItineraryPage() {
                 >
                   <span className="text-4xl block mb-3">{f.icon}</span>
                   <h3 className="font-londrina-solid text-lg text-[#001E13] mb-1">{f.title}</h3>
-                  <p className="text-sm text-[#001E13]/60 font-karla">{f.desc}</p>
+                  <p className="text-sm text-[#001E13]/60 font-karla">{f.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -267,7 +260,7 @@ export default function ItineraryPage() {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={faqItems} accentColor="#F6391A" />
+        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-12">
@@ -278,19 +271,19 @@ export default function ItineraryPage() {
               viewport={{ once: true }}
               className="bg-gradient-to-br from-[#F6391A] to-[#F6391A]/80 rounded-[32px] p-8 lg:p-12 text-center"
             >
-              <span className="text-5xl mb-4 block">📅</span>
+              <span className="text-5xl mb-4 block">{data.icon}</span>
               <h2 className="text-3xl font-londrina-solid text-white mb-4">
-                Say goodbye to messy Excel spreadsheets
+                {data.ctaTitle}
               </h2>
               <p className="text-white/80 font-karla mb-8 max-w-md mx-auto">
-                Drag and drop, the app optimizes your routes
+                {data.ctaSubtitle}
               </p>
               <Link href="/signup" className="inline-block">
                 <button className="bg-white text-[#F6391A] font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
-                  Create my optimized schedule
+                  {data.ctaButton}
                 </button>
               </Link>
-              <p className="text-sm text-white/60 mt-3 font-karla">Free, no credit card required</p>
+              <p className="text-sm text-white/60 mt-3 font-karla">{data.heroCtaSubtext}</p>
             </motion.div>
           </div>
         </section>

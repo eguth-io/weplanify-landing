@@ -8,29 +8,28 @@ import { PackingSuitcase } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-// FAQ Data for SEO
-const faqItems = [
-  {
-    question: "How does Weplanify generate my packing list?",
-    answer: "The app analyzes your destination, travel dates, expected weather, and planned activities to generate a personalized list. A summer beach trip won't have the same list as a winter city break."
-  },
-  {
-    question: "Can we share items between travelers?",
-    answer: "Yes! The 'Shared Items' feature lets you assign items to specific people. Who's bringing the first aid kit? The adapter? No more duplicates in the group."
-  },
-  {
-    question: "Does the app send reminders before departure?",
-    answer: "Absolutely. You receive configurable notifications: 1 week before, 3 days before, and the night before departure. Impossible to forget something important."
-  },
-  {
-    question: "Can I create my own categories?",
-    answer: "Yes, in addition to the default categories (clothing, electronics, toiletries, documents), you can create your own custom categories and reuse them for future trips."
-  },
-  {
-    question: "Is my list saved for future trips?",
-    answer: "Yes! Your lists are saved and can be duplicated. You can also create templates (beach trip, city break, hiking) to save time."
-  }
-];
+interface FeaturePageData {
+  slug: string;
+  icon: string;
+  accentColor: string;
+  gradientFrom: string;
+  heroBadge: string;
+  heroTitle: string;
+  heroTitleHighlight: string;
+  heroSubtitle: string;
+  socialProofText: string;
+  heroCta: string;
+  heroCtaSubtext: string;
+  stats: { value: string; label: string }[];
+  featuresTitle: string;
+  features: { icon: string; title: string; description: string }[];
+  faqItems: { question: string; answer: string }[];
+  ctaTitle: string;
+  ctaSubtitle: string;
+  ctaButton: string;
+  seoTitle: string;
+  seoDescription: string;
+}
 
 // Checklist item with animation
 function ChecklistItem({
@@ -131,14 +130,14 @@ function CategorySection({
   );
 }
 
-export default function PackingPage() {
+export default function PackingFeature({ data }: { data: FeaturePageData }) {
   return (
     <>
       <FeatureJsonLd
-        featureName="Packing List - Smart Packing"
-        featureDescription="Never forget anything with our smart packing list. Suggestions based on your destination, weather, and shared items with your group."
-        featureUrl="https://weplanify.com/features/packing"
-        faqItems={faqItems}
+        featureName={data.seoTitle}
+        featureDescription={data.seoDescription}
+        featureUrl={`https://weplanify.com/features/${data.slug}`}
+        faqItems={data.faqItems}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-[#FFFBF5] to-[#61DBD5]/10">
@@ -152,7 +151,7 @@ export default function PackingPage() {
                 transition={{ type: "spring", stiffness: 200 }}
                 className="inline-block mb-6"
               >
-                <span className="text-7xl">🧳</span>
+                <span className="text-7xl">{data.icon}</span>
               </motion.div>
 
               <motion.h1
@@ -161,7 +160,7 @@ export default function PackingPage() {
                 transition={{ delay: 0.1 }}
                 className="text-4xl lg:text-6xl font-londrina-solid text-[#001E13] mb-6"
               >
-                <span className="text-[#F6391A]">Smart</span> packing list
+                <span className="text-[#F6391A]">{data.heroTitleHighlight}</span> {data.heroTitle}
               </motion.h1>
 
               <motion.p
@@ -170,8 +169,7 @@ export default function PackingPage() {
                 transition={{ delay: 0.2 }}
                 className="text-lg text-[#001E13]/70 font-karla max-w-xl mx-auto mb-8"
               >
-                The AI knows it&apos;s 28°C in Lisbon in April and that you&apos;ve planned surfing.
-                It reminds you about sunscreen AND the wetsuit.
+                {data.heroSubtitle}
               </motion.p>
 
               {/* Overall progress */}
@@ -260,7 +258,7 @@ export default function PackingPage() {
               <div>
                 <p className="font-karla font-semibold text-[#001E13]">Suggestion based on your trip</p>
                 <p className="text-sm text-[#001E13]/60">
-                  The average temperature in Lisbon in April is 28°C. Remember to pack light clothing and sunscreen!
+                  The average temperature in Lisbon in April is 28 degrees C. Remember to pack light clothing and sunscreen!
                 </p>
               </div>
             </motion.div>
@@ -336,12 +334,7 @@ export default function PackingPage() {
         <section className="px-4 lg:px-8 py-16 bg-[#F6391A]/5">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-6">
-              {[
-                { icon: "🧠", title: "AI", desc: "Tailored suggestions" },
-                { icon: "🌤️", title: "Weather", desc: "Based on destination" },
-                { icon: "👥", title: "Sharing", desc: "Group distribution" },
-                { icon: "🔔", title: "Reminders", desc: "Before departure" },
-              ].map((f, i) => (
+              {data.features.map((f, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -352,7 +345,7 @@ export default function PackingPage() {
                 >
                   <span className="text-4xl block mb-3">{f.icon}</span>
                   <h3 className="font-londrina-solid text-lg text-[#001E13] mb-1">{f.title}</h3>
-                  <p className="text-sm text-[#001E13]/60 font-karla">{f.desc}</p>
+                  <p className="text-sm text-[#001E13]/60 font-karla">{f.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -360,7 +353,7 @@ export default function PackingPage() {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={faqItems} accentColor="#F6391A" />
+        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-16">
@@ -372,17 +365,17 @@ export default function PackingPage() {
             >
               <span className="text-6xl mb-6 block">✅</span>
               <h2 className="text-3xl lg:text-4xl font-londrina-solid text-[#001E13] mb-4">
-                Ready to pack your bags?
+                {data.ctaTitle}
               </h2>
               <p className="text-[#001E13]/60 font-karla mb-8 max-w-md mx-auto">
-                Never leave without your charger again
+                {data.ctaSubtitle}
               </p>
               <Link href="/signup" className="inline-block">
                 <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                  Create my travel checklist
+                  {data.ctaButton}
                 </PulsatingButton>
               </Link>
-              <p className="text-sm text-[#001E13]/50 mt-3 font-karla">Free, no credit card required</p>
+              <p className="text-sm text-[#001E13]/50 mt-3 font-karla">{data.heroCtaSubtext}</p>
             </motion.div>
           </div>
         </section>

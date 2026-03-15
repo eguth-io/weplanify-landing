@@ -3,7 +3,6 @@ import { NavType, Navigation } from "@/sanity/lib/type";
 import Image from "next/image";
 import Link from "next/link";
 import { PulsatingButton } from "./magicui/pulsating-button";
-import FeaturesDropdown from "./FeaturesDropdown";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -115,21 +114,18 @@ export default function Nav({ navData, navigationData }: NavProps) {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-[40px] text-sm items-center">
-          <FeaturesDropdown />
           {navigationData?.navigationLinks && navigationData.navigationLinks.length > 0 ? (
-            navigationData.navigationLinks
-              .filter((link) => !["features", "fonctionnalités"].includes(link.label.toLowerCase()))
-              .map((link, index) => (
-                <Link
-                  key={index}
-                  href={getLinkHref(link)}
-                  onClick={(e) => handleAnchorClick(e, link)}
-                  target={link.openInNewTab ? "_blank" : undefined}
-                  rel={link.isExternal ? "noopener noreferrer" : undefined}
-                >
-                  {link.label}
-                </Link>
-              ))
+            navigationData.navigationLinks.map((link, index) => (
+              <Link
+                key={index}
+                href={getLinkHref(link)}
+                onClick={(e) => handleAnchorClick(e, link)}
+                target={link.openInNewTab ? "_blank" : undefined}
+                rel={link.isExternal ? "noopener noreferrer" : undefined}
+              >
+                {link.label}
+              </Link>
+            ))
           ) : (
             <>
               <Link href={`/${locale}/faq`}>FAQ</Link>
@@ -201,25 +197,22 @@ export default function Nav({ navData, navigationData }: NavProps) {
 
           {/* Navigation Links */}
           <div className="flex flex-col px-6 py-8 space-y-6">
-            <FeaturesDropdown isMobile onItemClick={closeMenu} />
             {navigationData?.navigationLinks && navigationData.navigationLinks.length > 0 ? (
-              navigationData.navigationLinks
-                .filter((link) => !["features", "fonctionnalités"].includes(link.label.toLowerCase()))
-                .map((link, index) => (
-                  <Link
-                    key={index}
-                    href={getLinkHref(link)}
-                    onClick={(e) => {
-                      handleAnchorClick(e, link);
-                      closeMenu();
-                    }}
-                    className="text-lg font-medium hover:text-[#F6391A] transition-colors"
-                    target={link.openInNewTab ? "_blank" : undefined}
-                    rel={link.isExternal ? "noopener noreferrer" : undefined}
-                  >
-                    {link.label}
-                  </Link>
-                ))
+              navigationData.navigationLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  href={getLinkHref(link)}
+                  onClick={(e) => {
+                    handleAnchorClick(e, link);
+                    closeMenu();
+                  }}
+                  className="text-lg font-medium hover:text-[#F6391A] transition-colors"
+                  target={link.openInNewTab ? "_blank" : undefined}
+                  rel={link.isExternal ? "noopener noreferrer" : undefined}
+                >
+                  {link.label}
+                </Link>
+              ))
             ) : (
               <>
                 <Link

@@ -42,6 +42,7 @@ const defaultCards: Card[] = [
     animation: "ai-globe",
     backgroundColor: "#FFFBF5",
     ctaLabel: "Plan my trip with AI",
+    ctaUrl: "/features/ai-planning",
     ctaTextColor: "#FFFFFF",
     ctaBackgroundColor: "#F6391A",
     stats: [
@@ -57,6 +58,7 @@ const defaultCards: Card[] = [
     animation: "live-voting",
     backgroundColor: "#EEF899",
     ctaLabel: "Create a poll",
+    ctaUrl: "/features/polls",
     ctaTextColor: "#FFFFFF",
     ctaBackgroundColor: "#8B5CF6",
     stats: [
@@ -72,6 +74,7 @@ const defaultCards: Card[] = [
     animation: "live-collaboration",
     backgroundColor: "#61DBD5",
     ctaLabel: "Invite my friends",
+    ctaUrl: "/features/collaboration",
     ctaTextColor: "#FFFFFF",
     ctaBackgroundColor: "#F6391A",
     stats: [

@@ -145,11 +145,21 @@ export default function ReadyBanner({ data }: ReadyBannerProps) {
               </p>
             )}
 
+            {/* Social proof */}
+            <p className="text-[#61DBD5] text-sm lg:text-base font-karla mb-4">
+              Join 12,000+ travelers planning smarter trips
+            </p>
+
             <Link href={data.buttonUrl || "#"}>
               <button className="bg-[#EEF899] text-[#001E13] px-6 py-2 rounded-full font-karla font-bold text-sm lg:text-base hover:bg-[#EEF899]/90 transition-colors ring-4 ring-[#EEF899] ring-opacity-15">
                 {data.buttonText}
               </button>
             </Link>
+
+            {/* Free forever notice */}
+            <p className="text-[#FFFBF5]/60 text-xs lg:text-sm font-karla mt-3">
+              Free forever. No credit card required.
+            </p>
           </div>
         </div>
       </div>

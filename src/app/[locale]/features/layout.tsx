@@ -26,7 +26,7 @@ export default async function FeaturesLayout({ children, params }: Props) {
           logo: navigationData?.logo || "/logo.webp",
           logoMobile: navigationData?.logo || "/logo.webp",
           connexionLink: navigationData?.connectionButton?.url || "/connexion",
-          ctaButton: navigationData?.ctaButton?.text || "Get started",
+          ctaButton: navigationData?.ctaButton?.text || "Plan my trip free",
           ctaLink: navigationData?.ctaButton?.url || "/contact",
         }}
         navigationData={navigationData}

@@ -78,6 +78,7 @@ export default async function HomePage({ params }: Props) {
                 fill
                 className="object-cover"
                 priority
+                fetchPriority="high"
               />
               {/* Subtle Dark Overlay */}
               <div className="absolute inset-0 bg-black/20"></div>
@@ -104,10 +105,13 @@ export default async function HomePage({ params }: Props) {
               </div>
 
               {hero?.ctaText && (
-                <div className="flex gap-4 items-center">
+                <div className="flex flex-col gap-2 items-center lg:items-start">
                   <PulsatingButton className="font-karla font-bold">
                     {hero.ctaText}
                   </PulsatingButton>
+                  <p className="text-[#FFFBF5]/80 text-xs lg:text-sm font-karla">
+                    Free forever. No credit card required.
+                  </p>
                 </div>
               )}
             </div>
@@ -128,9 +132,9 @@ export default async function HomePage({ params }: Props) {
             {testimonialStats?.stats && (
               <div className="bg-[#EEF899] rounded-[24px] lg:rounded-[32px] p-8 lg:p-12">
                 {testimonialStats.statsTitle && (
-                  <h3 className="text-[#001E13] text-base lg:text-lg font-semibold mb-8 lg:mb-10">
+                  <h2 className="text-[#001E13] text-base lg:text-lg font-semibold mb-8 lg:mb-10">
                     {testimonialStats.statsTitle}
-                  </h3>
+                  </h2>
                 )}
                 <div className="grid grid-cols-2 gap-6 lg:gap-8">
                   {testimonialStats.stats.map((stat, index) => (

@@ -7,29 +7,28 @@ import { LiveCollaboration } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-// FAQ Data for SEO
-const faqItems = [
-  {
-    question: "How do I invite friends to collaborate on a trip?",
-    answer: "It's super easy! Share an invite link or send an email invitation directly from the app. Your friends can join the trip in one click, even without a Weplanify account."
-  },
-  {
-    question: "Are changes really synced in real-time?",
-    answer: "Yes, all changes are synced instantly using WebSocket technology. You see your co-travelers' edits appear live, with their cursor and name displayed."
-  },
-  {
-    question: "Can I limit editing permissions?",
-    answer: "Absolutely. The trip creator can set roles: editor (full access), contributor (can suggest changes), or viewer (read-only). Perfect for large groups."
-  },
-  {
-    question: "Is there a limit to the number of participants?",
-    answer: "No technical limit. We have trips with 50+ participants running smoothly. Collaboration stays fluid no matter the group size."
-  },
-  {
-    question: "How do you handle editing conflicts?",
-    answer: "Weplanify handles conflicts automatically. If two people edit the same element, the system intelligently merges changes or lets you choose. Full history also allows restoring previous versions."
-  }
-];
+interface FeaturePageData {
+  slug: string;
+  icon: string;
+  accentColor: string;
+  gradientFrom: string;
+  heroBadge: string;
+  heroTitle: string;
+  heroTitleHighlight: string;
+  heroSubtitle: string;
+  socialProofText: string;
+  heroCta: string;
+  heroCtaSubtext: string;
+  stats: { value: string; label: string }[];
+  featuresTitle: string;
+  features: { icon: string; title: string; description: string }[];
+  faqItems: { question: string; answer: string }[];
+  ctaTitle: string;
+  ctaSubtitle: string;
+  ctaButton: string;
+  seoTitle: string;
+  seoDescription: string;
+}
 
 // Avatar component with cursor
 function CollaboratorAvatar({
@@ -118,14 +117,14 @@ function ActivityItem({
   );
 }
 
-export default function CollaborationPage() {
+export default function CollaborationFeature({ data }: { data: FeaturePageData }) {
   return (
     <>
       <FeatureJsonLd
-        featureName="Real-time Collaboration - Group Trip Planning"
-        featureDescription="Plan your group trip with friends and family. Real-time edits, integrated discussions, and perfect sync for seamless collaborative organization."
-        featureUrl="https://weplanify.com/features/collaboration"
-        faqItems={faqItems}
+        featureName={data.seoTitle}
+        featureDescription={data.seoDescription}
+        featureUrl={`https://weplanify.com/features/${data.slug}`}
+        faqItems={data.faqItems}
       />
 
       <div className="min-h-screen bg-[#FFFBF5]">
@@ -141,7 +140,7 @@ export default function CollaborationPage() {
                   className="flex items-center gap-2 mb-4"
                 >
                   <LiveDot />
-                  <span className="text-sm font-karla text-green-600">3 people editing right now</span>
+                  <span className="text-sm font-karla text-green-600">{data.heroBadge}</span>
                 </motion.div>
 
                 <motion.h1
@@ -150,9 +149,9 @@ export default function CollaborationPage() {
                   transition={{ delay: 0.1 }}
                   className="text-4xl lg:text-6xl font-londrina-solid text-[#001E13] mb-6"
                 >
-                  Plan a trip with 10 friends
+                  {data.heroTitle}
                   <br />
-                  <span className="text-[#F6391A]">without a single WhatsApp message</span>
+                  <span className="text-[#F6391A]">{data.heroTitleHighlight}</span>
                 </motion.h1>
 
                 <motion.p
@@ -161,8 +160,7 @@ export default function CollaborationPage() {
                   transition={{ delay: 0.2 }}
                   className="text-lg text-[#001E13]/70 font-karla mb-4"
                 >
-                  Real-time edits, built-in polls, clear history.
-                  Everyone on the same page, literally.
+                  {data.heroSubtitle}
                 </motion.p>
 
                 {/* Social proof */}
@@ -172,8 +170,11 @@ export default function CollaborationPage() {
                   transition={{ delay: 0.25 }}
                   className="flex flex-wrap gap-4 mb-8 text-sm font-karla"
                 >
-                  <span className="px-3 py-1 bg-[#61DBD5]/20 rounded-full text-[#001E13]">12,000+ trips planned</span>
-                  <span className="px-3 py-1 bg-[#F6391A]/10 rounded-full text-[#001E13]">45 sec to invite your group</span>
+                  {data.stats.map((stat, index) => (
+                    <span key={index} className="px-3 py-1 bg-[#61DBD5]/20 rounded-full text-[#001E13]">
+                      {stat.value} {stat.label}
+                    </span>
+                  ))}
                 </motion.div>
 
                 {/* Collaborators avatars */}
@@ -206,7 +207,7 @@ export default function CollaborationPage() {
                 >
                   <Link href="/signup" className="inline-block">
                     <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                      Invite my first friend - Free
+                      {data.heroCta}
                     </PulsatingButton>
                   </Link>
                 </motion.div>
@@ -222,7 +223,7 @@ export default function CollaborationPage() {
                 <div className="bg-white rounded-2xl shadow-2xl p-6 relative min-h-[400px]">
                   {/* Fake interface */}
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="font-londrina-solid text-xl text-[#001E13]">Road Trip Portugal 🇵🇹</h3>
+                    <h3 className="font-londrina-solid text-xl text-[#001E13]">Road Trip Portugal</h3>
                     <div className="flex items-center gap-2">
                       <LiveDot />
                       <span className="text-xs text-[#001E13]/50">Live</span>
@@ -236,18 +237,18 @@ export default function CollaborationPage() {
                       transition={{ duration: 2, repeat: Infinity, delay: 1 }}
                       className="p-3 rounded-lg border border-[#61DBD5]"
                     >
-                      <span className="text-sm font-karla text-[#001E13]">📍 Day 1 - Lisbon</span>
+                      <span className="text-sm font-karla text-[#001E13]">Day 1 - Lisbon</span>
                     </motion.div>
                     <motion.div
                       animate={{ backgroundColor: ['#FFF', '#F6391A20', '#FFF'] }}
                       transition={{ duration: 2, repeat: Infinity, delay: 2 }}
                       className="p-3 rounded-lg border border-[#F6391A]"
                     >
-                      <span className="text-sm font-karla text-[#001E13]">📍 Day 2 - Sintra</span>
+                      <span className="text-sm font-karla text-[#001E13]">Day 2 - Sintra</span>
                       <span className="ml-2 text-xs bg-[#F6391A]/10 text-[#F6391A] px-2 py-0.5 rounded">Marie editing...</span>
                     </motion.div>
                     <div className="p-3 rounded-lg border border-gray-200">
-                      <span className="text-sm font-karla text-[#001E13]">📍 Day 3 - Porto</span>
+                      <span className="text-sm font-karla text-[#001E13]">Day 3 - Porto</span>
                     </div>
                   </div>
 
@@ -314,23 +315,7 @@ export default function CollaborationPage() {
         <section className="px-4 lg:px-8 py-16 lg:py-24">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: "⚡",
-                  title: "Real-time",
-                  description: "Changes appear instantly for all trip participants.",
-                },
-                {
-                  icon: "💬",
-                  title: "Comments",
-                  description: "Discuss each element directly in the app, no WhatsApp group needed.",
-                },
-                {
-                  icon: "🔐",
-                  title: "Permissions",
-                  description: "Set who can edit and who can only view the trip.",
-                },
-              ].map((feature, index) => (
+              {data.features.map((feature, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -349,7 +334,7 @@ export default function CollaborationPage() {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={faqItems} accentColor="#F6391A" />
+        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-12 lg:py-16">
@@ -361,14 +346,14 @@ export default function CollaborationPage() {
               className="bg-gradient-to-r from-[#61DBD5] to-[#F6391A] rounded-[32px] p-8 lg:p-12"
             >
               <h2 className="text-3xl lg:text-4xl font-londrina-solid text-white mb-4">
-                No more endless WhatsApp groups
+                {data.ctaTitle}
               </h2>
               <p className="text-white/90 font-karla mb-8 max-w-lg mx-auto">
-                Everyone on the same page, in real-time
+                {data.ctaSubtitle}
               </p>
               <Link href="/signup" className="inline-block">
                 <button className="bg-white text-[#001E13] font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
-                  Invite my friends now
+                  {data.ctaButton}
                 </button>
               </Link>
               <p className="text-sm text-white/60 mt-3 font-karla">Free, no credit card required</p>

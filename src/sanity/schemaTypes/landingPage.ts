@@ -184,16 +184,27 @@ export const landingPage = defineType({
                   type: "string",
                   description: "Ex: 'Voyageuse passionnée', 'Digital nomad'",
                 },
+                {
+                  name: "avatar",
+                  title: "Photo de l'auteur",
+                  type: "image",
+                  description: "Photo avatar de l'auteur (optionnel)",
+                  options: {
+                    hotspot: true,
+                  },
+                },
               ],
               preview: {
                 select: {
                   author: "author",
                   quote: "quote",
+                  media: "avatar",
                 },
-                prepare({ author, quote }) {
+                prepare({ author, quote, media }) {
                   return {
                     title: author || "Anonyme",
                     subtitle: quote?.substring(0, 60) || "",
+                    media,
                   };
                 },
               },

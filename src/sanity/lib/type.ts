@@ -155,6 +155,7 @@ export interface LandingPage {
       quote: string;
       author: string;
       authorRole?: string;
+      avatar?: string;
     }>;
     statsTitle: string;
     stats: Array<{

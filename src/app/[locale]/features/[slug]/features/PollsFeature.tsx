@@ -8,29 +8,28 @@ import { LiveVoting } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-// FAQ Data for SEO
-const faqItems = [
-  {
-    question: "How do I create a poll for my travel group?",
-    answer: "In seconds! Choose a poll type (destination, restaurant, activity, date), add your options, and share. Participants get notified and vote directly from the app."
-  },
-  {
-    question: "Are votes anonymous?",
-    answer: "Your choice! You can create public polls (everyone sees who voted what) or anonymous ones (only results visible). Handy depending on the topic."
-  },
-  {
-    question: "Can I set a voting deadline?",
-    answer: "Yes, you can schedule an end date and time. Non-voters get automatic reminders. When time's up, the result is announced to the group."
-  },
-  {
-    question: "What happens in case of a tie?",
-    answer: "Several options: run a runoff between tied options, let the creator decide, or use random selection. You choose the tiebreaker method at creation."
-  },
-  {
-    question: "Can I vote for multiple options?",
-    answer: "Yes! You can allow multiple votes (choose several options) or single vote. You can also let participants add new options after creation."
-  }
-];
+interface FeaturePageData {
+  slug: string;
+  icon: string;
+  accentColor: string;
+  gradientFrom: string;
+  heroBadge: string;
+  heroTitle: string;
+  heroTitleHighlight: string;
+  heroSubtitle: string;
+  socialProofText: string;
+  heroCta: string;
+  heroCtaSubtext: string;
+  stats: { value: string; label: string }[];
+  featuresTitle: string;
+  features: { icon: string; title: string; description: string }[];
+  faqItems: { question: string; answer: string }[];
+  ctaTitle: string;
+  ctaSubtitle: string;
+  ctaButton: string;
+  seoTitle: string;
+  seoDescription: string;
+}
 
 // Poll option with live voting animation
 function PollOption({
@@ -63,7 +62,6 @@ function PollOption({
         isWinning ? 'border-[#F6391A]' : 'border-transparent'
       }`}
     >
-      {/* Progress bar background */}
       <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: `${percentage}%` }}
@@ -163,14 +161,14 @@ function LivePoll({
   );
 }
 
-export default function PollsPage() {
+export default function PollsFeature({ data }: { data: FeaturePageData }) {
   return (
     <>
       <FeatureJsonLd
-        featureName="Travel Polls - Group Decisions"
-        featureDescription="Make group decisions easily with Weplanify polls. Vote in real-time to choose destinations, activities, and restaurants for your vacation."
-        featureUrl="https://weplanify.com/features/polls"
-        faqItems={faqItems}
+        featureName={data.seoTitle}
+        featureDescription={data.seoDescription}
+        featureUrl={`https://weplanify.com/features/${data.slug}`}
+        faqItems={data.faqItems}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-[#8B5CF6]/10 via-[#FFFBF5] to-[#FFFBF5]">
@@ -185,8 +183,8 @@ export default function PollsPage() {
                   animate={{ opacity: 1 }}
                   className="inline-flex items-center gap-2 px-4 py-1 bg-[#8B5CF6]/20 rounded-full mb-4"
                 >
-                  <span className="text-lg">🗳️</span>
-                  <span className="text-[#8B5CF6] font-karla text-sm">Live polls</span>
+                  <span className="text-lg">{data.icon}</span>
+                  <span className="text-[#8B5CF6] font-karla text-sm">{data.heroBadge}</span>
                 </motion.div>
 
                 <motion.h1
@@ -195,9 +193,9 @@ export default function PollsPage() {
                   transition={{ delay: 0.1 }}
                   className="text-4xl lg:text-6xl font-londrina-solid text-[#001E13] mb-6"
                 >
-                  Decide together
+                  {data.heroTitle}
                   <br />
-                  <span className="text-[#8B5CF6]">in 2 minutes</span>
+                  <span className="text-[#8B5CF6]">{data.heroTitleHighlight}</span>
                 </motion.h1>
 
                 <motion.p
@@ -206,18 +204,16 @@ export default function PollsPage() {
                   transition={{ delay: 0.2 }}
                   className="text-lg text-[#001E13]/70 font-karla mb-4 max-w-md"
                 >
-                  Pizza or sushi? Hotel or Airbnb?
-                  One quick vote replaces 47 WhatsApp messages.
+                  {data.heroSubtitle}
                 </motion.p>
 
-                {/* Social proof */}
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.25 }}
                   className="text-sm text-[#8B5CF6] font-karla mb-8"
                 >
-                  +50,000 decisions made this month
+                  {data.socialProofText}
                 </motion.p>
 
                 <motion.div
@@ -227,10 +223,10 @@ export default function PollsPage() {
                 >
                   <Link href="/signup" className="inline-block">
                     <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                      Create my first poll
+                      {data.heroCta}
                     </PulsatingButton>
                   </Link>
-                  <p className="text-sm text-[#001E13]/50 mt-2 font-karla">Free - Ready in 30 seconds</p>
+                  <p className="text-sm text-[#001E13]/50 mt-2 font-karla">{data.heroCtaSubtext}</p>
                 </motion.div>
               </div>
 
@@ -286,27 +282,9 @@ export default function PollsPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                {
-                  question: "Which destination?",
-                  options: ["🇪🇸 Spain", "🇵🇹 Portugal", "🇮🇹 Italy"],
-                  winner: "🇵🇹 Portugal",
-                  votes: 12,
-                  status: "completed"
-                },
-                {
-                  question: "Day 3 activity?",
-                  options: ["🏄 Surfing", "🚶 Hiking", "🍷 Wine tasting"],
-                  winner: "🏄 Surfing",
-                  votes: 8,
-                  status: "completed"
-                },
-                {
-                  question: "Hotel or Airbnb?",
-                  options: ["🏨 Hotel", "🏠 Airbnb"],
-                  winner: "🏠 Airbnb",
-                  votes: 10,
-                  status: "completed"
-                },
+                { question: "Which destination?", options: ["🇪🇸 Spain", "🇵🇹 Portugal", "🇮🇹 Italy"], winner: "🇵🇹 Portugal", votes: 12 },
+                { question: "Day 3 activity?", options: ["🏄 Surfing", "🚶 Hiking", "🍷 Wine tasting"], winner: "🏄 Surfing", votes: 8 },
+                { question: "Hotel or Airbnb?", options: ["🏨 Hotel", "🏠 Airbnb"], winner: "🏠 Airbnb", votes: 10 },
               ].map((poll, i) => (
                 <motion.div
                   key={i}
@@ -319,7 +297,7 @@ export default function PollsPage() {
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-londrina-solid text-lg text-[#FFFBF5]">{poll.question}</h3>
                     <span className="px-2 py-1 bg-[#FFFBF5]/10 text-[#FFFBF5]/60 text-xs rounded-full font-karla">
-                      {poll.status}
+                      completed
                     </span>
                   </div>
                   <div className="flex items-center gap-3 mb-3">
@@ -338,23 +316,7 @@ export default function PollsPage() {
         <section className="px-4 lg:px-8 py-16">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: "⚡",
-                  title: "Real-time",
-                  desc: "Votes appear instantly for everyone"
-                },
-                {
-                  icon: "🔒",
-                  title: "Anonymous or public",
-                  desc: "Choose if votes are visible or hidden"
-                },
-                {
-                  icon: "🔔",
-                  title: "Reminders",
-                  desc: "Automatically nudge those who haven't voted"
-                },
-              ].map((f, i) => (
+              {data.features.map((f, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -365,7 +327,7 @@ export default function PollsPage() {
                 >
                   <span className="text-5xl block mb-4">{f.icon}</span>
                   <h3 className="font-londrina-solid text-xl text-[#001E13] mb-2">{f.title}</h3>
-                  <p className="text-[#001E13]/60 font-karla">{f.desc}</p>
+                  <p className="text-[#001E13]/60 font-karla">{f.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -373,7 +335,7 @@ export default function PollsPage() {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={faqItems} accentColor="#8B5CF6" />
+        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-16">
@@ -384,16 +346,16 @@ export default function PollsPage() {
               viewport={{ once: true }}
               className="bg-gradient-to-r from-[#8B5CF6] to-[#F6391A] rounded-[32px] p-8 lg:p-12"
             >
-              <span className="text-5xl mb-4 block">🗳️</span>
+              <span className="text-5xl mb-4 block">{data.icon}</span>
               <h2 className="text-3xl font-londrina-solid text-white mb-4">
-                No more endless debates
+                {data.ctaTitle}
               </h2>
               <p className="text-white/80 font-karla mb-8 max-w-md mx-auto">
-                Let the group decide, democratically
+                {data.ctaSubtitle}
               </p>
               <Link href="/signup" className="inline-block">
                 <button className="bg-white text-[#001E13] font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
-                  Settle the debate now
+                  {data.ctaButton}
                 </button>
               </Link>
               <p className="text-sm text-white/60 mt-3 font-karla">Free, no credit card required</p>

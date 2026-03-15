@@ -1,12 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Footer as FooterType } from "@/sanity/lib/type";
+import { useState } from "react";
 
 interface FooterProps {
   footerData?: FooterType | null;
 }
 
 export default function Footer({ footerData }: FooterProps) {
+  const [email, setEmail] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  const handleNewsletterSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // TODO: Integrate with newsletter service
+    if (email) {
+      setIsSubscribed(true);
+      setEmail("");
+    }
+  };
+
   return (
     <footer className="px-4 lg:px-8 py-12 lg:py-16 bg-white">
       <div className="max-w-[1536px] mx-auto">
@@ -49,7 +64,7 @@ export default function Footer({ footerData }: FooterProps) {
           </div>
 
           {/* Footer CTA Section */}
-          {footerData?.ctaSection?.showCta && (
+          {footerData?.ctaSection?.showCta ? (
             <div className="flex flex-col lg:border-l border-[#001E13]/10 pl-0 lg:pl-12">
               <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
                 {footerData.ctaSection.title}
@@ -65,6 +80,38 @@ export default function Footer({ footerData }: FooterProps) {
                     {footerData.ctaSection.buttonText}
                   </button>
                 </Link>
+              )}
+            </div>
+          ) : (
+            /* Default Newsletter Section when no CTA is configured */
+            <div className="flex flex-col lg:border-l border-[#001E13]/10 pl-0 lg:pl-12">
+              <h3 className="text-[#001E13] text-base font-karla font-bold mb-4">
+                Get weekly travel inspiration
+              </h3>
+              <p className="text-[#001E13]/70 text-sm font-karla mb-4">
+                Tips, hidden gems, and travel hacks delivered to your inbox.
+              </p>
+              {isSubscribed ? (
+                <p className="text-[#005B37] text-sm font-karla font-semibold">
+                  Thanks for subscribing!
+                </p>
+              ) : (
+                <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your email"
+                    required
+                    className="flex-1 px-4 py-2.5 rounded-full border border-[#001E13]/20 text-sm font-karla focus:outline-none focus:border-[#F6391A] transition-colors"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-sm hover:bg-[#F6391A]/90 transition-colors whitespace-nowrap"
+                  >
+                    Subscribe
+                  </button>
+                </form>
               )}
             </div>
           )}
