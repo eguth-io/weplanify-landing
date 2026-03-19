@@ -75,12 +75,6 @@ export default function Nav({ navData, navigationData }: NavProps) {
 
   return (
     <>
-      <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:text-sm focus:font-medium"
-      >
-        Skip to main content
-      </a>
       <div className="fixed w-full z-50 top-0 px-4 lg:px-8">
         <nav className="bg-white shadow-sm flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] rounded-b-[16px] lg:rounded-b-[20px] max-w-[1536px] mx-auto">
           <Link href={`/${locale}`} aria-label="WePlanify - Home">
