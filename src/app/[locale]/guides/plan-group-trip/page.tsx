@@ -541,7 +541,7 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
               {c.tocTitle}
             </h2>
             <ol className="space-y-2">
-              {c.toc.map((item, i) => (
+              {c.toc.map((item) => (
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
