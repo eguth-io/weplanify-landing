@@ -44,7 +44,7 @@ const PATHNAME = "/alternatives/best-group-trip-planner-apps";
 
 const meta = {
   en: {
-    title: "11 Best Group Trip Planner Apps in 2026 — Complete Guide",
+    title: "10 Best Group Trip Planner Apps in 2026 — Complete Guide",
     description:
       "Discover the 10 best group trip planner apps in 2026. Compare features, pricing, and find the perfect tool to plan your next group adventure with friends or family.",
     keywords: [
@@ -57,7 +57,7 @@ const meta = {
   },
   fr: {
     title:
-      "Les 11 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
+      "Les 10 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
     description:
       "Découvrez les 10 meilleures applications pour planifier un voyage de groupe en 2026. Comparez les fonctionnalités, les prix et trouvez l'outil parfait pour organiser votre prochaine aventure entre amis ou en famille.",
     keywords: [
@@ -112,7 +112,7 @@ const content = {
   en: {
     heroTag: "Complete Guide",
     readTime: "12 min read",
-    h1: "11 Best Group Trip Planner Apps in 2026",
+    h1: "10 Best Group Trip Planner Apps in 2026",
     intro:
       "Planning a group trip is notoriously difficult. Between coordinating schedules, splitting costs, voting on destinations, and building an itinerary that works for everyone, you need the right tools. We tested and compared the most popular group travel planning apps available in 2026 to help you pick the one that fits your crew. Here are our top 10, ranked by overall usefulness for group travel.",
 
@@ -164,7 +164,7 @@ const content = {
         name: "Wanderlog",
         tagline: "Map-based itinerary builder with collaboration",
         description:
-          "Wanderlog offers a beautifully designed, map-centric itinerary builder that makes visualizing your route easy. It supports collaboration so multiple people can edit the trip plan, and it has a well-regarded mobile app. It is strongest for visual planners who want to see their trip on a map.",
+          "Wanderlog is a map-centric itinerary builder that lets you visualize your route. It supports collaboration and has a mobile app. It focuses on solo and couple travel planning with map visualization.",
         bestFor: "Visual planners and road trips",
         strengths: [
           "Excellent map integration and route visualization",
@@ -181,7 +181,7 @@ const content = {
         name: "SquadTrip",
         tagline: "Payment collection and guest management",
         description:
-          "SquadTrip is designed specifically for group trip organizers who need to collect money from participants and manage RSVPs. It includes voting features, budget splitting, and a clean guest management dashboard. It is particularly strong for the organizational side of group travel.",
+          "SquadTrip targets trip organizers who need to collect payments from participants and manage RSVPs. It includes budget splitting and a guest management dashboard. Focused on the financial side of group travel.",
         bestFor: "Trip organizers handling money",
         strengths: [
           "Built-in payment collection from group members",
@@ -198,7 +198,7 @@ const content = {
         name: "TripIt",
         tagline: "Auto-import bookings from email",
         description:
-          "TripIt has been around for years and excels at one thing: turning confirmation emails into an organized itinerary. Forward your booking emails and TripIt assembles a clean timeline. The Pro plan adds real-time flight alerts, seat tracking, and alternative flight notifications.",
+          "TripIt turns confirmation emails into an organized itinerary. Forward your booking emails and it assembles a timeline. The Pro plan ($49/year) adds flight alerts. Primarily a solo travel organizer, not designed for group collaboration.",
         bestFor: "Business travelers and solo organizers",
         strengths: [
           "Automatic itinerary creation from forwarded emails",
@@ -215,7 +215,7 @@ const content = {
         name: "Splitwise",
         tagline: "Expense splitting gold standard",
         description:
-          "Splitwise is not a trip planner — it is the best app for tracking shared expenses. Most group travelers end up using it alongside their planning tool to keep track of who owes what. It handles complex splits, multiple currencies, and group balances with ease.",
+          "Splitwise is not a trip planner — it only tracks shared expenses. Many groups use it alongside their planning tool to know who owes what. Handles multi-currency splits but lacks any travel planning features.",
         bestFor: "Tracking who owes what",
         strengths: [
           "Best-in-class expense splitting with complex split options",
@@ -232,7 +232,7 @@ const content = {
         name: "Troupe",
         tagline: "Group decision-making with ranked voting",
         description:
-          "Troupe focuses on the hardest part of group travel: making decisions together. It lets groups suggest, discuss, and vote on activities using ranked voting. It also offers activity discovery with local recommendations. Think of it as a decision-making tool that happens to be built for trips.",
+          "Troupe focuses on group decision-making with ranked voting on activities. It also offers activity discovery with local recommendations. Limited to the decision phase — no budget tracking, packing lists, or itinerary building.",
         bestFor: "Groups who can't agree on anything",
         strengths: [
           "Ranked voting system for group decisions",
@@ -249,7 +249,7 @@ const content = {
         name: "Stippl",
         tagline: "Visual travel planner with journals and community itineraries",
         description:
-          "Stippl is an all-in-one travel planner with a unique night-to-day planning engine that connects accommodations with activities. It features community-shared itineraries, photo journals, and automatic reels. It is mobile-first with native iOS and Android apps, making it a strong choice for visual travelers who want to document their trips and discover what others have planned.",
+          "Stippl is a travel planner with a night-to-day planning engine connecting accommodations with activities. It features community-shared itineraries and photo journals. Mobile-first but lacks group-specific tools like polls and shared budgets.",
         bestFor: "Visual travelers who want to document their trips and discover community itineraries",
         strengths: [
           "Beautiful map integration with night-to-day planning engine",
@@ -266,7 +266,7 @@ const content = {
         name: "AvoSquado",
         tagline: "Bedroom assignments and bookable activities",
         description:
-          "AvoSquado is a newer player that tackles a unique niche: managing large vacation rentals with bedroom assignments, and offering bookable group activities. If your group trip revolves around a big house and you need to coordinate who sleeps where and what to do nearby, it is a specialized but useful tool.",
+          "AvoSquado tackles a niche: managing large vacation rentals with bedroom assignments and bookable activities. Very specialized — useful if your trip revolves around a big house, but not a full trip planner.",
         bestFor: "Large vacation rentals with many guests",
         strengths: [
           "Unique bedroom assignment feature",
@@ -283,7 +283,7 @@ const content = {
         name: "Cruzmi",
         tagline: "French collaborative event organizer",
         description:
-          "Cruzmi is a French-first collaborative planning tool that works well for organizing events and group outings. It supports polls, shared to-do lists, and budget tracking. It is best suited for French-speaking groups who want a simple, no-fuss planning experience.",
+          "Cruzmi is a French mobile app for organizing events and group outings. It supports basic polls and budget tracking. More suited for general events than dedicated trip planning — limited itinerary features.",
         bestFor: "French-speaking groups planning events",
         strengths: [
           "Native French-language experience",
@@ -300,7 +300,7 @@ const content = {
         name: "Let's Jetty",
         tagline: "Delightful itinerary maker for friends",
         description:
-          "Let's Jetty brings a fresh, visually appealing approach to group itinerary planning. It focuses on making the planning experience itself fun, with a clean interface and smooth collaboration. It is ideal for smaller friend groups who value aesthetics and simplicity over feature depth.",
+          "Let's Jetty takes a visual approach to itinerary planning with a clean interface. Focuses on simplicity over feature depth. Works for small groups but lacks budget tracking, polls, and packing features.",
         bestFor: "Small friend groups wanting a clean experience",
         strengths: [
           "Beautiful, intuitive design",
@@ -310,23 +310,6 @@ const content = {
         limitations: [
           "Fewer features than all-in-one platforms",
           "No budget tracking or polls",
-        ],
-        price: "Free",
-      },
-      {
-        name: "Google Sheets",
-        tagline: "The DIY approach that never dies",
-        description:
-          "Let's be honest — plenty of groups still plan their trips in a shared Google Sheet. It is infinitely customizable, everyone already knows how to use it, and it costs nothing. The trade-off is that you are building everything from scratch: budget formulas, itinerary layouts, and packing checklists. No automation, no travel-specific features, just raw spreadsheet power.",
-        bestFor: "Control freaks with spreadsheet skills",
-        strengths: [
-          "Infinitely flexible and customizable",
-          "Free and universally accessible",
-          "No learning curve for most people",
-        ],
-        limitations: [
-          "No travel-specific features — you build everything yourself",
-          "No mobile-friendly experience for trip viewing",
         ],
         price: "Free",
       },
@@ -352,7 +335,6 @@ const content = {
       { name: "AvoSquado", values: [false, false, false, false, true, false] },
       { name: "Cruzmi", values: [false, true, true, false, true, true] },
       { name: "Let's Jetty", values: [true, false, false, false, true, false] },
-      { name: "Google Sheets", values: ["diy", "diy", "diy", "diy", true, true] },
     ],
 
     ctaTitle: "Ready to plan your next group trip?",
@@ -368,7 +350,7 @@ const content = {
   fr: {
     heroTag: "Guide Complet",
     readTime: "12 min de lecture",
-    h1: "Les 11 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
+    h1: "Les 10 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
     intro:
       "Organiser un voyage de groupe est notoirement difficile. Entre la coordination des agendas, le partage des frais, le vote sur les destinations et la construction d'un itinéraire qui convient à tout le monde, il vous faut les bons outils. Nous avons testé et comparé les applications de planification de voyage de groupe les plus populaires disponibles en 2026 pour vous aider à choisir celle qui convient à votre groupe. Voici notre top 10, classé par utilité globale pour les voyages de groupe.",
 
@@ -420,7 +402,7 @@ const content = {
         name: "Wanderlog",
         tagline: "Créateur d'itinéraires basé sur la carte avec collaboration",
         description:
-          "Wanderlog propose un créateur d'itinéraires magnifiquement conçu, centré sur la carte, qui facilite la visualisation de votre parcours. Il prend en charge la collaboration pour que plusieurs personnes puissent éditer le plan de voyage, et il dispose d'une application mobile reconnue. Il excelle pour les planificateurs visuels qui veulent voir leur voyage sur une carte.",
+          "Wanderlog est un créateur d'itinéraires centré sur la carte qui permet de visualiser votre parcours. Il prend en charge la collaboration et dispose d'une application mobile. Axé sur le voyage solo ou en couple avec visualisation cartographique.",
         bestFor: "Les planificateurs visuels et les road trips",
         strengths: [
           "Excellente intégration cartographique et visualisation d'itinéraire",
@@ -437,7 +419,7 @@ const content = {
         name: "SquadTrip",
         tagline: "Collecte de paiements et gestion des participants",
         description:
-          "SquadTrip est conçu spécifiquement pour les organisateurs de voyages de groupe qui doivent collecter de l'argent auprès des participants et gérer les confirmations de présence. Il inclut des fonctions de vote, de partage de budget et un tableau de bord de gestion des invités. Il est particulièrement fort côté organisation du voyage de groupe.",
+          "SquadTrip cible les organisateurs qui doivent collecter de l'argent auprès des participants et gérer les confirmations. Il inclut le partage de budget et un tableau de bord de gestion des invités. Axé sur le côté financier du voyage de groupe.",
         bestFor: "Les organisateurs de voyage qui gèrent l'argent",
         strengths: [
           "Collecte de paiements intégrée auprès des membres du groupe",
@@ -454,7 +436,7 @@ const content = {
         name: "TripIt",
         tagline: "Importation automatique des réservations depuis les e-mails",
         description:
-          "TripIt existe depuis des années et excelle dans un domaine : transformer les e-mails de confirmation en itinéraire organisé. Transférez vos e-mails de réservation et TripIt assemble un calendrier clair. Le plan Pro ajoute des alertes de vol en temps réel, le suivi des sièges et des notifications de vols alternatifs.",
+          "TripIt transforme les e-mails de confirmation en itinéraire organisé. Le plan Pro (49 $/an) ajoute des alertes de vol. Principalement un organisateur de voyage solo, pas conçu pour la collaboration de groupe.",
         bestFor: "Les voyageurs d'affaires et les organisateurs solo",
         strengths: [
           "Création automatique d'itinéraire à partir d'e-mails transférés",
@@ -471,7 +453,7 @@ const content = {
         name: "Splitwise",
         tagline: "La référence absolue du partage de dépenses",
         description:
-          "Splitwise n'est pas un planificateur de voyage — c'est la meilleure application pour suivre les dépenses partagées. La plupart des voyageurs en groupe finissent par l'utiliser en complément de leur outil de planification pour garder une trace de qui doit quoi. Il gère les partages complexes, les devises multiples et les soldes de groupe avec facilité.",
+          "Splitwise n'est pas un planificateur de voyage — il ne fait que suivre les dépenses partagées. Beaucoup de groupes l'utilisent en complément de leur outil de planification. Gère le multi-devises mais n'a aucune fonctionnalité de planification de voyage.",
         bestFor: "Suivre qui doit quoi à qui",
         strengths: [
           "Partage de dépenses de référence avec options de partage complexes",
@@ -488,7 +470,7 @@ const content = {
         name: "Troupe",
         tagline: "Prise de décision en groupe avec vote par classement",
         description:
-          "Troupe se concentre sur la partie la plus difficile du voyage de groupe : prendre des décisions ensemble. Il permet aux groupes de suggérer, discuter et voter sur des activités grâce au vote par classement. Il propose aussi la découverte d'activités avec des recommandations locales. Considérez-le comme un outil de prise de décision conçu pour les voyages.",
+          "Troupe se concentre sur la prise de décision en groupe avec vote par classement. Propose aussi la découverte d'activités locales. Limité à la phase de décision — pas de suivi de budget, listes de bagages ni création d'itinéraire.",
         bestFor: "Les groupes qui n'arrivent pas à se mettre d'accord",
         strengths: [
           "Système de vote par classement pour les décisions de groupe",
@@ -505,7 +487,7 @@ const content = {
         name: "Stippl",
         tagline: "Planificateur de voyage visuel avec carnets et itinéraires communautaires",
         description:
-          "Stippl est un planificateur de voyage tout-en-un doté d'un moteur de planification unique « nuit-jour » qui relie les hébergements aux activités. Il propose des itinéraires partagés par la communauté, des carnets de voyage photo et des reels automatiques. Il est mobile-first avec des applications natives iOS et Android, ce qui en fait un choix solide pour les voyageurs visuels qui veulent documenter leurs voyages et découvrir ce que d'autres ont planifié.",
+          "Stippl est un planificateur de voyage avec un moteur « nuit-jour » reliant hébergements et activités. Propose des itinéraires communautaires et des carnets photo. Mobile-first mais sans outils spécifiques au groupe comme les sondages et le budget partagé.",
         bestFor: "Les voyageurs visuels qui veulent documenter leurs voyages et découvrir des itinéraires communautaires",
         strengths: [
           "Belle intégration cartographique avec moteur de planification nuit-jour",
@@ -522,7 +504,7 @@ const content = {
         name: "AvoSquado",
         tagline: "Attribution des chambres et activités réservables",
         description:
-          "AvoSquado est un acteur plus récent qui s'attaque à un créneau unique : la gestion de grandes locations de vacances avec attribution des chambres et des activités de groupe réservables. Si votre voyage de groupe tourne autour d'une grande maison et que vous devez coordonner qui dort où et quoi faire aux alentours, c'est un outil spécialisé mais utile.",
+          "AvoSquado s'attaque à un créneau niche : la gestion de grandes locations de vacances avec attribution des chambres et activités réservables. Très spécialisé — utile si votre voyage tourne autour d'une grande maison, mais pas un planificateur complet.",
         bestFor: "Les grandes locations de vacances avec beaucoup d'invités",
         strengths: [
           "Fonctionnalité unique d'attribution des chambres",
@@ -539,7 +521,7 @@ const content = {
         name: "Cruzmi",
         tagline: "Organisateur collaboratif d'événements français",
         description:
-          "Cruzmi est un outil de planification collaboratif français qui fonctionne bien pour organiser des événements et des sorties de groupe. Il prend en charge les sondages, les listes de tâches partagées et le suivi de budget. Il convient parfaitement aux groupes francophones qui veulent une expérience de planification simple et sans chichis.",
+          "Cruzmi est une application mobile française pour organiser des événements et sorties de groupe. Prend en charge les sondages basiques et le suivi de budget. Plus adaptée aux événements généraux qu'à la planification de voyage dédiée — fonctionnalités d'itinéraire limitées.",
         bestFor: "Les groupes francophones qui organisent des événements",
         strengths: [
           "Expérience native en français",
@@ -556,7 +538,7 @@ const content = {
         name: "Let's Jetty",
         tagline: "Créateur d'itinéraires élégant entre amis",
         description:
-          "Let's Jetty apporte une approche fraîche et visuellement séduisante à la planification d'itinéraires de groupe. Il se concentre sur rendre l'expérience de planification elle-même agréable, avec une interface soignée et une collaboration fluide. Idéal pour les petits groupes d'amis qui apprécient l'esthétique et la simplicité plutôt que la profondeur fonctionnelle.",
+          "Let's Jetty propose une approche visuelle de la planification d'itinéraires avec une interface soignée. Mise sur la simplicité plutôt que la profondeur. Fonctionne pour les petits groupes mais sans suivi de budget, sondages ni listes de bagages.",
         bestFor: "Les petits groupes d'amis qui veulent une expérience soignée",
         strengths: [
           "Design beau et intuitif",
@@ -566,23 +548,6 @@ const content = {
         limitations: [
           "Moins de fonctionnalités que les plateformes tout-en-un",
           "Pas de suivi de budget ni de sondages",
-        ],
-        price: "Gratuit",
-      },
-      {
-        name: "Google Sheets",
-        tagline: "L'approche DIY qui ne meurt jamais",
-        description:
-          "Soyons honnêtes — beaucoup de groupes planifient encore leurs voyages dans un Google Sheet partagé. C'est infiniment personnalisable, tout le monde sait déjà l'utiliser, et ça ne coûte rien. Le compromis, c'est que vous construisez tout de zéro : formules de budget, mises en page d'itinéraire et listes de bagages. Pas d'automatisation, pas de fonctionnalités spécifiques au voyage, juste la puissance brute du tableur.",
-        bestFor: "Les maniaques du contrôle avec des talents de tableur",
-        strengths: [
-          "Infiniment flexible et personnalisable",
-          "Gratuit et universellement accessible",
-          "Pas de courbe d'apprentissage pour la plupart des gens",
-        ],
-        limitations: [
-          "Pas de fonctionnalités spécifiques au voyage — vous construisez tout vous-même",
-          "Pas d'expérience mobile adaptée pour consulter le voyage",
         ],
         price: "Gratuit",
       },
@@ -608,7 +573,6 @@ const content = {
       { name: "AvoSquado", values: [false, false, false, false, true, false] },
       { name: "Cruzmi", values: [false, true, true, false, true, true] },
       { name: "Let's Jetty", values: [true, false, false, false, true, false] },
-      { name: "Google Sheets", values: ["diy", "diy", "diy", "diy", true, true] },
     ],
 
     ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
