@@ -68,7 +68,6 @@ export default async function HomePage({ params }: Props) {
       />
 
       {/* Hero Section */}
-      <FadeIn duration={0.8} direction="none">
       <div id="hero" className="pt-[100px] lg:pt-[120px] px-4 lg:px-8 pb-4 lg:pb-6">
         <div className="max-w-[1536px] mx-auto">
           <section className="relative overflow-hidden rounded-[24px] lg:rounded-[40px]">
@@ -120,10 +119,8 @@ export default async function HomePage({ params }: Props) {
           </section>
         </div>
       </div>
-      </FadeIn>
 
       {/* Testimonial & Stats Section */}
-      <FadeIn delay={0.15}>
       <div id="reviews" className="px-4 lg:px-8 pb-8 lg:pb-12">
         <div className="max-w-[1536px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
@@ -168,7 +165,6 @@ export default async function HomePage({ params }: Props) {
           </div>
         </div>
       </div>
-      </FadeIn>
 
       {/* World Section */}
       {worldSection && (
