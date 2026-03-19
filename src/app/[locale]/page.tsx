@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 import StackingCards from "@/components/StackingCards";
 import TravelSteps from "@/components/TravelSteps";
 import FAQSupport from "@/components/FAQSupport";
@@ -339,6 +340,9 @@ export default async function HomePage({ params }: Props) {
 
       {/* Footer */}
       <Footer footerData={footerData} />
+
+      {/* Sticky mobile CTA — appears when hero scrolls out of view */}
+      <StickyMobileCTA text={hero?.ctaText || "Get started"} href={hero?.ctaUrl || "https://app.weplanify.com/register"} />
     </main>
   );
 }
