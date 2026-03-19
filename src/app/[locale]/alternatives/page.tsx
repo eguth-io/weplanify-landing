@@ -206,6 +206,20 @@ const apps: AppColumn[] = [
       mobile: true,
     },
   },
+  {
+    name: "Stippl",
+    features: {
+      collab_itinerary: true,
+      polls: false,
+      budget: false,
+      packing: true,
+      discovery: true,
+      free: true,
+      french: false,
+      realtime: true,
+      mobile: true,
+    },
+  },
 ];
 
 const competitorDetails = {
@@ -230,6 +244,10 @@ const competitorDetails = {
       name: "Splitwise",
       text: "Splitwise is the gold standard for splitting expenses with friends. While it's not a trip planner, many groups use it alongside their planning tool to track shared costs. If expense splitting is your only need, Splitwise is excellent — but for full trip planning with itineraries, polls, and packing lists, you'll need a dedicated tool like WePlanify.",
     },
+    {
+      name: "Stippl",
+      text: "Stippl is an all-in-one travel planner with a unique night-to-day planning engine that connects accommodations with activities. It features community-shared itineraries, travel journals, and automatic reels. Great for solo and couple travelers who want visual trip documentation, but lacks group-specific features like polls and shared budgets.",
+    },
   ],
   fr: [
     {
@@ -251,6 +269,10 @@ const competitorDetails = {
     {
       name: "Splitwise",
       text: "Splitwise est la référence absolue pour partager les dépenses entre amis. Bien que ce ne soit pas un planificateur de voyage, de nombreux groupes l'utilisent en complément de leur outil de planification pour suivre les frais partagés. Si le partage de dépenses est votre seul besoin, Splitwise est excellent — mais pour une planification complète de voyage avec itinéraires, sondages et listes de bagages, il vous faudra un outil dédié comme WePlanify.",
+    },
+    {
+      name: "Stippl",
+      text: "Stippl est un planificateur de voyage tout-en-un doté d'un moteur de planification unique « nuit-jour » qui relie les hébergements aux activités. Il propose des itinéraires partagés par la communauté, des carnets de voyage et des reels automatiques. Idéal pour les voyageurs solo ou en couple qui veulent documenter visuellement leurs voyages, mais il manque de fonctionnalités spécifiques aux groupes comme les sondages et les budgets partagés.",
     },
   ],
 };

@@ -44,7 +44,7 @@ const PATHNAME = "/alternatives/best-group-trip-planner-apps";
 
 const meta = {
   en: {
-    title: "10 Best Group Trip Planner Apps in 2026 — Complete Guide",
+    title: "11 Best Group Trip Planner Apps in 2026 — Complete Guide",
     description:
       "Discover the 10 best group trip planner apps in 2026. Compare features, pricing, and find the perfect tool to plan your next group adventure with friends or family.",
     keywords: [
@@ -57,7 +57,7 @@ const meta = {
   },
   fr: {
     title:
-      "Les 10 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
+      "Les 11 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
     description:
       "Découvrez les 10 meilleures applications pour planifier un voyage de groupe en 2026. Comparez les fonctionnalités, les prix et trouvez l'outil parfait pour organiser votre prochaine aventure entre amis ou en famille.",
     keywords: [
@@ -111,8 +111,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const content = {
   en: {
     heroTag: "Complete Guide",
-    readTime: "10 min read",
-    h1: "10 Best Group Trip Planner Apps in 2026",
+    readTime: "12 min read",
+    h1: "11 Best Group Trip Planner Apps in 2026",
     intro:
       "Planning a group trip is notoriously difficult. Between coordinating schedules, splitting costs, voting on destinations, and building an itinerary that works for everyone, you need the right tools. We tested and compared the most popular group travel planning apps available in 2026 to help you pick the one that fits your crew. Here are our top 10, ranked by overall usefulness for group travel.",
 
@@ -246,6 +246,23 @@ const content = {
         price: "Free",
       },
       {
+        name: "Stippl",
+        tagline: "Visual travel planner with journals and community itineraries",
+        description:
+          "Stippl is an all-in-one travel planner with a unique night-to-day planning engine that connects accommodations with activities. It features community-shared itineraries, photo journals, and automatic reels. It is mobile-first with native iOS and Android apps, making it a strong choice for visual travelers who want to document their trips and discover what others have planned.",
+        bestFor: "Visual travelers who want to document their trips and discover community itineraries",
+        strengths: [
+          "Beautiful map integration with night-to-day planning engine",
+          "Travel journal and automatic reels for trip documentation",
+          "Community-shared itineraries for discovery and inspiration",
+        ],
+        limitations: [
+          "No group polls or voting features",
+          "No shared budget tracker — not available in French",
+        ],
+        price: "Free",
+      },
+      {
         name: "AvoSquado",
         tagline: "Bedroom assignments and bookable activities",
         description:
@@ -331,6 +348,7 @@ const content = {
       { name: "TripIt", values: [true, false, false, false, "freemium", false] },
       { name: "Splitwise", values: [false, false, true, false, "freemium", true] },
       { name: "Troupe", values: [true, true, false, false, true, false] },
+      { name: "Stippl", values: [true, false, false, true, true, false] },
       { name: "AvoSquado", values: [false, false, false, false, true, false] },
       { name: "Cruzmi", values: [false, true, true, false, true, true] },
       { name: "Let's Jetty", values: [true, false, false, false, true, false] },
@@ -349,8 +367,8 @@ const content = {
 
   fr: {
     heroTag: "Guide Complet",
-    readTime: "10 min de lecture",
-    h1: "Les 10 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
+    readTime: "12 min de lecture",
+    h1: "Les 11 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
     intro:
       "Organiser un voyage de groupe est notoirement difficile. Entre la coordination des agendas, le partage des frais, le vote sur les destinations et la construction d'un itinéraire qui convient à tout le monde, il vous faut les bons outils. Nous avons testé et comparé les applications de planification de voyage de groupe les plus populaires disponibles en 2026 pour vous aider à choisir celle qui convient à votre groupe. Voici notre top 10, classé par utilité globale pour les voyages de groupe.",
 
@@ -484,6 +502,23 @@ const content = {
         price: "Gratuit",
       },
       {
+        name: "Stippl",
+        tagline: "Planificateur de voyage visuel avec carnets et itinéraires communautaires",
+        description:
+          "Stippl est un planificateur de voyage tout-en-un doté d'un moteur de planification unique « nuit-jour » qui relie les hébergements aux activités. Il propose des itinéraires partagés par la communauté, des carnets de voyage photo et des reels automatiques. Il est mobile-first avec des applications natives iOS et Android, ce qui en fait un choix solide pour les voyageurs visuels qui veulent documenter leurs voyages et découvrir ce que d'autres ont planifié.",
+        bestFor: "Les voyageurs visuels qui veulent documenter leurs voyages et découvrir des itinéraires communautaires",
+        strengths: [
+          "Belle intégration cartographique avec moteur de planification nuit-jour",
+          "Carnet de voyage et reels automatiques pour documenter le voyage",
+          "Itinéraires partagés par la communauté pour la découverte et l'inspiration",
+        ],
+        limitations: [
+          "Pas de sondages de groupe ni de fonctions de vote",
+          "Pas de suivi de budget partagé — non disponible en français",
+        ],
+        price: "Gratuit",
+      },
+      {
         name: "AvoSquado",
         tagline: "Attribution des chambres et activités réservables",
         description:
@@ -569,6 +604,7 @@ const content = {
       { name: "TripIt", values: [true, false, false, false, "freemium", false] },
       { name: "Splitwise", values: [false, false, true, false, "freemium", true] },
       { name: "Troupe", values: [true, true, false, false, true, false] },
+      { name: "Stippl", values: [true, false, false, true, true, false] },
       { name: "AvoSquado", values: [false, false, false, false, true, false] },
       { name: "Cruzmi", values: [false, true, true, false, true, true] },
       { name: "Let's Jetty", values: [true, false, false, false, true, false] },
