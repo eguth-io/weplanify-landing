@@ -41,7 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
 
     // Use case pages for each locale
-    const useCasePages = ["trip-with-friends", "bachelorette-trip", "alternatives"];
+    const useCasePages = ["trip-with-friends", "bachelorette-trip", "alternatives", "alternatives/wanderlog", "alternatives/squadtrip", "alternatives/tripit", "alternatives/cruzmi"];
     for (const locale of locales) {
       for (const page of useCasePages) {
         entries.push({
