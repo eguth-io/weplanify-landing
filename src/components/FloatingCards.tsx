@@ -11,7 +11,7 @@ const cards = [
     textColor: "text-[#001E13]",
     rotate: -6,
     top: "5%",
-    left: "15%",
+    left: "35%",
     delay: 0.2,
   },
   {
@@ -22,7 +22,7 @@ const cards = [
     textColor: "text-[#001E13]",
     rotate: 4,
     top: "35%",
-    left: "30%",
+    left: "50%",
     delay: 0.5,
   },
   {
@@ -33,7 +33,7 @@ const cards = [
     textColor: "text-[#001E13]",
     rotate: -3,
     top: "65%",
-    left: "10%",
+    left: "30%",
     delay: 0.8,
   },
 ];

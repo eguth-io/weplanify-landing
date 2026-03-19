@@ -396,7 +396,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
       <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative pt-[120px] lg:pt-[160px] pb-16 lg:pb-24 px-4 lg:px-8">
+        <section className="relative pt-[120px] lg:pt-[140px] pb-8 lg:pb-10 px-4 lg:px-8">
           <div className="max-w-[1536px] mx-auto">
             <div className="relative overflow-hidden rounded-[24px] lg:rounded-[40px] bg-[#001E13]">
               {/* Decorative gradient */}
@@ -439,7 +439,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
         </section>
 
         {/* Pain Points Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8">
+        <section className="pt-10 lg:pt-14 pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-[1200px] mx-auto">
             <div className="text-center mb-12 lg:mb-16">
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
