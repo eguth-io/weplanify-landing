@@ -10,7 +10,6 @@ const featureSlugs = [
   "collaboration",
   "explore",
   "itinerary",
-  "memories",
   "packing",
   "polls",
   "transport",
