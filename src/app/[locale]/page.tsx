@@ -53,7 +53,7 @@ export default async function HomePage({ params }: Props) {
   const { hero, testimonialStats, worldSection, banner, features, travelSteps, testimonials, featureImageSection, ctaBanner, readyBanner, faq } = landingPageData;
 
   return (
-    <div className="landing-page">
+    <main className="landing-page" id="main-content">
       {/* Navigation */}
       <Nav
         navData={{
@@ -328,6 +328,6 @@ export default async function HomePage({ params }: Props) {
 
       {/* Footer */}
       <Footer footerData={footerData} />
-    </div>
+    </main>
   );
 }

@@ -3,8 +3,43 @@ import { client } from "@/sanity/lib/client";
 import { seoSettingsQuery } from "@/sanity/lib/query";
 import { SeoSettings } from "@/sanity/lib/type";
 
+const SITE_URL = "https://www.weplanify.com";
+
+const localizedDefaults: Record<string, { title: string; description: string; keywords: string[] }> = {
+  en: {
+    title: "WePlanify — Free Group Trip Planner | Plan Together",
+    description:
+      "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists. Free group travel planning app.",
+    keywords: [
+      "group trip planner",
+      "plan trip with friends",
+      "collaborative travel app",
+      "group travel itinerary",
+      "travel planning app",
+      "group vacation planner",
+      "shared trip planner",
+      "trip planner for groups",
+    ],
+  },
+  fr: {
+    title: "WePlanify — Organisateur de Voyage de Groupe Gratuit | Planifiez Ensemble",
+    description:
+      "Organisez vos voyages de groupe avec WePlanify. Itineraire collaboratif, budget partage, sondages de groupe et listes de bagages. Application gratuite de planification de voyage.",
+    keywords: [
+      "organisateur voyage groupe",
+      "planifier voyage entre amis",
+      "application voyage collaboratif",
+      "itineraire voyage groupe",
+      "planification voyage",
+      "organiser voyage groupe",
+      "planificateur voyage partage",
+      "voyage entre amis",
+    ],
+  },
+};
+
 /**
- * Génère les metadata Next.js depuis les SEO Settings de Sanity
+ * Generates Next.js metadata from Sanity SEO Settings with locale support
  * @param locale - Current locale (en, fr)
  * @param pathname - Current pathname without locale prefix (e.g., "/blog", "/contact")
  */
@@ -20,16 +55,20 @@ export async function generateMetadataFromSanity(
       return getDefaultMetadata(locale, pathname);
     }
 
-    const baseUrl = seoSettings.siteUrl || "https://weplanify.com";
+    const baseUrl = normalizeUrl(seoSettings.siteUrl || SITE_URL);
     const currentUrl = `${baseUrl}/${locale}${pathname}`;
+    const localized = localizedDefaults[locale] || localizedDefaults.en;
+
+    const title = localized.title;
+    const description = localized.description;
 
     const metadata: Metadata = {
       title: {
-        default: seoSettings.defaultTitle || "WePlanify",
+        default: title,
         template: seoSettings.titleTemplate || "%s | WePlanify",
       },
-      description: seoSettings.defaultDescription || "",
-      keywords: seoSettings.keywords || [],
+      description,
+      keywords: localized.keywords,
       authors: [{ name: seoSettings.organizationName || "WePlanify" }],
       creator: seoSettings.organizationName || "WePlanify",
       publisher: seoSettings.organizationName || "WePlanify",
@@ -50,15 +89,15 @@ export async function generateMetadataFromSanity(
         locale: locale === "fr" ? "fr_FR" : "en_US",
         url: currentUrl,
         siteName: seoSettings.siteName || "WePlanify",
-        title: seoSettings.defaultTitle || "WePlanify",
-        description: seoSettings.defaultDescription || "",
+        title,
+        description,
         images: seoSettings.ogImage
           ? [
               {
                 url: seoSettings.ogImage,
                 width: 1200,
                 height: 630,
-                alt: seoSettings.defaultTitle || "WePlanify",
+                alt: title,
               },
             ]
           : [],
@@ -69,8 +108,8 @@ export async function generateMetadataFromSanity(
         card: seoSettings.twitterCard || "summary_large_image",
         site: seoSettings.twitterHandle || undefined,
         creator: seoSettings.twitterHandle || undefined,
-        title: seoSettings.defaultTitle || "WePlanify",
-        description: seoSettings.defaultDescription || "",
+        title,
+        description,
         images: seoSettings.ogImage ? [seoSettings.ogImage] : [],
       },
 
@@ -105,55 +144,59 @@ export async function generateMetadataFromSanity(
 }
 
 /**
- * Metadata par défaut en cas d'erreur
+ * Default metadata when Sanity is unavailable
  */
 function getDefaultMetadata(locale: string = "en", pathname: string = ""): Metadata {
-  const baseUrl = "https://weplanify.com";
-  const currentUrl = `${baseUrl}/${locale}${pathname}`;
+  const currentUrl = `${SITE_URL}/${locale}${pathname}`;
+  const localized = localizedDefaults[locale] || localizedDefaults.en;
 
   return {
     title: {
-      default: "WePlanify — Free Group Trip Planner | Plan Together",
+      default: localized.title,
       template: "%s | WePlanify",
     },
-    description:
-      "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists. Free group travel planning app.",
-    keywords: ["group trip planner", "plan trip with friends", "collaborative travel app", "group travel itinerary", "travel planning app", "group vacation planner", "shared trip planner", "trip planner for groups"],
+    description: localized.description,
+    keywords: localized.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       url: currentUrl,
       siteName: "WePlanify",
-      title: "WePlanify — Free Group Trip Planner | Plan Together",
-      description:
-        "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists. Free group travel planning app.",
+      title: localized.title,
+      description: localized.description,
     },
     twitter: {
       card: "summary_large_image",
-      title: "WePlanify — Free Group Trip Planner | Plan Together",
-      description:
-        "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists. Free group travel planning app.",
+      title: localized.title,
+      description: localized.description,
     },
     alternates: {
       canonical: currentUrl,
       languages: {
-        en: `${baseUrl}/en${pathname}`,
-        fr: `${baseUrl}/fr${pathname}`,
-        "x-default": `${baseUrl}/en${pathname}`,
+        en: `${SITE_URL}/en${pathname}`,
+        fr: `${SITE_URL}/fr${pathname}`,
+        "x-default": `${SITE_URL}/en${pathname}`,
       },
     },
   };
 }
 
 /**
- * Génère le JSON-LD pour les données structurées Organization
+ * Normalize URL to always use www prefix
+ */
+function normalizeUrl(url: string): string {
+  return url.replace("https://weplanify.com", SITE_URL);
+}
+
+/**
+ * Organization JSON-LD schema
  */
 export function generateOrganizationSchema(seoSettings: SeoSettings) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: seoSettings.organizationName,
-    url: seoSettings.organizationUrl,
+    url: normalizeUrl(seoSettings.organizationUrl),
     logo: seoSettings.organizationLogo,
     contactPoint: {
       "@type": "ContactPoint",
@@ -166,14 +209,14 @@ export function generateOrganizationSchema(seoSettings: SeoSettings) {
 }
 
 /**
- * Génère le JSON-LD pour les données structurées Website
+ * Website JSON-LD schema
  */
 export function generateWebsiteSchema(seoSettings: SeoSettings) {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: seoSettings.siteName,
-    url: seoSettings.siteUrl,
+    url: normalizeUrl(seoSettings.siteUrl),
     description: seoSettings.defaultDescription,
     publisher: {
       "@type": "Organization",

@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "SoftwareApplication",
     "name": "WePlanify",
     "description": "WePlanify is a free collaborative group trip planner. Plan itineraries together, vote with group polls, track shared budgets, and organize every detail of your group travel in one app.",
-    "url": "https://weplanify.com",
+    "url": "https://www.weplanify.com",
     "applicationCategory": "TravelApplication",
     "operatingSystem": "Web",
     "offers": {
@@ -26,7 +26,7 @@ export default function StructuredData() {
       "Shared packing lists",
       "Real-time group collaboration"
     ],
-    "screenshot": "https://weplanify.com/app-screenshot.png",
+    "screenshot": "https://www.weplanify.com/app-screenshot.png",
     "softwareVersion": "1.0.0"
   };
 
