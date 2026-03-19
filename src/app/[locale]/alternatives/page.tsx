@@ -317,7 +317,7 @@ const content = {
     heroIntro:
       "Planifier un voyage entre amis ou en famille devrait être excitant, pas stressant. Nous avons comparé les applications de voyage de groupe les plus populaires pour vous aider à choisir le bon outil pour votre prochaine aventure. Pas de blabla — juste les faits.",
     comparisonTitle: "Comparatif des Fonctionnalités",
-    competitorsTitle: "Un Regard Plus Proche sur Chaque Application",
+    competitorsTitle: "Chaque Application en Détail",
     whyTitle: "Pourquoi Choisir WePlanify ?",
     whyPoints: [
       {
@@ -339,7 +339,7 @@ const content = {
     ],
     ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
     ctaButton: "Commencer gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte de crédit requise.",
+    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
     comingSoon: "Bientôt",
     freemium: "Freemium",
     webApp: "App web",

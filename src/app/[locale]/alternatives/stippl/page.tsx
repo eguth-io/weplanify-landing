@@ -303,7 +303,7 @@ const content = {
     ],
     ctaTitle: "Essayez WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
     ctaButton: "Commencer gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte de cr\u00e9dit requise.",
+    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
     crossLinksTitle: "D\u00e9couvrir aussi",
     basic: "Basique",
     webApp: "App web",

@@ -126,14 +126,16 @@ export default function Footer({ footerData }: FooterProps) {
             /* Default Newsletter Section when no CTA is configured */
             <div className="flex flex-col lg:border-l border-[#001E13]/10 pl-0 lg:pl-12">
               <h3 className="text-[#001E13] text-base font-karla font-bold mb-4">
-                Get weekly travel inspiration
+                {locale === "fr" ? "Inspiration voyage hebdomadaire" : "Get weekly travel inspiration"}
               </h3>
               <p className="text-[#001E13]/70 text-sm font-karla mb-4">
-                Tips, hidden gems, and travel hacks delivered to your inbox.
+                {locale === "fr"
+                  ? "Astuces, pépites cachées et bons plans voyage dans votre boîte mail."
+                  : "Tips, hidden gems, and travel hacks delivered to your inbox."}
               </p>
               {isSubscribed ? (
                 <p className="text-[#005B37] text-sm font-karla font-semibold">
-                  Thanks for subscribing!
+                  {locale === "fr" ? "Merci pour votre inscription !" : "Thanks for subscribing!"}
                 </p>
               ) : (
                 <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3">
@@ -141,7 +143,7 @@ export default function Footer({ footerData }: FooterProps) {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Your email"
+                    placeholder={locale === "fr" ? "Votre e-mail" : "Your email"}
                     required
                     className="flex-1 px-4 py-2.5 rounded-full border border-[#001E13]/20 text-sm font-karla focus:outline-none focus:border-[#F6391A] transition-colors"
                   />
@@ -149,7 +151,7 @@ export default function Footer({ footerData }: FooterProps) {
                     type="submit"
                     className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-sm hover:bg-[#F6391A]/90 transition-colors whitespace-nowrap"
                   >
-                    Subscribe
+                    {locale === "fr" ? "S'inscrire" : "Subscribe"}
                   </button>
                 </form>
               )}

@@ -24,15 +24,15 @@ const localizedDefaults: Record<string, { title: string; description: string; ke
   fr: {
     title: "WePlanify — Organisateur de Voyage de Groupe Gratuit | Planifiez Ensemble",
     description:
-      "Organisez vos voyages de groupe avec WePlanify. Itineraire collaboratif, budget partage, sondages de groupe et listes de bagages. Application gratuite de planification de voyage.",
+      "Organisez vos voyages de groupe avec WePlanify. Itinéraire collaboratif, budget partagé, sondages de groupe et listes de bagages. Application gratuite de planification de voyage.",
     keywords: [
       "organisateur voyage groupe",
       "planifier voyage entre amis",
       "application voyage collaboratif",
-      "itineraire voyage groupe",
+      "itinéraire voyage groupe",
       "planification voyage",
       "organiser voyage groupe",
-      "planificateur voyage partage",
+      "planificateur voyage partagé",
       "voyage entre amis",
     ],
   },

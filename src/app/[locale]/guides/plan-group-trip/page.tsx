@@ -376,8 +376,8 @@ const content = {
 
     cta: {
       title: "Prêt à Organiser Votre Voyage de Groupe ?",
-      text: "Arrêtez de jongler entre tableurs, chats de groupe et fils d'emails. WePlanify réunit tout votre groupe dans un seul espace collaboratif — avec planification d'itinéraire, suivi de budget, sondages de groupe, listes de bagages et recommandations alimentées par l'IA. Gratuit pour toujours, sans carte de crédit.",
-      button: "Commencer à Planifier Gratuitement",
+      text: "Arrêtez de jongler entre tableurs, chats de groupe et fils d'emails. WePlanify réunit tout votre groupe dans un seul espace collaboratif — avec planification d'itinéraire, suivi de budget, sondages de groupe, listes de bagages et recommandations alimentées par l'IA. Gratuit pour toujours, sans carte bancaire.",
+      button: "Commencer à planifier gratuitement",
     },
 
     faq: {
@@ -397,7 +397,7 @@ const content = {
         },
         {
           q: "Que faire si certains membres du groupe ont des budgets très différents ?",
-          a: "Reconnaissez les différences de budget ouvertement et sans jugement. Proposez des options à plusieurs niveaux quand c'est possible — par exemple, un dîner de groupe dans un restaurant de gamme moyenne avec la possibilité d'upgrader individuellement. Pour l'hébergement, mixer les types de chambres ou choisir une location avec des chambres de tailles différentes permet de la flexibilité sans exclure personne.",
+          a: "Reconnaissez les différences de budget ouvertement et sans jugement. Proposez des options à plusieurs niveaux quand c'est possible — par exemple, un dîner de groupe dans un restaurant de gamme moyenne avec la possibilité de monter en gamme individuellement. Pour l'hébergement, mixer les types de chambres ou choisir une location avec des chambres de tailles différentes permet de la flexibilité sans exclure personne.",
         },
         {
           q: "Comment gérer les désaccords pendant la planification d'un voyage de groupe ?",

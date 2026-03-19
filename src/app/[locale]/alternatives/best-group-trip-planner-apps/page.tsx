@@ -579,7 +579,7 @@ const content = {
     ctaText:
       "Arrêtez de jongler entre plusieurs applications et tableurs. WePlanify réunit planification d'itinéraire, sondages de groupe, suivi de budget, listes de bagages et recommandations alimentées par l'IA dans une seule plateforme gratuite.",
     ctaButton: "Commencer à planifier gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte de crédit requise.",
+    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
 
     diy: "DIY",
     freemium: "Freemium",

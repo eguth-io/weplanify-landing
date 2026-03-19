@@ -272,7 +272,7 @@ const content = {
     chooseWanderlogTitle: "Qui devrait choisir Wanderlog ?",
     chooseWanderlogPoints: [
       "Les voyageurs solo ou les couples qui veulent une exp\u00e9rience de planification visuelle centr\u00e9e sur la carte.",
-      "Les planificateurs de road trips qui ont besoin de cartes hors ligne et de directions routi\u00e8res.",
+      "Les planificateurs de road trips qui ont besoin de cartes hors ligne et d\u2019itin\u00e9raires routiers.",
       "Les voyageurs qui pr\u00e9f\u00e8rent les applications mobiles natives aux outils web.",
       "Ceux qui veulent d\u00e9couvrir restaurants et h\u00f4tels directement dans l\u2019outil de planification.",
     ],
@@ -304,7 +304,7 @@ const content = {
     ],
     ctaTitle: "Essayez WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
     ctaButton: "Commencer gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte de cr\u00e9dit requise.",
+    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
     crossLinksTitle: "D\u00e9couvrir aussi",
     basic: "Basique",
     webApp: "App web",

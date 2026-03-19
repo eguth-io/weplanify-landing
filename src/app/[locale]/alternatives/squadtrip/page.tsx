@@ -345,7 +345,7 @@ const content = {
     ],
     ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
     ctaButton: "Commencer gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte de crédit requise.",
+    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
     crossLinksTitle: "Découvrir Aussi",
     free100: "100% gratuit",
     partialFees: "Frais sur les paiements",
