@@ -5,6 +5,8 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
+import FadeIn from "@/components/FadeIn";
+import Confetti from "@/components/Confetti";
 import Link from "next/link";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
@@ -407,8 +409,9 @@ export default async function BacheloretteTrip({ params }: Props) {
       <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen bg-[#FFFBF5]">
         {/* Hero Section */}
-        <section className="relative pt-[120px] lg:pt-[160px] pb-16 lg:pb-24 px-4 lg:px-8">
-          <div className="max-w-5xl mx-auto text-center">
+        <section className="relative pt-[120px] lg:pt-[160px] pb-16 lg:pb-24 px-4 lg:px-8 overflow-hidden">
+          <Confetti />
+          <div className="max-w-5xl mx-auto text-center relative z-10">
             <span className="inline-block bg-[#EEF899] text-[#001E13] px-5 py-1.5 rounded-full text-sm lg:text-base font-nanum-pen mb-6">
               {t.hero.tag}
             </span>
@@ -432,6 +435,7 @@ export default async function BacheloretteTrip({ params }: Props) {
         </section>
 
         {/* Pain Points Section */}
+        <FadeIn>
         <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#001E13]">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 lg:mb-16">
@@ -463,7 +467,10 @@ export default async function BacheloretteTrip({ params }: Props) {
           </div>
         </section>
 
+        </FadeIn>
+
         {/* Features Section */}
+        <FadeIn>
         <section className="py-16 lg:py-24 px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 lg:mb-16">
@@ -501,7 +508,10 @@ export default async function BacheloretteTrip({ params }: Props) {
           </div>
         </section>
 
+        </FadeIn>
+
         {/* Steps Section */}
+        <FadeIn>
         <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#61DBD5]/15">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12 lg:mb-16">
@@ -529,7 +539,10 @@ export default async function BacheloretteTrip({ params }: Props) {
           </div>
         </section>
 
+        </FadeIn>
+
         {/* Testimonial Section */}
+        <FadeIn>
         <section className="py-16 lg:py-24 px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-[#EEF899] rounded-3xl lg:rounded-[40px] p-8 lg:p-12 xl:p-16 relative">
@@ -555,7 +568,10 @@ export default async function BacheloretteTrip({ params }: Props) {
           </div>
         </section>
 
+        </FadeIn>
+
         {/* FAQ Section */}
+        <FadeIn>
         <section className="py-16 lg:py-24 px-4 lg:px-8">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
@@ -581,6 +597,8 @@ export default async function BacheloretteTrip({ params }: Props) {
             </div>
           </div>
         </section>
+
+        </FadeIn>
 
         {/* Discover More Section */}
         <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
