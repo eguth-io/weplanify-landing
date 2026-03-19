@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Footer as FooterType } from "@/sanity/lib/type";
 import { useState } from "react";
 
@@ -12,6 +13,30 @@ interface FooterProps {
 export default function Footer({ footerData }: FooterProps) {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const pathname = usePathname();
+  const locale = pathname?.startsWith("/fr") ? "fr" : "en";
+
+  const resourcesColumn = {
+    title: locale === "fr" ? "Ressources" : "Resources",
+    links: [
+      {
+        label: locale === "fr" ? "Guide : Organiser un voyage" : "Guide: Plan a Group Trip",
+        url: `/${locale}/guides/plan-group-trip`,
+      },
+      {
+        label: locale === "fr" ? "Voyage entre amis" : "Trip with Friends",
+        url: `/${locale}/trip-with-friends`,
+      },
+      {
+        label: locale === "fr" ? "EVJF / Bachelorette" : "Bachelorette / EVJF",
+        url: `/${locale}/bachelorette-trip`,
+      },
+      {
+        label: locale === "fr" ? "Comparatif apps" : "App Comparison",
+        url: `/${locale}/alternatives`,
+      },
+    ],
+  };
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,7 +67,7 @@ export default function Footer({ footerData }: FooterProps) {
         {/* Footer Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 lg:mb-20">
           {/* Footer Columns */}
-          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-6">
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
             {footerData?.footerColumns?.map((column, index) => (
               <div key={index} className="flex flex-col">
                 <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
@@ -61,6 +86,21 @@ export default function Footer({ footerData }: FooterProps) {
                 ))}
               </div>
             ))}
+            {/* Resources column for SEO pages */}
+            <div className="flex flex-col">
+              <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
+                {resourcesColumn.title}
+              </h3>
+              {resourcesColumn.links.map((link, linkIndex) => (
+                <Link
+                  key={linkIndex}
+                  href={link.url}
+                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Footer CTA Section */}

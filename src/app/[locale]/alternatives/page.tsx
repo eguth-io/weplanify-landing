@@ -62,9 +62,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     fr: {
       title:
-        "Meilleures Applications Voyage de Groupe 2026 — Comparatif Honnete | WePlanify",
+        "Meilleures Applications Voyage de Groupe 2026 — Comparatif Honnête | WePlanify",
       description:
-        "Comparez les meilleures applications de voyage de groupe en 2026. Decouvrez comment WePlanify se compare a Wanderlog, SquadTrip, Troupe et TripIt.",
+        "Comparez les meilleures applications de voyage de groupe en 2026. Découvrez comment WePlanify se compare à Wanderlog, SquadTrip, Troupe et TripIt.",
       keywords: [
         "meilleure application voyage groupe",
         "comparatif application voyage groupe",
@@ -109,14 +109,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // ---------------------------------------------------------------------------
 
 const features: Feature[] = [
-  { key: "collab_itinerary", en: "Collaborative itinerary", fr: "Itineraire collaboratif" },
+  { key: "collab_itinerary", en: "Collaborative itinerary", fr: "Itinéraire collaboratif" },
   { key: "polls", en: "Group polls / voting", fr: "Sondages / votes de groupe" },
-  { key: "budget", en: "Shared budget tracker", fr: "Suivi de budget partage" },
+  { key: "budget", en: "Shared budget tracker", fr: "Suivi de budget partagé" },
   { key: "packing", en: "Packing lists", fr: "Listes de bagages" },
-  { key: "discovery", en: "Activity discovery", fr: "Decouverte d'activites" },
+  { key: "discovery", en: "Activity discovery", fr: "Découverte d'activités" },
   { key: "free", en: "Free plan", fr: "Plan gratuit" },
-  { key: "french", en: "Available in French", fr: "Disponible en francais" },
-  { key: "realtime", en: "Real-time collaboration", fr: "Collaboration en temps reel" },
+  { key: "french", en: "Available in French", fr: "Disponible en français" },
+  { key: "realtime", en: "Real-time collaboration", fr: "Collaboration en temps réel" },
   { key: "mobile", en: "Mobile app", fr: "Application mobile" },
 ];
 
@@ -215,19 +215,19 @@ const competitorDetails = {
   fr: [
     {
       name: "Wanderlog",
-      text: "Wanderlog est un excellent createur d'itineraires avec une integration cartographique soignee et une belle application mobile. Il excelle pour les voyages en solo ou en couple. Cependant, il ne dispose pas de fonctionnalites de groupe comme les sondages ou le suivi de budget partage, et il n'est disponible qu'en anglais.",
+      text: "Wanderlog est un excellent créateur d'itinéraires avec une intégration cartographique soignée et une belle application mobile. Il excelle pour les voyages en solo ou en couple. Cependant, il ne dispose pas de fonctionnalités de groupe comme les sondages ou le suivi de budget partagé, et il n'est disponible qu'en anglais.",
     },
     {
       name: "SquadTrip",
-      text: "SquadTrip est concu specialement pour les voyages de groupe et inclut des fonctions de vote et de partage de budget. C'est un choix solide pour coordonner de petits groupes. Neanmoins, il ne propose pas encore de listes de bagages ni de decouverte d'activites, et il n'est pas disponible en francais.",
+      text: "SquadTrip est conçu spécialement pour les voyages de groupe et inclut des fonctions de vote et de partage de budget. C'est un choix solide pour coordonner de petits groupes. Néanmoins, il ne propose pas encore de listes de bagages ni de découverte d'activités, et il n'est pas disponible en français.",
     },
     {
       name: "Troupe",
-      text: "Troupe facilite la suggestion et le vote d'activites entre amis, avec une application mobile bien concue. Il se concentre davantage sur la phase de decouverte et de decision que sur la logistique complete du voyage. Le suivi de budget et les listes de bagages ne font pas partie de ses fonctionnalites actuelles.",
+      text: "Troupe facilite la suggestion et le vote d'activités entre amis, avec une application mobile bien conçue. Il se concentre davantage sur la phase de découverte et de décision que sur la logistique complète du voyage. Le suivi de budget et les listes de bagages ne font pas partie de ses fonctionnalités actuelles.",
     },
     {
       name: "TripIt",
-      text: "TripIt excelle dans l'organisation des confirmations de voyage en transformant les e-mails de reservation en itineraire clair. Il est ideal pour les voyageurs d'affaires frequents. Cependant, ses fonctionnalites de collaboration sont limitees et la plupart des options utiles necessitent un abonnement Pro payant.",
+      text: "TripIt excelle dans l'organisation des confirmations de voyage en transformant les e-mails de réservation en itinéraire clair. Il est idéal pour les voyageurs d'affaires fréquents. Cependant, ses fonctionnalités de collaboration sont limitées et la plupart des options utiles nécessitent un abonnement Pro payant.",
     },
   ],
 };
@@ -268,34 +268,34 @@ const content = {
   },
   fr: {
     heroTitle: "Meilleures Applications de Voyage de Groupe en 2026",
-    heroSubtitle: "Un comparatif honnete, cote a cote",
+    heroSubtitle: "Un comparatif honnête, côte à côte",
     heroIntro:
-      "Planifier un voyage entre amis ou en famille devrait etre excitant, pas stressant. Nous avons compare les applications de voyage de groupe les plus populaires pour vous aider a choisir le bon outil pour votre prochaine aventure. Pas de blabla — juste les faits.",
-    comparisonTitle: "Comparatif des Fonctionnalites",
+      "Planifier un voyage entre amis ou en famille devrait être excitant, pas stressant. Nous avons comparé les applications de voyage de groupe les plus populaires pour vous aider à choisir le bon outil pour votre prochaine aventure. Pas de blabla — juste les faits.",
+    comparisonTitle: "Comparatif des Fonctionnalités",
     competitorsTitle: "Un Regard Plus Proche sur Chaque Application",
     whyTitle: "Pourquoi Choisir WePlanify ?",
     whyPoints: [
       {
         title: "Plateforme tout-en-un",
-        desc: "Itineraire, budget, sondages, listes de bagages et decouverte d'activites dans une seule application. Pas besoin de jongler entre trois outils differents.",
+        desc: "Itinéraire, budget, sondages, listes de bagages et découverte d'activités dans une seule application. Pas besoin de jongler entre trois outils différents.",
       },
       {
         title: "Gratuit pour toujours",
-        desc: "Toutes les fonctionnalites principales sont gratuites, sans mur payant cache ni limite d'essai. Planifiez autant de voyages que vous voulez.",
+        desc: "Toutes les fonctionnalités principales sont gratuites, sans mur payant caché ni limite d'essai. Planifiez autant de voyages que vous voulez.",
       },
       {
         title: "Bilingue (EN / FR)",
-        desc: "Entierement disponible en anglais et en francais — une rarete parmi les applications de planification de voyage.",
+        desc: "Entièrement disponible en anglais et en français — une rareté parmi les applications de planification de voyage.",
       },
       {
-        title: "Concu pour les decisions de groupe",
-        desc: "Sondages, votes et collaboration en temps reel pour que chacun ait son mot a dire.",
+        title: "Conçu pour les décisions de groupe",
+        desc: "Sondages, votes et collaboration en temps réel pour que chacun ait son mot à dire.",
       },
     ],
-    ctaTitle: "Pret a planifier votre prochain voyage de groupe ?",
+    ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
     ctaButton: "Commencer gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte de credit requise.",
-    comingSoon: "Bientot",
+    ctaSub: "Gratuit pour toujours. Aucune carte de crédit requise.",
+    comingSoon: "Bientôt",
     freemium: "Freemium",
     webApp: "App web",
   },
@@ -395,8 +395,52 @@ export default async function AlternativesPage({ params }: Props) {
     }),
   ]);
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: locale === "fr" ? "Accueil" : "Home",
+        item: `https://www.weplanify.com/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: locale === "fr" ? "Comparatif" : "Alternatives",
+        item: `https://www.weplanify.com/${locale}/alternatives`,
+      },
+    ],
+  };
+
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: locale === "fr"
+      ? "Meilleures Applications de Voyage de Groupe 2026"
+      : "Best Group Trip Planner Apps 2026",
+    itemListElement: apps.map((app, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: app.name,
+      url:
+        app.name === "WePlanify"
+          ? "https://www.weplanify.com"
+          : undefined,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }}
+      />
       <Nav navData={navData} navigationData={navigationData} />
 
       <main className="min-h-screen bg-[#FFFBF5]">
@@ -432,7 +476,7 @@ export default async function AlternativesPage({ params }: Props) {
                 <thead>
                   <tr className="bg-[#001E13]">
                     <th className="font-karla font-bold text-[#FFFBF5] px-6 py-4 text-sm sticky left-0 bg-[#001E13] z-10 min-w-[200px]">
-                      {locale === "fr" ? "Fonctionnalite" : "Feature"}
+                      {locale === "fr" ? "Fonctionnalité" : "Feature"}
                     </th>
                     {apps.map((app) => (
                       <th
@@ -577,6 +621,64 @@ export default async function AlternativesPage({ params }: Props) {
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------------------------------------------------------- */}
+        {/* Discover More                                                    */}
+        {/* ---------------------------------------------------------------- */}
+        <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-[#FFFBF5]">
+          <div className="max-w-5xl mx-auto pt-16 lg:pt-20">
+            <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
+              {locale === "fr" ? "Découvrir aussi" : "Discover More"}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Link href={`/${locale}/trip-with-friends`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Voyage entre Amis" : "Trip with Friends"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Organisez un voyage de groupe entre amis facilement avec WePlanify."
+                      : "Plan a group trip with friends effortlessly using WePlanify."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                  </span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/bachelorette-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Organiser un EVJF" : "Plan a Bachelorette Trip"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Tout ce qu'il faut pour planifier un enterrement de vie de jeune fille inoubliable sans stress."
+                      : "Everything you need to plan an unforgettable bachelorette party trip, stress-free."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                  </span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/guides/plan-group-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Guide : Organiser un Voyage de Groupe" : "Guide: How to Plan a Group Trip"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Le guide complet étape par étape pour organiser un voyage de groupe réussi."
+                      : "The complete step-by-step guide to planning a successful group trip."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "Lire le guide →" : "Read the guide →"}
+                  </span>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

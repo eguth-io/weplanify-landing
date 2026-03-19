@@ -74,24 +74,28 @@ const content = {
           title: "Private Planning Group",
           description:
             "Create a secret planning space without the bride. Invite the crew, discuss ideas, and keep the surprise intact — no rogue group chat needed.",
+          link: null,
         },
         {
           emoji: "🗳️",
           title: "Polls for Activities & Dates",
           description:
             "Can't agree on a date or activity? Let the group vote. Polls make it easy to find what works for everyone — no endless back-and-forth.",
+          link: "/features/polls",
         },
         {
           emoji: "💰",
           title: "Shared Budget & Kitty",
           description:
             "Set a shared budget, track contributions, and split costs fairly. No more awkward money conversations or spreadsheet nightmares.",
+          link: "/features/budget",
         },
         {
           emoji: "🗓️",
           title: "Day-by-Day Itinerary",
           description:
             "Build a detailed schedule for the whole weekend. From the welcome drinks to the final brunch — everyone knows what's happening and when.",
+          link: "/features/planning",
         },
       ],
     },
@@ -123,6 +127,23 @@ const content = {
         "We planned the entire bachelorette weekend on WePlanify without the bride finding out. The polls saved us from 200 messages of debate, and the shared budget meant zero awkwardness. 10/10 would recommend!",
       author: "Sarah M.",
       role: "Maid of Honor",
+    },
+    faq: {
+      title: "Frequently Asked Questions",
+      items: [
+        {
+          q: "Can I plan without the bride seeing?",
+          a: "Absolutely. WePlanify lets you create a private planning group that the bride-to-be never sees. Invite only the bridesmaids and organizers — keep the surprise completely intact.",
+        },
+        {
+          q: "How do we manage the shared budget?",
+          a: "WePlanify includes a built-in shared budget tracker. Set the total budget, log every expense, split costs evenly or custom, and see who owes what in real time. No spreadsheets needed.",
+        },
+        {
+          q: "Is WePlanify free for bachelorette planning?",
+          a: "Yes, 100% free. All features — polls, itineraries, budgets, and private groups — are included at no cost. No trial, no credit card, no hidden fees.",
+        },
+      ],
     },
     cta: {
       title: "Ready to Plan the Best Bachelorette Ever?",
@@ -187,24 +208,28 @@ const content = {
           title: "Groupe de Planification Privé",
           description:
             "Créez un espace secret sans la mariée. Invitez la team, discutez des idées et gardez la surprise intacte — fini les groupes WhatsApp risqués.",
+          link: null,
         },
         {
           emoji: "🗳️",
           title: "Sondages pour les Activités & Dates",
           description:
             "Impossible de se mettre d'accord ? Laissez le groupe voter. Les sondages permettent de trouver ce qui convient à tout le monde — sans discussions interminables.",
+          link: "/features/polls",
         },
         {
           emoji: "💰",
           title: "Cagnotte & Budget Partagé",
           description:
             "Définissez un budget commun, suivez les contributions et répartissez les frais équitablement. Plus de conversations gênantes sur l'argent.",
+          link: "/features/budget",
         },
         {
           emoji: "🗓️",
           title: "Programme Jour par Jour",
           description:
             "Construisez un planning détaillé pour tout le week-end. Du cocktail de bienvenue au brunch final — tout le monde sait ce qui est prévu et quand.",
+          link: "/features/planning",
         },
       ],
     },
@@ -236,6 +261,23 @@ const content = {
         "On a organisé tout le week-end EVJF sur WePlanify sans que la mariée ne s'en doute. Les sondages nous ont évité 200 messages de débat, et la cagnotte commune a éliminé tout malaise. Je recommande à 100% !",
       author: "Sarah M.",
       role: "Témoin de la mariée",
+    },
+    faq: {
+      title: "Questions Fréquemment Posées",
+      items: [
+        {
+          q: "Puis-je organiser sans que la mariée voie ?",
+          a: "Absolument. WePlanify vous permet de créer un groupe de planification privé que la future mariée ne voit jamais. Invitez uniquement les demoiselles d'honneur et les organisatrices — la surprise reste totale.",
+        },
+        {
+          q: "Comment gérer le budget commun ?",
+          a: "WePlanify inclut un suivi de budget partagé intégré. Définissez le budget total, enregistrez chaque dépense, répartissez les coûts à parts égales ou personnalisées, et voyez qui doit quoi en temps réel. Aucun tableur nécessaire.",
+        },
+        {
+          q: "WePlanify est-il gratuit pour organiser un EVJF ?",
+          a: "Oui, 100% gratuit. Toutes les fonctionnalités — sondages, itinéraires, budgets et groupes privés — sont incluses sans aucun coût. Pas d'essai, pas de carte bancaire, pas de frais cachés.",
+        },
+      ],
     },
     cta: {
       title: "Prête à Organiser le Meilleur EVJF ?",
@@ -320,8 +362,48 @@ export default async function BacheloretteTrip({ params }: Props) {
     }),
   ]);
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: locale === "fr" ? "Accueil" : "Home",
+        item: `https://www.weplanify.com/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: locale === "fr" ? "EVJF" : "Bachelorette Trip",
+        item: `https://www.weplanify.com/${locale}/bachelorette-trip`,
+      },
+    ],
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: t.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
       <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen bg-[#FFFBF5]">
         {/* Hero Section */}
@@ -402,7 +484,13 @@ export default async function BacheloretteTrip({ params }: Props) {
                     <span className="text-2xl lg:text-3xl">{item.emoji}</span>
                   </div>
                   <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#001E13] mb-3">
-                    {item.title}
+                    {item.link ? (
+                      <Link href={`/${locale}${item.link}`} className="hover:underline underline-offset-4">
+                        {item.title}
+                      </Link>
+                    ) : (
+                      item.title
+                    )}
                   </h3>
                   <p className="text-sm lg:text-base font-karla text-[#001E13]/70 leading-relaxed">
                     {item.description}
@@ -467,6 +555,89 @@ export default async function BacheloretteTrip({ params }: Props) {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-16 lg:py-24 px-4 lg:px-8">
+          <div className="max-w-[800px] mx-auto">
+            <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
+              {t.faq.title}
+            </h2>
+            <div className="space-y-6">
+              {t.faq.items.map((item, i) => (
+                <details
+                  key={i}
+                  className="group border-b border-[#001E13]/10 pb-5"
+                >
+                  <summary className="flex items-start justify-between cursor-pointer list-none font-karla font-semibold text-[#001E13] text-base lg:text-lg">
+                    <span className="pr-4">{item.q}</span>
+                    <span className="text-[#F6391A] text-xl leading-none mt-0.5 group-open:rotate-45 transition-transform">
+                      +
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-[#001E13]/70 text-sm lg:text-base font-karla leading-relaxed">
+                    {item.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Discover More Section */}
+        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
+              {locale === "fr" ? "Découvrir aussi" : "Discover More"}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Link href={`/${locale}/trip-with-friends`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Voyage entre Amis" : "Trip with Friends"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Organisez un voyage de groupe entre amis facilement avec WePlanify."
+                      : "Plan a group trip with friends effortlessly using WePlanify."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                  </span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/guides/plan-group-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Guide : Organiser un Voyage de Groupe" : "Guide: How to Plan a Group Trip"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Le guide complet étape par étape pour organiser un voyage de groupe réussi."
+                      : "The complete step-by-step guide to planning a successful group trip."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "Lire le guide →" : "Read the guide →"}
+                  </span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/alternatives`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Comparatif des Applications" : "App Comparison"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Comparez WePlanify avec les autres applications de planification de voyage de groupe en 2026."
+                      : "See how WePlanify compares to other group trip planning apps in 2026."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "Voir le comparatif →" : "View comparison →"}
+                  </span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Banner */}
         <section className="py-16 lg:py-24 px-4 lg:px-8">
           <div className="max-w-5xl mx-auto">
@@ -478,9 +649,9 @@ export default async function BacheloretteTrip({ params }: Props) {
                 {t.cta.description}
               </p>
               <Link href="https://app.weplanify.com/register">
-                <button className="bg-[#FFFBF5] text-[#F6391A] font-karla font-bold text-base lg:text-lg px-8 py-3 rounded-full hover:bg-white transition-colors duration-300 cursor-pointer">
+                <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
                   {t.cta.button}
-                </button>
+                </PulsatingButton>
               </Link>
             </div>
           </div>

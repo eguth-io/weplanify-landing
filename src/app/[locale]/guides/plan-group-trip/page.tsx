@@ -39,13 +39,13 @@ const meta = {
   },
   fr: {
     title:
-      "Comment Organiser un Voyage de Groupe : Le Guide Complet Etape par Etape (2026)",
+      "Comment Organiser un Voyage de Groupe : Le Guide Complet Étape par Étape (2026)",
     description:
-      "Decouvrez comment organiser un voyage de groupe de A a Z. Ce guide etape par etape couvre le choix de destination, le budget, l'itineraire, la logistique et bien plus.",
+      "Découvrez comment organiser un voyage de groupe de A à Z. Ce guide étape par étape couvre le choix de destination, le budget, l'itinéraire, la logistique et bien plus.",
     keywords: [
       "comment organiser voyage groupe",
       "guide planification voyage groupe",
-      "organiser voyage collectif etapes",
+      "organiser voyage collectif étapes",
       "planifier voyage entre amis",
       "voyage de groupe organisation",
     ],
@@ -254,32 +254,32 @@ const content = {
   fr: {
     readTime: "12 min de lecture",
     heroTag: "Guide Complet",
-    h1: "Comment Organiser un Voyage de Groupe : Le Guide Complet Etape par Etape (2026)",
+    h1: "Comment Organiser un Voyage de Groupe : Le Guide Complet Étape par Étape (2026)",
     intro:
-      "Organiser un voyage de groupe est l'une des experiences les plus enrichissantes que vous puissiez partager avec vos amis, votre famille ou vos collegues — mais cela peut aussi etre l'une des plus chaotiques. Entre l'alignement des agendas, la gestion des budgets et la satisfaction de chacun, la planification d'un voyage de groupe devient vite ecrasante. Ce guide vous accompagne a chaque etape de l'organisation d'un voyage de groupe reussi, de la toute premiere conversation jusqu'a votre dernier jour sur la route.",
+      "Organiser un voyage de groupe est l'une des expériences les plus enrichissantes que vous puissiez partager avec vos amis, votre famille ou vos collègues — mais cela peut aussi être l'une des plus chaotiques. Entre l'alignement des agendas, la gestion des budgets et la satisfaction de chacun, la planification d'un voyage de groupe devient vite écrasante. Ce guide vous accompagne à chaque étape de l'organisation d'un voyage de groupe réussi, de la toute première conversation jusqu'à votre dernier jour sur la route.",
 
     tocTitle: "Sommaire",
     toc: [
-      { id: "define-group", label: "Etape 1 : Definir le Groupe et les Attentes" },
-      { id: "choose-destination", label: "Etape 2 : Choisir une Destination Ensemble" },
-      { id: "set-budget", label: "Etape 3 : Fixer un Budget et Partager les Frais" },
-      { id: "build-itinerary", label: "Etape 4 : Construire un Itineraire Collaboratif" },
-      { id: "coordinate-logistics", label: "Etape 5 : Coordonner la Logistique" },
-      { id: "pack-smart", label: "Etape 6 : Faire ses Bagages avec des Listes Partagees" },
-      { id: "stay-organized", label: "Etape 7 : Rester Organise Pendant le Voyage" },
-      { id: "pro-tips", label: "Conseils de Voyageurs de Groupe Experimentes" },
+      { id: "define-group", label: "Étape 1 : Définir le Groupe et les Attentes" },
+      { id: "choose-destination", label: "Étape 2 : Choisir une Destination Ensemble" },
+      { id: "set-budget", label: "Étape 3 : Fixer un Budget et Partager les Frais" },
+      { id: "build-itinerary", label: "Étape 4 : Construire un Itinéraire Collaboratif" },
+      { id: "coordinate-logistics", label: "Étape 5 : Coordonner la Logistique" },
+      { id: "pack-smart", label: "Étape 6 : Faire ses Bagages avec des Listes Partagées" },
+      { id: "stay-organized", label: "Étape 7 : Rester Organisé Pendant le Voyage" },
+      { id: "pro-tips", label: "Conseils de Voyageurs de Groupe Expérimentés" },
     ],
 
     steps: [
       {
         id: "define-group",
         number: "01",
-        title: "Definir le Groupe et les Attentes",
+        title: "Définir le Groupe et les Attentes",
         paragraphs: [
-          "Avant de commencer a rechercher des vols ou de rever de destinations, prenez du recul et reflechissez a avec qui vous voyagez. La composition de votre groupe influence fondamentalement chaque decision qui suit. Un week-end entre quatre amis proches necessite une approche completement differente d'un voyage de retrouvailles de deux semaines avec douze membres de la famille elargie.",
-          "Commencez par definir la taille ideale du groupe. Les petits groupes (4 a 6 personnes) sont plus faciles a coordonner et ont tendance a etre plus flexibles, tandis que les grands groupes (8+) apportent plus d'energie mais necessitent une organisation plus solide. Soyez honnete sur qui voyage bien ensemble — melanger des styles de voyage incompatibles est une recette pour les tensions.",
-          "Une fois votre equipe constituee, ayez une conversation ouverte sur les attentes des le depart. Discutez du rythme de voyage (itineraire charge vs. exploration detendue), des preferences d'hebergement (auberges, Airbnbs ou hotels) et du temps que chacun souhaite passer seul ou en groupe. Etablir ces attentes des le depart previent les conflits les plus courants en voyage de groupe.",
-          "Avec WePlanify, vous pouvez creer un espace de voyage partage ou chaque membre peut rejoindre et exprimer ses preferences des le premier jour — plus besoin de fils de discussion interminables dans le chat de groupe.",
+          "Avant de commencer à rechercher des vols ou de rêver de destinations, prenez du recul et réfléchissez à avec qui vous voyagez. La composition de votre groupe influence fondamentalement chaque décision qui suit. Un week-end entre quatre amis proches nécessite une approche complètement différente d'un voyage de retrouvailles de deux semaines avec douze membres de la famille élargie.",
+          "Commencez par définir la taille idéale du groupe. Les petits groupes (4 à 6 personnes) sont plus faciles à coordonner et ont tendance à être plus flexibles, tandis que les grands groupes (8+) apportent plus d'énergie mais nécessitent une organisation plus solide. Soyez honnête sur qui voyage bien ensemble — mélanger des styles de voyage incompatibles est une recette pour les tensions.",
+          "Une fois votre équipe constituée, ayez une conversation ouverte sur les attentes dès le départ. Discutez du rythme de voyage (itinéraire chargé vs. exploration détendue), des préférences d'hébergement (auberges, Airbnbs ou hôtels) et du temps que chacun souhaite passer seul ou en groupe. Établir ces attentes dès le départ prévient les conflits les plus courants en voyage de groupe.",
+          "Avec WePlanify, vous pouvez créer un espace de voyage partagé où chaque membre peut rejoindre et exprimer ses préférences dès le premier jour — plus besoin de fils de discussion interminables dans le chat de groupe.",
         ],
       },
       {
@@ -287,32 +287,32 @@ const content = {
         number: "02",
         title: "Choisir une Destination Ensemble",
         paragraphs: [
-          "Choisir ou aller en groupe est souvent le premier vrai test de la dynamique de groupe. Chacun a sa destination de reve, et trouver un terrain d'entente demande de la diplomatie. La cle est d'utiliser un processus structure plutot que de laisser la voix la plus forte l'emporter.",
-          "Commencez par demander a chacun de suggerer deux ou trois destinations. Compilez la liste puis reduisez-la en fonction de criteres pratiques : exigences de visa pour tous les membres, temps de trajet, meteo saisonniere et cout global. Une destination qui semble incroyable mais qui necessite que la moitie du groupe fasse une demande de visa des mois a l'avance n'est peut-etre pas pratique.",
-          "Une fois que vous avez une liste restreinte de trois a cinq options, mettez-la au vote. Les sondages anonymes fonctionnent etonnamment bien car ils suppriment la pression sociale — les gens votent pour ce qu'ils veulent vraiment, pas pour ce qu'ils pensent devoir vouloir. La majorite l'emporte, et tout le monde s'engage a accepter le choix gagnant.",
-          "Les sondages de groupe integres a WePlanify rendent ce processus fluide. Creez un sondage, partagez-le avec votre groupe et laissez chacun voter sur son telephone. Les resultats sont instantanes, transparents et reglent le debat rapidement pour que vous puissiez passer a la partie amusante — planifier les details.",
+          "Choisir où aller en groupe est souvent le premier vrai test de la dynamique de groupe. Chacun a sa destination de rêve, et trouver un terrain d'entente demande de la diplomatie. La clé est d'utiliser un processus structuré plutôt que de laisser la voix la plus forte l'emporter.",
+          "Commencez par demander à chacun de suggérer deux ou trois destinations. Compilez la liste puis réduisez-la en fonction de critères pratiques : exigences de visa pour tous les membres, temps de trajet, météo saisonnière et coût global. Une destination qui semble incroyable mais qui nécessite que la moitié du groupe fasse une demande de visa des mois à l'avance n'est peut-être pas pratique.",
+          "Une fois que vous avez une liste restreinte de trois à cinq options, mettez-la au vote. Les sondages anonymes fonctionnent étonnamment bien car ils suppriment la pression sociale — les gens votent pour ce qu'ils veulent vraiment, pas pour ce qu'ils pensent devoir vouloir. La majorité l'emporte, et tout le monde s'engage à accepter le choix gagnant.",
+          "Les sondages de groupe intégrés à WePlanify rendent ce processus fluide. Créez un sondage, partagez-le avec votre groupe et laissez chacun voter sur son téléphone. Les résultats sont instantanés, transparents et règlent le débat rapidement pour que vous puissiez passer à la partie amusante — planifier les détails.",
         ],
       },
       {
         id: "set-budget",
         number: "03",
-        title: "Fixer un Budget et Partager les Frais Equitablement",
+        title: "Fixer un Budget et Partager les Frais Équitablement",
         paragraphs: [
-          "L'argent est la source numero un de tensions lors des voyages de groupe, et la meilleure facon de la desamorcer est la transparence totale. Tout le monde dans votre groupe n'aura pas le meme budget, et c'est parfaitement normal — ce qui compte, c'est que chacun soit d'accord sur les frais partages et comprenne ce qui est couvert par rapport a ce qui est optionnel.",
-          "Commencez par estimer les principales categories de depenses : vols, hebergement, transport, nourriture, activites et un fonds de contingence. Pour les depenses partagees comme l'hebergement et les voitures de location, decidez tot comment les couts seront repartis. Est-ce un partage egal, ou les personnes qui obtiennent la chambre principale paient-elles un peu plus ? Ces conversations sont delicates mais essentielles.",
-          "Creez un suivi de budget partage que tout le monde peut voir et mettre a jour. Suivez qui a paye quoi en temps reel pour qu'il n'y ait pas de surprises a la fin du voyage. Pour les depenses quotidiennes, envisagez de nommer un tresorier du jour ou d'utiliser une simple rotation pour regler les additions du groupe (comme les diners ou les taxis).",
-          "WePlanify inclut un suivi de budget collaboratif ou chaque membre du groupe peut enregistrer les depenses, voir les totaux en cours et savoir exactement ou va l'argent. Plus de tableurs, plus de conversations genantes 'tu me dois' a la fin du voyage. Tout est transparent des le premier jour.",
+          "L'argent est la source numéro un de tensions lors des voyages de groupe, et la meilleure façon de la désamorcer est la transparence totale. Tout le monde dans votre groupe n'aura pas le même budget, et c'est parfaitement normal — ce qui compte, c'est que chacun soit d'accord sur les frais partagés et comprenne ce qui est couvert par rapport à ce qui est optionnel.",
+          "Commencez par estimer les principales catégories de dépenses : vols, hébergement, transport, nourriture, activités et un fonds de contingence. Pour les dépenses partagées comme l'hébergement et les voitures de location, décidez tôt comment les coûts seront répartis. Est-ce un partage égal, ou les personnes qui obtiennent la chambre principale paient-elles un peu plus ? Ces conversations sont délicates mais essentielles.",
+          "Créez un suivi de budget partagé que tout le monde peut voir et mettre à jour. Suivez qui a payé quoi en temps réel pour qu'il n'y ait pas de surprises à la fin du voyage. Pour les dépenses quotidiennes, envisagez de nommer un trésorier du jour ou d'utiliser une simple rotation pour régler les additions du groupe (comme les dîners ou les taxis).",
+          "WePlanify inclut un suivi de budget collaboratif où chaque membre du groupe peut enregistrer les dépenses, voir les totaux en cours et savoir exactement où va l'argent. Plus de tableurs, plus de conversations gênantes 'tu me dois' à la fin du voyage. Tout est transparent dès le premier jour.",
         ],
       },
       {
         id: "build-itinerary",
         number: "04",
-        title: "Construire Votre Itineraire de Maniere Collaborative",
+        title: "Construire Votre Itinéraire de Manière Collaborative",
         paragraphs: [
-          "L'itineraire est l'endroit ou votre voyage de groupe passe d'une idee vague a une veritable aventure. Mais construire un plan jour par jour qui satisfait tout le monde demande de l'equilibre — trop rigide et les gens se sentent controles, trop lache et vous perdez du temps chaque matin a decider quoi faire.",
-          "Commencez par les incontournables : les experiences qui feraient ou defairaient le voyage pour certains membres. Peut-etre que quelqu'un a toujours voulu visiter un musee particulier, ou que le but meme du voyage est un festival specifique. Bloquez-les en premier. Puis remplissez autour avec un melange d'activites de groupe et de plages de temps libre.",
-          "Une structure eprouvee est la regle du 70/30 — planifiez environ 70 % de chaque journee et laissez 30 % non structure. Cela donne au groupe une direction claire tout en laissant place a la spontaneite, au repos ou a ces decouvertes inattendues qui deviennent les meilleurs souvenirs. Prevoyez au moins une journee de repos complete pour les voyages plus longs ; la fatigue du voyage est reelle et cumulative.",
-          "Avec le planificateur d'itineraire collaboratif de WePlanify, chaque membre du groupe peut suggerer des activites, voter sur les options et voir le plan evoluer en temps reel. L'assistant de voyage IA peut meme recommander des activites en fonction de votre destination, de la taille du groupe et des centres d'interet — vous faisant gagner des heures de recherche.",
+          "L'itinéraire est l'endroit où votre voyage de groupe passe d'une idée vague à une véritable aventure. Mais construire un plan jour par jour qui satisfait tout le monde demande de l'équilibre — trop rigide et les gens se sentent contrôlés, trop lâche et vous perdez du temps chaque matin à décider quoi faire.",
+          "Commencez par les incontournables : les expériences qui feraient ou déferaient le voyage pour certains membres. Peut-être que quelqu'un a toujours voulu visiter un musée particulier, ou que le but même du voyage est un festival spécifique. Bloquez-les en premier. Puis remplissez autour avec un mélange d'activités de groupe et de plages de temps libre.",
+          "Une structure éprouvée est la règle du 70/30 — planifiez environ 70 % de chaque journée et laissez 30 % non structuré. Cela donne au groupe une direction claire tout en laissant place à la spontanéité, au repos ou à ces découvertes inattendues qui deviennent les meilleurs souvenirs. Prévoyez au moins une journée de repos complète pour les voyages plus longs ; la fatigue du voyage est réelle et cumulative.",
+          "Avec le planificateur d'itinéraire collaboratif de WePlanify, chaque membre du groupe peut suggérer des activités, voter sur les options et voir le plan évoluer en temps réel. L'assistant de voyage IA peut même recommander des activités en fonction de votre destination, de la taille du groupe et des centres d'intérêt — vous faisant gagner des heures de recherche.",
         ],
       },
       {
@@ -320,88 +320,88 @@ const content = {
         number: "05",
         title: "Coordonner la Logistique",
         paragraphs: [
-          "La logistique est ce qui fait la reussite ou l'echec des voyages de groupe. Les vols, l'hebergement et le transport terrestre doivent etre reserves en tenant compte des besoins de chacun, et la fenetre pour de bons prix n'attend pas les retardataires.",
-          "Pour les vols, decidez tot si chacun reservera independamment ou si une personne coordonnera une reservation de groupe. Si les gens partent de differentes villes, fixez une date limite ferme pour que tout le monde ait reserve ses vols — idealement huit a douze semaines avant le depart pour les voyages internationaux. Partagez les details des vols dans un endroit centralise pour que le groupe puisse planifier les transferts aeroport et ajuster l'itineraire en fonction des heures d'arrivee.",
-          "L'hebergement pour les groupes fonctionne souvent mieux sous forme de maisons ou appartements entiers plutot que de chambres d'hotel individuelles. Les plateformes comme Airbnb et Vrbo sont ideales, mais reservez tot — les proprietes qui accueillent six personnes ou plus disparaissent vite dans les destinations populaires. Assurez-vous que tout le monde est d'accord sur le style d'hebergement et comprend la politique d'annulation avant que quiconque ne verse un acompte.",
+          "La logistique est ce qui fait la réussite ou l'échec des voyages de groupe. Les vols, l'hébergement et le transport terrestre doivent être réservés en tenant compte des besoins de chacun, et la fenêtre pour de bons prix n'attend pas les retardataires.",
+          "Pour les vols, décidez tôt si chacun réservera indépendamment ou si une personne coordonnera une réservation de groupe. Si les gens partent de différentes villes, fixez une date limite ferme pour que tout le monde ait réservé ses vols — idéalement huit à douze semaines avant le départ pour les voyages internationaux. Partagez les détails des vols dans un endroit centralisé pour que le groupe puisse planifier les transferts aéroport et ajuster l'itinéraire en fonction des heures d'arrivée.",
+          "L'hébergement pour les groupes fonctionne souvent mieux sous forme de maisons ou appartements entiers plutôt que de chambres d'hôtel individuelles. Les plateformes comme Airbnb et Vrbo sont idéales, mais réservez tôt — les propriétés qui accueillent six personnes ou plus disparaissent vite dans les destinations populaires. Assurez-vous que tout le monde est d'accord sur le style d'hébergement et comprend la politique d'annulation avant que quiconque ne verse un acompte.",
           "Pour le transport terrestre, recherchez si louer une ou deux voitures, utiliser des VTC ou compter sur les transports en commun est plus logique compte tenu de la taille de votre groupe et de votre destination. Dans de nombreuses villes, un pass transport pour tout le monde est moins cher et moins stressant que de garer plusieurs voitures de location.",
-          "WePlanify vous permet de centraliser toutes vos confirmations de reservation, details de vol et informations d'hebergement dans un tableau de bord de voyage partage. Tout le monde a acces aux dernieres informations — plus besoin de fouiller dans les emails ou de demander 'c'est quoi l'adresse deja ?' dans le chat de groupe.",
+          "WePlanify vous permet de centraliser toutes vos confirmations de réservation, détails de vol et informations d'hébergement dans un tableau de bord de voyage partagé. Tout le monde a accès aux dernières informations — plus besoin de fouiller dans les emails ou de demander 'c'est quoi l'adresse déjà ?' dans le chat de groupe.",
         ],
       },
       {
         id: "pack-smart",
         number: "06",
-        title: "Faire ses Bagages Intelligemment avec des Listes Partagees",
+        title: "Faire ses Bagages Intelligemment avec des Listes Partagées",
         paragraphs: [
-          "Faire ses bagages pour un voyage de groupe est une opportunite que la plupart des gens ratent. Au lieu que chacun emballe independamment chaque objet possible, coordonnez-vous et partagez. Vous n'avez pas besoin de cinq personnes apportant des bouteilles de creme solaire grand format, trois trousses de premiers soins ou quatre chargeurs de telephone portables.",
-          "Creez une liste de bagages partagee avec deux sections : les essentiels personnels (choses dont chacun a besoin de sa propre version) et les objets de groupe (choses qu'une ou deux personnes doivent apporter pour tout le monde). Les objets de groupe courants incluent une trousse de premiers soins, des multiprises, des jeux de cartes, une enceinte portable, des fournitures de cuisine de base si vous louez un logement avec cuisine et du materiel specifique pour les activites prevues.",
-          "Pour les bagages specifiques a la destination, renseignez-vous ensemble sur la meteo et les normes culturelles. Si vous allez dans un endroit avec des codes vestimentaires modestes, assurez-vous que tout le monde le sait. Si la pluie est probable, coordonnez qui apporte un parapluie compact ou qui compte sur un imper. Ces petits details evitent les maux de tete pendant le voyage.",
-          "Les listes de bagages partagees de WePlanify vous permettent d'attribuer des objets de groupe a des personnes specifiques, de cocher les objets au fur et a mesure que vous les emballez et de vous assurer que rien d'essentiel ne passe entre les mailles du filet. Vous pouvez meme creer des modeles de listes de bagages pour differents types de voyages afin d'accelerer la planification future.",
+          "Faire ses bagages pour un voyage de groupe est une opportunité que la plupart des gens ratent. Au lieu que chacun emballe indépendamment chaque objet possible, coordonnez-vous et partagez. Vous n'avez pas besoin de cinq personnes apportant des bouteilles de crème solaire grand format, trois trousses de premiers soins ou quatre chargeurs de téléphone portables.",
+          "Créez une liste de bagages partagée avec deux sections : les essentiels personnels (choses dont chacun a besoin de sa propre version) et les objets de groupe (choses qu'une ou deux personnes doivent apporter pour tout le monde). Les objets de groupe courants incluent une trousse de premiers soins, des multiprises, des jeux de cartes, une enceinte portable, des fournitures de cuisine de base si vous louez un logement avec cuisine et du matériel spécifique pour les activités prévues.",
+          "Pour les bagages spécifiques à la destination, renseignez-vous ensemble sur la météo et les normes culturelles. Si vous allez dans un endroit avec des codes vestimentaires modestes, assurez-vous que tout le monde le sait. Si la pluie est probable, coordonnez qui apporte un parapluie compact ou qui compte sur un imper. Ces petits détails évitent les maux de tête pendant le voyage.",
+          "Les listes de bagages partagées de WePlanify vous permettent d'attribuer des objets de groupe à des personnes spécifiques, de cocher les objets au fur et à mesure que vous les emballez et de vous assurer que rien d'essentiel ne passe entre les mailles du filet. Vous pouvez même créer des modèles de listes de bagages pour différents types de voyages afin d'accélérer la planification future.",
         ],
       },
       {
         id: "stay-organized",
         number: "07",
-        title: "Rester Organise Pendant le Voyage",
+        title: "Rester Organisé Pendant le Voyage",
         paragraphs: [
-          "Toute votre planification minutieuse ne sert a rien si le groupe se desorganise une fois le voyage commence. Rester organise sur la route est une question de communication, de flexibilite et d'avoir une source unique de verite que chacun peut consulter.",
-          "Designez un responsable du jour sur une base tournante. Cette personne n'est pas le chef — elle est simplement celle qui maintient le rythme de la journee, fait la reservation au restaurant, verifie le timing de l'itineraire et rappelle aux gens quand il est temps de partir. Alterner ce role previent l'epuisement et repartit la charge mentale.",
-          "Prevoyez des points quotidiens, meme s'ils sont informels. Une rapide discussion de cinq minutes autour du cafe du matin sur le programme de la journee garde tout le monde aligne. C'est aussi le moment de soulever les problemes — si quelqu'un est fatigue ou veut sauter une activite, il vaut mieux le savoir tot que de le voir silencieusement en vouloir au rythme.",
-          "Soyez pret a vous adapter. La meteo change, des endroits sont fermes de maniere inattendue ou quelqu'un tombe malade. Les groupes qui ont un plan B pour les activites cles et une attitude de flexibilite passent de meilleurs voyages que ceux rigidement attaches au plan initial.",
-          "WePlanify garde votre itineraire, budget et logistique accessibles a tous en temps reel, meme hors ligne. Besoin de changer les plans ? Mettez a jour l'itineraire et tout le groupe le voit instantanement — pas besoin de vous repeter dans plusieurs messages.",
+          "Toute votre planification minutieuse ne sert à rien si le groupe se désorganise une fois le voyage commencé. Rester organisé sur la route est une question de communication, de flexibilité et d'avoir une source unique de vérité que chacun peut consulter.",
+          "Désignez un responsable du jour sur une base tournante. Cette personne n'est pas le chef — elle est simplement celle qui maintient le rythme de la journée, fait la réservation au restaurant, vérifie le timing de l'itinéraire et rappelle aux gens quand il est temps de partir. Alterner ce rôle prévient l'épuisement et répartit la charge mentale.",
+          "Prévoyez des points quotidiens, même s'ils sont informels. Une rapide discussion de cinq minutes autour du café du matin sur le programme de la journée garde tout le monde aligné. C'est aussi le moment de soulever les problèmes — si quelqu'un est fatigué ou veut sauter une activité, il vaut mieux le savoir tôt que de le voir silencieusement en vouloir au rythme.",
+          "Soyez prêt à vous adapter. La météo change, des endroits sont fermés de manière inattendue ou quelqu'un tombe malade. Les groupes qui ont un plan B pour les activités clés et une attitude de flexibilité passent de meilleurs voyages que ceux rigidement attachés au plan initial.",
+          "WePlanify garde votre itinéraire, budget et logistique accessibles à tous en temps réel, même hors ligne. Besoin de changer les plans ? Mettez à jour l'itinéraire et tout le groupe le voit instantanément — pas besoin de vous répéter dans plusieurs messages.",
         ],
       },
     ],
 
     proTips: {
-      title: "Conseils de Voyageurs de Groupe Experimentes",
+      title: "Conseils de Voyageurs de Groupe Expérimentés",
       tips: [
         {
-          title: "Creez un album photo partage des le premier jour",
-          text: "Utilisez un album Google Photos partage, une bibliotheque iCloud partagee ou un service similaire. Ajoutez des photos tout au long du voyage pour que chacun reparte avec des centaines de souvenirs, pas seulement sa propre perspective.",
+          title: "Créez un album photo partagé dès le premier jour",
+          text: "Utilisez un album Google Photos partagé, une bibliothèque iCloud partagée ou un service similaire. Ajoutez des photos tout au long du voyage pour que chacun reparte avec des centaines de souvenirs, pas seulement sa propre perspective.",
         },
         {
           title: "Convenez d'un canal de communication de groupe",
-          text: "Choisissez une plateforme — WhatsApp, Telegram ou un chat de voyage WePlanify dedie — et gardez toute la communication du voyage la-bas. Les conversations paralleles sont acceptables, mais la logistique doit etre centralisee.",
+          text: "Choisissez une plateforme — WhatsApp, Telegram ou un chat de voyage WePlanify dédié — et gardez toute la communication du voyage là-bas. Les conversations parallèles sont acceptables, mais la logistique doit être centralisée.",
         },
         {
-          title: "Integrez du temps solo sans culpabilite",
-          text: "Meme les groupes les plus soudes ont besoin d'espace. Normalisez le fait de se separer pendant quelques heures. Certaines personnes se ressourcent en explorant seules, en visitant un musee ou simplement en s'asseyant dans un cafe. Le groupe en sortira renforce.",
+          title: "Intégrez du temps solo sans culpabilité",
+          text: "Même les groupes les plus soudés ont besoin d'espace. Normalisez le fait de se séparer pendant quelques heures. Certaines personnes se ressourcent en explorant seules, en visitant un musée ou simplement en s'asseyant dans un café. Le groupe en sortira renforcé.",
         },
         {
-          title: "Faites une reunion pre-voyage",
-          text: "Deux semaines avant le depart, reunissez-vous (virtuellement ou en personne) pour revoir l'itineraire, confirmer la logistique et partager l'excitation. C'est le moment de reperer les problemes de derniere minute comme les passeports expires ou les vaccinations manquantes.",
+          title: "Faites une réunion pré-voyage",
+          text: "Deux semaines avant le départ, réunissez-vous (virtuellement ou en personne) pour revoir l'itinéraire, confirmer la logistique et partager l'excitation. C'est le moment de repérer les problèmes de dernière minute comme les passeports expirés ou les vaccinations manquantes.",
         },
       ],
     },
 
     cta: {
-      title: "Pret a Organiser Votre Voyage de Groupe ?",
-      text: "Arretez de jongler entre tableurs, chats de groupe et fils d'emails. WePlanify reunit tout votre groupe dans un seul espace collaboratif — avec planification d'itineraire, suivi de budget, sondages de groupe, listes de bagages et recommandations alimentees par l'IA. Gratuit pour toujours, sans carte de credit.",
-      button: "Commencer a Planifier Gratuitement",
+      title: "Prêt à Organiser Votre Voyage de Groupe ?",
+      text: "Arrêtez de jongler entre tableurs, chats de groupe et fils d'emails. WePlanify réunit tout votre groupe dans un seul espace collaboratif — avec planification d'itinéraire, suivi de budget, sondages de groupe, listes de bagages et recommandations alimentées par l'IA. Gratuit pour toujours, sans carte de crédit.",
+      button: "Commencer à Planifier Gratuitement",
     },
 
     faq: {
-      title: "Questions Frequemment Posees",
+      title: "Questions Fréquemment Posées",
       items: [
         {
-          q: "Quelle est la taille ideale pour un voyage de groupe ?",
-          a: "Le nombre ideal est de 4 a 8 personnes. Cette taille est suffisamment grande pour creer une belle dynamique de groupe et partager les couts efficacement, mais suffisamment petite pour coordonner la logistique, se mettre d'accord sur les activites et trouver un hebergement facilement. Les groupes de plus de 10 personnes beneficient souvent de se diviser en sous-groupes pour certaines activites.",
+          q: "Quelle est la taille idéale pour un voyage de groupe ?",
+          a: "Le nombre idéal est de 4 à 8 personnes. Cette taille est suffisamment grande pour créer une belle dynamique de groupe et partager les coûts efficacement, mais suffisamment petite pour coordonner la logistique, se mettre d'accord sur les activités et trouver un hébergement facilement. Les groupes de plus de 10 personnes bénéficient souvent de se diviser en sous-groupes pour certaines activités.",
         },
         {
-          q: "Combien de temps a l'avance faut-il commencer a planifier un voyage de groupe ?",
-          a: "Pour les voyages nationaux, commencez a planifier 2 a 3 mois a l'avance. Pour les voyages internationaux, accordez-vous 4 a 6 mois. Cela laisse le temps a chacun de demander des conges, d'economiser, d'obtenir les visas necessaires et de reserver vols et hebergement a des prix raisonnables.",
+          q: "Combien de temps à l'avance faut-il commencer à planifier un voyage de groupe ?",
+          a: "Pour les voyages nationaux, commencez à planifier 2 à 3 mois à l'avance. Pour les voyages internationaux, accordez-vous 4 à 6 mois. Cela laisse le temps à chacun de demander des congés, d'économiser, d'obtenir les visas nécessaires et de réserver vols et hébergement à des prix raisonnables.",
         },
         {
-          q: "Comment repartir les frais equitablement lors d'un voyage de groupe ?",
-          a: "L'approche la plus equitable est de separer les depenses partagees (hebergement, voiture de location, repas de groupe) des depenses personnelles (souvenirs, activites individuelles). Utilisez un outil de suivi des depenses partage comme WePlanify pour enregistrer qui paie quoi en temps reel. A la fin du voyage, l'application calcule qui doit combien a qui — sans tableur necessaire.",
+          q: "Comment répartir les frais équitablement lors d'un voyage de groupe ?",
+          a: "L'approche la plus équitable est de séparer les dépenses partagées (hébergement, voiture de location, repas de groupe) des dépenses personnelles (souvenirs, activités individuelles). Utilisez un outil de suivi des dépenses partagé comme WePlanify pour enregistrer qui paie quoi en temps réel. À la fin du voyage, l'application calcule qui doit combien à qui — sans tableur nécessaire.",
         },
         {
-          q: "Que faire si certains membres du groupe ont des budgets tres differents ?",
-          a: "Reconnaissez les differences de budget ouvertement et sans jugement. Proposez des options a plusieurs niveaux quand c'est possible — par exemple, un diner de groupe dans un restaurant de gamme moyenne avec la possibilite d'upgrader individuellement. Pour l'hebergement, mixer les types de chambres ou choisir une location avec des chambres de tailles differentes permet de la flexibilite sans exclure personne.",
+          q: "Que faire si certains membres du groupe ont des budgets très différents ?",
+          a: "Reconnaissez les différences de budget ouvertement et sans jugement. Proposez des options à plusieurs niveaux quand c'est possible — par exemple, un dîner de groupe dans un restaurant de gamme moyenne avec la possibilité d'upgrader individuellement. Pour l'hébergement, mixer les types de chambres ou choisir une location avec des chambres de tailles différentes permet de la flexibilité sans exclure personne.",
         },
         {
-          q: "Comment gerer les desaccords pendant la planification d'un voyage de groupe ?",
-          a: "Utilisez des outils de prise de decision democratique comme les sondages et les votes pour les decisions majeures (destination, style d'hebergement, activites cles). Pour les decisions mineures, alternez qui a le dernier mot chaque jour. Le plus important est d'etablir les attentes tot — convenez d'un processus de prise de decision avant que les conflits ne surgissent, pas apres.",
+          q: "Comment gérer les désaccords pendant la planification d'un voyage de groupe ?",
+          a: "Utilisez des outils de prise de décision démocratique comme les sondages et les votes pour les décisions majeures (destination, style d'hébergement, activités clés). Pour les décisions mineures, alternez qui a le dernier mot chaque jour. Le plus important est d'établir les attentes tôt — convenez d'un processus de prise de décision avant que les conflits ne surgissent, pas après.",
         },
       ],
     },
@@ -640,6 +640,62 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
                   </p>
                 </details>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Discover More Section */}
+        <section className="py-16 lg:py-20 px-4 lg:px-8 bg-[#FFFBF5]">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-[#001E13] text-2xl lg:text-3xl font-londrina-solid text-center mb-10">
+              {locale === "fr" ? "Découvrir aussi" : "Discover More"}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Link href={`/${locale}/trip-with-friends`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Voyage entre Amis" : "Trip with Friends"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Organisez un voyage de groupe entre amis facilement avec WePlanify."
+                      : "Plan a group trip with friends effortlessly using WePlanify."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                  </span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/bachelorette-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Organiser un EVJF" : "Plan a Bachelorette Trip"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Tout ce qu'il faut pour planifier un enterrement de vie de jeune fille inoubliable sans stress."
+                      : "Everything you need to plan an unforgettable bachelorette party trip, stress-free."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                  </span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/alternatives`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Comparatif des Applications" : "App Comparison"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Comparez WePlanify avec les autres applications de planification de voyage de groupe en 2026."
+                      : "See how WePlanify compares to other group trip planning apps in 2026."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "Voir le comparatif →" : "View comparison →"}
+                  </span>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

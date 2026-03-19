@@ -172,6 +172,22 @@ const content = {
       },
     ],
 
+    faqTitle: "Frequently Asked Questions",
+    faqItems: [
+      {
+        q: "Is WePlanify really free?",
+        a: "Yes, 100%. WePlanify is free forever — no hidden fees, no trial limits, no credit card required. All core features (itineraries, polls, budgets, packing lists) are included at no cost.",
+      },
+      {
+        q: "How many friends can I invite?",
+        a: "There is no limit. Whether your group is 3 or 30, everyone can join with a simple invite link and collaborate in real time on the same trip.",
+      },
+      {
+        q: "Do I need to download an app?",
+        a: "No download needed. WePlanify works directly in your browser on any device — phone, tablet, or computer. Just open the link and start planning.",
+      },
+    ],
+
     ctaTitle: "Your Next Adventure Starts Here",
     ctaDescription:
       "Join thousands of friend groups who plan their trips with WePlanify. It's free, it's fun, and it actually works.",
@@ -282,6 +298,22 @@ const content = {
       },
     ],
 
+    faqTitle: "Questions Fréquemment Posées",
+    faqItems: [
+      {
+        q: "Est-ce que WePlanify est vraiment gratuit ?",
+        a: "Oui, à 100%. WePlanify est gratuit pour toujours — pas de frais cachés, pas de limites d'essai, pas de carte bancaire requise. Toutes les fonctionnalités principales (itinéraires, sondages, budgets, listes de bagages) sont incluses sans aucun coût.",
+      },
+      {
+        q: "Combien d'amis puis-je inviter ?",
+        a: "Il n'y a aucune limite. Que votre groupe soit de 3 ou 30 personnes, tout le monde peut rejoindre avec un simple lien d'invitation et collaborer en temps réel sur le même voyage.",
+      },
+      {
+        q: "Dois-je télécharger une application ?",
+        a: "Aucun téléchargement nécessaire. WePlanify fonctionne directement dans votre navigateur sur n'importe quel appareil — téléphone, tablette ou ordinateur. Ouvrez le lien et commencez à planifier.",
+      },
+    ],
+
     ctaTitle: "Votre Prochaine Aventure Commence Ici",
     ctaDescription:
       "Rejoignez des milliers de groupes d'amis qui planifient leurs voyages avec WePlanify. C'est gratuit, c'est fun, et ça marche vraiment.",
@@ -318,8 +350,48 @@ export default async function TripWithFriendsPage({ params }: Props) {
     }),
   ]);
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: locale === "fr" ? "Accueil" : "Home",
+        item: `https://www.weplanify.com/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: locale === "fr" ? "Voyage entre Amis" : "Trip with Friends",
+        item: `https://www.weplanify.com/${locale}/trip-with-friends`,
+      },
+    ],
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: t.faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
       <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -344,9 +416,11 @@ export default async function TripWithFriendsPage({ params }: Props) {
                 </p>
 
                 <div className="flex flex-col gap-2 items-center lg:items-start">
-                  <PulsatingButton className="font-karla font-bold">
-                    {t.heroCta}
-                  </PulsatingButton>
+                  <Link href="https://app.weplanify.com/register">
+                    <PulsatingButton className="font-karla font-bold">
+                      {t.heroCta}
+                    </PulsatingButton>
+                  </Link>
                   <p className="text-[#FFFBF5]/60 text-xs lg:text-sm font-karla">
                     {t.heroCtaSub}
                   </p>
@@ -411,7 +485,9 @@ export default async function TripWithFriendsPage({ params }: Props) {
                     <h3
                       className={`text-xl lg:text-2xl font-londrina-solid ${solution.textColor} mb-3`}
                     >
-                      {solution.title}
+                      <Link href={`/${locale}${solution.link}`} className="hover:underline underline-offset-4">
+                        {solution.title}
+                      </Link>
                     </h3>
                     <p
                       className={`${solution.textColor} opacity-80 font-karla text-sm lg:text-base leading-relaxed mb-6`}
@@ -421,7 +497,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
                   </div>
                   <div>
                     <Link
-                      href={solution.link}
+                      href={`/${locale}${solution.link}`}
                       className={`${solution.textColor} font-karla font-bold text-sm lg:text-base underline underline-offset-4 hover:opacity-70 transition-opacity`}
                     >
                       {solution.linkText} &rarr;
@@ -465,6 +541,89 @@ export default async function TripWithFriendsPage({ params }: Props) {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
+          <div className="max-w-[800px] mx-auto">
+            <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
+              {t.faqTitle}
+            </h2>
+            <div className="space-y-6">
+              {t.faqItems.map((item, i) => (
+                <details
+                  key={i}
+                  className="group border-b border-[#001E13]/10 pb-5"
+                >
+                  <summary className="flex items-start justify-between cursor-pointer list-none font-karla font-semibold text-[#001E13] text-base lg:text-lg">
+                    <span className="pr-4">{item.q}</span>
+                    <span className="text-[#F6391A] text-xl leading-none mt-0.5 group-open:rotate-45 transition-transform">
+                      +
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-[#001E13]/70 text-sm lg:text-base font-karla leading-relaxed">
+                    {item.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Discover More Section */}
+        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
+          <div className="max-w-[1200px] mx-auto">
+            <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
+              {locale === "fr" ? "Découvrir aussi" : "Discover More"}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Link href={`/${locale}/guides/plan-group-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Guide : Organiser un Voyage de Groupe" : "Guide: How to Plan a Group Trip"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Le guide complet étape par étape pour organiser un voyage de groupe réussi, de la première idée au dernier jour."
+                      : "The complete step-by-step guide to planning a successful group trip, from first idea to last day."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "Lire le guide →" : "Read the guide →"}
+                  </span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/bachelorette-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Organiser un EVJF" : "Plan a Bachelorette Trip"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Tout ce qu'il faut pour planifier un enterrement de vie de jeune fille inoubliable sans stress."
+                      : "Everything you need to plan an unforgettable bachelorette party trip, stress-free."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                  </span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/alternatives`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                    {locale === "fr" ? "Comparatif des Applications" : "App Comparison"}
+                  </h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                    {locale === "fr"
+                      ? "Comparez WePlanify avec les autres applications de planification de voyage de groupe en 2026."
+                      : "See how WePlanify compares to other group trip planning apps in 2026."}
+                  </p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                    {locale === "fr" ? "Voir le comparatif →" : "View comparison →"}
+                  </span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Bottom CTA Banner */}
         <section className="py-16 lg:py-24 px-4 lg:px-8">
           <div className="max-w-[1200px] mx-auto">
@@ -476,9 +635,11 @@ export default async function TripWithFriendsPage({ params }: Props) {
                 {t.ctaDescription}
               </p>
               <div className="flex flex-col gap-2 items-center">
-                <PulsatingButton className="font-karla font-bold">
-                  {t.ctaButton}
-                </PulsatingButton>
+                <Link href="https://app.weplanify.com/register">
+                  <PulsatingButton className="font-karla font-bold">
+                    {t.ctaButton}
+                  </PulsatingButton>
+                </Link>
                 <p className="text-[#FFFBF5]/60 text-xs lg:text-sm font-karla">
                   {t.ctaSub}
                 </p>
