@@ -306,7 +306,6 @@ const content = {
     ],
     ctaTitle: "Ready to plan your next group trip?",
     ctaButton: "Get started for free",
-    ctaSub: "Free forever. No credit card required.",
     comingSoon: "Coming soon",
     freemium: "Freemium",
     webApp: "Web app",
@@ -339,7 +338,6 @@ const content = {
     ],
     ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
     ctaButton: "Commencer gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
     comingSoon: "Bientôt",
     freemium: "Freemium",
     webApp: "App web",
@@ -742,9 +740,6 @@ export default async function AlternativesPage({ params }: Props) {
             >
               {t.ctaButton}
             </Link>
-            <p className="font-karla text-[#FFFBF5]/80 text-xs lg:text-sm mt-4">
-              {t.ctaSub}
-            </p>
           </div>
         </section>
       </main>

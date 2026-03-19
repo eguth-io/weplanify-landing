@@ -341,8 +341,6 @@ const content = {
     ctaText:
       "Stop juggling multiple apps and spreadsheets. WePlanify brings itinerary planning, group polls, budget tracking, packing lists, and AI-powered recommendations into one free platform.",
     ctaButton: "Start planning for free",
-    ctaSub: "Free forever. No credit card required.",
-
     diy: "DIY",
     freemium: "Freemium",
   },
@@ -579,8 +577,6 @@ const content = {
     ctaText:
       "Arrêtez de jongler entre plusieurs applications et tableurs. WePlanify réunit planification d'itinéraire, sondages de groupe, suivi de budget, listes de bagages et recommandations alimentées par l'IA dans une seule plateforme gratuite.",
     ctaButton: "Commencer à planifier gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
-
     diy: "DIY",
     freemium: "Freemium",
   },
@@ -1117,9 +1113,6 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
               >
                 {c.ctaButton}
               </Link>
-              <p className="font-karla text-[#FFFBF5]/80 text-xs lg:text-sm mt-4">
-                {c.ctaSub}
-              </p>
             </div>
           </div>
         </section>

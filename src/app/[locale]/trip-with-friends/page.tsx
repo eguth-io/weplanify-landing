@@ -75,8 +75,6 @@ const content = {
     heroDescription:
       "Stop juggling WhatsApp threads, spreadsheets, and guesswork. WePlanify brings your entire group together in one place to plan the perfect trip — from destination to departure.",
     heroCta: "Start planning for free",
-    heroCtaSub: "Free forever. No credit card required.",
-
     painPointsTitle: "Sound Familiar?",
     painPointsSubtitle:
       "Planning a group trip with friends is exciting — until it isn't. Here are the headaches WePlanify eliminates.",
@@ -193,7 +191,6 @@ const content = {
     ctaDescription:
       "Join thousands of friend groups who plan their trips with WePlanify. It's free, it's fun, and it actually works.",
     ctaButton: "Start planning your trip",
-    ctaSub: "Free forever. No credit card required.",
   },
   fr: {
     heroTag: "Voyage de Groupe, Simplifié",
@@ -201,8 +198,6 @@ const content = {
     heroDescription:
       "Arrêtez de jongler entre les fils WhatsApp, les tableurs et les suppositions. WePlanify réunit tout votre groupe au même endroit pour planifier le voyage parfait — de la destination au départ.",
     heroCta: "Commencer gratuitement",
-    heroCtaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
-
     painPointsTitle: "Ça vous dit quelque chose ?",
     painPointsSubtitle:
       "Organiser un voyage entre amis, c'est excitant — jusqu'à ce que ça ne le soit plus. Voici les casse-têtes que WePlanify élimine.",
@@ -319,7 +314,6 @@ const content = {
     ctaDescription:
       "Rejoignez des milliers de groupes d'amis qui planifient leurs voyages avec WePlanify. C'est gratuit, c'est fun, et ça marche vraiment.",
     ctaButton: "Commencer à planifier",
-    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
   },
 };
 
@@ -423,9 +417,6 @@ export default async function TripWithFriendsPage({ params }: Props) {
                         {t.heroCta}
                       </PulsatingButton>
                     </Link>
-                    <p className="text-[#FFFBF5]/60 text-xs lg:text-sm font-karla">
-                      {t.heroCtaSub}
-                    </p>
                   </div>
                 </div>
 
@@ -648,9 +639,6 @@ export default async function TripWithFriendsPage({ params }: Props) {
                     {t.ctaButton}
                   </PulsatingButton>
                 </Link>
-                <p className="text-[#FFFBF5]/60 text-xs lg:text-sm font-karla">
-                  {t.ctaSub}
-                </p>
               </div>
             </div>
           </div>

@@ -220,7 +220,7 @@ const content = {
 
     cta: {
       title: "Ready to Plan Your Group Trip?",
-      text: "Stop juggling spreadsheets, group chats, and email threads. WePlanify brings your entire group into one collaborative space — with itinerary planning, budget tracking, group polls, packing lists, and AI-powered recommendations. Free forever, no credit card required.",
+      text: "Stop juggling spreadsheets, group chats, and email threads. WePlanify brings your entire group into one collaborative space — with itinerary planning, budget tracking, group polls, packing lists, and AI-powered recommendations.",
       button: "Start Planning for Free",
     },
 
@@ -376,7 +376,7 @@ const content = {
 
     cta: {
       title: "Prêt à Organiser Votre Voyage de Groupe ?",
-      text: "Arrêtez de jongler entre tableurs, chats de groupe et fils d'emails. WePlanify réunit tout votre groupe dans un seul espace collaboratif — avec planification d'itinéraire, suivi de budget, sondages de groupe, listes de bagages et recommandations alimentées par l'IA. Gratuit pour toujours, sans carte bancaire.",
+      text: "Arrêtez de jongler entre tableurs, chats de groupe et fils d'emails. WePlanify réunit tout votre groupe dans un seul espace collaboratif — avec planification d'itinéraire, suivi de budget, sondages de groupe, listes de bagages et recommandations alimentées par l'IA.",
       button: "Commencer à planifier gratuitement",
     },
 

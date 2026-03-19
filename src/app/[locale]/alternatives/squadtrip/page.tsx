@@ -261,7 +261,6 @@ const content = {
     ],
     ctaTitle: "Ready to plan your next group trip?",
     ctaButton: "Get started for free",
-    ctaSub: "Free forever. No credit card required.",
     crossLinksTitle: "Discover More",
     free100: "100% free",
     partialFees: "Fees on payments",
@@ -345,7 +344,6 @@ const content = {
     ],
     ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
     ctaButton: "Commencer gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
     crossLinksTitle: "Découvrir Aussi",
     free100: "100% gratuit",
     partialFees: "Frais sur les paiements",
@@ -805,9 +803,6 @@ export default async function SquadTripComparisonPage({ params }: Props) {
             >
               {t.ctaButton}
             </Link>
-            <p className="font-karla text-[#FFFBF5]/80 text-xs lg:text-sm mt-4">
-              {t.ctaSub}
-            </p>
           </div>
         </section>
 

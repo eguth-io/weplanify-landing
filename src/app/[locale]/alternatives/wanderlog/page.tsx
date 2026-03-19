@@ -241,7 +241,6 @@ const content = {
     ],
     ctaTitle: "Try WePlanify free \u2014 built for groups",
     ctaButton: "Get started for free",
-    ctaSub: "Free forever. No credit card required.",
     crossLinksTitle: "Explore More",
     basic: "Basic",
     webApp: "Web app",
@@ -304,7 +303,6 @@ const content = {
     ],
     ctaTitle: "Essayez WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
     ctaButton: "Commencer gratuitement",
-    ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
     crossLinksTitle: "D\u00e9couvrir aussi",
     basic: "Basique",
     webApp: "App web",
@@ -736,9 +734,6 @@ export default async function WanderlogComparisonPage({ params }: Props) {
             >
               {t.ctaButton}
             </Link>
-            <p className="font-karla text-[#FFFBF5]/80 text-xs lg:text-sm mt-4">
-              {t.ctaSub}
-            </p>
           </div>
         </section>
 

@@ -113,9 +113,6 @@ export default async function HomePage({ params }: Props) {
                       {hero.ctaText}
                     </PulsatingButton>
                   </Link>
-                  <p className="text-[#FFFBF5]/80 text-xs lg:text-sm font-karla">
-                    Free forever. No credit card required.
-                  </p>
                 </div>
               )}
             </div>

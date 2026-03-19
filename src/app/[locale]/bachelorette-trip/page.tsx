@@ -33,7 +33,6 @@ const content = {
       description:
         "She said yes — now it's your turn to plan an unforgettable bachelorette party trip. WePlanify is the free bachelorette weekend organizer that keeps the surprise alive and the planning stress-free.",
       cta: "Start planning for free",
-      ctaSub: "Free forever. No credit card required.",
     },
     painPoints: {
       title: "Why Planning a Bachelorette Trip Is Pure Chaos",
@@ -126,9 +125,9 @@ const content = {
     },
     testimonial: {
       quote:
-        "We planned the entire bachelorette weekend on WePlanify without the bride finding out. The polls saved us from 200 messages of debate, and the shared budget meant zero awkwardness. 10/10 would recommend!",
-      author: "Sarah M.",
-      role: "Maid of Honor",
+        "Honestly we were a mess trying to plan Jen's bachelorette on WhatsApp. Someone suggested WePlanify and it just... worked? We voted on everything, the budget was clear, and nobody had to chase anyone for money. 10/10 would plan again.",
+      author: "Emma R.",
+      role: "Bridesmaid, NYC",
     },
     faq: {
       title: "Frequently Asked Questions",
@@ -167,7 +166,6 @@ const content = {
       description:
         "Elle a dit oui — maintenant c'est à vous d'organiser un enterrement de vie de jeune fille inoubliable. WePlanify est l'application gratuite pour planifier un week-end EVJF sans stress et en gardant la surprise.",
       cta: "Commencer gratuitement",
-      ctaSub: "Gratuit pour toujours. Aucune carte bancaire requise.",
     },
     painPoints: {
       title: "Pourquoi Organiser un EVJF, C'est le Chaos Total",
@@ -260,9 +258,9 @@ const content = {
     },
     testimonial: {
       quote:
-        "On a organisé tout le week-end EVJF sur WePlanify sans que la mariée ne s'en doute. Les sondages nous ont évité 200 messages de débat, et la cagnotte commune a éliminé tout malaise. Je recommande à 100% !",
-      author: "Sarah M.",
-      role: "Témoin de la mariée",
+        "On était complètement perdues pour organiser l'EVJF de Claire sur WhatsApp. Quelqu'un a proposé WePlanify et franchement ça a tout changé. On a voté pour chaque activité, le budget était clair, et personne n'a eu à courir après les remboursements. Je recommande les yeux fermés.",
+      author: "Emma R.",
+      role: "Demoiselle d'honneur, Paris",
     },
     faq: {
       title: "Questions Fréquemment Posées",
@@ -427,9 +425,6 @@ export default async function BacheloretteTrip({ params }: Props) {
                   {t.hero.cta}
                 </PulsatingButton>
               </Link>
-              <p className="text-[#001E13]/60 text-xs lg:text-sm font-karla">
-                {t.hero.ctaSub}
-              </p>
             </div>
           </div>
         </section>
