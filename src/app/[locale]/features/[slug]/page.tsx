@@ -4,6 +4,7 @@ import { client } from "@/sanity/lib/client";
 import { featurePageQuery } from "@/sanity/lib/query";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { generateMetadataFromSanity } from "@/lib/metadata";
 
 // Feature client components
 import PollsFeature from "./features/PollsFeature";
@@ -84,28 +85,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const baseUrl = "https://weplanify.com";
+  const metadata = await generateMetadataFromSanity(locale, `/features/${slug}`);
 
   return {
+    ...metadata,
     title: data.seoTitle,
     description: data.seoDescription,
-    alternates: {
-      canonical: `${baseUrl}/${locale}/features/${slug}`,
-      languages: {
-        en: `${baseUrl}/en/features/${slug}`,
-        fr: `${baseUrl}/fr/features/${slug}`,
-      },
-    },
     openGraph: {
+      ...metadata.openGraph,
       title: data.seoTitle,
       description: data.seoDescription,
-      url: `${baseUrl}/${locale}/features/${slug}`,
-      siteName: "WePlanify",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
-      type: "website",
     },
     twitter: {
-      card: "summary_large_image",
+      ...metadata.twitter,
       title: data.seoTitle,
       description: data.seoDescription,
     },
