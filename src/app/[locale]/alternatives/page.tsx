@@ -51,12 +51,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "Best Group Trip Planner Apps 2026 — Honest Comparison | WePlanify",
       description:
-        "Compare the best group trip planner apps of 2026. See how WePlanify stacks up against Wanderlog, SquadTrip, Troupe and TripIt for collaborative travel planning.",
+        "Compare the best group trip planner apps of 2026. See how WePlanify stacks up against Wanderlog, SquadTrip, Troupe, TripIt and Splitwise for collaborative travel planning.",
       keywords: [
         "best group trip planner app",
         "group travel app comparison",
         "wanderlog alternative",
         "squadtrip alternative",
+        "splitwise alternative",
         "group trip planning tools 2026",
       ],
     },
@@ -64,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "Meilleures Applications Voyage de Groupe 2026 — Comparatif Honnête | WePlanify",
       description:
-        "Comparez les meilleures applications de voyage de groupe en 2026. Découvrez comment WePlanify se compare à Wanderlog, SquadTrip, Troupe et TripIt.",
+        "Comparez les meilleures applications de voyage de groupe en 2026. Découvrez comment WePlanify se compare à Wanderlog, SquadTrip, Troupe, TripIt et Splitwise.",
       keywords: [
         "meilleure application voyage groupe",
         "comparatif application voyage groupe",
@@ -191,6 +192,20 @@ const apps: AppColumn[] = [
       mobile: true,
     },
   },
+  {
+    name: "Splitwise",
+    features: {
+      collab_itinerary: false,
+      polls: false,
+      budget: true,
+      packing: false,
+      discovery: false,
+      free: "freemium",
+      french: true,
+      realtime: true,
+      mobile: true,
+    },
+  },
 ];
 
 const competitorDetails = {
@@ -211,6 +226,10 @@ const competitorDetails = {
       name: "TripIt",
       text: "TripIt excels at organizing travel confirmations and forwarding booking emails into a clean itinerary. It is ideal for frequent business travellers. However, its collaboration features are limited, and most useful functionality requires a paid Pro subscription.",
     },
+    {
+      name: "Splitwise",
+      text: "Splitwise is the gold standard for splitting expenses with friends. While it's not a trip planner, many groups use it alongside their planning tool to track shared costs. If expense splitting is your only need, Splitwise is excellent — but for full trip planning with itineraries, polls, and packing lists, you'll need a dedicated tool like WePlanify.",
+    },
   ],
   fr: [
     {
@@ -228,6 +247,10 @@ const competitorDetails = {
     {
       name: "TripIt",
       text: "TripIt excelle dans l'organisation des confirmations de voyage en transformant les e-mails de réservation en itinéraire clair. Il est idéal pour les voyageurs d'affaires fréquents. Cependant, ses fonctionnalités de collaboration sont limitées et la plupart des options utiles nécessitent un abonnement Pro payant.",
+    },
+    {
+      name: "Splitwise",
+      text: "Splitwise est la référence absolue pour partager les dépenses entre amis. Bien que ce ne soit pas un planificateur de voyage, de nombreux groupes l'utilisent en complément de leur outil de planification pour suivre les frais partagés. Si le partage de dépenses est votre seul besoin, Splitwise est excellent — mais pour une planification complète de voyage avec itinéraires, sondages et listes de bagages, il vous faudra un outil dédié comme WePlanify.",
     },
   ],
 };
