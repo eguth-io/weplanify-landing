@@ -198,14 +198,35 @@ export default function Footer({ footerData }: FooterProps) {
           )}
         </div>
 
-        {/* Copyright */}
-        {footerData?.copyrightText && (
-          <div className="text-center mt-8">
+        {/* Copyright & Language Switcher */}
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-8">
+          {footerData?.copyrightText && (
             <p className="text-[#001E13]/60 text-sm font-karla">
               {footerData.copyrightText}
             </p>
+          )}
+
+          {/* Language Switcher */}
+          <div className="flex items-center gap-2">
+            <svg className="w-4 h-4 text-[#001E13]/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+            <Link
+              href={pathname?.replace(/^\/(en|fr)/, "/en") || "/en"}
+              className={`text-sm font-karla transition-colors ${locale === "en" ? "text-[#F6391A] font-bold" : "text-[#001E13]/60 hover:text-[#001E13]"}`}
+            >
+              English
+            </Link>
+            <span className="text-[#001E13]/30">|</span>
+            <Link
+              href={pathname?.replace(/^\/(en|fr)/, "/fr") || "/fr"}
+              className={`text-sm font-karla transition-colors ${locale === "fr" ? "text-[#F6391A] font-bold" : "text-[#001E13]/60 hover:text-[#001E13]"}`}
+            >
+              Français
+            </Link>
           </div>
-        )}
+        </div>
       </div>
     </footer>
   );
