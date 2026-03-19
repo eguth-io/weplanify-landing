@@ -107,9 +107,11 @@ export default async function HomePage({ params }: Props) {
 
               {hero?.ctaText && (
                 <div className="flex flex-col gap-2 items-center lg:items-start">
-                  <PulsatingButton className="font-karla font-bold">
-                    {hero.ctaText}
-                  </PulsatingButton>
+                  <Link href={hero.ctaUrl || "https://app.weplanify.com/register"}>
+                    <PulsatingButton className="font-karla font-bold">
+                      {hero.ctaText}
+                    </PulsatingButton>
+                  </Link>
                   <p className="text-[#FFFBF5]/80 text-xs lg:text-sm font-karla">
                     Free forever. No credit card required.
                   </p>

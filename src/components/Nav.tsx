@@ -83,7 +83,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
               alt="WePlanify logo"
               width={155}
               height={66}
-              className="block w-[75px] h-[45px] lg:w-[155px] lg:h-[66px]"
+              className="block w-[110px] h-[46px] lg:w-[155px] lg:h-[66px]"
             />
           </Link>
 
