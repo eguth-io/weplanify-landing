@@ -41,6 +41,32 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       });
     }
 
+    // Use case pages for each locale
+    const useCasePages = ["trip-with-friends", "bachelorette-trip", "alternatives"];
+    for (const locale of locales) {
+      for (const page of useCasePages) {
+        entries.push({
+          url: `${siteUrl}/${locale}/${page}`,
+          lastModified: new Date(),
+          changeFrequency: "monthly",
+          priority: 0.9,
+        });
+      }
+    }
+
+    // Guide pages for each locale
+    const guidePages = ["guides/plan-group-trip"];
+    for (const locale of locales) {
+      for (const page of guidePages) {
+        entries.push({
+          url: `${siteUrl}/${locale}/${page}`,
+          lastModified: new Date(),
+          changeFrequency: "monthly",
+          priority: 0.8,
+        });
+      }
+    }
+
     // Static pages for each locale
     const staticPages = ["blog", "faq", "contact"];
     for (const locale of locales) {
