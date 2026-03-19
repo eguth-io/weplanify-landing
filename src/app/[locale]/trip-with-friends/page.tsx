@@ -485,7 +485,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
                     <h3
                       className={`text-xl lg:text-2xl font-londrina-solid ${solution.textColor} mb-3`}
                     >
-                      <Link href={`/${locale}${solution.link}`} className="hover:underline underline-offset-4">
+                      <Link href={`/${locale}${solution.link}`} className={`${solution.textColor} font-londrina-solid no-underline hover:underline underline-offset-4`}>
                         {solution.title}
                       </Link>
                     </h3>

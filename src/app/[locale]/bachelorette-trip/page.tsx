@@ -492,7 +492,7 @@ export default async function BacheloretteTrip({ params }: Props) {
                   </div>
                   <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#001E13] mb-3">
                     {item.link ? (
-                      <Link href={`/${locale}${item.link}`} className="hover:underline underline-offset-4">
+                      <Link href={`/${locale}${item.link}`} className="text-[#001E13] font-londrina-solid hover:underline underline-offset-4 no-underline">
                         {item.title}
                       </Link>
                     ) : (
@@ -666,11 +666,13 @@ export default async function BacheloretteTrip({ params }: Props) {
               <p className="text-base lg:text-lg font-karla text-[#FFFBF5]/90 max-w-2xl mx-auto mb-8 leading-relaxed">
                 {t.cta.description}
               </p>
-              <Link href="https://app.weplanify.com/register">
-                <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
-                  {t.cta.button}
-                </PulsatingButton>
-              </Link>
+              <div className="flex justify-center">
+                <Link href="https://app.weplanify.com/register">
+                  <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
+                    {t.cta.button}
+                  </PulsatingButton>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
