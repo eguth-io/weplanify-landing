@@ -5,6 +5,7 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
+import FloatingCards from "@/components/FloatingCards";
 import Link from "next/link";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
@@ -402,28 +403,35 @@ export default async function TripWithFriendsPage({ params }: Props) {
               <div className="absolute inset-0 bg-gradient-to-br from-[#001E13] via-[#001E13] to-[#0a3d2a] opacity-100" />
               <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#61DBD5]/10 to-transparent" />
 
-              <div className="relative z-10 px-6 lg:px-16 xl:px-20 py-16 lg:py-24 xl:py-32 text-center lg:text-left max-w-4xl">
-                <span className="inline-block bg-[#EEF899] text-[#001E13] px-4 py-1.5 rounded-full text-sm lg:text-base font-nanum-pen mb-6">
-                  {t.heroTag}
-                </span>
+              <div className="relative z-10 px-6 lg:px-16 xl:px-20 py-16 lg:py-24 xl:py-32 flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-0">
+                <div className="text-center lg:text-left lg:w-1/2">
+                  <span className="inline-block bg-[#EEF899] text-[#001E13] px-4 py-1.5 rounded-full text-sm lg:text-base font-nanum-pen mb-6">
+                    {t.heroTag}
+                  </span>
 
-                <h1 className="text-[#FFFBF5] text-3xl lg:text-5xl xl:text-[56px] font-londrina-solid leading-tight mb-6 whitespace-pre-line">
-                  {t.heroTitle}
-                </h1>
+                  <h1 className="text-[#FFFBF5] text-3xl lg:text-5xl xl:text-[56px] font-londrina-solid leading-tight mb-6 whitespace-pre-line">
+                    {t.heroTitle}
+                  </h1>
 
-                <p className="text-[#FFFBF5]/85 text-base lg:text-lg font-karla leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                  {t.heroDescription}
-                </p>
-
-                <div className="flex flex-col gap-2 items-center lg:items-start">
-                  <Link href="https://app.weplanify.com/register">
-                    <PulsatingButton className="font-karla font-bold">
-                      {t.heroCta}
-                    </PulsatingButton>
-                  </Link>
-                  <p className="text-[#FFFBF5]/60 text-xs lg:text-sm font-karla">
-                    {t.heroCtaSub}
+                  <p className="text-[#FFFBF5]/85 text-base lg:text-lg font-karla leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                    {t.heroDescription}
                   </p>
+
+                  <div className="flex flex-col gap-2 items-center lg:items-start">
+                    <Link href="https://app.weplanify.com/register">
+                      <PulsatingButton className="font-karla font-bold">
+                        {t.heroCta}
+                      </PulsatingButton>
+                    </Link>
+                    <p className="text-[#FFFBF5]/60 text-xs lg:text-sm font-karla">
+                      {t.heroCtaSub}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Floating UI cards animation */}
+                <div className="hidden lg:block lg:w-1/2 relative">
+                  <FloatingCards />
                 </div>
               </div>
             </div>
