@@ -187,17 +187,17 @@ const content = {
     heroTitle: "WePlanify vs Wanderlog",
     heroSubtitle: "Honest comparison \u2014 2026 edition",
     heroIntro:
-      "Wanderlog and WePlanify both help you plan trips, but they solve different problems. Wanderlog is a polished itinerary builder for solo and couple travel. WePlanify is designed from the ground up for groups. Here is an objective, side-by-side look at both apps so you can decide which one fits your next trip.",
+      "Wanderlog and WePlanify both help you plan trips, but they solve different problems. Wanderlog is an itinerary builder oriented toward solo and couple travel. WePlanify is designed from the ground up for groups. Here is an objective, side-by-side look at both apps so you can decide which one fits your next trip.",
     verdictTitle: "TL;DR",
     verdict:
-      "Wanderlog excels at solo/couple travel with map-based planning. WePlanify is built specifically for groups with polls, shared budgets, and collaborative decision-making. Both are free.",
+      "Wanderlog focuses on solo/couple travel with map-based planning. WePlanify is built specifically for groups with polls, shared budgets, and collaborative decision-making. Both are free.",
     comparisonTitle: "Head-to-Head Comparison",
     wanderlogShinesTitle: "Where Wanderlog Shines",
     wanderlogShinesPoints: [
-      "Excellent map integration \u2014 plot your entire route on an interactive map with driving/walking directions between stops.",
-      "Offline access \u2014 download your itinerary and maps for use without an internet connection, perfect for remote destinations.",
-      "Polished mobile apps \u2014 native iOS and Android apps with a smooth, intuitive interface.",
-      "Restaurant and hotel search \u2014 search, save, and organize places to eat and stay directly inside the app.",
+      "Map integration \u2014 plot your route on an interactive map with driving/walking directions between stops.",
+      "Offline access \u2014 download your itinerary and maps for use without an internet connection.",
+      "Mobile apps \u2014 native iOS and Android apps available for on-the-go access.",
+      "Restaurant and hotel search \u2014 search, save, and organize places to eat and stay within the app.",
     ],
     weplanifyWinsTitle: "Where WePlanify Wins",
     weplanifyWinsPoints: [
@@ -227,8 +227,12 @@ const content = {
         a: "Yes! You can start a new trip on WePlanify in minutes. While there is no automated import, WePlanify\u2019s simple interface makes it fast to recreate your itinerary \u2014 and you will immediately gain access to group features like polls and shared budgets that Wanderlog does not offer.",
       },
       {
-        q: "Is Wanderlog better for solo travel?",
-        a: "For solo travellers, Wanderlog is an excellent choice. Its map integration, offline access, and restaurant search tools are purpose-built for individual trip planning. WePlanify\u2019s strengths shine most when you are coordinating with a group.",
+        q: "Why switch from Wanderlog to WePlanify?",
+        a: "If you are planning a trip with a group, Wanderlog lacks polls, shared budgets, and collaborative packing lists. WePlanify provides all of these tools out of the box, making group coordination seamless instead of scattered across multiple apps.",
+      },
+      {
+        q: "What does Wanderlog lack for group trips?",
+        a: "Wanderlog does not offer group voting, shared expense tracking, or collaborative packing lists. Its collaboration features are limited to sharing an itinerary, but decision-making tools for groups are absent. WePlanify fills that gap entirely.",
       },
       {
         q: "Which app is better for large groups?",
@@ -246,17 +250,17 @@ const content = {
     heroTitle: "WePlanify vs Wanderlog",
     heroSubtitle: "Comparaison honn\u00eate \u2014 \u00e9dition 2026",
     heroIntro:
-      "Wanderlog et WePlanify vous aident tous deux \u00e0 planifier des voyages, mais ils r\u00e9pondent \u00e0 des besoins diff\u00e9rents. Wanderlog est un cr\u00e9ateur d\u2019itin\u00e9raires soign\u00e9 pour les voyages en solo ou en couple. WePlanify est con\u00e7u de A \u00e0 Z pour les groupes. Voici un comparatif objectif des deux applications pour vous aider \u00e0 choisir celle qui convient \u00e0 votre prochain voyage.",
+      "Wanderlog et WePlanify vous aident tous deux \u00e0 planifier des voyages, mais ils r\u00e9pondent \u00e0 des besoins diff\u00e9rents. Wanderlog est un cr\u00e9ateur d\u2019itin\u00e9raires orient\u00e9 vers les voyages en solo ou en couple. WePlanify est con\u00e7u de A \u00e0 Z pour les groupes. Voici un comparatif objectif des deux applications pour vous aider \u00e0 choisir celle qui convient \u00e0 votre prochain voyage.",
     verdictTitle: "En bref",
     verdict:
-      "Wanderlog excelle pour les voyages solo/couple avec sa planification bas\u00e9e sur les cartes. WePlanify est con\u00e7u sp\u00e9cifiquement pour les groupes avec des sondages, des budgets partag\u00e9s et une prise de d\u00e9cision collaborative. Les deux sont gratuits.",
+      "Wanderlog se concentre sur les voyages solo/couple avec sa planification bas\u00e9e sur les cartes. WePlanify est con\u00e7u sp\u00e9cifiquement pour les groupes avec des sondages, des budgets partag\u00e9s et une prise de d\u00e9cision collaborative. Les deux sont gratuits.",
     comparisonTitle: "Comparatif Face \u00e0 Face",
     wanderlogShinesTitle: "L\u00e0 o\u00f9 Wanderlog Brille",
     wanderlogShinesPoints: [
-      "Excellente int\u00e9gration cartographique \u2014 tracez votre itin\u00e9raire complet sur une carte interactive avec les directions entre chaque \u00e9tape.",
-      "Acc\u00e8s hors ligne \u2014 t\u00e9l\u00e9chargez votre itin\u00e9raire et vos cartes pour les utiliser sans connexion internet, id\u00e9al pour les destinations isol\u00e9es.",
-      "Applications mobiles soign\u00e9es \u2014 applications natives iOS et Android avec une interface fluide et intuitive.",
-      "Recherche de restaurants et h\u00f4tels \u2014 cherchez, enregistrez et organisez les lieux o\u00f9 manger et dormir directement dans l\u2019application.",
+      "Int\u00e9gration cartographique \u2014 tracez votre itin\u00e9raire sur une carte interactive avec les directions entre chaque \u00e9tape.",
+      "Acc\u00e8s hors ligne \u2014 t\u00e9l\u00e9chargez votre itin\u00e9raire et vos cartes pour les utiliser sans connexion internet.",
+      "Applications mobiles \u2014 applications natives iOS et Android disponibles pour un acc\u00e8s en d\u00e9placement.",
+      "Recherche de restaurants et h\u00f4tels \u2014 cherchez, enregistrez et organisez les lieux o\u00f9 manger et dormir dans l\u2019application.",
     ],
     weplanifyWinsTitle: "L\u00e0 o\u00f9 WePlanify Gagne",
     weplanifyWinsPoints: [
@@ -286,8 +290,12 @@ const content = {
         a: "Oui ! Vous pouvez cr\u00e9er un nouveau voyage sur WePlanify en quelques minutes. Bien qu\u2019il n\u2019y ait pas d\u2019import automatis\u00e9, l\u2019interface simple de WePlanify permet de recr\u00e9er rapidement votre itin\u00e9raire \u2014 et vous aurez imm\u00e9diatement acc\u00e8s aux fonctionnalit\u00e9s de groupe comme les sondages et les budgets partag\u00e9s que Wanderlog ne propose pas.",
       },
       {
-        q: "Wanderlog est-il meilleur pour les voyages solo ?",
-        a: "Pour les voyageurs solo, Wanderlog est un excellent choix. Son int\u00e9gration cartographique, son acc\u00e8s hors ligne et ses outils de recherche de restaurants sont con\u00e7us pour la planification individuelle. Les atouts de WePlanify brillent surtout lorsque vous coordonnez un groupe.",
+        q: "Pourquoi passer de Wanderlog \u00e0 WePlanify ?",
+        a: "Si vous planifiez un voyage en groupe, Wanderlog ne propose ni sondages, ni budgets partag\u00e9s, ni listes de bagages collaboratives. WePlanify offre tous ces outils nativement, rendant la coordination de groupe fluide au lieu d\u2019\u00eatre dispers\u00e9e sur plusieurs applications.",
+      },
+      {
+        q: "Que manque-t-il \u00e0 Wanderlog pour les voyages de groupe ?",
+        a: "Wanderlog ne propose pas de votes de groupe, de suivi de d\u00e9penses partag\u00e9es ni de listes de bagages collaboratives. Ses fonctionnalit\u00e9s de collaboration se limitent au partage d\u2019un itin\u00e9raire, mais les outils de prise de d\u00e9cision pour les groupes sont absents. WePlanify comble enti\u00e8rement cette lacune.",
       },
       {
         q: "Quelle application est meilleure pour les grands groupes ?",
@@ -583,6 +591,15 @@ export default async function WanderlogComparisonPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* -------------------------------------------------------------- */}
+        {/* Mid-page CTA                                                   */}
+        {/* -------------------------------------------------------------- */}
+        <div className="text-center py-8">
+          <Link href="https://app.weplanify.com/register" className="text-[#F6391A] font-karla font-bold hover:underline">
+            {locale === "fr" ? "Essayez WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
+          </Link>
+        </div>
 
         {/* -------------------------------------------------------------- */}
         {/* 4. Detailed sections                                           */}

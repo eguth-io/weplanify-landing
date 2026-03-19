@@ -194,21 +194,21 @@ const content = {
       "Both WePlanify and SquadTrip help groups organize travel together, but they solve different problems. SquadTrip is built around payment collection and guest logistics. WePlanify is an all-in-one collaborative planner with polls, shared budgets, and itineraries — completely free.",
     verdictTitle: "Quick Verdict",
     verdict:
-      "SquadTrip is powerful for trip organizers managing payments and guest logistics. WePlanify focuses on collaborative planning with polls, shared budgets, and itineraries — completely free, no payment processing fees.",
+      "SquadTrip focuses on payment collection and guest logistics for trip organizers. WePlanify focuses on collaborative planning with polls, shared budgets, and itineraries — completely free, no payment processing fees.",
     comparisonTitle: "Feature-by-Feature Comparison",
     squadtripShinesTitle: "Where SquadTrip Shines",
     squadtripShinesPoints: [
       {
         title: "Payment collection",
-        desc: "SquadTrip's strongest feature is its ability to collect payments from trip participants. If your group trip involves collecting deposits, splitting costs for accommodation, or managing waivers, SquadTrip handles that out of the box.",
+        desc: "SquadTrip lets organizers collect payments from trip participants. If your group trip involves collecting deposits, splitting costs for accommodation, or managing waivers, SquadTrip handles that.",
       },
       {
         title: "Guest forms and waivers",
-        desc: "Need participants to sign waivers, fill out dietary preferences, or submit passport details? SquadTrip provides structured forms and guest management tools that go beyond simple invite links.",
+        desc: "Participants can sign waivers, fill out dietary preferences, or submit passport details. SquadTrip provides structured forms and guest management tools beyond simple invite links.",
       },
       {
         title: "Professional trip organizing",
-        desc: "If you run a travel business or organize group trips professionally, SquadTrip's payment and logistics features are purpose-built for that use case.",
+        desc: "If you run a travel business or organize group trips professionally, SquadTrip offers payment and logistics features oriented toward that use case.",
       },
     ],
     weplanifyWinsTitle: "Where WePlanify Wins",
@@ -247,16 +247,16 @@ const content = {
     faqTitle: "Frequently Asked Questions",
     faqs: [
       {
+        q: "Why switch from SquadTrip to WePlanify?",
+        a: "SquadTrip is built around payment collection, which means planning tools like polls, shared budgets, and packing lists are absent. If your group needs to collaboratively decide on destinations, track expenses, and organize together, WePlanify covers all of that — completely free.",
+      },
+      {
+        q: "What does SquadTrip lack?",
+        a: "SquadTrip does not offer group voting or polls, collaborative packing lists, activity discovery, or French language support. Its focus on payment processing means the actual planning experience is limited compared to WePlanify.",
+      },
+      {
         q: "Is SquadTrip really free?",
         a: "SquadTrip offers free trip pages, but its core value is payment collection, which involves processing fees. WePlanify is 100% free with no transaction fees — every feature is included at no cost.",
-      },
-      {
-        q: "Can I use WePlanify instead of SquadTrip for group trips?",
-        a: "Yes, if your main need is collaborative planning — itineraries, polls, shared budgets, and packing lists. However, if you specifically need to collect payments from participants, SquadTrip is better suited for that. WePlanify focuses on the planning experience, not payment processing.",
-      },
-      {
-        q: "Does WePlanify have a mobile app?",
-        a: "WePlanify is currently a responsive web application that works great on all mobile browsers. A dedicated mobile app is on the roadmap. SquadTrip is also a web-based platform.",
       },
     ],
     ctaTitle: "Ready to plan your next group trip?",
@@ -278,21 +278,21 @@ const content = {
       "WePlanify et SquadTrip aident tous deux les groupes à organiser leurs voyages, mais ils résolvent des problèmes différents. SquadTrip est centré sur la collecte de paiements et la logistique des invités. WePlanify est un planificateur collaboratif complet avec sondages, budgets partagés et itinéraires — entièrement gratuit.",
     verdictTitle: "Verdict Rapide",
     verdict:
-      "SquadTrip est puissant pour les organisateurs de voyages qui gèrent les paiements et la logistique des invités. WePlanify se concentre sur la planification collaborative avec sondages, budgets partagés et itinéraires — entièrement gratuit, sans frais de traitement de paiement.",
+      "SquadTrip se concentre sur la collecte de paiements et la logistique des invités pour les organisateurs de voyages. WePlanify se concentre sur la planification collaborative avec sondages, budgets partagés et itinéraires — entièrement gratuit, sans frais de traitement de paiement.",
     comparisonTitle: "Comparatif Fonctionnalité par Fonctionnalité",
     squadtripShinesTitle: "Les Points Forts de SquadTrip",
     squadtripShinesPoints: [
       {
         title: "Collecte de paiements",
-        desc: "La fonctionnalité phare de SquadTrip est sa capacité à collecter les paiements des participants. Si votre voyage de groupe implique de collecter des acomptes, répartir les coûts d'hébergement ou gérer des décharges, SquadTrip gère tout cela nativement.",
+        desc: "SquadTrip permet aux organisateurs de collecter les paiements des participants. Si votre voyage de groupe implique de collecter des acomptes, répartir les coûts d'hébergement ou gérer des décharges, SquadTrip s'en charge.",
       },
       {
         title: "Formulaires et décharges",
-        desc: "Besoin que les participants signent des décharges, renseignent leurs préférences alimentaires ou soumettent leurs informations de passeport ? SquadTrip fournit des formulaires structurés et des outils de gestion des invités qui vont au-delà de simples liens d'invitation.",
+        desc: "Les participants peuvent signer des décharges, renseigner leurs préférences alimentaires ou soumettre leurs informations de passeport. SquadTrip fournit des formulaires structurés et des outils de gestion des invités au-delà de simples liens d'invitation.",
       },
       {
         title: "Organisation professionnelle de voyages",
-        desc: "Si vous gérez une agence de voyage ou organisez des voyages de groupe professionnellement, les fonctionnalités de paiement et de logistique de SquadTrip sont conçues pour cet usage.",
+        desc: "Si vous gérez une agence de voyage ou organisez des voyages de groupe professionnellement, SquadTrip propose des fonctionnalités de paiement et de logistique orientées vers cet usage.",
       },
     ],
     weplanifyWinsTitle: "Les Avantages de WePlanify",
@@ -331,16 +331,16 @@ const content = {
     faqTitle: "Questions Fréquentes",
     faqs: [
       {
+        q: "Pourquoi passer de SquadTrip \u00e0 WePlanify ?",
+        a: "SquadTrip est construit autour de la collecte de paiements, ce qui signifie que les outils de planification comme les sondages, les budgets partag\u00e9s et les listes de bagages sont absents. Si votre groupe a besoin de d\u00e9cider ensemble des destinations, suivre les d\u00e9penses et s\u2019organiser collectivement, WePlanify couvre tout cela \u2014 enti\u00e8rement gratuitement.",
+      },
+      {
+        q: "Que manque-t-il \u00e0 SquadTrip ?",
+        a: "SquadTrip ne propose pas de votes ou sondages de groupe, de listes de bagages collaboratives, de d\u00e9couverte d\u2019activit\u00e9s, ni de support en fran\u00e7ais. Sa focalisation sur le traitement des paiements fait que l\u2019exp\u00e9rience de planification est limit\u00e9e compar\u00e9e \u00e0 WePlanify.",
+      },
+      {
         q: "SquadTrip est-il vraiment gratuit ?",
-        a: "SquadTrip propose des pages de voyage gratuites, mais sa valeur principale est la collecte de paiements, qui implique des frais de traitement. WePlanify est 100% gratuit sans frais de transaction — toutes les fonctionnalités sont incluses sans coût.",
-      },
-      {
-        q: "Puis-je utiliser WePlanify au lieu de SquadTrip pour les voyages de groupe ?",
-        a: "Oui, si votre besoin principal est la planification collaborative — itinéraires, sondages, budgets partagés et listes de bagages. Cependant, si vous devez spécifiquement collecter des paiements auprès des participants, SquadTrip est mieux adapté. WePlanify se concentre sur l'expérience de planification, pas sur le traitement des paiements.",
-      },
-      {
-        q: "WePlanify a-t-il une application mobile ?",
-        a: "WePlanify est actuellement une application web responsive qui fonctionne parfaitement sur tous les navigateurs mobiles. Une application mobile dédiée est prévue. SquadTrip est également une plateforme web.",
+        a: "SquadTrip propose des pages de voyage gratuites, mais sa valeur principale est la collecte de paiements, qui implique des frais de traitement. WePlanify est 100% gratuit sans frais de transaction \u2014 toutes les fonctionnalit\u00e9s sont incluses sans co\u00fbt.",
       },
     ],
     ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
@@ -651,6 +651,15 @@ export default async function SquadTripComparisonPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* ---------------------------------------------------------------- */}
+        {/* Mid-page CTA                                                     */}
+        {/* ---------------------------------------------------------------- */}
+        <div className="text-center py-8">
+          <Link href="https://app.weplanify.com/register" className="text-[#F6391A] font-karla font-bold hover:underline">
+            {locale === "fr" ? "Essayez WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
+          </Link>
+        </div>
 
         {/* ---------------------------------------------------------------- */}
         {/* 4a. Where SquadTrip Shines                                       */}

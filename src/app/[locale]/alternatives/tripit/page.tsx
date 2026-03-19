@@ -191,24 +191,24 @@ const content = {
     heroTitle: "WePlanify vs TripIt",
     heroSubtitle: "Best Group Trip Organizer? (2026)",
     heroIntro:
-      "TripIt and WePlanify both help you plan trips, but they solve very different problems. TripIt is the go-to app for organizing booking confirmations into a personal itinerary. WePlanify is built from the ground up for group collaboration. Here is how they compare.",
+      "TripIt and WePlanify both help you plan trips, but they solve very different problems. TripIt organizes booking confirmations into a personal itinerary. WePlanify is built from the ground up for group collaboration. Here is how they compare.",
     verdictTitle: "TL;DR",
     verdict:
-      "TripIt is the best tool for organizing travel confirmations and personal itineraries. WePlanify is built for group collaboration — polls, shared budgets, and planning together. TripIt is solo-first, WePlanify is group-first.",
+      "TripIt focuses on organizing travel confirmations and personal itineraries. WePlanify is built for group collaboration — polls, shared budgets, and planning together. TripIt is solo-first, WePlanify is group-first.",
     comparisonTitle: "Feature-by-Feature Comparison",
     tripitShinesTitle: "Where TripIt Shines",
     tripitShinesPoints: [
       {
         title: "Automatic booking import",
-        desc: "Forward your confirmation emails and TripIt builds your itinerary automatically. Flights, hotels, car rentals — everything in one timeline.",
+        desc: "Forward your confirmation emails and TripIt builds your itinerary automatically. Flights, hotels, car rentals — organized in one timeline.",
       },
       {
         title: "Flight and airport alerts",
-        desc: "TripIt Pro sends real-time gate changes, delay notifications, and alternative flight suggestions. Perfect for frequent flyers.",
+        desc: "TripIt Pro sends gate changes, delay notifications, and alternative flight suggestions. Useful for frequent flyers who need real-time updates.",
       },
       {
-        title: "Polished mobile app",
-        desc: "TripIt has a mature, well-designed native app with offline access to your itinerary — essential when traveling internationally.",
+        title: "Mobile app with offline access",
+        desc: "TripIt offers a native mobile app with offline access to your itinerary, which can be useful when traveling internationally without data.",
       },
     ],
     weplanifyWinsTitle: "Where WePlanify Wins",
@@ -242,16 +242,16 @@ const content = {
     faqTitle: "Frequently Asked Questions",
     faqs: [
       {
-        q: "Can TripIt be used for group trips?",
-        a: "TripIt lets you share a read-only view of your itinerary with others, but it does not support collaborative editing, group polls, or shared budgets. It was designed primarily for individual travelers.",
+        q: "Why switch from TripIt to WePlanify?",
+        a: "TripIt is designed for individual travelers managing bookings. It does not support group polls, shared budgets, collaborative packing lists, or real-time group editing. If you are planning with others, WePlanify provides all the coordination tools TripIt lacks — completely free.",
+      },
+      {
+        q: "What does TripIt lack for group trips?",
+        a: "TripIt does not offer group voting, shared expense tracking, collaborative itinerary editing, packing lists, or activity discovery. Its sharing is limited to read-only views. WePlanify is built entirely around group collaboration.",
       },
       {
         q: "Is WePlanify really free?",
-        a: "Yes. All core features — collaborative itinerary, polls, budget tracker, packing lists, and activity discovery — are free with no trial limits or hidden paywalls.",
-      },
-      {
-        q: "Can I import bookings into WePlanify like TripIt?",
-        a: "WePlanify does not currently support automatic email forwarding for booking imports. You can manually add flights and accommodations to your shared itinerary.",
+        a: "Yes. All core features — collaborative itinerary, polls, budget tracker, packing lists, and activity discovery — are free with no trial limits or hidden paywalls. TripIt charges $49/year for its most useful features like flight alerts.",
       },
     ],
     ctaTitle: "Ready to plan your next group trip?",
@@ -269,24 +269,24 @@ const content = {
     heroTitle: "WePlanify vs TripIt",
     heroSubtitle: "Meilleur Organisateur de Voyage de Groupe ? (2026)",
     heroIntro:
-      "TripIt et WePlanify vous aident tous les deux à planifier des voyages, mais ils résolvent des problèmes très différents. TripIt est l'application de référence pour organiser les confirmations de réservation en un itinéraire personnel. WePlanify est conçu de A à Z pour la collaboration de groupe. Voici comment ils se comparent.",
+      "TripIt et WePlanify vous aident tous les deux \u00e0 planifier des voyages, mais ils r\u00e9solvent des probl\u00e8mes tr\u00e8s diff\u00e9rents. TripIt organise les confirmations de r\u00e9servation en un itin\u00e9raire personnel. WePlanify est con\u00e7u de A \u00e0 Z pour la collaboration de groupe. Voici comment ils se comparent.",
     verdictTitle: "En bref",
     verdict:
-      "TripIt est le meilleur outil pour organiser les confirmations de voyage et les itinéraires personnels. WePlanify est conçu pour la collaboration de groupe — sondages, budgets partagés et planification ensemble. TripIt est orienté solo, WePlanify est orienté groupe.",
+      "TripIt se concentre sur l\u2019organisation des confirmations de voyage et les itin\u00e9raires personnels. WePlanify est con\u00e7u pour la collaboration de groupe \u2014 sondages, budgets partag\u00e9s et planification ensemble. TripIt est orient\u00e9 solo, WePlanify est orient\u00e9 groupe.",
     comparisonTitle: "Comparatif Fonctionnalité par Fonctionnalité",
-    tripitShinesTitle: "Là où TripIt excelle",
+    tripitShinesTitle: "L\u00e0 o\u00f9 TripIt se distingue",
     tripitShinesPoints: [
       {
-        title: "Import automatique des réservations",
-        desc: "Transférez vos e-mails de confirmation et TripIt construit votre itinéraire automatiquement. Vols, hôtels, locations de voiture — tout dans une seule chronologie.",
+        title: "Import automatique des r\u00e9servations",
+        desc: "Transf\u00e9rez vos e-mails de confirmation et TripIt construit votre itin\u00e9raire automatiquement. Vols, h\u00f4tels, locations de voiture \u2014 organis\u00e9s dans une seule chronologie.",
       },
       {
-        title: "Alertes vol et aéroport",
-        desc: "TripIt Pro envoie des notifications en temps réel sur les changements de porte, les retards et les vols alternatifs. Parfait pour les voyageurs fréquents.",
+        title: "Alertes vol et a\u00e9roport",
+        desc: "TripIt Pro envoie les changements de porte, les notifications de retard et les suggestions de vols alternatifs. Utile pour les voyageurs fr\u00e9quents qui ont besoin de mises \u00e0 jour en temps r\u00e9el.",
       },
       {
-        title: "Application mobile aboutie",
-        desc: "TripIt dispose d'une application native mature et bien conçue avec accès hors ligne à votre itinéraire — essentiel lors de voyages internationaux.",
+        title: "Application mobile avec acc\u00e8s hors ligne",
+        desc: "TripIt propose une application mobile native avec acc\u00e8s hors ligne \u00e0 votre itin\u00e9raire, ce qui peut \u00eatre utile lors de voyages internationaux sans donn\u00e9es.",
       },
     ],
     weplanifyWinsTitle: "Là où WePlanify gagne",
@@ -320,16 +320,16 @@ const content = {
     faqTitle: "Questions Fréquentes",
     faqs: [
       {
-        q: "TripIt peut-il être utilisé pour les voyages de groupe ?",
-        a: "TripIt vous permet de partager une vue en lecture seule de votre itinéraire avec d'autres, mais il ne prend pas en charge l'édition collaborative, les sondages de groupe ou les budgets partagés. Il a été conçu principalement pour les voyageurs individuels.",
+        q: "Pourquoi passer de TripIt \u00e0 WePlanify ?",
+        a: "TripIt est con\u00e7u pour les voyageurs individuels qui g\u00e8rent leurs r\u00e9servations. Il ne propose pas de sondages de groupe, de budgets partag\u00e9s, de listes de bagages collaboratives ni d\u2019\u00e9dition de groupe en temps r\u00e9el. Si vous planifiez \u00e0 plusieurs, WePlanify fournit tous les outils de coordination qui manquent \u00e0 TripIt \u2014 enti\u00e8rement gratuitement.",
+      },
+      {
+        q: "Que manque-t-il \u00e0 TripIt pour les voyages de groupe ?",
+        a: "TripIt ne propose pas de votes de groupe, de suivi de d\u00e9penses partag\u00e9es, d\u2019\u00e9dition collaborative d\u2019itin\u00e9raire, de listes de bagages ni de d\u00e9couverte d\u2019activit\u00e9s. Son partage se limite \u00e0 des vues en lecture seule. WePlanify est enti\u00e8rement construit autour de la collaboration de groupe.",
       },
       {
         q: "WePlanify est-il vraiment gratuit ?",
-        a: "Oui. Toutes les fonctionnalités principales — itinéraire collaboratif, sondages, suivi de budget, listes de bagages et découverte d'activités — sont gratuites sans limite d'essai ni mur payant caché.",
-      },
-      {
-        q: "Peut-on importer des réservations dans WePlanify comme TripIt ?",
-        a: "WePlanify ne prend pas encore en charge le transfert automatique d'e-mails pour l'import de réservations. Vous pouvez ajouter manuellement les vols et hébergements à votre itinéraire partagé.",
+        a: "Oui. Toutes les fonctionnalit\u00e9s principales \u2014 itin\u00e9raire collaboratif, sondages, suivi de budget, listes de bagages et d\u00e9couverte d\u2019activit\u00e9s \u2014 sont gratuites sans limite d\u2019essai ni mur payant cach\u00e9. TripIt facture 49 $/an pour ses fonctionnalit\u00e9s les plus utiles comme les alertes de vol.",
       },
     ],
     ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
@@ -635,6 +635,15 @@ export default async function TripItComparisonPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* -------------------------------------------------------------- */}
+        {/* Mid-page CTA                                                    */}
+        {/* -------------------------------------------------------------- */}
+        <div className="text-center py-8">
+          <Link href="https://app.weplanify.com/register" className="text-[#F6391A] font-karla font-bold hover:underline">
+            {locale === "fr" ? "Essayez WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
+          </Link>
+        </div>
 
         {/* -------------------------------------------------------------- */}
         {/* 4a. Where TripIt shines                                         */}

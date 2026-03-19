@@ -195,55 +195,55 @@ const content = {
     heroSubtitle: "Comparison for the French market",
     heroTitle: "WePlanify vs Cruzmi — Best French Group Trip Planner?",
     heroIntro:
-      "Looking for a group trip planner that speaks French? Cruzmi and WePlanify are two of the only apps that fully support French-speaking travellers. We put them side by side so you can decide which one fits your next trip.",
+      "Looking for a group trip planner that speaks French? Cruzmi is a French-language mobile app for organizing group events, but it was not designed specifically for travel. WePlanify is a bilingual web app built from the ground up for trip planning. Here is how they compare.",
     verdictTitle: "Quick Verdict",
     verdictText:
-      "Cruzmi is a French mobile app for group event organization. WePlanify is a bilingual web app focused specifically on travel planning with collaborative itineraries, group polls, shared budgets, and packing lists. Both speak French, but WePlanify is more travel-focused.",
+      "Cruzmi is a French mobile app for general group event coordination. It lacks day-by-day itineraries, activity discovery, and packing lists. WePlanify is a bilingual web app purpose-built for travel planning with collaborative itineraries, group polls, shared budgets, and packing lists.",
     comparisonTitle: "Feature Comparison",
     cruzmiShinesTitle: "Where Cruzmi Shines",
     cruzmiShinesPoints: [
       {
         title: "French-only focus",
-        desc: "Cruzmi is designed for the French market. The entire experience — interface, support, community — is in French with no translation compromises.",
+        desc: "Cruzmi targets the French market. The interface and support are in French only, which means no English option for international groups.",
       },
       {
-        title: "Mobile-first design",
-        desc: "Built as a mobile app from day one, Cruzmi offers a smooth native experience on iOS and Android for quick event coordination on the go.",
+        title: "Mobile app available",
+        desc: "Cruzmi has a native mobile app on iOS and Android. However, its web access is limited, which can be a constraint for desktop planning sessions.",
       },
       {
         title: "Broader event scope",
-        desc: "Beyond travel, Cruzmi handles group events like parties, outings and dinners. If you need an all-purpose group organizer, it covers more ground.",
+        desc: "Cruzmi handles group events like parties, outings, and dinners. This generalist approach means travel-specific features like day-by-day itineraries and activity discovery are absent.",
       },
     ],
     weplanifyWinsTitle: "Where WePlanify Wins",
     weplanifyWinsPoints: [
       {
-        title: "Travel-specific features",
-        desc: "WePlanify is purpose-built for travel: day-by-day itineraries, activity discovery, packing lists, and shared budget tracking designed for trips, not just events.",
+        title: "Purpose-built for travel",
+        desc: "Unlike Cruzmi's generalist event approach, WePlanify is designed exclusively for trip planning: day-by-day itineraries, activity discovery, packing lists, and shared budget tracking all come built-in.",
       },
       {
         title: "Bilingual (EN / FR)",
-        desc: "Fully available in both English and French — ideal for international friend groups or mixed-language families planning a trip together.",
+        desc: "Fully available in both English and French — perfect for international friend groups or mixed-language families. Cruzmi only supports French, leaving English-speaking members behind.",
       },
       {
-        title: "Web-based flexibility",
-        desc: "No app store download required. WePlanify works in any browser on desktop, tablet, or mobile — share a link and everyone can join instantly.",
+        title: "Instant web access",
+        desc: "No app store download required. WePlanify works in any browser on desktop, tablet, or mobile — share a link and everyone can join in seconds, no matter what device they use.",
       },
       {
-        title: "Collaborative itineraries",
-        desc: "Build a real day-by-day trip plan together with polls, comments, and real-time updates. Cruzmi focuses more on event logistics than detailed trip planning.",
+        title: "Real collaborative itineraries",
+        desc: "Build a detailed day-by-day trip plan together with polls, comments, and real-time updates. Everyone contributes, everyone votes, and the group reaches decisions faster.",
       },
     ],
     whoTitle: "Who Should Choose Which?",
     whoCruzmi:
-      "Choose Cruzmi if you are organizing a French-speaking group event that is not necessarily a trip — a birthday party, a weekend outing, or a dinner with friends. Its mobile app makes quick coordination easy.",
+      "Choose Cruzmi if you are organizing a French-speaking group event that is not a trip — a birthday party, a weekend outing, or a dinner with friends. It is a general-purpose event tool, not a travel planner.",
     whoWeplanify:
-      "Choose WePlanify if you are planning a real trip — whether a weekend getaway or a two-week adventure — and you want structured itineraries, budget tracking, packing lists, and activity discovery. Especially useful for bilingual groups.",
+      "Choose WePlanify if you are planning an actual trip — whether a weekend getaway or a two-week adventure — and you need structured day-by-day itineraries, budget tracking, packing lists, activity discovery, and group polls. Especially valuable for bilingual groups that need both English and French.",
     faqTitle: "Frequently Asked Questions",
     faq: [
       {
         q: "Is Cruzmi better for non-travel events?",
-        a: "Yes. Cruzmi has a broader scope that includes parties, outings, and group dinners. If your main goal is not travel planning but general event organization among French-speaking friends, Cruzmi is a solid choice.",
+        a: "Cruzmi has a broader scope that includes parties, outings, and group dinners. If your main goal is general event organization among French-speaking friends rather than travel planning, Cruzmi covers that use case.",
       },
       {
         q: "Does WePlanify work on mobile?",
@@ -264,55 +264,55 @@ const content = {
     heroSubtitle: "Comparatif pour le marché français",
     heroTitle: "WePlanify vs Cruzmi — Meilleur Organisateur de Voyage de Groupe Français ?",
     heroIntro:
-      "Vous cherchez une application de voyage de groupe en français ? Cruzmi et WePlanify sont parmi les seules applications qui prennent en charge les voyageurs francophones. Nous les avons comparées côte à côte pour vous aider à choisir.",
+      "Vous cherchez une application de voyage de groupe en français ? Cruzmi est une application mobile francophone pour organiser des événements de groupe, mais elle n'a pas été conçue spécifiquement pour le voyage. WePlanify est une application web bilingue construite de A à Z pour la planification de voyage. Voici comment elles se comparent.",
     verdictTitle: "Verdict Rapide",
     verdictText:
-      "Cruzmi est une application mobile française pour l'organisation d'événements de groupe. WePlanify est une application web bilingue axée spécifiquement sur la planification de voyage avec des itinéraires collaboratifs, des sondages de groupe, des budgets partagés et des listes de bagages. Les deux parlent français, mais WePlanify est davantage orienté voyage.",
+      "Cruzmi est une application mobile française pour la coordination d'événements de groupe en général. Elle ne propose pas d'itinéraires jour par jour, de découverte d'activités, ni de listes de bagages. WePlanify est une application web bilingue conçue spécifiquement pour la planification de voyage avec des itinéraires collaboratifs, des sondages de groupe, des budgets partagés et des listes de bagages.",
     comparisonTitle: "Comparatif des Fonctionnalités",
-    cruzmiShinesTitle: "Là où Cruzmi Excelle",
+    cruzmiShinesTitle: "Là où Cruzmi se Démarque",
     cruzmiShinesPoints: [
       {
         title: "Focus 100 % français",
-        desc: "Cruzmi est conçu pour le marché français. L'ensemble de l'expérience — interface, support, communauté — est en français sans compromis de traduction.",
+        desc: "Cruzmi cible le marché français. L'interface et le support sont en français uniquement, ce qui signifie aucune option anglaise pour les groupes internationaux.",
       },
       {
-        title: "Conçu pour le mobile",
-        desc: "Développé comme application mobile dès le départ, Cruzmi offre une expérience native fluide sur iOS et Android pour coordonner rapidement en déplacement.",
+        title: "Application mobile disponible",
+        desc: "Cruzmi propose une application native sur iOS et Android. Cependant, son accès web est limité, ce qui peut être contraignant pour la planification sur ordinateur.",
       },
       {
         title: "Portée événementielle plus large",
-        desc: "Au-delà du voyage, Cruzmi gère les événements de groupe comme les fêtes, les sorties et les dîners. Si vous avez besoin d'un organisateur de groupe polyvalent, il couvre plus de terrain.",
+        desc: "Cruzmi gère les événements de groupe comme les fêtes, les sorties et les dîners. Cette approche généraliste implique l'absence de fonctionnalités spécifiques au voyage comme les itinéraires jour par jour et la découverte d'activités.",
       },
     ],
     weplanifyWinsTitle: "Là où WePlanify Gagne",
     weplanifyWinsPoints: [
       {
-        title: "Fonctionnalités spécifiques au voyage",
-        desc: "WePlanify est conçu pour le voyage : itinéraires jour par jour, découverte d'activités, listes de bagages et suivi de budget partagé pensés pour les voyages, pas seulement les événements.",
+        title: "Conçu pour le voyage",
+        desc: "Contrairement à l'approche généraliste de Cruzmi, WePlanify est conçu exclusivement pour la planification de voyage : itinéraires jour par jour, découverte d'activités, listes de bagages et suivi de budget partagé sont tous intégrés.",
       },
       {
         title: "Bilingue (EN / FR)",
-        desc: "Entièrement disponible en anglais et en français — idéal pour les groupes d'amis internationaux ou les familles multilingues qui planifient un voyage ensemble.",
+        desc: "Entièrement disponible en anglais et en français — parfait pour les groupes d'amis internationaux ou les familles multilingues. Cruzmi ne supporte que le français, laissant les membres anglophones de côté.",
       },
       {
-        title: "Flexibilité web",
-        desc: "Aucun téléchargement requis. WePlanify fonctionne dans n'importe quel navigateur sur ordinateur, tablette ou mobile — partagez un lien et tout le monde peut participer instantanément.",
+        title: "Accès web instantané",
+        desc: "Aucun téléchargement requis. WePlanify fonctionne dans n'importe quel navigateur sur ordinateur, tablette ou mobile — partagez un lien et tout le monde peut participer en quelques secondes, quel que soit l'appareil.",
       },
       {
-        title: "Itinéraires collaboratifs",
-        desc: "Construisez ensemble un vrai planning de voyage jour par jour avec des sondages, des commentaires et des mises à jour en temps réel. Cruzmi se concentre davantage sur la logistique événementielle que sur la planification détaillée de voyage.",
+        title: "Vrais itinéraires collaboratifs",
+        desc: "Construisez ensemble un planning de voyage détaillé jour par jour avec des sondages, des commentaires et des mises à jour en temps réel. Tout le monde contribue, tout le monde vote, et le groupe prend ses décisions plus rapidement.",
       },
     ],
     whoTitle: "Pour Qui Choisir Quoi ?",
     whoCruzmi:
-      "Choisissez Cruzmi si vous organisez un événement de groupe francophone qui n'est pas forcément un voyage — un anniversaire, une sortie le week-end ou un dîner entre amis. Son application mobile rend la coordination rapide et facile.",
+      "Choisissez Cruzmi si vous organisez un événement de groupe francophone qui n'est pas un voyage — un anniversaire, une sortie le week-end ou un dîner entre amis. C'est un outil d'événements généraliste, pas un planificateur de voyage.",
     whoWeplanify:
-      "Choisissez WePlanify si vous planifiez un vrai voyage — qu'il s'agisse d'un week-end ou d'une aventure de deux semaines — et que vous voulez des itinéraires structurés, un suivi de budget, des listes de bagages et la découverte d'activités. Particulièrement utile pour les groupes bilingues.",
+      "Choisissez WePlanify si vous planifiez un vrai voyage — qu'il s'agisse d'un week-end ou d'une aventure de deux semaines — et que vous avez besoin d'itinéraires structurés jour par jour, d'un suivi de budget, de listes de bagages, de découverte d'activités et de sondages de groupe. Particulièrement précieux pour les groupes bilingues qui ont besoin du français et de l'anglais.",
     faqTitle: "Questions Fréquentes",
     faq: [
       {
         q: "Cruzmi est-il mieux pour les événements non-voyage ?",
-        a: "Oui. Cruzmi a une portée plus large qui inclut les fêtes, les sorties et les dîners de groupe. Si votre objectif principal n'est pas la planification de voyage mais l'organisation d'événements entre amis francophones, Cruzmi est un choix solide.",
+        a: "Cruzmi a une portée plus large qui inclut les fêtes, les sorties et les dîners de groupe. Si votre objectif principal est l'organisation d'événements entre amis francophones plutôt que la planification de voyage, Cruzmi couvre ce cas d'usage.",
       },
       {
         q: "WePlanify fonctionne-t-il sur mobile ?",
@@ -631,6 +631,15 @@ export default async function CruzmiComparisonPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* ---------------------------------------------------------------- */}
+        {/* Mid-page CTA                                                     */}
+        {/* ---------------------------------------------------------------- */}
+        <div className="text-center py-8">
+          <Link href="https://app.weplanify.com/register" className="text-[#F6391A] font-karla font-bold hover:underline">
+            {locale === "fr" ? "Essayer WePlanify gratuitement →" : "Try WePlanify free →"}
+          </Link>
+        </div>
 
         {/* ---------------------------------------------------------------- */}
         {/* 4a. Where Cruzmi Shines                                          */}

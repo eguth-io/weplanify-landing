@@ -194,24 +194,24 @@ const content = {
     heroTitle: "WePlanify vs Stippl",
     heroSubtitle: "Honest comparison \u2014 2026 edition",
     heroIntro:
-      "Stippl and WePlanify both help you plan trips, but they target different travellers. Stippl is a visual, mobile-first travel planner with journals, automatic reels, and community-shared itineraries. WePlanify is designed from the ground up for group decision-making with polls, shared budgets, and collaborative planning. Here is an objective, side-by-side look at both apps.",
+      "Stippl is a mobile-first travel planner with journals, automatic reels, and community-shared itineraries. WePlanify is designed from the ground up for group decision-making with polls, shared budgets, and collaborative planning. Here is a side-by-side look at both apps.",
     verdictTitle: "TL;DR",
     verdict:
-      "Stippl excels at visual trip planning with travel journals, automatic reels, and community-shared itineraries. WePlanify is built for group decision-making with polls, shared budgets, and collaborative planning. Choose Stippl for solo documentation, WePlanify for group coordination.",
+      "Stippl offers visual trip planning with travel journals, automatic reels, and community-shared itineraries. However, it lacks group polls, shared budget tracking, and French language support. WePlanify is built for group decision-making with polls, shared budgets, and collaborative planning. Choose Stippl for solo documentation, WePlanify for group coordination.",
     comparisonTitle: "Head-to-Head Comparison",
     stipplShinesTitle: "Where Stippl Shines",
     stipplShinesPoints: [
-      "Night-to-day planning engine \u2014 a unique approach that connects accommodations with nearby activities, making day-by-day planning seamless.",
-      "Travel journals and automatic reels \u2014 document your trip with photos and let the app generate beautiful reels to share with friends and family.",
-      "Community itineraries \u2014 browse and clone itineraries shared by other travellers for instant inspiration and planning shortcuts.",
-      "Mobile-first experience \u2014 native iOS and Android apps with a polished, visual interface designed for on-the-go planning.",
+      "Night-to-day planning engine \u2014 an approach that connects accommodations with nearby activities for day-by-day planning. It does not include group polls or budget tracking.",
+      "Travel journals and automatic reels \u2014 document your trip with photos and the app generates reels. This is a post-trip feature, not a planning tool.",
+      "Community itineraries \u2014 browse and clone itineraries shared by other travellers. Useful for solo inspiration, less so for group decision-making.",
+      "Mobile-first experience \u2014 native iOS and Android apps for on-the-go planning. No French language support and no web-based desktop access.",
     ],
     weplanifyWinsTitle: "Where WePlanify Wins",
     weplanifyWinsPoints: [
-      "Group polls and voting \u2014 let everyone vote on destinations, dates, and activities so no one feels left out of the decision-making process.",
-      "Shared budget tracker \u2014 track group expenses, split costs, and keep everyone on the same financial page throughout the trip.",
-      "Packing lists \u2014 collaborative packing lists ensure nothing gets forgotten and items are not duplicated across the group.",
-      "Bilingual (EN/FR) \u2014 fully available in English and French, a rare feature among travel planning apps.",
+      "Group polls and voting \u2014 let everyone vote on destinations, dates, and activities so no one feels left out. Stippl has no equivalent feature for group decisions.",
+      "Shared budget tracker \u2014 track group expenses, split costs, and keep everyone aligned financially throughout the trip. This is a feature Stippl does not offer.",
+      "Packing lists \u2014 collaborative packing lists ensure nothing gets forgotten and items are not duplicated across the group. A key advantage for group travel.",
+      "Bilingual (EN/FR) \u2014 fully available in English and French, making WePlanify accessible to francophone travellers who are underserved by English-only apps like Stippl.",
     ],
     chooseStipplTitle: "Who Should Choose Stippl?",
     chooseStipplPoints: [
@@ -239,7 +239,7 @@ const content = {
       },
       {
         q: "Which app is better for trip documentation?",
-        a: "Stippl is the clear winner for trip documentation. Its travel journal feature and automatic reels make it easy to capture and share your trip memories. WePlanify focuses more on the planning and coordination phase rather than post-trip documentation.",
+        a: "Stippl has travel journal and automatic reel features for capturing trip memories. WePlanify focuses on the planning and coordination phase rather than post-trip documentation. If documentation is your priority over group planning tools, Stippl covers that use case.",
       },
     ],
     ctaTitle: "Try WePlanify free \u2014 built for groups",
@@ -253,24 +253,24 @@ const content = {
     heroTitle: "WePlanify vs Stippl",
     heroSubtitle: "Comparaison honn\u00eate \u2014 \u00e9dition 2026",
     heroIntro:
-      "Stippl et WePlanify vous aident tous deux \u00e0 planifier des voyages, mais ils ciblent des voyageurs diff\u00e9rents. Stippl est un planificateur de voyage visuel, mobile-first, avec des carnets de voyage, des reels automatiques et des itin\u00e9raires partag\u00e9s par la communaut\u00e9. WePlanify est con\u00e7u de A \u00e0 Z pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Voici un comparatif objectif des deux applications.",
+      "Stippl est un planificateur de voyage visuel, mobile-first, avec des carnets de voyage, des reels automatiques et des itin\u00e9raires partag\u00e9s par la communaut\u00e9. WePlanify est con\u00e7u de A \u00e0 Z pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Voici un comparatif des deux applications.",
     verdictTitle: "En bref",
     verdict:
-      "Stippl excelle dans la planification visuelle avec des carnets de voyage, des reels automatiques et des itin\u00e9raires communautaires. WePlanify est con\u00e7u pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Choisissez Stippl pour la documentation solo, WePlanify pour la coordination de groupe.",
+      "Stippl propose une planification visuelle avec des carnets de voyage, des reels automatiques et des itin\u00e9raires communautaires. Cependant, il ne propose pas de sondages de groupe, de suivi de budget partag\u00e9, ni de support en fran\u00e7ais. WePlanify est con\u00e7u pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Choisissez Stippl pour la documentation solo, WePlanify pour la coordination de groupe.",
     comparisonTitle: "Comparatif Face \u00e0 Face",
-    stipplShinesTitle: "L\u00e0 o\u00f9 Stippl Brille",
+    stipplShinesTitle: "L\u00e0 o\u00f9 Stippl se D\u00e9marque",
     stipplShinesPoints: [
-      "Moteur de planification nuit-jour \u2014 une approche unique qui relie les h\u00e9bergements aux activit\u00e9s \u00e0 proximit\u00e9, rendant la planification jour par jour fluide.",
-      "Carnets de voyage et reels automatiques \u2014 documentez votre voyage en photos et laissez l\u2019application g\u00e9n\u00e9rer de beaux reels \u00e0 partager avec vos proches.",
-      "Itin\u00e9raires communautaires \u2014 parcourez et clonez les itin\u00e9raires partag\u00e9s par d\u2019autres voyageurs pour une inspiration instantan\u00e9e.",
-      "Exp\u00e9rience mobile-first \u2014 applications natives iOS et Android avec une interface visuelle soign\u00e9e con\u00e7ue pour planifier en d\u00e9placement.",
+      "Moteur de planification nuit-jour \u2014 une approche qui relie les h\u00e9bergements aux activit\u00e9s \u00e0 proximit\u00e9 pour la planification jour par jour. Ne comprend pas de sondages de groupe ni de suivi de budget.",
+      "Carnets de voyage et reels automatiques \u2014 documentez votre voyage en photos et l\u2019application g\u00e9n\u00e8re des reels. C\u2019est une fonctionnalit\u00e9 post-voyage, pas un outil de planification.",
+      "Itin\u00e9raires communautaires \u2014 parcourez et clonez les itin\u00e9raires partag\u00e9s par d\u2019autres voyageurs. Utile pour l\u2019inspiration solo, moins pour la prise de d\u00e9cision en groupe.",
+      "Exp\u00e9rience mobile-first \u2014 applications natives iOS et Android pour planifier en d\u00e9placement. Pas de support en fran\u00e7ais et pas d\u2019acc\u00e8s web sur ordinateur.",
     ],
     weplanifyWinsTitle: "L\u00e0 o\u00f9 WePlanify Gagne",
     weplanifyWinsPoints: [
-      "Sondages et votes de groupe \u2014 laissez chacun voter sur les destinations, les dates et les activit\u00e9s pour que personne ne se sente exclu.",
-      "Suivi de budget partag\u00e9 \u2014 suivez les d\u00e9penses du groupe, r\u00e9partissez les co\u00fbts et gardez tout le monde align\u00e9 financi\u00e8rement.",
-      "Listes de bagages \u2014 des listes collaboratives pour ne rien oublier et \u00e9viter les doublons au sein du groupe.",
-      "Bilingue (EN/FR) \u2014 enti\u00e8rement disponible en anglais et en fran\u00e7ais, une fonctionnalit\u00e9 rare parmi les applications de voyage.",
+      "Sondages et votes de groupe \u2014 laissez chacun voter sur les destinations, les dates et les activit\u00e9s pour que personne ne se sente exclu. Stippl ne propose pas d\u2019\u00e9quivalent pour les d\u00e9cisions de groupe.",
+      "Suivi de budget partag\u00e9 \u2014 suivez les d\u00e9penses du groupe, r\u00e9partissez les co\u00fbts et gardez tout le monde align\u00e9 financi\u00e8rement. Une fonctionnalit\u00e9 que Stippl ne propose pas.",
+      "Listes de bagages \u2014 des listes collaboratives pour ne rien oublier et \u00e9viter les doublons au sein du groupe. Un avantage cl\u00e9 pour les voyages de groupe.",
+      "Bilingue (EN/FR) \u2014 enti\u00e8rement disponible en anglais et en fran\u00e7ais, rendant WePlanify accessible aux voyageurs francophones mal desservis par les applications anglophones comme Stippl.",
     ],
     chooseStipplTitle: "Qui devrait choisir Stippl ?",
     chooseStipplPoints: [
@@ -298,7 +298,7 @@ const content = {
       },
       {
         q: "Quelle application est meilleure pour documenter un voyage ?",
-        a: "Stippl est le grand gagnant pour la documentation de voyage. Sa fonctionnalit\u00e9 de carnet de voyage et ses reels automatiques facilitent la capture et le partage de vos souvenirs. WePlanify se concentre davantage sur la phase de planification et de coordination que sur la documentation post-voyage.",
+        a: "Stippl propose des carnets de voyage et des reels automatiques pour capturer vos souvenirs. WePlanify se concentre sur la phase de planification et de coordination plut\u00f4t que sur la documentation post-voyage. Si la documentation est votre priorit\u00e9 plut\u00f4t que les outils de planification de groupe, Stippl couvre ce cas d\u2019usage.",
       },
     ],
     ctaTitle: "Essayez WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
@@ -590,6 +590,15 @@ export default async function StipplComparisonPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* -------------------------------------------------------------- */}
+        {/* Mid-page CTA                                                   */}
+        {/* -------------------------------------------------------------- */}
+        <div className="text-center py-8">
+          <Link href="https://app.weplanify.com/register" className="text-[#F6391A] font-karla font-bold hover:underline">
+            {locale === "fr" ? "Essayer WePlanify gratuitement →" : "Try WePlanify free →"}
+          </Link>
+        </div>
 
         {/* -------------------------------------------------------------- */}
         {/* 4. Detailed sections                                           */}

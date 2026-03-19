@@ -226,53 +226,53 @@ const competitorDetails = {
   en: [
     {
       name: "Wanderlog",
-      text: "Wanderlog is a strong itinerary builder with excellent map integration and a polished mobile experience. It shines for solo or couple travel planning. However, it lacks group-specific features like polls and shared budget tracking, and it is only available in English.",
+      text: "Wanderlog is a map-based itinerary builder with route visualization. It lacks group polls, shared budget tracking, and French language support — features that are essential for group trip planning.",
     },
     {
       name: "SquadTrip",
-      text: "SquadTrip is purpose-built for group trips and includes voting and budget-splitting features. It is a solid choice for coordinating small groups. That said, it does not yet offer packing lists or activity discovery, and there is no French-language support.",
+      text: "SquadTrip handles group payments and RSVP management. It does not include packing lists, activity discovery, or French language support, so groups still need additional tools to plan the full trip.",
     },
     {
       name: "Troupe",
-      text: "Troupe makes it easy to suggest and vote on activities with friends, and it has a clean mobile app. It focuses more on the discovery and decision phase than on full trip logistics. Budget tracking and packing lists are not part of its current feature set.",
+      text: "Troupe lets groups vote on activity suggestions. It covers only the decision phase — there is no budget tracking, no packing lists, and no French support, leaving most trip logistics unaddressed.",
     },
     {
       name: "TripIt",
-      text: "TripIt excels at organizing travel confirmations and forwarding booking emails into a clean itinerary. It is ideal for frequent business travellers. However, its collaboration features are limited, and most useful functionality requires a paid Pro subscription.",
+      text: "TripIt assembles itineraries from forwarded booking emails. It is designed for solo travelers — group collaboration, polls, and shared budgets are not available, and most features require a paid Pro subscription.",
     },
     {
       name: "Splitwise",
-      text: "Splitwise is the gold standard for splitting expenses with friends. While it's not a trip planner, many groups use it alongside their planning tool to track shared costs. If expense splitting is your only need, Splitwise is excellent — but for full trip planning with itineraries, polls, and packing lists, you'll need a dedicated tool like WePlanify.",
+      text: "Splitwise tracks shared expenses across a group. It has no trip planning features — no itinerary, no polls, no packing lists — so most groups need a second app alongside it. WePlanify includes built-in budget tracking along with every other planning tool.",
     },
     {
       name: "Stippl",
-      text: "Stippl is an all-in-one travel planner with a unique night-to-day planning engine that connects accommodations with activities. It features community-shared itineraries, travel journals, and automatic reels. Great for solo and couple travelers who want visual trip documentation, but lacks group-specific features like polls and shared budgets.",
+      text: "Stippl is a visual travel planner with community-shared itineraries and photo journals. It lacks group polls, shared budget tracking, and French language support — making it more suited for solo travelers than for coordinating a group trip.",
     },
   ],
   fr: [
     {
       name: "Wanderlog",
-      text: "Wanderlog est un excellent créateur d'itinéraires avec une intégration cartographique soignée et une belle application mobile. Il excelle pour les voyages en solo ou en couple. Cependant, il ne dispose pas de fonctionnalités de groupe comme les sondages ou le suivi de budget partagé, et il n'est disponible qu'en anglais.",
+      text: "Wanderlog est un créateur d'itinéraires basé sur la carte avec visualisation de parcours. Il ne propose ni sondages de groupe, ni suivi de budget partagé, ni support du français — des fonctionnalités essentielles pour planifier un voyage de groupe.",
     },
     {
       name: "SquadTrip",
-      text: "SquadTrip est conçu spécialement pour les voyages de groupe et inclut des fonctions de vote et de partage de budget. C'est un choix solide pour coordonner de petits groupes. Néanmoins, il ne propose pas encore de listes de bagages ni de découverte d'activités, et il n'est pas disponible en français.",
+      text: "SquadTrip gère les paiements de groupe et les confirmations de présence. Il n'inclut pas de listes de bagages, de découverte d'activités ni de support du français, ce qui oblige les groupes à utiliser d'autres outils pour planifier le reste du voyage.",
     },
     {
       name: "Troupe",
-      text: "Troupe facilite la suggestion et le vote d'activités entre amis, avec une application mobile bien conçue. Il se concentre davantage sur la phase de découverte et de décision que sur la logistique complète du voyage. Le suivi de budget et les listes de bagages ne font pas partie de ses fonctionnalités actuelles.",
+      text: "Troupe permet aux groupes de voter sur des suggestions d'activités. Il ne couvre que la phase de décision — pas de suivi de budget, pas de listes de bagages et pas de support du français, laissant la majorité de la logistique du voyage sans solution.",
     },
     {
       name: "TripIt",
-      text: "TripIt excelle dans l'organisation des confirmations de voyage en transformant les e-mails de réservation en itinéraire clair. Il est idéal pour les voyageurs d'affaires fréquents. Cependant, ses fonctionnalités de collaboration sont limitées et la plupart des options utiles nécessitent un abonnement Pro payant.",
+      text: "TripIt crée des itinéraires à partir d'e-mails de réservation transférés. Il est conçu pour les voyageurs solo — la collaboration de groupe, les sondages et les budgets partagés ne sont pas disponibles, et la plupart des fonctions nécessitent un abonnement Pro payant.",
     },
     {
       name: "Splitwise",
-      text: "Splitwise est la référence absolue pour partager les dépenses entre amis. Bien que ce ne soit pas un planificateur de voyage, de nombreux groupes l'utilisent en complément de leur outil de planification pour suivre les frais partagés. Si le partage de dépenses est votre seul besoin, Splitwise est excellent — mais pour une planification complète de voyage avec itinéraires, sondages et listes de bagages, il vous faudra un outil dédié comme WePlanify.",
+      text: "Splitwise permet de suivre les dépenses partagées au sein d'un groupe. Il n'a aucune fonctionnalité de planification de voyage — pas d'itinéraire, pas de sondages, pas de listes de bagages — ce qui oblige la plupart des groupes à utiliser une deuxième application. WePlanify intègre le suivi de budget avec tous les autres outils de planification.",
     },
     {
       name: "Stippl",
-      text: "Stippl est un planificateur de voyage tout-en-un doté d'un moteur de planification unique « nuit-jour » qui relie les hébergements aux activités. Il propose des itinéraires partagés par la communauté, des carnets de voyage et des reels automatiques. Idéal pour les voyageurs solo ou en couple qui veulent documenter visuellement leurs voyages, mais il manque de fonctionnalités spécifiques aux groupes comme les sondages et les budgets partagés.",
+      text: "Stippl est un planificateur de voyage visuel avec des itinéraires partagés par la communauté et des carnets photo. Il ne propose ni sondages de groupe, ni suivi de budget partagé, ni support du français — ce qui le rend plus adapté aux voyageurs solo qu'à la coordination d'un voyage de groupe.",
     },
   ],
 };
