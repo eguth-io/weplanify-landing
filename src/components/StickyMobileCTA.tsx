@@ -36,7 +36,7 @@ export default function StickyMobileCTA({ text, href = "https://app.weplanify.co
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-          className="fixed bottom-0 left-0 right-0 z-40 lg:hidden p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] bg-gradient-to-t from-white via-white to-white/0"
+          className="fixed bottom-0 left-0 right-0 z-40 lg:hidden p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]"
         >
           <Link href={href} className="block">
             <PulsatingButton className="w-full justify-center font-karla font-bold text-base py-3">
