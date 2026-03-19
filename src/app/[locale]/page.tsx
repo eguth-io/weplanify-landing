@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import FadeIn from "@/components/FadeIn";
 import StackingCards from "@/components/StackingCards";
 import TravelSteps from "@/components/TravelSteps";
 import FAQSupport from "@/components/FAQSupport";
@@ -167,6 +168,7 @@ export default async function HomePage({ params }: Props) {
 
       {/* World Section */}
       {worldSection && (
+      <FadeIn>
         <div className="bg-[#001E13]">
           <div className="overflow-hidden">
             <div className="flex flex-col-reverse lg:flex-row max-w-[1400px] mx-auto">
@@ -251,6 +253,7 @@ export default async function HomePage({ params }: Props) {
             </div>
           </div>
         </div>
+      </FadeIn>
       )}
 
       {/* Scrolling Banner Section */}
@@ -293,38 +296,44 @@ export default async function HomePage({ params }: Props) {
 
       {/* Stacking Cards Section */}
       {features && (
+        <FadeIn>
         <div id="features">
           <StackingCards data={features} />
         </div>
+        </FadeIn>
       )}
 
       
 
       {/* Travel Steps */}
       {travelSteps && (
+        <FadeIn>
         <div id="how-it-works">
           <TravelSteps data={travelSteps} />
         </div>
+        </FadeIn>
       )}
 
       {/* Testimonials */}
-      {testimonials && <Testimonial data={testimonials} />}
+      {testimonials && <FadeIn><Testimonial data={testimonials} /></FadeIn>}
 
       {/* Feature Image Section */}
-      {featureImageSection && <FeatureImageSection data={featureImageSection} />}
+      {featureImageSection && <FadeIn><FeatureImageSection data={featureImageSection} /></FadeIn>}
 
       {/* CTA Banner */}
-      {ctaBanner && <CTABanner data={ctaBanner} />}
+      {ctaBanner && <FadeIn><CTABanner data={ctaBanner} /></FadeIn>}
 
       {/* FAQ Support */}
       {faq && (
+        <FadeIn>
         <div id="faq">
           <FAQSupport data={faq} />
         </div>
+        </FadeIn>
       )}
 
       {/* Ready Banner */}
-      {readyBanner && <ReadyBanner data={readyBanner} />}
+      {readyBanner && <FadeIn><ReadyBanner data={readyBanner} /></FadeIn>}
 
       {/* Footer */}
       <Footer footerData={footerData} />
