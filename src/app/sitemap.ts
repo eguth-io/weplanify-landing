@@ -22,7 +22,7 @@ const featureSlugs = [
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
     const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
-    const siteUrl = seoSettings?.siteUrl || "https://weplanify.com";
+    const siteUrl = seoSettings?.siteUrl || "https://www.weplanify.com";
 
     // Fetch blog post slugs for sitemap
     const blogPosts: { slug: string; publishedAt: string }[] = await client.fetch(
@@ -83,13 +83,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("Error generating sitemap:", error);
     return [
       {
-        url: "https://weplanify.com/en",
+        url: "https://www.weplanify.com/en",
         lastModified: new Date(),
         changeFrequency: "weekly",
         priority: 1,
       },
       {
-        url: "https://weplanify.com/fr",
+        url: "https://www.weplanify.com/fr",
         lastModified: new Date(),
         changeFrequency: "weekly",
         priority: 1,

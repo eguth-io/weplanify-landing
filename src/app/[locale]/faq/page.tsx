@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -6,6 +7,7 @@ import { NavType, Navigation, FAQType, Footer as FooterType } from "@/sanity/lib
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import { setRequestLocale } from 'next-intl/server';
+import { generateMetadataFromSanity } from "@/lib/metadata";
 
 // Default FAQ data
 const DEFAULT_FAQ_DATA: FAQType = {
@@ -37,6 +39,19 @@ const DEFAULT_FAQ_DATA: FAQType = {
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata = await generateMetadataFromSanity(locale, "/faq");
+  return {
+    ...metadata,
+    title: locale === "fr" ? "Questions Frequentes (FAQ)" : "Frequently Asked Questions (FAQ)",
+    description:
+      locale === "fr"
+        ? "Trouvez les reponses a vos questions sur WePlanify. Comment planifier un voyage de groupe, fonctionnalites, tarifs et support."
+        : "Find answers to your questions about WePlanify. How to plan a group trip, features, pricing and support.",
+  };
+}
 
 export default async function FAQPage({ params }: Props) {
   const { locale } = await params;

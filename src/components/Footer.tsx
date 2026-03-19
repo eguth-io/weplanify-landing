@@ -28,10 +28,10 @@ export default function Footer({ footerData }: FooterProps) {
         {/* Footer Logo */}
         {footerData?.logo && (
           <div className="mb-8 lg:mb-10">
-            <Link href="/">
+            <Link href="/" aria-label="WePlanify - Home">
               <Image
                 src={footerData.logo}
-                alt={footerData.tagline || "WePlanify"}
+                alt={footerData.tagline || "WePlanify logo"}
                 width={155}
                 height={66}
               />

@@ -11,7 +11,7 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
     const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
 
     const allowIndexing = seoSettings?.robotsSettings?.allowIndexing ?? true;
-    const siteUrl = seoSettings?.siteUrl || "https://weplanify.com";
+    const siteUrl = seoSettings?.siteUrl || "https://www.weplanify.com";
 
     return {
       rules: {
@@ -30,7 +30,7 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
         allow: "/",
         disallow: ["/studio"],
       },
-      sitemap: "https://weplanify.com/sitemap.xml",
+      sitemap: "https://www.weplanify.com/sitemap.xml",
     };
   }
 }

@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
@@ -7,10 +8,24 @@ import { navQuery, navigationQuery, blogPostsQuery, footerQuery } from "@/sanity
 import { NavType, Navigation, BlogPostPreview, Footer as FooterType } from "@/sanity/lib/type";
 import Link from "next/link";
 import { setRequestLocale } from 'next-intl/server';
+import { generateMetadataFromSanity } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const metadata = await generateMetadataFromSanity(locale, "/blog");
+  return {
+    ...metadata,
+    title: locale === "fr" ? "Blog — Conseils Voyage de Groupe" : "Blog — Group Travel Tips",
+    description:
+      locale === "fr"
+        ? "Decouvrez nos articles et conseils pour organiser des voyages de groupe inoubliables. Astuces, destinations et guides pratiques."
+        : "Discover articles and tips for organizing unforgettable group trips. Travel hacks, destinations and practical guides.",
+  };
+}
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
