@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -8,12 +9,50 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, blogPostQuery, footerQuery, ctaQuery } from "@/sanity/lib/query";
 import { NavType, BlogPost, FooterType, CtaType } from "@/sanity/lib/type";
 import { setRequestLocale } from 'next-intl/server';
+import { generateMetadataFromSanity } from "@/lib/metadata";
 
 interface BlogPostPageProps {
   params: Promise<{
     locale: string;
     slug: string;
   }>;
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { locale, slug } = await params;
+
+  const article = await sanityFetch({
+    query: blogPostQuery,
+    params: { slug },
+    tags: ["blogPost"],
+  }) as BlogPost | null;
+
+  const metadata = await generateMetadataFromSanity(locale, `/blog/${slug}`);
+
+  if (!article) {
+    return metadata;
+  }
+
+  const title = article.seo?.metaTitle || article.title;
+  const description = article.seo?.metaDescription || article.excerpt || undefined;
+
+  return {
+    ...metadata,
+    title,
+    description: description || metadata.description,
+    openGraph: {
+      ...metadata.openGraph,
+      title,
+      description,
+      ...(article.heroImage && { images: [{ url: article.heroImage }] }),
+    },
+    twitter: {
+      ...metadata.twitter,
+      title,
+      description,
+      ...(article.heroImage && { images: [article.heroImage] }),
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
