@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "WePlanify vs Cruzmi — Best French Group Trip Planner? (2026)",
       description:
-        "WePlanify vs Cruzmi: honest comparison of two French-speaking group trip planning apps. Compare features, itineraries, polls, budgets and more.",
+        "WePlanify vs Cruzmi: detailed comparison of two French-speaking group trip planning apps. Compare features, itineraries, polls, budgets and more.",
       keywords: [
         "weplanify vs cruzmi",
         "cruzmi alternative",
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "WePlanify vs Cruzmi — Meilleur Organisateur de Voyage de Groupe Français ? (2026)",
       description:
-        "WePlanify vs Cruzmi : comparatif honnête de deux applications francophones pour organiser un voyage de groupe. Fonctionnalités, itinéraires, sondages, budgets et plus.",
+        "WePlanify vs Cruzmi : comparatif complet de deux applications francophones pour organiser un voyage de groupe. Fonctionnalités, itinéraires, sondages, budgets et plus.",
       keywords: [
         "alternative cruzmi",
         "cruzmi ou weplanify",

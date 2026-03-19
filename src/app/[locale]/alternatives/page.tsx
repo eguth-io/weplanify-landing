@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = {
     en: {
       title:
-        "Best Group Trip Planner Apps 2026 — Honest Comparison | WePlanify",
+        "Best Group Trip Planner Apps 2026 — Complete Comparison | WePlanify",
       description:
         "Compare the best group trip planner apps of 2026. See how WePlanify stacks up against Wanderlog, SquadTrip, Troupe, TripIt and Splitwise for collaborative travel planning.",
       keywords: [
@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     fr: {
       title:
-        "Meilleures Applications Voyage de Groupe 2026 — Comparatif Honnête | WePlanify",
+        "Meilleures Applications Voyage de Groupe 2026 — Comparatif Complet | WePlanify",
       description:
         "Comparez les meilleures applications de voyage de groupe en 2026. Découvrez comment WePlanify se compare à Wanderlog, SquadTrip, Troupe, TripIt et Splitwise.",
       keywords: [
@@ -280,9 +280,9 @@ const competitorDetails = {
 const content = {
   en: {
     heroTitle: "Best Group Trip Planner Apps in 2026",
-    heroSubtitle: "An honest, side-by-side comparison",
+    heroSubtitle: "A complete, side-by-side comparison",
     heroIntro:
-      "Planning a trip with friends or family should be exciting, not stressful. We compared the most popular group travel apps so you can pick the right tool for your next adventure. No fluff — just the facts.",
+      "Planning a trip with friends or family should be exciting, not stressful. We compared the most popular group travel apps so you can pick the right tool for your next adventure. Features, pricing, and everything you need to decide.",
     comparisonTitle: "Feature Comparison",
     competitorsTitle: "A Closer Look at Each App",
     whyTitle: "Why Choose WePlanify?",
@@ -313,7 +313,7 @@ const content = {
   },
   fr: {
     heroTitle: "Meilleures Applications de Voyage de Groupe en 2026",
-    heroSubtitle: "Un comparatif honnête, côte à côte",
+    heroSubtitle: "Comparatif complet, côte à côte",
     heroIntro:
       "Planifier un voyage entre amis ou en famille devrait être excitant, pas stressant. Nous avons comparé les applications de voyage de groupe les plus populaires pour vous aider à choisir le bon outil pour votre prochaine aventure. Pas de blabla — juste les faits.",
     comparisonTitle: "Comparatif des Fonctionnalités",

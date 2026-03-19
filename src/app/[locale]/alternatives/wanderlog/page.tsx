@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "WePlanify vs Wanderlog \u2014 Which Group Trip Planner Is Better? (2026)",
       description:
-        "Honest comparison of WePlanify and Wanderlog for group trip planning. Features, pricing, and which app is best for your travel group.",
+        "Detailed comparison of WePlanify and Wanderlog for group trip planning. Features, pricing, and which app is best for your travel group.",
       keywords: [
         "weplanify vs wanderlog",
         "wanderlog alternative",
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "WePlanify vs Wanderlog \u2014 Quel Planificateur de Voyage de Groupe Choisir ? (2026)",
       description:
-        "Comparaison honn\u00eate entre WePlanify et Wanderlog pour organiser un voyage de groupe. Fonctionnalit\u00e9s, prix et quelle application choisir.",
+        "Comparaison d\u00e9taill\u00e9e entre WePlanify et Wanderlog pour organiser un voyage de groupe. Fonctionnalit\u00e9s, prix et quelle application choisir.",
       keywords: [
         "alternative wanderlog",
         "wanderlog ou weplanify",
@@ -185,7 +185,7 @@ const features: Feature[] = [
 const content = {
   en: {
     heroTitle: "WePlanify vs Wanderlog",
-    heroSubtitle: "Honest comparison \u2014 2026 edition",
+    heroSubtitle: "Complete comparison \u2014 2026",
     heroIntro:
       "Wanderlog and WePlanify both help you plan trips, but they solve different problems. Wanderlog is an itinerary builder oriented toward solo and couple travel. WePlanify is designed from the ground up for groups. Here is an objective, side-by-side look at both apps so you can decide which one fits your next trip.",
     verdictTitle: "TL;DR",
@@ -248,7 +248,7 @@ const content = {
   },
   fr: {
     heroTitle: "WePlanify vs Wanderlog",
-    heroSubtitle: "Comparaison honn\u00eate \u2014 \u00e9dition 2026",
+    heroSubtitle: "Comparaison compl\u00e8te \u2014 2026",
     heroIntro:
       "Wanderlog et WePlanify vous aident tous deux \u00e0 planifier des voyages, mais ils r\u00e9pondent \u00e0 des besoins diff\u00e9rents. Wanderlog est un cr\u00e9ateur d\u2019itin\u00e9raires orient\u00e9 vers les voyages en solo ou en couple. WePlanify est con\u00e7u de A \u00e0 Z pour les groupes. Voici un comparatif objectif des deux applications pour vous aider \u00e0 choisir celle qui convient \u00e0 votre prochain voyage.",
     verdictTitle: "En bref",

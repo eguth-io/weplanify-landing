@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "WePlanify vs Stippl \u2014 Which Travel Planner Is Best for Groups? (2026)",
       description:
-        "Honest comparison of WePlanify and Stippl for group trip planning. Features, pricing, and which travel planner is best for your group.",
+        "Detailed comparison of WePlanify and Stippl for group trip planning. Features, pricing, and which travel planner is best for your group.",
       keywords: [
         "weplanify vs stippl",
         "stippl alternative",
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "WePlanify vs Stippl \u2014 Quel Planificateur de Voyage Choisir pour un Groupe ? (2026)",
       description:
-        "Comparaison honn\u00eate entre WePlanify et Stippl pour organiser un voyage de groupe. Fonctionnalit\u00e9s, prix et quel planificateur choisir.",
+        "Comparaison d\u00e9taill\u00e9e entre WePlanify et Stippl pour organiser un voyage de groupe. Fonctionnalit\u00e9s, prix et quel planificateur choisir.",
       keywords: [
         "alternative stippl",
         "stippl ou weplanify",
@@ -192,7 +192,7 @@ const features: Feature[] = [
 const content = {
   en: {
     heroTitle: "WePlanify vs Stippl",
-    heroSubtitle: "Honest comparison \u2014 2026 edition",
+    heroSubtitle: "Complete comparison \u2014 2026",
     heroIntro:
       "Stippl is a mobile-first travel planner with journals, automatic reels, and community-shared itineraries. WePlanify is designed from the ground up for group decision-making with polls, shared budgets, and collaborative planning. Here is a side-by-side look at both apps.",
     verdictTitle: "TL;DR",
@@ -251,7 +251,7 @@ const content = {
   },
   fr: {
     heroTitle: "WePlanify vs Stippl",
-    heroSubtitle: "Comparaison honn\u00eate \u2014 \u00e9dition 2026",
+    heroSubtitle: "Comparaison compl\u00e8te \u2014 2026",
     heroIntro:
       "Stippl est un planificateur de voyage visuel, mobile-first, avec des carnets de voyage, des reels automatiques et des itin\u00e9raires partag\u00e9s par la communaut\u00e9. WePlanify est con\u00e7u de A \u00e0 Z pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Voici un comparatif des deux applications.",
     verdictTitle: "En bref",
