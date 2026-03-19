@@ -10,8 +10,8 @@ const cards = [
     color: "bg-[#EEF899]",
     textColor: "text-[#001E13]",
     rotate: -6,
-    x: 0,
-    y: 0,
+    top: "5%",
+    left: "15%",
     delay: 0.2,
   },
   {
@@ -21,8 +21,8 @@ const cards = [
     color: "bg-white",
     textColor: "text-[#001E13]",
     rotate: 4,
-    x: 40,
-    y: 100,
+    top: "35%",
+    left: "30%",
     delay: 0.5,
   },
   {
@@ -32,15 +32,15 @@ const cards = [
     color: "bg-[#61DBD5]",
     textColor: "text-[#001E13]",
     rotate: -3,
-    x: -20,
-    y: 210,
+    top: "65%",
+    left: "10%",
     delay: 0.8,
   },
 ];
 
 export default function FloatingCards() {
   return (
-    <div className="relative w-full h-full min-h-[320px]" aria-hidden="true">
+    <div className="relative w-full h-full min-h-[380px] flex items-center justify-center" aria-hidden="true">
       {cards.map((card, i) => (
         <motion.div
           key={i}
@@ -51,10 +51,10 @@ export default function FloatingCards() {
             delay: card.delay,
             ease: [0.25, 0.1, 0.25, 1],
           }}
-          className={`absolute ${card.color} rounded-2xl p-4 shadow-xl border border-black/5 w-[220px] lg:w-[240px]`}
+          className={`absolute ${card.color} rounded-2xl p-4 shadow-xl border border-black/5 w-[230px]`}
           style={{
-            left: `${card.x}px`,
-            top: `${card.y}px`,
+            top: card.top,
+            left: card.left,
           }}
         >
           <motion.div
