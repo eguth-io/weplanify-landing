@@ -8,6 +8,7 @@ import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import { setRequestLocale } from 'next-intl/server';
 import { generateMetadataFromSanity } from "@/lib/metadata";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // Default FAQ data
 const DEFAULT_FAQ_DATA: FAQType = {
@@ -83,14 +84,54 @@ export default async function FAQPage({ params }: Props) {
   // Use default FAQ data if none is available
   const faq = faqData || DEFAULT_FAQ_DATA;
 
+  const SITE_URL = "https://www.weplanify.com";
+
+  const faqPageLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: locale === "fr" ? "Accueil" : "Home", item: `${SITE_URL}/${locale}` },
+      { "@type": "ListItem", position: 2, name: "FAQ", item: `${SITE_URL}/${locale}/faq` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen">
         {/* FAQ Section */}
         <section className="relative pt-[128px] lg:pt-[180px] pb-16 lg:pb-20">
           <div className="container mx-auto px-4 lg:px-0">
             <div className="max-w-4xl mx-auto">
+              <div className="hidden lg:block mb-8">
+                <Breadcrumb
+                  items={[
+                    { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                    { label: "FAQ" },
+                  ]}
+                />
+              </div>
               {/* Title and Description */}
               <div className="text-center mb-12 lg:mb-16">
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">

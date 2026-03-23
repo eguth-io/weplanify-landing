@@ -22,15 +22,15 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const metadata = await generateMetadataFromSanity(locale, "/trip-with-friends");
+  const metadata = await generateMetadataFromSanity(locale, "/team-building");
 
   const isEn = locale === "en";
   const title = isEn
-    ? "Plan a Trip with Friends — Group Travel Made Easy | WePlanify"
-    : "Organiser un Voyage entre Amis — Planification de Groupe Facile | WePlanify";
+    ? "Plan a Team Building Trip — Corporate Retreat Planner | WePlanify"
+    : "Séminaire d'Entreprise — Planificateur Team Building | WePlanify";
   const description = isEn
-    ? "Plan a trip with friends effortlessly. WePlanify is the group trip planner app with collaborative itineraries, group polls, shared budgets, and packing lists. Free to use."
-    : "Organisez un voyage entre amis sans effort. WePlanify est l'application de planification de voyage de groupe avec itinéraires collaboratifs, sondages, budgets partagés et listes de bagages. Gratuit.";
+    ? "Organize your next team offsite with WePlanify. Vote on activities, manage budgets, and plan the perfect retreat — free."
+    : "Organisez votre prochain séminaire avec WePlanify. Votez sur les activités, gérez le budget et planifiez le séjour parfait.";
   return {
     ...metadata,
     title,
@@ -50,76 +50,76 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const content = {
   en: {
-    heroTag: "Group Travel, Simplified",
-    heroTitle: "Plan a Trip with Friends\nWithout the Chaos",
+    heroTag: "Team Building, Organized",
+    heroTitle: "Plan a Team Building Trip\nYour Team Will Remember",
     heroDescription:
-      "Stop juggling WhatsApp threads, spreadsheets, and guesswork. WePlanify brings your entire group together in one place to plan the perfect trip — from destination to departure.",
+      "Corporate retreats and team offsites shouldn't be a logistical nightmare. WePlanify gives organizers and teams a shared space to plan activities, vote on options, and track the budget — without the spreadsheet chaos.",
     heroCta: "Start planning for free",
-    painPointsTitle: "Sound Familiar?",
+    painPointsTitle: "Corporate Trip Struggles",
     painPointsSubtitle:
-      "Planning a group trip with friends is exciting — until it isn't. Here are the headaches WePlanify eliminates.",
+      "Organizing a company offsite is rewarding — but the logistics can be overwhelming.",
     painPoints: [
       {
-        icon: "💬",
-        title: "Scattered Conversations",
+        icon: "📊",
+        title: "Spreadsheet Overload",
         description:
-          "Important decisions buried in endless WhatsApp threads. Someone always misses the message. Nobody knows what was decided.",
+          "Managing RSVPs, preferences, dietary restrictions, room assignments, and activities across multiple spreadsheets is a full-time job nobody signed up for.",
       },
       {
-        icon: "🗺️",
-        title: "Can't Agree on a Destination",
+        icon: "🤷",
+        title: "Low Engagement",
         description:
-          "Half the group wants beach, the other half wants mountains. Without a fair way to decide, the trip stalls before it even starts.",
+          "Team members don't feel invested in activities they didn't choose. Without input, retreats feel like mandatory fun rather than genuine bonding.",
       },
       {
-        icon: "💸",
-        title: "Budget Confusion",
+        icon: "💼",
+        title: "Budget Accountability",
         description:
-          "Who paid for the Airbnb? Who owes what? Tracking shared expenses across a group trip quickly becomes a nightmare.",
+          "Company money means company accountability. Tracking every expense across multiple vendors and getting approvals is tedious but necessary.",
       },
       {
-        icon: "📋",
-        title: "Nobody Knows What to Pack",
+        icon: "📧",
+        title: "Email Thread Hell",
         description:
-          "Three people bring hairdryers, nobody brings a first-aid kit. Without coordination, packing becomes a guessing game.",
+          "Important decisions buried in 47-reply email chains. Attachments lost, conflicting information, and half the team hasn't even read it.",
       },
     ],
 
-    solutionTitle: "How WePlanify Makes Group Trips Easy",
+    solutionTitle: "How WePlanify Makes Team Building Easy",
     solutionSubtitle:
-      "Everything your friend group needs to plan, decide, and organize — all in one beautiful app.",
+      "Give your team a voice in planning and give yourself the tools to organize it all.",
     solutions: [
       {
-        title: "Collaborative Itinerary",
+        title: "Shared Trip Workspace",
         description:
-          "Build your trip itinerary together in real time. Everyone can suggest activities, vote on ideas, and see the final plan — no more back-and-forth.",
+          "One central hub for your entire offsite. Everyone sees the schedule, knows what's planned, and can contribute ideas — from day one.",
         link: "/features/planning",
         linkText: "Learn about planning",
         color: "bg-[#EEF899]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Group Polls & Voting",
+        title: "Team Polls & Voting",
         description:
-          "Can't decide between Barcelona and Bali? Create a poll, let everyone vote, and settle it democratically. No more endless debates.",
+          "Let the team vote on activities, restaurants, and free-time options. Engagement goes up when people have a say in what happens.",
         link: "/features/polls",
         linkText: "Discover polls",
         color: "bg-[#61DBD5]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Shared Budget Tracker",
+        title: "Transparent Budget Tracking",
         description:
-          "Track every expense, split costs fairly, and see who owes what — all updated in real time. No more awkward money conversations.",
+          "Track every line item in real time. Share the budget breakdown with stakeholders and keep spending on track — no surprises when the invoice comes.",
         link: "/features/budget",
         linkText: "Explore budget tools",
         color: "bg-[#001E13]",
         textColor: "text-[#FFFBF5]",
       },
       {
-        title: "Smart Packing Lists",
+        title: "Packing & Logistics Checklists",
         description:
-          "AI-powered packing lists tailored to your destination, weather, and activities. Share with the group so nothing gets forgotten or duplicated.",
+          "Share what to bring, dress codes, travel documents needed, and logistics details. Everyone arrives prepared.",
         link: "/features/packing",
         linkText: "See packing lists",
         color: "bg-[#F6391A]",
@@ -127,122 +127,122 @@ const content = {
       },
     ],
 
-    stepsTitle: "3 Steps to Plan Your Trip with Friends",
+    stepsTitle: "3 Steps to Plan Your Team Offsite",
     stepsSubtitle:
-      "From idea to itinerary in minutes — not weeks.",
+      "From budget approval to post-retreat high-fives — streamlined.",
     steps: [
       {
         step: "1",
-        title: "Create Your Trip",
+        title: "Create Your Event",
         description:
-          "Name your trip, pick your dates, and invite your friends with a simple link. Everyone joins instantly.",
+          "Set up your team retreat, add dates and location, and invite the team with a single link. Everyone joins instantly.",
       },
       {
         step: "2",
-        title: "Plan Together",
+        title: "Plan Collaboratively",
         description:
-          "Suggest destinations, vote on activities, build your itinerary, and track your shared budget — all in one place.",
+          "Let the team vote on activities, build the schedule together, assign logistics, and track the company budget in real time.",
       },
       {
         step: "3",
-        title: "Pack & Go",
+        title: "Execute Flawlessly",
         description:
-          "Get personalized packing lists, finalize your plans, and head out on the adventure of a lifetime with your crew.",
+          "Share final logistics, packing checklists, and the complete itinerary. Everyone shows up prepared and excited.",
       },
     ],
 
     faqTitle: "Frequently Asked Questions",
     faqItems: [
       {
-        q: "Is WePlanify really free?",
-        a: "Yes, 100%. WePlanify is free forever — no hidden fees, no trial limits, no credit card required. All core features (itineraries, polls, budgets, packing lists) are included at no cost.",
+        q: "Is WePlanify suitable for corporate events?",
+        a: "Yes. WePlanify works for teams of any size — from a 5-person startup offsite to a 50-person company retreat. The collaborative features (polls, budgets, shared itineraries) are designed for group coordination.",
       },
       {
-        q: "How many friends can I invite?",
-        a: "There is no limit. Whether your group is 3 or 30, everyone can join with a simple invite link and collaborate in real time on the same trip.",
+        q: "Can I control the budget visibility?",
+        a: "The budget tracker lets you share or keep certain expenses visible to the team. As an organizer, you maintain full control over what's shared.",
       },
       {
-        q: "Do I need to download an app?",
-        a: "No download needed. WePlanify works directly in your browser on any device — phone, tablet, or computer. Just open the link and start planning.",
+        q: "Is there a cost for companies?",
+        a: "WePlanify is completely free — no enterprise pricing, no per-seat fees, no hidden costs. All features are available at no charge.",
       },
     ],
 
-    ctaTitle: "Your Next Adventure Starts Here",
+    ctaTitle: "Your Next Team Retreat Starts Here",
     ctaDescription:
-      "Join thousands of friend groups who plan their trips with WePlanify. It's free, it's fun, and it actually works.",
-    ctaButton: "Start planning your trip",
+      "Join companies that use WePlanify to organize engaging team building trips. It's free, collaborative, and your team will actually enjoy the planning process.",
+    ctaButton: "Start planning your retreat",
   },
   fr: {
-    heroTag: "Voyage de Groupe, Simplifié",
-    heroTitle: "Organisez un Voyage entre Amis\nSans le Chaos",
+    heroTag: "Team Building, Bien Organisé",
+    heroTitle: "Organisez un Séminaire\nDont Votre Équipe Se Souviendra",
     heroDescription:
-      "Arrêtez de jongler entre les fils WhatsApp, les tableurs et les suppositions. WePlanify réunit tout votre groupe au même endroit pour planifier le voyage parfait — de la destination au départ.",
+      "Les séminaires d'entreprise et voyages team building ne devraient pas être un cauchemar logistique. WePlanify offre aux organisateurs et aux équipes un espace partagé pour planifier les activités, voter et suivre le budget — sans le chaos des tableurs.",
     heroCta: "Commencer gratuitement",
-    painPointsTitle: "Ça vous dit quelque chose ?",
+    painPointsTitle: "Les Galères du Séminaire d'Entreprise",
     painPointsSubtitle:
-      "Organiser un voyage entre amis, c'est excitant — jusqu'à ce que ça ne le soit plus. Voici les casse-têtes que WePlanify élimine.",
+      "Organiser un séjour d'entreprise est gratifiant — mais la logistique peut être accablante.",
     painPoints: [
       {
-        icon: "💬",
-        title: "Conversations Éparpillées",
+        icon: "📊",
+        title: "Overdose de Tableurs",
         description:
-          "Les décisions importantes noyées dans des fils WhatsApp interminables. Quelqu'un rate toujours le message. Personne ne sait ce qui a été décidé.",
+          "Gérer les inscriptions, préférences, restrictions alimentaires, attributions de chambres et activités dans plusieurs tableurs est un travail à plein temps pour lequel personne ne s'est porté volontaire.",
       },
       {
-        icon: "🗺️",
-        title: "Impossible de Choisir une Destination",
+        icon: "🤷",
+        title: "Engagement Faible",
         description:
-          "La moitié du groupe veut la plage, l'autre la montagne. Sans un moyen juste de décider, le voyage stagne avant même de commencer.",
+          "Les membres de l'équipe ne se sentent pas investis dans des activités qu'ils n'ont pas choisies. Sans participation, les séminaires ressemblent à du fun obligatoire plutôt qu'à du vrai team building.",
       },
       {
-        icon: "💸",
-        title: "Confusion Budgétaire",
+        icon: "💼",
+        title: "Responsabilité Budgétaire",
         description:
-          "Qui a payé l'Airbnb ? Qui doit quoi ? Suivre les dépenses partagées d'un voyage de groupe devient vite un cauchemar.",
+          "L'argent de l'entreprise implique des comptes à rendre. Suivre chaque dépense auprès de multiples prestataires et obtenir les validations est fastidieux mais nécessaire.",
       },
       {
-        icon: "📋",
-        title: "Personne ne Sait Quoi Emporter",
+        icon: "📧",
+        title: "Enfer des Mails",
         description:
-          "Trois personnes apportent un sèche-cheveux, personne n'apporte de trousse de secours. Sans coordination, faire ses valises devient un jeu de devinettes.",
+          "Les décisions importantes noyées dans des fils de 47 réponses. Pièces jointes perdues, informations contradictoires, et la moitié de l'équipe n'a même pas lu.",
       },
     ],
 
-    solutionTitle: "Comment WePlanify Facilite les Voyages de Groupe",
+    solutionTitle: "Comment WePlanify Facilite le Team Building",
     solutionSubtitle:
-      "Tout ce dont votre groupe d'amis a besoin pour planifier, décider et organiser — dans une seule application.",
+      "Donnez une voix à votre équipe dans la planification et donnez-vous les outils pour tout organiser.",
     solutions: [
       {
-        title: "Itinéraire Collaboratif",
+        title: "Espace de Travail Partagé",
         description:
-          "Construisez votre itinéraire de voyage ensemble en temps réel. Chacun peut proposer des activités, voter sur les idées et voir le plan final — fini les allers-retours.",
+          "Un hub central pour tout votre séjour. Tout le monde voit le programme, sait ce qui est prévu et peut contribuer des idées — dès le premier jour.",
         link: "/features/planning",
         linkText: "Découvrir la planification",
         color: "bg-[#EEF899]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Sondages & Votes de Groupe",
+        title: "Sondages & Votes d'Équipe",
         description:
-          "Impossible de choisir entre Barcelone et Bali ? Créez un sondage, laissez tout le monde voter et réglez ça démocratiquement. Fini les débats sans fin.",
+          "Laissez l'équipe voter sur les activités, les restaurants et les options de temps libre. L'engagement monte quand les gens ont leur mot à dire.",
         link: "/features/polls",
         linkText: "Découvrir les sondages",
         color: "bg-[#61DBD5]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Budget Partagé",
+        title: "Suivi de Budget Transparent",
         description:
-          "Suivez chaque dépense, partagez les coûts équitablement et voyez qui doit quoi — le tout mis à jour en temps réel. Fini les conversations gênantes sur l'argent.",
+          "Suivez chaque poste de dépense en temps réel. Partagez le détail du budget avec les décideurs et gardez les dépenses sous contrôle.",
         link: "/features/budget",
         linkText: "Explorer le budget",
         color: "bg-[#001E13]",
         textColor: "text-[#FFFBF5]",
       },
       {
-        title: "Listes de Bagages Intelligentes",
+        title: "Checklists Logistique & Bagages",
         description:
-          "Des listes de bagages générées par IA adaptées à votre destination, la météo et vos activités. Partagez avec le groupe pour ne rien oublier ni dupliquer.",
+          "Partagez quoi apporter, les codes vestimentaires, les documents de voyage nécessaires et les détails logistiques. Tout le monde arrive préparé.",
         link: "/features/packing",
         linkText: "Voir les listes",
         color: "bg-[#F6391A]",
@@ -250,54 +250,54 @@ const content = {
       },
     ],
 
-    stepsTitle: "3 Étapes pour Organiser Votre Voyage entre Amis",
+    stepsTitle: "3 Étapes pour Organiser Votre Séminaire",
     stepsSubtitle:
-      "De l'idée à l'itinéraire en quelques minutes — pas en semaines.",
+      "De la validation du budget aux high-fives post-séminaire — simplifié.",
     steps: [
       {
         step: "1",
-        title: "Créez Votre Voyage",
+        title: "Créez Votre Événement",
         description:
-          "Nommez votre voyage, choisissez vos dates et invitez vos amis avec un simple lien. Tout le monde rejoint instantanément.",
+          "Configurez votre séminaire, ajoutez les dates et le lieu, et invitez l'équipe avec un seul lien. Tout le monde rejoint instantanément.",
       },
       {
         step: "2",
         title: "Planifiez Ensemble",
         description:
-          "Proposez des destinations, votez sur les activités, construisez votre itinéraire et suivez votre budget partagé — le tout au même endroit.",
+          "Laissez l'équipe voter sur les activités, construisez le programme ensemble, assignez la logistique et suivez le budget en temps réel.",
       },
       {
         step: "3",
-        title: "Préparez & Partez",
+        title: "Exécutez Sans Accroc",
         description:
-          "Obtenez des listes de bagages personnalisées, finalisez vos plans et partez pour l'aventure de votre vie avec votre bande.",
+          "Partagez la logistique finale, les checklists et l'itinéraire complet. Tout le monde arrive préparé et motivé.",
       },
     ],
 
     faqTitle: "Questions Fréquemment Posées",
     faqItems: [
       {
-        q: "Est-ce que WePlanify est vraiment gratuit ?",
-        a: "Oui, à 100%. WePlanify est gratuit pour toujours — pas de frais cachés, pas de limites d'essai, pas de carte bancaire requise. Toutes les fonctionnalités principales (itinéraires, sondages, budgets, listes de bagages) sont incluses sans aucun coût.",
+        q: "WePlanify est-il adapté aux événements d'entreprise ?",
+        a: "Oui. WePlanify fonctionne pour les équipes de toutes tailles — d'un séjour startup de 5 personnes à un séminaire de 50 collaborateurs. Les fonctionnalités collaboratives (sondages, budgets, itinéraires partagés) sont conçues pour la coordination de groupe.",
       },
       {
-        q: "Combien d'amis puis-je inviter ?",
-        a: "Il n'y a aucune limite. Que votre groupe soit de 3 ou 30 personnes, tout le monde peut rejoindre avec un simple lien d'invitation et collaborer en temps réel sur le même voyage.",
+        q: "Puis-je contrôler la visibilité du budget ?",
+        a: "Le suivi de budget vous permet de partager ou garder certaines dépenses visibles pour l'équipe. En tant qu'organisateur, vous gardez le contrôle total sur ce qui est partagé.",
       },
       {
-        q: "Dois-je télécharger une application ?",
-        a: "Aucun téléchargement nécessaire. WePlanify fonctionne directement dans votre navigateur sur n'importe quel appareil — téléphone, tablette ou ordinateur. Ouvrez le lien et commencez à planifier.",
+        q: "Y a-t-il un coût pour les entreprises ?",
+        a: "WePlanify est entièrement gratuit — pas de tarif entreprise, pas de frais par utilisateur, pas de coûts cachés. Toutes les fonctionnalités sont disponibles gratuitement.",
       },
     ],
 
-    ctaTitle: "Votre Prochaine Aventure Commence Ici",
+    ctaTitle: "Votre Prochain Séminaire Commence Ici",
     ctaDescription:
-      "Rejoignez des milliers de groupes d'amis qui planifient leurs voyages avec WePlanify. C'est gratuit, c'est fun, et ça marche vraiment.",
+      "Rejoignez les entreprises qui utilisent WePlanify pour organiser des séjours team building engageants. C'est gratuit, collaboratif, et votre équipe appréciera le processus de planification.",
     ctaButton: "Commencer à planifier",
   },
 };
 
-export default async function TripWithFriendsPage({ params }: Props) {
+export default async function TeamBuildingPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
@@ -338,8 +338,8 @@ export default async function TripWithFriendsPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Voyage entre Amis" : "Trip with Friends",
-        item: `https://www.weplanify.com/${locale}/trip-with-friends`,
+        name: locale === "fr" ? "Team Building" : "Team Building",
+        item: `https://www.weplanify.com/${locale}/team-building`,
       },
     ],
   };
@@ -376,7 +376,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
               <Breadcrumb
                 items={[
                   { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-                  { label: locale === "fr" ? "Voyage entre amis" : "Trip with Friends" },
+                  { label: "Team Building" },
                 ]}
               />
             </div>
@@ -579,15 +579,15 @@ export default async function TripWithFriendsPage({ params }: Props) {
                   </span>
                 </div>
               </Link>
-              <Link href={`/${locale}/bachelorette-trip`} className="group">
+              <Link href={`/${locale}/trip-with-friends`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Organiser un EVJF" : "Plan a Bachelorette Trip"}
+                    {locale === "fr" ? "Voyage entre Amis" : "Plan a Trip with Friends"}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Tout ce qu'il faut pour planifier un enterrement de vie de jeune fille inoubliable sans stress."
-                      : "Everything you need to plan an unforgettable bachelorette party trip, stress-free."}
+                      ? "Tout ce qu'il faut pour organiser un voyage entre amis — itinéraires, sondages, budgets et plus encore."
+                      : "Everything you need to coordinate a trip with your friend group — itineraries, polls, budgets, and more."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
                     {locale === "fr" ? "En savoir plus →" : "Read more →"}

@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -49,23 +50,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "WePlanify vs Cruzmi — Best French Group Trip Planner? (2026)",
       description:
         "WePlanify vs Cruzmi: detailed comparison of two French-speaking group trip planning apps. Compare features, itineraries, polls, budgets and more.",
-      keywords: [
-        "weplanify vs cruzmi",
-        "cruzmi alternative",
-        "french group trip planner",
-      ],
     },
     fr: {
       title:
         "WePlanify vs Cruzmi — Meilleur Organisateur de Voyage de Groupe Français ? (2026)",
       description:
         "WePlanify vs Cruzmi : comparatif complet de deux applications francophones pour organiser un voyage de groupe. Fonctionnalités, itinéraires, sondages, budgets et plus.",
-      keywords: [
-        "alternative cruzmi",
-        "cruzmi ou weplanify",
-        "application voyage groupe français",
-        "comparatif cruzmi weplanify",
-      ],
     },
   };
 
@@ -74,7 +64,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: loc.title,
     description: loc.description,
-    keywords: loc.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
@@ -513,6 +502,17 @@ export default async function CruzmiComparisonPage({ params }: Props) {
         {/* 1. Hero                                                          */}
         {/* ---------------------------------------------------------------- */}
         <section className="pt-[120px] lg:pt-[150px] pb-12 lg:pb-20 px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="hidden lg:block mb-8">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: "Alternatives", href: `/${locale}/alternatives` },
+                  { label: "vs Cruzmi" },
+                ]}
+              />
+            </div>
+          </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
               {t.heroSubtitle}

@@ -22,15 +22,15 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const metadata = await generateMetadataFromSanity(locale, "/trip-with-friends");
+  const metadata = await generateMetadataFromSanity(locale, "/family-trip");
 
   const isEn = locale === "en";
   const title = isEn
-    ? "Plan a Trip with Friends — Group Travel Made Easy | WePlanify"
-    : "Organiser un Voyage entre Amis — Planification de Groupe Facile | WePlanify";
+    ? "Plan a Family Trip — Vacation Planner for Families | WePlanify"
+    : "Voyage en Famille — Planificateur de Vacances Familiales | WePlanify";
   const description = isEn
-    ? "Plan a trip with friends effortlessly. WePlanify is the group trip planner app with collaborative itineraries, group polls, shared budgets, and packing lists. Free to use."
-    : "Organisez un voyage entre amis sans effort. WePlanify est l'application de planification de voyage de groupe avec itinéraires collaboratifs, sondages, budgets partagés et listes de bagages. Gratuit.";
+    ? "Plan your family trip with ease. Coordinate schedules, manage budgets, vote on destinations, and keep everyone on the same page."
+    : "Organisez votre voyage en famille sans stress. Coordonnez les emplois du temps, gérez le budget et votez pour les destinations.";
   return {
     ...metadata,
     title,
@@ -50,67 +50,67 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const content = {
   en: {
-    heroTag: "Group Travel, Simplified",
-    heroTitle: "Plan a Trip with Friends\nWithout the Chaos",
+    heroTag: "Family Travel, Simplified",
+    heroTitle: "Plan a Family Trip\nEveryone Will Love",
     heroDescription:
-      "Stop juggling WhatsApp threads, spreadsheets, and guesswork. WePlanify brings your entire group together in one place to plan the perfect trip — from destination to departure.",
+      "From grandparents to toddlers, family trips mean different needs, different budgets, and different ideas of fun. WePlanify brings everyone together in one place to plan a vacation the whole family will enjoy.",
     heroCta: "Start planning for free",
-    painPointsTitle: "Sound Familiar?",
+    painPointsTitle: "Family Trip Struggles",
     painPointsSubtitle:
-      "Planning a group trip with friends is exciting — until it isn't. Here are the headaches WePlanify eliminates.",
+      "Organizing a family vacation sounds fun — until you try to make everyone happy at once.",
     painPoints: [
       {
-        icon: "💬",
-        title: "Scattered Conversations",
+        icon: "\u{1F468}\u200D\u{1F469}\u200D\u{1F467}\u200D\u{1F466}",
+        title: "Too Many Opinions",
         description:
-          "Important decisions buried in endless WhatsApp threads. Someone always misses the message. Nobody knows what was decided.",
+          "Dad wants hiking, Mom wants the beach, the kids want a water park. Finding common ground across generations feels impossible.",
       },
       {
-        icon: "🗺️",
-        title: "Can't Agree on a Destination",
+        icon: "\u{1F4B3}",
+        title: "Budget Juggling",
         description:
-          "Half the group wants beach, the other half wants mountains. Without a fair way to decide, the trip stalls before it even starts.",
+          "Between flights, hotels, activities, and meals for the whole family, costs add up fast. Nobody wants to be the one tracking every expense.",
       },
       {
-        icon: "💸",
-        title: "Budget Confusion",
+        icon: "\u{1F4C5}",
+        title: "Schedule Chaos",
         description:
-          "Who paid for the Airbnb? Who owes what? Tracking shared expenses across a group trip quickly becomes a nightmare.",
+          "Coordinating school holidays, work PTO, and grandparent availability across multiple households is a puzzle in itself.",
       },
       {
-        icon: "📋",
-        title: "Nobody Knows What to Pack",
+        icon: "\u{1F9F3}",
+        title: "Packing for Everyone",
         description:
-          "Three people bring hairdryers, nobody brings a first-aid kit. Without coordination, packing becomes a guessing game.",
+          "Diapers, sunscreen, chargers, medications — packing for a family means managing everyone's needs without forgetting essentials.",
       },
     ],
 
-    solutionTitle: "How WePlanify Makes Group Trips Easy",
+    solutionTitle: "How WePlanify Makes Family Trips Easy",
     solutionSubtitle:
-      "Everything your friend group needs to plan, decide, and organize — all in one beautiful app.",
+      "Everything your family needs to plan, agree on, and organize your next vacation — all in one app.",
     solutions: [
       {
         title: "Collaborative Itinerary",
         description:
-          "Build your trip itinerary together in real time. Everyone can suggest activities, vote on ideas, and see the final plan — no more back-and-forth.",
+          "Build a day-by-day plan that balances adult activities with kid-friendly fun. Everyone can suggest ideas, and the whole family sees the final plan.",
         link: "/features/planning",
         linkText: "Learn about planning",
         color: "bg-[#EEF899]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Group Polls & Voting",
+        title: "Family Polls",
         description:
-          "Can't decide between Barcelona and Bali? Create a poll, let everyone vote, and settle it democratically. No more endless debates.",
+          "Beach or mountains? Camping or hotel? Let every family member vote — even the kids. Fair decisions, no arguments.",
         link: "/features/polls",
         linkText: "Discover polls",
         color: "bg-[#61DBD5]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Shared Budget Tracker",
+        title: "Shared Family Budget",
         description:
-          "Track every expense, split costs fairly, and see who owes what — all updated in real time. No more awkward money conversations.",
+          "Track expenses across the whole trip. Split costs between households, keep tabs on who paid what, and avoid money awkwardness at Thanksgiving.",
         link: "/features/budget",
         linkText: "Explore budget tools",
         color: "bg-[#001E13]",
@@ -119,7 +119,7 @@ const content = {
       {
         title: "Smart Packing Lists",
         description:
-          "AI-powered packing lists tailored to your destination, weather, and activities. Share with the group so nothing gets forgotten or duplicated.",
+          "AI-generated packing lists adapted to your destination, weather, and family members' ages. Share with the family so nothing gets forgotten.",
         link: "/features/packing",
         linkText: "See packing lists",
         color: "bg-[#F6391A]",
@@ -127,39 +127,39 @@ const content = {
       },
     ],
 
-    stepsTitle: "3 Steps to Plan Your Trip with Friends",
+    stepsTitle: "3 Steps to Plan Your Family Vacation",
     stepsSubtitle:
-      "From idea to itinerary in minutes — not weeks.",
+      "From first idea to packed bags in minutes — not months.",
     steps: [
       {
         step: "1",
         title: "Create Your Trip",
         description:
-          "Name your trip, pick your dates, and invite your friends with a simple link. Everyone joins instantly.",
+          "Name your trip, set the dates, and invite family members with a simple link. Everyone joins instantly — even Grandma.",
       },
       {
         step: "2",
         title: "Plan Together",
         description:
-          "Suggest destinations, vote on activities, build your itinerary, and track your shared budget — all in one place.",
+          "Vote on destinations, build your itinerary, track your family budget, and assign packing lists — all in one place.",
       },
       {
         step: "3",
         title: "Pack & Go",
         description:
-          "Get personalized packing lists, finalize your plans, and head out on the adventure of a lifetime with your crew.",
+          "Get personalized packing lists for each family member, finalize your plans, and head out for an unforgettable family adventure.",
       },
     ],
 
     faqTitle: "Frequently Asked Questions",
     faqItems: [
       {
-        q: "Is WePlanify really free?",
-        a: "Yes, 100%. WePlanify is free forever — no hidden fees, no trial limits, no credit card required. All core features (itineraries, polls, budgets, packing lists) are included at no cost.",
+        q: "Is WePlanify good for families with kids?",
+        a: "Absolutely. WePlanify is designed for groups of all kinds — including families with children. The voting feature makes it fun for kids to participate, and the shared packing lists ensure nothing gets forgotten.",
       },
       {
-        q: "How many friends can I invite?",
-        a: "There is no limit. Whether your group is 3 or 30, everyone can join with a simple invite link and collaborate in real time on the same trip.",
+        q: "Can different households share costs?",
+        a: "Yes. The shared budget tracker lets you split costs between multiple households. Track who paid for what and settle up easily after the trip.",
       },
       {
         q: "Do I need to download an app?",
@@ -167,73 +167,73 @@ const content = {
       },
     ],
 
-    ctaTitle: "Your Next Adventure Starts Here",
+    ctaTitle: "Your Next Family Adventure Starts Here",
     ctaDescription:
-      "Join thousands of friend groups who plan their trips with WePlanify. It's free, it's fun, and it actually works.",
+      "Join thousands of families who plan their vacations with WePlanify. It's free, it's easy, and it keeps everyone happy.",
     ctaButton: "Start planning your trip",
   },
   fr: {
-    heroTag: "Voyage de Groupe, Simplifié",
-    heroTitle: "Organisez un Voyage entre Amis\nSans le Chaos",
+    heroTag: "Voyage en Famille, Simplifi\u00e9",
+    heroTitle: "Organisez un Voyage en Famille\nQue Tout le Monde Adorera",
     heroDescription:
-      "Arrêtez de jongler entre les fils WhatsApp, les tableurs et les suppositions. WePlanify réunit tout votre groupe au même endroit pour planifier le voyage parfait — de la destination au départ.",
+      "Des grands-parents aux tout-petits, un voyage en famille signifie des besoins diff\u00e9rents, des budgets diff\u00e9rents et des id\u00e9es diff\u00e9rentes de ce qui est fun. WePlanify r\u00e9unit tout le monde pour planifier des vacances que toute la famille appr\u00e9ciera.",
     heroCta: "Commencer gratuitement",
-    painPointsTitle: "Ça vous dit quelque chose ?",
+    painPointsTitle: "Les Gal\u00e8res du Voyage en Famille",
     painPointsSubtitle:
-      "Organiser un voyage entre amis, c'est excitant — jusqu'à ce que ça ne le soit plus. Voici les casse-têtes que WePlanify élimine.",
+      "Organiser des vacances en famille, \u00e7a semble amusant — jusqu'\u00e0 ce qu'il faille satisfaire tout le monde en m\u00eame temps.",
     painPoints: [
       {
-        icon: "💬",
-        title: "Conversations Éparpillées",
+        icon: "\u{1F468}\u200D\u{1F469}\u200D\u{1F467}\u200D\u{1F466}",
+        title: "Trop d'Avis Diff\u00e9rents",
         description:
-          "Les décisions importantes noyées dans des fils WhatsApp interminables. Quelqu'un rate toujours le message. Personne ne sait ce qui a été décidé.",
+          "Papa veut de la rando, Maman veut la plage, les enfants veulent un parc aquatique. Trouver un terrain d'entente entre g\u00e9n\u00e9rations semble impossible.",
       },
       {
-        icon: "🗺️",
-        title: "Impossible de Choisir une Destination",
+        icon: "\u{1F4B3}",
+        title: "Budget \u00e0 G\u00e9rer",
         description:
-          "La moitié du groupe veut la plage, l'autre la montagne. Sans un moyen juste de décider, le voyage stagne avant même de commencer.",
+          "Entre les vols, l'h\u00e9bergement, les activit\u00e9s et les repas pour toute la famille, les co\u00fbts explosent vite. Personne ne veut \u00eatre celui qui suit chaque d\u00e9pense.",
       },
       {
-        icon: "💸",
-        title: "Confusion Budgétaire",
+        icon: "\u{1F4C5}",
+        title: "Calendriers Incompatibles",
         description:
-          "Qui a payé l'Airbnb ? Qui doit quoi ? Suivre les dépenses partagées d'un voyage de groupe devient vite un cauchemar.",
+          "Coordonner les vacances scolaires, les cong\u00e9s et la disponibilit\u00e9 des grands-parents entre plusieurs foyers est un casse-t\u00eate en soi.",
       },
       {
-        icon: "📋",
-        title: "Personne ne Sait Quoi Emporter",
+        icon: "\u{1F9F3}",
+        title: "Bagages pour Tout le Monde",
         description:
-          "Trois personnes apportent un sèche-cheveux, personne n'apporte de trousse de secours. Sans coordination, faire ses valises devient un jeu de devinettes.",
+          "Couches, cr\u00e8me solaire, chargeurs, m\u00e9dicaments — faire les valises pour une famille signifie g\u00e9rer les besoins de chacun sans rien oublier.",
       },
     ],
 
-    solutionTitle: "Comment WePlanify Facilite les Voyages de Groupe",
+    solutionTitle: "Comment WePlanify Facilite les Voyages en Famille",
     solutionSubtitle:
-      "Tout ce dont votre groupe d'amis a besoin pour planifier, décider et organiser — dans une seule application.",
+      "Tout ce dont votre famille a besoin pour planifier, d\u00e9cider et organiser vos prochaines vacances — dans une seule application.",
     solutions: [
       {
-        title: "Itinéraire Collaboratif",
+        title: "Itin\u00e9raire Collaboratif",
         description:
-          "Construisez votre itinéraire de voyage ensemble en temps réel. Chacun peut proposer des activités, voter sur les idées et voir le plan final — fini les allers-retours.",
+          "Construisez un programme jour par jour qui \u00e9quilibre activit\u00e9s adultes et sorties adapt\u00e9es aux enfants. Chacun peut proposer des id\u00e9es et toute la famille voit le plan final.",
         link: "/features/planning",
-        linkText: "Découvrir la planification",
+        linkText: "D\u00e9couvrir la planification",
         color: "bg-[#EEF899]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Sondages & Votes de Groupe",
+        title: "Sondages Familiaux",
         description:
-          "Impossible de choisir entre Barcelone et Bali ? Créez un sondage, laissez tout le monde voter et réglez ça démocratiquement. Fini les débats sans fin.",
+          "Plage ou montagne ? Camping ou h\u00f4tel ? Laissez chaque membre de la famille voter — m\u00eame les enfants. Des d\u00e9cisions justes, sans disputes.",
         link: "/features/polls",
-        linkText: "Découvrir les sondages",
+        linkText: "D\u00e9couvrir les sondages",
         color: "bg-[#61DBD5]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Budget Partagé",
+        title: "Budget Familial Partag\u00e9",
         description:
-          "Suivez chaque dépense, partagez les coûts équitablement et voyez qui doit quoi — le tout mis à jour en temps réel. Fini les conversations gênantes sur l'argent.",
+          "Suivez les d\u00e9penses sur tout le voyage. Partagez les co\u00fbts entre foyers, gardez une trace de qui a pay\u00e9 quoi et \u00e9vitez les situations g\u00eanantes.",
         link: "/features/budget",
         linkText: "Explorer le budget",
         color: "bg-[#001E13]",
@@ -242,7 +242,7 @@ const content = {
       {
         title: "Listes de Bagages Intelligentes",
         description:
-          "Des listes de bagages générées par IA adaptées à votre destination, la météo et vos activités. Partagez avec le groupe pour ne rien oublier ni dupliquer.",
+          "Des listes de bagages g\u00e9n\u00e9r\u00e9es par IA adapt\u00e9es \u00e0 votre destination, la m\u00e9t\u00e9o et l'\u00e2ge de chaque membre. Partagez avec la famille pour ne rien oublier.",
         link: "/features/packing",
         linkText: "Voir les listes",
         color: "bg-[#F6391A]",
@@ -250,54 +250,54 @@ const content = {
       },
     ],
 
-    stepsTitle: "3 Étapes pour Organiser Votre Voyage entre Amis",
+    stepsTitle: "3 \u00c9tapes pour Organiser Vos Vacances en Famille",
     stepsSubtitle:
-      "De l'idée à l'itinéraire en quelques minutes — pas en semaines.",
+      "De la premi\u00e8re id\u00e9e aux valises boucl\u00e9es en quelques minutes — pas en mois.",
     steps: [
       {
         step: "1",
-        title: "Créez Votre Voyage",
+        title: "Cr\u00e9ez Votre Voyage",
         description:
-          "Nommez votre voyage, choisissez vos dates et invitez vos amis avec un simple lien. Tout le monde rejoint instantanément.",
+          "Nommez votre voyage, fixez les dates et invitez les membres de la famille avec un simple lien. Tout le monde rejoint instantan\u00e9ment — m\u00eame Mamie.",
       },
       {
         step: "2",
         title: "Planifiez Ensemble",
         description:
-          "Proposez des destinations, votez sur les activités, construisez votre itinéraire et suivez votre budget partagé — le tout au même endroit.",
+          "Votez pour les destinations, construisez votre itin\u00e9raire, suivez le budget familial et assignez les listes de bagages — le tout au m\u00eame endroit.",
       },
       {
         step: "3",
-        title: "Préparez & Partez",
+        title: "Pr\u00e9parez & Partez",
         description:
-          "Obtenez des listes de bagages personnalisées, finalisez vos plans et partez pour l'aventure de votre vie avec votre bande.",
+          "Obtenez des listes de bagages personnalis\u00e9es pour chaque membre de la famille, finalisez vos plans et partez pour une aventure familiale inoubliable.",
       },
     ],
 
-    faqTitle: "Questions Fréquemment Posées",
+    faqTitle: "Questions Fr\u00e9quemment Pos\u00e9es",
     faqItems: [
       {
-        q: "Est-ce que WePlanify est vraiment gratuit ?",
-        a: "Oui, à 100%. WePlanify est gratuit pour toujours — pas de frais cachés, pas de limites d'essai, pas de carte bancaire requise. Toutes les fonctionnalités principales (itinéraires, sondages, budgets, listes de bagages) sont incluses sans aucun coût.",
+        q: "WePlanify est-il adapt\u00e9 aux familles avec enfants ?",
+        a: "Absolument. WePlanify est con\u00e7u pour les groupes de toutes sortes — y compris les familles avec enfants. La fonctionnalit\u00e9 de vote rend la participation amusante pour les enfants, et les listes de bagages partag\u00e9es garantissent que rien n'est oubli\u00e9.",
       },
       {
-        q: "Combien d'amis puis-je inviter ?",
-        a: "Il n'y a aucune limite. Que votre groupe soit de 3 ou 30 personnes, tout le monde peut rejoindre avec un simple lien d'invitation et collaborer en temps réel sur le même voyage.",
+        q: "Plusieurs foyers peuvent-ils partager les co\u00fbts ?",
+        a: "Oui. Le suivi de budget partag\u00e9 permet de r\u00e9partir les co\u00fbts entre plusieurs foyers. Suivez qui a pay\u00e9 quoi et r\u00e9glez facilement apr\u00e8s le voyage.",
       },
       {
-        q: "Dois-je télécharger une application ?",
-        a: "Aucun téléchargement nécessaire. WePlanify fonctionne directement dans votre navigateur sur n'importe quel appareil — téléphone, tablette ou ordinateur. Ouvrez le lien et commencez à planifier.",
+        q: "Dois-je t\u00e9l\u00e9charger une application ?",
+        a: "Aucun t\u00e9l\u00e9chargement n\u00e9cessaire. WePlanify fonctionne directement dans votre navigateur sur n'importe quel appareil — t\u00e9l\u00e9phone, tablette ou ordinateur. Ouvrez le lien et commencez \u00e0 planifier.",
       },
     ],
 
-    ctaTitle: "Votre Prochaine Aventure Commence Ici",
+    ctaTitle: "Votre Prochaine Aventure Familiale Commence Ici",
     ctaDescription:
-      "Rejoignez des milliers de groupes d'amis qui planifient leurs voyages avec WePlanify. C'est gratuit, c'est fun, et ça marche vraiment.",
-    ctaButton: "Commencer à planifier",
+      "Rejoignez des milliers de familles qui planifient leurs vacances avec WePlanify. C'est gratuit, c'est simple, et \u00e7a rend tout le monde content.",
+    ctaButton: "Commencer \u00e0 planifier",
   },
 };
 
-export default async function TripWithFriendsPage({ params }: Props) {
+export default async function FamilyTripPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
@@ -338,8 +338,8 @@ export default async function TripWithFriendsPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Voyage entre Amis" : "Trip with Friends",
-        item: `https://www.weplanify.com/${locale}/trip-with-friends`,
+        name: locale === "fr" ? "Voyage en Famille" : "Family Trip",
+        item: `https://www.weplanify.com/${locale}/family-trip`,
       },
     ],
   };
@@ -376,7 +376,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
               <Breadcrumb
                 items={[
                   { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-                  { label: locale === "fr" ? "Voyage entre amis" : "Trip with Friends" },
+                  { label: locale === "fr" ? "Voyage en famille" : "Family Trip" },
                 ]}
               />
             </div>
@@ -561,7 +561,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
         <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-[1200px] mx-auto">
             <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
-              {locale === "fr" ? "Découvrir aussi" : "Discover More"}
+              {locale === "fr" ? "D\u00e9couvrir aussi" : "Discover More"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Link href={`/${locale}/guides/plan-group-trip`} className="group">
@@ -571,26 +571,26 @@ export default async function TripWithFriendsPage({ params }: Props) {
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Le guide complet étape par étape pour organiser un voyage de groupe réussi, de la première idée au dernier jour."
+                      ? "Le guide complet \u00e9tape par \u00e9tape pour organiser un voyage de groupe r\u00e9ussi, de la premi\u00e8re id\u00e9e au dernier jour."
                       : "The complete step-by-step guide to planning a successful group trip, from first idea to last day."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Lire le guide →" : "Read the guide →"}
+                    {locale === "fr" ? "Lire le guide \u2192" : "Read the guide \u2192"}
                   </span>
                 </div>
               </Link>
-              <Link href={`/${locale}/bachelorette-trip`} className="group">
+              <Link href={`/${locale}/trip-with-friends`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Organiser un EVJF" : "Plan a Bachelorette Trip"}
+                    {locale === "fr" ? "Voyage entre Amis" : "Plan a Trip with Friends"}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Tout ce qu'il faut pour planifier un enterrement de vie de jeune fille inoubliable sans stress."
-                      : "Everything you need to plan an unforgettable bachelorette party trip, stress-free."}
+                      ? "Tout ce qu'il faut pour organiser un voyage entre amis — itin\u00e9raires, sondages, budgets et plus encore."
+                      : "Everything you need to coordinate a trip with your friend group — itineraries, polls, budgets, and more."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                    {locale === "fr" ? "En savoir plus \u2192" : "Read more \u2192"}
                   </span>
                 </div>
               </Link>
@@ -605,7 +605,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
                       : "See how WePlanify compares to other group trip planning apps in 2026."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Voir le comparatif →" : "View comparison →"}
+                    {locale === "fr" ? "Voir le comparatif \u2192" : "View comparison \u2192"}
                   </span>
                 </div>
               </Link>

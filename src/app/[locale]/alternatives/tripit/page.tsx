@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -41,26 +42,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "WePlanify vs TripIt — Best Group Trip Organizer? (2026)",
       description:
         "Detailed comparison of WePlanify and TripIt for group travel planning. See how collaborative polls, shared budgets, and real-time planning stack up against TripIt's booking import and flight alerts.",
-      keywords: [
-        "weplanify vs tripit",
-        "tripit alternative for groups",
-        "tripit group travel",
-        "tripit vs weplanify comparison",
-        "best group trip organizer",
-      ],
     },
     fr: {
       title:
         "WePlanify vs TripIt — Meilleur Organisateur de Voyage de Groupe ? (2026)",
       description:
         "Comparatif détaillé entre WePlanify et TripIt pour organiser un voyage de groupe. Découvrez les différences entre sondages collaboratifs, budgets partagés et les alertes de vol de TripIt.",
-      keywords: [
-        "alternative tripit",
-        "tripit pour groupe",
-        "comparatif tripit",
-        "tripit vs weplanify",
-        "organisateur voyage groupe",
-      ],
     },
   };
 
@@ -69,7 +56,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: loc.title,
     description: loc.description,
-    keywords: loc.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
@@ -517,6 +503,17 @@ export default async function TripItComparisonPage({ params }: Props) {
         {/* 1. Hero                                                         */}
         {/* -------------------------------------------------------------- */}
         <section className="pt-[120px] lg:pt-[150px] pb-12 lg:pb-20 px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="hidden lg:block mb-8">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: "Alternatives", href: `/${locale}/alternatives` },
+                  { label: "vs TripIt" },
+                ]}
+              />
+            </div>
+          </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
               {t.heroSubtitle}

@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -49,22 +50,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "WePlanify vs Stippl \u2014 Which Travel Planner Is Best for Groups? (2026)",
       description:
         "Detailed comparison of WePlanify and Stippl for group trip planning. Features, pricing, and which travel planner is best for your group.",
-      keywords: [
-        "weplanify vs stippl",
-        "stippl alternative",
-        "stippl vs weplanify group travel",
-      ],
     },
     fr: {
       title:
         "WePlanify vs Stippl \u2014 Quel Planificateur de Voyage Choisir pour un Groupe ? (2026)",
       description:
         "Comparaison d\u00e9taill\u00e9e entre WePlanify et Stippl pour organiser un voyage de groupe. Fonctionnalit\u00e9s, prix et quel planificateur choisir.",
-      keywords: [
-        "alternative stippl",
-        "stippl ou weplanify",
-        "comparatif stippl",
-      ],
     },
   };
 
@@ -73,7 +64,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: loc.title,
     description: loc.description,
-    keywords: loc.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
@@ -466,6 +456,17 @@ export default async function StipplComparisonPage({ params }: Props) {
         {/* 1. Hero                                                        */}
         {/* -------------------------------------------------------------- */}
         <section className="pt-[120px] lg:pt-[150px] pb-12 lg:pb-20 px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="hidden lg:block mb-8">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: "Alternatives", href: `/${locale}/alternatives` },
+                  { label: "vs Stippl" },
+                ]}
+              />
+            </div>
+          </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
               {t.heroSubtitle}

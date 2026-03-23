@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -49,29 +50,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = {
     en: {
       title:
-        "Best Group Trip Planner Apps 2026 — Complete Comparison | WePlanify",
+        "WePlanify Alternatives & Competitors — Group Trip Planner Comparison Table",
       description:
-        "Compare the best group trip planner apps of 2026. See how WePlanify stacks up against Wanderlog, SquadTrip, Troupe, TripIt and Splitwise for collaborative travel planning.",
-      keywords: [
-        "best group trip planner app",
-        "group travel app comparison",
-        "wanderlog alternative",
-        "squadtrip alternative",
-        "splitwise alternative",
-        "group trip planning tools 2026",
-      ],
+        "Feature-by-feature comparison table: WePlanify vs Wanderlog vs SquadTrip vs TripIt vs Splitwise. Find the right group trip planner for your next adventure.",
     },
     fr: {
       title:
-        "Meilleures Applications Voyage de Groupe 2026 — Comparatif Complet | WePlanify",
+        "Alternatives à WePlanify — Tableau Comparatif Applications Voyage de Groupe",
       description:
-        "Comparez les meilleures applications de voyage de groupe en 2026. Découvrez comment WePlanify se compare à Wanderlog, SquadTrip, Troupe, TripIt et Splitwise.",
-      keywords: [
-        "meilleure application voyage groupe",
-        "comparatif application voyage groupe",
-        "alternative cruzmi",
-        "planificateur voyage groupe 2026",
-      ],
+        "Tableau comparatif fonctionnalité par fonctionnalité : WePlanify vs Wanderlog vs SquadTrip vs TripIt vs Splitwise. Trouvez l'application idéale pour votre voyage de groupe.",
     },
   };
 
@@ -80,7 +67,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: loc.title,
     description: loc.description,
-    keywords: loc.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
@@ -491,6 +477,16 @@ export default async function AlternativesPage({ params }: Props) {
         {/* 1. Hero                                                          */}
         {/* ---------------------------------------------------------------- */}
         <section className="pt-[120px] lg:pt-[150px] pb-12 lg:pb-20 px-4 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="hidden lg:block mb-8">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: locale === "fr" ? "Alternatives" : "Alternatives" },
+                ]}
+              />
+            </div>
+          </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
               {t.heroSubtitle}

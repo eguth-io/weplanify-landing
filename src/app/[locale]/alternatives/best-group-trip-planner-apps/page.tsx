@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -44,29 +45,15 @@ const PATHNAME = "/alternatives/best-group-trip-planner-apps";
 
 const meta = {
   en: {
-    title: "10 Best Group Trip Planner Apps in 2026 — Complete Guide",
+    title: "10 Best Group Trip Planner Apps Compared (2026 Guide)",
     description:
-      "Discover the 10 best group trip planner apps in 2026. Compare features, pricing, and find the perfect tool to plan your next group adventure with friends or family.",
-    keywords: [
-      "best group trip planner apps",
-      "best group travel apps 2026",
-      "top trip planning apps for groups",
-      "group trip planning tools",
-      "collaborative travel planning apps",
-    ],
+      "We tested 10 group trip planner apps so you don't have to. Side-by-side comparison of WePlanify, Wanderlog, TripIt, SquadTrip & more — features, pricing, and honest verdicts.",
   },
   fr: {
     title:
-      "Les 10 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
+      "Les 10 Meilleures Apps Voyage de Groupe Comparées (Guide 2026)",
     description:
-      "Découvrez les 10 meilleures applications pour planifier un voyage de groupe en 2026. Comparez les fonctionnalités, les prix et trouvez l'outil parfait pour organiser votre prochaine aventure entre amis ou en famille.",
-    keywords: [
-      "meilleures applications voyage groupe",
-      "top applications planification voyage 2026",
-      "applications organiser voyage groupe",
-      "outils planification voyage collectif",
-      "applications voyage collaboratif",
-    ],
+      "On a testé 10 applications de voyage de groupe pour vous. Comparatif détaillé de WePlanify, Wanderlog, TripIt, SquadTrip et plus — fonctionnalités, prix et verdicts honnêtes.",
   },
 };
 
@@ -78,7 +65,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: l.title,
     description: l.description,
-    keywords: l.keywords,
     authors: [{ name: "WePlanify" }],
     openGraph: {
       type: "article",
@@ -743,6 +729,15 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
         {/* ---------------------------------------------------------------- */}
         <header className="pt-[120px] lg:pt-[140px] pb-12 lg:pb-16 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
+            <div className="hidden lg:block mb-6">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: "Alternatives", href: `/${locale}/alternatives` },
+                  { label: locale === "fr" ? "Top 10 Apps" : "Top 10 Apps" },
+                ]}
+              />
+            </div>
             <span className="inline-block bg-[#EEF899] text-[#001E13] text-sm font-karla font-semibold px-4 py-1.5 rounded-full mb-6">
               {c.heroTag}
             </span>

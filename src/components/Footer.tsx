@@ -35,6 +35,18 @@ export default function Footer({ footerData }: FooterProps) {
         label: locale === "fr" ? "Comparatif apps" : "App Comparison",
         url: `/${locale}/alternatives`,
       },
+      {
+        label: locale === "fr" ? "Voyage en famille" : "Family Trip",
+        url: `/${locale}/family-trip`,
+      },
+      {
+        label: locale === "fr" ? "Road Trip" : "Road Trip",
+        url: `/${locale}/road-trip`,
+      },
+      {
+        label: locale === "fr" ? "Team Building" : "Team Building",
+        url: `/${locale}/team-building`,
+      },
     ],
   };
 

@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
@@ -9,6 +10,53 @@ import { setRequestLocale } from 'next-intl/server';
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+const SITE_URL = "https://www.weplanify.com";
+
+const contactMeta = {
+  en: {
+    title: "Contact WePlanify — Get in Touch With Our Team",
+    description:
+      "Have a question about WePlanify? Need help planning your group trip? Reach out to our team — we typically respond within 24 hours.",
+  },
+  fr: {
+    title: "Contactez WePlanify — Notre Équipe Vous Répond Sous 24h",
+    description:
+      "Une question sur WePlanify ? Besoin d'aide pour organiser votre voyage de groupe ? Contactez notre équipe — nous répondons généralement sous 24 heures.",
+  },
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const l = locale === "fr" ? contactMeta.fr : contactMeta.en;
+  const currentUrl = `${SITE_URL}/${locale}/contact`;
+
+  return {
+    title: l.title,
+    description: l.description,
+    openGraph: {
+      type: "website",
+      locale: locale === "fr" ? "fr_FR" : "en_US",
+      url: currentUrl,
+      siteName: "WePlanify",
+      title: l.title,
+      description: l.description,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: l.title,
+      description: l.description,
+    },
+    alternates: {
+      canonical: currentUrl,
+      languages: {
+        en: `${SITE_URL}/en/contact`,
+        fr: `${SITE_URL}/fr/contact`,
+        "x-default": `${SITE_URL}/en/contact`,
+      },
+    },
+  };
+}
 
 export default async function ContactPage({ params }: Props) {
   const { locale } = await params;

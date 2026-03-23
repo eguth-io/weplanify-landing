@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ---------------------------------------------------------------------------
 // Static params
@@ -29,26 +30,12 @@ const meta = {
       "How to Plan a Group Trip: The Complete Step-by-Step Guide (2026)",
     description:
       "Learn how to plan a group trip from start to finish. This step-by-step guide covers destination voting, budgeting, itinerary building, logistics and more — with tools to make group travel easy.",
-    keywords: [
-      "how to plan a group trip",
-      "group trip planning guide",
-      "organize group travel step by step",
-      "plan trip with friends",
-      "group vacation planning",
-    ],
   },
   fr: {
     title:
       "Comment Organiser un Voyage de Groupe : Le Guide Complet Étape par Étape (2026)",
     description:
       "Découvrez comment organiser un voyage de groupe de A à Z. Ce guide étape par étape couvre le choix de destination, le budget, l'itinéraire, la logistique et bien plus.",
-    keywords: [
-      "comment organiser voyage groupe",
-      "guide planification voyage groupe",
-      "organiser voyage collectif étapes",
-      "planifier voyage entre amis",
-      "voyage de groupe organisation",
-    ],
   },
 };
 
@@ -64,7 +51,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: l.title,
     description: l.description,
-    keywords: l.keywords,
     authors: [{ name: "WePlanify" }],
     openGraph: {
       type: "article",
@@ -511,6 +497,15 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
         {/* Hero */}
         <header className="pt-[120px] lg:pt-[140px] pb-12 lg:pb-16 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
+            <div className="hidden lg:block mb-6">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: locale === "fr" ? "Guides" : "Guides", href: `/${locale}/guides` },
+                  { label: locale === "fr" ? "Organiser un voyage de groupe" : "Plan a group trip" },
+                ]}
+              />
+            </div>
             <span className="inline-block bg-[#EEF899] text-[#001E13] text-sm font-karla font-semibold px-4 py-1.5 rounded-full mb-6">
               {c.heroTag}
             </span>

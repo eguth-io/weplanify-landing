@@ -5,36 +5,16 @@ import { SeoSettings } from "@/sanity/lib/type";
 
 const SITE_URL = "https://www.weplanify.com";
 
-const localizedDefaults: Record<string, { title: string; description: string; keywords: string[] }> = {
+const localizedDefaults: Record<string, { title: string; description: string }> = {
   en: {
     title: "WePlanify — Free Group Trip Planner | Plan Together",
     description:
       "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists. Free group travel planning app.",
-    keywords: [
-      "group trip planner",
-      "plan trip with friends",
-      "collaborative travel app",
-      "group travel itinerary",
-      "travel planning app",
-      "group vacation planner",
-      "shared trip planner",
-      "trip planner for groups",
-    ],
   },
   fr: {
     title: "WePlanify — Organisateur de Voyage de Groupe Gratuit | Planifiez Ensemble",
     description:
       "Organisez vos voyages de groupe avec WePlanify. Itinéraire collaboratif, budget partagé, sondages de groupe et listes de bagages. Application gratuite de planification de voyage.",
-    keywords: [
-      "organisateur voyage groupe",
-      "planifier voyage entre amis",
-      "application voyage collaboratif",
-      "itinéraire voyage groupe",
-      "planification voyage",
-      "organiser voyage groupe",
-      "planificateur voyage partagé",
-      "voyage entre amis",
-    ],
   },
 };
 
@@ -68,7 +48,6 @@ export async function generateMetadataFromSanity(
         template: seoSettings.titleTemplate || "%s | WePlanify",
       },
       description,
-      keywords: localized.keywords,
       authors: [{ name: seoSettings.organizationName || "WePlanify" }],
       creator: seoSettings.organizationName || "WePlanify",
       publisher: seoSettings.organizationName || "WePlanify",
@@ -160,7 +139,6 @@ function getDefaultMetadata(locale: string = "en", pathname: string = ""): Metad
       template: "%s | WePlanify",
     },
     description: localized.description,
-    keywords: localized.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",

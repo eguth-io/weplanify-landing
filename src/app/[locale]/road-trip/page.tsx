@@ -22,15 +22,15 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const metadata = await generateMetadataFromSanity(locale, "/trip-with-friends");
+  const metadata = await generateMetadataFromSanity(locale, "/road-trip");
 
   const isEn = locale === "en";
   const title = isEn
-    ? "Plan a Trip with Friends — Group Travel Made Easy | WePlanify"
-    : "Organiser un Voyage entre Amis — Planification de Groupe Facile | WePlanify";
+    ? "Plan a Road Trip with Friends — Group Route Planner | WePlanify"
+    : "Road Trip entre Amis — Planificateur de Route de Groupe | WePlanify";
   const description = isEn
-    ? "Plan a trip with friends effortlessly. WePlanify is the group trip planner app with collaborative itineraries, group polls, shared budgets, and packing lists. Free to use."
-    : "Organisez un voyage entre amis sans effort. WePlanify est l'application de planification de voyage de groupe avec itinéraires collaboratifs, sondages, budgets partagés et listes de bagages. Gratuit.";
+    ? "Plan the ultimate road trip with your crew. Vote on stops, split gas costs, and build a day-by-day route together."
+    : "Organisez le road trip ultime entre amis. Votez sur les arrêts, partagez les frais et construisez votre itinéraire ensemble.";
   return {
     ...metadata,
     title,
@@ -50,76 +50,76 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const content = {
   en: {
-    heroTag: "Group Travel, Simplified",
-    heroTitle: "Plan a Trip with Friends\nWithout the Chaos",
+    heroTag: "Road Trip, Your Way",
+    heroTitle: "Plan a Road Trip\nWith Your Crew",
     heroDescription:
-      "Stop juggling WhatsApp threads, spreadsheets, and guesswork. WePlanify brings your entire group together in one place to plan the perfect trip — from destination to departure.",
+      "The open road, your best friends, and zero stress. WePlanify helps your group plan the perfect road trip \u2014 from route stops to gas money, everyone stays in the loop.",
     heroCta: "Start planning for free",
-    painPointsTitle: "Sound Familiar?",
+    painPointsTitle: "Road Trip Headaches",
     painPointsSubtitle:
-      "Planning a group trip with friends is exciting — until it isn't. Here are the headaches WePlanify eliminates.",
+      "A road trip with friends is the dream \u2014 until someone has to be the organizer.",
     painPoints: [
       {
-        icon: "💬",
-        title: "Scattered Conversations",
+        icon: "\ud83d\uddfa\ufe0f",
+        title: "Route Arguments",
         description:
-          "Important decisions buried in endless WhatsApp threads. Someone always misses the message. Nobody knows what was decided.",
+          "Everyone wants to stop at different places. Without a shared plan, you end up driving past the best spots or adding hours of detours.",
       },
       {
-        icon: "🗺️",
-        title: "Can't Agree on a Destination",
+        icon: "\u26fd",
+        title: "Gas & Cost Splitting",
         description:
-          "Half the group wants beach, the other half wants mountains. Without a fair way to decide, the trip stalls before it even starts.",
+          "Who\u2019s paying for gas? Who booked the motel? Tracking shared expenses across 5+ stops over several days gets messy fast.",
       },
       {
-        icon: "💸",
-        title: "Budget Confusion",
+        icon: "\ud83d\udd50",
+        title: "Timing Disasters",
         description:
-          "Who paid for the Airbnb? Who owes what? Tracking shared expenses across a group trip quickly becomes a nightmare.",
+          "Someone wants to spend 3 hours at every viewpoint while others want to keep driving. Without alignment, road trips turn into arguments.",
       },
       {
-        icon: "📋",
-        title: "Nobody Knows What to Pack",
+        icon: "\ud83c\udf92",
+        title: "Car Space is Limited",
         description:
-          "Three people bring hairdryers, nobody brings a first-aid kit. Without coordination, packing becomes a guessing game.",
+          "Five people, one trunk. Without coordinating who brings what, you end up with three portable speakers and no cooler.",
       },
     ],
 
-    solutionTitle: "How WePlanify Makes Group Trips Easy",
+    solutionTitle: "How WePlanify Makes Road Trips Easy",
     solutionSubtitle:
-      "Everything your friend group needs to plan, decide, and organize — all in one beautiful app.",
+      "Everything your road trip crew needs to plan stops, split costs, and stay organized on the road.",
     solutions: [
       {
-        title: "Collaborative Itinerary",
+        title: "Collaborative Route Planning",
         description:
-          "Build your trip itinerary together in real time. Everyone can suggest activities, vote on ideas, and see the final plan — no more back-and-forth.",
+          "Build your road trip itinerary together. Add stops, plan overnight stays, and create a day-by-day schedule the whole car agrees on.",
         link: "/features/planning",
         linkText: "Learn about planning",
         color: "bg-[#EEF899]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Group Polls & Voting",
+        title: "Vote on Every Stop",
         description:
-          "Can't decide between Barcelona and Bali? Create a poll, let everyone vote, and settle it democratically. No more endless debates.",
+          "National park or roadside diner? Scenic route or highway? Let everyone vote on stops and detours \u2014 no more driver-dictator energy.",
         link: "/features/polls",
         linkText: "Discover polls",
         color: "bg-[#61DBD5]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Shared Budget Tracker",
+        title: "Split Gas & Expenses",
         description:
-          "Track every expense, split costs fairly, and see who owes what — all updated in real time. No more awkward money conversations.",
+          "Track gas, food, tolls, accommodations, and everything in between. See who owes what in real time \u2014 settle up at the end, not at every stop.",
         link: "/features/budget",
         linkText: "Explore budget tools",
         color: "bg-[#001E13]",
         textColor: "text-[#FFFBF5]",
       },
       {
-        title: "Smart Packing Lists",
+        title: "Shared Packing Lists",
         description:
-          "AI-powered packing lists tailored to your destination, weather, and activities. Share with the group so nothing gets forgotten or duplicated.",
+          "Coordinate what each person brings for the car. Avoid duplicates, assign group items (cooler, aux cable, snacks), and make sure nothing critical is forgotten.",
         link: "/features/packing",
         linkText: "See packing lists",
         color: "bg-[#F6391A]",
@@ -127,122 +127,122 @@ const content = {
       },
     ],
 
-    stepsTitle: "3 Steps to Plan Your Trip with Friends",
+    stepsTitle: "3 Steps to Plan Your Road Trip",
     stepsSubtitle:
-      "From idea to itinerary in minutes — not weeks.",
+      "From \u2018let\u2019s do a road trip\u2019 to \u2018we\u2019re on the road\u2019 \u2014 in minutes.",
     steps: [
       {
         step: "1",
         title: "Create Your Trip",
         description:
-          "Name your trip, pick your dates, and invite your friends with a simple link. Everyone joins instantly.",
+          "Name your road trip, set start/end dates, and invite your crew with a simple link. Everyone joins instantly.",
       },
       {
         step: "2",
-        title: "Plan Together",
+        title: "Plan the Route Together",
         description:
-          "Suggest destinations, vote on activities, build your itinerary, and track your shared budget — all in one place.",
+          "Add stops, vote on detours, build a day-by-day plan, and track your shared gas fund \u2014 all in one place.",
       },
       {
         step: "3",
-        title: "Pack & Go",
+        title: "Hit the Road",
         description:
-          "Get personalized packing lists, finalize your plans, and head out on the adventure of a lifetime with your crew.",
+          "Get coordinated packing lists for the car, finalize your route, and hit the open road with your crew.",
       },
     ],
 
     faqTitle: "Frequently Asked Questions",
     faqItems: [
       {
-        q: "Is WePlanify really free?",
-        a: "Yes, 100%. WePlanify is free forever — no hidden fees, no trial limits, no credit card required. All core features (itineraries, polls, budgets, packing lists) are included at no cost.",
+        q: "Can I plan multi-day road trips?",
+        a: "Yes. WePlanify supports multi-day itineraries with different stops, overnights, and activities for each day. Perfect for cross-country road trips or weekend getaways.",
       },
       {
-        q: "How many friends can I invite?",
-        a: "There is no limit. Whether your group is 3 or 30, everyone can join with a simple invite link and collaborate in real time on the same trip.",
+        q: "How does the expense splitting work for road trips?",
+        a: "Add expenses as you go \u2014 gas, food, tolls, hotels. The shared budget tracker calculates who owes what automatically. Settle up at the end of the trip with a clear breakdown.",
       },
       {
         q: "Do I need to download an app?",
-        a: "No download needed. WePlanify works directly in your browser on any device — phone, tablet, or computer. Just open the link and start planning.",
+        a: "No download needed. WePlanify works directly in your browser on any device \u2014 phone, tablet, or computer. Perfect for checking the plan from the passenger seat.",
       },
     ],
 
-    ctaTitle: "Your Next Adventure Starts Here",
+    ctaTitle: "Your Next Road Trip Starts Here",
     ctaDescription:
-      "Join thousands of friend groups who plan their trips with WePlanify. It's free, it's fun, and it actually works.",
-    ctaButton: "Start planning your trip",
+      "Join thousands of road trip crews who plan their adventures with WePlanify. It\u2019s free, it\u2019s collaborative, and it keeps everyone on the same route.",
+    ctaButton: "Start planning your road trip",
   },
   fr: {
-    heroTag: "Voyage de Groupe, Simplifié",
-    heroTitle: "Organisez un Voyage entre Amis\nSans le Chaos",
+    heroTag: "Road Trip, \u00c0 Votre Fa\u00e7on",
+    heroTitle: "Organisez un Road Trip\nAvec Votre Bande",
     heroDescription:
-      "Arrêtez de jongler entre les fils WhatsApp, les tableurs et les suppositions. WePlanify réunit tout votre groupe au même endroit pour planifier le voyage parfait — de la destination au départ.",
+      "La route ouverte, vos meilleurs amis, et z\u00e9ro stress. WePlanify aide votre groupe \u00e0 planifier le road trip parfait \u2014 des arr\u00eats aux frais d\u2019essence, tout le monde reste dans la boucle.",
     heroCta: "Commencer gratuitement",
-    painPointsTitle: "Ça vous dit quelque chose ?",
+    painPointsTitle: "Les Gal\u00e8res du Road Trip",
     painPointsSubtitle:
-      "Organiser un voyage entre amis, c'est excitant — jusqu'à ce que ça ne le soit plus. Voici les casse-têtes que WePlanify élimine.",
+      "Un road trip entre amis, c\u2019est le r\u00eave \u2014 jusqu\u2019\u00e0 ce que quelqu\u2019un doive tout organiser.",
     painPoints: [
       {
-        icon: "💬",
-        title: "Conversations Éparpillées",
+        icon: "\ud83d\uddfa\ufe0f",
+        title: "Disputes sur l\u2019Itin\u00e9raire",
         description:
-          "Les décisions importantes noyées dans des fils WhatsApp interminables. Quelqu'un rate toujours le message. Personne ne sait ce qui a été décidé.",
+          "Tout le monde veut s\u2019arr\u00eater \u00e0 des endroits diff\u00e9rents. Sans plan partag\u00e9, vous ratez les meilleurs spots ou ajoutez des heures de d\u00e9tour.",
       },
       {
-        icon: "🗺️",
-        title: "Impossible de Choisir une Destination",
+        icon: "\u26fd",
+        title: "Partage des Frais",
         description:
-          "La moitié du groupe veut la plage, l'autre la montagne. Sans un moyen juste de décider, le voyage stagne avant même de commencer.",
+          "Qui paie l\u2019essence ? Qui a r\u00e9serv\u00e9 le motel ? Suivre les d\u00e9penses partag\u00e9es sur 5+ arr\u00eats pendant plusieurs jours, \u00e7a devient vite le bazar.",
       },
       {
-        icon: "💸",
-        title: "Confusion Budgétaire",
+        icon: "\ud83d\udd50",
+        title: "Probl\u00e8mes de Timing",
         description:
-          "Qui a payé l'Airbnb ? Qui doit quoi ? Suivre les dépenses partagées d'un voyage de groupe devient vite un cauchemar.",
+          "L\u2019un veut passer 3 heures \u00e0 chaque point de vue pendant que les autres veulent continuer \u00e0 rouler. Sans alignement, le road trip tourne au clash.",
       },
       {
-        icon: "📋",
-        title: "Personne ne Sait Quoi Emporter",
+        icon: "\ud83c\udf92",
+        title: "L\u2019Espace dans la Voiture est Limit\u00e9",
         description:
-          "Trois personnes apportent un sèche-cheveux, personne n'apporte de trousse de secours. Sans coordination, faire ses valises devient un jeu de devinettes.",
+          "Cinq personnes, un coffre. Sans coordination sur qui apporte quoi, vous vous retrouvez avec trois enceintes portables et pas de glaci\u00e8re.",
       },
     ],
 
-    solutionTitle: "Comment WePlanify Facilite les Voyages de Groupe",
+    solutionTitle: "Comment WePlanify Facilite les Road Trips",
     solutionSubtitle:
-      "Tout ce dont votre groupe d'amis a besoin pour planifier, décider et organiser — dans une seule application.",
+      "Tout ce dont votre \u00e9quipage a besoin pour planifier les arr\u00eats, partager les frais et rester organis\u00e9 sur la route.",
     solutions: [
       {
-        title: "Itinéraire Collaboratif",
+        title: "Planification d\u2019Itin\u00e9raire Collaborative",
         description:
-          "Construisez votre itinéraire de voyage ensemble en temps réel. Chacun peut proposer des activités, voter sur les idées et voir le plan final — fini les allers-retours.",
+          "Construisez votre itin\u00e9raire de road trip ensemble. Ajoutez des arr\u00eats, planifiez les nuits et cr\u00e9ez un programme jour par jour sur lequel toute la voiture s\u2019accorde.",
         link: "/features/planning",
-        linkText: "Découvrir la planification",
+        linkText: "D\u00e9couvrir la planification",
         color: "bg-[#EEF899]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Sondages & Votes de Groupe",
+        title: "Votez sur Chaque Arr\u00eat",
         description:
-          "Impossible de choisir entre Barcelone et Bali ? Créez un sondage, laissez tout le monde voter et réglez ça démocratiquement. Fini les débats sans fin.",
+          "Parc national ou resto de bord de route ? Route panoramique ou autoroute ? Laissez tout le monde voter sur les arr\u00eats et d\u00e9tours.",
         link: "/features/polls",
-        linkText: "Découvrir les sondages",
+        linkText: "D\u00e9couvrir les sondages",
         color: "bg-[#61DBD5]",
         textColor: "text-[#001E13]",
       },
       {
-        title: "Budget Partagé",
+        title: "Partagez Essence & D\u00e9penses",
         description:
-          "Suivez chaque dépense, partagez les coûts équitablement et voyez qui doit quoi — le tout mis à jour en temps réel. Fini les conversations gênantes sur l'argent.",
+          "Suivez l\u2019essence, la nourriture, les p\u00e9ages, l\u2019h\u00e9bergement et tout le reste. Voyez qui doit quoi en temps r\u00e9el \u2014 r\u00e9glez \u00e0 la fin, pas \u00e0 chaque arr\u00eat.",
         link: "/features/budget",
         linkText: "Explorer le budget",
         color: "bg-[#001E13]",
         textColor: "text-[#FFFBF5]",
       },
       {
-        title: "Listes de Bagages Intelligentes",
+        title: "Listes de Bagages Partag\u00e9es",
         description:
-          "Des listes de bagages générées par IA adaptées à votre destination, la météo et vos activités. Partagez avec le groupe pour ne rien oublier ni dupliquer.",
+          "Coordonnez ce que chaque personne apporte pour la voiture. \u00c9vitez les doublons, assignez les objets collectifs (glaci\u00e8re, c\u00e2ble aux, snacks) et n\u2019oubliez rien d\u2019essentiel.",
         link: "/features/packing",
         linkText: "Voir les listes",
         color: "bg-[#F6391A]",
@@ -250,54 +250,54 @@ const content = {
       },
     ],
 
-    stepsTitle: "3 Étapes pour Organiser Votre Voyage entre Amis",
+    stepsTitle: "3 \u00c9tapes pour Organiser Votre Road Trip",
     stepsSubtitle:
-      "De l'idée à l'itinéraire en quelques minutes — pas en semaines.",
+      "De \u2018on fait un road trip\u2019 \u00e0 \u2018on est sur la route\u2019 \u2014 en quelques minutes.",
     steps: [
       {
         step: "1",
-        title: "Créez Votre Voyage",
+        title: "Cr\u00e9ez Votre Trip",
         description:
-          "Nommez votre voyage, choisissez vos dates et invitez vos amis avec un simple lien. Tout le monde rejoint instantanément.",
+          "Nommez votre road trip, fixez les dates de d\u00e9part/arriv\u00e9e et invitez votre bande avec un simple lien. Tout le monde rejoint instantan\u00e9ment.",
       },
       {
         step: "2",
-        title: "Planifiez Ensemble",
+        title: "Planifiez l\u2019Itin\u00e9raire Ensemble",
         description:
-          "Proposez des destinations, votez sur les activités, construisez votre itinéraire et suivez votre budget partagé — le tout au même endroit.",
+          "Ajoutez des arr\u00eats, votez sur les d\u00e9tours, construisez un plan jour par jour et suivez votre cagnotte essence \u2014 le tout au m\u00eame endroit.",
       },
       {
         step: "3",
-        title: "Préparez & Partez",
+        title: "En Route",
         description:
-          "Obtenez des listes de bagages personnalisées, finalisez vos plans et partez pour l'aventure de votre vie avec votre bande.",
+          "Obtenez des listes de bagages coordonn\u00e9es pour la voiture, finalisez votre itin\u00e9raire et prenez la route avec votre bande.",
       },
     ],
 
-    faqTitle: "Questions Fréquemment Posées",
+    faqTitle: "Questions Fr\u00e9quemment Pos\u00e9es",
     faqItems: [
       {
-        q: "Est-ce que WePlanify est vraiment gratuit ?",
-        a: "Oui, à 100%. WePlanify est gratuit pour toujours — pas de frais cachés, pas de limites d'essai, pas de carte bancaire requise. Toutes les fonctionnalités principales (itinéraires, sondages, budgets, listes de bagages) sont incluses sans aucun coût.",
+        q: "Peut-on planifier des road trips de plusieurs jours ?",
+        a: "Oui. WePlanify g\u00e8re les itin\u00e9raires multi-jours avec des arr\u00eats, des nuits et des activit\u00e9s diff\u00e9rentes chaque jour. Parfait pour les road trips cross-country ou les escapades de week-end.",
       },
       {
-        q: "Combien d'amis puis-je inviter ?",
-        a: "Il n'y a aucune limite. Que votre groupe soit de 3 ou 30 personnes, tout le monde peut rejoindre avec un simple lien d'invitation et collaborer en temps réel sur le même voyage.",
+        q: "Comment fonctionne le partage des frais pour les road trips ?",
+        a: "Ajoutez les d\u00e9penses au fur et \u00e0 mesure \u2014 essence, nourriture, p\u00e9ages, h\u00f4tels. Le suivi de budget partag\u00e9 calcule automatiquement qui doit quoi. R\u00e9glez \u00e0 la fin du voyage avec un r\u00e9capitulatif clair.",
       },
       {
-        q: "Dois-je télécharger une application ?",
-        a: "Aucun téléchargement nécessaire. WePlanify fonctionne directement dans votre navigateur sur n'importe quel appareil — téléphone, tablette ou ordinateur. Ouvrez le lien et commencez à planifier.",
+        q: "Dois-je t\u00e9l\u00e9charger une application ?",
+        a: "Aucun t\u00e9l\u00e9chargement n\u00e9cessaire. WePlanify fonctionne directement dans votre navigateur sur n\u2019importe quel appareil \u2014 t\u00e9l\u00e9phone, tablette ou ordinateur. Parfait pour consulter le plan depuis le si\u00e8ge passager.",
       },
     ],
 
-    ctaTitle: "Votre Prochaine Aventure Commence Ici",
+    ctaTitle: "Votre Prochain Road Trip Commence Ici",
     ctaDescription:
-      "Rejoignez des milliers de groupes d'amis qui planifient leurs voyages avec WePlanify. C'est gratuit, c'est fun, et ça marche vraiment.",
-    ctaButton: "Commencer à planifier",
+      "Rejoignez des milliers d\u2019\u00e9quipages qui planifient leurs aventures avec WePlanify. C\u2019est gratuit, c\u2019est collaboratif, et \u00e7a garde tout le monde sur la m\u00eame route.",
+    ctaButton: "Commencer \u00e0 planifier",
   },
 };
 
-export default async function TripWithFriendsPage({ params }: Props) {
+export default async function RoadTripPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
@@ -338,8 +338,8 @@ export default async function TripWithFriendsPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Voyage entre Amis" : "Trip with Friends",
-        item: `https://www.weplanify.com/${locale}/trip-with-friends`,
+        name: "Road Trip",
+        item: `https://www.weplanify.com/${locale}/road-trip`,
       },
     ],
   };
@@ -376,7 +376,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
               <Breadcrumb
                 items={[
                   { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-                  { label: locale === "fr" ? "Voyage entre amis" : "Trip with Friends" },
+                  { label: "Road Trip" },
                 ]}
               />
             </div>
@@ -561,7 +561,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
         <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-[1200px] mx-auto">
             <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
-              {locale === "fr" ? "Découvrir aussi" : "Discover More"}
+              {locale === "fr" ? "D\u00e9couvrir aussi" : "Discover More"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Link href={`/${locale}/guides/plan-group-trip`} className="group">
@@ -571,26 +571,26 @@ export default async function TripWithFriendsPage({ params }: Props) {
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Le guide complet étape par étape pour organiser un voyage de groupe réussi, de la première idée au dernier jour."
+                      ? "Le guide complet \u00e9tape par \u00e9tape pour organiser un voyage de groupe r\u00e9ussi, de la premi\u00e8re id\u00e9e au dernier jour."
                       : "The complete step-by-step guide to planning a successful group trip, from first idea to last day."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Lire le guide →" : "Read the guide →"}
+                    {locale === "fr" ? "Lire le guide \u2192" : "Read the guide \u2192"}
                   </span>
                 </div>
               </Link>
-              <Link href={`/${locale}/bachelorette-trip`} className="group">
+              <Link href={`/${locale}/trip-with-friends`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Organiser un EVJF" : "Plan a Bachelorette Trip"}
+                    {locale === "fr" ? "Voyage entre Amis" : "Plan a Trip with Friends"}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Tout ce qu'il faut pour planifier un enterrement de vie de jeune fille inoubliable sans stress."
-                      : "Everything you need to plan an unforgettable bachelorette party trip, stress-free."}
+                      ? "Tout ce qu\u2019il faut pour organiser un voyage entre amis \u2014 itin\u00e9raires, sondages, budgets et plus encore."
+                      : "Everything you need to coordinate a trip with your friend group \u2014 itineraries, polls, budgets, and more."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                    {locale === "fr" ? "En savoir plus \u2192" : "Read more \u2192"}
                   </span>
                 </div>
               </Link>
@@ -605,7 +605,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
                       : "See how WePlanify compares to other group trip planning apps in 2026."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Voir le comparatif →" : "View comparison →"}
+                    {locale === "fr" ? "Voir le comparatif \u2192" : "View comparison \u2192"}
                   </span>
                 </div>
               </Link>
