@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const isEn = locale === "en";
   const title = isEn
-    ? "Plan a Road Trip with Friends — Route Planner for Groups | WePlanify"
-    : "Organiser un Road Trip entre Amis — Planificateur d'Itin\u00e9raire de Groupe | WePlanify";
+    ? "Plan a Road Trip with Friends — Group Route Planner | WePlanify"
+    : "Road Trip entre Amis — Planificateur de Route de Groupe | WePlanify";
   const description = isEn
-    ? "Plan the ultimate road trip with your crew. WePlanify helps groups plan routes, vote on stops, split gas and hotel costs, and build a day-by-day itinerary together."
-    : "Organisez le road trip ultime avec votre bande. WePlanify aide les groupes \u00e0 planifier les routes, voter sur les arr\u00eats, partager les frais d'essence et d'h\u00f4tel, et construire un itin\u00e9raire jour par jour ensemble.";
+    ? "Plan the ultimate road trip with your crew. Vote on stops, split gas costs, and build a day-by-day route together."
+    : "Organisez le road trip ultime entre amis. Votez sur les arrêts, partagez les frais et construisez votre itinéraire ensemble.";
   return {
     ...metadata,
     title,

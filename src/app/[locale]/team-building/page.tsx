@@ -27,10 +27,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEn = locale === "en";
   const title = isEn
     ? "Plan a Team Building Trip — Corporate Retreat Planner | WePlanify"
-    : "Organiser un Voyage Team Building — Planificateur de Séminaire d'Entreprise | WePlanify";
+    : "Séminaire d'Entreprise — Planificateur Team Building | WePlanify";
   const description = isEn
-    ? "Organize your next team building trip or corporate retreat with WePlanify. Coordinate schedules, vote on activities, manage budgets, and plan the perfect offsite — all in one free tool."
-    : "Organisez votre prochain séminaire d'entreprise ou voyage team building avec WePlanify. Coordonnez les agendas, votez sur les activités, gérez le budget et planifiez le séjour parfait — le tout gratuitement.";
+    ? "Organize your next team offsite with WePlanify. Vote on activities, manage budgets, and plan the perfect retreat — free."
+    : "Organisez votre prochain séminaire avec WePlanify. Votez sur les activités, gérez le budget et planifiez le séjour parfait.";
   return {
     ...metadata,
     title,

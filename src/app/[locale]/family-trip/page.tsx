@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const isEn = locale === "en";
   const title = isEn
-    ? "Plan a Family Trip — Stress-Free Family Vacation Planner | WePlanify"
-    : "Organiser un Voyage en Famille — Planificateur de Vacances Familiales | WePlanify";
+    ? "Plan a Family Trip — Vacation Planner for Families | WePlanify"
+    : "Voyage en Famille — Planificateur de Vacances Familiales | WePlanify";
   const description = isEn
-    ? "Plan your next family trip with ease. WePlanify helps families coordinate schedules, manage budgets, vote on destinations, and keep everyone — kids included — on the same page."
-    : "Organisez votre prochain voyage en famille sans stress. WePlanify aide les familles à coordonner les emplois du temps, gérer le budget, voter pour les destinations et garder tout le monde sur la même page.";
+    ? "Plan your family trip with ease. Coordinate schedules, manage budgets, vote on destinations, and keep everyone on the same page."
+    : "Organisez votre voyage en famille sans stress. Coordonnez les emplois du temps, gérez le budget et votez pour les destinations.";
   return {
     ...metadata,
     title,
