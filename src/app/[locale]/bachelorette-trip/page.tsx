@@ -8,6 +8,7 @@ import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import FadeIn from "@/components/FadeIn";
 import Confetti from "@/components/Confetti";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
@@ -409,6 +410,16 @@ export default async function BacheloretteTrip({ params }: Props) {
         {/* Hero Section */}
         <section className="relative pt-[120px] lg:pt-[160px] pb-16 lg:pb-24 px-4 lg:px-8 overflow-hidden">
           <Confetti />
+          <div className="max-w-5xl mx-auto relative z-10">
+            <div className="hidden lg:block mb-8">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: locale === "fr" ? "EVJF" : "Bachelorette Trip" },
+                ]}
+              />
+            </div>
+          </div>
           <div className="max-w-5xl mx-auto text-center relative z-10">
             <span className="inline-block bg-[#EEF899] text-[#001E13] px-5 py-1.5 rounded-full text-sm lg:text-base font-nanum-pen mb-6">
               {t.hero.tag}

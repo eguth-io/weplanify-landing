@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import FloatingCards from "@/components/FloatingCards";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
@@ -391,6 +392,16 @@ export default async function TripWithFriendsPage({ params }: Props) {
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative pt-[120px] lg:pt-[140px] pb-8 lg:pb-10 px-4 lg:px-8">
+          <div className="max-w-[1536px] mx-auto">
+            <div className="hidden lg:block mb-8">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: locale === "fr" ? "Voyage entre amis" : "Trip with Friends" },
+                ]}
+              />
+            </div>
+          </div>
           <div className="max-w-[1536px] mx-auto">
             <div className="relative overflow-hidden rounded-[24px] lg:rounded-[40px] bg-[#001E13]">
               {/* Decorative gradient */}
