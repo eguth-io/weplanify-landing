@@ -5,6 +5,7 @@ import { featurePageQuery } from "@/sanity/lib/query";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { generateMetadataFromSanity } from "@/lib/metadata";
+import RelatedFeatures from "@/components/RelatedFeatures";
 
 // Feature client components
 import PollsFeature from "./features/PollsFeature";
@@ -143,5 +144,10 @@ export default async function FeaturePage({ params }: Props) {
     notFound();
   }
 
-  return <FeatureComponent data={data} />;
+  return (
+    <>
+      <FeatureComponent data={data} />
+      <RelatedFeatures currentSlug={slug} locale={locale} />
+    </>
+  );
 }

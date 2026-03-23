@@ -106,8 +106,54 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     );
   }
 
+  const SITE_URL = "https://www.weplanify.com";
+  const authorName = article.author
+    ? `${article.author.firstName} ${article.author.lastName}`
+    : "WePlanify";
+
+  const blogPostingLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.seo?.metaTitle || article.title,
+    description: article.seo?.metaDescription || article.excerpt || "",
+    image: article.heroImage || undefined,
+    datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
+    author: {
+      "@type": "Person",
+      name: authorName,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "WePlanify",
+      url: SITE_URL,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/${locale}/blog/${slug}`,
+    },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: locale === "fr" ? "Accueil" : "Home", item: `${SITE_URL}/${locale}` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/${locale}/blog` },
+      { "@type": "ListItem", position: 3, name: article.title, item: `${SITE_URL}/${locale}/blog/${slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <Nav navData={navData} />
       <main className="min-h-screen">
         <article className="max-w-7xl mx-auto px-[30px] lg:px-[70px] py-8 lg:py-12">

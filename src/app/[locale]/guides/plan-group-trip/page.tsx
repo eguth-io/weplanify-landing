@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ---------------------------------------------------------------------------
 // Static params
@@ -511,6 +512,15 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
         {/* Hero */}
         <header className="pt-[120px] lg:pt-[140px] pb-12 lg:pb-16 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
+            <div className="hidden lg:block mb-6">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: locale === "fr" ? "Guides" : "Guides", href: `/${locale}/guides` },
+                  { label: locale === "fr" ? "Organiser un voyage de groupe" : "Plan a group trip" },
+                ]}
+              />
+            </div>
             <span className="inline-block bg-[#EEF899] text-[#001E13] text-sm font-karla font-semibold px-4 py-1.5 rounded-full mb-6">
               {c.heroTag}
             </span>

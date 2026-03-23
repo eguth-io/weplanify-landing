@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -744,6 +745,15 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
         {/* ---------------------------------------------------------------- */}
         <header className="pt-[120px] lg:pt-[140px] pb-12 lg:pb-16 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
+            <div className="hidden lg:block mb-6">
+              <Breadcrumb
+                items={[
+                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: "Alternatives", href: `/${locale}/alternatives` },
+                  { label: locale === "fr" ? "Top 10 Apps" : "Top 10 Apps" },
+                ]}
+              />
+            </div>
             <span className="inline-block bg-[#EEF899] text-[#001E13] text-sm font-karla font-semibold px-4 py-1.5 rounded-full mb-6">
               {c.heroTag}
             </span>
