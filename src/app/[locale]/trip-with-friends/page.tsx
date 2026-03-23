@@ -31,31 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = isEn
     ? "Plan a trip with friends effortlessly. WePlanify is the group trip planner app with collaborative itineraries, group polls, shared budgets, and packing lists. Free to use."
     : "Organisez un voyage entre amis sans effort. WePlanify est l'application de planification de voyage de groupe avec itinéraires collaboratifs, sondages, budgets partagés et listes de bagages. Gratuit.";
-  const keywords = isEn
-    ? [
-        "plan trip with friends",
-        "group trip with friends app",
-        "travel with friends planner",
-        "group travel planning",
-        "trip planner for friends",
-        "collaborative trip planning",
-        "group vacation planner",
-      ]
-    : [
-        "organiser voyage entre amis",
-        "planifier voyage amis",
-        "application voyage groupe amis",
-        "planification voyage groupe",
-        "organiser voyage groupe amis",
-        "voyage collaboratif entre amis",
-        "planificateur voyage amis",
-      ];
-
   return {
     ...metadata,
     title,
     description,
-    keywords,
     openGraph: {
       ...metadata.openGraph,
       title,

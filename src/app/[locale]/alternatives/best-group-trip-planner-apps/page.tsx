@@ -48,27 +48,12 @@ const meta = {
     title: "10 Best Group Trip Planner Apps Compared (2026 Guide)",
     description:
       "We tested 10 group trip planner apps so you don't have to. Side-by-side comparison of WePlanify, Wanderlog, TripIt, SquadTrip & more — features, pricing, and honest verdicts.",
-    keywords: [
-      "best group trip planner apps",
-      "best group travel apps 2026",
-      "group trip planner app comparison",
-      "wanderlog vs weplanify",
-      "best app to plan group trip",
-      "collaborative travel planning apps",
-    ],
   },
   fr: {
     title:
       "Les 10 Meilleures Apps Voyage de Groupe Comparées (Guide 2026)",
     description:
       "On a testé 10 applications de voyage de groupe pour vous. Comparatif détaillé de WePlanify, Wanderlog, TripIt, SquadTrip et plus — fonctionnalités, prix et verdicts honnêtes.",
-    keywords: [
-      "meilleures applications voyage groupe comparatif",
-      "top applications planification voyage 2026",
-      "comparatif apps organiser voyage groupe",
-      "quelle application voyage entre amis",
-      "applications voyage collaboratif",
-    ],
   },
 };
 
@@ -80,7 +65,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: l.title,
     description: l.description,
-    keywords: l.keywords,
     authors: [{ name: "WePlanify" }],
     openGraph: {
       type: "article",

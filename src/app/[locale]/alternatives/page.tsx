@@ -53,25 +53,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "WePlanify Alternatives & Competitors — Group Trip Planner Comparison Table",
       description:
         "Feature-by-feature comparison table: WePlanify vs Wanderlog vs SquadTrip vs TripIt vs Splitwise. Find the right group trip planner for your next adventure.",
-      keywords: [
-        "weplanify alternatives",
-        "wanderlog alternative",
-        "squadtrip alternative",
-        "splitwise alternative for trips",
-        "group trip planner comparison table",
-      ],
     },
     fr: {
       title:
         "Alternatives à WePlanify — Tableau Comparatif Applications Voyage de Groupe",
       description:
         "Tableau comparatif fonctionnalité par fonctionnalité : WePlanify vs Wanderlog vs SquadTrip vs TripIt vs Splitwise. Trouvez l'application idéale pour votre voyage de groupe.",
-      keywords: [
-        "alternative weplanify",
-        "alternative cruzmi",
-        "comparatif application voyage groupe tableau",
-        "planificateur voyage groupe comparaison",
-      ],
     },
   };
 
@@ -80,7 +67,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: loc.title,
     description: loc.description,
-    keywords: loc.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",

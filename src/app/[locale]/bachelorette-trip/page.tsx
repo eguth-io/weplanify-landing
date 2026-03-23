@@ -301,27 +301,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...baseMetadata,
     title: t.meta.title,
     description: t.meta.description,
-    keywords:
-      locale === "fr"
-        ? [
-            "organiser evjf",
-            "planifier enterrement vie jeune fille",
-            "application evjf",
-            "organiser week-end evjf",
-            "evjf entre copines",
-            "idées evjf",
-            "budget evjf",
-            "programme evjf",
-          ]
-        : [
-            "bachelorette trip planner",
-            "plan bachelorette party trip",
-            "bachelorette weekend organizer",
-            "bachelorette party ideas",
-            "bachelorette trip budget",
-            "bachelorette itinerary planner",
-            "group trip planner bachelorette",
-          ],
     openGraph: {
       ...baseMetadata.openGraph,
       title: t.meta.title,

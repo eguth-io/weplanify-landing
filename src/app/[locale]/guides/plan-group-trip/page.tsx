@@ -30,26 +30,12 @@ const meta = {
       "How to Plan a Group Trip: The Complete Step-by-Step Guide (2026)",
     description:
       "Learn how to plan a group trip from start to finish. This step-by-step guide covers destination voting, budgeting, itinerary building, logistics and more — with tools to make group travel easy.",
-    keywords: [
-      "how to plan a group trip",
-      "group trip planning guide",
-      "organize group travel step by step",
-      "plan trip with friends",
-      "group vacation planning",
-    ],
   },
   fr: {
     title:
       "Comment Organiser un Voyage de Groupe : Le Guide Complet Étape par Étape (2026)",
     description:
       "Découvrez comment organiser un voyage de groupe de A à Z. Ce guide étape par étape couvre le choix de destination, le budget, l'itinéraire, la logistique et bien plus.",
-    keywords: [
-      "comment organiser voyage groupe",
-      "guide planification voyage groupe",
-      "organiser voyage collectif étapes",
-      "planifier voyage entre amis",
-      "voyage de groupe organisation",
-    ],
   },
 };
 
@@ -65,7 +51,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: l.title,
     description: l.description,
-    keywords: l.keywords,
     authors: [{ name: "WePlanify" }],
     openGraph: {
       type: "article",

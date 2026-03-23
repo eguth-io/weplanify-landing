@@ -42,26 +42,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "WePlanify vs TripIt — Best Group Trip Organizer? (2026)",
       description:
         "Detailed comparison of WePlanify and TripIt for group travel planning. See how collaborative polls, shared budgets, and real-time planning stack up against TripIt's booking import and flight alerts.",
-      keywords: [
-        "weplanify vs tripit",
-        "tripit alternative for groups",
-        "tripit group travel",
-        "tripit vs weplanify comparison",
-        "best group trip organizer",
-      ],
     },
     fr: {
       title:
         "WePlanify vs TripIt — Meilleur Organisateur de Voyage de Groupe ? (2026)",
       description:
         "Comparatif détaillé entre WePlanify et TripIt pour organiser un voyage de groupe. Découvrez les différences entre sondages collaboratifs, budgets partagés et les alertes de vol de TripIt.",
-      keywords: [
-        "alternative tripit",
-        "tripit pour groupe",
-        "comparatif tripit",
-        "tripit vs weplanify",
-        "organisateur voyage groupe",
-      ],
     },
   };
 
@@ -70,7 +56,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: loc.title,
     description: loc.description,
-    keywords: loc.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",

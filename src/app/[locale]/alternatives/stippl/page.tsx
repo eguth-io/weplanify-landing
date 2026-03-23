@@ -50,22 +50,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "WePlanify vs Stippl \u2014 Which Travel Planner Is Best for Groups? (2026)",
       description:
         "Detailed comparison of WePlanify and Stippl for group trip planning. Features, pricing, and which travel planner is best for your group.",
-      keywords: [
-        "weplanify vs stippl",
-        "stippl alternative",
-        "stippl vs weplanify group travel",
-      ],
     },
     fr: {
       title:
         "WePlanify vs Stippl \u2014 Quel Planificateur de Voyage Choisir pour un Groupe ? (2026)",
       description:
         "Comparaison d\u00e9taill\u00e9e entre WePlanify et Stippl pour organiser un voyage de groupe. Fonctionnalit\u00e9s, prix et quel planificateur choisir.",
-      keywords: [
-        "alternative stippl",
-        "stippl ou weplanify",
-        "comparatif stippl",
-      ],
     },
   };
 
@@ -74,7 +64,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: loc.title,
     description: loc.description,
-    keywords: loc.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",

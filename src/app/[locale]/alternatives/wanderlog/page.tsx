@@ -50,22 +50,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "WePlanify vs Wanderlog \u2014 Which Group Trip Planner Is Better? (2026)",
       description:
         "Detailed comparison of WePlanify and Wanderlog for group trip planning. Features, pricing, and which app is best for your travel group.",
-      keywords: [
-        "weplanify vs wanderlog",
-        "wanderlog alternative",
-        "wanderlog vs weplanify group trip",
-      ],
     },
     fr: {
       title:
         "WePlanify vs Wanderlog \u2014 Quel Planificateur de Voyage de Groupe Choisir ? (2026)",
       description:
         "Comparaison d\u00e9taill\u00e9e entre WePlanify et Wanderlog pour organiser un voyage de groupe. Fonctionnalit\u00e9s, prix et quelle application choisir.",
-      keywords: [
-        "alternative wanderlog",
-        "wanderlog ou weplanify",
-        "comparatif wanderlog",
-      ],
     },
   };
 
@@ -74,7 +64,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: loc.title,
     description: loc.description,
-    keywords: loc.keywords,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
