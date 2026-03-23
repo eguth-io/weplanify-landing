@@ -13,6 +13,7 @@ const featureSlugs = [
   "packing",
   "polls",
   "transport",
+  "memories",
 ];
 
 /**

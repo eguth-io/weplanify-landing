@@ -49,28 +49,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = {
     en: {
       title:
-        "Best Group Trip Planner Apps 2026 — Complete Comparison | WePlanify",
+        "WePlanify Alternatives & Competitors — Group Trip Planner Comparison Table",
       description:
-        "Compare the best group trip planner apps of 2026. See how WePlanify stacks up against Wanderlog, SquadTrip, Troupe, TripIt and Splitwise for collaborative travel planning.",
+        "Feature-by-feature comparison table: WePlanify vs Wanderlog vs SquadTrip vs TripIt vs Splitwise. Find the right group trip planner for your next adventure.",
       keywords: [
-        "best group trip planner app",
-        "group travel app comparison",
+        "weplanify alternatives",
         "wanderlog alternative",
         "squadtrip alternative",
-        "splitwise alternative",
-        "group trip planning tools 2026",
+        "splitwise alternative for trips",
+        "group trip planner comparison table",
       ],
     },
     fr: {
       title:
-        "Meilleures Applications Voyage de Groupe 2026 — Comparatif Complet | WePlanify",
+        "Alternatives à WePlanify — Tableau Comparatif Applications Voyage de Groupe",
       description:
-        "Comparez les meilleures applications de voyage de groupe en 2026. Découvrez comment WePlanify se compare à Wanderlog, SquadTrip, Troupe, TripIt et Splitwise.",
+        "Tableau comparatif fonctionnalité par fonctionnalité : WePlanify vs Wanderlog vs SquadTrip vs TripIt vs Splitwise. Trouvez l'application idéale pour votre voyage de groupe.",
       keywords: [
-        "meilleure application voyage groupe",
-        "comparatif application voyage groupe",
+        "alternative weplanify",
         "alternative cruzmi",
-        "planificateur voyage groupe 2026",
+        "comparatif application voyage groupe tableau",
+        "planificateur voyage groupe comparaison",
       ],
     },
   };

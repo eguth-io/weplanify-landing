@@ -1,6 +1,6 @@
 # WePlanify — Strategie SEO Complete
 
-> Document vivant. Derniere mise a jour : 19 mars 2026.
+> Document vivant. Derniere mise a jour : 23 mars 2026.
 
 ---
 
@@ -303,6 +303,48 @@ Chaque page : ~1000 mots, comparaison honnete feature par feature, conclusion or
 | Backlinks | Ahrefs / GSC | 20+ | 50+ |
 | Taux de rebond pages SEO | GA4 | < 70% | < 60% |
 | Conversions depuis organique | GA4 | Tracking en place | 50 signups/mois |
+
+### Snapshot GSC — 21 fev au 21 mars 2026
+
+**Vue d'ensemble :**
+- Impressions totales : ~459 (en forte hausse, spike a 52/jour le 19 mars)
+- Clics totaux : 7
+- CTR moyen : 1.5%
+- Position moyenne : ~6
+- 14 URLs avec impressions, ~25 requetes detectees
+
+**Par pays :**
+| Pays | Impressions | Clics | Position moy. |
+|------|------------|-------|---------------|
+| France | 81 | 7 | 3.9 |
+| Canada | 8 | 0 | 4.75 |
+| India | 8 | 0 | 3.5 |
+| UK | 7 | 0 | 8 |
+
+**Top pages (non-brande) :**
+| Page | Impressions | Clics | Position |
+|------|------------|-------|----------|
+| `/en/alternatives/best-group-trip-planner-apps` | 37 | 0 | 14.6 |
+| `/fr/features/polls` | 30 | 0 | 3.6 |
+| `/fr/features/planning` | 26 | 1 | 2.7 |
+| `/en/features/collaboration` | 24 | 1 | 5.7 |
+| `/en/features/planning` | 19 | 0 | 5.9 |
+
+**Requetes non-brandees detectees :**
+| Requete | Page | Position |
+|---------|------|----------|
+| group trip organizer | /alternatives/best-group-trip-planner-apps | 1 |
+| group travel planner | /fr | 2 |
+| group trip planner | /fr | 3 |
+| best group vacation planner app | /alternatives/best-group-trip-planner-apps | 3 |
+| build ai trip planner | / | 5 |
+| sondage | /fr/features/polls | 10 |
+
+**Problemes identifies :**
+1. Cannibalisation : "group trip planner" apparait sur /fr (pos 3) ET /alternatives (pos 24)
+2. /fr/features/polls : 30 imp, pos 3.6, CTR 0% — title/meta a revoir
+3. Trafic 100% France — marche anglophone inexploite
+4. Spike d'impressions 18-21 mars (x10) — surveiller si tendance durable
 
 ### Mots-cles prioritaires a tracker
 
