@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/lib/tracking";
 
 interface FAQItem {
   question: string;
@@ -26,7 +27,11 @@ export default function FAQSupport({ data }: FAQSupportProps) {
   }
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? -1 : index);
+    const isOpening = openIndex !== index;
+    setOpenIndex(isOpening ? index : -1);
+    if (isOpening) {
+      trackEvent("faq_toggle", { question: data.items[index].question });
+    }
   };
 
   const faqSchema = {

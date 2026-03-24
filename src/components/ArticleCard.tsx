@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { trackEvent } from "@/lib/tracking";
 import Image from "next/image";
 import { BlogPost, BlogPostPreview } from "@/sanity/lib/type";
 
@@ -10,6 +13,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
   return (
     <Link
       href={`/blog/${article.slug?.current || '#'}`}
+      onClick={() => trackEvent("blog_article_click", { title: article.title })}
       className="group block"
     >
       <div className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-sm transition-shadow duration-300">

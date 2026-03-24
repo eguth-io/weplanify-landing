@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
+import { trackEvent } from "@/lib/tracking";
 
 interface ContactFormData {
   email: string;
@@ -47,9 +48,11 @@ export default function ContactForm() {
           email: '',
           content: ''
         });
+        trackEvent("contact_form_submit", { status: "success" });
         alert("Message sent! We will get back to you as soon as possible.");
       } else {
         const errorData = await response.json().catch(() => ({}));
+        trackEvent("contact_form_submit", { status: "error" });
         alert(errorData.message || 'An error occurred while sending the message.');
       }
     } catch {
