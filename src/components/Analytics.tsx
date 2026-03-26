@@ -1,42 +1,18 @@
 "use client";
 
 import Script from "next/script";
-import { useState, useEffect } from "react";
 
 const GTM_ID = "GTM-MJHJL7Q2";
 
 /**
- * Analytics component — loads GTM only after cookie consent is granted.
- * Listens for "consent_granted" event dispatched by CookieConsent component.
- * Also checks localStorage on mount in case consent was already given in a previous session.
+ * Analytics component — always loads GTM with consent defaults set to "denied".
+ * The CookieConsent component handles granting consent via a consent "update" command,
+ * which triggers GTM to fire tags that were waiting for consent.
  */
 export function Analytics() {
-  const [consentGiven, setConsentGiven] = useState(false);
-
-  useEffect(() => {
-    // Check if consent was already granted in a previous session
-    try {
-      const stored = localStorage.getItem("weplanify_consent");
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        if (parsed.state === "granted") {
-          setConsentGiven(true);
-          return;
-        }
-      }
-    } catch {
-      // ignore
-    }
-
-    // Listen for consent event from CookieConsent component
-    const handleConsent = () => setConsentGiven(true);
-    window.addEventListener("consent_granted", handleConsent);
-    return () => window.removeEventListener("consent_granted", handleConsent);
-  }, []);
-
-  if (!consentGiven) {
-    // Even without consent, initialize dataLayer + consent mode defaults
-    return (
+  return (
+    <>
+      {/* Consent Mode v2 defaults — must be BEFORE GTM */}
       <Script id="consent-defaults" strategy="beforeInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
@@ -53,29 +29,8 @@ export function Analytics() {
           });
         `}
       </Script>
-    );
-  }
 
-  return (
-    <>
-      {/* Consent defaults (must be before GTM) */}
-      <Script id="consent-defaults" strategy="beforeInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('consent', 'default', {
-            'ad_storage': 'granted',
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted',
-            'analytics_storage': 'granted',
-            'functionality_storage': 'granted',
-            'personalization_storage': 'granted',
-            'security_storage': 'granted'
-          });
-        `}
-      </Script>
-
-      {/* Google Tag Manager */}
+      {/* Google Tag Manager — always loaded, respects consent mode */}
       <Script id="google-tag-manager" strategy="afterInteractive">
         {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
