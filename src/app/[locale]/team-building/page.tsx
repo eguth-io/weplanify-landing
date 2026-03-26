@@ -5,16 +5,17 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
-import FloatingCards from "@/components/FloatingCards";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
+import FadeIn from "@/components/FadeIn";
+import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
 
-type Props = {
-  params: Promise<{ locale: string }>;
-};
+type Props = { params: Promise<{ locale: string }> };
+const SITE_URL = "https://www.weplanify.com";
+const PATHNAME = "/team-building";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -22,620 +23,321 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const metadata = await generateMetadataFromSanity(locale, "/team-building");
-
+  const metadata = await generateMetadataFromSanity(locale, PATHNAME);
   const isEn = locale === "en";
   const title = isEn
     ? "Plan a Team Building Trip — Corporate Retreat Planner | WePlanify"
-    : "Séminaire d'Entreprise — Planificateur Team Building | WePlanify";
+    : "Organiser un Séminaire d'Entreprise — Planificateur Team Building | WePlanify";
   const description = isEn
-    ? "Organize your next team offsite with WePlanify. Vote on activities, manage budgets, and plan the perfect retreat — free."
-    : "Organisez votre prochain séminaire avec WePlanify. Votez sur les activités, gérez le budget et planifiez le séjour parfait.";
+    ? "Plan your next team building trip or corporate retreat with WePlanify. Manage group logistics, coordinate activities, track shared budgets, and keep the whole team aligned."
+    : "Organisez votre prochain séminaire ou voyage d'entreprise avec WePlanify. Gérez la logistique de groupe, coordonnez les activités, suivez le budget et gardez toute l'équipe alignée.";
+  const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
   return {
-    ...metadata,
-    title,
-    description,
-    openGraph: {
-      ...metadata.openGraph,
-      title,
-      description,
-    },
-    twitter: {
-      ...metadata.twitter,
-      title,
-      description,
-    },
+    ...metadata, title, description,
+    authors: [{ name: "Alex Martin" }],
+    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl },
+    twitter: { ...metadata.twitter, title, description },
+    alternates: { canonical: currentUrl, languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` } },
   };
 }
-
-const content = {
-  en: {
-    heroTag: "Team Building, Organized",
-    heroTitle: "Plan a Team Building Trip\nYour Team Will Remember",
-    heroDescription:
-      "Corporate retreats and team offsites shouldn't be a logistical nightmare. WePlanify gives organizers and teams a shared space to plan activities, vote on options, and track the budget — without the spreadsheet chaos.",
-    heroCta: "Start planning for free",
-    painPointsTitle: "Corporate Trip Struggles",
-    painPointsSubtitle:
-      "Organizing a company offsite is rewarding — but the logistics can be overwhelming.",
-    painPoints: [
-      {
-        icon: "📊",
-        title: "Spreadsheet Overload",
-        description:
-          "Managing RSVPs, preferences, dietary restrictions, room assignments, and activities across multiple spreadsheets is a full-time job nobody signed up for.",
-      },
-      {
-        icon: "🤷",
-        title: "Low Engagement",
-        description:
-          "Team members don't feel invested in activities they didn't choose. Without input, retreats feel like mandatory fun rather than genuine bonding.",
-      },
-      {
-        icon: "💼",
-        title: "Budget Accountability",
-        description:
-          "Company money means company accountability. Tracking every expense across multiple vendors and getting approvals is tedious but necessary.",
-      },
-      {
-        icon: "📧",
-        title: "Email Thread Hell",
-        description:
-          "Important decisions buried in 47-reply email chains. Attachments lost, conflicting information, and half the team hasn't even read it.",
-      },
-    ],
-
-    solutionTitle: "How WePlanify Makes Team Building Easy",
-    solutionSubtitle:
-      "Give your team a voice in planning and give yourself the tools to organize it all.",
-    solutions: [
-      {
-        title: "Shared Trip Workspace",
-        description:
-          "One central hub for your entire offsite. Everyone sees the schedule, knows what's planned, and can contribute ideas — from day one.",
-        link: "/features/planning",
-        linkText: "Learn about planning",
-        color: "bg-[#EEF899]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Team Polls & Voting",
-        description:
-          "Let the team vote on activities, restaurants, and free-time options. Engagement goes up when people have a say in what happens.",
-        link: "/features/polls",
-        linkText: "Discover polls",
-        color: "bg-[#61DBD5]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Transparent Budget Tracking",
-        description:
-          "Track every line item in real time. Share the budget breakdown with stakeholders and keep spending on track — no surprises when the invoice comes.",
-        link: "/features/budget",
-        linkText: "Explore budget tools",
-        color: "bg-[#001E13]",
-        textColor: "text-[#FFFBF5]",
-      },
-      {
-        title: "Packing & Logistics Checklists",
-        description:
-          "Share what to bring, dress codes, travel documents needed, and logistics details. Everyone arrives prepared.",
-        link: "/features/packing",
-        linkText: "See packing lists",
-        color: "bg-[#F6391A]",
-        textColor: "text-[#FFFBF5]",
-      },
-    ],
-
-    stepsTitle: "3 Steps to Plan Your Team Offsite",
-    stepsSubtitle:
-      "From budget approval to post-retreat high-fives — streamlined.",
-    steps: [
-      {
-        step: "1",
-        title: "Create Your Event",
-        description:
-          "Set up your team retreat, add dates and location, and invite the team with a single link. Everyone joins instantly.",
-      },
-      {
-        step: "2",
-        title: "Plan Collaboratively",
-        description:
-          "Let the team vote on activities, build the schedule together, assign logistics, and track the company budget in real time.",
-      },
-      {
-        step: "3",
-        title: "Execute Flawlessly",
-        description:
-          "Share final logistics, packing checklists, and the complete itinerary. Everyone shows up prepared and excited.",
-      },
-    ],
-
-    faqTitle: "Frequently Asked Questions",
-    faqItems: [
-      {
-        q: "Is WePlanify suitable for corporate events?",
-        a: "Yes. WePlanify works for teams of any size — from a 5-person startup offsite to a 50-person company retreat. The collaborative features (polls, budgets, shared itineraries) are designed for group coordination.",
-      },
-      {
-        q: "Can I control the budget visibility?",
-        a: "The budget tracker lets you share or keep certain expenses visible to the team. As an organizer, you maintain full control over what's shared.",
-      },
-      {
-        q: "Is there a cost for companies?",
-        a: "WePlanify is completely free — no enterprise pricing, no per-seat fees, no hidden costs. All features are available at no charge.",
-      },
-    ],
-
-    ctaTitle: "Your Next Team Retreat Starts Here",
-    ctaDescription:
-      "Join companies that use WePlanify to organize engaging team building trips. It's free, collaborative, and your team will actually enjoy the planning process.",
-    ctaButton: "Start planning your retreat",
-  },
-  fr: {
-    heroTag: "Team Building, Bien Organisé",
-    heroTitle: "Organisez un Séminaire\nDont Votre Équipe Se Souviendra",
-    heroDescription:
-      "Les séminaires d'entreprise et voyages team building ne devraient pas être un cauchemar logistique. WePlanify offre aux organisateurs et aux équipes un espace partagé pour planifier les activités, voter et suivre le budget — sans le chaos des tableurs.",
-    heroCta: "Commencer gratuitement",
-    painPointsTitle: "Les Galères du Séminaire d'Entreprise",
-    painPointsSubtitle:
-      "Organiser un séjour d'entreprise est gratifiant — mais la logistique peut être accablante.",
-    painPoints: [
-      {
-        icon: "📊",
-        title: "Overdose de Tableurs",
-        description:
-          "Gérer les inscriptions, préférences, restrictions alimentaires, attributions de chambres et activités dans plusieurs tableurs est un travail à plein temps pour lequel personne ne s'est porté volontaire.",
-      },
-      {
-        icon: "🤷",
-        title: "Engagement Faible",
-        description:
-          "Les membres de l'équipe ne se sentent pas investis dans des activités qu'ils n'ont pas choisies. Sans participation, les séminaires ressemblent à du fun obligatoire plutôt qu'à du vrai team building.",
-      },
-      {
-        icon: "💼",
-        title: "Responsabilité Budgétaire",
-        description:
-          "L'argent de l'entreprise implique des comptes à rendre. Suivre chaque dépense auprès de multiples prestataires et obtenir les validations est fastidieux mais nécessaire.",
-      },
-      {
-        icon: "📧",
-        title: "Enfer des Mails",
-        description:
-          "Les décisions importantes noyées dans des fils de 47 réponses. Pièces jointes perdues, informations contradictoires, et la moitié de l'équipe n'a même pas lu.",
-      },
-    ],
-
-    solutionTitle: "Comment WePlanify Facilite le Team Building",
-    solutionSubtitle:
-      "Donnez une voix à votre équipe dans la planification et donnez-vous les outils pour tout organiser.",
-    solutions: [
-      {
-        title: "Espace de Travail Partagé",
-        description:
-          "Un hub central pour tout votre séjour. Tout le monde voit le programme, sait ce qui est prévu et peut contribuer des idées — dès le premier jour.",
-        link: "/features/planning",
-        linkText: "Découvrir la planification",
-        color: "bg-[#EEF899]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Sondages & Votes d'Équipe",
-        description:
-          "Laissez l'équipe voter sur les activités, les restaurants et les options de temps libre. L'engagement monte quand les gens ont leur mot à dire.",
-        link: "/features/polls",
-        linkText: "Découvrir les sondages",
-        color: "bg-[#61DBD5]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Suivi de Budget Transparent",
-        description:
-          "Suivez chaque poste de dépense en temps réel. Partagez le détail du budget avec les décideurs et gardez les dépenses sous contrôle.",
-        link: "/features/budget",
-        linkText: "Explorer le budget",
-        color: "bg-[#001E13]",
-        textColor: "text-[#FFFBF5]",
-      },
-      {
-        title: "Checklists Logistique & Bagages",
-        description:
-          "Partagez quoi apporter, les codes vestimentaires, les documents de voyage nécessaires et les détails logistiques. Tout le monde arrive préparé.",
-        link: "/features/packing",
-        linkText: "Voir les listes",
-        color: "bg-[#F6391A]",
-        textColor: "text-[#FFFBF5]",
-      },
-    ],
-
-    stepsTitle: "3 Étapes pour Organiser Votre Séminaire",
-    stepsSubtitle:
-      "De la validation du budget aux high-fives post-séminaire — simplifié.",
-    steps: [
-      {
-        step: "1",
-        title: "Créez Votre Événement",
-        description:
-          "Configurez votre séminaire, ajoutez les dates et le lieu, et invitez l'équipe avec un seul lien. Tout le monde rejoint instantanément.",
-      },
-      {
-        step: "2",
-        title: "Planifiez Ensemble",
-        description:
-          "Laissez l'équipe voter sur les activités, construisez le programme ensemble, assignez la logistique et suivez le budget en temps réel.",
-      },
-      {
-        step: "3",
-        title: "Exécutez Sans Accroc",
-        description:
-          "Partagez la logistique finale, les checklists et l'itinéraire complet. Tout le monde arrive préparé et motivé.",
-      },
-    ],
-
-    faqTitle: "Questions Fréquemment Posées",
-    faqItems: [
-      {
-        q: "WePlanify est-il adapté aux événements d'entreprise ?",
-        a: "Oui. WePlanify fonctionne pour les équipes de toutes tailles — d'un séjour startup de 5 personnes à un séminaire de 50 collaborateurs. Les fonctionnalités collaboratives (sondages, budgets, itinéraires partagés) sont conçues pour la coordination de groupe.",
-      },
-      {
-        q: "Puis-je contrôler la visibilité du budget ?",
-        a: "Le suivi de budget vous permet de partager ou garder certaines dépenses visibles pour l'équipe. En tant qu'organisateur, vous gardez le contrôle total sur ce qui est partagé.",
-      },
-      {
-        q: "Y a-t-il un coût pour les entreprises ?",
-        a: "WePlanify est entièrement gratuit — pas de tarif entreprise, pas de frais par utilisateur, pas de coûts cachés. Toutes les fonctionnalités sont disponibles gratuitement.",
-      },
-    ],
-
-    ctaTitle: "Votre Prochain Séminaire Commence Ici",
-    ctaDescription:
-      "Rejoignez les entreprises qui utilisent WePlanify pour organiser des séjours team building engageants. C'est gratuit, collaboratif, et votre équipe appréciera le processus de planification.",
-    ctaButton: "Commencer à planifier",
-  },
-};
 
 export default async function TeamBuildingPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const isEn = locale === "en";
 
-  const t = locale === "fr" ? content.fr : content.en;
-
-  const [navData, navigationData, footerData]: [
-    NavType,
-    Navigation | null,
-    FooterType | null
-  ] = await Promise.all([
-    sanityFetch<NavType>({
-      query: navQuery,
-      params: { locale },
-      tags: ["nav"],
-    }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] =
+    await Promise.all([
+      sanityFetch<NavType>({ query: navQuery, params: { locale }, tags: ["nav"] }),
+      sanityFetch<Navigation>({ query: navigationQuery, params: { locale }, tags: ["navigation"] }),
+      sanityFetch<FooterType>({ query: footerQuery, params: { locale }, tags: ["footer"] }),
+    ]);
 
   const breadcrumbLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
-        item: `https://www.weplanify.com/${locale}`,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: locale === "fr" ? "Team Building" : "Team Building",
-        item: `https://www.weplanify.com/${locale}/team-building`,
-      },
+      { "@type": "ListItem", position: 1, name: isEn ? "Home" : "Accueil", item: `${SITE_URL}/${locale}` },
+      { "@type": "ListItem", position: 2, name: "Team Building", item: `${SITE_URL}/${locale}${PATHNAME}` },
     ],
   };
 
+  const articleLd = {
+    "@context": "https://schema.org", "@type": "Article",
+    headline: isEn ? "Plan a Team Building Trip That People Actually Want to Go On" : "Organisez un Séminaire d'Entreprise où les Gens Veulent Vraiment Aller",
+    author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
+    publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
+    datePublished: "2026-03-19", dateModified: "2026-03-26",
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
+  };
+
+  const faqItems = isEn
+    ? [
+        { q: "Can WePlanify handle large teams (20+ people)?", a: "Yes. There's no limit on group size. Every team member joins with a shared link and can see the itinerary, vote in polls, and track expenses. For very large groups, you can use sub-groups within the trip for different activity tracks." },
+        { q: "How do you manage expenses when the company is paying?", a: "Use the budget tracker to log all expenses in real time. Tag expenses by category (accommodation, meals, activities, transport) for easy reporting. At the end of the trip, export a clean summary for finance or reimbursement. You can separate company-paid from personal expenses." },
+        { q: "Can we include remote team members in the planning?", a: "Absolutely. WePlanify works in the browser — no app to download. Share the trip link and remote team members can contribute ideas, vote on activities, and see the full itinerary from anywhere. It's designed for distributed collaboration." },
+        { q: "How far ahead should we plan a team retreat?", a: "Two to three months minimum for domestic retreats, four to six months for international ones. Large group accommodation books up fast, and people need advance notice to block their calendars. Start a WePlanify trip early to gather input even before details are finalized." },
+        { q: "What types of team trips work best?", a: "It depends on your goals. Problem-solving teams benefit from adventure activities (escape rooms, outdoor challenges). Creative teams thrive with unstructured exploration (city trips, cultural experiences). New teams need icebreaker-friendly formats. Use polls to gauge what your team actually wants — you might be surprised." },
+        { q: "How do you pitch a team trip to management?", a: "Focus on outcomes: improved communication, stronger cross-team relationships, reduced remote isolation. Frame it as an investment in retention and productivity, not an expense. Provide a clear budget breakdown using WePlanify's tracker — showing transparency makes approval much easier." },
+      ]
+    : [
+        { q: "WePlanify gère-t-il les grandes équipes (20+ personnes) ?", a: "Oui. Il n'y a pas de limite de taille de groupe. Chaque membre rejoint avec un lien partagé et peut voir l'itinéraire, voter et suivre les dépenses. Pour les très grands groupes, vous pouvez utiliser des sous-groupes pour différentes activités." },
+        { q: "Comment gérer les dépenses quand l'entreprise paie ?", a: "Utilisez le suivi de budget pour enregistrer toutes les dépenses en temps réel. Catégorisez-les (hébergement, repas, activités, transport) pour faciliter le reporting aux finances. En fin de séminaire, exportez un résumé propre pour les finances. Vous pouvez séparer les frais entreprise des frais personnels." },
+        { q: "Les collègues en remote peuvent-ils participer à la planification ?", a: "Absolument. WePlanify fonctionne dans le navigateur — rien à télécharger. Partagez le lien et les collègues distants peuvent contribuer, voter et voir l'itinéraire complet depuis n'importe où. C'est conçu pour la collaboration distribuée." },
+        { q: "Combien de temps avant faut-il planifier un séminaire ?", a: "Deux à trois mois minimum pour les séminaires nationaux, quatre à six mois pour l'international. Les hébergements grande capacité se réservent vite et les gens ont besoin de temps pour bloquer leurs agendas. Créez un voyage WePlanify tôt pour recueillir les avis." },
+        { q: "Quels types de séminaires fonctionnent le mieux ?", a: "Ça dépend de vos objectifs. Les équipes de résolution de problèmes profitent des activités aventure (escape rooms, défis outdoor). Les équipes créatives s'épanouissent avec l'exploration libre (city trips, expériences culturelles). Les nouvelles équipes ont besoin de formats brise-glace. Utilisez les sondages pour savoir ce que votre équipe veut vraiment." },
+        { q: "Comment convaincre la direction d'organiser un séminaire ?", a: "Concentrez-vous sur les résultats : meilleure communication, relations inter-équipes plus fortes, réduction de l'isolement remote. Présentez-le comme un investissement en rétention et productivité, pas une dépense. Fournissez un budget détaillé via le suivi WePlanify — la transparence facilite grandement l'approbation." },
+      ];
+
   const faqLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: t.faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.a,
-      },
-    })),
+    "@context": "https://schema.org", "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })),
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
-      />
+      <AuthorJsonLd />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <Nav navData={navData} navigationData={navigationData} />
-      <main className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative pt-[120px] lg:pt-[140px] pb-8 lg:pb-10 px-4 lg:px-8">
-          <div className="max-w-[1536px] mx-auto">
+
+      <main className="min-h-screen bg-[#FFFBF5]">
+
+        {/* ━━━ HERO ━━━ */}
+        <section className="pt-[140px] lg:pt-[200px] pb-16 lg:pb-24 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
             <div className="hidden lg:block mb-8">
-              <Breadcrumb
-                items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-                  { label: "Team Building" },
-                ]}
-              />
+              <Breadcrumb items={[
+                { label: isEn ? "Home" : "Accueil", href: `/${locale}` },
+                { label: "Team Building" },
+              ]} />
+            </div>
+            <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-6">
+              {isEn ? "Corporate & Team Trips" : "Séminaires & Voyages d'Équipe"}
+            </p>
+            <h1 className="text-[#001E13] text-[38px] lg:text-[72px] font-londrina-solid leading-[1.02] mb-6">
+              {isEn
+                ? "Plan a Team Trip People Actually Want to Go On"
+                : "Organisez un Séminaire où les Gens Veulent Vraiment Aller"}
+            </h1>
+            <p className="text-[#001E13]/70 text-lg lg:text-[22px] font-karla leading-[1.8] mb-6">
+              {isEn
+                ? "Team retreats fail when one person plans everything, nobody gets a say, and the activities feel forced. Here's how to organize one that your team will actually enjoy — and that delivers real results."
+                : "Les séminaires échouent quand une seule personne planifie tout, personne n'a son mot à dire et les activités semblent forcées. Voici comment en organiser un que votre équipe appréciera vraiment — et qui donnera de vrais résultats."}
+            </p>
+            <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "9 min read" : "9 min de lecture"}</p>
+            <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-26" />
+          </div>
+        </section>
+
+        {/* ━━━ WHY MOST TEAM TRIPS FAIL ━━━ */}
+        <section className="pb-16 lg:pb-24 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-8">
+              {isEn ? "Why Most Team Trips Miss the Mark" : "Pourquoi la Plupart des Séminaires Ratent leur Objectif"}
+            </h2>
+            <div className="space-y-8">
+              <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? "Most corporate retreats are organized top-down: someone in HR or management picks a venue, books some activities, sends out a calendar invite, and hopes for the best. The result? Half the team dreads the forced fun, the other half is confused about the schedule, and the organizer is burned out before the first team dinner."
+                  : "La plupart des séminaires sont organisés de haut en bas : quelqu'un aux RH ou au management choisit un lieu, réserve des activités, envoie une invitation agenda et espère que tout ira bien. Le résultat ? La moitié de l'équipe redoute le fun forcé, l'autre est perdue sur le planning, et l'organisateur est épuisé avant le premier dîner d'équipe."}
+              </p>
+              <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? "The fix isn't better activities — it's better process. When people have a say in where they go and what they do, they show up with energy instead of obligation. When expenses are tracked transparently, there are no awkward reimbursement conversations. When the schedule is visible to everyone, nobody shows up to the wrong lobby at the wrong time."
+                  : "La solution, ce n'est pas de meilleures activités — c'est un meilleur processus. Quand les gens ont leur mot à dire sur où ils vont et ce qu'ils font, ils arrivent avec de l'énergie au lieu de l'obligation. Quand les dépenses sont suivies de manière transparente, il n'y a pas de conversations gênantes sur les remboursements. Quand le planning est visible par tous, personne ne se trompe de hall d'hôtel."}
+              </p>
+              <p className="text-[#001E13] text-lg lg:text-[22px] font-karla font-bold leading-[1.8]">
+                {isEn
+                  ? "WePlanify brings the whole team into the planning. Not just the organizer."
+                  : "WePlanify implique toute l'équipe dans la planification. Pas seulement l'organisateur."}
+              </p>
             </div>
           </div>
-          <div className="max-w-[1536px] mx-auto">
-            <div className="relative overflow-hidden rounded-[24px] lg:rounded-[40px] bg-[#001E13]">
-              {/* Decorative gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#001E13] via-[#001E13] to-[#0a3d2a] opacity-100" />
-              <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#61DBD5]/10 to-transparent" />
+        </section>
 
-              <div className="relative z-10 px-6 lg:px-16 xl:px-20 py-16 lg:py-24 xl:py-32 flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-0">
-                <div className="text-center lg:text-left lg:w-1/2">
-                  <span className="inline-block bg-[#EEF899] text-[#001E13] px-4 py-1.5 rounded-full text-sm lg:text-base font-nanum-pen mb-6">
-                    {t.heroTag}
-                  </span>
-
-                  <h1 className="text-[#FFFBF5] text-3xl lg:text-5xl xl:text-[56px] font-londrina-solid leading-tight mb-6 whitespace-pre-line">
-                    {t.heroTitle}
-                  </h1>
-
-                  <p className="text-[#FFFBF5]/85 text-base lg:text-lg font-karla leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                    {t.heroDescription}
-                  </p>
-
-                  <div className="flex flex-col gap-2 items-center lg:items-start">
-                    <Link href="https://app.weplanify.com/register">
-                      <PulsatingButton className="font-karla font-bold">
-                        {t.heroCta}
-                      </PulsatingButton>
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Floating UI cards animation */}
-                <div className="hidden lg:block lg:w-1/2 relative">
-                  <FloatingCards />
-                </div>
+        {/* ━━━ TYPES OF TEAM TRIPS ━━━ */}
+        <FadeIn>
+          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+            <div className="max-w-[1000px] mx-auto">
+              <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
+                {isEn ? "Types of Team Trips" : "Types de Séminaires"}
+              </h2>
+              <p className="text-[#FFFBF5]/50 font-karla text-base lg:text-lg mb-14 max-w-[600px]">
+                {isEn
+                  ? "Different objectives call for different formats. Pick the one that matches your team's needs."
+                  : "Différents objectifs appellent différents formats. Choisissez celui qui correspond aux besoins de votre équipe."}
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+                {(isEn
+                  ? [
+                      { title: "The Classic Retreat", desc: "2-3 days at a countryside venue. Mix of workshops, outdoor activities, and free time. Works best for annual company-wide meetups and strategic planning sessions.", color: "bg-[#EEF899]" },
+                      { title: "The City Offsite", desc: "A vibrant city for 2-4 days. Office coworking in the morning, exploration and team dinners in the evening. Ideal for remote teams meeting in person for the first time.", color: "bg-[#61DBD5]" },
+                      { title: "The Adventure Trip", desc: "Hiking, rafting, climbing, skiing — something physical that pushes people out of comfort zones together. Best for small, tight-knit teams. Creates strong bonds fast.", color: "bg-[#F6391A]" },
+                      { title: "The Working Retreat", desc: "Part work, part play. A week-long trip where mornings are productive sprints and afternoons are free. Great for startups and distributed teams who need focused time together.", color: "bg-white" },
+                    ]
+                  : [
+                      { title: "Le Séminaire Classique", desc: "2-3 jours dans un lieu à la campagne. Mix d'ateliers, activités outdoor et temps libre. Fonctionne pour les rencontres annuelles et la planification stratégique.", color: "bg-[#EEF899]" },
+                      { title: "L'Offsite Urbain", desc: "Une ville dynamique pour 2-4 jours. Coworking le matin, exploration et dîners d'équipe le soir. Idéal pour les équipes remote qui se rencontrent pour la première fois.", color: "bg-[#61DBD5]" },
+                      { title: "Le Trip Aventure", desc: "Randonnée, rafting, escalade, ski — du physique qui pousse les gens hors de leur zone de confort ensemble. Parfait pour les petites équipes soudées.", color: "bg-[#F6391A]" },
+                      { title: "La Retraite de Travail", desc: "Moitié travail, moitié détente. Une semaine où les matins sont des sprints productifs et les après-midi sont libres. Idéal pour les startups et équipes distribuées.", color: "bg-white" },
+                    ]
+                ).map((type, i) => {
+                  const isDark = type.color === "bg-[#F6391A]";
+                  const isWhite = type.color === "bg-white";
+                  const textColor = isDark ? "text-[#FFFBF5]" : "text-[#001E13]";
+                  const descColor = isDark ? "text-[#FFFBF5]/70" : isWhite ? "text-[#001E13]/65" : "text-[#001E13]/70";
+                  return (
+                    <div key={i} className={`${type.color} rounded-[20px] lg:rounded-[28px] p-6 lg:p-8 ${isWhite ? "border border-[#001E13]/10" : ""}`}>
+                      <h3 className={`${textColor} text-xl lg:text-2xl font-londrina-solid mb-3`}>{type.title}</h3>
+                      <p className={`${descColor} text-sm lg:text-base font-karla leading-[1.8]`}>{type.desc}</p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </FadeIn>
 
-        {/* Pain Points Section */}
-        <section className="pt-10 lg:pt-14 pb-16 lg:pb-24 px-4 lg:px-8">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
-                {t.painPointsTitle}
-              </h2>
-              <p className="text-[#001E13]/70 text-base lg:text-lg font-karla max-w-2xl mx-auto leading-relaxed">
-                {t.painPointsSubtitle}
+        {/* ━━━ HOW TO PITCH IT ━━━ */}
+        <section className="py-20 lg:py-28 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10">
+              {isEn ? "How to Pitch It to Your Boss" : "Comment Convaincre Votre Direction"}
+            </h2>
+            <div className="space-y-8">
+              <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? "The secret to getting a team trip approved is framing it as an investment, not an expense. Remote and hybrid teams in particular suffer from weak cross-team relationships — the kind of bonds that only form in person. A well-planned retreat pays for itself in improved collaboration, reduced turnover, and better onboarding for new hires."
+                  : "Le secret pour faire approuver un séminaire, c'est de le présenter comme un investissement, pas une dépense. Les équipes remote et hybrides souffrent particulièrement de relations inter-équipes faibles — le genre de liens qui ne se forment qu'en personne. Un séminaire bien planifié se rembourse en meilleure collaboration, turnover réduit et meilleur onboarding."}
+              </p>
+              <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? "Come with a budget breakdown, not just a vague ask. Use WePlanify's budget tracker to model costs per person across accommodation, transport, activities, and meals. Showing a transparent, itemized plan is infinitely more convincing than \"it'll cost around €500 per person, probably.\""
+                  : "Venez avec un budget détaillé, pas une demande vague. Utilisez le suivi de budget WePlanify pour modéliser les coûts par personne (hébergement, transport, activités, repas). Montrer un plan transparent et détaillé est infiniment plus convaincant que « ça coûtera environ 500€ par personne, à peu près »."}
               </p>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-              {t.painPoints.map((point, index) => (
-                <div
-                  key={index}
-                  className="bg-[#FFFBF5] border border-[#001E13]/10 rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300"
-                >
-                  <span className="text-3xl lg:text-4xl mb-4 block">
-                    {point.icon}
-                  </span>
-                  <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#001E13] mb-3">
-                    {point.title}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm lg:text-base leading-relaxed">
-                    {point.description}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
-        {/* Solutions Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
-                {t.solutionTitle}
-              </h2>
-              <p className="text-[#001E13]/70 text-base lg:text-lg font-karla max-w-2xl mx-auto leading-relaxed">
-                {t.solutionSubtitle}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-              {t.solutions.map((solution, index) => (
-                <div
-                  key={index}
-                  className={`${solution.color} rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 flex flex-col justify-between min-h-[240px]`}
-                >
-                  <div>
-                    <h3
-                      className={`text-xl lg:text-2xl font-londrina-solid ${solution.textColor} mb-3`}
-                    >
-                      <Link href={`/${locale}${solution.link}`} className={`${solution.textColor} font-londrina-solid no-underline hover:underline underline-offset-4`}>
-                        {solution.title}
-                      </Link>
-                    </h3>
-                    <p
-                      className={`${solution.textColor} opacity-80 font-karla text-sm lg:text-base leading-relaxed mb-6`}
-                    >
-                      {solution.description}
-                    </p>
-                  </div>
-                  <div>
-                    <Link
-                      href={`/${locale}${solution.link}`}
-                      className={`${solution.textColor} font-karla font-bold text-sm lg:text-base underline underline-offset-4 hover:opacity-70 transition-opacity`}
-                    >
-                      {solution.linkText} &rarr;
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
+        {/* ━━━ PULL QUOTE ━━━ */}
+        <section className="bg-[#EEF899] py-16 lg:py-24 px-6 lg:px-12">
+          <div className="max-w-[1000px] mx-auto">
+            <p className="text-[#001E13] text-[24px] lg:text-[44px] font-londrina-solid leading-[1.12]">
+              {isEn
+                ? "The best team retreats don't feel like mandatory fun — they feel like a trip you'd go on even if work wasn't paying."
+                : "Les meilleurs séminaires ne ressemblent pas à du fun obligatoire — ils ressemblent à un voyage que vous feriez même si le boulot ne payait pas."}
+            </p>
           </div>
         </section>
 
-        {/* Steps Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
-                {t.stepsTitle}
-              </h2>
-              <p className="text-[#001E13]/70 text-base lg:text-lg font-karla max-w-2xl mx-auto leading-relaxed">
-                {t.stepsSubtitle}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-              {t.steps.map((step, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-16 h-16 lg:w-20 lg:h-20 bg-[#F6391A] rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-[#FFFBF5] text-2xl lg:text-3xl font-londrina-solid">
-                      {step.step}
-                    </span>
-                  </div>
-                  <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#001E13] mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm lg:text-base leading-relaxed max-w-sm mx-auto">
-                    {step.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
-          <div className="max-w-[800px] mx-auto">
-            <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
-              {t.faqTitle}
+        {/* ━━━ HOW WEPLANIFY HELPS ━━━ */}
+        <section className="py-20 lg:py-28 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10 lg:mb-14">
+              {isEn ? "How WePlanify Helps Teams" : "Comment WePlanify Aide les Équipes"}
             </h2>
             <div className="space-y-6">
-              {t.faqItems.map((item, i) => (
-                <details
-                  key={i}
-                  className="group border-b border-[#001E13]/10 pb-5"
-                >
+              {(isEn
+                ? [
+                    ["Let the team vote", "Use polls to decide on destinations, dates, and activities. When people choose what they do, they actually look forward to it. Anonymous voting removes hierarchy from the decision.", "/features/polls"],
+                    ["One itinerary everyone can see", "Build the schedule collaboratively. Mark what's mandatory (the strategy session) vs. optional (the hike). Changes sync in real time — no more emailing updated PDFs.", "/features/planning"],
+                    ["Transparent budgeting", "Track every expense in real time. Tag by category for easy reporting to finance. Separate company expenses from personal ones. Clear, clean, no surprises.", "/features/budget"],
+                    ["Coordinate logistics at scale", "Shared packing lists, transport details, room assignments — everything in one place. When 20 people need to be at the same restaurant at 8pm, the shared itinerary is your single source of truth.", "/features/collaboration"],
+                  ]
+                : [
+                    ["Laissez l'équipe voter", "Utilisez les sondages pour décider des destinations, dates et activités. Quand les gens choisissent ce qu'ils font, ils s'en réjouissent vraiment. Le vote anonyme supprime la hiérarchie.", "/features/polls"],
+                    ["Un seul planning visible par tous", "Construisez le programme de manière collaborative. Marquez ce qui est obligatoire vs. optionnel. Les modifications se synchronisent en temps réel.", "/features/planning"],
+                    ["Budget transparent", "Suivez chaque dépense en temps réel. Catégorisez pour faciliter le reporting aux finances. Séparez les frais entreprise des frais personnels.", "/features/budget"],
+                    ["Coordonnez la logistique à grande échelle", "Listes de bagages, détails transport, attribution des chambres — tout au même endroit. Quand 20 personnes doivent être au même restaurant à 20h, l'itinéraire partagé est votre source de vérité.", "/features/collaboration"],
+                  ]
+              ).map(([title, desc, link], i) => (
+                <div key={i} className="flex gap-5 lg:gap-8 items-baseline">
+                  <span className="text-[#F6391A] font-londrina-solid text-[28px] lg:text-[36px] leading-none flex-shrink-0 w-8 lg:w-10 text-right">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div className="border-t border-[#001E13]/10 pt-5 flex-1">
+                    <h3 className="text-[#001E13] text-xl lg:text-2xl font-londrina-solid mb-1.5">
+                      <Link href={`/${locale}${link}`} className="text-[#001E13] hover:underline underline-offset-4 no-underline">{title}</Link>
+                    </h3>
+                    <p className="text-[#001E13]/65 text-sm lg:text-base font-karla leading-[1.8]">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ━━━ FAQ ━━━ */}
+        <section className="py-20 lg:py-28 px-6 lg:px-12">
+          <div className="max-w-[800px] mx-auto">
+            <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
+              {isEn ? "Frequently Asked Questions" : "Questions Fréquemment Posées"}
+            </h2>
+            <div className="space-y-6">
+              {faqItems.map((item, i) => (
+                <details key={i} className="group border-b border-[#001E13]/10 pb-5">
                   <summary className="flex items-start justify-between cursor-pointer list-none font-karla font-semibold text-[#001E13] text-base lg:text-lg">
                     <span className="pr-4">{item.q}</span>
-                    <span className="text-[#F6391A] text-xl leading-none mt-0.5 group-open:rotate-45 transition-transform">
-                      +
-                    </span>
+                    <span className="text-[#F6391A] text-xl leading-none mt-0.5 group-open:rotate-45 transition-transform">+</span>
                   </summary>
-                  <p className="mt-3 text-[#001E13]/70 text-sm lg:text-base font-karla leading-relaxed">
-                    {item.a}
-                  </p>
+                  <p className="mt-3 text-[#001E13]/70 text-sm lg:text-base font-karla leading-relaxed">{item.a}</p>
                 </details>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Discover More Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
+        {/* ━━━ DISCOVER MORE ━━━ */}
+        <section className="py-12 lg:py-16 px-6 lg:px-12 bg-[#FFFBF5]">
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
-              {locale === "fr" ? "Découvrir aussi" : "Discover More"}
-            </h2>
+            <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">{isEn ? "Discover More" : "Découvrir aussi"}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link href={`/${locale}/guides/plan-group-trip`} className="group">
-                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Guide : Organiser un Voyage de Groupe" : "Guide: How to Plan a Group Trip"}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Le guide complet étape par étape pour organiser un voyage de groupe réussi, de la première idée au dernier jour."
-                      : "The complete step-by-step guide to planning a successful group trip, from first idea to last day."}
-                  </p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Lire le guide →" : "Read the guide →"}
-                  </span>
-                </div>
-              </Link>
               <Link href={`/${locale}/trip-with-friends`} className="group">
-                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Voyage entre Amis" : "Plan a Trip with Friends"}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Tout ce qu'il faut pour organiser un voyage entre amis — itinéraires, sondages, budgets et plus encore."
-                      : "Everything you need to coordinate a trip with your friend group — itineraries, polls, budgets, and more."}
-                  </p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
-                  </span>
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Trip with Friends" : "Voyage entre Amis"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Plan any group trip effortlessly." : "Organisez n'importe quel voyage de groupe."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read more →" : "En savoir plus →"}</span>
                 </div>
               </Link>
-              <Link href={`/${locale}/alternatives`} className="group">
-                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Comparatif des Applications" : "App Comparison"}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Comparez WePlanify avec les autres applications de planification de voyage de groupe en 2026."
-                      : "See how WePlanify compares to other group trip planning apps in 2026."}
-                  </p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Voir le comparatif →" : "View comparison →"}
-                  </span>
+              <Link href={`/${locale}/road-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">Road Trip</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Plan a road trip with your crew." : "Organisez un road trip avec votre bande."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read more →" : "En savoir plus →"}</span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "App Comparison" : "Comparatif"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "See how WePlanify compares." : "Comparez WePlanify aux autres."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "View comparison →" : "Voir le comparatif →"}</span>
                 </div>
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Bottom CTA Banner */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8">
+        {/* ━━━ CTA ━━━ */}
+        <section className="py-16 lg:py-24 px-6 lg:px-12">
           <div className="max-w-[1200px] mx-auto">
             <div className="bg-gradient-to-br from-[#F6391A] to-[#d42d10] rounded-[24px] lg:rounded-[40px] p-8 lg:p-16 text-center">
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] mb-4">
-                {t.ctaTitle}
+                {isEn ? "Plan a Retreat Your Team Will Remember" : "Organisez un Séminaire Dont Votre Équipe Se Souviendra"}
               </h2>
-              <p className="text-[#FFFBF5]/85 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-                {t.ctaDescription}
+              <p className="text-[#FFFBF5]/80 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+                {isEn ? "Give your team a voice in the planning — and watch the energy change." : "Donnez à votre équipe une voix dans la planification — et regardez l'énergie changer."}
               </p>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex justify-center">
                 <Link href="https://app.weplanify.com/register">
-                  <PulsatingButton className="font-karla font-bold">
-                    {t.ctaButton}
-                  </PulsatingButton>
+                  <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
                 </Link>
               </div>
             </div>
           </div>
         </section>
-      </main>
 
-      {/* Footer */}
+      </main>
       <Footer footerData={footerData} />
     </>
   );

@@ -5,16 +5,20 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
-import FloatingCards from "@/components/FloatingCards";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
+import FadeIn from "@/components/FadeIn";
+import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+const SITE_URL = "https://www.weplanify.com";
+const PATHNAME = "/family-trip";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -22,620 +26,309 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const metadata = await generateMetadataFromSanity(locale, "/family-trip");
-
+  const metadata = await generateMetadataFromSanity(locale, PATHNAME);
   const isEn = locale === "en";
   const title = isEn
     ? "Plan a Family Trip — Vacation Planner for Families | WePlanify"
     : "Voyage en Famille — Planificateur de Vacances Familiales | WePlanify";
   const description = isEn
-    ? "Plan your family trip with ease. Coordinate schedules, manage budgets, vote on destinations, and keep everyone on the same page."
-    : "Organisez votre voyage en famille sans stress. Coordonnez les emplois du temps, gérez le budget et votez pour les destinations.";
+    ? "Plan your next family vacation with WePlanify. Coordinate across generations, manage shared budgets, vote on activities, and build an itinerary everyone agrees on."
+    : "Organisez vos vacances en famille avec WePlanify. Coordonnez entre les générations, gérez le budget commun, votez pour les activités et créez un itinéraire qui convient à tous.";
+  const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
+
   return {
     ...metadata,
     title,
     description,
-    openGraph: {
-      ...metadata.openGraph,
-      title,
-      description,
-    },
-    twitter: {
-      ...metadata.twitter,
-      title,
-      description,
+    authors: [{ name: "Alex Martin" }],
+    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl },
+    twitter: { ...metadata.twitter, title, description },
+    alternates: {
+      canonical: currentUrl,
+      languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` },
     },
   };
 }
 
-const content = {
-  en: {
-    heroTag: "Family Travel, Simplified",
-    heroTitle: "Plan a Family Trip\nEveryone Will Love",
-    heroDescription:
-      "From grandparents to toddlers, family trips mean different needs, different budgets, and different ideas of fun. WePlanify brings everyone together in one place to plan a vacation the whole family will enjoy.",
-    heroCta: "Start planning for free",
-    painPointsTitle: "Family Trip Struggles",
-    painPointsSubtitle:
-      "Organizing a family vacation sounds fun — until you try to make everyone happy at once.",
-    painPoints: [
-      {
-        icon: "\u{1F468}\u200D\u{1F469}\u200D\u{1F467}\u200D\u{1F466}",
-        title: "Too Many Opinions",
-        description:
-          "Dad wants hiking, Mom wants the beach, the kids want a water park. Finding common ground across generations feels impossible.",
-      },
-      {
-        icon: "\u{1F4B3}",
-        title: "Budget Juggling",
-        description:
-          "Between flights, hotels, activities, and meals for the whole family, costs add up fast. Nobody wants to be the one tracking every expense.",
-      },
-      {
-        icon: "\u{1F4C5}",
-        title: "Schedule Chaos",
-        description:
-          "Coordinating school holidays, work PTO, and grandparent availability across multiple households is a puzzle in itself.",
-      },
-      {
-        icon: "\u{1F9F3}",
-        title: "Packing for Everyone",
-        description:
-          "Diapers, sunscreen, chargers, medications — packing for a family means managing everyone's needs without forgetting essentials.",
-      },
-    ],
-
-    solutionTitle: "How WePlanify Makes Family Trips Easy",
-    solutionSubtitle:
-      "Everything your family needs to plan, agree on, and organize your next vacation — all in one app.",
-    solutions: [
-      {
-        title: "Collaborative Itinerary",
-        description:
-          "Build a day-by-day plan that balances adult activities with kid-friendly fun. Everyone can suggest ideas, and the whole family sees the final plan.",
-        link: "/features/planning",
-        linkText: "Learn about planning",
-        color: "bg-[#EEF899]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Family Polls",
-        description:
-          "Beach or mountains? Camping or hotel? Let every family member vote — even the kids. Fair decisions, no arguments.",
-        link: "/features/polls",
-        linkText: "Discover polls",
-        color: "bg-[#61DBD5]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Shared Family Budget",
-        description:
-          "Track expenses across the whole trip. Split costs between households, keep tabs on who paid what, and avoid money awkwardness at Thanksgiving.",
-        link: "/features/budget",
-        linkText: "Explore budget tools",
-        color: "bg-[#001E13]",
-        textColor: "text-[#FFFBF5]",
-      },
-      {
-        title: "Smart Packing Lists",
-        description:
-          "AI-generated packing lists adapted to your destination, weather, and family members' ages. Share with the family so nothing gets forgotten.",
-        link: "/features/packing",
-        linkText: "See packing lists",
-        color: "bg-[#F6391A]",
-        textColor: "text-[#FFFBF5]",
-      },
-    ],
-
-    stepsTitle: "3 Steps to Plan Your Family Vacation",
-    stepsSubtitle:
-      "From first idea to packed bags in minutes — not months.",
-    steps: [
-      {
-        step: "1",
-        title: "Create Your Trip",
-        description:
-          "Name your trip, set the dates, and invite family members with a simple link. Everyone joins instantly — even Grandma.",
-      },
-      {
-        step: "2",
-        title: "Plan Together",
-        description:
-          "Vote on destinations, build your itinerary, track your family budget, and assign packing lists — all in one place.",
-      },
-      {
-        step: "3",
-        title: "Pack & Go",
-        description:
-          "Get personalized packing lists for each family member, finalize your plans, and head out for an unforgettable family adventure.",
-      },
-    ],
-
-    faqTitle: "Frequently Asked Questions",
-    faqItems: [
-      {
-        q: "Is WePlanify good for families with kids?",
-        a: "Absolutely. WePlanify is designed for groups of all kinds — including families with children. The voting feature makes it fun for kids to participate, and the shared packing lists ensure nothing gets forgotten.",
-      },
-      {
-        q: "Can different households share costs?",
-        a: "Yes. The shared budget tracker lets you split costs between multiple households. Track who paid for what and settle up easily after the trip.",
-      },
-      {
-        q: "Do I need to download an app?",
-        a: "No download needed. WePlanify works directly in your browser on any device — phone, tablet, or computer. Just open the link and start planning.",
-      },
-    ],
-
-    ctaTitle: "Your Next Family Adventure Starts Here",
-    ctaDescription:
-      "Join thousands of families who plan their vacations with WePlanify. It's free, it's easy, and it keeps everyone happy.",
-    ctaButton: "Start planning your trip",
-  },
-  fr: {
-    heroTag: "Voyage en Famille, Simplifi\u00e9",
-    heroTitle: "Organisez un Voyage en Famille\nQue Tout le Monde Adorera",
-    heroDescription:
-      "Des grands-parents aux tout-petits, un voyage en famille signifie des besoins diff\u00e9rents, des budgets diff\u00e9rents et des id\u00e9es diff\u00e9rentes de ce qui est fun. WePlanify r\u00e9unit tout le monde pour planifier des vacances que toute la famille appr\u00e9ciera.",
-    heroCta: "Commencer gratuitement",
-    painPointsTitle: "Les Gal\u00e8res du Voyage en Famille",
-    painPointsSubtitle:
-      "Organiser des vacances en famille, \u00e7a semble amusant — jusqu'\u00e0 ce qu'il faille satisfaire tout le monde en m\u00eame temps.",
-    painPoints: [
-      {
-        icon: "\u{1F468}\u200D\u{1F469}\u200D\u{1F467}\u200D\u{1F466}",
-        title: "Trop d'Avis Diff\u00e9rents",
-        description:
-          "Papa veut de la rando, Maman veut la plage, les enfants veulent un parc aquatique. Trouver un terrain d'entente entre g\u00e9n\u00e9rations semble impossible.",
-      },
-      {
-        icon: "\u{1F4B3}",
-        title: "Budget \u00e0 G\u00e9rer",
-        description:
-          "Entre les vols, l'h\u00e9bergement, les activit\u00e9s et les repas pour toute la famille, les co\u00fbts explosent vite. Personne ne veut \u00eatre celui qui suit chaque d\u00e9pense.",
-      },
-      {
-        icon: "\u{1F4C5}",
-        title: "Calendriers Incompatibles",
-        description:
-          "Coordonner les vacances scolaires, les cong\u00e9s et la disponibilit\u00e9 des grands-parents entre plusieurs foyers est un casse-t\u00eate en soi.",
-      },
-      {
-        icon: "\u{1F9F3}",
-        title: "Bagages pour Tout le Monde",
-        description:
-          "Couches, cr\u00e8me solaire, chargeurs, m\u00e9dicaments — faire les valises pour une famille signifie g\u00e9rer les besoins de chacun sans rien oublier.",
-      },
-    ],
-
-    solutionTitle: "Comment WePlanify Facilite les Voyages en Famille",
-    solutionSubtitle:
-      "Tout ce dont votre famille a besoin pour planifier, d\u00e9cider et organiser vos prochaines vacances — dans une seule application.",
-    solutions: [
-      {
-        title: "Itin\u00e9raire Collaboratif",
-        description:
-          "Construisez un programme jour par jour qui \u00e9quilibre activit\u00e9s adultes et sorties adapt\u00e9es aux enfants. Chacun peut proposer des id\u00e9es et toute la famille voit le plan final.",
-        link: "/features/planning",
-        linkText: "D\u00e9couvrir la planification",
-        color: "bg-[#EEF899]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Sondages Familiaux",
-        description:
-          "Plage ou montagne ? Camping ou h\u00f4tel ? Laissez chaque membre de la famille voter — m\u00eame les enfants. Des d\u00e9cisions justes, sans disputes.",
-        link: "/features/polls",
-        linkText: "D\u00e9couvrir les sondages",
-        color: "bg-[#61DBD5]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Budget Familial Partag\u00e9",
-        description:
-          "Suivez les d\u00e9penses sur tout le voyage. Partagez les co\u00fbts entre foyers, gardez une trace de qui a pay\u00e9 quoi et \u00e9vitez les situations g\u00eanantes.",
-        link: "/features/budget",
-        linkText: "Explorer le budget",
-        color: "bg-[#001E13]",
-        textColor: "text-[#FFFBF5]",
-      },
-      {
-        title: "Listes de Bagages Intelligentes",
-        description:
-          "Des listes de bagages g\u00e9n\u00e9r\u00e9es par IA adapt\u00e9es \u00e0 votre destination, la m\u00e9t\u00e9o et l'\u00e2ge de chaque membre. Partagez avec la famille pour ne rien oublier.",
-        link: "/features/packing",
-        linkText: "Voir les listes",
-        color: "bg-[#F6391A]",
-        textColor: "text-[#FFFBF5]",
-      },
-    ],
-
-    stepsTitle: "3 \u00c9tapes pour Organiser Vos Vacances en Famille",
-    stepsSubtitle:
-      "De la premi\u00e8re id\u00e9e aux valises boucl\u00e9es en quelques minutes — pas en mois.",
-    steps: [
-      {
-        step: "1",
-        title: "Cr\u00e9ez Votre Voyage",
-        description:
-          "Nommez votre voyage, fixez les dates et invitez les membres de la famille avec un simple lien. Tout le monde rejoint instantan\u00e9ment — m\u00eame Mamie.",
-      },
-      {
-        step: "2",
-        title: "Planifiez Ensemble",
-        description:
-          "Votez pour les destinations, construisez votre itin\u00e9raire, suivez le budget familial et assignez les listes de bagages — le tout au m\u00eame endroit.",
-      },
-      {
-        step: "3",
-        title: "Pr\u00e9parez & Partez",
-        description:
-          "Obtenez des listes de bagages personnalis\u00e9es pour chaque membre de la famille, finalisez vos plans et partez pour une aventure familiale inoubliable.",
-      },
-    ],
-
-    faqTitle: "Questions Fr\u00e9quemment Pos\u00e9es",
-    faqItems: [
-      {
-        q: "WePlanify est-il adapt\u00e9 aux familles avec enfants ?",
-        a: "Absolument. WePlanify est con\u00e7u pour les groupes de toutes sortes — y compris les familles avec enfants. La fonctionnalit\u00e9 de vote rend la participation amusante pour les enfants, et les listes de bagages partag\u00e9es garantissent que rien n'est oubli\u00e9.",
-      },
-      {
-        q: "Plusieurs foyers peuvent-ils partager les co\u00fbts ?",
-        a: "Oui. Le suivi de budget partag\u00e9 permet de r\u00e9partir les co\u00fbts entre plusieurs foyers. Suivez qui a pay\u00e9 quoi et r\u00e9glez facilement apr\u00e8s le voyage.",
-      },
-      {
-        q: "Dois-je t\u00e9l\u00e9charger une application ?",
-        a: "Aucun t\u00e9l\u00e9chargement n\u00e9cessaire. WePlanify fonctionne directement dans votre navigateur sur n'importe quel appareil — t\u00e9l\u00e9phone, tablette ou ordinateur. Ouvrez le lien et commencez \u00e0 planifier.",
-      },
-    ],
-
-    ctaTitle: "Votre Prochaine Aventure Familiale Commence Ici",
-    ctaDescription:
-      "Rejoignez des milliers de familles qui planifient leurs vacances avec WePlanify. C'est gratuit, c'est simple, et \u00e7a rend tout le monde content.",
-    ctaButton: "Commencer \u00e0 planifier",
-  },
-};
-
 export default async function FamilyTripPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const isEn = locale === "en";
 
-  const t = locale === "fr" ? content.fr : content.en;
-
-  const [navData, navigationData, footerData]: [
-    NavType,
-    Navigation | null,
-    FooterType | null
-  ] = await Promise.all([
-    sanityFetch<NavType>({
-      query: navQuery,
-      params: { locale },
-      tags: ["nav"],
-    }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] =
+    await Promise.all([
+      sanityFetch<NavType>({ query: navQuery, params: { locale }, tags: ["nav"] }),
+      sanityFetch<Navigation>({ query: navigationQuery, params: { locale }, tags: ["navigation"] }),
+      sanityFetch<FooterType>({ query: footerQuery, params: { locale }, tags: ["footer"] }),
+    ]);
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
-        item: `https://www.weplanify.com/${locale}`,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: locale === "fr" ? "Voyage en Famille" : "Family Trip",
-        item: `https://www.weplanify.com/${locale}/family-trip`,
-      },
+      { "@type": "ListItem", position: 1, name: isEn ? "Home" : "Accueil", item: `${SITE_URL}/${locale}` },
+      { "@type": "ListItem", position: 2, name: isEn ? "Family Trip" : "Voyage en Famille", item: `${SITE_URL}/${locale}${PATHNAME}` },
     ],
   };
+
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: isEn ? "Plan a Family Trip Everyone Will Love" : "Organisez un Voyage en Famille que Tout le Monde Adorera",
+    author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
+    publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
+    datePublished: "2026-03-19",
+    dateModified: "2026-03-26",
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
+  };
+
+  const faqItems = isEn
+    ? [
+        { q: "What's the best age to start family group trips?", a: "Any age works, but the logistics change significantly. Under 5, keep destinations close and schedules flexible. Ages 5-12 are the sweet spot for adventure — kids are curious and adaptable. Teenagers prefer more independence, so build in free time. WePlanify lets you structure the itinerary differently for each age group within the same trip." },
+        { q: "How do you handle different budgets within a family?", a: "Extended family trips often mean very different financial situations. The key is transparency. Use WePlanify's budget tracker to separate shared costs (accommodation, transport) from optional activities. Some families create a shared kitty for group meals while letting individual households handle their own extras." },
+        { q: "How far ahead should we plan a family vacation?", a: "For domestic trips, 2-3 months is usually enough. International trips with extended family need 4-6 months minimum — everyone needs time to request leave, budget, and handle passports. Start a WePlanify trip early even if details aren't final. Having a shared space keeps momentum alive." },
+        { q: "How do we pick a destination that works for all ages?", a: "Use polls. Seriously. Let each household suggest two options, then vote. WePlanify's group polls remove the social pressure of in-person debates. Focus on destinations with variety — places where grandparents can relax while kids explore and parents get a mix of both." },
+        { q: "What if family members disagree on the itinerary?", a: "Build the 70/30 rule into your plan: 70% structured group activities, 30% free time where each sub-group does their own thing. Not every moment needs to be together. A morning at the pool for the kids while grandparents visit a museum is perfectly fine — and often better for everyone." },
+        { q: "Can WePlanify handle multi-household family trips?", a: "Yes. Every family member joins the same trip with a shared link. Everyone can see the itinerary, vote in polls, and track shared expenses. You can organize the itinerary by day with both group activities and sub-group options clearly marked." },
+      ]
+    : [
+        { q: "À quel âge commencer les voyages de groupe en famille ?", a: "Tous les âges fonctionnent, mais la logistique change. Moins de 5 ans, restez proches et gardez un planning flexible. De 5 à 12 ans, c'est le moment idéal — les enfants sont curieux et adaptables. Les ados préfèrent plus d'indépendance, prévoyez du temps libre. WePlanify vous permet de structurer l'itinéraire différemment pour chaque tranche d'âge." },
+        { q: "Comment gérer les budgets différents au sein d'une famille ?", a: "Les voyages en famille élargie impliquent souvent des situations financières très différentes. La clé est la transparence. Utilisez le suivi de budget WePlanify pour séparer les frais communs (hébergement, transport) des activités optionnelles. Certaines familles créent une cagnotte pour les repas de groupe tout en laissant chaque foyer gérer ses extras." },
+        { q: "Combien de temps avant faut-il planifier ?", a: "Pour les voyages nationaux, 2-3 mois suffisent. Les voyages internationaux en famille élargie nécessitent 4-6 mois minimum — chacun a besoin de temps pour poser ses congés, budgéter et gérer les passeports. Créez un voyage WePlanify tôt, même si les détails ne sont pas finalisés." },
+        { q: "Comment choisir une destination pour tous les âges ?", a: "Utilisez les sondages. Laissez chaque foyer proposer deux options, puis votez. Les sondages WePlanify suppriment la pression sociale des débats en personne. Privilégiez les destinations variées — des endroits où les grands-parents peuvent se détendre pendant que les enfants explorent." },
+        { q: "Et si des membres de la famille ne sont pas d'accord sur le programme ?", a: "Appliquez la règle du 70/30 : 70% d'activités de groupe structurées, 30% de temps libre où chaque sous-groupe fait ce qu'il veut. Une matinée à la piscine pour les enfants pendant que les grands-parents visitent un musée, c'est parfaitement normal — et souvent mieux pour tout le monde." },
+        { q: "WePlanify gère-t-il les voyages familiaux multi-foyers ?", a: "Oui. Chaque membre de la famille rejoint le même voyage avec un lien partagé. Tout le monde peut voir l'itinéraire, voter et suivre les dépenses communes. Vous pouvez organiser le programme par jour avec les activités de groupe et les options par sous-groupe clairement marquées." },
+      ];
 
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: t.faqItems.map((item) => ({
+    mainEntity: faqItems.map((item) => ({
       "@type": "Question",
       name: item.q,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.a,
-      },
+      acceptedAnswer: { "@type": "Answer", text: item.a },
     })),
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
-      />
+      <AuthorJsonLd />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <Nav navData={navData} navigationData={navigationData} />
-      <main className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative pt-[120px] lg:pt-[140px] pb-8 lg:pb-10 px-4 lg:px-8">
-          <div className="max-w-[1536px] mx-auto">
+
+      <main className="min-h-screen bg-[#FFFBF5]">
+
+        {/* ━━━ HERO ━━━ */}
+        <section className="pt-[140px] lg:pt-[200px] pb-16 lg:pb-24 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
             <div className="hidden lg:block mb-8">
-              <Breadcrumb
-                items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-                  { label: locale === "fr" ? "Voyage en famille" : "Family Trip" },
-                ]}
-              />
+              <Breadcrumb items={[
+                { label: isEn ? "Home" : "Accueil", href: `/${locale}` },
+                { label: isEn ? "Family Trip" : "Voyage en Famille" },
+              ]} />
             </div>
+            <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-6">
+              {isEn ? "Family Travel" : "Voyage en Famille"}
+            </p>
+            <h1 className="text-[#001E13] text-[38px] lg:text-[72px] font-londrina-solid leading-[1.02] mb-6">
+              {isEn
+                ? "Plan a Family Trip Everyone Will Actually Love"
+                : "Organisez un Voyage en Famille que Tout le Monde Adorera Vraiment"}
+            </h1>
+            <p className="text-[#001E13]/70 text-lg lg:text-[22px] font-karla leading-[1.8] mb-6">
+              {isEn
+                ? "From grandparents to toddlers, family trips mean different needs, different budgets, and different ideas of fun. Here's how to make it work without losing your mind."
+                : "Des grands-parents aux tout-petits, les voyages en famille signifient des besoins différents, des budgets différents et des idées de fun très différentes. Voici comment y arriver sans perdre la tête."}
+            </p>
+            <p className="text-[#001E13]/50 text-sm font-karla mb-6">
+              {isEn ? "8 min read" : "8 min de lecture"}
+            </p>
+            <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-26" />
           </div>
-          <div className="max-w-[1536px] mx-auto">
-            <div className="relative overflow-hidden rounded-[24px] lg:rounded-[40px] bg-[#001E13]">
-              {/* Decorative gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#001E13] via-[#001E13] to-[#0a3d2a] opacity-100" />
-              <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#61DBD5]/10 to-transparent" />
+        </section>
 
-              <div className="relative z-10 px-6 lg:px-16 xl:px-20 py-16 lg:py-24 xl:py-32 flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-0">
-                <div className="text-center lg:text-left lg:w-1/2">
-                  <span className="inline-block bg-[#EEF899] text-[#001E13] px-4 py-1.5 rounded-full text-sm lg:text-base font-nanum-pen mb-6">
-                    {t.heroTag}
-                  </span>
+        {/* ━━━ THE CHALLENGE ━━━ */}
+        <section className="pb-16 lg:pb-24 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8] mb-8">
+              {isEn
+                ? "Family trips are the best kind of travel — and the hardest to organize. Dad wants hiking, Mom wants the beach, the teenagers want Wi-Fi, the kids want a water park, and grandma just wants everyone in the same room for dinner. Finding a plan that works across three generations without spreadsheets and a group chat meltdown? That's the real vacation challenge."
+                : "Les voyages en famille sont les meilleurs — et les plus difficiles à organiser. Papa veut de la rando, Maman veut la plage, les ados veulent du Wi-Fi, les enfants veulent un parc aquatique, et mamie veut juste que tout le monde soit à table pour le dîner. Trouver un plan qui convient à trois générations sans tableurs et sans explosion du chat de groupe ? C'est le vrai défi des vacances."}
+            </p>
+            <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8] mb-8">
+              {isEn
+                ? "Then there's the money. Accommodation for 10+ people. Activities for all ages. Meals that satisfy everyone from the picky five-year-old to the vegan aunt. When multiple households share costs, tracking who paid what becomes a full-time job — and nobody wants to be the one asking Uncle Marc for his share of the Airbnb."
+                : "Et puis il y a l'argent. L'hébergement pour plus de 10 personnes. Les activités pour tous les âges. Les repas qui satisfont tout le monde, du gamin de cinq ans difficile à la tante végane. Quand plusieurs foyers partagent les frais, suivre qui a payé quoi devient un boulot à plein temps — et personne ne veut être celui qui réclame sa part de l'Airbnb à l'oncle Marc."}
+            </p>
+            <p className="text-[#001E13] text-lg lg:text-[22px] font-karla font-bold leading-[1.8]">
+              {isEn
+                ? "WePlanify gives your family one shared space to plan, vote, budget, and pack — so the organizer doesn't burn out before the trip even starts."
+                : "WePlanify donne à votre famille un seul espace partagé pour planifier, voter, budgéter et préparer les bagages — pour que l'organisateur ne craque pas avant même le départ."}
+            </p>
+          </div>
+        </section>
 
-                  <h1 className="text-[#FFFBF5] text-3xl lg:text-5xl xl:text-[56px] font-londrina-solid leading-tight mb-6 whitespace-pre-line">
-                    {t.heroTitle}
-                  </h1>
-
-                  <p className="text-[#FFFBF5]/85 text-base lg:text-lg font-karla leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                    {t.heroDescription}
-                  </p>
-
-                  <div className="flex flex-col gap-2 items-center lg:items-start">
-                    <Link href="https://app.weplanify.com/register">
-                      <PulsatingButton className="font-karla font-bold">
-                        {t.heroCta}
-                      </PulsatingButton>
-                    </Link>
+        {/* ━━━ PLANNING BY AGE GROUP ━━━ */}
+        <FadeIn>
+          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+            <div className="max-w-[1000px] mx-auto">
+              <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-12 lg:mb-16">
+                {isEn ? "Planning by Age Group" : "Planifier par Tranche d'Âge"}
+              </h2>
+              <div className="space-y-10 lg:space-y-14">
+                {(isEn
+                  ? [
+                      { age: "0–4", title: "Babies & Toddlers", text: "Keep it close, keep it flexible. Short flights or drives, accommodation with kitchen access, and a schedule with generous nap windows. The packing list is critical — shared lists prevent you from forgetting the one thing you actually need.", color: "bg-[#61DBD5]" },
+                      { age: "5–12", title: "Kids", text: "The golden age of family travel. They're curious, adaptable, and excited about everything. Mix structured activities (water parks, museums, boat trips) with free exploration. Use polls to let them vote on activities — they'll feel included and you'll avoid meltdowns.", color: "bg-[#EEF899]" },
+                      { age: "13–17", title: "Teenagers", text: "They want independence but still need structure. Build free time into the itinerary where they can explore on their own. Give them a voice in planning — if they helped choose the restaurant, they're far less likely to complain about it.", color: "bg-[#F6391A]" },
+                      { age: "60+", title: "Grandparents", text: "Comfort, pace, and accessibility matter. Avoid over-packed days. Include restful options alongside group activities — a morning at a café while others hike is perfectly fine. Having the full itinerary visible in advance helps them prepare mentally and physically.", color: "bg-[#61DBD5]" },
+                    ]
+                  : [
+                      { age: "0–4", title: "Bébés & Tout-petits", text: "Restez proche, restez flexible. Vols courts ou route, hébergement avec cuisine et un planning avec de généreuses fenêtres de sieste. La liste de bagages est critique — les listes partagées évitent d'oublier la seule chose dont vous avez vraiment besoin.", color: "bg-[#61DBD5]" },
+                      { age: "5–12", title: "Enfants", text: "L'âge d'or du voyage en famille. Ils sont curieux, adaptables et enthousiastes. Mélangez activités structurées (parcs aquatiques, musées, sorties bateau) avec de l'exploration libre. Utilisez les sondages pour les laisser voter — ils se sentiront inclus et vous éviterez les crises.", color: "bg-[#EEF899]" },
+                      { age: "13–17", title: "Adolescents", text: "Ils veulent de l'indépendance mais ont encore besoin de structure. Intégrez du temps libre dans l'itinéraire. Donnez-leur une voix dans la planification — s'ils ont aidé à choisir le restaurant, ils se plaindront beaucoup moins.", color: "bg-[#F6391A]" },
+                      { age: "60+", title: "Grands-parents", text: "Le confort, le rythme et l'accessibilité comptent. Évitez les journées surchargées. Incluez des options reposantes à côté des activités de groupe — une matinée au café pendant que les autres randonnent, c'est très bien. Avoir l'itinéraire complet visible à l'avance les aide à se préparer.", color: "bg-[#61DBD5]" },
+                    ]
+                ).map((group, i) => (
+                  <div key={i} className="flex gap-5 lg:gap-8 items-start">
+                    <div className={`${group.color} w-14 h-14 lg:w-16 lg:h-16 rounded-2xl flex items-center justify-center flex-shrink-0`}>
+                      <span className="text-[#001E13] text-sm lg:text-base font-londrina-solid">{group.age}</span>
+                    </div>
+                    <div>
+                      <h3 className="text-[#FFFBF5] text-xl lg:text-2xl font-londrina-solid mb-2">{group.title}</h3>
+                      <p className="text-[#FFFBF5]/60 text-sm lg:text-base font-karla leading-[1.8]">{group.text}</p>
+                    </div>
                   </div>
-                </div>
-
-                {/* Floating UI cards animation */}
-                <div className="hidden lg:block lg:w-1/2 relative">
-                  <FloatingCards />
-                </div>
+                ))}
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </FadeIn>
 
-        {/* Pain Points Section */}
-        <section className="pt-10 lg:pt-14 pb-16 lg:pb-24 px-4 lg:px-8">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
-                {t.painPointsTitle}
-              </h2>
-              <p className="text-[#001E13]/70 text-base lg:text-lg font-karla max-w-2xl mx-auto leading-relaxed">
-                {t.painPointsSubtitle}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-              {t.painPoints.map((point, index) => (
-                <div
-                  key={index}
-                  className="bg-[#FFFBF5] border border-[#001E13]/10 rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300"
-                >
-                  <span className="text-3xl lg:text-4xl mb-4 block">
-                    {point.icon}
-                  </span>
-                  <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#001E13] mb-3">
-                    {point.title}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm lg:text-base leading-relaxed">
-                    {point.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Solutions Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
-                {t.solutionTitle}
-              </h2>
-              <p className="text-[#001E13]/70 text-base lg:text-lg font-karla max-w-2xl mx-auto leading-relaxed">
-                {t.solutionSubtitle}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-              {t.solutions.map((solution, index) => (
-                <div
-                  key={index}
-                  className={`${solution.color} rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 flex flex-col justify-between min-h-[240px]`}
-                >
-                  <div>
-                    <h3
-                      className={`text-xl lg:text-2xl font-londrina-solid ${solution.textColor} mb-3`}
-                    >
-                      <Link href={`/${locale}${solution.link}`} className={`${solution.textColor} font-londrina-solid no-underline hover:underline underline-offset-4`}>
-                        {solution.title}
-                      </Link>
-                    </h3>
-                    <p
-                      className={`${solution.textColor} opacity-80 font-karla text-sm lg:text-base leading-relaxed mb-6`}
-                    >
-                      {solution.description}
-                    </p>
-                  </div>
-                  <div>
-                    <Link
-                      href={`/${locale}${solution.link}`}
-                      className={`${solution.textColor} font-karla font-bold text-sm lg:text-base underline underline-offset-4 hover:opacity-70 transition-opacity`}
-                    >
-                      {solution.linkText} &rarr;
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Steps Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
-                {t.stepsTitle}
-              </h2>
-              <p className="text-[#001E13]/70 text-base lg:text-lg font-karla max-w-2xl mx-auto leading-relaxed">
-                {t.stepsSubtitle}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-              {t.steps.map((step, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-16 h-16 lg:w-20 lg:h-20 bg-[#F6391A] rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-[#FFFBF5] text-2xl lg:text-3xl font-londrina-solid">
-                      {step.step}
-                    </span>
-                  </div>
-                  <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#001E13] mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm lg:text-base leading-relaxed max-w-sm mx-auto">
-                    {step.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
-          <div className="max-w-[800px] mx-auto">
-            <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
-              {t.faqTitle}
+        {/* ━━━ HOW WEPLANIFY HELPS ━━━ */}
+        <section className="py-20 lg:py-28 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10 lg:mb-14">
+              {isEn ? "How WePlanify Helps Families" : "Comment WePlanify Aide les Familles"}
             </h2>
             <div className="space-y-6">
-              {t.faqItems.map((item, i) => (
-                <details
-                  key={i}
-                  className="group border-b border-[#001E13]/10 pb-5"
-                >
+              {(isEn
+                ? [
+                    ["Everyone gets a vote", "Destination, activities, restaurants — create polls and let each family member (yes, even the kids) have a say. Results are instant and final. No more circular dinner-table debates.", "/features/polls"],
+                    ["One shared itinerary", "Build the day-by-day plan together. Mark activities by age suitability so everyone knows what's for the whole family vs. what's optional. Changes sync in real time — no outdated PDFs.", "/features/planning"],
+                    ["Budget without the awkwardness", "Track shared expenses across households. Log who paid for what, split costs however you want, and see the balance in real time. The money conversation happens once, not twenty times.", "/features/budget"],
+                    ["Packing coordination", "Create shared packing lists so three families don't show up with five bottles of sunscreen and no first-aid kit. Assign group items to specific people and check them off as you pack.", "/features/packing"],
+                  ]
+                : [
+                    ["Chacun a droit de vote", "Destination, activités, restaurants — créez des sondages et laissez chaque membre de la famille (oui, même les enfants) s'exprimer. Les résultats sont instantanés et définitifs. Fini les débats sans fin à table.", "/features/polls"],
+                    ["Un seul itinéraire partagé", "Construisez le programme jour par jour ensemble. Marquez les activités par tranche d'âge pour que chacun sache ce qui est pour toute la famille vs. optionnel. Les modifications se synchronisent en temps réel.", "/features/planning"],
+                    ["Le budget sans la gêne", "Suivez les dépenses partagées entre foyers. Enregistrez qui a payé quoi, répartissez les coûts comme vous voulez et voyez le solde en temps réel. La conversation sur l'argent a lieu une seule fois, pas vingt.", "/features/budget"],
+                    ["Coordination des bagages", "Créez des listes de bagages partagées pour que trois familles n'arrivent pas avec cinq bouteilles de crème solaire et zéro trousse de secours. Assignez les objets communs à des personnes précises.", "/features/packing"],
+                  ]
+              ).map(([title, desc, link], i) => (
+                <div key={i} className="flex gap-5 lg:gap-8 items-baseline">
+                  <span className="text-[#F6391A] font-londrina-solid text-[28px] lg:text-[36px] leading-none flex-shrink-0 w-8 lg:w-10 text-right">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div className="border-t border-[#001E13]/10 pt-5 flex-1">
+                    <h3 className="text-[#001E13] text-xl lg:text-2xl font-londrina-solid mb-1.5">
+                      <Link href={`/${locale}${link}`} className="text-[#001E13] hover:underline underline-offset-4 no-underline">{title}</Link>
+                    </h3>
+                    <p className="text-[#001E13]/65 text-sm lg:text-base font-karla leading-[1.8]">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ━━━ PULL QUOTE ━━━ */}
+        <section className="bg-[#EEF899] py-16 lg:py-24 px-6 lg:px-12">
+          <div className="max-w-[1000px] mx-auto">
+            <p className="text-[#001E13] text-[24px] lg:text-[44px] font-londrina-solid leading-[1.12]">
+              {isEn
+                ? "The best family vacations aren't the ones where everything goes perfectly — they're the ones where everyone felt included in the planning."
+                : "Les meilleures vacances en famille ne sont pas celles où tout se passe parfaitement — ce sont celles où tout le monde s'est senti inclus dans la planification."}
+            </p>
+          </div>
+        </section>
+
+        {/* ━━━ FAQ ━━━ */}
+        <section className="py-20 lg:py-28 px-6 lg:px-12">
+          <div className="max-w-[800px] mx-auto">
+            <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
+              {isEn ? "Frequently Asked Questions" : "Questions Fréquemment Posées"}
+            </h2>
+            <div className="space-y-6">
+              {faqItems.map((item, i) => (
+                <details key={i} className="group border-b border-[#001E13]/10 pb-5">
                   <summary className="flex items-start justify-between cursor-pointer list-none font-karla font-semibold text-[#001E13] text-base lg:text-lg">
                     <span className="pr-4">{item.q}</span>
-                    <span className="text-[#F6391A] text-xl leading-none mt-0.5 group-open:rotate-45 transition-transform">
-                      +
-                    </span>
+                    <span className="text-[#F6391A] text-xl leading-none mt-0.5 group-open:rotate-45 transition-transform">+</span>
                   </summary>
-                  <p className="mt-3 text-[#001E13]/70 text-sm lg:text-base font-karla leading-relaxed">
-                    {item.a}
-                  </p>
+                  <p className="mt-3 text-[#001E13]/70 text-sm lg:text-base font-karla leading-relaxed">{item.a}</p>
                 </details>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Discover More Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
+        {/* ━━━ DISCOVER MORE ━━━ */}
+        <section className="py-12 lg:py-16 px-6 lg:px-12 bg-[#FFFBF5]">
           <div className="max-w-[1200px] mx-auto">
             <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
-              {locale === "fr" ? "D\u00e9couvrir aussi" : "Discover More"}
+              {isEn ? "Discover More" : "Découvrir aussi"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link href={`/${locale}/guides/plan-group-trip`} className="group">
-                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Guide : Organiser un Voyage de Groupe" : "Guide: How to Plan a Group Trip"}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Le guide complet \u00e9tape par \u00e9tape pour organiser un voyage de groupe r\u00e9ussi, de la premi\u00e8re id\u00e9e au dernier jour."
-                      : "The complete step-by-step guide to planning a successful group trip, from first idea to last day."}
-                  </p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Lire le guide \u2192" : "Read the guide \u2192"}
-                  </span>
-                </div>
-              </Link>
               <Link href={`/${locale}/trip-with-friends`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Voyage entre Amis" : "Plan a Trip with Friends"}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Tout ce qu'il faut pour organiser un voyage entre amis — itin\u00e9raires, sondages, budgets et plus encore."
-                      : "Everything you need to coordinate a trip with your friend group — itineraries, polls, budgets, and more."}
-                  </p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus \u2192" : "Read more \u2192"}
-                  </span>
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Trip with Friends" : "Voyage entre Amis"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Plan a group trip with friends effortlessly." : "Organisez un voyage entre amis facilement."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read more →" : "En savoir plus →"}</span>
                 </div>
               </Link>
-              <Link href={`/${locale}/alternatives`} className="group">
+              <Link href={`/${locale}/guides/plan-group-trip`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Comparatif des Applications" : "App Comparison"}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Comparez WePlanify avec les autres applications de planification de voyage de groupe en 2026."
-                      : "See how WePlanify compares to other group trip planning apps in 2026."}
-                  </p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Voir le comparatif \u2192" : "View comparison \u2192"}
-                  </span>
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Group Trip Guide" : "Guide Voyage de Groupe"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "The complete step-by-step guide." : "Le guide complet étape par étape."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the guide →" : "Lire le guide →"}</span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "App Comparison" : "Comparatif"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "See how WePlanify compares." : "Comparez WePlanify aux autres."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "View comparison →" : "Voir le comparatif →"}</span>
                 </div>
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Bottom CTA Banner */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8">
+        {/* ━━━ CTA ━━━ */}
+        <section className="py-16 lg:py-24 px-6 lg:px-12">
           <div className="max-w-[1200px] mx-auto">
             <div className="bg-gradient-to-br from-[#F6391A] to-[#d42d10] rounded-[24px] lg:rounded-[40px] p-8 lg:p-16 text-center">
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] mb-4">
-                {t.ctaTitle}
+                {isEn ? "Your Family Trip Starts Here" : "Votre Voyage en Famille Commence Ici"}
               </h2>
-              <p className="text-[#FFFBF5]/85 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-                {t.ctaDescription}
+              <p className="text-[#FFFBF5]/80 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+                {isEn
+                  ? "Get everyone on the same page — literally. Start planning your next family vacation together."
+                  : "Mettez tout le monde sur la même page — littéralement. Commencez à planifier vos prochaines vacances en famille ensemble."}
               </p>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex justify-center">
                 <Link href="https://app.weplanify.com/register">
-                  <PulsatingButton className="font-karla font-bold">
-                    {t.ctaButton}
-                  </PulsatingButton>
+                  <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
                 </Link>
               </div>
             </div>
           </div>
         </section>
-      </main>
 
-      {/* Footer */}
+      </main>
       <Footer footerData={footerData} />
     </>
   );

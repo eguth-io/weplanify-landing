@@ -8,6 +8,7 @@ import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
+import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
 
 // ---------------------------------------------------------------------------
 // Static params
@@ -233,6 +234,18 @@ const content = {
           q: "How do you handle disagreements during group trip planning?",
           a: "Use democratic decision-making tools like polls and votes for major decisions (destination, accommodation style, key activities). For smaller decisions, rotate who gets the final say each day. The most important thing is to set expectations early — agree on a decision-making process before conflicts arise, not after.",
         },
+        {
+          q: "What apps are best for planning a group trip?",
+          a: "The best group trip planning apps combine itinerary building, budget tracking, and group decision-making in one place. WePlanify is designed specifically for groups and includes collaborative itineraries, group polls, shared budgets, and packing lists — all for free. For a detailed comparison of the top options, check out our guide to the best group trip planner apps.",
+        },
+        {
+          q: "How do you plan a bachelorette trip with a large group?",
+          a: "Bachelorette trips add an extra layer of complexity because you often need to keep the plans secret from the bride-to-be. The key is a private planning space where only the organizers can see the itinerary and budget. Start by polling for dates, then lock the destination and accommodation early. Use a shared budget tracker to manage the kitty and split costs fairly.",
+        },
+        {
+          q: "Is WePlanify free to use for group trips?",
+          a: "Yes, WePlanify is 100% free. All core features — collaborative itineraries, group polls, shared budget tracking, and packing lists — are included at no cost. There are no trial limits, no credit card required, and no hidden fees. You can invite unlimited group members to collaborate on your trip.",
+        },
       ],
     },
   },
@@ -389,6 +402,18 @@ const content = {
           q: "Comment gérer les désaccords pendant la planification d'un voyage de groupe ?",
           a: "Utilisez des outils de prise de décision démocratique comme les sondages et les votes pour les décisions majeures (destination, style d'hébergement, activités clés). Pour les décisions mineures, alternez qui a le dernier mot chaque jour. Le plus important est d'établir les attentes tôt — convenez d'un processus de prise de décision avant que les conflits ne surgissent, pas après.",
         },
+        {
+          q: "Quelles applications sont les meilleures pour organiser un voyage de groupe ?",
+          a: "Les meilleures applications de planification de voyage de groupe combinent la construction d'itinéraire, le suivi de budget et la prise de décision de groupe au même endroit. WePlanify est conçu spécifiquement pour les groupes et inclut des itinéraires collaboratifs, des sondages de groupe, des budgets partagés et des listes de bagages — le tout gratuitement. Pour un comparatif détaillé, consultez notre guide des meilleures applications de planification de voyage de groupe.",
+        },
+        {
+          q: "Comment organiser un EVJF avec un grand groupe ?",
+          a: "Les EVJF ajoutent une couche de complexité supplémentaire car il faut souvent garder les plans secrets pour la future mariée. La clé est un espace de planification privé où seules les organisatrices peuvent voir l'itinéraire et le budget. Commencez par sonder les dates, puis fixez la destination et l'hébergement rapidement. Utilisez un suivi de budget partagé pour gérer la cagnotte et répartir les frais équitablement.",
+        },
+        {
+          q: "WePlanify est-il gratuit pour les voyages de groupe ?",
+          a: "Oui, WePlanify est 100% gratuit. Toutes les fonctionnalités principales — itinéraires collaboratifs, sondages de groupe, suivi de budget partagé et listes de bagages — sont incluses sans aucun coût. Il n'y a pas de limite d'essai, pas de carte bancaire requise et pas de frais cachés. Vous pouvez inviter un nombre illimité de membres pour collaborer sur votre voyage.",
+        },
       ],
     },
   },
@@ -397,6 +422,40 @@ const content = {
 // ---------------------------------------------------------------------------
 // JSON-LD FAQ Schema
 // ---------------------------------------------------------------------------
+
+function BreadcrumbJsonLd({ locale }: { locale: string }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: locale === "fr" ? "Accueil" : "Home",
+        item: `${SITE_URL}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: locale === "fr" ? "Guides" : "Guides",
+        item: `${SITE_URL}/${locale}/guides`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: locale === "fr" ? "Organiser un voyage de groupe" : "Plan a Group Trip",
+        item: `${SITE_URL}/${locale}${PATHNAME}`,
+      },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 
 function FaqJsonLd({ locale }: { locale: string }) {
   const c = locale === "fr" ? content.fr : content.en;
@@ -439,7 +498,7 @@ function ArticleJsonLd({ locale }: { locale: string }) {
       url: SITE_URL,
     },
     datePublished: "2026-03-19",
-    dateModified: "2026-03-19",
+    dateModified: "2026-03-26",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${SITE_URL}/${locale}${PATHNAME}`,
@@ -488,6 +547,8 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
 
   return (
     <>
+      <AuthorJsonLd />
+      <BreadcrumbJsonLd locale={locale} />
       <FaqJsonLd locale={locale} />
       <ArticleJsonLd locale={locale} />
 
@@ -536,9 +597,9 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
           </div>
         </header>
 
-        {/* Divider */}
+        {/* Author */}
         <div className="max-w-3xl mx-auto px-4 lg:px-8">
-          <hr className="border-[#001E13]/10" />
+          <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-26" />
         </div>
 
         {/* Table of Contents */}

@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WePlanify — Roadmap Autorite & Backlinks</title>
+<style>
+  :root {
+    --bg: #001E13;
+    --bg-card: #002A1A;
+    --bg-card-hover: #003322;
+    --text: #FFFBF5;
+    --text-muted: #FFFBF5aa;
+    --accent: #F6391A;
+    --highlight: #EEF899;
+    --secondary: #61DBD5;
+    --border: #FFFBF520;
+    --critical: #F6391A;
+    --important: #F5A623;
+    --recommended: #4CAF50;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  .top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #001E13ee;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 60px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .nav-inner::-webkit-scrollbar { display: none; }
+  .nav-brand {
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--highlight);
+    white-space: nowrap;
+    margin-right: 16px;
+    letter-spacing: -0.3px;
+  }
+  .nav-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all .2s;
+  }
+  .nav-link:hover {
+    color: var(--text);
+    background: #FFFBF510;
+  }
+  .nav-link .phase-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: 4px;
+  }
+  .btn-print {
+    margin-left: auto;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity .2s;
+  }
+  .btn-print:hover { opacity: .85; }
+
+  /* HERO */
+  .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px 60px;
+    text-align: center;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 900;
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+  }
+  .hero h1 span { color: var(--secondary); }
+  .hero .subtitle {
+    font-size: clamp(16px, 2vw, 20px);
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto 48px;
+  }
+
+  /* METRICS GRID */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .metric-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .metric-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--highlight);
+    letter-spacing: -1px;
+  }
+  .metric-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* MAIN CONTENT */
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* DIAGNOSTIC */
+  .diagnostic {
+    background: linear-gradient(135deg, #002A1A, #003322);
+    border: 1px solid var(--secondary);
+    border-left: 4px solid var(--secondary);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin: 48px 0;
+    font-size: 15px;
+  }
+  .diagnostic strong { color: var(--secondary); }
+
+  /* PHASE SECTION */
+  .phase-section {
+    margin-top: 64px;
+  }
+  .phase-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  .phase-badge {
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 22px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .phase-badge.p1 { background: var(--accent); }
+  .phase-badge.p2 { background: #E06C00; }
+  .phase-badge.p3 { background: #B840E0; }
+  .phase-badge.p4 { background: #2979FF; }
+  .phase-badge.p5 { background: #00897B; }
+  .phase-badge.p6 { background: #C62828; }
+  .phase-badge.p7 { background: #6A1B9A; }
+  .phase-title {
+    font-weight: 800;
+    font-size: clamp(22px, 3vw, 30px);
+    letter-spacing: -0.5px;
+    flex: 1;
+  }
+  .phase-weeks {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--secondary);
+    white-space: nowrap;
+  }
+
+  /* PROGRESS BAR */
+  .phase-progress {
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin-bottom: 32px;
+    overflow: hidden;
+  }
+  .phase-progress-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width .6s ease;
+  }
+  .p1-fill { background: var(--accent); width: 0%; }
+  .p2-fill { background: #E06C00; width: 0%; }
+  .p3-fill { background: #B840E0; width: 0%; }
+  .p4-fill { background: #2979FF; width: 0%; }
+  .p5-fill { background: #00897B; width: 0%; }
+  .p6-fill { background: #C62828; width: 0%; }
+  .p7-fill { background: #6A1B9A; width: 0%; }
+
+  /* SUB SECTION */
+  .sub-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 20px;
+    transition: border-color .2s;
+  }
+  .sub-section:hover {
+    border-color: #FFFBF530;
+  }
+  .sub-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--highlight);
+  }
+  .sub-section p, .sub-section > ul {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .sub-section p strong { color: var(--text); }
+
+  /* TABLES */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+    overflow-x: auto;
+    display: block;
+  }
+  .styled-table thead th {
+    background: #FFFBF508;
+    color: var(--secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  .styled-table tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #FFFBF508;
+    color: var(--text-muted);
+    vertical-align: top;
+  }
+  .styled-table tbody tr:hover td {
+    background: #FFFBF505;
+  }
+  .styled-table strong { color: var(--text); }
+
+  /* DR BADGE */
+  .dr-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .dr-high { background: #4CAF5030; color: #81C784; }
+  .dr-mid { background: #FFA72630; color: #FFB74D; }
+  .dr-low { background: #F6391A30; color: #EF9A9A; }
+
+  /* CHECKBOXES */
+  .action-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+  }
+  .action-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #FFFBF508;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .action-list li:last-child { border-bottom: none; }
+  .action-list li strong { color: var(--text); }
+
+  .checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px; height: 20px;
+    min-width: 20px;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 1px;
+    transition: all .2s;
+    background: transparent;
+  }
+  .checkbox:checked {
+    background: var(--secondary);
+    border-color: var(--secondary);
+  }
+  .checkbox:checked::after {
+    content: '';
+    position: absolute;
+    left: 5px; top: 1px;
+    width: 6px; height: 11px;
+    border: solid var(--bg); border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+  }
+  .checkbox:checked + span {
+    text-decoration: line-through;
+    opacity: .5;
+  }
+
+  /* CODE / TEMPLATE */
+  .template-block {
+    background: #000;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 16px 0;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .template-block .tpl-key { color: var(--secondary); }
+  .template-block .tpl-var { color: var(--highlight); }
+
+  /* NOTE/CALLOUT */
+  .callout {
+    background: var(--bg-card);
+    border-left: 3px solid var(--secondary);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  /* WHY BOX */
+  .why-box {
+    background: #EEF89910;
+    border: 1px solid #EEF89930;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+    font-size: 14px;
+  }
+  .why-box strong { color: var(--highlight); }
+
+  /* KPI SECTION */
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 24px 0;
+  }
+  .kpi-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+  }
+  .kpi-card h3 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .kpi-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #FFFBF508;
+    font-size: 14px;
+  }
+  .kpi-row:last-child { border-bottom: none; }
+  .kpi-target {
+    font-weight: 700;
+    color: var(--highlight);
+  }
+
+  /* TIMELINE */
+  .timeline {
+    position: relative;
+    margin: 32px 0;
+    padding-left: 28px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), #B840E0, #2979FF, #00897B, #6A1B9A);
+    border-radius: 1px;
+  }
+  .timeline-item {
+    position: relative;
+    padding: 0 0 28px 24px;
+  }
+  .timeline-item:last-child { padding-bottom: 0; }
+  .timeline-dot {
+    position: absolute;
+    left: -24px;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid var(--bg);
+  }
+  .timeline-dot.td1 { background: var(--accent); }
+  .timeline-dot.td2 { background: #E06C00; }
+  .timeline-dot.td3 { background: #B840E0; }
+  .timeline-dot.td4 { background: #2979FF; }
+  .timeline-dot.td5 { background: #00897B; }
+  .timeline-dot.td6 { background: #C62828; }
+  .timeline-dot.td7 { background: #6A1B9A; }
+  .timeline-week {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--secondary);
+    margin-bottom: 4px;
+  }
+  .timeline-text {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  /* NOTES SECTION */
+  .notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .note-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .note-card strong { color: var(--highlight); }
+
+  /* TOOLS TABLE */
+  .tools-section { margin-top: 32px; }
+
+  /* SECTION DIVIDER */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+    margin: 48px 0;
+  }
+
+  /* LISTS */
+  .bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+  }
+  .bullet-list li {
+    padding: 6px 0 6px 20px;
+    position: relative;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .bullet-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--secondary);
+  }
+  .bullet-list li strong { color: var(--text); }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 40px 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+
+  /* STATUS BADGE */
+  .status-todo {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #F6391A25;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+
+  /* LINK TYPE BADGES */
+  .link-dofollow {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    background: #4CAF5025;
+    color: #81C784;
+  }
+  .link-nofollow {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    background: #FFA72625;
+    color: #FFB74D;
+  }
+
+  /* PRINT STYLES */
+  @media print {
+    .top-nav, .btn-print { display: none !important; }
+    body { background: #fff; color: #111; }
+    .hero { padding-top: 20px; }
+    .metric-card, .sub-section, .kpi-card, .note-card {
+      background: #f5f5f5;
+      border-color: #ddd;
+      color: #111;
+    }
+    .metric-value, .sub-title, .kpi-target { color: #111; }
+    .phase-title, .styled-table strong { color: #111; }
+    .styled-table thead th { background: #eee; color: #333; }
+    .styled-table tbody td { color: #333; }
+    .action-list li, .bullet-list li, .callout, .why-box,
+    .diagnostic, p, .timeline-text, .note-card { color: #333; }
+    .phase-progress { display: none; }
+    .template-block { background: #f5f5f5; color: #333; border-color: #ddd; }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero { padding: 48px 16px 40px; }
+    .content { padding: 0 16px 60px; }
+    .sub-section { padding: 20px; }
+    .phase-header { gap: 10px; }
+    .kpi-grid { grid-template-columns: 1fr; }
+    .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+    .nav-link { font-size: 12px; padding: 6px 8px; }
+    .styled-table { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP NAVIGATION -->
+<nav class="top-nav">
+  <div class="nav-inner">
+    <span class="nav-brand">WePlanify</span>
+    <a href="#etat" class="nav-link">Etat des lieux</a>
+    <a href="#phase1" class="nav-link"><span class="phase-dot" style="background:var(--accent)"></span>Phase 1</a>
+    <a href="#phase2" class="nav-link"><span class="phase-dot" style="background:#E06C00"></span>Phase 2</a>
+    <a href="#phase3" class="nav-link"><span class="phase-dot" style="background:#B840E0"></span>Phase 3</a>
+    <a href="#phase4" class="nav-link"><span class="phase-dot" style="background:#2979FF"></span>Phase 4</a>
+    <a href="#phase5" class="nav-link"><span class="phase-dot" style="background:#00897B"></span>Phase 5</a>
+    <a href="#phase6" class="nav-link"><span class="phase-dot" style="background:#C62828"></span>Phase 6</a>
+    <a href="#phase7" class="nav-link"><span class="phase-dot" style="background:#6A1B9A"></span>Phase 7</a>
+    <a href="#kpis" class="nav-link">KPIs</a>
+    <a href="#calendar" class="nav-link">Calendrier</a>
+    <button class="btn-print" onclick="window.print()">Imprimer</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <span class="hero-badge">Strategie SEO 2026</span>
+  <h1>Roadmap Autorite <span>&</span> Backlinks</h1>
+  <p class="subtitle">Objectif : passer de 0 autorite de domaine a un DR 20+ en 6 mois pour debloquer le ranking sur les requetes competitives.</p>
+
+  <div class="metrics-grid" id="etat">
+    <div class="metric-card">
+      <div class="metric-value">~0</div>
+      <div class="metric-label">Domain Rating</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">~0</div>
+      <div class="metric-label">Backlinks</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">15<span style="font-size:16px;color:var(--text-muted)">/52</span></div>
+      <div class="metric-label">Pages indexees</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">760</div>
+      <div class="metric-label">Impressions/mois</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">22</div>
+      <div class="metric-label">Clics/mois</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">7.3</div>
+      <div class="metric-label">Position moyenne</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-value">~30</div>
+      <div class="metric-label">Requetes positionnees</div>
+    </div>
+  </div>
+</header>
+
+<main class="content">
+
+  <div class="diagnostic">
+    <strong>Diagnostic :</strong> Le contenu est au niveau ou superieur a la concurrence. Le SEO technique est solide. Le seul frein majeur est l'autorite de domaine (backlinks, mentions, signaux de confiance).
+  </div>
+
+  <!-- ====== PHASE 1 ====== -->
+  <section class="phase-section" id="phase1">
+    <div class="phase-header">
+      <div class="phase-badge p1">1</div>
+      <h2 class="phase-title">Fondations de credibilite</h2>
+      <span class="phase-weeks">Semaine 1-2</span>
+    </div>
+    <div class="phase-progress"><div class="phase-progress-fill p1-fill"></div></div>
+
+    <!-- 1.1 -->
+    <div class="sub-section">
+      <h3 class="sub-title">1.1 Auteur fictif credible + E-E-A-T</h3>
+      <p>Creer un profil auteur pour les contenus SEO :</p>
+      <ul class="bullet-list">
+        <li><strong>Nom :</strong> Alex Martin (ou autre)</li>
+        <li><strong>Titre :</strong> Travel Editor, WePlanify</li>
+        <li><strong>Bio courte :</strong> "Alex has organized 50+ group trips across 30 countries and writes about collaborative travel planning."</li>
+        <li><strong>Photo :</strong> generee par IA ou photo stock avec licence</li>
+        <li><strong>Schema Person :</strong> ajouter sur toutes les pages guides/articles</li>
+      </ul>
+      <h4 style="font-size:14px;font-weight:700;margin:16px 0 8px;color:var(--text)">Actions :</h4>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span>Choisir le nom et generer la photo</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Ajouter le composant <code>AuthorBio</code> (nom, role, photo, bio courte)</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Ajouter le schema JSON-LD Person sur les pages : guide, trip-with-friends, bachelorette-trip</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Ajouter l'auteur dans les meta OG (article:author)</span></li>
+      </ul>
+    </div>
+
+    <!-- 1.2 -->
+    <div class="sub-section">
+      <h3 class="sub-title">1.2 Page "About" / "A propos"</h3>
+      <p>Creer une page <code>/about</code> ou <code>/en/about</code> qui presente :</p>
+      <ul class="bullet-list">
+        <li>L'equipe (meme si c'est une personne + l'auteur fictif)</li>
+        <li>La mission de WePlanify</li>
+        <li>Les chiffres cles (nombre de voyages crees, utilisateurs, etc.)</li>
+        <li>Liens vers les reseaux sociaux</li>
+      </ul>
+      <div class="why-box">
+        <strong>Pourquoi :</strong> Google valorise les sites qui montrent qui est derriere. C'est un signal E-E-A-T basique.
+      </div>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span>Creer la page <code>/about</code> EN + FR</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Ajouter dans le footer</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Ajouter schema Organization avec founders/team</span></li>
+      </ul>
+    </div>
+
+    <!-- 1.3 -->
+    <div class="sub-section">
+      <h3 class="sub-title">1.3 Reseaux sociaux — Presence minimale</h3>
+      <p>Google verifie l'existence de profils sociaux coherents. Creer les comptes suivants (meme avec un contenu minimal) :</p>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span><strong>Twitter/X :</strong> @weplanify — bio + lien + 3-5 tweets (lancement, tips voyage)</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>Instagram :</strong> @weplanify — bio + lien + 3-5 posts (visuels app, tips)</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>LinkedIn :</strong> page entreprise WePlanify — description + lien</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>Pinterest :</strong> compte + 2-3 boards (travel planning tips, packing lists)</span></li>
+      </ul>
+      <p><strong>Lier tous les profils</strong> dans le schema Organization JSON-LD du site (<code>sameAs</code>).</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ====== PHASE 2 ====== -->
+  <section class="phase-section" id="phase2">
+    <div class="phase-header">
+      <div class="phase-badge p2" style="background:#E06C00">2</div>
+      <h2 class="phase-title">Premiers backlinks faciles</h2>
+      <span class="phase-weeks">Semaine 2-4</span>
+    </div>
+    <div class="phase-progress"><div class="phase-progress-fill p2-fill"></div></div>
+
+    <!-- 2.1 -->
+    <div class="sub-section">
+      <h3 class="sub-title">2.1 Directories & listings (backlinks gratuits, DR 30-80)</h3>
+      <p>Soumettre WePlanify sur les directories suivantes :</p>
+      <table class="styled-table">
+        <thead><tr><th>Directory</th><th>DR estime</th><th>Type</th><th>Statut</th></tr></thead>
+        <tbody>
+          <tr><td><strong>AlternativeTo.net</strong></td><td><span class="dr-badge dr-high">70+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>Product Hunt</strong></td><td><span class="dr-badge dr-high">90+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">Phase 3</span></td></tr>
+          <tr><td><strong>SaaSHub</strong></td><td><span class="dr-badge dr-mid">50+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>BetaList</strong></td><td><span class="dr-badge dr-mid">60+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>Launching Next</strong></td><td><span class="dr-badge dr-mid">40+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>StartupStash</strong></td><td><span class="dr-badge dr-mid">45+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>ToolPilot.ai</strong></td><td><span class="dr-badge dr-low">30+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>There's An AI For That</strong></td><td><span class="dr-badge dr-mid">60+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>Indie Hackers</strong> (profil + post)</td><td><span class="dr-badge dr-mid">55+</span></td><td><span class="link-nofollow">nofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>Hacker News</strong> (Show HN)</td><td><span class="dr-badge dr-high">90+</span></td><td><span class="link-nofollow">nofollow + trafic</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>SideProjectors</strong></td><td><span class="dr-badge dr-low">30+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+          <tr><td><strong>MicroLaunch</strong></td><td><span class="dr-badge dr-low">25+</span></td><td><span class="link-dofollow">dofollow</span></td><td><span class="status-todo">A faire</span></td></tr>
+        </tbody>
+      </table>
+      <p><strong>Action :</strong> Creer un compte sur chaque, rediger une description de 2-3 phrases, soumettre avec lien vers weplanify.com.</p>
+    </div>
+
+    <!-- 2.2 -->
+    <div class="sub-section">
+      <h3 class="sub-title">2.2 Directories voyage specifiques</h3>
+      <table class="styled-table">
+        <thead><tr><th>Directory</th><th>DR estime</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Capterra</strong></td><td><span class="dr-badge dr-high">90+</span></td><td>Necessite un produit lance</td></tr>
+          <tr><td><strong>G2</strong></td><td><span class="dr-badge dr-high">90+</span></td><td>Necessite un produit lance</td></tr>
+          <tr><td><strong>TrustPilot</strong></td><td><span class="dr-badge dr-high">95+</span></td><td>Page business gratuite</td></tr>
+          <tr><td><strong>AppSumo Marketplace</strong></td><td><span class="dr-badge dr-high">80+</span></td><td>Si modele freemium</td></tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        <strong>Note :</strong> Capterra et G2 necessitent que l'app soit lancee publiquement. A faire apres le lancement.
+      </div>
+    </div>
+
+    <!-- 2.3 -->
+    <div class="sub-section">
+      <h3 class="sub-title">2.3 Profils web avec backlinks</h3>
+      <p>Creer des profils sur des plateformes a fort DR avec lien vers le site :</p>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span><strong>GitHub :</strong> organisation weplanify + lien dans la bio</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>Medium :</strong> publication @weplanify + 1 article repost</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>Dev.to :</strong> profil + 1 article technique (ex: "Building a real-time collaborative trip planner with Next.js")</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>Hashnode :</strong> profil + 1 article</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>Substack :</strong> newsletter WePlanify (meme avec 0 abonnes, le backlink compte)</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ====== PHASE 3 ====== -->
+  <section class="phase-section" id="phase3">
+    <div class="phase-header">
+      <div class="phase-badge p3">3</div>
+      <h2 class="phase-title">Product Hunt Launch</h2>
+      <span class="phase-weeks">Semaine 4-6</span>
+    </div>
+    <div class="phase-progress"><div class="phase-progress-fill p3-fill"></div></div>
+
+    <div class="sub-section">
+      <p>Le lancement Product Hunt est le levier backlink le plus puissant pour une startup. Un bon lancement genere :</p>
+      <ul class="bullet-list">
+        <li>1 backlink dofollow DR 90+</li>
+        <li>50-200 visites le jour du lancement</li>
+        <li>Des backlinks secondaires (blogs qui couvrent les produits PH)</li>
+        <li>De la credibilite sociale</li>
+      </ul>
+    </div>
+
+    <div class="sub-section">
+      <h3 class="sub-title">Preparation (2 semaines avant)</h3>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span>Creer le profil Product Hunt (hunter + maker)</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Preparer les assets : logo HD, screenshots (5), GIF/video demo (30s)</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Rediger le tagline : "The free group trip planner with polls, budgets & collaborative itineraries"</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Rediger la description (200 mots max, focus sur le probleme + la solution)</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Preparer 3 commentaires du maker (histoire, features cles, roadmap)</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Recruter 5-10 amis/contacts pour upvoter et commenter le jour J</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Preparer un post LinkedIn et Twitter pour le jour du lancement</span></li>
+      </ul>
+    </div>
+
+    <div class="sub-section">
+      <h3 class="sub-title">Jour du lancement</h3>
+      <ul class="bullet-list">
+        <li>Publier entre 00:01 et 01:00 PST (mardi, mercredi ou jeudi)</li>
+        <li>Poster les commentaires du maker immediatement</li>
+        <li>Partager sur tous les reseaux sociaux</li>
+        <li>Envoyer par email a votre liste (meme petite)</li>
+        <li>Poster sur Indie Hackers, Hacker News (Show HN), Reddit r/startups</li>
+      </ul>
+    </div>
+
+    <div class="sub-section">
+      <h3 class="sub-title">Apres le lancement</h3>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span>Ajouter le badge "Featured on Product Hunt" sur la homepage</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Contacter les blogs qui couvrent les lancements PH pour un article</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Publier un post-mortem sur Indie Hackers / Medium</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ====== PHASE 4 ====== -->
+  <section class="phase-section" id="phase4">
+    <div class="phase-header">
+      <div class="phase-badge p4" style="background:#2979FF">4</div>
+      <h2 class="phase-title">Outreach & Guest Posting</h2>
+      <span class="phase-weeks">Semaine 4-8</span>
+    </div>
+    <div class="phase-progress"><div class="phase-progress-fill p4-fill"></div></div>
+
+    <!-- 4.1 -->
+    <div class="sub-section">
+      <h3 class="sub-title">4.1 Guest posts sur blogs voyage</h3>
+      <p>L'objectif est d'obtenir 5-10 articles invites en 2 mois, chacun avec un lien vers WePlanify.</p>
+
+      <h4 style="font-size:14px;font-weight:700;margin:16px 0 8px;color:var(--accent)">Cibles FR (ocean bleu, faible concurrence) :</h4>
+      <table class="styled-table">
+        <thead><tr><th>Blog</th><th>DR</th><th>Approche</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Blogs voyage FR independants</strong> (Voyageurs du Net, Novo-monde, etc.)</td><td><span class="dr-badge dr-mid">30-50</span></td><td>Proposer un article "Comment organiser un voyage de groupe sans stress"</td></tr>
+          <tr><td><strong>Le Routard</strong> (forum/communaute)</td><td><span class="dr-badge dr-high">70+</span></td><td>Participer aux discussions, lien en signature</td></tr>
+          <tr><td><strong>Toploc blog</strong></td><td><span class="dr-badge dr-low">30+</span></td><td>Article sur les voyages entre amis en France</td></tr>
+          <tr><td><strong>Decathlon Travel blog</strong></td><td><span class="dr-badge dr-mid">50+</span></td><td>Partenariat contenu outdoor/group trips</td></tr>
+        </tbody>
+      </table>
+
+      <h4 style="font-size:14px;font-weight:700;margin:16px 0 8px;color:var(--secondary)">Cibles EN :</h4>
+      <table class="styled-table">
+        <thead><tr><th>Blog</th><th>DR</th><th>Approche</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Travel blogs mid-tier</strong> (Nomadic Matt, Expert Vagabond, etc.)</td><td><span class="dr-badge dr-mid">50-70</span></td><td>Guest post "The Complete Guide to Group Trip Budgeting"</td></tr>
+          <tr><td><strong>Tech blogs</strong> (dev.to, Hashnode, Medium)</td><td><span class="dr-badge dr-mid">50-80</span></td><td>Article technique sur le stack</td></tr>
+          <tr><td><strong>Wedding/bachelorette blogs</strong></td><td><span class="dr-badge dr-mid">30-50</span></td><td>Article "How to Plan a Bachelorette Trip Without Losing Your Mind"</td></tr>
+        </tbody>
+      </table>
+
+      <h4 style="font-size:14px;font-weight:700;margin:16px 0 8px;color:var(--text)">Template d'approche email :</h4>
+      <div class="template-block"><span class="tpl-key">Subject:</span> Guest post idea — <span class="tpl-var">[Topic]</span> for <span class="tpl-var">[Blog Name]</span>
+
+Hi <span class="tpl-var">[Name]</span>,
+
+I'm <span class="tpl-var">[Alex/Name]</span> from WePlanify, a free group trip planner. I've been reading <span class="tpl-var">[Blog Name]</span> and loved your piece on <span class="tpl-var">[recent article]</span>.
+
+I'd love to contribute a guest post on "<span class="tpl-var">[Proposed Title]</span>" — a practical guide based on my experience organizing 50+ group trips.
+
+The article would cover:
+- <span class="tpl-var">[Point 1]</span>
+- <span class="tpl-var">[Point 2]</span>
+- <span class="tpl-var">[Point 3]</span>
+
+It would be original, actionable, and a great fit for your audience. Happy to adapt the angle to your editorial style.
+
+Would you be open to this?
+
+Best,
+<span class="tpl-var">[Name]</span></div>
+    </div>
+
+    <!-- 4.2 -->
+    <div class="sub-section">
+      <h3 class="sub-title">4.2 Outreach "Add us to your list"</h3>
+      <p>Contacter les auteurs des articles "best group trip planner apps" pour demander d'ajouter WePlanify :</p>
+
+      <h4 style="font-size:14px;font-weight:700;margin:16px 0 8px;color:var(--text)">Pages cibles :</h4>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span><code>avosquado.app/blog/best-group-travel-planning-apps-in-2025</code> — email l'equipe AvoSquado</span></li>
+        <li><input type="checkbox" class="checkbox"><span><code>infinitytransportation.net/blog/group-travel-planning-apps</code> — blog corporate, accepte souvent les suggestions</span></li>
+        <li><input type="checkbox" class="checkbox"><span><code>joinmytrip.com/blog/en/group-travel-apps/</code> — communaute voyage, ouvert aux ajouts</span></li>
+        <li><input type="checkbox" class="checkbox"><span><code>travala.com/blog/the-10-best-travel-planning-apps</code> — blog crypto/voyage</span></li>
+        <li><input type="checkbox" class="checkbox"><span><code>howbout.app/blog/five-apps-to-make-your-group-trips-stress-free</code> — petit blog, facile a contacter</span></li>
+        <li><input type="checkbox" class="checkbox"><span><code>engine.com/business-travel-guide/group-travel-planning</code> — corporate travel</span></li>
+      </ul>
+
+      <h4 style="font-size:14px;font-weight:700;margin:16px 0 8px;color:var(--text)">Template :</h4>
+      <div class="template-block"><span class="tpl-key">Subject:</span> Suggestion for your "<span class="tpl-var">[Article Title]</span>" article
+
+Hi <span class="tpl-var">[Name]</span>,
+
+I came across your article on <span class="tpl-var">[topic]</span> and found it really helpful. I wanted to suggest adding WePlanify to your list.
+
+WePlanify is a free group trip planner that includes:
+- Collaborative itineraries
+- Group polls for decisions
+- Shared budget tracking
+- Smart packing lists
+
+It's specifically built for friend groups (unlike TripIt or Wanderlog which are solo-first), and it's completely free with no limits.
+
+Here's the link: https://www.weplanify.com
+
+Would you consider adding it to your article? Happy to provide screenshots, a description, or any other details you need.
+
+Thanks!
+<span class="tpl-var">[Name]</span></div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ====== PHASE 5 ====== -->
+  <section class="phase-section" id="phase5">
+    <div class="phase-header">
+      <div class="phase-badge p5" style="background:#00897B">5</div>
+      <h2 class="phase-title">Contenu & Link Bait</h2>
+      <span class="phase-weeks">Semaine 6-12</span>
+    </div>
+    <div class="phase-progress"><div class="phase-progress-fill p5-fill"></div></div>
+
+    <!-- 5.1 -->
+    <div class="sub-section">
+      <h3 class="sub-title">5.1 Articles de blog avec potentiel backlink</h3>
+      <p>Creer du contenu qui attire naturellement des liens :</p>
+      <table class="styled-table">
+        <thead><tr><th>Article</th><th>Langue</th><th>Pourquoi ca attire des liens</th></tr></thead>
+        <tbody>
+          <tr><td><strong>"Group Trip Budget Calculator (Free Template)"</strong></td><td>EN</td><td>Templates gratuits = backlinks naturels</td></tr>
+          <tr><td><strong>"The Ultimate Group Trip Packing Checklist (PDF)"</strong></td><td>EN+FR</td><td>Ressource telechargeable, partageable</td></tr>
+          <tr><td><strong>"Group Travel Statistics 2026: 25 Surprising Facts"</strong></td><td>EN</td><td>Les articles de stats sont cites par d'autres blogs</td></tr>
+          <tr><td><strong>"Les 15 Meilleures Destinations EVJF en France (2026)"</strong></td><td>FR</td><td>Fort volume FR, potentiel partage</td></tr>
+          <tr><td><strong>"Group Trip Cost Comparison: 10 Destinations Compared"</strong></td><td>EN</td><td>Donnees uniques = liens</td></tr>
+          <tr><td><strong>"Comment Organiser un Voyage de Groupe: Checklist Gratuite"</strong></td><td>FR</td><td>Lead magnet FR</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 5.2 -->
+    <div class="sub-section">
+      <h3 class="sub-title">5.2 Infographies</h3>
+      <p>Creer 2-3 infographies partageables :</p>
+      <ul class="bullet-list">
+        <li><strong>"The Anatomy of a Perfect Group Trip"</strong> (timeline visuelle)</li>
+        <li><strong>"Group Trip Budget Breakdown by Destination"</strong> (data viz)</li>
+        <li><strong>"How Friends Plan Trips: WhatsApp vs. a Real Tool"</strong> (comparaison humoristique)</li>
+      </ul>
+      <div class="why-box">
+        <strong>Pourquoi :</strong> Les infographies sont le contenu le plus partage et le plus linke. Poster sur Pinterest, soumettre sur Visual.ly et infographic directories.
+      </div>
+    </div>
+
+    <!-- 5.3 -->
+    <div class="sub-section">
+      <h3 class="sub-title">5.3 Etude / sondage original</h3>
+      <p>Realiser un mini-sondage (Google Forms, Twitter poll, ou dans l'app) :</p>
+      <ul class="bullet-list">
+        <li><strong>"We surveyed 500 travelers: here's what makes group trips fail"</strong></li>
+        <li>Publier les resultats dans un article</li>
+        <li>Pitcher les resultats a des blogs voyage et media</li>
+      </ul>
+      <div class="why-box">
+        <strong>Les donnees originales sont le meilleur aimant a backlinks.</strong>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ====== PHASE 6 ====== -->
+  <section class="phase-section" id="phase6">
+    <div class="phase-header">
+      <div class="phase-badge p6" style="background:#C62828">6</div>
+      <h2 class="phase-title">PR & Media</h2>
+      <span class="phase-weeks">Semaine 8-16</span>
+    </div>
+    <div class="phase-progress"><div class="phase-progress-fill p6-fill"></div></div>
+
+    <!-- 6.1 -->
+    <div class="sub-section">
+      <h3 class="sub-title">6.1 HARO / Connectively / Qwoted</h3>
+      <p>S'inscrire comme source experte sur :</p>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span><strong>Connectively</strong> (ex-HARO) — repondre aux requetes journalistes sur le voyage, la tech, les apps</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>Qwoted</strong> — meme concept, plus oriente tech</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>SourceBottle</strong> — version australienne, couvre aussi le marche mondial</span></li>
+      </ul>
+      <p>Repondre a 3-5 requetes par semaine. Chaque mention dans un article = 1 backlink de qualite.</p>
+    </div>
+
+    <!-- 6.2 -->
+    <div class="sub-section">
+      <h3 class="sub-title">6.2 Press kit</h3>
+      <p>Creer un press kit accessible a <code>/press</code> ou <code>/en/press</code> :</p>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span>Logo en plusieurs formats (PNG, SVG, light/dark)</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Screenshots HD de l'app (5-10)</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Description courte (50 mots) et longue (200 mots)</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Chiffres cles</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Citations du fondateur</span></li>
+        <li><input type="checkbox" class="checkbox"><span>Contact presse</span></li>
+      </ul>
+    </div>
+
+    <!-- 6.3 -->
+    <div class="sub-section">
+      <h3 class="sub-title">6.3 Pitch media</h3>
+      <p>Apres le lancement, pitcher WePlanify a :</p>
+      <table class="styled-table">
+        <thead><tr><th>Media</th><th>Angle</th></tr></thead>
+        <tbody>
+          <tr><td><strong>TechCrunch / The Verge</strong></td><td>"Free group trip planner challenges Wanderlog"</td></tr>
+          <tr><td><strong>Lonely Planet</strong></td><td>"New tool makes group travel planning collaborative"</td></tr>
+          <tr><td><strong>Conde Nast Traveler</strong></td><td>"The app that saves friendships during group trips"</td></tr>
+          <tr><td><strong>Blogs FR</strong> (Madmoizelle, Konbini)</td><td>"L'app francaise qui simplifie les voyages entre potes"</td></tr>
+          <tr><td><strong>Wedding media</strong> (The Knot, Brides)</td><td>"The free bachelorette trip planner bridesmaids actually use"</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ====== PHASE 7 ====== -->
+  <section class="phase-section" id="phase7">
+    <div class="phase-header">
+      <div class="phase-badge p7" style="background:#6A1B9A">7</div>
+      <h2 class="phase-title">Partenariats strategiques</h2>
+      <span class="phase-weeks">Mois 3-6</span>
+    </div>
+    <div class="phase-progress"><div class="phase-progress-fill p7-fill"></div></div>
+
+    <!-- 7.1 -->
+    <div class="sub-section">
+      <h3 class="sub-title">7.1 Micro-influenceurs voyage</h3>
+      <ul class="bullet-list">
+        <li>Cibler des comptes Instagram/TikTok 5k-50k followers dans la niche voyage</li>
+        <li>Proposition : "Utilisez WePlanify pour votre prochain voyage de groupe, on vous feature sur notre site"</li>
+        <li>Pas de budget necessaire — l'outil est gratuit, l'echange est la visibilite</li>
+      </ul>
+    </div>
+
+    <!-- 7.2 -->
+    <div class="sub-section">
+      <h3 class="sub-title">7.2 Partenariats croises avec des apps complementaires</h3>
+      <table class="styled-table">
+        <thead><tr><th>App</th><th>Synergie</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Splitwise</strong></td><td>Budget/depenses</td><td>Article croise, lien mutuel</td></tr>
+          <tr><td><strong>Rome2Rio</strong></td><td>Transport</td><td>Integration ou article</td></tr>
+          <tr><td><strong>Hostelworld</strong></td><td>Hebergement groupe</td><td>Co-marketing</td></tr>
+          <tr><td><strong>GetYourGuide</strong></td><td>Activites</td><td>Affiliation + contenu</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 7.3 -->
+    <div class="sub-section">
+      <h3 class="sub-title">7.3 Communautes en ligne</h3>
+      <p>Participer activement (pas spammer) dans :</p>
+      <ul class="action-list">
+        <li><input type="checkbox" class="checkbox"><span><strong>Reddit :</strong> r/travel, r/grouptravel, r/bacheloretteparty, r/weddingplanning</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>Facebook Groups :</strong> "Travel Planning", "Group Travel", "EVJF France"</span></li>
+        <li><input type="checkbox" class="checkbox"><span><strong>Discord :</strong> serveurs voyage, digital nomads</span></li>
+      </ul>
+      <div class="why-box">
+        <strong>Regle :</strong> 80% valeur, 20% mention de WePlanify. Repondre aux questions, partager des tips, mentionner l'outil quand c'est naturel.
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ====== KPIs ====== -->
+  <section class="phase-section" id="kpis">
+    <div class="phase-header">
+      <h2 class="phase-title" style="color:var(--highlight)">KPIs & Suivi</h2>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <h3 style="color:var(--secondary)">Objectifs a 3 mois <span style="font-weight:400;font-size:14px;color:var(--text-muted)">(juin 2026)</span></h3>
+        <div class="kpi-row"><span>Domain Rating (DR)</span><span class="kpi-target">10-15</span></div>
+        <div class="kpi-row"><span>Backlinks totaux</span><span class="kpi-target">30+</span></div>
+        <div class="kpi-row"><span>Backlinks dofollow</span><span class="kpi-target">15+</span></div>
+        <div class="kpi-row"><span>Pages indexees</span><span class="kpi-target">40+ / 52</span></div>
+        <div class="kpi-row"><span>Impressions/mois</span><span class="kpi-target">5 000</span></div>
+        <div class="kpi-row"><span>Clics/mois</span><span class="kpi-target">200</span></div>
+        <div class="kpi-row"><span>Position moyenne</span><span class="kpi-target">&lt; 15</span></div>
+      </div>
+      <div class="kpi-card">
+        <h3 style="color:var(--accent)">Objectifs a 6 mois <span style="font-weight:400;font-size:14px;color:var(--text-muted)">(septembre 2026)</span></h3>
+        <div class="kpi-row"><span>Domain Rating (DR)</span><span class="kpi-target">20-25</span></div>
+        <div class="kpi-row"><span>Backlinks totaux</span><span class="kpi-target">80+</span></div>
+        <div class="kpi-row"><span>Backlinks dofollow</span><span class="kpi-target">40+</span></div>
+        <div class="kpi-row"><span>Pages indexees</span><span class="kpi-target">52/52</span></div>
+        <div class="kpi-row"><span>Impressions/mois</span><span class="kpi-target">20 000</span></div>
+        <div class="kpi-row"><span>Clics/mois</span><span class="kpi-target">1 000</span></div>
+        <div class="kpi-row"><span>Position moyenne</span><span class="kpi-target">&lt; 10</span></div>
+        <div class="kpi-row"><span>Conversions organique</span><span class="kpi-target">50 signups/mois</span></div>
+      </div>
+    </div>
+
+    <div class="sub-section tools-section">
+      <h3 class="sub-title">Outils de suivi</h3>
+      <table class="styled-table">
+        <thead><tr><th>Outil</th><th>Usage</th><th>Cout</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Google Search Console</strong></td><td>Impressions, clics, position, indexation</td><td style="color:#81C784;font-weight:600">Gratuit</td></tr>
+          <tr><td><strong>Ahrefs Webmaster Tools</strong></td><td>DR, backlinks, referring domains</td><td style="color:#81C784;font-weight:600">Gratuit (version limitee)</td></tr>
+          <tr><td><strong>Google Analytics 4</strong></td><td>Trafic, conversions, comportement</td><td style="color:#81C784;font-weight:600">Gratuit</td></tr>
+          <tr><td><strong>Ubersuggest</strong></td><td>Suivi de position mots-cles</td><td style="color:#81C784;font-weight:600">Gratuit (3 rech./jour)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ====== CALENDAR ====== -->
+  <section class="phase-section" id="calendar">
+    <div class="phase-header">
+      <h2 class="phase-title" style="color:var(--highlight)">Calendrier resume</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot td1"></div>
+        <div class="timeline-week">Semaine 1-2</div>
+        <div class="timeline-text">Auteur fictif + schema, page About, profils sociaux, premiers profils web</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot td2"></div>
+        <div class="timeline-week">Semaine 2-4</div>
+        <div class="timeline-text">Soumission directories (10+), profils Medium/Dev.to/Substack</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot td3"></div>
+        <div class="timeline-week">Semaine 4-6</div>
+        <div class="timeline-text">Product Hunt launch, premiers guest posts pitches</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot td4"></div>
+        <div class="timeline-week">Semaine 4-8</div>
+        <div class="timeline-text">Outreach "add us to your list" (10 emails), guest posts (5 pitches)</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot td5"></div>
+        <div class="timeline-week">Semaine 6-12</div>
+        <div class="timeline-text">Articles link bait (budget calculator, stats, checklist PDF), infographies</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot td6"></div>
+        <div class="timeline-week">Semaine 8-16</div>
+        <div class="timeline-text">HARO/Connectively, press kit, pitch media</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot td7"></div>
+        <div class="timeline-week">Mois 3-6</div>
+        <div class="timeline-text">Partenariats influenceurs, apps complementaires, communautes</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ====== NOTES ====== -->
+  <section class="phase-section" id="notes">
+    <div class="phase-header">
+      <h2 class="phase-title" style="color:var(--highlight)">Notes importantes</h2>
+    </div>
+    <div class="notes-grid">
+      <div class="note-card" style="border-left:3px solid var(--accent)">
+        <strong>Pas de PBN, pas de liens achetes</strong> — Google penalise. Tous les liens doivent etre naturels ou editoriaux.
+      </div>
+      <div class="note-card" style="border-left:3px solid var(--highlight)">
+        <strong>La qualite prime sur la quantite</strong> — 1 backlink d'un site DR 60 vaut plus que 50 backlinks de sites DR 5.
+      </div>
+      <div class="note-card" style="border-left:3px solid var(--secondary)">
+        <strong>Le contenu est le meilleur aimant</strong> — les templates, calculateurs et donnees originales attirent des liens sans outreach.
+      </div>
+      <div class="note-card" style="border-left:3px solid #4CAF50">
+        <strong>Le marche FR est un avantage</strong> — quasi zero concurrence, les blogs FR sont plus accessibles que les US/UK.
+      </div>
+      <div class="note-card" style="border-left:3px solid #FF9800">
+        <strong>SquadTrip est DOWN</strong> — c'est une fenetre d'opportunite pour capter leur trafic et leurs mentions.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>WePlanify — Roadmap Autorite & Backlinks | Derniere mise a jour : 26 mars 2026</p>
+</footer>
+
+<script>
+// Animate progress bars on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const fill = entry.target.querySelector('.phase-progress-fill');
+      if (fill) fill.style.width = '100%';
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.phase-progress').forEach(el => observer.observe(el));
+
+// Persist checkbox state in localStorage
+document.querySelectorAll('.checkbox').forEach((cb, i) => {
+  const key = 'wp-roadmap-cb-' + i;
+  cb.checked = localStorage.getItem(key) === 'true';
+  if (cb.checked && cb.nextElementSibling) {
+    cb.nextElementSibling.style.textDecoration = 'line-through';
+    cb.nextElementSibling.style.opacity = '.5';
+  }
+  cb.addEventListener('change', () => {
+    localStorage.setItem(key, cb.checked);
+    if (cb.nextElementSibling) {
+      cb.nextElementSibling.style.textDecoration = cb.checked ? 'line-through' : 'none';
+      cb.nextElementSibling.style.opacity = cb.checked ? '.5' : '1';
+    }
+    updateProgressBars();
+  });
+});
+
+// Update progress bars based on checked items per phase
+function updateProgressBars() {
+  document.querySelectorAll('.phase-section').forEach(section => {
+    const cbs = section.querySelectorAll('.checkbox');
+    if (cbs.length === 0) return;
+    const checked = [...cbs].filter(c => c.checked).length;
+    const pct = Math.round((checked / cbs.length) * 100);
+    const fill = section.querySelector('.phase-progress-fill');
+    if (fill) fill.style.width = pct + '%';
+  });
+}
+updateProgressBars();
+
+// Active nav link highlight on scroll
+const sections = document.querySelectorAll('.phase-section');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const top = section.offsetTop - 100;
+    if (scrollY >= top) current = section.id;
+  });
+  navLinks.forEach(link => {
+    link.style.color = link.getAttribute('href') === '#' + current ? 'var(--highlight)' : '';
+    link.style.background = link.getAttribute('href') === '#' + current ? '#FFFBF510' : '';
+  });
+});
+</script>
+
+</body>
+</html>
