@@ -78,8 +78,7 @@ export default function CookieConsent() {
         window.dispatchEvent(new Event("consent_granted"));
       }
     } else {
-      // First visit — push default (denied) consent
-      pushConsentSignal("pending");
+      // First visit — show banner (defaults already set by Analytics component)
       setVisible(true);
     }
   }, []);
