@@ -115,6 +115,36 @@ export default function Footer({ footerData }: FooterProps) {
                 </Link>
               ))}
             </div>
+            {/* Company column */}
+            <div className="flex flex-col">
+              <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
+                {locale === "fr" ? "Entreprise" : "Company"}
+              </h3>
+              <Link
+                href={`/${locale}/about`}
+                className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+              >
+                {locale === "fr" ? "À propos" : "About"}
+              </Link>
+              <Link
+                href={`/${locale}/contact`}
+                className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+              >
+                Contact
+              </Link>
+              <Link
+                href={`/${locale}/blog`}
+                className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+              >
+                Blog
+              </Link>
+              <Link
+                href={`/${locale}/faq`}
+                className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+              >
+                FAQ
+              </Link>
+            </div>
           </div>
 
           {/* Footer CTA Section */}

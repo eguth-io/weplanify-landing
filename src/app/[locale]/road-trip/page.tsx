@@ -5,16 +5,17 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
-import FloatingCards from "@/components/FloatingCards";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
+import FadeIn from "@/components/FadeIn";
+import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
 
-type Props = {
-  params: Promise<{ locale: string }>;
-};
+type Props = { params: Promise<{ locale: string }> };
+const SITE_URL = "https://www.weplanify.com";
+const PATHNAME = "/road-trip";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -22,620 +23,310 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const metadata = await generateMetadataFromSanity(locale, "/road-trip");
-
+  const metadata = await generateMetadataFromSanity(locale, PATHNAME);
   const isEn = locale === "en";
   const title = isEn
-    ? "Plan a Road Trip with Friends — Group Route Planner | WePlanify"
-    : "Road Trip entre Amis — Planificateur de Route de Groupe | WePlanify";
+    ? "Plan a Road Trip With Your Crew — Route Planner for Groups | WePlanify"
+    : "Organiser un Road Trip entre Amis — Planificateur d'Itinéraire de Groupe | WePlanify";
   const description = isEn
-    ? "Plan the ultimate road trip with your crew. Vote on stops, split gas costs, and build a day-by-day route together."
-    : "Organisez le road trip ultime entre amis. Votez sur les arrêts, partagez les frais et construisez votre itinéraire ensemble.";
+    ? "Plan your group road trip with WePlanify. Collaborative route planning, shared gas budgets, packing coordination, and group polls for every stop along the way."
+    : "Organisez votre road trip de groupe avec WePlanify. Planification d'itinéraire collaborative, budget essence partagé, coordination des bagages et sondages pour chaque étape.";
+  const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
   return {
-    ...metadata,
-    title,
-    description,
-    openGraph: {
-      ...metadata.openGraph,
-      title,
-      description,
-    },
-    twitter: {
-      ...metadata.twitter,
-      title,
-      description,
-    },
+    ...metadata, title, description,
+    authors: [{ name: "Alex Martin" }],
+    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl },
+    twitter: { ...metadata.twitter, title, description },
+    alternates: { canonical: currentUrl, languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` } },
   };
 }
-
-const content = {
-  en: {
-    heroTag: "Road Trip, Your Way",
-    heroTitle: "Plan a Road Trip\nWith Your Crew",
-    heroDescription:
-      "The open road, your best friends, and zero stress. WePlanify helps your group plan the perfect road trip \u2014 from route stops to gas money, everyone stays in the loop.",
-    heroCta: "Start planning for free",
-    painPointsTitle: "Road Trip Headaches",
-    painPointsSubtitle:
-      "A road trip with friends is the dream \u2014 until someone has to be the organizer.",
-    painPoints: [
-      {
-        icon: "\ud83d\uddfa\ufe0f",
-        title: "Route Arguments",
-        description:
-          "Everyone wants to stop at different places. Without a shared plan, you end up driving past the best spots or adding hours of detours.",
-      },
-      {
-        icon: "\u26fd",
-        title: "Gas & Cost Splitting",
-        description:
-          "Who\u2019s paying for gas? Who booked the motel? Tracking shared expenses across 5+ stops over several days gets messy fast.",
-      },
-      {
-        icon: "\ud83d\udd50",
-        title: "Timing Disasters",
-        description:
-          "Someone wants to spend 3 hours at every viewpoint while others want to keep driving. Without alignment, road trips turn into arguments.",
-      },
-      {
-        icon: "\ud83c\udf92",
-        title: "Car Space is Limited",
-        description:
-          "Five people, one trunk. Without coordinating who brings what, you end up with three portable speakers and no cooler.",
-      },
-    ],
-
-    solutionTitle: "How WePlanify Makes Road Trips Easy",
-    solutionSubtitle:
-      "Everything your road trip crew needs to plan stops, split costs, and stay organized on the road.",
-    solutions: [
-      {
-        title: "Collaborative Route Planning",
-        description:
-          "Build your road trip itinerary together. Add stops, plan overnight stays, and create a day-by-day schedule the whole car agrees on.",
-        link: "/features/planning",
-        linkText: "Learn about planning",
-        color: "bg-[#EEF899]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Vote on Every Stop",
-        description:
-          "National park or roadside diner? Scenic route or highway? Let everyone vote on stops and detours \u2014 no more driver-dictator energy.",
-        link: "/features/polls",
-        linkText: "Discover polls",
-        color: "bg-[#61DBD5]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Split Gas & Expenses",
-        description:
-          "Track gas, food, tolls, accommodations, and everything in between. See who owes what in real time \u2014 settle up at the end, not at every stop.",
-        link: "/features/budget",
-        linkText: "Explore budget tools",
-        color: "bg-[#001E13]",
-        textColor: "text-[#FFFBF5]",
-      },
-      {
-        title: "Shared Packing Lists",
-        description:
-          "Coordinate what each person brings for the car. Avoid duplicates, assign group items (cooler, aux cable, snacks), and make sure nothing critical is forgotten.",
-        link: "/features/packing",
-        linkText: "See packing lists",
-        color: "bg-[#F6391A]",
-        textColor: "text-[#FFFBF5]",
-      },
-    ],
-
-    stepsTitle: "3 Steps to Plan Your Road Trip",
-    stepsSubtitle:
-      "From \u2018let\u2019s do a road trip\u2019 to \u2018we\u2019re on the road\u2019 \u2014 in minutes.",
-    steps: [
-      {
-        step: "1",
-        title: "Create Your Trip",
-        description:
-          "Name your road trip, set start/end dates, and invite your crew with a simple link. Everyone joins instantly.",
-      },
-      {
-        step: "2",
-        title: "Plan the Route Together",
-        description:
-          "Add stops, vote on detours, build a day-by-day plan, and track your shared gas fund \u2014 all in one place.",
-      },
-      {
-        step: "3",
-        title: "Hit the Road",
-        description:
-          "Get coordinated packing lists for the car, finalize your route, and hit the open road with your crew.",
-      },
-    ],
-
-    faqTitle: "Frequently Asked Questions",
-    faqItems: [
-      {
-        q: "Can I plan multi-day road trips?",
-        a: "Yes. WePlanify supports multi-day itineraries with different stops, overnights, and activities for each day. Perfect for cross-country road trips or weekend getaways.",
-      },
-      {
-        q: "How does the expense splitting work for road trips?",
-        a: "Add expenses as you go \u2014 gas, food, tolls, hotels. The shared budget tracker calculates who owes what automatically. Settle up at the end of the trip with a clear breakdown.",
-      },
-      {
-        q: "Do I need to download an app?",
-        a: "No download needed. WePlanify works directly in your browser on any device \u2014 phone, tablet, or computer. Perfect for checking the plan from the passenger seat.",
-      },
-    ],
-
-    ctaTitle: "Your Next Road Trip Starts Here",
-    ctaDescription:
-      "Join thousands of road trip crews who plan their adventures with WePlanify. It\u2019s free, it\u2019s collaborative, and it keeps everyone on the same route.",
-    ctaButton: "Start planning your road trip",
-  },
-  fr: {
-    heroTag: "Road Trip, \u00c0 Votre Fa\u00e7on",
-    heroTitle: "Organisez un Road Trip\nAvec Votre Bande",
-    heroDescription:
-      "La route ouverte, vos meilleurs amis, et z\u00e9ro stress. WePlanify aide votre groupe \u00e0 planifier le road trip parfait \u2014 des arr\u00eats aux frais d\u2019essence, tout le monde reste dans la boucle.",
-    heroCta: "Commencer gratuitement",
-    painPointsTitle: "Les Gal\u00e8res du Road Trip",
-    painPointsSubtitle:
-      "Un road trip entre amis, c\u2019est le r\u00eave \u2014 jusqu\u2019\u00e0 ce que quelqu\u2019un doive tout organiser.",
-    painPoints: [
-      {
-        icon: "\ud83d\uddfa\ufe0f",
-        title: "Disputes sur l\u2019Itin\u00e9raire",
-        description:
-          "Tout le monde veut s\u2019arr\u00eater \u00e0 des endroits diff\u00e9rents. Sans plan partag\u00e9, vous ratez les meilleurs spots ou ajoutez des heures de d\u00e9tour.",
-      },
-      {
-        icon: "\u26fd",
-        title: "Partage des Frais",
-        description:
-          "Qui paie l\u2019essence ? Qui a r\u00e9serv\u00e9 le motel ? Suivre les d\u00e9penses partag\u00e9es sur 5+ arr\u00eats pendant plusieurs jours, \u00e7a devient vite le bazar.",
-      },
-      {
-        icon: "\ud83d\udd50",
-        title: "Probl\u00e8mes de Timing",
-        description:
-          "L\u2019un veut passer 3 heures \u00e0 chaque point de vue pendant que les autres veulent continuer \u00e0 rouler. Sans alignement, le road trip tourne au clash.",
-      },
-      {
-        icon: "\ud83c\udf92",
-        title: "L\u2019Espace dans la Voiture est Limit\u00e9",
-        description:
-          "Cinq personnes, un coffre. Sans coordination sur qui apporte quoi, vous vous retrouvez avec trois enceintes portables et pas de glaci\u00e8re.",
-      },
-    ],
-
-    solutionTitle: "Comment WePlanify Facilite les Road Trips",
-    solutionSubtitle:
-      "Tout ce dont votre \u00e9quipage a besoin pour planifier les arr\u00eats, partager les frais et rester organis\u00e9 sur la route.",
-    solutions: [
-      {
-        title: "Planification d\u2019Itin\u00e9raire Collaborative",
-        description:
-          "Construisez votre itin\u00e9raire de road trip ensemble. Ajoutez des arr\u00eats, planifiez les nuits et cr\u00e9ez un programme jour par jour sur lequel toute la voiture s\u2019accorde.",
-        link: "/features/planning",
-        linkText: "D\u00e9couvrir la planification",
-        color: "bg-[#EEF899]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Votez sur Chaque Arr\u00eat",
-        description:
-          "Parc national ou resto de bord de route ? Route panoramique ou autoroute ? Laissez tout le monde voter sur les arr\u00eats et d\u00e9tours.",
-        link: "/features/polls",
-        linkText: "D\u00e9couvrir les sondages",
-        color: "bg-[#61DBD5]",
-        textColor: "text-[#001E13]",
-      },
-      {
-        title: "Partagez Essence & D\u00e9penses",
-        description:
-          "Suivez l\u2019essence, la nourriture, les p\u00e9ages, l\u2019h\u00e9bergement et tout le reste. Voyez qui doit quoi en temps r\u00e9el \u2014 r\u00e9glez \u00e0 la fin, pas \u00e0 chaque arr\u00eat.",
-        link: "/features/budget",
-        linkText: "Explorer le budget",
-        color: "bg-[#001E13]",
-        textColor: "text-[#FFFBF5]",
-      },
-      {
-        title: "Listes de Bagages Partag\u00e9es",
-        description:
-          "Coordonnez ce que chaque personne apporte pour la voiture. \u00c9vitez les doublons, assignez les objets collectifs (glaci\u00e8re, c\u00e2ble aux, snacks) et n\u2019oubliez rien d\u2019essentiel.",
-        link: "/features/packing",
-        linkText: "Voir les listes",
-        color: "bg-[#F6391A]",
-        textColor: "text-[#FFFBF5]",
-      },
-    ],
-
-    stepsTitle: "3 \u00c9tapes pour Organiser Votre Road Trip",
-    stepsSubtitle:
-      "De \u2018on fait un road trip\u2019 \u00e0 \u2018on est sur la route\u2019 \u2014 en quelques minutes.",
-    steps: [
-      {
-        step: "1",
-        title: "Cr\u00e9ez Votre Trip",
-        description:
-          "Nommez votre road trip, fixez les dates de d\u00e9part/arriv\u00e9e et invitez votre bande avec un simple lien. Tout le monde rejoint instantan\u00e9ment.",
-      },
-      {
-        step: "2",
-        title: "Planifiez l\u2019Itin\u00e9raire Ensemble",
-        description:
-          "Ajoutez des arr\u00eats, votez sur les d\u00e9tours, construisez un plan jour par jour et suivez votre cagnotte essence \u2014 le tout au m\u00eame endroit.",
-      },
-      {
-        step: "3",
-        title: "En Route",
-        description:
-          "Obtenez des listes de bagages coordonn\u00e9es pour la voiture, finalisez votre itin\u00e9raire et prenez la route avec votre bande.",
-      },
-    ],
-
-    faqTitle: "Questions Fr\u00e9quemment Pos\u00e9es",
-    faqItems: [
-      {
-        q: "Peut-on planifier des road trips de plusieurs jours ?",
-        a: "Oui. WePlanify g\u00e8re les itin\u00e9raires multi-jours avec des arr\u00eats, des nuits et des activit\u00e9s diff\u00e9rentes chaque jour. Parfait pour les road trips cross-country ou les escapades de week-end.",
-      },
-      {
-        q: "Comment fonctionne le partage des frais pour les road trips ?",
-        a: "Ajoutez les d\u00e9penses au fur et \u00e0 mesure \u2014 essence, nourriture, p\u00e9ages, h\u00f4tels. Le suivi de budget partag\u00e9 calcule automatiquement qui doit quoi. R\u00e9glez \u00e0 la fin du voyage avec un r\u00e9capitulatif clair.",
-      },
-      {
-        q: "Dois-je t\u00e9l\u00e9charger une application ?",
-        a: "Aucun t\u00e9l\u00e9chargement n\u00e9cessaire. WePlanify fonctionne directement dans votre navigateur sur n\u2019importe quel appareil \u2014 t\u00e9l\u00e9phone, tablette ou ordinateur. Parfait pour consulter le plan depuis le si\u00e8ge passager.",
-      },
-    ],
-
-    ctaTitle: "Votre Prochain Road Trip Commence Ici",
-    ctaDescription:
-      "Rejoignez des milliers d\u2019\u00e9quipages qui planifient leurs aventures avec WePlanify. C\u2019est gratuit, c\u2019est collaboratif, et \u00e7a garde tout le monde sur la m\u00eame route.",
-    ctaButton: "Commencer \u00e0 planifier",
-  },
-};
 
 export default async function RoadTripPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const isEn = locale === "en";
 
-  const t = locale === "fr" ? content.fr : content.en;
-
-  const [navData, navigationData, footerData]: [
-    NavType,
-    Navigation | null,
-    FooterType | null
-  ] = await Promise.all([
-    sanityFetch<NavType>({
-      query: navQuery,
-      params: { locale },
-      tags: ["nav"],
-    }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] =
+    await Promise.all([
+      sanityFetch<NavType>({ query: navQuery, params: { locale }, tags: ["nav"] }),
+      sanityFetch<Navigation>({ query: navigationQuery, params: { locale }, tags: ["navigation"] }),
+      sanityFetch<FooterType>({ query: footerQuery, params: { locale }, tags: ["footer"] }),
+    ]);
 
   const breadcrumbLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+    "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
-        item: `https://www.weplanify.com/${locale}`,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Road Trip",
-        item: `https://www.weplanify.com/${locale}/road-trip`,
-      },
+      { "@type": "ListItem", position: 1, name: isEn ? "Home" : "Accueil", item: `${SITE_URL}/${locale}` },
+      { "@type": "ListItem", position: 2, name: "Road Trip", item: `${SITE_URL}/${locale}${PATHNAME}` },
     ],
   };
 
+  const articleLd = {
+    "@context": "https://schema.org", "@type": "Article",
+    headline: isEn ? "Plan a Road Trip With Your Crew" : "Organiser un Road Trip entre Amis",
+    author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
+    publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
+    datePublished: "2026-03-19", dateModified: "2026-03-26",
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
+  };
+
+  const faqItems = isEn
+    ? [
+        { q: "How do you split gas costs fairly on a road trip?", a: "Log every fill-up in WePlanify's shared budget tracker — who paid, how much, which car. At the end of the trip, the app calculates who owes what. For multi-car trips, track each vehicle separately. No more Venmo guesswork." },
+        { q: "How many stops should a road trip have per day?", a: "Two to three intentional stops per day is the sweet spot. More than that and you spend the whole trip getting in and out of the car. Build one 'must-see' stop and one or two flexible ones into each day's itinerary. Leave room for spontaneous discoveries." },
+        { q: "What if we have different driving preferences?", a: "Use polls to decide the big routing questions (coastal vs. inland, fast highways vs. scenic routes). For daily driving duties, set up a rotation in the itinerary. WePlanify's shared plan keeps everyone aligned on who's driving when." },
+        { q: "How do you coordinate packing for a road trip?", a: "Car space is limited. Create a shared packing list with two sections: personal items and shared gear (cooler, camping equipment, tools, first-aid kit, speaker). Assign shared items to specific people so you don't end up with three portable chargers and no jumper cables." },
+        { q: "Can WePlanify work offline during a road trip?", a: "WePlanify works in your browser on any device. While you need an internet connection to sync changes, you can save key details (addresses, reservation codes) in the trip notes before hitting a dead zone. Most of your route will have coverage." },
+        { q: "How far ahead should we plan a road trip?", a: "Two to four weeks is usually enough for domestic road trips. Book accommodation for key overnight stops early — popular spots fill up fast, especially on weekends. Leave the route flexible but lock in the places you'll sleep. Start a WePlanify trip as soon as the idea forms." },
+      ]
+    : [
+        { q: "Comment répartir les frais d'essence équitablement ?", a: "Enregistrez chaque plein dans le suivi de budget WePlanify — qui a payé, combien, quelle voiture. À la fin du voyage, l'appli calcule qui doit quoi. Pour les voyages multi-voitures, suivez chaque véhicule séparément." },
+        { q: "Combien d'arrêts prévoir par jour ?", a: "Deux à trois arrêts intentionnels par jour, c'est le bon ratio. Plus et vous passez le voyage à monter et descendre de voiture. Prévoyez un arrêt 'incontournable' et un ou deux flexibles dans l'itinéraire de chaque jour. Laissez de la place pour les découvertes spontanées." },
+        { q: "Et si on a des préférences de conduite différentes ?", a: "Utilisez les sondages pour les grandes questions d'itinéraire (côte vs. intérieur, autoroute vs. route panoramique). Pour la conduite quotidienne, organisez une rotation dans l'itinéraire. Le plan partagé WePlanify garde tout le monde aligné sur qui conduit quand." },
+        { q: "Comment coordonner les bagages pour un road trip ?", a: "L'espace dans la voiture est limité. Créez une liste partagée avec deux sections : affaires personnelles et équipement commun (glacière, matériel de camping, outils, trousse de secours, enceinte). Assignez les objets communs pour éviter trois chargeurs et zéro câbles de démarrage." },
+        { q: "WePlanify fonctionne-t-il hors ligne en road trip ?", a: "WePlanify fonctionne dans votre navigateur sur n'importe quel appareil. Vous avez besoin d'une connexion pour synchroniser, mais vous pouvez sauvegarder les détails clés (adresses, codes de réservation) dans les notes avant les zones blanches." },
+        { q: "Combien de temps avant faut-il planifier un road trip ?", a: "Deux à quatre semaines suffisent pour les road trips nationaux. Réservez l'hébergement pour les étapes clés tôt — les spots populaires se remplissent vite, surtout les week-ends. Gardez l'itinéraire flexible mais verrouillez les endroits où vous dormirez." },
+      ];
+
   const faqLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: t.faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.a,
-      },
-    })),
+    "@context": "https://schema.org", "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })),
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
-      />
+      <AuthorJsonLd />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <Nav navData={navData} navigationData={navigationData} />
-      <main className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative pt-[120px] lg:pt-[140px] pb-8 lg:pb-10 px-4 lg:px-8">
-          <div className="max-w-[1536px] mx-auto">
+
+      <main className="min-h-screen bg-[#FFFBF5]">
+
+        {/* ━━━ HERO ━━━ */}
+        <section className="pt-[140px] lg:pt-[200px] pb-16 lg:pb-24 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
             <div className="hidden lg:block mb-8">
-              <Breadcrumb
-                items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-                  { label: "Road Trip" },
-                ]}
-              />
+              <Breadcrumb items={[
+                { label: isEn ? "Home" : "Accueil", href: `/${locale}` },
+                { label: "Road Trip" },
+              ]} />
             </div>
+            <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-6">
+              Road Trip
+            </p>
+            <h1 className="text-[#001E13] text-[38px] lg:text-[72px] font-londrina-solid leading-[1.02] mb-6">
+              {isEn
+                ? "The Open Road, Your Crew, Zero Stress"
+                : "La Route, Votre Bande, Zéro Stress"}
+            </h1>
+            <p className="text-[#001E13]/70 text-lg lg:text-[22px] font-karla leading-[1.8] mb-6">
+              {isEn
+                ? "A road trip with friends is the ultimate freedom — until someone has to be the one who plans the route, tracks the gas money, and figures out where everyone's sleeping. Here's how to share the load."
+                : "Un road trip entre potes, c'est la liberté absolue — jusqu'à ce que quelqu'un doive planifier l'itinéraire, suivre les frais d'essence et trouver où tout le monde dort. Voici comment partager la charge."}
+            </p>
+            <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "7 min read" : "7 min de lecture"}</p>
+            <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-26" />
           </div>
-          <div className="max-w-[1536px] mx-auto">
-            <div className="relative overflow-hidden rounded-[24px] lg:rounded-[40px] bg-[#001E13]">
-              {/* Decorative gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#001E13] via-[#001E13] to-[#0a3d2a] opacity-100" />
-              <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#61DBD5]/10 to-transparent" />
+        </section>
 
-              <div className="relative z-10 px-6 lg:px-16 xl:px-20 py-16 lg:py-24 xl:py-32 flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-0">
-                <div className="text-center lg:text-left lg:w-1/2">
-                  <span className="inline-block bg-[#EEF899] text-[#001E13] px-4 py-1.5 rounded-full text-sm lg:text-base font-nanum-pen mb-6">
-                    {t.heroTag}
-                  </span>
+        {/* ━━━ THE REAL PROBLEM ━━━ */}
+        <section className="pb-16 lg:pb-24 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto space-y-8">
+            <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+              {isEn
+                ? "Road trips sound simple — just get in the car and drive. But with a group, every decision multiplies. Which route? How many stops? Who's driving when? Where do we sleep? Who's paying for gas? Who brings the cooler? By the time you've coordinated five people across six days, you've sent 300 messages and nobody's sure what the plan is."
+                : "Les road trips ont l'air simples — on monte en voiture et on roule. Mais en groupe, chaque décision se multiplie. Quel itinéraire ? Combien d'arrêts ? Qui conduit quand ? Où dort-on ? Qui paie l'essence ? Qui apporte la glacière ? Quand vous avez coordonné cinq personnes sur six jours, vous avez envoyé 300 messages et personne ne sait quel est le plan."}
+            </p>
+            <p className="text-[#001E13] text-lg lg:text-[22px] font-karla font-bold leading-[1.8]">
+              {isEn
+                ? "WePlanify turns the chaos into a shared roadmap — one place for the route, the budget, and the packing list."
+                : "WePlanify transforme le chaos en feuille de route partagée — un seul endroit pour l'itinéraire, le budget et les bagages."}
+            </p>
+          </div>
+        </section>
 
-                  <h1 className="text-[#FFFBF5] text-3xl lg:text-5xl xl:text-[56px] font-londrina-solid leading-tight mb-6 whitespace-pre-line">
-                    {t.heroTitle}
-                  </h1>
+        {/* ━━━ ANATOMY OF A ROAD TRIP ━━━ */}
+        <FadeIn>
+          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+            <div className="max-w-[1000px] mx-auto">
+              <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
+                {isEn ? "Anatomy of a Group Road Trip" : "Anatomie d'un Road Trip de Groupe"}
+              </h2>
+              <p className="text-[#FFFBF5]/50 font-karla text-base lg:text-lg mb-14 max-w-[600px]">
+                {isEn
+                  ? "Every road trip has the same building blocks. Here's how to get each one right with a group."
+                  : "Chaque road trip a les mêmes composantes. Voici comment réussir chacune en groupe."}
+              </p>
 
-                  <p className="text-[#FFFBF5]/85 text-base lg:text-lg font-karla leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
-                    {t.heroDescription}
-                  </p>
-
-                  <div className="flex flex-col gap-2 items-center lg:items-start">
-                    <Link href="https://app.weplanify.com/register">
-                      <PulsatingButton className="font-karla font-bold">
-                        {t.heroCta}
-                      </PulsatingButton>
-                    </Link>
+              {/* Route visual - vertical stops */}
+              <div className="space-y-0">
+                {(isEn
+                  ? [
+                      { stop: "The Route", desc: "Vote on the big decision first: scenic or fast? Coastal or inland? Create a poll, settle it, and build the route in a shared itinerary where everyone can add stop suggestions. Lock the overnight points early — the road between them stays flexible.", link: "/features/polls" },
+                      { stop: "The Stops", desc: "This is where road trips become memorable. Let everyone suggest their must-see stops, then curate together. The 70/30 rule works perfectly here: 70% planned stops, 30% spontaneous. Add each stop to the shared itinerary with addresses and notes so the driver isn't fumbling with a phone.", link: "/features/planning" },
+                      { stop: "The Money", desc: "Gas, tolls, food, accommodation, activities. On a multi-day road trip, expenses add up fast and across many categories. Log every expense in real time — who paid, how much, for what. WePlanify calculates balances automatically so you settle up once at the end, not after every gas station.", link: "/features/budget" },
+                      { stop: "The Car", desc: "Five people, one trunk. Space is the ultimate constraint. A shared packing list with assigned items prevents the classic road trip mistake: three Bluetooth speakers, no bottle opener, and zero jumper cables. Mark what goes in which car if you're taking multiple vehicles.", link: "/features/packing" },
+                    ]
+                  : [
+                      { stop: "L'Itinéraire", desc: "Votez d'abord sur la grande question : panoramique ou rapide ? Côte ou intérieur ? Créez un sondage, tranchez, et construisez la route dans un itinéraire partagé où chacun peut ajouter des suggestions d'arrêts. Verrouillez les points de nuit tôt — la route entre eux reste flexible.", link: "/features/polls" },
+                      { stop: "Les Arrêts", desc: "C'est là que les road trips deviennent mémorables. Laissez chacun proposer ses arrêts incontournables, puis sélectionnez ensemble. La règle du 70/30 fonctionne parfaitement ici : 70% planifié, 30% spontané. Ajoutez chaque arrêt à l'itinéraire partagé avec adresses et notes.", link: "/features/planning" },
+                      { stop: "L'Argent", desc: "Essence, péages, nourriture, hébergement, activités. Sur un road trip de plusieurs jours, les dépenses s'accumulent vite. Enregistrez chaque dépense en temps réel — qui a payé, combien, pour quoi. WePlanify calcule les soldes automatiquement pour régler une seule fois à la fin.", link: "/features/budget" },
+                      { stop: "La Voiture", desc: "Cinq personnes, un coffre. L'espace est la contrainte ultime. Une liste de bagages partagée avec des objets assignés évite l'erreur classique : trois enceintes Bluetooth, pas de décapsuleur et zéro câbles de démarrage. Marquez ce qui va dans quelle voiture si vous en prenez plusieurs.", link: "/features/packing" },
+                    ]
+                ).map((item, i) => (
+                  <div key={i} className="flex gap-6 lg:gap-8">
+                    {/* Vertical line + dot */}
+                    <div className="flex flex-col items-center flex-shrink-0">
+                      <div className="w-4 h-4 bg-[#F6391A] rounded-full" />
+                      {i < 3 && <div className="w-0.5 flex-1 bg-[#FFFBF5]/10" />}
+                    </div>
+                    {/* Content */}
+                    <div className="pb-12 lg:pb-16">
+                      <h3 className="text-[#FFFBF5] text-xl lg:text-2xl font-londrina-solid mb-2">
+                        <Link href={`/${locale}${item.link}`} className="text-[#FFFBF5] hover:text-[#EEF899] transition-colors no-underline">{item.stop}</Link>
+                      </h3>
+                      <p className="text-[#FFFBF5]/55 text-sm lg:text-base font-karla leading-[1.8]">{item.desc}</p>
+                    </div>
                   </div>
-                </div>
-
-                {/* Floating UI cards animation */}
-                <div className="hidden lg:block lg:w-1/2 relative">
-                  <FloatingCards />
-                </div>
+                ))}
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </FadeIn>
 
-        {/* Pain Points Section */}
-        <section className="pt-10 lg:pt-14 pb-16 lg:pb-24 px-4 lg:px-8">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
-                {t.painPointsTitle}
-              </h2>
-              <p className="text-[#001E13]/70 text-base lg:text-lg font-karla max-w-2xl mx-auto leading-relaxed">
-                {t.painPointsSubtitle}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-              {t.painPoints.map((point, index) => (
-                <div
-                  key={index}
-                  className="bg-[#FFFBF5] border border-[#001E13]/10 rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300"
-                >
-                  <span className="text-3xl lg:text-4xl mb-4 block">
-                    {point.icon}
-                  </span>
-                  <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#001E13] mb-3">
-                    {point.title}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm lg:text-base leading-relaxed">
-                    {point.description}
-                  </p>
+        {/* ━━━ CAR ESSENTIALS CHECKLIST ━━━ */}
+        <section className="py-20 lg:py-28 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
+              {isEn ? "Road Trip Essentials Checklist" : "Checklist Essentiels Road Trip"}
+            </h2>
+            <p className="text-[#001E13]/60 font-karla text-base lg:text-lg mb-10">
+              {isEn
+                ? "The things groups always forget. Assign each to a person in your WePlanify packing list."
+                : "Les choses que les groupes oublient toujours. Assignez chacune à une personne dans votre liste WePlanify."}
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+              {(isEn
+                ? [
+                    "Phone mounts & chargers for the driver",
+                    "Aux cable or Bluetooth FM transmitter",
+                    "Cooler with ice packs",
+                    "First-aid kit",
+                    "Jumper cables / portable jump starter",
+                    "Paper maps (for dead zones)",
+                    "Reusable water bottles",
+                    "Trash bags for the car",
+                    "Blankets & pillows for passengers",
+                    "Shared snack stash",
+                    "Tire pressure gauge",
+                    "Portable phone battery pack",
+                  ]
+                : [
+                    "Supports téléphone & chargeurs pour le conducteur",
+                    "Câble aux ou transmetteur Bluetooth FM",
+                    "Glacière avec pains de glace",
+                    "Trousse de premiers secours",
+                    "Câbles de démarrage / booster portable",
+                    "Cartes papier (pour les zones blanches)",
+                    "Bouteilles d'eau réutilisables",
+                    "Sacs poubelle pour la voiture",
+                    "Couvertures & oreillers pour les passagers",
+                    "Stock de snacks partagé",
+                    "Jauge de pression des pneus",
+                    "Batterie externe téléphone",
+                  ]
+              ).map((item, i) => (
+                <div key={i} className="flex items-center gap-3 py-2 border-b border-[#001E13]/6">
+                  <span className="text-[#61DBD5] text-lg">&#x2713;</span>
+                  <span className="text-[#001E13]/75 font-karla text-sm lg:text-base">{item}</span>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Solutions Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
-                {t.solutionTitle}
-              </h2>
-              <p className="text-[#001E13]/70 text-base lg:text-lg font-karla max-w-2xl mx-auto leading-relaxed">
-                {t.solutionSubtitle}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-              {t.solutions.map((solution, index) => (
-                <div
-                  key={index}
-                  className={`${solution.color} rounded-[20px] lg:rounded-[24px] p-6 lg:p-8 flex flex-col justify-between min-h-[240px]`}
-                >
-                  <div>
-                    <h3
-                      className={`text-xl lg:text-2xl font-londrina-solid ${solution.textColor} mb-3`}
-                    >
-                      <Link href={`/${locale}${solution.link}`} className={`${solution.textColor} font-londrina-solid no-underline hover:underline underline-offset-4`}>
-                        {solution.title}
-                      </Link>
-                    </h3>
-                    <p
-                      className={`${solution.textColor} opacity-80 font-karla text-sm lg:text-base leading-relaxed mb-6`}
-                    >
-                      {solution.description}
-                    </p>
-                  </div>
-                  <div>
-                    <Link
-                      href={`/${locale}${solution.link}`}
-                      className={`${solution.textColor} font-karla font-bold text-sm lg:text-base underline underline-offset-4 hover:opacity-70 transition-opacity`}
-                    >
-                      {solution.linkText} &rarr;
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
+        {/* ━━━ PULL QUOTE ━━━ */}
+        <section className="bg-[#61DBD5] py-16 lg:py-24 px-6 lg:px-12">
+          <div className="max-w-[1000px] mx-auto">
+            <p className="text-[#001E13] text-[24px] lg:text-[44px] font-londrina-solid leading-[1.12]">
+              {isEn
+                ? "The best road trips aren't about the destination — they're about what happens between the stops. Make sure the planning doesn't kill the vibe before you even leave."
+                : "Les meilleurs road trips ne sont pas une question de destination — c'est ce qui se passe entre les étapes qui compte. Faites en sorte que la planification ne tue pas l'ambiance avant même de partir."}
+            </p>
           </div>
         </section>
 
-        {/* Steps Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8">
-          <div className="max-w-[1200px] mx-auto">
-            <div className="text-center mb-12 lg:mb-16">
-              <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">
-                {t.stepsTitle}
-              </h2>
-              <p className="text-[#001E13]/70 text-base lg:text-lg font-karla max-w-2xl mx-auto leading-relaxed">
-                {t.stepsSubtitle}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-              {t.steps.map((step, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-16 h-16 lg:w-20 lg:h-20 bg-[#F6391A] rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-[#FFFBF5] text-2xl lg:text-3xl font-londrina-solid">
-                      {step.step}
-                    </span>
-                  </div>
-                  <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#001E13] mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm lg:text-base leading-relaxed max-w-sm mx-auto">
-                    {step.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
+        {/* ━━━ FAQ ━━━ */}
+        <section className="py-20 lg:py-28 px-6 lg:px-12">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
-              {t.faqTitle}
+              {isEn ? "Frequently Asked Questions" : "Questions Fréquemment Posées"}
             </h2>
             <div className="space-y-6">
-              {t.faqItems.map((item, i) => (
-                <details
-                  key={i}
-                  className="group border-b border-[#001E13]/10 pb-5"
-                >
+              {faqItems.map((item, i) => (
+                <details key={i} className="group border-b border-[#001E13]/10 pb-5">
                   <summary className="flex items-start justify-between cursor-pointer list-none font-karla font-semibold text-[#001E13] text-base lg:text-lg">
                     <span className="pr-4">{item.q}</span>
-                    <span className="text-[#F6391A] text-xl leading-none mt-0.5 group-open:rotate-45 transition-transform">
-                      +
-                    </span>
+                    <span className="text-[#F6391A] text-xl leading-none mt-0.5 group-open:rotate-45 transition-transform">+</span>
                   </summary>
-                  <p className="mt-3 text-[#001E13]/70 text-sm lg:text-base font-karla leading-relaxed">
-                    {item.a}
-                  </p>
+                  <p className="mt-3 text-[#001E13]/70 text-sm lg:text-base font-karla leading-relaxed">{item.a}</p>
                 </details>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Discover More Section */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
+        {/* ━━━ DISCOVER MORE ━━━ */}
+        <section className="py-12 lg:py-16 px-6 lg:px-12 bg-[#FFFBF5]">
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
-              {locale === "fr" ? "D\u00e9couvrir aussi" : "Discover More"}
-            </h2>
+            <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">{isEn ? "Discover More" : "Découvrir aussi"}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Link href={`/${locale}/guides/plan-group-trip`} className="group">
-                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Guide : Organiser un Voyage de Groupe" : "Guide: How to Plan a Group Trip"}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Le guide complet \u00e9tape par \u00e9tape pour organiser un voyage de groupe r\u00e9ussi, de la premi\u00e8re id\u00e9e au dernier jour."
-                      : "The complete step-by-step guide to planning a successful group trip, from first idea to last day."}
-                  </p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Lire le guide \u2192" : "Read the guide \u2192"}
-                  </span>
-                </div>
-              </Link>
               <Link href={`/${locale}/trip-with-friends`} className="group">
-                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Voyage entre Amis" : "Plan a Trip with Friends"}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Tout ce qu\u2019il faut pour organiser un voyage entre amis \u2014 itin\u00e9raires, sondages, budgets et plus encore."
-                      : "Everything you need to coordinate a trip with your friend group \u2014 itineraries, polls, budgets, and more."}
-                  </p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus \u2192" : "Read more \u2192"}
-                  </span>
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Trip with Friends" : "Voyage entre Amis"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Plan any group trip effortlessly." : "Organisez n'importe quel voyage de groupe."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read more →" : "En savoir plus →"}</span>
                 </div>
               </Link>
-              <Link href={`/${locale}/alternatives`} className="group">
-                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Comparatif des Applications" : "App Comparison"}
-                  </h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Comparez WePlanify avec les autres applications de planification de voyage de groupe en 2026."
-                      : "See how WePlanify compares to other group trip planning apps in 2026."}
-                  </p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Voir le comparatif \u2192" : "View comparison \u2192"}
-                  </span>
+              <Link href={`/${locale}/family-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Family Trip" : "Voyage en Famille"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Multi-generational trip planning made simple." : "Planification multi-générationnelle simplifiée."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read more →" : "En savoir plus →"}</span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/guides/plan-group-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Group Trip Guide" : "Guide Voyage de Groupe"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "The complete step-by-step guide." : "Le guide complet étape par étape."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the guide →" : "Lire le guide →"}</span>
                 </div>
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Bottom CTA Banner */}
-        <section className="py-16 lg:py-24 px-4 lg:px-8">
+        {/* ━━━ CTA ━━━ */}
+        <section className="py-16 lg:py-24 px-6 lg:px-12">
           <div className="max-w-[1200px] mx-auto">
             <div className="bg-gradient-to-br from-[#F6391A] to-[#d42d10] rounded-[24px] lg:rounded-[40px] p-8 lg:p-16 text-center">
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] mb-4">
-                {t.ctaTitle}
+                {isEn ? "Hit the Road Together" : "Prenez la Route Ensemble"}
               </h2>
-              <p className="text-[#FFFBF5]/85 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-                {t.ctaDescription}
+              <p className="text-[#FFFBF5]/80 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+                {isEn ? "Plan the route, split the costs, pack the car — all in one place." : "Planifiez la route, partagez les frais, préparez la voiture — le tout au même endroit."}
               </p>
-              <div className="flex flex-col gap-2 items-center">
+              <div className="flex justify-center">
                 <Link href="https://app.weplanify.com/register">
-                  <PulsatingButton className="font-karla font-bold">
-                    {t.ctaButton}
-                  </PulsatingButton>
+                  <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
                 </Link>
               </div>
             </div>
           </div>
         </section>
-      </main>
 
-      {/* Footer */}
+      </main>
       <Footer footerData={footerData} />
     </>
   );

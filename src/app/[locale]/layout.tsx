@@ -3,6 +3,7 @@ import { Raleway, Unbounded, Londrina_Solid, Karla, Nanum_Pen_Script } from "nex
 import "../globals.css";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { Analytics } from "@/components/Analytics";
+import CookieConsent from "@/components/CookieConsent";
 import { StructuredData } from "@/components/StructuredData";
 import SoftwareApplicationSchema from "@/app/structured-data";
 import { NextIntlClientProvider } from 'next-intl';
@@ -83,7 +84,9 @@ export default async function LocaleLayout({ children, params }: Props) {
           {children}
         </NextIntlClientProvider>
 
-        {/* Analytics Scripts (GA4, GTM, etc.) */}
+        {/* Cookie Consent Banner */}
+        <CookieConsent />
+        {/* Analytics Scripts — only loads after consent */}
         <Analytics />
       </body>
     </html>
