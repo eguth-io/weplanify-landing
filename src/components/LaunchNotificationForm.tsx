@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
+import { trackEvent } from "@/lib/tracking";
 
 export default function LaunchNotificationForm() {
   const [email, setEmail] = useState('');
@@ -35,9 +36,11 @@ export default function LaunchNotificationForm() {
       });
 
       if (response.ok) {
+        trackEvent("launch_notification_submit", { status: "success" });
         setSubmitStatus('success');
         localStorage.setItem('launch_notification_email', email.trim());
       } else {
+        trackEvent("launch_notification_submit", { status: "error" });
         setSubmitStatus('error');
       }
     } catch {

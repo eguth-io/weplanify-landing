@@ -3,6 +3,7 @@
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Image from "next/image";
 import Link from "next/link";
+import { trackEvent } from "@/lib/tracking";
 
 interface CTABannerProps {
   data: {
@@ -64,7 +65,7 @@ export default function CTABanner({ data }: CTABannerProps) {
 
               {/* Right side - CTA Button with social proof */}
               <div className="flex-shrink-0 flex flex-col items-start lg:items-end gap-2">
-                <Link href={data.buttonUrl || "#"}>
+                <Link href={data.buttonUrl || "#"} onClick={() => trackEvent("cta_click", { location: "cta_banner", label: data.buttonText })}>
                   <PulsatingButton className="font-karla font-bold">
                     {data.buttonText}
                   </PulsatingButton>

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { trackEvent } from "@/lib/tracking";
 
 interface RelatedFeaturesProps {
   currentSlug: string;
@@ -48,6 +51,7 @@ export default function RelatedFeatures({ currentSlug, locale }: RelatedFeatures
             <Link
               key={feature.slug}
               href={`/${locale}/features/${feature.slug}`}
+              onClick={() => trackEvent("related_feature_click", { from: currentSlug, to: feature.slug })}
               className="flex items-center gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:border-orange/30 hover:shadow-sm transition-all"
             >
               <span className="text-2xl">{feature.icon}</span>

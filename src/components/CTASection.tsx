@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { trackEvent } from "@/lib/tracking";
 import { CtaType } from "@/sanity/lib/type";
 import { PulsatingButtonWhite } from "@/components/magicui/pulsating-button-white-black";
 
@@ -51,7 +52,7 @@ export default function CTASection({ ctaData }: CTASectionProps) {
           {ctaData.description}
         </div>
         <div className="mt-[34px] flex justify-center">
-          <Link href={ctaData.buttonUrl || '#'} rel="nofollow">
+          <Link href={ctaData.buttonUrl || '#'} rel="nofollow" onClick={() => trackEvent("cta_click", { location: "cta_section", label: ctaData.buttonText })}>
             <PulsatingButtonWhite>
               {ctaData.buttonText}
             </PulsatingButtonWhite>

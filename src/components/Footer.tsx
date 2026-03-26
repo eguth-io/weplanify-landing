@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Footer as FooterType } from "@/sanity/lib/type";
 import { useState } from "react";
+import { trackEvent } from "@/lib/tracking";
 
 interface FooterProps {
   footerData?: FooterType | null;
@@ -54,6 +55,7 @@ export default function Footer({ footerData }: FooterProps) {
     e.preventDefault();
     // TODO: Integrate with newsletter service
     if (email) {
+      trackEvent("newsletter_subscribe", { email });
       setIsSubscribed(true);
       setEmail("");
     }
