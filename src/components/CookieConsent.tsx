@@ -45,20 +45,22 @@ function pushConsentSignal(state: ConsentState) {
     consent_ads: granted ? "granted" : "denied",
   });
 
-  // Google Consent Mode v2 format
-  const gtag = (...args: unknown[]) => {
-    (w.dataLayer as unknown[]).push(args);
-  };
-
-  gtag("consent", state === "pending" ? "default" : "update", {
+  // Google Consent Mode v2 — must use function(){dataLayer.push(arguments)} pattern
+  // GTM only recognizes consent commands pushed as Arguments objects, not Arrays
+  const consentCommand = state === "pending" ? "default" : "update";
+  const consentConfig = {
     ad_storage: granted ? "granted" : "denied",
     ad_user_data: granted ? "granted" : "denied",
     ad_personalization: granted ? "granted" : "denied",
     analytics_storage: granted ? "granted" : "denied",
-    functionality_storage: "granted", // always — needed for the app to work
+    functionality_storage: "granted",
     personalization_storage: granted ? "granted" : "denied",
-    security_storage: "granted", // always
-  });
+    security_storage: "granted",
+  };
+  // eslint-disable-next-line prefer-rest-params
+  (function () { w.dataLayer!.push(arguments as unknown as Record<string, unknown>); }
+  // @ts-expect-error — gtag consent command requires (string, string, object) signature
+  )("consent", consentCommand, consentConfig);
 }
 
 export default function CookieConsent() {
