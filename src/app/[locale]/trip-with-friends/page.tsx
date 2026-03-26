@@ -11,7 +11,6 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
-import { ReactNode } from "react";
 import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
 
 type Props = {
