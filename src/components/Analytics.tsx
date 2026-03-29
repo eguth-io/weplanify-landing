@@ -17,6 +17,8 @@ export function Analytics() {
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+
+          // EEA regions: deny by default (GDPR requires opt-in)
           gtag('consent', 'default', {
             'ad_storage': 'denied',
             'ad_user_data': 'denied',
@@ -25,7 +27,19 @@ export function Analytics() {
             'functionality_storage': 'granted',
             'personalization_storage': 'denied',
             'security_storage': 'granted',
-            'wait_for_update': 500
+            'wait_for_update': 500,
+            'region': ['AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','GR','HR','HU','IE','IS','IT','LI','LT','LU','LV','MT','NL','NO','PL','PT','RO','SE','SI','SK','GB','CH']
+          });
+
+          // Rest of the world: grant by default (no cookie banner needed)
+          gtag('consent', 'default', {
+            'ad_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'analytics_storage': 'granted',
+            'functionality_storage': 'granted',
+            'personalization_storage': 'granted',
+            'security_storage': 'granted'
           });
         `}
       </Script>

@@ -70,18 +70,30 @@ export default function CookieConsent() {
   const locale = pathname?.startsWith("/fr") ? "fr" : "en";
 
   // On mount: check stored consent, set default consent mode
+  // Only show cookie banner in EEA regions where GDPR requires opt-in
   useEffect(() => {
     const stored = getStoredConsent();
     if (stored) {
       setConsent(stored);
       pushConsentSignal(stored);
-      // Dispatch event so Analytics component knows to load scripts
       if (stored === "granted") {
         window.dispatchEvent(new Event("consent_granted"));
       }
     } else {
-      // First visit — show banner (defaults already set by Analytics component)
-      setVisible(true);
+      // Check timezone to detect likely EEA users
+      // This is a lightweight heuristic — the real enforcement is in GTM's region parameter
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+      const isLikelyEEA = tz.startsWith("Europe/") || tz === "Atlantic/Reykjavik";
+      if (isLikelyEEA) {
+        setVisible(true);
+      } else {
+        // Outside EEA: consent defaults are already "granted" via Analytics component
+        // No banner needed — store consent so we don't re-check
+        storeConsent("granted");
+        setConsent("granted");
+        pushConsentSignal("granted");
+        window.dispatchEvent(new Event("consent_granted"));
+      }
     }
   }, []);
 
