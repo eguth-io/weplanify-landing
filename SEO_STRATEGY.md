@@ -1,6 +1,6 @@
 # WePlanify — Strategie SEO Complete
 
-> Document vivant. Derniere mise a jour : 23 mars 2026.
+> Document vivant. Derniere mise a jour : 31 mars 2026.
 
 ---
 
@@ -356,28 +356,32 @@ Creer un suivi de position pour :
 
 ---
 
-## 8. Actions immediates (par priorite)
+## 8. Actions immediates (par priorite) — Mis a jour 31 mars 2026
 
-### Critique
+### Fait (31 mars 2026)
 
-- [ ] **Soumettre le sitemap dans Google Search Console** — weplanify.com n'a que 2 pages indexees sur 40+
-- [ ] **Fixer les CTAs de la page trip-with-friends** — les boutons ne sont pas cliquables (pas de Link)
-- [ ] **Ajouter le cross-linking** entre les 4 nouvelles pages + features
+- [x] **Configurer key events GA4** — sign_up, generate_lead, cta_click, newsletter_subscribe
+- [x] **Reecrire les title tags + meta descriptions** — 8 pages (EN+FR), suppression "Free/Gratuit", fix brand duplique
+- [x] **Ajouter FAQ + FAQPage schema sur /alternatives/best-group-trip-planner-apps** — 5 questions PAA-targeted
+- [x] **Publier 1er article blog FR** — /blog/meilleures-applications-voyage-groupe (comparatif 6 applis, bilingue)
+- [x] **Enrichir road-trip, family-trip, team-building** — 2 sections supplementaires chacun, +500 mots/page
+- [x] **Maillage interne** — liens croises entre use cases, features, blog, guides dans le contenu + Discover More
+- [x] **Mettre a jour dateModified** sur les 3 use cases (freshness signal)
+- [x] **Ajouter l'article blog au sitemap**
+- [x] **Ajouter le cross-linking** entre les pages + features
+- [x] **JSON-LD FAQPage** — deja present sur trip-with-friends, bachelorette-trip, road-trip, family-trip, team-building
 
-### Important
+### Prochaines etapes (par priorite)
 
-- [ ] **Corriger les accents FR** dans le guide et la page alternatives
-- [ ] **Ajouter les nouvelles pages dans le footer** (section "Use cases" ou "Ressources")
-- [ ] **Ajouter JSON-LD BreadcrumbList** sur toutes les pages profondes
-- [ ] **Ajouter JSON-LD FAQPage** sur trip-with-friends et bachelorette-trip (ajouter une section FAQ)
-
-### Recommande
-
-- [ ] **Publier le 1er article blog FR** : comparatif applications voyage entre amis
-- [ ] **Lancer sur Product Hunt** pour les premiers backlinks
-- [ ] **Creer les pages /alternatives/wanderlog et /alternatives/tripit**
-- [ ] **Ajouter des screenshots produit** sur les pages use cases
-- [ ] **Ajouter un bouton "Partager avec ton groupe"** (WhatsApp deep link) sur chaque page
+- [ ] **Ajouter les pages use cases dans le footer** — road-trip, family-trip, team-building, bachelorette-trip dans une section "Use cases"
+- [ ] **2eme article blog FR** — "Comment organiser un EVJF : guide complet" — zero concurrence web en FR
+- [ ] **Schema HowTo** sur road-trip ("Planning Your Route") et team-building ("Planning Timeline") — rich snippets supplementaires
+- [ ] **Ajouter des images + alt text optimises** sur les pages use cases — Google Images comme source de trafic
+- [ ] **Ajouter une Table of Contents** sur les pages 2500+ mots (road-trip, family-trip, team-building)
+- [ ] **Outreach backlinks** — se faire lister dans les articles "best group trip planner apps" (TripIt, JoinMyTrip)
+- [ ] **Product Hunt launch** — backlinks dofollow + visibilite
+- [ ] **Guest posting blogs voyage FR** — marche quasi vide
+- [ ] **Soumission AlternativeTo + G2 + Capterra**
 
 ---
 
