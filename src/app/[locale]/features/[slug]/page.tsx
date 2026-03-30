@@ -70,6 +70,46 @@ export function generateStaticParams() {
   return params;
 }
 
+// SEO overrides — optimised titles & descriptions (take precedence over Sanity)
+const seoOverrides: Record<string, Record<string, { title: string; description: string }>> = {
+  planning: {
+    en: {
+      title: "Group Trip Planner — Build Itineraries with AI | WePlanify",
+      description:
+        "Create your group trip itinerary in minutes. Drag-and-drop planning, AI suggestions, and real-time sync with your travel crew.",
+    },
+    fr: {
+      title: "Planifier un Voyage de Groupe — Itinéraire IA | WePlanify",
+      description:
+        "Construisez votre itinéraire de groupe pas à pas ou laissez l'IA s'en charger. Collaboration en temps réel avec vos amis, prêt en quelques secondes.",
+    },
+  },
+  polls: {
+    en: {
+      title: "Group Trip Polls — Decide Together Instantly | WePlanify",
+      description:
+        "End the group chat chaos. Create polls to decide destinations, activities & restaurants together. Real-time voting, instant results.",
+    },
+    fr: {
+      title: "Sondages Voyage de Groupe — Décidez à Plusieurs | WePlanify",
+      description:
+        "Fini les débats sans fin. Créez un sondage, votez, c'est décidé. Destinations, dates, activités — tout le groupe donne son avis.",
+    },
+  },
+  collaboration: {
+    en: {
+      title: "Plan a Group Trip Together — Like Google Docs | WePlanify",
+      description:
+        "Everyone edits the same trip in real time. No more screenshots, no more \"did you see my message?\" — just smooth group trip planning.",
+    },
+    fr: {
+      title: "Planifier un Voyage à Plusieurs — Comme Google Docs | WePlanify",
+      description:
+        "Tout le groupe modifie le même voyage en temps réel. Fini les screenshots et les \"t'as vu mon message ?\". Planifiez enfin ensemble.",
+    },
+  },
+};
+
 // Generate metadata with hreflang for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
@@ -88,19 +128,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const metadata = await generateMetadataFromSanity(locale, `/features/${slug}`);
 
+  // Use override if available, otherwise fall back to Sanity
+  const override = seoOverrides[slug]?.[locale];
+  const title = override?.title ?? data.seoTitle;
+  const description = override?.description ?? data.seoDescription;
+
   return {
     ...metadata,
-    title: data.seoTitle,
-    description: data.seoDescription,
+    title,
+    description,
     openGraph: {
       ...metadata.openGraph,
-      title: data.seoTitle,
-      description: data.seoDescription,
+      title,
+      description,
     },
     twitter: {
       ...metadata.twitter,
-      title: data.seoTitle,
-      description: data.seoDescription,
+      title,
+      description,
     },
   };
 }

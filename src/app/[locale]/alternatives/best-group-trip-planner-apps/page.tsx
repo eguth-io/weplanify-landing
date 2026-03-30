@@ -45,15 +45,15 @@ const PATHNAME = "/alternatives/best-group-trip-planner-apps";
 
 const meta = {
   en: {
-    title: "10 Best Group Trip Planner Apps Compared (2026 Guide)",
+    title: "10 Best Group Trip Planner Apps in 2026 (Honest Review)",
     description:
-      "We tested 10 group trip planner apps so you don't have to. Side-by-side comparison of WePlanify, Wanderlog, TripIt, SquadTrip & more — features, pricing, and honest verdicts.",
+      "We tested the top group trip planning apps side by side. See which ones actually work for itineraries, polls, budgets & real-time collaboration.",
   },
   fr: {
     title:
-      "Les 10 Meilleures Apps Voyage de Groupe Comparées (Guide 2026)",
+      "Les 10 Meilleures Applis pour Organiser un Voyage de Groupe (2026)",
     description:
-      "On a testé 10 applications de voyage de groupe pour vous. Comparatif détaillé de WePlanify, Wanderlog, TripIt, SquadTrip et plus — fonctionnalités, prix et verdicts honnêtes.",
+      "On a testé les meilleures applis de voyage de groupe. Comparatif honnête : itinéraire, budget, sondages, collaboration. Notre verdict 2026.",
   },
 };
 
