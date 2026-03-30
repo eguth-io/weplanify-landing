@@ -66,7 +66,7 @@ export default async function RoadTripPage({ params }: Props) {
     headline: isEn ? "Plan a Road Trip With Your Crew" : "Organiser un Road Trip entre Amis",
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
-    datePublished: "2026-03-19", dateModified: "2026-03-26",
+    datePublished: "2026-03-19", dateModified: "2026-03-31",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
@@ -122,11 +122,11 @@ export default async function RoadTripPage({ params }: Props) {
             </h1>
             <p className="text-[#001E13]/70 text-lg lg:text-[22px] font-karla leading-[1.8] mb-6">
               {isEn
-                ? "A road trip with friends is the ultimate freedom — until someone has to be the one who plans the route, tracks the gas money, and figures out where everyone's sleeping. Here's how to share the load."
-                : "Un road trip entre potes, c'est la liberté absolue — jusqu'à ce que quelqu'un doive planifier l'itinéraire, suivre les frais d'essence et trouver où tout le monde dort. Voici comment partager la charge."}
+                ? <>A road trip with friends is the ultimate freedom — until someone has to be the one who plans the route, tracks the gas money, and figures out where everyone&apos;s sleeping. Here&apos;s how to share the load. If you&apos;re still comparing tools, check out our take on the <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">best group travel apps</Link>.</>
+                : <>Un road trip entre potes, c&apos;est la liberté absolue — jusqu&apos;à ce que quelqu&apos;un doive planifier l&apos;itinéraire, suivre les frais d&apos;essence et trouver où tout le monde dort. Voici comment partager la charge. Si vous hésitez encore entre les outils, jetez un œil à notre comparatif des <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">meilleures applis de voyage en groupe</Link>.</>}
             </p>
             <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "7 min read" : "7 min de lecture"}</p>
-            <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-26" />
+            <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-31" />
           </div>
         </section>
 
@@ -257,6 +257,61 @@ export default async function RoadTripPage({ params }: Props) {
           </div>
         </section>
 
+        {/* ━━━ PLANNING YOUR ROUTE ━━━ */}
+        <section className="py-20 lg:py-28 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto space-y-8">
+            <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
+              {isEn ? "Planning Your Route: Step by Step" : "Planifier Votre Itinéraire : Étape par Étape"}
+            </h2>
+            <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+              {isEn
+                ? "Start with the anchors — the places you absolutely want to visit — and build the route around them. Before drawing a line on the map, agree on the trip's rhythm: how many hours of driving per day feels right for your group? Four to five hours is a realistic max before fatigue sets in. Once you have the anchors, connect them with stretches that balance highway efficiency and scenic value."
+                : "Commencez par les points d'ancrage — les endroits que vous voulez absolument voir — et construisez l'itinéraire autour d'eux. Avant de tracer un trait sur la carte, mettez-vous d'accord sur le rythme du voyage : combien d'heures de route par jour sont supportables pour votre groupe ? Quatre à cinq heures, c'est un maximum réaliste avant que la fatigue s'installe. Une fois les points d'ancrage définis, reliez-les en équilibrant efficacité autoroutière et intérêt panoramique."}
+            </p>
+            <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+              {isEn
+                ? <>When the group can&apos;t agree on which stops to prioritize, <Link href={`/${locale}/features/polls`} className="text-[#F6391A] hover:underline font-semibold">run a quick poll</Link> — everyone ranks their top three, and the results settle the debate without drama. This works especially well for the scenic-detour-vs-highway question: some people want the Instagram-worthy coastal road, others just want to get there. A vote makes it fair.</>
+                : <>Quand le groupe n&apos;arrive pas à se mettre d&apos;accord sur les arrêts prioritaires, <Link href={`/${locale}/features/polls`} className="text-[#F6391A] hover:underline font-semibold">lancez un sondage rapide</Link> — chacun classe ses trois favoris, et les résultats tranchent sans drama. Ça fonctionne particulièrement bien pour le dilemme route panoramique vs autoroute : certains veulent la route côtière instagrammable, d&apos;autres veulent juste arriver. Un vote, et c&apos;est réglé.</>}
+            </p>
+            <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+              {isEn
+                ? <>Driving shifts matter more than you think. Assign them in advance so the same person isn&apos;t stuck behind the wheel every morning. Alternate between drivers every two to three hours, and schedule real rest breaks — not just gas station stops. A 20-minute break at a viewpoint beats a 5-minute stop at a highway rest area. Build all of this into your <Link href={`/${locale}/features/planning`} className="text-[#F6391A] hover:underline font-semibold">shared itinerary</Link> so the plan is visible to everyone, not just the organizer.</>
+                : <>Les relais de conduite comptent plus qu&apos;on ne le pense. Définissez-les à l&apos;avance pour que la même personne ne se retrouve pas au volant chaque matin. Alternez entre conducteurs toutes les deux à trois heures, et prévoyez de vraies pauses — pas juste des arrêts station-service. Vingt minutes à un point de vue valent mieux que cinq minutes sur une aire d&apos;autoroute. Intégrez tout ça dans votre <Link href={`/${locale}/features/planning`} className="text-[#F6391A] hover:underline font-semibold">itinéraire partagé</Link> pour que le plan soit visible par tous, pas seulement l&apos;organisateur.</>}
+            </p>
+            <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+              {isEn
+                ? "Leave buffer time in the schedule — at least an hour of slack per day. Road trips never go exactly to plan. A farmer's market you didn't know about, a detour because of construction, a restaurant someone spotted from the highway. The buffer is what lets you say yes to these moments instead of stressing about being behind schedule."
+                : "Gardez du temps tampon dans le planning — au moins une heure de marge par jour. Les road trips ne se passent jamais exactement comme prévu. Un marché local que vous ne connaissiez pas, un détour à cause de travaux, un resto repéré depuis l'autoroute. C'est cette marge qui vous permet de dire oui à ces moments au lieu de stresser parce que vous êtes en retard sur le programme."}
+            </p>
+          </div>
+        </section>
+
+        {/* ━━━ BUDGET TIPS ━━━ */}
+        <FadeIn>
+          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+            <div className="max-w-[900px] mx-auto space-y-8">
+              <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
+                {isEn ? "Budget Tips for Group Road Trips" : "Astuces Budget pour un Road Trip de Groupe"}
+              </h2>
+              <p className="text-[#FFFBF5]/65 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? <>Gas is the obvious cost, but it adds up fast alongside tolls, parking, accommodation, and roadside food. The simplest approach: one person pays at the pump and logs it in a <Link href={`/${locale}/features/budget`} className="text-[#EEF899] hover:underline font-semibold">shared budget tracker</Link>. Rotate who pays so the burden is spread throughout the trip, and let the app sort out the math at the end. For multi-car convoys, track each vehicle separately — fuel economy varies, and it&apos;s not fair to average a sedan with an SUV.</>
+                  : <>L&apos;essence est la dépense évidente, mais elle s&apos;accumule vite avec les péages, le stationnement, l&apos;hébergement et la nourriture en route. L&apos;approche la plus simple : une personne paie à la pompe et l&apos;enregistre dans un <Link href={`/${locale}/features/budget`} className="text-[#EEF899] hover:underline font-semibold">suivi de budget partagé</Link>. Faites tourner qui paie pour répartir la charge tout au long du voyage, et laissez l&apos;appli s&apos;occuper des calculs à la fin. Pour les convois multi-voitures, suivez chaque véhicule séparément — la consommation varie, et ce n&apos;est pas juste de faire la moyenne entre une berline et un SUV.</>}
+              </p>
+              <p className="text-[#FFFBF5]/65 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? "If you're renting a car, sort out who's on the insurance and who's listed as an additional driver before you leave. Rental companies charge per extra driver — factor that into the split. Tolls are another sneaky cost: on some routes, they can rival the gas budget. Check toll calculators for your route in advance and decide as a group whether to take the toll road or save money with the slower alternative."
+                  : "Si vous louez une voiture, réglez la question de l'assurance et des conducteurs additionnels avant de partir. Les loueurs facturent par conducteur supplémentaire — intégrez ça dans la répartition. Les péages sont un autre coût sournois : sur certains itinéraires, ils peuvent rivaliser avec le budget essence. Vérifiez les calculateurs de péage pour votre trajet à l'avance et décidez ensemble si vous prenez l'autoroute à péage ou si vous économisez avec l'alternative plus lente."}
+              </p>
+              <p className="text-[#FFFBF5]/65 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? "For accommodation, mixing it up keeps costs manageable. Alternate between campgrounds, hostels, and Airbnbs depending on where you stop. Splitting a three-bedroom rental five ways is almost always cheaper than individual hotel rooms, and it doubles as a hangout spot. Log every shared expense as it happens — waiting until the end of the trip to sort out who owes what is a recipe for forgotten charges and awkward conversations."
+                  : "Côté hébergement, varier les options garde le budget sous contrôle. Alternez entre campings, auberges et locations selon vos étapes. Partager un logement à trois chambres à cinq revient presque toujours moins cher que des chambres d'hôtel individuelles, et ça fait un lieu de vie commun. Enregistrez chaque dépense partagée au moment où elle arrive — attendre la fin du voyage pour démêler qui doit quoi, c'est la recette pour des oublis et des conversations gênantes."}
+              </p>
+            </div>
+          </section>
+        </FadeIn>
+
         {/* ━━━ FAQ ━━━ */}
         <section className="py-20 lg:py-28 px-6 lg:px-12">
           <div className="max-w-[800px] mx-auto">
@@ -281,18 +336,11 @@ export default async function RoadTripPage({ params }: Props) {
         <section className="py-12 lg:py-16 px-6 lg:px-12 bg-[#FFFBF5]">
           <div className="max-w-[1200px] mx-auto">
             <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">{isEn ? "Discover More" : "Découvrir aussi"}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Link href={`/${locale}/trip-with-friends`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Trip with Friends" : "Voyage entre Amis"}</h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Plan any group trip effortlessly." : "Organisez n'importe quel voyage de groupe."}</p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read more →" : "En savoir plus →"}</span>
-                </div>
-              </Link>
-              <Link href={`/${locale}/family-trip`} className="group">
-                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Family Trip" : "Voyage en Famille"}</h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Multi-generational trip planning made simple." : "Planification multi-générationnelle simplifiée."}</p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read more →" : "En savoir plus →"}</span>
                 </div>
               </Link>
@@ -301,6 +349,20 @@ export default async function RoadTripPage({ params }: Props) {
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Group Trip Guide" : "Guide Voyage de Groupe"}</h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "The complete step-by-step guide." : "Le guide complet étape par étape."}</p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the guide →" : "Lire le guide →"}</span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Best Group Travel Apps" : "Meilleures Applis Voyage de Groupe"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Our comparison of the top tools for group trips." : "Notre comparatif des meilleurs outils pour voyager en groupe."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the article →" : "Lire l'article →"}</span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/family-trip`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Family Trip" : "Voyage en Famille"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Plan a multi-generational family vacation." : "Organisez des vacances familiales multi-générations."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read more →" : "En savoir plus →"}</span>
                 </div>
               </Link>
             </div>

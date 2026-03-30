@@ -66,7 +66,7 @@ export default async function TeamBuildingPage({ params }: Props) {
     headline: isEn ? "Plan a Team Building Trip That People Actually Want to Go On" : "Organisez un Séminaire d'Entreprise où les Gens Veulent Vraiment Aller",
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
-    datePublished: "2026-03-19", dateModified: "2026-03-26",
+    datePublished: "2026-03-19", dateModified: "2026-03-31",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
@@ -126,7 +126,7 @@ export default async function TeamBuildingPage({ params }: Props) {
                 : "Les séminaires échouent quand une seule personne planifie tout, personne n'a son mot à dire et les activités semblent forcées. Voici comment en organiser un que votre équipe appréciera vraiment — et qui donnera de vrais résultats."}
             </p>
             <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "9 min read" : "9 min de lecture"}</p>
-            <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-26" />
+            <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-31" />
           </div>
         </section>
 
@@ -144,8 +144,8 @@ export default async function TeamBuildingPage({ params }: Props) {
               </p>
               <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
                 {isEn
-                  ? "The fix isn't better activities — it's better process. When people have a say in where they go and what they do, they show up with energy instead of obligation. When expenses are tracked transparently, there are no awkward reimbursement conversations. When the schedule is visible to everyone, nobody shows up to the wrong lobby at the wrong time."
-                  : "La solution, ce n'est pas de meilleures activités — c'est un meilleur processus. Quand les gens ont leur mot à dire sur où ils vont et ce qu'ils font, ils arrivent avec de l'énergie au lieu de l'obligation. Quand les dépenses sont suivies de manière transparente, il n'y a pas de conversations gênantes sur les remboursements. Quand le planning est visible par tous, personne ne se trompe de hall d'hôtel."}
+                  ? <>The fix isn&apos;t better activities — it&apos;s better process. When people <Link href={`/${locale}/features/polls`} className="text-[#F6391A] hover:underline underline-offset-4">have a say</Link> in where they go and what they do, they show up with energy instead of obligation. When expenses are tracked transparently, there are no awkward reimbursement conversations. When the <Link href={`/${locale}/features/collaboration`} className="text-[#F6391A] hover:underline underline-offset-4">schedule is visible to everyone</Link>, nobody shows up to the wrong lobby at the wrong time.</>
+                  : <>La solution, ce n&apos;est pas de meilleures activités — c&apos;est un meilleur processus. Quand les gens <Link href={`/${locale}/features/polls`} className="text-[#F6391A] hover:underline underline-offset-4">ont leur mot à dire</Link> sur où ils vont et ce qu&apos;ils font, ils arrivent avec de l&apos;énergie au lieu de l&apos;obligation. Quand les dépenses sont suivies de manière transparente, il n&apos;y a pas de conversations gênantes sur les remboursements. Quand le <Link href={`/${locale}/features/collaboration`} className="text-[#F6391A] hover:underline underline-offset-4">planning est visible par tous</Link>, personne ne se trompe de hall d&apos;hôtel.</>}
               </p>
               <p className="text-[#001E13] text-lg lg:text-[22px] font-karla font-bold leading-[1.8]">
                 {isEn
@@ -213,8 +213,8 @@ export default async function TeamBuildingPage({ params }: Props) {
               </p>
               <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
                 {isEn
-                  ? "Come with a budget breakdown, not just a vague ask. Use WePlanify's budget tracker to model costs per person across accommodation, transport, activities, and meals. Showing a transparent, itemized plan is infinitely more convincing than \"it'll cost around €500 per person, probably.\""
-                  : "Venez avec un budget détaillé, pas une demande vague. Utilisez le suivi de budget WePlanify pour modéliser les coûts par personne (hébergement, transport, activités, repas). Montrer un plan transparent et détaillé est infiniment plus convaincant que « ça coûtera environ 500€ par personne, à peu près »."}
+                  ? <>Come with a budget breakdown, not just a vague ask. Use WePlanify&apos;s <Link href={`/${locale}/features/budget`} className="text-[#F6391A] hover:underline underline-offset-4">budget tracker</Link> to model costs per person across accommodation, transport, activities, and meals. Showing a transparent, itemized plan is infinitely more convincing than &quot;it&apos;ll cost around €500 per person, probably.&quot;</>
+                  : <>Venez avec un budget détaillé, pas une demande vague. Utilisez le <Link href={`/${locale}/features/budget`} className="text-[#F6391A] hover:underline underline-offset-4">suivi de budget</Link> WePlanify pour modéliser les coûts par personne (hébergement, transport, activités, repas). Montrer un plan transparent et détaillé est infiniment plus convaincant que « ça coûtera environ 500€ par personne, à peu près ».</>}
               </p>
             </div>
           </div>
@@ -268,6 +268,65 @@ export default async function TeamBuildingPage({ params }: Props) {
           </div>
         </section>
 
+        {/* ━━━ PLANNING TIMELINE ━━━ */}
+        <FadeIn>
+          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+            <div className="max-w-[900px] mx-auto">
+              <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10">
+                {isEn ? "Planning Timeline: From Idea to Offsite" : "Planning : de l'Idée au Séminaire"}
+              </h2>
+              <div className="space-y-8">
+                <p className="text-[#FFFBF5]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                  {isEn
+                    ? <>Three months before the trip, start with the fundamentals: define the goals (is this about bonding, strategy, or celebrating?), set a rough budget range, and shortlist two or three destination ideas. Create a trip on WePlanify and invite the core organizers. Use <Link href={`/${locale}/features/polls`} className="text-[#EEF899] hover:underline underline-offset-4">polls</Link> to let the broader team weigh in on destination preferences early — this avoids the classic mistake of announcing a location nobody wanted.</>
+                    : <>Trois mois avant le départ, posez les fondations : définissez les objectifs (cohésion, stratégie, célébration ?), fixez une fourchette de budget et présélectionnez deux ou trois idées de destinations. Créez un voyage sur WePlanify et invitez les organisateurs. Utilisez les <Link href={`/${locale}/features/polls`} className="text-[#EEF899] hover:underline underline-offset-4">sondages</Link> pour que l&apos;équipe donne son avis sur la destination dès le départ — vous éviterez ainsi l&apos;erreur classique d&apos;annoncer un lieu que personne ne voulait.</>}
+                </p>
+                <p className="text-[#FFFBF5]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                  {isEn
+                    ? <>One month out, lock in the big decisions: book accommodation, reserve group activities, and finalize travel logistics. Build the <Link href={`/${locale}/features/planning`} className="text-[#EEF899] hover:underline underline-offset-4">shared itinerary</Link> so everyone can see the day-by-day plan taking shape. This is also the time to gather dietary restrictions, accessibility needs, and travel preferences. The more you plan collaboratively now, the fewer fires you'll fight later. For a step-by-step approach, our <Link href={`/${locale}/guides/plan-group-trip`} className="text-[#EEF899] hover:underline underline-offset-4">group trip planning guide</Link> covers the full process.</>
+                    : <>Un mois avant, verrouillez les grandes décisions : réservez l&apos;hébergement, bloquez les activités de groupe, finalisez la logistique transport. Construisez l&apos;<Link href={`/${locale}/features/planning`} className="text-[#EEF899] hover:underline underline-offset-4">itinéraire partagé</Link> pour que tout le monde voie le programme jour par jour prendre forme. C&apos;est aussi le moment de recueillir les régimes alimentaires, besoins d&apos;accessibilité et préférences de voyage. Plus vous planifiez à plusieurs maintenant, moins vous aurez de problèmes plus tard. Pour une approche détaillée, notre <Link href={`/${locale}/guides/plan-group-trip`} className="text-[#EEF899] hover:underline underline-offset-4">guide d&apos;organisation de voyage de groupe</Link> couvre tout le processus.</>}
+                </p>
+                <p className="text-[#FFFBF5]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                  {isEn
+                    ? "Two weeks before, shift to communication mode. Share the finalized itinerary with the entire team, send packing suggestions, and confirm headcounts for each activity. Pin important details — airport transfers, check-in times, emergency contacts — at the top of the trip. A well-informed team is a relaxed team."
+                    : "Deux semaines avant, passez en mode communication. Partagez l'itinéraire finalisé avec toute l'équipe, envoyez des suggestions de bagages et confirmez les effectifs pour chaque activité. Épinglez les infos clés — transferts aéroport, heures de check-in, contacts d'urgence — en haut du voyage. Une équipe bien informée est une équipe détendue."}
+                </p>
+                <p className="text-[#FFFBF5]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                  {isEn
+                    ? "One week before and during the trip, your job is to stay flexible. Last-minute changes happen — a restaurant cancels, weather shifts, someone's flight is delayed. With a shared itinerary that updates in real time, you can adapt on the fly and everyone stays in the loop. No more frantic group texts asking \"where are we supposed to be right now?\""
+                    : "Une semaine avant et pendant le séminaire, votre rôle est de rester flexible. Les imprévus arrivent — un restaurant annule, la météo change, un vol est retardé. Avec un itinéraire partagé qui se met à jour en temps réel, vous pouvez vous adapter à la volée et tout le monde reste informé. Fini les messages de groupe paniqués « on est censés être où là ? »"}
+                </p>
+              </div>
+            </div>
+          </section>
+        </FadeIn>
+
+        {/* ━━━ MEASURING ROI ━━━ */}
+        <section className="py-20 lg:py-28 px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10">
+              {isEn ? "Measuring ROI of Your Team Retreat" : "Mesurer le Retour sur Investissement de Votre Séminaire"}
+            </h2>
+            <div className="space-y-8">
+              <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? <>The biggest blocker for team retreats isn&apos;t logistics — it&apos;s justifying the cost. To make a compelling case, measure what matters. Send a short team satisfaction survey before and after the retreat: rate your sense of connection with colleagues, cross-team <Link href={`/${locale}/features/collaboration`} className="text-[#F6391A] hover:underline underline-offset-4">collaboration</Link> quality, and overall morale. The delta between those two snapshots is your clearest proof of impact.</>
+                  : <>Le plus grand frein aux séminaires, ce n&apos;est pas la logistique — c&apos;est justifier le coût. Pour construire un argumentaire solide, mesurez ce qui compte. Envoyez un court sondage de satisfaction avant et après le séminaire : évaluez le sentiment de connexion entre collègues, la qualité de la <Link href={`/${locale}/features/collaboration`} className="text-[#F6391A] hover:underline underline-offset-4">collaboration</Link> inter-équipes et le moral général. L&apos;écart entre ces deux snapshots est votre preuve d&apos;impact la plus claire.</>}
+              </p>
+              <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? <>Track collaboration metrics in the weeks that follow: are cross-team Slack threads more active? Are people scheduling more one-on-ones with colleagues they met at the retreat? Companies that measure retention rates find that teams with regular offsites have 15-25% lower voluntary turnover. That alone can offset the entire <Link href={`/${locale}/features/budget`} className="text-[#F6391A] hover:underline underline-offset-4">cost of the trip</Link>.</>
+                  : <>Suivez les métriques de collaboration dans les semaines qui suivent : les fils Slack inter-équipes sont-ils plus actifs ? Les gens prennent-ils plus de one-on-ones avec les collègues rencontrés au séminaire ? Les entreprises qui mesurent la rétention constatent que les équipes avec des offsites réguliers ont 15 à 25% de turnover volontaire en moins. Cela seul peut compenser la totalité du <Link href={`/${locale}/features/budget`} className="text-[#F6391A] hover:underline underline-offset-4">coût du séminaire</Link>.</>}
+              </p>
+              <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
+                {isEn
+                  ? <>Finally, document what worked and what didn&apos;t while it&apos;s fresh. Which activities sparked real conversation? Which felt forced? This post-retreat debrief becomes your playbook for next time — and strong evidence for leadership that the investment paid off. For inspiration on how other groups handle planning, check out our <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline underline-offset-4">roundup of the best group travel apps</Link>.</>
+                  : <>Enfin, documentez ce qui a fonctionné et ce qui n&apos;a pas marché tant que c&apos;est frais. Quelles activités ont généré de vraies conversations ? Lesquelles semblaient forcées ? Ce débrief post-séminaire devient votre guide pour la prochaine fois — et une preuve solide pour la direction que l&apos;investissement a porté ses fruits. Pour voir comment d&apos;autres groupes gèrent leur organisation, consultez notre <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline underline-offset-4">comparatif des meilleures applis de voyage de groupe</Link>.</>}
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ━━━ FAQ ━━━ */}
         <section className="py-20 lg:py-28 px-6 lg:px-12">
           <div className="max-w-[800px] mx-auto">
@@ -292,7 +351,7 @@ export default async function TeamBuildingPage({ params }: Props) {
         <section className="py-12 lg:py-16 px-6 lg:px-12 bg-[#FFFBF5]">
           <div className="max-w-[1200px] mx-auto">
             <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">{isEn ? "Discover More" : "Découvrir aussi"}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Link href={`/${locale}/trip-with-friends`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Trip with Friends" : "Voyage entre Amis"}</h3>
@@ -302,16 +361,23 @@ export default async function TeamBuildingPage({ params }: Props) {
               </Link>
               <Link href={`/${locale}/road-trip`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">Road Trip</h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Plan a road trip with your crew." : "Organisez un road trip avec votre bande."}</p>
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Road Trip" : "Road Trip"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Plan a group road trip with shared routes and budgets." : "Organisez un road trip de groupe avec itinéraire et budget partagés."}</p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read more →" : "En savoir plus →"}</span>
                 </div>
               </Link>
-              <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="group">
+              <Link href={`/${locale}/guides/plan-group-trip`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
-                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "App Comparison" : "Comparatif"}</h3>
-                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "See how WePlanify compares." : "Comparez WePlanify aux autres."}</p>
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "View comparison →" : "Voir le comparatif →"}</span>
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Group Trip Guide" : "Guide Voyage de Groupe"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Step-by-step guide to plan any group trip." : "Guide étape par étape pour organiser un voyage de groupe."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the guide →" : "Lire le guide →"}</span>
+                </div>
+              </Link>
+              <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="group">
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
+                  <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Best Group Travel Apps" : "Meilleures Applis Voyage de Groupe"}</h3>
+                  <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Compare the top tools for group travel." : "Comparez les meilleurs outils pour voyager en groupe."}</p>
+                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the article →" : "Lire l'article →"}</span>
                 </div>
               </Link>
             </div>
