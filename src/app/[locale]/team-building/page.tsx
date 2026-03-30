@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const metadata = await generateMetadataFromSanity(locale, PATHNAME);
   const isEn = locale === "en";
   const title = isEn
-    ? "Plan a Team Building Trip — Corporate Retreat Planner | WePlanify"
-    : "Organiser un Séminaire d'Entreprise — Planificateur Team Building | WePlanify";
+    ? "Corporate Retreat Planner — Team Building Trips | WePlanify"
+    : "Organiser un Séminaire d'Entreprise — Team Building | WePlanify";
   const description = isEn
-    ? "Plan your next team building trip or corporate retreat with WePlanify. Manage group logistics, coordinate activities, track shared budgets, and keep the whole team aligned."
-    : "Organisez votre prochain séminaire ou voyage d'entreprise avec WePlanify. Gérez la logistique de groupe, coordonnez les activités, suivez le budget et gardez toute l'équipe alignée.";
+    ? "Plan your next corporate retreat or team offsite without the spreadsheet chaos. Itineraries, polls, budgets — one tool, zero headache."
+    : "Organisez votre prochain séminaire ou team building sans tableur ni chaos. Itinéraire, votes, budget — un seul outil.";
   const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
   return {
     ...metadata, title, description,

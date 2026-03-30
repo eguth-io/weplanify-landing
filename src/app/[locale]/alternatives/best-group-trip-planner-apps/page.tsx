@@ -45,15 +45,15 @@ const PATHNAME = "/alternatives/best-group-trip-planner-apps";
 
 const meta = {
   en: {
-    title: "10 Best Group Trip Planner Apps Compared (2026 Guide)",
+    title: "10 Best Group Trip Planner Apps in 2026 (Honest Review)",
     description:
-      "We tested 10 group trip planner apps so you don't have to. Side-by-side comparison of WePlanify, Wanderlog, TripIt, SquadTrip & more — features, pricing, and honest verdicts.",
+      "We tested the top group trip planning apps side by side. See which ones actually work for itineraries, polls, budgets & real-time collaboration.",
   },
   fr: {
     title:
-      "Les 10 Meilleures Apps Voyage de Groupe Comparées (Guide 2026)",
+      "Les 10 Meilleures Applis pour Organiser un Voyage de Groupe (2026)",
     description:
-      "On a testé 10 applications de voyage de groupe pour vous. Comparatif détaillé de WePlanify, Wanderlog, TripIt, SquadTrip et plus — fonctionnalités, prix et verdicts honnêtes.",
+      "On a testé les meilleures applis de voyage de groupe. Comparatif honnête : itinéraire, budget, sondages, collaboration. Notre verdict 2026.",
   },
 };
 
@@ -323,6 +323,34 @@ const content = {
       { name: "Let's Jetty", values: [true, false, false, false, true, false] },
     ],
 
+    faqTitle: "Frequently Asked Questions",
+    faqItems: [
+      {
+        question: "What is the best app for planning a group trip?",
+        answer:
+          "It depends on your needs. WePlanify is the most complete all-in-one option with itinerary planning, polls, budget tracking, and packing lists. Wanderlog excels at map-based itinerary building. SquadTrip is ideal if you need integrated payments. TripIt works best for organizing existing bookings.",
+      },
+      {
+        question: "Is there a free app for group travel planning?",
+        answer:
+          "Yes. WePlanify, Wanderlog, Troupe, and Let's Jetty all offer full-featured free plans. WePlanify stands out by offering all core features — including polls, budget tracking, and packing lists — without any paywall.",
+      },
+      {
+        question: "How do you split costs on a group trip?",
+        answer:
+          "Apps like Splitwise and WePlanify let you log shared expenses and automatically calculate who owes what. Splitwise is dedicated to expense splitting, while WePlanify includes budget tracking alongside itinerary planning and group coordination.",
+      },
+      {
+        question: "Can multiple people edit the same trip itinerary?",
+        answer:
+          "Yes — WePlanify, Wanderlog, and Stippl all support real-time collaborative editing. Everyone in the group can add activities, rearrange days, and leave comments simultaneously.",
+      },
+      {
+        question: "What app lets a group vote on travel destinations?",
+        answer:
+          "WePlanify, SquadTrip, and Cruzmi include built-in polling features where group members can vote on destinations, activities, restaurants, and dates. WePlanify offers unlimited polls with real-time results.",
+      },
+    ],
     ctaTitle: "Ready to plan your next group trip?",
     ctaText:
       "Stop juggling multiple apps and spreadsheets. WePlanify brings itinerary planning, group polls, budget tracking, packing lists, and AI-powered recommendations into one free platform.",
@@ -559,6 +587,34 @@ const content = {
       { name: "Let's Jetty", values: [true, false, false, false, true, false] },
     ],
 
+    faqTitle: "Questions Fréquentes",
+    faqItems: [
+      {
+        question: "Quelle est la meilleure appli pour organiser un voyage de groupe ?",
+        answer:
+          "Ça dépend de vos besoins. WePlanify est l'option tout-en-un la plus complète avec itinéraire, sondages, budget et listes de bagages. Wanderlog excelle pour les itinéraires sur carte. SquadTrip est idéal si vous avez besoin de paiements intégrés. TripIt est parfait pour organiser des réservations existantes.",
+      },
+      {
+        question: "Existe-t-il une appli gratuite pour planifier un voyage de groupe ?",
+        answer:
+          "Oui. WePlanify, Wanderlog, Troupe et Let's Jetty proposent tous des versions gratuites complètes. WePlanify se distingue en offrant toutes les fonctionnalités principales — sondages, budget, listes de bagages — sans aucune restriction payante.",
+      },
+      {
+        question: "Comment partager les frais d'un voyage de groupe ?",
+        answer:
+          "Des applis comme Splitwise et WePlanify permettent d'enregistrer les dépenses partagées et de calculer automatiquement qui doit combien. Splitwise est dédié au partage de frais, tandis que WePlanify intègre le suivi de budget avec la planification d'itinéraire et la coordination de groupe.",
+      },
+      {
+        question: "Peut-on modifier le même itinéraire à plusieurs ?",
+        answer:
+          "Oui — WePlanify, Wanderlog et Stippl permettent l'édition collaborative en temps réel. Chaque membre du groupe peut ajouter des activités, réorganiser les journées et laisser des commentaires simultanément.",
+      },
+      {
+        question: "Quelle appli permet de voter sur les destinations en groupe ?",
+        answer:
+          "WePlanify, SquadTrip et Cruzmi incluent des sondages intégrés où les membres du groupe peuvent voter sur les destinations, activités, restaurants et dates. WePlanify propose des sondages illimités avec résultats en temps réel.",
+      },
+    ],
     ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
     ctaText:
       "Arrêtez de jongler entre plusieurs applications et tableurs. WePlanify réunit planification d'itinéraire, sondages de groupe, suivi de budget, listes de bagages et recommandations alimentées par l'IA dans une seule plateforme gratuite.",
@@ -703,11 +759,24 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
       url: SITE_URL,
     },
     datePublished: "2026-03-19",
-    dateModified: "2026-03-19",
+    dateModified: "2026-03-31",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${SITE_URL}/${locale}${PATHNAME}`,
     },
+  };
+
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: c.faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 
   return (
@@ -719,6 +788,10 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
       />
 
       <Nav navData={navData} navigationData={navigationData} />
@@ -1086,6 +1159,41 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
                   </span>
                 </div>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------------------------------------------------------- */}
+        {/* FAQ                                                              */}
+        {/* ---------------------------------------------------------------- */}
+        <section className="py-16 lg:py-20 px-4 lg:px-8 bg-[#FFFBF5]">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-[#001E13] text-2xl lg:text-3xl font-londrina-solid text-center mb-10">
+              {c.faqTitle}
+            </h2>
+            <div className="space-y-4">
+              {c.faqItems.map((item, i) => (
+                <details
+                  key={i}
+                  className="group bg-white border border-[#001E13]/10 rounded-2xl overflow-hidden"
+                >
+                  <summary className="flex items-center justify-between cursor-pointer px-6 py-5 font-karla font-bold text-[#001E13] text-base lg:text-lg list-none">
+                    {item.question}
+                    <svg
+                      className="w-5 h-5 text-[#001E13]/40 group-open:rotate-180 transition-transform shrink-0 ml-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 font-karla text-[#001E13]/70 text-sm lg:text-base leading-relaxed">
+                    {item.answer}
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         </section>

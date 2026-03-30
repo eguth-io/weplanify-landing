@@ -243,8 +243,8 @@ Chaque page : ~1000 mots, comparaison honnete feature par feature, conclusion or
 | JSON-LD Article | OK | Sur le guide |
 | Favicon complet | OK | ico, png 16/32, apple-touch, android-chrome |
 | Web App Manifest | OK | PWA-ready |
-| Google Search Console | A faire | Soumettre le sitemap |
-| Google Analytics / GTM | A verifier | Config dans Sanity seoSettings |
+| Google Search Console | **OK** | Sitemap soumis, 27 pages indexees |
+| Google Analytics / GTM | **OK** | GTM-MJHJL7Q2 deploye, Consent Mode v2, 4 key events GA4 configures |
 
 ### Performance & Core Web Vitals
 
