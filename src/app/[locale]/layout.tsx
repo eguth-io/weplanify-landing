@@ -4,6 +4,7 @@ import "../globals.css";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { Analytics } from "@/components/Analytics";
 import CookieConsent from "@/components/CookieConsent";
+import StickyCTA from "@/components/StickyCTA";
 import { StructuredData } from "@/components/StructuredData";
 import SoftwareApplicationSchema from "@/app/structured-data";
 import { NextIntlClientProvider } from 'next-intl';
@@ -83,6 +84,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+
+        {/* Sticky CTA — appears on scroll, all pages */}
+        <StickyCTA text={locale === "fr" ? "Rejoindre la beta" : "Join the beta"} />
 
         {/* Cookie Consent Banner */}
         <CookieConsent />
