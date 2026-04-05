@@ -21,7 +21,7 @@ const SITE_URL = "https://www.weplanify.com";
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const isFr = locale === "fr";
-  const currentUrl = `${SITE_URL}/${locale}/privacy`;
+  const currentUrl = `${SITE_URL}/${locale}/privacy-policy`;
 
   return {
     title: isFr ? "Politique de confidentialit\u00e9 | WePlanify" : "Privacy Policy | WePlanify",
@@ -31,9 +31,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: currentUrl,
       languages: {
-        en: `${SITE_URL}/en/privacy`,
-        fr: `${SITE_URL}/fr/privacy`,
-        "x-default": `${SITE_URL}/en/privacy`,
+        en: `${SITE_URL}/en/privacy-policy`,
+        fr: `${SITE_URL}/fr/privacy-policy`,
+        "x-default": `${SITE_URL}/en/privacy-policy`,
       },
     },
   };
