@@ -2,14 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { trackEvent } from "@/lib/tracking";
 
 interface StickyCTAProps {
   text: string;
+  locale?: string;
 }
 
-export default function StickyCTA({ text }: StickyCTAProps) {
+export default function StickyCTA({ text, locale = "en" }: StickyCTAProps) {
+  const isFr = locale === "fr";
   const [show, setShow] = useState(false);
   const [formOpen, setFormOpen] = useState(false);
   const [email, setEmail] = useState("");
@@ -144,6 +147,11 @@ export default function StickyCTA({ text }: StickyCTAProps) {
                   >
                     {status === "submitting" ? "Sending..." : text}
                   </PulsatingButton>
+                  <p className="text-[#001E13]/40 text-[10px] font-karla leading-snug text-center">
+                    {isFr
+                      ? <>Votre email sera utilis\u00e9 uniquement pour vous notifier de l&apos;ouverture de la beta. <Link href={`/${locale}/privacy`} className="underline hover:text-[#001E13]/60">Politique de confidentialit\u00e9</Link></>
+                      : <>Your email will only be used to notify you when the beta opens. <Link href={`/${locale}/privacy`} className="underline hover:text-[#001E13]/60">Privacy policy</Link></>}
+                  </p>
                 </motion.form>
               ) : (
                 <motion.div
