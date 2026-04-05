@@ -46,24 +46,23 @@ const content = {
     sections: [
       {
         title: "1. Data Controller",
-        body: "WePlanify is operated by Eguth SAS. For any questions regarding your personal data, you can contact us at privacy@weplanify.com.",
+        body: "WePlanify is operated by WePlanify SAS. For any questions regarding your personal data, you can contact us at privacy@weplanify.com.",
       },
       {
         title: "2. Data We Collect",
         body: "We collect the following data depending on your interactions with our services:",
         list: [
-          "Email address — when you sign up for the beta, subscribe to notifications, or create an account.",
-          "Name — when you create an account on the application.",
-          "Usage data — anonymous analytics collected via cookies (with your consent) to improve our service.",
-          "Trip data — itineraries, polls, budgets and other content you create within the application.",
+          "Email address \u2014 when you sign up for the beta or subscribe to launch notifications.",
+          "Technical data \u2014 IP address and browser information, collected automatically when you use our AI trip planner or visit our website.",
+          "Usage data \u2014 anonymous analytics collected via cookies (with your consent) to improve our service.",
         ],
       },
       {
         title: "3. How We Use Your Data",
         body: "Your data is used exclusively for the following purposes:",
         list: [
-          "To provide and improve our trip planning services.",
           "To notify you about beta access and product launches (only if you opted in).",
+          "To protect our services against bots and abuse (via Cloudflare Turnstile).",
           "To analyze anonymous usage patterns and improve the user experience.",
         ],
       },
@@ -71,21 +70,29 @@ const content = {
         title: "4. Legal Basis (GDPR)",
         body: "We process your personal data based on:",
         list: [
-          "Your consent — for beta signup notifications, marketing emails, and analytics cookies.",
-          "Contractual necessity — for providing the service when you create an account.",
-          "Legitimate interest — for security and fraud prevention.",
+          "Your consent \u2014 for beta signup notifications and analytics cookies.",
+          "Legitimate interest \u2014 for security, bot prevention, and fraud protection.",
         ],
       },
       {
         title: "5. Data Sharing",
-        body: "We do not sell your personal data to third parties. We may share data with trusted service providers who help us operate our platform (hosting, email delivery, analytics), all bound by data processing agreements.",
+        body: "We never sell your personal data. We share data with the following service providers, all bound by data processing agreements:",
+        list: [
+          "Resend (USA) \u2014 transactional email delivery (receives your email address).",
+          "Google Analytics via Google Tag Manager (USA) \u2014 anonymous usage analytics (with your consent).",
+          "Cloudflare Turnstile (USA) \u2014 bot protection (receives your IP address).",
+        ],
       },
       {
-        title: "6. Data Retention",
-        body: "Beta signup emails are retained until the beta launch and for up to 12 months after. Account data is retained for the duration of your account and deleted within 30 days of account closure. Analytics data is anonymized and retained indefinitely.",
+        title: "6. International Data Transfers",
+        body: "Some of our service providers are located in the United States. For these transfers, we rely on the EU-US Data Privacy Framework (adequacy decision of July 2023) where the provider is certified, or Standard Contractual Clauses (Art. 46(2)(c) GDPR) otherwise.",
       },
       {
-        title: "7. Your Rights",
+        title: "7. Data Retention",
+        body: "Beta signup emails are retained until the beta launch and for up to 12 months after, then deleted. Technical data (IP addresses) collected via the AI trip planner is automatically deleted after 90 days. Analytics data is anonymized and retained indefinitely.",
+      },
+      {
+        title: "8. Your Rights",
         body: "Under the GDPR, you have the right to:",
         list: [
           "Access your personal data.",
@@ -99,15 +106,21 @@ const content = {
           "To exercise any of these rights, contact us at privacy@weplanify.com.",
       },
       {
-        title: "8. Cookies",
-        body: "We use cookies for analytics purposes only (Google Analytics via Google Tag Manager). You can accept or decline cookies via the consent banner displayed on your first visit. No cookies are set before your consent (for EEA visitors). For more details, see our cookie consent banner.",
+        title: "9. Cookies and Local Storage",
+        body: "We use the following technologies:",
+        list: [
+          "Google Analytics (via GTM) \u2014 anonymous usage analytics. Duration: up to 13 months. Requires your consent.",
+          "Cloudflare Turnstile \u2014 bot protection. Session-only. No consent required (legitimate interest: security).",
+          "weplanify_consent (localStorage) \u2014 stores your cookie consent choice. Persistent. No consent required (strictly necessary).",
+        ],
+        footer: "For visitors in the EEA, no analytics cookies are set before you give consent. You can withdraw consent at any time by clearing your browser storage.",
       },
       {
-        title: "9. Security",
+        title: "10. Security",
         body: "We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.",
       },
       {
-        title: "10. Changes to This Policy",
+        title: "11. Changes to This Policy",
         body: "We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.",
       },
     ],
@@ -118,24 +131,23 @@ const content = {
     sections: [
       {
         title: "1. Responsable du traitement",
-        body: "WePlanify est op\u00e9r\u00e9 par Eguth SAS. Pour toute question relative \u00e0 vos donn\u00e9es personnelles, vous pouvez nous contacter \u00e0 privacy@weplanify.com.",
+        body: "WePlanify est op\u00e9r\u00e9 par WePlanify SAS. Pour toute question relative \u00e0 vos donn\u00e9es personnelles, vous pouvez nous contacter \u00e0 privacy@weplanify.com.",
       },
       {
         title: "2. Donn\u00e9es collect\u00e9es",
         body: "Nous collectons les donn\u00e9es suivantes selon vos interactions avec nos services :",
         list: [
-          "Adresse email — lors de votre inscription \u00e0 la beta, \u00e0 la newsletter ou \u00e0 la cr\u00e9ation de compte.",
-          "Nom — lors de la cr\u00e9ation d\u2019un compte sur l\u2019application.",
-          "Donn\u00e9es d\u2019utilisation — statistiques anonymes collect\u00e9es via cookies (avec votre consentement) pour am\u00e9liorer notre service.",
-          "Donn\u00e9es de voyage — itin\u00e9raires, sondages, budgets et autres contenus que vous cr\u00e9ez dans l\u2019application.",
+          "Adresse email \u2014 lors de votre inscription \u00e0 la beta ou \u00e0 la notification de lancement.",
+          "Donn\u00e9es techniques \u2014 adresse IP et informations du navigateur, collect\u00e9es automatiquement lors de l\u2019utilisation de notre planificateur IA ou de la visite de notre site.",
+          "Donn\u00e9es d\u2019utilisation \u2014 statistiques anonymes collect\u00e9es via cookies (avec votre consentement) pour am\u00e9liorer notre service.",
         ],
       },
       {
         title: "3. Utilisation de vos donn\u00e9es",
         body: "Vos donn\u00e9es sont utilis\u00e9es exclusivement pour :",
         list: [
-          "Fournir et am\u00e9liorer nos services de planification de voyage.",
           "Vous notifier de l\u2019ouverture de la beta et des lancements produit (uniquement si vous l\u2019avez demand\u00e9).",
+          "Prot\u00e9ger nos services contre les bots et les abus (via Cloudflare Turnstile).",
           "Analyser les tendances d\u2019utilisation de mani\u00e8re anonyme pour am\u00e9liorer l\u2019exp\u00e9rience utilisateur.",
         ],
       },
@@ -143,21 +155,29 @@ const content = {
         title: "4. Base l\u00e9gale (RGPD)",
         body: "Nous traitons vos donn\u00e9es personnelles sur la base de :",
         list: [
-          "Votre consentement — pour les notifications beta, emails marketing et cookies analytiques.",
-          "N\u00e9cessit\u00e9 contractuelle — pour fournir le service lorsque vous cr\u00e9ez un compte.",
-          "Int\u00e9r\u00eat l\u00e9gitime — pour la s\u00e9curit\u00e9 et la pr\u00e9vention des fraudes.",
+          "Votre consentement \u2014 pour les notifications beta et les cookies analytiques.",
+          "Int\u00e9r\u00eat l\u00e9gitime \u2014 pour la s\u00e9curit\u00e9, la pr\u00e9vention des bots et la protection contre la fraude.",
         ],
       },
       {
         title: "5. Partage des donn\u00e9es",
-        body: "Nous ne vendons pas vos donn\u00e9es personnelles \u00e0 des tiers. Nous pouvons partager des donn\u00e9es avec des prestataires de confiance qui nous aident \u00e0 op\u00e9rer notre plateforme (h\u00e9bergement, envoi d\u2019emails, analytics), tous li\u00e9s par des accords de traitement des donn\u00e9es.",
+        body: "Nous ne vendons jamais vos donn\u00e9es personnelles. Nous partageons des donn\u00e9es avec les prestataires suivants, tous li\u00e9s par des accords de traitement des donn\u00e9es :",
+        list: [
+          "Resend (\u00c9tats-Unis) \u2014 envoi d\u2019emails transactionnels (re\u00e7oit votre adresse email).",
+          "Google Analytics via Google Tag Manager (\u00c9tats-Unis) \u2014 analytics anonymes (avec votre consentement).",
+          "Cloudflare Turnstile (\u00c9tats-Unis) \u2014 protection anti-bots (re\u00e7oit votre adresse IP).",
+        ],
       },
       {
-        title: "6. Conservation des donn\u00e9es",
-        body: "Les emails d\u2019inscription beta sont conserv\u00e9s jusqu\u2019au lancement de la beta et jusqu\u2019\u00e0 12 mois apr\u00e8s. Les donn\u00e9es de compte sont conserv\u00e9es pendant la dur\u00e9e de votre compte et supprim\u00e9es dans les 30 jours suivant sa cl\u00f4ture. Les donn\u00e9es analytiques sont anonymis\u00e9es et conserv\u00e9es ind\u00e9finiment.",
+        title: "6. Transferts internationaux",
+        body: "Certains de nos prestataires sont situ\u00e9s aux \u00c9tats-Unis. Pour ces transferts, nous nous appuyons sur le EU-US Data Privacy Framework (d\u00e9cision d\u2019ad\u00e9quation de juillet 2023) lorsque le prestataire est certifi\u00e9, ou sur les Clauses Contractuelles Types (Art. 46(2)(c) RGPD) dans le cas contraire.",
       },
       {
-        title: "7. Vos droits",
+        title: "7. Conservation des donn\u00e9es",
+        body: "Les emails d\u2019inscription beta sont conserv\u00e9s jusqu\u2019au lancement de la beta et jusqu\u2019\u00e0 12 mois apr\u00e8s, puis supprim\u00e9s. Les donn\u00e9es techniques (adresses IP) collect\u00e9es via le planificateur IA sont automatiquement supprim\u00e9es apr\u00e8s 90 jours. Les donn\u00e9es analytiques sont anonymis\u00e9es et conserv\u00e9es ind\u00e9finiment.",
+      },
+      {
+        title: "8. Vos droits",
         body: "Conform\u00e9ment au RGPD, vous disposez des droits suivants :",
         list: [
           "Acc\u00e9der \u00e0 vos donn\u00e9es personnelles.",
@@ -171,15 +191,21 @@ const content = {
           "Pour exercer ces droits, contactez-nous \u00e0 privacy@weplanify.com.",
       },
       {
-        title: "8. Cookies",
-        body: "Nous utilisons des cookies uniquement \u00e0 des fins analytiques (Google Analytics via Google Tag Manager). Vous pouvez accepter ou refuser les cookies via la banni\u00e8re de consentement affich\u00e9e lors de votre premi\u00e8re visite. Aucun cookie n\u2019est d\u00e9pos\u00e9 avant votre consentement (pour les visiteurs de l\u2019EEE).",
+        title: "9. Cookies et stockage local",
+        body: "Nous utilisons les technologies suivantes :",
+        list: [
+          "Google Analytics (via GTM) \u2014 analytics anonymes. Dur\u00e9e : jusqu\u2019\u00e0 13 mois. N\u00e9cessite votre consentement.",
+          "Cloudflare Turnstile \u2014 protection anti-bots. Session uniquement. Pas de consentement requis (int\u00e9r\u00eat l\u00e9gitime : s\u00e9curit\u00e9).",
+          "weplanify_consent (localStorage) \u2014 stocke votre choix de consentement cookies. Persistant. Pas de consentement requis (strictement n\u00e9cessaire).",
+        ],
+        footer: "Pour les visiteurs de l\u2019EEE, aucun cookie analytique n\u2019est d\u00e9pos\u00e9 avant votre consentement. Vous pouvez retirer votre consentement \u00e0 tout moment en vidant le stockage de votre navigateur.",
       },
       {
-        title: "9. S\u00e9curit\u00e9",
+        title: "10. S\u00e9curit\u00e9",
         body: "Nous mettons en \u0153uvre des mesures techniques et organisationnelles appropri\u00e9es pour prot\u00e9ger vos donn\u00e9es personnelles contre tout acc\u00e8s non autoris\u00e9, modification, divulgation ou destruction.",
       },
       {
-        title: "10. Modifications de cette politique",
+        title: "11. Modifications de cette politique",
         body: "Nous pouvons mettre \u00e0 jour cette politique de confidentialit\u00e9. Toute modification sera publi\u00e9e sur cette page avec une date de r\u00e9vision mise \u00e0 jour.",
       },
     ],
