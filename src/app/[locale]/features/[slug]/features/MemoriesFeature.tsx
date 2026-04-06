@@ -390,7 +390,7 @@ export default function MemoriesFeature({ data }: { data: FeaturePageData }) {
                 {t.heroDescription}
               </p>
 
-              <Link href="/signup">
+              <Link href="/signup" className="inline-block">
                 <PulsatingButton className="font-karla font-bold text-lg px-8 py-4">
                   {t.ctaButton}
                 </PulsatingButton>
