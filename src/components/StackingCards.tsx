@@ -161,7 +161,7 @@ function Card({ card, index }: { card: Card; index: number }) {
         )}
 
         {card.ctaLabel && (
-          <Link href={card.ctaUrl || "#"}>
+          <Link href={card.ctaUrl || "https://app.weplanify.com/register"}>
             <button
               className="px-8 py-3 rounded-full font-karla font-bold text-sm lg:text-base hover:opacity-90 transition-all ring-4"
               style={{

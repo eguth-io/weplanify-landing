@@ -65,7 +65,7 @@ export default function CTABanner({ data }: CTABannerProps) {
 
               {/* Right side - CTA Button with social proof */}
               <div className="flex-shrink-0 flex flex-col items-start lg:items-end gap-2">
-                <Link href={data.buttonUrl || "#"} onClick={() => trackEvent("cta_click", { location: "cta_banner", label: data.buttonText })}>
+                <Link href={data.buttonUrl || "https://app.weplanify.com/register"} onClick={() => trackEvent("cta_click", { location: "cta_banner", label: data.buttonText })}>
                   <PulsatingButton className="font-karla font-bold">
                     {data.buttonText}
                   </PulsatingButton>

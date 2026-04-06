@@ -35,7 +35,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
     if (link.linkType === "anchor") {
       return `/#${link.anchorId}`;
     }
-    return link.url || "#";
+    return link.url || "https://app.weplanify.com/register";
   };
 
   // Handle anchor link clicks with smooth scroll
@@ -139,7 +139,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
             <Link href={navigationData?.connectionButton?.url || nav.connexionLink || "/login"} className="text-sm font-[500]" rel="nofollow">
               {navigationData?.connectionButton?.text || "Login"}
             </Link>
-            <Link href={navigationData?.ctaButton?.url || nav.ctaLink || "#"} rel="nofollow">
+            <Link href={navigationData?.ctaButton?.url || nav.ctaLink || "https://app.weplanify.com/register"} rel="nofollow">
               <PulsatingButton>{navigationData?.ctaButton?.text || (typeof nav.ctaButton === 'string' ? nav.ctaButton : (nav.ctaButton as { text?: string })?.text) || "Get started"}</PulsatingButton>
             </Link>
           </div>
@@ -250,7 +250,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
             >
               {navigationData?.connectionButton?.text || "Login"}
             </Link>
-            <Link href={navigationData?.ctaButton?.url || nav.ctaLink || "#"} onClick={closeMenu} className="block" rel="nofollow">
+            <Link href={navigationData?.ctaButton?.url || nav.ctaLink || "https://app.weplanify.com/register"} onClick={closeMenu} className="block" rel="nofollow">
               <PulsatingButton className="w-full justify-center">
                 {navigationData?.ctaButton?.text || (typeof nav.ctaButton === 'string' ? nav.ctaButton : (nav.ctaButton as { text?: string })?.text) || "Get started"}
               </PulsatingButton>
