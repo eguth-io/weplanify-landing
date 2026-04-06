@@ -122,6 +122,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     author: {
       "@type": "Person",
       name: authorName,
+      jobTitle: "Travel Editor",
+      worksFor: {
+        "@type": "Organization",
+        name: "WePlanify",
+        url: SITE_URL,
+      },
     },
     publisher: {
       "@type": "Organization",

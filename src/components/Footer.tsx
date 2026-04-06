@@ -7,6 +7,52 @@ import { Footer as FooterType } from "@/sanity/lib/type";
 import { useState } from "react";
 import { trackEvent } from "@/lib/tracking";
 
+function SocialIcon({ platform }: { platform: string }) {
+  const name = platform.toLowerCase();
+  const cls = "w-5 h-5";
+  if (name.includes("instagram")) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><circle cx="12" cy="12" r="5" /><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+      </svg>
+    );
+  }
+  if (name.includes("tiktok")) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M16.6 5.82A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.07 2.53 5.7 5.7 5.7 3.15 0 5.7-2.55 5.7-5.7V9.01a7.297 7.297 0 0 0 4.04 1.22V7.14s-1.84.09-3.4-1.32Z" />
+      </svg>
+    );
+  }
+  if (name.includes("x") || name.includes("twitter")) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+      </svg>
+    );
+  }
+  if (name.includes("youtube")) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+      </svg>
+    );
+  }
+  if (name.includes("linkedin")) {
+    return (
+      <svg className={cls} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+      </svg>
+    );
+  }
+  // Fallback
+  return (
+    <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" /><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    </svg>
+  );
+}
+
 interface FooterProps {
   footerData?: FooterType | null;
 }
@@ -210,27 +256,14 @@ export default function Footer({ footerData }: FooterProps) {
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 lg:pt-10 border-t border-[#001E13]/10">
           {/* Social Links */}
-          {footerData?.socialLinks && footerData.socialLinks.length > 0 && (
-            <div className="flex gap-4 items-center order-2 md:order-1">
-              {footerData.socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url || "#"}
-                  className="hover:opacity-70 transition-opacity"
-                  aria-label={social.ariaLabel}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/instagram.svg"
-                    alt={social.platform}
-                    width={24}
-                    height={24}
-                  />
-                </a>
-              ))}
-            </div>
-          )}
+          <div className="flex gap-4 items-center order-2 md:order-1">
+            <a href="https://www.instagram.com/weplanify" className="text-[#001E13] hover:text-[#F6391A] transition-colors" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <SocialIcon platform="instagram" />
+            </a>
+            <a href="https://www.tiktok.com/@weplanify" className="text-[#001E13] hover:text-[#F6391A] transition-colors" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+              <SocialIcon platform="tiktok" />
+            </a>
+          </div>
 
           {/* Legal Links */}
           {footerData?.legalLinks && footerData.legalLinks.length > 0 && (

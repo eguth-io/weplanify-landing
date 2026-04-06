@@ -82,7 +82,10 @@ export default async function AboutPage({ params }: Props) {
     description: isEn ? aboutMeta.en.description : aboutMeta.fr.description,
     foundingDate: "2025",
     founder: { "@type": "Person", name: "WePlanify Team" },
-    sameAs: [],
+    sameAs: [
+      "https://www.instagram.com/weplanify",
+      "https://www.tiktok.com/@weplanify",
+    ],
   };
 
   const breadcrumbLd = {
