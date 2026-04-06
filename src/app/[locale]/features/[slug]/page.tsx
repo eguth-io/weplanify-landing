@@ -108,11 +108,39 @@ const seoOverrides: Record<string, Record<string, { title: string; description: 
         "Tout le groupe modifie le même voyage en temps réel. Fini les screenshots et les \"t'as vu mon message ?\". Planifiez enfin ensemble.",
     },
   },
+  memories: {
+    en: {
+      title: "Collaborative Travel Photo Album & AI Travel Book | WePlanify",
+      description:
+        "Share group travel photos and create a personalized Travel Book with AI. Collaborative album, interactive map and organized memories.",
+    },
+    fr: {
+      title: "Album Photo de Voyage Collaboratif & Travel Book IA | WePlanify",
+      description:
+        "Partagez vos photos de voyage en groupe et créez un Travel Book personnalisé grâce à l'IA. Album collaboratif, carte interactive et souvenirs organisés.",
+    },
+  },
 };
 
 // Generate metadata with hreflang for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
+
+  const metadata = await generateMetadataFromSanity(locale, `/features/${slug}`);
+  const override = seoOverrides[slug]?.[locale];
+
+  // Memories page is fully hardcoded — skip Sanity
+  if (slug === "memories") {
+    const title = override!.title;
+    const description = override!.description;
+    return {
+      ...metadata,
+      title,
+      description,
+      openGraph: { ...metadata.openGraph, title, description },
+      twitter: { ...metadata.twitter, title, description },
+    };
+  }
 
   // Fetch SEO data from Sanity
   const data = await client.fetch<FeaturePageData | null>(featurePageQuery, {
@@ -121,15 +149,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 
   if (!data) {
-    return {
-      title: "Feature Not Found",
-    };
+    return { title: "Feature Not Found" };
   }
 
-  const metadata = await generateMetadataFromSanity(locale, `/features/${slug}`);
-
-  // Use override if available, otherwise fall back to Sanity
-  const override = seoOverrides[slug]?.[locale];
   const title = override?.title ?? data.seoTitle;
   const description = override?.description ?? data.seoDescription;
 
@@ -137,16 +159,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...metadata,
     title,
     description,
-    openGraph: {
-      ...metadata.openGraph,
-      title,
-      description,
-    },
-    twitter: {
-      ...metadata.twitter,
-      title,
-      description,
-    },
+    openGraph: { ...metadata.openGraph, title, description },
+    twitter: { ...metadata.twitter, title, description },
   };
 }
 
@@ -170,6 +184,16 @@ export default async function FeaturePage({ params }: Props) {
   // Validate slug
   if (!validSlugs.includes(slug)) {
     notFound();
+  }
+
+  // Memories page is fully hardcoded — skip Sanity
+  if (slug === "memories") {
+    return (
+      <>
+        <MemoriesFeature data={{} as FeaturePageData} />
+        <RelatedFeatures currentSlug={slug} locale={locale} />
+      </>
+    );
   }
 
   // Fetch feature page data from Sanity
