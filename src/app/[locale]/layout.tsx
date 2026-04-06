@@ -15,29 +15,34 @@ import { routing } from '@/i18n/routing';
 const ralewayFont = Raleway({
   variable: "--font-raleway",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const UnboundedFont = Unbounded({
   variable: "--font-unbounded",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const londrinaSolidFont = Londrina_Solid({
   variable: "--font-londrina-solid",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "900"],
+  weight: ["400", "900"],
+  display: "swap",
 });
 
 const karlaFont = Karla({
   variable: "--font-karla",
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 const nanumPenFont = Nanum_Pen_Script({
   variable: "--font-nanum-pen",
   subsets: ["latin"],
   weight: ["400"],
+  display: "swap",
 });
 
 // Generate metadata dynamically from Sanity with hreflang
