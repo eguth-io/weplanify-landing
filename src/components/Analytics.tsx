@@ -12,37 +12,12 @@ const GTM_ID = "GTM-MJHJL7Q2";
 export function Analytics() {
   return (
     <>
-      {/* Consent Mode v2 defaults — must be BEFORE GTM */}
-      <Script id="consent-defaults" strategy="beforeInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-
-          // EEA regions: deny by default (GDPR requires opt-in)
-          gtag('consent', 'default', {
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'analytics_storage': 'denied',
-            'functionality_storage': 'granted',
-            'personalization_storage': 'denied',
-            'security_storage': 'granted',
-            'wait_for_update': 500,
-            'region': ['AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','GR','HR','HU','IE','IS','IT','LI','LT','LU','LV','MT','NL','NO','PL','PT','RO','SE','SI','SK','GB','CH']
-          });
-
-          // Rest of the world: grant by default (no cookie banner needed)
-          gtag('consent', 'default', {
-            'ad_storage': 'granted',
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted',
-            'analytics_storage': 'granted',
-            'functionality_storage': 'granted',
-            'personalization_storage': 'granted',
-            'security_storage': 'granted'
-          });
-        `}
-      </Script>
+      {/* Consent Mode v2 defaults — inline script, non-blocking */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','functionality_storage':'granted','personalization_storage':'denied','security_storage':'granted','wait_for_update':500,'region':['AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','GR','HR','HU','IE','IS','IT','LI','LT','LU','LV','MT','NL','NO','PL','PT','RO','SE','SI','SK','GB','CH']});gtag('consent','default',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted','functionality_storage':'granted','personalization_storage':'granted','security_storage':'granted'});`,
+        }}
+      />
 
       {/* Google Tag Manager — always loaded, respects consent mode */}
       <Script id="google-tag-manager" strategy="afterInteractive">

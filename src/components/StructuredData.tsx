@@ -27,7 +27,10 @@ export async function StructuredData() {
       organizationName: "WePlanify",
       organizationLogo: "https://www.weplanify.com/logo.svg",
       organizationUrl: "https://www.weplanify.com",
-      organizationSocialLinks: [],
+      organizationSocialLinks: [
+        { platform: "Instagram", url: "https://www.instagram.com/weplanify" },
+        { platform: "TikTok", url: "https://www.tiktok.com/@weplanify" },
+      ],
       siteUrl: "https://www.weplanify.com",
       robotsSettings: { allowIndexing: true },
       favicon: "/favicon.ico",

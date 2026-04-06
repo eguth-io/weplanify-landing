@@ -488,9 +488,14 @@ function ArticleJsonLd({ locale }: { locale: string }) {
     headline: c.h1,
     description: locale === "fr" ? meta.fr.description : meta.en.description,
     author: {
-      "@type": "Organization",
-      name: "WePlanify",
-      url: SITE_URL,
+      "@type": "Person",
+      name: "Alex Martin",
+      jobTitle: "Travel Editor",
+      worksFor: {
+        "@type": "Organization",
+        name: "WePlanify",
+        url: SITE_URL,
+      },
     },
     publisher: {
       "@type": "Organization",
@@ -503,6 +508,31 @@ function ArticleJsonLd({ locale }: { locale: string }) {
       "@type": "WebPage",
       "@id": `${SITE_URL}/${locale}${PATHNAME}`,
     },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+function HowToJsonLd({ locale }: { locale: string }) {
+  const c = locale === "fr" ? content.fr : content.en;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: c.h1,
+    description: locale === "fr" ? meta.fr.description : meta.en.description,
+    totalTime: "PT12M",
+    step: c.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.title,
+      text: step.paragraphs[0],
+      url: `${SITE_URL}/${locale}${PATHNAME}#${step.id}`,
+    })),
   };
 
   return (
@@ -551,6 +581,7 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
       <BreadcrumbJsonLd locale={locale} />
       <FaqJsonLd locale={locale} />
       <ArticleJsonLd locale={locale} />
+      <HowToJsonLd locale={locale} />
 
       <Nav navData={navData} navigationData={navigationData} />
 

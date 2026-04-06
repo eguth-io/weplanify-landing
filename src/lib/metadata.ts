@@ -186,7 +186,12 @@ export function generateOrganizationSchema(seoSettings: SeoSettings) {
       telephone: seoSettings.contactPhone,
       contactType: "customer service",
     },
-    sameAs: seoSettings.organizationSocialLinks?.map((link) => link.url) || [],
+    sameAs: seoSettings.organizationSocialLinks?.length
+      ? seoSettings.organizationSocialLinks.map((link) => link.url)
+      : [
+          "https://www.instagram.com/weplanify",
+          "https://www.tiktok.com/@weplanify",
+        ],
   };
 }
 

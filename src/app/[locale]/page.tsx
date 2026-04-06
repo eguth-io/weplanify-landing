@@ -1,15 +1,18 @@
+import dynamic from "next/dynamic";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
-import StackingCards from "@/components/StackingCards";
-import TravelSteps from "@/components/TravelSteps";
-import FAQSupport from "@/components/FAQSupport";
-import ReadyBanner from "@/components/ReadyBanner";
-import Testimonial from "@/components/Testimonial";
-import TestimonialCarousel from "@/components/TestimonialCarousel";
-import CTABanner from "@/components/CTABanner";
-import FeatureImageSection from "@/components/FeatureImageSection";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
+
+// Lazy-load below-the-fold components to reduce initial JS bundle
+const StackingCards = dynamic(() => import("@/components/StackingCards"));
+const TravelSteps = dynamic(() => import("@/components/TravelSteps"));
+const FAQSupport = dynamic(() => import("@/components/FAQSupport"));
+const ReadyBanner = dynamic(() => import("@/components/ReadyBanner"));
+const Testimonial = dynamic(() => import("@/components/Testimonial"));
+const TestimonialCarousel = dynamic(() => import("@/components/TestimonialCarousel"));
+const CTABanner = dynamic(() => import("@/components/CTABanner"));
+const FeatureImageSection = dynamic(() => import("@/components/FeatureImageSection"));
 import Image from "next/image";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
@@ -77,6 +80,7 @@ export default async function HomePage({ params }: Props) {
                 src={hero?.backgroundImage || "/header-bg.webp"}
                 alt={hero?.title || "Hero Background"}
                 fill
+                sizes="100vw"
                 className="object-cover"
                 priority
                 fetchPriority="high"
