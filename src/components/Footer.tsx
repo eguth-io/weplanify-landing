@@ -115,36 +115,40 @@ export default function Footer({ footerData }: FooterProps) {
                 </Link>
               ))}
             </div>
-            {/* Company column */}
-            <div className="flex flex-col">
-              <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
-                {locale === "fr" ? "Entreprise" : "Company"}
-              </h3>
-              <Link
-                href={`/${locale}/about`}
-                className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-              >
-                {locale === "fr" ? "À propos" : "About"}
-              </Link>
-              <Link
-                href={`/${locale}/contact`}
-                className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-              >
-                Contact
-              </Link>
-              <Link
-                href={`/${locale}/blog`}
-                className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-              >
-                Blog
-              </Link>
-              <Link
-                href={`/${locale}/faq`}
-                className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-              >
-                FAQ
-              </Link>
-            </div>
+            {/* Company column — only if Sanity doesn't already provide one */}
+            {!footerData?.footerColumns?.some(
+              (col) => col.title?.toLowerCase() === "company" || col.title?.toLowerCase() === "entreprise"
+            ) && (
+              <div className="flex flex-col">
+                <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
+                  {locale === "fr" ? "Entreprise" : "Company"}
+                </h3>
+                <Link
+                  href={`/${locale}/about`}
+                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+                >
+                  {locale === "fr" ? "À propos" : "About"}
+                </Link>
+                <Link
+                  href={`/${locale}/contact`}
+                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+                >
+                  Contact
+                </Link>
+                <Link
+                  href={`/${locale}/blog`}
+                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+                >
+                  Blog
+                </Link>
+                <Link
+                  href={`/${locale}/faq`}
+                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+                >
+                  FAQ
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Footer CTA Section */}
@@ -159,7 +163,7 @@ export default function Footer({ footerData }: FooterProps) {
                 </p>
               )}
               {footerData.ctaSection.buttonText && (
-                <Link href={footerData.ctaSection.buttonUrl || "#"}>
+                <Link href={footerData.ctaSection.buttonUrl || "https://app.weplanify.com/register"}>
                   <button className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-base hover:bg-[#F6391A]/90 transition-colors w-fit">
                     {footerData.ctaSection.buttonText}
                   </button>

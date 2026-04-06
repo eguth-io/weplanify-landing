@@ -5,9 +5,9 @@ import { routing } from './src/i18n/routing';
 const intlMiddleware = createMiddleware(routing);
 
 export default function middleware(request: NextRequest) {
-  // Handle root path redirect
+  // Handle root path — permanent redirect to default locale
   if (request.nextUrl.pathname === '/') {
-    return NextResponse.redirect(new URL('/en', request.url));
+    return NextResponse.redirect(new URL('/en', request.url), 308);
   }
 
   return intlMiddleware(request);

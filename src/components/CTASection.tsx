@@ -52,7 +52,7 @@ export default function CTASection({ ctaData }: CTASectionProps) {
           {ctaData.description}
         </div>
         <div className="mt-[34px] flex justify-center">
-          <Link href={ctaData.buttonUrl || '#'} rel="nofollow" onClick={() => trackEvent("cta_click", { location: "cta_section", label: ctaData.buttonText })}>
+          <Link href={ctaData.buttonUrl || 'https://app.weplanify.com/register'} rel="nofollow" onClick={() => trackEvent("cta_click", { location: "cta_section", label: ctaData.buttonText })}>
             <PulsatingButtonWhite>
               {ctaData.buttonText}
             </PulsatingButtonWhite>

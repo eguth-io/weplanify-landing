@@ -74,48 +74,48 @@ export function generateStaticParams() {
 const seoOverrides: Record<string, Record<string, { title: string; description: string }>> = {
   planning: {
     en: {
-      title: "Group Trip Planner — Build Itineraries with AI | WePlanify",
+      title: "Group Trip Planner — Build Itineraries with AI",
       description:
         "Create your group trip itinerary in minutes. Drag-and-drop planning, AI suggestions, and real-time sync with your travel crew.",
     },
     fr: {
-      title: "Planifier un Voyage de Groupe — Itinéraire IA | WePlanify",
+      title: "Planifier un Voyage de Groupe — Itinéraire IA",
       description:
         "Construisez votre itinéraire de groupe pas à pas ou laissez l'IA s'en charger. Collaboration en temps réel avec vos amis, prêt en quelques secondes.",
     },
   },
   polls: {
     en: {
-      title: "Group Trip Polls — Decide Together Instantly | WePlanify",
+      title: "Group Trip Polls — Decide Together Instantly",
       description:
         "End the group chat chaos. Create polls to decide destinations, activities & restaurants together. Real-time voting, instant results.",
     },
     fr: {
-      title: "Sondages Voyage de Groupe — Décidez à Plusieurs | WePlanify",
+      title: "Sondages Voyage de Groupe — Décidez à Plusieurs",
       description:
         "Fini les débats sans fin. Créez un sondage, votez, c'est décidé. Destinations, dates, activités — tout le groupe donne son avis.",
     },
   },
   collaboration: {
     en: {
-      title: "Plan a Group Trip Together — Like Google Docs | WePlanify",
+      title: "Plan a Group Trip Together — Like Google Docs",
       description:
         "Everyone edits the same trip in real time. No more screenshots, no more \"did you see my message?\" — just smooth group trip planning.",
     },
     fr: {
-      title: "Planifier un Voyage à Plusieurs — Comme Google Docs | WePlanify",
+      title: "Planifier un Voyage à Plusieurs — Comme Google Docs",
       description:
         "Tout le groupe modifie le même voyage en temps réel. Fini les screenshots et les \"t'as vu mon message ?\". Planifiez enfin ensemble.",
     },
   },
   memories: {
     en: {
-      title: "Collaborative Travel Photo Album & AI Travel Book | WePlanify",
+      title: "Collaborative Travel Photo Album & AI Travel Book",
       description:
         "Share group travel photos and create a personalized Travel Book with AI. Collaborative album, interactive map and organized memories.",
     },
     fr: {
-      title: "Album Photo de Voyage Collaboratif & Travel Book IA | WePlanify",
+      title: "Album Photo de Voyage Collaboratif & Travel Book IA",
       description:
         "Partagez vos photos de voyage en groupe et créez un Travel Book personnalisé grâce à l'IA. Album collaboratif, carte interactive et souvenirs organisés.",
     },
