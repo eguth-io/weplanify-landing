@@ -55,7 +55,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
 
     // Guide & hardcoded blog pages for each locale
-    const guidePages = ["guides/plan-group-trip", "blog/meilleures-applications-voyage-groupe"];
+    const guidePages = [
+      "guides/plan-group-trip",
+      "blog/meilleures-applications-voyage-groupe",
+      "blog/organiser-evjf",
+      "blog/group-trip-budget",
+    ];
     for (const locale of locales) {
       for (const page of guidePages) {
         entries.push({
