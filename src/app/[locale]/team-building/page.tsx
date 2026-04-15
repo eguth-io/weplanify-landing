@@ -66,7 +66,7 @@ export default async function TeamBuildingPage({ params }: Props) {
     headline: isEn ? "Plan a Team Building Trip That People Actually Want to Go On" : "Organisez un Séminaire d'Entreprise où les Gens Veulent Vraiment Aller",
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
-    datePublished: "2026-03-19", dateModified: "2026-03-31",
+    datePublished: "2026-03-19", dateModified: "2026-04-15",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
@@ -93,12 +93,35 @@ export default async function TeamBuildingPage({ params }: Props) {
     mainEntity: faqItems.map((item) => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })),
   };
 
+  const howToLd = {
+    "@context": "https://schema.org", "@type": "HowTo",
+    name: isEn ? "How to Plan a Corporate Team Retreat" : "Comment organiser un séminaire d'entreprise",
+    description: isEn
+      ? "Step-by-step guide to planning a team building retreat that your whole team will enjoy."
+      : "Guide étape par étape pour organiser un séminaire d'entreprise que toute votre équipe appréciera.",
+    totalTime: "PT90D",
+    step: isEn
+      ? [
+          { "@type": "HowToStep", name: "Define goals and destination", text: "Set retreat objectives, fix a rough budget, and shortlist 2–3 destination ideas. Run a poll to involve the team in the destination choice.", position: 1 },
+          { "@type": "HowToStep", name: "Book accommodation and activities", text: "Confirm the venue, reserve group activities, and finalize travel logistics. Build a shared itinerary everyone can see.", position: 2 },
+          { "@type": "HowToStep", name: "Share the final plan", text: "Distribute the finalized itinerary, collect dietary needs and accessibility requirements, and confirm headcounts.", position: 3 },
+          { "@type": "HowToStep", name: "Stay flexible on the day", text: "Keep the shared itinerary updated in real time so everyone stays informed when plans change.", position: 4 },
+        ]
+      : [
+          { "@type": "HowToStep", name: "Définir les objectifs et la destination", text: "Fixez les objectifs du séminaire, établissez un budget indicatif et présélectionnez 2–3 idées de destinations. Lancez un sondage pour impliquer l'équipe.", position: 1 },
+          { "@type": "HowToStep", name: "Réserver l'hébergement et les activités", text: "Confirmez le lieu, réservez les activités de groupe et finalisez la logistique transport. Construisez un itinéraire partagé visible par tous.", position: 2 },
+          { "@type": "HowToStep", name: "Partager le programme final", text: "Diffusez l'itinéraire finalisé, recueillez les régimes alimentaires et confirmez les effectifs.", position: 3 },
+          { "@type": "HowToStep", name: "Rester flexible le jour J", text: "Maintenez l'itinéraire partagé à jour en temps réel pour que tout le monde reste informé en cas de changement.", position: 4 },
+        ],
+  };
+
   return (
     <>
       <AuthorJsonLd />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }} />
       <Nav navData={navData} navigationData={navigationData} />
 
       <main className="min-h-screen bg-[#FFFBF5]">

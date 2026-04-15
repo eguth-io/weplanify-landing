@@ -35,9 +35,9 @@ const meta = {
   },
   fr: {
     title:
-      "Les Meilleures Applis pour Organiser un Voyage entre Amis (2026)",
+      "Application Voyage Collaboratif — Meilleures Applis Voyage de Groupe (2026)",
     description:
-      "On a testé les applis de voyage de groupe les plus populaires. Découvrez laquelle choisir selon vos besoins : itinéraire, budget, sondages, bagages.",
+      "Comparatif des meilleures applications de voyage collaboratif : WePlanify, Wanderlog, Splitwise et plus. Testées en conditions réelles pour votre groupe.",
   },
 };
 
