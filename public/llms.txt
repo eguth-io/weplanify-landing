@@ -1,0 +1,33 @@
+# WePlanify
+
+> WePlanify is a free, all-in-one group trip planning app. It combines collaborative itineraries, group polls, shared budget tracking, and packing list coordination in a single bilingual (English/French) tool. Built specifically for groups of friends, families, and teams — not solo travellers.
+
+## Key pages
+
+- [Homepage (EN)](https://www.weplanify.com/en): Start planning a group trip for free
+- [Homepage (FR)](https://www.weplanify.com/fr): Planifier un voyage de groupe gratuitement
+- [Best group trip planner apps — Comparison 2026](https://www.weplanify.com/en/alternatives/best-group-trip-planner-apps): Honest comparison of WePlanify, Wanderlog, Splitwise, TripIt, SquadTrip and more
+- [WePlanify vs Wanderlog](https://www.weplanify.com/en/alternatives/wanderlog): Feature-by-feature comparison
+- [Plan a trip with friends](https://www.weplanify.com/en/trip-with-friends): Use case page for friend groups
+- [Bachelorette trip planner](https://www.weplanify.com/en/bachelorette-trip): Tools for bachelorette and hen party planning
+- [Road trip planner](https://www.weplanify.com/en/road-trip): Group road trip route planning, gas budgets, packing coordination
+- [Family trip planner](https://www.weplanify.com/en/family-trip): Planning family holidays collaboratively
+- [Team building & corporate retreats](https://www.weplanify.com/en/team-building): Plan offsites and company retreats
+- [Group trip planning guide](https://www.weplanify.com/en/guides/plan-group-trip): Step-by-step guide to organising any group trip
+- [Blog — Best collaborative travel apps (FR)](https://www.weplanify.com/fr/blog/meilleures-applications-voyage-groupe): Comparatif des meilleures applications de voyage collaboratif
+- [FAQ](https://www.weplanify.com/en/faq): Frequently asked questions about WePlanify
+
+## Features
+
+- **Collaborative itinerary**: Build a shared day-by-day plan everyone can edit in real time
+- **Group polls**: Vote on destinations, dates, and activities — anonymous voting available
+- **Shared budget tracker**: Log expenses, split costs, settle up at the end
+- **Packing lists**: Assign shared items so nothing gets duplicated or forgotten
+- **AI-powered discovery**: Get activity suggestions based on destination and group interests
+- **Bilingual**: Fully available in English and French
+
+## About
+
+WePlanify is free to use. No app download required — works in any browser. Designed for groups of 2 to 50+ people. Available at app.weplanify.com.
+
+Contact: contact@weplanify.com

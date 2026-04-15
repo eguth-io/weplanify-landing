@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const metadata = await generateMetadataFromSanity(locale, PATHNAME);
   const isEn = locale === "en";
   const title = isEn
-    ? "Plan a Road Trip With Your Crew — Route Planner for Groups | WePlanify"
+    ? "How to Plan a Road Trip With Friends — Group Route Planner | WePlanify"
     : "Organiser un Road Trip entre Amis — Planificateur d'Itinéraire de Groupe | WePlanify";
   const description = isEn
     ? "Plan your group road trip with WePlanify. Collaborative route planning, shared gas budgets, packing coordination, and group polls for every stop along the way."
@@ -66,7 +66,7 @@ export default async function RoadTripPage({ params }: Props) {
     headline: isEn ? "Plan a Road Trip With Your Crew" : "Organiser un Road Trip entre Amis",
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
-    datePublished: "2026-03-19", dateModified: "2026-03-31",
+    datePublished: "2026-03-19", dateModified: "2026-04-15",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 

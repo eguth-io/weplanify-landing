@@ -440,6 +440,19 @@ export default async function WanderlogComparisonPage({ params }: Props) {
     })),
   };
 
+  const articleLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: locale === "fr"
+      ? "WePlanify vs Wanderlog — Quel Planificateur de Voyage de Groupe Choisir ? (2026)"
+      : "WePlanify vs Wanderlog — Which Group Trip Planner Is Better? (2026)",
+    author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
+    publisher: { "@type": "Organization", name: "WePlanify", url: "https://www.weplanify.com" },
+    datePublished: "2026-03-19",
+    dateModified: "2026-04-15",
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://www.weplanify.com/${locale}/alternatives/wanderlog` },
+  };
+
   return (
     <>
       <script
@@ -449,6 +462,10 @@ export default async function WanderlogComparisonPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
       />
       <Nav navData={navData} navigationData={navigationData} />
 
