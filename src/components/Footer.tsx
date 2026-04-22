@@ -182,6 +182,12 @@ export default function Footer({ footerData }: FooterProps) {
                   Contact
                 </Link>
                 <Link
+                  href={`/${locale}/partnership`}
+                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+                >
+                  {locale === "fr" ? "Partenaires" : "Partners"}
+                </Link>
+                <Link
                   href={`/${locale}/blog`}
                   className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
                 >
