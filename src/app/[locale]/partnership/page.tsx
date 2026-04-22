@@ -92,7 +92,7 @@ export default async function PartnershipPage({ params }: Props) {
     <>
       <Nav navData={navData} navigationData={navigationData} />
       <main className="min-h-screen">
-        <section className="relative pt-[40px] lg:pt-[80px] pb-12">
+        <section className="relative pt-[128px] lg:pt-[180px] pb-12">
           <div className="container mx-auto px-4 lg:px-0">
             <div className="max-w-xl mx-auto">
               <div className="text-center mb-6 mt-4 md:mt-0">
