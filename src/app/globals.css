@@ -140,5 +140,11 @@ p, span, a, button, input, textarea, select {
   animation: scroll 20s linear infinite;
 }
 
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 
 

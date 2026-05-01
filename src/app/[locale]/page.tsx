@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
-import { PulsatingButton } from "@/components/magicui/pulsating-button";
+import HeroPitchWall from "@/components/HeroPitchWall";
 
 // Lazy-load below-the-fold components to reduce initial JS bundle
 const StackingCards = dynamic(() => import("@/components/StackingCards"));
@@ -70,58 +70,15 @@ export default async function HomePage({ params }: Props) {
         navigationData={navigationData}
       />
 
-      {/* Hero Section */}
-      <div id="hero" className="pt-[100px] lg:pt-[120px] px-4 lg:px-8 pb-4 lg:pb-6">
-        <div className="max-w-[1536px] mx-auto">
-          <section className="relative overflow-hidden rounded-[24px] lg:rounded-[40px]">
-            {/* Background Image */}
-            <div className="absolute inset-0 z-0">
-              <Image
-                src={hero?.backgroundImage || "/header-bg.webp"}
-                alt={hero?.title || "Hero Background"}
-                fill
-                sizes="100vw"
-                className="object-cover"
-                priority
-                fetchPriority="high"
-              />
-              {/* Subtle Dark Overlay */}
-              <div className="absolute inset-0 bg-black/20"></div>
-            </div>
-
-            {/* Content */}
-            <div className="relative z-10 w-full px-6 lg:px-12 xl:px-16 py-16 lg:py-36 xl:py-44 flex flex-col items-center text-center lg:items-start lg:text-left min-h-[500px] justify-between">
-              <div className="max-w-2xl w-full">
-                {hero?.affiliateTag && (
-                  <span className="text-orange bg-[#FFFBF5] px-4 py-1 rounded-full text-sm lg:text-lg inline-block mb-4 lg:mb-6 font-nanum-pen">
-                    {hero.affiliateTag}
-                  </span>
-                )}
-
-                <h1 className="text-[#FFFBF5] text-2xl lg:text-4xl xl:text-[48px] font-londrina-solid leading-tight mb-4 lg:mb-6 whitespace-pre-line">
-                  {hero?.title || ""}
-                </h1>
-
-                {hero?.description && (
-                  <p className="text-[#FFFBF5] text-sm lg:text-base font-karla font-semibold leading-relaxed mb-6 lg:mb-8 max-w-xl mx-auto lg:mx-0 whitespace-pre-line">
-                    {hero.description}
-                  </p>
-                )}
-              </div>
-
-              {hero?.ctaText && (
-                <div className="flex flex-col gap-2 items-center lg:items-start">
-                  <Link href={hero.ctaUrl || "https://app.weplanify.com/register"}>
-                    <PulsatingButton className="font-karla font-bold">
-                      {hero.ctaText}
-                    </PulsatingButton>
-                  </Link>
-                </div>
-              )}
-            </div>
-          </section>
-        </div>
-      </div>
+      <HeroPitchWall
+        locale={locale}
+        hero={{
+          affiliateTag: hero?.affiliateTag ?? null,
+          title: hero?.title ?? null,
+          description: hero?.description ?? null,
+          backgroundImage: hero?.backgroundImage ?? null,
+        }}
+      />
 
       {/* Testimonial & Stats Section */}
       <div id="reviews" className="px-4 lg:px-8 pb-8 lg:pb-12">
