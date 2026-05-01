@@ -623,7 +623,7 @@ function LoadingSteps({ lang }: { lang: Lang }) {
             initial={{ opacity: 0, x: -8 }}
             animate={{ opacity: state === 'pending' ? 0.35 : 1, x: 0 }}
             transition={{ delay: i * 0.08, duration: 0.25 }}
-            className="flex items-center gap-3 text-[#001E13] font-karla font-semibold text-sm"
+            className="flex items-center gap-3 text-[#FFFBF5] font-karla font-semibold text-sm drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]"
           >
             <span className="relative flex items-center justify-center w-5 h-5 flex-shrink-0">
               {state === 'done' && (
@@ -643,7 +643,7 @@ function LoadingSteps({ lang }: { lang: Lang }) {
                 </>
               )}
               {state === 'pending' && (
-                <span className="inline-flex w-2 h-2 rounded-full bg-[#001E13]/25" />
+                <span className="inline-flex w-2 h-2 rounded-full bg-[#FFFBF5]/40" />
               )}
             </span>
             <span className={state === 'pending' ? 'opacity-60' : ''}>{step}…</span>
