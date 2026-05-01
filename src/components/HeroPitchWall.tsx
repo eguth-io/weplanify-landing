@@ -15,6 +15,16 @@ type UnsplashPhoto = {
   color?: string | null;
 };
 
+type ItineraryStop = {
+  name: string;
+  country: string | null;
+  country_code: string | null;
+  latitude: number | null;
+  longitude: number | null;
+  nights: number;
+  why: string;
+};
+
 type TripPreview = {
   destination: string;
   country: string | null;
@@ -24,6 +34,7 @@ type TripPreview = {
   specialties: { name: string; description: string }[];
   cover: UnsplashPhoto | null;
   gallery: UnsplashPhoto[];
+  itinerary?: ItineraryStop[];
   locale?: string;
 };
 
@@ -36,6 +47,7 @@ type Copy = {
   submit: string;
   submitting: string;
   cta: string;
+  ctaNote: string;
   retry: string;
   errorGeneric: string;
   errorRateLimit: string;
@@ -49,6 +61,7 @@ const COPY: Record<Lang, Copy> = {
     submit: 'Imagine it',
     submitting: 'Crafting your trip...',
     cta: 'Plan this trip',
+    ctaNote: 'Dates, stops, everything stays editable after signup',
     retry: 'Another pitch',
     errorGeneric: 'Something went wrong. Please try again.',
     errorRateLimit: 'Too many tries. Please wait a minute.',
@@ -60,6 +73,7 @@ const COPY: Record<Lang, Copy> = {
     submit: 'Imagine-le',
     submitting: 'On prépare ton voyage...',
     cta: 'Planifier ce voyage',
+    ctaNote: 'Dates, étapes, tout reste modifiable après inscription',
     retry: 'Un autre pitch',
     errorGeneric: 'Une erreur est survenue. Réessaie.',
     errorRateLimit: 'Trop de tentatives. Attends une minute.',
@@ -192,6 +206,7 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
   const submit = async () => {
     const trimmed = pitch.trim();
     if (trimmed.length < 3 || status === 'loading') return;
+
     setStatus('loading');
     setError(null);
     trackEvent('hero_pitch_submit', { length: trimmed.length, locale: lang });
@@ -280,9 +295,9 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -8 }}
                     transition={{ duration: 0.35 }}
-                    className="w-full max-w-2xl mx-auto"
+                    className="w-full max-w-6xl"
                   >
-                    <LoadingPanel pitch={pitch} travelMonth={travelMonth} lang={lang} months={monthOptions} />
+                    <LoadingDeck pitch={pitch} travelMonth={travelMonth} lang={lang} months={monthOptions} />
                   </motion.div>
                 ) : status !== 'success' ? (
                   <motion.div
@@ -466,7 +481,7 @@ const LOADING_STEPS: Record<Lang, string[]> = {
   ],
 };
 
-function LoadingPanel({
+function LoadingDeck({
   pitch,
   travelMonth,
   lang,
@@ -478,32 +493,105 @@ function LoadingPanel({
   months: { value: string; label: string }[];
 }) {
   const monthLabel = travelMonth ? months.find((m) => m.value === travelMonth)?.label : null;
-  const title = lang === 'fr' ? 'On prépare ton voyage…' : 'Crafting your trip…';
+  const overline = lang === 'fr' ? 'On cherche…' : 'Looking for…';
+  const dreamLabel = lang === 'fr' ? 'Ton rêve' : 'Your dream';
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.97 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.35 }}
-      className="relative rounded-[28px] lg:rounded-[36px] bg-[#FFFBF5] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.4)] ring-1 ring-white/60 px-6 py-7 lg:px-10 lg:py-9 text-left"
-    >
-      <div className="flex items-center gap-2 mb-4 text-orange">
-        <Loader2 className="w-5 h-5 animate-spin" />
-        <span className="font-londrina-solid text-xl lg:text-2xl">{title}</span>
+    <div className="grid lg:grid-cols-[minmax(0,460px)_1fr] gap-8 lg:gap-14 items-center text-left">
+      <div className="relative w-full max-w-[340px] lg:max-w-none mx-auto h-[300px] lg:h-[380px] flex items-center justify-center">
+        <GhostPolaroid
+          className="absolute left-0 top-0 w-20 lg:w-44 lg:left-0 lg:top-[2%]"
+          rotate={-12}
+          delay={0.45}
+          zIndex={15}
+        />
+        <GhostPolaroid
+          className="absolute right-0 bottom-0 w-20 lg:w-44 lg:right-[2%] lg:bottom-[4%]"
+          rotate={10}
+          delay={0.55}
+          zIndex={20}
+        />
+        <GhostPolaroid
+          className="relative w-32 lg:w-64 lg:mt-8"
+          rotate={-3}
+          delay={0.25}
+          zIndex={30}
+          withTape
+        />
       </div>
-      <div className="flex items-start gap-3 mb-5 pb-5 border-b border-[#001E13]/10">
-        <span className="font-nanum-pen text-3xl leading-none text-orange flex-shrink-0">“</span>
-        <div className="flex-1 min-w-0">
-          <p className="font-karla text-[#001E13] text-sm lg:text-base italic leading-snug">{pitch}</p>
+
+      <div className="text-center lg:text-left w-full">
+        <div className="font-nanum-pen text-[#EEF899] text-xl lg:text-2xl mb-0">{overline}</div>
+        <div className="mb-3 inline-flex items-center gap-3">
+          <Loader2 className="w-7 h-7 lg:w-10 lg:h-10 animate-spin text-orange" />
+          <ShimmerBar className="h-10 lg:h-16 w-[180px] lg:w-[320px] rounded-md" />
+        </div>
+        <div className="flex items-center gap-2 mb-4 justify-center lg:justify-start">
+          <ShimmerBar className="h-3 w-24 rounded-full" />
           {monthLabel && (
-            <span className="inline-flex items-center gap-1.5 mt-2 text-xs font-karla font-bold text-[#001E13]/60">
-              <Calendar className="w-3.5 h-3.5" />
-              {monthLabel}
-            </span>
+            <>
+              <span className="text-[#FFFBF5]/40">·</span>
+              <span className="inline-flex items-center gap-1.5 text-xs font-karla font-bold text-[#FFFBF5]/80">
+                <Calendar className="w-3.5 h-3.5" />
+                {monthLabel}
+              </span>
+            </>
           )}
         </div>
+
+        <div className="relative inline-block max-w-full mb-5 rotate-[-1deg] mx-auto lg:mx-0">
+          <div className="bg-[#FFFBF5] text-[#001E13] px-4 py-3 rounded-sm shadow-[0_8px_20px_-6px_rgba(0,0,0,0.4)]">
+            <div className="font-nanum-pen text-orange text-sm leading-none mb-1">{dreamLabel}</div>
+            <p className="font-karla text-sm lg:text-base italic leading-snug max-w-[420px]">“{pitch}”</p>
+          </div>
+        </div>
+
+        <LoadingSteps lang={lang} />
       </div>
-      <LoadingSteps lang={lang} />
+    </div>
+  );
+}
+
+function ShimmerBar({ className = '' }: { className?: string }) {
+  return (
+    <span
+      className={`block bg-[#FFFBF5]/15 overflow-hidden relative ${className}`}
+    >
+      <span className="absolute inset-0 -translate-x-full animate-[shimmer_1.6s_infinite] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+    </span>
+  );
+}
+
+function GhostPolaroid({
+  className = '',
+  rotate = 0,
+  delay = 0,
+  zIndex = 10,
+  withTape = false,
+}: {
+  className?: string;
+  rotate?: number;
+  delay?: number;
+  zIndex?: number;
+  withTape?: boolean;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9, y: 20 }}
+      animate={{ opacity: 1, scale: 1, y: 0, rotate }}
+      transition={{ delay, type: 'spring', stiffness: 150, damping: 16 }}
+      style={{ zIndex }}
+      className={`${className} bg-white p-2.5 pb-10 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] rounded-sm`}
+    >
+      {withTape && (
+        <span className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-[#EEF899]/80 rotate-[-4deg] shadow-sm" />
+      )}
+      <div className="relative aspect-square w-full overflow-hidden bg-gradient-to-br from-[#EEF0F2] to-[#D9DEE3]">
+        <span className="absolute inset-0 -translate-x-full animate-[shimmer_1.6s_infinite] bg-gradient-to-r from-transparent via-white/60 to-transparent" />
+      </div>
+      <div className="absolute bottom-2 left-0 right-0 flex justify-center">
+        <ShimmerBar className="h-2 w-1/2 rounded-full !bg-[#001E13]/10" />
+      </div>
     </motion.div>
   );
 }
@@ -637,7 +725,6 @@ function PolaroidDeckCard({
   const cover = preview.cover;
   const g1 = preview.gallery[0] ?? null;
   const g2 = preview.gallery[1] ?? null;
-  const g3 = preview.gallery[2] ?? null;
 
   return (
     <div className="grid lg:grid-cols-[minmax(0,460px)_1fr] gap-8 lg:gap-14 items-center text-left">
@@ -645,55 +732,41 @@ function PolaroidDeckCard({
         initial="rest"
         animate="rest"
         whileHover="hovered"
-        className="relative w-full h-[280px] lg:h-[460px] flex items-center justify-center"
+        className="relative w-full max-w-[340px] lg:max-w-none mx-auto h-[300px] lg:h-[380px] flex items-center justify-center"
       >
-        {g2 && (
-          <Polaroid
-            photo={g2}
-            caption={preview.destination}
-            className="absolute left-0 top-[6%] w-28 lg:w-52"
-            rotate={-14}
-            delay={0.55}
-            zIndex={10}
-            captionStyle="pen"
-            hoverX={-100}
-            hoverY={-40}
-            hoverRotate={-28}
-          />
-        )}
         {g1 && (
           <Polaroid
             photo={g1}
             caption={preview.destination}
-            className="absolute right-0 top-[2%] w-28 lg:w-52"
-            rotate={12}
+            className="absolute left-0 top-0 w-20 lg:w-44 lg:left-0 lg:top-[2%]"
+            rotate={-12}
             delay={0.45}
+            zIndex={15}
+            captionStyle="pen"
+            hoverX={-100}
+            hoverY={-40}
+            hoverRotate={-24}
+          />
+        )}
+        {g2 && (
+          <Polaroid
+            photo={g2}
+            caption={preview.destination}
+            className="absolute right-0 bottom-0 w-20 lg:w-44 lg:right-[2%] lg:bottom-[4%]"
+            rotate={10}
+            delay={0.55}
             zIndex={20}
             captionStyle="pen"
             hoverX={100}
-            hoverY={-30}
-            hoverRotate={26}
-          />
-        )}
-        {g3 && (
-          <Polaroid
-            photo={g3}
-            caption={preview.destination}
-            className="absolute left-[4%] bottom-[2%] w-28 lg:w-52"
-            rotate={-5}
-            delay={0.5}
-            zIndex={15}
-            captionStyle="pen"
-            hoverX={-80}
             hoverY={60}
-            hoverRotate={-16}
+            hoverRotate={22}
           />
         )}
         {cover && (
           <Polaroid
             photo={cover}
             caption={`${preview.destination} · ${preview.country ?? ''}`}
-            className="relative w-44 lg:w-80 mt-4 lg:mt-8"
+            className="relative w-32 lg:w-64 lg:mt-8"
             rotate={-3}
             delay={0.25}
             zIndex={30}
@@ -723,9 +796,9 @@ function PolaroidDeckCard({
 
       <div className="text-center lg:text-left w-full">
         <div className="font-nanum-pen text-[#EEF899] text-xl lg:text-2xl mb-0">
-          {lang === 'fr' ? 'Ta destination' : 'Your destination'}
+          {lang === 'fr' ? 'Et si tu allais à…' : 'What about…'}
         </div>
-        <h2 className="font-londrina-solid text-[#FFFBF5] text-6xl lg:text-[110px] xl:text-[128px] leading-[0.9] mb-2 drop-shadow-[0_4px_28px_rgba(0,0,0,0.55)] break-words">
+        <h2 className="font-londrina-solid text-[#FFFBF5] text-5xl lg:text-[88px] xl:text-[104px] leading-[0.9] mb-2 drop-shadow-[0_4px_28px_rgba(0,0,0,0.55)] break-words">
           {preview.destination}
         </h2>
         <div className="flex items-center gap-3 text-[#FFFBF5]/90 font-karla font-semibold text-sm lg:text-base mb-3 justify-center lg:justify-start flex-wrap">
@@ -768,7 +841,7 @@ function PolaroidDeckCard({
             );
           })}
         </ul>
-        <div className="flex items-center gap-1.5 text-[#FFFBF5]/90 text-xs lg:text-sm mb-8 lg:mb-10 flex-wrap justify-center lg:justify-start font-karla">
+        <div className="flex items-center gap-1.5 text-[#FFFBF5]/90 text-xs lg:text-sm mb-6 flex-wrap justify-center lg:justify-start font-karla">
           <Utensils className="w-4 h-4 opacity-80" />
           {preview.specialties.map((s, i) => (
             <span key={s.name}>
@@ -777,11 +850,14 @@ function PolaroidDeckCard({
             </span>
           ))}
         </div>
-        <div className="flex items-center gap-4 justify-center lg:justify-start flex-wrap">
+        {preview.itinerary && preview.itinerary.length > 1 && (
+          <ItineraryTimeline itinerary={preview.itinerary} lang={lang} />
+        )}
+        <div className="flex items-center gap-3 lg:gap-4 lg:flex-wrap lg:justify-start justify-center">
           <Link
             href={signupUrl}
             onClick={() => trackEvent('hero_pitch_cta_click', { destination: preview.destination })}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-orange hover:bg-orange/90 text-white font-karla font-bold text-base lg:text-lg transition-colors shadow-xl shadow-orange/40"
+            className="inline-flex flex-1 max-w-[280px] lg:max-w-none lg:flex-none items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange hover:bg-orange/90 text-white font-karla font-bold text-base lg:text-lg transition-colors shadow-xl shadow-orange/40"
             rel="nofollow"
           >
             {copy.cta}
@@ -790,12 +866,16 @@ function PolaroidDeckCard({
           <button
             type="button"
             onClick={onReset}
-            className="inline-flex items-center gap-1.5 text-[#FFFBF5]/90 hover:text-white font-karla font-semibold text-sm underline underline-offset-4"
+            aria-label={copy.retry}
+            className="inline-flex items-center justify-center gap-1.5 text-[#FFFBF5]/90 hover:text-white font-karla font-semibold text-sm lg:underline lg:underline-offset-4 flex-shrink-0"
           >
-            <RotateCcw className="w-4 h-4" />
-            {copy.retry}
+            <RotateCcw className="w-5 h-5 lg:w-4 lg:h-4" />
+            <span className="hidden lg:inline">{copy.retry}</span>
           </button>
         </div>
+        <p className="mt-3 font-nanum-pen text-[#FFFBF5]/75 text-base lg:text-lg text-center lg:text-left">
+          {copy.ctaNote}
+        </p>
       </div>
     </div>
   );
@@ -864,3 +944,42 @@ function Polaroid({
     </motion.div>
   );
 }
+
+function ItineraryTimeline({ itinerary, lang }: { itinerary: ItineraryStop[]; lang: Lang }) {
+  const label = lang === 'fr' ? 'Une piste d\'itinéraire' : 'An itinerary idea';
+  const nightLabel = (n: number) =>
+    lang === 'fr' ? `${n} ${n > 1 ? 'nuits' : 'nuit'}` : `${n} ${n > 1 ? 'nights' : 'night'}`;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.7, duration: 0.4 }}
+      className="mb-8 lg:mb-10"
+    >
+      <div className="font-nanum-pen text-[#EEF899] text-lg lg:text-xl mb-2 text-center lg:text-left">
+        {label}
+      </div>
+      <ol className="flex flex-wrap items-stretch gap-2 lg:gap-3 justify-center lg:justify-start">
+        {itinerary.map((stop, i) => (
+          <li
+            key={`${stop.name}-${i}`}
+            className="relative flex items-center gap-2 rounded-full bg-[#FFFBF5]/10 backdrop-blur-sm border border-white/25 px-3 py-2 text-[#FFFBF5] font-karla"
+          >
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#EEF899] text-[#001E13] font-bold text-xs flex-shrink-0">
+              {i + 1}
+            </span>
+            <div className="leading-tight">
+              <div className="font-bold text-sm lg:text-base">{stop.name}</div>
+              <div className="text-[11px] lg:text-xs opacity-80">{nightLabel(stop.nights)}</div>
+            </div>
+            {i < itinerary.length - 1 && (
+              <ArrowRight className="w-3.5 h-3.5 text-[#FFFBF5]/50 ml-1 hidden lg:inline-block" />
+            )}
+          </li>
+        ))}
+      </ol>
+    </motion.div>
+  );
+}
+
