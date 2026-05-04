@@ -1,9 +1,7 @@
 "use client";
 
-import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Image from "next/image";
-import Link from "next/link";
-import { trackEvent } from "@/lib/tracking";
+import InlinePitch from "@/components/InlinePitch";
 
 interface CTABannerProps {
   data: {
@@ -16,9 +14,10 @@ interface CTABannerProps {
     buttonUrl: string;
     backgroundImage: string;
   };
+  locale?: string;
 }
 
-export default function CTABanner({ data }: CTABannerProps) {
+export default function CTABanner({ data, locale }: CTABannerProps) {
   if (!data) return null;
 
   return (
@@ -63,13 +62,9 @@ export default function CTABanner({ data }: CTABannerProps) {
                 </p>
               </div>
 
-              {/* Right side - CTA Button with social proof */}
+              {/* Right side - Inline pitch with social proof */}
               <div className="flex-shrink-0 flex flex-col items-start lg:items-end gap-2">
-                <Link href={data.buttonUrl || "https://app.weplanify.com/register"} onClick={() => trackEvent("cta_click", { location: "cta_banner", label: data.buttonText })}>
-                  <PulsatingButton className="font-karla font-bold">
-                    {data.buttonText}
-                  </PulsatingButton>
-                </Link>
+                <InlinePitch locale={locale} variant="light" location="cta_banner" />
                 <p className="text-[#FFFBF5]/80 text-xs lg:text-sm font-karla">
                   50k+ trips planned. Free forever.
                 </p>

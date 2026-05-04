@@ -2,8 +2,7 @@
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useRef, useEffect, useMemo } from "react";
-import Link from "next/link";
-import { trackEvent } from "@/lib/tracking";
+import InlinePitch from "@/components/InlinePitch";
 
 interface Badge {
   emoji: string;
@@ -21,9 +20,10 @@ interface ReadyBannerProps {
     buttonText: string;
     buttonUrl: string;
   };
+  locale?: string;
 }
 
-export default function ReadyBanner({ data }: ReadyBannerProps) {
+export default function ReadyBanner({ data, locale }: ReadyBannerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Configurations spring différentes pour chaque badge - mémorisées pour éviter re-render
@@ -151,11 +151,9 @@ export default function ReadyBanner({ data }: ReadyBannerProps) {
               Join 12,000+ travelers planning smarter trips
             </p>
 
-            <Link href={data.buttonUrl || "https://app.weplanify.com/register"} onClick={() => trackEvent("cta_click", { location: "ready_banner", label: data.buttonText })}>
-              <button className="bg-[#EEF899] text-[#001E13] px-6 py-2 rounded-full font-karla font-bold text-sm lg:text-base hover:bg-[#EEF899]/90 transition-colors ring-4 ring-[#EEF899] ring-opacity-15">
-                {data.buttonText}
-              </button>
-            </Link>
+            <div className="flex justify-center">
+              <InlinePitch locale={locale} variant="light" location="ready_banner" />
+            </div>
 
             {/* Free forever notice */}
             <p className="text-[#FFFBF5]/60 text-xs lg:text-sm font-karla mt-3">
