@@ -1,15 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
-import { trackEvent } from "@/lib/tracking";
 import { CtaType } from "@/sanity/lib/type";
-import { PulsatingButtonWhite } from "@/components/magicui/pulsating-button-white-black";
+import InlinePitch from "@/components/InlinePitch";
 
 interface CTASectionProps {
   footer?: unknown; // Deprecated - kept for compatibility but not used
   ctaData: CtaType;
+  locale?: string;
 }
 
-export default function CTASection({ ctaData }: CTASectionProps) {
+export default function CTASection({ ctaData, locale }: CTASectionProps) {
   // Extract parts from ctaData
   const title = [
     ctaData.titlePart1,
@@ -52,11 +51,7 @@ export default function CTASection({ ctaData }: CTASectionProps) {
           {ctaData.description}
         </div>
         <div className="mt-[34px] flex justify-center">
-          <Link href={ctaData.buttonUrl || 'https://app.weplanify.com/register'} rel="nofollow" onClick={() => trackEvent("cta_click", { location: "cta_section", label: ctaData.buttonText })}>
-            <PulsatingButtonWhite>
-              {ctaData.buttonText}
-            </PulsatingButtonWhite>
-          </Link>
+          <InlinePitch locale={locale} variant="light" location="cta_section" />
         </div>
       </div>
     </section>

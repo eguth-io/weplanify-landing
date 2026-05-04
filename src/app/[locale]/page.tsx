@@ -281,7 +281,7 @@ export default async function HomePage({ params }: Props) {
       {featureImageSection && <FadeIn><FeatureImageSection data={featureImageSection} /></FadeIn>}
 
       {/* CTA Banner */}
-      {ctaBanner && <FadeIn><CTABanner data={ctaBanner} /></FadeIn>}
+      {ctaBanner && <FadeIn><CTABanner data={ctaBanner} locale={locale} /></FadeIn>}
 
       {/* FAQ Support */}
       {faq && (
@@ -293,7 +293,7 @@ export default async function HomePage({ params }: Props) {
       )}
 
       {/* Ready Banner */}
-      {readyBanner && <FadeIn><ReadyBanner data={readyBanner} /></FadeIn>}
+      {readyBanner && <FadeIn><ReadyBanner data={readyBanner} locale={locale} /></FadeIn>}
 
       {/* Footer */}
       <Footer footerData={footerData} />
