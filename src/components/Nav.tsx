@@ -139,8 +139,8 @@ export default function Nav({ navData, navigationData }: NavProps) {
             <Link href={navigationData?.connectionButton?.url || nav.connexionLink || "/login"} className="text-sm font-[500]" rel="nofollow">
               {navigationData?.connectionButton?.text || "Login"}
             </Link>
-            <Link href={navigationData?.ctaButton?.url || nav.ctaLink || "https://app.weplanify.com/register"} rel="nofollow">
-              <PulsatingButton>{navigationData?.ctaButton?.text || (typeof nav.ctaButton === 'string' ? nav.ctaButton : (nav.ctaButton as { text?: string })?.text) || "Get started"}</PulsatingButton>
+            <Link href="https://app.weplanify.com/register" rel="nofollow">
+              <PulsatingButton>Register</PulsatingButton>
             </Link>
           </div>
         </nav>
@@ -250,10 +250,8 @@ export default function Nav({ navData, navigationData }: NavProps) {
             >
               {navigationData?.connectionButton?.text || "Login"}
             </Link>
-            <Link href={navigationData?.ctaButton?.url || nav.ctaLink || "https://app.weplanify.com/register"} onClick={closeMenu} className="block" rel="nofollow">
-              <PulsatingButton className="w-full justify-center">
-                {navigationData?.ctaButton?.text || (typeof nav.ctaButton === 'string' ? nav.ctaButton : (nav.ctaButton as { text?: string })?.text) || "Get started"}
-              </PulsatingButton>
+            <Link href="https://app.weplanify.com/register" onClick={closeMenu} className="block" rel="nofollow">
+              <PulsatingButton className="w-full justify-center">Register</PulsatingButton>
             </Link>
           </div>
         </div>
