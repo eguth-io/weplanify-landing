@@ -9,7 +9,6 @@ import { trackEvent } from "@/lib/tracking";
 interface StickyCTAProps {
   text: string;
   href?: string;
-  locale?: string;
 }
 
 /**
@@ -20,7 +19,6 @@ interface StickyCTAProps {
 export default function StickyCTA({
   text,
   href = "https://app.weplanify.com/register",
-  locale: _locale = "en",
 }: StickyCTAProps) {
   const [show, setShow] = useState(false);
   const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
