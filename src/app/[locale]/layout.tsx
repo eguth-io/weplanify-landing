@@ -91,7 +91,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         </NextIntlClientProvider>
 
         {/* Sticky CTA — appears on scroll, all pages */}
-        <StickyCTA text={locale === "fr" ? "Rejoindre la beta" : "Join the beta"} locale={locale} />
+        <StickyCTA text={locale === "fr" ? "Démarrer mon voyage" : "Start my trip"} locale={locale} />
 
         {/* Cookie Consent Banner */}
         <CookieConsent />
