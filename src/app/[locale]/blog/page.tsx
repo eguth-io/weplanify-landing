@@ -170,7 +170,7 @@ export default async function BlogPage({ params }: Props) {
         {/* Hero Article Section */}
         <section className="pt-4 pb-2 lg:pt-6 lg:pb-2">
           <div className="container mx-auto px-4 lg:px-8">
-            <Link href={`/blog/${heroArticle.slug?.current || '#'}`} className="block">
+            <Link href={`/${locale}/blog/${heroArticle.slug?.current || '#'}`} className="block">
               <div className="relative h-[300px] lg:h-[400px] overflow-hidden rounded-xl cursor-pointer hover:scale-[1.02] transition-transform duration-300">
                 <div className="absolute inset-0 z-10"></div>
                 <div
@@ -224,7 +224,7 @@ export default async function BlogPage({ params }: Props) {
             <div className="container mx-auto px-4 lg:px-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
                 {similarArticles.map((article) => (
-                  <ArticleCard key={article._id} article={article} />
+                  <ArticleCard key={article._id} article={article} locale={locale} />
                 ))}
               </div>
             </div>
