@@ -278,7 +278,7 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
               <p className="text-white/80 font-karla mb-8 max-w-md mx-auto">
                 {data.ctaSubtitle}
               </p>
-              <Link href="/signup" className="inline-block">
+              <Link href="https://app.weplanify.com/register" className="inline-block">
                 <button className="bg-white text-[#F6391A] font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
                   {data.ctaButton}
                 </button>

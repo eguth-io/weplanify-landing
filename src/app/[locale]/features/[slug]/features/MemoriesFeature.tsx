@@ -391,7 +391,7 @@ export default function MemoriesFeature({ data }: { data: FeaturePageData }) {
               </p>
 
               <div className="flex justify-center">
-                <Link href="/signup">
+                <Link href="https://app.weplanify.com/register">
                   <PulsatingButton className="font-karla font-bold text-lg px-8 py-4">
                     {t.ctaButton}
                   </PulsatingButton>
@@ -484,7 +484,7 @@ export default function MemoriesFeature({ data }: { data: FeaturePageData }) {
             <span className="text-6xl mb-6 block">📸</span>
             <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-4">{t.cta.title}</h2>
             <p className="text-[#001E13]/70 font-karla mb-8 max-w-lg mx-auto text-lg">{t.cta.subtitle}</p>
-            <Link href="/signup">
+            <Link href="https://app.weplanify.com/register">
               <PulsatingButton className="font-karla font-bold text-lg px-10 py-4">{t.ctaButton}</PulsatingButton>
             </Link>
           </div>
