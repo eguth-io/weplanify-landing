@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import ArticleTOC from "@/components/ArticleTOC";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
@@ -93,12 +94,60 @@ export default async function RoadTripPage({ params }: Props) {
     mainEntity: faqItems.map((item) => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })),
   };
 
+  const howToLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: isEn ? "How to plan a group road trip" : "Comment planifier un road trip de groupe",
+    description: isEn
+      ? "Build the route, agree on the rhythm, settle disagreements with polls, share the driving and leave room for spontaneity."
+      : "Construisez l'itinéraire, alignez-vous sur le rythme, tranchez les désaccords avec des sondages, partagez la conduite et gardez de la marge pour l'imprévu.",
+    totalTime: "PT45M",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: isEn ? "Pick anchor stops and agree on the daily rhythm" : "Choisir les arrêts clés et s'aligner sur le rythme quotidien",
+        text: isEn
+          ? "Start with the must-see stops and build the route around them. Agree on a max of 4-5 hours of driving per day before fatigue kicks in, then connect the anchors with a mix of highway efficiency and scenic value."
+          : "Commencez par les arrêts incontournables et construisez l'itinéraire autour. Mettez-vous d'accord sur un maximum de 4-5 heures de route par jour avant la fatigue, puis reliez les points d'ancrage en mixant efficacité autoroutière et intérêt panoramique.",
+        url: `${SITE_URL}/${locale}${PATHNAME}#planning-route`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: isEn ? "Settle scenic-vs-fast debates with a quick poll" : "Trancher les désaccords route avec un sondage",
+        text: isEn
+          ? "When the group disagrees on stops or which way to drive, run a poll. Each member ranks their top three; the result wins without drama. Particularly useful for the coastal-detour-vs-highway debate."
+          : "Quand le groupe n'est pas d'accord sur les arrêts ou la route à prendre, lancez un sondage. Chacun classe ses trois favoris ; le résultat tranche sans drama. Très utile pour le dilemme route panoramique vs autoroute.",
+        url: `${SITE_URL}/${locale}/features/polls`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: isEn ? "Pre-assign driving shifts and rest breaks" : "Pré-attribuer les relais de conduite et les pauses",
+        text: isEn
+          ? "Assign driving shifts in advance so the same person isn't behind the wheel every morning. Rotate every 2-3 hours and schedule real 20-minute breaks at viewpoints, not 5-minute stops at gas stations."
+          : "Attribuez les relais à l'avance pour qu'une même personne ne se retrouve pas au volant chaque matin. Tournez toutes les 2-3 heures et prévoyez de vraies pauses de 20 minutes à des points de vue, pas 5 minutes en station-service.",
+        url: `${SITE_URL}/${locale}/features/planning`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: isEn ? "Leave at least one hour of buffer per day" : "Garder au moins une heure de marge par jour",
+        text: isEn
+          ? "Road trips never go exactly to plan. Build at least one hour of slack into each day so you can say yes to the unplanned market, the spontaneous detour, the restaurant spotted from the highway."
+          : "Un road trip ne se passe jamais comme prévu. Intégrez au moins une heure de marge par journée pour pouvoir dire oui au marché imprévu, au détour spontané, au resto aperçu depuis l'autoroute.",
+      },
+    ],
+  };
+
   return (
     <>
       <AuthorJsonLd />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }} />
       <Nav navData={navData} navigationData={navigationData} />
 
       <main className="min-h-screen bg-[#FFFBF5]">
@@ -146,9 +195,24 @@ export default async function RoadTripPage({ params }: Props) {
           </div>
         </section>
 
+        {/* ━━━ TABLE OF CONTENTS ━━━ */}
+        <section className="px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <ArticleTOC
+              title={isEn ? "On this page" : "Sur cette page"}
+              items={[
+                { id: "anatomy", label: isEn ? "Anatomy of a group road trip" : "Anatomie d'un road trip de groupe" },
+                { id: "planning-route", label: isEn ? "Planning your route step by step" : "Planifier votre itinéraire étape par étape" },
+                { id: "budget", label: isEn ? "Budget tips for group road trips" : "Astuces budget pour un road trip de groupe" },
+                { id: "faq", label: isEn ? "Frequently asked questions" : "Questions fréquentes" },
+              ]}
+            />
+          </div>
+        </section>
+
         {/* ━━━ ANATOMY OF A ROAD TRIP ━━━ */}
         <FadeIn>
-          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+          <section id="anatomy" className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
             <div className="max-w-[1000px] mx-auto">
               <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
                 {isEn ? "Anatomy of a Group Road Trip" : "Anatomie d'un Road Trip de Groupe"}
@@ -258,7 +322,7 @@ export default async function RoadTripPage({ params }: Props) {
         </section>
 
         {/* ━━━ PLANNING YOUR ROUTE ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="planning-route" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[900px] mx-auto space-y-8">
             <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
               {isEn ? "Planning Your Route: Step by Step" : "Planifier Votre Itinéraire : Étape par Étape"}
@@ -288,7 +352,7 @@ export default async function RoadTripPage({ params }: Props) {
 
         {/* ━━━ BUDGET TIPS ━━━ */}
         <FadeIn>
-          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+          <section id="budget" className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
             <div className="max-w-[900px] mx-auto space-y-8">
               <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
                 {isEn ? "Budget Tips for Group Road Trips" : "Astuces Budget pour un Road Trip de Groupe"}
@@ -313,7 +377,7 @@ export default async function RoadTripPage({ params }: Props) {
         </FadeIn>
 
         {/* ━━━ FAQ ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="faq" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
               {isEn ? "Frequently Asked Questions" : "Questions Fréquemment Posées"}

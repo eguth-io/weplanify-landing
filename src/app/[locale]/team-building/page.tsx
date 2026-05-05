@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import ArticleTOC from "@/components/ArticleTOC";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
@@ -153,8 +154,26 @@ export default async function TeamBuildingPage({ params }: Props) {
           </div>
         </section>
 
+        {/* ━━━ TABLE OF CONTENTS ━━━ */}
+        <section className="px-6 lg:px-12 pb-8">
+          <div className="max-w-[900px] mx-auto">
+            <ArticleTOC
+              title={isEn ? "On this page" : "Sur cette page"}
+              items={[
+                { id: "why-fail", label: isEn ? "Why most team trips miss the mark" : "Pourquoi la plupart des séminaires ratent leur objectif" },
+                { id: "types", label: isEn ? "Types of team trips" : "Types de séminaires" },
+                { id: "pitch", label: isEn ? "How to pitch it to leadership" : "Comment le vendre à la direction" },
+                { id: "weplanify-helps", label: isEn ? "How WePlanify helps" : "Comment WePlanify vous aide" },
+                { id: "timeline", label: isEn ? "Planning timeline" : "Timeline de planification" },
+                { id: "roi", label: isEn ? "Measuring ROI" : "Mesurer le ROI" },
+                { id: "faq", label: isEn ? "Frequently asked questions" : "Questions fréquentes" },
+              ]}
+            />
+          </div>
+        </section>
+
         {/* ━━━ WHY MOST TEAM TRIPS FAIL ━━━ */}
-        <section className="pb-16 lg:pb-24 px-6 lg:px-12">
+        <section id="why-fail" className="pb-16 lg:pb-24 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[900px] mx-auto">
             <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-8">
               {isEn ? "Why Most Team Trips Miss the Mark" : "Pourquoi la Plupart des Séminaires Ratent leur Objectif"}
@@ -181,7 +200,7 @@ export default async function TeamBuildingPage({ params }: Props) {
 
         {/* ━━━ TYPES OF TEAM TRIPS ━━━ */}
         <FadeIn>
-          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+          <section id="types" className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
             <div className="max-w-[1000px] mx-auto">
               <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
                 {isEn ? "Types of Team Trips" : "Types de Séminaires"}
@@ -223,7 +242,7 @@ export default async function TeamBuildingPage({ params }: Props) {
         </FadeIn>
 
         {/* ━━━ HOW TO PITCH IT ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="pitch" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[900px] mx-auto">
             <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10">
               {isEn ? "How to Pitch It to Your Boss" : "Comment Convaincre Votre Direction"}
@@ -255,7 +274,7 @@ export default async function TeamBuildingPage({ params }: Props) {
         </section>
 
         {/* ━━━ HOW WEPLANIFY HELPS ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="weplanify-helps" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[900px] mx-auto">
             <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10 lg:mb-14">
               {isEn ? "How WePlanify Helps Teams" : "Comment WePlanify Aide les Équipes"}
@@ -293,7 +312,7 @@ export default async function TeamBuildingPage({ params }: Props) {
 
         {/* ━━━ PLANNING TIMELINE ━━━ */}
         <FadeIn>
-          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+          <section id="timeline" className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
             <div className="max-w-[900px] mx-auto">
               <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10">
                 {isEn ? "Planning Timeline: From Idea to Offsite" : "Planning : de l'Idée au Séminaire"}
@@ -325,7 +344,7 @@ export default async function TeamBuildingPage({ params }: Props) {
         </FadeIn>
 
         {/* ━━━ MEASURING ROI ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="roi" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[900px] mx-auto">
             <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10">
               {isEn ? "Measuring ROI of Your Team Retreat" : "Mesurer le Retour sur Investissement de Votre Séminaire"}
@@ -351,7 +370,7 @@ export default async function TeamBuildingPage({ params }: Props) {
         </section>
 
         {/* ━━━ FAQ ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="faq" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
               {isEn ? "Frequently Asked Questions" : "Questions Fréquemment Posées"}
