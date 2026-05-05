@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useLocale } from 'next-intl';
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { trackEvent } from "@/lib/tracking";
 
@@ -39,6 +40,7 @@ function buildContent(data: PartnershipFormData): string {
 }
 
 export default function PartnershipForm() {
+  const locale = useLocale();
   const [formData, setFormData] = useState<PartnershipFormData>({
     email: '',
     company: '',
@@ -73,6 +75,7 @@ export default function PartnershipForm() {
           email: formData.email,
           content: buildContent(formData),
           type: 'partnership',
+          locale,
         }),
       });
 
