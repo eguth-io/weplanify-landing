@@ -223,7 +223,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </article>
 
         {/* Articles similaires */}
-        <RelatedArticles articles={article.relatedArticles || []} />
+        <RelatedArticles articles={article.relatedArticles || []} locale={locale} />
 
         <CTASection footer={footerData} ctaData={ctaData} locale={locale} />
 

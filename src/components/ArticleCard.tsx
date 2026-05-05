@@ -7,12 +7,13 @@ import { BlogPost, BlogPostPreview } from "@/sanity/lib/type";
 
 interface ArticleCardProps {
   article: BlogPost | BlogPostPreview;
+  locale?: string;
 }
 
-export default function ArticleCard({ article }: ArticleCardProps) {
+export default function ArticleCard({ article, locale = "en" }: ArticleCardProps) {
   return (
     <Link
-      href={`/blog/${article.slug?.current || '#'}`}
+      href={`/${locale}/blog/${article.slug?.current || '#'}`}
       onClick={() => trackEvent("blog_article_click", { title: article.title })}
       className="group block"
     >
