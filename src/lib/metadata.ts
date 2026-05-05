@@ -7,14 +7,14 @@ const SITE_URL = "https://www.weplanify.com";
 
 const localizedDefaults: Record<string, { title: string; description: string }> = {
   en: {
-    title: "WePlanify — The All-in-One Group Trip Planner",
+    title: "WePlanify — Free Group Trip Planner for Friends",
     description:
-      "Plan group trips together with WePlanify. Collaborative itinerary builder, shared budget tracker, group polls & packing lists — all in one place.",
+      "The collaborative group trip planner: shared itinerary, group polls, shared budget and packing lists. Free, bilingual, built for trips with friends.",
   },
   fr: {
-    title: "WePlanify — Organisez Vos Voyages de Groupe Ensemble",
+    title: "WePlanify — Planificateur gratuit de voyages de groupe",
     description:
-      "Planifiez vos voyages de groupe avec WePlanify. Itinéraire collaboratif, budget partagé, sondages et listes de bagages — tout au même endroit.",
+      "Le planificateur collaboratif pour vos voyages entre amis : itinéraire partagé, sondages, budget commun, listes de bagages. Gratuit, en français.",
   },
 };
 
