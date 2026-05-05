@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useLocale } from 'next-intl';
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { trackEvent } from "@/lib/tracking";
 
@@ -10,6 +11,7 @@ interface ContactFormData {
 }
 
 export default function ContactForm() {
+  const locale = useLocale();
   const [formData, setFormData] = useState<ContactFormData>({
     email: '',
     content: ''
@@ -39,7 +41,8 @@ export default function ContactForm() {
         body: JSON.stringify({
           email: formData.email,
           content: formData.content,
-          type: 'custom'
+          type: 'custom',
+          locale,
         }),
       });
 

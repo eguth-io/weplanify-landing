@@ -1,10 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useLocale } from 'next-intl';
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { trackEvent } from "@/lib/tracking";
 
 export default function LaunchNotificationForm() {
+  const locale = useLocale();
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -31,7 +33,8 @@ export default function LaunchNotificationForm() {
         },
         body: JSON.stringify({
           email: email.trim(),
-          type: 'launch_notification'
+          type: 'launch_notification',
+          locale,
         }),
       });
 
