@@ -3,6 +3,7 @@ import { Raleway, Unbounded, Londrina_Solid, Karla, Nanum_Pen_Script } from "nex
 import "../globals.css";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { Analytics } from "@/components/Analytics";
+import { PageViewTracker } from "@/lib/analytics/page-view-tracker";
 import CookieConsent from "@/components/CookieConsent";
 import StickyCTA from "@/components/StickyCTA";
 import { StructuredData } from "@/components/StructuredData";
@@ -97,6 +98,8 @@ export default async function LocaleLayout({ children, params }: Props) {
         <CookieConsent />
         {/* Analytics Scripts — only loads after consent */}
         <Analytics />
+        {/* Tracks SPA navigations as page_view events */}
+        <PageViewTracker />
       </body>
     </html>
   );

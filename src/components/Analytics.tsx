@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 
-const GTM_ID = "GTM-MJHJL7Q2";
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-MJHJL7Q2";
 
 /**
  * Analytics component — always loads GTM with consent defaults set to "denied".

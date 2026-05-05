@@ -105,7 +105,7 @@ export default function Footer({ footerData }: FooterProps) {
     e.preventDefault();
     // TODO: Integrate with newsletter service
     if (email) {
-      trackEvent("newsletter_subscribe", { email });
+      trackEvent("newsletter_subscribe");
       setIsSubscribed(true);
       setEmail("");
     }
