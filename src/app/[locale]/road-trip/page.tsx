@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import ArticleTOC from "@/components/ArticleTOC";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
@@ -194,9 +195,24 @@ export default async function RoadTripPage({ params }: Props) {
           </div>
         </section>
 
+        {/* ━━━ TABLE OF CONTENTS ━━━ */}
+        <section className="px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <ArticleTOC
+              title={isEn ? "On this page" : "Sur cette page"}
+              items={[
+                { id: "anatomy", label: isEn ? "Anatomy of a group road trip" : "Anatomie d'un road trip de groupe" },
+                { id: "planning-route", label: isEn ? "Planning your route step by step" : "Planifier votre itinéraire étape par étape" },
+                { id: "budget", label: isEn ? "Budget tips for group road trips" : "Astuces budget pour un road trip de groupe" },
+                { id: "faq", label: isEn ? "Frequently asked questions" : "Questions fréquentes" },
+              ]}
+            />
+          </div>
+        </section>
+
         {/* ━━━ ANATOMY OF A ROAD TRIP ━━━ */}
         <FadeIn>
-          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+          <section id="anatomy" className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
             <div className="max-w-[1000px] mx-auto">
               <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
                 {isEn ? "Anatomy of a Group Road Trip" : "Anatomie d'un Road Trip de Groupe"}
@@ -336,7 +352,7 @@ export default async function RoadTripPage({ params }: Props) {
 
         {/* ━━━ BUDGET TIPS ━━━ */}
         <FadeIn>
-          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+          <section id="budget" className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
             <div className="max-w-[900px] mx-auto space-y-8">
               <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
                 {isEn ? "Budget Tips for Group Road Trips" : "Astuces Budget pour un Road Trip de Groupe"}
@@ -361,7 +377,7 @@ export default async function RoadTripPage({ params }: Props) {
         </FadeIn>
 
         {/* ━━━ FAQ ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="faq" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
               {isEn ? "Frequently Asked Questions" : "Questions Fréquemment Posées"}

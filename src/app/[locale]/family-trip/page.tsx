@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import ArticleTOC from "@/components/ArticleTOC";
 import { setRequestLocale } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
@@ -177,9 +178,25 @@ export default async function FamilyTripPage({ params }: Props) {
           </div>
         </section>
 
+        {/* ━━━ TABLE OF CONTENTS ━━━ */}
+        <section className="px-6 lg:px-12">
+          <div className="max-w-[900px] mx-auto">
+            <ArticleTOC
+              title={isEn ? "On this page" : "Sur cette page"}
+              items={[
+                { id: "by-age", label: isEn ? "Planning by age group" : "Planifier par tranche d'âge" },
+                { id: "how-weplanify-helps", label: isEn ? "How WePlanify helps" : "Comment WePlanify vous aide" },
+                { id: "destination", label: isEn ? "Choosing the right destination" : "Choisir la bonne destination" },
+                { id: "budget", label: isEn ? "Budgeting a multi-generational trip" : "Le budget d'un voyage multi-générations" },
+                { id: "faq", label: isEn ? "Frequently asked questions" : "Questions fréquentes" },
+              ]}
+            />
+          </div>
+        </section>
+
         {/* ━━━ PLANNING BY AGE GROUP ━━━ */}
         <FadeIn>
-          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+          <section id="by-age" className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
             <div className="max-w-[1000px] mx-auto">
               <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-12 lg:mb-16">
                 {isEn ? "Planning by Age Group" : "Planifier par Tranche d'Âge"}
@@ -215,7 +232,7 @@ export default async function FamilyTripPage({ params }: Props) {
         </FadeIn>
 
         {/* ━━━ HOW WEPLANIFY HELPS ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="how-weplanify-helps" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[900px] mx-auto">
             <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10 lg:mb-14">
               {isEn ? "How WePlanify Helps Families" : "Comment WePlanify Aide les Familles"}
@@ -263,7 +280,7 @@ export default async function FamilyTripPage({ params }: Props) {
         </section>
 
         {/* ━━━ CHOOSING THE RIGHT DESTINATION ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="destination" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[900px] mx-auto">
             <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10 lg:mb-14">
               {isEn ? "Choosing the Right Destination for Families" : "Choisir la Bonne Destination en Famille"}
@@ -297,7 +314,7 @@ export default async function FamilyTripPage({ params }: Props) {
 
         {/* ━━━ BUDGETING A MULTI-GENERATIONAL TRIP ━━━ */}
         <FadeIn>
-          <section className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12">
+          <section id="budget" className="bg-[#001E13] py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
             <div className="max-w-[900px] mx-auto">
               <h2 className="text-[#FFFBF5] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-10 lg:mb-14">
                 {isEn ? "Budgeting a Multi-Generational Trip" : "Gérer le Budget d'un Voyage Multi-Générationnel"}
@@ -328,7 +345,7 @@ export default async function FamilyTripPage({ params }: Props) {
         </FadeIn>
 
         {/* ━━━ FAQ ━━━ */}
-        <section className="py-20 lg:py-28 px-6 lg:px-12">
+        <section id="faq" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[800px] mx-auto">
             <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] mb-10 text-center">
               {isEn ? "Frequently Asked Questions" : "Questions Fréquemment Posées"}
