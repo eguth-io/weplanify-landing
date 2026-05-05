@@ -1,6 +1,6 @@
 # WePlanify — Strategie SEO Complete
 
-> Document vivant. Derniere mise a jour : 31 mars 2026.
+> Document vivant. Derniere mise a jour : 5 mai 2026.
 
 ---
 
@@ -212,12 +212,12 @@ Creer des pages individuelles pour chaque concurrent :
 
 Chaque page : ~1000 mots, comparaison honnete feature par feature, conclusion orientee.
 
-### Phase 4 — Use cases supplementaires (a faire)
+### Phase 4 — Use cases supplementaires
 
-- `/family-trip` — Voyage en famille
-- `/team-building` — Team building / voyage corporate
-- `/school-trip` — Voyage scolaire
-- `/road-trip` — Road trip entre amis
+- [x] `/family-trip` — Voyage en famille (livre)
+- [x] `/team-building` — Team building / voyage corporate (livre)
+- [x] `/school-trip` — Voyage scolaire (livre 5 mai 2026)
+- [x] `/road-trip` — Road trip entre amis (livre)
 
 ---
 
@@ -238,8 +238,10 @@ Chaque page : ~1000 mots, comparaison honnete feature par feature, conclusion or
 | JSON-LD Organization | OK | Schema global |
 | JSON-LD WebSite | OK | Schema global |
 | JSON-LD SoftwareApplication | OK | Schema global |
-| JSON-LD FAQPage | Partiel | Seulement sur le guide |
-| JSON-LD BreadcrumbList | A faire | Sur toutes les pages profondes |
+| JSON-LD FAQPage | OK | Use cases, comparatifs, /alternatives |
+| JSON-LD BreadcrumbList | OK | 19 pages profondes (mai 2026) |
+| JSON-LD HowTo | Partiel | team-building, road-trip, school-trip — manque family-trip et le guide |
+| JSON-LD Article | OK | Use cases + blog |
 | JSON-LD Article | OK | Sur le guide |
 | Favicon complet | OK | ico, png 16/32, apple-touch, android-chrome |
 | Web App Manifest | OK | PWA-ready |
@@ -356,32 +358,50 @@ Creer un suivi de position pour :
 
 ---
 
-## 8. Actions immediates (par priorite) — Mis a jour 31 mars 2026
+## 8. Actions immediates (par priorite) — Mis a jour 5 mai 2026
 
-### Fait (31 mars 2026)
+### Fait (mars - mai 2026)
 
 - [x] **Configurer key events GA4** — sign_up, generate_lead, cta_click, newsletter_subscribe
 - [x] **Reecrire les title tags + meta descriptions** — 8 pages (EN+FR), suppression "Free/Gratuit", fix brand duplique
 - [x] **Ajouter FAQ + FAQPage schema sur /alternatives/best-group-trip-planner-apps** — 5 questions PAA-targeted
-- [x] **Publier 1er article blog FR** — /blog/meilleures-applications-voyage-groupe (comparatif 6 applis, bilingue)
-- [x] **Enrichir road-trip, family-trip, team-building** — 2 sections supplementaires chacun, +500 mots/page
-- [x] **Maillage interne** — liens croises entre use cases, features, blog, guides dans le contenu + Discover More
-- [x] **Mettre a jour dateModified** sur les 3 use cases (freshness signal)
-- [x] **Ajouter l'article blog au sitemap**
-- [x] **Ajouter le cross-linking** entre les pages + features
-- [x] **JSON-LD FAQPage** — deja present sur trip-with-friends, bachelorette-trip, road-trip, family-trip, team-building
+- [x] **Publier 3 articles blog** — /blog/meilleures-applications-voyage-groupe (FR), /blog/group-trip-budget (EN), /blog/organiser-evjf (FR)
+- [x] **Enrichir road-trip, family-trip, team-building** — sections supplementaires, +500 mots/page
+- [x] **Maillage interne** — liens croises entre use cases, features, blog, guides + Discover More
+- [x] **Pages alternatives dediees** — squadtrip, stippl, tripit, wanderlog, cruzmi (5 pages)
+- [x] **Use cases dans le footer** — road-trip, family-trip, team-building, school-trip
+- [x] **Use case /school-trip** — page complete EN+FR avec HowTo schema (5 mai 2026)
+- [x] **Refresh /alternatives/best-group-trip-planner-apps** — dateModified, "Updated May 5, 2026" stamp
+- [x] **Schema HowTo road-trip** ("Planning Your Route") — rich snippet steps
+- [x] **In-page Table of Contents** sur road-trip, family-trip, team-building, school-trip — section ids + sitelinks
+- [x] **Fix cannibalisation home vs /alternatives** — split keyword ownership : home = "planner/planificateur", /alternatives = "apps compared / applications comparees"
+- [x] **GTM funnel cross-domain landing → app** — events register_view, register_submit, signup_success cote app
+- [x] **Inline pitch teaser** sur tous les CTA partages (CTASection, CTABanner, ReadyBanner) — capture le pitch tot dans le funnel
+- [x] **Fix 16 CTAs /signup brisees** sur les feature pages → app.weplanify.com/register
 
 ### Prochaines etapes (par priorite)
 
-- [ ] **Ajouter les pages use cases dans le footer** — road-trip, family-trip, team-building, bachelorette-trip dans une section "Use cases"
-- [ ] **2eme article blog FR** — "Comment organiser un EVJF : guide complet" — zero concurrence web en FR
-- [ ] **Schema HowTo** sur road-trip ("Planning Your Route") et team-building ("Planning Timeline") — rich snippets supplementaires
-- [ ] **Ajouter des images + alt text optimises** sur les pages use cases — Google Images comme source de trafic
-- [ ] **Ajouter une Table of Contents** sur les pages 2500+ mots (road-trip, family-trip, team-building)
-- [ ] **Outreach backlinks** — se faire lister dans les articles "best group trip planner apps" (TripIt, JoinMyTrip)
-- [ ] **Product Hunt launch** — backlinks dofollow + visibilite
-- [ ] **Guest posting blogs voyage FR** — marche quasi vide
-- [ ] **Soumission AlternativeTo + G2 + Capterra**
+- [ ] **Backlinks** (single biggest leverage manquant)
+  - [ ] Product Hunt launch — backlinks dofollow + visibilite
+  - [ ] AlternativeTo, G2, Capterra, SaaSHub — soumissions directories
+  - [ ] Outreach blogs voyage FR — marche quasi vide
+  - [ ] Se faire lister dans "best group trip planner apps" articles (TripIt, JoinMyTrip)
+- [ ] **Tempo blog x2** — viser 1 article/semaine, pas 2/mois (3 articles publies / 12 mois prevus)
+  - [ ] "Group Trip Budget: How to Split Costs Without Drama" (EN)
+  - [ ] "Checklist bagages voyage groupe (template gratuit)" (FR)
+  - [ ] "How to Choose a Destination When Everyone Wants Something Different" (EN)
+- [ ] **Tracking positions automatise** — cron hebdo SerpAPI sur 15 keywords prio + dashboard
+- [ ] **Schema HowTo sur family-trip et /guides/plan-group-trip** — rich snippets supplementaires
+- [ ] **Pages dynamiques par destination/intent** (programmable SEO) — exploiter le pitch flow pour generer `/[destination]-with-friends`, `/evjf-[ville]`, etc. — vise la longue traine sans concurrence
+- [ ] **JSON-LD HowTo manquant sur family-trip et le guide**
+
+### Snapshot SERP au 5 mai 2026 (live SerpAPI)
+
+**Indexation** : 27 → 61 pages (+126 % depuis mars). Bond significatif.
+
+**Visibilite top-10 sur 9 requetes cibles** : 0/9. Aucune position dans le top 10 EN ou FR malgre le contenu publie. Diagnostic : domain authority bloquante (zero backlinks). La phase backlinks est le facteur limitant principal.
+
+**Regression notable** : `/alternatives/best-group-trip-planner-apps` etait #1 sur "group trip organizer" en mars, plus dans le top 10 en mai. Refresh + dateModified pousses le 5 mai pour tenter de recuperer la position.
 
 ---
 
