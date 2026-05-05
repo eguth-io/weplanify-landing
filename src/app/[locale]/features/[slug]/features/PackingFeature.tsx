@@ -370,7 +370,7 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
               <p className="text-[#001E13]/60 font-karla mb-8 max-w-md mx-auto">
                 {data.ctaSubtitle}
               </p>
-              <Link href="/signup" className="inline-block">
+              <Link href="https://app.weplanify.com/register" className="inline-block">
                 <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
                   {data.ctaButton}
                 </PulsatingButton>

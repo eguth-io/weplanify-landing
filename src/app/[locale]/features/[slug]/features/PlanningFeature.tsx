@@ -162,7 +162,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               <p className="text-lg text-[#001E13]/70 font-karla max-w-xl mx-auto mb-6">
                 {data.heroSubtitle}
               </p>
-              <Link href="/signup" className="inline-block">
+              <Link href="https://app.weplanify.com/register" className="inline-block">
                 <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
                   {data.heroCta}
                 </PulsatingButton>
@@ -432,7 +432,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
                 <p className="text-[#FFFBF5]/70 font-karla mb-8 max-w-lg mx-auto">
                   {data.ctaSubtitle}
                 </p>
-                <Link href="/signup" className="inline-block">
+                <Link href="https://app.weplanify.com/register" className="inline-block">
                   <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
                     {data.ctaButton}
                   </PulsatingButton>
