@@ -759,7 +759,7 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
       url: SITE_URL,
     },
     datePublished: "2026-03-19",
-    dateModified: "2026-03-31",
+    dateModified: "2026-05-05",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${SITE_URL}/${locale}${PATHNAME}`,
@@ -819,6 +819,10 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
             </h1>
             <p className="text-[#001E13]/60 text-sm font-karla mb-6">
               {c.readTime}
+              <span className="mx-2">·</span>
+              <time dateTime="2026-05-05">
+                {locale === "fr" ? "Mis à jour le 5 mai 2026" : "Updated May 5, 2026"}
+              </time>
             </p>
             <p className="text-[#001E13]/80 text-base lg:text-lg font-karla leading-relaxed">
               {c.intro}
