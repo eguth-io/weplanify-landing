@@ -94,6 +94,10 @@ export default function Footer({ footerData }: FooterProps) {
         label: locale === "fr" ? "Team Building" : "Team Building",
         url: `/${locale}/team-building`,
       },
+      {
+        label: locale === "fr" ? "Voyage scolaire" : "School Trip",
+        url: `/${locale}/school-trip`,
+      },
     ],
   };
 
