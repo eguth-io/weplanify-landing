@@ -8,30 +8,23 @@ import { trackEvent } from "@/lib/tracking";
 
 interface StickyCTAProps {
   text: string;
+  href?: string;
   locale?: string;
 }
 
-export default function StickyCTA({ text, locale = "en" }: StickyCTAProps) {
-  const isFr = locale === "fr";
+/**
+ * Mobile bottom-fixed CTA that appears once the user scrolls past the hero.
+ * Single-tap action: navigates straight to the register URL — no email form,
+ * no beta gate.
+ */
+export default function StickyCTA({
+  text,
+  href = "https://app.weplanify.com/register",
+  locale: _locale = "en",
+}: StickyCTAProps) {
   const [show, setShow] = useState(false);
-  const [formOpen, setFormOpen] = useState(false);
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
 
-  useEffect(() => {
-    const saved = localStorage.getItem("beta_request_submitted");
-    if (saved) setStatus("success");
-  }, []);
-
-  // Auto-dismiss success message after 4 seconds
-  useEffect(() => {
-    if (status !== "success") return;
-    const timer = setTimeout(() => setShow(false), 4000);
-    return () => clearTimeout(timer);
-  }, [status]);
-
-  // Watch cookie banner presence and height
   useEffect(() => {
     const measure = () => {
       const banner = document.querySelector("[class*='z-[9999]']") as HTMLElement | null;
@@ -61,30 +54,6 @@ export default function StickyCTA({ text, locale = "en" }: StickyCTAProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email.trim()) return;
-
-    setStatus("submitting");
-    try {
-      const res = await fetch("https://api.weplanify.com/api/beta/request", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email.trim() }),
-      });
-      if (res.ok) {
-        setStatus("success");
-        localStorage.setItem("beta_request_submitted", email.trim());
-        trackEvent("beta_request_submit", { status: "success", location: "sticky_cta" });
-      } else {
-        setStatus("error");
-        trackEvent("beta_request_submit", { status: "error", location: "sticky_cta" });
-      }
-    } catch {
-      setStatus("error");
-    }
-  };
-
   return (
     <AnimatePresence>
       {show && (
@@ -97,81 +66,16 @@ export default function StickyCTA({ text, locale = "en" }: StickyCTAProps) {
           style={{ bottom: cookieBannerHeight > 0 ? cookieBannerHeight : 0 }}
         >
           <div className="pointer-events-auto w-full max-w-sm lg:max-w-xs">
-            <AnimatePresence mode="wait">
-              {status === "success" ? (
-                <motion.div
-                  key="success"
-                  initial={{ scale: 0.9, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  exit={{ y: 20, opacity: 0 }}
-                  className="bg-white rounded-2xl shadow-xl border border-gray-200 p-4 text-center space-y-1"
-                >
-                  <span className="text-lg">🎉</span>
-                  <p className="font-karla font-bold text-sm text-[#001E13]">You&apos;re on the list!</p>
-                  <p className="font-karla text-xs text-[#001E13]/60">We&apos;ll email you when the beta opens.</p>
-                </motion.div>
-              ) : formOpen ? (
-                <motion.form
-                  key="form"
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: 20, opacity: 0 }}
-                  onSubmit={handleSubmit}
-                  className="bg-white rounded-2xl shadow-xl border border-gray-200 p-4 space-y-3"
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="font-karla font-bold text-sm text-[#001E13]">{text}</span>
-                    <button
-                      type="button"
-                      onClick={() => setFormOpen(false)}
-                      className="text-[#001E13]/40 hover:text-[#001E13]/70 transition-colors text-lg leading-none"
-                    >
-                      ✕
-                    </button>
-                  </div>
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm font-karla focus:ring-2 focus:ring-[#F6391A]/30 focus:border-[#F6391A] outline-none transition-all"
-                  />
-                  {status === "error" && (
-                    <p className="text-red-500 text-xs font-karla">Something went wrong. Please try again.</p>
-                  )}
-                  <PulsatingButton
-                    type="submit"
-                    disabled={status === "submitting" || !email.trim()}
-                    className="w-full justify-center font-karla font-bold text-sm py-2.5"
-                  >
-                    {status === "submitting" ? "Sending..." : text}
-                  </PulsatingButton>
-                  <p className="text-[#001E13]/40 text-[10px] font-karla leading-snug text-center">
-                    {isFr
-                      ? <>Votre email sera utilis\u00e9 uniquement pour vous notifier de l&apos;ouverture de la beta. <Link href={`/${locale}/privacy-policy`} className="underline hover:text-[#001E13]/60">Politique de confidentialit\u00e9</Link></>
-                      : <>Your email will only be used to notify you when the beta opens. <Link href={`/${locale}/privacy-policy`} className="underline hover:text-[#001E13]/60">Privacy policy</Link></>}
-                  </p>
-                </motion.form>
-              ) : (
-                <motion.div
-                  key="button"
-                  initial={{ scale: 0.95, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  exit={{ scale: 0.95, opacity: 0 }}
-                >
-                  <PulsatingButton
-                    onClick={() => {
-                      setFormOpen(true);
-                      trackEvent("cta_click", { location: "sticky_cta", label: text });
-                    }}
-                    className="w-full justify-center font-karla font-bold text-base py-3 shadow-lg rounded-full"
-                  >
-                    {text}
-                  </PulsatingButton>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            <Link
+              href={href}
+              rel="nofollow"
+              onClick={() => trackEvent("cta_click", { location: "sticky_cta", label: text })}
+              className="block"
+            >
+              <PulsatingButton className="w-full justify-center font-karla font-bold text-base py-3 shadow-lg rounded-full">
+                {text}
+              </PulsatingButton>
+            </Link>
           </div>
         </motion.div>
       )}
