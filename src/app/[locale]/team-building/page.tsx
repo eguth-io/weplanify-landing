@@ -437,7 +437,7 @@ export default async function TeamBuildingPage({ params }: Props) {
                 {isEn ? "Give your team a voice in the planning — and watch the energy change." : "Donnez à votre équipe une voix dans la planification — et regardez l'énergie changer."}
               </p>
               <div className="flex justify-center">
-                <Link href="https://app.weplanify.com/register">
+                <Link href="https://app.weplanify.com/register?utm_source=landing">
                   <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
                 </Link>
               </div>

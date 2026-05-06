@@ -45,9 +45,9 @@ const PATHNAME = "/alternatives/best-group-trip-planner-apps";
 
 const meta = {
   en: {
-    title: "10 Best Group Trip Planner Apps in 2026 (Honest Review)",
+    title: "10 Best Group Trip Planner Apps 2026: Wanderlog, TripIt & More",
     description:
-      "We tested the top group trip planning apps side by side. See which ones actually work for itineraries, polls, budgets & real-time collaboration.",
+      "We tested 10 group trip planner apps side-by-side: Wanderlog, TripIt, Splitwise, Stippl, SquadTrip & more. Compare prices, features, pros & cons in 2 minutes.",
   },
   fr: {
     title:

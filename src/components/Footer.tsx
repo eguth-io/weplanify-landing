@@ -132,37 +132,24 @@ export default function Footer({ footerData }: FooterProps) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 lg:mb-20">
           {/* Footer Columns */}
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
-            {footerData?.footerColumns?.map((column, index) => {
-              const isCompanyColumn =
-                column.title?.toLowerCase() === "company" ||
-                column.title?.toLowerCase() === "entreprise";
-              return (
-                <div key={index} className="flex flex-col">
-                  <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
-                    {column.title}
-                  </h3>
-                  {column.links?.map((link, linkIndex) => (
-                    <a
-                      key={linkIndex}
-                      href={link.url || "#"}
-                      className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                      target={link.isExternal ? "_blank" : undefined}
-                      rel={link.isExternal ? "noopener noreferrer" : undefined}
-                    >
-                      {link.label}
-                    </a>
-                  ))}
-                  {isCompanyColumn && (
-                    <Link
-                      href={`/${locale}/partnership`}
-                      className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                    >
-                      {locale === "fr" ? "Partenaires" : "Partners"}
-                    </Link>
-                  )}
-                </div>
-              );
-            })}
+            {footerData?.footerColumns?.map((column, index) => (
+              <div key={index} className="flex flex-col">
+                <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
+                  {column.title}
+                </h3>
+                {column.links?.map((link, linkIndex) => (
+                  <a
+                    key={linkIndex}
+                    href={link.url || "#"}
+                    className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+                    target={link.isExternal ? "_blank" : undefined}
+                    rel={link.isExternal ? "noopener noreferrer" : undefined}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            ))}
             {/* Resources column for SEO pages */}
             <div className="flex flex-col">
               <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
@@ -232,7 +219,7 @@ export default function Footer({ footerData }: FooterProps) {
                 </p>
               )}
               {footerData.ctaSection.buttonText && (
-                <Link href={footerData.ctaSection.buttonUrl || "https://app.weplanify.com/register"}>
+                <Link href={footerData.ctaSection.buttonUrl || "https://app.weplanify.com/register?utm_source=landing"}>
                   <button className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-base hover:bg-[#F6391A]/90 transition-colors w-fit">
                     {footerData.ctaSection.buttonText}
                   </button>

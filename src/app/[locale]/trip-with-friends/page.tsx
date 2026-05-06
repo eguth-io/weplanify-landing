@@ -519,7 +519,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
                   </p>
 
                   <div className="flex flex-col gap-2 items-center lg:items-start">
-                    <Link href="https://app.weplanify.com/register">
+                    <Link href="https://app.weplanify.com/register?utm_source=landing">
                       <PulsatingButton className="font-karla font-bold">
                         {t.heroCta}
                       </PulsatingButton>
@@ -835,7 +835,7 @@ export default async function TripWithFriendsPage({ params }: Props) {
                 {t.ctaDescription}
               </p>
               <div className="flex flex-col gap-2 items-center">
-                <Link href="https://app.weplanify.com/register">
+                <Link href="https://app.weplanify.com/register?utm_source=landing">
                   <PulsatingButton className="font-karla font-bold">
                     {t.ctaButton}
                   </PulsatingButton>

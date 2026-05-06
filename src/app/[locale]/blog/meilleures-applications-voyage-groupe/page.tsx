@@ -29,15 +29,15 @@ const PATHNAME_EN = "/blog/best-group-trip-planner-apps-comparison";
 const meta = {
   en: {
     title:
-      "Best Apps to Plan a Trip with Friends — Honest Comparison (2026)",
+      "Top 6 Group Trip Planner Apps 2026 — Honest Comparison",
     description:
-      "We tested the most popular group travel apps. Find out which one to pick based on your needs: itinerary, budget, polls, packing lists.",
+      "We tested 6 group trip planner apps (WePlanify, Wanderlog, TripIt, Splitwise...). Side-by-side comparison: pricing, features, pros & cons. Pick the right one in 2 minutes.",
   },
   fr: {
     title:
-      "Application Voyage Collaboratif — Meilleures Applis Voyage de Groupe (2026)",
+      "Top 6 Applications Voyage Collaboratif 2026 — Comparatif Honnête",
     description:
-      "Comparatif des meilleures applications de voyage collaboratif : WePlanify, Wanderlog, Splitwise et plus. Testées en conditions réelles pour votre groupe.",
+      "On a testé 6 applis voyage collaboratif (WePlanify, Wanderlog, TripIt, Splitwise...). Comparatif détaillé : prix, fonctions, avantages. Choisissez la bonne en 2 min.",
   },
 };
 

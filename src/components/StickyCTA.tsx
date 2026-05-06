@@ -18,7 +18,7 @@ interface StickyCTAProps {
  */
 export default function StickyCTA({
   text,
-  href = "https://app.weplanify.com/register",
+  href = "https://app.weplanify.com/register?utm_source=landing",
 }: StickyCTAProps) {
   const [show, setShow] = useState(false);
   const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
