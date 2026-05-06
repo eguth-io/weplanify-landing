@@ -254,7 +254,7 @@ export default async function AboutPage({ params }: Props) {
                 : "Arrêtez de planifier dans des chats de groupe. Commencez à planifier ensemble."}
             </p>
             <div className="flex justify-center">
-              <Link href="https://app.weplanify.com/register">
+              <Link href="https://app.weplanify.com/register?utm_source=landing">
                 <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-10 py-3.5">
                   {isEn ? "Start planning" : "Commencer"}
                 </PulsatingButton>

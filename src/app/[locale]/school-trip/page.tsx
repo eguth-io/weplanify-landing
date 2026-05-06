@@ -404,7 +404,7 @@ export default async function SchoolTripPage({ params }: Props) {
                 ? "Free for teachers. No app for parents to install. Set up your trip in 5 minutes."
                 : "Gratuit pour les enseignants. Aucune appli à installer pour les parents. Configurez votre voyage en 5 minutes."}
             </p>
-            <Link href="https://app.weplanify.com/register" rel="nofollow">
+            <Link href="https://app.weplanify.com/register?utm_source=landing" rel="nofollow">
               <PulsatingButton className="font-karla font-bold">
                 {isEn ? "Start a school trip" : "Commencer un voyage scolaire"}
               </PulsatingButton>

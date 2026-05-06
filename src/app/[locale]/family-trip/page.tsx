@@ -416,7 +416,7 @@ export default async function FamilyTripPage({ params }: Props) {
                   : "Mettez tout le monde sur la même page — littéralement. Commencez à planifier vos prochaines vacances en famille ensemble."}
               </p>
               <div className="flex justify-center">
-                <Link href="https://app.weplanify.com/register">
+                <Link href="https://app.weplanify.com/register?utm_source=landing">
                   <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
                 </Link>
               </div>

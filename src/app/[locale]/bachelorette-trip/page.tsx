@@ -613,7 +613,7 @@ export default async function BacheloretteTrip({ params }: Props) {
               {t.hero.description}
             </p>
             <div className="flex flex-col items-center gap-2">
-              <Link href="https://app.weplanify.com/register">
+              <Link href="https://app.weplanify.com/register?utm_source=landing">
                 <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
                   {t.hero.cta}
                 </PulsatingButton>
@@ -959,7 +959,7 @@ export default async function BacheloretteTrip({ params }: Props) {
                 {t.cta.description}
               </p>
               <div className="flex justify-center">
-                <Link href="https://app.weplanify.com/register">
+                <Link href="https://app.weplanify.com/register?utm_source=landing">
                   <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
                     {t.cta.button}
                   </PulsatingButton>
