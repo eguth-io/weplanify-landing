@@ -726,12 +726,14 @@ function PolaroidDeckCard({
   const g1 = preview.gallery[0] ?? null;
   const g2 = preview.gallery[1] ?? null;
 
+  const [groupHovered, setGroupHovered] = useState(false);
+  const polaroidState = groupHovered ? 'hovered' : 'rest';
+
   return (
     <div className="grid lg:grid-cols-[minmax(0,460px)_1fr] gap-8 lg:gap-14 items-center text-left">
-      <motion.div
-        initial="rest"
-        animate="rest"
-        whileHover="hovered"
+      <div
+        onMouseEnter={() => setGroupHovered(true)}
+        onMouseLeave={() => setGroupHovered(false)}
         className="relative w-full max-w-[340px] lg:max-w-none mx-auto h-[300px] lg:h-[380px] flex items-center justify-center"
       >
         {g1 && (
@@ -746,6 +748,7 @@ function PolaroidDeckCard({
             hoverX={-100}
             hoverY={-40}
             hoverRotate={-24}
+            animateState={polaroidState}
           />
         )}
         {g2 && (
@@ -760,6 +763,7 @@ function PolaroidDeckCard({
             hoverX={100}
             hoverY={60}
             hoverRotate={22}
+            animateState={polaroidState}
           />
         )}
         {cover && (
@@ -774,6 +778,7 @@ function PolaroidDeckCard({
             withTape
             hoverY={10}
             hoverRotate={-1}
+            animateState={polaroidState}
           />
         )}
         <motion.span
@@ -792,7 +797,7 @@ function PolaroidDeckCard({
         >
           {tags[2]}
         </motion.span>
-      </motion.div>
+      </div>
 
       <div className="text-center lg:text-left w-full">
         <div className="font-nanum-pen text-[#EEF899] text-xl lg:text-2xl mb-0">
@@ -893,6 +898,7 @@ function Polaroid({
   hoverX = 0,
   hoverY = 0,
   hoverRotate,
+  animateState = 'rest',
 }: {
   photo: UnsplashPhoto;
   caption: string;
@@ -905,10 +911,12 @@ function Polaroid({
   hoverX?: number;
   hoverY?: number;
   hoverRotate?: number;
+  animateState?: 'rest' | 'hovered';
 }) {
   return (
     <motion.div
       initial={{ opacity: 0, rotate: 0, y: 30, scale: 0.9 }}
+      animate={animateState}
       variants={{
         rest: { opacity: 1, scale: 1, rotate, x: 0, y: 0 },
         hovered: { opacity: 1, scale: 1, rotate: hoverRotate ?? rotate, x: hoverX, y: hoverY },
