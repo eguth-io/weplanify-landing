@@ -790,18 +790,18 @@ export default async function TripWithFriendsPage({ params }: Props) {
                   </span>
                 </div>
               </Link>
-              <Link href={`/${locale}/bachelorette-trip`} className="group">
+              <Link href={`/${locale}/world-cup-2026-trip-planner`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Organiser un EVJF" : "Plan a Bachelorette Trip"}
+                    {locale === "fr" ? "Coupe du Monde 2026 entre Potes" : "World Cup 2026 Trip Planner"}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Tout ce qu'il faut pour planifier un enterrement de vie de jeune fille inoubliable sans stress."
-                      : "Everything you need to plan an unforgettable bachelorette party trip, stress-free."}
+                      ? "Suivez votre équipe à travers les 16 villes hôtes USA / Canada / Mexique — gratuitement, sans pack agence."
+                      : "Follow your team across the 16 host cities in the USA, Canada and Mexico — free, no agency package."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                    {locale === "fr" ? "Voir le planificateur →" : "Open the planner →"}
                   </span>
                 </div>
               </Link>
