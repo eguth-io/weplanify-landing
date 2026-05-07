@@ -100,7 +100,7 @@ export default function Footer({ footerData }: FooterProps) {
       },
       {
         label: locale === "fr" ? "Coupe du Monde 2026" : "World Cup 2026",
-        url: `/${locale}/world-cup-2026`,
+        url: `/${locale}/world-cup-2026-trip-planner`,
       },
     ],
   };

@@ -16,7 +16,7 @@ import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
 
 type Props = { params: Promise<{ locale: string }> };
 const SITE_URL = "https://www.weplanify.com";
-const PATHNAME = "/world-cup-2026";
+const PATHNAME = "/world-cup-2026-trip-planner";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -27,11 +27,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const metadata = await generateMetadataFromSanity(locale, PATHNAME);
   const isEn = locale === "en";
   const title = isEn
-    ? "Follow Your Team — World Cup 2026 Trip Planner | WePlanify"
-    : "Suivez Votre Équipe — Planificateur de Voyage Coupe du Monde 2026 | WePlanify";
+    ? "World Cup 2026 Trip Planner — Free, for Groups | WePlanify"
+    : "Coupe du Monde 2026 entre Potes — Planificateur Gratuit | WePlanify";
   const description = isEn
-    ? "Plan your World Cup 2026 trip across the USA, Canada and Mexico. Build your route around your team's matches, split costs with your crew, and coordinate logistics across 16 host cities — for free."
-    : "Planifiez votre voyage Coupe du Monde 2026 à travers les USA, le Canada et le Mexique. Construisez votre itinéraire autour des matchs de votre équipe, partagez les frais avec votre bande et coordonnez la logistique entre les 16 villes hôtes — gratuitement.";
+    ? "Free World Cup 2026 trip planner for groups of fans. Build your multi-city route across the USA, Canada and Mexico, split costs by category, and coordinate logistics across the 16 host cities — no agency, no subscription."
+    : "Planificateur gratuit Coupe du Monde 2026 entre potes. Pas une agence, votre plan à vous : itinéraire multi-villes USA / Canada / Mexique, budget partagé par catégorie et logistique des 16 villes hôtes — sans pack tout fait, sans abonnement.";
   const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
   return {
     ...metadata, title, description,
@@ -58,17 +58,52 @@ export default async function WorldCup2026Page({ params }: Props) {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: isEn ? "Home" : "Accueil", item: `${SITE_URL}/${locale}` },
-      { "@type": "ListItem", position: 2, name: isEn ? "World Cup 2026" : "Coupe du Monde 2026", item: `${SITE_URL}/${locale}${PATHNAME}` },
+      { "@type": "ListItem", position: 2, name: isEn ? "World Cup 2026 Trip Planner" : "Planificateur Coupe du Monde 2026", item: `${SITE_URL}/${locale}${PATHNAME}` },
     ],
   };
 
   const articleLd = {
     "@context": "https://schema.org", "@type": "Article",
-    headline: isEn ? "Follow Your Team: World Cup 2026 Trip Planner" : "Suivez Votre Équipe : Planificateur de Voyage Coupe du Monde 2026",
+    headline: isEn ? "World Cup 2026 Trip Planner: Follow Your Team Across 3 Countries" : "Coupe du Monde 2026 entre Potes : Votre Itinéraire, Pas un Pack Agence",
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
     datePublished: "2026-05-07", dateModified: "2026-05-07",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
+  };
+
+  const sportsEventLd = {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    name: isEn ? "FIFA World Cup 2026" : "Coupe du Monde de la FIFA 2026",
+    startDate: "2026-06-11",
+    endDate: "2026-07-19",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    sport: "Association football",
+    organizer: { "@type": "Organization", name: "FIFA", url: "https://www.fifa.com" },
+    location: [
+      { "@type": "Country", name: "United States" },
+      { "@type": "Country", name: "Canada" },
+      { "@type": "Country", name: "Mexico" },
+    ],
+    subEvent: [
+      { "@type": "SportsEvent", name: "World Cup 2026 Atlanta matches", location: { "@type": "Place", name: "Atlanta", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Boston matches", location: { "@type": "Place", name: "Boston", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Dallas matches", location: { "@type": "Place", name: "Dallas", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Houston matches", location: { "@type": "Place", name: "Houston", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Kansas City matches", location: { "@type": "Place", name: "Kansas City", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Los Angeles matches", location: { "@type": "Place", name: "Los Angeles", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Miami matches", location: { "@type": "Place", name: "Miami", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 New York / New Jersey matches", location: { "@type": "Place", name: "East Rutherford", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Philadelphia matches", location: { "@type": "Place", name: "Philadelphia", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 San Francisco Bay Area matches", location: { "@type": "Place", name: "Santa Clara", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Seattle matches", location: { "@type": "Place", name: "Seattle", address: { "@type": "PostalAddress", addressCountry: "US" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Toronto matches", location: { "@type": "Place", name: "Toronto", address: { "@type": "PostalAddress", addressCountry: "CA" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Vancouver matches", location: { "@type": "Place", name: "Vancouver", address: { "@type": "PostalAddress", addressCountry: "CA" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Guadalajara matches", location: { "@type": "Place", name: "Guadalajara", address: { "@type": "PostalAddress", addressCountry: "MX" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Mexico City matches", location: { "@type": "Place", name: "Mexico City", address: { "@type": "PostalAddress", addressCountry: "MX" } } },
+      { "@type": "SportsEvent", name: "World Cup 2026 Monterrey matches", location: { "@type": "Place", name: "Monterrey", address: { "@type": "PostalAddress", addressCountry: "MX" } } },
+    ],
   };
 
   const faqItems = isEn
@@ -150,6 +185,7 @@ export default async function WorldCup2026Page({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsEventLd) }} />
       <Nav navData={navData} navigationData={navigationData} />
 
       <main className="min-h-screen bg-[#FFFBF5]">
@@ -160,21 +196,21 @@ export default async function WorldCup2026Page({ params }: Props) {
             <div className="hidden lg:block mb-8">
               <Breadcrumb items={[
                 { label: isEn ? "Home" : "Accueil", href: `/${locale}` },
-                { label: isEn ? "World Cup 2026" : "Coupe du Monde 2026" },
+                { label: isEn ? "World Cup 2026 Trip Planner" : "Planificateur Coupe du Monde 2026" },
               ]} />
             </div>
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-6">
-              {isEn ? "World Cup 2026" : "Coupe du Monde 2026"}
+              {isEn ? "Free trip planner · World Cup 2026" : "Planificateur gratuit · Coupe du Monde 2026"}
             </p>
             <h1 className="text-[#001E13] text-[38px] lg:text-[72px] font-londrina-solid leading-[1.02] mb-6">
               {isEn
-                ? "Follow Your Team. Across 3 Countries. Without Losing Your Mind."
-                : "Suivez Votre Équipe. À Travers 3 Pays. Sans Perdre la Tête."}
+                ? "World Cup 2026 Trip Planner: Follow Your Team Across 3 Countries"
+                : "Coupe du Monde 2026 entre Potes : Votre Itinéraire, Pas un Pack Agence"}
             </h1>
             <p className="text-[#001E13]/70 text-lg lg:text-[22px] font-karla leading-[1.8] mb-6">
               {isEn
-                ? <>The 2026 World Cup runs across 16 host cities in the USA, Canada and Mexico — 104 matches over 39 days. Following a team isn&apos;t a vacation, it&apos;s a logistics operation. Here&apos;s how to plan it with your crew without spending half the trip on a group chat. If you&apos;re still picking your tools, see our <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">comparison of group travel apps</Link>.</>
-                : <>La Coupe du Monde 2026 se joue dans 16 villes hôtes aux USA, au Canada et au Mexique — 104 matchs sur 39 jours. Suivre une équipe, ce n&apos;est pas des vacances, c&apos;est une opération logistique. Voici comment l&apos;organiser avec sa bande sans passer la moitié du voyage sur la conversation de groupe. Si vous hésitez encore entre les outils, jetez un œil à notre <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">comparatif d&apos;applis de voyage en groupe</Link>.</>}
+                ? <>This is a free World Cup 2026 trip planner for groups of fans — 16 host cities, 3 countries, 104 matches over 39 days. Following a team isn&apos;t a vacation, it&apos;s a logistics operation. Here&apos;s how to build the multi-city route with your crew without spending half the trip on a group chat. If you&apos;re still picking your tools, see our <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">comparison of group travel apps</Link>.</>
+                : <>Voici un planificateur gratuit pour la Coupe du Monde 2026 entre potes — 16 villes hôtes, 3 pays, 104 matchs sur 39 jours. Pas une agence, pas un pack tout fait : c&apos;est votre plan, partagé en temps réel avec votre bande. Voici comment construire l&apos;itinéraire multi-villes sans passer la moitié du voyage sur la conversation de groupe. Si vous hésitez encore entre les outils, jetez un œil à notre <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">comparatif d&apos;applis de voyage en groupe</Link>.</>}
             </p>
             <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "8 min read" : "8 min de lecture"}</p>
             <AuthorBio locale={locale} publishedDate="2026-05-07" modifiedDate="2026-05-07" />
@@ -187,12 +223,12 @@ export default async function WorldCup2026Page({ params }: Props) {
             <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
               {isEn
                 ? "A World Cup with friends sounds like a dream — until you start sketching it on the back of a napkin. Three group-stage matches in three different cities, possibly two different countries. Knockouts you can't book until results land. Visas, ESTAs, eTAs. Inter-city flights that double in price the week of a match. Six fans, six budgets, six tolerance levels for an early flight. Travel agencies sell you a package and call it a day. The fans who really want the trip end up building their own — and they need a plan everyone can see."
-                : "Une Coupe du Monde entre potes, ça fait rêver — jusqu'à ce que vous commenciez à griffonner ça au dos d'une serviette. Trois matchs de poule dans trois villes différentes, peut-être deux pays différents. Des éliminatoires impossibles à réserver avant les résultats. Visas, ESTA, AVE. Vols inter-villes qui doublent de prix la semaine d'un match. Six supporters, six budgets, six tolérances pour un vol matinal. Les agences vous vendent un pack et basta. Les fans qui veulent vraiment vivre le truc finissent par construire leur voyage eux-mêmes — et il leur faut un plan que tout le monde peut voir."}
+                : "Une Coupe du Monde entre potes, ça fait rêver — jusqu'à ce que vous commenciez à griffonner ça au dos d'une serviette. Trois matchs de poule dans trois villes différentes, peut-être deux pays différents. Des éliminatoires impossibles à réserver avant les résultats. Visas, ESTA, AVE. Vols inter-villes qui doublent de prix la semaine d'un match. Six supporters, six budgets, six tolérances pour un vol matinal. Les agences vous vendent un pack à 4 000 € la place et basta. Mais les vrais fans veulent choisir leur ville, leur hôtel, leur rythme — pas suivre un car de touristes. Le DIY revient bien moins cher et beaucoup plus libre — à condition d'avoir un plan que toute la bande peut voir."}
             </p>
             <p className="text-[#001E13] text-lg lg:text-[22px] font-karla font-bold leading-[1.8]">
               {isEn
-                ? "WePlanify is the shared command center for World Cup trips — fixtures, flights, hotels, budget and packing in one place, free, in English or French."
-                : "WePlanify, c'est le poste de commandement partagé pour les voyages Coupe du Monde — matchs, vols, hôtels, budget et bagages au même endroit, gratuitement, en anglais ou en français."}
+                ? "WePlanify is the free shared command center for World Cup 2026 trips — fixtures, flights, hotels, budget and packing in one place, in English or French."
+                : "WePlanify, c'est le poste de commandement partagé et gratuit pour la Coupe du Monde 2026 — matchs, vols, hôtels, budget et bagages au même endroit. L'alternative DIY aux packs d'agence."}
             </p>
           </div>
         </section>
@@ -296,6 +332,45 @@ export default async function WorldCup2026Page({ params }: Props) {
                   <p className="text-[#001E13]/50 font-karla text-xs">{item.country}</p>
                 </div>
               ))}
+            </div>
+
+            {/* Travel matrix between common host city pairs */}
+            <div className="mt-14">
+              <h3 className="text-[#001E13] text-xl lg:text-2xl font-londrina-solid mb-2">
+                {isEn ? "Travel Time Between Host Cities" : "Temps de Trajet entre Villes Hôtes"}
+              </h3>
+              <p className="text-[#001E13]/55 font-karla text-sm lg:text-base mb-6 max-w-[700px]">
+                {isEn
+                  ? "Indicative one-way travel times for the most common fan routes. Flight times exclude airport transit (add ~3h). Use these to size buffer days between matches."
+                  : "Temps de trajet aller indicatifs pour les routes fans les plus courantes. Les temps de vol excluent le transit aéroport (ajoutez ~3h). Utilisez-les pour dimensionner vos jours tampons entre matchs."}
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left font-karla text-sm lg:text-base">
+                  <thead>
+                    <tr className="border-b-2 border-[#001E13]/15">
+                      <th className="py-2 pr-4 text-[#001E13] font-semibold">{isEn ? "Route" : "Trajet"}</th>
+                      <th className="py-2 pr-4 text-[#001E13] font-semibold">{isEn ? "Mode" : "Mode"}</th>
+                      <th className="py-2 pr-4 text-[#001E13] font-semibold">{isEn ? "Time" : "Temps"}</th>
+                      <th className="py-2 text-[#001E13] font-semibold">{isEn ? "Notes" : "Notes"}</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-[#001E13]/75">
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">Boston ↔ NYC</td><td className="py-2 pr-4">{isEn ? "Train (Acela)" : "Train (Acela)"}</td><td className="py-2 pr-4">~3h30</td><td className="py-2">{isEn ? "Door-to-door beats flying" : "Porte-à-porte plus rapide que l'avion"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">NYC ↔ Philadelphia</td><td className="py-2 pr-4">{isEn ? "Train / Bus" : "Train / Bus"}</td><td className="py-2 pr-4">~1h30</td><td className="py-2">{isEn ? "Easiest cluster" : "Cluster le plus simple"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">NYC ↔ Toronto</td><td className="py-2 pr-4">{isEn ? "Flight" : "Vol"}</td><td className="py-2 pr-4">~1h30</td><td className="py-2">{isEn ? "Border crossing — eTA needed" : "Passage de frontière — AVE requis"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">Atlanta ↔ Miami</td><td className="py-2 pr-4">{isEn ? "Flight" : "Vol"}</td><td className="py-2 pr-4">~2h</td><td className="py-2">{isEn ? "Driving is 10h+, not viable" : "10h+ en voiture, pas viable"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">Dallas ↔ Houston</td><td className="py-2 pr-4">{isEn ? "Flight / Drive" : "Vol / Voiture"}</td><td className="py-2 pr-4">~1h / 4h</td><td className="py-2">{isEn ? "Drive if more than 2 fans" : "Voiture rentable à 2+"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">LA ↔ San Francisco</td><td className="py-2 pr-4">{isEn ? "Flight" : "Vol"}</td><td className="py-2 pr-4">~1h30</td><td className="py-2">{isEn ? "Cheapest US route to fly" : "Route US la moins chère en avion"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">LA ↔ Seattle</td><td className="py-2 pr-4">{isEn ? "Flight" : "Vol"}</td><td className="py-2 pr-4">~3h</td><td className="py-2">{isEn ? "Book early — fan demand" : "Réserver tôt — demande fans"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">Seattle ↔ Vancouver</td><td className="py-2 pr-4">{isEn ? "Drive / Train" : "Voiture / Train"}</td><td className="py-2 pr-4">~3h-4h</td><td className="py-2">{isEn ? "Border by land — quickest crossing" : "Frontière terrestre — passage rapide"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">Toronto ↔ Vancouver</td><td className="py-2 pr-4">{isEn ? "Flight" : "Vol"}</td><td className="py-2 pr-4">~5h</td><td className="py-2">{isEn ? "Longest domestic Canada flight" : "Plus long vol intérieur Canada"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">Dallas ↔ Mexico City</td><td className="py-2 pr-4">{isEn ? "Flight" : "Vol"}</td><td className="py-2 pr-4">~2h30</td><td className="py-2">{isEn ? "Best US→MX gateway" : "Meilleure porte d'entrée USA→MX"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">Mexico City ↔ Guadalajara</td><td className="py-2 pr-4">{isEn ? "Flight / Bus" : "Vol / Bus"}</td><td className="py-2 pr-4">~1h30 / 7h</td><td className="py-2">{isEn ? "Bus is night-friendly + cheap" : "Bus de nuit, économique"}</td></tr>
+                    <tr className="border-b border-[#001E13]/8"><td className="py-2 pr-4">Mexico City ↔ Monterrey</td><td className="py-2 pr-4">{isEn ? "Flight" : "Vol"}</td><td className="py-2 pr-4">~1h30</td><td className="py-2">{isEn ? "10+ daily flights" : "10+ vols par jour"}</td></tr>
+                    <tr><td className="py-2 pr-4">LA ↔ Miami</td><td className="py-2 pr-4">{isEn ? "Flight" : "Vol"}</td><td className="py-2 pr-4">~5h</td><td className="py-2">{isEn ? "Coast-to-coast — pricey" : "Coast-to-coast — cher"}</td></tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </section>
