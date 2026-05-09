@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import WorldCupHostCitiesMap from "@/components/WorldCupHostCitiesMapLazy";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
@@ -309,9 +308,6 @@ export default async function WorldCup2026Page({ params }: Props) {
                 ? "Eleven cities in the USA, three in Mexico, two in Canada. Build your route knowing which clusters travel well together — and which require a flight."
                 : "Onze villes aux USA, trois au Mexique, deux au Canada. Construisez votre itinéraire en sachant quelles villes se relient bien — et lesquelles imposent un vol."}
             </p>
-            <div className="mb-10">
-              <WorldCupHostCitiesMap locale={locale} />
-            </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {[
                 { city: "Atlanta", country: "USA" },
