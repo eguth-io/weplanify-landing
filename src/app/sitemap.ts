@@ -42,7 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
 
     // Use case pages for each locale
-    const useCasePages = ["trip-with-friends", "bachelorette-trip", "family-trip", "road-trip", "team-building", "school-trip", "world-cup-2026-trip-planner", "alternatives", "alternatives/wanderlog", "alternatives/squadtrip", "alternatives/tripit", "alternatives/cruzmi", "alternatives/best-group-trip-planner-apps", "alternatives/stippl"];
+    const useCasePages = ["trip-with-friends", "bachelorette-trip", "family-trip", "road-trip", "team-building", "school-trip", "world-cup-2026-trip-planner", "champions-league-final-2026-psg-arsenal", "alternatives", "alternatives/wanderlog", "alternatives/squadtrip", "alternatives/tripit", "alternatives/cruzmi", "alternatives/best-group-trip-planner-apps", "alternatives/stippl"];
     for (const locale of locales) {
       for (const page of useCasePages) {
         entries.push({

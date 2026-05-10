@@ -55,7 +55,7 @@ export default async function HomePage({ params }: Props) {
     );
   }
 
-  const { hero, worldSection, banner, testimonials, readyBanner } = landingPageData;
+  const { hero, worldSection, banner, testimonials } = landingPageData;
 
   return (
     <main className="landing-page" id="main-content">
@@ -255,7 +255,7 @@ export default async function HomePage({ params }: Props) {
       </FadeIn>
 
       {/* Ready Banner */}
-      {readyBanner && <FadeIn><ReadyBanner data={readyBanner} locale={locale} /></FadeIn>}
+      <FadeIn><ReadyBanner locale={locale} /></FadeIn>
 
       {/* Footer */}
       <Footer footerData={footerData} />
