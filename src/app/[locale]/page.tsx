@@ -11,6 +11,7 @@ const FAQSupport = dynamic(() => import("@/components/FAQSupport"));
 const ReadyBanner = dynamic(() => import("@/components/ReadyBanner"));
 const Testimonial = dynamic(() => import("@/components/Testimonial"));
 const TestimonialCarousel = dynamic(() => import("@/components/TestimonialCarousel"));
+const StatsBlock = dynamic(() => import("@/components/StatsBlock"));
 const CTABanner = dynamic(() => import("@/components/CTABanner"));
 const FeatureImageSection = dynamic(() => import("@/components/FeatureImageSection"));
 import Image from "next/image";
@@ -54,7 +55,7 @@ export default async function HomePage({ params }: Props) {
     );
   }
 
-  const { hero, testimonialStats, worldSection, banner, features, travelSteps, testimonials, featureImageSection, ctaBanner, readyBanner, faq } = landingPageData;
+  const { hero, worldSection, banner, features, travelSteps, testimonials, featureImageSection, ctaBanner, readyBanner, faq } = landingPageData;
 
   return (
     <main className="landing-page" id="main-content">
@@ -88,38 +89,7 @@ export default async function HomePage({ params }: Props) {
             <TestimonialCarousel locale={locale} />
 
             {/* Right Block - Stats */}
-            {testimonialStats?.stats && (
-              <div className="bg-[#EEF899] rounded-[24px] lg:rounded-[32px] p-8 lg:p-12">
-                {testimonialStats.statsTitle && (
-                  <h2 className="text-[#001E13] text-base lg:text-lg font-semibold mb-8 lg:mb-10">
-                    {testimonialStats.statsTitle}
-                  </h2>
-                )}
-                <div className="grid grid-cols-2 gap-6 lg:gap-8">
-                  {testimonialStats.stats.map((stat, index) => (
-                    <div key={index}>
-                      <div className="flex items-center gap-1 mb-2">
-                        <p className="text-[#001E13] text-4xl lg:text-5xl xl:text-6xl font-londrina-solid">
-                          {stat.value}
-                        </p>
-                        {stat.showStar && (
-                          <svg
-                            className="w-8 h-8 lg:w-10 lg:h-10"
-                            viewBox="0 0 24 24"
-                            fill="#001E13"
-                          >
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                          </svg>
-                        )}
-                      </div>
-                      <p className="text-[#001E13] text-xs lg:text-sm font-nanum-pen">
-                        {stat.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+            <StatsBlock locale={locale} />
           </div>
         </div>
       </div>
