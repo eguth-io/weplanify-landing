@@ -123,7 +123,7 @@ interface StackingCardsProps {
   locale?: string;
 }
 
-function Card({ card, index }: { card: CardData; index: number }) {
+function Card({ card, index, locale }: { card: CardData; index: number; locale: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(animationRef, { once: false, margin: "-100px" });
@@ -139,9 +139,9 @@ function Card({ card, index }: { card: CardData; index: number }) {
       case "ai-globe":
         return <AiGlobeJourney autoPlay={isInView} />;
       case "live-collaboration":
-        return <LiveCollaboration autoPlay={isInView} />;
+        return <LiveCollaboration autoPlay={isInView} locale={locale} />;
       case "live-voting":
-        return <LiveVoting autoPlay={isInView} />;
+        return <LiveVoting autoPlay={isInView} locale={locale} />;
       default:
         return null;
     }
@@ -249,7 +249,7 @@ export default function StackingCards({ locale = "en" }: StackingCardsProps) {
       </div>
       <div className="relative" style={{ height: `${cards.length * 100}vh` }}>
         {cards.map((card, index) => (
-          <Card key={index} card={card} index={index} />
+          <Card key={index} card={card} index={index} locale={locale} />
         ))}
       </div>
     </div>

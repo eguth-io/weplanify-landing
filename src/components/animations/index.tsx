@@ -287,7 +287,11 @@ export function AiGlobeJourney({ autoPlay = true }: { autoPlay?: boolean }) {
 // ============================================================================
 // 2. LIVE VOTING
 // ============================================================================
-export function LiveVoting({ autoPlay = true }: { autoPlay?: boolean }) {
+export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
+  const lang = locale === 'fr' ? 'fr' : 'en';
+  const t = lang === 'fr'
+    ? { question: 'On va où demain ?', votes: 'votes', live: 'En direct', winner: 'Kyoto gagne !' }
+    : { question: 'Where to go tomorrow?', votes: 'votes', live: 'Live', winner: 'Kyoto wins!' };
   const [votes, setVotes] = useState([0, 0, 0]);
   const [voters, setVoters] = useState<Array<{ id: number; option: number; avatar: string }>>([]);
   const options = ['Kyoto', 'Osaka', 'Nara'];
@@ -317,8 +321,8 @@ export function LiveVoting({ autoPlay = true }: { autoPlay?: boolean }) {
             <Icons.Vote className="w-4 h-4 text-white" />
           </div>
           <div>
-            <div className="text-sm font-semibold text-slate-800">Where to go tomorrow?</div>
-            <div className="text-xs text-slate-500">{total} votes</div>
+            <div className="text-sm font-semibold text-slate-800">{t.question}</div>
+            <div className="text-xs text-slate-500">{total} {t.votes}</div>
           </div>
         </div>
         <div className="flex items-center gap-1.5 rounded-full bg-red-500/10 px-2 py-1">
@@ -327,7 +331,7 @@ export function LiveVoting({ autoPlay = true }: { autoPlay?: boolean }) {
             transition={{ duration: 1, repeat: Infinity }}
             className="w-2 h-2 rounded-full bg-red-500"
           />
-          <span className="text-xs font-medium text-red-600">Live</span>
+          <span className="text-xs font-medium text-red-600">{t.live}</span>
         </div>
       </div>
 
@@ -383,7 +387,7 @@ export function LiveVoting({ autoPlay = true }: { autoPlay?: boolean }) {
             className="absolute bottom-4 left-4 right-4 flex items-center justify-center gap-2 rounded-xl py-2.5 text-sm font-semibold text-white"
             style={{ backgroundColor: colors.poll }}
           >
-            <span>🎉</span> Kyoto gagne !
+            <span>🎉</span> {t.winner}
           </motion.div>
         )}
       </AnimatePresence>
@@ -797,7 +801,21 @@ export function TimelineCalendar({ autoPlay = true }: { autoPlay?: boolean }) {
 // ============================================================================
 // 7. LIVE COLLABORATION
 // ============================================================================
-export function LiveCollaboration({ autoPlay = true }: { autoPlay?: boolean }) {
+export function LiveCollaboration({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
+  const lang = locale === 'fr' ? 'fr' : 'en';
+  const t = lang === 'fr'
+    ? {
+        title: 'Collaboration en direct',
+        typing: (name: string) => `${name} écrit`,
+        added: (name: string, item: string) => `${name} a ajouté « ${item} »`,
+        voted: (name: string, item: string) => `${name} a voté pour ${item}`,
+      }
+    : {
+        title: 'Live Collaboration',
+        typing: (name: string) => `${name} is typing`,
+        added: (name: string, item: string) => `${name} added "${item}"`,
+        voted: (name: string, item: string) => `${name} voted for ${item}`,
+      };
   const users = [
     { name: 'Marie', color: '#FF6B6B', cursor: { x: 30, y: 40 } },
     { name: 'Alex', color: '#4ECDC4', cursor: { x: 70, y: 60 } },
@@ -810,7 +828,7 @@ export function LiveCollaboration({ autoPlay = true }: { autoPlay?: boolean }) {
           <div className="flex w-8 h-8 items-center justify-center rounded-xl" style={{ backgroundColor: colors.participant }}>
             <Icons.Users className="w-4 h-4 text-white" />
           </div>
-          <span className="text-sm font-semibold text-slate-800">Live Collaboration</span>
+          <span className="text-sm font-semibold text-slate-800">{t.title}</span>
         </div>
         <div className="flex -space-x-2">
           {users.map((user, i) => (
@@ -870,7 +888,7 @@ export function LiveCollaboration({ autoPlay = true }: { autoPlay?: boolean }) {
               animate={{ opacity: 1 }}
               className="absolute bottom-2 right-2 flex items-center gap-1.5 rounded-full bg-slate-100 px-2 py-1"
             >
-              <span className="text-[10px] text-slate-500">Marie is typing</span>
+              <span className="text-[10px] text-slate-500">{t.typing(users[0].name)}</span>
               <div className="flex gap-0.5">
                 {[0, 1, 2].map((i) => (
                   <motion.div
@@ -897,7 +915,7 @@ export function LiveCollaboration({ autoPlay = true }: { autoPlay?: boolean }) {
                 className="flex items-center gap-2 text-xs text-slate-500"
               >
                 <div className="w-4 h-4 rounded-full" style={{ backgroundColor: users[0].color }} />
-                <span>Marie added &quot;Senso-ji Temple&quot;</span>
+                <span>{t.added(users[0].name, 'Senso-ji Temple')}</span>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -906,7 +924,7 @@ export function LiveCollaboration({ autoPlay = true }: { autoPlay?: boolean }) {
                 className="flex items-center gap-2 text-xs text-slate-500"
               >
                 <div className="w-4 h-4 rounded-full" style={{ backgroundColor: users[1].color }} />
-                <span>Alex voted for Kyoto</span>
+                <span>{t.voted(users[1].name, 'Kyoto')}</span>
               </motion.div>
             </>
           )}
