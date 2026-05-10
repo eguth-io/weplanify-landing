@@ -3,10 +3,125 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useLocale } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { PackingSuitcase } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
+
+type Lang = "en" | "fr";
+
+const COPY: Record<Lang, {
+  itemsReady: string;
+  readyForTrip: string;
+  categories: { icon: string; title: string; progress: number; items: { name: string; checked: boolean }[] }[];
+  tipTitle: string;
+  tipText: string;
+  packTitle: string;
+  sharedTitle: string;
+  sharedSubtitle: string;
+  bringing: string;
+  people: { avatar: string; name: string; items: string[] }[];
+}> = {
+  fr: {
+    itemsReady: "14 / 20 articles",
+    readyForTrip: "prêts pour le voyage",
+    categories: [
+      {
+        icon: "👕",
+        title: "Vêtements",
+        progress: 80,
+        items: [
+          { name: "T-shirts (x5)", checked: true },
+          { name: "Pantalons (x3)", checked: true },
+          { name: "Veste légère", checked: true },
+          { name: "Maillot de bain", checked: false },
+        ],
+      },
+      {
+        icon: "🔌",
+        title: "Électronique",
+        progress: 60,
+        items: [
+          { name: "Chargeur téléphone", checked: true },
+          { name: "Adaptateur de prise", checked: true },
+          { name: "Batterie externe", checked: false },
+          { name: "Écouteurs", checked: false },
+        ],
+      },
+      {
+        icon: "🧴",
+        title: "Trousse de toilette",
+        progress: 100,
+        items: [
+          { name: "Brosse à dents", checked: true },
+          { name: "Crème solaire", checked: true },
+          { name: "Shampoing", checked: true },
+        ],
+      },
+    ],
+    tipTitle: "Suggestion basée sur votre voyage",
+    tipText: "Il fait en moyenne 28 °C à Lisbonne en avril. Pensez à prendre des vêtements légers et de la crème solaire !",
+    packTitle: "Préparez vos bagages l'esprit tranquille",
+    sharedTitle: "Qui apporte quoi ? Réglé une bonne fois pour toutes",
+    sharedSubtitle: "Évitez les doublons en répartissant qui apporte quoi.",
+    bringing: "Apporte :",
+    people: [
+      { avatar: "👩‍🎨", name: "Marie", items: ["Crème solaire", "Jeu de cartes", "Guide de voyage"] },
+      { avatar: "🧔", name: "Thomas", items: ["Adaptateur de prise", "Enceinte Bluetooth"] },
+      { avatar: "👱‍♀️", name: "Emma", items: ["Trousse de secours", "Jumelles"] },
+    ],
+  },
+  en: {
+    itemsReady: "14 / 20 items",
+    readyForTrip: "ready for the trip",
+    categories: [
+      {
+        icon: "👕",
+        title: "Clothing",
+        progress: 80,
+        items: [
+          { name: "T-shirts (x5)", checked: true },
+          { name: "Pants (x3)", checked: true },
+          { name: "Light jacket", checked: true },
+          { name: "Swimsuit", checked: false },
+        ],
+      },
+      {
+        icon: "🔌",
+        title: "Electronics",
+        progress: 60,
+        items: [
+          { name: "Phone charger", checked: true },
+          { name: "Power adapter", checked: true },
+          { name: "Power bank", checked: false },
+          { name: "Earbuds", checked: false },
+        ],
+      },
+      {
+        icon: "🧴",
+        title: "Toiletries",
+        progress: 100,
+        items: [
+          { name: "Toothbrush", checked: true },
+          { name: "Sunscreen", checked: true },
+          { name: "Shampoo", checked: true },
+        ],
+      },
+    ],
+    tipTitle: "Suggestion based on your trip",
+    tipText: "The average temperature in Lisbon in April is 28°C. Remember to pack light clothing and sunscreen!",
+    packTitle: "Pack your bags with peace of mind",
+    sharedTitle: "Who brings what? Settle it once and for all",
+    sharedSubtitle: "Avoid duplicates by assigning who brings what.",
+    bringing: "Bringing:",
+    people: [
+      { avatar: "👩‍🎨", name: "Marie", items: ["Sunscreen", "Card game", "Travel guide"] },
+      { avatar: "🧔", name: "Thomas", items: ["Power adapter", "Bluetooth speaker"] },
+      { avatar: "👱‍♀️", name: "Emma", items: ["First aid kit", "Binoculars"] },
+    ],
+  },
+};
 
 interface FeaturePageData {
   slug: string;
@@ -131,6 +246,10 @@ function CategorySection({
 }
 
 export default function PackingFeature({ data }: { data: FeaturePageData }) {
+  const locale = useLocale();
+  const lang: Lang = locale === "fr" ? "fr" : "en";
+  const t = COPY[lang];
+
   return (
     <>
       <FeatureJsonLd
@@ -198,8 +317,8 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
                   </span>
                 </div>
                 <div className="text-left">
-                  <p className="font-karla font-semibold text-[#001E13]">14 / 20 items</p>
-                  <p className="text-sm text-[#001E13]/50">ready for the trip</p>
+                  <p className="font-karla font-semibold text-[#001E13]">{t.itemsReady}</p>
+                  <p className="text-sm text-[#001E13]/50">{t.readyForTrip}</p>
                 </div>
               </motion.div>
             </div>
@@ -210,41 +329,16 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
         <section className="px-4 lg:px-8 py-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <CategorySection
-                icon="👕"
-                title="Clothing"
-                progress={80}
-                items={[
-                  { name: "T-shirts (x5)", checked: true },
-                  { name: "Pants (x3)", checked: true },
-                  { name: "Light jacket", checked: true },
-                  { name: "Swimsuit", checked: false },
-                ]}
-                delay={0.1}
-              />
-              <CategorySection
-                icon="🔌"
-                title="Electronics"
-                progress={60}
-                items={[
-                  { name: "Phone charger", checked: true },
-                  { name: "Power adapter", checked: true },
-                  { name: "Power bank", checked: false },
-                  { name: "Earbuds", checked: false },
-                ]}
-                delay={0.2}
-              />
-              <CategorySection
-                icon="🧴"
-                title="Toiletries"
-                progress={100}
-                items={[
-                  { name: "Toothbrush", checked: true },
-                  { name: "Sunscreen", checked: true },
-                  { name: "Shampoo", checked: true },
-                ]}
-                delay={0.3}
-              />
+              {t.categories.map((cat, i) => (
+                <CategorySection
+                  key={i}
+                  icon={cat.icon}
+                  title={cat.title}
+                  progress={cat.progress}
+                  items={cat.items}
+                  delay={(i + 1) * 0.1}
+                />
+              ))}
             </div>
 
             {/* Tip */}
@@ -256,10 +350,8 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
             >
               <span className="text-2xl">💡</span>
               <div>
-                <p className="font-karla font-semibold text-[#001E13]">Suggestion based on your trip</p>
-                <p className="text-sm text-[#001E13]/60">
-                  The average temperature in Lisbon in April is 28 degrees C. Remember to pack light clothing and sunscreen!
-                </p>
+                <p className="font-karla font-semibold text-[#001E13]">{t.tipTitle}</p>
+                <p className="text-sm text-[#001E13]/60">{t.tipText}</p>
               </div>
             </motion.div>
           </div>
@@ -274,7 +366,7 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="text-3xl font-londrina-solid text-[#FFFBF5] text-center mb-8"
             >
-              Pack your bags with peace of mind
+              {t.packTitle}
             </motion.h2>
             <PackingSuitcase autoPlay />
           </div>
@@ -290,19 +382,15 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
               className="text-center mb-12"
             >
               <h2 className="text-3xl lg:text-4xl font-londrina-solid text-[#001E13] mb-4">
-                Who brings what? Settle it once and for all
+                {t.sharedTitle}
               </h2>
               <p className="text-[#001E13]/60 font-karla max-w-xl mx-auto">
-                Avoid duplicates by assigning who brings what
+                {t.sharedSubtitle}
               </p>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              {[
-                { avatar: "👩‍🎨", name: "Marie", items: ["Sunscreen", "Card game", "Travel guide"] },
-                { avatar: "🧔", name: "Thomas", items: ["Power adapter", "Bluetooth speaker"] },
-                { avatar: "👱‍♀️", name: "Emma", items: ["First aid kit", "Binoculars"] },
-              ].map((person, i) => (
+              {t.people.map((person, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -315,7 +403,7 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
                     <span className="text-3xl">{person.avatar}</span>
                     <span className="font-londrina-solid text-xl text-[#001E13]">{person.name}</span>
                   </div>
-                  <p className="text-sm text-[#001E13]/50 mb-3 font-karla">Bringing:</p>
+                  <p className="text-sm text-[#001E13]/50 mb-3 font-karla">{t.bringing}</p>
                   <ul className="space-y-2">
                     {person.items.map((item, j) => (
                       <li key={j} className="flex items-center gap-2 text-sm font-karla text-[#001E13]">

@@ -10,31 +10,58 @@ import { setRequestLocale } from 'next-intl/server';
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import Breadcrumb from "@/components/Breadcrumb";
 
-// Default FAQ data
-const DEFAULT_FAQ_DATA: FAQType = {
-  title: "Frequently asked questions",
-  items: [
-    {
-      question: "What is WePlanify?",
-      answer: "WePlanify is your smart travel assistant that helps you plan trips simply and efficiently."
-    },
-    {
-      question: "How does WePlanify work?",
-      answer: "Simply tell us your destination and preferences, and our AI will create a personalized itinerary tailored to your needs."
-    },
-    {
-      question: "Is WePlanify free?",
-      answer: "We offer a free version with basic features, as well as premium plans for advanced functionality."
-    },
-    {
-      question: "In which countries is WePlanify available?",
-      answer: "WePlanify is available worldwide and supports destinations in over 150 countries."
-    },
-    {
-      question: "How can I contact support?",
-      answer: "You can reach us via our contact page or by email at support@weplanify.com"
-    }
-  ]
+// Localized FAQ defaults (used when Sanity has nothing)
+const FAQ_BY_LOCALE: Record<"fr" | "en", FAQType> = {
+  fr: {
+    title: "Questions fréquentes",
+    items: [
+      {
+        question: "Qu'est-ce que WePlanify ?",
+        answer: "WePlanify est votre assistant de voyage intelligent qui vous aide à planifier vos voyages de groupe simplement et efficacement.",
+      },
+      {
+        question: "Comment fonctionne WePlanify ?",
+        answer: "Indiquez votre destination et vos préférences, notre IA crée un itinéraire personnalisé adapté à votre groupe en quelques secondes.",
+      },
+      {
+        question: "WePlanify est-il gratuit ?",
+        answer: "Nous proposons une version gratuite avec les fonctionnalités essentielles, ainsi que des plans premium pour des options avancées.",
+      },
+      {
+        question: "Dans quels pays WePlanify est-il disponible ?",
+        answer: "WePlanify fonctionne dans le monde entier et couvre des destinations dans plus de 190 pays.",
+      },
+      {
+        question: "Comment contacter le support ?",
+        answer: "Vous pouvez nous joindre via notre page contact ou par email à support@weplanify.com.",
+      },
+    ],
+  },
+  en: {
+    title: "Frequently asked questions",
+    items: [
+      {
+        question: "What is WePlanify?",
+        answer: "WePlanify is your smart travel assistant that helps you plan group trips simply and efficiently.",
+      },
+      {
+        question: "How does WePlanify work?",
+        answer: "Tell us your destination and preferences, and our AI builds a personalized itinerary tailored to your group in seconds.",
+      },
+      {
+        question: "Is WePlanify free?",
+        answer: "We offer a free version with the essentials, plus premium plans for advanced features.",
+      },
+      {
+        question: "In which countries is WePlanify available?",
+        answer: "WePlanify works worldwide and covers destinations in over 190 countries.",
+      },
+      {
+        question: "How can I contact support?",
+        answer: "You can reach us via our contact page or by email at support@weplanify.com.",
+      },
+    ],
+  },
 };
 
 type Props = {
@@ -46,10 +73,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const metadata = await generateMetadataFromSanity(locale, "/faq");
   return {
     ...metadata,
-    title: locale === "fr" ? "Questions Frequentes (FAQ)" : "Frequently Asked Questions (FAQ)",
+    title: locale === "fr" ? "Questions fréquentes (FAQ)" : "Frequently Asked Questions (FAQ)",
     description:
       locale === "fr"
-        ? "Trouvez les reponses a vos questions sur WePlanify. Comment planifier un voyage de groupe, fonctionnalites, tarifs et support."
+        ? "Trouvez les réponses à vos questions sur WePlanify. Comment planifier un voyage de groupe, fonctionnalités, tarifs et support."
         : "Find answers to your questions about WePlanify. How to plan a group trip, features, pricing and support.",
   };
 }
@@ -81,8 +108,25 @@ export default async function FAQPage({ params }: Props) {
     }),
   ]);
 
-  // Use default FAQ data if none is available
-  const faq = faqData || DEFAULT_FAQ_DATA;
+  const lang: "en" | "fr" = locale === "fr" ? "fr" : "en";
+  // Use localized default if Sanity is empty
+  const faq = faqData || FAQ_BY_LOCALE[lang];
+
+  const t = lang === "fr"
+    ? {
+        subtitle: "Trouvez rapidement les réponses à vos questions les plus fréquentes.",
+        empty: "Aucune FAQ disponible pour le moment.",
+        ctaTitle: "Une question reste sans réponse ?",
+        ctaSubtitle: "Notre équipe est là pour vous aider à planifier le voyage parfait.",
+        ctaButton: "Nous contacter",
+      }
+    : {
+        subtitle: "Quickly find answers to your most frequently asked questions.",
+        empty: "No FAQ available at the moment.",
+        ctaTitle: "Still have questions?",
+        ctaSubtitle: "Our team is here to help you plan your perfect trip.",
+        ctaButton: "Contact us",
+      };
 
   const SITE_URL = "https://www.weplanify.com";
 
@@ -138,7 +182,7 @@ export default async function FAQPage({ params }: Props) {
                   FAQ
                 </h1>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                  Quickly find answers to your most frequently asked questions
+                  {t.subtitle}
                 </p>
               </div>
 
@@ -172,22 +216,22 @@ export default async function FAQPage({ params }: Props) {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <p className="text-gray-500 text-lg">No FAQ available at the moment.</p>
+                  <p className="text-gray-500 text-lg">{t.empty}</p>
                 </div>
               )}
 
               {/* CTA */}
               <div className="text-center bg-gradient-to-r from-orange/5 to-orange/10 rounded-3xl p-8 lg:p-12">
                 <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-                  Still have questions?
+                  {t.ctaTitle}
                 </h2>
                 <p className="text-gray-600 mb-6 text-lg">
-                  Our team is here to help you plan your perfect trip
+                  {t.ctaSubtitle}
                 </p>
                 <div className="flex justify-center">
-                  <Link href="/contact">
+                  <Link href={`/${locale}/contact`}>
                     <PulsatingButton className="w-full sm:w-auto">
-                      Contact us
+                      {t.ctaButton}
                     </PulsatingButton>
                   </Link>
                 </div>

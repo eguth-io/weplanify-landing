@@ -3,10 +3,73 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useLocale } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { LiveVoting } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
+
+type Lang = "en" | "fr";
+
+const COPY: Record<Lang, {
+  active: string;
+  votes: string;
+  endsIn: string;
+  endTime: string;
+  livePollQuestion: string;
+  livePollOptions: { option: string; votes: number; voters: string[] }[];
+  livePollTotal: number;
+  multiPollsTitle: string;
+  multiPollsSubtitle: string;
+  completedLabel: string;
+  freeNoCard: string;
+  showcasePolls: { question: string; options: string[]; winner: string; votes: number }[];
+}> = {
+  fr: {
+    active: "Actif",
+    votes: "votes",
+    endsIn: "Se termine",
+    endTime: "dans 2h",
+    livePollQuestion: "On mange où ce soir ? 🍽️",
+    livePollOptions: [
+      { option: "🍕 Pizza", votes: 4, voters: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
+      { option: "🍣 Sushi", votes: 3, voters: ['😊', '👨‍🦱', '🧑‍🦰'] },
+      { option: "🍔 Burger", votes: 2, voters: ['👩‍🦳', '🧑‍🎤'] },
+    ],
+    livePollTotal: 9,
+    multiPollsTitle: "De la destination au restaurant : tout se décide ensemble",
+    multiPollsSubtitle: "Destinations, activités, restaurants, dates… tout se décide ensemble.",
+    completedLabel: "terminé",
+    freeNoCard: "Inscription gratuite. Sans carte bancaire.",
+    showcasePolls: [
+      { question: "Quelle destination ?", options: ["🇪🇸 Espagne", "🇵🇹 Portugal", "🇮🇹 Italie"], winner: "🇵🇹 Portugal", votes: 12 },
+      { question: "Activité du jour 3 ?", options: ["🏄 Surf", "🚶 Randonnée", "🍷 Dégustation"], winner: "🏄 Surf", votes: 8 },
+      { question: "Hôtel ou Airbnb ?", options: ["🏨 Hôtel", "🏠 Airbnb"], winner: "🏠 Airbnb", votes: 10 },
+    ],
+  },
+  en: {
+    active: "Active",
+    votes: "votes",
+    endsIn: "Ends",
+    endTime: "in 2h",
+    livePollQuestion: "Where are we eating tonight? 🍽️",
+    livePollOptions: [
+      { option: "🍕 Pizza", votes: 4, voters: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
+      { option: "🍣 Sushi", votes: 3, voters: ['😊', '👨‍🦱', '🧑‍🦰'] },
+      { option: "🍔 Burger", votes: 2, voters: ['👩‍🦳', '🧑‍🎤'] },
+    ],
+    livePollTotal: 9,
+    multiPollsTitle: "From destination to restaurant: decide everything together",
+    multiPollsSubtitle: "Destinations, activities, restaurants, dates… everything can be decided together.",
+    completedLabel: "completed",
+    freeNoCard: "Free signup. No credit card required.",
+    showcasePolls: [
+      { question: "Which destination?", options: ["🇪🇸 Spain", "🇵🇹 Portugal", "🇮🇹 Italy"], winner: "🇵🇹 Portugal", votes: 12 },
+      { question: "Day 3 activity?", options: ["🏄 Surfing", "🚶 Hiking", "🍷 Wine tasting"], winner: "🏄 Surfing", votes: 8 },
+      { question: "Hotel or Airbnb?", options: ["🏨 Hotel", "🏠 Airbnb"], winner: "🏠 Airbnb", votes: 10 },
+    ],
+  },
+};
 
 interface FeaturePageData {
   slug: string;
@@ -39,7 +102,8 @@ function PollOption({
   voters,
   isWinning = false,
   onVote,
-  delay = 0
+  delay = 0,
+  votesLabel,
 }: {
   option: string;
   votes: number;
@@ -48,6 +112,7 @@ function PollOption({
   isWinning?: boolean;
   onVote: () => void;
   delay?: number;
+  votesLabel: string;
 }) {
   const percentage = totalVotes > 0 ? Math.round((votes / totalVotes) * 100) : 0;
 
@@ -88,7 +153,7 @@ function PollOption({
           <span className={`font-unbounded font-bold text-lg ${isWinning ? 'text-[#F6391A]' : 'text-[#001E13]'}`}>
             {percentage}%
           </span>
-          <p className="text-xs text-[#001E13]/40 font-karla">{votes} votes</p>
+          <p className="text-xs text-[#001E13]/40 font-karla">{votes} {votesLabel}</p>
         </div>
       </div>
     </motion.div>
@@ -101,13 +166,15 @@ function LivePoll({
   options,
   totalVotes,
   endTime,
-  delay = 0
+  delay = 0,
+  labels,
 }: {
   question: string;
   options: { option: string; votes: number; voters: string[] }[];
   totalVotes: number;
   endTime: string;
   delay?: number;
+  labels: { active: string; votes: string; endsIn: string };
 }) {
   const [pollOptions, setPollOptions] = useState(options);
   const [total, setTotal] = useState(totalVotes);
@@ -134,7 +201,7 @@ function LivePoll({
         <h3 className="font-londrina-solid text-xl text-[#001E13]">{question}</h3>
         <span className="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full font-karla flex items-center gap-1">
           <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-          Active
+          {labels.active}
         </span>
       </div>
 
@@ -149,19 +216,24 @@ function LivePoll({
             isWinning={opt.votes === maxVotes && opt.votes > 0}
             onVote={() => handleVote(i)}
             delay={delay + 0.1 + (i * 0.1)}
+            votesLabel={labels.votes}
           />
         ))}
       </div>
 
       <div className="flex items-center justify-between text-sm text-[#001E13]/50 font-karla">
-        <span>{total} votes</span>
-        <span>Ends {endTime}</span>
+        <span>{total} {labels.votes}</span>
+        <span>{labels.endsIn} {endTime}</span>
       </div>
     </motion.div>
   );
 }
 
 export default function PollsFeature({ data }: { data: FeaturePageData }) {
+  const locale = useLocale();
+  const lang: Lang = locale === "fr" ? "fr" : "en";
+  const t = COPY[lang];
+
   return (
     <>
       <FeatureJsonLd
@@ -237,15 +309,12 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                 transition={{ delay: 0.3 }}
               >
                 <LivePoll
-                  question="Where are we eating tonight? 🍽️"
-                  options={[
-                    { option: "🍕 Pizza", votes: 4, voters: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
-                    { option: "🍣 Sushi", votes: 3, voters: ['😊', '👨‍🦱', '🧑‍🦰'] },
-                    { option: "🍔 Burger", votes: 2, voters: ['👩‍🦳', '🧑‍🎤'] },
-                  ]}
-                  totalVotes={9}
-                  endTime="in 2h"
+                  question={t.livePollQuestion}
+                  options={t.livePollOptions}
+                  totalVotes={t.livePollTotal}
+                  endTime={t.endTime}
                   delay={0.4}
+                  labels={{ active: t.active, votes: t.votes, endsIn: t.endsIn }}
                 />
               </motion.div>
             </div>
@@ -255,7 +324,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
         {/* Animation */}
         <section className="px-4 lg:px-8 py-12">
           <div className="max-w-4xl mx-auto">
-            <LiveVoting autoPlay />
+            <LiveVoting autoPlay locale={locale} />
           </div>
         </section>
 
@@ -268,7 +337,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="text-3xl lg:text-4xl font-londrina-solid text-[#FFFBF5] text-center mb-4"
             >
-              From destination to restaurant: decide everything together
+              {t.multiPollsTitle}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
@@ -277,15 +346,11 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
               transition={{ delay: 0.1 }}
               className="text-center text-[#FFFBF5]/60 font-karla mb-12 max-w-xl mx-auto"
             >
-              Destinations, activities, restaurants, dates... everything can be decided together
+              {t.multiPollsSubtitle}
             </motion.p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { question: "Which destination?", options: ["🇪🇸 Spain", "🇵🇹 Portugal", "🇮🇹 Italy"], winner: "🇵🇹 Portugal", votes: 12 },
-                { question: "Day 3 activity?", options: ["🏄 Surfing", "🚶 Hiking", "🍷 Wine tasting"], winner: "🏄 Surfing", votes: 8 },
-                { question: "Hotel or Airbnb?", options: ["🏨 Hotel", "🏠 Airbnb"], winner: "🏠 Airbnb", votes: 10 },
-              ].map((poll, i) => (
+              {t.showcasePolls.map((poll, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -297,15 +362,15 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-londrina-solid text-lg text-[#FFFBF5]">{poll.question}</h3>
                     <span className="px-2 py-1 bg-[#FFFBF5]/10 text-[#FFFBF5]/60 text-xs rounded-full font-karla">
-                      completed
+                      {t.completedLabel}
                     </span>
                   </div>
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-3xl">{poll.winner.split(' ')[0]}</span>
-                    <span className="font-karla text-[#FFFBF5]">{poll.winner.split(' ')[1]}</span>
+                    <span className="font-karla text-[#FFFBF5]">{poll.winner.split(' ').slice(1).join(' ')}</span>
                     <span className="ml-auto text-[#61DBD5] font-bold">✓</span>
                   </div>
-                  <p className="text-sm text-[#FFFBF5]/40 font-karla">{poll.votes} votes</p>
+                  <p className="text-sm text-[#FFFBF5]/40 font-karla">{poll.votes} {t.votes}</p>
                 </motion.div>
               ))}
             </div>
@@ -358,7 +423,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                   {data.ctaButton}
                 </button>
               </Link>
-              <p className="text-sm text-white/60 mt-3 font-karla">Free, no credit card required</p>
+              <p className="text-sm text-white/60 mt-3 font-karla">{t.freeNoCard}</p>
             </motion.div>
           </div>
         </section>

@@ -2,10 +2,66 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { TransportJourney } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
+
+type Lang = "en" | "fr";
+
+const COPY: Record<Lang, {
+  heroTitle: string;
+  heroTitleHighlight: string;
+  heroSubtitle: string;
+  importTitle: string;
+  importSubtitle: string;
+  tickets: { type: "flight" | "train" | "hotel"; code: string; details: string }[];
+  syncTitle: string;
+  syncSubtitle: string;
+  timeline: { time: string; event: string; icon: string; color: string }[];
+}> = {
+  fr: {
+    heroTitle: "Avion, train, voiture :",
+    heroTitleHighlight: "fini les billets perdus",
+    heroSubtitle: "Transférez vos emails de confirmation, on extrait tout automatiquement.",
+    importTitle: "Import automatique",
+    importSubtitle: "Connectez votre email ou scannez vos confirmations — tout s'importe automatiquement.",
+    tickets: [
+      { type: "flight", code: "AF1234", details: "Paris → Lisbonne — 15 avril" },
+      { type: "train", code: "CP5678", details: "Lisbonne → Porto — 18 avril" },
+      { type: "hotel", code: "BOOKING-9012", details: "Hôtel Porto — 4 nuits" },
+    ],
+    syncTitle: "Synchronisé avec votre itinéraire",
+    syncSubtitle: "Vos transports s'intègrent automatiquement à votre programme.",
+    timeline: [
+      { time: "08:45", event: "Vol CDG → LIS", icon: "✈️", color: "#61DBD5" },
+      { time: "10:30", event: "Arrivée à Lisbonne", icon: "📍", color: "#F6391A" },
+      { time: "11:00", event: "Transfert hôtel", icon: "🚕", color: "#EEF899" },
+      { time: "14:00", event: "Check-in Hôtel Alfama", icon: "🏨", color: "#8B5CF6" },
+    ],
+  },
+  en: {
+    heroTitle: "Flights, trains, cars:",
+    heroTitleHighlight: "no more lost tickets",
+    heroSubtitle: "Forward your confirmation emails, we extract everything automatically.",
+    importTitle: "Automatic Import",
+    importSubtitle: "Connect your email or scan your confirmations — everything imports automatically.",
+    tickets: [
+      { type: "flight", code: "AF1234", details: "Paris → Lisbon — April 15" },
+      { type: "train", code: "CP5678", details: "Lisbon → Porto — April 18" },
+      { type: "hotel", code: "BOOKING-9012", details: "Hotel Porto — 4 nights" },
+    ],
+    syncTitle: "Syncs with your itinerary",
+    syncSubtitle: "Transport automatically integrates into your schedule.",
+    timeline: [
+      { time: "08:45", event: "Flight CDG → LIS", icon: "✈️", color: "#61DBD5" },
+      { time: "10:30", event: "Arrive in Lisbon", icon: "📍", color: "#F6391A" },
+      { time: "11:00", event: "Hotel transfer", icon: "🚕", color: "#EEF899" },
+      { time: "14:00", event: "Check-in Hotel Alfama", icon: "🏨", color: "#8B5CF6" },
+    ],
+  },
+};
 
 interface FeaturePageData {
   slug: string;
@@ -139,6 +195,10 @@ function TicketStub({
 }
 
 export default function TransportFeature({ data }: { data: FeaturePageData }) {
+  const locale = useLocale();
+  const lang: Lang = locale === "fr" ? "fr" : "en";
+  const t = COPY[lang];
+
   return (
     <>
       <FeatureJsonLd
@@ -182,9 +242,9 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
                 transition={{ delay: 0.1 }}
                 className="text-4xl lg:text-6xl font-londrina-solid text-[#FFFBF5] mb-6"
               >
-                {data.heroTitle}
+                {t.heroTitle}
                 <br />
-                <span className="text-[#61DBD5]">{data.heroTitleHighlight}</span>
+                <span className="text-[#61DBD5]">{t.heroTitleHighlight}</span>
               </motion.h1>
 
               <motion.p
@@ -193,7 +253,7 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
                 transition={{ delay: 0.2 }}
                 className="text-lg text-[#FFFBF5]/70 font-karla max-w-xl mx-auto mb-8"
               >
-                {data.heroSubtitle}
+                {t.heroSubtitle}
               </motion.p>
 
               <motion.div
@@ -248,17 +308,17 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
               className="text-center mb-12"
             >
               <h2 className="text-3xl lg:text-4xl font-londrina-solid text-[#001E13] mb-4">
-                Automatic Import
+                {t.importTitle}
               </h2>
               <p className="text-[#001E13]/60 font-karla max-w-xl mx-auto">
-                Connect your email or scan your confirmations to import automatically
+                {t.importSubtitle}
               </p>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <TicketStub type="flight" code="AF1234" details="Paris to Lisbon - April 15" delay={0.1} />
-              <TicketStub type="train" code="CP5678" details="Lisbon to Porto - April 18" delay={0.2} />
-              <TicketStub type="hotel" code="BOOKING-9012" details="Hotel Porto - 4 nights" delay={0.3} />
+              {t.tickets.map((ticket, i) => (
+                <TicketStub key={i} type={ticket.type} code={ticket.code} details={ticket.details} delay={(i + 1) * 0.1} />
+              ))}
             </div>
 
             <motion.div
@@ -311,10 +371,10 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
               className="text-center mb-12"
             >
               <h2 className="text-3xl font-londrina-solid text-[#001E13] mb-4">
-                Syncs with your itinerary
+                {t.syncTitle}
               </h2>
               <p className="text-[#001E13]/60 font-karla">
-                Transport automatically integrates into your schedule
+                {t.syncSubtitle}
               </p>
             </motion.div>
 
@@ -326,12 +386,7 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
             >
               {/* Mini timeline */}
               <div className="space-y-4">
-                {[
-                  { time: "08:45", event: "Flight CDG to LIS", icon: "✈️", color: "#61DBD5" },
-                  { time: "10:30", event: "Arrive Lisbon", icon: "📍", color: "#F6391A" },
-                  { time: "11:00", event: "Hotel transfer", icon: "🚕", color: "#EEF899" },
-                  { time: "14:00", event: "Check-in Hotel Alfama", icon: "🏨", color: "#8B5CF6" },
-                ].map((item, i) => (
+                {t.timeline.map((item, i) => (
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, x: -20 }}
