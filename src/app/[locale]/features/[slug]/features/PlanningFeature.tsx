@@ -2,10 +2,101 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { AiGlobeJourney } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
+
+type Lang = "en" | "fr";
+
+const COPY: Record<Lang, {
+  you: string;
+  brand: string;
+  chatBubbles: string[];
+  chips: string[];
+  modesTitle: string;
+  modesSubtitle: string;
+  manualTitle: string;
+  manualSubtitle: string;
+  manualSteps: { title: string; description: string }[];
+  aiTitle: string;
+  aiSubtitle: string;
+  aiUserMsg: string;
+  aiAssistantMsg: string;
+  aiTags: string[];
+  bestOfBoth: { strong: string; rest: string };
+  visualTitle: string;
+  capabilitiesSubtitle: string;
+  freeNoCard: string;
+}> = {
+  fr: {
+    you: "Toi",
+    brand: "Weplanify IA",
+    chatBubbles: [
+      "Je veux passer 2 semaines au Japon en avril avec ma copine. On adore la nature, la cuisine et les temples. Budget moyen.",
+      "Excellent choix ! Le Japon en avril, c'est la saison des cerisiers. Je suggère un itinéraire Tokyo — Kyoto — Osaka avec des étapes à Nara et Hakone. Tu veux voir les options d'hébergement ?",
+      "Oui, plutôt des ryokans traditionnels si possible",
+      "Parfait ! J'ai sélectionné 3 ryokans avec onsen privé à Hakone et 2 machiya rénovées à Kyoto. Je calcule aussi les trajets JR Pass pour optimiser tes déplacements...",
+    ],
+    chips: ["Ajouter une rando", "Cours de sushi", "Voir le JR Pass", "Ajuster le budget"],
+    modesTitle: "Choisis ton style de planification",
+    modesSubtitle: "Que tu préfères tout maîtriser ou laisser l'IA s'en charger, WePlanify s'adapte à toi.",
+    manualTitle: "Planification manuelle",
+    manualSubtitle: "Contrôle total sur chaque détail. Idéal pour les voyageurs qui aiment construire leur propre aventure.",
+    manualSteps: [
+      { title: "Crée ton voyage", description: "Choisis la destination, les dates et invite tes compagnons de voyage." },
+      { title: "Ajoute des étapes", description: "Construis ton itinéraire étape par étape, avec plusieurs stops." },
+      { title: "Remplis chaque journée", description: "Glissez-déposez activités, restaurants et hébergements." },
+      { title: "Collabore", description: "Le groupe ajoute ses idées et vote sur les options." },
+    ],
+    aiTitle: "Planification par IA",
+    aiSubtitle: "Décris ton voyage de rêve et laisse l'IA créer un itinéraire personnalisé en quelques secondes.",
+    aiUserMsg: "2 semaines au Japon, saison des cerisiers, nature et temples",
+    aiAssistantMsg: "Création de ton itinéraire Tokyo → Kyoto → Osaka avec ryokans et visites de temples...",
+    aiTags: ["Itinéraire instantané", "Suggestions intelligentes", "Itinéraire optimisé"],
+    bestOfBoth: {
+      strong: "Le meilleur des deux mondes :",
+      rest: " commence avec l'IA puis ajuste manuellement. Ou planifie à la main et demande à l'IA de combler les vides.",
+    },
+    visualTitle: "L'IA visualise ton voyage",
+    capabilitiesSubtitle: "Plus qu'un simple assistant — une vraie expertise voyage propulsée par l'IA.",
+    freeNoCard: "Inscription gratuite. Sans carte bancaire.",
+  },
+  en: {
+    you: "You",
+    brand: "Weplanify AI",
+    chatBubbles: [
+      "I want to spend 2 weeks in Japan in April with my girlfriend. We love nature, food, and temples. Medium budget.",
+      "Great choice! Japan in April is cherry blossom season. I suggest a Tokyo — Kyoto — Osaka route with stops in Nara and Hakone. Want me to show you accommodation options?",
+      "Yes, preferably traditional ryokans if possible",
+      "Excellent choice! I've selected 3 ryokans with private onsen in Hakone and 2 renovated machiya in Kyoto. I'm also calculating JR Pass routes to optimize your travel...",
+    ],
+    chips: ["Add a hike", "Sushi class", "View JR Pass", "Adjust budget"],
+    modesTitle: "Choose your planning style",
+    modesSubtitle: "Whether you prefer hands-on control or AI-powered convenience, WePlanify adapts to you.",
+    manualTitle: "Manual Planning",
+    manualSubtitle: "Full control over every detail. Perfect for travelers who love crafting their own adventures.",
+    manualSteps: [
+      { title: "Create your trip", description: "Set destination, dates, and invite your travel companions." },
+      { title: "Add destinations", description: "Build your itinerary step by step with multiple stops." },
+      { title: "Fill each day", description: "Drag & drop activities, restaurants, and accommodations." },
+      { title: "Collaborate", description: "Your group adds ideas and votes on options." },
+    ],
+    aiTitle: "AI-Powered Planning",
+    aiSubtitle: "Describe your dream trip and let AI create a personalized itinerary in seconds.",
+    aiUserMsg: "2 weeks in Japan, cherry blossom season, nature and temples",
+    aiAssistantMsg: "Creating your Tokyo → Kyoto → Osaka itinerary with ryokans and temple visits...",
+    aiTags: ["Instant itinerary", "Smart suggestions", "Route optimization"],
+    bestOfBoth: {
+      strong: "Best of both worlds:",
+      rest: " start with AI suggestions, then fine-tune manually. Or plan manually and ask AI to fill gaps.",
+    },
+    visualTitle: "The AI visualizes your journey",
+    capabilitiesSubtitle: "More than just an assistant — real travel expertise powered by AI.",
+    freeNoCard: "Free signup. No credit card required.",
+  },
+};
 
 interface FeaturePageData {
   slug: string;
@@ -34,11 +125,15 @@ interface FeaturePageData {
 function ChatBubble({
   message,
   isAi,
-  delay = 0
+  delay = 0,
+  aiLabel,
+  userLabel,
 }: {
   message: string;
   isAi: boolean;
   delay?: number;
+  aiLabel: string;
+  userLabel: string;
 }) {
   return (
     <motion.div
@@ -59,7 +154,7 @@ function ChatBubble({
           <p className="font-karla text-base lg:text-lg leading-relaxed">{message}</p>
         </div>
         <p className={`text-xs mt-1 text-[#001E13]/50 ${isAi ? 'text-left' : 'text-right'}`}>
-          {isAi ? 'Weplanify AI' : 'You'}
+          {isAi ? aiLabel : userLabel}
         </p>
       </div>
       {isAi && (
@@ -119,6 +214,10 @@ function ManualPlanningCard({
 }
 
 export default function PlanningFeature({ data }: { data: FeaturePageData }) {
+  const locale = useLocale();
+  const lang: Lang = locale === "fr" ? "fr" : "en";
+  const t = COPY[lang];
+
   return (
     <>
       <FeatureJsonLd
@@ -185,26 +284,10 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
 
             {/* Chat conversation demo */}
             <div className="relative z-10 mb-8">
-              <ChatBubble
-                message="I want to spend 2 weeks in Japan in April with my girlfriend. We love nature, food, and temples. Medium budget."
-                isAi={false}
-                delay={0.2}
-              />
-              <ChatBubble
-                message="Great choice! Japan in April is cherry blossom season. I suggest a Tokyo - Kyoto - Osaka route with stops in Nara and Hakone. Want me to show you accommodation options?"
-                isAi={true}
-                delay={0.6}
-              />
-              <ChatBubble
-                message="Yes, preferably traditional ryokans if possible"
-                isAi={false}
-                delay={1}
-              />
-              <ChatBubble
-                message="Excellent choice! I've selected 3 ryokans with private onsen in Hakone and 2 renovated machiya in Kyoto. I'm also calculating JR Pass routes to optimize your travel..."
-                isAi={true}
-                delay={1.4}
-              />
+              <ChatBubble message={t.chatBubbles[0]} isAi={false} delay={0.2} aiLabel={t.brand} userLabel={t.you} />
+              <ChatBubble message={t.chatBubbles[1]} isAi={true} delay={0.6} aiLabel={t.brand} userLabel={t.you} />
+              <ChatBubble message={t.chatBubbles[2]} isAi={false} delay={1} aiLabel={t.brand} userLabel={t.you} />
+              <ChatBubble message={t.chatBubbles[3]} isAi={true} delay={1.4} aiLabel={t.brand} userLabel={t.you} />
             </div>
 
             {/* Suggestion chips */}
@@ -214,10 +297,10 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               transition={{ delay: 1.8 }}
               className="flex flex-wrap gap-3 justify-center mb-12"
             >
-              <SuggestionChip text="Add a hike" delay={1.9} />
-              <SuggestionChip text="Sushi class" delay={2} />
-              <SuggestionChip text="View JR Pass" delay={2.1} />
-              <SuggestionChip text="Adjust budget" delay={2.2} />
+              <SuggestionChip text={t.chips[0]} delay={1.9} />
+              <SuggestionChip text={t.chips[1]} delay={2} />
+              <SuggestionChip text={t.chips[2]} delay={2.1} />
+              <SuggestionChip text={t.chips[3]} delay={2.2} />
             </motion.div>
           </div>
         </section>
@@ -231,7 +314,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] text-center mb-4"
             >
-              Choose your planning style
+              {t.modesTitle}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
@@ -240,7 +323,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               transition={{ delay: 0.2 }}
               className="text-center text-[#001E13]/60 font-karla mb-12 max-w-2xl mx-auto"
             >
-              Whether you prefer hands-on control or AI-powered convenience, WePlanify adapts to you
+              {t.modesSubtitle}
             </motion.p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -253,36 +336,21 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               >
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-3xl">✍️</span>
-                  <h3 className="text-2xl font-londrina-solid text-[#001E13]">Manual Planning</h3>
+                  <h3 className="text-2xl font-londrina-solid text-[#001E13]">{t.manualTitle}</h3>
                 </div>
                 <p className="text-[#001E13]/70 font-karla mb-8">
-                  Full control over every detail. Perfect for travelers who love crafting their own adventures.
+                  {t.manualSubtitle}
                 </p>
                 <div className="space-y-6">
-                  <ManualPlanningCard
-                    step={1}
-                    title="Create your trip"
-                    description="Set destination, dates, and invite your travel companions"
-                    delay={0.1}
-                  />
-                  <ManualPlanningCard
-                    step={2}
-                    title="Add destinations"
-                    description="Build your itinerary step by step with multiple stops"
-                    delay={0.2}
-                  />
-                  <ManualPlanningCard
-                    step={3}
-                    title="Fill each day"
-                    description="Drag & drop activities, restaurants, and accommodations"
-                    delay={0.3}
-                  />
-                  <ManualPlanningCard
-                    step={4}
-                    title="Collaborate"
-                    description="Your group can add ideas and vote on options"
-                    delay={0.4}
-                  />
+                  {t.manualSteps.map((step, i) => (
+                    <ManualPlanningCard
+                      key={i}
+                      step={i + 1}
+                      title={step.title}
+                      description={step.description}
+                      delay={(i + 1) * 0.1}
+                    />
+                  ))}
                 </div>
               </motion.div>
 
@@ -296,18 +364,18 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               >
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-3xl">✨</span>
-                  <h3 className="text-2xl font-londrina-solid text-[#001E13]">AI-Powered Planning</h3>
+                  <h3 className="text-2xl font-londrina-solid text-[#001E13]">{t.aiTitle}</h3>
                 </div>
                 <p className="text-[#001E13]/70 font-karla mb-8">
-                  Describe your dream trip and let AI create a personalized itinerary in seconds.
+                  {t.aiSubtitle}
                 </p>
                 <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 mb-6">
                   <div className="flex items-start gap-3 mb-4">
                     <div className="w-8 h-8 rounded-full bg-[#F6391A] flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-sm">You</span>
+                      <span className="text-white text-sm">{t.you}</span>
                     </div>
                     <div className="bg-[#F6391A]/10 rounded-2xl rounded-tl-sm px-4 py-2">
-                      <p className="text-sm font-karla text-[#001E13]">&ldquo;2 weeks in Japan, cherry blossom season, nature and temples&rdquo;</p>
+                      <p className="text-sm font-karla text-[#001E13]">&ldquo;{t.aiUserMsg}&rdquo;</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -315,14 +383,14 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
                       <span className="text-white text-sm">🤖</span>
                     </div>
                     <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-2 shadow-sm">
-                      <p className="text-sm font-karla text-[#001E13]">Creating your Tokyo → Kyoto → Osaka itinerary with ryokans and temple visits...</p>
+                      <p className="text-sm font-karla text-[#001E13]">{t.aiAssistantMsg}</p>
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white/60 rounded-full text-xs font-karla text-[#001E13]">Instant itinerary</span>
-                  <span className="px-3 py-1 bg-white/60 rounded-full text-xs font-karla text-[#001E13]">Smart suggestions</span>
-                  <span className="px-3 py-1 bg-white/60 rounded-full text-xs font-karla text-[#001E13]">Route optimization</span>
+                  {t.aiTags.map((tag, i) => (
+                    <span key={i} className="px-3 py-1 bg-white/60 rounded-full text-xs font-karla text-[#001E13]">{tag}</span>
+                  ))}
                 </div>
               </motion.div>
             </div>
@@ -337,7 +405,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
             >
               <span className="text-2xl mb-2 block">🔄</span>
               <p className="font-karla text-[#001E13]">
-                <strong>Best of both worlds:</strong> Start with AI suggestions, then fine-tune manually. Or plan manually and ask AI to fill gaps.
+                <strong>{t.bestOfBoth.strong}</strong>{t.bestOfBoth.rest}
               </p>
             </motion.div>
           </div>
@@ -352,7 +420,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="text-3xl lg:text-4xl font-londrina-solid text-[#FFFBF5] text-center mb-8"
             >
-              The AI visualizes your journey
+              {t.visualTitle}
             </motion.h2>
             <div className="rounded-3xl overflow-hidden bg-[#001E13]/50 p-4 min-h-[300px] lg:min-h-[400px]">
               <AiGlobeJourney autoPlay />
@@ -378,7 +446,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               transition={{ delay: 0.2 }}
               className="text-center text-[#001E13]/60 font-karla mb-12 max-w-2xl mx-auto"
             >
-              More than just an assistant - real travel expertise powered by artificial intelligence
+              {t.capabilitiesSubtitle}
             </motion.p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -437,7 +505,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
                     {data.ctaButton}
                   </PulsatingButton>
                 </Link>
-                <p className="text-sm text-[#FFFBF5]/50 mt-3 font-karla">Free, no credit card required</p>
+                <p className="text-sm text-[#FFFBF5]/50 mt-3 font-karla">{t.freeNoCard}</p>
               </div>
             </motion.div>
           </div>

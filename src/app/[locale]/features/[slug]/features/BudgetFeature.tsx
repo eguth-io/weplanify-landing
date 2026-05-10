@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { BudgetSplit } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
@@ -30,18 +31,78 @@ interface FeaturePageData {
   seoDescription: string;
 }
 
+type Lang = "en" | "fr";
+
+const COPY: Record<Lang, {
+  paidBy: string;
+  toReceive: string;
+  owes: string;
+  total: string;
+  pieLabels: { accommodation: string; restaurants: string; activities: string; transport: string };
+  recentExpenses: string;
+  whoOwesWhat: string;
+  toSettleUp: string;
+  freeNoCard: string;
+  expenses: { name: string; amount: number; paidBy: string; participants: string[] }[];
+}> = {
+  fr: {
+    paidBy: "Payé par",
+    toReceive: "à recevoir",
+    owes: "doit",
+    total: "Total",
+    pieLabels: {
+      accommodation: "Hébergement",
+      restaurants: "Restaurants",
+      activities: "Activités",
+      transport: "Transport",
+    },
+    recentExpenses: "Dépenses récentes",
+    whoOwesWhat: "Qui doit quoi",
+    toSettleUp: "Pour solder les comptes :",
+    freeNoCard: "Inscription gratuite. Sans carte bancaire.",
+    expenses: [
+      { name: "Restaurant", amount: 156, paidBy: "Marie", participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
+      { name: "Location voiture", amount: 320, paidBy: "Thomas", participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻', '😊', '👨‍🦱'] },
+      { name: "Billets musée", amount: 84, paidBy: "Emma", participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+    ],
+  },
+  en: {
+    paidBy: "Paid by",
+    toReceive: "to receive",
+    owes: "owes",
+    total: "Total",
+    pieLabels: {
+      accommodation: "Accommodation",
+      restaurants: "Restaurants",
+      activities: "Activities",
+      transport: "Transport",
+    },
+    recentExpenses: "Recent Expenses",
+    whoOwesWhat: "Who Owes What",
+    toSettleUp: "To settle up:",
+    freeNoCard: "Free signup. No credit card required.",
+    expenses: [
+      { name: "Restaurant dinner", amount: 156, paidBy: "Marie", participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
+      { name: "Car rental", amount: 320, paidBy: "Thomas", participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻', '😊', '👨‍🦱'] },
+      { name: "Museum tickets", amount: 84, paidBy: "Emma", participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+    ],
+  },
+};
+
 function ReceiptItem({
   name,
   amount,
   paidBy,
   participants,
-  delay = 0
+  delay = 0,
+  paidByLabel,
 }: {
   name: string;
   amount: number;
   paidBy: string;
   participants: string[];
   delay?: number;
+  paidByLabel: string;
 }) {
   return (
     <motion.div
@@ -54,9 +115,9 @@ function ReceiptItem({
       <div className="flex justify-between items-start mb-2">
         <div>
           <h4 className="font-karla font-semibold text-[#001E13]">{name}</h4>
-          <p className="text-sm text-[#001E13]/50">Paid by {paidBy}</p>
+          <p className="text-sm text-[#001E13]/50">{paidByLabel} {paidBy}</p>
         </div>
-        <span className="font-unbounded font-bold text-[#F6391A]">${amount}</span>
+        <span className="font-unbounded font-bold text-[#F6391A]">{amount}€</span>
       </div>
       <div className="flex gap-1">
         {participants.map((p, i) => (
@@ -71,12 +132,16 @@ function BalanceCard({
   name,
   avatar,
   balance,
-  delay = 0
+  delay = 0,
+  toReceive,
+  owes,
 }: {
   name: string;
   avatar: string;
   balance: number;
   delay?: number;
+  toReceive: string;
+  owes: string;
 }) {
   const isPositive = balance > 0;
   return (
@@ -90,16 +155,20 @@ function BalanceCard({
       <span className="text-3xl mb-2 block">{avatar}</span>
       <p className="font-karla font-semibold text-[#001E13] mb-1">{name}</p>
       <p className={`font-unbounded font-bold text-lg ${isPositive ? 'text-green-600' : 'text-[#F6391A]'}`}>
-        {isPositive ? '+$' : '-$'}{Math.abs(balance)}
+        {isPositive ? '+' : '-'}{Math.abs(balance)}€
       </p>
       <p className="text-xs text-[#001E13]/40 mt-1">
-        {isPositive ? 'to receive' : 'owes'}
+        {isPositive ? toReceive : owes}
       </p>
     </motion.div>
   );
 }
 
 export default function BudgetFeature({ data }: { data: FeaturePageData }) {
+  const locale = useLocale();
+  const lang: Lang = locale === "fr" ? "fr" : "en";
+  const t = COPY[lang];
+
   return (
     <>
       <FeatureJsonLd
@@ -189,17 +258,17 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <p className="font-unbounded font-bold text-3xl text-[#FFFBF5]">$2,450</p>
-                      <p className="text-sm text-[#FFFBF5]/50 font-karla">Total</p>
+                      <p className="font-unbounded font-bold text-3xl text-[#FFFBF5]">2 450€</p>
+                      <p className="text-sm text-[#FFFBF5]/50 font-karla">{t.total}</p>
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-wrap justify-center gap-4 mt-6">
                   {[
-                    { color: '#61DBD5', label: 'Accommodation', pct: '30%' },
-                    { color: '#F6391A', label: 'Restaurants', pct: '24%' },
-                    { color: '#EEF899', label: 'Activities', pct: '20%' },
-                    { color: '#001E13', label: 'Transport', pct: '26%' },
+                    { color: '#61DBD5', label: t.pieLabels.accommodation, pct: '30%' },
+                    { color: '#F6391A', label: t.pieLabels.restaurants, pct: '24%' },
+                    { color: '#EEF899', label: t.pieLabels.activities, pct: '20%' },
+                    { color: '#001E13', label: t.pieLabels.transport, pct: '26%' },
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-2">
                       <div className="w-3 h-3 rounded-full" style={{ backgroundColor: item.color }} />
@@ -230,12 +299,20 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
                   viewport={{ once: true }}
                   className="text-2xl font-londrina-solid text-[#001E13] mb-6"
                 >
-                  Recent Expenses
+                  {t.recentExpenses}
                 </motion.h2>
                 <div className="space-y-4">
-                  <ReceiptItem name="Restaurant dinner" amount={156} paidBy="Marie" participants={['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻']} delay={0.1} />
-                  <ReceiptItem name="Car rental" amount={320} paidBy="Thomas" participants={['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻', '😊', '👨‍🦱']} delay={0.2} />
-                  <ReceiptItem name="Museum tickets" amount={84} paidBy="Emma" participants={['👩‍🎨', '🧔', '👱‍♀️']} delay={0.3} />
+                  {t.expenses.map((expense, i) => (
+                    <ReceiptItem
+                      key={i}
+                      name={expense.name}
+                      amount={expense.amount}
+                      paidBy={expense.paidBy}
+                      participants={expense.participants}
+                      delay={(i + 1) * 0.1}
+                      paidByLabel={t.paidBy}
+                    />
+                  ))}
                 </div>
               </div>
 
@@ -246,15 +323,15 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
                   viewport={{ once: true }}
                   className="text-2xl font-londrina-solid text-[#001E13] mb-6"
                 >
-                  Who Owes What
+                  {t.whoOwesWhat}
                 </motion.h2>
                 <div className="grid grid-cols-3 gap-4">
-                  <BalanceCard name="Marie" avatar="👩‍🎨" balance={-45} delay={0.1} />
-                  <BalanceCard name="Thomas" avatar="🧔" balance={128} delay={0.2} />
-                  <BalanceCard name="Emma" avatar="👱‍♀️" balance={-32} delay={0.3} />
-                  <BalanceCard name="Lucas" avatar="🧑‍💻" balance={-67} delay={0.4} />
-                  <BalanceCard name="Julie" avatar="😊" balance={24} delay={0.5} />
-                  <BalanceCard name="Pierre" avatar="👨‍🦱" balance={-8} delay={0.6} />
+                  <BalanceCard name="Marie" avatar="👩‍🎨" balance={-45} delay={0.1} toReceive={t.toReceive} owes={t.owes} />
+                  <BalanceCard name="Thomas" avatar="🧔" balance={128} delay={0.2} toReceive={t.toReceive} owes={t.owes} />
+                  <BalanceCard name="Emma" avatar="👱‍♀️" balance={-32} delay={0.3} toReceive={t.toReceive} owes={t.owes} />
+                  <BalanceCard name="Lucas" avatar="🧑‍💻" balance={-67} delay={0.4} toReceive={t.toReceive} owes={t.owes} />
+                  <BalanceCard name="Julie" avatar="😊" balance={24} delay={0.5} toReceive={t.toReceive} owes={t.owes} />
+                  <BalanceCard name="Pierre" avatar="👨‍🦱" balance={-8} delay={0.6} toReceive={t.toReceive} owes={t.owes} />
                 </div>
 
                 <motion.div
@@ -264,9 +341,9 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
                   transition={{ delay: 0.5 }}
                   className="mt-6 p-4 bg-[#61DBD5]/10 rounded-xl border border-[#61DBD5]/30"
                 >
-                  <p className="text-sm font-karla text-[#001E13]/70 mb-2">💡 To settle up:</p>
-                  <p className="font-karla text-[#001E13]">Marie → Thomas: <span className="font-bold">$45</span></p>
-                  <p className="font-karla text-[#001E13]">Lucas → Thomas: <span className="font-bold">$67</span></p>
+                  <p className="text-sm font-karla text-[#001E13]/70 mb-2">💡 {t.toSettleUp}</p>
+                  <p className="font-karla text-[#001E13]">Marie → Thomas: <span className="font-bold">45€</span></p>
+                  <p className="font-karla text-[#001E13]">Lucas → Thomas: <span className="font-bold">67€</span></p>
                 </motion.div>
               </div>
             </div>
@@ -315,7 +392,7 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
                   {data.ctaButton}
                 </button>
               </Link>
-              <p className="text-sm text-[#001E13]/50 mt-3 font-karla">Free, no credit card required</p>
+              <p className="text-sm text-[#001E13]/50 mt-3 font-karla">{t.freeNoCard}</p>
             </motion.div>
           </div>
         </section>
