@@ -15,14 +15,14 @@ const STATS: Record<Lang, StatsContent> = {
   fr: {
     title: "Chaque voyage mérite de commencer sereinement",
     items: [
-      { value: "+120", label: "destinations possibles" },
+      { value: "+190", label: "pays couverts" },
       { value: "4,8", label: "Satisfaction des voyageurs", showStar: true },
     ],
   },
   en: {
     title: "Trusted by groups who travel smarter",
     items: [
-      { value: "120+", label: "Destinations worldwide" },
+      { value: "190+", label: "countries covered" },
       { value: "4.8", label: "Traveler satisfaction", showStar: true },
     ],
   },
