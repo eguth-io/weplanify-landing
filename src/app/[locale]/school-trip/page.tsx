@@ -272,7 +272,7 @@ export default async function SchoolTripPage({ params }: Props) {
                       { stop: "La Liste", desc: "Source unique de vérité pour qui part. Chaque participant porte ses restrictions alimentaires, allergies et contacts d'urgence sur son profil. Quand un parent signe l'autorisation, l'effectif se met à jour en direct — pas de tableur à réconcilier.", link: "/features/collaboration" },
                       { stop: "L'Itinéraire", desc: "Jour par jour, heure par heure. Visible par chaque accompagnateur sur son téléphone et par les parents via le lien partagé. Quand le bus a 30 minutes de retard, vous poussez une mise à jour et tout le monde voit — pas de mail groupé, pas de groupe WhatsApp parents à gérer.", link: "/features/planning" },
                       { stop: "Les Décisions", desc: "Certains choix sont imposés par le programme. D'autres sont ouverts : quel musée optionnel, quel resto pour le dîner de groupe, quelle activité du soir. Lancez un sondage avec les accompagnateurs (ou, selon l'âge, les élèves) et le résultat tranche sans débat.", link: "/features/polls" },
-                      { stop: "L'Argent", desc: "Budget par élève, acomptes, solde. Suivez les paiements dans le budget partagé pour toujours savoir qui a payé et qui pas. Pour les options (argent souvenir, suppléments d'activité), laissez les parents cocher — le budget se recalcule automatiquement.", link: "/features/budget" },
+                      { stop: "L'Argent", desc: "Budget par élève, acomptes, solde. Suivez les paiements dans le budget partagé pour toujours savoir qui a payé et qui ne l'a pas encore fait. Pour les options (argent souvenir, suppléments d'activité), laissez les parents cocher — le budget se recalcule automatiquement.", link: "/features/budget" },
                       { stop: "Les Bagages", desc: "Une liste partagée en deux colonnes : obligatoire et recommandé. Les parents la voient dès que vous publiez, deux semaines avant le départ. Ils préparent en conséquence. Moins de mails paniqués la veille, moins d'élèves qui oublient leur passeport au point de rendez-vous.", link: "/features/packing" },
                     ]
                 ).map((item, i) => (
@@ -297,17 +297,17 @@ export default async function SchoolTripPage({ params }: Props) {
         <section id="parent-comms" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
           <div className="max-w-[900px] mx-auto space-y-8">
             <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
-              {isEn ? "Parent Communication That Scales" : "Une Communication Parents Qui Passe à l'Échelle"}
+              {isEn ? "Parent Communication That Scales" : "Communiquer avec les parents sans crouler sous les mails"}
             </h2>
             <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
               {isEn
                 ? "The classic failure mode of school-trip communication: 30 parents, 30 emails with slightly different questions, and you typing variations of the same answer 30 times. The fix isn't 'send fewer emails' — it's 'put the answer somewhere they can find it themselves.' A shared itinerary they can consult anytime, with the meeting point, the daily schedule, the accommodation address and the emergency contact, eliminates 80% of the questions before they're asked."
-                : "Le mode d'échec classique de la communication parents : 30 familles, 30 mails avec des questions légèrement différentes, et vous tapez 30 variantes de la même réponse. Le fix n'est pas 'envoyer moins de mails' mais 'mettre la réponse là où ils peuvent la trouver eux-mêmes'. Un itinéraire partagé qu'ils peuvent consulter à tout moment, avec le point de rendez-vous, le programme quotidien, l'adresse de l'hébergement et le contact d'urgence, élimine 80 % des questions avant qu'elles ne soient posées."}
+                : "Le mode d'échec classique de la communication parents : 30 familles, 30 mails avec des questions légèrement différentes, et vous rédigez 30 variantes de la même réponse. La solution n'est pas « envoyer moins de mails » mais « mettre la réponse là où les parents peuvent la trouver eux-mêmes ». Un itinéraire partagé qu'ils peuvent consulter à tout moment — avec le point de rendez-vous, le programme quotidien, l'adresse de l'hébergement et le contact d'urgence — élimine 80 % des questions avant qu'elles ne soient posées."}
             </p>
             <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
               {isEn
                 ? "For the remaining 20%, the trick is consolidation. Instead of three separate emails (permission, dietary, emergency contact), one form covers all three at signup. Parents fill it once. You see the live data immediately. Trip-day questions go in a single trip-thread, not your personal inbox. Over a 5-day overnight trip, this saves a teacher 4-6 hours of admin time."
-                : "Pour les 20 % restants, l'astuce est la consolidation. Au lieu de trois mails séparés (autorisation, régime, contact d'urgence), un seul formulaire couvre les trois à l'inscription. Les parents remplissent une fois. Vous voyez les données en direct. Les questions du jour J vont dans un fil unique, pas dans votre boîte mail perso. Sur un séjour de 5 jours, ça économise 4 à 6 heures de temps administratif à l'enseignant."}
+                : "Pour les 20 % restants, l'astuce est la consolidation. Au lieu de trois mails séparés (autorisation, régime alimentaire, contact d'urgence), un seul formulaire couvre les trois à l'inscription. Les parents le remplissent une fois. Vous voyez les données en direct. Les questions du jour J vont dans un fil unique, pas dans votre boîte mail personnelle. Sur un séjour de 5 jours, vous économisez 4 à 6 heures de temps administratif."}
             </p>
           </div>
         </section>
