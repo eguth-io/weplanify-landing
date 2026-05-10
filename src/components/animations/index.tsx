@@ -603,7 +603,9 @@ export function BudgetSplit({ autoPlay = true }: { autoPlay?: boolean }) {
 // ============================================================================
 // 5. SWIPE EXPLORER
 // ============================================================================
-export function SwipeExplorer({ autoPlay = true }: { autoPlay?: boolean }) {
+export function SwipeExplorer({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
+  const lang = locale === 'fr' ? 'fr' : 'en';
+  const headerLabel = lang === 'fr' ? 'Découvre Tokyo' : 'Explore Tokyo';
   const places = [
     { name: 'Senso-ji Temple', type: 'activity', rating: 4.9, color: colors.activities },
     { name: 'Ichiran Ramen', type: 'food', rating: 4.8, color: colors.food },
@@ -656,7 +658,7 @@ export function SwipeExplorer({ autoPlay = true }: { autoPlay?: boolean }) {
         <div className="flex w-8 h-8 items-center justify-center rounded-xl" style={{ backgroundColor: colors.primary }}>
           <Icons.MapPin className="w-4 h-4 text-white" />
         </div>
-        <span className="text-sm font-semibold text-slate-800">Explore Tokyo</span>
+        <span className="text-sm font-semibold text-slate-800">{headerLabel}</span>
       </div>
 
       <div className="relative mx-auto h-40 w-full max-w-[200px]">
