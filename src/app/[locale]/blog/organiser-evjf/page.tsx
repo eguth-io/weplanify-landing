@@ -392,19 +392,19 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
 
     tocTitle: "Sommaire",
     toc: [
-      { id: "why-hard", label: "Pourquoi Organiser un EVJF est plus Compliqué qu'il n'y Paraît" },
-      { id: "four-questions", label: "Les Quatre Questions à Trancher en Premier" },
+      { id: "why-hard", label: "Pourquoi organiser un EVJF est plus compliqué qu'il n'y paraît" },
+      { id: "four-questions", label: "Les quatre questions à trancher en premier" },
       { id: "destination-types", label: "Types d'EVJF" },
-      { id: "budget-conversation", label: "La Conversation Budget qu'on Évite Toujours" },
-      { id: "timeline", label: "Planning : de l'Idée à la Soirée" },
-      { id: "activities", label: "Les Activités" },
+      { id: "budget-conversation", label: "La conversation budget qu'on évite toujours" },
+      { id: "timeline", label: "Planning : de l'idée à la soirée" },
+      { id: "activities", label: "Les activités" },
       { id: "faq", label: "FAQ" },
     ],
 
     sections: {
       whyHard: {
         id: "why-hard",
-        title: "Pourquoi Organiser un EVJF est plus Compliqué qu'il n'y Paraît",
+        title: "Pourquoi organiser un EVJF est plus compliqué qu'il n'y paraît",
         paragraphs: [
           "Le problème, ce n'est pas la logistique — c'est les gens. Un EVJF réunit des femmes qui se connaissent parfois à peine, unies uniquement par leur lien avec la future mariée. Il y a la témoin qui a un avis sur tout, la copine d'enfance avec un budget serré qu'elle n'osera jamais mentionner, la collègue qui vient d'apprendre qu'elle est enceinte, et la sœur qui habite dans un autre fuseau horaire et répond toujours au dernier moment aux messages de groupe. Gérer cette dynamique sociale tout en réservant des hôtels, planifiant des activités et relançant les acomptes, c'est épuisant.",
           "S'ajoute à ça la pression de la perfection. Contrairement à un voyage ordinaire entre amies, l'EVJF a un poids émotionnel particulier. C'est censé être un moment marquant, une dernière grande sortie, un souvenir que la mariée chérira toute sa vie. Cette pression transforme les petits imprévus — un restaurant complet, une après-midi pluvieuse, un désaccord sur le dîner — en sources de stress disproportionnées. L'organisatrice porte une charge dont personne ne lui avait parlé.",
@@ -413,7 +413,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
       },
       fourQuestions: {
         id: "four-questions",
-        title: "Les Quatre Questions à Trancher en Premier",
+        title: "Les quatre questions à trancher en premier",
         intro:
           "Avant de regarder un seul hôtel ou une seule activité, répondez à ces quatre questions en groupe. Elles vous économiseront des semaines d'allers-retours.",
         questions: [
@@ -465,7 +465,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
       },
       budgetConversation: {
         id: "budget-conversation",
-        title: "La Conversation Budget qu'on Évite Toujours",
+        title: "La conversation budget qu'on évite toujours",
         paragraphs: [
           "C'est là que les projets d'EVJF s'effondrent. Non par mauvaise volonté — mais parce que les organisatrices reportent souvent la vraie conversation budget jusqu'à ce que les acomptes soient dus et les vols réservés, moment auquel la personne qui ne peut pas vraiment se le permettre se sent coincée et commence à en vouloir aux autres. Avoir cette conversation tôt et explicitement, avant tout engagement, est la chose la plus importante que vous puissiez faire pour la dynamique du groupe.",
           "La future mariée ne paie traditionnellement pas sa part d'hébergement et d'activités — ce coût est réparti entre les participantes. Assurez-vous que tout le monde dans le groupe comprend cela avant que les coûts ne soient finalisés. Pour un voyage à huit où l'hébergement coûte 1 500 €, c'est 215 € par personne et non 187 €. Pas grand-chose en valeur absolue, mais autant être explicite dès le départ.",
@@ -492,7 +492,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
       },
       timeline: {
         id: "timeline",
-        title: "Planning : de l'Idée à la Soirée",
+        title: "Planning : de l'idée à la soirée",
         intro:
           "La planification d'un EVJF a tendance à s'étirer pour remplir le temps qu'on lui donne — ou à se comprimer en une course contre la montre stressante si on s'y prend trop tard. Voici un planning réaliste qui fait avancer les choses sans le chaos.",
         steps: [
@@ -540,7 +540,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
       },
       activities: {
         id: "activities",
-        title: "Les Activités",
+        title: "Les activités",
         paragraphs: [
           "Le meilleur programme d'EVJF a une structure claire mais beaucoup d'espace pour respirer. Les voyages trop chargés ressemblent à des sorties scolaires ; les voyages trop vides dérivent vers des disputes sur quoi faire ensuite. Visez une ou deux activités phares par jour, avec du temps libre intégré pour l'improvisation.",
           "La règle d'or : assurez-vous qu'au moins une activité est choisie parce que la mariée l'aime vraiment, pas parce que c'est un classique de l'EVJF. Si elle déteste les ateliers cocktails mais adore la poterie, réservez la poterie. Si elle n'a jamais aimé les boîtes de nuit mais rêve d'un long dîner festif avec ses personnes préférées, donnez la priorité à ça. La version Instagram de l'EVJF n'est pas l'objectif.",

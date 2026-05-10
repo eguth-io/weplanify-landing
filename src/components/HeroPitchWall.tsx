@@ -308,9 +308,6 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
                     transition={{ duration: 0.35 }}
                     className="w-full"
                   >
-                    <span className="inline-block text-orange bg-[#FFFBF5] px-4 py-1 rounded-full text-sm lg:text-base font-nanum-pen mb-4 shadow-sm">
-                      {hero.affiliateTag || copy.affiliateTag}
-                    </span>
                     <h1 className="text-[#FFFBF5] text-3xl lg:text-5xl xl:text-[56px] font-londrina-solid leading-[1.05] whitespace-pre-line mb-6 drop-shadow-[0_2px_20px_rgba(0,0,0,0.35)]">
                       {copy.h1}
                     </h1>
