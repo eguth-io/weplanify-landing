@@ -8,7 +8,8 @@ import { AiGlobeJourney, LiveCollaboration, LiveVoting } from "@/components/anim
 type Lang = "en" | "fr";
 type AnimationType = "ai-globe" | "live-collaboration" | "live-voting";
 
-const REGISTER_URL = "https://app.weplanify.com/register?utm_source=landing";
+const getRegisterUrl = (locale: string) =>
+  `https://app.weplanify.com/${locale}/register?utm_source=landing`;
 
 interface CardData {
   imagePosition: "left" | "right";
@@ -17,7 +18,6 @@ interface CardData {
   animation: AnimationType;
   backgroundColor: string;
   ctaLabel: string;
-  ctaUrl: string;
   ctaTextColor: string;
   ctaBackgroundColor: string;
   stats?: { value: string; label: string }[];
@@ -40,8 +40,7 @@ const CONTENT: Record<Lang, StackingCardsContent> = {
         animation: "ai-globe",
         backgroundColor: "#FFFFFF",
         ctaLabel: "Démarrer mon voyage",
-        ctaUrl: REGISTER_URL,
-        ctaTextColor: "#FFFFFF",
+                ctaTextColor: "#FFFFFF",
         ctaBackgroundColor: "#E83F28",
         stats: [{ value: "+190", label: "destinations possibles" }],
       },
@@ -53,8 +52,7 @@ const CONTENT: Record<Lang, StackingCardsContent> = {
         animation: "live-voting",
         backgroundColor: "#EEF899",
         ctaLabel: "Lancer un sondage",
-        ctaUrl: REGISTER_URL,
-        ctaTextColor: "#FFFBF5",
+                ctaTextColor: "#FFFBF5",
         ctaBackgroundColor: "#001E13",
         stats: [{ value: "1000+", label: "sondages quotidiens" }],
       },
@@ -66,8 +64,7 @@ const CONTENT: Record<Lang, StackingCardsContent> = {
         animation: "live-collaboration",
         backgroundColor: "#61DBD5",
         ctaLabel: "Explorer maintenant",
-        ctaUrl: REGISTER_URL,
-        ctaTextColor: "#FFFFFF",
+                ctaTextColor: "#FFFFFF",
         ctaBackgroundColor: "#001E13",
         stats: [{ value: "10+", label: "partenaires" }],
       },
@@ -84,8 +81,7 @@ const CONTENT: Record<Lang, StackingCardsContent> = {
         animation: "ai-globe",
         backgroundColor: "#FFFFFF",
         ctaLabel: "Start my journey",
-        ctaUrl: REGISTER_URL,
-        ctaTextColor: "#FFFFFF",
+                ctaTextColor: "#FFFFFF",
         ctaBackgroundColor: "#E83F28",
         stats: [{ value: "190+", label: "Possible destinations" }],
       },
@@ -97,8 +93,7 @@ const CONTENT: Record<Lang, StackingCardsContent> = {
         animation: "live-voting",
         backgroundColor: "#EEF899",
         ctaLabel: "Start a poll",
-        ctaUrl: REGISTER_URL,
-        ctaTextColor: "#FFFBF5",
+                ctaTextColor: "#FFFBF5",
         ctaBackgroundColor: "#001E13",
         stats: [{ value: "1000+", label: "Daily polls" }],
       },
@@ -110,8 +105,7 @@ const CONTENT: Record<Lang, StackingCardsContent> = {
         animation: "live-collaboration",
         backgroundColor: "#61DBD5",
         ctaLabel: "Explore now",
-        ctaUrl: REGISTER_URL,
-        ctaTextColor: "#FFFFFF",
+                ctaTextColor: "#FFFFFF",
         ctaBackgroundColor: "#001E13",
         stats: [{ value: "10+", label: "Partners" }],
       },
@@ -183,7 +177,7 @@ function Card({ card, index, locale }: { card: CardData; index: number; locale: 
           </div>
         )}
 
-        <Link href={card.ctaUrl} rel="nofollow">
+        <Link href={getRegisterUrl(locale)} rel="nofollow">
           <button
             className="px-8 py-3 rounded-full font-karla font-bold text-sm lg:text-base hover:opacity-90 transition-all ring-4"
             style={{

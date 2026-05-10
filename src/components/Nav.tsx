@@ -35,7 +35,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
     if (link.linkType === "anchor") {
       return `/#${link.anchorId}`;
     }
-    return link.url || "https://app.weplanify.com/register?utm_source=landing";
+    return link.url || `https://app.weplanify.com/${locale}/register?utm_source=landing`;
   };
 
   // Handle anchor link clicks with smooth scroll
@@ -139,7 +139,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
             <Link href={navigationData?.connectionButton?.url || nav.connexionLink || "/login"} className="text-sm font-[500]" rel="nofollow">
               {navigationData?.connectionButton?.text || "Login"}
             </Link>
-            <Link href="https://app.weplanify.com/register?utm_source=landing" rel="nofollow">
+            <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} rel="nofollow">
               <PulsatingButton>{locale === "fr" ? "S'inscrire" : "Register"}</PulsatingButton>
             </Link>
           </div>
@@ -250,7 +250,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
             >
               {navigationData?.connectionButton?.text || "Login"}
             </Link>
-            <Link href="https://app.weplanify.com/register?utm_source=landing" onClick={closeMenu} className="block" rel="nofollow">
+            <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} onClick={closeMenu} className="block" rel="nofollow">
               <PulsatingButton className="w-full justify-center">{locale === "fr" ? "S'inscrire" : "Register"}</PulsatingButton>
             </Link>
           </div>

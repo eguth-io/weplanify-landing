@@ -594,7 +594,7 @@ export default async function StipplComparisonPage({ params }: Props) {
         {/* Mid-page CTA                                                   */}
         {/* -------------------------------------------------------------- */}
         <div className="text-center py-8">
-          <Link href="https://app.weplanify.com/register?utm_source=landing" className="text-[#F6391A] font-karla font-bold hover:underline">
+          <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="text-[#F6391A] font-karla font-bold hover:underline">
             {locale === "fr" ? "Essayer WePlanify gratuitement →" : "Try WePlanify free →"}
           </Link>
         </div>

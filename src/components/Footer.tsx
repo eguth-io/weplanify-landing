@@ -223,7 +223,7 @@ export default function Footer({ footerData }: FooterProps) {
                 </p>
               )}
               {footerData.ctaSection.buttonText && (
-                <Link href={footerData.ctaSection.buttonUrl || "https://app.weplanify.com/register?utm_source=landing"}>
+                <Link href={footerData.ctaSection.buttonUrl || `https://app.weplanify.com/${locale}/register?utm_source=landing`}>
                   <button className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-base hover:bg-[#F6391A]/90 transition-colors w-fit">
                     {footerData.ctaSection.buttonText}
                   </button>

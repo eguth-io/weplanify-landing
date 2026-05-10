@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { PulsatingButtonWhite } from "@/components/magicui/pulsating-button-white-black";
 import { CtaType, Organization } from "@/sanity/lib/type";
 import Org from "@/components/Org";
@@ -10,6 +13,8 @@ interface OrganizationSectionProps {
 }
 
 export default function OrganizationSection({ organization, ctaData }: OrganizationSectionProps) {
+  const pathname = usePathname();
+  const locale = pathname?.split("/")[1] === "fr" ? "fr" : "en";
   return (
     <section id="fonctionnement" className="relative pb-28 flex flex-col items-center justify-center bg-[#4D9F79]">
       <Image
@@ -59,7 +64,7 @@ export default function OrganizationSection({ organization, ctaData }: Organizat
       <Org data={organization.featuresList} />
       <div className="flex flex-col items-center justify-center mt-10 lg:mt-4">
         <div className="flex gap-6 items-center flex-col lg:flex-row w-full">
-          <Link href={ctaData.buttonUrl || 'https://app.weplanify.com/register?utm_source=landing'} className={"w-full"} rel="nofollow">
+          <Link href={ctaData.buttonUrl || `https://app.weplanify.com/${locale}/register?utm_source=landing`} className={"w-full"} rel="nofollow">
             <PulsatingButtonWhite className="w-4/5 mx-auto lg:w-full text-nowrap">
               {ctaData.buttonText}
             </PulsatingButtonWhite>

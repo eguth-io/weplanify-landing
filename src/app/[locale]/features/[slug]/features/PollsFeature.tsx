@@ -293,7 +293,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                 >
-                  <Link href="https://app.weplanify.com/register?utm_source=landing" className="inline-block">
+                  <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                     <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
                       {data.heroCta}
                     </PulsatingButton>
@@ -418,7 +418,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
               <p className="text-white/80 font-karla mb-8 max-w-md mx-auto">
                 {data.ctaSubtitle}
               </p>
-              <Link href="https://app.weplanify.com/register?utm_source=landing" className="inline-block">
+              <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <button className="bg-white text-[#001E13] font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
                   {data.ctaButton}
                 </button>

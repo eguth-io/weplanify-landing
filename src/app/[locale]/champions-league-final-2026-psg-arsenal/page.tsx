@@ -627,7 +627,7 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
                 {isEn ? "Flights, hotel, match-day timeline, shared budget — one plan, your whole crew on the same page." : "Vols, hôtel, planning du jour J, budget partagé — un seul plan, toute votre bande alignée."}
               </p>
               <div className="flex justify-center">
-                <Link href="https://app.weplanify.com/register?utm_source=landing&utm_campaign=ucl-final-2026&template=ucl-final-2026">
+                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=ucl-final-2026&template=ucl-final-2026`}>
                   <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
                 </Link>
               </div>

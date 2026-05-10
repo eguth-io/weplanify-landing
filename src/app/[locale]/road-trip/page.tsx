@@ -444,7 +444,7 @@ export default async function RoadTripPage({ params }: Props) {
                 {isEn ? "Plan the route, split the costs, pack the car — all in one place." : "Planifiez la route, partagez les frais, préparez la voiture — le tout au même endroit."}
               </p>
               <div className="flex justify-center">
-                <Link href="https://app.weplanify.com/register?utm_source=landing">
+                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`}>
                   <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
                 </Link>
               </div>

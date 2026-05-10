@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { CtaType, Organization } from "@/sanity/lib/type";
 
@@ -9,11 +12,13 @@ interface MobileCTASectionProps {
 }
 
 export default function MobileCTASection({ ctaData, organization }: MobileCTASectionProps) {
+  const pathname = usePathname();
+  const locale = pathname?.split("/")[1] === "fr" ? "fr" : "en";
   return (
     <section className="mt-12 lg:hidden flex flex-col justify-center items-center" aria-labelledby="mobile-cta-title">
       <h2 id="mobile-cta-title" className="sr-only">Mobile actions</h2>
       <div className="flex gap-6 items-center flex-col lg:flex-row w-full">
-        <Link href={ctaData.buttonUrl || 'https://app.weplanify.com/register?utm_source=landing'} className={"w-full"} rel="nofollow">
+        <Link href={ctaData.buttonUrl || `https://app.weplanify.com/${locale}/register?utm_source=landing`} className={"w-full"} rel="nofollow">
           <PulsatingButton className="w-4/5 mx-auto lg:w-full text-nowrap">
             {ctaData.buttonText}
           </PulsatingButton>

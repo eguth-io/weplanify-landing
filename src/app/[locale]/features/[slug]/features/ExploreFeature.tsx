@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useState } from "react";
+import { useLocale } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { SwipeExplorer } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
@@ -103,6 +104,7 @@ function SwipeCard({
 }
 
 export default function ExploreFeature({ data }: { data: FeaturePageData }) {
+  const locale = useLocale();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const places = [
@@ -180,7 +182,7 @@ export default function ExploreFeature({ data }: { data: FeaturePageData }) {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
                 >
-                  <Link href="https://app.weplanify.com/register?utm_source=landing" className="inline-block">
+                  <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                     <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
                       {data.heroCta}
                     </PulsatingButton>
@@ -337,7 +339,7 @@ export default function ExploreFeature({ data }: { data: FeaturePageData }) {
               <p className="text-[#001E13]/60 font-karla mb-8 max-w-md mx-auto">
                 {data.ctaSubtitle}
               </p>
-              <Link href="https://app.weplanify.com/register?utm_source=landing" className="inline-block">
+              <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
                   {data.ctaButton}
                 </PulsatingButton>

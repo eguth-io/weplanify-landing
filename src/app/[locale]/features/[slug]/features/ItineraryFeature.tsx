@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
 import { TimelineCalendar } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
@@ -97,6 +98,7 @@ function DragHandle() {
 }
 
 export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
+  const locale = useLocale();
   return (
     <>
       <FeatureJsonLd
@@ -278,7 +280,7 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
               <p className="text-white/80 font-karla mb-8 max-w-md mx-auto">
                 {data.ctaSubtitle}
               </p>
-              <Link href="https://app.weplanify.com/register?utm_source=landing" className="inline-block">
+              <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <button className="bg-white text-[#F6391A] font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
                   {data.ctaButton}
                 </button>

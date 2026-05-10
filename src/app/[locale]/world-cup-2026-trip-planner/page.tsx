@@ -560,7 +560,7 @@ export default async function WorldCup2026Page({ params }: Props) {
                 {isEn ? "Fixtures, flights, hotels, budget — one shared plan, your whole crew on the same page." : "Matchs, vols, hôtels, budget — un seul plan partagé, toute votre bande alignée."}
               </p>
               <div className="flex justify-center">
-                <Link href="https://app.weplanify.com/register?utm_source=landing&utm_campaign=world-cup-2026&template=world-cup-2026">
+                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=world-cup-2026&template=world-cup-2026`}>
                   <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
                 </Link>
               </div>

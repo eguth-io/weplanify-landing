@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { trackEvent } from "@/lib/tracking";
 
@@ -16,10 +17,10 @@ interface StickyCTAProps {
  * Single-tap action: navigates straight to the register URL — no email form,
  * no beta gate.
  */
-export default function StickyCTA({
-  text,
-  href = "https://app.weplanify.com/register?utm_source=landing",
-}: StickyCTAProps) {
+export default function StickyCTA({ text, href }: StickyCTAProps) {
+  const pathname = usePathname();
+  const locale = pathname?.split("/")[1] === "fr" ? "fr" : "en";
+  const targetHref = href ?? `https://app.weplanify.com/${locale}/register?utm_source=landing`;
   const [show, setShow] = useState(false);
   const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
 
@@ -65,7 +66,7 @@ export default function StickyCTA({
         >
           <div className="pointer-events-auto w-full max-w-sm lg:max-w-xs">
             <Link
-              href={href}
+              href={targetHref}
               rel="nofollow"
               onClick={() => trackEvent("cta_click", { location: "sticky_cta", label: text })}
               className="block"
