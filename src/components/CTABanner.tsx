@@ -59,27 +59,22 @@ export default function CTABanner({ locale = "en" }: CTABannerProps) {
             <div className="absolute inset-0 bg-black/20"></div>
           </div>
 
-          <div className="relative z-10 w-full h-full min-h-[600px] lg:min-h-[700px] px-6 lg:px-12 xl:px-16 py-12 lg:py-16 flex flex-col justify-end">
-            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-8">
-              <div className="max-w-2xl">
-                <h2 className="text-2xl lg:text-4xl xl:text-[48px] leading-tight mb-3 lg:mb-4">
-                  <span className="font-londrina-solid text-[#FFFBF5]">{content.titlePart1}</span>
-                  <span className="font-londrina-solid text-[#61DBD5]">{content.titlePart2}</span>
-                  <span className="font-londrina-solid text-[#FFFBF5]">{content.titlePart3}</span>
-                  <span className="font-londrina-solid text-[#EEF899]">{content.titlePart4}</span>
-                </h2>
-                <p className="text-[#FFFBF5] text-sm lg:text-base font-karla font-semibold leading-relaxed whitespace-pre-line">
-                  {content.description}
-                </p>
-              </div>
-
-              <div className="flex-shrink-0 flex flex-col items-start lg:items-end gap-2">
-                <InlinePitch locale={locale} variant="light" location="cta_banner" />
-                <p className="text-[#FFFBF5]/80 text-xs lg:text-sm font-karla">
-                  {content.socialProof}
-                </p>
-              </div>
+          <div className="relative z-10 w-full h-full min-h-[600px] lg:min-h-[700px] px-6 lg:px-12 xl:px-16 py-12 lg:py-16 flex flex-col items-center justify-center text-center">
+            <h2 className="text-3xl lg:text-5xl xl:text-[56px] leading-tight mb-4 lg:mb-6 max-w-4xl">
+              <span className="font-londrina-solid text-[#FFFBF5]">{content.titlePart1}</span>
+              <span className="font-londrina-solid text-[#61DBD5]">{content.titlePart2}</span>
+              <span className="font-londrina-solid text-[#FFFBF5]">{content.titlePart3}</span>
+              <span className="font-londrina-solid text-[#EEF899]">{content.titlePart4}</span>
+            </h2>
+            <p className="text-[#FFFBF5] text-base lg:text-lg font-karla font-semibold leading-relaxed mb-8 lg:mb-10 max-w-2xl whitespace-pre-line">
+              {content.description}
+            </p>
+            <div className="w-full flex justify-center">
+              <InlinePitch locale={locale} variant="light" location="cta_banner" />
             </div>
+            <p className="text-[#FFFBF5]/80 text-xs lg:text-sm font-karla mt-4">
+              {content.socialProof}
+            </p>
           </div>
         </section>
       </div>
