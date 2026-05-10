@@ -85,9 +85,7 @@ export default async function HomePage({ params }: Props) {
         <div className="max-w-[1536px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
             {/* Left Block - Testimonial Carousel */}
-            {testimonialStats?.featuredTestimonials && testimonialStats.featuredTestimonials.length > 0 && (
-              <TestimonialCarousel testimonials={testimonialStats.featuredTestimonials} />
-            )}
+            <TestimonialCarousel locale={locale} />
 
             {/* Right Block - Stats */}
             {testimonialStats?.stats && (

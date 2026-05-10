@@ -1,23 +1,75 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+
+type Lang = "en" | "fr";
+
+type Testimonial = {
+  quote: string;
+  author: string;
+  authorRole: string;
+};
+
+const TESTIMONIALS: Record<Lang, Testimonial[]> = {
+  fr: [
+    {
+      quote:
+        "J'utilise WePlanify depuis quelques semaines pour planifier un voyage entre potes. L'interface est simple et le partage des tâches super pratique.",
+      author: "Eva",
+      authorRole: "Voyageuse passionnée",
+    },
+    {
+      quote:
+        "Pratique pour caler des étapes au fil du voyage. Je peux ajuster mes plans sans tout refaire.",
+      author: "Tom",
+      authorRole: "Digital nomad",
+    },
+    {
+      quote:
+        "Avec les sondages, on s'est mis d'accord sur l'hôtel en 10 minutes.",
+      author: "Lucas",
+      authorRole: "Voyage entre amis",
+    },
+    {
+      quote: "Enfin un itinéraire clair pour toute la famille.",
+      author: "Isabelle",
+      authorRole: "Voyage en famille",
+    },
+  ],
+  en: [
+    {
+      quote:
+        "I've been using WePlanify for a few weeks to plan a trip with friends. The interface is simple and sharing tasks is super handy.",
+      author: "Eva",
+      authorRole: "Passionate traveler",
+    },
+    {
+      quote:
+        "Great for tweaking stops as I travel. I can adjust my plans without redoing everything.",
+      author: "Tom",
+      authorRole: "Digital nomad",
+    },
+    {
+      quote: "With polls, we agreed on the hotel in 10 minutes.",
+      author: "Lucas",
+      authorRole: "Friends trip",
+    },
+    {
+      quote: "We finally have a clear itinerary for the whole family.",
+      author: "Isabelle",
+      authorRole: "Family trip",
+    },
+  ],
+};
 
 interface TestimonialCarouselProps {
-  testimonials: Array<{
-    quote: string;
-    author: string;
-    authorRole?: string;
-    avatar?: string;
-  }>;
+  locale?: string;
 }
 
-export default function TestimonialCarousel({ testimonials }: TestimonialCarouselProps) {
+export default function TestimonialCarousel({ locale = "en" }: TestimonialCarouselProps) {
+  const lang: Lang = locale === "fr" ? "fr" : "en";
+  const testimonials = TESTIMONIALS[lang];
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  if (!testimonials || testimonials.length === 0) {
-    return null;
-  }
 
   const handlePrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
@@ -35,27 +87,13 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
         &quot;{currentTestimonial.quote}&quot;
       </blockquote>
       <div className="mt-10 lg:mt-14 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          {currentTestimonial.avatar && (
-            <div className="relative w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden flex-shrink-0">
-              <Image
-                src={currentTestimonial.avatar}
-                alt={currentTestimonial.author}
-                fill
-                className="object-cover"
-              />
-            </div>
-          )}
-          <div>
-            <p className="text-[#001E13] font-londrina-solid text-xl lg:text-[24px]">
-              {currentTestimonial.author}
-            </p>
-            {currentTestimonial.authorRole && (
-              <p className="text-[#001E13]/60 text-sm font-karla">
-                {currentTestimonial.authorRole}
-              </p>
-            )}
-          </div>
+        <div>
+          <p className="text-[#001E13] font-londrina-solid text-xl lg:text-[24px]">
+            {currentTestimonial.author}
+          </p>
+          <p className="text-[#001E13]/60 text-sm font-karla">
+            {currentTestimonial.authorRole}
+          </p>
         </div>
         {testimonials.length > 1 && (
           <div className="flex gap-2">
