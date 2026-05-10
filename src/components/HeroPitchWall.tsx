@@ -67,8 +67,8 @@ const COPY: Record<Lang, Copy> = {
     errorRateLimit: 'Too many tries. Please wait a minute.',
   },
   fr: {
-    affiliateTag: 'À toi — raconte ton voyage rêvé',
-    h1: 'Raconte ton voyage rêvé.\nOn en fait un vrai plan.',
+    affiliateTag: 'À toi — quel est ton voyage de rêve ?',
+    h1: 'Quel est ton voyage de rêve ?\nDécris-le, on t\'en fait un vrai plan.',
     placeholder: 'Je veux chiller sur une plage mexicaine avec des ruines...',
     submit: 'Imagine-le',
     submitting: 'On prépare ton voyage...',
