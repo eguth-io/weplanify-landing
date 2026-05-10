@@ -140,7 +140,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
               {navigationData?.connectionButton?.text || "Login"}
             </Link>
             <Link href="https://app.weplanify.com/register?utm_source=landing" rel="nofollow">
-              <PulsatingButton>Register</PulsatingButton>
+              <PulsatingButton>{locale === "fr" ? "S'inscrire" : "Register"}</PulsatingButton>
             </Link>
           </div>
         </nav>
@@ -251,7 +251,7 @@ export default function Nav({ navData, navigationData }: NavProps) {
               {navigationData?.connectionButton?.text || "Login"}
             </Link>
             <Link href="https://app.weplanify.com/register?utm_source=landing" onClick={closeMenu} className="block" rel="nofollow">
-              <PulsatingButton className="w-full justify-center">Register</PulsatingButton>
+              <PulsatingButton className="w-full justify-center">{locale === "fr" ? "S'inscrire" : "Register"}</PulsatingButton>
             </Link>
           </div>
         </div>
