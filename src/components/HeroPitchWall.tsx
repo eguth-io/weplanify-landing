@@ -55,8 +55,8 @@ type Copy = {
 
 const COPY: Record<Lang, Copy> = {
   en: {
-    affiliateTag: 'Your turn, dream it up',
-    h1: 'Tell us your dream trip.\nWe\'ll turn it into a plan.',
+    affiliateTag: 'Your turn — what\'s your dream trip?',
+    h1: 'What\'s your dream trip?\nDescribe it, we\'ll turn it into a real plan.',
     placeholder: 'I want to chill on a Mexican beach with ruins nearby...',
     submit: 'Imagine it',
     submitting: 'Crafting your trip...',
