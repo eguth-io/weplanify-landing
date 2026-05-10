@@ -3,70 +3,80 @@
 import Image from "next/image";
 import InlinePitch from "@/components/InlinePitch";
 
+type Lang = "en" | "fr";
+
+interface CTAContent {
+  titlePart1: string;
+  titlePart2: string;
+  titlePart3: string;
+  titlePart4: string;
+  description: string;
+  socialProof: string;
+}
+
+const CONTENT: Record<Lang, CTAContent> = {
+  fr: {
+    titlePart1: "Transformez ",
+    titlePart2: "vos idées ",
+    titlePart3: "en voyages inoubliables.",
+    titlePart4: " Gratuitement.",
+    description: "Planifiez autant de voyages que vous voulez. Tout au même endroit.",
+    socialProof: "Plus de 50k voyages planifiés.",
+  },
+  en: {
+    titlePart1: "Turn ",
+    titlePart2: "your group travel ideas ",
+    titlePart3: "into unforgettable trips.",
+    titlePart4: " For free.",
+    description: "Plan as many group trips as you want. Everything in one place.",
+    socialProof: "50k+ trips planned.",
+  },
+};
+
+const BACKGROUND_IMAGE =
+  "https://cdn.sanity.io/images/pkczubdf/production/94d61b2dee776c88dcf45ecfc9101b536b0fe1e2-1389x747.png";
+
 interface CTABannerProps {
-  data: {
-    titlePart1?: string;
-    titlePart2?: string;
-    titlePart3?: string;
-    titlePart4?: string;
-    description: string;
-    buttonText: string;
-    buttonUrl: string;
-    backgroundImage: string;
-  };
   locale?: string;
 }
 
-export default function CTABanner({ data, locale }: CTABannerProps) {
-  if (!data) return null;
+export default function CTABanner({ locale = "en" }: CTABannerProps) {
+  const lang: Lang = locale === "fr" ? "fr" : "en";
+  const content = CONTENT[lang];
 
   return (
     <div className="px-4 lg:px-8 pb-2 lg:pb-3">
       <div className="max-w-[1536px] mx-auto">
         <section className="relative overflow-hidden rounded-[24px] lg:rounded-[40px] min-h-[600px] lg:min-h-[700px]">
-          {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <Image
-              src={data.backgroundImage || "/cta-image-banner-bg.webp"}
+              src={BACKGROUND_IMAGE}
               alt="CTA Background"
               fill
               className="object-cover object-center"
-              priority
               quality={100}
             />
-            {/* Subtle Dark Overlay */}
             <div className="absolute inset-0 bg-black/20"></div>
           </div>
 
-          {/* Content - Aligned to bottom left and right */}
           <div className="relative z-10 w-full h-full min-h-[600px] lg:min-h-[700px] px-6 lg:px-12 xl:px-16 py-12 lg:py-16 flex flex-col justify-end">
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-8">
-              {/* Left side - Title and Subtitle */}
               <div className="max-w-2xl">
                 <h2 className="text-2xl lg:text-4xl xl:text-[48px] leading-tight mb-3 lg:mb-4">
-                  {data.titlePart1 && (
-                    <span className="font-londrina-solid text-[#FFFBF5]">{data.titlePart1} </span>
-                  )}
-                  {data.titlePart2 && (
-                    <span className="font-londrina-solid text-[#61DBD5]">{data.titlePart2} </span>
-                  )}
-                  {data.titlePart3 && (
-                    <span className="font-londrina-solid text-[#FFFBF5]">{data.titlePart3} </span>
-                  )}
-                  {data.titlePart4 && (
-                    <span className="font-londrina-solid text-[#EEF899]">{data.titlePart4}</span>
-                  )}
+                  <span className="font-londrina-solid text-[#FFFBF5]">{content.titlePart1}</span>
+                  <span className="font-londrina-solid text-[#61DBD5]">{content.titlePart2}</span>
+                  <span className="font-londrina-solid text-[#FFFBF5]">{content.titlePart3}</span>
+                  <span className="font-londrina-solid text-[#EEF899]">{content.titlePart4}</span>
                 </h2>
                 <p className="text-[#FFFBF5] text-sm lg:text-base font-karla font-semibold leading-relaxed whitespace-pre-line">
-                  {data.description}
+                  {content.description}
                 </p>
               </div>
 
-              {/* Right side - Inline pitch with social proof */}
               <div className="flex-shrink-0 flex flex-col items-start lg:items-end gap-2">
                 <InlinePitch locale={locale} variant="light" location="cta_banner" />
                 <p className="text-[#FFFBF5]/80 text-xs lg:text-sm font-karla">
-                  50k+ trips planned. Free forever.
+                  {content.socialProof}
                 </p>
               </div>
             </div>

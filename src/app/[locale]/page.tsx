@@ -55,7 +55,7 @@ export default async function HomePage({ params }: Props) {
     );
   }
 
-  const { hero, worldSection, banner, testimonials, featureImageSection, ctaBanner, readyBanner, faq } = landingPageData;
+  const { hero, worldSection, banner, testimonials, readyBanner } = landingPageData;
 
   return (
     <main className="landing-page" id="main-content">
@@ -242,19 +242,17 @@ export default async function HomePage({ params }: Props) {
       {testimonials && <FadeIn><Testimonial data={testimonials} /></FadeIn>}
 
       {/* Feature Image Section */}
-      {featureImageSection && <FadeIn><FeatureImageSection data={featureImageSection} /></FadeIn>}
+      <FadeIn><FeatureImageSection locale={locale} /></FadeIn>
 
       {/* CTA Banner */}
-      {ctaBanner && <FadeIn><CTABanner data={ctaBanner} locale={locale} /></FadeIn>}
+      <FadeIn><CTABanner locale={locale} /></FadeIn>
 
       {/* FAQ Support */}
-      {faq && (
-        <FadeIn>
+      <FadeIn>
         <div id="faq">
-          <FAQSupport data={faq} />
+          <FAQSupport locale={locale} />
         </div>
-        </FadeIn>
-      )}
+      </FadeIn>
 
       {/* Ready Banner */}
       {readyBanner && <FadeIn><ReadyBanner data={readyBanner} locale={locale} /></FadeIn>}
