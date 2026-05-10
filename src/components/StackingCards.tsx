@@ -2,106 +2,142 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
-import { AiGlobeJourney, SwipeExplorer, LiveCollaboration, LiveVoting } from "@/components/animations";
+import { AiGlobeJourney, LiveCollaboration, LiveVoting } from "@/components/animations";
 
-type AnimationType = "ai-globe" | "swipe-explorer" | "live-collaboration" | "live-voting";
+type Lang = "en" | "fr";
+type AnimationType = "ai-globe" | "live-collaboration" | "live-voting";
 
-interface Card {
+const REGISTER_URL = "https://app.weplanify.com/register?utm_source=landing";
+
+interface CardData {
   imagePosition: "left" | "right";
   title: string;
   description: string;
-  image?: string;
-  imageAlt?: string;
-  animation?: AnimationType;
+  animation: AnimationType;
   backgroundColor: string;
-  ctaLabel?: string;
-  ctaUrl?: string;
-  ctaTextColor?: string;
-  ctaBackgroundColor?: string;
-  stats?: Array<{
-    value: string;
-    label: string;
-  }>;
+  ctaLabel: string;
+  ctaUrl: string;
+  ctaTextColor: string;
+  ctaBackgroundColor: string;
+  stats?: { value: string; label: string }[];
 }
+
+interface StackingCardsContent {
+  title: string;
+  cards: CardData[];
+}
+
+const CONTENT: Record<Lang, StackingCardsContent> = {
+  fr: {
+    title: "Des fonctionnalités pensées pour voyager ensemble",
+    cards: [
+      {
+        imagePosition: "right",
+        title: "Explore et propose des idées au groupe",
+        description:
+          "Trouve activités, restaurants, hébergement et transport directement dans l'app.\nAjoute-les à l'itinéraire ou soumets-les au vote du groupe.\n\nL'exploration devient collaborative.",
+        animation: "ai-globe",
+        backgroundColor: "#FFFFFF",
+        ctaLabel: "Démarrer mon voyage",
+        ctaUrl: REGISTER_URL,
+        ctaTextColor: "#FFFFFF",
+        ctaBackgroundColor: "#E83F28",
+        stats: [{ value: "+190", label: "destinations possibles" }],
+      },
+      {
+        imagePosition: "left",
+        title: "Décidez ensemble grâce aux sondages",
+        description:
+          "Où dormir ?\nQue faire ?\nQuand partir ?\n\nCréez un sondage, chacun vote, la décision est prise.\nLe groupe avance. Le voyage aussi.",
+        animation: "live-voting",
+        backgroundColor: "#EEF899",
+        ctaLabel: "Lancer un sondage",
+        ctaUrl: REGISTER_URL,
+        ctaTextColor: "#FFFBF5",
+        ctaBackgroundColor: "#001E13",
+        stats: [{ value: "1000+", label: "sondages quotidiens" }],
+      },
+      {
+        imagePosition: "left",
+        title: "Un itinéraire clair, jour après jour",
+        description:
+          "Chaque journée du voyage est structurée :\nque faire, où manger, où dormir, comment se déplacer.\n\nTout est clair pour tout le monde.",
+        animation: "live-collaboration",
+        backgroundColor: "#61DBD5",
+        ctaLabel: "Explorer maintenant",
+        ctaUrl: REGISTER_URL,
+        ctaTextColor: "#FFFFFF",
+        ctaBackgroundColor: "#001E13",
+        stats: [{ value: "10+", label: "partenaires" }],
+      },
+    ],
+  },
+  en: {
+    title: "Everything You Need to Plan a Group Trip",
+    cards: [
+      {
+        imagePosition: "right",
+        title: "Explore and propose ideas to the group",
+        description:
+          "Find activities, restaurants, accommodation and transport directly in the app.\nAdd them to the itinerary or propose them to the group to vote.\n\nExploration becomes collaborative.",
+        animation: "ai-globe",
+        backgroundColor: "#FFFFFF",
+        ctaLabel: "Start my journey",
+        ctaUrl: REGISTER_URL,
+        ctaTextColor: "#FFFFFF",
+        ctaBackgroundColor: "#E83F28",
+        stats: [{ value: "190+", label: "Possible destinations" }],
+      },
+      {
+        imagePosition: "left",
+        title: "Decide together with polls",
+        description:
+          "Where to stay?\nWhat to do?\nWhen to leave?\n\nCreate a poll, everyone votes, the decision is made.\nThe group moves forward. The trip too.",
+        animation: "live-voting",
+        backgroundColor: "#EEF899",
+        ctaLabel: "Start a poll",
+        ctaUrl: REGISTER_URL,
+        ctaTextColor: "#FFFBF5",
+        ctaBackgroundColor: "#001E13",
+        stats: [{ value: "1000+", label: "Daily polls" }],
+      },
+      {
+        imagePosition: "left",
+        title: "A clear itinerary, day by day",
+        description:
+          "Each day of the trip is structured:\nwhat to do, where to eat, where to sleep, how to get there.\n\nEverything is clear for everyone.",
+        animation: "live-collaboration",
+        backgroundColor: "#61DBD5",
+        ctaLabel: "Explore now",
+        ctaUrl: REGISTER_URL,
+        ctaTextColor: "#FFFFFF",
+        ctaBackgroundColor: "#001E13",
+        stats: [{ value: "10+", label: "Partners" }],
+      },
+    ],
+  },
+};
 
 interface StackingCardsProps {
-  data: {
-    stackingCardsTitle?: string;
-    stackingCards: Card[];
-  };
+  locale?: string;
 }
 
-const defaultCards: Card[] = [
-  {
-    imagePosition: "left",
-    title: "A clear itinerary, day by day",
-    description:
-      "Let AI create your perfect itinerary in seconds. Just describe your dream trip and get a detailed day-by-day plan with activities, restaurants, and hidden gems.",
-    animation: "ai-globe",
-    backgroundColor: "#FFFBF5",
-    ctaLabel: "Plan my trip with AI",
-    ctaUrl: "/features/ai-planning",
-    ctaTextColor: "#FFFFFF",
-    ctaBackgroundColor: "#F6391A",
-    stats: [
-      { value: "30s", label: "Average planning time" },
-      { value: "12k+", label: "Trips planned" },
-    ],
-  },
-  {
-    imagePosition: "right",
-    title: "Decide together with polls",
-    description:
-      "No more endless WhatsApp debates. Create instant polls for destinations, dates, restaurants - and let the group decide in minutes.",
-    animation: "live-voting",
-    backgroundColor: "#EEF899",
-    ctaLabel: "Create a poll",
-    ctaUrl: "/features/polls",
-    ctaTextColor: "#FFFFFF",
-    ctaBackgroundColor: "#8B5CF6",
-    stats: [
-      { value: "50k+", label: "Decisions made" },
-      { value: "2min", label: "Average decision time" },
-    ],
-  },
-  {
-    imagePosition: "left",
-    title: "Real-time collaboration",
-    description:
-      "Everyone edits the same trip simultaneously. See changes live, leave comments, and stay perfectly synced - no more version chaos.",
-    animation: "live-collaboration",
-    backgroundColor: "#61DBD5",
-    ctaLabel: "Invite my friends",
-    ctaUrl: "/features/collaboration",
-    ctaTextColor: "#FFFFFF",
-    ctaBackgroundColor: "#F6391A",
-    stats: [
-      { value: "45s", label: "To invite your group" },
-      { value: "100%", label: "Real-time sync" },
-    ],
-  },
-];
-
-function Card({ card, index }: { card: Card; index: number }) {
+function Card({ card, index }: { card: CardData; index: number }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(animationRef, { once: false, margin: "-100px" });
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "start start"]
+    offset: ["start end", "start start"],
   });
 
   const scale = useTransform(scrollYProgress, [0, 1], [0.85, 1]);
 
-  // Animation component based on type
   const AnimationComponent = () => {
     switch (card.animation) {
       case "ai-globe":
         return <AiGlobeJourney autoPlay={isInView} />;
-      case "swipe-explorer":
-        return <SwipeExplorer autoPlay={isInView} />;
       case "live-collaboration":
         return <LiveCollaboration autoPlay={isInView} />;
       case "live-voting":
@@ -111,35 +147,22 @@ function Card({ card, index }: { card: Card; index: number }) {
     }
   };
 
-  // Image/Animation section
   const ImageSection = () => (
-    <div ref={animationRef} className="relative h-full min-h-[300px] lg:min-h-[600px] overflow-hidden">
-      {card.animation ? (
-        <AnimationComponent />
-      ) : card.image ? (
-        <Image
-          src={card.image}
-          alt={card.imageAlt || card.title}
-          fill
-          className="object-cover"
-          quality={100}
-        />
-      ) : (
-        <div className="w-full h-full flex items-center justify-center text-gray-500 font-karla text-center px-4">
-          Recommended format: 800x600px (4:3 ratio)
-        </div>
-      )}
+    <div
+      ref={animationRef}
+      className="relative h-full min-h-[300px] lg:min-h-[600px] overflow-hidden"
+    >
+      <AnimationComponent />
     </div>
   );
 
-  // Content component - with CTA button (for first card or cards with ctaLabel)
-  const ContentWithCTA = () => (
+  const ContentSection = () => (
     <div className="p-8 lg:p-12 xl:p-16 flex flex-col justify-between">
       <div>
         <h3 className="text-[#001E13] text-3xl lg:text-4xl xl:text-5xl font-londrina-solid leading-tight mb-6 lg:mb-8">
           {card.title}
         </h3>
-        <p className="text-[#001E13] text-sm lg:text-base font-karla leading-relaxed mb-8 lg:mb-10">
+        <p className="text-[#001E13] text-sm lg:text-base font-karla leading-relaxed mb-8 lg:mb-10 whitespace-pre-line">
           {card.description}
         </p>
       </div>
@@ -160,59 +183,33 @@ function Card({ card, index }: { card: Card; index: number }) {
           </div>
         )}
 
-        {card.ctaLabel && (
-          <Link href={card.ctaUrl || "https://app.weplanify.com/register?utm_source=landing"}>
-            <button
-              className="px-8 py-3 rounded-full font-karla font-bold text-sm lg:text-base hover:opacity-90 transition-all ring-4"
-              style={{
-                backgroundColor: card.ctaBackgroundColor || "#F6391A",
-                color: card.ctaTextColor || "#FFFFFF",
-                boxShadow: `0 0 0 4px ${card.ctaBackgroundColor || "#F6391A"}40`,
-              }}
-            >
-              {card.ctaLabel}
-            </button>
-          </Link>
-        )}
+        <Link href={card.ctaUrl} rel="nofollow">
+          <button
+            className="px-8 py-3 rounded-full font-karla font-bold text-sm lg:text-base hover:opacity-90 transition-all ring-4"
+            style={{
+              backgroundColor: card.ctaBackgroundColor,
+              color: card.ctaTextColor,
+              boxShadow: `0 0 0 4px ${card.ctaBackgroundColor}40`,
+            }}
+          >
+            {card.ctaLabel}
+          </button>
+        </Link>
       </div>
     </div>
   );
 
-  // Content component - without CTA button
-  const ContentWithoutCTA = () => (
-    <div className="p-8 lg:p-12 xl:p-16 flex flex-col justify-center">
-      <h3 className="text-[#001E13] text-3xl lg:text-4xl xl:text-5xl font-londrina-solid leading-tight mb-6 lg:mb-8">
-        {card.title}
-      </h3>
-      <p className="text-[#001E13] text-sm lg:text-base font-karla leading-relaxed mb-8 lg:mb-10">
-        {card.description}
-      </p>
-      {card.stats && card.stats.length > 0 && (
-        <div className="flex gap-4">
-          {card.stats.map((stat, idx) => (
-            <div key={idx} className="flex flex-col">
-              <p className="text-[#001E13] text-4xl lg:text-5xl xl:text-6xl font-londrina-solid mb-2">
-                {stat.value}
-              </p>
-              <p className="text-[#001E13] text-xs lg:text-sm font-nanum-pen">
-                {stat.label}
-              </p>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-
-  // Determine layout based on imagePosition
   const isImageLeft = card.imagePosition === "left";
-  const hasCTA = !!card.ctaLabel;
 
   return (
-    <div ref={containerRef} className="h-screen flex items-start justify-center px-4 lg:px-8" style={{
-      position: 'sticky',
-      top: `calc(120px + ${index * 25}px)`
-    }}>
+    <div
+      ref={containerRef}
+      className="relative h-screen flex items-start justify-center px-4 lg:px-8"
+      style={{
+        position: "sticky",
+        top: `calc(120px + ${index * 25}px)`,
+      }}
+    >
       <motion.div
         style={{
           scale,
@@ -224,11 +221,11 @@ function Card({ card, index }: { card: Card; index: number }) {
           {isImageLeft ? (
             <>
               <ImageSection />
-              {hasCTA ? <ContentWithCTA /> : <ContentWithoutCTA />}
+              <ContentSection />
             </>
           ) : (
             <>
-              {hasCTA ? <ContentWithCTA /> : <ContentWithoutCTA />}
+              <ContentSection />
               <ImageSection />
             </>
           )}
@@ -238,37 +235,21 @@ function Card({ card, index }: { card: Card; index: number }) {
   );
 }
 
-export default function StackingCards({ data }: StackingCardsProps) {
+export default function StackingCards({ locale = "en" }: StackingCardsProps) {
+  const lang: Lang = locale === "fr" ? "fr" : "en";
+  const { title, cards } = CONTENT[lang];
   const containerRef = useRef<HTMLDivElement>(null);
-
-  // Merge Sanity data with default animations - use animation from defaults if Sanity card doesn't have one
-  const cards = (data?.stackingCards || defaultCards).map((card, index) => {
-    // If card already has animation, use it
-    if (card.animation) return card;
-
-    // Otherwise, try to use animation from defaultCards at same index
-    const defaultAnimation = defaultCards[index]?.animation;
-    if (defaultAnimation) {
-      return { ...card, animation: defaultAnimation };
-    }
-
-    return card;
-  });
 
   return (
     <div ref={containerRef} className="bg-[#FFFBF5]">
       <div className="max-w-[1536px] mx-auto px-4 lg:px-8 pt-12 lg:pt-20 pb-6 lg:pb-10">
         <h2 className="text-[#001E13] text-4xl lg:text-5xl xl:text-6xl font-londrina-solid text-center">
-          {data?.stackingCardsTitle || "From idea to perfect trip in just a few clicks."}
+          {title}
         </h2>
       </div>
-      <div className="relative h-[400vh]">
+      <div className="relative" style={{ height: `${cards.length * 100}vh` }}>
         {cards.map((card, index) => (
-          <Card
-            key={index}
-            card={card}
-            index={index}
-          />
+          <Card key={index} card={card} index={index} />
         ))}
       </div>
     </div>

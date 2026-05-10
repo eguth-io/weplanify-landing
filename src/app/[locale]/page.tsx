@@ -55,7 +55,7 @@ export default async function HomePage({ params }: Props) {
     );
   }
 
-  const { hero, worldSection, banner, features, travelSteps, testimonials, featureImageSection, ctaBanner, readyBanner, faq } = landingPageData;
+  const { hero, worldSection, banner, travelSteps, testimonials, featureImageSection, ctaBanner, readyBanner, faq } = landingPageData;
 
   return (
     <main className="landing-page" id="main-content">
@@ -223,13 +223,11 @@ export default async function HomePage({ params }: Props) {
       )}
 
       {/* Stacking Cards Section */}
-      {features && (
-        <FadeIn>
+      <FadeIn>
         <div id="features">
-          <StackingCards data={features} />
+          <StackingCards locale={locale} />
         </div>
-        </FadeIn>
-      )}
+      </FadeIn>
 
       
 
