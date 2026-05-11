@@ -71,25 +71,37 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
+  const teams = [
+    { "@type": "SportsTeam", name: "Paris Saint-Germain", url: "https://www.psg.fr" },
+    { "@type": "SportsTeam", name: "Arsenal FC", url: "https://www.arsenal.com" },
+  ];
   const sportsEventLd = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
     name: isEn ? "UEFA Champions League Final 2026: PSG vs Arsenal" : "Finale UEFA Champions League 2026 : PSG vs Arsenal",
+    description: isEn
+      ? "UEFA Champions League final 2026 between Paris Saint-Germain and Arsenal FC at the Puskás Aréna in Budapest, Hungary, on Saturday 30 May 2026, kickoff 18:00 CET."
+      : "Finale de l'UEFA Champions League 2026 entre le Paris Saint-Germain et Arsenal FC à la Puskás Aréna de Budapest, en Hongrie, le samedi 30 mai 2026, coup d'envoi à 18h00 (heure de Paris).",
+    image: [`${SITE_URL}/header-bg.webp`],
     startDate: "2026-05-30T18:00+02:00",
     endDate: "2026-05-30T20:00+02:00",
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     sport: "Association football",
     organizer: { "@type": "Organization", name: "UEFA", url: "https://www.uefa.com" },
+    performer: teams,
+    competitor: teams,
+    offers: {
+      "@type": "Offer",
+      url: "https://www.uefa.com/uefachampionsleague/",
+      availability: "https://schema.org/LimitedAvailability",
+      validFrom: "2026-03-01",
+    },
     location: {
       "@type": "Place",
       name: "Puskás Aréna",
       address: { "@type": "PostalAddress", addressLocality: "Budapest", addressCountry: "HU" },
     },
-    competitor: [
-      { "@type": "SportsTeam", name: "Paris Saint-Germain", url: "https://www.psg.fr" },
-      { "@type": "SportsTeam", name: "Arsenal FC", url: "https://www.arsenal.com" },
-    ],
   };
 
   const faqItems = isEn
