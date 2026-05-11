@@ -47,15 +47,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = {
     en: {
       title:
-        "WePlanify vs Wanderlog \u2014 Which Group Trip Planner Is Better? (2026)",
+        "Wanderlog Alternative: Free Group Trip Planner (2026) | WePlanify",
       description:
-        "Detailed comparison of WePlanify and Wanderlog for group trip planning. Features, pricing, and which app is best for your travel group.",
+        "Looking for a Wanderlog alternative for group trips? WePlanify offers real-time collaborative itineraries, shared budgets, polls and packing lists \u2014 free, bilingual (EN/FR).",
     },
     fr: {
       title:
-        "WePlanify vs Wanderlog \u2014 Quel Planificateur de Voyage de Groupe Choisir ? (2026)",
+        "Alternative \u00e0 Wanderlog : Voyage de Groupe Collaboratif (2026)",
       description:
-        "Comparaison d\u00e9taill\u00e9e entre WePlanify et Wanderlog pour organiser un voyage de groupe. Fonctionnalit\u00e9s, prix et quelle application choisir.",
+        "Cherchez une alternative \u00e0 Wanderlog pour vos voyages de groupe ? WePlanify : itin\u00e9raire collaboratif en temps r\u00e9el, sondages, budget partag\u00e9, packing list. Gratuit, FR/EN.",
     },
   };
 

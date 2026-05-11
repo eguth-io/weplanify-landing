@@ -47,15 +47,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = {
     en: {
       title:
-        "WePlanify vs SquadTrip — Best Free Group Trip Planner? (2026)",
+        "SquadTrip Alternative: Free Group Trip Planner (2026) | WePlanify",
       description:
-        "Detailed comparison of WePlanify and SquadTrip for group trip planning. See which free group travel app offers the best collaborative features, polls, budgets, and more.",
+        "Looking for a SquadTrip alternative? WePlanify offers real-time itineraries, shared polls, group budgets and packing lists — free, bilingual (EN/FR).",
     },
     fr: {
       title:
-        "WePlanify vs SquadTrip — Meilleur Organisateur de Voyage de Groupe Gratuit ? (2026)",
+        "Alternative à SquadTrip : Voyage de Groupe Gratuit (2026)",
       description:
-        "Comparatif détaillé entre WePlanify et SquadTrip pour organiser un voyage de groupe. Découvrez quelle application gratuite offre les meilleures fonctionnalités collaboratives.",
+        "Alternative à SquadTrip pour organiser un voyage de groupe. WePlanify : itinéraire collaboratif, sondages, budget partagé. Gratuit, bilingue FR/EN.",
     },
   };
 
