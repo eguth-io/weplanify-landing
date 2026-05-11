@@ -17,10 +17,20 @@ interface StickyCTAProps {
  * Single-tap action: navigates straight to the register URL — no email form,
  * no beta gate.
  */
+const PATH_TO_TEMPLATE: Record<string, { template: string; campaign: string }> = {
+  "/world-cup-2026-trip-planner": { template: "world-cup-2026", campaign: "world-cup-2026" },
+  "/champions-league-final-2026-psg-arsenal": { template: "ucl-final-2026", campaign: "ucl-final-2026" },
+};
+
 export default function StickyCTA({ text, href }: StickyCTAProps) {
   const pathname = usePathname();
   const locale = pathname?.split("/")[1] === "fr" ? "fr" : "en";
-  const targetHref = href ?? `https://app.weplanify.com/${locale}/register?utm_source=landing`;
+  const subpath = pathname ? "/" + pathname.split("/").slice(2).join("/") : "";
+  const match = PATH_TO_TEMPLATE[subpath];
+  const defaultHref = match
+    ? `https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=${match.campaign}&template=${match.template}`
+    : `https://app.weplanify.com/${locale}/register?utm_source=landing`;
+  const targetHref = href ?? defaultHref;
   const [show, setShow] = useState(false);
   const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
 
