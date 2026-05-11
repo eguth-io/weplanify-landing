@@ -39,15 +39,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = {
     en: {
       title:
-        "WePlanify vs TripIt — Best Group Trip Organizer? (2026)",
+        "TripIt Alternative: Free Group Trip Planner (2026) | WePlanify",
       description:
-        "Detailed comparison of WePlanify and TripIt for group travel planning. See how collaborative polls, shared budgets, and real-time planning stack up against TripIt's booking import and flight alerts.",
+        "Looking for a TripIt alternative built for group travel? WePlanify adds real-time collaboration, shared polls, group budgets and itineraries — free, bilingual (EN/FR).",
     },
     fr: {
       title:
-        "WePlanify vs TripIt — Meilleur Organisateur de Voyage de Groupe ? (2026)",
+        "Alternative à TripIt : Voyage de Groupe Collaboratif (2026)",
       description:
-        "Comparatif détaillé entre WePlanify et TripIt pour organiser un voyage de groupe. Découvrez les différences entre sondages collaboratifs, budgets partagés et les alertes de vol de TripIt.",
+        "Cherchez une alternative à TripIt pour organiser un voyage de groupe ? WePlanify : sondages, budget partagé, itinéraire collaboratif en temps réel. Gratuit, FR/EN.",
     },
   };
 

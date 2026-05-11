@@ -47,15 +47,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const meta = {
     en: {
       title:
-        "WePlanify vs Stippl \u2014 Which Travel Planner Is Best for Groups? (2026)",
+        "Stippl Alternative for Groups: Free Collaborative Planner (2026)",
       description:
-        "Detailed comparison of WePlanify and Stippl for group trip planning. Features, pricing, and which travel planner is best for your group.",
+        "Looking for a Stippl alternative built for group trips? WePlanify adds real-time collaboration, polls, shared budgets and packing lists \u2014 free, bilingual (EN/FR).",
     },
     fr: {
       title:
-        "WePlanify vs Stippl \u2014 Quel Planificateur de Voyage Choisir pour un Groupe ? (2026)",
+        "Alternative \u00e0 Stippl : Planificateur de Voyage de Groupe (2026)",
       description:
-        "Comparaison d\u00e9taill\u00e9e entre WePlanify et Stippl pour organiser un voyage de groupe. Fonctionnalit\u00e9s, prix et quel planificateur choisir.",
+        "Alternative \u00e0 Stippl pour organiser un voyage de groupe. WePlanify : itin\u00e9raires collaboratifs, sondages, budget partag\u00e9, packing list. Gratuit, bilingue FR/EN.",
     },
   };
 
