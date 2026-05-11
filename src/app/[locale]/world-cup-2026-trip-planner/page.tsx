@@ -71,39 +71,75 @@ export default async function WorldCup2026Page({ params }: Props) {
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
+  const fifaTicketsUrl = "https://www.fifa.com/fifaplus/en/tickets";
+  const eventImage = `${SITE_URL}/header-bg.webp`;
+  const eventDescription = isEn
+    ? "FIFA World Cup 2026 — 48 national teams, 16 host cities across the United States, Canada and Mexico, from 11 June to 19 July 2026. The first World Cup co-hosted by three countries."
+    : "Coupe du Monde de la FIFA 2026 — 48 équipes nationales, 16 villes hôtes aux États-Unis, au Canada et au Mexique, du 11 juin au 19 juillet 2026. La première Coupe du Monde co-organisée par trois pays.";
+  const fifaPerformer = { "@type": "PerformingGroup", name: isEn ? "FIFA national teams" : "Équipes nationales FIFA" };
+  const fifaOrganizer = { "@type": "Organization", name: "FIFA", url: "https://www.fifa.com" };
+  const fifaOffers = {
+    "@type": "Offer",
+    url: fifaTicketsUrl,
+    availability: "https://schema.org/InStock",
+    validFrom: "2025-09-10",
+  };
+
+  const hostCities: Array<{ name: string; locality: string; country: "US" | "CA" | "MX" }> = [
+    { name: "Atlanta", locality: "Atlanta", country: "US" },
+    { name: "Boston", locality: "Foxborough", country: "US" },
+    { name: "Dallas", locality: "Arlington", country: "US" },
+    { name: "Houston", locality: "Houston", country: "US" },
+    { name: "Kansas City", locality: "Kansas City", country: "US" },
+    { name: "Los Angeles", locality: "Inglewood", country: "US" },
+    { name: "Miami", locality: "Miami Gardens", country: "US" },
+    { name: "New York / New Jersey", locality: "East Rutherford", country: "US" },
+    { name: "Philadelphia", locality: "Philadelphia", country: "US" },
+    { name: "San Francisco Bay Area", locality: "Santa Clara", country: "US" },
+    { name: "Seattle", locality: "Seattle", country: "US" },
+    { name: "Toronto", locality: "Toronto", country: "CA" },
+    { name: "Vancouver", locality: "Vancouver", country: "CA" },
+    { name: "Guadalajara", locality: "Zapopan", country: "MX" },
+    { name: "Mexico City", locality: "Mexico City", country: "MX" },
+    { name: "Monterrey", locality: "Guadalupe", country: "MX" },
+  ];
+
   const sportsEventLd = {
     "@context": "https://schema.org",
     "@type": "SportsEvent",
     name: isEn ? "FIFA World Cup 2026" : "Coupe du Monde de la FIFA 2026",
+    description: eventDescription,
+    image: [eventImage],
     startDate: "2026-06-11",
     endDate: "2026-07-19",
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     sport: "Association football",
-    organizer: { "@type": "Organization", name: "FIFA", url: "https://www.fifa.com" },
+    organizer: fifaOrganizer,
+    performer: fifaPerformer,
+    offers: fifaOffers,
     location: [
       { "@type": "Country", name: "United States" },
       { "@type": "Country", name: "Canada" },
       { "@type": "Country", name: "Mexico" },
     ],
-    subEvent: [
-      { "@type": "SportsEvent", name: "World Cup 2026 Atlanta matches", location: { "@type": "Place", name: "Atlanta", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Boston matches", location: { "@type": "Place", name: "Boston", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Dallas matches", location: { "@type": "Place", name: "Dallas", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Houston matches", location: { "@type": "Place", name: "Houston", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Kansas City matches", location: { "@type": "Place", name: "Kansas City", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Los Angeles matches", location: { "@type": "Place", name: "Los Angeles", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Miami matches", location: { "@type": "Place", name: "Miami", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 New York / New Jersey matches", location: { "@type": "Place", name: "East Rutherford", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Philadelphia matches", location: { "@type": "Place", name: "Philadelphia", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 San Francisco Bay Area matches", location: { "@type": "Place", name: "Santa Clara", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Seattle matches", location: { "@type": "Place", name: "Seattle", address: { "@type": "PostalAddress", addressCountry: "US" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Toronto matches", location: { "@type": "Place", name: "Toronto", address: { "@type": "PostalAddress", addressCountry: "CA" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Vancouver matches", location: { "@type": "Place", name: "Vancouver", address: { "@type": "PostalAddress", addressCountry: "CA" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Guadalajara matches", location: { "@type": "Place", name: "Guadalajara", address: { "@type": "PostalAddress", addressCountry: "MX" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Mexico City matches", location: { "@type": "Place", name: "Mexico City", address: { "@type": "PostalAddress", addressCountry: "MX" } } },
-      { "@type": "SportsEvent", name: "World Cup 2026 Monterrey matches", location: { "@type": "Place", name: "Monterrey", address: { "@type": "PostalAddress", addressCountry: "MX" } } },
-    ],
+    subEvent: hostCities.map((city) => ({
+      "@type": "SportsEvent",
+      name: isEn ? `World Cup 2026 ${city.name} matches` : `Coupe du Monde 2026 — matchs à ${city.name}`,
+      description: isEn
+        ? `FIFA World Cup 2026 matches hosted in ${city.name} between 11 June and 19 July 2026.`
+        : `Matchs de la Coupe du Monde de la FIFA 2026 organisés à ${city.name} entre le 11 juin et le 19 juillet 2026.`,
+      image: [eventImage],
+      startDate: "2026-06-11",
+      endDate: "2026-07-19",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      sport: "Association football",
+      organizer: fifaOrganizer,
+      performer: fifaPerformer,
+      offers: { ...fifaOffers },
+      location: { "@type": "Place", name: city.name, address: { "@type": "PostalAddress", addressLocality: city.locality, addressCountry: city.country } },
+    })),
   };
 
   const faqItems = isEn
