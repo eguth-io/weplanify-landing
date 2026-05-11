@@ -269,13 +269,25 @@ export default function Footer({ footerData }: FooterProps) {
 
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 lg:pt-10 border-t border-[#001E13]/10">
-          {/* Social Links */}
-          <div className="flex gap-4 items-center order-2 md:order-1">
+          {/* Social Links + Product Hunt */}
+          <div className="flex flex-wrap gap-4 items-center order-2 md:order-1">
             <a href="https://www.instagram.com/weplanify" className="text-[#001E13] hover:text-[#F6391A] transition-colors" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
               <SocialIcon platform="instagram" />
             </a>
             <a href="https://www.tiktok.com/@weplanify" className="text-[#001E13] hover:text-[#F6391A] transition-colors" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
               <SocialIcon platform="tiktok" />
+            </a>
+            <a
+              href="https://www.producthunt.com/products/weplanify?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-weplanify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1144224&theme=light&t=1778502038122"
+                alt="WePlanify - Plan trips with friends without the WhatsApp chaos | Product Hunt"
+                width={180}
+                height={39}
+              />
             </a>
           </div>
 
