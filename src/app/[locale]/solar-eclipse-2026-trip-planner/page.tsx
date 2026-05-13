@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -27,17 +28,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const metadata = await generateMetadataFromSanity(locale, PATHNAME);
   const isEn = locale === "en";
   const title = isEn
-    ? "Total Solar Eclipse 12 August 2026: Trip Planner for Iceland & Spain | WePlanify"
-    : "Éclipse Solaire Totale du 12 août 2026 : Guide Voyage Islande & Espagne | WePlanify";
+    ? "Total Solar Eclipse 12 Aug 2026: Spain & Iceland Trip Planner"
+    : "Éclipse 12 août 2026 : Voyage Espagne, Islande et France";
   const description = isEn
     ? "Everything for the 12 August 2026 total solar eclipse: path of totality across Iceland and northern Spain, when and where the totality is longest, ISO 12312-2 glasses, cruise options, and how to plan the trip from France with a group."
     : "Tout sur l'éclipse solaire totale du 12 août 2026 : trajectoire de la totalité en Islande et dans le nord de l'Espagne, où la totalité est la plus longue, lunettes ISO 12312-2, croisières, et comment organiser le voyage depuis la France à plusieurs.";
   const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
+  const ogImage = `${SITE_URL}/events/solar-eclipse-2026.png`;
   return {
     ...metadata, title, description,
     authors: [{ name: "Alex Martin" }],
-    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl },
-    twitter: { ...metadata.twitter, title, description },
+    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl, images: [{ url: ogImage, width: 1456, height: 816, alt: title }] },
+    twitter: { ...metadata.twitter, title, description, images: [ogImage] },
     alternates: { canonical: currentUrl, languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` } },
   };
 }
@@ -68,6 +70,7 @@ export default async function SolarEclipse2026Page({ params }: Props) {
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
     datePublished: "2026-05-13", dateModified: "2026-05-13",
+    image: [`${SITE_URL}/events/solar-eclipse-2026.png`],
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
@@ -78,12 +81,11 @@ export default async function SolarEclipse2026Page({ params }: Props) {
     description: isEn
       ? "Total solar eclipse on Wednesday 12 August 2026. Path of totality crosses eastern Greenland, western Iceland and northern Spain. Maximum totality 2 minutes 18 seconds off the Icelandic coast. First total solar eclipse visible from mainland Europe since 11 August 1999."
       : "Éclipse solaire totale le mercredi 12 août 2026. La trajectoire de la totalité traverse l'est du Groenland, l'ouest de l'Islande et le nord de l'Espagne. Totalité maximale de 2 minutes 18 secondes au large de la côte islandaise. Première éclipse totale visible depuis l'Europe continentale depuis le 11 août 1999.",
-    image: [`${SITE_URL}/header-bg.webp`],
+    image: [`${SITE_URL}/events/solar-eclipse-2026.png`],
     startDate: "2026-08-12T17:43:00+00:00",
     endDate: "2026-08-12T18:35:00+00:00",
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    organizer: { "@type": "Organization", name: "NASA", url: "https://eclipse.gsfc.nasa.gov/" },
     location: [
       { "@type": "Place", name: "Iceland (Westfjords, Snæfellsnes, Reykjavík)", address: { "@type": "PostalAddress", addressCountry: "IS" } },
       { "@type": "Place", name: "Spain (Galicia, Asturias, Castilla y León, Aragón, Valencia, Balearic Islands)", address: { "@type": "PostalAddress", addressCountry: "ES" } },
@@ -198,6 +200,28 @@ export default async function SolarEclipse2026Page({ params }: Props) {
             </p>
             <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "10 min read" : "10 min de lecture"}</p>
             <AuthorBio locale={locale} publishedDate="2026-05-13" modifiedDate="2026-05-13" />
+            <div className="mt-10 lg:mt-12 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+              <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=solar-eclipse-2026&template=solar-eclipse-2026&placement=hero`}>
+                <PulsatingButton className="font-karla font-bold">{isEn ? "Plan our eclipse trip" : "Cadre le voyage éclipse"}</PulsatingButton>
+              </Link>
+              <p className="text-[#001E13]/55 text-xs lg:text-sm font-karla">{isEn ? "Free · built for groups · EN/FR" : "Gratuit · pensé pour le groupe · FR/EN"}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ━━━ HERO VISUAL ━━━ */}
+        <section className="pb-16 lg:pb-20 px-6 lg:px-12">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="relative aspect-[3/2] lg:aspect-[16/9] w-full rounded-[24px] lg:rounded-[32px] overflow-hidden">
+              <Image
+                src="/events/solar-eclipse-2026.png"
+                alt={isEn ? "Total solar eclipse of 12 August 2026 — eclipse glasses held up to the corona over a Spanish wheat field" : "Éclipse solaire totale du 12 août 2026 — des lunettes ISO tenues face à la couronne au-dessus d'un champ espagnol"}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 1200px"
+                className="object-cover"
+              />
+            </div>
           </div>
         </section>
 
@@ -257,8 +281,8 @@ export default async function SolarEclipse2026Page({ params }: Props) {
               title={isEn ? "On this page" : "Sur cette page"}
               items={[
                 { id: "path", label: isEn ? "The path of totality" : "La trajectoire de la totalité" },
+                { id: "france", label: isEn ? "Will France see the eclipse?" : "Voir l'éclipse depuis la France ?" },
                 { id: "spain-vs-iceland", label: isEn ? "Spain vs Iceland vs cruise" : "Espagne vs Islande vs croisière" },
-                { id: "france", label: isEn ? "What France sees" : "Ce que voit la France" },
                 { id: "safety", label: isEn ? "Safety & glasses" : "Sécurité & lunettes" },
                 { id: "logistics", label: isEn ? "Travel & accommodation" : "Transport & hébergement" },
                 { id: "planning", label: isEn ? "Planning the trip with the crew" : "Organiser le voyage entre potes" },
@@ -315,6 +339,48 @@ export default async function SolarEclipse2026Page({ params }: Props) {
           </section>
         </FadeIn>
 
+        {/* ━━━ WHAT FRANCE SEES ━━━ */}
+        <FadeIn>
+          <section id="france" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
+            <div className="max-w-[1000px] mx-auto">
+              <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
+                {isEn ? "Will France See the Eclipse?" : "Peut-on Voir l'Éclipse Totale Depuis la France ?"}
+              </h2>
+              <p className="text-[#001E13]/60 font-karla text-base lg:text-lg mb-12 max-w-[700px]">
+                {isEn
+                  ? "A deep partial — but not a total. Important to be clear on this with the group, especially anyone who remembers the 1999 eclipse from France."
+                  : "Non, seulement une éclipse partielle profonde — pas la totalité. Important de bien clarifier dans le groupe, surtout les personnes qui ont vu la totalité de 1999 depuis la France."}
+              </p>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
+                <div className="bg-[#001E13] rounded-[24px] p-8 lg:p-10">
+                  <p className="font-nanum-pen text-[#F6391A] text-base mb-2">{isEn ? "Partial obscuration" : "Obscurcissement partiel"}</p>
+                  <h3 className="text-[#FFFBF5] text-3xl lg:text-4xl font-londrina-solid mb-6">{isEn ? "City by city" : "Ville par ville"}</h3>
+                  <ul className="space-y-3 text-[#FFFBF5]/70 font-karla text-sm lg:text-base leading-[1.7]">
+                    <li>{isEn ? "→ Biarritz: up to 99.5% (closest to the path)" : "→ Biarritz : jusqu'à 99,5 % (le plus proche de la bande)"}</li>
+                    <li>{isEn ? "→ Marseille / Nice: ~95%" : "→ Marseille / Nice : ~95 %"}</li>
+                    <li>{isEn ? "→ Bordeaux / Toulouse: ~96-97%" : "→ Bordeaux / Toulouse : ~96-97 %"}</li>
+                    <li>{isEn ? "→ Paris: 92.2%" : "→ Paris : 92,2 %"}</li>
+                    <li>{isEn ? "→ Timing: ~19:30 to ~20:30 Paris time, low sun" : "→ Horaire : ~19h30 à ~20h30 heure de Paris, soleil bas"}</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-8 lg:p-10">
+                  <p className="font-nanum-pen text-[#F6391A] text-base mb-2">{isEn ? "Why 99% is not 100%" : "Pourquoi 99 % n'est pas 100 %"}</p>
+                  <h3 className="text-[#001E13] text-3xl lg:text-4xl font-londrina-solid mb-6">{isEn ? "What you miss" : "Ce que vous ratez"}</h3>
+                  <ul className="space-y-3 text-[#001E13]/70 font-karla text-sm lg:text-base leading-[1.7]">
+                    <li>{isEn ? "→ The corona — only visible when the sun is 100% covered" : "→ La couronne — visible uniquement à 100 % de couverture"}</li>
+                    <li>{isEn ? "→ The darkness — night does not actually fall at 99%" : "→ L'obscurité — la nuit ne tombe pas vraiment à 99 %"}</li>
+                    <li>{isEn ? "→ The naked-eye safe window — never at partial, always wear glasses" : "→ La fenêtre œil-nu — jamais en partielle, lunettes obligatoires"}</li>
+                    <li>{isEn ? "→ The temperature drop and the bird silence" : "→ La baisse de température et le silence des oiseaux"}</li>
+                    <li>{isEn ? "→ The 360° sunset effect on the horizon" : "→ L'effet coucher de soleil 360° sur l'horizon"}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </FadeIn>
+
         {/* ━━━ SPAIN VS ICELAND VS CRUISE ━━━ */}
         <section id="spain-vs-iceland" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24 bg-[#FFFBF5]">
           <div className="max-w-[1000px] mx-auto">
@@ -353,47 +419,26 @@ export default async function SolarEclipse2026Page({ params }: Props) {
           </div>
         </section>
 
-        {/* ━━━ WHAT FRANCE SEES ━━━ */}
-        <FadeIn>
-          <section id="france" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
-            <div className="max-w-[1000px] mx-auto">
-              <h2 className="text-[#001E13] text-[28px] lg:text-[48px] font-londrina-solid leading-[1.08] mb-4">
-                {isEn ? "What France Actually Sees" : "Ce que la France Voit Vraiment"}
-              </h2>
-              <p className="text-[#001E13]/60 font-karla text-base lg:text-lg mb-12 max-w-[700px]">
-                {isEn
-                  ? "A deep partial — but not a total. Important to be clear on this with the group, especially anyone who remembers the 1999 eclipse from France."
-                  : "Une partielle profonde — mais pas une totalité. Important de bien clarifier avec le groupe, surtout ceux qui ont vu l'éclipse de 1999 depuis la France."}
-              </p>
-
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
-                <div className="bg-[#001E13] rounded-[24px] p-8 lg:p-10">
-                  <p className="font-nanum-pen text-[#F6391A] text-base mb-2">{isEn ? "Partial obscuration" : "Obscurcissement partiel"}</p>
-                  <h3 className="text-[#FFFBF5] text-3xl lg:text-4xl font-londrina-solid mb-6">{isEn ? "City by city" : "Ville par ville"}</h3>
-                  <ul className="space-y-3 text-[#FFFBF5]/70 font-karla text-sm lg:text-base leading-[1.7]">
-                    <li>{isEn ? "→ Biarritz: up to 99.5% (closest to the path)" : "→ Biarritz : jusqu'à 99,5 % (le plus proche de la bande)"}</li>
-                    <li>{isEn ? "→ Marseille / Nice: ~95%" : "→ Marseille / Nice : ~95 %"}</li>
-                    <li>{isEn ? "→ Bordeaux / Toulouse: ~96-97%" : "→ Bordeaux / Toulouse : ~96-97 %"}</li>
-                    <li>{isEn ? "→ Paris: 92.2%" : "→ Paris : 92,2 %"}</li>
-                    <li>{isEn ? "→ Timing: ~19:30 to ~20:30 Paris time, low sun" : "→ Horaire : ~19h30 à ~20h30 heure de Paris, soleil bas"}</li>
-                  </ul>
-                </div>
-
-                <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-8 lg:p-10">
-                  <p className="font-nanum-pen text-[#F6391A] text-base mb-2">{isEn ? "Why 99% is not 100%" : "Pourquoi 99 % n'est pas 100 %"}</p>
-                  <h3 className="text-[#001E13] text-3xl lg:text-4xl font-londrina-solid mb-6">{isEn ? "What you miss" : "Ce que vous ratez"}</h3>
-                  <ul className="space-y-3 text-[#001E13]/70 font-karla text-sm lg:text-base leading-[1.7]">
-                    <li>{isEn ? "→ The corona — only visible when the sun is 100% covered" : "→ La couronne — visible uniquement à 100 % de couverture"}</li>
-                    <li>{isEn ? "→ The darkness — night does not actually fall at 99%" : "→ L'obscurité — la nuit ne tombe pas vraiment à 99 %"}</li>
-                    <li>{isEn ? "→ The naked-eye safe window — never at partial, always wear glasses" : "→ La fenêtre œil-nu — jamais en partielle, lunettes obligatoires"}</li>
-                    <li>{isEn ? "→ The temperature drop and the bird silence" : "→ La baisse de température et le silence des oiseaux"}</li>
-                    <li>{isEn ? "→ The 360° sunset effect on the horizon" : "→ L'effet coucher de soleil 360° sur l'horizon"}</li>
-                  </ul>
-                </div>
+        {/* ━━━ MID-PAGE CTA ━━━ */}
+        <section className="px-6 lg:px-12 -mt-8 mb-4">
+          <div className="max-w-[1000px] mx-auto">
+            <div className="bg-gradient-to-br from-[#F6391A] to-[#d42d10] rounded-2xl lg:rounded-3xl p-6 lg:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="flex-1">
+                <p className="text-[#FFFBF5] font-londrina-solid text-xl lg:text-2xl mb-1">
+                  {isEn ? "Spain, Mallorca or Iceland?" : "Espagne, Majorque ou Islande ?"}
+                </p>
+                <p className="text-[#FFFBF5]/85 font-karla text-sm lg:text-base">
+                  {isEn ? "Run the destination poll with the crew, then pre-fill flights and accommodation." : "Lance le sondage destination avec la bande, puis pré-remplis vols et hébergement."}
+                </p>
               </div>
+              <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=solar-eclipse-2026&template=solar-eclipse-2026&placement=mid-options`} className="shrink-0">
+                <button className="bg-[#FFFBF5] text-[#001E13] font-karla font-bold rounded-full px-6 py-3 text-sm lg:text-base hover:bg-[#FFFBF5]/90 transition-colors">
+                  {isEn ? "Run the poll" : "Lance le sondage"}
+                </button>
+              </Link>
             </div>
-          </section>
-        </FadeIn>
+          </div>
+        </section>
 
         {/* ━━━ SAFETY ━━━ */}
         <section id="safety" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24 bg-[#FFFBF5]">
@@ -592,7 +637,7 @@ export default async function SolarEclipse2026Page({ params }: Props) {
               </p>
               <div className="flex justify-center">
                 <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=solar-eclipse-2026&template=solar-eclipse-2026`}>
-                  <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
+                  <PulsatingButton className="font-karla font-bold">{isEn ? "Run the Spain vs Iceland poll" : "Lance le sondage Espagne vs Islande"}</PulsatingButton>
                 </Link>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -27,17 +28,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const metadata = await generateMetadataFromSanity(locale, PATHNAME);
   const isEn = locale === "en";
   const title = isEn
-    ? "Tomorrowland 2026: The Trip Planner — Travel, DreamVille, Pearls & Group Budget | WePlanify"
-    : "Tomorrowland 2026 : Le Guide Voyage — Transport, DreamVille, Pearls et Budget Partagé | WePlanify";
+    ? "Tomorrowland 2026: Trip Planner — Tickets, DreamVille, Pearls"
+    : "Tomorrowland 2026 : Voyage Boom — Billets, DreamVille, Pearls";
   const description = isEn
     ? "Everything for Tomorrowland 2026 in Boom (17-19 & 24-26 July): Global Journey sold out, Eurostar from Paris, DreamVille tiers, Antwerp hotels, the Pearl cashless system and shared group budget for the Consciencia weekends."
     : "Tout sur Tomorrowland 2026 à Boom (17-19 et 24-26 juillet) : Global Journey sold out, Eurostar depuis Paris, niveaux DreamVille, hôtels à Anvers, le cashless Pearl et le budget partagé pour les week-ends Consciencia.";
   const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
+  const ogImage = `${SITE_URL}/events/tomorrowland-2026.png`;
   return {
     ...metadata, title, description,
     authors: [{ name: "Alex Martin" }],
-    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl },
-    twitter: { ...metadata.twitter, title, description },
+    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl, images: [{ url: ogImage, width: 1456, height: 816, alt: title }] },
+    twitter: { ...metadata.twitter, title, description, images: [ogImage] },
     alternates: { canonical: currentUrl, languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` } },
   };
 }
@@ -68,6 +70,7 @@ export default async function Tomorrowland2026Page({ params }: Props) {
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
     datePublished: "2026-05-13", dateModified: "2026-05-13",
+    image: [`${SITE_URL}/events/tomorrowland-2026.png`],
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
@@ -78,9 +81,7 @@ export default async function Tomorrowland2026Page({ params }: Props) {
     description: isEn
       ? "Tomorrowland Belgium 2026, the two-weekend electronic music festival at De Schorre in Boom, on 17-19 July and 24-26 July 2026. 500+ artists across 16 stages, theme 'Consciencia', headlined by Calvin Harris (Tomorrowland Belgium debut), David Guetta, Martin Garrix and Armin van Buuren."
       : "Tomorrowland Belgium 2026, le festival électronique deux week-ends à De Schorre à Boom, les 17-19 juillet et 24-26 juillet 2026. Plus de 500 artistes sur 16 scènes, thème « Consciencia », têtes d'affiche Calvin Harris (première au Tomorrowland Belgium), David Guetta, Martin Garrix et Armin van Buuren.",
-    image: [`${SITE_URL}/header-bg.webp`],
-    startDate: "2026-07-17",
-    endDate: "2026-07-26",
+    image: [`${SITE_URL}/events/tomorrowland-2026.png`],
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     organizer: { "@type": "Organization", name: "Tomorrowland", url: "https://www.tomorrowland.com" },
@@ -95,6 +96,26 @@ export default async function Tomorrowland2026Page({ params }: Props) {
       name: "De Schorre",
       address: { "@type": "PostalAddress", addressLocality: "Boom", addressRegion: "Antwerp Province", addressCountry: "BE" },
     },
+    subEvent: [
+      {
+        "@type": "MusicEvent",
+        name: "Tomorrowland 2026 — Weekend 1",
+        startDate: "2026-07-17",
+        endDate: "2026-07-19",
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: { "@type": "Place", name: "De Schorre", address: { "@type": "PostalAddress", addressLocality: "Boom", addressCountry: "BE" } },
+      },
+      {
+        "@type": "MusicEvent",
+        name: "Tomorrowland 2026 — Weekend 2",
+        startDate: "2026-07-24",
+        endDate: "2026-07-26",
+        eventStatus: "https://schema.org/EventScheduled",
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: { "@type": "Place", name: "De Schorre", address: { "@type": "PostalAddress", addressLocality: "Boom", addressCountry: "BE" } },
+      },
+    ],
   };
 
   const faqItems = isEn
@@ -105,6 +126,7 @@ export default async function Tomorrowland2026Page({ params }: Props) {
         { q: "What are the DreamVille camping tiers?", a: "DreamVille is the on-site camping village, open 5 days from Thursday around 11:00 to Monday. New for 2026, the Solara tier comes with power outlets — a meaningful upgrade for anyone who has spent a festival hunting a charging station. Marivela offers A/C and private bathrooms. Magnificent Greens is the BYO-tent option, Easy Tent and Spectacular are pre-pitched, Relax and Cabana sit in the middle. Premium tiers start around €2,700 per person for the weekend; specific tier pricing varies year to year." },
         { q: "How does the Pearl cashless system work?", a: "On-site, the only currency is the Pearl. €20 buys 11 Pearls (about €1.82 each). Top up online before the festival — every €100 in online top-up earns a 2-Pearl bonus, and the unspent balance is auto-refunded after the festival. On-site top-ups are also possible but the unspent balance needs to be manually claimed before the announced deadline. Bring a backup top-up plan in case the on-site network is slow — it routinely is around peak hours." },
         { q: "Where should I stay if I missed Global Journey?", a: "Three honest options. DreamVille on the festival grounds (walking distance to gates, the full festival experience), Antwerp city centre (~20 km north, 30 min by train, hotels €150-400/night during the festival, good restaurants and bars), or Brussels (~30 km south, broader hotel inventory but a longer commute). A serviced apartment split between 4-6 friends in Antwerp typically beats hotel rooms by 30-50% on price." },
+        { q: "What is the price of a Tomorrowland 2026 ticket?", a: "2026 pre-sale prices: Day Pass from €138, Full Madness weekend pass from €304 in pre-sale and €365 at worldwide sale, DreamVille Weekend from €410. Global Journey packages (flight or train + hotel + Full Madness pass + shuttle) ran around €2,000 for typical European cities — sold out worldwide on 17 January 2026. Premium DreamVille tiers (Solara, Marivela) start around €2,700 per person. Resale tickets via the official platform keep close to the original price; everything outside that channel is a scam risk." },
         { q: "How do you organise a Tomorrowland trip with a group of friends?", a: "Tickets and packages are individual — keep them out of the shared pool. The shared pool is for transport (Eurostar, shuttle, taxi), accommodation, group meals before and after, and the on-site Pearl float. Set categories from day one (transport, hotel, food, Pearls) so the math doesn't collapse on the way home. WePlanify keeps each category clean across the two weekends if your group is splitting, and rotates who fronts each expense." },
       ]
     : [
@@ -114,6 +136,7 @@ export default async function Tomorrowland2026Page({ params }: Props) {
         { q: "Quels sont les niveaux de camping DreamVille ?", a: "DreamVille, c'est le village de camping sur site, ouvert 5 jours du jeudi vers 11h au lundi. Nouveauté 2026, le tier Solara intègre des prises électriques — un vrai upgrade pour qui a déjà passé un festival à chasser une borne de charge. Marivela propose climatisation et salle de bain privée. Magnificent Greens, c'est l'option tente personnelle ; Easy Tent et Spectacular sont des tentes prémontées ; Relax et Cabana se situent entre les deux. Les tiers premium commencent autour de 2 700 € par personne pour le week-end ; la grille tarifaire varie d'une année sur l'autre." },
         { q: "Comment fonctionne le cashless Pearl ?", a: "Sur site, la seule monnaie c'est le Pearl. 20 € achètent 11 Pearls (environ 1,82 € l'unité). Rechargez en ligne avant le festival — chaque 100 € rechargé en ligne donne un bonus de 2 Pearls, et le solde non utilisé est remboursé automatiquement après le festival. Le rechargement sur site est possible mais le solde non utilisé doit être réclamé manuellement avant la deadline annoncée. Prévoyez un plan B au rechargement, le réseau sur place rame souvent aux heures de pointe." },
         { q: "Où dormir si on n'a pas eu de Global Journey ?", a: "Trois options honnêtes. DreamVille sur le site du festival (à pied des portes, l'expérience festival complète), Anvers centre (~20 km au nord, 30 min en train, hôtels 150-400 €/nuit sur le festival, beaux restos et bars), ou Bruxelles (~30 km au sud, offre hôtelière plus large mais trajet plus long). Un appartement partagé entre 4-6 potes à Anvers bat souvent les chambres d'hôtel de 30-50 %." },
+        { q: "Quel est le prix d'un billet Tomorrowland 2026 ?", a: "Tarifs pré-vente 2026 : Day Pass à partir de 138 €, pass week-end Full Madness à partir de 304 € en pré-vente et 365 € en vente mondiale, DreamVille Weekend à partir de 410 €. Les packages Global Journey (vol ou train + hôtel + pass Full Madness + navette) tournaient autour de 2 000 € pour les villes européennes — sold out mondialement le 17 janvier 2026. Les tiers DreamVille premium (Solara, Marivela) démarrent autour de 2 700 € par personne. Les billets sur la revente officielle restent proches du prix d'origine ; tout ce qui sort de ce canal est un risque d'arnaque." },
         { q: "Comment organiser un Tomorrowland entre potes ?", a: "Les billets et packages sont individuels — gardez-les hors du pot commun. Le pot commun, c'est pour le transport (Eurostar, navette, taxi), l'hébergement, les restos avant et après, et le float Pearl sur place. Posez les catégories dès le départ (transport, hôtel, restos, Pearls) pour ne pas finir le calcul au retour. WePlanify garde chaque catégorie au propre sur les deux week-ends si votre groupe se sépare, et fait tourner les avances dans la bande." },
       ];
 
@@ -205,6 +228,28 @@ export default async function Tomorrowland2026Page({ params }: Props) {
             </p>
             <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "9 min read" : "9 min de lecture"}</p>
             <AuthorBio locale={locale} publishedDate="2026-05-13" modifiedDate="2026-05-13" />
+            <div className="mt-10 lg:mt-12 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+              <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=tomorrowland-2026&template=tomorrowland-2026&placement=hero`}>
+                <PulsatingButton className="font-karla font-bold">{isEn ? "Build our Tomorrowland weekend" : "Cadre le Tomorrowland entre potes"}</PulsatingButton>
+              </Link>
+              <p className="text-[#001E13]/55 text-xs lg:text-sm font-karla">{isEn ? "Free · built for groups · EN/FR" : "Gratuit · pensé pour le groupe · FR/EN"}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ━━━ HERO VISUAL ━━━ */}
+        <section className="pb-16 lg:pb-20 px-6 lg:px-12">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="relative aspect-[3/2] lg:aspect-[16/9] w-full rounded-[24px] lg:rounded-[32px] overflow-hidden">
+              <Image
+                src="/events/tomorrowland-2026.png"
+                alt={isEn ? "Tomorrowland 2026 — fans in front of the ornate Mainstage with pyrotechnics in the Belgian forest at twilight" : "Tomorrowland 2026 — des fans devant la Mainstage ornée avec pyrotechnies dans la forêt belge au crépuscule"}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 1200px"
+                className="object-cover"
+              />
+            </div>
           </div>
         </section>
 
@@ -440,6 +485,27 @@ export default async function Tomorrowland2026Page({ params }: Props) {
           </div>
         </section>
 
+        {/* ━━━ MID-PAGE CTA ━━━ */}
+        <section className="px-6 lg:px-12 -mt-8 mb-4">
+          <div className="max-w-[1000px] mx-auto">
+            <div className="bg-gradient-to-br from-[#F6391A] to-[#d42d10] rounded-2xl lg:rounded-3xl p-6 lg:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="flex-1">
+                <p className="text-[#FFFBF5] font-londrina-solid text-xl lg:text-2xl mb-1">
+                  {isEn ? "Picked DreamVille or Antwerp?" : "DreamVille ou Anvers, vous avez tranché ?"}
+                </p>
+                <p className="text-[#FFFBF5]/85 font-karla text-sm lg:text-base">
+                  {isEn ? "Lock the Eurostar, the accommodation and the Pearl float in one shared plan." : "Verrouille l'Eurostar, l'hébergement et le float Pearl dans un plan partagé."}
+                </p>
+              </div>
+              <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=tomorrowland-2026&template=tomorrowland-2026&placement=mid-sleep`} className="shrink-0">
+                <button className="bg-[#FFFBF5] text-[#001E13] font-karla font-bold rounded-full px-6 py-3 text-sm lg:text-base hover:bg-[#FFFBF5]/90 transition-colors">
+                  {isEn ? "Start the plan" : "Lance le plan"}
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* ━━━ PEARLS & PRACTICALITIES ━━━ */}
         <FadeIn>
           <section id="pearls" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
@@ -593,11 +659,14 @@ export default async function Tomorrowland2026Page({ params }: Props) {
                 {isEn ? "Build Your Tomorrowland Trip" : "Construisez Votre Voyage Tomorrowland"}
               </h2>
               <p className="text-[#FFFBF5]/80 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-                {isEn ? "Eurostar, DreamVille or Antwerp apartment, Pearl float, festival schedule, shared budget — one plan, your whole crew on the same page." : "Eurostar, DreamVille ou appartement à Anvers, float Pearl, grille du festival, budget partagé — un seul plan, toute votre bande alignée."}
+                {isEn ? "Eurostar, DreamVille or Antwerp apartment, Pearl float, festival schedule, shared budget — one plan, your whole crew on the same page. Pick your weekend below." : "Eurostar, DreamVille ou appartement à Anvers, float Pearl, grille du festival, budget partagé — un seul plan, toute votre bande alignée. Choisissez votre week-end ci-dessous."}
               </p>
-              <div className="flex justify-center">
-                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=tomorrowland-2026&template=tomorrowland-2026`}>
-                  <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=tomorrowland-2026&template=tomorrowland-2026&placement=bottom-w1`}>
+                  <PulsatingButton className="font-karla font-bold">{isEn ? "Plan Weekend 1 (17–19 Jul)" : "Cadre le Week-end 1 (17-19 juil)"}</PulsatingButton>
+                </Link>
+                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=tomorrowland-2026-w2&template=tomorrowland-2026-w2&placement=bottom-w2`} className="text-[#FFFBF5] font-karla font-bold text-sm lg:text-base hover:underline border border-[#FFFBF5]/40 hover:border-[#FFFBF5] rounded-full px-6 py-3 transition-colors">
+                  {isEn ? "Or Weekend 2 (24–26 Jul) →" : "Ou Week-end 2 (24-26 juil) →"}
                 </Link>
               </div>
             </div>
