@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const metadata = await generateMetadataFromSanity(locale, PATHNAME);
   const isEn = locale === "en";
   const title = isEn
-    ? "Hellfest 2026: The Trip Planner for Clisson — Travel, Camping & Group Budget | WePlanify"
-    : "Hellfest 2026 : Le Guide Voyage à Clisson — Transports, Camping et Budget Partagé | WePlanify";
+    ? "Hellfest 2026: Trip Planner — Travel, Camping & Prices"
+    : "Hellfest 2026 : Voyage à Clisson — TGV, Camping, Prix";
   const description = isEn
     ? "Everything for Hellfest 2026 (18–21 June, Clisson): sold-out resale plan, TGV from Paris/Brussels, Clisson shuttles, camping vs Nantes hotels, cashless system and shared group budget for the metal pilgrimage."
     : "Tout sur le Hellfest 2026 (18-21 juin, Clisson) : plan revente sur la billetterie sold out, TGV depuis Paris/Bruxelles, navettes Clisson, camping vs hôtels Nantes, cashless et budget partagé pour le pèlerinage metal entre potes.";
@@ -105,6 +105,7 @@ export default async function Hellfest2026Page({ params }: Props) {
         { q: "Where should I stay around the festival?", a: "Three options. Camping classique is included in the 4-day pass — basic but the heart of the Hellfest experience. Premium Easy Camp (tipis, chalets, tiny rooms) is sold out for 2026. Off-site, Nantes hotels (30 km away) average around €130-180/night during festival weekend, up 20-60% from normal rates, and you'll need to factor in transport time both ways. A serviced apartment split with the crew often comes out best on price." },
         { q: "How does the Hellfest cashless system work?", a: "The site is 100% cashless and the only payment method is your festival wristband. Top it up online at cashless.hellfest.fr (no fee on top-ups after the first) or at on-site banks. The first activation costs €1.50. There are very few ATMs on-site — Hell City Square and the Clisson supermarket — and queues are long, so top up before you arrive. Unspent balance is refundable after the festival within the announced window." },
         { q: "What's the weather like in Clisson in mid-June?", a: "Warm days around 22-24°C, cool nights around 12-13°C, with roughly 11 rainy days across the month so a light rain jacket is non-negotiable. The site is open with little shade — bring sunscreen, a refillable water bottle and a hat. The longest days of the year mean ~16 hours of daylight, perfect for the festival rhythm but rough on phone batteries." },
+        { q: "What is the price of a Hellfest 2026 pass?", a: "Hellfest 2026 4-day passes were sold at around €369 in pre-sale and €389 standard before going sold out. Single-day passes sat around €99 (also sold out). On the official resale platform on tickets.hellfest.fr, sellers can re-list at the original price only — no legal markup, so a resale 4-day pass is still ~€389. Add ~€132/night for a Nantes hotel base (with festival surge), ~€16-90 for a Paris-Nantes TGV, and €150-200 of on-site cashless per person to get a realistic total budget around €700-1,000 for the four days." },
         { q: "How do you organise a Hellfest trip with a group of friends?", a: "Resale tickets are individual — keep them out of the shared pool. The shared pool is for the TGV, hotel or apartment, on-site cashless top-ups, group meals in Nantes before or after, and the rental car or shuttle. Set categories from day one (transport, accommodation, food, cashless float) so the math doesn't collapse on the way home. WePlanify keeps each category clean and lets the group front expenses by rotation." },
       ]
     : [
@@ -114,6 +115,7 @@ export default async function Hellfest2026Page({ params }: Props) {
         { q: "Où dormir autour du festival ?", a: "Trois options. Le camping classique est inclus dans le pass 4 jours — basique mais c'est le cœur de l'expérience Hellfest. L'Easy Camp premium (tipis, chalets, tiny rooms) est sold out pour 2026. Hors site, les hôtels nantais (30 km) tournent autour de 130-180 €/nuit sur le week-end, soit +20 à 60 % par rapport au tarif normal, et il faut compter le trajet aller-retour. Un appartement partagé entre potes ressort souvent comme la meilleure option budget." },
         { q: "Comment fonctionne le cashless du Hellfest ?", a: "Le site est 100 % cashless, le seul moyen de paiement c'est votre bracelet. Vous le rechargez sur cashless.hellfest.fr (pas de frais sur les rechargements suivants) ou aux banques cashless sur place. Première activation à 1,50 €. Très peu de DAB sur le site — Hell City Square et le supermarché de Clisson — et les files sont longues, donc rechargez avant d'arriver. Le solde non utilisé est remboursable après le festival dans la fenêtre annoncée." },
         { q: "Quelle météo prévoir à Clisson mi-juin ?", a: "Journées douces autour de 22-24°C, nuits fraîches autour de 12-13°C, et environ 11 jours de pluie sur le mois donc un coupe-vent imperméable est indispensable. Le site est ouvert avec peu d'ombre — crème solaire, gourde et casquette obligatoires. Les journées les plus longues de l'année (~16 h de jour) rythment bien le festival mais épuisent les batteries de téléphone." },
+        { q: "Quel est le prix du Hellfest 2026 ?", a: "Le pass 4 jours Hellfest 2026 s'est vendu autour de 369 € en pré-vente et 389 € en tarif standard avant de partir sold out. Le pass 1 jour tournait autour de 99 € (aussi sold out). Sur la revente officielle tickets.hellfest.fr, les vendeurs ne peuvent pas légalement majorer — un pass 4 jours en revente reste donc à ~389 €. Ajoutez ~132 €/nuit pour un hôtel à Nantes (avec la surchauffe festival), 16-90 € pour le TGV Paris-Nantes, et 150-200 € de cashless sur place par personne pour un budget réaliste autour de 700-1 000 € sur les quatre jours." },
         { q: "Comment organiser un Hellfest entre potes ?", a: "Les billets de revente sont individuels — gardez-les hors du pot commun. Le pot commun, c'est pour le TGV, l'hôtel ou l'appartement, les rechargements cashless, les restos à Nantes avant et après, et la voiture de location ou la navette. Posez les catégories dès le départ (transport, hébergement, restos, float cashless) pour ne pas finir le calcul au retour. WePlanify garde chaque catégorie au propre et permet de faire tourner les avances dans le groupe." },
       ];
 
@@ -205,6 +207,12 @@ export default async function Hellfest2026Page({ params }: Props) {
             </p>
             <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "9 min read" : "9 min de lecture"}</p>
             <AuthorBio locale={locale} publishedDate="2026-05-13" modifiedDate="2026-05-13" />
+            <div className="mt-10 lg:mt-12 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+              <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=hellfest-2026&template=hellfest-2026&placement=hero`}>
+                <PulsatingButton className="font-karla font-bold">{isEn ? "Plan our Hellfest crew" : "Cadre le Hellfest entre potes"}</PulsatingButton>
+              </Link>
+              <p className="text-[#001E13]/55 text-xs lg:text-sm font-karla">{isEn ? "Free · built for groups · EN/FR" : "Gratuit · pensé pour le groupe · FR/EN"}</p>
+            </div>
           </div>
         </section>
 
@@ -440,6 +448,27 @@ export default async function Hellfest2026Page({ params }: Props) {
           </div>
         </section>
 
+        {/* ━━━ MID-PAGE CTA ━━━ */}
+        <section className="px-6 lg:px-12 -mt-8 mb-4">
+          <div className="max-w-[1000px] mx-auto">
+            <div className="bg-gradient-to-br from-[#F6391A] to-[#d42d10] rounded-2xl lg:rounded-3xl p-6 lg:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="flex-1">
+                <p className="text-[#FFFBF5] font-londrina-solid text-xl lg:text-2xl mb-1">
+                  {isEn ? "Decided where to sleep?" : "Tu sais où vous dormez ?"}
+                </p>
+                <p className="text-[#FFFBF5]/85 font-karla text-sm lg:text-base">
+                  {isEn ? "Lock the apartment, the TGV split and the cashless float in one shared plan." : "Verrouille l'appart, la répartition TGV et le float cashless dans un plan partagé."}
+                </p>
+              </div>
+              <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=hellfest-2026&template=hellfest-2026&placement=mid-sleep`} className="shrink-0">
+                <button className="bg-[#FFFBF5] text-[#001E13] font-karla font-bold rounded-full px-6 py-3 text-sm lg:text-base hover:bg-[#FFFBF5]/90 transition-colors">
+                  {isEn ? "Start the plan" : "Lance le plan"}
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* ━━━ CASHLESS & PRACTICALITIES ━━━ */}
         <FadeIn>
           <section id="cashless" className="py-20 lg:py-28 px-6 lg:px-12 scroll-mt-24">
@@ -589,7 +618,7 @@ export default async function Hellfest2026Page({ params }: Props) {
               </p>
               <div className="flex justify-center">
                 <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=hellfest-2026&template=hellfest-2026`}>
-                  <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
+                  <PulsatingButton className="font-karla font-bold">{isEn ? "Set up the cashless float + TGV split" : "Cale le float cashless + TGV"}</PulsatingButton>
                 </Link>
               </div>
             </div>

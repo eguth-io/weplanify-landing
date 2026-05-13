@@ -102,6 +102,22 @@ export default function Footer({ footerData }: FooterProps) {
         label: locale === "fr" ? "Coupe du Monde 2026" : "World Cup 2026",
         url: `/${locale}/world-cup-2026-trip-planner`,
       },
+      {
+        label: locale === "fr" ? "Finale Ligue des Champions 2026" : "Champions League Final 2026",
+        url: `/${locale}/champions-league-final-2026-psg-arsenal`,
+      },
+      {
+        label: locale === "fr" ? "Voyage Hellfest 2026" : "Hellfest 2026",
+        url: `/${locale}/hellfest-2026-trip-planner`,
+      },
+      {
+        label: locale === "fr" ? "Voyage Tomorrowland 2026" : "Tomorrowland 2026",
+        url: `/${locale}/tomorrowland-2026-trip-planner`,
+      },
+      {
+        label: locale === "fr" ? "Voyage Éclipse 12 août 2026" : "Solar Eclipse 12 Aug 2026",
+        url: `/${locale}/solar-eclipse-2026-trip-planner`,
+      },
     ],
   };
 
