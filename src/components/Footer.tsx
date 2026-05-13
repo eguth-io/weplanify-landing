@@ -118,6 +118,10 @@ export default function Footer({ footerData }: FooterProps) {
         label: locale === "fr" ? "Voyage Éclipse 12 août 2026" : "Solar Eclipse 12 Aug 2026",
         url: `/${locale}/solar-eclipse-2026-trip-planner`,
       },
+      {
+        label: locale === "fr" ? "Voyage Ultra Europe 2026" : "Ultra Europe 2026",
+        url: `/${locale}/ultra-europe-2026-trip-planner`,
+      },
     ],
   };
 

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -33,11 +34,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? "Everything for Tomorrowland 2026 in Boom (17-19 & 24-26 July): Global Journey sold out, Eurostar from Paris, DreamVille tiers, Antwerp hotels, the Pearl cashless system and shared group budget for the Consciencia weekends."
     : "Tout sur Tomorrowland 2026 à Boom (17-19 et 24-26 juillet) : Global Journey sold out, Eurostar depuis Paris, niveaux DreamVille, hôtels à Anvers, le cashless Pearl et le budget partagé pour les week-ends Consciencia.";
   const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
+  const ogImage = `${SITE_URL}/events/tomorrowland-2026.png`;
   return {
     ...metadata, title, description,
     authors: [{ name: "Alex Martin" }],
-    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl },
-    twitter: { ...metadata.twitter, title, description },
+    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl, images: [{ url: ogImage, width: 1456, height: 816, alt: title }] },
+    twitter: { ...metadata.twitter, title, description, images: [ogImage] },
     alternates: { canonical: currentUrl, languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` } },
   };
 }
@@ -68,6 +70,7 @@ export default async function Tomorrowland2026Page({ params }: Props) {
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
     datePublished: "2026-05-13", dateModified: "2026-05-13",
+    image: [`${SITE_URL}/events/tomorrowland-2026.png`],
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
@@ -78,7 +81,7 @@ export default async function Tomorrowland2026Page({ params }: Props) {
     description: isEn
       ? "Tomorrowland Belgium 2026, the two-weekend electronic music festival at De Schorre in Boom, on 17-19 July and 24-26 July 2026. 500+ artists across 16 stages, theme 'Consciencia', headlined by Calvin Harris (Tomorrowland Belgium debut), David Guetta, Martin Garrix and Armin van Buuren."
       : "Tomorrowland Belgium 2026, le festival électronique deux week-ends à De Schorre à Boom, les 17-19 juillet et 24-26 juillet 2026. Plus de 500 artistes sur 16 scènes, thème « Consciencia », têtes d'affiche Calvin Harris (première au Tomorrowland Belgium), David Guetta, Martin Garrix et Armin van Buuren.",
-    image: [`${SITE_URL}/header-bg.webp`],
+    image: [`${SITE_URL}/events/tomorrowland-2026.png`],
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     organizer: { "@type": "Organization", name: "Tomorrowland", url: "https://www.tomorrowland.com" },
@@ -230,6 +233,22 @@ export default async function Tomorrowland2026Page({ params }: Props) {
                 <PulsatingButton className="font-karla font-bold">{isEn ? "Build our Tomorrowland weekend" : "Cadre le Tomorrowland entre potes"}</PulsatingButton>
               </Link>
               <p className="text-[#001E13]/55 text-xs lg:text-sm font-karla">{isEn ? "Free · built for groups · EN/FR" : "Gratuit · pensé pour le groupe · FR/EN"}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ━━━ HERO VISUAL ━━━ */}
+        <section className="pb-16 lg:pb-20 px-6 lg:px-12">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="relative aspect-[3/2] lg:aspect-[16/9] w-full rounded-[24px] lg:rounded-[32px] overflow-hidden">
+              <Image
+                src="/events/tomorrowland-2026.png"
+                alt={isEn ? "Tomorrowland 2026 — fans in front of the ornate Mainstage with pyrotechnics in the Belgian forest at twilight" : "Tomorrowland 2026 — des fans devant la Mainstage ornée avec pyrotechnies dans la forêt belge au crépuscule"}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 1200px"
+                className="object-cover"
+              />
             </div>
           </div>
         </section>

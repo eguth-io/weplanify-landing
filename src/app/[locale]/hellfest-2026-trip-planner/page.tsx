@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -33,11 +34,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? "Everything for Hellfest 2026 (18–21 June, Clisson): sold-out resale plan, TGV from Paris/Brussels, Clisson shuttles, camping vs Nantes hotels, cashless system and shared group budget for the metal pilgrimage."
     : "Tout sur le Hellfest 2026 (18-21 juin, Clisson) : plan revente sur la billetterie sold out, TGV depuis Paris/Bruxelles, navettes Clisson, camping vs hôtels Nantes, cashless et budget partagé pour le pèlerinage metal entre potes.";
   const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
+  const ogImage = `${SITE_URL}/events/hellfest-2026.png`;
   return {
     ...metadata, title, description,
     authors: [{ name: "Alex Martin" }],
-    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl },
-    twitter: { ...metadata.twitter, title, description },
+    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl, images: [{ url: ogImage, width: 1456, height: 816, alt: title }] },
+    twitter: { ...metadata.twitter, title, description, images: [ogImage] },
     alternates: { canonical: currentUrl, languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` } },
   };
 }
@@ -68,6 +70,7 @@ export default async function Hellfest2026Page({ params }: Props) {
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
     datePublished: "2026-05-13", dateModified: "2026-05-13",
+    image: [`${SITE_URL}/events/hellfest-2026.png`],
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
@@ -78,7 +81,7 @@ export default async function Hellfest2026Page({ params }: Props) {
     description: isEn
       ? "Hellfest 2026, the four-day metal and rock festival at the Val de Moine in Clisson, France, from 18 to 21 June 2026. 183 artists across 6 stages, headlined by Bring Me The Horizon, Iron Maiden, Limp Bizkit and The Offspring."
       : "Hellfest 2026, le festival metal et rock de quatre jours au Val de Moine à Clisson, France, du 18 au 21 juin 2026. 183 artistes sur 6 scènes, têtes d'affiche Bring Me The Horizon, Iron Maiden, Limp Bizkit et The Offspring.",
-    image: [`${SITE_URL}/header-bg.webp`],
+    image: [`${SITE_URL}/events/hellfest-2026.png`],
     startDate: "2026-06-18",
     endDate: "2026-06-21",
     eventStatus: "https://schema.org/EventScheduled",
@@ -212,6 +215,22 @@ export default async function Hellfest2026Page({ params }: Props) {
                 <PulsatingButton className="font-karla font-bold">{isEn ? "Plan our Hellfest crew" : "Cadre le Hellfest entre potes"}</PulsatingButton>
               </Link>
               <p className="text-[#001E13]/55 text-xs lg:text-sm font-karla">{isEn ? "Free · built for groups · EN/FR" : "Gratuit · pensé pour le groupe · FR/EN"}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ━━━ HERO VISUAL ━━━ */}
+        <section className="pb-16 lg:pb-20 px-6 lg:px-12">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="relative aspect-[3/2] lg:aspect-[16/9] w-full rounded-[24px] lg:rounded-[32px] overflow-hidden">
+              <Image
+                src="/events/hellfest-2026.png"
+                alt={isEn ? "Hellfest 2026 — friends watching the sunset over Clisson vineyards and the festival site" : "Hellfest 2026 — des potes au coucher de soleil au-dessus des vignobles de Clisson et du site du festival"}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 1200px"
+                className="object-cover"
+              />
             </div>
           </div>
         </section>

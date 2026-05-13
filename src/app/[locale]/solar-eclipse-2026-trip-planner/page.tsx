@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -33,11 +34,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? "Everything for the 12 August 2026 total solar eclipse: path of totality across Iceland and northern Spain, when and where the totality is longest, ISO 12312-2 glasses, cruise options, and how to plan the trip from France with a group."
     : "Tout sur l'éclipse solaire totale du 12 août 2026 : trajectoire de la totalité en Islande et dans le nord de l'Espagne, où la totalité est la plus longue, lunettes ISO 12312-2, croisières, et comment organiser le voyage depuis la France à plusieurs.";
   const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
+  const ogImage = `${SITE_URL}/events/solar-eclipse-2026.png`;
   return {
     ...metadata, title, description,
     authors: [{ name: "Alex Martin" }],
-    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl },
-    twitter: { ...metadata.twitter, title, description },
+    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl, images: [{ url: ogImage, width: 1456, height: 816, alt: title }] },
+    twitter: { ...metadata.twitter, title, description, images: [ogImage] },
     alternates: { canonical: currentUrl, languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` } },
   };
 }
@@ -68,6 +70,7 @@ export default async function SolarEclipse2026Page({ params }: Props) {
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
     datePublished: "2026-05-13", dateModified: "2026-05-13",
+    image: [`${SITE_URL}/events/solar-eclipse-2026.png`],
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
@@ -78,7 +81,7 @@ export default async function SolarEclipse2026Page({ params }: Props) {
     description: isEn
       ? "Total solar eclipse on Wednesday 12 August 2026. Path of totality crosses eastern Greenland, western Iceland and northern Spain. Maximum totality 2 minutes 18 seconds off the Icelandic coast. First total solar eclipse visible from mainland Europe since 11 August 1999."
       : "Éclipse solaire totale le mercredi 12 août 2026. La trajectoire de la totalité traverse l'est du Groenland, l'ouest de l'Islande et le nord de l'Espagne. Totalité maximale de 2 minutes 18 secondes au large de la côte islandaise. Première éclipse totale visible depuis l'Europe continentale depuis le 11 août 1999.",
-    image: [`${SITE_URL}/header-bg.webp`],
+    image: [`${SITE_URL}/events/solar-eclipse-2026.png`],
     startDate: "2026-08-12T17:43:00+00:00",
     endDate: "2026-08-12T18:35:00+00:00",
     eventStatus: "https://schema.org/EventScheduled",
@@ -202,6 +205,22 @@ export default async function SolarEclipse2026Page({ params }: Props) {
                 <PulsatingButton className="font-karla font-bold">{isEn ? "Plan our eclipse trip" : "Cadre le voyage éclipse"}</PulsatingButton>
               </Link>
               <p className="text-[#001E13]/55 text-xs lg:text-sm font-karla">{isEn ? "Free · built for groups · EN/FR" : "Gratuit · pensé pour le groupe · FR/EN"}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ━━━ HERO VISUAL ━━━ */}
+        <section className="pb-16 lg:pb-20 px-6 lg:px-12">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="relative aspect-[3/2] lg:aspect-[16/9] w-full rounded-[24px] lg:rounded-[32px] overflow-hidden">
+              <Image
+                src="/events/solar-eclipse-2026.png"
+                alt={isEn ? "Total solar eclipse of 12 August 2026 — eclipse glasses held up to the corona over a Spanish wheat field" : "Éclipse solaire totale du 12 août 2026 — des lunettes ISO tenues face à la couronne au-dessus d'un champ espagnol"}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 1200px"
+                className="object-cover"
+              />
             </div>
           </div>
         </section>
