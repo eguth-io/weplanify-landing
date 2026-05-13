@@ -659,11 +659,14 @@ export default async function Tomorrowland2026Page({ params }: Props) {
                 {isEn ? "Build Your Tomorrowland Trip" : "Construisez Votre Voyage Tomorrowland"}
               </h2>
               <p className="text-[#FFFBF5]/80 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-                {isEn ? "Eurostar, DreamVille or Antwerp apartment, Pearl float, festival schedule, shared budget — one plan, your whole crew on the same page." : "Eurostar, DreamVille ou appartement à Anvers, float Pearl, grille du festival, budget partagé — un seul plan, toute votre bande alignée."}
+                {isEn ? "Eurostar, DreamVille or Antwerp apartment, Pearl float, festival schedule, shared budget — one plan, your whole crew on the same page. Pick your weekend below." : "Eurostar, DreamVille ou appartement à Anvers, float Pearl, grille du festival, budget partagé — un seul plan, toute votre bande alignée. Choisissez votre week-end ci-dessous."}
               </p>
-              <div className="flex justify-center">
-                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=tomorrowland-2026&template=tomorrowland-2026`}>
-                  <PulsatingButton className="font-karla font-bold">{isEn ? "Pre-fill the Pearl float + DreamVille split" : "Pré-remplis le float Pearl + DreamVille"}</PulsatingButton>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=tomorrowland-2026&template=tomorrowland-2026&placement=bottom-w1`}>
+                  <PulsatingButton className="font-karla font-bold">{isEn ? "Plan Weekend 1 (17–19 Jul)" : "Cadre le Week-end 1 (17-19 juil)"}</PulsatingButton>
+                </Link>
+                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=tomorrowland-2026-w2&template=tomorrowland-2026-w2&placement=bottom-w2`} className="text-[#FFFBF5] font-karla font-bold text-sm lg:text-base hover:underline border border-[#FFFBF5]/40 hover:border-[#FFFBF5] rounded-full px-6 py-3 transition-colors">
+                  {isEn ? "Or Weekend 2 (24–26 Jul) →" : "Ou Week-end 2 (24-26 juil) →"}
                 </Link>
               </div>
             </div>
