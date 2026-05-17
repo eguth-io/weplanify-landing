@@ -454,112 +454,231 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
 export const AiGlobeJourney = ExplorerCards;
 
 // ============================================================================
-// 2. LIVE VOTING
+// 2. LIVE VOTING — mirrors the real polls.view.tsx layout:
+// creator header → category badge + question → 3 choice rows with thumbnail,
+// checkbox, voter avatars, percentage, bottom progress bar → footer count.
 // ============================================================================
+interface PollOption {
+  label: string;
+  subtitle: string;
+  price?: string;
+  rating: number;
+  image: string;
+}
+
+interface PollVoter {
+  id: number;
+  option: number;
+  avatar: string;
+}
+
+const POLL_OPTIONS: Record<'en' | 'fr', PollOption[]> = {
+  fr: [
+    { label: 'Hôtel Bairro Alto', subtitle: 'Lisbonne · centre', price: '145€/n', rating: 4.6, image: EXPLORER_PHOTO('1611892440504-42a792e24d32') },
+    { label: 'Airbnb Príncipe Real', subtitle: 'Lisbonne · vue ville', price: '95€/n', rating: 4.4, image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
+    { label: 'Hostel Lisbon Lounge', subtitle: 'Lisbonne · auberge', price: '35€/n', rating: 4.0, image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
+  ],
+  en: [
+    { label: 'Hôtel Bairro Alto', subtitle: 'Lisbon · downtown', price: '€145/n', rating: 4.6, image: EXPLORER_PHOTO('1611892440504-42a792e24d32') },
+    { label: 'Airbnb Príncipe Real', subtitle: 'Lisbon · city view', price: '€95/n', rating: 4.4, image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
+    { label: 'Hostel Lisbon Lounge', subtitle: 'Lisbon · hostel', price: '€35/n', rating: 4.0, image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
+  ],
+};
+
+// Stable voter avatars, deterministic across SSR + client. Emoji avatars mirror
+// what the real app shows on each poll choice (max 3 visible + "+N" overflow).
+const POLL_VOTERS_SCRIPT: PollVoter[] = [
+  { id: 1, option: 0, avatar: '👩‍🎨' },
+  { id: 2, option: 0, avatar: '🧔' },
+  { id: 3, option: 1, avatar: '👱‍♀️' },
+  { id: 4, option: 0, avatar: '🧑‍💻' },
+  { id: 5, option: 1, avatar: '😊' },
+];
+
 export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
-  const lang = locale === 'fr' ? 'fr' : 'en';
+  const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
   const t = lang === 'fr'
-    ? { question: 'On va où demain ?', votes: 'votes', live: 'En direct', winner: 'Kyoto gagne !' }
-    : { question: 'Where to go tomorrow?', votes: 'votes', live: 'Live', winner: 'Kyoto wins!' };
-  const [votes, setVotes] = useState([0, 0, 0]);
-  const [voters, setVoters] = useState<Array<{ id: number; option: number; avatar: string }>>([]);
-  const options = ['Kyoto', 'Osaka', 'Nara'];
+    ? {
+        question: 'Où dormir à Lisbonne ?',
+        category: 'Hébergement',
+        creator: 'Marie',
+        time: 'il y a 2h',
+        status: 'Sondage en cours',
+        single: 'Choix unique',
+        options: 'options',
+        participants: 'participants',
+        votes: 'votes',
+        more: 'autre',
+      }
+    : {
+        question: 'Where to stay in Lisbon?',
+        category: 'Accommodation',
+        creator: 'Marie',
+        time: '2h ago',
+        status: 'Vote in progress',
+        single: 'Single choice',
+        options: 'options',
+        participants: 'participants',
+        votes: 'votes',
+        more: 'more',
+      };
+
+  const options = POLL_OPTIONS[lang];
+  const [voters, setVoters] = useState<PollVoter[]>([]);
 
   useEffect(() => {
     if (!autoPlay) return;
-
-    const intervals = [
-      setTimeout(() => { setVotes([1, 0, 0]); setVoters([{ id: 1, option: 0, avatar: 'M' }]); }, 500),
-      setTimeout(() => { setVotes([2, 0, 0]); setVoters((v) => [...v, { id: 2, option: 0, avatar: 'A' }]); }, 1000),
-      setTimeout(() => { setVotes([2, 1, 0]); setVoters((v) => [...v, { id: 3, option: 1, avatar: 'S' }]); }, 1500),
-      setTimeout(() => { setVotes([3, 1, 0]); setVoters((v) => [...v, { id: 4, option: 0, avatar: 'L' }]); }, 2000),
-      setTimeout(() => { setVotes([3, 1, 1]); setVoters((v) => [...v, { id: 5, option: 2, avatar: 'J' }]); }, 2500),
-    ];
-
-    return () => intervals.forEach(clearTimeout);
+    // Voters trickle in to mimic a live group decision.
+    const timers = POLL_VOTERS_SCRIPT.map((v, i) =>
+      setTimeout(() => {
+        setVoters((prev) => (prev.find((p) => p.id === v.id) ? prev : [...prev, v]));
+      }, 500 + i * 500),
+    );
+    return () => timers.forEach(clearTimeout);
   }, [autoPlay]);
 
-  const total = votes.reduce((a, b) => a + b, 0) || 1;
-  const winner = votes.indexOf(Math.max(...votes));
+  const total = voters.length || 1;
+  const votesByOption = options.map((_, i) => voters.filter((v) => v.option === i).length);
+  const winningIdx = votesByOption.indexOf(Math.max(...votesByOption));
 
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-violet-100 to-purple-50 p-5">
-      <div className="mb-4 flex items-center justify-between">
+    <div className="relative h-full min-h-[280px] lg:min-h-[420px] w-full overflow-hidden rounded-3xl bg-white p-4 lg:p-5 shadow-sm border border-slate-200/70">
+      {/* Creator header — mirrors the real polls header (avatar + name + time + status badge) */}
+      <div className="flex items-center justify-between mb-3 lg:mb-4">
         <div className="flex items-center gap-2">
-          <div className="flex w-8 h-8 items-center justify-center rounded-xl" style={{ backgroundColor: colors.poll }}>
-            <Icons.Vote className="w-4 h-4 text-white" />
+          <div className="flex w-8 h-8 items-center justify-center rounded-full text-base shrink-0 ring-2 ring-white shadow-sm" style={{ backgroundColor: '#FFE4D6' }}>
+            👩‍🎨
           </div>
-          <div>
-            <div className="text-sm font-semibold text-slate-800">{t.question}</div>
-            <div className="text-xs text-slate-500">{total} {t.votes}</div>
+          <div className="leading-tight">
+            <div className="text-[12px] font-semibold text-slate-900">{t.creator}</div>
+            <div className="text-[10px] text-slate-500">{t.time}</div>
           </div>
         </div>
-        <div className="flex items-center gap-1.5 rounded-full bg-red-500/10 px-2 py-1">
+        <div className="flex items-center gap-1 rounded-full px-2 py-0.5" style={{ backgroundColor: `${colors.poll}1A` }}>
           <motion.div
-            animate={{ scale: [1, 1.3, 1] }}
-            transition={{ duration: 1, repeat: Infinity }}
-            className="w-2 h-2 rounded-full bg-red-500"
+            animate={{ scale: [1, 1.3, 1], opacity: [0.6, 1, 0.6] }}
+            transition={{ duration: 1.6, repeat: Infinity }}
+            className="w-1.5 h-1.5 rounded-full"
+            style={{ backgroundColor: colors.poll }}
           />
-          <span className="text-xs font-medium text-red-600">{t.live}</span>
+          <span className="text-[10px] font-semibold" style={{ color: colors.poll }}>{t.status}</span>
         </div>
       </div>
 
-      <div className="space-y-3">
+      {/* Category badge + question */}
+      <div className="mb-3">
+        <div className="inline-flex items-center gap-1.5 mb-1.5 rounded-full bg-slate-100 px-2 py-0.5">
+          <Icons.Bed className="w-3 h-3 text-slate-600" />
+          <span className="text-[10px] font-medium text-slate-600">{t.category}</span>
+        </div>
+        <div className="text-sm lg:text-base font-semibold text-slate-900 leading-snug">{t.question}</div>
+        <div className="text-[10px] text-slate-500 mt-0.5">
+          {t.single} · {options.length} {t.options}
+        </div>
+      </div>
+
+      {/* Poll choices — match poll-choice-option.tsx EventItemChoice variant */}
+      <div className="space-y-2">
         {options.map((opt, i) => {
-          const percentage = Math.round((votes[i] / total) * 100);
           const optionVoters = voters.filter((v) => v.option === i);
+          const percentage = Math.round((optionVoters.length / total) * 100);
+          const isWinning = i === winningIdx && voters.length > 0;
 
           return (
-            <motion.div
-              key={opt}
-              className={`relative overflow-hidden rounded-xl border-2 bg-white p-3 transition-all ${
-                winner === i && total > 1 ? 'border-violet-400 shadow-lg shadow-violet-200' : 'border-slate-200'
+            <div
+              key={opt.label}
+              className={`relative rounded-xl border bg-white overflow-hidden transition-shadow ${
+                isWinning ? 'border-transparent shadow-md ring-2' : 'border-slate-200'
               }`}
+              style={isWinning ? { boxShadow: `0 4px 12px -2px ${colors.poll}30`, ['--tw-ring-color' as string]: `${colors.poll}40` } : undefined}
             >
-              <motion.div
-                className="absolute inset-y-0 left-0 rounded-xl"
-                style={{ backgroundColor: `${colors.poll}15` }}
-                animate={{ width: `${percentage}%` }}
-                transition={{ duration: 0.5 }}
-              />
-              <div className="relative flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <span className="font-medium text-slate-700">{opt}</span>
-                  <div className="flex -space-x-2">
-                    <AnimatePresence>
-                      {optionVoters.map((voter) => (
-                        <motion.div
-                          key={voter.id}
-                          initial={{ scale: 0, x: -20 }}
-                          animate={{ scale: 1, x: 0 }}
-                          className="flex w-6 h-6 items-center justify-center rounded-full border-2 border-white text-[10px] font-bold text-white"
-                          style={{ backgroundColor: colors.participant }}
-                        >
-                          {voter.avatar}
-                        </motion.div>
-                      ))}
-                    </AnimatePresence>
-                  </div>
+              <div className="flex items-center gap-2.5 p-2 pr-3">
+                {/* Checkbox */}
+                <div
+                  className="flex w-4 h-4 shrink-0 items-center justify-center rounded-md border-2 transition-colors"
+                  style={{
+                    backgroundColor: isWinning ? colors.poll : 'transparent',
+                    borderColor: isWinning ? colors.poll : '#CBD5E1',
+                  }}
+                >
+                  {isWinning && <Icons.Check className="w-2.5 h-2.5 text-white" />}
                 </div>
-                <span className="text-sm font-bold" style={{ color: colors.poll }}>{percentage}%</span>
+
+                {/* Thumbnail */}
+                <div className="relative w-12 h-12 lg:w-14 lg:h-14 shrink-0 rounded-lg overflow-hidden bg-slate-100">
+                  <img src={opt.image} alt={opt.label} className="absolute inset-0 w-full h-full object-cover" loading="eager" />
+                </div>
+
+                {/* Title + subtitle + price */}
+                <div className="flex-1 min-w-0">
+                  <div className="text-[12px] font-semibold text-slate-900 truncate leading-tight">{opt.label}</div>
+                  <div className="flex items-center gap-1.5 mt-0.5">
+                    <span className="flex items-center gap-0.5 text-[10px] text-slate-500">
+                      <span>⭐</span>
+                      <span className="font-medium">{opt.rating}</span>
+                    </span>
+                    <span className="text-[10px] text-slate-400 truncate">{opt.subtitle}</span>
+                  </div>
+                  {opt.price && (
+                    <div className="text-[10px] font-bold text-slate-900 mt-0.5">{opt.price}</div>
+                  )}
+                </div>
+
+                {/* Voter avatars (max 3 overlapped, +N badge for the rest) */}
+                <div className="flex -space-x-1.5 shrink-0">
+                  <AnimatePresence>
+                    {optionVoters.slice(0, 3).map((voter) => (
+                      <motion.div
+                        key={voter.id}
+                        initial={{ scale: 0, x: -8 }}
+                        animate={{ scale: 1, x: 0 }}
+                        transition={{ type: 'spring', stiffness: 400, damping: 22 }}
+                        className="flex w-5 h-5 items-center justify-center rounded-full bg-white text-[11px] ring-2 ring-white shadow-sm"
+                      >
+                        {voter.avatar}
+                      </motion.div>
+                    ))}
+                  </AnimatePresence>
+                  {optionVoters.length > 3 && (
+                    <div className="flex w-5 h-5 items-center justify-center rounded-full bg-slate-200 text-[8px] font-bold text-slate-600 ring-2 ring-white">
+                      +{optionVoters.length - 3}
+                    </div>
+                  )}
+                </div>
+
+                {/* Percentage */}
+                <div className="text-[12px] font-bold w-9 text-right" style={{ color: isWinning ? colors.poll : '#64748B' }}>
+                  {percentage}%
+                </div>
               </div>
-            </motion.div>
+
+              {/* Bottom progress bar — fills based on percentage */}
+              <div className="relative h-1 bg-slate-100">
+                <motion.div
+                  className="absolute inset-y-0 left-0"
+                  style={{ backgroundColor: isWinning ? colors.poll : '#CBD5E1' }}
+                  animate={{ width: `${percentage}%` }}
+                  transition={{ duration: 0.5, ease: 'easeOut' }}
+                />
+              </div>
+            </div>
           );
         })}
       </div>
 
-      <AnimatePresence>
-        {total >= 5 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="absolute bottom-4 left-4 right-4 flex items-center justify-center gap-2 rounded-xl py-2.5 text-sm font-semibold text-white"
-            style={{ backgroundColor: colors.poll }}
-          >
-            <span>🎉</span> {t.winner}
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Footer participation */}
+      <div className="mt-3 flex items-center justify-between text-[10px] text-slate-500">
+        <span>
+          <span className="font-bold text-slate-900">{voters.length}</span> {t.votes} · 5 {t.participants}
+        </span>
+        <div className="flex -space-x-1.5">
+          {['🧔', '👱‍♀️', '🧑‍💻', '😊'].map((emoji, i) => (
+            <div key={i} className="flex w-5 h-5 items-center justify-center rounded-full bg-slate-100 text-[11px] ring-2 ring-white">
+              {emoji}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
