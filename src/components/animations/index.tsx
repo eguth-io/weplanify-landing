@@ -150,139 +150,264 @@ const Icons = {
 };
 
 // ============================================================================
-// 1. AI GLOBE JOURNEY
+// 1. EXPLORER CARDS — mirrors the real Explorer module: filter chips drive a
+// card grid, each card has a thumbnail / rating / price / add-to-trip button,
+// and a Mapbox-like globe shows the matching pin.
 // ============================================================================
-export function AiGlobeJourney({ autoPlay = true }: { autoPlay?: boolean }) {
-  const destinations = [
-    { name: 'Paris', emoji: '🇫🇷', x: 48, y: 38 },
-    { name: 'Tokyo', emoji: '🇯🇵', x: 78, y: 42 },
-    { name: 'NYC', emoji: '🇺🇸', x: 22, y: 40 },
-  ];
-  const [activeIndex, setActiveIndex] = useState(0);
+type ExplorerCategoryKey = 'activity' | 'restaurant' | 'hotel' | 'transport';
+
+interface ExplorerCardData {
+  title: string;
+  city: string;
+  price: string;
+  rating: number | null;
+  emoji: string;
+  gradient: string;
+  pin: { x: number; y: number };
+}
+
+interface ExplorerFilterDef {
+  key: ExplorerCategoryKey;
+  label: Record<'en' | 'fr', string>;
+  icon: keyof typeof Icons;
+}
+
+const EXPLORER_FILTERS: ExplorerFilterDef[] = [
+  { key: 'activity', label: { en: 'Activities', fr: 'Activités' }, icon: 'Camera' },
+  { key: 'restaurant', label: { en: 'Restaurants', fr: 'Restaurants' }, icon: 'Utensils' },
+  { key: 'hotel', label: { en: 'Hotels', fr: 'Hébergement' }, icon: 'Bed' },
+  { key: 'transport', label: { en: 'Transport', fr: 'Transport' }, icon: 'Train' },
+];
+
+const EXPLORER_FILTER_KEYS: ExplorerCategoryKey[] = EXPLORER_FILTERS.map((f) => f.key);
+
+const EXPLORER_ADDED_LABEL: Record<'en' | 'fr', string> = {
+  en: 'Added to itinerary',
+  fr: 'Ajouté à l’itinéraire',
+};
+
+const EXPLORER_CARDS: Record<ExplorerCategoryKey, ExplorerCardData> = {
+  activity: {
+    title: 'Eiffel Tower visit',
+    city: 'Paris',
+    price: '32€',
+    rating: 4.8,
+    emoji: '🗼',
+    gradient: 'from-amber-500 via-orange-500 to-pink-500',
+    pin: { x: 48, y: 38 },
+  },
+  restaurant: {
+    title: 'Le Petit Bistrot',
+    city: 'Paris',
+    price: '€€',
+    rating: 4.6,
+    emoji: '🍝',
+    gradient: 'from-rose-500 via-red-500 to-amber-500',
+    pin: { x: 49, y: 39 },
+  },
+  hotel: {
+    title: 'Hôtel du Louvre',
+    city: 'Paris',
+    price: '180€',
+    rating: 4.4,
+    emoji: '🏨',
+    gradient: 'from-indigo-500 via-purple-500 to-pink-500',
+    pin: { x: 47, y: 38 },
+  },
+  transport: {
+    title: 'Eurostar Paris–London',
+    city: '2h 16min',
+    price: '95€',
+    rating: null,
+    emoji: '🚆',
+    gradient: 'from-teal-500 via-cyan-500 to-blue-500',
+    pin: { x: 35, y: 35 },
+  },
+};
+
+export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
+  const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
+  const [activeFilter, setActiveFilter] = useState<ExplorerCategoryKey>(EXPLORER_FILTER_KEYS[0]);
+  const [added, setAdded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(autoPlay);
 
-  // Sync isPlaying with autoPlay prop changes
   useEffect(() => {
     setIsPlaying(autoPlay);
   }, [autoPlay]);
 
   useEffect(() => {
     if (!isPlaying) return;
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % destinations.length);
-    }, 1500);
-    return () => clearInterval(interval);
-  }, [isPlaying, destinations.length]);
+    // Each cycle: show card for 1.6s, animate add → check, hold 0.6s, then advance filter.
+    const addTimer = setTimeout(() => setAdded(true), 1600);
+    const nextTimer = setTimeout(() => {
+      setAdded(false);
+      setActiveFilter((prev) => {
+        const i = EXPLORER_FILTER_KEYS.indexOf(prev);
+        return EXPLORER_FILTER_KEYS[(i + 1) % EXPLORER_FILTER_KEYS.length];
+      });
+    }, 2400);
+    return () => {
+      clearTimeout(addTimer);
+      clearTimeout(nextTimer);
+    };
+  }, [activeFilter, isPlaying]);
+
+  const card = EXPLORER_CARDS[activeFilter];
 
   return (
     <div
-      className="relative min-h-[280px] lg:min-h-[350px] h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900"
+      className="relative min-h-[280px] lg:min-h-[350px] h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 p-4 lg:p-5"
       onMouseEnter={() => setIsPlaying(true)}
     >
-      {/* Stars - using deterministic positions to avoid hydration mismatch */}
-      {[...Array(30)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute w-0.5 h-0.5 rounded-full bg-white"
-          style={{ left: `${(i * 37 + 13) % 100}%`, top: `${(i * 53 + 7) % 100}%` }}
-          animate={{ opacity: [0.2, 0.8, 0.2] }}
-          transition={{ duration: 1.5 + (i % 3), repeat: Infinity, delay: (i % 5) * 0.3 }}
-        />
-      ))}
+      {/* Filter chips — mirror the Explorer's type switcher tabs */}
+      <div className="relative z-10 flex flex-wrap items-center gap-1.5 mb-3 lg:mb-4">
+        {EXPLORER_FILTERS.map((f) => {
+          const Icon = Icons[f.icon];
+          const isActive = f.key === activeFilter;
+          return (
+            <motion.div
+              key={f.key}
+              animate={{
+                backgroundColor: isActive ? colors.primary : 'rgba(255,255,255,0.06)',
+                scale: isActive ? 1.04 : 1,
+              }}
+              transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+              className="flex items-center gap-1.5 rounded-full border border-white/10 px-2.5 py-1 backdrop-blur"
+            >
+              <Icon className="w-3 h-3 text-white" />
+              <span className="text-[11px] font-medium text-white">{f.label[lang]}</span>
+            </motion.div>
+          );
+        })}
+      </div>
 
-      {/* Globe */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="relative">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-3 lg:gap-4 items-stretch">
+        {/* Card — mirrors explorer-item-card.tsx visual contract */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeFilter}
+            initial={{ opacity: 0, y: 8, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -8, scale: 0.98 }}
+            transition={{ type: 'spring', stiffness: 320, damping: 28 }}
+            className="rounded-2xl overflow-hidden bg-white shadow-xl"
+          >
+            {/* Thumbnail with badges */}
+            <div className={`relative h-24 lg:h-32 bg-gradient-to-br ${card.gradient} flex items-center justify-center`}>
+              <span className="text-4xl lg:text-5xl drop-shadow-lg">{card.emoji}</span>
+
+              {/* Rating badge (top-left) */}
+              {card.rating != null && (
+                <div className="absolute top-2 left-2 flex items-center gap-1 rounded-full bg-black/40 backdrop-blur-sm px-2 py-0.5">
+                  <span className="text-[10px]">⭐</span>
+                  <span className="text-[10px] font-semibold text-white">{card.rating}</span>
+                </div>
+              )}
+
+              {/* Add / Added button (top-right) — the headline interaction */}
+              <motion.div
+                key={`btn-${activeFilter}-${added}`}
+                initial={{ scale: 1 }}
+                animate={added ? { scale: [1, 1.25, 1] } : { scale: 1 }}
+                transition={{ duration: 0.4 }}
+                className="absolute top-2 right-2"
+              >
+                <div
+                  className="flex w-7 h-7 items-center justify-center rounded-full backdrop-blur-sm transition-colors"
+                  style={{
+                    backgroundColor: added ? colors.mintDark : 'rgba(0,0,0,0.4)',
+                  }}
+                >
+                  {added ? (
+                    <Icons.Check className="w-3.5 h-3.5 text-white" />
+                  ) : (
+                    <svg className="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                      <line x1="12" x2="12" y1="5" y2="19" />
+                      <line x1="5" x2="19" y1="12" y2="12" />
+                    </svg>
+                  )}
+                </div>
+              </motion.div>
+
+              {/* Map-pin shortcut (bottom-right) — present on the real card */}
+              <div className="absolute bottom-2 right-2 flex w-6 h-6 items-center justify-center rounded-full bg-black/40 backdrop-blur-sm">
+                <Icons.MapPin className="w-3 h-3 text-white" />
+              </div>
+            </div>
+
+            {/* Card content */}
+            <div className="px-3 py-2.5">
+              <p className="text-[13px] font-semibold text-slate-900 truncate">{card.title}</p>
+              <div className="mt-1 flex items-center justify-between gap-2">
+                <span className="text-[11px] text-slate-500 truncate">{card.city}</span>
+                <span className="text-[12px] font-bold text-slate-900">{card.price}</span>
+              </div>
+              <AnimatePresence>
+                {added && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="mt-2 flex items-center gap-1 text-[10px] font-medium overflow-hidden"
+                    style={{ color: colors.mintDark }}
+                  >
+                    <Icons.Check className="w-3 h-3" />
+                    <span>{EXPLORER_ADDED_LABEL[lang]}</span>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Mini globe — represents the Mapbox panel that sits right of the cards */}
+        <div className="relative flex flex-col items-center justify-center rounded-2xl bg-black/30 backdrop-blur-sm border border-white/10 p-2">
           <div
-            className="relative w-44 h-44 rounded-full"
+            className="relative w-24 h-24 lg:w-28 lg:h-28 rounded-full"
             style={{
               background: `radial-gradient(circle at 35% 35%, ${colors.mint}50, ${colors.mintDark}30, ${colors.dark}80)`,
-              boxShadow: `inset -25px -25px 60px rgba(0,0,0,0.5), 0 0 80px ${colors.mint}30`,
+              boxShadow: `inset -15px -15px 35px rgba(0,0,0,0.5), 0 0 40px ${colors.mint}30`,
             }}
           >
-            {[20, 40, 60, 80].map((pos) => (
+            {[25, 50, 75].map((pos) => (
               <div key={pos} className="absolute left-[5%] h-px w-[90%] bg-white/10" style={{ top: `${pos}%` }} />
             ))}
 
-            {destinations.map((dest, i) => (
-              <motion.div
-                key={dest.name}
-                className="absolute"
-                style={{ left: `${dest.x}%`, top: `${dest.y}%` }}
-                animate={{
-                  scale: activeIndex === i ? 1.3 : 1,
-                  filter: activeIndex === i ? 'brightness(1.5)' : 'brightness(1)',
-                }}
-              >
-                {activeIndex === i && (
-                  <motion.div
-                    className="absolute -inset-3 rounded-full"
-                    animate={{ scale: [1, 2], opacity: [0.6, 0] }}
-                    transition={{ duration: 1, repeat: Infinity }}
-                  >
-                    <div className="w-full h-full rounded-full border-2" style={{ borderColor: colors.primary }} />
-                  </motion.div>
-                )}
-                <div
-                  className="flex w-5 h-5 items-center justify-center rounded-full shadow-lg"
-                  style={{ backgroundColor: colors.primary }}
-                >
-                  <Icons.MapPin className="w-3 h-3 text-white" />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Active destination label */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={activeIndex}
-          initial={{ opacity: 0, scale: 1.2 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.8 }}
-          className="absolute bottom-16 left-1/2 -translate-x-1/2"
-        >
-          <div className="flex items-center gap-2 rounded-full border border-white/20 bg-black/60 px-4 py-2 backdrop-blur-xl">
-            <span className="text-lg">{destinations[activeIndex].emoji}</span>
-            <span className="font-medium text-white">{destinations[activeIndex].name}</span>
-          </div>
-        </motion.div>
-      </AnimatePresence>
-
-      {/* Step timeline */}
-      <div className="absolute left-4 right-4 top-4 flex items-center justify-center gap-2">
-        {destinations.map((dest, i) => (
-          <React.Fragment key={dest.name}>
             <motion.div
-              animate={{
-                scale: activeIndex === i ? 1.1 : 1,
-                borderColor: activeIndex === i ? colors.primary : 'rgba(255,255,255,0.2)',
-              }}
-              className="flex items-center gap-1.5 rounded-full border bg-black/60 px-2.5 py-1 backdrop-blur"
+              key={`pin-${activeFilter}`}
+              className="absolute"
+              style={{ left: `${card.pin.x}%`, top: `${card.pin.y}%` }}
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 18 }}
             >
+              <motion.div
+                className="absolute -inset-2 rounded-full"
+                animate={{ scale: [1, 2.2], opacity: [0.5, 0] }}
+                transition={{ duration: 1.2, repeat: Infinity }}
+              >
+                <div className="w-full h-full rounded-full border-2" style={{ borderColor: colors.primary }} />
+              </motion.div>
               <div
-                className="flex w-4 h-4 items-center justify-center rounded-full text-[9px] font-bold text-white"
+                className="flex w-5 h-5 items-center justify-center rounded-full shadow-lg"
                 style={{ backgroundColor: colors.primary }}
               >
-                {i + 1}
+                <Icons.MapPin className="w-3 h-3 text-white" />
               </div>
-              <span className="text-xs text-white">{dest.name}</span>
             </motion.div>
-            {i < destinations.length - 1 && (
-              <motion.div
-                className="h-0.5 w-4"
-                style={{ backgroundColor: `${colors.primary}60` }}
-                animate={{ scaleX: activeIndex > i ? 1 : 0 }}
-              />
-            )}
-          </React.Fragment>
-        ))}
+          </div>
+          <div className="mt-2 flex items-center gap-1 text-[10px] text-white/70">
+            <Icons.Globe className="w-3 h-3" />
+            <span>{card.city}</span>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+// Back-compat alias: StackingCards still imports AiGlobeJourney by name.
+export const AiGlobeJourney = ExplorerCards;
 
 // ============================================================================
 // 2. LIVE VOTING

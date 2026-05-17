@@ -131,7 +131,7 @@ function Card({ card, index, locale }: { card: CardData; index: number; locale: 
   const AnimationComponent = () => {
     switch (card.animation) {
       case "ai-globe":
-        return <AiGlobeJourney autoPlay={isInView} />;
+        return <AiGlobeJourney autoPlay={isInView} locale={locale} />;
       case "live-collaboration":
         return <LiveCollaboration autoPlay={isInView} locale={locale} />;
       case "live-voting":
