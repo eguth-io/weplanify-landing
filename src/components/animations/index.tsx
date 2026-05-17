@@ -156,16 +156,20 @@ const Icons = {
 // ============================================================================
 type ExplorerCategoryKey = 'activity' | 'restaurant' | 'hotel' | 'transport';
 
-interface ExplorerCardData {
+interface ExplorerSuggestion {
   title: string;
   city: string;
   price: string;
   rating: number | null;
-  // Real photo (Unsplash) — mirrors the actual Explorer card thumbnail,
-  // not a CSS gradient placeholder.
+  // Real photo (Unsplash) — mirrors the actual Explorer card thumbnail.
   image: string;
   imageAlt: string;
-  pin: { x: number; y: number };
+}
+
+interface ExplorerCategoryData {
+  suggestions: ExplorerSuggestion[];
+  // Mapbox tile center for the category — same for all 3 suggestions in it.
+  map: { lon: number; lat: number; zoom: number };
 }
 
 interface ExplorerFilterDef {
@@ -191,43 +195,53 @@ const EXPLORER_ADDED_LABEL: Record<'en' | 'fr', string> = {
 const EXPLORER_PHOTO = (id: string) =>
   `https://images.unsplash.com/photo-${id}?w=480&h=320&q=70&auto=format&fit=crop`;
 
-const EXPLORER_CARDS: Record<ExplorerCategoryKey, ExplorerCardData> = {
+const EXPLORER_CARDS: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   activity: {
-    title: 'Tour Eiffel',
-    city: 'Paris',
-    price: '32€',
-    rating: 4.8,
-    image: EXPLORER_PHOTO('1502602898657-3e91760cbb34'),
-    imageAlt: 'Eiffel Tower at sunset',
-    pin: { x: 48, y: 38 },
+    suggestions: [
+      { title: 'Tour Eiffel', city: 'Paris', price: '32€', rating: 4.8, image: EXPLORER_PHOTO('1502602898657-3e91760cbb34'), imageAlt: 'Eiffel Tower' },
+      { title: 'Musée du Louvre', city: 'Paris', price: '22€', rating: 4.7, image: EXPLORER_PHOTO('1565967511849-76a60a516170'), imageAlt: 'Museum' },
+      { title: 'Croisière sur la Seine', city: 'Paris', price: '15€', rating: 4.5, image: EXPLORER_PHOTO('1564501049412-61c2a3083791'), imageAlt: 'River cruise' },
+    ],
+    map: { lon: 2.3404, lat: 48.8584, zoom: 12 },
   },
   restaurant: {
-    title: 'Le Petit Bistrot',
-    city: 'Paris 11e',
-    price: '€€',
-    rating: 4.6,
-    image: EXPLORER_PHOTO('1414235077428-338989a2e8c0'),
-    imageAlt: 'Restaurant table',
-    pin: { x: 49, y: 39 },
+    suggestions: [
+      { title: 'Le Petit Bistrot', city: 'Paris 11e', price: '€€', rating: 4.6, image: EXPLORER_PHOTO('1414235077428-338989a2e8c0'), imageAlt: 'Bistrot' },
+      { title: 'L’Ambroisie', city: 'Le Marais', price: '€€€', rating: 4.9, image: EXPLORER_PHOTO('1551218808-94e220e084d2'), imageAlt: 'Fine dining' },
+      { title: 'Marché des Enfants Rouges', city: 'Paris 3e', price: '€', rating: 4.5, image: EXPLORER_PHOTO('1517248135467-4c7edcad34c4'), imageAlt: 'Market food' },
+    ],
+    map: { lon: 2.3645, lat: 48.8615, zoom: 13 },
   },
   hotel: {
-    title: 'Hôtel du Louvre',
-    city: 'Paris',
-    price: '180€',
-    rating: 4.4,
-    image: EXPLORER_PHOTO('1611892440504-42a792e24d32'),
-    imageAlt: 'Hotel room',
-    pin: { x: 47, y: 38 },
+    suggestions: [
+      { title: 'Hôtel du Louvre', city: 'Paris 1er', price: '180€', rating: 4.4, image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), imageAlt: 'Hotel room' },
+      { title: 'Le Marais Suites', city: 'Paris 4e', price: '145€', rating: 4.3, image: EXPLORER_PHOTO('1551776235-dde6d482980b'), imageAlt: 'Hotel suite' },
+      { title: 'Generator Paris', city: 'Paris 10e', price: '85€', rating: 4.0, image: EXPLORER_PHOTO('1568084680786-a84f91d1153c'), imageAlt: 'Hostel' },
+    ],
+    map: { lon: 2.3376, lat: 48.8627, zoom: 12 },
   },
   transport: {
-    title: 'Eurostar Paris–London',
-    city: '2h 16min',
-    price: '95€',
-    rating: null,
-    image: EXPLORER_PHOTO('1474487548417-781cb71495f3'),
-    imageAlt: 'Train interior',
-    pin: { x: 35, y: 35 },
+    suggestions: [
+      { title: 'Eurostar Paris–London', city: '2h 16min', price: '95€', rating: null, image: EXPLORER_PHOTO('1474487548417-781cb71495f3'), imageAlt: 'Train' },
+      { title: 'TGV Paris–Lyon', city: '1h 56min', price: '45€', rating: null, image: EXPLORER_PHOTO('1543339308-43e59d6b73a6'), imageAlt: 'High speed train' },
+      { title: 'Métro 10-trip pack', city: 'Paris', price: '17€', rating: null, image: EXPLORER_PHOTO('1551183053-bf91a1d81141'), imageAlt: 'Métro' },
+    ],
+    // Pin on Paris, but pulled out so London is visible northbound.
+    map: { lon: 2.3522, lat: 48.8566, zoom: 5 },
   },
+};
+
+const MAPBOX_STATIC_URL = (
+  lon: number,
+  lat: number,
+  zoom: number,
+  width = 320,
+  height = 240
+) => {
+  const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? '';
+  const pin = `pin-l+f6391a(${lon},${lat})`;
+  // dark-v11 mirrors the real Explorer's dark-mode style
+  return `https://api.mapbox.com/styles/v1/mapbox/dark-v11/static/${pin}/${lon},${lat},${zoom},0/${width}x${height}@2x?access_token=${token}`;
 };
 
 export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
@@ -257,18 +271,20 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
     };
   }, [activeFilter, isPlaying]);
 
-  const card = EXPLORER_CARDS[activeFilter];
+  const category = EXPLORER_CARDS[activeFilter];
 
   return (
     <div
-      className="relative min-h-[280px] lg:min-h-[350px] h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-white p-4 lg:p-5 border border-slate-200/60"
+      className="relative min-h-[280px] lg:min-h-[420px] h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-white p-4 lg:p-5 border border-slate-200/60"
       onMouseEnter={() => setIsPlaying(true)}
     >
-      {/* Preload all 4 thumbnails so cycle frames don't flash empty. */}
+      {/* Preload every suggestion thumbnail so cycle frames don't flash empty. */}
       <div aria-hidden className="hidden">
-        {EXPLORER_FILTER_KEYS.map((k) => (
-          <img key={k} src={EXPLORER_CARDS[k].image} alt="" loading="eager" />
-        ))}
+        {EXPLORER_FILTER_KEYS.flatMap((k) =>
+          EXPLORER_CARDS[k].suggestions.map((s, i) => (
+            <img key={`${k}-${i}`} src={s.image} alt="" loading="eager" />
+          ))
+        )}
       </div>
 
       {/* Filter chips — mirror the Explorer's type switcher tabs (light bg variant) */}
@@ -298,130 +314,135 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
       </div>
 
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-3 lg:gap-4 items-stretch">
-        {/* Card — mirrors explorer-item-card.tsx visual contract */}
+        {/* Suggestion list — 3 cards stacked vertically per category */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeFilter}
-            initial={{ opacity: 0, y: 8, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -8, scale: 0.98 }}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
             transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-            className="rounded-2xl overflow-hidden bg-white shadow-lg ring-1 ring-slate-200/70"
+            className="flex flex-col gap-2 lg:gap-2.5"
           >
-            {/* Thumbnail with real photo + overlay badges */}
-            <div className="relative h-28 lg:h-36 overflow-hidden bg-slate-100">
-              <img
-                src={card.image}
-                alt={card.imageAlt}
-                className="absolute inset-0 w-full h-full object-cover"
-                loading="eager"
-                decoding="async"
-              />
-
-              {/* Rating badge (top-left) */}
-              {card.rating != null && (
-                <div className="absolute top-2 left-2 flex items-center gap-1 rounded-full bg-black/45 backdrop-blur-sm px-2 py-0.5">
-                  <span className="text-[10px]">⭐</span>
-                  <span className="text-[10px] font-semibold text-white">{card.rating}</span>
-                </div>
-              )}
-
-              {/* Add / Added button (top-right) — the headline interaction */}
-              <motion.div
-                key={`btn-${activeFilter}-${added}`}
-                initial={{ scale: 1 }}
-                animate={added ? { scale: [1, 1.25, 1] } : { scale: 1 }}
-                transition={{ duration: 0.4 }}
-                className="absolute top-2 right-2"
-              >
-                <div
-                  className="flex w-7 h-7 items-center justify-center rounded-full backdrop-blur-sm transition-colors"
-                  style={{
-                    backgroundColor: added ? colors.mintDark : 'rgba(0,0,0,0.45)',
-                  }}
+            {category.suggestions.map((sugg, idx) => {
+              // Only the headliner (first card) plays the +→✓ animation.
+              const isHeadliner = idx === 0;
+              const showAdded = isHeadliner && added;
+              return (
+                <motion.div
+                  key={`${activeFilter}-${idx}`}
+                  initial={{ opacity: 0, x: -8 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.08, type: 'spring', stiffness: 320, damping: 28 }}
+                  className="flex rounded-xl overflow-hidden bg-white shadow-md ring-1 ring-slate-200/70"
                 >
-                  {added ? (
-                    <Icons.Check className="w-3.5 h-3.5 text-white" />
-                  ) : (
-                    <svg className="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                      <line x1="12" x2="12" y1="5" y2="19" />
-                      <line x1="5" x2="19" y1="12" y2="12" />
-                    </svg>
-                  )}
-                </div>
-              </motion.div>
+                  {/* Thumbnail (left side, square) */}
+                  <div className="relative w-20 lg:w-24 shrink-0 bg-slate-100">
+                    <img
+                      src={sugg.image}
+                      alt={sugg.imageAlt}
+                      className="absolute inset-0 w-full h-full object-cover"
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </div>
 
-              {/* Map-pin shortcut (bottom-right) — present on the real card */}
-              <div className="absolute bottom-2 right-2 flex w-6 h-6 items-center justify-center rounded-full bg-black/45 backdrop-blur-sm">
-                <Icons.MapPin className="w-3 h-3 text-white" />
-              </div>
-            </div>
+                  {/* Content + add button (right side) */}
+                  <div className="relative flex-1 min-w-0 px-2.5 py-2 flex flex-col justify-center pr-9">
+                    <p className="text-[12px] font-semibold text-slate-900 truncate leading-tight">
+                      {sugg.title}
+                    </p>
+                    <div className="mt-0.5 flex items-center gap-1.5">
+                      {sugg.rating != null && (
+                        <span className="flex items-center gap-0.5 text-[10px] text-slate-500">
+                          <span>⭐</span>
+                          <span className="font-medium">{sugg.rating}</span>
+                        </span>
+                      )}
+                      <span className="text-[10px] text-slate-400 truncate">{sugg.city}</span>
+                    </div>
+                    <div className="mt-0.5 text-[11px] font-bold text-slate-900">{sugg.price}</div>
 
-            {/* Card content */}
-            <div className="px-3 py-2.5">
-              <p className="text-[13px] font-semibold text-slate-900 truncate">{card.title}</p>
-              <div className="mt-1 flex items-center justify-between gap-2">
-                <span className="text-[11px] text-slate-500 truncate">{card.city}</span>
-                <span className="text-[12px] font-bold text-slate-900">{card.price}</span>
-              </div>
-              <AnimatePresence>
-                {added && (
-                  <motion.div
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="mt-2 flex items-center gap-1 text-[10px] font-medium overflow-hidden"
-                    style={{ color: colors.mintDark }}
-                  >
-                    <Icons.Check className="w-3 h-3" />
-                    <span>{EXPLORER_ADDED_LABEL[lang]}</span>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+                    {showAdded && (
+                      <motion.div
+                        initial={{ opacity: 0, x: -4 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        className="absolute right-9 top-1.5 flex items-center gap-0.5 text-[9px] font-medium"
+                        style={{ color: colors.mintDark }}
+                      >
+                        <Icons.Check className="w-2.5 h-2.5" />
+                        <span>{EXPLORER_ADDED_LABEL[lang]}</span>
+                      </motion.div>
+                    )}
+
+                    {/* Add / Added button (right-edge, vertically centered) */}
+                    <motion.div
+                      key={`btn-${activeFilter}-${idx}-${showAdded}`}
+                      animate={showAdded ? { scale: [1, 1.25, 1] } : { scale: 1 }}
+                      transition={{ duration: 0.4 }}
+                      className="absolute right-2 top-1/2 -translate-y-1/2"
+                    >
+                      <div
+                        className="flex w-6 h-6 items-center justify-center rounded-full transition-colors"
+                        style={{
+                          backgroundColor: showAdded ? colors.mintDark : '#F3F4F6',
+                        }}
+                      >
+                        {showAdded ? (
+                          <Icons.Check className="w-3 h-3 text-white" />
+                        ) : (
+                          <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                            <line x1="12" x2="12" y1="5" y2="19" />
+                            <line x1="5" x2="19" y1="12" y2="12" />
+                          </svg>
+                        )}
+                      </div>
+                    </motion.div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </AnimatePresence>
 
-        {/* Mapbox-style dark globe panel — the only dark area, mirroring the real
-            Explorer where only the map pane uses dark-v11 styling. */}
-        <div className="relative flex flex-col items-center justify-center rounded-2xl overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 p-2 shadow-lg">
-          <div
-            className="relative w-24 h-24 lg:w-28 lg:h-28 rounded-full"
-            style={{
-              background: `radial-gradient(circle at 35% 35%, ${colors.mint}50, ${colors.mintDark}30, ${colors.dark}80)`,
-              boxShadow: `inset -15px -15px 35px rgba(0,0,0,0.5), 0 0 40px ${colors.mint}30`,
-            }}
-          >
-            {[25, 50, 75].map((pos) => (
-              <div key={pos} className="absolute left-[5%] h-px w-[90%] bg-white/10" style={{ top: `${pos}%` }} />
-            ))}
-
-            <motion.div
-              key={`pin-${activeFilter}`}
-              className="absolute"
-              style={{ left: `${card.pin.x}%`, top: `${card.pin.y}%` }}
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 18 }}
-            >
-              <motion.div
-                className="absolute -inset-2 rounded-full"
-                animate={{ scale: [1, 2.2], opacity: [0.5, 0] }}
-                transition={{ duration: 1.2, repeat: Infinity }}
-              >
-                <div className="w-full h-full rounded-full border-2" style={{ borderColor: colors.primary }} />
-              </motion.div>
-              <div
-                className="flex w-5 h-5 items-center justify-center rounded-full shadow-lg"
-                style={{ backgroundColor: colors.primary }}
-              >
-                <Icons.MapPin className="w-3 h-3 text-white" />
-              </div>
-            </motion.div>
+        {/* Mapbox dark-v11 panel — real static tiles, mirroring the real
+            Explorer's light-list / dark-map split. */}
+        <div className="relative rounded-2xl overflow-hidden shadow-lg bg-slate-900 min-h-[200px] lg:min-h-0">
+          {/* Preload all 4 map tiles so cycle frames swap instantly. */}
+          <div aria-hidden className="hidden">
+            {EXPLORER_FILTER_KEYS.map((k) => {
+              const m = EXPLORER_CARDS[k].map;
+              return <img key={k} src={MAPBOX_STATIC_URL(m.lon, m.lat, m.zoom)} alt="" loading="eager" />;
+            })}
           </div>
-          <div className="mt-2 flex items-center gap-1 text-[10px] text-white/70">
-            <Icons.Globe className="w-3 h-3" />
-            <span>{card.city}</span>
+
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={activeFilter}
+              src={MAPBOX_STATIC_URL(category.map.lon, category.map.lat, category.map.zoom)}
+              alt={`Map — ${activeFilter}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </AnimatePresence>
+
+          {/* Pulse ring overlaid on the static pin (image is centered on the
+              pin's lat/lon, so the pulse sits at 50%/50%). */}
+          <motion.div
+            className="absolute top-1/2 left-1/2 w-6 h-6 -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none"
+            animate={{ scale: [1, 2.4], opacity: [0.55, 0] }}
+            transition={{ duration: 1.4, repeat: Infinity, ease: 'easeOut' }}
+          >
+            <div className="w-full h-full rounded-full border-2" style={{ borderColor: colors.primary }} />
+          </motion.div>
+
+          {/* Suggestion count label (mirrors the real Explorer's '(N) results' label) */}
+          <div className="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-black/60 backdrop-blur-sm px-2 py-0.5">
+            <Icons.MapPin className="w-3 h-3 text-white" />
+            <span className="text-[10px] font-medium text-white">{category.suggestions.length} {EXPLORER_FILTERS.find(f => f.key === activeFilter)?.label[lang]}</span>
           </div>
         </div>
       </div>
