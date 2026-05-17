@@ -1,7 +1,8 @@
 'use client';
 
+import { useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useLocale } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { BudgetSplit } from "@/components/animations";
@@ -33,17 +34,27 @@ interface FeaturePageData {
 
 type Lang = "en" | "fr";
 
+type Participant = { name: string; avatar: string };
+type Expense = { name: string; amount: number; paidBy: string };
+type ExpensePreset = { name: string; amount: number; emoji: string };
+
 const COPY: Record<Lang, {
   paidBy: string;
   toReceive: string;
   owes: string;
   total: string;
   pieLabels: { accommodation: string; restaurants: string; activities: string; transport: string };
+  liveSplitTitle: string;
+  liveSplitSubtitle: string;
+  quickAdd: string;
   recentExpenses: string;
   whoOwesWhat: string;
   toSettleUp: string;
   freeNoCard: string;
-  expenses: { name: string; amount: number; paidBy: string; participants: string[] }[];
+  tryItHint: string;
+  participants: Participant[];
+  expenses: Expense[];
+  presets: ExpensePreset[];
 }> = {
   fr: {
     paidBy: "Payé par",
@@ -56,14 +67,30 @@ const COPY: Record<Lang, {
       activities: "Activités",
       transport: "Transport",
     },
+    liveSplitTitle: "Essayez : ajoutez une dépense",
+    liveSplitSubtitle: "Voyage à Lisbonne — 4 amis",
+    quickAdd: "Ajout rapide",
     recentExpenses: "Dépenses récentes",
     whoOwesWhat: "Qui doit quoi",
-    toSettleUp: "Pour solder les comptes :",
+    toSettleUp: "Pour solder les comptes",
     freeNoCard: "Inscription gratuite. Sans carte bancaire.",
+    tryItHint: "👆 Cliquez sur un bouton pour ajouter une dépense et voir les soldes se mettre à jour.",
+    participants: [
+      { name: "Marie", avatar: "👩‍🎨" },
+      { name: "Thomas", avatar: "🧔" },
+      { name: "Emma", avatar: "👱‍♀️" },
+      { name: "Lucas", avatar: "🧑‍💻" },
+    ],
     expenses: [
-      { name: "Restaurant", amount: 156, paidBy: "Marie", participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
-      { name: "Location voiture", amount: 320, paidBy: "Thomas", participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻', '😊', '👨‍🦱'] },
-      { name: "Billets musée", amount: 84, paidBy: "Emma", participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+      { name: "Restaurant", amount: 156, paidBy: "Marie" },
+      { name: "Location voiture", amount: 320, paidBy: "Thomas" },
+      { name: "Billets musée", amount: 84, paidBy: "Emma" },
+    ],
+    presets: [
+      { name: "Dîner", amount: 80, emoji: "🍝" },
+      { name: "Taxi", amount: 24, emoji: "🚕" },
+      { name: "Visite guidée", amount: 60, emoji: "🎨" },
+      { name: "Brunch", amount: 48, emoji: "🥐" },
     ],
   },
   en: {
@@ -77,39 +104,87 @@ const COPY: Record<Lang, {
       activities: "Activities",
       transport: "Transport",
     },
+    liveSplitTitle: "Try it: add an expense",
+    liveSplitSubtitle: "Trip to Lisbon — 4 friends",
+    quickAdd: "Quick add",
     recentExpenses: "Recent Expenses",
     whoOwesWhat: "Who Owes What",
-    toSettleUp: "To settle up:",
+    toSettleUp: "To settle up",
     freeNoCard: "Free signup. No credit card required.",
+    tryItHint: "👆 Click a button to add an expense and watch balances update in real time.",
+    participants: [
+      { name: "Marie", avatar: "👩‍🎨" },
+      { name: "Thomas", avatar: "🧔" },
+      { name: "Emma", avatar: "👱‍♀️" },
+      { name: "Lucas", avatar: "🧑‍💻" },
+    ],
     expenses: [
-      { name: "Restaurant dinner", amount: 156, paidBy: "Marie", participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
-      { name: "Car rental", amount: 320, paidBy: "Thomas", participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻', '😊', '👨‍🦱'] },
-      { name: "Museum tickets", amount: 84, paidBy: "Emma", participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+      { name: "Restaurant dinner", amount: 156, paidBy: "Marie" },
+      { name: "Car rental", amount: 320, paidBy: "Thomas" },
+      { name: "Museum tickets", amount: 84, paidBy: "Emma" },
+    ],
+    presets: [
+      { name: "Dinner", amount: 80, emoji: "🍝" },
+      { name: "Taxi", amount: 24, emoji: "🚕" },
+      { name: "Guided tour", amount: 60, emoji: "🎨" },
+      { name: "Brunch", amount: 48, emoji: "🥐" },
     ],
   },
 };
+
+// Compute balances assuming each expense is split equally across all participants.
+function computeBalances(expenses: Expense[], participants: Participant[]): Record<string, number> {
+  const n = participants.length;
+  const balances: Record<string, number> = Object.fromEntries(participants.map((p) => [p.name, 0]));
+  for (const e of expenses) {
+    if (!(e.paidBy in balances)) continue;
+    const share = e.amount / n;
+    balances[e.paidBy] += e.amount - share;
+    for (const p of participants) {
+      if (p.name !== e.paidBy) balances[p.name] -= share;
+    }
+  }
+  // Round to integers for display cleanliness.
+  return Object.fromEntries(Object.entries(balances).map(([k, v]) => [k, Math.round(v)]));
+}
+
+// Compute the minimum set of transfers to settle all balances.
+function computeSettlements(balances: Record<string, number>): { from: string; to: string; amount: number }[] {
+  const creditors = Object.entries(balances).filter(([, v]) => v > 0).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ name: k, amount: v }));
+  const debtors = Object.entries(balances).filter(([, v]) => v < 0).sort((a, b) => a[1] - b[1]).map(([k, v]) => ({ name: k, amount: -v }));
+  const transfers: { from: string; to: string; amount: number }[] = [];
+  let ci = 0, di = 0;
+  while (ci < creditors.length && di < debtors.length) {
+    const pay = Math.min(creditors[ci].amount, debtors[di].amount);
+    if (pay > 0) transfers.push({ from: debtors[di].name, to: creditors[ci].name, amount: pay });
+    creditors[ci].amount -= pay;
+    debtors[di].amount -= pay;
+    if (creditors[ci].amount === 0) ci++;
+    if (debtors[di].amount === 0) di++;
+  }
+  return transfers;
+}
 
 function ReceiptItem({
   name,
   amount,
   paidBy,
   participants,
-  delay = 0,
   paidByLabel,
 }: {
   name: string;
   amount: number;
   paidBy: string;
   participants: string[];
-  delay?: number;
   paidByLabel: string;
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay }}
+      layout
+      initial={{ opacity: 0, x: -20, height: 0 }}
+      animate={{ opacity: 1, x: 0, height: "auto" }}
+      exit={{ opacity: 0, x: 20, height: 0 }}
+      transition={{ type: "spring", stiffness: 400, damping: 30 }}
       className="bg-white rounded-xl p-4 shadow-sm border-l-4 border-[#F6391A] hover:shadow-md transition-shadow"
     >
       <div className="flex justify-between items-start mb-2">
@@ -132,35 +207,168 @@ function BalanceCard({
   name,
   avatar,
   balance,
-  delay = 0,
   toReceive,
   owes,
 }: {
   name: string;
   avatar: string;
   balance: number;
-  delay?: number;
   toReceive: string;
   owes: string;
 }) {
   const isPositive = balance > 0;
+  const isZero = balance === 0;
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ delay }}
+      layout
       className="bg-white rounded-xl p-4 shadow-sm text-center hover:shadow-md transition-shadow"
     >
       <span className="text-3xl mb-2 block">{avatar}</span>
       <p className="font-karla font-semibold text-[#001E13] mb-1">{name}</p>
-      <p className={`font-unbounded font-bold text-lg ${isPositive ? 'text-green-600' : 'text-[#F6391A]'}`}>
-        {isPositive ? '+' : '-'}{Math.abs(balance)}€
-      </p>
+      <motion.p
+        key={balance}
+        initial={{ scale: 1.15 }}
+        animate={{ scale: 1 }}
+        transition={{ type: "spring", stiffness: 400, damping: 18 }}
+        className={`font-unbounded font-bold text-lg ${isZero ? 'text-[#001E13]/40' : isPositive ? 'text-green-600' : 'text-[#F6391A]'}`}
+      >
+        {isZero ? '0€' : `${isPositive ? '+' : '-'}${Math.abs(balance)}€`}
+      </motion.p>
       <p className="text-xs text-[#001E13]/40 mt-1">
-        {isPositive ? toReceive : owes}
+        {isZero ? '—' : isPositive ? toReceive : owes}
       </p>
     </motion.div>
+  );
+}
+
+// Interactive split-cost demo. Click a preset to add an expense, watch balances recompute.
+function LiveSplit({
+  participants,
+  initialExpenses,
+  presets,
+  labels,
+}: {
+  participants: Participant[];
+  initialExpenses: Expense[];
+  presets: ExpensePreset[];
+  labels: typeof COPY["en"];
+}) {
+  const [expenses, setExpenses] = useState<Expense[]>(initialExpenses);
+
+  const handleAdd = (preset: ExpensePreset) => {
+    setExpenses((prev) => {
+      // Rotate the payer based on the current expense count so synchronous
+      // bursts (and React batching) don't assign every added expense to the
+      // same person.
+      const payer = participants[prev.length % participants.length];
+      return [...prev, { name: preset.name, amount: preset.amount, paidBy: payer.name }];
+    });
+  };
+
+  const balances = computeBalances(expenses, participants);
+  const settlements = computeSettlements(balances);
+  const total = expenses.reduce((sum, e) => sum + e.amount, 0);
+
+  const avatarOf = (name: string) => participants.find((p) => p.name === name)?.avatar ?? "👤";
+
+  return (
+    <div className="bg-white/60 backdrop-blur rounded-3xl p-6 lg:p-8 shadow-sm border border-[#61DBD5]/30">
+      <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-2 mb-2">
+        <div>
+          <h3 className="font-londrina-solid text-2xl text-[#001E13]">{labels.liveSplitTitle}</h3>
+          <p className="text-sm text-[#001E13]/60 font-karla">{labels.liveSplitSubtitle}</p>
+        </div>
+        <div className="text-left lg:text-right">
+          <p className="text-xs text-[#001E13]/40 font-karla uppercase tracking-wide">{labels.total}</p>
+          <motion.p
+            key={total}
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 18 }}
+            className="font-unbounded font-bold text-2xl text-[#F6391A]"
+          >
+            {total}€
+          </motion.p>
+        </div>
+      </div>
+
+      <p className="text-xs text-[#001E13]/50 font-karla mb-5">{labels.tryItHint}</p>
+
+      {/* Quick-add buttons */}
+      <div className="mb-6">
+        <p className="text-xs text-[#001E13]/40 font-karla uppercase tracking-wide mb-2">{labels.quickAdd}</p>
+        <div className="flex flex-wrap gap-2">
+          {presets.map((preset, i) => (
+            <button
+              key={i}
+              onClick={() => handleAdd(preset)}
+              className="flex items-center gap-2 px-4 py-2 bg-[#F6391A] hover:bg-[#F6391A]/90 text-white rounded-full font-karla font-semibold text-sm shadow-sm hover:shadow-md transition-all active:scale-95"
+            >
+              <span className="text-lg">{preset.emoji}</span>
+              <span>+ {preset.name}</span>
+              <span className="font-unbounded text-xs opacity-80">{preset.amount}€</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-8">
+        {/* Expenses list */}
+        <div>
+          <h4 className="font-londrina-solid text-xl text-[#001E13] mb-4">{labels.recentExpenses}</h4>
+          <div className="space-y-3 max-h-[420px] overflow-y-auto pr-1">
+            <AnimatePresence initial={false}>
+              {[...expenses].reverse().map((expense, i) => (
+                <ReceiptItem
+                  key={`${expense.name}-${expenses.length - i}`}
+                  name={expense.name}
+                  amount={expense.amount}
+                  paidBy={expense.paidBy}
+                  participants={participants.map((p) => p.avatar)}
+                  paidByLabel={labels.paidBy}
+                />
+              ))}
+            </AnimatePresence>
+          </div>
+        </div>
+
+        {/* Balances + settle up */}
+        <div>
+          <h4 className="font-londrina-solid text-xl text-[#001E13] mb-4">{labels.whoOwesWhat}</h4>
+          <div className="grid grid-cols-2 gap-3">
+            {participants.map((p) => (
+              <BalanceCard
+                key={p.name}
+                name={p.name}
+                avatar={p.avatar}
+                balance={balances[p.name] ?? 0}
+                toReceive={labels.toReceive}
+                owes={labels.owes}
+              />
+            ))}
+          </div>
+
+          {settlements.length > 0 && (
+            <motion.div
+              layout
+              className="mt-4 p-4 bg-[#61DBD5]/10 rounded-xl border border-[#61DBD5]/30"
+            >
+              <p className="text-sm font-karla text-[#001E13]/70 mb-2">💡 {labels.toSettleUp}</p>
+              <div className="space-y-1">
+                {settlements.map((s, i) => (
+                  <p key={i} className="font-karla text-[#001E13]">
+                    <span>{avatarOf(s.from)} {s.from}</span>
+                    <span className="mx-2 text-[#001E13]/40">→</span>
+                    <span>{avatarOf(s.to)} {s.to}</span>
+                    <span className="ml-2 font-bold">{s.amount}€</span>
+                  </p>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -288,65 +496,15 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
           </div>
         </section>
 
-        {/* Expenses and balances */}
+        {/* Interactive split-cost demo (replaces former static section) */}
         <section className="px-4 lg:px-8 py-16">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12">
-              <div>
-                <motion.h2
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  className="text-2xl font-londrina-solid text-[#001E13] mb-6"
-                >
-                  {t.recentExpenses}
-                </motion.h2>
-                <div className="space-y-4">
-                  {t.expenses.map((expense, i) => (
-                    <ReceiptItem
-                      key={i}
-                      name={expense.name}
-                      amount={expense.amount}
-                      paidBy={expense.paidBy}
-                      participants={expense.participants}
-                      delay={(i + 1) * 0.1}
-                      paidByLabel={t.paidBy}
-                    />
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <motion.h2
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  className="text-2xl font-londrina-solid text-[#001E13] mb-6"
-                >
-                  {t.whoOwesWhat}
-                </motion.h2>
-                <div className="grid grid-cols-3 gap-4">
-                  <BalanceCard name="Marie" avatar="👩‍🎨" balance={-45} delay={0.1} toReceive={t.toReceive} owes={t.owes} />
-                  <BalanceCard name="Thomas" avatar="🧔" balance={128} delay={0.2} toReceive={t.toReceive} owes={t.owes} />
-                  <BalanceCard name="Emma" avatar="👱‍♀️" balance={-32} delay={0.3} toReceive={t.toReceive} owes={t.owes} />
-                  <BalanceCard name="Lucas" avatar="🧑‍💻" balance={-67} delay={0.4} toReceive={t.toReceive} owes={t.owes} />
-                  <BalanceCard name="Julie" avatar="😊" balance={24} delay={0.5} toReceive={t.toReceive} owes={t.owes} />
-                  <BalanceCard name="Pierre" avatar="👨‍🦱" balance={-8} delay={0.6} toReceive={t.toReceive} owes={t.owes} />
-                </div>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.5 }}
-                  className="mt-6 p-4 bg-[#61DBD5]/10 rounded-xl border border-[#61DBD5]/30"
-                >
-                  <p className="text-sm font-karla text-[#001E13]/70 mb-2">💡 {t.toSettleUp}</p>
-                  <p className="font-karla text-[#001E13]">Marie → Thomas: <span className="font-bold">45€</span></p>
-                  <p className="font-karla text-[#001E13]">Lucas → Thomas: <span className="font-bold">67€</span></p>
-                </motion.div>
-              </div>
-            </div>
+            <LiveSplit
+              participants={t.participants}
+              initialExpenses={t.expenses}
+              presets={t.presets}
+              labels={t}
+            />
           </div>
         </section>
 
