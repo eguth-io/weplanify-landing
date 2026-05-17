@@ -82,8 +82,11 @@ export default async function HomePage({ params }: Props) {
       />
 
       {/* Testimonial & Stats Section */}
-      <div id="reviews" className="px-4 lg:px-8 pb-8 lg:pb-12">
+      <section id="reviews" className="px-4 lg:px-8 pb-8 lg:pb-12">
         <div className="max-w-[1536px] mx-auto">
+          <h2 className="text-[#001E13] text-2xl lg:text-4xl font-londrina-solid mb-4 lg:mb-6">
+            {locale === "fr" ? "Avis des utilisateurs" : "User reviews"}
+          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
             {/* Left Block - Testimonial Carousel */}
             <TestimonialCarousel locale={locale} />
@@ -92,7 +95,7 @@ export default async function HomePage({ params }: Props) {
             <StatsBlock locale={locale} />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* World Section */}
       {worldSection && (
