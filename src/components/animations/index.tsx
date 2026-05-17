@@ -161,8 +161,10 @@ interface ExplorerCardData {
   city: string;
   price: string;
   rating: number | null;
-  emoji: string;
-  gradient: string;
+  // Real photo (Unsplash) — mirrors the actual Explorer card thumbnail,
+  // not a CSS gradient placeholder.
+  image: string;
+  imageAlt: string;
   pin: { x: number; y: number };
 }
 
@@ -186,23 +188,26 @@ const EXPLORER_ADDED_LABEL: Record<'en' | 'fr', string> = {
   fr: 'Ajouté à l’itinéraire',
 };
 
+const EXPLORER_PHOTO = (id: string) =>
+  `https://images.unsplash.com/photo-${id}?w=480&h=320&q=70&auto=format&fit=crop`;
+
 const EXPLORER_CARDS: Record<ExplorerCategoryKey, ExplorerCardData> = {
   activity: {
-    title: 'Eiffel Tower visit',
+    title: 'Tour Eiffel',
     city: 'Paris',
     price: '32€',
     rating: 4.8,
-    emoji: '🗼',
-    gradient: 'from-amber-500 via-orange-500 to-pink-500',
+    image: EXPLORER_PHOTO('1502602898657-3e91760cbb34'),
+    imageAlt: 'Eiffel Tower at sunset',
     pin: { x: 48, y: 38 },
   },
   restaurant: {
     title: 'Le Petit Bistrot',
-    city: 'Paris',
+    city: 'Paris 11e',
     price: '€€',
     rating: 4.6,
-    emoji: '🍝',
-    gradient: 'from-rose-500 via-red-500 to-amber-500',
+    image: EXPLORER_PHOTO('1414235077428-338989a2e8c0'),
+    imageAlt: 'Restaurant table',
     pin: { x: 49, y: 39 },
   },
   hotel: {
@@ -210,8 +215,8 @@ const EXPLORER_CARDS: Record<ExplorerCategoryKey, ExplorerCardData> = {
     city: 'Paris',
     price: '180€',
     rating: 4.4,
-    emoji: '🏨',
-    gradient: 'from-indigo-500 via-purple-500 to-pink-500',
+    image: EXPLORER_PHOTO('1611892440504-42a792e24d32'),
+    imageAlt: 'Hotel room',
     pin: { x: 47, y: 38 },
   },
   transport: {
@@ -219,8 +224,8 @@ const EXPLORER_CARDS: Record<ExplorerCategoryKey, ExplorerCardData> = {
     city: '2h 16min',
     price: '95€',
     rating: null,
-    emoji: '🚆',
-    gradient: 'from-teal-500 via-cyan-500 to-blue-500',
+    image: EXPLORER_PHOTO('1474487548417-781cb71495f3'),
+    imageAlt: 'Train interior',
     pin: { x: 35, y: 35 },
   },
 };
@@ -256,10 +261,17 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
 
   return (
     <div
-      className="relative min-h-[280px] lg:min-h-[350px] h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 p-4 lg:p-5"
+      className="relative min-h-[280px] lg:min-h-[350px] h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-white p-4 lg:p-5 border border-slate-200/60"
       onMouseEnter={() => setIsPlaying(true)}
     >
-      {/* Filter chips — mirror the Explorer's type switcher tabs */}
+      {/* Preload all 4 thumbnails so cycle frames don't flash empty. */}
+      <div aria-hidden className="hidden">
+        {EXPLORER_FILTER_KEYS.map((k) => (
+          <img key={k} src={EXPLORER_CARDS[k].image} alt="" loading="eager" />
+        ))}
+      </div>
+
+      {/* Filter chips — mirror the Explorer's type switcher tabs (light bg variant) */}
       <div className="relative z-10 flex flex-wrap items-center gap-1.5 mb-3 lg:mb-4">
         {EXPLORER_FILTERS.map((f) => {
           const Icon = Icons[f.icon];
@@ -268,14 +280,18 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
             <motion.div
               key={f.key}
               animate={{
-                backgroundColor: isActive ? colors.primary : 'rgba(255,255,255,0.06)',
+                backgroundColor: isActive ? colors.primary : '#FFFFFF',
                 scale: isActive ? 1.04 : 1,
               }}
               transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-              className="flex items-center gap-1.5 rounded-full border border-white/10 px-2.5 py-1 backdrop-blur"
+              className={`flex items-center gap-1.5 rounded-full border px-2.5 py-1 shadow-sm ${
+                isActive ? 'border-transparent' : 'border-slate-200'
+              }`}
             >
-              <Icon className="w-3 h-3 text-white" />
-              <span className="text-[11px] font-medium text-white">{f.label[lang]}</span>
+              <Icon className={`w-3 h-3 ${isActive ? 'text-white' : 'text-slate-600'}`} />
+              <span className={`text-[11px] font-medium ${isActive ? 'text-white' : 'text-slate-700'}`}>
+                {f.label[lang]}
+              </span>
             </motion.div>
           );
         })}
@@ -290,15 +306,21 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.98 }}
             transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-            className="rounded-2xl overflow-hidden bg-white shadow-xl"
+            className="rounded-2xl overflow-hidden bg-white shadow-lg ring-1 ring-slate-200/70"
           >
-            {/* Thumbnail with badges */}
-            <div className={`relative h-24 lg:h-32 bg-gradient-to-br ${card.gradient} flex items-center justify-center`}>
-              <span className="text-4xl lg:text-5xl drop-shadow-lg">{card.emoji}</span>
+            {/* Thumbnail with real photo + overlay badges */}
+            <div className="relative h-28 lg:h-36 overflow-hidden bg-slate-100">
+              <img
+                src={card.image}
+                alt={card.imageAlt}
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="eager"
+                decoding="async"
+              />
 
               {/* Rating badge (top-left) */}
               {card.rating != null && (
-                <div className="absolute top-2 left-2 flex items-center gap-1 rounded-full bg-black/40 backdrop-blur-sm px-2 py-0.5">
+                <div className="absolute top-2 left-2 flex items-center gap-1 rounded-full bg-black/45 backdrop-blur-sm px-2 py-0.5">
                   <span className="text-[10px]">⭐</span>
                   <span className="text-[10px] font-semibold text-white">{card.rating}</span>
                 </div>
@@ -315,7 +337,7 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
                 <div
                   className="flex w-7 h-7 items-center justify-center rounded-full backdrop-blur-sm transition-colors"
                   style={{
-                    backgroundColor: added ? colors.mintDark : 'rgba(0,0,0,0.4)',
+                    backgroundColor: added ? colors.mintDark : 'rgba(0,0,0,0.45)',
                   }}
                 >
                   {added ? (
@@ -330,7 +352,7 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
               </motion.div>
 
               {/* Map-pin shortcut (bottom-right) — present on the real card */}
-              <div className="absolute bottom-2 right-2 flex w-6 h-6 items-center justify-center rounded-full bg-black/40 backdrop-blur-sm">
+              <div className="absolute bottom-2 right-2 flex w-6 h-6 items-center justify-center rounded-full bg-black/45 backdrop-blur-sm">
                 <Icons.MapPin className="w-3 h-3 text-white" />
               </div>
             </div>
@@ -360,8 +382,9 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
           </motion.div>
         </AnimatePresence>
 
-        {/* Mini globe — represents the Mapbox panel that sits right of the cards */}
-        <div className="relative flex flex-col items-center justify-center rounded-2xl bg-black/30 backdrop-blur-sm border border-white/10 p-2">
+        {/* Mapbox-style dark globe panel — the only dark area, mirroring the real
+            Explorer where only the map pane uses dark-v11 styling. */}
+        <div className="relative flex flex-col items-center justify-center rounded-2xl overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 p-2 shadow-lg">
           <div
             className="relative w-24 h-24 lg:w-28 lg:h-28 rounded-full"
             style={{
