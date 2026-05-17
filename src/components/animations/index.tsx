@@ -454,45 +454,98 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
 export const AiGlobeJourney = ExplorerCards;
 
 // ============================================================================
-// 2. LIVE VOTING — mirrors the real polls.view.tsx layout:
-// creator header → category badge + question → 3 choice rows with thumbnail,
-// checkbox, voter avatars, percentage, bottom progress bar → footer count.
+// 2. LIVE VOTING — mirrors the real polls.view.tsx + poll-choice-option.tsx
+// EventItemChoiceOption (non-card variant): creator header, category badge,
+// status, then choices with a wide landscape thumbnail, provider badge,
+// star rating /5, price/night in green, "Your vote" label, and a padded
+// bottom progress bar.
 // ============================================================================
-interface PollOption {
-  label: string;
-  subtitle: string;
-  price?: string;
+interface PollChoice {
+  title: string;
+  description: string;
+  city: string;
   rating: number;
+  price: string;
+  provider: 'Booking' | 'Airbnb' | 'Direct';
   image: string;
+  isUserVote?: boolean;
 }
 
-interface PollVoter {
-  id: number;
-  option: number;
-  avatar: string;
-}
-
-const POLL_OPTIONS: Record<'en' | 'fr', PollOption[]> = {
-  fr: [
-    { label: 'Hôtel Bairro Alto', subtitle: 'Lisbonne · centre', price: '145€/n', rating: 4.6, image: EXPLORER_PHOTO('1611892440504-42a792e24d32') },
-    { label: 'Airbnb Príncipe Real', subtitle: 'Lisbonne · vue ville', price: '95€/n', rating: 4.4, image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
-    { label: 'Hostel Lisbon Lounge', subtitle: 'Lisbonne · auberge', price: '35€/n', rating: 4.0, image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
-  ],
-  en: [
-    { label: 'Hôtel Bairro Alto', subtitle: 'Lisbon · downtown', price: '€145/n', rating: 4.6, image: EXPLORER_PHOTO('1611892440504-42a792e24d32') },
-    { label: 'Airbnb Príncipe Real', subtitle: 'Lisbon · city view', price: '€95/n', rating: 4.4, image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
-    { label: 'Hostel Lisbon Lounge', subtitle: 'Lisbon · hostel', price: '€35/n', rating: 4.0, image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
-  ],
+const POLL_PROVIDER_STYLE: Record<PollChoice['provider'], { bg: string; fg: string }> = {
+  Booking: { bg: '#0034A9', fg: '#FFFFFF' },
+  Airbnb: { bg: '#FF385C', fg: '#FFFFFF' },
+  Direct: { bg: '#E2E8F0', fg: '#0F172A' },
 };
 
-// Stable voter avatars, deterministic across SSR + client. Emoji avatars mirror
-// what the real app shows on each poll choice (max 3 visible + "+N" overflow).
+const POLL_CHOICES_FR: PollChoice[] = [
+  {
+    title: 'Hôtel Bairro Alto',
+    description: 'Boutique hotel · vue ville',
+    city: 'Lisbonne',
+    rating: 4.6,
+    price: '145€/nuit',
+    provider: 'Booking',
+    image: EXPLORER_PHOTO('1611892440504-42a792e24d32'),
+    isUserVote: true,
+  },
+  {
+    title: 'Príncipe Real Loft',
+    description: 'Appartement entier · 4 voyageurs',
+    city: 'Lisbonne',
+    rating: 4.4,
+    price: '95€/nuit',
+    provider: 'Airbnb',
+    image: EXPLORER_PHOTO('1551776235-dde6d482980b'),
+  },
+  {
+    title: 'Lisbon Lounge Hostel',
+    description: 'Auberge · centre-ville',
+    city: 'Lisbonne',
+    rating: 4.0,
+    price: '35€/nuit',
+    provider: 'Booking',
+    image: EXPLORER_PHOTO('1568084680786-a84f91d1153c'),
+  },
+];
+
+const POLL_CHOICES_EN: PollChoice[] = [
+  {
+    title: 'Hôtel Bairro Alto',
+    description: 'Boutique hotel · city view',
+    city: 'Lisbon',
+    rating: 4.6,
+    price: '$145/night',
+    provider: 'Booking',
+    image: EXPLORER_PHOTO('1611892440504-42a792e24d32'),
+    isUserVote: true,
+  },
+  {
+    title: 'Príncipe Real Loft',
+    description: 'Entire apartment · 4 travellers',
+    city: 'Lisbon',
+    rating: 4.4,
+    price: '$95/night',
+    provider: 'Airbnb',
+    image: EXPLORER_PHOTO('1551776235-dde6d482980b'),
+  },
+  {
+    title: 'Lisbon Lounge Hostel',
+    description: 'Hostel · downtown',
+    city: 'Lisbon',
+    rating: 4.0,
+    price: '$35/night',
+    provider: 'Booking',
+    image: EXPLORER_PHOTO('1568084680786-a84f91d1153c'),
+  },
+];
+
+interface PollVoter { id: number; option: number; }
 const POLL_VOTERS_SCRIPT: PollVoter[] = [
-  { id: 1, option: 0, avatar: '👩‍🎨' },
-  { id: 2, option: 0, avatar: '🧔' },
-  { id: 3, option: 1, avatar: '👱‍♀️' },
-  { id: 4, option: 0, avatar: '🧑‍💻' },
-  { id: 5, option: 1, avatar: '😊' },
+  { id: 1, option: 0 },
+  { id: 2, option: 0 },
+  { id: 3, option: 1 },
+  { id: 4, option: 0 },
+  { id: 5, option: 1 },
 ];
 
 export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
@@ -503,32 +556,33 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
         category: 'Hébergement',
         creator: 'Marie',
         time: 'il y a 2h',
-        status: 'Sondage en cours',
+        status: 'Voter maintenant',
         single: 'Choix unique',
         options: 'options',
-        participants: 'participants',
+        yourVote: 'Votre vote',
         votes: 'votes',
-        more: 'autre',
+        participants: 'participants',
+        ends: 'Termine dans 2j',
       }
     : {
         question: 'Where to stay in Lisbon?',
         category: 'Accommodation',
         creator: 'Marie',
         time: '2h ago',
-        status: 'Vote in progress',
+        status: 'Vote now',
         single: 'Single choice',
         options: 'options',
-        participants: 'participants',
+        yourVote: 'Your vote',
         votes: 'votes',
-        more: 'more',
+        participants: 'participants',
+        ends: 'Ends in 2d',
       };
 
-  const options = POLL_OPTIONS[lang];
+  const choices = lang === 'fr' ? POLL_CHOICES_FR : POLL_CHOICES_EN;
   const [voters, setVoters] = useState<PollVoter[]>([]);
 
   useEffect(() => {
     if (!autoPlay) return;
-    // Voters trickle in to mimic a live group decision.
     const timers = POLL_VOTERS_SCRIPT.map((v, i) =>
       setTimeout(() => {
         setVoters((prev) => (prev.find((p) => p.id === v.id) ? prev : [...prev, v]));
@@ -538,128 +592,137 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
   }, [autoPlay]);
 
   const total = voters.length || 1;
-  const votesByOption = options.map((_, i) => voters.filter((v) => v.option === i).length);
-  const winningIdx = votesByOption.indexOf(Math.max(...votesByOption));
+  const votesByOption = choices.map((_, i) => voters.filter((v) => v.option === i).length);
 
   return (
     <div className="relative h-full min-h-[280px] lg:min-h-[420px] w-full overflow-hidden rounded-3xl bg-white p-4 lg:p-5 shadow-sm border border-slate-200/70">
-      {/* Creator header — mirrors the real polls header (avatar + name + time + status badge) */}
-      <div className="flex items-center justify-between mb-3 lg:mb-4">
+      {/* Creator + status header */}
+      <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
-          <div className="flex w-8 h-8 items-center justify-center rounded-full text-base shrink-0 ring-2 ring-white shadow-sm" style={{ backgroundColor: '#FFE4D6' }}>
+          <div className="flex w-7 h-7 items-center justify-center rounded-full text-base shrink-0 ring-2 ring-white shadow-sm" style={{ backgroundColor: '#FFE4D6' }}>
             👩‍🎨
           </div>
           <div className="leading-tight">
             <div className="text-[12px] font-semibold text-slate-900">{t.creator}</div>
-            <div className="text-[10px] text-slate-500">{t.time}</div>
+            <div className="text-[10px] text-slate-500">{t.time} · {t.ends}</div>
           </div>
         </div>
-        <div className="flex items-center gap-1 rounded-full px-2 py-0.5" style={{ backgroundColor: `${colors.poll}1A` }}>
-          <motion.div
-            animate={{ scale: [1, 1.3, 1], opacity: [0.6, 1, 0.6] }}
-            transition={{ duration: 1.6, repeat: Infinity }}
-            className="w-1.5 h-1.5 rounded-full"
-            style={{ backgroundColor: colors.poll }}
-          />
-          <span className="text-[10px] font-semibold" style={{ color: colors.poll }}>{t.status}</span>
+        <div className="flex items-center gap-1 rounded-full px-2 py-0.5" style={{ backgroundColor: `${colors.primary}1A` }}>
+          <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke={colors.primary} strokeWidth="2.5" strokeLinecap="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="8" x2="12" y2="12" />
+            <line x1="12" y1="16" x2="12.01" y2="16" />
+          </svg>
+          <span className="text-[10px] font-semibold" style={{ color: colors.primary }}>{t.status}</span>
         </div>
       </div>
 
       {/* Category badge + question */}
       <div className="mb-3">
-        <div className="inline-flex items-center gap-1.5 mb-1.5 rounded-full bg-slate-100 px-2 py-0.5">
+        <div className="inline-flex items-center gap-1.5 mb-1 rounded-full bg-slate-100 px-2 py-0.5">
           <Icons.Bed className="w-3 h-3 text-slate-600" />
           <span className="text-[10px] font-medium text-slate-600">{t.category}</span>
         </div>
         <div className="text-sm lg:text-base font-semibold text-slate-900 leading-snug">{t.question}</div>
         <div className="text-[10px] text-slate-500 mt-0.5">
-          {t.single} · {options.length} {t.options}
+          {t.single} · {choices.length} {t.options}
         </div>
       </div>
 
-      {/* Poll choices — match poll-choice-option.tsx EventItemChoice variant */}
+      {/* Poll choices — match poll-choice-option.tsx EventItemChoice default variant */}
       <div className="space-y-2">
-        {options.map((opt, i) => {
-          const optionVoters = voters.filter((v) => v.option === i);
-          const percentage = Math.round((optionVoters.length / total) * 100);
-          const isWinning = i === winningIdx && voters.length > 0;
+        {choices.map((choice, i) => {
+          const votesForChoice = votesByOption[i];
+          const percentage = Math.round((votesForChoice / total) * 100);
+          const providerStyle = POLL_PROVIDER_STYLE[choice.provider];
+          const isUserVote = !!choice.isUserVote;
 
           return (
             <div
-              key={opt.label}
-              className={`relative rounded-xl border bg-white overflow-hidden transition-shadow ${
-                isWinning ? 'border-transparent shadow-md ring-2' : 'border-slate-200'
+              key={choice.title}
+              className={`relative overflow-hidden rounded-xl border transition-colors ${
+                isUserVote ? 'border-2' : 'border-slate-200'
               }`}
-              style={isWinning ? { boxShadow: `0 4px 12px -2px ${colors.poll}30`, ['--tw-ring-color' as string]: `${colors.poll}40` } : undefined}
+              style={isUserVote ? { borderColor: `${colors.poll}80` } : undefined}
             >
-              <div className="flex items-center gap-2.5 p-2 pr-3">
-                {/* Checkbox */}
-                <div
-                  className="flex w-4 h-4 shrink-0 items-center justify-center rounded-md border-2 transition-colors"
-                  style={{
-                    backgroundColor: isWinning ? colors.poll : 'transparent',
-                    borderColor: isWinning ? colors.poll : '#CBD5E1',
-                  }}
-                >
-                  {isWinning && <Icons.Check className="w-2.5 h-2.5 text-white" />}
-                </div>
-
-                {/* Thumbnail */}
-                <div className="relative w-12 h-12 lg:w-14 lg:h-14 shrink-0 rounded-lg overflow-hidden bg-slate-100">
-                  <img src={opt.image} alt={opt.label} className="absolute inset-0 w-full h-full object-cover" loading="eager" />
-                </div>
-
-                {/* Title + subtitle + price */}
-                <div className="flex-1 min-w-0">
-                  <div className="text-[12px] font-semibold text-slate-900 truncate leading-tight">{opt.label}</div>
-                  <div className="flex items-center gap-1.5 mt-0.5">
-                    <span className="flex items-center gap-0.5 text-[10px] text-slate-500">
-                      <span>⭐</span>
-                      <span className="font-medium">{opt.rating}</span>
-                    </span>
-                    <span className="text-[10px] text-slate-400 truncate">{opt.subtitle}</span>
+              {/* Top row: checkbox + thumbnail + content + percentage */}
+              <div className="flex gap-2.5 p-2.5">
+                {/* Checkbox (top-left, matches the real h-4 w-4 circular checkbox) */}
+                <div className="pt-1 shrink-0">
+                  <div
+                    className="flex w-4 h-4 items-center justify-center rounded-full border-[1.5px] transition-colors"
+                    style={{
+                      backgroundColor: isUserVote ? colors.poll : 'transparent',
+                      borderColor: isUserVote ? colors.poll : 'rgba(100,116,139,0.4)',
+                    }}
+                  >
+                    {isUserVote && <Icons.Check className="w-2.5 h-2.5 text-white" />}
                   </div>
-                  {opt.price && (
-                    <div className="text-[10px] font-bold text-slate-900 mt-0.5">{opt.price}</div>
-                  )}
                 </div>
 
-                {/* Voter avatars (max 3 overlapped, +N badge for the rest) */}
-                <div className="flex -space-x-1.5 shrink-0">
-                  <AnimatePresence>
-                    {optionVoters.slice(0, 3).map((voter) => (
-                      <motion.div
-                        key={voter.id}
-                        initial={{ scale: 0, x: -8 }}
-                        animate={{ scale: 1, x: 0 }}
-                        transition={{ type: 'spring', stiffness: 400, damping: 22 }}
-                        className="flex w-5 h-5 items-center justify-center rounded-full bg-white text-[11px] ring-2 ring-white shadow-sm"
-                      >
-                        {voter.avatar}
-                      </motion.div>
-                    ))}
-                  </AnimatePresence>
-                  {optionVoters.length > 3 && (
-                    <div className="flex w-5 h-5 items-center justify-center rounded-full bg-slate-200 text-[8px] font-bold text-slate-600 ring-2 ring-white">
-                      +{optionVoters.length - 3}
+                {/* Wide landscape thumbnail (h-16 lg:h-20, w-24 lg:w-28) */}
+                <div className="relative h-16 lg:h-20 w-24 lg:w-28 shrink-0 rounded-lg overflow-hidden shadow-sm ring-1 ring-black/5">
+                  <img src={choice.image} alt={choice.title} className="absolute inset-0 w-full h-full object-cover" loading="eager" />
+                </div>
+
+                {/* Content: title + description + city/rating + provider/price */}
+                <div className="min-w-0 flex-1 space-y-1">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <h4 className="text-[13px] font-semibold text-slate-900 truncate leading-tight">{choice.title}</h4>
+                    {isUserVote && (
+                      <span className="text-[9px] font-medium" style={{ color: `${colors.poll}B3` }}>
+                        {t.yourVote}
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-[10px] italic text-slate-500 line-clamp-1">{choice.description}</p>
+
+                  <div className="flex items-center gap-2 text-[10px]">
+                    <div className="flex items-center gap-0.5 text-slate-600">
+                      <Icons.MapPin className="w-3 h-3 text-slate-400" />
+                      <span>{choice.city}</span>
                     </div>
-                  )}
+                    <div className="flex items-center gap-0.5">
+                      <svg className="w-3 h-3" viewBox="0 0 24 24" fill="#FACC15" stroke="#FACC15" strokeWidth="1">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                      <span className="font-medium text-slate-700">{choice.rating}/5</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between gap-2">
+                    {/* Provider affiliate badge */}
+                    <span
+                      className="inline-flex items-center rounded-md px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wide"
+                      style={{ backgroundColor: providerStyle.bg, color: providerStyle.fg }}
+                    >
+                      {choice.provider}
+                    </span>
+                    <span className="text-[11px] font-semibold text-emerald-600">{choice.price}</span>
+                  </div>
                 </div>
 
-                {/* Percentage */}
-                <div className="text-[12px] font-bold w-9 text-right" style={{ color: isWinning ? colors.poll : '#64748B' }}>
-                  {percentage}%
+                {/* Right: percentage + vote count */}
+                <div className="flex flex-col items-end shrink-0 ml-2">
+                  <span className="text-[14px] font-bold leading-none" style={{ color: isUserVote ? colors.poll : '#0F172A' }}>
+                    {percentage}%
+                  </span>
+                  <span className="text-[9px] text-slate-500 mt-1">
+                    {votesForChoice} {votesForChoice === 1 ? 'vote' : t.votes}
+                  </span>
                 </div>
               </div>
 
-              {/* Bottom progress bar — fills based on percentage */}
-              <div className="relative h-1 bg-slate-100">
-                <motion.div
-                  className="absolute inset-y-0 left-0"
-                  style={{ backgroundColor: isWinning ? colors.poll : '#CBD5E1' }}
-                  animate={{ width: `${percentage}%` }}
-                  transition={{ duration: 0.5, ease: 'easeOut' }}
-                />
+              {/* Bottom progress bar — padded container, h-1.5, rounded */}
+              <div className="px-3 pb-2.5">
+                <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-100">
+                  <motion.div
+                    className="h-full rounded-full"
+                    style={{ backgroundColor: isUserVote ? colors.poll : '#94A3B8' }}
+                    animate={{ width: `${percentage}%` }}
+                    transition={{ duration: 0.5, ease: 'easeOut' }}
+                  />
+                </div>
               </div>
             </div>
           );
@@ -1089,136 +1152,188 @@ export function TimelineCalendar({ autoPlay = true }: { autoPlay?: boolean }) {
 }
 
 // ============================================================================
-// 7. LIVE COLLABORATION
+// 7. ITINERARY DAY — mirrors the real day-by-day-calendar:
+// day-nav header → hour rail on the left → color-coded item cards positioned
+// vertically by time, each with the same accent-border + icon contract as the
+// app's timeline-items (activity / food / sleeping / transport).
+// Exported as LiveCollaboration for backwards compat with StackingCards.
 // ============================================================================
+type ItineraryKind = 'transport' | 'activity' | 'food' | 'sleeping';
+
+interface ItineraryItem {
+  kind: ItineraryKind;
+  title: string;
+  subtitle?: string;
+  startHour: number;
+  endHour: number;
+  participants: string[];
+  booked?: boolean;
+}
+
+const ITINERARY_KIND_STYLE: Record<ItineraryKind, { color: string; bg: string; icon: keyof typeof Icons }> = {
+  transport: { color: '#0EA5E9', bg: '#E0F2FE', icon: 'Train' },
+  activity: { color: '#F59E0B', bg: '#FEF3C7', icon: 'Camera' },
+  food: { color: '#F97316', bg: '#FFEDD5', icon: 'Utensils' },
+  sleeping: { color: '#14B8A6', bg: '#CCFBF1', icon: 'Bed' },
+};
+
+const ITINERARY_ITEMS_EN: ItineraryItem[] = [
+  { kind: 'transport', title: 'Eurostar arrival', subtitle: 'St Pancras → Gare du Nord', startHour: 9, endHour: 11, participants: ['👩‍🎨', '🧔'] },
+  { kind: 'activity', title: 'Eiffel Tower visit', subtitle: '2nd floor + lift', startHour: 11.5, endHour: 13.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Lunch · French', startHour: 14, endHour: 15.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+  { kind: 'activity', title: 'Louvre Museum', subtitle: 'Guided tour', startHour: 16, endHour: 18, participants: ['👱‍♀️', '🧑‍💻'] },
+  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Check-in', startHour: 19, endHour: 20, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+];
+
+const ITINERARY_ITEMS_FR: ItineraryItem[] = [
+  { kind: 'transport', title: 'Arrivée Eurostar', subtitle: 'St Pancras → Gare du Nord', startHour: 9, endHour: 11, participants: ['👩‍🎨', '🧔'] },
+  { kind: 'activity', title: 'Tour Eiffel', subtitle: '2e étage + ascenseur', startHour: 11.5, endHour: 13.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Déjeuner · français', startHour: 14, endHour: 15.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+  { kind: 'activity', title: 'Musée du Louvre', subtitle: 'Visite guidée', startHour: 16, endHour: 18, participants: ['👱‍♀️', '🧑‍💻'] },
+  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Check-in', startHour: 19, endHour: 20, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+];
+
+function fmtHour(h: number): string {
+  const hh = Math.floor(h);
+  const mm = Math.round((h - hh) * 60);
+  return `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`;
+}
+
 export function LiveCollaboration({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
-  const lang = locale === 'fr' ? 'fr' : 'en';
+  const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
   const t = lang === 'fr'
-    ? {
-        title: 'Collaboration en direct',
-        typing: (name: string) => `${name} écrit`,
-        added: (name: string, item: string) => `${name} a ajouté « ${item} »`,
-        voted: (name: string, item: string) => `${name} a voté pour ${item}`,
-      }
-    : {
-        title: 'Live Collaboration',
-        typing: (name: string) => `${name} is typing`,
-        added: (name: string, item: string) => `${name} added "${item}"`,
-        voted: (name: string, item: string) => `${name} voted for ${item}`,
-      };
-  const users = [
-    { name: 'Marie', color: '#FF6B6B', cursor: { x: 30, y: 40 } },
-    { name: 'Alex', color: '#4ECDC4', cursor: { x: 70, y: 60 } },
-  ];
+    ? { dayOf: 'Jour 2 sur 5', date: 'Mer. 15 mai', city: 'Paris', booked: 'Réservé' }
+    : { dayOf: 'Day 2 of 5', date: 'Wed, May 15', city: 'Paris', booked: 'Booked' };
+
+  const items = lang === 'fr' ? ITINERARY_ITEMS_FR : ITINERARY_ITEMS_EN;
+  const [visibleCount, setVisibleCount] = useState(autoPlay ? 0 : items.length);
+
+  useEffect(() => {
+    if (!autoPlay) {
+      setVisibleCount(items.length);
+      return;
+    }
+    setVisibleCount(0);
+    const timers = items.map((_, i) =>
+      setTimeout(() => setVisibleCount((c) => Math.max(c, i + 1)), 400 + i * 450),
+    );
+    return () => timers.forEach(clearTimeout);
+  }, [autoPlay, items.length]);
+
+  const hourStart = 9;
+  const hourEnd = 21;
+  const hourSpan = hourEnd - hourStart;
+  const rowHeightPct = (h: number) => ((h - hourStart) / hourSpan) * 100;
 
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-sky-50 to-cyan-50 p-5">
-      <div className="mb-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="flex w-8 h-8 items-center justify-center rounded-xl" style={{ backgroundColor: colors.participant }}>
-            <Icons.Users className="w-4 h-4 text-white" />
-          </div>
-          <span className="text-sm font-semibold text-slate-800">{t.title}</span>
+    <div className="relative h-full min-h-[280px] lg:min-h-[420px] w-full overflow-hidden rounded-3xl bg-white p-4 lg:p-5 shadow-sm border border-slate-200/70">
+      {/* Day navigation header — mirrors day-navigation.tsx */}
+      <div className="mb-3 flex items-center justify-between border-b border-slate-100 pb-2.5">
+        <button className="flex w-6 h-6 items-center justify-center rounded-full hover:bg-slate-100" aria-label="Previous day">
+          <svg className="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <div className="text-center leading-tight">
+          <div className="text-[10px] uppercase tracking-wide text-slate-400 font-medium">{t.dayOf}</div>
+          <div className="text-[13px] font-semibold text-slate-900">{t.date}</div>
+          <div className="text-[10px] text-slate-500">{t.city}</div>
         </div>
-        <div className="flex -space-x-2">
-          {users.map((user, i) => (
-            <motion.div
-              key={user.name}
-              animate={autoPlay ? { scale: [1, 1.1, 1] } : {}}
-              transition={{ duration: 2, repeat: Infinity, delay: i * 0.5 }}
-              className="flex w-7 h-7 items-center justify-center rounded-full border-2 border-white text-xs font-bold text-white"
-              style={{ backgroundColor: user.color }}
-            >
-              {user.name[0]}
-            </motion.div>
-          ))}
-        </div>
+        <button className="flex w-6 h-6 items-center justify-center rounded-full hover:bg-slate-100" aria-label="Next day">
+          <svg className="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
       </div>
 
-      <div className="relative h-32 rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
-        <div className="space-y-2">
-          <div className="h-2 w-3/4 rounded bg-slate-200" />
-          <div className="h-2 w-1/2 rounded bg-slate-200" />
-          <div className="h-2 w-5/6 rounded bg-slate-200" />
-          <div className="h-2 w-2/3 rounded bg-slate-200" />
-        </div>
-
-        {autoPlay && users.map((user, i) => (
-          <motion.div
-            key={user.name}
-            className="absolute"
-            style={{ left: `${user.cursor.x}%`, top: `${user.cursor.y}%` }}
-            animate={{
-              x: [0, 20 * (i === 0 ? 1 : -1), 0],
-              y: [0, 15 * (i === 0 ? -1 : 1), 0],
-            }}
-            transition={{ duration: 3, repeat: Infinity, delay: i * 0.5 }}
-          >
-            <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-              <path
-                d="M1 1L1 15.5L5.5 11L10 19L12.5 17.5L8 9.5L14 8L1 1Z"
-                fill={user.color}
-                stroke="white"
-                strokeWidth="1.5"
-              />
-            </svg>
-            <div
-              className="ml-3 mt-1 rounded px-1.5 py-0.5 text-[10px] font-medium text-white"
-              style={{ backgroundColor: user.color }}
-            >
-              {user.name}
-            </div>
-          </motion.div>
-        ))}
-
-        <AnimatePresence>
-          {autoPlay && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="absolute bottom-2 right-2 flex items-center gap-1.5 rounded-full bg-slate-100 px-2 py-1"
-            >
-              <span className="text-[10px] text-slate-500">{t.typing(users[0].name)}</span>
-              <div className="flex gap-0.5">
-                {[0, 1, 2].map((i) => (
-                  <motion.div
-                    key={i}
-                    className="w-1 h-1 rounded-full bg-slate-400"
-                    animate={{ y: [0, -3, 0] }}
-                    transition={{ duration: 0.6, repeat: Infinity, delay: i * 0.15 }}
-                  />
-                ))}
+      {/* Hour rail + items grid */}
+      <div className="relative flex" style={{ height: 'calc(100% - 72px)', minHeight: '320px' }}>
+        {/* Hour labels on the left */}
+        <div className="relative w-9 shrink-0">
+          {Array.from({ length: hourSpan + 1 }).map((_, i) => {
+            const hour = hourStart + i;
+            const showLabel = i % 3 === 0 || i === hourSpan;
+            return (
+              <div
+                key={hour}
+                className="absolute left-0 right-1 text-right text-[10px] text-slate-400 font-medium leading-none"
+                style={{ top: `${(i / hourSpan) * 100}%`, transform: 'translateY(-50%)' }}
+              >
+                {showLabel ? fmtHour(hour) : ''}
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+            );
+          })}
+        </div>
 
-      <div className="mt-3 space-y-2">
-        <AnimatePresence>
-          {autoPlay && (
-            <>
+        {/* Item area */}
+        <div className="relative flex-1 border-l border-slate-200">
+          {/* Hour grid lines (every 3h) */}
+          {Array.from({ length: Math.floor(hourSpan / 3) + 1 }).map((_, i) => (
+            <div
+              key={i}
+              className="absolute left-0 right-0 border-t border-dashed border-slate-100"
+              style={{ top: `${((i * 3) / hourSpan) * 100}%` }}
+            />
+          ))}
+
+          {items.map((item, idx) => {
+            const style = ITINERARY_KIND_STYLE[item.kind];
+            const Icon = Icons[style.icon];
+            const top = rowHeightPct(item.startHour);
+            const height = rowHeightPct(item.endHour) - top;
+            const isVisible = idx < visibleCount;
+            return (
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1 }}
-                className="flex items-center gap-2 text-xs text-slate-500"
+                key={`${item.kind}-${idx}`}
+                initial={{ opacity: 0, x: -8, scale: 0.97 }}
+                animate={{
+                  opacity: isVisible ? 1 : 0,
+                  x: isVisible ? 0 : -8,
+                  scale: isVisible ? 1 : 0.97,
+                }}
+                transition={{ type: 'spring', stiffness: 360, damping: 28 }}
+                className="absolute left-1.5 right-1.5 rounded-lg overflow-hidden shadow-sm"
+                style={{
+                  top: `${top}%`,
+                  height: `${height}%`,
+                  backgroundColor: style.bg,
+                  borderLeft: `3px solid ${style.color}`,
+                }}
               >
-                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: users[0].color }} />
-                <span>{t.added(users[0].name, 'Senso-ji Temple')}</span>
+                <div className="flex flex-col h-full px-2 py-1.5">
+                  <div className="flex items-center gap-1.5">
+                    <Icon className="w-3 h-3 shrink-0" style={{ color: style.color }} />
+                    <span className="text-[11px] font-semibold text-slate-900 truncate leading-tight">{item.title}</span>
+                    {item.booked && (
+                      <span className="ml-auto flex items-center gap-0.5 rounded-full bg-emerald-100 px-1.5 py-0.5 text-[8px] font-semibold text-emerald-700">
+                        <Icons.Check className="w-2 h-2" />
+                        {t.booked}
+                      </span>
+                    )}
+                  </div>
+                  <div className="text-[9px] text-slate-600 mt-0.5 truncate">
+                    {fmtHour(item.startHour)} – {fmtHour(item.endHour)}
+                    {item.subtitle ? ` · ${item.subtitle}` : ''}
+                  </div>
+                  {height > 8 && (
+                    <div className="mt-auto flex items-center gap-1">
+                      <div className="flex -space-x-1">
+                        {item.participants.slice(0, 3).map((p, i) => (
+                          <div key={i} className="flex w-4 h-4 items-center justify-center rounded-full bg-white text-[9px] ring-1 ring-slate-200">
+                            {p}
+                          </div>
+                        ))}
+                      </div>
+                      {item.participants.length > 3 && (
+                        <span className="text-[9px] text-slate-500 font-medium">+{item.participants.length - 3}</span>
+                      )}
+                    </div>
+                  )}
+                </div>
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 2 }}
-                className="flex items-center gap-2 text-xs text-slate-500"
-              >
-                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: users[1].color }} />
-                <span>{t.voted(users[1].name, 'Kyoto')}</span>
-              </motion.div>
-            </>
-          )}
-        </AnimatePresence>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
