@@ -438,7 +438,7 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
                     initial={{ opacity: 0, y: 6 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
-                    className="relative flex flex-col rounded-2xl bg-white p-2.5 lg:p-3 shadow-sm border border-slate-200/70"
+                    className="relative flex flex-col rounded-2xl bg-white p-2.5 lg:p-3 shadow-sm border border-slate-200/70 h-44 lg:h-52"
                   >
                     {/* +/Check button top-right */}
                     <motion.div
@@ -523,7 +523,7 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
                   initial={{ opacity: 0, y: 6 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
-                  className={`flex flex-col rounded-3xl overflow-hidden bg-white shadow-sm transition-all duration-200 border ${
+                  className={`flex flex-col rounded-3xl overflow-hidden bg-white shadow-sm transition-all duration-200 border h-44 lg:h-52 ${
                     sugg.booked
                       ? 'border-emerald-500/40'
                       : isHeadliner
