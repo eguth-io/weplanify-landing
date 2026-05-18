@@ -255,9 +255,9 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   },
   restaurant: {
     suggestions: [
-      { title: 'L’Ambroisie', city: '★★★ · Place des Vosges', price: '€€€€', rating: 4.9, image: '/explorer-mockup/lambroisie.jpg', imageAlt: 'Fine dining room', provider: 'google', lon: 2.3622, lat: 48.8552 },
-      { title: 'Le Train Bleu', city: 'Gare de Lyon · Belle Époque', price: '€€€', rating: 4.6, image: '/explorer-mockup/le-train-bleu.jpg', imageAlt: 'Belle Époque dining room', provider: 'google', lon: 2.3735, lat: 48.8447 },
-      { title: 'Pierre Hermé', city: 'Saint-Germain · patisserie', price: '€€', rating: 4.8, image: '/explorer-mockup/pierre-herme.jpg', imageAlt: 'Pistachio macaron', provider: 'google', lon: 2.3326, lat: 48.8536 },
+      { title: 'Le Mun', city: 'Paris 8e · coréen-français', price: '€€€€', rating: 4.8, image: '/explorer-mockup/le-mun.jpg', imageAlt: 'Salle gastronomique', provider: 'google', lon: 2.3245, lat: 48.8744 },
+      { title: 'Le Train Bleu', city: 'Gare de Lyon · Belle Époque', price: '€€€', rating: 4.6, image: '/explorer-mockup/le-train-bleu.jpg', imageAlt: 'Salle Belle Époque', provider: 'google', lon: 2.3735, lat: 48.8447 },
+      { title: 'Pierre Hermé', city: 'Saint-Germain · pâtisserie', price: '€€', rating: 4.8, image: '/explorer-mockup/pierre-herme.jpg', imageAlt: 'Macaron pistache', provider: 'google', lon: 2.3326, lat: 48.8536 },
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market entrance', provider: 'google', lon: 2.3613, lat: 48.8639 },
     ],
     map: { lon: 2.3500, lat: 48.8580, zoom: 12 },
@@ -295,7 +295,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   },
   restaurant: {
     suggestions: [
-      { title: 'L’Ambroisie', city: '★★★ · Place des Vosges', price: '€€€€', rating: 4.9, image: '/explorer-mockup/lambroisie.jpg', imageAlt: 'Fine dining', provider: 'google', lon: 2.3622, lat: 48.8552 },
+      { title: 'Le Mun', city: 'Paris 8th · Korean-French', price: '€€€€', rating: 4.8, image: '/explorer-mockup/le-mun.jpg', imageAlt: 'Fine dining room', provider: 'google', lon: 2.3245, lat: 48.8744 },
       { title: 'Septime', city: 'Paris 11th · bistronomy', price: '€€€', rating: 4.7, image: '/explorer-mockup/petit-bistrot.jpg', imageAlt: 'Bistronomy', provider: 'google', lon: 2.3747, lat: 48.8527 },
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
       { title: 'Du Pain et des Idées', city: 'Paris 10th · bakery', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
