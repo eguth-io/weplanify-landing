@@ -251,7 +251,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
       { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
   },
   restaurant: {
     suggestions: [
@@ -260,7 +260,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Pierre Hermé', city: 'Saint-Germain · pâtisserie', price: '€€', rating: 4.8, image: '/explorer-mockup/pierre-herme.jpg', imageAlt: 'Macaron pistache', provider: 'google', lon: 2.3326, lat: 48.8536 },
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market entrance', provider: 'google', lon: 2.3613, lat: 48.8639 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
   },
   hotel: {
     suggestions: [
@@ -269,7 +269,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Loft Canal Saint-Martin', city: 'Paris 10e · entier', price: '120€/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
       { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '45€/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
   },
   transport: {
     suggestions: [
@@ -291,7 +291,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Guided Seine river cruise', city: 'Bateaux Parisiens', price: '€15', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
       { title: 'Sainte-Chapelle — dated ticket', city: 'Île de la Cité', price: '€13', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
   },
   restaurant: {
     suggestions: [
@@ -300,7 +300,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
       { title: 'Du Pain et des Idées', city: 'Paris 10th · bakery', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
   },
   hotel: {
     suggestions: [
@@ -309,7 +309,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Canal Saint-Martin Loft', city: 'Paris 10th · entire apartment', price: '€120/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
       { title: 'Generator Paris', city: 'Paris 10th · hostel', price: '€45/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
   },
   transport: {
     suggestions: [
