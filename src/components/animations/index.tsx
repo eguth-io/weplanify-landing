@@ -235,46 +235,87 @@ const EXPLORER_PHOTO = (id: string) =>
 // Booking / GetYourGuide / Viator / Google Places listing in Paris. The
 // first hotel carries a Selected-dates pill and the second is marked
 // Booked, mirroring how the real list looks once a trip is being built.
-const EXPLORER_CARDS: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
+const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   activity: {
     suggestions: [
-      { title: 'Tour Eiffel — billet 2e étage', city: 'Paris 7e', price: '29€', rating: 4.8, image: EXPLORER_PHOTO('1502602898657-3e91760cbb34'), imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
-      // Stock photo for Louvre kept landing on Marina Bay Sands — swapped for
-      // a brand-tile so the thumbnail can't lie about what the activity is.
-      { title: 'Musée du Louvre — billet daté', city: 'Paris 1er', price: '22€', rating: 4.7, brandTile: { gradient: 'linear-gradient(135deg, #0F172A 0%, #475569 100%)', label: 'LOUVRE', sub: 'Paris 1er · Pyramide' }, provider: 'viator', lon: 2.3376, lat: 48.8606 },
-      { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, brandTile: { gradient: 'linear-gradient(135deg, #0E7490 0%, #06B6D4 100%)', label: 'BATEAUX PARISIENS', sub: 'Croisière Seine' }, provider: 'viator', lon: 2.3027, lat: 48.8614 },
-      { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, brandTile: { gradient: 'linear-gradient(135deg, #6B21A8 0%, #BE185D 100%)', label: 'SAINTE-CHAPELLE', sub: 'Vitraux gothiques' }, provider: 'viator', lon: 2.3450, lat: 48.8554 },
+      { title: 'Tour Eiffel — billet 2e étage', city: 'Paris 7e', price: '29€', rating: 4.8, image: '/explorer-mockup/eiffel.jpg', imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
+      { title: 'Musée du Louvre — billet daté', city: 'Paris 1er', price: '22€', rating: 4.7, image: '/explorer-mockup/louvre.jpg', imageAlt: 'Louvre pyramid', provider: 'viator', lon: 2.3376, lat: 48.8606 },
+      { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
+      { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
     map: { lon: 2.3404, lat: 48.8584, zoom: 12 },
   },
   restaurant: {
     suggestions: [
-      { title: 'L’Ambroisie', city: 'Le Marais · gastronomique', price: '€€€', rating: 4.9, image: EXPLORER_PHOTO('1551218808-94e220e084d2'), imageAlt: 'Fine dining', provider: 'google', lon: 2.3622, lat: 48.8552 },
-      { title: 'Le Petit Bistrot', city: 'Paris 11e · français', price: '€€', rating: 4.6, image: EXPLORER_PHOTO('1414235077428-338989a2e8c0'), imageAlt: 'Bistrot', provider: 'google', lon: 2.3747, lat: 48.8636 },
-      { title: 'Marché des Enfants Rouges', city: 'Paris 3e · marché couvert', price: '€', rating: 4.5, image: EXPLORER_PHOTO('1517248135467-4c7edcad34c4'), imageAlt: 'Market food', provider: 'google', lon: 2.3613, lat: 48.8639 },
-      { title: 'Du Pain et des Idées', city: 'Paris 10e · boulangerie', price: '€', rating: 4.8, image: EXPLORER_PHOTO('1543353071-873f17a7a088'), imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
+      { title: 'L’Ambroisie', city: 'Le Marais · gastronomique', price: '€€€', rating: 4.9, image: '/explorer-mockup/lambroisie.jpg', imageAlt: 'Fine dining', provider: 'google', lon: 2.3622, lat: 48.8552 },
+      { title: 'Le Petit Bistrot', city: 'Paris 11e · français', price: '€€', rating: 4.6, image: '/explorer-mockup/petit-bistrot.jpg', imageAlt: 'Parisian bistrot', provider: 'google', lon: 2.3747, lat: 48.8636 },
+      { title: 'Marché des Enfants Rouges', city: 'Paris 3e · marché couvert', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
+      { title: 'Du Pain et des Idées', city: 'Paris 10e · boulangerie', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Boulangerie', provider: 'google', lon: 2.3636, lat: 48.8694 },
     ],
     map: { lon: 2.3645, lat: 48.8615, zoom: 13 },
   },
   hotel: {
     suggestions: [
-      { title: 'Hôtel du Louvre', city: 'Paris 1er · 5★', price: '180€/n', rating: 4.4, image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), imageAlt: 'Hotel room', provider: 'booking', selectedDates: '15 → 17 mai', lon: 2.3376, lat: 48.8627 },
-      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18e · boutique', price: '320€/n', rating: 4.7, image: EXPLORER_PHOTO('1551836022-d5d88e9218df'), imageAlt: 'Boutique hotel', provider: 'booking', booked: true, lon: 2.3401, lat: 48.8852 },
-      { title: 'Loft Canal Saint-Martin', city: 'Paris 10e · entier', price: '120€/n', rating: 4.5, image: EXPLORER_PHOTO('1606046604972-77cc76aee944'), imageAlt: 'Loft', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
-      { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '45€/n', rating: 4.0, image: EXPLORER_PHOTO('1568084680786-a84f91d1153c'), imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
+      { title: 'Hôtel du Louvre', city: 'Paris 1er · 5★', price: '180€/n', rating: 4.4, image: '/explorer-mockup/hotel-louvre.jpg', imageAlt: 'Hotel facade', provider: 'booking', selectedDates: '15 → 17 mai', lon: 2.3376, lat: 48.8627 },
+      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18e · boutique', price: '320€/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3401, lat: 48.8852 },
+      { title: 'Loft Canal Saint-Martin', city: 'Paris 10e · entier', price: '120€/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
+      { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '45€/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
     ],
     map: { lon: 2.3376, lat: 48.8627, zoom: 12 },
   },
   transport: {
     suggestions: [
-      { title: 'Eurostar Paris → London', city: '2h 16min · Gare du Nord', price: '95€', rating: null, brandTile: { gradient: 'linear-gradient(135deg, #FFD200 0%, #FFB700 100%)', label: 'eurostar', sub: 'PAR → LON' }, provider: 'eurostar', lon: 2.3553, lat: 48.8809 },
-      { title: 'TGV INOUI Paris → Lyon', city: '1h 56min · Gare de Lyon', price: '45€', rating: null, brandTile: { gradient: 'linear-gradient(135deg, #1E2D75 0%, #6B43A1 100%)', label: 'TGV INOUI', sub: 'PAR → LYS' }, provider: 'sncf', lon: 2.3733, lat: 48.8444 },
-      { title: 'Air France Paris → Nice', city: '1h 35min · CDG → NCE', price: '78€', rating: null, brandTile: { gradient: 'linear-gradient(135deg, #002157 0%, #1A4D9B 100%)', label: 'AIR FRANCE', sub: 'CDG → NCE' }, provider: 'airfrance', lon: 2.5479, lat: 49.0097 },
-      { title: 'Carnet 10 tickets t+', city: 'Paris · RATP', price: '17,35€', rating: null, brandTile: { gradient: 'linear-gradient(135deg, #0F172A 0%, #334155 100%)', label: 'RATP', sub: 'Paris · Métro' }, provider: 'custom', lon: 2.3470, lat: 48.8584 },
+      { title: 'Eurostar Paris → London', city: '2h 16min · Gare du Nord', price: '95€', rating: null, image: '/explorer-mockup/eurostar.jpg', imageAlt: 'Eurostar train', provider: 'eurostar', lon: 2.3553, lat: 48.8809 },
+      { title: 'TGV INOUI Paris → Lyon', city: '1h 56min · Gare de Lyon', price: '45€', rating: null, image: '/explorer-mockup/tgv.png', imageAlt: 'TGV INOUI', provider: 'sncf', lon: 2.3733, lat: 48.8444 },
+      { title: 'Air France Paris → Nice', city: '1h 35min · CDG → NCE', price: '78€', rating: null, image: '/explorer-mockup/air-france.jpg', imageAlt: 'Air France Boeing 777', provider: 'airfrance', lon: 2.5479, lat: 49.0097 },
+      { title: 'Carnet 10 tickets t+', city: 'Paris · RATP', price: '17,35€', rating: null, image: '/explorer-mockup/ratp-metro.jpg', imageAlt: 'Paris Métro entrance', provider: 'custom', lon: 2.3470, lat: 48.8584 },
     ],
-    // Pin centered on Paris with CDG visible northeast for the Air France item.
     map: { lon: 2.4500, lat: 48.9100, zoom: 9 },
   },
+};
+
+const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
+  activity: {
+    suggestions: [
+      { title: 'Eiffel Tower — 2nd floor ticket', city: 'Paris 7th', price: '€29', rating: 4.8, image: '/explorer-mockup/eiffel.jpg', imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
+      { title: 'Louvre Museum — dated ticket', city: 'Paris 1st', price: '€22', rating: 4.7, image: '/explorer-mockup/louvre.jpg', imageAlt: 'Louvre pyramid', provider: 'viator', lon: 2.3376, lat: 48.8606 },
+      { title: 'Guided Seine river cruise', city: 'Bateaux Parisiens', price: '€15', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
+      { title: 'Sainte-Chapelle — dated ticket', city: 'Île de la Cité', price: '€13', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
+    ],
+    map: { lon: 2.3404, lat: 48.8584, zoom: 12 },
+  },
+  restaurant: {
+    suggestions: [
+      { title: 'L’Ambroisie', city: 'Le Marais · fine dining', price: '€€€', rating: 4.9, image: '/explorer-mockup/lambroisie.jpg', imageAlt: 'Fine dining', provider: 'google', lon: 2.3622, lat: 48.8552 },
+      { title: 'Le Petit Bistrot', city: 'Paris 11th · French', price: '€€', rating: 4.6, image: '/explorer-mockup/petit-bistrot.jpg', imageAlt: 'Parisian bistrot', provider: 'google', lon: 2.3747, lat: 48.8636 },
+      { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
+      { title: 'Du Pain et des Idées', city: 'Paris 10th · bakery', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
+    ],
+    map: { lon: 2.3645, lat: 48.8615, zoom: 13 },
+  },
+  hotel: {
+    suggestions: [
+      { title: 'Hôtel du Louvre', city: 'Paris 1st · 5★', price: '€180/n', rating: 4.4, image: '/explorer-mockup/hotel-louvre.jpg', imageAlt: 'Hotel facade', provider: 'booking', selectedDates: 'May 15 → 17', lon: 2.3376, lat: 48.8627 },
+      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18th · boutique', price: '€320/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3401, lat: 48.8852 },
+      { title: 'Canal Saint-Martin Loft', city: 'Paris 10th · entire apartment', price: '€120/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
+      { title: 'Generator Paris', city: 'Paris 10th · hostel', price: '€45/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
+    ],
+    map: { lon: 2.3376, lat: 48.8627, zoom: 12 },
+  },
+  transport: {
+    suggestions: [
+      { title: 'Eurostar Paris → London', city: '2h 16min · Gare du Nord', price: '€95', rating: null, image: '/explorer-mockup/eurostar.jpg', imageAlt: 'Eurostar train', provider: 'eurostar', lon: 2.3553, lat: 48.8809 },
+      { title: 'TGV INOUI Paris → Lyon', city: '1h 56min · Gare de Lyon', price: '€45', rating: null, image: '/explorer-mockup/tgv.png', imageAlt: 'TGV INOUI', provider: 'sncf', lon: 2.3733, lat: 48.8444 },
+      { title: 'Air France Paris → Nice', city: '1h 35min · CDG → NCE', price: '€78', rating: null, image: '/explorer-mockup/air-france.jpg', imageAlt: 'Air France', provider: 'airfrance', lon: 2.5479, lat: 49.0097 },
+      { title: 'Métro 10-ticket book', city: 'Paris · RATP', price: '€17.35', rating: null, image: '/explorer-mockup/ratp-metro.jpg', imageAlt: 'Paris Métro entrance', provider: 'custom', lon: 2.3470, lat: 48.8584 },
+    ],
+    map: { lon: 2.4500, lat: 48.9100, zoom: 9 },
+  },
+};
+
+const EXPLORER_CARDS_BY_LANG: Record<'en' | 'fr', Record<ExplorerCategoryKey, ExplorerCategoryData>> = {
+  en: EXPLORER_CARDS_EN,
+  fr: EXPLORER_CARDS_FR,
 };
 
 const MAPBOX_STATIC_URL = (
@@ -317,7 +358,8 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
     };
   }, [activeFilter, isPlaying]);
 
-  const category = EXPLORER_CARDS[activeFilter];
+  const cards = EXPLORER_CARDS_BY_LANG[lang];
+  const category = cards[activeFilter];
 
   return (
     <div
@@ -327,7 +369,7 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
       {/* Preload every suggestion thumbnail so cycle frames don't flash empty. */}
       <div aria-hidden className="hidden">
         {EXPLORER_FILTER_KEYS.flatMap((k) =>
-          EXPLORER_CARDS[k].suggestions.map((s, i) => (
+          cards[k].suggestions.map((s, i) => (
             <img key={`${k}-${i}`} src={s.image} alt="" loading="eager" />
           ))
         )}
@@ -532,7 +574,7 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
           {/* Preload all 4 map tiles so cycle frames swap instantly. */}
           <div aria-hidden className="hidden">
             {EXPLORER_FILTER_KEYS.map((k) => {
-              const cat = EXPLORER_CARDS[k];
+              const cat = cards[k];
               return <img key={k} src={MAPBOX_STATIC_URL(cat.suggestions, cat.map)} alt="" loading="eager" />;
             })}
           </div>
