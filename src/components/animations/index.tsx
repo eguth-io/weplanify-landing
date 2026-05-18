@@ -454,11 +454,9 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
 export const AiGlobeJourney = ExplorerCards;
 
 // ============================================================================
-// 2. LIVE VOTING — mirrors the real polls.view.tsx + poll-choice-option.tsx
-// EventItemChoiceOption (non-card variant): creator header, category badge,
-// status, then choices with a wide landscape thumbnail, provider badge,
-// star rating /5, price/night in green, "Your vote" label, and a padded
-// bottom progress bar.
+// 2. LIVE VOTING — faithful reproduction of polls.view.tsx article + the
+// EventItemChoiceOption default variant + the footer action row, matching
+// the real app's spacing, colors and badge contracts.
 // ============================================================================
 interface PollChoice {
   title: string;
@@ -477,66 +475,21 @@ const POLL_PROVIDER_STYLE: Record<PollChoice['provider'], { bg: string; fg: stri
   Direct: { bg: '#E2E8F0', fg: '#0F172A' },
 };
 
+// Real theme colors from globals.css → reused so the mockup carries the same
+// surfaces as the live app (sleeping = teal, amber for vote-now, etc.).
+const SLEEPING_COLOR = '#14B8A6';
+const AMBER_COLOR = '#D97706';
+
 const POLL_CHOICES_FR: PollChoice[] = [
-  {
-    title: 'Hôtel Bairro Alto',
-    description: 'Boutique hotel · vue ville',
-    city: 'Lisbonne',
-    rating: 4.6,
-    price: '145€/nuit',
-    provider: 'Booking',
-    image: EXPLORER_PHOTO('1611892440504-42a792e24d32'),
-    isUserVote: true,
-  },
-  {
-    title: 'Príncipe Real Loft',
-    description: 'Appartement entier · 4 voyageurs',
-    city: 'Lisbonne',
-    rating: 4.4,
-    price: '95€/nuit',
-    provider: 'Airbnb',
-    image: EXPLORER_PHOTO('1551776235-dde6d482980b'),
-  },
-  {
-    title: 'Lisbon Lounge Hostel',
-    description: 'Auberge · centre-ville',
-    city: 'Lisbonne',
-    rating: 4.0,
-    price: '35€/nuit',
-    provider: 'Booking',
-    image: EXPLORER_PHOTO('1568084680786-a84f91d1153c'),
-  },
+  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · vue ville', city: 'Lisbonne', rating: 4.6, price: '145€/nuit', provider: 'Booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
+  { title: 'Príncipe Real Loft', description: 'Appartement entier · 4 voyageurs', city: 'Lisbonne', rating: 4.4, price: '95€/nuit', provider: 'Airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
+  { title: 'Lisbon Lounge Hostel', description: 'Auberge · centre-ville', city: 'Lisbonne', rating: 4.0, price: '35€/nuit', provider: 'Booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
 ];
 
 const POLL_CHOICES_EN: PollChoice[] = [
-  {
-    title: 'Hôtel Bairro Alto',
-    description: 'Boutique hotel · city view',
-    city: 'Lisbon',
-    rating: 4.6,
-    price: '$145/night',
-    provider: 'Booking',
-    image: EXPLORER_PHOTO('1611892440504-42a792e24d32'),
-    isUserVote: true,
-  },
-  {
-    title: 'Príncipe Real Loft',
-    description: 'Entire apartment · 4 travellers',
-    city: 'Lisbon',
-    rating: 4.4,
-    price: '$95/night',
-    provider: 'Airbnb',
-    image: EXPLORER_PHOTO('1551776235-dde6d482980b'),
-  },
-  {
-    title: 'Lisbon Lounge Hostel',
-    description: 'Hostel · downtown',
-    city: 'Lisbon',
-    rating: 4.0,
-    price: '$35/night',
-    provider: 'Booking',
-    image: EXPLORER_PHOTO('1568084680786-a84f91d1153c'),
-  },
+  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · city view', city: 'Lisbon', rating: 4.6, price: '$145/night', provider: 'Booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
+  { title: 'Príncipe Real Loft', description: 'Entire apartment · 4 travellers', city: 'Lisbon', rating: 4.4, price: '$95/night', provider: 'Airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
+  { title: 'Lisbon Lounge Hostel', description: 'Hostel · downtown', city: 'Lisbon', rating: 4.0, price: '$35/night', provider: 'Booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
 ];
 
 interface PollVoter { id: number; option: number; }
@@ -555,27 +508,39 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
         question: 'Où dormir à Lisbonne ?',
         category: 'Hébergement',
         creator: 'Marie',
-        time: 'il y a 2h',
+        createdLabel: 'Créé le',
+        endsLabel: 'Termine le',
+        createdDate: '14 mai',
+        endsDate: '20 mai',
         status: 'Voter maintenant',
         single: 'Choix unique',
         options: 'options',
         yourVote: 'Votre vote',
         votes: 'votes',
-        participants: 'participants',
-        ends: 'Termine dans 2j',
+        vote: 'vote',
+        sendReminders: 'Rappels',
+        seeOnTimeline: 'Timeline',
+        comments: 'Commentaires',
+        details: 'Détails',
       }
     : {
         question: 'Where to stay in Lisbon?',
         category: 'Accommodation',
         creator: 'Marie',
-        time: '2h ago',
+        createdLabel: 'Created on',
+        endsLabel: 'Ends on',
+        createdDate: 'May 14',
+        endsDate: 'May 20',
         status: 'Vote now',
         single: 'Single choice',
         options: 'options',
         yourVote: 'Your vote',
         votes: 'votes',
-        participants: 'participants',
-        ends: 'Ends in 2d',
+        vote: 'vote',
+        sendReminders: 'Reminders',
+        seeOnTimeline: 'Timeline',
+        comments: 'Comments',
+        details: 'Details',
       };
 
   const choices = lang === 'fr' ? POLL_CHOICES_FR : POLL_CHOICES_EN;
@@ -591,63 +556,97 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
     return () => timers.forEach(clearTimeout);
   }, [autoPlay]);
 
-  const total = voters.length || 1;
+  const totalVotes = voters.length;
+  const totalParticipants = 5;
+  const denominator = totalVotes || 1;
   const votesByOption = choices.map((_, i) => voters.filter((v) => v.option === i).length);
 
   return (
-    <div className="relative h-full min-h-[280px] lg:min-h-[420px] w-full overflow-hidden rounded-3xl bg-white p-4 lg:p-5 shadow-sm border border-slate-200/70">
-      {/* Creator + status header */}
-      <div className="flex items-center justify-between mb-3">
-        <div className="flex items-center gap-2">
-          <div className="flex w-7 h-7 items-center justify-center rounded-full text-base shrink-0 ring-2 ring-white shadow-sm" style={{ backgroundColor: '#FFE4D6' }}>
+    // Article wrapper — bg-card, rounded-3xl, border, shadow-xs hover:shadow-md
+    <div className="relative h-full min-h-[280px] lg:min-h-[460px] w-full overflow-hidden rounded-3xl bg-white border border-slate-200 shadow-sm">
+      {/* Header — px-5 pt-5, avatar + creator info + badges row */}
+      <div className="flex items-start justify-between px-4 lg:px-5 pt-4 lg:pt-5">
+        <div className="flex items-center gap-3 min-w-0">
+          {/* Avatar h-10 w-10 ring-2 ring-background */}
+          <div
+            className="flex w-9 h-9 lg:w-10 lg:h-10 items-center justify-center rounded-full text-lg shrink-0 ring-2 ring-white shadow-sm"
+            style={{ backgroundColor: '#FFE4D6' }}
+          >
             👩‍🎨
           </div>
-          <div className="leading-tight">
-            <div className="text-[12px] font-semibold text-slate-900">{t.creator}</div>
-            <div className="text-[10px] text-slate-500">{t.time} · {t.ends}</div>
+          <div className="min-w-0 leading-tight">
+            <p className="text-[13px] font-semibold text-slate-900 truncate">{t.creator}</p>
+            {/* Created · Ends row with calendar icon */}
+            <div className="flex items-center gap-1.5 text-[10px] text-slate-500 mt-0.5 flex-wrap">
+              <Icons.Calendar className="w-2.5 h-2.5 shrink-0" />
+              <span>{t.createdLabel} {t.createdDate}</span>
+              <span className="text-slate-300">•</span>
+              <span>{t.endsLabel} {t.endsDate}</span>
+            </div>
           </div>
         </div>
-        <div className="flex items-center gap-1 rounded-full px-2 py-0.5" style={{ backgroundColor: `${colors.primary}1A` }}>
-          <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke={colors.primary} strokeWidth="2.5" strokeLinecap="round">
-            <circle cx="12" cy="12" r="10" />
-            <line x1="12" y1="8" x2="12" y2="12" />
-            <line x1="12" y1="16" x2="12.01" y2="16" />
-          </svg>
-          <span className="text-[10px] font-semibold" style={{ color: colors.primary }}>{t.status}</span>
+
+        {/* Right badges: category + status + menu */}
+        <div className="flex items-center gap-1.5 shrink-0">
+          {/* Category badge — sleeping color */}
+          <span
+            className="inline-flex items-center gap-1 rounded-full border px-1.5 lg:px-2 py-0.5 text-[10px] font-medium"
+            style={{ borderColor: `${SLEEPING_COLOR}4D`, backgroundColor: `${SLEEPING_COLOR}1A`, color: SLEEPING_COLOR }}
+          >
+            <Icons.Bed className="w-2.5 h-2.5" />
+            <span className="hidden lg:inline">{t.category}</span>
+          </span>
+          {/* Status badge — amber "Vote now" with AlertCircle */}
+          <span
+            className="inline-flex items-center gap-1 rounded-full border px-1.5 lg:px-2 py-0.5 text-[10px] font-medium"
+            style={{ borderColor: `${AMBER_COLOR}4D`, backgroundColor: `${AMBER_COLOR}1A`, color: AMBER_COLOR }}
+          >
+            <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+            <span>{t.status}</span>
+          </span>
+          {/* 3-dots menu */}
+          <button className="flex w-6 h-6 items-center justify-center rounded-full text-slate-400 hover:bg-slate-100" aria-label="More">
+            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="5" r="1.5" />
+              <circle cx="12" cy="12" r="1.5" />
+              <circle cx="12" cy="19" r="1.5" />
+            </svg>
+          </button>
         </div>
       </div>
 
-      {/* Category badge + question */}
-      <div className="mb-3">
-        <div className="inline-flex items-center gap-1.5 mb-1 rounded-full bg-slate-100 px-2 py-0.5">
-          <Icons.Bed className="w-3 h-3 text-slate-600" />
-          <span className="text-[10px] font-medium text-slate-600">{t.category}</span>
-        </div>
-        <div className="text-sm lg:text-base font-semibold text-slate-900 leading-snug">{t.question}</div>
-        <div className="text-[10px] text-slate-500 mt-0.5">
-          {t.single} · {choices.length} {t.options}
+      {/* Question section — px-5 py-4 */}
+      <div className="px-4 lg:px-5 py-3">
+        <h3 className="text-[15px] lg:text-base font-semibold text-slate-900 leading-snug">{t.question}</h3>
+        <div className="mt-1.5 flex items-center gap-2">
+          <span className="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-medium text-slate-600">
+            {t.single}
+          </span>
+          <span className="text-[10px] text-slate-500">{choices.length} {t.options}</span>
         </div>
       </div>
 
-      {/* Poll choices — match poll-choice-option.tsx EventItemChoice default variant */}
-      <div className="space-y-2">
+      {/* Choices section — px-5 stacked */}
+      <div className="px-4 lg:px-5 space-y-2">
         {choices.map((choice, i) => {
           const votesForChoice = votesByOption[i];
-          const percentage = Math.round((votesForChoice / total) * 100);
+          const percentage = Math.round((votesForChoice / denominator) * 100);
           const providerStyle = POLL_PROVIDER_STYLE[choice.provider];
           const isUserVote = !!choice.isUserVote;
 
           return (
             <div
               key={choice.title}
-              className={`relative overflow-hidden rounded-xl border transition-colors ${
-                isUserVote ? 'border-2' : 'border-slate-200'
-              }`}
-              style={isUserVote ? { borderColor: `${colors.poll}80` } : undefined}
+              className="relative overflow-hidden rounded-xl border bg-white"
+              style={{ borderColor: isUserVote ? `${colors.poll}80` : '#E2E8F0', borderWidth: isUserVote ? '2px' : '1px' }}
             >
-              {/* Top row: checkbox + thumbnail + content + percentage */}
+              {/* Choice body */}
               <div className="flex gap-2.5 p-2.5">
-                {/* Checkbox (top-left, matches the real h-4 w-4 circular checkbox) */}
+                {/* Checkbox */}
                 <div className="pt-1 shrink-0">
                   <div
                     className="flex w-4 h-4 items-center justify-center rounded-full border-[1.5px] transition-colors"
@@ -660,15 +659,15 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
                   </div>
                 </div>
 
-                {/* Wide landscape thumbnail (h-16 lg:h-20, w-24 lg:w-28) */}
-                <div className="relative h-16 lg:h-20 w-24 lg:w-28 shrink-0 rounded-lg overflow-hidden shadow-sm ring-1 ring-black/5">
+                {/* Wide landscape thumbnail h-16 lg:h-20 w-24 lg:w-28 */}
+                <div className="relative h-16 lg:h-20 w-20 lg:w-28 shrink-0 rounded-lg overflow-hidden shadow-sm ring-1 ring-black/5">
                   <img src={choice.image} alt={choice.title} className="absolute inset-0 w-full h-full object-cover" loading="eager" />
                 </div>
 
-                {/* Content: title + description + city/rating + provider/price */}
+                {/* Content */}
                 <div className="min-w-0 flex-1 space-y-1">
                   <div className="flex items-center gap-1.5 flex-wrap">
-                    <h4 className="text-[13px] font-semibold text-slate-900 truncate leading-tight">{choice.title}</h4>
+                    <h4 className="text-[12px] font-semibold text-slate-900 truncate leading-tight">{choice.title}</h4>
                     {isUserVote && (
                       <span className="text-[9px] font-medium" style={{ color: `${colors.poll}B3` }}>
                         {t.yourVote}
@@ -691,7 +690,6 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
                   </div>
 
                   <div className="flex items-center justify-between gap-2">
-                    {/* Provider affiliate badge */}
                     <span
                       className="inline-flex items-center rounded-md px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wide"
                       style={{ backgroundColor: providerStyle.bg, color: providerStyle.fg }}
@@ -708,17 +706,17 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
                     {percentage}%
                   </span>
                   <span className="text-[9px] text-slate-500 mt-1">
-                    {votesForChoice} {votesForChoice === 1 ? 'vote' : t.votes}
+                    {votesForChoice} {votesForChoice === 1 ? t.vote : t.votes}
                   </span>
                 </div>
               </div>
 
-              {/* Bottom progress bar — padded container, h-1.5, rounded */}
+              {/* Padded bottom progress bar — px-3 pb-2.5, h-1.5 in rounded muted container */}
               <div className="px-3 pb-2.5">
-                <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-100">
+                <div className="h-1.5 w-full overflow-hidden rounded-full" style={{ backgroundColor: 'rgba(148,163,184,0.2)' }}>
                   <motion.div
                     className="h-full rounded-full"
-                    style={{ backgroundColor: isUserVote ? colors.poll : '#94A3B8' }}
+                    style={{ backgroundColor: isUserVote ? colors.poll : 'rgba(100,116,139,0.4)' }}
                     animate={{ width: `${percentage}%` }}
                     transition={{ duration: 0.5, ease: 'easeOut' }}
                   />
@@ -729,17 +727,51 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
         })}
       </div>
 
-      {/* Footer participation */}
-      <div className="mt-3 flex items-center justify-between text-[10px] text-slate-500">
-        <span>
-          <span className="font-bold text-slate-900">{voters.length}</span> {t.votes} · 5 {t.participants}
+      {/* Footer — border-t, px-5 py-3, votes count left + action buttons right */}
+      <div className="mt-3 flex items-center justify-between border-t border-slate-100 px-4 lg:px-5 py-2.5">
+        <span className="flex items-center gap-1 text-[11px] text-slate-500">
+          <Icons.Users className="w-3.5 h-3.5" />
+          <span className="font-medium text-slate-700">{totalVotes}</span>
+          <span className="text-slate-300">/</span>
+          <span>{totalParticipants}</span>
+          <span>{totalVotes !== 1 ? t.votes : t.vote}</span>
         </span>
-        <div className="flex -space-x-1.5">
-          {['🧔', '👱‍♀️', '🧑‍💻', '😊'].map((emoji, i) => (
-            <div key={i} className="flex w-5 h-5 items-center justify-center rounded-full bg-slate-100 text-[11px] ring-2 ring-white">
-              {emoji}
-            </div>
-          ))}
+        <div className="flex items-center gap-0.5">
+          {/* Send Reminders */}
+          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.sendReminders}>
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+            </svg>
+            <span className="hidden lg:inline">{t.sendReminders}</span>
+          </button>
+          {/* Timeline */}
+          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.seeOnTimeline}>
+            <Icons.Calendar className="w-3 h-3" />
+            <span className="hidden lg:inline">{t.seeOnTimeline}</span>
+          </button>
+          {/* Comments with unread badge */}
+          <button className="relative flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.comments}>
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span className="hidden lg:inline">{t.comments}</span>
+            <span className="absolute -top-0.5 -right-0.5 flex h-3 min-w-3 items-center justify-center rounded-full px-0.5 text-[8px] font-bold text-white" style={{ backgroundColor: colors.primary }}>
+              2
+            </span>
+          </button>
+          {/* Details */}
+          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.details}>
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <line x1="3" y1="6" x2="3.01" y2="6" />
+              <line x1="3" y1="12" x2="3.01" y2="12" />
+              <line x1="3" y1="18" x2="3.01" y2="18" />
+            </svg>
+            <span className="hidden lg:inline">{t.details}</span>
+          </button>
         </div>
       </div>
     </div>
