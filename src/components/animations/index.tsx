@@ -251,7 +251,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
       { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
-    map: { lon: 2.3404, lat: 48.8584, zoom: 12 },
+    map: { lon: 2.3200, lat: 48.8600, zoom: 11 },
   },
   restaurant: {
     suggestions: [
@@ -260,7 +260,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Pierre Hermé', city: 'Saint-Germain · pâtisserie', price: '€€', rating: 4.8, image: '/explorer-mockup/pierre-herme.jpg', imageAlt: 'Macaron pistache', provider: 'google', lon: 2.3326, lat: 48.8536 },
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market entrance', provider: 'google', lon: 2.3613, lat: 48.8639 },
     ],
-    map: { lon: 2.3500, lat: 48.8580, zoom: 12 },
+    map: { lon: 2.3490, lat: 48.8600, zoom: 11 },
   },
   hotel: {
     suggestions: [
@@ -269,7 +269,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Loft Canal Saint-Martin', city: 'Paris 10e · entier', price: '120€/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
       { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '45€/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
     ],
-    map: { lon: 2.3376, lat: 48.8627, zoom: 12 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 11 },
   },
   transport: {
     suggestions: [
@@ -291,7 +291,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Guided Seine river cruise', city: 'Bateaux Parisiens', price: '€15', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
       { title: 'Sainte-Chapelle — dated ticket', city: 'Île de la Cité', price: '€13', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
-    map: { lon: 2.3404, lat: 48.8584, zoom: 12 },
+    map: { lon: 2.3200, lat: 48.8600, zoom: 11 },
   },
   restaurant: {
     suggestions: [
@@ -300,7 +300,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
       { title: 'Du Pain et des Idées', city: 'Paris 10th · bakery', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
     ],
-    map: { lon: 2.3645, lat: 48.8615, zoom: 13 },
+    map: { lon: 2.3490, lat: 48.8600, zoom: 11 },
   },
   hotel: {
     suggestions: [
@@ -309,7 +309,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Canal Saint-Martin Loft', city: 'Paris 10th · entire apartment', price: '€120/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
       { title: 'Generator Paris', city: 'Paris 10th · hostel', price: '€45/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
     ],
-    map: { lon: 2.3376, lat: 48.8627, zoom: 12 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 11 },
   },
   transport: {
     suggestions: [
@@ -327,17 +327,39 @@ const EXPLORER_CARDS_BY_LANG: Record<'en' | 'fr', Record<ExplorerCategoryKey, Ex
   fr: EXPLORER_CARDS_FR,
 };
 
+// Strip non-numeric chars from a price string so we can inject the numeric
+// chunk as a Mapbox Static label (the API accepts 0-99 or a single letter).
+function priceLabel(price: string): string | null {
+  const m = price.match(/(\d+)/);
+  if (!m) return null;
+  const n = parseInt(m[1], 10);
+  if (Number.isNaN(n)) return null;
+  // Static API caps at 99 for numeric labels; round larger values down.
+  return String(Math.min(n, 99));
+}
+
 const MAPBOX_STATIC_URL = (
-  pins: { lon: number; lat: number }[],
+  pins: { lon: number; lat: number; price?: string }[],
   center: { lon: number; lat: number; zoom: number },
   width = 320,
   height = 240,
 ) => {
   const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? '';
-  // Multi-pin overlay: one f6391a marker per suggestion, mirroring the real
-  // explorer.desktop.view.tsx Mapbox pane which renders an item per pin.
-  const pinStr = pins.map((p) => `pin-s+f6391a(${p.lon},${p.lat})`).join(',');
-  return `https://api.mapbox.com/styles/v1/mapbox/dark-v11/static/${pinStr}/${center.lon},${center.lat},${center.zoom},0/${width}x${height}@2x?access_token=${token}`;
+  // Multi-pin overlay: mirrors the real Explorer's per-item markers, and
+  // bakes the price into the pin label when possible (e.g. pin-l-29 for
+  // a €29 activity, like the price-marker toggle on the live Mapbox pane).
+  const pinStr = pins
+    .map((p) => {
+      const label = p.price ? priceLabel(p.price) : null;
+      return label
+        ? `pin-l-${label}+f6391a(${p.lon},${p.lat})`
+        : `pin-s+f6391a(${p.lon},${p.lat})`;
+    })
+    .join(',');
+  // outdoors-v12 is the live Explorer's default style (light, colored
+  // terrain + arrondissement labels + blue Seine). dark-v11 only shows
+  // when the user toggles dark mode on the real map control.
+  return `https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/static/${pinStr}/${center.lon},${center.lat},${center.zoom},0/${width}x${height}@2x?access_token=${token}`;
 };
 
 export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
@@ -668,9 +690,9 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
           </motion.div>
         </AnimatePresence>
 
-        {/* Mapbox dark-v11 panel — real static tiles, mirroring the real
-            Explorer's light-list / dark-map split. */}
-        <div className="relative rounded-2xl overflow-hidden shadow-lg bg-slate-900 min-h-[200px] lg:min-h-0">
+        {/* Mapbox outdoors-v12 panel — same style the live Explorer
+            renders by default (light terrain + arrondissement labels). */}
+        <div className="relative rounded-2xl overflow-hidden shadow-lg bg-slate-200 min-h-[200px] lg:min-h-0">
           {/* Preload all 4 map tiles so cycle frames swap instantly. */}
           <div aria-hidden className="hidden">
             {EXPLORER_FILTER_KEYS.map((k) => {
@@ -692,10 +714,38 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
             />
           </AnimatePresence>
 
+          {/* Top-right control stack — mirrors the real Mapbox pane's
+              style toggle / fullscreen / geolocate buttons. Visual-only here. */}
+          <div className="absolute top-2 right-2 flex flex-col gap-1 z-10">
+            <button className="flex w-6 h-6 items-center justify-center rounded-md bg-white/95 shadow-md hover:bg-white" aria-label="Toggle map style">
+              <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 3a9 9 0 0 1 0 18" fill="currentColor" />
+              </svg>
+            </button>
+            <button className="flex w-6 h-6 items-center justify-center rounded-md bg-white/95 shadow-md hover:bg-white" aria-label="Fullscreen">
+              <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 3 21 3 21 9" />
+                <polyline points="9 21 3 21 3 15" />
+                <line x1="21" y1="3" x2="14" y2="10" />
+                <line x1="3" y1="21" x2="10" y2="14" />
+              </svg>
+            </button>
+            <button className="flex w-6 h-6 items-center justify-center rounded-md bg-white/95 shadow-md hover:bg-white" aria-label="Geolocate">
+              <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <line x1="12" y1="2" x2="12" y2="5" />
+                <line x1="12" y1="19" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="5" y2="12" />
+                <line x1="19" y1="12" x2="22" y2="12" />
+              </svg>
+            </button>
+          </div>
+
           {/* Suggestion count label (mirrors the real Explorer's '(N) results' label) */}
-          <div className="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-black/60 backdrop-blur-sm px-2 py-0.5">
-            <Icons.MapPin className="w-3 h-3 text-white" />
-            <span className="text-[10px] font-medium text-white">{category.suggestions.length} {EXPLORER_FILTERS.find(f => f.key === activeFilter)?.label[lang]}</span>
+          <div className="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-white/95 shadow-md px-2 py-0.5 z-10">
+            <Icons.MapPin className="w-3 h-3 text-slate-700" />
+            <span className="text-[10px] font-medium text-slate-800">{category.suggestions.length} {EXPLORER_FILTERS.find(f => f.key === activeFilter)?.label[lang]}</span>
           </div>
         </div>
       </div>
