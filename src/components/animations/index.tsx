@@ -189,9 +189,6 @@ interface ExplorerSuggestion {
   price: string;
   rating: number | null;
   // Real photo (Unsplash) — mirrors the actual Explorer card thumbnail.
-  // For transport items where a clean stock photo would be misleading
-  // (no obvious Eurostar / TGV / Air France-branded photos on Unsplash),
-  // we render a brand-colored tile via `brandTile` instead.
   image?: string;
   imageAlt?: string;
   brandTile?: { gradient: string; label: string; sub?: string };
@@ -205,6 +202,17 @@ interface ExplorerSuggestion {
   // per item, like the live explorer.desktop.view.tsx map pane.
   lon: number;
   lat: number;
+  // Transport timeline data — mirrors the real transport-card.tsx which
+  // renders an itinerary segment (departure → arrival + duration + operator)
+  // instead of a photo. Set for transport suggestions only.
+  route?: {
+    from: string;
+    to: string;
+    duration: string;
+    distance?: string;
+    operator: string;
+    mode: 'train' | 'plane' | 'metro' | 'bus' | 'car';
+  };
 }
 
 interface ExplorerCategoryData {
@@ -247,12 +255,12 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   },
   restaurant: {
     suggestions: [
-      { title: 'L’Ambroisie', city: 'Le Marais · gastronomique', price: '€€€', rating: 4.9, image: '/explorer-mockup/lambroisie.jpg', imageAlt: 'Fine dining', provider: 'google', lon: 2.3622, lat: 48.8552 },
-      { title: 'Le Petit Bistrot', city: 'Paris 11e · français', price: '€€', rating: 4.6, image: '/explorer-mockup/petit-bistrot.jpg', imageAlt: 'Parisian bistrot', provider: 'google', lon: 2.3747, lat: 48.8636 },
-      { title: 'Marché des Enfants Rouges', city: 'Paris 3e · marché couvert', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
-      { title: 'Du Pain et des Idées', city: 'Paris 10e · boulangerie', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Boulangerie', provider: 'google', lon: 2.3636, lat: 48.8694 },
+      { title: 'L’Ambroisie', city: '★★★ · Place des Vosges', price: '€€€€', rating: 4.9, image: '/explorer-mockup/lambroisie.jpg', imageAlt: 'Fine dining room', provider: 'google', lon: 2.3622, lat: 48.8552 },
+      { title: 'Le Train Bleu', city: 'Gare de Lyon · Belle Époque', price: '€€€', rating: 4.6, image: '/explorer-mockup/le-train-bleu.jpg', imageAlt: 'Belle Époque dining room', provider: 'google', lon: 2.3735, lat: 48.8447 },
+      { title: 'Pierre Hermé', city: 'Saint-Germain · patisserie', price: '€€', rating: 4.8, image: '/explorer-mockup/pierre-herme.jpg', imageAlt: 'Pistachio macaron', provider: 'google', lon: 2.3326, lat: 48.8536 },
+      { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market entrance', provider: 'google', lon: 2.3613, lat: 48.8639 },
     ],
-    map: { lon: 2.3645, lat: 48.8615, zoom: 13 },
+    map: { lon: 2.3500, lat: 48.8580, zoom: 12 },
   },
   hotel: {
     suggestions: [
@@ -265,11 +273,12 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   },
   transport: {
     suggestions: [
-      { title: 'Eurostar Paris → London', city: '2h 16min · Gare du Nord', price: '95€', rating: null, image: '/explorer-mockup/eurostar.jpg', imageAlt: 'Eurostar train', provider: 'eurostar', lon: 2.3553, lat: 48.8809 },
-      { title: 'TGV INOUI Paris → Lyon', city: '1h 56min · Gare de Lyon', price: '45€', rating: null, image: '/explorer-mockup/tgv.png', imageAlt: 'TGV INOUI', provider: 'sncf', lon: 2.3733, lat: 48.8444 },
-      { title: 'Air France Paris → Nice', city: '1h 35min · CDG → NCE', price: '78€', rating: null, image: '/explorer-mockup/air-france.jpg', imageAlt: 'Air France Boeing 777', provider: 'airfrance', lon: 2.5479, lat: 49.0097 },
-      { title: 'Carnet 10 tickets t+', city: 'Paris · RATP', price: '17,35€', rating: null, image: '/explorer-mockup/ratp-metro.jpg', imageAlt: 'Paris Métro entrance', provider: 'custom', lon: 2.3470, lat: 48.8584 },
+      { title: 'Eurostar', city: '2h 16min · 374 km', price: '95€', rating: null, provider: 'eurostar', lon: 2.3553, lat: 48.8809, route: { from: 'Paris · Gare du Nord', to: 'London · St Pancras', duration: '2h 16min', distance: '374 km', operator: 'Eurostar e320', mode: 'train' } },
+      { title: 'TGV INOUI 6611', city: '1h 56min · 466 km', price: '45€', rating: null, provider: 'sncf', lon: 2.3733, lat: 48.8444, route: { from: 'Paris · Gare de Lyon', to: 'Lyon · Part-Dieu', duration: '1h 56min', distance: '466 km', operator: 'SNCF · TGV INOUI', mode: 'train' } },
+      { title: 'Air France AF1364', city: '1h 35min · 689 km', price: '78€', rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { from: 'Paris CDG · T2F', to: 'Nice Côte d’Azur', duration: '1h 35min', distance: '689 km', operator: 'Air France · Airbus A320', mode: 'plane' } },
+      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '14,99€', rating: null, provider: 'custom', lon: 2.3470, lat: 48.8584, route: { from: 'Paris · Bercy Seine', to: 'Bruxelles · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
     ],
+    // Pin centered on Paris with CDG visible northeast for the Air France item.
     map: { lon: 2.4500, lat: 48.9100, zoom: 9 },
   },
 };
@@ -286,8 +295,8 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   },
   restaurant: {
     suggestions: [
-      { title: 'L’Ambroisie', city: 'Le Marais · fine dining', price: '€€€', rating: 4.9, image: '/explorer-mockup/lambroisie.jpg', imageAlt: 'Fine dining', provider: 'google', lon: 2.3622, lat: 48.8552 },
-      { title: 'Le Petit Bistrot', city: 'Paris 11th · French', price: '€€', rating: 4.6, image: '/explorer-mockup/petit-bistrot.jpg', imageAlt: 'Parisian bistrot', provider: 'google', lon: 2.3747, lat: 48.8636 },
+      { title: 'L’Ambroisie', city: '★★★ · Place des Vosges', price: '€€€€', rating: 4.9, image: '/explorer-mockup/lambroisie.jpg', imageAlt: 'Fine dining', provider: 'google', lon: 2.3622, lat: 48.8552 },
+      { title: 'Septime', city: 'Paris 11th · bistronomy', price: '€€€', rating: 4.7, image: '/explorer-mockup/petit-bistrot.jpg', imageAlt: 'Bistronomy', provider: 'google', lon: 2.3747, lat: 48.8527 },
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
       { title: 'Du Pain et des Idées', city: 'Paris 10th · bakery', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
     ],
@@ -304,10 +313,10 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   },
   transport: {
     suggestions: [
-      { title: 'Eurostar Paris → London', city: '2h 16min · Gare du Nord', price: '€95', rating: null, image: '/explorer-mockup/eurostar.jpg', imageAlt: 'Eurostar train', provider: 'eurostar', lon: 2.3553, lat: 48.8809 },
-      { title: 'TGV INOUI Paris → Lyon', city: '1h 56min · Gare de Lyon', price: '€45', rating: null, image: '/explorer-mockup/tgv.png', imageAlt: 'TGV INOUI', provider: 'sncf', lon: 2.3733, lat: 48.8444 },
-      { title: 'Air France Paris → Nice', city: '1h 35min · CDG → NCE', price: '€78', rating: null, image: '/explorer-mockup/air-france.jpg', imageAlt: 'Air France', provider: 'airfrance', lon: 2.5479, lat: 49.0097 },
-      { title: 'Métro 10-ticket book', city: 'Paris · RATP', price: '€17.35', rating: null, image: '/explorer-mockup/ratp-metro.jpg', imageAlt: 'Paris Métro entrance', provider: 'custom', lon: 2.3470, lat: 48.8584 },
+      { title: 'Eurostar', city: '2h 16min · 374 km', price: '€95', rating: null, provider: 'eurostar', lon: 2.3553, lat: 48.8809, route: { from: 'Paris · Gare du Nord', to: 'London · St Pancras', duration: '2h 16min', distance: '374 km', operator: 'Eurostar e320', mode: 'train' } },
+      { title: 'TGV INOUI 6611', city: '1h 56min · 466 km', price: '€45', rating: null, provider: 'sncf', lon: 2.3733, lat: 48.8444, route: { from: 'Paris · Gare de Lyon', to: 'Lyon · Part-Dieu', duration: '1h 56min', distance: '466 km', operator: 'SNCF · TGV INOUI', mode: 'train' } },
+      { title: 'Air France AF1364', city: '1h 35min · 689 km', price: '€78', rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { from: 'Paris CDG · T2F', to: 'Nice Côte d’Azur', duration: '1h 35min', distance: '689 km', operator: 'Air France · Airbus A320', mode: 'plane' } },
+      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '€14.99', rating: null, provider: 'custom', lon: 2.3470, lat: 48.8584, route: { from: 'Paris · Bercy Seine', to: 'Brussels · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
     ],
     map: { lon: 2.4500, lat: 48.9100, zoom: 9 },
   },
@@ -417,6 +426,97 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
               const isHeadliner = idx === 0;
               const showAdded = isHeadliner && added;
               const providerLogo = EXPLORER_PROVIDER_LOGO[sugg.provider];
+
+              // Transport rendering — mirrors transport-card.tsx: header (name +
+              // duration + distance) → segment timeline (from → to + operator)
+              // → footer (provider + price). No image thumbnail.
+              if (sugg.route) {
+                const RouteIcon = sugg.route.mode === 'plane' ? Icons.Plane : sugg.route.mode === 'bus' ? Icons.Train : Icons.Train;
+                return (
+                  <motion.div
+                    key={`${activeFilter}-${idx}`}
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
+                    className="relative flex flex-col rounded-2xl bg-white p-2.5 lg:p-3 shadow-sm border border-slate-200/70"
+                  >
+                    {/* +/Check button top-right */}
+                    <motion.div
+                      key={`btn-${activeFilter}-${idx}-${showAdded}`}
+                      animate={showAdded ? { scale: [1, 1.15, 1] } : { scale: 1 }}
+                      transition={{ duration: 0.4 }}
+                      className="absolute top-2 right-2 z-10"
+                    >
+                      <div
+                        className="flex w-6 h-6 items-center justify-center rounded-full border border-slate-200 bg-white transition-colors"
+                        style={{ backgroundColor: showAdded ? colors.mintDark : '#FFFFFF' }}
+                      >
+                        {showAdded ? (
+                          <Icons.Check className="w-3 h-3 text-white" />
+                        ) : (
+                          <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                            <line x1="12" x2="12" y1="5" y2="19" />
+                            <line x1="5" x2="19" y1="12" y2="12" />
+                          </svg>
+                        )}
+                      </div>
+                    </motion.div>
+
+                    {/* Header: title + duration */}
+                    <div className="pr-7">
+                      <p className="text-[11px] lg:text-[12px] font-semibold text-slate-900 truncate leading-tight">{sugg.title}</p>
+                      <div className="mt-0.5 flex items-center gap-1 text-[9px] lg:text-[10px] text-slate-500">
+                        <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <circle cx="12" cy="12" r="10" />
+                          <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                        <span>{sugg.route.duration}</span>
+                        {sugg.route.distance && (
+                          <>
+                            <span className="text-slate-300">•</span>
+                            <span>{sugg.route.distance}</span>
+                          </>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Segment timeline */}
+                    <div className="mt-2 flex gap-1.5">
+                      <div className="flex flex-col items-center pt-0.5">
+                        <div className="flex w-5 h-5 items-center justify-center rounded-full" style={{ backgroundColor: `${colors.primary}1A`, color: colors.primary }}>
+                          <RouteIcon className="w-2.5 h-2.5" />
+                        </div>
+                        <div className="my-0.5 w-px flex-1 bg-slate-200" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-slate-300" />
+                      </div>
+                      <div className="min-w-0 flex-1 pb-0.5">
+                        <p className="text-[10px] font-medium text-slate-900 truncate leading-tight">{sugg.route.from}</p>
+                        <p className="text-[9px] text-slate-500 truncate mt-0.5 leading-tight">{sugg.route.operator}</p>
+                        <p className="text-[10px] font-medium text-slate-700 truncate mt-1 leading-tight">{sugg.route.to}</p>
+                      </div>
+                    </div>
+
+                    {/* Footer: provider + price */}
+                    <div className="mt-2 flex items-center justify-between gap-2 border-t border-slate-100 pt-1.5">
+                      <span className="inline-flex items-center rounded-full bg-black/55 p-0.5 ring-1 ring-white/10">
+                        {providerLogo.src ? (
+                          <img src={providerLogo.src} alt={providerLogo.name} className="w-4 h-4 rounded-full object-cover bg-white" loading="eager" />
+                        ) : (
+                          <span
+                            className="flex w-4 h-4 items-center justify-center rounded-full text-[7px] font-bold leading-none"
+                            style={{ backgroundColor: providerLogo.bg, color: providerLogo.fg }}
+                            aria-label={providerLogo.name}
+                          >
+                            {providerLogo.abbr}
+                          </span>
+                        )}
+                      </span>
+                      <span className="text-[12px] font-bold text-slate-900">{sugg.price}</span>
+                    </div>
+                  </motion.div>
+                );
+              }
+
               return (
                 <motion.div
                   key={`${activeFilter}-${idx}`}
