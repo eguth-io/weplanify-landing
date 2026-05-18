@@ -156,6 +156,21 @@ const Icons = {
 // ============================================================================
 type ExplorerCategoryKey = 'activity' | 'restaurant' | 'hotel' | 'transport';
 
+// Same provider keys as POLL_PROVIDER_LOGO + the transport-specific
+// partners from frontend/components/affiliation-partner.tsx partnersMap.
+type ExplorerProvider = 'booking' | 'airbnb' | 'getyourguide' | 'viator' | 'eurostar' | 'sncf' | 'airfrance' | 'custom';
+
+const EXPLORER_PROVIDER_LOGO: Record<ExplorerProvider, { src: string; name: string }> = {
+  booking: { src: '/affiliates/booking-logo.svg', name: 'Booking.com' },
+  airbnb: { src: '/affiliates/airbnb-logo.webp', name: 'Airbnb' },
+  getyourguide: { src: '/affiliates/getyourguide.png', name: 'GetYourGuide' },
+  viator: { src: '/affiliates/viator.png', name: 'Viator' },
+  eurostar: { src: '/affiliates/eurostar-logo.webp', name: 'Eurostar' },
+  sncf: { src: '/affiliates/sncf-logo.webp', name: 'SNCF' },
+  airfrance: { src: '/affiliates/airfrance-logo.webp', name: 'Air France' },
+  custom: { src: '/logo.webp', name: 'WePlanify' },
+};
+
 interface ExplorerSuggestion {
   title: string;
   city: string;
@@ -164,6 +179,8 @@ interface ExplorerSuggestion {
   // Real photo (Unsplash) — mirrors the actual Explorer card thumbnail.
   image: string;
   imageAlt: string;
+  // Real affiliate provider — same set the live explorer-item-card uses.
+  provider: ExplorerProvider;
 }
 
 interface ExplorerCategoryData {
@@ -198,33 +215,41 @@ const EXPLORER_PHOTO = (id: string) =>
 const EXPLORER_CARDS: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   activity: {
     suggestions: [
-      { title: 'Tour Eiffel', city: 'Paris', price: '32€', rating: 4.8, image: EXPLORER_PHOTO('1502602898657-3e91760cbb34'), imageAlt: 'Eiffel Tower' },
-      { title: 'Musée du Louvre', city: 'Paris', price: '22€', rating: 4.7, image: EXPLORER_PHOTO('1565967511849-76a60a516170'), imageAlt: 'Museum' },
-      { title: 'Croisière sur la Seine', city: 'Paris', price: '15€', rating: 4.5, image: EXPLORER_PHOTO('1564501049412-61c2a3083791'), imageAlt: 'River cruise' },
+      { title: 'Tour Eiffel — Accès 2e étage', city: 'Paris 7e', price: '32€', rating: 4.8, image: EXPLORER_PHOTO('1502602898657-3e91760cbb34'), imageAlt: 'Eiffel Tower', provider: 'getyourguide' },
+      { title: 'Musée du Louvre — Coupe-file', city: 'Paris 1er', price: '22€', rating: 4.7, image: EXPLORER_PHOTO('1565967511849-76a60a516170'), imageAlt: 'Louvre museum', provider: 'viator' },
+      { title: 'Croisière sur la Seine', city: 'Paris · Bateaux-Mouches', price: '15€', rating: 4.5, image: EXPLORER_PHOTO('1564501049412-61c2a3083791'), imageAlt: 'Seine river cruise', provider: 'getyourguide' },
+      { title: 'Sacré-Cœur & Montmartre', city: 'Paris 18e', price: '0€', rating: 4.9, image: EXPLORER_PHOTO('1499856871958-5b9627545d1a'), imageAlt: 'Montmartre', provider: 'custom' },
+      { title: 'Visite guidée Arc de Triomphe', city: 'Paris 8e', price: '18€', rating: 4.6, image: EXPLORER_PHOTO('1502139214982-d0ad755818d8'), imageAlt: 'Arc de Triomphe', provider: 'viator' },
     ],
     map: { lon: 2.3404, lat: 48.8584, zoom: 12 },
   },
   restaurant: {
     suggestions: [
-      { title: 'Le Petit Bistrot', city: 'Paris 11e', price: '€€', rating: 4.6, image: EXPLORER_PHOTO('1414235077428-338989a2e8c0'), imageAlt: 'Bistrot' },
-      { title: 'L’Ambroisie', city: 'Le Marais', price: '€€€', rating: 4.9, image: EXPLORER_PHOTO('1551218808-94e220e084d2'), imageAlt: 'Fine dining' },
-      { title: 'Marché des Enfants Rouges', city: 'Paris 3e', price: '€', rating: 4.5, image: EXPLORER_PHOTO('1517248135467-4c7edcad34c4'), imageAlt: 'Market food' },
+      { title: 'L’Ambroisie', city: 'Le Marais · gastronomique', price: '€€€', rating: 4.9, image: EXPLORER_PHOTO('1551218808-94e220e084d2'), imageAlt: 'Fine dining', provider: 'custom' },
+      { title: 'Le Petit Bistrot', city: 'Paris 11e · français', price: '€€', rating: 4.6, image: EXPLORER_PHOTO('1414235077428-338989a2e8c0'), imageAlt: 'Bistrot', provider: 'custom' },
+      { title: 'Marché des Enfants Rouges', city: 'Paris 3e · marché', price: '€', rating: 4.5, image: EXPLORER_PHOTO('1517248135467-4c7edcad34c4'), imageAlt: 'Market food', provider: 'custom' },
+      { title: 'Café de Flore', city: 'Saint-Germain · brasserie', price: '€€', rating: 4.3, image: EXPLORER_PHOTO('1471623432079-b009d30b6729'), imageAlt: 'Café terrace', provider: 'custom' },
+      { title: 'Du Pain et des Idées', city: 'Paris 10e · boulangerie', price: '€', rating: 4.8, image: EXPLORER_PHOTO('1543353071-873f17a7a088'), imageAlt: 'Bakery', provider: 'custom' },
     ],
     map: { lon: 2.3645, lat: 48.8615, zoom: 13 },
   },
   hotel: {
     suggestions: [
-      { title: 'Hôtel du Louvre', city: 'Paris 1er', price: '180€', rating: 4.4, image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), imageAlt: 'Hotel room' },
-      { title: 'Le Marais Suites', city: 'Paris 4e', price: '145€', rating: 4.3, image: EXPLORER_PHOTO('1551776235-dde6d482980b'), imageAlt: 'Hotel suite' },
-      { title: 'Generator Paris', city: 'Paris 10e', price: '85€', rating: 4.0, image: EXPLORER_PHOTO('1568084680786-a84f91d1153c'), imageAlt: 'Hostel' },
+      { title: 'Hôtel du Louvre', city: 'Paris 1er · 5★', price: '180€', rating: 4.4, image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), imageAlt: 'Hotel room', provider: 'booking' },
+      { title: 'Le Marais Suites', city: 'Paris 4e · appartement', price: '145€', rating: 4.3, image: EXPLORER_PHOTO('1551776235-dde6d482980b'), imageAlt: 'Hotel suite', provider: 'airbnb' },
+      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18e · boutique', price: '320€', rating: 4.7, image: EXPLORER_PHOTO('1551836022-d5d88e9218df'), imageAlt: 'Boutique hotel', provider: 'booking' },
+      { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '85€', rating: 4.0, image: EXPLORER_PHOTO('1568084680786-a84f91d1153c'), imageAlt: 'Hostel', provider: 'booking' },
+      { title: 'Loft Canal Saint-Martin', city: 'Paris 10e · entier', price: '120€', rating: 4.5, image: EXPLORER_PHOTO('1606046604972-77cc76aee944'), imageAlt: 'Loft', provider: 'airbnb' },
     ],
     map: { lon: 2.3376, lat: 48.8627, zoom: 12 },
   },
   transport: {
     suggestions: [
-      { title: 'Eurostar Paris–London', city: '2h 16min', price: '95€', rating: null, image: EXPLORER_PHOTO('1474487548417-781cb71495f3'), imageAlt: 'Train' },
-      { title: 'TGV Paris–Lyon', city: '1h 56min', price: '45€', rating: null, image: EXPLORER_PHOTO('1543339308-43e59d6b73a6'), imageAlt: 'High speed train' },
-      { title: 'Métro 10-trip pack', city: 'Paris', price: '17€', rating: null, image: EXPLORER_PHOTO('1551183053-bf91a1d81141'), imageAlt: 'Métro' },
+      { title: 'Eurostar Paris → London', city: '2h 16min · Gare du Nord', price: '95€', rating: null, image: EXPLORER_PHOTO('1474487548417-781cb71495f3'), imageAlt: 'Eurostar train', provider: 'eurostar' },
+      { title: 'TGV INOUI Paris → Lyon', city: '1h 56min · Gare de Lyon', price: '45€', rating: null, image: EXPLORER_PHOTO('1543339308-43e59d6b73a6'), imageAlt: 'TGV train', provider: 'sncf' },
+      { title: 'Air France Paris → Nice', city: '1h 35min · CDG → NCE', price: '78€', rating: null, image: EXPLORER_PHOTO('1542314831-068cd1dbfeeb'), imageAlt: 'Air France plane', provider: 'airfrance' },
+      { title: 'Pack métro 10 tickets', city: 'Paris · RATP', price: '17€', rating: null, image: EXPLORER_PHOTO('1551183053-bf91a1d81141'), imageAlt: 'Métro Paris', provider: 'custom' },
+      { title: 'Vélib’ pass 7 jours', city: 'Paris · vélo libre-service', price: '20€', rating: null, image: EXPLORER_PHOTO('1473445730015-841f29a9490b'), imageAlt: 'City bikes', provider: 'custom' },
     ],
     // Pin on Paris, but pulled out so London is visible northbound.
     map: { lon: 2.3522, lat: 48.8566, zoom: 5 },
@@ -313,8 +338,10 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
         })}
       </div>
 
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-3 lg:gap-4 items-stretch">
-        {/* Suggestion list — 3 cards stacked vertically per category */}
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-3 lg:gap-4 items-stretch">
+        {/* Suggestion grid — mirrors explorer.desktop.view.tsx's
+            sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 vertical-card layout.
+            Each card is image-top / content-below like explorer-item-card.tsx. */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeFilter}
@@ -322,22 +349,25 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-            className="flex flex-col gap-2 lg:gap-2.5"
+            className="grid grid-cols-2 gap-2 lg:gap-2.5 content-start"
           >
             {category.suggestions.map((sugg, idx) => {
               // Only the headliner (first card) plays the +→✓ animation.
               const isHeadliner = idx === 0;
               const showAdded = isHeadliner && added;
+              const providerLogo = EXPLORER_PROVIDER_LOGO[sugg.provider];
               return (
                 <motion.div
                   key={`${activeFilter}-${idx}`}
-                  initial={{ opacity: 0, x: -8 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: idx * 0.08, type: 'spring', stiffness: 320, damping: 28 }}
-                  className="flex rounded-xl overflow-hidden bg-white shadow-md ring-1 ring-slate-200/70"
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
+                  className="flex flex-col rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-slate-200/70"
                 >
-                  {/* Thumbnail (left side, square) */}
-                  <div className="relative w-20 lg:w-24 shrink-0 bg-slate-100">
+                  {/* Thumbnail with overlay badges — explorer-item-card.tsx
+                      contract: h-24 image, rating top-left, +/check top-right,
+                      provider bottom-left, fly-to bottom-right. */}
+                  <div className="relative h-20 lg:h-24 bg-slate-100">
                     <img
                       src={sugg.image}
                       alt={sugg.imageAlt}
@@ -345,59 +375,64 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
                       loading="eager"
                       decoding="async"
                     />
-                  </div>
 
-                  {/* Content + add button (right side) */}
-                  <div className="relative flex-1 min-w-0 px-2.5 py-2 flex flex-col justify-center pr-9">
-                    <p className="text-[12px] font-semibold text-slate-900 truncate leading-tight">
-                      {sugg.title}
-                    </p>
-                    <div className="mt-0.5 flex items-center gap-1.5">
-                      {sugg.rating != null && (
-                        <span className="flex items-center gap-0.5 text-[10px] text-slate-500">
-                          <span>⭐</span>
-                          <span className="font-medium">{sugg.rating}</span>
-                        </span>
-                      )}
-                      <span className="text-[10px] text-slate-400 truncate">{sugg.city}</span>
-                    </div>
-                    <div className="mt-0.5 text-[11px] font-bold text-slate-900">{sugg.price}</div>
-
-                    {showAdded && (
-                      <motion.div
-                        initial={{ opacity: 0, x: -4 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        className="absolute right-9 top-1.5 flex items-center gap-0.5 text-[9px] font-medium"
-                        style={{ color: colors.mintDark }}
-                      >
-                        <Icons.Check className="w-2.5 h-2.5" />
-                        <span>{EXPLORER_ADDED_LABEL[lang]}</span>
-                      </motion.div>
+                    {/* Rating badge top-left */}
+                    {sugg.rating != null && (
+                      <div className="absolute top-1.5 left-1.5 flex items-center gap-0.5 rounded-full bg-black/45 backdrop-blur-sm px-1.5 py-0.5">
+                        <span className="text-[8px]">⭐</span>
+                        <span className="text-[9px] font-semibold text-white">{sugg.rating}</span>
+                      </div>
                     )}
 
-                    {/* Add / Added button (right-edge, vertically centered) */}
+                    {/* +/Check button top-right (headliner animates) */}
                     <motion.div
                       key={`btn-${activeFilter}-${idx}-${showAdded}`}
                       animate={showAdded ? { scale: [1, 1.25, 1] } : { scale: 1 }}
                       transition={{ duration: 0.4 }}
-                      className="absolute right-2 top-1/2 -translate-y-1/2"
+                      className="absolute top-1.5 right-1.5"
                     >
                       <div
-                        className="flex w-6 h-6 items-center justify-center rounded-full transition-colors"
-                        style={{
-                          backgroundColor: showAdded ? colors.mintDark : '#F3F4F6',
-                        }}
+                        className="flex w-6 h-6 items-center justify-center rounded-full backdrop-blur-sm transition-colors"
+                        style={{ backgroundColor: showAdded ? colors.mintDark : 'rgba(0,0,0,0.45)' }}
                       >
                         {showAdded ? (
                           <Icons.Check className="w-3 h-3 text-white" />
                         ) : (
-                          <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                          <svg className="w-3 h-3 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                             <line x1="12" x2="12" y1="5" y2="19" />
                             <line x1="5" x2="19" y1="12" y2="12" />
                           </svg>
                         )}
                       </div>
                     </motion.div>
+
+                    {/* Provider logo bottom-left — real WrapperAffiliationPartner min variant */}
+                    <div className="absolute bottom-1.5 left-1.5">
+                      <span className="inline-flex items-center rounded-full bg-black/55 p-0.5 ring-1 ring-white/10">
+                        <img
+                          src={providerLogo.src}
+                          alt={providerLogo.name}
+                          className="w-4 h-4 rounded-full object-cover"
+                          loading="eager"
+                        />
+                      </span>
+                    </div>
+
+                    {/* Fly-to map button bottom-right */}
+                    <div className="absolute bottom-1.5 right-1.5 flex w-5 h-5 items-center justify-center rounded-full bg-black/45 backdrop-blur-sm">
+                      <Icons.MapPin className="w-2.5 h-2.5 text-white" />
+                    </div>
+                  </div>
+
+                  {/* Content below image */}
+                  <div className="px-2 py-1.5 lg:px-2.5 lg:py-2">
+                    <p className="text-[11px] lg:text-[12px] font-semibold text-slate-900 truncate leading-tight">
+                      {sugg.title}
+                    </p>
+                    <div className="mt-0.5 flex items-center justify-between gap-1">
+                      <span className="text-[9px] lg:text-[10px] text-slate-500 truncate">{sugg.city}</span>
+                      <span className="text-[10px] lg:text-[11px] font-bold text-slate-900 shrink-0">{sugg.price}</span>
+                    </div>
                   </div>
                 </motion.div>
               );
