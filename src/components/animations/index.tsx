@@ -228,11 +228,6 @@ const EXPLORER_FILTERS: ExplorerFilterDef[] = [
 
 const EXPLORER_FILTER_KEYS: ExplorerCategoryKey[] = EXPLORER_FILTERS.map((f) => f.key);
 
-const EXPLORER_ADDED_LABEL: Record<'en' | 'fr', string> = {
-  en: 'Added to itinerary',
-  fr: 'Ajouté à l’itinéraire',
-};
-
 const EXPLORER_PHOTO = (id: string) =>
   `https://images.unsplash.com/photo-${id}?w=480&h=320&q=70&auto=format&fit=crop`;
 
@@ -244,9 +239,11 @@ const EXPLORER_CARDS: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
   activity: {
     suggestions: [
       { title: 'Tour Eiffel — billet 2e étage', city: 'Paris 7e', price: '29€', rating: 4.8, image: EXPLORER_PHOTO('1502602898657-3e91760cbb34'), imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
-      { title: 'Musée du Louvre — billet daté', city: 'Paris 1er', price: '22€', rating: 4.7, image: EXPLORER_PHOTO('1565967511849-76a60a516170'), imageAlt: 'Louvre museum', provider: 'viator', lon: 2.3376, lat: 48.8606 },
-      { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, image: EXPLORER_PHOTO('1564501049412-61c2a3083791'), imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
-      { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, image: EXPLORER_PHOTO('1499856871958-5b9627545d1a'), imageAlt: 'Sainte Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
+      // Stock photo for Louvre kept landing on Marina Bay Sands — swapped for
+      // a brand-tile so the thumbnail can't lie about what the activity is.
+      { title: 'Musée du Louvre — billet daté', city: 'Paris 1er', price: '22€', rating: 4.7, brandTile: { gradient: 'linear-gradient(135deg, #0F172A 0%, #475569 100%)', label: 'LOUVRE', sub: 'Paris 1er · Pyramide' }, provider: 'viator', lon: 2.3376, lat: 48.8606 },
+      { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, brandTile: { gradient: 'linear-gradient(135deg, #0E7490 0%, #06B6D4 100%)', label: 'BATEAUX PARISIENS', sub: 'Croisière Seine' }, provider: 'viator', lon: 2.3027, lat: 48.8614 },
+      { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, brandTile: { gradient: 'linear-gradient(135deg, #6B21A8 0%, #BE185D 100%)', label: 'SAINTE-CHAPELLE', sub: 'Vitraux gothiques' }, provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
     map: { lon: 2.3404, lat: 48.8584, zoom: 12 },
   },
@@ -1340,20 +1337,23 @@ const ITINERARY_KIND_STYLE: Record<ItineraryKind, { color: string; bg: string; i
   sleeping: { color: '#14B8A6', bg: '#CCFBF1', icon: 'Bed' },
 };
 
+// Realistic Day 2 in Paris: Eurostar morning, bag drop, lunch, Louvre in the
+// afternoon (closes 18:00 most days), sunset Eiffel — opening hours actually
+// hold up.
 const ITINERARY_ITEMS_EN: ItineraryItem[] = [
   { kind: 'transport', title: 'Eurostar arrival', subtitle: 'St Pancras → Gare du Nord', startHour: 9, endHour: 11, participants: ['👩‍🎨', '🧔'] },
-  { kind: 'activity', title: 'Eiffel Tower visit', subtitle: '2nd floor + lift', startHour: 11.5, endHour: 13.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
-  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Lunch · French', startHour: 14, endHour: 15.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
-  { kind: 'activity', title: 'Louvre Museum', subtitle: 'Guided tour', startHour: 16, endHour: 18, participants: ['👱‍♀️', '🧑‍💻'] },
-  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Check-in', startHour: 19, endHour: 20, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Bag drop · check-in', startHour: 11.5, endHour: 12.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Lunch · French', startHour: 13, endHour: 14.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+  { kind: 'activity', title: 'Louvre Museum', subtitle: 'Afternoon visit', startHour: 15, endHour: 17, participants: ['👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'activity', title: 'Eiffel Tower', subtitle: 'Sunset · 2nd floor', startHour: 18, endHour: 19.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
 ];
 
 const ITINERARY_ITEMS_FR: ItineraryItem[] = [
   { kind: 'transport', title: 'Arrivée Eurostar', subtitle: 'St Pancras → Gare du Nord', startHour: 9, endHour: 11, participants: ['👩‍🎨', '🧔'] },
-  { kind: 'activity', title: 'Tour Eiffel', subtitle: '2e étage + ascenseur', startHour: 11.5, endHour: 13.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
-  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Déjeuner · français', startHour: 14, endHour: 15.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
-  { kind: 'activity', title: 'Musée du Louvre', subtitle: 'Visite guidée', startHour: 16, endHour: 18, participants: ['👱‍♀️', '🧑‍💻'] },
-  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Check-in', startHour: 19, endHour: 20, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Dépose bagages · check-in', startHour: 11.5, endHour: 12.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Déjeuner · français', startHour: 13, endHour: 14.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+  { kind: 'activity', title: 'Musée du Louvre', subtitle: 'Visite après-midi', startHour: 15, endHour: 17, participants: ['👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'activity', title: 'Tour Eiffel', subtitle: 'Coucher de soleil · 2e étage', startHour: 18, endHour: 19.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
 ];
 
 function fmtHour(h: number): string {
