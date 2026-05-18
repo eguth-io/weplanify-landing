@@ -251,7 +251,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
       { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
-    map: { lon: 2.3200, lat: 48.8600, zoom: 11 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   restaurant: {
     suggestions: [
@@ -260,7 +260,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Pierre Hermé', city: 'Saint-Germain · pâtisserie', price: '€€', rating: 4.8, image: '/explorer-mockup/pierre-herme.jpg', imageAlt: 'Macaron pistache', provider: 'google', lon: 2.3326, lat: 48.8536 },
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market entrance', provider: 'google', lon: 2.3613, lat: 48.8639 },
     ],
-    map: { lon: 2.3490, lat: 48.8600, zoom: 11 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   hotel: {
     suggestions: [
@@ -269,7 +269,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Loft Canal Saint-Martin', city: 'Paris 10e · entier', price: '120€/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
       { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '45€/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 11 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   transport: {
     suggestions: [
@@ -291,7 +291,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Guided Seine river cruise', city: 'Bateaux Parisiens', price: '€15', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
       { title: 'Sainte-Chapelle — dated ticket', city: 'Île de la Cité', price: '€13', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
-    map: { lon: 2.3200, lat: 48.8600, zoom: 11 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   restaurant: {
     suggestions: [
@@ -300,7 +300,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
       { title: 'Du Pain et des Idées', city: 'Paris 10th · bakery', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
     ],
-    map: { lon: 2.3490, lat: 48.8600, zoom: 11 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   hotel: {
     suggestions: [
@@ -309,7 +309,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Canal Saint-Martin Loft', city: 'Paris 10th · entire apartment', price: '€120/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
       { title: 'Generator Paris', city: 'Paris 10th · hostel', price: '€45/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 11 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   transport: {
     suggestions: [
@@ -328,14 +328,15 @@ const EXPLORER_CARDS_BY_LANG: Record<'en' | 'fr', Record<ExplorerCategoryKey, Ex
 };
 
 // Strip non-numeric chars from a price string so we can inject the numeric
-// chunk as a Mapbox Static label (the API accepts 0-99 or a single letter).
+// chunk as a Mapbox Static label. The API only accepts 0-99 numeric labels,
+// so anything higher returns null and the caller falls back to a small
+// generic pin (clamping to 99 would mislead — €180 ≠ €99).
 function priceLabel(price: string): string | null {
   const m = price.match(/(\d+)/);
   if (!m) return null;
   const n = parseInt(m[1], 10);
-  if (Number.isNaN(n)) return null;
-  // Static API caps at 99 for numeric labels; round larger values down.
-  return String(Math.min(n, 99));
+  if (Number.isNaN(n) || n > 99) return null;
+  return String(n);
 }
 
 const MAPBOX_STATIC_URL = (
