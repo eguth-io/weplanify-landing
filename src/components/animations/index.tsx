@@ -327,18 +327,6 @@ const EXPLORER_CARDS_BY_LANG: Record<'en' | 'fr', Record<ExplorerCategoryKey, Ex
   fr: EXPLORER_CARDS_FR,
 };
 
-// Strip non-numeric chars from a price string so we can inject the numeric
-// chunk as a Mapbox Static label. The API only accepts 0-99 numeric labels,
-// so anything higher returns null and the caller falls back to a small
-// generic pin (clamping to 99 would mislead — €180 ≠ €99).
-function priceLabel(price: string): string | null {
-  const m = price.match(/(\d+)/);
-  if (!m) return null;
-  const n = parseInt(m[1], 10);
-  if (Number.isNaN(n) || n > 99) return null;
-  return String(n);
-}
-
 // Tile dimensions match the right-pane panel aspect (roughly portrait,
 // height ~ width × 1.65). Both the Mapbox URL and the HTML-pin projection
 // use these dims so the dots land where the tile shows the matching place.
