@@ -279,7 +279,7 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '14,99€', rating: null, provider: 'custom', lon: 2.3815, lat: 48.8378, route: { from: 'Paris · Bercy Seine', to: 'Bruxelles · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
     ],
     // Pin centered on Paris with CDG visible northeast for the Air France item.
-    map: { lon: 2.4500, lat: 48.9100, zoom: 10 },
+    map: { lon: 2.4200, lat: 48.9200, zoom: 9 },
   },
 };
 
@@ -318,7 +318,7 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Air France AF1364', city: '1h 35min · 689 km', price: '€78', rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { from: 'Paris CDG · T2F', to: 'Nice Côte d’Azur', duration: '1h 35min', distance: '689 km', operator: 'Air France · Airbus A320', mode: 'plane' } },
       { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '€14.99', rating: null, provider: 'custom', lon: 2.3815, lat: 48.8378, route: { from: 'Paris · Bercy Seine', to: 'Brussels · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
     ],
-    map: { lon: 2.4500, lat: 48.9100, zoom: 10 },
+    map: { lon: 2.4200, lat: 48.9200, zoom: 9 },
   },
 };
 
@@ -776,34 +776,6 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
               </motion.div>
             );
           })}
-
-          {/* Top-right control stack — mirrors the real Mapbox pane's
-              style toggle / fullscreen / geolocate buttons. Visual-only here. */}
-          <div className="absolute top-2 right-2 flex flex-col gap-1 z-10">
-            <button className="flex w-6 h-6 items-center justify-center rounded-md bg-white/95 shadow-md hover:bg-white" aria-label="Toggle map style">
-              <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 3a9 9 0 0 1 0 18" fill="currentColor" />
-              </svg>
-            </button>
-            <button className="flex w-6 h-6 items-center justify-center rounded-md bg-white/95 shadow-md hover:bg-white" aria-label="Fullscreen">
-              <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="15 3 21 3 21 9" />
-                <polyline points="9 21 3 21 3 15" />
-                <line x1="21" y1="3" x2="14" y2="10" />
-                <line x1="3" y1="21" x2="10" y2="14" />
-              </svg>
-            </button>
-            <button className="flex w-6 h-6 items-center justify-center rounded-md bg-white/95 shadow-md hover:bg-white" aria-label="Geolocate">
-              <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="3" />
-                <line x1="12" y1="2" x2="12" y2="5" />
-                <line x1="12" y1="19" x2="12" y2="22" />
-                <line x1="2" y1="12" x2="5" y2="12" />
-                <line x1="19" y1="12" x2="22" y2="12" />
-              </svg>
-            </button>
-          </div>
 
           {/* Suggestion count label (mirrors the real Explorer's '(N) results' label) */}
           <div className="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-white/95 shadow-md px-2 py-0.5 z-10">
