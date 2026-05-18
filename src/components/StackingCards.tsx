@@ -120,7 +120,11 @@ interface StackingCardsProps {
 function Card({ card, index, locale }: { card: CardData; index: number; locale: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(animationRef, { once: false, margin: "-100px" });
+  // amount: 0.1 fires once 10% of the animation panel is visible, which is
+  // reliable with the sticky stacking-card scroll behaviour (the previous
+  // `margin: '-100px'` threshold rarely fired automatically, so users had
+  // to hover/click to kick the animation off).
+  const isInView = useInView(animationRef, { once: false, amount: 0.1 });
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "start start"],
@@ -131,7 +135,7 @@ function Card({ card, index, locale }: { card: CardData; index: number; locale: 
   const AnimationComponent = () => {
     switch (card.animation) {
       case "ai-globe":
-        return <AiGlobeJourney autoPlay={isInView} />;
+        return <AiGlobeJourney autoPlay={isInView} locale={locale} />;
       case "live-collaboration":
         return <LiveCollaboration autoPlay={isInView} locale={locale} />;
       case "live-voting":

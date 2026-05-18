@@ -6,10 +6,8 @@ import HeroPitchWall from "@/components/HeroPitchWall";
 
 // Lazy-load below-the-fold components to reduce initial JS bundle
 const StackingCards = dynamic(() => import("@/components/StackingCards"));
-const TravelSteps = dynamic(() => import("@/components/TravelSteps"));
 const FAQSupport = dynamic(() => import("@/components/FAQSupport"));
 const ReadyBanner = dynamic(() => import("@/components/ReadyBanner"));
-const Testimonial = dynamic(() => import("@/components/Testimonial"));
 const TestimonialCarousel = dynamic(() => import("@/components/TestimonialCarousel"));
 const StatsBlock = dynamic(() => import("@/components/StatsBlock"));
 const CTABanner = dynamic(() => import("@/components/CTABanner"));
@@ -55,7 +53,7 @@ export default async function HomePage({ params }: Props) {
     );
   }
 
-  const { hero, worldSection, banner, testimonials } = landingPageData;
+  const { hero, worldSection, banner } = landingPageData;
 
   return (
     <main className="landing-page" id="main-content">
@@ -233,16 +231,6 @@ export default async function HomePage({ params }: Props) {
       </FadeIn>
 
       
-
-      {/* Travel Steps */}
-      <FadeIn>
-        <div id="how-it-works">
-          <TravelSteps locale={locale} />
-        </div>
-      </FadeIn>
-
-      {/* Testimonials */}
-      {testimonials && <FadeIn><Testimonial data={testimonials} /></FadeIn>}
 
       {/* Feature Image Section */}
       <FadeIn><FeatureImageSection locale={locale} /></FadeIn>

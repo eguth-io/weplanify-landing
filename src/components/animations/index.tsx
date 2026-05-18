@@ -150,247 +150,973 @@ const Icons = {
 };
 
 // ============================================================================
-// 1. AI GLOBE JOURNEY
+// 1. EXPLORER CARDS — mirrors the real Explorer module: filter chips drive a
+// card grid, each card has a thumbnail / rating / price / add-to-trip button,
+// and a Mapbox-like globe shows the matching pin.
 // ============================================================================
-export function AiGlobeJourney({ autoPlay = true }: { autoPlay?: boolean }) {
-  const destinations = [
-    { name: 'Paris', emoji: '🇫🇷', x: 48, y: 38 },
-    { name: 'Tokyo', emoji: '🇯🇵', x: 78, y: 42 },
-    { name: 'NYC', emoji: '🇺🇸', x: 22, y: 40 },
-  ];
-  const [activeIndex, setActiveIndex] = useState(0);
+type ExplorerCategoryKey = 'activity' | 'restaurant' | 'hotel' | 'transport';
+
+// Same provider keys as POLL_PROVIDER_LOGO + the transport-specific
+// partners from frontend/components/affiliation-partner.tsx partnersMap.
+type ExplorerProvider = 'booking' | 'airbnb' | 'viator' | 'google' | 'eurostar' | 'sncf' | 'airfrance' | 'custom';
+
+// Provider logos — `src` points to the actual /affiliates/ assets shipped on
+// the live app. For providers without a logo file (eurostar, sncf), we fall
+// back to a brand-colored circle so nothing ever renders as a broken image.
+interface ExplorerProviderBadge {
+  src?: string;
+  name: string;
+  bg: string;
+  fg: string;
+  abbr: string;
+}
+
+const EXPLORER_PROVIDER_LOGO: Record<ExplorerProvider, ExplorerProviderBadge> = {
+  booking: { src: '/affiliates/booking-logo.svg', name: 'Booking.com', bg: '#003B95', fg: '#FFFFFF', abbr: 'B.' },
+  airbnb: { src: '/affiliates/airbnb-logo.webp', name: 'Airbnb', bg: '#FF385C', fg: '#FFFFFF', abbr: 'A' },
+  viator: { src: '/affiliates/viator.png', name: 'Viator', bg: '#3CB6A2', fg: '#FFFFFF', abbr: 'V' },
+  google: { src: '/affiliates/google-logo.png', name: 'Google', bg: '#FFFFFF', fg: '#4285F4', abbr: 'G' },
+  // Eurostar + SNCF: no logo file shipped on the app side, brand-colored circle
+  eurostar: { name: 'Eurostar', bg: '#FFD200', fg: '#0F172A', abbr: 'ES' },
+  sncf: { name: 'SNCF', bg: '#1E2D75', fg: '#FFFFFF', abbr: 'SNCF' },
+  airfrance: { src: '/affiliates/airfrance-logo.webp', name: 'Air France', bg: '#002157', fg: '#FFFFFF', abbr: 'AF' },
+  custom: { src: '/logo.webp', name: 'WePlanify', bg: '#F6391A', fg: '#FFFFFF', abbr: 'W' },
+};
+
+interface ExplorerSuggestion {
+  title: string;
+  city: string;
+  price: string;
+  rating: number | null;
+  // Real photo (Unsplash) — mirrors the actual Explorer card thumbnail.
+  image?: string;
+  imageAlt?: string;
+  brandTile?: { gradient: string; label: string; sub?: string };
+  // Real affiliate provider — same set the live explorer-item-card uses.
+  provider: ExplorerProvider;
+  // Optional badges mirroring is_selected (dates pill, z-20) and is_booked
+  // (green pill, top-left) on the live explorer-item-card.tsx.
+  selectedDates?: string;
+  booked?: boolean;
+  // Real-world coordinates so the right-side Mapbox tile can drop one pin
+  // per item, like the live explorer.desktop.view.tsx map pane.
+  lon: number;
+  lat: number;
+  // Transport timeline data — mirrors the real transport-card.tsx which
+  // renders an itinerary segment (departure → arrival + duration + operator)
+  // instead of a photo. Set for transport suggestions only.
+  route?: {
+    from: string;
+    to: string;
+    duration: string;
+    distance?: string;
+    operator: string;
+    mode: 'train' | 'plane' | 'metro' | 'bus' | 'car';
+  };
+}
+
+interface ExplorerCategoryData {
+  suggestions: ExplorerSuggestion[];
+  // Mapbox tile center for the category — same for all 3 suggestions in it.
+  map: { lon: number; lat: number; zoom: number };
+}
+
+interface ExplorerFilterDef {
+  key: ExplorerCategoryKey;
+  label: Record<'en' | 'fr', string>;
+  icon: keyof typeof Icons;
+}
+
+const EXPLORER_FILTERS: ExplorerFilterDef[] = [
+  { key: 'activity', label: { en: 'Activities', fr: 'Activités' }, icon: 'Camera' },
+  { key: 'restaurant', label: { en: 'Restaurants', fr: 'Restaurants' }, icon: 'Utensils' },
+  { key: 'hotel', label: { en: 'Hotels', fr: 'Hébergement' }, icon: 'Bed' },
+  { key: 'transport', label: { en: 'Transport', fr: 'Transport' }, icon: 'Train' },
+];
+
+const EXPLORER_FILTER_KEYS: ExplorerCategoryKey[] = EXPLORER_FILTERS.map((f) => f.key);
+
+const EXPLORER_PHOTO = (id: string) =>
+  `https://images.unsplash.com/photo-${id}?w=480&h=320&q=70&auto=format&fit=crop`;
+
+// 4 items per category — values trimmed to ones that match a typical
+// Booking / GetYourGuide / Viator / Google Places listing in Paris. The
+// first hotel carries a Selected-dates pill and the second is marked
+// Booked, mirroring how the real list looks once a trip is being built.
+const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
+  activity: {
+    suggestions: [
+      { title: 'Tour Eiffel — billet 2e étage', city: 'Paris 7e', price: '29€', rating: 4.8, image: '/explorer-mockup/eiffel.jpg', imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
+      { title: 'Musée du Louvre — billet daté', city: 'Paris 1er', price: '22€', rating: 4.7, image: '/explorer-mockup/louvre.jpg', imageAlt: 'Louvre pyramid', provider: 'viator', lon: 2.3376, lat: 48.8606 },
+      { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.2933, lat: 48.8606 },
+      { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
+    ],
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+  },
+  restaurant: {
+    suggestions: [
+      { title: 'Le Mun', city: 'Paris 8e · coréen-français', price: '€€€€', rating: 4.8, image: '/explorer-mockup/le-mun.jpg', imageAlt: 'Salle gastronomique', provider: 'google', lon: 2.3245, lat: 48.8744 },
+      { title: 'Le Train Bleu', city: 'Gare de Lyon · Belle Époque', price: '€€€', rating: 4.6, image: '/explorer-mockup/le-train-bleu.jpg', imageAlt: 'Salle Belle Époque', provider: 'google', lon: 2.3735, lat: 48.8447 },
+      { title: 'Pierre Hermé', city: 'Saint-Germain · pâtisserie', price: '€€', rating: 4.8, image: '/explorer-mockup/pierre-herme.jpg', imageAlt: 'Macaron pistache', provider: 'google', lon: 2.3326, lat: 48.8536 },
+      { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market entrance', provider: 'google', lon: 2.3613, lat: 48.8639 },
+    ],
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+  },
+  hotel: {
+    suggestions: [
+      { title: 'Hôtel du Louvre', city: 'Paris 1er · 5★', price: '180€/n', rating: 4.4, image: '/explorer-mockup/hotel-louvre.jpg', imageAlt: 'Hotel facade', provider: 'booking', selectedDates: '15 → 17 mai', lon: 2.3376, lat: 48.8627 },
+      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18e · boutique', price: '320€/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3399, lat: 48.8867 },
+      { title: 'Loft Canal Saint-Martin', city: 'Paris 10e · entier', price: '120€/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
+      { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '45€/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3692, lat: 48.8779 },
+    ],
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+  },
+  transport: {
+    suggestions: [
+      { title: 'Eurostar', city: '2h 16min · 374 km', price: '95€', rating: null, provider: 'eurostar', lon: 2.3553, lat: 48.8809, route: { from: 'Paris · Gare du Nord', to: 'London · St Pancras', duration: '2h 16min', distance: '374 km', operator: 'Eurostar e320', mode: 'train' } },
+      { title: 'TGV INOUI 6611', city: '1h 56min · 466 km', price: '45€', rating: null, provider: 'sncf', lon: 2.3733, lat: 48.8444, route: { from: 'Paris · Gare de Lyon', to: 'Lyon · Part-Dieu', duration: '1h 56min', distance: '466 km', operator: 'SNCF · TGV INOUI', mode: 'train' } },
+      { title: 'Air France AF1364', city: '1h 35min · 689 km', price: '78€', rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { from: 'Paris CDG · T2F', to: 'Nice Côte d’Azur', duration: '1h 35min', distance: '689 km', operator: 'Air France · Airbus A320', mode: 'plane' } },
+      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '14,99€', rating: null, provider: 'custom', lon: 2.3815, lat: 48.8378, route: { from: 'Paris · Bercy Seine', to: 'Bruxelles · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
+    ],
+    // Pin centered on Paris with CDG visible northeast for the Air France item.
+    map: { lon: 2.4200, lat: 48.9200, zoom: 9 },
+  },
+};
+
+const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
+  activity: {
+    suggestions: [
+      { title: 'Eiffel Tower — 2nd floor ticket', city: 'Paris 7th', price: '€29', rating: 4.8, image: '/explorer-mockup/eiffel.jpg', imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
+      { title: 'Louvre Museum — dated ticket', city: 'Paris 1st', price: '€22', rating: 4.7, image: '/explorer-mockup/louvre.jpg', imageAlt: 'Louvre pyramid', provider: 'viator', lon: 2.3376, lat: 48.8606 },
+      { title: 'Guided Seine river cruise', city: 'Bateaux Parisiens', price: '€15', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.2933, lat: 48.8606 },
+      { title: 'Sainte-Chapelle — dated ticket', city: 'Île de la Cité', price: '€13', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
+    ],
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+  },
+  restaurant: {
+    suggestions: [
+      { title: 'Le Mun', city: 'Paris 8th · Korean-French', price: '€€€€', rating: 4.8, image: '/explorer-mockup/le-mun.jpg', imageAlt: 'Fine dining room', provider: 'google', lon: 2.3245, lat: 48.8744 },
+      { title: 'Septime', city: 'Paris 11th · bistronomy', price: '€€€', rating: 4.7, image: '/explorer-mockup/petit-bistrot.jpg', imageAlt: 'Bistronomy', provider: 'google', lon: 2.3747, lat: 48.8527 },
+      { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
+      { title: 'Du Pain et des Idées', city: 'Paris 10th · bakery', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
+    ],
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+  },
+  hotel: {
+    suggestions: [
+      { title: 'Hôtel du Louvre', city: 'Paris 1st · 5★', price: '€180/n', rating: 4.4, image: '/explorer-mockup/hotel-louvre.jpg', imageAlt: 'Hotel facade', provider: 'booking', selectedDates: 'May 15 → 17', lon: 2.3376, lat: 48.8627 },
+      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18th · boutique', price: '€320/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3399, lat: 48.8867 },
+      { title: 'Canal Saint-Martin Loft', city: 'Paris 10th · entire apartment', price: '€120/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
+      { title: 'Generator Paris', city: 'Paris 10th · hostel', price: '€45/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3692, lat: 48.8779 },
+    ],
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
+  },
+  transport: {
+    suggestions: [
+      { title: 'Eurostar', city: '2h 16min · 374 km', price: '€95', rating: null, provider: 'eurostar', lon: 2.3553, lat: 48.8809, route: { from: 'Paris · Gare du Nord', to: 'London · St Pancras', duration: '2h 16min', distance: '374 km', operator: 'Eurostar e320', mode: 'train' } },
+      { title: 'TGV INOUI 6611', city: '1h 56min · 466 km', price: '€45', rating: null, provider: 'sncf', lon: 2.3733, lat: 48.8444, route: { from: 'Paris · Gare de Lyon', to: 'Lyon · Part-Dieu', duration: '1h 56min', distance: '466 km', operator: 'SNCF · TGV INOUI', mode: 'train' } },
+      { title: 'Air France AF1364', city: '1h 35min · 689 km', price: '€78', rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { from: 'Paris CDG · T2F', to: 'Nice Côte d’Azur', duration: '1h 35min', distance: '689 km', operator: 'Air France · Airbus A320', mode: 'plane' } },
+      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '€14.99', rating: null, provider: 'custom', lon: 2.3815, lat: 48.8378, route: { from: 'Paris · Bercy Seine', to: 'Brussels · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
+    ],
+    map: { lon: 2.4200, lat: 48.9200, zoom: 9 },
+  },
+};
+
+const EXPLORER_CARDS_BY_LANG: Record<'en' | 'fr', Record<ExplorerCategoryKey, ExplorerCategoryData>> = {
+  en: EXPLORER_CARDS_EN,
+  fr: EXPLORER_CARDS_FR,
+};
+
+// Tile dimensions match the right-pane panel aspect (roughly portrait,
+// height ~ width × 1.65). Both the Mapbox URL and the HTML-pin projection
+// use these dims so the dots land where the tile shows the matching place.
+const MAP_TILE_W = 240;
+const MAP_TILE_H = 400;
+
+const MAPBOX_STATIC_URL = (
+  _pins: { lon: number; lat: number; price?: string }[],
+  center: { lon: number; lat: number; zoom: number },
+  width = MAP_TILE_W,
+  height = MAP_TILE_H,
+) => {
+  // No-pin tile — markers are rendered as HTML overlays so we can size them
+  // smaller than what the Static API supports (pin-s is the smallest API
+  // variant and the user wanted tighter dots). outdoors-v12 is the live
+  // Explorer's default style.
+  const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? '';
+  return `https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/static/${center.lon},${center.lat},${center.zoom},0/${width}x${height}@2x?access_token=${token}`;
+};
+
+// Web Mercator projection: convert a (lon, lat) pair to a percentage offset
+// inside a Mapbox Static tile of the given center + zoom + dimensions. We
+// use the percentage so absolute-positioned markers scale with the rendered
+// panel (the panel width varies with viewport).
+function mercatorOffsetPct(
+  lon: number,
+  lat: number,
+  center: { lon: number; lat: number; zoom: number },
+  width: number,
+  height: number,
+) {
+  const project = (l: number, p: number) => ({
+    x: (l * Math.PI) / 180,
+    y: Math.log(Math.tan(Math.PI / 4 + (p * Math.PI) / 360)),
+  });
+  // 1 tile = 256 logical px at zoom 0; @2x → 512 px. Static images are also
+  // @2x by default, so the world spans 512 * 2^zoom px end-to-end.
+  const scale = (Math.pow(2, center.zoom) * 256) / (2 * Math.PI);
+  const target = project(lon, lat);
+  const origin = project(center.lon, center.lat);
+  const dx = (target.x - origin.x) * scale;
+  const dy = -(target.y - origin.y) * scale;
+  return {
+    xPct: ((width / 2 + dx) / width) * 100,
+    yPct: ((height / 2 + dy) / height) * 100,
+  };
+}
+
+export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
+  const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
+  const [activeFilter, setActiveFilter] = useState<ExplorerCategoryKey>(EXPLORER_FILTER_KEYS[0]);
+  const [added, setAdded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(autoPlay);
 
-  // Sync isPlaying with autoPlay prop changes
   useEffect(() => {
     setIsPlaying(autoPlay);
   }, [autoPlay]);
 
   useEffect(() => {
     if (!isPlaying) return;
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % destinations.length);
-    }, 1500);
-    return () => clearInterval(interval);
-  }, [isPlaying, destinations.length]);
+    // Each cycle: ~4s per filter — long enough to read all 4 cards.
+    const addTimer = setTimeout(() => setAdded(true), 2800);
+    const nextTimer = setTimeout(() => {
+      setAdded(false);
+      setActiveFilter((prev) => {
+        const i = EXPLORER_FILTER_KEYS.indexOf(prev);
+        return EXPLORER_FILTER_KEYS[(i + 1) % EXPLORER_FILTER_KEYS.length];
+      });
+    }, 4200);
+    return () => {
+      clearTimeout(addTimer);
+      clearTimeout(nextTimer);
+    };
+  }, [activeFilter, isPlaying]);
+
+  const cards = EXPLORER_CARDS_BY_LANG[lang];
+  const category = cards[activeFilter];
 
   return (
     <div
-      className="relative min-h-[280px] lg:min-h-[350px] h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900"
+      className="relative min-h-[280px] lg:min-h-[420px] h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-white p-4 lg:p-5 border border-slate-200/60"
       onMouseEnter={() => setIsPlaying(true)}
     >
-      {/* Stars - using deterministic positions to avoid hydration mismatch */}
-      {[...Array(30)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute w-0.5 h-0.5 rounded-full bg-white"
-          style={{ left: `${(i * 37 + 13) % 100}%`, top: `${(i * 53 + 7) % 100}%` }}
-          animate={{ opacity: [0.2, 0.8, 0.2] }}
-          transition={{ duration: 1.5 + (i % 3), repeat: Infinity, delay: (i % 5) * 0.3 }}
-        />
-      ))}
-
-      {/* Globe */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="relative">
-          <div
-            className="relative w-44 h-44 rounded-full"
-            style={{
-              background: `radial-gradient(circle at 35% 35%, ${colors.mint}50, ${colors.mintDark}30, ${colors.dark}80)`,
-              boxShadow: `inset -25px -25px 60px rgba(0,0,0,0.5), 0 0 80px ${colors.mint}30`,
-            }}
-          >
-            {[20, 40, 60, 80].map((pos) => (
-              <div key={pos} className="absolute left-[5%] h-px w-[90%] bg-white/10" style={{ top: `${pos}%` }} />
-            ))}
-
-            {destinations.map((dest, i) => (
-              <motion.div
-                key={dest.name}
-                className="absolute"
-                style={{ left: `${dest.x}%`, top: `${dest.y}%` }}
-                animate={{
-                  scale: activeIndex === i ? 1.3 : 1,
-                  filter: activeIndex === i ? 'brightness(1.5)' : 'brightness(1)',
-                }}
-              >
-                {activeIndex === i && (
-                  <motion.div
-                    className="absolute -inset-3 rounded-full"
-                    animate={{ scale: [1, 2], opacity: [0.6, 0] }}
-                    transition={{ duration: 1, repeat: Infinity }}
-                  >
-                    <div className="w-full h-full rounded-full border-2" style={{ borderColor: colors.primary }} />
-                  </motion.div>
-                )}
-                <div
-                  className="flex w-5 h-5 items-center justify-center rounded-full shadow-lg"
-                  style={{ backgroundColor: colors.primary }}
-                >
-                  <Icons.MapPin className="w-3 h-3 text-white" />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+      {/* Preload every suggestion thumbnail so cycle frames don't flash empty. */}
+      <div aria-hidden className="hidden">
+        {EXPLORER_FILTER_KEYS.flatMap((k) =>
+          cards[k].suggestions.map((s, i) => (
+            <img key={`${k}-${i}`} src={s.image} alt="" loading="eager" />
+          ))
+        )}
       </div>
 
-      {/* Active destination label */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={activeIndex}
-          initial={{ opacity: 0, scale: 1.2 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.8 }}
-          className="absolute bottom-16 left-1/2 -translate-x-1/2"
-        >
-          <div className="flex items-center gap-2 rounded-full border border-white/20 bg-black/60 px-4 py-2 backdrop-blur-xl">
-            <span className="text-lg">{destinations[activeIndex].emoji}</span>
-            <span className="font-medium text-white">{destinations[activeIndex].name}</span>
-          </div>
-        </motion.div>
-      </AnimatePresence>
-
-      {/* Step timeline */}
-      <div className="absolute left-4 right-4 top-4 flex items-center justify-center gap-2">
-        {destinations.map((dest, i) => (
-          <React.Fragment key={dest.name}>
-            <motion.div
-              animate={{
-                scale: activeIndex === i ? 1.1 : 1,
-                borderColor: activeIndex === i ? colors.primary : 'rgba(255,255,255,0.2)',
-              }}
-              className="flex items-center gap-1.5 rounded-full border bg-black/60 px-2.5 py-1 backdrop-blur"
-            >
-              <div
-                className="flex w-4 h-4 items-center justify-center rounded-full text-[9px] font-bold text-white"
-                style={{ backgroundColor: colors.primary }}
-              >
-                {i + 1}
-              </div>
-              <span className="text-xs text-white">{dest.name}</span>
-            </motion.div>
-            {i < destinations.length - 1 && (
-              <motion.div
-                className="h-0.5 w-4"
-                style={{ backgroundColor: `${colors.primary}60` }}
-                animate={{ scaleX: activeIndex > i ? 1 : 0 }}
-              />
-            )}
-          </React.Fragment>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-// ============================================================================
-// 2. LIVE VOTING
-// ============================================================================
-export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
-  const lang = locale === 'fr' ? 'fr' : 'en';
-  const t = lang === 'fr'
-    ? { question: 'On va où demain ?', votes: 'votes', live: 'En direct', winner: 'Kyoto gagne !' }
-    : { question: 'Where to go tomorrow?', votes: 'votes', live: 'Live', winner: 'Kyoto wins!' };
-  const [votes, setVotes] = useState([0, 0, 0]);
-  const [voters, setVoters] = useState<Array<{ id: number; option: number; avatar: string }>>([]);
-  const options = ['Kyoto', 'Osaka', 'Nara'];
-
-  useEffect(() => {
-    if (!autoPlay) return;
-
-    const intervals = [
-      setTimeout(() => { setVotes([1, 0, 0]); setVoters([{ id: 1, option: 0, avatar: 'M' }]); }, 500),
-      setTimeout(() => { setVotes([2, 0, 0]); setVoters((v) => [...v, { id: 2, option: 0, avatar: 'A' }]); }, 1000),
-      setTimeout(() => { setVotes([2, 1, 0]); setVoters((v) => [...v, { id: 3, option: 1, avatar: 'S' }]); }, 1500),
-      setTimeout(() => { setVotes([3, 1, 0]); setVoters((v) => [...v, { id: 4, option: 0, avatar: 'L' }]); }, 2000),
-      setTimeout(() => { setVotes([3, 1, 1]); setVoters((v) => [...v, { id: 5, option: 2, avatar: 'J' }]); }, 2500),
-    ];
-
-    return () => intervals.forEach(clearTimeout);
-  }, [autoPlay]);
-
-  const total = votes.reduce((a, b) => a + b, 0) || 1;
-  const winner = votes.indexOf(Math.max(...votes));
-
-  return (
-    <div className="relative h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-violet-100 to-purple-50 p-5">
-      <div className="mb-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="flex w-8 h-8 items-center justify-center rounded-xl" style={{ backgroundColor: colors.poll }}>
-            <Icons.Vote className="w-4 h-4 text-white" />
-          </div>
-          <div>
-            <div className="text-sm font-semibold text-slate-800">{t.question}</div>
-            <div className="text-xs text-slate-500">{total} {t.votes}</div>
-          </div>
-        </div>
-        <div className="flex items-center gap-1.5 rounded-full bg-red-500/10 px-2 py-1">
-          <motion.div
-            animate={{ scale: [1, 1.3, 1] }}
-            transition={{ duration: 1, repeat: Infinity }}
-            className="w-2 h-2 rounded-full bg-red-500"
-          />
-          <span className="text-xs font-medium text-red-600">{t.live}</span>
-        </div>
-      </div>
-
-      <div className="space-y-3">
-        {options.map((opt, i) => {
-          const percentage = Math.round((votes[i] / total) * 100);
-          const optionVoters = voters.filter((v) => v.option === i);
-
+      {/* Type switcher — pill-rounded tabs (rounded-full container + items)
+          mirroring the real Explorer's Tabs component. */}
+      <div className="relative z-10 mb-3 lg:mb-4 inline-flex items-center gap-0.5 rounded-full bg-slate-100 p-1">
+        {EXPLORER_FILTERS.map((f) => {
+          const Icon = Icons[f.icon];
+          const isActive = f.key === activeFilter;
           return (
             <motion.div
-              key={opt}
-              className={`relative overflow-hidden rounded-xl border-2 bg-white p-3 transition-all ${
-                winner === i && total > 1 ? 'border-violet-400 shadow-lg shadow-violet-200' : 'border-slate-200'
+              key={f.key}
+              animate={{ backgroundColor: isActive ? '#FFFFFF' : 'rgba(255,255,255,0)' }}
+              transition={{ duration: 0.2 }}
+              className={`flex items-center gap-1.5 rounded-full px-2 lg:px-3 py-1 transition-shadow ${
+                isActive ? 'shadow-sm' : ''
               }`}
             >
-              <motion.div
-                className="absolute inset-y-0 left-0 rounded-xl"
-                style={{ backgroundColor: `${colors.poll}15` }}
-                animate={{ width: `${percentage}%` }}
-                transition={{ duration: 0.5 }}
-              />
-              <div className="relative flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <span className="font-medium text-slate-700">{opt}</span>
-                  <div className="flex -space-x-2">
-                    <AnimatePresence>
-                      {optionVoters.map((voter) => (
-                        <motion.div
-                          key={voter.id}
-                          initial={{ scale: 0, x: -20 }}
-                          animate={{ scale: 1, x: 0 }}
-                          className="flex w-6 h-6 items-center justify-center rounded-full border-2 border-white text-[10px] font-bold text-white"
-                          style={{ backgroundColor: colors.participant }}
-                        >
-                          {voter.avatar}
-                        </motion.div>
-                      ))}
-                    </AnimatePresence>
-                  </div>
-                </div>
-                <span className="text-sm font-bold" style={{ color: colors.poll }}>{percentage}%</span>
-              </div>
+              <Icon className={`w-3 h-3 ${isActive ? 'text-slate-900' : 'text-slate-500'}`} />
+              <span className={`text-[11px] font-medium ${isActive ? 'text-slate-900' : 'text-slate-500'}`}>
+                {f.label[lang]}
+              </span>
             </motion.div>
           );
         })}
       </div>
 
-      <AnimatePresence>
-        {total >= 5 && (
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-3 lg:gap-4 items-stretch">
+        {/* Suggestion grid — mirrors explorer.desktop.view.tsx's
+            sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 vertical-card layout.
+            Each card is image-top / content-below like explorer-item-card.tsx. */}
+        <AnimatePresence mode="wait">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            key={activeFilter}
+            initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="absolute bottom-4 left-4 right-4 flex items-center justify-center gap-2 rounded-xl py-2.5 text-sm font-semibold text-white"
-            style={{ backgroundColor: colors.poll }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ type: 'spring', stiffness: 320, damping: 28 }}
+            className="grid grid-cols-2 gap-2 lg:gap-2.5 content-start"
           >
-            <span>🎉</span> {t.winner}
+            {category.suggestions.map((sugg, idx) => {
+              // Only the headliner (first card) plays the +→✓ animation.
+              const isHeadliner = idx === 0;
+              const showAdded = isHeadliner && added;
+              const providerLogo = EXPLORER_PROVIDER_LOGO[sugg.provider];
+
+              // Transport rendering — mirrors transport-card.tsx: header (name +
+              // duration + distance) → segment timeline (from → to + operator)
+              // → footer (provider + price). No image thumbnail.
+              if (sugg.route) {
+                const RouteIcon = sugg.route.mode === 'plane' ? Icons.Plane : sugg.route.mode === 'bus' ? Icons.Train : Icons.Train;
+                return (
+                  <motion.div
+                    key={`${activeFilter}-${idx}`}
+                    initial={{ opacity: 0, y: 6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
+                    className="relative flex flex-col rounded-2xl bg-white p-2.5 lg:p-3 shadow-sm border border-slate-200/70 h-44 lg:h-52"
+                  >
+                    {/* +/Check button top-right */}
+                    <motion.div
+                      key={`btn-${activeFilter}-${idx}-${showAdded}`}
+                      animate={showAdded ? { scale: [1, 1.15, 1] } : { scale: 1 }}
+                      transition={{ duration: 0.4 }}
+                      className="absolute top-2 right-2 z-10"
+                    >
+                      <div
+                        className="flex w-6 h-6 items-center justify-center rounded-full border border-slate-200 bg-white transition-colors"
+                        style={{ backgroundColor: showAdded ? colors.mintDark : '#FFFFFF' }}
+                      >
+                        {showAdded ? (
+                          <Icons.Check className="w-3 h-3 text-white" />
+                        ) : (
+                          <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                            <line x1="12" x2="12" y1="5" y2="19" />
+                            <line x1="5" x2="19" y1="12" y2="12" />
+                          </svg>
+                        )}
+                      </div>
+                    </motion.div>
+
+                    {/* Header: title + duration */}
+                    <div className="pr-7">
+                      <p className="text-[11px] lg:text-[12px] font-semibold text-slate-900 truncate leading-tight">{sugg.title}</p>
+                      <div className="mt-0.5 flex items-center gap-1 text-[9px] lg:text-[10px] text-slate-500">
+                        <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <circle cx="12" cy="12" r="10" />
+                          <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                        <span>{sugg.route.duration}</span>
+                        {sugg.route.distance && (
+                          <>
+                            <span className="text-slate-300">•</span>
+                            <span>{sugg.route.distance}</span>
+                          </>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Segment timeline */}
+                    <div className="mt-2 flex gap-1.5">
+                      <div className="flex flex-col items-center pt-0.5">
+                        <div className="flex w-5 h-5 items-center justify-center rounded-full" style={{ backgroundColor: `${colors.primary}1A`, color: colors.primary }}>
+                          <RouteIcon className="w-2.5 h-2.5" />
+                        </div>
+                        <div className="my-0.5 w-px flex-1 bg-slate-200" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-slate-300" />
+                      </div>
+                      <div className="min-w-0 flex-1 pb-0.5">
+                        <p className="text-[10px] font-medium text-slate-900 truncate leading-tight">{sugg.route.from}</p>
+                        <p className="text-[9px] text-slate-500 truncate mt-0.5 leading-tight">{sugg.route.operator}</p>
+                        <p className="text-[10px] font-medium text-slate-700 truncate mt-1 leading-tight">{sugg.route.to}</p>
+                      </div>
+                    </div>
+
+                    {/* Footer: provider + price */}
+                    <div className="mt-2 flex items-center justify-between gap-2 border-t border-slate-100 pt-1.5">
+                      <span className="inline-flex items-center rounded-full bg-black/55 p-0.5 ring-1 ring-white/10">
+                        {providerLogo.src ? (
+                          <img src={providerLogo.src} alt={providerLogo.name} className="w-4 h-4 rounded-full object-cover bg-white" loading="eager" />
+                        ) : (
+                          <span
+                            className="flex w-4 h-4 items-center justify-center rounded-full text-[7px] font-bold leading-none"
+                            style={{ backgroundColor: providerLogo.bg, color: providerLogo.fg }}
+                            aria-label={providerLogo.name}
+                          >
+                            {providerLogo.abbr}
+                          </span>
+                        )}
+                      </span>
+                      <span className="text-[12px] font-bold text-slate-900">{sugg.price}</span>
+                    </div>
+                  </motion.div>
+                );
+              }
+
+              return (
+                <motion.div
+                  key={`${activeFilter}-${idx}`}
+                  initial={{ opacity: 0, y: 6 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
+                  className={`flex flex-col rounded-3xl overflow-hidden bg-white shadow-sm transition-all duration-200 border h-44 lg:h-52 ${
+                    sugg.booked
+                      ? 'border-emerald-500/40'
+                      : isHeadliner
+                        ? 'border-slate-200'
+                        : 'border-slate-200'
+                  }`}
+                >
+                  {/* Thumbnail — rounded-t-3xl, taller h-28 lg:h-32, badges
+                      overlaid per explorer-item-card.tsx (z layers preserved). */}
+                  <div className="relative h-28 lg:h-32 bg-slate-100">
+                    {sugg.brandTile ? (
+                      <div
+                        className="absolute inset-0 flex flex-col items-center justify-center"
+                        style={{ background: sugg.brandTile.gradient }}
+                      >
+                        <span
+                          className="text-white font-bold uppercase tracking-wider text-[15px] lg:text-[17px] drop-shadow-sm"
+                          style={{
+                            color: sugg.brandTile.gradient.includes('FFD200') ? '#0F172A' : '#FFFFFF',
+                          }}
+                        >
+                          {sugg.brandTile.label}
+                        </span>
+                        {sugg.brandTile.sub && (
+                          <span
+                            className="mt-0.5 text-[10px] font-medium tracking-wide"
+                            style={{
+                              color: sugg.brandTile.gradient.includes('FFD200') ? 'rgba(15,23,42,0.7)' : 'rgba(255,255,255,0.85)',
+                            }}
+                          >
+                            {sugg.brandTile.sub}
+                          </span>
+                        )}
+                      </div>
+                    ) : (
+                      <img
+                        src={sugg.image}
+                        alt={sugg.imageAlt}
+                        className="absolute inset-0 w-full h-full object-cover"
+                        loading="eager"
+                        decoding="async"
+                      />
+                    )}
+
+                    {/* Selected-dates pill (z-20, top-left) — appears when an
+                        explorer item is locked onto specific event days. */}
+                    {sugg.selectedDates && (
+                      <div className="absolute top-1.5 left-1.5 z-20 flex items-center gap-0.5 rounded-full bg-black/65 backdrop-blur-sm px-1.5 py-0.5">
+                        <Icons.Calendar className="w-2.5 h-2.5 text-white" />
+                        <span className="text-[9px] font-semibold text-white">{sugg.selectedDates}</span>
+                      </div>
+                    )}
+
+                    {/* Booked pill (top-left) — green success badge from is_booked */}
+                    {sugg.booked && (
+                      <div className="absolute top-1.5 left-1.5 z-10 flex items-center gap-0.5 rounded-full bg-emerald-500/85 px-1.5 py-0.5">
+                        <Icons.Check className="w-2.5 h-2.5 text-white" />
+                        <span className="text-[9px] font-semibold text-white">{lang === 'fr' ? 'Réservé' : 'Booked'}</span>
+                      </div>
+                    )}
+
+                    {/* Rating badge (top-left, stacks below dates if both present) */}
+                    {sugg.rating != null && !sugg.booked && !sugg.selectedDates && (
+                      <div className="absolute top-1.5 left-1.5 flex items-center gap-0.5 rounded-full bg-black/45 backdrop-blur-sm px-1.5 py-0.5">
+                        <span className="text-[8px]">⭐</span>
+                        <span className="text-[9px] font-semibold text-white">{sugg.rating}</span>
+                      </div>
+                    )}
+
+                    {/* +/check button top-right (z-30 like the live card) */}
+                    <motion.div
+                      key={`btn-${activeFilter}-${idx}-${showAdded}`}
+                      animate={showAdded || sugg.booked ? { scale: [1, 1.15, 1] } : { scale: 1 }}
+                      transition={{ duration: 0.4 }}
+                      className="absolute top-1.5 right-1.5 z-30"
+                    >
+                      <div
+                        className="flex w-6 h-6 items-center justify-center rounded-full backdrop-blur-sm transition-colors"
+                        style={{
+                          backgroundColor: sugg.booked
+                            ? 'rgba(16,185,129,0.85)'
+                            : showAdded
+                              ? colors.mintDark
+                              : 'rgba(0,0,0,0.45)',
+                        }}
+                      >
+                        {sugg.booked || showAdded ? (
+                          <Icons.Check className="w-3 h-3 text-white" />
+                        ) : (
+                          <svg className="w-3 h-3 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                            <line x1="12" x2="12" y1="5" y2="19" />
+                            <line x1="5" x2="19" y1="12" y2="12" />
+                          </svg>
+                        )}
+                      </div>
+                    </motion.div>
+
+                    {/* Provider affiliate badge bottom-left (z-20) — real
+                        WrapperAffiliationPartner min variant: black/50 pill
+                        wrapping a circular logo, with a brand-colored circle
+                        fallback for partners without a logo file shipped. */}
+                    <div className="absolute bottom-1.5 left-1.5 z-20">
+                      <span className="inline-flex items-center rounded-full bg-black/55 p-0.5 ring-1 ring-white/10">
+                        {providerLogo.src ? (
+                          <img
+                            src={providerLogo.src}
+                            alt={providerLogo.name}
+                            className="w-4 h-4 rounded-full object-cover bg-white"
+                            loading="eager"
+                          />
+                        ) : (
+                          <span
+                            className="flex w-4 h-4 items-center justify-center rounded-full text-[7px] font-bold leading-none"
+                            style={{ backgroundColor: providerLogo.bg, color: providerLogo.fg }}
+                            aria-label={providerLogo.name}
+                          >
+                            {providerLogo.abbr}
+                          </span>
+                        )}
+                      </span>
+                    </div>
+
+                    {/* Fly-to map button bottom-right (z-30) */}
+                    <div className="absolute bottom-1.5 right-1.5 z-30 flex w-5 h-5 items-center justify-center rounded-full bg-black/45 backdrop-blur-sm">
+                      <Icons.MapPin className="w-2.5 h-2.5 text-white" />
+                    </div>
+                  </div>
+
+                  {/* Content below image */}
+                  <div className="px-2 py-1.5 lg:px-2.5 lg:py-2">
+                    <p className="text-[11px] lg:text-[12px] font-semibold text-slate-900 truncate leading-tight">
+                      {sugg.title}
+                    </p>
+                    <div className="mt-0.5 flex items-center justify-between gap-1">
+                      <span className="text-[9px] lg:text-[10px] text-slate-500 truncate">{sugg.city}</span>
+                      <span className="text-[10px] lg:text-[11px] font-bold text-slate-900 shrink-0">{sugg.price}</span>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </motion.div>
-        )}
-      </AnimatePresence>
+        </AnimatePresence>
+
+        {/* Mapbox outdoors-v12 panel — same style the live Explorer
+            renders by default (light terrain + arrondissement labels). */}
+        <div className="relative rounded-2xl overflow-hidden shadow-lg bg-slate-200 min-h-[200px] lg:min-h-0">
+          {/* Preload all 4 map tiles so cycle frames swap instantly. */}
+          <div aria-hidden className="hidden">
+            {EXPLORER_FILTER_KEYS.map((k) => {
+              const cat = cards[k];
+              return <img key={k} src={MAPBOX_STATIC_URL(cat.suggestions, cat.map)} alt="" loading="eager" />;
+            })}
+          </div>
+
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={activeFilter}
+              src={MAPBOX_STATIC_URL(category.suggestions, category.map)}
+              alt={`Map — ${activeFilter}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </AnimatePresence>
+
+          {/* HTML pin overlay — projected from item lon/lat to the tile's
+              pixel space (Web Mercator, same projection Mapbox renders) so
+              the dots align with the underlying map. Smaller than any
+              Static API marker (the smallest API pin is pin-s, still too
+              chunky for this panel size). */}
+          {category.suggestions.map((s, i) => {
+            const pos = mercatorOffsetPct(s.lon, s.lat, category.map, MAP_TILE_W, MAP_TILE_H);
+            if (pos.xPct < 0 || pos.xPct > 100 || pos.yPct < 0 || pos.yPct > 100) return null;
+            return (
+              <motion.div
+                key={`pin-${activeFilter}-${i}`}
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: i * 0.06, type: 'spring', stiffness: 380, damping: 22 }}
+                className="absolute z-10 pointer-events-none"
+                style={{ left: `${pos.xPct}%`, top: `${pos.yPct}%`, transform: 'translate(-50%, -100%)' }}
+              >
+                <div className="relative flex flex-col items-center">
+                  <div
+                    className="flex items-center justify-center rounded-full border-2 border-white text-[10px] font-bold text-white shadow-md"
+                    style={{ backgroundColor: colors.primary, height: 22, minWidth: 22, padding: '0 6px' }}
+                  >
+                    {s.price ?? ''}
+                  </div>
+                  <div
+                    className="w-0 h-0"
+                    style={{
+                      borderLeft: '4px solid transparent',
+                      borderRight: '4px solid transparent',
+                      borderTop: `6px solid ${colors.primary}`,
+                      marginTop: -2,
+                    }}
+                  />
+                </div>
+              </motion.div>
+            );
+          })}
+
+          {/* Suggestion count label (mirrors the real Explorer's '(N) results' label) */}
+          <div className="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-white/95 shadow-md px-2 py-0.5 z-10">
+            <Icons.MapPin className="w-3 h-3 text-slate-700" />
+            <span className="text-[10px] font-medium text-slate-800">{category.suggestions.length} {EXPLORER_FILTERS.find(f => f.key === activeFilter)?.label[lang]}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Back-compat alias: StackingCards still imports AiGlobeJourney by name.
+export const AiGlobeJourney = ExplorerCards;
+
+// ============================================================================
+// 2. LIVE VOTING — faithful reproduction of polls.view.tsx article + the
+// EventItemChoiceOption default variant + the footer action row, matching
+// the real app's spacing, colors and badge contracts.
+// ============================================================================
+type PollProvider = 'booking' | 'airbnb' | 'getyourguide' | 'viator' | 'custom';
+
+interface PollChoice {
+  title: string;
+  description: string;
+  city: string;
+  rating: number;
+  price: string;
+  provider: PollProvider;
+  image: string;
+  isUserVote?: boolean;
+}
+
+// Mirrors partnersMap in frontend/components/affiliation-partner.tsx — same
+// real provider logos served from /affiliates/, same circular-min layout.
+const POLL_PROVIDER_LOGO: Record<PollProvider, { src: string; name: string }> = {
+  booking: { src: '/affiliates/booking-logo.svg', name: 'Booking.com' },
+  airbnb: { src: '/affiliates/airbnb-logo.webp', name: 'Airbnb' },
+  getyourguide: { src: '/affiliates/getyourguide.png', name: 'GetYourGuide' },
+  viator: { src: '/affiliates/viator.png', name: 'Viator' },
+  custom: { src: '/logo.webp', name: 'WePlanify' },
+};
+
+// Real theme colors from globals.css → reused so the mockup carries the same
+// surfaces as the live app (sleeping = teal, amber for vote-now, etc.).
+const SLEEPING_COLOR = '#14B8A6';
+const AMBER_COLOR = '#D97706';
+
+const POLL_CHOICES_FR: PollChoice[] = [
+  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · vue ville', city: 'Lisbonne', rating: 4.6, price: '145€/nuit', provider: 'booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
+  { title: 'Príncipe Real Loft', description: 'Appartement entier · 4 voyageurs', city: 'Lisbonne', rating: 4.4, price: '95€/nuit', provider: 'airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
+  { title: 'Lisbon Lounge Hostel', description: 'Auberge · centre-ville', city: 'Lisbonne', rating: 4.0, price: '35€/nuit', provider: 'booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
+];
+
+const POLL_CHOICES_EN: PollChoice[] = [
+  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · city view', city: 'Lisbon', rating: 4.6, price: '$145/night', provider: 'booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
+  { title: 'Príncipe Real Loft', description: 'Entire apartment · 4 travellers', city: 'Lisbon', rating: 4.4, price: '$95/night', provider: 'airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
+  { title: 'Lisbon Lounge Hostel', description: 'Hostel · downtown', city: 'Lisbon', rating: 4.0, price: '$35/night', provider: 'booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
+];
+
+interface PollVoter { id: number; option: number; }
+const POLL_VOTERS_SCRIPT: PollVoter[] = [
+  { id: 1, option: 0 },
+  { id: 2, option: 0 },
+  { id: 3, option: 1 },
+  { id: 4, option: 0 },
+  { id: 5, option: 1 },
+];
+
+export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
+  const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
+  const t = lang === 'fr'
+    ? {
+        question: 'Où dormir à Lisbonne ?',
+        category: 'Hébergement',
+        creator: 'Marie',
+        createdLabel: 'Créé le',
+        endsLabel: 'Termine le',
+        createdDate: '14 mai',
+        endsDate: '20 mai',
+        dayRange: '15 → 17 mai',
+        status: 'Voter maintenant',
+        single: 'Choix unique',
+        options: 'options',
+        yourVote: 'Votre vote',
+        votes: 'votes',
+        vote: 'vote',
+        sendReminders: 'Rappels',
+        seeOnTimeline: 'Timeline',
+        comments: 'Commentaires',
+        details: 'Détails',
+      }
+    : {
+        question: 'Where to stay in Lisbon?',
+        category: 'Accommodation',
+        creator: 'Marie',
+        createdLabel: 'Created on',
+        endsLabel: 'Ends on',
+        createdDate: 'May 14',
+        endsDate: 'May 20',
+        dayRange: 'May 15 → 17',
+        status: 'Vote now',
+        single: 'Single choice',
+        options: 'options',
+        yourVote: 'Your vote',
+        votes: 'votes',
+        vote: 'vote',
+        sendReminders: 'Reminders',
+        seeOnTimeline: 'Timeline',
+        comments: 'Comments',
+        details: 'Details',
+      };
+
+  const choices = lang === 'fr' ? POLL_CHOICES_FR : POLL_CHOICES_EN;
+  const [voters, setVoters] = useState<PollVoter[]>([]);
+
+  useEffect(() => {
+    if (!autoPlay) return;
+    const timers = POLL_VOTERS_SCRIPT.map((v, i) =>
+      setTimeout(() => {
+        setVoters((prev) => (prev.find((p) => p.id === v.id) ? prev : [...prev, v]));
+      }, 500 + i * 500),
+    );
+    return () => timers.forEach(clearTimeout);
+  }, [autoPlay]);
+
+  const totalVotes = voters.length;
+  const totalParticipants = 5;
+  const denominator = totalVotes || 1;
+  const votesByOption = choices.map((_, i) => voters.filter((v) => v.option === i).length);
+
+  return (
+    // Article wrapper — bg-card, rounded-3xl, border, shadow-xs hover:shadow-md
+    <div className="relative h-full min-h-[280px] lg:min-h-[460px] w-full overflow-hidden rounded-3xl bg-white border border-slate-200/80 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+      {/* Header — px-5 pt-5, avatar + creator info + badges row */}
+      <div className="flex items-start justify-between px-4 lg:px-5 pt-4 lg:pt-5">
+        <div className="flex items-center gap-3 min-w-0">
+          {/* Avatar h-10 w-10 ring-2 ring-background — real Avatar + AvatarImage from the app */}
+          <div className="relative w-9 h-9 lg:w-10 lg:h-10 shrink-0 rounded-full overflow-hidden ring-2 ring-white shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&q=80&fit=crop"
+              alt={t.creator}
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+          <div className="min-w-0 leading-tight">
+            <p className="text-[13px] font-semibold text-slate-900 truncate">{t.creator}</p>
+            {/* Created · Ends · Day range row */}
+            <div className="flex items-center gap-1.5 text-[10px] text-slate-500 mt-0.5 flex-wrap">
+              <Icons.Calendar className="w-2.5 h-2.5 shrink-0" />
+              <span>{t.createdLabel} {t.createdDate}</span>
+              <span className="text-slate-300">•</span>
+              <span>{t.endsLabel} {t.endsDate}</span>
+              <span className="text-slate-300">•</span>
+              {/* Day-range badge — primary color, only renders when the poll is linked to event days */}
+              <span className="font-medium" style={{ color: colors.primary }}>{t.dayRange}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Right badges: category + status + menu */}
+        <div className="flex items-center gap-1.5 shrink-0">
+          {/* Category badge — sleeping color */}
+          <span
+            className="inline-flex items-center gap-1 rounded-full border px-1.5 lg:px-2 py-0.5 text-[10px] font-medium"
+            style={{ borderColor: `${SLEEPING_COLOR}4D`, backgroundColor: `${SLEEPING_COLOR}1A`, color: SLEEPING_COLOR }}
+          >
+            <Icons.Bed className="w-2.5 h-2.5" />
+            <span className="hidden lg:inline">{t.category}</span>
+          </span>
+          {/* Status badge — amber "Vote now" with AlertCircle */}
+          <span
+            className="inline-flex items-center gap-1 rounded-full border px-1.5 lg:px-2 py-0.5 text-[10px] font-medium"
+            style={{ borderColor: `${AMBER_COLOR}4D`, backgroundColor: `${AMBER_COLOR}1A`, color: AMBER_COLOR }}
+          >
+            <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+            <span>{t.status}</span>
+          </span>
+          {/* 3-dots menu */}
+          <button className="flex w-6 h-6 items-center justify-center rounded-full text-slate-400 hover:bg-slate-100" aria-label="More">
+            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="5" r="1.5" />
+              <circle cx="12" cy="12" r="1.5" />
+              <circle cx="12" cy="19" r="1.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Question section — px-5 py-4 */}
+      <div className="px-4 lg:px-5 py-3">
+        <h3 className="text-[15px] lg:text-base font-semibold text-slate-900 leading-snug">{t.question}</h3>
+        <div className="mt-1.5 flex items-center gap-2">
+          <span className="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-medium text-slate-600">
+            {t.single}
+          </span>
+          <span className="text-[10px] text-slate-500">{choices.length} {t.options}</span>
+        </div>
+      </div>
+
+      {/* Choices section — px-5 stacked */}
+      <div className="px-4 lg:px-5 space-y-2">
+        {choices.map((choice, i) => {
+          const votesForChoice = votesByOption[i];
+          const percentage = Math.round((votesForChoice / denominator) * 100);
+          const providerLogo = POLL_PROVIDER_LOGO[choice.provider];
+          const isUserVote = !!choice.isUserVote;
+
+          return (
+            <div
+              key={choice.title}
+              className="relative overflow-hidden rounded-xl border bg-white"
+              style={{ borderColor: isUserVote ? `${colors.poll}80` : '#E2E8F0', borderWidth: isUserVote ? '2px' : '1px' }}
+            >
+              {/* Choice body */}
+              <div className="flex gap-2.5 p-2.5">
+                {/* Checkbox */}
+                <div className="pt-1 shrink-0">
+                  <div
+                    className="flex w-4 h-4 items-center justify-center rounded-full border-[1.5px] transition-colors"
+                    style={{
+                      backgroundColor: isUserVote ? colors.poll : 'transparent',
+                      borderColor: isUserVote ? colors.poll : 'rgba(100,116,139,0.4)',
+                    }}
+                  >
+                    {isUserVote && <Icons.Check className="w-2.5 h-2.5 text-white" />}
+                  </div>
+                </div>
+
+                {/* Wide landscape thumbnail h-16 lg:h-20 w-24 lg:w-28 */}
+                <div className="relative h-16 lg:h-20 w-20 lg:w-28 shrink-0 rounded-lg overflow-hidden shadow-sm ring-1 ring-black/5">
+                  <img src={choice.image} alt={choice.title} className="absolute inset-0 w-full h-full object-cover" loading="eager" />
+                </div>
+
+                {/* Content */}
+                <div className="min-w-0 flex-1 space-y-1">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <h4 className="text-[12px] font-semibold text-slate-900 truncate leading-tight">{choice.title}</h4>
+                    {isUserVote && (
+                      <span className="text-[9px] font-medium" style={{ color: `${colors.poll}B3` }}>
+                        {t.yourVote}
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-[10px] italic text-slate-500 line-clamp-1">{choice.description}</p>
+
+                  <div className="flex items-center gap-2 text-[10px]">
+                    <div className="flex items-center gap-0.5 text-slate-600">
+                      <Icons.MapPin className="w-3 h-3 text-slate-400" />
+                      <span>{choice.city}</span>
+                    </div>
+                    <div className="flex items-center gap-0.5">
+                      <svg className="w-3 h-3" viewBox="0 0 24 24" fill="#FACC15" stroke="#FACC15" strokeWidth="1">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                      <span className="font-medium text-slate-700">{choice.rating}/5</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between gap-2">
+                    {/* Provider logo — real WrapperAffiliationPartner min variant: black/50 pill with circular logo */}
+                    <span className="inline-flex items-center gap-1 rounded-full bg-black/60 pl-0 pr-2 py-0">
+                      <img
+                        src={providerLogo.src}
+                        alt={providerLogo.name}
+                        className="w-5 h-5 rounded-full object-cover ring-1 ring-white/20"
+                        loading="eager"
+                      />
+                      <span className="text-[8px] font-medium text-white leading-none">{providerLogo.name}</span>
+                    </span>
+                    <span className="text-[11px] font-semibold text-emerald-600">{choice.price}</span>
+                  </div>
+                </div>
+
+                {/* Right: percentage + vote count */}
+                <div className="flex flex-col items-end shrink-0 ml-2">
+                  <span className="text-[14px] font-bold leading-none" style={{ color: isUserVote ? colors.poll : '#0F172A' }}>
+                    {percentage}%
+                  </span>
+                  <span className="text-[9px] text-slate-500 mt-1">
+                    {votesForChoice} {votesForChoice === 1 ? t.vote : t.votes}
+                  </span>
+                </div>
+              </div>
+
+              {/* Padded bottom progress bar — px-3 pb-2.5, h-1.5 in rounded muted container */}
+              <div className="px-3 pb-2.5">
+                <div className="h-1.5 w-full overflow-hidden rounded-full" style={{ backgroundColor: 'rgba(148,163,184,0.2)' }}>
+                  <motion.div
+                    className="h-full rounded-full"
+                    style={{ backgroundColor: isUserVote ? colors.poll : 'rgba(100,116,139,0.4)' }}
+                    animate={{ width: `${percentage}%` }}
+                    transition={{ duration: 0.5, ease: 'easeOut' }}
+                  />
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Footer — border-t, px-5 py-3, votes count left + action buttons right */}
+      <div className="mt-3 flex items-center justify-between border-t border-slate-100 px-4 lg:px-5 py-2.5">
+        <span className="flex items-center gap-1 text-[11px] text-slate-500">
+          <Icons.Users className="w-3.5 h-3.5" />
+          <span className="font-medium text-slate-700">{totalVotes}</span>
+          <span className="text-slate-300">/</span>
+          <span>{totalParticipants}</span>
+          <span>{totalVotes !== 1 ? t.votes : t.vote}</span>
+        </span>
+        <div className="flex items-center gap-0.5">
+          {/* Send Reminders */}
+          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.sendReminders}>
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+            </svg>
+            <span className="hidden lg:inline">{t.sendReminders}</span>
+          </button>
+          {/* Timeline */}
+          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.seeOnTimeline}>
+            <Icons.Calendar className="w-3 h-3" />
+            <span className="hidden lg:inline">{t.seeOnTimeline}</span>
+          </button>
+          {/* Comments with unread badge */}
+          <button className="relative flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.comments}>
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <span className="hidden lg:inline">{t.comments}</span>
+            <span className="absolute -top-0.5 -right-0.5 flex h-3 min-w-3 items-center justify-center rounded-full px-0.5 text-[8px] font-bold text-white" style={{ backgroundColor: colors.primary }}>
+              2
+            </span>
+          </button>
+          {/* Details */}
+          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.details}>
+            <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <line x1="3" y1="6" x2="3.01" y2="6" />
+              <line x1="3" y1="12" x2="3.01" y2="12" />
+              <line x1="3" y1="18" x2="3.01" y2="18" />
+            </svg>
+            <span className="hidden lg:inline">{t.details}</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
@@ -801,136 +1527,191 @@ export function TimelineCalendar({ autoPlay = true }: { autoPlay?: boolean }) {
 }
 
 // ============================================================================
-// 7. LIVE COLLABORATION
+// 7. ITINERARY DAY — mirrors the real day-by-day-calendar:
+// day-nav header → hour rail on the left → color-coded item cards positioned
+// vertically by time, each with the same accent-border + icon contract as the
+// app's timeline-items (activity / food / sleeping / transport).
+// Exported as LiveCollaboration for backwards compat with StackingCards.
 // ============================================================================
+type ItineraryKind = 'transport' | 'activity' | 'food' | 'sleeping';
+
+interface ItineraryItem {
+  kind: ItineraryKind;
+  title: string;
+  subtitle?: string;
+  startHour: number;
+  endHour: number;
+  participants: string[];
+  booked?: boolean;
+}
+
+const ITINERARY_KIND_STYLE: Record<ItineraryKind, { color: string; bg: string; icon: keyof typeof Icons }> = {
+  transport: { color: '#0EA5E9', bg: '#E0F2FE', icon: 'Train' },
+  activity: { color: '#F59E0B', bg: '#FEF3C7', icon: 'Camera' },
+  food: { color: '#F97316', bg: '#FFEDD5', icon: 'Utensils' },
+  sleeping: { color: '#14B8A6', bg: '#CCFBF1', icon: 'Bed' },
+};
+
+// Realistic Day 2 in Paris: Eurostar morning, bag drop, lunch, Louvre in the
+// afternoon (closes 18:00 most days), sunset Eiffel — opening hours actually
+// hold up.
+const ITINERARY_ITEMS_EN: ItineraryItem[] = [
+  { kind: 'transport', title: 'Eurostar arrival', subtitle: 'St Pancras → Gare du Nord', startHour: 9, endHour: 11, participants: ['👩‍🎨', '🧔'] },
+  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Bag drop · check-in', startHour: 11.5, endHour: 12.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Lunch · French', startHour: 13, endHour: 14.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+  { kind: 'activity', title: 'Louvre Museum', subtitle: 'Afternoon visit', startHour: 15, endHour: 17, participants: ['👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'activity', title: 'Eiffel Tower', subtitle: 'Sunset · 2nd floor', startHour: 18, endHour: 19.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
+];
+
+const ITINERARY_ITEMS_FR: ItineraryItem[] = [
+  { kind: 'transport', title: 'Arrivée Eurostar', subtitle: 'St Pancras → Gare du Nord', startHour: 9, endHour: 11, participants: ['👩‍🎨', '🧔'] },
+  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Dépose bagages · check-in', startHour: 11.5, endHour: 12.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Déjeuner · français', startHour: 13, endHour: 14.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+  { kind: 'activity', title: 'Musée du Louvre', subtitle: 'Visite après-midi', startHour: 15, endHour: 17, participants: ['👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'activity', title: 'Tour Eiffel', subtitle: 'Coucher de soleil · 2e étage', startHour: 18, endHour: 19.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
+];
+
+function fmtHour(h: number): string {
+  const hh = Math.floor(h);
+  const mm = Math.round((h - hh) * 60);
+  return `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`;
+}
+
 export function LiveCollaboration({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
-  const lang = locale === 'fr' ? 'fr' : 'en';
+  const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
   const t = lang === 'fr'
-    ? {
-        title: 'Collaboration en direct',
-        typing: (name: string) => `${name} écrit`,
-        added: (name: string, item: string) => `${name} a ajouté « ${item} »`,
-        voted: (name: string, item: string) => `${name} a voté pour ${item}`,
-      }
-    : {
-        title: 'Live Collaboration',
-        typing: (name: string) => `${name} is typing`,
-        added: (name: string, item: string) => `${name} added "${item}"`,
-        voted: (name: string, item: string) => `${name} voted for ${item}`,
-      };
-  const users = [
-    { name: 'Marie', color: '#FF6B6B', cursor: { x: 30, y: 40 } },
-    { name: 'Alex', color: '#4ECDC4', cursor: { x: 70, y: 60 } },
-  ];
+    ? { dayOf: 'Jour 2 sur 5', date: 'Mer. 15 mai', city: 'Paris', booked: 'Réservé' }
+    : { dayOf: 'Day 2 of 5', date: 'Wed, May 15', city: 'Paris', booked: 'Booked' };
+
+  const items = lang === 'fr' ? ITINERARY_ITEMS_FR : ITINERARY_ITEMS_EN;
+  const [visibleCount, setVisibleCount] = useState(autoPlay ? 0 : items.length);
+
+  useEffect(() => {
+    if (!autoPlay) {
+      setVisibleCount(items.length);
+      return;
+    }
+    setVisibleCount(0);
+    const timers = items.map((_, i) =>
+      setTimeout(() => setVisibleCount((c) => Math.max(c, i + 1)), 400 + i * 450),
+    );
+    return () => timers.forEach(clearTimeout);
+  }, [autoPlay, items.length]);
+
+  const hourStart = 9;
+  const hourEnd = 21;
+  const hourSpan = hourEnd - hourStart;
+  const rowHeightPct = (h: number) => ((h - hourStart) / hourSpan) * 100;
 
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-sky-50 to-cyan-50 p-5">
-      <div className="mb-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="flex w-8 h-8 items-center justify-center rounded-xl" style={{ backgroundColor: colors.participant }}>
-            <Icons.Users className="w-4 h-4 text-white" />
-          </div>
-          <span className="text-sm font-semibold text-slate-800">{t.title}</span>
+    <div className="relative h-full min-h-[280px] lg:min-h-[420px] w-full overflow-hidden rounded-3xl bg-white p-4 lg:p-5 shadow-sm border border-slate-200/70">
+      {/* Day navigation header — mirrors day-navigation.tsx */}
+      <div className="mb-3 flex items-center justify-between border-b border-slate-100 pb-2.5">
+        <button className="flex w-6 h-6 items-center justify-center rounded-full hover:bg-slate-100" aria-label="Previous day">
+          <svg className="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <div className="text-center leading-tight">
+          <div className="text-[10px] uppercase tracking-wide text-slate-400 font-medium">{t.dayOf}</div>
+          <div className="text-[13px] font-semibold text-slate-900">{t.date}</div>
+          <div className="text-[10px] text-slate-500">{t.city}</div>
         </div>
-        <div className="flex -space-x-2">
-          {users.map((user, i) => (
-            <motion.div
-              key={user.name}
-              animate={autoPlay ? { scale: [1, 1.1, 1] } : {}}
-              transition={{ duration: 2, repeat: Infinity, delay: i * 0.5 }}
-              className="flex w-7 h-7 items-center justify-center rounded-full border-2 border-white text-xs font-bold text-white"
-              style={{ backgroundColor: user.color }}
-            >
-              {user.name[0]}
-            </motion.div>
-          ))}
-        </div>
+        <button className="flex w-6 h-6 items-center justify-center rounded-full hover:bg-slate-100" aria-label="Next day">
+          <svg className="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
       </div>
 
-      <div className="relative h-32 rounded-xl border border-slate-200 bg-white p-3 shadow-sm">
-        <div className="space-y-2">
-          <div className="h-2 w-3/4 rounded bg-slate-200" />
-          <div className="h-2 w-1/2 rounded bg-slate-200" />
-          <div className="h-2 w-5/6 rounded bg-slate-200" />
-          <div className="h-2 w-2/3 rounded bg-slate-200" />
-        </div>
-
-        {autoPlay && users.map((user, i) => (
-          <motion.div
-            key={user.name}
-            className="absolute"
-            style={{ left: `${user.cursor.x}%`, top: `${user.cursor.y}%` }}
-            animate={{
-              x: [0, 20 * (i === 0 ? 1 : -1), 0],
-              y: [0, 15 * (i === 0 ? -1 : 1), 0],
-            }}
-            transition={{ duration: 3, repeat: Infinity, delay: i * 0.5 }}
-          >
-            <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-              <path
-                d="M1 1L1 15.5L5.5 11L10 19L12.5 17.5L8 9.5L14 8L1 1Z"
-                fill={user.color}
-                stroke="white"
-                strokeWidth="1.5"
-              />
-            </svg>
-            <div
-              className="ml-3 mt-1 rounded px-1.5 py-0.5 text-[10px] font-medium text-white"
-              style={{ backgroundColor: user.color }}
-            >
-              {user.name}
-            </div>
-          </motion.div>
-        ))}
-
-        <AnimatePresence>
-          {autoPlay && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="absolute bottom-2 right-2 flex items-center gap-1.5 rounded-full bg-slate-100 px-2 py-1"
-            >
-              <span className="text-[10px] text-slate-500">{t.typing(users[0].name)}</span>
-              <div className="flex gap-0.5">
-                {[0, 1, 2].map((i) => (
-                  <motion.div
-                    key={i}
-                    className="w-1 h-1 rounded-full bg-slate-400"
-                    animate={{ y: [0, -3, 0] }}
-                    transition={{ duration: 0.6, repeat: Infinity, delay: i * 0.15 }}
-                  />
-                ))}
+      {/* Hour rail + items grid */}
+      <div className="relative flex" style={{ height: 'calc(100% - 72px)', minHeight: '320px' }}>
+        {/* Hour labels on the left */}
+        <div className="relative w-9 shrink-0">
+          {Array.from({ length: hourSpan + 1 }).map((_, i) => {
+            const hour = hourStart + i;
+            const showLabel = i % 3 === 0 || i === hourSpan;
+            return (
+              <div
+                key={hour}
+                className="absolute left-0 right-1 text-right text-[10px] text-slate-400 font-medium leading-none"
+                style={{ top: `${(i / hourSpan) * 100}%`, transform: 'translateY(-50%)' }}
+              >
+                {showLabel ? fmtHour(hour) : ''}
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
+            );
+          })}
+        </div>
 
-      <div className="mt-3 space-y-2">
-        <AnimatePresence>
-          {autoPlay && (
-            <>
+        {/* Item area */}
+        <div className="relative flex-1 border-l border-slate-200">
+          {/* Hour grid lines (every 3h) */}
+          {Array.from({ length: Math.floor(hourSpan / 3) + 1 }).map((_, i) => (
+            <div
+              key={i}
+              className="absolute left-0 right-0 border-t border-dashed border-slate-100"
+              style={{ top: `${((i * 3) / hourSpan) * 100}%` }}
+            />
+          ))}
+
+          {items.map((item, idx) => {
+            const style = ITINERARY_KIND_STYLE[item.kind];
+            const Icon = Icons[style.icon];
+            const top = rowHeightPct(item.startHour);
+            const height = rowHeightPct(item.endHour) - top;
+            const isVisible = idx < visibleCount;
+            return (
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1 }}
-                className="flex items-center gap-2 text-xs text-slate-500"
+                key={`${item.kind}-${idx}`}
+                initial={{ opacity: 0, x: -8, scale: 0.97 }}
+                animate={{
+                  opacity: isVisible ? 1 : 0,
+                  x: isVisible ? 0 : -8,
+                  scale: isVisible ? 1 : 0.97,
+                }}
+                transition={{ type: 'spring', stiffness: 360, damping: 28 }}
+                className="absolute left-1.5 right-1.5 rounded-lg overflow-hidden shadow-sm"
+                style={{
+                  top: `${top}%`,
+                  height: `${height}%`,
+                  backgroundColor: style.bg,
+                  borderLeft: `3px solid ${style.color}`,
+                }}
               >
-                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: users[0].color }} />
-                <span>{t.added(users[0].name, 'Senso-ji Temple')}</span>
+                <div className="flex flex-col h-full px-2 py-1.5">
+                  <div className="flex items-center gap-1.5">
+                    <Icon className="w-3 h-3 shrink-0" style={{ color: style.color }} />
+                    <span className="text-[11px] font-semibold text-slate-900 truncate leading-tight">{item.title}</span>
+                    {item.booked && (
+                      <span className="ml-auto flex items-center gap-0.5 rounded-full bg-emerald-100 px-1.5 py-0.5 text-[8px] font-semibold text-emerald-700">
+                        <Icons.Check className="w-2 h-2" />
+                        {t.booked}
+                      </span>
+                    )}
+                  </div>
+                  <div className="text-[9px] text-slate-600 mt-0.5 truncate">
+                    {fmtHour(item.startHour)} – {fmtHour(item.endHour)}
+                    {item.subtitle ? ` · ${item.subtitle}` : ''}
+                  </div>
+                  {height > 8 && (
+                    <div className="mt-auto flex items-center gap-1">
+                      <div className="flex -space-x-1">
+                        {item.participants.slice(0, 3).map((p, i) => (
+                          <div key={i} className="flex w-4 h-4 items-center justify-center rounded-full bg-white text-[9px] ring-1 ring-slate-200">
+                            {p}
+                          </div>
+                        ))}
+                      </div>
+                      {item.participants.length > 3 && (
+                        <span className="text-[9px] text-slate-500 font-medium">+{item.participants.length - 3}</span>
+                      )}
+                    </div>
+                  )}
+                </div>
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 2 }}
-                className="flex items-center gap-2 text-xs text-slate-500"
-              >
-                <div className="w-4 h-4 rounded-full" style={{ backgroundColor: users[1].color }} />
-                <span>{t.voted(users[1].name, 'Kyoto')}</span>
-              </motion.div>
-            </>
-          )}
-        </AnimatePresence>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
