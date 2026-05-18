@@ -458,21 +458,27 @@ export const AiGlobeJourney = ExplorerCards;
 // EventItemChoiceOption default variant + the footer action row, matching
 // the real app's spacing, colors and badge contracts.
 // ============================================================================
+type PollProvider = 'booking' | 'airbnb' | 'getyourguide' | 'viator' | 'custom';
+
 interface PollChoice {
   title: string;
   description: string;
   city: string;
   rating: number;
   price: string;
-  provider: 'Booking' | 'Airbnb' | 'Direct';
+  provider: PollProvider;
   image: string;
   isUserVote?: boolean;
 }
 
-const POLL_PROVIDER_STYLE: Record<PollChoice['provider'], { bg: string; fg: string }> = {
-  Booking: { bg: '#0034A9', fg: '#FFFFFF' },
-  Airbnb: { bg: '#FF385C', fg: '#FFFFFF' },
-  Direct: { bg: '#E2E8F0', fg: '#0F172A' },
+// Mirrors partnersMap in frontend/components/affiliation-partner.tsx — same
+// real provider logos served from /affiliates/, same circular-min layout.
+const POLL_PROVIDER_LOGO: Record<PollProvider, { src: string; name: string }> = {
+  booking: { src: '/affiliates/booking-logo.svg', name: 'Booking.com' },
+  airbnb: { src: '/affiliates/airbnb-logo.webp', name: 'Airbnb' },
+  getyourguide: { src: '/affiliates/getyourguide.png', name: 'GetYourGuide' },
+  viator: { src: '/affiliates/viator.png', name: 'Viator' },
+  custom: { src: '/logo.webp', name: 'WePlanify' },
 };
 
 // Real theme colors from globals.css → reused so the mockup carries the same
@@ -481,15 +487,15 @@ const SLEEPING_COLOR = '#14B8A6';
 const AMBER_COLOR = '#D97706';
 
 const POLL_CHOICES_FR: PollChoice[] = [
-  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · vue ville', city: 'Lisbonne', rating: 4.6, price: '145€/nuit', provider: 'Booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
-  { title: 'Príncipe Real Loft', description: 'Appartement entier · 4 voyageurs', city: 'Lisbonne', rating: 4.4, price: '95€/nuit', provider: 'Airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
-  { title: 'Lisbon Lounge Hostel', description: 'Auberge · centre-ville', city: 'Lisbonne', rating: 4.0, price: '35€/nuit', provider: 'Booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
+  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · vue ville', city: 'Lisbonne', rating: 4.6, price: '145€/nuit', provider: 'booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
+  { title: 'Príncipe Real Loft', description: 'Appartement entier · 4 voyageurs', city: 'Lisbonne', rating: 4.4, price: '95€/nuit', provider: 'airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
+  { title: 'Lisbon Lounge Hostel', description: 'Auberge · centre-ville', city: 'Lisbonne', rating: 4.0, price: '35€/nuit', provider: 'booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
 ];
 
 const POLL_CHOICES_EN: PollChoice[] = [
-  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · city view', city: 'Lisbon', rating: 4.6, price: '$145/night', provider: 'Booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
-  { title: 'Príncipe Real Loft', description: 'Entire apartment · 4 travellers', city: 'Lisbon', rating: 4.4, price: '$95/night', provider: 'Airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
-  { title: 'Lisbon Lounge Hostel', description: 'Hostel · downtown', city: 'Lisbon', rating: 4.0, price: '$35/night', provider: 'Booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
+  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · city view', city: 'Lisbon', rating: 4.6, price: '$145/night', provider: 'booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
+  { title: 'Príncipe Real Loft', description: 'Entire apartment · 4 travellers', city: 'Lisbon', rating: 4.4, price: '$95/night', provider: 'airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
+  { title: 'Lisbon Lounge Hostel', description: 'Hostel · downtown', city: 'Lisbon', rating: 4.0, price: '$35/night', provider: 'booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
 ];
 
 interface PollVoter { id: number; option: number; }
@@ -512,6 +518,7 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
         endsLabel: 'Termine le',
         createdDate: '14 mai',
         endsDate: '20 mai',
+        dayRange: '15 → 17 mai',
         status: 'Voter maintenant',
         single: 'Choix unique',
         options: 'options',
@@ -531,6 +538,7 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
         endsLabel: 'Ends on',
         createdDate: 'May 14',
         endsDate: 'May 20',
+        dayRange: 'May 15 → 17',
         status: 'Vote now',
         single: 'Single choice',
         options: 'options',
@@ -563,25 +571,30 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
 
   return (
     // Article wrapper — bg-card, rounded-3xl, border, shadow-xs hover:shadow-md
-    <div className="relative h-full min-h-[280px] lg:min-h-[460px] w-full overflow-hidden rounded-3xl bg-white border border-slate-200 shadow-sm">
+    <div className="relative h-full min-h-[280px] lg:min-h-[460px] w-full overflow-hidden rounded-3xl bg-white border border-slate-200/80 shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
       {/* Header — px-5 pt-5, avatar + creator info + badges row */}
       <div className="flex items-start justify-between px-4 lg:px-5 pt-4 lg:pt-5">
         <div className="flex items-center gap-3 min-w-0">
-          {/* Avatar h-10 w-10 ring-2 ring-background */}
-          <div
-            className="flex w-9 h-9 lg:w-10 lg:h-10 items-center justify-center rounded-full text-lg shrink-0 ring-2 ring-white shadow-sm"
-            style={{ backgroundColor: '#FFE4D6' }}
-          >
-            👩‍🎨
+          {/* Avatar h-10 w-10 ring-2 ring-background — real Avatar + AvatarImage from the app */}
+          <div className="relative w-9 h-9 lg:w-10 lg:h-10 shrink-0 rounded-full overflow-hidden ring-2 ring-white shadow-sm">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&q=80&fit=crop"
+              alt={t.creator}
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+            />
           </div>
           <div className="min-w-0 leading-tight">
             <p className="text-[13px] font-semibold text-slate-900 truncate">{t.creator}</p>
-            {/* Created · Ends row with calendar icon */}
+            {/* Created · Ends · Day range row */}
             <div className="flex items-center gap-1.5 text-[10px] text-slate-500 mt-0.5 flex-wrap">
               <Icons.Calendar className="w-2.5 h-2.5 shrink-0" />
               <span>{t.createdLabel} {t.createdDate}</span>
               <span className="text-slate-300">•</span>
               <span>{t.endsLabel} {t.endsDate}</span>
+              <span className="text-slate-300">•</span>
+              {/* Day-range badge — primary color, only renders when the poll is linked to event days */}
+              <span className="font-medium" style={{ color: colors.primary }}>{t.dayRange}</span>
             </div>
           </div>
         </div>
@@ -635,7 +648,7 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
         {choices.map((choice, i) => {
           const votesForChoice = votesByOption[i];
           const percentage = Math.round((votesForChoice / denominator) * 100);
-          const providerStyle = POLL_PROVIDER_STYLE[choice.provider];
+          const providerLogo = POLL_PROVIDER_LOGO[choice.provider];
           const isUserVote = !!choice.isUserVote;
 
           return (
@@ -690,11 +703,15 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
                   </div>
 
                   <div className="flex items-center justify-between gap-2">
-                    <span
-                      className="inline-flex items-center rounded-md px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wide"
-                      style={{ backgroundColor: providerStyle.bg, color: providerStyle.fg }}
-                    >
-                      {choice.provider}
+                    {/* Provider logo — real WrapperAffiliationPartner min variant: black/50 pill with circular logo */}
+                    <span className="inline-flex items-center gap-1 rounded-full bg-black/60 pl-0 pr-2 py-0">
+                      <img
+                        src={providerLogo.src}
+                        alt={providerLogo.name}
+                        className="w-5 h-5 rounded-full object-cover ring-1 ring-white/20"
+                        loading="eager"
+                      />
+                      <span className="text-[8px] font-medium text-white leading-none">{providerLogo.name}</span>
                     </span>
                     <span className="text-[11px] font-semibold text-emerald-600">{choice.price}</span>
                   </div>
