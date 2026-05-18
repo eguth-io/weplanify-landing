@@ -248,10 +248,10 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
     suggestions: [
       { title: 'Tour Eiffel — billet 2e étage', city: 'Paris 7e', price: '29€', rating: 4.8, image: '/explorer-mockup/eiffel.jpg', imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
       { title: 'Musée du Louvre — billet daté', city: 'Paris 1er', price: '22€', rating: 4.7, image: '/explorer-mockup/louvre.jpg', imageAlt: 'Louvre pyramid', provider: 'viator', lon: 2.3376, lat: 48.8606 },
-      { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
+      { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.2933, lat: 48.8606 },
       { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   restaurant: {
     suggestions: [
@@ -260,26 +260,26 @@ const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Pierre Hermé', city: 'Saint-Germain · pâtisserie', price: '€€', rating: 4.8, image: '/explorer-mockup/pierre-herme.jpg', imageAlt: 'Macaron pistache', provider: 'google', lon: 2.3326, lat: 48.8536 },
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market entrance', provider: 'google', lon: 2.3613, lat: 48.8639 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   hotel: {
     suggestions: [
       { title: 'Hôtel du Louvre', city: 'Paris 1er · 5★', price: '180€/n', rating: 4.4, image: '/explorer-mockup/hotel-louvre.jpg', imageAlt: 'Hotel facade', provider: 'booking', selectedDates: '15 → 17 mai', lon: 2.3376, lat: 48.8627 },
-      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18e · boutique', price: '320€/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3401, lat: 48.8852 },
+      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18e · boutique', price: '320€/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3399, lat: 48.8867 },
       { title: 'Loft Canal Saint-Martin', city: 'Paris 10e · entier', price: '120€/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
-      { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '45€/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
+      { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '45€/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3692, lat: 48.8779 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   transport: {
     suggestions: [
       { title: 'Eurostar', city: '2h 16min · 374 km', price: '95€', rating: null, provider: 'eurostar', lon: 2.3553, lat: 48.8809, route: { from: 'Paris · Gare du Nord', to: 'London · St Pancras', duration: '2h 16min', distance: '374 km', operator: 'Eurostar e320', mode: 'train' } },
       { title: 'TGV INOUI 6611', city: '1h 56min · 466 km', price: '45€', rating: null, provider: 'sncf', lon: 2.3733, lat: 48.8444, route: { from: 'Paris · Gare de Lyon', to: 'Lyon · Part-Dieu', duration: '1h 56min', distance: '466 km', operator: 'SNCF · TGV INOUI', mode: 'train' } },
       { title: 'Air France AF1364', city: '1h 35min · 689 km', price: '78€', rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { from: 'Paris CDG · T2F', to: 'Nice Côte d’Azur', duration: '1h 35min', distance: '689 km', operator: 'Air France · Airbus A320', mode: 'plane' } },
-      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '14,99€', rating: null, provider: 'custom', lon: 2.3470, lat: 48.8584, route: { from: 'Paris · Bercy Seine', to: 'Bruxelles · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
+      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '14,99€', rating: null, provider: 'custom', lon: 2.3815, lat: 48.8378, route: { from: 'Paris · Bercy Seine', to: 'Bruxelles · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
     ],
     // Pin centered on Paris with CDG visible northeast for the Air France item.
-    map: { lon: 2.4500, lat: 48.9100, zoom: 9 },
+    map: { lon: 2.4500, lat: 48.9100, zoom: 10 },
   },
 };
 
@@ -288,10 +288,10 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
     suggestions: [
       { title: 'Eiffel Tower — 2nd floor ticket', city: 'Paris 7th', price: '€29', rating: 4.8, image: '/explorer-mockup/eiffel.jpg', imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
       { title: 'Louvre Museum — dated ticket', city: 'Paris 1st', price: '€22', rating: 4.7, image: '/explorer-mockup/louvre.jpg', imageAlt: 'Louvre pyramid', provider: 'viator', lon: 2.3376, lat: 48.8606 },
-      { title: 'Guided Seine river cruise', city: 'Bateaux Parisiens', price: '€15', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.3027, lat: 48.8614 },
+      { title: 'Guided Seine river cruise', city: 'Bateaux Parisiens', price: '€15', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.2933, lat: 48.8606 },
       { title: 'Sainte-Chapelle — dated ticket', city: 'Île de la Cité', price: '€13', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   restaurant: {
     suggestions: [
@@ -300,25 +300,25 @@ const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
       { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
       { title: 'Du Pain et des Idées', city: 'Paris 10th · bakery', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   hotel: {
     suggestions: [
       { title: 'Hôtel du Louvre', city: 'Paris 1st · 5★', price: '€180/n', rating: 4.4, image: '/explorer-mockup/hotel-louvre.jpg', imageAlt: 'Hotel facade', provider: 'booking', selectedDates: 'May 15 → 17', lon: 2.3376, lat: 48.8627 },
-      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18th · boutique', price: '€320/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3401, lat: 48.8852 },
+      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18th · boutique', price: '€320/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3399, lat: 48.8867 },
       { title: 'Canal Saint-Martin Loft', city: 'Paris 10th · entire apartment', price: '€120/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
-      { title: 'Generator Paris', city: 'Paris 10th · hostel', price: '€45/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3603, lat: 48.8826 },
+      { title: 'Generator Paris', city: 'Paris 10th · hostel', price: '€45/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3692, lat: 48.8779 },
     ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 8 },
+    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   transport: {
     suggestions: [
       { title: 'Eurostar', city: '2h 16min · 374 km', price: '€95', rating: null, provider: 'eurostar', lon: 2.3553, lat: 48.8809, route: { from: 'Paris · Gare du Nord', to: 'London · St Pancras', duration: '2h 16min', distance: '374 km', operator: 'Eurostar e320', mode: 'train' } },
       { title: 'TGV INOUI 6611', city: '1h 56min · 466 km', price: '€45', rating: null, provider: 'sncf', lon: 2.3733, lat: 48.8444, route: { from: 'Paris · Gare de Lyon', to: 'Lyon · Part-Dieu', duration: '1h 56min', distance: '466 km', operator: 'SNCF · TGV INOUI', mode: 'train' } },
       { title: 'Air France AF1364', city: '1h 35min · 689 km', price: '€78', rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { from: 'Paris CDG · T2F', to: 'Nice Côte d’Azur', duration: '1h 35min', distance: '689 km', operator: 'Air France · Airbus A320', mode: 'plane' } },
-      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '€14.99', rating: null, provider: 'custom', lon: 2.3470, lat: 48.8584, route: { from: 'Paris · Bercy Seine', to: 'Brussels · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
+      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '€14.99', rating: null, provider: 'custom', lon: 2.3815, lat: 48.8378, route: { from: 'Paris · Bercy Seine', to: 'Brussels · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
     ],
-    map: { lon: 2.4500, lat: 48.9100, zoom: 9 },
+    map: { lon: 2.4500, lat: 48.9100, zoom: 10 },
   },
 };
 
@@ -339,29 +339,53 @@ function priceLabel(price: string): string | null {
   return String(n);
 }
 
+// Tile dimensions match the right-pane panel aspect (roughly portrait,
+// height ~ width × 1.65). Both the Mapbox URL and the HTML-pin projection
+// use these dims so the dots land where the tile shows the matching place.
+const MAP_TILE_W = 240;
+const MAP_TILE_H = 400;
+
 const MAPBOX_STATIC_URL = (
-  pins: { lon: number; lat: number; price?: string }[],
+  _pins: { lon: number; lat: number; price?: string }[],
   center: { lon: number; lat: number; zoom: number },
-  width = 320,
-  height = 240,
+  width = MAP_TILE_W,
+  height = MAP_TILE_H,
 ) => {
+  // No-pin tile — markers are rendered as HTML overlays so we can size them
+  // smaller than what the Static API supports (pin-s is the smallest API
+  // variant and the user wanted tighter dots). outdoors-v12 is the live
+  // Explorer's default style.
   const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? '';
-  // Multi-pin overlay: mirrors the real Explorer's per-item markers, and
-  // bakes the price into the pin label when possible (e.g. pin-l-29 for
-  // a €29 activity, like the price-marker toggle on the live Mapbox pane).
-  const pinStr = pins
-    .map((p) => {
-      const label = p.price ? priceLabel(p.price) : null;
-      return label
-        ? `pin-l-${label}+f6391a(${p.lon},${p.lat})`
-        : `pin-s+f6391a(${p.lon},${p.lat})`;
-    })
-    .join(',');
-  // outdoors-v12 is the live Explorer's default style (light, colored
-  // terrain + arrondissement labels + blue Seine). dark-v11 only shows
-  // when the user toggles dark mode on the real map control.
-  return `https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/static/${pinStr}/${center.lon},${center.lat},${center.zoom},0/${width}x${height}@2x?access_token=${token}`;
+  return `https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/static/${center.lon},${center.lat},${center.zoom},0/${width}x${height}@2x?access_token=${token}`;
 };
+
+// Web Mercator projection: convert a (lon, lat) pair to a percentage offset
+// inside a Mapbox Static tile of the given center + zoom + dimensions. We
+// use the percentage so absolute-positioned markers scale with the rendered
+// panel (the panel width varies with viewport).
+function mercatorOffsetPct(
+  lon: number,
+  lat: number,
+  center: { lon: number; lat: number; zoom: number },
+  width: number,
+  height: number,
+) {
+  const project = (l: number, p: number) => ({
+    x: (l * Math.PI) / 180,
+    y: Math.log(Math.tan(Math.PI / 4 + (p * Math.PI) / 360)),
+  });
+  // 1 tile = 256 logical px at zoom 0; @2x → 512 px. Static images are also
+  // @2x by default, so the world spans 512 * 2^zoom px end-to-end.
+  const scale = (Math.pow(2, center.zoom) * 256) / (2 * Math.PI);
+  const target = project(lon, lat);
+  const origin = project(center.lon, center.lat);
+  const dx = (target.x - origin.x) * scale;
+  const dy = -(target.y - origin.y) * scale;
+  return {
+    xPct: ((width / 2 + dx) / width) * 100,
+    yPct: ((height / 2 + dy) / height) * 100,
+  };
+}
 
 export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
   const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
@@ -714,6 +738,44 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
               className="absolute inset-0 w-full h-full object-cover"
             />
           </AnimatePresence>
+
+          {/* HTML pin overlay — projected from item lon/lat to the tile's
+              pixel space (Web Mercator, same projection Mapbox renders) so
+              the dots align with the underlying map. Smaller than any
+              Static API marker (the smallest API pin is pin-s, still too
+              chunky for this panel size). */}
+          {category.suggestions.map((s, i) => {
+            const pos = mercatorOffsetPct(s.lon, s.lat, category.map, MAP_TILE_W, MAP_TILE_H);
+            if (pos.xPct < 0 || pos.xPct > 100 || pos.yPct < 0 || pos.yPct > 100) return null;
+            return (
+              <motion.div
+                key={`pin-${activeFilter}-${i}`}
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: i * 0.06, type: 'spring', stiffness: 380, damping: 22 }}
+                className="absolute z-10 pointer-events-none"
+                style={{ left: `${pos.xPct}%`, top: `${pos.yPct}%`, transform: 'translate(-50%, -100%)' }}
+              >
+                <div className="relative flex flex-col items-center">
+                  <div
+                    className="flex items-center justify-center rounded-full border-2 border-white text-[10px] font-bold text-white shadow-md"
+                    style={{ backgroundColor: colors.primary, height: 22, minWidth: 22, padding: '0 6px' }}
+                  >
+                    {s.price ?? ''}
+                  </div>
+                  <div
+                    className="w-0 h-0"
+                    style={{
+                      borderLeft: '4px solid transparent',
+                      borderRight: '4px solid transparent',
+                      borderTop: `6px solid ${colors.primary}`,
+                      marginTop: -2,
+                    }}
+                  />
+                </div>
+              </motion.div>
+            );
+          })}
 
           {/* Top-right control stack — mirrors the real Mapbox pane's
               style toggle / fullscreen / geolocate buttons. Visual-only here. */}
