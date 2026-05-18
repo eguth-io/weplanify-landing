@@ -328,23 +328,20 @@ const EXPLORER_CARDS_BY_LANG: Record<'en' | 'fr', Record<ExplorerCategoryKey, Ex
 };
 
 // Tile dimensions match the right-pane panel aspect (roughly portrait,
-// height ~ width × 1.65). Both the Mapbox URL and the HTML-pin projection
-// use these dims so the dots land where the tile shows the matching place.
+// height ~ width × 1.65). The HTML-pin projection uses these dims so the
+// dots land where the tile shows the matching place.
 const MAP_TILE_W = 240;
 const MAP_TILE_H = 400;
 
-const MAPBOX_STATIC_URL = (
-  _pins: { lon: number; lat: number; price?: string }[],
-  center: { lon: number; lat: number; zoom: number },
-  width = MAP_TILE_W,
-  height = MAP_TILE_H,
-) => {
-  // No-pin tile — markers are rendered as HTML overlays so we can size them
-  // smaller than what the Static API supports (pin-s is the smallest API
-  // variant and the user wanted tighter dots). outdoors-v12 is the live
-  // Explorer's default style.
-  const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? '';
-  return `https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/static/${center.lon},${center.lat},${center.zoom},0/${width}x${height}@2x?access_token=${token}`;
+// Static map images are baked at build time and served from /public, so the
+// landing never hits the Mapbox Static API at runtime. Each category points
+// at one of two tiles (Paris-central or Paris–CDG) — the only two distinct
+// camera positions in the Explorer mockup.
+const MAP_TILE_FOR = (center: { lon: number; lat: number; zoom: number }): string => {
+  // Transport sits on the Paris–CDG axis (lon 2.42, zoom 9). Anything else
+  // is one of the three Paris-centered tabs (lon 2.35, zoom 10).
+  if (center.zoom <= 9) return '/explorer-mockup/map-transport.png';
+  return '/explorer-mockup/map-paris.png';
 };
 
 // Web Mercator projection: convert a (lon, lat) pair to a percentage offset
@@ -706,18 +703,16 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
         {/* Mapbox outdoors-v12 panel — same style the live Explorer
             renders by default (light terrain + arrondissement labels). */}
         <div className="relative rounded-2xl overflow-hidden shadow-lg bg-slate-200 min-h-[200px] lg:min-h-0">
-          {/* Preload all 4 map tiles so cycle frames swap instantly. */}
+          {/* Preload both static tiles so the filter switch is instant. */}
           <div aria-hidden className="hidden">
-            {EXPLORER_FILTER_KEYS.map((k) => {
-              const cat = cards[k];
-              return <img key={k} src={MAPBOX_STATIC_URL(cat.suggestions, cat.map)} alt="" loading="eager" />;
-            })}
+            <img src="/explorer-mockup/map-paris.png" alt="" loading="eager" />
+            <img src="/explorer-mockup/map-transport.png" alt="" loading="eager" />
           </div>
 
           <AnimatePresence mode="wait">
             <motion.img
               key={activeFilter}
-              src={MAPBOX_STATIC_URL(category.suggestions, category.map)}
+              src={MAP_TILE_FOR(category.map)}
               alt={`Map — ${activeFilter}`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
