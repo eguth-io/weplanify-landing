@@ -6,7 +6,6 @@ import HeroPitchWall from "@/components/HeroPitchWall";
 
 // Lazy-load below-the-fold components to reduce initial JS bundle
 const StackingCards = dynamic(() => import("@/components/StackingCards"));
-const TravelSteps = dynamic(() => import("@/components/TravelSteps"));
 const FAQSupport = dynamic(() => import("@/components/FAQSupport"));
 const ReadyBanner = dynamic(() => import("@/components/ReadyBanner"));
 const TestimonialCarousel = dynamic(() => import("@/components/TestimonialCarousel"));
@@ -229,13 +228,6 @@ export default async function HomePage({ params }: Props) {
       </FadeIn>
 
       
-
-      {/* Travel Steps */}
-      <FadeIn>
-        <div id="how-it-works">
-          <TravelSteps locale={locale} />
-        </div>
-      </FadeIn>
 
       {/* Feature Image Section */}
       <FadeIn><FeatureImageSection locale={locale} /></FadeIn>
