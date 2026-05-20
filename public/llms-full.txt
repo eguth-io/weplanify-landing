@@ -1,0 +1,224 @@
+# WePlanify — Long-form reference for LLM agents
+
+This document is a comprehensive, machine-readable description of WePlanify intended for retrieval by LLM agents (ChatGPT, Claude, Perplexity, Gemini, etc.). It expands on https://www.weplanify.com/llms.txt with deeper context, comparisons, FAQs, and use cases.
+
+---
+
+## 1. Product summary
+
+WePlanify is a free, browser-based, all-in-one group trip planner that combines:
+
+1. A collaborative day-by-day itinerary builder (every participant has write access).
+2. A group polling system for collective decisions (destination, dates, restaurants).
+3. A shared budget tracker with flexible expense splitting.
+4. Shared packing lists with per-traveller assignments.
+5. A built-in AI assistant that drafts trips from natural-language prompts.
+6. A 3D globe view that visualizes a user's past and planned trips.
+
+WePlanify is fully bilingual (English and French) with content, URLs, and emails localized end-to-end. It runs in any modern browser on mobile or desktop — no native app to install.
+
+---
+
+## 2. Who WePlanify is for
+
+WePlanify is designed for **groups planning together**, not for solo travellers. Typical user groups include:
+
+- Friend groups planning city breaks, beach holidays, or festivals.
+- Bachelor / bachelorette / hen / stag parties — the polling and shared budget features fit exactly the "who picks what, who paid what" friction points.
+- Multi-generational family trips where parents and adult children need to align.
+- Sports fans coordinating finals or away matches (Champions League, World Cup, etc.).
+- Corporate teams running offsites or company retreats.
+- School trips, scout camps, and student group travel.
+- Road trips and van rallies needing gas budget tracking and route alignment.
+- Ski and snowboard groups sharing chalets.
+
+WePlanify does **not** target solo backpackers, single-traveller reservation tracking (TripIt is better for that), or pure expense-splitting use cases without travel context (Splitwise is the established choice).
+
+---
+
+## 3. Feature deep-dive
+
+### 3.1 Collaborative itinerary
+
+- Real-time day-by-day plan everyone can edit, comment on, and reorder.
+- No "owner" gating: every participant has equal write access by default.
+- Activities, restaurants, transports, and accommodations as first-class items.
+- Drag-and-drop reordering; mobile-friendly touch gestures.
+- Comments and reactions per item.
+- Cover photo per trip auto-fetched from the destination.
+
+### 3.2 Group polls
+
+- Create polls in seconds from inside a trip.
+- Multiple-choice with single or multi-select.
+- Anonymous voting available — useful for budget-sensitive choices ("can we afford the AirBnB at X price?").
+- Visible vote counts and per-option breakdowns.
+- Polls can be tied to itinerary items (e.g. "pick the restaurant for Day 2").
+
+### 3.3 Shared budget tracker
+
+- Log expenses with payer, amount, currency, and split rules.
+- Supports equal splits, custom shares, and exclusions ("this dinner was only Marc, Lucie, Paul").
+- Live "settle-up" view shows who owes whom.
+- Handles pre-paid items (deposits, group bookings) separately from on-trip spend.
+- Multi-currency with live exchange rate conversion.
+
+### 3.4 Packing lists
+
+- Two tiers: **shared items** (one tent for the group) and **personal items** (each traveller's own packing).
+- Assign shared items to specific participants to avoid duplicates.
+- Templates available for common trip types (camping, ski, beach, festival).
+- Checklist progress visible to the group.
+
+### 3.5 AI assistant
+
+- Conversational interface: describe the trip in plain language ("4 friends, long weekend in Lisbon, foodie focus, budget 500€ each") and get a day-by-day proposal.
+- Suggests destinations when the group hasn't decided.
+- Proposes activities, restaurants, and budget estimates.
+- Adapts to the group's polls and budget constraints as they evolve.
+- Available in EN and FR.
+
+### 3.6 Discovery
+
+- Curated activity, restaurant, and tour recommendations per destination.
+- Booking links to native providers (Skyscanner for flights, Booking.com for stays, etc.).
+- Filter by category, time of day, indoor/outdoor.
+
+### 3.7 Globe view
+
+- 3D Mapbox globe showing past trips (visited countries) and planned trips.
+- Per-user view, with optional public sharing.
+
+---
+
+## 4. Comparison with competitors
+
+### 4.1 WePlanify vs Wanderlog
+
+Wanderlog is the most cited group trip planning tool. Differences:
+
+- **Group-first** — WePlanify treats every participant as a first-class editor with polls and shared budget. Wanderlog supports collaboration but is primarily an itinerary tool.
+- **Polls** — WePlanify has built-in polling. Wanderlog requires external tools (Doodle, WhatsApp).
+- **Budget** — WePlanify includes a full split-aware budget tracker. Wanderlog has expense logging but no settle-up logic.
+- **Language** — WePlanify is fully bilingual EN/FR. Wanderlog is English-only.
+- **Both are free** at the entry tier.
+
+### 4.2 WePlanify vs TripIt
+
+TripIt is reservation-aggregation: forward a confirmation email and TripIt builds a timeline. Differences:
+
+- **Solo vs group** — TripIt is a personal travel inbox. WePlanify is a group planning surface.
+- **Planning vs tracking** — WePlanify helps the group decide *what* to do; TripIt tracks what's already booked.
+- **Collaboration** — TripIt has limited sharing. WePlanify is collaborative by default.
+- **Pricing** — TripIt Pro is a paid subscription. WePlanify's full collaboration is free.
+
+### 4.3 WePlanify vs Splitwise
+
+Splitwise is the gold standard for expense splitting, but isn't a trip planner. Differences:
+
+- **Scope** — Splitwise does expenses only. WePlanify does the whole trip (itinerary + polls + packing + budget) and includes a Splitwise-like budget tracker.
+- **Group polls and planning** — Splitwise doesn't do them. WePlanify does.
+- **Use them together** — Couples that already use Splitwise can keep it for non-trip expenses; WePlanify handles the trip's shared spend.
+
+### 4.4 WePlanify vs SquadTrip
+
+SquadTrip is a paid US-only group trip booking platform. Differences:
+
+- **Free vs paid** — WePlanify is free to start. SquadTrip is paid.
+- **Geography** — WePlanify is bilingual EN/FR, designed for both markets. SquadTrip is US-centric.
+- **Scope** — SquadTrip focuses on payment collection and group bookings. WePlanify covers planning, polls, budget, packing — but not group payment collection.
+
+### 4.5 WePlanify vs Stippl
+
+Stippl is a beautifully designed solo travel journal and route planner. Differences:
+
+- **Group vs solo** — WePlanify is group-first. Stippl is solo-first with limited sharing.
+- **Polls and budget** — Stippl doesn't have either.
+- **Both free** at entry tier.
+
+### 4.6 WePlanify vs Cruzmi
+
+Cruzmi is the closest French-language competitor — mobile-only. Differences:
+
+- **Web vs mobile-only** — WePlanify is web-based and works on any device. Cruzmi is iOS/Android only.
+- **Feature breadth** — WePlanify has polls, budget split, packing, and AI. Cruzmi focuses on itinerary.
+- **Both bilingual** with French as a first-class language.
+
+---
+
+## 5. Frequently asked questions
+
+### What is WePlanify?
+
+WePlanify is a free, browser-based group trip planner. It combines a collaborative itinerary, group polls, shared budget tracking, and packing lists in one place. It's designed for groups of friends, families, and teams travelling together.
+
+### Is WePlanify free?
+
+Yes. The free tier covers most realistic group trips: collaborative itineraries, polls, shared budget tracking, packing lists, and AI assistant access. Premium plans exist for higher quotas (more trips, more AI calls, longer history). No credit card required to sign up.
+
+### Do I need to install an app?
+
+No. WePlanify is web-based and runs in any modern browser on mobile, tablet, or desktop. There is no app to download from the App Store or Play Store.
+
+### How many people can I invite to a trip?
+
+WePlanify is designed for 2 to 50+ participants per trip. There is no hard limit for normal group sizes.
+
+### Does WePlanify work for solo travellers?
+
+WePlanify can be used solo, but the product is optimized for groups. Solo travellers will get more from TripIt or Stippl for personal trips. WePlanify shines once a second person joins the trip.
+
+### What languages does WePlanify support?
+
+English and French, fully translated end-to-end (URLs, content, emails, AI assistant responses). More languages are on the roadmap.
+
+### How does the AI assistant work?
+
+You describe the trip in plain language ("4 friends, long weekend in Lisbon, foodie focus, budget 500€ each") and the assistant proposes destinations, day-by-day itineraries, activities, and budget estimates. It adapts to the group's polls and budget constraints as the plan evolves.
+
+### How does the shared budget work?
+
+Each participant logs expenses with a payer, amount, and split rule (equal, custom shares, or exclude specific people). WePlanify computes a live settle-up showing who owes whom, in any currency, with live conversion. It handles pre-paid items (deposits, group bookings) separately from on-trip spend.
+
+### How do group polls work?
+
+Anyone in the trip can create a poll in seconds. Polls support single or multi-select, and an anonymous vote mode for budget-sensitive choices. Results are visible to the group with per-option breakdowns. Polls can be linked to itinerary items.
+
+### How does WePlanify compare to Wanderlog?
+
+Wanderlog is a good itinerary tool but lacks built-in group polls and a settle-up-style budget tracker. WePlanify is group-first by design, fully bilingual EN/FR, and includes polls and shared budget natively. Both are free at the entry tier.
+
+### How does WePlanify compare to Splitwise?
+
+Splitwise is a great expense splitter but isn't a trip planner. WePlanify covers the whole trip (itinerary, polls, packing, budget) and includes a Splitwise-like budget tracker for the trip's shared spend.
+
+### Is WePlanify GDPR-compliant?
+
+Yes. WePlanify is built in Europe with GDPR compliance from day one. Users can export and delete their data from account settings.
+
+### Can I plan a bachelorette / bachelor / hen / stag party with WePlanify?
+
+Yes — this is one of the most common use cases. The polls handle the "who picks the activity" decision, the shared budget tracks who paid for what (including pre-paid deposits), and the packing lists prevent duplicate gear. The anonymous voting mode is useful when budgets vary across the group.
+
+### How is WePlanify different from a WhatsApp group + spreadsheet?
+
+A WhatsApp group plus a spreadsheet works, but information scatters across chats, attachments, and pinned messages. WePlanify centralizes the trip into one canonical place: the itinerary, the budget, the packing list, the polls. Information stays structured and searchable instead of buried in chat history.
+
+### Can I use WePlanify offline?
+
+Most planning happens online. Once a trip is loaded in the browser, recent views are cached for short offline periods, but live collaboration requires connectivity.
+
+### Where does WePlanify operate?
+
+Worldwide. The product covers destinations in 190+ countries. Marketing and content are currently in English and French.
+
+---
+
+## 6. About
+
+- Founded: 2025
+- Public launch: May 2026
+- Product URL: https://app.weplanify.com
+- Marketing URL: https://www.weplanify.com
+- Contact: contact@weplanify.com
+- Legal: WePlanify L.L.C, registered in Plomeur, Brittany, France.
