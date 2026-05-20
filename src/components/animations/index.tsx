@@ -372,11 +372,20 @@ function mercatorOffsetPct(
   };
 }
 
-export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
+export function ExplorerCards({
+  autoPlay = true,
+  locale = 'en',
+  layout = 'grid',
+}: {
+  autoPlay?: boolean;
+  locale?: string;
+  layout?: 'grid' | 'list';
+}) {
   const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
   const [activeFilter, setActiveFilter] = useState<ExplorerCategoryKey>(EXPLORER_FILTER_KEYS[0]);
   const [added, setAdded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(autoPlay);
+  const isList = layout === 'list';
 
   useEffect(() => {
     setIsPlaying(autoPlay);
@@ -451,7 +460,9 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-            className="grid grid-cols-2 gap-2 lg:gap-2.5 content-start"
+            className={`grid content-start ${
+              isList ? 'grid-cols-1 gap-2' : 'grid-cols-2 gap-2 lg:gap-2.5'
+            }`}
           >
             {category.suggestions.map((sugg, idx) => {
               // Only the headliner (first card) plays the +→✓ animation.
@@ -464,6 +475,69 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
               // → footer (provider + price). No image thumbnail.
               if (sugg.route) {
                 const RouteIcon = sugg.route.mode === 'plane' ? Icons.Plane : sugg.route.mode === 'bus' ? Icons.Train : Icons.Train;
+
+                // Compact horizontal layout for list mode: icon | route summary | price
+                if (isList) {
+                  return (
+                    <motion.div
+                      key={`${activeFilter}-${idx}`}
+                      initial={{ opacity: 0, y: 6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
+                      className="relative flex flex-row items-center gap-3 rounded-2xl bg-white p-3 shadow-sm border border-slate-200/70 h-20 lg:h-24"
+                    >
+                      {/* Route mode icon (left, small) */}
+                      <div
+                        className="flex w-10 h-10 shrink-0 items-center justify-center rounded-xl"
+                        style={{ backgroundColor: `${colors.primary}1A`, color: colors.primary }}
+                      >
+                        <RouteIcon className="w-5 h-5" />
+                      </div>
+
+                      {/* Center: from → to, operator, duration */}
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-1.5 text-[13px] font-semibold text-slate-900 truncate">
+                          <span className="truncate">{sugg.route.from}</span>
+                          <svg viewBox="0 0 24 24" className="w-3 h-3 shrink-0 text-slate-400" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                          </svg>
+                          <span className="truncate">{sugg.route.to}</span>
+                        </div>
+                        <div className="mt-0.5 flex items-center gap-1 text-[11px] text-slate-500">
+                          <span className="truncate">{sugg.route.operator}</span>
+                          <span className="text-slate-300">•</span>
+                          <span className="whitespace-nowrap">{sugg.route.duration}</span>
+                        </div>
+                      </div>
+
+                      {/* Right: price + add button stacked */}
+                      <div className="flex flex-col items-end gap-1 shrink-0">
+                        <motion.div
+                          key={`btn-${activeFilter}-${idx}-${showAdded}`}
+                          animate={showAdded ? { scale: [1, 1.15, 1] } : { scale: 1 }}
+                          transition={{ duration: 0.4 }}
+                        >
+                          <div
+                            className="flex w-6 h-6 items-center justify-center rounded-full border border-slate-200 bg-white transition-colors"
+                            style={{ backgroundColor: showAdded ? colors.mintDark : '#FFFFFF' }}
+                          >
+                            {showAdded ? (
+                              <Icons.Check className="w-3 h-3 text-white" />
+                            ) : (
+                              <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                                <line x1="12" x2="12" y1="5" y2="19" />
+                                <line x1="5" x2="19" y1="12" y2="12" />
+                              </svg>
+                            )}
+                          </div>
+                        </motion.div>
+                        <span className="text-[12px] font-bold text-slate-900 leading-none">{sugg.price}</span>
+                      </div>
+                    </motion.div>
+                  );
+                }
+
                 return (
                   <motion.div
                     key={`${activeFilter}-${idx}`}
@@ -555,17 +629,20 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
                   initial={{ opacity: 0, y: 6 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
-                  className={`flex flex-col rounded-3xl overflow-hidden bg-white shadow-sm transition-all duration-200 border h-44 lg:h-52 ${
-                    sugg.booked
-                      ? 'border-emerald-500/40'
-                      : isHeadliner
-                        ? 'border-slate-200'
-                        : 'border-slate-200'
+                  className={`${
+                    isList ? 'flex flex-row h-20 lg:h-24' : 'flex flex-col h-44 lg:h-52'
+                  } rounded-2xl overflow-hidden bg-white shadow-sm transition-all duration-200 border ${
+                    sugg.booked ? 'border-emerald-500/40' : 'border-slate-200'
                   }`}
                 >
-                  {/* Thumbnail — rounded-t-3xl, taller h-28 lg:h-32, badges
-                      overlaid per explorer-item-card.tsx (z layers preserved). */}
-                  <div className="relative h-28 lg:h-32 bg-slate-100">
+                  {/* Thumbnail — vertical: image-top h-28/32. List: image-left
+                      w-24/28, full-height. Badges (rating, +/check, provider)
+                      remain anchored inside this thumbnail container. */}
+                  <div
+                    className={`relative bg-slate-100 shrink-0 ${
+                      isList ? 'w-24 lg:w-28 h-full' : 'h-28 lg:h-32'
+                    }`}
+                  >
                     {sugg.brandTile ? (
                       <div
                         className="absolute inset-0 flex flex-col items-center justify-center"
@@ -684,14 +761,36 @@ export function ExplorerCards({ autoPlay = true, locale = 'en' }: { autoPlay?: b
                     </div>
                   </div>
 
-                  {/* Content below image */}
-                  <div className="px-2 py-1.5 lg:px-2.5 lg:py-2">
-                    <p className="text-[11px] lg:text-[12px] font-semibold text-slate-900 truncate leading-tight">
+                  {/* Content area — below image (grid) or right of image (list) */}
+                  <div
+                    className={
+                      isList
+                        ? 'flex flex-1 flex-col justify-center px-3 py-2 min-w-0'
+                        : 'px-2 py-1.5 lg:px-2.5 lg:py-2'
+                    }
+                  >
+                    <p
+                      className={`font-semibold text-slate-900 truncate leading-tight ${
+                        isList ? 'text-[13px] lg:text-sm' : 'text-[11px] lg:text-[12px]'
+                      }`}
+                    >
                       {sugg.title}
                     </p>
-                    <div className="mt-0.5 flex items-center justify-between gap-1">
-                      <span className="text-[9px] lg:text-[10px] text-slate-500 truncate">{sugg.city}</span>
-                      <span className="text-[10px] lg:text-[11px] font-bold text-slate-900 shrink-0">{sugg.price}</span>
+                    <div className={`flex items-center justify-between gap-1 ${isList ? 'mt-1' : 'mt-0.5'}`}>
+                      <span
+                        className={`text-slate-500 truncate ${
+                          isList ? 'text-[11px]' : 'text-[9px] lg:text-[10px]'
+                        }`}
+                      >
+                        {sugg.city}
+                      </span>
+                      <span
+                        className={`font-bold text-slate-900 shrink-0 ${
+                          isList ? 'text-[12px]' : 'text-[10px] lg:text-[11px]'
+                        }`}
+                      >
+                        {sugg.price}
+                      </span>
                     </div>
                   </div>
                 </motion.div>
@@ -1324,20 +1423,37 @@ export function BudgetSplit({ autoPlay = true }: { autoPlay?: boolean }) {
 // ============================================================================
 // 5. SWIPE EXPLORER
 // ============================================================================
-export function SwipeExplorer({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
+export function SwipeExplorer({
+  autoPlay = true,
+  locale = 'en',
+  size = 'compact',
+}: {
+  autoPlay?: boolean;
+  locale?: string;
+  size?: 'compact' | 'large';
+}) {
   const lang = locale === 'fr' ? 'fr' : 'en';
   const headerLabel = lang === 'fr' ? 'Découvre Tokyo' : 'Explore Tokyo';
-  const places = [
+  const isLarge = size === 'large';
+  const categoryLabels = {
+    activity: { en: 'Activity', fr: 'Activité' },
+    food: { en: 'Food', fr: 'Cuisine' },
+    hotel: { en: 'Hotel', fr: 'Hôtel' },
+  } as const;
+  const places: Array<{ name: string; type: 'activity' | 'food' | 'hotel'; rating: number; color: string }> = [
     { name: 'Senso-ji Temple', type: 'activity', rating: 4.9, color: colors.activities },
     { name: 'Ichiran Ramen', type: 'food', rating: 4.8, color: colors.food },
     { name: 'Park Hyatt Tokyo', type: 'hotel', rating: 4.7, color: colors.sleeping },
     { name: 'Shibuya Crossing', type: 'activity', rating: 4.6, color: colors.activities },
     { name: 'Tsukiji Market', type: 'food', rating: 4.9, color: colors.food },
     { name: 'Aman Tokyo', type: 'hotel', rating: 4.9, color: colors.sleeping },
+    { name: 'TeamLab Planets', type: 'activity', rating: 4.8, color: colors.activities },
+    { name: 'Sushi Saito', type: 'food', rating: 4.9, color: colors.food },
   ];
   const [currentCard, setCurrentCard] = useState(0);
   const [swipeDirection, setSwipeDirection] = useState<'left' | 'right' | null>(null);
   const [cycle, setCycle] = useState(0);
+  const [likedCount, setLikedCount] = useState(0);
   const swipeCountRef = React.useRef(0);
 
   // Continuous looping animation
@@ -1347,21 +1463,26 @@ export function SwipeExplorer({ autoPlay = true, locale = 'en' }: { autoPlay?: b
     // Reset to start
     setCurrentCard(0);
     setSwipeDirection(null);
+    setLikedCount(0);
     swipeCountRef.current = 0;
 
-    // Deterministic pattern: right, right, left, right, right, right (repeats)
-    const directions: Array<'right' | 'left'> = ['right', 'right', 'left', 'right', 'right', 'right'];
+    // Deterministic pattern: right, right, left, right, right, left, right, right
+    const directions: Array<'right' | 'left'> = ['right', 'right', 'left', 'right', 'right', 'left', 'right', 'right'];
 
     const swipeInterval = setInterval(() => {
       const dir = directions[swipeCountRef.current % directions.length];
       swipeCountRef.current += 1;
       setSwipeDirection(dir);
+      if (dir === 'right') {
+        setLikedCount((c) => c + 1);
+      }
 
       setTimeout(() => {
         setCurrentCard((prev) => {
           // Reset to 0 when all cards are swiped
           if (prev >= places.length - 1) {
             setCycle((c) => c + 1);
+            setLikedCount(0);
             return 0;
           }
           return prev + 1;
@@ -1373,19 +1494,50 @@ export function SwipeExplorer({ autoPlay = true, locale = 'en' }: { autoPlay?: b
     return () => clearInterval(swipeInterval);
   }, [autoPlay, places.length]);
 
+  const cardStackHeight = isLarge ? 'h-72 lg:h-80' : 'h-40';
+  const cardStackWidth = isLarge ? 'max-w-[300px] lg:max-w-[340px]' : 'max-w-[200px]';
+  const cardImageHeight = isLarge ? 'h-44 lg:h-52' : 'h-24';
+  const cardPadding = isLarge ? 'p-4' : 'p-3';
+  const cardIcon = isLarge ? 'w-14 h-14' : 'w-10 h-10';
+  const titleSize = isLarge ? 'text-base lg:text-lg' : 'text-sm';
+  const ratingSize = isLarge ? 'text-sm' : 'text-xs';
+  const headerLabelSize = isLarge ? 'text-base lg:text-lg' : 'text-sm';
+  const headerIconBox = isLarge ? 'w-10 h-10' : 'w-8 h-8';
+  const headerIcon = isLarge ? 'w-5 h-5' : 'w-4 h-4';
+  const actionButtonSize = isLarge ? 'w-14 h-14 lg:w-16 lg:h-16' : 'w-12 h-12';
+  const actionIcon = isLarge ? 'w-7 h-7 lg:w-8 lg:h-8' : 'w-6 h-6';
+  const container = isLarge ? 'p-6 lg:p-8' : 'p-5';
+  const swipeDistance = isLarge ? 350 : 200;
+
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-100 to-slate-50 p-5">
-      <div className="mb-4 flex items-center gap-2">
-        <div className="flex w-8 h-8 items-center justify-center rounded-xl" style={{ backgroundColor: colors.primary }}>
-          <Icons.MapPin className="w-4 h-4 text-white" />
+    <div className={`relative h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-100 to-slate-50 ${container}`}>
+      <div className="mb-4 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className={`flex ${headerIconBox} items-center justify-center rounded-xl`} style={{ backgroundColor: colors.primary }}>
+            <Icons.MapPin className={`${headerIcon} text-white`} />
+          </div>
+          <span className={`${headerLabelSize} font-semibold text-slate-800`}>{headerLabel}</span>
         </div>
-        <span className="text-sm font-semibold text-slate-800">{headerLabel}</span>
+        {isLarge && (
+          <motion.div
+            key={`liked-${likedCount}`}
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
+            className="flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 shadow-sm border border-slate-200"
+          >
+            <Icons.Heart className="w-3.5 h-3.5 text-red-500" />
+            <span className="text-xs font-bold text-slate-700">
+              {likedCount} {lang === 'fr' ? 'aimé' + (likedCount > 1 ? 's' : '') : 'liked'}
+            </span>
+          </motion.div>
+        )}
       </div>
 
-      <div className="relative mx-auto h-40 w-full max-w-[200px]">
+      <div className={`relative mx-auto ${cardStackHeight} w-full ${cardStackWidth}`}>
         {places.map((place, i) => {
           if (i < currentCard) return null;
           const isTop = i === currentCard;
+          const categoryLabel = categoryLabels[place.type][lang];
 
           return (
             <motion.div
@@ -1396,20 +1548,23 @@ export function SwipeExplorer({ autoPlay = true, locale = 'en' }: { autoPlay?: b
               animate={{
                 scale: 1 - (i - currentCard) * 0.05,
                 y: (i - currentCard) * 8,
-                x: isTop && swipeDirection === 'right' ? 200 : isTop && swipeDirection === 'left' ? -200 : 0,
+                x: isTop && swipeDirection === 'right' ? swipeDistance : isTop && swipeDirection === 'left' ? -swipeDistance : 0,
                 rotate: isTop && swipeDirection === 'right' ? 20 : isTop && swipeDirection === 'left' ? -20 : 0,
                 opacity: isTop && swipeDirection ? 0 : 1,
               }}
               transition={{ duration: 0.3 }}
             >
-              <div className="h-24 w-full flex items-center justify-center" style={{ backgroundColor: place.color }}>
-                {place.type === 'activity' && <Icons.Heart className="w-10 h-10 text-white/60" />}
-                {place.type === 'food' && <Icons.Utensils className="w-10 h-10 text-white/60" />}
-                {place.type === 'hotel' && <Icons.Bed className="w-10 h-10 text-white/60" />}
+              <div className={`${cardImageHeight} w-full relative flex items-center justify-center`} style={{ backgroundColor: place.color }}>
+                {place.type === 'activity' && <Icons.Heart className={`${cardIcon} text-white/70`} />}
+                {place.type === 'food' && <Icons.Utensils className={`${cardIcon} text-white/70`} />}
+                {place.type === 'hotel' && <Icons.Bed className={`${cardIcon} text-white/70`} />}
+                <span className="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-slate-700 backdrop-blur-sm">
+                  {categoryLabel}
+                </span>
               </div>
-              <div className="p-3 flex items-center justify-between">
-                <span className="text-sm font-semibold text-slate-800">{place.name}</span>
-                <span className="text-xs text-slate-500">★ {place.rating}</span>
+              <div className={`${cardPadding} flex items-center justify-between`}>
+                <span className={`${titleSize} font-semibold text-slate-800 truncate pr-2`}>{place.name}</span>
+                <span className={`${ratingSize} text-slate-500 whitespace-nowrap`}>★ {place.rating}</span>
               </div>
 
               {isTop && swipeDirection === 'right' && (
@@ -1427,12 +1582,12 @@ export function SwipeExplorer({ autoPlay = true, locale = 'en' }: { autoPlay?: b
         })}
       </div>
 
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-6">
-        <div className="flex w-12 h-12 items-center justify-center rounded-full border-2 border-red-300 bg-white shadow-lg">
-          <Icons.X className="w-6 h-6 text-red-500" />
+      <div className={`absolute bottom-${isLarge ? '6' : '4'} left-1/2 flex -translate-x-1/2 ${isLarge ? 'gap-8' : 'gap-6'}`}>
+        <div className={`flex ${actionButtonSize} items-center justify-center rounded-full border-2 border-red-300 bg-white shadow-lg`}>
+          <Icons.X className={`${actionIcon} text-red-500`} />
         </div>
-        <div className="flex w-12 h-12 items-center justify-center rounded-full border-2 border-green-300 bg-white shadow-lg">
-          <Icons.Heart className="w-6 h-6 text-green-500" />
+        <div className={`flex ${actionButtonSize} items-center justify-center rounded-full border-2 border-green-300 bg-white shadow-lg`}>
+          <Icons.Heart className={`${actionIcon} text-green-500`} />
         </div>
       </div>
     </div>
