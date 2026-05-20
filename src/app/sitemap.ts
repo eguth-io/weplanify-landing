@@ -2,8 +2,10 @@ import { MetadataRoute } from "next";
 import { client } from "@/sanity/lib/client";
 import { seoSettingsQuery } from "@/sanity/lib/query";
 import { SeoSettings } from "@/sanity/lib/type";
+import { destinations } from "@/lib/destinations/data";
+import { countryGuides } from "@/lib/travel-guides/data";
 
-const locales = ["en", "fr"];
+const locales = ["en", "fr"] as const;
 const featureSlugs = [
   "planning",
   "budget",
@@ -105,6 +107,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
           changeFrequency: "monthly",
           priority: 0.6,
+        });
+      }
+    }
+
+    // Destinations: index + one entry per (locale, localized slug).
+    for (const locale of locales) {
+      entries.push({
+        url: `${siteUrl}/${locale}/destinations`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.85,
+      });
+      for (const d of destinations) {
+        entries.push({
+          url: `${siteUrl}/${locale}/destinations/${d.slug[locale]}`,
+          lastModified: new Date(),
+          changeFrequency: "monthly",
+          priority: 0.85,
+        });
+      }
+    }
+
+    // Travel guides: index + one entry per (locale, localized country slug).
+    for (const locale of locales) {
+      entries.push({
+        url: `${siteUrl}/${locale}/travel-guides`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.85,
+      });
+      for (const g of countryGuides) {
+        entries.push({
+          url: `${siteUrl}/${locale}/travel-guides/${g.slug[locale]}`,
+          lastModified: new Date(),
+          changeFrequency: "monthly",
+          priority: 0.85,
         });
       }
     }
