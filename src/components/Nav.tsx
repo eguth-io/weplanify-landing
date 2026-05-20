@@ -166,7 +166,7 @@ interface NavProps {
   navigationData?: Navigation | null;
 }
 
-export default function Nav({ navData, navigationData: _navigationData }: NavProps) {
+export default function Nav({ navData }: NavProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openMobileGroup, setOpenMobileGroup] = useState<string | null>(null);
   const pathname = usePathname();
