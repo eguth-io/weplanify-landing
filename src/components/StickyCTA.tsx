@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { trackEvent } from "@/lib/tracking";
+import { travelGuideSlugIndex, type TravelGuideLocale } from "@/lib/travel-guides/slugs";
 
 interface StickyCTAProps {
   text: string;
@@ -31,9 +32,15 @@ export default function StickyCTA({ text, href }: StickyCTAProps) {
   const locale = pathname?.split("/")[1] === "fr" ? "fr" : "en";
   const subpath = pathname ? "/" + pathname.split("/").slice(2).join("/") : "";
   const match = PATH_TO_TEMPLATE[subpath];
+  const travelGuideMatch = subpath.match(/^\/travel-guides\/([^/]+)$/);
+  const travelGuideTemplate = travelGuideMatch
+    ? travelGuideSlugIndex[locale as TravelGuideLocale]?.[travelGuideMatch[1]]
+    : undefined;
   const defaultHref = match
     ? `https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=${match.campaign}&template=${match.template}`
-    : `https://app.weplanify.com/${locale}/register?utm_source=landing`;
+    : travelGuideTemplate
+      ? `https://app.weplanify.com/${locale}/register?template=${travelGuideTemplate}&utm_source=landing&utm_medium=travel-guide&utm_campaign=${travelGuideTemplate}`
+      : `https://app.weplanify.com/${locale}/register?utm_source=landing`;
   const targetHref = href ?? defaultHref;
   const [show, setShow] = useState(false);
   const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
