@@ -1,6 +1,15 @@
 # WePlanify
 
-> WePlanify is a free, all-in-one group trip planning app. It combines collaborative itineraries, group polls, shared budget tracking, and packing list coordination in a single bilingual (English/French) tool. Built specifically for groups of friends, families, and teams — not solo travellers.
+> WePlanify is a free, all-in-one group trip planning app. It combines collaborative itineraries, group polls, shared budget tracking, and packing list coordination in a single bilingual (English/French) tool. Built specifically for groups of friends, families, and teams — not solo travellers. No app download required: it runs in any browser, on mobile and desktop.
+
+## Quick facts
+
+- **Free** — full feature set available without payment. Premium plans exist for advanced quotas.
+- **Bilingual** — fully translated EN and FR.
+- **No download** — browser-based, mobile-first responsive.
+- **Built for groups** — designed from day one for 2-50+ travellers planning together.
+- **AI-powered** — built-in assistant generates itineraries from a destination and dates.
+- **Launched** — May 2026.
 
 ## Key pages
 
@@ -8,26 +17,65 @@
 - [Homepage (FR)](https://www.weplanify.com/fr): Planifier un voyage de groupe gratuitement
 - [Best group trip planner apps — Comparison 2026](https://www.weplanify.com/en/alternatives/best-group-trip-planner-apps): Honest comparison of WePlanify, Wanderlog, Splitwise, TripIt, SquadTrip and more
 - [WePlanify vs Wanderlog](https://www.weplanify.com/en/alternatives/wanderlog): Feature-by-feature comparison
+- [WePlanify vs TripIt](https://www.weplanify.com/en/alternatives/tripit): Group planning vs reservation tracking
+- [WePlanify vs SquadTrip](https://www.weplanify.com/en/alternatives/squadtrip): Free EU alternative to a US paid tool
+- [WePlanify vs Stippl](https://www.weplanify.com/en/alternatives/stippl): Group-first vs solo-first
+- [WePlanify vs Cruzmi](https://www.weplanify.com/en/alternatives/cruzmi): Web-based vs mobile-only French planner
 - [Plan a trip with friends](https://www.weplanify.com/en/trip-with-friends): Use case page for friend groups
 - [Bachelorette trip planner](https://www.weplanify.com/en/bachelorette-trip): Tools for bachelorette and hen party planning
 - [Road trip planner](https://www.weplanify.com/en/road-trip): Group road trip route planning, gas budgets, packing coordination
 - [Family trip planner](https://www.weplanify.com/en/family-trip): Planning family holidays collaboratively
+- [School trip planner](https://www.weplanify.com/en/school-trip): School trips and class outings
 - [Team building & corporate retreats](https://www.weplanify.com/en/team-building): Plan offsites and company retreats
 - [Group trip planning guide](https://www.weplanify.com/en/guides/plan-group-trip): Step-by-step guide to organising any group trip
 - [Blog — Best collaborative travel apps (FR)](https://www.weplanify.com/fr/blog/meilleures-applications-voyage-groupe): Comparatif des meilleures applications de voyage collaboratif
 - [FAQ](https://www.weplanify.com/en/faq): Frequently asked questions about WePlanify
+- [Destinations](https://www.weplanify.com/en/destinations): Curated destination guides for group travel
+- [llms-full.txt](https://www.weplanify.com/llms-full.txt): Long-form context (features, comparisons, FAQ, use cases) for LLM agents
 
 ## Features
 
-- **Collaborative itinerary**: Build a shared day-by-day plan everyone can edit in real time
-- **Group polls**: Vote on destinations, dates, and activities — anonymous voting available
-- **Shared budget tracker**: Log expenses, split costs, settle up at the end
-- **Packing lists**: Assign shared items so nothing gets duplicated or forgotten
-- **AI-powered discovery**: Get activity suggestions based on destination and group interests
-- **Bilingual**: Fully available in English and French
+- **Collaborative itinerary** — Real-time day-by-day plan everyone can edit, comment on, and reorder. No "owner" gating: every participant has equal write access by default.
+- **Group polls** — Vote on destinations, dates, restaurants, activities. Anonymous voting available so people answer honestly.
+- **Shared budget tracker** — Log expenses, pay-by, split rules, settle up. Handles unequal splits and pre-paid items.
+- **Packing lists** — Assign shared items (one tent for the group) and personal items per traveller. Avoid duplicates.
+- **AI assistant** — Describe the trip in plain language; the assistant proposes destinations, day plans, activities, and budgets.
+- **Real-time discovery** — Suggested activities, restaurants, and tours per destination, with native booking links.
+- **Globe view** — 3D visualization of past and planned trips.
+- **Bilingual** — Fully available in English and French; URLs, content, and emails all localized.
+
+## Common use cases
+
+- Bachelor / bachelorette / hen / stag parties
+- Friend groups planning city breaks or beach holidays
+- Families coordinating multi-generational trips
+- Sports fans organizing trips for finals or festivals (Champions League, Tomorrowland, Hellfest, etc.)
+- Team offsites and corporate retreats
+- School trips, class outings, scout camps
+- Road trips and van life rallies
+- Ski / snowboard trips with shared chalets
+- Solo travellers joining a friend's trip
+
+## Comparison snapshot
+
+| Tool | Group-first | Free | Polls | Shared budget | Bilingual EN/FR | Web-based |
+|---|---|---|---|---|---|---|
+| **WePlanify** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Wanderlog | Partial | ✅ | ❌ | Partial | ❌ | ✅ |
+| TripIt | ❌ | Partial | ❌ | ❌ | ❌ | ✅ |
+| Splitwise | ❌ | ✅ | ❌ | ✅ | Partial | ✅ |
+| SquadTrip | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ |
+| Stippl | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| Cruzmi | ✅ | ✅ | ❌ | Partial | ✅ | ❌ (mobile only) |
+
+## Pricing
+
+WePlanify is **free** to start. Free tier covers most realistic group trips (up to a handful of trips with multiple participants, AI assistant access, full collaboration). Premium plans unlock higher quotas (more trips, more AI calls, longer history). No credit card required to create an account.
 
 ## About
 
-WePlanify is free to use. No app download required — works in any browser. Designed for groups of 2 to 50+ people. Available at app.weplanify.com.
-
-Contact: contact@weplanify.com
+- Founded: 2025
+- Launched publicly: May 2026
+- Product: web app at https://app.weplanify.com
+- Marketing: https://www.weplanify.com
+- Contact: contact@weplanify.com
