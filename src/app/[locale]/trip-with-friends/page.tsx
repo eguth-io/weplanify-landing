@@ -768,6 +768,74 @@ export default async function TripWithFriendsPage({ params }: Props) {
           </div>
         </section>
 
+        {/* Destinations cross-link */}
+        <section className="py-16 lg:py-20 px-4 lg:px-8">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="text-center mb-10">
+              <span className="inline-block bg-[#EEF899] text-[#001E13] px-4 py-1 rounded-full text-sm font-nanum-pen mb-3">
+                {locale === "fr" ? "Inspiration destinations" : "Destination inspiration"}
+              </span>
+              <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13]">
+                {locale === "fr"
+                  ? "Des voyages entre amis prêts à reprendre"
+                  : "Ready-to-fork friend trips"}
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  slug: locale === "fr" ? "lisbonne-entre-amis" : "lisbon-with-friends",
+                  title: locale === "fr" ? "Lisbonne · 4 jours" : "Lisbon · 4 days",
+                  desc:
+                    locale === "fr"
+                      ? "Miradouros, fado, Sintra, Time Out Market. Le week-end européen qui surpasse ses promesses."
+                      : "Miradouros, fado, Sintra, Time Out Market. The European weekend that overdelivers.",
+                },
+                {
+                  slug: locale === "fr" ? "toscane-road-trip" : "tuscany-road-trip",
+                  title: locale === "fr" ? "Toscane · 7 jours" : "Tuscany · 7 days",
+                  desc:
+                    locale === "fr"
+                      ? "Florence, Sienne, Val d'Orcia, Montalcino. Le road trip européen dont on parle 20 ans plus tard."
+                      : "Florence, Siena, Val d'Orcia, Montalcino. The road trip you'll still talk about 20 years later.",
+                },
+                {
+                  slug: locale === "fr" ? "budapest-evjf" : "budapest-bachelorette",
+                  title: locale === "fr" ? "Budapest · 3 jours" : "Budapest · 3 days",
+                  desc:
+                    locale === "fr"
+                      ? "Bains thermaux, ruin bars, Danube. Court, fort, abordable."
+                      : "Thermal baths, ruin bars, Danube. Short, intense, affordable.",
+                },
+              ].map((card) => (
+                <Link key={card.slug} href={`/${locale}/destinations/${card.slug}`} className="group">
+                  <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg hover:border-[#F6391A]/30 transition-all h-full">
+                    <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                      {card.title}
+                    </h3>
+                    <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                      {card.desc}
+                    </p>
+                    <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                      {locale === "fr" ? "Voir l'itinéraire →" : "See the itinerary →"}
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center mt-8">
+              <Link
+                href={`/${locale}/destinations`}
+                className="text-[#F6391A] font-karla font-bold text-sm lg:text-base underline underline-offset-4 hover:opacity-70"
+              >
+                {locale === "fr"
+                  ? "Voir toutes les destinations →"
+                  : "See all destinations →"}
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Discover More Section */}
         <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-[1200px] mx-auto">

@@ -71,6 +71,10 @@ export default function Footer({ footerData }: FooterProps) {
         url: `/${locale}/guides/plan-group-trip`,
       },
       {
+        label: locale === "fr" ? "Destinations" : "Destinations",
+        url: `/${locale}/destinations`,
+      },
+      {
         label: locale === "fr" ? "Guides voyage" : "Travel guides",
         url: `/${locale}/travel-guides`,
       },

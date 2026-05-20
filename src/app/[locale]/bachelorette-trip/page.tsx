@@ -892,6 +892,84 @@ export default async function BacheloretteTrip({ params }: Props) {
         </section>
         </FadeIn>
 
+        {/* Destinations cross-link */}
+        <FadeIn>
+        <section className="py-16 lg:py-20 px-4 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <span className="inline-block bg-[#EEF899] text-[#001E13] px-4 py-1 rounded-full text-sm font-nanum-pen mb-3">
+                {locale === "fr" ? "Inspiration destinations" : "Destination inspiration"}
+              </span>
+              <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13]">
+                {locale === "fr"
+                  ? "Des EVJF clés en main"
+                  : "Ready-to-fork bachelorette trips"}
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  slug: locale === "fr" ? "las-vegas-evjf" : "las-vegas-bachelorette",
+                  title: locale === "fr" ? "Las Vegas · 3 jours" : "Las Vegas · 3 days",
+                  desc:
+                    locale === "fr"
+                      ? "La capitale mondiale de l'EVJF. Pool parties, dayclubs, Strip, show du Cirque."
+                      : "The global bachelorette capital. Pool parties, dayclubs, the Strip, a Cirque show.",
+                },
+                {
+                  slug: locale === "fr" ? "nashville-evjf" : "nashville-bachelorette",
+                  title: locale === "fr" ? "Nashville · 4 jours" : "Nashville · 4 days",
+                  desc:
+                    locale === "fr"
+                      ? "La capitale américaine de l'EVJF. Pedal tavern, honky-tonks, bottes de cowgirl."
+                      : "The US bachelorette capital. Pedal taverns, honky-tonks, cowgirl boots.",
+                },
+                {
+                  slug: locale === "fr" ? "budapest-evjf" : "budapest-bachelorette",
+                  title: locale === "fr" ? "Budapest · 3 jours" : "Budapest · 3 days",
+                  desc:
+                    locale === "fr"
+                      ? "Bains thermaux, ruin bars, rooftops. Le week-end EVJF européen par excellence."
+                      : "Thermal baths, ruin bars, rooftops. The European bachelorette weekend, done right.",
+                },
+                {
+                  slug: locale === "fr" ? "marrakech-evjf" : "marrakech-bachelorette",
+                  title: locale === "fr" ? "Marrakech · 4 jours" : "Marrakech · 4 days",
+                  desc:
+                    locale === "fr"
+                      ? "Riad privatisé, hammam, désert d'Agafay, dîners rooftop. Dépaysement total."
+                      : "Private riad, hammam ritual, Agafay desert, rooftop dinners. Total escape.",
+                },
+              ].map((card) => (
+                <Link key={card.slug} href={`/${locale}/destinations/${card.slug}`} className="group">
+                  <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg hover:border-[#F6391A]/30 transition-all h-full">
+                    <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
+                      {card.title}
+                    </h3>
+                    <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
+                      {card.desc}
+                    </p>
+                    <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                      {locale === "fr" ? "Voir l'itinéraire →" : "See the itinerary →"}
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center mt-8">
+              <Link
+                href={`/${locale}/destinations`}
+                className="text-[#F6391A] font-karla font-bold text-sm lg:text-base underline underline-offset-4 hover:opacity-70"
+              >
+                {locale === "fr"
+                  ? "Voir toutes les destinations →"
+                  : "See all destinations →"}
+              </Link>
+            </div>
+          </div>
+        </section>
+        </FadeIn>
+
         {/* Discover More Section */}
         <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-5xl mx-auto">
