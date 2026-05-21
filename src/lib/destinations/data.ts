@@ -782,7 +782,7 @@ const tuscany: Destination = {
   country: { en: "Italy", fr: "Italie" },
   hero: {
     image:
-      "https://images.unsplash.com/photo-1568320149787-95c6f7b8a01b?w=1600&q=80",
+      "https://images.unsplash.com/photo-1774348120811-0b32140e8a92?w=1600&q=80",
     imageAlt: {
       en: "A winding cypress-lined road through the rolling hills of Val d'Orcia, Tuscany",
       fr: "Une route sinueuse bordée de cyprès dans les collines du Val d'Orcia, Toscane",
@@ -1061,7 +1061,7 @@ const lisbon: Destination = {
   country: { en: "Portugal", fr: "Portugal" },
   hero: {
     image:
-      "https://images.unsplash.com/photo-1588535570230-9d51fa5c2cca?w=1600&q=80",
+      "https://images.unsplash.com/photo-1753366400921-f75a179058e4?w=1600&q=80",
     imageAlt: {
       en: "Iconic yellow tram on a steep cobblestone street in Lisbon at sunset",
       fr: "Tramway jaune iconique sur une rue pavée en pente à Lisbonne au coucher du soleil",
