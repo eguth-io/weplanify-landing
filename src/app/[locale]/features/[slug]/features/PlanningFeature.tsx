@@ -32,7 +32,7 @@ const COPY: Record<Lang, {
 }> = {
   fr: {
     you: "Toi",
-    brand: "Weplanify IA",
+    brand: "WePlanify IA",
     chatBubbles: [
       "Je veux passer 2 semaines au Japon en avril avec ma copine. On adore la nature, la cuisine et les temples. Budget moyen.",
       "Excellent choix ! Le Japon en avril, c'est la saison des cerisiers. Je suggère un itinéraire Tokyo — Kyoto — Osaka avec des étapes à Nara et Hakone. Tu veux voir les options d'hébergement ?",
@@ -65,7 +65,7 @@ const COPY: Record<Lang, {
   },
   en: {
     you: "You",
-    brand: "Weplanify AI",
+    brand: "WePlanify AI",
     chatBubbles: [
       "I want to spend 2 weeks in Japan in April with my girlfriend. We love nature, food, and temples. Medium budget.",
       "Great choice! Japan in April is cherry blossom season. I suggest a Tokyo — Kyoto — Osaka route with stops in Nara and Hakone. Want me to show you accommodation options?",

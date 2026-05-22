@@ -39,12 +39,12 @@ export default function FeatureJsonLd({
     "url": featureUrl,
     "isPartOf": {
       "@type": "WebSite",
-      "name": "Weplanify",
+      "name": "WePlanify",
       "url": "https://weplanify.com"
     },
     "about": {
       "@type": "SoftwareApplication",
-      "name": "Weplanify",
+      "name": "WePlanify",
       "applicationCategory": "TravelApplication",
       "operatingSystem": "Web, iOS, Android",
       "offers": {
