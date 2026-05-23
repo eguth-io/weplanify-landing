@@ -798,7 +798,7 @@ function PolaroidDeckCard({
 
       <div className="text-center lg:text-left w-full">
         <div className="font-nanum-pen text-[#EEF899] text-xl lg:text-2xl mb-0">
-          {lang === 'fr' ? 'Et si tu allais à…' : 'What about…'}
+          {lang === 'fr' ? 'Et si tu découvrais…' : 'What about…'}
         </div>
         <h2 className="font-londrina-solid text-[#FFFBF5] text-5xl lg:text-[88px] xl:text-[104px] leading-[0.9] mb-2 drop-shadow-[0_4px_28px_rgba(0,0,0,0.55)] break-words">
           {preview.destination}
@@ -951,7 +951,7 @@ function Polaroid({
 }
 
 function ItineraryTimeline({ itinerary, lang }: { itinerary: ItineraryStop[]; lang: Lang }) {
-  const label = lang === 'fr' ? 'Une piste d\'itinéraire' : 'An itinerary idea';
+  const label = lang === 'fr' ? 'Itinéraire suggéré' : 'An itinerary idea';
   const nightLabel = (n: number) =>
     lang === 'fr' ? `${n} ${n > 1 ? 'nuits' : 'nuit'}` : `${n} ${n > 1 ? 'nights' : 'night'}`;
 

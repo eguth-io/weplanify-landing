@@ -270,7 +270,7 @@ const content = {
     painPoints: {
       title: "Pourquoi Organiser un EVJF, C'est le Chaos Total",
       subtitle:
-        "Vous adorez la future mariée, mais organiser son grand week-end ? C'est une autre histoire.",
+        "Tu adores la future mariée, mais organiser son grand week-end ? C'est une autre histoire.",
       items: [
         {
           emoji: "🤫",

@@ -314,7 +314,7 @@ const content = {
 
     vsTitle: "Pourquoi WePlanify plutôt qu'autre chose ?",
     vsSubtitle:
-      "Vous vous demandez peut-être : ai-je vraiment besoin d'un outil dédié ? Je ne peux pas juste utiliser ce que j'ai déjà ?",
+      "Tu te demandes peut-être : ai-je vraiment besoin d'un outil dédié ? Je ne peux pas juste utiliser ce que j'ai déjà ?",
     vsParagraphs: [
       "WhatsApp et iMessage sont parfaits pour discuter, mais catastrophiques pour planifier. Les décisions importantes se perdent, les liens disparaissent, et il n'y a aucun moyen de suivre un budget, construire un itinéraire ou lancer des sondages. Quand le voyage arrive, la moitié du groupe est perdue parce qu'elle a raté un message il y a trois semaines.",
       "Google Sheets et Notion sont puissants mais disproportionnés pour un voyage. Ils demandent que quelqu'un construise et maintienne la structure, et la plupart de vos amis ne les ouvriront tout simplement jamais. L'organisateur finit par tout faire seul — exactement le problème qu'on essayait de résoudre.",
@@ -369,11 +369,11 @@ const content = {
       },
       {
         q: "Comment fonctionnent les sondages de groupe ?",
-        a: "Créez un sondage sur n'importe quel sujet — destination, dates, restaurants, activités — et partagez-le avec votre groupe. Chacun vote depuis son appareil, et les résultats se mettent à jour en temps réel. Vous pouvez fixer des dates limites, autoriser les choix multiples et rendre les votes anonymes pour éviter la pression sociale.",
+        a: "Crée un sondage sur n'importe quel sujet — destination, dates, restaurants, activités — et partage-le avec ton groupe. Chacun vote depuis son appareil, et les résultats se mettent à jour en temps réel. Tu peux fixer des dates limites, autoriser les choix multiples et rendre les votes anonymes pour éviter la pression sociale.",
       },
     ],
 
-    ctaTitle: "Votre Prochaine Aventure Commence Ici",
+    ctaTitle: "Ta Prochaine Aventure Commence Ici",
     ctaDescription:
       "Rejoignez des milliers de groupes d'amis qui planifient leurs voyages avec WePlanify. C'est gratuit, c'est fun, et ça marche vraiment.",
     ctaButton: "Commencer à planifier",

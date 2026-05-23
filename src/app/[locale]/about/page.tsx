@@ -246,12 +246,12 @@ export default async function AboutPage({ params }: Props) {
             <h2 className="text-[#001E13] text-[36px] lg:text-[60px] font-londrina-solid leading-[1.05] mb-6">
               {isEn
                 ? "Your next trip is waiting."
-                : "Votre prochain voyage vous attend."}
+                : "Ton prochain voyage t'attend."}
             </h2>
             <p className="text-[#001E13]/60 text-base lg:text-lg font-karla leading-relaxed mb-10 max-w-[500px] mx-auto">
               {isEn
                 ? "Stop planning in group chats. Start planning together."
-                : "Arrêtez de planifier dans des chats de groupe. Commencez à planifier ensemble."}
+                : "Arrête de planifier dans des chats de groupe. Commence à planifier ensemble."}
             </p>
             <div className="flex justify-center">
               <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`}>

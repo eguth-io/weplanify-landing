@@ -408,12 +408,12 @@ export default async function FamilyTripPage({ params }: Props) {
           <div className="max-w-[1200px] mx-auto">
             <div className="bg-gradient-to-br from-[#F6391A] to-[#d42d10] rounded-[24px] lg:rounded-[40px] p-8 lg:p-16 text-center">
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] mb-4">
-                {isEn ? "Your Family Trip Starts Here" : "Votre Voyage en Famille Commence Ici"}
+                {isEn ? "Your Family Trip Starts Here" : "Ton Voyage en Famille Commence Ici"}
               </h2>
               <p className="text-[#FFFBF5]/80 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
                 {isEn
                   ? "Get everyone on the same page — literally. Start planning your next family vacation together."
-                  : "Mettez tout le monde sur la même page — littéralement. Commencez à planifier vos prochaines vacances en famille ensemble."}
+                  : "Mets tout le monde sur la même page — littéralement. Commence à planifier tes prochaines vacances en famille ensemble."}
               </p>
               <div className="flex justify-center">
                 <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`}>
