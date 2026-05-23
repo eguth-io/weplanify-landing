@@ -92,6 +92,7 @@ const DROPDOWNS: Dropdown[] = [
         items: [
           { label: { en: "Trip with friends", fr: "Voyage entre amis" }, href: (l) => `/${l}/trip-with-friends` },
           { label: { en: "Bachelorette trip", fr: "EVJF" }, href: (l) => `/${l}/bachelorette-trip` },
+          { label: { en: "Birthday trip", fr: "Voyage anniversaire" }, href: (l) => `/${l}/birthday-trip` },
           { label: { en: "Family trip", fr: "Voyage en famille" }, href: (l) => `/${l}/family-trip` },
           { label: { en: "Road trip", fr: "Road trip" }, href: (l) => `/${l}/road-trip` },
           { label: { en: "School trip", fr: "Voyage scolaire" }, href: (l) => `/${l}/school-trip` },
