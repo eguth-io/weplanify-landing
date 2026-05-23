@@ -87,6 +87,10 @@ export default function Footer({ footerData }: FooterProps) {
         url: `/${locale}/bachelorette-trip`,
       },
       {
+        label: locale === "fr" ? "Voyage anniversaire" : "Birthday Trip",
+        url: `/${locale}/birthday-trip`,
+      },
+      {
         label: locale === "fr" ? "Comparatif apps" : "App Comparison",
         url: `/${locale}/alternatives`,
       },
