@@ -72,7 +72,7 @@ const COPY: Record<Lang, Copy> = {
     placeholder: 'Je veux chiller sur une plage mexicaine avec des ruines...',
     submit: 'Imagine-le',
     submitting: 'On prépare ton voyage...',
-    cta: 'Garder & inviter mes amis',
+    cta: 'Lancer & inviter mes amis',
     ctaNote: 'Gratuit — sans carte. Invite la team, votez les dates, partagez l\'addition.',
     retry: 'Un autre pitch',
     errorGeneric: 'Une erreur est survenue. Réessaie.',
