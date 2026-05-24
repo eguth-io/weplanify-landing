@@ -63,6 +63,40 @@ export default function Footer({ footerData }: FooterProps) {
   const pathname = usePathname();
   const locale = pathname?.startsWith("/fr") ? "fr" : "en";
 
+  const useCasesColumn = {
+    title: locale === "fr" ? "Cas d'usage" : "Use cases",
+    links: [
+      {
+        label: locale === "fr" ? "Voyage entre amis" : "Trip with friends",
+        url: `/${locale}/trip-with-friends`,
+      },
+      {
+        label: locale === "fr" ? "EVJF / Bachelorette" : "Bachelorette / EVJF",
+        url: `/${locale}/bachelorette-trip`,
+      },
+      {
+        label: locale === "fr" ? "Voyage anniversaire" : "Birthday trip",
+        url: `/${locale}/birthday-trip`,
+      },
+      {
+        label: locale === "fr" ? "Voyage en famille" : "Family trip",
+        url: `/${locale}/family-trip`,
+      },
+      {
+        label: locale === "fr" ? "Road trip" : "Road trip",
+        url: `/${locale}/road-trip`,
+      },
+      {
+        label: locale === "fr" ? "Team building" : "Team building",
+        url: `/${locale}/team-building`,
+      },
+      {
+        label: locale === "fr" ? "Voyage scolaire" : "School trip",
+        url: `/${locale}/school-trip`,
+      },
+    ],
+  };
+
   const resourcesColumn = {
     title: locale === "fr" ? "Ressources" : "Resources",
     links: [
@@ -79,60 +113,12 @@ export default function Footer({ footerData }: FooterProps) {
         url: `/${locale}/travel-guides`,
       },
       {
-        label: locale === "fr" ? "Voyage entre amis" : "Trip with Friends",
-        url: `/${locale}/trip-with-friends`,
-      },
-      {
-        label: locale === "fr" ? "EVJF / Bachelorette" : "Bachelorette / EVJF",
-        url: `/${locale}/bachelorette-trip`,
-      },
-      {
-        label: locale === "fr" ? "Voyage anniversaire" : "Birthday Trip",
-        url: `/${locale}/birthday-trip`,
-      },
-      {
-        label: locale === "fr" ? "Comparatif apps" : "App Comparison",
+        label: locale === "fr" ? "Comparatif d'apps" : "App comparison",
         url: `/${locale}/alternatives`,
       },
       {
-        label: locale === "fr" ? "Voyage en famille" : "Family Trip",
-        url: `/${locale}/family-trip`,
-      },
-      {
-        label: locale === "fr" ? "Road Trip" : "Road Trip",
-        url: `/${locale}/road-trip`,
-      },
-      {
-        label: locale === "fr" ? "Team Building" : "Team Building",
-        url: `/${locale}/team-building`,
-      },
-      {
-        label: locale === "fr" ? "Voyage scolaire" : "School Trip",
-        url: `/${locale}/school-trip`,
-      },
-      {
-        label: locale === "fr" ? "Coupe du Monde 2026" : "World Cup 2026",
-        url: `/${locale}/world-cup-2026-trip-planner`,
-      },
-      {
-        label: locale === "fr" ? "Finale Ligue des Champions 2026" : "Champions League Final 2026",
-        url: `/${locale}/champions-league-final-2026-psg-arsenal`,
-      },
-      {
-        label: locale === "fr" ? "Voyage Hellfest 2026" : "Hellfest 2026",
-        url: `/${locale}/hellfest-2026-trip-planner`,
-      },
-      {
-        label: locale === "fr" ? "Voyage Tomorrowland 2026" : "Tomorrowland 2026",
-        url: `/${locale}/tomorrowland-2026-trip-planner`,
-      },
-      {
-        label: locale === "fr" ? "Voyage Éclipse 12 août 2026" : "Solar Eclipse 12 Aug 2026",
-        url: `/${locale}/solar-eclipse-2026-trip-planner`,
-      },
-      {
-        label: locale === "fr" ? "Voyage Ultra Europe 2026" : "Ultra Europe 2026",
-        url: `/${locale}/ultra-europe-2026-trip-planner`,
+        label: locale === "fr" ? "Événements 2026 →" : "2026 events →",
+        url: `/${locale}/events`,
       },
     ],
   };
@@ -167,7 +153,7 @@ export default function Footer({ footerData }: FooterProps) {
         {/* Footer Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 lg:mb-20">
           {/* Footer Columns */}
-          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-5">
             {footerData?.footerColumns?.map((column, index) => (
               <div key={index} className="flex flex-col">
                 <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
@@ -186,7 +172,22 @@ export default function Footer({ footerData }: FooterProps) {
                 ))}
               </div>
             ))}
-            {/* Resources column for SEO pages */}
+            {/* Use cases column */}
+            <div className="flex flex-col">
+              <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
+                {useCasesColumn.title}
+              </h3>
+              {useCasesColumn.links.map((link, linkIndex) => (
+                <Link
+                  key={linkIndex}
+                  href={link.url}
+                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            {/* Resources column */}
             <div className="flex flex-col">
               <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
                 {resourcesColumn.title}
