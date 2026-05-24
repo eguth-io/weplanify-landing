@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "Meilleures Applications de Voyage de Groupe Comparées (2026) — WePlanify",
       description:
-        "Comparatif côte à côte des meilleures apps voyage : Wanderlog, SquadTrip, TripIt, Stippl, Splitwise. Trouvez l'app idéale pour votre prochaine aventure entre amis.",
+        "Comparatif côte à côte des meilleures apps voyage : Wanderlog, SquadTrip, TripIt, Stippl, Splitwise. Trouve l'app idéale pour ta prochaine aventure entre amis.",
     },
   };
 
@@ -300,7 +300,7 @@ const content = {
     heroTitle: "Meilleures Applications de Voyage de Groupe en 2026",
     heroSubtitle: "Comparatif complet, côte à côte",
     heroIntro:
-      "Planifier un voyage entre amis ou en famille devrait être excitant, pas stressant. Nous avons comparé les applications de voyage de groupe les plus populaires pour vous aider à choisir le bon outil pour votre prochaine aventure. Pas de blabla — juste les faits.",
+      "Planifier un voyage entre amis ou en famille devrait être excitant, pas stressant. On a comparé les applications de voyage de groupe les plus populaires pour t'aider à choisir le bon outil pour ta prochaine aventure. Pas de blabla — juste les faits.",
     comparisonTitle: "Comparatif des Fonctionnalités",
     competitorsTitle: "Chaque Application en Détail",
     whyTitle: "Pourquoi Choisir WePlanify ?",
@@ -311,7 +311,7 @@ const content = {
       },
       {
         title: "Gratuit pour toujours",
-        desc: "Toutes les fonctionnalités principales sont gratuites, sans mur payant caché ni limite d'essai. Planifiez autant de voyages que vous voulez.",
+        desc: "Toutes les fonctionnalités principales sont gratuites, sans mur payant caché ni limite d'essai. Planifie autant de voyages que tu veux.",
       },
       {
         title: "Bilingue (EN / FR)",
@@ -322,7 +322,7 @@ const content = {
         desc: "Sondages, votes et collaboration en temps réel pour que chacun ait son mot à dire.",
       },
     ],
-    ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
+    ctaTitle: "Prêt à planifier ton prochain voyage de groupe ?",
     ctaButton: "Commencer gratuitement",
     comingSoon: "Bientôt",
     freemium: "Freemium",

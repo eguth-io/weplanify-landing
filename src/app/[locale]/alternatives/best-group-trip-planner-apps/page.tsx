@@ -364,7 +364,7 @@ const content = {
     readTime: "12 min de lecture",
     h1: "Les 10 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
     intro:
-      "Organiser un voyage de groupe est notoirement difficile. Entre la coordination des agendas, le partage des frais, le vote sur les destinations et la construction d'un itinéraire qui convient à tout le monde, il vous faut les bons outils. Nous avons testé et comparé les applications de planification de voyage de groupe les plus populaires disponibles en 2026 pour vous aider à choisir celle qui convient à votre groupe. Voici notre top 10, classé par utilité globale pour les voyages de groupe.",
+      "Organiser un voyage de groupe est notoirement difficile. Entre la coordination des agendas, le partage des frais, le vote sur les destinations et la construction d'un itinéraire qui convient à tout le monde, il te faut les bons outils. On a testé et comparé les applications de planification de voyage de groupe les plus populaires disponibles en 2026 pour t'aider à choisir celle qui convient à ton groupe. Voici notre top 10, classé par utilité globale pour les voyages de groupe.",
 
     rankingTitle: "Comment Nous Avons Classé Ces Applications",
     rankingIntro:
@@ -592,7 +592,7 @@ const content = {
       {
         question: "Quelle est la meilleure appli pour organiser un voyage de groupe ?",
         answer:
-          "Ça dépend de vos besoins. WePlanify est l'option tout-en-un la plus complète avec itinéraire, sondages, budget et listes de bagages. Wanderlog excelle pour les itinéraires sur carte. SquadTrip est idéal si vous avez besoin de paiements intégrés. TripIt est parfait pour organiser des réservations existantes.",
+          "Ça dépend de tes besoins. WePlanify est l'option tout-en-un la plus complète avec itinéraire, sondages, budget et listes de bagages. Wanderlog excelle pour les itinéraires sur carte. SquadTrip est idéal si tu as besoin de paiements intégrés. TripIt est parfait pour organiser des réservations existantes.",
       },
       {
         question: "Existe-t-il une appli gratuite pour planifier un voyage de groupe ?",
@@ -615,9 +615,9 @@ const content = {
           "WePlanify, SquadTrip et Cruzmi incluent des sondages intégrés où les membres du groupe peuvent voter sur les destinations, activités, restaurants et dates. WePlanify propose des sondages illimités avec résultats en temps réel.",
       },
     ],
-    ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
+    ctaTitle: "Prêt à planifier ton prochain voyage de groupe ?",
     ctaText:
-      "Arrêtez de jongler entre plusieurs applications et tableurs. WePlanify réunit planification d'itinéraire, sondages de groupe, suivi de budget, listes de bagages et recommandations alimentées par l'IA dans une seule plateforme gratuite.",
+      "Arrête de jongler entre plusieurs applications et tableurs. WePlanify réunit planification d'itinéraire, sondages de groupe, suivi de budget, listes de bagages et recommandations alimentées par l'IA dans une seule plateforme gratuite.",
     ctaButton: "Commencer à planifier gratuitement",
     diy: "DIY",
     freemium: "Freemium",
