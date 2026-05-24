@@ -103,7 +103,7 @@ const events: EventEntry[] = [
 const content = {
   en: {
     meta: {
-      title: "2026 Event Trip Planners — Free, for Groups | WePlanify",
+      title: "2026 Event Trip Planners — Free, for Groups",
       description:
         "Plan your 2026 event trip with WePlanify. Dedicated free planners for the FIFA World Cup, Champions League Final, Tomorrowland, Hellfest, Ultra Europe and the total solar eclipse — built for groups of fans who travel together.",
     },
@@ -129,7 +129,7 @@ const content = {
   },
   fr: {
     meta: {
-      title: "Planificateurs Voyage Événement 2026 — Gratuit, pour les Groupes | WePlanify",
+      title: "Planificateurs Voyage Événement 2026 — Gratuit, pour les Groupes",
       description:
         "Planifie ton voyage événement 2026 avec WePlanify. Planificateurs gratuits dédiés pour la Coupe du Monde FIFA, la finale Ligue des Champions, Tomorrowland, Hellfest, Ultra Europe et l'éclipse solaire totale — conçus pour les groupes de fans qui voyagent ensemble.",
     },

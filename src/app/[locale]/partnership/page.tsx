@@ -15,7 +15,7 @@ const SITE_URL = "https://www.weplanify.com";
 
 const partnershipMeta = {
   en: {
-    title: "Partner with WePlanify — Partnership Opportunities",
+    title: "Become a Partner — Partnership Opportunities",
     description:
       "Work with WePlanify. Whether you're a travel provider, media partner, creator, or building an integration — tell us about your project and our team will get back to you.",
     h1: "Let's build something together",
@@ -23,7 +23,7 @@ const partnershipMeta = {
       "Tell us about your project. Affiliates, media, travel providers, creators, integrations — we're open.",
   },
   fr: {
-    title: "Partenariat WePlanify — Devenir Partenaire",
+    title: "Devenir Partenaire — Programme de Partenariat",
     description:
       "Travaillez avec WePlanify. Que vous soyez un acteur du voyage, un média, un créateur ou que vous souhaitiez intégrer notre produit — parlez-nous de votre projet.",
     h1: "Construisons quelque chose ensemble",
