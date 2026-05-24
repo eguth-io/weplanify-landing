@@ -63,6 +63,74 @@ export default function Footer({ footerData }: FooterProps) {
   const pathname = usePathname();
   const locale = pathname?.startsWith("/fr") ? "fr" : "en";
 
+  const featuresColumn = {
+    title: locale === "fr" ? "Fonctionnalités" : "Features",
+    links: [
+      {
+        label: locale === "fr" ? "Planification (manuelle ou IA)" : "Planning (manual or AI)",
+        url: `/${locale}/features/planning`,
+      },
+      {
+        label: locale === "fr" ? "Sondages" : "Group polls",
+        url: `/${locale}/features/polls`,
+      },
+      {
+        label: locale === "fr" ? "Collaboration" : "Collaboration",
+        url: `/${locale}/features/collaboration`,
+      },
+      {
+        label: locale === "fr" ? "Découverte" : "Discovery",
+        url: `/${locale}/features/explore`,
+      },
+      {
+        label: locale === "fr" ? "Itinéraire" : "Itinerary",
+        url: `/${locale}/features/itinerary`,
+      },
+      {
+        label: locale === "fr" ? "Budget partagé" : "Shared budget",
+        url: `/${locale}/features/budget`,
+      },
+      {
+        label: locale === "fr" ? "Listes de bagages" : "Packing lists",
+        url: `/${locale}/features/packing`,
+      },
+      {
+        label: locale === "fr" ? "Transport" : "Transport",
+        url: `/${locale}/features/transport`,
+      },
+      {
+        label: locale === "fr" ? "Souvenirs" : "Memories",
+        url: `/${locale}/features/memories`,
+      },
+    ],
+  };
+
+  const companyColumn = {
+    title: locale === "fr" ? "Entreprise" : "Company",
+    links: [
+      {
+        label: locale === "fr" ? "À propos" : "About",
+        url: `/${locale}/about`,
+      },
+      {
+        label: "Contact",
+        url: `/${locale}/contact`,
+      },
+      {
+        label: "Blog",
+        url: `/${locale}/blog`,
+      },
+      {
+        label: locale === "fr" ? "Partenariat" : "Partnership",
+        url: `/${locale}/partnership`,
+      },
+      {
+        label: "FAQ",
+        url: `/${locale}/faq`,
+      },
+    ],
+  };
+
   const useCasesColumn = {
     title: locale === "fr" ? "Cas d'usage" : "Use cases",
     links: [
@@ -153,95 +221,23 @@ export default function Footer({ footerData }: FooterProps) {
         {/* Footer Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 lg:mb-20">
           {/* Footer Columns */}
-          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-5">
-            {footerData?.footerColumns?.map((column, index) => (
-              <div key={index} className="flex flex-col">
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+            {[featuresColumn, companyColumn, useCasesColumn, resourcesColumn].map((column) => (
+              <div key={column.title} className="flex flex-col">
                 <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
                   {column.title}
                 </h3>
-                {column.links?.map((link, linkIndex) => (
-                  <a
-                    key={linkIndex}
-                    href={link.url || "#"}
+                {column.links.map((link) => (
+                  <Link
+                    key={link.url}
+                    href={link.url}
                     className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                    target={link.isExternal ? "_blank" : undefined}
-                    rel={link.isExternal ? "noopener noreferrer" : undefined}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             ))}
-            {/* Use cases column */}
-            <div className="flex flex-col">
-              <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
-                {useCasesColumn.title}
-              </h3>
-              {useCasesColumn.links.map((link, linkIndex) => (
-                <Link
-                  key={linkIndex}
-                  href={link.url}
-                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-            {/* Resources column */}
-            <div className="flex flex-col">
-              <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
-                {resourcesColumn.title}
-              </h3>
-              {resourcesColumn.links.map((link, linkIndex) => (
-                <Link
-                  key={linkIndex}
-                  href={link.url}
-                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-            {/* Company column — only if Sanity doesn't already provide one */}
-            {!footerData?.footerColumns?.some(
-              (col) => col.title?.toLowerCase() === "company" || col.title?.toLowerCase() === "entreprise"
-            ) && (
-              <div className="flex flex-col">
-                <h3 className="text-[#001E13] text-base font-karla font-bold mb-6">
-                  {locale === "fr" ? "Entreprise" : "Company"}
-                </h3>
-                <Link
-                  href={`/${locale}/about`}
-                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                >
-                  {locale === "fr" ? "À propos" : "About"}
-                </Link>
-                <Link
-                  href={`/${locale}/contact`}
-                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                >
-                  Contact
-                </Link>
-                <Link
-                  href={`/${locale}/partnership`}
-                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                >
-                  {locale === "fr" ? "Partenaires" : "Partners"}
-                </Link>
-                <Link
-                  href={`/${locale}/blog`}
-                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                >
-                  Blog
-                </Link>
-                <Link
-                  href={`/${locale}/faq`}
-                  className="text-[#001E13] text-base font-karla mb-4 hover:text-[#F6391A] transition-colors"
-                >
-                  FAQ
-                </Link>
-              </div>
-            )}
           </div>
 
           {/* Footer CTA Section */}
