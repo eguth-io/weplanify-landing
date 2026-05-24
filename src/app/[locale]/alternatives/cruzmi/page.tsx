@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "Alternative à Cruzmi : Voyage de Groupe Collaboratif (Gratuit, 2026)",
       description:
-        "Alternative à Cruzmi pour vos voyages de groupe entre amis. WePlanify : itinéraires collaboratifs, sondages, budget partagé, packing list — gratuit, bilingue FR/EN.",
+        "Alternative à Cruzmi pour tes voyages de groupe entre amis. WePlanify : itinéraires collaboratifs, sondages, budget partagé, packing list — gratuit, bilingue FR/EN.",
     },
   };
 
@@ -252,7 +252,7 @@ const content = {
     heroSubtitle: "Comparatif pour le marché français",
     heroTitle: "WePlanify vs Cruzmi — Meilleur Organisateur de Voyage de Groupe Français ?",
     heroIntro:
-      "Vous cherchez une application de voyage de groupe en français ? Cruzmi est une application mobile francophone pour organiser des événements de groupe, mais elle n'a pas été conçue spécifiquement pour le voyage. WePlanify est une application web bilingue construite de A à Z pour la planification de voyage. Voici comment elles se comparent.",
+      "Tu cherches une application de voyage de groupe en français ? Cruzmi est une application mobile francophone pour organiser des événements de groupe, mais elle n'a pas été conçue spécifiquement pour le voyage. WePlanify est une application web bilingue construite de A à Z pour la planification de voyage. Voici comment elles se comparent.",
     verdictTitle: "Verdict Rapide",
     verdictText:
       "Cruzmi est une application mobile française pour la coordination d'événements de groupe en général. Elle ne propose pas d'itinéraires jour par jour, de découverte d'activités, ni de listes de bagages. WePlanify est une application web bilingue conçue spécifiquement pour la planification de voyage avec des itinéraires collaboratifs, des sondages de groupe, des budgets partagés et des listes de bagages.",
@@ -284,34 +284,34 @@ const content = {
       },
       {
         title: "Accès web instantané",
-        desc: "Aucun téléchargement requis. WePlanify fonctionne dans n'importe quel navigateur sur ordinateur, tablette ou mobile — partagez un lien et tout le monde peut participer en quelques secondes, quel que soit l'appareil.",
+        desc: "Aucun téléchargement requis. WePlanify fonctionne dans n'importe quel navigateur sur ordinateur, tablette ou mobile — partage un lien et tout le monde peut participer en quelques secondes, quel que soit l'appareil.",
       },
       {
         title: "Vrais itinéraires collaboratifs",
-        desc: "Construisez ensemble un planning de voyage détaillé jour par jour avec des sondages, des commentaires et des mises à jour en temps réel. Tout le monde contribue, tout le monde vote, et le groupe prend ses décisions plus rapidement.",
+        desc: "Construis ensemble un planning de voyage détaillé jour par jour avec des sondages, des commentaires et des mises à jour en temps réel. Tout le monde contribue, tout le monde vote, et le groupe prend ses décisions plus rapidement.",
       },
     ],
     whoTitle: "Pour Qui Choisir Quoi ?",
     whoCruzmi:
-      "Choisissez Cruzmi si vous organisez un événement de groupe francophone qui n'est pas un voyage — un anniversaire, une sortie le week-end ou un dîner entre amis. C'est un outil d'événements généraliste, pas un planificateur de voyage.",
+      "Choisis Cruzmi si tu organises un événement de groupe francophone qui n'est pas un voyage — un anniversaire, une sortie le week-end ou un dîner entre amis. C'est un outil d'événements généraliste, pas un planificateur de voyage.",
     whoWeplanify:
-      "Choisissez WePlanify si vous planifiez un vrai voyage — qu'il s'agisse d'un week-end ou d'une aventure de deux semaines — et que vous avez besoin d'itinéraires structurés jour par jour, d'un suivi de budget, de listes de bagages, de découverte d'activités et de sondages de groupe. Particulièrement précieux pour les groupes bilingues qui ont besoin du français et de l'anglais.",
+      "Choisis WePlanify si tu planifies un vrai voyage — qu'il s'agisse d'un week-end ou d'une aventure de deux semaines — et que tu as besoin d'itinéraires structurés jour par jour, d'un suivi de budget, de listes de bagages, de découverte d'activités et de sondages de groupe. Particulièrement précieux pour les groupes bilingues qui ont besoin du français et de l'anglais.",
     faqTitle: "Questions Fréquentes",
     faq: [
       {
         q: "Cruzmi est-il mieux pour les événements non-voyage ?",
-        a: "Cruzmi a une portée plus large qui inclut les fêtes, les sorties et les dîners de groupe. Si votre objectif principal est l'organisation d'événements entre amis francophones plutôt que la planification de voyage, Cruzmi couvre ce cas d'usage.",
+        a: "Cruzmi a une portée plus large qui inclut les fêtes, les sorties et les dîners de groupe. Si ton objectif principal est l'organisation d'événements entre amis francophones plutôt que la planification de voyage, Cruzmi couvre ce cas d'usage.",
       },
       {
         q: "WePlanify fonctionne-t-il sur mobile ?",
-        a: "Oui. WePlanify est une application web responsive qui fonctionne dans n'importe quel navigateur mobile. Il n'y a pas d'application native à télécharger — ouvrez le lien et commencez à planifier. Une application mobile dédiée est prévue.",
+        a: "Oui. WePlanify est une application web responsive qui fonctionne dans n'importe quel navigateur mobile. Il n'y a pas d'application native à télécharger — ouvre le lien et commence à planifier. Une application mobile dédiée est prévue.",
       },
       {
         q: "Quelle application est la meilleure pour un voyage entre amis ?",
         a: "Pour un voyage spécifiquement, WePlanify offre plus de fonctionnalités orientées voyage : itinéraires collaboratifs jour par jour, découverte d'activités, listes de bagages et budgets partagés. Il est aussi bilingue, ce qui le rend idéal pour les groupes mixtes anglais/français.",
       },
     ],
-    ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
+    ctaTitle: "Prêt à planifier ton prochain voyage de groupe ?",
     ctaButton: "Commencer gratuitement",
     crossLinksTitle: "Comparer avec d'Autres Applications",
     backToAlternatives: "Voir tous les comparatifs",

@@ -942,7 +942,7 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
         status: 'Voter maintenant',
         single: 'Choix unique',
         options: 'options',
-        yourVote: 'Votre vote',
+        yourVote: 'Ton vote',
         votes: 'votes',
         vote: 'vote',
         sendReminders: 'Rappels',

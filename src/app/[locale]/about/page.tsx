@@ -22,12 +22,12 @@ export function generateStaticParams() {
 
 const aboutMeta = {
   en: {
-    title: "About WePlanify — The Free Group Trip Planner for Friends",
+    title: "About Us — The Free Group Trip Planner for Friends",
     description:
       "WePlanify is the free, collaborative trip planner for friends, families and teams. Discover the story, the mission and the team behind real-time group travel planning.",
   },
   fr: {
-    title: "À Propos de WePlanify — Le Planificateur de Voyage de Groupe",
+    title: "À Propos — Le Planificateur de Voyage de Groupe",
     description:
       "WePlanify est le planificateur de voyage de groupe gratuit et collaboratif pour amis, familles et équipes. Découvrez l'histoire, la mission et l'équipe derrière l'app.",
   },
@@ -246,12 +246,12 @@ export default async function AboutPage({ params }: Props) {
             <h2 className="text-[#001E13] text-[36px] lg:text-[60px] font-londrina-solid leading-[1.05] mb-6">
               {isEn
                 ? "Your next trip is waiting."
-                : "Votre prochain voyage vous attend."}
+                : "Ton prochain voyage t'attend."}
             </h2>
             <p className="text-[#001E13]/60 text-base lg:text-lg font-karla leading-relaxed mb-10 max-w-[500px] mx-auto">
               {isEn
                 ? "Stop planning in group chats. Start planning together."
-                : "Arrêtez de planifier dans des chats de groupe. Commencez à planifier ensemble."}
+                : "Arrête de planifier dans des chats de groupe. Commence à planifier ensemble."}
             </p>
             <div className="flex justify-center">
               <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`}>

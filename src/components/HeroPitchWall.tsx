@@ -60,8 +60,8 @@ const COPY: Record<Lang, Copy> = {
     placeholder: 'I want to chill on a Mexican beach with ruins nearby...',
     submit: 'Imagine it',
     submitting: 'Crafting your trip...',
-    cta: 'Plan this trip',
-    ctaNote: 'Dates, stops, everything stays editable after signup',
+    cta: 'Save & invite friends',
+    ctaNote: 'Free — no card. Invite the group, vote on dates, split the bill.',
     retry: 'Another pitch',
     errorGeneric: 'Something went wrong. Please try again.',
     errorRateLimit: 'Too many tries. Please wait a minute.',
@@ -72,8 +72,8 @@ const COPY: Record<Lang, Copy> = {
     placeholder: 'Je veux chiller sur une plage mexicaine avec des ruines...',
     submit: 'Imagine-le',
     submitting: 'On prépare ton voyage...',
-    cta: 'Planifier ce voyage',
-    ctaNote: 'Dates, étapes, tout reste modifiable après inscription',
+    cta: 'Lancer & inviter mes amis',
+    ctaNote: 'Gratuit — sans carte. Invite la team, votez les dates, partagez l\'addition.',
     retry: 'Un autre pitch',
     errorGeneric: 'Une erreur est survenue. Réessaie.',
     errorRateLimit: 'Trop de tentatives. Attends une minute.',
@@ -798,7 +798,7 @@ function PolaroidDeckCard({
 
       <div className="text-center lg:text-left w-full">
         <div className="font-nanum-pen text-[#EEF899] text-xl lg:text-2xl mb-0">
-          {lang === 'fr' ? 'Et si tu allais à…' : 'What about…'}
+          {lang === 'fr' ? 'Et si tu découvrais…' : 'What about…'}
         </div>
         <h2 className="font-londrina-solid text-[#FFFBF5] text-5xl lg:text-[88px] xl:text-[104px] leading-[0.9] mb-2 drop-shadow-[0_4px_28px_rgba(0,0,0,0.55)] break-words">
           {preview.destination}

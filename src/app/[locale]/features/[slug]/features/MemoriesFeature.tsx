@@ -48,8 +48,8 @@ const translations = {
     },
     travelBook: {
       badge: "Généré par IA",
-      title: "Votre Travel Book personnel",
-      subtitle: "L'IA compile vos meilleurs moments dans un magnifique livre de voyage",
+      title: "Ton Travel Book personnel",
+      subtitle: "L'IA compile tes meilleurs moments dans un magnifique livre de voyage",
       coverTitle: "Notre voyage au Japon",
       coverSubtitle: "Mars 2024",
       introText: "12 jours inoubliables à travers le pays du soleil levant...",
@@ -69,24 +69,24 @@ const translations = {
     },
     features: {
       title: "Bien plus qu'un album photo",
-      subtitle: "Toute l'histoire de votre voyage, automatiquement organisée",
+      subtitle: "Toute l'histoire de ton voyage, automatiquement organisée",
       items: [
         { title: "Album collaboratif", description: "Tout le groupe contribue, l'album se construit ensemble en temps réel" },
-        { title: "Carte interactive", description: "Visualisez votre parcours avec les photos géolocalisées" },
-        { title: "Travel Book IA", description: "Génération automatique d'un récap stylé de votre aventure" },
-        { title: "Partage facile", description: "Privé, groupe ou public - vous choisissez qui voit vos souvenirs" }
+        { title: "Carte interactive", description: "Visualise ton parcours avec les photos géolocalisées" },
+        { title: "Travel Book IA", description: "Génération automatique d'un récap stylé de ton aventure" },
+        { title: "Partage facile", description: "Privé, groupe ou public - tu choisis qui voit tes souvenirs" }
       ]
     },
     cta: {
-      title: "Prêt à immortaliser vos aventures ?",
-      subtitle: "Rejoignez des milliers de voyageurs qui préservent leurs souvenirs avec WePlanify."
+      title: "Prêt à immortaliser tes aventures ?",
+      subtitle: "Rejoins des milliers de voyageurs qui préservent leurs souvenirs avec WePlanify."
     },
     faq: [
-      { question: "Comment ajouter des photos à mon voyage ?", answer: "Pendant ou après votre voyage, ajoutez simplement vos photos et vidéos à chaque jour ou lieu de votre itinéraire. L'app organise automatiquement vos médias par date et localisation GPS." },
+      { question: "Comment ajouter des photos à mon voyage ?", answer: "Pendant ou après ton voyage, ajoute simplement tes photos et vidéos à chaque jour ou lieu de ton itinéraire. L'app organise automatiquement tes médias par date et localisation GPS." },
       { question: "Puis-je créer un album partagé avec mon groupe ?", answer: "Oui ! Tous les participants du voyage peuvent contribuer leurs photos. L'album collaboratif se construit automatiquement et chacun peut voir les souvenirs des autres en temps réel." },
-      { question: "Comment fonctionne le récapitulatif automatique ?", answer: "À la fin de votre voyage, l'IA génère un 'Travel Book' avec vos meilleures photos, une carte de votre parcours, des statistiques (km parcourus, pays visités) et les moments forts." },
-      { question: "Puis-je partager mes souvenirs publiquement ?", answer: "Vous choisissez : gardez vos souvenirs privés, partagez-les uniquement avec votre groupe, ou publiez-les sur votre profil public pour inspirer d'autres voyageurs." },
-      { question: "Les photos sont-elles stockées en haute qualité ?", answer: "Oui, nous conservons vos photos en qualité originale. Vous pouvez les télécharger à tout moment ou les exporter vers Google Photos, iCloud ou Dropbox." }
+      { question: "Comment fonctionne le récapitulatif automatique ?", answer: "À la fin de ton voyage, l'IA génère un 'Travel Book' avec tes meilleures photos, une carte de ton parcours, des statistiques (km parcourus, pays visités) et les moments forts." },
+      { question: "Puis-je partager mes souvenirs publiquement ?", answer: "Tu choisis : garde tes souvenirs privés, partage-les uniquement avec ton groupe, ou publie-les sur ton profil public pour inspirer d'autres voyageurs." },
+      { question: "Les photos sont-elles stockées en haute qualité ?", answer: "Oui, nous conservons tes photos en qualité originale. Tu peux les télécharger à tout moment ou les exporter vers Google Photos, iCloud ou Dropbox." }
     ]
   },
   en: {

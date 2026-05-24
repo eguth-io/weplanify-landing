@@ -28,7 +28,7 @@ export function generateStaticParams() {
 const content = {
   en: {
     meta: {
-      title: "Birthday Trip Planner — Plan the Ultimate Birthday Getaway | WePlanify",
+      title: "Birthday Trip Planner — Plan the Ultimate Birthday Getaway",
       description:
         "Plan your birthday trip with WePlanify, the free birthday trip planner. Coordinate dates with your friends, vote on the destination, split the budget, and build a day-by-day itinerary — perfect for 30th, 40th, 50th milestones or any birthday getaway.",
     },
@@ -244,16 +244,16 @@ const content = {
   },
   fr: {
     meta: {
-      title: "Voyage Anniversaire — Organisez un Anniversaire Inoubliable | WePlanify",
+      title: "Voyage Anniversaire — Organise un Anniversaire Inoubliable",
       description:
-        "Organisez votre voyage anniversaire avec WePlanify, l'application gratuite pour planifier un week-end anniversaire entre amis. Coordonnez les dates, votez pour la destination, gérez la cagnotte commune et créez un programme jour par jour — idéal pour les 30, 40, 50 ans ou n'importe quel anniversaire à fêter ailleurs.",
+        "Organise ton voyage anniversaire avec WePlanify, l'application gratuite pour planifier un week-end anniversaire entre amis. Coordonne les dates, vote pour la destination, gère la cagnotte commune et crée un programme jour par jour — idéal pour les 30, 40, 50 ans ou n'importe quel anniversaire à fêter ailleurs.",
     },
     readTime: "9 min de lecture",
     hero: {
       tag: "Voyage anniversaire",
       title: "Organisez le Voyage\nAnniversaire Parfait",
       description:
-        "30, 40, 50 ans — ou juste envie de fêter votre anniversaire ailleurs ? WePlanify est l'application gratuite qui transforme « il faudrait qu'on parte fêter ton anniv » en voyage vraiment réservé.",
+        "30, 40, 50 ans — ou juste envie de fêter ton anniversaire ailleurs ? WePlanify est l'application gratuite qui transforme « il faudrait qu'on parte fêter ton anniv » en voyage vraiment réservé.",
       cta: "Commencer gratuitement",
     },
 
@@ -262,20 +262,20 @@ const content = {
       paragraphs: [
         "Un voyage anniversaire est l'un des meilleurs cadeaux qu'on puisse se faire — ou faire à quelqu'un qu'on aime. Anniversaire-clé (30, 40, 50, 60 ans) ou simple week-end pour marquer le coup, partir avec les bonnes personnes vaut largement la fête à la maison. Mais organiser un voyage anniversaire pour un groupe de 4 à 15 amis vient avec son lot de chaos discret : trouver une date qui convient, se mettre d'accord sur la destination, choisir un Airbnb que tout le monde peut se payer, et déterminer qui va vraiment réserver le restaurant.",
         "Les meilleurs voyages anniversaire partagent trois choses : ils reflètent les goûts réels de la personne fêtée (pas ce que le groupe croit qu'elle devrait vouloir), ils respectent le budget de chacun pour que personne ne se désiste à la dernière minute, et ils ont juste assez de structure pour éviter qu'on se retrouve à 20h au coin d'une rue à débattre de l'endroit où manger. L'objectif n'est pas de planifier chaque heure — c'est d'enlever les frictions pour que le voyage lui-même reste spontané.",
-        "C'est exactement pour ça que WePlanify a été conçu. Un seul espace partagé où votre groupe peut voter pour la destination, fixer une date, suivre une cagnotte commune et construire un programme jour par jour. Que la personne fêtée organise son propre voyage avec ses amis ou qu'un conjoint planifie une surprise en secret, tout vit au même endroit — pas de discussions éparpillées sur WhatsApp, pas de tableurs, pas besoin de courir après 40 € trois semaines plus tard.",
+        "C'est exactement pour ça que WePlanify a été conçu. Un seul espace partagé où ton groupe peut voter pour la destination, fixer une date, suivre une cagnotte commune et construire un programme jour par jour. Que la personne fêtée organise son propre voyage avec ses amis ou qu'un conjoint planifie une surprise en secret, tout vit au même endroit — pas de discussions éparpillées sur WhatsApp, pas de tableurs, pas besoin de courir après 40 € trois semaines plus tard.",
       ],
     },
 
     painPoints: {
       title: "Pourquoi les Voyages Anniversaire Finissent Toujours Aux Oubliettes",
       subtitle:
-        "Vous en parlez depuis des mois : « on part pour tes 30 ans ». Il reste trois semaines et rien n'est réservé.",
+        "Tu en parles depuis des mois : « on part pour tes 30 ans ». Il reste trois semaines et rien n'est réservé.",
       items: [
         {
           emoji: "📅",
           title: "Personne ne S'engage sur une Date",
           description:
-            "Vous proposez un week-end en octobre. Trois amis répondent « peut-être », deux disent « je vérifie » et un disparaît. Le temps que tout le monde réponde, les vols ont doublé et votre Airbnb préféré est parti. Les sondages de dates WePlanify donnent au groupe un délai clair pour voter, et le résultat est instantané — fini les relances et les MP pour rappeler.",
+            "Tu proposes un week-end en octobre. Trois amis répondent « peut-être », deux disent « je vérifie » et un disparaît. Le temps que tout le monde réponde, les vols ont doublé et ton Airbnb préféré est parti. Les sondages de dates WePlanify donnent au groupe un délai clair pour voter, et le résultat est instantané — fini les relances et les MP pour rappeler.",
         },
         {
           emoji: "🗺️",
@@ -287,13 +287,13 @@ const content = {
           emoji: "💸",
           title: "Les Conversations Gênantes sur l'Argent",
           description:
-            "Est-ce que la personne fêtée paie ? On lui offre sa part ? Qui couvre le dîner ? Un ami Lydia 120 €, un autre paie l'acompte Airbnb, un troisième achète le gâteau — et trois semaines après le voyage vous essayez encore de réconcilier qui doit quoi. La cagnotte partagée WePlanify enregistre chaque dépense en temps réel et calcule instantanément qui doit combien à qui.",
+            "Est-ce que la personne fêtée paie ? On lui offre sa part ? Qui couvre le dîner ? Un ami Lydia 120 €, un autre paie l'acompte Airbnb, un troisième achète le gâteau — et trois semaines après le voyage tu essaies encore de réconcilier qui doit quoi. La cagnotte partagée WePlanify enregistre chaque dépense en temps réel et calcule instantanément qui doit combien à qui.",
         },
         {
           emoji: "🍽️",
           title: "Le Chaos du Jour J",
           description:
-            "Vous arrivez vendredi soir sans réservation pour le dîner. Samedi après-midi personne ne sait à quelle heure part le bateau. Dimanche au brunch la moitié du groupe a la gueule de bois et l'autre veut faire la randonnée que vous n'avez pas réservée. Un programme partagé jour par jour permet à tout le monde de se réveiller en sachant ce qui est prévu — tout en gardant de la place pour l'imprévu.",
+            "Tu arrives vendredi soir sans réservation pour le dîner. Samedi après-midi personne ne sait à quelle heure part le bateau. Dimanche au brunch la moitié du groupe a la gueule de bois et l'autre veut faire la randonnée que tu n'as pas réservée. Un programme partagé jour par jour permet à tout le monde de se réveiller en sachant ce qui est prévu — tout en gardant de la place pour l'imprévu.",
         },
       ],
     },
@@ -307,25 +307,25 @@ const content = {
           emoji: "🗳️",
           title: "Sondages pour Dates & Destinations",
           description:
-            "Mettez fin à la boucle infinie du « ça arrange tout le monde ? ». Créez un sondage avec les trois week-ends possibles, partagez-le au groupe et regardez les réponses arriver. Pareil pour la destination — trois à cinq options, un seul vainqueur. Le vote anonyme permet même aux plus discrets de s'exprimer. Les vraies préférences du groupe, pas juste la voix la plus forte du chat.",
+            "Mets fin à la boucle infinie du « ça arrange tout le monde ? ». Crée un sondage avec les trois week-ends possibles, partage-le au groupe et regarde les réponses arriver. Pareil pour la destination — trois à cinq options, un seul vainqueur. Le vote anonyme permet même aux plus discrets de s'exprimer. Les vraies préférences du groupe, pas juste la voix la plus forte du chat.",
         },
         {
           emoji: "💰",
           title: "Cagnotte d'Anniversaire Partagée",
           description:
-            "Définissez un budget commun, enregistrez chaque dépense au fur et à mesure, et laissez WePlanify calculer qui doit quoi. Décidez dès le départ si la personne fêtée paie sa part ou si le groupe la couvre — les deux fonctionnent. L'acompte Airbnb, l'addition du restaurant, le gâteau, la bouteille de champagne : tout est tracké, tout est soldé en un tap à la fin du voyage.",
+            "Définis un budget commun, enregistre chaque dépense au fur et à mesure, et laisse WePlanify calculer qui doit quoi. Décide dès le départ si la personne fêtée paie sa part ou si le groupe la couvre — les deux fonctionnent. L'acompte Airbnb, l'addition du restaurant, le gâteau, la bouteille de champagne : tout est tracké, tout est soldé en un tap à la fin du voyage.",
         },
         {
           emoji: "🗓️",
           title: "Programme Jour par Jour",
           description:
-            "Construisez un planning partagé pour tout le week-end — dîner vendredi, brunch samedi, sortie bateau, restaurant surprise, randonnée du dimanche matin. Ajoutez horaires, lieux, notes, liens. Tout le monde se réveille en sachant la suite, mais rien n'est figé — glissez-déposez si les plans changent. L'itinéraire est la source unique de vérité, plus de « attends, on se retrouve où déjà ? ».",
+            "Construis un planning partagé pour tout le week-end — dîner vendredi, brunch samedi, sortie bateau, restaurant surprise, randonnée du dimanche matin. Ajoute horaires, lieux, notes, liens. Tout le monde se réveille en sachant la suite, mais rien n'est figé — glisse-dépose si les plans changent. L'itinéraire est la source unique de vérité, plus de « attends, on se retrouve où déjà ? ».",
         },
         {
           emoji: "🎁",
           title: "Mode Privé pour les Surprises",
           description:
-            "Vous organisez un voyage surprise pour votre conjoint, un parent ou votre meilleur ami ? Créez un groupe de planification privé sans eux. Coordonnez les dates, réservez l'Airbnb, planifiez les activités — tout reste invisible pour la personne fêtée. Quand vous êtes prêts, révélez le voyage et ajoutez-la à l'espace pour qu'elle voie tout ce qui a été organisé.",
+            "Tu organises un voyage surprise pour ton conjoint, un parent ou ton meilleur ami ? Crée un groupe de planification privé sans eux. Coordonne les dates, réserve l'Airbnb, planifie les activités — tout reste invisible pour la personne fêtée. Quand tu es prêt, révèle le voyage et ajoute-la à l'espace pour qu'elle voie tout ce qui a été organisé.",
         },
       ],
     },
@@ -350,7 +350,7 @@ const content = {
           emoji: "🍷",
           title: "Week-end Vignobles",
           description:
-            "Toscane, Bordeaux, vallée du Douro, Napa, Mendoza — le voyage vignobles est le grand classique des 40 ans. Logez dans un agriturismo ou un domaine boutique, réservez une dégustation par jour et faites des dîners qui s'éternisent. Les petits groupes (4 à 8) marchent mieux. Servez-vous de la cagnotte partagée pour les dégustations et les dîners, parce que ça monte vite.",
+            "Toscane, Bordeaux, vallée du Douro, Napa, Mendoza — le voyage vignobles est le grand classique des 40 ans. Loge dans un agriturismo ou un domaine boutique, réserve une dégustation par jour et fais des dîners qui s'éternisent. Les petits groupes (4 à 8) marchent mieux. Sers-toi de la cagnotte partagée pour les dégustations et les dîners, parce que ça monte vite.",
         },
         {
           emoji: "🏔️",
@@ -362,34 +362,34 @@ const content = {
           emoji: "🎲",
           title: "Vegas / Grande Ville Festive",
           description:
-            "Las Vegas, Miami, Ibiza, Berlin — le voyage anniversaire « gros plan ». Clubs, dayclubs, dîners chics, nuits tardives. Surtout pour les 21, 25 et 30 ans, ou n'importe quel anniversaire où le groupe est partant pour un vrai défoulement. Pré-réservez tout (tables, transferts, suite) parce que la logistique du jour J dans une ville festive vous bouffe vivants.",
+            "Las Vegas, Miami, Ibiza, Berlin — le voyage anniversaire « gros plan ». Clubs, dayclubs, dîners chics, nuits tardives. Surtout pour les 21, 25 et 30 ans, ou n'importe quel anniversaire où le groupe est partant pour un vrai défoulement. Pré-réserve tout (tables, transferts, suite) parce que la logistique du jour J dans une ville festive te bouffe vivant.",
         },
       ],
     },
 
     timeline: {
       title: "Quand Commencer à Planifier",
-      subtitle: "Un calendrier simple pour caler votre voyage anniversaire sans panique de dernière minute.",
+      subtitle: "Un calendrier simple pour caler ton voyage anniversaire sans panique de dernière minute.",
       milestones: [
         {
           time: "4 à 6 mois avant",
           title: "Fixer la Date & la Liste",
-          description: "Sondez le groupe pour les week-ends disponibles. Finalisez qui vient. Créez votre voyage WePlanify et invitez tout le monde — y compris la personne fêtée si ce n'est pas une surprise.",
+          description: "Sonde le groupe pour les week-ends disponibles. Finalise qui vient. Crée ton voyage WePlanify et invite tout le monde — y compris la personne fêtée si ce n'est pas une surprise.",
         },
         {
           time: "3 mois avant",
           title: "Choisir la Destination & Réserver",
-          description: "Votez pour la destination. Réservez les vols et l'hébergement pendant que les prix restent raisonnables. Mettez en place la cagnotte partagée avec les premiers acomptes.",
+          description: "Vote pour la destination. Réserve les vols et l'hébergement pendant que les prix restent raisonnables. Mets en place la cagnotte partagée avec les premiers acomptes.",
         },
         {
           time: "1 mois avant",
           title: "Planifier Activités & Réservations",
-          description: "Lancez les sondages pour les activités. Réservez les restaurants (surtout le grand dîner d'anniversaire). Construisez le programme jour par jour. Commandez décos, cadeaux ou tenues assorties.",
+          description: "Lance les sondages pour les activités. Réserve les restaurants (surtout le grand dîner d'anniversaire). Construis le programme jour par jour. Commande décos, cadeaux ou tenues assorties.",
         },
         {
           time: "1 semaine avant",
           title: "Tout Reconfirmer",
-          description: "Reconfirmez toutes les réservations. Soldez les contributions cagnotte en attente. Partagez l'itinéraire final. Vérifiez que quelqu'un apporte les bougies.",
+          description: "Reconfirme toutes les réservations. Solde les contributions cagnotte en attente. Partage l'itinéraire final. Vérifie que quelqu'un apporte les bougies.",
         },
       ],
     },
@@ -422,15 +422,15 @@ const content = {
       items: [
         {
           q: "WePlanify est-il gratuit pour organiser un voyage anniversaire ?",
-          a: "Oui, 100% gratuit. Créez un voyage, invitez le groupe, lancez des sondages, construisez l'itinéraire, suivez la cagnotte partagée — pas de période d'essai, pas de carte bancaire, pas de frais cachés. Toute l'application voyage anniversaire fonctionne sans payer.",
+          a: "Oui, 100% gratuit. Crée un voyage, invite le groupe, lance des sondages, construis l'itinéraire, suis la cagnotte partagée — pas de période d'essai, pas de carte bancaire, pas de frais cachés. Toute l'application voyage anniversaire fonctionne sans payer.",
         },
         {
           q: "Puis-je organiser un voyage anniversaire surprise sans que la personne le voie ?",
-          a: "Oui. Créez un groupe de planification privé et n'y invitez pas la personne fêtée. Coordonnez les dates, votez pour la destination, réservez l'Airbnb, planifiez les activités — tout reste invisible. Au moment de la révélation, vous pouvez l'ajouter au voyage pour qu'elle voie l'itinéraire complet et tout ce qui a été organisé.",
+          a: "Oui. Crée un groupe de planification privé et n'y invite pas la personne fêtée. Coordonne les dates, vote pour la destination, réserve l'Airbnb, planifie les activités — tout reste invisible. Au moment de la révélation, tu peux l'ajouter au voyage pour qu'elle voie l'itinéraire complet et tout ce qui a été organisé.",
         },
         {
           q: "Combien de temps à l'avance commencer à planifier un voyage anniversaire ?",
-          a: "Quatre à six mois est idéal pour les anniversaires-clés (30, 40, 50 ans) où vous visez une vraie destination. Deux à trois mois suffisent pour les week-ends locaux. Plus la date est fixée tôt, moins les vols coûtent cher et meilleur le choix d'hébergement. Créez un voyage WePlanify dès que l'idée germe — même si les détails sont flous.",
+          a: "Quatre à six mois est idéal pour les anniversaires-clés (30, 40, 50 ans) où tu vises une vraie destination. Deux à trois mois suffisent pour les week-ends locaux. Plus la date est fixée tôt, moins les vols coûtent cher et meilleur le choix d'hébergement. Crée un voyage WePlanify dès que l'idée germe — même si les détails sont flous.",
         },
         {
           q: "Quel budget prévoir pour un voyage anniversaire ?",
@@ -438,15 +438,15 @@ const content = {
         },
         {
           q: "Est-ce que la personne fêtée doit payer pour elle ?",
-          a: "Les deux marchent et c'est une décision de groupe. Beaucoup de groupes offrent la part Airbnb et le grand dîner à la personne fêtée en cadeau ; elle paie son vol et ses repas perso. WePlanify permet de marquer une dépense « le groupe couvre » ou « individuel » pour que la répartition soit automatique. Quelle que soit votre décision, mettez-vous d'accord tôt — les discussions argent en plein voyage, c'est le pire.",
+          a: "Les deux marchent et c'est une décision de groupe. Beaucoup de groupes offrent la part Airbnb et le grand dîner à la personne fêtée en cadeau ; elle paie son vol et ses repas perso. WePlanify permet de marquer une dépense « le groupe couvre » ou « individuel » pour que la répartition soit automatique. Quelle que soit ta décision, mets-toi d'accord tôt — les discussions argent en plein voyage, c'est le pire.",
         },
         {
           q: "Comment décider des activités quand tout le monde veut autre chose ?",
-          a: "Lancez un sondage avec trois à cinq options concrètes pour chaque gros créneau (samedi après-midi, dimanche matin, etc.). Laissez voter, réservez la gagnante. Ça évite à la fois le blocage (personne ne décide) et la rancœur (une seule personne décide tout). Et ça donne enfin la parole aux plus discrets.",
+          a: "Lance un sondage avec trois à cinq options concrètes pour chaque gros créneau (samedi après-midi, dimanche matin, etc.). Laisse voter, réserve la gagnante. Ça évite à la fois le blocage (personne ne décide) et la rancœur (une seule personne décide tout). Et ça donne enfin la parole aux plus discrets.",
         },
         {
           q: "Et si certains amis ne peuvent venir que sur une partie du voyage ?",
-          a: "Pas de souci — et WePlanify le gère proprement. Indiquez les dates réelles de chaque participant, et quand vous enregistrez une dépense vous précisez qui y a participé. La cagnotte partagée recalcule automatiquement pour que chacun ne paie que pour les nuits et activités où il était. Pas de tableur, pas de négociation gênante du type « j'étais pas là pour le dîner ».",
+          a: "Pas de souci — et WePlanify le gère proprement. Indique les dates réelles de chaque participant, et quand tu enregistres une dépense tu précises qui y a participé. La cagnotte partagée recalcule automatiquement pour que chacun ne paie que pour les nuits et activités où il était. Pas de tableur, pas de négociation gênante du type « j'étais pas là pour le dîner ».",
         },
       ],
     },
@@ -454,7 +454,7 @@ const content = {
     cta: {
       title: "Prêt à Organiser le Meilleur Voyage Anniversaire ?",
       description:
-        "Arrêtez de laisser les voyages anniversaire glisser de « il faut absolument qu'on le fasse » à rien du tout. Créez votre voyage WePlanify en 30 secondes — c'est gratuit.",
+        "Arrête de laisser les voyages anniversaire glisser de « il faut absolument qu'on le fasse » à rien du tout. Crée ton voyage WePlanify en 30 secondes — c'est gratuit.",
       button: "Commencer — c'est gratuit",
     },
   },

@@ -28,7 +28,7 @@ export function generateStaticParams() {
 const content = {
   en: {
     meta: {
-      title: "Plan a Bachelorette Trip — Organize the Perfect Party | WePlanify",
+      title: "Plan a Bachelorette Trip — Organize the Perfect Party",
       description:
         "Plan the ultimate bachelorette trip with WePlanify. Coordinate schedules, vote on activities, manage a shared budget, and build a day-by-day itinerary — all in one free bachelorette weekend organizer.",
     },
@@ -244,8 +244,7 @@ const content = {
   },
   fr: {
     meta: {
-      title:
-        "Organiser un EVJF — Planifiez l'Enterrement de Vie de Jeune Fille Parfait | WePlanify",
+      title: "Organiser un EVJF — Planifie l'Enterrement de Vie de Jeune Fille Parfait",
       description:
         "Organisez l'EVJF parfait avec WePlanify. Coordonnez les emplois du temps, votez pour les activités, gérez une cagnotte commune et créez un programme jour par jour — le tout dans une application EVJF gratuite.",
     },
@@ -270,7 +269,7 @@ const content = {
     painPoints: {
       title: "Pourquoi Organiser un EVJF, C'est le Chaos Total",
       subtitle:
-        "Vous adorez la future mariée, mais organiser son grand week-end ? C'est une autre histoire.",
+        "Tu adores la future mariée, mais organiser son grand week-end ? C'est une autre histoire.",
       items: [
         {
           emoji: "🤫",

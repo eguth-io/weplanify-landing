@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "Alternative à TripIt : Voyage de Groupe Collaboratif (2026)",
       description:
-        "Cherchez une alternative à TripIt pour organiser un voyage de groupe ? WePlanify : sondages, budget partagé, itinéraire collaboratif en temps réel. Gratuit, FR/EN.",
+        "Cherche une alternative à TripIt pour organiser un voyage de groupe ? WePlanify : sondages, budget partagé, itinéraire collaboratif en temps réel. Gratuit, FR/EN.",
     },
   };
 
@@ -254,7 +254,7 @@ const content = {
     heroTitle: "WePlanify vs TripIt",
     heroSubtitle: "Meilleur Organisateur de Voyage de Groupe ? (2026)",
     heroIntro:
-      "TripIt et WePlanify vous aident tous les deux \u00e0 planifier des voyages, mais ils r\u00e9solvent des probl\u00e8mes tr\u00e8s diff\u00e9rents. TripIt organise les confirmations de r\u00e9servation en un itin\u00e9raire personnel. WePlanify est con\u00e7u de A \u00e0 Z pour la collaboration de groupe. Voici comment ils se comparent.",
+      "TripIt et WePlanify t'aident tous les deux \u00e0 planifier des voyages, mais ils r\u00e9solvent des probl\u00e8mes tr\u00e8s diff\u00e9rents. TripIt organise les confirmations de r\u00e9servation en un itin\u00e9raire personnel. WePlanify est con\u00e7u de A \u00e0 Z pour la collaboration de groupe. Voici comment ils se comparent.",
     verdictTitle: "En bref",
     verdict:
       "TripIt se concentre sur l\u2019organisation des confirmations de voyage et les itin\u00e9raires personnels. WePlanify est con\u00e7u pour la collaboration de groupe \u2014 sondages, budgets partag\u00e9s et planification ensemble. TripIt est orient\u00e9 solo, WePlanify est orient\u00e9 groupe.",
@@ -263,7 +263,7 @@ const content = {
     tripitShinesPoints: [
       {
         title: "Import automatique des r\u00e9servations",
-        desc: "Transf\u00e9rez vos e-mails de confirmation et TripIt construit votre itin\u00e9raire automatiquement. Vols, h\u00f4tels, locations de voiture \u2014 organis\u00e9s dans une seule chronologie.",
+        desc: "Transf\u00e8re tes e-mails de confirmation et TripIt construit ton itin\u00e9raire automatiquement. Vols, h\u00f4tels, locations de voiture \u2014 organis\u00e9s dans une seule chronologie.",
       },
       {
         title: "Alertes vol et a\u00e9roport",
@@ -271,7 +271,7 @@ const content = {
       },
       {
         title: "Application mobile avec acc\u00e8s hors ligne",
-        desc: "TripIt propose une application mobile native avec acc\u00e8s hors ligne \u00e0 votre itin\u00e9raire, ce qui peut \u00eatre utile lors de voyages internationaux sans donn\u00e9es.",
+        desc: "TripIt propose une application mobile native avec acc\u00e8s hors ligne \u00e0 ton itin\u00e9raire, ce qui peut \u00eatre utile lors de voyages internationaux sans donn\u00e9es.",
       },
     ],
     weplanifyWinsTitle: "Là où WePlanify gagne",
@@ -286,7 +286,7 @@ const content = {
       },
       {
         title: "Suivi de budget partagé",
-        desc: "Suivez les dépenses du groupe, partagez les coûts et gardez tout le monde sur la même page financièrement. TripIt ne suit pas les budgets.",
+        desc: "Suis les dépenses du groupe, partage les coûts et garde tout le monde sur la même page financièrement. TripIt ne suit pas les budgets.",
       },
       {
         title: "Découverte d'activités",
@@ -299,14 +299,14 @@ const content = {
     ],
     whoShouldTitle: "Qui devrait choisir quoi ?",
     whoTripit:
-      "Choisissez TripIt si vous êtes un voyageur d'affaires solo qui veut organiser automatiquement les confirmations de vol, recevoir des alertes de changement de porte et garder un itinéraire personnel avec accès hors ligne.",
+      "Choisis TripIt si tu es un voyageur d'affaires solo qui veut organiser automatiquement les confirmations de vol, recevoir des alertes de changement de porte et garder un itinéraire personnel avec accès hors ligne.",
     whoWeplanify:
-      "Choisissez WePlanify si vous planifiez un voyage entre amis ou en famille et avez besoin que tout le monde collabore sur l'itinéraire, vote sur les destinations et suive les dépenses partagées — le tout gratuitement.",
+      "Choisis WePlanify si tu planifies un voyage entre amis ou en famille et as besoin que tout le monde collabore sur l'itinéraire, vote sur les destinations et suive les dépenses partagées — le tout gratuitement.",
     faqTitle: "Questions Fréquentes",
     faqs: [
       {
         q: "Pourquoi passer de TripIt \u00e0 WePlanify ?",
-        a: "TripIt est con\u00e7u pour les voyageurs individuels qui g\u00e8rent leurs r\u00e9servations. Il ne propose pas de sondages de groupe, de budgets partag\u00e9s, de listes de bagages collaboratives ni d\u2019\u00e9dition de groupe en temps r\u00e9el. Si vous planifiez \u00e0 plusieurs, WePlanify fournit tous les outils de coordination qui manquent \u00e0 TripIt \u2014 enti\u00e8rement gratuitement.",
+        a: "TripIt est con\u00e7u pour les voyageurs individuels qui g\u00e8rent leurs r\u00e9servations. Il ne propose pas de sondages de groupe, de budgets partag\u00e9s, de listes de bagages collaboratives ni d\u2019\u00e9dition de groupe en temps r\u00e9el. Si tu planifies \u00e0 plusieurs, WePlanify fournit tous les outils de coordination qui manquent \u00e0 TripIt \u2014 enti\u00e8rement gratuitement.",
       },
       {
         q: "Que manque-t-il \u00e0 TripIt pour les voyages de groupe ?",
@@ -317,7 +317,7 @@ const content = {
         a: "Oui. Toutes les fonctionnalit\u00e9s principales \u2014 itin\u00e9raire collaboratif, sondages, suivi de budget, listes de bagages et d\u00e9couverte d\u2019activit\u00e9s \u2014 sont gratuites sans limite d\u2019essai ni mur payant cach\u00e9. TripIt facture 49 $/an pour ses fonctionnalit\u00e9s les plus utiles comme les alertes de vol.",
       },
     ],
-    ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
+    ctaTitle: "Prêt à planifier ton prochain voyage de groupe ?",
     ctaButton: "Commencer gratuitement",
     featureLabel: "Fonctionnalité",
     limited: "Vue partagée uniquement",
@@ -636,7 +636,7 @@ export default async function TripItComparisonPage({ params }: Props) {
         {/* -------------------------------------------------------------- */}
         <div className="text-center py-8">
           <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="text-[#F6391A] font-karla font-bold hover:underline">
-            {locale === "fr" ? "Essayez WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
+            {locale === "fr" ? "Essaie WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
           </Link>
         </div>
 

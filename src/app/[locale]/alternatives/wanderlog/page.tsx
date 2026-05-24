@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title:
         "Alternative \u00e0 Wanderlog : Voyage de Groupe Collaboratif (2026)",
       description:
-        "Cherchez une alternative \u00e0 Wanderlog pour vos voyages de groupe ? WePlanify : itin\u00e9raire collaboratif en temps r\u00e9el, sondages, budget partag\u00e9, packing list. Gratuit, FR/EN.",
+        "Cherche une alternative \u00e0 Wanderlog pour tes voyages de groupe ? WePlanify : itin\u00e9raire collaboratif en temps r\u00e9el, sondages, budget partag\u00e9, packing list. Gratuit, FR/EN.",
     },
   };
 
@@ -239,15 +239,15 @@ const content = {
     heroTitle: "WePlanify vs Wanderlog",
     heroSubtitle: "Comparaison compl\u00e8te \u2014 2026",
     heroIntro:
-      "Wanderlog et WePlanify vous aident tous deux \u00e0 planifier des voyages, mais ils r\u00e9pondent \u00e0 des besoins diff\u00e9rents. Wanderlog est un cr\u00e9ateur d\u2019itin\u00e9raires orient\u00e9 vers les voyages en solo ou en couple. WePlanify est con\u00e7u de A \u00e0 Z pour les groupes. Voici un comparatif objectif des deux applications pour vous aider \u00e0 choisir celle qui convient \u00e0 votre prochain voyage.",
+      "Wanderlog et WePlanify t'aident tous deux \u00e0 planifier des voyages, mais ils r\u00e9pondent \u00e0 des besoins diff\u00e9rents. Wanderlog est un cr\u00e9ateur d\u2019itin\u00e9raires orient\u00e9 vers les voyages en solo ou en couple. WePlanify est con\u00e7u de A \u00e0 Z pour les groupes. Voici un comparatif objectif des deux applications pour t'aider \u00e0 choisir celle qui convient \u00e0 ton prochain voyage.",
     verdictTitle: "En bref",
     verdict:
       "Wanderlog se concentre sur les voyages solo/couple avec sa planification bas\u00e9e sur les cartes. WePlanify est con\u00e7u sp\u00e9cifiquement pour les groupes avec des sondages, des budgets partag\u00e9s et une prise de d\u00e9cision collaborative. Les deux sont gratuits.",
     comparisonTitle: "Comparatif Face \u00e0 Face",
     wanderlogShinesTitle: "L\u00e0 o\u00f9 Wanderlog Brille",
     wanderlogShinesPoints: [
-      "Int\u00e9gration cartographique \u2014 tracez votre itin\u00e9raire sur une carte interactive avec les directions entre chaque \u00e9tape.",
-      "Acc\u00e8s hors ligne \u2014 t\u00e9l\u00e9chargez votre itin\u00e9raire et vos cartes pour les utiliser sans connexion internet.",
+      "Int\u00e9gration cartographique \u2014 trace ton itin\u00e9raire sur une carte interactive avec les directions entre chaque \u00e9tape.",
+      "Acc\u00e8s hors ligne \u2014 t\u00e9l\u00e9charge ton itin\u00e9raire et tes cartes pour les utiliser sans connexion internet.",
       "Applications mobiles \u2014 applications natives iOS et Android disponibles pour un acc\u00e8s en d\u00e9placement.",
       "Recherche de restaurants et h\u00f4tels \u2014 cherchez, enregistrez et organisez les lieux o\u00f9 manger et dormir dans l\u2019application.",
     ],
@@ -276,11 +276,11 @@ const content = {
     faqs: [
       {
         q: "Peut-on passer de Wanderlog \u00e0 WePlanify ?",
-        a: "Oui ! Vous pouvez cr\u00e9er un nouveau voyage sur WePlanify en quelques minutes. Bien qu\u2019il n\u2019y ait pas d\u2019import automatis\u00e9, l\u2019interface simple de WePlanify permet de recr\u00e9er rapidement votre itin\u00e9raire \u2014 et vous aurez imm\u00e9diatement acc\u00e8s aux fonctionnalit\u00e9s de groupe comme les sondages et les budgets partag\u00e9s que Wanderlog ne propose pas.",
+        a: "Oui ! Tu peux cr\u00e9er un nouveau voyage sur WePlanify en quelques minutes. Bien qu\u2019il n\u2019y ait pas d\u2019import automatis\u00e9, l\u2019interface simple de WePlanify permet de recr\u00e9er rapidement ton itin\u00e9raire \u2014 et tu auras imm\u00e9diatement acc\u00e8s aux fonctionnalit\u00e9s de groupe comme les sondages et les budgets partag\u00e9s que Wanderlog ne propose pas.",
       },
       {
         q: "Pourquoi passer de Wanderlog \u00e0 WePlanify ?",
-        a: "Si vous planifiez un voyage en groupe, Wanderlog ne propose ni sondages, ni budgets partag\u00e9s, ni listes de bagages collaboratives. WePlanify offre tous ces outils nativement, rendant la coordination de groupe fluide au lieu d\u2019\u00eatre dispers\u00e9e sur plusieurs applications.",
+        a: "Si tu planifies un voyage en groupe, Wanderlog ne propose ni sondages, ni budgets partag\u00e9s, ni listes de bagages collaboratives. WePlanify offre tous ces outils nativement, rendant la coordination de groupe fluide au lieu d\u2019\u00eatre dispers\u00e9e sur plusieurs applications.",
       },
       {
         q: "Que manque-t-il \u00e0 Wanderlog pour les voyages de groupe ?",
@@ -291,7 +291,7 @@ const content = {
         a: "WePlanify est le grand gagnant pour les grands groupes. Les sondages de groupe, les budgets partag\u00e9s et les listes de bagages collaboratives sont sp\u00e9cifiquement con\u00e7us pour g\u00e9rer la complexit\u00e9 de la coordination de plusieurs voyageurs. Les fonctionnalit\u00e9s de collaboration de Wanderlog fonctionnent pour les petits groupes, mais manquent d\u2019outils de prise de d\u00e9cision dont les grands groupes ont besoin.",
       },
     ],
-    ctaTitle: "Essayez WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
+    ctaTitle: "Essaie WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
     ctaButton: "Commencer gratuitement",
     crossLinksTitle: "D\u00e9couvrir aussi",
     basic: "Basique",
@@ -613,7 +613,7 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         {/* -------------------------------------------------------------- */}
         <div className="text-center py-8">
           <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="text-[#F6391A] font-karla font-bold hover:underline">
-            {locale === "fr" ? "Essayez WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
+            {locale === "fr" ? "Essaie WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
           </Link>
         </div>
 
@@ -773,7 +773,7 @@ export default async function WanderlogComparisonPage({ params }: Props) {
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Comparez WePlanify avec toutes les applications de voyage de groupe populaires."
+                      ? "Compare WePlanify avec toutes les applications de voyage de groupe populaires."
                       : "Compare WePlanify with all popular group trip planning apps."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">

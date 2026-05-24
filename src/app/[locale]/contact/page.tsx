@@ -15,12 +15,12 @@ const SITE_URL = "https://www.weplanify.com";
 
 const contactMeta = {
   en: {
-    title: "Contact WePlanify — Get in Touch With Our Team",
+    title: "Contact Us — Get in Touch With Our Team",
     description:
       "Have a question about WePlanify? Need help planning your group trip? Reach out to our team — we typically respond within 24 hours.",
   },
   fr: {
-    title: "Contactez WePlanify — Notre Équipe Vous Répond Sous 24h",
+    title: "Nous Contacter — Notre Équipe Te Répond Sous 24h",
     description:
       "Une question sur WePlanify ? Besoin d'aide pour organiser votre voyage de groupe ? Contactez notre équipe — nous répondons généralement sous 24 heures.",
   },

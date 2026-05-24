@@ -37,7 +37,7 @@ const meta = {
     title:
       "Top 6 Applications Voyage Collaboratif 2026 — Comparatif Honnête",
     description:
-      "On a testé 6 applis voyage collaboratif (WePlanify, Wanderlog, TripIt, Splitwise...). Comparatif détaillé : prix, fonctions, avantages. Choisissez la bonne en 2 min.",
+      "On a testé 6 applis voyage collaboratif (WePlanify, Wanderlog, TripIt, Splitwise...). Comparatif détaillé : prix, fonctions, avantages. Choisis la bonne en 2 min.",
   },
 };
 
@@ -398,7 +398,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
         title: "Pourquoi utiliser une appli dédiée",
         paragraphs: [
           "Les conversations de groupe virent au chaos en quelques jours. Ce qui démarre comme une discussion sérieuse sur les dates et les vols se retrouve noyé sous les memes, les vocaux de trois minutes et les recommandations de restos du cousin de quelqu'un. En une semaine, plus personne ne retrouve le lien de l'hôtel ni ne se souvient des dates validées. Les décisions importantes disparaissent dans le scroll.",
-          "Les tableurs ne passent pas à l'échelle non plus. Un Google Sheet partagé, ça marche pour deux personnes qui se partagent un chalet le temps d'un week-end. Mais quand vous êtes huit potes à planifier dix jours à travers trois pays, le tableur devient un monstre. Les onglets se multiplient, les formules cassent, et la moitié du groupe ne l'ouvre jamais parce que c'est illisible sur mobile.",
+          "Les tableurs ne passent pas à l'échelle non plus. Un Google Sheet partagé, ça marche pour deux personnes qui se partagent un chalet le temps d'un week-end. Mais quand tu es à huit potes à planifier dix jours à travers trois pays, le tableur devient un monstre. Les onglets se multiplient, les formules cassent, et la moitié du groupe ne l'ouvre jamais parce que c'est illisible sur mobile.",
           "Une application dédiée à la planification de voyage de groupe résout ces problèmes en donnant à chaque décision — destinations, dates, activités, budget, bagages — son propre espace structuré. Pas de messages à remonter, pas de cellules à écraser par erreur. Tout le monde voit les mêmes informations, contribue à son rythme et reste aligné sans relances quotidiennes. Ça fait gagner un temps réel et ça évite les petits malentendus qui peuvent devenir de vrais conflits une fois sur place.",
         ],
       },
@@ -426,7 +426,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
           },
           {
             title: "Support multilingue",
-            text: "Si votre groupe d'amis s'étend sur plusieurs pays ou langues, une appli uniquement en anglais exclut déjà des gens. Une interface bilingue ou multilingue rend la collaboration plus fluide pour tout le monde.",
+            text: "Si ton groupe d'amis s'étend sur plusieurs pays ou langues, une appli uniquement en anglais exclut déjà des gens. Une interface bilingue ou multilingue rend la collaboration plus fluide pour tout le monde.",
           },
         ],
       },
@@ -439,7 +439,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
           {
             name: "WePlanify",
             description:
-              "WePlanify est conçu spécifiquement pour la planification de voyage de groupe. L'interface guide votre groupe à chaque étape : choisir une destination via des sondages, construire un itinéraire collaboratif jour par jour, suivre les dépenses partagées et coordonner les listes de bagages. L'appli inclut aussi un outil de découverte alimenté par l'IA qui suggère des activités en fonction de votre destination et des intérêts du groupe. Disponible en français et en anglais, c'est l'une des rares applis qui traite les groupes multilingues comme un cas d'usage de premier plan.",
+              "WePlanify est conçu spécifiquement pour la planification de voyage de groupe. L'interface guide ton groupe à chaque étape : choisir une destination via des sondages, construire un itinéraire collaboratif jour par jour, suivre les dépenses partagées et coordonner les listes de bagages. L'appli inclut aussi un outil de découverte alimenté par l'IA qui suggère des activités en fonction de ta destination et des intérêts du groupe. Disponible en français et en anglais, c'est l'une des rares applis qui traite les groupes multilingues comme un cas d'usage de premier plan.",
             bestFor: "Les groupes qui veulent tout au même endroit — surtout les bandes d'amis bilingues.",
             pros: [
               "Tout-en-un : itinéraire, sondages, budget et listes de bagages",
@@ -471,7 +471,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
           {
             name: "TripIt",
             description:
-              "TripIt excelle dans l'organisation des réservations existantes. Transférez vos emails de confirmation et il crée automatiquement une chronologie de vols, d'hôtels et de réservations. Pour les voyageurs solo et les déplacements professionnels, c'est excellent. Mais ce n'est pas conçu pour la collaboration de groupe — pas moyen de voter sur les destinations, de construire un itinéraire partagé ou de partager les dépenses. Voyez-le comme un organisateur de voyage personnel plutôt qu'un outil de planification de groupe.",
+              "TripIt excelle dans l'organisation des réservations existantes. Transfère tes emails de confirmation et il crée automatiquement une chronologie de vols, d'hôtels et de réservations. Pour les voyageurs solo et les déplacements professionnels, c'est excellent. Mais ce n'est pas conçu pour la collaboration de groupe — pas moyen de voter sur les destinations, de construire un itinéraire partagé ou de partager les dépenses. Vois-le comme un organisateur de voyage personnel plutôt qu'un outil de planification de groupe.",
             bestFor: "Organiser ses confirmations de réservation pour les voyages solo ou pro.",
             pros: [
               "Itinéraire automatique à partir des emails transférés",
@@ -487,7 +487,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
           {
             name: "SquadTrip",
             description:
-              "SquadTrip prend une approche intéressante en se positionnant comme un outil pour les organisateurs de voyage. Si une personne organise le voyage et que les autres rejoignent, ça fonctionne bien — on peut créer une page de présentation du voyage, collecter les inscriptions et même gérer les paiements. Mais ça suppose une dynamique organisateur/participant plutôt qu'une collaboration entre égaux. Si vous voulez que tout le monde participe à la planification, ça peut sembler un peu à sens unique.",
+              "SquadTrip prend une approche intéressante en se positionnant comme un outil pour les organisateurs de voyage. Si une personne organise le voyage et que les autres rejoignent, ça fonctionne bien — on peut créer une page de présentation du voyage, collecter les inscriptions et même gérer les paiements. Mais ça suppose une dynamique organisateur/participant plutôt qu'une collaboration entre égaux. Si tu veux que tout le monde participe à la planification, ça peut sembler un peu à sens unique.",
             bestFor: "Les organisateurs qui gèrent les inscriptions et les paiements d'un groupe.",
             pros: [
               "Collecte de paiement intégrée",
@@ -503,7 +503,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
           {
             name: "Splitwise",
             description:
-              "Splitwise est la référence absolue pour le partage de dépenses, et pas seulement pour les voyages. Il gère les répartitions complexes, les différentes devises et les parts inégales avec élégance. Si la gestion des dépenses est votre plus gros point de douleur, Splitwise le fait mieux que quiconque. Mais ce n'est pas un planificateur de voyage — pas d'itinéraire, pas de liste de bagages, pas de vote de destination. Vous l'utiliserez probablement en complément d'un autre outil plutôt que comme votre unique appli de voyage de groupe.",
+              "Splitwise est la référence absolue pour le partage de dépenses, et pas seulement pour les voyages. Il gère les répartitions complexes, les différentes devises et les parts inégales avec élégance. Si la gestion des dépenses est ton plus gros point de douleur, Splitwise le fait mieux que quiconque. Mais ce n'est pas un planificateur de voyage — pas d'itinéraire, pas de liste de bagages, pas de vote de destination. Tu l'utiliseras probablement en complément d'un autre outil plutôt que comme ton unique appli de voyage de groupe.",
             bestFor: "Les groupes qui ont besoin d'un partage de dépenses béton (à utiliser en complément d'un planificateur).",
             pros: [
               "Meilleur outil de partage de dépenses du marché",
@@ -550,16 +550,16 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
         ],
         recommendations: [
           {
-            useCase: "Vous voulez un seul outil pour tout",
+            useCase: "Tu veux un seul outil pour tout",
             recommendation: "WePlanify couvre itinéraire, sondages, budget et bagages sur une seule plateforme.",
           },
           {
-            useCase: "Vous êtes un planificateur visuel, carte en main",
-            recommendation: "Wanderlog est le meilleur constructeur d'itinéraire pour les amoureux des cartes, mais il vous faudra d'autres outils pour le budget et les décisions.",
+            useCase: "Tu es un planificateur visuel, carte en main",
+            recommendation: "Wanderlog est le meilleur constructeur d'itinéraire pour les amoureux des cartes, mais il te faudra d'autres outils pour le budget et les décisions.",
           },
           {
-            useCase: "Vous avez juste besoin de partager les frais",
-            recommendation: "Splitwise est imbattable pour la gestion des dépenses. Combinez-le avec une appli de planification.",
+            useCase: "Tu as juste besoin de partager les frais",
+            recommendation: "Splitwise est imbattable pour la gestion des dépenses. Combine-le avec une appli de planification.",
           },
           {
             useCase: "Une seule personne organise tout",
@@ -567,7 +567,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
           },
         ],
         outro:
-          "Aucune appli n'est parfaite pour tous les groupes. Le meilleur choix dépend de comment votre groupe fonctionne — et de si vous privilégiez la simplicité, la collaboration ou la profondeur fonctionnelle. Cela dit, si vous voulez l'expérience de planification de groupe la plus complète sans jongler entre plusieurs outils, WePlanify est l'option la plus solide en 2026.",
+          "Aucune appli n'est parfaite pour tous les groupes. Le meilleur choix dépend de comment ton groupe fonctionne — et de si tu privilégies la simplicité, la collaboration ou la profondeur fonctionnelle. Cela dit, si tu veux l'expérience de planification de groupe la plus complète sans jongler entre plusieurs outils, WePlanify est l'option la plus solide en 2026.",
       },
     },
 
@@ -576,15 +576,15 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
       items: [
         {
           q: "Quelle est la meilleure application gratuite pour organiser un voyage de groupe ?",
-          a: "Ça dépend de vos besoins. Pour une solution tout-en-un couvrant l'itinéraire, les sondages de groupe, le suivi de budget et les listes de bagages, WePlanify offre le panel de fonctionnalités le plus complet. Si vous n'avez besoin que du partage de dépenses, Splitwise est excellent. Pour un itinéraire visuel sur carte, Wanderlog propose un niveau gratuit généreux. Le mieux est de choisir un outil principal qui répond à votre plus gros besoin — souvent la coordination des décisions et le partage des frais.",
+          a: "Ça dépend de tes besoins. Pour une solution tout-en-un couvrant l'itinéraire, les sondages de groupe, le suivi de budget et les listes de bagages, WePlanify offre le panel de fonctionnalités le plus complet. Si tu n'as besoin que du partage de dépenses, Splitwise est excellent. Pour un itinéraire visuel sur carte, Wanderlog propose un niveau gratuit généreux. Le mieux est de choisir un outil principal qui répond à ton plus gros besoin — souvent la coordination des décisions et le partage des frais.",
         },
         {
           q: "Comment organiser un voyage entre amis sans prise de tête ?",
-          a: "Les plus grosses sources de stress sont les décisions floues, les désaccords d'argent et la surcharge de messages. Utilisez une appli de planification dédiée plutôt que les conversations de groupe pour que chaque décision ait son espace propre. Votez sur les destinations et les activités via des sondages pour que personne ne se sente mis de côté. Suivez les dépenses partagées en temps réel pour éviter les surprises à la fin. Et prévoyez du temps tampon — trop planifier est aussi stressant que ne rien planifier du tout.",
+          a: "Les plus grosses sources de stress sont les décisions floues, les désaccords d'argent et la surcharge de messages. Utilise une appli de planification dédiée plutôt que les conversations de groupe pour que chaque décision ait son espace propre. Vote sur les destinations et les activités via des sondages pour que personne ne se sente mis de côté. Suis les dépenses partagées en temps réel pour éviter les surprises à la fin. Et prévois du temps tampon — trop planifier est aussi stressant que ne rien planifier du tout.",
         },
         {
           q: "Comment partager les frais d'un voyage de groupe ?",
-          a: "L'approche la plus juste est de suivre les dépenses au fil de l'eau plutôt que d'essayer de tout réconcilier à la fin. Utilisez Splitwise ou un suivi de budget intégré comme celui de WePlanify pour enregistrer chaque dépense partagée — hébergement, repas, taxis, activités — en notant qui a payé et qui a participé. À la fin du voyage, l'appli calcule la manière la plus simple de se rembourser pour éviter de se passer de l'argent pendant des semaines.",
+          a: "L'approche la plus juste est de suivre les dépenses au fil de l'eau plutôt que d'essayer de tout réconcilier à la fin. Utilise Splitwise ou un suivi de budget intégré comme celui de WePlanify pour enregistrer chaque dépense partagée — hébergement, repas, taxis, activités — en notant qui a payé et qui a participé. À la fin du voyage, l'appli calcule la manière la plus simple de se rembourser pour éviter de se passer de l'argent pendant des semaines.",
         },
         {
           q: "Existe-t-il une appli de voyage de groupe en français ?",
@@ -594,8 +594,8 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
     },
 
     cta: {
-      title: "Prêt à organiser votre prochain voyage de groupe ?",
-      text: "Arrêtez de jongler entre cinq applis différentes et un groupe WhatsApp chaotique. WePlanify réunit itinéraire, sondages, budget et listes de bagages dans un seul espace collaboratif — pour que votre groupe puisse enfin se mettre d'accord.",
+      title: "Prêt à organiser ton prochain voyage de groupe ?",
+      text: "Arrête de jongler entre cinq applis différentes et un groupe WhatsApp chaotique. WePlanify réunit itinéraire, sondages, budget et listes de bagages dans un seul espace collaboratif — pour que ton groupe puisse enfin se mettre d'accord.",
       button: "Commencer à planifier ensemble",
     },
 
