@@ -28,7 +28,7 @@ export function generateStaticParams() {
 const content = {
   en: {
     meta: {
-      title: "Birthday Trip Planner — Plan the Ultimate Birthday Getaway | WePlanify",
+      title: "Birthday Trip Planner — Plan the Ultimate Birthday Getaway",
       description:
         "Plan your birthday trip with WePlanify, the free birthday trip planner. Coordinate dates with your friends, vote on the destination, split the budget, and build a day-by-day itinerary — perfect for 30th, 40th, 50th milestones or any birthday getaway.",
     },
@@ -244,7 +244,7 @@ const content = {
   },
   fr: {
     meta: {
-      title: "Voyage Anniversaire — Organisez un Anniversaire Inoubliable | WePlanify",
+      title: "Voyage Anniversaire — Organise un Anniversaire Inoubliable",
       description:
         "Organise ton voyage anniversaire avec WePlanify, l'application gratuite pour planifier un week-end anniversaire entre amis. Coordonne les dates, vote pour la destination, gère la cagnotte commune et crée un programme jour par jour — idéal pour les 30, 40, 50 ans ou n'importe quel anniversaire à fêter ailleurs.",
     },

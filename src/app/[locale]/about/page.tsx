@@ -22,12 +22,12 @@ export function generateStaticParams() {
 
 const aboutMeta = {
   en: {
-    title: "About WePlanify — The Free Group Trip Planner for Friends",
+    title: "About Us — The Free Group Trip Planner for Friends",
     description:
       "WePlanify is the free, collaborative trip planner for friends, families and teams. Discover the story, the mission and the team behind real-time group travel planning.",
   },
   fr: {
-    title: "À Propos de WePlanify — Le Planificateur de Voyage de Groupe",
+    title: "À Propos — Le Planificateur de Voyage de Groupe",
     description:
       "WePlanify est le planificateur de voyage de groupe gratuit et collaboratif pour amis, familles et équipes. Découvrez l'histoire, la mission et l'équipe derrière l'app.",
   },
