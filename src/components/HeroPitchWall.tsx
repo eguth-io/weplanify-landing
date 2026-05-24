@@ -853,8 +853,18 @@ function PolaroidDeckCard({
           ))}
         </div>
         {preview.itinerary && preview.itinerary.length > 1 && (
-          <ItineraryTimeline itinerary={preview.itinerary} lang={lang} />
+          <ItineraryTimeline
+            itinerary={preview.itinerary}
+            lang={lang}
+            signupUrl={signupUrl}
+            destination={preview.destination}
+          />
         )}
+        <LockedFeaturesTeaser
+          signupUrl={signupUrl}
+          destination={preview.destination}
+          lang={lang}
+        />
         <div className="flex items-center gap-3 lg:gap-4 lg:flex-wrap lg:justify-start justify-center">
           <Link
             href={signupUrl}
@@ -950,10 +960,29 @@ function Polaroid({
   );
 }
 
-function ItineraryTimeline({ itinerary, lang }: { itinerary: ItineraryStop[]; lang: Lang }) {
-  const label = lang === 'fr' ? 'Une piste d\'itinéraire' : 'An itinerary idea';
+const ITINERARY_MAX_VISIBLE = 2;
+
+function ItineraryTimeline({
+  itinerary,
+  lang,
+  signupUrl,
+  destination,
+}: {
+  itinerary: ItineraryStop[];
+  lang: Lang;
+  signupUrl: string;
+  destination: string;
+}) {
+  const label = lang === 'fr' ? 'Itinéraire suggéré' : 'An itinerary idea';
   const nightLabel = (n: number) =>
     lang === 'fr' ? `${n} ${n > 1 ? 'nuits' : 'nuit'}` : `${n} ${n > 1 ? 'nights' : 'night'}`;
+
+  const visible = itinerary.slice(0, ITINERARY_MAX_VISIBLE);
+  const hiddenCount = Math.max(0, itinerary.length - ITINERARY_MAX_VISIBLE);
+  const unlockLabel =
+    lang === 'fr'
+      ? `+ ${hiddenCount} étape${hiddenCount > 1 ? 's' : ''} · débloquer`
+      : `+ ${hiddenCount} stop${hiddenCount > 1 ? 's' : ''} · unlock`;
 
   return (
     <motion.div
@@ -966,7 +995,7 @@ function ItineraryTimeline({ itinerary, lang }: { itinerary: ItineraryStop[]; la
         {label}
       </div>
       <ol className="flex flex-wrap items-stretch gap-2 lg:gap-3 justify-center lg:justify-start">
-        {itinerary.map((stop, i) => (
+        {visible.map((stop, i) => (
           <li
             key={`${stop.name}-${i}`}
             className="relative flex items-center gap-2 rounded-full bg-[#FFFBF5]/10 backdrop-blur-sm border border-white/25 px-3 py-2 text-[#FFFBF5] font-karla"
@@ -978,13 +1007,92 @@ function ItineraryTimeline({ itinerary, lang }: { itinerary: ItineraryStop[]; la
               <div className="font-bold text-sm lg:text-base">{stop.name}</div>
               <div className="text-[11px] lg:text-xs opacity-80">{nightLabel(stop.nights)}</div>
             </div>
-            {i < itinerary.length - 1 && (
+            {(i < visible.length - 1 || hiddenCount > 0) && (
               <ArrowRight className="w-3.5 h-3.5 text-[#FFFBF5]/50 ml-1 hidden lg:inline-block" />
             )}
           </li>
         ))}
+        {hiddenCount > 0 && (
+          <li>
+            <Link
+              href={signupUrl}
+              onClick={() => trackEvent('hero_pitch_cta_click', { destination })}
+              rel="nofollow"
+              className="inline-flex items-center gap-2 rounded-full bg-[#EEF899]/15 backdrop-blur-sm border border-[#EEF899]/50 px-3 py-2 text-[#EEF899] font-karla font-bold hover:bg-[#EEF899]/25 hover:border-[#EEF899]/80 transition-colors"
+            >
+              <span className="text-base leading-none">🔒</span>
+              <span className="text-sm lg:text-base leading-tight">{unlockLabel}</span>
+            </Link>
+          </li>
+        )}
       </ol>
     </motion.div>
+  );
+}
+
+function LockedFeaturesTeaser({
+  signupUrl,
+  destination,
+  lang,
+}: {
+  signupUrl: string;
+  destination: string;
+  lang: Lang;
+}) {
+  const copy =
+    lang === 'fr'
+      ? {
+          heading: 'Avec un compte gratuit, tu débloques…',
+          items: [
+            'Le plan jour par jour avec activités & restos',
+            'Des hôtels recommandés pour ton groupe',
+            'Inviter tes amis pour voter les dates',
+            'Cagnotte partagée + split en un tap',
+          ],
+          cta: 'Débloquer le plan complet',
+        }
+      : {
+          heading: 'With a free account, you unlock…',
+          items: [
+            'The day-by-day plan with activities & restos',
+            'Group-friendly hotels we recommend',
+            'Invite friends to vote on dates',
+            'Shared kitty + one-tap bill splits',
+          ],
+          cta: 'Unlock the full plan',
+        };
+
+  return (
+    <Link
+      href={signupUrl}
+      onClick={() => trackEvent('hero_pitch_cta_click', { destination })}
+      rel="nofollow"
+      className="block mb-6 lg:mb-8 group"
+    >
+      <div className="bg-[#FFFBF5]/10 backdrop-blur-sm border border-[#EEF899]/40 rounded-2xl p-4 lg:p-5 hover:bg-[#FFFBF5]/15 hover:border-[#EEF899]/70 transition-colors">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-xl leading-none">🔒</span>
+          <div className="font-nanum-pen text-[#EEF899] text-lg lg:text-xl leading-none">
+            {copy.heading}
+          </div>
+        </div>
+        <ul className="space-y-1.5 mb-4">
+          {copy.items.map((item) => (
+            <li
+              key={item}
+              className="flex items-start gap-2 text-[#FFFBF5]/90 font-karla text-sm lg:text-base"
+            >
+              <span className="text-[#EEF899] flex-shrink-0 font-bold">✓</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="inline-flex items-center gap-1.5 text-[#EEF899] font-karla font-bold text-sm lg:text-base group-hover:underline underline-offset-4">
+          {copy.cta}
+          <ArrowRight className="w-4 h-4" />
+        </div>
+      </div>
+    </Link>
   );
 }
 
