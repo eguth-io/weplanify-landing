@@ -127,6 +127,7 @@ const DROPDOWNS: Dropdown[] = [
           { label: { en: "Group trip guide", fr: "Guide voyage de groupe" }, href: (l) => `/${l}/guides/plan-group-trip` },
           { label: { en: "Destinations", fr: "Destinations" }, href: (l) => `/${l}/destinations` },
           { label: { en: "Travel guides", fr: "Guides voyage" }, href: (l) => `/${l}/travel-guides` },
+          { label: { en: "2026 events", fr: "Événements 2026" }, href: (l) => `/${l}/events` },
           { label: { en: "FAQ", fr: "FAQ" }, href: (l) => `/${l}/faq` },
           { label: { en: "About", fr: "À propos" }, href: (l) => `/${l}/about` },
           { label: { en: "Partnership", fr: "Partenariat" }, href: (l) => `/${l}/partnership` },
