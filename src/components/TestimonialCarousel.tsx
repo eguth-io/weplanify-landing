@@ -22,7 +22,7 @@ const TESTIMONIALS: Record<Lang, Testimonial[]> = {
       quote:
         "Pratique pour caler des étapes au fil du voyage. Je peux ajuster mes plans sans tout refaire.",
       author: "Tom",
-      authorRole: "Digital nomad",
+      authorRole: "Digital nomade",
     },
     {
       quote:

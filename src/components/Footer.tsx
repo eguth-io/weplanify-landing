@@ -283,7 +283,7 @@ export default function Footer({ footerData }: FooterProps) {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder={locale === "fr" ? "Votre e-mail" : "Your email"}
+                    placeholder={locale === "fr" ? "Ton e-mail" : "Your email"}
                     required
                     className="flex-1 px-4 py-2.5 rounded-full border border-[#001E13]/20 text-sm font-karla focus:outline-none focus:border-[#F6391A] transition-colors"
                   />

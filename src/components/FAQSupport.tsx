@@ -24,7 +24,7 @@ const CONTENT: Record<Lang, FAQContent> = {
     title: "Un voyage sans questions",
     supportTitle: "Support 24h/24 7j/7",
     supportDescription:
-      "Vous avez une question sur une fonctionnalité ?\nBesoin d'inspiration pour un itinéraire ?\nNotre équipe répond rapidement et vous guide pour tirer le meilleur de WePlanify.\n\nParce que l'expérience utilisateur est notre priorité.",
+      "Tu as une question sur une fonctionnalité ?\nBesoin d'inspiration pour un itinéraire ?\nNotre équipe répond vite et te guide pour tirer le meilleur de WePlanify.\n\nParce que l'expérience utilisateur est notre priorité.",
     supportButtonText: "Contacter l'équipe",
     supportButtonUrl: "/contact",
     items: [
@@ -41,27 +41,27 @@ const CONTENT: Record<Lang, FAQContent> = {
       {
         question: "Comment créer un compte ?",
         answer:
-          "Cliquez simplement sur 'Commencer' et inscrivez-vous avec votre email ou compte Google. Il faut moins de 30 secondes pour créer votre premier voyage.",
+          "Clique simplement sur 'Commencer' et inscris-toi avec ton email ou ton compte Google. Il faut moins de 30 secondes pour créer ton premier voyage.",
       },
       {
         question: "Mes données sont-elles sécurisées ?",
         answer:
-          "Oui, nous prenons la sécurité très au sérieux. Vos données sont chiffrées et stockées de manière sécurisée. Nous ne partageons jamais vos informations personnelles avec des tiers.",
+          "Oui, nous prenons la sécurité très au sérieux. Tes données sont chiffrées et stockées de manière sécurisée. Nous ne partageons jamais tes informations personnelles avec des tiers.",
       },
       {
         question: "Puis-je utiliser WePlanify sur mobile ?",
         answer:
-          "Oui ! WePlanify fonctionne sur tous les appareils — ordinateur, tablette ou smartphone. Accédez à vos voyages où que vous soyez avec notre application web responsive.",
+          "Oui ! WePlanify fonctionne sur tous les appareils — ordinateur, tablette ou smartphone. Accède à tes voyages où que tu sois avec notre application web responsive.",
       },
       {
         question: "Comment contacter le support ?",
         answer:
-          "Vous pouvez nous contacter via notre page contact ou par email à support@weplanify.com. Nous répondons généralement sous 24 heures.",
+          "Tu peux nous contacter via notre page contact ou par email à support@weplanify.com. Nous répondons généralement sous 24 heures.",
       },
       {
         question: "Comment inviter des amis à mon voyage ?",
         answer:
-          "Partagez votre lien de voyage unique avec vos amis par email, WhatsApp ou toute autre messagerie. Ils peuvent rejoindre instantanément sans créer de compte.",
+          "Partage ton lien de voyage unique avec tes amis par email, WhatsApp ou toute autre messagerie. Ils peuvent rejoindre instantanément sans créer de compte.",
       },
     ],
   },
