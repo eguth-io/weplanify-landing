@@ -388,7 +388,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
     heroTag: "Guide Complet 2026",
     h1: "Comment Organiser un EVJF : Guide Complet 2026",
     intro:
-      "Sur le papier, organiser un EVJF semble simple : réunir les amies proches de la future mariée, choisir une destination, passer un bon moment. En pratique, vous coordonnez six à douze personnes avec des emplois du temps, des budgets, des goûts et des idées du bon temps radicalement différents — tout en essayant que la mariée ne voit rien du chaos qui se passe dans les coulisses. Ce guide va droit au but et vous donne un cadre concret pour organiser un EVJF que tout le monde appréciera vraiment, pas juste endurera.",
+      "Sur le papier, organiser un EVJF semble simple : réunir les amies proches de la future mariée, choisir une destination, passer un bon moment. En pratique, tu coordonnes six à douze personnes avec des emplois du temps, des budgets, des goûts et des idées du bon temps radicalement différents — tout en essayant que la mariée ne voit rien du chaos qui se passe dans les coulisses. Ce guide va droit au but et te donne un cadre concret pour organiser un EVJF que tout le monde appréciera vraiment, pas juste endurera.",
 
     tocTitle: "Sommaire",
     toc: [
@@ -415,23 +415,23 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
         id: "four-questions",
         title: "Les quatre questions à trancher en premier",
         intro:
-          "Avant de regarder un seul hôtel ou une seule activité, répondez à ces quatre questions en groupe. Elles vous économiseront des semaines d'allers-retours.",
+          "Avant de regarder un seul hôtel ou une seule activité, réponds à ces quatre questions en groupe. Elles t'économiseront des semaines d'allers-retours.",
         questions: [
           {
             title: "Qui est vraiment dans le groupe ?",
-            text: "Confirmez la liste définitive des participantes avant de planifier quoi que ce soit d'autre. Chaque personne ajoutée après coup change le calcul du budget, les options d'hébergement et la logistique des activités. Soyons réalistes : toutes celles qui disent 'oui' dans l'enthousiasme du premier moment ne vont pas nécessairement suivre. Fixez une date limite ferme pour les confirmations — deux semaines, c'est largement suffisant — et planifiez avec celles qui se sont engagées dans ce délai.",
+            text: "Confirme la liste définitive des participantes avant de planifier quoi que ce soit d'autre. Chaque personne ajoutée après coup change le calcul du budget, les options d'hébergement et la logistique des activités. Soyons réalistes : toutes celles qui disent 'oui' dans l'enthousiasme du premier moment ne vont pas nécessairement suivre. Fixe une date limite ferme pour les confirmations — deux semaines, c'est largement suffisant — et planifie avec celles qui se sont engagées dans ce délai.",
           },
           {
             title: "Quel est le budget honnête de chacune ?",
-            text: "Ne fixez pas un budget basé sur ce que vous aimeriez que tout le monde puisse dépenser. Demandez à chaque personne en privé ce qu'elle est à l'aise de dépenser, trouvez la médiane et planifiez autour de ce chiffre. Si les écarts sont importants, envisagez un modèle modulaire : un programme de base accessible à toutes, avec des options payantes pour celles qui veulent plus. Utilisez un suivi de budget partagé dès le départ pour qu'il n'y ait pas de mauvaises surprises sur le coût total par personne.",
+            text: "Ne fixe pas un budget basé sur ce que tu aimerais que tout le monde puisse dépenser. Demande à chaque personne en privé ce qu'elle est à l'aise de dépenser, trouve la médiane et planifie autour de ce chiffre. Si les écarts sont importants, envisage un modèle modulaire : un programme de base accessible à toutes, avec des options payantes pour celles qui veulent plus. Utilise un suivi de budget partagé dès le départ pour qu'il n'y ait pas de mauvaises surprises sur le coût total par personne.",
           },
           {
             title: "Ce que la future mariée veut vraiment ?",
-            text: "Pas ce que Pinterest dit qu'elle devrait vouloir. Pas ce que vous voudriez à sa place. Demandez-lui directement, ou demandez à la personne qui la connaît le mieux. Certaines futures mariées veulent un week-end de folie à Ibiza ; d'autres veulent sincèrement un week-end spa tranquille avec leurs cinq amies les plus proches, sans écharpe en vue. On ne peut pas organiser un super EVJF sans connaître sa réponse, et supposer qu'on la connaît est l'erreur la plus courante des organisatrices.",
+            text: "Pas ce que Pinterest dit qu'elle devrait vouloir. Pas ce que tu voudrais à sa place. Demande-lui directement, ou demande à la personne qui la connaît le mieux. Certaines futures mariées veulent un week-end de folie à Ibiza ; d'autres veulent sincèrement un week-end spa tranquille avec leurs cinq amies les plus proches, sans écharpe en vue. On ne peut pas organiser un super EVJF sans connaître sa réponse, et supposer qu'on la connaît est l'erreur la plus courante des organisatrices.",
           },
           {
             title: "Week-end ou plus long ?",
-            text: "Un week-end de trois jours est le format idéal pour la plupart des groupes : assez long pour avoir l'impression d'un vrai voyage, assez court pour que tout le monde puisse poser des congés et se le permettre. Cinq à sept jours peut fonctionner pour les groupes avec des agendas flexibles et des budgets plus importants — mais plus de jours signifie plus de coordination, plus de repas à prévoir et plus d'opportunités pour la dynamique de groupe de se fragiliser. Sauf si la mariée veut spécifiquement un voyage long, restez sur un format court.",
+            text: "Un week-end de trois jours est le format idéal pour la plupart des groupes : assez long pour avoir l'impression d'un vrai voyage, assez court pour que tout le monde puisse poser des congés et se le permettre. Cinq à sept jours peut fonctionner pour les groupes avec des agendas flexibles et des budgets plus importants — mais plus de jours signifie plus de coordination, plus de repas à prévoir et plus d'opportunités pour la dynamique de groupe de se fragiliser. Sauf si la mariée veut spécifiquement un voyage long, reste sur un format court.",
           },
         ],
       },
@@ -443,12 +443,12 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
         types: [
           {
             title: "City Break",
-            text: "Un long week-end dans une ville vibrante — Paris, Barcelone, Amsterdam, Lisbonne, Séville — donne au groupe un maximum de flexibilité. Activités de journée, vie nocturne, options de restaurants et expériences culturelles sont toutes à portée de main. Les city breaks conviennent aux groupes aux goûts variés parce qu'il y a toujours quelque chose pour tout le monde. L'enjeu : les meilleures villes pour les EVJF sont chères, surtout en hébergement pour un grand groupe. Réservez un appartement en location entière plutôt que plusieurs chambres d'hôtel — c'est moins cher, plus convivial et vous avez une base pour se préparer ensemble.",
+            text: "Un long week-end dans une ville vibrante — Paris, Barcelone, Amsterdam, Lisbonne, Séville — donne au groupe un maximum de flexibilité. Activités de journée, vie nocturne, options de restaurants et expériences culturelles sont toutes à portée de main. Les city breaks conviennent aux groupes aux goûts variés parce qu'il y a toujours quelque chose pour tout le monde. L'enjeu : les meilleures villes pour les EVJF sont chères, surtout en hébergement pour un grand groupe. Réserve un appartement en location entière plutôt que plusieurs chambres d'hôtel — c'est moins cher, plus convivial et tu as une base pour se préparer ensemble.",
             bestFor: "Groupes mixtes, futures mariées qui aiment la culture et la vie nocturne",
           },
           {
             title: "Plage",
-            text: "Soleil, piscine ou plage, villa ou hôtel. L'EVJF plage est le format classique pour une bonne raison : il demande peu de planification et délivre beaucoup de plaisir. Les journées s'organisent naturellement autour de la piscine, les repas sont simples, et les soirées peuvent être aussi relaxées ou animées que le groupe le souhaite. L'Algarve, Majorque, Mykonos et la côte croate sont les destinations européennes favorites. Le principal risque avec un séjour plage, c'est la répétition à partir du deuxième jour — prévoyez une ou deux activités structurées pour ancrer le programme.",
+            text: "Soleil, piscine ou plage, villa ou hôtel. L'EVJF plage est le format classique pour une bonne raison : il demande peu de planification et délivre beaucoup de plaisir. Les journées s'organisent naturellement autour de la piscine, les repas sont simples, et les soirées peuvent être aussi relaxées ou animées que le groupe le souhaite. L'Algarve, Majorque, Mykonos et la côte croate sont les destinations européennes favorites. Le principal risque avec un séjour plage, c'est la répétition à partir du deuxième jour — prévois une ou deux activités structurées pour ancrer le programme.",
             bestFor: "Futures mariées qui veulent se détendre, groupes amateurs de soleil, week-ends",
           },
           {
@@ -458,7 +458,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
           },
           {
             title: "Aventure",
-            text: "Surf au Pays Basque, randonnée en Slovénie, week-end vélo en Toscane, glamping en Bretagne. Les EVJF aventure gagnent en popularité parce qu'ils créent des expériences partagées qui soudent le groupe d'une façon que la vie nocturne offre rarement. Les histoires du jour où vous êtes toutes tombées du paddleboard valent mieux qu'une nuit en boîte. L'enjeu : les séjours aventure demandent une planification physique plus approfondie et des conversations honnêtes sur les niveaux de forme. Ne réservez pas une randonnée technique en espérant que tout le monde suivra.",
+            text: "Surf au Pays Basque, randonnée en Slovénie, week-end vélo en Toscane, glamping en Bretagne. Les EVJF aventure gagnent en popularité parce qu'ils créent des expériences partagées qui soudent le groupe d'une façon que la vie nocturne offre rarement. Les histoires du jour où tout le groupe est tombé du paddleboard valent mieux qu'une nuit en boîte. L'enjeu : les séjours aventure demandent une planification physique plus approfondie et des conversations honnêtes sur les niveaux de forme. Ne réserve pas une randonnée technique en espérant que tout le monde suivra.",
             bestFor: "Futures mariées actives, groupes qui passent déjà du temps en plein air",
           },
         ],
@@ -467,25 +467,25 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
         id: "budget-conversation",
         title: "La conversation budget qu'on évite toujours",
         paragraphs: [
-          "C'est là que les projets d'EVJF s'effondrent. Non par mauvaise volonté — mais parce que les organisatrices reportent souvent la vraie conversation budget jusqu'à ce que les acomptes soient dus et les vols réservés, moment auquel la personne qui ne peut pas vraiment se le permettre se sent coincée et commence à en vouloir aux autres. Avoir cette conversation tôt et explicitement, avant tout engagement, est la chose la plus importante que vous puissiez faire pour la dynamique du groupe.",
-          "La future mariée ne paie traditionnellement pas sa part d'hébergement et d'activités — ce coût est réparti entre les participantes. Assurez-vous que tout le monde dans le groupe comprend cela avant que les coûts ne soient finalisés. Pour un voyage à huit où l'hébergement coûte 1 500 €, c'est 215 € par personne et non 187 €. Pas grand-chose en valeur absolue, mais autant être explicite dès le départ.",
-          "Centralisez ce que vous pouvez. Réservez l'hébergement, les transferts et les activités de groupe via une seule personne ou un outil de planification partagé pour que les flux d'argent soient clairs et que personne ne reste en avance de frais pendant des semaines. Utilisez un suivi de budget partagé pour que tout le monde voie le total courant — les groupes qui suivent les dépenses au fil de l'eau évitent la réconciliation financière inconfortable en fin de voyage.",
+          "C'est là que les projets d'EVJF s'effondrent. Non par mauvaise volonté — mais parce que les organisatrices reportent souvent la vraie conversation budget jusqu'à ce que les acomptes soient dus et les vols réservés, moment auquel la personne qui ne peut pas vraiment se le permettre se sent coincée et commence à en vouloir aux autres. Avoir cette conversation tôt et explicitement, avant tout engagement, est la chose la plus importante que tu puisses faire pour la dynamique du groupe.",
+          "La future mariée ne paie traditionnellement pas sa part d'hébergement et d'activités — ce coût est réparti entre les participantes. Assure-toi que tout le monde dans le groupe comprend cela avant que les coûts ne soient finalisés. Pour un voyage à huit où l'hébergement coûte 1 500 €, c'est 215 € par personne et non 187 €. Pas grand-chose en valeur absolue, mais autant être explicite dès le départ.",
+          "Centralise ce que tu peux. Réserve l'hébergement, les transferts et les activités de groupe via une seule personne ou un outil de planification partagé pour que les flux d'argent soient clairs et que personne ne reste en avance de frais pendant des semaines. Utilise un suivi de budget partagé pour que tout le monde voie le total courant — les groupes qui suivent les dépenses au fil de l'eau évitent la réconciliation financière inconfortable en fin de voyage.",
         ],
         tips: [
           {
-            title: "Fixez un budget par personne, pas un budget total",
-            text: "Un budget total de 3 000 € semble gérable jusqu'à ce qu'on réalise que le groupe est de quinze personnes et que ça représente moins de 200 € chacune. Pensez toujours en termes de coût par personne dès le départ.",
+            title: "Fixe un budget par personne, pas un budget total",
+            text: "Un budget total de 3 000 € semble gérable jusqu'à ce qu'on réalise que le groupe est de quinze personnes et que ça représente moins de 200 € chacune. Pense toujours en termes de coût par personne dès le départ.",
           },
           {
-            title: "Distinguez l'indispensable du facultatif",
-            text: "L'hébergement et une ou deux activités clés sont non négociables. Les tenues assorties, les décorations personnalisées et les cadeaux élaborés sont optionnels. Sachez faire la différence avant de commencer à dépenser.",
+            title: "Distingue l'indispensable du facultatif",
+            text: "L'hébergement et une ou deux activités clés sont non négociables. Les tenues assorties, les décorations personnalisées et les cadeaux élaborés sont optionnels. Sache faire la différence avant de commencer à dépenser.",
           },
           {
-            title: "Gérez les inégalités de revenus avec tact",
-            text: "Si quelqu'un dans le groupe a un budget plus serré, laissez-la contribuer différemment — organiser un dîner, coordonner la logistique, prendre en charge des petits frais — plutôt que de la mettre dans l'embarras ou de la laisser se sentir exclue. La générosité fonctionne mieux que les conversations de subsides maladroites.",
+            title: "Gère les inégalités de revenus avec tact",
+            text: "Si quelqu'un dans le groupe a un budget plus serré, laisse-la contribuer différemment — organiser un dîner, coordonner la logistique, prendre en charge des petits frais — plutôt que de la mettre dans l'embarras ou de la laisser se sentir exclue. La générosité fonctionne mieux que les conversations de subsides maladroites.",
           },
           {
-            title: "Utilisez un suivi de budget partagé dès le premier jour",
+            title: "Utilise un suivi de budget partagé dès le premier jour",
             text: "Des outils comme le suivi de budget intégré de WePlanify permettent à tout le monde de voir ce qui a été payé, ce qui est dû et quel sera le coût final par personne — sans que personne n'ait à chasser des tableurs ou des demandes de remboursement en fin de voyage.",
           },
         ],
@@ -522,7 +522,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
             tasks: [
               "Envoyer l'itinéraire final au groupe — un seul document propre, pas un fil de messages",
               "Réserver les restaurants pour les dîners de groupe",
-              "Acheter les décorations ou objets personnalisés (écharpes, etc.) si vous en utilisez",
+              "Acheter les décorations ou objets personnalisés (écharpes, etc.) si tu en utilises",
               "Créer une liste de bagages partagée pour que chacune sache qui apporte quoi en commun",
               "Relancer les paiements en attente ou les confirmations manquantes",
             ],
@@ -533,7 +533,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
               "Confirmer les détails d'arrivée à l'hébergement et les partager avec le groupe",
               "Préparer une petite trousse d'urgence : pansements, ibuprofène, chargeur, snacks",
               "Avoir le suivi de budget ouvert et à jour",
-              "Bien dormir — vous en aurez besoin",
+              "Bien dormir — tu en auras besoin",
             ],
           },
         ],
@@ -542,9 +542,9 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
         id: "activities",
         title: "Les activités",
         paragraphs: [
-          "Le meilleur programme d'EVJF a une structure claire mais beaucoup d'espace pour respirer. Les voyages trop chargés ressemblent à des sorties scolaires ; les voyages trop vides dérivent vers des disputes sur quoi faire ensuite. Visez une ou deux activités phares par jour, avec du temps libre intégré pour l'improvisation.",
-          "La règle d'or : assurez-vous qu'au moins une activité est choisie parce que la mariée l'aime vraiment, pas parce que c'est un classique de l'EVJF. Si elle déteste les ateliers cocktails mais adore la poterie, réservez la poterie. Si elle n'a jamais aimé les boîtes de nuit mais rêve d'un long dîner festif avec ses personnes préférées, donnez la priorité à ça. La version Instagram de l'EVJF n'est pas l'objectif.",
-          "Évitez le fun forcé. Les tenues assorties, les écharpes et les voiles sont bien si la mariée est partante — mais si elle a déjà mentionné que ça la mettrait mal à l'aise, ne le faites pas. Idem pour les jeux qui visent à embarrasser la mariée ou les activités qui nécessitent que tout le monde performe son bonheur. Le fun qui demande à chacune de simuler de s'amuser tombe toujours à plat.",
+          "Le meilleur programme d'EVJF a une structure claire mais beaucoup d'espace pour respirer. Les voyages trop chargés ressemblent à des sorties scolaires ; les voyages trop vides dérivent vers des disputes sur quoi faire ensuite. Vise une ou deux activités phares par jour, avec du temps libre intégré pour l'improvisation.",
+          "La règle d'or : assure-toi qu'au moins une activité est choisie parce que la mariée l'aime vraiment, pas parce que c'est un classique de l'EVJF. Si elle déteste les ateliers cocktails mais adore la poterie, réserve la poterie. Si elle n'a jamais aimé les boîtes de nuit mais rêve d'un long dîner festif avec ses personnes préférées, donne la priorité à ça. La version Instagram de l'EVJF n'est pas l'objectif.",
+          "Évite le fun forcé. Les tenues assorties, les écharpes et les voiles sont bien si la mariée est partante — mais si elle a déjà mentionné que ça la mettrait mal à l'aise, ne le fais pas. Idem pour les jeux qui visent à embarrasser la mariée ou les activités qui nécessitent que tout le monde performe son bonheur. Le fun qui demande à chacune de simuler de s'amuser tombe toujours à plat.",
         ],
         ideas: [
           {
@@ -562,7 +562,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
           {
             category: "En soirée",
             items: [
-              "Chef à domicile dans votre hébergement",
+              "Chef à domicile dans ton hébergement",
               "Réservation dans le restaurant que la mariée voulait tester depuis longtemps",
               "Atelier cocktails (seulement si elle le veut vraiment)",
               "Karaoké — vraiment sous-estimé pour les groupes mixtes",
@@ -582,7 +582,7 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
           },
         ],
         outro:
-          "Votez sur les activités via un sondage de groupe avant de réserver quoi que ce soit — ça évite le classique où l'organisatrice réserve quelque chose d'onéreux et deux personnes détestent ça. La fonctionnalité sondages de WePlanify prend trente secondes à configurer et donne une voix égale à chacune, sans débat de soixante messages dans le groupe.",
+          "Vote sur les activités via un sondage de groupe avant de réserver quoi que ce soit — ça évite le classique où l'organisatrice réserve quelque chose d'onéreux et deux personnes détestent ça. La fonctionnalité sondages de WePlanify prend trente secondes à configurer et donne une voix égale à chacune, sans débat de soixante messages dans le groupe.",
       },
     },
 
@@ -591,15 +591,15 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
       items: [
         {
           q: "Combien de temps à l'avance faut-il organiser un EVJF ?",
-          a: "Pour un week-end en voyage, trois mois c'est confortable — ça laisse le temps d'aligner les agendas de tout le monde, de réserver l'hébergement avant que les prix s'envolent et d'organiser les activités sans se précipiter. Si vous planifiez quelque chose de plus ambitieux (vols internationaux, location de villa, destinations à forte demande), prévoyez quatre à cinq mois. Pour une soirée locale ou un staycation simple, six semaines suffisent généralement. La plus grosse erreur, c'est d'attendre deux mois avant le mariage, quand l'agenda de tout le monde est déjà bloqué par les essayages de robes et les autres événements du mariage.",
+          a: "Pour un week-end en voyage, trois mois c'est confortable — ça laisse le temps d'aligner les agendas de tout le monde, de réserver l'hébergement avant que les prix s'envolent et d'organiser les activités sans se précipiter. Si tu planifies quelque chose de plus ambitieux (vols internationaux, location de villa, destinations à forte demande), prévois quatre à cinq mois. Pour une soirée locale ou un staycation simple, six semaines suffisent généralement. La plus grosse erreur, c'est d'attendre deux mois avant le mariage, quand l'agenda de tout le monde est déjà bloqué par les essayages de robes et les autres événements du mariage.",
         },
         {
           q: "Comment gérer les budgets différents dans le groupe ?",
-          a: "Abordez le sujet tôt et en privé. Demandez à chaque personne individuellement ce qu'elle est à l'aise de dépenser — pas dans un message de groupe où la pression sociale fausse les réponses. Trouvez la médiane et planifiez autour. Proposez des options supplémentaires payantes pour celles qui veulent dépenser plus, plutôt que de planifier un voyage cher en espérant que tout le monde se débrouille. Si quelqu'un ne peut vraiment pas se permettre le voyage tel qu'il est planifié, laissez-la contribuer différemment — coordonner la logistique, gérer la communication, prendre en charge un coût plus modeste — plutôt que de la mettre dans une situation inconfortable.",
+          a: "Aborde le sujet tôt et en privé. Demande à chaque personne individuellement ce qu'elle est à l'aise de dépenser — pas dans un message de groupe où la pression sociale fausse les réponses. Trouve la médiane et planifie autour. Propose des options supplémentaires payantes pour celles qui veulent dépenser plus, plutôt que de planifier un voyage cher en espérant que tout le monde se débrouille. Si quelqu'un ne peut vraiment pas se permettre le voyage tel qu'il est planifié, laisse-la contribuer différemment — coordonner la logistique, gérer la communication, prendre en charge un coût plus modeste — plutôt que de la mettre dans une situation inconfortable.",
         },
         {
           q: "Quel est un bon budget par personne pour un EVJF ?",
-          a: "Pour un city break en Europe, comptez entre 300 et 600 € par personne pour un séjour de trois nuits incluant transport, hébergement et quelques activités en optimisant les dépenses. Les séjours plage ou villa en Europe du Sud tournent entre 400 et 800 € par personne pour un long week-end. Les destinations de bord de mer françaises (Biarritz, Côte d'Azur, Bretagne) varient beaucoup selon la saison et la taille du groupe. N'oubliez pas : la future mariée ne paie traditionnellement pas sa part, donc intégrez ce coût dans votre calcul par personne dès le départ.",
+          a: "Pour un city break en Europe, compte entre 300 et 600 € par personne pour un séjour de trois nuits incluant transport, hébergement et quelques activités en optimisant les dépenses. Les séjours plage ou villa en Europe du Sud tournent entre 400 et 800 € par personne pour un long week-end. Les destinations de bord de mer françaises (Biarritz, Côte d'Azur, Bretagne) varient beaucoup selon la saison et la taille du groupe. N'oublie pas : la future mariée ne paie traditionnellement pas sa part, donc intègre ce coût dans ton calcul par personne dès le départ.",
         },
         {
           q: "Combien de personnes pour un EVJF ?",
@@ -611,14 +611,14 @@ const content: { en: ContentLocale; fr: ContentLocale } = {
         },
         {
           q: "Comment garder tout le monde contente ?",
-          a: "Vous n'y arriverez pas complètement — et essayer vous épuisera. Visez que tout le monde passe un bon moment la plupart du temps, pas le bonheur universel à chaque instant. Intégrez de la variété dans le programme : actif et relaxant, activités de groupe et temps libre, couchers tôt et soirées plus tardives. Utilisez des sondages pour les décisions collectives pour que personne ne se sente imposé quelque chose. Fixez des attentes claires dès le départ sur le budget, le niveau de formalité et ce qui est ou non prévu. Et acceptez que certaines personnes soient plus difficiles à contenter que d'autres — c'est vrai de tous les voyages de groupe, pas seulement des EVJF.",
+          a: "Tu n'y arriveras pas complètement — et essayer t'épuisera. Vise que tout le monde passe un bon moment la plupart du temps, pas le bonheur universel à chaque instant. Intègre de la variété dans le programme : actif et relaxant, activités de groupe et temps libre, couchers tôt et soirées plus tardives. Utilise des sondages pour les décisions collectives pour que personne ne se sente imposé quelque chose. Fixe des attentes claires dès le départ sur le budget, le niveau de formalité et ce qui est ou non prévu. Et accepte que certaines personnes soient plus difficiles à contenter que d'autres — c'est vrai de tous les voyages de groupe, pas seulement des EVJF.",
         },
       ],
     },
 
     cta: {
       title: "Prêt à Organiser l'EVJF Parfait ?",
-      text: "WePlanify réunit tout votre groupe au même endroit — sondages de destination, itinéraire partagé, suivi de budget et listes de bagages. Arrêtez de gérer le chaos dans un groupe WhatsApp et commencez vraiment à planifier ensemble.",
+      text: "WePlanify réunit tout ton groupe au même endroit — sondages de destination, itinéraire partagé, suivi de budget et listes de bagages. Arrête de gérer le chaos dans un groupe WhatsApp et commence vraiment à planifier ensemble.",
       button: "Organiser l'EVJF",
     },
 
@@ -932,14 +932,14 @@ export default async function OrganiserEvjfPage({ params }: Props) {
               </div>
               <p className="mt-6 text-[#001E13]/70 text-sm font-karla leading-relaxed">
                 {locale === "fr"
-                  ? "Vous organisez un EVJF ? "
+                  ? "Tu organises un EVJF ? "
                   : "Planning a bachelorette trip? "}
                 <Link
                   href={`/${locale}/bachelorette-trip`}
                   className="text-[#F6391A] font-semibold hover:underline"
                 >
                   {locale === "fr"
-                    ? "Découvrez comment WePlanify simplifie l'EVJF de bout en bout"
+                    ? "Découvre comment WePlanify simplifie l'EVJF de bout en bout"
                     : "See how WePlanify simplifies the whole bachelorette from start to finish"}
                 </Link>
                 {locale === "fr" ? "." : "."}
@@ -1140,7 +1140,7 @@ export default async function OrganiserEvjfPage({ params }: Props) {
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Tout ce qu'il faut pour organiser votre EVJF avec WePlanify : sondages, budget partagé et itinéraire collaboratif."
+                      ? "Tout ce qu'il faut pour organiser ton EVJF avec WePlanify : sondages, budget partagé et itinéraire collaboratif."
                       : "Everything you need to plan your bachelorette trip with WePlanify: polls, shared budget, and collaborative itinerary."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">

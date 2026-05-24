@@ -245,12 +245,12 @@ const content = {
       "Stippl est un planificateur de voyage visuel, mobile-first, avec des carnets de voyage, des reels automatiques et des itin\u00e9raires partag\u00e9s par la communaut\u00e9. WePlanify est con\u00e7u de A \u00e0 Z pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Voici un comparatif des deux applications.",
     verdictTitle: "En bref",
     verdict:
-      "Stippl propose une planification visuelle avec des carnets de voyage, des reels automatiques et des itin\u00e9raires communautaires. Cependant, il ne propose pas de sondages de groupe, de suivi de budget partag\u00e9, ni de support en fran\u00e7ais. WePlanify est con\u00e7u pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Choisissez Stippl pour la documentation solo, WePlanify pour la coordination de groupe.",
+      "Stippl propose une planification visuelle avec des carnets de voyage, des reels automatiques et des itin\u00e9raires communautaires. Cependant, il ne propose pas de sondages de groupe, de suivi de budget partag\u00e9, ni de support en fran\u00e7ais. WePlanify est con\u00e7u pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Choisis Stippl pour la documentation solo, WePlanify pour la coordination de groupe.",
     comparisonTitle: "Comparatif Face \u00e0 Face",
     stipplShinesTitle: "L\u00e0 o\u00f9 Stippl se D\u00e9marque",
     stipplShinesPoints: [
       "Moteur de planification nuit-jour \u2014 une approche qui relie les h\u00e9bergements aux activit\u00e9s \u00e0 proximit\u00e9 pour la planification jour par jour. Ne comprend pas de sondages de groupe ni de suivi de budget.",
-      "Carnets de voyage et reels automatiques \u2014 documentez votre voyage en photos et l\u2019application g\u00e9n\u00e8re des reels. C\u2019est une fonctionnalit\u00e9 post-voyage, pas un outil de planification.",
+      "Carnets de voyage et reels automatiques \u2014 documente ton voyage en photos et l\u2019application g\u00e9n\u00e8re des reels. C\u2019est une fonctionnalit\u00e9 post-voyage, pas un outil de planification.",
       "Itin\u00e9raires communautaires \u2014 parcourez et clonez les itin\u00e9raires partag\u00e9s par d\u2019autres voyageurs. Utile pour l\u2019inspiration solo, moins pour la prise de d\u00e9cision en groupe.",
       "Exp\u00e9rience mobile-first \u2014 applications natives iOS et Android pour planifier en d\u00e9placement. Pas de support en fran\u00e7ais et pas d\u2019acc\u00e8s web sur ordinateur.",
     ],
@@ -287,10 +287,10 @@ const content = {
       },
       {
         q: "Quelle application est meilleure pour documenter un voyage ?",
-        a: "Stippl propose des carnets de voyage et des reels automatiques pour capturer vos souvenirs. WePlanify se concentre sur la phase de planification et de coordination plut\u00f4t que sur la documentation post-voyage. Si la documentation est votre priorit\u00e9 plut\u00f4t que les outils de planification de groupe, Stippl couvre ce cas d\u2019usage.",
+        a: "Stippl propose des carnets de voyage et des reels automatiques pour capturer tes souvenirs. WePlanify se concentre sur la phase de planification et de coordination plut\u00f4t que sur la documentation post-voyage. Si la documentation est ta priorit\u00e9 plut\u00f4t que les outils de planification de groupe, Stippl couvre ce cas d\u2019usage.",
       },
     ],
-    ctaTitle: "Essayez WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
+    ctaTitle: "Essaie WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
     ctaButton: "Commencer gratuitement",
     crossLinksTitle: "D\u00e9couvrir aussi",
     basic: "Basique",
@@ -755,7 +755,7 @@ export default async function StipplComparisonPage({ params }: Props) {
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Comparez WePlanify avec toutes les applications de voyage de groupe populaires."
+                      ? "Compare WePlanify avec toutes les applications de voyage de groupe populaires."
                       : "Compare WePlanify with all popular group trip planning apps."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">

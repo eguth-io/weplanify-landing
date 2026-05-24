@@ -269,7 +269,7 @@ const content = {
     squadtripShinesPoints: [
       {
         title: "Collecte de paiements",
-        desc: "SquadTrip permet aux organisateurs de collecter les paiements des participants. Si votre voyage de groupe implique de collecter des acomptes, répartir les coûts d'hébergement ou gérer des décharges, SquadTrip s'en charge.",
+        desc: "SquadTrip permet aux organisateurs de collecter les paiements des participants. Si ton voyage de groupe implique de collecter des acomptes, répartir les coûts d'hébergement ou gérer des décharges, SquadTrip s'en charge.",
       },
       {
         title: "Formulaires et décharges",
@@ -277,18 +277,18 @@ const content = {
       },
       {
         title: "Organisation professionnelle de voyages",
-        desc: "Si vous gérez une agence de voyage ou organisez des voyages de groupe professionnellement, SquadTrip propose des fonctionnalités de paiement et de logistique orientées vers cet usage.",
+        desc: "Si tu gères une agence de voyage ou organises des voyages de groupe professionnellement, SquadTrip propose des fonctionnalités de paiement et de logistique orientées vers cet usage.",
       },
     ],
     weplanifyWinsTitle: "Les Avantages de WePlanify",
     weplanifyWinsPoints: [
       {
         title: "Prise de décision en groupe",
-        desc: "WePlanify propose des sondages et votes intégrés pour que votre groupe puisse décider ensemble des destinations, dates et activités. Fini les discussions interminables sur WhatsApp — tout le monde vote, le groupe décide.",
+        desc: "WePlanify propose des sondages et votes intégrés pour que ton groupe puisse décider ensemble des destinations, dates et activités. Fini les discussions interminables sur WhatsApp — tout le monde vote, le groupe décide.",
       },
       {
         title: "100% gratuit, sans frais cachés",
-        desc: "Toutes les fonctionnalités principales de WePlanify sont gratuites. Pas de frais de traitement de paiement, pas de niveaux premium pour les outils essentiels. Planifiez des voyages illimités à coût zéro.",
+        desc: "Toutes les fonctionnalités principales de WePlanify sont gratuites. Pas de frais de traitement de paiement, pas de niveaux premium pour les outils essentiels. Planifie des voyages illimités à coût zéro.",
       },
       {
         title: "Boîte à outils de planification complète",
@@ -300,24 +300,24 @@ const content = {
       },
     ],
     whoShouldTitle: "Qui Devrait Choisir Quoi ?",
-    chooseSquadtrip: "Choisissez SquadTrip si",
+    chooseSquadtrip: "Choisis SquadTrip si",
     chooseSquadtripPoints: [
-      "Vous devez collecter des paiements auprès des participants",
-      "Vous organisez des voyages professionnellement et avez besoin de formulaires/décharges",
-      "La logistique de paiement est votre plus grand casse-tête de planification",
+      "Tu dois collecter des paiements auprès des participants",
+      "Tu organises des voyages professionnellement et as besoin de formulaires/décharges",
+      "La logistique de paiement est ton plus grand casse-tête de planification",
     ],
-    chooseWeplanify: "Choisissez WePlanify si",
+    chooseWeplanify: "Choisis WePlanify si",
     chooseWeplanifyPoints: [
-      "Vous voulez que tout votre groupe planifie ensemble de manière collaborative",
-      "Vous avez besoin de sondages, budgets partagés et listes de bagages dans une seule application",
-      "Vous voulez une solution entièrement gratuite sans frais",
-      "Votre groupe comprend des membres francophones",
+      "Tu veux que tout ton groupe planifie ensemble de manière collaborative",
+      "Tu as besoin de sondages, budgets partagés et listes de bagages dans une seule application",
+      "Tu veux une solution entièrement gratuite sans frais",
+      "Ton groupe comprend des membres francophones",
     ],
     faqTitle: "Questions Fréquentes",
     faqs: [
       {
         q: "Pourquoi passer de SquadTrip \u00e0 WePlanify ?",
-        a: "SquadTrip est construit autour de la collecte de paiements, ce qui signifie que les outils de planification comme les sondages, les budgets partag\u00e9s et les listes de bagages sont absents. Si votre groupe a besoin de d\u00e9cider ensemble des destinations, suivre les d\u00e9penses et s\u2019organiser collectivement, WePlanify couvre tout cela \u2014 enti\u00e8rement gratuitement.",
+        a: "SquadTrip est construit autour de la collecte de paiements, ce qui signifie que les outils de planification comme les sondages, les budgets partag\u00e9s et les listes de bagages sont absents. Si ton groupe a besoin de d\u00e9cider ensemble des destinations, suivre les d\u00e9penses et s\u2019organiser collectivement, WePlanify couvre tout cela \u2014 enti\u00e8rement gratuitement.",
       },
       {
         q: "Que manque-t-il \u00e0 SquadTrip ?",
@@ -328,7 +328,7 @@ const content = {
         a: "SquadTrip propose des pages de voyage gratuites, mais sa valeur principale est la collecte de paiements, qui implique des frais de traitement. WePlanify est 100% gratuit sans frais de transaction \u2014 toutes les fonctionnalit\u00e9s sont incluses sans co\u00fbt.",
       },
     ],
-    ctaTitle: "Prêt à planifier votre prochain voyage de groupe ?",
+    ctaTitle: "Prêt à planifier ton prochain voyage de groupe ?",
     ctaButton: "Commencer gratuitement",
     crossLinksTitle: "Découvrir Aussi",
     free100: "100% gratuit",
@@ -652,7 +652,7 @@ export default async function SquadTripComparisonPage({ params }: Props) {
         {/* ---------------------------------------------------------------- */}
         <div className="text-center py-8">
           <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="text-[#F6391A] font-karla font-bold hover:underline">
-            {locale === "fr" ? "Essayez WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
+            {locale === "fr" ? "Essaie WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
           </Link>
         </div>
 
@@ -821,7 +821,7 @@ export default async function SquadTripComparisonPage({ params }: Props) {
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"
-                      ? "Comparez WePlanify avec Wanderlog, SquadTrip, Troupe et TripIt dans notre comparatif complet."
+                      ? "Compare WePlanify avec Wanderlog, SquadTrip, Troupe et TripIt dans notre comparatif complet."
                       : "Compare WePlanify with Wanderlog, SquadTrip, Troupe and TripIt in our full comparison."}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
