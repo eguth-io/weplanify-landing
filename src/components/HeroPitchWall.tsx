@@ -111,7 +111,7 @@ const BUBBLES: Record<Lang, Bubble[]> = {
   fr: [
     { text: 'Un truc chaud en mars avec 4 potes', color: 'lime', x: 6, y: 18, rotate: -4, delay: 0 },
     { text: 'Honeymoon sans les touristes', color: 'cream', x: 78, y: 14, rotate: 3, delay: 0.6 },
-    { text: 'Japon en famille, pas crevé', color: 'orange', x: 82, y: 58, rotate: -2, delay: 1.2, desktopOnly: true },
+    { text: 'Japon en famille, sans s\'épuiser', color: 'orange', x: 82, y: 58, rotate: -2, delay: 1.2, desktopOnly: true },
     { text: 'EVJF à Lisbonne, 3 jours max', color: 'white', x: 4, y: 62, rotate: 2, delay: 0.3, desktopOnly: true },
     { text: 'Road trip voir les aurores', color: 'lime', x: 70, y: 80, rotate: -3, delay: 1.6, desktopOnly: true },
     { text: 'Dépaysement en novembre, pas loin', color: 'cream', x: 10, y: 84, rotate: 4, delay: 0.9, desktopOnly: true },
@@ -121,7 +121,7 @@ const BUBBLES: Record<Lang, Bubble[]> = {
 const BUBBLE_CLASSES: Record<Bubble['color'], string> = {
   lime: 'bg-[#EEF899] text-[#001E13]',
   cream: 'bg-[#FFFBF5] text-[#001E13]',
-  orange: 'bg-orange/90 text-white',
+  orange: 'bg-orange text-white',
   white: 'bg-white/95 text-[#001E13]',
 };
 
