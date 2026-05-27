@@ -53,6 +53,33 @@ function SocialIcon({ platform }: { platform: string }) {
   );
 }
 
+// Reusable social media links (Instagram, TikTok). Moved up into the CTA column
+// for better visibility / conversion (WP-323), while still kept in the footer bottom bar.
+function SocialLinks({ className = "" }: { className?: string }) {
+  return (
+    <div className={`flex items-center gap-4 ${className}`}>
+      <a
+        href="https://www.instagram.com/weplanify"
+        className="text-[#001E13] hover:text-[#F6391A] transition-colors"
+        aria-label="Instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <SocialIcon platform="instagram" />
+      </a>
+      <a
+        href="https://www.tiktok.com/@weplanify"
+        className="text-[#001E13] hover:text-[#F6391A] transition-colors"
+        aria-label="TikTok"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <SocialIcon platform="tiktok" />
+      </a>
+    </div>
+  );
+}
+
 interface FooterProps {
   footerData?: FooterType | null;
 }
@@ -258,6 +285,13 @@ export default function Footer({ footerData }: FooterProps) {
                   </button>
                 </Link>
               )}
+              {/* Social links surfaced in the CTA column for visibility (WP-323) */}
+              <div className="mt-8">
+                <p className="text-[#001E13] text-sm font-karla font-bold mb-3">
+                  {locale === "fr" ? "Suivez-nous" : "Follow us"}
+                </p>
+                <SocialLinks />
+              </div>
             </div>
           ) : (
             /* Default Newsletter Section when no CTA is configured */
@@ -292,20 +326,21 @@ export default function Footer({ footerData }: FooterProps) {
                   </button>
                 </form>
               )}
+              {/* Social links surfaced in the CTA column for visibility (WP-323) */}
+              <div className="mt-8">
+                <p className="text-[#001E13] text-sm font-karla font-bold mb-3">
+                  {locale === "fr" ? "Suivez-nous" : "Follow us"}
+                </p>
+                <SocialLinks />
+              </div>
             </div>
           )}
         </div>
 
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 lg:pt-10 border-t border-[#001E13]/10">
-          {/* Social Links + Product Hunt */}
+          {/* Product Hunt badge (social icons moved up to the CTA column — WP-323) */}
           <div className="flex flex-wrap gap-4 items-center order-2 md:order-1">
-            <a href="https://www.instagram.com/weplanify" className="text-[#001E13] hover:text-[#F6391A] transition-colors" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-              <SocialIcon platform="instagram" />
-            </a>
-            <a href="https://www.tiktok.com/@weplanify" className="text-[#001E13] hover:text-[#F6391A] transition-colors" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-              <SocialIcon platform="tiktok" />
-            </a>
             <a
               href="https://www.producthunt.com/products/weplanify?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-weplanify"
               target="_blank"
