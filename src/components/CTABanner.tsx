@@ -45,7 +45,7 @@ export default function CTABanner({ locale = "en" }: CTABannerProps) {
   const content = CONTENT[lang];
 
   return (
-    <div className="px-4 lg:px-8 pt-8 lg:pt-12">
+    <div className="px-4 lg:px-8 pb-2 lg:pb-3">
       <div className="max-w-[1536px] mx-auto">
         <section className="relative overflow-hidden rounded-[24px] lg:rounded-[40px] min-h-[600px] lg:min-h-[700px]">
           <div className="absolute inset-0 z-0">
