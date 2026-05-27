@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { trackEvent } from "@/lib/tracking";
 
@@ -215,6 +216,17 @@ export default function FAQSupport({ locale = "en" }: FAQSupportProps) {
               <p className="text-[#001E13] text-sm lg:text-base font-karla font-semibold leading-relaxed whitespace-pre-line">
                 {content.supportDescription}
               </p>
+              <Image
+                src="/faq-support.webp"
+                alt={
+                  lang === "fr"
+                    ? "Des amis planifient leur voyage de groupe autour d'un ordinateur et d'une carte"
+                    : "Friends planning their group trip together around a laptop and a map"
+                }
+                width={760}
+                height={950}
+                className="mt-6 lg:mt-8 w-full h-auto rounded-[20px] lg:rounded-[24px] object-cover"
+              />
             </div>
 
             <div className="mt-8 lg:mt-12">
