@@ -187,7 +187,7 @@ export default async function HomePage({ params }: Props) {
       {/* Scrolling Banner Section */}
       {banner?.items && banner.items.length > 0 && (
         <div
-          className="py-4 lg:py-6 overflow-hidden"
+          className="py-2 lg:py-3 overflow-hidden"
           style={{
             backgroundColor: banner.backgroundColor || "#61DBD5",
             color: banner.textColor || "#001E13",
@@ -197,10 +197,10 @@ export default async function HomePage({ params }: Props) {
             <div className="flex items-center gap-8 lg:gap-12">
               {banner.items.map((item, index) => (
                 <>
-                  <span key={`item-${index}`} className="text-xl lg:text-3xl font-londrina-solid">
+                  <span key={`item-${index}`} className="text-base lg:text-xl font-londrina-solid">
                     {item}
                   </span>
-                  <span key={`dot-${index}`} className="text-xl lg:text-3xl">
+                  <span key={`dot-${index}`} className="text-base lg:text-xl">
                     •
                   </span>
                 </>
@@ -209,10 +209,10 @@ export default async function HomePage({ params }: Props) {
             <div className="flex items-center gap-8 lg:gap-12 ml-8 lg:ml-12">
               {banner.items.map((item, index) => (
                 <>
-                  <span key={`item2-${index}`} className="text-xl lg:text-3xl font-londrina-solid">
+                  <span key={`item2-${index}`} className="text-base lg:text-xl font-londrina-solid">
                     {item}
                   </span>
-                  <span key={`dot2-${index}`} className="text-xl lg:text-3xl">
+                  <span key={`dot2-${index}`} className="text-base lg:text-xl">
                     •
                   </span>
                 </>
