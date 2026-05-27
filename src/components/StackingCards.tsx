@@ -240,7 +240,7 @@ export default function StackingCards({ locale = "en" }: StackingCardsProps) {
 
   return (
     <div ref={containerRef} className="bg-[#FFFBF5]">
-      <div className="max-w-[1536px] mx-auto px-4 lg:px-8 pt-12 lg:pt-20 pb-6 lg:pb-10">
+      <div className="max-w-[1536px] mx-auto px-4 lg:px-8 pt-8 lg:pt-12 pb-6 lg:pb-10">
         <h2 className="text-[#001E13] text-4xl lg:text-5xl xl:text-6xl font-londrina-solid text-center">
           {title}
         </h2>
