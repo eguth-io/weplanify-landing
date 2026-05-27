@@ -11,7 +11,9 @@ const TestimonialCarousel = dynamic(() => import("@/components/TestimonialCarous
 const StatsBlock = dynamic(() => import("@/components/StatsBlock"));
 const CTABanner = dynamic(() => import("@/components/CTABanner"));
 const FeatureImageSection = dynamic(() => import("@/components/FeatureImageSection"));
+const InstagramSlider = dynamic(() => import("@/components/InstagramSlider"));
 import Image from "next/image";
+import { getInstagramPosts } from "@/lib/instagram";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import {
@@ -35,10 +37,11 @@ export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   // Fetch all data from Sanity with locale filter
-  const [landingPageData, navigationData, footerData] = await Promise.all([
+  const [landingPageData, navigationData, footerData, instagramPosts] = await Promise.all([
     client.fetch<LandingPage>(landingPageQuery, { locale }),
     client.fetch<Navigation>(navigationQuery, { locale }),
     client.fetch<FooterDataType>(footerQuery, { locale }),
+    getInstagramPosts(),
   ]);
 
   // Fallback if data is not yet filled in Sanity
@@ -242,6 +245,11 @@ export default async function HomePage({ params }: Props) {
         <div id="faq">
           <FAQSupport locale={locale} />
         </div>
+      </FadeIn>
+
+      {/* Instagram feed */}
+      <FadeIn>
+        <InstagramSlider posts={instagramPosts} locale={locale} />
       </FadeIn>
 
       {/* Footer */}
