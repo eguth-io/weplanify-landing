@@ -381,40 +381,34 @@ export function ExplorerCards({
   locale?: string;
   layout?: 'grid' | 'list';
 }) {
+  // WP-317: simplified feature animation. The previous version was a busy,
+  // multi-stage choreography — it auto-cycled through the 4 filters on a timer,
+  // crossfaded the whole card grid with AnimatePresence, staggered per-card
+  // spring entries, swapped the map tile, spring-popped the price pins and ran
+  // a "+ → ✓" add-to-trip pulse on the headliner. Per the ticket this reads as
+  // too much. The explorer is now a calm, static panel: the user clicks the
+  // filter tabs to switch category, and the whole panel does one gentle
+  // fade-in when it scrolls into view. All content (cards, map, pins, tabs) is
+  // preserved — only the motion is toned down.
   const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
   const [activeFilter, setActiveFilter] = useState<ExplorerCategoryKey>(EXPLORER_FILTER_KEYS[0]);
-  const [added, setAdded] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(autoPlay);
   const isList = layout === 'list';
-
-  useEffect(() => {
-    setIsPlaying(autoPlay);
-  }, [autoPlay]);
-
-  useEffect(() => {
-    if (!isPlaying) return;
-    // Each cycle: ~4s per filter — long enough to read all 4 cards.
-    const addTimer = setTimeout(() => setAdded(true), 2800);
-    const nextTimer = setTimeout(() => {
-      setAdded(false);
-      setActiveFilter((prev) => {
-        const i = EXPLORER_FILTER_KEYS.indexOf(prev);
-        return EXPLORER_FILTER_KEYS[(i + 1) % EXPLORER_FILTER_KEYS.length];
-      });
-    }, 4200);
-    return () => {
-      clearTimeout(addTimer);
-      clearTimeout(nextTimer);
-    };
-  }, [activeFilter, isPlaying]);
+  // No more auto-cycling / "added" pulse. The add button stays in its default
+  // (un-added) state; tabs remain clickable so the panel is still explorable.
+  const added = false;
 
   const cards = EXPLORER_CARDS_BY_LANG[lang];
   const category = cards[activeFilter];
 
   return (
-    <div
+    <motion.div
+      // One gentle fade-in on mount, then it stays put — no looping, no
+      // auto-cycling. `autoPlay` is kept in the signature for API compatibility
+      // with the other animation components but no longer drives any motion.
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
       className="relative min-h-[280px] lg:min-h-[420px] h-full w-full overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-white p-4 lg:p-5 border border-slate-200/60"
-      onMouseEnter={() => setIsPlaying(true)}
     >
       {/* Preload every suggestion thumbnail so cycle frames don't flash empty. */}
       <div aria-hidden className="hidden">
@@ -432,19 +426,21 @@ export function ExplorerCards({
           const Icon = Icons[f.icon];
           const isActive = f.key === activeFilter;
           return (
-            <motion.div
+            // Plain clickable tab (simple CSS transition, no framer-motion):
+            // switching category is now a user action rather than an auto-cycle.
+            <button
+              type="button"
               key={f.key}
-              animate={{ backgroundColor: isActive ? '#FFFFFF' : 'rgba(255,255,255,0)' }}
-              transition={{ duration: 0.2 }}
-              className={`flex items-center gap-1.5 rounded-full px-2 lg:px-3 py-1 transition-shadow ${
-                isActive ? 'shadow-sm' : ''
+              onClick={() => setActiveFilter(f.key)}
+              className={`flex items-center gap-1.5 rounded-full px-2 lg:px-3 py-1 transition-colors ${
+                isActive ? 'bg-white shadow-sm' : 'bg-transparent'
               }`}
             >
               <Icon className={`w-3 h-3 ${isActive ? 'text-slate-900' : 'text-slate-500'}`} />
               <span className={`text-[11px] font-medium ${isActive ? 'text-slate-900' : 'text-slate-500'}`}>
                 {f.label[lang]}
               </span>
-            </motion.div>
+            </button>
           );
         })}
       </div>
@@ -452,20 +448,17 @@ export function ExplorerCards({
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-3 lg:gap-4 items-stretch">
         {/* Suggestion grid — mirrors explorer.desktop.view.tsx's
             sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 vertical-card layout.
-            Each card is image-top / content-below like explorer-item-card.tsx. */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeFilter}
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ type: 'spring', stiffness: 320, damping: 28 }}
+            Each card is image-top / content-below like explorer-item-card.tsx.
+            WP-317: rendered statically (no AnimatePresence crossfade / spring
+            stagger). Tab clicks swap the grid instantly. */}
+          <div
             className={`grid content-start ${
               isList ? 'grid-cols-1 gap-2' : 'grid-cols-2 gap-2 lg:gap-2.5'
             }`}
           >
             {category.suggestions.map((sugg, idx) => {
-              // Only the headliner (first card) plays the +→✓ animation.
+              // WP-317: the headliner used to play a +→✓ add-to-trip pulse; it
+              // now stays in its default (un-added) state since `added` is off.
               const isHeadliner = idx === 0;
               const showAdded = isHeadliner && added;
               const providerLogo = EXPLORER_PROVIDER_LOGO[sugg.provider];
@@ -479,11 +472,8 @@ export function ExplorerCards({
                 // Compact horizontal layout for list mode: icon | route summary | price
                 if (isList) {
                   return (
-                    <motion.div
+                    <div
                       key={`${activeFilter}-${idx}`}
-                      initial={{ opacity: 0, y: 6 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
                       className="relative flex flex-row items-center gap-3 rounded-2xl bg-white p-3 shadow-sm border border-slate-200/70 h-20 lg:h-24"
                     >
                       {/* Route mode icon (left, small) */}
@@ -513,46 +503,32 @@ export function ExplorerCards({
 
                       {/* Right: price + add button stacked */}
                       <div className="flex flex-col items-end gap-1 shrink-0">
-                        <motion.div
-                          key={`btn-${activeFilter}-${idx}-${showAdded}`}
-                          animate={showAdded ? { scale: [1, 1.15, 1] } : { scale: 1 }}
-                          transition={{ duration: 0.4 }}
+                        <div
+                          className="flex w-6 h-6 items-center justify-center rounded-full border border-slate-200 bg-white transition-colors"
+                          style={{ backgroundColor: showAdded ? colors.mintDark : '#FFFFFF' }}
                         >
-                          <div
-                            className="flex w-6 h-6 items-center justify-center rounded-full border border-slate-200 bg-white transition-colors"
-                            style={{ backgroundColor: showAdded ? colors.mintDark : '#FFFFFF' }}
-                          >
-                            {showAdded ? (
-                              <Icons.Check className="w-3 h-3 text-white" />
-                            ) : (
-                              <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                                <line x1="12" x2="12" y1="5" y2="19" />
-                                <line x1="5" x2="19" y1="12" y2="12" />
-                              </svg>
-                            )}
-                          </div>
-                        </motion.div>
+                          {showAdded ? (
+                            <Icons.Check className="w-3 h-3 text-white" />
+                          ) : (
+                            <svg className="w-3 h-3 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                              <line x1="12" x2="12" y1="5" y2="19" />
+                              <line x1="5" x2="19" y1="12" y2="12" />
+                            </svg>
+                          )}
+                        </div>
                         <span className="text-[12px] font-bold text-slate-900 leading-none">{sugg.price}</span>
                       </div>
-                    </motion.div>
+                    </div>
                   );
                 }
 
                 return (
-                  <motion.div
+                  <div
                     key={`${activeFilter}-${idx}`}
-                    initial={{ opacity: 0, y: 6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
                     className="relative flex flex-col rounded-2xl bg-white p-2.5 lg:p-3 shadow-sm border border-slate-200/70 h-44 lg:h-52"
                   >
                     {/* +/Check button top-right */}
-                    <motion.div
-                      key={`btn-${activeFilter}-${idx}-${showAdded}`}
-                      animate={showAdded ? { scale: [1, 1.15, 1] } : { scale: 1 }}
-                      transition={{ duration: 0.4 }}
-                      className="absolute top-2 right-2 z-10"
-                    >
+                    <div className="absolute top-2 right-2 z-10">
                       <div
                         className="flex w-6 h-6 items-center justify-center rounded-full border border-slate-200 bg-white transition-colors"
                         style={{ backgroundColor: showAdded ? colors.mintDark : '#FFFFFF' }}
@@ -566,7 +542,7 @@ export function ExplorerCards({
                           </svg>
                         )}
                       </div>
-                    </motion.div>
+                    </div>
 
                     {/* Header: title + duration */}
                     <div className="pr-7">
@@ -619,16 +595,13 @@ export function ExplorerCards({
                       </span>
                       <span className="text-[12px] font-bold text-slate-900">{sugg.price}</span>
                     </div>
-                  </motion.div>
+                  </div>
                 );
               }
 
               return (
-                <motion.div
+                <div
                   key={`${activeFilter}-${idx}`}
-                  initial={{ opacity: 0, y: 6 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: idx * 0.06, type: 'spring', stiffness: 320, damping: 28 }}
                   className={`${
                     isList ? 'flex flex-row h-20 lg:h-24' : 'flex flex-col h-44 lg:h-52'
                   } rounded-2xl overflow-hidden bg-white shadow-sm transition-all duration-200 border ${
@@ -703,12 +676,7 @@ export function ExplorerCards({
                     )}
 
                     {/* +/check button top-right (z-30 like the live card) */}
-                    <motion.div
-                      key={`btn-${activeFilter}-${idx}-${showAdded}`}
-                      animate={showAdded || sugg.booked ? { scale: [1, 1.15, 1] } : { scale: 1 }}
-                      transition={{ duration: 0.4 }}
-                      className="absolute top-1.5 right-1.5 z-30"
-                    >
+                    <div className="absolute top-1.5 right-1.5 z-30">
                       <div
                         className="flex w-6 h-6 items-center justify-center rounded-full backdrop-blur-sm transition-colors"
                         style={{
@@ -728,7 +696,7 @@ export function ExplorerCards({
                           </svg>
                         )}
                       </div>
-                    </motion.div>
+                    </div>
 
                     {/* Provider affiliate badge bottom-left (z-20) — real
                         WrapperAffiliationPartner min variant: black/50 pill
@@ -793,11 +761,10 @@ export function ExplorerCards({
                       </span>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
-          </motion.div>
-        </AnimatePresence>
+          </div>
 
         {/* Mapbox outdoors-v12 panel — same style the live Explorer
             renders by default (light terrain + arrondissement labels). */}
@@ -808,18 +775,14 @@ export function ExplorerCards({
             <img src="/explorer-mockup/map-transport.png" alt="" loading="eager" />
           </div>
 
-          <AnimatePresence mode="wait">
-            <motion.img
-              key={activeFilter}
-              src={MAP_TILE_FOR(category.map)}
-              alt={`Map — ${activeFilter}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.25 }}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </AnimatePresence>
+          {/* WP-317: static map tile — swaps instantly on tab click instead of
+              the previous AnimatePresence crossfade. */}
+          <img
+            key={activeFilter}
+            src={MAP_TILE_FOR(category.map)}
+            alt={`Map — ${activeFilter}`}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
 
           {/* HTML pin overlay — projected from item lon/lat to the tile's
               pixel space (Web Mercator, same projection Mapbox renders) so
@@ -830,11 +793,9 @@ export function ExplorerCards({
             const pos = mercatorOffsetPct(s.lon, s.lat, category.map, MAP_TILE_W, MAP_TILE_H);
             if (pos.xPct < 0 || pos.xPct > 100 || pos.yPct < 0 || pos.yPct > 100) return null;
             return (
-              <motion.div
+              // WP-317: static pin — no spring-pop entry animation.
+              <div
                 key={`pin-${activeFilter}-${i}`}
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: i * 0.06, type: 'spring', stiffness: 380, damping: 22 }}
                 className="absolute z-10 pointer-events-none"
                 style={{ left: `${pos.xPct}%`, top: `${pos.yPct}%`, transform: 'translate(-50%, -100%)' }}
               >
@@ -855,7 +816,7 @@ export function ExplorerCards({
                     }}
                   />
                 </div>
-              </motion.div>
+              </div>
             );
           })}
 
@@ -866,7 +827,7 @@ export function ExplorerCards({
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
