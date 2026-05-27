@@ -58,7 +58,7 @@ export default function StatsBlock({ locale = "en" }: StatsBlockProps) {
                 </svg>
               )}
             </div>
-            <p className="text-[#001E13] text-xs lg:text-sm font-nanum-pen">
+            <p className="text-[#001E13] text-base lg:text-lg font-nanum-pen">
               {stat.label}
             </p>
           </div>
