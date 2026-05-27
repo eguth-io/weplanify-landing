@@ -225,7 +225,7 @@ export default function FAQSupport({ locale = "en" }: FAQSupportProps) {
                 }
                 width={760}
                 height={950}
-                className="mt-6 lg:mt-8 w-full h-auto rounded-[20px] lg:rounded-[24px] object-cover"
+                className="mt-6 lg:mt-8 mx-auto w-full max-w-[300px] h-auto rounded-[20px] lg:rounded-[24px] object-cover"
               />
             </div>
 
