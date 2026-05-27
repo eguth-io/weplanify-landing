@@ -373,10 +373,11 @@ function mercatorOffsetPct(
 }
 
 export function ExplorerCards({
-  autoPlay = true,
   locale = 'en',
   layout = 'grid',
 }: {
+  // autoPlay is still accepted for API compatibility with the other animation
+  // components, but no longer drives any motion since WP-317 (see below).
   autoPlay?: boolean;
   locale?: string;
   layout?: 'grid' | 'list';
