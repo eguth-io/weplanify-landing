@@ -143,7 +143,7 @@ export default function FAQSupport({ locale = "en" }: FAQSupportProps) {
   };
 
   return (
-    <div className="px-4 lg:px-8 pb-4 lg:pb-6 pt-2 lg:pt-3">
+    <div className="px-4 lg:px-8 pt-8 lg:pt-12 pb-4 lg:pb-6">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
