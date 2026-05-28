@@ -88,7 +88,7 @@ export default function InstagramSlider({ posts, locale = "en" }: InstagramSlide
               href={post.permalink}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative shrink-0 snap-start w-[220px] lg:w-[260px] aspect-[9/16] rounded-[24px] overflow-hidden bg-[#001E13]/5"
+              className="group relative shrink-0 snap-start w-[260px] lg:w-[320px] aspect-[4/5] rounded-[24px] overflow-hidden bg-[#001E13]/5"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
