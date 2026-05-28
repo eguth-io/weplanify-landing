@@ -97,9 +97,9 @@ export default function InstagramSlider({ posts, locale = "en" }: InstagramSlide
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-4 px-4">
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent pt-14 pb-4 px-4">
                 {post.caption ? (
-                  <p className="text-white text-sm font-karla leading-snug line-clamp-3 drop-shadow-sm">
+                  <p className="text-white text-sm lg:text-base font-karla leading-snug line-clamp-2 drop-shadow-sm">
                     {post.caption}
                   </p>
                 ) : null}
