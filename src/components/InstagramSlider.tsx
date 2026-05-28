@@ -34,7 +34,7 @@ export default function InstagramSlider({ posts, locale = "en" }: InstagramSlide
   }
 
   const scrollByCards = (direction: 1 | -1) => {
-    scrollerRef.current?.scrollBy({ left: direction * 320, behavior: "smooth" });
+    scrollerRef.current?.scrollBy({ left: direction * 280, behavior: "smooth" });
   };
 
   return (
@@ -88,7 +88,7 @@ export default function InstagramSlider({ posts, locale = "en" }: InstagramSlide
               href={post.permalink}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative shrink-0 snap-start w-[240px] lg:w-[280px] aspect-square rounded-[24px] overflow-hidden"
+              className="group relative shrink-0 snap-start w-[220px] lg:w-[260px] aspect-[9/16] rounded-[24px] overflow-hidden bg-[#001E13]/5"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -97,13 +97,13 @@ export default function InstagramSlider({ posts, locale = "en" }: InstagramSlide
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              {post.caption ? (
-                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/55 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-sm font-karla leading-snug p-4 line-clamp-3">
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-4 px-4">
+                {post.caption ? (
+                  <p className="text-white text-sm font-karla leading-snug line-clamp-3 drop-shadow-sm">
                     {post.caption}
                   </p>
-                </div>
-              ) : null}
+                ) : null}
+              </div>
             </a>
           ))}
         </div>
