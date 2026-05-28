@@ -74,7 +74,7 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://api.weplanify.com";
 export async function getInstagramPosts(limit = 8): Promise<InstagramPost[]> {
   try {
     const res = await fetch(`${API_URL}/api/social-posts`, {
-      next: { revalidate: 3600 },
+      next: { revalidate: 3600, tags: ["social-posts"] },
     });
     if (!res.ok) {
       return MOCK_POSTS.slice(0, limit);
