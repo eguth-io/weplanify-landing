@@ -249,6 +249,33 @@ export default async function HomePage({ params }: Props) {
 
       {/* Instagram feed */}
       <FadeIn>
+        {instagramPosts.length > 0 ? (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                name: "WePlanify on Instagram",
+                itemListElement: instagramPosts.map((post, i) => ({
+                  "@type": "ListItem",
+                  position: i + 1,
+                  item: {
+                    "@type": "SocialMediaPosting",
+                    headline: (post.altText || post.caption).slice(0, 110),
+                    url: post.permalink,
+                    image: post.imageUrl,
+                    author: {
+                      "@type": "Organization",
+                      name: "WePlanify",
+                      url: "https://www.weplanify.com",
+                    },
+                  },
+                })),
+              }),
+            }}
+          />
+        ) : null}
         <InstagramSlider posts={instagramPosts} locale={locale} />
       </FadeIn>
 

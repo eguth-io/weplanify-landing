@@ -51,7 +51,7 @@ export default function InstagramSlider({ posts, locale = "en" }: InstagramSlide
             <a
               href={PROFILE_URL}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="inline-flex items-center gap-2 bg-[#001E13] text-white px-5 py-2 rounded-full font-karla font-bold text-sm lg:text-base hover:bg-[#001E13]/90 transition-colors"
             >
               <Instagram className="w-4 h-4" />
@@ -87,13 +87,13 @@ export default function InstagramSlider({ posts, locale = "en" }: InstagramSlide
               key={post.id}
               href={post.permalink}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="group relative shrink-0 snap-start w-[220px] lg:w-[260px] aspect-[9/16] rounded-[24px] overflow-hidden bg-[#001E13]/5"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={post.imageUrl}
-                alt={post.caption ? post.caption.slice(0, 120) : "WePlanify on Instagram"}
+                alt={post.altText || (post.caption ? post.caption.slice(0, 120) : "WePlanify on Instagram")}
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
