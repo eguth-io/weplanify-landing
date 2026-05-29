@@ -912,7 +912,7 @@ export default async function GroupTripBudgetPage({ params }: Props) {
                 </div>
               </Link>
               <Link
-                href={`/${locale}/blog/meilleures-applications-voyage-groupe`}
+                href={`/${locale}/alternatives/best-group-trip-planner-apps`}
                 className="group"
               >
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 hover:shadow-lg transition-shadow duration-300 h-full">

@@ -245,8 +245,8 @@ export default async function WorldCup2026Page({ params }: Props) {
             </h1>
             <p className="text-[#001E13]/70 text-lg lg:text-[22px] font-karla leading-[1.8] mb-6">
               {isEn
-                ? <>This is a free World Cup 2026 trip planner for groups of fans — 16 host cities, 3 countries, 104 matches over 39 days. Following a team isn&apos;t a vacation, it&apos;s a logistics operation. Here&apos;s how to build the multi-city route with your crew without spending half the trip on a group chat. If you&apos;re still picking your tools, see our <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">comparison of group travel apps</Link>.</>
-                : <>Voici un planificateur gratuit pour la Coupe du Monde 2026 entre potes — 16 villes hôtes, 3 pays, 104 matchs sur 39 jours. Pas une agence, pas un pack tout fait : c&apos;est ton plan, partagé en temps réel avec ta bande. Voici comment construire l&apos;itinéraire multi-villes sans passer la moitié du voyage sur la conversation de groupe. Si tu hésites encore entre les outils, jette un œil à notre <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">comparatif d&apos;applis de voyage en groupe</Link>.</>}
+                ? <>This is a free World Cup 2026 trip planner for groups of fans — 16 host cities, 3 countries, 104 matches over 39 days. Following a team isn&apos;t a vacation, it&apos;s a logistics operation. Here&apos;s how to build the multi-city route with your crew without spending half the trip on a group chat. If you&apos;re still picking your tools, see our <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline font-semibold">comparison of group travel apps</Link>.</>
+                : <>Voici un planificateur gratuit pour la Coupe du Monde 2026 entre potes — 16 villes hôtes, 3 pays, 104 matchs sur 39 jours. Pas une agence, pas un pack tout fait : c&apos;est ton plan, partagé en temps réel avec ta bande. Voici comment construire l&apos;itinéraire multi-villes sans passer la moitié du voyage sur la conversation de groupe. Si tu hésites encore entre les outils, jette un œil à notre <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline font-semibold">comparatif d&apos;applis de voyage en groupe</Link>.</>}
             </p>
             <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "8 min read" : "8 min de lecture"}</p>
             <AuthorBio locale={locale} publishedDate="2026-05-07" modifiedDate="2026-05-07" />
@@ -574,7 +574,7 @@ export default async function WorldCup2026Page({ params }: Props) {
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the guide →" : "Lire le guide →"}</span>
                 </div>
               </Link>
-              <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="group">
+              <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Best Group Travel Apps" : "Meilleures Applis Voyage de Groupe"}</h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Our comparison of the top tools for group trips." : "Notre comparatif des meilleurs outils pour voyager en groupe."}</p>

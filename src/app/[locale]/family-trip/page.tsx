@@ -334,9 +334,9 @@ export default async function FamilyTripPage({ params }: Props) {
                 </p>
                 <p className="text-[#FFFBF5]/70 text-lg lg:text-[22px] font-karla leading-[1.8]">
                   {isEn ? (
-                    <>One approach that works well for multi-generational trips: let each household set their own comfort level, then find overlap. If grandparents want a nicer room, they pay the difference. If parents want to cook half the meals to save money, build that into the itinerary. The goal isn&apos;t to make everyone spend the same — it&apos;s to make sure nobody feels resentful. For a deeper look at how other groups handle this, check out our article on the <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline underline-offset-4">best apps for group travel planning</Link>.</>
+                    <>One approach that works well for multi-generational trips: let each household set their own comfort level, then find overlap. If grandparents want a nicer room, they pay the difference. If parents want to cook half the meals to save money, build that into the itinerary. The goal isn&apos;t to make everyone spend the same — it&apos;s to make sure nobody feels resentful. For a deeper look at how other groups handle this, check out our article on the <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline underline-offset-4">best apps for group travel planning</Link>.</>
                   ) : (
-                    <>Une approche qui fonctionne bien pour les voyages multi-générations : laissez chaque foyer définir son niveau de confort, puis trouvez le terrain d&apos;entente. Si les grands-parents veulent une plus belle chambre, ils paient la différence. Si les parents veulent cuisiner la moitié des repas pour économiser, intégrez ça dans le programme. L&apos;objectif n&apos;est pas que tout le monde dépense pareil — c&apos;est que personne ne se sente lésé. Pour aller plus loin sur la façon dont d&apos;autres groupes gèrent ça, consultez notre article sur les <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline underline-offset-4">meilleures applications de voyage en groupe</Link>.</>
+                    <>Une approche qui fonctionne bien pour les voyages multi-générations : laissez chaque foyer définir son niveau de confort, puis trouvez le terrain d&apos;entente. Si les grands-parents veulent une plus belle chambre, ils paient la différence. Si les parents veulent cuisiner la moitié des repas pour économiser, intégrez ça dans le programme. L&apos;objectif n&apos;est pas que tout le monde dépense pareil — c&apos;est que personne ne se sente lésé. Pour aller plus loin sur la façon dont d&apos;autres groupes gèrent ça, consultez notre article sur les <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline underline-offset-4">meilleures applications de voyage en groupe</Link>.</>
                   )}
                 </p>
               </div>
@@ -392,7 +392,7 @@ export default async function FamilyTripPage({ params }: Props) {
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the guide →" : "Lire le guide →"}</span>
                 </div>
               </Link>
-              <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="group">
+              <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Best Group Travel Apps" : "Meilleures Applis Voyage de Groupe"}</h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "The top tools for planning trips together." : "Les meilleurs outils pour planifier un voyage ensemble."}</p>

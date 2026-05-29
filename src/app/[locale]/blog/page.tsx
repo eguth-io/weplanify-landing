@@ -59,16 +59,6 @@ export default async function BlogPage({ params }: Props) {
   const staticPosts: BlogPostPreview[] = locale === "fr"
     ? [
         {
-          _id: "static-meilleures-applications-voyage-groupe",
-          title: "Top 6 applications de voyage de groupe en 2026 — comparatif honnête",
-          slug: { current: "meilleures-applications-voyage-groupe" },
-          excerpt: "Nous avons testé 6 applications de planification de voyage de groupe. Comparatif côte à côte : prix, fonctionnalités, points forts, faiblesses. Choisissez la bonne en 2 minutes.",
-          readTime: "12 min",
-          heroImage: "https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          publishedAt: "2026-04-15",
-          author: { _id: "alex", firstName: "Alex", lastName: "Martin" },
-        },
-        {
           _id: "static-organiser-evjf",
           title: "Comment organiser un EVJF inoubliable — guide complet 2026",
           slug: { current: "organiser-evjf" },
@@ -90,16 +80,6 @@ export default async function BlogPage({ params }: Props) {
         },
       ]
     : [
-        {
-          _id: "static-meilleures-applications-voyage-groupe",
-          title: "Top 6 Group Trip Planner Apps 2026 — Honest Comparison",
-          slug: { current: "meilleures-applications-voyage-groupe" },
-          excerpt: "We tested 6 group trip planner apps (WePlanify, Wanderlog, TripIt, Splitwise…). Side-by-side comparison: pricing, features, pros & cons. Pick the right one in 2 minutes.",
-          readTime: "12 min",
-          heroImage: "https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          publishedAt: "2026-04-15",
-          author: { _id: "alex", firstName: "Alex", lastName: "Martin" },
-        },
         {
           _id: "static-organiser-evjf",
           title: "How to Organize an Unforgettable Bachelorette Trip — 2026 Guide",

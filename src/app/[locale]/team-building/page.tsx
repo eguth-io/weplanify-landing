@@ -362,8 +362,8 @@ export default async function TeamBuildingPage({ params }: Props) {
               </p>
               <p className="text-[#001E13]/75 text-lg lg:text-[22px] font-karla leading-[1.8]">
                 {isEn
-                  ? <>Finally, document what worked and what didn&apos;t while it&apos;s fresh. Which activities sparked real conversation? Which felt forced? This post-retreat debrief becomes your playbook for next time — and strong evidence for leadership that the investment paid off. For inspiration on how other groups handle planning, check out our <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline underline-offset-4">roundup of the best group travel apps</Link>.</>
-                  : <>Enfin, documentez ce qui a fonctionné et ce qui n&apos;a pas marché tant que c&apos;est frais. Quelles activités ont généré de vraies conversations ? Lesquelles semblaient forcées ? Ce débrief post-séminaire devient votre guide pour la prochaine fois — et une preuve solide pour la direction que l&apos;investissement a porté ses fruits. Pour voir comment d&apos;autres groupes gèrent leur organisation, consultez notre <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline underline-offset-4">comparatif des meilleures applis de voyage de groupe</Link>.</>}
+                  ? <>Finally, document what worked and what didn&apos;t while it&apos;s fresh. Which activities sparked real conversation? Which felt forced? This post-retreat debrief becomes your playbook for next time — and strong evidence for leadership that the investment paid off. For inspiration on how other groups handle planning, check out our <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline underline-offset-4">roundup of the best group travel apps</Link>.</>
+                  : <>Enfin, documentez ce qui a fonctionné et ce qui n&apos;a pas marché tant que c&apos;est frais. Quelles activités ont généré de vraies conversations ? Lesquelles semblaient forcées ? Ce débrief post-séminaire devient votre guide pour la prochaine fois — et une preuve solide pour la direction que l&apos;investissement a porté ses fruits. Pour voir comment d&apos;autres groupes gèrent leur organisation, consultez notre <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline underline-offset-4">comparatif des meilleures applis de voyage de groupe</Link>.</>}
               </p>
             </div>
           </div>
@@ -415,7 +415,7 @@ export default async function TeamBuildingPage({ params }: Props) {
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the guide →" : "Lire le guide →"}</span>
                 </div>
               </Link>
-              <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="group">
+              <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Best Group Travel Apps" : "Meilleures Applis Voyage de Groupe"}</h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Compare the top tools for group travel." : "Comparez les meilleurs outils pour voyager en groupe."}</p>
