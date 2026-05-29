@@ -45,15 +45,15 @@ const PATHNAME = "/alternatives/best-group-trip-planner-apps";
 
 const meta = {
   en: {
-    title: "10 Best Group Trip Planner Apps 2026: Wanderlog, TripIt & More",
+    title: "Best Group Trip Planner Apps Compared (2026): Wanderlog, TripIt & More",
     description:
-      "We tested 10 group trip planner apps side-by-side: Wanderlog, TripIt, Splitwise, Stippl, SquadTrip & more. Compare prices, features, pros & cons in 2 minutes.",
+      "Our 2026 comparison of 10 group trip planner apps side-by-side: Wanderlog, TripIt, Splitwise, Stippl, SquadTrip & more. Compare prices, features, pros & cons in 2 minutes.",
   },
   fr: {
     title:
-      "Les 10 Meilleures Applis pour Organiser un Voyage de Groupe (2026)",
+      "Comparatif 2026 : les meilleures applis pour un voyage de groupe",
     description:
-      "On a testé les meilleures applis de voyage de groupe. Comparatif honnête : itinéraire, budget, sondages, collaboration. Notre verdict 2026.",
+      "Notre comparatif 2026 des meilleures applis de voyage de groupe, testées côte à côte : itinéraire, budget, sondages, collaboration. Notre verdict.",
   },
 };
 
@@ -98,7 +98,7 @@ const content = {
   en: {
     heroTag: "Complete Guide",
     readTime: "12 min read",
-    h1: "10 Best Group Trip Planner Apps in 2026",
+    h1: "The 10 Best Group Trip Planner Apps Compared (2026)",
     intro:
       "Planning a group trip is notoriously difficult. Between coordinating schedules, splitting costs, voting on destinations, and building an itinerary that works for everyone, you need the right tools. We tested and compared the most popular group travel planning apps available in 2026 to help you pick the one that fits your crew. Here are our top 10, ranked by overall usefulness for group travel.",
 
@@ -362,7 +362,7 @@ const content = {
   fr: {
     heroTag: "Guide Complet",
     readTime: "12 min de lecture",
-    h1: "Les 10 Meilleures Applications pour Organiser un Voyage de Groupe en 2026",
+    h1: "Comparatif 2026 : les 10 meilleures applis pour un voyage de groupe",
     intro:
       "Organiser un voyage de groupe est notoirement difficile. Entre la coordination des agendas, le partage des frais, le vote sur les destinations et la construction d'un itinéraire qui convient à tout le monde, il te faut les bons outils. On a testé et comparé les applications de planification de voyage de groupe les plus populaires disponibles en 2026 pour t'aider à choisir celle qui convient à ton groupe. Voici notre top 10, classé par utilité globale pour les voyages de groupe.",
 
