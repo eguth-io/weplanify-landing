@@ -171,8 +171,8 @@ export default async function RoadTripPage({ params }: Props) {
             </h1>
             <p className="text-[#001E13]/70 text-lg lg:text-[22px] font-karla leading-[1.8] mb-6">
               {isEn
-                ? <>A road trip with friends is the ultimate freedom — until someone has to be the one who plans the route, tracks the gas money, and figures out where everyone&apos;s sleeping. Here&apos;s how to share the load. If you&apos;re still comparing tools, check out our take on the <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">best group travel apps</Link>.</>
-                : <>Un road trip entre potes, c&apos;est la liberté absolue — jusqu&apos;à ce que quelqu&apos;un doive planifier l&apos;itinéraire, suivre les frais d&apos;essence et trouver où tout le monde dort. Voici comment partager la charge. Si vous hésitez encore entre les outils, jetez un œil à notre comparatif des <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="text-[#F6391A] hover:underline font-semibold">meilleures applis de voyage en groupe</Link>.</>}
+                ? <>A road trip with friends is the ultimate freedom — until someone has to be the one who plans the route, tracks the gas money, and figures out where everyone&apos;s sleeping. Here&apos;s how to share the load. If you&apos;re still comparing tools, check out our take on the <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline font-semibold">best group travel apps</Link>.</>
+                : <>Un road trip entre potes, c&apos;est la liberté absolue — jusqu&apos;à ce que quelqu&apos;un doive planifier l&apos;itinéraire, suivre les frais d&apos;essence et trouver où tout le monde dort. Voici comment partager la charge. Si vous hésitez encore entre les outils, jetez un œil à notre comparatif des <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline font-semibold">meilleures applis de voyage en groupe</Link>.</>}
             </p>
             <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "7 min read" : "7 min de lecture"}</p>
             <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-31" />
@@ -415,7 +415,7 @@ export default async function RoadTripPage({ params }: Props) {
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">{isEn ? "Read the guide →" : "Lire le guide →"}</span>
                 </div>
               </Link>
-              <Link href={`/${locale}/blog/meilleures-applications-voyage-groupe`} className="group">
+              <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">{isEn ? "Best Group Travel Apps" : "Meilleures Applis Voyage de Groupe"}</h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">{isEn ? "Our comparison of the top tools for group trips." : "Notre comparatif des meilleurs outils pour voyager en groupe."}</p>

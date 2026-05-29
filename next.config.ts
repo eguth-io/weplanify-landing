@@ -4,6 +4,24 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    // WP-330: consolidate the weak duplicate comparison article into the
+    // stronger listicle (/alternatives/best-group-trip-planner-apps) to fix
+    // the 'group trip planner' cannibalisation. Covers the served FR slug and
+    // the EN canonical slug Google indexed.
+    return [
+      {
+        source: '/:locale(en|fr)/blog/meilleures-applications-voyage-groupe',
+        destination: '/:locale/alternatives/best-group-trip-planner-apps',
+        permanent: true,
+      },
+      {
+        source: '/:locale(en|fr)/blog/best-group-trip-planner-apps-comparison',
+        destination: '/:locale/alternatives/best-group-trip-planner-apps',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
