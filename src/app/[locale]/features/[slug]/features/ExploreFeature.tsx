@@ -249,7 +249,8 @@ export default function ExploreFeature({ data }: { data: FeaturePageData }) {
       <FeatureJsonLd
         featureName={data.seoTitle}
         featureDescription={data.seoDescription}
-        featureUrl={`https://weplanify.com/features/${data.slug}`}
+        locale={locale}
+        slug={data.slug}
         faqItems={data.faqItems}
       />
 

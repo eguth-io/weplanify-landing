@@ -361,7 +361,8 @@ export default function MemoriesFeature({ data }: { data: FeaturePageData }) {
       <FeatureJsonLd
         featureName={data.seoTitle || (locale === 'en' ? "Memories - Travel Photo Album" : "Souvenirs - Album Photo de Voyage")}
         featureDescription={data.seoDescription || t.heroDescription}
-        featureUrl="https://weplanify.com/features/memories"
+        locale={locale}
+        slug="memories"
         faqItems={t.faq}
       />
 
