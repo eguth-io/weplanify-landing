@@ -6,16 +6,24 @@ interface FAQItem {
 interface FeatureJsonLdProps {
   featureName: string;
   featureDescription: string;
-  featureUrl: string;
+  locale: string;
+  slug: string;
   faqItems: FAQItem[];
 }
+
+const SITE_URL = "https://www.weplanify.com";
 
 export default function FeatureJsonLd({
   featureName,
   featureDescription,
-  featureUrl,
+  locale,
+  slug,
   faqItems,
 }: FeatureJsonLdProps) {
+  // Canonical, locale-aware URL — must match the page canonical for valid structured data
+  const featureUrl = `${SITE_URL}/${locale}/features/${slug}`;
+  const homeLabel = locale === "fr" ? "Accueil" : "Home";
+
   // FAQPage Schema
   const faqSchema = {
     "@context": "https://schema.org",
@@ -40,7 +48,7 @@ export default function FeatureJsonLd({
     "isPartOf": {
       "@type": "WebSite",
       "name": "WePlanify",
-      "url": "https://weplanify.com"
+      "url": SITE_URL
     },
     "about": {
       "@type": "SoftwareApplication",
@@ -55,7 +63,7 @@ export default function FeatureJsonLd({
     }
   };
 
-  // BreadcrumbList Schema
+  // BreadcrumbList Schema — Home > Feature (no /features index page exists)
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -63,18 +71,12 @@ export default function FeatureJsonLd({
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Accueil",
-        "item": "https://weplanify.com"
+        "name": homeLabel,
+        "item": `${SITE_URL}/${locale}`
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Features",
-        "item": "https://weplanify.com/features"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
         "name": featureName,
         "item": featureUrl
       }
