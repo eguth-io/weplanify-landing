@@ -4,6 +4,8 @@ import "../globals.css";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { Analytics } from "@/components/Analytics";
 import { PageViewTracker } from "@/lib/analytics/page-view-tracker";
+import { FirstTouchTracker } from "@/lib/attribution/first-touch-tracker";
+import { FirstTouchLinkRewriter } from "@/lib/attribution/first-touch-link-rewriter";
 import CookieConsent from "@/components/CookieConsent";
 import StickyCTA from "@/components/StickyCTA";
 import { StructuredData } from "@/components/StructuredData";
@@ -100,6 +102,10 @@ export default async function LocaleLayout({ children, params }: Props) {
         <Analytics />
         {/* Tracks SPA navigations as page_view events */}
         <PageViewTracker />
+        {/* Captures first-touch campaign source (utm_*) and persists it for the visit */}
+        <FirstTouchTracker />
+        {/* Rewrites in-content register CTAs to the first-touch source at click time */}
+        <FirstTouchLinkRewriter />
       </body>
     </html>
   );

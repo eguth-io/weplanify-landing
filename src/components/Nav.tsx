@@ -2,6 +2,7 @@
 import { NavType, Navigation } from "@/sanity/lib/type";
 import Image from "next/image";
 import Link from "next/link";
+import { useRegisterHref } from "@/lib/attribution/use-register-href";
 import { PulsatingButton } from "./magicui/pulsating-button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
@@ -176,7 +177,7 @@ export default function Nav({ navData }: NavProps) {
   const locale: Locale = pathname?.startsWith("/fr") ? "fr" : "en";
   const nav = navData || DEFAULT_NAV_DATA;
   const loginUrl = `https://app.weplanify.com/${locale}/login`;
-  const registerUrl = `https://app.weplanify.com/${locale}/register?utm_source=landing`;
+  const registerUrl = useRegisterHref({ locale, medium: "nav" });
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => {
