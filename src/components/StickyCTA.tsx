@@ -20,7 +20,8 @@ interface StickyCTAProps {
  */
 const PATH_TO_TEMPLATE: Record<string, { template: string; campaign: string }> = {
   "/world-cup-2026-trip-planner": { template: "world-cup-2026", campaign: "world-cup-2026" },
-  "/champions-league-final-2026-psg-arsenal": { template: "ucl-final-2026", campaign: "ucl-final-2026" },
+  // UCL final 2026 played on 30 May — page archived as an evergreen playbook, so the
+  // sticky CTA falls back to the generic register (no dead match-specific trip template).
   "/hellfest-2026-trip-planner": { template: "hellfest-2026", campaign: "hellfest-2026" },
   "/tomorrowland-2026-trip-planner": { template: "tomorrowland-2026", campaign: "tomorrowland-2026" },
   "/solar-eclipse-2026-trip-planner": { template: "solar-eclipse-2026", campaign: "solar-eclipse-2026" },
