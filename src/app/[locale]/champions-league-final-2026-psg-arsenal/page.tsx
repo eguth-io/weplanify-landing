@@ -67,7 +67,7 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
     headline: isEn ? "Champions League Final 2026: PSG vs Arsenal in Budapest — Complete Guide" : "Finale Ligue des Champions 2026 : PSG-Arsenal à Budapest — Le Guide Complet",
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
-    datePublished: "2026-05-10", dateModified: "2026-05-10",
+    datePublished: "2026-05-10", dateModified: "2026-06-02",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
   };
 
@@ -80,8 +80,8 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
     "@type": "SportsEvent",
     name: isEn ? "UEFA Champions League Final 2026: PSG vs Arsenal" : "Finale UEFA Champions League 2026 : PSG vs Arsenal",
     description: isEn
-      ? "UEFA Champions League final 2026 between Paris Saint-Germain and Arsenal FC at the Puskás Aréna in Budapest, Hungary, on Saturday 30 May 2026, kickoff 18:00 CET."
-      : "Finale de l'UEFA Champions League 2026 entre le Paris Saint-Germain et Arsenal FC à la Puskás Aréna de Budapest, en Hongrie, le samedi 30 mai 2026, coup d'envoi à 18h00 (heure de Paris).",
+      ? "UEFA Champions League final 2026 between Paris Saint-Germain and Arsenal FC at the Puskás Aréna in Budapest, Hungary, on Saturday 30 May 2026. PSG retained the title, beating Arsenal 1-1 (4-3 on penalties after extra time)."
+      : "Finale de l'UEFA Champions League 2026 entre le Paris Saint-Germain et Arsenal FC à la Puskás Aréna de Budapest, en Hongrie, le samedi 30 mai 2026. Le PSG a conservé son titre en battant Arsenal 1-1 (4-3 aux tirs au but après prolongation).",
     image: [`${SITE_URL}/header-bg.webp`],
     startDate: "2026-05-30T18:00+02:00",
     endDate: "2026-05-30T20:00+02:00",
@@ -91,12 +91,6 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
     organizer: { "@type": "Organization", name: "UEFA", url: "https://www.uefa.com" },
     performer: teams,
     competitor: teams,
-    offers: {
-      "@type": "Offer",
-      url: "https://www.uefa.com/uefachampionsleague/",
-      availability: "https://schema.org/LimitedAvailability",
-      validFrom: "2026-03-01",
-    },
     location: {
       "@type": "Place",
       name: "Puskás Aréna",
@@ -188,8 +182,22 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
 
       <main className="min-h-screen bg-[#FFFBF5]">
 
+        {/* ━━━ RESULT BANNER (post-match) ━━━ */}
+        <section className="pt-[96px] lg:pt-[120px] px-6 lg:px-12">
+          <div className="max-w-[1000px] mx-auto">
+            <div className="bg-[#001E13] rounded-[20px] lg:rounded-[24px] px-5 py-4 lg:px-8 lg:py-5 flex items-start gap-3">
+              <span className="text-[#61DBD5] text-lg lg:text-xl leading-none mt-0.5">&#x2713;</span>
+              <p className="text-[#FFFBF5]/85 font-karla text-sm lg:text-base leading-[1.7]">
+                {isEn
+                  ? <><span className="font-bold text-[#FFFBF5]">Played — Saturday 30 May 2026.</span> PSG retained the title, beating Arsenal 1–1 (4–3 on penalties after extra time) at the Puskás Aréna. We&apos;re keeping this guide online as a reusable playbook — the Budapest, budget and group-logistics tips below still apply to your next match-day trip.</>
+                  : <><span className="font-bold text-[#FFFBF5]">Joué — samedi 30 mai 2026.</span> Le PSG a conservé son titre en battant Arsenal 1–1 (4–3 aux tirs au but après prolongation) à la Puskás Aréna. On garde ce guide en ligne comme playbook réutilisable — les conseils Budapest, budget et logistique de groupe ci-dessous restent valables pour votre prochain déplacement.</>}
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ━━━ HERO ━━━ */}
-        <section className="pt-[140px] lg:pt-[200px] pb-16 lg:pb-24 px-6 lg:px-12">
+        <section className="pt-10 lg:pt-16 pb-16 lg:pb-24 px-6 lg:px-12">
           <div className="max-w-[900px] mx-auto">
             <div className="hidden lg:block mb-8">
               <Breadcrumb items={[
@@ -198,7 +206,7 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
               ]} />
             </div>
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-6">
-              {isEn ? "Match guide & trip planner · Budapest 2026" : "Guide du match & planificateur · Budapest 2026"}
+              {isEn ? "Match recap & trip playbook · Budapest 2026" : "Récap du match & playbook voyage · Budapest 2026"}
             </p>
             <h1 className="text-[#001E13] text-[38px] lg:text-[72px] font-londrina-solid leading-[1.02] mb-6">
               {isEn
@@ -207,8 +215,8 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
             </h1>
             <p className="text-[#001E13]/70 text-lg lg:text-[22px] font-karla leading-[1.8] mb-6">
               {isEn
-                ? <>Saturday 30 May 2026, 18:00 CET, Puskás Aréna. PSG defending its first European crown after eliminating Bayern Munich. Arsenal in its first Champions League final since 2006 after topping the league phase with 24 points out of 24. This is the complete guide to the match, the venue, the journey to Budapest, and how to organise the trip with your crew without losing the group at the after-party. If you&apos;re still picking your tools, see our <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline font-semibold">comparison of group travel apps</Link>.</>
-                : <>Samedi 30 mai 2026, 18h00, Puskás Aréna. Le PSG défend son premier titre européen après avoir éliminé le Bayern Munich. Arsenal joue sa première finale de C1 depuis 2006 après avoir terminé premier de la phase de ligue avec 24 points sur 24. Voici le guide complet du match, du stade, du voyage à Budapest et de l&apos;organisation entre potes — pour ne perdre personne à l&apos;after. Si vous hésitez encore entre les outils, jetez un œil à notre <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline font-semibold">comparatif d&apos;applis de voyage en groupe</Link>.</>}
+                ? <>Saturday 30 May 2026, 18:00 CET, Puskás Aréna. PSG retained its European crown, beating Arsenal 1–1 (4–3 on penalties after extra time): Kai Havertz struck early for Arsenal, Ousmane Dembélé levelled from the spot, and Gabriel Magalhães saw the decisive penalty saved. Arsenal&apos;s first Champions League final since 2006 ended in heartbreak. This guide stays up as the complete playbook — the match, the venue, the journey to Budapest, and how to organise a football trip with your crew without losing the group at the after-party. Picking your tools for the next one? See our <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline font-semibold">comparison of group travel apps</Link>.</>
+                : <>Samedi 30 mai 2026, 18h00, Puskás Aréna. Le PSG a conservé son titre européen en battant Arsenal 1–1 (4–3 aux tirs au but après prolongation) : Kai Havertz a ouvert tôt le score pour Arsenal, Ousmane Dembélé a égalisé sur pénalty, et Gabriel Magalhães a vu son tir au but décisif arrêté. La première finale de C1 d&apos;Arsenal depuis 2006 s&apos;est terminée dans la douleur. Ce guide reste en ligne comme playbook complet — le match, le stade, le voyage à Budapest et l&apos;organisation entre potes, pour ne perdre personne à l&apos;after. Vous préparez le prochain déplacement ? Jetez un œil à notre <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="text-[#F6391A] hover:underline font-semibold">comparatif d&apos;applis de voyage en groupe</Link>.</>}
             </p>
             <p className="text-[#001E13]/50 text-sm font-karla mb-6">{isEn ? "9 min read" : "9 min de lecture"}</p>
             <AuthorBio locale={locale} publishedDate="2026-05-10" modifiedDate="2026-05-10" />
@@ -239,9 +247,9 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
                   <p className="text-[#001E13]/60 font-karla text-sm">Budapest, HU</p>
                 </div>
                 <div>
-                  <p className="text-[#001E13]/50 font-karla text-xs uppercase tracking-wider mb-1">{isEn ? "Capacity" : "Capacité"}</p>
-                  <p className="text-[#001E13] font-londrina-solid text-2xl lg:text-3xl">~67k</p>
-                  <p className="text-[#001E13]/60 font-karla text-sm">{isEn ? "seats" : "places"}</p>
+                  <p className="text-[#001E13]/50 font-karla text-xs uppercase tracking-wider mb-1">{isEn ? "Result" : "Résultat"}</p>
+                  <p className="text-[#001E13] font-londrina-solid text-2xl lg:text-3xl">1–1</p>
+                  <p className="text-[#001E13]/60 font-karla text-sm">{isEn ? "PSG win 4–3 pens" : "PSG 4–3 t.a.b."}</p>
                 </div>
               </div>
             </div>
@@ -258,8 +266,8 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
             </p>
             <p className="text-[#001E13] text-lg lg:text-[22px] font-karla font-bold leading-[1.8]">
               {isEn
-                ? "WePlanify is the free shared command center for fans heading to Budapest — flights, hotel, ticket plan, budget and match-day timeline in one place, in English or French."
-                : "WePlanify, c'est le poste de commandement gratuit et partagé pour les fans qui descendent à Budapest — vols, hôtel, plan billetterie, budget et timeline du jour J au même endroit, en français ou anglais."}
+                ? "WePlanify is the free shared command center for any football away-day — flights, hotel, ticket plan, budget and match-day timeline in one place, in English or French."
+                : "WePlanify, c'est le poste de commandement gratuit et partagé pour n'importe quel déplacement foot — vols, hôtel, plan billetterie, budget et timeline du jour J au même endroit, en français ou anglais."}
             </p>
           </div>
         </section>
@@ -378,8 +386,8 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
             </h2>
             <p className="text-[#001E13]/60 font-karla text-base lg:text-lg mb-10 max-w-[700px]">
               {isEn
-                ? "Three weeks out, the realistic ticket options are narrow — and the fan-zone fallback is genuinely worth flying for."
-                : "À trois semaines, les options billetterie réalistes sont limitées — et le plan B fan zone vaut vraiment le déplacement."}
+                ? "By the final week, the realistic ticket options had narrowed to official resale only — and the fan-zone fallback was genuinely worth flying for. The same three channels apply to every UEFA final, so here's how they work."
+                : "À une semaine du match, les options billetterie réalistes se limitaient à la revente officielle — et le plan B fan zone valait vraiment le déplacement. Les trois mêmes canaux valent pour chaque finale UEFA, voici comment ils fonctionnent."}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -559,8 +567,8 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
               </p>
               <p className="text-[#FFFBF5]/65 text-lg lg:text-[22px] font-karla leading-[1.8]">
                 {isEn
-                  ? "Flights have already moved. Direct returns from Paris that were €150 in March now sit around €350-450 for the May 29-31 window and will tick up daily. The same is true from London. Two saves to know about: morning departures on May 29 are still the cheapest slot, and connecting via Vienna or Munich on a single ticket can come in 30% cheaper if your group can absorb the extra hour."
-                  : "Les prix des vols ont déjà bougé. Les allers-retours directs depuis Paris qui étaient à 150 € en mars tournent maintenant autour de 350-450 € sur la fenêtre 29-31 mai et grimpent chaque jour. Idem depuis Londres. Deux astuces : les départs en matinée du 29 mai restent le créneau le moins cher, et passer par Vienne ou Munich sur un seul billet peut sortir 30 % moins cher si le groupe accepte l'heure supplémentaire."}
+                  ? "Flights move fast for a final. Direct Paris returns that sit near €150 off-peak climbed to €350-450 for the match weekend, and rose daily once the venue was confirmed — the same pattern holds from London. Two saves worth knowing: morning departures are usually the cheapest slot, and connecting via Vienna or Munich on a single ticket can come in 30% cheaper if your group can absorb the extra hour. Lock the inbound and outbound the moment the fixture is set."
+                  : "Les vols grimpent vite pour une finale. Les allers-retours directs depuis Paris, autour de 150 € hors saison, sont montés à 350-450 € sur le week-end du match et augmentaient chaque jour une fois le stade confirmé — même schéma depuis Londres. Deux astuces : les départs en matinée sont souvent le créneau le moins cher, et passer par Vienne ou Munich sur un seul billet peut sortir 30 % moins cher si le groupe accepte l'heure supplémentaire. Verrouillez l'aller et le retour dès que l'affiche est connue."}
               </p>
               <p className="text-[#FFFBF5]/65 text-lg lg:text-[22px] font-karla leading-[1.8]">
                 {isEn
@@ -633,13 +641,13 @@ export default async function ChampionsLeagueFinal2026Page({ params }: Props) {
           <div className="max-w-[1200px] mx-auto">
             <div className="bg-gradient-to-br from-[#F6391A] to-[#d42d10] rounded-[24px] lg:rounded-[40px] p-8 lg:p-16 text-center">
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] mb-4">
-                {isEn ? "Build Your Budapest Trip" : "Construisez Votre Voyage à Budapest"}
+                {isEn ? "Plan Your Next Match-Day Trip" : "Organisez Votre Prochain Déplacement"}
               </h2>
               <p className="text-[#FFFBF5]/80 font-karla text-base lg:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
                 {isEn ? "Flights, hotel, match-day timeline, shared budget — one plan, your whole crew on the same page." : "Vols, hôtel, planning du jour J, budget partagé — un seul plan, toute votre bande alignée."}
               </p>
               <div className="flex justify-center">
-                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=ucl-final-2026&template=ucl-final-2026`}>
+                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing&utm_medium=event-archive&utm_campaign=ucl-final-2026`}>
                   <PulsatingButton className="font-karla font-bold">{isEn ? "Start planning" : "Commencer"}</PulsatingButton>
                 </Link>
               </div>
