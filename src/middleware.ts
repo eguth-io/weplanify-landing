@@ -24,7 +24,11 @@ function pickLocaleFromAcceptLanguage(header: string | null): 'fr' | 'en' {
 export default function middleware(request: NextRequest) {
   if (request.nextUrl.pathname === '/') {
     const locale = pickLocaleFromAcceptLanguage(request.headers.get('accept-language'));
-    const response = NextResponse.redirect(new URL(`/${locale}`, request.url), 302);
+    const target = new URL(`/${locale}`, request.url);
+    // Preserve the querystring (utm_source=… etc.) across the locale redirect so
+    // first-touch attribution survives the `/` → `/{locale}` hop.
+    target.search = request.nextUrl.search;
+    const response = NextResponse.redirect(target, 302);
     // Vary on Accept-Language so /en and /fr each get a fair shot at being the
     // canonical for their locale instead of one being a permanent redirect target.
     response.headers.set('Vary', 'Accept-Language');

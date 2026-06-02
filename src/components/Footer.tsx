@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Footer as FooterType } from "@/sanity/lib/type";
 import { useState } from "react";
 import { trackEvent } from "@/lib/tracking";
+import { useRegisterHref } from "@/lib/attribution/use-register-href";
 
 function SocialIcon({ platform }: { platform: string }) {
   const name = platform.toLowerCase();
@@ -89,6 +90,7 @@ export default function Footer({ footerData }: FooterProps) {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const pathname = usePathname();
   const locale = pathname?.startsWith("/fr") ? "fr" : "en";
+  const registerFallback = useRegisterHref({ locale, medium: "footer" });
 
   const featuresColumn = {
     title: locale === "fr" ? "Fonctionnalités" : "Features",
@@ -279,7 +281,7 @@ export default function Footer({ footerData }: FooterProps) {
                 </p>
               )}
               {footerData.ctaSection.buttonText && (
-                <Link href={footerData.ctaSection.buttonUrl || `https://app.weplanify.com/${locale}/register?utm_source=landing`}>
+                <Link href={footerData.ctaSection.buttonUrl || registerFallback}>
                   <button className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-base hover:bg-[#F6391A]/90 transition-colors w-fit">
                     {footerData.ctaSection.buttonText}
                   </button>

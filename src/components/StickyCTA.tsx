@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { trackEvent } from "@/lib/tracking";
 import { travelGuideSlugIndex, type TravelGuideLocale } from "@/lib/travel-guides/slugs";
+import { buildRegisterHref } from "@/lib/attribution/first-touch";
 
 interface StickyCTAProps {
   text: string;
@@ -37,12 +38,20 @@ export default function StickyCTA({ text, href }: StickyCTAProps) {
   const travelGuideTemplate = travelGuideMatch
     ? travelGuideSlugIndex[locale as TravelGuideLocale]?.[travelGuideMatch[1]]
     : undefined;
-  const defaultHref = match
-    ? `https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=${match.campaign}&template=${match.template}`
-    : travelGuideTemplate
-      ? `https://app.weplanify.com/${locale}/register?template=${travelGuideTemplate}&utm_source=landing&utm_medium=travel-guide&utm_campaign=${travelGuideTemplate}`
-      : `https://app.weplanify.com/${locale}/register?utm_source=landing`;
-  const targetHref = href ?? defaultHref;
+  const computeHref = () => {
+    if (href) return href;
+    if (match) return buildRegisterHref({ locale, template: match.template, campaign: match.campaign });
+    if (travelGuideTemplate)
+      return buildRegisterHref({ locale, template: travelGuideTemplate, medium: "travel-guide", campaign: travelGuideTemplate });
+    return buildRegisterHref({ locale });
+  };
+  // Recomputed after mount so first-touch attribution (localStorage) is applied;
+  // the sticky CTA only renders post-scroll, well after hydration.
+  const [targetHref, setTargetHref] = useState(computeHref);
+  useEffect(() => {
+    setTargetHref(computeHref());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname, href]);
   const [show, setShow] = useState(false);
   const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
 
