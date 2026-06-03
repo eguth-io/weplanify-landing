@@ -1,4 +1,15 @@
 import Image from "next/image";
+import {
+  Vote,
+  Wallet,
+  Search,
+  Map,
+  BedDouble,
+  ListChecks,
+  Bus,
+  Users,
+  type LucideIcon,
+} from "lucide-react";
 
 type Lang = "en" | "fr";
 
@@ -11,8 +22,103 @@ const CONTENT: Record<Lang, { title: string }> = {
   },
 };
 
-const IMAGE_URL =
-  "https://cdn.sanity.io/images/pkczubdf/production/7f13a098b8d93b0a7ca447104b7a18f446fa72be-2128x1658.webp";
+// Clean iPhone mockup WITHOUT bubbles — the bubbles are rendered in HTML below
+// so they stay translatable (FR/EN). Replaces the old baked-in-text image.
+const MOCKUP_IMAGE = "/feature-mockup.png";
+const MOCKUP_W = 1052;
+const MOCKUP_H = 1370;
+
+type Side = "left" | "right";
+
+type Bubble = {
+  text: Record<Lang, string>;
+  subtitle: Record<Lang, string>;
+  icon: LucideIcon;
+  /** Which side of the phone the bubble sits on (desktop). */
+  side: Side;
+  /** Vertical anchor as a percentage of the container height (desktop). */
+  top: number;
+  /**
+   * Inner-edge anchor as a percentage of the container width (desktop).
+   * Left bubbles anchor their RIGHT edge here, right bubbles their LEFT edge,
+   * so they all tuck the same amount behind the (higher z-index) phone.
+   */
+  edge: number;
+  /** Slightly translucent for a layered/depth effect, like the original mockup. */
+  dim?: boolean;
+};
+
+const BUBBLES: Bubble[] = [
+  // Left column — clustered in the upper ~60%, inner edge tucked behind the phone
+  {
+    text: { fr: "Partager vos propres sondages", en: "Share your own polls" },
+    subtitle: { fr: "Dates · Destination · Budget", en: "Dates · Destination · Budget" },
+    icon: Vote,
+    side: "left",
+    top: 10,
+    edge: 38,
+  },
+  {
+    text: { fr: "Gérer les dépenses de votre voyage", en: "Manage your trip expenses" },
+    subtitle: { fr: "Vols · Airbnb · Restos", en: "Flights · Airbnb · Dining" },
+    icon: Wallet,
+    side: "left",
+    top: 32,
+    edge: 37,
+  },
+  {
+    text: { fr: "Inviter le groupe", en: "Invite the group" },
+    subtitle: { fr: "Par email · Par lien", en: "By email · By link" },
+    icon: Users,
+    side: "left",
+    top: 54,
+    edge: 33,
+    dim: true,
+  },
+  {
+    text: { fr: "Gérer votre voyage", en: "Manage your trip" },
+    subtitle: { fr: "Étapes · Jours · Notes", en: "Stops · Days · Notes" },
+    icon: Map,
+    side: "left",
+    top: 76,
+    edge: 31,
+  },
+  // Right column
+  {
+    text: { fr: "Rechercher des activités", en: "Search for activities" },
+    subtitle: { fr: "Musées · Restos · Plages", en: "Museums · Food · Beaches" },
+    icon: Search,
+    side: "right",
+    top: 9,
+    edge: 32,
+  },
+  {
+    text: { fr: "Trouver vos futurs logements", en: "Find your accommodation" },
+    subtitle: { fr: "Hôtel · Airbnb · Auberge", en: "Hotel · Airbnb · Hostel" },
+    icon: BedDouble,
+    side: "right",
+    top: 34,
+    edge: 30,
+    dim: true,
+  },
+  {
+    text: { fr: "Attribuez-vous des tâches", en: "Assign tasks" },
+    subtitle: { fr: "À faire · En cours · Fait", en: "To do · Doing · Done" },
+    icon: ListChecks,
+    side: "right",
+    top: 56,
+    edge: 29,
+    dim: true,
+  },
+  {
+    text: { fr: "Trouver des transports", en: "Find transport" },
+    subtitle: { fr: "Vol · Train · Voiture", en: "Flight · Train · Car" },
+    icon: Bus,
+    side: "right",
+    top: 78,
+    edge: 34,
+  },
+];
 
 interface FeatureImageSectionProps {
   locale?: string;
@@ -28,17 +134,92 @@ export default function FeatureImageSection({ locale = "en" }: FeatureImageSecti
         <h2 className="text-[#001E13] text-3xl lg:text-5xl xl:text-6xl font-londrina-solid leading-tight mb-8 lg:mb-12 text-center max-w-[800px] mx-auto whitespace-pre-line">
           {title}
         </h2>
-        <div className="relative w-full max-w-[864px] mx-auto">
-          <Image
-            src={IMAGE_URL}
-            alt={title}
-            width={864}
-            height={450}
-            style={{ width: "auto", height: "auto" }}
-            className="rounded-[24px] lg:rounded-[32px]"
-          />
+
+        {/* Shifted left so the phone (offset right by the hand) sits centered under the title */}
+        <div className="relative w-full max-w-[1040px] mx-auto lg:-translate-x-[42px]">
+          {/* Phone mockup (clean, no baked-in text) */}
+          <div className="relative z-20 mx-auto w-[270px] sm:w-[340px] lg:w-[440px]">
+            <Image
+              src={MOCKUP_IMAGE}
+              alt={title}
+              width={MOCKUP_W}
+              height={MOCKUP_H}
+              sizes="(max-width: 1024px) 300px, 340px"
+              className="w-full h-auto"
+              priority={false}
+            />
+          </div>
+
+          {/* Bubbles — desktop: floating around the phone */}
+          {BUBBLES.map((b) => (
+            <FeatureBubble key={b.text.en} bubble={b} lang={lang} />
+          ))}
+
+          {/* Bubbles — mobile: wrapped list below the phone */}
+          <ul className="mt-8 flex flex-wrap justify-center gap-2.5 lg:hidden">
+            {BUBBLES.map((b) => {
+              const Icon = b.icon;
+              return (
+                <li
+                  key={b.text.en}
+                  className="inline-flex items-center gap-2 rounded-2xl bg-white px-3 py-2 shadow-[0_8px_24px_-12px_rgba(0,0,0,0.35)] ring-1 ring-black/5"
+                >
+                  <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-orange">
+                    <Icon className="h-3.5 w-3.5 text-white" />
+                  </span>
+                  <span className="flex flex-col">
+                    <span className="font-karla text-sm font-semibold leading-tight text-[#001E13]">
+                      {b.text[lang]}
+                    </span>
+                    <span className="font-karla text-[11px] leading-tight text-gray-400">
+                      {b.subtitle[lang]}
+                    </span>
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
+    </div>
+  );
+}
+
+function FeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
+  const Icon = bubble.icon;
+  // Left bubbles pin their RIGHT edge near the phone; right bubbles their LEFT
+  // edge. Both sit at `100 - edge`% so they tuck the same amount behind the phone.
+  const sidePos =
+    bubble.side === "left"
+      ? { right: `${100 - bubble.edge}%` }
+      : { left: `${100 - bubble.edge}%` };
+  // Extra padding on the inner side so the card's white space (not the text)
+  // is what tucks behind the phone.
+  // Icon is always flush-left (pl-3.5). Left bubbles get extra RIGHT padding so
+  // their white space (not text) tucks behind the phone; right bubbles only
+  // tuck their left corner, so the icon stays clear.
+  const innerPad = bubble.side === "left" ? "pl-3.5 pr-8" : "pl-3.5 pr-4";
+
+  return (
+    <div
+      className={`absolute z-10 hidden lg:flex items-center gap-2.5 rounded-2xl bg-white ${innerPad} py-2.5 shadow-[0_12px_32px_-12px_rgba(0,0,0,0.4)] ring-1 ring-black/5`}
+      style={{
+        top: `${bubble.top}%`,
+        ...sidePos,
+        opacity: bubble.dim ? 0.6 : 1,
+      }}
+    >
+      <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-orange">
+        <Icon className="h-4 w-4 text-white" />
+      </span>
+      <span className="flex flex-col">
+        <span className="font-karla text-[13px] font-bold leading-tight text-[#001E13] whitespace-nowrap">
+          {bubble.text[lang]}
+        </span>
+        <span className="font-karla text-[11px] leading-tight text-gray-400 whitespace-nowrap">
+          {bubble.subtitle[lang]}
+        </span>
+      </span>
     </div>
   );
 }
