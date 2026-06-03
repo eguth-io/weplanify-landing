@@ -177,6 +177,9 @@ export default function Nav({ navData }: NavProps) {
   const nav = navData || DEFAULT_NAV_DATA;
   const loginUrl = `https://app.weplanify.com/${locale}/login`;
   const registerUrl = `https://app.weplanify.com/${locale}/register?utm_source=landing`;
+  // Keep the user on the same page, just swap the locale prefix.
+  const frUrl = pathname?.replace(/^\/(en|fr)/, "/fr") || "/fr";
+  const enUrl = pathname?.replace(/^\/(en|fr)/, "/en") || "/en";
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => {
@@ -289,6 +292,32 @@ export default function Nav({ navData }: NavProps) {
             <Link href={registerUrl} rel="nofollow">
               <PulsatingButton>{locale === "fr" ? "S'inscrire" : "Register"}</PulsatingButton>
             </Link>
+
+            {/* Compact, discreet language segmented control — pushed to the far right edge */}
+            <div className="ml-2 lg:-mr-10 flex items-center rounded-full bg-[#001E13]/[0.04] p-0.5 text-[11px] font-semibold font-karla">
+              <Link
+                href={enUrl}
+                hrefLang="en"
+                aria-label="English"
+                aria-current={locale === "en" ? "true" : undefined}
+                className={`px-2 py-0.5 rounded-full transition-colors ${
+                  locale === "en" ? "bg-white text-[#001E13] shadow-[0_1px_2px_rgba(0,0,0,0.06)]" : "text-[#001E13]/40 hover:text-[#001E13]/70"
+                }`}
+              >
+                EN
+              </Link>
+              <Link
+                href={frUrl}
+                hrefLang="fr"
+                aria-label="Français"
+                aria-current={locale === "fr" ? "true" : undefined}
+                className={`px-2 py-0.5 rounded-full transition-colors ${
+                  locale === "fr" ? "bg-white text-[#001E13] shadow-[0_1px_2px_rgba(0,0,0,0.06)]" : "text-[#001E13]/40 hover:text-[#001E13]/70"
+                }`}
+              >
+                FR
+              </Link>
+            </div>
           </div>
         </nav>
       </div>
@@ -374,6 +403,36 @@ export default function Nav({ navData }: NavProps) {
                 {locale === "fr" ? "S'inscrire" : "Register"}
               </PulsatingButton>
             </Link>
+
+            {/* Language segmented control */}
+            <div className="flex items-center justify-center pt-1">
+              <div className="flex items-center rounded-full bg-[#001E13]/[0.06] p-1 text-sm font-bold font-karla">
+                <Link
+                  href={enUrl}
+                  hrefLang="en"
+                  onClick={closeMenu}
+                  aria-label="English"
+                  aria-current={locale === "en" ? "true" : undefined}
+                  className={`px-4 py-1.5 rounded-full transition-colors ${
+                    locale === "en" ? "bg-white text-[#F6391A] shadow-sm" : "text-[#001E13]/50"
+                  }`}
+                >
+                  EN
+                </Link>
+                <Link
+                  href={frUrl}
+                  hrefLang="fr"
+                  onClick={closeMenu}
+                  aria-label="Français"
+                  aria-current={locale === "fr" ? "true" : undefined}
+                  className={`px-4 py-1.5 rounded-full transition-colors ${
+                    locale === "fr" ? "bg-white text-[#F6391A] shadow-sm" : "text-[#001E13]/50"
+                  }`}
+                >
+                  FR
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
