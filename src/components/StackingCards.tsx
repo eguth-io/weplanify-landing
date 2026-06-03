@@ -4,12 +4,10 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import Link from "next/link";
 import { AiGlobeJourney, LiveCollaboration, LiveVoting } from "@/components/animations";
+import { useRegisterHref } from "@/lib/attribution/use-register-href";
 
 type Lang = "en" | "fr";
 type AnimationType = "ai-globe" | "live-collaboration" | "live-voting";
-
-const getRegisterUrl = (locale: string) =>
-  `https://app.weplanify.com/${locale}/register?utm_source=landing`;
 
 interface CardData {
   imagePosition: "left" | "right";
@@ -118,6 +116,7 @@ interface StackingCardsProps {
 }
 
 function Card({ card, index, locale }: { card: CardData; index: number; locale: string }) {
+  const registerUrl = useRegisterHref({ locale, medium: "stacking-cards" });
   const containerRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<HTMLDivElement>(null);
   // amount: 0.1 fires once 10% of the animation panel is visible, which is
@@ -181,7 +180,7 @@ function Card({ card, index, locale }: { card: CardData; index: number; locale: 
           </div>
         )}
 
-        <Link href={getRegisterUrl(locale)} rel="nofollow">
+        <Link href={registerUrl} rel="nofollow">
           <button
             className="px-8 py-3 rounded-full font-karla font-bold text-sm lg:text-base hover:opacity-90 transition-all ring-4"
             style={{

@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { trackEvent } from "@/lib/tracking";
 import { travelGuideSlugIndex, type TravelGuideLocale } from "@/lib/travel-guides/slugs";
+import { buildRegisterHref } from "@/lib/attribution/first-touch";
 
 interface StickyCTAProps {
   text: string;
@@ -20,7 +21,8 @@ interface StickyCTAProps {
  */
 const PATH_TO_TEMPLATE: Record<string, { template: string; campaign: string }> = {
   "/world-cup-2026-trip-planner": { template: "world-cup-2026", campaign: "world-cup-2026" },
-  "/champions-league-final-2026-psg-arsenal": { template: "ucl-final-2026", campaign: "ucl-final-2026" },
+  // UCL final 2026 played on 30 May — page archived as an evergreen playbook, so the
+  // sticky CTA falls back to the generic register (no dead match-specific trip template).
   "/hellfest-2026-trip-planner": { template: "hellfest-2026", campaign: "hellfest-2026" },
   "/tomorrowland-2026-trip-planner": { template: "tomorrowland-2026", campaign: "tomorrowland-2026" },
   "/solar-eclipse-2026-trip-planner": { template: "solar-eclipse-2026", campaign: "solar-eclipse-2026" },
@@ -36,12 +38,20 @@ export default function StickyCTA({ text, href }: StickyCTAProps) {
   const travelGuideTemplate = travelGuideMatch
     ? travelGuideSlugIndex[locale as TravelGuideLocale]?.[travelGuideMatch[1]]
     : undefined;
-  const defaultHref = match
-    ? `https://app.weplanify.com/${locale}/register?utm_source=landing&utm_campaign=${match.campaign}&template=${match.template}`
-    : travelGuideTemplate
-      ? `https://app.weplanify.com/${locale}/register?template=${travelGuideTemplate}&utm_source=landing&utm_medium=travel-guide&utm_campaign=${travelGuideTemplate}`
-      : `https://app.weplanify.com/${locale}/register?utm_source=landing`;
-  const targetHref = href ?? defaultHref;
+  const computeHref = () => {
+    if (href) return href;
+    if (match) return buildRegisterHref({ locale, template: match.template, campaign: match.campaign });
+    if (travelGuideTemplate)
+      return buildRegisterHref({ locale, template: travelGuideTemplate, medium: "travel-guide", campaign: travelGuideTemplate });
+    return buildRegisterHref({ locale });
+  };
+  // Recomputed after mount so first-touch attribution (localStorage) is applied;
+  // the sticky CTA only renders post-scroll, well after hydration.
+  const [targetHref, setTargetHref] = useState(computeHref);
+  useEffect(() => {
+    setTargetHref(computeHref());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname, href]);
   const [show, setShow] = useState(false);
   const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
 
