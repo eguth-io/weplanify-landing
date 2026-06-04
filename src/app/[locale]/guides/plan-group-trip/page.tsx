@@ -783,10 +783,10 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
                   </span>
                 </div>
               </Link>
-              <Link href={`/${locale}/alternatives`} className="group">
+              <Link href={`/${locale}/alternatives/best-group-trip-planner-apps`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Comparatif des Applications" : "App Comparison"}
+                    {locale === "fr" ? "Meilleures applis de voyage de groupe" : "Best Group Trip Planner Apps"}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
                     {locale === "fr"

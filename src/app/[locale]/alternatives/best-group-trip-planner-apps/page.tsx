@@ -102,6 +102,17 @@ const content = {
     intro:
       "Planning a group trip is notoriously difficult. Between coordinating schedules, splitting costs, voting on destinations, and building an itinerary that works for everyone, you need the right tools. We tested and compared the most popular group travel planning apps available in 2026 to help you pick the one that fits your crew. Here are our top 10, ranked by overall usefulness for group travel.",
 
+    quickVerdict: {
+      heading: "Quick verdict",
+      lead: "For most groups, the best group trip planner in 2026 is WePlanify — the only free app that combines a collaborative day-by-day itinerary, group polls, a shared budget with automatic settlement, and packing lists in one place. Prefer a specialist below if you only need one of those jobs.",
+      picks: [
+        { label: "Best overall for groups (free)", app: "WePlanify", anchor: "weplanify" },
+        { label: "Best for solo / itinerary depth", app: "Wanderlog", anchor: "wanderlog" },
+        { label: "Best for splitting expenses only", app: "Splitwise", anchor: "splitwise" },
+        { label: "Best for flights & booking forwarding", app: "TripIt", anchor: "tripit" },
+      ],
+    },
+
     rankingTitle: "How We Ranked These Apps",
     rankingIntro:
       "We evaluated each app across five criteria that matter most for group travel planning:",
@@ -365,6 +376,17 @@ const content = {
     h1: "Comparatif 2026 : les 10 meilleures applis pour un voyage de groupe",
     intro:
       "Organiser un voyage de groupe est notoirement difficile. Entre la coordination des agendas, le partage des frais, le vote sur les destinations et la construction d'un itinéraire qui convient à tout le monde, il te faut les bons outils. On a testé et comparé les applications de planification de voyage de groupe les plus populaires disponibles en 2026 pour t'aider à choisir celle qui convient à ton groupe. Voici notre top 10, classé par utilité globale pour les voyages de groupe.",
+
+    quickVerdict: {
+      heading: "Le verdict en bref",
+      lead: "Pour la plupart des groupes, le meilleur planificateur de voyage de groupe en 2026 est WePlanify — la seule appli gratuite qui réunit un itinéraire collaboratif jour par jour, des sondages de groupe, un budget partagé avec règlement automatique et des listes de bagages au même endroit. Préfère un spécialiste ci-dessous si tu n'as besoin que d'une seule de ces fonctions.",
+      picks: [
+        { label: "Meilleur pour les groupes (gratuit)", app: "WePlanify", anchor: "weplanify" },
+        { label: "Meilleur pour l'itinéraire en solo", app: "Wanderlog", anchor: "wanderlog" },
+        { label: "Meilleur pour le partage de dépenses", app: "Splitwise", anchor: "splitwise" },
+        { label: "Meilleur pour les vols / réservations", app: "TripIt", anchor: "tripit" },
+      ],
+    },
 
     rankingTitle: "Comment Nous Avons Classé Ces Applications",
     rankingIntro:
@@ -827,6 +849,32 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
             <p className="text-[#001E13]/80 text-base lg:text-lg font-karla leading-relaxed">
               {c.intro}
             </p>
+
+            {/* Answer-first verdict — optimized for featured snippets & AI Overviews */}
+            <div className="mt-8 rounded-2xl border border-[#F6391A]/20 bg-[#FFF6F4] p-6 lg:p-7">
+              <p className="text-[#F6391A] font-londrina-solid text-lg lg:text-xl mb-2">
+                {c.quickVerdict.heading}
+              </p>
+              <p className="text-[#001E13]/80 text-base font-karla leading-relaxed mb-4">
+                {c.quickVerdict.lead}
+              </p>
+              <ul className="space-y-2">
+                {c.quickVerdict.picks.map((pick) => (
+                  <li
+                    key={pick.app}
+                    className="flex flex-wrap items-baseline gap-x-2 text-sm font-karla"
+                  >
+                    <span className="text-[#001E13]/60">{pick.label} :</span>
+                    <a
+                      href={`#${pick.anchor}`}
+                      className="font-bold text-[#001E13] hover:text-[#F6391A] transition-colors"
+                    >
+                      {pick.app}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </header>
 
