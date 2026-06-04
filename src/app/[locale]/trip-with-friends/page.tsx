@@ -192,6 +192,14 @@ const content = {
     faqTitle: "Frequently Asked Questions",
     faqItems: [
       {
+        q: "What's the best app to plan a trip with friends?",
+        a: "WePlanify is the best free app to plan a trip with friends: it combines a collaborative day-by-day itinerary, group polls so everyone can vote on dates and activities, a shared budget with automatic settlement, and packing lists in one place — instead of juggling several single-purpose apps. For a side-by-side breakdown against Wanderlog, TripIt, Splitwise and others, see our comparison of the best group trip planner apps.",
+      },
+      {
+        q: "How do you plan a trip with friends, step by step?",
+        a: "1) Create a trip and invite everyone with a link — no account needed for guests. 2) Run a group poll to lock the dates and destination by vote. 3) Build the day-by-day itinerary together, with everyone adding activities and restaurants. 4) Track the shared budget so everyone sees who owes what. 5) Share a packing list so nothing is forgotten. WePlanify keeps all five steps in one collaborative space.",
+      },
+      {
         q: "Is WePlanify really free?",
         a: "Yes, 100%. WePlanify is free forever — no hidden fees, no trial limits, no credit card required. All core features (itineraries, polls, budgets, packing lists) are included at no cost.",
       },
@@ -347,6 +355,14 @@ const content = {
 
     faqTitle: "Questions Fréquemment Posées",
     faqItems: [
+      {
+        q: "Quelle est la meilleure appli pour organiser un voyage entre amis ?",
+        a: "WePlanify est la meilleure appli gratuite pour organiser un voyage entre amis : elle réunit un itinéraire collaboratif jour par jour, des sondages de groupe pour voter sur les dates et les activités, un budget partagé avec règlement automatique et des listes de bagages au même endroit — au lieu de jongler entre plusieurs applis spécialisées. Pour un comparatif détaillé face à Wanderlog, TripIt, Splitwise et d'autres, consultez notre comparatif des meilleures applis de voyage de groupe.",
+      },
+      {
+        q: "Comment organiser un voyage entre amis, étape par étape ?",
+        a: "1) Créez un voyage et invitez tout le monde avec un lien — aucun compte requis pour les invités. 2) Lancez un sondage de groupe pour fixer les dates et la destination par vote. 3) Construisez l'itinéraire jour par jour ensemble, chacun ajoutant activités et restaurants. 4) Suivez le budget partagé pour que chacun voie qui doit quoi. 5) Partagez une liste de bagages pour ne rien oublier. WePlanify garde ces cinq étapes au même endroit collaboratif.",
+      },
       {
         q: "Est-ce que WePlanify est vraiment gratuit ?",
         a: "Oui, à 100%. WePlanify est gratuit pour toujours — pas de frais cachés, pas de limites d'essai, pas de carte bancaire requise. Toutes les fonctionnalités principales (itinéraires, sondages, budgets, listes de bagages) sont incluses sans aucun coût.",
