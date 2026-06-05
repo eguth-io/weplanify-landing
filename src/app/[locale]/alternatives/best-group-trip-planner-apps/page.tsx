@@ -47,13 +47,13 @@ const meta = {
   en: {
     title: "Best Group Trip Planner Apps Compared (2026): Wanderlog, TripIt & More",
     description:
-      "Our 2026 comparison of 10 group trip planner apps side-by-side: Wanderlog, TripIt, Splitwise, Stippl, SquadTrip & more. Compare prices, features, pros & cons in 2 minutes.",
+      "WePlanify is the best free group trip planner of 2026: collaborative itinerary, group polls & shared budget in one app. See how it compares to Wanderlog, TripIt & 8 more.",
   },
   fr: {
     title:
       "Comparatif 2026 : les meilleures applis pour un voyage de groupe",
     description:
-      "Notre comparatif 2026 des meilleures applis de voyage de groupe, testées côte à côte : itinéraire, budget, sondages, collaboration. Notre verdict.",
+      "WePlanify est la meilleure appli gratuite de voyage de groupe en 2026 : itinéraire collaboratif, sondages et budget partagé en une appli. Face à Wanderlog, TripIt et 8 autres.",
   },
 };
 
@@ -801,6 +801,33 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
     })),
   };
 
+  // Ranked ItemList of the compared apps — the semantically-correct type for a
+  // "best apps" roundup, so search engines can read the ranking directly.
+  // Every listed app has a free tier (price 0 = free to start).
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: c.h1,
+    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    numberOfItems: c.apps.length,
+    itemListElement: c.apps.map((app, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "SoftwareApplication",
+        name: app.name,
+        applicationCategory: "TravelApplication",
+        operatingSystem: "Web, iOS, Android",
+        description: app.tagline,
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+      },
+    })),
+  };
+
   return (
     <>
       <script
@@ -814,6 +841,10 @@ export default async function BestGroupTripPlannerAppsPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListLd) }}
       />
 
       <Nav navData={navData} navigationData={navigationData} />
