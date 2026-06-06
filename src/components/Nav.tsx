@@ -8,6 +8,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import LanguageModal from "./LanguageModal";
+import { useImmersiveMode } from "@/lib/hooks/use-immersive-mode";
 
 const DEFAULT_NAV_DATA: NavType = {
   logo: "/logo.svg",
@@ -177,6 +178,10 @@ export default function Nav({ navData }: NavProps) {
   const [langModalOpen, setLangModalOpen] = useState(false);
   const pathname = usePathname();
   const t = useTranslations("nav");
+  // While the immersive slider fills the screen, retract the nav up to a thin
+  // "bookmark" strip so it doesn't sit over the animation. Keep it expanded if
+  // the mobile menu is open (the user needs the full bar to navigate/close).
+  const immersive = useImmersiveMode() && !isMenuOpen;
 
   const locale: Locale = pathname?.startsWith("/fr") ? "fr" : "en";
   const nav = navData || DEFAULT_NAV_DATA;
@@ -207,8 +212,16 @@ export default function Nav({ navData }: NavProps) {
 
   return (
     <>
-      <div className="fixed w-full z-50 top-0 px-4 lg:px-8">
-        <nav className="bg-white shadow-sm flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] rounded-b-[16px] lg:rounded-b-[20px] max-w-[1536px] mx-auto">
+      <div
+        className={`fixed w-full z-50 top-0 px-4 lg:px-8 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+          immersive ? "-translate-y-[calc(100%-14px)]" : "translate-y-0"
+        }`}
+      >
+        <nav
+          className={`bg-white shadow-sm flex justify-between items-center px-[30px] lg:px-[70px] py-[10px] rounded-b-[16px] lg:rounded-b-[20px] max-w-[1536px] mx-auto transition-[opacity] duration-300 ${
+            immersive ? "opacity-95" : "opacity-100"
+          }`}
+        >
           <Link href={`/${locale}`} aria-label="WePlanify - Home">
             <Image
               src={nav.logo}

@@ -1,3 +1,5 @@
+// Fragment n'est utilisé que par le bandeau défilant (Scrolling Banner), actuellement
+// commenté plus bas. Réimporter `{ Fragment }` depuis "react" pour le réactiver.
 import dynamic from "next/dynamic";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -5,7 +7,7 @@ import FadeIn from "@/components/FadeIn";
 import HeroPitchWall from "@/components/HeroPitchWall";
 
 // Lazy-load below-the-fold components to reduce initial JS bundle
-const StackingCards = dynamic(() => import("@/components/StackingCards"));
+const BigFeaturesSection = dynamic(() => import("@/components/BigFeaturesSection"));
 const FAQSupport = dynamic(() => import("@/components/FAQSupport"));
 const TestimonialCarousel = dynamic(() => import("@/components/TestimonialCarousel"));
 const StatsBlock = dynamic(() => import("@/components/StatsBlock"));
@@ -56,7 +58,9 @@ export default async function HomePage({ params }: Props) {
     );
   }
 
-  const { hero, worldSection, banner } = landingPageData;
+  // `banner` est consommé uniquement par le Scrolling Banner (commenté plus bas) —
+  // le rajouter à la déstructuration pour réactiver le bandeau.
+  const { hero, worldSection } = landingPageData;
 
   return (
     <main className="landing-page" id="main-content">
@@ -188,8 +192,10 @@ export default async function HomePage({ params }: Props) {
       </FadeIn>
       )}
 
-      {/* Scrolling Banner Section */}
-      {banner?.items && banner.items.length > 0 && (
+      {/* Scrolling Banner Section — temporairement masqué (desktop + mobile).
+          Décommenter le bloc ci-dessous pour le réafficher ; les données viennent
+          toujours de Sanity (banner.items / backgroundColor / textColor). */}
+      {/* {banner?.items && banner.items.length > 0 && (
         <div
           className="py-2 lg:py-3 overflow-hidden"
           style={{
@@ -200,38 +206,36 @@ export default async function HomePage({ params }: Props) {
           <div className="flex whitespace-nowrap animate-scroll">
             <div className="flex items-center gap-8 lg:gap-12">
               {banner.items.map((item, index) => (
-                <>
-                  <span key={`item-${index}`} className="text-base lg:text-xl font-londrina-solid">
+                <Fragment key={`item-${index}`}>
+                  <span className="text-base lg:text-xl font-londrina-solid">
                     {item}
                   </span>
-                  <span key={`dot-${index}`} className="text-base lg:text-xl">
+                  <span className="text-base lg:text-xl">
                     •
                   </span>
-                </>
+                </Fragment>
               ))}
             </div>
             <div className="flex items-center gap-8 lg:gap-12 ml-8 lg:ml-12">
               {banner.items.map((item, index) => (
-                <>
-                  <span key={`item2-${index}`} className="text-base lg:text-xl font-londrina-solid">
+                <Fragment key={`item2-${index}`}>
+                  <span className="text-base lg:text-xl font-londrina-solid">
                     {item}
                   </span>
-                  <span key={`dot2-${index}`} className="text-base lg:text-xl">
+                  <span className="text-base lg:text-xl">
                     •
                   </span>
-                </>
+                </Fragment>
               ))}
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
-      {/* Stacking Cards Section */}
-      <FadeIn>
-        <div id="features">
-          <StackingCards locale={locale} />
-        </div>
-      </FadeIn>
+      {/* Big Features Section — full-screen image that shrinks into a horizontal slider */}
+      <div id="features">
+        <BigFeaturesSection locale={locale} />
+      </div>
 
       
 
