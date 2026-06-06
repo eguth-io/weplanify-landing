@@ -152,10 +152,9 @@ export default function FeatureImageSection({ locale = "en" }: FeatureImageSecti
         </h2>
 
         {/* Shifted left so the phone (offset right by the hand) sits centered under the title.
-            Mobile: a little vertical padding so the corner bubbles (anchored to the
-            phone's top/bottom edges) don't crowd the title above or the next section
-            below — kept tight so the phone still nearly meets the section beneath it. */}
-        <div className="relative w-full max-w-[1040px] mx-auto py-6 lg:py-0 lg:-translate-x-[42px]">
+            Mobile: small TOP padding so the top corner bubbles don't crowd the title,
+            and NO bottom padding so the phone meets the next section like on desktop. */}
+        <div className="relative w-full max-w-[1040px] mx-auto pt-6 pb-0 lg:py-0 lg:-translate-x-[42px]">
           {/* Phone mockup (clean, no baked-in text) */}
           <div className="relative z-20 mx-auto w-[270px] sm:w-[340px] lg:w-[440px]">
             <Image
@@ -239,17 +238,17 @@ function MobileFeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
       ? { top: bubble.mobile!.offset }
       : { bottom: bubble.mobile!.offset }),
   };
-  // Like desktop: tuck the card's whitespace (extra inner padding), not the
-  // text, behind the phone. Left bubbles pad their right side, right bubbles
-  // their left side. Icon stays flush on the outer edge.
-  const innerPad = isLeft ? "pl-3 pr-7" : "pl-7 pr-3 flex-row-reverse text-right";
+  // Bubbles sit ON TOP of the phone on mobile (z-30 > phone's z-20) so they stay
+  // fully visible, overlapping the phone's edge for a layered look. Right bubbles
+  // mirror their layout so the icon stays on the outer edge.
+  const innerPad = isLeft ? "pl-3 pr-3" : "pl-3 pr-3 flex-row-reverse text-right";
 
   return (
     <div
-      className={`absolute z-10 flex max-w-[58%] items-center gap-2 rounded-2xl bg-white ${innerPad} py-2 shadow-[0_10px_28px_-12px_rgba(0,0,0,0.4)] ring-1 ring-black/5 lg:hidden`}
+      className={`absolute z-30 flex max-w-[54%] items-center gap-2 rounded-2xl bg-white ${innerPad} py-2 shadow-[0_10px_28px_-12px_rgba(0,0,0,0.45)] ring-1 ring-black/5 lg:hidden`}
       style={{
         ...sidePos,
-        opacity: bubble.dim ? 0.85 : 1,
+        opacity: bubble.dim ? 0.92 : 1,
       }}
     >
       <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-orange">

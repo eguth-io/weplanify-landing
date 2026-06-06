@@ -51,14 +51,14 @@ const MEDIA = {
   },
   voting: {
     image: "/features-bg/voting.webp",
-    videoDesktop: VIDEO_DESKTOP,
-    videoMobile: VIDEO_MOBILE,
+    videoDesktop: "/features-video/polls-video.mp4",
+    videoMobile: "/features-video/polls-mobile.mp4",
     cta: { bg: "#EDF89A", color: "#001E13", ring: "#233E26" },
   },
   itinerary: {
     image: "/features-bg/itinerary.webp",
-    videoDesktop: VIDEO_DESKTOP,
-    videoMobile: VIDEO_MOBILE,
+    videoDesktop: "/features-video/day-by-day-video.mp4",
+    videoMobile: "/features-video/day-by-day-mobile.mp4",
     // ring = bg, more transparent
     cta: { bg: "#61DBD5", color: "#001E13", ring: "rgba(97,219,213,0.35)" },
   },
@@ -126,6 +126,9 @@ const CONTENT: Record<Lang, BigFeaturesContent> = {
 };
 
 const PADDING = 32;
+// Much smaller shrink padding on mobile so the slide doesn't lose too much of
+// the (already narrow) screen as it tucks into the slider.
+const PADDING_MOBILE = 10;
 const RADIUS = 24;
 
 interface BigFeaturesSectionProps {
@@ -190,8 +193,22 @@ export default function BigFeaturesSection({
     offset: ["start start", "end end"],
   });
 
+  // Detect mobile (below the lg breakpoint) to use a smaller shrink padding.
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 1023px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
   // First slide shrinks from full-bleed into a rounded, padded card as we scroll.
-  const slide1Padding = useTransform(scrollYProgress, [0.08, 0.2], [0, PADDING]);
+  const slide1Padding = useTransform(
+    scrollYProgress,
+    [0.08, 0.2],
+    [0, isMobile ? PADDING_MOBILE : PADDING]
+  );
   const slide1Radius = useTransform(scrollYProgress, [0.08, 0.2], [0, RADIUS]);
 
   // Map scroll progress to a (fractional) active slide index, eased per-step so
