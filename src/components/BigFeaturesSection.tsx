@@ -1,31 +1,34 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import {
   motion,
+  AnimatePresence,
   useScroll,
   useTransform,
   useInView,
   type MotionValue,
 } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Maximize2, X } from "lucide-react";
 import Link from "next/link";
-import {
-  AiGlobeJourney,
-  LiveCollaboration,
-  LiveVoting,
-} from "@/components/animations";
+import Image from "next/image";
 import { useRegisterHref } from "@/lib/attribution/use-register-href";
 import { setImmersiveMode } from "@/lib/hooks/use-immersive-mode";
 
 type Lang = "en" | "fr";
-type AnimationType = "ai-globe" | "live-collaboration" | "live-voting";
-
 interface SlideData {
   title: string;
   description: string;
-  animation: AnimationType;
+  /** Full-bleed background image, generated per feature. */
+  image: string;
+  /** Video shown in the laptop mockup. */
+  videoDesktop: string;
+  /** Video shown in the phone mockup. */
+  videoMobile: string;
   ctaLabel: string;
+  /** Per-feature CTA colors. */
+  cta: { bg: string; color: string; ring: string };
   stats?: { value: string; label: string }[];
 }
 
@@ -33,6 +36,33 @@ interface BigFeaturesContent {
   title: string;
   slides: SlideData[];
 }
+
+// Per-feature media. Videos currently reuse the explorer pair everywhere — they
+// will be swapped per feature once the other clips are produced.
+const VIDEO_DESKTOP = "/features-video/explorer-video.mp4";
+const VIDEO_MOBILE = "/features-video/explorer-video-mobile.mp4";
+const MEDIA = {
+  explorer: {
+    image: "/features-bg/explorer.webp",
+    videoDesktop: VIDEO_DESKTOP,
+    videoMobile: VIDEO_MOBILE,
+    // ring = bg, more transparent
+    cta: { bg: "#D42D10", color: "#FEF6EF", ring: "rgba(212,45,16,0.35)" },
+  },
+  voting: {
+    image: "/features-bg/voting.webp",
+    videoDesktop: VIDEO_DESKTOP,
+    videoMobile: VIDEO_MOBILE,
+    cta: { bg: "#EDF89A", color: "#001E13", ring: "#233E26" },
+  },
+  itinerary: {
+    image: "/features-bg/itinerary.webp",
+    videoDesktop: VIDEO_DESKTOP,
+    videoMobile: VIDEO_MOBILE,
+    // ring = bg, more transparent
+    cta: { bg: "#61DBD5", color: "#001E13", ring: "rgba(97,219,213,0.35)" },
+  },
+};
 
 const CONTENT: Record<Lang, BigFeaturesContent> = {
   fr: {
@@ -42,7 +72,7 @@ const CONTENT: Record<Lang, BigFeaturesContent> = {
         title: "Explore et propose des idées au groupe",
         description:
           "Trouve activités, restaurants, hébergement et transport directement dans l'app. Ajoute-les à l'itinéraire ou soumets-les au vote du groupe.",
-        animation: "ai-globe",
+        ...MEDIA.explorer,
         ctaLabel: "Explorer les destinations",
         stats: [{ value: "+190", label: "destinations possibles" }],
       },
@@ -50,7 +80,7 @@ const CONTENT: Record<Lang, BigFeaturesContent> = {
         title: "Décidez ensemble grâce aux sondages",
         description:
           "Où dormir ? Que faire ? Quand partir ? Créez un sondage, chacun vote, la décision est prise. Le groupe avance, le voyage aussi.",
-        animation: "live-voting",
+        ...MEDIA.voting,
         ctaLabel: "Lancer un sondage",
         stats: [{ value: "1000+", label: "sondages quotidiens" }],
       },
@@ -58,7 +88,7 @@ const CONTENT: Record<Lang, BigFeaturesContent> = {
         title: "Un itinéraire clair, jour après jour",
         description:
           "Chaque journée du voyage est structurée : que faire, où manger, où dormir, comment se déplacer. Tout est clair pour tout le monde.",
-        animation: "live-collaboration",
+        ...MEDIA.itinerary,
         ctaLabel: "Construire l'itinéraire",
         stats: [{ value: "10+", label: "partenaires" }],
       },
@@ -71,7 +101,7 @@ const CONTENT: Record<Lang, BigFeaturesContent> = {
         title: "Explore and propose ideas to the group",
         description:
           "Find activities, restaurants, accommodation and transport directly in the app. Add them to the itinerary or propose them to the group to vote.",
-        animation: "ai-globe",
+        ...MEDIA.explorer,
         ctaLabel: "Explore destinations",
         stats: [{ value: "190+", label: "Possible destinations" }],
       },
@@ -79,7 +109,7 @@ const CONTENT: Record<Lang, BigFeaturesContent> = {
         title: "Decide together with polls",
         description:
           "Where to stay? What to do? When to leave? Create a poll, everyone votes, the decision is made. The group moves forward, the trip too.",
-        animation: "live-voting",
+        ...MEDIA.voting,
         ctaLabel: "Start a poll",
         stats: [{ value: "1000+", label: "Daily polls" }],
       },
@@ -87,7 +117,7 @@ const CONTENT: Record<Lang, BigFeaturesContent> = {
         title: "A clear itinerary, day by day",
         description:
           "Each day of the trip is structured: what to do, where to eat, where to sleep, how to get there. Everything is clear for everyone.",
-        animation: "live-collaboration",
+        ...MEDIA.itinerary,
         ctaLabel: "Build my itinerary",
         stats: [{ value: "10+", label: "Partners" }],
       },
@@ -444,7 +474,7 @@ function Slide({
 }) {
   const registerUrl = useRegisterHref({ locale, medium: "big-features" });
   const slideRef = useRef<HTMLDivElement>(null);
-  // useInView as a cheap "section is on screen at all" gate to autoplay anims.
+  // Only play the device videos while this slide is on screen.
   const sectionInView = useInView(slideRef, { once: false, amount: 0.1 });
 
   // The first slide starts full-bleed (square) — its rounding is animated by the
@@ -455,49 +485,40 @@ function Slide({
   const firstSlideRadius = useTransform(activeSlideFloat, [0, 0.15], [0, 24]);
   const borderRadius = index === 0 ? firstSlideRadius : 24;
 
-  const AnimationComponent = () => {
-    switch (slide.animation) {
-      case "ai-globe":
-        return <AiGlobeJourney autoPlay={sectionInView} locale={locale} />;
-      case "live-collaboration":
-        return <LiveCollaboration autoPlay={sectionInView} locale={locale} />;
-      case "live-voting":
-        return <LiveVoting autoPlay={sectionInView} locale={locale} />;
-      default:
-        return null;
-    }
-  };
-
   return (
     <motion.div
       ref={slideRef}
       className="relative h-full flex-shrink-0 overflow-hidden"
       style={{ width: "100%", borderRadius }}
     >
-      {/* Animation as full-bleed background */}
-      <div className="absolute inset-0 flex items-center justify-center bg-[#FFFBF5]">
-        <div className="h-full w-full">
-          <AnimationComponent />
-        </div>
-      </div>
+      {/* Generated feature image as full-bleed background */}
+      <Image
+        src={slide.image}
+        alt={slide.title}
+        fill
+        sizes="100vw"
+        className="object-cover"
+        priority={index === 0}
+      />
 
       {/* Dark veil for text legibility — stronger in the center where the copy
-          sits, lighter at the edges so the animation stays visible. */}
-      <div className="absolute inset-0 bg-black/40" />
+          sits, lighter at the edges so the image stays visible. */}
+      <div className="absolute inset-0 bg-black/45" />
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.1) 100%)",
+            "radial-gradient(ellipse 75% 65% at 50% 42%, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.15) 100%)",
         }}
       />
 
-      {/* Centered overlay content */}
+      {/* Centered overlay content + device mockups below the CTA */}
       <SlideOverlay
         slide={slide}
         index={index}
         activeSlideFloat={activeSlideFloat}
         registerUrl={registerUrl}
+        playing={sectionInView}
       />
     </motion.div>
   );
@@ -508,11 +529,13 @@ function SlideOverlay({
   index,
   activeSlideFloat,
   registerUrl,
+  playing,
 }: {
   slide: SlideData;
   index: number;
   activeSlideFloat: MotionValue<number>;
   registerUrl: string;
+  playing: boolean;
 }) {
   // Fade/lift the text in as its slide becomes active.
   const opacity = useTransform(activeSlideFloat, (v) =>
@@ -524,36 +547,276 @@ function SlideOverlay({
 
   return (
     <motion.div
-      className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center [text-shadow:0_2px_16px_rgba(0,0,0,0.55)]"
+      className="relative z-10 flex h-full flex-col items-center justify-center gap-6 px-6 py-12 text-center lg:gap-8"
       style={{ opacity, y }}
     >
-      <h3 className="font-londrina-solid text-4xl leading-tight text-white md:text-6xl lg:text-7xl max-w-4xl">
-        {slide.title}
-      </h3>
-      <p className="mt-4 max-w-xl font-karla text-base text-white/90 md:text-lg lg:text-xl">
-        {slide.description}
-      </p>
+      {/* Copy + CTA */}
+      <div className="flex flex-col items-center [text-shadow:0_2px_16px_rgba(0,0,0,0.55)]">
+        <h3 className="max-w-4xl font-londrina-solid text-3xl leading-tight text-white md:text-5xl lg:text-6xl">
+          {slide.title}
+        </h3>
+        <p className="mt-3 max-w-xl font-karla text-sm text-white/90 md:text-base lg:text-lg">
+          {slide.description}
+        </p>
 
-      {slide.stats && slide.stats.length > 0 && (
-        <div className="mt-8 flex gap-10 lg:gap-14">
-          {slide.stats.map((stat, idx) => (
-            <div key={idx} className="flex flex-col items-center">
-              <p className="font-londrina-solid text-4xl text-white lg:text-5xl">
-                {stat.value}
-              </p>
-              <p className="font-nanum-pen text-base text-white/70 lg:text-lg">
-                {stat.label}
-              </p>
-            </div>
-          ))}
-        </div>
-      )}
+        <Link href={registerUrl} rel="nofollow" className="mt-6">
+          <button
+            className="rounded-full px-8 py-3 font-karla text-sm font-bold transition-all hover:opacity-90 lg:text-base"
+            style={{
+              backgroundColor: slide.cta.bg,
+              color: slide.cta.color,
+              boxShadow: `0 0 0 4px ${slide.cta.ring}`,
+            }}
+          >
+            {slide.ctaLabel}
+          </button>
+        </Link>
+      </div>
 
-      <Link href={registerUrl} rel="nofollow" className="mt-8">
-        <button className="rounded-full bg-orange px-8 py-3 font-karla text-sm font-bold text-white ring-4 ring-orange/30 transition-all hover:opacity-90 lg:text-base">
-          {slide.ctaLabel}
-        </button>
-      </Link>
+      {/* Device mockups (laptop + phone) showing the feature videos */}
+      <DeviceShowcase
+        videoDesktop={slide.videoDesktop}
+        videoMobile={slide.videoMobile}
+        playing={playing}
+      />
     </motion.div>
+  );
+}
+
+type DeviceKind = "laptop" | "phone";
+
+/**
+ * Reusable laptop + phone mockups side by side, each playing a (muted, looping)
+ * feature video. Same chassis across all slides — only the video sources change.
+ * Hovering a mockup blurs it slightly and reveals an "expand" affordance; click
+ * opens that mockup full-screen in a clean animated overlay.
+ */
+function DeviceShowcase({
+  videoDesktop,
+  videoMobile,
+  playing,
+}: {
+  videoDesktop: string;
+  videoMobile: string;
+  playing: boolean;
+}) {
+  const [expanded, setExpanded] = useState<DeviceKind | null>(null);
+
+  return (
+    <>
+      <div className="flex items-end justify-center gap-4 lg:gap-8">
+        <DeviceMockup
+          kind="laptop"
+          src={videoDesktop}
+          playing={playing && expanded === null}
+          onExpand={() => setExpanded("laptop")}
+        />
+        <DeviceMockup
+          kind="phone"
+          src={videoMobile}
+          playing={playing && expanded === null}
+          onExpand={() => setExpanded("phone")}
+        />
+      </div>
+
+      <FullscreenMockup
+        kind={expanded}
+        src={expanded === "phone" ? videoMobile : videoDesktop}
+        onClose={() => setExpanded(null)}
+      />
+    </>
+  );
+}
+
+/** The laptop or phone chassis. `compact` is the in-slide thumbnail variant. */
+function DeviceChassis({
+  kind,
+  children,
+  className = "",
+}: {
+  kind: DeviceKind;
+  children: React.ReactNode;
+  className?: string;
+}) {
+  if (kind === "laptop") {
+    return (
+      <div className={className}>
+        <div className="relative aspect-[16/10] overflow-hidden rounded-t-xl border-[7px] border-b-0 border-neutral-800 bg-black shadow-2xl">
+          {children}
+        </div>
+        {/* Base / hinge */}
+        <div className="relative mx-auto h-3.5 w-[112%] -translate-x-[calc((112%-100%)/2)] rounded-b-xl rounded-t-sm bg-neutral-700 shadow-lg">
+          <div className="absolute left-1/2 top-0 h-2 w-20 -translate-x-1/2 rounded-b-md bg-neutral-800" />
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className={className}>
+      <div className="relative aspect-[9/19] overflow-hidden rounded-[1.8rem] border-[6px] border-neutral-800 bg-black shadow-2xl">
+        <div className="absolute left-1/2 top-1.5 z-10 h-1.5 w-12 -translate-x-1/2 rounded-full bg-neutral-800" />
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function DeviceMockup({
+  kind,
+  src,
+  playing,
+  onExpand,
+}: {
+  kind: DeviceKind;
+  src: string;
+  playing: boolean;
+  onExpand: () => void;
+}) {
+  const widthCls =
+    kind === "laptop"
+      ? "w-[300px] sm:w-[440px] lg:w-[580px]"
+      : "w-[104px] sm:w-[140px] lg:w-[184px]";
+
+  return (
+    <button
+      type="button"
+      onClick={onExpand}
+      aria-label={kind === "laptop" ? "Expand laptop preview" : "Expand phone preview"}
+      className={`group relative cursor-zoom-in ${widthCls}`}
+    >
+      <DeviceChassis kind={kind}>
+        <FeatureVideo src={src} playing={playing} />
+        {/* Hover affordance: subtle blur + zoom icon */}
+        <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 backdrop-blur-0 transition-all duration-300 group-hover:bg-black/10 group-hover:opacity-100 group-hover:backdrop-blur-[2px]">
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-[#001E13] shadow-lg">
+            <Maximize2 className="h-4 w-4" />
+          </span>
+        </div>
+      </DeviceChassis>
+    </button>
+  );
+}
+
+/** Full-screen overlay showing the chosen mockup, enlarged, with sound + controls. */
+function FullscreenMockup({
+  kind,
+  src,
+  onClose,
+}: {
+  kind: DeviceKind | null;
+  src: string;
+  onClose: () => void;
+}) {
+  // Close on Escape + lock body scroll while open.
+  useEffect(() => {
+    if (!kind) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [kind, onClose]);
+
+  // Render through a portal on <body> so the fixed overlay escapes the slider's
+  // transformed / overflow-hidden ancestors (a `position: fixed` element is
+  // positioned relative to a transformed ancestor, not the viewport, which would
+  // otherwise trap the modal inside the slide).
+  if (typeof document === "undefined") return null;
+
+  return createPortal(
+    <AnimatePresence>
+      {kind && (
+        <motion.div
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25, ease: "easeOut" }}
+          onClick={onClose}
+        >
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+
+          {/* Close button */}
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close preview"
+            className="absolute right-5 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-colors hover:bg-white/20"
+          >
+            <X className="h-5 w-5" />
+          </button>
+
+          {/* Enlarged mockup */}
+          <motion.div
+            className="relative z-[1]"
+            initial={{ opacity: 0, scale: 0.9, y: 16 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: 8 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <DeviceChassis
+              kind={kind}
+              className={
+                kind === "laptop"
+                  ? "w-[min(92vw,1100px)]"
+                  : "w-[min(80vw,360px)]"
+              }
+            >
+              <FeatureVideo
+                src={src}
+                playing
+                controls
+                muted={false}
+                key={src + kind}
+              />
+            </DeviceChassis>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>,
+    document.body
+  );
+}
+
+function FeatureVideo({
+  src,
+  playing,
+  controls = false,
+  muted = true,
+}: {
+  src: string;
+  playing: boolean;
+  controls?: boolean;
+  muted?: boolean;
+}) {
+  const ref = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const v = ref.current;
+    if (!v) return;
+    if (playing) {
+      v.play().catch(() => {});
+    } else {
+      v.pause();
+    }
+  }, [playing]);
+
+  return (
+    <video
+      ref={ref}
+      src={src}
+      muted={muted}
+      loop
+      playsInline
+      controls={controls}
+      preload="metadata"
+      className="h-full w-full object-cover"
+    />
   );
 }

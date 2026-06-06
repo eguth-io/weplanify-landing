@@ -49,11 +49,14 @@ type Bubble = {
   /**
    * Mobile placement. Only bubbles with this set are shown on mobile, floating
    * in one of the four corners and slightly overlapping the phone for depth.
+   * Anchored to the corner with a FIXED offset (not a % of container height) so
+   * the bubble can never drift off-screen as the phone's height changes — top
+   * bubbles pin to the top edge, bottom bubbles to the bottom edge.
    */
   mobile?: {
     corner: "top-left" | "top-right" | "bottom-left" | "bottom-right";
-    /** Vertical anchor as a percentage of the container height (mobile). */
-    top: number;
+    /** Vertical offset (px) from the corner's edge. */
+    offset: number;
   };
 };
 
@@ -66,7 +69,7 @@ const BUBBLES: Bubble[] = [
     side: "left",
     top: 10,
     edge: 38,
-    mobile: { corner: "top-left", top: 6 },
+    mobile: { corner: "top-left", offset: 8 },
   },
   {
     text: { fr: "Gérer les dépenses de votre voyage", en: "Manage your trip expenses" },
@@ -84,7 +87,7 @@ const BUBBLES: Bubble[] = [
     top: 54,
     edge: 33,
     dim: true,
-    mobile: { corner: "bottom-left", top: 70 },
+    mobile: { corner: "bottom-left", offset: 8 },
   },
   {
     text: { fr: "Gérer votre voyage", en: "Manage your trip" },
@@ -102,7 +105,7 @@ const BUBBLES: Bubble[] = [
     side: "right",
     top: 9,
     edge: 32,
-    mobile: { corner: "top-right", top: 16 },
+    mobile: { corner: "top-right", offset: 64 },
   },
   {
     text: { fr: "Trouver vos futurs logements", en: "Find your accommodation" },
@@ -129,7 +132,7 @@ const BUBBLES: Bubble[] = [
     side: "right",
     top: 78,
     edge: 34,
-    mobile: { corner: "bottom-right", top: 84 },
+    mobile: { corner: "bottom-right", offset: 64 },
   },
 ];
 
@@ -149,9 +152,10 @@ export default function FeatureImageSection({ locale = "en" }: FeatureImageSecti
         </h2>
 
         {/* Shifted left so the phone (offset right by the hand) sits centered under the title.
-            Mobile: extra vertical padding so the corner bubbles (which overlap the
-            phone's top/bottom) don't crowd the title above or the next section below. */}
-        <div className="relative w-full max-w-[1040px] mx-auto py-10 lg:py-0 lg:-translate-x-[42px]">
+            Mobile: a little vertical padding so the corner bubbles (anchored to the
+            phone's top/bottom edges) don't crowd the title above or the next section
+            below — kept tight so the phone still nearly meets the section beneath it. */}
+        <div className="relative w-full max-w-[1040px] mx-auto py-6 lg:py-0 lg:-translate-x-[42px]">
           {/* Phone mockup (clean, no baked-in text) */}
           <div className="relative z-20 mx-auto w-[270px] sm:w-[340px] lg:w-[440px]">
             <Image
@@ -224,10 +228,17 @@ function MobileFeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
   const Icon = bubble.icon;
   const corner = bubble.mobile!.corner;
   const isLeft = corner === "top-left" || corner === "bottom-left";
-  // Left bubbles hug the container's left edge; right bubbles its right edge.
-  // The phone is centered, so they naturally overlap its sides — the layered
-  // depth effect from desktop, resized for a narrow screen.
-  const sidePos = isLeft ? { left: 0 } : { right: 0 };
+  const isTop = corner === "top-left" || corner === "top-right";
+  // Anchor to a fixed corner offset instead of a % of the container height, so
+  // the bubble can't slip below the viewport when its text wraps or the phone
+  // resizes. Top bubbles pin their TOP edge to the container's top; bottom
+  // bubbles pin their BOTTOM edge to the container's bottom.
+  const sidePos = {
+    ...(isLeft ? { left: 0 } : { right: 0 }),
+    ...(isTop
+      ? { top: bubble.mobile!.offset }
+      : { bottom: bubble.mobile!.offset }),
+  };
   // Like desktop: tuck the card's whitespace (extra inner padding), not the
   // text, behind the phone. Left bubbles pad their right side, right bubbles
   // their left side. Icon stays flush on the outer edge.
@@ -235,9 +246,8 @@ function MobileFeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
 
   return (
     <div
-      className={`absolute z-10 flex max-w-[52%] items-center gap-2 rounded-2xl bg-white ${innerPad} py-2 shadow-[0_10px_28px_-12px_rgba(0,0,0,0.4)] ring-1 ring-black/5 lg:hidden`}
+      className={`absolute z-10 flex max-w-[58%] items-center gap-2 rounded-2xl bg-white ${innerPad} py-2 shadow-[0_10px_28px_-12px_rgba(0,0,0,0.4)] ring-1 ring-black/5 lg:hidden`}
       style={{
-        top: `${bubble.mobile!.top}%`,
         ...sidePos,
         opacity: bubble.dim ? 0.85 : 1,
       }}
@@ -246,7 +256,7 @@ function MobileFeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
         <Icon className="h-3.5 w-3.5 text-white" />
       </span>
       <span className="flex min-w-0 flex-col">
-        <span className="font-karla text-xs font-bold leading-tight text-[#001E13]">
+        <span className="line-clamp-2 font-karla text-xs font-bold leading-tight text-[#001E13]">
           {bubble.text[lang]}
         </span>
         <span className="truncate font-karla text-[10px] leading-tight text-gray-400">
