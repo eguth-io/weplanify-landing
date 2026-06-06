@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Perguntas Frequentes (FAQ)",
+    "description": "Encontre respostas às suas perguntas sobre a WePlanify. Como planear uma viagem em grupo, funcionalidades, preços e apoio."
+  },
+  "breadcrumb": {
+    "home": "Início"
+  },
+  "subtitle": "Encontre rapidamente respostas às suas perguntas mais frequentes.",
+  "empty": "Nenhuma FAQ disponível de momento.",
+  "ctaTitle": "Ainda tem dúvidas?",
+  "ctaSubtitle": "A nossa equipa está aqui para o ajudar a planear a sua viagem perfeita.",
+  "ctaButton": "Contacte-nos",
+  "defaultFaq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "question": "O que é a WePlanify?",
+        "answer": "A WePlanify é um planeador de viagens em grupo gratuito, que funciona no navegador. Combina um itinerário colaborativo, sondagens em grupo, um gestor de orçamento partilhado com acerto automático de contas, listas de bagagem partilhadas e um assistente de IA — tudo numa só ferramenta bilingue (inglês/francês)."
+      },
+      {
+        "question": "A WePlanify é gratuita?",
+        "answer": "Sim. O plano gratuito cobre a maioria das viagens em grupo realistas: itinerários colaborativos, sondagens, gestão de orçamento partilhado, listas de bagagem e acesso ao assistente de IA. Existem planos premium para quotas mais elevadas (mais viagens, mais pedidos à IA, histórico mais longo). Não é necessário cartão de crédito para se registar."
+      },
+      {
+        "question": "Como funciona a WePlanify?",
+        "answer": "Crie uma viagem em segundos, convide os seus amigos por email ou link partilhável e comecem a planear em conjunto. Qualquer pessoa pode editar o itinerário, lançar uma sondagem, adicionar uma despesa ou marcar um item da bagagem. O assistente de IA pode esboçar uma primeira versão a partir de uma simples descrição da sua viagem."
+      },
+      {
+        "question": "Preciso de descarregar uma app?",
+        "answer": "Não. A WePlanify funciona em qualquer navegador moderno no telemóvel, tablet ou computador. Não é necessário descarregar nada da App Store nem da Play Store."
+      },
+      {
+        "question": "Quantas pessoas podem juntar-se a uma viagem?",
+        "answer": "A WePlanify foi concebida para grupos de 2 a mais de 50 participantes. Não há um limite rígido para tamanhos de grupo normais."
+      },
+      {
+        "question": "Como funcionam as sondagens em grupo?",
+        "answer": "Qualquer pessoa na viagem pode criar uma sondagem em segundos: de escolha única ou múltipla, com um modo de votação anónima opcional (útil para escolhas sensíveis ao orçamento). Os resultados ficam visíveis em tempo real, com a repartição por opção. As sondagens podem ser associadas a itens do itinerário (\"escolher o restaurante para o Dia 2\")."
+      },
+      {
+        "question": "Como funciona o orçamento partilhado?",
+        "answer": "Cada participante regista uma despesa com um pagador, valor, moeda e regra de divisão (igual, partes personalizadas ou excluir pessoas específicas). A WePlanify calcula em tempo real quem deve a quem, em qualquer moeda com conversão automática. Os itens pré-pagos (sinais, reservas de grupo) são acompanhados separadamente das despesas feitas durante a viagem."
+      },
+      {
+        "question": "Como se compara a WePlanify ao Wanderlog?",
+        "answer": "O Wanderlog é uma boa ferramenta de itinerários, mas não tem sondagens em grupo integradas nem um gestor de orçamento partilhado com acerto de contas. A WePlanify foi concebida para grupos desde a base, é totalmente bilingue inglês/francês e inclui sondagens e orçamento partilhado de forma nativa. Ambas são gratuitas no plano de entrada."
+      },
+      {
+        "question": "Como se compara a WePlanify ao Splitwise?",
+        "answer": "O Splitwise é um ótimo divisor de despesas, mas não é um planeador de viagens. A WePlanify cobre toda a viagem (itinerário, sondagens, bagagem, orçamento) e inclui um gestor de orçamento ao estilo do Splitwise para as despesas partilhadas da viagem."
+      },
+      {
+        "question": "Posso planear uma despedida de solteira ou de solteiro com a WePlanify?",
+        "answer": "Sim — este é um dos casos de uso mais comuns. As sondagens tratam da decisão de \"quem escolhe a atividade\", o orçamento partilhado acompanha quem pagou o quê (incluindo sinais pré-pagos) e as listas de bagagem evitam material duplicado. A votação anónima é útil quando os orçamentos variam dentro do grupo."
+      },
+      {
+        "question": "A WePlanify funciona para viajantes a solo?",
+        "answer": "A WePlanify pode ser usada a solo, mas o produto está otimizado para grupos. Os viajantes a solo tirarão mais partido do TripIt (acompanhamento de reservas) ou do Stippl (diário de viagem a solo). A WePlanify brilha assim que uma segunda pessoa se junta à viagem."
+      },
+      {
+        "question": "Que idiomas a WePlanify suporta?",
+        "answer": "Inglês e francês, totalmente traduzidos de ponta a ponta (URLs, conteúdos, emails, respostas do assistente de IA). Há mais idiomas no roteiro."
+      },
+      {
+        "question": "Como funciona o assistente de IA?",
+        "answer": "Descreva a viagem em linguagem simples (\"4 amigos, fim de semana prolongado em Lisboa, foco gastronómico, orçamento de 500€ cada\") e o assistente propõe destinos, itinerários dia a dia, atividades e estimativas de orçamento. Adapta-se às sondagens do grupo e às restrições de orçamento à medida que o plano evolui."
+      },
+      {
+        "question": "Em que países está disponível a WePlanify?",
+        "answer": "A WePlanify funciona em todo o mundo e cobre destinos em mais de 190 países."
+      },
+      {
+        "question": "A WePlanify está em conformidade com o RGPD?",
+        "answer": "Sim. A WePlanify foi desenvolvida na Europa com conformidade com o RGPD desde o primeiro dia. Os utilizadores podem exportar e eliminar os seus dados nas definições da conta."
+      },
+      {
+        "question": "Como posso contactar o apoio?",
+        "answer": "Pode contactar-nos através da nossa página de contacto ou por email para contact@weplanify.com."
+      }
+    ]
+  }
+}

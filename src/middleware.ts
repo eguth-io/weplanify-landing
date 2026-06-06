@@ -4,8 +4,8 @@ import { routing } from './i18n/routing';
 
 const intlMiddleware = createMiddleware(routing);
 
-function pickLocaleFromAcceptLanguage(header: string | null): 'fr' | 'en' {
-  if (!header) return 'en';
+function pickLocaleFromAcceptLanguage(header: string | null): string {
+  if (!header) return routing.defaultLocale;
   const tags = header
     .split(',')
     .map((t) => {
@@ -15,10 +15,10 @@ function pickLocaleFromAcceptLanguage(header: string | null): 'fr' | 'en' {
     })
     .sort((a, b) => b.q - a.q);
   for (const { lang } of tags) {
-    if (lang.startsWith('fr')) return 'fr';
-    if (lang.startsWith('en')) return 'en';
+    const match = routing.locales.find((l) => lang === l || lang.startsWith(`${l}-`));
+    if (match) return match;
   }
-  return 'en';
+  return routing.defaultLocale;
 }
 
 export default function middleware(request: NextRequest) {
@@ -29,8 +29,8 @@ export default function middleware(request: NextRequest) {
     // first-touch attribution survives the `/` → `/{locale}` hop.
     target.search = request.nextUrl.search;
     const response = NextResponse.redirect(target, 302);
-    // Vary on Accept-Language so /en and /fr each get a fair shot at being the
-    // canonical for their locale instead of one being a permanent redirect target.
+    // Vary on Accept-Language so each locale gets a fair shot at being the
+    // canonical for its language instead of one being a permanent redirect target.
     response.headers.set('Vary', 'Accept-Language');
     return response;
   }
@@ -41,8 +41,8 @@ export default function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     '/',
-    '/(fr|en)',
-    '/(fr|en)/:path*',
+    '/(en|es|fr|it|zh|de|pt|ru|pl)',
+    '/(en|es|fr|it|zh|de|pt|ru|pl)/:path*',
     '/((?!api|_next|_vercel|studio|.*\\..*).*)'
   ]
 };

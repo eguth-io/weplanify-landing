@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Finale di Champions League 2026: PSG contro Arsenal a Budapest — Guida completa | WePlanify",
+    "description": "Tutto sulla finale di Champions League PSG contro Arsenal di sabato 30 maggio 2026 alla Puskás Aréna di Budapest: orario del fischio d'inizio, biglietti, fan zone, viaggio, alloggio e budget condiviso per i tifosi diretti in Ungheria."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Finale di Champions League 2026"
+  },
+  "hero": {
+    "tag": "Cronaca della partita e manuale del viaggio · Budapest 2026",
+    "title": "Finale di Champions League 2026: PSG contro Arsenal a Budapest",
+    "readTime": "9 min di lettura"
+  },
+  "facts": {
+    "heading": "Dati della partita",
+    "dateLabel": "Data",
+    "dateValue": "Sab 30 mag",
+    "kickoffLabel": "Fischio d'inizio",
+    "venueLabel": "Stadio",
+    "resultLabel": "Risultato",
+    "resultSub": "PSG vince 4–3 ai rigori"
+  },
+  "stakes": {
+    "p1": "Due club che non si erano mai affrontati prima in una finale. Il PSG arriva da campione d'Europa in carica, seconda finale consecutiva, con una rosa che ha già alzato il trofeo e sa esattamente cosa si prova in una notte del genere. L'Arsenal arriva da una campagna quasi perfetta — otto vittorie su otto nella fase a campionato, l'unica squadra a chiudere con 24 punti netti — a caccia di una prima Coppa dei Campioni che il club non ha mai vinto. La trama è semplice: difesa del titolo contro prima volta. Oltre al calcio, è l'operazione attorno ad esso che la maggior parte dei tifosi ricorderà davvero — i voli prenotati a mezzanotte, la camera condivisa con cinque amici, la fan zone di Budapest rimasta senza birra all'intervallo, la metro per tornare all'appartamento dopo i supplementari.",
+    "p2": "WePlanify è il centro di comando condiviso e gratuito per qualsiasi trasferta calcistica — voli, hotel, piano biglietti, budget e programma del giorno della partita in un unico posto, in inglese o francese."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "theMatch": "La partita: data, fischio d'inizio, stadio",
+    "roads": "I cammini di entrambe le squadre verso la finale",
+    "tickets": "Biglietti e il piano B della fan zone",
+    "budapest": "Guida pratica a Budapest",
+    "planning": "Organizzare il viaggio con il gruppo",
+    "budget": "Consigli sul budget",
+    "faq": "Domande frequenti"
+  },
+  "theMatch": {
+    "title": "La partita",
+    "subtitle": "Cinque cose che ogni viaggiatore e ogni organizzatore di una festa davanti alla TV deve sapere prima che il pullman parta.",
+    "items": [
+      { "stop": "Fischio d'inizio anticipato rispetto al solito", "desc": "Ore 18:00 dell'Europa Centrale, non il tradizionale slot delle 21:00. Sono le 17:00 a Londra, le 12:00 a New York, le 09:00 sulla costa ovest degli USA. Programma in anticipo le feste davanti alla TV tenendo conto dei fusi orari — il tuo cugino di Londra deve aver finito di lavorare entro le 16:30 per arrivare al fischio d'inizio." },
+      { "stop": "Puskás Aréna, Budapest", "desc": "Stadio nazionale dell'Ungheria da 67.000 posti, inaugurato nel 2019 sull'area dello storico stadio Ferenc Puskás. Categoria 4 UEFA (massimo livello), ha già ospitato finali di Europa League e Supercoppa. Collegato al centro di Budapest dalle linee della metro M2 e M4 — venti minuti porta a porta dal Distretto V." },
+      { "stop": "Detentore del titolo contro esordiente", "desc": "Il PSG entra da campione d'Europa in carica, a caccia del bis. L'Arsenal non raggiungeva questo palcoscenico dal 2006 (sconfitta contro il Barcellona a Parigi) e non ha mai vinto il trofeo. Due assetti psicologici molto diversi — leggi le conferenze stampa, non solo le tabelle della forma." },
+      { "stop": "Trasmissione e opzioni gratuite", "desc": "Canal+ detiene i diritti esclusivi per gli abbonati in Francia; M6 in chiaro per la finale resta l'opzione predefinita per le partite con una finalista francese, ma va verificato il giorno stesso. Nel Regno Unito, TNT Sports trasmette la partita, con UEFA.tv che storicamente apre uno streaming pubblico gratuito solo per la finale." },
+      { "stop": "Tempistiche del giorno della partita", "desc": "I cancelli dello stadio aprono 3 ore prima del fischio d'inizio. Programma di essere nel perimetro di sicurezza entro le 16:30 al più tardi — la polizia ungherese gestisce un controllo rigoroso per le finali UEFA. Il trasporto pubblico per la Puskás si satura 2 ore prima; calcola un totale di 30-40 minuti dal centro porta-stadio." }
+    ]
+  },
+  "roads": {
+    "title": "I cammini verso la finale",
+    "subtitle": "Come entrambi i club sono arrivati a Budapest — le linee di forma che contano e i momenti che i tifosi rivedranno per tutta l'estate.",
+    "psgLabel": "Detentore del titolo",
+    "psgItems": [
+      "→ Campione d'Europa in carica (2024-25)",
+      "→ Seconda finale di Champions League consecutiva",
+      "→ Ha eliminato il Bayern Monaco in semifinale",
+      "→ Nucleo della rosa mantenuto dalla campagna vincente dello scorso anno",
+      "→ Reduce da una corsa al titolo di Ligue 1"
+    ],
+    "arsenalLabel": "Prima finale dal 2006",
+    "arsenalItems": [
+      "→ Prima finale di Champions League dal 2006",
+      "→ Non ha mai vinto la Coppa dei Campioni",
+      "→ In testa alla fase a campionato: 8 vittorie su 8, 24 punti",
+      "→ Unico club con un record perfetto nella fase a campionato",
+      "→ Arriva da una serrata corsa al titolo di Premier League"
+    ]
+  },
+  "tickets": {
+    "title": "Biglietti e il piano B della fan zone",
+    "subtitle": "Nell'ultima settimana, le opzioni realistiche per i biglietti si erano ristrette alla sola rivendita ufficiale — e il ripiego della fan zone valeva davvero un volo. Gli stessi tre canali valgono per ogni finale UEFA, quindi ecco come funzionano.",
+    "channel1": {
+      "tag": "Canale 1",
+      "title": "Sorteggio pubblico UEFA",
+      "desc": "Chiuso all'inizio della primavera 2026. Se hai fatto domanda e hai ottenuto un biglietto, l'e-ticket arriva nell'app UEFA pochi giorni prima. A questo punto non sono più possibili nuove domande."
+    },
+    "channel2": {
+      "tag": "Canale 2",
+      "title": "Quote dei club",
+      "desc": "PSG e Arsenal ricevono ciascuno una quota per gli abbonati e i soci in regola. Entrambi i club gestiscono i propri sorteggi — controlla il tuo account ogni giorno, le assegnazioni sono ancora in corso di elaborazione."
+    },
+    "channel3": {
+      "tag": "Canale 3",
+      "title": "Rivendita ufficiale",
+      "desc": "Il portale di rivendita dell'UEFA va online più vicino alla partita per i biglietti restituiti dai vincitori del sorteggio che non possono partecipare. È l'unico canale secondario sicuro — qualsiasi cosa su Telegram, sugli annunci o nella rivendita di strada comporta un rischio reale di non essere ammessi allo stadio."
+    },
+    "noTicketTitle": "Niente biglietto? Budapest vale comunque il viaggio.",
+    "noTicketDesc": "L'UEFA allestisce tradizionalmente un Champions Festival ufficiale a Budapest con maxischermi, cibo e intrattenimento dal vivo, e i ruin bar e le piazze della città ospitano fan zone non ufficiali che spesso hanno un'atmosfera migliore dell'interno dello stadio. Voli e alloggio sono gli stessi che tu abbia un posto o meno — il viaggio è il viaggio. Costruisci il resto con il gruppo, tieni il posto in tribuna come un bonus, non come il fulcro."
+  },
+  "budapest": {
+    "title": "Budapest, guida pratica",
+    "subtitle": "Quello che devi davvero sapere sulla città — visti, soldi, trasporti, quartieri. L'Ungheria è in Schengen, quindi il viaggio è più semplice di quanto la maggior parte dei tifosi si aspetti.",
+    "topicHeader": "Argomento",
+    "infoHeader": "Cosa devi sapere",
+    "rows": [
+      { "topic": "Visto", "info": "Schengen — nessuno per UE/SEE. Esenzione dal visto per 90 giorni per Regno Unito, USA, Canada (passaporto valido 3+ mesi oltre la partenza)." },
+      { "topic": "Valuta", "info": "Fiorino ungherese (HUF), non euro. Gli euro sono accettati in alcuni luoghi turistici a cambi sfavorevoli — preleva HUF da un bancomat in città, non in aeroporto." },
+      { "topic": "Fuso orario", "info": "CET — lo stesso di Parigi, Bruxelles, Amsterdam, Berlino. Nessun jet lag per i tifosi dell'Europa occidentale." },
+      { "topic": "Aeroporto", "info": "Ferenc Liszt International (BUD), 16 km dal centro. Il bus 100E diretto a Deák Ferenc tér in 40 min — più economico del taxi, parte ogni 10 min." },
+      { "topic": "Trasporto allo stadio", "info": "Metro M2 (rossa) o M4 (verde) fino alla stazione Puskás Ferenc Stadion / Stadionok. ~20 min dal Distretto V. Compra un abbonamento 24h." },
+      { "topic": "Migliori quartieri", "info": "Distretto V (Belváros, centrale), VII (ruin bar, vita notturna), VIII / IX (più economici, comunque a piedi dal centro)." },
+      { "topic": "Voli diretti", "info": "Parigi ~2h15 (AF, Wizz, Ryanair, Transavia). Londra ~2h30 (BA, Wizz, Ryanair, easyJet). Bruxelles ~2h. Madrid ~3h." },
+      { "topic": "Lingua", "info": "Ungherese. L'inglese è molto diffuso nelle aree turistiche, meno nei taxi e fuori dal centro. Qualche parola di köszönöm (grazie) aiuta molto." }
+    ]
+  },
+  "matchDay": {
+    "title": "Checklist del giorno della partita",
+    "subtitle": "Cosa deve avere ogni tifoso del gruppo il 30 maggio. Assegna ciascun oggetto a una persona nella tua lista per i bagagli condivisa così nulla viene dimenticato nella corsa all'aeroporto.",
+    "items": [
+      "Biglietto della partita (app UEFA + backup stampato)",
+      "Documento d'identità o passaporto (carta d'identità Schengen per l'UE, passaporto per i non UE)",
+      "Assicurazione di viaggio che copra l'Ungheria",
+      "Maglia, sciarpa e bandiera del club",
+      "Borsa trasparente approvata dallo stadio (regole UEFA)",
+      "Caricabatterie portatile (cavo per tutti)",
+      "Contanti in fiorini ungheresi (HUF) per i piccoli acquisti",
+      "SIM locale o piano roaming UE",
+      "Giacca leggera — le serate a Budapest possono rinfrescare",
+      "Borraccia riutilizzabile (consentita nello stadio)",
+      "Piano di ritrovo del gruppo se il segnale mobile cade",
+      "Indirizzo dell'hotel scritto su carta per il taxi di ritorno"
+    ]
+  },
+  "pullQuote": "Una finale di Champions League non è un viaggio di 90 minuti. Sono tre giorni, sei tifosi, una partita — e la pianificazione è la parte che decide se la notte sarà indimenticabile o solo costosa.",
+  "planning": {
+    "title": "Organizzare il viaggio con il gruppo",
+    "p3": "Il giorno della partita stesso ha bisogno di una pianificazione ora per ora, non di un approccio basato sulle sensazioni. Il fischio d'inizio alle 18:00 significa che i cancelli dello stadio aprono verso le 15:00, la sicurezza si satura tra le 16:00 e le 17:00, il trasporto pubblico viaggia al massimo dalle 16:00. Stabilisci un punto di ritrovo vicino all'uscita della metro M2/M4 dello stadio alle 15:30 con un orario di riserva e un bar di riserva nel caso metà del gruppo manchi l'appuntamento. Aggiungi anche un piano post-partita: dove andate se vince Parigi, dove andate se vince l'Arsenal e dove vi ritrovate se le reti mobili collassano — succede spesso al fischio finale.",
+    "p4": "Fissa scadenze per il gruppo, non solo per il viaggio. Le finestre di cancellazione degli hotel si chiudono prima di quanto la gente ricordi. I piani dati internazionali vanno sistemati prima della partenza. La validità del documento d'identità o del passaporto va controllata nel momento in cui decidi di partire. Una lista di compiti condivisa con scadenze, visibile a tutti, è la differenza tra una settimana tranquilla e il panico il 28 maggio."
+  },
+  "budget": {
+    "title": "Consigli sul budget",
+    "p2": "I voli si muovono in fretta per una finale. I voli diretti di andata e ritorno da Parigi che fuori stagione si attestano sui 150€ sono saliti a 350-450€ per il weekend della partita, e crescevano ogni giorno una volta confermato lo stadio — lo stesso schema vale da Londra. Due risparmi da conoscere: le partenze mattutine sono di solito la fascia più economica, e fare scalo a Vienna o Monaco su un unico biglietto può costare il 30% in meno se il tuo gruppo riesce ad assorbire l'ora in più. Blocca andata e ritorno nel momento in cui la partita è fissata.",
+    "p3": "L'alloggio è dove il budget si apre davvero. Gli hotel del centro di Budapest (Distretti V, VII) hanno moltiplicato le tariffe per 3-4 volte per il weekend della partita. Un appartamento con tre o quattro camere nel Distretto VIII o IX, a quindici minuti di metro dal centro, diviso in quattro o cinque, spesso batte le camere d'albergo individuali del 50%. Leggi sempre la politica di cancellazione prima di prenotare — le tariffe flessibili valgono il piccolo sovrapprezzo."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      { "q": "Quando e dove si gioca la finale di Champions League 2026?", "a": "Sabato 30 maggio 2026 alla Puskás Aréna di Budapest, in Ungheria. Il fischio d'inizio è alle 18:00 CET — prima del solito slot delle 21:00, quindi pianifica di conseguenza il viaggio e le feste davanti alla TV. Lo stadio ospita circa 67.000 spettatori." },
+      { "q": "Mi serve un visto per viaggiare a Budapest per la finale?", "a": "L'Ungheria fa parte dell'area Schengen dal 2007, quindi i titolari di passaporto UE e SEE possono viaggiare senza visto. I viaggiatori del Regno Unito non hanno bisogno di un visto per soggiorni inferiori a 90 giorni ma il loro passaporto deve essere valido per almeno 3 mesi oltre la data di partenza prevista. Anche i titolari di passaporto statunitense, canadese e della maggior parte degli altri paesi occidentali beneficiano dell'ingresso senza visto fino a 90 giorni. Controlla subito la scadenza del tuo passaporto — la polizia di frontiera ungherese è rigorosa sulla regola dei 3 mesi." },
+      { "q": "Come ottengo un biglietto per PSG contro Arsenal?", "a": "I biglietti sono assegnati dall'UEFA attraverso tre canali: un sorteggio pubblico (chiuso prima, in primavera), le quote dei club per i soci e gli abbonati di PSG e Arsenal e il programma UEFA Hospitality. A tre settimane dalla partita, le opzioni realistiche sono la rivendita ufficiale sul portale biglietti dell'UEFA, le liste d'attesa gestite dai club e i marketplace secondari verificati — non comprare mai da qualcuno in un gruppo Telegram. Se non hai un biglietto, le fan zone di Budapest e le proiezioni a Parigi e Londra sono eccellenti ripieghi." },
+      { "q": "Come arrivo a Budapest da Parigi o Londra?", "a": "I voli diretti da Parigi (CDG, ORY, BVA) impiegano circa 2h15 e sono operati da Air France, Wizz Air, Ryanair e Transavia. Da Londra (LHR, LGW, LTN, STN), i voli durano circa 2h30 con British Airways, Wizz Air, Ryanair ed easyJet. I prezzi sono già saliti molto per la finestra del 29-31 maggio — prenota il giorno stesso se stai ancora esitando. I treni non sono realistici: un viaggio in treno Parigi-Budapest con coincidenze richiede oltre 18 ore." },
+      { "q": "Dove dovrei alloggiare a Budapest?", "a": "Il Distretto V (Belváros) e il Distretto VII (il quartiere ebraico, con i famosi ruin bar) sono le scelte ovvie per i tifosi — centrali, percorribili a piedi, pieni di ristoranti e bar. Gli hotel lì hanno già triplicato le tariffe normali. Per un miglior rapporto qualità-prezzo, guarda il Distretto VIII o il Distretto IX (comunque vicini al centro, molto più economici) oppure prendi un appartamento con servizi insieme agli amici. La Puskás Aréna si trova nel Distretto XIV ma è ben collegata dalla metro M2 e M4." },
+      { "q": "Come viene trasmessa la partita in Francia e nel Regno Unito?", "a": "In Francia, la finale è trasmessa su Canal+ (abbonati) con un'opzione in chiaro su M6 ancora in fase di negoziazione al momento della scrittura — controlla il programma aggiornato pochi giorni prima. Nel Regno Unito, TNT Sports e discovery+ detengono i diritti, con uno streaming pubblico gratuito tipicamente aperto su UEFA.tv solo per la finale. Entrambe le emittenti aprono la copertura da circa le 17:00 CET / 16:00 ora britannica." },
+      { "q": "Come si dividono i costi quando si viaggia con un gruppo di tifosi?", "a": "I biglietti delle partite si comprano individualmente tramite i canali UEFA / club e restano individuali. Il fondo comune è per voli, alloggio, trasporto a terra, pasti di gruppo e cibo nella fan zone. Imposta le categorie dal primo giorno: hotel divisi per camera, voli divisi per viaggiatore, cene divise per pasto. WePlanify tiene pulita ogni categoria così i conti non si accumulano alla fine del viaggio." }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "worldCup": { "title": "Pianificatore di viaggi per i Mondiali 2026", "desc": "Segui la tua squadra attraverso Stati Uniti, Canada e Messico.", "cta": "Leggi di più →" },
+    "tripWithFriends": { "title": "Viaggio con gli amici", "desc": "Organizza qualsiasi viaggio di gruppo senza fatica.", "cta": "Leggi di più →" },
+    "groupGuide": { "title": "Guida ai viaggi di gruppo", "desc": "La guida completa passo dopo passo.", "cta": "Leggi la guida →" },
+    "groupBudget": { "title": "Budget per il viaggio di gruppo", "desc": "Come dividere i costi senza litigare.", "cta": "Leggi l'articolo →" }
+  },
+  "cta": {
+    "title": "Organizza il tuo prossimo viaggio per una partita",
+    "subtitle": "Voli, hotel, programma del giorno della partita, budget condiviso — un unico piano, tutto il tuo gruppo sulla stessa pagina.",
+    "button": "Inizia a pianificare"
+  },
+  "jsonld": {
+    "articleHeadline": "Finale di Champions League 2026: PSG contro Arsenal a Budapest — Guida completa",
+    "eventName": "Finale UEFA Champions League 2026: PSG contro Arsenal",
+    "eventDescription": "Finale UEFA Champions League 2026 tra Paris Saint-Germain e Arsenal FC alla Puskás Aréna di Budapest, in Ungheria, sabato 30 maggio 2026. Il PSG ha mantenuto il titolo, battendo l'Arsenal 1-1 (4-3 ai rigori dopo i supplementari).",
+    "howToName": "Come organizzare un viaggio a Budapest per la finale di Champions League",
+    "howToDescription": "A venti giorni dalla partita, ecco come fissare il viaggio: piano biglietti, voli, alloggio, budget di gruppo e ripiego della fan zone se non hai un posto alla Puskás.",
+    "howToSteps": [
+      { "name": "Conferma chi parte e chi copre il vuoto dei biglietti", "text": "Lancia un sondaggio veloce nel gruppo: chi ha un biglietto, chi ne sta cercando uno, chi viene a Budapest comunque. La risposta cambia tutto — numero di voli, divisione delle camere, piano B della fan zone." },
+      { "name": "Prenota voli e hotel prima del prossimo rincaro", "text": "I voli diretti Parigi–Budapest sono ancora prenotabili ma salgono ogni giorno. Blocca un unico volo di andata e ritorno per tutto il gruppo, più l'alloggio nel Distretto V o VII vicino al trasporto pubblico per la Puskás Aréna." },
+      { "name": "Imposta un budget condiviso con categorie", "text": "I biglietti restano individuali. Tutto il resto (voli, hotel, transfer, cene, cibo nella fan zone) finisce in un fondo comune con categorie così non devi riconciliare un foglio di calcolo caotico durante il viaggio di ritorno." },
+      { "name": "Pianifica il giorno della partita ora per ora", "text": "Il fischio d'inizio alle 18:00 significa arrivare presto allo stadio (i cancelli aprono ~3h prima). Drink pre-partita, trasporto alla Puskás con la metro M2/M4, code ai controlli, piano per i festeggiamenti post-partita — fissali nell'itinerario condiviso così nessuno perde il gruppo al party finale." }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "badge": "poznaj aplikację",
+  "title": "Zaplanuj wyjazd grupowy w 3 prostych krokach",
+  "description": "Prosto, wspólnie i z myślą o grupach.",
+  "card1": {
+    "title": "Krok 1: Zaproś swoją grupę",
+    "description": "Uzupełnij najważniejsze informacje. Dodaj znajomych lub rodzinę jednym kliknięciem. Wszyscy widzą tę samą podróż.",
+    "statValue": "1 min",
+    "statLabel": "na zaproszenie grupy"
+  },
+  "card2": {
+    "title": "Krok 2: Odkrywaj i poznawaj",
+    "description": "Przeglądaj atrakcje, restauracje i hotele. Dodawaj ulubione do planu podróży.",
+    "statValue": "500+",
+    "statLabel": "miejsc do odkrycia"
+  },
+  "card3": {
+    "title": "Krok 3: Zdecyduj i sfinalizuj",
+    "description": "Twórz ankiety, zarządzaj budżetem i wspólnie przygotujcie wyjazd.",
+    "statValue": "100%",
+    "statLabel": "decyzji podjętych wspólnie"
+  }
+}

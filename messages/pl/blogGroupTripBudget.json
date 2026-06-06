@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "title": "Budżet wyjazdu grupowego: jak dzielić koszty bez dramatów",
+    "description": "Kompletny przewodnik po zarządzaniu pieniędzmi na wyjeździe grupowym — ustalaniu budżetu, na który wszyscy się zgadzają, sprawiedliwym dzieleniu kosztów i czystym rozliczeniu na koniec."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Budżet wyjazdu grupowego"
+  },
+  "readTime": "9 min czytania",
+  "heroTag": "Pieniądze i podróże 2026",
+  "h1": "Budżet wyjazdu grupowego: jak dzielić koszty bez dramatów",
+  "intro": "Zapytaj kogokolwiek, kto kiedykolwiek podróżował z grupą czterech lub więcej osób, co było najtrudniejsze, a pieniądze pojawią się w pierwszych trzech odpowiedziach. Nie loty, nie nocleg — pieniądze. Kto zapłacił za kolację, kto wciąż jest winien pięćdziesiąt złotych, dlaczego jedna osoba ciągle zamawia drogie koktajle, podczas gdy reszta dzieli rachunek. Budżetowanie wyjazdu grupowego nie musi być źródłem konfliktu. Z odpowiednim systemem ustalonym przed wyjazdem staje się niemal niewidoczne. Ten przewodnik obejmuje wszystko: ustalanie realistycznego budżetu, dzielenie kosztów w sposób, który wydaje się sprawiedliwy, śledzenie wydatków w czasie rzeczywistym i czyste rozliczanie się, gdy wyjazd się kończy.",
+  "tocTitle": "Spis treści",
+  "toc": [
+    { "id": "money-mess", "label": "Dlaczego pieniądze na wyjeździe grupowym zawsze robią bałagan" },
+    { "id": "set-budget-early", "label": "Ustal budżet, zanim cokolwiek zarezerwujesz" },
+    { "id": "split-by-category", "label": "Dziel według kategorii, a nie wszystko" },
+    { "id": "one-payer-system", "label": "System jednego płatnika" },
+    { "id": "track-real-time", "label": "Śledź w czasie rzeczywistym, a nie na koniec" },
+    { "id": "unequal-budgets", "label": "Radzenie sobie z nierównymi budżetami w grupie" },
+    { "id": "settling-up", "label": "Rozliczanie się: czysty sposób" },
+    { "id": "faq", "label": "FAQ" }
+  ],
+  "sections": {
+    "moneyMess": {
+      "id": "money-mess",
+      "title": "Dlaczego pieniądze na wyjeździe grupowym zawsze robią bałagan",
+      "paragraphs": [
+        "Zaczyna się niewinnie. Ktoś rezerwuje Airbnb, bo ma kartę z najwyższym limitem. Ktoś inny kupuje grupowe bilety na pociąg, by zaoszczędzić czas. Trzecia osoba pokrywa kolację, bo restauracja przyjmowała tylko jedną płatność. Zanim wyjazd się w ogóle skończy, jedna osoba wyłożyła 3000 zł i nie ma pojęcia, jak poprosić o zwrot, nie brzmiąc małostkowo.",
+        "Źródłem problemu jest to, że wyjazdy grupowe obejmują ludzi o różnych dochodach, różnych nawykach wydatkowych i diametralnie różnych wyobrażeniach o tym, co znaczy „rozsądnie”. Dla jednego znajomego 120 zł za wstęp do muzeum to nic. Dla innego to spory kawałek dziennego budżetu. Nikt nie rozmawia o tym przed wyjazdem, więc każda decyzja o wydatku staje się cichą negocjacją, w której ktoś zawsze kończy, czując się albo winny, albo pełen żalu.",
+        "Potem jest problem śledzenia. Nikt nie chce być osobą gorączkowo wpisującą wydatki do arkusza kalkulacyjnego, podczas gdy reszta cieszy się zachodem słońca. Więc nic nie zostaje zapisane. Do ostatniego dnia połowa transakcji jest zapomniana, a druga połowa kwestionowana. Rozliczanie się zamienia się w godzinny projekt archeologiczny — i dokładnie ten moment, w którym idealnie przyjemne wyjazdy schodzą na manowce.",
+        "Rozwiązaniem nie jest skomplikowany system księgowy. To prosta wspólna umowa, zawarta przed wyjazdem, co do trzech rzeczy: ile wydać na osobę, które koszty dzielić, a które płacić indywidualnie, i jak rejestrować wszystko na bieżąco. Ogarnij te trzy rzeczy, a pieniądze przestaną być źródłem napięć."
+      ]
+    },
+    "setBudgetEarly": {
+      "id": "set-budget-early",
+      "title": "Ustal budżet, zanim cokolwiek zarezerwujesz",
+      "paragraphs": [
+        "Rozmowa o pieniądzach musi odbyć się, zanim zarezerwujecie cokolwiek — przed Airbnb, przed lotami, zanim ktoś kupi bilety na pociąg czy zacznie porównywać menu restauracji. Gdy pieniądze już zostały wydane, budżet przestaje być teoretyczny. Prawdziwe liczby tworzą prawdziwą presję, a ludzie, którzy odezwaliby się podczas rozmowy planistycznej, zaczynają milczeć, by uniknąć konfliktu.",
+        "Najłatwiej otworzyć rozmowę za pomocą przedziałów. Zamiast pytać „ile chcesz wydać?”, co zmusza ludzi do podania liczby i poczucia się ocenianymi, przedstaw trzy opcje: oszczędny wyjazd (3000–4000 zł na osobę ze wszystkim), komfortowy wyjazd (5000–6500 zł na osobę) i wystawny wyjazd (8000+ zł na osobę). Poproś każdego, by prywatnie wybrał, który przedział mu pasuje. Jeśli grupa skupia się wokół jednego przedziału, masz swój budżet. Jeśli rozrzut jest duży, to ważny sygnał, by zająć się nim wcześnie — a nie trzeciego dnia, gdy ktoś zamawia danie główne za 180 zł.",
+        "Gdy masz orientacyjną sumę na osobę, rozbij ją na kategorie. Realistyczny podział na 7-dniowy wyjazd mógłby wyglądać tak: nocleg (30–35% budżetu), transport, w tym loty i lokalny (30–40%), jedzenie i napoje (20–25%), atrakcje i doświadczenia (10–15%) oraz bufor na niespodziewane koszty (5–10%). Posiadanie tych kategorii na piśmie, choćby we wspólnej notatce, oznacza, że wszyscy kalibrują się względem tych samych oczekiwań.",
+        "Skorzystaj z funkcji ankiet grupowych WePlanify, by zagłosować na opcje noclegu i atrakcje przed zobowiązaniem się. Gdy cała grupa wspólnie decyduje, co uwzględnić w budżecie, nie ma jednej osoby do obwiniania, jeśli coś okaże się drogie — a każdy czuje współodpowiedzialność za plan. Decyzje podjęte demokratycznie są łatwiej akceptowane, w tym te finansowe."
+      ]
+    },
+    "splitByCategory": {
+      "id": "split-by-category",
+      "title": "Dziel według kategorii, a nie wszystko",
+      "paragraphs": [
+        "Jednym z najczęstszych błędów grup jest próba dzielenia absolutnie każdego wydatku po równo — albo, odwrotnie, kiedy każdy płaci za siebie przez cały czas. Oba ekstrema tworzą tarcia. Pierwsze prowadzi do żalu, gdy konsumpcja jest nierówna. Drugie sprawia, że każdy posiłek wydaje się transakcją i niweczy sens wspólnego podróżowania.",
+        "Mądrzejsze podejście to dzielenie według kategorii. Niektóre koszty są naprawdę wspólne i powinny być dzielone po równo. Inne są osobiste i powinny być płacone indywidualnie. Wyraźne narysowanie tej granicy przed wyjazdem usuwa 90% niezręcznych rozmów.",
+        "Poniższe kategorie to sprawdzony punkt wyjścia. Dostosuj je do swojej grupy, ale kluczem jest uzgodnienie ich przed wyjazdem."
+      ],
+      "categories": [
+        {
+          "title": "Dzielcie po równo (koszty wspólne)",
+          "items": [
+            "Nocleg — Airbnb, hotel, sale w hostelu. Każdy korzysta jednakowo, niezależnie od rozmiaru pokoju.",
+            "Transport grupowy — wynajem auta, bilety na pociąg kupowane razem, transfery z lotniska dla całej grupy.",
+            "Atrakcje grupowe — wycieczki, wstępy do muzeów, bilety na doświadczenia, w których uczestniczy cała grupa.",
+            "Zakupy na wspólne posiłki — jeśli grupa gotuje razem, podzielcie rachunek za zakupy."
+          ]
+        },
+        {
+          "title": "Płaćcie indywidualnie (koszty osobiste)",
+          "items": [
+            "Osobiste posiłki, gdy grupa je w różnych restauracjach lub zamawia różne rzeczy.",
+            "Osobiste napoje — zwłaszcza alkohol, gdzie konsumpcja ogromnie się różni.",
+            "Pamiątki, osobiste zakupy i wszystko, co przynosi korzyść tylko jednej osobie.",
+            "Transport osobisty — taksówki na osobną aktywność, samodzielne wycieczki jednodniowe."
+          ]
+        }
+      ]
+    },
+    "onePayerSystem": {
+      "id": "one-payer-system",
+      "title": "System jednego płatnika",
+      "paragraphs": [
+        "Dzielenie rachunku w momencie płatności — wszyscy szukający kart, podczas gdy kelner czeka — jest wolne, niezręczne i podatne na błędy. Dużo czystsze podejście to system jednego płatnika: jedna osoba płaci za wspólny wydatek, od razu rejestruje go we wspólnym narzędziu, a grupa rozlicza się na koniec wyjazdu.",
+        "Kluczowe słowo to „od razu”. System działa tylko, jeśli osoba, która płaci, rejestruje to na miejscu, zanim ktoś ruszy dalej lub zapomni kwoty. Oznacza to posiadanie wspólnego narzędzia do śledzenia budżetu otwartego i dostępnego przez cały czas — a nie myślową notatkę, by dodać to do arkusza później. Wspólne narzędzie do śledzenia budżetu WePlanify jest stworzone dokładnie do tego: jedno dotknięcie, by zarejestrować nowy wydatek, wybrać, kto zapłacił i za kogo, a wszyscy od razu to widzą.",
+        "Żeby było sprawiedliwie, rotujcie, kto płaci, w trakcie wyjazdu. Jedna osoba pokrywa kolację, inna kolejną aktywność, trzecia bilety do muzeum. Jeśli kwoty są rejestrowane dokładnie, nierówności wyrównają się do końca — a jeśli nie, ostateczne rozliczenie będzie garstką przelewów, a nie kryminalistyczną analizą księgową.",
+        "Prosta zasada: jeśli płacisz za coś wspólnego i nie zarejestrujesz tego w ciągu pięciu minut, prawdopodobnie to straciłeś. Wyrób nawyk wcześnie, pierwszego dnia, by stał się automatyczny."
+      ]
+    },
+    "trackRealTime": {
+      "id": "track-real-time",
+      "title": "Śledź w czasie rzeczywistym, a nie na koniec",
+      "paragraphs": [
+        "Każda grupa, która zaczekała do ostatniej nocy, by „ogarnąć pieniądze”, tego żałowała. Pamięć jest zawodna, kwoty są zaokrąglane, a jedna osoba zawsze czuje, że dołożyła się bardziej, niż pokazują liczby. Ostatni wieczór wyjazdu to najgorszy możliwy moment na rozliczenie finansowe — wszyscy są zmęczeni, część ludzi już liczy swoje loty, a emocjonalna życzliwość wyjazdu jest najbardziej krucha.",
+        "Śledzenie w czasie rzeczywistym całkowicie to rozwiązuje. Gdy każdy wydatek jest rejestrowany na bieżąco, nie ma żadnego rozliczenia do zrobienia na koniec. Liczby już tam są. Wszyscy obserwowali bieżącą sumę przez cały wyjazd, więc nic nie zaskakuje. Ostateczne rozliczenie to formalność, a nie negocjacja.",
+        "Praktycznym wymogiem jest narzędzie, które każdy może widzieć i uzupełniać z telefonu. Wspólny arkusz kalkulacyjny technicznie działa, ale wymaga poziomu dyscypliny i mobilnej wygody, którego większość grup nie utrzymuje. Dedykowane narzędzia, jak narzędzie do śledzenia budżetu WePlanify, są stworzone do tego: dodaj wydatek w dziesięć sekund, zobacz, kto komu ile jest winien, w czasie rzeczywistym, uzyskaj podsumowanie rozliczenia w dowolnym momencie. Usuwa to tarcie, które na początku sprawia, że ludzie przestają śledzić.",
+        "Ustalcie nawyk codziennej lub co dwa dni odprawy, podczas której ktoś patrzy na bieżące sumy i oznacza wszelkie pominięte wydatki. Na 7-dniowym wyjeździe dwuminutowy przegląd co drugi dzień wyłapuje wszelkie luki i trzyma wszystkich na bieżąco. Buduje też wspólne poczucie, gdzie wyjazd stoi finansowo — żeby nikt nie dostał szoku na koniec.",
+        "W przypadku road tripów w szczególności śledźcie paliwo i opłaty drogowe jako wspólny wydatek od początku. Koszty paliwa mogą się zsumować do 800–1600 zł przy tygodniowym road tripie i łatwo o nich zapomnieć, jeśli kierowca ciągle płaci, zakładając, że dostanie zwrot później. Rejestruj każde tankowanie od razu. Zajrzyj do naszego przewodnika po planowaniu road tripów po bardziej szczegółowe porady o zarządzaniu wspólnymi kosztami w drodze."
+      ]
+    },
+    "unequalBudgets": {
+      "id": "unequal-budgets",
+      "title": "Radzenie sobie z nierównymi budżetami w grupie",
+      "paragraphs": [
+        "Niemal każda grupa znajomych ma co najmniej jedną osobę w innej sytuacji finansowej niż reszta. Może jest między pracami, oszczędza na coś dużego albo po prostu mniej zarabia. To normalne i nie musi oznaczać, że zostaje pominięta — ale wymaga odrobiny celowego zaprojektowania tego, jak ułożycie wyjazd.",
+        "Pierwsza zasada to zrobić miejsce na rozmowę przed wyjazdem, a nie w jego trakcie. Jeśli wiesz, że ktoś w grupie ma ciaśniejszy budżet, odezwij się prywatnie i zapytaj, jaki przedział jest dla niego komfortowy. To nie jałmużna — to dobra dynamika grupy. Wyjazd, podczas którego jedna osoba przez cały czas stresuje się pieniędzmi, jest gorszy dla wszystkich.",
+        "W przypadku noclegu szukajcie opcji, gdzie koszt nie różni się indywidualnie. Wynajem domu lub dużego Airbnb i dzielenie go po równo jest często tańsze na osobę niż osobne pokoje hotelowe i oznacza, że nikt nie płaci więcej niż inni za swoje miejsce do spania. Gdy wszyscy są w tej samej przestrzeni, nie ma widocznego systemu klas.",
+        "W przypadku posiłków i atrakcji zaprojektujcie mieszankę. Zaplanujcie kilka grupowych posiłków w restauracjach ze średniej półki, gdzie rachunek łatwo się dzieli, i ustawcie płatność indywidualną jako domyślną dla wszystkiego z wyższej półki. Jeśli grupa chce zrobić drogą aktywność — kurs gotowania, rejs łodzią, kolację z gwiazdką Michelin — uczyńcie ją opcjonalną i miejcie równie dobrą alternatywę dla tych, którzy pasują. Ta struktura oznacza, że nikt nie musi się tłumaczyć ani czuć w centrum uwagi.",
+        "Jedna praktyczna technika: na początku wyjazdu uzgodnijcie dzienny limit wspólnych wydatków na osobę. Coś w stylu 200 zł/dzień pokrywa udział w noclegu, wspólny transport i jeden grupowy posiłek. Wszystko powyżej to indywidualny wybór i indywidualny koszt. Ten limit tworzy przewidywalny próg, do którego każdy może się zobowiązać, jednocześnie zostawiając miejsce tym, którzy chcą wydać więcej, by zrobili to swobodnie."
+      ]
+    },
+    "settlingUp": {
+      "id": "settling-up",
+      "title": "Rozliczanie się: czysty sposób",
+      "paragraphs": [
+        "Idealny moment na rozliczenie to przed wyjazdem na lotnisko lub dzień po powrocie — gdy wyjazd jest jeszcze świeży, liczby wciąż widoczne, a życzliwość nienaruszona. Czekanie tydzień lub dłużej tworzy tarcia: ludzie się zapracowują, pamięć blaknie, a dług 200 zł zaczyna się wydawać albo zbyt mały, by go poruszać, albo zbyt duży, by go zignorować.",
+        "Celem rozliczenia jest minimalizacja liczby przelewów. Jeśli sześć osób jest winnych różne kwoty różnym osobom, naiwne podejście wymagałoby nawet piętnastu osobnych transakcji. Mądre narzędzie wylicza minimalną liczbę przelewów potrzebną, by sprowadzić wszystkich do zera — zwykle dwa lub trzy na osobę przy typowym wyjeździe grupowym.",
+        "Oto jak czytać ostateczne rozliczenie: narzędzie pokazuje saldo netto dla każdej osoby — dodatnie oznacza, że należy się jej pieniądze, ujemne, że jest winna. Algorytm rozliczenia znajduje wtedy najbardziej efektywną ścieżkę od każdego ujemnego salda do każdego dodatniego. Osoba A jest winna 340 zł, a osobie B należy się 360 zł, więc A płaci B 340 zł. Gotowe. Osobie C należy się 160 zł, osoba D jest winna 60 zł, osoba E jest winna 100 zł: D płaci C 60 zł, E płaci C 100 zł. Trzy transakcje zamiast splątanej sieci.",
+        "Rozliczenie działa najlepiej, gdy każdy potwierdza otrzymanie przelewu w dniu, w którym następuje. Prosta wiadomość na grupowym czacie — „wysłane 340 zł, gotowe” — publicznie zamyka pętlę i zapobiega temu, by ktoś się zastanawiał, czy musi ponaglać. W ciągu 48 godzin od zakończenia wyjazdu każde saldo powinno wynosić zero.",
+        "Jedna końcowa uwaga: zróbcie rozliczenie, zanim wspomnienia o tym, kto za co zapłacił, zaczną się rozmywać. Finansowa jasność na koniec wyjazdu to to, co sprawia, że naprawdę chcesz znów podróżować z tymi ludźmi."
+      ]
+    }
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "q": "Jak sprawiedliwie dzielić koszty wyjazdu między znajomymi?",
+        "a": "Najsprawiedliwsze podejście to dzielenie wspólnych kosztów (nocleg, transport grupowy, atrakcje grupowe) po równo i pozwolenie, by każdy płacił indywidualnie za wydatki osobiste, jak indywidualne posiłki i napoje. Uzgodnijcie te kategorie przed wyjazdem, rejestrujcie każdy wspólny wydatek na bieżąco za pomocą wspólnego narzędzia i rozliczcie się na koniec na podstawie tego, kto za co zapłacił. Pozwala to uniknąć dwóch skrajności: dzielenia wszystkiego po równo (co karze mniej wydających) lub płacenia każdego za siebie (co sprawia, że wyjazd wydaje się transakcyjny)."
+      },
+      {
+        "q": "Jaka jest najlepsza aplikacja do śledzenia wydatków na wyjeździe grupowym?",
+        "a": "Dla dedykowanego doświadczenia wyjazdu grupowego wbudowane narzędzie do śledzenia budżetu WePlanify jest stworzone specjalnie dla grup podróżniczych — rejestruje wydatki w czasie rzeczywistym, śledzi, kto zapłacił i kto uczestniczył, oraz wylicza rozliczenie na koniec. Splitwise to najlepsze czyste narzędzie do dzielenia wydatków i dobrze radzi sobie z wieloma walutami. Kluczem jest używanie czegoś, co każdy w grupie faktycznie otworzy na telefonie. Narzędzie, którego używa trzy z sześciu osób, jest gorsze niż prostsze, którego konsekwentnie używa cała szóstka."
+      },
+      {
+        "q": "Czy wszyscy powinni płacić tyle samo na wyjeździe grupowym?",
+        "a": "W przypadku wspólnych kosztów, jak nocleg i transport grupowy, tak — dzielenie po równo jest najsprawiedliwsze, bo wszyscy korzystają jednakowo. W przypadku wydatków osobistych, jak indywidualne posiłki, napoje i atrakcje, nie — ludzie powinni płacić za siebie. Praktyczne rozwiązanie to śledzenie wspólnych wydatków w puli i pozostawienie wydatków osobistych jako indywidualnych. Jeśli w grupie są znaczące różnice dochodów, ustalcie dzienny limit wspólnych wydatków, który każdy komfortowo spełni, i pozwólcie więcej wydającym pokrywać swoje dodatki samodzielnie."
+      },
+      {
+        "q": "Jak radzić sobie z kimś, kto nie płaci swojej części?",
+        "a": "Zapobieganie jest lepsze niż leczenie: korzystajcie ze wspólnego narzędzia, które każdy widzi, by salda były przejrzyste przez cały wyjazd, a nie tylko na koniec. Gdy ktoś widzi w czasie rzeczywistym, że jest winien 800 zł, jest bardziej skłonny zająć się tym, zanim stanie się to większą liczbą. Jeśli ktoś naprawdę nie może zapłacić po wyjeździe, zajmijcie się tym prywatnie i bezpośrednio — nie na grupowym czacie. Ustalcie konkretny termin („możesz przesłać to do niedzieli?”), a nie mgliste „kiedy będziesz mógł”. Na przyszłe wyjazdy niektóre grupy proszą wszystkich o wpłatę do wspólnego funduszu wyjazdu przed wyjazdem, więc na koniec nie ma rozliczania."
+      },
+      {
+        "q": "Które koszty dzielić po równo, a które indywidualnie?",
+        "a": "Dzielcie po równo: nocleg, wynajem aut, transport grupowy (pociągi, transfery z lotniska), wspólne zakupy na grupowe posiłki i każdą aktywność, którą cała grupa robi razem. Płaćcie indywidualnie: osobiste posiłki w restauracji, napoje alkoholowe, pamiątki, transport osobisty (samodzielna taksówka, dodatkowa aktywność) i wszystko, co przynosi korzyść tylko jednej osobie. Ogólna zasada brzmi: jeśli byłoby dziwne, gdyby jedna osoba w tym nie uczestniczyła, podzielcie to. Jeśli to osobisty wybór, zapłać za to sam."
+      },
+      {
+        "q": "Kiedy należy się rozliczyć na wyjeździe grupowym?",
+        "a": "Najlepiej ostatniego dnia wyjazdu lub w ciągu 24–48 godzin od powrotu do domu, gdy wszystko jest jeszcze świeże, a życzliwość wyjazdu nienaruszona. Skorzystajcie ze wspólnego narzędzia, które wylicza minimalną liczbę potrzebnych przelewów — to utrzymuje proces szybkim i bezbolesnym. Potwierdzajcie każdą płatność na grupowym czacie, żeby każdy wiedział, kiedy jego saldo jest wyzerowane. Czekanie dłużej niż tydzień utrudnia rozmowę i zaciemnia liczby. Ustalcie jako grupa twardy termin przed wyjazdem."
+      }
+    ]
+  },
+  "pollsTip": {
+    "text": "Wskazówka: skorzystaj z ankiet grupowych WePlanify, by głosować na kierunki i atrakcje oraz ujednolicić oczekiwania przed zobowiązaniem się do czegokolwiek.",
+    "link": "Wypróbuj ankiety grupowe"
+  },
+  "trackerBox": {
+    "text": "Wspólne narzędzie do śledzenia budżetu WePlanify pozwala każdemu członkowi grupy dodawać wydatki w kilka sekund, z dowolnego urządzenia.",
+    "link": "Zobacz narzędzie do śledzenia budżetu"
+  },
+  "cta": {
+    "title": "Gotowy zdjąć stres z pieniędzy na wyjeździe grupowym?",
+    "text": "Wspólne narzędzie do śledzenia budżetu WePlanify pozwala Twojej grupie rejestrować wydatki w czasie rzeczywistym, widzieć, kto komu ile jest winien, i rozliczać się czysto na koniec — wszystko w tej samej aplikacji, w której budujecie plan podróży, przeprowadzacie ankiety i koordynujecie pakowanie.",
+    "button": "Zacznijcie śledzić razem"
+  },
+  "discoverMore": {
+    "heading": "Odkryj więcej",
+    "budget": {
+      "title": "Śledzenie wspólnego budżetu",
+      "text": "Rejestruj wydatki w czasie rzeczywistym, widz, kto komu ile jest winien, i rozliczaj się czysto dzięki narzędziu do śledzenia budżetu grupowego WePlanify.",
+      "link": "Poznaj narzędzie"
+    },
+    "friends": {
+      "title": "Wyjazd ze znajomymi",
+      "text": "Zaplanuj wyjazd grupowy ze znajomymi bez wysiłku — plan podróży, ankiety, budżet i pakowanie w jednym miejscu."
+    },
+    "guide": {
+      "title": "Poradnik: zaplanuj wyjazd grupowy",
+      "text": "Kompletny przewodnik po planowaniu wyjazdu grupowego od wyboru kierunku po dzień wyjazdu."
+    },
+    "apps": {
+      "title": "Najlepsze aplikacje do planowania wyjazdów grupowych",
+      "text": "Uczciwe porównanie najlepszych aplikacji do planowania wyjazdu grupowego w 2026 roku."
+    }
+  },
+  "readMore": "Czytaj dalej"
+}

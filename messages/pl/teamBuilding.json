@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Planer firmowego wyjazdu integracyjnego — wyjazdy integracyjne | WePlanify",
+    "description": "Zaplanuj kolejny firmowy wyjazd integracyjny lub offsite bez chaosu z arkuszami kalkulacyjnymi. Plany podróży, ankiety, budżety — jedno narzędzie, zero bólu głowy."
+  },
+  "breadcrumb": {
+    "home": "Strona główna"
+  },
+  "hero": {
+    "tag": "Wyjazdy firmowe i zespołowe",
+    "title": "Zaplanuj wyjazd zespołowy, na który ludzie naprawdę chcą jechać",
+    "intro": "Wyjazdy integracyjne zawodzą, gdy jedna osoba planuje wszystko, nikt nie ma nic do powiedzenia, a atrakcje wydają się wymuszone. Oto jak zorganizować taki, który Twój zespół naprawdę polubi — i który przyniesie realne efekty.",
+    "readTime": "9 min czytania"
+  },
+  "toc": {
+    "title": "Na tej stronie",
+    "whyFail": "Dlaczego większość wyjazdów zespołowych chybia celu",
+    "types": "Rodzaje wyjazdów zespołowych",
+    "pitch": "Jak przedstawić to kierownictwu",
+    "weplanifyHelps": "Jak pomaga WePlanify",
+    "timeline": "Harmonogram planowania",
+    "roi": "Mierzenie zwrotu z inwestycji",
+    "faq": "Najczęściej zadawane pytania"
+  },
+  "whyFail": {
+    "title": "Dlaczego większość wyjazdów zespołowych chybia celu",
+    "p1": "Większość firmowych wyjazdów integracyjnych organizowana jest odgórnie: ktoś z HR-u lub zarządu wybiera obiekt, rezerwuje kilka atrakcji, wysyła zaproszenie do kalendarza i ma nadzieję na najlepsze. Efekt? Połowa zespołu boi się wymuszonej zabawy, druga połowa jest zdezorientowana co do harmonogramu, a organizator jest wypalony, zanim jeszcze zacznie się pierwsza kolacja zespołowa.",
+    "p3": "WePlanify wciąga w planowanie cały zespół. Nie tylko organizatora."
+  },
+  "types": {
+    "title": "Rodzaje wyjazdów zespołowych",
+    "subtitle": "Różne cele wymagają różnych formatów. Wybierz ten, który pasuje do potrzeb Twojego zespołu.",
+    "items": [
+      { "title": "Klasyczny wyjazd integracyjny", "desc": "2–3 dni w obiekcie na wsi. Mieszanka warsztatów, aktywności na świeżym powietrzu i wolnego czasu. Sprawdza się najlepiej przy corocznych firmowych zlotach i sesjach planowania strategicznego.", "color": "bg-[#EEF899]" },
+      { "title": "Miejski offsite", "desc": "Tętniące życiem miasto na 2–4 dni. Coworking biurowy rano, odkrywanie i kolacje zespołowe wieczorem. Idealny dla zespołów zdalnych spotykających się osobiście po raz pierwszy.", "color": "bg-[#61DBD5]" },
+      { "title": "Wyjazd przygodowy", "desc": "Wędrówki, spływy, wspinaczka, narty — coś fizycznego, co wspólnie wypycha ludzi poza strefę komfortu. Najlepszy dla małych, zżytych zespołów. Szybko buduje silne więzi.", "color": "bg-[#F6391A]" },
+      { "title": "Wyjazd roboczy", "desc": "Po części praca, po części zabawa. Tygodniowy wyjazd, gdzie poranki to produktywne sprinty, a popołudnia są wolne. Świetny dla startupów i rozproszonych zespołów, które potrzebują skupionego czasu razem.", "color": "bg-white" }
+    ]
+  },
+  "pitch": {
+    "title": "Jak przedstawić to szefowi",
+    "p1": "Sekretem uzyskania zgody na wyjazd zespołowy jest przedstawienie go jako inwestycji, a nie wydatku. Zespoły zdalne i hybrydowe szczególnie cierpią z powodu słabych relacji między działami — takich więzi, które tworzą się tylko osobiście. Dobrze zaplanowany wyjazd zwraca się dzięki lepszej współpracy, mniejszej rotacji i sprawniejszemu wdrażaniu nowych pracowników."
+  },
+  "pullQuote": "Najlepsze wyjazdy integracyjne nie wydają się obowiązkową zabawą — wydają się wyjazdem, na który pojechałbyś, nawet gdyby praca nie płaciła.",
+  "weplanifyHelps": {
+    "title": "Jak WePlanify pomaga zespołom",
+    "items": [
+      { "title": "Pozwól zespołowi głosować", "desc": "Korzystajcie z ankiet, by decydować o kierunkach, terminach i atrakcjach. Gdy ludzie wybierają, co robią, naprawdę nie mogą się tego doczekać. Anonimowe głosowanie usuwa hierarchię z decyzji.", "link": "/features/polls" },
+      { "title": "Jeden plan podróży, który każdy widzi", "desc": "Budujcie harmonogram wspólnie. Oznaczaj, co jest obowiązkowe (sesja strategiczna), a co opcjonalne (wędrówka). Zmiany synchronizują się w czasie rzeczywistym — koniec z wysyłaniem zaktualizowanych PDF-ów.", "link": "/features/planning" },
+      { "title": "Przejrzyste budżetowanie", "desc": "Śledź każdy wydatek w czasie rzeczywistym. Oznaczaj według kategorii dla łatwego raportowania do działu finansów. Oddzielaj wydatki firmowe od osobistych. Jasno, czysto, bez niespodzianek.", "link": "/features/budget" },
+      { "title": "Koordynuj logistykę na dużą skalę", "desc": "Wspólne listy rzeczy do spakowania, szczegóły transportu, przydziały pokoi — wszystko w jednym miejscu. Gdy 20 osób musi być w tej samej restauracji o 20:00, wspólny plan podróży jest Twoim jedynym źródłem prawdy.", "link": "/features/collaboration" }
+    ]
+  },
+  "timeline": {
+    "title": "Harmonogram planowania: od pomysłu do offsite'u",
+    "p3": "Dwa tygodnie wcześniej przejdź w tryb komunikacji. Udostępnij sfinalizowany plan podróży całemu zespołowi, wyślij sugestie dotyczące pakowania i potwierdź liczbę uczestników każdej atrakcji. Przypnij ważne szczegóły — transfery z lotniska, godziny zameldowania, kontakty alarmowe — na górze wyjazdu. Dobrze poinformowany zespół to zrelaksowany zespół.",
+    "p4": "Tydzień wcześniej i podczas wyjazdu Twoim zadaniem jest zachować elastyczność. Zmiany na ostatnią chwilę się zdarzają — restauracja odwołuje rezerwację, zmienia się pogoda, czyjś lot jest opóźniony. Dzięki wspólnemu planowi podróży aktualizowanemu w czasie rzeczywistym możesz dostosowywać się w locie, a wszyscy pozostają na bieżąco. Koniec z gorączkowymi grupowymi SMS-ami z pytaniem „gdzie mamy teraz być?”."
+  },
+  "roi": {
+    "title": "Mierzenie zwrotu z inwestycji w wyjazd integracyjny"
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      { "q": "Czy WePlanify obsługuje duże zespoły (20+ osób)?", "a": "Tak. Nie ma limitu rozmiaru grupy. Każdy członek zespołu dołącza wspólnym linkiem i może widzieć plan podróży, głosować w ankietach i śledzić wydatki. Przy bardzo dużych grupach możesz użyć podgrup w ramach wyjazdu dla różnych ścieżek atrakcji." },
+      { "q": "Jak zarządzać wydatkami, gdy płaci firma?", "a": "Skorzystaj z narzędzia do śledzenia budżetu, by rejestrować wszystkie wydatki w czasie rzeczywistym. Oznaczaj wydatki według kategorii (nocleg, posiłki, atrakcje, transport) dla łatwego raportowania. Na koniec wyjazdu wyeksportuj czyste podsumowanie do działu finansów lub rozliczenia. Możesz oddzielić wydatki opłacone przez firmę od osobistych." },
+      { "q": "Czy możemy włączyć w planowanie zdalnych członków zespołu?", "a": "Oczywiście. WePlanify działa w przeglądarce — bez aplikacji do pobrania. Udostępnij link do wyjazdu, a zdalni członkowie zespołu mogą dorzucać pomysły, głosować na atrakcje i widzieć pełny plan podróży z dowolnego miejsca. Jest zaprojektowane do rozproszonej współpracy." },
+      { "q": "Z jakim wyprzedzeniem powinniśmy planować wyjazd integracyjny?", "a": "Minimum dwa do trzech miesięcy przy wyjazdach krajowych, cztery do sześciu przy zagranicznych. Nocleg dla dużej grupy szybko się zapełnia, a ludzie potrzebują wyprzedzenia, by zablokować kalendarze. Załóż podróż w WePlanify wcześnie, by zbierać opinie, jeszcze zanim szczegóły zostaną ustalone." },
+      { "q": "Jakie rodzaje wyjazdów zespołowych sprawdzają się najlepiej?", "a": "To zależy od Twoich celów. Zespoły rozwiązujące problemy korzystają z aktywności przygodowych (escape roomy, wyzwania na świeżym powietrzu). Zespoły kreatywne kwitną przy nieustrukturyzowanym odkrywaniu (wyjazdy miejskie, doświadczenia kulturalne). Nowe zespoły potrzebują formatów sprzyjających przełamywaniu lodów. Skorzystaj z ankiet, by sprawdzić, czego naprawdę chce Twój zespół — możesz być zaskoczony." },
+      { "q": "Jak przedstawić wyjazd zespołowy zarządowi?", "a": "Skup się na efektach: lepsza komunikacja, silniejsze relacje między działami, mniejsza izolacja zdalna. Przedstaw to jako inwestycję w retencję i produktywność, a nie wydatek. Zapewnij jasne zestawienie budżetu za pomocą narzędzia WePlanify — pokazanie przejrzystości znacznie ułatwia uzyskanie zgody." }
+    ]
+  },
+  "discover": {
+    "title": "Odkryj więcej",
+    "tripWithFriends": { "title": "Wyjazd ze znajomymi", "desc": "Zaplanuj dowolny wyjazd grupowy bez wysiłku.", "cta": "Czytaj dalej →" },
+    "roadTrip": { "title": "Road trip", "desc": "Zaplanuj grupowy road trip ze wspólnymi trasami i budżetami.", "cta": "Czytaj dalej →" },
+    "groupGuide": { "title": "Poradnik wyjazdu grupowego", "desc": "Przewodnik krok po kroku po planowaniu dowolnego wyjazdu grupowego.", "cta": "Przeczytaj poradnik →" },
+    "bestApps": { "title": "Najlepsze aplikacje do podróży grupowych", "desc": "Porównaj najlepsze narzędzia do podróży grupowych.", "cta": "Przeczytaj artykuł →" }
+  },
+  "cta": {
+    "title": "Zaplanuj wyjazd, który Twój zespół zapamięta",
+    "subtitle": "Daj zespołowi głos w planowaniu — i obserwuj, jak zmienia się energia.",
+    "button": "Zacznij planować"
+  },
+  "jsonld": {
+    "articleHeadline": "Zaplanuj wyjazd integracyjny, na który ludzie naprawdę chcą jechać",
+    "howToName": "Jak zaplanować firmowy wyjazd integracyjny",
+    "howToDescription": "Przewodnik krok po kroku po planowaniu wyjazdu integracyjnego, który spodoba się całemu zespołowi.",
+    "howToSteps": [
+      { "name": "Określ cele i kierunek", "text": "Ustal cele wyjazdu, zarys budżetu i krótką listę 2–3 pomysłów na kierunek. Przeprowadź ankietę, by włączyć zespół w wybór kierunku." },
+      { "name": "Zarezerwuj nocleg i atrakcje", "text": "Potwierdź obiekt, zarezerwuj atrakcje grupowe i sfinalizuj logistykę podróży. Zbuduj wspólny plan podróży, który każdy widzi." },
+      { "name": "Udostępnij ostateczny plan", "text": "Rozdaj sfinalizowany plan podróży, zbierz potrzeby żywieniowe i wymagania dotyczące dostępności oraz potwierdź liczbę uczestników." },
+      { "name": "Zachowaj elastyczność w dniu wyjazdu", "text": "Utrzymuj wspólny plan podróży aktualizowany w czasie rzeczywistym, by wszyscy byli na bieżąco, gdy plany się zmieniają." }
+    ]
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "title": "Junggesellinnenabschied planen – Organisiere die perfekte Feier",
+    "description": "Plane mit WePlanify den ultimativen Junggesellinnenabschied. Stimmt Termine ab, votet über Aktivitäten, verwaltet ein geteiltes Budget und baut eine Tag-für-Tag-Reiseroute – alles in einem kostenlosen Organizer fürs JGA-Wochenende."
+  },
+  "readTime": "10 Min. Lesezeit",
+  "breadcrumb": {
+    "home": "Startseite",
+    "bachelorette": "Junggesellinnenabschied"
+  },
+  "hero": {
+    "tag": "Planer für den Junggesellinnenabschied",
+    "title": "Plane den ultimativen\nJunggesellinnenabschied",
+    "description": "Sie hat Ja gesagt – jetzt bist du dran, einen unvergesslichen Junggesellinnenabschied zu planen. WePlanify ist der kostenlose Organizer fürs JGA-Wochenende, der die Überraschung bewahrt und die Planung stressfrei hält.",
+    "cta": "Kostenlos planen"
+  },
+  "guideIntro": {
+    "title": "Der ultimative Guide für die Planung eines Junggesellinnenabschieds",
+    "paragraphs": [
+      "Ein gelungener Junggesellinnenabschied ist mehr als ein Abend in der Stadt – er ist eine mehrtägige Feier der Freundschaft, des Abenteuers und der Reise der zukünftigen Braut ins Eheleben. Ob du ein entspannendes Spa-Wochenende, ein wildes City-Abenteuer oder einen sonnigen Strandurlaub planst – der Zauber liegt im Detail. Und diese Details mit einer Gruppe von 6 bis 15 Personen richtig hinzubekommen, ist der Punkt, an dem es kompliziert wird.",
+      "Die besten Junggesellinnenabschiede haben drei Dinge gemeinsam: Sie passen zur Persönlichkeit der Braut, sie nehmen Rücksicht auf das Budget aller, und sie sind so gut organisiert, dass die Trauzeugin nicht hinter den Kulissen zusammenbricht. Das Geheimnis ist nicht, jede Minute überzuplanen – sondern ein System zu haben, das alle einbeziehen lässt und gleichzeitig eine Person am Steuer hält.",
+      "Genau dafür wurde WePlanify gebaut. Ein gemeinsamer Raum, in dem die Planungs-Crew über Aktivitäten abstimmen, die gemeinsame Kasse verfolgen, eine Tag-für-Tag-Reiseroute bauen und das Packen koordinieren kann – ohne dass die Braut es je sieht. Schluss mit geheimen WhatsApp-Gruppen mit verwirrenden Thread-Verzweigungen. Nur eine saubere, organisierte Planungszentrale."
+    ]
+  },
+  "painPoints": {
+    "title": "Warum die Planung eines Junggesellinnenabschieds das reinste Chaos ist",
+    "subtitle": "Du liebst die zukünftige Braut, aber ihr großes Wochenende zu organisieren? Das ist eine ganz andere Geschichte.",
+    "items": [
+      {
+        "emoji": "🤫",
+        "title": "Es geheim halten",
+        "description": "Eine epische Überraschung planen und gleichzeitig 12 Leute in einem Gruppenchat koordinieren, den die Braut nicht sehen darf? Der absolute Albtraum. Jemand schreibt immer versehentlich in die Hauptgruppe statt in die geheime. Oder die Braut sieht eine Benachrichtigungsvorschau auf jemandes Handy. Mit WePlanify findet die gesamte Planung in einem privaten Reise-Raum statt – keine ausgebüxten Gruppenchats, keine versehentlichen Spoiler."
+      },
+      {
+        "emoji": "📅",
+        "title": "Termine unter einen Hut bringen",
+        "description": "Zwischen Arbeit, Kindern, Urlauben und „lass mich kurz mit meinem Partner abklären“ – ein Wochenende zu finden, das für alle passt, fühlt sich unmöglich an. Du schickst eine Nachricht zu den Daten und die halbe Gruppe antwortet eine Woche später. Das Zeitfenster, um eine bezahlbare Unterkunft zu buchen, schrumpft ständig, während du wartest. Die Terminabstimmungen von WePlanify geben allen eine klare Frist zum Abstimmen, und die Ergebnisse sind sofort da."
+      },
+      {
+        "emoji": "💸",
+        "title": "Das Geld-Gespräch",
+        "description": "Wer zahlt das Airbnb? Wie teilt ihr den Anteil der Braut auf? Venmo-Anfragen fliegen überall herum. Unangenehm. Manche zahlen zu viel, andere zu wenig, und niemand kennt die echte Gesamtsumme, bis sich Wochen nach der Reise endlich jemand mit einem Taschenrechner hinsetzt. Der geteilte Budget-Tracker in WePlanify erledigt all das in Echtzeit – Beiträge, Ausgaben und wer wem was schuldet."
+      },
+      {
+        "emoji": "🎉",
+        "title": "Aktivitäten-Überladung",
+        "description": "Spa-Tag oder Weintour? Strand oder Stadt? Alle haben Meinungen, aber niemand will derjenige sein, der für die Gruppe entscheidet. Das Ergebnis ist entweder eine Pattsituation, in der nichts gebucht wird, oder eine Person trifft alle Entscheidungen und ärgert sich insgeheim, die ganze Arbeit zu machen. Gruppenabstimmungen lösen das im Nu – stell drei Optionen auf, lass alle abstimmen und buch den Gewinner. Demokratie in Bestform."
+      }
+    ]
+  },
+  "features": {
+    "title": "WePlanify macht die JGA-Planung leicht",
+    "subtitle": "Alles, was du brauchst, um einen Junggesellinnenabschied zu planen – an einem Ort, mit null Stress.",
+    "items": [
+      {
+        "emoji": "🔒",
+        "title": "Private Planungsgruppe",
+        "description": "Erstelle einen geheimen Planungsraum ohne die Braut. Lade die Crew ein, besprecht Ideen und haltet die Überraschung intakt – kein ausgebüxter Gruppenchat nötig. Alle in der Planungsgruppe können die Reiseroute, das Budget und die Packliste sehen, aber die zukünftige Braut hat null Zugriff. Du bestimmst, wer beitritt, und kannst die Braut nach der Überraschungs-Enthüllung hinzufügen, wenn sie die Reisedetails sehen soll."
+      },
+      {
+        "emoji": "🗳️",
+        "title": "Abstimmungen für Aktivitäten & Termine",
+        "description": "Ihr könnt euch nicht auf einen Termin oder eine Aktivität einigen? Lass die Gruppe abstimmen. Abstimmungen machen es leicht, das Passende für alle zu finden – kein endloses Hin und Her. Erstellt Abstimmungen für alles: welches Wochenende am besten passt, welches Restaurant fürs Gruppenabendessen, Spa oder Bootstour am Samstagnachmittag. Anonymes Abstimmen bedeutet, dass selbst die schüchternen Freundinnen wirklich mitreden. Die Ergebnisse sind klar, schnell und endgültig."
+      },
+      {
+        "emoji": "💰",
+        "title": "Geteiltes Budget & Kasse",
+        "description": "Lege ein gemeinsames Budget fest, verfolge Beiträge und teilt die Kosten fair. Schluss mit unangenehmen Geld-Gesprächen oder Tabellen-Albträumen. Entscheidet vorab, ob die Braut für sich selbst zahlt oder die Gruppe ihren Anteil übernimmt. Erfasse jede Ausgabe, sobald sie anfällt – die Airbnb-Anzahlung, die Restaurantreservierung, die passenden T-Shirts – und WePlanify berechnet automatisch, wer wem was schuldet."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Tag-für-Tag-Reiseroute",
+        "description": "Baut einen detaillierten Zeitplan fürs ganze Wochenende. Vom Begrüßungsdrink bis zum Abschluss-Brunch – alle wissen, was wann passiert. Füge Zeiten, Orte, Notizen und Links zu jeder Aktivität hinzu. Teil die Reiseroute mit der ganzen Gruppe (minus die Braut), damit alle den Plan kennen. Am Tag selbst ist die Reiseroute eure einzige Quelle der Wahrheit – Schluss mit hektischen Nachrichten à la „wo treffen wir uns?“"
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Ideen für den Junggesellinnenabschied nach Stil",
+    "subtitle": "Nicht sicher, welche Art von JGA du planen sollst? Hier sind fünf beliebte Stile zur Inspiration.",
+    "items": [
+      {
+        "emoji": "🧖",
+        "title": "Entspannendes Spa-Retreat",
+        "description": "Bucht ein Spa-Hotel oder Wellness-Resort für ein Wochenende mit Massagen, Gesichtsbehandlungen, Whirlpools und langsamen Vormittagen. Perfekt für Bräute, die vor dem Hochzeitschaos abschalten wollen. Ergänzt einen gemeinsamen Kochkurs oder eine Weinprobe, um die Entspannung aufzulockern. Budget-Tipp: Miete ein Airbnb mit Whirlpool und buch mobile Spa-Behandlungen, die zu euch kommen."
+      },
+      {
+        "emoji": "🌃",
+        "title": "City-Abenteuer",
+        "description": "Wähl eine lebendige Stadt – etwa Barcelona, Austin, Montreal oder Lissabon – und füllt das Wochenende mit Rooftop-Bars, Streetfood-Touren, Shopping und Nachtleben. Städtetrips funktionieren super, weil sich alle für ein paar Stunden trennen und zum Gruppenabendessen wieder zusammenfinden können. Nutzt die Reiseroute von WePlanify, um die Muss-Aktivitäten zu planen und Raum für spontane Erkundung zu lassen."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Strandurlaub",
+        "description": "Sonne, Sand und passende Badeanzüge. Ein Strand-JGA ist nicht ohne Grund ein Klassiker. Bucht eine Unterkunft direkt am Strand, plant einen Bootstag und legt Sonnenuntergangs-Cocktails am Ufer fest. Als Reiseziele bieten sich Tulum, die griechischen Inseln, Bali oder Südfrankreich an. Die geteilte Packliste ist hier unverzichtbar – stimmt ab, wer die Schwimmreifen, die Kühlbox und den Bluetooth-Lautsprecher mitbringt."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Auszeit im Weinland",
+        "description": "Napa, Bordeaux, Mendoza, Toskana – jede Weinregion macht sich für einen anspruchsvollen und unvergesslichen JGA. Bucht eine Weingut-Tour, organisiert eine private Verkostung und lasst den Abend mit einem langen Abendessen ausklingen. Reisen ins Weinland können schnell teuer werden, daher ist der geteilte Budget-Tracker dein bester Freund. Erfasse Verkostungen, Mahlzeiten und Transportkosten, damit alle auf dem gleichen Stand bleiben."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Aktiv & Outdoor",
+        "description": "Für die abenteuerlustige Braut: Wandern, Kajakfahren, Surfen oder Skifahren. Bucht eine Hütte in den Bergen oder eine Lodge in der Nähe eines Nationalparks. Plant eine große Gruppenaktivität pro Tag (etwa eine geführte Wanderung oder eine Rafting-Tour) und lasst die Abende für gemütliche Abendessen und Spiele. Die Packliste ist bei Outdoor-Reisen entscheidend – sorgt dafür, dass alle die richtige Ausrüstung haben und wissen, was die Gruppe gemeinsam mitbringt."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Wann mit der Planung beginnen",
+    "subtitle": "Ein einfacher Zeitplan, damit du auf Kurs bleibst.",
+    "milestones": [
+      {
+        "time": "6 Monate vorher",
+        "title": "Termin & Gästeliste festlegen",
+        "description": "Befrage die Gruppe nach verfügbaren Wochenenden. Legt endgültig fest, wer kommt. Erstelle deine WePlanify-Reise und lade alle ein."
+      },
+      {
+        "time": "3 Monate vorher",
+        "title": "Unterkunft & Transport buchen",
+        "description": "Stimmt über Reiseziel und Unterkunftsstil ab. Bucht Flüge oder organisiert Fahrgemeinschaften. Richtet das geteilte Budget ein."
+      },
+      {
+        "time": "1 Monat vorher",
+        "title": "Aktivitäten planen & Reiseroute bauen",
+        "description": "Stimmt über Aktivitäten ab. Baut den Tag-für-Tag-Plan. Beginnt die Packliste. Bestellt passende Ausstattung oder Deko."
+      },
+      {
+        "time": "1 Woche vorher",
+        "title": "Letzter Check & Vorfreude",
+        "description": "Bestätigt alle Reservierungen. Geht die Packliste durch. Klärt alle offenen Budgetposten. Schickt die finale Reiseroute an die Gruppe."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Checkliste für die JGA-Planung",
+    "items": [
+      "Einen Termin festlegen, der für die meisten passt",
+      "Eine private Planungsgruppe erstellen (ohne die Braut)",
+      "Reiseziel und Unterkunft festlegen",
+      "Ein gemeinsames Budget festlegen und abstimmen",
+      "Unterkunft und Transport buchen",
+      "Aktivitäten planen und eine Tag-für-Tag-Reiseroute bauen",
+      "Passende Outfits, Deko oder Geschenke bestellen",
+      "Eine geteilte Packliste erstellen",
+      "Alle Reservierungen eine Woche vorher bestätigen",
+      "Das Budget abrechnen und feiern"
+    ]
+  },
+  "testimonial": {
+    "quote": "Ehrlich, wir waren ein Chaos beim Versuch, Jens JGA über WhatsApp zu planen. Jemand hat WePlanify vorgeschlagen und es hat einfach … funktioniert? Wir haben über alles abgestimmt, das Budget war klar, und niemand musste jemandem wegen Geld hinterherlaufen. 10/10, würde ich wieder planen.",
+    "author": "Emma R.",
+    "role": "Brautjungfer, NYC"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "q": "Kann ich planen, ohne dass die Braut es sieht?",
+        "a": "Absolut. Mit WePlanify kannst du eine private Planungsgruppe erstellen, die die zukünftige Braut nie sieht. Lade nur die Brautjungfern und Organisatorinnen ein – halte die Überraschung komplett intakt."
+      },
+      {
+        "q": "Wie verwalten wir das geteilte Budget?",
+        "a": "WePlanify enthält einen integrierten geteilten Budget-Tracker. Lege das Gesamtbudget fest, erfasse jede Ausgabe, teile die Kosten gleichmäßig oder individuell und sieh in Echtzeit, wer wem was schuldet. Keine Tabellen nötig."
+      },
+      {
+        "q": "Ist WePlanify für die JGA-Planung kostenlos?",
+        "a": "Ja, zu 100 % kostenlos – sogar für die geheime Planung. Erstelle eine private Gruppe ohne die Braut, führt Abstimmungen durch, baut die Reiseroute und verfolgt die gemeinsame Kasse zum Nulltarif. Sobald die Überraschung enthüllt ist, kannst du die zukünftige Braut sogar hinzufügen, damit sie den kompletten Plan sieht. Keine Testphase, keine Kreditkarte, keine versteckten Gebühren."
+      },
+      {
+        "q": "Wie weit im Voraus sollten wir mit der Planung beginnen?",
+        "a": "Idealerweise sechs Monate vor der Hochzeit für Reisen ans Reiseziel, drei Monate für lokale Auszeiten. Je früher du Termin und Gästeliste festlegst, desto leichter wird alles andere. Starte eine WePlanify-Reise, sobald die Idee entsteht – auch wenn die Details noch nicht feststehen."
+      },
+      {
+        "q": "Was ist ein gutes Budget für einen Junggesellinnenabschied?",
+        "a": "Budgets variieren stark je nach Reiseziel und Stil. Ein lokales Spa-Wochenende kostet vielleicht 200 bis 400 pro Person, während eine Reise ans Reiseziel 800 bis 1500 oder mehr kosten kann. Der Schlüssel ist, sich früh auf ein Budget zu einigen und einen geteilten Tracker zu nutzen, damit alle die Gesamtsumme kennen, bevor sie sich festlegen."
+      },
+      {
+        "q": "Wie entscheiden wir als Gruppe über Aktivitäten?",
+        "a": "Nutzt Abstimmungen. Erstelle eine Abstimmung mit drei bis fünf Aktivitätsoptionen, lass alle abstimmen und nehmt den Gewinner. Das vermeidet das Eine-Person-entscheidet-Problem und gibt allen das Gefühl, einbezogen zu sein. Du kannst für jeden Tag oder jedes Zeitfenster separate Abstimmungen durchführen."
+      },
+      {
+        "q": "Was, wenn einige Brautjungfern nicht das ganze Wochenende dabei sein können?",
+        "a": "Das passiert ständig – und WePlanify geht souverän damit um. Du kannst eine flexible Reiseroute bauen, bei der manche nur am Samstagabend oder beim Abschluss-Brunch dabei sind. Auch die Budgetaufteilung passt sich an: Markiere einfach, wer bei welchen Aktivitäten dabei ist, und der geteilte Tracker berechnet jeden Anteil neu. Keine unangenehmen Gespräche darüber, dass jemand für einen Tag zahlt, den er verpasst hat."
+      }
+    ]
+  },
+  "destinations": {
+    "tag": "Reiseziel-Inspiration",
+    "heading": "Sofort forkbare JGA-Reisen",
+    "seeItinerary": "Reiseroute ansehen →",
+    "seeAll": "Alle Reiseziele ansehen →",
+    "cards": {
+      "lasVegas": {
+        "title": "Las Vegas · 3 Tage",
+        "desc": "Die globale JGA-Hauptstadt. Poolpartys, Dayclubs, der Strip, eine Cirque-Show."
+      },
+      "nashville": {
+        "title": "Nashville · 4 Tage",
+        "desc": "Die JGA-Hauptstadt der USA. Pedal Taverns, Honky-Tonks, Cowgirl-Stiefel."
+      },
+      "budapest": {
+        "title": "Budapest · 3 Tage",
+        "desc": "Thermalbäder, Ruinenbars, Rooftops. Das europäische JGA-Wochenende, richtig gemacht."
+      },
+      "marrakech": {
+        "title": "Marrakesch · 4 Tage",
+        "desc": "Privates Riad, Hammam-Ritual, Agafay-Wüste, Rooftop-Dinner. Totale Auszeit."
+      }
+    }
+  },
+  "discover": {
+    "heading": "Mehr entdecken",
+    "tripWithFriends": {
+      "title": "Reise mit Freunden",
+      "desc": "Plane mit WePlanify mühelos eine Gruppenreise mit Freunden.",
+      "cta": "Weiterlesen →"
+    },
+    "guide": {
+      "title": "Guide: So planst du eine Gruppenreise",
+      "desc": "Der komplette Schritt-für-Schritt-Guide für die Planung einer gelungenen Gruppenreise.",
+      "cta": "Guide lesen →"
+    },
+    "comparison": {
+      "title": "App-Vergleich",
+      "desc": "Sieh, wie sich WePlanify 2026 gegen andere Apps zur Gruppenreiseplanung schlägt.",
+      "cta": "Vergleich ansehen →"
+    }
+  },
+  "cta": {
+    "title": "Bereit, den besten Junggesellinnenabschied aller Zeiten zu planen?",
+    "description": "Schließ dich Tausenden Brautjungfern an, die mit WePlanify stressfreie Junggesellinnenabschiede organisieren. Es ist kostenlos, es macht Spaß und es funktioniert wirklich.",
+    "button": "Loslegen – kostenlos"
+  }
+}

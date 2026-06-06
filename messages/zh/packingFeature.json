@@ -1,0 +1,51 @@
+{
+  "copy": {
+    "itemsReady": "14 / 20 项",
+    "readyForTrip": "已为旅行备齐",
+    "categories": [
+      {
+        "icon": "👕",
+        "title": "衣物",
+        "progress": 80,
+        "items": [
+          { "name": "T 恤（x5）", "checked": true },
+          { "name": "裤子（x3）", "checked": true },
+          { "name": "薄外套", "checked": true },
+          { "name": "泳衣", "checked": false }
+        ]
+      },
+      {
+        "icon": "🔌",
+        "title": "电子设备",
+        "progress": 60,
+        "items": [
+          { "name": "手机充电器", "checked": true },
+          { "name": "电源转换插头", "checked": true },
+          { "name": "充电宝", "checked": false },
+          { "name": "耳机", "checked": false }
+        ]
+      },
+      {
+        "icon": "🧴",
+        "title": "洗漱用品",
+        "progress": 100,
+        "items": [
+          { "name": "牙刷", "checked": true },
+          { "name": "防晒霜", "checked": true },
+          { "name": "洗发水", "checked": true }
+        ]
+      }
+    ],
+    "tipTitle": "根据你的旅行给出的建议",
+    "tipText": "里斯本四月平均气温为 28°C。记得带上轻便衣物和防晒霜！",
+    "packTitle": "安心打包行李",
+    "sharedTitle": "谁带什么？一次性说清楚",
+    "sharedSubtitle": "通过分配谁带什么，避免重复携带。",
+    "bringing": "负责带：",
+    "people": [
+      { "avatar": "👩‍🎨", "name": "Marie", "items": ["防晒霜", "纸牌游戏", "旅行指南"] },
+      { "avatar": "🧔", "name": "Thomas", "items": ["电源转换插头", "蓝牙音箱"] },
+      { "avatar": "👱‍♀️", "name": "Emma", "items": ["急救包", "望远镜"] }
+    ]
+  }
+}

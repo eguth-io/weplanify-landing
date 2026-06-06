@@ -2,8 +2,32 @@ import { Metadata } from "next";
 import { client } from "@/sanity/lib/client";
 import { seoSettingsQuery } from "@/sanity/lib/query";
 import { SeoSettings } from "@/sanity/lib/type";
+import { routing } from "@/i18n/routing";
 
 const SITE_URL = "https://www.weplanify.com";
+
+// Open Graph locale codes per supported locale.
+const OG_LOCALES: Record<string, string> = {
+  en: "en_US",
+  es: "es_ES",
+  fr: "fr_FR",
+  it: "it_IT",
+  zh: "zh_CN",
+  de: "de_DE",
+  pt: "pt_PT",
+  ru: "ru_RU",
+  pl: "pl_PL",
+};
+
+// Builds the hreflang `languages` map for every supported locale + x-default (en).
+function hreflangLanguages(baseUrl: string, pathname: string): Record<string, string> {
+  const languages: Record<string, string> = {};
+  for (const locale of routing.locales) {
+    languages[locale] = `${baseUrl}/${locale}${pathname}`;
+  }
+  languages["x-default"] = `${baseUrl}/${routing.defaultLocale}${pathname}`;
+  return languages;
+}
 
 const localizedDefaults: Record<string, { title: string; description: string }> = {
   en: {
@@ -65,7 +89,7 @@ export async function generateMetadataFromSanity(
       // Open Graph
       openGraph: {
         type: seoSettings.ogType || "website",
-        locale: locale === "fr" ? "fr_FR" : "en_US",
+        locale: OG_LOCALES[locale] ?? OG_LOCALES.en,
         url: currentUrl,
         siteName: seoSettings.siteName || "WePlanify",
         title,
@@ -111,11 +135,7 @@ export async function generateMetadataFromSanity(
       // Hreflang + Canonical
       alternates: {
         canonical: currentUrl,
-        languages: {
-          en: `${baseUrl}/en${pathname}`,
-          fr: `${baseUrl}/fr${pathname}`,
-          "x-default": `${baseUrl}/en${pathname}`,
-        },
+        languages: hreflangLanguages(baseUrl, pathname),
       },
     };
 
@@ -141,7 +161,7 @@ function getDefaultMetadata(locale: string = "en", pathname: string = ""): Metad
     description: localized.description,
     openGraph: {
       type: "website",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: OG_LOCALES[locale] ?? OG_LOCALES.en,
       url: currentUrl,
       siteName: "WePlanify",
       title: localized.title,
@@ -154,11 +174,7 @@ function getDefaultMetadata(locale: string = "en", pathname: string = ""): Metad
     },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: `${SITE_URL}/en${pathname}`,
-        fr: `${SITE_URL}/fr${pathname}`,
-        "x-default": `${SITE_URL}/en${pathname}`,
-      },
+      languages: hreflangLanguages(SITE_URL, pathname),
     },
   };
 }

@@ -1,0 +1,46 @@
+{
+  "home": "首页",
+  "destinations": "目的地",
+  "daysUnit": "天",
+  "daysShort": "天",
+  "dayInitial": "第",
+  "perPerson": "/ 每人",
+  "forkTrip": "套用此行程",
+  "forkSubtext": "从这份行程开启你自己的旅行 —— 免费，30 秒搞定。",
+  "itinerary": {
+    "heading": "逐日行程",
+    "subheading": "{days} 天，从早到晚。为团体而建，易于调整。"
+  },
+  "slot": {
+    "morning": "上午",
+    "afternoon": "下午",
+    "evening": "晚上"
+  },
+  "pois": {
+    "heading": "去哪里",
+    "subheading": "真实、精选的地点。点击任意一个即可在地图中打开。"
+  },
+  "budget": {
+    "heading": "每人预算",
+    "subheading": "诚实的实地估算 —— {days} 天。",
+    "total": "预计总额"
+  },
+  "packing": {
+    "heading": "打包必备"
+  },
+  "season": {
+    "heading": "何时前往"
+  },
+  "related": {
+    "heading": "其他值得探索的目的地",
+    "seeItinerary": "查看行程 →"
+  },
+  "cta": {
+    "heading": "和你这帮人一起拿下{city}",
+    "body": "把这份行程套用到 WePlanify、邀请团队，一起规划旅行。共享行程、投票、共享预算 —— 全部免费。",
+    "button": "套用此行程 —— 免费"
+  },
+  "jsonld": {
+    "day": "第"
+  }
+}

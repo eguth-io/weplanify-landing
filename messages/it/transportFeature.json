@@ -1,0 +1,22 @@
+{
+  "copy": {
+    "heroTitle": "Voli, treni, auto:",
+    "heroTitleHighlight": "mai più biglietti smarriti",
+    "heroSubtitle": "Inoltra le tue email di conferma e noi estraiamo tutto automaticamente.",
+    "importTitle": "Importazione automatica",
+    "importSubtitle": "Collega la tua email o scansiona le tue conferme — tutto viene importato automaticamente.",
+    "tickets": [
+      { "type": "flight", "code": "AF1234", "details": "Parigi → Lisbona — 15 aprile" },
+      { "type": "train", "code": "CP5678", "details": "Lisbona → Porto — 18 aprile" },
+      { "type": "hotel", "code": "BOOKING-9012", "details": "Hotel Porto — 4 notti" }
+    ],
+    "syncTitle": "Si sincronizza con il tuo itinerario",
+    "syncSubtitle": "I trasporti si integrano automaticamente nel tuo programma.",
+    "timeline": [
+      { "time": "08:45", "event": "Volo CDG → LIS", "icon": "✈️", "color": "#61DBD5" },
+      { "time": "10:30", "event": "Arrivo a Lisbona", "icon": "📍", "color": "#F6391A" },
+      { "time": "11:00", "event": "Transfer per l'hotel", "icon": "🚕", "color": "#EEF899" },
+      { "time": "14:00", "event": "Check-in Hotel Alfama", "icon": "🏨", "color": "#8B5CF6" }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Planear uma Viagem em Família — Planeador de Férias para Famílias | WePlanify",
+    "description": "Planeie as suas próximas férias em família com a WePlanify. Coordene várias gerações, faça a gestão de orçamentos partilhados, votem nas atividades e construam um itinerário com que toda a gente concorda."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Viagem em Família"
+  },
+  "hero": {
+    "tag": "Viagens em Família",
+    "title": "Planeie uma Viagem em Família de Que Todos Vão Mesmo Gostar",
+    "intro": "Dos avós aos bebés, as viagens em família significam necessidades diferentes, orçamentos diferentes e ideias diferentes de diversão. Eis como fazer com que resulte sem perder a cabeça.",
+    "readTime": "8 min de leitura"
+  },
+  "challenge": {
+    "p1": "As viagens em família são o melhor tipo de viagem — e o mais difícil de organizar. O pai quer caminhadas, a mãe quer praia, os adolescentes querem Wi-Fi, as crianças querem um parque aquático e a avó só quer toda a gente na mesma sala ao jantar. Encontrar um plano que funcione para três gerações sem folhas de cálculo nem um colapso na conversa de grupo? Esse é o verdadeiro desafio das férias.",
+    "p2": "Depois há o dinheiro. Alojamento para mais de 10 pessoas. Atividades para todas as idades. Refeições que agradem a todos, do menino de cinco anos esquisito à tia vegana. Quando vários agregados partilham os custos, acompanhar quem pagou o quê torna-se um trabalho a tempo inteiro — e ninguém quer ser quem pede ao tio Marc a sua parte do Airbnb.",
+    "p3": "A WePlanify dá à sua família um espaço partilhado para planear, votar, gerir o orçamento e fazer as malas — para que quem organiza não fique esgotado antes mesmo de a viagem começar."
+  },
+  "toc": {
+    "title": "Nesta página",
+    "byAge": "Planear por faixa etária",
+    "howHelps": "Como a WePlanify ajuda",
+    "destination": "Escolher o destino certo",
+    "budget": "Orçamentar uma viagem multigeracional",
+    "faq": "Perguntas frequentes"
+  },
+  "byAge": {
+    "title": "Planear por Faixa Etária",
+    "items": [
+      { "age": "0–4", "title": "Bebés e Crianças Pequenas", "text": "Mantenha tudo por perto, mantenha tudo flexível. Voos ou viagens de carro curtos, alojamento com acesso a cozinha e um horário com generosas janelas para a sesta. A lista de bagagem é crucial — as listas partilhadas evitam que se esqueça da única coisa de que realmente precisa.", "color": "bg-[#61DBD5]" },
+      { "age": "5–12", "title": "Crianças", "text": "A idade de ouro das viagens em família. São curiosas, adaptáveis e entusiasmadas com tudo. Combine atividades estruturadas (parques aquáticos, museus, passeios de barco) com exploração livre. Use sondagens para os deixar votar nas atividades — vão sentir-se incluídos e evitará birras.", "color": "bg-[#EEF899]" },
+      { "age": "13–17", "title": "Adolescentes", "text": "Querem independência, mas ainda precisam de estrutura. Inclua tempo livre no itinerário em que possam explorar por conta própria. Dê-lhes voz no planeamento — se ajudaram a escolher o restaurante, é muito menos provável que se queixem dele.", "color": "bg-[#F6391A]" },
+      { "age": "60+", "title": "Avós", "text": "O conforto, o ritmo e a acessibilidade importam. Evite dias demasiado preenchidos. Inclua opções de descanso a par das atividades de grupo — uma manhã num café enquanto os outros fazem caminhada é perfeitamente válida. Ter o itinerário completo visível com antecedência ajuda-os a preparar-se mental e fisicamente.", "color": "bg-[#61DBD5]" }
+    ]
+  },
+  "howHelps": {
+    "title": "Como a WePlanify Ajuda as Famílias",
+    "items": [
+      { "title": "Toda a gente tem voto", "desc": "Destino, atividades, restaurantes — crie sondagens e deixe cada membro da família (sim, até as crianças) ter uma palavra a dizer. Os resultados são instantâneos e definitivos. Acabaram-se os debates circulares à mesa de jantar.", "link": "/features/polls" },
+      { "title": "Um itinerário partilhado", "desc": "Construam o plano dia a dia em conjunto. Marque as atividades por adequação à idade, para que todos saibam o que é para toda a família e o que é opcional. As alterações sincronizam em tempo real — sem PDFs desatualizados.", "link": "/features/planning" },
+      { "title": "Orçamento sem constrangimentos", "desc": "Acompanhe as despesas partilhadas entre agregados. Registe quem pagou o quê, divida os custos como quiser e veja o saldo em tempo real. A conversa sobre dinheiro acontece uma vez, não vinte.", "link": "/features/budget" },
+      { "title": "Coordenação da bagagem", "desc": "Crie listas de bagagem partilhadas para que três famílias não apareçam com cinco frascos de protetor solar e nenhum kit de primeiros socorros. Atribua itens de grupo a pessoas específicas e marque-os à medida que faz as malas.", "link": "/features/packing" }
+    ]
+  },
+  "pullQuote": "As melhores férias em família não são aquelas em que tudo corre na perfeição — são aquelas em que toda a gente se sentiu incluída no planeamento.",
+  "destination": {
+    "title": "Escolher o Destino Certo para Famílias",
+    "p1": "Escolher um destino quando se viaja em casal é uma coisa. Escolher um que funcione para um bebé, dois adolescentes e avós com joelhos frágeis é um jogo completamente diferente. O primeiro filtro deve ser sempre prático: quanto tempo dura o voo? Tudo o que ultrapasse quatro horas com uma criança pequena merece séria consideração. Se metade do grupo tem mobilidade reduzida, uma cidade construída em colinas ou com calçada de paralelos pode parecer encantadora nas fotografias, mas tornar-se penosa ao segundo dia.",
+    "p2": "O acesso a cuidados de saúde importa mais do que a maioria das pessoas pensa. Viajar com crianças pequenas ou familiares idosos significa que precisa de saber onde fica o hospital mais próximo e se o seu seguro cobre o país. Os destinos com boa infraestrutura turística — Portugal, Japão, Croácia — tendem a pontuar bem tanto em adequação familiar como em acessibilidade médica.",
+    "p3": "Pense no alojamento cedo. As famílias precisam de espaço — não só de quartos, mas de áreas comuns onde o grupo se possa reunir sem estar em cima uns dos outros. Uma vivenda com piscina, uma casa de campo grande ou apartamentos contíguos costumam funcionar melhor do que um bloco de quartos de hotel. Procure lugares com acesso a cozinha: comer fora três refeições por dia com crianças torna-se caro e exaustivo muito depressa."
+  },
+  "budget": {
+    "title": "Orçamentar uma Viagem Multigeracional",
+    "p1": "O dinheiro é onde as viagens em família ficam desconfortáveis. Os avós podem querer um bom hotel com pequeno-almoço incluído. Os pais vigiam cada euro porque acabaram de pagar as propinas da escola. Os casais jovens sem filhos não percebem por que razão a vivenda tem de custar tanto. E ninguém quer ser quem levanta a questão do orçamento — por isso a coisa fermenta até alguém, de forma passivo-agressiva, transferir o montante errado. A solução é simples: falem sobre dinheiro antes de reservar seja o que for e usem uma ferramenta partilhada para que os números fiquem visíveis para todos."
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      { "q": "Qual é a melhor idade para começar as viagens em família?", "a": "Qualquer idade serve, mas a logística muda significativamente. Abaixo dos 5 anos, mantenha os destinos próximos e os horários flexíveis. Dos 5 aos 12 é a idade ideal para a aventura — as crianças são curiosas e adaptáveis. Os adolescentes preferem mais independência, por isso inclua tempo livre. A WePlanify permite-lhe estruturar o itinerário de forma diferente para cada faixa etária dentro da mesma viagem." },
+      { "q": "Como se lida com orçamentos diferentes dentro de uma família?", "a": "As viagens em família alargada significam muitas vezes situações financeiras muito diferentes. A chave é a transparência. Use o gestor de orçamento da WePlanify para separar os custos partilhados (alojamento, transporte) das atividades opcionais. Algumas famílias criam uma caixa partilhada para as refeições de grupo, deixando que cada agregado trate dos seus próprios extras." },
+      { "q": "Com quanta antecedência devemos planear umas férias em família?", "a": "Para viagens nacionais, 2 a 3 meses costumam ser suficientes. As viagens internacionais com família alargada precisam de 4 a 6 meses no mínimo — toda a gente precisa de tempo para pedir férias, orçamentar e tratar dos passaportes. Comece uma viagem na WePlanify cedo, mesmo que os detalhes ainda não estejam definidos. Ter um espaço partilhado mantém o entusiasmo vivo." },
+      { "q": "Como escolhemos um destino que funcione para todas as idades?", "a": "Usem sondagens. A sério. Deixem cada agregado sugerir duas opções e depois votem. As sondagens em grupo da WePlanify eliminam a pressão social dos debates presenciais. Concentrem-se em destinos com variedade — lugares onde os avós possam descansar enquanto as crianças exploram e os pais têm um pouco de ambos." },
+      { "q": "E se os membros da família discordarem do itinerário?", "a": "Incorpore a regra dos 70/30 no plano: 70% de atividades de grupo estruturadas, 30% de tempo livre em que cada subgrupo faz o seu. Nem todos os momentos precisam de ser em conjunto. Uma manhã na piscina para as crianças enquanto os avós visitam um museu é perfeitamente válida — e muitas vezes melhor para todos." },
+      { "q": "A WePlanify consegue lidar com viagens de famílias de vários agregados?", "a": "Sim. Cada membro da família junta-se à mesma viagem com um link partilhado. Toda a gente pode ver o itinerário, votar nas sondagens e acompanhar as despesas partilhadas. Pode organizar o itinerário por dia, com as atividades de grupo e as opções de subgrupo claramente assinaladas." }
+    ]
+  },
+  "discover": {
+    "title": "Descubra Mais",
+    "tripWithFriends": { "title": "Viagem com Amigos", "desc": "Planeie uma viagem em grupo com amigos sem esforço.", "cta": "Ler mais →" },
+    "roadTrip": { "title": "Road Trip", "desc": "Planeie um road trip em grupo com rotas e orçamentos partilhados.", "cta": "Ler mais →" },
+    "groupGuide": { "title": "Guia de Viagem em Grupo", "desc": "O guia completo, passo a passo.", "cta": "Ler o guia →" },
+    "bestApps": { "title": "Melhores Apps de Viagens em Grupo", "desc": "As melhores ferramentas para planear viagens em conjunto.", "cta": "Ler o artigo →" }
+  },
+  "cta": {
+    "title": "A Sua Viagem em Família Começa Aqui",
+    "subtitle": "Ponha toda a gente na mesma página — literalmente. Comecem a planear as vossas próximas férias em família em conjunto.",
+    "button": "Começar a planear"
+  },
+  "jsonld": {
+    "articleHeadline": "Planear uma Viagem em Família de Que Todos Vão Gostar"
+  }
+}

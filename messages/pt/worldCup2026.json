@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Planeador de Viagem para o Campeonato do Mundo 2026 — Gratuito, para Grupos | WePlanify",
+    "description": "Planeador de viagem gratuito para o Campeonato do Mundo 2026 para grupos de adeptos. Construa a sua rota por várias cidades nos EUA, Canadá e México, divida os custos por categoria e coordene a logística pelas 16 cidades-sede — sem agência, sem subscrição."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Planeador de Viagem para o Campeonato do Mundo 2026"
+  },
+  "hero": {
+    "tag": "Planeador de viagem gratuito · Campeonato do Mundo 2026",
+    "title": "Planeador de Viagem para o Campeonato do Mundo 2026: Siga a Sua Equipa por 3 Países",
+    "readTime": "8 min de leitura"
+  },
+  "problem": {
+    "p1": "Um Campeonato do Mundo com amigos parece um sonho — até começar a esboçá-lo num guardanapo. Três jogos da fase de grupos em três cidades diferentes, possivelmente dois países diferentes. Eliminatórias que não pode reservar até os resultados saírem. Vistos, ESTAs, eTAs. Voos entre cidades que duplicam de preço na semana de um jogo. Seis adeptos, seis orçamentos, seis níveis de tolerância para um voo de madrugada. As agências de viagens vendem-lhe um pacote e dão o assunto por encerrado. Os adeptos que realmente querem a viagem acabam por construí-la sozinhos — e precisam de um plano que toda a gente possa ver.",
+    "p2": "A WePlanify é o centro de comando partilhado e gratuito para as viagens do Campeonato do Mundo 2026 — calendário, voos, hotéis, orçamento e bagagem num só lugar, em inglês ou francês."
+  },
+  "toc": {
+    "title": "Nesta página",
+    "anatomy": "Anatomia de uma viagem ao Campeonato do Mundo",
+    "hostCities": "As 16 cidades-sede",
+    "planning": "Planear a sua rota passo a passo",
+    "budget": "Dicas de orçamento para adeptos",
+    "faq": "Perguntas frequentes"
+  },
+  "anatomy": {
+    "title": "Anatomia de uma Viagem ao Campeonato do Mundo",
+    "subtitle": "Cinco componentes em movimento que todos os grupos falham à primeira tentativa. Acerte-os e a viagem flui.",
+    "items": [
+      { "stop": "O Calendário", "desc": "A sua equipa joga três jogos da fase de grupos em três cidades possíveis, depois eliminatórias que ainda não consegue prever. Fixe a fase de grupos no seu itinerário como âncoras fixas. Assinale as datas das eliminatórias como espaços reservados — quando o quadro se preencher, saberá que cidade adicionar. Não reserve voos não reembolsáveis para as eliminatórias antes dos oitavos de final.", "link": "/features/itinerary" },
+      { "stop": "O Grupo", "desc": "Seis adeptos raramente têm o mesmo plano. Alguns tiram os 39 dias de folga, outros só conseguem um jogo. Use uma sondagem para fixar quem participa em que etapa antes de reservar seja o que for — vai poupar quatro discussões e um voo cancelado.", "link": "/features/polls" },
+      { "stop": "As Fronteiras", "desc": "EUA, Canadá e México são três regimes de imigração. ESTA / B-2 para os EUA, eTA / visto para o Canadá, cartão de turista FMM para o México. Cada adepto trata da sua própria papelada, mas o grupo precisa de uma lista de verificação partilhada com prazos para que ninguém apareça no aeroporto sem um ESTA válido.", "link": "/features/planning" },
+      { "stop": "O Dinheiro", "desc": "Bilhetes dos jogos pagos individualmente via FIFA. Hotéis divididos por quarto. Voos entre cidades divididos por viajante. Comida dividida por refeição. Cinco categorias que não se acertam sozinhas. Um orçamento partilhado com categorias desde o primeiro dia vale mais do que uma folha de cálculo caótica no dia 38.", "link": "/features/budget" },
+      { "stop": "As Malas", "desc": "Três semanas pelo verão dos EUA, verão do Canadá e verão do México — e um código de vestuário de estádio. Façam as malas leves o suficiente para os limites de peso das companhias low-cost, mas com a camisola, o cachecol, a bandeira e o protetor solar de cada um previstos. Uma lista partilhada com itens comuns atribuídos evita três bandeiras e zero carregadores portáteis.", "link": "/features/packing" }
+    ]
+  },
+  "hostCities": {
+    "title": "As 16 Cidades-Sede",
+    "subtitle": "Onze cidades nos EUA, três no México, duas no Canadá. Construa a sua rota sabendo que conjuntos de cidades se conjugam bem — e quais exigem um voo."
+  },
+  "matrix": {
+    "title": "Tempo de Viagem Entre Cidades-Sede",
+    "subtitle": "Tempos de viagem só de ida, indicativos, para as rotas de adeptos mais comuns. Os tempos de voo excluem o trânsito no aeroporto (acrescente ~3h). Use-os para dimensionar os dias de margem entre jogos.",
+    "route": "Rota",
+    "mode": "Modo",
+    "time": "Tempo",
+    "notes": "Notas",
+    "rows": [
+      { "route": "Boston ↔ Nova Iorque", "mode": "Comboio (Acela)", "time": "~3h30", "note": "Porta a porta ganha ao avião" },
+      { "route": "Nova Iorque ↔ Filadélfia", "mode": "Comboio / Autocarro", "time": "~1h30", "note": "O conjunto mais fácil" },
+      { "route": "Nova Iorque ↔ Toronto", "mode": "Voo", "time": "~1h30", "note": "Passagem de fronteira — eTA necessária" },
+      { "route": "Atlanta ↔ Miami", "mode": "Voo", "time": "~2h", "note": "De carro são 10h+, não viável" },
+      { "route": "Dallas ↔ Houston", "mode": "Voo / Carro", "time": "~1h / 4h", "note": "De carro se forem mais de 2 adeptos" },
+      { "route": "Los Angeles ↔ São Francisco", "mode": "Voo", "time": "~1h30", "note": "A rota dos EUA mais barata para voar" },
+      { "route": "Los Angeles ↔ Seattle", "mode": "Voo", "time": "~3h", "note": "Reserve cedo — procura dos adeptos" },
+      { "route": "Seattle ↔ Vancouver", "mode": "Carro / Comboio", "time": "~3h-4h", "note": "Fronteira por terra — a travessia mais rápida" },
+      { "route": "Toronto ↔ Vancouver", "mode": "Voo", "time": "~5h", "note": "O voo doméstico mais longo do Canadá" },
+      { "route": "Dallas ↔ Cidade do México", "mode": "Voo", "time": "~2h30", "note": "Melhor porta de entrada EUA→MX" },
+      { "route": "Cidade do México ↔ Guadalajara", "mode": "Voo / Autocarro", "time": "~1h30 / 7h", "note": "O autocarro é bom à noite e barato" },
+      { "route": "Cidade do México ↔ Monterrey", "mode": "Voo", "time": "~1h30", "note": "Mais de 10 voos diários" },
+      { "route": "Los Angeles ↔ Miami", "mode": "Voo", "time": "~5h", "note": "De costa a costa — caro" }
+    ]
+  },
+  "checklist": {
+    "title": "Lista de Verificação do Essencial para a Viagem de Adeptos",
+    "subtitle": "As coisas de que os grupos se esquecem sempre. Atribua cada uma a uma pessoa na sua lista de bagagem da WePlanify.",
+    "items": [
+      "Bilhetes dos jogos (impressos + cópia na app da FIFA)",
+      "Passaporte válido (6+ meses além de julho de 2026)",
+      "ESTA, eTA ou visto para cada fronteira",
+      "Seguro de viagem que cubra os três países",
+      "Camisola, cachecol e bandeira da equipa",
+      "Bolsa transparente aprovada para o estádio",
+      "Carregador portátil (com várias portas para o grupo)",
+      "Plano de dados internacional ou eSIM local",
+      "Protetor solar + boné (o calor de junho é real)",
+      "Garrafa de água reutilizável (permitida nos estádios)",
+      "Dinheiro em USD / CAD / MXN para pequenas despesas",
+      "Tampões para os ouvidos (para depois da festa)"
+    ]
+  },
+  "pullQuote": "Uma viagem ao Campeonato do Mundo não são férias — é uma operação de 39 dias. Tratem o planeamento como a equipa trata a preparação, e o resto trata de si mesmo.",
+  "planning": {
+    "title": "Planear a Sua Rota: Passo a Passo",
+    "p1": "Comecem pelo calendário. O sorteio dos grupos fixa a cidade de cada jogo — esse é o vosso esqueleto. Coloquem os três jogos da fase de grupos como âncoras no itinerário e depois acrescentem um dia de descanso de cada lado. A viagem de estádio em estádio através da imigração consome mais tempo do que as pessoas esperam; nunca marquem um jogo no dia seguinte a um voo de longo curso.",
+    "p4": "Definam prazos para o grupo, não apenas para a viagem. Os ESTAs e eTAs demoram dias a ser aprovados em época de pico. Os planos de dados internacionais têm de ser tratados antes da partida. As janelas de cancelamento dos hotéis fecham mais cedo do que as pessoas se lembram. Uma lista de tarefas partilhada com prazos, visível para todos, impede que a viagem colapse sob a burocracia a uma semana do pontapé de saída."
+  },
+  "budget": {
+    "title": "Dicas de Orçamento para Viagens de Adeptos",
+    "p2": "O transporte entre cidades é onde o orçamento realmente abre ou fecha. Os voos domésticos nos EUA entre cidades-sede distantes (LA → Miami, Boston → Dallas) custam em média 250 a 400 dólares se reservados cedo, o dobro na semana de um jogo. Para saltos mais curtos no Nordeste (Boston → Nova Iorque → Filadélfia), o Amtrak Acela é mais rápido porta a porta e muitas vezes mais barato. Atravessar para o Canadá ou o México significa quase sempre voar — reservem essas etapas assim que o calendário for confirmado.",
+    "p3": "O alojamento é o segundo maior custo e o mais fácil de otimizar. Os hotéis das cidades-sede triplicam os preços nas datas dos jogos — reservem fora da zona oficial. Um Airbnb de três quartos a 30 minutos do estádio, dividido por quatro ou cinco pessoas, costuma bater os quartos de hotel individuais em 40%. Olhem para cidades vizinhas com ligações ferroviárias ou voos curtos: ficar em Newark em vez de Manhattan, em Anaheim em vez de LA, em Mississauga em vez do centro de Toronto."
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      { "q": "Preciso de visto para assistir ao Campeonato do Mundo 2026?", "a": "Depende da sua nacionalidade e de qual país-sede visita. Os EUA exigem um ESTA (isenção de visto) ou visto B-2, o Canadá exige um eTA ou visto, o México permite normalmente a entrada sem visto à maioria dos passaportes ocidentais até 180 dias. Se a sua equipa joga nos três países, verifique os requisitos de cada país separadamente — ser válido para um não dá entrada noutro. Trate disto cedo; o processamento abranda à medida que junho se aproxima." },
+      { "q": "Como planeio uma viagem se o grupo da minha equipa ainda não foi sorteado?", "a": "Construa uma base flexível — reserve voos reembolsáveis para um grande aeroporto central (Nova Iorque, LA, Cidade do México) e fixe o alojamento apenas para a janela do primeiro jogo. Quando o sorteio fixar as cidades, finalize o resto. A WePlanify permite-lhe esboçar vários itinerários de cenário lado a lado e escolher o que corresponde ao calendário real." },
+      { "q": "Qual é a forma mais barata de viajar entre cidades-sede?", "a": "Nos EUA, os voos domésticos costumam ser mais baratos e rápidos do que conduzir para distâncias superiores a 1000 km. Para saltos mais curtos (por exemplo, Boston a Nova Iorque), o Amtrak ou os autocarros podem bater o avião quando se inclui o tempo de aeroporto. Atravessar fronteiras para o Canadá ou o México significa quase sempre voar — reservem essas etapas cedo, pois a procura dos adeptos vai disparar os preços." },
+      { "q": "A quantos jogos devo realisticamente tentar assistir?", "a": "A maioria dos adeptos que segue uma equipa consegue 3 jogos da fase de grupos mais uma eliminatória se a equipa avançar. A viagem de estádio em estádio consome mais tempo do que as pessoas esperam — contem com pelo menos um dia inteiro de viagem entre cidades não adjacentes. Incluam dias de margem para o jet lag, os tempos de fila na segurança e as imperdíveis zonas de adeptos." },
+      { "q": "Como se dividem os custos quando se viaja com um grupo de adeptos?", "a": "Usem um gestor de orçamento partilhado desde o primeiro dia. As viagens ao Campeonato do Mundo têm estruturas de custos invulgares — bilhetes dos jogos pagos por cada um via FIFA, hotéis divididos por quarto, transporte dividido por grupo, comida dividida por refeição. A WePlanify separa estas categorias para que cada pessoa veja exatamente o que deve e a quem, sem uma maratona de contas no fim da viagem." },
+      { "q": "Quando devo reservar o alojamento nas cidades-sede?", "a": "Agora, se puder. Os hotéis das cidades-sede em Miami, Nova Iorque, LA, Toronto e Cidade do México começaram a encher para as datas dos jogos no início de 2026 e os preços já estão 3 a 5 vezes acima do normal. Olhem para fora das zonas oficiais (Airbnbs nos subúrbios, cidades vizinhas com ligações ferroviárias) e reservem opções reembolsáveis se o percurso da vossa equipa ainda não estiver definido." },
+      { "q": "Vale a pena visitar as zonas de adeptos se não tiver bilhete para um jogo?", "a": "Sim. Todas as cidades-sede têm um Festival de Adeptos oficial da FIFA com transmissões em ecrã gigante, comida e entretenimento ao vivo, além dos encontros de bairro não oficiais que muitas vezes têm melhor ambiente. A entrada é gratuita e podem ser o ponto alto para os adeptos que não conseguiram bilhetes. Adicionem-nas ao itinerário como planos alternativos." }
+    ]
+  },
+  "discover": {
+    "title": "Descubra Mais",
+    "roadTrip": { "title": "Road Trip", "desc": "Planeie uma viagem de carro com várias paragens com o grupo.", "cta": "Ler mais →" },
+    "tripWithFriends": { "title": "Viagem com Amigos", "desc": "Planeie qualquer viagem em grupo sem esforço.", "cta": "Ler mais →" },
+    "groupGuide": { "title": "Guia de Viagem em Grupo", "desc": "O guia completo, passo a passo.", "cta": "Ler o guia →" },
+    "bestApps": { "title": "Melhores Apps de Viagens em Grupo", "desc": "A nossa comparação das melhores ferramentas para viagens em grupo.", "cta": "Ler o artigo →" }
+  },
+  "cta": {
+    "title": "Construa a Sua Viagem ao Campeonato do Mundo 2026",
+    "subtitle": "Calendário, voos, hotéis, orçamento — um plano partilhado, todo o vosso grupo na mesma página.",
+    "button": "Começar a planear"
+  },
+  "jsonld": {
+    "eventName": "Campeonato do Mundo da FIFA 2026",
+    "eventDescription": "Campeonato do Mundo da FIFA 2026 — 48 seleções nacionais, 16 cidades-sede nos Estados Unidos, Canadá e México, de 11 de junho a 19 de julho de 2026. O primeiro Campeonato do Mundo coorganizado por três países.",
+    "fifaPerformer": "Seleções nacionais da FIFA",
+    "subEventName": "Jogos do Campeonato do Mundo 2026 em {city}",
+    "subEventDescription": "Jogos do Campeonato do Mundo da FIFA 2026 disputados em {city} entre 11 de junho e 19 de julho de 2026.",
+    "howToName": "Como planear uma viagem ao Campeonato do Mundo 2026 a seguir a sua equipa",
+    "howToDescription": "Fixe os jogos, construa a rota por várias cidades, divida os custos, trate dos vistos e deixe espaço para os momentos imprevistos que fazem uma viagem ao Campeonato do Mundo.",
+    "howToSteps": [
+      { "name": "Ancore a viagem nos jogos da sua equipa", "text": "Comecem pelos três jogos da fase de grupos. Fixem as cidades e as datas e depois mapeiem os intervalos entre jogos como dias de viagem. Planeiem em detalhe apenas a fase de grupos — as cidades das eliminatórias dependem dos resultados." },
+      { "name": "Decidam o nível de compromisso do grupo com uma sondagem", "text": "Nem toda a gente tem o mesmo orçamento ou tempo. Façam uma sondagem para perceber quem participa em toda a fase de grupos, quem se junta para um jogo e quem só se compromete se a equipa avançar. O resultado orienta as reservas de voos e as divisões de alojamento." },
+      { "name": "Dividam os custos por categorias desde o primeiro dia", "text": "Os bilhetes dos jogos, os voos entre cidades, os hotéis das cidades-sede, o transporte terrestre e a comida não se dividem da mesma forma. Configurem um orçamento partilhado com uma categoria para cada um, para que as contas se mantenham limpas mesmo quando a viagem dura três semanas." },
+      { "name": "Incluam dias de margem entre cidades", "text": "A viagem de estádio em estádio, o jet lag, as filas na segurança e as passagens de fronteira consomem tempo a sério. Planeiem pelo menos um dia inteiro de margem entre cidades-sede não adjacentes e um dia de descanso antes de cada jogo — o vosso eu futuro vai agradecer." }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Gotowy na kolejną podróż?",
+  "description": "Dołącz do tysięcy podróżników, którzy planują lepiej razem.",
+  "socialProof": "Dołącz do ponad 12 000 podróżników planujących mądrzejsze wyjazdy",
+  "freeNote": "Darmowa rejestracja. Bez karty kredytowej.",
+  "badges": [
+    {
+      "emoji": "📅",
+      "text": "Uruchomione w 2024 roku",
+      "backgroundColor": "#E83F28",
+      "textColor": "#FFFBF5",
+      "position": "top-left"
+    },
+    {
+      "emoji": "⭐",
+      "text": "4,8/5 satysfakcji",
+      "backgroundColor": "#61DBD5",
+      "textColor": "#001E13",
+      "position": "bottom-left"
+    },
+    {
+      "emoji": "🌍",
+      "text": "Top 12 kierunków",
+      "backgroundColor": "#FFFBF5",
+      "textColor": "#001E13",
+      "position": "top-right"
+    },
+    {
+      "emoji": "✨",
+      "text": "Ponad 500 utworzonych planów podróży",
+      "backgroundColor": "#005939",
+      "textColor": "#FFFBF5",
+      "position": "bottom-right"
+    }
+  ]
+}

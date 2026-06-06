@@ -1,0 +1,52 @@
+{
+  "copyright": "Todos los derechos reservados.",
+  "privacyPolicy": "Política de privacidad",
+  "termsOfService": "Términos del servicio",
+  "cookiePolicy": "Política de cookies",
+  "columns": {
+    "features": {
+      "title": "Funciones",
+      "planning": "Planificación (manual o con IA)",
+      "polls": "Encuestas grupales",
+      "collaboration": "Colaboración",
+      "discovery": "Descubrimiento",
+      "itinerary": "Itinerario",
+      "budget": "Presupuesto compartido",
+      "packing": "Listas de equipaje",
+      "transport": "Transporte",
+      "memories": "Recuerdos"
+    },
+    "company": {
+      "title": "Empresa",
+      "about": "Sobre nosotros",
+      "partnership": "Colaboraciones"
+    },
+    "useCases": {
+      "title": "Casos de uso",
+      "friends": "Viaje con amigos",
+      "bachelorette": "Despedida de soltera / EVJF",
+      "birthday": "Viaje de cumpleaños",
+      "family": "Viaje en familia",
+      "roadTrip": "Road trip",
+      "teamBuilding": "Team building",
+      "school": "Viaje escolar"
+    },
+    "resources": {
+      "title": "Recursos",
+      "guidePlanTrip": "Guía: planificar un viaje en grupo",
+      "destinations": "Destinos",
+      "travelGuides": "Guías de viaje",
+      "appComparison": "Comparativa de apps",
+      "events2026": "Eventos 2026 →"
+    }
+  },
+  "followUs": "Síguenos",
+  "newsletter": {
+    "title": "Recibe inspiración de viajes cada semana",
+    "description": "Consejos, joyas escondidas y trucos de viaje directos en tu bandeja de entrada.",
+    "thanks": "¡Gracias por suscribirte!",
+    "emailPlaceholder": "Tu email",
+    "subscribe": "Suscribirse"
+  },
+  "chooseLanguage": "Elegir idioma"
+}

@@ -1,0 +1,14 @@
+{
+  "copy": {
+    "placeholder": "我想在墨西哥的海滩上放松，旁边最好还有古迹遗址……",
+    "submit": "为我规划",
+    "submitting": "正在打造…",
+    "cta": "保存并邀请好友",
+    "retry": "再来一个方案",
+    "errorGeneric": "出了点问题。请重试。",
+    "errorRateLimit": "尝试次数过多。请稍等一分钟。",
+    "overline": "告诉我们你的梦想之旅",
+    "caption": "我们会在几秒内生成一份目的地预览 —— 免费，无需注册。",
+    "whatAbout": "要不试试…"
+  }
+}

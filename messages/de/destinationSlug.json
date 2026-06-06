@@ -1,0 +1,46 @@
+{
+  "home": "Startseite",
+  "destinations": "Reiseziele",
+  "daysUnit": "Tage",
+  "daysShort": "T",
+  "dayInitial": "T",
+  "perPerson": "/ Pers.",
+  "forkTrip": "Diese Reise forken",
+  "forkSubtext": "Starte deine eigene Reise auf Basis dieser Reiseroute – kostenlos, in 30 Sekunden.",
+  "itinerary": {
+    "heading": "Tag-für-Tag-Reiseroute",
+    "subheading": "{days} Tage, von morgens bis abends. Für eine Gruppe gemacht, leicht anpassbar."
+  },
+  "slot": {
+    "morning": "Vormittag",
+    "afternoon": "Nachmittag",
+    "evening": "Abend"
+  },
+  "pois": {
+    "heading": "Wohin",
+    "subheading": "Echte, geprüfte Orte. Klick auf einen, um ihn in Maps zu öffnen."
+  },
+  "budget": {
+    "heading": "Budget pro Person",
+    "subheading": "Ehrliche Schätzung vor Ort – {days} Tage.",
+    "total": "Geschätzte Summe"
+  },
+  "packing": {
+    "heading": "Pack-Essentials"
+  },
+  "season": {
+    "heading": "Beste Reisezeit"
+  },
+  "related": {
+    "heading": "Weitere Reiseziele entdecken",
+    "seeItinerary": "Reiseroute ansehen →"
+  },
+  "cta": {
+    "heading": "Erobere {city} mit deiner Crew",
+    "body": "Forke diese Reiseroute in WePlanify, lade die Gruppe ein und plant die Reise gemeinsam. Geteilte Reiseroute, Abstimmungen, geteiltes Budget – alles kostenlos.",
+    "button": "Diese Reise forken – kostenlos"
+  },
+  "jsonld": {
+    "day": "Tag"
+  }
+}

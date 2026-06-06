@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Política de Privacidade | WePlanify",
+    "description": "Saiba como a WePlanify recolhe, utiliza e protege os seus dados pessoais."
+  },
+  "title": "Política de Privacidade",
+  "lastUpdated": "Última atualização: 5 de abril de 2026",
+  "breadcrumb": {
+    "home": "Início"
+  },
+  "sections": [
+    {
+      "title": "1. Responsável pelo Tratamento de Dados",
+      "body": "A WePlanify é operada pela WePlanify SAS. Para qualquer questão relativa aos seus dados pessoais, pode contactar-nos através de privacy@weplanify.com."
+    },
+    {
+      "title": "2. Dados que Recolhemos",
+      "body": "Recolhemos os seguintes dados consoante as suas interações com os nossos serviços:",
+      "list": [
+        "Endereço de email — quando se inscreve na beta ou subscreve as notificações de lançamento.",
+        "Dados técnicos — endereço IP e informações do navegador, recolhidos automaticamente quando utiliza o nosso planeador de viagens com IA ou visita o nosso website.",
+        "Dados de utilização — análises anónimas recolhidas através de cookies (com o seu consentimento) para melhorar o nosso serviço."
+      ]
+    },
+    {
+      "title": "3. Como Utilizamos os Seus Dados",
+      "body": "Os seus dados são utilizados exclusivamente para os seguintes fins:",
+      "list": [
+        "Notificá-lo sobre o acesso à beta e os lançamentos de produto (apenas se tiver dado o seu consentimento).",
+        "Proteger os nossos serviços contra bots e abusos (através do Cloudflare Turnstile).",
+        "Analisar padrões de utilização anónimos e melhorar a experiência do utilizador."
+      ]
+    },
+    {
+      "title": "4. Base Legal (RGPD)",
+      "body": "Tratamos os seus dados pessoais com base em:",
+      "list": [
+        "O seu consentimento — para notificações de inscrição na beta e cookies de análise.",
+        "Interesse legítimo — para segurança, prevenção de bots e proteção contra fraude."
+      ]
+    },
+    {
+      "title": "5. Partilha de Dados",
+      "body": "Nunca vendemos os seus dados pessoais. Partilhamos dados com os seguintes prestadores de serviços, todos vinculados por acordos de tratamento de dados:",
+      "list": [
+        "Resend (EUA) — envio de emails transacionais (recebe o seu endereço de email).",
+        "Google Analytics através do Google Tag Manager (EUA) — análises de utilização anónimas (com o seu consentimento).",
+        "Cloudflare Turnstile (EUA) — proteção contra bots (recebe o seu endereço IP)."
+      ]
+    },
+    {
+      "title": "6. Transferências Internacionais de Dados",
+      "body": "Alguns dos nossos prestadores de serviços estão localizados nos Estados Unidos. Para essas transferências, baseamo-nos no EU-US Data Privacy Framework (decisão de adequação de julho de 2023) sempre que o prestador esteja certificado, ou nas Cláusulas Contratuais-Tipo (art. 46.º, n.º 2, alínea c) do RGPD) nos restantes casos."
+    },
+    {
+      "title": "7. Conservação dos Dados",
+      "body": "Os emails de inscrição na beta são conservados até ao lançamento da beta e até 12 meses depois, sendo então eliminados. Os dados técnicos (endereços IP) recolhidos através do planeador de viagens com IA são eliminados automaticamente após 90 dias. Os dados de análise são anonimizados e conservados por tempo indeterminado."
+    },
+    {
+      "title": "8. Os Seus Direitos",
+      "body": "Ao abrigo do RGPD, tem o direito de:",
+      "list": [
+        "Aceder aos seus dados pessoais.",
+        "Retificar dados inexatos.",
+        "Solicitar a eliminação dos seus dados.",
+        "Retirar o consentimento a qualquer momento.",
+        "Portabilidade dos dados.",
+        "Apresentar uma reclamação junto de uma autoridade de controlo (a CNIL, em França)."
+      ],
+      "footer": "Para exercer qualquer um destes direitos, contacte-nos através de privacy@weplanify.com."
+    },
+    {
+      "title": "9. Cookies e Armazenamento Local",
+      "body": "Utilizamos as seguintes tecnologias:",
+      "list": [
+        "Google Analytics (através do GTM) — análises de utilização anónimas. Duração: até 13 meses. Requer o seu consentimento.",
+        "Cloudflare Turnstile — proteção contra bots. Apenas durante a sessão. Não requer consentimento (interesse legítimo: segurança).",
+        "weplanify_consent (localStorage) — guarda a sua escolha de consentimento de cookies. Persistente. Não requer consentimento (estritamente necessário)."
+      ],
+      "footer": "Para visitantes no EEE, não são definidos cookies de análise antes de dar o seu consentimento. Pode retirar o consentimento a qualquer momento limpando o armazenamento do seu navegador."
+    },
+    {
+      "title": "10. Segurança",
+      "body": "Implementamos medidas técnicas e organizativas adequadas para proteger os seus dados pessoais contra acesso, alteração, divulgação ou destruição não autorizados."
+    },
+    {
+      "title": "11. Alterações a Esta Política",
+      "body": "Podemos atualizar esta política de privacidade periodicamente. Quaisquer alterações serão publicadas nesta página com uma data de revisão atualizada."
+    }
+  ]
+}

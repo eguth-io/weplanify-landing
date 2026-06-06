@@ -1,0 +1,52 @@
+{
+  "copyright": "Все права защищены.",
+  "privacyPolicy": "Политика конфиденциальности",
+  "termsOfService": "Условия использования",
+  "cookiePolicy": "Политика cookie",
+  "columns": {
+    "features": {
+      "title": "Функции",
+      "planning": "Планирование (вручную или ИИ)",
+      "polls": "Групповые опросы",
+      "collaboration": "Совместная работа",
+      "discovery": "Поиск активностей",
+      "itinerary": "Маршрут",
+      "budget": "Общий бюджет",
+      "packing": "Списки вещей",
+      "transport": "Транспорт",
+      "memories": "Воспоминания"
+    },
+    "company": {
+      "title": "Компания",
+      "about": "О нас",
+      "partnership": "Партнёрство"
+    },
+    "useCases": {
+      "title": "Сценарии",
+      "friends": "Поездка с друзьями",
+      "bachelorette": "Девичник / EVJF",
+      "birthday": "Поездка на день рождения",
+      "family": "Семейная поездка",
+      "roadTrip": "Автопутешествие",
+      "teamBuilding": "Тимбилдинг",
+      "school": "Школьная поездка"
+    },
+    "resources": {
+      "title": "Ресурсы",
+      "guidePlanTrip": "Гид: спланировать групповую поездку",
+      "destinations": "Направления",
+      "travelGuides": "Гиды по путешествиям",
+      "appComparison": "Сравнение приложений",
+      "events2026": "События 2026 →"
+    }
+  },
+  "followUs": "Подписывайтесь",
+  "newsletter": {
+    "title": "Получайте еженедельное вдохновение для путешествий",
+    "description": "Советы, скрытые жемчужины и лайфхаки путешествий — прямо на вашу почту.",
+    "thanks": "Спасибо за подписку!",
+    "emailPlaceholder": "Ваш email",
+    "subscribe": "Подписаться"
+  },
+  "chooseLanguage": "Выбрать язык"
+}

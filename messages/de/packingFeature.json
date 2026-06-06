@@ -1,0 +1,51 @@
+{
+  "copy": {
+    "itemsReady": "14 / 20 Dinge",
+    "readyForTrip": "bereit für die Reise",
+    "categories": [
+      {
+        "icon": "👕",
+        "title": "Kleidung",
+        "progress": 80,
+        "items": [
+          { "name": "T-Shirts (x5)", "checked": true },
+          { "name": "Hosen (x3)", "checked": true },
+          { "name": "Leichte Jacke", "checked": true },
+          { "name": "Badesachen", "checked": false }
+        ]
+      },
+      {
+        "icon": "🔌",
+        "title": "Elektronik",
+        "progress": 60,
+        "items": [
+          { "name": "Handy-Ladegerät", "checked": true },
+          { "name": "Reiseadapter", "checked": true },
+          { "name": "Powerbank", "checked": false },
+          { "name": "Kopfhörer", "checked": false }
+        ]
+      },
+      {
+        "icon": "🧴",
+        "title": "Hygieneartikel",
+        "progress": 100,
+        "items": [
+          { "name": "Zahnbürste", "checked": true },
+          { "name": "Sonnencreme", "checked": true },
+          { "name": "Shampoo", "checked": true }
+        ]
+      }
+    ],
+    "tipTitle": "Vorschlag basierend auf deiner Reise",
+    "tipText": "Die Durchschnittstemperatur in Lissabon im April liegt bei 28 °C. Denk an leichte Kleidung und Sonnencreme!",
+    "packTitle": "Pack deine Koffer mit gutem Gefühl",
+    "sharedTitle": "Wer bringt was mit? Ein für alle Mal geklärt",
+    "sharedSubtitle": "Vermeide Doppeltes, indem ihr festlegt, wer was mitbringt.",
+    "bringing": "Bringt mit:",
+    "people": [
+      { "avatar": "👩‍🎨", "name": "Marie", "items": ["Sonnencreme", "Kartenspiel", "Reiseführer"] },
+      { "avatar": "🧔", "name": "Thomas", "items": ["Reiseadapter", "Bluetooth-Lautsprecher"] },
+      { "avatar": "👱‍♀️", "name": "Emma", "items": ["Erste-Hilfe-Set", "Fernglas"] }
+    ]
+  }
+}

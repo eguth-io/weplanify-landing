@@ -1,0 +1,35 @@
+{
+  "copy": {
+    "you": "Você",
+    "brand": "WePlanify AI",
+    "chatBubbles": [
+      "Quero passar 2 semanas no Japão em abril com a minha namorada. Adoramos natureza, gastronomia e templos. Orçamento médio.",
+      "Ótima escolha! O Japão em abril é a época das cerejeiras em flor. Sugiro uma rota Tóquio — Quioto — Osaka com paragens em Nara e Hakone. Quer que lhe mostre opções de alojamento?",
+      "Sim, de preferência ryokans tradicionais, se possível",
+      "Excelente escolha! Selecionei 3 ryokans com onsen privado em Hakone e 2 machiya renovadas em Quioto. Estou também a calcular rotas com o JR Pass para otimizar as suas deslocações..."
+    ],
+    "chips": ["Adicionar uma caminhada", "Aula de sushi", "Ver JR Pass", "Ajustar orçamento"],
+    "modesTitle": "Escolha o seu estilo de planeamento",
+    "modesSubtitle": "Quer prefira controlo total ou a comodidade da IA, a WePlanify adapta-se a si.",
+    "manualTitle": "Planeamento Manual",
+    "manualSubtitle": "Controlo total sobre cada detalhe. Perfeito para viajantes que adoram criar as suas próprias aventuras.",
+    "manualSteps": [
+      { "title": "Crie a sua viagem", "description": "Defina o destino, as datas e convide os seus companheiros de viagem." },
+      { "title": "Adicione destinos", "description": "Construa o seu itinerário passo a passo com várias paragens." },
+      { "title": "Preencha cada dia", "description": "Arraste e largue atividades, restaurantes e alojamentos." },
+      { "title": "Colabore", "description": "O seu grupo adiciona ideias e vota nas opções." }
+    ],
+    "aiTitle": "Planeamento com IA",
+    "aiSubtitle": "Descreva a sua viagem de sonho e deixe a IA criar um itinerário personalizado em segundos.",
+    "aiUserMsg": "2 semanas no Japão, época das cerejeiras em flor, natureza e templos",
+    "aiAssistantMsg": "A criar o seu itinerário Tóquio → Quioto → Osaka com ryokans e visitas a templos...",
+    "aiTags": ["Itinerário instantâneo", "Sugestões inteligentes", "Otimização de rotas"],
+    "bestOfBoth": {
+      "strong": "O melhor dos dois mundos:",
+      "rest": " comece com as sugestões da IA e depois afine manualmente. Ou planeie manualmente e peça à IA para preencher as lacunas."
+    },
+    "visualTitle": "A IA visualiza a sua viagem",
+    "capabilitiesSubtitle": "Mais do que um assistente — verdadeira experiência de viagem com a força da IA.",
+    "freeNoCard": "Registo gratuito. Não é necessário cartão de crédito."
+  }
+}

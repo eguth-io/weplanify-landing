@@ -1,0 +1,14 @@
+{
+  "copy": {
+    "placeholder": "Chcę poleniuchować na meksykańskiej plaży z ruinami w pobliżu...",
+    "submit": "Zaplanuj",
+    "submitting": "Tworzymy…",
+    "cta": "Zapisz i zaproś znajomych",
+    "retry": "Inna propozycja",
+    "errorGeneric": "Coś poszło nie tak. Spróbuj ponownie.",
+    "errorRateLimit": "Zbyt wiele prób. Odczekaj chwilę.",
+    "overline": "Opowiedz nam o swojej wymarzonej podróży",
+    "caption": "W kilka sekund wygenerujemy podgląd kierunku — za darmo, bez rejestracji.",
+    "whatAbout": "A może…"
+  }
+}

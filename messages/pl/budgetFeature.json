@@ -1,0 +1,39 @@
+{
+  "copy": {
+    "paidBy": "Zapłacił(a)",
+    "toReceive": "do otrzymania",
+    "owes": "jest winien(na)",
+    "total": "Razem",
+    "pieLabels": {
+      "accommodation": "Nocleg",
+      "restaurants": "Restauracje",
+      "activities": "Atrakcje",
+      "transport": "Transport"
+    },
+    "liveSplitTitle": "Wypróbuj: dodaj wydatek",
+    "liveSplitSubtitle": "Wyjazd do Lizbony — 4 znajomych",
+    "quickAdd": "Szybkie dodawanie",
+    "recentExpenses": "Ostatnie wydatki",
+    "whoOwesWhat": "Kto komu ile jest winien",
+    "toSettleUp": "Do rozliczenia",
+    "freeNoCard": "Darmowa rejestracja. Bez karty kredytowej.",
+    "tryItHint": "👆 Kliknij przycisk, aby dodać wydatek i zobaczyć, jak salda aktualizują się w czasie rzeczywistym.",
+    "participants": [
+      { "name": "Marie", "avatar": "👩‍🎨" },
+      { "name": "Thomas", "avatar": "🧔" },
+      { "name": "Emma", "avatar": "👱‍♀️" },
+      { "name": "Lucas", "avatar": "🧑‍💻" }
+    ],
+    "expenses": [
+      { "name": "Kolacja w restauracji", "amount": 156, "paidBy": "Marie" },
+      { "name": "Wynajem samochodu", "amount": 320, "paidBy": "Thomas" },
+      { "name": "Bilety do muzeum", "amount": 84, "paidBy": "Emma" }
+    ],
+    "presets": [
+      { "name": "Kolacja", "amount": 80, "emoji": "🍝" },
+      { "name": "Taksówka", "amount": 24, "emoji": "🚕" },
+      { "name": "Zwiedzanie z przewodnikiem", "amount": 60, "emoji": "🎨" },
+      { "name": "Brunch", "amount": 48, "emoji": "🥐" }
+    ]
+  }
+}

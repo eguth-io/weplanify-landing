@@ -1,0 +1,65 @@
+{
+  "breadcrumb": {
+    "home": "Home",
+    "travelGuides": "Guide di viaggio"
+  },
+  "jsonld": {
+    "touristType": "Viaggiatore per piacere"
+  },
+  "hero": {
+    "titleSuffix": "guida di viaggio",
+    "perDay": " /giorno",
+    "cta": "Organizza il mio viaggio",
+    "ctaNote": "Costruisci il tuo itinerario con il tuo gruppo — gratis, 30 secondi."
+  },
+  "quickFacts": {
+    "heading": "Dati essenziali",
+    "capital": "Capitale",
+    "language": "Lingua",
+    "currency": "Valuta",
+    "timezone": "Fuso orario",
+    "plug": "Presa",
+    "driving": "Guida",
+    "driveLeft": "A sinistra",
+    "driveRight": "A destra",
+    "visa": "Visto"
+  },
+  "bestSeason": {
+    "heading": "Quando andare",
+    "subtitle": "Tre finestre da conoscere: la migliore, quella intermedia e quella da evitare.",
+    "best": "Finestra migliore",
+    "shoulder": "Intermedia",
+    "avoid": "Da evitare"
+  },
+  "mustSee": {
+    "heading": "Luoghi imperdibili",
+    "subtitle": "Posti che da soli giustificano il viaggio. Tocca per aprire su Maps."
+  },
+  "specialties": {
+    "heading": "Specialità da provare",
+    "subtitle": "Cibo, bevande ed esperienze che questo paese fa meglio di chiunque altro."
+  },
+  "regions": {
+    "heading": "Regioni da conoscere",
+    "subtitle": "Per impostare il tuo viaggio in base al tempo che hai e a ciò che cerchi."
+  },
+  "itineraries": {
+    "heading": "Itinerari suggeriti",
+    "subtitle": "Tre durate, a seconda del tempo. Copia uno qualsiasi in WePlanify.",
+    "daysSuffix": "g"
+  },
+  "budget": {
+    "heading": "Budget giornaliero",
+    "subtitle": "A persona, voli esclusi. Tre livelli di comfort.",
+    "perDay": "/giorno"
+  },
+  "tips": {
+    "heading": "Cosa fare e non fare a livello culturale",
+    "subtitle": "Piccole mosse che contano — e quelle che mettono tutti a disagio."
+  },
+  "cta": {
+    "heading": "Organizza il tuo viaggio in {country} con il tuo gruppo",
+    "body": "Porta questa guida in WePlanify, invita il gruppo e costruite insieme il viaggio. Mappa condivisa, sondaggi, budget condiviso — tutto gratis.",
+    "button": "Inizia a pianificare — gratis"
+  }
+}

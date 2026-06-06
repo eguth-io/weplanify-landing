@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Geburtstagsreise-Planer – Plane die ultimative Geburtstagsauszeit",
+    "description": "Plane deine Geburtstagsreise mit WePlanify, dem kostenlosen Geburtstagsreise-Planer. Stimmt Termine mit deinen Freunden ab, votet über das Reiseziel, teilt das Budget und baut eine Tag-für-Tag-Reiseroute – perfekt für runde Geburtstage wie den 30., 40., 50. oder jede Geburtstagsauszeit."
+  },
+  "readTime": "9 Min. Lesezeit",
+  "hero": {
+    "tag": "Geburtstagsreise-Planer",
+    "title": "Plane die ultimative\nGeburtstagsreise",
+    "description": "Du wirst 30, 40, 50 – oder willst deinen Geburtstag einfach an einem unvergesslichen Ort verbringen? WePlanify ist der kostenlose Geburtstagsreise-Planer, der aus „wir sollten unbedingt zu deinem Geburtstag verreisen“ eine echte, gebuchte Reise macht.",
+    "cta": "Kostenlos planen"
+  },
+  "guideIntro": {
+    "title": "Der ultimative Guide für die Planung einer Geburtstagsreise",
+    "paragraphs": [
+      "Eine Geburtstagsreise ist eines der besten Geschenke, die du dir – oder jemandem, den du liebst – machen kannst. Ob runder Geburtstag (30., 40., 50., 60.) oder einfach eine Wochenend-Auszeit, um ein weiteres Jahr zu feiern: mit den Menschen wegzufahren, die zählen, schlägt jede Feier zu Hause. Aber eine Geburtstagsreise für eine Gruppe von 4 bis 15 Freunden zu organisieren bringt ihr eigenes leises Chaos mit sich: einen passenden Termin finden, sich auf ein Reiseziel einigen, ein Airbnb wählen, das sich alle leisten können, und herausfinden, wer eigentlich die Restaurantreservierungen macht.",
+      "Die besten Geburtstagsreisen haben drei Dinge gemeinsam: Sie spiegeln den tatsächlichen Geschmack des Geburtstagskindes wider (nicht das, was die Gruppe meint, dass es wollen sollte), sie respektieren das Budget aller, sodass niemand eine Woche vorher abspringt, und sie haben gerade genug Struktur, damit die Gruppe nicht um 20 Uhr an einer Straßenecke steht und darüber streitet, wo gegessen wird. Das Ziel ist nicht, jede Stunde zu planen – sondern die Reibung zu beseitigen, damit die eigentliche Reise spontan sein kann.",
+      "Genau dafür wurde WePlanify gebaut. Ein gemeinsamer Raum, in dem deine Crew über das Reiseziel abstimmen, einen Termin festlegen, eine gemeinsame Kasse verfolgen und gemeinsam eine Tag-für-Tag-Reiseroute bauen kann. Ob das Geburtstagskind seine eigene Reise mit Freunden organisiert oder ein Partner heimlich eine Überraschungs-Auszeit plant – alles liegt an einem Ort: keine verstreuten WhatsApp-Threads, keine Tabellen, kein Hinterherlaufen wegen 40 € drei Wochen später."
+    ]
+  },
+  "painPoints": {
+    "title": "Warum die Planung einer Geburtstagsreise immer verrutscht",
+    "subtitle": "Du hast es vor Monaten gesagt: „Lass uns zu deinem 30. wegfahren.“ Jetzt sind es noch drei Wochen und nichts ist gebucht.",
+    "items": [
+      {
+        "emoji": "📅",
+        "title": "Niemand legt sich auf einen Termin fest",
+        "description": "Du wirfst ein Wochenende im Oktober in den Raum. Drei Freunde sagen „vielleicht“, zwei sagen „lass mich checken“, und einer meldet sich gar nicht. Bis alle geantwortet haben, haben sich die Flüge verdoppelt und dein Lieblings-Airbnb ist weg. Die Terminabstimmungen von WePlanify geben der Gruppe eine klare Frist zum Abstimmen, und das Ergebnis ist sofort da – kein Hinterherlaufen, keine Nachfass-DMs, einfach ein Termin, auf den sich alle geeinigt haben."
+      },
+      {
+        "emoji": "🗺️",
+        "title": "Endlose Reiseziel-Debatte",
+        "description": "Lissabon? Marrakesch? Eine Hütte zwei Stunden entfernt? Alle haben eine Meinung und der Gruppenchat wird zu einem Strom aus TikToks und Instagram-Reels. Zwei Wochen vergehen und ihr habt immer noch kein Reiseziel. Starte eine einzige Abstimmung mit drei bis fünf echten Optionen, lass alle abstimmen und buch den Gewinner. Entscheidung in 48 Stunden statt einem Monat."
+      },
+      {
+        "emoji": "💸",
+        "title": "Unangenehme Geld-Gespräche",
+        "description": "Zahlt das Geburtstagskind? Teilen wir seinen Anteil auf? Wer übernimmt das Abendessen? Eine Freundin schickt 120 € per Venmo, eine andere zahlt die Airbnb-Anzahlung, eine dritte kauft die Torte – und drei Wochen nach der Reise versuchst du immer noch zu klären, wer wem was schuldet. Die gemeinsame Kasse in WePlanify erfasst jede Ausgabe in Echtzeit und sagt dir sofort, wer wem etwas schuldet."
+      },
+      {
+        "emoji": "🍽️",
+        "title": "Chaos am Tag selbst",
+        "description": "Du kommst am Freitagabend ohne Tischreservierung an. Am Samstagnachmittag weiß niemand, wann das Boot ablegt. Beim Sonntags-Brunch ist die halbe Gruppe verkatert und die andere Hälfte will die Wanderung machen, die du nicht gebucht hast. Eine geteilte Tag-für-Tag-Reiseroute bedeutet, dass alle aufwachen und den Plan kennen – und du kannst trotzdem Freiraum für Spontaneität lassen."
+      }
+    ]
+  },
+  "features": {
+    "title": "WePlanify macht die Planung der Geburtstagsreise mühelos",
+    "subtitle": "Alles, was du brauchst, um eine Geburtstagsauszeit mit Freunden zu planen – an einem Ort, mit null Stress.",
+    "items": [
+      {
+        "emoji": "🗳️",
+        "title": "Abstimmungen für Termine & Reiseziele",
+        "description": "Schluss mit der endlosen „wann passt es allen“-Schleife. Erstelle eine Abstimmung mit den drei möglichen Wochenenden, teil sie mit der Gruppe und sieh zu, wie die Antworten reinkommen. Genauso fürs Reiseziel – drei bis fünf Optionen, ein klarer Gewinner. Anonymes Abstimmen bedeutet, dass selbst die ruhigen Freunde mitreden. Die tatsächlichen Vorlieben der Gruppe, nicht nur die lauteste Stimme im Chat."
+      },
+      {
+        "emoji": "💰",
+        "title": "Gemeinsame Geburtstagskasse",
+        "description": "Lege ein gemeinsames Budget fest, erfasse jede Ausgabe, sobald sie anfällt, und lass WePlanify berechnen, wer wem was schuldet. Entscheidet vorab, ob das Geburtstagskind für sich selbst zahlt oder die Gruppe seinen Anteil übernimmt – beides funktioniert. Die Airbnb-Anzahlung, die Restaurantrechnung, die Torte, die Flasche Champagner: alles erfasst, alles mit einem Tipp am Ende der Reise abgerechnet."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Tag-für-Tag-Reiseroute",
+        "description": "Baut einen gemeinsamen Zeitplan fürs ganze Wochenende – Freitags-Abendessen, Samstags-Brunch, die Bootstour, das Überraschungsrestaurant, die Sonntagmorgen-Wanderung. Füge Zeiten, Orte, Notizen, Links hinzu. Alle wachen auf und wissen, was als Nächstes kommt, aber nichts ist in Stein gemeißelt – Drag & Drop, wenn sich Pläne ändern. Die Reiseroute ist die einzige Quelle der Wahrheit, sodass niemand fragt „warte, wo treffen wir uns nochmal?“."
+      },
+      {
+        "emoji": "🎁",
+        "title": "Privater Modus für Überraschungen",
+        "description": "Planst du eine Überraschungs-Geburtstagsreise für deinen Partner, ein Elternteil oder deinen besten Freund? Erstelle eine private Planungsgruppe ohne sie. Stimmt Termine ab, bucht das Airbnb, plant Aktivitäten – alles komplett vor dem Geburtstagskind verborgen. Wenn ihr bereit seid, enthüllt ihr die Reise und fügt es dem Raum hinzu, damit es alles sehen kann, was für es organisiert wurde."
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Ideen für die Geburtstagsreise nach Stil",
+    "subtitle": "Fünf Stile für die Geburtstagsauszeit, passend zum Geburtstagskind – und zum Budget.",
+    "items": [
+      {
+        "emoji": "🌆",
+        "title": "Städtetrip mit Freunden",
+        "description": "Lissabon, Barcelona, Kopenhagen, Mexiko-Stadt – wähl eine Stadt mit gutem Essen, gut zu Fuß erkundbaren Vierteln und ein paar Rooftop-Bars. Perfekt für ein 30.-Geburtstags-Wochenende mit 6 bis 10 Freunden. Bucht eine zentrale Wohnung, plant zwei große Gruppenabendessen und lasst die Nachmittage frei für das, worauf die Gruppe Lust hat. Einfache Logistik, viel Energie, fotogen."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Strand- & Poolhaus",
+        "description": "Miete eine Villa mit Pool in Südfrankreich, an der Costa Brava, in Tulum oder Apulien. Faule Vormittage, lange Mittagessen, Sonnenuntergangs-Cocktails. Funktioniert für jedes Alter, ist aber besonders gut für den 35. bis 50. Geburtstag, wenn die Gruppe mehr entspannen als feiern will. Engagiert für einen Abend einen Privatkoch, damit es sich nach einer richtigen Feier anfühlt."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Wochenende im Weinland",
+        "description": "Toskana, Bordeaux, das Douro-Tal, Napa, Mendoza – eine Reise ins Weinland ist der Klassiker zum 40. Geburtstag. Übernachtet in einem Agriturismo oder auf einem Boutique-Weingut, bucht eine Verkostung pro Tag und genießt lange Abendessen. Kleinere Gruppen (4 bis 8) funktionieren am besten. Nutzt die gemeinsame Kasse für Verkostungen und Abendessen, denn die Rechnungen summieren sich schnell."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Abenteuer-Auszeit",
+        "description": "Wandern in den Dolomiten, ein Roadtrip durch Island, Skifahren in Chamonix, Surfen in Portugal. Für das aktive Geburtstagskind, das lieber einen Gipfel besteigt, als Kerzen auszublasen. Wählt eine herausragende Challenge für die Reise – einen mehrtägigen Trek, einen Heliski-Tag, ein Surfcamp – und baut den Rest des Wochenendes um Erholung und gutes Essen herum."
+      },
+      {
+        "emoji": "🎲",
+        "title": "Vegas / Großstadt-Bash",
+        "description": "Las Vegas, Miami, Ibiza, Berlin – die „volle Pulle“-Geburtstagsreise. Nachtclubs, Dayclubs, schicke Abendessen, lange Nächte. Funktioniert am besten für den 21., 25. und 30. Geburtstag oder jeden Anlass, bei dem die Gruppe Lust auf eine richtige Sause hat. Bucht alles vorab (Tische, Transfers, die Suite), denn die Logistik am Tag selbst in einer Großstadt-Partymetropole frisst euch bei lebendigem Leib."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Wann mit der Planung beginnen",
+    "subtitle": "Ein einfacher Zeitplan, um deine Geburtstagsreise ohne Last-Minute-Panik festzuzurren.",
+    "milestones": [
+      {
+        "time": "4 bis 6 Monate vorher",
+        "title": "Termin & Gästeliste festlegen",
+        "description": "Befrage die Gruppe nach verfügbaren Wochenenden. Legt endgültig fest, wer dabei ist. Erstelle deine WePlanify-Reise und lade alle ein – auch das Geburtstagskind, wenn es keine Überraschung ist."
+      },
+      {
+        "time": "3 Monate vorher",
+        "title": "Reiseziel wählen & buchen",
+        "description": "Stimmt über das Reiseziel ab. Bucht Flüge und Unterkunft, solange die Preise noch vernünftig sind. Richtet die gemeinsame Kasse mit den ersten Anzahlungen ein."
+      },
+      {
+        "time": "1 Monat vorher",
+        "title": "Aktivitäten & Reservierungen planen",
+        "description": "Stimmt über Aktivitäten ab. Bucht Restaurants (besonders das große Geburtstagsabendessen). Baut die Tag-für-Tag-Reiseroute. Bestellt Deko, Geschenke oder passende Outfits."
+      },
+      {
+        "time": "1 Woche vorher",
+        "title": "Alles bestätigen",
+        "description": "Bestätigt alle Reservierungen erneut. Klärt offene Beiträge zur Kasse. Teil die finale Reiseroute mit der Gruppe. Vergewissert euch, dass jemand Kerzen mitbringt."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Checkliste für die Geburtstagsreise",
+    "items": [
+      "Den Termin mit dem Geburtstagskind bestätigen (oder geheim halten, falls Überraschung)",
+      "Die Gruppe nach verfügbaren Wochenenden befragen",
+      "Über ein Reiseziel abstimmen, das sich alle leisten können",
+      "Unterkunft und Transport buchen",
+      "Eine gemeinsame Kasse festlegen und klären, wie der Anteil des Geburtstagskindes gehandhabt wird",
+      "Das große Geburtstagsabendessen rechtzeitig reservieren",
+      "Eine oder zwei herausragende Aktivitäten planen (Boot, Spa, Verkostung, Wanderung)",
+      "Die Tag-für-Tag-Reiseroute in WePlanify bauen",
+      "Die Torte, Kerzen oder kleine Überraschungen bestellen",
+      "Eine Woche vorher alles bestätigen und den finalen Plan teilen"
+    ]
+  },
+  "testimonial": {
+    "quote": "Ich bin letztes Frühjahr 40 geworden und ein paar von uns sind übers Wochenende in die Toskana gefahren. Die Villa buchen, die Weintour aufteilen, die Abendessen-Kasse, die Flughafentransfers – wir haben alles in WePlanify gemacht und niemand musste hinterher Geld eintreiben. Viel besser als das WhatsApp-Chaos jedes früheren Geburtstags-Wochenendes.",
+    "author": "Sophie L.",
+    "role": "Organisatorin der Geburtstagsreise, London"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "q": "Ist WePlanify für die Planung einer Geburtstagsreise kostenlos?",
+        "a": "Ja, zu 100 % kostenlos. Erstelle eine Reise, lade die Gruppe ein, führt Abstimmungen durch, baut die Reiseroute, verfolgt die gemeinsame Kasse – keine Testphase, keine Kreditkarte, keine versteckten Gebühren. Der gesamte Geburtstagsreise-Planer funktioniert, ohne dass du etwas zahlst."
+      },
+      {
+        "q": "Kann ich eine Überraschungs-Geburtstagsreise planen, ohne dass das Geburtstagskind es sieht?",
+        "a": "Ja. Erstelle eine private Planungsgruppe und lade das Geburtstagskind nicht ein. Stimmt Termine ab, votet über das Reiseziel, bucht das Airbnb und plant Aktivitäten – alles komplett verborgen. Wenn ihr zur Enthüllung bereit seid, könnt ihr es der Reise hinzufügen, damit es die komplette Reiseroute und alles Geplante sieht."
+      },
+      {
+        "q": "Wie weit im Voraus sollten wir mit der Planung einer Geburtstagsreise beginnen?",
+        "a": "Vier bis sechs Monate sind ideal für runde Geburtstage (30., 40., 50.), bei denen du ein echtes Reiseziel willst. Zwei bis drei Monate reichen für lokale Wochenenden. Je früher der Termin feststeht, desto günstiger die Flüge und desto besser die Unterkunftsoptionen. Starte eine WePlanify-Reise, sobald die Idee entsteht – auch wenn die Details noch vage sind."
+      },
+      {
+        "q": "Was ist ein gutes Budget für eine Geburtstagsreise?",
+        "a": "Das hängt vom Reiseziel und der Gruppe ab. Ein Wochenende in einer europäischen Stadt kostet typischerweise 250 bis 500 € pro Person, alles inklusive. Eine Villa in der Toskana oder in Südfrankreich für einen 40. kann 600 bis 1200 € pro Person kosten. Der Schlüssel ist, sich vorab auf ein Zielbudget zu einigen, damit niemand überrascht wird – die gemeinsame Kasse in WePlanify hält alle ehrlich, während die Ausgaben reinkommen."
+      },
+      {
+        "q": "Sollte das Geburtstagskind für sich selbst zahlen?",
+        "a": "Beides funktioniert und es ist eine Gruppenentscheidung. Viele Gruppen übernehmen den Anteil des Geburtstagskindes am Airbnb und am großen Abendessen als Geschenk; das Geburtstagskind zahlt seinen eigenen Flug und lockere Mahlzeiten. Mit WePlanify kannst du einzelne Ausgaben als „Gruppe übernimmt“ oder „Einzelner zahlt“ markieren, sodass die Aufteilung automatisch ist. Was auch immer ihr entscheidet, einigt euch früh darauf – unangenehme Geld-Gespräche mitten in der Reise sind das Schlimmste."
+      },
+      {
+        "q": "Wie entscheiden wir über Aktivitäten, wenn alle etwas anderes wollen?",
+        "a": "Starte eine Abstimmung mit drei bis fünf konkreten Optionen für jeden großen Programmpunkt (Samstagnachmittag, Sonntagmorgen usw.). Lass die Gruppe abstimmen und buch den Gewinner. Das vermeidet sowohl das Patt-Problem (niemand entscheidet) als auch das Groll-Problem (eine Person entscheidet alles). Außerdem gibt es den ruhigeren Freunden ein echtes Mitspracherecht."
+      },
+      {
+        "q": "Was, wenn manche Freunde nur einen Teil der Reise dabei sein können?",
+        "a": "Völlig in Ordnung – und WePlanify geht sauber damit um. Markiere die tatsächlichen Daten jedes Teilnehmers, und wenn du Ausgaben erfasst, kannst du angeben, wer beteiligt war. Die gemeinsame Kasse berechnet automatisch neu, sodass die Leute nur für die Nächte und Aktivitäten zahlen, bei denen sie wirklich dabei waren. Keine Tabelle, keine unangenehmen „ich war beim Abendessen nicht dabei“-Verhandlungen."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Bereit, die beste Geburtstagsreise aller Zeiten zu planen?",
+    "description": "Lass Geburtstagsreisen nicht länger von „das sollten wir unbedingt machen“ ins Nichts verrutschen. Starte deine WePlanify-Reise in 30 Sekunden – kostenlos.",
+    "button": "Loslegen – kostenlos"
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "Geburtstagsreise"
+  },
+  "destinationsCrossLink": {
+    "tag": "Reiseziel-Inspiration",
+    "heading": "Reiseziele, die sich super für eine Geburtstagsreise eignen",
+    "cards": {
+      "tuscany": {
+        "title": "Toskana · 5 Tage",
+        "desc": "Der Klassiker zum 40. Villa mit Pool, Weinproben, Abendessen, die stundenlang dauern. Kleine Gruppe, große Atmosphäre."
+      },
+      "lisbon": {
+        "title": "Lissabon · 3 Tage",
+        "desc": "Perfekt für einen 30. Rooftops, Food-Touren, gut zu Fuß erkundbare Viertel, Nachtleben ohne Vegas-Overkill."
+      },
+      "andalusia": {
+        "title": "Andalusien · 6 Tage",
+        "desc": "Sevilla, Granada, Córdoba. Patios, Flamenco, späte Tapas. Ein toller 50. mit einer Portion Kultur dabei."
+      }
+    },
+    "cardLink": "Reiseroute ansehen →",
+    "allLink": "Alle Reiseziele ansehen →"
+  },
+  "discoverMore": {
+    "heading": "Mehr entdecken",
+    "friends": {
+      "title": "Reise mit Freunden",
+      "desc": "Plane mit WePlanify mühelos eine Gruppenreise mit Freunden.",
+      "link": "Weiterlesen →"
+    },
+    "bachelorette": {
+      "title": "Junggesellinnenabschied / JGA",
+      "desc": "Plane einen Überraschungs-Junggesellinnenabschied, ohne dass die Braut etwas mitbekommt.",
+      "link": "Zur Seite →"
+    },
+    "guide": {
+      "title": "Guide: So planst du eine Gruppenreise",
+      "desc": "Der komplette Schritt-für-Schritt-Guide für die Planung einer gelungenen Gruppenreise.",
+      "link": "Guide lesen →"
+    }
+  }
+}

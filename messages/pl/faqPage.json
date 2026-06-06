@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Najczęściej zadawane pytania (FAQ)",
+    "description": "Znajdź odpowiedzi na swoje pytania o WePlanify. Jak zaplanować wyjazd grupowy, funkcje, ceny i wsparcie."
+  },
+  "breadcrumb": {
+    "home": "Strona główna"
+  },
+  "subtitle": "Szybko znajdź odpowiedzi na najczęściej zadawane pytania.",
+  "empty": "Obecnie brak dostępnych pytań i odpowiedzi.",
+  "ctaTitle": "Masz jeszcze pytania?",
+  "ctaSubtitle": "Nasz zespół jest tu, by pomóc Ci zaplanować idealną podróż.",
+  "ctaButton": "Skontaktuj się z nami",
+  "defaultFaq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "question": "Czym jest WePlanify?",
+        "answer": "WePlanify to darmowy planer wyjazdów grupowych działający w przeglądarce. Łączy wspólny plan podróży, ankiety grupowe, narzędzie do śledzenia wspólnego budżetu z automatycznym rozliczaniem, wspólne listy rzeczy do spakowania oraz asystenta AI — wszystko w jednym dwujęzycznym (angielski/francuski) narzędziu."
+      },
+      {
+        "question": "Czy WePlanify jest darmowe?",
+        "answer": "Tak. Darmowy plan obejmuje większość realnych wyjazdów grupowych: wspólne plany podróży, ankiety, śledzenie wspólnego budżetu, listy rzeczy do spakowania i dostęp do asystenta AI. Plany premium istnieją dla wyższych limitów (więcej podróży, więcej zapytań do AI, dłuższa historia). Rejestracja nie wymaga karty kredytowej."
+      },
+      {
+        "question": "Jak działa WePlanify?",
+        "answer": "Utwórz podróż w kilka sekund, zaproś znajomych e-mailem lub linkiem do udostępnienia i zacznijcie planować razem. Każdy może edytować plan podróży, utworzyć ankietę, dodać wydatek lub odhaczyć rzecz na liście. Asystent AI może na podstawie prostego opisu podróży naszkicować pierwszą wersję."
+      },
+      {
+        "question": "Czy muszę pobierać aplikację?",
+        "answer": "Nie. WePlanify działa w każdej nowoczesnej przeglądarce na telefonie, tablecie lub komputerze. Nie trzeba niczego pobierać z App Store ani Google Play."
+      },
+      {
+        "question": "Ile osób może dołączyć do podróży?",
+        "answer": "WePlanify jest stworzone dla grup od 2 do ponad 50 uczestników. Dla typowych rozmiarów grup nie ma sztywnego limitu."
+      },
+      {
+        "question": "Jak działają ankiety grupowe?",
+        "answer": "Każdy uczestnik podróży może w kilka sekund utworzyć ankietę: jedno- lub wielokrotnego wyboru, z opcjonalnym trybem anonimowego głosowania (przydatnym przy wyborach związanych z budżetem). Wyniki są widoczne w czasie rzeczywistym z podziałem na poszczególne opcje. Ankiety można powiązać z elementami planu podróży („wybierz restaurację na dzień 2”)."
+      },
+      {
+        "question": "Jak działa wspólny budżet?",
+        "answer": "Każdy uczestnik dodaje wydatek z płatnikiem, kwotą, walutą i regułą podziału (po równo, niestandardowe udziały lub wykluczenie konkretnych osób). WePlanify na bieżąco wylicza, kto komu jest winien, w dowolnej walucie z automatycznym przeliczaniem. Pozycje opłacone z góry (zaliczki, rezerwacje grupowe) są śledzone oddzielnie od wydatków na miejscu."
+      },
+      {
+        "question": "Jak WePlanify wypada w porównaniu z Wanderlog?",
+        "answer": "Wanderlog to dobre narzędzie do planów podróży, ale nie ma wbudowanych ankiet grupowych ani narzędzia do śledzenia wspólnego budżetu w stylu rozliczeń. WePlanify jest z założenia stworzone przede wszystkim dla grup, w pełni dwujęzyczne (angielski/francuski) i natywnie obejmuje ankiety oraz wspólny budżet. Oba są darmowe w planie startowym."
+      },
+      {
+        "question": "Jak WePlanify wypada w porównaniu ze Splitwise?",
+        "answer": "Splitwise to świetne narzędzie do dzielenia wydatków, ale nie jest planerem podróży. WePlanify obejmuje całą podróż (plan podróży, ankiety, pakowanie, budżet) i zawiera narzędzie do śledzenia budżetu w stylu Splitwise dla wspólnych wydatków podczas wyjazdu."
+      },
+      {
+        "question": "Czy mogę zaplanować wieczór panieński lub kawalerski w WePlanify?",
+        "answer": "Tak — to jedno z najczęstszych zastosowań. Ankiety rozwiązują kwestię „kto wybiera atrakcję”, wspólny budżet śledzi, kto za co zapłacił (w tym opłacone z góry zaliczki), a listy rzeczy do spakowania zapobiegają duplikatom sprzętu. Anonimowe głosowanie przydaje się, gdy budżety w grupie są różne."
+      },
+      {
+        "question": "Czy WePlanify sprawdza się dla podróżujących solo?",
+        "answer": "WePlanify można używać w pojedynkę, ale produkt jest zoptymalizowany pod grupy. Podróżujący solo zyskają więcej dzięki TripIt (śledzenie rezerwacji) lub Stippl (dziennik podróży solo). WePlanify błyszczy, gdy do podróży dołącza druga osoba."
+      },
+      {
+        "question": "Jakie języki obsługuje WePlanify?",
+        "answer": "Angielski i francuski, w pełni przetłumaczone od początku do końca (adresy URL, treści, e-maile, odpowiedzi asystenta AI). Kolejne języki są w planach."
+      },
+      {
+        "question": "Jak działa asystent AI?",
+        "answer": "Opisz podróż zwykłym językiem („4 znajomych, długi weekend w Lizbonie, nacisk na jedzenie, budżet 500 € na osobę”), a asystent zaproponuje kierunki, plany podróży dzień po dniu, atrakcje i szacunki budżetu. Dostosowuje się do ankiet grupy i ograniczeń budżetowych w miarę rozwoju planu."
+      },
+      {
+        "question": "W jakich krajach dostępne jest WePlanify?",
+        "answer": "WePlanify działa na całym świecie i obejmuje kierunki w ponad 190 krajach."
+      },
+      {
+        "question": "Czy WePlanify jest zgodne z RODO?",
+        "answer": "Tak. WePlanify jest tworzone w Europie i zgodne z RODO od pierwszego dnia. Użytkownicy mogą eksportować i usuwać swoje dane z ustawień konta."
+      },
+      {
+        "question": "Jak skontaktować się z pomocą techniczną?",
+        "answer": "Możesz się z nami skontaktować przez stronę kontaktową lub mailowo pod adresem contact@weplanify.com."
+      }
+    ]
+  }
+}

@@ -127,7 +127,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
 
   const metadata = await generateMetadataFromSanity(locale, `/features/${slug}`);
-  const override = seoOverrides[slug]?.[locale];
+  // SEO overrides only exist in en/fr; new locales fall back to the en copy.
+  const override = seoOverrides[slug]?.[locale] ?? seoOverrides[slug]?.en;
 
   // Memories page is fully hardcoded — skip Sanity
   if (slug === "memories") {
@@ -142,11 +143,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  // Fetch SEO data from Sanity
-  const data = await client.fetch<FeaturePageData | null>(featurePageQuery, {
+  // Fetch SEO data from Sanity (fall back to en content for locales not authored in Sanity)
+  let data = await client.fetch<FeaturePageData | null>(featurePageQuery, {
     locale,
     slug,
   });
+  if (!data && locale !== "en") {
+    data = await client.fetch<FeaturePageData | null>(featurePageQuery, { locale: "en", slug });
+  }
 
   if (!data) {
     return { title: "Feature Not Found" };
@@ -196,11 +200,14 @@ export default async function FeaturePage({ params }: Props) {
     );
   }
 
-  // Fetch feature page data from Sanity
-  const data = await client.fetch<FeaturePageData | null>(featurePageQuery, {
+  // Fetch feature page data from Sanity (fall back to en for locales not authored in Sanity)
+  let data = await client.fetch<FeaturePageData | null>(featurePageQuery, {
     locale,
     slug,
   });
+  if (!data && locale !== "en") {
+    data = await client.fetch<FeaturePageData | null>(featurePageQuery, { locale: "en", slug });
+  }
 
   if (!data) {
     notFound();

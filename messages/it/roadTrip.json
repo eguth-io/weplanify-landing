@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Come organizzare un viaggio on the road con gli amici — Pianificatore di percorsi di gruppo | WePlanify",
+    "description": "Organizza il tuo viaggio on the road di gruppo con WePlanify. Pianificazione collaborativa del percorso, budget condivisi per la benzina, coordinamento dei bagagli e sondaggi di gruppo per ogni tappa del tragitto."
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "hero": {
+    "title": "La strada aperta, il tuo gruppo, zero stress",
+    "readTime": "7 min di lettura"
+  },
+  "problem": {
+    "p1": "I viaggi on the road sembrano semplici — basta salire in auto e guidare. Ma con un gruppo, ogni decisione si moltiplica. Quale percorso? Quante tappe? Chi guida e quando? Dove dormiamo? Chi paga la benzina? Chi porta la borsa frigo? Quando hai coordinato cinque persone su sei giorni, hai inviato 300 messaggi e nessuno è sicuro di quale sia il piano.",
+    "p2": "WePlanify trasforma il caos in una tabella di marcia condivisa — un unico posto per il percorso, il budget e la lista per i bagagli."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "anatomy": "Anatomia di un viaggio on the road di gruppo",
+    "planning": "Pianificare il percorso passo dopo passo",
+    "budget": "Consigli sul budget per i viaggi on the road di gruppo",
+    "faq": "Domande frequenti"
+  },
+  "anatomy": {
+    "title": "Anatomia di un viaggio on the road di gruppo",
+    "subtitle": "Ogni viaggio on the road ha gli stessi elementi costitutivi. Ecco come azzeccarli ciascuno con un gruppo.",
+    "items": [
+      { "stop": "Il percorso", "desc": "Vota prima la grande decisione: panoramico o veloce? Costiero o nell'entroterra? Crea un sondaggio, risolvilo e costruisci il percorso in un itinerario condiviso in cui tutti possano proporre tappe. Fissa presto i punti per il pernottamento — la strada tra di essi resta flessibile.", "link": "/features/polls" },
+      { "stop": "Le tappe", "desc": "È qui che i viaggi on the road diventano memorabili. Lascia che tutti propongano le loro tappe imperdibili, poi curatele insieme. La regola 70/30 funziona alla perfezione qui: 70% tappe pianificate, 30% spontanee. Aggiungi ogni tappa all'itinerario condiviso con indirizzi e note così chi guida non deve armeggiare col telefono.", "link": "/features/planning" },
+      { "stop": "I soldi", "desc": "Benzina, pedaggi, cibo, alloggio, attività. In un viaggio on the road di più giorni, le spese si accumulano in fretta e su molte categorie. Registra ogni spesa in tempo reale — chi ha pagato, quanto, per cosa. WePlanify calcola i saldi automaticamente così saldate una volta alla fine, non dopo ogni stazione di servizio.", "link": "/features/budget" },
+      { "stop": "L'auto", "desc": "Cinque persone, un bagagliaio. Lo spazio è il vincolo definitivo. Una lista per i bagagli condivisa con oggetti assegnati previene il classico errore del viaggio on the road: tre casse Bluetooth, nessun apribottiglie e zero cavi per fare i ponti. Indica cosa va in quale auto se prendete più veicoli.", "link": "/features/packing" }
+    ]
+  },
+  "checklist": {
+    "title": "Checklist degli essenziali per il viaggio on the road",
+    "subtitle": "Le cose che i gruppi dimenticano sempre. Assegna ciascuna a una persona nella tua lista per i bagagli di WePlanify.",
+    "items": [
+      "Supporti per telefono e caricabatterie per chi guida",
+      "Cavo aux o trasmettitore FM Bluetooth",
+      "Borsa frigo con piastre refrigeranti",
+      "Kit di pronto soccorso",
+      "Cavi per fare i ponti / avviatore portatile",
+      "Mappe cartacee (per le zone senza segnale)",
+      "Borracce riutilizzabili",
+      "Sacchetti per la spazzatura per l'auto",
+      "Coperte e cuscini per i passeggeri",
+      "Scorta di snack condivisa",
+      "Manometro per la pressione degli pneumatici",
+      "Power bank portatile"
+    ]
+  },
+  "pullQuote": "I migliori viaggi on the road non riguardano la destinazione — riguardano ciò che succede tra una tappa e l'altra. Assicurati che la pianificazione non rovini l'atmosfera prima ancora di partire.",
+  "planning": {
+    "title": "Pianificare il percorso: passo dopo passo",
+    "p1": "Parti dai punti di riferimento — i luoghi che vuoi assolutamente visitare — e costruisci il percorso attorno a essi. Prima di tracciare una linea sulla mappa, concordate il ritmo del viaggio: quante ore di guida al giorno sono giuste per il vostro gruppo? Da quattro a cinque ore è un massimo realistico prima che subentri la stanchezza. Una volta che hai i punti di riferimento, collegali con tratti che bilancino l'efficienza autostradale e il valore panoramico.",
+    "p4": "Lascia tempo di margine nel programma — almeno un'ora di flessibilità al giorno. I viaggi on the road non vanno mai esattamente come previsto. Un mercato contadino che non conoscevi, una deviazione per lavori in corso, un ristorante avvistato da qualcuno dall'autostrada. Il margine è ciò che ti permette di dire sì a questi momenti invece di stressarti per essere in ritardo sul programma."
+  },
+  "budget": {
+    "title": "Consigli sul budget per i viaggi on the road di gruppo",
+    "p2": "Se noleggi un'auto, chiarisci chi è in assicurazione e chi è registrato come conducente aggiuntivo prima di partire. Le società di noleggio fanno pagare per ogni conducente extra — tienine conto nella divisione. I pedaggi sono un altro costo subdolo: su alcuni percorsi possono rivaleggiare con il budget della benzina. Controlla in anticipo i calcolatori dei pedaggi per il tuo percorso e decidete come gruppo se prendere l'autostrada a pagamento o risparmiare con l'alternativa più lenta.",
+    "p3": "Per l'alloggio, variare mantiene i costi gestibili. Alterna campeggi, ostelli e Airbnb a seconda di dove ti fermi. Dividere un alloggio con tre camere in cinque è quasi sempre più economico di camere d'albergo individuali, e fa anche da punto di ritrovo. Registra ogni spesa condivisa man mano che avviene — aspettare la fine del viaggio per capire chi deve cosa è la ricetta per spese dimenticate e conversazioni imbarazzanti."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      { "q": "Come si dividono equamente i costi della benzina in un viaggio on the road?", "a": "Registra ogni rifornimento nel tracker del budget condiviso di WePlanify — chi ha pagato, quanto, quale auto. Alla fine del viaggio, l'app calcola chi deve cosa. Per i viaggi con più auto, traccia ogni veicolo separatamente. Basta calcoli a caso." },
+      { "q": "Quante tappe dovrebbe avere un viaggio on the road al giorno?", "a": "Da due a tre tappe intenzionali al giorno è l'ideale. Più di così e passi l'intero viaggio a salire e scendere dall'auto. Inserisci una tappa 'imperdibile' e una o due flessibili nell'itinerario di ogni giorno. Lascia spazio alle scoperte spontanee." },
+      { "q": "E se abbiamo preferenze di guida diverse?", "a": "Usa i sondaggi per decidere le grandi questioni di percorso (costiero vs. entroterra, autostrade veloci vs. strade panoramiche). Per i turni di guida quotidiani, imposta una rotazione nell'itinerario. Il piano condiviso di WePlanify tiene tutti allineati su chi guida e quando." },
+      { "q": "Come si coordinano i bagagli per un viaggio on the road?", "a": "Lo spazio in auto è limitato. Crea una lista per i bagagli condivisa con due sezioni: oggetti personali e attrezzatura condivisa (borsa frigo, materiale da campeggio, attrezzi, kit di pronto soccorso, cassa). Assegna gli oggetti condivisi a persone specifiche così non ti ritrovi con tre caricabatterie portatili e nessun cavo per i ponti." },
+      { "q": "WePlanify funziona offline durante un viaggio on the road?", "a": "WePlanify funziona nel browser su qualsiasi dispositivo. Anche se ti serve una connessione internet per sincronizzare le modifiche, puoi salvare i dettagli chiave (indirizzi, codici di prenotazione) nelle note del viaggio prima di entrare in una zona senza segnale. La maggior parte del tuo percorso avrà copertura." },
+      { "q": "Con quanto anticipo dovremmo organizzare un viaggio on the road?", "a": "Da due a quattro settimane di solito bastano per i viaggi on the road nazionali. Prenota presto l'alloggio per le tappe chiave del pernottamento — i posti popolari si riempiono in fretta, soprattutto nei weekend. Lascia il percorso flessibile ma fissa i luoghi in cui dormirai. Avvia un viaggio su WePlanify non appena nasce l'idea." }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "tripWithFriends": { "title": "Viaggio con gli amici", "desc": "Organizza qualsiasi viaggio di gruppo senza fatica.", "cta": "Leggi di più →" },
+    "groupGuide": { "title": "Guida ai viaggi di gruppo", "desc": "La guida completa passo dopo passo.", "cta": "Leggi la guida →" },
+    "bestApps": { "title": "Migliori app per viaggi di gruppo", "desc": "Il nostro confronto degli strumenti migliori per i viaggi di gruppo.", "cta": "Leggi l'articolo →" },
+    "familyTrip": { "title": "Viaggio in famiglia", "desc": "Organizza una vacanza in famiglia multigenerazionale.", "cta": "Leggi di più →" }
+  },
+  "cta": {
+    "title": "Mettetevi in viaggio insieme",
+    "subtitle": "Pianifica il percorso, dividi i costi, carica l'auto — tutto in un unico posto.",
+    "button": "Inizia a pianificare"
+  },
+  "jsonld": {
+    "articleHeadline": "Organizza un viaggio on the road con il tuo gruppo",
+    "howToName": "Come organizzare un viaggio on the road di gruppo",
+    "howToDescription": "Costruisci il percorso, concorda il ritmo, risolvi i disaccordi con i sondaggi, condividi la guida e lascia spazio alla spontaneità.",
+    "howToSteps": [
+      { "name": "Scegli le tappe di riferimento e concorda il ritmo giornaliero", "text": "Parti dalle tappe imperdibili e costruisci il percorso attorno a esse. Concordate un massimo di 4-5 ore di guida al giorno prima che subentri la stanchezza, poi collegate i punti di riferimento con un mix di efficienza autostradale e valore panoramico." },
+      { "name": "Risolvi i dibattiti panoramico-vs-veloce con un sondaggio veloce", "text": "Quando il gruppo non è d'accordo sulle tappe o su quale strada prendere, lancia un sondaggio. Ogni membro classifica le sue prime tre preferenze; il risultato vince senza drammi. Particolarmente utile per il dibattito deviazione-costiera-vs-autostrada." },
+      { "name": "Assegna in anticipo i turni di guida e le pause", "text": "Assegna i turni di guida in anticipo così la stessa persona non è al volante ogni mattina. Ruota ogni 2-3 ore e programma vere pause di 20 minuti ai punti panoramici, non soste di 5 minuti alle stazioni di servizio." },
+      { "name": "Lascia almeno un'ora di margine al giorno", "text": "I viaggi on the road non vanno mai esattamente come previsto. Inserisci almeno un'ora di flessibilità in ogni giorno così puoi dire sì al mercato imprevisto, alla deviazione spontanea, al ristorante avvistato dall'autostrada." }
+    ]
+  }
+}

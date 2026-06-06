@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Planeador de Retiros Corporativos — Viagens de Team Building | WePlanify",
+    "description": "Planeie o seu próximo retiro corporativo ou offsite de equipa sem o caos das folhas de cálculo. Itinerários, sondagens, orçamentos — uma só ferramenta, zero dores de cabeça."
+  },
+  "breadcrumb": {
+    "home": "Início"
+  },
+  "hero": {
+    "tag": "Viagens Corporativas e de Equipa",
+    "title": "Planeie uma Viagem de Equipa em Que as Pessoas Realmente Querem Participar",
+    "intro": "Os retiros de equipa falham quando uma pessoa planeia tudo, ninguém tem voz e as atividades parecem forçadas. Eis como organizar um de que a sua equipa vai mesmo gostar — e que produz resultados reais.",
+    "readTime": "9 min de leitura"
+  },
+  "toc": {
+    "title": "Nesta página",
+    "whyFail": "Porque é que a maioria das viagens de equipa falha",
+    "types": "Tipos de viagens de equipa",
+    "pitch": "Como apresentá-la à direção",
+    "weplanifyHelps": "Como a WePlanify ajuda",
+    "timeline": "Cronologia de planeamento",
+    "roi": "Medir o ROI",
+    "faq": "Perguntas frequentes"
+  },
+  "whyFail": {
+    "title": "Porque é que a Maioria das Viagens de Equipa Falha",
+    "p1": "A maioria dos retiros corporativos é organizada de cima para baixo: alguém dos RH ou da gestão escolhe um local, reserva algumas atividades, envia um convite no calendário e espera pelo melhor. O resultado? Metade da equipa teme a diversão forçada, a outra metade está confusa quanto ao horário e quem organiza está esgotado antes do primeiro jantar de equipa.",
+    "p3": "A WePlanify traz toda a equipa para o planeamento. Não apenas quem organiza."
+  },
+  "types": {
+    "title": "Tipos de Viagens de Equipa",
+    "subtitle": "Objetivos diferentes pedem formatos diferentes. Escolha o que corresponde às necessidades da sua equipa.",
+    "items": [
+      { "title": "O Retiro Clássico", "desc": "2 a 3 dias num local no campo. Uma mistura de workshops, atividades ao ar livre e tempo livre. Funciona melhor para encontros anuais de toda a empresa e sessões de planeamento estratégico.", "color": "bg-[#EEF899]" },
+      { "title": "O Offsite na Cidade", "desc": "Uma cidade vibrante durante 2 a 4 dias. Coworking de escritório de manhã, exploração e jantares de equipa à noite. Ideal para equipas remotas que se encontram pessoalmente pela primeira vez.", "color": "bg-[#61DBD5]" },
+      { "title": "A Viagem de Aventura", "desc": "Caminhadas, rafting, escalada, esqui — algo físico que empurra as pessoas para fora da zona de conforto em conjunto. Melhor para equipas pequenas e unidas. Cria laços fortes rapidamente.", "color": "bg-[#F6391A]" },
+      { "title": "O Retiro de Trabalho", "desc": "Parte trabalho, parte lazer. Uma viagem de uma semana em que as manhãs são sprints produtivos e as tardes são livres. Ótimo para startups e equipas distribuídas que precisam de tempo focado em conjunto.", "color": "bg-white" }
+    ]
+  },
+  "pitch": {
+    "title": "Como Apresentá-la ao Seu Chefe",
+    "p1": "O segredo para conseguir a aprovação de uma viagem de equipa é apresentá-la como um investimento, não como uma despesa. As equipas remotas e híbridas, em particular, sofrem de relações inter-equipas fracas — o tipo de laços que só se formam pessoalmente. Um retiro bem planeado paga-se a si próprio em melhor colaboração, menor rotatividade e melhor integração dos novos colaboradores."
+  },
+  "pullQuote": "Os melhores retiros de equipa não parecem diversão obrigatória — parecem uma viagem que faríamos mesmo que o trabalho não estivesse a pagar.",
+  "weplanifyHelps": {
+    "title": "Como a WePlanify Ajuda as Equipas",
+    "items": [
+      { "title": "Deixe a equipa votar", "desc": "Use sondagens para decidir destinos, datas e atividades. Quando as pessoas escolhem o que fazem, ficam realmente entusiasmadas com isso. A votação anónima retira a hierarquia da decisão.", "link": "/features/polls" },
+      { "title": "Um itinerário que todos podem ver", "desc": "Construam o horário de forma colaborativa. Marque o que é obrigatório (a sessão de estratégia) e o que é opcional (a caminhada). As alterações sincronizam em tempo real — acabou-se enviar PDFs atualizados por email.", "link": "/features/planning" },
+      { "title": "Orçamento transparente", "desc": "Acompanhe cada despesa em tempo real. Etiquete por categoria para um relatório fácil para o departamento financeiro. Separe as despesas da empresa das pessoais. Claro, limpo, sem surpresas.", "link": "/features/budget" },
+      { "title": "Coordene a logística em escala", "desc": "Listas de bagagem partilhadas, detalhes de transporte, distribuição de quartos — tudo num só lugar. Quando 20 pessoas precisam de estar no mesmo restaurante às 20h, o itinerário partilhado é a sua única fonte de verdade.", "link": "/features/collaboration" }
+    ]
+  },
+  "timeline": {
+    "title": "Cronologia de Planeamento: Da Ideia ao Offsite",
+    "p3": "Duas semanas antes, passem ao modo de comunicação. Partilhem o itinerário finalizado com toda a equipa, enviem sugestões de bagagem e confirmem o número de participantes para cada atividade. Fixem os detalhes importantes — transfers do aeroporto, horas de check-in, contactos de emergência — no topo da viagem. Uma equipa bem informada é uma equipa descontraída.",
+    "p4": "Uma semana antes e durante a viagem, a sua tarefa é manter-se flexível. As alterações de última hora acontecem — um restaurante cancela, o tempo muda, o voo de alguém atrasa-se. Com um itinerário partilhado que se atualiza em tempo real, pode adaptar-se na hora e toda a gente fica a par. Acabaram-se as mensagens de grupo frenéticas a perguntar \"onde é que devíamos estar agora?\""
+  },
+  "roi": {
+    "title": "Medir o ROI do Seu Retiro de Equipa"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      { "q": "A WePlanify consegue lidar com equipas grandes (mais de 20 pessoas)?", "a": "Sim. Não há limite no tamanho do grupo. Cada membro da equipa junta-se com um link partilhado e pode ver o itinerário, votar nas sondagens e acompanhar as despesas. Para grupos muito grandes, pode usar subgrupos dentro da viagem para diferentes percursos de atividades." },
+      { "q": "Como fazemos a gestão das despesas quando é a empresa a pagar?", "a": "Use o gestor de orçamento para registar todas as despesas em tempo real. Etiquete as despesas por categoria (alojamento, refeições, atividades, transporte) para um relatório fácil. No fim da viagem, exporte um resumo limpo para o departamento financeiro ou para reembolso. Pode separar as despesas pagas pela empresa das pessoais." },
+      { "q": "Podemos incluir membros remotos da equipa no planeamento?", "a": "Sem dúvida. A WePlanify funciona no navegador — sem app para descarregar. Partilhe o link da viagem e os membros remotos da equipa podem contribuir com ideias, votar nas atividades e ver o itinerário completo a partir de qualquer lugar. Foi concebida para a colaboração distribuída." },
+      { "q": "Com quanta antecedência devemos planear um retiro de equipa?", "a": "Dois a três meses no mínimo para retiros nacionais, quatro a seis meses para os internacionais. O alojamento para grupos grandes esgota depressa e as pessoas precisam de aviso prévio para bloquear as agendas. Comece uma viagem na WePlanify cedo para reunir contributos mesmo antes de os detalhes estarem definidos." },
+      { "q": "Que tipos de viagens de equipa funcionam melhor?", "a": "Depende dos seus objetivos. As equipas de resolução de problemas beneficiam de atividades de aventura (escape rooms, desafios ao ar livre). As equipas criativas prosperam com exploração não estruturada (viagens à cidade, experiências culturais). As equipas novas precisam de formatos propícios a quebra-gelos. Use sondagens para perceber o que a sua equipa realmente quer — pode ficar surpreendido." },
+      { "q": "Como se apresenta uma viagem de equipa à gestão?", "a": "Foque-se nos resultados: melhor comunicação, relações inter-equipas mais fortes, menor isolamento remoto. Apresente-a como um investimento na retenção e na produtividade, não como uma despesa. Forneça uma repartição clara do orçamento com o gestor da WePlanify — mostrar transparência torna a aprovação muito mais fácil." }
+    ]
+  },
+  "discover": {
+    "title": "Descubra Mais",
+    "tripWithFriends": { "title": "Viagem com Amigos", "desc": "Planeie qualquer viagem em grupo sem esforço.", "cta": "Ler mais →" },
+    "roadTrip": { "title": "Road Trip", "desc": "Planeie um road trip em grupo com rotas e orçamentos partilhados.", "cta": "Ler mais →" },
+    "groupGuide": { "title": "Guia de Viagem em Grupo", "desc": "Guia passo a passo para planear qualquer viagem em grupo.", "cta": "Ler o guia →" },
+    "bestApps": { "title": "Melhores Apps de Viagens em Grupo", "desc": "Compare as melhores ferramentas para viagens em grupo.", "cta": "Ler o artigo →" }
+  },
+  "cta": {
+    "title": "Planeie um Retiro de Que a Sua Equipa Se Vai Lembrar",
+    "subtitle": "Dê à sua equipa voz no planeamento — e veja a energia mudar.",
+    "button": "Começar a planear"
+  },
+  "jsonld": {
+    "articleHeadline": "Planear uma Viagem de Team Building em Que as Pessoas Realmente Querem Participar",
+    "howToName": "Como Planear um Retiro de Equipa Corporativo",
+    "howToDescription": "Guia passo a passo para planear um retiro de team building de que toda a equipa vai gostar.",
+    "howToSteps": [
+      { "name": "Defina os objetivos e o destino", "text": "Estabeleça os objetivos do retiro, fixe um orçamento aproximado e faça uma lista de 2 a 3 ideias de destino. Faça uma sondagem para envolver a equipa na escolha do destino." },
+      { "name": "Reserve alojamento e atividades", "text": "Confirme o local, reserve as atividades de grupo e finalize a logística de viagem. Construa um itinerário partilhado que toda a gente possa ver." },
+      { "name": "Partilhe o plano final", "text": "Distribua o itinerário finalizado, recolha as necessidades alimentares e os requisitos de acessibilidade e confirme o número de participantes." },
+      { "name": "Mantenha-se flexível no dia", "text": "Mantenha o itinerário partilhado atualizado em tempo real para que toda a gente fique informada quando os planos mudam." }
+    ]
+  }
+}

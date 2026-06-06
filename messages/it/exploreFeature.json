@@ -1,0 +1,108 @@
+{
+  "copy": {
+    "hero": {
+      "title": "Cerca, aggiungi, mappa.",
+      "titleHighlight": "Insieme.",
+      "subtitle": "Un'unica schermata con hotel, ristoranti, attività e trasporti — selezionati per la tua destinazione. Premi + per aggiungerli al viaggio e guardali comparire sulla mappa condivisa.",
+      "cta": "Prova Explorer gratis",
+      "ctaSubtext": "Gratis · nessuna carta di credito · pronti in 30 secondi"
+    },
+    "intro": {
+      "title": "Il percorso dalla ricerca al viaggio, interrotto.",
+      "paragraphs": [
+        "Organizzare un viaggio di gruppo dovrebbe essere una conversazione, non un foglio di calcolo. E invece eccoti qui: 47 schede del browser aperte, tre chat di gruppo con liste diverse, un documento Notion che nessuno aggiorna e, alle 23 della sera prima, ancora a discutere se il bar sul tetto vale la traversata della città. La domanda 'cosa facciamo' — che dovrebbe essere la parte divertente — diventa quella che manda in crisi i gruppi.",
+        "Il problema non è la mancanza di informazioni. È l'opposto. Ogni città ha 10.000 cose da fare e internet promette che sono tutte imperdibili. Distinguere il segnale dal rumore — e mettere d'accordo da quattro a quindici persone su cosa includere — è il punto in cui la maggior parte dei viaggi si sgretola in silenzio.",
+        "Explorer è pensato esattamente per quel momento. Un'unica schermata. Quattro schede: hotel, ristoranti, attività, trasporti. Una griglia di card selezionate per la tua destinazione. Premi + per aggiungere al viaggio e guarda comparire il punto sulla mappa condivisa. Il tuo gruppo fa lo stesso e i luoghi su cui c'è consenso emergono in cima. Venti minuti, una short list mappata."
+      ]
+    },
+    "painPoints": {
+      "title": "Perché la scoperta è un disastro",
+      "subtitle": "La maggior parte dei gruppi passa più tempo a litigare sull'organizzazione che a godersi il viaggio.",
+      "items": [
+        {
+          "emoji": "🗂️",
+          "title": "Il cimitero delle schede",
+          "description": "Oltre 35 schede aperte, ciascuna che promette la versione migliore di 'cosa fare a [città]'. Le chiuderai stasera e le riaprirai domani. Non hai deciso nulla."
+        },
+        {
+          "emoji": "💬",
+          "title": "La lista nella chat di gruppo che nessuno aggiorna",
+          "description": "Sarah ha proposto 6 posti, Marc ne ha aggiunti 3, Alex li ha apprezzati tutti, la futura sposa non ha visto niente. Ne parlerai a brunch. Forse."
+        },
+        {
+          "emoji": "🤔",
+          "title": "È davvero un bel posto o solo turistico?",
+          "description": "Tripadvisor è pieno di recensioni a pagamento, i thread di Reddit hanno 4 anni, Instagram è tutto #ad. Finisci nello stesso ristorante affollato che hanno scelto tutti gli altri."
+        },
+        {
+          "emoji": "🕳️",
+          "title": "Il buco nero del 'l'ho salvato da qualche parte'",
+          "description": "14 stelle su Maps, 28 salvataggi su Instagram, 6 segnalibri su TikTok, uno screenshot nel rullino. Il giorno dell'arrivo non ne ritroverai più nessuno."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Come Explorer risolve il problema",
+      "subtitle": "Un'unica schermata, quattro schede e una vera short list condivisa alla fine.",
+      "items": [
+        {
+          "emoji": "🎯",
+          "title": "Quattro schede, non una valanga",
+          "description": "Passa tra hotel, ristoranti, attività e trasporti con un solo clic. Le card si adattano alla scheda — l'alloggio mostra il prezzo a notte, il trasporto mostra tragitto + durata. Basta confrontare mele con biglietti aerei."
+        },
+        {
+          "emoji": "➕",
+          "title": "Aggiungi con un tocco",
+          "description": "Ogni card ha un pulsante +. Toccalo e il posto si fissa nel tuo viaggio — spunta verde, nessuna doppia conferma. Le tue selezioni si sincronizzano con il resto del gruppo in tempo reale."
+        },
+        {
+          "emoji": "🗺️",
+          "title": "Vista mappa, affiancata",
+          "description": "Le card a sinistra, la mappa interattiva a destra (o sotto su mobile). Passa il mouse su una card e il segnaposto si illumina sulla mappa. Scegli per vicinanza, non per ordine delle schede."
+        },
+        {
+          "emoji": "🤝",
+          "title": "Emerge il consenso del gruppo",
+          "description": "Tutti vedono lo stesso Explorer. Quando più membri aggiungono lo stesso posto, riceve un'etichetta 'preferito dal gruppo'. I luoghi su cui tutti erano segretamente d'accordo salgono in cima — senza bisogno di discutere."
+        }
+      ]
+    },
+    "animationShowcase": {
+      "title": "Guardalo in azione",
+      "subtitle": "La vera interfaccia di Explorer — stesse schede, stesse card, stesso pulsante +. Cambia tipo e guarda la griglia aggiornarsi.",
+      "caption": "Demo in riproduzione automatica · è proprio quello che userai"
+    },
+    "mapPreview": {
+      "title": "Tutto ciò che hai aggiunto, sulla mappa",
+      "subtitle": "Ogni tocco di + lascia un segnaposto sulla mappa condivisa. Aprila il giorno dell'arrivo, scegli ciò che è più vicino e raggiungilo a piedi.",
+      "caption": "Mappa interattiva · sincronizzata con il tuo viaggio"
+    },
+    "useCases": {
+      "title": "Quando Explorer dà il meglio di sé",
+      "subtitle": "Pensato per i viaggi in cui 'basta cercarlo' non basta.",
+      "items": [
+        {
+          "emoji": "🏙️",
+          "title": "Citybreak (3–5 giorni)",
+          "description": "Lunghi weekend a Lisbona, Berlino, New York. Non hai tempo di fare ricerche — hai tempo per fare. Explorer riduce 500 idee a 20 in quindici minuti."
+        },
+        {
+          "emoji": "👥",
+          "title": "Viaggi di gruppo (4–15 persone)",
+          "description": "Weekend per addii al nubilato, reunion tra amici, viaggi in famiglia. Ognuno aggiunge le proprie scelte dal telefono e il consenso emerge. Salta la democrazia della chat di gruppo."
+        },
+        {
+          "emoji": "🛣️",
+          "title": "Viaggi multi-città e on the road",
+          "description": "5 città in 10 giorni = 5 esplorazioni. Salva i luoghi per ogni città e raggiungili al tuo arrivo. Il tuo itinerario si costruisce attorno a ciò che il gruppo vuole davvero."
+        }
+      ]
+    },
+    "categoriesTitle": "Esplora per categoria",
+    "mapPins": {
+      "hotel": "Hotel",
+      "restaurant": "Ristorante",
+      "activity": "Attività"
+    }
+  }
+}

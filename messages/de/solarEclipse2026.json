@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Totale Sonnenfinsternis 12. Aug. 2026: Reiseplaner Spanien & Island",
+    "description": "Alles zur totalen Sonnenfinsternis am 12. August 2026: Totalitätszone über Island und Nordspanien, wann und wo die Totalität am längsten ist, ISO-12312-2-Brillen, Kreuzfahrtoptionen und wie man die Reise von Frankreich aus mit einer Gruppe plant."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "Sonnenfinsternis-2026-Reiseplaner"
+  },
+  "hero": {
+    "tag": "Astrotourismus-Guide & Reiseplaner · August 2026",
+    "title": "Totale Sonnenfinsternis, 12. August 2026: Reiseplaner Island & Spanien",
+    "readTime": "10 Min. Lesezeit",
+    "ctaButton": "Unsere Finsternis-Reise planen",
+    "ctaNote": "Kostenlos · für Gruppen gemacht · EN/FR",
+    "imageAlt": "Totale Sonnenfinsternis vom 12. August 2026 – Sonnenfinsternisbrille hochgehalten zur Korona über einem spanischen Weizenfeld"
+  },
+  "facts": {
+    "heading": "Finsternis-Daten",
+    "dateLabel": "Datum",
+    "dateValue": "Mi. 12. Aug.",
+    "totalityLabel": "Max. Totalität",
+    "totalitySub": "vor Island",
+    "pathLabel": "Zone",
+    "pathSub": "+ Grönland",
+    "lastLabel": "Zuletzt in Europa",
+    "lastSub": "vor 27 Jahren"
+  },
+  "stakes": {
+    "p1": "Totale Sonnenfinsternisse, die vom europäischen Festland aus sichtbar sind, passieren etwa einmal pro Generation. Die letzte war am 11. August 1999, als ein riesiger Streifen Frankreichs mitten im Sommer für etwa zwei Minuten dunkel wurde. Die Finsternis 2026 überspringt Frankreich vollständig – ihre Totalitätszone kreuzt den Osten Grönlands, den Westen und Süden Islands und fegt dann bei Sonnenuntergang über Nordspanien, bevor sie im Mittelmeer endet. Frankreich, obwohl so nah, sieht nur eine partielle Finsternis: tief (92–99,5 %), aber keine Korona, keine Dunkelheit, und die Sonne bleibt während der gesamten Phase unsicher anzusehen. Um die tatsächliche totale Finsternis zu erleben – und die stille, unvergessliche Korona – musst du in die spanische Zone übertreten oder nach Norden nach Island fliegen. Nach dieser kreuzen zwei weitere totale Finsternisse Spanien (2. August 2027, dann eine ringförmige am 26. Januar 2028), was 2026–2028 zum einzigartigen 'spanischen Triple' des europäischen Astrotourismus macht.",
+    "p2": "WePlanify ist die kostenlose gemeinsame Kommandozentrale für Gruppen, die der Finsternis nachjagen – Standort-Abstimmung, Flug oder Zug, Unterkunft, die Beobachtungs-Zeitleiste für den Tag X und ein geteiltes Budget an einem Ort, auf Englisch oder Französisch."
+  },
+  "toc": {
+    "title": "Auf dieser Seite",
+    "path": "Die Totalitätszone",
+    "france": "Sieht Frankreich die Finsternis?",
+    "spainVsIceland": "Spanien vs. Island vs. Kreuzfahrt",
+    "safety": "Sicherheit & Brillen",
+    "logistics": "Anreise & Unterkunft",
+    "planning": "Die Reise mit der Crew planen",
+    "budget": "Budget-Tipps",
+    "faq": "Häufig gestellte Fragen"
+  },
+  "path": {
+    "title": "Die Totalitätszone",
+    "subtitle": "Von den Ostfjorden Grönlands bis ins Mittelmeer, in etwa 50 Minuten. Die Dauer variiert je nach Standort enorm.",
+    "items": [
+      { "stop": "Grönland — Ostfjorde", "desc": "Der Schatten berührt die Erde zuerst über der Blosseville-Küste und kreuzt den Scoresbysund, mit etwa 1 Min. 45 Sek. Totalität. Das einzige Dorf der Region, Ittoqqortoormiit, liegt ~50 km südlich der Zentrallinie und bleibt außerhalb der Totalität. Die praktische Reise-Erreichbarkeit ist begrenzt – diese Etappe ist für Spezialisten." },
+      { "stop": "Island — Westfjorde, Snæfellsnes, Reykjavík", "desc": "Der Schatten erreicht das Festland am Leuchtturm Straumnes in den Westfjorden um 17:43:28 UTC. Látrabjarg bekommt 2 Min. 13 Sek. Die Halbinsel Snæfellsnes, einschließlich des ikonischen Bergs Kirkjufell, liegt in der Zone. In Reykjavík beginnt die Totalität um 17:48:12 UTC für etwa 1 Minute, mit der Sonne ~24,5° über dem westlichen Horizont. Islands gesamte Schattenzeit beträgt 6 Min. 48 Sek." },
+      { "stop": "Spanien — Galicien bis Mallorca", "desc": "Der Schatten erreicht A Coruña gegen 20:26 MESZ (Sonne ~11° hoch), Bilbao um 20:27 (~30 Sek. Totalität, Sonne ~8°), Saragossa im etwa gleichen Fenster (~1 Min. 25 Sek.), Valencia ab 20:32 (~1 Minute) und Palma de Mallorca um 20:31–20:32 (~1 Min. 36 Sek., Sonne ~4° über dem Horizont, etwa 10 Minuten vor Sonnenuntergang). Madrid und Barcelona liegen knapp außerhalb des Bandes – sie bekommen keine Totalität." },
+      { "stop": "Im Band, aber leicht zu verpassen", "desc": "Santander, Burgos, Valladolid, Palencia und León liegen alle im Totalitätsband. Je weiter nördlich und westlich du bist, desto etwas höher die Sonne – aber desto wolkiger die Klimatologie. Das Ebro-Tal (Huesca, Saragossa) liegt am statistischen Idealpunkt für die August-Wolkendecke und einen flachen westlichen Horizont." },
+      { "stop": "Die größte Dauer liegt über offenem Meer", "desc": "Der Punkt der größten Dauer – 2 Minuten 18,2 Sekunden – liegt rund 45 km westlich von Látrabjarg, auf offener See. Keine Insel, kein Hafen. Die einzigen Wege dorthin sind eine Finsternis-Kreuzfahrt oder ein gecharterter Flug." }
+    ]
+  },
+  "france": {
+    "title": "Sieht Frankreich die Finsternis?",
+    "subtitle": "Eine tiefe partielle – aber keine totale. Wichtig, das in der Gruppe klarzustellen, besonders bei allen, die sich an die Finsternis von 1999 in Frankreich erinnern.",
+    "partialLabel": "Partielle Bedeckung",
+    "partialTitle": "Stadt für Stadt",
+    "partialItems": [
+      "→ Biarritz: bis zu 99,5 % (am nächsten an der Zone)",
+      "→ Marseille / Nizza: ~95 %",
+      "→ Bordeaux / Toulouse: ~96–97 %",
+      "→ Paris: 92,2 %",
+      "→ Zeitfenster: ~19:30 bis ~20:30 Pariser Zeit, tiefstehende Sonne"
+    ],
+    "missLabel": "Warum 99 % nicht 100 % sind",
+    "missTitle": "Was dir entgeht",
+    "missItems": [
+      "→ Die Korona – nur sichtbar, wenn die Sonne zu 100 % bedeckt ist",
+      "→ Die Dunkelheit – bei 99 % bricht die Nacht nicht wirklich herein",
+      "→ Das mit bloßem Auge sichere Fenster – bei partieller Finsternis nie, immer eine Brille tragen",
+      "→ Der Temperaturabfall und die Vogelstille",
+      "→ Der 360°-Sonnenuntergangseffekt am Horizont"
+    ]
+  },
+  "spainVsIceland": {
+    "title": "Spanien vs. Island vs. Kreuzfahrt",
+    "subtitle": "Drei ehrliche Optionen, jede mit einem echten Kompromiss. Die richtige hängt davon ab, worauf du optimierst – Chancen auf klaren Himmel, Totalitätsdauer oder Erlebnis.",
+    "option1": {
+      "tag": "Option 1",
+      "title": "Binnenland Nordspanien",
+      "desc": "Das Ebro-Tal, Huesca, Saragossa und die Ebenen drumherum – die besten August-Wolkendecken-Statistiken der gesamten Zone (~35 % Wolkenrisiko). Flacher westlicher Horizont, einfacher Straßenzugang, Hotels der mittleren Preisklasse. Kompromiss: Die Totalität ist kurz (~1–1,5 Min.) und die Sonne steht tief (8–11°)."
+    },
+    "option2": {
+      "tag": "Option 2",
+      "title": "Mallorca",
+      "desc": "Palma sieht ~1 Min. 36 Sek. Totalität, die längste aller leicht erreichbaren Städte. Strand-Kulisse mit klarem westlichem Meereshorizont. Kompromiss: Die Sonne steht sehr tief (~4°), ~10 Min. vor Sonnenuntergang, sodass jede Klippe oder jedes Gebäude im Westen die Sicht killt. Die Hotelpreise haben sich für die Nacht vom 11. auf den 12. August bereits etwa verdreifacht."
+    },
+    "option3": {
+      "tag": "Option 3",
+      "title": "Island oder Kreuzfahrt",
+      "desc": "Island bietet das dramatischste Erlebnis und die höchste Sonne (~24° in Reykjavík), bezahlt aber mit Wolkenrisiko (70–85 % durchschnittliche August-Bedeckung). Eine Mittelmeer-Finsternis-Kreuzfahrt (Costa ab ~450 €, CFC Renaissance ab 1.279 €, Princess, Holland America) tauscht einen festen Standort gegen meteorologische Flexibilität am Tag selbst."
+    }
+  },
+  "midCta": {
+    "title": "Spanien, Mallorca oder Island?",
+    "subtitle": "Startet die Reiseziel-Abstimmung mit der Crew und füllt dann Flüge und Unterkunft vor.",
+    "button": "Abstimmung starten"
+  },
+  "safety": {
+    "title": "Sicherheit & ISO-12312-2-Brillen",
+    "subtitle": "Eine Solarretinopathie ist still – du spürst den Schaden nicht, bis er angerichtet ist. Besorg dir früh die richtigen Brillen und bring Ersatz mit.",
+    "card1": {
+      "title": "Die Zertifizierung, auf die du achten musst",
+      "desc": "ISO 12312-2:2015 – innen auf der Brille aufgedruckt – plus die CE-Kennzeichnung für Europa. Alles ohne beides ist unsicher, einschließlich sehr dunklem Schweißerglas unter Stufe 14, Röntgenfilm, Rauchglas, vollständig belichteten Fotonegativen oder gestapelten Sonnenbrillen. Brillen, die älter als drei Jahre sind, sollten ersetzt werden; der Filter baut ab."
+    },
+    "card2": {
+      "title": "Wo man in Frankreich kauft",
+      "desc": "Apotheken (Vorverkauf öffnet typischerweise im Juni), Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs) und MyEclipseGlasses oder VOLTNGO bei Amazon. Bestelle vor dem Juni-Ansturm – das Angebot wird im Juli knapp, wenn die Medienberichterstattung anzieht. Ein Paar pro Person, plus ein Ersatzpaar pro Vierergruppe."
+    },
+    "card3": {
+      "title": "Smartphone & Kamera",
+      "desc": "Eine Handykamera ohne Sonnenfilter auf die partielle Finsternis zu richten kann den Sensor beschädigen und ist auch durch den Bildschirm nicht sicher. Nutze einen aufschraubbaren oder magnetischen Sonnenfilter oder akzeptiere, dass die Finsternis eines der wenigen Ereignisse ist, bei denen es richtig ist, das Handy in der Tasche zu lassen. Nur während der Totalität (im Totalitätsband) kannst du die Sonne ansehen und frei fotografieren."
+    }
+  },
+  "logistics": {
+    "title": "Anreise & Unterkunft",
+    "subtitle": "Die bekannten Städte sind weitgehend ausgebucht. Die Strategie ist, entweder die Suche auf kleinere Orte innerhalb der Zone auszuweiten oder am Tag selbst eine längere Fahrt in Kauf zu nehmen.",
+    "gettingThere": "Anreise",
+    "spainLabel": "Spanien",
+    "spainItems": [
+      "→ Paris → Bilbao: kurzer Direktflug, ~1 Std. 50",
+      "→ Paris → Bilbao mit dem Zug: ~14–15 Std. über Hendaye",
+      "→ Paris → Saragossa / Valencia / Palma: Direktflüge ab CDG/ORY",
+      "→ Fahrt vom Südwesten Frankreichs nach Bilbao oder Pamplona: ~3–5 Std.",
+      "→ Bekannte Städte (Saragossa, Valencia, Palma): Hotels größtenteils weg – versuch Logroño, Tudela, Castellón"
+    ],
+    "icelandLabel": "Island & Kreuzfahrt",
+    "icelandItems": [
+      "→ Paris CDG → Reykjavík (KEF): ~3 Std. 30 direkt, Icelandair (~16 Flüge/Woche) und easyJet",
+      "→ Miete am KEF ein Auto, um Snæfellsnes zu erreichen (~2 Std. 30 Fahrt)",
+      "→ Hotels in Reykjavík: größtenteils ausverkauft, Reykjavik Edition gelistet zu 4.399 $/Nacht",
+      "→ Costa-Cruises-Finsternis-Kreuzfahrt: 7 Nächte ab ~450 €/Pers.",
+      "→ CFC Renaissance: 6 Nächte ab Marseille, ab 1.279 €/Pers."
+    ]
+  },
+  "planning": {
+    "title": "Die Reise mit der Crew planen"
+  },
+  "budget": {
+    "title": "Budget-Tipps",
+    "p2": "Eine Serviced-Wohnung für 4–6 Personen in einem kleineren Ort innerhalb des Totalitätsbands (Logroño, Tudela, Castellón auf der spanischen Seite; Borgarnes oder Stykkishólmur auf der Halbinsel Snæfellsnes in Island) schlägt Hotelzimmer in den bekannten Städten regelmäßig um 40–60 %, während du voll in der Totalität bleibst. Der Kompromiss: Die Essensoptionen werden knapper – reserviert Restaurants für den 13. August jetzt, nicht am Tag selbst.",
+    "p3": "Spar nicht bei den Brillen. Ein 5–15 € teures ISO-12312-2-Paar pro Person plus Ersatz ist einer der kleinsten Posten im ganzen Budget, und es ist der einzige Posten, bei dem Sparen tatsächlich jemanden in der Gruppe verletzen kann."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      { "q": "Wann und wo kann ich die totale Sonnenfinsternis am 12. August 2026 sehen?", "a": "Mittwoch, 12. August 2026. Die Totalitätszone kreuzt den Osten Grönlands, den Westen Islands (einschließlich der Westfjorde, der Halbinsel Snæfellsnes und Reykjavík) und ein breites Band über Nordspanien (Galicien, Asturien, Kantabrien, Kastilien-León, das Ebro-Tal, Valencia und Mallorca). Die maximale Totalität beträgt 2 Minuten 18 Sekunden – aber dieses Maximum liegt über offenem Meer ~45 km westlich von Látrabjarg, Island. Bewohnte Orte bekommen kürzere Totalität: Reykjavík ~1 Minute, Saragossa ~1 Min. 25 Sek., Palma de Mallorca ~1 Min. 36 Sek., Bilbao ~30 Sekunden. Madrid und Barcelona liegen NICHT in der Totalität." },
+      { "q": "Sieht Frankreich die totale Finsternis?", "a": "Nein. Das französische Festland sieht nur eine partielle Finsternis – aber sie ist tief. Paris erreicht 92,2 % Bedeckung, Marseille und Nizza rund 95 % und Biarritz, die der Zone am nächsten gelegene französische Stadt, bis zu 99,5 %. Die partielle Phase läuft von ~19:30 bis ~20:30 Pariser Zeit. Ohne Totalität bekommst du nie die Korona, die Dunkelheit oder das mit bloßem Auge sichere Fenster – und die Sonne bleibt die ganze Zeit gefährlich anzusehen. Um die totale Finsternis zu sehen, musst du nach Spanien übertreten oder nach Island fliegen." },
+      { "q": "Island oder Spanien – welche ist die bessere Reise?", "a": "Statistisch hat das Binnenland Nordspaniens (Ebro-Tal, Huesca, Saragossa) die besten August-Wolkendecken-Chancen entlang der gesamten Zone – etwa 35 % Wolkenwahrscheinlichkeit in den richtigen Zonen. Island liegt selbst im August näher an 70–85 % Wolkendecke. Der spanische Kompromiss: Die Sonne steht sehr tief (4–11° über dem Horizont – nur ~1 Stunde vor Sonnenuntergang), also brauchst du eine klare Sicht nach Westen (das Meer oder eine Ebene, nie eine Stadtstraße). Islands Kompromiss: wolkiger und teurer, aber die Sonne steht höher (~24° in Reykjavík) und das Totalitätserlebnis ist abgelegener und dramatischer." },
+      { "q": "Wie steht es um eine Finsternis-Kreuzfahrt?", "a": "Mehrere Reedereien haben Schiffe im westlichen Mittelmeer und rund um Mallorca positioniert, um den Passagieren die Freiheit zu geben, sich am Tag selbst unter klarerem Himmel zu bewegen. Costa Cruises bietet eine 7-tägige Finsternis-Kreuzfahrt ab ~450 € pro Person. Die französische Reederei CFC hat ihre 'Renaissance' zwischen den Balearen und Sardinien positioniert, 6 Nächte ab Marseille, ab rund 1.279 €. Princess Cruises und Holland America haben ebenfalls finsternis-themenbezogene Routen. Der Vorteil ist die meteorologische Flexibilität; der Nachteil ist, dass ein langsam fahrendes Schiff einer Wolkenbank nicht immer rechtzeitig entkommen kann." },
+      { "q": "Welche Art von Brillen brauche ich?", "a": "Nach ISO 12312-2:2015 zertifizierte Sonnenfinsternisbrillen, mit der CE-Kennzeichnung. Normale Sonnenbrillen sind nicht sicher – selbst die dunkelsten lassen genug Infrarot- und sichtbares Licht durch, um eine Solarretinopathie zu verursachen. ISO-12312-2-Brillen werden in französischen Apotheken verkauft (Vorverkauf öffnet typischerweise im Juni), bei Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs) und über MyEclipseGlasses bei Amazon. Kauf ein Paar pro Person, prüfe den Datumsstempel (Brillen, die älter als 3 Jahre sind, sollten ersetzt werden) und lagere sie flach. Nur während der Totalität – und nur wenn du tatsächlich IN der Totalität bist – kannst du mit bloßem Auge schauen." },
+      { "q": "Sind die Hotels schon ausverkauft?", "a": "Viele der stark nachgefragten Orte ja. Hotels.com meldete einen Anstieg der Suchanfragen nach Finsternis-Reisezielen um 445 %. Zimmer in Palencia wurden bis zu 1.095 € pro Nacht angeboten (etwa das 10-Fache des Normalen). Die Mallorca-Preise haben sich für die Nacht vom 11. auf den 12. August etwa verdreifacht. Die Reykjavik Edition wurde mit 4.399 $/Nacht angegeben. Reiseveranstalter buchten Saragossa, Valencia und Bilbao 18+ Monate im Voraus. Wenn du jetzt anfängst, schau etwas außerhalb der bekannten Städte – kleinere Orte innerhalb der Zone sind noch buchbar." },
+      { "q": "Wie organisiert man eine Finsternis-Reise mit einer Gruppe von Freunden?", "a": "Finsternisse sind kurz – 30 Sekunden bis 2 Minuten, je nach Standort – also ist die Logistik wichtiger als bei jeder normalen Reise. Entscheidet als Gruppe, ob ihr auf Wolkenchancen (Ebro-Tal, Binnenland Spanien), Totalitätsdauer (Mallorca) oder Erlebnis (Island) optimiert. Legt den Standort, den Transport (Flug nach Bilbao oder Reykjavík oder Zug + Fahrt) und den genauen Beobachtungspunkt fest, bevor ihr die Unterkunft bucht. WePlanify hält die Reiseziel-Abstimmung, das Budget und die Zeitleiste für den Tag selbst an einem gemeinsamen Ort." }
+    ]
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "hellfest": { "title": "Hellfest-2026-Reiseplaner", "desc": "Vier Tage Metal in Clisson, Frankreich.", "cta": "Weiterlesen →" },
+    "tomorrowland": { "title": "Tomorrowland-2026-Reiseplaner", "desc": "Zwei Wochenenden in Boom, Belgien.", "cta": "Weiterlesen →" },
+    "tripWithFriends": { "title": "Reise mit Freunden", "desc": "Plane mühelos jede Gruppenreise.", "cta": "Weiterlesen →" },
+    "groupGuide": { "title": "Guide für Gruppenreisen", "desc": "Der komplette Schritt-für-Schritt-Guide.", "cta": "Guide lesen →" }
+  },
+  "cta": {
+    "title": "Baue deine Finsternis-Reise",
+    "subtitle": "Reiseziel-Abstimmung, Flüge oder Zug, Unterkunft im Totalitätsband, Zeitleiste für den Tag X, geteiltes Budget – ein Plan, deine ganze Crew auf dem gleichen Stand.",
+    "button": "Abstimmung Spanien vs. Island starten"
+  },
+  "jsonld": {
+    "articleHeadline": "Totale Sonnenfinsternis 12. August 2026: Reiseplaner für Island & Spanien",
+    "eventName": "Totale Sonnenfinsternis vom 12. August 2026",
+    "eventDescription": "Totale Sonnenfinsternis am Mittwoch, 12. August 2026. Die Totalitätszone kreuzt den Osten Grönlands, den Westen Islands und Nordspanien. Maximale Totalität 2 Minuten 18 Sekunden vor der isländischen Küste. Erste vom europäischen Festland aus sichtbare totale Sonnenfinsternis seit dem 11. August 1999.",
+    "howToName": "So planst du eine Reise zur totalen Sonnenfinsternis 2026",
+    "howToDescription": "Drei Monate vorher: So zurrst du die Reise fest – wähle deinen Standort (Wolkenchancen vs. Dauer vs. Erlebnis), buch Anreise und Unterkunft vor der nächsten Preiserhöhung, besorg ISO-12312-2-Brillen und plane die eigentliche Beobachtungsstunde.",
+    "howToSteps": [
+      { "name": "Wähl deinen Standort – und bring die Gruppe darauf ein", "text": "Die drei ehrlichen Optionen sind das Binnenland Spaniens (Ebro-Tal, ~35 % Wolkenrisiko, kurze Totalität), Mallorca (längere Totalität, aber sehr tiefe Sonne, braucht Meereshorizont) und Island (hohes Wolkenrisiko, aber dramatisches Erlebnis). Startet eine Gruppenabstimmung, bevor ihr etwas bucht – die Kompromisse spalten Familien im echten Leben." },
+      { "name": "Bucht Anreise und Unterkunft vor der nächsten Erhöhung", "text": "Paris-Reykjavík dauert ~3 Std. 30 mit Icelandair oder easyJet ab CDG. Paris-Bilbao ist ein kurzer Flug oder ein langer Zug (14–15 Std. über Hendaye). Unterkünfte in den bekannten Städten (Saragossa, Reykjavík, Palma) sind weitgehend weg – schau dir kleinere Orte innerhalb der Zone an oder eine Serviced-Wohnung für die Gruppe." },
+      { "name": "Bestell ISO-12312-2-Brillen und das Sicherheitsset", "text": "Ein zertifiziertes Paar pro Person, bestellt vor dem Juni-Ansturm. Füge einen Smartphone-Sonnenfilter hinzu, falls jemand die Finsternis fotografieren will – normale Handyoptik ist ebenfalls unsicher, auf die Sonne gerichtet ohne Filter. Pack ein Ersatzpaar pro Vierergruppe ein: Brillen fallen runter." },
+      { "name": "Plant die Beobachtung Stunde für Stunde", "text": "Sei mindestens 2 Stunden vor der Totalität an deinem Ort. In Spanien landet die Totalität gegen 20:27–20:32 MESZ mit sehr tiefer Sonne – übe am Tag zuvor, sie von deinem Ort aus zu lokalisieren. Blockt einen klaren Treffpunkt für den Fall, dass sich die Gruppe aufteilt, und plant die Rückfahrt zur Unterkunft: Die Straßen von den Beobachtungspunkten verstopfen innerhalb von Minuten nach Ende der Totalität." }
+    ]
+  }
+}

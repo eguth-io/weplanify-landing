@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Blog — porady o podróżach grupowych",
+    "description": "Odkryj artykuły i porady o organizowaniu niezapomnianych wyjazdów grupowych. Triki podróżnicze, kierunki i praktyczne poradniki."
+  },
+  "staticPosts": [
+    {
+      "title": "Jak zorganizować niezapomniany wieczór panieński — poradnik 2026",
+      "excerpt": "Od wyboru kierunku po koordynację grupy: wszystko, czego potrzebujesz, by zorganizować niezapomniany wieczór panieński bez stresu."
+    },
+    {
+      "title": "Budżet wyjazdu grupowego — jak dzielić koszty bez dramatów",
+      "excerpt": "Ustal realistyczny budżet, dziel koszty sprawiedliwie, śledź wydatki w czasie rzeczywistym i rozlicz się czysto, gdy wyjazd się kończy."
+    }
+  ]
+}

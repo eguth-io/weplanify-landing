@@ -1,0 +1,22 @@
+{
+  "copy": {
+    "heroTitle": "和 10 位好友规划一场旅行",
+    "heroTitleHighlight": "无需一条 WhatsApp 消息",
+    "heroSubtitle": "实时编辑、内置投票、清晰的历史记录。所有人步调一致，字面意义上的同一页面。",
+    "inviteMore": "邀请更多人",
+    "liveLabel": "实时",
+    "fakeTripTitle": "葡萄牙公路旅行",
+    "fakeDays": ["第 1 天 —— 里斯本", "第 2 天 —— 辛特拉", "第 3 天 —— 波尔图"],
+    "editingTag": "Marie 正在编辑…",
+    "feedTitle": "不漏掉任何动态",
+    "feedSubtitle": "动态信息流展示你旅行中发生的一切。谁添加了什么、何时、在哪里。",
+    "recentActivity": "近期动态",
+    "activities": [
+      { "avatar": "👩‍🎨", "name": "Marie", "action": "添加了「阿尔法玛晚餐」", "time": "2 分钟前" },
+      { "avatar": "🧔", "name": "Thomas", "action": "更新了波尔图的酒店", "time": "5 分钟前" },
+      { "avatar": "👱‍♀️", "name": "Emma", "action": "为餐厅投了票", "time": "12 分钟前" },
+      { "avatar": "🧑‍💻", "name": "Lucas", "action": "加入了旅行", "time": "1 小时前" }
+    ],
+    "freeNoCard": "免费注册，无需信用卡。"
+  }
+}

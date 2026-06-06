@@ -1,0 +1,37 @@
+{
+  "title": "Häufig gestellte\nFragen",
+  "supportTitle": "Brauchst du Hilfe bei deiner Reiseplanung?",
+  "supportDescription": "Hast du eine Frage zu einer Funktion?\nBrauchst du Ideen für eure Gruppenreiseroute?\nUnser Team antwortet schnell und hilft dir, das Beste aus WePlanify für dein nächstes Gruppenabenteuer herauszuholen.\n\nDenn die Nutzererfahrung steht bei uns an erster Stelle.",
+  "supportButtonText": "Unser Team kontaktieren",
+  "supportButtonUrl": "/contact",
+  "items": [
+    {
+      "question": "Ist WePlanify kostenlos?",
+      "answer": "Ja, WePlanify ist derzeit für Beta-Tester kostenlos. Wir planen, in Zukunft Premium-Tarife mit erweiterten Funktionen einzuführen, aber die Kernfunktionen bleiben immer kostenlos."
+    },
+    {
+      "question": "Können alle an der Reiseplanung teilnehmen?",
+      "answer": "Absolut! Jeder Teilnehmer kann Ideen vorschlagen, über Aktivitäten abstimmen, das Budget verfolgen und die Reiseroute in Echtzeit einsehen. Für Gäste ist kein Konto erforderlich."
+    },
+    {
+      "question": "Wie erstelle ich ein Konto?",
+      "answer": "Klick einfach auf „Loslegen“ und melde dich mit deiner E-Mail oder deinem Google-Konto an. Es dauert weniger als 30 Sekunden, deine erste Reise zu erstellen."
+    },
+    {
+      "question": "Sind meine Daten sicher?",
+      "answer": "Ja, wir nehmen Sicherheit ernst. Deine Daten werden verschlüsselt und sicher gespeichert. Wir geben deine persönlichen Daten niemals an Dritte weiter."
+    },
+    {
+      "question": "Kann ich WePlanify auf dem Handy nutzen?",
+      "answer": "Ja! WePlanify funktioniert auf jedem Gerät – Desktop, Tablet oder Smartphone. Greif mit unserer responsiven Web-App überall auf deine Reisen zu."
+    },
+    {
+      "question": "Wie kann ich den Support kontaktieren?",
+      "answer": "Du erreichst uns über unsere Kontaktseite oder per E-Mail an support@weplanify.com. Wir antworten in der Regel innerhalb von 24 Stunden."
+    },
+    {
+      "question": "Wie lade ich Freunde zu meiner Reise ein?",
+      "answer": "Teile deinen einzigartigen Reise-Link mit Freunden per E-Mail, WhatsApp oder einer beliebigen Messaging-App. Sie können sofort beitreten, ohne ein Konto zu erstellen."
+    }
+  ]
+}

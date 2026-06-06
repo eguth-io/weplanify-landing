@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Zaplanuj wyjazd rodzinny — planer wakacji dla rodzin | WePlanify",
+    "description": "Zaplanuj kolejne wakacje rodzinne z WePlanify. Koordynuj między pokoleniami, zarządzaj wspólnymi budżetami, głosujcie na atrakcje i buduj plan podróży, na który wszyscy się zgadzają."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Wyjazd rodzinny"
+  },
+  "hero": {
+    "tag": "Podróże rodzinne",
+    "title": "Zaplanuj wyjazd rodzinny, który wszyscy naprawdę pokochają",
+    "intro": "Od dziadków po maluchy — wyjazdy rodzinne oznaczają różne potrzeby, różne budżety i różne pomysły na dobrą zabawę. Oto, jak sprawić, by to zadziałało, nie tracąc zmysłów.",
+    "readTime": "8 min czytania"
+  },
+  "challenge": {
+    "p1": "Wyjazdy rodzinne to najlepszy rodzaj podróży — i najtrudniejszy do zorganizowania. Tata chce wędrówek, mama chce plaży, nastolatki chcą Wi-Fi, dzieci chcą parku wodnego, a babcia chce po prostu, żeby wszyscy zasiedli razem do kolacji. Znalezienie planu, który zadziała w trzech pokoleniach, bez arkuszy kalkulacyjnych i załamania na grupowym czacie? Oto prawdziwe wakacyjne wyzwanie.",
+    "p2": "Potem są pieniądze. Nocleg dla 10+ osób. Atrakcje dla wszystkich grup wiekowych. Posiłki, które zadowolą każdego, od wybrednego pięciolatka po wegańską ciotkę. Gdy kilka gospodarstw domowych dzieli koszty, śledzenie, kto za co zapłacił, staje się pracą na pełen etat — a nikt nie chce być tym, kto prosi wujka Marca o jego część za Airbnb.",
+    "p3": "WePlanify daje Twojej rodzinie jedną wspólną przestrzeń do planowania, głosowania, budżetowania i pakowania — żeby organizator nie wypalił się, zanim wyjazd w ogóle się zacznie."
+  },
+  "toc": {
+    "title": "Na tej stronie",
+    "byAge": "Planowanie według grup wiekowych",
+    "howHelps": "Jak pomaga WePlanify",
+    "destination": "Wybór odpowiedniego kierunku",
+    "budget": "Budżetowanie wyjazdu wielopokoleniowego",
+    "faq": "Najczęściej zadawane pytania"
+  },
+  "byAge": {
+    "title": "Planowanie według grup wiekowych",
+    "items": [
+      { "age": "0–4", "title": "Niemowlęta i maluchy", "text": "Trzymaj się blisko, zachowaj elastyczność. Krótkie loty lub przejazdy, nocleg z dostępem do kuchni i harmonogram z hojnymi oknami na drzemki. Lista rzeczy do spakowania jest kluczowa — wspólne listy chronią przed zapomnieniem tej jednej rzeczy, której naprawdę potrzebujesz.", "color": "bg-[#61DBD5]" },
+      { "age": "5–12", "title": "Dzieci", "text": "Złoty wiek podróży rodzinnych. Są ciekawe, elastyczne i podekscytowane wszystkim. Mieszaj zorganizowane atrakcje (parki wodne, muzea, rejsy łodzią) ze swobodnym odkrywaniem. Korzystaj z ankiet, by mogły głosować na atrakcje — poczują się uwzględnione, a Ty unikniesz napadów złości.", "color": "bg-[#EEF899]" },
+      { "age": "13–17", "title": "Nastolatki", "text": "Chcą niezależności, ale wciąż potrzebują struktury. Wbuduj w plan podróży wolny czas, w którym mogą odkrywać na własną rękę. Daj im głos w planowaniu — jeśli pomogły wybrać restaurację, zdecydowanie rzadziej będą na nią narzekać.", "color": "bg-[#F6391A]" },
+      { "age": "60+", "title": "Dziadkowie", "text": "Liczą się komfort, tempo i dostępność. Unikaj przeładowanych dni. Uwzględnij opcje na odpoczynek obok grupowych atrakcji — poranek w kawiarni, gdy inni wędrują, jest zupełnie w porządku. Widoczny z wyprzedzeniem pełny plan podróży pomaga im przygotować się mentalnie i fizycznie.", "color": "bg-[#61DBD5]" }
+    ]
+  },
+  "howHelps": {
+    "title": "Jak WePlanify pomaga rodzinom",
+    "items": [
+      { "title": "Każdy ma głos", "desc": "Kierunek, atrakcje, restauracje — twórz ankiety i pozwól każdemu członkowi rodziny (tak, nawet dzieciom) się wypowiedzieć. Wyniki są natychmiastowe i ostateczne. Koniec z debatami w kółko przy stole.", "link": "/features/polls" },
+      { "title": "Jeden wspólny plan podróży", "desc": "Budujcie plan dzień po dniu razem. Oznaczaj atrakcje według dostosowania do wieku, by każdy wiedział, co jest dla całej rodziny, a co opcjonalne. Zmiany synchronizują się w czasie rzeczywistym — bez nieaktualnych PDF-ów.", "link": "/features/planning" },
+      { "title": "Budżet bez niezręczności", "desc": "Śledź wspólne wydatki między gospodarstwami domowymi. Rejestruj, kto za co zapłacił, dziel koszty jak chcesz i widz saldo w czasie rzeczywistym. Rozmowa o pieniądzach odbywa się raz, a nie dwadzieścia razy.", "link": "/features/budget" },
+      { "title": "Koordynacja pakowania", "desc": "Twórz wspólne listy rzeczy do spakowania, żeby trzy rodziny nie pojawiły się z pięcioma butelkami kremu z filtrem i bez apteczki. Przypisuj wspólne rzeczy konkretnym osobom i odhaczaj je w miarę pakowania.", "link": "/features/packing" }
+    ]
+  },
+  "pullQuote": "Najlepsze wakacje rodzinne to nie te, na których wszystko idzie idealnie — to te, na których każdy poczuł się uwzględniony w planowaniu.",
+  "destination": {
+    "title": "Wybór odpowiedniego kierunku dla rodzin",
+    "p1": "Wybór kierunku, gdy podróżujesz jako para, to jedno. Wybór takiego, który zadziała dla niemowlaka, dwojga nastolatków i dziadków z chorymi kolanami, to zupełnie inna gra. Pierwszym filtrem powinna być zawsze praktyka: jak długi jest lot? Wszystko powyżej czterech godzin z maluchem zasługuje na poważne przemyślenie. Jeśli połowa grupy ma ograniczoną mobilność, miasto zbudowane na wzgórzach lub brukowanych uliczkach może wyglądać uroczo na zdjęciach, ale drugiego dnia będzie męczarnią.",
+    "p2": "Dostęp do opieki zdrowotnej ma większe znaczenie, niż większość ludzi sądzi. Podróżowanie z małymi dziećmi lub starszymi krewnymi oznacza, że musisz wiedzieć, gdzie jest najbliższy szpital i czy Twoje ubezpieczenie obejmuje dany kraj. Kierunki z dobrą infrastrukturą turystyczną — Portugalia, Japonia, Chorwacja — zwykle dobrze wypadają zarówno pod względem przyjazności rodzinom, jak i dostępności medycznej.",
+    "p3": "Pomyśl o noclegu wcześnie. Rodziny potrzebują przestrzeni — nie tylko pokoi, ale wspólnych miejsc, gdzie grupa może się zebrać, nie siedząc sobie na głowie. Willa z basenem, duży gîte lub sąsiadujące apartamenty często sprawdzają się lepiej niż blok pokoi hotelowych. Szukaj miejsc z dostępem do kuchni: jedzenie trzech posiłków dziennie na mieście z dziećmi szybko robi się drogie i męczące."
+  },
+  "budget": {
+    "title": "Budżetowanie wyjazdu wielopokoleniowego",
+    "p1": "Pieniądze to moment, w którym wyjazdy rodzinne robią się niezręczne. Dziadkowie mogą chcieć ładnego hotelu ze śniadaniem w cenie. Rodzice liczą każde euro, bo właśnie zapłacili za czesne. Młode pary bez dzieci nie rozumieją, dlaczego willa musi tyle kosztować. A nikt nie chce być tym, kto poruszy temat budżetu — więc to się jątrzy, aż ktoś pasywno-agresywnie przeleje nie tę kwotę. Rozwiązanie jest proste: porozmawiajcie o pieniądzach, zanim cokolwiek zarezerwujecie, i korzystajcie ze wspólnego narzędzia, żeby liczby były widoczne dla wszystkich."
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      { "q": "W jakim wieku najlepiej zacząć rodzinne wyjazdy grupowe?", "a": "Każdy wiek się sprawdza, ale logistyka znacząco się zmienia. Poniżej 5 lat trzymaj kierunki blisko, a harmonogramy elastyczne. Wiek 5–12 to złoty środek na przygodę — dzieci są ciekawe i elastyczne. Nastolatki wolą więcej niezależności, więc wbuduj wolny czas. WePlanify pozwala układać plan podróży inaczej dla każdej grupy wiekowej w ramach tego samego wyjazdu." },
+      { "q": "Jak radzić sobie z różnymi budżetami w rodzinie?", "a": "Wyjazdy z dalszą rodziną często oznaczają bardzo różne sytuacje finansowe. Kluczem jest przejrzystość. Skorzystaj z narzędzia do śledzenia budżetu w WePlanify, by oddzielić wspólne koszty (nocleg, transport) od opcjonalnych atrakcji. Niektóre rodziny tworzą wspólną kasę na grupowe posiłki, pozwalając poszczególnym gospodarstwom domowym samodzielnie ogarniać własne dodatki." },
+      { "q": "Z jakim wyprzedzeniem powinniśmy planować wakacje rodzinne?", "a": "Przy wyjazdach krajowych zwykle wystarczą 2–3 miesiące. Wyjazdy zagraniczne z dalszą rodziną wymagają minimum 4–6 miesięcy — każdy potrzebuje czasu, by złożyć wniosek o urlop, rozplanować budżet i ogarnąć paszporty. Załóż podróż w WePlanify wcześnie, nawet jeśli szczegóły nie są ostateczne. Wspólna przestrzeń podtrzymuje rozpęd." },
+      { "q": "Jak wybrać kierunek, który zadziała dla wszystkich grup wiekowych?", "a": "Korzystajcie z ankiet. Serio. Pozwól każdemu gospodarstwu domowemu zaproponować dwie opcje, a potem głosujcie. Ankiety grupowe WePlanify usuwają presję społeczną debat na żywo. Skup się na kierunkach z różnorodnością — miejscach, gdzie dziadkowie mogą odpocząć, podczas gdy dzieci odkrywają, a rodzice dostają mieszankę obu." },
+      { "q": "Co jeśli członkowie rodziny nie zgadzają się co do planu podróży?", "a": "Wbuduj w plan zasadę 70/30: 70% zorganizowanych grupowych atrakcji, 30% wolnego czasu, w którym każda podgrupa robi swoje. Nie każda chwila musi być wspólna. Poranek przy basenie dla dzieci, podczas gdy dziadkowie zwiedzają muzeum, jest zupełnie w porządku — i często lepszy dla wszystkich." },
+      { "q": "Czy WePlanify obsługuje wyjazdy rodzinne z wielu gospodarstw domowych?", "a": "Tak. Każdy członek rodziny dołącza do tej samej podróży wspólnym linkiem. Wszyscy widzą plan podróży, głosują w ankietach i śledzą wspólne wydatki. Możesz układać plan podróży według dni, z wyraźnie oznaczonymi zarówno grupowymi atrakcjami, jak i opcjami dla podgrup." }
+    ]
+  },
+  "discover": {
+    "title": "Odkryj więcej",
+    "tripWithFriends": { "title": "Wyjazd ze znajomymi", "desc": "Zaplanuj wyjazd grupowy ze znajomymi bez wysiłku.", "cta": "Czytaj dalej →" },
+    "roadTrip": { "title": "Road trip", "desc": "Zaplanuj grupowy road trip ze wspólnymi trasami i budżetami.", "cta": "Czytaj dalej →" },
+    "groupGuide": { "title": "Poradnik wyjazdu grupowego", "desc": "Kompletny przewodnik krok po kroku.", "cta": "Przeczytaj poradnik →" },
+    "bestApps": { "title": "Najlepsze aplikacje do podróży grupowych", "desc": "Najlepsze narzędzia do wspólnego planowania wyjazdów.", "cta": "Przeczytaj artykuł →" }
+  },
+  "cta": {
+    "title": "Twój wyjazd rodzinny zaczyna się tutaj",
+    "subtitle": "Zbierz wszystkich na tej samej stronie — dosłownie. Zacznijcie planować kolejne wakacje rodzinne razem.",
+    "button": "Zacznij planować"
+  },
+  "jsonld": {
+    "articleHeadline": "Zaplanuj wyjazd rodzinny, który wszyscy pokochają"
+  }
+}

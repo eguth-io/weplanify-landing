@@ -1,0 +1,22 @@
+{
+  "copy": {
+    "heroTitle": "机票、火车、汽车：",
+    "heroTitleHighlight": "不再弄丢车票",
+    "heroSubtitle": "转发你的确认邮件，我们会自动提取一切。",
+    "importTitle": "自动导入",
+    "importSubtitle": "连接你的邮箱或扫描你的确认信息 —— 一切自动导入。",
+    "tickets": [
+      { "type": "flight", "code": "AF1234", "details": "巴黎 → 里斯本 —— 4 月 15 日" },
+      { "type": "train", "code": "CP5678", "details": "里斯本 → 波尔图 —— 4 月 18 日" },
+      { "type": "hotel", "code": "BOOKING-9012", "details": "波尔图酒店 —— 4 晚" }
+    ],
+    "syncTitle": "与你的行程同步",
+    "syncSubtitle": "交通自动整合进你的日程。",
+    "timeline": [
+      { "time": "08:45", "event": "航班 CDG → LIS", "icon": "✈️", "color": "#61DBD5" },
+      { "time": "10:30", "event": "抵达里斯本", "icon": "📍", "color": "#F6391A" },
+      { "time": "11:00", "event": "酒店接送", "icon": "🚕", "color": "#EEF899" },
+      { "time": "14:00", "event": "入住阿尔法玛酒店", "icon": "🏨", "color": "#8B5CF6" }
+    ]
+  }
+}

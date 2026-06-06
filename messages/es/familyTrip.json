@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Planifica un viaje en familia — Planificador de vacaciones para familias | WePlanify",
+    "description": "Planifica tus próximas vacaciones en familia con WePlanify. Coordina entre generaciones, gestiona presupuestos compartidos, vota actividades y construye un itinerario con el que todos estén de acuerdo."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Viaje en familia"
+  },
+  "hero": {
+    "tag": "Viajes en familia",
+    "title": "Planifica un viaje en familia que todos vayan a adorar de verdad",
+    "intro": "De los abuelos a los más pequeños, los viajes en familia significan necesidades distintas, presupuestos distintos e ideas distintas de lo que es divertido. Aquí te explicamos cómo lograrlo sin perder la cabeza.",
+    "readTime": "8 min de lectura"
+  },
+  "challenge": {
+    "p1": "Los viajes en familia son el mejor tipo de viaje — y el más difícil de organizar. Papá quiere hacer senderismo, mamá quiere la playa, los adolescentes quieren wifi, los niños quieren un parque acuático y la abuela solo quiere a todos en la misma mesa para cenar. ¿Encontrar un plan que funcione para tres generaciones sin hojas de cálculo ni un colapso del chat de grupo? Ese es el verdadero reto de las vacaciones.",
+    "p2": "Y luego está el dinero. Alojamiento para más de 10 personas. Actividades para todas las edades. Comidas que satisfagan a todos, desde el niño de cinco años quisquilloso hasta la tía vegana. Cuando varios hogares comparten gastos, llevar la cuenta de quién pagó qué se convierte en un trabajo a tiempo completo — y nadie quiere ser quien le pida al tío Marc su parte del Airbnb.",
+    "p3": "WePlanify le da a tu familia un único espacio compartido para planificar, votar, presupuestar y hacer las maletas — para que el organizador no se queme antes incluso de empezar el viaje."
+  },
+  "toc": {
+    "title": "En esta página",
+    "byAge": "Planificar por grupo de edad",
+    "howHelps": "Cómo ayuda WePlanify",
+    "destination": "Elegir el destino adecuado",
+    "budget": "Presupuestar un viaje multigeneracional",
+    "faq": "Preguntas frecuentes"
+  },
+  "byAge": {
+    "title": "Planificar por grupo de edad",
+    "items": [
+      { "age": "0–4", "title": "Bebés y niños pequeños", "text": "Mantenlo cerca, mantenlo flexible. Vuelos o trayectos cortos, alojamiento con acceso a cocina y un horario con amplias ventanas para las siestas. La lista de equipaje es fundamental — las listas compartidas evitan que olvides lo único que realmente necesitas.", "color": "bg-[#61DBD5]" },
+      { "age": "5–12", "title": "Niños", "text": "La edad dorada de los viajes en familia. Son curiosos, adaptables y se entusiasman con todo. Combina actividades estructuradas (parques acuáticos, museos, paseos en barco) con exploración libre. Usa encuestas para dejarles votar las actividades — se sentirán incluidos y evitarás las rabietas.", "color": "bg-[#EEF899]" },
+      { "age": "13–17", "title": "Adolescentes", "text": "Quieren independencia pero aún necesitan estructura. Incluye tiempo libre en el itinerario donde puedan explorar por su cuenta. Dales voz en la planificación — si ayudaron a elegir el restaurante, es mucho menos probable que se quejen de él.", "color": "bg-[#F6391A]" },
+      { "age": "60+", "title": "Abuelos", "text": "La comodidad, el ritmo y la accesibilidad importan. Evita los días demasiado cargados. Incluye opciones de descanso junto a las actividades de grupo — una mañana en una cafetería mientras los demás hacen senderismo está perfectamente bien. Tener el itinerario completo visible con antelación les ayuda a prepararse mental y físicamente.", "color": "bg-[#61DBD5]" }
+    ]
+  },
+  "howHelps": {
+    "title": "Cómo ayuda WePlanify a las familias",
+    "items": [
+      { "title": "Todos tienen voto", "desc": "Destino, actividades, restaurantes — crea encuestas y deja que cada miembro de la familia (sí, incluso los niños) opine. Los resultados son instantáneos y definitivos. Se acabaron los debates circulares en la mesa.", "link": "/features/polls" },
+      { "title": "Un itinerario compartido", "desc": "Construid juntos el plan día a día. Marca las actividades por idoneidad de edad para que todos sepan qué es para toda la familia y qué es opcional. Los cambios se sincronizan en tiempo real — sin PDFs desactualizados.", "link": "/features/planning" },
+      { "title": "Presupuesto sin incomodidades", "desc": "Lleva la cuenta de los gastos compartidos entre hogares. Registra quién pagó qué, reparte los costes como queráis y mira el saldo en tiempo real. La conversación sobre el dinero ocurre una vez, no veinte.", "link": "/features/budget" },
+      { "title": "Coordinación del equipaje", "desc": "Crea listas de equipaje compartidas para que tres familias no aparezcan con cinco botes de protector solar y ningún botiquín. Asigna los artículos de grupo a personas concretas y márcalos a medida que hacéis las maletas.", "link": "/features/packing" }
+    ]
+  },
+  "pullQuote": "Las mejores vacaciones en familia no son aquellas en las que todo sale a la perfección — son aquellas en las que todos se sintieron incluidos en la planificación.",
+  "destination": {
+    "title": "Elegir el destino adecuado para familias",
+    "p1": "Elegir un destino cuando viajas en pareja es una cosa. Elegir uno que funcione para un bebé, dos adolescentes y unos abuelos con las rodillas mal es un juego completamente distinto. El primer filtro siempre debería ser práctico: ¿cuánto dura el vuelo? Cualquier cosa de más de cuatro horas con un niño pequeño merece una reflexión seria. Si la mitad del grupo tiene movilidad limitada, una ciudad construida sobre colinas o adoquines puede parecer encantadora en las fotos pero resultar penosa al segundo día.",
+    "p2": "El acceso a la asistencia sanitaria importa más de lo que la mayoría piensa. Viajar con niños pequeños o familiares mayores significa que necesitas saber dónde está el hospital más cercano y si tu seguro cubre el país. Los destinos con buena infraestructura turística — Portugal, Japón, Croacia — suelen puntuar bien tanto en lo familiar como en la accesibilidad médica.",
+    "p3": "Piensa en el alojamiento pronto. Las familias necesitan espacio — no solo habitaciones, sino zonas comunes donde el grupo pueda reunirse sin estar unos encima de otros. Una villa con piscina, un gîte grande o apartamentos contiguos suelen funcionar mejor que un bloque de habitaciones de hotel. Busca lugares con acceso a cocina: comer fuera tres veces al día con niños se vuelve caro y agotador muy rápido."
+  },
+  "budget": {
+    "title": "Presupuestar un viaje multigeneracional",
+    "p1": "El dinero es donde los viajes en familia se vuelven incómodos. Puede que los abuelos quieran un buen hotel con desayuno incluido. Los padres vigilan cada euro porque acaban de pagar las tasas escolares. Las parejas jóvenes sin hijos no entienden por qué la villa tiene que costar tanto. Y nadie quiere ser quien saque el tema del presupuesto — así que se enquista hasta que alguien envía pasivo-agresivamente la cantidad equivocada por Venmo. La solución es sencilla: hablad del dinero antes de reservar nada y usad una herramienta compartida para que las cifras sean visibles para todos."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Cuál es la mejor edad para empezar a hacer viajes en grupo familiar?", "a": "Cualquier edad funciona, pero la logística cambia significativamente. Por debajo de los 5, mantén los destinos cerca y los horarios flexibles. De 5 a 12 años es el punto óptimo para la aventura — los niños son curiosos y adaptables. Los adolescentes prefieren más independencia, así que incluye tiempo libre. WePlanify te permite estructurar el itinerario de forma distinta para cada grupo de edad dentro del mismo viaje." },
+      { "q": "¿Cómo se gestionan los distintos presupuestos dentro de una familia?", "a": "Los viajes con la familia extensa a menudo implican situaciones económicas muy diferentes. La clave es la transparencia. Usa el control de presupuesto de WePlanify para separar los costes compartidos (alojamiento, transporte) de las actividades opcionales. Algunas familias crean un bote compartido para las comidas de grupo y dejan que cada hogar se ocupe de sus propios extras." },
+      { "q": "¿Con cuánta antelación deberíamos planificar unas vacaciones en familia?", "a": "Para viajes nacionales, 2-3 meses suele ser suficiente. Los viajes internacionales con la familia extensa necesitan de 4 a 6 meses como mínimo — todos necesitan tiempo para pedir vacaciones, presupuestar y gestionar pasaportes. Empieza un viaje en WePlanify pronto aunque los detalles no estén cerrados. Tener un espacio compartido mantiene viva la motivación." },
+      { "q": "¿Cómo elegimos un destino que funcione para todas las edades?", "a": "Usa encuestas. En serio. Deja que cada hogar sugiera dos opciones y luego votad. Las encuestas grupales de WePlanify eliminan la presión social de los debates en persona. Céntrate en destinos con variedad — lugares donde los abuelos puedan relajarse mientras los niños exploran y los padres consigan una mezcla de ambas cosas." },
+      { "q": "¿Qué pasa si los miembros de la familia no se ponen de acuerdo con el itinerario?", "a": "Incorpora la regla del 70/30 a tu plan: 70% actividades de grupo estructuradas, 30% tiempo libre en el que cada subgrupo hace lo suyo. No todos los momentos tienen que ser en conjunto. Una mañana en la piscina para los niños mientras los abuelos visitan un museo está perfectamente bien — y a menudo es mejor para todos." },
+      { "q": "¿WePlanify puede gestionar viajes familiares de varios hogares?", "a": "Sí. Cada miembro de la familia se une al mismo viaje con un enlace compartido. Todos pueden ver el itinerario, votar en las encuestas y llevar la cuenta de los gastos compartidos. Puedes organizar el itinerario por día con las actividades de grupo y las opciones de subgrupo claramente marcadas." }
+    ]
+  },
+  "discover": {
+    "title": "Descubre más",
+    "tripWithFriends": { "title": "Viaje con amigos", "desc": "Planifica un viaje en grupo con amigos sin esfuerzo.", "cta": "Leer más →" },
+    "roadTrip": { "title": "Road trip", "desc": "Planifica un road trip en grupo con rutas y presupuestos compartidos.", "cta": "Leer más →" },
+    "groupGuide": { "title": "Guía de viajes en grupo", "desc": "La guía completa paso a paso.", "cta": "Leer la guía →" },
+    "bestApps": { "title": "Mejores apps de viajes en grupo", "desc": "Las mejores herramientas para planificar viajes juntos.", "cta": "Leer el artículo →" }
+  },
+  "cta": {
+    "title": "Tu viaje en familia empieza aquí",
+    "subtitle": "Poned a todos en la misma página — literalmente. Empezad a planificar juntos vuestras próximas vacaciones en familia.",
+    "button": "Empezar a planificar"
+  },
+  "jsonld": {
+    "articleHeadline": "Planifica un viaje en familia que todos adorarán"
+  }
+}

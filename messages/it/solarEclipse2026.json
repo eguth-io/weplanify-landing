@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Eclissi solare totale 12 ago 2026: pianificatore di viaggio per Spagna e Islanda",
+    "description": "Tutto sull'eclissi solare totale del 12 agosto 2026: percorso della totalità attraverso l'Islanda e la Spagna settentrionale, quando e dove la totalità è più lunga, occhiali ISO 12312-2, opzioni in crociera e come organizzare il viaggio dalla Francia con un gruppo."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Pianificatore di viaggio Eclissi solare 2026"
+  },
+  "hero": {
+    "tag": "Guida all'astroturismo e pianificatore di viaggio · Agosto 2026",
+    "title": "Eclissi solare totale, 12 agosto 2026: pianificatore di viaggio per Islanda e Spagna",
+    "readTime": "10 min di lettura",
+    "ctaButton": "Organizza il nostro viaggio per l'eclissi",
+    "ctaNote": "Gratis · creato per i gruppi · EN/FR",
+    "imageAlt": "Eclissi solare totale del 12 agosto 2026 — occhiali da eclissi alzati verso la corona sopra un campo di grano spagnolo"
+  },
+  "facts": {
+    "heading": "Dati dell'eclissi",
+    "dateLabel": "Data",
+    "dateValue": "Mer 12 ago",
+    "totalityLabel": "Totalità massima",
+    "totalitySub": "al largo dell'Islanda",
+    "pathLabel": "Percorso",
+    "pathSub": "+ Groenlandia",
+    "lastLabel": "Ultima in Europa",
+    "lastSub": "27 anni fa"
+  },
+  "stakes": {
+    "p1": "Le eclissi solari totali visibili dall'Europa continentale accadono all'incirca una volta a generazione. L'ultima fu l'11 agosto 1999, quando un'enorme fascia di Francia piombò nel buio per circa due minuti in piena estate. L'eclissi del 2026 salta del tutto la Francia — il suo percorso di totalità attraversa la Groenlandia orientale, l'Islanda occidentale e meridionale, poi spazza la Spagna settentrionale al tramonto prima di terminare nel Mediterraneo. La Francia, pur essendo così vicina, vede solo un'eclissi parziale: profonda (92-99,5%) ma senza corona, senza buio, e il sole resta pericoloso da guardare per tutta la fase. Per assistere alla vera eclissi totale — e alla silenziosa, indimenticabile corona — devi entrare nel percorso spagnolo o volare a nord verso l'Islanda. Dopo questa, altre due eclissi totali attraversano la Spagna (il 2 agosto 2027, poi una anulare il 26 gennaio 2028), facendo del 2026-2028 il singolare 'triplo spagnolo' dell'astroturismo europeo.",
+    "p2": "WePlanify è il centro di comando condiviso e gratuito per i gruppi a caccia dell'eclissi — sondaggio sul luogo, volo o treno, alloggio, programma dell'osservazione del giorno J e budget condiviso in un unico posto, in inglese o francese."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "path": "Il percorso della totalità",
+    "france": "La Francia vedrà l'eclissi?",
+    "spainVsIceland": "Spagna o Islanda o crociera",
+    "safety": "Sicurezza e occhiali",
+    "logistics": "Viaggio e alloggio",
+    "planning": "Organizzare il viaggio con il gruppo",
+    "budget": "Consigli sul budget",
+    "faq": "Domande frequenti"
+  },
+  "path": {
+    "title": "Il percorso della totalità",
+    "subtitle": "Dai fiordi orientali della Groenlandia al Mediterraneo, in circa 50 minuti. La durata varia enormemente a seconda di dove ti trovi.",
+    "items": [
+      { "stop": "Groenlandia — fiordi orientali", "desc": "L'ombra tocca per la prima volta la Terra sopra la Blosseville Coast e attraversa lo Scoresby Sound, con circa 1 min 45 s di totalità. L'unico villaggio della regione, Ittoqqortoormiit, si trova ~50 km a sud della linea centrale e resta fuori dalla totalità. L'accesso pratico ai viaggi è limitato — questa tappa è per gli specialisti." },
+      { "stop": "Islanda — Westfjords, Snæfellsnes, Reykjavík", "desc": "L'ombra tocca terra al faro di Straumnes nei Westfjords alle 17:43:28 UTC. Látrabjarg ottiene 2 min 13 s. La penisola di Snæfellsnes, inclusa l'iconica montagna Kirkjufell, si trova nel percorso. A Reykjavík la totalità inizia alle 17:48:12 UTC per circa 1 minuto, con il sole a ~24,5° sopra l'orizzonte occidentale. Il tempo totale di Islanda nell'ombra è di 6 min 48 s." },
+      { "stop": "Spagna — dalla Galizia a Maiorca", "desc": "L'ombra raggiunge A Coruña verso le 20:26 CEST (sole a ~11° di altezza), Bilbao alle 20:27 (~30 s di totalità, sole a ~8°), Saragozza nella stessa finestra (~1 min 25 s), Valencia dalle 20:32 (~1 minuto) e Palma di Maiorca alle 20:31-20:32 (~1 min 36 s, sole a ~4° sopra l'orizzonte, circa 10 minuti prima del tramonto). Madrid e Barcellona si trovano appena fuori dalla fascia — non hanno la totalità." },
+      { "stop": "Dentro la fascia ma facili da perdere", "desc": "Santander, Burgos, Valladolid, Palencia e León sono tutte nella fascia di totalità. Più sei a nord e a ovest, leggermente più alto è il sole — ma più nuvolosa è la climatologia. La Valle dell'Ebro (Huesca, Saragozza) si trova nel punto statisticamente ideale per la copertura nuvolosa di agosto e un orizzonte occidentale piatto." },
+      { "stop": "La durata massima è sull'oceano aperto", "desc": "Il punto di durata massima — 2 minuti 18,2 secondi — è a circa 45 km a ovest di Látrabjarg, in mare aperto. Nessuna isola, nessun porto. Gli unici modi per essere lì sono una crociera per l'eclissi o un volo charter." }
+    ]
+  },
+  "france": {
+    "title": "La Francia vedrà l'eclissi?",
+    "subtitle": "Una parziale profonda — ma non una totale. Importante essere chiari su questo con il gruppo, soprattutto con chi ricorda l'eclissi del 1999 dalla Francia.",
+    "partialLabel": "Oscuramento parziale",
+    "partialTitle": "Città per città",
+    "partialItems": [
+      "→ Biarritz: fino al 99,5% (la più vicina al percorso)",
+      "→ Marsiglia / Nizza: ~95%",
+      "→ Bordeaux / Tolosa: ~96-97%",
+      "→ Parigi: 92,2%",
+      "→ Orario: ~19:30 - ~20:30 ora di Parigi, sole basso"
+    ],
+    "missLabel": "Perché il 99% non è il 100%",
+    "missTitle": "Cosa ti perdi",
+    "missItems": [
+      "→ La corona — visibile solo quando il sole è coperto al 100%",
+      "→ Il buio — la notte non cala davvero al 99%",
+      "→ La finestra sicura a occhio nudo — mai durante la parziale, indossa sempre gli occhiali",
+      "→ Il calo della temperatura e il silenzio degli uccelli",
+      "→ L'effetto tramonto a 360° sull'orizzonte"
+    ]
+  },
+  "spainVsIceland": {
+    "title": "Spagna o Islanda o crociera",
+    "subtitle": "Tre opzioni oneste, ciascuna con un vero compromesso. Quella giusta dipende da cosa ottimizzi — probabilità di cielo sereno, durata della totalità o esperienza.",
+    "option1": {
+      "tag": "Opzione 1",
+      "title": "Spagna settentrionale interna",
+      "desc": "La Valle dell'Ebro, Huesca, Saragozza e le pianure circostanti — le migliori statistiche di copertura nuvolosa di agosto su tutto il percorso (~35% di rischio nuvole). Orizzonte occidentale piatto, accesso facile in auto, hotel di fascia media. Compromesso: la totalità è breve (~1-1,5 min) e il sole è basso (8-11°)."
+    },
+    "option2": {
+      "tag": "Opzione 2",
+      "title": "Maiorca",
+      "desc": "Palma vede ~1 min 36 s di totalità, la più lunga di qualsiasi città facilmente raggiungibile. Ambientazione di mare con un orizzonte marino occidentale libero. Compromesso: il sole è molto basso (~4°), ~10 min prima del tramonto, quindi qualsiasi scogliera o edificio a ovest rovina la vista. Le tariffe degli hotel sono già circa triplicate per la notte dell'11-12 agosto."
+    },
+    "option3": {
+      "tag": "Opzione 3",
+      "title": "Islanda o crociera",
+      "desc": "L'Islanda offre l'esperienza più drammatica e il sole più alto (~24° a Reykjavík) ma si paga in rischio nuvole (70-85% di copertura media ad agosto). Una crociera mediterranea per l'eclissi (Costa da ~450€, CFC Renaissance da 1.279€, Princess, Holland America) scambia un punto fisso con la flessibilità meteorologica del giorno."
+    }
+  },
+  "midCta": {
+    "title": "Spagna, Maiorca o Islanda?",
+    "subtitle": "Lancia il sondaggio sulla destinazione con il gruppo, poi precompila voli e alloggio.",
+    "button": "Lancia il sondaggio"
+  },
+  "safety": {
+    "title": "Sicurezza e occhiali ISO 12312-2",
+    "subtitle": "La retinopatia solare è silenziosa — non senti il danno finché non è fatto. Procurati gli occhiali giusti per tempo e porta delle riserve.",
+    "card1": {
+      "title": "La certificazione da cercare",
+      "desc": "ISO 12312-2:2015 — stampata all'interno degli occhiali — più la marcatura CE per l'Europa. Qualsiasi cosa senza entrambe è pericolosa, compresi il vetro da saldatore molto scuro sotto la gradazione 14, le pellicole radiografiche, il vetro affumicato, i negativi fotografici completamente esposti o gli occhiali da sole sovrapposti. Gli occhiali più vecchi di tre anni vanno sostituiti; il filtro si degrada."
+    },
+    "card2": {
+      "title": "Dove acquistare in Francia",
+      "desc": "Farmacie (le vendite anticipate aprono di solito a giugno), Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs) e MyEclipseGlasses o VOLTNGO su Amazon. Ordina prima della corsa di giugno — la disponibilità si riduce a luglio man mano che la copertura mediatica aumenta. Un paio a persona, più un paio di riserva per gruppo di quattro."
+    },
+    "card3": {
+      "title": "Smartphone e fotocamera",
+      "desc": "Puntare la fotocamera di un telefono verso l'eclissi parziale senza un filtro solare può danneggiare il sensore e non è sicuro nemmeno attraverso lo schermo. Usa un filtro solare a vite o magnetico, oppure accetta che l'eclissi sia uno dei pochi eventi in cui tenere il telefono in tasca è la scelta giusta. Solo durante la totalità (nella fascia di totalità) puoi guardare il sole e fotografare liberamente."
+    }
+  },
+  "logistics": {
+    "title": "Viaggio e alloggio",
+    "subtitle": "Le città principali sono in gran parte prenotate. La mossa è allargare la ricerca a centri più piccoli all'interno del percorso, oppure accettare una guida più lunga il giorno stesso.",
+    "gettingThere": "Come arrivare",
+    "spainLabel": "Spagna",
+    "spainItems": [
+      "→ Parigi → Bilbao: volo diretto breve, ~1h50",
+      "→ Parigi → Bilbao in treno: ~14-15h via Hendaye",
+      "→ Parigi → Saragozza / Valencia / Palma: voli diretti da CDG/ORY",
+      "→ In auto dal sud-ovest della Francia a Bilbao o Pamplona: ~3-5 h",
+      "→ Città principali (Saragozza, Valencia, Palma): hotel quasi esauriti — prova Logroño, Tudela, Castellón"
+    ],
+    "icelandLabel": "Islanda e crociera",
+    "icelandItems": [
+      "→ Parigi CDG → Reykjavík (KEF): ~3h30 diretto, Icelandair (~16 voli/settimana) ed easyJet",
+      "→ Noleggia un'auto a KEF per raggiungere Snæfellsnes (~2h30 di guida)",
+      "→ Hotel di Reykjavík: quasi tutti esauriti, Reykjavik Edition quotato a 4.399$/notte",
+      "→ Crociera per l'eclissi Costa Cruises: 7 notti da ~450€/pers",
+      "→ CFC Renaissance: 6 notti da Marsiglia, da 1.279€/pers"
+    ]
+  },
+  "planning": {
+    "title": "Organizzare il viaggio con il gruppo"
+  },
+  "budget": {
+    "title": "Consigli sul budget",
+    "p2": "Un appartamento con servizi per 4-6 persone in un centro più piccolo all'interno della fascia di totalità (Logroño, Tudela, Castellón sul lato spagnolo; Borgarnes o Stykkishólmur sulla penisola di Snæfellsnes in Islanda) batte regolarmente le camere d'albergo nelle città principali del 40-60%, pur tenendoti pienamente all'interno della totalità. Il compromesso è che le opzioni per la cena si riducono — prenota i ristoranti per il 13 agosto ora, non il giorno stesso.",
+    "p3": "Non lesinare sugli occhiali. Un paio ISO 12312-2 da 5-15€ a persona più una riserva è una delle voci più piccole dell'intero budget, ed è l'unica voce in cui tagliare può davvero ferire qualcuno del gruppo."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      { "q": "Quando e dove posso vedere l'eclissi solare totale del 12 agosto 2026?", "a": "Mercoledì 12 agosto 2026. Il percorso di totalità attraversa la Groenlandia orientale, l'Islanda occidentale (compresi i Westfjords, la penisola di Snæfellsnes e Reykjavík) e un'ampia fascia attraverso la Spagna settentrionale (Galizia, Asturie, Cantabria, Castiglia e León, la Valle dell'Ebro, Valencia e Maiorca). La totalità massima è di 2 minuti 18 secondi — ma quel massimo è sull'oceano aperto a ~45 km a ovest di Látrabjarg, in Islanda. I luoghi abitati ottengono una totalità più breve: Reykjavík ~1 minuto, Saragozza ~1 min 25 s, Palma di Maiorca ~1 min 36 s, Bilbao ~30 secondi. Madrid e Barcellona NON sono nella totalità." },
+      { "q": "La Francia vedrà l'eclissi totale?", "a": "No. La Francia continentale vede solo un'eclissi parziale — ma profonda. Parigi raggiunge il 92,2% di oscuramento, Marsiglia e Nizza circa il 95%, e Biarritz, la città francese più vicina al percorso, arriva fino al 99,5%. La fase parziale va da ~19:30 a ~20:30 ora di Parigi. Senza la totalità non ottieni mai la corona, il buio o la finestra sicura a occhio nudo — e il sole resta pericoloso da guardare per tutto il tempo. Per vedere l'eclissi totale devi entrare in Spagna o volare in Islanda." },
+      { "q": "Islanda o Spagna — qual è il viaggio migliore?", "a": "Statisticamente, la Spagna settentrionale interna (Valle dell'Ebro, Huesca, Saragozza) ha le migliori probabilità di copertura nuvolosa di agosto lungo tutto il percorso — circa il 35% di probabilità di nuvole nelle zone giuste. L'Islanda ha una media più vicina al 70-85% di copertura nuvolosa anche ad agosto. Il compromesso spagnolo: il sole è molto basso (4-11° sopra l'orizzonte — solo ~1 ora prima del tramonto), quindi ti serve una vista occidentale libera (il mare, o una pianura, mai una strada cittadina). Il compromesso islandese: più nuvoloso e più costoso, ma il sole è più alto (~24° a Reykjavík) e l'esperienza della totalità è più isolata e drammatica." },
+      { "q": "E una crociera per l'eclissi?", "a": "Diverse compagnie di crociera hanno posizionato navi nel Mediterraneo occidentale e attorno a Maiorca per dare ai passeggeri la libertà di spostarsi sotto un cielo più sereno il giorno stesso. Costa Cruises gestisce una crociera per l'eclissi di 7 notti da ~450€ a persona. La compagnia francese CFC ha posizionato la sua 'Renaissance' tra le Baleari e la Sardegna, 6 notti da Marsiglia, da circa 1.279€. Anche Princess Cruises e Holland America hanno itinerari a tema eclissi. Il vantaggio è la flessibilità meteorologica; lo svantaggio è che una nave lenta non sempre riesce a sfuggire in tempo a un banco di nuvole." },
+      { "q": "Che tipo di occhiali mi servono?", "a": "Occhiali per l'osservazione solare certificati ISO 12312-2:2015, con la marcatura CE. I normali occhiali da sole non sono sicuri — anche i più scuri lasciano passare abbastanza luce infrarossa e visibile da causare la retinopatia solare. Gli occhiali ISO 12312-2 si vendono nelle farmacie francesi (le vendite anticipate aprono di solito a giugno), su Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs) e tramite MyEclipseGlasses su Amazon. Acquista un paio a persona, controlla la data di stampa (gli occhiali più vecchi di 3 anni vanno sostituiti) e conservali in piano. Solo durante la totalità — e solo se sei effettivamente NELLA totalità — puoi guardare a occhio nudo." },
+      { "q": "Gli hotel sono già esauriti?", "a": "Molti dei posti più ambiti sì. Hotels.com ha segnalato un'impennata del 445% nelle ricerche per le destinazioni dell'eclissi. A Palencia le camere sono state messe in vendita fino a 1.095€ a notte (circa 10 volte il normale). Le tariffe a Maiorca sono circa triplicate per la notte dell'11-12 agosto. Il Reykjavik Edition è stato quotato a 4.399$/notte. I tour operator hanno prenotato Saragozza, Valencia e Bilbao con 18+ mesi di anticipo. Se inizi ora, guarda leggermente fuori dalle città principali — i centri più piccoli all'interno del percorso sono ancora prenotabili." },
+      { "q": "Come si organizza un viaggio per l'eclissi con un gruppo di amici?", "a": "Le eclissi sono brevi — da 30 secondi a 2 minuti a seconda di dove ti trovi — quindi la logistica conta più che per qualsiasi viaggio normale. Decidete come gruppo se ottimizzare per le probabilità di cielo sereno (Valle dell'Ebro, Spagna interna), la durata della totalità (Maiorca) o l'esperienza (Islanda). Fissa il luogo, il trasporto (volo per Bilbao o Reykjavík, oppure treno + auto) e il punto esatto di osservazione prima di prenotare l'alloggio. WePlanify tiene il sondaggio sulla destinazione, il budget e il programma del giorno stesso tutto in un unico posto condiviso." }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "hellfest": { "title": "Pianificatore di viaggio Hellfest 2026", "desc": "Quattro giorni di metal a Clisson, in Francia.", "cta": "Leggi di più →" },
+    "tomorrowland": { "title": "Pianificatore di viaggio Tomorrowland 2026", "desc": "Due weekend a Boom, in Belgio.", "cta": "Leggi di più →" },
+    "tripWithFriends": { "title": "Viaggio con gli amici", "desc": "Organizza qualsiasi viaggio di gruppo senza fatica.", "cta": "Leggi di più →" },
+    "groupGuide": { "title": "Guida ai viaggi di gruppo", "desc": "La guida completa passo dopo passo.", "cta": "Leggi la guida →" }
+  },
+  "cta": {
+    "title": "Costruisci il tuo viaggio per l'eclissi",
+    "subtitle": "Sondaggio sulla destinazione, voli o treno, alloggio nella fascia di totalità, programma del giorno J, budget condiviso — un unico piano, tutto il tuo gruppo sulla stessa pagina.",
+    "button": "Lancia il sondaggio Spagna vs Islanda"
+  },
+  "jsonld": {
+    "articleHeadline": "Eclissi solare totale 12 agosto 2026: pianificatore di viaggio per Islanda e Spagna",
+    "eventName": "Eclissi solare totale del 12 agosto 2026",
+    "eventDescription": "Eclissi solare totale di mercoledì 12 agosto 2026. Il percorso di totalità attraversa la Groenlandia orientale, l'Islanda occidentale e la Spagna settentrionale. Totalità massima 2 minuti 18 secondi al largo della costa islandese. Prima eclissi solare totale visibile dall'Europa continentale dall'11 agosto 1999.",
+    "howToName": "Come organizzare un viaggio per l'eclissi solare totale del 2026",
+    "howToDescription": "A tre mesi dall'evento, ecco come fissare il viaggio: scegli il tuo luogo (probabilità di nuvole vs durata vs esperienza), prenota viaggio e alloggio prima del prossimo rincaro, procurati gli occhiali ISO 12312-2 e pianifica l'ora effettiva dell'osservazione.",
+    "howToSteps": [
+      { "name": "Scegli il tuo luogo — e allinea il gruppo su di esso", "text": "Le tre opzioni oneste sono la Spagna interna (Valle dell'Ebro, ~35% di rischio nuvole, totalità breve), Maiorca (totalità più lunga ma sole molto basso, serve un orizzonte marino) e l'Islanda (alto rischio nuvole ma esperienza drammatica). Lancia un sondaggio di gruppo prima di prenotare qualsiasi cosa — i compromessi dividono le famiglie nella vita reale." },
+      { "name": "Prenota trasporto e alloggio prima del prossimo rincaro", "text": "Parigi-Reykjavík impiega ~3h30 con Icelandair o easyJet da CDG. Parigi-Bilbao è un volo breve o un treno lungo (14-15h via Hendaye). L'alloggio nelle città principali (Saragozza, Reykjavík, Palma) è in gran parte esaurito — guarda i centri più piccoli all'interno del percorso, o un appartamento con servizi per il gruppo." },
+      { "name": "Ordina gli occhiali ISO 12312-2 e il kit di sicurezza", "text": "Un paio certificato a persona, ordinato prima della corsa di giugno. Aggiungi un filtro solare per smartphone se qualcuno vuole fotografare l'eclissi — anche le normali ottiche del telefono non sono sicure puntate verso il sole senza filtro. Porta un paio di riserva per gruppo di quattro: gli occhiali cadono." },
+      { "name": "Pianifica l'osservazione ora per ora", "text": "Sii sul posto almeno 2 ore prima della totalità. In Spagna, la totalità arriva attorno alle 20:27-20:32 CEST con il sole molto basso — esercitati a individuarlo dal tuo punto il giorno prima. Fissa un punto di ritrovo chiaro nel caso il gruppo si divida, e cronometra il viaggio di ritorno all'alloggio: le strade dai punti di osservazione si intasano pochi minuti dopo la fine della totalità." }
+    ]
+  }
+}

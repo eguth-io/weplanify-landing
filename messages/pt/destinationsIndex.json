@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Destinos — Modelos de Viagem em Grupo por Cidade e Caso de Uso | WePlanify",
+    "description": "Itinerários reais e reserváveis para viagens em grupo: despedidas de solteira em Las Vegas e Nashville, Budapeste, Marraquexe, road trips pela Toscana e Andaluzia, fim de semana em Lisboa. Planos dia a dia, locais reais, orçamentos."
+  },
+  "eyebrow": "Destinos",
+  "title": "Modelos de viagem,\nprontos a copiar.",
+  "intro": "Itinerários reais para viagens em grupo reais. Cada destino abaixo é um modelo completo — plano dia a dia, locais verificados, orçamento honesto, lista de bagagem. Copie qualquer um deles para a sua própria viagem na WePlanify e adapte-o ao seu grupo.",
+  "filters": {
+    "all": "Todas as viagens",
+    "bachelorette": "Despedida de solteira",
+    "road-trip": "Road trips",
+    "with-friends": "Com amigos"
+  },
+  "cardCta": "Ver o itinerário →",
+  "ctaTitle": "Não vê o seu destino?",
+  "ctaBody": "Comece uma viagem em branco na WePlanify — convide os seus amigos, construam o itinerário em conjunto, partilhem o orçamento. Grátis.",
+  "ctaButton": "Começar uma viagem gratuitamente",
+  "breadcrumb": {
+    "home": "Início",
+    "destinations": "Destinos"
+  },
+  "days": "dias",
+  "destinationsCount": "{count, plural, one {destino} other {destinos}}"
+}

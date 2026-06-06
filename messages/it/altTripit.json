@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "Alternativa a TripIt: pianificatore gratuito di viaggi di gruppo (2026) | WePlanify",
+    "description": "Cerchi un'alternativa a TripIt pensata per i viaggi di gruppo? WePlanify aggiunge collaborazione in tempo reale, sondaggi condivisi, budget di gruppo e itinerari — gratis, bilingue (EN/FR)."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "alternatives": "Alternative"
+  },
+  "heroTitle": "WePlanify vs TripIt",
+  "heroSubtitle": "Il miglior organizzatore di viaggi di gruppo? (2026)",
+  "heroIntro": "TripIt e WePlanify ti aiutano entrambi a pianificare i viaggi, ma risolvono problemi molto diversi. TripIt organizza le conferme di prenotazione in un itinerario personale. WePlanify è costruito da zero per la collaborazione di gruppo. Ecco come si confrontano.",
+  "verdictTitle": "In breve",
+  "verdict": "TripIt si concentra sull'organizzazione delle conferme di viaggio e degli itinerari personali. WePlanify è creato per la collaborazione di gruppo — sondaggi, budget condivisi e pianificazione insieme. TripIt è pensato prima di tutto per il singolo, WePlanify per il gruppo.",
+  "comparisonTitle": "Confronto funzionalità per funzionalità",
+  "featureLabel": "Funzionalità",
+  "limited": "Solo vista condivisa",
+  "core": "Funzionalità principale",
+  "pro": "Pro (49$/anno)",
+  "freemium": "Freemium (Pro a 49$/anno)",
+  "webApp": "App web",
+  "rows": [
+    {
+      "key": "collab_itinerary",
+      "label": "Itinerario collaborativo",
+      "weplanify": true,
+      "tripit": "limited"
+    },
+    {
+      "key": "polls",
+      "label": "Sondaggi / votazioni di gruppo",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "budget",
+      "label": "Tracker del budget condiviso",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "booking_import",
+      "label": "Importazione prenotazioni (email)",
+      "weplanify": false,
+      "tripit": "core"
+    },
+    {
+      "key": "packing",
+      "label": "Liste per i bagagli",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "flight_alerts",
+      "label": "Avvisi aeroporto / volo",
+      "weplanify": false,
+      "tripit": "pro"
+    },
+    {
+      "key": "discovery",
+      "label": "Scoperta di attività",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "free",
+      "label": "Gratis",
+      "weplanify": true,
+      "tripit": "freemium"
+    },
+    {
+      "key": "french",
+      "label": "Lingua francese",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "mobile",
+      "label": "App mobile",
+      "weplanify": "web_app",
+      "tripit": true
+    },
+    {
+      "key": "realtime",
+      "label": "Collaborazione in tempo reale",
+      "weplanify": true,
+      "tripit": false
+    }
+  ],
+  "midCtaLink": "Prova WePlanify gratis →",
+  "tripitShinesTitle": "Dove TripIt eccelle",
+  "tripitShinesPoints": [
+    {
+      "title": "Importazione automatica delle prenotazioni",
+      "desc": "Inoltra le tue email di conferma e TripIt costruisce automaticamente il tuo itinerario. Voli, hotel, noleggi auto — organizzati in un'unica timeline."
+    },
+    {
+      "title": "Avvisi su voli e aeroporti",
+      "desc": "TripIt Pro invia cambi di gate, notifiche di ritardo e suggerimenti di voli alternativi. Utile per chi vola spesso e ha bisogno di aggiornamenti in tempo reale."
+    },
+    {
+      "title": "App mobile con accesso offline",
+      "desc": "TripIt offre un'app mobile nativa con accesso offline al tuo itinerario, che può essere utile quando viaggi all'estero senza dati."
+    }
+  ],
+  "weplanifyWinsTitle": "Dove WePlanify vince",
+  "weplanifyWinsPoints": [
+    {
+      "title": "Vera collaborazione di gruppo",
+      "desc": "Tutti nel gruppo possono aggiungere destinazioni, proporre attività e modificare l'itinerario in tempo reale. TripIt ti permette solo di condividere una vista in sola lettura."
+    },
+    {
+      "title": "Sondaggi e votazioni",
+      "desc": "Non riuscite a scegliere tra Barcellona e Lisbona? Crea un sondaggio e lascia votare il gruppo. TripIt non ha alcuna funzionalità di voto."
+    },
+    {
+      "title": "Tracker del budget condiviso",
+      "desc": "Tieni traccia delle spese di gruppo, dividi i costi e tieni tutti allineati sul piano finanziario. TripIt non tiene traccia dei budget."
+    },
+    {
+      "title": "Scoperta di attività",
+      "desc": "Sfoglia e aggiungi attività, ristoranti ed esperienze direttamente all'interno di WePlanify. TripIt si concentra sulla logistica, non sulla scoperta."
+    },
+    {
+      "title": "Gratis e bilingue",
+      "desc": "WePlanify è completamente gratuito e disponibile sia in inglese sia in francese. TripIt fa pagare 49$/anno per le sue funzionalità più utili."
+    }
+  ],
+  "whoShouldTitle": "Chi dovrebbe scegliere cosa?",
+  "whoTripit": "Scegli TripIt se sei un viaggiatore d'affari solitario che vuole organizzare automaticamente le conferme dei voli, ricevere avvisi sui cambi di gate e tenere un itinerario personale con accesso offline.",
+  "whoWeplanify": "Scegli WePlanify se stai organizzando un viaggio con amici o familiari e hai bisogno che tutti collaborino all'itinerario, votino le destinazioni e tengano traccia delle spese condivise — il tutto gratis.",
+  "faqTitle": "Domande frequenti",
+  "faqs": [
+    {
+      "q": "Perché passare da TripIt a WePlanify?",
+      "a": "TripIt è progettato per i viaggiatori singoli che gestiscono le prenotazioni. Non supporta sondaggi di gruppo, budget condivisi, liste per i bagagli collaborative o la modifica di gruppo in tempo reale. Se stai organizzando con altre persone, WePlanify fornisce tutti gli strumenti di coordinamento che mancano a TripIt — completamente gratis."
+    },
+    {
+      "q": "Cosa manca a TripIt per i viaggi di gruppo?",
+      "a": "TripIt non offre votazioni di gruppo, tracciamento delle spese condivise, modifica collaborativa dell'itinerario, liste per i bagagli o scoperta di attività. La sua condivisione si limita a viste in sola lettura. WePlanify è costruito interamente attorno alla collaborazione di gruppo."
+    },
+    {
+      "q": "WePlanify è davvero gratuito?",
+      "a": "Sì. Tutte le funzionalità principali — itinerario collaborativo, sondaggi, tracker del budget, liste per i bagagli e scoperta di attività — sono gratuite, senza limiti di prova o paywall nascosti. TripIt fa pagare 49$/anno per le sue funzionalità più utili come gli avvisi sui voli."
+    }
+  ],
+  "ctaTitle": "Pronto a organizzare il tuo prossimo viaggio di gruppo?",
+  "ctaButton": "Inizia gratis",
+  "crossLinksTitle": "Confronta altre alternative",
+  "crossLinks": {
+    "comparison": {
+      "title": "Confronto completo 2026",
+      "desc": "Vedi tutte le alternative a confronto",
+      "cta": "Vedi il confronto"
+    },
+    "guide": {
+      "title": "Guida: organizzare un viaggio di gruppo",
+      "desc": "La guida completa passo dopo passo",
+      "cta": "Leggi la guida"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "规划团体旅行所需的一切",
+  "cards": [
+    {
+      "imagePosition": "right",
+      "title": "探索并向团队提出想法",
+      "description": "直接在应用里查找活动、餐厅、住宿和交通。\n把它们加入行程，或提出来让团队投票。\n\n探索变成协作。",
+      "animation": "ai-globe",
+      "backgroundColor": "#FFFFFF",
+      "ctaLabel": "探索目的地",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#E83F28",
+      "stats": [{ "value": "190+", "label": "可选目的地" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "用投票一起决定",
+      "description": "住在哪儿？\n做什么？\n什么时候出发？\n\n创建一个投票，大家投票，决定就此做出。\n团队向前推进。旅行也是。",
+      "animation": "live-voting",
+      "backgroundColor": "#EEF899",
+      "ctaLabel": "发起投票",
+      "ctaTextColor": "#FFFBF5",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "1000+", "label": "每日投票" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "一份清晰的逐日行程",
+      "description": "旅行的每一天都有条理：\n做什么、在哪儿吃、睡哪儿、怎么去。\n\n一切对每个人都清清楚楚。",
+      "animation": "live-collaboration",
+      "backgroundColor": "#61DBD5",
+      "ctaLabel": "搭建我的行程",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "10+", "label": "合作伙伴" }]
+    }
+  ]
+}

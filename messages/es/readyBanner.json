@@ -1,0 +1,36 @@
+{
+  "title": "¿Listo para tu próximo viaje?",
+  "description": "Únete a miles de viajeros que planifican mejor juntos.",
+  "socialProof": "Únete a más de 12.000 viajeros que planifican viajes más inteligentes",
+  "freeNote": "Registro gratuito. No se requiere tarjeta de crédito.",
+  "badges": [
+    {
+      "emoji": "📅",
+      "text": "Lanzado en 2024",
+      "backgroundColor": "#E83F28",
+      "textColor": "#FFFBF5",
+      "position": "top-left"
+    },
+    {
+      "emoji": "⭐",
+      "text": "4.8/5 de satisfacción",
+      "backgroundColor": "#61DBD5",
+      "textColor": "#001E13",
+      "position": "bottom-left"
+    },
+    {
+      "emoji": "🌍",
+      "text": "Top 12 destinos",
+      "backgroundColor": "#FFFBF5",
+      "textColor": "#001E13",
+      "position": "top-right"
+    },
+    {
+      "emoji": "✨",
+      "text": "Más de 500 itinerarios creados",
+      "backgroundColor": "#005939",
+      "textColor": "#FFFBF5",
+      "position": "bottom-right"
+    }
+  ]
+}

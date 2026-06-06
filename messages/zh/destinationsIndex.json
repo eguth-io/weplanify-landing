@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "目的地 —— 按城市与场景划分的团体旅行模板 | WePlanify",
+    "description": "真实可订的团体旅行行程：拉斯维加斯和纳什维尔单身派对、布达佩斯、马拉喀什、托斯卡纳和安达卢西亚公路旅行、里斯本周末。逐日计划、真实地点、预算一应俱全。"
+  },
+  "eyebrow": "目的地",
+  "title": "旅行模板，\n拿来即用。",
+  "intro": "为真实团体旅行准备的真实行程。下面每个目的地都是一份完整模板 —— 逐日计划、精选地点、诚实预算、打包清单。把其中任意一份套用到你自己的 WePlanify 旅行中，再按你这帮人的需求调整。",
+  "filters": {
+    "all": "所有旅行",
+    "bachelorette": "单身派对",
+    "road-trip": "公路旅行",
+    "with-friends": "与好友"
+  },
+  "cardCta": "查看行程 →",
+  "ctaTitle": "没看到你的目的地？",
+  "ctaBody": "在 WePlanify 中开启一段空白旅行 —— 邀请好友、一起搭建行程、共享预算。免费。",
+  "ctaButton": "免费开启一段旅行",
+  "breadcrumb": {
+    "home": "首页",
+    "destinations": "目的地"
+  },
+  "days": "天",
+  "destinationsCount": "{count, plural, one {个目的地} other {个目的地}}"
+}

@@ -1,0 +1,24 @@
+{
+  "testimonials": [
+    {
+      "quote": "Ich nutze WePlanify seit ein paar Wochen, um eine Reise mit Freunden zu planen. Die Oberfläche ist einfach und Aufgaben zu teilen ist super praktisch.",
+      "author": "Eva",
+      "authorRole": "Leidenschaftliche Reisende"
+    },
+    {
+      "quote": "Top, um Stopps unterwegs anzupassen. Ich kann meine Pläne ändern, ohne alles neu zu machen.",
+      "author": "Tom",
+      "authorRole": "Digitaler Nomade"
+    },
+    {
+      "quote": "Mit den Abstimmungen haben wir uns in 10 Minuten auf das Hotel geeinigt.",
+      "author": "Lucas",
+      "authorRole": "Reise mit Freunden"
+    },
+    {
+      "quote": "Endlich haben wir eine klare Reiseroute für die ganze Familie.",
+      "author": "Isabelle",
+      "authorRole": "Familienreise"
+    }
+  ]
+}

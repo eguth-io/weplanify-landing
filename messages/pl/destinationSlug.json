@@ -1,0 +1,46 @@
+{
+  "home": "Strona główna",
+  "destinations": "Kierunki",
+  "daysUnit": "dni",
+  "daysShort": "d",
+  "dayInitial": "D",
+  "perPerson": "/ os.",
+  "forkTrip": "Skopiuj ten wyjazd",
+  "forkSubtext": "Załóż własną podróż na podstawie tego planu — za darmo, w 30 sekund.",
+  "itinerary": {
+    "heading": "Plan podróży dzień po dniu",
+    "subheading": "{days} dni, od rana do nocy. Stworzone dla grupy, łatwe do dopasowania."
+  },
+  "slot": {
+    "morning": "Rano",
+    "afternoon": "Popołudnie",
+    "evening": "Wieczór"
+  },
+  "pois": {
+    "heading": "Dokąd się wybrać",
+    "subheading": "Prawdziwe, sprawdzone miejsca. Kliknij dowolne, by otworzyć w Mapach."
+  },
+  "budget": {
+    "heading": "Budżet na osobę",
+    "subheading": "Uczciwy szacunek na miejscu — {days} dni.",
+    "total": "Szacowana suma"
+  },
+  "packing": {
+    "heading": "Niezbędniki do spakowania"
+  },
+  "season": {
+    "heading": "Kiedy jechać"
+  },
+  "related": {
+    "heading": "Inne kierunki do odkrycia",
+    "seeItinerary": "Zobacz plan podróży →"
+  },
+  "cta": {
+    "heading": "Zmierz się z {city} ze swoją ekipą",
+    "body": "Skopiuj ten plan podróży do WePlanify, zaproś grupę i zaplanujcie wyjazd razem. Wspólny plan podróży, ankiety, wspólny budżet — wszystko za darmo.",
+    "button": "Skopiuj ten wyjazd — za darmo"
+  },
+  "jsonld": {
+    "day": "Dzień"
+  }
+}

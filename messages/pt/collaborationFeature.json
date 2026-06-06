@@ -1,0 +1,22 @@
+{
+  "copy": {
+    "heroTitle": "Planeie uma viagem com 10 amigos",
+    "heroTitleHighlight": "sem uma única mensagem no WhatsApp",
+    "heroSubtitle": "Edições em tempo real, sondagens integradas, histórico claro. Toda a gente na mesma página, literalmente.",
+    "inviteMore": "Convidar mais",
+    "liveLabel": "Ao vivo",
+    "fakeTripTitle": "Road Trip Portugal",
+    "fakeDays": ["Dia 1 — Lisboa", "Dia 2 — Sintra", "Dia 3 — Porto"],
+    "editingTag": "Marie a editar…",
+    "feedTitle": "Nunca perca nada",
+    "feedSubtitle": "O feed de atividade mostra tudo o que acontece na sua viagem. Quem adicionou o quê, quando e onde.",
+    "recentActivity": "Atividade recente",
+    "activities": [
+      { "avatar": "👩‍🎨", "name": "Marie", "action": "adicionou \"Jantar em Alfama\"", "time": "há 2 min" },
+      { "avatar": "🧔", "name": "Thomas", "action": "atualizou o hotel no Porto", "time": "há 5 min" },
+      { "avatar": "👱‍♀️", "name": "Emma", "action": "votou no restaurante", "time": "há 12 min" },
+      { "avatar": "🧑‍💻", "name": "Lucas", "action": "juntou-se à viagem", "time": "há 1 h" }
+    ],
+    "freeNoCard": "Registo gratuito. Não é necessário cartão de crédito."
+  }
+}

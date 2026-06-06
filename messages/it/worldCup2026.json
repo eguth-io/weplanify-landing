@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Pianificatore di viaggi per i Mondiali 2026 — Gratis, per gruppi | WePlanify",
+    "description": "Pianificatore gratuito di viaggi per i Mondiali 2026 per gruppi di tifosi. Costruisci il tuo percorso multi-città attraverso Stati Uniti, Canada e Messico, dividi i costi per categoria e coordina la logistica tra le 16 città ospitanti — nessuna agenzia, nessun abbonamento."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Pianificatore di viaggi per i Mondiali 2026"
+  },
+  "hero": {
+    "tag": "Pianificatore di viaggi gratuito · Mondiali 2026",
+    "title": "Pianificatore di viaggi per i Mondiali 2026: segui la tua squadra attraverso 3 paesi",
+    "readTime": "8 min di lettura"
+  },
+  "problem": {
+    "p1": "Un Mondiale con gli amici sembra un sogno — finché non inizi a buttarlo giù sul retro di un tovagliolo. Tre partite della fase a gironi in tre città diverse, magari in due paesi diversi. Eliminatorie che non puoi prenotare finché non arrivano i risultati. Visti, ESTA, eTA. Voli interni che raddoppiano di prezzo la settimana di una partita. Sei tifosi, sei budget, sei livelli di tolleranza per un volo all'alba. Le agenzie di viaggio ti vendono un pacchetto e chiudono lì. I tifosi che vogliono davvero il viaggio finiscono per costruirselo da soli — e hanno bisogno di un piano che tutti possano vedere.",
+    "p2": "WePlanify è il centro di comando condiviso e gratuito per i viaggi ai Mondiali 2026 — calendario partite, voli, hotel, budget e bagagli in un unico posto, in inglese o francese."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "anatomy": "Anatomia di un viaggio ai Mondiali",
+    "hostCities": "Le 16 città ospitanti",
+    "planning": "Pianificare il percorso passo dopo passo",
+    "budget": "Consigli sul budget per i tifosi",
+    "faq": "Domande frequenti"
+  },
+  "anatomy": {
+    "title": "Anatomia di un viaggio ai Mondiali",
+    "subtitle": "Cinque elementi in movimento che ogni gruppo sbaglia al primo tentativo. Azzeccali e il viaggio fila liscio.",
+    "items": [
+      { "stop": "Le partite", "desc": "La tua squadra gioca tre partite del girone in tre potenziali città, poi le eliminatorie che ancora non puoi prevedere. Fissa la fase a gironi nel tuo itinerario come punti di riferimento fissi. Segna le date delle eliminatorie come segnaposto — quando il tabellone si riempie, saprai quale città aggiungere. Non prenotare voli non rimborsabili per le eliminatorie prima degli ottavi di finale.", "link": "/features/itinerary" },
+      { "stop": "Il gruppo", "desc": "Sei tifosi raramente hanno lo stesso piano. Alcuni prendono tutti i 39 giorni di ferie, altri riescono a seguire solo una partita. Usa un sondaggio per fissare chi partecipa a quale tappa prima di prenotare qualsiasi cosa — risparmierai quattro litigi e un volo annullato.", "link": "/features/polls" },
+      { "stop": "Le frontiere", "desc": "Stati Uniti, Canada e Messico sono tre regimi di immigrazione diversi. ESTA / visto B-2 per gli USA, eTA / visto per il Canada, carta turistica FMM per il Messico. Ogni tifoso gestisce i propri documenti, ma il gruppo ha bisogno di un'unica checklist condivisa con le scadenze così nessuno si presenta all'aeroporto senza un ESTA valido.", "link": "/features/planning" },
+      { "stop": "I soldi", "desc": "Biglietti delle partite pagati individualmente tramite la FIFA. Hotel divisi per camera. Voli interni divisi per viaggiatore. Cibo diviso per pasto. Cinque categorie che non si riconciliano da sole. Un budget condiviso con categorie fin dal primo giorno batte un foglio di calcolo caotico al 38° giorno.", "link": "/features/budget" },
+      { "stop": "I bagagli", "desc": "Tre settimane tra l'estate degli USA, l'estate del Canada e l'estate del Messico — e un dress code da stadio. Fai il bagaglio abbastanza leggero per i limiti di peso delle compagnie low cost, ma con la maglia, la sciarpa, la bandiera e la crema solare di tutti messe in conto. Una lista condivisa con oggetti condivisi assegnati evita tre bandiere e zero caricabatterie portatili.", "link": "/features/packing" }
+    ]
+  },
+  "hostCities": {
+    "title": "Le 16 città ospitanti",
+    "subtitle": "Undici città negli Stati Uniti, tre in Messico, due in Canada. Costruisci il tuo percorso sapendo quali gruppi di città si spostano bene insieme — e quali richiedono un volo."
+  },
+  "matrix": {
+    "title": "Tempi di viaggio tra le città ospitanti",
+    "subtitle": "Tempi di viaggio indicativi di sola andata per i percorsi più comuni dei tifosi. I tempi di volo escludono il transito aeroportuale (aggiungi ~3h). Usali per dimensionare i giorni cuscinetto tra le partite.",
+    "route": "Tratta",
+    "mode": "Mezzo",
+    "time": "Tempo",
+    "notes": "Note",
+    "rows": [
+      { "route": "Boston ↔ NYC", "mode": "Treno (Acela)", "time": "~3h30", "note": "Porta a porta batte l'aereo" },
+      { "route": "NYC ↔ Philadelphia", "mode": "Treno / Bus", "time": "~1h30", "note": "Il gruppo di città più facile" },
+      { "route": "NYC ↔ Toronto", "mode": "Volo", "time": "~1h30", "note": "Attraversamento del confine — serve l'eTA" },
+      { "route": "Atlanta ↔ Miami", "mode": "Volo", "time": "~2h", "note": "In auto oltre 10h, non praticabile" },
+      { "route": "Dallas ↔ Houston", "mode": "Volo / Auto", "time": "~1h / 4h", "note": "In auto se più di 2 tifosi" },
+      { "route": "LA ↔ San Francisco", "mode": "Volo", "time": "~1h30", "note": "La tratta USA più economica da volare" },
+      { "route": "LA ↔ Seattle", "mode": "Volo", "time": "~3h", "note": "Prenota presto — domanda dei tifosi" },
+      { "route": "Seattle ↔ Vancouver", "mode": "Auto / Treno", "time": "~3h-4h", "note": "Confine via terra — l'attraversamento più rapido" },
+      { "route": "Toronto ↔ Vancouver", "mode": "Volo", "time": "~5h", "note": "Il volo nazionale più lungo del Canada" },
+      { "route": "Dallas ↔ Città del Messico", "mode": "Volo", "time": "~2h30", "note": "La migliore porta d'ingresso USA→MX" },
+      { "route": "Città del Messico ↔ Guadalajara", "mode": "Volo / Bus", "time": "~1h30 / 7h", "note": "Il bus è comodo di notte ed economico" },
+      { "route": "Città del Messico ↔ Monterrey", "mode": "Volo", "time": "~1h30", "note": "Oltre 10 voli al giorno" },
+      { "route": "LA ↔ Miami", "mode": "Volo", "time": "~5h", "note": "Da costa a costa — caro" }
+    ]
+  },
+  "checklist": {
+    "title": "Checklist degli essenziali per il viaggio dei tifosi",
+    "subtitle": "Le cose che i gruppi dimenticano sempre. Assegna ciascuna a una persona nella tua lista per i bagagli di WePlanify.",
+    "items": [
+      "Biglietti delle partite (stampati + backup nell'app FIFA)",
+      "Passaporto valido (6+ mesi oltre luglio 2026)",
+      "ESTA, eTA o visto per ogni confine",
+      "Assicurazione di viaggio che copra tutti e tre i paesi",
+      "Maglia, sciarpa e bandiera della squadra",
+      "Borsa trasparente approvata dallo stadio",
+      "Caricabatterie portatile (multiporta per il gruppo)",
+      "Piano dati internazionale o eSIM locale",
+      "Crema solare + cappellino (il caldo di giugno è reale)",
+      "Borraccia riutilizzabile (consentita negli stadi)",
+      "Contanti in USD / CAD / MXN per le piccole spese",
+      "Tappi per le orecchie (per dopo i festeggiamenti)"
+    ]
+  },
+  "pullQuote": "Un viaggio ai Mondiali non è una vacanza — è un'operazione di 39 giorni. Affronta la pianificazione come la squadra affronta la preparazione, e il resto si sistema da sé.",
+  "planning": {
+    "title": "Pianificare il percorso: passo dopo passo",
+    "p1": "Parti dalle partite. Il sorteggio dei gironi fissa la città di ogni partita — quello è il tuo scheletro. Posiziona le tre partite del girone come punti di riferimento nell'itinerario, poi aggiungi un giorno di riposo prima e dopo ciascuna. Spostarsi da uno stadio all'altro passando per l'immigrazione mangia più tempo di quanto la gente si aspetti; non programmare mai una partita il giorno dopo un volo a lungo raggio.",
+    "p4": "Fissa scadenze per il gruppo, non solo per il viaggio. ESTA ed eTA richiedono giorni per essere approvati nei periodi di punta. I piani dati internazionali vanno sistemati prima della partenza. Le finestre di cancellazione degli hotel si chiudono prima di quanto la gente ricordi. Una lista di compiti condivisa con scadenze, visibile a tutti, impedisce al viaggio di crollare sotto la burocrazia una settimana prima del fischio d'inizio."
+  },
+  "budget": {
+    "title": "Consigli sul budget per i viaggi dei tifosi",
+    "p2": "Il trasporto tra le città è dove il budget si apre o si chiude davvero. I voli nazionali statunitensi tra città ospitanti distanti (LA → Miami, Boston → Dallas) costano in media 250-400$ se prenotati presto, il doppio la settimana di una partita. Per i salti più brevi lungo il Nordest (Boston → NYC → Philly), l'Acela di Amtrak è più veloce porta a porta e spesso più economico. Attraversare il confine verso Canada o Messico significa quasi sempre volare — prenota quelle tratte appena le partite sono confermate.",
+    "p3": "L'alloggio è la seconda spesa più grande e la più facile da ottimizzare. Gli hotel delle città ospitanti triplicano i prezzi nelle date delle partite — prenota fuori dalla zona ufficiale. Un Airbnb con tre camere a 30 minuti dallo stadio, diviso in quattro o cinque, spesso batte le camere d'albergo individuali del 40%. Guarda le città vicine con collegamenti ferroviari o voli brevi: alloggiare a Newark invece che a Manhattan, ad Anaheim invece che a LA, a Mississauga invece che nel centro di Toronto."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      { "q": "Mi serve un visto per assistere ai Mondiali 2026?", "a": "Dipende dalla tua nazionalità e dal paese ospitante che visiti. Gli USA richiedono un ESTA (esenzione dal visto) o un visto B-2, il Canada richiede un eTA o un visto, il Messico in genere consente l'ingresso senza visto fino a 180 giorni per la maggior parte dei passaporti occidentali. Se la tua squadra gioca in tutti e tre i paesi, controlla separatamente i requisiti di ciascuno — essere in regola per uno non garantisce l'ingresso in un altro. Fai domanda presto; i tempi di elaborazione rallentano con l'avvicinarsi di giugno." },
+      { "q": "Come organizzo un viaggio se il girone della mia squadra non è ancora stato sorteggiato?", "a": "Costruisci una base flessibile — prenota voli rimborsabili verso un grande hub (NYC, LA, Città del Messico) e fissa l'alloggio solo per la finestra della prima partita. Una volta che il sorteggio fissa le città, definisci il resto. WePlanify ti permette di abbozzare più itinerari di scenario affiancati e scegliere quello che corrisponde alle partite effettive." },
+      { "q": "Qual è il modo più economico per spostarsi tra le città ospitanti?", "a": "Negli USA, i voli nazionali sono di solito più economici e veloci della guida per distanze superiori a 600 miglia. Per i salti più brevi (ad esempio da Boston a NYC), Amtrak o i bus possono battere l'aereo una volta considerato il tempo in aeroporto. Attraversare i confini verso Canada o Messico significa quasi sempre volare — prenota quelle tratte presto perché la domanda dei tifosi farà impennare i prezzi." },
+      { "q": "A quante partite dovrei realisticamente cercare di assistere?", "a": "La maggior parte dei tifosi che segue una squadra riesce a vedere 3 partite del girone più un'eliminatoria se la squadra avanza. Spostarsi da uno stadio all'altro mangia più tempo di quanto la gente si aspetti — calcola almeno un giorno intero di viaggio tra città non adiacenti. Inserisci giorni cuscinetto per il jet lag, i tempi di coda ai controlli e le imperdibili fan zone." },
+      { "q": "Come si dividono i costi quando si viaggia con un gruppo di tifosi?", "a": "Usa un tracker del budget condiviso fin dal primo giorno. I viaggi ai Mondiali hanno strutture di costo insolite — biglietti delle partite pagati dai singoli tramite la FIFA, hotel divisi per camera, trasporti divisi per gruppo, cibo diviso per pasto. WePlanify separa queste categorie così ogni persona vede esattamente quanto deve e a chi, senza una maratona di calcoli a fine viaggio." },
+      { "q": "Quando dovrei prenotare l'alloggio nelle città ospitanti?", "a": "Ora, se puoi. Gli hotel delle città ospitanti a Miami, NYC, LA, Toronto e Città del Messico hanno iniziato a riempirsi per le date delle partite all'inizio del 2026 e i prezzi sono già 3-5 volte i livelli normali. Guarda fuori dalle zone ufficiali (Airbnb in periferia, città vicine con collegamenti ferroviari) e prenota opzioni rimborsabili se il percorso della tua squadra non è ancora fissato." },
+      { "q": "Vale la pena visitare le fan zone se non ho un biglietto per la partita?", "a": "Sì. Ogni città ospitante ha un Fan Festival ufficiale della FIFA con maxischermi, cibo e intrattenimento dal vivo, oltre ai raduni di quartiere non ufficiali che spesso hanno un'atmosfera migliore. L'ingresso è gratuito e possono essere il momento clou per i tifosi che non sono riusciti a ottenere i biglietti. Aggiungili al tuo itinerario come piani di riserva." }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "roadTrip": { "title": "Viaggio on the road", "desc": "Organizza un viaggio in auto a più tappe con il gruppo.", "cta": "Leggi di più →" },
+    "tripWithFriends": { "title": "Viaggio con gli amici", "desc": "Organizza qualsiasi viaggio di gruppo senza fatica.", "cta": "Leggi di più →" },
+    "groupGuide": { "title": "Guida ai viaggi di gruppo", "desc": "La guida completa passo dopo passo.", "cta": "Leggi la guida →" },
+    "bestApps": { "title": "Migliori app per viaggi di gruppo", "desc": "Il nostro confronto degli strumenti migliori per i viaggi di gruppo.", "cta": "Leggi l'articolo →" }
+  },
+  "cta": {
+    "title": "Costruisci il tuo viaggio ai Mondiali 2026",
+    "subtitle": "Calendario partite, voli, hotel, budget — un unico piano condiviso, tutto il tuo gruppo sulla stessa pagina.",
+    "button": "Inizia a pianificare"
+  },
+  "jsonld": {
+    "eventName": "FIFA World Cup 2026",
+    "eventDescription": "Mondiali FIFA 2026 — 48 nazionali, 16 città ospitanti tra Stati Uniti, Canada e Messico, dall'11 giugno al 19 luglio 2026. Il primo Mondiale co-ospitato da tre paesi.",
+    "fifaPerformer": "Nazionali FIFA",
+    "subEventName": "Partite dei Mondiali 2026 a {city}",
+    "subEventDescription": "Partite dei Mondiali FIFA 2026 ospitate a {city} tra l'11 giugno e il 19 luglio 2026.",
+    "howToName": "Come organizzare un viaggio ai Mondiali 2026 seguendo la tua squadra",
+    "howToDescription": "Fissa le partite, costruisci il percorso multi-città, dividi i costi, sistema i visti e lascia spazio ai momenti imprevisti che rendono speciale un viaggio ai Mondiali.",
+    "howToSteps": [
+      { "name": "Ancora il viaggio alle partite della tua squadra", "text": "Parti dalle tre partite della fase a gironi. Fissa città e date, poi mappa gli intervalli tra le partite come giorni di viaggio. Pianifica in dettaglio solo la fase a gironi — le città delle eliminatorie dipendono dai risultati." },
+      { "name": "Decidi il livello di impegno del gruppo con un sondaggio", "text": "Non tutti hanno lo stesso budget o tempo. Lancia un sondaggio per capire chi partecipa a tutta la fase a gironi, chi si unisce per una partita e chi si impegna solo se la squadra avanza. Il risultato guida le prenotazioni dei voli e la divisione degli alloggi." },
+      { "name": "Dividi i costi per categorie fin dal primo giorno", "text": "Biglietti delle partite, voli interni, hotel delle città ospitanti, trasporto a terra e cibo non si dividono allo stesso modo. Imposta un budget condiviso con una categoria per ciascuno così i conti restano puliti anche quando il viaggio dura tre settimane." },
+      { "name": "Inserisci giorni cuscinetto tra le città", "text": "Gli spostamenti da uno stadio all'altro, il jet lag, le code ai controlli e gli attraversamenti di confine mangiano tempo reale. Pianifica almeno un giorno cuscinetto intero tra città ospitanti non adiacenti e un giorno di riposo prima di ogni partita — il te stesso del futuro ti ringrazierà." }
+    ]
+  }
+}

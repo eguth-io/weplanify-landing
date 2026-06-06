@@ -1,0 +1,38 @@
+{
+  "title": "Wszystko, czego potrzebujesz, by zaplanować wyjazd grupowy",
+  "cards": [
+    {
+      "imagePosition": "right",
+      "title": "Odkrywaj i proponuj pomysły grupie",
+      "description": "Znajdź atrakcje, restauracje, noclegi i transport bezpośrednio w aplikacji.\nDodaj je do planu podróży lub zaproponuj grupie do głosowania.\n\nOdkrywanie staje się wspólne.",
+      "animation": "ai-globe",
+      "backgroundColor": "#FFFFFF",
+      "ctaLabel": "Odkrywaj kierunki",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#E83F28",
+      "stats": [{ "value": "190+", "label": "Możliwych kierunków" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "Decydujcie wspólnie dzięki ankietom",
+      "description": "Gdzie się zatrzymać?\nCo robić?\nKiedy wyjechać?\n\nUtwórz ankietę, każdy głosuje, decyzja zapada.\nGrupa idzie naprzód. Podróż też.",
+      "animation": "live-voting",
+      "backgroundColor": "#EEF899",
+      "ctaLabel": "Rozpocznij ankietę",
+      "ctaTextColor": "#FFFBF5",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "1000+", "label": "Ankiet dziennie" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "Przejrzysty plan podróży, dzień po dniu",
+      "description": "Każdy dzień podróży jest uporządkowany:\nco robić, gdzie zjeść, gdzie spać, jak tam dotrzeć.\n\nWszystko jest jasne dla każdego.",
+      "animation": "live-collaboration",
+      "backgroundColor": "#61DBD5",
+      "ctaLabel": "Stwórz mój plan podróży",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "10+", "label": "Partnerów" }]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "title": "Zaplanuj wieczór panieński — zorganizuj idealną imprezę",
+    "description": "Zaplanuj wymarzony wyjazd na wieczór panieński z WePlanify. Koordynuj terminy, głosuj na atrakcje, zarządzaj wspólnym budżetem i buduj plan podróży dzień po dniu — wszystko w jednym darmowym organizerze wieczoru panieńskiego."
+  },
+  "readTime": "10 min czytania",
+  "breadcrumb": {
+    "home": "Strona główna",
+    "bachelorette": "Wieczór panieński"
+  },
+  "hero": {
+    "tag": "Planer wieczoru panieńskiego",
+    "title": "Zaplanuj wymarzony\nwieczór panieński",
+    "description": "Powiedziała tak — teraz Twoja kolej, by zaplanować niezapomniany wyjazd na wieczór panieński. WePlanify to darmowy organizer wieczoru panieńskiego, który zachowuje niespodziankę, a planowanie pozbawia stresu.",
+    "cta": "Zacznij planować za darmo"
+  },
+  "guideIntro": {
+    "title": "Kompletny przewodnik po planowaniu wieczoru panieńskiego",
+    "paragraphs": [
+      "Świetny wieczór panieński to coś więcej niż wyjście — to kilkudniowe świętowanie przyjaźni, przygody i wkroczenia przyszłej panny młodej w życie małżeńskie. Niezależnie od tego, czy planujesz relaksujący weekend w spa, szaloną miejską przygodę, czy słoneczny wypad na plażę, magia tkwi w szczegółach. A dopilnowanie tych szczegółów z grupą 6 do 15 osób to moment, w którym robi się skomplikowanie.",
+      "Najlepsze wieczory panieńskie mają trzy wspólne cechy: pasują do osobowości panny młodej, uwzględniają budżet każdego i są na tyle dobrze zorganizowane, że świadkowa nie przeżywa załamania za kulisami. Sekret nie polega na przeplanowaniu każdej minuty — chodzi o system, który pozwala każdemu się dołożyć, trzymając jednocześnie jedną osobę za sterami.",
+      "Właśnie do tego stworzono WePlanify. Jedna wspólna przestrzeń, w której ekipa planująca może głosować na atrakcje, śledzić wspólną kasę, budować plan podróży dzień po dniu i koordynować pakowanie — a wszystko bez wiedzy panny młodej. Koniec z tajnymi grupami na WhatsAppie z plątaniną wątków. Po prostu jedno czyste, uporządkowane centrum planowania."
+    ]
+  },
+  "painPoints": {
+    "title": "Dlaczego planowanie wieczoru panieńskiego to czysty chaos",
+    "subtitle": "Kochasz przyszłą pannę młodą, ale organizacja jej wielkiego weekendu? To zupełnie inna historia.",
+    "items": [
+      {
+        "emoji": "🤫",
+        "title": "Utrzymanie tajemnicy",
+        "description": "Próbujesz zaplanować epicką niespodziankę, koordynując 12 osób na grupowym czacie, którego panna młoda nie widzi? Istny koszmar. Ktoś zawsze przez przypadek napisze do głównej grupy zamiast do tajnej. Albo panna młoda zobaczy podgląd powiadomienia na czyimś telefonie. Z WePlanify całe planowanie odbywa się w prywatnej przestrzeni wyjazdu — bez przypadkowych czatów, bez przypadkowych spoilerów."
+      },
+      {
+        "emoji": "📅",
+        "title": "Zgranie terminów",
+        "description": "Między pracą, dziećmi, urlopami a „muszę to sprawdzić z partnerem” — znalezienie jednego weekendu, który pasuje wszystkim, wydaje się niemożliwe. Wysyłasz wiadomość z pytaniem o terminy, a połowa grupy odpowiada tydzień później. Okno na rezerwację przystępnego cenowo noclegu kurczy się, podczas gdy czekasz. Ankiety terminowe WePlanify dają wszystkim jasny termin na głosowanie, a wyniki są natychmiastowe."
+      },
+      {
+        "emoji": "💸",
+        "title": "Rozmowa o pieniądzach",
+        "description": "Kto płaci za Airbnb? Jak podzielić udział panny młodej? Prośby o przelew latają na wszystkie strony. Niezręcznie. Niektórzy przepłacają, inni dopłacają za mało, i nikt nie zna prawdziwej sumy aż do kilku tygodni po wyjeździe, gdy ktoś w końcu siada z kalkulatorem. Narzędzie do śledzenia wspólnego budżetu w WePlanify ogarnia to wszystko w czasie rzeczywistym — wpłaty, wydatki i to, kto komu ile jest winien."
+      },
+      {
+        "emoji": "🎉",
+        "title": "Przesyt atrakcji",
+        "description": "Dzień w spa czy wycieczka po winnicach? Plaża czy miasto? Każdy ma zdanie, ale nikt nie chce być tym, kto decyduje za grupę. Efekt to albo impas, w którym nic nie zostaje zarezerwowane, albo jedna osoba podejmuje wszystkie decyzje i po cichu ma żal, że robi całą robotę. Ankiety grupowe rozwiązują to natychmiast — wystaw trzy opcje, pozwól wszystkim zagłosować i zarezerwuj zwycięzcę. Demokracja w najlepszym wydaniu."
+      }
+    ]
+  },
+  "features": {
+    "title": "WePlanify ułatwia planowanie wieczoru panieńskiego",
+    "subtitle": "Wszystko, czego potrzebujesz, by zaplanować wyjazd na wieczór panieński — w jednym miejscu, bez stresu.",
+    "items": [
+      {
+        "emoji": "🔒",
+        "title": "Prywatna grupa planująca",
+        "description": "Utwórz tajną przestrzeń planowania bez panny młodej. Zaproś ekipę, omawiajcie pomysły i zachowajcie niespodziankę w nienaruszonym stanie — bez żadnego przypadkowego czatu. Wszyscy w grupie planującej widzą plan podróży, budżet i listę rzeczy do spakowania, ale przyszła panna młoda nie ma żadnego dostępu. Ty decydujesz, kto dołącza, i możesz dodać pannę młodą po ujawnieniu niespodzianki, jeśli chcesz, by zobaczyła szczegóły wyjazdu."
+      },
+      {
+        "emoji": "🗳️",
+        "title": "Ankiety na atrakcje i terminy",
+        "description": "Nie możecie uzgodnić terminu ani atrakcji? Pozwól grupie zagłosować. Ankiety ułatwiają znalezienie tego, co pasuje wszystkim — bez niekończącego się tam i z powrotem. Twórz ankiety na wszystko: który weekend pasuje najlepiej, jaka restauracja na grupową kolację, spa czy rejs łodzią w sobotnie popołudnie. Anonimowe głosowanie sprawia, że nawet nieśmiali znajomi mają realny głos. Wyniki są jasne, szybkie i ostateczne."
+      },
+      {
+        "emoji": "💰",
+        "title": "Wspólny budżet i kasa",
+        "description": "Ustal wspólny budżet, śledź wpłaty i dziel koszty sprawiedliwie. Koniec z niezręcznymi rozmowami o pieniądzach i koszmarami z arkuszami kalkulacyjnymi. Zdecyduj z góry, czy panna młoda płaci za siebie, czy grupa pokrywa jej udział. Rejestruj każdy wydatek na bieżąco — zaliczkę za Airbnb, rezerwację restauracji, jednakowe koszulki — a WePlanify automatycznie wyliczy, kto komu ile jest winien."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Plan podróży dzień po dniu",
+        "description": "Zbuduj szczegółowy harmonogram na cały weekend. Od powitalnych drinków po finałowy brunch — każdy wie, co i kiedy się dzieje. Dodawaj godziny, lokalizacje, notatki i linki do każdej aktywności. Udostępnij plan podróży całej grupie (bez panny młodej), żeby wszyscy znali plan. W dniu wydarzenia plan podróży jest Twoim jedynym źródłem prawdy — koniec z gorączkowymi SMS-ami „gdzie się spotykamy?”."
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Pomysły na wieczór panieński według stylu",
+    "subtitle": "Nie wiesz, jaki typ wieczoru panieńskiego zaplanować? Oto pięć popularnych stylów dla inspiracji.",
+    "items": [
+      {
+        "emoji": "🧖",
+        "title": "Relaksujący wypad do spa",
+        "description": "Zarezerwuj hotel ze spa lub ośrodek wellness na weekend masaży, zabiegów na twarz, jacuzzi i leniwych poranków. Idealne dla panien młodych, które chcą odetchnąć przed ślubnym zamieszaniem. Dodaj grupowy kurs gotowania lub degustację wina, by przełamać relaks. Wskazówka na mniejszy budżet: wynajmij Airbnb z jacuzzi i zamów mobilne zabiegi spa z dojazdem do Was."
+      },
+      {
+        "emoji": "🌃",
+        "title": "Miejska przygoda",
+        "description": "Wybierz tętniące życiem miasto — pomyśl o Barcelonie, Austin, Montrealu czy Lizbonie — i wypełnij weekend barami na dachach, wycieczkami po street foodzie, zakupami i życiem nocnym. Wyjazdy miejskie świetnie się sprawdzają, bo każdy może odłączyć się na kilka godzin i spotkać znowu na grupowych kolacjach. Wykorzystaj plan podróży WePlanify, by rozplanować obowiązkowe atrakcje i zostawić miejsce na spontaniczne odkrywanie."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Wypad na plażę",
+        "description": "Słońce, piasek i jednakowe stroje kąpielowe. Plażowy wieczór panieński to klasyk nie bez powodu. Zarezerwuj nocleg przy plaży, zaplanuj dzień na łodzi i zaplanujcie koktajle o zachodzie słońca nad brzegiem. Jeśli chodzi o kierunki, pomyśl o Tulum, greckich wyspach, Bali lub południu Francji. Wspólna lista rzeczy do spakowania jest tu kluczowa — ustalcie, kto zabiera dmuchane koła, lodówkę turystyczną i głośnik Bluetooth."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Ucieczka do krainy wina",
+        "description": "Napa, Bordeaux, Mendoza, Toskania — każdy region winiarski daje wyrafinowany i niezapomniany wieczór panieński. Zarezerwuj zwiedzanie winnicy, zorganizuj prywatną degustację i zakończ wieczór długą kolacją. Wyjazdy do krainy wina potrafią szybko zrobić się drogie, więc narzędzie do śledzenia wspólnego budżetu to Twój najlepszy przyjaciel. Rejestruj degustacje, posiłki i koszty transportu, żeby wszyscy byli na bieżąco."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Aktywnie i na świeżym powietrzu",
+        "description": "Dla pełnej energii panny młodej: wędrówki, kajaki, surfing lub narty. Zarezerwuj domek w górach lub schronisko w pobliżu parku narodowego. Zaplanujcie jedną dużą grupową aktywność dziennie (np. wędrówkę z przewodnikiem lub spływ) i zostawcie wieczory na przytulne kolacje i gry. Lista rzeczy do spakowania jest kluczowa przy wyjazdach na świeżym powietrzu — upewnijcie się, że każdy ma odpowiedni sprzęt i wie, co grupa dzieli."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Kiedy zacząć planowanie",
+    "subtitle": "Prosty harmonogram, który pomoże Ci nie zboczyć z kursu.",
+    "milestones": [
+      {
+        "time": "6 miesięcy wcześniej",
+        "title": "Ustal termin i listę gości",
+        "description": "Przeprowadź wśród grupy ankietę o dostępne weekendy. Sfinalizuj, kto przyjeżdża. Utwórz swoją podróż w WePlanify i zaproś wszystkich."
+      },
+      {
+        "time": "3 miesiące wcześniej",
+        "title": "Zarezerwuj nocleg i transport",
+        "description": "Zagłosujcie na kierunek i typ noclegu. Zarezerwuj loty lub zorganizuj wspólne przejazdy. Skonfiguruj wspólny budżet."
+      },
+      {
+        "time": "1 miesiąc wcześniej",
+        "title": "Zaplanuj atrakcje i zbuduj plan podróży",
+        "description": "Przeprowadź ankietę na atrakcje. Zbuduj harmonogram dzień po dniu. Rozpocznij listę rzeczy do spakowania. Zamów jednakowe gadżety lub dekoracje."
+      },
+      {
+        "time": "1 tydzień wcześniej",
+        "title": "Ostatnie sprawdzenie i ekscytacja",
+        "description": "Potwierdź wszystkie rezerwacje. Przejrzyj listę rzeczy do spakowania. Rozlicz zaległe pozycje budżetowe. Wyślij grupie ostateczny plan podróży."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Lista kontrolna planowania wieczoru panieńskiego",
+    "items": [
+      "Ustal termin, który pasuje największej liczbie osób",
+      "Utwórz prywatną grupę planującą (bez panny młodej)",
+      "Zdecyduj o kierunku i noclegu",
+      "Ustal i uzgodnij wspólny budżet",
+      "Zarezerwuj nocleg i transport",
+      "Zaplanuj atrakcje i zbuduj plan podróży dzień po dniu",
+      "Zamów jednakowe stroje, dekoracje lub prezenty",
+      "Utwórz wspólną listę rzeczy do spakowania",
+      "Potwierdź wszystkie rezerwacje tydzień wcześniej",
+      "Rozlicz budżet i świętujcie"
+    ]
+  },
+  "testimonial": {
+    "quote": "Szczerze, byłyśmy w totalnym chaosie, próbując zaplanować wieczór panieński Jen na WhatsAppie. Ktoś zaproponował WePlanify i to po prostu... zadziałało? Głosowałyśmy na wszystko, budżet był jasny i nikt nie musiał gonić nikogo za pieniędzmi. 10/10, zaplanowałabym znowu.",
+    "author": "Emma R.",
+    "role": "Druhna, Nowy Jork"
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "q": "Czy mogę planować tak, żeby panna młoda nie widziała?",
+        "a": "Oczywiście. WePlanify pozwala utworzyć prywatną grupę planującą, której przyszła panna młoda nigdy nie widzi. Zaproś tylko druhny i organizatorki — zachowaj niespodziankę w pełni nienaruszoną."
+      },
+      {
+        "q": "Jak zarządzać wspólnym budżetem?",
+        "a": "WePlanify ma wbudowane narzędzie do śledzenia wspólnego budżetu. Ustal całkowity budżet, rejestruj każdy wydatek, dziel koszty po równo lub niestandardowo i widz w czasie rzeczywistym, kto komu ile jest winien. Bez arkuszy kalkulacyjnych."
+      },
+      {
+        "q": "Czy WePlanify jest darmowe do planowania wieczoru panieńskiego?",
+        "a": "Tak, w 100% za darmo — nawet do tajnego planowania. Utwórz prywatną grupę bez panny młodej, przeprowadzaj ankiety, buduj plan podróży i śledź wspólną kasę bez żadnych kosztów. Po ujawnieniu niespodzianki możesz nawet dodać przyszłą pannę młodą, by zobaczyła pełny plan. Bez okresu próbnego, bez karty kredytowej, bez ukrytych opłat."
+      },
+      {
+        "q": "Z jakim wyprzedzeniem powinniśmy zacząć planowanie?",
+        "a": "Najlepiej sześć miesięcy przed ślubem przy wyjazdach zagranicznych, trzy miesiące przy lokalnych wypadach. Im szybciej ustalisz termin i listę gości, tym łatwiejsze staje się wszystko inne. Załóż podróż w WePlanify, gdy tylko pojawi się pomysł — nawet jeśli szczegóły nie są jeszcze ustalone."
+      },
+      {
+        "q": "Jaki budżet jest odpowiedni na wieczór panieński?",
+        "a": "Budżety bardzo się różnią w zależności od kierunku i stylu. Lokalny weekend w spa może kosztować 200 do 400 na osobę, podczas gdy wyjazd zagraniczny może wynieść 800 do 1500 lub więcej. Kluczem jest wczesne uzgodnienie budżetu i korzystanie ze wspólnego narzędzia, żeby wszyscy znali sumę przed zobowiązaniem się."
+      },
+      {
+        "q": "Jak zdecydować o atrakcjach jako grupa?",
+        "a": "Korzystajcie z ankiet. Utwórz ankietę z trzema do pięciu opcji atrakcji, pozwól wszystkim zagłosować i wybierz zwycięzcę. Pozwala to uniknąć problemu „jedna osoba decyduje” i sprawia, że każdy czuje się uwzględniony. Możesz przeprowadzać osobne ankiety na każdy dzień lub przedział czasowy."
+      },
+      {
+        "q": "Co jeśli niektóre druhny nie mogą być na całym weekendzie?",
+        "a": "To się zdarza bez przerwy — a WePlanify radzi sobie z tym bez zgrzytów. Możesz zbudować elastyczny plan podróży, w którym niektóre osoby dołączają tylko na sobotni wieczór lub finałowy brunch. Podział budżetu też się dostosowuje: po prostu zaznacz, kto bierze udział w których aktywnościach, a wspólne narzędzie przeliczy udział każdego. Bez niezręcznych rozmów o tym, że ktoś płaci za dzień, który przegapił."
+      }
+    ]
+  },
+  "destinations": {
+    "tag": "Inspiracje na kierunki",
+    "heading": "Gotowe do skopiowania wyjazdy na wieczór panieński",
+    "seeItinerary": "Zobacz plan podróży →",
+    "seeAll": "Zobacz wszystkie kierunki →",
+    "cards": {
+      "lasVegas": {
+        "title": "Las Vegas · 3 dni",
+        "desc": "Światowa stolica wieczorów panieńskich. Imprezy przy basenie, daycluby, Strip, pokaz Cirque."
+      },
+      "nashville": {
+        "title": "Nashville · 4 dni",
+        "desc": "Amerykańska stolica wieczorów panieńskich. Pedal taverny, honky-tonki, kowbojki."
+      },
+      "budapest": {
+        "title": "Budapeszt · 3 dni",
+        "desc": "Termy, ruin bary, dachy. Europejski wieczór panieński zrobiony jak należy."
+      },
+      "marrakech": {
+        "title": "Marrakesz · 4 dni",
+        "desc": "Prywatny riad, rytuał hammam, pustynia Agafay, kolacje na dachu. Pełna ucieczka."
+      }
+    }
+  },
+  "discover": {
+    "heading": "Odkryj więcej",
+    "tripWithFriends": {
+      "title": "Wyjazd ze znajomymi",
+      "desc": "Zaplanuj wyjazd grupowy ze znajomymi bez wysiłku dzięki WePlanify.",
+      "cta": "Czytaj dalej →"
+    },
+    "guide": {
+      "title": "Poradnik: jak zaplanować wyjazd grupowy",
+      "desc": "Kompletny przewodnik krok po kroku po planowaniu udanego wyjazdu grupowego.",
+      "cta": "Przeczytaj poradnik →"
+    },
+    "comparison": {
+      "title": "Porównanie aplikacji",
+      "desc": "Zobacz, jak WePlanify wypada na tle innych aplikacji do planowania wyjazdów grupowych w 2026 roku.",
+      "cta": "Zobacz porównanie →"
+    }
+  },
+  "cta": {
+    "title": "Gotowa zaplanować najlepszy wieczór panieński w historii?",
+    "description": "Dołącz do tysięcy druhen, które korzystają z WePlanify, by organizować wieczory panieńskie bez stresu. Jest darmowe, jest fajne i naprawdę działa.",
+    "button": "Zacznij — to za darmo"
+  }
+}

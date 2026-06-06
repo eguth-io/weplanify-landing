@@ -1,0 +1,51 @@
+{
+  "copy": {
+    "itemsReady": "14 / 20 itens",
+    "readyForTrip": "prontos para a viagem",
+    "categories": [
+      {
+        "icon": "👕",
+        "title": "Roupa",
+        "progress": 80,
+        "items": [
+          { "name": "T-shirts (x5)", "checked": true },
+          { "name": "Calças (x3)", "checked": true },
+          { "name": "Casaco leve", "checked": true },
+          { "name": "Fato de banho", "checked": false }
+        ]
+      },
+      {
+        "icon": "🔌",
+        "title": "Eletrónica",
+        "progress": 60,
+        "items": [
+          { "name": "Carregador de telemóvel", "checked": true },
+          { "name": "Adaptador de tomada", "checked": true },
+          { "name": "Powerbank", "checked": false },
+          { "name": "Auriculares", "checked": false }
+        ]
+      },
+      {
+        "icon": "🧴",
+        "title": "Higiene",
+        "progress": 100,
+        "items": [
+          { "name": "Escova de dentes", "checked": true },
+          { "name": "Protetor solar", "checked": true },
+          { "name": "Champô", "checked": true }
+        ]
+      }
+    ],
+    "tipTitle": "Sugestão com base na sua viagem",
+    "tipText": "A temperatura média em Lisboa em abril é de 28°C. Não se esqueça de levar roupa leve e protetor solar!",
+    "packTitle": "Faça as malas com tranquilidade",
+    "sharedTitle": "Quem leva o quê? Resolva de uma vez por todas",
+    "sharedSubtitle": "Evite duplicados atribuindo quem leva o quê.",
+    "bringing": "A levar:",
+    "people": [
+      { "avatar": "👩‍🎨", "name": "Marie", "items": ["Protetor solar", "Jogo de cartas", "Guia de viagem"] },
+      { "avatar": "🧔", "name": "Thomas", "items": ["Adaptador de tomada", "Coluna Bluetooth"] },
+      { "avatar": "👱‍♀️", "name": "Emma", "items": ["Kit de primeiros socorros", "Binóculos"] }
+    ]
+  }
+}

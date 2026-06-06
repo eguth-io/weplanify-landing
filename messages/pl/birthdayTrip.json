@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Planer wyjazdu urodzinowego — zaplanuj wymarzony urodzinowy wypad",
+    "description": "Zaplanuj wyjazd urodzinowy z WePlanify, darmowym planerem wyjazdów urodzinowych. Uzgodnij terminy ze znajomymi, zagłosujcie na kierunek, podziel budżet i zbuduj plan podróży dzień po dniu — idealny na 30., 40., 50. urodziny lub dowolny urodzinowy wypad."
+  },
+  "readTime": "9 min czytania",
+  "hero": {
+    "tag": "Planer wyjazdu urodzinowego",
+    "title": "Zaplanuj wymarzony\nwyjazd urodzinowy",
+    "description": "Kończysz 30, 40, 50 lat — a może po prostu chcesz spędzić urodziny w niezapomnianym miejscu? WePlanify to darmowy planer wyjazdów urodzinowych, który zamienia „koniecznie powinniśmy gdzieś wyjechać na Twoje urodziny” w faktycznie zarezerwowany wyjazd.",
+    "cta": "Zacznij planować za darmo"
+  },
+  "guideIntro": {
+    "title": "Kompletny przewodnik po planowaniu wyjazdu urodzinowego",
+    "paragraphs": [
+      "Wyjazd urodzinowy to jeden z najlepszych prezentów, jaki możesz sprawić sobie — lub komuś, kogo kochasz. Niezależnie od tego, czy są to okrągłe urodziny (30., 40., 50., 60.), czy po prostu weekendowa ucieczka, by uczcić kolejny rok, wyjazd z ludźmi, którzy się liczą, bije każdą imprezę w domu. Ale organizacja wyjazdu urodzinowego dla grupy 4 do 15 znajomych ma swój własny cichy chaos: znalezienie pasującego terminu, uzgodnienie kierunku, wybór Airbnb, na które każdego stać, i ustalenie, kto właściwie zarezerwuje stolik na kolację.",
+      "Najlepsze wyjazdy urodzinowe mają trzy wspólne cechy: odzwierciedlają prawdziwy gust solenizanta (a nie to, co grupa uważa, że powinien chcieć), szanują budżet każdego, więc nikt nie wypada tydzień wcześniej, i mają akurat tyle struktury, że grupa nie stoi na rogu ulicy o 20:00, kłócąc się, gdzie zjeść. Celem nie jest rozplanowanie każdej godziny — chodzi o usunięcie tarć, by sam wyjazd mógł być spontaniczny.",
+      "Właśnie do tego stworzono WePlanify. Jedna wspólna przestrzeń, w której Twoja ekipa może głosować na kierunek, ustalić termin, śledzić wspólną kasę i wspólnie budować plan podróży dzień po dniu. Niezależnie od tego, czy solenizant organizuje własny wyjazd ze znajomymi, czy partner po cichu planuje urodzinową niespodziankę, wszystko mieści się w jednym miejscu — bez porozrzucanych wątków na WhatsAppie, bez arkuszy kalkulacyjnych, bez gonienia ludzi za 40 € trzy tygodnie później."
+    ]
+  },
+  "painPoints": {
+    "title": "Dlaczego planowanie wyjazdu urodzinowego zawsze się przeciąga",
+    "subtitle": "Powiedziałeś to miesiące temu: „wyjedźmy gdzieś na Twoją trzydziestkę”. Zostały trzy tygodnie i nic nie jest zarezerwowane.",
+    "items": [
+      {
+        "emoji": "📅",
+        "title": "Nikt nie deklaruje się co do terminu",
+        "description": "Rzucasz pomysł na weekend w październiku. Troje znajomych mówi „może”, dwoje „muszę sprawdzić”, a jedno znika zupełnie. Zanim wszyscy odpiszą, ceny lotów się podwajają, a Twoje ulubione Airbnb znika. Ankiety terminowe WePlanify dają grupie jasny termin na głosowanie, a wynik jest natychmiastowy — bez gonienia, bez ponaglających wiadomości, po prostu termin, na który wszyscy się zgodzili."
+      },
+      {
+        "emoji": "🗺️",
+        "title": "Niekończąca się debata o kierunku",
+        "description": "Lizbona? Marrakesz? Domek dwie godziny drogi? Każdy ma zdanie, a grupowy czat zamienia się w strumień TikToków i rolek z Instagrama. Mijają dwa tygodnie, a Ty wciąż nie masz kierunku. Przeprowadź jedną ankietę z trzema do pięciu realnych opcji, pozwól wszystkim zagłosować i zarezerwuj zwycięzcę. Decyzja zapada w 48 godzin zamiast w miesiąc."
+      },
+      {
+        "emoji": "💸",
+        "title": "Niezręczne rozmowy o pieniądzach",
+        "description": "Czy solenizant płaci? Czy dzielimy jego udział? Kto pokrywa kolację? Jeden znajomy przelewa 120 €, inny płaci zaliczkę za Airbnb, trzeci kupuje tort — i trzy tygodnie po wyjeździe wciąż próbujesz rozliczyć, kto komu ile jest winien. Wspólna kasa w WePlanify rejestruje każdy wydatek w czasie rzeczywistym i natychmiast mówi, kto komu ile jest winien."
+      },
+      {
+        "emoji": "🍽️",
+        "title": "Chaos w dniu wyjazdu",
+        "description": "Przyjeżdżasz w piątkowy wieczór bez rezerwacji na kolację. W sobotnie popołudnie nikt nie wie, o której odpływa łódź. Do niedzielnego brunchu połowa grupy ma kaca, a druga połowa chce zrobić wędrówkę, której nie zarezerwowałeś. Wspólny plan podróży dzień po dniu sprawia, że każdy budzi się, znając plan — a wciąż możesz zostawić puste pole na spontaniczność."
+      }
+    ]
+  },
+  "features": {
+    "title": "WePlanify sprawia, że planowanie wyjazdu urodzinowego jest bezwysiłkowe",
+    "subtitle": "Wszystko, czego potrzebujesz, by zaplanować urodzinowy wypad ze znajomymi — w jednym miejscu, bez stresu.",
+    "items": [
+      {
+        "emoji": "🗳️",
+        "title": "Ankiety na terminy i kierunki",
+        "description": "Skończ z niekończącą się pętlą „kiedy pasuje wszystkim”. Utwórz ankietę z trzema weekendami, które mogłyby pasować, udostępnij ją grupie i obserwuj napływające odpowiedzi. Tak samo z kierunkiem — trzy do pięciu opcji, jeden wyraźny zwycięzca. Anonimowe głosowanie sprawia, że nawet cisi znajomi się wypowiadają. Prawdziwe preferencje grupy, a nie tylko najgłośniejszy głos na czacie."
+      },
+      {
+        "emoji": "💰",
+        "title": "Wspólna kasa urodzinowa",
+        "description": "Ustal wspólny budżet, rejestruj każdy wydatek na bieżąco i pozwól WePlanify wyliczyć, kto komu ile jest winien. Zdecyduj z góry, czy solenizant płaci za siebie, czy grupa pokrywa jego udział — obie opcje działają. Zaliczka za Airbnb, rachunek z restauracji, tort, butelka szampana: wszystko śledzone, wszystko rozliczone jednym dotknięciem na koniec wyjazdu."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Plan podróży dzień po dniu",
+        "description": "Zbuduj wspólny harmonogram na cały weekend — piątkowa kolacja, sobotni brunch, rejs łodzią, restauracja-niespodzianka, niedzielna poranna wędrówka. Dodawaj godziny, lokalizacje, notatki, linki. Każdy budzi się, wiedząc, co dalej, ale nic nie jest wyryte w kamieniu — przeciągnij i upuść, jeśli plany się zmienią. Plan podróży jest jedynym źródłem prawdy, więc nikt nie pyta „chwila, gdzie się znowu spotykamy?”."
+      },
+      {
+        "emoji": "🎁",
+        "title": "Tryb prywatny na niespodzianki",
+        "description": "Planujesz urodzinową niespodziankę dla partnera, rodzica lub najlepszego przyjaciela? Utwórz prywatną grupę planującą bez tej osoby. Uzgadniajcie terminy, rezerwujcie Airbnb, planujcie atrakcje — wszystko całkowicie ukryte przed solenizantem. Gdy będziesz gotowy, ujawnij wyjazd i dodaj tę osobę do przestrzeni, by zobaczyła wszystko, co zostało dla niej zorganizowane."
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Pomysły na wyjazd urodzinowy według stylu",
+    "subtitle": "Pięć stylów urodzinowego wypadu, by dopasować je do solenizanta — i do budżetu.",
+    "items": [
+      {
+        "emoji": "🌆",
+        "title": "City break ze znajomymi",
+        "description": "Lizbona, Barcelona, Kopenhaga, Meksyk — wybierz miasto ze świetnym jedzeniem, dzielnicami do chodzenia pieszo i kilkoma barami na dachach. Idealne na trzydzieste urodziny w gronie 6 do 10 znajomych. Zarezerwuj centralny apartament, zaplanuj dwie duże grupowe kolacje i zostaw popołudnia wolne na to, czego grupa zapragnie. Łatwa logistyka, dużo energii, mnóstwo okazji na zdjęcia."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Dom przy plaży z basenem",
+        "description": "Wynajmij willę z basenem na południu Francji, na Costa Brava, w Tulum lub Apulii. Leniwe poranki, długie lunche, koktajle o zachodzie słońca. Sprawdza się w każdym wieku, ale szczególnie dobrze na urodziny od 35. do 50., gdy grupa woli odpocząć niż imprezować. Wynajmij prywatnego kucharza na jeden wieczór, by poczuć prawdziwe świętowanie."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Weekend w krainie wina",
+        "description": "Toskania, Bordeaux, dolina Douro, Napa, Mendoza — wyjazd do krainy wina to klasyczny ruch na czterdzieste urodziny. Zatrzymajcie się w agriturismo lub butikowej winnicy, zarezerwujcie jedną degustację dziennie i jedzcie długie kolacje. Mniejsze grupy (4 do 8 osób) sprawdzają się najlepiej. Wykorzystaj wspólną kasę do degustacji i kolacji, bo rachunki szybko się sumują."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Przygodowa ucieczka",
+        "description": "Wędrówki w Dolomitach, road trip przez Islandię, narty w Chamonix, surfing w Portugalii. Dla aktywnego solenizanta, który wolałby zdobyć szczyt niż zdmuchnąć świeczki. Wybierz jedno wyjątkowe wyzwanie na wyjazd — kilkudniowy trekking, dzień heliskiingu, obóz surfingowy — i zbuduj resztę weekendu wokół regeneracji i dobrych posiłków."
+      },
+      {
+        "emoji": "🎲",
+        "title": "Vielkomiejska impreza / Vegas",
+        "description": "Las Vegas, Miami, Ibiza, Berlin — wyjazd urodzinowy „na całość”. Kluby nocne, daycluby, wystawne kolacje, nieprzespane noce. Sprawdza się najlepiej na 21., 25. i 30. urodziny lub każdą okazję, gdy grupa jest gotowa na prawdziwą imprezę. Zarezerwuj wszystko z góry (stoliki, transfery, apartament), bo logistyka w dniu wydarzenia w wielkomiejskim mieście imprezowym Cię pochłonie."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Kiedy zacząć planowanie",
+    "subtitle": "Prosty harmonogram, by ustalić wyjazd urodzinowy bez paniki na ostatnią chwilę.",
+    "milestones": [
+      {
+        "time": "4 do 6 miesięcy wcześniej",
+        "title": "Ustal termin i listę gości",
+        "description": "Przeprowadź wśród grupy ankietę o dostępne weekendy. Sfinalizuj, kto jedzie. Utwórz swoją podróż w WePlanify i zaproś wszystkich — w tym solenizanta, jeśli to nie niespodzianka."
+      },
+      {
+        "time": "3 miesiące wcześniej",
+        "title": "Wybierz kierunek i rezerwuj",
+        "description": "Zagłosujcie na kierunek. Zarezerwuj loty i nocleg, póki ceny są jeszcze rozsądne. Skonfiguruj wspólną kasę z początkowymi zaliczkami."
+      },
+      {
+        "time": "1 miesiąc wcześniej",
+        "title": "Zaplanuj atrakcje i rezerwacje",
+        "description": "Przeprowadź ankiety na atrakcje. Zarezerwuj restauracje (zwłaszcza dużą kolację urodzinową). Zbuduj plan podróży dzień po dniu. Zamów dekoracje, prezenty lub jednakowe stroje."
+      },
+      {
+        "time": "1 tydzień wcześniej",
+        "title": "Potwierdź wszystko",
+        "description": "Potwierdź ponownie wszystkie rezerwacje. Rozlicz zaległe wpłaty do kasy. Udostępnij grupie ostateczny plan podróży. Upewnij się, że ktoś zabiera świeczki."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Lista kontrolna planowania wyjazdu urodzinowego",
+    "items": [
+      "Potwierdź termin z solenizantem (lub zachowaj go w tajemnicy, jeśli to niespodzianka)",
+      "Przeprowadź wśród grupy ankietę o dostępne weekendy",
+      "Zagłosujcie na kierunek, na który każdego stać",
+      "Zarezerwuj nocleg i transport",
+      "Ustal wspólną kasę i uzgodnij, jak rozliczyć udział solenizanta",
+      "Zarezerwuj dużą kolację urodzinową z dużym wyprzedzeniem",
+      "Zaplanuj jedną lub dwie wyjątkowe atrakcje (łódź, spa, degustacja, wędrówka)",
+      "Zbuduj plan podróży dzień po dniu w WePlanify",
+      "Zamów tort, świeczki lub drobne niespodzianki",
+      "Potwierdź wszystko tydzień wcześniej i udostępnij ostateczny plan"
+    ]
+  },
+  "testimonial": {
+    "quote": "Skończyłam 40 lat zeszłej wiosny i grupka z nas pojechała na weekend do Toskanii. Rezerwacja willi, podział kosztów wycieczki po winnicach, kasa na kolację, transfery z lotniska — zrobiliśmy to wszystko w WePlanify i nikt nie musiał potem gonić za pieniędzmi. Dużo lepiej niż chaos na WhatsAppie przy każdym poprzednim weekendzie urodzinowym.",
+    "author": "Sophie L.",
+    "role": "Organizatorka wyjazdu urodzinowego, Londyn"
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "q": "Czy WePlanify jest darmowe do planowania wyjazdu urodzinowego?",
+        "a": "Tak, w 100% za darmo. Utwórz podróż, zaproś grupę, przeprowadzaj ankiety, buduj plan podróży, śledź wspólną kasę — bez okresu próbnego, bez karty kredytowej, bez ukrytych opłat. Cały planer wyjazdów urodzinowych działa bez płacenia czegokolwiek."
+      },
+      {
+        "q": "Czy mogę zaplanować urodzinową niespodziankę tak, żeby solenizant nie widział?",
+        "a": "Tak. Utwórz prywatną grupę planującą i nie zapraszaj solenizanta. Uzgadniajcie terminy, głosujcie na kierunek, rezerwujcie Airbnb i planujcie atrakcje — wszystko całkowicie ukryte. Gdy będziesz gotowy do ujawnienia, możesz dodać tę osobę do podróży, by zobaczyła pełny plan podróży i to, co dla niej zaplanowano."
+      },
+      {
+        "q": "Z jakim wyprzedzeniem powinniśmy zacząć planować wyjazd urodzinowy?",
+        "a": "Cztery do sześciu miesięcy to ideał na okrągłe urodziny (30., 40., 50.), gdy chcesz prawdziwego kierunku. Dwa do trzech miesięcy sprawdza się przy lokalnych weekendach. Im szybciej ustalisz termin, tym tańsze loty i lepsze opcje noclegowe. Załóż podróż w WePlanify, gdy tylko pojawi się pomysł — nawet jeśli szczegóły są mgliste."
+      },
+      {
+        "q": "Jaki budżet jest odpowiedni na wyjazd urodzinowy?",
+        "a": "To zależy od kierunku i grupy. Weekend w europejskim mieście kosztuje zazwyczaj 250 do 500 € na osobę ze wszystkim. Willa w Toskanii lub na południu Francji na czterdziestkę może wynieść 600 do 1200 € na osobę. Kluczem jest uzgodnienie docelowego budżetu z góry, żeby nikt nie był zaskoczony — wspólna kasa w WePlanify trzyma wszystkich w ryzach w miarę pojawiania się wydatków."
+      },
+      {
+        "q": "Czy solenizant powinien płacić za siebie?",
+        "a": "Obie opcje działają i to decyzja grupy. Wiele grup pokrywa udział solenizanta w Airbnb i dużą kolację jako prezent; solenizant płaci za własny lot i zwykłe posiłki. WePlanify pozwala oznaczać poszczególne wydatki jako „pokrywa grupa” lub „płaci indywidualnie”, więc podział jest automatyczny. Cokolwiek zdecydujecie, uzgodnijcie to wcześnie — niezręczne rozmowy o pieniądzach w trakcie wyjazdu są najgorsze."
+      },
+      {
+        "q": "Jak zdecydować o atrakcjach, gdy każdy chce czegoś innego?",
+        "a": "Przeprowadź ankietę z trzema do pięciu konkretnych opcji na każdy duży przedział czasowy (sobotnie popołudnie, niedzielny poranek itd.). Pozwól grupie zagłosować i zarezerwuj zwycięzcę. Pozwala to uniknąć zarówno problemu impasu (nikt nie decyduje), jak i problemu żalu (jedna osoba decyduje o wszystkim). Daje też cichszym znajomym realny głos."
+      },
+      {
+        "q": "Co jeśli niektórzy znajomi mogą dołączyć tylko na część wyjazdu?",
+        "a": "Zupełnie w porządku — a WePlanify ogarnia to czysto. Oznacz rzeczywiste terminy każdego uczestnika, a rejestrując wydatki, możesz określić, kto brał udział. Wspólna kasa automatycznie przelicza, więc ludzie płacą tylko za noce i atrakcje, na których faktycznie byli. Bez arkusza kalkulacyjnego, bez niezręcznych negocjacji „nie było mnie na kolacji”."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Gotowy zaplanować najlepszy wyjazd urodzinowy w historii?",
+    "description": "Przestań pozwalać, by wyjazdy urodzinowe spadały z „koniecznie musimy to zrobić” do niczego. Załóż swoją podróż w WePlanify w 30 sekund — to za darmo.",
+    "button": "Zacznij planować — to za darmo"
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Wyjazd urodzinowy"
+  },
+  "destinationsCrossLink": {
+    "tag": "Inspiracje na kierunki",
+    "heading": "Kierunki, które tworzą świetny wyjazd urodzinowy",
+    "cards": {
+      "tuscany": {
+        "title": "Toskania · 5 dni",
+        "desc": "Klasyczna czterdziestka. Willa z basenem, degustacje wina, kolacje, które trwają godzinami. Mała grupa, wielka atmosfera."
+      },
+      "lisbon": {
+        "title": "Lizbona · 3 dni",
+        "desc": "Idealna na trzydziestkę. Dachy, wycieczki kulinarne, dzielnice do chodzenia pieszo, życie nocne bez przesady w stylu Vegas."
+      },
+      "andalusia": {
+        "title": "Andaluzja · 6 dni",
+        "desc": "Sewilla, Granada, Kordoba. Patia, flamenco, późne tapas. Świetna pięćdziesiątka z domieszką kultury."
+      }
+    },
+    "cardLink": "Zobacz plan podróży →",
+    "allLink": "Zobacz wszystkie kierunki →"
+  },
+  "discoverMore": {
+    "heading": "Odkryj więcej",
+    "friends": {
+      "title": "Wyjazd ze znajomymi",
+      "desc": "Zaplanuj wyjazd grupowy ze znajomymi bez wysiłku dzięki WePlanify.",
+      "link": "Czytaj dalej →"
+    },
+    "bachelorette": {
+      "title": "Wieczór panieński",
+      "desc": "Zaplanuj wieczór panieński z niespodzianką tak, by panna młoda niczego nie zobaczyła.",
+      "link": "Zobacz stronę →"
+    },
+    "guide": {
+      "title": "Poradnik: jak zaplanować wyjazd grupowy",
+      "desc": "Kompletny przewodnik krok po kroku po planowaniu udanego wyjazdu grupowego.",
+      "link": "Przeczytaj poradnik →"
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Planificador de viaje de cumpleaños — Planifica la escapada de cumpleaños definitiva",
+    "description": "Planifica tu viaje de cumpleaños con WePlanify, el planificador gratuito de viajes de cumpleaños. Coordina las fechas con tus amigos, vota el destino, reparte el presupuesto y construye un itinerario día a día — perfecto para los 30, 40, 50 o cualquier escapada de cumpleaños."
+  },
+  "readTime": "9 min de lectura",
+  "hero": {
+    "tag": "Planificador de viaje de cumpleaños",
+    "title": "Planifica el viaje\nde cumpleaños definitivo",
+    "description": "¿Cumples 30, 40, 50 — o simplemente quieres pasar tu cumpleaños en algún lugar inolvidable? WePlanify es el planificador gratuito de viajes de cumpleaños que convierte el 'deberíamos escaparnos por tu cumpleaños' en un viaje de verdad reservado.",
+    "cta": "Empezar a planificar gratis"
+  },
+  "guideIntro": {
+    "title": "La guía definitiva para planificar un viaje de cumpleaños",
+    "paragraphs": [
+      "Un viaje de cumpleaños es uno de los mejores regalos que puedes hacerte — o hacerle a alguien a quien quieres. Tanto si es un cumpleaños señalado (30, 40, 50, 60) como una simple escapada de fin de semana para marcar un año más, escaparte con la gente que importa supera a cualquier fiesta en casa. Pero organizar un viaje de cumpleaños para un grupo de 4 a 15 amigos viene con su propio caos silencioso: encontrar una fecha que funcione, ponerse de acuerdo en un destino, elegir un Airbnb que todos puedan pagar y averiguar quién va a reservar realmente las cenas.",
+      "Los mejores viajes de cumpleaños comparten tres cosas: reflejan el gusto real del cumpleañero (no lo que el grupo cree que debería querer), respetan el presupuesto de todos para que nadie se baje la semana antes y tienen la estructura justa para que el grupo no esté en una esquina a las 8 de la tarde discutiendo dónde comer. El objetivo no es planificar cada hora — es eliminar la fricción para que el viaje en sí pueda ser espontáneo.",
+      "Para eso exactamente se creó WePlanify. Un único espacio compartido donde tu grupo puede votar el destino, fijar una fecha, llevar la cuenta de un bote común y construir juntos un itinerario día a día. Tanto si el cumpleañero organiza su propio viaje con amigos como si una pareja planifica en secreto una escapada sorpresa, todo vive en un solo lugar — sin hilos de WhatsApp dispersos, sin hojas de cálculo, sin perseguir a la gente por 40 € tres semanas después."
+    ]
+  },
+  "painPoints": {
+    "title": "Por qué planificar un viaje de cumpleaños siempre se escapa",
+    "subtitle": "Lo dijiste hace meses: 'vámonos por tu 30 cumpleaños'. Ahora faltan tres semanas y no hay nada reservado.",
+    "items": [
+      {
+        "emoji": "📅",
+        "title": "Nadie se compromete a una fecha",
+        "description": "Propones un fin de semana de octubre. Tres amigos dicen 'quizá', dos dicen 'déjame mirar' y uno desaparece por completo. Para cuando todos responden, los vuelos se han duplicado y tu Airbnb favorito ya no está. Las encuestas de fechas de WePlanify le dan al grupo un plazo claro para votar, y el resultado es instantáneo — sin perseguir a nadie, sin mensajes de seguimiento, solo una fecha con la que todos están de acuerdo."
+      },
+      {
+        "emoji": "🗺️",
+        "title": "Debate interminable sobre el destino",
+        "description": "¿Lisboa? ¿Marrakech? ¿Una cabaña a dos horas? Todos tienen una opinión y el chat de grupo se convierte en una avalancha de TikToks y reels de Instagram. Pasan dos semanas y aún no tienes un destino. Lanza una sola encuesta con tres a cinco opciones reales, deja que todos voten y reserva la ganadora. Decisión tomada en 48 horas en lugar de un mes."
+      },
+      {
+        "emoji": "💸",
+        "title": "Conversaciones incómodas sobre el dinero",
+        "description": "¿Paga el cumpleañero? ¿Repartimos su parte? ¿Quién cubre la cena? Un amigo envía 120 € por Venmo, otro paga el depósito del Airbnb, un tercero compra la tarta — y tres semanas después del viaje todavía intentas cuadrar quién debe qué. El bote común de WePlanify registra cada gasto en tiempo real y te dice al instante quién le debe a quién."
+      },
+      {
+        "emoji": "🍽️",
+        "title": "Caos el día del evento",
+        "description": "Llegáis el viernes por la noche sin reserva para cenar. El sábado por la tarde nadie sabe a qué hora sale el barco. Para el brunch del domingo la mitad del grupo está de resaca y la otra mitad quiere hacer la ruta que no reservasteis. Un itinerario compartido día a día significa que todos se despiertan sabiendo el plan — y aun así puedes dejar espacio en blanco para la espontaneidad."
+      }
+    ]
+  },
+  "features": {
+    "title": "WePlanify hace que planificar un viaje de cumpleaños no cueste nada",
+    "subtitle": "Todo lo que necesitas para planificar una escapada de cumpleaños con amigos — en un solo lugar, sin estrés.",
+    "items": [
+      {
+        "emoji": "🗳️",
+        "title": "Encuestas para fechas y destinos",
+        "description": "Acaba con el bucle interminable de 'cuándo le viene bien a todos'. Crea una encuesta con los tres fines de semana posibles, compártela con el grupo y mira cómo llegan las respuestas. Lo mismo con el destino — tres a cinco opciones, una ganadora clara. El voto anónimo significa que incluso los amigos más callados opinan. Las preferencias reales del grupo, no solo la voz más fuerte del chat."
+      },
+      {
+        "emoji": "💰",
+        "title": "Bote común de cumpleaños",
+        "description": "Fija un presupuesto compartido, registra cada gasto a medida que ocurre y deja que WePlanify calcule quién debe qué. Decidid de entrada si el cumpleañero paga lo suyo o si el grupo cubre su parte — ambas opciones funcionan. El depósito del Airbnb, la cuenta del restaurante, la tarta, la botella de champán: todo registrado, todo saldado con un toque al final del viaje."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Itinerario día a día",
+        "description": "Construye un programa compartido para todo el fin de semana — cena del viernes, brunch del sábado, el paseo en barco, el restaurante sorpresa, la ruta del domingo por la mañana. Añade horarios, ubicaciones, notas, enlaces. Todos se despiertan sabiendo qué viene a continuación, pero nada está escrito en piedra — arrastra y suelta si cambian los planes. El itinerario es la única fuente de verdad, así que nadie pregunta 'espera, ¿dónde quedamos?'"
+      },
+      {
+        "emoji": "🎁",
+        "title": "Modo privado para sorpresas",
+        "description": "¿Planificas un viaje de cumpleaños sorpresa para tu pareja, tu madre/padre o tu mejor amigo? Crea un grupo de planificación privado sin esa persona. Coordina las fechas, reserva el Airbnb, planifica las actividades — todo completamente oculto al cumpleañero. Cuando estés listo, revela el viaje y añádelo al espacio para que vea todo lo que se ha organizado para él."
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Ideas de viaje de cumpleaños por estilo",
+    "subtitle": "Cinco estilos de escapada de cumpleaños para que encajen con el cumpleañero — y con el presupuesto.",
+    "items": [
+      {
+        "emoji": "🌆",
+        "title": "Escapada urbana con amigos",
+        "description": "Lisboa, Barcelona, Copenhague, Ciudad de México — elige una ciudad con buena comida, barrios para recorrer a pie y unos cuantos bares en azoteas. Perfecto para un fin de semana de 30 cumpleaños con 6 a 10 amigos. Reserva un apartamento céntrico, planifica dos grandes cenas de grupo y deja las tardes libres para lo que el grupo quiera. Logística fácil, mucha energía, ideal para fotos."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Casa de playa y piscina",
+        "description": "Alquila una villa con piscina en el sur de Francia, la Costa Brava, Tulum o Apulia. Mañanas perezosas, comidas largas, cócteles al atardecer. Funciona para cualquier edad pero es especialmente buena para los 35-50 cumpleaños, en los que el grupo quiere relajarse más que ir de fiesta. Contrata a un chef privado una noche para que parezca una celebración como Dios manda."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Fin de semana en la región vinícola",
+        "description": "La Toscana, Burdeos, el Valle del Duero, Napa, Mendoza — un viaje a una región vinícola es la jugada clásica del 40 cumpleaños. Alojaos en un agroturismo o un viñedo boutique, reservad una cata al día y disfrutad de cenas largas. Los grupos más pequeños (4 a 8) funcionan mejor. Usa el bote común para las catas y las cenas, ya que las cuentas suben rápido."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Escapada de aventura",
+        "description": "Senderismo en los Dolomitas, un road trip por Islandia, esquí en Chamonix, surf en Portugal. Para el cumpleañero activo que preferiría coronar un pico antes que soplar las velas. Elige un reto estrella para el viaje — un trekking de varios días, un día de heliesquí, un campamento de surf — y construye el resto del fin de semana en torno a la recuperación y las buenas comidas."
+      },
+      {
+        "emoji": "🎲",
+        "title": "Fiestón en Las Vegas / gran ciudad",
+        "description": "Las Vegas, Miami, Ibiza, Berlín — el viaje de cumpleaños 'a lo grande'. Discotecas, dayclubs, cenas elegantes, noches largas. Funciona mejor para los 21, 25 y 30 cumpleaños, o cualquier ocasión señalada en la que el grupo esté dispuesto a darlo todo. Reserva todo por adelantado (mesas, traslados, la suite) porque la logística del día en una ciudad de fiesta te comerá vivo."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Cuándo empezar a planificar",
+    "subtitle": "Un cronograma sencillo para cerrar tu viaje de cumpleaños sin pánico de última hora.",
+    "milestones": [
+      {
+        "time": "4 a 6 meses antes",
+        "title": "Fija la fecha y la lista de invitados",
+        "description": "Haz una encuesta al grupo sobre los fines de semana disponibles. Cierra quién viene. Crea tu viaje en WePlanify e invita a todos — incluido el cumpleañero si no es sorpresa."
+      },
+      {
+        "time": "3 meses antes",
+        "title": "Elige el destino y reserva",
+        "description": "Votad el destino. Reservad los vuelos y el alojamiento mientras los precios siguen siendo razonables. Configura el bote común con los depósitos iniciales."
+      },
+      {
+        "time": "1 mes antes",
+        "title": "Planifica las actividades y las reservas",
+        "description": "Lanza encuestas sobre las actividades. Reservad restaurantes (sobre todo la gran cena de cumpleaños). Construye el itinerario día a día. Encarga las decoraciones, los regalos o los conjuntos a juego."
+      },
+      {
+        "time": "1 semana antes",
+        "title": "Confírmalo todo",
+        "description": "Reconfirma todas las reservas. Salda las aportaciones pendientes del bote. Comparte el itinerario definitivo con el grupo. Asegúrate de que alguien lleve las velas."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Lista de comprobación para planificar el viaje de cumpleaños",
+    "items": [
+      "Confirma la fecha con el cumpleañero (o mantenla en secreto si es sorpresa)",
+      "Haz una encuesta al grupo sobre los fines de semana disponibles",
+      "Votad un destino que todos puedan pagar",
+      "Reservad el alojamiento y el transporte",
+      "Fija un bote común y acordad cómo se gestiona la parte del cumpleañero",
+      "Reserva la gran cena de cumpleaños con mucha antelación",
+      "Planificad una o dos actividades estrella (barco, spa, cata, ruta)",
+      "Construye el itinerario día a día en WePlanify",
+      "Encarga la tarta, las velas o las pequeñas sorpresas",
+      "Confírmalo todo una semana antes y comparte el plan definitivo"
+    ]
+  },
+  "testimonial": {
+    "quote": "Cumplí 40 la primavera pasada y un grupo nos fuimos a la Toscana el fin de semana. Reservar la villa, repartir la ruta de vinos, el bote de la cena, los traslados al aeropuerto — lo hicimos todo en WePlanify y nadie tuvo que perseguir el dinero después. Mucho mejor que el caos de WhatsApp de todos los fines de semana de cumpleaños anteriores.",
+    "author": "Sophie L.",
+    "role": "Organizadora de viajes de cumpleaños, Londres"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿WePlanify es gratis para planificar un viaje de cumpleaños?",
+        "a": "Sí, 100% gratis. Crea un viaje, invita al grupo, lanza encuestas, construye el itinerario, lleva la cuenta del bote común — sin periodo de prueba, sin tarjeta de crédito, sin comisiones ocultas. Todo el planificador de viajes de cumpleaños funciona sin pagar nada."
+      },
+      {
+        "q": "¿Puedo planificar un viaje de cumpleaños sorpresa sin que el cumpleañero lo vea?",
+        "a": "Sí. Crea un grupo de planificación privado y no invites al cumpleañero. Coordina las fechas, vota el destino, reserva el Airbnb y planifica las actividades — todo completamente oculto. Cuando estés listo para revelarlo, puedes añadirlo al viaje para que vea el itinerario completo y lo que se ha planificado para él."
+      },
+      {
+        "q": "¿Con cuánta antelación deberíamos empezar a planificar un viaje de cumpleaños?",
+        "a": "De cuatro a seis meses es lo ideal para los cumpleaños señalados (30, 40, 50) en los que quieres un destino de verdad. De dos a tres meses funciona para los fines de semana locales. Cuanto antes se fije la fecha, más baratos serán los vuelos y mejores las opciones de alojamiento. Empieza un viaje en WePlanify en cuanto surja la idea — aunque los detalles sean vagos."
+      },
+      {
+        "q": "¿Cuál es un buen presupuesto para un viaje de cumpleaños?",
+        "a": "Depende del destino y del grupo. Un fin de semana en una ciudad europea suele costar de 250 a 500 € por persona todo incluido. Una villa en la Toscana o el sur de Francia para un 40 cumpleaños puede ascender de 600 a 1200 € por persona. La clave es acordar un presupuesto objetivo de entrada para que nadie se lleve sorpresas — el bote común de WePlanify mantiene a todos al día a medida que entran los gastos."
+      },
+      {
+        "q": "¿Debería pagar el cumpleañero lo suyo?",
+        "a": "Ambas opciones funcionan y es una decisión del grupo. Muchos grupos cubren la parte del cumpleañero del Airbnb y la gran cena como regalo; el cumpleañero paga su propio vuelo y las comidas informales. WePlanify te permite marcar los gastos individuales como 'lo cubre el grupo' o 'lo paga cada uno' para que el reparto sea automático. Decidáis lo que decidáis, acordadlo pronto — las conversaciones incómodas sobre dinero a mitad de viaje son lo peor."
+      },
+      {
+        "q": "¿Cómo decidimos las actividades cuando cada uno quiere algo distinto?",
+        "a": "Lanza una encuesta con tres a cinco opciones concretas para cada franja importante (sábado por la tarde, domingo por la mañana, etc.). Deja que el grupo vote y reserva la ganadora. Esto evita tanto el problema del punto muerto (nadie decide) como el del resentimiento (una persona decide todo). Además, les da voz de verdad a los amigos más callados."
+      },
+      {
+        "q": "¿Qué pasa si algunos amigos solo pueden venir a una parte del viaje?",
+        "a": "Sin problema — y WePlanify lo gestiona de forma limpia. Marca las fechas reales de cada participante, y cuando registres los gastos puedes especificar quién participó. El bote común recalcula automáticamente para que la gente solo pague por las noches y las actividades en las que realmente estuvo. Sin hojas de cálculo, sin negociaciones incómodas del tipo 'yo no estuve en la cena'."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para planificar el mejor viaje de cumpleaños de tu vida?",
+    "description": "Deja de dejar que los viajes de cumpleaños pasen de 'deberíamos hacer esto sí o sí' a nada. Empieza tu viaje en WePlanify en 30 segundos — es gratis.",
+    "button": "Empezar a planificar — es gratis"
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Viaje de cumpleaños"
+  },
+  "destinationsCrossLink": {
+    "tag": "Inspiración de destinos",
+    "heading": "Destinos perfectos para un viaje de cumpleaños",
+    "cards": {
+      "tuscany": {
+        "title": "Toscana · 5 días",
+        "desc": "El clásico 40 cumpleaños. Villa con piscina, catas de vino, cenas que duran horas. Grupo pequeño, gran ambiente."
+      },
+      "lisbon": {
+        "title": "Lisboa · 3 días",
+        "desc": "Perfecto para un 30 cumpleaños. Azoteas, rutas gastronómicas, barrios para recorrer a pie, vida nocturna sin el exceso de Las Vegas."
+      },
+      "andalusia": {
+        "title": "Andalucía · 6 días",
+        "desc": "Sevilla, Granada, Córdoba. Patios, flamenco, tapas hasta tarde. Un gran 50 cumpleaños con un toque de cultura."
+      }
+    },
+    "cardLink": "Ver el itinerario →",
+    "allLink": "Ver todos los destinos →"
+  },
+  "discoverMore": {
+    "heading": "Descubre más",
+    "friends": {
+      "title": "Viaje con amigos",
+      "desc": "Planifica un viaje en grupo con amigos sin esfuerzo usando WePlanify.",
+      "link": "Leer más →"
+    },
+    "bachelorette": {
+      "title": "Despedida de soltera / EVJF",
+      "desc": "Planifica una despedida de soltera sorpresa sin que la novia vea nada.",
+      "link": "Ver la página →"
+    },
+    "guide": {
+      "title": "Guía: cómo planificar un viaje en grupo",
+      "desc": "La guía completa paso a paso para planificar un viaje en grupo con éxito.",
+      "link": "Leer la guía →"
+    }
+  }
+}

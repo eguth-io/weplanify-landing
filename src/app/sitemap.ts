@@ -120,9 +120,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: "monthly",
         priority: 0.85,
       });
+      // Destination/guide content (and their localized slugs) only exist in en/fr;
+      // other locales render the en fallback, so they reuse the en slug.
+      const contentLocale = locale === "fr" ? "fr" : "en";
       for (const d of destinations) {
         entries.push({
-          url: `${siteUrl}/${locale}/destinations/${d.slug[locale]}`,
+          url: `${siteUrl}/${locale}/destinations/${d.slug[contentLocale]}`,
           lastModified: new Date(),
           changeFrequency: "monthly",
           priority: 0.85,
@@ -138,9 +141,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: "monthly",
         priority: 0.85,
       });
+      const contentLocale = locale === "fr" ? "fr" : "en";
       for (const g of countryGuides) {
         entries.push({
-          url: `${siteUrl}/${locale}/travel-guides/${g.slug[locale]}`,
+          url: `${siteUrl}/${locale}/travel-guides/${g.slug[contentLocale]}`,
           lastModified: new Date(),
           changeFrequency: "monthly",
           priority: 0.85,

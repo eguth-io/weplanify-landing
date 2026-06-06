@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Ultra Europe 2026：旅行规划工具 —— 斯普利特、机票、门票",
+    "description": "Ultra Europe 2026（7 月 10–12 日，克罗地亚斯普利特）全攻略：门票和 Destination Ultra 套餐、从巴黎出发的直飞、住在哪里、赫瓦尔/布拉奇/维斯的岛屿之周，以及共享团体预算。"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "current": "Ultra Europe 2026 旅行规划工具"
+  },
+  "hero": {
+    "tag": "音乐节指南与旅行规划工具 · 斯普利特 2026",
+    "title": "Ultra Europe 2026：你前往斯普利特的旅行规划工具",
+    "readTime": "阅读时间 9 分钟",
+    "ctaButton": "规划我们的 Ultra Europe 之旅",
+    "ctaNote": "免费 · 为团体打造 · 英语/法语",
+    "imageAlt": "Ultra Europe 2026 —— 朋友们在无边泳池派对上，背景是 EDM 舞台和克罗地亚的亚得里亚海"
+  },
+  "facts": {
+    "heading": "音乐节信息",
+    "datesLabel": "日期",
+    "datesValue": "7 月 10–12 日",
+    "siteLabel": "现场",
+    "stagesLabel": "舞台",
+    "stagesValue": "Main · RESISTANCE · Arcadia · UMF Radio",
+    "capacityLabel": "容量",
+    "capacityPerDay": "每天"
+  },
+  "stakes": {
+    "p1": "在一座 20 万人的罗马城市里三个夜晚的 EDM，随后是四座亚得里亚海岛屿之间一周的船上派对。Ultra Europe 落在克罗地亚盛夏的酷热（平均 30°C）和旅游密度的双重高峰 —— 斯普利特、赫瓦尔和布拉奇整个 7 月人口合计翻三倍。第一阶段阵容是多年来最广的：献给 techno 纯粹主义者的 Carl Cox 和 Sasha & John Digweed，旋律一侧的 Eric Prydz 和 Boris Brejcha，主流巅峰时段的 DJ Snake 和 Major Lazer，bass 的 ILLENIUM 和 Excision，trance 传承时段的 Hardwell 和 Armin van Buuren，外加一个预示非官方 Swedish House Mafia 时刻的 Sebastian Ingrosso B2B Steve Angello 时段。阵容之下，旅行本身才是更难的题 —— 巴黎午夜的航班、和五个哥们儿合住的斯普利特公寓、宿醉中早上 7 点去赫瓦尔的渡轮、凌晨 5:30 从 Park Mladeži 出来的末班接驳车。",
+    "p2": "WePlanify 是前往斯普利特的乐迷的免费共享指挥中心 —— 机票、斯普利特公寓、Aircash 预存款、音乐节之夜和可选的岛屿之周集于一处，英语或法语均可。"
+  },
+  "toc": {
+    "title": "本页内容",
+    "lineup": "2026 阵容",
+    "tickets": "门票、价格与 Destination Ultra",
+    "gettingThere": "前往斯普利特",
+    "sleeping": "在斯普利特住哪里",
+    "destinationUltra": "岛屿之周（布拉奇、赫瓦尔、维斯）",
+    "planning": "和你这帮人一起策划行程",
+    "budget": "预算贴士",
+    "faq": "常见问题"
+  },
+  "lineup": {
+    "title": "2026 阵容",
+    "subtitle": "四个舞台，多年来最广的光谱。值得飞往斯普利特的名字。",
+    "items": [
+      { "stop": "主舞台支柱", "desc": "Hardwell、Armin van Buuren、DJ Snake、Steve Aoki、Major Lazer、Sebastian Ingrosso B2B Steve Angello。挤满全场的巅峰时段主舞台强手。Ingrosso × Angello 时段是每个人都会到场的时刻 —— 非官方 Swedish House Mafia 的地盘。" },
+      { "stop": "RESISTANCE techno 重量级", "desc": "Carl Cox、Eric Prydz、Sasha & John Digweed、Boris Brejcha、Adriatique、The Martinez Brothers、Miss Monique。Ultra 的 techno 舞台已成为音乐节低调的压轴 —— Cox 回归、Prydz 重返克罗地亚巡演线、Sasha & John Digweed 作为传承组合。" },
+      { "stop": "Bass 与 dubstep", "desc": "Excision、ILLENIUM、ISOXO。Arcadia Afterburner 舞台上更重的时段，四个舞台中最响的。尤其是 ILLENIUM，能拉来既为旋律也为 bass 而来的双重观众 —— 如果你在两者间切换，这是值得不错过的时段。" },
+      { "stop": "House 与新晋名字", "desc": "John Summit、Marlon Hoffstadt、Vintage Culture、Eli Brown，Sara Landry 的 Hekate 厂牌专场（techno），Dirty Workz 厂牌专场（hardstyle）。一天真正开始的傍晚曲线 —— 来晚了就意味着把你的巅峰烧在错误的时段上。" },
+      { "stop": "日程的形态", "desc": "音乐节时间为周五 19:00 至 05:00，周六和周日 20:00 至 05:00。四个舞台大量重叠 —— 撞场不断。尽早在团队内部分享日程，尤其是 Cox / Prydz / Ingrosso 的冲突窗口附近。" }
+    ]
+  },
+  "tickets": {
+    "title": "门票、价格与 Destination Ultra",
+    "subtitle": "三个等级、两种形式 —— 音乐节周末或完整的岛屿之周。Cruise Tier 1 已无，其余仍可在官方门户预订。",
+    "card1": {
+      "tag": "音乐节周末",
+      "title": "1 日票和 3 日票",
+      "desc": "1 日 GA Fan Pit 149 欧元，1 日 VIP Premium 199 欧元，3 日 VIP Premium 449 欧元，1 日 VIP ULTRA 249 欧元。只在 ultraeurope.com 购买 —— 二级挂单常在入口扫描时被拒。"
+    },
+    "card2": {
+      "tag": "Destination Ultra",
+      "title": "7 日岛屿通行证",
+      "desc": "普通入场 369 欧元，VIP 669 欧元。涵盖音乐节外加配套活动：布拉奇游艇赛、赫瓦尔 Amfora 度假村的 Ultra Beach（容量约 5,000），以及维斯岛上的 RESISTANCE 收官派对。如果你负担得起多出的天数，对从巴黎过来的乐迷而言最划算。"
+    },
+    "card3": {
+      "tag": "邮轮套餐",
+      "title": "7 日邮轮（Tier 1 售罄）",
+      "desc": "Tier 1 售价 2,499 欧元已售罄。Tier 2 售价 2,999 欧元仍有，全包：舱位、音乐节通行证、所有岛屿活动、接送。如果你想要零后勤，这是高端之选 —— 但它会把预算砍掉一半。"
+    }
+  },
+  "gettingThere": {
+    "title": "前往斯普利特",
+    "subtitle": "从巴黎直飞是唯一明智的选择。火车和自驾不现实。克罗地亚自 2023 年 1 月起加入申根区和欧元区，所以从欧盟出发无边境或货币的摩擦。",
+    "parisLabel": "从巴黎出发",
+    "parisItems": [
+      "→ CDG → SPU 直飞约 2 小时 05 分",
+      "→ 克罗地亚航空、easyJet、法航",
+      "→ 夏季每周约 7 班",
+      "→ 提前票价 40-80 欧元，盛夏 150-300 欧元",
+      "→ 巴黎奥利机场也有季节性直飞",
+      "→ SPU 到斯普利特市中心：约 25 公里，乘出租车或接驳车约 30 分钟"
+    ],
+    "otherLabel": "其他路线与签证",
+    "otherTitle": "你需要知道的",
+    "otherItems": [
+      "→ 火车 巴黎 → 斯普利特：经慕尼黑/维也纳/萨格勒布 24 小时以上 —— 不现实",
+      "→ 自驾：经米兰-的里雅斯特-里耶卡约 1,500 公里 / 约 15 小时 —— 仅适合更长的达尔马提亚公路旅行",
+      "→ 自 2023 年 1 月 1 日起加入申根：从欧盟出发无边检",
+      "→ 自 2023 年 1 月 1 日起使用欧元：无需货币兑换",
+      "→ 英国 / 美国：申根短期停留免签（90/180）"
+    ]
+  },
+  "sleeping": {
+    "title": "在斯普利特住哪里",
+    "subtitle": "三个实用区域，均可步行至老城或音乐节场地。许多酒店半年前就订满了 —— 如今公寓路线是更聪明的选择。",
+    "zone1": {
+      "tag": "区域 1",
+      "title": "戴克里先宫与老城",
+      "desc": "步行可达一切（餐厅、酒吧、渡轮码头），最有氛围的据点。精品酒店和公寓，7 月价格高端。步行约 2 公里或出租车 5 分钟到 Park Mladeži。"
+    },
+    "zone2": {
+      "tag": "区域 2",
+      "title": "巴奇维采海滩",
+      "desc": "距老城步行 10 分钟，比斯普利特市均价高约 14%。音乐节之夜的天然据点 —— 海离公寓五分钟、海滩酒吧开到很晚，且在去 Park Mladeži 的路上。"
+    },
+    "zone3": {
+      "tag": "区域 3",
+      "title": "市中心与 Park Mladeži 之间的公寓",
+      "desc": "距市中心约 2 公里的住宅街区，两个方向都可步行。一套三或四居室公寓由 4-6 位朋友分摊，7 月通常比酒店房间便宜 30-50%，还能省去凌晨 5 点散场后的打车大战。"
+    }
+  },
+  "midCta": {
+    "title": "只参加音乐节还是完整的岛屿之周？",
+    "subtitle": "发起投票，在一份共享计划里锁定巴黎-斯普利特航班和 Aircash 预存款。",
+    "button": "开始制定计划"
+  },
+  "destinationUltra": {
+    "title": "岛屿之周 —— 布拉奇、赫瓦尔、维斯",
+    "subtitle": "把 Ultra Europe 与日程表上其他所有音乐节区分开来的东西：环绕主周末的一周亚得里亚海船上派对。",
+    "day5": {
+      "title": "第 5 天 —— 布拉奇游艇赛",
+      "desc": "从斯普利特港乘船前往布拉奇的金角沙滩 —— 地中海最常被拍摄的海滩之一。白天、烈日、set 之间下水休息。渡轮替代方案：Jadrolinija 和 Krilo 每天数班运营斯普利特 → 博尔（布拉奇），Ultra 周提前订。"
+    },
+    "day6": {
+      "title": "第 6 天 —— 赫瓦尔 Amfora 的 Ultra Beach",
+      "desc": "旗舰配套活动。Ultra Beach 接管赫瓦尔的 Amfora Grand Beach Resort 泳池，约 5,000 人的池畔观众。白天派对延续至日落。赫瓦尔镇本身距度假村步行 10 分钟 —— 在那里订住宿，或留在船上等返程。"
+    },
+    "day7": {
+      "title": "第 7 天 —— 维斯的 RESISTANCE 收官",
+      "desc": "最偏远、最私密的一站。维斯是四座岛屿中离斯普利特最远的 —— 更安静、开发更少，是收尾整周的纯 techno 收官派对。每天一两班渡轮，要很早订。Tier 2 邮轮套餐自动处理所有接送。"
+    }
+  },
+  "planning": {
+    "title": "和你这帮人一起策划行程"
+  },
+  "budget": {
+    "title": "预算贴士",
+    "p2": "机票价格已经在动。冬季 40-80 欧元的 CDG-SPU，如今 7 月初出发约 120-180 欧元，临近日期 200-300 欧元。周日返程是最贵的时段 —— 岛屿活动后周一或周二返程往往更便宜，且自然契合 Destination Ultra。",
+    "p3": "斯普利特的住宿在 Ultra 周相比普通 7 月周末大致翻了一倍。在巴奇维采和 Park Mladeži 之间订一套三或四居室公寓，由 4-6 位朋友分摊，通常比酒店房间便宜 30-50%，还让你步行可达音乐节和渡轮码头。许多市中心公寓半年前就订满了 —— 把搜索扩大到巴奇维采以东的区域。"
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": [
+      { "q": "Ultra Europe 2026 何时、在哪里举行？", "a": "2026 年 7 月 10 日（周五）至 12 日（周日），在克罗地亚斯普利特的 Stadion Park Mladeži。在 Brodarica 球场的扩建场地上，音乐节现场每天可容纳约 55,000 名乐迷，设四个舞台：Main Stage、RESISTANCE、Arcadia Afterburner 和 UMF Radio。闸门周五 19:00、周六/周日 20:00 开放，每晚演出至 05:00。" },
+      { "q": "Ultra Europe 2026 门票多少钱？", "a": "通过 LIVE IT 平台的 2026 官方定价：1 日普通入场 Fan Pit 149 欧元，1 日 VIP Premium 199 欧元，3 日 VIP Premium 449 欧元，1 日 VIP ULTRA 249 欧元，以及 7 日普通入场 Destination Ultra 通行证（涵盖音乐节外加布拉奇、赫瓦尔和维斯的岛屿派对）369 欧元。7 日 VIP 等级为 669 欧元。官方 7 日邮轮套餐 —— Tier 1 以 2,499 欧元售罄 —— 现在 Tier 2 为 2,999 欧元。只通过 ultraeurope.com 购买；Telegram 或 Vinted 上的二级挂单在入口有被拒风险。" },
+      { "q": "Destination Ultra 之周是什么？", "a": "Destination Ultra 是 Ultra Europe 围绕主音乐节的标志性配套活动周。形式（来自往届）：第 1 天斯普利特的开幕派对，Park Mladeži 的三个音乐节之夜（第 2-4 天），前往布拉奇金角沙滩的游艇赛（第 5 天），赫瓦尔 Amfora 度假村的 Ultra Beach（第 6 天，容量约 5,000），以及维斯岛上的 RESISTANCE 收官派对（第 7 天）。截至撰稿时，7 月 7-13 日前后的 2026 确切日程尚未确认 —— 订渡轮前请查看官网。" },
+      { "q": "我怎么从巴黎前往斯普利特？", "a": "从巴黎 CDG 直飞斯普利特（SPU）约 2 小时 05 分，由克罗地亚航空、easyJet 和法航运营，夏季每周约七班。提前票价从 40-80 欧元起；临近音乐节预计 150-300 欧元。巴黎奥利机场也有季节性直飞。自驾经米兰-的里雅斯特-里耶卡约 1,500 公里 / 15 小时，只有当你打算沿达尔马提亚海岸做更长的公路旅行时才划算。经慕尼黑和萨格勒布的火车路线超过 24 小时 —— 不现实。" },
+      { "q": "我该住在斯普利特哪里？", "a": "三个实用区域。戴克里先宫和老城中心，步行可达一切（精品酒店和公寓，7 月价格高端）。巴奇维采海滩一带，距老城步行约 10 分钟，比市均价高约 14% —— 音乐节之夜的天然据点。以及市中心与 Park Mladeži（音乐节场地）之间的住宅街区，步行约 2 公里。斯普利特 7 月市均价约每晚 110-120 欧元；四星从约 250 欧元起，五星 900 欧元以上。许多酒店半年多前就订满了 —— 由 4-6 位朋友分摊的公寓租赁通常比酒店房间便宜 30-50%。" },
+      { "q": "Aircash 无现金系统怎么运作？", "a": "Ultra Europe 使用 Aircash 手环作为主要的现场支付方式。到达前通过 Aircash App 或用银行卡为手环充值，以跳过现场队列。主要支付亭也接受银行卡。音乐节场地内不接受现金。第一天比你以为需要的少充 —— 音乐节中途补充很快，但未用完的退款在音乐节后走手动申领窗口。" },
+      { "q": "怎么和一群朋友组织一次 Ultra Europe 之旅？", "a": "门票和套餐是个人的 —— 别放进共享池。共享池用于巴黎-斯普利特航班、斯普利特住宿、若延伸到岛屿则是渡轮票、往返 Park Mladeži 的出租车、老城的餐厅，以及现场的 Aircash 预存款。从第一天起就设好类别，这样回家路上账目就不会崩。WePlanify 让每个类别在音乐节几天和可选的岛屿之周里清清楚楚，并轮流由谁垫付每笔花费。" }
+    ]
+  },
+  "discover": {
+    "title": "了解更多",
+    "tomorrowland": { "title": "Tomorrowland 2026 旅行规划工具", "desc": "在比利时布姆的两个周末。", "cta": "阅读更多 →" },
+    "hellfest": { "title": "Hellfest 2026 旅行规划工具", "desc": "在法国克利松的四天金属音乐。", "cta": "阅读更多 →" },
+    "eclipse": { "title": "2026 年 8 月 12 日日食", "desc": "西班牙、冰岛还是邮轮 —— 八月的那次日食。", "cta": "阅读更多 →" },
+    "tripWithFriends": { "title": "与好友的旅行", "desc": "轻松规划任意团体旅行。", "cta": "阅读更多 →" }
+  },
+  "cta": {
+    "title": "打造你的 Ultra Europe 之旅",
+    "subtitle": "巴黎-斯普利特航班、斯普利特公寓、Aircash 预存款、音乐节之夜、可选的岛屿之周 —— 一份计划，让你整个团队步调一致。",
+    "button": "预填 Aircash 预存款 + 斯普利特公寓"
+  },
+  "jsonld": {
+    "eventDescription": "Ultra Europe 2026，于 2026 年 7 月 10 日至 12 日在克罗地亚斯普利特 Stadion Park Mladeži 举行、为期三天的电子音乐节。四个舞台，每天约 55,000 名乐迷，由 Carl Cox、Eric Prydz、Hardwell、Armin van Buuren、DJ Snake、John Summit、ILLENIUM、Major Lazer 和 Steve Aoki 领衔。",
+    "articleHeadline": "Ultra Europe 2026：前往克罗地亚斯普利特的旅行规划工具",
+    "howToName": "如何策划一次前往斯普利特的 Ultra Europe 2026 之旅",
+    "howToDescription": "距音乐节两个月，这里教你如何锁定行程：选只参加音乐节还是 Destination Ultra 之周、在下一轮涨价前订好机票和斯普利特住宿、为 Aircash 充值，并规划好四段昼夜能量曲线。",
+    "howToSteps": [
+      { "name": "只参加音乐节还是完整的 Destination Ultra 之周 —— 让团队投票", "text": "三个音乐节日 vs 含布拉奇/赫瓦尔/维斯岛屿派对的七天，在预算、后勤和体力上是非常不同的旅行。尽早快速发起一次投票，这样你才能订对机票（周日返程 vs 之后的周二）和对的住宿（仅斯普利特 vs 斯普利特 + 跳岛）。" },
+      { "name": "在下一轮涨价前订好巴黎-斯普利特直飞和斯普利特住宿", "text": "CDG-SPU 直飞约 2 小时 05 分，由克罗地亚航空、easyJet 和法航运营。提前票价为 40-80 欧元，盛夏推向 150-300 欧元。为整队人锁定一班去程和一班返程，再加上老城与 Park Mladeži 之间、两者皆步行可达的一套斯普利特公寓。" },
+      { "name": "在线为 Aircash 充值并设置共享预算", "text": "门票和套餐保持个人自付。其余一切（巴黎-斯普利特航班、斯普利特公寓、若延伸则前往赫瓦尔/布拉奇的渡轮、出租车、老城晚餐、Aircash 预存款）都进入一个带类别的共享池。通过 App 为 Aircash 充值以跳过现场队列。" },
+      { "name": "规划昼夜能量曲线", "text": "Ultra 在夜间进行（周五 19:00–05:00，周六/周日 20:00–05:00），Destination Ultra 在白天进行（游艇赛、海滩派对）。斯普利特 7 月气温 30°C、阳光强烈 —— 给白天的站点安排好遮荫、饮水和防晒，再在音乐节前小睡。提前为每个舞台分享碰头点；5.5 万人同时涌入时网络会被压垮。" }
+    ]
+  }
+}

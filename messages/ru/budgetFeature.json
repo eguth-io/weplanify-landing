@@ -1,0 +1,39 @@
+{
+  "copy": {
+    "paidBy": "Заплатил",
+    "toReceive": "получит",
+    "owes": "должен",
+    "total": "Итого",
+    "pieLabels": {
+      "accommodation": "Жильё",
+      "restaurants": "Рестораны",
+      "activities": "Активности",
+      "transport": "Транспорт"
+    },
+    "liveSplitTitle": "Попробуйте: добавьте расход",
+    "liveSplitSubtitle": "Поездка в Лиссабон — 4 друга",
+    "quickAdd": "Быстро добавить",
+    "recentExpenses": "Недавние расходы",
+    "whoOwesWhat": "Кто кому должен",
+    "toSettleUp": "К расчёту",
+    "freeNoCard": "Бесплатная регистрация. Карта не нужна.",
+    "tryItHint": "👆 Нажмите кнопку, чтобы добавить расход, и смотрите, как балансы обновляются в реальном времени.",
+    "participants": [
+      { "name": "Мари", "avatar": "👩‍🎨" },
+      { "name": "Тома", "avatar": "🧔" },
+      { "name": "Эмма", "avatar": "👱‍♀️" },
+      { "name": "Люка", "avatar": "🧑‍💻" }
+    ],
+    "expenses": [
+      { "name": "Ужин в ресторане", "amount": 156, "paidBy": "Мари" },
+      { "name": "Аренда авто", "amount": 320, "paidBy": "Тома" },
+      { "name": "Билеты в музей", "amount": 84, "paidBy": "Эмма" }
+    ],
+    "presets": [
+      { "name": "Ужин", "amount": 80, "emoji": "🍝" },
+      { "name": "Такси", "amount": 24, "emoji": "🚕" },
+      { "name": "Экскурсия", "amount": 60, "emoji": "🎨" },
+      { "name": "Бранч", "amount": 48, "emoji": "🥐" }
+    ]
+  }
+}

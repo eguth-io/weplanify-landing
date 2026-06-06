@@ -1,0 +1,24 @@
+{
+  "copy": {
+    "active": "进行中",
+    "votes": "票",
+    "endsIn": "结束",
+    "endTime": "2 小时后",
+    "livePollQuestion": "今晚我们去哪儿吃？🍽️",
+    "livePollOptions": [
+      { "option": "🍕 披萨", "votes": 4, "voters": ["👩‍🎨", "🧔", "👱‍♀️", "🧑‍💻"] },
+      { "option": "🍣 寿司", "votes": 3, "voters": ["😊", "👨‍🦱", "🧑‍🦰"] },
+      { "option": "🍔 汉堡", "votes": 2, "voters": ["👩‍🦳", "🧑‍🎤"] }
+    ],
+    "livePollTotal": 9,
+    "multiPollsTitle": "从目的地到餐厅：一切都一起决定",
+    "multiPollsSubtitle": "目的地、活动、餐厅、日期……一切都能一起决定。",
+    "completedLabel": "已完成",
+    "freeNoCard": "免费注册，无需信用卡。",
+    "showcasePolls": [
+      { "question": "去哪个目的地？", "options": ["🇪🇸 西班牙", "🇵🇹 葡萄牙", "🇮🇹 意大利"], "winner": "🇵🇹 葡萄牙", "votes": 12 },
+      { "question": "第 3 天的活动？", "options": ["🏄 冲浪", "🚶 徒步", "🍷 品酒"], "winner": "🏄 冲浪", "votes": 8 },
+      { "question": "酒店还是 Airbnb？", "options": ["🏨 酒店", "🏠 Airbnb"], "winner": "🏠 Airbnb", "votes": 10 }
+    ]
+  }
+}

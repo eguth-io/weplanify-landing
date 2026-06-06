@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Pianificatore di ritiri aziendali — Viaggi di team building | WePlanify",
+    "description": "Organizza il tuo prossimo ritiro aziendale o offsite di team senza il caos dei fogli di calcolo. Itinerari, sondaggi, budget — un solo strumento, zero grattacapi."
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "hero": {
+    "tag": "Viaggi aziendali e di team",
+    "title": "Organizza un viaggio di team a cui le persone vogliono davvero partecipare",
+    "intro": "I ritiri di team falliscono quando una sola persona pianifica tutto, nessuno ha voce in capitolo e le attività sembrano forzate. Ecco come organizzarne uno che il tuo team apprezzerà davvero — e che porta risultati concreti.",
+    "readTime": "9 min di lettura"
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "whyFail": "Perché la maggior parte dei viaggi di team manca il bersaglio",
+    "types": "Tipi di viaggi di team",
+    "pitch": "Come proporlo alla dirigenza",
+    "weplanifyHelps": "Come ti aiuta WePlanify",
+    "timeline": "Tabella di marcia per l'organizzazione",
+    "roi": "Misurare il ROI",
+    "faq": "Domande frequenti"
+  },
+  "whyFail": {
+    "title": "Perché la maggior parte dei viaggi di team manca il bersaglio",
+    "p1": "La maggior parte dei ritiri aziendali viene organizzata dall'alto verso il basso: qualcuno nelle risorse umane o nel management sceglie una sede, prenota alcune attività, invia un invito sul calendario e spera per il meglio. Il risultato? Metà del team teme il divertimento forzato, l'altra metà è confusa sul programma e chi organizza è esausto prima della prima cena di squadra.",
+    "p3": "WePlanify coinvolge tutto il team nella pianificazione. Non solo chi organizza."
+  },
+  "types": {
+    "title": "Tipi di viaggi di team",
+    "subtitle": "Obiettivi diversi richiedono formati diversi. Scegli quello che corrisponde alle esigenze del tuo team.",
+    "items": [
+      { "title": "Il ritiro classico", "desc": "2-3 giorni in una struttura in campagna. Un mix di workshop, attività all'aria aperta e tempo libero. Funziona meglio per i raduni annuali di tutta l'azienda e le sessioni di pianificazione strategica.", "color": "bg-[#EEF899]" },
+      { "title": "L'offsite in città", "desc": "Una città vivace per 2-4 giorni. Coworking in ufficio la mattina, esplorazione e cene di squadra la sera. Ideale per i team da remoto che si incontrano di persona per la prima volta.", "color": "bg-[#61DBD5]" },
+      { "title": "Il viaggio avventura", "desc": "Trekking, rafting, arrampicata, sci — qualcosa di fisico che spinga le persone fuori dalla zona di comfort insieme. Perfetto per team piccoli e affiatati. Crea legami forti in fretta.", "color": "bg-[#F6391A]" },
+      { "title": "Il ritiro di lavoro", "desc": "In parte lavoro, in parte svago. Un viaggio di una settimana in cui le mattine sono sprint produttivi e i pomeriggi sono liberi. Ottimo per startup e team distribuiti che hanno bisogno di tempo concentrato insieme.", "color": "bg-white" }
+    ]
+  },
+  "pitch": {
+    "title": "Come proporlo al tuo capo",
+    "p1": "Il segreto per far approvare un viaggio di team è presentarlo come un investimento, non come una spesa. I team da remoto e ibridi in particolare soffrono di relazioni interfunzionali deboli — il tipo di legami che si formano solo di persona. Un ritiro ben pianificato si ripaga da solo con una collaborazione migliore, un minor turnover e un migliore inserimento dei nuovi assunti."
+  },
+  "pullQuote": "I migliori ritiri di team non sembrano divertimento obbligatorio — sembrano un viaggio a cui parteciperesti anche se non lo pagasse il lavoro.",
+  "weplanifyHelps": {
+    "title": "Come WePlanify aiuta i team",
+    "items": [
+      { "title": "Lascia votare il team", "desc": "Usa i sondaggi per decidere destinazioni, date e attività. Quando le persone scelgono cosa fare, non vedono l'ora di farlo. Il voto anonimo elimina la gerarchia dalla decisione.", "link": "/features/polls" },
+      { "title": "Un itinerario che tutti possono vedere", "desc": "Costruite il programma in modo collaborativo. Contrassegna cosa è obbligatorio (la sessione di strategia) e cosa è opzionale (l'escursione). Le modifiche si sincronizzano in tempo reale — basta inviare PDF aggiornati via email.", "link": "/features/planning" },
+      { "title": "Budget trasparente", "desc": "Tieni traccia di ogni spesa in tempo reale. Etichetta per categoria per una rendicontazione facile al reparto finanziario. Separa le spese aziendali da quelle personali. Chiaro, pulito, nessuna sorpresa.", "link": "/features/budget" },
+      { "title": "Coordina la logistica su larga scala", "desc": "Liste per i bagagli condivise, dettagli sui trasporti, assegnazione delle camere — tutto in un unico posto. Quando 20 persone devono essere allo stesso ristorante alle 20, l'itinerario condiviso è la tua unica fonte di verità.", "link": "/features/collaboration" }
+    ]
+  },
+  "timeline": {
+    "title": "Tabella di marcia: dall'idea all'offsite",
+    "p3": "Due settimane prima, passa alla modalità comunicazione. Condividi l'itinerario definitivo con tutto il team, invia i suggerimenti per i bagagli e conferma i numeri per ogni attività. Fissa in alto nel viaggio i dettagli importanti — transfer aeroportuali, orari di check-in, contatti di emergenza. Un team ben informato è un team rilassato.",
+    "p4": "Una settimana prima e durante il viaggio, il tuo compito è restare flessibile. I cambiamenti dell'ultimo minuto capitano — un ristorante annulla, il meteo cambia, il volo di qualcuno è in ritardo. Con un itinerario condiviso che si aggiorna in tempo reale, puoi adattarti al volo e tutti restano al corrente. Basta messaggi di gruppo frenetici che chiedono \"dove dovremmo essere adesso?\""
+  },
+  "roi": {
+    "title": "Misurare il ROI del tuo ritiro di team"
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      { "q": "WePlanify può gestire team numerosi (oltre 20 persone)?", "a": "Sì. Non c'è limite alla dimensione del gruppo. Ogni membro del team si unisce con un link condiviso e può vedere l'itinerario, votare nei sondaggi e tenere traccia delle spese. Per gruppi molto numerosi, puoi usare i sottogruppi all'interno del viaggio per diversi percorsi di attività." },
+      { "q": "Come si gestiscono le spese quando paga l'azienda?", "a": "Usa il tracker del budget per registrare tutte le spese in tempo reale. Etichetta le spese per categoria (alloggio, pasti, attività, trasporti) per una rendicontazione facile. Alla fine del viaggio, esporta un riepilogo pulito per il reparto finanziario o per il rimborso. Puoi separare le spese pagate dall'azienda da quelle personali." },
+      { "q": "Possiamo coinvolgere i membri del team da remoto nella pianificazione?", "a": "Assolutamente. WePlanify funziona nel browser — nessuna app da scaricare. Condividi il link del viaggio e i membri del team da remoto possono proporre idee, votare le attività e vedere l'itinerario completo da ovunque. È progettato per la collaborazione distribuita." },
+      { "q": "Con quanto anticipo dovremmo organizzare un ritiro di team?", "a": "Almeno due-tre mesi per i ritiri nazionali, quattro-sei mesi per quelli internazionali. Gli alloggi per gruppi numerosi si prenotano in fretta e le persone hanno bisogno di preavviso per bloccare i loro calendari. Avvia un viaggio su WePlanify in anticipo per raccogliere idee ancor prima che i dettagli siano definitivi." },
+      { "q": "Quali tipi di viaggi di team funzionano meglio?", "a": "Dipende dai tuoi obiettivi. I team di problem-solving traggono beneficio dalle attività avventurose (escape room, sfide all'aperto). I team creativi prosperano con l'esplorazione non strutturata (viaggi in città, esperienze culturali). I team nuovi hanno bisogno di formati adatti a rompere il ghiaccio. Usa i sondaggi per capire cosa vuole davvero il tuo team — potresti sorprenderti." },
+      { "q": "Come si propone un viaggio di team al management?", "a": "Concentrati sui risultati: comunicazione migliore, relazioni interfunzionali più solide, minore isolamento del lavoro da remoto. Presentalo come un investimento nella fidelizzazione e nella produttività, non come una spesa. Fornisci una ripartizione chiara del budget usando il tracker di WePlanify — mostrare trasparenza rende l'approvazione molto più facile." }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "tripWithFriends": { "title": "Viaggio con gli amici", "desc": "Organizza qualsiasi viaggio di gruppo senza fatica.", "cta": "Leggi di più →" },
+    "roadTrip": { "title": "Viaggio on the road", "desc": "Organizza un viaggio on the road di gruppo con percorsi e budget condivisi.", "cta": "Leggi di più →" },
+    "groupGuide": { "title": "Guida ai viaggi di gruppo", "desc": "Guida passo dopo passo per organizzare qualsiasi viaggio di gruppo.", "cta": "Leggi la guida →" },
+    "bestApps": { "title": "Migliori app per viaggi di gruppo", "desc": "Confronta gli strumenti migliori per i viaggi di gruppo.", "cta": "Leggi l'articolo →" }
+  },
+  "cta": {
+    "title": "Organizza un ritiro che il tuo team ricorderà",
+    "subtitle": "Dai voce in capitolo al tuo team nella pianificazione — e guarda cambiare l'energia.",
+    "button": "Inizia a pianificare"
+  },
+  "jsonld": {
+    "articleHeadline": "Organizza un viaggio di team building a cui le persone vogliono davvero partecipare",
+    "howToName": "Come organizzare un ritiro di team aziendale",
+    "howToDescription": "Guida passo dopo passo per organizzare un ritiro di team building che tutto il tuo team apprezzerà.",
+    "howToSteps": [
+      { "name": "Definisci obiettivi e destinazione", "text": "Stabilisci gli obiettivi del ritiro, fissa un budget di massima e seleziona 2-3 idee di destinazione. Lancia un sondaggio per coinvolgere il team nella scelta della destinazione." },
+      { "name": "Prenota alloggio e attività", "text": "Conferma la sede, prenota le attività di gruppo e definisci la logistica di viaggio. Costruisci un itinerario condiviso che tutti possano vedere." },
+      { "name": "Condividi il piano finale", "text": "Distribuisci l'itinerario definitivo, raccogli le esigenze alimentari e i requisiti di accessibilità e conferma i numeri." },
+      { "name": "Resta flessibile il giorno stesso", "text": "Mantieni l'itinerario condiviso aggiornato in tempo reale così tutti restano informati quando i piani cambiano." }
+    ]
+  }
+}

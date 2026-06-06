@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "title": "Organizzare un addio al nubilato — Pianifica la festa perfetta",
+    "description": "Organizza il miglior addio al nubilato con WePlanify. Coordina gli impegni, vota le attività, gestisci un budget condiviso e costruisci un itinerario giorno per giorno — tutto in un organizer gratuito per il weekend di addio al nubilato."
+  },
+  "readTime": "10 min di lettura",
+  "breadcrumb": {
+    "home": "Home",
+    "bachelorette": "Addio al nubilato"
+  },
+  "hero": {
+    "tag": "Pianificatore di addii al nubilato",
+    "title": "Organizza il miglior\naddio al nubilato di sempre",
+    "description": "Ha detto sì — ora tocca a te organizzare un viaggio di addio al nubilato indimenticabile. WePlanify è l'organizer gratuito per il weekend di addio al nubilato che mantiene viva la sorpresa e rende la pianificazione senza stress.",
+    "cta": "Inizia a pianificare gratis"
+  },
+  "guideIntro": {
+    "title": "La guida definitiva all'organizzazione di un addio al nubilato",
+    "paragraphs": [
+      "Un grande addio al nubilato è più di una serata fuori — è una celebrazione di più giorni dell'amicizia, dell'avventura e del percorso della futura sposa verso la vita matrimoniale. Che tu stia organizzando un rilassante weekend alla spa, un'avventura scatenata in città o una fuga al mare baciata dal sole, la magia sta nei dettagli. E azzeccare quei dettagli con un gruppo di 6-15 persone è dove le cose si complicano.",
+      "I migliori addii al nubilato hanno tre cose in comune: rispecchiano la personalità della sposa, sono inclusivi rispetto al budget di tutti e sono abbastanza organizzati da non far crollare la damigella d'onore dietro le quinte. Il segreto non è pianificare ogni minuto in modo maniacale — è avere un sistema che permetta a tutti di contribuire mantenendo una persona al timone.",
+      "È esattamente per questo che è nato WePlanify. Un unico spazio condiviso in cui il gruppo organizzatore può votare le attività, tenere traccia della cassa comune, costruire un itinerario giorno per giorno e coordinare i bagagli — tutto senza che la sposa lo veda mai. Basta gruppi WhatsApp segreti con thread confusi. Solo un hub di pianificazione pulito e organizzato."
+    ]
+  },
+  "painPoints": {
+    "title": "Perché organizzare un addio al nubilato è puro caos",
+    "subtitle": "Adori la futura sposa, ma organizzare il suo grande weekend? È tutta un'altra storia.",
+    "items": [
+      {
+        "emoji": "🤫",
+        "title": "Mantenere il segreto",
+        "description": "Provare a organizzare una sorpresa epica coordinando 12 persone in una chat di gruppo che la sposa non può vedere? Un incubo assoluto. Qualcuno scrive sempre per sbaglio nel gruppo principale invece che in quello segreto. Oppure la sposa vede l'anteprima di una notifica sul telefono di qualcuno. Con WePlanify, l'intera pianificazione avviene in uno spazio di viaggio privato — niente chat di gruppo ribelli, niente spoiler accidentali."
+      },
+      {
+        "emoji": "📅",
+        "title": "Coordinare gli impegni",
+        "description": "Tra lavoro, figli, vacanze e 'fammi sentire il mio partner' — trovare un weekend che vada bene a tutti sembra impossibile. Mandi un messaggio per chiedere le date e metà del gruppo risponde una settimana dopo. La finestra per prenotare un alloggio economico continua a restringersi mentre aspetti. I sondaggi sulle date di WePlanify danno a tutti una scadenza chiara per votare, e i risultati sono immediati."
+      },
+      {
+        "emoji": "💸",
+        "title": "Il discorso sui soldi",
+        "description": "Chi paga l'Airbnb? Come si divide la quota della sposa? Richieste di pagamento che volano ovunque. Imbarazzante. Alcuni pagano troppo, altri troppo poco e nessuno sa il totale reale fino a settimane dopo il viaggio, quando finalmente qualcuno si siede con una calcolatrice. Il tracker del budget condiviso in WePlanify gestisce tutto questo in tempo reale — contributi, spese e chi deve cosa."
+      },
+      {
+        "emoji": "🎉",
+        "title": "Troppe attività",
+        "description": "Giornata alla spa o tour enologico? Mare o città? Tutti hanno un'opinione ma nessuno vuole essere quello che decide per il gruppo. Il risultato è o uno stallo in cui non si prenota nulla, o una persona che prende tutte le decisioni covando in silenzio il malcontento di fare tutto il lavoro. I sondaggi di gruppo risolvono la cosa all'istante — proponi tre opzioni, fai votare tutti e prenota la vincitrice. La democrazia al suo meglio."
+      }
+    ]
+  },
+  "features": {
+    "title": "WePlanify rende facile organizzare un addio al nubilato",
+    "subtitle": "Tutto ciò che ti serve per organizzare un viaggio di addio al nubilato — in un unico posto, con zero stress.",
+    "items": [
+      {
+        "emoji": "🔒",
+        "title": "Gruppo di pianificazione privato",
+        "description": "Crea uno spazio di pianificazione segreto senza la sposa. Invita il gruppo, discutete le idee e mantenete intatta la sorpresa — senza chat di gruppo ribelli. Tutti nel gruppo organizzatore possono vedere l'itinerario, il budget e la lista per i bagagli, ma la futura sposa non ha alcun accesso. Decidi tu chi può unirsi e puoi aggiungere la sposa dopo la sorpresa se vuoi che veda i dettagli del viaggio."
+      },
+      {
+        "emoji": "🗳️",
+        "title": "Sondaggi per attività e date",
+        "description": "Non riuscite a mettervi d'accordo su una data o un'attività? Lascia votare il gruppo. I sondaggi rendono facile trovare ciò che va bene a tutti — senza infiniti botta e risposta. Crea sondaggi per qualsiasi cosa: quale weekend è migliore, quale ristorante per la cena di gruppo, spa o gita in barca il sabato pomeriggio. Il voto anonimo fa sì che anche gli amici più timidi abbiano voce in capitolo. I risultati sono chiari, rapidi e definitivi."
+      },
+      {
+        "emoji": "💰",
+        "title": "Budget e cassa condivisi",
+        "description": "Imposta un budget condiviso, tieni traccia dei contributi e dividi i costi in modo equo. Basta conversazioni imbarazzanti sui soldi o incubi da fogli di calcolo. Decidete subito se la sposa paga per sé o se il gruppo copre la sua quota. Registra ogni spesa man mano che avviene — la caparra dell'Airbnb, la prenotazione del ristorante, le t-shirt coordinate — e WePlanify calcola automaticamente chi deve cosa."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Itinerario giorno per giorno",
+        "description": "Costruisci un programma dettagliato per tutto il weekend. Dal drink di benvenuto al brunch finale — tutti sanno cosa succede e quando. Aggiungi orari, luoghi, note e link per ogni attività. Condividi l'itinerario con tutto il gruppo (sposa esclusa), così tutti conoscono il piano. Il giorno stesso, l'itinerario è la tua unica fonte di verità — basta messaggi frenetici per chiedere 'dove ci vediamo?'"
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Idee per l'addio al nubilato per stile",
+    "subtitle": "Non sai che tipo di addio al nubilato organizzare? Ecco cinque stili popolari per ispirarti.",
+    "items": [
+      {
+        "emoji": "🧖",
+        "title": "Ritiro rilassante alla spa",
+        "description": "Prenota un hotel con spa o un resort benessere per un weekend di massaggi, trattamenti viso, idromassaggi e mattinate lente. Perfetto per le spose che vogliono decomprimere prima del caos del matrimonio. Aggiungi un corso di cucina di gruppo o una degustazione di vini per spezzare il relax. Consiglio economico: affitta un Airbnb con idromassaggio e prenota trattamenti spa mobili che vengano da voi."
+      },
+      {
+        "emoji": "🌃",
+        "title": "Avventura in città",
+        "description": "Scegli una città vivace — pensa a Barcellona, Austin, Montreal o Lisbona — e riempi il weekend di rooftop bar, tour dello street food, shopping e vita notturna. I viaggi in città funzionano benissimo perché tutti possono separarsi per qualche ora e ritrovarsi per le cene di gruppo. Usa l'itinerario di WePlanify per mappare le attività imperdibili e lascia spazio all'esplorazione spontanea."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Fuga al mare",
+        "description": "Sole, sabbia e costumi coordinati. Un addio al nubilato al mare è un classico per un motivo. Prenota un alloggio fronte mare, pianifica una giornata in barca e organizza cocktail al tramonto sulla riva. Per le destinazioni, pensa a Tulum, alle isole greche, a Bali o al sud della Francia. La lista per i bagagli condivisa è essenziale qui — coordina chi porta i gonfiabili, la borsa frigo e la cassa Bluetooth."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Fuga nelle terre del vino",
+        "description": "Napa, Bordeaux, Mendoza, Toscana — qualsiasi regione vinicola è perfetta per un addio al nubilato sofisticato e memorabile. Prenota un tour in un vigneto, organizza una degustazione privata e concludi la serata con una lunga cena. I viaggi nelle terre del vino possono diventare costosi in fretta, quindi il tracker del budget condiviso è il tuo migliore alleato. Registra degustazioni, pasti e spese di trasporto così tutti restano allineati."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Attivo e all'aria aperta",
+        "description": "Per la sposa avventurosa: trekking, kayak, surf o sci. Prenota uno chalet in montagna o un lodge vicino a un parco nazionale. Pianifica una grande attività di gruppo al giorno (come un'escursione guidata o una gita in rafting) e lascia le serate per cene accoglienti e giochi. La lista per i bagagli è fondamentale per i viaggi all'aria aperta — assicurati che tutti abbiano l'attrezzatura giusta e sappiano cosa condivide il gruppo."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Quando iniziare a organizzare",
+    "subtitle": "Una semplice tabella di marcia per tenerti in carreggiata.",
+    "milestones": [
+      {
+        "time": "6 mesi prima",
+        "title": "Fissa la data e la lista degli invitati",
+        "description": "Sondaggia il gruppo per i weekend disponibili. Definisci chi viene. Crea il tuo viaggio su WePlanify e invita tutti."
+      },
+      {
+        "time": "3 mesi prima",
+        "title": "Prenota alloggio e trasporti",
+        "description": "Vota la destinazione e lo stile di alloggio. Prenota i voli o organizza i carpool. Imposta il budget condiviso."
+      },
+      {
+        "time": "1 mese prima",
+        "title": "Pianifica le attività e costruisci l'itinerario",
+        "description": "Sondaggia per le attività. Costruisci il programma giorno per giorno. Inizia la lista per i bagagli. Ordina eventuali gadget o decorazioni coordinate."
+      },
+      {
+        "time": "1 settimana prima",
+        "title": "Controllo finale e carica di entusiasmo",
+        "description": "Conferma tutte le prenotazioni. Rivedi la lista per i bagagli. Salda eventuali voci di budget in sospeso. Invia l'itinerario finale al gruppo."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Checklist per organizzare l'addio al nubilato",
+    "items": [
+      "Fissa una data che vada bene al maggior numero di persone",
+      "Crea un gruppo di pianificazione privato (senza la sposa)",
+      "Decidi una destinazione e un alloggio",
+      "Imposta e concorda un budget condiviso",
+      "Prenota alloggio e trasporti",
+      "Pianifica le attività e costruisci un itinerario giorno per giorno",
+      "Ordina outfit coordinati, decorazioni o regali",
+      "Crea una lista per i bagagli condivisa",
+      "Conferma tutte le prenotazioni una settimana prima",
+      "Salda il budget e festeggia"
+    ]
+  },
+  "testimonial": {
+    "quote": "Sinceramente eravamo un disastro a provare a organizzare l'addio al nubilato di Jen su WhatsApp. Qualcuno ha proposto WePlanify e ha semplicemente... funzionato? Abbiamo votato tutto, il budget era chiaro e nessuno ha dovuto rincorrere nessuno per i soldi. 10/10 lo rifarei.",
+    "author": "Emma R.",
+    "role": "Damigella, New York"
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Posso organizzare senza che la sposa veda?",
+        "a": "Assolutamente. WePlanify ti permette di creare un gruppo di pianificazione privato che la futura sposa non vede mai. Invita solo le damigelle e gli organizzatori — mantieni la sorpresa completamente intatta."
+      },
+      {
+        "q": "Come gestiamo il budget condiviso?",
+        "a": "WePlanify include un tracker del budget condiviso integrato. Imposta il budget totale, registra ogni spesa, dividi i costi in parti uguali o personalizzate e vedi chi deve cosa in tempo reale. Nessun foglio di calcolo necessario."
+      },
+      {
+        "q": "WePlanify è gratuito per organizzare un addio al nubilato?",
+        "a": "Sì, gratis al 100% — anche per la pianificazione segreta. Crea un gruppo privato senza la sposa, lancia sondaggi, costruisci l'itinerario e tieni traccia della cassa comune senza costi. Una volta svelata la sorpresa, puoi persino aggiungere la futura sposa così può vedere il piano completo. Nessun periodo di prova, nessuna carta di credito, nessun costo nascosto."
+      },
+      {
+        "q": "Con quanto anticipo dovremmo iniziare a organizzare?",
+        "a": "Idealmente sei mesi prima del matrimonio per i viaggi con destinazione, tre mesi per le fughe locali. Prima fissi la data e la lista degli invitati, più facile diventa tutto il resto. Avvia un viaggio su WePlanify non appena nasce l'idea — anche se i dettagli non sono ancora definiti."
+      },
+      {
+        "q": "Qual è un buon budget per un addio al nubilato?",
+        "a": "I budget variano molto a seconda della destinazione e dello stile. Un weekend locale alla spa potrebbe costare dai 200 ai 400 a persona, mentre un viaggio con destinazione può arrivare da 800 a 1500 o più. La chiave è concordare un budget in anticipo e usare un tracker condiviso così tutti conoscono il totale prima di impegnarsi."
+      },
+      {
+        "q": "Come decidiamo le attività in gruppo?",
+        "a": "Usa i sondaggi. Crea un sondaggio con tre-cinque opzioni di attività, fai votare tutti e scegli la vincitrice. Così si evita il problema della singola persona che decide e tutti si sentono coinvolti. Puoi lanciare sondaggi separati per ogni giorno o fascia oraria."
+      },
+      {
+        "q": "E se alcune damigelle non possono partecipare a tutto il weekend?",
+        "a": "Succede in continuazione — e WePlanify lo gestisce con disinvoltura. Puoi costruire un itinerario flessibile in cui alcune persone si uniscono solo per il sabato sera o per il brunch finale. Anche le divisioni del budget si adattano: basta indicare chi partecipa a quali attività e il tracker condiviso ricalcola la quota di ciascuno. Niente conversazioni imbarazzanti su chi paga per un giorno a cui non c'era."
+      }
+    ]
+  },
+  "destinations": {
+    "tag": "Ispirazione per le destinazioni",
+    "heading": "Addii al nubilato pronti da copiare",
+    "seeItinerary": "Vedi l'itinerario →",
+    "seeAll": "Vedi tutte le destinazioni →",
+    "cards": {
+      "lasVegas": {
+        "title": "Las Vegas · 3 giorni",
+        "desc": "La capitale mondiale dell'addio al nubilato. Pool party, dayclub, la Strip, uno spettacolo del Cirque."
+      },
+      "nashville": {
+        "title": "Nashville · 4 giorni",
+        "desc": "La capitale USA dell'addio al nubilato. Pedal tavern, honky-tonk, stivali da cowgirl."
+      },
+      "budapest": {
+        "title": "Budapest · 3 giorni",
+        "desc": "Terme, ruin bar, rooftop. Il weekend europeo di addio al nubilato, fatto come si deve."
+      },
+      "marrakech": {
+        "title": "Marrakech · 4 giorni",
+        "desc": "Riad privato, rituale hammam, deserto di Agafay, cene sui rooftop. Evasione totale."
+      }
+    }
+  },
+  "discover": {
+    "heading": "Scopri di più",
+    "tripWithFriends": {
+      "title": "Viaggio con gli amici",
+      "desc": "Organizza un viaggio di gruppo con gli amici senza fatica usando WePlanify.",
+      "cta": "Leggi di più →"
+    },
+    "guide": {
+      "title": "Guida: come organizzare un viaggio di gruppo",
+      "desc": "La guida completa passo dopo passo per organizzare un viaggio di gruppo riuscito.",
+      "cta": "Leggi la guida →"
+    },
+    "comparison": {
+      "title": "Confronto tra app",
+      "desc": "Scopri come WePlanify si confronta con le altre app per organizzare viaggi di gruppo nel 2026.",
+      "cta": "Vedi il confronto →"
+    }
+  },
+  "cta": {
+    "title": "Pronta a organizzare il miglior addio al nubilato di sempre?",
+    "description": "Unisciti a migliaia di damigelle che usano WePlanify per organizzare addii al nubilato senza stress. È gratis, è divertente e funziona davvero.",
+    "button": "Inizia ora — è gratis"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "Hellfest 2026: Planeador de Viagem — Viagem, Campismo e Preços",
+    "description": "Tudo sobre o Hellfest 2026 (18 a 21 de junho, Clisson): plano de revenda de bilhetes esgotados, TGV de Paris/Bruxelas, transfers em Clisson, campismo vs hotéis em Nantes, sistema cashless e orçamento de grupo partilhado para a peregrinação do metal."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Planeador de Viagem para o Hellfest 2026"
+  },
+  "hero": {
+    "tag": "Guia do festival e planeador de viagem · Clisson 2026",
+    "title": "Hellfest 2026: O Seu Planeador de Viagem para Clisson",
+    "readTime": "9 min de leitura",
+    "ctaButton": "Planear o nosso grupo no Hellfest",
+    "ctaNote": "Grátis · feito para grupos · EN/FR",
+    "imageAlt": "Hellfest 2026 — amigos a ver o pôr do sol sobre as vinhas de Clisson e o recinto do festival"
+  },
+  "facts": {
+    "heading": "Dados do festival",
+    "datesLabel": "Datas",
+    "datesValue": "18–21 de jun.",
+    "siteLabel": "Recinto",
+    "stagesLabel": "Palcos",
+    "stagesValue": "183 artistas",
+    "capacityLabel": "Capacidade",
+    "capacityPerDay": "por dia"
+  },
+  "stakes": {
+    "p1": "Uma peregrinação de quatro dias a uma vila vinícola de 7.000 habitantes que se transforma no lugar mais barulhento da Europa. Os cabeças de cartaz cobrem todo o espetro em que o festival assenta: uma abertura da geração metalcore com os Bring Me The Horizon, uma noite de tradição com os Iron Maiden em digressão dos seus 50 Anos, um sábado nu-metal com os Limp Bizkit e um encerramento punk-rock de domingo com os The Offspring. Por baixo, mais 179 bandas em seis palcos, 85 delas no Hellfest pela primeira vez. O festival está esgotado — mas a operação à sua volta é o que a maioria dos adeptos vai mesmo recordar: o TGV de Montparnasse, o apartamento partilhado com seis amigos em Nantes, a pulseira cashless que fica sem saldo à meia-noite de sábado, o TER de volta a Clisson às 11h de domingo antes do encerramento no Mainstage 1.",
+    "p2": "A WePlanify é o centro de comando partilhado e gratuito para os adeptos que vão a Clisson — TGV, apartamento, saldo cashless, programa dos quatro dias e orçamento num só lugar, em inglês ou francês."
+  },
+  "toc": {
+    "title": "Nesta página",
+    "lineup": "O cartaz de 2026",
+    "tickets": "Bilhetes e revenda oficial",
+    "gettingThere": "Como chegar a Clisson",
+    "sleeping": "Onde dormir",
+    "cashless": "Cashless e praticalidades no recinto",
+    "planning": "Planear a viagem com o grupo",
+    "budget": "Dicas de orçamento",
+    "faq": "Perguntas frequentes"
+  },
+  "lineup": {
+    "title": "O Cartaz de 2026",
+    "subtitle": "Quatro noites de cabeças de cartaz, seis palcos, 183 artistas. Os conflitos de horário que vão ter de negociar dentro do grupo antes mesmo de comprar o bilhete do TGV.",
+    "items": [
+      { "stop": "Quinta-feira — Bring Me The Horizon", "desc": "A abertura é a âncora do metal moderno do fim de semana. Os BMTH no Mainstage indicam para onde o festival está a ir em termos geracionais — mais amplo do que o antigo núcleo underground, mas ainda barulhento o suficiente para o satisfazer. Esperem um espetáculo de grande produção e um público muito mais jovem à frente do que no resto do fim de semana." },
+      { "stop": "Sexta-feira — Iron Maiden 'Run For Your Lives'", "desc": "A digressão do 50.º aniversário dos Maiden passa por Clisson. O alinhamento desta digressão apoia-se fortemente no catálogo da primeira década, que é exatamente o que a maioria do público esperava desde o anúncio. Planeiem estar cedo na zona do photo pit — sexta é a noite em que será mais difícil sair do Mainstage 1 assim que lá estiverem." },
+      { "stop": "Sábado — Limp Bizkit", "desc": "O regresso do nu-metal que ninguém previu para 2026. Os Limp Bizkit no Mainstage num sábado à noite são uma bomba de nostalgia para metade do público e um espetáculo de curiosidade para a outra metade. De qualquer forma, os coros viajam mais longe pelas zonas de campismo do que os próprios amplificadores." },
+      { "stop": "Domingo — The Offspring", "desc": "A encerrar o fim de semana no Mainstage 1, os The Offspring trazem o catálogo punk-rock que envelhece absurdamente bem num público cansado de domingo à noite. O horário é também a janela de conflito mais dolorosa do festival — A Perfect Circle, Behemoth e outros disputam a mesma hora." },
+      { "stop": "Por baixo dos cabeças de cartaz", "desc": "183 artistas em 6 palcos, 85 no Hellfest pela primeira vez. Nomes a manter no radar: A Perfect Circle, Breaking Benjamin, Volbeat, Behemoth, Cult of Luna, Amenra, Igorrr, Kadavar, Ultra Vomit. Partilhem o programa completo dentro do grupo cedo — os conflitos são constantes e a decisão de saltar o cabeça de cartaz pelo horário do Altar é a mais divisiva de qualquer fim de semana de festival." }
+    ]
+  },
+  "tickets": {
+    "title": "Bilhetes e Revenda Oficial",
+    "subtitle": "Esgotado em todo o lado — e o único caminho em frente é uma plataforma de revenda verificada. Tudo o resto é um risco de falsificação.",
+    "card1": {
+      "tag": "Canal 1",
+      "title": "Revenda oficial",
+      "desc": "tickets.hellfest.fr é o único canal legítimo. Os anúncios aparecem quando outros adeptos cancelam — às vezes diariamente, às vezes só na semana do festival. Verifiquem várias vezes ao dia e tenham o pagamento pronto, os anúncios desaparecem em minutos."
+    },
+    "card2": {
+      "tag": "Canal 2",
+      "title": "Passes de um dia (esgotados)",
+      "desc": "Os passes de um único dia também esgotaram para 2026. Reaparecem esporadicamente na revenda oficial juntamente com os passes de 4 dias. Se só um de vocês precisar de um único dia, é na verdade mais fácil de encontrar do que um passe completo."
+    },
+    "card3": {
+      "tag": "O que evitar",
+      "title": "Revenda não oficial",
+      "desc": "Grupos do Telegram, marketplace do Facebook, Vinted, Leboncoin: há muitos relatos de bilhetes falsificados que não passam na leitura à entrada. A pulseira é nominativa — não se pode transferir legalmente fora do canal oficial."
+    }
+  },
+  "gettingThere": {
+    "title": "Como Chegar a Clisson",
+    "subtitle": "TGV para Nantes, TER para Clisson — a rota ferroviária é mais rápida e mais barata do que conduzir para quase todos os pontos de partida europeus. O bilhete 'Live' de 5 € dentro da região é o melhor negócio de toda a viagem.",
+    "parisLabel": "De Paris",
+    "parisItems": [
+      "→ TGV INOUI ou Ouigo de Paris-Montparnasse",
+      "→ 2h00 a 2h26 até Nantes",
+      "→ Desde ~16 € (Ouigo, reservado cedo) até 40-90 € à última hora",
+      "→ TER Nantes–Clisson: de hora a hora, 16-30 min, 5 € com o bilhete 'Live'",
+      "→ Estação de Clisson até ao recinto: 20 min a pé ou um curto transfer pago"
+    ],
+    "otherLabel": "De Lille, Bruxelas, de carro ou de avião",
+    "otherTitle": "Outras rotas",
+    "otherItems": [
+      "→ Lille → Nantes em TGV direto em ~4h, desde ~37 €",
+      "→ Bruxelas → Nantes um TGV direto/dia, ~4h47, desde ~20 €",
+      "→ Carro: parques Este/Oeste gratuitos com transfers gratuitos para o recinto",
+      "→ Aeroporto: Nantes-Atlantique (NTE), transfer do festival disponível a partir do aeroporto",
+      "→ De carro a partir de Paris: ~4h30 sem trânsito, mais à quarta-feira e ao domingo"
+    ]
+  },
+  "sleeping": {
+    "title": "Onde Dormir",
+    "subtitle": "Três opções honestas. O campismo é a experiência; os apartamentos em Nantes são a opção económica; o Easy Camp premium esgotou para 2026.",
+    "option1": {
+      "tag": "Opção 1",
+      "title": "Campismo clássico",
+      "desc": "Incluído no passe de 4 dias. Básico, barulhento, comunitário — o verdadeiro coração da experiência Hellfest. Levem tampões para os ouvidos se alguma vez quiserem dormir antes das 4h. Levem uma tenda que aguente o vento, não só o sol."
+    },
+    "option2": {
+      "tag": "Opção 2",
+      "title": "Apartamento em Nantes",
+      "desc": "A 30 km, 30-45 min de TER ou de carro. Um apartamento de 3-4 quartos dividido entre 4-6 amigos costuma bater os quartos de hotel em 30-50%. O senão: perdem o ambiente do campismo, mas ganham duches, uma cama a sério e uma forma de recuperar."
+    },
+    "option3": {
+      "tag": "Opção 3",
+      "title": "Hotéis em Nantes",
+      "desc": "Em média cerca de 130-180 €/noite no fim de semana do festival, 20-60% acima das tarifas normais. Reservem cedo perto de uma linha de elétrico para a estação — o TER da manhã para Clisson enche depressa e não vão querer uma batalha de táxis às 6h."
+    }
+  },
+  "midCta": {
+    "title": "Já decidiram onde dormir?",
+    "subtitle": "Fixem o apartamento, a divisão do TGV e o saldo cashless num só plano partilhado.",
+    "button": "Começar o plano"
+  },
+  "cashless": {
+    "title": "Cashless e Praticalidades no Recinto",
+    "subtitle": "O recinto é 100% cashless através da pulseira do festival. Planeiem o saldo com antecedência — as filas de carregamento no recinto vão comer o vosso tempo dos Iron Maiden.",
+    "card1": {
+      "title": "Como funciona a pulseira",
+      "desc": "A primeira ativação custa 1,50 €. Carreguem online em cashless.hellfest.fr ou através da app do Hellfest — sem taxa nos carregamentos seguintes. O dinheiro só é aceite nos balcões cashless no recinto, nunca nos bares ou nas bancas de comida. O saldo não utilizado é reembolsável através do portal oficial dentro da janela pós-festival."
+    },
+    "card2": {
+      "title": "O que abranda toda a gente",
+      "desc": "As estações de carregamento de telemóveis estão limitadas a 30 minutos e as filas são constantes — levem uma powerbank de 20.000mAh por grupo, carregada duas vezes. Os multibancos são escassos (apenas na Hell City Square e no supermercado de Clisson) e lentos. A rede móvel satura com mais de 60 mil presentes: combinem um ponto de encontro por palco com antecedência, porque as conversas de grupo não vão chegar em tempo real."
+    }
+  },
+  "planning": {
+    "title": "Planear a Viagem com o Grupo"
+  },
+  "budget": {
+    "title": "Dicas de Orçamento",
+    "p2": "Os preços do TGV já se mexeram. O Ouigo Paris–Nantes a 16 € no inverno anda agora à volta dos 40-70 € nas partidas de quarta/quinta e dos 60-90 € nos regressos de domingo/segunda. Duas poupanças a conhecer: as partidas muito cedo de manhã (06:30-07:30) continuam a ser a opção mais barata, e reservar todo o grupo no mesmo comboio reduz tanto o custo como o stress à chegada a Nantes.",
+    "p3": "O cashless no recinto é o assassino silencioso do orçamento. Rodadas de cerveja, comida, merchandising — um fim de semana típico de Hellfest acaba à volta de 150-200 € por pessoa na pulseira, mesmo numa edição moderada. Carreguem 50 € a menos do que pensam que precisam no primeiro dia: um carregamento extra a meio do festival demora 10 minutos, mas um reembolso surpresa de 200 € seis semanas depois é apenas dinheiro perdido durante o fim de semana."
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      { "q": "Quando e onde é o Hellfest 2026?", "a": "De quinta-feira, 18, a domingo, 21 de junho de 2026, no Val de Moine, em Clisson, uma pequena vila vinícola do Loire-Atlantique, a cerca de 30 km a sudeste de Nantes. O recinto cobre 21 hectares e tem 6 palcos com 183 artistas ao longo dos quatro dias. O dia mais longo do ano — o sol põe-se perto das 22:00, hora local, perfeito para os encerramentos noturnos no palco principal." },
+      { "q": "O Hellfest 2026 está esgotado e como consigo na mesma um bilhete?", "a": "Sim. Tanto os passes de 4 dias como os passes de um único dia estão esgotados, e o alojamento premium Easy Camp também já não existe. A única forma legítima de encontrar um bilhete agora é a plataforma de revenda oficial em tickets.hellfest.fr — os anúncios aparecem quando outros adeptos cancelam, às vezes diariamente, às vezes só dias antes do festival. Evitem grupos do Telegram, marketplace do Facebook e Vinted: há muitos relatos de bilhetes falsificados que não passam na leitura à entrada." },
+      { "q": "Como chego a Clisson a partir de Paris, Lille ou Bruxelas?", "a": "A rota mais rápida é o TGV INOUI ou Ouigo de Paris-Montparnasse para Nantes — 2h00 a 2h26, tarifas desde cerca de 16 € no Ouigo se reservado cedo, 40-90 € mais perto da data. De Lille, contem com um TGV direto em cerca de 4h. De Bruxelas, um TGV direto por dia, cerca de 4h47. De Nantes, apanham depois um TER regional para Clisson — de hora a hora, 16-30 minutos — e durante o festival um bilhete especial 'Live' limita qualquer viagem de TER nos Pays de la Loire de/para Clisson a 5 €." },
+      { "q": "Onde devo ficar perto do festival?", "a": "Três opções. O campismo clássico está incluído no passe de 4 dias — básico, mas o coração da experiência Hellfest. O Easy Camp premium (tipis, chalés, quartos pequenos) está esgotado para 2026. Fora do recinto, os hotéis de Nantes (a 30 km) custam em média cerca de 130-180 €/noite no fim de semana do festival, mais 20-60% face às tarifas normais, e terão de contar com o tempo de transporte nos dois sentidos. Um apartamento com serviço dividido com o grupo costuma sair melhor em termos de preço." },
+      { "q": "Como funciona o sistema cashless do Hellfest?", "a": "O recinto é 100% cashless e o único método de pagamento é a pulseira do festival. Carreguem-na online em cashless.hellfest.fr (sem taxa nos carregamentos após o primeiro) ou nos balcões do recinto. A primeira ativação custa 1,50 €. Há muito poucos multibancos no recinto — na Hell City Square e no supermercado de Clisson — e as filas são longas, por isso carreguem antes de chegar. O saldo não utilizado é reembolsável após o festival dentro da janela anunciada." },
+      { "q": "Como está o tempo em Clisson em meados de junho?", "a": "Dias quentes à volta de 22-24°C, noites frescas à volta de 12-13°C, com cerca de 11 dias de chuva ao longo do mês, por isso um impermeável leve é inegociável. O recinto é aberto e com pouca sombra — levem protetor solar, uma garrafa de água recarregável e um chapéu. Os dias mais longos do ano significam ~16 horas de luz diurna, perfeito para o ritmo do festival mas duro para as baterias dos telemóveis." },
+      { "q": "Qual é o preço de um passe do Hellfest 2026?", "a": "Os passes de 4 dias do Hellfest 2026 foram vendidos a cerca de 369 € na pré-venda e 389 € no preço normal antes de esgotarem. Os passes de um dia rondavam os 99 € (também esgotados). Na plataforma de revenda oficial em tickets.hellfest.fr, os vendedores só podem voltar a anunciar pelo preço original — sem margem legal, por isso um passe de 4 dias revendido continua a custar ~389 €. Acrescentem ~132 €/noite para uma base de hotel em Nantes (com o aumento do festival), ~16-90 € para um TGV Paris-Nantes e 150-200 € de cashless no recinto por pessoa para um orçamento total realista à volta de 700-1000 € para os quatro dias." },
+      { "q": "Como se organiza uma viagem ao Hellfest com um grupo de amigos?", "a": "Os bilhetes de revenda são individuais — mantenham-nos fora do fundo partilhado. O fundo partilhado é para o TGV, o hotel ou apartamento, os carregamentos cashless no recinto, as refeições de grupo em Nantes antes ou depois e o carro de aluguer ou transfer. Definam categorias desde o primeiro dia (transporte, alojamento, comida, saldo cashless) para que as contas não colapsem no regresso a casa. A WePlanify mantém cada categoria limpa e deixa o grupo adiantar despesas por rotação." }
+    ]
+  },
+  "discover": {
+    "title": "Descubra Mais",
+    "champions": { "title": "Final da Liga dos Campeões", "desc": "PSG vs Arsenal em Budapeste, o guia completo.", "cta": "Ler mais →" },
+    "worldCup": { "title": "Planeador de Viagem para o Campeonato do Mundo 2026", "desc": "Siga a sua equipa pelos EUA, Canadá e México.", "cta": "Ler mais →" },
+    "tripWithFriends": { "title": "Viagem com Amigos", "desc": "Planeie qualquer viagem em grupo sem esforço.", "cta": "Ler mais →" },
+    "groupGuide": { "title": "Guia de Viagem em Grupo", "desc": "O guia completo, passo a passo.", "cta": "Ler o guia →" }
+  },
+  "cta": {
+    "title": "Construa a Sua Viagem ao Hellfest",
+    "subtitle": "TGV, apartamento, saldo cashless, programa dos quatro dias, orçamento partilhado — um plano, todo o vosso grupo na mesma página.",
+    "button": "Configurar o saldo cashless + divisão do TGV"
+  },
+  "jsonld": {
+    "articleHeadline": "Hellfest 2026: O Planeador de Viagem para Clisson",
+    "eventDescription": "Hellfest 2026, o festival de metal e rock de quatro dias no Val de Moine, em Clisson, França, de 18 a 21 de junho de 2026. 183 artistas em 6 palcos, com os Bring Me The Horizon, Iron Maiden, Limp Bizkit e The Offspring como cabeças de cartaz.",
+    "howToName": "Como planear uma viagem ao Hellfest 2026 em Clisson",
+    "howToDescription": "A cinco semanas do festival, eis como fixar a viagem: vigilância da revenda de bilhetes, TGV de Paris, logística de Clisson, configuração do orçamento de grupo e plano de saldo cashless.",
+    "howToSteps": [
+      { "name": "Mapeiem quem tem bilhete e quem ainda está à procura", "text": "O Hellfest está esgotado — façam uma sondagem rápida no grupo para assinalar quem está confirmado, quem está à espera na revenda oficial e quem vai de qualquer forma para acampar e aproveitar a vila. A resposta orienta os voos, a divisão de quartos e o tamanho do carro de aluguer." },
+      { "name": "Reservem o TGV e o alojamento antes que escapem", "text": "O Ouigo e o TGV INOUI Paris–Nantes ainda se conseguem reservar, mas sobem depressa nas partidas de quarta/quinta e nos regressos de domingo/segunda. Fixem uma ida e uma volta para todo o grupo, mais um apartamento em Nantes ou um bloco de hotel a 30 minutos do TER para Clisson." },
+      { "name": "Definam um orçamento partilhado com uma categoria de saldo cashless", "text": "Os bilhetes de revenda mantêm-se individuais. Todo o resto (TGV, hotel, apartamento, carro de aluguer, comida, carregamentos cashless no recinto) vai para um fundo partilhado com categorias. Acrescentem uma linha dedicada de 'saldo cashless' para que o merchandising e as rodadas de bar não desapareçam numa enorme coluna de 'diversos'." },
+      { "name": "Planeiem os quatro dias palco a palco", "text": "Seis palcos, 183 artistas, conflitos por todo o lado — partilhem o programa com antecedência para que o grupo saiba quem está no Mainstage 1 para os Iron Maiden e quem fica no Altar para os Cult of Luna. Marquem pausas para água e comida na cronologia, não só as bandas." }
+    ]
+  }
+}

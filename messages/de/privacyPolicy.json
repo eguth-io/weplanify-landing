@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Datenschutzerklärung | WePlanify",
+    "description": "Erfahre, wie WePlanify deine personenbezogenen Daten erhebt, nutzt und schützt."
+  },
+  "title": "Datenschutzerklärung",
+  "lastUpdated": "Zuletzt aktualisiert: 5. April 2026",
+  "breadcrumb": {
+    "home": "Startseite"
+  },
+  "sections": [
+    {
+      "title": "1. Verantwortlicher",
+      "body": "WePlanify wird von der WePlanify SAS betrieben. Bei Fragen zu deinen personenbezogenen Daten kannst du uns unter privacy@weplanify.com kontaktieren."
+    },
+    {
+      "title": "2. Daten, die wir erheben",
+      "body": "Wir erheben je nach deinen Interaktionen mit unseren Diensten folgende Daten:",
+      "list": [
+        "E-Mail-Adresse – wenn du dich für die Beta anmeldest oder Launch-Benachrichtigungen abonnierst.",
+        "Technische Daten – IP-Adresse und Browser-Informationen, die automatisch erhoben werden, wenn du unseren KI-Reiseplaner nutzt oder unsere Website besuchst.",
+        "Nutzungsdaten – anonyme Analysedaten, die über Cookies (mit deiner Einwilligung) erhoben werden, um unseren Dienst zu verbessern."
+      ]
+    },
+    {
+      "title": "3. Wie wir deine Daten nutzen",
+      "body": "Deine Daten werden ausschließlich für folgende Zwecke verwendet:",
+      "list": [
+        "Um dich über den Beta-Zugang und Produkt-Launches zu benachrichtigen (nur wenn du dem zugestimmt hast).",
+        "Um unsere Dienste vor Bots und Missbrauch zu schützen (über Cloudflare Turnstile).",
+        "Um anonyme Nutzungsmuster zu analysieren und das Nutzererlebnis zu verbessern."
+      ]
+    },
+    {
+      "title": "4. Rechtsgrundlage (DSGVO)",
+      "body": "Wir verarbeiten deine personenbezogenen Daten auf Grundlage von:",
+      "list": [
+        "deiner Einwilligung – für Beta-Anmeldebenachrichtigungen und Analyse-Cookies.",
+        "berechtigtem Interesse – für Sicherheit, Bot-Abwehr und Betrugsschutz."
+      ]
+    },
+    {
+      "title": "5. Weitergabe von Daten",
+      "body": "Wir verkaufen deine personenbezogenen Daten niemals. Wir geben Daten an folgende Dienstleister weiter, die alle durch Auftragsverarbeitungsverträge gebunden sind:",
+      "list": [
+        "Resend (USA) – Versand transaktionaler E-Mails (erhält deine E-Mail-Adresse).",
+        "Google Analytics über Google Tag Manager (USA) – anonyme Nutzungsanalyse (mit deiner Einwilligung).",
+        "Cloudflare Turnstile (USA) – Bot-Schutz (erhält deine IP-Adresse)."
+      ]
+    },
+    {
+      "title": "6. Internationale Datenübermittlungen",
+      "body": "Einige unserer Dienstleister haben ihren Sitz in den Vereinigten Staaten. Für diese Übermittlungen stützen wir uns auf das EU-US Data Privacy Framework (Angemessenheitsbeschluss vom Juli 2023), sofern der Anbieter zertifiziert ist, oder andernfalls auf Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO)."
+    },
+    {
+      "title": "7. Speicherdauer",
+      "body": "E-Mails aus der Beta-Anmeldung werden bis zum Beta-Launch und bis zu 12 Monate danach gespeichert und anschließend gelöscht. Über den KI-Reiseplaner erhobene technische Daten (IP-Adressen) werden nach 90 Tagen automatisch gelöscht. Analysedaten werden anonymisiert und unbegrenzt gespeichert."
+    },
+    {
+      "title": "8. Deine Rechte",
+      "body": "Nach der DSGVO hast du das Recht:",
+      "list": [
+        "auf Auskunft über deine personenbezogenen Daten,",
+        "auf Berichtigung unrichtiger Daten,",
+        "auf Löschung deiner Daten,",
+        "deine Einwilligung jederzeit zu widerrufen,",
+        "auf Datenübertragbarkeit,",
+        "eine Beschwerde bei einer Aufsichtsbehörde einzulegen (CNIL in Frankreich)."
+      ],
+      "footer": "Um eines dieser Rechte auszuüben, kontaktiere uns unter privacy@weplanify.com."
+    },
+    {
+      "title": "9. Cookies und lokaler Speicher",
+      "body": "Wir nutzen folgende Technologien:",
+      "list": [
+        "Google Analytics (über GTM) – anonyme Nutzungsanalyse. Dauer: bis zu 13 Monate. Erfordert deine Einwilligung.",
+        "Cloudflare Turnstile – Bot-Schutz. Nur für die Sitzung. Keine Einwilligung erforderlich (berechtigtes Interesse: Sicherheit).",
+        "weplanify_consent (localStorage) – speichert deine Cookie-Einwilligung. Dauerhaft. Keine Einwilligung erforderlich (unbedingt erforderlich)."
+      ],
+      "footer": "Für Besucher im EWR werden vor deiner Einwilligung keine Analyse-Cookies gesetzt. Du kannst deine Einwilligung jederzeit widerrufen, indem du den Speicher deines Browsers leerst."
+    },
+    {
+      "title": "10. Sicherheit",
+      "body": "Wir setzen geeignete technische und organisatorische Maßnahmen ein, um deine personenbezogenen Daten vor unbefugtem Zugriff, Veränderung, Offenlegung oder Zerstörung zu schützen."
+    },
+    {
+      "title": "11. Änderungen dieser Erklärung",
+      "body": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Alle Änderungen werden auf dieser Seite mit einem aktualisierten Überarbeitungsdatum veröffentlicht."
+    }
+  ]
+}

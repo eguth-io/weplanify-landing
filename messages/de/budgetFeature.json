@@ -1,0 +1,39 @@
+{
+  "copy": {
+    "paidBy": "Bezahlt von",
+    "toReceive": "zu erhalten",
+    "owes": "schuldet",
+    "total": "Gesamt",
+    "pieLabels": {
+      "accommodation": "Unterkunft",
+      "restaurants": "Restaurants",
+      "activities": "Aktivitäten",
+      "transport": "Transport"
+    },
+    "liveSplitTitle": "Probier es aus: Ausgabe hinzufügen",
+    "liveSplitSubtitle": "Reise nach Lissabon — 4 Freunde",
+    "quickAdd": "Schnell hinzufügen",
+    "recentExpenses": "Letzte Ausgaben",
+    "whoOwesWhat": "Wer schuldet wem was",
+    "toSettleUp": "Zum Ausgleichen",
+    "freeNoCard": "Kostenlose Anmeldung. Keine Kreditkarte erforderlich.",
+    "tryItHint": "👆 Klick auf einen Button, um eine Ausgabe hinzuzufügen, und sieh zu, wie sich die Salden in Echtzeit aktualisieren.",
+    "participants": [
+      { "name": "Marie", "avatar": "👩‍🎨" },
+      { "name": "Thomas", "avatar": "🧔" },
+      { "name": "Emma", "avatar": "👱‍♀️" },
+      { "name": "Lucas", "avatar": "🧑‍💻" }
+    ],
+    "expenses": [
+      { "name": "Abendessen im Restaurant", "amount": 156, "paidBy": "Marie" },
+      { "name": "Mietwagen", "amount": 320, "paidBy": "Thomas" },
+      { "name": "Museumstickets", "amount": 84, "paidBy": "Emma" }
+    ],
+    "presets": [
+      { "name": "Abendessen", "amount": 80, "emoji": "🍝" },
+      { "name": "Taxi", "amount": 24, "emoji": "🚕" },
+      { "name": "Führung", "amount": 60, "emoji": "🎨" },
+      { "name": "Brunch", "amount": 48, "emoji": "🥐" }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "copy": {
+    "you": "Du",
+    "brand": "WePlanify KI",
+    "chatBubbles": [
+      "Ich möchte im April 2 Wochen mit meiner Freundin in Japan verbringen. Wir lieben Natur, Essen und Tempel. Mittleres Budget.",
+      "Tolle Wahl! Japan im April ist Kirschblütenzeit. Ich schlage eine Route Tokio — Kyoto — Osaka mit Stopps in Nara und Hakone vor. Soll ich dir Unterkunftsoptionen zeigen?",
+      "Ja, am liebsten traditionelle Ryokans, wenn möglich",
+      "Ausgezeichnete Wahl! Ich habe 3 Ryokans mit privatem Onsen in Hakone und 2 renovierte Machiya in Kyoto ausgewählt. Ich berechne außerdem JR-Pass-Routen, um deine Fahrten zu optimieren …"
+    ],
+    "chips": ["Wanderung hinzufügen", "Sushi-Kurs", "JR Pass ansehen", "Budget anpassen"],
+    "modesTitle": "Wähl deinen Planungsstil",
+    "modesSubtitle": "Ob du lieber selbst die Kontrolle behältst oder den Komfort der KI nutzt – WePlanify passt sich dir an.",
+    "manualTitle": "Manuelle Planung",
+    "manualSubtitle": "Volle Kontrolle über jedes Detail. Perfekt für Reisende, die ihre eigenen Abenteuer gern selbst gestalten.",
+    "manualSteps": [
+      { "title": "Erstelle deine Reise", "description": "Lege Reiseziel und Daten fest und lade deine Reisebegleiter ein." },
+      { "title": "Füge Reiseziele hinzu", "description": "Baue deine Reiseroute Schritt für Schritt mit mehreren Stopps." },
+      { "title": "Fülle jeden Tag", "description": "Zieh Aktivitäten, Restaurants und Unterkünfte per Drag & Drop hinein." },
+      { "title": "Arbeitet zusammen", "description": "Deine Gruppe steuert Ideen bei und stimmt über Optionen ab." }
+    ],
+    "aiTitle": "KI-gestützte Planung",
+    "aiSubtitle": "Beschreibe deine Traumreise und lass die KI in Sekunden eine personalisierte Reiseroute erstellen.",
+    "aiUserMsg": "2 Wochen Japan, Kirschblütenzeit, Natur und Tempel",
+    "aiAssistantMsg": "Erstelle deine Reiseroute Tokio → Kyoto → Osaka mit Ryokans und Tempelbesuchen …",
+    "aiTags": ["Sofortige Reiseroute", "Smarte Vorschläge", "Routenoptimierung"],
+    "bestOfBoth": {
+      "strong": "Das Beste aus beiden Welten:",
+      "rest": " Starte mit KI-Vorschlägen und feile dann manuell daran. Oder plane manuell und bitte die KI, Lücken zu füllen."
+    },
+    "visualTitle": "Die KI visualisiert deine Reise",
+    "capabilitiesSubtitle": "Mehr als nur ein Assistent – echtes Reise-Know-how, angetrieben von KI.",
+    "freeNoCard": "Kostenlose Anmeldung. Keine Kreditkarte erforderlich."
+  }
+}

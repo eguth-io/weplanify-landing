@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Blog — Consigli per i viaggi di gruppo",
+    "description": "Scopri articoli e consigli per organizzare viaggi di gruppo indimenticabili. Trucchi di viaggio, destinazioni e guide pratiche."
+  },
+  "staticPosts": [
+    {
+      "title": "Come organizzare un addio al nubilato indimenticabile — Guida 2026",
+      "excerpt": "Dalla scelta della destinazione al coordinamento del gruppo: tutto ciò che ti serve per organizzare un addio al nubilato memorabile, senza stress."
+    },
+    {
+      "title": "Budget per il viaggio di gruppo — Come dividere i costi senza drammi",
+      "excerpt": "Imposta un budget realistico, dividi i costi in modo equo, tieni traccia delle spese in tempo reale e salda tutto in modo pulito a fine viaggio."
+    }
+  ]
+}

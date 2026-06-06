@@ -1,0 +1,23 @@
+{
+  "badge": "descubre la app",
+  "title": "Planifica tu viaje en grupo en 3 sencillos pasos",
+  "description": "Sencillo, colaborativo y pensado para grupos.",
+  "card1": {
+    "title": "Paso 1: Invita a tu grupo",
+    "description": "Rellena lo esencial. Añade a tus amigos o familiares con un clic. Todos ven el mismo viaje.",
+    "statValue": "1 min",
+    "statLabel": "para invitar al grupo"
+  },
+  "card2": {
+    "title": "Paso 2: Explora y descubre",
+    "description": "Desliza entre actividades, restaurantes y hoteles. Añade tus favoritos al itinerario.",
+    "statValue": "500+",
+    "statLabel": "lugares por descubrir"
+  },
+  "card3": {
+    "title": "Paso 3: Decide y finaliza",
+    "description": "Crea encuestas, gestiona el presupuesto y preparad la salida juntos.",
+    "statValue": "100%",
+    "statLabel": "decidido entre todos"
+  }
+}

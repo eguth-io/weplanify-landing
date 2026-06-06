@@ -1,0 +1,14 @@
+{
+  "copy": {
+    "placeholder": "Voglio rilassarmi su una spiaggia messicana con rovine nelle vicinanze...",
+    "submit": "Pianificalo",
+    "submitting": "Creazione in corso…",
+    "cta": "Salva e invita gli amici",
+    "retry": "Un'altra proposta",
+    "errorGeneric": "Qualcosa è andato storto. Riprova.",
+    "errorRateLimit": "Troppi tentativi. Attendi un minuto.",
+    "overline": "Raccontaci il tuo viaggio dei sogni",
+    "caption": "Genereremo un'anteprima della destinazione in pochi secondi — gratis, senza registrazione.",
+    "whatAbout": "Che ne dici di…"
+  }
+}

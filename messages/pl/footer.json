@@ -1,0 +1,52 @@
+{
+  "copyright": "Wszelkie prawa zastrzeżone.",
+  "privacyPolicy": "Polityka prywatności",
+  "termsOfService": "Regulamin",
+  "cookiePolicy": "Polityka plików cookie",
+  "columns": {
+    "features": {
+      "title": "Funkcje",
+      "planning": "Planowanie (ręczne lub z AI)",
+      "polls": "Ankiety grupowe",
+      "collaboration": "Współpraca",
+      "discovery": "Odkrywanie",
+      "itinerary": "Plan podróży",
+      "budget": "Wspólny budżet",
+      "packing": "Listy rzeczy do spakowania",
+      "transport": "Transport",
+      "memories": "Wspomnienia"
+    },
+    "company": {
+      "title": "Firma",
+      "about": "O nas",
+      "partnership": "Współpraca partnerska"
+    },
+    "useCases": {
+      "title": "Zastosowania",
+      "friends": "Wyjazd ze znajomymi",
+      "bachelorette": "Wieczór panieński",
+      "birthday": "Wyjazd urodzinowy",
+      "family": "Wyjazd rodzinny",
+      "roadTrip": "Road trip",
+      "teamBuilding": "Integracja zespołu",
+      "school": "Wycieczka szkolna"
+    },
+    "resources": {
+      "title": "Zasoby",
+      "guidePlanTrip": "Poradnik: jak zaplanować wyjazd grupowy",
+      "destinations": "Kierunki",
+      "travelGuides": "Przewodniki podróżnicze",
+      "appComparison": "Porównanie aplikacji",
+      "events2026": "Wydarzenia 2026 →"
+    }
+  },
+  "followUs": "Obserwuj nas",
+  "newsletter": {
+    "title": "Cotygodniowa porcja inspiracji podróżniczych",
+    "description": "Porady, ukryte perełki i triki podróżnicze prosto na Twoją skrzynkę.",
+    "thanks": "Dziękujemy za zapisanie się!",
+    "emailPlaceholder": "Twój e-mail",
+    "subscribe": "Zapisz się"
+  },
+  "chooseLanguage": "Wybierz język"
+}

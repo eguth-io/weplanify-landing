@@ -1,0 +1,13 @@
+{
+  "title": "Un planificador de viajes en grupo,\nhecho por viajeros, para viajeros.",
+  "bubbles": [
+    { "text": "Comparte tus propias encuestas", "subtitle": "Fechas · Destino · Presupuesto" },
+    { "text": "Gestiona los gastos del viaje", "subtitle": "Vuelos · Airbnb · Comidas" },
+    { "text": "Invita al grupo", "subtitle": "Por email · Por enlace" },
+    { "text": "Gestiona tu viaje", "subtitle": "Paradas · Días · Notas" },
+    { "text": "Busca actividades", "subtitle": "Museos · Comida · Playas" },
+    { "text": "Encuentra tu alojamiento", "subtitle": "Hotel · Airbnb · Hostal" },
+    { "text": "Asigna tareas", "subtitle": "Por hacer · En curso · Hecho" },
+    { "text": "Encuentra transporte", "subtitle": "Vuelo · Tren · Coche" }
+  ]
+}

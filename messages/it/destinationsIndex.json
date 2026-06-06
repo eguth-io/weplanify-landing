@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Destinazioni — Modelli di viaggio di gruppo per città e occasione | WePlanify",
+    "description": "Itinerari di viaggio di gruppo reali e prenotabili: addio al nubilato a Las Vegas e Nashville, Budapest, Marrakech, viaggi on the road in Toscana e Andalusia, weekend a Lisbona. Piani giorno per giorno, luoghi reali, budget."
+  },
+  "eyebrow": "Destinazioni",
+  "title": "Modelli di viaggio,\npronti da copiare.",
+  "intro": "Itinerari reali per veri viaggi di gruppo. Ogni destinazione qui sotto è un modello completo — piano giorno per giorno, luoghi selezionati, budget onesto, lista per i bagagli. Copia uno qualsiasi nel tuo viaggio su WePlanify e adattalo al tuo gruppo.",
+  "filters": {
+    "all": "Tutti i viaggi",
+    "bachelorette": "Addio al nubilato",
+    "road-trip": "Viaggi on the road",
+    "with-friends": "Con gli amici"
+  },
+  "cardCta": "Vedi l'itinerario →",
+  "ctaTitle": "Non trovi la tua destinazione?",
+  "ctaBody": "Avvia un viaggio vuoto su WePlanify — invita gli amici, costruite insieme l'itinerario, condividete il budget. Gratis.",
+  "ctaButton": "Avvia un viaggio gratis",
+  "breadcrumb": {
+    "home": "Home",
+    "destinations": "Destinazioni"
+  },
+  "days": "giorni",
+  "destinationsCount": "{count, plural, one {destinazione} other {destinazioni}}"
+}

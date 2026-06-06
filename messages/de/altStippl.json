@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Stippl-Alternative für Gruppen: kostenloser kollaborativer Planer (2026)",
+    "description": "Suchst du eine Stippl-Alternative für Gruppenreisen? WePlanify ergänzt Zusammenarbeit in Echtzeit, Abstimmungen, geteilte Budgets und Packlisten – kostenlos, zweisprachig (EN/FR)."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "comparison": "Alternativen"
+  },
+  "featureHeader": "Funktion",
+  "features": {
+    "collab_itinerary": "Kollaborative Reiseroute",
+    "polls": "Gruppenabstimmungen / Voting",
+    "budget": "Geteilter Budget-Tracker",
+    "packing": "Packlisten",
+    "map": "Kartenintegration",
+    "discovery": "Aktivitäten entdecken",
+    "journal": "Reisetagebuch / Reels",
+    "community": "Community-Reiserouten",
+    "free": "Kostenloser Tarif",
+    "french": "Französische Sprache",
+    "mobile": "Mobile App",
+    "realtime": "Zusammenarbeit in Echtzeit"
+  },
+  "heroTitle": "WePlanify vs. Stippl",
+  "heroSubtitle": "Vollständiger Vergleich – 2026",
+  "heroIntro": "Stippl ist ein Mobile-First-Reiseplaner mit Tagebüchern, automatischen Reels und von der Community geteilten Reiserouten. WePlanify ist von Grund auf für Gruppenentscheidungen konzipiert – mit Abstimmungen, geteilten Budgets und kollaborativer Planung. Hier ein direkter Blick auf beide Apps.",
+  "verdictTitle": "Kurz gesagt",
+  "verdict": "Stippl bietet visuelle Reiseplanung mit Reisetagebüchern, automatischen Reels und von der Community geteilten Reiserouten. Es fehlen jedoch Gruppenabstimmungen, ein geteilter Budget-Tracker und Französisch-Unterstützung. WePlanify ist für Gruppenentscheidungen gebaut – mit Abstimmungen, geteilten Budgets und kollaborativer Planung. Wähl Stippl für die Dokumentation als Solo-Reisende, WePlanify für die Koordination in der Gruppe.",
+  "comparisonTitle": "Direkter Vergleich",
+  "midCta": "WePlanify kostenlos testen →",
+  "stipplShinesTitle": "Wo Stippl punktet",
+  "stipplShinesPoints": [
+    "Planungs-Engine von Nacht zu Tag – ein Ansatz, der Unterkünfte mit nahegelegenen Aktivitäten für die Tag-für-Tag-Planung verknüpft. Gruppenabstimmungen oder einen Budget-Tracker gibt es nicht.",
+    "Reisetagebücher und automatische Reels – dokumentiere deine Reise mit Fotos und die App erstellt Reels daraus. Das ist eine Funktion für nach der Reise, kein Planungstool.",
+    "Community-Reiserouten – durchstöbere und klone Reiserouten, die andere Reisende geteilt haben. Nützlich als Solo-Inspiration, weniger für Gruppenentscheidungen.",
+    "Mobile-First-Erlebnis – native iOS- und Android-Apps für die Planung unterwegs. Keine Französisch-Unterstützung und kein webbasierter Desktop-Zugang."
+  ],
+  "weplanifyWinsTitle": "Wo WePlanify gewinnt",
+  "weplanifyWinsPoints": [
+    "Gruppenabstimmungen und Voting – lass alle über Reiseziele, Daten und Aktivitäten abstimmen, damit sich niemand übergangen fühlt. Stippl hat keine vergleichbare Funktion für Gruppenentscheidungen.",
+    "Geteilter Budget-Tracker – verfolge Gruppenausgaben, teilt die Kosten und haltet euch finanziell auf dem gleichen Stand, die ganze Reise über. Diese Funktion bietet Stippl nicht.",
+    "Packlisten – kollaborative Packlisten sorgen dafür, dass nichts vergessen wird und nichts doppelt eingepackt wird. Ein klarer Vorteil für Gruppenreisen.",
+    "Zweisprachig (EN/FR) – vollständig auf Englisch und Französisch verfügbar und damit auch für frankophone Reisende zugänglich, die von rein englischsprachigen Apps wie Stippl unterversorgt werden."
+  ],
+  "chooseStipplTitle": "Wer sollte Stippl wählen?",
+  "chooseStipplPoints": [
+    "Alleinreisende oder Paare, die ihre Reisen mit Tagebüchern und Reels dokumentieren wollen.",
+    "Visuelle Planer, die ein Mobile-First-, kartenbasiertes Planungserlebnis bevorzugen.",
+    "Reisende, die zur Inspiration von der Community geteilte Reiserouten entdecken und klonen wollen.",
+    "Menschen, denen das Dokumentieren und Teilen der Reise genauso wichtig ist wie das Planen selbst."
+  ],
+  "chooseWeplanifyTitle": "Wer sollte WePlanify wählen?",
+  "chooseWeplanifyPoints": [
+    "Freundesgruppen ab 4 Personen, die Termine, Vorlieben und Budgets koordinieren müssen.",
+    "Planer von Junggesellinnen- oder Junggesellenabschieden, die die Meinungen einer großen Gruppe unter einen Hut bringen.",
+    "Alle, die integrierte Gruppenentscheidungstools wie Abstimmungen und geteilte Aufgabenlisten wollen.",
+    "Frankophone Reisende, die ein vollständig französischsprachiges Erlebnis brauchen."
+  ],
+  "faqTitle": "Häufig gestellte Fragen",
+  "faqs": [
+    {
+      "q": "Kann ich Stippl für Gruppenreisen nutzen?",
+      "a": "Stippl unterstützt kollaborative Reiserouten und Zusammenarbeit in Echtzeit, sodass mehrere Personen an derselben Reise arbeiten können. Es fehlen jedoch gruppenspezifische Funktionen wie Abstimmungen, Voting und ein geteilter Budget-Tracker, die das Abstimmen von Meinungen und Ausgaben in größeren Gruppen deutlich erleichtern. Für Gruppen ab 4 Personen ist WePlanify die bessere Wahl."
+    },
+    {
+      "q": "Ist Stippl kostenlos?",
+      "a": "Ja, Stippl bietet einen kostenlosen Tarif, der seine Kernfunktionen wie Reiseroutenplanung, Reisetagebücher und Community-Reiserouten umfasst. WePlanify ist ebenfalls für immer kostenlos, ohne versteckte Paywalls oder Funktionsbeschränkungen."
+    },
+    {
+      "q": "Welche App eignet sich besser zur Reisedokumentation?",
+      "a": "Stippl hat Funktionen für Reisetagebücher und automatische Reels, um Reiseerinnerungen festzuhalten. WePlanify konzentriert sich auf die Planungs- und Koordinationsphase statt auf die Dokumentation nach der Reise. Wenn Dokumentation für dich wichtiger ist als Gruppenplanungstools, deckt Stippl diesen Anwendungsfall ab."
+    }
+  ],
+  "ctaTitle": "WePlanify kostenlos testen – für Gruppen gemacht",
+  "ctaButton": "Kostenlos loslegen",
+  "crossLinksTitle": "Mehr entdecken",
+  "basic": "Einfach",
+  "webApp": "Web-App",
+  "crossLinks": {
+    "allTitle": "Alle Alternativen",
+    "allDesc": "Vergleiche WePlanify mit allen beliebten Apps für Gruppenreiseplanung.",
+    "allCta": "Vergleich ansehen →",
+    "wanderlogTitle": "WePlanify vs. Wanderlog",
+    "wanderlogDesc": "Detaillierter Vergleich zwischen WePlanify und Wanderlog für Gruppenreisen.",
+    "wanderlogCta": "Vergleich ansehen →",
+    "guideTitle": "Guide: So planst du eine Gruppenreise",
+    "guideDesc": "Der komplette Schritt-für-Schritt-Guide für die Planung einer gelungenen Gruppenreise.",
+    "guideCta": "Guide lesen →"
+  }
+}

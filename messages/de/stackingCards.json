@@ -1,0 +1,38 @@
+{
+  "title": "Alles, was du brauchst, um eine Gruppenreise zu planen",
+  "cards": [
+    {
+      "imagePosition": "right",
+      "title": "Entdecke und schlage der Gruppe Ideen vor",
+      "description": "Finde Aktivitäten, Restaurants, Unterkünfte und Transport direkt in der App.\nFüge sie zur Reiseroute hinzu oder schlage sie der Gruppe zur Abstimmung vor.\n\nSo wird das Entdecken kollaborativ.",
+      "animation": "ai-globe",
+      "backgroundColor": "#FFFFFF",
+      "ctaLabel": "Reiseziele entdecken",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#E83F28",
+      "stats": [{ "value": "190+", "label": "mögliche Reiseziele" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "Entscheidet gemeinsam mit Abstimmungen",
+      "description": "Wo übernachten?\nWas unternehmen?\nWann losfahren?\n\nErstelle eine Abstimmung, alle stimmen ab, die Entscheidung steht.\nDie Gruppe kommt voran. Die Reise auch.",
+      "animation": "live-voting",
+      "backgroundColor": "#EEF899",
+      "ctaLabel": "Abstimmung starten",
+      "ctaTextColor": "#FFFBF5",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "1000+", "label": "tägliche Abstimmungen" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "Eine klare Reiseroute, Tag für Tag",
+      "description": "Jeder Tag der Reise ist strukturiert:\nwas tun, wo essen, wo schlafen, wie hinkommen.\n\nFür alle ist alles klar.",
+      "animation": "live-collaboration",
+      "backgroundColor": "#61DBD5",
+      "ctaLabel": "Meine Reiseroute bauen",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "10+", "label": "Partner" }]
+    }
+  ]
+}

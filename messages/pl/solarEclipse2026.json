@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Całkowite zaćmienie Słońca 12 sie 2026: planer wyjazdu do Hiszpanii i Islandii",
+    "description": "Wszystko o całkowitym zaćmieniu Słońca 12 sierpnia 2026 r.: pas całkowitości przez Islandię i północną Hiszpanię, kiedy i gdzie całkowitość jest najdłuższa, okulary ISO 12312-2, opcje rejsów i jak zaplanować wyjazd z Francji z grupą."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Planer wyjazdu na zaćmienie Słońca 2026"
+  },
+  "hero": {
+    "tag": "Przewodnik astroturystyczny i planer wyjazdu · sierpień 2026",
+    "title": "Całkowite zaćmienie Słońca, 12 sierpnia 2026: planer wyjazdu do Islandii i Hiszpanii",
+    "readTime": "10 min czytania",
+    "ctaButton": "Zaplanuj nasz wyjazd na zaćmienie",
+    "ctaNote": "Za darmo · stworzone dla grup · EN/FR",
+    "imageAlt": "Całkowite zaćmienie Słońca 12 sierpnia 2026 r. — okulary do obserwacji zaćmienia uniesione ku koronie nad hiszpańskim polem pszenicy"
+  },
+  "facts": {
+    "heading": "Fakty o zaćmieniu",
+    "dateLabel": "Data",
+    "dateValue": "śr 12 sie",
+    "totalityLabel": "Maks. całkowitość",
+    "totalitySub": "u wybrzeży Islandii",
+    "pathLabel": "Pas",
+    "pathSub": "+ Grenlandia",
+    "lastLabel": "Ostatnie w Europie",
+    "lastSub": "27 lat temu"
+  },
+  "stakes": {
+    "p1": "Całkowite zaćmienia Słońca widoczne z kontynentalnej Europy zdarzają się mniej więcej raz na pokolenie. Ostatnie było 11 sierpnia 1999 r., gdy ogromny obszar Francji pogrążył się w ciemności na około dwie minuty w środku lata. Zaćmienie 2026 całkowicie pomija Francję — jego pas całkowitości przecina wschodnią Grenlandię, zachodnią i południową Islandię, a potem przesuwa się przez północną Hiszpanię o zachodzie słońca, by zakończyć się na Morzu Śródziemnym. Francja, choć tak blisko, widzi tylko zaćmienie częściowe: głębokie (92–99,5%), ale bez korony, bez ciemności, a na Słońce przez całą fazę nie wolno bezpiecznie patrzeć. Aby zobaczyć faktyczne całkowite zaćmienie — i cichą, niezapomnianą koronę — trzeba przekroczyć granicę do hiszpańskiego pasa lub polecieć na północ do Islandii. Dwa kolejne całkowite zaćmienia przecinają Hiszpanię po tym (2 sierpnia 2027 r., a następnie obrączkowe 26 stycznia 2028 r.), czyniąc lata 2026–2028 unikalną „hiszpańską trójcą” europejskiej astroturystyki.",
+    "p2": "WePlanify to darmowe wspólne centrum dowodzenia dla grup goniących za zaćmieniem — ankieta lokalizacji, lot lub pociąg, nocleg, oś czasu obserwacji w dniu zaćmienia i wspólny budżet w jednym miejscu, po angielsku lub francusku."
+  },
+  "toc": {
+    "title": "Na tej stronie",
+    "path": "Pas całkowitości",
+    "france": "Czy Francja zobaczy zaćmienie?",
+    "spainVsIceland": "Hiszpania kontra Islandia kontra rejs",
+    "safety": "Bezpieczeństwo i okulary",
+    "logistics": "Podróż i nocleg",
+    "planning": "Planowanie wyjazdu z ekipą",
+    "budget": "Porady budżetowe",
+    "faq": "Najczęściej zadawane pytania"
+  },
+  "path": {
+    "title": "Pas całkowitości",
+    "subtitle": "Od wschodnich fiordów Grenlandii po Morze Śródziemne, w mniej więcej 50 minut. Czas trwania dramatycznie różni się w zależności od miejsca, w którym stoisz.",
+    "items": [
+      { "stop": "Grenlandia — wschodnie fiordy", "desc": "Cień najpierw dotyka Ziemi nad wybrzeżem Blosseville i przecina Scoresby Sund, z około 1 min 45 s całkowitości. Jedyna wioska w regionie, Ittoqqortoormiit, leży ~50 km na południe od linii centralnej i pozostaje poza całkowitością. Praktyczny dostęp podróżny jest ograniczony — ten etap jest dla specjalistów." },
+      { "stop": "Islandia — Fiordy Zachodnie, Snæfellsnes, Reykjavík", "desc": "Cień dociera do lądu przy latarni Straumnes w Fiordach Zachodnich o 17:43:28 UTC. Látrabjarg dostaje 2 min 13 s. Półwysep Snæfellsnes, w tym kultowa góra Kirkjufell, leży w pasie. Reykjavík widzi początek całkowitości o 17:48:12 UTC przez około minutę, ze Słońcem ~24,5° nad zachodnim horyzontem. Całkowity czas Islandii w cieniu to 6 min 48 s." },
+      { "stop": "Hiszpania — od Galicji po Majorkę", "desc": "Cień dociera do A Coruñy około 20:26 CEST (Słońce ~11° wysoko), Bilbao o 20:27 (~30 s całkowitości, Słońce ~8°), Saragossy w tym samym oknie (~1 min 25 s), Walencji od 20:32 (~1 minuta) i Palma de Mallorca o 20:31–20:32 (~1 min 36 s, Słońce ~4° nad horyzontem, mniej więcej 10 minut przed zachodem słońca). Madryt i Barcelona leżą tuż poza pasem — nie dostają całkowitości." },
+      { "stop": "Wewnątrz pasa, ale łatwe do przeoczenia", "desc": "Santander, Burgos, Valladolid, Palencia i León są wszystkie w pasie całkowitości. Im dalej na północ i zachód jesteś, tym nieco wyżej Słońce — ale tym bardziej pochmurna klimatologia. Dolina Ebro (Huesca, Saragossa) leży w statystycznie najlepszym punkcie pod względem sierpniowego zachmurzenia i płaskiego zachodniego horyzontu." },
+      { "stop": "Największy czas trwania jest nad otwartym oceanem", "desc": "Punkt największego czasu trwania — 2 minuty 18,2 sekundy — leży mniej więcej 45 km na zachód od Látrabjarg, na otwartym morzu. Żadnej wyspy, żadnego portu. Jedynym sposobem, by tam być, jest rejs na zaćmienie lub czarterowy lot." }
+    ]
+  },
+  "france": {
+    "title": "Czy Francja zobaczy zaćmienie?",
+    "subtitle": "Głębokie częściowe — ale nie całkowite. Ważne, by mieć to jasne w grupie, zwłaszcza w przypadku kogoś, kto pamięta zaćmienie z 1999 r. we Francji.",
+    "partialLabel": "Częściowe zakrycie",
+    "partialTitle": "Miasto po mieście",
+    "partialItems": [
+      "→ Biarritz: do 99,5% (najbliżej pasa)",
+      "→ Marsylia / Nicea: ~95%",
+      "→ Bordeaux / Tuluza: ~96–97%",
+      "→ Paryż: 92,2%",
+      "→ Czas: ~19:30 do ~20:30 czasu paryskiego, nisko Słońce"
+    ],
+    "missLabel": "Dlaczego 99% to nie 100%",
+    "missTitle": "Co tracisz",
+    "missItems": [
+      "→ Koronę — widoczną tylko, gdy Słońce jest zakryte w 100%",
+      "→ Ciemność — noc faktycznie nie zapada przy 99%",
+      "→ Bezpieczne okno dla gołego oka — nigdy przy częściowym, zawsze noś okulary",
+      "→ Spadek temperatury i ciszę ptaków",
+      "→ Efekt zachodu słońca w 360° na horyzoncie"
+    ]
+  },
+  "spainVsIceland": {
+    "title": "Hiszpania kontra Islandia kontra rejs",
+    "subtitle": "Trzy uczciwe opcje, każda z realnym kompromisem. Właściwa zależy od tego, pod co optymalizujesz — szanse na czyste niebo, czas trwania całkowitości czy doświadczenie.",
+    "option1": {
+      "tag": "Opcja 1",
+      "title": "Śródlądowa północna Hiszpania",
+      "desc": "Dolina Ebro, Huesca, Saragossa i otaczające je równiny — najlepsze sierpniowe statystyki zachmurzenia na całym pasie (~35% ryzyka zachmurzenia). Płaski zachodni horyzont, łatwy dojazd drogą, hotele ze średniej półki. Kompromis: całkowitość jest krótka (~1–1,5 min), a Słońce nisko (8–11°)."
+    },
+    "option2": {
+      "tag": "Opcja 2",
+      "title": "Majorka",
+      "desc": "Palma widzi ~1 min 36 s całkowitości, najdłużej z każdego łatwo dostępnego miasta. Plażowa sceneria z czystym zachodnim morskim horyzontem. Kompromis: Słońce jest bardzo nisko (~4°), ~10 min przed zachodem, więc jakikolwiek klif lub budynek na zachodzie zabija widok. Stawki hoteli już mniej więcej się potroiły na noc 11–12 sierpnia."
+    },
+    "option3": {
+      "tag": "Opcja 3",
+      "title": "Islandia lub rejs",
+      "desc": "Islandia daje najbardziej dramatyczne doświadczenie i najwyższe Słońce (~24° w Reykjavíku), ale płaci ryzykiem zachmurzenia (70–85% średniego sierpniowego zachmurzenia). Śródziemnomorski rejs na zaćmienie (Costa od ~450 €, CFC Renaissance od 1279 €, Princess, Holland America) wymienia stałe miejsce na meteorologiczną elastyczność w dniu zaćmienia."
+    }
+  },
+  "midCta": {
+    "title": "Hiszpania, Majorka czy Islandia?",
+    "subtitle": "Przeprowadźcie z ekipą ankietę o kierunek, a potem uzupełnijcie loty i nocleg.",
+    "button": "Przeprowadź ankietę"
+  },
+  "safety": {
+    "title": "Bezpieczeństwo i okulary ISO 12312-2",
+    "subtitle": "Retinopatia słoneczna jest cicha — nie czujesz uszkodzenia, dopóki się nie dokona. Zdobądź odpowiednie okulary wcześnie i weź zapasowe.",
+    "card1": {
+      "title": "Certyfikat, którego szukać",
+      "desc": "ISO 12312-2:2015 — nadrukowany na wewnętrznej stronie okularów — plus oznaczenie CE dla Europy. Wszystko bez obu jest niebezpieczne, w tym bardzo ciemne szkło spawalnicze poniżej stopnia 14, klisza rentgenowska, szkło dymne, w pełni naświetlone negatywy fotograficzne czy nałożone na siebie okulary przeciwsłoneczne. Okulary starsze niż trzy lata należy wymienić; filtr ulega degradacji."
+    },
+    "card2": {
+      "title": "Gdzie kupić we Francji",
+      "desc": "Apteki (przedsprzedaż zwykle otwiera się w czerwcu), Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs) oraz MyEclipseGlasses lub VOLTNGO na Amazonie. Zamów przed czerwcowym szczytem — dostępność robi się napięta w lipcu, gdy nasila się relacja medialna. Jedna para na osobę plus zapasowa para na każdą czwórkę."
+    },
+    "card3": {
+      "title": "Smartfon i aparat",
+      "desc": "Skierowanie aparatu telefonu na częściowe zaćmienie bez filtra słonecznego może uszkodzić matrycę i nie jest bezpieczne także przez ekran. Użyj nakręcanego lub magnetycznego filtra słonecznego albo pogódź się z tym, że zaćmienie to jedno z nielicznych wydarzeń, podczas których trzymanie telefonu w kieszeni jest właściwym wyborem. Tylko podczas całkowitości (w pasie całkowitości) możesz patrzeć na Słońce i fotografować swobodnie."
+    }
+  },
+  "logistics": {
+    "title": "Podróż i nocleg",
+    "subtitle": "Główne miasta są w dużej mierze zarezerwowane. Zagranie to albo poszerzenie wyszukiwania na mniejsze miasteczka w pasie, albo zaakceptowanie dłuższego przejazdu w dniu zaćmienia.",
+    "gettingThere": "Dojazd",
+    "spainLabel": "Hiszpania",
+    "spainItems": [
+      "→ Paryż → Bilbao: krótki lot bezpośredni, ~1h50",
+      "→ Paryż → Bilbao pociągiem: ~14–15h przez Hendaye",
+      "→ Paryż → Saragossa / Walencja / Palma: loty bezpośrednie z CDG/ORY",
+      "→ Jazda z południowo-zachodniej Francji do Bilbao lub Pampeluny: ~3–5 h",
+      "→ Główne miasta (Saragossa, Walencja, Palma): hotele w większości zajęte — spróbuj Logroño, Tudela, Castellón"
+    ],
+    "icelandLabel": "Islandia i rejs",
+    "icelandItems": [
+      "→ Paryż CDG → Reykjavík (KEF): ~3h30 bezpośrednio, Icelandair (~16 lotów/tydzień) i easyJet",
+      "→ Wynajmij auto na KEF, by dotrzeć na Snæfellsnes (~2h30 jazdy)",
+      "→ Hotele w Reykjavíku: w większości wyprzedane, Reykjavik Edition wystawiony za 4399 $/noc",
+      "→ Rejs na zaćmienie Costa Cruises: 7 nocy od ~450 €/os.",
+      "→ CFC Renaissance: 6 nocy z Marsylii, od 1279 €/os."
+    ]
+  },
+  "planning": {
+    "title": "Planowanie wyjazdu z ekipą"
+  },
+  "budget": {
+    "title": "Porady budżetowe",
+    "p2": "Mieszkanie z obsługą dla 4–6 osób w mniejszym miasteczku w pasie całkowitości (Logroño, Tudela, Castellón po stronie hiszpańskiej; Borgarnes lub Stykkishólmur na półwyspie Snæfellsnes w Islandii) rutynowo bije pokoje hotelowe w głównych miastach o 40–60%, jednocześnie trzymając Cię w pełni w całkowitości. Kompromis polega na tym, że opcje na kolację się zawężają — zarezerwuj restauracje na 13 sierpnia teraz, nie w dniu zaćmienia.",
+    "p3": "Nie oszczędzaj na okularach. Para ISO 12312-2 za 5–15 € na osobę plus zapasowa to jedna z najmniejszych pozycji w całym budżecie i jedyna, w której pójście na skróty może faktycznie kogoś w grupie zranić."
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      { "q": "Kiedy i gdzie mogę zobaczyć całkowite zaćmienie Słońca 12 sierpnia 2026 r.?", "a": "W środę 12 sierpnia 2026 r. Pas całkowitości przecina wschodnią Grenlandię, zachodnią Islandię (w tym Fiordy Zachodnie, półwysep Snæfellsnes i Reykjavík) oraz szeroki pas przez północną Hiszpanię (Galicja, Asturia, Kantabria, Kastylia i León, Dolina Ebro, Walencja i Majorka). Maksymalna całkowitość to 2 minuty 18 sekund — ale to maksimum jest nad otwartym oceanem ~45 km na zachód od Látrabjarg w Islandii. Zamieszkane miejsca dostają krótszą całkowitość: Reykjavík ~1 minuta, Saragossa ~1 min 25 s, Palma de Mallorca ~1 min 36 s, Bilbao ~30 sekund. Madryt i Barcelona NIE są w całkowitości." },
+      { "q": "Czy Francja zobaczy całkowite zaćmienie?", "a": "Nie. Kontynentalna Francja widzi tylko częściowe zaćmienie — ale głębokie. Paryż osiąga 92,2% zakrycia, Marsylia i Nicea około 95%, a Biarritz, najbliższe pasa francuskie miasto, dostaje do 99,5%. Faza częściowa trwa od ~19:30 do ~20:30 czasu paryskiego. Bez całkowitości nigdy nie dostaniesz korony, ciemności ani bezpiecznego okna dla gołego oka — a na Słońce przez cały czas patrzeć jest niebezpiecznie. Aby zobaczyć całkowite zaćmienie, trzeba przekroczyć granicę do Hiszpanii lub polecieć do Islandii." },
+      { "q": "Islandia czy Hiszpania — który wyjazd jest lepszy?", "a": "Statystycznie śródlądowa północna Hiszpania (Dolina Ebro, Huesca, Saragossa) ma najlepsze sierpniowe szanse na zachmurzenie wzdłuż całego pasa — mniej więcej 35% szansy na chmury w odpowiednich strefach. Islandia ma średnio bliżej 70–85% zachmurzenia nawet w sierpniu. Hiszpański kompromis: Słońce jest bardzo nisko (4–11° nad horyzontem — tylko ~1 godzina przed zachodem), więc potrzebujesz czystego widoku na zachód (morze lub równina, nigdy miejska ulica). Islandzki kompromis: bardziej pochmurno i drożej, ale Słońce wyżej (~24° w Reykjavíku), a doświadczenie całkowitości jest bardziej odosobnione i dramatyczne." },
+      { "q": "A co z rejsem na zaćmienie?", "a": "Kilka linii rejsowych ustawiło statki na zachodnim Morzu Śródziemnym i wokół Majorki, by dać pasażerom swobodę poruszania się pod czystszym niebem w dniu zaćmienia. Costa Cruises prowadzi 7-nocny rejs na zaćmienie od ~450 € na osobę. Francuska linia CFC ustawiła swój statek „Renaissance” między Balearami a Sardynią, 6 nocy z Marsylii, od około 1279 €. Princess Cruises i Holland America również mają trasy tematyczne związane z zaćmieniem. Zaletą jest elastyczność meteorologiczna; wadą to, że wolno płynący statek nie zawsze zdąży uciec przed ławicą chmur." },
+      { "q": "Jakich okularów potrzebuję?", "a": "Okularów do obserwacji Słońca z certyfikatem ISO 12312-2:2015, z oznaczeniem CE. Zwykłe okulary przeciwsłoneczne nie są bezpieczne — nawet najciemniejsze przepuszczają wystarczająco dużo podczerwieni i światła widzialnego, by spowodować retinopatię słoneczną. Okulary ISO 12312-2 sprzedawane są we francuskich aptekach (przedsprzedaż zwykle otwiera się w czerwcu), Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs) oraz przez MyEclipseGlasses na Amazonie. Kup jedną parę na osobę, sprawdź datę produkcji (okulary starsze niż 3 lata należy wymienić) i przechowuj je płasko. Tylko podczas całkowitości — i tylko jeśli faktycznie jesteś W całkowitości — możesz patrzeć gołym okiem." },
+      { "q": "Czy hotele już się wyprzedały?", "a": "Wiele kluczowych miejsc tak, owszem. Hotels.com odnotował 445% wzrost wyszukiwań kierunków na zaćmienie. Pokoje w Palencii wystawiano nawet po 1095 € za noc (około 10× normalnej ceny). Stawki na Majorce mniej więcej się potroiły na noc 11–12 sierpnia. Reykjavik Edition był wyceniany na 4399 $/noc. Touroperatorzy zarezerwowali Saragossę, Walencję i Bilbao 18+ miesięcy wcześniej. Jeśli zaczynasz teraz, szukaj nieco poza głównymi miastami — mniejsze miasteczka w pasie wciąż da się zarezerwować." },
+      { "q": "Jak zorganizować wyjazd na zaćmienie z grupą znajomych?", "a": "Zaćmienia są krótkie — od 30 sekund do 2 minut w zależności od miejsca — więc logistyka liczy się bardziej niż przy jakimkolwiek normalnym wyjeździe. Zdecydujcie jako grupa, czy optymalizujecie pod szanse na zachmurzenie (Dolina Ebro, śródlądowa Hiszpania), czas trwania całkowitości (Majorka) czy doświadczenie (Islandia). Ustalcie lokalizację, transport (lot do Bilbao lub Reykjavíku albo pociąg + jazda) i dokładny punkt obserwacji przed rezerwacją noclegu. WePlanify trzyma ankietę o kierunek, budżet i oś czasu na sam dzień w jednym wspólnym miejscu." }
+    ]
+  },
+  "discover": {
+    "title": "Odkryj więcej",
+    "hellfest": { "title": "Planer wyjazdu na Hellfest 2026", "desc": "Cztery dni metalu w Clisson we Francji.", "cta": "Czytaj dalej →" },
+    "tomorrowland": { "title": "Planer wyjazdu na Tomorrowland 2026", "desc": "Dwa weekendy w Boom w Belgii.", "cta": "Czytaj dalej →" },
+    "tripWithFriends": { "title": "Wyjazd ze znajomymi", "desc": "Zaplanuj dowolny wyjazd grupowy bez wysiłku.", "cta": "Czytaj dalej →" },
+    "groupGuide": { "title": "Poradnik wyjazdu grupowego", "desc": "Kompletny przewodnik krok po kroku.", "cta": "Przeczytaj poradnik →" }
+  },
+  "cta": {
+    "title": "Zbuduj swój wyjazd na zaćmienie",
+    "subtitle": "Ankieta o kierunek, loty lub pociąg, nocleg w pasie całkowitości, oś czasu na dzień zaćmienia, wspólny budżet — jeden plan, cała Twoja ekipa na bieżąco.",
+    "button": "Przeprowadź ankietę Hiszpania kontra Islandia"
+  },
+  "jsonld": {
+    "articleHeadline": "Całkowite zaćmienie Słońca 12 sierpnia 2026 r.: planer wyjazdu do Islandii i Hiszpanii",
+    "eventName": "Całkowite zaćmienie Słońca 12 sierpnia 2026 r.",
+    "eventDescription": "Całkowite zaćmienie Słońca w środę 12 sierpnia 2026 r. Pas całkowitości przecina wschodnią Grenlandię, zachodnią Islandię i północną Hiszpanię. Maksymalna całkowitość 2 minuty 18 sekund u wybrzeży Islandii. Pierwsze całkowite zaćmienie Słońca widoczne z kontynentalnej Europy od 11 sierpnia 1999 r.",
+    "howToName": "Jak zaplanować wyjazd na całkowite zaćmienie Słońca 2026",
+    "howToDescription": "Trzy miesiące przed, oto jak ustalić wyjazd: wybierz lokalizację (szanse na zachmurzenie kontra czas trwania kontra doświadczenie), zarezerwuj podróż i nocleg przed kolejną podwyżką cen, zdobądź okulary ISO 12312-2 i zaplanuj samą godzinę obserwacji.",
+    "howToSteps": [
+      { "name": "Wybierz lokalizację — i ujednolić grupę co do niej", "text": "Trzy uczciwe opcje to śródlądowa Hiszpania (Dolina Ebro, ~35% ryzyka zachmurzenia, krótka całkowitość), Majorka (dłuższa całkowitość, ale Słońce bardzo nisko, potrzebny morski horyzont) i Islandia (wysokie ryzyko zachmurzenia, ale dramatyczne doświadczenie). Przeprowadź ankietę w grupie przed zarezerwowaniem czegokolwiek — kompromisy dzielą rodziny w realnym życiu." },
+      { "name": "Zarezerwuj transport i nocleg przed kolejną podwyżką", "text": "Paryż–Reykjavík trwa ~3h30 z Icelandair lub easyJet z CDG. Paryż–Bilbao to krótki lot lub długi pociąg (14–15h przez Hendaye). Nocleg w głównych miastach (Saragossa, Reykjavík, Palma) jest w dużej mierze zajęty — przyjrzyj się mniejszym miasteczkom w pasie lub mieszkaniu z obsługą dla grupy." },
+      { "name": "Zamów okulary ISO 12312-2 i zestaw bezpieczeństwa", "text": "Jedna certyfikowana para na osobę, zamówiona przed czerwcowym szczytem. Dodaj filtr słoneczny do smartfona, jeśli ktoś chce fotografować zaćmienie — zwykła optyka telefonu też jest niebezpieczna skierowana na Słońce bez filtra. Spakuj zapasową parę na każdą czwórkę: okulary się upuszcza." },
+      { "name": "Zaplanuj obserwację godzina po godzinie", "text": "Bądź na swoim miejscu co najmniej 2 godziny przed całkowitością. W Hiszpanii całkowitość wypada około 20:27–20:32 CEST ze Słońcem bardzo nisko — przećwicz lokalizowanie go ze swojego miejsca dzień wcześniej. Wyznacz wyraźny punkt spotkania na wypadek, gdyby grupa się rozdzieliła, i oszacuj czas przejazdu z powrotem do noclegu: drogi z punktów obserwacji zatykają się w kilka minut po zakończeniu całkowitości." }
+    ]
+  }
+}

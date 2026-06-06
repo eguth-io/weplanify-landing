@@ -1,0 +1,39 @@
+{
+  "copy": {
+    "paidBy": "Pagado por",
+    "toReceive": "por recibir",
+    "owes": "debe",
+    "total": "Total",
+    "pieLabels": {
+      "accommodation": "Alojamiento",
+      "restaurants": "Restaurantes",
+      "activities": "Actividades",
+      "transport": "Transporte"
+    },
+    "liveSplitTitle": "Pruébalo: añade un gasto",
+    "liveSplitSubtitle": "Viaje a Lisboa — 4 amigos",
+    "quickAdd": "Añadir rápido",
+    "recentExpenses": "Gastos recientes",
+    "whoOwesWhat": "Quién debe qué",
+    "toSettleUp": "Por saldar",
+    "freeNoCard": "Registro gratuito. No se requiere tarjeta de crédito.",
+    "tryItHint": "👆 Haz clic en un botón para añadir un gasto y mira cómo se actualizan los saldos en tiempo real.",
+    "participants": [
+      { "name": "Marie", "avatar": "👩‍🎨" },
+      { "name": "Thomas", "avatar": "🧔" },
+      { "name": "Emma", "avatar": "👱‍♀️" },
+      { "name": "Lucas", "avatar": "🧑‍💻" }
+    ],
+    "expenses": [
+      { "name": "Cena en restaurante", "amount": 156, "paidBy": "Marie" },
+      { "name": "Alquiler de coche", "amount": 320, "paidBy": "Thomas" },
+      { "name": "Entradas al museo", "amount": 84, "paidBy": "Emma" }
+    ],
+    "presets": [
+      { "name": "Cena", "amount": 80, "emoji": "🍝" },
+      { "name": "Taxi", "amount": 24, "emoji": "🚕" },
+      { "name": "Tour guiado", "amount": 60, "emoji": "🎨" },
+      { "name": "Brunch", "amount": 48, "emoji": "🥐" }
+    ]
+  }
+}

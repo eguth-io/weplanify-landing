@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "title": "Presupuesto de viaje en grupo: cómo repartir gastos sin dramas",
+    "description": "La guía completa para gestionar el dinero en un viaje en grupo — fijar un presupuesto con el que todos estén de acuerdo, repartir los gastos de forma justa y ajustar cuentas sin problemas al final."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Presupuesto de viaje en grupo"
+  },
+  "readTime": "9 min de lectura",
+  "heroTag": "Dinero y viajes 2026",
+  "h1": "Presupuesto de viaje en grupo: cómo repartir gastos sin dramas",
+  "intro": "Pregúntale a cualquiera que haya viajado alguna vez con un grupo de cuatro o más personas cuál fue la parte más difícil, y el dinero saldrá entre las tres primeras respuestas. Ni los vuelos, ni el alojamiento — el dinero. Quién pagó la cena, quién todavía debe cincuenta euros, por qué una persona no para de pedir cócteles caros mientras los demás se reparten la cuenta. Presupuestar un viaje en grupo no tiene por qué ser una fuente de conflicto. Con el sistema adecuado en marcha antes de salir, se vuelve casi invisible. Esta guía lo cubre todo: fijar un presupuesto realista, repartir los gastos de una forma que parezca justa, registrar los gastos en tiempo real y ajustar cuentas sin problemas cuando el viaje termina.",
+  "tocTitle": "Índice",
+  "toc": [
+    { "id": "money-mess", "label": "Por qué el dinero de los viajes en grupo siempre se complica" },
+    { "id": "set-budget-early", "label": "Fija el presupuesto antes de reservar nada" },
+    { "id": "split-by-category", "label": "Reparte por categoría, no todo" },
+    { "id": "one-payer-system", "label": "El sistema de un solo pagador" },
+    { "id": "track-real-time", "label": "Registra en tiempo real, no al final" },
+    { "id": "unequal-budgets", "label": "Cómo gestionar presupuestos desiguales en el grupo" },
+    { "id": "settling-up", "label": "Ajustar cuentas: la forma limpia" },
+    { "id": "faq", "label": "Preguntas frecuentes" }
+  ],
+  "sections": {
+    "moneyMess": {
+      "id": "money-mess",
+      "title": "Por qué el dinero de los viajes en grupo siempre se complica",
+      "paragraphs": [
+        "Empieza de forma inocente. Alguien reserva el Airbnb porque tiene la tarjeta con el límite más alto. Otro compra los billetes de tren del grupo para ahorrar tiempo. Una tercera persona cubre la cena porque el restaurante solo aceptaba un único pago. Antes incluso de que termine el viaje, una persona ha adelantado 800 € y no tiene ni idea de cómo reclamarlos sin parecer mezquina.",
+        "El problema de fondo es que los viajes en grupo implican a personas con ingresos distintos, hábitos de gasto distintos e ideas tremendamente distintas de lo que significa 'razonable'. Para un amigo, 30 € por la entrada a un museo no es nada. Para otro, es una parte importante de su presupuesto diario. Nadie habla de esto antes de salir, así que cada decisión de gasto se convierte en una negociación silenciosa en la que alguien siempre acaba sintiéndose culpable o resentido.",
+        "Luego está el problema del registro. Nadie quiere ser la persona tecleando furiosamente los gastos en una hoja de cálculo mientras los demás disfrutan del atardecer. Así que no se registra nada. Para el último día, la mitad de las transacciones se han olvidado y la otra mitad están en disputa. Ajustar cuentas se convierte en un proyecto de arqueología de una hora — y el momento exacto en el que los viajes perfectamente agradables se tuercen.",
+        "La solución no es un sistema de contabilidad complicado. Es un acuerdo compartido sencillo, hecho antes de salir, sobre tres cosas: cuánto gastar por persona, qué costes repartir y cuáles pagar individualmente, y cómo registrarlo todo a medida que ocurre. Acierta con esas tres cosas y el dinero deja de ser una fuente de tensión."
+      ]
+    },
+    "setBudgetEarly": {
+      "id": "set-budget-early",
+      "title": "Fija el presupuesto antes de reservar nada",
+      "paragraphs": [
+        "La conversación sobre el dinero tiene que ocurrir antes de reservar una sola cosa — antes del Airbnb, antes de los vuelos, antes de que nadie compre billetes de tren o empiece a comparar menús de restaurantes. Una vez que se ha gastado dinero, el presupuesto deja de ser teórico. Las cifras reales crean presión real, y las personas que habrían hablado en una conversación de planificación empiezan a quedarse calladas para evitar el conflicto.",
+        "La forma más fácil de abrir la conversación es con franjas. En lugar de preguntar \"¿cuánto quieres gastar?\", que obliga a la gente a decir una cifra y sentirse juzgada, presenta tres opciones: un viaje ajustado (800-1.000 € por persona todo incluido), un viaje cómodo (1.200-1.600 € por persona) y un viaje generoso (2.000+ € por persona). Pide a todos que elijan en privado qué franja les encaja. Si el grupo se agrupa en torno a una franja, ya tienes tu presupuesto. Si hay una dispersión amplia, esa es una señal importante que conviene abordar pronto — no el tercer día cuando alguien pide un plato principal de 45 €.",
+        "Una vez que tengas un total aproximado por persona, desglósalo por categoría. Un desglose realista para un viaje de 7 días podría ser así: alojamiento (30-35% del presupuesto), transporte incluidos vuelos y desplazamientos locales (30-40%), comida y bebida (20-25%), actividades y experiencias (10-15%) y un colchón para gastos imprevistos (5-10%). Tener estas categorías por escrito, aunque sea en una nota compartida, significa que todos se calibran con las mismas expectativas.",
+        "Usa la función de encuestas grupales de WePlanify para votar las opciones de alojamiento y las actividades antes de comprometeros. Cuando todo el grupo decide junto qué incluir en el presupuesto, no hay una sola persona a la que culpar si algo resulta caro — y todos se sienten dueños del plan. Las decisiones tomadas democráticamente se aceptan con más facilidad, incluidas las económicas."
+      ]
+    },
+    "splitByCategory": {
+      "id": "split-by-category",
+      "title": "Reparte por categoría, no todo",
+      "paragraphs": [
+        "Uno de los errores más comunes que cometen los grupos es intentar repartir absolutamente cada gasto a partes iguales — o, al contrario, hacer que cada uno pague lo suyo todo el tiempo. Ambos extremos crean fricción. El primero lleva al resentimiento cuando el consumo es desigual. El segundo hace que cada comida parezca una transacción y echa por tierra el sentido de viajar juntos.",
+        "El enfoque más inteligente es repartir por categoría. Algunos costes son genuinamente compartidos y deberían repartirse a partes iguales. Otros son personales y deberían pagarse individualmente. Trazar esta línea con claridad antes de que empiece el viaje elimina el 90% de las conversaciones incómodas.",
+        "Las categorías de abajo son un marco de partida probado. Ajústalas para que encajen con tu grupo, pero la clave es acordarlas antes de salir."
+      ],
+      "categories": [
+        {
+          "title": "Repartir a partes iguales (costes compartidos)",
+          "items": [
+            "Alojamiento — Airbnb, hotel, literas de hostal. Todos se benefician por igual independientemente del tamaño de su habitación.",
+            "Transporte de grupo — coche de alquiler, billetes de tren reservados juntos, traslados al aeropuerto para todo el grupo.",
+            "Actividades de grupo — tours, entradas a museos, entradas para experiencias a las que asiste todo el grupo.",
+            "Compra para comidas compartidas — si el grupo cocina junto, repartid la cuenta de la compra."
+          ]
+        },
+        {
+          "title": "Pagar individualmente (costes personales)",
+          "items": [
+            "Comidas personales cuando el grupo come en distintos restaurantes o pide cosas diferentes.",
+            "Bebidas personales — especialmente el alcohol, donde el consumo varía enormemente.",
+            "Souvenirs, compras personales y cualquier cosa que solo beneficie a una persona.",
+            "Transporte personal — taxis a una actividad por separado, excursiones en solitario."
+          ]
+        }
+      ]
+    },
+    "onePayerSystem": {
+      "id": "one-payer-system",
+      "title": "El sistema de un solo pagador",
+      "paragraphs": [
+        "Repartir la cuenta en el momento del pago — todos rebuscando las tarjetas mientras el camarero espera — es lento, incómodo y propenso a errores. Un enfoque mucho más limpio es el sistema de un solo pagador: una persona paga un gasto compartido, lo registra de inmediato en un control compartido, y el grupo ajusta cuentas al final del viaje.",
+        "La palabra clave es 'de inmediato'. El sistema solo funciona si la persona que paga lo registra en el acto, antes de que nadie haya pasado a otra cosa u olvidado el importe. Esto significa tener un control de presupuesto compartido abierto y accesible en todo momento — no un recordatorio mental para añadirlo a la hoja de cálculo más tarde. El control de presupuesto compartido de WePlanify está hecho exactamente para esto: un toque para registrar un nuevo gasto, seleccionar quién pagó y para quién era, y todos lo ven al instante.",
+        "Para que las cosas sean justas, rotad quién paga a lo largo del viaje. Una persona cubre la cena, otra cubre la siguiente actividad, una tercera cubre las entradas al museo. Si los importes se registran con precisión, los desequilibrios se nivelarán para el final — y si no, el ajuste final será un puñado de transferencias en lugar de un ejercicio de contabilidad forense.",
+        "Una regla sencilla: si pagas algo compartido y no lo registras en cinco minutos, probablemente lo has perdido. Crea el hábito pronto, el primer día, para que se vuelva automático."
+      ]
+    },
+    "trackRealTime": {
+      "id": "track-real-time",
+      "title": "Registra en tiempo real, no al final",
+      "paragraphs": [
+        "Todo grupo que ha esperado a la última noche para 'cuadrar el dinero' se ha arrepentido. La memoria no es fiable, los importes se redondean y una persona siempre siente que aportó más de lo que muestran las cifras. La última noche de un viaje es el peor momento posible para una conciliación financiera — todos están cansados, algunos ya están calculando sus vuelos y la buena voluntad emocional del viaje está en su punto más frágil.",
+        "El registro en tiempo real resuelve esto por completo. Cuando cada gasto se registra a medida que ocurre, no hay conciliación que hacer al final. Las cifras ya están ahí. Todos han estado viendo el total acumulado a lo largo del viaje, así que nada sorprende. El ajuste final es una formalidad, no una negociación.",
+        "El requisito práctico es un control que todos puedan ver y al que puedan contribuir desde su móvil. Una hoja de cálculo compartida técnicamente funciona pero requiere un nivel de disciplina y de usabilidad móvil que la mayoría de los grupos no mantiene. Las herramientas dedicadas como el control de presupuesto de WePlanify están diseñadas para esto: añade un gasto en diez segundos, mira quién debe qué en tiempo real, obtén un resumen de ajuste en cualquier momento. Elimina la fricción que hace que la gente deje de registrar en primer lugar.",
+        "Establece el hábito de una puesta en común diaria o cada dos días en la que alguien mire los totales acumulados y señale cualquier gasto que se haya pasado por alto. En un viaje de 7 días, una revisión de dos minutos cada dos días detecta cualquier hueco y mantiene a todos alineados. También construye una sensación compartida de cómo va el viaje a nivel económico — así nadie se lleva un susto al final.",
+        "Para los road trips en concreto, lleva la cuenta de la gasolina y los peajes como un gasto compartido desde el principio. Los costes de gasolina pueden ascender a 200-400 € en un road trip de una semana y son fáciles de olvidar si el conductor sigue pagando y dando por hecho que le reembolsarán más tarde. Registra cada repostaje de inmediato. Consulta nuestra guía de planificación de road trips para más consejos específicos sobre cómo gestionar los costes compartidos en la carretera."
+      ]
+    },
+    "unequalBudgets": {
+      "id": "unequal-budgets",
+      "title": "Cómo gestionar presupuestos desiguales en el grupo",
+      "paragraphs": [
+        "Casi todo grupo de amigos tiene al menos una persona que está en una situación económica distinta a la de los demás. Quizá está entre trabajos, ahorrando para algo grande o simplemente gana menos. Esto es normal, y no tiene por qué significar que se quede fuera — pero sí requiere un poco de diseño intencionado en cómo estructuráis el viaje.",
+        "La primera regla es hacer espacio para la conversación antes del viaje, no durante. Si sabes que alguien del grupo tiene un presupuesto más ajustado, contacta con esa persona en privado y pregúntale qué rango le resulta cómodo. Esto no es caridad — es buena dinámica de grupo. Un viaje en el que una persona está estresada por el dinero todo el tiempo es peor para todos.",
+        "Para el alojamiento, busca opciones donde el coste no varíe por individuo. Alquilar una casa o un Airbnb grande y repartirlo a partes iguales suele salir más barato por persona que las habitaciones de hotel individuales, y significa que nadie paga más que otro por su situación para dormir. Cuando todos están en el mismo espacio, no hay un sistema de niveles visible.",
+        "Para las comidas y las actividades, diseña una mezcla. Planifica algunas comidas de grupo en restaurantes de gama media donde la cuenta se reparte con facilidad, y haz que el pago individual sea lo predeterminado para cualquier cosa de gama más alta. Si el grupo quiere hacer una actividad cara — una clase de cocina, un paseo en barco, una cena con estrella Michelin — hazla opcional y ten una alternativa igual de buena para quienes la dejen pasar. Esta estructura hace que nadie tenga que dar explicaciones ni sentir el foco encima.",
+        "Una técnica práctica: al principio del viaje, acordad un tope diario de gastos compartidos por persona. Algo como 50 €/día cubre la parte del alojamiento, el transporte compartido y una comida de grupo. Cualquier cosa por encima de eso es elección individual y coste individual. Este tope crea un mínimo predecible con el que todos pueden comprometerse, dejando margen para que quienes quieran gastar más lo hagan libremente."
+      ]
+    },
+    "settlingUp": {
+      "id": "settling-up",
+      "title": "Ajustar cuentas: la forma limpia",
+      "paragraphs": [
+        "El momento ideal para ajustar cuentas es antes de salir hacia el aeropuerto o el día después de volver — mientras el viaje sigue fresco, las cifras siguen visibles y la buena voluntad sigue intacta. Esperar una semana o más crea fricción: la gente se ocupa, los recuerdos se desvanecen y una deuda de 45 € empieza a parecer o demasiado pequeña para sacarla o demasiado grande para ignorarla.",
+        "El objetivo de ajustar cuentas es minimizar el número de transferencias. Si seis personas deben cada una cantidades distintas a personas distintas, el enfoque ingenuo requeriría hasta quince transacciones separadas. Un control inteligente calcula el número mínimo de transferencias necesarias para dejar a todos a cero — normalmente dos o tres por persona en un viaje en grupo típico.",
+        "Así se lee el ajuste final: el control muestra un saldo neto para cada persona — positivo significa que le deben dinero, negativo significa que debe. El algoritmo de ajuste encuentra entonces el camino más eficiente de cada saldo negativo a cada positivo. La persona A debe 85 € y a la persona B le deben 90 €, así que A le paga 85 € a B. Hecho. A la persona C le deben 40 €, la persona D debe 15 €, la persona E debe 25 €: D le paga 15 € a C, E le paga 25 € a C. Tres transacciones en lugar de una maraña.",
+        "El ajuste funciona mejor cuando todos confirman la recepción de su transferencia el día en que ocurre. Un simple mensaje en el chat de grupo — 'enviados 85 €, hecho' — cierra el círculo en público y evita que nadie se pregunte si necesita hacer seguimiento. En las 48 horas tras el final del viaje, cada saldo debería estar a cero.",
+        "Una última nota: haz el ajuste antes de que los recuerdos de quién pagó qué empiecen a difuminarse. La claridad económica al final de un viaje es lo que hace que de verdad quieras volver a viajar con esta gente."
+      ]
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Cómo se reparten los gastos de un viaje de forma justa entre amigos?",
+        "a": "El enfoque más justo es repartir los costes compartidos (alojamiento, transporte de grupo, actividades de grupo) a partes iguales, y dejar que cada uno pague individualmente los gastos personales como las comidas y bebidas individuales. Acordad estas categorías antes de que empiece el viaje, registrad cada gasto compartido a medida que ocurre usando un control compartido, y ajustad cuentas al final según quién pagó qué. Esto evita los dos extremos de repartir todo a partes iguales (que penaliza a los que gastan poco) o que cada uno pague lo suyo (que hace que el viaje parezca una transacción)."
+      },
+      {
+        "q": "¿Cuál es la mejor app para llevar la cuenta de los gastos de un viaje en grupo?",
+        "a": "Para una experiencia de viaje en grupo dedicada, el control de presupuesto integrado de WePlanify está diseñado específicamente para grupos de viaje — registra los gastos en tiempo real, lleva la cuenta de quién pagó y quién participó, y calcula un ajuste al final. Splitwise es la mejor herramienta pura para repartir gastos y gestiona bien varias divisas. La clave es usar algo que todos en el grupo vayan a abrir de verdad en su móvil. Una herramienta que usan tres de seis personas es peor que una más sencilla que usen las seis de forma constante."
+      },
+      {
+        "q": "¿Deberían pagar todos la misma cantidad en un viaje en grupo?",
+        "a": "Para los costes compartidos como el alojamiento y el transporte de grupo, sí — repartir a partes iguales es lo más justo porque todos se benefician por igual. Para el gasto personal como las comidas, las bebidas y las actividades individuales, no — cada uno debería pagar lo suyo. La solución práctica es registrar los gastos compartidos en un bote y dejar que el gasto personal sea individual. Si hay diferencias de ingresos importantes en el grupo, fija un tope diario para los gastos compartidos que todos puedan cumplir con comodidad, y deja que quienes gastan más cubran sus extras por su cuenta."
+      },
+      {
+        "q": "¿Cómo se gestiona a alguien que no paga su parte?",
+        "a": "Más vale prevenir que curar: usa un control compartido que todos puedan ver para que los saldos sean transparentes durante todo el viaje, no solo al final. Cuando alguien puede ver en tiempo real que debe 200 €, es más probable que lo aborde antes de que se convierta en una cifra mayor. Si alguien realmente no puede pagar tras el viaje, abórdalo en privado y de forma directa — no en el chat de grupo. Fija un plazo concreto ('¿puedes enviarlo antes del domingo?') en lugar de un vago 'cuando puedas'. Para futuros viajes, algunos grupos piden a todos que aporten a un fondo de viaje compartido antes de salir, para que no haya que ajustar cuentas al final."
+      },
+      {
+        "q": "¿Qué costes deberían repartirse a partes iguales frente a los individuales?",
+        "a": "Repartir a partes iguales: alojamiento, coches de alquiler, transporte de grupo (trenes, traslados al aeropuerto), compra compartida para las comidas de grupo y cualquier actividad que todo el grupo haga junto. Pagar individualmente: las comidas personales en restaurantes, las bebidas alcohólicas, los souvenirs, el transporte personal (un taxi en solitario, una actividad extra) y cualquier cosa que solo beneficie a una persona. La regla general es: si sería raro que una persona no participara en ello, repártelo. Si es una elección personal, págalo tú."
+      },
+      {
+        "q": "¿Cuándo se deberían ajustar las cuentas en un viaje en grupo?",
+        "a": "Idealmente el último día del viaje o en las 24-48 horas tras volver a casa, mientras todo sigue fresco y la buena voluntad del viaje está intacta. Usa un control compartido que calcule el número mínimo de transferencias necesarias — esto lo mantiene rápido e indoloro. Confirma cada pago en el chat de grupo para que todos sepan cuándo su saldo queda saldado. Esperar más de una semana hace la conversación más difícil y las cifras más turbias. Fija un plazo firme como grupo antes de salir."
+      }
+    ]
+  },
+  "pollsTip": {
+    "text": "Consejo: usa las encuestas grupales de WePlanify para votar destinos y actividades y alinear las expectativas antes de comprometeros con nada.",
+    "link": "Prueba las encuestas grupales"
+  },
+  "trackerBox": {
+    "text": "El control de presupuesto compartido de WePlanify permite a cada miembro del grupo añadir gastos en segundos, desde cualquier dispositivo.",
+    "link": "Ver el control de presupuesto"
+  },
+  "cta": {
+    "title": "¿Listo para quitarle el estrés al dinero de los viajes en grupo?",
+    "text": "El control de presupuesto compartido de WePlanify permite a tu grupo registrar los gastos en tiempo real, ver quién debe qué y ajustar cuentas sin problemas al final — todo en la misma app donde construyes tu itinerario, lanzas encuestas y coordinas el equipaje.",
+    "button": "Empezar a llevar la cuenta juntos"
+  },
+  "discoverMore": {
+    "heading": "Descubre más",
+    "budget": {
+      "title": "Control de presupuesto compartido",
+      "text": "Registra los gastos en tiempo real, mira quién debe qué y ajusta cuentas sin problemas con el control de presupuesto de grupo de WePlanify.",
+      "link": "Explora el control"
+    },
+    "friends": {
+      "title": "Viaje con amigos",
+      "text": "Planifica un viaje en grupo con amigos sin esfuerzo — itinerario, encuestas, presupuesto y equipaje todo en un solo lugar."
+    },
+    "guide": {
+      "title": "Guía: planificar un viaje en grupo",
+      "text": "La guía completa para planificar un viaje en grupo desde la elección del destino hasta el día de salida."
+    },
+    "apps": {
+      "title": "Mejores apps para planificar viajes en grupo",
+      "text": "Una comparativa honesta de las mejores apps para planificar un viaje en grupo en 2026."
+    }
+  },
+  "readMore": "Leer más"
+}

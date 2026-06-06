@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Blog — Dicas de Viagens em Grupo",
+    "description": "Descubra artigos e dicas para organizar viagens em grupo inesquecíveis. Truques de viagem, destinos e guias práticos."
+  },
+  "staticPosts": [
+    {
+      "title": "Como Organizar uma Despedida de Solteira Inesquecível — Guia de 2026",
+      "excerpt": "Da escolha do destino à coordenação do grupo: tudo o que precisa para organizar uma despedida de solteira memorável, sem stress."
+    },
+    {
+      "title": "Orçamento de Viagem em Grupo — Como Dividir Custos Sem Dramas",
+      "excerpt": "Defina um orçamento realista, divida os custos de forma justa, acompanhe as despesas em tempo real e acerte as contas sem complicações no fim da viagem."
+    }
+  ]
+}

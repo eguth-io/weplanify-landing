@@ -1,0 +1,23 @@
+{
+  "badge": "die App entdecken",
+  "title": "Plane deine Gruppenreise in 3 einfachen Schritten",
+  "description": "Einfach, kollaborativ und für Gruppen gemacht.",
+  "card1": {
+    "title": "Schritt 1: Lade deine Gruppe ein",
+    "description": "Trage das Wesentliche ein. Füge deine Freunde oder Familie mit einem Klick hinzu. Alle sehen dieselbe Reise.",
+    "statValue": "1 Min.",
+    "statLabel": "um die Gruppe einzuladen"
+  },
+  "card2": {
+    "title": "Schritt 2: Erkunden und entdecken",
+    "description": "Swipe durch Aktivitäten, Restaurants und Hotels. Füge deine Favoriten zur Reiseroute hinzu.",
+    "statValue": "500+",
+    "statLabel": "Orte zu entdecken"
+  },
+  "card3": {
+    "title": "Schritt 3: Entscheiden und finalisieren",
+    "description": "Erstellt Abstimmungen, verwaltet das Budget und bereitet die Abreise gemeinsam vor.",
+    "statValue": "100 %",
+    "statLabel": "gemeinsam entschieden"
+  }
+}

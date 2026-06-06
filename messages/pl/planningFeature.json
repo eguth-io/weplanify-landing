@@ -1,0 +1,35 @@
+{
+  "copy": {
+    "you": "Ty",
+    "brand": "WePlanify AI",
+    "chatBubbles": [
+      "Chcę spędzić 2 tygodnie w Japonii w kwietniu z moją dziewczyną. Uwielbiamy przyrodę, jedzenie i świątynie. Średni budżet.",
+      "Świetny wybór! Kwiecień to w Japonii sezon kwitnienia wiśni. Proponuję trasę Tokio — Kioto — Osaka z przystankami w Narze i Hakone. Pokazać Ci opcje noclegów?",
+      "Tak, najlepiej tradycyjne ryokany, jeśli to możliwe",
+      "Doskonały wybór! Wybrałem 3 ryokany z prywatnym onsenem w Hakone i 2 odnowione machiya w Kioto. Wyliczam też trasy JR Pass, żeby zoptymalizować Wasze przejazdy..."
+    ],
+    "chips": ["Dodaj wędrówkę", "Kurs robienia sushi", "Zobacz JR Pass", "Dostosuj budżet"],
+    "modesTitle": "Wybierz swój styl planowania",
+    "modesSubtitle": "Niezależnie od tego, czy wolisz pełną kontrolę, czy wygodę napędzaną przez AI, WePlanify dostosowuje się do Ciebie.",
+    "manualTitle": "Planowanie ręczne",
+    "manualSubtitle": "Pełna kontrola nad każdym szczegółem. Idealne dla podróżników, którzy uwielbiają tworzyć własne przygody.",
+    "manualSteps": [
+      { "title": "Utwórz podróż", "description": "Ustal kierunek, terminy i zaproś towarzyszy podróży." },
+      { "title": "Dodaj kierunki", "description": "Buduj plan podróży krok po kroku z wieloma przystankami." },
+      { "title": "Wypełnij każdy dzień", "description": "Przeciągaj i upuszczaj atrakcje, restauracje i noclegi." },
+      { "title": "Współpracujcie", "description": "Twoja grupa dodaje pomysły i głosuje na opcje." }
+    ],
+    "aiTitle": "Planowanie z AI",
+    "aiSubtitle": "Opisz swoją wymarzoną podróż, a AI w kilka sekund stworzy spersonalizowany plan podróży.",
+    "aiUserMsg": "2 tygodnie w Japonii, sezon kwitnienia wiśni, przyroda i świątynie",
+    "aiAssistantMsg": "Tworzę Twój plan podróży Tokio → Kioto → Osaka z ryokanami i zwiedzaniem świątyń...",
+    "aiTags": ["Natychmiastowy plan podróży", "Inteligentne sugestie", "Optymalizacja trasy"],
+    "bestOfBoth": {
+      "strong": "To, co najlepsze z obu światów:",
+      "rest": " zacznij od sugestii AI, a potem dopracuj wszystko ręcznie. Albo planuj ręcznie i poproś AI o uzupełnienie luk."
+    },
+    "visualTitle": "AI wizualizuje Twoją podróż",
+    "capabilitiesSubtitle": "Coś więcej niż asystent — prawdziwa wiedza podróżnicza napędzana przez AI.",
+    "freeNoCard": "Darmowa rejestracja. Bez karty kredytowej."
+  }
+}

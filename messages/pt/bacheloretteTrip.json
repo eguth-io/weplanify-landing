@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "title": "Planear uma Despedida de Solteira — Organize a Festa Perfeita",
+    "description": "Planeie a despedida de solteira definitiva com a WePlanify. Coordene horários, votem nas atividades, façam a gestão de um orçamento partilhado e construam um itinerário dia a dia — tudo num organizador gratuito de fins de semana de despedida de solteira."
+  },
+  "readTime": "10 min de leitura",
+  "breadcrumb": {
+    "home": "Início",
+    "bachelorette": "Despedida de Solteira"
+  },
+  "hero": {
+    "tag": "Planeador de Despedidas de Solteira",
+    "title": "Planeie a Despedida\nde Solteira Definitiva",
+    "description": "Ela disse que sim — agora é a sua vez de planear uma despedida de solteira inesquecível. A WePlanify é o organizador gratuito de fins de semana de despedida de solteira que mantém a surpresa viva e o planeamento sem stress.",
+    "cta": "Começar a planear gratuitamente"
+  },
+  "guideIntro": {
+    "title": "O Guia Definitivo para Planear uma Despedida de Solteira",
+    "paragraphs": [
+      "Uma grande despedida de solteira é mais do que uma noitada — é uma celebração de vários dias da amizade, da aventura e da entrada da futura noiva na vida de casada. Quer esteja a planear um fim de semana relaxante de spa, uma aventura urbana animada ou uma escapada de praia ao sol, a magia está nos detalhes. E acertar nesses detalhes com um grupo de 6 a 15 pessoas é onde as coisas se complicam.",
+      "As melhores despedidas de solteira têm três coisas em comum: combinam com a personalidade da noiva, são inclusivas do orçamento de todos e são suficientemente organizadas para que a madrinha não esteja a ter um colapso nos bastidores. O segredo não é planear ao minuto cada momento — é ter um sistema que deixe toda a gente contribuir, mantendo uma pessoa ao comando.",
+      "Foi exatamente para isto que a WePlanify foi criada. Um único espaço partilhado onde a equipa de organização pode votar nas atividades, acompanhar a caixa partilhada, construir um itinerário dia a dia e coordenar a bagagem — tudo sem que a noiva alguma vez veja. Acabaram-se os grupos secretos de WhatsApp com ramificações de conversa confusas. Apenas um centro de planeamento limpo e organizado."
+    ]
+  },
+  "painPoints": {
+    "title": "Porque é que Planear uma Despedida de Solteira É um Caos Puro",
+    "subtitle": "Adora a futura noiva, mas organizar o grande fim de semana dela? Isso é uma história completamente diferente.",
+    "items": [
+      {
+        "emoji": "🤫",
+        "title": "Manter Tudo em Segredo",
+        "description": "Tentar planear uma surpresa épica enquanto coordena 12 pessoas numa conversa de grupo que a noiva não pode ver? Um autêntico pesadelo. Há sempre alguém que, por acidente, escreve no grupo principal em vez do secreto. Ou a noiva vê uma pré-visualização de notificação no telemóvel de alguém. Com a WePlanify, todo o planeamento acontece num espaço de viagem privado — sem conversas de grupo descontroladas, sem spoilers acidentais."
+      },
+      {
+        "emoji": "📅",
+        "title": "Conciliar Horários",
+        "description": "Entre o trabalho, os filhos, as férias e o 'deixa-me confirmar com o meu/a minha companheiro/a' — encontrar um fim de semana que sirva a todos parece impossível. Envia uma mensagem a perguntar pelas datas e metade do grupo responde uma semana depois. A janela para reservar alojamento acessível continua a encolher enquanto espera. As sondagens de datas da WePlanify dão a toda a gente um prazo claro para votar, e os resultados são instantâneos."
+      },
+      {
+        "emoji": "💸",
+        "title": "A Conversa Sobre Dinheiro",
+        "description": "Quem paga o Airbnb? Como se divide a parte da noiva? Pedidos de transferência a voar para todo o lado. Constrangedor. Algumas pessoas pagam a mais, outras a menos, e ninguém sabe o total real até semanas depois da viagem, quando alguém finalmente se senta com uma calculadora. O gestor de orçamento partilhado da WePlanify trata de tudo isto em tempo real — contribuições, despesas e quem deve o quê."
+      },
+      {
+        "emoji": "🎉",
+        "title": "Excesso de Atividades",
+        "description": "Dia de spa ou rota de vinhos? Praia ou cidade? Toda a gente tem opiniões, mas ninguém quer ser quem decide pelo grupo. O resultado é ou um impasse em que nada é reservado, ou uma pessoa toma todas as decisões e guarda secretamente o ressentimento por fazer todo o trabalho. As sondagens em grupo resolvem isto instantaneamente — apresente três opções, deixe toda a gente votar e reserve a vencedora. Democracia no seu melhor."
+      }
+    ]
+  },
+  "features": {
+    "title": "A WePlanify Torna o Planeamento de Despedidas de Solteira Fácil",
+    "subtitle": "Tudo o que precisa para planear uma despedida de solteira — num só lugar, com zero stress.",
+    "items": [
+      {
+        "emoji": "🔒",
+        "title": "Grupo de Planeamento Privado",
+        "description": "Crie um espaço de planeamento secreto sem a noiva. Convide o grupo, discutam ideias e mantenham a surpresa intacta — sem conversas de grupo descontroladas. Toda a gente no grupo de planeamento pode ver o itinerário, o orçamento e a lista de bagagem, mas a futura noiva não tem qualquer acesso. Você controla quem entra e pode adicionar a noiva depois da revelação da surpresa, se quiser que ela veja os detalhes da viagem."
+      },
+      {
+        "emoji": "🗳️",
+        "title": "Sondagens para Atividades e Datas",
+        "description": "Não conseguem chegar a acordo sobre uma data ou atividade? Deixem o grupo votar. As sondagens facilitam encontrar o que serve a todos — sem idas e vindas intermináveis. Crie sondagens para tudo: que fim de semana funciona melhor, que restaurante para o jantar de grupo, spa ou passeio de barco no sábado à tarde. A votação anónima faz com que até os amigos mais tímidos tenham uma palavra a dizer. Os resultados são claros, rápidos e definitivos."
+      },
+      {
+        "emoji": "💰",
+        "title": "Orçamento e Caixa Partilhada",
+        "description": "Definam um orçamento partilhado, acompanhem as contribuições e dividam os custos de forma justa. Acabaram-se as conversas constrangedoras sobre dinheiro e os pesadelos de folhas de cálculo. Decidam logo à partida se a noiva paga por si ou se o grupo cobre a parte dela. Registem cada despesa à medida que acontece — o sinal do Airbnb, a reserva do restaurante, as t-shirts a condizer — e a WePlanify calcula quem deve o quê automaticamente."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Itinerário Dia a Dia",
+        "description": "Construam um horário detalhado para todo o fim de semana. Das bebidas de boas-vindas ao brunch final — toda a gente sabe o que acontece e quando. Adicionem horas, locais, notas e links para cada atividade. Partilhem o itinerário com todo o grupo (menos a noiva), para que todos conheçam o plano. No próprio dia, o itinerário é a vossa única fonte de verdade — acabaram-se as mensagens frenéticas a perguntar 'onde nos vamos encontrar?'"
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Ideias de Despedida de Solteira por Estilo",
+    "subtitle": "Não sabe que tipo de despedida planear? Aqui estão cinco estilos populares para a inspirar.",
+    "items": [
+      {
+        "emoji": "🧖",
+        "title": "Retiro Relaxante de Spa",
+        "description": "Reservem um hotel de spa ou um resort de bem-estar para um fim de semana de massagens, tratamentos faciais, jacuzzis e manhãs preguiçosas. Perfeito para noivas que querem descontrair antes do caos do casamento. Acrescentem uma aula de culinária em grupo ou uma prova de vinhos para variar do relaxamento. Dica económica: aluguem um Airbnb com jacuzzi e reservem tratamentos de spa ao domicílio."
+      },
+      {
+        "emoji": "🌃",
+        "title": "Aventura Urbana",
+        "description": "Escolham uma cidade vibrante — pensem em Barcelona, Austin, Montreal ou Lisboa — e encham o fim de semana com bares no terraço, rotas de street food, compras e vida noturna. As viagens à cidade resultam muito bem porque toda a gente se pode separar por umas horas e voltar a reunir-se para os jantares de grupo. Usem o itinerário da WePlanify para mapear as atividades imperdíveis e deixem espaço para a exploração espontânea."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Escapada à Praia",
+        "description": "Sol, areia e fatos de banho a condizer. Uma despedida de solteira na praia é um clássico por uma razão. Reservem um alojamento à beira-mar, planeiem um dia de barco e marquem cocktails ao pôr do sol na costa. Para destinos, pensem em Tulum, nas ilhas gregas, em Bali ou no sul de França. A lista de bagagem partilhada é essencial aqui — coordenem quem leva os flutuadores, a geleira e a coluna Bluetooth."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Escapada à Região dos Vinhos",
+        "description": "Napa, Bordéus, Mendoza, Toscana — qualquer região vinícola dá uma despedida de solteira sofisticada e memorável. Reservem uma visita a uma vinha, organizem uma prova privada e terminem a noite com um jantar demorado. As viagens à região dos vinhos podem ficar caras depressa, por isso o gestor de orçamento partilhado é o vosso melhor amigo. Registem provas, refeições e custos de transporte para que todos fiquem na mesma página."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Ativa e ao Ar Livre",
+        "description": "Para a noiva aventureira: caminhadas, caiaque, surf ou esqui. Reservem uma cabana na montanha ou um alojamento perto de um parque nacional. Planeiem uma grande atividade de grupo por dia (como uma caminhada guiada ou uma descida de rafting) e deixem as noites para jantares acolhedores e jogos. A lista de bagagem é crucial para viagens ao ar livre — certifiquem-se de que toda a gente tem o equipamento certo e sabe o que o grupo está a partilhar."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Quando Começar a Planear",
+    "subtitle": "Uma cronologia simples para se manter no rumo certo.",
+    "milestones": [
+      {
+        "time": "6 meses antes",
+        "title": "Fixem a Data e a Lista de Convidados",
+        "description": "Façam uma sondagem ao grupo sobre os fins de semana disponíveis. Finalizem quem vai. Criem a vossa viagem na WePlanify e convidem toda a gente."
+      },
+      {
+        "time": "3 meses antes",
+        "title": "Reservem Alojamento e Transporte",
+        "description": "Votem no destino e no estilo de alojamento. Reservem voos ou organizem boleias. Configurem o orçamento partilhado."
+      },
+      {
+        "time": "1 mês antes",
+        "title": "Planeiem Atividades e Construam o Itinerário",
+        "description": "Façam uma sondagem para as atividades. Construam o horário dia a dia. Comecem a lista de bagagem. Encomendem qualquer material a condizer ou decorações."
+      },
+      {
+        "time": "1 semana antes",
+        "title": "Verificação Final e Animem-se",
+        "description": "Confirmem todas as reservas. Revejam a lista de bagagem. Acertem quaisquer itens pendentes do orçamento. Enviem o itinerário final ao grupo."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Lista de Verificação para Planear a Despedida de Solteira",
+    "items": [
+      "Definir uma data que sirva ao maior número de pessoas",
+      "Criar um grupo de planeamento privado (sem a noiva)",
+      "Decidir o destino e o alojamento",
+      "Definir e concordar com um orçamento partilhado",
+      "Reservar alojamento e transporte",
+      "Planear atividades e construir um itinerário dia a dia",
+      "Encomendar conjuntos a condizer, decorações ou prendas",
+      "Criar uma lista de bagagem partilhada",
+      "Confirmar todas as reservas uma semana antes",
+      "Acertar o orçamento e celebrar"
+    ]
+  },
+  "testimonial": {
+    "quote": "Sinceramente, éramos uma confusão a tentar planear a despedida da Jen no WhatsApp. Alguém sugeriu a WePlanify e simplesmente... funcionou? Votámos em tudo, o orçamento ficou claro e ninguém teve de andar atrás de ninguém por dinheiro. 10/10, voltaria a planear.",
+    "author": "Emma R.",
+    "role": "Dama de honor, Nova Iorque"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      {
+        "q": "Posso planear sem a noiva ver?",
+        "a": "Sem dúvida. A WePlanify permite-lhe criar um grupo de planeamento privado que a futura noiva nunca vê. Convide apenas as damas de honor e os organizadores — mantenha a surpresa totalmente intacta."
+      },
+      {
+        "q": "Como fazemos a gestão do orçamento partilhado?",
+        "a": "A WePlanify inclui um gestor de orçamento partilhado integrado. Definam o orçamento total, registem cada despesa, dividam os custos igualmente ou de forma personalizada e vejam quem deve o quê em tempo real. Sem necessidade de folhas de cálculo."
+      },
+      {
+        "q": "A WePlanify é gratuita para planear despedidas de solteira?",
+        "a": "Sim, 100% gratuita — mesmo para o planeamento secreto. Crie um grupo privado sem a noiva, faça sondagens, construa o itinerário e acompanhe a caixa partilhada sem qualquer custo. Depois de a surpresa ser revelada, pode até adicionar a futura noiva para que veja o plano completo. Sem período de teste, sem cartão de crédito, sem taxas escondidas."
+      },
+      {
+        "q": "Com quanta antecedência devemos começar a planear?",
+        "a": "Idealmente seis meses antes do casamento para viagens a destinos, três meses para escapadas locais. Quanto mais cedo fixarem a data e a lista de convidados, mais fácil se torna tudo o resto. Comecem uma viagem na WePlanify assim que a ideia surgir — mesmo que os detalhes ainda não estejam definidos."
+      },
+      {
+        "q": "Qual é um bom orçamento para uma despedida de solteira?",
+        "a": "Os orçamentos variam muito consoante o destino e o estilo. Um fim de semana local de spa pode custar 200 a 400 por pessoa, enquanto uma viagem a um destino pode chegar a 800 a 1500 ou mais. O essencial é concordarem com um orçamento cedo e usarem um gestor partilhado para que todos conheçam o total antes de se comprometerem."
+      },
+      {
+        "q": "Como decidimos as atividades em grupo?",
+        "a": "Usem sondagens. Criem uma sondagem com três a cinco opções de atividade, deixem toda a gente votar e avancem com a vencedora. Isto evita o problema de uma só pessoa decidir e faz com que todos se sintam incluídos. Podem fazer sondagens separadas para cada dia ou período."
+      },
+      {
+        "q": "E se algumas damas de honor não puderem estar no fim de semana inteiro?",
+        "a": "Isso acontece a toda a hora — e a WePlanify lida bem com a situação. Pode construir um itinerário flexível em que algumas pessoas se juntam apenas no sábado à noite ou no brunch final. As divisões de orçamento também se ajustam: basta assinalar quem participa em que atividades, e o gestor partilhado recalcula a parte de cada pessoa. Sem conversas constrangedoras sobre alguém pagar por um dia em que não esteve."
+      }
+    ]
+  },
+  "destinations": {
+    "tag": "Inspiração de destinos",
+    "heading": "Despedidas de solteira prontas a copiar",
+    "seeItinerary": "Ver o itinerário →",
+    "seeAll": "Ver todos os destinos →",
+    "cards": {
+      "lasVegas": {
+        "title": "Las Vegas · 3 dias",
+        "desc": "A capital mundial das despedidas de solteira. Festas na piscina, dayclubs, a Strip, um espetáculo do Cirque."
+      },
+      "nashville": {
+        "title": "Nashville · 4 dias",
+        "desc": "A capital das despedidas de solteira nos EUA. Pedal taverns, honky-tonks, botas de cowgirl."
+      },
+      "budapest": {
+        "title": "Budapeste · 3 dias",
+        "desc": "Banhos termais, ruin bars, terraços. O fim de semana europeu de despedida de solteira, bem feito."
+      },
+      "marrakech": {
+        "title": "Marraquexe · 4 dias",
+        "desc": "Riad privado, ritual de hammam, deserto de Agafay, jantares no terraço. Uma fuga total."
+      }
+    }
+  },
+  "discover": {
+    "heading": "Descubra Mais",
+    "tripWithFriends": {
+      "title": "Viagem com Amigos",
+      "desc": "Planeie uma viagem em grupo com amigos sem esforço usando a WePlanify.",
+      "cta": "Ler mais →"
+    },
+    "guide": {
+      "title": "Guia: Como Planear uma Viagem em Grupo",
+      "desc": "O guia completo, passo a passo, para planear uma viagem em grupo de sucesso.",
+      "cta": "Ler o guia →"
+    },
+    "comparison": {
+      "title": "Comparação de Apps",
+      "desc": "Veja como a WePlanify se compara a outras apps de planeamento de viagens em grupo em 2026.",
+      "cta": "Ver comparação →"
+    }
+  },
+  "cta": {
+    "title": "Pronta para Planear a Melhor Despedida de Solteira de Sempre?",
+    "description": "Junte-se a milhares de damas de honor que usam a WePlanify para organizar despedidas de solteira sem stress. É gratuita, é divertida e funciona mesmo.",
+    "button": "Começar — é grátis"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "copy": {
+    "you": "Tu",
+    "brand": "WePlanify AI",
+    "chatBubbles": [
+      "Voglio passare 2 settimane in Giappone ad aprile con la mia ragazza. Amiamo la natura, il cibo e i templi. Budget medio.",
+      "Ottima scelta! Il Giappone ad aprile è la stagione dei ciliegi in fiore. Ti suggerisco un itinerario Tokyo — Kyoto — Osaka con tappe a Nara e Hakone. Vuoi che ti mostri alcune opzioni di alloggio?",
+      "Sì, preferibilmente ryokan tradizionali se possibile",
+      "Scelta eccellente! Ho selezionato 3 ryokan con onsen privato a Hakone e 2 machiya ristrutturate a Kyoto. Sto anche calcolando i tragitti del JR Pass per ottimizzare i tuoi spostamenti..."
+    ],
+    "chips": ["Aggiungi un'escursione", "Corso di sushi", "Vedi JR Pass", "Modifica budget"],
+    "modesTitle": "Scegli il tuo stile di pianificazione",
+    "modesSubtitle": "Che tu preferisca il controllo totale o la comodità dell'IA, WePlanify si adatta a te.",
+    "manualTitle": "Pianificazione manuale",
+    "manualSubtitle": "Controllo totale su ogni dettaglio. Perfetto per i viaggiatori che amano costruire le proprie avventure.",
+    "manualSteps": [
+      { "title": "Crea il tuo viaggio", "description": "Imposta destinazione, date e invita i tuoi compagni di viaggio." },
+      { "title": "Aggiungi destinazioni", "description": "Costruisci il tuo itinerario passo dopo passo con più tappe." },
+      { "title": "Riempi ogni giornata", "description": "Trascina e rilascia attività, ristoranti e alloggi." },
+      { "title": "Collabora", "description": "Il tuo gruppo aggiunge idee e vota le opzioni." }
+    ],
+    "aiTitle": "Pianificazione con IA",
+    "aiSubtitle": "Descrivi il tuo viaggio dei sogni e lascia che l'IA crei un itinerario personalizzato in pochi secondi.",
+    "aiUserMsg": "2 settimane in Giappone, stagione dei ciliegi in fiore, natura e templi",
+    "aiAssistantMsg": "Sto creando il tuo itinerario Tokyo → Kyoto → Osaka con ryokan e visite ai templi...",
+    "aiTags": ["Itinerario istantaneo", "Suggerimenti intelligenti", "Ottimizzazione del percorso"],
+    "bestOfBoth": {
+      "strong": "Il meglio dei due mondi:",
+      "rest": " parti dai suggerimenti dell'IA, poi affina manualmente. Oppure pianifica a mano e chiedi all'IA di colmare le lacune."
+    },
+    "visualTitle": "L'IA visualizza il tuo viaggio",
+    "capabilitiesSubtitle": "Più di un semplice assistente — una vera competenza di viaggio potenziata dall'IA.",
+    "freeNoCard": "Registrazione gratuita. Nessuna carta di credito richiesta."
+  }
+}

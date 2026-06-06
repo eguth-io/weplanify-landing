@@ -1,0 +1,22 @@
+{
+  "copy": {
+    "heroTitle": "Vuelos, trenes, coches:",
+    "heroTitleHighlight": "se acabaron los billetes perdidos",
+    "heroSubtitle": "Reenvía tus correos de confirmación y extraemos todo automáticamente.",
+    "importTitle": "Importación automática",
+    "importSubtitle": "Conecta tu correo o escanea tus confirmaciones — todo se importa automáticamente.",
+    "tickets": [
+      { "type": "flight", "code": "AF1234", "details": "París → Lisboa — 15 de abril" },
+      { "type": "train", "code": "CP5678", "details": "Lisboa → Oporto — 18 de abril" },
+      { "type": "hotel", "code": "BOOKING-9012", "details": "Hotel Oporto — 4 noches" }
+    ],
+    "syncTitle": "Se sincroniza con tu itinerario",
+    "syncSubtitle": "El transporte se integra automáticamente en tu agenda.",
+    "timeline": [
+      { "time": "08:45", "event": "Vuelo CDG → LIS", "icon": "✈️", "color": "#61DBD5" },
+      { "time": "10:30", "event": "Llegada a Lisboa", "icon": "📍", "color": "#F6391A" },
+      { "time": "11:00", "event": "Traslado al hotel", "icon": "🚕", "color": "#EEF899" },
+      { "time": "14:00", "event": "Check-in Hotel Alfama", "icon": "🏨", "color": "#8B5CF6" }
+    ]
+  }
+}

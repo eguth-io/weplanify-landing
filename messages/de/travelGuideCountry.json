@@ -1,0 +1,65 @@
+{
+  "breadcrumb": {
+    "home": "Startseite",
+    "travelGuides": "Reiseführer"
+  },
+  "jsonld": {
+    "touristType": "Urlaubsreisende"
+  },
+  "hero": {
+    "titleSuffix": "Reiseführer",
+    "perDay": " /Tag",
+    "cta": "Meine Reise planen",
+    "ctaNote": "Baut eure Reiseroute mit deiner Gruppe – kostenlos, in 30 Sekunden."
+  },
+  "quickFacts": {
+    "heading": "Auf einen Blick",
+    "capital": "Hauptstadt",
+    "language": "Sprache",
+    "currency": "Währung",
+    "timezone": "Zeitzone",
+    "plug": "Steckdose",
+    "driving": "Verkehr",
+    "driveLeft": "Links",
+    "driveRight": "Rechts",
+    "visa": "Visum"
+  },
+  "bestSeason": {
+    "heading": "Beste Reisezeit",
+    "subtitle": "Drei Zeiträume, die du kennen solltest: die beste, die Nebensaison und die zu meidende.",
+    "best": "Beste Zeit",
+    "shoulder": "Nebensaison",
+    "avoid": "Meiden"
+  },
+  "mustSee": {
+    "heading": "Sehenswürdigkeiten",
+    "subtitle": "Orte, die die Reise allein schon rechtfertigen. Tippe, um sie in Maps zu öffnen."
+  },
+  "specialties": {
+    "heading": "Spezialitäten zum Probieren",
+    "subtitle": "Essen, Getränke und Erlebnisse, die dieses Land besser kann als jedes andere."
+  },
+  "regions": {
+    "heading": "Regionen, die du kennen solltest",
+    "subtitle": "Um deine Reise danach zu planen, wofür du Zeit hast und worauf du Lust hast."
+  },
+  "itineraries": {
+    "heading": "Empfohlene Reiserouten",
+    "subtitle": "Drei Längen, je nach Zeit. Forke jede davon in WePlanify.",
+    "daysSuffix": "T"
+  },
+  "budget": {
+    "heading": "Tagesbudget",
+    "subtitle": "Pro Person, ohne Flüge. Drei Komfortstufen.",
+    "perDay": "/Tag"
+  },
+  "tips": {
+    "heading": "Kulturelle Dos & Don'ts",
+    "subtitle": "Kleine Gesten, die zählen – und die, die für Unbehagen sorgen."
+  },
+  "cta": {
+    "heading": "Plane deine {country}-Reise mit deiner Crew",
+    "body": "Bring diesen Reiseführer in WePlanify, lade die Gruppe ein und baut die Reise gemeinsam. Geteilte Karte, Abstimmungen, geteiltes Budget – alles kostenlos.",
+    "button": "Jetzt planen – kostenlos"
+  }
+}

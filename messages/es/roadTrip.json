@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Cómo planificar un road trip con amigos — Planificador de rutas en grupo | WePlanify",
+    "description": "Planifica tu road trip en grupo con WePlanify. Planificación de rutas colaborativa, presupuestos de gasolina compartidos, coordinación del equipaje y encuestas grupales para cada parada del camino."
+  },
+  "breadcrumb": {
+    "home": "Inicio"
+  },
+  "hero": {
+    "title": "La carretera abierta, tu grupo, cero estrés",
+    "readTime": "7 min de lectura"
+  },
+  "problem": {
+    "p1": "Los road trips suenan sencillos — solo súbete al coche y conduce. Pero con un grupo, cada decisión se multiplica. ¿Qué ruta? ¿Cuántas paradas? ¿Quién conduce y cuándo? ¿Dónde dormimos? ¿Quién paga la gasolina? ¿Quién trae la nevera? Para cuando has coordinado a cinco personas durante seis días, has enviado 300 mensajes y nadie tiene claro cuál es el plan.",
+    "p2": "WePlanify convierte el caos en una hoja de ruta compartida — un solo lugar para la ruta, el presupuesto y la lista de equipaje."
+  },
+  "toc": {
+    "title": "En esta página",
+    "anatomy": "Anatomía de un road trip en grupo",
+    "planning": "Planificar tu ruta paso a paso",
+    "budget": "Consejos de presupuesto para road trips en grupo",
+    "faq": "Preguntas frecuentes"
+  },
+  "anatomy": {
+    "title": "Anatomía de un road trip en grupo",
+    "subtitle": "Todo road trip tiene los mismos elementos básicos. Aquí te explicamos cómo acertar con cada uno en grupo.",
+    "items": [
+      { "stop": "La ruta", "desc": "Vota primero la gran decisión: ¿paisajística o rápida? ¿Costa o interior? Crea una encuesta, resuélvela y construye la ruta en un itinerario compartido donde todos puedan añadir sugerencias de paradas. Fija pronto los puntos de pernocta — la carretera entre ellos sigue siendo flexible.", "link": "/features/polls" },
+      { "stop": "Las paradas", "desc": "Aquí es donde los road trips se vuelven memorables. Deja que todos sugieran sus paradas imprescindibles y luego seleccionadlas juntos. La regla del 70/30 funciona a la perfección aquí: 70% paradas planificadas, 30% espontáneas. Añade cada parada al itinerario compartido con direcciones y notas para que el conductor no esté manipulando el móvil.", "link": "/features/planning" },
+      { "stop": "El dinero", "desc": "Gasolina, peajes, comida, alojamiento, actividades. En un road trip de varios días, los gastos se acumulan rápido y en muchas categorías. Registra cada gasto en tiempo real — quién pagó, cuánto, por qué. WePlanify calcula los saldos automáticamente para que ajustéis cuentas una sola vez al final, no después de cada gasolinera.", "link": "/features/budget" },
+      { "stop": "El coche", "desc": "Cinco personas, un maletero. El espacio es la restricción definitiva. Una lista de equipaje compartida con artículos asignados evita el error clásico del road trip: tres altavoces Bluetooth, ningún abridor y cero pinzas de arranque. Marca qué va en cada coche si lleváis varios vehículos.", "link": "/features/packing" }
+    ]
+  },
+  "checklist": {
+    "title": "Lista de esenciales para el road trip",
+    "subtitle": "Las cosas que los grupos siempre olvidan. Asigna cada una a una persona en tu lista de equipaje de WePlanify.",
+    "items": [
+      "Soportes y cargadores de móvil para el conductor",
+      "Cable auxiliar o transmisor FM Bluetooth",
+      "Nevera con acumuladores de frío",
+      "Botiquín",
+      "Pinzas de arranque / arrancador portátil",
+      "Mapas en papel (para zonas sin cobertura)",
+      "Botellas de agua reutilizables",
+      "Bolsas de basura para el coche",
+      "Mantas y almohadas para los pasajeros",
+      "Reserva de snacks compartida",
+      "Manómetro para neumáticos",
+      "Batería portátil para el móvil"
+    ]
+  },
+  "pullQuote": "Los mejores road trips no van del destino — van de lo que pasa entre las paradas. Asegúrate de que la planificación no mate el ambiente antes de salir.",
+  "planning": {
+    "title": "Planificar tu ruta: paso a paso",
+    "p1": "Empieza por los puntos de anclaje — los lugares que quieres visitar sí o sí — y construye la ruta a su alrededor. Antes de trazar una línea en el mapa, acordad el ritmo del viaje: ¿cuántas horas de conducción al día le sientan bien a tu grupo? De cuatro a cinco horas es un máximo realista antes de que aparezca la fatiga. Una vez que tengas los puntos de anclaje, conéctalos con tramos que equilibren la eficiencia de la autopista y el valor paisajístico.",
+    "p4": "Deja tiempo de margen en el programa — al menos una hora de holgura al día. Los road trips nunca salen exactamente como se planean. Un mercado de productores del que no sabías nada, un desvío por obras, un restaurante que alguien vio desde la autopista. El margen es lo que te permite decir que sí a estos momentos en lugar de estresarte por ir con retraso."
+  },
+  "budget": {
+    "title": "Consejos de presupuesto para road trips en grupo",
+    "p2": "Si alquiláis un coche, aclarad quién está en el seguro y quién figura como conductor adicional antes de salir. Las empresas de alquiler cobran por cada conductor extra — tenedlo en cuenta en el reparto. Los peajes son otro coste oculto: en algunas rutas pueden rivalizar con el presupuesto de gasolina. Consulta las calculadoras de peajes de tu ruta con antelación y decidid en grupo si tomáis la autopista de peaje o ahorráis dinero con la alternativa más lenta.",
+    "p3": "Para el alojamiento, ir variando mantiene los costes bajo control. Alternad entre campings, hostales y Airbnbs según dónde paréis. Repartir un alquiler de tres habitaciones entre cinco casi siempre sale más barato que habitaciones de hotel individuales, y además sirve de punto de reunión. Registra cada gasto compartido a medida que ocurre — esperar al final del viaje para aclarar quién debe qué es la receta para cargos olvidados y conversaciones incómodas."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Cómo se reparten los gastos de gasolina de forma justa en un road trip?", "a": "Registra cada repostaje en el control de presupuesto compartido de WePlanify — quién pagó, cuánto, qué coche. Al final del viaje, la app calcula quién debe qué. Para viajes con varios coches, lleva la cuenta de cada vehículo por separado. Se acabaron las conjeturas con Venmo." },
+      { "q": "¿Cuántas paradas debería tener un road trip al día?", "a": "De dos a tres paradas intencionadas al día es el punto óptimo. Más que eso y te pasas todo el viaje entrando y saliendo del coche. Incluye una parada 'imprescindible' y una o dos flexibles en el itinerario de cada día. Deja espacio para descubrimientos espontáneos." },
+      { "q": "¿Qué pasa si tenemos preferencias de conducción distintas?", "a": "Usa encuestas para decidir las grandes cuestiones de la ruta (costa o interior, autopistas rápidas o rutas paisajísticas). Para los turnos de conducción diarios, organiza una rotación en el itinerario. El plan compartido de WePlanify mantiene a todos alineados sobre quién conduce y cuándo." },
+      { "q": "¿Cómo se coordina el equipaje para un road trip?", "a": "El espacio del coche es limitado. Crea una lista de equipaje compartida con dos secciones: artículos personales y material compartido (nevera, equipo de acampada, herramientas, botiquín, altavoz). Asigna los artículos compartidos a personas concretas para no acabar con tres cargadores portátiles y ninguna pinza de arranque." },
+      { "q": "¿WePlanify funciona sin conexión durante un road trip?", "a": "WePlanify funciona en tu navegador en cualquier dispositivo. Aunque necesitas conexión a internet para sincronizar los cambios, puedes guardar los detalles clave (direcciones, códigos de reserva) en las notas del viaje antes de entrar en una zona sin cobertura. La mayor parte de tu ruta tendrá cobertura." },
+      { "q": "¿Con cuánta antelación deberíamos planificar un road trip?", "a": "De dos a cuatro semanas suele ser suficiente para road trips nacionales. Reserva pronto el alojamiento de las pernoctas clave — los sitios populares se llenan rápido, sobre todo los fines de semana. Deja la ruta flexible pero cierra los lugares donde dormiréis. Empieza un viaje en WePlanify en cuanto surja la idea." }
+    ]
+  },
+  "discover": {
+    "title": "Descubre más",
+    "tripWithFriends": { "title": "Viaje con amigos", "desc": "Planifica cualquier viaje en grupo sin esfuerzo.", "cta": "Leer más →" },
+    "groupGuide": { "title": "Guía de viajes en grupo", "desc": "La guía completa paso a paso.", "cta": "Leer la guía →" },
+    "bestApps": { "title": "Mejores apps de viajes en grupo", "desc": "Nuestra comparativa de las mejores herramientas para viajes en grupo.", "cta": "Leer el artículo →" },
+    "familyTrip": { "title": "Viaje en familia", "desc": "Planifica unas vacaciones en familia multigeneracionales.", "cta": "Leer más →" }
+  },
+  "cta": {
+    "title": "Salid juntos a la carretera",
+    "subtitle": "Planifica la ruta, reparte los gastos, carga el coche — todo en un solo lugar.",
+    "button": "Empezar a planificar"
+  },
+  "jsonld": {
+    "articleHeadline": "Planifica un road trip con tu grupo",
+    "howToName": "Cómo planificar un road trip en grupo",
+    "howToDescription": "Construye la ruta, acordad el ritmo, resolved los desacuerdos con encuestas, repartid la conducción y dejad espacio para la espontaneidad.",
+    "howToSteps": [
+      { "name": "Elige las paradas de anclaje y acordad el ritmo diario", "text": "Empieza por las paradas imprescindibles y construye la ruta a su alrededor. Acordad un máximo de 4-5 horas de conducción al día antes de que aparezca la fatiga, y luego conectad los puntos de anclaje con una mezcla de eficiencia de autopista y valor paisajístico." },
+      { "name": "Resolved los debates de paisaje o rapidez con una encuesta rápida", "text": "Cuando el grupo no se ponga de acuerdo sobre las paradas o el camino a tomar, lanzad una encuesta. Cada miembro ordena sus tres favoritas; el resultado gana sin dramas. Especialmente útil para el debate del desvío por la costa frente a la autopista." },
+      { "name": "Asignad los turnos de conducción y las pausas de descanso por adelantado", "text": "Asignad los turnos de conducción con antelación para que no sea siempre la misma persona la que esté al volante cada mañana. Rotad cada 2-3 horas y programad pausas reales de 20 minutos en miradores, no paradas de 5 minutos en gasolineras." },
+      { "name": "Dejad al menos una hora de margen al día", "text": "Los road trips nunca salen exactamente como se planean. Incluid al menos una hora de holgura cada día para poder decir que sí al mercado imprevisto, al desvío espontáneo, al restaurante visto desde la autopista." }
+    ]
+  }
+}

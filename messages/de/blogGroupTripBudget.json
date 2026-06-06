@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "title": "Budget für die Gruppenreise: Kosten teilen ohne Drama",
+    "description": "Der komplette Guide zum Umgang mit Geld auf einer Gruppenreise – ein Budget festlegen, mit dem alle einverstanden sind, Kosten fair aufteilen und am Ende sauber abrechnen."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "Budget für die Gruppenreise"
+  },
+  "readTime": "9 Min. Lesezeit",
+  "heroTag": "Geld & Reisen 2026",
+  "h1": "Budget für die Gruppenreise: Kosten teilen ohne Drama",
+  "intro": "Frag irgendjemanden, der je mit einer Gruppe von vier oder mehr Personen gereist ist, was der schwierigste Teil war, und Geld kommt innerhalb der ersten drei Antworten zur Sprache. Nicht die Flüge, nicht die Unterkunft – Geld. Wer das Abendessen bezahlt hat, wer noch fünfzig schuldet, warum eine Person ständig teure Cocktails bestellt, während alle anderen die Rechnung teilen. Die Budgetierung einer Gruppenreise muss keine Konfliktquelle sein. Mit dem richtigen System, das vor der Abreise steht, wird sie fast unsichtbar. Dieser Guide deckt alles ab: ein realistisches Budget festlegen, Kosten so aufteilen, dass es fair wirkt, Ausgaben in Echtzeit verfolgen und am Ende der Reise sauber abrechnen.",
+  "tocTitle": "Inhaltsverzeichnis",
+  "toc": [
+    { "id": "money-mess", "label": "Warum Geld auf Gruppenreisen immer zum Chaos wird" },
+    { "id": "set-budget-early", "label": "Lege das Budget fest, bevor du irgendetwas buchst" },
+    { "id": "split-by-category", "label": "Nach Kategorie teilen, nicht nach allem" },
+    { "id": "one-payer-system", "label": "Das Ein-Zahler-System" },
+    { "id": "track-real-time", "label": "In Echtzeit verfolgen, nicht am Ende" },
+    { "id": "unequal-budgets", "label": "Mit ungleichen Budgets in der Gruppe umgehen" },
+    { "id": "settling-up", "label": "Abrechnen: der saubere Weg" },
+    { "id": "faq", "label": "FAQ" }
+  ],
+  "sections": {
+    "moneyMess": {
+      "id": "money-mess",
+      "title": "Warum Geld auf Gruppenreisen immer zum Chaos wird",
+      "paragraphs": [
+        "Es fängt harmlos an. Jemand bucht das Airbnb, weil er die Karte mit dem höchsten Limit hat. Jemand anderes kauft die Gruppen-Zugtickets, um Zeit zu sparen. Eine dritte Person übernimmt das Abendessen, weil das Restaurant nur eine einzige Zahlung akzeptierte. Bevor die Reise überhaupt vorbei ist, hat eine Person 800 vorgestreckt und keine Ahnung, wie sie es zurückfordern soll, ohne kleinlich zu klingen.",
+        "Das Grundproblem ist, dass Gruppenreisen Menschen mit unterschiedlichem Einkommen, unterschiedlichen Ausgabengewohnheiten und völlig unterschiedlichen Vorstellungen davon zusammenbringen, was 'angemessen' bedeutet. Für die eine Freundin sind 30 für einen Museumseintritt nichts. Für eine andere sind sie ein erheblicher Teil ihres Tagesbudgets. Niemand spricht das vor der Abreise an, also wird jede Ausgabenentscheidung zu einer stillen Verhandlung, bei der sich am Ende immer jemand entweder schuldig oder verärgert fühlt.",
+        "Dann ist da das Tracking-Problem. Niemand will die Person sein, die wütend Ausgaben in eine Tabelle tippt, während alle anderen den Sonnenuntergang genießen. Also wird nichts erfasst. Bis zum letzten Tag ist die Hälfte der Transaktionen vergessen und die andere Hälfte umstritten. Das Abrechnen wird zu einem einstündigen archäologischen Projekt – und genau der Moment, in dem völlig angenehme Reisen aus dem Ruder laufen.",
+        "Die Lösung ist kein kompliziertes Buchhaltungssystem. Es ist eine einfache gemeinsame Vereinbarung, getroffen vor der Abreise, über drei Dinge: wie viel pro Person ausgegeben wird, welche Kosten geteilt und welche individuell bezahlt werden, und wie alles erfasst wird, während es passiert. Bring diese drei Dinge richtig hin und Geld hört auf, eine Spannungsquelle zu sein."
+      ]
+    },
+    "setBudgetEarly": {
+      "id": "set-budget-early",
+      "title": "Lege das Budget fest, bevor du irgendetwas buchst",
+      "paragraphs": [
+        "Das Geld-Gespräch muss stattfinden, bevor du eine einzige Sache buchst – vor dem Airbnb, vor den Flügen, bevor jemand Zugtickets kauft oder anfängt, Restaurantkarten zu vergleichen. Sobald Geld ausgegeben wurde, ist das Budget nicht mehr theoretisch. Echte Zahlen erzeugen echten Druck, und Menschen, die sich in einem Planungsgespräch gemeldet hätten, beginnen zu schweigen, um Konflikte zu vermeiden.",
+        "Der einfachste Weg, das Gespräch zu eröffnen, sind Spannen. Statt zu fragen „wie viel willst du ausgeben?“, was die Leute zwingt, eine Zahl zu nennen und sich beurteilt zu fühlen, präsentiere drei Optionen: eine sparsame Reise (800–1.000 pro Person, alles inklusive), eine komfortable Reise (1.200–1.600 pro Person) und eine großzügige Reise (2.000+ pro Person). Bitte alle, privat zu wählen, welche Spanne für sie passt. Wenn sich die Gruppe um eine Spanne sammelt, hast du dein Budget. Wenn es eine große Streuung gibt, ist das ein wichtiges Signal, das man früh angehen sollte – nicht an Tag drei, wenn jemand ein 45-Hauptgericht bestellt.",
+        "Sobald du eine grobe Summe pro Person hast, schlüssele sie nach Kategorie auf. Eine realistische Aufschlüsselung für eine 7-tägige Reise könnte so aussehen: Unterkunft (30–35 % des Budgets), Transport einschließlich Flügen und vor Ort (30–40 %), Essen und Getränke (20–25 %), Aktivitäten und Erlebnisse (10–15 %) und ein Puffer für unerwartete Kosten (5–10 %). Diese Kategorien schriftlich zu haben, selbst in einer geteilten Notiz, bedeutet, dass alle gegen dieselben Erwartungen kalibrieren.",
+        "Nutze die Gruppenabstimmungsfunktion von WePlanify, um vor der Festlegung über Unterkunftsoptionen und Aktivitäten abzustimmen. Wenn die ganze Gruppe gemeinsam entscheidet, was ins Budget gehört, gibt es keine einzelne Person, der man die Schuld geben kann, falls etwas teuer wird – und alle fühlen sich für den Plan verantwortlich. Demokratisch getroffene Entscheidungen werden leichter akzeptiert, auch die finanziellen."
+      ]
+    },
+    "splitByCategory": {
+      "id": "split-by-category",
+      "title": "Nach Kategorie teilen, nicht nach allem",
+      "paragraphs": [
+        "Einer der häufigsten Fehler, den Gruppen machen, ist der Versuch, absolut jede Ausgabe gleichmäßig zu teilen – oder umgekehrt, dass jeder die ganze Zeit für sich selbst zahlt. Beide Extreme erzeugen Reibung. Das erste führt zu Groll, wenn der Konsum ungleich ist. Das zweite lässt jede Mahlzeit wie eine Transaktion wirken und untergräbt den Sinn, gemeinsam zu reisen.",
+        "Der schlauere Ansatz ist, nach Kategorie zu teilen. Manche Kosten sind echt gemeinsam und sollten gleichmäßig geteilt werden. Andere sind persönlich und sollten individuell bezahlt werden. Diese Grenze klar zu ziehen, bevor die Reise beginnt, beseitigt 90 % der unangenehmen Gespräche.",
+        "Die folgenden Kategorien sind ein bewährtes Ausgangsraster. Pass sie an deine Gruppe an, aber der Schlüssel ist, sich vor der Abreise auf sie zu einigen."
+      ],
+      "categories": [
+        {
+          "title": "Gleichmäßig teilen (gemeinsame Kosten)",
+          "items": [
+            "Unterkunft – Airbnb, Hotel, Hostel-Schlafsäle. Alle profitieren gleichermaßen, unabhängig von der Größe ihres Zimmers.",
+            "Gruppentransport – Mietwagen, gemeinsam gebuchte Zugtickets, Flughafentransfers für die ganze Gruppe.",
+            "Gruppenaktivitäten – Touren, Museumseintritte, Tickets für Erlebnisse, an denen die ganze Gruppe teilnimmt.",
+            "Lebensmittel für gemeinsame Mahlzeiten – wenn die Gruppe zusammen kocht, teilt die Einkaufsrechnung."
+          ]
+        },
+        {
+          "title": "Individuell zahlen (persönliche Kosten)",
+          "items": [
+            "Persönliche Mahlzeiten, wenn die Gruppe in verschiedenen Restaurants isst oder Unterschiedliches bestellt.",
+            "Persönliche Getränke – besonders Alkohol, wo der Konsum enorm variiert.",
+            "Souvenirs, persönliches Shopping und alles, was nur einer Person nützt.",
+            "Persönlicher Transport – Taxis zu einer separaten Aktivität, Solo-Tagesausflüge."
+          ]
+        }
+      ]
+    },
+    "onePayerSystem": {
+      "id": "one-payer-system",
+      "title": "Das Ein-Zahler-System",
+      "paragraphs": [
+        "Die Rechnung im Moment der Zahlung zu teilen – alle kramen nach Karten, während der Kellner wartet – ist langsam, unangenehm und fehleranfällig. Ein viel saubererer Ansatz ist das Ein-Zahler-System: Eine Person zahlt eine gemeinsame Ausgabe, erfasst sie sofort in einem geteilten Tracker, und die Gruppe rechnet am Ende der Reise ab.",
+        "Das Schlüsselwort ist 'sofort'. Das System funktioniert nur, wenn die Person, die zahlt, es an Ort und Stelle erfasst, bevor jemand weitergezogen ist oder den Betrag vergessen hat. Das heißt, einen geteilten Budget-Tracker jederzeit offen und zugänglich zu haben – nicht eine mentale Notiz, es später in die Tabelle einzutragen. Der geteilte Budget-Tracker von WePlanify ist genau dafür gebaut: ein Tipp, um eine neue Ausgabe zu erfassen, auszuwählen, wer gezahlt hat und für wen, und alle sehen es sofort.",
+        "Damit es fair bleibt, wechselt im Verlauf der Reise, wer zahlt. Eine Person übernimmt das Abendessen, eine andere die nächste Aktivität, eine dritte die Museumstickets. Wenn die Beträge korrekt erfasst werden, gleichen sich die Ungleichgewichte bis zum Ende aus – und falls nicht, ist die Schlussabrechnung eine Handvoll Überweisungen statt einer forensischen Buchhaltungsübung.",
+        "Eine einfache Regel: Wenn du etwas Gemeinsames bezahlst und es nicht innerhalb von fünf Minuten erfasst, hast du es wahrscheinlich verloren. Bau die Gewohnheit früh auf, an Tag eins, damit sie automatisch wird."
+      ]
+    },
+    "trackRealTime": {
+      "id": "track-real-time",
+      "title": "In Echtzeit verfolgen, nicht am Ende",
+      "paragraphs": [
+        "Jede Gruppe, die bis zur letzten Nacht gewartet hat, um „das mit dem Geld zu klären“, hat es bereut. Erinnerungen sind unzuverlässig, Beträge werden gerundet, und eine Person hat immer das Gefühl, mehr beigetragen zu haben, als die Zahlen zeigen. Der letzte Abend einer Reise ist der denkbar schlechteste Zeitpunkt für eine finanzielle Abrechnung – alle sind müde, manche rechnen schon ihre Flüge aus, und die emotionale Verbundenheit der Reise ist am fragilsten.",
+        "Echtzeit-Tracking löst das vollständig. Wenn jede Ausgabe erfasst wird, während sie passiert, gibt es am Ende nichts abzurechnen. Die Zahlen sind schon da. Alle haben die laufende Summe während der ganzen Reise im Blick gehabt, also kommt nichts überraschend. Die Schlussabrechnung ist eine Formalität, keine Verhandlung.",
+        "Die praktische Voraussetzung ist ein Tracker, den alle vom Handy aus sehen und zu dem alle beitragen können. Eine geteilte Tabelle funktioniert technisch, erfordert aber ein Maß an Disziplin und mobiler Bedienbarkeit, das die meisten Gruppen nicht aufrechterhalten. Dedizierte Tools wie der Budget-Tracker von WePlanify sind dafür gemacht: eine Ausgabe in zehn Sekunden hinzufügen, in Echtzeit sehen, wer wem was schuldet, jederzeit eine Abrechnungsübersicht bekommen. Das beseitigt die Reibung, die Leute überhaupt erst aufhören lässt zu tracken.",
+        "Richtet eine tägliche oder zweitägige Check-in-Gewohnheit ein, bei der jemand die laufenden Summen ansieht und alle vergessenen Ausgaben markiert. Auf einer 7-tägigen Reise fängt ein zweiminütiger Blick jeden zweiten Tag alle Lücken ab und hält alle auf dem gleichen Stand. Es baut auch ein gemeinsames Gefühl dafür auf, wo die Reise finanziell steht – damit am Ende niemand einen Schock bekommt.",
+        "Speziell bei Roadtrips verfolgt Sprit und Maut von Anfang an als gemeinsame Ausgabe. Benzinkosten können sich auf 200–400 für einen einwöchigen Roadtrip summieren und sind leicht zu vergessen, wenn der Fahrer ständig zahlt und annimmt, später erstattet zu bekommen. Erfasse jeden Tankvorgang sofort. Schau dir unseren Roadtrip-Planungs-Guide für konkretere Tipps zum Umgang mit gemeinsamen Kosten unterwegs an."
+      ]
+    },
+    "unequalBudgets": {
+      "id": "unequal-budgets",
+      "title": "Mit ungleichen Budgets in der Gruppe umgehen",
+      "paragraphs": [
+        "Fast jede Freundesgruppe hat mindestens eine Person, die in einer anderen finanziellen Situation ist als die anderen. Vielleicht ist sie gerade zwischen zwei Jobs, spart für etwas Großes oder verdient einfach weniger. Das ist normal, und es muss nicht bedeuten, dass sie außen vor bleibt – aber es erfordert ein wenig bewusste Gestaltung darin, wie ihr die Reise strukturiert.",
+        "Die erste Regel ist, dem Gespräch vor der Reise Raum zu geben, nicht während ihr. Wenn du weißt, dass jemand in der Gruppe ein knapperes Budget hat, melde dich privat und frag, welche Spanne sich für ihn angenehm anfühlt. Das ist keine Wohltätigkeit – es ist gute Gruppendynamik. Eine Reise, bei der eine Person sich die ganze Zeit über Geld stresst, ist für alle schlechter.",
+        "Bei der Unterkunft schau nach Optionen, bei denen die Kosten nicht pro Person variieren. Ein Haus oder großes Airbnb zu mieten und gleichmäßig zu teilen ist oft günstiger pro Person als einzelne Hotelzimmer, und es bedeutet, dass niemand für seinen Schlafplatz mehr zahlt als andere. Wenn alle im selben Raum sind, gibt es kein sichtbares Stufensystem.",
+        "Bei Mahlzeiten und Aktivitäten gestalte einen Mix. Plant einige Gruppenmahlzeiten in Restaurants der mittleren Preisklasse, bei denen sich die Rechnung leicht teilt, und macht die individuelle Zahlung zum Standard für alles Gehobenere. Wenn die Gruppe eine teure Aktivität machen will – einen Kochkurs, eine Bootstour, ein Sterne-Dinner – macht es optional und habt eine ebenso gute Alternative für die, die passen. Diese Struktur bedeutet, dass sich niemand erklären oder im Rampenlicht fühlen muss.",
+        "Eine praktische Technik: Einigt euch zu Beginn der Reise auf eine tägliche Obergrenze für gemeinsame Ausgaben pro Person. Etwa 50/Tag deckt den Unterkunftsanteil, den gemeinsamen Transport und eine Gruppenmahlzeit ab. Alles darüber ist individuelle Wahl und individuelle Kosten. Diese Obergrenze schafft einen vorhersehbaren Sockel, zu dem sich alle bekennen können, und lässt gleichzeitig denen Raum, die mehr ausgeben wollen, dies frei zu tun."
+      ]
+    },
+    "settlingUp": {
+      "id": "settling-up",
+      "title": "Abrechnen: der saubere Weg",
+      "paragraphs": [
+        "Der ideale Zeitpunkt zum Abrechnen ist, bevor ihr zum Flughafen aufbrecht, oder am Tag nach der Rückkehr – solange die Reise noch frisch ist, die Zahlen noch sichtbar sind und die Verbundenheit noch intakt ist. Eine Woche oder länger zu warten erzeugt Reibung: Die Leute haben zu tun, Erinnerungen verblassen, und eine Schuld von 45 fühlt sich entweder zu klein an, um sie anzusprechen, oder zu groß, um sie zu ignorieren.",
+        "Das Ziel des Abrechnens ist, die Anzahl der Überweisungen zu minimieren. Wenn sechs Personen jeweils unterschiedliche Beträge an unterschiedliche Personen schulden, würde der naive Ansatz bis zu fünfzehn separate Transaktionen erfordern. Ein smarter Tracker berechnet die minimale Anzahl an Überweisungen, die nötig ist, um alle auf null zu bringen – meist zwei oder drei pro Person bei einer typischen Gruppenreise.",
+        "So liest du die Schlussabrechnung: Der Tracker zeigt für jede Person einen Nettosaldo – positiv bedeutet, ihr wird Geld geschuldet, negativ bedeutet, sie schuldet. Der Abrechnungsalgorithmus findet dann den effizientesten Weg von jedem negativen Saldo zu jedem positiven. Person A schuldet 85 und Person B bekommt 90, also zahlt A an B 85. Fertig. Person C bekommt 40, Person D schuldet 15, Person E schuldet 25: D zahlt C 15, E zahlt C 25. Drei Transaktionen statt eines verworrenen Netzes.",
+        "Die Abrechnung funktioniert am besten, wenn jeder den Erhalt seiner Überweisung am Tag, an dem sie passiert, bestätigt. Eine einfache Nachricht im Gruppenchat – '85 geschickt, erledigt' – schließt den Kreis öffentlich und verhindert, dass jemand sich fragt, ob er nachhaken muss. Innerhalb von 48 Stunden nach Ende der Reise sollte jeder Saldo null sein.",
+        "Eine letzte Anmerkung: Macht die Abrechnung, bevor die Erinnerungen daran, wer was bezahlt hat, zu verblassen beginnen. Finanzielle Klarheit am Ende einer Reise ist das, was dich tatsächlich wieder mit diesen Menschen reisen lässt."
+      ]
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "q": "Wie teilt man Reisekosten fair unter Freunden auf?",
+        "a": "Der fairste Ansatz ist, gemeinsame Kosten (Unterkunft, Gruppentransport, Gruppenaktivitäten) gleichmäßig zu teilen und jeden persönliche Ausgaben wie einzelne Mahlzeiten und Getränke individuell zahlen zu lassen. Einigt euch auf diese Kategorien, bevor die Reise beginnt, erfasst jede gemeinsame Ausgabe, während sie passiert, mit einem geteilten Tracker, und rechnet am Ende ab, basierend darauf, wer was bezahlt hat. Das vermeidet die beiden Extreme: alles gleichmäßig zu teilen (was sparsame Konsumenten benachteiligt) oder jeden für sich selbst zahlen zu lassen (was die Reise transaktional wirken lässt)."
+      },
+      {
+        "q": "Was ist die beste App, um Ausgaben auf Gruppenreisen zu verfolgen?",
+        "a": "Für ein dediziertes Gruppenreise-Erlebnis ist der integrierte Budget-Tracker von WePlanify speziell für Reisegruppen gemacht – er erfasst Ausgaben in Echtzeit, verfolgt, wer gezahlt und wer teilgenommen hat, und berechnet am Ende eine Abrechnung. Splitwise ist das beste reine Ausgabenteilungs-Tool und kommt gut mit mehreren Währungen zurecht. Der Schlüssel ist, etwas zu nutzen, das alle in der Gruppe tatsächlich auf dem Handy öffnen. Ein Tool, das drei von sechs Personen nutzen, ist schlechter als ein einfacheres, das alle sechs konsequent nutzen."
+      },
+      {
+        "q": "Sollten alle auf einer Gruppenreise den gleichen Betrag zahlen?",
+        "a": "Für gemeinsame Kosten wie Unterkunft und Gruppentransport ja – gleichmäßig zu teilen ist am fairsten, weil alle gleichermaßen profitieren. Für persönliche Ausgaben wie einzelne Mahlzeiten, Getränke und Aktivitäten nein – die Leute sollten ihren eigenen Weg zahlen. Die praktische Lösung ist, gemeinsame Ausgaben in einem Topf zu verfolgen und persönliche Ausgaben individuell zu lassen. Wenn es bedeutende Einkommensunterschiede in der Gruppe gibt, setzt eine tägliche Obergrenze für gemeinsame Ausgaben, die alle bequem erreichen können, und lasst Personen mit höheren Ausgaben ihre Extras selbst übernehmen."
+      },
+      {
+        "q": "Wie geht man mit jemandem um, der seinen Anteil nicht zahlt?",
+        "a": "Vorbeugen ist besser als heilen: Nutze einen geteilten Tracker, den alle sehen können, damit die Salden während der ganzen Reise transparent sind, nicht nur am Ende. Wenn jemand in Echtzeit sieht, dass er 200 schuldet, ist er eher geneigt, es anzugehen, bevor es eine größere Zahl wird. Wenn jemand nach der Reise wirklich nicht zahlen kann, sprich es privat und direkt an – nicht im Gruppenchat. Setz eine konkrete Frist ('kannst du das bis Sonntag schicken?') statt eines vagen 'wann immer du kannst'. Für künftige Reisen bitten manche Gruppen alle, vor der Abreise zu einem gemeinsamen Reisefonds beizutragen, sodass es am Ende keine Abrechnung gibt."
+      },
+      {
+        "q": "Welche Kosten sollte man gleichmäßig vs. individuell teilen?",
+        "a": "Gleichmäßig teilen: Unterkunft, Mietwagen, Gruppentransport (Züge, Flughafentransfers), gemeinsame Lebensmittel für Gruppenmahlzeiten und jede Aktivität, die die ganze Gruppe zusammen macht. Individuell zahlen: persönliche Restaurantmahlzeiten, alkoholische Getränke, Souvenirs, persönlicher Transport (ein Solo-Taxi, eine zusätzliche Aktivität) und alles, was nur einer Person nützt. Die allgemeine Regel ist: Wenn es seltsam wäre, dass eine Person nicht teilnimmt, teil es. Wenn es eine persönliche Wahl ist, zahl es selbst."
+      },
+      {
+        "q": "Wann sollte man auf einer Gruppenreise abrechnen?",
+        "a": "Idealerweise am letzten Tag der Reise oder innerhalb von 24–48 Stunden nach der Rückkehr, solange alles noch frisch ist und die Verbundenheit der Reise intakt ist. Nutze einen geteilten Tracker, der die minimale Anzahl an nötigen Überweisungen berechnet – das hält es schnell und schmerzlos. Bestätigt jede Zahlung im Gruppenchat, damit alle wissen, wann ihr Saldo ausgeglichen ist. Länger als eine Woche zu warten macht das Gespräch schwerer und die Zahlen unklarer. Setzt als Gruppe eine feste Frist, bevor ihr abreist."
+      }
+    ]
+  },
+  "pollsTip": {
+    "text": "Tipp: Nutze die Gruppenabstimmungen von WePlanify, um über Reiseziele und Aktivitäten abzustimmen und die Erwartungen abzugleichen, bevor ihr euch auf etwas festlegt.",
+    "link": "Gruppenabstimmungen testen"
+  },
+  "trackerBox": {
+    "text": "Mit dem geteilten Budget-Tracker von WePlanify kann jedes Gruppenmitglied in Sekunden Ausgaben hinzufügen, von jedem Gerät.",
+    "link": "Budget-Tracker ansehen"
+  },
+  "cta": {
+    "title": "Bereit, den Stress aus dem Geld auf Gruppenreisen zu nehmen?",
+    "text": "Mit dem geteilten Budget-Tracker von WePlanify kann deine Gruppe Ausgaben in Echtzeit erfassen, sehen, wer wem was schuldet, und am Ende sauber abrechnen – alles in derselben App, in der ihr eure Reiseroute baut, Abstimmungen durchführt und das Packen koordiniert.",
+    "button": "Gemeinsam tracken"
+  },
+  "discoverMore": {
+    "heading": "Mehr entdecken",
+    "budget": {
+      "title": "Geteilter Budget-Tracker",
+      "text": "Erfasse Ausgaben in Echtzeit, sieh, wer wem was schuldet, und rechne mit dem Gruppen-Budget-Tracker von WePlanify sauber ab.",
+      "link": "Tracker erkunden"
+    },
+    "friends": {
+      "title": "Reise mit Freunden",
+      "text": "Plane mühelos eine Gruppenreise mit Freunden – Reiseroute, Abstimmungen, Budget und Packen an einem Ort."
+    },
+    "guide": {
+      "title": "Guide: Gruppenreise planen",
+      "text": "Der komplette Guide für die Planung einer Gruppenreise, von der Reiseziel-Wahl bis zum Abreisetag."
+    },
+    "apps": {
+      "title": "Beste Apps für Gruppenreiseplanung",
+      "text": "Ein ehrlicher Vergleich der besten Apps, um 2026 eine Gruppenreise zu planen."
+    }
+  },
+  "readMore": "Weiterlesen"
+}

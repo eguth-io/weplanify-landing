@@ -1,0 +1,52 @@
+{
+  "copyright": "Alle Rechte vorbehalten.",
+  "privacyPolicy": "Datenschutzerklärung",
+  "termsOfService": "Nutzungsbedingungen",
+  "cookiePolicy": "Cookie-Richtlinie",
+  "columns": {
+    "features": {
+      "title": "Funktionen",
+      "planning": "Planung (manuell oder KI)",
+      "polls": "Gruppenabstimmungen",
+      "collaboration": "Zusammenarbeit",
+      "discovery": "Entdecken",
+      "itinerary": "Reiseroute",
+      "budget": "Geteiltes Budget",
+      "packing": "Packlisten",
+      "transport": "Transport",
+      "memories": "Erinnerungen"
+    },
+    "company": {
+      "title": "Unternehmen",
+      "about": "Über uns",
+      "partnership": "Partnerschaft"
+    },
+    "useCases": {
+      "title": "Anwendungsfälle",
+      "friends": "Reise mit Freunden",
+      "bachelorette": "Junggesellinnenabschied / JGA",
+      "birthday": "Geburtstagsreise",
+      "family": "Familienreise",
+      "roadTrip": "Roadtrip",
+      "teamBuilding": "Teambuilding",
+      "school": "Klassenfahrt"
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "guidePlanTrip": "Guide: Gruppenreise planen",
+      "destinations": "Reiseziele",
+      "travelGuides": "Reiseführer",
+      "appComparison": "App-Vergleich",
+      "events2026": "Events 2026 →"
+    }
+  },
+  "followUs": "Folge uns",
+  "newsletter": {
+    "title": "Wöchentliche Reiseinspiration erhalten",
+    "description": "Tipps, Geheimtipps und Reise-Hacks direkt in dein Postfach.",
+    "thanks": "Danke für dein Abo!",
+    "emailPlaceholder": "Deine E-Mail",
+    "subscribe": "Abonnieren"
+  },
+  "chooseLanguage": "Sprache wählen"
+}

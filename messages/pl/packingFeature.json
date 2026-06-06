@@ -1,0 +1,51 @@
+{
+  "copy": {
+    "itemsReady": "14 / 20 rzeczy",
+    "readyForTrip": "gotowe na wyjazd",
+    "categories": [
+      {
+        "icon": "👕",
+        "title": "Ubrania",
+        "progress": 80,
+        "items": [
+          { "name": "Koszulki (x5)", "checked": true },
+          { "name": "Spodnie (x3)", "checked": true },
+          { "name": "Lekka kurtka", "checked": true },
+          { "name": "Strój kąpielowy", "checked": false }
+        ]
+      },
+      {
+        "icon": "🔌",
+        "title": "Elektronika",
+        "progress": 60,
+        "items": [
+          { "name": "Ładowarka do telefonu", "checked": true },
+          { "name": "Adapter zasilania", "checked": true },
+          { "name": "Powerbank", "checked": false },
+          { "name": "Słuchawki", "checked": false }
+        ]
+      },
+      {
+        "icon": "🧴",
+        "title": "Kosmetyki",
+        "progress": 100,
+        "items": [
+          { "name": "Szczoteczka do zębów", "checked": true },
+          { "name": "Krem z filtrem", "checked": true },
+          { "name": "Szampon", "checked": true }
+        ]
+      }
+    ],
+    "tipTitle": "Sugestia na podstawie Twojej podróży",
+    "tipText": "Średnia temperatura w Lizbonie w kwietniu to 28°C. Pamiętaj, żeby spakować lekkie ubrania i krem z filtrem!",
+    "packTitle": "Spakuj się ze spokojną głową",
+    "sharedTitle": "Kto co zabiera? Ustalcie to raz na zawsze",
+    "sharedSubtitle": "Unikaj duplikatów, przydzielając, kto co zabiera.",
+    "bringing": "Zabiera:",
+    "people": [
+      { "avatar": "👩‍🎨", "name": "Marie", "items": ["Krem z filtrem", "Gra karciana", "Przewodnik"] },
+      { "avatar": "🧔", "name": "Thomas", "items": ["Adapter zasilania", "Głośnik Bluetooth"] },
+      { "avatar": "👱‍♀️", "name": "Emma", "items": ["Apteczka", "Lornetka"] }
+    ]
+  }
+}

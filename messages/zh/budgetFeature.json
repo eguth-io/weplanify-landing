@@ -1,0 +1,39 @@
+{
+  "copy": {
+    "paidBy": "付款人",
+    "toReceive": "应收",
+    "owes": "欠",
+    "total": "总计",
+    "pieLabels": {
+      "accommodation": "住宿",
+      "restaurants": "餐厅",
+      "activities": "活动",
+      "transport": "交通"
+    },
+    "liveSplitTitle": "试试看：添加一笔花费",
+    "liveSplitSubtitle": "里斯本之旅 —— 4 位好友",
+    "quickAdd": "快速添加",
+    "recentExpenses": "近期花费",
+    "whoOwesWhat": "谁欠谁多少",
+    "toSettleUp": "待结清",
+    "freeNoCard": "免费注册，无需信用卡。",
+    "tryItHint": "👆 点击一个按钮添加花费，看着余额实时更新。",
+    "participants": [
+      { "name": "Marie", "avatar": "👩‍🎨" },
+      { "name": "Thomas", "avatar": "🧔" },
+      { "name": "Emma", "avatar": "👱‍♀️" },
+      { "name": "Lucas", "avatar": "🧑‍💻" }
+    ],
+    "expenses": [
+      { "name": "餐厅晚餐", "amount": 156, "paidBy": "Marie" },
+      { "name": "租车", "amount": 320, "paidBy": "Thomas" },
+      { "name": "博物馆门票", "amount": 84, "paidBy": "Emma" }
+    ],
+    "presets": [
+      { "name": "晚餐", "amount": 80, "emoji": "🍝" },
+      { "name": "出租车", "amount": 24, "emoji": "🚕" },
+      { "name": "导览游", "amount": 60, "emoji": "🎨" },
+      { "name": "早午餐", "amount": 48, "emoji": "🥐" }
+    ]
+  }
+}

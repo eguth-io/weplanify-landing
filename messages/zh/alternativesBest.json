@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "title": "最佳团体旅行规划应用对比（2026）：Wanderlog、TripIt 等",
+    "description": "WePlanify 是 2026 年最好用的免费团体旅行规划工具：协作行程、团体投票和共享预算一应俱全。看看它与 Wanderlog、TripIt 等另外 8 款应用的对比。"
+  },
+  "heroTag": "完整指南",
+  "readTime": "阅读时间 12 分钟",
+  "h1": "2026 年十大最佳团体旅行规划应用对比",
+  "intro": "规划一场团体旅行向来出了名地难。在协调日程、分摊费用、投票选目的地，以及搭建一份人人满意的行程之间，你需要趁手的工具。我们测试并对比了 2026 年最受欢迎的几款团体旅行规划应用，帮你挑出最适合你这帮人的那一款。以下是我们按团体旅行整体实用性排出的前十名。",
+  "updated": "更新于 2026 年 5 月 5 日",
+  "quickVerdict": {
+    "heading": "快速结论",
+    "lead": "对大多数团队来说，2026 年最好用的团体旅行规划工具是 WePlanify —— 唯一一款把协作式逐日行程、团体投票、带自动结算的共享预算和打包清单集于一处的免费应用。如果你只需要其中一项功能，可以选择下面的某款专精工具。",
+    "picks": [
+      { "label": "团体综合最佳（免费）", "app": "WePlanify", "anchor": "weplanify" },
+      { "label": "独自出行 / 行程深度最佳", "app": "Wanderlog", "anchor": "wanderlog" },
+      { "label": "仅分摊费用最佳", "app": "Splitwise", "anchor": "splitwise" },
+      { "label": "机票与订单转发最佳", "app": "TripIt", "anchor": "tripit" }
+    ]
+  },
+  "rankingTitle": "我们如何为这些应用排名",
+  "rankingIntro": "我们从对团体旅行规划最重要的五个维度评估每款应用：",
+  "rankingCriteria": [
+    {
+      "title": "功能完整度",
+      "desc": "应用是否涵盖行程搭建、预算管理、投票、打包清单和活动发现 —— 还是只做其中一两项？"
+    },
+    {
+      "title": "团体专属工具",
+      "desc": "它是否提供投票、实时协作、共享费用追踪，以及其他为多人共同规划而设计的功能？"
+    },
+    {
+      "title": "价格",
+      "desc": "应用是免费还是免费增值？最实用的功能是否被付费墙锁住？"
+    },
+    {
+      "title": "易用性",
+      "desc": "一个非技术人员能否在五分钟内建好一次旅行并邀请好友？"
+    },
+    {
+      "title": "语言支持",
+      "desc": "应用是否提供多种语言，包括法语？"
+    }
+  ],
+  "apps": [
+    {
+      "name": "WePlanify",
+      "tagline": "一站式免费团体旅行规划工具",
+      "description": "WePlanify 是规划团体旅行最完整的免费工具。它将行程搭建、团体投票、共享预算追踪、打包清单和 AI 驱动的活动发现集成在同一个协作平台中。每项功能都免费，没有隐藏付费墙或试用限制。",
+      "bestFor": "想把一切集中在一处的好友团队",
+      "strengths": [
+        "一站式：行程、投票、预算、打包清单和活动发现",
+        "永久免费，无任何功能限制",
+        "完整双语（英语和法语）"
+      ],
+      "limitations": [
+        "手机应用即将推出（目前为响应式网页应用）"
+      ],
+      "price": "免费",
+      "isWePlanify": true
+    },
+    {
+      "name": "Wanderlog",
+      "tagline": "基于地图的行程搭建工具",
+      "description": "Wanderlog 是一款基于地图、带路线可视化的行程搭建工具。它缺少团体投票、共享预算追踪和法语支持 —— 而这些恰恰是和好友或家人一起规划旅行时最重要的功能。",
+      "bestFor": "独自旅行者和公路旅行路线规划",
+      "strengths": [
+        "集成地图，带路线可视化",
+        "iOS 和 Android 均有手机应用",
+        "沿途餐厅和景点推荐"
+      ],
+      "limitations": [
+        "无团体投票功能",
+        "无共享预算追踪 —— 仅提供英语"
+      ],
+      "price": "免费，Pro 版每月 8 美元"
+    },
+    {
+      "name": "SquadTrip",
+      "tagline": "收款与宾客管理",
+      "description": "SquadTrip 负责向行程参与者收款并管理回执。它不包含打包清单、活动发现或法语支持，所以团队仍需借助额外工具来完成整个规划流程。",
+      "bestFor": "需要向参与者收款的行程组织者",
+      "strengths": [
+        "向团体成员收款",
+        "带回执追踪的宾客管理",
+        "对行程选项进行投票"
+      ],
+      "limitations": [
+        "无打包清单或活动发现",
+        "仅英语"
+      ],
+      "price": "免费，组织者付费功能"
+    },
+    {
+      "name": "TripIt",
+      "tagline": "从邮件自动导入订单",
+      "description": "TripIt 通过转发的订单确认邮件来汇总行程。它是为独自旅行者设计的 —— 不提供团体协作、投票和共享预算，且大多数功能需要付费的 Pro 订阅（每年 49 美元）。",
+      "bestFor": "整理个人行程的商务旅客",
+      "strengths": [
+        "从转发邮件自动生成行程",
+        "可处理含中转的多段行程",
+        "航班状态提醒（仅 Pro 版）"
+      ],
+      "limitations": [
+        "无团体协作、投票或共享预算",
+        "最实用的功能需要 Pro 订阅（每年 49 美元）"
+      ],
+      "price": "基础版免费，Pro 版每年 49 美元"
+    },
+    {
+      "name": "Splitwise",
+      "tagline": "分摊费用应用",
+      "description": "Splitwise 在团体中追踪共享费用。它没有任何旅行规划功能 —— 没有行程、没有投票、没有打包清单 —— 所以大多数团队还需要另一款应用配合使用。",
+      "bestFor": "记录花费后谁欠谁多少",
+      "strengths": [
+        "支持复杂分摊方式的费用拆分",
+        "多币种支持",
+        "庞大的现有用户群"
+      ],
+      "limitations": [
+        "不是旅行规划工具 —— 没有行程、投票或打包功能",
+        "收据扫描和图表需要 Pro 版（每月 4.99 美元）"
+      ],
+      "price": "免费，Pro 版每月 4.99 美元"
+    },
+    {
+      "name": "Troupe",
+      "tagline": "对活动建议进行团体投票",
+      "description": "Troupe 让团体用排序投票的方式对活动建议进行表决。它只覆盖决策阶段 —— 没有预算追踪、没有打包清单、没有法语支持，把大部分行程事务都搁置了。",
+      "bestFor": "需要敲定活动的团体",
+      "strengths": [
+        "用于团体决策的排序投票系统",
+        "结合本地数据的活动建议",
+        "支持移动端"
+      ],
+      "limitations": [
+        "无预算追踪或打包清单",
+        "仅英语 —— 没有行程搭建工具"
+      ],
+      "price": "免费"
+    },
+    {
+      "name": "Stippl",
+      "tagline": "带社区行程的可视化旅行规划工具",
+      "description": "Stippl 是一款可视化旅行规划工具，带有社区共享行程和图文游记。它缺少团体投票、共享预算追踪和法语支持 —— 因此更适合独自旅行者，而非协调团体旅行。",
+      "bestFor": "想用图像记录旅程的独自旅行者",
+      "strengths": [
+        "集成地图，支持昼夜衔接的规划",
+        "旅行游记和自动短视频",
+        "可获取灵感的社区共享行程"
+      ],
+      "limitations": [
+        "无团体投票功能",
+        "无共享预算追踪 —— 不支持法语"
+      ],
+      "price": "免费"
+    },
+    {
+      "name": "AvoSquado",
+      "tagline": "为度假租屋分配卧室",
+      "description": "AvoSquado 负责为大型度假租屋分配卧室并提供可预订的活动。它覆盖的范围很窄 —— 没有行程搭建工具、没有投票、没有预算追踪、没有打包清单。",
+      "bestFor": "大型度假租屋的协调",
+      "strengths": [
+        "为合租房屋分配卧室的功能",
+        "可预订的活动与住宿整合",
+        "为大型团体住宿而设计"
+      ],
+      "limitations": [
+        "聚焦范围狭窄 —— 不是完整的旅行规划工具",
+        "无行程、投票、预算或打包功能"
+      ],
+      "price": "免费"
+    },
+    {
+      "name": "Cruzmi",
+      "tagline": "法语活动组织应用",
+      "description": "Cruzmi 是一款用于组织活动和团体聚会的法语手机应用。它提供基础的投票和预算追踪，但行程功能有限，因此更像一款活动协调工具，而非旅行规划工具。",
+      "bestFor": "组织休闲聚会的法语团体",
+      "strengths": [
+        "提供法语",
+        "基础投票和共享待办清单",
+        "界面简洁"
+      ],
+      "limitations": [
+        "行程搭建功能有限",
+        "与专业平台相比旅行规划功能较少"
+      ],
+      "price": "免费"
+    },
+    {
+      "name": "Let's Jetty",
+      "tagline": "简易行程制作工具",
+      "description": "Let's Jetty 提供一款界面极简的可视化行程搭建工具。它缺少预算追踪、投票和打包清单 —— 这意味着规划复杂行程的团队需要再搭配其他工具。",
+      "bestFor": "想要简洁行程视图的小团体",
+      "strengths": [
+        "简洁、极简的设计",
+        "行程的实时协作",
+        "快速上手，学习成本低"
+      ],
+      "limitations": [
+        "无预算追踪、投票或打包清单",
+        "对复杂团体旅行而言功能有限"
+      ],
+      "price": "免费"
+    }
+  ],
+  "summaryTitle": "对比总览",
+  "summaryFeatures": [
+    "行程",
+    "投票",
+    "预算",
+    "打包",
+    "免费",
+    "法语"
+  ],
+  "summaryData": [
+    { "name": "WePlanify", "values": [true, true, true, true, true, true] },
+    { "name": "Wanderlog", "values": [true, false, false, true, true, false] },
+    { "name": "SquadTrip", "values": [true, true, true, false, true, false] },
+    { "name": "TripIt", "values": [true, false, false, false, "freemium", false] },
+    { "name": "Splitwise", "values": [false, false, true, false, "freemium", true] },
+    { "name": "Troupe", "values": [true, true, false, false, true, false] },
+    { "name": "Stippl", "values": [true, false, false, true, true, false] },
+    { "name": "AvoSquado", "values": [false, false, false, false, true, false] },
+    { "name": "Cruzmi", "values": [false, true, true, false, true, true] },
+    { "name": "Let's Jetty", "values": [true, false, false, false, true, false] }
+  ],
+  "faqTitle": "常见问题",
+  "faqItems": [
+    {
+      "question": "规划团体旅行最好用哪款应用？",
+      "answer": "这取决于你的需求。WePlanify 是最完整的一站式选择，集行程规划、投票、预算追踪和打包清单于一身。Wanderlog 擅长基于地图的行程搭建。如果你需要集成支付，SquadTrip 很理想。整理已有订单则 TripIt 最合适。"
+    },
+    {
+      "question": "有免费的团体旅行规划应用吗？",
+      "answer": "有。WePlanify、Wanderlog、Troupe 和 Let's Jetty 都提供功能完整的免费方案。WePlanify 的突出之处在于把所有核心功能 —— 包括投票、预算追踪和打包清单 —— 全部免费提供，没有任何付费墙。"
+    },
+    {
+      "question": "团体旅行的费用怎么分摊？",
+      "answer": "Splitwise 和 WePlanify 这类应用能记录共享花费并自动算出谁欠谁多少。Splitwise 专注于费用分摊，而 WePlanify 在预算追踪之外还包含行程规划和团体协调。"
+    },
+    {
+      "question": "多人能同时编辑同一份旅行行程吗？",
+      "answer": "可以 —— WePlanify、Wanderlog 和 Stippl 都支持实时协作编辑。团队中每个人都能同时添加活动、调整日程并留言。"
+    },
+    {
+      "question": "哪款应用能让团体投票选旅行目的地？",
+      "answer": "WePlanify、SquadTrip 和 Cruzmi 都内置投票功能，团体成员可以对目的地、活动、餐厅和日期进行投票。WePlanify 提供无限量投票和实时结果。"
+    }
+  ],
+  "ctaTitle": "准备好规划下一次团体旅行了吗？",
+  "ctaText": "别再在多款应用和表格之间来回折腾。WePlanify 把行程规划、团体投票、预算追踪、打包清单和 AI 推荐统统集中到一个免费平台。",
+  "ctaButton": "免费开始规划",
+  "diy": "自己搞定",
+  "freemium": "免费增值",
+  "bestForLabel": "最适合：",
+  "strengthsLabel": "优势",
+  "limitationsLabel": "不足",
+  "priceLabel": "价格：",
+  "tryFree": "免费试用",
+  "breadcrumb": {
+    "home": "首页",
+    "top10": "十大应用"
+  },
+  "discover": {
+    "heading": "了解更多",
+    "comparisonTitle": "应用对比",
+    "comparisonDesc": "所有应用的详细并列对比表。",
+    "comparisonCta": "查看对比 →",
+    "guideTitle": "指南：规划团体旅行",
+    "guideDesc": "成功团体旅行的完整分步指南。",
+    "guideCta": "阅读指南 →",
+    "friendsTitle": "与好友的旅行",
+    "friendsDesc": "用 WePlanify 轻松规划和好友的团体旅行。",
+    "friendsCta": "阅读更多 →"
+  },
+  "jsonld": {
+    "breadcrumb": {
+      "home": "首页",
+      "alternatives": "替代方案",
+      "current": "最佳团体旅行规划应用"
+    }
+  }
+}

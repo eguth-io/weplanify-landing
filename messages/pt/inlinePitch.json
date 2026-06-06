@@ -1,0 +1,14 @@
+{
+  "copy": {
+    "placeholder": "Quero relaxar numa praia mexicana com ruínas por perto...",
+    "submit": "Planear",
+    "submitting": "A criar…",
+    "cta": "Guardar e convidar amigos",
+    "retry": "Outra sugestão",
+    "errorGeneric": "Algo correu mal. Por favor, tente novamente.",
+    "errorRateLimit": "Demasiadas tentativas. Por favor, aguarde um minuto.",
+    "overline": "Conte-nos a sua viagem de sonho",
+    "caption": "Geramos uma pré-visualização do destino em segundos — grátis, sem necessidade de registo.",
+    "whatAbout": "Que tal…"
+  }
+}

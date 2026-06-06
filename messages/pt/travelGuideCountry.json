@@ -1,0 +1,65 @@
+{
+  "breadcrumb": {
+    "home": "Início",
+    "travelGuides": "Guias de viagem"
+  },
+  "jsonld": {
+    "touristType": "Viajante de lazer"
+  },
+  "hero": {
+    "titleSuffix": "guia de viagem",
+    "perDay": " /dia",
+    "cta": "Planear a minha viagem",
+    "ctaNote": "Construa o seu itinerário com o seu grupo — grátis, 30 segundos."
+  },
+  "quickFacts": {
+    "heading": "Factos rápidos",
+    "capital": "Capital",
+    "language": "Idioma",
+    "currency": "Moeda",
+    "timezone": "Fuso horário",
+    "plug": "Tomada",
+    "driving": "Condução",
+    "driveLeft": "Esquerda",
+    "driveRight": "Direita",
+    "visa": "Visto"
+  },
+  "bestSeason": {
+    "heading": "Quando ir",
+    "subtitle": "Três janelas a conhecer: a melhor, a intermédia e a que deve evitar.",
+    "best": "Melhor janela",
+    "shoulder": "Intermédia",
+    "avoid": "Evitar"
+  },
+  "mustSee": {
+    "heading": "Lugares imperdíveis",
+    "subtitle": "Locais que justificam a viagem por si só. Toque para abrir no Maps."
+  },
+  "specialties": {
+    "heading": "Especialidades que vale a pena provar",
+    "subtitle": "Comida, bebidas e experiências que este país faz melhor do que qualquer outro lugar."
+  },
+  "regions": {
+    "heading": "Regiões a conhecer",
+    "subtitle": "Para enquadrar a sua viagem segundo o tempo de que dispõe e o que procura."
+  },
+  "itineraries": {
+    "heading": "Itinerários sugeridos",
+    "subtitle": "Três durações, consoante o tempo. Copie qualquer um deles para a WePlanify.",
+    "daysSuffix": "d"
+  },
+  "budget": {
+    "heading": "Orçamento diário",
+    "subtitle": "Por pessoa, sem incluir voos. Três níveis de conforto.",
+    "perDay": "/dia"
+  },
+  "tips": {
+    "heading": "O que fazer e não fazer em termos culturais",
+    "subtitle": "Pequenos gestos que importam — e os que deixam toda a gente desconfortável."
+  },
+  "cta": {
+    "heading": "Planeie a sua viagem a {country} com o seu grupo",
+    "body": "Traga este guia para a WePlanify, convide o grupo e construam a viagem em conjunto. Mapa partilhado, sondagens, orçamento partilhado — tudo grátis.",
+    "button": "Começar a planear — grátis"
+  }
+}
