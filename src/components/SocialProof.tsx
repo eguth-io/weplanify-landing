@@ -31,7 +31,7 @@ export default function SocialProof({
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5 }}
-      className={`flex flex-wrap items-center justify-center gap-6 lg:gap-8 font-karla text-sm ${className}`}
+      className={`flex flex-wrap items-center justify-center gap-6 lg:gap-8 font-karla text-base ${className}`}
     >
       {stats.map((stat, index) => (
         <div key={index} className="flex items-center gap-2">

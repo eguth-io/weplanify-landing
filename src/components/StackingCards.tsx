@@ -172,7 +172,7 @@ function Card({ card, index, locale }: { card: CardData; index: number; locale: 
                 <p className="text-[#001E13] text-4xl lg:text-5xl xl:text-6xl font-londrina-solid mb-2">
                   {stat.value}
                 </p>
-                <p className="text-[#001E13] text-base lg:text-lg font-nanum-pen">
+                <p className="text-[#001E13] text-lg lg:text-xl font-nanum-pen">
                   {stat.label}
                 </p>
               </div>
