@@ -8,6 +8,7 @@ import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { trackEvent } from "@/lib/tracking";
 import { travelGuideSlugIndex, type TravelGuideLocale } from "@/lib/travel-guides/slugs";
 import { buildRegisterHref } from "@/lib/attribution/first-touch";
+import { useImmersiveMode } from "@/lib/hooks/use-immersive-mode";
 
 interface StickyCTAProps {
   text: string;
@@ -53,6 +54,10 @@ export default function StickyCTA({ text, href }: StickyCTAProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname, href]);
   const [show, setShow] = useState(false);
+  // Hidden while the immersive "big features" slider fills the screen — the
+  // floating CTA would otherwise overlap that full-screen animation. Driven by
+  // the shared flag so it toggles the instant the user enters/leaves the slider.
+  const immersive = useImmersiveMode();
   const [cookieBannerHeight, setCookieBannerHeight] = useState(0);
 
   useEffect(() => {
@@ -86,7 +91,7 @@ export default function StickyCTA({ text, href }: StickyCTAProps) {
 
   return (
     <AnimatePresence>
-      {show && (
+      {show && !immersive && (
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

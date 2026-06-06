@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { trackEvent } from "@/lib/tracking";
 
@@ -211,10 +212,40 @@ export default function FAQSupport({ locale = "en" }: FAQSupportProps) {
               {content.supportTitle}
             </h2>
 
-            <div className="flex-grow">
+            <div className="flex-grow flex flex-col">
               <p className="text-[#001E13] text-sm lg:text-base font-karla font-semibold leading-relaxed whitespace-pre-line">
                 {content.supportDescription}
               </p>
+
+              <div className="grid grid-cols-2 grid-rows-2 gap-3 lg:gap-4 flex-grow min-h-[260px] lg:min-h-[340px] mt-6 lg:mt-8">
+                <div className="relative row-span-2 rounded-[16px] overflow-hidden">
+                  <Image
+                    src="/faq-img-1.webp"
+                    alt={content.supportTitle}
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+                <div className="relative rounded-[16px] overflow-hidden">
+                  <Image
+                    src="/faq-img-2.webp"
+                    alt={content.supportTitle}
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+                <div className="relative rounded-[16px] overflow-hidden">
+                  <Image
+                    src="/faq-img-3.webp"
+                    alt={content.supportTitle}
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+              </div>
             </div>
 
             <div className="mt-8 lg:mt-12">

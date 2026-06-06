@@ -231,7 +231,9 @@ export default function Footer({ footerData }: FooterProps) {
   };
 
   return (
-    <footer className="px-4 lg:px-8 py-12 lg:py-16 bg-white">
+    // Extra bottom padding on mobile so the fixed StickyCTA doesn't cover the
+    // language switcher (the last row of the footer).
+    <footer className="px-4 lg:px-8 pt-12 lg:pt-16 pb-32 lg:pb-16 bg-white">
       <div className="max-w-[1536px] mx-auto">
         {/* Footer Logo */}
         {footerData?.logo && (
