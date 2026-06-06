@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Frequently Asked Questions (FAQ)",
+    "description": "Find answers to your questions about WePlanify. How to plan a group trip, features, pricing and support."
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "subtitle": "Quickly find answers to your most frequently asked questions.",
+  "empty": "No FAQ available at the moment.",
+  "ctaTitle": "Still have questions?",
+  "ctaSubtitle": "Our team is here to help you plan your perfect trip.",
+  "ctaButton": "Contact us",
+  "defaultFaq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "What is WePlanify?",
+        "answer": "WePlanify is a free, browser-based group trip planner. It combines a collaborative itinerary, group polls, a shared budget tracker with automatic settle-up, shared packing lists, and an AI assistant — all in one bilingual (English/French) tool."
+      },
+      {
+        "question": "Is WePlanify free?",
+        "answer": "Yes. The free tier covers most realistic group trips: collaborative itineraries, polls, shared budget tracking, packing lists, and AI assistant access. Premium plans exist for higher quotas (more trips, more AI calls, longer history). No credit card required to sign up."
+      },
+      {
+        "question": "How does WePlanify work?",
+        "answer": "Create a trip in seconds, invite your friends by email or shareable link, and start planning together. Anyone can edit the itinerary, run a poll, add an expense, or check a packing item. The AI assistant can draft a first version from a simple description of your trip."
+      },
+      {
+        "question": "Do I need to download an app?",
+        "answer": "No. WePlanify runs in any modern browser on mobile, tablet, or desktop. No App Store or Play Store download is required."
+      },
+      {
+        "question": "How many people can join a trip?",
+        "answer": "WePlanify is designed for groups of 2 to 50+ participants. There is no hard limit for normal group sizes."
+      },
+      {
+        "question": "How do group polls work?",
+        "answer": "Anyone in the trip can create a poll in seconds: single or multi-select, with an optional anonymous voting mode (useful for budget-sensitive choices). Results are visible in real time with per-option breakdowns. Polls can be linked to itinerary items (\"pick the restaurant for Day 2\")."
+      },
+      {
+        "question": "How does the shared budget work?",
+        "answer": "Each participant logs an expense with a payer, amount, currency, and split rule (equal, custom shares, or exclude specific people). WePlanify computes live who owes whom, in any currency with automatic conversion. Pre-paid items (deposits, group bookings) are tracked separately from on-trip spend."
+      },
+      {
+        "question": "How does WePlanify compare to Wanderlog?",
+        "answer": "Wanderlog is a good itinerary tool but doesn't have built-in group polls or a settle-up-style shared budget tracker. WePlanify is group-first by design, fully bilingual English/French, and includes polls and shared budget natively. Both are free at the entry tier."
+      },
+      {
+        "question": "How does WePlanify compare to Splitwise?",
+        "answer": "Splitwise is a great expense splitter but isn't a trip planner. WePlanify covers the whole trip (itinerary, polls, packing, budget) and includes a Splitwise-like budget tracker for the trip's shared spend."
+      },
+      {
+        "question": "Can I plan a bachelorette, bachelor, hen, or stag party with WePlanify?",
+        "answer": "Yes — this is one of the most common use cases. Polls handle the \"who picks the activity\" decision, the shared budget tracks who paid for what (including pre-paid deposits), and the packing lists prevent duplicate gear. Anonymous voting is useful when budgets vary across the group."
+      },
+      {
+        "question": "Does WePlanify work for solo travellers?",
+        "answer": "WePlanify can be used solo, but the product is optimized for groups. Solo travellers will get more value from TripIt (reservation tracking) or Stippl (solo travel journal). WePlanify shines once a second person joins the trip."
+      },
+      {
+        "question": "What languages does WePlanify support?",
+        "answer": "English and French, fully translated end-to-end (URLs, content, emails, AI assistant responses). More languages are on the roadmap."
+      },
+      {
+        "question": "How does the AI assistant work?",
+        "answer": "Describe the trip in plain language (\"4 friends, long weekend in Lisbon, foodie focus, budget 500€ each\") and the assistant proposes destinations, day-by-day itineraries, activities, and budget estimates. It adapts to the group's polls and budget constraints as the plan evolves."
+      },
+      {
+        "question": "In which countries is WePlanify available?",
+        "answer": "WePlanify works worldwide and covers destinations in over 190 countries."
+      },
+      {
+        "question": "Is WePlanify GDPR-compliant?",
+        "answer": "Yes. WePlanify is built in Europe with GDPR compliance from day one. Users can export and delete their data from account settings."
+      },
+      {
+        "question": "How can I contact support?",
+        "answer": "You can reach us via our contact page or by email at contact@weplanify.com."
+      }
+    ]
+  }
+}

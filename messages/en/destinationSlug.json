@@ -1,0 +1,46 @@
+{
+  "home": "Home",
+  "destinations": "Destinations",
+  "daysUnit": "days",
+  "daysShort": "d",
+  "dayInitial": "D",
+  "perPerson": "/ pp",
+  "forkTrip": "Fork this trip",
+  "forkSubtext": "Start your own trip from this itinerary — free, 30 seconds.",
+  "itinerary": {
+    "heading": "Day-by-day itinerary",
+    "subheading": "{days} days, morning to night. Built for a group, easy to bend."
+  },
+  "slot": {
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening"
+  },
+  "pois": {
+    "heading": "Where to go",
+    "subheading": "Real, vetted spots. Click any to open in Maps."
+  },
+  "budget": {
+    "heading": "Budget per person",
+    "subheading": "Honest on-the-ground estimate — {days} days.",
+    "total": "Estimated total"
+  },
+  "packing": {
+    "heading": "Packing essentials"
+  },
+  "season": {
+    "heading": "When to go"
+  },
+  "related": {
+    "heading": "Other destinations to explore",
+    "seeItinerary": "See the itinerary →"
+  },
+  "cta": {
+    "heading": "Take {city} on with your crew",
+    "body": "Fork this itinerary into WePlanify, invite the group, and plan the trip together. Shared itinerary, polls, shared budget — all free.",
+    "button": "Fork this trip — free"
+  },
+  "jsonld": {
+    "day": "Day"
+  }
+}

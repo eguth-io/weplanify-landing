@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Alternative à Wanderlog : Voyage de Groupe Collaboratif (2026)",
+    "description": "Cherche une alternative à Wanderlog pour tes voyages de groupe ? WePlanify : itinéraire collaboratif en temps réel, sondages, budget partagé, packing list. Gratuit, FR/EN."
+  },
+  "breadcrumb": {
+    "home": "Accueil"
+  },
+  "hero": {
+    "subtitle": "Comparaison complète — 2026",
+    "title": "WePlanify vs Wanderlog",
+    "intro": "Wanderlog et WePlanify t'aident tous deux à planifier des voyages, mais ils répondent à des besoins différents. Wanderlog est un créateur d’itinéraires orienté vers les voyages en solo ou en couple. WePlanify est conçu de A à Z pour les groupes. Voici un comparatif objectif des deux applications pour t'aider à choisir celle qui convient à ton prochain voyage."
+  },
+  "verdict": {
+    "title": "En bref",
+    "body": "Wanderlog se concentre sur les voyages solo/couple avec sa planification basée sur les cartes. WePlanify est conçu spécifiquement pour les groupes avec des sondages, des budgets partagés et une prise de décision collaborative. Les deux sont gratuits."
+  },
+  "comparison": {
+    "title": "Comparatif Face à Face",
+    "featureHeader": "Fonctionnalité"
+  },
+  "features": {
+    "collab_itinerary": "Itinéraire collaboratif",
+    "polls": "Sondages / votes de groupe",
+    "budget": "Suivi de budget partagé",
+    "packing": "Listes de bagages",
+    "map": "Intégration cartographique",
+    "discovery": "Découverte d’activités",
+    "offline": "Accès hors ligne",
+    "mobile": "Application mobile",
+    "free": "Plan gratuit",
+    "french": "Disponible en français",
+    "realtime": "Collaboration en temps réel"
+  },
+  "cell": {
+    "basic": "Basique",
+    "webApp": "App web"
+  },
+  "midCta": "Essaie WePlanify gratuitement →",
+  "wanderlogShines": {
+    "title": "Là où Wanderlog Brille",
+    "points": [
+      "Intégration cartographique — trace ton itinéraire sur une carte interactive avec les directions entre chaque étape.",
+      "Accès hors ligne — télécharge ton itinéraire et tes cartes pour les utiliser sans connexion internet.",
+      "Applications mobiles — applications natives iOS et Android disponibles pour un accès en déplacement.",
+      "Recherche de restaurants et hôtels — cherchez, enregistrez et organisez les lieux où manger et dormir dans l’application."
+    ]
+  },
+  "weplanifyWins": {
+    "title": "Là où WePlanify Gagne",
+    "points": [
+      "Sondages et votes de groupe — laissez chacun voter sur les destinations, les dates et les activités pour que personne ne se sente exclu.",
+      "Suivi de budget partagé — suivez les dépenses du groupe, répartissez les coûts et gardez tout le monde aligné financièrement.",
+      "Listes de bagages — des listes collaboratives pour ne rien oublier et éviter les doublons.",
+      "Bilingue (EN/FR) — entièrement disponible en anglais et en français, une fonctionnalité rare parmi les applications de voyage."
+    ]
+  },
+  "chooseWanderlog": {
+    "title": "Qui devrait choisir Wanderlog ?",
+    "points": [
+      "Les voyageurs solo ou les couples qui veulent une expérience de planification visuelle centrée sur la carte.",
+      "Les planificateurs de road trips qui ont besoin de cartes hors ligne et d’itinéraires routiers.",
+      "Les voyageurs qui préfèrent les applications mobiles natives aux outils web.",
+      "Ceux qui veulent découvrir restaurants et hôtels directement dans l’outil de planification."
+    ]
+  },
+  "chooseWeplanify": {
+    "title": "Qui devrait choisir WePlanify ?",
+    "points": [
+      "Les groupes d’amis de 4 personnes ou plus qui doivent coordonner emplois du temps, préférences et budgets.",
+      "Les organisateurs d’EVJF ou d’EVG qui jonglent avec les avis d’un grand groupe.",
+      "Tous ceux qui veulent des outils de décision de groupe intégrés comme les sondages et les listes de tâches partagées.",
+      "Les voyageurs francophones qui ont besoin d’une expérience entièrement en français."
+    ]
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "items": [
+      {
+        "q": "Peut-on passer de Wanderlog à WePlanify ?",
+        "a": "Oui ! Tu peux créer un nouveau voyage sur WePlanify en quelques minutes. Bien qu’il n’y ait pas d’import automatisé, l’interface simple de WePlanify permet de recréer rapidement ton itinéraire — et tu auras immédiatement accès aux fonctionnalités de groupe comme les sondages et les budgets partagés que Wanderlog ne propose pas."
+      },
+      {
+        "q": "Pourquoi passer de Wanderlog à WePlanify ?",
+        "a": "Si tu planifies un voyage en groupe, Wanderlog ne propose ni sondages, ni budgets partagés, ni listes de bagages collaboratives. WePlanify offre tous ces outils nativement, rendant la coordination de groupe fluide au lieu d’être dispersée sur plusieurs applications."
+      },
+      {
+        "q": "Que manque-t-il à Wanderlog pour les voyages de groupe ?",
+        "a": "Wanderlog ne propose pas de votes de groupe, de suivi de dépenses partagées ni de listes de bagages collaboratives. Ses fonctionnalités de collaboration se limitent au partage d’un itinéraire, mais les outils de prise de décision pour les groupes sont absents. WePlanify comble entièrement cette lacune."
+      },
+      {
+        "q": "Quelle application est meilleure pour les grands groupes ?",
+        "a": "WePlanify est le grand gagnant pour les grands groupes. Les sondages de groupe, les budgets partagés et les listes de bagages collaboratives sont spécifiquement conçus pour gérer la complexité de la coordination de plusieurs voyageurs. Les fonctionnalités de collaboration de Wanderlog fonctionnent pour les petits groupes, mais manquent d’outils de prise de décision dont les grands groupes ont besoin."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Essaie WePlanify gratuitement — conçu pour les groupes",
+    "button": "Commencer gratuitement"
+  },
+  "crossLinks": {
+    "title": "Découvrir aussi",
+    "all": {
+      "title": "Toutes les Alternatives",
+      "text": "Compare WePlanify avec toutes les applications de voyage de groupe populaires.",
+      "cta": "Voir le comparatif →"
+    },
+    "friends": {
+      "title": "Voyage entre Amis",
+      "text": "Organisez un voyage de groupe entre amis facilement avec WePlanify.",
+      "cta": "En savoir plus →"
+    },
+    "guide": {
+      "title": "Guide : Organiser un Voyage de Groupe",
+      "text": "Le guide complet étape par étape pour organiser un voyage de groupe réussi.",
+      "cta": "Lire le guide →"
+    }
+  },
+  "jsonld": {
+    "breadcrumbAlternatives": "Comparatif",
+    "articleHeadline": "WePlanify vs Wanderlog — Quel Planificateur de Voyage de Groupe Choisir ? (2026)"
+  }
+}

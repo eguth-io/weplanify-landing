@@ -3,15 +3,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { LiveVoting } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, {
+type Copy = {
   active: string;
   votes: string;
   endsIn: string;
@@ -24,51 +22,6 @@ const COPY: Record<Lang, {
   completedLabel: string;
   freeNoCard: string;
   showcasePolls: { question: string; options: string[]; winner: string; votes: number }[];
-}> = {
-  fr: {
-    active: "Actif",
-    votes: "votes",
-    endsIn: "Se termine",
-    endTime: "dans 2h",
-    livePollQuestion: "On mange où ce soir ? 🍽️",
-    livePollOptions: [
-      { option: "🍕 Pizza", votes: 4, voters: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
-      { option: "🍣 Sushi", votes: 3, voters: ['😊', '👨‍🦱', '🧑‍🦰'] },
-      { option: "🍔 Burger", votes: 2, voters: ['👩‍🦳', '🧑‍🎤'] },
-    ],
-    livePollTotal: 9,
-    multiPollsTitle: "De la destination au restaurant : tout se décide ensemble",
-    multiPollsSubtitle: "Destinations, activités, restaurants, dates… tout se décide ensemble.",
-    completedLabel: "terminé",
-    freeNoCard: "Inscription gratuite. Sans carte bancaire.",
-    showcasePolls: [
-      { question: "Quelle destination ?", options: ["🇪🇸 Espagne", "🇵🇹 Portugal", "🇮🇹 Italie"], winner: "🇵🇹 Portugal", votes: 12 },
-      { question: "Activité du jour 3 ?", options: ["🏄 Surf", "🚶 Randonnée", "🍷 Dégustation"], winner: "🏄 Surf", votes: 8 },
-      { question: "Hôtel ou Airbnb ?", options: ["🏨 Hôtel", "🏠 Airbnb"], winner: "🏠 Airbnb", votes: 10 },
-    ],
-  },
-  en: {
-    active: "Active",
-    votes: "votes",
-    endsIn: "Ends",
-    endTime: "in 2h",
-    livePollQuestion: "Where are we eating tonight? 🍽️",
-    livePollOptions: [
-      { option: "🍕 Pizza", votes: 4, voters: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
-      { option: "🍣 Sushi", votes: 3, voters: ['😊', '👨‍🦱', '🧑‍🦰'] },
-      { option: "🍔 Burger", votes: 2, voters: ['👩‍🦳', '🧑‍🎤'] },
-    ],
-    livePollTotal: 9,
-    multiPollsTitle: "From destination to restaurant: decide everything together",
-    multiPollsSubtitle: "Destinations, activities, restaurants, dates… everything can be decided together.",
-    completedLabel: "completed",
-    freeNoCard: "Free signup. No credit card required.",
-    showcasePolls: [
-      { question: "Which destination?", options: ["🇪🇸 Spain", "🇵🇹 Portugal", "🇮🇹 Italy"], winner: "🇵🇹 Portugal", votes: 12 },
-      { question: "Day 3 activity?", options: ["🏄 Surfing", "🚶 Hiking", "🍷 Wine tasting"], winner: "🏄 Surfing", votes: 8 },
-      { question: "Hotel or Airbnb?", options: ["🏨 Hotel", "🏠 Airbnb"], winner: "🏠 Airbnb", votes: 10 },
-    ],
-  },
 };
 
 interface FeaturePageData {
@@ -231,8 +184,7 @@ function LivePoll({
 
 export default function PollsFeature({ data }: { data: FeaturePageData }) {
   const locale = useLocale();
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const t = COPY[lang];
+  const t = useTranslations("pollsFeature").raw("copy") as Copy;
 
   return (
     <>

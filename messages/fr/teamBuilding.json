@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Organiser un Séminaire d'Entreprise — Team Building | WePlanify",
+    "description": "Organisez votre prochain séminaire ou team building sans tableur ni chaos. Itinéraire, votes, budget — un seul outil."
+  },
+  "breadcrumb": {
+    "home": "Accueil"
+  },
+  "hero": {
+    "tag": "Séminaires & Voyages d'Équipe",
+    "title": "Organisez un Séminaire où les Gens Veulent Vraiment Aller",
+    "intro": "Les séminaires échouent quand une seule personne planifie tout, personne n'a son mot à dire et les activités semblent forcées. Voici comment en organiser un que votre équipe appréciera vraiment — et qui donnera de vrais résultats.",
+    "readTime": "9 min de lecture"
+  },
+  "toc": {
+    "title": "Sur cette page",
+    "whyFail": "Pourquoi la plupart des séminaires ratent leur objectif",
+    "types": "Types de séminaires",
+    "pitch": "Comment le vendre à la direction",
+    "weplanifyHelps": "Comment WePlanify vous aide",
+    "timeline": "Timeline de planification",
+    "roi": "Mesurer le ROI",
+    "faq": "Questions fréquentes"
+  },
+  "whyFail": {
+    "title": "Pourquoi la Plupart des Séminaires Ratent leur Objectif",
+    "p1": "La plupart des séminaires sont organisés de haut en bas : quelqu'un aux RH ou au management choisit un lieu, réserve des activités, envoie une invitation agenda et espère que tout ira bien. Le résultat ? La moitié de l'équipe redoute le fun forcé, l'autre est perdue sur le planning, et l'organisateur est épuisé avant le premier dîner d'équipe.",
+    "p3": "WePlanify implique toute l'équipe dans la planification. Pas seulement l'organisateur."
+  },
+  "types": {
+    "title": "Types de Séminaires",
+    "subtitle": "Différents objectifs appellent différents formats. Choisissez celui qui correspond aux besoins de votre équipe.",
+    "items": [
+      { "title": "Le Séminaire Classique", "desc": "2-3 jours dans un lieu à la campagne. Mix d'ateliers, activités outdoor et temps libre. Fonctionne pour les rencontres annuelles et la planification stratégique.", "color": "bg-[#EEF899]" },
+      { "title": "L'Offsite Urbain", "desc": "Une ville dynamique pour 2-4 jours. Coworking le matin, exploration et dîners d'équipe le soir. Idéal pour les équipes remote qui se rencontrent pour la première fois.", "color": "bg-[#61DBD5]" },
+      { "title": "Le Trip Aventure", "desc": "Randonnée, rafting, escalade, ski — du physique qui pousse les gens hors de leur zone de confort ensemble. Parfait pour les petites équipes soudées.", "color": "bg-[#F6391A]" },
+      { "title": "La Retraite de Travail", "desc": "Moitié travail, moitié détente. Une semaine où les matins sont des sprints productifs et les après-midi sont libres. Idéal pour les startups et équipes distribuées.", "color": "bg-white" }
+    ]
+  },
+  "pitch": {
+    "title": "Comment Convaincre Votre Direction",
+    "p1": "Le secret pour faire approuver un séminaire, c'est de le présenter comme un investissement, pas une dépense. Les équipes remote et hybrides souffrent particulièrement de relations inter-équipes faibles — le genre de liens qui ne se forment qu'en personne. Un séminaire bien planifié se rembourse en meilleure collaboration, turnover réduit et meilleur onboarding."
+  },
+  "pullQuote": "Les meilleurs séminaires ne ressemblent pas à du fun obligatoire — ils ressemblent à un voyage que vous feriez même si le boulot ne payait pas.",
+  "weplanifyHelps": {
+    "title": "Comment WePlanify Aide les Équipes",
+    "items": [
+      { "title": "Laissez l'équipe voter", "desc": "Utilisez les sondages pour décider des destinations, dates et activités. Quand les gens choisissent ce qu'ils font, ils s'en réjouissent vraiment. Le vote anonyme supprime la hiérarchie.", "link": "/features/polls" },
+      { "title": "Un seul planning visible par tous", "desc": "Construisez le programme de manière collaborative. Marquez ce qui est obligatoire vs. optionnel. Les modifications se synchronisent en temps réel.", "link": "/features/planning" },
+      { "title": "Budget transparent", "desc": "Suivez chaque dépense en temps réel. Catégorisez pour faciliter le reporting aux finances. Séparez les frais entreprise des frais personnels.", "link": "/features/budget" },
+      { "title": "Coordonnez la logistique à grande échelle", "desc": "Listes de bagages, détails transport, attribution des chambres — tout au même endroit. Quand 20 personnes doivent être au même restaurant à 20h, l'itinéraire partagé est votre source de vérité.", "link": "/features/collaboration" }
+    ]
+  },
+  "timeline": {
+    "title": "Planning : de l'Idée au Séminaire",
+    "p3": "Deux semaines avant, passez en mode communication. Partagez l'itinéraire finalisé avec toute l'équipe, envoyez des suggestions de bagages et confirmez les effectifs pour chaque activité. Épinglez les infos clés — transferts aéroport, heures de check-in, contacts d'urgence — en haut du voyage. Une équipe bien informée est une équipe détendue.",
+    "p4": "Une semaine avant et pendant le séminaire, votre rôle est de rester flexible. Les imprévus arrivent — un restaurant annule, la météo change, un vol est retardé. Avec un itinéraire partagé qui se met à jour en temps réel, vous pouvez vous adapter à la volée et tout le monde reste informé. Fini les messages de groupe paniqués « on est censés être où là ? »"
+  },
+  "roi": {
+    "title": "Mesurer le Retour sur Investissement de Votre Séminaire"
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "items": [
+      { "q": "WePlanify gère-t-il les grandes équipes (20+ personnes) ?", "a": "Oui. Il n'y a pas de limite de taille de groupe. Chaque membre rejoint avec un lien partagé et peut voir l'itinéraire, voter et suivre les dépenses. Pour les très grands groupes, vous pouvez utiliser des sous-groupes pour différentes activités." },
+      { "q": "Comment gérer les dépenses quand l'entreprise paie ?", "a": "Utilisez le suivi de budget pour enregistrer toutes les dépenses en temps réel. Catégorisez-les (hébergement, repas, activités, transport) pour faciliter le reporting aux finances. En fin de séminaire, exportez un résumé propre pour les finances. Vous pouvez séparer les frais entreprise des frais personnels." },
+      { "q": "Les collègues en remote peuvent-ils participer à la planification ?", "a": "Absolument. WePlanify fonctionne dans le navigateur — rien à télécharger. Partagez le lien et les collègues distants peuvent contribuer, voter et voir l'itinéraire complet depuis n'importe où. C'est conçu pour la collaboration distribuée." },
+      { "q": "Combien de temps avant faut-il planifier un séminaire ?", "a": "Deux à trois mois minimum pour les séminaires nationaux, quatre à six mois pour l'international. Les hébergements grande capacité se réservent vite et les gens ont besoin de temps pour bloquer leurs agendas. Créez un voyage WePlanify tôt pour recueillir les avis." },
+      { "q": "Quels types de séminaires fonctionnent le mieux ?", "a": "Ça dépend de vos objectifs. Les équipes de résolution de problèmes profitent des activités aventure (escape rooms, défis outdoor). Les équipes créatives s'épanouissent avec l'exploration libre (city trips, expériences culturelles). Les nouvelles équipes ont besoin de formats brise-glace. Utilisez les sondages pour savoir ce que votre équipe veut vraiment." },
+      { "q": "Comment convaincre la direction d'organiser un séminaire ?", "a": "Concentrez-vous sur les résultats : meilleure communication, relations inter-équipes plus fortes, réduction de l'isolement remote. Présentez-le comme un investissement en rétention et productivité, pas une dépense. Fournissez un budget détaillé via le suivi WePlanify — la transparence facilite grandement l'approbation." }
+    ]
+  },
+  "discover": {
+    "title": "Découvrir aussi",
+    "tripWithFriends": { "title": "Voyage entre Amis", "desc": "Organisez n'importe quel voyage de groupe.", "cta": "En savoir plus →" },
+    "roadTrip": { "title": "Road Trip", "desc": "Organisez un road trip de groupe avec itinéraire et budget partagés.", "cta": "En savoir plus →" },
+    "groupGuide": { "title": "Guide Voyage de Groupe", "desc": "Guide étape par étape pour organiser un voyage de groupe.", "cta": "Lire le guide →" },
+    "bestApps": { "title": "Meilleures Applis Voyage de Groupe", "desc": "Comparez les meilleurs outils pour voyager en groupe.", "cta": "Lire l'article →" }
+  },
+  "cta": {
+    "title": "Organisez un Séminaire Dont Votre Équipe Se Souviendra",
+    "subtitle": "Donnez à votre équipe une voix dans la planification — et regardez l'énergie changer.",
+    "button": "Commencer"
+  },
+  "jsonld": {
+    "articleHeadline": "Organisez un Séminaire d'Entreprise où les Gens Veulent Vraiment Aller",
+    "howToName": "Comment organiser un séminaire d'entreprise",
+    "howToDescription": "Guide étape par étape pour organiser un séminaire d'entreprise que toute votre équipe appréciera.",
+    "howToSteps": [
+      { "name": "Définir les objectifs et la destination", "text": "Fixez les objectifs du séminaire, établissez un budget indicatif et présélectionnez 2–3 idées de destinations. Lancez un sondage pour impliquer l'équipe." },
+      { "name": "Réserver l'hébergement et les activités", "text": "Confirmez le lieu, réservez les activités de groupe et finalisez la logistique transport. Construisez un itinéraire partagé visible par tous." },
+      { "name": "Partager le programme final", "text": "Diffusez l'itinéraire finalisé, recueillez les régimes alimentaires et confirmez les effectifs." },
+      { "name": "Rester flexible le jour J", "text": "Maintenez l'itinéraire partagé à jour en temps réel pour que tout le monde reste informé en cas de changement." }
+    ]
+  }
+}

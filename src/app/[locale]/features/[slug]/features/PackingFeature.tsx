@@ -3,15 +3,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { PackingSuitcase } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, {
+type Copy = {
   itemsReady: string;
   readyForTrip: string;
   categories: { icon: string; title: string; progress: number; items: { name: string; checked: boolean }[] }[];
@@ -22,105 +20,6 @@ const COPY: Record<Lang, {
   sharedSubtitle: string;
   bringing: string;
   people: { avatar: string; name: string; items: string[] }[];
-}> = {
-  fr: {
-    itemsReady: "14 / 20 articles",
-    readyForTrip: "prêts pour le voyage",
-    categories: [
-      {
-        icon: "👕",
-        title: "Vêtements",
-        progress: 80,
-        items: [
-          { name: "T-shirts (x5)", checked: true },
-          { name: "Pantalons (x3)", checked: true },
-          { name: "Veste légère", checked: true },
-          { name: "Maillot de bain", checked: false },
-        ],
-      },
-      {
-        icon: "🔌",
-        title: "Électronique",
-        progress: 60,
-        items: [
-          { name: "Chargeur téléphone", checked: true },
-          { name: "Adaptateur de prise", checked: true },
-          { name: "Batterie externe", checked: false },
-          { name: "Écouteurs", checked: false },
-        ],
-      },
-      {
-        icon: "🧴",
-        title: "Trousse de toilette",
-        progress: 100,
-        items: [
-          { name: "Brosse à dents", checked: true },
-          { name: "Crème solaire", checked: true },
-          { name: "Shampoing", checked: true },
-        ],
-      },
-    ],
-    tipTitle: "Suggestion basée sur votre voyage",
-    tipText: "Il fait en moyenne 28 °C à Lisbonne en avril. Pensez à prendre des vêtements légers et de la crème solaire !",
-    packTitle: "Préparez vos bagages l'esprit tranquille",
-    sharedTitle: "Qui apporte quoi ? Réglé une bonne fois pour toutes",
-    sharedSubtitle: "Évitez les doublons en répartissant qui apporte quoi.",
-    bringing: "Apporte :",
-    people: [
-      { avatar: "👩‍🎨", name: "Marie", items: ["Crème solaire", "Jeu de cartes", "Guide de voyage"] },
-      { avatar: "🧔", name: "Thomas", items: ["Adaptateur de prise", "Enceinte Bluetooth"] },
-      { avatar: "👱‍♀️", name: "Emma", items: ["Trousse de secours", "Jumelles"] },
-    ],
-  },
-  en: {
-    itemsReady: "14 / 20 items",
-    readyForTrip: "ready for the trip",
-    categories: [
-      {
-        icon: "👕",
-        title: "Clothing",
-        progress: 80,
-        items: [
-          { name: "T-shirts (x5)", checked: true },
-          { name: "Pants (x3)", checked: true },
-          { name: "Light jacket", checked: true },
-          { name: "Swimsuit", checked: false },
-        ],
-      },
-      {
-        icon: "🔌",
-        title: "Electronics",
-        progress: 60,
-        items: [
-          { name: "Phone charger", checked: true },
-          { name: "Power adapter", checked: true },
-          { name: "Power bank", checked: false },
-          { name: "Earbuds", checked: false },
-        ],
-      },
-      {
-        icon: "🧴",
-        title: "Toiletries",
-        progress: 100,
-        items: [
-          { name: "Toothbrush", checked: true },
-          { name: "Sunscreen", checked: true },
-          { name: "Shampoo", checked: true },
-        ],
-      },
-    ],
-    tipTitle: "Suggestion based on your trip",
-    tipText: "The average temperature in Lisbon in April is 28°C. Remember to pack light clothing and sunscreen!",
-    packTitle: "Pack your bags with peace of mind",
-    sharedTitle: "Who brings what? Settle it once and for all",
-    sharedSubtitle: "Avoid duplicates by assigning who brings what.",
-    bringing: "Bringing:",
-    people: [
-      { avatar: "👩‍🎨", name: "Marie", items: ["Sunscreen", "Card game", "Travel guide"] },
-      { avatar: "🧔", name: "Thomas", items: ["Power adapter", "Bluetooth speaker"] },
-      { avatar: "👱‍♀️", name: "Emma", items: ["First aid kit", "Binoculars"] },
-    ],
-  },
 };
 
 interface FeaturePageData {
@@ -247,8 +146,7 @@ function CategorySection({
 
 export default function PackingFeature({ data }: { data: FeaturePageData }) {
   const locale = useLocale();
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const t = COPY[lang];
+  const t = useTranslations("packingFeature").raw("copy") as Copy;
 
   return (
     <>

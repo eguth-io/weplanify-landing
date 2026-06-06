@@ -1,0 +1,65 @@
+{
+  "breadcrumb": {
+    "home": "Home",
+    "travelGuides": "Travel guides"
+  },
+  "jsonld": {
+    "touristType": "Leisure traveler"
+  },
+  "hero": {
+    "titleSuffix": "travel guide",
+    "perDay": " /day",
+    "cta": "Plan my trip",
+    "ctaNote": "Build your itinerary with your group — free, 30 seconds."
+  },
+  "quickFacts": {
+    "heading": "Quick facts",
+    "capital": "Capital",
+    "language": "Language",
+    "currency": "Currency",
+    "timezone": "Timezone",
+    "plug": "Plug",
+    "driving": "Driving",
+    "driveLeft": "Left",
+    "driveRight": "Right",
+    "visa": "Visa"
+  },
+  "bestSeason": {
+    "heading": "When to go",
+    "subtitle": "Three windows to know: best, shoulder, and the one to avoid.",
+    "best": "Best window",
+    "shoulder": "Shoulder",
+    "avoid": "Avoid"
+  },
+  "mustSee": {
+    "heading": "Must-see places",
+    "subtitle": "Spots that justify the trip on their own. Tap to open in Maps."
+  },
+  "specialties": {
+    "heading": "Specialties worth trying",
+    "subtitle": "Food, drinks, and experiences this country does better than anywhere else."
+  },
+  "regions": {
+    "heading": "Regions to know",
+    "subtitle": "To frame your trip by what you have time for and what you're after."
+  },
+  "itineraries": {
+    "heading": "Suggested itineraries",
+    "subtitle": "Three lengths, depending on time. Fork any of them into WePlanify.",
+    "daysSuffix": "d"
+  },
+  "budget": {
+    "heading": "Daily budget",
+    "subtitle": "Per person, excluding flights. Three comfort tiers.",
+    "perDay": "/day"
+  },
+  "tips": {
+    "heading": "Cultural do's & don'ts",
+    "subtitle": "Small moves that matter — and the ones that make everyone uncomfortable."
+  },
+  "cta": {
+    "heading": "Plan your {country} trip with your crew",
+    "body": "Bring this guide into WePlanify, invite the group, and build the trip together. Shared map, polls, shared budget — all free.",
+    "button": "Start planning — free"
+  }
+}

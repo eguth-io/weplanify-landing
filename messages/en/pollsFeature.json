@@ -1,0 +1,24 @@
+{
+  "copy": {
+    "active": "Active",
+    "votes": "votes",
+    "endsIn": "Ends",
+    "endTime": "in 2h",
+    "livePollQuestion": "Where are we eating tonight? 🍽️",
+    "livePollOptions": [
+      { "option": "🍕 Pizza", "votes": 4, "voters": ["👩‍🎨", "🧔", "👱‍♀️", "🧑‍💻"] },
+      { "option": "🍣 Sushi", "votes": 3, "voters": ["😊", "👨‍🦱", "🧑‍🦰"] },
+      { "option": "🍔 Burger", "votes": 2, "voters": ["👩‍🦳", "🧑‍🎤"] }
+    ],
+    "livePollTotal": 9,
+    "multiPollsTitle": "From destination to restaurant: decide everything together",
+    "multiPollsSubtitle": "Destinations, activities, restaurants, dates… everything can be decided together.",
+    "completedLabel": "completed",
+    "freeNoCard": "Free signup. No credit card required.",
+    "showcasePolls": [
+      { "question": "Which destination?", "options": ["🇪🇸 Spain", "🇵🇹 Portugal", "🇮🇹 Italy"], "winner": "🇵🇹 Portugal", "votes": 12 },
+      { "question": "Day 3 activity?", "options": ["🏄 Surfing", "🚶 Hiking", "🍷 Wine tasting"], "winner": "🏄 Surfing", "votes": 8 },
+      { "question": "Hotel or Airbnb?", "options": ["🏨 Hotel", "🏠 Airbnb"], "winner": "🏠 Airbnb", "votes": 10 }
+    ]
+  }
+}

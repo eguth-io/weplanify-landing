@@ -1,17 +1,4 @@
-import { getRequestConfig } from 'next-intl/server';
-import { routing } from './routing';
-
-export default getRequestConfig(async ({ requestLocale }) => {
-  // This typically corresponds to the `[locale]` segment
-  let locale = await requestLocale;
-
-  // Ensure that a valid locale is used
-  if (!locale || !routing.locales.includes(locale as typeof routing.locales[number])) {
-    locale = routing.defaultLocale;
-  }
-
-  return {
-    locale,
-    messages: (await import(`../../messages/${locale}.json`)).default
-  };
-});
+// The active request config lives at the project root (`/i18n.ts`), referenced by
+// the next-intl plugin in next.config.ts. This file re-exports it to avoid a
+// stale duplicate drifting out of sync.
+export { default } from '../../i18n';

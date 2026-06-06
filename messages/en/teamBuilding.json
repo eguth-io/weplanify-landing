@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Corporate Retreat Planner — Team Building Trips | WePlanify",
+    "description": "Plan your next corporate retreat or team offsite without the spreadsheet chaos. Itineraries, polls, budgets — one tool, zero headache."
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "hero": {
+    "tag": "Corporate & Team Trips",
+    "title": "Plan a Team Trip People Actually Want to Go On",
+    "intro": "Team retreats fail when one person plans everything, nobody gets a say, and the activities feel forced. Here's how to organize one that your team will actually enjoy — and that delivers real results.",
+    "readTime": "9 min read"
+  },
+  "toc": {
+    "title": "On this page",
+    "whyFail": "Why most team trips miss the mark",
+    "types": "Types of team trips",
+    "pitch": "How to pitch it to leadership",
+    "weplanifyHelps": "How WePlanify helps",
+    "timeline": "Planning timeline",
+    "roi": "Measuring ROI",
+    "faq": "Frequently asked questions"
+  },
+  "whyFail": {
+    "title": "Why Most Team Trips Miss the Mark",
+    "p1": "Most corporate retreats are organized top-down: someone in HR or management picks a venue, books some activities, sends out a calendar invite, and hopes for the best. The result? Half the team dreads the forced fun, the other half is confused about the schedule, and the organizer is burned out before the first team dinner.",
+    "p3": "WePlanify brings the whole team into the planning. Not just the organizer."
+  },
+  "types": {
+    "title": "Types of Team Trips",
+    "subtitle": "Different objectives call for different formats. Pick the one that matches your team's needs.",
+    "items": [
+      { "title": "The Classic Retreat", "desc": "2-3 days at a countryside venue. Mix of workshops, outdoor activities, and free time. Works best for annual company-wide meetups and strategic planning sessions.", "color": "bg-[#EEF899]" },
+      { "title": "The City Offsite", "desc": "A vibrant city for 2-4 days. Office coworking in the morning, exploration and team dinners in the evening. Ideal for remote teams meeting in person for the first time.", "color": "bg-[#61DBD5]" },
+      { "title": "The Adventure Trip", "desc": "Hiking, rafting, climbing, skiing — something physical that pushes people out of comfort zones together. Best for small, tight-knit teams. Creates strong bonds fast.", "color": "bg-[#F6391A]" },
+      { "title": "The Working Retreat", "desc": "Part work, part play. A week-long trip where mornings are productive sprints and afternoons are free. Great for startups and distributed teams who need focused time together.", "color": "bg-white" }
+    ]
+  },
+  "pitch": {
+    "title": "How to Pitch It to Your Boss",
+    "p1": "The secret to getting a team trip approved is framing it as an investment, not an expense. Remote and hybrid teams in particular suffer from weak cross-team relationships — the kind of bonds that only form in person. A well-planned retreat pays for itself in improved collaboration, reduced turnover, and better onboarding for new hires."
+  },
+  "pullQuote": "The best team retreats don't feel like mandatory fun — they feel like a trip you'd go on even if work wasn't paying.",
+  "weplanifyHelps": {
+    "title": "How WePlanify Helps Teams",
+    "items": [
+      { "title": "Let the team vote", "desc": "Use polls to decide on destinations, dates, and activities. When people choose what they do, they actually look forward to it. Anonymous voting removes hierarchy from the decision.", "link": "/features/polls" },
+      { "title": "One itinerary everyone can see", "desc": "Build the schedule collaboratively. Mark what's mandatory (the strategy session) vs. optional (the hike). Changes sync in real time — no more emailing updated PDFs.", "link": "/features/planning" },
+      { "title": "Transparent budgeting", "desc": "Track every expense in real time. Tag by category for easy reporting to finance. Separate company expenses from personal ones. Clear, clean, no surprises.", "link": "/features/budget" },
+      { "title": "Coordinate logistics at scale", "desc": "Shared packing lists, transport details, room assignments — everything in one place. When 20 people need to be at the same restaurant at 8pm, the shared itinerary is your single source of truth.", "link": "/features/collaboration" }
+    ]
+  },
+  "timeline": {
+    "title": "Planning Timeline: From Idea to Offsite",
+    "p3": "Two weeks before, shift to communication mode. Share the finalized itinerary with the entire team, send packing suggestions, and confirm headcounts for each activity. Pin important details — airport transfers, check-in times, emergency contacts — at the top of the trip. A well-informed team is a relaxed team.",
+    "p4": "One week before and during the trip, your job is to stay flexible. Last-minute changes happen — a restaurant cancels, weather shifts, someone's flight is delayed. With a shared itinerary that updates in real time, you can adapt on the fly and everyone stays in the loop. No more frantic group texts asking \"where are we supposed to be right now?\""
+  },
+  "roi": {
+    "title": "Measuring ROI of Your Team Retreat"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "Can WePlanify handle large teams (20+ people)?", "a": "Yes. There's no limit on group size. Every team member joins with a shared link and can see the itinerary, vote in polls, and track expenses. For very large groups, you can use sub-groups within the trip for different activity tracks." },
+      { "q": "How do you manage expenses when the company is paying?", "a": "Use the budget tracker to log all expenses in real time. Tag expenses by category (accommodation, meals, activities, transport) for easy reporting. At the end of the trip, export a clean summary for finance or reimbursement. You can separate company-paid from personal expenses." },
+      { "q": "Can we include remote team members in the planning?", "a": "Absolutely. WePlanify works in the browser — no app to download. Share the trip link and remote team members can contribute ideas, vote on activities, and see the full itinerary from anywhere. It's designed for distributed collaboration." },
+      { "q": "How far ahead should we plan a team retreat?", "a": "Two to three months minimum for domestic retreats, four to six months for international ones. Large group accommodation books up fast, and people need advance notice to block their calendars. Start a WePlanify trip early to gather input even before details are finalized." },
+      { "q": "What types of team trips work best?", "a": "It depends on your goals. Problem-solving teams benefit from adventure activities (escape rooms, outdoor challenges). Creative teams thrive with unstructured exploration (city trips, cultural experiences). New teams need icebreaker-friendly formats. Use polls to gauge what your team actually wants — you might be surprised." },
+      { "q": "How do you pitch a team trip to management?", "a": "Focus on outcomes: improved communication, stronger cross-team relationships, reduced remote isolation. Frame it as an investment in retention and productivity, not an expense. Provide a clear budget breakdown using WePlanify's tracker — showing transparency makes approval much easier." }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "tripWithFriends": { "title": "Trip with Friends", "desc": "Plan any group trip effortlessly.", "cta": "Read more →" },
+    "roadTrip": { "title": "Road Trip", "desc": "Plan a group road trip with shared routes and budgets.", "cta": "Read more →" },
+    "groupGuide": { "title": "Group Trip Guide", "desc": "Step-by-step guide to plan any group trip.", "cta": "Read the guide →" },
+    "bestApps": { "title": "Best Group Travel Apps", "desc": "Compare the top tools for group travel.", "cta": "Read the article →" }
+  },
+  "cta": {
+    "title": "Plan a Retreat Your Team Will Remember",
+    "subtitle": "Give your team a voice in the planning — and watch the energy change.",
+    "button": "Start planning"
+  },
+  "jsonld": {
+    "articleHeadline": "Plan a Team Building Trip That People Actually Want to Go On",
+    "howToName": "How to Plan a Corporate Team Retreat",
+    "howToDescription": "Step-by-step guide to planning a team building retreat that your whole team will enjoy.",
+    "howToSteps": [
+      { "name": "Define goals and destination", "text": "Set retreat objectives, fix a rough budget, and shortlist 2–3 destination ideas. Run a poll to involve the team in the destination choice." },
+      { "name": "Book accommodation and activities", "text": "Confirm the venue, reserve group activities, and finalize travel logistics. Build a shared itinerary everyone can see." },
+      { "name": "Share the final plan", "text": "Distribute the finalized itinerary, collect dietary needs and accessibility requirements, and confirm headcounts." },
+      { "name": "Stay flexible on the day", "text": "Keep the shared itinerary updated in real time so everyone stays informed when plans change." }
+    ]
+  }
+}

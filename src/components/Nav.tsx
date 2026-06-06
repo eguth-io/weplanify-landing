@@ -6,6 +6,8 @@ import { useRegisterHref } from "@/lib/attribution/use-register-href";
 import { PulsatingButton } from "./magicui/pulsating-button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import LanguageModal from "./LanguageModal";
 
 const DEFAULT_NAV_DATA: NavType = {
   logo: "/logo.svg",
@@ -172,15 +174,14 @@ interface NavProps {
 export default function Nav({ navData }: NavProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openMobileGroup, setOpenMobileGroup] = useState<string | null>(null);
+  const [langModalOpen, setLangModalOpen] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations("nav");
 
   const locale: Locale = pathname?.startsWith("/fr") ? "fr" : "en";
   const nav = navData || DEFAULT_NAV_DATA;
   const loginUrl = `https://app.weplanify.com/${locale}/login`;
   const registerUrl = useRegisterHref({ locale, medium: "nav" });
-  // Keep the user on the same page, just swap the locale prefix.
-  const frUrl = pathname?.replace(/^\/(en|fr)/, "/fr") || "/fr";
-  const enUrl = pathname?.replace(/^\/(en|fr)/, "/en") || "/en";
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => {
@@ -288,37 +289,23 @@ export default function Nav({ navData }: NavProps) {
 
           <div className="lg:flex items-center gap-6 hidden">
             <Link href={loginUrl} className="text-sm font-[500]" rel="nofollow">
-              {locale === "fr" ? "Connexion" : "Login"}
+              {t("login")}
             </Link>
             <Link href={registerUrl} rel="nofollow">
-              <PulsatingButton>{locale === "fr" ? "S'inscrire" : "Register"}</PulsatingButton>
+              <PulsatingButton>{t("register")}</PulsatingButton>
             </Link>
 
-            {/* Compact, discreet language segmented control — pushed to the far right edge */}
-            <div className="ml-2 lg:-mr-10 flex items-center rounded-full bg-[#001E13]/[0.04] p-0.5 text-[11px] font-semibold font-karla">
-              <Link
-                href={enUrl}
-                hrefLang="en"
-                aria-label="English"
-                aria-current={locale === "en" ? "true" : undefined}
-                className={`px-2 py-0.5 rounded-full transition-colors ${
-                  locale === "en" ? "bg-white text-[#001E13] shadow-[0_1px_2px_rgba(0,0,0,0.06)]" : "text-[#001E13]/40 hover:text-[#001E13]/70"
-                }`}
-              >
-                EN
-              </Link>
-              <Link
-                href={frUrl}
-                hrefLang="fr"
-                aria-label="Français"
-                aria-current={locale === "fr" ? "true" : undefined}
-                className={`px-2 py-0.5 rounded-full transition-colors ${
-                  locale === "fr" ? "bg-white text-[#001E13] shadow-[0_1px_2px_rgba(0,0,0,0.06)]" : "text-[#001E13]/40 hover:text-[#001E13]/70"
-                }`}
-              >
-                FR
-              </Link>
-            </div>
+            {/* Language picker — opens the "Choose language" modal */}
+            <button
+              type="button"
+              onClick={() => setLangModalOpen(true)}
+              aria-label="Choose language"
+              className="ml-2 lg:-mr-10 flex items-center gap-1.5 rounded-full bg-[#001E13]/[0.04] px-2.5 py-1 text-[11px] font-semibold font-karla text-[#001E13]/70 transition-colors hover:text-[#001E13]"
+            >
+              <Image src={`/langs/${locale}.svg`} alt={locale} width={16} height={16} className="rounded-full" />
+              {locale.toUpperCase()}
+              <Chevron />
+            </button>
           </div>
         </nav>
       </div>
@@ -397,46 +384,40 @@ export default function Nav({ navData }: NavProps) {
 
           <div className="px-6 py-6 border-t space-y-3">
             <Link href={loginUrl} onClick={closeMenu} className="block text-center py-3 px-4 text-base font-medium hover:bg-gray-50 transition-colors rounded-lg" rel="nofollow">
-              {locale === "fr" ? "Connexion" : "Login"}
+              {t("login")}
             </Link>
             <Link href={registerUrl} onClick={closeMenu} className="block" rel="nofollow">
               <PulsatingButton className="w-full justify-center">
-                {locale === "fr" ? "S'inscrire" : "Register"}
+                {t("register")}
               </PulsatingButton>
             </Link>
 
-            {/* Language segmented control */}
+            {/* Language picker — opens the "Choose language" modal */}
             <div className="flex items-center justify-center pt-1">
-              <div className="flex items-center rounded-full bg-[#001E13]/[0.06] p-1 text-sm font-bold font-karla">
-                <Link
-                  href={enUrl}
-                  hrefLang="en"
-                  onClick={closeMenu}
-                  aria-label="English"
-                  aria-current={locale === "en" ? "true" : undefined}
-                  className={`px-4 py-1.5 rounded-full transition-colors ${
-                    locale === "en" ? "bg-white text-[#F6391A] shadow-sm" : "text-[#001E13]/50"
-                  }`}
-                >
-                  EN
-                </Link>
-                <Link
-                  href={frUrl}
-                  hrefLang="fr"
-                  onClick={closeMenu}
-                  aria-label="Français"
-                  aria-current={locale === "fr" ? "true" : undefined}
-                  className={`px-4 py-1.5 rounded-full transition-colors ${
-                    locale === "fr" ? "bg-white text-[#F6391A] shadow-sm" : "text-[#001E13]/50"
-                  }`}
-                >
-                  FR
-                </Link>
-              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  closeMenu();
+                  setLangModalOpen(true);
+                }}
+                aria-label="Choose language"
+                className="flex items-center gap-2 rounded-full bg-[#001E13]/[0.06] px-4 py-1.5 text-sm font-bold font-karla text-[#001E13]/70 transition-colors hover:text-[#001E13]"
+              >
+                <Image src={`/langs/${locale}.svg`} alt={locale} width={18} height={18} className="rounded-full" />
+                {locale.toUpperCase()}
+                <Chevron />
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      <LanguageModal
+        open={langModalOpen}
+        onClose={() => setLangModalOpen(false)}
+        locale={locale}
+        title={t("chooseLanguage")}
+      />
     </>
   );
 }

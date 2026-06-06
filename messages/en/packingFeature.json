@@ -1,0 +1,51 @@
+{
+  "copy": {
+    "itemsReady": "14 / 20 items",
+    "readyForTrip": "ready for the trip",
+    "categories": [
+      {
+        "icon": "👕",
+        "title": "Clothing",
+        "progress": 80,
+        "items": [
+          { "name": "T-shirts (x5)", "checked": true },
+          { "name": "Pants (x3)", "checked": true },
+          { "name": "Light jacket", "checked": true },
+          { "name": "Swimsuit", "checked": false }
+        ]
+      },
+      {
+        "icon": "🔌",
+        "title": "Electronics",
+        "progress": 60,
+        "items": [
+          { "name": "Phone charger", "checked": true },
+          { "name": "Power adapter", "checked": true },
+          { "name": "Power bank", "checked": false },
+          { "name": "Earbuds", "checked": false }
+        ]
+      },
+      {
+        "icon": "🧴",
+        "title": "Toiletries",
+        "progress": 100,
+        "items": [
+          { "name": "Toothbrush", "checked": true },
+          { "name": "Sunscreen", "checked": true },
+          { "name": "Shampoo", "checked": true }
+        ]
+      }
+    ],
+    "tipTitle": "Suggestion based on your trip",
+    "tipText": "The average temperature in Lisbon in April is 28°C. Remember to pack light clothing and sunscreen!",
+    "packTitle": "Pack your bags with peace of mind",
+    "sharedTitle": "Who brings what? Settle it once and for all",
+    "sharedSubtitle": "Avoid duplicates by assigning who brings what.",
+    "bringing": "Bringing:",
+    "people": [
+      { "avatar": "👩‍🎨", "name": "Marie", "items": ["Sunscreen", "Card game", "Travel guide"] },
+      { "avatar": "🧔", "name": "Thomas", "items": ["Power adapter", "Bluetooth speaker"] },
+      { "avatar": "👱‍♀️", "name": "Emma", "items": ["First aid kit", "Binoculars"] }
+    ]
+  }
+}

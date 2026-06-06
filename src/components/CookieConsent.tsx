@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 type ConsentState = "pending" | "granted" | "denied";
 
@@ -66,8 +66,7 @@ function pushConsentSignal(state: ConsentState) {
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
   const [, setConsent] = useState<ConsentState>("pending");
-  const pathname = usePathname();
-  const locale = pathname?.startsWith("/fr") ? "fr" : "en";
+  const t = useTranslations("cookieConsent");
 
   // On mount: check stored consent, set default consent mode
   // Only show cookie banner in EEA regions where GDPR requires opt-in
@@ -114,38 +113,24 @@ export default function CookieConsent() {
 
   if (!visible) return null;
 
-  const t = locale === "fr"
-    ? {
-        text: "Nous utilisons des cookies pour analyser le trafic et améliorer votre expérience. Aucune donnée n'est vendue à des tiers.",
-        accept: "Accepter",
-        decline: "Refuser",
-        more: "En savoir plus",
-      }
-    : {
-        text: "We use cookies to analyze traffic and improve your experience. No data is sold to third parties.",
-        accept: "Accept",
-        decline: "Decline",
-        more: "Learn more",
-      };
-
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[9999] px-4 pb-4 lg:px-6 lg:pb-5">
       <div className="max-w-[900px] mx-auto bg-[#001E13] rounded-full px-5 py-3 lg:px-6 lg:py-3 shadow-2xl border border-[#FFFBF5]/10 flex items-center justify-between gap-4">
         <p className="text-[#FFFBF5]/70 font-karla text-xs lg:text-sm leading-snug flex-1 min-w-0">
-          {t.text}
+          {t("text")}
         </p>
         <div className="flex items-center gap-2 flex-shrink-0">
           <button
             onClick={handleDecline}
             className="text-[#FFFBF5]/50 font-karla text-xs lg:text-sm px-3 py-1.5 rounded-full hover:text-[#FFFBF5]/80 transition-colors"
           >
-            {t.decline}
+            {t("decline")}
           </button>
           <button
             onClick={handleAccept}
             className="bg-[#F6391A] text-[#FFFBF5] font-karla font-bold text-xs lg:text-sm px-4 py-1.5 rounded-full hover:bg-[#d42d10] transition-colors"
           >
-            {t.accept}
+            {t("accept")}
           </button>
         </div>
       </div>

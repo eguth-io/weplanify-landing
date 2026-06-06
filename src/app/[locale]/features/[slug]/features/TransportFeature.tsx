@@ -2,15 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { TransportJourney } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, {
+type Copy = {
   heroTitle: string;
   heroTitleHighlight: string;
   heroSubtitle: string;
@@ -20,47 +18,6 @@ const COPY: Record<Lang, {
   syncTitle: string;
   syncSubtitle: string;
   timeline: { time: string; event: string; icon: string; color: string }[];
-}> = {
-  fr: {
-    heroTitle: "Avion, train, voiture :",
-    heroTitleHighlight: "fini les billets perdus",
-    heroSubtitle: "Transférez vos emails de confirmation, on extrait tout automatiquement.",
-    importTitle: "Import automatique",
-    importSubtitle: "Connectez votre email ou scannez vos confirmations — tout s'importe automatiquement.",
-    tickets: [
-      { type: "flight", code: "AF1234", details: "Paris → Lisbonne — 15 avril" },
-      { type: "train", code: "CP5678", details: "Lisbonne → Porto — 18 avril" },
-      { type: "hotel", code: "BOOKING-9012", details: "Hôtel Porto — 4 nuits" },
-    ],
-    syncTitle: "Synchronisé avec votre itinéraire",
-    syncSubtitle: "Vos transports s'intègrent automatiquement à votre programme.",
-    timeline: [
-      { time: "08:45", event: "Vol CDG → LIS", icon: "✈️", color: "#61DBD5" },
-      { time: "10:30", event: "Arrivée à Lisbonne", icon: "📍", color: "#F6391A" },
-      { time: "11:00", event: "Transfert hôtel", icon: "🚕", color: "#EEF899" },
-      { time: "14:00", event: "Check-in Hôtel Alfama", icon: "🏨", color: "#8B5CF6" },
-    ],
-  },
-  en: {
-    heroTitle: "Flights, trains, cars:",
-    heroTitleHighlight: "no more lost tickets",
-    heroSubtitle: "Forward your confirmation emails, we extract everything automatically.",
-    importTitle: "Automatic Import",
-    importSubtitle: "Connect your email or scan your confirmations — everything imports automatically.",
-    tickets: [
-      { type: "flight", code: "AF1234", details: "Paris → Lisbon — April 15" },
-      { type: "train", code: "CP5678", details: "Lisbon → Porto — April 18" },
-      { type: "hotel", code: "BOOKING-9012", details: "Hotel Porto — 4 nights" },
-    ],
-    syncTitle: "Syncs with your itinerary",
-    syncSubtitle: "Transport automatically integrates into your schedule.",
-    timeline: [
-      { time: "08:45", event: "Flight CDG → LIS", icon: "✈️", color: "#61DBD5" },
-      { time: "10:30", event: "Arrive in Lisbon", icon: "📍", color: "#F6391A" },
-      { time: "11:00", event: "Hotel transfer", icon: "🚕", color: "#EEF899" },
-      { time: "14:00", event: "Check-in Hotel Alfama", icon: "🏨", color: "#8B5CF6" },
-    ],
-  },
 };
 
 interface FeaturePageData {
@@ -196,8 +153,7 @@ function TicketStub({
 
 export default function TransportFeature({ data }: { data: FeaturePageData }) {
   const locale = useLocale();
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const t = COPY[lang];
+  const t = useTranslations("transportFeature").raw("copy") as Copy;
 
   return (
     <>

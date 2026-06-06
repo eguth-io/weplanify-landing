@@ -1,0 +1,13 @@
+{
+  "title": "Pensée par des voyageurs,\nfaite pour les groupes.",
+  "bubbles": [
+    { "text": "Partager vos propres sondages", "subtitle": "Dates · Destination · Budget" },
+    { "text": "Gérer les dépenses de votre voyage", "subtitle": "Vols · Airbnb · Restos" },
+    { "text": "Inviter le groupe", "subtitle": "Par email · Par lien" },
+    { "text": "Gérer votre voyage", "subtitle": "Étapes · Jours · Notes" },
+    { "text": "Rechercher des activités", "subtitle": "Musées · Restos · Plages" },
+    { "text": "Trouver vos futurs logements", "subtitle": "Hôtel · Airbnb · Auberge" },
+    { "text": "Attribuez-vous des tâches", "subtitle": "À faire · En cours · Fait" },
+    { "text": "Trouver des transports", "subtitle": "Vol · Train · Voiture" }
+  ]
+}

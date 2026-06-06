@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "How to Plan a Road Trip With Friends — Group Route Planner | WePlanify",
+    "description": "Plan your group road trip with WePlanify. Collaborative route planning, shared gas budgets, packing coordination, and group polls for every stop along the way."
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "hero": {
+    "title": "The Open Road, Your Crew, Zero Stress",
+    "readTime": "7 min read"
+  },
+  "problem": {
+    "p1": "Road trips sound simple — just get in the car and drive. But with a group, every decision multiplies. Which route? How many stops? Who's driving when? Where do we sleep? Who's paying for gas? Who brings the cooler? By the time you've coordinated five people across six days, you've sent 300 messages and nobody's sure what the plan is.",
+    "p2": "WePlanify turns the chaos into a shared roadmap — one place for the route, the budget, and the packing list."
+  },
+  "toc": {
+    "title": "On this page",
+    "anatomy": "Anatomy of a group road trip",
+    "planning": "Planning your route step by step",
+    "budget": "Budget tips for group road trips",
+    "faq": "Frequently asked questions"
+  },
+  "anatomy": {
+    "title": "Anatomy of a Group Road Trip",
+    "subtitle": "Every road trip has the same building blocks. Here's how to get each one right with a group.",
+    "items": [
+      { "stop": "The Route", "desc": "Vote on the big decision first: scenic or fast? Coastal or inland? Create a poll, settle it, and build the route in a shared itinerary where everyone can add stop suggestions. Lock the overnight points early — the road between them stays flexible.", "link": "/features/polls" },
+      { "stop": "The Stops", "desc": "This is where road trips become memorable. Let everyone suggest their must-see stops, then curate together. The 70/30 rule works perfectly here: 70% planned stops, 30% spontaneous. Add each stop to the shared itinerary with addresses and notes so the driver isn't fumbling with a phone.", "link": "/features/planning" },
+      { "stop": "The Money", "desc": "Gas, tolls, food, accommodation, activities. On a multi-day road trip, expenses add up fast and across many categories. Log every expense in real time — who paid, how much, for what. WePlanify calculates balances automatically so you settle up once at the end, not after every gas station.", "link": "/features/budget" },
+      { "stop": "The Car", "desc": "Five people, one trunk. Space is the ultimate constraint. A shared packing list with assigned items prevents the classic road trip mistake: three Bluetooth speakers, no bottle opener, and zero jumper cables. Mark what goes in which car if you're taking multiple vehicles.", "link": "/features/packing" }
+    ]
+  },
+  "checklist": {
+    "title": "Road Trip Essentials Checklist",
+    "subtitle": "The things groups always forget. Assign each to a person in your WePlanify packing list.",
+    "items": [
+      "Phone mounts & chargers for the driver",
+      "Aux cable or Bluetooth FM transmitter",
+      "Cooler with ice packs",
+      "First-aid kit",
+      "Jumper cables / portable jump starter",
+      "Paper maps (for dead zones)",
+      "Reusable water bottles",
+      "Trash bags for the car",
+      "Blankets & pillows for passengers",
+      "Shared snack stash",
+      "Tire pressure gauge",
+      "Portable phone battery pack"
+    ]
+  },
+  "pullQuote": "The best road trips aren't about the destination — they're about what happens between the stops. Make sure the planning doesn't kill the vibe before you even leave.",
+  "planning": {
+    "title": "Planning Your Route: Step by Step",
+    "p1": "Start with the anchors — the places you absolutely want to visit — and build the route around them. Before drawing a line on the map, agree on the trip's rhythm: how many hours of driving per day feels right for your group? Four to five hours is a realistic max before fatigue sets in. Once you have the anchors, connect them with stretches that balance highway efficiency and scenic value.",
+    "p4": "Leave buffer time in the schedule — at least an hour of slack per day. Road trips never go exactly to plan. A farmer's market you didn't know about, a detour because of construction, a restaurant someone spotted from the highway. The buffer is what lets you say yes to these moments instead of stressing about being behind schedule."
+  },
+  "budget": {
+    "title": "Budget Tips for Group Road Trips",
+    "p2": "If you're renting a car, sort out who's on the insurance and who's listed as an additional driver before you leave. Rental companies charge per extra driver — factor that into the split. Tolls are another sneaky cost: on some routes, they can rival the gas budget. Check toll calculators for your route in advance and decide as a group whether to take the toll road or save money with the slower alternative.",
+    "p3": "For accommodation, mixing it up keeps costs manageable. Alternate between campgrounds, hostels, and Airbnbs depending on where you stop. Splitting a three-bedroom rental five ways is almost always cheaper than individual hotel rooms, and it doubles as a hangout spot. Log every shared expense as it happens — waiting until the end of the trip to sort out who owes what is a recipe for forgotten charges and awkward conversations."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "How do you split gas costs fairly on a road trip?", "a": "Log every fill-up in WePlanify's shared budget tracker — who paid, how much, which car. At the end of the trip, the app calculates who owes what. For multi-car trips, track each vehicle separately. No more Venmo guesswork." },
+      { "q": "How many stops should a road trip have per day?", "a": "Two to three intentional stops per day is the sweet spot. More than that and you spend the whole trip getting in and out of the car. Build one 'must-see' stop and one or two flexible ones into each day's itinerary. Leave room for spontaneous discoveries." },
+      { "q": "What if we have different driving preferences?", "a": "Use polls to decide the big routing questions (coastal vs. inland, fast highways vs. scenic routes). For daily driving duties, set up a rotation in the itinerary. WePlanify's shared plan keeps everyone aligned on who's driving when." },
+      { "q": "How do you coordinate packing for a road trip?", "a": "Car space is limited. Create a shared packing list with two sections: personal items and shared gear (cooler, camping equipment, tools, first-aid kit, speaker). Assign shared items to specific people so you don't end up with three portable chargers and no jumper cables." },
+      { "q": "Can WePlanify work offline during a road trip?", "a": "WePlanify works in your browser on any device. While you need an internet connection to sync changes, you can save key details (addresses, reservation codes) in the trip notes before hitting a dead zone. Most of your route will have coverage." },
+      { "q": "How far ahead should we plan a road trip?", "a": "Two to four weeks is usually enough for domestic road trips. Book accommodation for key overnight stops early — popular spots fill up fast, especially on weekends. Leave the route flexible but lock in the places you'll sleep. Start a WePlanify trip as soon as the idea forms." }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "tripWithFriends": { "title": "Trip with Friends", "desc": "Plan any group trip effortlessly.", "cta": "Read more →" },
+    "groupGuide": { "title": "Group Trip Guide", "desc": "The complete step-by-step guide.", "cta": "Read the guide →" },
+    "bestApps": { "title": "Best Group Travel Apps", "desc": "Our comparison of the top tools for group trips.", "cta": "Read the article →" },
+    "familyTrip": { "title": "Family Trip", "desc": "Plan a multi-generational family vacation.", "cta": "Read more →" }
+  },
+  "cta": {
+    "title": "Hit the Road Together",
+    "subtitle": "Plan the route, split the costs, pack the car — all in one place.",
+    "button": "Start planning"
+  },
+  "jsonld": {
+    "articleHeadline": "Plan a Road Trip With Your Crew",
+    "howToName": "How to plan a group road trip",
+    "howToDescription": "Build the route, agree on the rhythm, settle disagreements with polls, share the driving and leave room for spontaneity.",
+    "howToSteps": [
+      { "name": "Pick anchor stops and agree on the daily rhythm", "text": "Start with the must-see stops and build the route around them. Agree on a max of 4-5 hours of driving per day before fatigue kicks in, then connect the anchors with a mix of highway efficiency and scenic value." },
+      { "name": "Settle scenic-vs-fast debates with a quick poll", "text": "When the group disagrees on stops or which way to drive, run a poll. Each member ranks their top three; the result wins without drama. Particularly useful for the coastal-detour-vs-highway debate." },
+      { "name": "Pre-assign driving shifts and rest breaks", "text": "Assign driving shifts in advance so the same person isn't behind the wheel every morning. Rotate every 2-3 hours and schedule real 20-minute breaks at viewpoints, not 5-minute stops at gas stations." },
+      { "name": "Leave at least one hour of buffer per day", "text": "Road trips never go exactly to plan. Build at least one hour of slack into each day so you can say yes to the unplanned market, the spontaneous detour, the restaurant spotted from the highway." }
+    ]
+  }
+}

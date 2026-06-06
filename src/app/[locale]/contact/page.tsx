@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -13,39 +13,28 @@ type Props = {
 
 const SITE_URL = "https://www.weplanify.com";
 
-const contactMeta = {
-  en: {
-    title: "Contact Us — Get in Touch With Our Team",
-    description:
-      "Have a question about WePlanify? Need help planning your group trip? Reach out to our team — we typically respond within 24 hours.",
-  },
-  fr: {
-    title: "Nous Contacter — Notre Équipe Te Répond Sous 24h",
-    description:
-      "Une question sur WePlanify ? Besoin d'aide pour organiser votre voyage de groupe ? Contactez notre équipe — nous répondons généralement sous 24 heures.",
-  },
-};
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const l = locale === "fr" ? contactMeta.fr : contactMeta.en;
+  const t = await getTranslations({ locale, namespace: "contactPage" });
+  const title = t("meta.title");
+  const description = t("meta.description");
   const currentUrl = `${SITE_URL}/${locale}/contact`;
 
   return {
-    title: l.title,
-    description: l.description,
+    title,
+    description,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       url: currentUrl,
       siteName: "WePlanify",
-      title: l.title,
-      description: l.description,
+      title,
+      description,
     },
     twitter: {
       card: "summary_large_image",
-      title: l.title,
-      description: l.description,
+      title,
+      description,
     },
     alternates: {
       canonical: currentUrl,

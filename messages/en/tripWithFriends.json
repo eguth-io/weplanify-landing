@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "Plan a Trip with Friends — Group Travel Made Easy | WePlanify",
+    "description": "Plan a trip with friends effortlessly. WePlanify is the group trip planner app with collaborative itineraries, group polls, shared budgets, and packing lists. Free to use."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "currentLd": "Trip with Friends",
+    "currentNav": "Trip with Friends"
+  },
+  "jsonld": {
+    "articleHeadline": "Plan a Trip with Friends — Complete Guide"
+  },
+  "readTime": "8 min read",
+  "heroTag": "Group Travel, Simplified",
+  "heroTitle": "Plan a Trip with Friends\nWithout the Chaos",
+  "heroDescription": "Stop juggling WhatsApp threads, spreadsheets, and guesswork. WePlanify brings your entire group together in one place to plan the perfect trip — from destination to departure.",
+  "heroGuideLink": "Read our complete guide",
+  "heroCta": "Start planning for free",
+  "whyTitle": "Why Plan a Group Trip with Friends?",
+  "whyParagraphs": [
+    "Traveling with friends is one of life's greatest experiences. There is something irreplaceable about exploring a new city with your closest people, sharing meals in places you have never been, and creating stories you will retell for decades. Studies consistently show that shared travel experiences strengthen friendships and create deeper bonds than almost any other activity.",
+    "But here is the reality: the planning phase is where most group trips fall apart. What starts as an exciting idea in a group chat quickly devolves into unanswered messages, conflicting opinions, and that one friend who never commits. The bigger the group, the harder it gets — and the more likely someone ends up doing all the work while everyone else just shows up.",
+    "That is exactly why WePlanify exists. Instead of scattering your planning across WhatsApp, Google Docs, Splitwise, and a dozen browser tabs, you get one collaborative space where everyone can contribute, vote, and stay aligned. The result? Less stress for the organizer, more excitement for the group, and a trip that actually happens."
+  ],
+  "painPointsTitle": "Sound Familiar?",
+  "painPointsSubtitle": "Planning a group trip with friends is exciting — until it isn't. Here are the headaches WePlanify eliminates.",
+  "painPointsParagraphs": [
+    "It always starts the same way. Someone drops the idea in the group chat — \"We should do a trip this summer\" — and within minutes, everyone is hyped. But then the real planning begins, and that is where things fall apart. Important decisions get buried in endless WhatsApp threads. You scroll back through 200 messages trying to find that restaurant recommendation from Tuesday, and it is gone — buried under memes and side conversations. Someone always misses the message. Nobody knows what was actually decided. Critical details like check-in times, addresses, and booking confirmations vanish into the noise.",
+    "Then comes the destination debate. Half the group wants the beach, the other half wants mountains. Without a fair way to decide, the loudest voice in the chat ends up choosing while three people silently resent the decision. Or worse — the debate drags on for so long that flight prices double and everyone loses motivation entirely. Meanwhile, the budget situation is a mess. One person fronts the accommodation, another covers the car rental, someone keeps buying group dinners, and by the end of the trip nobody can remember who owes how much to whom. That awkward money conversation can sour an otherwise perfect trip.",
+    "And then there is packing. Three people bring hairdryers, nobody brings a first-aid kit. For trips with specific activities — hiking, snorkeling, skiing — the lack of coordination means someone always shows up without essential gear. When you are sharing a rental, nobody thinks to bring the basics like a corkscrew, power strips, or card games until it is too late. Every one of these problems is solvable — but only if your group has a single place to plan, decide, and organize together."
+  ],
+  "solutionTitle": "How WePlanify Makes Group Trips Easy",
+  "solutionSubtitle": "Everything your friend group needs to plan, decide, and organize — all in one beautiful app.",
+  "solutions": [
+    {
+      "title": "Collaborative Itinerary",
+      "description": "Build your trip itinerary together in real time. Everyone can suggest activities, vote on ideas, and see the final plan — no more back-and-forth. Drag and drop activities into your day-by-day schedule, add notes and links for each stop, and watch the trip take shape as your whole group contributes. Changes sync instantly so everyone is always looking at the latest version.",
+      "linkText": "Learn about planning"
+    },
+    {
+      "title": "Group Polls & Voting",
+      "description": "Can't decide between Barcelona and Bali? Create a poll, let everyone vote, and settle it democratically. No more endless debates. Polls work for everything — destinations, dates, restaurants, activities, even what to cook for dinner at the Airbnb. Anonymous voting removes social pressure so people pick what they actually want, not what they think the group expects.",
+      "linkText": "Discover polls"
+    },
+    {
+      "title": "Shared Budget Tracker",
+      "description": "Track every expense, split costs fairly, and see who owes what — all updated in real time. No more awkward money conversations. Log expenses on the go, assign them to individuals or the whole group, and let WePlanify calculate the final balances automatically. At the end of the trip, everyone knows exactly what they owe — no spreadsheets, no arguments, no lingering debts.",
+      "linkText": "Explore budget tools"
+    },
+    {
+      "title": "Smart Packing Lists",
+      "description": "AI-powered packing lists tailored to your destination, weather, and activities. Share with the group so nothing gets forgotten or duplicated. Assign shared items to specific people — one person brings the first-aid kit, another handles the Bluetooth speaker. Check items off as you pack and see the group's progress in real time so you know everything is covered before you leave.",
+      "linkText": "See packing lists"
+    }
+  ],
+  "scenariosTitle": "Real-World Scenarios",
+  "scenariosSubtitle": "See how friend groups like yours use WePlanify for every type of trip.",
+  "scenarios": [
+    {
+      "title": "The Weekend Getaway",
+      "description": "Five friends, a long weekend, and a beach house two hours away. You create the trip on Monday, everyone votes on the house by Wednesday, and the packing list is shared by Friday. Budget tracking means the person who booked the house gets paid back automatically — no chasing anyone for money. Simple, fast, and stress-free."
+    },
+    {
+      "title": "The International Adventure",
+      "description": "Eight friends scattered across three cities, planning two weeks in Southeast Asia. With WePlanify, everyone contributes destination ideas, votes on the route, and collaborates on a detailed day-by-day itinerary. The shared budget tracker handles multiple currencies, and the packing list ensures nobody forgets their visa documents or travel adapter."
+    },
+    {
+      "title": "The Festival Trip",
+      "description": "A group of twelve heading to a music festival. Coordinating tickets, camping gear, rides, and food for that many people would be chaos without a central hub. WePlanify keeps the itinerary (set times, meetup spots), the budget (shared groceries, gas money), and the packing list (who brings the tent, who brings the cooler) all in one place."
+    }
+  ],
+  "vsTitle": "Why WePlanify vs. Other Tools?",
+  "vsSubtitle": "You might be wondering: do I really need a dedicated tool? Can't I just use what I already have?",
+  "vsParagraphs": [
+    "WhatsApp and iMessage are great for chatting, but terrible for planning. Important decisions get buried, links get lost, and there is no way to track budgets, build itineraries, or run polls. By the time your trip arrives, half the group is confused about the plans because they missed a message three weeks ago.",
+    "Google Sheets and Notion are powerful but overkill for a trip. They require someone to build and maintain the structure, and most friends just never open them. The organizer ends up doing all the work alone — which is exactly the problem you were trying to solve.",
+    "Solo travel apps like TripIt or Google Trips are designed for individual travelers. They do not support group collaboration, shared budgets, or group decision-making. WePlanify was built from the ground up for groups — every feature is designed around the reality that planning with multiple people is fundamentally different from planning alone."
+  ],
+  "vsComparisonLink": "See the full app comparison →",
+  "stepsTitle": "3 Steps to Plan Your Trip with Friends",
+  "stepsSubtitle": "From idea to itinerary in minutes — not weeks.",
+  "steps": [
+    {
+      "title": "Create Your Trip",
+      "description": "Name your trip, pick your dates, and invite your friends with a simple link. Everyone joins instantly — no downloads, no sign-ups required."
+    },
+    {
+      "title": "Plan Together",
+      "description": "Suggest destinations, vote on activities, build your itinerary, and track your shared budget — all in one place, updated in real time."
+    },
+    {
+      "title": "Pack & Go",
+      "description": "Get personalized packing lists, finalize your plans, and head out on the adventure of a lifetime with your crew."
+    }
+  ],
+  "faqTitle": "Frequently Asked Questions",
+  "faqItems": [
+    {
+      "q": "What's the best app to plan a trip with friends?",
+      "a": "WePlanify is the best free app to plan a trip with friends: it combines a collaborative day-by-day itinerary, group polls so everyone can vote on dates and activities, a shared budget with automatic settlement, and packing lists in one place — instead of juggling several single-purpose apps. For a side-by-side breakdown against Wanderlog, TripIt, Splitwise and others, see our comparison of the best group trip planner apps."
+    },
+    {
+      "q": "How do you plan a trip with friends, step by step?",
+      "a": "1) Create a trip and invite everyone with a link — no account needed for guests. 2) Run a group poll to lock the dates and destination by vote. 3) Build the day-by-day itinerary together, with everyone adding activities and restaurants. 4) Track the shared budget so everyone sees who owes what. 5) Share a packing list so nothing is forgotten. WePlanify keeps all five steps in one collaborative space."
+    },
+    {
+      "q": "Is WePlanify really free?",
+      "a": "Yes, 100%. WePlanify is free forever — no hidden fees, no trial limits, no credit card required. All core features (itineraries, polls, budgets, packing lists) are included at no cost."
+    },
+    {
+      "q": "How many friends can I invite?",
+      "a": "There is no limit. Whether your group is 3 or 30, everyone can join with a simple invite link and collaborate in real time on the same trip."
+    },
+    {
+      "q": "Can different friend groups collaborate on the same trip?",
+      "a": "Yes! WePlanify supports sub-groups within a single trip. If your trip involves multiple friend circles — say your college friends and your work friends — each sub-group can have their own private planning sections while still sharing the main itinerary, budget, and packing list. Everyone stays aligned without cluttering each other's conversations."
+    },
+    {
+      "q": "What if friends have very different budgets?",
+      "a": "WePlanify's budget tracker lets you split costs flexibly. You can split evenly, by percentage, or assign specific expenses to specific people. This way, friends with tighter budgets can opt out of expensive optional activities while still participating in shared costs like accommodation."
+    },
+    {
+      "q": "What happens if someone drops out mid-planning?",
+      "a": "No problem — WePlanify handles group changes gracefully. You can remove a member at any point, and the shared budget automatically recalculates so everyone's balances stay accurate. Any tasks or items assigned to that person get flagged for reassignment, and the rest of the group continues planning without missing a beat."
+    },
+    {
+      "q": "How do group polls work?",
+      "a": "Create a poll with any question — destination, dates, restaurants, activities — and share it with your group. Everyone votes from their device, and results update in real time. You can set deadlines, allow multiple choices, and make votes anonymous to avoid social pressure."
+    }
+  ],
+  "ctaTitle": "Your Next Adventure Starts Here",
+  "ctaDescription": "Join thousands of friend groups who plan their trips with WePlanify. It's free, it's fun, and it actually works.",
+  "ctaButton": "Start planning your trip",
+  "destinations": {
+    "tag": "Destination inspiration",
+    "heading": "Ready-to-fork friend trips",
+    "cards": [
+      {
+        "title": "Lisbon · 4 days",
+        "desc": "Miradouros, fado, Sintra, Time Out Market. The European weekend that overdelivers."
+      },
+      {
+        "title": "Tuscany · 7 days",
+        "desc": "Florence, Siena, Val d'Orcia, Montalcino. The road trip you'll still talk about 20 years later."
+      },
+      {
+        "title": "Budapest · 3 days",
+        "desc": "Thermal baths, ruin bars, Danube. Short, intense, affordable."
+      }
+    ],
+    "cardLink": "See the itinerary →",
+    "seeAll": "See all destinations →"
+  },
+  "discover": {
+    "heading": "Discover More",
+    "guide": {
+      "title": "Guide: How to Plan a Group Trip",
+      "desc": "The complete step-by-step guide to planning a successful group trip, from first idea to last day.",
+      "link": "Read the guide →"
+    },
+    "worldCup": {
+      "title": "World Cup 2026 Trip Planner",
+      "desc": "Follow your team across the 16 host cities in the USA, Canada and Mexico — free, no agency package.",
+      "link": "Open the planner →"
+    },
+    "comparison": {
+      "title": "App Comparison",
+      "desc": "See how WePlanify compares to other group trip planning apps in 2026.",
+      "link": "View comparison →"
+    }
+  }
+}

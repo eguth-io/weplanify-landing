@@ -8,7 +8,7 @@ import Image from "next/image";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, blogPostQuery, footerQuery, ctaQuery } from "@/sanity/lib/query";
 import { NavType, BlogPost, FooterType, CtaType } from "@/sanity/lib/type";
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { generateMetadataFromSanity } from "@/lib/metadata";
 
 interface BlogPostPageProps {
@@ -58,6 +58,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations("blogSlug");
 
   const [navData, article, footerData, ctaData] = await Promise.all([
     sanityFetch({
@@ -144,7 +145,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: locale === "fr" ? "Accueil" : "Home", item: `${SITE_URL}/${locale}` },
+      { "@type": "ListItem", position: 1, name: t("breadcrumb.home"), item: `${SITE_URL}/${locale}` },
       { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/${locale}/blog` },
       { "@type": "ListItem", position: 3, name: article.title, item: `${SITE_URL}/${locale}/blog/${slug}` },
     ],

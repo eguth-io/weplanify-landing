@@ -4,8 +4,10 @@ import { seoSettingsQuery } from "@/sanity/lib/query";
 import { SeoSettings } from "@/sanity/lib/type";
 import { destinations } from "@/lib/destinations/data";
 import { countryGuides } from "@/lib/travel-guides/data";
+import { routing } from "@/i18n/routing";
 
-const locales = ["en", "fr"] as const;
+// Derive sitemap locales from the routing config so adding a language is one place.
+const locales = routing.locales;
 const featureSlugs = [
   "planning",
   "budget",

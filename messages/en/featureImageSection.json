@@ -1,0 +1,13 @@
+{
+  "title": "A group travel planner,\nbuilt by travelers, for travelers.",
+  "bubbles": [
+    { "text": "Share your own polls", "subtitle": "Dates · Destination · Budget" },
+    { "text": "Manage your trip expenses", "subtitle": "Flights · Airbnb · Dining" },
+    { "text": "Invite the group", "subtitle": "By email · By link" },
+    { "text": "Manage your trip", "subtitle": "Stops · Days · Notes" },
+    { "text": "Search for activities", "subtitle": "Museums · Food · Beaches" },
+    { "text": "Find your accommodation", "subtitle": "Hotel · Airbnb · Hostel" },
+    { "text": "Assign tasks", "subtitle": "To do · Doing · Done" },
+    { "text": "Find transport", "subtitle": "Flight · Train · Car" }
+  ]
+}

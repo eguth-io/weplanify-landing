@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 
 type AuthorBioProps = {
   locale: string;
@@ -21,7 +22,8 @@ const author = {
 };
 
 export function AuthorBio({ locale, publishedDate, modifiedDate }: AuthorBioProps) {
-  const t = locale === "fr" ? author.fr : author.en;
+  const content = locale === "fr" ? author.fr : author.en;
+  const t = useTranslations("authorBio");
 
   const formatDate = (date: string) => {
     return new Date(date).toLocaleDateString(locale === "fr" ? "fr-FR" : "en-US", {
@@ -40,26 +42,26 @@ export function AuthorBio({ locale, publishedDate, modifiedDate }: AuthorBioProp
       </div>
       <div className="min-w-0">
         <p className="font-karla font-bold text-[#001E13] text-sm lg:text-base">
-          {t.name}
+          {content.name}
         </p>
         <p className="font-karla text-[#001E13]/60 text-xs lg:text-sm">
-          {t.role}
+          {content.role}
         </p>
         <p className="font-karla text-[#001E13]/70 text-xs lg:text-sm mt-1 leading-relaxed">
-          {t.bio}
+          {content.bio}
         </p>
         {(publishedDate || modifiedDate) && (
           <p className="font-karla text-[#001E13]/50 text-xs mt-2">
             {publishedDate && (
               <span>
-                {locale === "fr" ? "Publié le " : "Published "}
+                {t("publishedPrefix")}
                 <time dateTime={publishedDate}>{formatDate(publishedDate)}</time>
               </span>
             )}
             {publishedDate && modifiedDate && <span> · </span>}
             {modifiedDate && (
               <span>
-                {locale === "fr" ? "Mis à jour le " : "Updated "}
+                {t("updatedPrefix")}
                 <time dateTime={modifiedDate}>{formatDate(modifiedDate)}</time>
               </span>
             )}

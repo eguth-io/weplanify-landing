@@ -1,0 +1,22 @@
+{
+  "copy": {
+    "heroTitle": "Planifiez un voyage à 10",
+    "heroTitleHighlight": "sans un seul message WhatsApp",
+    "heroSubtitle": "Modifications en temps réel, sondages intégrés, historique clair. Tout le monde sur la même page, littéralement.",
+    "inviteMore": "Inviter plus",
+    "liveLabel": "En direct",
+    "fakeTripTitle": "Road Trip Portugal",
+    "fakeDays": ["Jour 1 — Lisbonne", "Jour 2 — Sintra", "Jour 3 — Porto"],
+    "editingTag": "Marie modifie…",
+    "feedTitle": "Ne ratez plus rien",
+    "feedSubtitle": "Le fil d'activité montre tout ce qui se passe sur votre voyage. Qui a ajouté quoi, quand et où.",
+    "recentActivity": "Activité récente",
+    "activities": [
+      { "avatar": "👩‍🎨", "name": "Marie", "action": "a ajouté « Dîner à Alfama »", "time": "il y a 2 min" },
+      { "avatar": "🧔", "name": "Thomas", "action": "a modifié l'hôtel à Porto", "time": "il y a 5 min" },
+      { "avatar": "👱‍♀️", "name": "Emma", "action": "a voté pour le restaurant", "time": "il y a 12 min" },
+      { "avatar": "🧑‍💻", "name": "Lucas", "action": "a rejoint le voyage", "time": "il y a 1 h" }
+    ],
+    "freeNoCard": "Inscription gratuite. Sans carte bancaire."
+  }
+}

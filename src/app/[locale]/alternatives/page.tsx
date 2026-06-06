@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -19,8 +19,7 @@ type Props = {
 
 type Feature = {
   key: string;
-  en: string;
-  fr: string;
+  label: string;
 };
 
 type AppColumn = {
@@ -46,39 +45,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const pathname = "/alternatives";
   const currentUrl = `${SITE_URL}/${locale}${pathname}`;
+  const t = await getTranslations({ locale, namespace: "alternativesIndex" });
 
-  const meta = {
-    en: {
-      title:
-        "Best Group Trip Planning Apps Compared (2026) — WePlanify",
-      description:
-        "Side-by-side comparison of the best group travel apps: Wanderlog, SquadTrip, TripIt, Stippl, Splitwise. Pick the right one for your next group adventure.",
-    },
-    fr: {
-      title:
-        "Meilleures Applications de Voyage de Groupe Comparées (2026) — WePlanify",
-      description:
-        "Comparatif côte à côte des meilleures apps voyage : Wanderlog, SquadTrip, TripIt, Stippl, Splitwise. Trouve l'app idéale pour ta prochaine aventure entre amis.",
-    },
-  };
-
-  const loc = meta[locale as keyof typeof meta] ?? meta.en;
+  const title = t("meta.title");
+  const description = t("meta.description");
 
   return {
-    title: loc.title,
-    description: loc.description,
+    title,
+    description,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       url: currentUrl,
       siteName: "WePlanify",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     twitter: {
       card: "summary_large_image",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     alternates: {
       canonical: currentUrl,
@@ -94,18 +80,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // ---------------------------------------------------------------------------
 // Data
 // ---------------------------------------------------------------------------
-
-const features: Feature[] = [
-  { key: "collab_itinerary", en: "Collaborative itinerary", fr: "Itinéraire collaboratif" },
-  { key: "polls", en: "Group polls / voting", fr: "Sondages / votes de groupe" },
-  { key: "budget", en: "Shared budget tracker", fr: "Suivi de budget partagé" },
-  { key: "packing", en: "Packing lists", fr: "Listes de bagages" },
-  { key: "discovery", en: "Activity discovery", fr: "Découverte d'activités" },
-  { key: "free", en: "Free plan", fr: "Plan gratuit" },
-  { key: "french", en: "Available in French", fr: "Disponible en français" },
-  { key: "realtime", en: "Real-time collaboration", fr: "Collaboration en temps réel" },
-  { key: "mobile", en: "Mobile app", fr: "Application mobile" },
-];
 
 const apps: AppColumn[] = [
   {
@@ -208,128 +182,6 @@ const apps: AppColumn[] = [
   },
 ];
 
-const competitorDetails = {
-  en: [
-    {
-      name: "Wanderlog",
-      text: "Wanderlog is a map-based itinerary builder with route visualization. It lacks group polls, shared budget tracking, and French language support — features that are essential for group trip planning.",
-    },
-    {
-      name: "SquadTrip",
-      text: "SquadTrip handles group payments and RSVP management. It does not include packing lists, activity discovery, or French language support, so groups still need additional tools to plan the full trip.",
-    },
-    {
-      name: "Troupe",
-      text: "Troupe lets groups vote on activity suggestions. It covers only the decision phase — there is no budget tracking, no packing lists, and no French support, leaving most trip logistics unaddressed.",
-    },
-    {
-      name: "TripIt",
-      text: "TripIt assembles itineraries from forwarded booking emails. It is designed for solo travelers — group collaboration, polls, and shared budgets are not available, and most features require a paid Pro subscription.",
-    },
-    {
-      name: "Splitwise",
-      text: "Splitwise tracks shared expenses across a group. It has no trip planning features — no itinerary, no polls, no packing lists — so most groups need a second app alongside it. WePlanify includes built-in budget tracking along with every other planning tool.",
-    },
-    {
-      name: "Stippl",
-      text: "Stippl is a visual travel planner with community-shared itineraries and photo journals. It lacks group polls, shared budget tracking, and French language support — making it more suited for solo travelers than for coordinating a group trip.",
-    },
-  ],
-  fr: [
-    {
-      name: "Wanderlog",
-      text: "Wanderlog est un créateur d'itinéraires basé sur la carte avec visualisation de parcours. Il ne propose ni sondages de groupe, ni suivi de budget partagé, ni support du français — des fonctionnalités essentielles pour planifier un voyage de groupe.",
-    },
-    {
-      name: "SquadTrip",
-      text: "SquadTrip gère les paiements de groupe et les confirmations de présence. Il n'inclut pas de listes de bagages, de découverte d'activités ni de support du français, ce qui oblige les groupes à utiliser d'autres outils pour planifier le reste du voyage.",
-    },
-    {
-      name: "Troupe",
-      text: "Troupe permet aux groupes de voter sur des suggestions d'activités. Il ne couvre que la phase de décision — pas de suivi de budget, pas de listes de bagages et pas de support du français, laissant la majorité de la logistique du voyage sans solution.",
-    },
-    {
-      name: "TripIt",
-      text: "TripIt crée des itinéraires à partir d'e-mails de réservation transférés. Il est conçu pour les voyageurs solo — la collaboration de groupe, les sondages et les budgets partagés ne sont pas disponibles, et la plupart des fonctions nécessitent un abonnement Pro payant.",
-    },
-    {
-      name: "Splitwise",
-      text: "Splitwise permet de suivre les dépenses partagées au sein d'un groupe. Il n'a aucune fonctionnalité de planification de voyage — pas d'itinéraire, pas de sondages, pas de listes de bagages — ce qui oblige la plupart des groupes à utiliser une deuxième application. WePlanify intègre le suivi de budget avec tous les autres outils de planification.",
-    },
-    {
-      name: "Stippl",
-      text: "Stippl est un planificateur de voyage visuel avec des itinéraires partagés par la communauté et des carnets photo. Il ne propose ni sondages de groupe, ni suivi de budget partagé, ni support du français — ce qui le rend plus adapté aux voyageurs solo qu'à la coordination d'un voyage de groupe.",
-    },
-  ],
-};
-
-const content = {
-  en: {
-    heroTitle: "Best Group Trip Planning Apps in 2026",
-    heroSubtitle: "A complete, side-by-side comparison",
-    heroIntro:
-      "Planning a trip with friends or family should be exciting, not stressful. We compared the most popular group travel apps so you can pick the right tool for your next adventure. Features, pricing, and everything you need to decide.",
-    comparisonTitle: "Feature Comparison",
-    competitorsTitle: "A Closer Look at Each App",
-    whyTitle: "Why Choose WePlanify?",
-    whyPoints: [
-      {
-        title: "All-in-one platform",
-        desc: "Itinerary, budget, polls, packing lists and activity discovery in a single app. No need to juggle three different tools.",
-      },
-      {
-        title: "Free forever",
-        desc: "Every core feature is free with no hidden paywalls or trial limits. Plan as many trips as you want.",
-      },
-      {
-        title: "Bilingual (EN / FR)",
-        desc: "Fully available in English and French — a rare find among travel planning apps.",
-      },
-      {
-        title: "Built for group decisions",
-        desc: "Polls, voting, and real-time collaboration ensure everyone has a say in the plan.",
-      },
-    ],
-    ctaTitle: "Ready to plan your next group trip?",
-    ctaButton: "Get started for free",
-    comingSoon: "Coming soon",
-    freemium: "Freemium",
-    webApp: "Web app",
-  },
-  fr: {
-    heroTitle: "Meilleures Applications de Voyage de Groupe en 2026",
-    heroSubtitle: "Comparatif complet, côte à côte",
-    heroIntro:
-      "Planifier un voyage entre amis ou en famille devrait être excitant, pas stressant. On a comparé les applications de voyage de groupe les plus populaires pour t'aider à choisir le bon outil pour ta prochaine aventure. Pas de blabla — juste les faits.",
-    comparisonTitle: "Comparatif des Fonctionnalités",
-    competitorsTitle: "Chaque Application en Détail",
-    whyTitle: "Pourquoi Choisir WePlanify ?",
-    whyPoints: [
-      {
-        title: "Plateforme tout-en-un",
-        desc: "Itinéraire, budget, sondages, listes de bagages et découverte d'activités dans une seule application. Pas besoin de jongler entre trois outils différents.",
-      },
-      {
-        title: "Gratuit pour toujours",
-        desc: "Toutes les fonctionnalités principales sont gratuites, sans mur payant caché ni limite d'essai. Planifie autant de voyages que tu veux.",
-      },
-      {
-        title: "Bilingue (EN / FR)",
-        desc: "Entièrement disponible en anglais et en français — une rareté parmi les applications de planification de voyage.",
-      },
-      {
-        title: "Conçu pour les décisions de groupe",
-        desc: "Sondages, votes et collaboration en temps réel pour que chacun ait son mot à dire.",
-      },
-    ],
-    ctaTitle: "Prêt à planifier ton prochain voyage de groupe ?",
-    ctaButton: "Commencer gratuitement",
-    comingSoon: "Bientôt",
-    freemium: "Freemium",
-    webApp: "App web",
-  },
-};
-
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -366,24 +218,25 @@ function CrossIcon() {
 
 function CellValue({
   value,
-  locale,
+  comingSoon,
+  freemium,
 }: {
   value: string | boolean;
-  locale: string;
+  comingSoon: string;
+  freemium: string;
 }) {
-  const t = content[locale as keyof typeof content] ?? content.en;
   if (value === true) return <CheckIcon />;
   if (value === false) return <CrossIcon />;
   if (value === "coming_soon")
     return (
       <span className="text-xs font-karla font-semibold text-amber-600 bg-amber-50 rounded-full px-2 py-0.5">
-        {t.comingSoon}
+        {comingSoon}
       </span>
     );
   if (value === "freemium")
     return (
       <span className="text-xs font-karla font-semibold text-sky-700 bg-sky-50 rounded-full px-2 py-0.5">
-        {t.freemium}
+        {freemium}
       </span>
     );
   return <span className="text-xs font-karla text-gray-500">{value}</span>;
@@ -397,10 +250,15 @@ export default async function AlternativesPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = content[locale as keyof typeof content] ?? content.en;
-  const details =
-    competitorDetails[locale as keyof typeof competitorDetails] ??
-    competitorDetails.en;
+  const t = await getTranslations("alternativesIndex");
+  const features = t.raw("features") as Feature[];
+  const details = t.raw("competitorDetails") as {
+    name: string;
+    text: string;
+  }[];
+  const whyPoints = t.raw("whyPoints") as { title: string; desc: string }[];
+  const comingSoon = t("comingSoon");
+  const freemium = t("freemium");
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -431,13 +289,13 @@ export default async function AlternativesPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("breadcrumb.home"),
         item: `https://www.weplanify.com/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Comparatif" : "Alternatives",
+        name: t("breadcrumb.currentLd"),
         item: `https://www.weplanify.com/${locale}/alternatives`,
       },
     ],
@@ -446,9 +304,7 @@ export default async function AlternativesPage({ params }: Props) {
   const itemListLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: locale === "fr"
-      ? "Meilleures Applications de Voyage de Groupe 2026"
-      : "Best Group Trip Planner Apps 2026",
+    name: t("jsonld.itemListName"),
     itemListElement: apps.map((app, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -481,21 +337,21 @@ export default async function AlternativesPage({ params }: Props) {
             <div className="hidden lg:block mb-8">
               <Breadcrumb
                 items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-                  { label: locale === "fr" ? "Alternatives" : "Alternatives" },
+                  { label: t("breadcrumb.home"), href: `/${locale}` },
+                  { label: t("breadcrumb.currentNav") },
                 ]}
               />
             </div>
           </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
-              {t.heroSubtitle}
+              {t("heroSubtitle")}
             </p>
             <h1 className="font-londrina-solid text-[#001E13] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-tight mb-6">
-              {t.heroTitle}
+              {t("heroTitle")}
             </h1>
             <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              {t.heroIntro}
+              {t("heroIntro")}
             </p>
           </div>
         </section>
@@ -506,7 +362,7 @@ export default async function AlternativesPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.comparisonTitle}
+              {t("comparisonTitle")}
             </h2>
 
             {/* ---------- Desktop table ---------- */}
@@ -515,7 +371,7 @@ export default async function AlternativesPage({ params }: Props) {
                 <thead>
                   <tr className="bg-[#001E13]">
                     <th className="font-karla font-bold text-[#FFFBF5] px-6 py-4 text-sm sticky left-0 bg-[#001E13] z-10 min-w-[200px]">
-                      {locale === "fr" ? "Fonctionnalité" : "Feature"}
+                      {t("featureColumnHeading")}
                     </th>
                     {apps.map((app) => (
                       <th
@@ -540,7 +396,7 @@ export default async function AlternativesPage({ params }: Props) {
                       }
                     >
                       <td className="font-karla text-sm text-[#001E13] px-6 py-3.5 sticky left-0 z-10 bg-inherit">
-                        {locale === "fr" ? feature.fr : feature.en}
+                        {feature.label}
                       </td>
                       {apps.map((app) => (
                         <td
@@ -553,7 +409,8 @@ export default async function AlternativesPage({ params }: Props) {
                         >
                           <CellValue
                             value={app.features[feature.key]}
-                            locale={locale}
+                            comingSoon={comingSoon}
+                            freemium={freemium}
                           />
                         </td>
                       ))}
@@ -592,10 +449,14 @@ export default async function AlternativesPage({ params }: Props) {
                           className="flex items-center justify-between text-sm font-karla"
                         >
                           <span className="text-[#001E13]/80">
-                            {locale === "fr" ? feature.fr : feature.en}
+                            {feature.label}
                           </span>
                           <span className="ml-3 shrink-0">
-                            <CellValue value={val} locale={locale} />
+                            <CellValue
+                              value={val}
+                              comingSoon={comingSoon}
+                              freemium={freemium}
+                            />
                           </span>
                         </li>
                       );
@@ -613,7 +474,7 @@ export default async function AlternativesPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.competitorsTitle}
+              {t("competitorsTitle")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
               {details.map((comp) => (
@@ -639,10 +500,10 @@ export default async function AlternativesPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-5xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-12">
-              {t.whyTitle}
+              {t("whyTitle")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
-              {t.whyPoints.map((point, i) => (
+              {whyPoints.map((point, i) => (
                 <div
                   key={i}
                   className="rounded-2xl bg-[#001E13] p-6 lg:p-8 text-[#FFFBF5]"
@@ -670,51 +531,45 @@ export default async function AlternativesPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-5xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {locale === "fr" ? "Découvrir aussi" : "Discover More"}
+              {t("discoverMore.heading")}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Link href={`/${locale}/trip-with-friends`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Voyage entre Amis" : "Trip with Friends"}
+                    {t("discoverMore.cards.friends.title")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Organisez un voyage de groupe entre amis facilement avec WePlanify."
-                      : "Plan a group trip with friends effortlessly using WePlanify."}
+                    {t("discoverMore.cards.friends.desc")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                    {t("discoverMore.cards.friends.cta")}
                   </span>
                 </div>
               </Link>
               <Link href={`/${locale}/bachelorette-trip`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Organiser un EVJF" : "Plan a Bachelorette Trip"}
+                    {t("discoverMore.cards.bachelorette.title")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Tout ce qu'il faut pour planifier un enterrement de vie de jeune fille inoubliable sans stress."
-                      : "Everything you need to plan an unforgettable bachelorette party trip, stress-free."}
+                    {t("discoverMore.cards.bachelorette.desc")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                    {t("discoverMore.cards.bachelorette.cta")}
                   </span>
                 </div>
               </Link>
               <Link href={`/${locale}/guides/plan-group-trip`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Guide : Organiser un Voyage de Groupe" : "Guide: How to Plan a Group Trip"}
+                    {t("discoverMore.cards.guide.title")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Le guide complet étape par étape pour organiser un voyage de groupe réussi."
-                      : "The complete step-by-step guide to planning a successful group trip."}
+                    {t("discoverMore.cards.guide.desc")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Lire le guide →" : "Read the guide →"}
+                    {t("discoverMore.cards.guide.cta")}
                   </span>
                 </div>
               </Link>
@@ -728,13 +583,13 @@ export default async function AlternativesPage({ params }: Props) {
         <section className="px-4 lg:px-8 pb-12 lg:pb-20">
           <div className="max-w-4xl mx-auto rounded-[24px] lg:rounded-[32px] bg-[#F6391A] px-8 py-12 lg:py-16 text-center">
             <h2 className="font-londrina-solid text-[#FFFBF5] text-2xl lg:text-4xl mb-4">
-              {t.ctaTitle}
+              {t("ctaTitle")}
             </h2>
             <Link
               href="https://app.weplanify.com"
               className="inline-block mt-4 px-8 py-3 bg-[#FFFBF5] text-[#F6391A] font-karla font-bold rounded-full text-base lg:text-lg hover:shadow-lg transition-shadow"
             >
-              {t.ctaButton}
+              {t("ctaButton")}
             </Link>
           </div>
         </section>

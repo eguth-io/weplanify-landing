@@ -11,7 +11,7 @@ import StickyCTA from "@/components/StickyCTA";
 import { StructuredData } from "@/components/StructuredData";
 import SoftwareApplicationSchema from "@/app/structured-data";
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, setRequestLocale } from 'next-intl/server';
+import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
@@ -77,6 +77,8 @@ export default async function LocaleLayout({ children, params }: Props) {
   // Providing all messages to the client side
   const messages = await getMessages();
 
+  const t = await getTranslations("rootLayout");
+
   return (
     <html lang={locale}>
       <head>
@@ -91,21 +93,21 @@ export default async function LocaleLayout({ children, params }: Props) {
 
         <NextIntlClientProvider messages={messages}>
           {children}
+
+          {/* Sticky CTA — appears on scroll, all pages */}
+          <StickyCTA text={t("stickyCta")} />
+
+          {/* Cookie Consent Banner */}
+          <CookieConsent />
+          {/* Analytics Scripts — only loads after consent */}
+          <Analytics />
+          {/* Tracks SPA navigations as page_view events */}
+          <PageViewTracker />
+          {/* Captures first-touch campaign source (utm_*) and persists it for the visit */}
+          <FirstTouchTracker />
+          {/* Rewrites in-content register CTAs to the first-touch source at click time */}
+          <FirstTouchLinkRewriter />
         </NextIntlClientProvider>
-
-        {/* Sticky CTA — appears on scroll, all pages */}
-        <StickyCTA text={locale === "fr" ? "Démarrer mon voyage" : "Start my trip"} />
-
-        {/* Cookie Consent Banner */}
-        <CookieConsent />
-        {/* Analytics Scripts — only loads after consent */}
-        <Analytics />
-        {/* Tracks SPA navigations as page_view events */}
-        <PageViewTracker />
-        {/* Captures first-touch campaign source (utm_*) and persists it for the visit */}
-        <FirstTouchTracker />
-        {/* Rewrites in-content register CTAs to the first-touch source at click time */}
-        <FirstTouchLinkRewriter />
       </body>
     </html>
   );

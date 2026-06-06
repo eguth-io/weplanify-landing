@@ -2,15 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { AiGlobeJourney } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, {
+type Copy = {
   you: string;
   brand: string;
   chatBubbles: string[];
@@ -29,73 +27,6 @@ const COPY: Record<Lang, {
   visualTitle: string;
   capabilitiesSubtitle: string;
   freeNoCard: string;
-}> = {
-  fr: {
-    you: "Toi",
-    brand: "WePlanify IA",
-    chatBubbles: [
-      "Je veux passer 2 semaines au Japon en avril avec ma copine. On adore la nature, la cuisine et les temples. Budget moyen.",
-      "Excellent choix ! Le Japon en avril, c'est la saison des cerisiers. Je suggère un itinéraire Tokyo — Kyoto — Osaka avec des étapes à Nara et Hakone. Tu veux voir les options d'hébergement ?",
-      "Oui, plutôt des ryokans traditionnels si possible",
-      "Parfait ! J'ai sélectionné 3 ryokans avec onsen privé à Hakone et 2 machiya rénovées à Kyoto. Je calcule aussi les trajets JR Pass pour optimiser tes déplacements...",
-    ],
-    chips: ["Ajouter une rando", "Cours de sushi", "Voir le JR Pass", "Ajuster le budget"],
-    modesTitle: "Choisis ton style de planification",
-    modesSubtitle: "Que tu préfères tout maîtriser ou laisser l'IA s'en charger, WePlanify s'adapte à toi.",
-    manualTitle: "Planification manuelle",
-    manualSubtitle: "Contrôle total sur chaque détail. Idéal pour les voyageurs qui aiment construire leur propre aventure.",
-    manualSteps: [
-      { title: "Crée ton voyage", description: "Choisis la destination, les dates et invite tes compagnons de voyage." },
-      { title: "Ajoute des étapes", description: "Construis ton itinéraire étape par étape, avec plusieurs stops." },
-      { title: "Remplis chaque journée", description: "Glissez-déposez activités, restaurants et hébergements." },
-      { title: "Collabore", description: "Le groupe ajoute ses idées et vote sur les options." },
-    ],
-    aiTitle: "Planification par IA",
-    aiSubtitle: "Décris ton voyage de rêve et laisse l'IA créer un itinéraire personnalisé en quelques secondes.",
-    aiUserMsg: "2 semaines au Japon, saison des cerisiers, nature et temples",
-    aiAssistantMsg: "Création de ton itinéraire Tokyo → Kyoto → Osaka avec ryokans et visites de temples...",
-    aiTags: ["Itinéraire instantané", "Suggestions intelligentes", "Itinéraire optimisé"],
-    bestOfBoth: {
-      strong: "Le meilleur des deux mondes :",
-      rest: " commence avec l'IA puis ajuste manuellement. Ou planifie à la main et demande à l'IA de combler les vides.",
-    },
-    visualTitle: "L'IA visualise ton voyage",
-    capabilitiesSubtitle: "Plus qu'un simple assistant — une vraie expertise voyage propulsée par l'IA.",
-    freeNoCard: "Inscription gratuite. Sans carte bancaire.",
-  },
-  en: {
-    you: "You",
-    brand: "WePlanify AI",
-    chatBubbles: [
-      "I want to spend 2 weeks in Japan in April with my girlfriend. We love nature, food, and temples. Medium budget.",
-      "Great choice! Japan in April is cherry blossom season. I suggest a Tokyo — Kyoto — Osaka route with stops in Nara and Hakone. Want me to show you accommodation options?",
-      "Yes, preferably traditional ryokans if possible",
-      "Excellent choice! I've selected 3 ryokans with private onsen in Hakone and 2 renovated machiya in Kyoto. I'm also calculating JR Pass routes to optimize your travel...",
-    ],
-    chips: ["Add a hike", "Sushi class", "View JR Pass", "Adjust budget"],
-    modesTitle: "Choose your planning style",
-    modesSubtitle: "Whether you prefer hands-on control or AI-powered convenience, WePlanify adapts to you.",
-    manualTitle: "Manual Planning",
-    manualSubtitle: "Full control over every detail. Perfect for travelers who love crafting their own adventures.",
-    manualSteps: [
-      { title: "Create your trip", description: "Set destination, dates, and invite your travel companions." },
-      { title: "Add destinations", description: "Build your itinerary step by step with multiple stops." },
-      { title: "Fill each day", description: "Drag & drop activities, restaurants, and accommodations." },
-      { title: "Collaborate", description: "Your group adds ideas and votes on options." },
-    ],
-    aiTitle: "AI-Powered Planning",
-    aiSubtitle: "Describe your dream trip and let AI create a personalized itinerary in seconds.",
-    aiUserMsg: "2 weeks in Japan, cherry blossom season, nature and temples",
-    aiAssistantMsg: "Creating your Tokyo → Kyoto → Osaka itinerary with ryokans and temple visits...",
-    aiTags: ["Instant itinerary", "Smart suggestions", "Route optimization"],
-    bestOfBoth: {
-      strong: "Best of both worlds:",
-      rest: " start with AI suggestions, then fine-tune manually. Or plan manually and ask AI to fill gaps.",
-    },
-    visualTitle: "The AI visualizes your journey",
-    capabilitiesSubtitle: "More than just an assistant — real travel expertise powered by AI.",
-    freeNoCard: "Free signup. No credit card required.",
-  },
 };
 
 interface FeaturePageData {
@@ -215,8 +146,7 @@ function ManualPlanningCard({
 
 export default function PlanningFeature({ data }: { data: FeaturePageData }) {
   const locale = useLocale();
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const t = COPY[lang];
+  const t = useTranslations("planningFeature").raw("copy") as Copy;
 
   return (
     <>

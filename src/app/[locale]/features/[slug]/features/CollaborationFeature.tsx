@@ -2,15 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { LiveCollaboration } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, {
+type Copy = {
   heroTitle: string;
   heroTitleHighlight: string;
   heroSubtitle: string;
@@ -24,47 +22,6 @@ const COPY: Record<Lang, {
   recentActivity: string;
   activities: { avatar: string; name: string; action: string; time: string }[];
   freeNoCard: string;
-}> = {
-  fr: {
-    heroTitle: "Planifiez un voyage à 10",
-    heroTitleHighlight: "sans un seul message WhatsApp",
-    heroSubtitle: "Modifications en temps réel, sondages intégrés, historique clair. Tout le monde sur la même page, littéralement.",
-    inviteMore: "Inviter plus",
-    liveLabel: "En direct",
-    fakeTripTitle: "Road Trip Portugal",
-    fakeDays: ["Jour 1 — Lisbonne", "Jour 2 — Sintra", "Jour 3 — Porto"],
-    editingTag: "Marie modifie…",
-    feedTitle: "Ne ratez plus rien",
-    feedSubtitle: "Le fil d'activité montre tout ce qui se passe sur votre voyage. Qui a ajouté quoi, quand et où.",
-    recentActivity: "Activité récente",
-    activities: [
-      { avatar: "👩‍🎨", name: "Marie", action: "a ajouté « Dîner à Alfama »", time: "il y a 2 min" },
-      { avatar: "🧔", name: "Thomas", action: "a modifié l'hôtel à Porto", time: "il y a 5 min" },
-      { avatar: "👱‍♀️", name: "Emma", action: "a voté pour le restaurant", time: "il y a 12 min" },
-      { avatar: "🧑‍💻", name: "Lucas", action: "a rejoint le voyage", time: "il y a 1 h" },
-    ],
-    freeNoCard: "Inscription gratuite. Sans carte bancaire.",
-  },
-  en: {
-    heroTitle: "Plan a trip with 10 friends",
-    heroTitleHighlight: "without a single WhatsApp message",
-    heroSubtitle: "Real-time edits, built-in polls, clear history. Everyone on the same page, literally.",
-    inviteMore: "Invite more",
-    liveLabel: "Live",
-    fakeTripTitle: "Road Trip Portugal",
-    fakeDays: ["Day 1 — Lisbon", "Day 2 — Sintra", "Day 3 — Porto"],
-    editingTag: "Marie editing…",
-    feedTitle: "Never miss a thing",
-    feedSubtitle: "The activity feed shows everything happening on your trip. Who added what, when, and where.",
-    recentActivity: "Recent activity",
-    activities: [
-      { avatar: "👩‍🎨", name: "Marie", action: "added \"Dinner in Alfama\"", time: "2 min ago" },
-      { avatar: "🧔", name: "Thomas", action: "updated the hotel in Porto", time: "5 min ago" },
-      { avatar: "👱‍♀️", name: "Emma", action: "voted for the restaurant", time: "12 min ago" },
-      { avatar: "🧑‍💻", name: "Lucas", action: "joined the trip", time: "1 h ago" },
-    ],
-    freeNoCard: "Free signup. No credit card required.",
-  },
 };
 
 interface FeaturePageData {
@@ -179,8 +136,7 @@ function ActivityItem({
 
 export default function CollaborationFeature({ data }: { data: FeaturePageData }) {
   const locale = useLocale();
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const t = COPY[lang];
+  const t = useTranslations("collaborationFeature").raw("copy") as Copy;
 
   return (
     <>

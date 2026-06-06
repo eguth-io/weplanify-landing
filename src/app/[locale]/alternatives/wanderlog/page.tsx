@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -19,8 +19,6 @@ type Props = {
 
 type Feature = {
   key: string;
-  en: string;
-  fr: string;
   weplanify: string | boolean;
   wanderlog: string | boolean;
 };
@@ -41,41 +39,28 @@ const SITE_URL = "https://www.weplanify.com";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "altWanderlog" });
   const pathname = "/alternatives/wanderlog";
   const currentUrl = `${SITE_URL}/${locale}${pathname}`;
 
-  const meta = {
-    en: {
-      title:
-        "Wanderlog Alternative: Free Group Trip Planner (2026) | WePlanify",
-      description:
-        "Looking for a Wanderlog alternative for group trips? WePlanify offers real-time collaborative itineraries, shared budgets, polls and packing lists \u2014 free, bilingual (EN/FR).",
-    },
-    fr: {
-      title:
-        "Alternative \u00e0 Wanderlog : Voyage de Groupe Collaboratif (2026)",
-      description:
-        "Cherche une alternative \u00e0 Wanderlog pour tes voyages de groupe ? WePlanify : itin\u00e9raire collaboratif en temps r\u00e9el, sondages, budget partag\u00e9, packing list. Gratuit, FR/EN.",
-    },
-  };
-
-  const loc = meta[locale as keyof typeof meta] ?? meta.en;
+  const title = t("meta.title");
+  const description = t("meta.description");
 
   return {
-    title: loc.title,
-    description: loc.description,
+    title,
+    description,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       url: currentUrl,
       siteName: "WePlanify",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     twitter: {
       card: "summary_large_image",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     alternates: {
       canonical: currentUrl,
@@ -93,211 +78,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // ---------------------------------------------------------------------------
 
 const features: Feature[] = [
-  {
-    key: "collab_itinerary",
-    en: "Collaborative itinerary",
-    fr: "Itin\u00e9raire collaboratif",
-    weplanify: true,
-    wanderlog: true,
-  },
-  {
-    key: "polls",
-    en: "Group polls / voting",
-    fr: "Sondages / votes de groupe",
-    weplanify: true,
-    wanderlog: false,
-  },
-  {
-    key: "budget",
-    en: "Shared budget tracker",
-    fr: "Suivi de budget partag\u00e9",
-    weplanify: true,
-    wanderlog: "basic",
-  },
-  {
-    key: "packing",
-    en: "Packing lists",
-    fr: "Listes de bagages",
-    weplanify: true,
-    wanderlog: false,
-  },
-  {
-    key: "map",
-    en: "Map integration",
-    fr: "Int\u00e9gration cartographique",
-    weplanify: false,
-    wanderlog: true,
-  },
-  {
-    key: "discovery",
-    en: "Activity discovery",
-    fr: "D\u00e9couverte d\u2019activit\u00e9s",
-    weplanify: true,
-    wanderlog: true,
-  },
-  {
-    key: "offline",
-    en: "Offline access",
-    fr: "Acc\u00e8s hors ligne",
-    weplanify: false,
-    wanderlog: true,
-  },
-  {
-    key: "mobile",
-    en: "Mobile app",
-    fr: "Application mobile",
-    weplanify: "web_app",
-    wanderlog: true,
-  },
-  {
-    key: "free",
-    en: "Free plan",
-    fr: "Plan gratuit",
-    weplanify: true,
-    wanderlog: true,
-  },
-  {
-    key: "french",
-    en: "French language",
-    fr: "Disponible en fran\u00e7ais",
-    weplanify: true,
-    wanderlog: false,
-  },
-  {
-    key: "realtime",
-    en: "Real-time collaboration",
-    fr: "Collaboration en temps r\u00e9el",
-    weplanify: true,
-    wanderlog: true,
-  },
+  { key: "collab_itinerary", weplanify: true, wanderlog: true },
+  { key: "polls", weplanify: true, wanderlog: false },
+  { key: "budget", weplanify: true, wanderlog: "basic" },
+  { key: "packing", weplanify: true, wanderlog: false },
+  { key: "map", weplanify: false, wanderlog: true },
+  { key: "discovery", weplanify: true, wanderlog: true },
+  { key: "offline", weplanify: false, wanderlog: true },
+  { key: "mobile", weplanify: "web_app", wanderlog: true },
+  { key: "free", weplanify: true, wanderlog: true },
+  { key: "french", weplanify: true, wanderlog: false },
+  { key: "realtime", weplanify: true, wanderlog: true },
 ];
-
-const content = {
-  en: {
-    heroTitle: "WePlanify vs Wanderlog",
-    heroSubtitle: "Complete comparison \u2014 2026",
-    heroIntro:
-      "Wanderlog and WePlanify both help you plan trips, but they solve different problems. Wanderlog is an itinerary builder oriented toward solo and couple travel. WePlanify is designed from the ground up for groups. Here is an objective, side-by-side look at both apps so you can decide which one fits your next trip.",
-    verdictTitle: "TL;DR",
-    verdict:
-      "Wanderlog focuses on solo/couple travel with map-based planning. WePlanify is built specifically for groups with polls, shared budgets, and collaborative decision-making. Both are free.",
-    comparisonTitle: "Head-to-Head Comparison",
-    wanderlogShinesTitle: "Where Wanderlog Shines",
-    wanderlogShinesPoints: [
-      "Map integration \u2014 plot your route on an interactive map with driving/walking directions between stops.",
-      "Offline access \u2014 download your itinerary and maps for use without an internet connection.",
-      "Mobile apps \u2014 native iOS and Android apps available for on-the-go access.",
-      "Restaurant and hotel search \u2014 search, save, and organize places to eat and stay within the app.",
-    ],
-    weplanifyWinsTitle: "Where WePlanify Wins",
-    weplanifyWinsPoints: [
-      "Group polls and voting \u2014 let everyone vote on destinations, dates, and activities so no one feels left out.",
-      "Shared budget tracker \u2014 track group expenses, split costs, and keep everyone on the same financial page.",
-      "Packing lists \u2014 collaborative packing lists ensure nothing gets forgotten and items are not duplicated.",
-      "Bilingual (EN/FR) \u2014 fully available in English and French, a rare feature among travel planning apps.",
-    ],
-    chooseWanderlogTitle: "Who Should Choose Wanderlog?",
-    chooseWanderlogPoints: [
-      "Solo travellers or couples who want a visual, map-first planning experience.",
-      "Road trip planners who need offline maps and driving directions.",
-      "Travellers who prefer native mobile apps over web-based tools.",
-      "People focused on discovering restaurants and hotels within the planning tool.",
-    ],
-    chooseWeplanifyTitle: "Who Should Choose WePlanify?",
-    chooseWeplanifyPoints: [
-      "Friend groups of 4 or more who need to coordinate schedules, preferences, and budgets.",
-      "Bachelorette or bachelor party planners juggling opinions from a large group.",
-      "Anyone who wants built-in group decision tools like polls and shared task lists.",
-      "Francophone travellers who need a fully French-language experience.",
-    ],
-    faqTitle: "Frequently Asked Questions",
-    faqs: [
-      {
-        q: "Can I switch from Wanderlog to WePlanify?",
-        a: "Yes! You can start a new trip on WePlanify in minutes. While there is no automated import, WePlanify\u2019s simple interface makes it fast to recreate your itinerary \u2014 and you will immediately gain access to group features like polls and shared budgets that Wanderlog does not offer.",
-      },
-      {
-        q: "Why switch from Wanderlog to WePlanify?",
-        a: "If you are planning a trip with a group, Wanderlog lacks polls, shared budgets, and collaborative packing lists. WePlanify provides all of these tools out of the box, making group coordination seamless instead of scattered across multiple apps.",
-      },
-      {
-        q: "What does Wanderlog lack for group trips?",
-        a: "Wanderlog does not offer group voting, shared expense tracking, or collaborative packing lists. Its collaboration features are limited to sharing an itinerary, but decision-making tools for groups are absent. WePlanify fills that gap entirely.",
-      },
-      {
-        q: "Which app is better for large groups?",
-        a: "WePlanify is the clear winner for large groups. Features like group polls, shared budgets, and collaborative packing lists are specifically designed to handle the complexity of coordinating multiple travellers. Wanderlog\u2019s collaboration features work for small groups but lack the decision-making tools larger groups need.",
-      },
-    ],
-    ctaTitle: "Try WePlanify free \u2014 built for groups",
-    ctaButton: "Get started for free",
-    crossLinksTitle: "Explore More",
-    basic: "Basic",
-    webApp: "Web app",
-  },
-  fr: {
-    heroTitle: "WePlanify vs Wanderlog",
-    heroSubtitle: "Comparaison compl\u00e8te \u2014 2026",
-    heroIntro:
-      "Wanderlog et WePlanify t'aident tous deux \u00e0 planifier des voyages, mais ils r\u00e9pondent \u00e0 des besoins diff\u00e9rents. Wanderlog est un cr\u00e9ateur d\u2019itin\u00e9raires orient\u00e9 vers les voyages en solo ou en couple. WePlanify est con\u00e7u de A \u00e0 Z pour les groupes. Voici un comparatif objectif des deux applications pour t'aider \u00e0 choisir celle qui convient \u00e0 ton prochain voyage.",
-    verdictTitle: "En bref",
-    verdict:
-      "Wanderlog se concentre sur les voyages solo/couple avec sa planification bas\u00e9e sur les cartes. WePlanify est con\u00e7u sp\u00e9cifiquement pour les groupes avec des sondages, des budgets partag\u00e9s et une prise de d\u00e9cision collaborative. Les deux sont gratuits.",
-    comparisonTitle: "Comparatif Face \u00e0 Face",
-    wanderlogShinesTitle: "L\u00e0 o\u00f9 Wanderlog Brille",
-    wanderlogShinesPoints: [
-      "Int\u00e9gration cartographique \u2014 trace ton itin\u00e9raire sur une carte interactive avec les directions entre chaque \u00e9tape.",
-      "Acc\u00e8s hors ligne \u2014 t\u00e9l\u00e9charge ton itin\u00e9raire et tes cartes pour les utiliser sans connexion internet.",
-      "Applications mobiles \u2014 applications natives iOS et Android disponibles pour un acc\u00e8s en d\u00e9placement.",
-      "Recherche de restaurants et h\u00f4tels \u2014 cherchez, enregistrez et organisez les lieux o\u00f9 manger et dormir dans l\u2019application.",
-    ],
-    weplanifyWinsTitle: "L\u00e0 o\u00f9 WePlanify Gagne",
-    weplanifyWinsPoints: [
-      "Sondages et votes de groupe \u2014 laissez chacun voter sur les destinations, les dates et les activit\u00e9s pour que personne ne se sente exclu.",
-      "Suivi de budget partag\u00e9 \u2014 suivez les d\u00e9penses du groupe, r\u00e9partissez les co\u00fbts et gardez tout le monde align\u00e9 financi\u00e8rement.",
-      "Listes de bagages \u2014 des listes collaboratives pour ne rien oublier et \u00e9viter les doublons.",
-      "Bilingue (EN/FR) \u2014 enti\u00e8rement disponible en anglais et en fran\u00e7ais, une fonctionnalit\u00e9 rare parmi les applications de voyage.",
-    ],
-    chooseWanderlogTitle: "Qui devrait choisir Wanderlog ?",
-    chooseWanderlogPoints: [
-      "Les voyageurs solo ou les couples qui veulent une exp\u00e9rience de planification visuelle centr\u00e9e sur la carte.",
-      "Les planificateurs de road trips qui ont besoin de cartes hors ligne et d\u2019itin\u00e9raires routiers.",
-      "Les voyageurs qui pr\u00e9f\u00e8rent les applications mobiles natives aux outils web.",
-      "Ceux qui veulent d\u00e9couvrir restaurants et h\u00f4tels directement dans l\u2019outil de planification.",
-    ],
-    chooseWeplanifyTitle: "Qui devrait choisir WePlanify ?",
-    chooseWeplanifyPoints: [
-      "Les groupes d\u2019amis de 4 personnes ou plus qui doivent coordonner emplois du temps, pr\u00e9f\u00e9rences et budgets.",
-      "Les organisateurs d\u2019EVJF ou d\u2019EVG qui jonglent avec les avis d\u2019un grand groupe.",
-      "Tous ceux qui veulent des outils de d\u00e9cision de groupe int\u00e9gr\u00e9s comme les sondages et les listes de t\u00e2ches partag\u00e9es.",
-      "Les voyageurs francophones qui ont besoin d\u2019une exp\u00e9rience enti\u00e8rement en fran\u00e7ais.",
-    ],
-    faqTitle: "Questions Fr\u00e9quentes",
-    faqs: [
-      {
-        q: "Peut-on passer de Wanderlog \u00e0 WePlanify ?",
-        a: "Oui ! Tu peux cr\u00e9er un nouveau voyage sur WePlanify en quelques minutes. Bien qu\u2019il n\u2019y ait pas d\u2019import automatis\u00e9, l\u2019interface simple de WePlanify permet de recr\u00e9er rapidement ton itin\u00e9raire \u2014 et tu auras imm\u00e9diatement acc\u00e8s aux fonctionnalit\u00e9s de groupe comme les sondages et les budgets partag\u00e9s que Wanderlog ne propose pas.",
-      },
-      {
-        q: "Pourquoi passer de Wanderlog \u00e0 WePlanify ?",
-        a: "Si tu planifies un voyage en groupe, Wanderlog ne propose ni sondages, ni budgets partag\u00e9s, ni listes de bagages collaboratives. WePlanify offre tous ces outils nativement, rendant la coordination de groupe fluide au lieu d\u2019\u00eatre dispers\u00e9e sur plusieurs applications.",
-      },
-      {
-        q: "Que manque-t-il \u00e0 Wanderlog pour les voyages de groupe ?",
-        a: "Wanderlog ne propose pas de votes de groupe, de suivi de d\u00e9penses partag\u00e9es ni de listes de bagages collaboratives. Ses fonctionnalit\u00e9s de collaboration se limitent au partage d\u2019un itin\u00e9raire, mais les outils de prise de d\u00e9cision pour les groupes sont absents. WePlanify comble enti\u00e8rement cette lacune.",
-      },
-      {
-        q: "Quelle application est meilleure pour les grands groupes ?",
-        a: "WePlanify est le grand gagnant pour les grands groupes. Les sondages de groupe, les budgets partag\u00e9s et les listes de bagages collaboratives sont sp\u00e9cifiquement con\u00e7us pour g\u00e9rer la complexit\u00e9 de la coordination de plusieurs voyageurs. Les fonctionnalit\u00e9s de collaboration de Wanderlog fonctionnent pour les petits groupes, mais manquent d\u2019outils de prise de d\u00e9cision dont les grands groupes ont besoin.",
-      },
-    ],
-    ctaTitle: "Essaie WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
-    ctaButton: "Commencer gratuitement",
-    crossLinksTitle: "D\u00e9couvrir aussi",
-    basic: "Basique",
-    webApp: "App web",
-  },
-};
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -341,24 +133,25 @@ function CrossIcon() {
 
 function CellValue({
   value,
-  locale,
+  basicLabel,
+  webAppLabel,
 }: {
   value: string | boolean;
-  locale: string;
+  basicLabel: string;
+  webAppLabel: string;
 }) {
-  const t = content[locale as keyof typeof content] ?? content.en;
   if (value === true) return <CheckIcon />;
   if (value === false) return <CrossIcon />;
   if (value === "basic")
     return (
       <span className="text-xs font-karla font-semibold text-amber-700 bg-amber-50 rounded-full px-2 py-0.5">
-        {t.basic}
+        {basicLabel}
       </span>
     );
   if (value === "web_app")
     return (
       <span className="text-xs font-karla font-semibold text-sky-700 bg-sky-50 rounded-full px-2 py-0.5">
-        {t.webApp}
+        {webAppLabel}
       </span>
     );
   return <span className="text-xs font-karla text-gray-500">{value}</span>;
@@ -372,7 +165,14 @@ export default async function WanderlogComparisonPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = content[locale as keyof typeof content] ?? content.en;
+  const t = await getTranslations("altWanderlog");
+  const basicLabel = t("cell.basic");
+  const webAppLabel = t("cell.webApp");
+  const faqItems = t.raw("faq.items") as { q: string; a: string }[];
+  const wanderlogShinesPoints = t.raw("wanderlogShines.points") as string[];
+  const weplanifyWinsPoints = t.raw("weplanifyWins.points") as string[];
+  const chooseWanderlogPoints = t.raw("chooseWanderlog.points") as string[];
+  const chooseWeplanifyPoints = t.raw("chooseWeplanify.points") as string[];
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -406,13 +206,13 @@ export default async function WanderlogComparisonPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("breadcrumb.home"),
         item: `https://www.weplanify.com/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Comparatif" : "Alternatives",
+        name: t("jsonld.breadcrumbAlternatives"),
         item: `https://www.weplanify.com/${locale}/alternatives`,
       },
       {
@@ -430,7 +230,7 @@ export default async function WanderlogComparisonPage({ params }: Props) {
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: t.faqs.map((faq) => ({
+    mainEntity: faqItems.map((faq) => ({
       "@type": "Question",
       name: faq.q,
       acceptedAnswer: {
@@ -443,9 +243,7 @@ export default async function WanderlogComparisonPage({ params }: Props) {
   const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: locale === "fr"
-      ? "WePlanify vs Wanderlog — Quel Planificateur de Voyage de Groupe Choisir ? (2026)"
-      : "WePlanify vs Wanderlog — Which Group Trip Planner Is Better? (2026)",
+    headline: t("jsonld.articleHeadline"),
     author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
     publisher: { "@type": "Organization", name: "WePlanify", url: "https://www.weplanify.com" },
     datePublished: "2026-03-19",
@@ -478,7 +276,7 @@ export default async function WanderlogComparisonPage({ params }: Props) {
             <div className="hidden lg:block mb-8">
               <Breadcrumb
                 items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: t("breadcrumb.home"), href: `/${locale}` },
                   { label: "Alternatives", href: `/${locale}/alternatives` },
                   { label: "vs Wanderlog" },
                 ]}
@@ -487,13 +285,13 @@ export default async function WanderlogComparisonPage({ params }: Props) {
           </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
-              {t.heroSubtitle}
+              {t("hero.subtitle")}
             </p>
             <h1 className="font-londrina-solid text-[#001E13] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-tight mb-6">
-              {t.heroTitle}
+              {t("hero.title")}
             </h1>
             <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              {t.heroIntro}
+              {t("hero.intro")}
             </p>
           </div>
         </section>
@@ -505,10 +303,10 @@ export default async function WanderlogComparisonPage({ params }: Props) {
           <div className="max-w-3xl mx-auto">
             <div className="rounded-2xl border-2 border-[#EEF899] bg-[#EEF899]/20 p-6 lg:p-8">
               <h2 className="font-londrina-solid text-[#001E13] text-xl lg:text-2xl mb-3">
-                {t.verdictTitle}
+                {t("verdict.title")}
               </h2>
               <p className="font-karla text-[#001E13]/85 text-sm lg:text-base leading-relaxed">
-                {t.verdict}
+                {t("verdict.body")}
               </p>
             </div>
           </div>
@@ -520,7 +318,7 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.comparisonTitle}
+              {t("comparison.title")}
             </h2>
 
             {/* ---------- Desktop table ---------- */}
@@ -529,7 +327,7 @@ export default async function WanderlogComparisonPage({ params }: Props) {
                 <thead>
                   <tr className="bg-[#001E13]">
                     <th className="font-karla font-bold text-[#FFFBF5] px-6 py-4 text-sm min-w-[220px]">
-                      {locale === "fr" ? "Fonctionnalit\u00e9" : "Feature"}
+                      {t("comparison.featureHeader")}
                     </th>
                     <th className="font-karla font-bold text-center px-6 py-4 text-sm text-[#EEF899] min-w-[160px]">
                       WePlanify
@@ -546,13 +344,13 @@ export default async function WanderlogComparisonPage({ params }: Props) {
                       className={i % 2 === 0 ? "bg-white" : "bg-[#FFFBF5]"}
                     >
                       <td className="font-karla text-sm text-[#001E13] px-6 py-3.5">
-                        {locale === "fr" ? feature.fr : feature.en}
+                        {t(`features.${feature.key}`)}
                       </td>
                       <td className="px-6 py-3.5 text-center bg-[#EEF899]/10">
-                        <CellValue value={feature.weplanify} locale={locale} />
+                        <CellValue value={feature.weplanify} basicLabel={basicLabel} webAppLabel={webAppLabel} />
                       </td>
                       <td className="px-6 py-3.5 text-center">
-                        <CellValue value={feature.wanderlog} locale={locale} />
+                        <CellValue value={feature.wanderlog} basicLabel={basicLabel} webAppLabel={webAppLabel} />
                       </td>
                     </tr>
                   ))}
@@ -574,10 +372,10 @@ export default async function WanderlogComparisonPage({ params }: Props) {
                       className="flex items-center justify-between text-sm font-karla"
                     >
                       <span className="text-[#001E13]/80">
-                        {locale === "fr" ? feature.fr : feature.en}
+                        {t(`features.${feature.key}`)}
                       </span>
                       <span className="ml-3 shrink-0">
-                        <CellValue value={feature.weplanify} locale={locale} />
+                        <CellValue value={feature.weplanify} basicLabel={basicLabel} webAppLabel={webAppLabel} />
                       </span>
                     </li>
                   ))}
@@ -595,10 +393,10 @@ export default async function WanderlogComparisonPage({ params }: Props) {
                       className="flex items-center justify-between text-sm font-karla"
                     >
                       <span className="text-[#001E13]/80">
-                        {locale === "fr" ? feature.fr : feature.en}
+                        {t(`features.${feature.key}`)}
                       </span>
                       <span className="ml-3 shrink-0">
-                        <CellValue value={feature.wanderlog} locale={locale} />
+                        <CellValue value={feature.wanderlog} basicLabel={basicLabel} webAppLabel={webAppLabel} />
                       </span>
                     </li>
                   ))}
@@ -613,7 +411,7 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         {/* -------------------------------------------------------------- */}
         <div className="text-center py-8">
           <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="text-[#F6391A] font-karla font-bold hover:underline">
-            {locale === "fr" ? "Essaie WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
+            {t("midCta")}
           </Link>
         </div>
 
@@ -625,10 +423,10 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.wanderlogShinesTitle}
+              {t("wanderlogShines.title")}
             </h2>
             <div className="grid gap-5 sm:grid-cols-2">
-              {t.wanderlogShinesPoints.map((point, i) => (
+              {wanderlogShinesPoints.map((point, i) => (
                 <div
                   key={i}
                   className="rounded-2xl border border-[#001E13]/10 bg-[#FFFBF5] p-6"
@@ -646,10 +444,10 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.weplanifyWinsTitle}
+              {t("weplanifyWins.title")}
             </h2>
             <div className="grid gap-5 sm:grid-cols-2">
-              {t.weplanifyWinsPoints.map((point, i) => (
+              {weplanifyWinsPoints.map((point, i) => (
                 <div
                   key={i}
                   className="rounded-2xl bg-[#001E13] p-6"
@@ -672,10 +470,10 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-3xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-8">
-              {t.chooseWanderlogTitle}
+              {t("chooseWanderlog.title")}
             </h2>
             <ul className="space-y-4">
-              {t.chooseWanderlogPoints.map((point, i) => (
+              {chooseWanderlogPoints.map((point, i) => (
                 <li
                   key={i}
                   className="flex items-start gap-3 font-karla text-sm text-[#001E13]/80 leading-relaxed"
@@ -694,10 +492,10 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-8">
-              {t.chooseWeplanifyTitle}
+              {t("chooseWeplanify.title")}
             </h2>
             <ul className="space-y-4">
-              {t.chooseWeplanifyPoints.map((point, i) => (
+              {chooseWeplanifyPoints.map((point, i) => (
                 <li
                   key={i}
                   className="flex items-start gap-3 font-karla text-sm text-[#001E13]/80 leading-relaxed"
@@ -718,10 +516,10 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-3xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.faqTitle}
+              {t("faq.title")}
             </h2>
             <div className="space-y-6">
-              {t.faqs.map((faq, i) => (
+              {faqItems.map((faq, i) => (
                 <div
                   key={i}
                   className="rounded-2xl border border-[#001E13]/10 bg-[#FFFBF5] p-6"
@@ -744,13 +542,13 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         <section className="px-4 lg:px-8 pb-12 lg:pb-20">
           <div className="max-w-4xl mx-auto rounded-[24px] lg:rounded-[32px] bg-[#F6391A] px-8 py-12 lg:py-16 text-center">
             <h2 className="font-londrina-solid text-[#FFFBF5] text-2xl lg:text-4xl mb-4">
-              {t.ctaTitle}
+              {t("cta.title")}
             </h2>
             <Link
               href="https://app.weplanify.com"
               className="inline-block mt-4 px-8 py-3 bg-[#FFFBF5] text-[#F6391A] font-karla font-bold rounded-full text-base lg:text-lg hover:shadow-lg transition-shadow"
             >
-              {t.ctaButton}
+              {t("cta.button")}
             </Link>
           </div>
         </section>
@@ -761,40 +559,32 @@ export default async function WanderlogComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-5xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.crossLinksTitle}
+              {t("crossLinks.title")}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Link href={`/${locale}/alternatives`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr"
-                      ? "Toutes les Alternatives"
-                      : "All Alternatives"}
+                    {t("crossLinks.all.title")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Compare WePlanify avec toutes les applications de voyage de groupe populaires."
-                      : "Compare WePlanify with all popular group trip planning apps."}
+                    {t("crossLinks.all.text")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Voir le comparatif \u2192" : "See comparison \u2192"}
+                    {t("crossLinks.all.cta")}
                   </span>
                 </div>
               </Link>
               <Link href={`/${locale}/trip-with-friends`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr"
-                      ? "Voyage entre Amis"
-                      : "Trip with Friends"}
+                    {t("crossLinks.friends.title")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Organisez un voyage de groupe entre amis facilement avec WePlanify."
-                      : "Plan a group trip with friends effortlessly using WePlanify."}
+                    {t("crossLinks.friends.text")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus \u2192" : "Read more \u2192"}
+                    {t("crossLinks.friends.cta")}
                   </span>
                 </div>
               </Link>
@@ -804,17 +594,13 @@ export default async function WanderlogComparisonPage({ params }: Props) {
               >
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr"
-                      ? "Guide : Organiser un Voyage de Groupe"
-                      : "Guide: How to Plan a Group Trip"}
+                    {t("crossLinks.guide.title")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Le guide complet \u00e9tape par \u00e9tape pour organiser un voyage de groupe r\u00e9ussi."
-                      : "The complete step-by-step guide to planning a successful group trip."}
+                    {t("crossLinks.guide.text")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Lire le guide \u2192" : "Read the guide \u2192"}
+                    {t("crossLinks.guide.cta")}
                   </span>
                 </div>
               </Link>

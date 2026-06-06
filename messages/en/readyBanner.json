@@ -1,0 +1,36 @@
+{
+  "title": "Ready for your next trip?",
+  "description": "Join thousands of travelers planning better together.",
+  "socialProof": "Join 12,000+ travelers planning smarter trips",
+  "freeNote": "Free signup. No credit card required.",
+  "badges": [
+    {
+      "emoji": "📅",
+      "text": "Launched in 2024",
+      "backgroundColor": "#E83F28",
+      "textColor": "#FFFBF5",
+      "position": "top-left"
+    },
+    {
+      "emoji": "⭐",
+      "text": "4.8/5 satisfaction",
+      "backgroundColor": "#61DBD5",
+      "textColor": "#001E13",
+      "position": "bottom-left"
+    },
+    {
+      "emoji": "🌍",
+      "text": "Top 12 destinations",
+      "backgroundColor": "#FFFBF5",
+      "textColor": "#001E13",
+      "position": "top-right"
+    },
+    {
+      "emoji": "✨",
+      "text": "500+ itineraries created",
+      "backgroundColor": "#005939",
+      "textColor": "#FFFBF5",
+      "position": "bottom-right"
+    }
+  ]
+}

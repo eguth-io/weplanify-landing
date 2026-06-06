@@ -1,0 +1,65 @@
+{
+  "breadcrumb": {
+    "home": "Accueil",
+    "travelGuides": "Guides voyage"
+  },
+  "jsonld": {
+    "touristType": "Voyageur loisirs"
+  },
+  "hero": {
+    "titleSuffix": "guide voyage",
+    "perDay": " /jour",
+    "cta": "Planifier mon voyage",
+    "ctaNote": "Crée ton itinéraire avec ton groupe — gratuit, 30 secondes."
+  },
+  "quickFacts": {
+    "heading": "L'essentiel",
+    "capital": "Capitale",
+    "language": "Langue",
+    "currency": "Monnaie",
+    "timezone": "Fuseau",
+    "plug": "Prise",
+    "driving": "Conduite",
+    "driveLeft": "À gauche",
+    "driveRight": "À droite",
+    "visa": "Visa"
+  },
+  "bestSeason": {
+    "heading": "Quand y aller",
+    "subtitle": "Trois fenêtres à connaître : la meilleure, l'intermédiaire, celle à éviter.",
+    "best": "Meilleur moment",
+    "shoulder": "Saison intermédiaire",
+    "avoid": "À éviter"
+  },
+  "mustSee": {
+    "heading": "Les incontournables",
+    "subtitle": "Les lieux qui justifient le voyage. Cliquez pour ouvrir dans Maps."
+  },
+  "specialties": {
+    "heading": "Spécialités à goûter",
+    "subtitle": "Cuisine, boissons et expériences que le pays fait mieux que personne."
+  },
+  "regions": {
+    "heading": "Les régions à connaître",
+    "subtitle": "Pour cadrer votre itinéraire selon le temps disponible et l'envie."
+  },
+  "itineraries": {
+    "heading": "Itinéraires types",
+    "subtitle": "Trois formats selon le temps disponible. À forker dans WePlanify.",
+    "daysSuffix": "j"
+  },
+  "budget": {
+    "heading": "Budget par jour",
+    "subtitle": "Par personne, hors vols. Trois niveaux de confort.",
+    "perDay": "/jour"
+  },
+  "tips": {
+    "heading": "Codes culturels",
+    "subtitle": "Les petits gestes qui font la différence — et ceux qui mettent mal à l'aise."
+  },
+  "cta": {
+    "heading": "Planifie ton voyage au {country} avec ta team",
+    "body": "Importe cet itinéraire dans WePlanify, invite ton groupe, et organisez le voyage ensemble. Carte partagée, sondages, budget commun — gratuit.",
+    "button": "Commencer — gratuit"
+  }
+}

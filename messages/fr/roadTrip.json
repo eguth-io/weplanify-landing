@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Organiser un Road Trip entre Amis — Planificateur d'Itinéraire de Groupe | WePlanify",
+    "description": "Organisez votre road trip de groupe avec WePlanify. Planification d'itinéraire collaborative, budget essence partagé, coordination des bagages et sondages pour chaque étape."
+  },
+  "breadcrumb": {
+    "home": "Accueil"
+  },
+  "hero": {
+    "title": "La Route, Votre Bande, Zéro Stress",
+    "readTime": "7 min de lecture"
+  },
+  "problem": {
+    "p1": "Les road trips ont l'air simples — on monte en voiture et on roule. Mais en groupe, chaque décision se multiplie. Quel itinéraire ? Combien d'arrêts ? Qui conduit quand ? Où dort-on ? Qui paie l'essence ? Qui apporte la glacière ? Quand vous avez coordonné cinq personnes sur six jours, vous avez envoyé 300 messages et personne ne sait quel est le plan.",
+    "p2": "WePlanify transforme le chaos en feuille de route partagée — un seul endroit pour l'itinéraire, le budget et les bagages."
+  },
+  "toc": {
+    "title": "Sur cette page",
+    "anatomy": "Anatomie d'un road trip de groupe",
+    "planning": "Planifier votre itinéraire étape par étape",
+    "budget": "Astuces budget pour un road trip de groupe",
+    "faq": "Questions fréquentes"
+  },
+  "anatomy": {
+    "title": "Anatomie d'un Road Trip de Groupe",
+    "subtitle": "Chaque road trip a les mêmes composantes. Voici comment réussir chacune en groupe.",
+    "items": [
+      { "stop": "L'Itinéraire", "desc": "Votez d'abord sur la grande question : panoramique ou rapide ? Côte ou intérieur ? Créez un sondage, tranchez, et construisez la route dans un itinéraire partagé où chacun peut ajouter des suggestions d'arrêts. Verrouillez les points de nuit tôt — la route entre eux reste flexible.", "link": "/features/polls" },
+      { "stop": "Les Arrêts", "desc": "C'est là que les road trips deviennent mémorables. Laissez chacun proposer ses arrêts incontournables, puis sélectionnez ensemble. La règle du 70/30 fonctionne parfaitement ici : 70% planifié, 30% spontané. Ajoutez chaque arrêt à l'itinéraire partagé avec adresses et notes.", "link": "/features/planning" },
+      { "stop": "L'Argent", "desc": "Essence, péages, nourriture, hébergement, activités. Sur un road trip de plusieurs jours, les dépenses s'accumulent vite. Enregistrez chaque dépense en temps réel — qui a payé, combien, pour quoi. WePlanify calcule les soldes automatiquement pour régler une seule fois à la fin.", "link": "/features/budget" },
+      { "stop": "La Voiture", "desc": "Cinq personnes, un coffre. L'espace est la contrainte ultime. Une liste de bagages partagée avec des objets assignés évite l'erreur classique : trois enceintes Bluetooth, pas de décapsuleur et zéro câbles de démarrage. Marquez ce qui va dans quelle voiture si vous en prenez plusieurs.", "link": "/features/packing" }
+    ]
+  },
+  "checklist": {
+    "title": "Checklist Essentiels Road Trip",
+    "subtitle": "Les choses que les groupes oublient toujours. Assignez chacune à une personne dans votre liste WePlanify.",
+    "items": [
+      "Supports téléphone & chargeurs pour le conducteur",
+      "Câble aux ou transmetteur Bluetooth FM",
+      "Glacière avec pains de glace",
+      "Trousse de premiers secours",
+      "Câbles de démarrage / booster portable",
+      "Cartes papier (pour les zones blanches)",
+      "Bouteilles d'eau réutilisables",
+      "Sacs poubelle pour la voiture",
+      "Couvertures & oreillers pour les passagers",
+      "Stock de snacks partagé",
+      "Jauge de pression des pneus",
+      "Batterie externe téléphone"
+    ]
+  },
+  "pullQuote": "Les meilleurs road trips ne sont pas une question de destination — c'est ce qui se passe entre les étapes qui compte. Faites en sorte que la planification ne tue pas l'ambiance avant même de partir.",
+  "planning": {
+    "title": "Planifier Votre Itinéraire : Étape par Étape",
+    "p1": "Commencez par les points d'ancrage — les endroits que vous voulez absolument voir — et construisez l'itinéraire autour d'eux. Avant de tracer un trait sur la carte, mettez-vous d'accord sur le rythme du voyage : combien d'heures de route par jour sont supportables pour votre groupe ? Quatre à cinq heures, c'est un maximum réaliste avant que la fatigue s'installe. Une fois les points d'ancrage définis, reliez-les en équilibrant efficacité autoroutière et intérêt panoramique.",
+    "p4": "Gardez du temps tampon dans le planning — au moins une heure de marge par jour. Les road trips ne se passent jamais exactement comme prévu. Un marché local que vous ne connaissiez pas, un détour à cause de travaux, un resto repéré depuis l'autoroute. C'est cette marge qui vous permet de dire oui à ces moments au lieu de stresser parce que vous êtes en retard sur le programme."
+  },
+  "budget": {
+    "title": "Astuces Budget pour un Road Trip de Groupe",
+    "p2": "Si vous louez une voiture, réglez la question de l'assurance et des conducteurs additionnels avant de partir. Les loueurs facturent par conducteur supplémentaire — intégrez ça dans la répartition. Les péages sont un autre coût sournois : sur certains itinéraires, ils peuvent rivaliser avec le budget essence. Vérifiez les calculateurs de péage pour votre trajet à l'avance et décidez ensemble si vous prenez l'autoroute à péage ou si vous économisez avec l'alternative plus lente.",
+    "p3": "Côté hébergement, varier les options garde le budget sous contrôle. Alternez entre campings, auberges et locations selon vos étapes. Partager un logement à trois chambres à cinq revient presque toujours moins cher que des chambres d'hôtel individuelles, et ça fait un lieu de vie commun. Enregistrez chaque dépense partagée au moment où elle arrive — attendre la fin du voyage pour démêler qui doit quoi, c'est la recette pour des oublis et des conversations gênantes."
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "items": [
+      { "q": "Comment répartir les frais d'essence équitablement ?", "a": "Enregistrez chaque plein dans le suivi de budget WePlanify — qui a payé, combien, quelle voiture. À la fin du voyage, l'appli calcule qui doit quoi. Pour les voyages multi-voitures, suivez chaque véhicule séparément." },
+      { "q": "Combien d'arrêts prévoir par jour ?", "a": "Deux à trois arrêts intentionnels par jour, c'est le bon ratio. Plus et vous passez le voyage à monter et descendre de voiture. Prévoyez un arrêt 'incontournable' et un ou deux flexibles dans l'itinéraire de chaque jour. Laissez de la place pour les découvertes spontanées." },
+      { "q": "Et si on a des préférences de conduite différentes ?", "a": "Utilisez les sondages pour les grandes questions d'itinéraire (côte vs. intérieur, autoroute vs. route panoramique). Pour la conduite quotidienne, organisez une rotation dans l'itinéraire. Le plan partagé WePlanify garde tout le monde aligné sur qui conduit quand." },
+      { "q": "Comment coordonner les bagages pour un road trip ?", "a": "L'espace dans la voiture est limité. Créez une liste partagée avec deux sections : affaires personnelles et équipement commun (glacière, matériel de camping, outils, trousse de secours, enceinte). Assignez les objets communs pour éviter trois chargeurs et zéro câbles de démarrage." },
+      { "q": "WePlanify fonctionne-t-il hors ligne en road trip ?", "a": "WePlanify fonctionne dans votre navigateur sur n'importe quel appareil. Vous avez besoin d'une connexion pour synchroniser, mais vous pouvez sauvegarder les détails clés (adresses, codes de réservation) dans les notes avant les zones blanches." },
+      { "q": "Combien de temps avant faut-il planifier un road trip ?", "a": "Deux à quatre semaines suffisent pour les road trips nationaux. Réservez l'hébergement pour les étapes clés tôt — les spots populaires se remplissent vite, surtout les week-ends. Gardez l'itinéraire flexible mais verrouillez les endroits où vous dormirez." }
+    ]
+  },
+  "discover": {
+    "title": "Découvrir aussi",
+    "tripWithFriends": { "title": "Voyage entre Amis", "desc": "Organisez n'importe quel voyage de groupe.", "cta": "En savoir plus →" },
+    "groupGuide": { "title": "Guide Voyage de Groupe", "desc": "Le guide complet étape par étape.", "cta": "Lire le guide →" },
+    "bestApps": { "title": "Meilleures Applis Voyage de Groupe", "desc": "Notre comparatif des meilleurs outils pour voyager en groupe.", "cta": "Lire l'article →" },
+    "familyTrip": { "title": "Voyage en Famille", "desc": "Organisez des vacances familiales multi-générations.", "cta": "En savoir plus →" }
+  },
+  "cta": {
+    "title": "Prenez la Route Ensemble",
+    "subtitle": "Planifiez la route, partagez les frais, préparez la voiture — le tout au même endroit.",
+    "button": "Commencer"
+  },
+  "jsonld": {
+    "articleHeadline": "Organiser un Road Trip entre Amis",
+    "howToName": "Comment planifier un road trip de groupe",
+    "howToDescription": "Construisez l'itinéraire, alignez-vous sur le rythme, tranchez les désaccords avec des sondages, partagez la conduite et gardez de la marge pour l'imprévu.",
+    "howToSteps": [
+      { "name": "Choisir les arrêts clés et s'aligner sur le rythme quotidien", "text": "Commencez par les arrêts incontournables et construisez l'itinéraire autour. Mettez-vous d'accord sur un maximum de 4-5 heures de route par jour avant la fatigue, puis reliez les points d'ancrage en mixant efficacité autoroutière et intérêt panoramique." },
+      { "name": "Trancher les désaccords route avec un sondage", "text": "Quand le groupe n'est pas d'accord sur les arrêts ou la route à prendre, lancez un sondage. Chacun classe ses trois favoris ; le résultat tranche sans drama. Très utile pour le dilemme route panoramique vs autoroute." },
+      { "name": "Pré-attribuer les relais de conduite et les pauses", "text": "Attribuez les relais à l'avance pour qu'une même personne ne se retrouve pas au volant chaque matin. Tournez toutes les 2-3 heures et prévoyez de vraies pauses de 20 minutes à des points de vue, pas 5 minutes en station-service." },
+      { "name": "Garder au moins une heure de marge par jour", "text": "Un road trip ne se passe jamais comme prévu. Intégrez au moins une heure de marge par journée pour pouvoir dire oui au marché imprévu, au détour spontané, au resto aperçu depuis l'autoroute." }
+    ]
+  }
+}

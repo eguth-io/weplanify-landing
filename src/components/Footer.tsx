@@ -3,10 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { Footer as FooterType } from "@/sanity/lib/type";
 import { useState } from "react";
 import { trackEvent } from "@/lib/tracking";
 import { useRegisterHref } from "@/lib/attribution/use-register-href";
+import LanguageModal from "./LanguageModal";
 
 function SocialIcon({ platform }: { platform: string }) {
   const name = platform.toLowerCase();
@@ -88,57 +90,59 @@ interface FooterProps {
 export default function Footer({ footerData }: FooterProps) {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [langModalOpen, setLangModalOpen] = useState(false);
   const pathname = usePathname();
   const locale = pathname?.startsWith("/fr") ? "fr" : "en";
   const registerFallback = useRegisterHref({ locale, medium: "footer" });
+  const t = useTranslations("footer");
 
   const featuresColumn = {
-    title: locale === "fr" ? "Fonctionnalités" : "Features",
+    title: t("columns.features.title"),
     links: [
       {
-        label: locale === "fr" ? "Planification (manuelle ou IA)" : "Planning (manual or AI)",
+        label: t("columns.features.planning"),
         url: `/${locale}/features/planning`,
       },
       {
-        label: locale === "fr" ? "Sondages" : "Group polls",
+        label: t("columns.features.polls"),
         url: `/${locale}/features/polls`,
       },
       {
-        label: locale === "fr" ? "Collaboration" : "Collaboration",
+        label: t("columns.features.collaboration"),
         url: `/${locale}/features/collaboration`,
       },
       {
-        label: locale === "fr" ? "Découverte" : "Discovery",
+        label: t("columns.features.discovery"),
         url: `/${locale}/features/explore`,
       },
       {
-        label: locale === "fr" ? "Itinéraire" : "Itinerary",
+        label: t("columns.features.itinerary"),
         url: `/${locale}/features/itinerary`,
       },
       {
-        label: locale === "fr" ? "Budget partagé" : "Shared budget",
+        label: t("columns.features.budget"),
         url: `/${locale}/features/budget`,
       },
       {
-        label: locale === "fr" ? "Listes de bagages" : "Packing lists",
+        label: t("columns.features.packing"),
         url: `/${locale}/features/packing`,
       },
       {
-        label: locale === "fr" ? "Transport" : "Transport",
+        label: t("columns.features.transport"),
         url: `/${locale}/features/transport`,
       },
       {
-        label: locale === "fr" ? "Souvenirs" : "Memories",
+        label: t("columns.features.memories"),
         url: `/${locale}/features/memories`,
       },
     ],
   };
 
   const companyColumn = {
-    title: locale === "fr" ? "Entreprise" : "Company",
+    title: t("columns.company.title"),
     links: [
       {
-        label: locale === "fr" ? "À propos" : "About",
+        label: t("columns.company.about"),
         url: `/${locale}/about`,
       },
       {
@@ -150,7 +154,7 @@ export default function Footer({ footerData }: FooterProps) {
         url: `/${locale}/blog`,
       },
       {
-        label: locale === "fr" ? "Partenariat" : "Partnership",
+        label: t("columns.company.partnership"),
         url: `/${locale}/partnership`,
       },
       {
@@ -161,60 +165,60 @@ export default function Footer({ footerData }: FooterProps) {
   };
 
   const useCasesColumn = {
-    title: locale === "fr" ? "Cas d'usage" : "Use cases",
+    title: t("columns.useCases.title"),
     links: [
       {
-        label: locale === "fr" ? "Voyage entre amis" : "Trip with friends",
+        label: t("columns.useCases.friends"),
         url: `/${locale}/trip-with-friends`,
       },
       {
-        label: locale === "fr" ? "EVJF / Bachelorette" : "Bachelorette / EVJF",
+        label: t("columns.useCases.bachelorette"),
         url: `/${locale}/bachelorette-trip`,
       },
       {
-        label: locale === "fr" ? "Voyage anniversaire" : "Birthday trip",
+        label: t("columns.useCases.birthday"),
         url: `/${locale}/birthday-trip`,
       },
       {
-        label: locale === "fr" ? "Voyage en famille" : "Family trip",
+        label: t("columns.useCases.family"),
         url: `/${locale}/family-trip`,
       },
       {
-        label: locale === "fr" ? "Road trip" : "Road trip",
+        label: t("columns.useCases.roadTrip"),
         url: `/${locale}/road-trip`,
       },
       {
-        label: locale === "fr" ? "Team building" : "Team building",
+        label: t("columns.useCases.teamBuilding"),
         url: `/${locale}/team-building`,
       },
       {
-        label: locale === "fr" ? "Voyage scolaire" : "School trip",
+        label: t("columns.useCases.school"),
         url: `/${locale}/school-trip`,
       },
     ],
   };
 
   const resourcesColumn = {
-    title: locale === "fr" ? "Ressources" : "Resources",
+    title: t("columns.resources.title"),
     links: [
       {
-        label: locale === "fr" ? "Guide : Organiser un voyage" : "Guide: Plan a Group Trip",
+        label: t("columns.resources.guidePlanTrip"),
         url: `/${locale}/guides/plan-group-trip`,
       },
       {
-        label: locale === "fr" ? "Destinations" : "Destinations",
+        label: t("columns.resources.destinations"),
         url: `/${locale}/destinations`,
       },
       {
-        label: locale === "fr" ? "Guides voyage" : "Travel guides",
+        label: t("columns.resources.travelGuides"),
         url: `/${locale}/travel-guides`,
       },
       {
-        label: locale === "fr" ? "Comparatif d'apps" : "App comparison",
+        label: t("columns.resources.appComparison"),
         url: `/${locale}/alternatives`,
       },
       {
-        label: locale === "fr" ? "Événements 2026 →" : "2026 events →",
+        label: t("columns.resources.events2026"),
         url: `/${locale}/events`,
       },
     ],
@@ -290,7 +294,7 @@ export default function Footer({ footerData }: FooterProps) {
               {/* Social links surfaced in the CTA column for visibility (WP-323) */}
               <div className="mt-8">
                 <p className="text-[#001E13] text-sm font-karla font-bold mb-3">
-                  {locale === "fr" ? "Suivez-nous" : "Follow us"}
+                  {t("followUs")}
                 </p>
                 <SocialLinks />
               </div>
@@ -299,16 +303,14 @@ export default function Footer({ footerData }: FooterProps) {
             /* Default Newsletter Section when no CTA is configured */
             <div className="flex flex-col lg:border-l border-[#001E13]/10 pl-0 lg:pl-12">
               <h3 className="text-[#001E13] text-base font-karla font-bold mb-4">
-                {locale === "fr" ? "Inspiration voyage hebdomadaire" : "Get weekly travel inspiration"}
+                {t("newsletter.title")}
               </h3>
               <p className="text-[#001E13]/70 text-sm font-karla mb-4">
-                {locale === "fr"
-                  ? "Astuces, pépites cachées et bons plans voyage dans votre boîte mail."
-                  : "Tips, hidden gems, and travel hacks delivered to your inbox."}
+                {t("newsletter.description")}
               </p>
               {isSubscribed ? (
                 <p className="text-[#005B37] text-sm font-karla font-semibold">
-                  {locale === "fr" ? "Merci pour votre inscription !" : "Thanks for subscribing!"}
+                  {t("newsletter.thanks")}
                 </p>
               ) : (
                 <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3">
@@ -316,7 +318,7 @@ export default function Footer({ footerData }: FooterProps) {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder={locale === "fr" ? "Ton e-mail" : "Your email"}
+                    placeholder={t("newsletter.emailPlaceholder")}
                     required
                     className="flex-1 px-4 py-2.5 rounded-full border border-[#001E13]/20 text-sm font-karla focus:outline-none focus:border-[#F6391A] transition-colors"
                   />
@@ -324,14 +326,14 @@ export default function Footer({ footerData }: FooterProps) {
                     type="submit"
                     className="bg-[#F6391A] text-white px-6 py-2.5 rounded-full font-karla font-bold text-sm hover:bg-[#F6391A]/90 transition-colors whitespace-nowrap"
                   >
-                    {locale === "fr" ? "S'inscrire" : "Subscribe"}
+                    {t("newsletter.subscribe")}
                   </button>
                 </form>
               )}
               {/* Social links surfaced in the CTA column for visibility (WP-323) */}
               <div className="mt-8">
                 <p className="text-[#001E13] text-sm font-karla font-bold mb-3">
-                  {locale === "fr" ? "Suivez-nous" : "Follow us"}
+                  {t("followUs")}
                 </p>
                 <SocialLinks />
               </div>
@@ -381,27 +383,28 @@ export default function Footer({ footerData }: FooterProps) {
             </p>
           )}
 
-          {/* Language Switcher */}
-          <div className="flex items-center gap-2">
+          {/* Language Switcher — opens the "Choose language" modal */}
+          <button
+            type="button"
+            onClick={() => setLangModalOpen(true)}
+            aria-label={t("chooseLanguage")}
+            className="flex items-center gap-2 text-sm font-karla text-[#001E13]/60 transition-colors hover:text-[#001E13]"
+          >
             <svg className="w-4 h-4 text-[#001E13]/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="10" />
               <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
             </svg>
-            <Link
-              href={pathname?.replace(/^\/(en|fr)/, "/en") || "/en"}
-              className={`text-sm font-karla transition-colors ${locale === "en" ? "text-[#F6391A] font-bold" : "text-[#001E13]/60 hover:text-[#001E13]"}`}
-            >
-              English
-            </Link>
-            <span className="text-[#001E13]/30">|</span>
-            <Link
-              href={pathname?.replace(/^\/(en|fr)/, "/fr") || "/fr"}
-              className={`text-sm font-karla transition-colors ${locale === "fr" ? "text-[#F6391A] font-bold" : "text-[#001E13]/60 hover:text-[#001E13]"}`}
-            >
-              Français
-            </Link>
-          </div>
+            <Image src={`/langs/${locale}.svg`} alt={locale} width={18} height={18} className="rounded-full" />
+            <span>{locale.toUpperCase()}</span>
+          </button>
         </div>
+
+        <LanguageModal
+          open={langModalOpen}
+          onClose={() => setLangModalOpen(false)}
+          locale={locale}
+          title={t("chooseLanguage")}
+        />
       </div>
     </footer>
   );

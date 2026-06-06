@@ -3,10 +3,10 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { AiGlobeJourney, LiveCollaboration, LiveVoting } from "@/components/animations";
 import { useRegisterHref } from "@/lib/attribution/use-register-href";
 
-type Lang = "en" | "fr";
 type AnimationType = "ai-globe" | "live-collaboration" | "live-voting";
 
 interface CardData {
@@ -20,96 +20,6 @@ interface CardData {
   ctaBackgroundColor: string;
   stats?: { value: string; label: string }[];
 }
-
-interface StackingCardsContent {
-  title: string;
-  cards: CardData[];
-}
-
-const CONTENT: Record<Lang, StackingCardsContent> = {
-  fr: {
-    title: "Des fonctionnalités pensées pour voyager ensemble",
-    cards: [
-      {
-        imagePosition: "right",
-        title: "Explore et propose des idées au groupe",
-        description:
-          "Trouve activités, restaurants, hébergement et transport directement dans l'app.\nAjoute-les à l'itinéraire ou soumets-les au vote du groupe.\n\nL'exploration devient collaborative.",
-        animation: "ai-globe",
-        backgroundColor: "#FFFFFF",
-        ctaLabel: "Explorer les destinations",
-                ctaTextColor: "#FFFFFF",
-        ctaBackgroundColor: "#E83F28",
-        stats: [{ value: "+190", label: "destinations possibles" }],
-      },
-      {
-        imagePosition: "left",
-        title: "Décidez ensemble grâce aux sondages",
-        description:
-          "Où dormir ?\nQue faire ?\nQuand partir ?\n\nCréez un sondage, chacun vote, la décision est prise.\nLe groupe avance. Le voyage aussi.",
-        animation: "live-voting",
-        backgroundColor: "#EEF899",
-        ctaLabel: "Lancer un sondage",
-                ctaTextColor: "#FFFBF5",
-        ctaBackgroundColor: "#001E13",
-        stats: [{ value: "1000+", label: "sondages quotidiens" }],
-      },
-      {
-        imagePosition: "left",
-        title: "Un itinéraire clair, jour après jour",
-        description:
-          "Chaque journée du voyage est structurée :\nque faire, où manger, où dormir, comment se déplacer.\n\nTout est clair pour tout le monde.",
-        animation: "live-collaboration",
-        backgroundColor: "#61DBD5",
-        ctaLabel: "Construire l'itinéraire",
-                ctaTextColor: "#FFFFFF",
-        ctaBackgroundColor: "#001E13",
-        stats: [{ value: "10+", label: "partenaires" }],
-      },
-    ],
-  },
-  en: {
-    title: "Everything You Need to Plan a Group Trip",
-    cards: [
-      {
-        imagePosition: "right",
-        title: "Explore and propose ideas to the group",
-        description:
-          "Find activities, restaurants, accommodation and transport directly in the app.\nAdd them to the itinerary or propose them to the group to vote.\n\nExploration becomes collaborative.",
-        animation: "ai-globe",
-        backgroundColor: "#FFFFFF",
-        ctaLabel: "Explore destinations",
-                ctaTextColor: "#FFFFFF",
-        ctaBackgroundColor: "#E83F28",
-        stats: [{ value: "190+", label: "Possible destinations" }],
-      },
-      {
-        imagePosition: "left",
-        title: "Decide together with polls",
-        description:
-          "Where to stay?\nWhat to do?\nWhen to leave?\n\nCreate a poll, everyone votes, the decision is made.\nThe group moves forward. The trip too.",
-        animation: "live-voting",
-        backgroundColor: "#EEF899",
-        ctaLabel: "Start a poll",
-                ctaTextColor: "#FFFBF5",
-        ctaBackgroundColor: "#001E13",
-        stats: [{ value: "1000+", label: "Daily polls" }],
-      },
-      {
-        imagePosition: "left",
-        title: "A clear itinerary, day by day",
-        description:
-          "Each day of the trip is structured:\nwhat to do, where to eat, where to sleep, how to get there.\n\nEverything is clear for everyone.",
-        animation: "live-collaboration",
-        backgroundColor: "#61DBD5",
-        ctaLabel: "Build my itinerary",
-                ctaTextColor: "#FFFFFF",
-        ctaBackgroundColor: "#001E13",
-        stats: [{ value: "10+", label: "Partners" }],
-      },
-    ],
-  },
-};
 
 interface StackingCardsProps {
   locale?: string;
@@ -233,8 +143,9 @@ function Card({ card, index, locale }: { card: CardData; index: number; locale: 
 }
 
 export default function StackingCards({ locale = "en" }: StackingCardsProps) {
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const { title, cards } = CONTENT[lang];
+  const t = useTranslations("stackingCards");
+  const title = t("title");
+  const cards = t.raw("cards") as CardData[];
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (

@@ -1,0 +1,108 @@
+{
+  "copy": {
+    "hero": {
+      "title": "Browse, add, map.",
+      "titleHighlight": "Together.",
+      "subtitle": "One screen with hotels, restaurants, activities and transport — curated for your destination. Hit + to add to the trip, watch it land on the shared map.",
+      "cta": "Try Explorer free",
+      "ctaSubtext": "Free · no credit card · 30 seconds to start"
+    },
+    "intro": {
+      "title": "The research-to-trip pipeline, broken.",
+      "paragraphs": [
+        "Planning a group trip should be a conversation, not a spreadsheet. But here you are: 47 browser tabs open, three group chats with different lists, a Notion doc no one updates, and at 11pm the night before you're still arguing whether the rooftop bar is worth the trek across town. The 'what should we do' question — supposed to be the fun part — turns into the part that breaks groups.",
+        "The problem isn't a lack of information. It's the opposite. Every city has 10,000 things to do, and the internet promises all of them are must-see. Sorting signal from noise — and getting four to fifteen people to agree on what made the cut — is where most trips quietly fall apart.",
+        "Explorer is built for that exact moment. One screen. Four tabs: hotels, restaurants, activities, transport. A curated card grid for your destination. Hit + to add to the trip, see it land on the shared map. Your group does the same, the consensus places float up. Twenty minutes, one mapped shortlist."
+      ]
+    },
+    "painPoints": {
+      "title": "Why discovery is broken",
+      "subtitle": "Most groups spend more time fighting the planning than enjoying the trip.",
+      "items": [
+        {
+          "emoji": "🗂️",
+          "title": "The tab graveyard",
+          "description": "35+ open tabs, every one promising the best version of 'best things to do in [city]'. You'll close them tonight, open them again tomorrow. Nothing got decided."
+        },
+        {
+          "emoji": "💬",
+          "title": "The group chat list nobody updates",
+          "description": "Sarah suggested 6 places, Marc added 3, Alex liked all of them, the bride-to-be hasn't seen any of it. You'll bring it up at brunch. Maybe."
+        },
+        {
+          "emoji": "🤔",
+          "title": "Is this actually good or just touristy?",
+          "description": "Tripadvisor is full of paid reviews, Reddit threads are 4 years old, Instagram is #ad. You end up at the same overcrowded restaurant everyone else picked too."
+        },
+        {
+          "emoji": "🕳️",
+          "title": "The 'I saved it somewhere' black hole",
+          "description": "14 Maps stars, 28 Instagram saves, 6 TikTok bookmarks, a screenshot in your camera roll. You'll never find any of them again the day you arrive."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "How Explorer fixes it",
+      "subtitle": "One screen, four tabs, a real shared shortlist at the end.",
+      "items": [
+        {
+          "emoji": "🎯",
+          "title": "Four tabs, not a firehose",
+          "description": "Switch between hotels, restaurants, activities, transport with a single click. The cards adapt to the tab — accommodation shows price-per-night, transport shows route + duration. No more comparing apples to plane tickets."
+        },
+        {
+          "emoji": "➕",
+          "title": "Add with one tap",
+          "description": "Every card has a + button. Tap it, the place locks into your trip — green check, no double-confirmation. Your selections sync to the rest of the group in real-time."
+        },
+        {
+          "emoji": "🗺️",
+          "title": "Map view, side-by-side",
+          "description": "Cards on the left, interactive map on the right (or below on mobile). Hover a card, the pin lights up on the map. Pick by proximity, not by tab order."
+        },
+        {
+          "emoji": "🤝",
+          "title": "Group consensus surfaces",
+          "description": "Everyone sees the same Explorer. When multiple members add the same place, it gets a 'crowd favorite' marker. The places everyone secretly agreed on rise to the top — no debate needed."
+        }
+      ]
+    },
+    "animationShowcase": {
+      "title": "See it in action",
+      "subtitle": "The real Explorer interface — same tabs, same cards, same + button. Switch types, watch the grid update.",
+      "caption": "Auto-playing demo · this is what you'll use"
+    },
+    "mapPreview": {
+      "title": "Everything you added, mapped",
+      "subtitle": "Every + tap drops a pin on the shared map. Open it the day you arrive, pick what's closest, walk to it.",
+      "caption": "Interactive map · synced with your trip"
+    },
+    "useCases": {
+      "title": "When Explorer earns its keep",
+      "subtitle": "Built for the trips where 'just look it up' doesn't scale.",
+      "items": [
+        {
+          "emoji": "🏙️",
+          "title": "City breaks (3–5 days)",
+          "description": "Long weekends in Lisbon, Berlin, NYC. You don't have time to research — you have time to do. Explorer narrows 500 ideas into 20 in fifteen minutes."
+        },
+        {
+          "emoji": "👥",
+          "title": "Group trips (4–15 people)",
+          "description": "Bachelorette weekends, friend reunions, family trips. Everyone adds their picks from their phone, the consensus floats up. Bypass the group-chat democracy."
+        },
+        {
+          "emoji": "🛣️",
+          "title": "Multi-city & road trips",
+          "description": "5 cities in 10 days = 5 explores. Save places per city, hit them when you arrive. Your itinerary builds itself around what the group actually wants."
+        }
+      ]
+    },
+    "categoriesTitle": "Explore by category",
+    "mapPins": {
+      "hotel": "Hotel",
+      "restaurant": "Restaurant",
+      "activity": "Activity"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "About Us — The Free Group Trip Planner for Friends",
+    "description": "WePlanify is the free, collaborative trip planner for friends, families and teams. Discover the story, the mission and the team behind real-time group travel planning."
+  },
+  "hero": {
+    "tag": "About WePlanify",
+    "h1": "We make group trips happen."
+  },
+  "frustration": {
+    "p1": "It starts the same way every time. Someone drops \"we should do a trip\" in the group chat. Everyone gets excited. Then comes the hard part: actually making it happen.",
+    "p2": "Dates don't align. Budgets clash. Decisions get lost in WhatsApp. One person ends up doing all the work. The trip gets postponed. Again.",
+    "p3": "We built WePlanify because we got tired of watching good trips die in group chats."
+  },
+  "pullQuote": "One place to vote, plan, budget, and pack — so that the person who organizes doesn't have to carry it alone.",
+  "whatWeDo": {
+    "heading": "What WePlanify does",
+    "items": [
+      ["Collaborative itineraries", "Everyone adds ideas. The group builds the plan together, day by day."],
+      ["Group polls", "Can't agree? Vote. Destination, dates, restaurants — democracy wins."],
+      ["Shared budgets", "Track who paid what. Split costs. No spreadsheets, no awkward conversations after."],
+      ["Packing lists", "Coordinate who brings what. Stop showing up with three corkscrews and no first-aid kit."],
+      ["4 languages", "English, French, Spanish, Italian. Your group speaks different languages? So do we."]
+    ]
+  },
+  "whyNot": {
+    "heading": "Why not just use WhatsApp?",
+    "p1": "Because WhatsApp is for chatting, not for planning. Decisions get buried. Links get lost. The person who scrolls back to find \"that restaurant someone mentioned Tuesday\" shouldn't need to be an archaeologist.",
+    "p2": "Google Sheets is powerful but nobody opens it. Splitwise tracks money but not plans. TripIt is built for solo travelers. None of them solve the real problem: getting a group of people to make decisions together and stick to them.",
+    "p3": "WePlanify is the only tool built for groups from day one. Not adapted for groups. Built for them."
+  },
+  "cta": {
+    "heading": "Your next trip is waiting.",
+    "subtitle": "Stop planning in group chats. Start planning together.",
+    "button": "Start planning"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About"
+  }
+}

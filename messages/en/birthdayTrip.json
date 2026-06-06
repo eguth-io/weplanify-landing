@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Birthday Trip Planner — Plan the Ultimate Birthday Getaway",
+    "description": "Plan your birthday trip with WePlanify, the free birthday trip planner. Coordinate dates with your friends, vote on the destination, split the budget, and build a day-by-day itinerary — perfect for 30th, 40th, 50th milestones or any birthday getaway."
+  },
+  "readTime": "9 min read",
+  "hero": {
+    "tag": "Birthday Trip Planner",
+    "title": "Plan the Ultimate\nBirthday Trip",
+    "description": "Turning 30, 40, 50 — or just want to spend your birthday somewhere unforgettable? WePlanify is the free birthday trip planner that turns 'we should totally go away for your birthday' into an actual booked trip.",
+    "cta": "Start planning for free"
+  },
+  "guideIntro": {
+    "title": "The Ultimate Birthday Trip Planning Guide",
+    "paragraphs": [
+      "A birthday trip is one of the best gifts you can give yourself — or someone you love. Whether it's a milestone birthday (30th, 40th, 50th, 60th) or just a weekend escape to mark another year, getting away with the people who matter beats any party at home. But organizing a birthday trip for a group of 4 to 15 friends comes with its own quiet chaos: finding a date that works, agreeing on a destination, picking an Airbnb everyone can afford, and figuring out who's actually going to book the dinner reservations.",
+      "The best birthday trips share three things: they reflect the birthday person's actual taste (not what the group thinks they should want), they respect everyone's budget so nobody drops out the week before, and they have just enough structure that the group isn't standing on a street corner at 8pm arguing about where to eat. The goal isn't to plan every hour — it's to remove the friction so the actual trip can be spontaneous.",
+      "That's exactly what WePlanify was built for. One shared space where your crew can vote on the destination, lock in a date, track a shared kitty, and build a day-by-day itinerary together. Whether the birthday person is organizing their own trip with friends or a partner is secretly planning a surprise getaway, everything lives in one place — no scattered WhatsApp threads, no spreadsheets, no chasing people for €40 three weeks later."
+    ]
+  },
+  "painPoints": {
+    "title": "Why Planning a Birthday Trip Always Slips",
+    "subtitle": "You said it months ago: 'let's go away for your 30th.' It's now three weeks away and nothing is booked.",
+    "items": [
+      {
+        "emoji": "📅",
+        "title": "Nobody Commits to a Date",
+        "description": "You float a weekend in October. Three friends say 'maybe', two say 'let me check', and one ghosts entirely. By the time everyone replies, the flights have doubled and your favorite Airbnb is gone. WePlanify's date polls give the group a clear deadline to vote, and the result is instant — no chasing, no follow-up DMs, just a date everyone agreed on."
+      },
+      {
+        "emoji": "🗺️",
+        "title": "Endless Destination Debate",
+        "description": "Lisbon? Marrakech? A cabin two hours away? Everyone has an opinion and the group chat becomes a stream of TikToks and Instagram reels. Two weeks pass and you still don't have a destination. Run a single poll with three to five real options, let everyone vote, and book the winner. Decision made in 48 hours instead of a month."
+      },
+      {
+        "emoji": "💸",
+        "title": "Awkward Money Conversations",
+        "description": "Does the birthday person pay? Do we split their share? Who's covering the dinner? One friend Venmos €120, another pays the Airbnb deposit, a third buys the cake — and three weeks after the trip you're still trying to reconcile who owes what. The shared kitty in WePlanify logs every expense in real time and tells you instantly who owes whom."
+      },
+      {
+        "emoji": "🍽️",
+        "title": "Day-Of Chaos",
+        "description": "You arrive Friday night with no dinner reservation. Saturday afternoon nobody knows what time the boat leaves. By Sunday brunch half the group is hungover and the other half wants to do the hike you didn't book. A shared day-by-day itinerary means everyone wakes up knowing the plan — and you can still leave white space for spontaneity."
+      }
+    ]
+  },
+  "features": {
+    "title": "WePlanify Makes Birthday Trip Planning Effortless",
+    "subtitle": "Everything you need to plan a birthday getaway with friends — in one place, with zero stress.",
+    "items": [
+      {
+        "emoji": "🗳️",
+        "title": "Polls for Dates & Destinations",
+        "description": "Stop the endless 'when works for everyone' loop. Create a poll with the three weekends that could work, share it with the group, and watch the answers roll in. Same for the destination — three to five options, one clear winner. Anonymous voting means even the quiet friends weigh in. The group's actual preferences, not just the loudest voice in the chat."
+      },
+      {
+        "emoji": "💰",
+        "title": "Shared Birthday Kitty",
+        "description": "Set a shared budget, log every expense as it happens, and let WePlanify calculate who owes what. Decide upfront whether the birthday person pays for themselves or the group covers their share — both work. The Airbnb deposit, the restaurant bill, the cake, the bottle of champagne: all tracked, all settled in one tap at the end of the trip."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Day-by-Day Itinerary",
+        "description": "Build a shared schedule for the whole weekend — Friday dinner, Saturday brunch, the boat trip, the surprise restaurant, Sunday morning hike. Add times, locations, notes, links. Everyone wakes up knowing what's next, but nothing is locked in stone — drag and drop if plans change. The itinerary is the single source of truth so nobody is asking 'wait, where are we meeting again?'"
+      },
+      {
+        "emoji": "🎁",
+        "title": "Private Mode for Surprises",
+        "description": "Planning a surprise birthday trip for your partner, parent, or best friend? Create a private planning group without them. Coordinate dates, book the Airbnb, plan activities — all completely hidden from the birthday person. When you're ready, reveal the trip and add them to the space so they can see everything that's been organized for them."
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Birthday Trip Ideas by Style",
+    "subtitle": "Five birthday getaway styles to match the birthday person — and the budget.",
+    "items": [
+      {
+        "emoji": "🌆",
+        "title": "City Break with Friends",
+        "description": "Lisbon, Barcelona, Copenhagen, Mexico City — pick a city with great food, walkable neighborhoods, and a few rooftop bars. Perfect for a 30th birthday weekend with 6 to 10 friends. Book a central apartment, plan two big group dinners, and leave afternoons free for whatever the group wants. Easy logistics, high-energy, photo-friendly."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Beach & Pool House",
+        "description": "Rent a villa with a pool in the south of France, Costa Brava, Tulum, or Puglia. Lazy mornings, long lunches, sunset cocktails. This works for any age but is especially good for 35th-50th birthdays where the group wants to relax more than party. Hire a private chef one night to make it feel like a proper celebration."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Wine Country Weekend",
+        "description": "Tuscany, Bordeaux, the Douro Valley, Napa, Mendoza — a wine country trip is the classic 40th birthday move. Stay in an agriturismo or boutique vineyard, book one tasting per day, and eat long dinners. Smaller groups (4 to 8) work best. Use the shared kitty for tastings and dinners since the bills add up fast."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Adventure Escape",
+        "description": "Hiking in the Dolomites, a road trip through Iceland, skiing in Chamonix, surfing in Portugal. For the active birthday person who would rather summit a peak than blow out candles. Pick one signature challenge for the trip — a multi-day trek, a heli-ski day, a surf camp — and build the rest of the weekend around recovery and good meals."
+      },
+      {
+        "emoji": "🎲",
+        "title": "Vegas / Big City Bash",
+        "description": "Las Vegas, Miami, Ibiza, Berlin — the 'go big' birthday trip. Nightclubs, dayclubs, fancy dinners, late nights. Works best for 21st, 25th, and 30th birthdays, or any milestone where the group is up for a proper blowout. Pre-book everything (tables, transfers, the suite) because day-of logistics in a big-city party town will eat you alive."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "When to Start Planning",
+    "subtitle": "A simple timeline to lock in your birthday trip without last-minute panic.",
+    "milestones": [
+      {
+        "time": "4 to 6 months before",
+        "title": "Lock the Date & Guest List",
+        "description": "Poll the group for available weekends. Finalize who's in. Create your WePlanify trip and invite everyone — including the birthday person if it's not a surprise."
+      },
+      {
+        "time": "3 months before",
+        "title": "Pick the Destination & Book",
+        "description": "Vote on the destination. Book flights and accommodation while prices are still reasonable. Set up the shared kitty with the initial deposits."
+      },
+      {
+        "time": "1 month before",
+        "title": "Plan Activities & Reservations",
+        "description": "Run polls for activities. Book restaurants (especially the big birthday dinner). Build the day-by-day itinerary. Order any decorations, gifts, or matching outfits."
+      },
+      {
+        "time": "1 week before",
+        "title": "Confirm Everything",
+        "description": "Re-confirm all reservations. Settle outstanding kitty contributions. Share the final itinerary with the group. Make sure someone is bringing candles."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Birthday Trip Planning Checklist",
+    "items": [
+      "Confirm the date with the birthday person (or keep it secret if it's a surprise)",
+      "Poll the group for available weekends",
+      "Vote on a destination everyone can afford",
+      "Book accommodation and transport",
+      "Set a shared kitty and agree how the birthday person's share is handled",
+      "Reserve the big birthday dinner well in advance",
+      "Plan one or two signature activities (boat, spa, tasting, hike)",
+      "Build the day-by-day itinerary in WePlanify",
+      "Order the cake, candles, or any small surprises",
+      "Confirm everything one week before and share the final plan"
+    ]
+  },
+  "testimonial": {
+    "quote": "I turned 40 last spring and a group of us went to Tuscany for the weekend. Booking the villa, splitting the wine tour, the dinner kitty, the airport transfers — we did it all in WePlanify and nobody had to chase money afterward. Way better than the WhatsApp chaos of every previous birthday weekend.",
+    "author": "Sophie L.",
+    "role": "Birthday trip organizer, London"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Is WePlanify free for planning a birthday trip?",
+        "a": "Yes, 100% free. Create a trip, invite the group, run polls, build the itinerary, track the shared kitty — no trial period, no credit card, no hidden fees. The whole birthday trip planner works without paying anything."
+      },
+      {
+        "q": "Can I plan a surprise birthday trip without the birthday person seeing?",
+        "a": "Yes. Create a private planning group and don't invite the birthday person. Coordinate dates, vote on the destination, book the Airbnb, and plan activities — all completely hidden. When you're ready to reveal, you can add them to the trip so they see the full itinerary and what's been planned for them."
+      },
+      {
+        "q": "How far in advance should we start planning a birthday trip?",
+        "a": "Four to six months is ideal for milestone birthdays (30th, 40th, 50th) where you want a real destination. Two to three months works for local weekends. The sooner the date is locked, the cheaper the flights and the better the accommodation options. Start a WePlanify trip as soon as the idea forms — even if details are vague."
+      },
+      {
+        "q": "What's a good budget for a birthday trip?",
+        "a": "It depends on the destination and the group. A weekend in a European city is typically €250 to €500 per person all in. A villa in Tuscany or the south of France for a 40th can run €600 to €1200 per person. The key is to agree on a target budget upfront so nobody is surprised — the shared kitty in WePlanify keeps everyone honest as expenses come in."
+      },
+      {
+        "q": "Should the birthday person pay for themselves?",
+        "a": "Both work and it's a group decision. Many groups cover the birthday person's share of the Airbnb and the big dinner as a gift; the birthday person pays for their own flight and casual meals. WePlanify lets you mark individual expenses as 'group covers' or 'individual pays' so the split is automatic. Whatever you decide, agree on it early — awkward mid-trip money conversations are the worst."
+      },
+      {
+        "q": "How do we decide on activities when everyone wants something different?",
+        "a": "Run a poll with three to five concrete options for each big slot (Saturday afternoon, Sunday morning, etc.). Let the group vote and book the winner. This avoids both the stalemate problem (nobody decides) and the resentment problem (one person decides everything). It also gives the quieter friends a real say."
+      },
+      {
+        "q": "What if some friends can only join for part of the trip?",
+        "a": "Totally fine — and WePlanify handles it cleanly. Mark each participant's actual dates, and when you log expenses you can specify who participated. The shared kitty automatically recalculates so people only pay for the nights and activities they were actually there for. No spreadsheet, no awkward 'I wasn't there for the dinner' negotiations."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Plan the Best Birthday Trip Ever?",
+    "description": "Stop letting birthday trips slip from 'we should totally do this' into nothing. Start your WePlanify trip in 30 seconds — it's free.",
+    "button": "Start planning — it's free"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Birthday Trip"
+  },
+  "destinationsCrossLink": {
+    "tag": "Destination inspiration",
+    "heading": "Destinations that make a great birthday trip",
+    "cards": {
+      "tuscany": {
+        "title": "Tuscany · 5 days",
+        "desc": "The classic 40th. Villa with a pool, wine tastings, dinners that last for hours. Small group, big atmosphere."
+      },
+      "lisbon": {
+        "title": "Lisbon · 3 days",
+        "desc": "Perfect for a 30th. Rooftops, food tours, walkable neighborhoods, nightlife without the Vegas overkill."
+      },
+      "andalusia": {
+        "title": "Andalusia · 6 days",
+        "desc": "Seville, Granada, Córdoba. Patios, flamenco, late tapas. A great 50th with a bit of culture baked in."
+      }
+    },
+    "cardLink": "See the itinerary →",
+    "allLink": "See all destinations →"
+  },
+  "discoverMore": {
+    "heading": "Discover More",
+    "friends": {
+      "title": "Trip with Friends",
+      "desc": "Plan a group trip with friends effortlessly using WePlanify.",
+      "link": "Read more →"
+    },
+    "bachelorette": {
+      "title": "Bachelorette / EVJF",
+      "desc": "Plan a surprise bachelorette without the bride seeing a thing.",
+      "link": "See the page →"
+    },
+    "guide": {
+      "title": "Guide: How to Plan a Group Trip",
+      "desc": "The complete step-by-step guide to planning a successful group trip.",
+      "link": "Read the guide →"
+    }
+  }
+}

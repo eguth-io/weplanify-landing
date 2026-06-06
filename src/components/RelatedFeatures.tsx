@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { trackEvent } from "@/lib/tracking";
 
 interface RelatedFeaturesProps {
@@ -9,15 +10,15 @@ interface RelatedFeaturesProps {
 }
 
 const allFeatures = [
-  { slug: "planning", icon: "🗓️", en: "Collaborative Itinerary", fr: "Itinéraire collaboratif" },
-  { slug: "polls", icon: "🗳️", en: "Group Polls", fr: "Sondages de groupe" },
-  { slug: "budget", icon: "💰", en: "Shared Budget", fr: "Budget partagé" },
-  { slug: "packing", icon: "🎒", en: "Packing Lists", fr: "Listes de bagages" },
-  { slug: "explore", icon: "🔍", en: "Activity Discovery", fr: "Découverte d'activités" },
-  { slug: "collaboration", icon: "👥", en: "Real-time Collaboration", fr: "Collaboration temps réel" },
-  { slug: "itinerary", icon: "📋", en: "Day-by-Day Itinerary", fr: "Itinéraire jour par jour" },
-  { slug: "transport", icon: "✈️", en: "Transport", fr: "Transport" },
-  { slug: "memories", icon: "📸", en: "Trip Memories", fr: "Souvenirs de voyage" },
+  { slug: "planning", icon: "🗓️" },
+  { slug: "polls", icon: "🗳️" },
+  { slug: "budget", icon: "💰" },
+  { slug: "packing", icon: "🎒" },
+  { slug: "explore", icon: "🔍" },
+  { slug: "collaboration", icon: "👥" },
+  { slug: "itinerary", icon: "📋" },
+  { slug: "transport", icon: "✈️" },
+  { slug: "memories", icon: "📸" },
 ];
 
 const relatedMap: Record<string, string[]> = {
@@ -33,18 +34,17 @@ const relatedMap: Record<string, string[]> = {
 };
 
 export default function RelatedFeatures({ currentSlug, locale }: RelatedFeaturesProps) {
+  const t = useTranslations("relatedFeatures");
   const relatedSlugs = relatedMap[currentSlug] || ["planning", "polls", "budget"];
   const related = relatedSlugs
     .map((slug) => allFeatures.find((f) => f.slug === slug))
     .filter(Boolean) as (typeof allFeatures)[number][];
 
-  const title = locale === "fr" ? "Découvrez aussi" : "Explore more features";
-
   return (
     <section className="px-4 lg:px-8 py-12 bg-gray-50/50">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl font-londrina-solid text-[#001E13] text-center mb-8">
-          {title}
+          {t("title")}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {related.map((feature) => (
@@ -56,7 +56,7 @@ export default function RelatedFeatures({ currentSlug, locale }: RelatedFeatures
             >
               <span className="text-2xl">{feature.icon}</span>
               <span className="font-karla font-medium text-[#001E13]">
-                {locale === "fr" ? feature.fr : feature.en}
+                {t(`features.${feature.slug}`)}
               </span>
             </Link>
           ))}

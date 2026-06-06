@@ -1,0 +1,51 @@
+{
+  "copy": {
+    "itemsReady": "14 / 20 articles",
+    "readyForTrip": "prêts pour le voyage",
+    "categories": [
+      {
+        "icon": "👕",
+        "title": "Vêtements",
+        "progress": 80,
+        "items": [
+          { "name": "T-shirts (x5)", "checked": true },
+          { "name": "Pantalons (x3)", "checked": true },
+          { "name": "Veste légère", "checked": true },
+          { "name": "Maillot de bain", "checked": false }
+        ]
+      },
+      {
+        "icon": "🔌",
+        "title": "Électronique",
+        "progress": 60,
+        "items": [
+          { "name": "Chargeur téléphone", "checked": true },
+          { "name": "Adaptateur de prise", "checked": true },
+          { "name": "Batterie externe", "checked": false },
+          { "name": "Écouteurs", "checked": false }
+        ]
+      },
+      {
+        "icon": "🧴",
+        "title": "Trousse de toilette",
+        "progress": 100,
+        "items": [
+          { "name": "Brosse à dents", "checked": true },
+          { "name": "Crème solaire", "checked": true },
+          { "name": "Shampoing", "checked": true }
+        ]
+      }
+    ],
+    "tipTitle": "Suggestion basée sur votre voyage",
+    "tipText": "Il fait en moyenne 28 °C à Lisbonne en avril. Pensez à prendre des vêtements légers et de la crème solaire !",
+    "packTitle": "Préparez vos bagages l'esprit tranquille",
+    "sharedTitle": "Qui apporte quoi ? Réglé une bonne fois pour toutes",
+    "sharedSubtitle": "Évitez les doublons en répartissant qui apporte quoi.",
+    "bringing": "Apporte :",
+    "people": [
+      { "avatar": "👩‍🎨", "name": "Marie", "items": ["Crème solaire", "Jeu de cartes", "Guide de voyage"] },
+      { "avatar": "🧔", "name": "Thomas", "items": ["Adaptateur de prise", "Enceinte Bluetooth"] },
+      { "avatar": "👱‍♀️", "name": "Emma", "items": ["Trousse de secours", "Jumelles"] }
+    ]
+  }
+}

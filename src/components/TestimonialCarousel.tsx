@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-type Lang = "en" | "fr";
+import { useTranslations } from "next-intl";
 
 type Testimonial = {
   quote: string;
@@ -10,65 +9,9 @@ type Testimonial = {
   authorRole: string;
 };
 
-const TESTIMONIALS: Record<Lang, Testimonial[]> = {
-  fr: [
-    {
-      quote:
-        "J'utilise WePlanify depuis quelques semaines pour planifier un voyage entre potes. L'interface est simple et le partage des tâches super pratique.",
-      author: "Eva",
-      authorRole: "Voyageuse passionnée",
-    },
-    {
-      quote:
-        "Pratique pour caler des étapes au fil du voyage. Je peux ajuster mes plans sans tout refaire.",
-      author: "Tom",
-      authorRole: "Digital nomade",
-    },
-    {
-      quote:
-        "Avec les sondages, on s'est mis d'accord sur l'hôtel en 10 minutes.",
-      author: "Lucas",
-      authorRole: "Voyage entre amis",
-    },
-    {
-      quote: "Enfin un itinéraire clair pour toute la famille.",
-      author: "Isabelle",
-      authorRole: "Voyage en famille",
-    },
-  ],
-  en: [
-    {
-      quote:
-        "I've been using WePlanify for a few weeks to plan a trip with friends. The interface is simple and sharing tasks is super handy.",
-      author: "Eva",
-      authorRole: "Passionate traveler",
-    },
-    {
-      quote:
-        "Great for tweaking stops as I travel. I can adjust my plans without redoing everything.",
-      author: "Tom",
-      authorRole: "Digital nomad",
-    },
-    {
-      quote: "With polls, we agreed on the hotel in 10 minutes.",
-      author: "Lucas",
-      authorRole: "Friends trip",
-    },
-    {
-      quote: "We finally have a clear itinerary for the whole family.",
-      author: "Isabelle",
-      authorRole: "Family trip",
-    },
-  ],
-};
-
-interface TestimonialCarouselProps {
-  locale?: string;
-}
-
-export default function TestimonialCarousel({ locale = "en" }: TestimonialCarouselProps) {
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const testimonials = TESTIMONIALS[lang];
+export default function TestimonialCarousel() {
+  const t = useTranslations("testimonialCarousel");
+  const testimonials = t.raw("testimonials") as Testimonial[];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevious = () => {

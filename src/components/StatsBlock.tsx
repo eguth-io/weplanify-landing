@@ -1,4 +1,4 @@
-type Lang = "en" | "fr";
+import { useTranslations } from "next-intl";
 
 type Stat = {
   value: string;
@@ -6,35 +6,10 @@ type Stat = {
   showStar?: boolean;
 };
 
-type StatsContent = {
-  title: string;
-  items: Stat[];
-};
-
-const STATS: Record<Lang, StatsContent> = {
-  fr: {
-    title: "Chaque voyage mérite de commencer sereinement",
-    items: [
-      { value: "+190", label: "pays couverts" },
-      { value: "4,8", label: "Satisfaction des voyageurs", showStar: true },
-    ],
-  },
-  en: {
-    title: "Trusted by groups who travel smarter",
-    items: [
-      { value: "190+", label: "countries covered" },
-      { value: "4.8", label: "Traveler satisfaction", showStar: true },
-    ],
-  },
-};
-
-interface StatsBlockProps {
-  locale?: string;
-}
-
-export default function StatsBlock({ locale = "en" }: StatsBlockProps) {
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const { title, items } = STATS[lang];
+export default function StatsBlock() {
+  const t = useTranslations("statsBlock");
+  const title = t("title");
+  const items = t.raw("items") as Stat[];
 
   return (
     <div className="bg-[#EEF899] rounded-[24px] lg:rounded-[32px] p-8 lg:p-12">

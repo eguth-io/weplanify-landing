@@ -1,0 +1,38 @@
+{
+  "title": "Des fonctionnalités pensées pour voyager ensemble",
+  "cards": [
+    {
+      "imagePosition": "right",
+      "title": "Explore et propose des idées au groupe",
+      "description": "Trouve activités, restaurants, hébergement et transport directement dans l'app.\nAjoute-les à l'itinéraire ou soumets-les au vote du groupe.\n\nL'exploration devient collaborative.",
+      "animation": "ai-globe",
+      "backgroundColor": "#FFFFFF",
+      "ctaLabel": "Explorer les destinations",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#E83F28",
+      "stats": [{ "value": "+190", "label": "destinations possibles" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "Décidez ensemble grâce aux sondages",
+      "description": "Où dormir ?\nQue faire ?\nQuand partir ?\n\nCréez un sondage, chacun vote, la décision est prise.\nLe groupe avance. Le voyage aussi.",
+      "animation": "live-voting",
+      "backgroundColor": "#EEF899",
+      "ctaLabel": "Lancer un sondage",
+      "ctaTextColor": "#FFFBF5",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "1000+", "label": "sondages quotidiens" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "Un itinéraire clair, jour après jour",
+      "description": "Chaque journée du voyage est structurée :\nque faire, où manger, où dormir, comment se déplacer.\n\nTout est clair pour tout le monde.",
+      "animation": "live-collaboration",
+      "backgroundColor": "#61DBD5",
+      "ctaLabel": "Construire l'itinéraire",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "10+", "label": "partenaires" }]
+    }
+  ]
+}

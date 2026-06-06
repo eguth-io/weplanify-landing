@@ -2,20 +2,8 @@
 
 import { ChevronLeft, ChevronRight, Instagram } from "lucide-react";
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 import type { InstagramPost } from "@/lib/instagram";
-
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, { title: string; subtitle: string }> = {
-  fr: {
-    title: "Suis nos aventures",
-    subtitle: "Inspiration voyage et coulisses, chaque semaine sur Instagram.",
-  },
-  en: {
-    title: "Follow our adventures",
-    subtitle: "Travel inspiration and behind-the-scenes, weekly on Instagram.",
-  },
-};
 
 const PROFILE_URL = "https://www.instagram.com/weplanify/";
 
@@ -24,9 +12,8 @@ interface InstagramSliderProps {
   locale?: string;
 }
 
-export default function InstagramSlider({ posts, locale = "en" }: InstagramSliderProps) {
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const copy = COPY[lang];
+export default function InstagramSlider({ posts }: InstagramSliderProps) {
+  const t = useTranslations("instagramSlider");
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   if (!posts || posts.length === 0) {
@@ -43,9 +30,9 @@ export default function InstagramSlider({ posts, locale = "en" }: InstagramSlide
         <div className="flex flex-wrap items-end justify-between gap-4 mb-6 lg:mb-8">
           <div>
             <h2 className="text-[#001E13] text-3xl lg:text-5xl font-londrina-solid leading-tight">
-              {copy.title}
+              {t("title")}
             </h2>
-            <p className="text-[#001E13] text-sm lg:text-base font-karla mt-2">{copy.subtitle}</p>
+            <p className="text-[#001E13] text-sm lg:text-base font-karla mt-2">{t("subtitle")}</p>
           </div>
           <div className="flex items-center gap-3">
             <a
