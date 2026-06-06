@@ -798,7 +798,7 @@ export function ExplorerCards({
               <div
                 key={`pin-${activeFilter}-${i}`}
                 className="absolute z-10 pointer-events-none"
-                style={{ left: `${pos.xPct}%`, top: `${pos.yPct}%`, transform: 'translate(-50%, -100%)' }}
+                style={{ left: `${pos.xPct.toFixed(4)}%`, top: `${pos.yPct.toFixed(4)}%`, transform: 'translate(-50%, -100%)' }}
               >
                 <div className="relative flex flex-col items-center">
                   <div

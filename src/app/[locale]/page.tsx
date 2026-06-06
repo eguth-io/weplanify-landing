@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import dynamic from "next/dynamic";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -199,26 +200,26 @@ export default async function HomePage({ params }: Props) {
           <div className="flex whitespace-nowrap animate-scroll">
             <div className="flex items-center gap-8 lg:gap-12">
               {banner.items.map((item, index) => (
-                <>
-                  <span key={`item-${index}`} className="text-base lg:text-xl font-londrina-solid">
+                <Fragment key={`item-${index}`}>
+                  <span className="text-base lg:text-xl font-londrina-solid">
                     {item}
                   </span>
-                  <span key={`dot-${index}`} className="text-base lg:text-xl">
+                  <span className="text-base lg:text-xl">
                     •
                   </span>
-                </>
+                </Fragment>
               ))}
             </div>
             <div className="flex items-center gap-8 lg:gap-12 ml-8 lg:ml-12">
               {banner.items.map((item, index) => (
-                <>
-                  <span key={`item2-${index}`} className="text-base lg:text-xl font-londrina-solid">
+                <Fragment key={`item2-${index}`}>
+                  <span className="text-base lg:text-xl font-londrina-solid">
                     {item}
                   </span>
-                  <span key={`dot2-${index}`} className="text-base lg:text-xl">
+                  <span className="text-base lg:text-xl">
                     •
                   </span>
-                </>
+                </Fragment>
               ))}
             </div>
           </div>

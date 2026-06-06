@@ -46,6 +46,15 @@ type Bubble = {
   edge: number;
   /** Slightly translucent for a layered/depth effect, like the original mockup. */
   dim?: boolean;
+  /**
+   * Mobile placement. Only bubbles with this set are shown on mobile, floating
+   * in one of the four corners and slightly overlapping the phone for depth.
+   */
+  mobile?: {
+    corner: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+    /** Vertical anchor as a percentage of the container height (mobile). */
+    top: number;
+  };
 };
 
 const BUBBLES: Bubble[] = [
@@ -57,6 +66,7 @@ const BUBBLES: Bubble[] = [
     side: "left",
     top: 10,
     edge: 38,
+    mobile: { corner: "top-left", top: 6 },
   },
   {
     text: { fr: "Gérer les dépenses de votre voyage", en: "Manage your trip expenses" },
@@ -74,6 +84,7 @@ const BUBBLES: Bubble[] = [
     top: 54,
     edge: 33,
     dim: true,
+    mobile: { corner: "bottom-left", top: 70 },
   },
   {
     text: { fr: "Gérer votre voyage", en: "Manage your trip" },
@@ -91,6 +102,7 @@ const BUBBLES: Bubble[] = [
     side: "right",
     top: 9,
     edge: 32,
+    mobile: { corner: "top-right", top: 16 },
   },
   {
     text: { fr: "Trouver vos futurs logements", en: "Find your accommodation" },
@@ -117,6 +129,7 @@ const BUBBLES: Bubble[] = [
     side: "right",
     top: 78,
     edge: 34,
+    mobile: { corner: "bottom-right", top: 84 },
   },
 ];
 
@@ -135,8 +148,10 @@ export default function FeatureImageSection({ locale = "en" }: FeatureImageSecti
           {title}
         </h2>
 
-        {/* Shifted left so the phone (offset right by the hand) sits centered under the title */}
-        <div className="relative w-full max-w-[1040px] mx-auto lg:-translate-x-[42px]">
+        {/* Shifted left so the phone (offset right by the hand) sits centered under the title.
+            Mobile: extra vertical padding so the corner bubbles (which overlap the
+            phone's top/bottom) don't crowd the title above or the next section below. */}
+        <div className="relative w-full max-w-[1040px] mx-auto py-10 lg:py-0 lg:-translate-x-[42px]">
           {/* Phone mockup (clean, no baked-in text) */}
           <div className="relative z-20 mx-auto w-[270px] sm:w-[340px] lg:w-[440px]">
             <Image
@@ -155,30 +170,11 @@ export default function FeatureImageSection({ locale = "en" }: FeatureImageSecti
             <FeatureBubble key={b.text.en} bubble={b} lang={lang} />
           ))}
 
-          {/* Bubbles — mobile: wrapped list below the phone */}
-          <ul className="mt-8 flex flex-wrap justify-center gap-2.5 lg:hidden">
-            {BUBBLES.map((b) => {
-              const Icon = b.icon;
-              return (
-                <li
-                  key={b.text.en}
-                  className="inline-flex items-center gap-2 rounded-2xl bg-white px-3 py-2 shadow-[0_8px_24px_-12px_rgba(0,0,0,0.35)] ring-1 ring-black/5"
-                >
-                  <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-orange">
-                    <Icon className="h-3.5 w-3.5 text-white" />
-                  </span>
-                  <span className="flex flex-col">
-                    <span className="font-karla text-sm font-semibold leading-tight text-[#001E13]">
-                      {b.text[lang]}
-                    </span>
-                    <span className="font-karla text-[11px] leading-tight text-gray-400">
-                      {b.subtitle[lang]}
-                    </span>
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
+          {/* Bubbles — mobile: a few floating in the corners, overlapping the
+              phone for the same layered effect as desktop. */}
+          {BUBBLES.filter((b) => b.mobile).map((b) => (
+            <MobileFeatureBubble key={b.text.en} bubble={b} lang={lang} />
+          ))}
         </div>
       </div>
     </div>
@@ -217,6 +213,43 @@ function FeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
           {bubble.text[lang]}
         </span>
         <span className="font-karla text-[11px] leading-tight text-gray-400 whitespace-nowrap">
+          {bubble.subtitle[lang]}
+        </span>
+      </span>
+    </div>
+  );
+}
+
+function MobileFeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
+  const Icon = bubble.icon;
+  const corner = bubble.mobile!.corner;
+  const isLeft = corner === "top-left" || corner === "bottom-left";
+  // Left bubbles hug the container's left edge; right bubbles its right edge.
+  // The phone is centered, so they naturally overlap its sides — the layered
+  // depth effect from desktop, resized for a narrow screen.
+  const sidePos = isLeft ? { left: 0 } : { right: 0 };
+  // Like desktop: tuck the card's whitespace (extra inner padding), not the
+  // text, behind the phone. Left bubbles pad their right side, right bubbles
+  // their left side. Icon stays flush on the outer edge.
+  const innerPad = isLeft ? "pl-3 pr-7" : "pl-7 pr-3 flex-row-reverse text-right";
+
+  return (
+    <div
+      className={`absolute z-10 flex max-w-[52%] items-center gap-2 rounded-2xl bg-white ${innerPad} py-2 shadow-[0_10px_28px_-12px_rgba(0,0,0,0.4)] ring-1 ring-black/5 lg:hidden`}
+      style={{
+        top: `${bubble.mobile!.top}%`,
+        ...sidePos,
+        opacity: bubble.dim ? 0.85 : 1,
+      }}
+    >
+      <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-orange">
+        <Icon className="h-3.5 w-3.5 text-white" />
+      </span>
+      <span className="flex min-w-0 flex-col">
+        <span className="font-karla text-xs font-bold leading-tight text-[#001E13]">
+          {bubble.text[lang]}
+        </span>
+        <span className="truncate font-karla text-[10px] leading-tight text-gray-400">
           {bubble.subtitle[lang]}
         </span>
       </span>

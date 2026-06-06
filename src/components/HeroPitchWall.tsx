@@ -269,12 +269,23 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
       <div className="max-w-[1536px] mx-auto">
         <section className="relative overflow-hidden rounded-[24px] lg:rounded-[40px]">
           <div className="absolute inset-0 z-0">
+            {/* Mobile background */}
+            <Image
+              src="/header-bg-mobile.webp"
+              alt={hero.title || 'Hero'}
+              fill
+              sizes="100vw"
+              className="object-cover lg:hidden"
+              priority
+              fetchPriority="high"
+            />
+            {/* Desktop background */}
             <Image
               src={hero.backgroundImage || '/header-bg.webp'}
               alt={hero.title || 'Hero'}
               fill
               sizes="100vw"
-              className="object-cover"
+              className="object-cover hidden lg:block"
               priority
               fetchPriority="high"
             />
@@ -438,7 +449,7 @@ function MonthPicker({
         <Calendar className="w-3.5 h-3.5" />
         {label}
       </span>
-      <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 -mb-1">
+      <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-hide pb-1 -mb-1">
         <button
           type="button"
           disabled={disabled}
@@ -678,7 +689,7 @@ function PitchBubble({ bubble, converging }: { bubble: Bubble; converging: boole
             }
       }
       style={{ left: `${bubble.x}%`, top: `${bubble.y}%` }}
-      className={`pointer-events-none absolute z-10 ${bubble.desktopOnly ? 'hidden lg:block' : ''}`}
+      className="pointer-events-none absolute z-10 hidden lg:block"
     >
       <motion.div
         animate={
