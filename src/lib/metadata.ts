@@ -39,6 +39,36 @@ const localizedDefaults: Record<string, { title: string; description: string }> 
     description:
       "L'appli collaborative pour vos voyages entre amis : itinéraire partagé, sondages, budget commun, listes de bagages. Gratuite, en français.",
   },
+  es: {
+    title: "WePlanify — App gratuita para planificar viajes en grupo",
+    description:
+      "La app colaborativa para viajes en grupo: itinerario compartido, encuestas, presupuesto común y listas de equipaje. Gratis, pensada para viajar con amigos.",
+  },
+  it: {
+    title: "WePlanify — App gratuita per organizzare viaggi di gruppo",
+    description:
+      "L'app collaborativa per i viaggi di gruppo: itinerario condiviso, sondaggi, budget comune e liste bagagli. Gratis, pensata per viaggiare con gli amici.",
+  },
+  zh: {
+    title: "WePlanify — 免费的团队旅行规划应用",
+    description:
+      "协作式团队旅行规划应用：共享行程、群组投票、共享预算和打包清单。免费，专为和朋友出行打造。",
+  },
+  de: {
+    title: "WePlanify — Kostenlose App zur Planung von Gruppenreisen",
+    description:
+      "Die kollaborative App für Gruppenreisen: gemeinsamer Reiseplan, Abstimmungen, geteiltes Budget und Packlisten. Kostenlos, gemacht für Reisen mit Freunden.",
+  },
+  pt: {
+    title: "WePlanify — App gratuita para planear viagens em grupo",
+    description:
+      "A app colaborativa para viagens em grupo: itinerário partilhado, sondagens, orçamento comum e listas de bagagem. Grátis, feita para viajar com amigos.",
+  },
+  pl: {
+    title: "WePlanify — Darmowa aplikacja do planowania wyjazdów grupowych",
+    description:
+      "Wspólna aplikacja do planowania wyjazdów grupowych: wspólny plan podróży, ankiety, wspólny budżet i listy pakowania. Za darmo, stworzona na wyjazdy ze znajomymi.",
+  },
 };
 
 /**

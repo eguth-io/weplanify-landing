@@ -381,11 +381,10 @@ export default function Footer({ footerData }: FooterProps) {
 
         {/* Copyright & Language Switcher */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-8">
-          {footerData?.copyrightText && (
-            <p className="text-[#001E13]/60 text-sm font-karla">
-              {footerData.copyrightText}
-            </p>
-          )}
+          <p className="text-[#001E13]/60 text-sm font-karla">
+            {footerData?.copyrightText ||
+              `© ${new Date().getFullYear()} WePlanify. ${t("copyright")}`}
+          </p>
 
           {/* Language Switcher — opens the "Choose language" modal */}
           <button
