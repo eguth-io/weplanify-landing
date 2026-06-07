@@ -5,5 +5,61 @@
   "login": "登录",
   "startMyJourney": "开启我的旅程",
   "register": "注册",
-  "chooseLanguage": "选择语言"
+  "chooseLanguage": "选择语言",
+  "menu": {
+    "features": {
+      "label": "功能",
+      "headings": {
+        "planDecide": "规划与决策",
+        "organize": "组织行程"
+      },
+      "items": {
+        "planning": "行程规划（手动或 AI）",
+        "polls": "群组投票",
+        "collaboration": "协作",
+        "discovery": "发现",
+        "itinerary": "行程单",
+        "budget": "共享预算",
+        "packing": "行李清单",
+        "transport": "交通",
+        "memories": "回忆"
+      }
+    },
+    "useCases": {
+      "label": "使用场景",
+      "items": {
+        "friends": "好友出游",
+        "bachelorette": "婚前单身派对旅行",
+        "birthday": "生日旅行",
+        "family": "家庭旅行",
+        "roadTrip": "自驾游",
+        "school": "学校旅行",
+        "teamBuilding": "团队建设"
+      }
+    },
+    "compare": {
+      "label": "对比",
+      "items": {
+        "bestApps": "2026 最佳应用",
+        "wanderlog": "对比 Wanderlog",
+        "tripit": "对比 TripIt",
+        "squadtrip": "对比 SquadTrip",
+        "stippl": "对比 Stippl",
+        "cruzmi": "对比 Cruzmi"
+      }
+    },
+    "resources": {
+      "label": "资源",
+      "items": {
+        "blog": "博客",
+        "guide": "团队旅行指南",
+        "destinations": "目的地",
+        "travelGuides": "旅行指南",
+        "events": "2026 活动",
+        "faq": "常见问题",
+        "about": "关于我们",
+        "partnership": "合作"
+      }
+    }
+  }
 }

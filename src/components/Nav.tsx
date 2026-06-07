@@ -7,6 +7,7 @@ import { PulsatingButton } from "./magicui/pulsating-button";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { routing } from "@/i18n/routing";
 import LanguageModal from "./LanguageModal";
 import { useImmersiveMode } from "@/lib/hooks/use-immersive-mode";
 
@@ -18,123 +19,97 @@ const DEFAULT_NAV_DATA: NavType = {
   connexionLink: "/login",
 };
 
-type Locale = "en" | "fr";
-type Localized = { en: string; fr: string };
+type Locale = string;
 type DropdownItem = {
-  label: Localized;
-  description?: Localized;
+  labelKey: string;
   href: (locale: Locale) => string;
 };
 type DropdownColumn = {
-  heading?: Localized;
+  headingKey?: string;
   items: DropdownItem[];
 };
 type Dropdown = {
   id: string;
-  label: Localized;
+  labelKey: string;
   // One column = simple list. Two columns = grouped layout with headings.
   columns: DropdownColumn[];
 };
 
+// Labels live in the `nav` message namespace under `menu.*`; only the URL logic
+// stays in code so adding a language is just translating the messages.
 const DROPDOWNS: Dropdown[] = [
   {
     id: "features",
-    label: { en: "Features", fr: "Fonctionnalités" },
+    labelKey: "menu.features.label",
     columns: [
       {
-        heading: { en: "Plan & decide", fr: "Planifier & décider" },
+        headingKey: "menu.features.headings.planDecide",
         items: [
-          {
-            label: { en: "Planning (manual or AI)", fr: "Planification (manuelle ou IA)" },
-            href: (l) => `/${l}/features/planning`,
-          },
-          {
-            label: { en: "Group polls", fr: "Sondages" },
-            href: (l) => `/${l}/features/polls`,
-          },
-          {
-            label: { en: "Collaboration", fr: "Collaboration" },
-            href: (l) => `/${l}/features/collaboration`,
-          },
-          {
-            label: { en: "Discovery", fr: "Découverte" },
-            href: (l) => `/${l}/features/explore`,
-          },
+          { labelKey: "menu.features.items.planning", href: (l) => `/${l}/features/planning` },
+          { labelKey: "menu.features.items.polls", href: (l) => `/${l}/features/polls` },
+          { labelKey: "menu.features.items.collaboration", href: (l) => `/${l}/features/collaboration` },
+          { labelKey: "menu.features.items.discovery", href: (l) => `/${l}/features/explore` },
         ],
       },
       {
-        heading: { en: "Organize the trip", fr: "Organiser le voyage" },
+        headingKey: "menu.features.headings.organize",
         items: [
-          {
-            label: { en: "Itinerary", fr: "Itinéraire" },
-            href: (l) => `/${l}/features/itinerary`,
-          },
-          {
-            label: { en: "Shared budget", fr: "Budget partagé" },
-            href: (l) => `/${l}/features/budget`,
-          },
-          {
-            label: { en: "Packing lists", fr: "Listes de bagages" },
-            href: (l) => `/${l}/features/packing` },
-          {
-            label: { en: "Transport", fr: "Transport" },
-            href: (l) => `/${l}/features/transport`,
-          },
-          {
-            label: { en: "Memories", fr: "Souvenirs" },
-            href: (l) => `/${l}/features/memories`,
-          },
+          { labelKey: "menu.features.items.itinerary", href: (l) => `/${l}/features/itinerary` },
+          { labelKey: "menu.features.items.budget", href: (l) => `/${l}/features/budget` },
+          { labelKey: "menu.features.items.packing", href: (l) => `/${l}/features/packing` },
+          { labelKey: "menu.features.items.transport", href: (l) => `/${l}/features/transport` },
+          { labelKey: "menu.features.items.memories", href: (l) => `/${l}/features/memories` },
         ],
       },
     ],
   },
   {
     id: "use-cases",
-    label: { en: "Use cases", fr: "Cas d'usage" },
+    labelKey: "menu.useCases.label",
     columns: [
       {
         items: [
-          { label: { en: "Trip with friends", fr: "Voyage entre amis" }, href: (l) => `/${l}/trip-with-friends` },
-          { label: { en: "Bachelorette trip", fr: "EVJF" }, href: (l) => `/${l}/bachelorette-trip` },
-          { label: { en: "Birthday trip", fr: "Voyage anniversaire" }, href: (l) => `/${l}/birthday-trip` },
-          { label: { en: "Family trip", fr: "Voyage en famille" }, href: (l) => `/${l}/family-trip` },
-          { label: { en: "Road trip", fr: "Road trip" }, href: (l) => `/${l}/road-trip` },
-          { label: { en: "School trip", fr: "Voyage scolaire" }, href: (l) => `/${l}/school-trip` },
-          { label: { en: "Team building", fr: "Team building" }, href: (l) => `/${l}/team-building` },
+          { labelKey: "menu.useCases.items.friends", href: (l) => `/${l}/trip-with-friends` },
+          { labelKey: "menu.useCases.items.bachelorette", href: (l) => `/${l}/bachelorette-trip` },
+          { labelKey: "menu.useCases.items.birthday", href: (l) => `/${l}/birthday-trip` },
+          { labelKey: "menu.useCases.items.family", href: (l) => `/${l}/family-trip` },
+          { labelKey: "menu.useCases.items.roadTrip", href: (l) => `/${l}/road-trip` },
+          { labelKey: "menu.useCases.items.school", href: (l) => `/${l}/school-trip` },
+          { labelKey: "menu.useCases.items.teamBuilding", href: (l) => `/${l}/team-building` },
         ],
       },
     ],
   },
   {
     id: "compare",
-    label: { en: "Compare", fr: "Comparer" },
+    labelKey: "menu.compare.label",
     columns: [
       {
         items: [
-          { label: { en: "Best apps 2026", fr: "Meilleures apps 2026" }, href: (l) => `/${l}/alternatives/best-group-trip-planner-apps` },
-          { label: { en: "vs Wanderlog", fr: "vs Wanderlog" }, href: (l) => `/${l}/alternatives/wanderlog` },
-          { label: { en: "vs TripIt", fr: "vs TripIt" }, href: (l) => `/${l}/alternatives/tripit` },
-          { label: { en: "vs SquadTrip", fr: "vs SquadTrip" }, href: (l) => `/${l}/alternatives/squadtrip` },
-          { label: { en: "vs Stippl", fr: "vs Stippl" }, href: (l) => `/${l}/alternatives/stippl` },
-          { label: { en: "vs Cruzmi", fr: "vs Cruzmi" }, href: (l) => `/${l}/alternatives/cruzmi` },
+          { labelKey: "menu.compare.items.bestApps", href: (l) => `/${l}/alternatives/best-group-trip-planner-apps` },
+          { labelKey: "menu.compare.items.wanderlog", href: (l) => `/${l}/alternatives/wanderlog` },
+          { labelKey: "menu.compare.items.tripit", href: (l) => `/${l}/alternatives/tripit` },
+          { labelKey: "menu.compare.items.squadtrip", href: (l) => `/${l}/alternatives/squadtrip` },
+          { labelKey: "menu.compare.items.stippl", href: (l) => `/${l}/alternatives/stippl` },
+          { labelKey: "menu.compare.items.cruzmi", href: (l) => `/${l}/alternatives/cruzmi` },
         ],
       },
     ],
   },
   {
     id: "resources",
-    label: { en: "Resources", fr: "Ressources" },
+    labelKey: "menu.resources.label",
     columns: [
       {
         items: [
-          { label: { en: "Blog", fr: "Blog" }, href: (l) => `/${l}/blog` },
-          { label: { en: "Group trip guide", fr: "Guide voyage de groupe" }, href: (l) => `/${l}/guides/plan-group-trip` },
-          { label: { en: "Destinations", fr: "Destinations" }, href: (l) => `/${l}/destinations` },
-          { label: { en: "Travel guides", fr: "Guides voyage" }, href: (l) => `/${l}/travel-guides` },
-          { label: { en: "2026 events", fr: "Événements 2026" }, href: (l) => `/${l}/events` },
-          { label: { en: "FAQ", fr: "FAQ" }, href: (l) => `/${l}/faq` },
-          { label: { en: "About", fr: "À propos" }, href: (l) => `/${l}/about` },
-          { label: { en: "Partnership", fr: "Partenariat" }, href: (l) => `/${l}/partnership` },
+          { labelKey: "menu.resources.items.blog", href: (l) => `/${l}/blog` },
+          { labelKey: "menu.resources.items.guide", href: (l) => `/${l}/guides/plan-group-trip` },
+          { labelKey: "menu.resources.items.destinations", href: (l) => `/${l}/destinations` },
+          { labelKey: "menu.resources.items.travelGuides", href: (l) => `/${l}/travel-guides` },
+          { labelKey: "menu.resources.items.events", href: (l) => `/${l}/events` },
+          { labelKey: "menu.resources.items.faq", href: (l) => `/${l}/faq` },
+          { labelKey: "menu.resources.items.about", href: (l) => `/${l}/about` },
+          { labelKey: "menu.resources.items.partnership", href: (l) => `/${l}/partnership` },
         ],
       },
     ],
@@ -183,7 +158,8 @@ export default function Nav({ navData }: NavProps) {
   // the mobile menu is open (the user needs the full bar to navigate/close).
   const immersive = useImmersiveMode() && !isMenuOpen;
 
-  const locale: Locale = pathname?.startsWith("/fr") ? "fr" : "en";
+  const seg = pathname?.split("/")[1] ?? "";
+  const locale: Locale = (routing.locales as readonly string[]).includes(seg) ? seg : "en";
   const nav = navData || DEFAULT_NAV_DATA;
   const loginUrl = `https://app.weplanify.com/${locale}/login`;
   const registerUrl = useRegisterHref({ locale, medium: "nav" });
@@ -255,7 +231,7 @@ export default function Nav({ navData }: NavProps) {
                     aria-haspopup="menu"
                     aria-expanded="false"
                   >
-                    {dropdown.label[locale]}
+                    {t(dropdown.labelKey)}
                     <Chevron className="group-hover:rotate-180" />
                   </button>
                   <div className="absolute left-0 right-0 top-full h-2 invisible group-hover:visible" aria-hidden="true" />
@@ -269,9 +245,9 @@ export default function Nav({ navData }: NavProps) {
                   >
                     {dropdown.columns.map((col, ci) => (
                       <div key={ci} className={isMulticol ? "min-w-0" : ""}>
-                        {col.heading && (
+                        {col.headingKey && (
                           <div className="px-3 pt-1 pb-2 text-[11px] font-semibold uppercase tracking-wider text-black/40">
-                            {col.heading[locale]}
+                            {t(col.headingKey)}
                           </div>
                         )}
                         {col.items.map((item, i) => {
@@ -288,7 +264,7 @@ export default function Nav({ navData }: NavProps) {
                               }`}
                               role="menuitem"
                             >
-                              {item.label[locale]}
+                              {t(item.labelKey)}
                             </Link>
                           );
                         })}
@@ -358,16 +334,16 @@ export default function Nav({ navData }: NavProps) {
                     }`}
                     aria-expanded={open}
                   >
-                    {dropdown.label[locale]}
+                    {t(dropdown.labelKey)}
                     <Chevron className={open ? "rotate-180" : ""} />
                   </button>
                   {open && (
                     <div className="pb-3">
                       {dropdown.columns.map((col, ci) => (
                         <div key={ci} className="mb-2 last:mb-0">
-                          {col.heading && (
+                          {col.headingKey && (
                             <div className="px-4 pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wider text-black/40">
-                              {col.heading[locale]}
+                              {t(col.headingKey)}
                             </div>
                           )}
                           {col.items.map((item, i) => {
@@ -382,7 +358,7 @@ export default function Nav({ navData }: NavProps) {
                                   itemActive ? "text-orange font-medium" : "text-black/70 hover:text-orange"
                                 }`}
                               >
-                                {item.label[locale]}
+                                {t(item.labelKey)}
                               </Link>
                             );
                           })}

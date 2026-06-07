@@ -5,5 +5,61 @@
   "login": "Iniciar sesión",
   "startMyJourney": "Empezar mi viaje",
   "register": "Registrarse",
-  "chooseLanguage": "Elegir idioma"
+  "chooseLanguage": "Elegir idioma",
+  "menu": {
+    "features": {
+      "label": "Funciones",
+      "headings": {
+        "planDecide": "Planificar y decidir",
+        "organize": "Organizar el viaje"
+      },
+      "items": {
+        "planning": "Planificación (manual o IA)",
+        "polls": "Encuestas de grupo",
+        "collaboration": "Colaboración",
+        "discovery": "Descubrimiento",
+        "itinerary": "Itinerario",
+        "budget": "Presupuesto compartido",
+        "packing": "Listas de equipaje",
+        "transport": "Transporte",
+        "memories": "Recuerdos"
+      }
+    },
+    "useCases": {
+      "label": "Casos de uso",
+      "items": {
+        "friends": "Viaje con amigos",
+        "bachelorette": "Despedida de soltera",
+        "birthday": "Viaje de cumpleaños",
+        "family": "Viaje en familia",
+        "roadTrip": "Road trip",
+        "school": "Viaje escolar",
+        "teamBuilding": "Team building"
+      }
+    },
+    "compare": {
+      "label": "Comparar",
+      "items": {
+        "bestApps": "Mejores apps 2026",
+        "wanderlog": "vs Wanderlog",
+        "tripit": "vs TripIt",
+        "squadtrip": "vs SquadTrip",
+        "stippl": "vs Stippl",
+        "cruzmi": "vs Cruzmi"
+      }
+    },
+    "resources": {
+      "label": "Recursos",
+      "items": {
+        "blog": "Blog",
+        "guide": "Guía de viaje en grupo",
+        "destinations": "Destinos",
+        "travelGuides": "Guías de viaje",
+        "events": "Eventos 2026",
+        "faq": "FAQ",
+        "about": "Acerca de",
+        "partnership": "Colaboraciones"
+      }
+    }
+  }
 }

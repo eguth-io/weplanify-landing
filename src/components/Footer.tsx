@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { routing } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { Footer as FooterType } from "@/sanity/lib/type";
 import { useState } from "react";
@@ -92,7 +93,8 @@ export default function Footer({ footerData }: FooterProps) {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [langModalOpen, setLangModalOpen] = useState(false);
   const pathname = usePathname();
-  const locale = pathname?.startsWith("/fr") ? "fr" : "en";
+  const seg = pathname?.split("/")[1] ?? "";
+  const locale = (routing.locales as readonly string[]).includes(seg) ? seg : "en";
   const registerFallback = useRegisterHref({ locale, medium: "footer" });
   const t = useTranslations("footer");
 

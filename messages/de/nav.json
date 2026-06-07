@@ -5,5 +5,61 @@
   "login": "Anmelden",
   "startMyJourney": "Reise starten",
   "register": "Registrieren",
-  "chooseLanguage": "Sprache wählen"
+  "chooseLanguage": "Sprache wählen",
+  "menu": {
+    "features": {
+      "label": "Funktionen",
+      "headings": {
+        "planDecide": "Planen & entscheiden",
+        "organize": "Reise organisieren"
+      },
+      "items": {
+        "planning": "Planung (manuell oder KI)",
+        "polls": "Gruppenabstimmungen",
+        "collaboration": "Zusammenarbeit",
+        "discovery": "Entdecken",
+        "itinerary": "Reiseroute",
+        "budget": "Gemeinsames Budget",
+        "packing": "Packlisten",
+        "transport": "Transport",
+        "memories": "Erinnerungen"
+      }
+    },
+    "useCases": {
+      "label": "Anwendungsfälle",
+      "items": {
+        "friends": "Reise mit Freunden",
+        "bachelorette": "Junggesellinnenabschied",
+        "birthday": "Geburtstagsreise",
+        "family": "Familienreise",
+        "roadTrip": "Roadtrip",
+        "school": "Klassenfahrt",
+        "teamBuilding": "Team building"
+      }
+    },
+    "compare": {
+      "label": "Vergleichen",
+      "items": {
+        "bestApps": "Beste Apps 2026",
+        "wanderlog": "vs Wanderlog",
+        "tripit": "vs TripIt",
+        "squadtrip": "vs SquadTrip",
+        "stippl": "vs Stippl",
+        "cruzmi": "vs Cruzmi"
+      }
+    },
+    "resources": {
+      "label": "Ressourcen",
+      "items": {
+        "blog": "Blog",
+        "guide": "Gruppenreise-Guide",
+        "destinations": "Reiseziele",
+        "travelGuides": "Reiseführer",
+        "events": "Events 2026",
+        "faq": "FAQ",
+        "about": "Über uns",
+        "partnership": "Partnerschaft"
+      }
+    }
+  }
 }
