@@ -12,8 +12,8 @@ import LanguageModal from "./LanguageModal";
 import { useImmersiveMode } from "@/lib/hooks/use-immersive-mode";
 
 const DEFAULT_NAV_DATA: NavType = {
-  logo: "/logo.svg",
-  logoMobile: "/logo.svg",
+  logo: "/logo.webp",
+  logoMobile: "/logo.webp",
   ctaButton: "Get started",
   ctaLink: "/contact",
   connexionLink: "/login",
