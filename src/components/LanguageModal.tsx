@@ -19,7 +19,6 @@ const LOCALE_NAMES: Record<string, string> = {
   zh: "中文",
   de: "Deutsch",
   pt: "Português",
-  ru: "Русский",
   pl: "Polski",
 };
 
