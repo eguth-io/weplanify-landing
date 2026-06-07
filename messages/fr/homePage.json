@@ -1,5 +1,15 @@
 {
   "reviews": {
     "heading": "Avis des utilisateurs"
+  },
+  "hero": {
+    "affiliateTag": "Planifiez votre voyage de groupe, ensemble.",
+    "title": "Planifiez votre voyage ensemble, simplement et clairement.",
+    "description": "Centralisez votre itinéraire, les décisions du groupe, le budget et la préparation dans une seule app.\nFini les messages éparpillés. Fini la confusion."
+  },
+  "worldSection": {
+    "title": "Voyagez partout dans le monde",
+    "description": "WePlanify vous accompagne dans plus de 190 pays.",
+    "ctaText": "Commencer mon voyage"
   }
 }

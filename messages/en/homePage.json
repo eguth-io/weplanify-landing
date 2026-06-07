@@ -1,5 +1,15 @@
 {
   "reviews": {
     "heading": "User reviews"
+  },
+  "hero": {
+    "affiliateTag": "Plan your group trip, together.",
+    "title": "The Group Trip Planner That Brings Everyone Together",
+    "description": "Plan trips with friends or family in one shared space. Build your itinerary day by day, vote on activities, track your group budget, and get ready to travel — no more scattered chats or messy spreadsheets."
+  },
+  "worldSection": {
+    "title": "Group Travel Planning\nMade Simple",
+    "description": "From the streets of Lisbon to the temples of Kyoto, WePlanify helps your group turn travel ideas into a clear, stress-free itinerary.\n\n• Build a day-by-day group itinerary\n• Manage your shared travel budget\n• Vote on destinations, activities & restaurants\n• Create shared packing lists and assign tasks",
+    "ctaText": "Start Planning Together"
   }
 }
