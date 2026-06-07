@@ -1,0 +1,13 @@
+{
+  "title": "Un organizzatore di viaggi di gruppo,\ncreato dai viaggiatori, per i viaggiatori.",
+  "bubbles": [
+    { "text": "Condividi i tuoi sondaggi", "subtitle": "Date · Destinazione · Budget" },
+    { "text": "Gestisci le spese del viaggio", "subtitle": "Voli · Airbnb · Ristoranti" },
+    { "text": "Invita il gruppo", "subtitle": "Via email · Via link" },
+    { "text": "Gestisci il tuo viaggio", "subtitle": "Tappe · Giorni · Note" },
+    { "text": "Cerca attività", "subtitle": "Musei · Cibo · Spiagge" },
+    { "text": "Trova il tuo alloggio", "subtitle": "Hotel · Airbnb · Ostello" },
+    { "text": "Assegna i compiti", "subtitle": "Da fare · In corso · Completato" },
+    { "text": "Trova i trasporti", "subtitle": "Volo · Treno · Auto" }
+  ]
+}

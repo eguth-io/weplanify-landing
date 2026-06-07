@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -33,74 +33,28 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-const indexContent = {
-  en: {
-    eyebrow: "Destinations",
-    title: "Trip templates,\nready to fork.",
-    intro:
-      "Real itineraries for real group trips. Each destination below is a full template — day-by-day plan, vetted spots, honest budget, packing list. Fork any of them into your own WePlanify trip and bend it to your group.",
-    metaTitle:
-      "Destinations — Group Trip Templates by City & Use Case | WePlanify",
-    metaDescription:
-      "Real, bookable group trip itineraries: Las Vegas & Nashville bachelorette, Budapest, Marrakech, Tuscany & Andalusia road trips, Lisbon weekend. Day-by-day plans, real spots, budgets.",
-    filters: {
-      all: "All trips",
-      bachelorette: "Bachelorette",
-      "road-trip": "Road trips",
-      "with-friends": "With friends",
-    } as Record<string, string>,
-    cardCta: "See the itinerary →",
-    ctaTitle: "Don't see your destination?",
-    ctaBody:
-      "Start a blank trip in WePlanify — invite your friends, build the itinerary together, share the budget. Free.",
-    ctaButton: "Start a trip for free",
-  },
-  fr: {
-    eyebrow: "Destinations",
-    title: "Des templates de voyage,\nprêts à reprendre.",
-    intro:
-      "De vrais itinéraires pour de vrais voyages de groupe. Chaque destination ci-dessous est un template complet — programme jour par jour, bonnes adresses, budget honnête, liste à emporter. Reprends-en un dans ton WePlanify et adapte-le à ta team.",
-    metaTitle:
-      "Destinations — Templates de voyage de groupe par ville | WePlanify",
-    metaDescription:
-      "De vrais itinéraires de voyage de groupe : EVJF Las Vegas, Nashville, Budapest, Marrakech, road trips Toscane et Andalousie, Lisbonne entre amis. Programmes jour par jour, vraies adresses, budgets.",
-    filters: {
-      all: "Tous les voyages",
-      bachelorette: "EVJF",
-      "road-trip": "Road trips",
-      "with-friends": "Entre amis",
-    } as Record<string, string>,
-    cardCta: "Voir l'itinéraire →",
-    ctaTitle: "Ta destination n'y est pas ?",
-    ctaBody:
-      "Démarre un voyage vierge dans WePlanify — invite ta team, construis l'itinéraire ensemble, partage le budget. Gratuit.",
-    ctaButton: "Démarrer un voyage gratuitement",
-  },
-} as const;
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const loc: Locale = locale === "fr" ? "fr" : "en";
-  const t = indexContent[loc];
+  const t = await getTranslations({ locale, namespace: "destinationsIndex" });
   const baseMetadata = await generateMetadataFromSanity(locale, PATHNAME);
   const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
 
   return {
     ...baseMetadata,
-    title: t.metaTitle,
-    description: t.metaDescription,
+    title: t("meta.title"),
+    description: t("meta.description"),
     openGraph: {
       ...baseMetadata.openGraph,
       type: "website",
-      title: t.metaTitle,
-      description: t.metaDescription,
+      title: t("meta.title"),
+      description: t("meta.description"),
       url: currentUrl,
       locale: locale === "fr" ? "fr_FR" : "en_US",
     },
     twitter: {
       ...baseMetadata.twitter,
-      title: t.metaTitle,
-      description: t.metaDescription,
+      title: t("meta.title"),
+      description: t("meta.description"),
     },
     alternates: {
       canonical: currentUrl,
@@ -118,7 +72,8 @@ export default async function DestinationsIndexPage({ params }: Props) {
   setRequestLocale(locale);
 
   const loc: Locale = locale === "fr" ? "fr" : "en";
-  const t = indexContent[loc];
+  const t = await getTranslations("destinationsIndex");
+  const filters = t.raw("filters") as Record<string, string>;
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -148,13 +103,13 @@ export default async function DestinationsIndexPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("breadcrumb.home"),
         item: `${SITE_URL}/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Destinations" : "Destinations",
+        name: t("breadcrumb.destinations"),
         item: `${SITE_URL}/${locale}${PATHNAME}`,
       },
     ],
@@ -163,8 +118,8 @@ export default async function DestinationsIndexPage({ params }: Props) {
   const collectionLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: t.metaTitle,
-    description: t.metaDescription,
+    name: t("meta.title"),
+    description: t("meta.description"),
     url: `${SITE_URL}/${locale}${PATHNAME}`,
     hasPart: destinations.map((d) => ({
       "@type": "TouristTrip",
@@ -197,20 +152,20 @@ export default async function DestinationsIndexPage({ params }: Props) {
             <div className="hidden lg:block mb-8">
               <Breadcrumb
                 items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
-                  { label: locale === "fr" ? "Destinations" : "Destinations" },
+                  { label: t("breadcrumb.home"), href: `/${locale}` },
+                  { label: t("breadcrumb.destinations") },
                 ]}
               />
             </div>
             <div className="text-center">
               <span className="inline-block bg-[#EEF899] text-[#001E13] px-5 py-1.5 rounded-full text-sm lg:text-base font-nanum-pen mb-5">
-                {t.eyebrow}
+                {t("eyebrow")}
               </span>
               <h1 className="text-4xl lg:text-6xl xl:text-7xl font-londrina-solid text-[#001E13] leading-[1.05] mb-6 whitespace-pre-line">
-                {t.title}
+                {t("title")}
               </h1>
               <p className="text-base lg:text-lg font-karla text-[#001E13]/75 max-w-2xl mx-auto leading-relaxed">
-                {t.intro}
+                {t("intro")}
               </p>
             </div>
           </div>
@@ -227,17 +182,11 @@ export default async function DestinationsIndexPage({ params }: Props) {
                 <div className="max-w-6xl mx-auto">
                   <div className="flex items-end justify-between gap-4 mb-8">
                     <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13]">
-                      {t.filters[useCase]}
+                      {filters[useCase]}
                     </h2>
                     <span className="text-sm lg:text-base font-karla text-[#001E13]/50">
                       {items.length}{" "}
-                      {locale === "fr"
-                        ? items.length > 1
-                          ? "destinations"
-                          : "destination"
-                        : items.length > 1
-                        ? "destinations"
-                        : "destination"}
+                      {t("destinationsCount", { count: items.length })}
                     </span>
                   </div>
 
@@ -267,7 +216,7 @@ export default async function DestinationsIndexPage({ params }: Props) {
                                   {getUseCaseLabel(d.useCase, loc)}
                                 </span>
                                 <span className="bg-[#001E13]/5 text-[#001E13] px-3 py-1 rounded-full text-xs font-karla">
-                                  {d.days} {locale === "fr" ? "jours" : "days"}
+                                  {d.days} {t("days")}
                                 </span>
                                 <span className="bg-[#001E13]/5 text-[#001E13] px-3 py-1 rounded-full text-xs font-karla">
                                   {currencySymbol}
@@ -282,7 +231,7 @@ export default async function DestinationsIndexPage({ params }: Props) {
                                 {d.meta.description[loc]}
                               </p>
                               <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-auto">
-                                {t.cardCta}
+                                {t("cardCta")}
                               </span>
                             </div>
                           </article>
@@ -301,15 +250,15 @@ export default async function DestinationsIndexPage({ params }: Props) {
           <div className="max-w-5xl mx-auto">
             <div className="bg-[#001E13] rounded-3xl lg:rounded-[40px] p-8 lg:p-12 xl:p-16 text-center">
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] leading-tight mb-4">
-                {t.ctaTitle}
+                {t("ctaTitle")}
               </h2>
               <p className="text-base lg:text-lg font-karla text-[#FFFBF5]/80 max-w-2xl mx-auto mb-8 leading-relaxed">
-                {t.ctaBody}
+                {t("ctaBody")}
               </p>
               <div className="flex justify-center">
                 <Link href={signupHref}>
                   <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
-                    {t.ctaButton}
+                    {t("ctaButton")}
                   </PulsatingButton>
                 </Link>
               </div>

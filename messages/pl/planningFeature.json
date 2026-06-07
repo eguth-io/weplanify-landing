@@ -1,0 +1,70 @@
+{
+  "copy": {
+    "you": "Ty",
+    "brand": "WePlanify AI",
+    "chatBubbles": [
+      "Chcę spędzić 2 tygodnie w Japonii w kwietniu z moją dziewczyną. Uwielbiamy przyrodę, jedzenie i świątynie. Średni budżet.",
+      "Świetny wybór! Kwiecień to w Japonii sezon kwitnienia wiśni. Proponuję trasę Tokio — Kioto — Osaka z przystankami w Narze i Hakone. Pokazać Ci opcje noclegów?",
+      "Tak, najlepiej tradycyjne ryokany, jeśli to możliwe",
+      "Doskonały wybór! Wybrałem 3 ryokany z prywatnym onsenem w Hakone i 2 odnowione machiya w Kioto. Wyliczam też trasy JR Pass, żeby zoptymalizować Wasze przejazdy..."
+    ],
+    "chips": ["Dodaj wędrówkę", "Kurs robienia sushi", "Zobacz JR Pass", "Dostosuj budżet"],
+    "modesTitle": "Wybierz swój styl planowania",
+    "modesSubtitle": "Niezależnie od tego, czy wolisz pełną kontrolę, czy wygodę napędzaną przez AI, WePlanify dostosowuje się do Ciebie.",
+    "manualTitle": "Planowanie ręczne",
+    "manualSubtitle": "Pełna kontrola nad każdym szczegółem. Idealne dla podróżników, którzy uwielbiają tworzyć własne przygody.",
+    "manualSteps": [
+      { "title": "Utwórz podróż", "description": "Ustal kierunek, terminy i zaproś towarzyszy podróży." },
+      { "title": "Dodaj kierunki", "description": "Buduj plan podróży krok po kroku z wieloma przystankami." },
+      { "title": "Wypełnij każdy dzień", "description": "Przeciągaj i upuszczaj atrakcje, restauracje i noclegi." },
+      { "title": "Współpracujcie", "description": "Twoja grupa dodaje pomysły i głosuje na opcje." }
+    ],
+    "aiTitle": "Planowanie z AI",
+    "aiSubtitle": "Opisz swoją wymarzoną podróż, a AI w kilka sekund stworzy spersonalizowany plan podróży.",
+    "aiUserMsg": "2 tygodnie w Japonii, sezon kwitnienia wiśni, przyroda i świątynie",
+    "aiAssistantMsg": "Tworzę Twój plan podróży Tokio → Kioto → Osaka z ryokanami i zwiedzaniem świątyń...",
+    "aiTags": ["Natychmiastowy plan podróży", "Inteligentne sugestie", "Optymalizacja trasy"],
+    "bestOfBoth": {
+      "strong": "To, co najlepsze z obu światów:",
+      "rest": " zacznij od sugestii AI, a potem dopracuj wszystko ręcznie. Albo planuj ręcznie i poproś AI o uzupełnienie luk."
+    },
+    "visualTitle": "AI wizualizuje Twoją podróż",
+    "capabilitiesSubtitle": "Coś więcej niż asystent — prawdziwa wiedza podróżnicza napędzana przez AI.",
+    "freeNoCard": "Darmowa rejestracja. Bez karty kredytowej."
+  },
+  "page": {
+    "heroBadge": "Planowanie podróży",
+    "heroTitle": "Zaplanuj swoją podróż",
+    "heroTitleHighlight": "po swojemu",
+    "heroSubtitle": "Twórz plan podróży ręcznie krok po kroku albo pozwól naszemu asystentowi AI stworzyć spersonalizowany plan w kilka sekund. To Ty wybierasz, jak planować.",
+    "heroCta": "Zacznij planować za darmo",
+    "heroCtaSubtext": "Bez karty kredytowej",
+    "socialProofText": "Ponad 12 000 zaplanowanych podróży",
+    "stats": [
+      { "value": "12 000+", "label": "zaplanowanych podróży" },
+      { "value": "4.8/5", "label": "zadowolenia" },
+      { "value": "2 tryby", "label": "ręcznie + AI" }
+    ],
+    "featuresTitle": "Dwa sposoby na zaplanowanie idealnej podróży",
+    "features": [
+      { "title": "Planowanie ręczne", "description": "Twórz podróż od zera. Dodawaj kierunki, ustalaj terminy i buduj swój plan dzień po dniu dokładnie tak, jak chcesz." },
+      { "title": "Kreator dzień po dniu", "description": "Przeciągaj i upuszczaj atrakcje, restauracje i noclegi. Organizuj każdy dzień wizualnie na osi czasu." },
+      { "title": "Planowanie z AI", "description": "Opisz wymarzoną podróż w naturalnym języku. Nasza AI tworzy kompletny plan z hotelami, atrakcjami i zoptymalizowanymi trasami." },
+      { "title": "Inteligentne sugestie", "description": "AI rozumie kontekst — porę roku, budżet, styl podróżowania — i dostosowuje rekomendacje w czasie rzeczywistym." },
+      { "title": "Połącz oba podejścia", "description": "Zacznij od sugestii AI, a potem dopracuj wszystko ręcznie. Albo planuj ręcznie i poproś AI o uzupełnienie luk." },
+      { "title": "Wspólna edycja", "description": "Każdy w grupie może mieć swój wkład — dodawać pomysły, głosować na opcje i wspólnie dopracowywać plan." }
+    ],
+    "faqItems": [
+      { "question": "Czy mogę zaplanować podróż bez korzystania z AI?", "answer": "Oczywiście! Możesz stworzyć całą podróż ręcznie. Dodawaj kierunki, ustalaj terminy i buduj plan krok po kroku, korzystając z naszego wizualnego planera dzień po dniu." },
+      { "question": "Jak działa asystent AI?", "answer": "Wystarczy opisać podróż w naturalnym języku — kierunek, budżet, styl podróżowania, zainteresowania. AI generuje kompletny plan dzień po dniu z noclegami, atrakcjami i zoptymalizowanymi trasami." },
+      { "question": "Czy mogę modyfikować sugestie AI?", "answer": "Tak! Sugestie AI to tylko punkt wyjścia. Możesz edytować, dodawać lub usuwać dowolny element. Plan jest w pełni konfigurowalny." },
+      { "question": "Czy mogę łączyć planowanie ręczne i z AI?", "answer": "Jak najbardziej. Zacznij od AI, aby uzyskać bazowy plan, a potem dopracuj go ręcznie. Albo planuj ręcznie i poproś AI o zaproponowanie atrakcji na konkretne dni." },
+      { "question": "Czy moja grupa może pomóc w planowaniu podróży?", "answer": "Tak! Zaproś towarzyszy podróży, a każdy będzie mógł dodawać sugestie, głosować na opcje i współpracować nad planem w czasie rzeczywistym." }
+    ],
+    "ctaTitle": "Gotów zaplanować swoją kolejną przygodę?",
+    "ctaSubtitle": "Zacznij planować podróż — ręcznie lub z pomocą AI",
+    "ctaButton": "Zacznij planować za darmo",
+    "seoTitle": "Narzędzie do planowania podróży | Ręcznie i z AI | WePlanify",
+    "seoDescription": "Zaplanuj podróż grupową po swojemu. Twórz plany podróży ręcznie lub pozwól AI tworzyć spersonalizowane plany dzień po dniu. Współpracuj ze znajomymi w czasie rzeczywistym. Darmowy planer podróży."
+  }
+}

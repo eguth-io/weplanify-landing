@@ -25,7 +25,7 @@ export async function StructuredData() {
       ogType: "website",
       twitterCard: "summary_large_image",
       organizationName: "WePlanify",
-      organizationLogo: "https://www.weplanify.com/logo.svg",
+      organizationLogo: "https://www.weplanify.com/logo.webp",
       organizationUrl: "https://www.weplanify.com",
       organizationSocialLinks: [
         { platform: "Instagram", url: "https://www.instagram.com/weplanify" },

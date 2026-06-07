@@ -1,0 +1,50 @@
+{
+  "copy": {
+    "active": "Aktiv",
+    "votes": "Stimmen",
+    "endsIn": "Endet",
+    "endTime": "in 2 Std.",
+    "livePollQuestion": "Wo essen wir heute Abend? 🍽️",
+    "livePollOptions": [
+      { "option": "🍕 Pizza", "votes": 4, "voters": ["👩‍🎨", "🧔", "👱‍♀️", "🧑‍💻"] },
+      { "option": "🍣 Sushi", "votes": 3, "voters": ["😊", "👨‍🦱", "🧑‍🦰"] },
+      { "option": "🍔 Burger", "votes": 2, "voters": ["👩‍🦳", "🧑‍🎤"] }
+    ],
+    "livePollTotal": 9,
+    "multiPollsTitle": "Vom Reiseziel bis zum Restaurant: entscheidet alles gemeinsam",
+    "multiPollsSubtitle": "Reiseziele, Aktivitäten, Restaurants, Daten … alles lässt sich gemeinsam entscheiden.",
+    "completedLabel": "abgeschlossen",
+    "freeNoCard": "Kostenlose Anmeldung. Keine Kreditkarte erforderlich.",
+    "showcasePolls": [
+      { "question": "Welches Reiseziel?", "options": ["🇪🇸 Spanien", "🇵🇹 Portugal", "🇮🇹 Italien"], "winner": "🇵🇹 Portugal", "votes": 12 },
+      { "question": "Aktivität an Tag 3?", "options": ["🏄 Surfen", "🚶 Wandern", "🍷 Weinprobe"], "winner": "🏄 Surfen", "votes": 8 },
+      { "question": "Hotel oder Airbnb?", "options": ["🏨 Hotel", "🏠 Airbnb"], "winner": "🏠 Airbnb", "votes": 10 }
+    ]
+  },
+  "page": {
+    "heroBadge": "Live-Umfragen",
+    "heroTitle": "Entscheidet gemeinsam",
+    "heroTitleHighlight": "in 2 Minuten",
+    "heroSubtitle": "Pizza oder Sushi? Hotel oder Airbnb? Eine schnelle Abstimmung ersetzt 47 WhatsApp-Nachrichten.",
+    "socialProofText": "+50.000 Entscheidungen diesen Monat getroffen",
+    "heroCta": "Meine erste Umfrage erstellen",
+    "heroCtaSubtext": "Kostenlos - In 30 Sekunden bereit",
+    "features": [
+      { "icon": "⚡", "title": "Echtzeit", "description": "Stimmen erscheinen sofort für alle" },
+      { "icon": "🔒", "title": "Anonym oder öffentlich", "description": "Wähle, ob Stimmen sichtbar oder verborgen sind" },
+      { "icon": "🔔", "title": "Erinnerungen", "description": "Erinnert automatisch alle, die noch nicht abgestimmt haben" }
+    ],
+    "faqItems": [
+      { "question": "Wie erstelle ich eine Umfrage für meine Reisegruppe?", "answer": "In Sekunden! Wähle einen Umfragetyp (Reiseziel, Restaurant, Aktivität, Datum), füge deine Optionen hinzu und teile sie." },
+      { "question": "Sind die Stimmen anonym?", "answer": "Deine Wahl! Du kannst öffentliche oder anonyme Umfragen erstellen." },
+      { "question": "Kann ich eine Abstimmungsfrist festlegen?", "answer": "Ja, du kannst ein Enddatum und eine Uhrzeit planen. Wer nicht abstimmt, erhält automatische Erinnerungen." },
+      { "question": "Was passiert bei einem Gleichstand?", "answer": "Mehrere Optionen: eine Stichwahl zwischen den gleichauf liegenden Optionen, der Ersteller entscheidet oder eine Zufallsauswahl." },
+      { "question": "Kann ich für mehrere Optionen abstimmen?", "answer": "Ja! Du kannst Mehrfachstimmen oder eine einzige Stimme zulassen." }
+    ],
+    "ctaTitle": "Schluss mit endlosen Debatten",
+    "ctaSubtitle": "Lasst die Gruppe demokratisch entscheiden",
+    "ctaButton": "Die Debatte jetzt beenden",
+    "seoTitle": "Reise-Umfragen - Gruppenentscheidungen | Weplanify",
+    "seoDescription": "Triff Gruppenentscheidungen ganz einfach mit Weplanify-Umfragen. Stimme in Echtzeit ab, um Reiseziele, Aktivitäten und Restaurants zu wählen."
+  }
+}

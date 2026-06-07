@@ -1,0 +1,65 @@
+{
+  "features": "Features",
+  "faq": "FAQ",
+  "blog": "Blog",
+  "login": "Login",
+  "startMyJourney": "Start my journey",
+  "register": "Register",
+  "chooseLanguage": "Choose language",
+  "menu": {
+    "features": {
+      "label": "Features",
+      "headings": {
+        "planDecide": "Plan & decide",
+        "organize": "Organize the trip"
+      },
+      "items": {
+        "planning": "Planning (manual or AI)",
+        "polls": "Group polls",
+        "collaboration": "Collaboration",
+        "discovery": "Discovery",
+        "itinerary": "Itinerary",
+        "budget": "Shared budget",
+        "packing": "Packing lists",
+        "transport": "Transport",
+        "memories": "Memories"
+      }
+    },
+    "useCases": {
+      "label": "Use cases",
+      "items": {
+        "friends": "Trip with friends",
+        "bachelorette": "Bachelorette trip",
+        "birthday": "Birthday trip",
+        "family": "Family trip",
+        "roadTrip": "Road trip",
+        "school": "School trip",
+        "teamBuilding": "Team building"
+      }
+    },
+    "compare": {
+      "label": "Compare",
+      "items": {
+        "bestApps": "Best apps 2026",
+        "wanderlog": "vs Wanderlog",
+        "tripit": "vs TripIt",
+        "squadtrip": "vs SquadTrip",
+        "stippl": "vs Stippl",
+        "cruzmi": "vs Cruzmi"
+      }
+    },
+    "resources": {
+      "label": "Resources",
+      "items": {
+        "blog": "Blog",
+        "guide": "Group trip guide",
+        "destinations": "Destinations",
+        "travelGuides": "Travel guides",
+        "events": "2026 events",
+        "faq": "FAQ",
+        "about": "About",
+        "partnership": "Partnership"
+      }
+    }
+  }
+}

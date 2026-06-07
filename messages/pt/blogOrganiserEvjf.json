@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "title": "Como Planear uma Despedida de Solteira — Guia Completo 2026",
+    "description": "Tudo o que precisa para planear a despedida de solteira perfeita: ideias de destino, divisão do orçamento, atividades e como manter toda a gente contente."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Como Planear uma Despedida de Solteira"
+  },
+  "links": {
+    "fourQuestions": {
+      "before": "Precisa de uma sondagem para alinhar as datas ou as preferências de destino? ",
+      "linkText": "A funcionalidade de sondagens da WePlanify",
+      "after": " resolve isso em trinta segundos."
+    },
+    "destinationTypes": {
+      "before": "A planear uma despedida de solteira? ",
+      "linkText": "Veja como a WePlanify simplifica toda a despedida de solteira do início ao fim",
+      "after": "."
+    },
+    "budget": {
+      "before": "O gestor de orçamento partilhado da WePlanify está disponível aqui: ",
+      "linkText": "Orçamento partilhado",
+      "after": " — acompanhamento em tempo real, cálculo automático de reembolsos."
+    },
+    "activities": {
+      "before": "Coordene também a bagagem do grupo com ",
+      "linkText": "as listas de bagagem partilhadas da WePlanify",
+      "after": " — acabaram-se os duplicados e os itens esquecidos."
+    }
+  },
+  "destinationBestForLabel": "Melhor para: ",
+  "cards": {
+    "bachelorette": {
+      "title": "Planeador de Despedidas de Solteira",
+      "desc": "Tudo o que precisa para planear a sua despedida de solteira com a WePlanify: sondagens, orçamento partilhado e itinerário colaborativo."
+    },
+    "friends": {
+      "title": "Viagem com Amigos",
+      "desc": "Planeie uma viagem em grupo com amigos sem esforço usando a WePlanify."
+    },
+    "guide": {
+      "title": "Guia de Planeamento de Viagens em Grupo",
+      "desc": "Como planear uma viagem em grupo do início ao fim, passo a passo."
+    },
+    "alternatives": {
+      "title": "Melhores Apps de Planeamento de Viagens em Grupo",
+      "desc": "Uma comparação honesta das melhores apps para planear uma viagem em grupo em 2026."
+    }
+  },
+  "content": {
+    "readTime": "9 min de leitura",
+    "heroTag": "Guia Completo 2026",
+    "h1": "Como Planear uma Despedida de Solteira — Guia Completo 2026",
+    "intro": "No papel, uma despedida de solteira parece simples: juntar as amigas mais próximas da noiva, escolher um destino, divertirem-se imenso. Na prática, está a coordenar seis a doze pessoas com horários, orçamentos, gostos e opiniões muito díspares sobre o que conta como bom divertimento — e tudo isto enquanto tenta manter a noiva felizmente alheia ao caos dos bastidores. Este guia corta o ruído e dá-lhe um verdadeiro quadro para planear uma despedida de solteira de que as pessoas vão mesmo gostar, e não apenas sobreviver.",
+    "tocTitle": "Índice",
+    "toc": [
+      { "id": "why-hard", "label": "Porque é que Planear uma Despedida de Solteira É Mais Difícil do Que Parece" },
+      { "id": "four-questions", "label": "As Quatro Questões a Resolver Primeiro" },
+      { "id": "destination-types", "label": "Tipos de Destino" },
+      { "id": "budget-conversation", "label": "A Conversa Sobre Orçamento Que Ninguém Quer Ter" },
+      { "id": "timeline", "label": "Cronologia de Planeamento" },
+      { "id": "activities", "label": "Atividades" },
+      { "id": "faq", "label": "FAQ" }
+    ],
+    "sections": {
+      "whyHard": {
+        "id": "why-hard",
+        "title": "Porque é que Planear uma Despedida de Solteira É Mais Difícil do Que Parece",
+        "paragraphs": [
+          "O problema não é a logística — são as pessoas. Uma despedida de solteira junta mulheres que mal se conhecem, unidas apenas pela ligação à noiva. Há a madrinha que tem opiniões fortes sobre tudo, a amiga da faculdade que tem um orçamento apertado e demasiada vergonha para o dizer, a colega de trabalho que acabou de descobrir que está grávida e a irmã que vive num fuso horário diferente e responde sempre tarde às mensagens de grupo. Gerir essa matriz social ao mesmo tempo que se reservam hotéis, planeiam atividades e se anda atrás dos sinais é genuinamente exaustivo.",
+          "Há também a pressão da perfeição. Ao contrário de uma viagem normal com amigos, uma despedida de solteira carrega um peso emocional. É suposto ser um marco, uma última grande festa, uma memória que a noiva guarda para sempre. Essa pressão transforma pequenos contratempos — um restaurante esgotado, uma tarde de chuva, um desacordo sobre onde comer — em fatores de stress desproporcionados. Quem organiza acaba por carregar um fardo para o qual ninguém se inscreveu.",
+          "A terceira camada é a dinâmica social. O Pinterest criou uma corrida ao armamento de estéticas de despedida de solteira elaboradas — faixas a condizer, conjuntos coordenados em tons pastel, itinerários cuidadosamente preparados cheios de momentos instagramáveis. Nem todas as noivas querem isto. Nem todos os grupos o podem pagar. E, às vezes, o fosso entre a versão do Instagram da despedida de solteira e o que as pessoas realmente querem fazer causa verdadeiro atrito. A solução são conversas brutalmente honestas logo no início — e as ferramentas certas para manter o grupo alinhado sem transformar o próprio processo de planeamento numa fonte de conflito."
+        ]
+      },
+      "fourQuestions": {
+        "id": "four-questions",
+        "title": "Comece Aqui: As Quatro Questões a Resolver Primeiro",
+        "intro": "Antes de olhar para um único hotel ou atividade, respondam a estas quatro questões em grupo. Vão poupar-vos semanas de idas e vindas.",
+        "questions": [
+          {
+            "title": "Quem está realmente no grupo?",
+            "text": "Confirmem a lista final de convidadas antes de planear qualquer outra coisa. Cada pessoa adicionada depois muda as contas do orçamento, as opções de alojamento e a logística das atividades. Sejam realistas: nem toda a gente que diz 'sim' no entusiasmo inicial vai mesmo aparecer. Definam um prazo firme para as confirmações — duas semanas chegam — e planeiem em torno de quem se comprometeu até essa data."
+          },
+          {
+            "title": "Qual é o intervalo de orçamento honesto?",
+            "text": "Não definam um orçamento com base no que gostariam que toda a gente pudesse gastar. Perguntem a cada pessoa em privado com que valor se sente confortável, encontrem a mediana e planeiem em torno desse número. Se houver uma grande dispersão, considerem um modelo por níveis: um itinerário base que todos possam pagar, com extras opcionais para quem quiser mais. Usem um gestor de orçamento partilhado desde o primeiro dia para que não haja surpresas quanto ao total por pessoa."
+          },
+          {
+            "title": "O que é que a noiva realmente quer?",
+            "text": "Não o que o Pinterest diz que ela deveria querer. Não o que vocês quereriam no lugar dela. Perguntem-lhe diretamente, ou perguntem a quem a conhece melhor. Algumas noivas querem um fim de semana animado em Ibiza; outras querem genuinamente um retiro acolhedor de spa com as cinco amigas mais próximas e sem uma faixa à vista. Não se consegue planear uma boa despedida de solteira sem saber isto, e assumir que se sabe é o erro mais comum que os organizadores cometem."
+          },
+          {
+            "title": "Fim de semana ou mais tempo?",
+            "text": "Um fim de semana de três dias é o ponto ideal para a maioria dos grupos: tempo suficiente para parecer uma verdadeira viagem, curto o suficiente para que toda a gente possa tirar folga do trabalho e pagá-lo. Cinco a sete dias funciona para grupos com horários flexíveis e orçamentos mais altos — mas mais dias significam mais coordenação, mais refeições para planear e mais oportunidades para a dinâmica do grupo se desgastar. A menos que a noiva queira especificamente uma viagem prolongada, mantenham-na curta."
+          }
+        ]
+      },
+      "destinationTypes": {
+        "id": "destination-types",
+        "title": "Tipos de Destino",
+        "intro": "O destino define o tom de tudo o resto. Aqui estão as quatro categorias principais, o que oferecem e que tipo de noiva cada uma melhor serve.",
+        "types": [
+          {
+            "title": "Escapada à Cidade",
+            "text": "Um fim de semana prolongado numa cidade vibrante — Paris, Barcelona, Amesterdão, Lisboa, Nashville, Nova Orleães — dá ao grupo máxima flexibilidade. Atividades de dia, vida noturna, opções de restaurantes e experiências culturais estão todas ao alcance. As escapadas à cidade servem grupos com gostos variados porque há sempre algo para todos. O desafio é que as melhores cidades para despedidas de solteira são caras, sobretudo o alojamento para um grupo grande. Reservem um apartamento com cozinha em vez de vários quartos de hotel — é mais barato, mais sociável e dá-vos uma base para um aperitivo antes das saídas à noite.",
+            "bestFor": "Grupos mistos, noivas que adoram cultura e vida noturna, viajantes de primeira viagem"
+          },
+          {
+            "title": "Escapada à Praia",
+            "text": "Sol, uma piscina ou praia, uma vivenda ou hotel. A escapada à praia é o formato clássico de despedida de solteira por uma razão: exige pouco planeamento e dá muito gozo. Os dias organizam-se à volta da piscina, as refeições são fáceis e as noites podem ser tão descontraídas ou tão animadas quanto o grupo quiser. O Algarve, Maiorca, Mykonos e a costa croata são favoritos europeus. Para grupos dos EUA, Nashville ganha a Miami em relação qualidade-preço, mas os Florida Keys são difíceis de bater para um grupo pequeno e unido. O principal risco é que as viagens à praia se podem tornar repetitivas a partir do segundo dia — garantam que têm uma ou duas atividades estruturadas para ancorar o programa.",
+            "bestFor": "Noivas que querem relaxar, grupos que adoram sol, fins de semana prolongados"
+          },
+          {
+            "title": "Retiro de Spa",
+            "text": "Nem todas as despedidas de solteira querem um fim de semana de barulho. Algumas noivas querem genuinamente um retiro de spa: massagens, saunas de infravermelhos, piscinas termais, boa comida e noites tranquilas. Este formato funciona lindamente para grupos mais pequenos e próximos — quatro a seis pessoas em vez de doze. É também mais previsível em termos de orçamento do que uma escapada à cidade, porque ficam em grande parte num só lugar. O desafio é que exige a adesão de todo o grupo; se metade das convidadas espera discotecas e a outra metade espera silêncio, ninguém se diverte.",
+            "bestFor": "Noivas introvertidas, grupos focados no bem-estar, encontros mais pequenos e íntimos"
+          },
+          {
+            "title": "Viagem de Aventura",
+            "text": "Surf no País Basco, caminhadas na Eslovénia, um fim de semana de ciclismo na Toscana, glamping no País de Gales. As despedidas de solteira de aventura estão a ganhar popularidade porque criam experiências partilhadas que unem o grupo de uma forma que a vida noturna raramente consegue. As histórias do dia em que todas caíram das pranchas de paddle são melhores do que qualquer noite de discoteca. O senão: as viagens de aventura exigem mais planeamento físico, considerações de seguro e conversas honestas sobre os níveis de forma física. Não reservem uma caminhada exigente na esperança de que toda a gente consiga.",
+            "bestFor": "Noivas ativas, grupos que já passam tempo ao ar livre juntos"
+          }
+        ]
+      },
+      "budgetConversation": {
+        "id": "budget-conversation",
+        "title": "A Conversa Sobre Orçamento Que Ninguém Quer Ter",
+        "paragraphs": [
+          "O dinheiro é onde os planos de despedida de solteira se desmoronam. Não porque as pessoas sejam maldosas — porque os organizadores adiam muitas vezes a verdadeira conversa sobre orçamento até os sinais estarem por pagar e os voos reservados, momento em que a pessoa que não o consegue pagar se sente encurralada e ressentida. Ter a conversa sobre orçamento cedo e de forma explícita, antes de assumir qualquer compromisso, é a coisa mais importante que pode fazer pela dinâmica do grupo.",
+          "Tradicionalmente, a noiva não paga a sua parte do alojamento e das atividades — esse custo é dividido entre as convidadas. Garantam que toda a gente no grupo percebe isto antes de os custos serem finalizados. Numa viagem para oito pessoas em que o alojamento custa 1500 €, isso são 215 € por pessoa em vez de 187 €. Não é muito em termos absolutos, mas vale a pena ser explícito sobre isso desde o início.",
+          "Centralizem o que puderem. Pré-reservem o alojamento, os transfers e as atividades de grupo através de uma pessoa ou de uma ferramenta de planeamento partilhada, para que o dinheiro flua com clareza e ninguém fique a descoberto durante semanas. Usem um gestor de orçamento partilhado para que toda a gente possa ver o total acumulado — os grupos que acompanham os gastos à medida que avançam evitam a desconfortável reconciliação de fim de viagem que pode estragar o último dia."
+        ],
+        "tips": [
+          {
+            "title": "Definam um orçamento por pessoa, não um orçamento total",
+            "text": "Um orçamento total de 3000 € parece controlável até perceberem que o grupo tem quinze pessoas e que isso cobre menos de 200 € cada. Pensem sempre em termos por pessoa desde o início."
+          },
+          {
+            "title": "Separem o indispensável do desejável",
+            "text": "O alojamento e algumas atividades-chave são inegociáveis. Os conjuntos a condizer, as decorações personalizadas e os sacos de prendas elaborados são opcionais. Conheçam a diferença antes de começar a gastar."
+          },
+          {
+            "title": "Lidem com rendimentos desiguais com elegância",
+            "text": "Se alguém no grupo tem um orçamento mais apertado, deixem-na contribuir de outra forma — organizando um jantar, coordenando a logística, assumindo custos mais pequenos — em vez de a obrigar a esticar-se para além das suas possibilidades ou de a fazer sentir-se excluída. A generosidade funciona melhor do que conversas constrangedoras sobre subsídios."
+          },
+          {
+            "title": "Usem um gestor de orçamento partilhado desde o primeiro dia",
+            "text": "Ferramentas como o gestor de orçamento integrado da WePlanify deixam toda a gente ver o que foi pago, o que está em dívida e qual será o custo final por pessoa — sem ninguém ter de andar atrás de folhas de cálculo ou pedidos de transferência no fim da viagem."
+          }
+        ]
+      },
+      "timeline": {
+        "id": "timeline",
+        "title": "Cronologia de Planeamento",
+        "intro": "O planeamento de uma despedida de solteira tem o hábito de se expandir para preencher todo o tempo que lhe derem — ou de se comprimir numa correria stressante de última hora se o deixarem para demasiado tarde. Eis uma cronologia realista que mantém as coisas a andar sem o caos.",
+        "steps": [
+          {
+            "when": "3 meses antes",
+            "tasks": [
+              "Confirmem a lista de convidadas e obtenham confirmações firmes",
+              "Tenham a conversa honesta sobre orçamento com o grupo",
+              "Cheguem a acordo sobre as datas — usem uma sondagem para encontrar quando toda a gente está livre",
+              "Escolham um tipo de destino com base nas preferências reais da noiva",
+              "Reservem o alojamento (isto fixa tudo o resto)",
+              "Comecem um espaço de planeamento partilhado para que toda a gente veja o plano"
+            ]
+          },
+          {
+            "when": "6 semanas antes",
+            "tasks": [
+              "Reservem o transporte — voos, comboio ou transfer de grupo",
+              "Pesquisem e façam uma lista curta de atividades — usem uma sondagem de grupo para a reduzir",
+              "Reservem quaisquer atividades imperdíveis que exijam reserva antecipada",
+              "Configurem um gestor de orçamento partilhado e registem os sinais à medida que avançam",
+              "Confirmem as restrições alimentares e as necessidades de acessibilidade de cada convidada"
+            ]
+          },
+          {
+            "when": "2 semanas antes",
+            "tasks": [
+              "Enviem o itinerário final ao grupo — um documento limpo, e não uma cadeia de mensagens",
+              "Reservem restaurantes para os jantares de grupo",
+              "Comprem quaisquer decorações ou itens personalizados (faixas, etc.) se os forem usar",
+              "Atribuam uma lista de bagagem partilhada para que toda a gente saiba que itens comuns estão tratados",
+              "Cobrem quaisquer pagamentos ou confirmações em falta"
+            ]
+          },
+          {
+            "when": "Véspera",
+            "tasks": [
+              "Confirmem os detalhes do check-in do alojamento e partilhem-nos com o grupo",
+              "Preparem um pequeno kit de emergência: pensos, analgésicos, carregador de telemóvel, snacks",
+              "Tenham o gestor de orçamento aberto e atualizado",
+              "Durmam bem — vão precisar"
+            ]
+          }
+        ]
+      },
+      "activities": {
+        "id": "activities",
+        "title": "Atividades",
+        "paragraphs": [
+          "O melhor itinerário de despedida de solteira tem uma estrutura clara, mas muito espaço para respirar. As viagens demasiado preenchidas parecem uma viagem de estudo; as demasiado vazias derivam para discussões sobre o que fazer a seguir. Apontem para uma ou duas atividades âncora por dia, com tempo livre incorporado para a espontaneidade.",
+          "A regra de ouro: garantam que pelo menos uma atividade é escolhida especificamente porque a noiva adora, e não porque é o habitual numa despedida de solteira. Se ela detesta aulas de cocktails mas adora cerâmica, reservem cerâmica. Se nunca gostou de noites de discoteca mas vive para um jantar longo e regado com as pessoas favoritas, deem prioridade a isso. A versão do Instagram da despedida de solteira não é o que interessa.",
+          "Evitem a diversão forçada. Conjuntos a condizer, faixas e placas de aprendiz são aceitáveis se a noiva gostar disso — mas, se ela já tiver mencionado que ficaria mortificada, não o façam. O mesmo com strippers, caças ao tesouro e jogos baseados em envergonhar a noiva. A diversão que exige que toda a gente finja felicidade tende a cair por terra."
+        ],
+        "ideas": [
+          {
+            "category": "Durante o dia",
+            "items": [
+              "Passeio privado de vela ou de barco",
+              "Prova de vinhos ou cocktails (reservem uma sessão privada, não a visita turística)",
+              "Manhã de spa com tratamentos individuais",
+              "Workshop de cerâmica, vidro soprado ou arte",
+              "Paddle, aula de surf ou caiaque",
+              "Aula de culinária com um chef local",
+              "Dia de compras vintage numa cidade nova"
+            ]
+          },
+          {
+            "category": "À noite",
+            "items": [
+              "Jantar com chef privado no vosso alojamento",
+              "Reserva no restaurante que a noiva tem andado a querer experimentar",
+              "Aula de preparação de cocktails (mas só se ela realmente quiser)",
+              "Karaoke — genuinamente subvalorizado para grupos mistos",
+              "Noite de ópera, clube de jazz ou um espetáculo de stand-up",
+              "Noite de casino (apostas baixas, alto valor de entretenimento)"
+            ]
+          },
+          {
+            "category": "Mais calmo",
+            "items": [
+              "Noite de cinema na vivenda com o filme à escolha da noiva",
+              "Noite de jogos de tabuleiro com bom vinho",
+              "Passeio ao pôr do sol seguido de um jantar demorado",
+              "Sessão de ioga ou pilates de manhã",
+              "Brunch no mercado de produtores"
+            ]
+          }
+        ],
+        "outro": "Votem nas atividades através de uma sondagem de grupo antes de reservar seja o que for — evita a situação clássica em que quem organiza reserva algo caro e duas pessoas detestam. A funcionalidade de sondagens da WePlanify demora trinta segundos a configurar e dá a toda a gente uma voz igual sem um debate de sessenta mensagens na conversa de grupo."
+      }
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "items": [
+        {
+          "q": "Com quanta antecedência se deve planear uma despedida de solteira?",
+          "a": "Para uma viagem de fim de semana, três meses é confortável — dá tempo suficiente para alinhar as datas de toda a gente, reservar o alojamento antes de os preços subirem e organizar atividades sem pressa. Se estiver a planear algo mais elaborado (voos internacionais, aluguer de vivenda, destinos muito procurados), quatro a cinco meses é mais seguro. Para uma saída local ou uma escapada simples, seis semanas costumam chegar. O maior erro é esperar até dois meses antes do casamento, quando a agenda de toda a gente já está cheia de provas de vestido e outros eventos do casamento."
+        },
+        {
+          "q": "Como se lida com orçamentos diferentes no grupo?",
+          "a": "Tenham a conversa cedo e em privado. Perguntem a cada pessoa individualmente quanto se sente confortável a gastar — não numa mensagem de grupo, onde a pressão social distorce as respostas. Encontrem a mediana e planeiem em torno dela. Ofereçam extras opcionais para quem quiser gastar mais, em vez de planear uma viagem cara na esperança de que toda a gente encontre forma de a pagar. Se alguém genuinamente não puder pagar a viagem tal como planeada, deixem-na contribuir de outra forma — coordenando a logística, tratando da comunicação, assumindo um custo mais pequeno — em vez de lhe pedir que se estique para além das suas possibilidades."
+        },
+        {
+          "q": "Qual é um bom orçamento de despedida de solteira por pessoa?",
+          "a": "Para uma escapada a uma cidade do Reino Unido ou europeia, 300 a 600 libras por pessoa para uma viagem de três noites cobre transporte, alojamento e algumas atividades se forem espertos. As viagens à praia ou a vivendas no sul da Europa rondam os 400 € a 800 € por pessoa num fim de semana prolongado. As viagens domésticas nos EUA variam imenso — fins de semana em Nashville, Miami e Nova Iorque podem ir dos 500 aos 1200 dólares por pessoa, consoante o tamanho do grupo e o tipo de alojamento. Lembrem-se: tradicionalmente a noiva não paga a sua parte, por isso incluam esse custo no cálculo por pessoa desde o início."
+        },
+        {
+          "q": "Quantas pessoas são demasiadas para uma despedida de solteira?",
+          "a": "Oito a dez pessoas é o limite máximo prático para uma viagem coesa. Acima disso, as reservas de restaurante tornam-se um pesadelo, as atividades exigem reservar locais inteiros e o grupo fragmenta-se inevitavelmente. Os grupos grandes significam também mais sobrecarga logística — mais pessoas para coordenar, mais variáveis para gerir, mais probabilidade de alguém desistir à última hora e desequilibrar o orçamento. Se a lista de convidadas for genuinamente de quinze ou mais, considerem dividir em dois grupos com viagens separadas, ou escolher um formato que funcione para grupos grandes por natureza — uma vivenda com chef privado, um barco alugado, a reserva de um local inteiro."
+        },
+        {
+          "q": "E se a noiva não quiser uma despedida de solteira tradicional?",
+          "a": "Planeiem o que ela realmente quer. Não há regra nenhuma que diga que uma despedida de solteira tem de envolver faixas, strippers ou uma noite de discoteca. Se ela quer um fim de semana tranquilo de spa com três amigas, isso é a despedida de solteira. Se quer uma viagem de caminhadas na montanha, isso é a despedida de solteira. A melhor forma de descobrir é perguntar-lhe diretamente — ou perguntar à amiga ou irmã mais próxima. As piores despedidas de solteira são aquelas em que quem organiza planeou a viagem que queria fazer em vez do que a noiva realmente valoriza."
+        },
+        {
+          "q": "Como se mantém toda a gente contente numa despedida de solteira?",
+          "a": "Não vai conseguir — e tentar fazê-lo vai esgotá-la. Apontem para que toda a gente se divirta a maior parte do tempo, e não para a felicidade universal a cada momento. Incluam variedade no programa: ativo e descontraído, em grupo e tempo livre, noites cedo e noites mais tarde. Usem sondagens para tomar as decisões de grupo, para que ninguém se sinta atropelado. Estabeleçam expectativas claras à partida sobre orçamento, formalidade e o que está e não está planeado. E aceitem que algumas pessoas serão mais difíceis de agradar do que outras — isso é verdade em todas as viagens em grupo, não só nas despedidas de solteira."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Pronta para Planear a Despedida de Solteira Perfeita?",
+      "text": "A WePlanify reúne todo o seu grupo num só lugar — sondagens de destino, itinerário partilhado, gestor de orçamento e listas de bagagem. Pare de gerir o caos numa conversa de grupo e comece a planear realmente em conjunto.",
+      "button": "Planear a Despedida de Solteira"
+    },
+    "discoverMore": "Descubra Mais",
+    "readMore": "Ler mais"
+  }
+}

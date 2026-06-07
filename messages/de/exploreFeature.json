@@ -1,0 +1,167 @@
+{
+  "copy": {
+    "hero": {
+      "title": "Stöbern, hinzufügen, kartieren.",
+      "titleHighlight": "Gemeinsam.",
+      "subtitle": "Ein Bildschirm mit Hotels, Restaurants, Aktivitäten und Transport – kuratiert für dein Reiseziel. Tipp auf +, um zur Reise hinzuzufügen, und sieh zu, wie es auf der gemeinsamen Karte landet.",
+      "cta": "Explorer kostenlos testen",
+      "ctaSubtext": "Kostenlos · keine Kreditkarte · in 30 Sekunden startklar"
+    },
+    "intro": {
+      "title": "Der Weg von der Recherche zur Reise ist kaputt.",
+      "paragraphs": [
+        "Eine Gruppenreise zu planen sollte ein Gespräch sein, keine Tabelle. Aber da sitzt du: 47 offene Browser-Tabs, drei Gruppenchats mit unterschiedlichen Listen, ein Notion-Dokument, das niemand aktualisiert, und um 23 Uhr am Vorabend streitet ihr immer noch, ob die Rooftop-Bar den Weg quer durch die Stadt wert ist. Die Frage „was sollen wir machen“ – eigentlich der schöne Teil – wird zu dem Teil, der Gruppen zerreißt.",
+        "Das Problem ist kein Mangel an Informationen. Es ist das Gegenteil. Jede Stadt hat 10.000 Dinge zu tun, und das Internet verspricht, dass alle davon ein Muss sind. Das Signal vom Rauschen zu trennen – und vier bis fünfzehn Menschen dazu zu bringen, sich auf das zu einigen, was es in die engere Wahl schafft – ist der Punkt, an dem die meisten Reisen still und leise scheitern.",
+        "Explorer ist genau für diesen Moment gebaut. Ein Bildschirm. Vier Tabs: Hotels, Restaurants, Aktivitäten, Transport. Ein kuratiertes Karten-Raster für dein Reiseziel. Tipp auf +, um zur Reise hinzuzufügen, und sieh es auf der gemeinsamen Karte landen. Deine Gruppe macht dasselbe, die Orte mit dem meisten Zuspruch steigen nach oben. Zwanzig Minuten, eine kartierte Auswahlliste."
+      ]
+    },
+    "painPoints": {
+      "title": "Warum das Entdecken kaputt ist",
+      "subtitle": "Die meisten Gruppen verbringen mehr Zeit mit dem Kampf gegen die Planung als mit dem Genuss der Reise.",
+      "items": [
+        {
+          "emoji": "🗂️",
+          "title": "Der Tab-Friedhof",
+          "description": "35+ offene Tabs, jeder verspricht die beste Version von „die besten Dinge in [Stadt]“. Du schließt sie heute Abend und öffnest sie morgen wieder. Entschieden wurde nichts."
+        },
+        {
+          "emoji": "💬",
+          "title": "Die Gruppenchat-Liste, die niemand pflegt",
+          "description": "Sarah hat 6 Orte vorgeschlagen, Marc hat 3 hinzugefügt, Alex fand alle gut, die zukünftige Braut hat nichts davon gesehen. Du sprichst es beim Brunch an. Vielleicht."
+        },
+        {
+          "emoji": "🤔",
+          "title": "Ist das wirklich gut oder nur touristisch?",
+          "description": "Tripadvisor ist voll bezahlter Bewertungen, Reddit-Threads sind 4 Jahre alt, Instagram ist #ad. Am Ende landest du im selben überfüllten Restaurant, das alle anderen auch ausgewählt haben."
+        },
+        {
+          "emoji": "🕳️",
+          "title": "Das „ich hab's irgendwo gespeichert“-Schwarze-Loch",
+          "description": "14 Sterne in Maps, 28 Instagram-Speicherungen, 6 TikTok-Lesezeichen, ein Screenshot in deiner Galerie. Am Ankunftstag findest du keines davon je wieder."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Wie Explorer das löst",
+      "subtitle": "Ein Bildschirm, vier Tabs, am Ende eine echte gemeinsame Auswahlliste.",
+      "items": [
+        {
+          "emoji": "🎯",
+          "title": "Vier Tabs, keine Reizüberflutung",
+          "description": "Wechsle mit einem einzigen Klick zwischen Hotels, Restaurants, Aktivitäten und Transport. Die Karten passen sich dem Tab an – bei Unterkünften steht der Preis pro Nacht, beim Transport Route + Dauer. Kein Vergleich mehr von Äpfeln mit Flugtickets."
+        },
+        {
+          "emoji": "➕",
+          "title": "Mit einem Tipp hinzufügen",
+          "description": "Jede Karte hat einen +-Button. Tipp drauf, der Ort wird in deiner Reise fixiert – grüner Haken, keine zweite Bestätigung. Deine Auswahl synchronisiert sich in Echtzeit mit dem Rest der Gruppe."
+        },
+        {
+          "emoji": "🗺️",
+          "title": "Kartenansicht, Seite an Seite",
+          "description": "Karten links, interaktive Karte rechts (oder darunter auf dem Handy). Fahr über eine Karte, der Pin leuchtet auf der Karte auf. Wähl nach Nähe, nicht nach Tab-Reihenfolge."
+        },
+        {
+          "emoji": "🤝",
+          "title": "Der Gruppenkonsens kommt ans Licht",
+          "description": "Alle sehen denselben Explorer. Wenn mehrere Mitglieder denselben Ort hinzufügen, bekommt er eine „Favorit der Gruppe“-Markierung. Die Orte, auf die sich insgeheim alle geeinigt hatten, steigen nach oben – ganz ohne Debatte."
+        }
+      ]
+    },
+    "animationShowcase": {
+      "title": "Sieh es in Aktion",
+      "subtitle": "Die echte Explorer-Oberfläche – dieselben Tabs, dieselben Karten, derselbe +-Button. Wechsle die Typen und sieh zu, wie sich das Raster aktualisiert.",
+      "caption": "Automatisch abspielende Demo · genau das wirst du nutzen"
+    },
+    "mapPreview": {
+      "title": "Alles, was du hinzugefügt hast, kartiert",
+      "subtitle": "Jeder +-Tipp setzt einen Pin auf der gemeinsamen Karte. Öffne sie am Ankunftstag, wähl, was am nächsten ist, und lauf hin.",
+      "caption": "Interaktive Karte · mit deiner Reise synchronisiert"
+    },
+    "useCases": {
+      "title": "Wann sich Explorer bezahlt macht",
+      "subtitle": "Gebaut für die Reisen, bei denen „schau halt nach“ nicht mehr funktioniert.",
+      "items": [
+        {
+          "emoji": "🏙️",
+          "title": "Städtetrips (3–5 Tage)",
+          "description": "Lange Wochenenden in Lissabon, Berlin, NYC. Du hast keine Zeit zum Recherchieren – du hast Zeit zum Erleben. Explorer engt 500 Ideen in fünfzehn Minuten auf 20 ein."
+        },
+        {
+          "emoji": "👥",
+          "title": "Gruppenreisen (4–15 Personen)",
+          "description": "Junggesellinnen-Wochenenden, Freundes-Reunions, Familienreisen. Alle fügen ihre Favoriten vom Handy hinzu, der Konsens steigt nach oben. Umgeh die Gruppenchat-Demokratie."
+        },
+        {
+          "emoji": "🛣️",
+          "title": "Mehrere Städte & Roadtrips",
+          "description": "5 Städte in 10 Tagen = 5 Erkundungen. Speichere Orte pro Stadt und besuch sie bei der Ankunft. Deine Reiseroute baut sich von selbst um das, was die Gruppe wirklich will."
+        }
+      ]
+    },
+    "categoriesTitle": "Nach Kategorie entdecken",
+    "mapPins": {
+      "hotel": "Hotel",
+      "restaurant": "Restaurant",
+      "activity": "Aktivität"
+    }
+  },
+  "page": {
+    "heroBadge": "Entdecken-Modus",
+    "seoTitle": "Explorer - Reiseziele entdecken | Weplanify",
+    "seoDescription": "Entdecke fantastische Orte mit unserem Entdecken-Modus. Wische, um Restaurants, Museen und Aktivitäten zu erkunden, und speichere deine Favoriten.",
+    "ctaTitle": "Bereit zu entdecken?",
+    "ctaSubtitle": "Entdecke Tausende fantastischer Orte für deine nächste Reise",
+    "ctaButton": "Mein Reiseziel entdecken",
+    "features": [
+      {
+        "title": "Restaurants",
+        "description": "Finde das beste lokale Essen"
+      },
+      {
+        "title": "Museen",
+        "description": "Kultur und Geschichte"
+      },
+      {
+        "title": "Natur",
+        "description": "Parks und Outdoor-Aktivitäten"
+      },
+      {
+        "title": "Aussichtspunkte",
+        "description": "Die besten Fotospots"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Wie funktioniert der Explore-Modus von Weplanify?",
+        "answer": "Im Explore-Modus entdeckst du Orte (Restaurants, Museen, Aktivitäten), indem du wie in einer Dating-App wischst. Nach rechts wischen zum Speichern, nach links zum Überspringen."
+      },
+      {
+        "question": "Werden Orte nach meinem Reiseziel gefiltert?",
+        "answer": "Ja, der Explorer zeigt nur Orte an, die für dein Reiseziel und deine Reisedaten relevant sind."
+      },
+      {
+        "question": "Woher kommen die Empfehlungen?",
+        "answer": "Unsere Empfehlungen kombinieren mehrere Quellen: Bewertungen von Weplanify-Reisenden, Google-Places-Daten, TripAdvisor und unsere lokalen Kuratoren."
+      },
+      {
+        "question": "Kann ich Explorer offline nutzen?",
+        "answer": "Ja! Lade die Orte deines Reiseziels herunter, bevor du losfährst."
+      },
+      {
+        "question": "Wie füge ich einen entdeckten Ort zu meiner Reiseroute hinzu?",
+        "answer": "Wenn du nach rechts wischst (Like), wird der Ort in deinen Favoriten gespeichert. Mit einem einfachen Tippen fügst du ihn deiner Reiseroute hinzu."
+      }
+    ],
+    "stats": [
+      {
+        "label": "entdeckte Orte"
+      },
+      {
+        "label": "Kategorien"
+      },
+      {
+        "label": "Reiseziele"
+      }
+    ]
+  }
+}

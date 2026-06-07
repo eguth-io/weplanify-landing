@@ -1,0 +1,37 @@
+{
+  "title": "Preguntas\nfrecuentes",
+  "supportTitle": "¿Necesitas ayuda con la planificación de tu viaje?",
+  "supportDescription": "¿Tienes una pregunta sobre alguna función?\n¿Necesitas ideas para el itinerario de tu grupo?\nNuestro equipo responde rápido y te ayuda a sacar el máximo partido de WePlanify para tu próxima aventura en grupo.\n\nPorque la experiencia del usuario es nuestra prioridad.",
+  "supportButtonText": "Contactar con nuestro equipo",
+  "supportButtonUrl": "/contact",
+  "items": [
+    {
+      "question": "¿WePlanify es gratis?",
+      "answer": "Sí, WePlanify es actualmente gratis para los beta testers. En el futuro planeamos introducir planes premium con funciones avanzadas, pero las funciones básicas siempre serán gratuitas."
+    },
+    {
+      "question": "¿Pueden participar todos en la planificación del viaje?",
+      "answer": "¡Por supuesto! Cada participante puede sugerir ideas, votar actividades, seguir el presupuesto y ver el itinerario en tiempo real. Los invitados no necesitan cuenta."
+    },
+    {
+      "question": "¿Cómo creo una cuenta?",
+      "answer": "Simplemente haz clic en 'Empezar' y regístrate con tu email o tu cuenta de Google. Crear tu primer viaje lleva menos de 30 segundos."
+    },
+    {
+      "question": "¿Están seguros mis datos?",
+      "answer": "Sí, nos tomamos la seguridad muy en serio. Tus datos están cifrados y almacenados de forma segura. Nunca compartimos tu información personal con terceros."
+    },
+    {
+      "question": "¿Puedo usar WePlanify en el móvil?",
+      "answer": "¡Sí! WePlanify funciona en cualquier dispositivo — ordenador, tablet o smartphone. Accede a tus viajes desde cualquier lugar con nuestra app web adaptable."
+    },
+    {
+      "question": "¿Cómo puedo contactar con el soporte?",
+      "answer": "Puedes contactarnos a través de nuestra página de contacto o escribirnos a support@weplanify.com. Normalmente respondemos en menos de 24 horas."
+    },
+    {
+      "question": "¿Cómo invito a amigos a mi viaje?",
+      "answer": "Comparte el enlace único de tu viaje con tus amigos por email, WhatsApp o cualquier app de mensajería. Pueden unirse al instante sin crear una cuenta."
+    }
+  ]
+}

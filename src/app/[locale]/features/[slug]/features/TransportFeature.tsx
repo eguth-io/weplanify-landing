@@ -2,15 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { TransportJourney } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, {
+type Copy = {
   heroTitle: string;
   heroTitleHighlight: string;
   heroSubtitle: string;
@@ -20,71 +18,12 @@ const COPY: Record<Lang, {
   syncTitle: string;
   syncSubtitle: string;
   timeline: { time: string; event: string; icon: string; color: string }[];
-}> = {
-  fr: {
-    heroTitle: "Avion, train, voiture :",
-    heroTitleHighlight: "fini les billets perdus",
-    heroSubtitle: "Transférez vos emails de confirmation, on extrait tout automatiquement.",
-    importTitle: "Import automatique",
-    importSubtitle: "Connectez votre email ou scannez vos confirmations — tout s'importe automatiquement.",
-    tickets: [
-      { type: "flight", code: "AF1234", details: "Paris → Lisbonne — 15 avril" },
-      { type: "train", code: "CP5678", details: "Lisbonne → Porto — 18 avril" },
-      { type: "hotel", code: "BOOKING-9012", details: "Hôtel Porto — 4 nuits" },
-    ],
-    syncTitle: "Synchronisé avec votre itinéraire",
-    syncSubtitle: "Vos transports s'intègrent automatiquement à votre programme.",
-    timeline: [
-      { time: "08:45", event: "Vol CDG → LIS", icon: "✈️", color: "#61DBD5" },
-      { time: "10:30", event: "Arrivée à Lisbonne", icon: "📍", color: "#F6391A" },
-      { time: "11:00", event: "Transfert hôtel", icon: "🚕", color: "#EEF899" },
-      { time: "14:00", event: "Check-in Hôtel Alfama", icon: "🏨", color: "#8B5CF6" },
-    ],
-  },
-  en: {
-    heroTitle: "Flights, trains, cars:",
-    heroTitleHighlight: "no more lost tickets",
-    heroSubtitle: "Forward your confirmation emails, we extract everything automatically.",
-    importTitle: "Automatic Import",
-    importSubtitle: "Connect your email or scan your confirmations — everything imports automatically.",
-    tickets: [
-      { type: "flight", code: "AF1234", details: "Paris → Lisbon — April 15" },
-      { type: "train", code: "CP5678", details: "Lisbon → Porto — April 18" },
-      { type: "hotel", code: "BOOKING-9012", details: "Hotel Porto — 4 nights" },
-    ],
-    syncTitle: "Syncs with your itinerary",
-    syncSubtitle: "Transport automatically integrates into your schedule.",
-    timeline: [
-      { time: "08:45", event: "Flight CDG → LIS", icon: "✈️", color: "#61DBD5" },
-      { time: "10:30", event: "Arrive in Lisbon", icon: "📍", color: "#F6391A" },
-      { time: "11:00", event: "Hotel transfer", icon: "🚕", color: "#EEF899" },
-      { time: "14:00", event: "Check-in Hotel Alfama", icon: "🏨", color: "#8B5CF6" },
-    ],
-  },
 };
 
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
+// Non-text feature metadata (not translatable)
+const SLUG = "transport";
+const ACCENT_COLOR = "#61DBD5";
+const FEATURE_ICONS = ["📧", "🔔", "📱", "👥"];
 
 // Journey segment component
 function JourneySegment({
@@ -194,19 +133,21 @@ function TicketStub({
   );
 }
 
-export default function TransportFeature({ data }: { data: FeaturePageData }) {
+export default function TransportFeature() {
   const locale = useLocale();
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const t = COPY[lang];
+  const tr = useTranslations("transportFeature");
+  const t = tr.raw("copy") as Copy;
+  const features = tr.raw("page.features") as { title: string; description: string }[];
+  const faqItems = tr.raw("page.faqItems") as { question: string; answer: string }[];
 
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle}
-        featureDescription={data.seoDescription}
+        featureName={tr("page.seoTitle")}
+        featureDescription={tr("page.seoDescription")}
         locale={locale}
-        slug={data.slug}
-        faqItems={data.faqItems}
+        slug={SLUG}
+        faqItems={faqItems}
       />
 
       <div className="min-h-screen bg-[#FFFBF5]">
@@ -264,7 +205,7 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
               >
                 <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                   <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                    {data.heroCta}
+                    {tr("page.heroCta")}
                   </PulsatingButton>
                 </Link>
               </motion.div>
@@ -344,7 +285,7 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
         <section className="px-4 lg:px-8 py-16 bg-[#001E13]">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-6">
-              {data.features.map((f, i) => (
+              {features.map((f, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -353,7 +294,7 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
                   transition={{ delay: i * 0.1 }}
                   className="text-center p-6"
                 >
-                  <span className="text-4xl block mb-3">{f.icon}</span>
+                  <span className="text-4xl block mb-3">{FEATURE_ICONS[i]}</span>
                   <h3 className="font-londrina-solid text-lg text-[#FFFBF5] mb-1">{f.title}</h3>
                   <p className="text-sm text-[#FFFBF5]/60 font-karla">{f.description}</p>
                 </motion.div>
@@ -408,7 +349,7 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
+        <FeatureFAQ items={faqItems} accentColor={ACCENT_COLOR} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-16">
@@ -421,17 +362,17 @@ export default function TransportFeature({ data }: { data: FeaturePageData }) {
             >
               <span className="text-5xl mb-4 block">🗺️</span>
               <h2 className="text-3xl font-londrina-solid text-white mb-4">
-                {data.ctaTitle}
+                {tr("page.ctaTitle")}
               </h2>
               <p className="text-white/90 font-karla mb-8 max-w-md mx-auto">
-                {data.ctaSubtitle}
+                {tr("page.ctaSubtitle")}
               </p>
               <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <button className="bg-[#001E13] text-white font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
-                  {data.ctaButton}
+                  {tr("page.ctaButton")}
                 </button>
               </Link>
-              <p className="text-sm text-white/60 mt-3 font-karla">{data.heroCtaSubtext}</p>
+              <p className="text-sm text-white/60 mt-3 font-karla">{tr("page.heroCtaSubtext")}</p>
             </motion.div>
           </div>
         </section>

@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Eclipse solar total del 12 ago 2026: planificador de viaje a España e Islandia",
+    "description": "Todo para el eclipse solar total del 12 de agosto de 2026: franja de totalidad por Islandia y el norte de España, cuándo y dónde es más larga la totalidad, gafas ISO 12312-2, opciones de crucero y cómo planificar el viaje desde Francia con un grupo."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Planificador de viaje al eclipse solar 2026"
+  },
+  "hero": {
+    "tag": "Guía de astroturismo y planificador de viaje · Agosto de 2026",
+    "title": "Eclipse solar total, 12 de agosto de 2026: planificador de viaje a Islandia y España",
+    "readTime": "10 min de lectura",
+    "ctaButton": "Planificar nuestro viaje al eclipse",
+    "ctaNote": "Gratis · hecho para grupos · EN/FR",
+    "imageAlt": "Eclipse solar total del 12 de agosto de 2026 — gafas de eclipse sostenidas ante la corona sobre un trigal español"
+  },
+  "facts": {
+    "heading": "Datos del eclipse",
+    "dateLabel": "Fecha",
+    "dateValue": "Mié 12 ago",
+    "totalityLabel": "Totalidad máxima",
+    "totalitySub": "frente a Islandia",
+    "pathLabel": "Franja",
+    "pathSub": "+ Groenlandia",
+    "lastLabel": "Último en Europa",
+    "lastSub": "hace 27 años"
+  },
+  "stakes": {
+    "p1": "Los eclipses solares totales visibles desde la Europa continental ocurren más o menos una vez por generación. El último fue el 11 de agosto de 1999, cuando una enorme franja de Francia se quedó a oscuras durante unos dos minutos en pleno verano. El eclipse de 2026 se salta Francia por completo — su franja de totalidad cruza el este de Groenlandia, el oeste y el sur de Islandia, y luego barre el norte de España al atardecer antes de terminar en el Mediterráneo. Francia, a pesar de estar tan cerca, solo ve un eclipse parcial: profundo (92-99,5%) pero sin corona, sin oscuridad, y el sol sigue siendo peligroso de mirar durante toda la fase. Para presenciar el eclipse total de verdad — y la silenciosa e inolvidable corona — hay que cruzar a la franja española o volar al norte, a Islandia. Después de este, dos eclipses totales más cruzan España (el 2 de agosto de 2027, y luego uno anular el 26 de enero de 2028), lo que hace de 2026-2028 el 'triplete español' único del astroturismo europeo.",
+    "p2": "WePlanify es el centro de mando compartido y gratuito para los grupos que persiguen el eclipse — encuesta de ubicación, vuelo o tren, alojamiento, el cronograma de observación del día J y el presupuesto compartido en un solo lugar, en inglés o francés."
+  },
+  "toc": {
+    "title": "En esta página",
+    "path": "La franja de totalidad",
+    "france": "¿Verá Francia el eclipse?",
+    "spainVsIceland": "España frente a Islandia frente a crucero",
+    "safety": "Seguridad y gafas",
+    "logistics": "Viaje y alojamiento",
+    "planning": "Planificar el viaje con el grupo",
+    "budget": "Consejos de presupuesto",
+    "faq": "Preguntas frecuentes"
+  },
+  "path": {
+    "title": "La franja de totalidad",
+    "subtitle": "De los fiordos orientales de Groenlandia al Mediterráneo, en aproximadamente 50 minutos. La duración varía enormemente según dónde te sitúes.",
+    "items": [
+      { "stop": "Groenlandia — fiordos orientales", "desc": "La sombra toca por primera vez la Tierra sobre la Costa de Blosseville y cruza el fiordo de Scoresby, con unos 1 min 45 s de totalidad. El único pueblo de la región, Ittoqqortoormiit, está a ~50 km al sur de la línea central y queda fuera de la totalidad. El acceso práctico para viajar es limitado — este tramo es para especialistas." },
+      { "stop": "Islandia — Fiordos del Oeste, Snæfellsnes, Reikiavik", "desc": "La sombra toca tierra en el faro de Straumnes, en los Fiordos del Oeste, a las 17:43:28 UTC. Látrabjarg recibe 2 min 13 s. La península de Snæfellsnes, incluida la icónica montaña Kirkjufell, está en la franja. En Reikiavik la totalidad empieza a las 17:48:12 UTC durante aproximadamente 1 minuto, con el sol a ~24,5° sobre el horizonte oeste. El tiempo total de Islandia bajo la sombra es de 6 min 48 s." },
+      { "stop": "España — de Galicia a Mallorca", "desc": "La sombra llega a A Coruña en torno a las 20:26 CEST (sol a ~11° de altura), a Bilbao a las 20:27 (~30 s de totalidad, sol a ~8°), a Zaragoza en torno a la misma franja (~1 min 25 s), a Valencia desde las 20:32 (~1 minuto) y a Palma de Mallorca a las 20:31-20:32 (~1 min 36 s, sol a ~4° sobre el horizonte, unos 10 minutos antes del atardecer). Madrid y Barcelona quedan justo fuera de la franja — no entran en totalidad." },
+      { "stop": "Dentro de la franja pero fácil de pasar por alto", "desc": "Santander, Burgos, Valladolid, Palencia y León están todas dentro de la franja de totalidad. Cuanto más al norte y al oeste estés, ligeramente más alto está el sol — pero más nubosa es la climatología. El Valle del Ebro (Huesca, Zaragoza) está en el punto óptimo estadístico para la nubosidad de agosto y un horizonte oeste despejado." },
+      { "stop": "La mayor duración es sobre mar abierto", "desc": "El punto de mayor duración — 2 minutos 18,2 segundos — está a unos 45 km al oeste de Látrabjarg, en mar abierto. Ni isla, ni puerto. Las únicas formas de estar allí son un crucero de eclipse o un vuelo chárter." }
+    ]
+  },
+  "france": {
+    "title": "¿Verá Francia el eclipse?",
+    "subtitle": "Un parcial profundo — pero no un total. Importante dejarlo claro con el grupo, especialmente con quien recuerde el eclipse de 1999 desde Francia.",
+    "partialLabel": "Obscuración parcial",
+    "partialTitle": "Ciudad por ciudad",
+    "partialItems": [
+      "→ Biarritz: hasta el 99,5% (la más cercana a la franja)",
+      "→ Marsella / Niza: ~95%",
+      "→ Burdeos / Toulouse: ~96-97%",
+      "→ París: 92,2%",
+      "→ Horario: de ~19:30 a ~20:30 hora de París, sol bajo"
+    ],
+    "missLabel": "Por qué el 99% no es el 100%",
+    "missTitle": "Lo que te pierdes",
+    "missItems": [
+      "→ La corona — solo visible cuando el sol está cubierto al 100%",
+      "→ La oscuridad — la noche no cae realmente al 99%",
+      "→ La ventana segura a simple vista — nunca en el parcial, siempre con gafas",
+      "→ La bajada de temperatura y el silencio de los pájaros",
+      "→ El efecto de atardecer de 360° en el horizonte"
+    ]
+  },
+  "spainVsIceland": {
+    "title": "España frente a Islandia frente a crucero",
+    "subtitle": "Tres opciones honestas, cada una con una contrapartida real. La adecuada depende de qué optimices — las probabilidades de cielo despejado, la duración de la totalidad o la experiencia.",
+    "option1": {
+      "tag": "Opción 1",
+      "title": "Interior del norte de España",
+      "desc": "El Valle del Ebro, Huesca, Zaragoza y las llanuras que los rodean — las mejores estadísticas de nubosidad de agosto de toda la franja (~35% de riesgo de nubes). Horizonte oeste despejado, fácil acceso por carretera, hoteles de gama media. Contrapartida: la totalidad es corta (~1-1,5 min) y el sol está bajo (8-11°)."
+    },
+    "option2": {
+      "tag": "Opción 2",
+      "title": "Mallorca",
+      "desc": "Palma ve ~1 min 36 s de totalidad, la más larga de cualquier ciudad de fácil acceso. Entorno de playa con un horizonte marino despejado al oeste. Contrapartida: el sol está muy bajo (~4°), ~10 min antes del atardecer, así que cualquier acantilado o edificio al oeste arruina la vista. Las tarifas de los hoteles ya se han triplicado más o menos para la noche del 11-12 de agosto."
+    },
+    "option3": {
+      "tag": "Opción 3",
+      "title": "Islandia o crucero",
+      "desc": "Islandia ofrece la experiencia más espectacular y el sol más alto (~24° en Reikiavik) pero lo paga en riesgo de nubes (70-85% de nubosidad media en agosto). Un crucero de eclipse por el Mediterráneo (Costa desde ~450 €, CFC Renaissance desde 1.279 €, Princess, Holland America) cambia un punto fijo por flexibilidad meteorológica el mismo día."
+    }
+  },
+  "midCta": {
+    "title": "¿España, Mallorca o Islandia?",
+    "subtitle": "Lanza la encuesta de destino con el grupo, y luego pre-rellena los vuelos y el alojamiento.",
+    "button": "Lanzar la encuesta"
+  },
+  "safety": {
+    "title": "Seguridad y gafas ISO 12312-2",
+    "subtitle": "La retinopatía solar es silenciosa — no notas el daño hasta que está hecho. Consigue las gafas adecuadas pronto y lleva de repuesto.",
+    "card1": {
+      "title": "La certificación que hay que buscar",
+      "desc": "ISO 12312-2:2015 — impresa en el interior de las gafas — además del marcado CE para Europa. Cualquier cosa sin ambas es insegura, incluido el cristal de soldador muy oscuro por debajo del grado 14, la película de rayos X, el cristal ahumado, los negativos fotográficos totalmente velados o las gafas de sol apiladas. Las gafas de más de tres años deben sustituirse; el filtro se degrada."
+    },
+    "card2": {
+      "title": "Dónde comprar en Francia",
+      "desc": "Farmacias (la venta anticipada suele abrir en junio), Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs), y MyEclipseGlasses o VOLTNGO en Amazon. Pide antes de la avalancha de junio — el suministro se tensa en julio a medida que sube la cobertura mediática. Un par por persona, más un par de repuesto por cada grupo de cuatro."
+    },
+    "card3": {
+      "title": "Smartphone y cámara",
+      "desc": "Apuntar la cámara de un móvil al eclipse parcial sin un filtro solar puede dañar el sensor y tampoco es seguro a través de la pantalla. Usa un filtro solar de rosca o magnético, o acepta que el eclipse es uno de los pocos eventos en los que dejar el móvil en el bolsillo es la decisión correcta. Solo durante la totalidad (dentro de la franja de totalidad) puedes mirar el sol y fotografiar libremente."
+    }
+  },
+  "logistics": {
+    "title": "Viaje y alojamiento",
+    "subtitle": "Las ciudades principales están en gran parte reservadas. La jugada es o bien ampliar la búsqueda a pueblos más pequeños dentro de la franja, o aceptar un trayecto más largo el día del eclipse.",
+    "gettingThere": "Cómo llegar",
+    "spainLabel": "España",
+    "spainItems": [
+      "→ París → Bilbao: vuelo directo corto, ~1h50",
+      "→ París → Bilbao en tren: ~14-15h vía Hendaya",
+      "→ París → Zaragoza / Valencia / Palma: vuelos directos desde CDG/ORY",
+      "→ En coche desde el suroeste de Francia a Bilbao o Pamplona: ~3-5 h",
+      "→ Ciudades principales (Zaragoza, Valencia, Palma): hoteles casi agotados — prueba Logroño, Tudela, Castellón"
+    ],
+    "icelandLabel": "Islandia y crucero",
+    "icelandItems": [
+      "→ París CDG → Reikiavik (KEF): ~3h30 directo, Icelandair (~16 vuelos/semana) y easyJet",
+      "→ Alquila un coche en KEF para llegar a Snæfellsnes (~2h30 de trayecto)",
+      "→ Hoteles de Reikiavik: en gran parte agotados, el Reykjavik Edition anunciado a 4.399 $/noche",
+      "→ Crucero de eclipse de Costa Cruceros: 7 noches desde ~450 €/pers",
+      "→ CFC Renaissance: 6 noches desde Marsella, desde 1.279 €/pers"
+    ]
+  },
+  "planning": {
+    "title": "Planificar el viaje con el grupo"
+  },
+  "budget": {
+    "title": "Consejos de presupuesto",
+    "p2": "Un apartamento con servicios para 4-6 personas en un pueblo más pequeño dentro de la franja de totalidad (Logroño, Tudela, Castellón en el lado español; Borgarnes o Stykkishólmur en la península de Snæfellsnes, en Islandia) suele superar a las habitaciones de hotel de las ciudades principales en un 40-60%, manteniéndote plenamente dentro de la totalidad. La contrapartida es que las opciones para cenar se reducen — reserva los restaurantes para el 13 de agosto ahora, no el mismo día.",
+    "p3": "No escatimes en las gafas. Un par ISO 12312-2 de 5-15 € por persona más uno de repuesto es una de las líneas más pequeñas de todo el presupuesto, y es la única línea en la que recortar puede realmente lesionar a alguien del grupo."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Cuándo y dónde puedo ver el eclipse solar total del 12 de agosto de 2026?", "a": "El miércoles 12 de agosto de 2026. La franja de totalidad cruza el este de Groenlandia, el oeste de Islandia (incluidos los Fiordos del Oeste, la península de Snæfellsnes y Reikiavik) y una amplia franja por el norte de España (Galicia, Asturias, Cantabria, Castilla y León, el Valle del Ebro, Valencia y Mallorca). La totalidad máxima es de 2 minutos 18 segundos — pero ese máximo es sobre mar abierto, a ~45 km al oeste de Látrabjarg, Islandia. Las localidades habitadas reciben una totalidad más corta: Reikiavik ~1 minuto, Zaragoza ~1 min 25 s, Palma de Mallorca ~1 min 36 s, Bilbao ~30 segundos. Madrid y Barcelona NO están en totalidad." },
+      { "q": "¿Verá Francia el eclipse total?", "a": "No. La Francia continental solo ve un eclipse parcial — pero profundo. París alcanza el 92,2% de obscuración, Marsella y Niza alrededor del 95%, y Biarritz, la ciudad francesa más cercana a la franja, llega hasta el 99,5%. La fase parcial va de ~19:30 a ~20:30 hora de París. Sin totalidad nunca consigues la corona, la oscuridad ni la ventana segura a simple vista — y el sol sigue siendo peligroso de mirar todo el tiempo. Para ver el eclipse total hay que cruzar a España o volar a Islandia." },
+      { "q": "Islandia o España — ¿cuál es el mejor viaje?", "a": "Estadísticamente, el interior del norte de España (Valle del Ebro, Huesca, Zaragoza) tiene las mejores probabilidades de nubosidad de agosto a lo largo de toda la franja — aproximadamente un 35% de probabilidad de nubes en las zonas adecuadas. Islandia promedia más cerca del 70-85% de nubosidad incluso en agosto. La contrapartida española: el sol está muy bajo (4-11° sobre el horizonte — solo ~1 hora antes del atardecer), así que necesitas una vista despejada al oeste (el mar, o una llanura, nunca una calle de ciudad). La contrapartida islandesa: más nuboso y más caro, pero el sol está más alto (~24° en Reikiavik) y la experiencia de la totalidad es más aislada y espectacular." },
+      { "q": "¿Y un crucero de eclipse?", "a": "Varias navieras han situado barcos en el Mediterráneo occidental y alrededor de Mallorca para dar a los pasajeros la libertad de moverse bajo un cielo más despejado el mismo día. Costa Cruceros organiza un crucero de eclipse de 7 noches desde ~450 € por persona. La naviera francesa CFC ha situado su 'Renaissance' entre las Baleares y Cerdeña, 6 noches desde Marsella, desde unos 1.279 €. Princess Cruises y Holland America también tienen itinerarios temáticos del eclipse. La ventaja es la flexibilidad meteorológica; el inconveniente es que un barco que se mueve despacio no siempre puede escapar a tiempo de un banco de nubes." },
+      { "q": "¿Qué tipo de gafas necesito?", "a": "Gafas de observación solar certificadas ISO 12312-2:2015, con el marcado CE. Las gafas de sol normales no son seguras — incluso las más oscuras dejan pasar suficiente luz infrarroja y visible como para causar retinopatía solar. Las gafas ISO 12312-2 se venden en las farmacias francesas (la venta anticipada suele abrir en junio), Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs) y a través de MyEclipseGlasses en Amazon. Compra un par por persona, comprueba la fecha estampada (las gafas de más de 3 años deben sustituirse) y guárdalas planas. Solo durante la totalidad — y solo si estás realmente DENTRO de la totalidad — puedes mirar a simple vista." },
+      { "q": "¿Ya se han agotado los hoteles?", "a": "Muchos de los lugares más codiciados sí, en efecto. Hotels.com informó de un repunte del 445% en las búsquedas de destinos de eclipse. Habitaciones en Palencia se han anunciado hasta a 1.095 € por noche (unas 10× lo normal). Las tarifas de Mallorca se han triplicado más o menos para la noche del 11-12 de agosto. El Reykjavik Edition se ha cotizado a 4.399 $/noche. Los turoperadores reservaron Zaragoza, Valencia y Bilbao con 18+ meses de antelación. Si empiezas ahora, busca un poco fuera de las ciudades principales — los pueblos más pequeños dentro de la franja todavía se pueden reservar." },
+      { "q": "¿Cómo se organiza un viaje al eclipse con un grupo de amigos?", "a": "Los eclipses son cortos — de 30 segundos a 2 minutos según dónde estés — así que la logística importa más que en cualquier viaje normal. Decidid en grupo si optimizáis para las probabilidades de nubes (Valle del Ebro, interior de España), la duración de la totalidad (Mallorca) o la experiencia (Islandia). Cierra la ubicación, el transporte (vuelo a Bilbao o Reikiavik, o tren + coche) y el punto exacto de observación antes de reservar el alojamiento. WePlanify mantiene la encuesta de destino, el presupuesto y el cronograma del propio día todo en un solo lugar compartido." }
+    ]
+  },
+  "discover": {
+    "title": "Descubre más",
+    "hellfest": { "title": "Planificador de viaje al Hellfest 2026", "desc": "Cuatro días de metal en Clisson, Francia.", "cta": "Leer más →" },
+    "tomorrowland": { "title": "Planificador de viaje a Tomorrowland 2026", "desc": "Dos fines de semana en Boom, Bélgica.", "cta": "Leer más →" },
+    "tripWithFriends": { "title": "Viaje con amigos", "desc": "Planifica cualquier viaje en grupo sin esfuerzo.", "cta": "Leer más →" },
+    "groupGuide": { "title": "Guía de viajes en grupo", "desc": "La guía completa paso a paso.", "cta": "Leer la guía →" }
+  },
+  "cta": {
+    "title": "Construye tu viaje al eclipse",
+    "subtitle": "Encuesta de destino, vuelos o tren, alojamiento en la franja de totalidad, cronograma del día J, presupuesto compartido — un plan, todo tu grupo en la misma página.",
+    "button": "Lanzar la encuesta España vs Islandia"
+  },
+  "jsonld": {
+    "articleHeadline": "Eclipse solar total del 12 de agosto de 2026: planificador de viaje para Islandia y España",
+    "eventName": "Eclipse solar total del 12 de agosto de 2026",
+    "eventDescription": "Eclipse solar total el miércoles 12 de agosto de 2026. La franja de totalidad cruza el este de Groenlandia, el oeste de Islandia y el norte de España. Totalidad máxima de 2 minutos 18 segundos frente a la costa islandesa. Primer eclipse solar total visible desde la Europa continental desde el 11 de agosto de 1999.",
+    "howToName": "Cómo planificar un viaje al eclipse solar total de 2026",
+    "howToDescription": "A tres meses vista, así es como cerrar el viaje: elige tu ubicación (probabilidades de nubes frente a duración frente a experiencia), reserva el viaje y el alojamiento antes de la próxima subida de precios, consigue gafas ISO 12312-2 y planifica la hora exacta de la observación.",
+    "howToSteps": [
+      { "name": "Elige tu ubicación — y poned de acuerdo al grupo", "text": "Las tres opciones honestas son el interior de España (Valle del Ebro, ~35% de riesgo de nubes, totalidad corta), Mallorca (totalidad más larga pero sol muy bajo, necesita horizonte marino) e Islandia (alto riesgo de nubes pero experiencia espectacular). Lanza una encuesta de grupo antes de reservar nada — las contrapartidas dividen a las familias en la vida real." },
+      { "name": "Reserva el transporte y el alojamiento antes de la próxima subida", "text": "París-Reikiavik dura ~3h30 con Icelandair o easyJet desde CDG. París-Bilbao es un vuelo corto o un tren largo (14-15h vía Hendaya). El alojamiento en las ciudades principales (Zaragoza, Reikiavik, Palma) está en gran parte agotado — fíjate en pueblos más pequeños dentro de la franja, o un apartamento con servicios para el grupo." },
+      { "name": "Pide las gafas ISO 12312-2 y el kit de seguridad", "text": "Un par certificado por persona, pedido antes de la avalancha de junio. Añade un filtro solar para smartphone si alguien quiere fotografiar el eclipse — la óptica normal del móvil tampoco es segura apuntada al sol sin filtro. Lleva un par de repuesto por cada grupo de cuatro: las gafas se caen." },
+      { "name": "Planifica la observación hora a hora", "text": "Estate en tu punto al menos 2 horas antes de la totalidad. En España, la totalidad llega en torno a las 20:27-20:32 CEST con el sol muy bajo — practica localizarlo desde tu punto el día anterior. Fija un punto de encuentro despejado por si el grupo se separa, y calcula el trayecto de vuelta al alojamiento: las carreteras desde los puntos de observación se atascan a los pocos minutos de terminar la totalidad." }
+    ]
+  }
+}

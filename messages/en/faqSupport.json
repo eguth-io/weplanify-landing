@@ -1,0 +1,37 @@
+{
+  "title": "Frequently Asked\nQuestions",
+  "supportTitle": "Need Help With Your Trip Plan?",
+  "supportDescription": "Have a question about a feature?\nNeed ideas for your group itinerary?\nOur team responds quickly and helps you get the most out of WePlanify for your next group adventure.\n\nBecause user experience is our priority.",
+  "supportButtonText": "Contact Our Team",
+  "supportButtonUrl": "/contact",
+  "items": [
+    {
+      "question": "Is WePlanify free?",
+      "answer": "Yes, WePlanify is currently free for beta testers. We plan to introduce premium plans with advanced features in the future, but the core functionality will always remain free."
+    },
+    {
+      "question": "Can everyone participate in trip planning?",
+      "answer": "Absolutely! Every participant can suggest ideas, vote on activities, track the budget, and view the itinerary in real-time. No account required for guests."
+    },
+    {
+      "question": "How do I create an account?",
+      "answer": "Simply click 'Get Started' and sign up with your email or Google account. It takes less than 30 seconds to create your first trip."
+    },
+    {
+      "question": "Is my data secure?",
+      "answer": "Yes, we take security seriously. Your data is encrypted and stored securely. We never share your personal information with third parties."
+    },
+    {
+      "question": "Can I use WePlanify on mobile?",
+      "answer": "Yes! WePlanify works on any device — desktop, tablet, or smartphone. Access your trips anywhere with our responsive web app."
+    },
+    {
+      "question": "How can I contact support?",
+      "answer": "You can reach us via our contact page or email us at support@weplanify.com. We typically respond within 24 hours."
+    },
+    {
+      "question": "How do I invite friends to my trip?",
+      "answer": "Share your unique trip link with friends via email, WhatsApp, or any messaging app. They can join instantly without creating an account."
+    }
+  ]
+}

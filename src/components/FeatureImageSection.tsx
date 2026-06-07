@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import {
   Vote,
   Wallet,
@@ -13,15 +14,6 @@ import {
 
 type Lang = "en" | "fr";
 
-const CONTENT: Record<Lang, { title: string }> = {
-  fr: {
-    title: "Pensée par des voyageurs,\nfaite pour les groupes.",
-  },
-  en: {
-    title: "A group travel planner,\nbuilt by travelers, for travelers.",
-  },
-};
-
 // Clean iPhone mockup WITHOUT bubbles — the bubbles are rendered in HTML below
 // so they stay translatable (FR/EN). Replaces the old baked-in-text image.
 const MOCKUP_IMAGE = "/feature-mockup.png";
@@ -31,8 +23,8 @@ const MOCKUP_H = 1370;
 type Side = "left" | "right";
 
 type Bubble = {
-  text: Record<Lang, string>;
-  subtitle: Record<Lang, string>;
+  /** Stable key, used to match the bubble with its translated text by order. */
+  id: string;
   icon: LucideIcon;
   /** Which side of the phone the bubble sits on (desktop). */
   side: Side;
@@ -60,89 +52,32 @@ type Bubble = {
   };
 };
 
+// Layout/logic only — the user-facing text/subtitle live in the
+// `featureImageSection` messages, matched to this array by index.
 const BUBBLES: Bubble[] = [
   // Left column — clustered in the upper ~60%, inner edge tucked behind the phone
-  {
-    text: { fr: "Partager vos propres sondages", en: "Share your own polls" },
-    subtitle: { fr: "Dates · Destination · Budget", en: "Dates · Destination · Budget" },
-    icon: Vote,
-    side: "left",
-    top: 10,
-    edge: 38,
-    mobile: { corner: "top-left", offset: 8 },
-  },
-  {
-    text: { fr: "Gérer les dépenses de votre voyage", en: "Manage your trip expenses" },
-    subtitle: { fr: "Vols · Airbnb · Restos", en: "Flights · Airbnb · Dining" },
-    icon: Wallet,
-    side: "left",
-    top: 32,
-    edge: 37,
-  },
-  {
-    text: { fr: "Inviter le groupe", en: "Invite the group" },
-    subtitle: { fr: "Par email · Par lien", en: "By email · By link" },
-    icon: Users,
-    side: "left",
-    top: 54,
-    edge: 33,
-    dim: true,
-    mobile: { corner: "bottom-left", offset: 8 },
-  },
-  {
-    text: { fr: "Gérer votre voyage", en: "Manage your trip" },
-    subtitle: { fr: "Étapes · Jours · Notes", en: "Stops · Days · Notes" },
-    icon: Map,
-    side: "left",
-    top: 76,
-    edge: 31,
-  },
+  { id: "polls", icon: Vote, side: "left", top: 10, edge: 38, mobile: { corner: "top-left", offset: 8 } },
+  { id: "expenses", icon: Wallet, side: "left", top: 32, edge: 37 },
+  { id: "invite", icon: Users, side: "left", top: 54, edge: 33, dim: true, mobile: { corner: "bottom-left", offset: 8 } },
+  { id: "trip", icon: Map, side: "left", top: 76, edge: 31 },
   // Right column
-  {
-    text: { fr: "Rechercher des activités", en: "Search for activities" },
-    subtitle: { fr: "Musées · Restos · Plages", en: "Museums · Food · Beaches" },
-    icon: Search,
-    side: "right",
-    top: 9,
-    edge: 32,
-    mobile: { corner: "top-right", offset: 64 },
-  },
-  {
-    text: { fr: "Trouver vos futurs logements", en: "Find your accommodation" },
-    subtitle: { fr: "Hôtel · Airbnb · Auberge", en: "Hotel · Airbnb · Hostel" },
-    icon: BedDouble,
-    side: "right",
-    top: 34,
-    edge: 30,
-    dim: true,
-  },
-  {
-    text: { fr: "Attribuez-vous des tâches", en: "Assign tasks" },
-    subtitle: { fr: "À faire · En cours · Fait", en: "To do · Doing · Done" },
-    icon: ListChecks,
-    side: "right",
-    top: 56,
-    edge: 29,
-    dim: true,
-  },
-  {
-    text: { fr: "Trouver des transports", en: "Find transport" },
-    subtitle: { fr: "Vol · Train · Voiture", en: "Flight · Train · Car" },
-    icon: Bus,
-    side: "right",
-    top: 78,
-    edge: 34,
-    mobile: { corner: "bottom-right", offset: 64 },
-  },
+  { id: "activities", icon: Search, side: "right", top: 9, edge: 32, mobile: { corner: "top-right", offset: 64 } },
+  { id: "accommodation", icon: BedDouble, side: "right", top: 34, edge: 30, dim: true },
+  { id: "tasks", icon: ListChecks, side: "right", top: 56, edge: 29, dim: true },
+  { id: "transport", icon: Bus, side: "right", top: 78, edge: 34, mobile: { corner: "bottom-right", offset: 64 } },
 ];
+
+type BubbleText = { text: string; subtitle: string };
 
 interface FeatureImageSectionProps {
   locale?: string;
 }
 
-export default function FeatureImageSection({ locale = "en" }: FeatureImageSectionProps) {
+export default async function FeatureImageSection({ locale = "en" }: FeatureImageSectionProps) {
   const lang: Lang = locale === "fr" ? "fr" : "en";
-  const { title } = CONTENT[lang];
+  const t = await getTranslations({ locale: lang, namespace: "featureImageSection" });
+  const title = t("title");
+  const bubbleTexts = t.raw("bubbles") as BubbleText[];
 
   return (
     <div className="px-4 lg:px-8 pt-8 lg:pt-12">
@@ -169,22 +104,34 @@ export default function FeatureImageSection({ locale = "en" }: FeatureImageSecti
           </div>
 
           {/* Bubbles — desktop: floating around the phone */}
-          {BUBBLES.map((b) => (
-            <FeatureBubble key={b.text.en} bubble={b} lang={lang} />
+          {BUBBLES.map((b, i) => (
+            <FeatureBubble
+              key={b.id}
+              bubble={b}
+              text={bubbleTexts[i].text}
+              subtitle={bubbleTexts[i].subtitle}
+            />
           ))}
 
           {/* Bubbles — mobile: a few floating in the corners, overlapping the
               phone for the same layered effect as desktop. */}
-          {BUBBLES.filter((b) => b.mobile).map((b) => (
-            <MobileFeatureBubble key={b.text.en} bubble={b} lang={lang} />
-          ))}
+          {BUBBLES.map((b, i) =>
+            b.mobile ? (
+              <MobileFeatureBubble
+                key={b.id}
+                bubble={b}
+                text={bubbleTexts[i].text}
+                subtitle={bubbleTexts[i].subtitle}
+              />
+            ) : null
+          )}
         </div>
       </div>
     </div>
   );
 }
 
-function FeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
+function FeatureBubble({ bubble, text, subtitle }: { bubble: Bubble; text: string; subtitle: string }) {
   const Icon = bubble.icon;
   // Left bubbles pin their RIGHT edge near the phone; right bubbles their LEFT
   // edge. Both sit at `100 - edge`% so they tuck the same amount behind the phone.
@@ -213,17 +160,17 @@ function FeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
       </span>
       <span className="flex flex-col">
         <span className="font-karla text-[13px] font-bold leading-tight text-[#001E13] whitespace-nowrap">
-          {bubble.text[lang]}
+          {text}
         </span>
         <span className="font-karla text-[11px] leading-tight text-gray-400 whitespace-nowrap">
-          {bubble.subtitle[lang]}
+          {subtitle}
         </span>
       </span>
     </div>
   );
 }
 
-function MobileFeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
+function MobileFeatureBubble({ bubble, text, subtitle }: { bubble: Bubble; text: string; subtitle: string }) {
   const Icon = bubble.icon;
   const corner = bubble.mobile!.corner;
   const isLeft = corner === "top-left" || corner === "bottom-left";
@@ -256,10 +203,10 @@ function MobileFeatureBubble({ bubble, lang }: { bubble: Bubble; lang: Lang }) {
       </span>
       <span className="flex min-w-0 flex-col">
         <span className="line-clamp-2 font-karla text-xs font-bold leading-tight text-[#001E13]">
-          {bubble.text[lang]}
+          {text}
         </span>
         <span className="truncate font-karla text-[10px] leading-tight text-gray-400">
-          {bubble.subtitle[lang]}
+          {subtitle}
         </span>
       </span>
     </div>

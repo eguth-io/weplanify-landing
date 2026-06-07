@@ -1,0 +1,14 @@
+{
+  "copy": {
+    "placeholder": "Ich will an einem mexikanischen Strand chillen, mit Ruinen in der Nähe …",
+    "submit": "Planen",
+    "submitting": "Wird erstellt …",
+    "cta": "Speichern & Freunde einladen",
+    "retry": "Noch ein Vorschlag",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "errorRateLimit": "Zu viele Versuche. Bitte warte eine Minute.",
+    "overline": "Erzähl uns von deiner Traumreise",
+    "caption": "Wir erstellen in Sekunden eine Vorschau deines Reiseziels – kostenlos, ohne Anmeldung.",
+    "whatAbout": "Wie wäre es mit …"
+  }
+}

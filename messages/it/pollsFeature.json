@@ -1,0 +1,50 @@
+{
+  "copy": {
+    "active": "Attivo",
+    "votes": "voti",
+    "endsIn": "Termina",
+    "endTime": "tra 2h",
+    "livePollQuestion": "Dove mangiamo stasera? 🍽️",
+    "livePollOptions": [
+      { "option": "🍕 Pizza", "votes": 4, "voters": ["👩‍🎨", "🧔", "👱‍♀️", "🧑‍💻"] },
+      { "option": "🍣 Sushi", "votes": 3, "voters": ["😊", "👨‍🦱", "🧑‍🦰"] },
+      { "option": "🍔 Burger", "votes": 2, "voters": ["👩‍🦳", "🧑‍🎤"] }
+    ],
+    "livePollTotal": 9,
+    "multiPollsTitle": "Dalla destinazione al ristorante: decidete tutto insieme",
+    "multiPollsSubtitle": "Destinazioni, attività, ristoranti, date… si può decidere tutto insieme.",
+    "completedLabel": "completato",
+    "freeNoCard": "Registrazione gratuita. Nessuna carta di credito richiesta.",
+    "showcasePolls": [
+      { "question": "Quale destinazione?", "options": ["🇪🇸 Spagna", "🇵🇹 Portogallo", "🇮🇹 Italia"], "winner": "🇵🇹 Portogallo", "votes": 12 },
+      { "question": "Attività del giorno 3?", "options": ["🏄 Surf", "🚶 Escursione", "🍷 Degustazione di vini"], "winner": "🏄 Surf", "votes": 8 },
+      { "question": "Hotel o Airbnb?", "options": ["🏨 Hotel", "🏠 Airbnb"], "winner": "🏠 Airbnb", "votes": 10 }
+    ]
+  },
+  "page": {
+    "heroBadge": "Sondaggi in diretta",
+    "heroTitle": "Decidete insieme",
+    "heroTitleHighlight": "in 2 minuti",
+    "heroSubtitle": "Pizza o sushi? Hotel o Airbnb? Un voto veloce sostituisce 47 messaggi WhatsApp.",
+    "socialProofText": "+50.000 decisioni prese questo mese",
+    "heroCta": "Crea il mio primo sondaggio",
+    "heroCtaSubtext": "Gratis - Pronto in 30 secondi",
+    "features": [
+      { "icon": "⚡", "title": "Tempo reale", "description": "I voti compaiono all'istante per tutti" },
+      { "icon": "🔒", "title": "Anonimo o pubblico", "description": "Scegli se i voti sono visibili o nascosti" },
+      { "icon": "🔔", "title": "Promemoria", "description": "Sollecita automaticamente chi non ha ancora votato" }
+    ],
+    "faqItems": [
+      { "question": "Come creo un sondaggio per il mio gruppo di viaggio?", "answer": "In pochi secondi! Scegli un tipo di sondaggio (destinazione, ristorante, attività, data), aggiungi le tue opzioni e condividi." },
+      { "question": "I voti sono anonimi?", "answer": "Decidi tu! Puoi creare sondaggi pubblici o anonimi." },
+      { "question": "Posso impostare una scadenza per il voto?", "answer": "Sì, puoi programmare una data e un'ora di chiusura. Chi non vota riceve promemoria automatici." },
+      { "question": "Cosa succede in caso di parità?", "answer": "Diverse opzioni: un ballottaggio tra le opzioni a pari merito, lasciar decidere al creatore o usare la selezione casuale." },
+      { "question": "Posso votare per più opzioni?", "answer": "Sì! Puoi consentire voti multipli o un voto singolo." }
+    ],
+    "ctaTitle": "Basta dibattiti infiniti",
+    "ctaSubtitle": "Lasciate decidere il gruppo, democraticamente",
+    "ctaButton": "Chiudi il dibattito ora",
+    "seoTitle": "Sondaggi di Viaggio - Decisioni di Gruppo | Weplanify",
+    "seoDescription": "Prendi decisioni di gruppo facilmente con i sondaggi Weplanify. Vota in tempo reale per scegliere destinazioni, attività e ristoranti."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Familienreise planen – Urlaubsplaner für Familien | WePlanify",
+    "description": "Plane deinen nächsten Familienurlaub mit WePlanify. Koordiniert euch über Generationen hinweg, verwaltet geteilte Budgets, stimmt über Aktivitäten ab und baut eine Reiseroute, mit der alle einverstanden sind."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "Familienreise"
+  },
+  "hero": {
+    "tag": "Familienreisen",
+    "title": "Plane eine Familienreise, die wirklich allen gefällt",
+    "intro": "Von den Großeltern bis zu den Kleinkindern bedeuten Familienreisen unterschiedliche Bedürfnisse, unterschiedliche Budgets und unterschiedliche Vorstellungen von Spaß. So bekommst du es hin, ohne den Verstand zu verlieren.",
+    "readTime": "8 Min. Lesezeit"
+  },
+  "challenge": {
+    "p1": "Familienreisen sind die schönste Art zu reisen – und die am schwersten zu organisierende. Papa will wandern, Mama will an den Strand, die Teenager wollen WLAN, die Kinder wollen einen Wasserpark, und Oma will einfach nur alle beim Abendessen am selben Tisch. Einen Plan zu finden, der über drei Generationen funktioniert, ohne Tabellen und Gruppenchat-Eklat? Das ist die eigentliche Urlaubsherausforderung.",
+    "p2": "Dann ist da das Geld. Unterkunft für 10+ Personen. Aktivitäten für jedes Alter. Mahlzeiten, die alle zufriedenstellen, vom wählerischen Fünfjährigen bis zur veganen Tante. Wenn mehrere Haushalte die Kosten teilen, wird das Verfolgen, wer was bezahlt hat, zum Vollzeitjob – und niemand will derjenige sein, der Onkel Marc nach seinem Anteil am Airbnb fragt.",
+    "p3": "WePlanify gibt deiner Familie einen gemeinsamen Ort zum Planen, Abstimmen, Budgetieren und Packen – damit der Organisator nicht ausbrennt, bevor die Reise überhaupt losgeht."
+  },
+  "toc": {
+    "title": "Auf dieser Seite",
+    "byAge": "Planung nach Altersgruppe",
+    "howHelps": "Wie WePlanify hilft",
+    "destination": "Das richtige Reiseziel wählen",
+    "budget": "Eine Reise über mehrere Generationen budgetieren",
+    "faq": "Häufig gestellte Fragen"
+  },
+  "byAge": {
+    "title": "Planung nach Altersgruppe",
+    "items": [
+      { "age": "0–4", "title": "Babys & Kleinkinder", "text": "Haltet es nah, haltet es flexibel. Kurze Flüge oder Fahrten, Unterkunft mit Küchenzugang und ein Zeitplan mit großzügigen Schlafpausen. Die Packliste ist entscheidend – geteilte Listen verhindern, dass ihr genau das eine Ding vergesst, das ihr wirklich braucht.", "color": "bg-[#61DBD5]" },
+      { "age": "5–12", "title": "Kinder", "text": "Das goldene Alter für Familienreisen. Sie sind neugierig, anpassungsfähig und über alles begeistert. Mischt strukturierte Aktivitäten (Wasserparks, Museen, Bootstouren) mit freier Erkundung. Nutzt Abstimmungen, damit sie über Aktivitäten mitentscheiden können – sie fühlen sich einbezogen und ihr vermeidet Wutanfälle.", "color": "bg-[#EEF899]" },
+      { "age": "13–17", "title": "Teenager", "text": "Sie wollen Unabhängigkeit, brauchen aber trotzdem Struktur. Baut freie Zeit in die Reiseroute ein, in der sie auf eigene Faust erkunden können. Gebt ihnen ein Mitspracherecht bei der Planung – wenn sie das Restaurant mit ausgewählt haben, beschweren sie sich deutlich seltener darüber.", "color": "bg-[#F6391A]" },
+      { "age": "60+", "title": "Großeltern", "text": "Komfort, Tempo und Barrierefreiheit zählen. Vermeidet überfüllte Tage. Baut neben Gruppenaktivitäten auch erholsame Optionen ein – ein Vormittag in einem Café, während andere wandern, ist völlig in Ordnung. Die komplette Reiseroute im Voraus sichtbar zu haben hilft ihnen, sich mental und körperlich vorzubereiten.", "color": "bg-[#61DBD5]" }
+    ]
+  },
+  "howHelps": {
+    "title": "Wie WePlanify Familien hilft",
+    "items": [
+      { "title": "Jeder bekommt eine Stimme", "desc": "Reiseziel, Aktivitäten, Restaurants – erstellt Abstimmungen und lasst jedes Familienmitglied (ja, sogar die Kinder) mitreden. Die Ergebnisse sind sofort und endgültig. Schluss mit endlosen Debatten am Esstisch.", "link": "/features/polls" },
+      { "title": "Eine geteilte Reiseroute", "desc": "Baut den Tag-für-Tag-Plan gemeinsam. Markiert Aktivitäten nach Alterseignung, damit alle wissen, was für die ganze Familie ist und was optional. Änderungen synchronisieren in Echtzeit – keine veralteten PDFs.", "link": "/features/planning" },
+      { "title": "Budget ohne Unbehagen", "desc": "Verfolge gemeinsame Ausgaben über Haushalte hinweg. Erfasse, wer was bezahlt hat, teile die Kosten, wie ihr wollt, und seht den Saldo in Echtzeit. Das Geld-Gespräch findet einmal statt, nicht zwanzigmal.", "link": "/features/budget" },
+      { "title": "Abgestimmtes Packen", "desc": "Erstellt geteilte Packlisten, damit drei Familien nicht mit fünf Flaschen Sonnencreme und ohne Erste-Hilfe-Set auftauchen. Weist Gruppendinge bestimmten Personen zu und hakt sie beim Packen ab.", "link": "/features/packing" }
+    ]
+  },
+  "pullQuote": "Die besten Familienurlaube sind nicht die, bei denen alles perfekt läuft – es sind die, bei denen sich alle in die Planung einbezogen fühlten.",
+  "destination": {
+    "title": "Das richtige Reiseziel für Familien wählen",
+    "p1": "Ein Reiseziel auszuwählen, wenn man als Paar reist, ist eine Sache. Eines auszuwählen, das für ein Baby, zwei Teenager und Großeltern mit schlechten Knien funktioniert, ist ein völlig anderes Spiel. Der erste Filter sollte immer praktisch sein: Wie lang ist der Flug? Alles über vier Stunden mit einem Kleinkind verdient ernsthafte Überlegung. Wenn die Hälfte der Gruppe eingeschränkt mobil ist, mag eine Stadt auf Hügeln oder mit Kopfsteinpflaster auf Fotos charmant aussehen, sich aber am zweiten Tag elend anfühlen.",
+    "p2": "Der Zugang zu medizinischer Versorgung ist wichtiger, als die meisten denken. Mit kleinen Kindern oder älteren Verwandten zu reisen bedeutet, dass du wissen musst, wo das nächste Krankenhaus ist und ob deine Versicherung das Land abdeckt. Reiseziele mit guter Tourismus-Infrastruktur – Portugal, Japan, Kroatien – schneiden bei Familienfreundlichkeit und medizinischer Erreichbarkeit meist gut ab.",
+    "p3": "Denkt früh an die Unterkunft. Familien brauchen Platz – nicht nur Zimmer, sondern Gemeinschaftsräume, in denen sich die Gruppe versammeln kann, ohne aufeinanderzusitzen. Eine Villa mit Pool, ein großes Ferienhaus oder aneinandergrenzende Apartments funktionieren oft besser als ein Block Hotelzimmer. Sucht nach Orten mit Küchenzugang: drei Mahlzeiten am Tag mit Kindern auswärts zu essen wird schnell teuer und anstrengend."
+  },
+  "budget": {
+    "title": "Eine Reise über mehrere Generationen budgetieren",
+    "p1": "Geld ist der Punkt, an dem Familienreisen unangenehm werden. Großeltern wollen vielleicht ein schönes Hotel mit Frühstück. Eltern achten auf jeden Euro, weil sie gerade Schulgeld bezahlt haben. Junge Paare ohne Kinder verstehen nicht, warum die Villa so viel kosten muss. Und niemand will derjenige sein, der das Budget anspricht – also schwelt es, bis jemand passiv-aggressiv den falschen Betrag per Venmo schickt. Die Lösung ist einfach: Sprecht über Geld, bevor ihr irgendetwas bucht, und nutzt ein gemeinsames Tool, damit die Zahlen für alle sichtbar sind."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      { "q": "Was ist das beste Alter, um mit Familien-Gruppenreisen anzufangen?", "a": "Jedes Alter funktioniert, aber die Logistik ändert sich deutlich. Unter 5 Jahren haltet die Reiseziele nah und die Zeitpläne flexibel. Das Alter von 5 bis 12 ist der ideale Bereich für Abenteuer – Kinder sind neugierig und anpassungsfähig. Teenager bevorzugen mehr Unabhängigkeit, also baut freie Zeit ein. Mit WePlanify kannst du die Reiseroute für jede Altersgruppe innerhalb derselben Reise unterschiedlich strukturieren." },
+      { "q": "Wie geht man mit unterschiedlichen Budgets innerhalb einer Familie um?", "a": "Reisen mit der erweiterten Familie bedeuten oft sehr unterschiedliche finanzielle Situationen. Der Schlüssel ist Transparenz. Nutze den Budget-Tracker von WePlanify, um gemeinsame Kosten (Unterkunft, Transport) von optionalen Aktivitäten zu trennen. Manche Familien legen eine gemeinsame Kasse für Gruppenmahlzeiten an und lassen jeden Haushalt seine eigenen Extras übernehmen." },
+      { "q": "Wie weit im Voraus sollten wir einen Familienurlaub planen?", "a": "Für Inlandsreisen reichen meist 2–3 Monate. Internationale Reisen mit der erweiterten Familie brauchen mindestens 4–6 Monate – alle brauchen Zeit, um Urlaub zu beantragen, zu budgetieren und Pässe zu klären. Starte früh eine WePlanify-Reise, auch wenn die Details noch nicht feststehen. Ein gemeinsamer Ort hält den Schwung aufrecht." },
+      { "q": "Wie wählen wir ein Reiseziel, das für alle Altersgruppen passt?", "a": "Nutzt Abstimmungen. Wirklich. Lass jeden Haushalt zwei Optionen vorschlagen und stimmt dann ab. Die Gruppenabstimmungen von WePlanify nehmen den sozialen Druck aus persönlichen Debatten. Konzentriert euch auf Reiseziele mit Vielfalt – Orte, an denen Großeltern entspannen können, während Kinder erkunden und Eltern beides bekommen." },
+      { "q": "Was, wenn Familienmitglieder sich bei der Reiseroute uneinig sind?", "a": "Baut die 70/30-Regel in euren Plan ein: 70 % strukturierte Gruppenaktivitäten, 30 % freie Zeit, in der jede Untergruppe ihr eigenes Ding macht. Nicht jeder Moment muss gemeinsam sein. Ein Vormittag am Pool für die Kinder, während die Großeltern ein Museum besuchen, ist völlig in Ordnung – und oft besser für alle." },
+      { "q": "Kann WePlanify Familienreisen mit mehreren Haushalten bewältigen?", "a": "Ja. Jedes Familienmitglied tritt über einen geteilten Link derselben Reise bei. Alle können die Reiseroute sehen, in Abstimmungen abstimmen und gemeinsame Ausgaben verfolgen. Du kannst die Reiseroute nach Tagen organisieren, mit klar gekennzeichneten Gruppenaktivitäten und Untergruppen-Optionen." }
+    ]
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "tripWithFriends": { "title": "Reise mit Freunden", "desc": "Plane mühelos eine Gruppenreise mit Freunden.", "cta": "Weiterlesen →" },
+    "roadTrip": { "title": "Roadtrip", "desc": "Plane einen Gruppen-Roadtrip mit gemeinsamen Routen und Budgets.", "cta": "Weiterlesen →" },
+    "groupGuide": { "title": "Guide für Gruppenreisen", "desc": "Der komplette Schritt-für-Schritt-Guide.", "cta": "Guide lesen →" },
+    "bestApps": { "title": "Beste Apps für Gruppenreisen", "desc": "Die besten Tools, um Reisen gemeinsam zu planen.", "cta": "Artikel lesen →" }
+  },
+  "cta": {
+    "title": "Eure Familienreise beginnt hier",
+    "subtitle": "Bringt alle auf dieselbe Seite – im wahrsten Sinne. Plant euren nächsten Familienurlaub gemeinsam.",
+    "button": "Jetzt planen"
+  },
+  "jsonld": {
+    "articleHeadline": "Plane eine Familienreise, die allen gefällt"
+  }
+}

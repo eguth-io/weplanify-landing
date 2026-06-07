@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "So planst du einen Roadtrip mit Freunden – Routenplaner für Gruppen | WePlanify",
+    "description": "Plane deinen Gruppen-Roadtrip mit WePlanify. Kollaborative Routenplanung, geteilte Spritkosten, abgestimmtes Packen und Gruppenabstimmungen für jeden Stopp unterwegs."
+  },
+  "breadcrumb": {
+    "home": "Startseite"
+  },
+  "hero": {
+    "title": "Die offene Straße, deine Crew, null Stress",
+    "readTime": "7 Min. Lesezeit"
+  },
+  "problem": {
+    "p1": "Roadtrips klingen einfach – einfach ins Auto steigen und losfahren. Aber in einer Gruppe vervielfacht sich jede Entscheidung. Welche Route? Wie viele Stopps? Wer fährt wann? Wo schlafen wir? Wer zahlt das Benzin? Wer bringt die Kühlbox mit? Bis du fünf Personen über sechs Tage koordiniert hast, hast du 300 Nachrichten verschickt und niemand weiß genau, was der Plan ist.",
+    "p2": "WePlanify verwandelt das Chaos in eine gemeinsame Roadmap – ein Ort für die Route, das Budget und die Packliste."
+  },
+  "toc": {
+    "title": "Auf dieser Seite",
+    "anatomy": "Anatomie eines Gruppen-Roadtrips",
+    "planning": "Deine Route Schritt für Schritt planen",
+    "budget": "Budget-Tipps für Gruppen-Roadtrips",
+    "faq": "Häufig gestellte Fragen"
+  },
+  "anatomy": {
+    "title": "Anatomie eines Gruppen-Roadtrips",
+    "subtitle": "Jeder Roadtrip hat dieselben Bausteine. So setzt du jeden davon mit einer Gruppe richtig um.",
+    "items": [
+      { "stop": "Die Route", "desc": "Stimmt zuerst über die große Entscheidung ab: landschaftlich reizvoll oder schnell? Küste oder Inland? Erstelle eine Abstimmung, klärt es und baut die Route in einer geteilten Reiseroute, in der alle Stopp-Vorschläge einbringen können. Legt die Übernachtungsorte früh fest – die Strecke dazwischen bleibt flexibel.", "link": "/features/polls" },
+      { "stop": "Die Stopps", "desc": "Hier werden Roadtrips unvergesslich. Lass alle ihre Muss-Stopps vorschlagen und kuratiert sie dann gemeinsam. Die 70/30-Regel funktioniert hier perfekt: 70 % geplante Stopps, 30 % spontan. Füge jeden Stopp mit Adresse und Notizen zur geteilten Reiseroute hinzu, damit der Fahrer nicht am Handy herumfummelt.", "link": "/features/planning" },
+      { "stop": "Das Geld", "desc": "Benzin, Maut, Essen, Unterkunft, Aktivitäten. Auf einem mehrtägigen Roadtrip summieren sich die Ausgaben schnell und über viele Kategorien hinweg. Erfasse jede Ausgabe in Echtzeit – wer hat gezahlt, wie viel, wofür. WePlanify berechnet die Salden automatisch, damit ihr einmal am Ende abrechnet, nicht nach jeder Tankstelle.", "link": "/features/budget" },
+      { "stop": "Das Auto", "desc": "Fünf Personen, ein Kofferraum. Platz ist die ultimative Einschränkung. Eine geteilte Packliste mit zugewiesenen Dingen verhindert den klassischen Roadtrip-Fehler: drei Bluetooth-Lautsprecher, kein Flaschenöffner und null Starthilfekabel. Markiere, was in welches Auto kommt, wenn ihr mit mehreren Fahrzeugen unterwegs seid.", "link": "/features/packing" }
+    ]
+  },
+  "checklist": {
+    "title": "Checkliste für Roadtrip-Essentials",
+    "subtitle": "Die Dinge, die Gruppen immer vergessen. Weist jedes einer Person in eurer WePlanify-Packliste zu.",
+    "items": [
+      "Handyhalterungen & Ladegeräte für den Fahrer",
+      "Aux-Kabel oder Bluetooth-FM-Transmitter",
+      "Kühlbox mit Kühlakkus",
+      "Erste-Hilfe-Set",
+      "Starthilfekabel / tragbarer Starthilfe-Booster",
+      "Papierkarten (für Funklöcher)",
+      "Wiederverwendbare Wasserflaschen",
+      "Müllbeutel fürs Auto",
+      "Decken & Kissen für die Mitfahrer",
+      "Gemeinsamer Snack-Vorrat",
+      "Reifendruckmesser",
+      "Tragbare Powerbank fürs Handy"
+    ]
+  },
+  "pullQuote": "Bei den besten Roadtrips geht es nicht ums Ziel – es geht um das, was zwischen den Stopps passiert. Sorg dafür, dass die Planung die Stimmung nicht killt, bevor ihr überhaupt losfahrt.",
+  "planning": {
+    "title": "Deine Route planen: Schritt für Schritt",
+    "p1": "Beginne mit den Ankerpunkten – den Orten, die ihr unbedingt sehen wollt – und baut die Route um sie herum. Bevor ihr eine Linie auf die Karte zeichnet, einigt euch auf den Rhythmus der Reise: Wie viele Stunden Fahrt pro Tag fühlen sich für eure Gruppe richtig an? Vier bis fünf Stunden sind ein realistisches Maximum, bevor die Müdigkeit einsetzt. Sobald ihr die Ankerpunkte habt, verbindet sie mit Abschnitten, die Autobahn-Effizienz und landschaftlichen Reiz ausbalancieren.",
+    "p4": "Plant Pufferzeit ein – mindestens eine Stunde Spielraum pro Tag. Roadtrips laufen nie genau nach Plan. Ein Bauernmarkt, von dem ihr nichts wusstet, ein Umweg wegen einer Baustelle, ein Restaurant, das jemand von der Autobahn aus entdeckt hat. Der Puffer ist das, was euch erlaubt, zu diesen Momenten Ja zu sagen, statt euch zu stressen, dass ihr im Verzug seid."
+  },
+  "budget": {
+    "title": "Budget-Tipps für Gruppen-Roadtrips",
+    "p2": "Wenn ihr ein Auto mietet, klärt vor der Abreise, wer in der Versicherung ist und wer als zusätzlicher Fahrer eingetragen ist. Mietwagenfirmen berechnen Gebühren pro Zusatzfahrer – rechnet das in die Aufteilung ein. Maut ist eine weitere versteckte Kostenfalle: Auf manchen Routen kann sie mit dem Spritbudget mithalten. Prüft Mautrechner für eure Route im Voraus und entscheidet als Gruppe, ob ihr die Mautstraße nehmt oder mit der langsameren Alternative Geld spart.",
+    "p3": "Bei der Unterkunft hält Abwechslung die Kosten überschaubar. Wechselt je nach Stopp zwischen Campingplätzen, Hostels und Airbnbs. Eine Drei-Zimmer-Unterkunft zu fünft zu teilen ist fast immer günstiger als einzelne Hotelzimmer und dient gleichzeitig als Treffpunkt. Erfasse jede gemeinsame Ausgabe sofort – bis zum Ende der Reise zu warten, um zu klären, wer wem was schuldet, ist ein Rezept für vergessene Beträge und unangenehme Gespräche."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      { "q": "Wie teilt man die Spritkosten auf einem Roadtrip fair auf?", "a": "Erfasse jeden Tankvorgang im geteilten Budget-Tracker von WePlanify – wer hat gezahlt, wie viel, welches Auto. Am Ende der Reise berechnet die App, wer wem was schuldet. Bei Trips mit mehreren Autos verfolgst du jedes Fahrzeug separat. Schluss mit dem Venmo-Ratespiel." },
+      { "q": "Wie viele Stopps sollte ein Roadtrip pro Tag haben?", "a": "Zwei bis drei bewusste Stopps pro Tag sind der ideale Mittelweg. Mehr, und ihr verbringt die ganze Reise mit Ein- und Aussteigen. Baut einen „Muss-Stopp“ und ein oder zwei flexible in die Reiseroute jedes Tages ein. Lasst Raum für spontane Entdeckungen." },
+      { "q": "Was, wenn wir unterschiedliche Fahrvorlieben haben?", "a": "Nutzt Abstimmungen, um die großen Routenfragen zu klären (Küste vs. Inland, schnelle Autobahnen vs. landschaftliche Routen). Für die täglichen Fahrdienste richtet ihr in der Reiseroute eine Rotation ein. Der geteilte Plan von WePlanify hält alle auf demselben Stand, wer wann fährt." },
+      { "q": "Wie koordiniert man das Packen für einen Roadtrip?", "a": "Der Platz im Auto ist begrenzt. Erstelle eine geteilte Packliste mit zwei Abschnitten: persönliche Dinge und gemeinsame Ausrüstung (Kühlbox, Campingausrüstung, Werkzeug, Erste-Hilfe-Set, Lautsprecher). Weist gemeinsame Dinge bestimmten Personen zu, damit ihr nicht mit drei Powerbanks und ohne Starthilfekabel dasteht." },
+      { "q": "Funktioniert WePlanify offline während eines Roadtrips?", "a": "WePlanify läuft im Browser auf jedem Gerät. Zwar brauchst du eine Internetverbindung, um Änderungen zu synchronisieren, aber du kannst wichtige Details (Adressen, Reservierungscodes) in den Reisenotizen speichern, bevor du in ein Funkloch fährst. Die meiste Zeit deiner Route wird Empfang haben." },
+      { "q": "Wie weit im Voraus sollten wir einen Roadtrip planen?", "a": "Zwei bis vier Wochen reichen für inländische Roadtrips meist aus. Bucht früh Unterkünfte für die wichtigsten Übernachtungsstopps – beliebte Orte sind schnell ausgebucht, besonders an Wochenenden. Lasst die Route flexibel, aber legt die Schlafplätze fest. Starte eine WePlanify-Reise, sobald die Idee entsteht." }
+    ]
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "tripWithFriends": { "title": "Reise mit Freunden", "desc": "Plane mühelos jede Gruppenreise.", "cta": "Weiterlesen →" },
+    "groupGuide": { "title": "Guide für Gruppenreisen", "desc": "Der komplette Schritt-für-Schritt-Guide.", "cta": "Guide lesen →" },
+    "bestApps": { "title": "Beste Apps für Gruppenreisen", "desc": "Unser Vergleich der besten Tools für Gruppenreisen.", "cta": "Artikel lesen →" },
+    "familyTrip": { "title": "Familienreise", "desc": "Plane einen Familienurlaub über mehrere Generationen.", "cta": "Weiterlesen →" }
+  },
+  "cta": {
+    "title": "Geht gemeinsam auf die Straße",
+    "subtitle": "Plant die Route, teilt die Kosten, packt das Auto – alles an einem Ort.",
+    "button": "Jetzt planen"
+  },
+  "jsonld": {
+    "articleHeadline": "Plane einen Roadtrip mit deiner Crew",
+    "howToName": "So planst du einen Gruppen-Roadtrip",
+    "howToDescription": "Baut die Route, einigt euch auf den Rhythmus, klärt Meinungsverschiedenheiten mit Abstimmungen, teilt das Fahren und lasst Raum für Spontaneität.",
+    "howToSteps": [
+      { "name": "Anker-Stopps wählen und den Tagesrhythmus festlegen", "text": "Beginne mit den Muss-Stopps und baut die Route um sie herum. Einigt euch auf maximal 4–5 Stunden Fahrt pro Tag, bevor die Müdigkeit einsetzt, und verbindet die Ankerpunkte mit einer Mischung aus Autobahn-Effizienz und landschaftlichem Reiz." },
+      { "name": "Landschaftlich-vs.-schnell-Debatten mit einer kurzen Abstimmung klären", "text": "Wenn die Gruppe sich bei Stopps oder der Fahrtroute uneinig ist, startet eine Abstimmung. Jedes Mitglied reiht seine Top drei – das Ergebnis gewinnt ohne Drama. Besonders nützlich für die Küstenumweg-vs.-Autobahn-Debatte." },
+      { "name": "Fahrschichten und Pausen im Voraus zuteilen", "text": "Teilt Fahrschichten im Voraus zu, damit nicht jeden Morgen dieselbe Person am Steuer sitzt. Wechselt alle 2–3 Stunden und plant echte 20-minütige Pausen an Aussichtspunkten ein, nicht 5-minütige Stopps an Tankstellen." },
+      { "name": "Mindestens eine Stunde Puffer pro Tag lassen", "text": "Roadtrips laufen nie genau nach Plan. Baut mindestens eine Stunde Spielraum in jeden Tag ein, damit ihr Ja sagen könnt zum ungeplanten Markt, zum spontanen Umweg, zum von der Autobahn entdeckten Restaurant." }
+    ]
+  }
+}

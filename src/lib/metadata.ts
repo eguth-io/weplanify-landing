@@ -2,8 +2,31 @@ import { Metadata } from "next";
 import { client } from "@/sanity/lib/client";
 import { seoSettingsQuery } from "@/sanity/lib/query";
 import { SeoSettings } from "@/sanity/lib/type";
+import { routing } from "@/i18n/routing";
 
 const SITE_URL = "https://www.weplanify.com";
+
+// Open Graph locale codes per supported locale.
+const OG_LOCALES: Record<string, string> = {
+  en: "en_US",
+  es: "es_ES",
+  fr: "fr_FR",
+  it: "it_IT",
+  zh: "zh_CN",
+  de: "de_DE",
+  pt: "pt_PT",
+  pl: "pl_PL",
+};
+
+// Builds the hreflang `languages` map for every supported locale + x-default (en).
+function hreflangLanguages(baseUrl: string, pathname: string): Record<string, string> {
+  const languages: Record<string, string> = {};
+  for (const locale of routing.locales) {
+    languages[locale] = `${baseUrl}/${locale}${pathname}`;
+  }
+  languages["x-default"] = `${baseUrl}/${routing.defaultLocale}${pathname}`;
+  return languages;
+}
 
 const localizedDefaults: Record<string, { title: string; description: string }> = {
   en: {
@@ -15,6 +38,36 @@ const localizedDefaults: Record<string, { title: string; description: string }> 
     title: "WePlanify — L'appli gratuite pour planifier un voyage de groupe",
     description:
       "L'appli collaborative pour vos voyages entre amis : itinéraire partagé, sondages, budget commun, listes de bagages. Gratuite, en français.",
+  },
+  es: {
+    title: "WePlanify — App gratuita para planificar viajes en grupo",
+    description:
+      "La app colaborativa para viajes en grupo: itinerario compartido, encuestas, presupuesto común y listas de equipaje. Gratis, pensada para viajar con amigos.",
+  },
+  it: {
+    title: "WePlanify — App gratuita per organizzare viaggi di gruppo",
+    description:
+      "L'app collaborativa per i viaggi di gruppo: itinerario condiviso, sondaggi, budget comune e liste bagagli. Gratis, pensata per viaggiare con gli amici.",
+  },
+  zh: {
+    title: "WePlanify — 免费的团队旅行规划应用",
+    description:
+      "协作式团队旅行规划应用：共享行程、群组投票、共享预算和打包清单。免费，专为和朋友出行打造。",
+  },
+  de: {
+    title: "WePlanify — Kostenlose App zur Planung von Gruppenreisen",
+    description:
+      "Die kollaborative App für Gruppenreisen: gemeinsamer Reiseplan, Abstimmungen, geteiltes Budget und Packlisten. Kostenlos, gemacht für Reisen mit Freunden.",
+  },
+  pt: {
+    title: "WePlanify — App gratuita para planear viagens em grupo",
+    description:
+      "A app colaborativa para viagens em grupo: itinerário partilhado, sondagens, orçamento comum e listas de bagagem. Grátis, feita para viajar com amigos.",
+  },
+  pl: {
+    title: "WePlanify — Darmowa aplikacja do planowania wyjazdów grupowych",
+    description:
+      "Wspólna aplikacja do planowania wyjazdów grupowych: wspólny plan podróży, ankiety, wspólny budżet i listy pakowania. Za darmo, stworzona na wyjazdy ze znajomymi.",
   },
 };
 
@@ -65,7 +118,7 @@ export async function generateMetadataFromSanity(
       // Open Graph
       openGraph: {
         type: seoSettings.ogType || "website",
-        locale: locale === "fr" ? "fr_FR" : "en_US",
+        locale: OG_LOCALES[locale] ?? OG_LOCALES.en,
         url: currentUrl,
         siteName: seoSettings.siteName || "WePlanify",
         title,
@@ -111,11 +164,7 @@ export async function generateMetadataFromSanity(
       // Hreflang + Canonical
       alternates: {
         canonical: currentUrl,
-        languages: {
-          en: `${baseUrl}/en${pathname}`,
-          fr: `${baseUrl}/fr${pathname}`,
-          "x-default": `${baseUrl}/en${pathname}`,
-        },
+        languages: hreflangLanguages(baseUrl, pathname),
       },
     };
 
@@ -141,7 +190,7 @@ function getDefaultMetadata(locale: string = "en", pathname: string = ""): Metad
     description: localized.description,
     openGraph: {
       type: "website",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: OG_LOCALES[locale] ?? OG_LOCALES.en,
       url: currentUrl,
       siteName: "WePlanify",
       title: localized.title,
@@ -154,11 +203,7 @@ function getDefaultMetadata(locale: string = "en", pathname: string = ""): Metad
     },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: `${SITE_URL}/en${pathname}`,
-        fr: `${SITE_URL}/fr${pathname}`,
-        "x-default": `${SITE_URL}/en${pathname}`,
-      },
+      languages: hreflangLanguages(SITE_URL, pathname),
     },
   };
 }

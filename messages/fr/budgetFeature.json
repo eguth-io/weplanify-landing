@@ -1,0 +1,152 @@
+{
+  "copy": {
+    "paidBy": "Payé par",
+    "toReceive": "à recevoir",
+    "owes": "doit",
+    "total": "Total",
+    "pieLabels": {
+      "accommodation": "Hébergement",
+      "restaurants": "Restaurants",
+      "activities": "Activités",
+      "transport": "Transport"
+    },
+    "liveSplitTitle": "Essayez : ajoutez une dépense",
+    "liveSplitSubtitle": "Voyage à Lisbonne — 4 amis",
+    "quickAdd": "Ajout rapide",
+    "recentExpenses": "Dépenses récentes",
+    "whoOwesWhat": "Qui doit quoi",
+    "toSettleUp": "Pour solder les comptes",
+    "freeNoCard": "Inscription gratuite. Sans carte bancaire.",
+    "tryItHint": "👆 Cliquez sur un bouton pour ajouter une dépense et voir les soldes se mettre à jour.",
+    "participants": [
+      {
+        "name": "Marie",
+        "avatar": "👩‍🎨"
+      },
+      {
+        "name": "Thomas",
+        "avatar": "🧔"
+      },
+      {
+        "name": "Emma",
+        "avatar": "👱‍♀️"
+      },
+      {
+        "name": "Lucas",
+        "avatar": "🧑‍💻"
+      }
+    ],
+    "expenses": [
+      {
+        "name": "Restaurant",
+        "amount": 156,
+        "paidBy": "Marie"
+      },
+      {
+        "name": "Location voiture",
+        "amount": 320,
+        "paidBy": "Thomas"
+      },
+      {
+        "name": "Billets musée",
+        "amount": 84,
+        "paidBy": "Emma"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Dîner",
+        "amount": 80,
+        "emoji": "🍝"
+      },
+      {
+        "name": "Taxi",
+        "amount": 24,
+        "emoji": "🚕"
+      },
+      {
+        "name": "Visite guidée",
+        "amount": 60,
+        "emoji": "🎨"
+      },
+      {
+        "name": "Brunch",
+        "amount": 48,
+        "emoji": "🥐"
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Gestion des dépenses",
+    "heroTitle": "Partage des frais :",
+    "heroTitleHighlight": "qui doit combien à qui ?",
+    "heroSubtitle": "Marie a payé le resto, Thomas la location. Qui doit quoi à la fin du voyage ? Laissez l'appli faire les calculs pendant que vous profitez de la fête.",
+    "heroCta": "Gérer mes dépenses",
+    "heroCtaSubtext": "Gratuit, sans carte bancaire",
+    "socialProofText": "2 450€ gérés ce mois",
+    "featuresTitle": "Gestion intelligente des dépenses",
+    "ctaTitle": "Fini les disputes d'argent",
+    "ctaSubtitle": "Laissez l'appli gérer les comptes pour vous",
+    "ctaButton": "Calculer qui me doit de l'argent",
+    "seoTitle": "Budget Voyage - Partage des Frais de Groupe | Weplanify",
+    "seoDescription": "Gérez facilement les dépenses de voyage en groupe. Suivi des paiements, partage équitable automatique et remboursements simplifiés.",
+    "stats": [
+      {
+        "value": "2 450€",
+        "label": "Dépenses totales"
+      },
+      {
+        "value": "6",
+        "label": "Participants"
+      },
+      {
+        "value": "23",
+        "label": "Transactions"
+      }
+    ],
+    "features": [
+      {
+        "icon": "📸",
+        "title": "Scanner le ticket",
+        "description": "Photo = dépense ajoutée"
+      },
+      {
+        "icon": "💱",
+        "title": "Multi-devises",
+        "description": "Euros, dollars, yens..."
+      },
+      {
+        "icon": "🔄",
+        "title": "Remboursement malin",
+        "description": "Moins de transactions"
+      },
+      {
+        "icon": "📊",
+        "title": "Statistiques",
+        "description": "Visualisez vos dépenses"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Comment fonctionne le partage des frais sur Weplanify ?",
+        "answer": "Ajoutez chaque dépense en indiquant qui a payé et qui a participé. L'appli calcule automatiquement les soldes de chacun."
+      },
+      {
+        "question": "Peut-on gérer plusieurs devises ?",
+        "answer": "Oui, Weplanify supporte toutes les devises. L'appli convertit automatiquement au taux de change actuel."
+      },
+      {
+        "question": "Comment ajouter une dépense rapidement ?",
+        "answer": "Trois options : entrer le montant manuellement, prendre une photo du ticket, ou importer depuis votre banque."
+      },
+      {
+        "question": "Les remboursements sont-ils optimisés ?",
+        "answer": "Oui ! L'algorithme minimise le nombre de transactions nécessaires pour équilibrer les comptes."
+      },
+      {
+        "question": "Peut-on exclure certaines personnes d'une dépense ?",
+        "answer": "Absolument. Pour chaque dépense, sélectionnez uniquement les participants concernés."
+      }
+    ]
+  }
+}

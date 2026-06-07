@@ -1,0 +1,65 @@
+{
+  "breadcrumb": {
+    "home": "Strona główna",
+    "travelGuides": "Przewodniki podróżnicze"
+  },
+  "jsonld": {
+    "touristType": "Podróżnik wypoczynkowy"
+  },
+  "hero": {
+    "titleSuffix": "przewodnik podróżniczy",
+    "perDay": " /dzień",
+    "cta": "Zaplanuj moją podróż",
+    "ctaNote": "Zbuduj plan podróży ze swoją grupą — za darmo, w 30 sekund."
+  },
+  "quickFacts": {
+    "heading": "Szybkie fakty",
+    "capital": "Stolica",
+    "language": "Język",
+    "currency": "Waluta",
+    "timezone": "Strefa czasowa",
+    "plug": "Gniazdko",
+    "driving": "Ruch",
+    "driveLeft": "Lewostronny",
+    "driveRight": "Prawostronny",
+    "visa": "Wiza"
+  },
+  "bestSeason": {
+    "heading": "Kiedy jechać",
+    "subtitle": "Trzy okna, które warto znać: najlepsze, przejściowe i to, którego unikać.",
+    "best": "Najlepsze okno",
+    "shoulder": "Sezon przejściowy",
+    "avoid": "Unikaj"
+  },
+  "mustSee": {
+    "heading": "Miejsca obowiązkowe",
+    "subtitle": "Miejsca, które same uzasadniają wyjazd. Dotknij, by otworzyć w Mapach."
+  },
+  "specialties": {
+    "heading": "Specjały warte spróbowania",
+    "subtitle": "Jedzenie, napoje i doświadczenia, które ten kraj robi lepiej niż gdziekolwiek indziej."
+  },
+  "regions": {
+    "heading": "Regiony, które warto znać",
+    "subtitle": "By ułożyć wyjazd według tego, na ile masz czasu i czego szukasz."
+  },
+  "itineraries": {
+    "heading": "Proponowane plany podróży",
+    "subtitle": "Trzy długości, w zależności od czasu. Skopiuj dowolny z nich do WePlanify.",
+    "daysSuffix": "d"
+  },
+  "budget": {
+    "heading": "Budżet dzienny",
+    "subtitle": "Na osobę, bez lotów. Trzy poziomy komfortu.",
+    "perDay": "/dzień"
+  },
+  "tips": {
+    "heading": "Kulturowe nakazy i zakazy",
+    "subtitle": "Drobne gesty, które mają znaczenie — i te, które wszystkich wprawiają w zakłopotanie."
+  },
+  "cta": {
+    "heading": "Zaplanuj wyjazd do {country} ze swoją ekipą",
+    "body": "Przenieś ten przewodnik do WePlanify, zaproś grupę i zbudujcie wyjazd razem. Wspólna mapa, ankiety, wspólny budżet — wszystko za darmo.",
+    "button": "Zacznij planować — za darmo"
+  }
+}

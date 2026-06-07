@@ -1,0 +1,41 @@
+{
+  "affiliateTag": "Tocca a te — qual è il tuo viaggio dei sogni?",
+  "h1": "Qual è il tuo viaggio dei sogni?\nDescrivilo e lo trasformiamo in un piano vero.",
+  "placeholder": "Voglio rilassarmi su una spiaggia messicana con rovine vicino...",
+  "submit": "Immaginalo",
+  "submitting": "Stiamo preparando il tuo viaggio...",
+  "cta": "Salva e invita gli amici",
+  "ctaNote": "Gratis — senza carta. Invita il gruppo, votate le date, dividete il conto.",
+  "retry": "Un'altra proposta",
+  "errorGeneric": "Qualcosa è andato storto. Riprova.",
+  "errorRateLimit": "Troppi tentativi. Aspetta un minuto.",
+  "bubbles": [
+    "Qualcosa di caldo a marzo con 4 amici",
+    "Luna di miele senza folla",
+    "Giappone coi bambini, senza stancarsi",
+    "Addio al nubilato a Lisbona, max 3 giorni",
+    "Road trip per vedere le aurore",
+    "Cambio d'aria a novembre, non lontano"
+  ],
+  "loadingSteps": [
+    "Leggiamo il tuo sogno",
+    "Troviamo il posto perfetto",
+    "Fotografiamo il paesaggio",
+    "Scopriamo le specialità locali"
+  ],
+  "stickyTags": ["da vedere!", "che bello", "nella lista"],
+  "monthPicker": {
+    "label": "Quando?",
+    "unknown": "Non lo so"
+  },
+  "loading": {
+    "overline": "Stiamo cercando…",
+    "dreamLabel": "Il tuo sogno"
+  },
+  "whatAbout": "E se scoprissi…",
+  "connector": " — piuttosto ",
+  "itinerary": {
+    "label": "Un'idea di itinerario",
+    "nights": "{n, plural, one {# notte} other {# notti}}"
+  }
+}

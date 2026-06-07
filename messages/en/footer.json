@@ -1,0 +1,52 @@
+{
+  "copyright": "All rights reserved.",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfService": "Terms of Service",
+  "cookiePolicy": "Cookie Policy",
+  "columns": {
+    "features": {
+      "title": "Features",
+      "planning": "Planning (manual or AI)",
+      "polls": "Group polls",
+      "collaboration": "Collaboration",
+      "discovery": "Discovery",
+      "itinerary": "Itinerary",
+      "budget": "Shared budget",
+      "packing": "Packing lists",
+      "transport": "Transport",
+      "memories": "Memories"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "partnership": "Partnership"
+    },
+    "useCases": {
+      "title": "Use cases",
+      "friends": "Trip with friends",
+      "bachelorette": "Bachelorette / EVJF",
+      "birthday": "Birthday trip",
+      "family": "Family trip",
+      "roadTrip": "Road trip",
+      "teamBuilding": "Team building",
+      "school": "School trip"
+    },
+    "resources": {
+      "title": "Resources",
+      "guidePlanTrip": "Guide: Plan a Group Trip",
+      "destinations": "Destinations",
+      "travelGuides": "Travel guides",
+      "appComparison": "App comparison",
+      "events2026": "2026 events →"
+    }
+  },
+  "followUs": "Follow us",
+  "newsletter": {
+    "title": "Get weekly travel inspiration",
+    "description": "Tips, hidden gems, and travel hacks delivered to your inbox.",
+    "thanks": "Thanks for subscribing!",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe"
+  },
+  "chooseLanguage": "Choose language"
+}

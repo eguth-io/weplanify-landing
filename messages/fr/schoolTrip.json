@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Organiser un Voyage Scolaire — Planificateur Gratuit de Sortie Scolaire | WePlanify",
+    "description": "Organisez un voyage scolaire avec WePlanify : itinéraire partagé visible par les parents, effectifs et régimes alimentaires centralisés, sondages pour les activités, listes de bagages et stockage de documents. Gratuit pour les enseignants."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Voyage Scolaire"
+  },
+  "hero": {
+    "tag": "Voyage Scolaire",
+    "title": "Organiser un Voyage Scolaire Sans le Cauchemar Administratif",
+    "readTime": "8 min de lecture · Mis à jour le 5 mai 2026"
+  },
+  "problem": {
+    "p1": "Un voyage scolaire ressemble à un seul événement mais ce sont en fait trois workflows coordonnés qui tournent en parallèle : le voyage lui-même (transport, hébergement, activités), la communication aux parents (autorisations, régimes, mises à jour pendant le séjour), et la logistique des accompagnateurs (groupes, taux d'encadrement, qui est responsable de qui). Quand ces trois flux vivent dans des outils différents — papier ici, mail là, WhatsApp ailleurs — chaque changement doit être propagé trois fois. C'est là que ça fuit.",
+    "p2": "WePlanify met l'itinéraire, la liste des participants et les documents au même endroit — visible aux accompagnateurs et consultable par les parents sans inscription."
+  },
+  "toc": {
+    "title": "Sur cette page",
+    "approval": "Obtenir l'autorisation administrative",
+    "logistics": "Anatomie d'un voyage scolaire",
+    "parentComms": "Communication parents qui passe à l'échelle",
+    "safety": "Sécurité, taux d'encadrement et rôles des accompagnateurs",
+    "faq": "Questions fréquentes"
+  },
+  "approval": {
+    "title": "Obtenir l'Autorisation Administrative",
+    "p1": "La plupart des établissements demandent une autorisation formelle 6 à 12 semaines avant un séjour. Le chemin le plus rapide à travers la bureaucratie : un document d'une page qui répond aux questions de la direction avant qu'elles soient posées. Dates et destination. Objectifs pédagogiques rattachés au programme. Coût indicatif par élève. Taux d'encadrement adultes/élèves. Analyse des risques. Couverture assurance. Plus ce document est propre, plus la validation arrive vite."
+  },
+  "anatomy": {
+    "title": "Anatomie d'un Voyage Scolaire",
+    "subtitle": "Cinq pièces en mouvement. Réussissez chacune et le voyage roule tout seul.",
+    "learnMore": "En savoir plus →",
+    "items": [
+      { "stop": "La Liste", "desc": "Source unique de vérité pour qui part. Chaque participant porte ses restrictions alimentaires, allergies et contacts d'urgence sur son profil. Quand un parent signe l'autorisation, l'effectif se met à jour en direct — pas de tableur à réconcilier.", "link": "/features/collaboration" },
+      { "stop": "L'Itinéraire", "desc": "Jour par jour, heure par heure. Visible par chaque accompagnateur sur son téléphone et par les parents via le lien partagé. Quand le bus a 30 minutes de retard, vous poussez une mise à jour et tout le monde voit — pas de mail groupé, pas de groupe WhatsApp parents à gérer.", "link": "/features/planning" },
+      { "stop": "Les Décisions", "desc": "Certains choix sont imposés par le programme. D'autres sont ouverts : quel musée optionnel, quel resto pour le dîner de groupe, quelle activité du soir. Lancez un sondage avec les accompagnateurs (ou, selon l'âge, les élèves) et le résultat tranche sans débat.", "link": "/features/polls" },
+      { "stop": "L'Argent", "desc": "Budget par élève, acomptes, solde. Suivez les paiements dans le budget partagé pour toujours savoir qui a payé et qui ne l'a pas encore fait. Pour les options (argent souvenir, suppléments d'activité), laissez les parents cocher — le budget se recalcule automatiquement.", "link": "/features/budget" },
+      { "stop": "Les Bagages", "desc": "Une liste partagée en deux colonnes : obligatoire et recommandé. Les parents la voient dès que vous publiez, deux semaines avant le départ. Ils préparent en conséquence. Moins de mails paniqués la veille, moins d'élèves qui oublient leur passeport au point de rendez-vous.", "link": "/features/packing" }
+    ]
+  },
+  "parentComms": {
+    "title": "Communiquer avec les parents sans crouler sous les mails",
+    "p1": "Le mode d'échec classique de la communication parents : 30 familles, 30 mails avec des questions légèrement différentes, et vous rédigez 30 variantes de la même réponse. La solution n'est pas « envoyer moins de mails » mais « mettre la réponse là où les parents peuvent la trouver eux-mêmes ». Un itinéraire partagé qu'ils peuvent consulter à tout moment — avec le point de rendez-vous, le programme quotidien, l'adresse de l'hébergement et le contact d'urgence — élimine 80 % des questions avant qu'elles ne soient posées.",
+    "p2": "Pour les 20 % restants, l'astuce est la consolidation. Au lieu de trois mails séparés (autorisation, régime alimentaire, contact d'urgence), un seul formulaire couvre les trois à l'inscription. Les parents le remplissent une fois. Vous voyez les données en direct. Les questions du jour J vont dans un fil unique, pas dans votre boîte mail personnelle. Sur un séjour de 5 jours, vous économisez 4 à 6 heures de temps administratif."
+  },
+  "safety": {
+    "title": "Sécurité, Taux d'Encadrement et Rôles des Accompagnateurs",
+    "p1": "La plupart des autorités éducatives publient des taux d'encadrement obligatoires — typiquement 1:10 pour le primaire en séjour, 1:15 pour le secondaire. Confirmez le vôtre avant d'annoncer un effectif aux parents. Une fois l'équipe d'accompagnateurs constituée, assignez chacun à un sous-groupe d'élèves spécifique et rendez ces assignations visibles dans le voyage. Chaque accompagnateur voit alors sur son téléphone exactement quels élèves sont les siens, avec régimes et contacts d'urgence pré-chargés.",
+    "p2": "Les comptages à chaque transition (montée dans le bus, entrée d'un site, sortie d'activité) sont l'habitude la plus importante d'un voyage scolaire. Inscrivez-les dans le planning comme de vrais points de contrôle, pas comme quelque chose que l'enseignant improvisera. Avec une liste partagée, le comptage prend 30 secondes et tout élève manquant est signalé immédiatement, pas trois arrêts plus tard.",
+    "p3": "Pour les allergies sévères ou conditions médicales, attachez la documentation directement au participant. Les accompagnateurs peuvent y accéder hors ligne, même si leur téléphone n'a pas de réseau — et le personnel sur place (hôtel, restaurant, guide de musée) peut voir l'info pertinente immédiatement. Ce geste tout simple a évité plus d'un passage aux urgences en milieu de séjour."
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "items": [
+      { "q": "Combien de temps à l'avance organiser un voyage scolaire ?", "a": "Pour une sortie à la journée, deux à trois semaines suffisent. Pour un séjour ou un voyage à l'étranger, démarrez trois à six mois avant. La pression sur les réservations varie selon la destination — les villes prisées (Rome, Londres, Barcelone) se remplissent vite au printemps. Bloquez d'abord le transport et l'hébergement ; les activités peuvent attendre." },
+      { "q": "Comment collecter autorisations parentales et régimes alimentaires sans paperasse ?", "a": "Plus besoin de courir après les formulaires papier. Avec un voyage partagé et une liste de participants, chaque parent confirme directement la présence, les restrictions alimentaires et les contacts d'urgence — au même endroit. WePlanify met à jour les statuts en temps réel pour que vous sachiez à tout moment qui a validé et qui ne l'a pas encore fait." },
+      { "q": "Les parents peuvent-ils consulter l'itinéraire sans créer de compte ?", "a": "Oui. Partagez le lien du voyage et les parents voient le programme jour par jour, l'adresse de l'hébergement et les contacts d'urgence sans s'inscrire. Ils sont rassurés, vous recevez moins de mails inquiets la veille du départ." },
+      { "q": "Comment gérer les régimes alimentaires et allergies ?", "a": "Ajoutez les restrictions alimentaires sur le profil de chaque participant et taguez-les sur les repas et activités concernés. L'information reste visible aux accompagnateurs et aux lieux que vous avez réservés. Pour les allergies sévères, attachez directement le document médical au participant — accessible hors ligne." },
+      { "q": "Comment répartir les rôles entre accompagnateurs ?", "a": "Assignez chaque accompagnateur à un sous-groupe d'élèves dans le voyage. Chacun consulte sur son téléphone l'effectif de son groupe, les régimes alimentaires et les contacts d'urgence. Pour les choix d'activité, les sondages permettent de trancher rapidement et de garder une trace claire des décisions prises." },
+      { "q": "WePlanify convient-il aux voyages avec des élèves de moins de 13 ans ?", "a": "Oui — les élèves n'ont pas besoin de compte. Seul l'enseignant responsable et les accompagnateurs (ou parents désignés) rejoignent le voyage. Les élèves sont stockés comme participants, pas comme utilisateurs, ce qui respecte les règles de confidentialité applicables aux mineurs." }
+    ]
+  },
+  "discover": {
+    "title": "Découvrir aussi",
+    "teamBuilding": { "title": "Team Building", "desc": "Pour les séminaires d'entreprise." },
+    "familyTrip": { "title": "Voyage en Famille", "desc": "Pour les voyages multi-générations." },
+    "groupGuide": { "title": "Guide Voyage de Groupe", "desc": "Le guide complet étape par étape." },
+    "appComparison": { "title": "Comparatif Apps", "desc": "Face aux autres planificateurs." }
+  },
+  "cta": {
+    "title": "Pilotez Votre Prochain Voyage Scolaire Depuis un Seul Endroit",
+    "subtitle": "Gratuit pour les enseignants. Aucune appli à installer pour les parents. Configurez votre voyage en 5 minutes.",
+    "button": "Commencer un voyage scolaire"
+  },
+  "jsonld": {
+    "articleHeadline": "Organiser un Voyage Scolaire Sans le Cauchemar Administratif",
+    "howToName": "Comment organiser un voyage scolaire",
+    "howToDescription": "De l'obtention de l'autorisation administrative au questionnaire de retour — un mode d'emploi étape par étape pour les enseignants qui organisent une sortie de classe.",
+    "howToSteps": [
+      { "name": "Obtenir le feu vert administratif", "text": "Avant de réserver, obtenez la validation formelle de la direction. Préparez un dossier d'une page : dates, destination, objectifs pédagogiques, budget indicatif par élève, taux d'encadrement. La plupart des établissements demandent ce dossier 6 à 12 semaines à l'avance pour un séjour." },
+      { "name": "Verrouiller transport, hébergement et activités", "text": "Réservez d'abord les gros postes : car ou train, hébergement avec le bon taux d'encadrement, et les activités phares. Utilisez un itinéraire partagé pour que les co-organisateurs voient le même plan et signalent les conflits avant qu'ils deviennent des problèmes." },
+      { "name": "Collecter autorisations, régimes alimentaires et contacts d'urgence", "text": "Envoyez le lien du voyage aux parents. Ils confirment la présence, déclarent restrictions alimentaires et allergies, et donnent les contacts d'urgence dans un seul formulaire. L'effectif se met à jour en direct, plus besoin de relancer." },
+      { "name": "Voter sur les activités négociables", "text": "Certaines décisions sont fixes (le musée imposé par le programme). D'autres non (quelle activité du soir, quel restaurant pour le dîner de groupe). Lancez un sondage auprès des accompagnateurs — et selon l'âge, des élèves — et le résultat tranche." },
+      { "name": "Publier la liste de bagages et le briefing pré-départ", "text": "Deux semaines avant le départ, publiez une liste de bagages partagée (séparée en 'obligatoire' et 'recommandé') et un briefing pré-départ : point de rendez-vous, programme, règles de vie, procédure d'urgence. Les parents voient exactement ce dont leur enfant a besoin." },
+      { "name": "Vivre le voyage avec l'itinéraire partagé en temps réel", "text": "Sur place, chaque accompagnateur a le programme complet sur son téléphone — adresses, horaires, effectif, contacts d'urgence. Mettez l'itinéraire à jour en temps réel en cas d'imprévu (bus en retard, activité changée), et les parents voient le nouveau plan immédiatement. Plus de chaîne téléphonique, plus de panique." }
+    ]
+  }
+}

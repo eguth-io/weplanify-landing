@@ -1,0 +1,167 @@
+{
+  "copy": {
+    "hero": {
+      "title": "Navegue, adicione, mapeie.",
+      "titleHighlight": "Em conjunto.",
+      "subtitle": "Um só ecrã com hotéis, restaurantes, atividades e transportes — selecionados para o seu destino. Carregue em + para adicionar à viagem e veja-o surgir no mapa partilhado.",
+      "cta": "Experimentar o Explorer grátis",
+      "ctaSubtext": "Grátis · sem cartão de crédito · 30 segundos para começar"
+    },
+    "intro": {
+      "title": "O percurso da pesquisa à viagem, interrompido.",
+      "paragraphs": [
+        "Planear uma viagem em grupo devia ser uma conversa, não uma folha de cálculo. Mas aqui está você: 47 separadores do navegador abertos, três conversas de grupo com listas diferentes, um documento no Notion que ninguém atualiza e, às 23h da véspera, ainda a discutir se o bar no terraço vale a caminhada por toda a cidade. A pergunta 'o que vamos fazer' — supostamente a parte divertida — torna-se a parte que destrói os grupos.",
+        "O problema não é a falta de informação. É o contrário. Cada cidade tem 10.000 coisas para fazer e a internet promete que todas são imperdíveis. Separar o essencial do ruído — e conseguir que quatro a quinze pessoas concordem sobre o que ficou na lista — é onde a maioria das viagens cai por terra em silêncio.",
+        "O Explorer foi feito para esse preciso momento. Um só ecrã. Quatro separadores: hotéis, restaurantes, atividades, transportes. Uma grelha de cartões selecionada para o seu destino. Carregue em + para adicionar à viagem e veja-o surgir no mapa partilhado. O seu grupo faz o mesmo, os lugares consensuais sobem ao topo. Vinte minutos, uma lista curta mapeada."
+      ]
+    },
+    "painPoints": {
+      "title": "Porque é que a descoberta está estragada",
+      "subtitle": "A maioria dos grupos passa mais tempo a lutar contra o planeamento do que a desfrutar da viagem.",
+      "items": [
+        {
+          "emoji": "🗂️",
+          "title": "O cemitério de separadores",
+          "description": "Mais de 35 separadores abertos, todos a prometer a melhor versão de 'melhores coisas para fazer em [cidade]'. Vai fechá-los esta noite e abri-los outra vez amanhã. Nada ficou decidido."
+        },
+        {
+          "emoji": "💬",
+          "title": "A lista da conversa de grupo que ninguém atualiza",
+          "description": "A Sarah sugeriu 6 lugares, o Marc acrescentou 3, o Alex gostou de todos, e a futura noiva ainda não viu nada disto. Vai falar nisso ao brunch. Talvez."
+        },
+        {
+          "emoji": "🤔",
+          "title": "Isto é mesmo bom ou só turístico?",
+          "description": "O Tripadvisor está cheio de avaliações pagas, os tópicos do Reddit têm 4 anos, o Instagram é #publicidade. Acaba no mesmo restaurante sobrelotado que toda a gente também escolheu."
+        },
+        {
+          "emoji": "🕳️",
+          "title": "O buraco negro do 'guardei nalgum lado'",
+          "description": "14 estrelas no Maps, 28 guardados no Instagram, 6 marcadores no TikTok, uma captura de ecrã na galeria. Não vai encontrar nenhum deles no dia em que chegar."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Como o Explorer resolve isto",
+      "subtitle": "Um só ecrã, quatro separadores, uma verdadeira lista curta partilhada no final.",
+      "items": [
+        {
+          "emoji": "🎯",
+          "title": "Quatro separadores, não uma avalanche",
+          "description": "Alterne entre hotéis, restaurantes, atividades e transportes com um único clique. Os cartões adaptam-se ao separador — o alojamento mostra o preço por noite, o transporte mostra a rota + duração. Acabou-se comparar maçãs com bilhetes de avião."
+        },
+        {
+          "emoji": "➕",
+          "title": "Adicione com um toque",
+          "description": "Cada cartão tem um botão +. Toque nele e o lugar fica fixado na sua viagem — visto verde, sem dupla confirmação. As suas escolhas sincronizam com o resto do grupo em tempo real."
+        },
+        {
+          "emoji": "🗺️",
+          "title": "Vista de mapa, lado a lado",
+          "description": "Cartões à esquerda, mapa interativo à direita (ou abaixo no telemóvel). Passe o rato sobre um cartão e o pino acende-se no mapa. Escolha por proximidade, não pela ordem dos separadores."
+        },
+        {
+          "emoji": "🤝",
+          "title": "O consenso do grupo vem ao de cima",
+          "description": "Toda a gente vê o mesmo Explorer. Quando vários membros adicionam o mesmo lugar, ele recebe a marca de 'favorito do grupo'. Os lugares em que todos secretamente concordaram sobem ao topo — sem debate necessário."
+        }
+      ]
+    },
+    "animationShowcase": {
+      "title": "Veja em ação",
+      "subtitle": "A verdadeira interface do Explorer — os mesmos separadores, os mesmos cartões, o mesmo botão +. Mude de tipo e veja a grelha atualizar-se.",
+      "caption": "Demonstração automática · é isto que vai usar"
+    },
+    "mapPreview": {
+      "title": "Tudo o que adicionou, no mapa",
+      "subtitle": "Cada toque em + coloca um pino no mapa partilhado. Abra-o no dia em que chegar, escolha o que estiver mais perto e vá a pé.",
+      "caption": "Mapa interativo · sincronizado com a sua viagem"
+    },
+    "useCases": {
+      "title": "Quando o Explorer faz a diferença",
+      "subtitle": "Feito para as viagens em que 'é só pesquisar' não chega.",
+      "items": [
+        {
+          "emoji": "🏙️",
+          "title": "Escapadas urbanas (3 a 5 dias)",
+          "description": "Fins de semana prolongados em Lisboa, Berlim, Nova Iorque. Não tem tempo para pesquisar — tem tempo para fazer. O Explorer reduz 500 ideias a 20 em quinze minutos."
+        },
+        {
+          "emoji": "👥",
+          "title": "Viagens em grupo (4 a 15 pessoas)",
+          "description": "Despedidas de solteira, reencontros de amigos, viagens em família. Toda a gente adiciona as suas escolhas a partir do telemóvel e o consenso vem ao de cima. Ignore a democracia da conversa de grupo."
+        },
+        {
+          "emoji": "🛣️",
+          "title": "Várias cidades e road trips",
+          "description": "5 cidades em 10 dias = 5 explorações. Guarde lugares por cidade e visite-os quando chegar. O seu itinerário constrói-se em torno do que o grupo realmente quer."
+        }
+      ]
+    },
+    "categoriesTitle": "Explore por categoria",
+    "mapPins": {
+      "hotel": "Hotel",
+      "restaurant": "Restaurante",
+      "activity": "Atividade"
+    }
+  },
+  "page": {
+    "heroBadge": "Modo Explorar",
+    "seoTitle": "Explorer - Descubra Destinos de Viagem | Weplanify",
+    "seoDescription": "Descubra lugares incríveis com o nosso modo de exploração. Deslize para explorar restaurantes, museus e atividades, guarde os seus favoritos.",
+    "ctaTitle": "Pronto para explorar?",
+    "ctaSubtitle": "Descubra milhares de lugares incríveis para a sua próxima viagem",
+    "ctaButton": "Explorar o meu destino",
+    "features": [
+      {
+        "title": "Restaurantes",
+        "description": "Encontre a melhor comida local"
+      },
+      {
+        "title": "Museus",
+        "description": "Cultura e história"
+      },
+      {
+        "title": "Natureza",
+        "description": "Parques e atividades ao ar livre"
+      },
+      {
+        "title": "Miradouros",
+        "description": "Os melhores locais para fotos"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Como funciona o modo Explore da Weplanify?",
+        "answer": "O modo Explore permite descobrir lugares (restaurantes, museus, atividades) deslizando como numa app de encontros. Deslize para a direita para guardar, para a esquerda para passar."
+      },
+      {
+        "question": "Os lugares são filtrados com base no meu destino?",
+        "answer": "Sim, o Explorer mostra apenas lugares relevantes para o seu destino e as suas datas de viagem."
+      },
+      {
+        "question": "De onde vêm as recomendações?",
+        "answer": "As nossas recomendações combinam várias fontes: avaliações de viajantes Weplanify, dados do Google Places, TripAdvisor e os nossos curadores locais."
+      },
+      {
+        "question": "Posso usar o Explorer offline?",
+        "answer": "Sim! Descarregue os lugares do seu destino antes de partir."
+      },
+      {
+        "question": "Como adiciono um lugar explorado ao meu itinerário?",
+        "answer": "Quando desliza para a direita (gosto), o lugar é guardado nos seus favoritos. Um simples toque permite adicioná-lo ao seu itinerário."
+      }
+    ],
+    "stats": [
+      {
+        "label": "lugares descobertos"
+      },
+      {
+        "label": "categorias"
+      },
+      {
+        "label": "destinos"
+      }
+    ]
+  }
+}

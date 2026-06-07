@@ -18,13 +18,9 @@ import Image from "next/image";
 import { getInstagramPosts } from "@/lib/instagram";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
-import {
-  landingPageQuery,
-  navigationQuery,
-  footerQuery,
-} from "@/sanity/lib/query";
-import { LandingPage, Navigation, Footer as FooterDataType } from "@/sanity/lib/type";
-import { setRequestLocale } from 'next-intl/server';
+import { navigationQuery, footerQuery } from "@/sanity/lib/query";
+import { Navigation, Footer as FooterDataType } from "@/sanity/lib/type";
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 
 type Props = {
@@ -38,28 +34,33 @@ export function generateStaticParams() {
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  // Fetch all data from Sanity with locale filter
-  const [landingPageData, navigationData, footerData, instagramPosts] = await Promise.all([
-    client.fetch<LandingPage>(landingPageQuery, { locale }),
+  const t = await getTranslations("homePage");
+  // Homepage copy (hero, world section, and every section component) now comes
+  // from next-intl message files. Only nav/footer config is still sourced from
+  // Sanity, with an en fallback for locales not authored there.
+  const [navRaw, footerRaw, instagramPosts] = await Promise.all([
     client.fetch<Navigation>(navigationQuery, { locale }),
     client.fetch<FooterDataType>(footerQuery, { locale }),
     getInstagramPosts(),
   ]);
+  const [navigationData, footerData] =
+    locale === "en"
+      ? [navRaw, footerRaw]
+      : await Promise.all([
+          navRaw ?? client.fetch<Navigation>(navigationQuery, { locale: "en" }),
+          footerRaw ?? client.fetch<FooterDataType>(footerQuery, { locale: "en" }),
+        ]);
 
-  // Fallback if data is not yet filled in Sanity
-  if (!landingPageData) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-lg">
-          Please fill in the data in Sanity Studio (/studio)
-        </p>
-      </div>
-    );
-  }
-
-  // `banner` est consommé uniquement par le Scrolling Banner (commenté plus bas) —
-  // le rajouter à la déstructuration pour réactiver le bandeau.
-  const { hero, worldSection } = landingPageData;
+  // Images are served from the CDN; only the copy is localized via messages.
+  const HERO_BG =
+    "https://cdn.sanity.io/images/pkczubdf/production/dead4cd1121015e8d63c0f347ee08005b5d835ee-1379x751.png";
+  const WORLD_CTA_URL = "https://app.weplanify.com/";
+  const WORLD_IMAGES = [
+    "https://cdn.sanity.io/images/pkczubdf/production/91d610ed547e46f33608d6de1617202522cf85cd-1024x1536.heif",
+    "https://cdn.sanity.io/images/pkczubdf/production/5d3652d63dd35237cf7710904f13fb295a091892-1024x1536.heif",
+    "https://cdn.sanity.io/images/pkczubdf/production/5da7a2e647b07fc2b2bb9100bb5d93d84142f1fa-1024x1536.heif",
+    "https://cdn.sanity.io/images/pkczubdf/production/3ad15779ae62ac56c662c8dd4b384a188bbd767c-1024x1536.heif",
+  ];
 
   return (
     <main className="landing-page" id="main-content">
@@ -78,10 +79,10 @@ export default async function HomePage({ params }: Props) {
       <HeroPitchWall
         locale={locale}
         hero={{
-          affiliateTag: hero?.affiliateTag ?? null,
-          title: hero?.title ?? null,
-          description: hero?.description ?? null,
-          backgroundImage: hero?.backgroundImage ?? null,
+          affiliateTag: t("hero.affiliateTag"),
+          title: t("hero.title"),
+          description: t("hero.description"),
+          backgroundImage: HERO_BG,
         }}
       />
 
@@ -89,20 +90,19 @@ export default async function HomePage({ params }: Props) {
       <section id="reviews" className="px-4 lg:px-8 pb-8 lg:pb-12">
         <div className="max-w-[1536px] mx-auto">
           <h2 className="text-[#001E13] text-2xl lg:text-4xl font-londrina-solid mb-4 lg:mb-6">
-            {locale === "fr" ? "Avis des utilisateurs" : "User reviews"}
+            {t("reviews.heading")}
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
             {/* Left Block - Testimonial Carousel */}
-            <TestimonialCarousel locale={locale} />
+            <TestimonialCarousel />
 
             {/* Right Block - Stats */}
-            <StatsBlock locale={locale} />
+            <StatsBlock />
           </div>
         </div>
       </section>
 
       {/* World Section */}
-      {worldSection && (
       <FadeIn>
         <div className="bg-[#001E13]">
           <div className="overflow-hidden">
@@ -112,22 +112,22 @@ export default async function HomePage({ params }: Props) {
                 <div className="relative w-full h-full hidden lg:grid lg:grid-cols-2 gap-4 items-start">
                   {/* Left column - 2 cards */}
                   <div className="flex flex-col gap-4 -mt-12">
-                    {worldSection.images?.[0] && (
+                    {WORLD_IMAGES[0] && (
                       <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden transform -rotate-3 shadow-2xl">
                         <Image
-                          src={worldSection.images[0].url}
-                          alt={worldSection.images[0].alt || "Destination"}
+                          src={WORLD_IMAGES[0]}
+                          alt="Destination"
                           width={480}
                           height={640}
                           className="object-cover w-full h-full"
                         />
                       </div>
                     )}
-                    {worldSection.images?.[1] && (
+                    {WORLD_IMAGES[1] && (
                       <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden transform rotate-2 shadow-2xl mt-8">
                         <Image
-                          src={worldSection.images[1].url}
-                          alt={worldSection.images[1].alt || "Destination"}
+                          src={WORLD_IMAGES[1]}
+                          alt="Destination"
                           width={480}
                           height={640}
                           className="object-cover w-full h-full"
@@ -138,22 +138,22 @@ export default async function HomePage({ params }: Props) {
 
                   {/* Right column - 2 cards */}
                   <div className="flex flex-col gap-4 mt-8">
-                    {worldSection.images?.[2] && (
+                    {WORLD_IMAGES[2] && (
                       <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden transform rotate-3 shadow-2xl">
                         <Image
-                          src={worldSection.images[2].url}
-                          alt={worldSection.images[2].alt || "Destination"}
+                          src={WORLD_IMAGES[2]}
+                          alt="Destination"
                           width={480}
                           height={640}
                           className="object-cover w-full h-full"
                         />
                       </div>
                     )}
-                    {worldSection.images?.[3] && (
+                    {WORLD_IMAGES[3] && (
                       <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden transform -rotate-2 shadow-2xl mt-6">
                         <Image
-                          src={worldSection.images[3].url}
-                          alt={worldSection.images[3].alt || "Destination"}
+                          src={WORLD_IMAGES[3]}
+                          alt="Destination"
                           width={480}
                           height={640}
                           className="object-cover w-full h-full"
@@ -167,17 +167,17 @@ export default async function HomePage({ params }: Props) {
               {/* Right side - Content */}
               <div className="p-8 lg:p-12 xl:p-16 flex flex-col justify-center lg:w-1/2">
                 <h2 className="text-[#FFFBF5] text-4xl lg:text-5xl xl:text-6xl font-londrina-solid leading-tight mb-6 lg:mb-8 whitespace-pre-line">
-                  {worldSection.title}
+                  {t("worldSection.title")}
                 </h2>
                 <p className="text-[#FFFBF5] text-sm lg:text-base font-karla leading-relaxed mb-8 lg:mb-10 whitespace-pre-line">
-                  {worldSection.description}
+                  {t("worldSection.description")}
                 </p>
-                {worldSection.ctaText && (
+                {(
                   <div>
-                    <Link href={worldSection.ctaUrl || "#"}>
+                    <Link href={WORLD_CTA_URL}>
                       <button className="relative flex cursor-pointer items-center justify-center px-6 py-2 text-center text-[#001E13] bg-[#EEF899] rounded-full font-karla font-bold text-sm lg:text-base ring-4 ring-[#EEF899] ring-opacity-15">
                         <span className="relative z-10 bg-[#EEF899] text-[#001E13] font-bold">
-                          {worldSection.ctaText}
+                          {t("worldSection.ctaText")}
                         </span>
                         <div className="absolute left-1/2 top-1/2 size-full -translate-x-1/2 -translate-y-1/2 animate-pulse rounded-full bg-[#EEF899] opacity-75" />
                       </button>
@@ -189,7 +189,6 @@ export default async function HomePage({ params }: Props) {
           </div>
         </div>
       </FadeIn>
-      )}
 
       {/* Scrolling Banner Section — temporairement masqué (desktop + mobile).
           Décommenter le bloc ci-dessous pour le réafficher ; les données viennent
@@ -247,7 +246,7 @@ export default async function HomePage({ params }: Props) {
       {/* FAQ Support */}
       <FadeIn>
         <div id="faq">
-          <FAQSupport locale={locale} />
+          <FAQSupport />
         </div>
       </FadeIn>
 

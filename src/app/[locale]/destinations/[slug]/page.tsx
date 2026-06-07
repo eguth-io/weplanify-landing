@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -98,6 +98,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function DestinationPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations("destinationSlug");
 
   const loc: Locale = locale === "fr" ? "fr" : "en";
   const destination = findDestinationByLocalizedSlug(slug, loc);
@@ -133,13 +134,13 @@ export default async function DestinationPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("home"),
         item: `${SITE_URL}/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Destinations" : "Destinations",
+        name: t("destinations"),
         item: `${SITE_URL}/${locale}/destinations`,
       },
       {
@@ -163,7 +164,7 @@ export default async function DestinationPage({ params }: Props) {
         : getUseCaseLabel(destination.useCase, "en"),
     itinerary: destination.itinerary.map((day) => ({
       "@type": "ItemList",
-      name: `${locale === "fr" ? "Jour" : "Day"} ${day.day}: ${day.title[loc]}`,
+      name: `${t("jsonld.day")} ${day.day}: ${day.title[loc]}`,
       itemListElement: [day.morning[loc], day.afternoon[loc], day.evening[loc]].map(
         (text, idx) => ({
           "@type": "ListItem",
@@ -222,11 +223,11 @@ export default async function DestinationPage({ params }: Props) {
               <Breadcrumb
                 items={[
                   {
-                    label: locale === "fr" ? "Accueil" : "Home",
+                    label: t("home"),
                     href: `/${locale}`,
                   },
                   {
-                    label: locale === "fr" ? "Destinations" : "Destinations",
+                    label: t("destinations"),
                     href: `/${locale}/destinations`,
                   },
                   { label: cityLabel },
@@ -252,7 +253,7 @@ export default async function DestinationPage({ params }: Props) {
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   <span className="bg-white border border-[#001E13]/10 text-[#001E13] px-4 py-1.5 rounded-full text-sm font-karla">
-                    {destination.days} {locale === "fr" ? "jours" : "days"}
+                    {destination.days} {t("daysUnit")}
                   </span>
                   <span className="bg-white border border-[#001E13]/10 text-[#001E13] px-4 py-1.5 rounded-full text-sm font-karla">
                     {countryLabel}
@@ -261,21 +262,17 @@ export default async function DestinationPage({ params }: Props) {
                     {currencySymbol}
                     {destination.budget.perPerson.low}–{currencySymbol}
                     {destination.budget.perPerson.high}{" "}
-                    {locale === "fr" ? "/ pers." : "/ pp"}
+                    {t("perPerson")}
                   </span>
                 </div>
 
                 <Link href={signupHref}>
                   <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
-                    {locale === "fr"
-                      ? "Reprendre ce voyage"
-                      : "Fork this trip"}
+                    {t("forkTrip")}
                   </PulsatingButton>
                 </Link>
                 <p className="text-xs font-karla text-[#001E13]/50 mt-3">
-                  {locale === "fr"
-                    ? "Crée ton voyage à partir de cet itinéraire — gratuit, 30 secondes."
-                    : "Start your own trip from this itinerary — free, 30 seconds."}
+                  {t("forkSubtext")}
                 </p>
               </div>
 
@@ -315,14 +312,10 @@ export default async function DestinationPage({ params }: Props) {
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] leading-tight mb-3">
-                  {locale === "fr"
-                    ? "Itinéraire jour par jour"
-                    : "Day-by-day itinerary"}
+                  {t("itinerary.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#FFFBF5]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? `${destination.days} jours, du matin au soir. Pensé pour un groupe, mais flexible.`
-                    : `${destination.days} days, morning to night. Built for a group, easy to bend.`}
+                  {t("itinerary.subheading", { days: destination.days })}
                 </p>
               </div>
 
@@ -334,7 +327,7 @@ export default async function DestinationPage({ params }: Props) {
                   >
                     <div className="flex items-baseline gap-4 mb-5">
                       <span className="font-londrina-solid text-3xl lg:text-4xl text-[#EEF899]">
-                        {(locale === "fr" ? "J" : "D")}
+                        {t("dayInitial")}
                         {day.day}
                       </span>
                       <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#FFFBF5]">
@@ -344,9 +337,9 @@ export default async function DestinationPage({ params }: Props) {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
                       {(
                         [
-                          { label: locale === "fr" ? "Matin" : "Morning", text: day.morning[loc] },
-                          { label: locale === "fr" ? "Après-midi" : "Afternoon", text: day.afternoon[loc] },
-                          { label: locale === "fr" ? "Soir" : "Evening", text: day.evening[loc] },
+                          { label: t("slot.morning"), text: day.morning[loc] },
+                          { label: t("slot.afternoon"), text: day.afternoon[loc] },
+                          { label: t("slot.evening"), text: day.evening[loc] },
                         ] as const
                       ).map((slot) => (
                         <div
@@ -375,14 +368,10 @@ export default async function DestinationPage({ params }: Props) {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] leading-tight mb-3">
-                  {locale === "fr"
-                    ? "Les bonnes adresses"
-                    : "Where to go"}
+                  {t("pois.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#001E13]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? "Spots réels, vérifiés, repérés. Cliquez pour ouvrir dans Maps."
-                    : "Real, vetted spots. Click any to open in Maps."}
+                  {t("pois.subheading")}
                 </p>
               </div>
 
@@ -438,19 +427,17 @@ export default async function DestinationPage({ params }: Props) {
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-10">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] leading-tight mb-3">
-                  {locale === "fr" ? "Budget par personne" : "Budget per person"}
+                  {t("budget.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#001E13]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? `Estimation honnête au sol — ${destination.days} jours.`
-                    : `Honest on-the-ground estimate — ${destination.days} days.`}
+                  {t("budget.subheading", { days: destination.days })}
                 </p>
               </div>
 
               <div className="bg-white rounded-3xl p-8 lg:p-10 border border-[#001E13]/10">
                 <div className="flex items-baseline justify-between gap-4 pb-6 mb-6 border-b border-[#001E13]/10">
                   <span className="font-karla font-bold text-[#001E13] text-base lg:text-lg">
-                    {locale === "fr" ? "Total estimé" : "Estimated total"}
+                    {t("budget.total")}
                   </span>
                   <span className="font-londrina-solid text-3xl lg:text-4xl text-[#F6391A]">
                     {currencySymbol}
@@ -488,7 +475,7 @@ export default async function DestinationPage({ params }: Props) {
             <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="bg-white rounded-3xl p-8 border border-[#001E13]/10">
                 <h2 className="text-2xl lg:text-3xl font-londrina-solid text-[#001E13] mb-5">
-                  {locale === "fr" ? "À ne pas oublier" : "Packing essentials"}
+                  {t("packing.heading")}
                 </h2>
                 <ul className="space-y-3">
                   {destination.packing[loc].map((item, i) => (
@@ -507,7 +494,7 @@ export default async function DestinationPage({ params }: Props) {
 
               <div className="bg-[#EEF899] rounded-3xl p-8 border border-[#001E13]/10">
                 <h2 className="text-2xl lg:text-3xl font-londrina-solid text-[#001E13] mb-5">
-                  {locale === "fr" ? "Quand y aller" : "When to go"}
+                  {t("season.heading")}
                 </h2>
                 <p className="font-karla text-[#001E13]/85 text-base lg:text-lg leading-relaxed">
                   {destination.bestSeason[loc]}
@@ -523,9 +510,7 @@ export default async function DestinationPage({ params }: Props) {
             <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
-                  {locale === "fr"
-                    ? "D'autres destinations à explorer"
-                    : "Other destinations to explore"}
+                  {t("related.heading")}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {relatedDestinations.map((rel) => (
@@ -550,7 +535,7 @@ export default async function DestinationPage({ params }: Props) {
                               {getUseCaseLabel(rel.useCase, loc)}
                             </span>
                             <span className="bg-[#001E13]/5 text-[#001E13] px-3 py-1 rounded-full text-xs font-karla">
-                              {rel.days} {locale === "fr" ? "j" : "d"}
+                              {rel.days} {t("daysShort")}
                             </span>
                           </div>
                           <h3 className="text-xl font-londrina-solid text-[#001E13] mb-2">
@@ -560,9 +545,7 @@ export default async function DestinationPage({ params }: Props) {
                             {rel.meta.description[loc]}
                           </p>
                           <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-auto">
-                            {locale === "fr"
-                              ? "Voir l'itinéraire →"
-                              : "See the itinerary →"}
+                            {t("related.seeItinerary")}
                           </span>
                         </div>
                       </article>
@@ -579,21 +562,15 @@ export default async function DestinationPage({ params }: Props) {
           <div className="max-w-5xl mx-auto">
             <div className="bg-[#F6391A] rounded-3xl lg:rounded-[40px] p-8 lg:p-12 xl:p-16 text-center">
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] leading-tight mb-4">
-                {locale === "fr"
-                  ? `Pars à ${cityLabel} avec ta team`
-                  : `Take ${cityLabel} on with your crew`}
+                {t("cta.heading", { city: cityLabel })}
               </h2>
               <p className="text-base lg:text-lg font-karla text-[#FFFBF5]/90 max-w-2xl mx-auto mb-8 leading-relaxed">
-                {locale === "fr"
-                  ? "Reprends cet itinéraire dans WePlanify, invite ton groupe, et bosse le voyage à plusieurs. Itinéraire partagé, sondages, budget commun — gratuit."
-                  : "Fork this itinerary into WePlanify, invite the group, and plan the trip together. Shared itinerary, polls, shared budget — all free."}
+                {t("cta.body")}
               </p>
               <div className="flex justify-center">
                 <Link href={signupHref}>
                   <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
-                    {locale === "fr"
-                      ? "Reprendre ce voyage — gratuit"
-                      : "Fork this trip — free"}
+                    {t("cta.button")}
                   </PulsatingButton>
                 </Link>
               </div>

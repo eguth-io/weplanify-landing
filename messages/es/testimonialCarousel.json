@@ -1,0 +1,24 @@
+{
+  "testimonials": [
+    {
+      "quote": "Llevo unas semanas usando WePlanify para planificar un viaje con amigos. La interfaz es sencilla y repartir tareas es súper práctico.",
+      "author": "Eva",
+      "authorRole": "Viajera apasionada"
+    },
+    {
+      "quote": "Genial para ajustar las paradas sobre la marcha. Puedo cambiar mis planes sin rehacerlo todo.",
+      "author": "Tom",
+      "authorRole": "Nómada digital"
+    },
+    {
+      "quote": "Con las encuestas, acordamos el hotel en 10 minutos.",
+      "author": "Lucas",
+      "authorRole": "Viaje con amigos"
+    },
+    {
+      "quote": "Por fin tenemos un itinerario claro para toda la familia.",
+      "author": "Isabelle",
+      "authorRole": "Viaje en familia"
+    }
+  ]
+}

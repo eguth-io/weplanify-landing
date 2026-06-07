@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Häufig gestellte Fragen (FAQ)",
+    "description": "Finde Antworten auf deine Fragen zu WePlanify. Wie man eine Gruppenreise plant, Funktionen, Preise und Support."
+  },
+  "breadcrumb": {
+    "home": "Startseite"
+  },
+  "subtitle": "Finde schnell Antworten auf deine häufigsten Fragen.",
+  "empty": "Derzeit ist keine FAQ verfügbar.",
+  "ctaTitle": "Noch Fragen?",
+  "ctaSubtitle": "Unser Team hilft dir gern, deine perfekte Reise zu planen.",
+  "ctaButton": "Kontaktiere uns",
+  "defaultFaq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "question": "Was ist WePlanify?",
+        "answer": "WePlanify ist ein kostenloser, browserbasierter Planer für Gruppenreisen. Er vereint eine kollaborative Reiseroute, Gruppenabstimmungen, einen geteilten Budget-Tracker mit automatischem Ausgleich, geteilte Packlisten und einen KI-Assistenten – alles in einem zweisprachigen (Englisch/Französisch) Tool."
+      },
+      {
+        "question": "Ist WePlanify kostenlos?",
+        "answer": "Ja. Der kostenlose Tarif deckt die meisten realistischen Gruppenreisen ab: kollaborative Reiserouten, Abstimmungen, geteilten Budget-Tracker, Packlisten und Zugang zum KI-Assistenten. Es gibt Premium-Tarife für höhere Kontingente (mehr Reisen, mehr KI-Anfragen, längerer Verlauf). Für die Anmeldung ist keine Kreditkarte erforderlich."
+      },
+      {
+        "question": "Wie funktioniert WePlanify?",
+        "answer": "Erstelle in Sekunden eine Reise, lade deine Freunde per E-Mail oder teilbarem Link ein und plant gemeinsam los. Jeder kann die Reiseroute bearbeiten, eine Abstimmung starten, eine Ausgabe hinzufügen oder einen Packlisten-Punkt abhaken. Der KI-Assistent kann aus einer einfachen Beschreibung deiner Reise eine erste Version entwerfen."
+      },
+      {
+        "question": "Muss ich eine App herunterladen?",
+        "answer": "Nein. WePlanify läuft in jedem modernen Browser auf Smartphone, Tablet oder Desktop. Es ist kein Download aus dem App Store oder Play Store nötig."
+      },
+      {
+        "question": "Wie viele Personen können einer Reise beitreten?",
+        "answer": "WePlanify ist für Gruppen von 2 bis über 50 Teilnehmern ausgelegt. Für normale Gruppengrößen gibt es keine feste Obergrenze."
+      },
+      {
+        "question": "Wie funktionieren Gruppenabstimmungen?",
+        "answer": "Jeder in der Reise kann in Sekunden eine Abstimmung erstellen: mit einer oder mehreren Auswahlmöglichkeiten und einem optionalen anonymen Abstimmungsmodus (nützlich bei budgetsensiblen Entscheidungen). Die Ergebnisse sind in Echtzeit sichtbar, mit Aufschlüsselung pro Option. Abstimmungen können mit Reiseroutenpunkten verknüpft werden („wählt das Restaurant für Tag 2“)."
+      },
+      {
+        "question": "Wie funktioniert das geteilte Budget?",
+        "answer": "Jeder Teilnehmer erfasst eine Ausgabe mit Zahler, Betrag, Währung und Aufteilungsregel (gleichmäßig, individuelle Anteile oder bestimmte Personen ausschließen). WePlanify berechnet live, wer wem was schuldet – in jeder Währung mit automatischer Umrechnung. Im Voraus bezahlte Posten (Anzahlungen, Gruppenbuchungen) werden getrennt von den Ausgaben während der Reise erfasst."
+      },
+      {
+        "question": "Wie schneidet WePlanify im Vergleich zu Wanderlog ab?",
+        "answer": "Wanderlog ist ein gutes Reiseroutentool, hat aber keine integrierten Gruppenabstimmungen und keinen geteilten Budget-Tracker mit Ausgleichsfunktion. WePlanify ist von Grund auf für Gruppen konzipiert, vollständig zweisprachig Englisch/Französisch und enthält Abstimmungen und geteiltes Budget von Haus aus. Beide sind im Einstiegstarif kostenlos."
+      },
+      {
+        "question": "Wie schneidet WePlanify im Vergleich zu Splitwise ab?",
+        "answer": "Splitwise ist ein großartiger Ausgabenteiler, aber kein Reiseplaner. WePlanify deckt die gesamte Reise ab (Reiseroute, Abstimmungen, Packen, Budget) und enthält einen Splitwise-ähnlichen Budget-Tracker für die gemeinsamen Ausgaben der Reise."
+      },
+      {
+        "question": "Kann ich mit WePlanify einen Junggesellinnen- oder Junggesellenabschied planen?",
+        "answer": "Ja – das ist einer der häufigsten Anwendungsfälle. Abstimmungen klären die Frage „wer wählt die Aktivität aus“, der geteilte Budget-Tracker erfasst, wer was bezahlt hat (einschließlich im Voraus geleisteter Anzahlungen), und die Packlisten verhindern doppelte Ausrüstung. Anonymes Abstimmen ist nützlich, wenn die Budgets innerhalb der Gruppe variieren."
+      },
+      {
+        "question": "Funktioniert WePlanify für Alleinreisende?",
+        "answer": "WePlanify lässt sich allein nutzen, ist aber für Gruppen optimiert. Alleinreisende profitieren mehr von TripIt (Reservierungsverwaltung) oder Stippl (Reisetagebuch für Solo-Trips). WePlanify spielt seine Stärken aus, sobald eine zweite Person der Reise beitritt."
+      },
+      {
+        "question": "Welche Sprachen unterstützt WePlanify?",
+        "answer": "Englisch und Französisch, durchgängig vollständig übersetzt (URLs, Inhalte, E-Mails, Antworten des KI-Assistenten). Weitere Sprachen sind in Planung."
+      },
+      {
+        "question": "Wie funktioniert der KI-Assistent?",
+        "answer": "Beschreibe die Reise in einfacher Sprache („4 Freunde, langes Wochenende in Lissabon, Foodie-Fokus, Budget 500 € pro Person“) und der Assistent schlägt Reiseziele, Tag-für-Tag-Reiserouten, Aktivitäten und Budgetschätzungen vor. Er passt sich an die Abstimmungen und Budgetvorgaben der Gruppe an, während der Plan Gestalt annimmt."
+      },
+      {
+        "question": "In welchen Ländern ist WePlanify verfügbar?",
+        "answer": "WePlanify funktioniert weltweit und deckt Reiseziele in über 190 Ländern ab."
+      },
+      {
+        "question": "Ist WePlanify DSGVO-konform?",
+        "answer": "Ja. WePlanify wird in Europa entwickelt – DSGVO-konform von Tag eins an. Nutzer können ihre Daten in den Kontoeinstellungen exportieren und löschen."
+      },
+      {
+        "question": "Wie kann ich den Support kontaktieren?",
+        "answer": "Du erreichst uns über unsere Kontaktseite oder per E-Mail an contact@weplanify.com."
+      }
+    ]
+  }
+}

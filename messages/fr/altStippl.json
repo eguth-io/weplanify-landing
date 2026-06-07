@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Alternative à Stippl : Planificateur de Voyage de Groupe (2026)",
+    "description": "Alternative à Stippl pour organiser un voyage de groupe. WePlanify : itinéraires collaboratifs, sondages, budget partagé, packing list. Gratuit, bilingue FR/EN."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "comparison": "Comparatif"
+  },
+  "featureHeader": "Fonctionnalité",
+  "features": {
+    "collab_itinerary": "Itinéraire collaboratif",
+    "polls": "Sondages / votes de groupe",
+    "budget": "Suivi de budget partagé",
+    "packing": "Listes de bagages",
+    "map": "Intégration cartographique",
+    "discovery": "Découverte d’activités",
+    "journal": "Carnet de voyage / reels",
+    "community": "Itinéraires communautaires",
+    "free": "Plan gratuit",
+    "french": "Disponible en français",
+    "mobile": "Application mobile",
+    "realtime": "Collaboration en temps réel"
+  },
+  "heroTitle": "WePlanify vs Stippl",
+  "heroSubtitle": "Comparaison complète — 2026",
+  "heroIntro": "Stippl est un planificateur de voyage visuel, mobile-first, avec des carnets de voyage, des reels automatiques et des itinéraires partagés par la communauté. WePlanify est conçu de A à Z pour la prise de décision en groupe avec des sondages, des budgets partagés et une planification collaborative. Voici un comparatif des deux applications.",
+  "verdictTitle": "En bref",
+  "verdict": "Stippl propose une planification visuelle avec des carnets de voyage, des reels automatiques et des itinéraires communautaires. Cependant, il ne propose pas de sondages de groupe, de suivi de budget partagé, ni de support en français. WePlanify est conçu pour la prise de décision en groupe avec des sondages, des budgets partagés et une planification collaborative. Choisis Stippl pour la documentation solo, WePlanify pour la coordination de groupe.",
+  "comparisonTitle": "Comparatif Face à Face",
+  "midCta": "Essayer WePlanify gratuitement →",
+  "stipplShinesTitle": "Là où Stippl se Démarque",
+  "stipplShinesPoints": [
+    "Moteur de planification nuit-jour — une approche qui relie les hébergements aux activités à proximité pour la planification jour par jour. Ne comprend pas de sondages de groupe ni de suivi de budget.",
+    "Carnets de voyage et reels automatiques — documente ton voyage en photos et l’application génère des reels. C’est une fonctionnalité post-voyage, pas un outil de planification.",
+    "Itinéraires communautaires — parcourez et clonez les itinéraires partagés par d’autres voyageurs. Utile pour l’inspiration solo, moins pour la prise de décision en groupe.",
+    "Expérience mobile-first — applications natives iOS et Android pour planifier en déplacement. Pas de support en français et pas d’accès web sur ordinateur."
+  ],
+  "weplanifyWinsTitle": "Là où WePlanify Gagne",
+  "weplanifyWinsPoints": [
+    "Sondages et votes de groupe — laissez chacun voter sur les destinations, les dates et les activités pour que personne ne se sente exclu. Stippl ne propose pas d’équivalent pour les décisions de groupe.",
+    "Suivi de budget partagé — suivez les dépenses du groupe, répartissez les coûts et gardez tout le monde aligné financièrement. Une fonctionnalité que Stippl ne propose pas.",
+    "Listes de bagages — des listes collaboratives pour ne rien oublier et éviter les doublons au sein du groupe. Un avantage clé pour les voyages de groupe.",
+    "Bilingue (EN/FR) — entièrement disponible en anglais et en français, rendant WePlanify accessible aux voyageurs francophones mal desservis par les applications anglophones comme Stippl."
+  ],
+  "chooseStipplTitle": "Qui devrait choisir Stippl ?",
+  "chooseStipplPoints": [
+    "Les voyageurs solo ou les couples qui veulent documenter leurs voyages avec des carnets et des reels.",
+    "Les planificateurs visuels qui préfèrent une expérience mobile-first centrée sur la carte.",
+    "Les voyageurs qui veulent découvrir et cloner des itinéraires communautaires pour s’inspirer.",
+    "Ceux qui accordent autant d’importance à la documentation du voyage qu’à la planification elle-même."
+  ],
+  "chooseWeplanifyTitle": "Qui devrait choisir WePlanify ?",
+  "chooseWeplanifyPoints": [
+    "Les groupes d’amis de 4 personnes ou plus qui doivent coordonner emplois du temps, préférences et budgets.",
+    "Les organisateurs d’EVJF ou d’EVG qui jonglent avec les avis d’un grand groupe.",
+    "Tous ceux qui veulent des outils de décision de groupe intégrés comme les sondages et les listes de tâches partagées.",
+    "Les voyageurs francophones qui ont besoin d’une expérience entièrement en français."
+  ],
+  "faqTitle": "Questions Fréquentes",
+  "faqs": [
+    {
+      "q": "Peut-on utiliser Stippl pour les voyages de groupe ?",
+      "a": "Stippl prend en charge les itinéraires collaboratifs et la collaboration en temps réel, permettant à plusieurs personnes de travailler sur le même voyage. Cependant, il manque de fonctionnalités spécifiques au groupe comme les sondages, les votes et le suivi de budget partagé qui facilitent grandement la coordination des avis et des dépenses dans les grands groupes. Pour les groupes de 4 personnes ou plus, WePlanify est le meilleur choix."
+    },
+    {
+      "q": "Stippl est-il gratuit ?",
+      "a": "Oui, Stippl propose un plan gratuit qui inclut ses fonctionnalités principales comme la planification d’itinéraires, les carnets de voyage et les itinéraires communautaires. WePlanify est également gratuit pour toujours, sans mur payant caché ni restriction de fonctionnalités."
+    },
+    {
+      "q": "Quelle application est meilleure pour documenter un voyage ?",
+      "a": "Stippl propose des carnets de voyage et des reels automatiques pour capturer tes souvenirs. WePlanify se concentre sur la phase de planification et de coordination plutôt que sur la documentation post-voyage. Si la documentation est ta priorité plutôt que les outils de planification de groupe, Stippl couvre ce cas d’usage."
+    }
+  ],
+  "ctaTitle": "Essaie WePlanify gratuitement — conçu pour les groupes",
+  "ctaButton": "Commencer gratuitement",
+  "crossLinksTitle": "Découvrir aussi",
+  "basic": "Basique",
+  "webApp": "App web",
+  "crossLinks": {
+    "allTitle": "Toutes les Alternatives",
+    "allDesc": "Compare WePlanify avec toutes les applications de voyage de groupe populaires.",
+    "allCta": "Voir le comparatif →",
+    "wanderlogTitle": "WePlanify vs Wanderlog",
+    "wanderlogDesc": "Comparaison détaillée entre WePlanify et Wanderlog pour les voyages de groupe.",
+    "wanderlogCta": "Voir le comparatif →",
+    "guideTitle": "Guide : Organiser un Voyage de Groupe",
+    "guideDesc": "Le guide complet étape par étape pour organiser un voyage de groupe réussi.",
+    "guideCta": "Lire le guide →"
+  }
+}

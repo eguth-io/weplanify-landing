@@ -1,0 +1,107 @@
+{
+  "copy": {
+    "heroTitle": "Plane eine Reise mit 10 Freunden",
+    "heroTitleHighlight": "ohne eine einzige WhatsApp-Nachricht",
+    "heroSubtitle": "Bearbeitung in Echtzeit, integrierte Abstimmungen, klarer Verlauf. Alle auf derselben Seite, im wahrsten Sinne des Wortes.",
+    "inviteMore": "Weitere einladen",
+    "liveLabel": "Live",
+    "fakeTripTitle": "Roadtrip Portugal",
+    "fakeDays": [
+      "Tag 1 — Lissabon",
+      "Tag 2 — Sintra",
+      "Tag 3 — Porto"
+    ],
+    "editingTag": "Marie bearbeitet …",
+    "feedTitle": "Verpasse nie etwas",
+    "feedSubtitle": "Der Aktivitäten-Feed zeigt alles, was auf deiner Reise passiert. Wer was hinzugefügt hat, wann und wo.",
+    "recentActivity": "Letzte Aktivität",
+    "activities": [
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "action": "hat \"Abendessen in Alfama\" hinzugefügt",
+        "time": "vor 2 Min."
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "action": "hat das Hotel in Porto aktualisiert",
+        "time": "vor 5 Min."
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "action": "hat für das Restaurant abgestimmt",
+        "time": "vor 12 Min."
+      },
+      {
+        "avatar": "🧑‍💻",
+        "name": "Lucas",
+        "action": "ist der Reise beigetreten",
+        "time": "vor 1 Std."
+      }
+    ],
+    "freeNoCard": "Kostenlose Anmeldung. Keine Kreditkarte erforderlich."
+  },
+  "page": {
+    "heroBadge": "3 Personen bearbeiten gerade",
+    "heroTitle": "Plane eine Reise mit 10 Freunden",
+    "heroTitleHighlight": "ohne eine einzige WhatsApp-Nachricht",
+    "heroSubtitle": "Echtzeit-Bearbeitung, integrierte Umfragen, klarer Verlauf. Alle buchstäblich auf derselben Seite.",
+    "heroCta": "Meinen ersten Freund einladen - Kostenlos",
+    "heroCtaSubtext": "45 Sek., um deine Gruppe einzuladen",
+    "socialProofText": "12.000+ geplante Reisen",
+    "featuresTitle": "Zusammenarbeit in Echtzeit",
+    "features": [
+      {
+        "title": "Echtzeit",
+        "description": "Änderungen erscheinen sofort für alle Reiseteilnehmer."
+      },
+      {
+        "title": "Kommentare",
+        "description": "Besprich jedes Element direkt in der App, ohne WhatsApp-Gruppe."
+      },
+      {
+        "title": "Berechtigungen",
+        "description": "Lege fest, wer bearbeiten und wer die Reise nur ansehen darf."
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Wie lade ich Freunde ein, um gemeinsam eine Reise zu planen?",
+        "answer": "Teile einen Einladungslink oder sende eine E-Mail-Einladung direkt aus der App. Deine Freunde können der Reise mit einem Klick beitreten, sogar ohne Weplanify-Konto."
+      },
+      {
+        "question": "Werden Änderungen wirklich in Echtzeit synchronisiert?",
+        "answer": "Ja, alle Änderungen werden dank WebSocket-Technologie sofort synchronisiert. Du siehst die Bearbeitungen deiner Mitreisenden live erscheinen."
+      },
+      {
+        "question": "Kann ich die Bearbeitungsrechte einschränken?",
+        "answer": "Auf jeden Fall. Der Ersteller der Reise kann Rollen festlegen: Bearbeiter (voller Zugriff), Mitwirkender (kann Änderungen vorschlagen) oder Betrachter (nur Lesen)."
+      },
+      {
+        "question": "Gibt es eine Begrenzung der Teilnehmerzahl?",
+        "answer": "Keine technische Begrenzung. Wir haben Reisen mit über 50 Teilnehmern, die reibungslos laufen."
+      },
+      {
+        "question": "Wie geht ihr mit Bearbeitungskonflikten um?",
+        "answer": "Weplanify löst Konflikte automatisch. Wenn zwei Personen dasselbe Element bearbeiten, führt das System die Änderungen intelligent zusammen."
+      }
+    ],
+    "ctaTitle": "Schluss mit endlosen WhatsApp-Gruppen",
+    "ctaSubtitle": "Alle auf derselben Seite, in Echtzeit",
+    "ctaButton": "Meine Freunde jetzt einladen",
+    "seoTitle": "Zusammenarbeit in Echtzeit - Gruppenreise-Planung | Weplanify",
+    "seoDescription": "Plane deine Gruppenreise mit Freunden und Familie. Echtzeit-Bearbeitung, integrierte Diskussionen und perfekte Synchronisation für eine reibungslose gemeinsame Organisation.",
+    "stats": [
+      {
+        "value": "12.000+",
+        "label": "geplante Reisen"
+      },
+      {
+        "value": "45 Sek.",
+        "label": "um deine Gruppe einzuladen"
+      }
+    ]
+  }
+}

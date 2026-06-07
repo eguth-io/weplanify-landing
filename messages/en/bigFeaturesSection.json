@@ -1,0 +1,38 @@
+{
+  "title": "Everything You Need to Plan a Group Trip",
+  "slides": [
+    {
+      "title": "Explore and propose ideas to the group",
+      "description": "Find activities, restaurants, accommodation and transport directly in the app. Add them to the itinerary or propose them to the group to vote.",
+      "ctaLabel": "Explore destinations",
+      "stats": [
+        {
+          "value": "190+",
+          "label": "Possible destinations"
+        }
+      ]
+    },
+    {
+      "title": "Decide together with polls",
+      "description": "Where to stay? What to do? When to leave? Create a poll, everyone votes, the decision is made. The group moves forward, the trip too.",
+      "ctaLabel": "Start a poll",
+      "stats": [
+        {
+          "value": "1000+",
+          "label": "Daily polls"
+        }
+      ]
+    },
+    {
+      "title": "A clear itinerary, day by day",
+      "description": "Each day of the trip is structured: what to do, where to eat, where to sleep, how to get there. Everything is clear for everyone.",
+      "ctaLabel": "Build my itinerary",
+      "stats": [
+        {
+          "value": "10+",
+          "label": "Partners"
+        }
+      ]
+    }
+  ]
+}

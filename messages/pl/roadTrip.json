@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Jak zaplanować road trip ze znajomymi — grupowy planer tras | WePlanify",
+    "description": "Zaplanuj grupowy road trip z WePlanify. Wspólne planowanie trasy, wspólne budżety na paliwo, koordynacja pakowania i ankiety grupowe na każdy przystanek po drodze."
+  },
+  "breadcrumb": {
+    "home": "Strona główna"
+  },
+  "hero": {
+    "title": "Otwarta droga, Twoja ekipa, zero stresu",
+    "readTime": "7 min czytania"
+  },
+  "problem": {
+    "p1": "Road tripy brzmią prosto — po prostu wsiadasz do auta i jedziesz. Ale w grupie każda decyzja się mnoży. Którędy? Ile przystanków? Kto prowadzi i kiedy? Gdzie śpimy? Kto płaci za paliwo? Kto zabiera lodówkę turystyczną? Zanim skoordynujesz pięć osób przez sześć dni, wyślesz 300 wiadomości i nikt nie jest pewien, jaki jest plan.",
+    "p2": "WePlanify zamienia chaos we wspólny plan trasy — jedno miejsce na trasę, budżet i listę rzeczy do spakowania."
+  },
+  "toc": {
+    "title": "Na tej stronie",
+    "anatomy": "Anatomia grupowego road tripu",
+    "planning": "Planowanie trasy krok po kroku",
+    "budget": "Porady budżetowe na grupowe road tripy",
+    "faq": "Najczęściej zadawane pytania"
+  },
+  "anatomy": {
+    "title": "Anatomia grupowego road tripu",
+    "subtitle": "Każdy road trip ma te same elementy składowe. Oto jak ogarnąć każdy z nich w grupie.",
+    "items": [
+      { "stop": "Trasa", "desc": "Najpierw zagłosujcie nad wielką decyzją: malowniczo czy szybko? Wybrzeżem czy w głąb lądu? Utwórz ankietę, rozstrzygnijcie to i zbudujcie trasę we wspólnym planie podróży, gdzie każdy może dodawać propozycje przystanków. Ustal punkty noclegowe wcześnie — droga między nimi pozostaje elastyczna.", "link": "/features/polls" },
+      { "stop": "Przystanki", "desc": "To tutaj road tripy stają się niezapomniane. Pozwól każdemu zaproponować obowiązkowe przystanki, a potem wybierzcie razem. Zasada 70/30 sprawdza się tu idealnie: 70% zaplanowanych przystanków, 30% spontanicznych. Dodaj każdy przystanek do wspólnego planu podróży z adresami i notatkami, żeby kierowca nie szarpał się z telefonem.", "link": "/features/planning" },
+      { "stop": "Pieniądze", "desc": "Paliwo, opłaty drogowe, jedzenie, nocleg, atrakcje. Na kilkudniowym road tripie wydatki szybko się sumują i w wielu kategoriach. Rejestruj każdy wydatek w czasie rzeczywistym — kto zapłacił, ile, za co. WePlanify automatycznie wylicza salda, więc rozliczacie się raz na koniec, a nie po każdej stacji paliw.", "link": "/features/budget" },
+      { "stop": "Auto", "desc": "Pięć osób, jeden bagażnik. Przestrzeń to ostateczne ograniczenie. Wspólna lista rzeczy do spakowania z przypisanymi pozycjami zapobiega klasycznemu błędowi road tripów: trzy głośniki Bluetooth, brak otwieracza i zero kabli rozruchowych. Zaznacz, co jedzie w którym aucie, jeśli zabieracie kilka pojazdów.", "link": "/features/packing" }
+    ]
+  },
+  "checklist": {
+    "title": "Lista niezbędników na road trip",
+    "subtitle": "Rzeczy, o których grupy zawsze zapominają. Przypisz każdą osobie na liście rzeczy do spakowania w WePlanify.",
+    "items": [
+      "Uchwyty na telefon i ładowarki dla kierowcy",
+      "Kabel aux lub transmiter FM Bluetooth",
+      "Lodówka turystyczna z wkładami chłodzącymi",
+      "Apteczka",
+      "Kable rozruchowe / przenośny rozrusznik",
+      "Mapy papierowe (na strefy bez zasięgu)",
+      "Butelki na wodę wielokrotnego użytku",
+      "Worki na śmieci do auta",
+      "Koce i poduszki dla pasażerów",
+      "Wspólny zapas przekąsek",
+      "Manometr do opon",
+      "Przenośny powerbank do telefonu"
+    ]
+  },
+  "pullQuote": "Najlepsze road tripy nie są o celu podróży — są o tym, co dzieje się między przystankami. Zadbaj, by planowanie nie zabiło klimatu, zanim w ogóle wyruszycie.",
+  "planning": {
+    "title": "Planowanie trasy: krok po kroku",
+    "p1": "Zacznij od kotwic — miejsc, które koniecznie chcecie odwiedzić — i zbuduj trasę wokół nich. Zanim narysujesz linię na mapie, uzgodnijcie rytm wyjazdu: ile godzin jazdy dziennie wydaje się odpowiednie dla Waszej grupy? Cztery do pięciu godzin to realistyczne maksimum, zanim wkradnie się zmęczenie. Gdy masz już kotwice, połącz je odcinkami, które równoważą efektywność autostrady i walory widokowe.",
+    "p4": "Zostaw w harmonogramie czas zapasowy — co najmniej godzinę luzu dziennie. Road tripy nigdy nie idą dokładnie według planu. Targ rolniczy, o którym nie wiedzieliście, objazd z powodu remontu, restauracja, którą ktoś wypatrzył z autostrady. Ten zapas pozwala powiedzieć tak takim momentom, zamiast stresować się, że jesteście za planem."
+  },
+  "budget": {
+    "title": "Porady budżetowe na grupowe road tripy",
+    "p2": "Jeśli wynajmujecie auto, ustalcie przed wyjazdem, kto jest na ubezpieczeniu i kto figuruje jako dodatkowy kierowca. Wypożyczalnie pobierają opłatę za każdego dodatkowego kierowcę — uwzględnijcie to w podziale. Opłaty drogowe to kolejny podstępny koszt: na niektórych trasach potrafią dorównać budżetowi na paliwo. Sprawdź kalkulatory opłat dla swojej trasy z wyprzedzeniem i zdecydujcie jako grupa, czy jechać płatną drogą, czy zaoszczędzić, wybierając wolniejszą alternatywę.",
+    "p3": "Jeśli chodzi o nocleg, mieszanie opcji utrzymuje koszty pod kontrolą. Przeplatajcie kempingi, hostele i Airbnb w zależności od tego, gdzie się zatrzymujecie. Podzielenie wynajmu z trzema sypialniami na pięć osób jest niemal zawsze tańsze niż osobne pokoje hotelowe i dodatkowo działa jako miejsce do wspólnego spędzania czasu. Rejestrujcie każdy wspólny wydatek na bieżąco — czekanie do końca wyjazdu, by rozliczyć, kto komu ile jest winien, to przepis na zapomniane koszty i niezręczne rozmowy."
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      { "q": "Jak sprawiedliwie podzielić koszty paliwa na road tripie?", "a": "Rejestruj każde tankowanie w narzędziu do śledzenia wspólnego budżetu WePlanify — kto zapłacił, ile, które auto. Na koniec wyjazdu aplikacja wylicza, kto komu ile jest winien. Przy wyjazdach kilkoma autami śledź każdy pojazd osobno. Koniec ze zgadywankami przy przelewach." },
+      { "q": "Ile przystanków powinien mieć road trip dziennie?", "a": "Dwa do trzech przemyślanych przystanków dziennie to złoty środek. Więcej i spędzicie cały wyjazd na wsiadaniu i wysiadaniu z auta. Wbuduj w plan każdego dnia jeden przystanek „obowiązkowy” i jeden lub dwa elastyczne. Zostaw miejsce na spontaniczne odkrycia." },
+      { "q": "Co jeśli mamy różne preferencje co do jazdy?", "a": "Korzystajcie z ankiet, by rozstrzygnąć duże kwestie trasowe (wybrzeże kontra w głąb lądu, szybkie autostrady kontra malownicze drogi). Co do codziennych obowiązków za kółkiem, ustalcie rotację w planie podróży. Wspólny plan WePlanify utrzymuje wszystkich na bieżąco, kto prowadzi i kiedy." },
+      { "q": "Jak skoordynować pakowanie na road trip?", "a": "Miejsce w aucie jest ograniczone. Utwórz wspólną listę rzeczy do spakowania z dwiema sekcjami: rzeczy osobiste i wspólny sprzęt (lodówka turystyczna, sprzęt kempingowy, narzędzia, apteczka, głośnik). Przypisz wspólne rzeczy konkretnym osobom, żeby nie skończyć z trzema powerbankami i bez kabli rozruchowych." },
+      { "q": "Czy WePlanify działa offline podczas road tripu?", "a": "WePlanify działa w przeglądarce na każdym urządzeniu. Choć do synchronizacji zmian potrzebujesz połączenia z internetem, możesz zapisać kluczowe szczegóły (adresy, kody rezerwacji) w notatkach podróży przed wjazdem w strefę bez zasięgu. Większość trasy będzie miała zasięg." },
+      { "q": "Z jakim wyprzedzeniem powinniśmy planować road trip?", "a": "Dwa do czterech tygodni zwykle wystarczy przy krajowych road tripach. Zarezerwuj nocleg w kluczowych punktach noclegowych wcześnie — popularne miejsca szybko się zapełniają, zwłaszcza w weekendy. Zostaw trasę elastyczną, ale ustal miejsca, w których będziecie spać. Załóż podróż w WePlanify, gdy tylko pojawi się pomysł." }
+    ]
+  },
+  "discover": {
+    "title": "Odkryj więcej",
+    "tripWithFriends": { "title": "Wyjazd ze znajomymi", "desc": "Zaplanuj dowolny wyjazd grupowy bez wysiłku.", "cta": "Czytaj dalej →" },
+    "groupGuide": { "title": "Poradnik wyjazdu grupowego", "desc": "Kompletny przewodnik krok po kroku.", "cta": "Przeczytaj poradnik →" },
+    "bestApps": { "title": "Najlepsze aplikacje do podróży grupowych", "desc": "Nasze porównanie najlepszych narzędzi do wyjazdów grupowych.", "cta": "Przeczytaj artykuł →" },
+    "familyTrip": { "title": "Wyjazd rodzinny", "desc": "Zaplanuj wielopokoleniowe wakacje rodzinne.", "cta": "Czytaj dalej →" }
+  },
+  "cta": {
+    "title": "Ruszcie w drogę razem",
+    "subtitle": "Zaplanuj trasę, podziel koszty, spakuj auto — wszystko w jednym miejscu.",
+    "button": "Zacznij planować"
+  },
+  "jsonld": {
+    "articleHeadline": "Zaplanuj road trip ze swoją ekipą",
+    "howToName": "Jak zaplanować grupowy road trip",
+    "howToDescription": "Zbuduj trasę, uzgodnij rytm, rozstrzygaj spory ankietami, podzielcie się prowadzeniem i zostawcie miejsce na spontaniczność.",
+    "howToSteps": [
+      { "name": "Wybierz przystanki-kotwice i uzgodnij dzienny rytm", "text": "Zacznij od obowiązkowych przystanków i zbuduj trasę wokół nich. Uzgodnijcie maksimum 4–5 godzin jazdy dziennie, zanim wkradnie się zmęczenie, a potem połącz kotwice mieszanką efektywności autostrady i walorów widokowych." },
+      { "name": "Rozstrzygaj spory malowniczo-kontra-szybko szybką ankietą", "text": "Gdy grupa nie zgadza się co do przystanków lub kierunku jazdy, przeprowadźcie ankietę. Każdy szereguje swoją pierwszą trójkę; wynik wygrywa bez dramatów. Szczególnie przydatne przy debacie objazd wybrzeżem kontra autostrada." },
+      { "name": "Przydziel zmiany za kółkiem i przerwy z wyprzedzeniem", "text": "Przydziel zmiany za kółkiem z wyprzedzeniem, żeby ta sama osoba nie siedziała za kierownicą każdego ranka. Rotujcie co 2–3 godziny i planujcie prawdziwe 20-minutowe przerwy przy punktach widokowych, a nie 5-minutowe postoje na stacjach paliw." },
+      { "name": "Zostaw co najmniej godzinę zapasu dziennie", "text": "Road tripy nigdy nie idą dokładnie według planu. Wbuduj w każdy dzień co najmniej godzinę luzu, żeby móc powiedzieć tak niezaplanowanemu targowi, spontanicznemu objazdowi, restauracji wypatrzonej z autostrady." }
+    ]
+  }
+}

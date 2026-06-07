@@ -1,0 +1,57 @@
+{
+  "badge": "Wspomnienia",
+  "heroTitle1": "Twoje podróże zasługują na to,",
+  "heroTitle2": "by je uwiecznić",
+  "heroDescription": "Wspólny album zdjęć i automatyczne generowanie spersonalizowanego Travel Booka.",
+  "ctaButton": "Stwórz mój darmowy album",
+  "seoTitleFallback": "Wspomnienia - Album Zdjęć z Podróży",
+  "stats": {
+    "km": "przebytych km",
+    "photos": "zdjęć",
+    "countries": "odwiedzonych krajów",
+    "days": "dni",
+    "contributors": "współtwórców"
+  },
+  "travelBook": {
+    "badge": "Wygenerowane przez AI",
+    "title": "Twój osobisty Travel Book",
+    "subtitle": "AI zbiera Twoje najlepsze chwile w pięknej książce podróżniczej",
+    "coverTitle": "Nasza podróż do Japonii",
+    "coverSubtitle": "Marzec 2024",
+    "introText": "12 niezapomnianych dni w kraju kwitnącej wiśni...",
+    "introStats": "4 miasta • 156 zdjęć • 2847 km",
+    "day1": "Dzień 1",
+    "day1Title": "Pierwszy kontakt",
+    "day1Text": "Szok kulturowy zaraz po wyjściu z lotniska. Neony Shinjuku, uporządkowany tłum i ten pierwszy ramen o 2 w nocy...",
+    "day2": "Dzień 2",
+    "day2Title": "Świątynie i tradycje",
+    "day2Text": "Pobudka o świcie do świątyni Senso-ji. Kadzidło, poranne modlitwy, a potem w stronę Harajuku po ostateczny kontrast...",
+    "day3": "Dzień 3",
+    "day3Title": "Majestatyczne Kioto",
+    "day3Text": "Shinkansen pędzi z prędkością 300 km/h. Przyjazd do Kioto w drobnym deszczu. Bambusy Arashiyamy we mgle, chwila zawieszona w czasie...",
+    "caption1": "Przyjazd do Tokio",
+    "caption2": "Świątynia Senso-ji",
+    "caption5": "Bambusy Arashiyamy"
+  },
+  "features": {
+    "title": "Coś więcej niż album ze zdjęciami",
+    "subtitle": "Cała historia Twojej podróży, zorganizowana automatycznie",
+    "items": [
+      { "title": "Wspólny album", "description": "Cała grupa dokłada swoje zdjęcia, album powstaje wspólnie w czasie rzeczywistym" },
+      { "title": "Interaktywna mapa", "description": "Zobacz swoją trasę ze zdjęciami z geolokalizacją" },
+      { "title": "Travel Book z AI", "description": "Automatyczne tworzenie stylowego podsumowania Twojej przygody" },
+      { "title": "Łatwe udostępnianie", "description": "Prywatnie, w grupie lub publicznie - to Ty decydujesz, kto zobaczy Twoje wspomnienia" }
+    ]
+  },
+  "cta": {
+    "title": "Gotowy, by uwiecznić swoje przygody?",
+    "subtitle": "Dołącz do tysięcy podróżników, którzy zachowują swoje wspomnienia z WePlanify."
+  },
+  "faq": [
+    { "question": "Jak dodać zdjęcia do mojej podróży?", "answer": "W trakcie lub po podróży po prostu dodaj swoje zdjęcia i filmy do każdego dnia lub miejsca w planie. Aplikacja automatycznie porządkuje Twoje multimedia według daty i lokalizacji GPS." },
+    { "question": "Czy mogę stworzyć wspólny album z moją grupą?", "answer": "Tak! Wszyscy uczestnicy podróży mogą dodawać swoje zdjęcia. Wspólny album powstaje automatycznie, a każdy może zobaczyć wspomnienia innych w czasie rzeczywistym." },
+    { "question": "Jak działa automatyczne podsumowanie?", "answer": "Pod koniec podróży AI generuje 'Travel Book' z Twoimi najlepszymi zdjęciami, mapą trasy, statystykami (przebyte km, odwiedzone kraje) i najważniejszymi chwilami." },
+    { "question": "Czy mogę udostępniać moje wspomnienia publicznie?", "answer": "Ty wybierasz: zachowaj wspomnienia prywatne, udostępnij je tylko swojej grupie lub opublikuj je w swoim publicznym profilu, aby zainspirować innych podróżników." },
+    { "question": "Czy zdjęcia są przechowywane w wysokiej jakości?", "answer": "Tak, przechowujemy Twoje zdjęcia w oryginalnej jakości. Możesz je pobrać w dowolnym momencie lub wyeksportować do Google Photos, iCloud lub Dropbox." }
+  ]
+}

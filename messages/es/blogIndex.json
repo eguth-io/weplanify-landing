@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Blog — Consejos para viajes en grupo",
+    "description": "Descubre artículos y consejos para organizar viajes en grupo inolvidables. Trucos de viaje, destinos y guías prácticas."
+  },
+  "staticPosts": [
+    {
+      "title": "Cómo organizar una despedida de soltera inolvidable — Guía 2026",
+      "excerpt": "Desde elegir el destino hasta coordinar al grupo: todo lo que necesitas para organizar una despedida de soltera memorable, sin estrés."
+    },
+    {
+      "title": "Presupuesto de viaje en grupo — Cómo repartir gastos sin dramas",
+      "excerpt": "Define un presupuesto realista, reparte los gastos de forma justa, registra los gastos en tiempo real y ajusta cuentas sin complicaciones al terminar el viaje."
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Planer wyjazdu na Mistrzostwa Świata 2026 — za darmo, dla grup | WePlanify",
+    "description": "Darmowy planer wyjazdu na Mistrzostwa Świata 2026 dla grup fanów. Zbuduj trasę po wielu miastach w USA, Kanadzie i Meksyku, podziel koszty według kategorii i skoordynuj logistykę w 16 miastach gospodarzach — bez biura podróży, bez subskrypcji."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Planer wyjazdu na Mistrzostwa Świata 2026"
+  },
+  "hero": {
+    "tag": "Darmowy planer wyjazdu · Mistrzostwa Świata 2026",
+    "title": "Planer wyjazdu na Mistrzostwa Świata 2026: śledź swoją drużynę w 3 krajach",
+    "readTime": "8 min czytania"
+  },
+  "problem": {
+    "p1": "Mistrzostwa Świata ze znajomymi brzmią jak marzenie — dopóki nie zaczniesz szkicować tego na serwetce. Trzy mecze fazy grupowej w trzech różnych miastach, być może w dwóch różnych krajach. Mecze pucharowe, których nie zarezerwujesz, dopóki nie spłyną wyniki. Wizy, ESTA, eTA. Loty międzymiastowe, które podwajają cenę w tygodniu meczu. Sześciu fanów, sześć budżetów, sześć poziomów tolerancji na wczesny lot. Biura podróży sprzedają Ci pakiet i mają to z głowy. Fani, którzy naprawdę chcą tego wyjazdu, kończą, budując go sami — i potrzebują planu, który każdy widzi.",
+    "p2": "WePlanify to darmowe wspólne centrum dowodzenia wyjazdami na Mistrzostwa Świata 2026 — terminarze, loty, hotele, budżet i pakowanie w jednym miejscu, po angielsku lub francusku."
+  },
+  "toc": {
+    "title": "Na tej stronie",
+    "anatomy": "Anatomia wyjazdu na Mistrzostwa Świata",
+    "hostCities": "16 miast gospodarzy",
+    "planning": "Planowanie trasy krok po kroku",
+    "budget": "Porady budżetowe dla fanów",
+    "faq": "Najczęściej zadawane pytania"
+  },
+  "anatomy": {
+    "title": "Anatomia wyjazdu na Mistrzostwa Świata",
+    "subtitle": "Pięć ruchomych części, które każda grupa pomija za pierwszym razem. Ogarnij je, a wyjazd popłynie.",
+    "items": [
+      { "stop": "Terminarz", "desc": "Twoja drużyna gra trzy mecze grupowe w trzech potencjalnych miastach, a potem mecze pucharowe, których jeszcze nie przewidzisz. Ustal fazę grupową w planie podróży jako stałe kotwice. Oznacz daty meczów pucharowych jako miejsca tymczasowe — gdy drabinka się wypełni, będziesz wiedział, które miasto dodać. Nie rezerwuj bezzwrotnych lotów na mecze pucharowe przed 1/8 finału.", "link": "/features/itinerary" },
+      { "stop": "Ekipa", "desc": "Sześciu fanów rzadko ma ten sam plan. Niektórzy biorą wszystkie 39 dni wolnego, inni mogą wyrwać się tylko na jeden mecz. Przeprowadź ankietę, by ustalić, kto jedzie na który etap, zanim cokolwiek zarezerwujesz — oszczędzisz cztery kłótnie i jeden odwołany lot.", "link": "/features/polls" },
+      { "stop": "Granice", "desc": "USA, Kanada, Meksyk to trzy reżimy imigracyjne. ESTA / B-2 do USA, eTA / wiza do Kanady, karta turystyczna FMM do Meksyku. Każdy fan ogarnia własne papiery, ale grupa potrzebuje jednej wspólnej listy kontrolnej z terminami, żeby nikt nie pojawił się na lotnisku bez ważnej ESTA.", "link": "/features/planning" },
+      { "stop": "Pieniądze", "desc": "Bilety na mecze opłacane indywidualnie przez FIFA. Hotele dzielone według pokoi. Loty międzymiastowe dzielone według podróżnych. Jedzenie dzielone na posiłek. Pięć kategorii, które same się nie rozliczą. Wspólny budżet z kategoriami od pierwszego dnia bije chaotyczny arkusz w dniu 38.", "link": "/features/budget" },
+      { "stop": "Bagaże", "desc": "Trzy tygodnie przez letnie USA, letnią Kanadę, letni Meksyk — i stadionowy dress code. Pakuj się lekko, by zmieścić się w limitach wagowych tanich linii, ale z uwzględnieniem koszulki, szalika, flagi i kremu z filtrem każdego. Wspólna lista z przypisanymi wspólnymi rzeczami zapobiega trzem flagom i zeru powerbanków.", "link": "/features/packing" }
+    ]
+  },
+  "hostCities": {
+    "title": "16 miast gospodarzy",
+    "subtitle": "Jedenaście miast w USA, trzy w Meksyku, dwa w Kanadzie. Zbuduj trasę, wiedząc, które skupiska dobrze się ze sobą łączą — a które wymagają lotu."
+  },
+  "matrix": {
+    "title": "Czas podróży między miastami gospodarzami",
+    "subtitle": "Orientacyjne czasy podróży w jedną stronę dla najczęstszych tras fanów. Czasy lotów nie obejmują obsługi na lotnisku (dodaj ~3 godz.). Wykorzystaj je do oszacowania dni zapasowych między meczami.",
+    "route": "Trasa",
+    "mode": "Środek transportu",
+    "time": "Czas",
+    "notes": "Uwagi",
+    "rows": [
+      { "route": "Boston ↔ Nowy Jork", "mode": "Pociąg (Acela)", "time": "~3h30", "note": "Od drzwi do drzwi bije lot" },
+      { "route": "Nowy Jork ↔ Filadelfia", "mode": "Pociąg / Autobus", "time": "~1h30", "note": "Najłatwiejsze skupisko" },
+      { "route": "Nowy Jork ↔ Toronto", "mode": "Lot", "time": "~1h30", "note": "Przekroczenie granicy — wymagane eTA" },
+      { "route": "Atlanta ↔ Miami", "mode": "Lot", "time": "~2h", "note": "Jazda to 10h+, niewykonalna" },
+      { "route": "Dallas ↔ Houston", "mode": "Lot / Jazda", "time": "~1h / 4h", "note": "Jedźcie, jeśli więcej niż 2 fanów" },
+      { "route": "Los Angeles ↔ San Francisco", "mode": "Lot", "time": "~1h30", "note": "Najtańsza trasa lotnicza w USA" },
+      { "route": "Los Angeles ↔ Seattle", "mode": "Lot", "time": "~3h", "note": "Rezerwuj wcześnie — popyt fanów" },
+      { "route": "Seattle ↔ Vancouver", "mode": "Jazda / Pociąg", "time": "~3h-4h", "note": "Granica lądowa — najszybsze przejście" },
+      { "route": "Toronto ↔ Vancouver", "mode": "Lot", "time": "~5h", "note": "Najdłuższy lot krajowy w Kanadzie" },
+      { "route": "Dallas ↔ Meksyk", "mode": "Lot", "time": "~2h30", "note": "Najlepsza brama USA→MX" },
+      { "route": "Meksyk ↔ Guadalajara", "mode": "Lot / Autobus", "time": "~1h30 / 7h", "note": "Autobus nocny + tani" },
+      { "route": "Meksyk ↔ Monterrey", "mode": "Lot", "time": "~1h30", "note": "Ponad 10 lotów dziennie" },
+      { "route": "Los Angeles ↔ Miami", "mode": "Lot", "time": "~5h", "note": "Z wybrzeża na wybrzeże — drogo" }
+    ]
+  },
+  "checklist": {
+    "title": "Lista niezbędników na wyjazd fanowski",
+    "subtitle": "Rzeczy, o których grupy zawsze zapominają. Przypisz każdą osobie na liście rzeczy do spakowania w WePlanify.",
+    "items": [
+      "Bilety na mecze (wydrukowane + kopia w aplikacji FIFA)",
+      "Ważny paszport (ważny 6+ miesięcy po lipcu 2026)",
+      "ESTA, eTA lub wiza na każdą granicę",
+      "Ubezpieczenie podróżne obejmujące wszystkie trzy kraje",
+      "Koszulka drużyny, szalik, flaga",
+      "Przezroczysta torba dopuszczona na stadion",
+      "Powerbank (wieloportowy dla grupy)",
+      "Międzynarodowy pakiet danych lub lokalny eSIM",
+      "Krem z filtrem + czapka (czerwcowy upał jest realny)",
+      "Butelka na wodę wielokrotnego użytku (dozwolona na stadionach)",
+      "Gotówka w USD / CAD / MXN na drobne wydatki",
+      "Zatyczki do uszu (na po świętowaniu)"
+    ]
+  },
+  "pullQuote": "Wyjazd na Mistrzostwa Świata to nie wakacje — to 39-dniowa operacja. Potraktuj planowanie tak, jak drużyna traktuje przygotowania, a reszta załatwi się sama.",
+  "planning": {
+    "title": "Planowanie trasy: krok po kroku",
+    "p1": "Zacznij od terminarza. Losowanie grup ustala miasto każdego meczu — to Twój szkielet. Umieść trzy mecze grupowe jako kotwice w planie podróży, a potem dodaj dzień odpoczynku po każdej stronie. Podróż ze stadionu na stadion przez odprawę imigracyjną pochłania więcej czasu, niż ludzie się spodziewają; nigdy nie planuj meczu dzień po dalekobieżnym locie.",
+    "p4": "Ustaw terminy dla grupy, nie tylko dla wyjazdu. ESTA i eTA potrzebują dni na zatwierdzenie w szczycie. Międzynarodowe pakiety danych trzeba ogarnąć przed wyjazdem. Okna anulowania hoteli zamykają się wcześniej, niż ludzie pamiętają. Wspólna lista zadań z terminami, widoczna dla wszystkich, chroni wyjazd przed zawaleniem się pod ciężarem biurokracji tydzień przed pierwszym gwizdkiem."
+  },
+  "budget": {
+    "title": "Porady budżetowe na wyjazdy fanowskie",
+    "p2": "To transport międzymiastowy naprawdę otwiera lub zamyka budżet. Krajowe loty w USA między odległymi miastami gospodarzami (Los Angeles → Miami, Boston → Dallas) kosztują średnio 250–400 USD przy wczesnej rezerwacji, dwa razy tyle w tygodniu meczu. Na krótszych skokach na północnym wschodzie (Boston → Nowy Jork → Filadelfia) Amtrak Acela jest szybszy od drzwi do drzwi i często tańszy. Przekroczenie granicy do Kanady lub Meksyku niemal zawsze oznacza lot — rezerwuj te odcinki, gdy tylko potwierdzą się terminarze.",
+    "p3": "Nocleg to drugi największy koszt i najłatwiejszy do optymalizacji. Hotele w miastach gospodarzach potrajają ceny w dni meczowe — rezerwuj poza oficjalną strefą. Airbnb z trzema sypialniami 30 minut od stadionu, podzielone na cztery lub pięć osób, często bije osobne pokoje hotelowe o 40%. Przyjrzyj się sąsiednim miastom z połączeniami kolejowymi lub krótkimi lotami: nocowanie w Newark zamiast na Manhattanie, w Anaheim zamiast w Los Angeles, w Mississauga zamiast w centrum Toronto."
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      { "q": "Czy potrzebuję wizy, żeby pojechać na Mistrzostwa Świata 2026?", "a": "To zależy od Twojego obywatelstwa i tego, który kraj gospodarz odwiedzasz. USA wymagają ESTA (ruch bezwizowy) lub wizy B-2, Kanada wymaga eTA lub wizy, Meksyk zwykle pozwala na wjazd bezwizowy dla większości zachodnich paszportów do 180 dni. Jeśli Twoja drużyna gra we wszystkich trzech krajach, sprawdź wymagania każdego kraju osobno — ważność dla jednego nie daje wjazdu do innego. Składaj wnioski wcześnie; przetwarzanie zwalnia, gdy zbliża się czerwiec." },
+      { "q": "Jak zaplanować wyjazd, jeśli grupa mojej drużyny nie została jeszcze wylosowana?", "a": "Zbuduj elastyczną bazę — zarezerwuj zwrotne loty do dużego węzła (Nowy Jork, Los Angeles, Meksyk) i ustal nocleg tylko na okno pierwszego meczu. Gdy losowanie ustali miasta, sfinalizuj resztę. WePlanify pozwala szkicować obok siebie kilka scenariuszowych planów podróży i wybrać ten, który pasuje do faktycznych terminarzy." },
+      { "q": "Jaki jest najtańszy sposób podróży między miastami gospodarzami?", "a": "W USA krajowe loty są zwykle tańsze i szybsze niż jazda na dystansach powyżej 600 mil. Na krótszych skokach (np. Boston do Nowego Jorku) Amtrak lub autobusy mogą bić lot, gdy uwzględnisz czas na lotnisku. Przekraczanie granic do Kanady lub Meksyku niemal zawsze oznacza lot — rezerwuj te odcinki wcześnie, bo popyt fanów wywinduje ceny." },
+      { "q": "Na ile meczów realistycznie powinienem próbować pójść?", "a": "Większość fanów śledzących jedną drużynę ogarnia 3 mecze fazy grupowej plus mecz pucharowy, jeśli ich drużyna awansuje. Podróż ze stadionu na stadion pochłania więcej czasu, niż ludzie się spodziewają — zaplanuj co najmniej jeden pełny dzień podróży między nieprzylegającymi miastami. Wbuduj dni zapasowe na jet lag, kolejki do kontroli i niemożliwe do pominięcia strefy kibica." },
+      { "q": "Jak dzielić koszty, podróżując z grupą fanów?", "a": "Korzystaj ze wspólnego narzędzia do śledzenia budżetu od pierwszego dnia. Wyjazdy na Mistrzostwa Świata mają nietypowe struktury kosztów — bilety na mecze opłacane indywidualnie przez FIFA, hotele dzielone według pokoi, transport dzielony według grupy, jedzenie dzielone na posiłek. WePlanify rozdziela te kategorie, więc każdy widzi dokładnie, ile i komu jest winien, bez maratonu obliczeń na koniec wyjazdu." },
+      { "q": "Kiedy powinienem zarezerwować nocleg w miastach gospodarzach?", "a": "Teraz, jeśli możesz. Hotele w miastach gospodarzach w Miami, Nowym Jorku, Los Angeles, Toronto i Meksyku zaczęły się zapełniać na dni meczowe na początku 2026 roku, a ceny są już 3–5 razy wyższe niż normalnie. Szukaj poza oficjalnymi strefami (Airbnb na przedmieściach, sąsiednie miasta z połączeniami kolejowymi) i rezerwuj zwrotne opcje, jeśli droga Twojej drużyny nie jest jeszcze ustalona." },
+      { "q": "Czy warto odwiedzać strefy kibica, jeśli nie mam biletu na mecz?", "a": "Tak. Każde miasto gospodarz ma oficjalny FIFA Fan Festival z transmisjami na wielkich ekranach, jedzeniem i rozrywką na żywo, plus nieoficjalne zloty dzielnicowe, które często mają lepszą atmosferę. Wstęp jest darmowy i mogą być najlepszą częścią dla fanów, którzy nie zdobyli biletów na mecz. Dodaj je do planu podróży jako plany awaryjne." }
+    ]
+  },
+  "discover": {
+    "title": "Odkryj więcej",
+    "roadTrip": { "title": "Road trip", "desc": "Zaplanuj wieloprzystankowy przejazd z ekipą.", "cta": "Czytaj dalej →" },
+    "tripWithFriends": { "title": "Wyjazd ze znajomymi", "desc": "Zaplanuj dowolny wyjazd grupowy bez wysiłku.", "cta": "Czytaj dalej →" },
+    "groupGuide": { "title": "Poradnik wyjazdu grupowego", "desc": "Kompletny przewodnik krok po kroku.", "cta": "Przeczytaj poradnik →" },
+    "bestApps": { "title": "Najlepsze aplikacje do podróży grupowych", "desc": "Nasze porównanie najlepszych narzędzi do wyjazdów grupowych.", "cta": "Przeczytaj artykuł →" }
+  },
+  "cta": {
+    "title": "Zbuduj swój wyjazd na Mistrzostwa Świata 2026",
+    "subtitle": "Terminarze, loty, hotele, budżet — jeden wspólny plan, cała Twoja ekipa na bieżąco.",
+    "button": "Zacznij planować"
+  },
+  "jsonld": {
+    "eventName": "Mistrzostwa Świata FIFA 2026",
+    "eventDescription": "Mistrzostwa Świata FIFA 2026 — 48 reprezentacji narodowych, 16 miast gospodarzy w Stanach Zjednoczonych, Kanadzie i Meksyku, od 11 czerwca do 19 lipca 2026 r. Pierwsze Mistrzostwa Świata współorganizowane przez trzy kraje.",
+    "fifaPerformer": "Reprezentacje narodowe FIFA",
+    "subEventName": "Mecze Mistrzostw Świata 2026 w {city}",
+    "subEventDescription": "Mecze Mistrzostw Świata FIFA 2026 rozgrywane w {city} między 11 czerwca a 19 lipca 2026 r.",
+    "howToName": "Jak zaplanować wyjazd na Mistrzostwa Świata 2026 śledząc swoją drużynę",
+    "howToDescription": "Ustal mecze, zbuduj trasę po wielu miastach, podziel koszty, ogarnij wizy i zostaw miejsce na niezaplanowane chwile, które tworzą wyjazd na Mistrzostwa Świata.",
+    "howToSteps": [
+      { "name": "Oprzyj wyjazd na terminarzu swojej drużyny", "text": "Zacznij od trzech meczów fazy grupowej. Ustal miasta i daty, a potem zmapuj przerwy między meczami jako dni podróży. Szczegółowo planuj tylko fazę grupową — miasta meczów pucharowych zależą od wyników." },
+      { "name": "Ustal poziom zaangażowania grupy ankietą", "text": "Nie każdy ma ten sam budżet czy czas. Przeprowadź ankietę, by ustalić, kto jedzie na całą fazę grupową, kto dołącza na jeden mecz, a kto deklaruje się tylko, jeśli drużyna awansuje. Wynik napędza rezerwacje lotów i podział noclegów." },
+      { "name": "Podziel koszty na kategorie od pierwszego dnia", "text": "Bilety na mecze, loty międzymiastowe, hotele w miastach gospodarzach, transport naziemny i jedzenie nie dzielą się tak samo. Skonfiguruj wspólny budżet z kategorią dla każdego, by obliczenia pozostały czyste, nawet gdy wyjazd trwa trzy tygodnie." },
+      { "name": "Wbuduj dni zapasowe między miastami", "text": "Podróż ze stadionu na stadion, jet lag, kolejki do kontroli i przekraczanie granic pochłaniają realny czas. Zaplanuj co najmniej jeden pełny dzień zapasowy między nieprzylegającymi miastami gospodarzami i jeden dzień odpoczynku przed każdym meczem — Twoje przyszłe ja Ci podziękuje." }
+    ]
+  }
+}

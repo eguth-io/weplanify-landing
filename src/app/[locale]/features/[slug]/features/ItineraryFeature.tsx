@@ -2,33 +2,31 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { TimelineCalendar } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
+// Non-text feature config (not translatable)
+const FEATURE = {
+  slug: "itinerary",
+  icon: "📅",
+  accentColor: "#F6391A",
+  gradientFrom: "#F6391A",
+};
+
+type Copy = {
+  calendarMonth: string;
+  weekdays: string[];
+  dragHint: string;
+  days: {
+    title: string;
+    items: { time: string; icon: string; activity: string }[];
+  }[];
+};
+
+type Feature = { icon: string; title: string; description: string };
+type FaqItem = { question: string; answer: string };
 
 // Timeline item component
 function TimelineItem({
@@ -97,16 +95,21 @@ function DragHandle() {
   );
 }
 
-export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
+export default function ItineraryFeature() {
   const locale = useLocale();
+  const t = useTranslations("itineraryFeature");
+  const copy = t.raw("copy") as Copy;
+  const features = t.raw("page.features") as Feature[];
+  const faqItems = t.raw("page.faqItems") as FaqItem[];
+
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle}
-        featureDescription={data.seoDescription}
+        featureName={t("page.seoTitle")}
+        featureDescription={t("page.seoDescription")}
         locale={locale}
-        slug={data.slug}
-        faqItems={data.faqItems}
+        slug={FEATURE.slug}
+        faqItems={faqItems}
       />
 
       <div className="min-h-screen bg-[#FFFBF5]">
@@ -119,7 +122,7 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
                 animate={{ opacity: 1 }}
                 className="inline-block px-4 py-1 bg-[#F6391A]/10 text-[#F6391A] rounded-full text-sm font-karla mb-4"
               >
-                {data.icon} {data.heroBadge}
+                {FEATURE.icon} {t("page.heroBadge")}
               </motion.span>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -127,9 +130,9 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
                 transition={{ delay: 0.1 }}
                 className="text-4xl lg:text-6xl font-londrina-solid text-[#001E13] mb-6"
               >
-                {data.heroTitle}
+                {t("page.heroTitle")}
                 <br />
-                <span className="text-[#F6391A]">{data.heroTitleHighlight}</span>
+                <span className="text-[#F6391A]">{t("page.heroTitleHighlight")}</span>
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -137,7 +140,7 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
                 transition={{ delay: 0.2 }}
                 className="text-lg text-[#001E13]/70 font-karla max-w-xl mx-auto"
               >
-                {data.heroSubtitle}
+                {t("page.heroSubtitle")}
               </motion.p>
             </div>
 
@@ -151,9 +154,9 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
                 className="lg:col-span-1"
               >
                 <div className="bg-white rounded-2xl p-4 shadow-sm sticky top-24">
-                  <h4 className="font-londrina-solid text-lg text-[#001E13] mb-3">April 2024</h4>
+                  <h4 className="font-londrina-solid text-lg text-[#001E13] mb-3">{copy.calendarMonth}</h4>
                   <div className="grid grid-cols-7 gap-1 text-center text-xs">
-                    {['M', 'T', 'W', 'T', 'F', 'S', 'S'].map((d, i) => (
+                    {copy.weekdays.map((d, i) => (
                       <span key={i} className="text-[#001E13]/40 py-1">{d}</span>
                     ))}
                     {Array.from({ length: 30 }, (_, i) => i + 1).map((d) => (
@@ -176,38 +179,16 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
 
               {/* Timeline */}
               <div className="lg:col-span-4">
-                <TimelineItem
-                  day={1}
-                  title="Arrival in Tokyo"
-                  isActive
-                  items={[
-                    { time: "14:00", icon: "✈️", activity: "Arrive at Narita Airport" },
-                    { time: "16:00", icon: "🏨", activity: "Check-in Hotel Shinjuku" },
-                    { time: "19:00", icon: "🍜", activity: "Dinner at Omoide Yokocho" },
-                  ]}
-                  delay={0.4}
-                />
-                <TimelineItem
-                  day={2}
-                  title="Tokyo - Historic District"
-                  items={[
-                    { time: "09:00", icon: "⛩️", activity: "Senso-ji Temple, Asakusa" },
-                    { time: "12:00", icon: "🍣", activity: "Sushi at Tsukiji Market" },
-                    { time: "15:00", icon: "🌸", activity: "Stroll through Ueno Park" },
-                    { time: "20:00", icon: "🌃", activity: "Tokyo Skytree" },
-                  ]}
-                  delay={0.5}
-                />
-                <TimelineItem
-                  day={3}
-                  title="Tokyo - Modern City"
-                  items={[
-                    { time: "10:00", icon: "🛍️", activity: "Shopping in Shibuya" },
-                    { time: "14:00", icon: "🎮", activity: "Akihabara" },
-                    { time: "18:00", icon: "🌆", activity: "Sunset at Shibuya Sky" },
-                  ]}
-                  delay={0.6}
-                />
+                {copy.days.map((day, i) => (
+                  <TimelineItem
+                    key={i}
+                    day={i + 1}
+                    title={day.title}
+                    isActive={i === 0}
+                    items={day.items}
+                    delay={0.4 + i * 0.1}
+                  />
+                ))}
               </div>
             </div>
 
@@ -219,7 +200,7 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
               className="flex items-center justify-center gap-3 mt-8 text-[#001E13]/40"
             >
               <DragHandle />
-              <span className="text-sm font-karla">Drag to reorganize</span>
+              <span className="text-sm font-karla">{copy.dragHint}</span>
             </motion.div>
           </div>
         </section>
@@ -240,11 +221,11 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="text-3xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-12"
             >
-              {data.featuresTitle}
+              {t("page.featuresTitle")}
             </motion.h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {data.features.map((f, i) => (
+              {features.map((f, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -263,7 +244,7 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
+        <FeatureFAQ items={faqItems} accentColor={FEATURE.accentColor} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-12">
@@ -274,19 +255,19 @@ export default function ItineraryFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="bg-gradient-to-br from-[#F6391A] to-[#F6391A]/80 rounded-[32px] p-8 lg:p-12 text-center"
             >
-              <span className="text-5xl mb-4 block">{data.icon}</span>
+              <span className="text-5xl mb-4 block">{FEATURE.icon}</span>
               <h2 className="text-3xl font-londrina-solid text-white mb-4">
-                {data.ctaTitle}
+                {t("page.ctaTitle")}
               </h2>
               <p className="text-white/80 font-karla mb-8 max-w-md mx-auto">
-                {data.ctaSubtitle}
+                {t("page.ctaSubtitle")}
               </p>
               <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <button className="bg-white text-[#F6391A] font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
-                  {data.ctaButton}
+                  {t("page.ctaButton")}
                 </button>
               </Link>
-              <p className="text-sm text-white/60 mt-3 font-karla">{data.heroCtaSubtext}</p>
+              <p className="text-sm text-white/60 mt-3 font-karla">{t("page.heroCtaSubtext")}</p>
             </motion.div>
           </div>
         </section>

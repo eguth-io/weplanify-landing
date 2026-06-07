@@ -1,0 +1,55 @@
+{
+  "copy": {
+    "heroTitle": "Voli, treni, auto:",
+    "heroTitleHighlight": "mai più biglietti smarriti",
+    "heroSubtitle": "Inoltra le tue email di conferma e noi estraiamo tutto automaticamente.",
+    "importTitle": "Importazione automatica",
+    "importSubtitle": "Collega la tua email o scansiona le tue conferme — tutto viene importato automaticamente.",
+    "tickets": [
+      { "type": "flight", "code": "AF1234", "details": "Parigi → Lisbona — 15 aprile" },
+      { "type": "train", "code": "CP5678", "details": "Lisbona → Porto — 18 aprile" },
+      { "type": "hotel", "code": "BOOKING-9012", "details": "Hotel Porto — 4 notti" }
+    ],
+    "syncTitle": "Si sincronizza con il tuo itinerario",
+    "syncSubtitle": "I trasporti si integrano automaticamente nel tuo programma.",
+    "timeline": [
+      { "time": "08:45", "event": "Volo CDG → LIS", "icon": "✈️", "color": "#61DBD5" },
+      { "time": "10:30", "event": "Arrivo a Lisbona", "icon": "📍", "color": "#F6391A" },
+      { "time": "11:00", "event": "Transfer per l'hotel", "icon": "🚕", "color": "#EEF899" },
+      { "time": "14:00", "event": "Check-in Hotel Alfama", "icon": "🏨", "color": "#8B5CF6" }
+    ]
+  },
+  "page": {
+    "heroBadge": "Gestione dei trasporti",
+    "heroTitle": "Voli, treni, auto:",
+    "heroTitleHighlight": "mai più biglietti smarriti",
+    "heroSubtitle": "Inoltra le tue email di conferma, estraiamo tutto automaticamente. Volo in ritardo? Lo saprai prima della compagnia aerea.",
+    "heroCta": "Centralizzare i miei viaggi",
+    "heroCtaSubtext": "Gratis, senza carta di credito",
+    "socialProofText": "Tutti i tuoi viaggi in un unico posto",
+    "featuresTitle": "Funzionalità di trasporto",
+    "features": [
+      { "title": "Importazione email", "description": "Scansione automatica" },
+      { "title": "Avvisi", "description": "Ritardi e modifiche" },
+      { "title": "Offline", "description": "Accesso senza connessione" },
+      { "title": "Condivisione", "description": "Info per il gruppo" }
+    ],
+    "faqItems": [
+      { "question": "Come importo le mie prenotazioni di trasporto?", "answer": "Tre modi: inoltra le tue email di conferma, collega Gmail/Outlook per l'importazione automatica o scansiona il codice QR del tuo biglietto." },
+      { "question": "Quali tipi di trasporto sono supportati?", "answer": "Tutti! Voli, treni, autobus, traghetti, noleggio auto e persino il carpooling." },
+      { "question": "Ricevo avvisi per i ritardi?", "answer": "Sì, Weplanify monitora i tuoi voli e treni in tempo reale. In caso di ritardo, ricevi una notifica istantanea." },
+      { "question": "Il mio gruppo di viaggio può vedere i dettagli del trasporto?", "answer": "Sì! Tutti i partecipanti al viaggio possono vedere i trasporti aggiunti." },
+      { "question": "Posso accedere ai miei biglietti offline?", "answer": "Assolutamente. Scarica i tuoi biglietti per accedervi anche senza connessione a internet." }
+    ],
+    "ctaTitle": "Non perdere mai più un biglietto",
+    "ctaSubtitle": "Tutti i tuoi viaggi accessibili in 2 secondi, anche offline",
+    "ctaButton": "Trova tutti i miei biglietti",
+    "seoTitle": "Gestione dei trasporti - Voli, treni e viaggi | Weplanify",
+    "seoDescription": "Gestisci tutti i tuoi viaggi in un unico posto. Importazione automatica di voli e treni, avvisi in tempo reale e accesso offline ai tuoi biglietti.",
+    "stats": [
+      { "value": "Auto", "label": "importazione" },
+      { "value": "Tempo reale", "label": "avvisi" },
+      { "value": "Offline", "label": "accesso" }
+    ]
+  }
+}

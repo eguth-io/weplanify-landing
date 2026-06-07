@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "SquadTrip Alternative: Free Group Trip Planner (2026) | WePlanify",
+    "description": "Looking for a SquadTrip alternative? WePlanify offers real-time itineraries, shared polls, group budgets and packing lists — free, bilingual (EN/FR)."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "alternatives": "Alternatives"
+  },
+  "jsonld": {
+    "breadcrumbCurrent": "WePlanify vs SquadTrip"
+  },
+  "heroTitle": "WePlanify vs SquadTrip",
+  "heroSubtitle": "Best Free Group Trip Planner? (2026)",
+  "heroIntro": "Both WePlanify and SquadTrip help groups organize travel together, but they solve different problems. SquadTrip is built around payment collection and guest logistics. WePlanify is an all-in-one collaborative planner with polls, shared budgets, and itineraries — completely free.",
+  "verdictTitle": "Quick Verdict",
+  "verdict": "SquadTrip focuses on payment collection and guest logistics for trip organizers. WePlanify focuses on collaborative planning with polls, shared budgets, and itineraries — completely free, no payment processing fees.",
+  "comparisonTitle": "Feature-by-Feature Comparison",
+  "featureHeader": "Feature",
+  "squadtripShinesTitle": "Where SquadTrip Shines",
+  "squadtripShinesPoints": [
+    {
+      "title": "Payment collection",
+      "desc": "SquadTrip lets organizers collect payments from trip participants. If your group trip involves collecting deposits, splitting costs for accommodation, or managing waivers, SquadTrip handles that."
+    },
+    {
+      "title": "Guest forms and waivers",
+      "desc": "Participants can sign waivers, fill out dietary preferences, or submit passport details. SquadTrip provides structured forms and guest management tools beyond simple invite links."
+    },
+    {
+      "title": "Professional trip organizing",
+      "desc": "If you run a travel business or organize group trips professionally, SquadTrip offers payment and logistics features oriented toward that use case."
+    }
+  ],
+  "weplanifyWinsTitle": "Where WePlanify Wins",
+  "weplanifyWinsPoints": [
+    {
+      "title": "Group decision-making",
+      "desc": "WePlanify offers built-in polls and voting so your group can decide on destinations, dates, and activities together. No more endless WhatsApp threads — everyone votes, the group decides."
+    },
+    {
+      "title": "100% free, no hidden fees",
+      "desc": "Every core feature in WePlanify is free. No payment processing fees, no premium tiers for essential tools. Plan unlimited trips at zero cost."
+    },
+    {
+      "title": "Complete planning toolkit",
+      "desc": "Packing lists, activity discovery, shared budgets, and collaborative itineraries — all in one place. SquadTrip focuses on logistics while WePlanify covers the entire planning journey."
+    },
+    {
+      "title": "Bilingual support",
+      "desc": "WePlanify is fully available in English and French. SquadTrip is English-only, which can be a dealbreaker for francophone groups."
+    }
+  ],
+  "whoShouldTitle": "Who Should Choose Each?",
+  "chooseSquadtrip": "Choose SquadTrip if",
+  "chooseSquadtripPoints": [
+    "You need to collect payments from trip participants",
+    "You organize trips professionally and need guest forms/waivers",
+    "Payment logistics are your biggest planning headache"
+  ],
+  "chooseWeplanify": "Choose WePlanify if",
+  "chooseWeplanifyPoints": [
+    "You want your whole group to plan together collaboratively",
+    "You need polls, shared budgets, and packing lists in one app",
+    "You want a completely free solution with no fees",
+    "Your group includes French-speaking members"
+  ],
+  "faqTitle": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "q": "Why switch from SquadTrip to WePlanify?",
+      "a": "SquadTrip is built around payment collection, which means planning tools like polls, shared budgets, and packing lists are absent. If your group needs to collaboratively decide on destinations, track expenses, and organize together, WePlanify covers all of that — completely free."
+    },
+    {
+      "q": "What does SquadTrip lack?",
+      "a": "SquadTrip does not offer group voting or polls, collaborative packing lists, activity discovery, or French language support. Its focus on payment processing means the actual planning experience is limited compared to WePlanify."
+    },
+    {
+      "q": "Is SquadTrip really free?",
+      "a": "SquadTrip offers free trip pages, but its core value is payment collection, which involves processing fees. WePlanify is 100% free with no transaction fees — every feature is included at no cost."
+    }
+  ],
+  "ctaTitle": "Ready to plan your next group trip?",
+  "ctaButton": "Get started for free",
+  "crossLinksTitle": "Discover More",
+  "badges": {
+    "free100": "100% free",
+    "partialFees": "Fees on payments",
+    "paymentCollection": "With payment collection",
+    "coreFeature": "Core feature",
+    "basic": "Basic",
+    "advanced": "Forms, waivers",
+    "webApp": "Web app"
+  },
+  "features": {
+    "collab_itinerary": "Collaborative itinerary",
+    "polls": "Group polls / voting",
+    "budget": "Shared budget tracker",
+    "payment": "Payment processing",
+    "packing": "Packing lists",
+    "guest_mgmt": "Guest management",
+    "discovery": "Activity discovery",
+    "free": "Free",
+    "french": "French language",
+    "mobile": "Mobile app",
+    "realtime": "Real-time collaboration"
+  },
+  "midCta": "Try WePlanify free →",
+  "crossLinks": {
+    "fullComparison": {
+      "title": "Full Comparison",
+      "text": "Compare WePlanify with Wanderlog, SquadTrip, Troupe and TripIt in our full comparison.",
+      "link": "View comparison →"
+    },
+    "tripWithFriends": {
+      "title": "Trip with Friends",
+      "text": "Plan a group trip with friends effortlessly using WePlanify.",
+      "link": "Read more →"
+    },
+    "guide": {
+      "title": "Guide: How to Plan a Group Trip",
+      "text": "The complete step-by-step guide to planning a successful group trip.",
+      "link": "Read the guide →"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Todo lo que necesitas para planear un viaje en grupo",
+  "slides": [
+    {
+      "title": "Explora y propón ideas al grupo",
+      "description": "Encuentra actividades, restaurantes, alojamiento y transporte directamente en la app. Añádelos al itinerario o propónselos al grupo para votar.",
+      "ctaLabel": "Explorar destinos",
+      "stats": [
+        {
+          "value": "190+",
+          "label": "destinos posibles"
+        }
+      ]
+    },
+    {
+      "title": "Decidid juntos con encuestas",
+      "description": "¿Dónde dormir? ¿Qué hacer? ¿Cuándo salir? Crea una encuesta, cada uno vota y la decisión está tomada. El grupo avanza, el viaje también.",
+      "ctaLabel": "Crear una encuesta",
+      "stats": [
+        {
+          "value": "1000+",
+          "label": "encuestas al día"
+        }
+      ]
+    },
+    {
+      "title": "Un itinerario claro, día a día",
+      "description": "Cada día del viaje está estructurado: qué hacer, dónde comer, dónde dormir, cómo desplazarse. Todo queda claro para todos.",
+      "ctaLabel": "Crear mi itinerario",
+      "stats": [
+        {
+          "value": "10+",
+          "label": "socios"
+        }
+      ]
+    }
+  ]
+}

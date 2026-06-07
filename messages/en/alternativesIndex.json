@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Best Group Trip Planning Apps Compared (2026) — WePlanify",
+    "description": "Side-by-side comparison of the best group travel apps: Wanderlog, SquadTrip, TripIt, Stippl, Splitwise. Pick the right one for your next group adventure."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "currentLd": "Alternatives",
+    "currentNav": "Alternatives"
+  },
+  "jsonld": {
+    "itemListName": "Best Group Trip Planner Apps 2026"
+  },
+  "featureColumnHeading": "Feature",
+  "features": [
+    { "key": "collab_itinerary", "label": "Collaborative itinerary" },
+    { "key": "polls", "label": "Group polls / voting" },
+    { "key": "budget", "label": "Shared budget tracker" },
+    { "key": "packing", "label": "Packing lists" },
+    { "key": "discovery", "label": "Activity discovery" },
+    { "key": "free", "label": "Free plan" },
+    { "key": "french", "label": "Available in French" },
+    { "key": "realtime", "label": "Real-time collaboration" },
+    { "key": "mobile", "label": "Mobile app" }
+  ],
+  "competitorDetails": [
+    {
+      "name": "Wanderlog",
+      "text": "Wanderlog is a map-based itinerary builder with route visualization. It lacks group polls, shared budget tracking, and French language support — features that are essential for group trip planning."
+    },
+    {
+      "name": "SquadTrip",
+      "text": "SquadTrip handles group payments and RSVP management. It does not include packing lists, activity discovery, or French language support, so groups still need additional tools to plan the full trip."
+    },
+    {
+      "name": "Troupe",
+      "text": "Troupe lets groups vote on activity suggestions. It covers only the decision phase — there is no budget tracking, no packing lists, and no French support, leaving most trip logistics unaddressed."
+    },
+    {
+      "name": "TripIt",
+      "text": "TripIt assembles itineraries from forwarded booking emails. It is designed for solo travelers — group collaboration, polls, and shared budgets are not available, and most features require a paid Pro subscription."
+    },
+    {
+      "name": "Splitwise",
+      "text": "Splitwise tracks shared expenses across a group. It has no trip planning features — no itinerary, no polls, no packing lists — so most groups need a second app alongside it. WePlanify includes built-in budget tracking along with every other planning tool."
+    },
+    {
+      "name": "Stippl",
+      "text": "Stippl is a visual travel planner with community-shared itineraries and photo journals. It lacks group polls, shared budget tracking, and French language support — making it more suited for solo travelers than for coordinating a group trip."
+    }
+  ],
+  "heroTitle": "Best Group Trip Planning Apps in 2026",
+  "heroSubtitle": "A complete, side-by-side comparison",
+  "heroIntro": "Planning a trip with friends or family should be exciting, not stressful. We compared the most popular group travel apps so you can pick the right tool for your next adventure. Features, pricing, and everything you need to decide.",
+  "comparisonTitle": "Feature Comparison",
+  "competitorsTitle": "A Closer Look at Each App",
+  "whyTitle": "Why Choose WePlanify?",
+  "whyPoints": [
+    {
+      "title": "All-in-one platform",
+      "desc": "Itinerary, budget, polls, packing lists and activity discovery in a single app. No need to juggle three different tools."
+    },
+    {
+      "title": "Free forever",
+      "desc": "Every core feature is free with no hidden paywalls or trial limits. Plan as many trips as you want."
+    },
+    {
+      "title": "Bilingual (EN / FR)",
+      "desc": "Fully available in English and French — a rare find among travel planning apps."
+    },
+    {
+      "title": "Built for group decisions",
+      "desc": "Polls, voting, and real-time collaboration ensure everyone has a say in the plan."
+    }
+  ],
+  "ctaTitle": "Ready to plan your next group trip?",
+  "ctaButton": "Get started for free",
+  "comingSoon": "Coming soon",
+  "freemium": "Freemium",
+  "webApp": "Web app",
+  "discoverMore": {
+    "heading": "Discover More",
+    "cards": {
+      "friends": {
+        "title": "Trip with Friends",
+        "desc": "Plan a group trip with friends effortlessly using WePlanify.",
+        "cta": "Read more →"
+      },
+      "bachelorette": {
+        "title": "Plan a Bachelorette Trip",
+        "desc": "Everything you need to plan an unforgettable bachelorette party trip, stress-free.",
+        "cta": "Read more →"
+      },
+      "guide": {
+        "title": "Guide: How to Plan a Group Trip",
+        "desc": "The complete step-by-step guide to planning a successful group trip.",
+        "cta": "Read the guide →"
+      }
+    }
+  }
+}

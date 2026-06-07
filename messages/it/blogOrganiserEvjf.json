@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "title": "Come organizzare un addio al nubilato — Guida completa 2026",
+    "description": "Tutto ciò che ti serve per organizzare il viaggio di addio al nubilato perfetto: idee per la destinazione, divisione del budget, attività e come tenere tutti contenti."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Come organizzare un addio al nubilato"
+  },
+  "links": {
+    "fourQuestions": {
+      "before": "Ti serve un sondaggio per allinearvi sulle date o sulle preferenze di destinazione? ",
+      "linkText": "La funzionalità dei sondaggi di WePlanify",
+      "after": " risolve la questione in trenta secondi."
+    },
+    "destinationTypes": {
+      "before": "Stai organizzando un viaggio di addio al nubilato? ",
+      "linkText": "Scopri come WePlanify semplifica tutto l'addio al nubilato dall'inizio alla fine",
+      "after": "."
+    },
+    "budget": {
+      "before": "Il tracker del budget condiviso di WePlanify è disponibile qui: ",
+      "linkText": "Budget condiviso",
+      "after": " — tracciamento in tempo reale, calcolo automatico dei rimborsi."
+    },
+    "activities": {
+      "before": "Coordina anche i bagagli del gruppo con ",
+      "linkText": "le liste per i bagagli condivise di WePlanify",
+      "after": " — niente più doppioni o oggetti dimenticati."
+    }
+  },
+  "destinationBestForLabel": "Ideale per: ",
+  "cards": {
+    "bachelorette": {
+      "title": "Pianificatore di addii al nubilato",
+      "desc": "Tutto ciò che ti serve per organizzare il tuo viaggio di addio al nubilato con WePlanify: sondaggi, budget condiviso e itinerario collaborativo."
+    },
+    "friends": {
+      "title": "Viaggio con gli amici",
+      "desc": "Organizza un viaggio di gruppo con gli amici senza fatica usando WePlanify."
+    },
+    "guide": {
+      "title": "Guida ai viaggi di gruppo",
+      "desc": "Come organizzare un viaggio di gruppo dall'inizio alla fine, passo dopo passo."
+    },
+    "alternatives": {
+      "title": "Migliori app per organizzare viaggi di gruppo",
+      "desc": "Un confronto onesto delle migliori app per organizzare un viaggio di gruppo nel 2026."
+    }
+  },
+  "content": {
+    "readTime": "9 min di lettura",
+    "heroTag": "Guida completa 2026",
+    "h1": "Come organizzare un addio al nubilato — Guida completa 2026",
+    "intro": "Sulla carta, un addio al nubilato sembra semplice: riunire le amiche più care della sposa, scegliere una destinazione, divertirsi. In pratica, stai coordinando da sei a dodici persone con impegni, budget, gusti e opinioni molto diversi su cosa conti come un bel momento — tutto mentre cerchi di tenere la sposa beatamente all'oscuro del caos dietro le quinte. Questa guida taglia il superfluo e ti dà uno schema concreto per organizzare un viaggio di addio al nubilato che le persone si godranno davvero, non solo sopravvivranno.",
+    "tocTitle": "Indice",
+    "toc": [
+      { "id": "why-hard", "label": "Perché organizzare un addio al nubilato è più difficile di quanto sembri" },
+      { "id": "four-questions", "label": "Le quattro domande da risolvere per prime" },
+      { "id": "destination-types", "label": "Tipi di destinazione" },
+      { "id": "budget-conversation", "label": "La conversazione sul budget che nessuno vuole avere" },
+      { "id": "timeline", "label": "Tabella di marcia" },
+      { "id": "activities", "label": "Attività" },
+      { "id": "faq", "label": "FAQ" }
+    ],
+    "sections": {
+      "whyHard": {
+        "id": "why-hard",
+        "title": "Perché organizzare un addio al nubilato è più difficile di quanto sembri",
+        "paragraphs": [
+          "Il problema non è la logistica — sono le persone. Un addio al nubilato riunisce donne che magari si conoscono a malapena, unite solo dal loro legame con la sposa. C'è la damigella d'onore che ha opinioni forti su tutto, l'amica dell'università con un budget ristretto e troppo imbarazzata per dirlo, la collega di lavoro che ha appena scoperto di essere incinta e la sorella che vive in un fuso orario diverso e risponde sempre tardi ai messaggi di gruppo. Gestire questa matrice sociale mentre prenoti hotel, pianifichi attività e rincorri gli acconti è genuinamente estenuante.",
+          "C'è anche la pressione della perfezione. A differenza di un normale viaggio con gli amici, un addio al nubilato porta un peso emotivo. Dovrebbe essere un traguardo, un ultimo grande momento, un ricordo che la sposa custodirà per sempre. Quella pressione trasforma piccoli intoppi — un ristorante al completo, un pomeriggio piovoso, un disaccordo su dove mangiare — in fattori di stress sproporzionati. Chi organizza finisce per portare un peso a cui nessuno si è iscritto.",
+          "Il terzo livello sono le dinamiche sociali. Pinterest ha creato una corsa agli armamenti di estetiche elaborate per gli addii al nubilato — fasce coordinate, outfit pastello abbinati, itinerari curati nei minimi dettagli pieni di momenti instagrammabili. Non tutte le spose lo vogliono. Non tutti i gruppi possono permetterselo. E a volte il divario tra la versione Instagram dell'addio al nubilato e ciò che le persone vogliono davvero fare causa veri attriti. La soluzione sono conversazioni brutalmente oneste fin dall'inizio — e gli strumenti giusti per tenere il gruppo allineato senza trasformare il processo di pianificazione stesso in una fonte di conflitto."
+        ]
+      },
+      "fourQuestions": {
+        "id": "four-questions",
+        "title": "Parti da qui: le quattro domande da risolvere per prime",
+        "intro": "Prima di guardare un solo hotel o una sola attività, rispondete a queste quattro domande come gruppo. Vi risparmieranno settimane di botta e risposta.",
+        "questions": [
+          {
+            "title": "Chi fa davvero parte del gruppo?",
+            "text": "Fai confermare la lista definitiva degli invitati prima di pianificare qualsiasi altra cosa. Ogni persona aggiunta dopo cambia i conti del budget, le opzioni di alloggio e la logistica delle attività. Sii realista: non tutti quelli che dicono 'sì' nell'entusiasmo iniziale daranno seguito. Fissa una scadenza precisa per le conferme — due settimane bastano — e pianifica intorno a chi si è impegnato entro quella data."
+          },
+          {
+            "title": "Qual è la fascia di budget onesta?",
+            "text": "Non impostare un budget basato su quanto vorresti che tutti potessero spendere. Chiedi a ciascuno privatamente con cosa si sente a proprio agio, trova la mediana e pianifica intorno a quella cifra. Se c'è un'ampia variabilità, considera un modello a livelli: un itinerario di base che tutti possano permettersi, con extra opzionali per chi vuole di più. Usa un tracker del budget condiviso fin dal primo giorno così non ci sono sorprese su quale sarà il totale a persona."
+          },
+          {
+            "title": "Cosa vuole davvero la sposa?",
+            "text": "Non ciò che Pinterest dice che dovrebbe volere. Non ciò che vorresti tu al suo posto. Chiediglielo direttamente, o chiedilo alla persona che la conosce meglio. Alcune spose vogliono un weekend scatenato a Ibiza; altre desiderano genuinamente un accogliente ritiro alla spa con le loro cinque amiche più care e nessuna fascia in vista. Non puoi organizzare un grande addio al nubilato senza saperlo, e dare per scontato di saperlo è l'errore più comune che gli organizzatori commettono."
+          },
+          {
+            "title": "Weekend o più lungo?",
+            "text": "Un weekend di tre giorni è la soluzione ideale per la maggior parte dei gruppi: abbastanza lungo da sembrare un vero viaggio, abbastanza breve perché tutti possano prendere ferie dal lavoro e permetterselo. Da cinque a sette giorni funziona per i gruppi con impegni flessibili e budget più alti — ma più giorni significa più coordinamento, più pasti da pianificare e più occasioni perché la dinamica di gruppo si sfilacci. A meno che la sposa non voglia specificamente un viaggio lungo, tienilo contenuto."
+          }
+        ]
+      },
+      "destinationTypes": {
+        "id": "destination-types",
+        "title": "Tipi di destinazione",
+        "intro": "La destinazione dà il tono a tutto il resto. Ecco le quattro categorie principali, cosa offrono e quale tipo di sposa si adatta meglio a ciascuna.",
+        "types": [
+          {
+            "title": "Citybreak",
+            "text": "Un weekend lungo in una città vivace — Parigi, Barcellona, Amsterdam, Lisbona, Nashville, New Orleans — dà al gruppo la massima flessibilità. Attività diurne, vita notturna, opzioni di ristoranti ed esperienze culturali sono tutte a portata di mano. I citybreak si adattano ai gruppi con gusti misti perché c'è sempre qualcosa per tutti. La sfida è che le città migliori per gli addii al nubilato sono costose, soprattutto per l'alloggio con un grande gruppo. Prenota un appartamento con cucina invece di più camere d'albergo — è più economico, più socievole e ti dà una base per fare un drink prima di uscire la sera.",
+            "bestFor": "Gruppi misti, spose che amano la cultura e la vita notturna, chi viaggia per la prima volta"
+          },
+          {
+            "title": "Fuga al mare",
+            "text": "Sole, una piscina o una spiaggia, una villa o un hotel. La fuga al mare è il classico formato per l'addio al nubilato per un motivo: richiede poca pianificazione e dà molto divertimento. Le giornate si organizzano attorno alla piscina, i pasti sono facili e le serate possono essere rilassate o vivaci quanto il gruppo desidera. L'Algarve, Maiorca, Mykonos e la costa croata sono i preferiti europei. Per i gruppi statunitensi, Nashville batte Miami sul rapporto qualità-prezzo, ma le Florida Keys sono difficili da battere per un gruppo piccolo e affiatato. Il rischio principale è che i viaggi al mare possano diventare ripetitivi dopo il secondo giorno — assicurati di avere una o due attività strutturate per dare ritmo al programma.",
+            "bestFor": "Spose che vogliono rilassarsi, gruppi amanti del sole, weekend lunghi"
+          },
+          {
+            "title": "Ritiro alla spa",
+            "text": "Non tutti gli addii al nubilato vogliono un weekend chiassoso. Alcune spose desiderano genuinamente un ritiro alla spa: massaggi, saune a infrarossi, piscine termali, buon cibo e serate tranquille. Questo formato funziona alla grande per gruppi più piccoli e affiatati — da quattro a sei persone invece di dodici. È anche più prevedibile dal punto di vista del budget rispetto a un citybreak perché si soggiorna in gran parte in un unico posto. La sfida è che richiede l'adesione di tutto il gruppo; se metà delle invitate si aspetta discoteche e l'altra metà si aspetta silenzio, nessuna si diverte.",
+            "bestFor": "Spose introverse, gruppi orientati al benessere, raduni più piccoli e intimi"
+          },
+          {
+            "title": "Viaggio avventura",
+            "text": "Surf nei Paesi Baschi, trekking in Slovenia, un weekend in bici in Toscana, glamping in Galles. Gli addii al nubilato avventura stanno crescendo in popolarità perché creano esperienze condivise che uniscono il gruppo in un modo che la vita notturna raramente riesce. Le storie del giorno in cui siete tutte cadute dai paddleboard sono migliori di qualsiasi serata in discoteca. Il rovescio della medaglia: i viaggi avventura richiedono più pianificazione fisica, considerazioni sull'assicurazione e conversazioni oneste sui livelli di forma fisica. Non prenotare un'escursione impegnativa sperando che tutte ce la facciano.",
+            "bestFor": "Spose attive, gruppi che passano già del tempo all'aperto insieme"
+          }
+        ]
+      },
+      "budgetConversation": {
+        "id": "budget-conversation",
+        "title": "La conversazione sul budget che nessuno vuole avere",
+        "paragraphs": [
+          "I soldi sono il punto in cui i piani per l'addio al nubilato vanno in pezzi. Non perché le persone siano malintenzionate — ma perché gli organizzatori spesso rimandano la vera conversazione sul budget finché non sono dovuti gli acconti e i voli sono prenotati, momento in cui la persona che davvero non può permetterselo si sente intrappolata e piena di rancore. Avere la conversazione sul budget presto ed esplicitamente, prima di qualsiasi impegno, è la cosa più importante in assoluto che puoi fare per la dinamica di gruppo.",
+          "La sposa tradizionalmente non paga la propria quota di alloggio e attività — quel costo viene diviso tra le invitate. Assicurati che tutti nel gruppo lo capiscano prima che i costi siano definitivi. In un viaggio per otto persone in cui l'alloggio costa 1.500€, sono 215€ a persona invece di 187€. Non molto in termini assoluti, ma vale la pena essere espliciti fin dall'inizio.",
+          "Centralizza ciò che puoi. Prenota in anticipo alloggio, transfer e attività di gruppo tramite una sola persona o uno strumento di pianificazione condiviso così i soldi scorrono in modo chiaro e nessuno resta scoperto per settimane. Usa un tracker del budget condiviso così tutti possano vedere il totale progressivo — i gruppi che tracciano la spesa man mano evitano la scomoda riconciliazione di fine viaggio che può rovinare l'ultimo giorno."
+        ],
+        "tips": [
+          {
+            "title": "Imposta un budget a persona, non un budget totale",
+            "text": "Un budget totale di 3.000€ sembra gestibile finché non ti rendi conto che il gruppo è di quindici persone e copre meno di 200€ a testa. Ragiona sempre in termini a persona fin dall'inizio."
+          },
+          {
+            "title": "Separa l'indispensabile dal piacevole-da-avere",
+            "text": "L'alloggio e un paio di attività chiave non sono negoziabili. Outfit coordinati, decorazioni personalizzate e gift bag elaborate sono opzionali. Conosci la differenza prima di iniziare a spendere."
+          },
+          {
+            "title": "Gestisci con tatto i redditi diversi",
+            "text": "Se qualcuno nel gruppo ha un budget più ristretto, lascia che contribuisca in modo diverso — ospitando una cena, coordinando la logistica, coprendo i costi più piccoli — invece di costringerla oltre le sue possibilità o farla sentire esclusa. La generosità funziona meglio delle conversazioni imbarazzanti sui sussidi."
+          },
+          {
+            "title": "Usa un tracker del budget condiviso fin dal primo giorno",
+            "text": "Strumenti come il tracker del budget integrato di WePlanify permettono a tutti di vedere cosa è stato pagato, cosa è dovuto e quale sarà il costo finale a persona — senza che nessuno debba rincorrere fogli di calcolo o richieste di pagamento alla fine del viaggio."
+          }
+        ]
+      },
+      "timeline": {
+        "id": "timeline",
+        "title": "Tabella di marcia",
+        "intro": "L'organizzazione di un addio al nubilato tende a espandersi fino a riempire qualunque tempo le concedi — o a comprimersi in una corsa stressante dell'ultimo minuto se la lasci troppo tardi. Ecco una tabella di marcia realistica che fa procedere le cose senza il caos.",
+        "steps": [
+          {
+            "when": "3 mesi prima",
+            "tasks": [
+              "Conferma la lista degli invitati e ottieni conferme precise",
+              "Affronta la conversazione onesta sul budget con il gruppo",
+              "Concordate le date — usa un sondaggio per trovare quando tutti sono liberi",
+              "Scegli un tipo di destinazione in base alle reali preferenze della sposa",
+              "Prenota l'alloggio (questo fissa tutto il resto)",
+              "Avvia uno spazio di pianificazione condiviso così tutti possano vedere il piano"
+            ]
+          },
+          {
+            "when": "6 settimane prima",
+            "tasks": [
+              "Prenota il trasporto — voli, treno o transfer di gruppo",
+              "Cerca e seleziona le attività — usa un sondaggio di gruppo per restringere la scelta",
+              "Prenota le attività imperdibili che richiedono prenotazione in anticipo",
+              "Imposta un tracker del budget condiviso e registra gli acconti man mano",
+              "Conferma le restrizioni alimentari e le esigenze di accessibilità per ogni invitata"
+            ]
+          },
+          {
+            "when": "2 settimane prima",
+            "tasks": [
+              "Invia l'itinerario definitivo al gruppo — un documento pulito, non un thread di messaggi",
+              "Prenota i ristoranti per le cene di gruppo",
+              "Acquista eventuali decorazioni o oggetti personalizzati (fasce, ecc.) se li usate",
+              "Assegna una lista per i bagagli condivisa così tutti sanno quali oggetti comuni sono coperti",
+              "Sollecita eventuali pagamenti o conferme in sospeso"
+            ]
+          },
+          {
+            "when": "Il giorno prima",
+            "tasks": [
+              "Conferma i dettagli del check-in dell'alloggio e condividili con il gruppo",
+              "Prepara un piccolo kit di emergenza: cerotti, antidolorifici, caricabatterie, snack",
+              "Tieni il tracker del budget aperto e aggiornato",
+              "Dormi bene — ne avrai bisogno"
+            ]
+          }
+        ]
+      },
+      "activities": {
+        "id": "activities",
+        "title": "Attività",
+        "paragraphs": [
+          "Il miglior itinerario per un addio al nubilato ha una struttura chiara ma molto spazio per respirare. I viaggi sovraccarichi sembrano una gita scolastica; quelli troppo vuoti scivolano in discussioni su cosa fare dopo. Punta a una o due attività portanti al giorno, con tempo libero inserito per la spontaneità.",
+          "La regola d'oro: assicurati che almeno un'attività sia scelta specificamente perché la sposa la adora, non perché è la solita roba da addio al nubilato. Se odia i corsi di preparazione cocktail ma adora la ceramica, prenota la ceramica. Se non le sono mai piaciute le serate in discoteca ma vive per una lunga cena alcolica con le persone preferite, dai la priorità a quello. La versione Instagram dell'addio al nubilato non è il punto.",
+          "Evita il divertimento forzato. Outfit coordinati, fasce e simboli da neopatentata vanno bene se la sposa ci sta — ma se ha già detto che ne sarebbe mortificata, non farlo. Lo stesso vale per gli spogliarellisti, le cacce al tesoro e i giochi basati sul mettere in imbarazzo la sposa. Il divertimento che richiede a tutti di fingere felicità tende a cadere nel vuoto."
+        ],
+        "ideas": [
+          {
+            "category": "Di giorno",
+            "items": [
+              "Vela privata o gita in barca",
+              "Degustazione di vini o cocktail (prenota una sessione privata, non il tour turistico)",
+              "Mattinata alla spa con trattamenti individuali",
+              "Laboratorio di ceramica, soffiatura del vetro o arte",
+              "Paddleboard, lezione di surf o kayak",
+              "Corso di cucina con uno chef locale",
+              "Giornata di shopping vintage in una nuova città"
+            ]
+          },
+          {
+            "category": "Di sera",
+            "items": [
+              "Cena con chef privato nel vostro alloggio",
+              "Prenotazione al ristorante che la sposa voleva provare",
+              "Corso di preparazione cocktail (ma solo se lo vuole davvero)",
+              "Karaoke — genuinamente sottovalutato per i gruppi misti",
+              "Serata all'opera, in un jazz club o a uno spettacolo di stand-up",
+              "Serata al casinò (puntate basse, alto valore di intrattenimento)"
+            ]
+          },
+          {
+            "category": "Tranquille",
+            "items": [
+              "Serata cinema nella villa con il film scelto dalla sposa",
+              "Serata di giochi da tavolo con del buon vino",
+              "Passeggiata al tramonto seguita da una lunga cena",
+              "Sessione mattutina di yoga o pilates",
+              "Brunch al mercato contadino"
+            ]
+          }
+        ],
+        "outro": "Vota le attività usando un sondaggio di gruppo prima di prenotare qualsiasi cosa — evita la classica situazione in cui chi organizza prenota qualcosa di costoso e due persone lo detestano. La funzionalità dei sondaggi di WePlanify richiede trenta secondi per essere impostata e dà a tutti pari voce in capitolo senza un dibattito da sessanta messaggi nella chat di gruppo."
+      }
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "items": [
+        {
+          "q": "Con quanto anticipo dovresti organizzare un addio al nubilato?",
+          "a": "Per un viaggio di un weekend, tre mesi sono comodi — ti danno abbastanza tempo per allineare le date di tutti, prenotare l'alloggio prima che i prezzi salgano e organizzare le attività senza fretta. Se stai pianificando qualcosa di più elaborato (voli internazionali, affitto di una villa, destinazioni molto richieste), quattro-cinque mesi sono più sicuri. Per una serata locale o una semplice staycation, sei settimane di solito bastano. L'errore più grande è aspettare fino a due mesi prima del matrimonio, quando l'agenda di tutti è già piena di prove dell'abito e altri eventi del matrimonio."
+        },
+        {
+          "q": "Come si gestiscono budget diversi nel gruppo?",
+          "a": "Affronta la conversazione presto e in privato. Chiedi a ciascuno individualmente con quanto si sente a proprio agio a spendere — non in un messaggio di gruppo dove la pressione sociale distorce le risposte. Trova la mediana e pianifica intorno ad essa. Offri extra opzionali per chi vuole spendere di più, invece di pianificare un viaggio costoso sperando che tutti trovino un modo per gestirlo. Se qualcuno davvero non può permettersi il viaggio come pianificato, lascia che contribuisca in modo diverso — coordinando la logistica, gestendo la comunicazione, coprendo un costo più piccolo — invece di chiederle di andare oltre le sue possibilità."
+        },
+        {
+          "q": "Qual è un buon budget per un viaggio di addio al nubilato a persona?",
+          "a": "Per un citybreak nel Regno Unito o in Europa, dai 300 ai 600€ a persona per un viaggio di tre notti coprono trasporto, alloggio e un paio di attività se ci si organizza bene. I viaggi al mare o in villa nel Sud Europa vanno dai 400 agli 800€ a persona per un weekend lungo. I viaggi nazionali negli USA variano molto — i weekend a Nashville, Miami e New York possono andare dai 500 ai 1.200$ a persona a seconda delle dimensioni del gruppo e del tipo di alloggio. Ricorda: la sposa tradizionalmente non paga la propria quota, quindi tieni conto di quel costo nel calcolo a persona fin dall'inizio."
+        },
+        {
+          "q": "Quante persone sono troppe per un viaggio di addio al nubilato?",
+          "a": "Da otto a dieci persone è il limite massimo pratico per un viaggio coeso. Oltre, le prenotazioni al ristorante diventano un incubo, le attività richiedono di prenotare interi locali e il gruppo inevitabilmente si frammenta. I gruppi numerosi significano anche più sovraccarico logistico — più persone da coordinare, più variabili da gestire, più probabilità che qualcuno si tiri indietro all'ultimo minuto e mandi all'aria il budget. Se la lista degli invitati è davvero di quindici o più persone, considera di dividerla in due gruppi con viaggi separati, o di scegliere un formato che funzioni per i gruppi numerosi per natura — una villa con chef privato, una barca noleggiata, l'affitto esclusivo di un locale."
+        },
+        {
+          "q": "E se la sposa non vuole un addio al nubilato tradizionale?",
+          "a": "Pianifica ciò che vuole davvero. Non c'è alcuna regola che dica che un addio al nubilato debba prevedere fasce, spogliarellisti o una serata in discoteca. Se vuole un tranquillo weekend alla spa con tre amiche, quello è l'addio al nubilato. Se vuole un viaggio di trekking in montagna, quello è l'addio al nubilato. Il modo migliore per scoprirlo è chiederglielo direttamente — o chiedere alla sua amica più cara o alla sorella. I peggiori addii al nubilato sono quelli in cui chi organizza ha pianificato il viaggio che voleva fare lei piuttosto che ciò a cui tiene davvero la sposa."
+        },
+        {
+          "q": "Come si tengono tutti contenti in un viaggio di addio al nubilato?",
+          "a": "Non ci riuscirai — e provarci ti esaurirà. Punta a far divertire tutti la maggior parte del tempo, non alla felicità universale in ogni momento. Inserisci varietà nel programma: attivo e rilassato, tempo di gruppo e tempo libero, serate tranquille e altre più tardi. Usa i sondaggi per prendere decisioni di gruppo così nessuno si sente travolto. Stabilisci aspettative chiare fin dall'inizio su budget, formalità e cosa è e non è pianificato. E accetta che alcune persone saranno più difficili da accontentare di altre — vale per ogni viaggio di gruppo, non solo per gli addii al nubilato."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Pronta a organizzare il viaggio di addio al nubilato perfetto?",
+      "text": "WePlanify riunisce tutto il tuo gruppo in un unico posto — sondaggi sulla destinazione, itinerario condiviso, tracker del budget e liste per i bagagli. Smetti di gestire il caos in una chat di gruppo e inizia davvero a pianificare insieme.",
+      "button": "Organizza l'addio al nubilato"
+    },
+    "discoverMore": "Scopri di più",
+    "readMore": "Leggi di più"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "copy": {
+    "calendarMonth": "Avril 2024",
+    "weekdays": ["L", "M", "M", "J", "V", "S", "D"],
+    "dragHint": "Glissez pour réorganiser",
+    "days": [
+      {
+        "title": "Arrivée à Tokyo",
+        "items": [
+          { "time": "14:00", "icon": "✈️", "activity": "Arrivée à l'aéroport de Narita" },
+          { "time": "16:00", "icon": "🏨", "activity": "Check-in Hôtel Shinjuku" },
+          { "time": "19:00", "icon": "🍜", "activity": "Dîner à Omoide Yokocho" }
+        ]
+      },
+      {
+        "title": "Tokyo - Quartier historique",
+        "items": [
+          { "time": "09:00", "icon": "⛩️", "activity": "Temple Senso-ji, Asakusa" },
+          { "time": "12:00", "icon": "🍣", "activity": "Sushi au marché de Tsukiji" },
+          { "time": "15:00", "icon": "🌸", "activity": "Balade dans le parc Ueno" },
+          { "time": "20:00", "icon": "🌃", "activity": "Tokyo Skytree" }
+        ]
+      },
+      {
+        "title": "Tokyo - Ville moderne",
+        "items": [
+          { "time": "10:00", "icon": "🛍️", "activity": "Shopping à Shibuya" },
+          { "time": "14:00", "icon": "🎮", "activity": "Akihabara" },
+          { "time": "18:00", "icon": "🌆", "activity": "Coucher de soleil au Shibuya Sky" }
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Timeline interactive",
+    "heroTitle": "Planification de voyage",
+    "heroTitleHighlight": "qui fonctionne vraiment",
+    "heroSubtitle": "L'appli calcule les temps de trajet et vous prévient si le restaurant de 20h est à 2h du musée de 18h. Zéro mauvaise surprise sur place.",
+    "socialProofText": "5 000+ itinéraires créés",
+    "heroCta": "Créer mon planning optimisé",
+    "heroCtaSubtext": "Gratuit, sans carte bancaire",
+    "featuresTitle": "Organisez comme un pro",
+    "features": [
+      { "icon": "✋", "title": "Glisser-déposer", "description": "Réorganisez en glissant" },
+      { "icon": "🚗", "title": "Temps de trajet auto", "description": "Calculés entre les étapes" },
+      { "icon": "⚠️", "title": "Alertes", "description": "Conflits d'horaires détectés" },
+      { "icon": "📤", "title": "Export PDF", "description": "Partagez votre planning" }
+    ],
+    "faqItems": [
+      { "question": "Comment créer un itinéraire de voyage jour par jour ?", "answer": "Avec Weplanify, ajoutez simplement vos étapes et elles apparaissent automatiquement sur la timeline. Vous pouvez ensuite réorganiser par glisser-déposer." },
+      { "question": "L'appli calcule-t-elle les temps de trajet ?", "answer": "Oui, Weplanify calcule automatiquement les temps de trajet entre chaque étape, que ce soit en voiture, transports en commun ou à pied." },
+      { "question": "Puis-je exporter l'itinéraire en PDF ?", "answer": "Absolument ! Exportez votre itinéraire complet en PDF pour l'avoir hors ligne ou l'imprimer." },
+      { "question": "Comment réorganiser les activités dans l'itinéraire ?", "answer": "Utilisez simplement le glisser-déposer ! Déplacez n'importe quelle activité vers un autre jour." },
+      { "question": "L'itinéraire est-il partagé avec tout le groupe ?", "answer": "Oui, tous les participants du voyage voient le même itinéraire en temps réel." }
+    ],
+    "ctaTitle": "Adieu les tableaux Excel brouillons",
+    "ctaSubtitle": "Glissez-déposez, l'appli optimise vos trajets",
+    "ctaButton": "Créer mon planning optimisé",
+    "seoTitle": "Itinéraire de Voyage - Planification Jour par Jour | Weplanify",
+    "seoDescription": "Organisez votre voyage jour par jour avec notre timeline interactive. Visualisez, réorganisez et optimisez votre planning vacances facilement.",
+    "stats": [
+      { "value": "5 000+", "label": "itinéraires" },
+      { "value": "Auto", "label": "temps de trajet" },
+      { "value": "PDF", "label": "export" }
+    ]
+  }
+}

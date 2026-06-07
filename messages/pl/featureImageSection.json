@@ -1,0 +1,13 @@
+{
+  "title": "Planer podróży grupowych,\nstworzony przez podróżników, dla podróżników.",
+  "bubbles": [
+    { "text": "Twórz własne ankiety", "subtitle": "Terminy · Kierunek · Budżet" },
+    { "text": "Zarządzaj wydatkami na wyjazd", "subtitle": "Loty · Airbnb · Jedzenie" },
+    { "text": "Zaproś grupę", "subtitle": "E-mailem · Linkiem" },
+    { "text": "Zarządzaj swoją podróżą", "subtitle": "Przystanki · Dni · Notatki" },
+    { "text": "Szukaj atrakcji", "subtitle": "Muzea · Jedzenie · Plaże" },
+    { "text": "Znajdź nocleg", "subtitle": "Hotel · Airbnb · Hostel" },
+    { "text": "Przydzielaj zadania", "subtitle": "Do zrobienia · W trakcie · Gotowe" },
+    { "text": "Znajdź transport", "subtitle": "Lot · Pociąg · Samochód" }
+  ]
+}

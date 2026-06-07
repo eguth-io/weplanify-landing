@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Blog – Tipps für Gruppenreisen",
+    "description": "Entdecke Artikel und Tipps für die Organisation unvergesslicher Gruppenreisen. Reise-Hacks, Reiseziele und praktische Guides."
+  },
+  "staticPosts": [
+    {
+      "title": "So organisierst du einen unvergesslichen Junggesellinnenabschied – Guide 2026",
+      "excerpt": "Von der Wahl des Reiseziels bis zur Koordination der Gruppe: alles, was du brauchst, um einen unvergesslichen Junggesellinnenabschied zu organisieren – ganz ohne Stress."
+    },
+    {
+      "title": "Budget für die Gruppenreise – Kosten teilen ohne Drama",
+      "excerpt": "Lege ein realistisches Budget fest, teile die Kosten fair auf, verfolge Ausgaben in Echtzeit und rechne am Ende der Reise sauber ab."
+    }
+  ]
+}

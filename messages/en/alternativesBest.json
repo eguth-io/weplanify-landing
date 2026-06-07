@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "title": "Best Group Trip Planner Apps Compared (2026): Wanderlog, TripIt & More",
+    "description": "WePlanify is the best free group trip planner of 2026: collaborative itinerary, group polls & shared budget in one app. See how it compares to Wanderlog, TripIt & 8 more."
+  },
+  "heroTag": "Complete Guide",
+  "readTime": "12 min read",
+  "h1": "The 10 Best Group Trip Planner Apps Compared (2026)",
+  "intro": "Planning a group trip is notoriously difficult. Between coordinating schedules, splitting costs, voting on destinations, and building an itinerary that works for everyone, you need the right tools. We tested and compared the most popular group travel planning apps available in 2026 to help you pick the one that fits your crew. Here are our top 10, ranked by overall usefulness for group travel.",
+  "updated": "Updated May 5, 2026",
+  "quickVerdict": {
+    "heading": "Quick verdict",
+    "lead": "For most groups, the best group trip planner in 2026 is WePlanify — the only free app that combines a collaborative day-by-day itinerary, group polls, a shared budget with automatic settlement, and packing lists in one place. Prefer a specialist below if you only need one of those jobs.",
+    "picks": [
+      { "label": "Best overall for groups (free)", "app": "WePlanify", "anchor": "weplanify" },
+      { "label": "Best for solo / itinerary depth", "app": "Wanderlog", "anchor": "wanderlog" },
+      { "label": "Best for splitting expenses only", "app": "Splitwise", "anchor": "splitwise" },
+      { "label": "Best for flights & booking forwarding", "app": "TripIt", "anchor": "tripit" }
+    ]
+  },
+  "rankingTitle": "How We Ranked These Apps",
+  "rankingIntro": "We evaluated each app across five criteria that matter most for group travel planning:",
+  "rankingCriteria": [
+    {
+      "title": "Feature completeness",
+      "desc": "Does the app cover itinerary building, budgeting, polls, packing lists, and activity discovery — or only one or two of these?"
+    },
+    {
+      "title": "Group-specific tools",
+      "desc": "Does it offer voting, real-time collaboration, shared expense tracking, and other features designed for multiple people planning together?"
+    },
+    {
+      "title": "Pricing",
+      "desc": "Is the app free or freemium? Are the most useful features locked behind a paywall?"
+    },
+    {
+      "title": "Ease of use",
+      "desc": "Can a non-technical person set up a trip and invite friends in under five minutes?"
+    },
+    {
+      "title": "Language support",
+      "desc": "Is the app available in multiple languages, including French?"
+    }
+  ],
+  "apps": [
+    {
+      "name": "WePlanify",
+      "tagline": "All-in-one free group trip planner",
+      "description": "WePlanify is the most complete free tool for planning group trips. It combines itinerary building, group polls, shared budget tracking, packing lists, and AI-powered activity discovery in a single collaborative platform. Every feature is free with no hidden paywalls or trial limits.",
+      "bestFor": "Friend groups wanting everything in one place",
+      "strengths": [
+        "All-in-one: itinerary, polls, budget, packing lists, and activity discovery",
+        "Free forever with no feature restrictions",
+        "Fully bilingual (English and French)"
+      ],
+      "limitations": [
+        "Mobile app coming soon (currently a responsive web app)"
+      ],
+      "price": "Free",
+      "isWePlanify": true
+    },
+    {
+      "name": "Wanderlog",
+      "tagline": "Map-based itinerary builder",
+      "description": "Wanderlog is a map-based itinerary builder with route visualization. It lacks group polls, shared budget tracking, and French language support — features that matter most when planning a trip with friends or family.",
+      "bestFor": "Solo travelers and road trip route planning",
+      "strengths": [
+        "Map integration with route visualization",
+        "Mobile app available on iOS and Android",
+        "Restaurant and attraction suggestions along routes"
+      ],
+      "limitations": [
+        "No group polls or voting features",
+        "No shared budget tracking — only available in English"
+      ],
+      "price": "Free with Pro at $8/month"
+    },
+    {
+      "name": "SquadTrip",
+      "tagline": "Payment collection and guest management",
+      "description": "SquadTrip collects payments from trip participants and manages RSVPs. It does not include packing lists, activity discovery, or French support, so groups still need additional tools to cover the full planning process.",
+      "bestFor": "Trip organizers collecting money from participants",
+      "strengths": [
+        "Payment collection from group members",
+        "Guest management with RSVP tracking",
+        "Voting on itinerary options"
+      ],
+      "limitations": [
+        "No packing lists or activity discovery",
+        "English only"
+      ],
+      "price": "Free with paid features for organizers"
+    },
+    {
+      "name": "TripIt",
+      "tagline": "Auto-import bookings from email",
+      "description": "TripIt assembles itineraries from forwarded booking emails. It is designed for solo travelers — group collaboration, polls, and shared budgets are not available, and most features require a paid Pro subscription ($49/year).",
+      "bestFor": "Business travelers organizing solo itineraries",
+      "strengths": [
+        "Automatic itinerary creation from forwarded emails",
+        "Handles multi-leg trips with layovers",
+        "Flight status alerts (Pro only)"
+      ],
+      "limitations": [
+        "No group collaboration, polls, or shared budgets",
+        "Most useful features require Pro subscription ($49/year)"
+      ],
+      "price": "Free basic, Pro at $49/year"
+    },
+    {
+      "name": "Splitwise",
+      "tagline": "Expense splitting app",
+      "description": "Splitwise tracks shared expenses across a group. It has no trip planning features — no itinerary, no polls, no packing lists — so most groups need a second app alongside it.",
+      "bestFor": "Tracking who owes what after expenses",
+      "strengths": [
+        "Expense splitting with complex split options",
+        "Multi-currency support",
+        "Large existing user base"
+      ],
+      "limitations": [
+        "Not a trip planner — no itinerary, polls, or packing features",
+        "Pro required ($4.99/mo) for receipt scanning and charts"
+      ],
+      "price": "Free, Pro at $4.99/month"
+    },
+    {
+      "name": "Troupe",
+      "tagline": "Group voting on activity suggestions",
+      "description": "Troupe lets groups vote on activity suggestions using ranked voting. It covers only the decision phase — there is no budget tracking, no packing lists, and no French support, leaving most trip logistics unaddressed.",
+      "bestFor": "Groups deciding on activities",
+      "strengths": [
+        "Ranked voting system for group decisions",
+        "Activity suggestions with local data",
+        "Available on mobile"
+      ],
+      "limitations": [
+        "No budget tracking or packing lists",
+        "English only — no itinerary builder"
+      ],
+      "price": "Free"
+    },
+    {
+      "name": "Stippl",
+      "tagline": "Visual travel planner with community itineraries",
+      "description": "Stippl is a visual travel planner with community-shared itineraries and photo journals. It lacks group polls, shared budget tracking, and French language support — making it more suited for solo travelers than for coordinating a group trip.",
+      "bestFor": "Solo travelers who want to document trips visually",
+      "strengths": [
+        "Map integration with night-to-day planning",
+        "Travel journal and automatic reels",
+        "Community-shared itineraries for inspiration"
+      ],
+      "limitations": [
+        "No group polls or voting features",
+        "No shared budget tracker — not available in French"
+      ],
+      "price": "Free"
+    },
+    {
+      "name": "AvoSquado",
+      "tagline": "Bedroom assignments for vacation rentals",
+      "description": "AvoSquado manages bedroom assignments and bookable activities for large vacation rentals. It covers a narrow niche — there is no itinerary builder, no polls, no budget tracking, and no packing lists.",
+      "bestFor": "Large vacation rental coordination",
+      "strengths": [
+        "Bedroom assignment feature for shared houses",
+        "Bookable activities integrated into stays",
+        "Designed for large group accommodations"
+      ],
+      "limitations": [
+        "Narrow focus — not a full trip planner",
+        "No itinerary, polls, budget, or packing features"
+      ],
+      "price": "Free"
+    },
+    {
+      "name": "Cruzmi",
+      "tagline": "French event organizer app",
+      "description": "Cruzmi is a French mobile app for organizing events and group outings. It offers basic polls and budget tracking but has limited itinerary features, making it more of an event coordination tool than a trip planner.",
+      "bestFor": "French-speaking groups organizing casual outings",
+      "strengths": [
+        "Available in French",
+        "Basic polls and shared to-do lists",
+        "Simple interface"
+      ],
+      "limitations": [
+        "Limited itinerary building features",
+        "Fewer trip planning features compared to dedicated platforms"
+      ],
+      "price": "Free"
+    },
+    {
+      "name": "Let's Jetty",
+      "tagline": "Simple itinerary maker",
+      "description": "Let's Jetty provides a visual itinerary builder with a minimal interface. It lacks budget tracking, polls, and packing lists — which means groups planning complex trips will need to supplement it with other tools.",
+      "bestFor": "Small groups wanting a simple itinerary view",
+      "strengths": [
+        "Clean, minimal design",
+        "Real-time collaboration on itineraries",
+        "Quick setup with low learning curve"
+      ],
+      "limitations": [
+        "No budget tracking, polls, or packing lists",
+        "Limited feature set for complex group trips"
+      ],
+      "price": "Free"
+    }
+  ],
+  "summaryTitle": "Comparison Summary",
+  "summaryFeatures": [
+    "Itinerary",
+    "Polls",
+    "Budget",
+    "Packing",
+    "Free",
+    "French"
+  ],
+  "summaryData": [
+    { "name": "WePlanify", "values": [true, true, true, true, true, true] },
+    { "name": "Wanderlog", "values": [true, false, false, true, true, false] },
+    { "name": "SquadTrip", "values": [true, true, true, false, true, false] },
+    { "name": "TripIt", "values": [true, false, false, false, "freemium", false] },
+    { "name": "Splitwise", "values": [false, false, true, false, "freemium", true] },
+    { "name": "Troupe", "values": [true, true, false, false, true, false] },
+    { "name": "Stippl", "values": [true, false, false, true, true, false] },
+    { "name": "AvoSquado", "values": [false, false, false, false, true, false] },
+    { "name": "Cruzmi", "values": [false, true, true, false, true, true] },
+    { "name": "Let's Jetty", "values": [true, false, false, false, true, false] }
+  ],
+  "faqTitle": "Frequently Asked Questions",
+  "faqItems": [
+    {
+      "question": "What is the best app for planning a group trip?",
+      "answer": "It depends on your needs. WePlanify is the most complete all-in-one option with itinerary planning, polls, budget tracking, and packing lists. Wanderlog excels at map-based itinerary building. SquadTrip is ideal if you need integrated payments. TripIt works best for organizing existing bookings."
+    },
+    {
+      "question": "Is there a free app for group travel planning?",
+      "answer": "Yes. WePlanify, Wanderlog, Troupe, and Let's Jetty all offer full-featured free plans. WePlanify stands out by offering all core features — including polls, budget tracking, and packing lists — without any paywall."
+    },
+    {
+      "question": "How do you split costs on a group trip?",
+      "answer": "Apps like Splitwise and WePlanify let you log shared expenses and automatically calculate who owes what. Splitwise is dedicated to expense splitting, while WePlanify includes budget tracking alongside itinerary planning and group coordination."
+    },
+    {
+      "question": "Can multiple people edit the same trip itinerary?",
+      "answer": "Yes — WePlanify, Wanderlog, and Stippl all support real-time collaborative editing. Everyone in the group can add activities, rearrange days, and leave comments simultaneously."
+    },
+    {
+      "question": "What app lets a group vote on travel destinations?",
+      "answer": "WePlanify, SquadTrip, and Cruzmi include built-in polling features where group members can vote on destinations, activities, restaurants, and dates. WePlanify offers unlimited polls with real-time results."
+    }
+  ],
+  "ctaTitle": "Ready to plan your next group trip?",
+  "ctaText": "Stop juggling multiple apps and spreadsheets. WePlanify brings itinerary planning, group polls, budget tracking, packing lists, and AI-powered recommendations into one free platform.",
+  "ctaButton": "Start planning for free",
+  "diy": "DIY",
+  "freemium": "Freemium",
+  "bestForLabel": "Best for: ",
+  "strengthsLabel": "Strengths",
+  "limitationsLabel": "Limitations",
+  "priceLabel": "Price: ",
+  "tryFree": "Try it free",
+  "breadcrumb": {
+    "home": "Home",
+    "top10": "Top 10 Apps"
+  },
+  "discover": {
+    "heading": "Discover More",
+    "comparisonTitle": "App Comparison",
+    "comparisonDesc": "Detailed side-by-side comparison table of all apps.",
+    "comparisonCta": "View comparison →",
+    "guideTitle": "Guide: Plan a Group Trip",
+    "guideDesc": "The complete step-by-step guide to a successful group trip.",
+    "guideCta": "Read the guide →",
+    "friendsTitle": "Trip with Friends",
+    "friendsDesc": "Plan a group trip with friends effortlessly using WePlanify.",
+    "friendsCta": "Read more →"
+  },
+  "jsonld": {
+    "breadcrumb": {
+      "home": "Home",
+      "alternatives": "Alternatives",
+      "current": "Best Group Trip Planner Apps"
+    }
+  }
+}

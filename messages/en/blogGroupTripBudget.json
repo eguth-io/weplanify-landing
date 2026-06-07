@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "title": "Group Trip Budget: How to Split Costs Without the Drama",
+    "description": "The complete guide to managing money on a group trip — setting a budget everyone agrees on, splitting costs fairly, and settling up cleanly at the end."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Group trip budget"
+  },
+  "readTime": "9 min read",
+  "heroTag": "Money & Travel 2026",
+  "h1": "Group Trip Budget: How to Split Costs Without the Drama",
+  "intro": "Ask anyone who has ever traveled with a group of four or more people what the hardest part was, and money will come up within the first three answers. Not the flights, not the accommodation — money. Who paid for dinner, who still owes fifty dollars, why one person keeps ordering expensive cocktails while everyone else is splitting the tab. Group trip budgeting does not have to be a source of conflict. With the right system in place before you leave, it becomes almost invisible. This guide covers everything: setting a realistic budget, splitting costs in a way that feels fair, tracking expenses in real time, and settling up cleanly when the trip is over.",
+  "tocTitle": "Table of Contents",
+  "toc": [
+    { "id": "money-mess", "label": "Why Group Trip Money Always Gets Messy" },
+    { "id": "set-budget-early", "label": "Set the Budget Before You Book Anything" },
+    { "id": "split-by-category", "label": "Split by Category, Not by Everything" },
+    { "id": "one-payer-system", "label": "The One-Payer System" },
+    { "id": "track-real-time", "label": "Track in Real Time, Not at the End" },
+    { "id": "unequal-budgets", "label": "Handling Unequal Budgets in the Group" },
+    { "id": "settling-up", "label": "Settling Up: The Clean Way" },
+    { "id": "faq", "label": "FAQ" }
+  ],
+  "sections": {
+    "moneyMess": {
+      "id": "money-mess",
+      "title": "Why Group Trip Money Always Gets Messy",
+      "paragraphs": [
+        "It starts innocently. Someone books the Airbnb because they have the card with the highest limit. Someone else buys the group train tickets to save time. A third person covers dinner because the restaurant only accepted a single payment. Before the trip is even over, one person has fronted $800 and has no idea how to ask for it back without sounding petty.",
+        "The root problem is that group trips involve people with different incomes, different spending habits, and wildly different ideas of what 'reasonable' means. For one friend, $30 for a museum entry is nothing. For another, it is a significant chunk of their daily budget. Nobody talks about this before leaving, so every spending decision becomes a silent negotiation where someone always ends up feeling either guilty or resentful.",
+        "Then there is the tracking problem. Nobody wants to be the person furiously typing expenses into a spreadsheet while everyone else is enjoying the sunset. So nothing gets recorded. By the last day, half the transactions are forgotten and the other half are disputed. Settling up turns into an hour-long archaeology project — and the exact moment when perfectly pleasant trips go sideways.",
+        "The solution is not a complicated accounting system. It is a simple shared agreement, made before departure, on three things: how much to spend per person, which costs to split and which to pay individually, and how to log everything as it happens. Get those three things right and money stops being a source of tension."
+      ]
+    },
+    "setBudgetEarly": {
+      "id": "set-budget-early",
+      "title": "Set the Budget Before You Book Anything",
+      "paragraphs": [
+        "The money conversation needs to happen before you book a single thing — before the Airbnb, before the flights, before anyone buys train tickets or starts comparing restaurant menus. Once money has been spent, the budget is no longer theoretical. Real numbers create real pressure, and people who would have spoken up in a planning conversation start staying quiet to avoid conflict.",
+        "The easiest way to open the conversation is with brackets. Instead of asking \"how much do you want to spend?\", which forces people to state a number and feel judged, present three options: a lean trip ($800–$1,000 per person all-in), a comfortable trip ($1,200–$1,600 per person), and a generous trip ($2,000+ per person). Ask everyone to privately pick which bracket works for them. If the group clusters around one bracket, you have your budget. If there is a wide spread, that is an important signal to address early — not on day three when someone orders a $45 main course.",
+        "Once you have a rough per-person total, break it down by category. A realistic breakdown for a 7-day trip might look like: accommodation (30–35% of the budget), transportation including flights and local (30–40%), food and drinks (20–25%), activities and experiences (10–15%), and a buffer for unexpected costs (5–10%). Having these categories in writing, even in a shared note, means everyone is calibrating against the same expectations.",
+        "Use WePlanify's group polls feature to vote on accommodation options and activities before committing. When the whole group decides together what to include in the budget, there is no one person to blame if something turns out to be expensive — and everyone feels ownership over the plan. Decisions made democratically are accepted more easily, including the financial ones."
+      ]
+    },
+    "splitByCategory": {
+      "id": "split-by-category",
+      "title": "Split by Category, Not by Everything",
+      "paragraphs": [
+        "One of the most common mistakes groups make is trying to split absolutely every expense equally — or, conversely, having everyone pay for themselves all the time. Both extremes create friction. The first leads to resentment when consumption is unequal. The second makes every meal feel like a transaction and defeats the point of traveling together.",
+        "The smarter approach is to split by category. Some costs are genuinely shared and should be split equally. Others are personal and should be paid individually. Drawing this line clearly before the trip starts removes 90% of the awkward conversations.",
+        "The categories below are a proven starting framework. Adjust them to fit your group, but the key is to agree on them before you leave."
+      ],
+      "categories": [
+        {
+          "title": "Split equally (shared costs)",
+          "items": [
+            "Accommodation — Airbnb, hotel, hostel dorms. Everyone benefits equally regardless of the size of their room.",
+            "Group transport — rental car, train tickets booked together, airport transfers for the whole group.",
+            "Group activities — tours, museum entries, tickets for experiences the whole group attends.",
+            "Groceries for shared meals — if the group cooks together, split the shopping bill."
+          ]
+        },
+        {
+          "title": "Pay individually (personal costs)",
+          "items": [
+            "Personal meals when the group eats at different restaurants or orders different things.",
+            "Personal drinks — especially alcohol, where consumption varies enormously.",
+            "Souvenirs, personal shopping, and anything that only benefits one person.",
+            "Personal transport — taxis to a separate activity, solo day trips."
+          ]
+        }
+      ]
+    },
+    "onePayerSystem": {
+      "id": "one-payer-system",
+      "title": "The One-Payer System",
+      "paragraphs": [
+        "Splitting the bill at the moment of payment — everyone fumbling for cards while the waiter waits — is slow, awkward, and error-prone. A much cleaner approach is the one-payer system: one person pays for a shared expense, logs it immediately in a shared tracker, and the group settles up at the end of the trip.",
+        "The key word is 'immediately.' The system only works if the person who pays logs it on the spot, before anyone has moved on or forgotten the amount. This means having a shared budget tracker open and accessible at all times — not a mental note to add it to the spreadsheet later. WePlanify's shared budget tracker is built for exactly this: one tap to log a new expense, select who paid and who it was for, and everyone sees it instantly.",
+        "To keep things fair, rotate who pays over the course of the trip. One person covers dinner, another covers the next activity, a third covers the museum tickets. If the amounts are logged accurately, the imbalances will even out by the end — and if they do not, the final settlement will be a handful of transfers rather than a forensic accounting exercise.",
+        "A simple rule: if you pay for something shared and do not log it within five minutes, you have probably lost it. Build the habit early, on day one, so it becomes automatic."
+      ]
+    },
+    "trackRealTime": {
+      "id": "track-real-time",
+      "title": "Track in Real Time, Not at the End",
+      "paragraphs": [
+        "Every group that has waited until the last night to 'figure out the money' has regretted it. Memories are unreliable, amounts get rounded, and one person always feels like they contributed more than the numbers show. The last evening of a trip is the worst possible time to have a financial reconciliation — everyone is tired, some people are already calculating their flights, and the emotional goodwill of the trip is at its most fragile.",
+        "Real-time tracking solves this completely. When every expense is logged as it happens, there is no reconciliation to do at the end. The numbers are already there. Everyone has been watching the running total throughout the trip, so nothing comes as a surprise. The final settlement is a formality, not a negotiation.",
+        "The practical requirement is a tracker that everyone can see and contribute to from their phone. A shared spreadsheet technically works but requires a level of discipline and mobile usability that most groups do not maintain. Dedicated tools like WePlanify's budget tracker are designed for this: add an expense in ten seconds, see who owes what in real time, get a settlement summary at any point. It removes the friction that causes people to stop tracking in the first place.",
+        "Set a daily or two-day check-in habit where someone looks at the running totals and flags any expenses that were missed. On a 7-day trip, a two-minute review every other day catches any gaps and keeps everyone aligned. It also builds a shared sense of where the trip stands financially — so nobody gets a shock at the end.",
+        "For road trips specifically, track fuel and tolls as a shared expense from the start. Gas costs can add up to $200–$400 for a week-long road trip and are easy to forget if the driver keeps paying and assuming they will get reimbursed later. Log every fill-up immediately. Check out our road trip planning guide for more specific tips on managing shared costs on the road."
+      ]
+    },
+    "unequalBudgets": {
+      "id": "unequal-budgets",
+      "title": "Handling Unequal Budgets in the Group",
+      "paragraphs": [
+        "Almost every friend group has at least one person who is in a different financial situation than the others. Maybe they are between jobs, saving for something big, or simply earn less. This is normal, and it does not have to mean they get left out — but it does require a bit of intentional design in how you structure the trip.",
+        "The first rule is to make space for the conversation before the trip, not during it. If you know someone in the group has a tighter budget, reach out privately and ask what range feels comfortable for them. This is not charity — it is good group dynamics. A trip where one person is stressed about money the whole time is worse for everyone.",
+        "For accommodation, look for options where cost does not vary by individual. Renting a house or large Airbnb and splitting it equally is often cheaper per person than individual hotel rooms, and it means no one is paying more than anyone else for their sleeping situation. When everyone is in the same space, there is no visible tier system.",
+        "For meals and activities, design a mix. Plan some group meals at mid-range restaurants where the bill splits easily, and make individual payment the default for anything higher-end. If the group wants to do an expensive activity — a cooking class, a boat trip, a Michelin-starred dinner — make it optional and have an equally good alternative for those who pass. This structure means no one has to explain themselves or feel the spotlight.",
+        "One practical technique: at the start of the trip, agree on a daily shared expenses cap per person. Something like $50/day covers accommodation share, shared transport, and one group meal. Anything above that is individual choice and individual cost. This cap creates a predictable floor that everyone can commit to, while leaving room for those who want to spend more to do so freely."
+      ]
+    },
+    "settlingUp": {
+      "id": "settling-up",
+      "title": "Settling Up: The Clean Way",
+      "paragraphs": [
+        "The ideal time to settle up is before you leave for the airport or the day after you get back — while the trip is still fresh, the numbers are still visible, and the goodwill is still intact. Waiting a week or more creates friction: people get busy, memories fade, and a $45 debt starts to feel either too small to bring up or too large to ignore.",
+        "The goal of settling up is to minimize the number of transfers. If six people each owe different amounts to different people, the naive approach would require up to fifteen separate transactions. A smart tracker calculates the minimum number of transfers needed to bring everyone to zero — usually two or three per person for a typical group trip.",
+        "Here is how to read the final settlement: the tracker shows a net balance for each person — positive means they are owed money, negative means they owe. The settlement algorithm then finds the most efficient path from every negative balance to every positive one. Person A owes $85 and Person B is owed $90, so A pays B $85. Done. Person C is owed $40, Person D owes $15, Person E owes $25: D pays C $15, E pays C $25. Three transactions instead of a tangled web.",
+        "The settlement works best when everyone confirms receipt of their transfer on the day it happens. A simple message in the group chat — 'sent $85, done' — closes the loop publicly and prevents anyone from wondering if they need to follow up. Within 48 hours of the trip ending, every balance should be zero.",
+        "One final note: do the settlement before the memories of who paid what start to drift. Financial clarity at the end of a trip is what makes you actually want to travel with these people again."
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How do you split trip costs fairly between friends?",
+        "a": "The fairest approach is to split shared costs (accommodation, group transport, group activities) equally, and let everyone pay individually for personal expenses like individual meals and drinks. Agree on these categories before the trip starts, log every shared expense as it happens using a shared tracker, and settle up at the end based on who paid what. This avoids the two extremes of splitting everything equally (which penalizes light spenders) or everyone paying for themselves (which makes the trip feel transactional)."
+      },
+      {
+        "q": "What's the best app to track group trip expenses?",
+        "a": "For a dedicated group trip experience, WePlanify's built-in budget tracker is designed specifically for travel groups — it logs expenses in real time, tracks who paid and who participated, and calculates a settlement at the end. Splitwise is the best pure expense-splitting tool and handles multiple currencies well. The key is to use something everyone in the group will actually open on their phone. A tool that three out of six people use is worse than a simpler one that all six use consistently."
+      },
+      {
+        "q": "Should everyone pay the same amount on a group trip?",
+        "a": "For shared costs like accommodation and group transport, yes — splitting equally is fairest because everyone benefits the same. For personal spending like individual meals, drinks, and activities, no — people should pay their own way. The practical solution is to track shared expenses in a pool and let personal spending be individual. If there are meaningful income differences in the group, set a daily cap for shared expenses that everyone can comfortably meet, and let higher-spending individuals cover their extras themselves."
+      },
+      {
+        "q": "How do you handle someone who doesn't pay their share?",
+        "a": "Prevention is better than cure: use a shared tracker that everyone can see so balances are transparent throughout the trip, not just at the end. When someone can see in real time that they owe $200, they are more likely to address it before it becomes a bigger number. If someone genuinely cannot pay after the trip, address it privately and directly — not in the group chat. Set a specific deadline ('can you send this by Sunday?') rather than a vague 'whenever you can.' For future trips, some groups ask everyone to contribute to a shared trip fund before departure, so there is no settling up at the end."
+      },
+      {
+        "q": "What costs should you split equally vs. individually?",
+        "a": "Split equally: accommodation, rental cars, group transport (trains, airport transfers), shared groceries for group meals, and any activity the whole group does together. Pay individually: personal restaurant meals, alcoholic drinks, souvenirs, personal transport (a solo taxi, an extra activity), and anything that only benefits one person. The general rule is: if it would be weird for one person to not participate in it, split it. If it is a personal choice, pay for it yourself."
+      },
+      {
+        "q": "When should you settle up on a group trip?",
+        "a": "Ideally on the last day of the trip or within 24–48 hours of returning home, while everything is still fresh and the goodwill of the trip is intact. Use a shared tracker that calculates the minimum number of transfers needed — this keeps it fast and painless. Confirm each payment in the group chat so everyone knows when their balance is cleared. Waiting longer than a week makes the conversation harder and the numbers murkier. Set a firm deadline as a group before you leave."
+      }
+    ]
+  },
+  "pollsTip": {
+    "text": "Tip: use WePlanify's group polls to vote on destinations and activities and align expectations before committing to anything.",
+    "link": "Try group polls"
+  },
+  "trackerBox": {
+    "text": "WePlanify's shared budget tracker lets every group member add expenses in seconds, from any device.",
+    "link": "See the budget tracker"
+  },
+  "cta": {
+    "title": "Ready to Take the Stress Out of Group Trip Money?",
+    "text": "WePlanify's shared budget tracker lets your group log expenses in real time, see who owes what, and settle up cleanly at the end — all in the same app where you build your itinerary, run polls, and coordinate packing.",
+    "button": "Start Tracking Together"
+  },
+  "discoverMore": {
+    "heading": "Discover More",
+    "budget": {
+      "title": "Shared Budget Tracker",
+      "text": "Log expenses in real time, see who owes what, and settle up cleanly with WePlanify's group budget tracker.",
+      "link": "Explore the tracker"
+    },
+    "friends": {
+      "title": "Trip with Friends",
+      "text": "Plan a group trip with friends effortlessly — itinerary, polls, budget, and packing all in one place."
+    },
+    "guide": {
+      "title": "Guide: Plan a Group Trip",
+      "text": "The complete guide to planning a group trip from destination choice to departure day."
+    },
+    "apps": {
+      "title": "Best Group Trip Planner Apps",
+      "text": "An honest comparison of the best apps to plan a group trip in 2026."
+    }
+  },
+  "readMore": "Read more"
+}

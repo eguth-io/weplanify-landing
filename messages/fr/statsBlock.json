@@ -1,0 +1,7 @@
+{
+  "title": "Chaque voyage mérite de commencer sereinement",
+  "items": [
+    { "value": "+190", "label": "pays couverts" },
+    { "value": "4,8", "label": "Satisfaction des voyageurs", "showStar": true }
+  ]
+}

@@ -2,9 +2,8 @@
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useRef, useEffect, useMemo } from "react";
+import { useTranslations } from "next-intl";
 import InlinePitch from "@/components/InlinePitch";
-
-type Lang = "en" | "fr";
 
 type Position = "top-left" | "top-right" | "bottom-left" | "bottom-right";
 
@@ -15,89 +14,6 @@ interface Badge {
   textColor: string;
   position: Position;
 }
-
-interface ReadyBannerContent {
-  title: string;
-  description: string;
-  socialProof: string;
-  freeNote: string;
-  badges: Badge[];
-}
-
-const CONTENT: Record<Lang, ReadyBannerContent> = {
-  fr: {
-    title: "Prêt pour votre prochain voyage ?",
-    description: "Rejoignez des milliers de voyageurs qui planifient mieux ensemble.",
-    socialProof: "Rejoignez 12 000+ voyageurs qui planifient plus intelligemment",
-    freeNote: "Inscription gratuite. Sans carte bancaire.",
-    badges: [
-      {
-        emoji: "📅",
-        text: "Lancé en 2024",
-        backgroundColor: "#E83F28",
-        textColor: "#FFFBF5",
-        position: "top-left",
-      },
-      {
-        emoji: "⭐",
-        text: "4,8/5 satisfaction",
-        backgroundColor: "#61DBD5",
-        textColor: "#001E13",
-        position: "bottom-left",
-      },
-      {
-        emoji: "🌍",
-        text: "Top 12 destinations",
-        backgroundColor: "#FFFBF5",
-        textColor: "#001E13",
-        position: "top-right",
-      },
-      {
-        emoji: "✨",
-        text: "500+ itinéraires créés",
-        backgroundColor: "#005939",
-        textColor: "#FFFBF5",
-        position: "bottom-right",
-      },
-    ],
-  },
-  en: {
-    title: "Ready for your next trip?",
-    description: "Join thousands of travelers planning better together.",
-    socialProof: "Join 12,000+ travelers planning smarter trips",
-    freeNote: "Free signup. No credit card required.",
-    badges: [
-      {
-        emoji: "📅",
-        text: "Launched in 2024",
-        backgroundColor: "#E83F28",
-        textColor: "#FFFBF5",
-        position: "top-left",
-      },
-      {
-        emoji: "⭐",
-        text: "4.8/5 satisfaction",
-        backgroundColor: "#61DBD5",
-        textColor: "#001E13",
-        position: "bottom-left",
-      },
-      {
-        emoji: "🌍",
-        text: "Top 12 destinations",
-        backgroundColor: "#FFFBF5",
-        textColor: "#001E13",
-        position: "top-right",
-      },
-      {
-        emoji: "✨",
-        text: "500+ itineraries created",
-        backgroundColor: "#005939",
-        textColor: "#FFFBF5",
-        position: "bottom-right",
-      },
-    ],
-  },
-};
 
 const POSITION_CLASSES: Record<Position, string> = {
   "top-left": "top-0 left-[10%] lg:left-[15%]",
@@ -125,8 +41,8 @@ interface ReadyBannerProps {
 }
 
 export default function ReadyBanner({ locale = "en" }: ReadyBannerProps) {
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const content = CONTENT[lang];
+  const t = useTranslations("readyBanner");
+  const badges = t.raw("badges") as Badge[];
   const containerRef = useRef<HTMLDivElement>(null);
 
   const x0 = useMotionValue(0);
@@ -166,7 +82,7 @@ export default function ReadyBanner({ locale = "en" }: ReadyBannerProps) {
       const deltaX = (e.clientX - centerX) / rect.width;
       const deltaY = (e.clientY - centerY) / rect.height;
 
-      content.badges.forEach((_, index) => {
+      badges.forEach((_, index) => {
         if (index >= springs.length) return;
         const params = MOVE_PARAMS[index % MOVE_PARAMS.length];
         springs[index].x.set(deltaX * params.x);
@@ -176,7 +92,7 @@ export default function ReadyBanner({ locale = "en" }: ReadyBannerProps) {
 
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [content.badges, springs]);
+  }, [badges, springs]);
 
   return (
     <div className="pb-0">
@@ -186,7 +102,7 @@ export default function ReadyBanner({ locale = "en" }: ReadyBannerProps) {
           className="bg-[#001E13] rounded-bl-[24px] rounded-br-[24px] lg:rounded-bl-[40px] lg:rounded-br-[40px] p-8 lg:p-20 xl:p-24 relative overflow-hidden"
         >
           <div className="text-center relative z-10 py-12 lg:py-20 xl:py-24">
-            {content.badges.map((badge, index) => (
+            {badges.map((badge, index) => (
               <motion.div
                 key={index}
                 className={`hidden lg:flex absolute px-4 py-2 rounded-full text-sm lg:text-base font-karla font-bold items-center gap-2 ${POSITION_CLASSES[badge.position]}`}
@@ -203,15 +119,15 @@ export default function ReadyBanner({ locale = "en" }: ReadyBannerProps) {
             ))}
 
             <h2 className="text-[#FFFBF5] text-3xl lg:text-5xl xl:text-6xl font-londrina-solid leading-tight mb-6 lg:mb-8 whitespace-pre-line">
-              {content.title}
+              {t("title")}
             </h2>
 
             <p className="text-[#FFFBF5] text-base lg:text-lg mb-6 lg:mb-8 max-w-2xl mx-auto">
-              {content.description}
+              {t("description")}
             </p>
 
             <p className="text-[#61DBD5] text-sm lg:text-base font-karla mb-4">
-              {content.socialProof}
+              {t("socialProof")}
             </p>
 
             <div className="flex justify-center">
@@ -219,7 +135,7 @@ export default function ReadyBanner({ locale = "en" }: ReadyBannerProps) {
             </div>
 
             <p className="text-[#FFFBF5]/60 text-xs lg:text-sm font-karla mt-3">
-              {content.freeNote}
+              {t("freeNote")}
             </p>
           </div>
         </div>

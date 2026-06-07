@@ -3,15 +3,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { PackingSuitcase } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, {
+type Copy = {
   itemsReady: string;
   readyForTrip: string;
   categories: { icon: string; title: string; progress: number; items: { name: string; checked: boolean }[] }[];
@@ -22,129 +20,14 @@ const COPY: Record<Lang, {
   sharedSubtitle: string;
   bringing: string;
   people: { avatar: string; name: string; items: string[] }[];
-}> = {
-  fr: {
-    itemsReady: "14 / 20 articles",
-    readyForTrip: "prêts pour le voyage",
-    categories: [
-      {
-        icon: "👕",
-        title: "Vêtements",
-        progress: 80,
-        items: [
-          { name: "T-shirts (x5)", checked: true },
-          { name: "Pantalons (x3)", checked: true },
-          { name: "Veste légère", checked: true },
-          { name: "Maillot de bain", checked: false },
-        ],
-      },
-      {
-        icon: "🔌",
-        title: "Électronique",
-        progress: 60,
-        items: [
-          { name: "Chargeur téléphone", checked: true },
-          { name: "Adaptateur de prise", checked: true },
-          { name: "Batterie externe", checked: false },
-          { name: "Écouteurs", checked: false },
-        ],
-      },
-      {
-        icon: "🧴",
-        title: "Trousse de toilette",
-        progress: 100,
-        items: [
-          { name: "Brosse à dents", checked: true },
-          { name: "Crème solaire", checked: true },
-          { name: "Shampoing", checked: true },
-        ],
-      },
-    ],
-    tipTitle: "Suggestion basée sur votre voyage",
-    tipText: "Il fait en moyenne 28 °C à Lisbonne en avril. Pensez à prendre des vêtements légers et de la crème solaire !",
-    packTitle: "Préparez vos bagages l'esprit tranquille",
-    sharedTitle: "Qui apporte quoi ? Réglé une bonne fois pour toutes",
-    sharedSubtitle: "Évitez les doublons en répartissant qui apporte quoi.",
-    bringing: "Apporte :",
-    people: [
-      { avatar: "👩‍🎨", name: "Marie", items: ["Crème solaire", "Jeu de cartes", "Guide de voyage"] },
-      { avatar: "🧔", name: "Thomas", items: ["Adaptateur de prise", "Enceinte Bluetooth"] },
-      { avatar: "👱‍♀️", name: "Emma", items: ["Trousse de secours", "Jumelles"] },
-    ],
-  },
-  en: {
-    itemsReady: "14 / 20 items",
-    readyForTrip: "ready for the trip",
-    categories: [
-      {
-        icon: "👕",
-        title: "Clothing",
-        progress: 80,
-        items: [
-          { name: "T-shirts (x5)", checked: true },
-          { name: "Pants (x3)", checked: true },
-          { name: "Light jacket", checked: true },
-          { name: "Swimsuit", checked: false },
-        ],
-      },
-      {
-        icon: "🔌",
-        title: "Electronics",
-        progress: 60,
-        items: [
-          { name: "Phone charger", checked: true },
-          { name: "Power adapter", checked: true },
-          { name: "Power bank", checked: false },
-          { name: "Earbuds", checked: false },
-        ],
-      },
-      {
-        icon: "🧴",
-        title: "Toiletries",
-        progress: 100,
-        items: [
-          { name: "Toothbrush", checked: true },
-          { name: "Sunscreen", checked: true },
-          { name: "Shampoo", checked: true },
-        ],
-      },
-    ],
-    tipTitle: "Suggestion based on your trip",
-    tipText: "The average temperature in Lisbon in April is 28°C. Remember to pack light clothing and sunscreen!",
-    packTitle: "Pack your bags with peace of mind",
-    sharedTitle: "Who brings what? Settle it once and for all",
-    sharedSubtitle: "Avoid duplicates by assigning who brings what.",
-    bringing: "Bringing:",
-    people: [
-      { avatar: "👩‍🎨", name: "Marie", items: ["Sunscreen", "Card game", "Travel guide"] },
-      { avatar: "🧔", name: "Thomas", items: ["Power adapter", "Bluetooth speaker"] },
-      { avatar: "👱‍♀️", name: "Emma", items: ["First aid kit", "Binoculars"] },
-    ],
-  },
 };
 
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
+// Non-text, locale-independent presentation values (formerly Sanity data.*)
+const FEATURE_SLUG = "packing";
+const FEATURE_ICON = "🧳";
+const ACCENT_COLOR = "#F6391A";
+// Icons paired by index with page.features[] in the messages
+const FEATURE_ICONS = ["🧠", "🌤️", "👥", "🔔"];
 
 // Checklist item with animation
 function ChecklistItem({
@@ -245,19 +128,21 @@ function CategorySection({
   );
 }
 
-export default function PackingFeature({ data }: { data: FeaturePageData }) {
+export default function PackingFeature() {
   const locale = useLocale();
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const t = COPY[lang];
+  const tFeature = useTranslations("packingFeature");
+  const t = tFeature.raw("copy") as Copy;
+  const features = tFeature.raw("page.features") as { title: string; description: string }[];
+  const faqItems = tFeature.raw("page.faqItems") as { question: string; answer: string }[];
 
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle}
-        featureDescription={data.seoDescription}
+        featureName={tFeature("page.seoTitle")}
+        featureDescription={tFeature("page.seoDescription")}
         locale={locale}
-        slug={data.slug}
-        faqItems={data.faqItems}
+        slug={FEATURE_SLUG}
+        faqItems={faqItems}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-[#FFFBF5] to-[#61DBD5]/10">
@@ -271,7 +156,7 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
                 transition={{ type: "spring", stiffness: 200 }}
                 className="inline-block mb-6"
               >
-                <span className="text-7xl">{data.icon}</span>
+                <span className="text-7xl">{FEATURE_ICON}</span>
               </motion.div>
 
               <motion.h1
@@ -280,7 +165,7 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
                 transition={{ delay: 0.1 }}
                 className="text-4xl lg:text-6xl font-londrina-solid text-[#001E13] mb-6"
               >
-                <span className="text-[#F6391A]">{data.heroTitleHighlight}</span> {data.heroTitle}
+                <span className="text-[#F6391A]">{tFeature("page.heroTitleHighlight")}</span> {tFeature("page.heroTitle")}
               </motion.h1>
 
               <motion.p
@@ -289,7 +174,7 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
                 transition={{ delay: 0.2 }}
                 className="text-lg text-[#001E13]/70 font-karla max-w-xl mx-auto mb-8"
               >
-                {data.heroSubtitle}
+                {tFeature("page.heroSubtitle")}
               </motion.p>
 
               {/* Overall progress */}
@@ -423,7 +308,7 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
         <section className="px-4 lg:px-8 py-16 bg-[#F6391A]/5">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-6">
-              {data.features.map((f, i) => (
+              {features.map((f, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -432,7 +317,7 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
                   transition={{ delay: i * 0.1 }}
                   className="text-center p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <span className="text-4xl block mb-3">{f.icon}</span>
+                  <span className="text-4xl block mb-3">{FEATURE_ICONS[i]}</span>
                   <h3 className="font-londrina-solid text-lg text-[#001E13] mb-1">{f.title}</h3>
                   <p className="text-sm text-[#001E13]/60 font-karla">{f.description}</p>
                 </motion.div>
@@ -442,7 +327,7 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
+        <FeatureFAQ items={faqItems} accentColor={ACCENT_COLOR} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-16">
@@ -454,17 +339,17 @@ export default function PackingFeature({ data }: { data: FeaturePageData }) {
             >
               <span className="text-6xl mb-6 block">✅</span>
               <h2 className="text-3xl lg:text-4xl font-londrina-solid text-[#001E13] mb-4">
-                {data.ctaTitle}
+                {tFeature("page.ctaTitle")}
               </h2>
               <p className="text-[#001E13]/60 font-karla mb-8 max-w-md mx-auto">
-                {data.ctaSubtitle}
+                {tFeature("page.ctaSubtitle")}
               </p>
               <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                  {data.ctaButton}
+                  {tFeature("page.ctaButton")}
                 </PulsatingButton>
               </Link>
-              <p className="text-sm text-[#001E13]/50 mt-3 font-karla">{data.heroCtaSubtext}</p>
+              <p className="text-sm text-[#001E13]/50 mt-3 font-karla">{tFeature("page.heroCtaSubtext")}</p>
             </motion.div>
           </div>
         </section>

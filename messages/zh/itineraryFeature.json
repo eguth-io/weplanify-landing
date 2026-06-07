@@ -1,0 +1,67 @@
+{
+  "copy": {
+    "calendarMonth": "2024年4月",
+    "weekdays": ["一", "二", "三", "四", "五", "六", "日"],
+    "dragHint": "拖动以重新排序",
+    "days": [
+      {
+        "title": "抵达东京",
+        "items": [
+          { "time": "14:00", "icon": "✈️", "activity": "抵达成田机场" },
+          { "time": "16:00", "icon": "🏨", "activity": "入住新宿酒店" },
+          { "time": "19:00", "icon": "🍜", "activity": "在思い出横丁晚餐" }
+        ]
+      },
+      {
+        "title": "东京 - 历史街区",
+        "items": [
+          { "time": "09:00", "icon": "⛩️", "activity": "浅草浅草寺" },
+          { "time": "12:00", "icon": "🍣", "activity": "筑地市场寿司" },
+          { "time": "15:00", "icon": "🌸", "activity": "漫步上野公园" },
+          { "time": "20:00", "icon": "🌃", "activity": "东京晴空塔" }
+        ]
+      },
+      {
+        "title": "东京 - 现代都市",
+        "items": [
+          { "time": "10:00", "icon": "🛍️", "activity": "涩谷购物" },
+          { "time": "14:00", "icon": "🎮", "activity": "秋叶原" },
+          { "time": "18:00", "icon": "🌆", "activity": "涩谷天空观景台看日落" }
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "交互式时间轴",
+    "heroTitle": "旅行规划",
+    "heroTitleHighlight": "真正好用",
+    "heroSubtitle": "应用会计算行程时间，如果晚上8点的餐厅离下午6点的博物馆有2小时车程，它会提醒你。到了当地零意外。",
+    "socialProofText": "已创建超过 5,000 份行程",
+    "heroCta": "创建我的优化行程",
+    "heroCtaSubtext": "免费，无需信用卡",
+    "featuresTitle": "像专业人士一样安排",
+    "features": [
+      { "icon": "✋", "title": "拖放", "description": "拖动即可重新排序" },
+      { "icon": "🚗", "title": "自动行程时间", "description": "在各站点之间计算" },
+      { "icon": "⚠️", "title": "提醒", "description": "检测到行程冲突" },
+      { "icon": "📤", "title": "导出 PDF", "description": "分享你的行程安排" }
+    ],
+    "faqItems": [
+      { "question": "如何创建逐日的旅行行程？", "answer": "使用 Weplanify，只需添加你的站点（住宿、活动、餐厅），它们就会自动出现在时间轴上。然后你可以通过拖放重新排序。" },
+      { "question": "应用会计算行程时间吗？", "answer": "会的，Weplanify 会自动计算行程中每个站点之间的行程时间，无论是开车、公共交通还是步行。" },
+      { "question": "我可以把行程导出为 PDF 吗？", "answer": "当然可以！将完整行程导出为 PDF，即可离线查看或打印。" },
+      { "question": "如何重新排序行程中的活动？", "answer": "只需使用拖放即可！把任意活动移到另一天，或调整同一天内的顺序。" },
+      { "question": "行程会与整个团队共享吗？", "answer": "会的，所有旅行参与者都能实时看到同一份行程。" }
+    ],
+    "ctaTitle": "告别杂乱的 Excel 表格",
+    "ctaSubtitle": "拖放即可，应用会优化你的路线",
+    "ctaButton": "创建我的优化行程",
+    "seoTitle": "旅行行程 - 逐日规划 | Weplanify",
+    "seoDescription": "使用我们的交互式时间轴逐日安排你的旅行。轻松查看、重新排序并优化你的假期行程。",
+    "stats": [
+      { "value": "5,000+", "label": "行程" },
+      { "value": "自动", "label": "行程时间" },
+      { "value": "PDF", "label": "导出" }
+    ]
+  }
+}

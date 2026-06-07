@@ -13,10 +13,10 @@ import {
 import { ChevronLeft, ChevronRight, Maximize2, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { useRegisterHref } from "@/lib/attribution/use-register-href";
 import { setImmersiveMode } from "@/lib/hooks/use-immersive-mode";
 
-type Lang = "en" | "fr";
 interface SlideData {
   title: string;
   description: string;
@@ -32,9 +32,12 @@ interface SlideData {
   stats?: { value: string; label: string }[];
 }
 
-interface BigFeaturesContent {
+/** Localized slide text pulled from the message file (`t.raw("slides")`). */
+interface SlideText {
   title: string;
-  slides: SlideData[];
+  description: string;
+  ctaLabel: string;
+  stats?: { value: string; label: string }[];
 }
 
 // Per-feature media. Videos currently reuse the explorer pair everywhere — they
@@ -64,66 +67,9 @@ const MEDIA = {
   },
 };
 
-const CONTENT: Record<Lang, BigFeaturesContent> = {
-  fr: {
-    title: "Des fonctionnalités pensées pour voyager ensemble",
-    slides: [
-      {
-        title: "Explore et propose des idées au groupe",
-        description:
-          "Trouve activités, restaurants, hébergement et transport directement dans l'app. Ajoute-les à l'itinéraire ou soumets-les au vote du groupe.",
-        ...MEDIA.explorer,
-        ctaLabel: "Explorer les destinations",
-        stats: [{ value: "+190", label: "destinations possibles" }],
-      },
-      {
-        title: "Décidez ensemble grâce aux sondages",
-        description:
-          "Où dormir ? Que faire ? Quand partir ? Créez un sondage, chacun vote, la décision est prise. Le groupe avance, le voyage aussi.",
-        ...MEDIA.voting,
-        ctaLabel: "Lancer un sondage",
-        stats: [{ value: "1000+", label: "sondages quotidiens" }],
-      },
-      {
-        title: "Un itinéraire clair, jour après jour",
-        description:
-          "Chaque journée du voyage est structurée : que faire, où manger, où dormir, comment se déplacer. Tout est clair pour tout le monde.",
-        ...MEDIA.itinerary,
-        ctaLabel: "Construire l'itinéraire",
-        stats: [{ value: "10+", label: "partenaires" }],
-      },
-    ],
-  },
-  en: {
-    title: "Everything You Need to Plan a Group Trip",
-    slides: [
-      {
-        title: "Explore and propose ideas to the group",
-        description:
-          "Find activities, restaurants, accommodation and transport directly in the app. Add them to the itinerary or propose them to the group to vote.",
-        ...MEDIA.explorer,
-        ctaLabel: "Explore destinations",
-        stats: [{ value: "190+", label: "Possible destinations" }],
-      },
-      {
-        title: "Decide together with polls",
-        description:
-          "Where to stay? What to do? When to leave? Create a poll, everyone votes, the decision is made. The group moves forward, the trip too.",
-        ...MEDIA.voting,
-        ctaLabel: "Start a poll",
-        stats: [{ value: "1000+", label: "Daily polls" }],
-      },
-      {
-        title: "A clear itinerary, day by day",
-        description:
-          "Each day of the trip is structured: what to do, where to eat, where to sleep, how to get there. Everything is clear for everyone.",
-        ...MEDIA.itinerary,
-        ctaLabel: "Build my itinerary",
-        stats: [{ value: "10+", label: "Partners" }],
-      },
-    ],
-  },
-};
+// Per-feature media in slide order. The localized text (title, description,
+// ctaLabel, stats) is merged in from the message file at render time.
+const SLIDE_MEDIA = [MEDIA.explorer, MEDIA.voting, MEDIA.itinerary];
 
 const PADDING = 32;
 // Much smaller shrink padding on mobile so the slide doesn't lose too much of
@@ -183,8 +129,14 @@ function SlideIndicatorDot({
 export default function BigFeaturesSection({
   locale = "en",
 }: BigFeaturesSectionProps) {
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const { title, slides } = CONTENT[lang];
+  const t = useTranslations("bigFeaturesSection");
+  const title = t("title");
+  const slidesText = t.raw("slides") as SlideText[];
+  // Merge localized text with the (non-localized) per-feature media, in order.
+  const slides: SlideData[] = slidesText.map((text, i) => ({
+    ...text,
+    ...SLIDE_MEDIA[i],
+  }));
   const lastIndex = slides.length - 1;
 
   const containerRef = useRef<HTMLDivElement>(null);

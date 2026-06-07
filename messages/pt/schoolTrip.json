@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Como Planear uma Viagem Escolar — Planeador de Visitas de Estudo Gratuito para Professores | WePlanify",
+    "description": "Planeie uma viagem escolar com a WePlanify: itinerário partilhado visível para os pais, número de participantes e necessidades alimentares num só lugar, sondagens para atividades, listas de bagagem e armazenamento de documentos. Gratuito para professores."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Viagem Escolar"
+  },
+  "hero": {
+    "tag": "Viagem Escolar",
+    "title": "Planeie uma Viagem Escolar Sem o Pesadelo da Papelada",
+    "readTime": "8 min de leitura · Atualizado a 5 de maio de 2026"
+  },
+  "problem": {
+    "p1": "Uma viagem escolar parece um único evento, mas é, na verdade, três fluxos de trabalho coordenados a correr em paralelo: a viagem em si (transporte, alojamento, atividades), a comunicação com os pais (autorizações, necessidades alimentares, atualizações diárias da estrada) e a logística dos acompanhantes (grupos, rácios, quem é responsável por que aluno). Quando qualquer um destes três vive em ferramentas diferentes — formulários em papel aqui, uma cadeia de emails ali, um grupo de WhatsApp algures — cada alteração tem de ser propagada três vezes. É aí que surgem as falhas.",
+    "p2": "A WePlanify coloca o itinerário, a lista de participantes e o armazenamento de documentos num só lugar — visível para os acompanhantes e consultável pelos pais sem necessidade de conta."
+  },
+  "toc": {
+    "title": "Nesta página",
+    "approval": "Obter a aprovação administrativa",
+    "logistics": "Anatomia de uma viagem escolar",
+    "parentComms": "Comunicação com os pais que escala",
+    "safety": "Segurança, rácios e funções dos acompanhantes",
+    "faq": "Perguntas frequentes"
+  },
+  "approval": {
+    "title": "Obter a Aprovação Administrativa",
+    "p1": "A maioria das escolas exige uma aprovação formal 6 a 12 semanas antes de qualquer viagem com pernoita. O caminho mais rápido através da burocracia: uma proposta de uma página que responde às perguntas que a direção vai fazer antes de as fazerem. Datas e destino. Objetivos de aprendizagem mapeados no seu currículo. Custo indicativo por aluno. Rácio de adultos por aluno. Avaliação de risco. Cobertura do seguro. Quanto mais limpo for este documento, mais rápida será a aprovação."
+  },
+  "anatomy": {
+    "title": "Anatomia de uma Viagem Escolar",
+    "subtitle": "Cinco componentes em movimento. Acerte em cada um e a viagem corre por si só.",
+    "learnMore": "Saber mais →",
+    "items": [
+      { "stop": "A Lista de Participantes", "desc": "A única fonte de verdade sobre quem vai. Cada participante leva as suas restrições alimentares, alergias e contacto de emergência diretamente no seu perfil. Quando um pai assina a autorização, o número de participantes atualiza-se em tempo real — sem folha de cálculo para reconciliar.", "link": "/features/collaboration" },
+      { "stop": "O Itinerário", "desc": "Dia a dia, hora a hora. Visível para cada acompanhante no telemóvel e para os pais através do link partilhado. Quando o autocarro está 30 minutos atrasado, publica uma atualização e toda a gente a vê — sem email coletivo, sem grupo de pais para gerir.", "link": "/features/planning" },
+      { "stop": "As Decisões", "desc": "Algumas escolhas são impostas pelo currículo. Outras são abertas: que museu opcional, que restaurante para o jantar de grupo, que atividade à noite. Façam sondagens com os acompanhantes (ou, se a idade o permitir, com os alunos) e o resultado vence sem debate.", "link": "/features/polls" },
+      { "stop": "O Dinheiro", "desc": "Orçamento por aluno, sinais, saldo em dívida. Acompanhe os pagamentos no orçamento partilhado para saber sempre quem pagou e quem não pagou. Para extras opcionais (dinheiro para lembranças, melhorias de atividades), deixe os pais assinalar caixas — o orçamento recalcula automaticamente.", "link": "/features/budget" },
+      { "stop": "A Bagagem", "desc": "Uma lista partilhada com duas colunas: obrigatório e recomendado. Os pais veem-na no momento em que a publica, duas semanas antes da partida. Fazem as malas em conformidade. Menos emails em pânico na véspera, menos crianças que se esqueceram do passaporte no ponto de encontro.", "link": "/features/packing" }
+    ]
+  },
+  "parentComms": {
+    "title": "Comunicação com os Pais Que Escala",
+    "p1": "O modo de falha clássico da comunicação numa viagem escolar: 30 pais, 30 emails com perguntas ligeiramente diferentes e você a escrever variações da mesma resposta 30 vezes. A solução não é 'enviar menos emails' — é 'colocar a resposta num sítio onde eles a possam encontrar sozinhos.' Um itinerário partilhado que podem consultar a qualquer momento, com o ponto de encontro, o horário diário, a morada do alojamento e o contacto de emergência, elimina 80% das perguntas antes de serem feitas.",
+    "p2": "Para os restantes 20%, o truque é a consolidação. Em vez de três emails separados (autorização, necessidades alimentares, contacto de emergência), um só formulário cobre os três no momento da inscrição. Os pais preenchem-no uma vez. Você vê os dados em tempo real imediatamente. As perguntas do dia da viagem vão para uma única cadeia da viagem, não para a sua caixa de entrada pessoal. Numa viagem de 5 dias com pernoita, isto poupa a um professor 4 a 6 horas de tempo administrativo."
+  },
+  "safety": {
+    "title": "Segurança, Rácios e Funções dos Acompanhantes",
+    "p1": "A maioria dos ministérios da educação publica os rácios obrigatórios de adultos por aluno — normalmente 1:10 para viagens com pernoita do ensino básico, 1:15 para o secundário. Confirme o seu antes de avançar com números para os pais. Quando tiver a equipa de acompanhantes, atribua cada um a um subgrupo específico de alunos e torne essas atribuições visíveis dentro da viagem. Cada acompanhante vê então no telemóvel exatamente quais são os seus alunos, com a informação alimentar e os contactos de emergência pré-carregados.",
+    "p2": "As contagens de participantes em cada transição (entrar no autocarro, entrar num local, sair de uma atividade) são o hábito mais importante numa viagem escolar. Incorpore-as no horário como verdadeiros pontos de controlo, e não como algo que o professor vai improvisar. Com uma lista de participantes partilhada, a contagem demora 30 segundos e qualquer aluno em falta é assinalado de imediato, e não três paragens depois.",
+    "p3": "Para alergias graves ou condições médicas, anexe a documentação diretamente ao participante. Os acompanhantes podem aceder-lhe offline se o telemóvel tiver rede — e o pessoal do local (um hotel, um restaurante, um guia de museu) pode ver a informação relevante imediatamente. Este simples gesto já evitou mais do que uma ida às urgências a meio de uma viagem."
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      { "q": "Com quanta antecedência devo planear uma viagem escolar?", "a": "Para viagens de um dia, duas a três semanas costumam ser suficientes. Para viagens com pernoita ou internacionais, comece com três a seis meses de antecedência. A pressão de reserva varia consoante o destino — cidades populares para viagens escolares, como Roma, Londres ou Barcelona, esgotam depressa na primavera. Fixe primeiro o transporte e o alojamento; as atividades podem ser confirmadas mais tarde." },
+      { "q": "Como recolho as autorizações e as necessidades alimentares de forma eficiente?", "a": "Deixe de andar atrás de formulários em papel. Use uma única viagem partilhada com uma lista de participantes — cada pai confirma a presença, as restrições alimentares e os contactos de emergência num só lugar. A WePlanify mantém o número de participantes visível em tempo real, para que saiba sempre quem já confirmou e quem não confirmou." },
+      { "q": "Os pais podem ver o itinerário sem criar uma conta?", "a": "Sim. Partilhe o link da viagem e os pais podem ver o plano completo dia a dia, a morada do alojamento e os contactos de emergência sem se registarem. Vão sentir-se tranquilizados e você vai receber menos emails em pânico na véspera." },
+      { "q": "Como se lida com as necessidades alimentares e as alergias?", "a": "Adicione as restrições alimentares ao perfil de cada participante e marque-as nas refeições ou atividades relevantes. A informação mantém-se visível para os acompanhantes e para os locais que reservou. Para alergias graves, anexe o documento médico diretamente ao participante para que esteja acessível offline." },
+      { "q": "Qual é a melhor forma de dividir as responsabilidades dos acompanhantes?", "a": "Atribua os acompanhantes a grupos específicos de alunos dentro da viagem. Cada acompanhante vê no telemóvel o número de participantes do seu grupo, a informação alimentar e os contactos de emergência. Use sondagens para votar nas atividades que os acompanhantes estão a debater — acabou-se o 'nunca decidimos quem vai ao museu.'" },
+      { "q": "A WePlanify é adequada para viagens escolares com alunos com menos de 13 anos?", "a": "Sim — os alunos não precisam de conta. Apenas o professor responsável e os acompanhantes (ou os pais designados) se juntam à viagem. Os dados dos alunos são guardados como participantes, e não como contas de utilizador, o que mantém a configuração em conformidade com as regras de privacidade relativas a menores." }
+    ]
+  },
+  "discover": {
+    "title": "Descubra Mais",
+    "teamBuilding": { "title": "Team Building", "desc": "Para retiros corporativos." },
+    "familyTrip": { "title": "Viagem em Família", "desc": "Para escapadas multigeracionais." },
+    "groupGuide": { "title": "Guia de Viagem em Grupo", "desc": "O guia completo, passo a passo." },
+    "appComparison": { "title": "Comparação de Apps", "desc": "Comparada com outros planeadores." }
+  },
+  "cta": {
+    "title": "Gira a Sua Próxima Viagem Escolar a Partir de Um Só Lugar",
+    "subtitle": "Gratuito para professores. Sem app para os pais instalarem. Configure a sua viagem em 5 minutos.",
+    "button": "Começar uma viagem escolar"
+  },
+  "jsonld": {
+    "articleHeadline": "Como Planear uma Viagem Escolar Sem o Pesadelo da Papelada",
+    "howToName": "Como planear uma viagem escolar",
+    "howToDescription": "Da obtenção da aprovação administrativa à entrega do questionário pós-viagem — um guia passo a passo para professores que organizam uma viagem de turma.",
+    "howToSteps": [
+      { "name": "Obtenha a luz verde administrativa", "text": "Antes de reservar seja o que for, obtenha a aprovação formal da direção da escola. Prepare uma página: datas, destino, objetivos de aprendizagem, orçamento indicativo por aluno, rácio de supervisão. A maioria das instituições exige isto com 6 a 12 semanas de antecedência para viagens com pernoita." },
+      { "name": "Fixe o transporte, o alojamento e as atividades", "text": "Reserve primeiro os itens de maior peso: autocarro ou comboio, alojamento com o rácio adequado de adultos por aluno e as atividades principais. Use um itinerário partilhado para que os co-organizadores vejam o mesmo plano e possam assinalar conflitos antes de se tornarem problemas." },
+      { "name": "Recolha autorizações, necessidades alimentares e contactos de emergência", "text": "Envie aos pais o link da viagem. Confirmam a presença, declaram restrições alimentares e alergias e fornecem contactos de emergência num só formulário. O número de participantes atualiza-se em tempo real, sem necessidade de andar atrás de ninguém." },
+      { "name": "Votem nas atividades negociáveis", "text": "Algumas escolhas são fixas (o museu que o currículo exige). Outras não (que atividade à noite, que restaurante para o jantar de grupo). Façam uma sondagem rápida com os acompanhantes — e, sempre que a idade o permitir, com os alunos — e o resultado decide." },
+      { "name": "Publique a lista de bagagem e o briefing pré-viagem", "text": "Duas semanas antes da partida, publique uma lista de bagagem partilhada (dividida em 'obrigatório' e 'recomendado') e um briefing pré-viagem que cubra o ponto de encontro, o horário, as expectativas de comportamento e o procedimento de emergência. Os pais veem exatamente o que o seu filho precisa." },
+      { "name": "Conduza a viagem com o itinerário partilhado em tempo real", "text": "No dia, cada acompanhante tem o plano completo no telemóvel — moradas, horas, número de participantes, contactos de emergência. Atualize o itinerário em tempo real quando algo muda (autocarro atrasado, atividade trocada) e os pais veem o novo plano imediatamente. Sem cadeia de chamadas, sem pânico." }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "badge": "découvrir l'app",
+  "title": "Planifiez votre voyage en 3 étapes",
+  "description": "Simple, collaboratif et conçu pour les groupes.",
+  "card1": {
+    "title": "Étape 1 : Invitez votre groupe",
+    "description": "Renseignez les infos essentielles. Ajoutez vos amis ou votre famille en un clic. Tout le monde voit le même voyage.",
+    "statValue": "1 min",
+    "statLabel": "pour inviter le groupe"
+  },
+  "card2": {
+    "title": "Étape 2 : Explorez et découvrez",
+    "description": "Swipez parmi les activités, restaurants et hôtels. Ajoutez vos coups de cœur à l'itinéraire.",
+    "statValue": "500+",
+    "statLabel": "lieux à découvrir"
+  },
+  "card3": {
+    "title": "Étape 3 : Décidez et finalisez",
+    "description": "Lancez des sondages, gérez le budget et préparez le départ ensemble.",
+    "statValue": "100%",
+    "statLabel": "décidé ensemble"
+  }
+}

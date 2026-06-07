@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -19,8 +19,6 @@ type Props = {
 
 type ComparisonRow = {
   key: string;
-  en: string;
-  fr: string;
   weplanify: string;
   cruzmi: string;
 };
@@ -41,41 +39,28 @@ const SITE_URL = "https://www.weplanify.com";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "altCruzmi" });
   const pathname = "/alternatives/cruzmi";
   const currentUrl = `${SITE_URL}/${locale}${pathname}`;
 
-  const meta = {
-    en: {
-      title:
-        "Cruzmi Alternative for Group Trips: WePlanify (Free, 2026)",
-      description:
-        "Cruzmi alternative for organizing group trips with friends. WePlanify offers collaborative itineraries, polls, shared budgets and packing lists — free, bilingual (EN/FR).",
-    },
-    fr: {
-      title:
-        "Alternative à Cruzmi : Voyage de Groupe Collaboratif (Gratuit, 2026)",
-      description:
-        "Alternative à Cruzmi pour tes voyages de groupe entre amis. WePlanify : itinéraires collaboratifs, sondages, budget partagé, packing list — gratuit, bilingue FR/EN.",
-    },
-  };
-
-  const loc = meta[locale as keyof typeof meta] ?? meta.en;
+  const title = t("meta.title");
+  const description = t("meta.description");
 
   return {
-    title: loc.title,
-    description: loc.description,
+    title,
+    description,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       url: currentUrl,
       siteName: "WePlanify",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     twitter: {
       card: "summary_large_image",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     alternates: {
       canonical: currentUrl,
@@ -93,237 +78,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // ---------------------------------------------------------------------------
 
 const comparisonRows: ComparisonRow[] = [
-  {
-    key: "collab_itinerary",
-    en: "Collaborative itinerary",
-    fr: "Itinéraire collaboratif",
-    weplanify: "yes",
-    cruzmi: "limited",
-  },
-  {
-    key: "polls",
-    en: "Group polls / voting",
-    fr: "Sondages / votes de groupe",
-    weplanify: "yes",
-    cruzmi: "basic",
-  },
-  {
-    key: "budget",
-    en: "Shared budget tracker",
-    fr: "Suivi de budget partagé",
-    weplanify: "yes",
-    cruzmi: "yes",
-  },
-  {
-    key: "packing",
-    en: "Packing lists",
-    fr: "Listes de bagages",
-    weplanify: "yes",
-    cruzmi: "no",
-  },
-  {
-    key: "discovery",
-    en: "Activity discovery",
-    fr: "Découverte d'activités",
-    weplanify: "yes",
-    cruzmi: "no",
-  },
-  {
-    key: "day_by_day",
-    en: "Day-by-day planning",
-    fr: "Planning jour par jour",
-    weplanify: "yes",
-    cruzmi: "no",
-  },
-  {
-    key: "events",
-    en: "Event organization (non-travel)",
-    fr: "Organisation d'événements (hors voyage)",
-    weplanify: "no",
-    cruzmi: "yes_broad",
-  },
-  {
-    key: "french",
-    en: "French language",
-    fr: "Langue française",
-    weplanify: "yes",
-    cruzmi: "yes",
-  },
-  {
-    key: "english",
-    en: "English language",
-    fr: "Langue anglaise",
-    weplanify: "yes",
-    cruzmi: "no",
-  },
-  {
-    key: "free",
-    en: "Free",
-    fr: "Gratuit",
-    weplanify: "yes",
-    cruzmi: "yes",
-  },
-  {
-    key: "mobile",
-    en: "Mobile app",
-    fr: "Application mobile",
-    weplanify: "web_app",
-    cruzmi: "yes_mobile",
-  },
-  {
-    key: "web",
-    en: "Web access",
-    fr: "Accès web",
-    weplanify: "yes",
-    cruzmi: "limited",
-  },
+  { key: "collab_itinerary", weplanify: "yes", cruzmi: "limited" },
+  { key: "polls", weplanify: "yes", cruzmi: "basic" },
+  { key: "budget", weplanify: "yes", cruzmi: "yes" },
+  { key: "packing", weplanify: "yes", cruzmi: "no" },
+  { key: "discovery", weplanify: "yes", cruzmi: "no" },
+  { key: "day_by_day", weplanify: "yes", cruzmi: "no" },
+  { key: "events", weplanify: "no", cruzmi: "yes_broad" },
+  { key: "french", weplanify: "yes", cruzmi: "yes" },
+  { key: "english", weplanify: "yes", cruzmi: "no" },
+  { key: "free", weplanify: "yes", cruzmi: "yes" },
+  { key: "mobile", weplanify: "web_app", cruzmi: "yes_mobile" },
+  { key: "web", weplanify: "yes", cruzmi: "limited" },
 ];
 
-const content = {
-  en: {
-    heroSubtitle: "Comparison for the French market",
-    heroTitle: "WePlanify vs Cruzmi — Best French Group Trip Planner?",
-    heroIntro:
-      "Looking for a group trip planner that speaks French? Cruzmi is a French-language mobile app for organizing group events, but it was not designed specifically for travel. WePlanify is a bilingual web app built from the ground up for trip planning. Here is how they compare.",
-    verdictTitle: "Quick Verdict",
-    verdictText:
-      "Cruzmi is a French mobile app for general group event coordination. It lacks day-by-day itineraries, activity discovery, and packing lists. WePlanify is a bilingual web app purpose-built for travel planning with collaborative itineraries, group polls, shared budgets, and packing lists.",
-    comparisonTitle: "Feature Comparison",
-    cruzmiShinesTitle: "Where Cruzmi Shines",
-    cruzmiShinesPoints: [
-      {
-        title: "French-only focus",
-        desc: "Cruzmi targets the French market. The interface and support are in French only, which means no English option for international groups.",
-      },
-      {
-        title: "Mobile app available",
-        desc: "Cruzmi has a native mobile app on iOS and Android. However, its web access is limited, which can be a constraint for desktop planning sessions.",
-      },
-      {
-        title: "Broader event scope",
-        desc: "Cruzmi handles group events like parties, outings, and dinners. This generalist approach means travel-specific features like day-by-day itineraries and activity discovery are absent.",
-      },
-    ],
-    weplanifyWinsTitle: "Where WePlanify Wins",
-    weplanifyWinsPoints: [
-      {
-        title: "Purpose-built for travel",
-        desc: "Unlike Cruzmi's generalist event approach, WePlanify is designed exclusively for trip planning: day-by-day itineraries, activity discovery, packing lists, and shared budget tracking all come built-in.",
-      },
-      {
-        title: "Bilingual (EN / FR)",
-        desc: "Fully available in both English and French — perfect for international friend groups or mixed-language families. Cruzmi only supports French, leaving English-speaking members behind.",
-      },
-      {
-        title: "Instant web access",
-        desc: "No app store download required. WePlanify works in any browser on desktop, tablet, or mobile — share a link and everyone can join in seconds, no matter what device they use.",
-      },
-      {
-        title: "Real collaborative itineraries",
-        desc: "Build a detailed day-by-day trip plan together with polls, comments, and real-time updates. Everyone contributes, everyone votes, and the group reaches decisions faster.",
-      },
-    ],
-    whoTitle: "Who Should Choose Which?",
-    whoCruzmi:
-      "Choose Cruzmi if you are organizing a French-speaking group event that is not a trip — a birthday party, a weekend outing, or a dinner with friends. It is a general-purpose event tool, not a travel planner.",
-    whoWeplanify:
-      "Choose WePlanify if you are planning an actual trip — whether a weekend getaway or a two-week adventure — and you need structured day-by-day itineraries, budget tracking, packing lists, activity discovery, and group polls. Especially valuable for bilingual groups that need both English and French.",
-    faqTitle: "Frequently Asked Questions",
-    faq: [
-      {
-        q: "Is Cruzmi better for non-travel events?",
-        a: "Cruzmi has a broader scope that includes parties, outings, and group dinners. If your main goal is general event organization among French-speaking friends rather than travel planning, Cruzmi covers that use case.",
-      },
-      {
-        q: "Does WePlanify work on mobile?",
-        a: "Yes. WePlanify is a responsive web application that works in any mobile browser. There is no native app to download — just open the link and start planning. A dedicated mobile app is on the roadmap.",
-      },
-      {
-        q: "Which app is best for a trip with friends?",
-        a: "For a trip specifically, WePlanify offers more travel-focused features: collaborative day-by-day itineraries, activity discovery, packing lists, and shared budgets. It is also bilingual, making it ideal for mixed English/French groups.",
-      },
-    ],
-    ctaTitle: "Ready to plan your next group trip?",
-    ctaButton: "Get started for free",
-    crossLinksTitle: "Compare with Other Apps",
-    backToAlternatives: "View all comparisons",
-  },
-  fr: {
-    heroSubtitle: "Comparatif pour le marché français",
-    heroTitle: "WePlanify vs Cruzmi — Meilleur Organisateur de Voyage de Groupe Français ?",
-    heroIntro:
-      "Tu cherches une application de voyage de groupe en français ? Cruzmi est une application mobile francophone pour organiser des événements de groupe, mais elle n'a pas été conçue spécifiquement pour le voyage. WePlanify est une application web bilingue construite de A à Z pour la planification de voyage. Voici comment elles se comparent.",
-    verdictTitle: "Verdict Rapide",
-    verdictText:
-      "Cruzmi est une application mobile française pour la coordination d'événements de groupe en général. Elle ne propose pas d'itinéraires jour par jour, de découverte d'activités, ni de listes de bagages. WePlanify est une application web bilingue conçue spécifiquement pour la planification de voyage avec des itinéraires collaboratifs, des sondages de groupe, des budgets partagés et des listes de bagages.",
-    comparisonTitle: "Comparatif des Fonctionnalités",
-    cruzmiShinesTitle: "Là où Cruzmi se Démarque",
-    cruzmiShinesPoints: [
-      {
-        title: "Focus 100 % français",
-        desc: "Cruzmi cible le marché français. L'interface et le support sont en français uniquement, ce qui signifie aucune option anglaise pour les groupes internationaux.",
-      },
-      {
-        title: "Application mobile disponible",
-        desc: "Cruzmi propose une application native sur iOS et Android. Cependant, son accès web est limité, ce qui peut être contraignant pour la planification sur ordinateur.",
-      },
-      {
-        title: "Portée événementielle plus large",
-        desc: "Cruzmi gère les événements de groupe comme les fêtes, les sorties et les dîners. Cette approche généraliste implique l'absence de fonctionnalités spécifiques au voyage comme les itinéraires jour par jour et la découverte d'activités.",
-      },
-    ],
-    weplanifyWinsTitle: "Là où WePlanify Gagne",
-    weplanifyWinsPoints: [
-      {
-        title: "Conçu pour le voyage",
-        desc: "Contrairement à l'approche généraliste de Cruzmi, WePlanify est conçu exclusivement pour la planification de voyage : itinéraires jour par jour, découverte d'activités, listes de bagages et suivi de budget partagé sont tous intégrés.",
-      },
-      {
-        title: "Bilingue (EN / FR)",
-        desc: "Entièrement disponible en anglais et en français — parfait pour les groupes d'amis internationaux ou les familles multilingues. Cruzmi ne supporte que le français, laissant les membres anglophones de côté.",
-      },
-      {
-        title: "Accès web instantané",
-        desc: "Aucun téléchargement requis. WePlanify fonctionne dans n'importe quel navigateur sur ordinateur, tablette ou mobile — partage un lien et tout le monde peut participer en quelques secondes, quel que soit l'appareil.",
-      },
-      {
-        title: "Vrais itinéraires collaboratifs",
-        desc: "Construis ensemble un planning de voyage détaillé jour par jour avec des sondages, des commentaires et des mises à jour en temps réel. Tout le monde contribue, tout le monde vote, et le groupe prend ses décisions plus rapidement.",
-      },
-    ],
-    whoTitle: "Pour Qui Choisir Quoi ?",
-    whoCruzmi:
-      "Choisis Cruzmi si tu organises un événement de groupe francophone qui n'est pas un voyage — un anniversaire, une sortie le week-end ou un dîner entre amis. C'est un outil d'événements généraliste, pas un planificateur de voyage.",
-    whoWeplanify:
-      "Choisis WePlanify si tu planifies un vrai voyage — qu'il s'agisse d'un week-end ou d'une aventure de deux semaines — et que tu as besoin d'itinéraires structurés jour par jour, d'un suivi de budget, de listes de bagages, de découverte d'activités et de sondages de groupe. Particulièrement précieux pour les groupes bilingues qui ont besoin du français et de l'anglais.",
-    faqTitle: "Questions Fréquentes",
-    faq: [
-      {
-        q: "Cruzmi est-il mieux pour les événements non-voyage ?",
-        a: "Cruzmi a une portée plus large qui inclut les fêtes, les sorties et les dîners de groupe. Si ton objectif principal est l'organisation d'événements entre amis francophones plutôt que la planification de voyage, Cruzmi couvre ce cas d'usage.",
-      },
-      {
-        q: "WePlanify fonctionne-t-il sur mobile ?",
-        a: "Oui. WePlanify est une application web responsive qui fonctionne dans n'importe quel navigateur mobile. Il n'y a pas d'application native à télécharger — ouvre le lien et commence à planifier. Une application mobile dédiée est prévue.",
-      },
-      {
-        q: "Quelle application est la meilleure pour un voyage entre amis ?",
-        a: "Pour un voyage spécifiquement, WePlanify offre plus de fonctionnalités orientées voyage : itinéraires collaboratifs jour par jour, découverte d'activités, listes de bagages et budgets partagés. Il est aussi bilingue, ce qui le rend idéal pour les groupes mixtes anglais/français.",
-      },
-    ],
-    ctaTitle: "Prêt à planifier ton prochain voyage de groupe ?",
-    ctaButton: "Commencer gratuitement",
-    crossLinksTitle: "Comparer avec d'Autres Applications",
-    backToAlternatives: "Voir tous les comparatifs",
-  },
+type Badges = {
+  limited: string;
+  basic: string;
+  yesBroad: string;
+  yesMobile: string;
+  webApp: string;
 };
 
 // ---------------------------------------------------------------------------
 // Cell label helpers
 // ---------------------------------------------------------------------------
 
-function cellLabel(value: string, locale: string): { type: "check" | "cross" | "badge"; label?: string; color?: string } {
-  const t = locale === "fr" ? "fr" : "en";
+function cellLabel(value: string, badges: Badges): { type: "check" | "cross" | "badge"; label?: string; color?: string } {
   switch (value) {
     case "yes":
       return { type: "check" };
@@ -332,31 +113,31 @@ function cellLabel(value: string, locale: string): { type: "check" | "cross" | "
     case "limited":
       return {
         type: "badge",
-        label: t === "fr" ? "Limité" : "Limited",
+        label: badges.limited,
         color: "text-amber-700 bg-amber-50",
       };
     case "basic":
       return {
         type: "badge",
-        label: t === "fr" ? "Basique" : "Basic",
+        label: badges.basic,
         color: "text-amber-700 bg-amber-50",
       };
     case "yes_broad":
       return {
         type: "badge",
-        label: t === "fr" ? "Oui (portée large)" : "Yes (broader scope)",
+        label: badges.yesBroad,
         color: "text-emerald-700 bg-emerald-50",
       };
     case "yes_mobile":
       return {
         type: "badge",
-        label: t === "fr" ? "Oui (mobile-first)" : "Yes (mobile-first)",
+        label: badges.yesMobile,
         color: "text-emerald-700 bg-emerald-50",
       };
     case "web_app":
       return {
         type: "badge",
-        label: t === "fr" ? "App web" : "Web app",
+        label: badges.webApp,
         color: "text-sky-700 bg-sky-50",
       };
     default:
@@ -398,8 +179,8 @@ function CrossIcon() {
   );
 }
 
-function CellValue({ value, locale }: { value: string; locale: string }) {
-  const cell = cellLabel(value, locale);
+function CellValue({ value, badges }: { value: string; badges: Badges }) {
+  const cell = cellLabel(value, badges);
   if (cell.type === "check") return <CheckIcon />;
   if (cell.type === "cross") return <CrossIcon />;
   return (
@@ -417,7 +198,19 @@ export default async function CruzmiComparisonPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = content[locale as keyof typeof content] ?? content.en;
+  const t = await getTranslations("altCruzmi");
+
+  const badges = t.raw("comparison.badges") as Badges;
+  const rowLabels = t.raw("comparison.rows") as Record<string, string>;
+  const cruzmiShinesPoints = t.raw("cruzmiShines.points") as {
+    title: string;
+    desc: string;
+  }[];
+  const weplanifyWinsPoints = t.raw("weplanifyWins.points") as {
+    title: string;
+    desc: string;
+  }[];
+  const faqItems = t.raw("faq.items") as { q: string; a: string }[];
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -451,13 +244,13 @@ export default async function CruzmiComparisonPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("breadcrumb.home"),
         item: `https://www.weplanify.com/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Comparatif" : "Alternatives",
+        name: t("breadcrumb.alternatives"),
         item: `https://www.weplanify.com/${locale}/alternatives`,
       },
       {
@@ -475,7 +268,7 @@ export default async function CruzmiComparisonPage({ params }: Props) {
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: t.faq.map((item) => ({
+    mainEntity: faqItems.map((item) => ({
       "@type": "Question",
       name: item.q,
       acceptedAnswer: {
@@ -506,7 +299,7 @@ export default async function CruzmiComparisonPage({ params }: Props) {
             <div className="hidden lg:block mb-8">
               <Breadcrumb
                 items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: t("breadcrumb.home"), href: `/${locale}` },
                   { label: "Alternatives", href: `/${locale}/alternatives` },
                   { label: "vs Cruzmi" },
                 ]}
@@ -515,13 +308,13 @@ export default async function CruzmiComparisonPage({ params }: Props) {
           </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
-              {t.heroSubtitle}
+              {t("hero.subtitle")}
             </p>
             <h1 className="font-londrina-solid text-[#001E13] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-tight mb-6">
-              {t.heroTitle}
+              {t("hero.title")}
             </h1>
             <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              {t.heroIntro}
+              {t("hero.intro")}
             </p>
           </div>
         </section>
@@ -533,10 +326,10 @@ export default async function CruzmiComparisonPage({ params }: Props) {
           <div className="max-w-3xl mx-auto">
             <div className="rounded-2xl border border-[#F6391A]/20 bg-white p-6 lg:p-8 shadow-sm">
               <h2 className="font-londrina-solid text-[#F6391A] text-xl lg:text-2xl mb-3">
-                {t.verdictTitle}
+                {t("verdict.title")}
               </h2>
               <p className="font-karla text-[#001E13]/80 text-sm lg:text-base leading-relaxed">
-                {t.verdictText}
+                {t("verdict.text")}
               </p>
             </div>
           </div>
@@ -548,7 +341,7 @@ export default async function CruzmiComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.comparisonTitle}
+              {t("comparison.title")}
             </h2>
 
             {/* Desktop table */}
@@ -557,7 +350,7 @@ export default async function CruzmiComparisonPage({ params }: Props) {
                 <thead>
                   <tr className="bg-[#001E13]">
                     <th className="font-karla font-bold text-[#FFFBF5] px-6 py-4 text-sm min-w-[240px]">
-                      {locale === "fr" ? "Fonctionnalité" : "Feature"}
+                      {t("comparison.featureHeader")}
                     </th>
                     <th className="font-karla font-bold text-center px-6 py-4 text-sm text-[#EEF899] min-w-[160px]">
                       WePlanify
@@ -574,13 +367,13 @@ export default async function CruzmiComparisonPage({ params }: Props) {
                       className={i % 2 === 0 ? "bg-white" : "bg-[#FFFBF5]"}
                     >
                       <td className="font-karla text-sm text-[#001E13] px-6 py-3.5">
-                        {locale === "fr" ? row.fr : row.en}
+                        {rowLabels[row.key]}
                       </td>
                       <td className="px-6 py-3.5 text-center bg-emerald-50/40">
-                        <CellValue value={row.weplanify} locale={locale} />
+                        <CellValue value={row.weplanify} badges={badges} />
                       </td>
                       <td className="px-6 py-3.5 text-center">
-                        <CellValue value={row.cruzmi} locale={locale} />
+                        <CellValue value={row.cruzmi} badges={badges} />
                       </td>
                     </tr>
                   ))}
@@ -616,10 +409,10 @@ export default async function CruzmiComparisonPage({ params }: Props) {
                         className="flex items-center justify-between text-sm font-karla"
                       >
                         <span className="text-[#001E13]/80">
-                          {locale === "fr" ? row.fr : row.en}
+                          {rowLabels[row.key]}
                         </span>
                         <span className="ml-3 shrink-0">
-                          <CellValue value={row[app.dataKey]} locale={locale} />
+                          <CellValue value={row[app.dataKey]} badges={badges} />
                         </span>
                       </li>
                     ))}
@@ -635,7 +428,7 @@ export default async function CruzmiComparisonPage({ params }: Props) {
         {/* ---------------------------------------------------------------- */}
         <div className="text-center py-8">
           <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="text-[#F6391A] font-karla font-bold hover:underline">
-            {locale === "fr" ? "Essayer WePlanify gratuitement →" : "Try WePlanify free →"}
+            {t("midCta")}
           </Link>
         </div>
 
@@ -645,10 +438,10 @@ export default async function CruzmiComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.cruzmiShinesTitle}
+              {t("cruzmiShines.title")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-3">
-              {t.cruzmiShinesPoints.map((point, i) => (
+              {cruzmiShinesPoints.map((point, i) => (
                 <article
                   key={i}
                   className="rounded-2xl border border-[#001E13]/10 p-6 bg-[#FFFBF5]"
@@ -671,10 +464,10 @@ export default async function CruzmiComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-5xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-12">
-              {t.weplanifyWinsTitle}
+              {t("weplanifyWins.title")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
-              {t.weplanifyWinsPoints.map((point, i) => (
+              {weplanifyWinsPoints.map((point, i) => (
                 <div
                   key={i}
                   className="rounded-2xl bg-[#001E13] p-6 lg:p-8 text-[#FFFBF5]"
@@ -702,7 +495,7 @@ export default async function CruzmiComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.whoTitle}
+              {t("who.title")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="rounded-2xl border border-[#001E13]/10 p-6 lg:p-8 bg-[#FFFBF5]">
@@ -710,7 +503,7 @@ export default async function CruzmiComparisonPage({ params }: Props) {
                   Cruzmi
                 </h3>
                 <p className="font-karla text-sm text-[#001E13]/75 leading-relaxed">
-                  {t.whoCruzmi}
+                  {t("who.cruzmi")}
                 </p>
               </div>
               <div className="rounded-2xl border border-[#F6391A]/20 p-6 lg:p-8 bg-[#FFFBF5] ring-2 ring-[#F6391A]/10">
@@ -718,7 +511,7 @@ export default async function CruzmiComparisonPage({ params }: Props) {
                   WePlanify
                 </h3>
                 <p className="font-karla text-sm text-[#001E13]/75 leading-relaxed">
-                  {t.whoWeplanify}
+                  {t("who.weplanify")}
                 </p>
               </div>
             </div>
@@ -731,10 +524,10 @@ export default async function CruzmiComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.faqTitle}
+              {t("faq.title")}
             </h2>
             <div className="space-y-6">
-              {t.faq.map((item, i) => (
+              {faqItems.map((item, i) => (
                 <details
                   key={i}
                   className="group rounded-2xl border border-[#001E13]/10 bg-white overflow-hidden"
@@ -762,13 +555,13 @@ export default async function CruzmiComparisonPage({ params }: Props) {
         <section className="px-4 lg:px-8 pb-12 lg:pb-20">
           <div className="max-w-4xl mx-auto rounded-[24px] lg:rounded-[32px] bg-[#F6391A] px-8 py-12 lg:py-16 text-center">
             <h2 className="font-londrina-solid text-[#FFFBF5] text-2xl lg:text-4xl mb-4">
-              {t.ctaTitle}
+              {t("cta.title")}
             </h2>
             <Link
               href="https://app.weplanify.com"
               className="inline-block mt-4 px-8 py-3 bg-[#FFFBF5] text-[#F6391A] font-karla font-bold rounded-full text-base lg:text-lg hover:shadow-lg transition-shadow"
             >
-              {t.ctaButton}
+              {t("cta.button")}
             </Link>
           </div>
         </section>
@@ -779,13 +572,13 @@ export default async function CruzmiComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl mb-6">
-              {t.crossLinksTitle}
+              {t("crossLinks.title")}
             </h2>
             <Link
               href={`/${locale}/alternatives`}
               className="inline-block font-karla font-bold text-[#F6391A] text-sm lg:text-base hover:underline"
             >
-              {t.backToAlternatives} &rarr;
+              {t("crossLinks.back")} &rarr;
             </Link>
           </div>
         </section>

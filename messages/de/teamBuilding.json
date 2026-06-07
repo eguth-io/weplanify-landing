@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "Planer für Firmen-Retreats – Teambuilding-Reisen | WePlanify",
+    "description": "Plane dein nächstes Firmen-Retreat oder Team-Offsite ohne Tabellen-Chaos. Reiserouten, Abstimmungen, Budgets – ein Tool, null Kopfschmerzen."
+  },
+  "breadcrumb": {
+    "home": "Startseite"
+  },
+  "hero": {
+    "tag": "Firmen- & Teamreisen",
+    "title": "Plane eine Teamreise, auf die alle wirklich Lust haben",
+    "intro": "Team-Retreats scheitern, wenn eine Person alles plant, niemand mitreden darf und die Aktivitäten erzwungen wirken. So organisierst du eines, das deinem Team wirklich Spaß macht – und das echte Ergebnisse bringt.",
+    "readTime": "9 Min. Lesezeit"
+  },
+  "toc": {
+    "title": "Auf dieser Seite",
+    "whyFail": "Warum die meisten Teamreisen ihr Ziel verfehlen",
+    "types": "Arten von Teamreisen",
+    "pitch": "Wie du es der Führung schmackhaft machst",
+    "weplanifyHelps": "Wie WePlanify hilft",
+    "timeline": "Planungs-Zeitplan",
+    "roi": "ROI messen",
+    "faq": "Häufig gestellte Fragen"
+  },
+  "whyFail": {
+    "title": "Warum die meisten Teamreisen ihr Ziel verfehlen",
+    "p1": "Die meisten Firmen-Retreats werden von oben herab organisiert: Jemand aus HR oder dem Management wählt eine Location, bucht ein paar Aktivitäten, verschickt eine Kalendereinladung und hofft das Beste. Das Ergebnis? Die Hälfte des Teams graut sich vor dem erzwungenen Spaß, die andere Hälfte ist über den Zeitplan verwirrt, und der Organisator ist schon vor dem ersten Team-Abendessen ausgebrannt.",
+    "p3": "WePlanify holt das ganze Team in die Planung. Nicht nur den Organisator."
+  },
+  "types": {
+    "title": "Arten von Teamreisen",
+    "subtitle": "Unterschiedliche Ziele erfordern unterschiedliche Formate. Wähl das, das zu den Bedürfnissen deines Teams passt.",
+    "items": [
+      { "title": "Das klassische Retreat", "desc": "2–3 Tage an einer Location auf dem Land. Eine Mischung aus Workshops, Outdoor-Aktivitäten und freier Zeit. Funktioniert am besten für jährliche unternehmensweite Treffen und strategische Planungssitzungen.", "color": "bg-[#EEF899]" },
+      { "title": "Das City-Offsite", "desc": "Eine lebendige Stadt für 2–4 Tage. Vormittags gemeinsames Arbeiten, abends Erkundung und Team-Abendessen. Ideal für Remote-Teams, die sich zum ersten Mal persönlich treffen.", "color": "bg-[#61DBD5]" },
+      { "title": "Die Abenteuerreise", "desc": "Wandern, Rafting, Klettern, Skifahren – etwas Körperliches, das alle gemeinsam aus der Komfortzone holt. Am besten für kleine, eng verbundene Teams. Schafft schnell starke Bindungen.", "color": "bg-[#F6391A]" },
+      { "title": "Das Working Retreat", "desc": "Teils Arbeit, teils Vergnügen. Eine einwöchige Reise, bei der die Vormittage produktive Sprints und die Nachmittage frei sind. Ideal für Start-ups und verteilte Teams, die fokussierte Zeit miteinander brauchen.", "color": "bg-white" }
+    ]
+  },
+  "pitch": {
+    "title": "Wie du es deinem Chef schmackhaft machst",
+    "p1": "Das Geheimnis, um eine Teamreise genehmigt zu bekommen, ist, sie als Investition zu rahmen, nicht als Ausgabe. Besonders Remote- und Hybrid-Teams leiden unter schwachen teamübergreifenden Beziehungen – der Art von Bindungen, die nur persönlich entstehen. Ein gut geplantes Retreat zahlt sich durch bessere Zusammenarbeit, geringere Fluktuation und einen besseren Einstieg neuer Mitarbeiter selbst aus."
+  },
+  "pullQuote": "Die besten Team-Retreats fühlen sich nicht wie Pflichtspaß an – sie fühlen sich wie eine Reise an, die du auch ohne Bezahlung durch die Arbeit machen würdest.",
+  "weplanifyHelps": {
+    "title": "Wie WePlanify Teams hilft",
+    "items": [
+      { "title": "Lass das Team abstimmen", "desc": "Nutzt Abstimmungen, um über Reiseziele, Daten und Aktivitäten zu entscheiden. Wenn Menschen wählen, was sie tun, freuen sie sich auch wirklich darauf. Anonymes Abstimmen nimmt der Entscheidung die Hierarchie.", "link": "/features/polls" },
+      { "title": "Eine Reiseroute, die alle sehen", "desc": "Baut den Zeitplan gemeinsam. Markiert, was Pflicht ist (die Strategiesitzung) und was optional (die Wanderung). Änderungen synchronisieren in Echtzeit – Schluss mit dem Versenden aktualisierter PDFs.", "link": "/features/planning" },
+      { "title": "Transparente Budgetierung", "desc": "Verfolge jede Ausgabe in Echtzeit. Markiere nach Kategorie für ein einfaches Reporting an die Finanzabteilung. Trenne Firmenausgaben von privaten. Klar, sauber, ohne Überraschungen.", "link": "/features/budget" },
+      { "title": "Logistik im großen Maßstab koordinieren", "desc": "Geteilte Packlisten, Transportdetails, Zimmerzuteilungen – alles an einem Ort. Wenn 20 Personen um 20 Uhr im selben Restaurant sein müssen, ist die geteilte Reiseroute eure einzige Quelle der Wahrheit.", "link": "/features/collaboration" }
+    ]
+  },
+  "timeline": {
+    "title": "Planungs-Zeitplan: von der Idee zum Offsite",
+    "p3": "Zwei Wochen vorher wechselst du in den Kommunikationsmodus. Teile die finale Reiseroute mit dem gesamten Team, schick Packvorschläge und bestätige die Teilnehmerzahlen für jede Aktivität. Pinne wichtige Details – Flughafentransfers, Check-in-Zeiten, Notfallkontakte – oben in der Reise an. Ein gut informiertes Team ist ein entspanntes Team.",
+    "p4": "Eine Woche vorher und während der Reise ist es deine Aufgabe, flexibel zu bleiben. Last-Minute-Änderungen passieren – ein Restaurant sagt ab, das Wetter dreht, ein Flug verspätet sich. Mit einer geteilten Reiseroute, die sich in Echtzeit aktualisiert, kannst du spontan reagieren und alle bleiben auf dem Laufenden. Schluss mit hektischen Gruppennachrichten à la „wo sollen wir gerade sein?“"
+  },
+  "roi": {
+    "title": "Den ROI deines Team-Retreats messen"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      { "q": "Kann WePlanify große Teams (20+ Personen) bewältigen?", "a": "Ja. Es gibt kein Limit für die Gruppengröße. Jedes Teammitglied tritt über einen geteilten Link bei und kann die Reiseroute sehen, in Abstimmungen abstimmen und Ausgaben verfolgen. Für sehr große Gruppen kannst du innerhalb der Reise Untergruppen für verschiedene Aktivitätszweige nutzen." },
+      { "q": "Wie verwaltet man Ausgaben, wenn die Firma zahlt?", "a": "Nutze den Budget-Tracker, um alle Ausgaben in Echtzeit zu erfassen. Markiere Ausgaben nach Kategorie (Unterkunft, Verpflegung, Aktivitäten, Transport) für ein einfaches Reporting. Am Ende der Reise exportierst du eine saubere Zusammenfassung für die Finanzabteilung oder die Erstattung. Du kannst von der Firma bezahlte von privaten Ausgaben trennen." },
+      { "q": "Können wir Remote-Teammitglieder in die Planung einbeziehen?", "a": "Absolut. WePlanify läuft im Browser – keine App zum Herunterladen. Teil den Reise-Link und Remote-Teammitglieder können von überall Ideen einbringen, über Aktivitäten abstimmen und die komplette Reiseroute sehen. Es ist für verteilte Zusammenarbeit gemacht." },
+      { "q": "Wie weit im Voraus sollten wir ein Team-Retreat planen?", "a": "Mindestens zwei bis drei Monate für inländische Retreats, vier bis sechs Monate für internationale. Unterkünfte für große Gruppen sind schnell ausgebucht, und die Leute brauchen Vorlaufzeit, um ihre Kalender freizuhalten. Starte früh eine WePlanify-Reise, um schon vor der Festlegung der Details Input zu sammeln." },
+      { "q": "Welche Arten von Teamreisen funktionieren am besten?", "a": "Das hängt von euren Zielen ab. Teams, die Probleme lösen, profitieren von Abenteueraktivitäten (Escape Rooms, Outdoor-Challenges). Kreative Teams blühen bei unstrukturierter Erkundung auf (Städtetrips, kulturelle Erlebnisse). Neue Teams brauchen Formate mit guten Eisbrechern. Nutze Abstimmungen, um herauszufinden, was dein Team wirklich will – du wirst vielleicht überrascht sein." },
+      { "q": "Wie macht man dem Management eine Teamreise schmackhaft?", "a": "Konzentriere dich auf die Ergebnisse: bessere Kommunikation, stärkere teamübergreifende Beziehungen, weniger Isolation im Remote-Modus. Rahme es als Investition in Bindung und Produktivität, nicht als Ausgabe. Liefere eine klare Budgetaufstellung mit dem Tracker von WePlanify – gezeigte Transparenz macht die Genehmigung viel leichter." }
+    ]
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "tripWithFriends": { "title": "Reise mit Freunden", "desc": "Plane mühelos jede Gruppenreise.", "cta": "Weiterlesen →" },
+    "roadTrip": { "title": "Roadtrip", "desc": "Plane einen Gruppen-Roadtrip mit gemeinsamen Routen und Budgets.", "cta": "Weiterlesen →" },
+    "groupGuide": { "title": "Guide für Gruppenreisen", "desc": "Schritt-für-Schritt-Guide für jede Gruppenreise.", "cta": "Guide lesen →" },
+    "bestApps": { "title": "Beste Apps für Gruppenreisen", "desc": "Vergleiche die besten Tools für Gruppenreisen.", "cta": "Artikel lesen →" }
+  },
+  "cta": {
+    "title": "Plane ein Retreat, das deinem Team in Erinnerung bleibt",
+    "subtitle": "Gib deinem Team ein Mitspracherecht bei der Planung – und sieh zu, wie sich die Stimmung ändert.",
+    "button": "Jetzt planen"
+  },
+  "jsonld": {
+    "articleHeadline": "Plane eine Teambuilding-Reise, auf die alle wirklich Lust haben",
+    "howToName": "So planst du ein Firmen-Team-Retreat",
+    "howToDescription": "Schritt-für-Schritt-Guide für die Planung eines Teambuilding-Retreats, das deinem ganzen Team Spaß macht.",
+    "howToSteps": [
+      { "name": "Ziele und Reiseziel definieren", "text": "Lege die Ziele des Retreats fest, fixiere ein grobes Budget und stelle eine engere Auswahl von 2–3 Reisezielideen zusammen. Starte eine Abstimmung, um das Team in die Wahl des Reiseziels einzubeziehen." },
+      { "name": "Unterkunft und Aktivitäten buchen", "text": "Bestätige die Location, reserviere Gruppenaktivitäten und finalisiere die Reiselogistik. Baut eine geteilte Reiseroute, die alle sehen können." },
+      { "name": "Den finalen Plan teilen", "text": "Verteile die finale Reiseroute, erfasse Ernährungsbedürfnisse und Anforderungen an die Barrierefreiheit und bestätige die Teilnehmerzahlen." },
+      { "name": "Am Tag flexibel bleiben", "text": "Halte die geteilte Reiseroute in Echtzeit aktuell, damit alle informiert bleiben, wenn sich Pläne ändern." }
+    ]
+  }
+}

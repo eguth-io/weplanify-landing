@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "Zaplanuj wyjazd ze znajomymi — podróże grupowe bez stresu | WePlanify",
+    "description": "Zaplanuj wyjazd ze znajomymi bez wysiłku. WePlanify to aplikacja do planowania wyjazdów grupowych ze wspólnymi planami podróży, ankietami grupowymi, wspólnymi budżetami i listami rzeczy do spakowania. Za darmo."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "currentLd": "Wyjazd ze znajomymi",
+    "currentNav": "Wyjazd ze znajomymi"
+  },
+  "jsonld": {
+    "articleHeadline": "Zaplanuj wyjazd ze znajomymi — kompletny przewodnik"
+  },
+  "readTime": "8 min czytania",
+  "heroTag": "Podróże grupowe, uproszczone",
+  "heroTitle": "Zaplanuj wyjazd ze znajomymi\nbez chaosu",
+  "heroDescription": "Przestań żonglować wątkami na WhatsAppie, arkuszami kalkulacyjnymi i domysłami. WePlanify zbiera całą Twoją grupę w jednym miejscu, by zaplanować idealny wyjazd — od kierunku po wyjazd.",
+  "heroGuideLink": "Przeczytaj nasz kompletny przewodnik",
+  "heroCta": "Zacznij planować za darmo",
+  "whyTitle": "Po co planować wyjazd grupowy ze znajomymi?",
+  "whyParagraphs": [
+    "Podróżowanie ze znajomymi to jedno z najwspanialszych życiowych doświadczeń. Jest coś niezastąpionego w odkrywaniu nowego miasta z najbliższymi ludźmi, dzieleniu się posiłkami w miejscach, w których nigdy wcześniej nie byłeś, i tworzeniu historii, które będziesz opowiadać przez dziesięciolecia. Badania konsekwentnie pokazują, że wspólne podróże wzmacniają przyjaźnie i budują głębsze więzi niż niemal jakakolwiek inna aktywność.",
+    "Ale oto rzeczywistość: to faza planowania jest momentem, w którym większość wyjazdów grupowych się rozpada. To, co zaczyna się jako ekscytujący pomysł na grupowym czacie, szybko zmienia się w nieodpowiedziane wiadomości, sprzeczne opinie i tego jednego znajomego, który nigdy się nie deklaruje. Im większa grupa, tym trudniej — i tym większe prawdopodobieństwo, że ktoś skończy, robiąc całą robotę, podczas gdy reszta po prostu się pojawi.",
+    "Właśnie dlatego istnieje WePlanify. Zamiast rozpraszać planowanie po WhatsAppie, Dokumentach Google, Splitwise i tuzinie kart przeglądarki, dostajesz jedną wspólną przestrzeń, w której każdy może się dokładać, głosować i być na bieżąco. Efekt? Mniej stresu dla organizatora, więcej ekscytacji dla grupy i wyjazd, który naprawdę się odbywa."
+  ],
+  "painPointsTitle": "Brzmi znajomo?",
+  "painPointsSubtitle": "Planowanie wyjazdu grupowego ze znajomymi jest ekscytujące — dopóki nie przestaje. Oto bóle głowy, które WePlanify eliminuje.",
+  "painPointsParagraphs": [
+    "Zawsze zaczyna się tak samo. Ktoś rzuca pomysł na grupowym czacie — „Powinniśmy gdzieś razem pojechać tego lata” — i w kilka minut wszyscy są naładowani. Ale potem zaczyna się prawdziwe planowanie i właśnie tam wszystko się sypie. Ważne decyzje giną w niekończących się wątkach na WhatsAppie. Przewijasz 200 wiadomości w poszukiwaniu tamtej polecanej restauracji z wtorku, a jej nie ma — zasypana memami i pobocznymi rozmowami. Ktoś zawsze przegapi wiadomość. Nikt nie wie, co właściwie zostało ustalone. Kluczowe szczegóły, jak godziny zameldowania, adresy i potwierdzenia rezerwacji, znikają w szumie.",
+    "Potem przychodzi debata o kierunku. Połowa grupy chce na plażę, druga połowa w góry. Bez sprawiedliwego sposobu na decyzję, wybiera ostatecznie najgłośniejszy głos na czacie, a trzy osoby po cichu mają żal o tę decyzję. Albo gorzej — debata ciągnie się tak długo, że ceny lotów się podwajają i wszyscy zupełnie tracą motywację. Tymczasem sytuacja z budżetem to bałagan. Jedna osoba wykłada za nocleg, inna pokrywa wynajem samochodu, ktoś ciągle stawia grupowe kolacje, i pod koniec wyjazdu nikt nie pamięta, kto komu ile jest winien. Ta niezręczna rozmowa o pieniądzach potrafi popsuć skądinąd idealny wyjazd.",
+    "A potem jest pakowanie. Trzy osoby zabierają suszarki, nikt nie zabiera apteczki. Przy wyjazdach z konkretnymi aktywnościami — wędrówki, nurkowanie, narty — brak koordynacji oznacza, że ktoś zawsze pojawia się bez niezbędnego sprzętu. Gdy dzielicie wynajem, nikt nie pomyśli, by zabrać podstawy, jak korkociąg, listwy zasilające czy gry karciane, dopóki nie jest za późno. Każdy z tych problemów da się rozwiązać — ale tylko jeśli Twoja grupa ma jedno miejsce, by wspólnie planować, decydować i organizować."
+  ],
+  "solutionTitle": "Jak WePlanify ułatwia wyjazdy grupowe",
+  "solutionSubtitle": "Wszystko, czego Twoja grupa znajomych potrzebuje, by planować, decydować i organizować — w jednej pięknej aplikacji.",
+  "solutions": [
+    {
+      "title": "Wspólny plan podróży",
+      "description": "Budujcie plan podróży razem, w czasie rzeczywistym. Każdy może proponować atrakcje, głosować na pomysły i widzieć ostateczny plan — koniec z ciągłym tam i z powrotem. Przeciągaj i upuszczaj atrakcje w harmonogram dzień po dniu, dodawaj notatki i linki do każdego przystanku i obserwuj, jak podróż nabiera kształtu w miarę wkładu całej grupy. Zmiany synchronizują się natychmiast, więc każdy zawsze patrzy na najnowszą wersję.",
+      "linkText": "Dowiedz się o planowaniu"
+    },
+    {
+      "title": "Ankiety grupowe i głosowanie",
+      "description": "Nie możecie się zdecydować między Barceloną a Bali? Utwórz ankietę, pozwól wszystkim zagłosować i rozstrzygnij to demokratycznie. Koniec z niekończącymi się debatami. Ankiety sprawdzają się do wszystkiego — kierunki, terminy, restauracje, atrakcje, nawet co ugotować na kolację w Airbnb. Anonimowe głosowanie eliminuje presję społeczną, więc ludzie wybierają to, czego naprawdę chcą, a nie to, czego ich zdaniem oczekuje grupa.",
+      "linkText": "Poznaj ankiety"
+    },
+    {
+      "title": "Śledzenie wspólnego budżetu",
+      "description": "Śledź każdy wydatek, dziel koszty sprawiedliwie i widz, kto komu ile jest winien — wszystko aktualizowane w czasie rzeczywistym. Koniec z niezręcznymi rozmowami o pieniądzach. Rejestruj wydatki na bieżąco, przypisuj je osobom lub całej grupie, a WePlanify automatycznie wyliczy końcowe salda. Pod koniec wyjazdu każdy dokładnie wie, ile jest winien — bez arkuszy, bez kłótni, bez zaległych długów.",
+      "linkText": "Poznaj narzędzia budżetowe"
+    },
+    {
+      "title": "Inteligentne listy rzeczy do spakowania",
+      "description": "Listy rzeczy do spakowania wspomagane przez AI, dopasowane do Twojego kierunku, pogody i aktywności. Udostępnij grupie, żeby nic nie zostało zapomniane ani zdublowane. Przypisuj wspólne rzeczy konkretnym osobom — jedna zabiera apteczkę, inna ogarnia głośnik Bluetooth. Odhaczaj rzeczy w miarę pakowania i śledź postęp grupy w czasie rzeczywistym, by mieć pewność, że wszystko jest ogarnięte przed wyjazdem.",
+      "linkText": "Zobacz listy rzeczy do spakowania"
+    }
+  ],
+  "scenariosTitle": "Scenariusze z życia",
+  "scenariosSubtitle": "Zobacz, jak grupy znajomych takie jak Twoja korzystają z WePlanify przy każdym rodzaju wyjazdu.",
+  "scenarios": [
+    {
+      "title": "Weekendowy wypad",
+      "description": "Pięcioro znajomych, długi weekend i domek na plaży dwie godziny drogi. Tworzysz wyjazd w poniedziałek, do środy wszyscy głosują na dom, a w piątek lista rzeczy do spakowania jest udostępniona. Śledzenie budżetu sprawia, że osoba, która zarezerwowała dom, dostaje zwrot automatycznie — bez gonienia kogokolwiek za pieniędzmi. Proste, szybkie i bez stresu."
+    },
+    {
+      "title": "Międzynarodowa przygoda",
+      "description": "Ośmioro znajomych rozsianych po trzech miastach, planujących dwa tygodnie w Azji Południowo-Wschodniej. Z WePlanify każdy dokłada pomysły na kierunki, głosuje na trasę i współtworzy szczegółowy plan podróży dzień po dniu. Śledzenie wspólnego budżetu obsługuje wiele walut, a lista rzeczy do spakowania gwarantuje, że nikt nie zapomni dokumentów wizowych ani przejściówki podróżnej."
+    },
+    {
+      "title": "Wyjazd na festiwal",
+      "description": "Grupa dwunastu osób jedzie na festiwal muzyczny. Koordynowanie biletów, sprzętu kempingowego, przejazdów i jedzenia dla tylu osób byłoby chaosem bez centralnego punktu. WePlanify trzyma plan podróży (godziny występów, miejsca spotkań), budżet (wspólne zakupy, pieniądze na paliwo) i listę rzeczy do spakowania (kto zabiera namiot, kto lodówkę turystyczną) w jednym miejscu."
+    }
+  ],
+  "vsTitle": "Dlaczego WePlanify zamiast innych narzędzi?",
+  "vsSubtitle": "Może się zastanawiasz: czy naprawdę potrzebuję dedykowanego narzędzia? Czy nie wystarczy to, co już mam?",
+  "vsParagraphs": [
+    "WhatsApp i iMessage świetnie nadają się do rozmów, ale fatalnie do planowania. Ważne decyzje giną, linki się gubią, a nie ma sposobu, by śledzić budżety, budować plany podróży czy przeprowadzać ankiety. Zanim nadejdzie wyjazd, połowa grupy jest zdezorientowana co do planów, bo przegapiła wiadomość trzy tygodnie wcześniej.",
+    "Arkusze Google i Notion są potężne, ale to przerost formy nad treścią przy wyjeździe. Wymagają, by ktoś zbudował i utrzymywał strukturę, a większość znajomych po prostu nigdy ich nie otwiera. Organizator kończy, robiąc całą robotę sam — a to dokładnie ten problem, który próbowałeś rozwiązać.",
+    "Aplikacje do podróży solo, jak TripIt czy Google Trips, są zaprojektowane dla indywidualnych podróżników. Nie obsługują współpracy grupowej, wspólnych budżetów ani podejmowania decyzji w grupie. WePlanify zostało zbudowane od podstaw z myślą o grupach — każda funkcja jest zaprojektowana wokół rzeczywistości, w której planowanie z wieloma osobami zasadniczo różni się od planowania w pojedynkę."
+  ],
+  "vsComparisonLink": "Zobacz pełne porównanie aplikacji →",
+  "stepsTitle": "3 kroki do zaplanowania wyjazdu ze znajomymi",
+  "stepsSubtitle": "Od pomysłu do planu podróży w kilka minut — a nie tygodni.",
+  "steps": [
+    {
+      "title": "Utwórz swoją podróż",
+      "description": "Nazwij wyjazd, wybierz terminy i zaproś znajomych prostym linkiem. Każdy dołącza od razu — bez pobierania, bez konieczności rejestracji."
+    },
+    {
+      "title": "Planujcie razem",
+      "description": "Proponujcie kierunki, głosujcie na atrakcje, budujcie plan podróży i śledźcie wspólny budżet — wszystko w jednym miejscu, aktualizowane w czasie rzeczywistym."
+    },
+    {
+      "title": "Spakuj się i ruszaj",
+      "description": "Otrzymaj spersonalizowane listy rzeczy do spakowania, sfinalizuj plany i wyrusz na przygodę życia ze swoją ekipą."
+    }
+  ],
+  "faqTitle": "Najczęściej zadawane pytania",
+  "faqItems": [
+    {
+      "q": "Jaka jest najlepsza aplikacja do planowania wyjazdu ze znajomymi?",
+      "a": "WePlanify to najlepsza darmowa aplikacja do planowania wyjazdu ze znajomymi: łączy wspólny plan podróży dzień po dniu, ankiety grupowe, dzięki którym każdy może głosować na terminy i atrakcje, wspólny budżet z automatycznym rozliczaniem oraz listy rzeczy do spakowania w jednym miejscu — zamiast żonglowania kilkoma aplikacjami o pojedynczym zastosowaniu. Bezpośrednie zestawienie z Wanderlog, TripIt, Splitwise i innymi znajdziesz w naszym porównaniu najlepszych aplikacji do planowania wyjazdów grupowych."
+    },
+    {
+      "q": "Jak zaplanować wyjazd ze znajomymi krok po kroku?",
+      "a": "1) Utwórz podróż i zaproś wszystkich linkiem — goście nie potrzebują konta. 2) Przeprowadź ankietę grupową, by ustalić terminy i kierunek przez głosowanie. 3) Zbudujcie wspólnie plan podróży dzień po dniu, z każdym dodającym atrakcje i restauracje. 4) Śledźcie wspólny budżet, by wszyscy widzieli, kto komu ile jest winien. 5) Udostępnij listę rzeczy do spakowania, żeby nic nie zostało zapomniane. WePlanify trzyma wszystkie pięć kroków w jednej wspólnej przestrzeni."
+    },
+    {
+      "q": "Czy WePlanify jest naprawdę darmowe?",
+      "a": "Tak, w 100%. WePlanify jest darmowe na zawsze — bez ukrytych opłat, bez limitów próbnych, bez karty kredytowej. Wszystkie podstawowe funkcje (plany podróży, ankiety, budżety, listy rzeczy do spakowania) są dostępne bez kosztów."
+    },
+    {
+      "q": "Ilu znajomych mogę zaprosić?",
+      "a": "Nie ma limitu. Niezależnie od tego, czy Twoja grupa liczy 3 czy 30 osób, każdy może dołączyć prostym linkiem z zaproszeniem i współpracować w czasie rzeczywistym nad tą samą podróżą."
+    },
+    {
+      "q": "Czy różne grupy znajomych mogą współpracować nad tą samą podróżą?",
+      "a": "Tak! WePlanify obsługuje podgrupy w ramach jednej podróży. Jeśli Twój wyjazd obejmuje kilka kręgów znajomych — powiedzmy znajomych ze studiów i znajomych z pracy — każda podgrupa może mieć własne prywatne sekcje planowania, dzieląc jednocześnie główny plan podróży, budżet i listę rzeczy do spakowania. Wszyscy są na bieżąco, nie zaśmiecając sobie nawzajem rozmów."
+    },
+    {
+      "q": "Co jeśli znajomi mają bardzo różne budżety?",
+      "a": "Narzędzie do śledzenia budżetu w WePlanify pozwala dzielić koszty elastycznie. Możesz dzielić po równo, procentowo lub przypisywać konkretne wydatki konkretnym osobom. Dzięki temu znajomi z ciaśniejszym budżetem mogą zrezygnować z drogich opcjonalnych atrakcji, wciąż uczestnicząc we wspólnych kosztach, jak nocleg."
+    },
+    {
+      "q": "Co się stanie, jeśli ktoś wypadnie w trakcie planowania?",
+      "a": "Żaden problem — WePlanify radzi sobie ze zmianami w grupie bez zgrzytów. Możesz usunąć członka w dowolnym momencie, a wspólny budżet automatycznie się przelicza, więc salda wszystkich pozostają dokładne. Wszelkie zadania lub rzeczy przypisane tej osobie zostają oznaczone do ponownego przydzielenia, a reszta grupy planuje dalej bez przerwy."
+    },
+    {
+      "q": "Jak działają ankiety grupowe?",
+      "a": "Utwórz ankietę z dowolnym pytaniem — kierunek, terminy, restauracje, atrakcje — i udostępnij ją grupie. Każdy głosuje ze swojego urządzenia, a wyniki aktualizują się w czasie rzeczywistym. Możesz ustawiać terminy, dopuszczać wybór wielokrotny i ukrywać głosy, by uniknąć presji społecznej."
+    }
+  ],
+  "ctaTitle": "Twoja kolejna przygoda zaczyna się tutaj",
+  "ctaDescription": "Dołącz do tysięcy grup znajomych, które planują swoje wyjazdy z WePlanify. Jest darmowe, jest fajne i naprawdę działa.",
+  "ctaButton": "Zacznij planować swój wyjazd",
+  "destinations": {
+    "tag": "Inspiracje na kierunki",
+    "heading": "Gotowe do skopiowania wyjazdy ze znajomymi",
+    "cards": [
+      {
+        "title": "Lizbona · 4 dni",
+        "desc": "Punkty widokowe, fado, Sintra, Time Out Market. Europejski weekend, który daje więcej, niż obiecuje."
+      },
+      {
+        "title": "Toskania · 7 dni",
+        "desc": "Florencja, Siena, Val d'Orcia, Montalcino. Road trip, o którym będziesz mówić jeszcze 20 lat później."
+      },
+      {
+        "title": "Budapeszt · 3 dni",
+        "desc": "Termy, ruin bary, Dunaj. Krótko, intensywnie, niedrogo."
+      }
+    ],
+    "cardLink": "Zobacz plan podróży →",
+    "seeAll": "Zobacz wszystkie kierunki →"
+  },
+  "discover": {
+    "heading": "Odkryj więcej",
+    "guide": {
+      "title": "Poradnik: jak zaplanować wyjazd grupowy",
+      "desc": "Kompletny przewodnik krok po kroku po planowaniu udanego wyjazdu grupowego, od pierwszego pomysłu po ostatni dzień.",
+      "link": "Przeczytaj poradnik →"
+    },
+    "worldCup": {
+      "title": "Planer wyjazdu na Mistrzostwa Świata 2026",
+      "desc": "Śledź swoją drużynę po 16 miastach gospodarzach w USA, Kanadzie i Meksyku — za darmo, bez pakietu z biura podróży.",
+      "link": "Otwórz planer →"
+    },
+    "comparison": {
+      "title": "Porównanie aplikacji",
+      "desc": "Zobacz, jak WePlanify wypada na tle innych aplikacji do planowania wyjazdów grupowych w 2026 roku.",
+      "link": "Zobacz porównanie →"
+    }
+  }
+}

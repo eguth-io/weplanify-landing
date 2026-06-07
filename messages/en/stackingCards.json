@@ -1,0 +1,38 @@
+{
+  "title": "Everything You Need to Plan a Group Trip",
+  "cards": [
+    {
+      "imagePosition": "right",
+      "title": "Explore and propose ideas to the group",
+      "description": "Find activities, restaurants, accommodation and transport directly in the app.\nAdd them to the itinerary or propose them to the group to vote.\n\nExploration becomes collaborative.",
+      "animation": "ai-globe",
+      "backgroundColor": "#FFFFFF",
+      "ctaLabel": "Explore destinations",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#E83F28",
+      "stats": [{ "value": "190+", "label": "Possible destinations" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "Decide together with polls",
+      "description": "Where to stay?\nWhat to do?\nWhen to leave?\n\nCreate a poll, everyone votes, the decision is made.\nThe group moves forward. The trip too.",
+      "animation": "live-voting",
+      "backgroundColor": "#EEF899",
+      "ctaLabel": "Start a poll",
+      "ctaTextColor": "#FFFBF5",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "1000+", "label": "Daily polls" }]
+    },
+    {
+      "imagePosition": "left",
+      "title": "A clear itinerary, day by day",
+      "description": "Each day of the trip is structured:\nwhat to do, where to eat, where to sleep, how to get there.\n\nEverything is clear for everyone.",
+      "animation": "live-collaboration",
+      "backgroundColor": "#61DBD5",
+      "ctaLabel": "Build my itinerary",
+      "ctaTextColor": "#FFFFFF",
+      "ctaBackgroundColor": "#001E13",
+      "stats": [{ "value": "10+", "label": "Partners" }]
+    }
+  ]
+}

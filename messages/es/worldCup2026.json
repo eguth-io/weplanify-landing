@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Planificador de viaje al Mundial 2026 — Gratis, para grupos | WePlanify",
+    "description": "Planificador gratuito de viaje al Mundial 2026 para grupos de aficionados. Construye tu ruta entre varias ciudades de EE. UU., Canadá y México, reparte los gastos por categoría y coordina la logística entre las 16 ciudades sede — sin agencia, sin suscripción."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Planificador de viaje al Mundial 2026"
+  },
+  "hero": {
+    "tag": "Planificador de viaje gratuito · Mundial 2026",
+    "title": "Planificador de viaje al Mundial 2026: sigue a tu selección por 3 países",
+    "readTime": "8 min de lectura"
+  },
+  "problem": {
+    "p1": "Un Mundial con amigos suena a sueño — hasta que empiezas a esbozarlo en una servilleta. Tres partidos de la fase de grupos en tres ciudades distintas, posiblemente dos países distintos. Eliminatorias que no puedes reservar hasta que lleguen los resultados. Visados, ESTAs, eTAs. Vuelos entre ciudades que se duplican de precio la semana de un partido. Seis aficionados, seis presupuestos, seis niveles de tolerancia a un vuelo a primera hora. Las agencias de viajes te venden un paquete y se acabó. Los aficionados que realmente quieren el viaje acaban montándose el suyo — y necesitan un plan que todos puedan ver.",
+    "p2": "WePlanify es el centro de mando compartido y gratuito para los viajes al Mundial 2026 — calendario, vuelos, hoteles, presupuesto y equipaje en un solo lugar, en inglés o francés."
+  },
+  "toc": {
+    "title": "En esta página",
+    "anatomy": "Anatomía de un viaje al Mundial",
+    "hostCities": "Las 16 ciudades sede",
+    "planning": "Planificar tu ruta paso a paso",
+    "budget": "Consejos de presupuesto para aficionados",
+    "faq": "Preguntas frecuentes"
+  },
+  "anatomy": {
+    "title": "Anatomía de un viaje al Mundial",
+    "subtitle": "Cinco piezas en movimiento que todo grupo pasa por alto al primer intento. Acierta con ellas y el viaje fluye.",
+    "items": [
+      { "stop": "Los partidos", "desc": "Tu selección juega tres partidos de grupo en tres posibles ciudades, y luego eliminatorias que aún no puedes predecir. Fija la fase de grupos en tu itinerario como anclas inamovibles. Marca las fechas de las eliminatorias como provisionales — cuando se complete el cuadro, sabrás qué ciudad añadir. No reserves vuelos no reembolsables a las eliminatorias antes de los octavos de final.", "link": "/features/itinerary" },
+      { "stop": "El grupo", "desc": "Seis aficionados rara vez tienen el mismo plan. Algunos cogen los 39 días libres, otros solo pueden ir a un partido. Usa una encuesta para fijar quién va a qué tramo antes de reservar nada — te ahorrarás cuatro discusiones y un vuelo cancelado.", "link": "/features/polls" },
+      { "stop": "Las fronteras", "desc": "EE. UU., Canadá y México son tres regímenes de inmigración. ESTA / B-2 para EE. UU., eTA / visado para Canadá, tarjeta de turista FMM para México. Cada aficionado gestiona su propio papeleo, pero el grupo necesita una lista de comprobación compartida con plazos para que nadie se presente en el aeropuerto sin un ESTA válido.", "link": "/features/planning" },
+      { "stop": "El dinero", "desc": "Entradas a los partidos pagadas individualmente a través de la FIFA. Hoteles repartidos por habitación. Vuelos entre ciudades repartidos por viajero. Comida repartida por comida. Cinco categorías que no se concilian solas. Un presupuesto compartido con categorías desde el primer día le gana a una hoja de cálculo caótica el día 38.", "link": "/features/budget" },
+      { "stop": "Las maletas", "desc": "Tres semanas por el verano de EE. UU., el verano de Canadá y el verano de México — y un código de vestimenta del estadio. Empaca lo bastante ligero para los límites de peso de las aerolíneas de bajo coste, pero teniendo en cuenta la camiseta, la bufanda, la bandera y el protector solar de cada uno. Una lista compartida con los artículos comunes asignados evita tres banderas y ningún cargador portátil.", "link": "/features/packing" }
+    ]
+  },
+  "hostCities": {
+    "title": "Las 16 ciudades sede",
+    "subtitle": "Once ciudades en EE. UU., tres en México, dos en Canadá. Construye tu ruta sabiendo qué grupos de ciudades se combinan bien para viajar — y cuáles requieren un vuelo."
+  },
+  "matrix": {
+    "title": "Tiempo de viaje entre las ciudades sede",
+    "subtitle": "Tiempos de viaje de ida indicativos para las rutas de aficionados más comunes. Los tiempos de vuelo excluyen el tránsito por el aeropuerto (suma ~3h). Úsalos para dimensionar los días de margen entre partidos.",
+    "route": "Ruta",
+    "mode": "Medio",
+    "time": "Tiempo",
+    "notes": "Notas",
+    "rows": [
+      { "route": "Boston ↔ Nueva York", "mode": "Tren (Acela)", "time": "~3h30", "note": "De puerta a puerta supera al avión" },
+      { "route": "Nueva York ↔ Filadelfia", "mode": "Tren / Autobús", "time": "~1h30", "note": "El grupo más fácil" },
+      { "route": "Nueva York ↔ Toronto", "mode": "Vuelo", "time": "~1h30", "note": "Cruce de frontera — eTA necesaria" },
+      { "route": "Atlanta ↔ Miami", "mode": "Vuelo", "time": "~2h", "note": "En coche son más de 10h, no viable" },
+      { "route": "Dallas ↔ Houston", "mode": "Vuelo / Coche", "time": "~1h / 4h", "note": "En coche si sois más de 2 aficionados" },
+      { "route": "Los Ángeles ↔ San Francisco", "mode": "Vuelo", "time": "~1h30", "note": "La ruta de EE. UU. más barata para volar" },
+      { "route": "Los Ángeles ↔ Seattle", "mode": "Vuelo", "time": "~3h", "note": "Reserva pronto — demanda de aficionados" },
+      { "route": "Seattle ↔ Vancouver", "mode": "Coche / Tren", "time": "~3h-4h", "note": "Frontera por tierra — el cruce más rápido" },
+      { "route": "Toronto ↔ Vancouver", "mode": "Vuelo", "time": "~5h", "note": "El vuelo nacional más largo de Canadá" },
+      { "route": "Dallas ↔ Ciudad de México", "mode": "Vuelo", "time": "~2h30", "note": "La mejor puerta de entrada EE. UU.→MX" },
+      { "route": "Ciudad de México ↔ Guadalajara", "mode": "Vuelo / Autobús", "time": "~1h30 / 7h", "note": "El autobús es cómodo de noche y barato" },
+      { "route": "Ciudad de México ↔ Monterrey", "mode": "Vuelo", "time": "~1h30", "note": "Más de 10 vuelos diarios" },
+      { "route": "Los Ángeles ↔ Miami", "mode": "Vuelo", "time": "~5h", "note": "De costa a costa — caro" }
+    ]
+  },
+  "checklist": {
+    "title": "Lista de esenciales para el viaje de aficionado",
+    "subtitle": "Las cosas que los grupos siempre olvidan. Asigna cada una a una persona en tu lista de equipaje de WePlanify.",
+    "items": [
+      "Entradas a los partidos (impresas + copia en la app de la FIFA)",
+      "Pasaporte válido (6+ meses más allá de julio de 2026)",
+      "ESTA, eTA o visado para cada frontera",
+      "Seguro de viaje que cubra los tres países",
+      "Camiseta, bufanda y bandera de la selección",
+      "Bolsa transparente homologada para el estadio",
+      "Cargador portátil (multipuerto para el grupo)",
+      "Plan de datos internacional o eSIM local",
+      "Protector solar + gorra (el calor de junio es real)",
+      "Botella de agua reutilizable (permitida en los estadios)",
+      "Efectivo en USD / CAD / MXN para gastos pequeños",
+      "Tapones para los oídos (para después de la celebración)"
+    ]
+  },
+  "pullQuote": "Un viaje al Mundial no son unas vacaciones — es una operación de 39 días. Trata la planificación como la selección trata la preparación, y el resto se resuelve solo.",
+  "planning": {
+    "title": "Planificar tu ruta: paso a paso",
+    "p1": "Empieza por el calendario. El sorteo de grupos fija la ciudad de cada partido — ese es tu esqueleto. Coloca los tres partidos de grupo como anclas en el itinerario y añade un día de descanso a cada lado. Viajar de estadio a estadio cruzando la inmigración consume más tiempo del que la gente espera; no programes nunca un partido al día siguiente de un vuelo de larga distancia.",
+    "p4": "Fija plazos para el grupo, no solo para el viaje. Los ESTAs y las eTAs tardan días en aprobarse en temporada alta. Los planes de datos internacionales hay que arreglarlos antes de salir. Las ventanas de cancelación de los hoteles se cierran antes de lo que la gente recuerda. Una lista de tareas compartida con plazos, visible para todos, evita que el viaje se derrumbe bajo la burocracia una semana antes del pitido inicial."
+  },
+  "budget": {
+    "title": "Consejos de presupuesto para viajes de aficionados",
+    "p2": "El transporte entre ciudades es donde el presupuesto realmente se abre o se cierra. Los vuelos nacionales de EE. UU. entre ciudades sede lejanas (Los Ángeles → Miami, Boston → Dallas) cuestan de media entre 250 y 400 $ si se reservan pronto, el doble la semana de un partido. Para los saltos más cortos por el noreste (Boston → Nueva York → Filadelfia), el Acela de Amtrak es más rápido de puerta a puerta y a menudo más barato. Cruzar a Canadá o México casi siempre significa volar — reserva esos tramos en cuanto se confirmen los partidos.",
+    "p3": "El alojamiento es el segundo mayor coste y el más fácil de optimizar. Los hoteles de las ciudades sede triplican sus precios en las fechas de partido — reserva fuera de la zona oficial. Un Airbnb de tres habitaciones a 30 minutos del estadio, repartido entre cuatro o cinco, suele salir un 40% más barato que las habitaciones de hotel individuales. Fíjate en ciudades vecinas con enlaces de tren o vuelos cortos: alojarte en Newark en lugar de Manhattan, en Anaheim en lugar de Los Ángeles, en Mississauga en lugar del centro de Toronto."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Necesito visado para asistir al Mundial 2026?", "a": "Depende de tu nacionalidad y de qué país sede visites. EE. UU. exige un ESTA (exención de visado) o un visado B-2, Canadá exige una eTA o un visado, México normalmente permite la entrada sin visado para la mayoría de los pasaportes occidentales hasta 180 días. Si tu selección juega en los tres países, comprueba los requisitos de cada país por separado — ser válido para uno no da derecho a entrar en otro. Solicítalo pronto; la tramitación se ralentiza a medida que se acerca junio." },
+      { "q": "¿Cómo planifico un viaje si aún no se ha sorteado el grupo de mi selección?", "a": "Construye una base flexible — reserva vuelos reembolsables a un gran hub (Nueva York, Los Ángeles, Ciudad de México) y cierra el alojamiento solo para la ventana del primer partido. Una vez que el sorteo fije las ciudades, finaliza el resto. WePlanify te permite esbozar varios itinerarios alternativos uno al lado del otro y elegir el que coincida con los partidos reales." },
+      { "q": "¿Cuál es la forma más barata de viajar entre las ciudades sede?", "a": "Dentro de EE. UU., los vuelos nacionales suelen ser más baratos y rápidos que conducir para distancias de más de 1.000 km. Para los saltos más cortos (p. ej., de Boston a Nueva York), Amtrak o los autobuses pueden superar al avión una vez que cuentas el tiempo de aeropuerto. Cruzar fronteras a Canadá o México casi siempre significa volar — reserva esos tramos pronto, ya que la demanda de aficionados disparará los precios." },
+      { "q": "¿A cuántos partidos debería intentar asistir de forma realista?", "a": "La mayoría de los aficionados que siguen a una selección logran 3 partidos de la fase de grupos más una eliminatoria si su equipo avanza. Viajar de estadio a estadio consume más tiempo del que la gente espera — cuenta con al menos un día completo de viaje entre ciudades no adyacentes. Incluye días de margen para el jet lag, las colas de seguridad y las imprescindibles fan zones." },
+      { "q": "¿Cómo se reparten los gastos cuando se viaja con un grupo de aficionados?", "a": "Usa un control de presupuesto compartido desde el primer día. Los viajes al Mundial tienen estructuras de coste inusuales — entradas a los partidos pagadas por individuos a través de la FIFA, hoteles repartidos por habitación, transporte repartido por grupo, comida repartida por comida. WePlanify separa estas categorías para que cada persona vea exactamente lo que debe y a quién, sin un maratón de cálculos al final del viaje." },
+      { "q": "¿Cuándo debería reservar el alojamiento en las ciudades sede?", "a": "Ahora, si puedes. Los hoteles de las ciudades sede en Miami, Nueva York, Los Ángeles, Toronto y Ciudad de México empezaron a llenarse para las fechas de partido a principios de 2026 y los precios ya están de 3 a 5 veces por encima de lo normal. Busca fuera de las zonas oficiales (Airbnbs en las afueras, ciudades vecinas con enlaces de tren) y reserva opciones reembolsables si el recorrido de tu selección aún no está fijado." },
+      { "q": "¿Merece la pena visitar las fan zones si no tengo entrada para un partido?", "a": "Sí. Cada ciudad sede tiene un FIFA Fan Festival oficial con retransmisiones en pantalla gigante, comida y espectáculos en directo, además de las reuniones de barrio no oficiales que a menudo tienen mejor ambiente. La entrada es gratuita y pueden ser lo más destacado para los aficionados que no consiguieron entradas. Añádelas a tu itinerario como planes de reserva." }
+    ]
+  },
+  "discover": {
+    "title": "Descubre más",
+    "roadTrip": { "title": "Road trip", "desc": "Planifica una ruta de varias paradas con el grupo.", "cta": "Leer más →" },
+    "tripWithFriends": { "title": "Viaje con amigos", "desc": "Planifica cualquier viaje en grupo sin esfuerzo.", "cta": "Leer más →" },
+    "groupGuide": { "title": "Guía de viajes en grupo", "desc": "La guía completa paso a paso.", "cta": "Leer la guía →" },
+    "bestApps": { "title": "Mejores apps de viajes en grupo", "desc": "Nuestra comparativa de las mejores herramientas para viajes en grupo.", "cta": "Leer el artículo →" }
+  },
+  "cta": {
+    "title": "Construye tu viaje al Mundial 2026",
+    "subtitle": "Partidos, vuelos, hoteles, presupuesto — un plan compartido, todo tu grupo en la misma página.",
+    "button": "Empezar a planificar"
+  },
+  "jsonld": {
+    "eventName": "Copa Mundial de la FIFA 2026",
+    "eventDescription": "Copa Mundial de la FIFA 2026 — 48 selecciones nacionales, 16 ciudades sede en Estados Unidos, Canadá y México, del 11 de junio al 19 de julio de 2026. El primer Mundial organizado conjuntamente por tres países.",
+    "fifaPerformer": "Selecciones nacionales de la FIFA",
+    "subEventName": "Partidos del Mundial 2026 en {city}",
+    "subEventDescription": "Partidos de la Copa Mundial de la FIFA 2026 disputados en {city} entre el 11 de junio y el 19 de julio de 2026.",
+    "howToName": "Cómo planificar un viaje al Mundial 2026 siguiendo a tu selección",
+    "howToDescription": "Fija los partidos, construye la ruta entre varias ciudades, reparte los gastos, gestiona los visados y deja espacio para los momentos imprevistos que hacen un viaje al Mundial.",
+    "howToSteps": [
+      { "name": "Ancla el viaje en los partidos de tu selección", "text": "Empieza por los tres partidos de la fase de grupos. Fija las ciudades y las fechas, y luego mapea los huecos entre partidos como días de viaje. Planifica en detalle solo la fase de grupos — las ciudades de las eliminatorias dependen de los resultados." },
+      { "name": "Decide el nivel de compromiso del grupo con una encuesta", "text": "No todos tienen el mismo presupuesto ni el mismo tiempo. Lanza una encuesta para averiguar quién va a la fase de grupos completa, quién se une a un partido y quién solo se compromete si la selección avanza. El resultado determina las reservas de vuelos y el reparto del alojamiento." },
+      { "name": "Reparte los gastos por categorías desde el primer día", "text": "Las entradas a los partidos, los vuelos entre ciudades, los hoteles de las ciudades sede, el transporte terrestre y la comida no se reparten igual. Configura un presupuesto compartido con una categoría para cada uno para que las cuentas sigan claras aunque el viaje dure tres semanas." },
+      { "name": "Incluye días de margen entre ciudades", "text": "Viajar de estadio a estadio, el jet lag, las colas de seguridad y los cruces de frontera consumen tiempo real. Planifica al menos un día completo de margen entre ciudades sede no adyacentes y un día de descanso antes de cada partido — tu yo futuro te lo agradecerá." }
+    ]
+  }
+}

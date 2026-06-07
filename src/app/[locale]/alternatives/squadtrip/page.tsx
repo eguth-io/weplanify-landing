@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -19,8 +19,6 @@ type Props = {
 
 type Feature = {
   key: string;
-  en: string;
-  fr: string;
   weplanify: string | boolean;
   squadtrip: string | boolean;
 };
@@ -44,38 +42,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pathname = "/alternatives/squadtrip";
   const currentUrl = `${SITE_URL}/${locale}${pathname}`;
 
-  const meta = {
-    en: {
-      title:
-        "SquadTrip Alternative: Free Group Trip Planner (2026) | WePlanify",
-      description:
-        "Looking for a SquadTrip alternative? WePlanify offers real-time itineraries, shared polls, group budgets and packing lists — free, bilingual (EN/FR).",
-    },
-    fr: {
-      title:
-        "Alternative à SquadTrip : Voyage de Groupe Gratuit (2026)",
-      description:
-        "Alternative à SquadTrip pour organiser un voyage de groupe. WePlanify : itinéraire collaboratif, sondages, budget partagé. Gratuit, bilingue FR/EN.",
-    },
-  };
+  const t = await getTranslations({ locale, namespace: "altSquadtrip" });
 
-  const loc = meta[locale as keyof typeof meta] ?? meta.en;
+  const title = t("meta.title");
+  const description = t("meta.description");
 
   return {
-    title: loc.title,
-    description: loc.description,
+    title,
+    description,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       url: currentUrl,
       siteName: "WePlanify",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     twitter: {
       card: "summary_large_image",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     alternates: {
       canonical: currentUrl,
@@ -93,253 +79,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // ---------------------------------------------------------------------------
 
 const features: Feature[] = [
-  {
-    key: "collab_itinerary",
-    en: "Collaborative itinerary",
-    fr: "Itinéraire collaboratif",
-    weplanify: true,
-    squadtrip: true,
-  },
-  {
-    key: "polls",
-    en: "Group polls / voting",
-    fr: "Sondages / votes de groupe",
-    weplanify: true,
-    squadtrip: false,
-  },
-  {
-    key: "budget",
-    en: "Shared budget tracker",
-    fr: "Suivi de budget partagé",
-    weplanify: true,
-    squadtrip: "payment_collection",
-  },
-  {
-    key: "payment",
-    en: "Payment processing",
-    fr: "Traitement des paiements",
-    weplanify: false,
-    squadtrip: "core_feature",
-  },
-  {
-    key: "packing",
-    en: "Packing lists",
-    fr: "Listes de bagages",
-    weplanify: true,
-    squadtrip: false,
-  },
-  {
-    key: "guest_mgmt",
-    en: "Guest management",
-    fr: "Gestion des invités",
-    weplanify: "basic",
-    squadtrip: "advanced",
-  },
-  {
-    key: "discovery",
-    en: "Activity discovery",
-    fr: "Découverte d'activités",
-    weplanify: true,
-    squadtrip: false,
-  },
-  {
-    key: "free",
-    en: "Free",
-    fr: "Gratuit",
-    weplanify: "free_100",
-    squadtrip: "partial_fees",
-  },
-  {
-    key: "french",
-    en: "French language",
-    fr: "Disponible en français",
-    weplanify: true,
-    squadtrip: false,
-  },
-  {
-    key: "mobile",
-    en: "Mobile app",
-    fr: "Application mobile",
-    weplanify: "web_app",
-    squadtrip: "web_app",
-  },
-  {
-    key: "realtime",
-    en: "Real-time collaboration",
-    fr: "Collaboration en temps réel",
-    weplanify: true,
-    squadtrip: true,
-  },
+  { key: "collab_itinerary", weplanify: true, squadtrip: true },
+  { key: "polls", weplanify: true, squadtrip: false },
+  { key: "budget", weplanify: true, squadtrip: "payment_collection" },
+  { key: "payment", weplanify: false, squadtrip: "core_feature" },
+  { key: "packing", weplanify: true, squadtrip: false },
+  { key: "guest_mgmt", weplanify: "basic", squadtrip: "advanced" },
+  { key: "discovery", weplanify: true, squadtrip: false },
+  { key: "free", weplanify: "free_100", squadtrip: "partial_fees" },
+  { key: "french", weplanify: true, squadtrip: false },
+  { key: "mobile", weplanify: "web_app", squadtrip: "web_app" },
+  { key: "realtime", weplanify: true, squadtrip: true },
 ];
-
-const content = {
-  en: {
-    heroTitle: "WePlanify vs SquadTrip",
-    heroSubtitle: "Best Free Group Trip Planner? (2026)",
-    heroIntro:
-      "Both WePlanify and SquadTrip help groups organize travel together, but they solve different problems. SquadTrip is built around payment collection and guest logistics. WePlanify is an all-in-one collaborative planner with polls, shared budgets, and itineraries — completely free.",
-    verdictTitle: "Quick Verdict",
-    verdict:
-      "SquadTrip focuses on payment collection and guest logistics for trip organizers. WePlanify focuses on collaborative planning with polls, shared budgets, and itineraries — completely free, no payment processing fees.",
-    comparisonTitle: "Feature-by-Feature Comparison",
-    squadtripShinesTitle: "Where SquadTrip Shines",
-    squadtripShinesPoints: [
-      {
-        title: "Payment collection",
-        desc: "SquadTrip lets organizers collect payments from trip participants. If your group trip involves collecting deposits, splitting costs for accommodation, or managing waivers, SquadTrip handles that.",
-      },
-      {
-        title: "Guest forms and waivers",
-        desc: "Participants can sign waivers, fill out dietary preferences, or submit passport details. SquadTrip provides structured forms and guest management tools beyond simple invite links.",
-      },
-      {
-        title: "Professional trip organizing",
-        desc: "If you run a travel business or organize group trips professionally, SquadTrip offers payment and logistics features oriented toward that use case.",
-      },
-    ],
-    weplanifyWinsTitle: "Where WePlanify Wins",
-    weplanifyWinsPoints: [
-      {
-        title: "Group decision-making",
-        desc: "WePlanify offers built-in polls and voting so your group can decide on destinations, dates, and activities together. No more endless WhatsApp threads — everyone votes, the group decides.",
-      },
-      {
-        title: "100% free, no hidden fees",
-        desc: "Every core feature in WePlanify is free. No payment processing fees, no premium tiers for essential tools. Plan unlimited trips at zero cost.",
-      },
-      {
-        title: "Complete planning toolkit",
-        desc: "Packing lists, activity discovery, shared budgets, and collaborative itineraries — all in one place. SquadTrip focuses on logistics while WePlanify covers the entire planning journey.",
-      },
-      {
-        title: "Bilingual support",
-        desc: "WePlanify is fully available in English and French. SquadTrip is English-only, which can be a dealbreaker for francophone groups.",
-      },
-    ],
-    whoShouldTitle: "Who Should Choose Each?",
-    chooseSquadtrip: "Choose SquadTrip if",
-    chooseSquadtripPoints: [
-      "You need to collect payments from trip participants",
-      "You organize trips professionally and need guest forms/waivers",
-      "Payment logistics are your biggest planning headache",
-    ],
-    chooseWeplanify: "Choose WePlanify if",
-    chooseWeplanifyPoints: [
-      "You want your whole group to plan together collaboratively",
-      "You need polls, shared budgets, and packing lists in one app",
-      "You want a completely free solution with no fees",
-      "Your group includes French-speaking members",
-    ],
-    faqTitle: "Frequently Asked Questions",
-    faqs: [
-      {
-        q: "Why switch from SquadTrip to WePlanify?",
-        a: "SquadTrip is built around payment collection, which means planning tools like polls, shared budgets, and packing lists are absent. If your group needs to collaboratively decide on destinations, track expenses, and organize together, WePlanify covers all of that — completely free.",
-      },
-      {
-        q: "What does SquadTrip lack?",
-        a: "SquadTrip does not offer group voting or polls, collaborative packing lists, activity discovery, or French language support. Its focus on payment processing means the actual planning experience is limited compared to WePlanify.",
-      },
-      {
-        q: "Is SquadTrip really free?",
-        a: "SquadTrip offers free trip pages, but its core value is payment collection, which involves processing fees. WePlanify is 100% free with no transaction fees — every feature is included at no cost.",
-      },
-    ],
-    ctaTitle: "Ready to plan your next group trip?",
-    ctaButton: "Get started for free",
-    crossLinksTitle: "Discover More",
-    free100: "100% free",
-    partialFees: "Fees on payments",
-    paymentCollection: "With payment collection",
-    coreFeature: "Core feature",
-    basic: "Basic",
-    advanced: "Forms, waivers",
-    webApp: "Web app",
-  },
-  fr: {
-    heroTitle: "WePlanify vs SquadTrip",
-    heroSubtitle: "Meilleur Organisateur de Voyage de Groupe Gratuit ? (2026)",
-    heroIntro:
-      "WePlanify et SquadTrip aident tous deux les groupes à organiser leurs voyages, mais ils résolvent des problèmes différents. SquadTrip est centré sur la collecte de paiements et la logistique des invités. WePlanify est un planificateur collaboratif complet avec sondages, budgets partagés et itinéraires — entièrement gratuit.",
-    verdictTitle: "Verdict Rapide",
-    verdict:
-      "SquadTrip se concentre sur la collecte de paiements et la logistique des invités pour les organisateurs de voyages. WePlanify se concentre sur la planification collaborative avec sondages, budgets partagés et itinéraires — entièrement gratuit, sans frais de traitement de paiement.",
-    comparisonTitle: "Comparatif Fonctionnalité par Fonctionnalité",
-    squadtripShinesTitle: "Les Points Forts de SquadTrip",
-    squadtripShinesPoints: [
-      {
-        title: "Collecte de paiements",
-        desc: "SquadTrip permet aux organisateurs de collecter les paiements des participants. Si ton voyage de groupe implique de collecter des acomptes, répartir les coûts d'hébergement ou gérer des décharges, SquadTrip s'en charge.",
-      },
-      {
-        title: "Formulaires et décharges",
-        desc: "Les participants peuvent signer des décharges, renseigner leurs préférences alimentaires ou soumettre leurs informations de passeport. SquadTrip fournit des formulaires structurés et des outils de gestion des invités au-delà de simples liens d'invitation.",
-      },
-      {
-        title: "Organisation professionnelle de voyages",
-        desc: "Si tu gères une agence de voyage ou organises des voyages de groupe professionnellement, SquadTrip propose des fonctionnalités de paiement et de logistique orientées vers cet usage.",
-      },
-    ],
-    weplanifyWinsTitle: "Les Avantages de WePlanify",
-    weplanifyWinsPoints: [
-      {
-        title: "Prise de décision en groupe",
-        desc: "WePlanify propose des sondages et votes intégrés pour que ton groupe puisse décider ensemble des destinations, dates et activités. Fini les discussions interminables sur WhatsApp — tout le monde vote, le groupe décide.",
-      },
-      {
-        title: "100% gratuit, sans frais cachés",
-        desc: "Toutes les fonctionnalités principales de WePlanify sont gratuites. Pas de frais de traitement de paiement, pas de niveaux premium pour les outils essentiels. Planifie des voyages illimités à coût zéro.",
-      },
-      {
-        title: "Boîte à outils de planification complète",
-        desc: "Listes de bagages, découverte d'activités, budgets partagés et itinéraires collaboratifs — tout au même endroit. SquadTrip se concentre sur la logistique tandis que WePlanify couvre tout le parcours de planification.",
-      },
-      {
-        title: "Support bilingue",
-        desc: "WePlanify est entièrement disponible en anglais et en français. SquadTrip est uniquement en anglais, ce qui peut être un obstacle pour les groupes francophones.",
-      },
-    ],
-    whoShouldTitle: "Qui Devrait Choisir Quoi ?",
-    chooseSquadtrip: "Choisis SquadTrip si",
-    chooseSquadtripPoints: [
-      "Tu dois collecter des paiements auprès des participants",
-      "Tu organises des voyages professionnellement et as besoin de formulaires/décharges",
-      "La logistique de paiement est ton plus grand casse-tête de planification",
-    ],
-    chooseWeplanify: "Choisis WePlanify si",
-    chooseWeplanifyPoints: [
-      "Tu veux que tout ton groupe planifie ensemble de manière collaborative",
-      "Tu as besoin de sondages, budgets partagés et listes de bagages dans une seule application",
-      "Tu veux une solution entièrement gratuite sans frais",
-      "Ton groupe comprend des membres francophones",
-    ],
-    faqTitle: "Questions Fréquentes",
-    faqs: [
-      {
-        q: "Pourquoi passer de SquadTrip \u00e0 WePlanify ?",
-        a: "SquadTrip est construit autour de la collecte de paiements, ce qui signifie que les outils de planification comme les sondages, les budgets partag\u00e9s et les listes de bagages sont absents. Si ton groupe a besoin de d\u00e9cider ensemble des destinations, suivre les d\u00e9penses et s\u2019organiser collectivement, WePlanify couvre tout cela \u2014 enti\u00e8rement gratuitement.",
-      },
-      {
-        q: "Que manque-t-il \u00e0 SquadTrip ?",
-        a: "SquadTrip ne propose pas de votes ou sondages de groupe, de listes de bagages collaboratives, de d\u00e9couverte d\u2019activit\u00e9s, ni de support en fran\u00e7ais. Sa focalisation sur le traitement des paiements fait que l\u2019exp\u00e9rience de planification est limit\u00e9e compar\u00e9e \u00e0 WePlanify.",
-      },
-      {
-        q: "SquadTrip est-il vraiment gratuit ?",
-        a: "SquadTrip propose des pages de voyage gratuites, mais sa valeur principale est la collecte de paiements, qui implique des frais de traitement. WePlanify est 100% gratuit sans frais de transaction \u2014 toutes les fonctionnalit\u00e9s sont incluses sans co\u00fbt.",
-      },
-    ],
-    ctaTitle: "Prêt à planifier ton prochain voyage de groupe ?",
-    ctaButton: "Commencer gratuitement",
-    crossLinksTitle: "Découvrir Aussi",
-    free100: "100% gratuit",
-    partialFees: "Frais sur les paiements",
-    paymentCollection: "Avec collecte de paiements",
-    coreFeature: "Fonctionnalité principale",
-    basic: "Basique",
-    advanced: "Formulaires, décharges",
-    webApp: "App web",
-  },
-};
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -375,56 +126,56 @@ function CrossIcon() {
   );
 }
 
-function CellValue({
+async function CellValue({
   value,
   locale,
 }: {
   value: string | boolean;
   locale: string;
 }) {
-  const t = content[locale as keyof typeof content] ?? content.en;
+  const t = await getTranslations({ locale, namespace: "altSquadtrip" });
   if (value === true) return <CheckIcon />;
   if (value === false) return <CrossIcon />;
   if (value === "free_100")
     return (
       <span className="text-xs font-karla font-semibold text-emerald-700 bg-emerald-50 rounded-full px-2 py-0.5">
-        {t.free100}
+        {t("badges.free100")}
       </span>
     );
   if (value === "partial_fees")
     return (
       <span className="text-xs font-karla font-semibold text-amber-700 bg-amber-50 rounded-full px-2 py-0.5">
-        {t.partialFees}
+        {t("badges.partialFees")}
       </span>
     );
   if (value === "payment_collection")
     return (
       <span className="text-xs font-karla font-semibold text-sky-700 bg-sky-50 rounded-full px-2 py-0.5">
-        {t.paymentCollection}
+        {t("badges.paymentCollection")}
       </span>
     );
   if (value === "core_feature")
     return (
       <span className="text-xs font-karla font-semibold text-sky-700 bg-sky-50 rounded-full px-2 py-0.5">
-        {t.coreFeature}
+        {t("badges.coreFeature")}
       </span>
     );
   if (value === "basic")
     return (
       <span className="text-xs font-karla font-semibold text-gray-600 bg-gray-100 rounded-full px-2 py-0.5">
-        {t.basic}
+        {t("badges.basic")}
       </span>
     );
   if (value === "advanced")
     return (
       <span className="text-xs font-karla font-semibold text-sky-700 bg-sky-50 rounded-full px-2 py-0.5">
-        {t.advanced}
+        {t("badges.advanced")}
       </span>
     );
   if (value === "web_app")
     return (
       <span className="text-xs font-karla font-semibold text-gray-600 bg-gray-100 rounded-full px-2 py-0.5">
-        {t.webApp}
+        {t("badges.webApp")}
       </span>
     );
   return <span className="text-xs font-karla text-gray-500">{value}</span>;
@@ -438,7 +189,19 @@ export default async function SquadTripComparisonPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = content[locale as keyof typeof content] ?? content.en;
+  const t = await getTranslations("altSquadtrip");
+
+  const squadtripShinesPoints = t.raw("squadtripShinesPoints") as {
+    title: string;
+    desc: string;
+  }[];
+  const weplanifyWinsPoints = t.raw("weplanifyWinsPoints") as {
+    title: string;
+    desc: string;
+  }[];
+  const chooseSquadtripPoints = t.raw("chooseSquadtripPoints") as string[];
+  const chooseWeplanifyPoints = t.raw("chooseWeplanifyPoints") as string[];
+  const faqs = t.raw("faqs") as { q: string; a: string }[];
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -470,19 +233,19 @@ export default async function SquadTripComparisonPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("breadcrumb.home"),
         item: `${SITE_URL}/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Comparatif" : "Alternatives",
+        name: t("breadcrumb.alternatives"),
         item: `${SITE_URL}/${locale}/alternatives`,
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: "WePlanify vs SquadTrip",
+        name: t("jsonld.breadcrumbCurrent"),
         item: `${SITE_URL}/${locale}/alternatives/squadtrip`,
       },
     ],
@@ -492,7 +255,7 @@ export default async function SquadTripComparisonPage({ params }: Props) {
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: t.faqs.map((faq) => ({
+    mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
       acceptedAnswer: {
@@ -523,7 +286,7 @@ export default async function SquadTripComparisonPage({ params }: Props) {
             <div className="hidden lg:block mb-8">
               <Breadcrumb
                 items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: t("breadcrumb.home"), href: `/${locale}` },
                   { label: "Alternatives", href: `/${locale}/alternatives` },
                   { label: "vs SquadTrip" },
                 ]}
@@ -532,13 +295,13 @@ export default async function SquadTripComparisonPage({ params }: Props) {
           </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
-              {t.heroSubtitle}
+              {t("heroSubtitle")}
             </p>
             <h1 className="font-londrina-solid text-[#001E13] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-tight mb-6">
-              {t.heroTitle}
+              {t("heroTitle")}
             </h1>
             <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              {t.heroIntro}
+              {t("heroIntro")}
             </p>
           </div>
         </section>
@@ -550,10 +313,10 @@ export default async function SquadTripComparisonPage({ params }: Props) {
           <div className="max-w-3xl mx-auto">
             <div className="rounded-2xl border border-[#F6391A]/20 bg-white p-6 lg:p-8 shadow-sm">
               <h2 className="font-londrina-solid text-[#F6391A] text-xl lg:text-2xl mb-3">
-                {t.verdictTitle}
+                {t("verdictTitle")}
               </h2>
               <p className="font-karla text-[#001E13]/80 text-sm lg:text-base leading-relaxed">
-                {t.verdict}
+                {t("verdict")}
               </p>
             </div>
           </div>
@@ -565,7 +328,7 @@ export default async function SquadTripComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.comparisonTitle}
+              {t("comparisonTitle")}
             </h2>
 
             {/* ---------- Desktop table ---------- */}
@@ -574,7 +337,7 @@ export default async function SquadTripComparisonPage({ params }: Props) {
                 <thead>
                   <tr className="bg-[#001E13]">
                     <th className="font-karla font-bold text-[#FFFBF5] px-6 py-4 text-sm sticky left-0 bg-[#001E13] z-10 min-w-[220px]">
-                      {locale === "fr" ? "Fonctionnalité" : "Feature"}
+                      {t("featureHeader")}
                     </th>
                     <th className="font-karla font-bold text-center px-6 py-4 text-sm min-w-[160px] text-[#EEF899]">
                       WePlanify
@@ -591,7 +354,7 @@ export default async function SquadTripComparisonPage({ params }: Props) {
                       className={i % 2 === 0 ? "bg-white" : "bg-[#FFFBF5]"}
                     >
                       <td className="font-karla text-sm text-[#001E13] px-6 py-3.5 sticky left-0 z-10 bg-inherit">
-                        {locale === "fr" ? feature.fr : feature.en}
+                        {t(`features.${feature.key}`)}
                       </td>
                       <td className="px-6 py-3.5 text-center bg-emerald-50/40">
                         <CellValue value={feature.weplanify} locale={locale} />
@@ -633,7 +396,7 @@ export default async function SquadTripComparisonPage({ params }: Props) {
                         className="flex items-center justify-between text-sm font-karla"
                       >
                         <span className="text-[#001E13]/80">
-                          {locale === "fr" ? feature.fr : feature.en}
+                          {t(`features.${feature.key}`)}
                         </span>
                         <span className="ml-3 shrink-0">
                           <CellValue value={app.getVal(feature)} locale={locale} />
@@ -652,7 +415,7 @@ export default async function SquadTripComparisonPage({ params }: Props) {
         {/* ---------------------------------------------------------------- */}
         <div className="text-center py-8">
           <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="text-[#F6391A] font-karla font-bold hover:underline">
-            {locale === "fr" ? "Essaie WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
+            {t("midCta")}
           </Link>
         </div>
 
@@ -662,10 +425,10 @@ export default async function SquadTripComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.squadtripShinesTitle}
+              {t("squadtripShinesTitle")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-3">
-              {t.squadtripShinesPoints.map((point, i) => (
+              {squadtripShinesPoints.map((point, i) => (
                 <article
                   key={i}
                   className="rounded-2xl border border-[#001E13]/10 p-6 bg-[#FFFBF5]"
@@ -688,10 +451,10 @@ export default async function SquadTripComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-5xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-12">
-              {t.weplanifyWinsTitle}
+              {t("weplanifyWinsTitle")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
-              {t.weplanifyWinsPoints.map((point, i) => (
+              {weplanifyWinsPoints.map((point, i) => (
                 <div
                   key={i}
                   className="rounded-2xl bg-[#001E13] p-6 lg:p-8 text-[#FFFBF5]"
@@ -719,16 +482,16 @@ export default async function SquadTripComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.whoShouldTitle}
+              {t("whoShouldTitle")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
               {/* SquadTrip column */}
               <div className="rounded-2xl border border-[#001E13]/10 p-6 bg-[#FFFBF5]">
                 <h3 className="font-londrina-solid text-[#001E13] text-xl mb-4">
-                  {t.chooseSquadtrip}
+                  {t("chooseSquadtrip")}
                 </h3>
                 <ul className="space-y-3">
-                  {t.chooseSquadtripPoints.map((point, i) => (
+                  {chooseSquadtripPoints.map((point, i) => (
                     <li key={i} className="flex items-start gap-2 font-karla text-sm text-[#001E13]/80">
                       <span className="text-sky-600 mt-0.5 shrink-0">&#x2022;</span>
                       {point}
@@ -740,10 +503,10 @@ export default async function SquadTripComparisonPage({ params }: Props) {
               {/* WePlanify column */}
               <div className="rounded-2xl border border-[#F6391A]/20 p-6 bg-[#FFFBF5] ring-2 ring-[#F6391A]/10">
                 <h3 className="font-londrina-solid text-[#F6391A] text-xl mb-4">
-                  {t.chooseWeplanify}
+                  {t("chooseWeplanify")}
                 </h3>
                 <ul className="space-y-3">
-                  {t.chooseWeplanifyPoints.map((point, i) => (
+                  {chooseWeplanifyPoints.map((point, i) => (
                     <li key={i} className="flex items-start gap-2 font-karla text-sm text-[#001E13]/80">
                       <span className="text-emerald-600 mt-0.5 shrink-0">&#x2713;</span>
                       {point}
@@ -761,10 +524,10 @@ export default async function SquadTripComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.faqTitle}
+              {t("faqTitle")}
             </h2>
             <div className="space-y-6">
-              {t.faqs.map((faq, i) => (
+              {faqs.map((faq, i) => (
                 <details
                   key={i}
                   className="group rounded-2xl border border-[#001E13]/10 bg-white overflow-hidden"
@@ -792,13 +555,13 @@ export default async function SquadTripComparisonPage({ params }: Props) {
         <section className="px-4 lg:px-8 pb-12 lg:pb-20">
           <div className="max-w-4xl mx-auto rounded-[24px] lg:rounded-[32px] bg-[#F6391A] px-8 py-12 lg:py-16 text-center">
             <h2 className="font-londrina-solid text-[#FFFBF5] text-2xl lg:text-4xl mb-4">
-              {t.ctaTitle}
+              {t("ctaTitle")}
             </h2>
             <Link
               href="https://app.weplanify.com"
               className="inline-block mt-4 px-8 py-3 bg-[#FFFBF5] text-[#F6391A] font-karla font-bold rounded-full text-base lg:text-lg hover:shadow-lg transition-shadow"
             >
-              {t.ctaButton}
+              {t("ctaButton")}
             </Link>
           </div>
         </section>
@@ -809,55 +572,45 @@ export default async function SquadTripComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-5xl mx-auto pt-8 lg:pt-12">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.crossLinksTitle}
+              {t("crossLinksTitle")}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Link href={`/${locale}/alternatives`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr"
-                      ? "Comparatif Complet"
-                      : "Full Comparison"}
+                    {t("crossLinks.fullComparison.title")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Compare WePlanify avec Wanderlog, SquadTrip, Troupe et TripIt dans notre comparatif complet."
-                      : "Compare WePlanify with Wanderlog, SquadTrip, Troupe and TripIt in our full comparison."}
+                    {t("crossLinks.fullComparison.text")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Voir le comparatif →" : "View comparison →"}
+                    {t("crossLinks.fullComparison.link")}
                   </span>
                 </div>
               </Link>
               <Link href={`/${locale}/trip-with-friends`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr" ? "Voyage entre Amis" : "Trip with Friends"}
+                    {t("crossLinks.tripWithFriends.title")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Organisez un voyage de groupe entre amis facilement avec WePlanify."
-                      : "Plan a group trip with friends effortlessly using WePlanify."}
+                    {t("crossLinks.tripWithFriends.text")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "En savoir plus →" : "Read more →"}
+                    {t("crossLinks.tripWithFriends.link")}
                   </span>
                 </div>
               </Link>
               <Link href={`/${locale}/guides/plan-group-trip`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr"
-                      ? "Guide : Organiser un Voyage de Groupe"
-                      : "Guide: How to Plan a Group Trip"}
+                    {t("crossLinks.guide.title")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Le guide complet étape par étape pour organiser un voyage de groupe réussi."
-                      : "The complete step-by-step guide to planning a successful group trip."}
+                    {t("crossLinks.guide.text")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Lire le guide →" : "Read the guide →"}
+                    {t("crossLinks.guide.link")}
                   </span>
                 </div>
               </Link>

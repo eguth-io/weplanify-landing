@@ -1,0 +1,23 @@
+{
+  "badge": "discover the app",
+  "title": "Plan your group trip in 3 simple steps",
+  "description": "Simple, collaborative and built for groups.",
+  "card1": {
+    "title": "Step 1: Invite your group",
+    "description": "Fill in the essentials. Add your friends or family in one click. Everyone sees the same trip.",
+    "statValue": "1 min",
+    "statLabel": "to invite the group"
+  },
+  "card2": {
+    "title": "Step 2: Explore and discover",
+    "description": "Swipe through activities, restaurants and hotels. Add your favorites to the itinerary.",
+    "statValue": "500+",
+    "statLabel": "places to discover"
+  },
+  "card3": {
+    "title": "Step 3: Decide and finalize",
+    "description": "Create polls, manage the budget and prepare the departure together.",
+    "statValue": "100%",
+    "statLabel": "decided together"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "So planst du eine Klassenfahrt – kostenloser Ausflugsplaner für Lehrkräfte | WePlanify",
+    "description": "Plane eine Klassenfahrt mit WePlanify: für Eltern sichtbare gemeinsame Reiseroute, Teilnehmerzahlen und Ernährungsbedürfnisse an einem Ort, Abstimmungen für Aktivitäten, Packlisten und Dokumentenablage. Kostenlos für Lehrkräfte."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "Klassenfahrt"
+  },
+  "hero": {
+    "tag": "Klassenfahrt",
+    "title": "Plane eine Klassenfahrt ohne Papierkram-Albtraum",
+    "readTime": "8 Min. Lesezeit · Aktualisiert am 5. Mai 2026"
+  },
+  "problem": {
+    "p1": "Eine Klassenfahrt sieht aus wie ein einzelnes Ereignis, ist aber eigentlich drei koordinierte Abläufe, die parallel laufen: die Reise selbst (Transport, Unterkunft, Aktivitäten), die Elternkommunikation (Einverständnisse, Ernährungsbedürfnisse, tägliche Updates von unterwegs) und die Begleitperson-Logistik (Gruppen, Betreuungsschlüssel, wer für welchen Schüler zuständig ist). Sobald eines dieser drei in unterschiedlichen Tools liegt – hier Papierformulare, dort ein E-Mail-Thread, irgendwo anders eine WhatsApp-Gruppe –, muss jede Änderung dreimal weitergegeben werden. Genau da entstehen die Lücken.",
+    "p2": "WePlanify bringt die Reiseroute, die Teilnehmerliste und die Dokumentenablage an einen Ort – für Begleitpersonen sichtbar und für Eltern ohne Konto einsehbar."
+  },
+  "toc": {
+    "title": "Auf dieser Seite",
+    "approval": "Die Genehmigung der Verwaltung einholen",
+    "logistics": "Anatomie einer Klassenfahrt",
+    "parentComms": "Elternkommunikation, die skaliert",
+    "safety": "Sicherheit, Betreuungsschlüssel und Rollen der Begleitpersonen",
+    "faq": "Häufig gestellte Fragen"
+  },
+  "approval": {
+    "title": "Die Genehmigung der Verwaltung einholen",
+    "p1": "Die meisten Schulen verlangen eine formelle Genehmigung 6–12 Wochen vor jeder Reise mit Übernachtung. Der schnellste Weg durch die Bürokratie: ein einseitiger Antrag, der die Fragen der Leitung beantwortet, bevor sie gestellt werden. Daten und Reiseziel. Lernziele, die auf deinen Lehrplan abgestimmt sind. Richtkosten pro Schüler. Verhältnis von Erwachsenen zu Schülern. Risikobewertung. Versicherungsschutz. Je sauberer dieses Dokument, desto schneller die Freigabe."
+  },
+  "anatomy": {
+    "title": "Anatomie einer Klassenfahrt",
+    "subtitle": "Fünf bewegliche Teile. Setz jedes davon richtig um und die Reise läuft von selbst.",
+    "learnMore": "Mehr erfahren →",
+    "items": [
+      { "stop": "Die Teilnehmerliste", "desc": "Die einzige Quelle der Wahrheit, wer mitfährt. Jeder Teilnehmer trägt seine Ernährungseinschränkungen, Allergien und Notfallkontakte direkt im Profil. Wenn ein Elternteil das Einverständnis unterschreibt, aktualisiert sich die Teilnehmerzahl live – keine Tabelle zum Abgleichen.", "link": "/features/collaboration" },
+      { "stop": "Die Reiseroute", "desc": "Tag für Tag, Uhrzeit für Uhrzeit. Für jede Begleitperson auf dem Handy sichtbar und für Eltern über den geteilten Link. Wenn der Bus 30 Minuten zu spät ist, schickst du ein Update und alle sehen es – keine Rundmail, keine Eltern-Gruppenchats zu verwalten.", "link": "/features/planning" },
+      { "stop": "Die Entscheidungen", "desc": "Manche Entscheidungen gibt der Lehrplan vor. Andere sind offen: welches optionale Museum, welches Restaurant fürs Gruppenabendessen, welche Abendaktivität. Startet Abstimmungen mit den Begleitpersonen (oder, je nach Alter, den Schülern) und das Ergebnis gewinnt ohne Debatte.", "link": "/features/polls" },
+      { "stop": "Das Geld", "desc": "Budget pro Schüler, Anzahlungen, Restbetrag. Verfolge Zahlungen im geteilten Budget, damit du immer weißt, wer gezahlt hat und wer nicht. Für optionale Zusatzleistungen (Taschengeld für Souvenirs, Aktivitäts-Upgrades) lass Eltern Kästchen ankreuzen – das Budget berechnet sich automatisch neu.", "link": "/features/budget" },
+      { "stop": "Das Packen", "desc": "Eine geteilte Liste mit zwei Spalten: Pflicht und Empfehlung. Eltern sehen sie, sobald du sie veröffentlichst, zwei Wochen vor der Abreise. Sie packen entsprechend. Weniger panische E-Mails am Vorabend, weniger Kinder, die ihren Pass am Treffpunkt vergessen haben.", "link": "/features/packing" }
+    ]
+  },
+  "parentComms": {
+    "title": "Elternkommunikation, die skaliert",
+    "p1": "Der klassische Fehlermodus bei der Klassenfahrt-Kommunikation: 30 Eltern, 30 E-Mails mit leicht unterschiedlichen Fragen, und du tippst 30-mal Varianten derselben Antwort. Die Lösung ist nicht „weniger E-Mails verschicken“ – sondern „die Antwort irgendwo hinlegen, wo sie sie selbst finden“. Eine geteilte Reiseroute, die sie jederzeit einsehen können, mit Treffpunkt, Tagesplan, Unterkunftsadresse und Notfallkontakt, eliminiert 80 % der Fragen, bevor sie gestellt werden.",
+    "p2": "Für die restlichen 20 % ist der Trick die Bündelung. Statt drei separater E-Mails (Einverständnis, Ernährung, Notfallkontakt) deckt ein Formular bei der Anmeldung alle drei ab. Eltern füllen es einmal aus. Du siehst die Live-Daten sofort. Fragen am Reisetag gehen in einen einzigen Reise-Thread, nicht in dein persönliches Postfach. Über eine 5-tägige Reise mit Übernachtung spart das einer Lehrkraft 4–6 Stunden Verwaltungszeit."
+  },
+  "safety": {
+    "title": "Sicherheit, Betreuungsschlüssel und Rollen der Begleitpersonen",
+    "p1": "Die meisten Bildungsministerien veröffentlichen vorgeschriebene Verhältnisse von Erwachsenen zu Schülern – typischerweise 1:10 für Übernachtungsreisen in der Grundschule, 1:15 in der Sekundarstufe. Bestätige deine Werte, bevor du den Eltern Zahlen nennst. Sobald du das Begleitperson-Team hast, weist jede Person einer bestimmten Schüler-Untergruppe zu und macht diese Zuteilungen innerhalb der Reise sichtbar. Jede Begleitperson sieht dann auf dem Handy genau, welche Schüler ihre sind, mit voreingeladenen Ernährungsinfos und Notfallkontakten.",
+    "p2": "Teilnehmerzählungen bei jedem Übergang (Einsteigen in den Bus, Betreten einer Location, Verlassen einer Aktivität) sind die wichtigste Gewohnheit auf einer Klassenfahrt. Baut sie als echte Kontrollpunkte in den Zeitplan ein, nicht als etwas, das eine Lehrkraft improvisiert. Mit einer geteilten Teilnehmerliste dauert die Zählung 30 Sekunden und jeder fehlende Schüler wird sofort markiert, nicht drei Stopps später.",
+    "p3": "Bei schweren Allergien oder medizinischen Erkrankungen hängst du die Unterlagen direkt am Teilnehmer an. Begleitpersonen können sie offline aufrufen, sofern ihr Handy Empfang hat – und dem Personal vor Ort (einem Hotel, einem Restaurant, einer Museumsführung) können die relevanten Infos sofort gezeigt werden. Dieser eine Schritt hat schon mehr als einen Notaufnahmebesuch während der Reise verhindert."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      { "q": "Wie weit im Voraus sollte ich eine Klassenfahrt planen?", "a": "Für Tagesausflüge reichen meist zwei bis drei Wochen. Für Reisen mit Übernachtung oder ins Ausland beginnst du drei bis sechs Monate vorher. Der Buchungsdruck variiert je nach Reiseziel – beliebte Klassenfahrt-Städte wie Rom, London oder Barcelona sind im Frühjahr schnell ausgebucht. Sichert zuerst Transport und Unterkunft; Aktivitäten lassen sich später bestätigen." },
+      { "q": "Wie sammle ich Einverständniserklärungen und Ernährungsbedürfnisse effizient ein?", "a": "Schluss mit dem Hinterherlaufen von Papierformularen. Nutze eine einzige geteilte Reise mit einer Teilnehmerliste – jedes Elternteil bestätigt die Teilnahme, Ernährungseinschränkungen und Notfallkontakte an einem Ort. WePlanify hält die Live-Teilnehmerzahl sichtbar, damit du immer weißt, wer zugesagt hat und wer nicht." },
+      { "q": "Können Eltern die Reiseroute sehen, ohne ein Konto zu erstellen?", "a": "Ja. Teil den Reise-Link und Eltern können den kompletten Tag-für-Tag-Plan, die Unterkunftsadresse und die Notfallkontakte einsehen, ohne sich anzumelden. Sie fühlen sich beruhigt, du bekommst weniger panische E-Mails am Vortag." },
+      { "q": "Wie geht ihr mit Ernährungsbedürfnissen und Allergien um?", "a": "Füge Ernährungseinschränkungen zum Profil jedes Teilnehmers hinzu und markiere sie bei relevanten Mahlzeiten oder Aktivitäten. Die Informationen bleiben für Begleitpersonen und die von dir gebuchten Locations sichtbar. Bei schweren Allergien hängst du das medizinische Dokument direkt am Teilnehmer an, damit es offline zugänglich ist." },
+      { "q": "Wie teilt man die Aufgaben der Begleitpersonen am besten auf?", "a": "Weist Begleitpersonen innerhalb der Reise bestimmten Schülergruppen zu. Jede Begleitperson sieht die Teilnehmerzahl, Ernährungsinfos und Notfallkontakte ihrer Gruppe auf dem Handy. Nutzt Abstimmungen für Aktivitäten, über die die Begleitpersonen diskutieren – Schluss mit „wir haben nie entschieden, wer ins Museum geht“." },
+      { "q": "Ist WePlanify für Klassenfahrten mit Schülern unter 13 geeignet?", "a": "Ja – Schüler brauchen kein Konto. Nur die leitende Lehrkraft und die Begleitpersonen (oder benannte Eltern) treten der Reise bei. Schülerdaten werden als Teilnehmer gespeichert, nicht als Benutzerkonten, was das Setup mit den Datenschutzregeln für Minderjährige konform hält." }
+    ]
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "teamBuilding": { "title": "Teambuilding", "desc": "Für Firmen-Retreats." },
+    "familyTrip": { "title": "Familienreise", "desc": "Für Auszeiten über mehrere Generationen." },
+    "groupGuide": { "title": "Guide für Gruppenreisen", "desc": "Der komplette Schritt-für-Schritt-Guide." },
+    "appComparison": { "title": "App-Vergleich", "desc": "Im Vergleich mit anderen Planern." }
+  },
+  "cta": {
+    "title": "Organisiere deine nächste Klassenfahrt von einem Ort aus",
+    "subtitle": "Kostenlos für Lehrkräfte. Keine App, die Eltern installieren müssen. Richte deine Reise in 5 Minuten ein.",
+    "button": "Klassenfahrt starten"
+  },
+  "jsonld": {
+    "articleHeadline": "So planst du eine Klassenfahrt ohne Papierkram-Albtraum",
+    "howToName": "So planst du eine Klassenfahrt",
+    "howToDescription": "Von der Genehmigung der Verwaltung bis zur Verteilung der Umfrage nach der Reise – ein Schritt-für-Schritt-Playbook für Lehrkräfte, die eine Klassenfahrt organisieren.",
+    "howToSteps": [
+      { "name": "Das grüne Licht der Verwaltung einholen", "text": "Bevor du etwas buchst, hol dir die formelle Freigabe der Schulleitung. Bereite ein einseitiges Dokument vor: Daten, Reiseziel, Lernziele, Richtbudget pro Schüler, Betreuungsschlüssel. Die meisten Einrichtungen verlangen das 6–12 Wochen im Voraus für Reisen mit Übernachtung." },
+      { "name": "Transport, Unterkunft und Aktivitäten festmachen", "text": "Buch zuerst die großen Posten: Bus oder Zug, Unterkunft mit dem richtigen Verhältnis von Erwachsenen zu Schülern und die wichtigsten Aktivitäten. Nutze eine geteilte Reiseroute, damit Mitorganisatoren denselben Plan sehen und Konflikte melden können, bevor sie zu Problemen werden." },
+      { "name": "Einverständnisse, Ernährungsbedürfnisse und Notfallkontakte einsammeln", "text": "Schick Eltern den Reise-Link. Sie bestätigen die Teilnahme, geben Ernährungseinschränkungen und Allergien an und hinterlegen Notfallkontakte in einem Formular. Die Teilnehmerzahl aktualisiert sich live, ohne Hinterherlaufen." },
+      { "name": "Über die verhandelbaren Aktivitäten abstimmen", "text": "Manche Entscheidungen stehen fest (das vom Lehrplan geforderte Museum). Andere nicht (welche Abendaktivität, welches Restaurant fürs Gruppenabendessen). Startet eine schnelle Abstimmung mit den Begleitpersonen – und wo altersgerecht, mit den Schülern – und das Ergebnis entscheidet." },
+      { "name": "Die Packliste und das Vorab-Briefing veröffentlichen", "text": "Zwei Wochen vor der Abreise veröffentlichst du eine geteilte Packliste (aufgeteilt in „Pflicht“ und „Empfehlung“) und ein Vorab-Briefing mit Treffpunkt, Zeitplan, Verhaltenserwartungen und Notfallverfahren. Eltern sehen genau, was ihr Kind braucht." },
+      { "name": "Die Reise mit der geteilten Live-Reiseroute durchführen", "text": "Am Tag hat jede Begleitperson den kompletten Plan auf dem Handy – Adressen, Zeiten, Teilnehmerzahl, Notfallkontakte. Aktualisiere die Reiseroute in Echtzeit, wenn sich etwas ändert (verspäteter Bus, getauschte Aktivität), und Eltern sehen den neuen Plan sofort. Keine Telefonkette, keine Panik." }
+    ]
+  }
+}

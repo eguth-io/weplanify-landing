@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -101,6 +101,8 @@ export default async function TravelGuidePage({ params }: Props) {
   const guide = findGuideByLocalizedSlug(country, loc);
   if (!guide) notFound();
 
+  const t = await getTranslations("travelGuideCountry");
+
   const [navData, navigationData, footerData]: [
     NavType,
     Navigation | null,
@@ -130,13 +132,13 @@ export default async function TravelGuidePage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("breadcrumb.home"),
         item: `${SITE_URL}/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Guides voyage" : "Travel guides",
+        name: t("breadcrumb.travelGuides"),
         item: `${SITE_URL}/${locale}/travel-guides`,
       },
       {
@@ -154,10 +156,7 @@ export default async function TravelGuidePage({ params }: Props) {
     name: countryLabel,
     description: guide.meta.description[loc],
     image: guide.hero.image,
-    touristType:
-      locale === "fr"
-        ? "Voyageur loisirs"
-        : "Leisure traveler",
+    touristType: t("jsonld.touristType"),
     includesAttraction: guide.mustSee.map((poi) => ({
       "@type": "TouristAttraction",
       name: poi.name,
@@ -192,11 +191,11 @@ export default async function TravelGuidePage({ params }: Props) {
               <Breadcrumb
                 items={[
                   {
-                    label: locale === "fr" ? "Accueil" : "Home",
+                    label: t("breadcrumb.home"),
                     href: `/${locale}`,
                   },
                   {
-                    label: locale === "fr" ? "Guides voyage" : "Travel guides",
+                    label: t("breadcrumb.travelGuides"),
                     href: `/${locale}/travel-guides`,
                   },
                   { label: countryLabel },
@@ -213,7 +212,7 @@ export default async function TravelGuidePage({ params }: Props) {
                   {countryLabel}
                   <br />
                   <span className="text-[#F6391A]">
-                    {locale === "fr" ? "guide voyage" : "travel guide"}
+                    {t("hero.titleSuffix")}
                   </span>
                 </h1>
                 <p className="text-base lg:text-lg font-karla text-[#001E13]/75 leading-relaxed mb-6 max-w-xl">
@@ -231,21 +230,17 @@ export default async function TravelGuidePage({ params }: Props) {
                     {currencyDisplay}
                     {guide.budget.tiers[0].perDay}–{currencyDisplay}
                     {guide.budget.tiers[guide.budget.tiers.length - 1].perDay}
-                    {locale === "fr" ? " /jour" : " /day"}
+                    {t("hero.perDay")}
                   </span>
                 </div>
 
                 <Link href={signupHref}>
                   <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
-                    {locale === "fr"
-                      ? "Planifier mon voyage"
-                      : "Plan my trip"}
+                    {t("hero.cta")}
                   </PulsatingButton>
                 </Link>
                 <p className="text-xs font-karla text-[#001E13]/50 mt-3">
-                  {locale === "fr"
-                    ? "Crée ton itinéraire avec ton groupe — gratuit, 30 secondes."
-                    : "Build your itinerary with your group — free, 30 seconds."}
+                  {t("hero.ctaNote")}
                 </p>
               </div>
 
@@ -284,40 +279,36 @@ export default async function TravelGuidePage({ params }: Props) {
           <section className="py-12 lg:py-16 px-4 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
-                {locale === "fr" ? "L'essentiel" : "Quick facts"}
+                {t("quickFacts.heading")}
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-4">
                 {[
                   {
-                    label: locale === "fr" ? "Capitale" : "Capital",
+                    label: t("quickFacts.capital"),
                     value: guide.quickFacts.capital[loc],
                   },
                   {
-                    label: locale === "fr" ? "Langue" : "Language",
+                    label: t("quickFacts.language"),
                     value: guide.quickFacts.language[loc],
                   },
                   {
-                    label: locale === "fr" ? "Monnaie" : "Currency",
+                    label: t("quickFacts.currency"),
                     value: `${guide.quickFacts.currency.code} ${guide.quickFacts.currency.symbol}`,
                   },
                   {
-                    label: locale === "fr" ? "Fuseau" : "Timezone",
+                    label: t("quickFacts.timezone"),
                     value: guide.quickFacts.timezone,
                   },
                   {
-                    label: locale === "fr" ? "Prise" : "Plug",
+                    label: t("quickFacts.plug"),
                     value: guide.quickFacts.plug,
                   },
                   {
-                    label: locale === "fr" ? "Conduite" : "Driving",
+                    label: t("quickFacts.driving"),
                     value:
                       guide.quickFacts.driveSide === "left"
-                        ? locale === "fr"
-                          ? "À gauche"
-                          : "Left"
-                        : locale === "fr"
-                          ? "À droite"
-                          : "Right",
+                        ? t("quickFacts.driveLeft")
+                        : t("quickFacts.driveRight"),
                   },
                 ].map((fact) => (
                   <div
@@ -335,7 +326,7 @@ export default async function TravelGuidePage({ params }: Props) {
               </div>
               <div className="mt-6 bg-[#EEF899] border border-[#001E13]/10 rounded-2xl p-5 lg:p-6 max-w-3xl mx-auto">
                 <span className="block text-xs font-karla font-bold text-[#001E13]/60 uppercase tracking-wide mb-2">
-                  {locale === "fr" ? "Visa" : "Visa"}
+                  {t("quickFacts.visa")}
                 </span>
                 <p className="font-karla text-[#001E13]/85 text-sm lg:text-base leading-relaxed">
                   {guide.quickFacts.visa[loc]}
@@ -351,12 +342,10 @@ export default async function TravelGuidePage({ params }: Props) {
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] leading-tight mb-3">
-                  {locale === "fr" ? "Quand y aller" : "When to go"}
+                  {t("bestSeason.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#FFFBF5]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? "Trois fenêtres à connaître : la meilleure, l'intermédiaire, celle à éviter."
-                    : "Three windows to know: best, shoulder, and the one to avoid."}
+                  {t("bestSeason.subtitle")}
                 </p>
               </div>
 
@@ -365,17 +354,17 @@ export default async function TravelGuidePage({ params }: Props) {
                   {
                     season: guide.bestSeason.best,
                     tone: "best" as const,
-                    label: locale === "fr" ? "Meilleur moment" : "Best window",
+                    label: t("bestSeason.best"),
                   },
                   {
                     season: guide.bestSeason.shoulder,
                     tone: "shoulder" as const,
-                    label: locale === "fr" ? "Saison intermédiaire" : "Shoulder",
+                    label: t("bestSeason.shoulder"),
                   },
                   {
                     season: guide.bestSeason.avoid,
                     tone: "avoid" as const,
-                    label: locale === "fr" ? "À éviter" : "Avoid",
+                    label: t("bestSeason.avoid"),
                   },
                 ].map(({ season, tone, label }) => (
                   <div
@@ -430,14 +419,10 @@ export default async function TravelGuidePage({ params }: Props) {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] leading-tight mb-3">
-                  {locale === "fr"
-                    ? "Les incontournables"
-                    : "Must-see places"}
+                  {t("mustSee.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#001E13]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? "Les lieux qui justifient le voyage. Cliquez pour ouvrir dans Maps."
-                    : "Spots that justify the trip on their own. Tap to open in Maps."}
+                  {t("mustSee.subtitle")}
                 </p>
               </div>
 
@@ -483,14 +468,10 @@ export default async function TravelGuidePage({ params }: Props) {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] leading-tight mb-3">
-                  {locale === "fr"
-                    ? "Spécialités à goûter"
-                    : "Specialties worth trying"}
+                  {t("specialties.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#001E13]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? "Cuisine, boissons et expériences que le pays fait mieux que personne."
-                    : "Food, drinks, and experiences this country does better than anywhere else."}
+                  {t("specialties.subtitle")}
                 </p>
               </div>
 
@@ -533,14 +514,10 @@ export default async function TravelGuidePage({ params }: Props) {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] leading-tight mb-3">
-                  {locale === "fr"
-                    ? "Les régions à connaître"
-                    : "Regions to know"}
+                  {t("regions.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#001E13]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? "Pour cadrer votre itinéraire selon le temps disponible et l'envie."
-                    : "To frame your trip by what you have time for and what you're after."}
+                  {t("regions.subtitle")}
                 </p>
               </div>
 
@@ -572,14 +549,10 @@ export default async function TravelGuidePage({ params }: Props) {
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] leading-tight mb-3">
-                  {locale === "fr"
-                    ? "Itinéraires types"
-                    : "Suggested itineraries"}
+                  {t("itineraries.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#FFFBF5]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? "Trois formats selon le temps disponible. À forker dans WePlanify."
-                    : "Three lengths, depending on time. Fork any of them into WePlanify."}
+                  {t("itineraries.subtitle")}
                 </p>
               </div>
 
@@ -592,7 +565,7 @@ export default async function TravelGuidePage({ params }: Props) {
                     <div className="flex items-baseline gap-4 mb-4 flex-wrap">
                       <span className="font-londrina-solid text-3xl lg:text-4xl text-[#EEF899]">
                         {it.days}
-                        {locale === "fr" ? "j" : "d"}
+                        {t("itineraries.daysSuffix")}
                       </span>
                       <h3 className="text-xl lg:text-2xl font-londrina-solid text-[#FFFBF5]">
                         {it.title[loc]}
@@ -627,12 +600,10 @@ export default async function TravelGuidePage({ params }: Props) {
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-10">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] leading-tight mb-3">
-                  {locale === "fr" ? "Budget par jour" : "Daily budget"}
+                  {t("budget.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#001E13]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? "Par personne, hors vols. Trois niveaux de confort."
-                    : "Per person, excluding flights. Three comfort tiers."}
+                  {t("budget.subtitle")}
                 </p>
               </div>
 
@@ -663,7 +634,7 @@ export default async function TravelGuidePage({ params }: Props) {
                           i === 1 ? "text-[#FFFBF5]/70" : "text-[#001E13]/50"
                         }`}
                       >
-                        {locale === "fr" ? "/jour" : "/day"}
+                        {t("budget.perDay")}
                       </span>
                     </div>
                     <p
@@ -692,14 +663,10 @@ export default async function TravelGuidePage({ params }: Props) {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-10">
                 <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] leading-tight mb-3">
-                  {locale === "fr"
-                    ? "Codes culturels"
-                    : "Cultural do's & don'ts"}
+                  {t("tips.heading")}
                 </h2>
                 <p className="text-base lg:text-lg font-karla text-[#001E13]/70 max-w-2xl mx-auto">
-                  {locale === "fr"
-                    ? "Les petits gestes qui font la différence — et ceux qui mettent mal à l'aise."
-                    : "Small moves that matter — and the ones that make everyone uncomfortable."}
+                  {t("tips.subtitle")}
                 </p>
               </div>
 
@@ -737,21 +704,15 @@ export default async function TravelGuidePage({ params }: Props) {
           <div className="max-w-5xl mx-auto">
             <div className="bg-[#F6391A] rounded-3xl lg:rounded-[40px] p-8 lg:p-12 xl:p-16 text-center">
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] leading-tight mb-4">
-                {locale === "fr"
-                  ? `Planifie ton voyage au ${countryLabel} avec ta team`
-                  : `Plan your ${countryLabel} trip with your crew`}
+                {t("cta.heading", { country: countryLabel })}
               </h2>
               <p className="text-base lg:text-lg font-karla text-[#FFFBF5]/90 max-w-2xl mx-auto mb-8 leading-relaxed">
-                {locale === "fr"
-                  ? "Importe cet itinéraire dans WePlanify, invite ton groupe, et organisez le voyage ensemble. Carte partagée, sondages, budget commun — gratuit."
-                  : "Bring this guide into WePlanify, invite the group, and build the trip together. Shared map, polls, shared budget — all free."}
+                {t("cta.body")}
               </p>
               <div className="flex justify-center">
                 <Link href={signupHref}>
                   <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
-                    {locale === "fr"
-                      ? "Commencer — gratuit"
-                      : "Start planning — free"}
+                    {t("cta.button")}
                   </PulsatingButton>
                 </Link>
               </div>

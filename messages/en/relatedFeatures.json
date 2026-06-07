@@ -1,0 +1,14 @@
+{
+  "title": "Explore more features",
+  "features": {
+    "planning": "Collaborative Itinerary",
+    "polls": "Group Polls",
+    "budget": "Shared Budget",
+    "packing": "Packing Lists",
+    "explore": "Activity Discovery",
+    "collaboration": "Real-time Collaboration",
+    "itinerary": "Day-by-Day Itinerary",
+    "transport": "Transport",
+    "memories": "Trip Memories"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "copy": {
+    "calendarMonth": "April 2024",
+    "weekdays": ["M", "T", "W", "T", "F", "S", "S"],
+    "dragHint": "Drag to reorganize",
+    "days": [
+      {
+        "title": "Arrival in Tokyo",
+        "items": [
+          { "time": "14:00", "icon": "✈️", "activity": "Arrive at Narita Airport" },
+          { "time": "16:00", "icon": "🏨", "activity": "Check-in Hotel Shinjuku" },
+          { "time": "19:00", "icon": "🍜", "activity": "Dinner at Omoide Yokocho" }
+        ]
+      },
+      {
+        "title": "Tokyo - Historic District",
+        "items": [
+          { "time": "09:00", "icon": "⛩️", "activity": "Senso-ji Temple, Asakusa" },
+          { "time": "12:00", "icon": "🍣", "activity": "Sushi at Tsukiji Market" },
+          { "time": "15:00", "icon": "🌸", "activity": "Stroll through Ueno Park" },
+          { "time": "20:00", "icon": "🌃", "activity": "Tokyo Skytree" }
+        ]
+      },
+      {
+        "title": "Tokyo - Modern City",
+        "items": [
+          { "time": "10:00", "icon": "🛍️", "activity": "Shopping in Shibuya" },
+          { "time": "14:00", "icon": "🎮", "activity": "Akihabara" },
+          { "time": "18:00", "icon": "🌆", "activity": "Sunset at Shibuya Sky" }
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Interactive Timeline",
+    "heroTitle": "Travel planning",
+    "heroTitleHighlight": "that actually works",
+    "heroSubtitle": "The app calculates travel times and warns you if the 8pm restaurant is 2 hours from the 6pm museum. Zero surprises on the ground.",
+    "socialProofText": "5,000+ itineraries created",
+    "heroCta": "Create my optimized schedule",
+    "heroCtaSubtext": "Free, no credit card required",
+    "featuresTitle": "Organize like a pro",
+    "features": [
+      { "icon": "✋", "title": "Drag & Drop", "description": "Reorganize by dragging" },
+      { "icon": "🚗", "title": "Auto Travel Times", "description": "Calculated between stops" },
+      { "icon": "⚠️", "title": "Alerts", "description": "Schedule conflicts detected" },
+      { "icon": "📤", "title": "PDF Export", "description": "Share your schedule" }
+    ],
+    "faqItems": [
+      { "question": "How do I create a day-by-day travel itinerary?", "answer": "With Weplanify, simply add your stops (accommodations, activities, restaurants) and they automatically appear on the timeline. You can then reorganize with drag-and-drop." },
+      { "question": "Does the app calculate travel times?", "answer": "Yes, Weplanify automatically calculates travel times between each stop on your itinerary, whether by car, public transit, or on foot." },
+      { "question": "Can I export the itinerary to PDF?", "answer": "Absolutely! Export your complete itinerary to PDF to have it offline or print it out." },
+      { "question": "How do I reorganize activities in the itinerary?", "answer": "Just use drag-and-drop! Move any activity to another day or change the order within the same day." },
+      { "question": "Is the itinerary shared with the whole group?", "answer": "Yes, all trip participants see the same itinerary in real time." }
+    ],
+    "ctaTitle": "Say goodbye to messy Excel spreadsheets",
+    "ctaSubtitle": "Drag and drop, the app optimizes your routes",
+    "ctaButton": "Create my optimized schedule",
+    "seoTitle": "Travel Itinerary - Day-by-Day Planning | Weplanify",
+    "seoDescription": "Organize your trip day by day with our interactive timeline. Visualize, reorganize, and optimize your vacation schedule easily.",
+    "stats": [
+      { "value": "5,000+", "label": "itineraries" },
+      { "value": "Auto", "label": "travel times" },
+      { "value": "PDF", "label": "export" }
+    ]
+  }
+}

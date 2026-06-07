@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Plan a Family Trip — Vacation Planner for Families | WePlanify",
+    "description": "Plan your next family vacation with WePlanify. Coordinate across generations, manage shared budgets, vote on activities, and build an itinerary everyone agrees on."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Family Trip"
+  },
+  "hero": {
+    "tag": "Family Travel",
+    "title": "Plan a Family Trip Everyone Will Actually Love",
+    "intro": "From grandparents to toddlers, family trips mean different needs, different budgets, and different ideas of fun. Here's how to make it work without losing your mind.",
+    "readTime": "8 min read"
+  },
+  "challenge": {
+    "p1": "Family trips are the best kind of travel — and the hardest to organize. Dad wants hiking, Mom wants the beach, the teenagers want Wi-Fi, the kids want a water park, and grandma just wants everyone in the same room for dinner. Finding a plan that works across three generations without spreadsheets and a group chat meltdown? That's the real vacation challenge.",
+    "p2": "Then there's the money. Accommodation for 10+ people. Activities for all ages. Meals that satisfy everyone from the picky five-year-old to the vegan aunt. When multiple households share costs, tracking who paid what becomes a full-time job — and nobody wants to be the one asking Uncle Marc for his share of the Airbnb.",
+    "p3": "WePlanify gives your family one shared space to plan, vote, budget, and pack — so the organizer doesn't burn out before the trip even starts."
+  },
+  "toc": {
+    "title": "On this page",
+    "byAge": "Planning by age group",
+    "howHelps": "How WePlanify helps",
+    "destination": "Choosing the right destination",
+    "budget": "Budgeting a multi-generational trip",
+    "faq": "Frequently asked questions"
+  },
+  "byAge": {
+    "title": "Planning by Age Group",
+    "items": [
+      { "age": "0–4", "title": "Babies & Toddlers", "text": "Keep it close, keep it flexible. Short flights or drives, accommodation with kitchen access, and a schedule with generous nap windows. The packing list is critical — shared lists prevent you from forgetting the one thing you actually need.", "color": "bg-[#61DBD5]" },
+      { "age": "5–12", "title": "Kids", "text": "The golden age of family travel. They're curious, adaptable, and excited about everything. Mix structured activities (water parks, museums, boat trips) with free exploration. Use polls to let them vote on activities — they'll feel included and you'll avoid meltdowns.", "color": "bg-[#EEF899]" },
+      { "age": "13–17", "title": "Teenagers", "text": "They want independence but still need structure. Build free time into the itinerary where they can explore on their own. Give them a voice in planning — if they helped choose the restaurant, they're far less likely to complain about it.", "color": "bg-[#F6391A]" },
+      { "age": "60+", "title": "Grandparents", "text": "Comfort, pace, and accessibility matter. Avoid over-packed days. Include restful options alongside group activities — a morning at a café while others hike is perfectly fine. Having the full itinerary visible in advance helps them prepare mentally and physically.", "color": "bg-[#61DBD5]" }
+    ]
+  },
+  "howHelps": {
+    "title": "How WePlanify Helps Families",
+    "items": [
+      { "title": "Everyone gets a vote", "desc": "Destination, activities, restaurants — create polls and let each family member (yes, even the kids) have a say. Results are instant and final. No more circular dinner-table debates.", "link": "/features/polls" },
+      { "title": "One shared itinerary", "desc": "Build the day-by-day plan together. Mark activities by age suitability so everyone knows what's for the whole family vs. what's optional. Changes sync in real time — no outdated PDFs.", "link": "/features/planning" },
+      { "title": "Budget without the awkwardness", "desc": "Track shared expenses across households. Log who paid for what, split costs however you want, and see the balance in real time. The money conversation happens once, not twenty times.", "link": "/features/budget" },
+      { "title": "Packing coordination", "desc": "Create shared packing lists so three families don't show up with five bottles of sunscreen and no first-aid kit. Assign group items to specific people and check them off as you pack.", "link": "/features/packing" }
+    ]
+  },
+  "pullQuote": "The best family vacations aren't the ones where everything goes perfectly — they're the ones where everyone felt included in the planning.",
+  "destination": {
+    "title": "Choosing the Right Destination for Families",
+    "p1": "Picking a destination when you're travelling as a couple is one thing. Picking one that works for a baby, two teenagers, and grandparents with bad knees is a completely different game. The first filter should always be practical: how long is the flight? Anything over four hours with a toddler deserves serious consideration. If half the group has limited mobility, a city built on hills or cobblestones may look charming in photos but feel miserable on day two.",
+    "p2": "Healthcare access matters more than most people think. Travelling with young children or elderly relatives means you need to know where the nearest hospital is and whether your insurance covers the country. Destinations with good tourism infrastructure — Portugal, Japan, Croatia — tend to score well on both family-friendliness and medical accessibility.",
+    "p3": "Think about accommodation early. Families need space — not just rooms, but common areas where the group can gather without sitting on each other. A villa with a pool, a large gîte, or adjoining apartments often work better than a block of hotel rooms. Look for places with kitchen access: eating out three meals a day with kids gets expensive and exhausting fast."
+  },
+  "budget": {
+    "title": "Budgeting a Multi-Generational Trip",
+    "p1": "Money is where family trips get uncomfortable. Grandparents may want a nice hotel with breakfast included. Parents are watching every euro because they've just paid for school fees. Young couples without kids don't understand why the villa needs to cost that much. And nobody wants to be the one who brings up the budget — so it festers until someone passive-aggressively Venmos the wrong amount. The fix is simple: talk about money before you book anything, and use a shared tool so the numbers are visible to everyone."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "What's the best age to start family group trips?", "a": "Any age works, but the logistics change significantly. Under 5, keep destinations close and schedules flexible. Ages 5-12 are the sweet spot for adventure — kids are curious and adaptable. Teenagers prefer more independence, so build in free time. WePlanify lets you structure the itinerary differently for each age group within the same trip." },
+      { "q": "How do you handle different budgets within a family?", "a": "Extended family trips often mean very different financial situations. The key is transparency. Use WePlanify's budget tracker to separate shared costs (accommodation, transport) from optional activities. Some families create a shared kitty for group meals while letting individual households handle their own extras." },
+      { "q": "How far ahead should we plan a family vacation?", "a": "For domestic trips, 2-3 months is usually enough. International trips with extended family need 4-6 months minimum — everyone needs time to request leave, budget, and handle passports. Start a WePlanify trip early even if details aren't final. Having a shared space keeps momentum alive." },
+      { "q": "How do we pick a destination that works for all ages?", "a": "Use polls. Seriously. Let each household suggest two options, then vote. WePlanify's group polls remove the social pressure of in-person debates. Focus on destinations with variety — places where grandparents can relax while kids explore and parents get a mix of both." },
+      { "q": "What if family members disagree on the itinerary?", "a": "Build the 70/30 rule into your plan: 70% structured group activities, 30% free time where each sub-group does their own thing. Not every moment needs to be together. A morning at the pool for the kids while grandparents visit a museum is perfectly fine — and often better for everyone." },
+      { "q": "Can WePlanify handle multi-household family trips?", "a": "Yes. Every family member joins the same trip with a shared link. Everyone can see the itinerary, vote in polls, and track shared expenses. You can organize the itinerary by day with both group activities and sub-group options clearly marked." }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "tripWithFriends": { "title": "Trip with Friends", "desc": "Plan a group trip with friends effortlessly.", "cta": "Read more →" },
+    "roadTrip": { "title": "Road Trip", "desc": "Plan a group road trip with shared routes and budgets.", "cta": "Read more →" },
+    "groupGuide": { "title": "Group Trip Guide", "desc": "The complete step-by-step guide.", "cta": "Read the guide →" },
+    "bestApps": { "title": "Best Group Travel Apps", "desc": "The top tools for planning trips together.", "cta": "Read the article →" }
+  },
+  "cta": {
+    "title": "Your Family Trip Starts Here",
+    "subtitle": "Get everyone on the same page — literally. Start planning your next family vacation together.",
+    "button": "Start planning"
+  },
+  "jsonld": {
+    "articleHeadline": "Plan a Family Trip Everyone Will Love"
+  }
+}

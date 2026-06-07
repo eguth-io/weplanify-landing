@@ -1,0 +1,57 @@
+{
+  "badge": "Recuerdos",
+  "heroTitle1": "Tus viajes merecen",
+  "heroTitle2": "ser inmortalizados",
+  "heroDescription": "Álbum de fotos colaborativo y generación automática de tu Travel Book personalizado.",
+  "ctaButton": "Crear mi álbum gratis",
+  "seoTitleFallback": "Recuerdos - Álbum de Fotos de Viaje",
+  "stats": {
+    "km": "km recorridos",
+    "photos": "fotos",
+    "countries": "países visitados",
+    "days": "días",
+    "contributors": "colaboradores"
+  },
+  "travelBook": {
+    "badge": "Generado por IA",
+    "title": "Tu Travel Book personal",
+    "subtitle": "La IA compila tus mejores momentos en un precioso libro de viaje",
+    "coverTitle": "Nuestro viaje a Japón",
+    "coverSubtitle": "Marzo 2024",
+    "introText": "12 días inolvidables por el país del sol naciente...",
+    "introStats": "4 ciudades • 156 fotos • 2847 km",
+    "day1": "Día 1",
+    "day1Title": "Primer contacto",
+    "day1Text": "Choque cultural nada más salir del aeropuerto. Los neones de Shinjuku, la multitud ordenada y ese primer ramen a las 2 de la madrugada...",
+    "day2": "Día 2",
+    "day2Title": "Templos y tradiciones",
+    "day2Text": "Despertar al amanecer para el templo Senso-ji. El incienso, las oraciones de la mañana, y luego rumbo a Harajuku para el contraste definitivo...",
+    "day3": "Día 3",
+    "day3Title": "La majestuosa Kioto",
+    "day3Text": "El Shinkansen vuela a 300 km/h. Llegada a Kioto bajo una lluvia fina. Los bambúes de Arashiyama entre la niebla, un instante suspendido...",
+    "caption1": "Llegada a Tokio",
+    "caption2": "Templo Senso-ji",
+    "caption5": "Bambúes de Arashiyama"
+  },
+  "features": {
+    "title": "Mucho más que un álbum de fotos",
+    "subtitle": "Toda la historia de tu viaje, organizada automáticamente",
+    "items": [
+      { "title": "Álbum colaborativo", "description": "Todo el grupo contribuye, el álbum se construye juntos en tiempo real" },
+      { "title": "Mapa interactivo", "description": "Visualiza tu recorrido con las fotos geolocalizadas" },
+      { "title": "Travel Book con IA", "description": "Generación automática de un resumen con estilo de tu aventura" },
+      { "title": "Compartir fácilmente", "description": "Privado, grupo o público: tú eliges quién ve tus recuerdos" }
+    ]
+  },
+  "cta": {
+    "title": "¿List@ para inmortalizar tus aventuras?",
+    "subtitle": "Únete a miles de viajeros que conservan sus recuerdos con WePlanify."
+  },
+  "faq": [
+    { "question": "¿Cómo añado fotos a mi viaje?", "answer": "Durante o después de tu viaje, simplemente añade tus fotos y vídeos a cada día o lugar de tu itinerario. La app organiza automáticamente tu contenido por fecha y ubicación GPS." },
+    { "question": "¿Puedo crear un álbum compartido con mi grupo?", "answer": "¡Sí! Todos los participantes del viaje pueden aportar sus fotos. El álbum colaborativo se construye automáticamente y todos pueden ver los recuerdos de los demás en tiempo real." },
+    { "question": "¿Cómo funciona el resumen automático?", "answer": "Al final de tu viaje, la IA genera un 'Travel Book' con tus mejores fotos, un mapa de tu recorrido, estadísticas (km recorridos, países visitados) y los momentos destacados." },
+    { "question": "¿Puedo compartir mis recuerdos públicamente?", "answer": "Tú eliges: mantén tus recuerdos privados, compártelos solo con tu grupo o publícalos en tu perfil público para inspirar a otros viajeros." },
+    { "question": "¿Las fotos se almacenan en alta calidad?", "answer": "Sí, conservamos tus fotos en calidad original. Puedes descargarlas en cualquier momento o exportarlas a Google Photos, iCloud o Dropbox." }
+  ]
+}

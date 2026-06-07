@@ -1,0 +1,41 @@
+{
+  "affiliateTag": "Twoja kolej — jaka jest twoja wymarzona podróż?",
+  "h1": "Jaka jest twoja wymarzona podróż?\nOpisz ją, a my zamienimy to w prawdziwy plan.",
+  "placeholder": "Chcę poleżeć na meksykańskiej plaży, a obok jakieś ruiny...",
+  "submit": "Wyobraź sobie",
+  "submitting": "Przygotowujemy twoją podróż...",
+  "cta": "Zapisz i zaproś znajomych",
+  "ctaNote": "Za darmo — bez karty. Zaproś ekipę, głosujcie nad datami, podzielcie rachunek.",
+  "retry": "Inny pomysł",
+  "errorGeneric": "Coś poszło nie tak. Spróbuj ponownie.",
+  "errorRateLimit": "Za dużo prób. Poczekaj minutę.",
+  "bubbles": [
+    "Gdzieś ciepło w marcu z 4 znajomymi",
+    "Miesiąc miodowy bez tłumów",
+    "Japonia z dziećmi, bez męczenia się",
+    "Wieczór panieński w Lizbonie, maks. 3 dni",
+    "Road trip, żeby zobaczyć zorze",
+    "Zmiana otoczenia w listopadzie, niedaleko"
+  ],
+  "loadingSteps": [
+    "Czytamy twoje marzenie",
+    "Wybieramy idealne miejsce",
+    "Fotografujemy krajobraz",
+    "Odkrywamy lokalne smaki"
+  ],
+  "stickyTags": ["koniecznie!", "uwielbiam", "na liście"],
+  "monthPicker": {
+    "label": "Kiedy?",
+    "unknown": "Nie wiem"
+  },
+  "loading": {
+    "overline": "Szukamy…",
+    "dreamLabel": "Twoje marzenie"
+  },
+  "whatAbout": "A może…",
+  "connector": " — raczej ",
+  "itinerary": {
+    "label": "Pomysł na trasę",
+    "nights": "{n, plural, one {# noc} few {# noce} many {# nocy} other {# nocy}}"
+  }
+}

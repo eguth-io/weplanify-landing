@@ -1,0 +1,46 @@
+{
+  "home": "Inicio",
+  "destinations": "Destinos",
+  "daysUnit": "días",
+  "daysShort": "d",
+  "dayInitial": "D",
+  "perPerson": "/ pp",
+  "forkTrip": "Copiar este viaje",
+  "forkSubtext": "Empieza tu propio viaje a partir de este itinerario — gratis, 30 segundos.",
+  "itinerary": {
+    "heading": "Itinerario día a día",
+    "subheading": "{days} días, de la mañana a la noche. Pensado para un grupo, fácil de adaptar."
+  },
+  "slot": {
+    "morning": "Mañana",
+    "afternoon": "Tarde",
+    "evening": "Noche"
+  },
+  "pois": {
+    "heading": "Adónde ir",
+    "subheading": "Lugares reales y contrastados. Haz clic en cualquiera para abrirlo en Maps."
+  },
+  "budget": {
+    "heading": "Presupuesto por persona",
+    "subheading": "Estimación honesta sobre el terreno — {days} días.",
+    "total": "Total estimado"
+  },
+  "packing": {
+    "heading": "Esenciales para la maleta"
+  },
+  "season": {
+    "heading": "Cuándo ir"
+  },
+  "related": {
+    "heading": "Otros destinos para explorar",
+    "seeItinerary": "Ver el itinerario →"
+  },
+  "cta": {
+    "heading": "Conquista {city} con tu grupo",
+    "body": "Copia este itinerario en WePlanify, invita al grupo y planificad el viaje juntos. Itinerario compartido, encuestas, presupuesto compartido — todo gratis.",
+    "button": "Copiar este viaje — gratis"
+  },
+  "jsonld": {
+    "day": "Día"
+  }
+}

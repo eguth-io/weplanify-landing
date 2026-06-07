@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "title": "Plan a Bachelorette Trip — Organize the Perfect Party",
+    "description": "Plan the ultimate bachelorette trip with WePlanify. Coordinate schedules, vote on activities, manage a shared budget, and build a day-by-day itinerary — all in one free bachelorette weekend organizer."
+  },
+  "readTime": "10 min read",
+  "breadcrumb": {
+    "home": "Home",
+    "bachelorette": "Bachelorette Trip"
+  },
+  "hero": {
+    "tag": "Bachelorette Trip Planner",
+    "title": "Plan the Ultimate\nBachelorette Trip",
+    "description": "She said yes — now it's your turn to plan an unforgettable bachelorette party trip. WePlanify is the free bachelorette weekend organizer that keeps the surprise alive and the planning stress-free.",
+    "cta": "Start planning for free"
+  },
+  "guideIntro": {
+    "title": "The Ultimate Bachelorette Trip Planning Guide",
+    "paragraphs": [
+      "A great bachelorette trip is more than a night out — it is a multi-day celebration of friendship, adventure, and the bride-to-be's journey into married life. Whether you are planning a relaxing spa weekend, a wild city adventure, or a sun-soaked beach getaway, the magic is in the details. And getting those details right with a group of 6 to 15 people is where things get complicated.",
+      "The best bachelorette trips share three things: they match the bride's personality, they are inclusive of everyone's budget, and they are organized enough that the maid of honor is not having a breakdown behind the scenes. The secret is not to over-plan every minute — it is to have a system that lets everyone contribute while keeping one person in the driver's seat.",
+      "That is exactly what WePlanify was built for. A single shared space where the planning crew can vote on activities, track the shared kitty, build a day-by-day itinerary, and coordinate packing — all without the bride ever seeing it. No more secret WhatsApp groups with confusing thread branches. Just one clean, organized planning hub."
+    ]
+  },
+  "painPoints": {
+    "title": "Why Planning a Bachelorette Trip Is Pure Chaos",
+    "subtitle": "You love the bride-to-be, but organizing her big weekend? That's a whole different story.",
+    "items": [
+      {
+        "emoji": "🤫",
+        "title": "Keeping It a Secret",
+        "description": "Trying to plan an epic surprise while coordinating 12 people on a group chat the bride can't see? Absolute nightmare. Someone always accidentally messages the main group instead of the secret one. Or the bride sees a notification preview on someone's phone. With WePlanify, the entire planning happens in a private trip space — no rogue group chats, no accidental spoilers."
+      },
+      {
+        "emoji": "📅",
+        "title": "Herding Schedules",
+        "description": "Between work, kids, vacations, and 'let me check with my partner' — finding one weekend that works for everyone feels impossible. You send a message asking about dates and half the group responds a week later. The window for booking affordable accommodation keeps shrinking while you wait. WePlanify's date polls give everyone a clear deadline to vote, and results are instant."
+      },
+      {
+        "emoji": "💸",
+        "title": "The Money Talk",
+        "description": "Who's paying for the Airbnb? How do you split the bride's share? Venmo requests flying everywhere. Awkward. Some people overpay, others underpay, and nobody knows the real total until weeks after the trip when someone finally sits down with a calculator. The shared budget tracker in WePlanify handles all of this in real time — contributions, expenses, and who owes what."
+      },
+      {
+        "emoji": "🎉",
+        "title": "Activity Overload",
+        "description": "Spa day or wine tour? Beach or city? Everyone has opinions but nobody wants to be the one who decides for the group. The result is either a stalemate where nothing gets booked, or one person makes all the decisions and secretly resents doing all the work. Group polls solve this instantly — put three options up, let everyone vote, and book the winner. Democracy at its finest."
+      }
+    ]
+  },
+  "features": {
+    "title": "WePlanify Makes Bachelorette Planning Easy",
+    "subtitle": "Everything you need to plan a bachelorette party trip — in one place, with zero stress.",
+    "items": [
+      {
+        "emoji": "🔒",
+        "title": "Private Planning Group",
+        "description": "Create a secret planning space without the bride. Invite the crew, discuss ideas, and keep the surprise intact — no rogue group chat needed. Everyone in the planning group can see the itinerary, budget, and packing list, but the bride-to-be has zero access. You control who joins, and you can add the bride after the surprise reveal if you want her to see the trip details."
+      },
+      {
+        "emoji": "🗳️",
+        "title": "Polls for Activities & Dates",
+        "description": "Can't agree on a date or activity? Let the group vote. Polls make it easy to find what works for everyone — no endless back-and-forth. Create polls for everything: which weekend works best, what restaurant for the group dinner, spa or boat trip on Saturday afternoon. Anonymous voting means even the shy friends get a real say. Results are clear, fast, and final."
+      },
+      {
+        "emoji": "💰",
+        "title": "Shared Budget & Kitty",
+        "description": "Set a shared budget, track contributions, and split costs fairly. No more awkward money conversations or spreadsheet nightmares. Decide upfront whether the bride pays for herself or the group covers her share. Log every expense as it happens — the Airbnb deposit, the restaurant reservation, the matching t-shirts — and WePlanify calculates who owes what automatically."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Day-by-Day Itinerary",
+        "description": "Build a detailed schedule for the whole weekend. From the welcome drinks to the final brunch — everyone knows what's happening and when. Add times, locations, notes, and links for each activity. Share the itinerary with the full group (minus the bride) so everyone knows the plan. On the day, the itinerary is your single source of truth — no more frantic texts asking 'where are we meeting?'"
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Bachelorette Trip Ideas by Style",
+    "subtitle": "Not sure what type of bachelorette to plan? Here are five popular styles to inspire you.",
+    "items": [
+      {
+        "emoji": "🧖",
+        "title": "Relaxing Spa Retreat",
+        "description": "Book a spa hotel or wellness resort for a weekend of massages, facials, hot tubs, and slow mornings. Perfect for brides who want to decompress before the wedding chaos. Add a group cooking class or a wine tasting to break up the relaxation. Budget-friendly tip: rent an Airbnb with a hot tub and book mobile spa treatments to come to you."
+      },
+      {
+        "emoji": "🌃",
+        "title": "City Adventure",
+        "description": "Pick a vibrant city — think Barcelona, Austin, Montreal, or Lisbon — and pack the weekend with rooftop bars, street food tours, shopping, and nightlife. City trips work great because everyone can split off for a few hours and reconnect for group dinners. Use WePlanify's itinerary to map out the must-do activities and leave room for spontaneous exploration."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Beach Getaway",
+        "description": "Sun, sand, and matching swimsuits. A beach bachelorette is a classic for a reason. Book a beachfront rental, plan a boat day, and schedule sunset cocktails on the shore. For destinations, think Tulum, the Greek islands, Bali, or the south of France. The shared packing list is essential here — coordinate who brings the floaties, the cooler, and the Bluetooth speaker."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Wine Country Escape",
+        "description": "Napa, Bordeaux, Mendoza, Tuscany — any wine region makes for a sophisticated and memorable bachelorette. Book a vineyard tour, organize a private tasting, and end the evening with a long dinner. Wine country trips can get expensive quickly, so the shared budget tracker is your best friend. Log tastings, meals, and transport costs so everyone stays on the same page."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Active & Outdoor",
+        "description": "For the adventurous bride: hiking, kayaking, surfing, or skiing. Book a cabin in the mountains or a lodge near a national park. Plan one big group activity per day (like a guided hike or a rafting trip) and leave evenings for cozy dinners and games. The packing list is critical for outdoor trips — make sure everyone has the right gear and knows what the group is sharing."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "When to Start Planning",
+    "subtitle": "A simple timeline to keep you on track.",
+    "milestones": [
+      {
+        "time": "6 months before",
+        "title": "Lock the Date & Guest List",
+        "description": "Poll the group for available weekends. Finalize who is coming. Create your WePlanify trip and invite everyone."
+      },
+      {
+        "time": "3 months before",
+        "title": "Book Accommodation & Transport",
+        "description": "Vote on destination and accommodation style. Book flights or organize carpools. Set up the shared budget."
+      },
+      {
+        "time": "1 month before",
+        "title": "Plan Activities & Build Itinerary",
+        "description": "Poll for activities. Build the day-by-day schedule. Start the packing list. Order any matching gear or decorations."
+      },
+      {
+        "time": "1 week before",
+        "title": "Final Check & Get Excited",
+        "description": "Confirm all reservations. Review the packing list. Settle any outstanding budget items. Send the final itinerary to the group."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Bachelorette Planning Checklist",
+    "items": [
+      "Set a date that works for the most people",
+      "Create a private planning group (without the bride)",
+      "Decide on a destination and accommodation",
+      "Set and agree on a shared budget",
+      "Book accommodation and transport",
+      "Plan activities and build a day-by-day itinerary",
+      "Order matching outfits, decorations, or gifts",
+      "Create a shared packing list",
+      "Confirm all reservations one week before",
+      "Settle the budget and celebrate"
+    ]
+  },
+  "testimonial": {
+    "quote": "Honestly we were a mess trying to plan Jen's bachelorette on WhatsApp. Someone suggested WePlanify and it just... worked? We voted on everything, the budget was clear, and nobody had to chase anyone for money. 10/10 would plan again.",
+    "author": "Emma R.",
+    "role": "Bridesmaid, NYC"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Can I plan without the bride seeing?",
+        "a": "Absolutely. WePlanify lets you create a private planning group that the bride-to-be never sees. Invite only the bridesmaids and organizers — keep the surprise completely intact."
+      },
+      {
+        "q": "How do we manage the shared budget?",
+        "a": "WePlanify includes a built-in shared budget tracker. Set the total budget, log every expense, split costs evenly or custom, and see who owes what in real time. No spreadsheets needed."
+      },
+      {
+        "q": "Is WePlanify free for bachelorette planning?",
+        "a": "Yes, 100% free — even for secret planning. Create a private group without the bride, run polls, build the itinerary, and track the shared kitty at no cost. Once the surprise is revealed, you can even add the bride-to-be so she can see the full plan. No trial period, no credit card, no hidden fees."
+      },
+      {
+        "q": "How far in advance should we start planning?",
+        "a": "Ideally six months before the wedding for destination trips, three months for local getaways. The sooner you lock the date and guest list, the easier everything else becomes. Start a WePlanify trip as soon as the idea forms — even if details are not finalized yet."
+      },
+      {
+        "q": "What is a good budget for a bachelorette trip?",
+        "a": "Budgets vary widely depending on the destination and style. A local spa weekend might cost 200 to 400 per person, while a destination trip can run 800 to 1500 or more. The key is to agree on a budget early and use a shared tracker so everyone knows the total before committing."
+      },
+      {
+        "q": "How do we decide on activities as a group?",
+        "a": "Use polls. Create a poll with three to five activity options, let everyone vote, and go with the winner. This avoids the one-person-decides problem and makes everyone feel included. You can run separate polls for each day or time slot."
+      },
+      {
+        "q": "What if some bridesmaids can't make it to the whole weekend?",
+        "a": "That happens all the time — and WePlanify handles it gracefully. You can build a flexible itinerary where some people join only for Saturday night or the final brunch. Budget splits adjust too: just mark who is in for which activities, and the shared tracker recalculates each person's share. No awkward conversations about someone paying for a day they missed."
+      }
+    ]
+  },
+  "destinations": {
+    "tag": "Destination inspiration",
+    "heading": "Ready-to-fork bachelorette trips",
+    "seeItinerary": "See the itinerary →",
+    "seeAll": "See all destinations →",
+    "cards": {
+      "lasVegas": {
+        "title": "Las Vegas · 3 days",
+        "desc": "The global bachelorette capital. Pool parties, dayclubs, the Strip, a Cirque show."
+      },
+      "nashville": {
+        "title": "Nashville · 4 days",
+        "desc": "The US bachelorette capital. Pedal taverns, honky-tonks, cowgirl boots."
+      },
+      "budapest": {
+        "title": "Budapest · 3 days",
+        "desc": "Thermal baths, ruin bars, rooftops. The European bachelorette weekend, done right."
+      },
+      "marrakech": {
+        "title": "Marrakech · 4 days",
+        "desc": "Private riad, hammam ritual, Agafay desert, rooftop dinners. Total escape."
+      }
+    }
+  },
+  "discover": {
+    "heading": "Discover More",
+    "tripWithFriends": {
+      "title": "Trip with Friends",
+      "desc": "Plan a group trip with friends effortlessly using WePlanify.",
+      "cta": "Read more →"
+    },
+    "guide": {
+      "title": "Guide: How to Plan a Group Trip",
+      "desc": "The complete step-by-step guide to planning a successful group trip.",
+      "cta": "Read the guide →"
+    },
+    "comparison": {
+      "title": "App Comparison",
+      "desc": "See how WePlanify compares to other group trip planning apps in 2026.",
+      "cta": "View comparison →"
+    }
+  },
+  "cta": {
+    "title": "Ready to Plan the Best Bachelorette Ever?",
+    "description": "Join thousands of bridesmaids who use WePlanify to organize stress-free bachelorette trips. It's free, it's fun, and it actually works.",
+    "button": "Get started — it's free"
+  }
+}

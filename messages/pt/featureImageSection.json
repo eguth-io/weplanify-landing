@@ -1,0 +1,13 @@
+{
+  "title": "Um planeador de viagens em grupo,\nfeito por viajantes, para viajantes.",
+  "bubbles": [
+    { "text": "Partilhe as suas sondagens", "subtitle": "Datas · Destino · Orçamento" },
+    { "text": "Faça a gestão das despesas da viagem", "subtitle": "Voos · Airbnb · Refeições" },
+    { "text": "Convide o grupo", "subtitle": "Por email · Por link" },
+    { "text": "Faça a gestão da sua viagem", "subtitle": "Paragens · Dias · Notas" },
+    { "text": "Procure atividades", "subtitle": "Museus · Comida · Praias" },
+    { "text": "Encontre o seu alojamento", "subtitle": "Hotel · Airbnb · Hostel" },
+    { "text": "Atribua tarefas", "subtitle": "A fazer · Em curso · Concluído" },
+    { "text": "Encontre transporte", "subtitle": "Voo · Comboio · Carro" }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "title": "Budget per il viaggio di gruppo: come dividere i costi senza drammi",
+    "description": "La guida completa per gestire i soldi in un viaggio di gruppo — impostare un budget su cui tutti sono d'accordo, dividere i costi in modo equo e saldare i conti in modo pulito alla fine."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Budget per il viaggio di gruppo"
+  },
+  "readTime": "9 min di lettura",
+  "heroTag": "Soldi e viaggi 2026",
+  "h1": "Budget per il viaggio di gruppo: come dividere i costi senza drammi",
+  "intro": "Chiedi a chiunque abbia mai viaggiato con un gruppo di quattro o più persone qual è stata la parte più difficile, e i soldi compariranno tra le prime tre risposte. Non i voli, non l'alloggio — i soldi. Chi ha pagato la cena, chi deve ancora cinquanta euro, perché una persona continua a ordinare cocktail costosi mentre tutti gli altri dividono il conto. Gestire il budget di un viaggio di gruppo non deve per forza essere una fonte di conflitto. Con il giusto sistema in atto prima di partire, diventa quasi invisibile. Questa guida copre tutto: impostare un budget realistico, dividere i costi in modo che sembri equo, tenere traccia delle spese in tempo reale e saldare i conti in modo pulito a fine viaggio.",
+  "tocTitle": "Indice",
+  "toc": [
+    { "id": "money-mess", "label": "Perché i soldi nei viaggi di gruppo diventano sempre un casino" },
+    { "id": "set-budget-early", "label": "Imposta il budget prima di prenotare qualsiasi cosa" },
+    { "id": "split-by-category", "label": "Dividi per categoria, non tutto" },
+    { "id": "one-payer-system", "label": "Il sistema del pagatore unico" },
+    { "id": "track-real-time", "label": "Tieni traccia in tempo reale, non alla fine" },
+    { "id": "unequal-budgets", "label": "Gestire budget diversi nel gruppo" },
+    { "id": "settling-up", "label": "Saldare i conti: il modo pulito" },
+    { "id": "faq", "label": "FAQ" }
+  ],
+  "sections": {
+    "moneyMess": {
+      "id": "money-mess",
+      "title": "Perché i soldi nei viaggi di gruppo diventano sempre un casino",
+      "paragraphs": [
+        "Inizia in modo innocente. Qualcuno prenota l'Airbnb perché ha la carta con il limite più alto. Qualcun altro compra i biglietti del treno del gruppo per risparmiare tempo. Una terza persona copre la cena perché il ristorante accettava un solo pagamento. Prima ancora che il viaggio finisca, una persona ha anticipato 800€ e non ha idea di come chiederli indietro senza sembrare meschina.",
+        "Il problema di fondo è che i viaggi di gruppo coinvolgono persone con redditi diversi, abitudini di spesa diverse e idee molto diverse di cosa significhi 'ragionevole'. Per un amico, 30€ per l'ingresso a un museo non sono nulla. Per un altro, sono una fetta consistente del budget giornaliero. Nessuno ne parla prima di partire, quindi ogni decisione di spesa diventa una trattativa silenziosa in cui qualcuno finisce sempre per sentirsi in colpa o pieno di rancore.",
+        "Poi c'è il problema del tracciamento. Nessuno vuole essere quello che digita freneticamente le spese in un foglio di calcolo mentre tutti gli altri si godono il tramonto. Quindi non si registra nulla. Entro l'ultimo giorno, metà delle transazioni è dimenticata e l'altra metà è contestata. Saldare i conti si trasforma in un progetto archeologico di un'ora — ed è il momento esatto in cui viaggi perfettamente piacevoli vanno a rotoli.",
+        "La soluzione non è un sistema contabile complicato. È un semplice accordo condiviso, preso prima della partenza, su tre cose: quanto spendere a persona, quali costi dividere e quali pagare individualmente, e come registrare tutto man mano che avviene. Azzecca queste tre cose e i soldi smettono di essere una fonte di tensione."
+      ]
+    },
+    "setBudgetEarly": {
+      "id": "set-budget-early",
+      "title": "Imposta il budget prima di prenotare qualsiasi cosa",
+      "paragraphs": [
+        "La conversazione sui soldi deve avvenire prima di prenotare qualsiasi cosa — prima dell'Airbnb, prima dei voli, prima che qualcuno compri i biglietti del treno o inizi a confrontare i menù dei ristoranti. Una volta che i soldi sono stati spesi, il budget non è più teorico. I numeri reali creano pressione reale, e le persone che si sarebbero espresse in una conversazione di pianificazione iniziano a stare zitte per evitare conflitti.",
+        "Il modo più facile per avviare la conversazione è con le fasce. Invece di chiedere \"quanto vuoi spendere?\", che costringe le persone a dichiarare una cifra e a sentirsi giudicate, presenta tre opzioni: un viaggio essenziale (800-1.000€ a persona tutto compreso), un viaggio comodo (1.200-1.600€ a persona) e un viaggio generoso (2.000€+ a persona). Chiedi a tutti di scegliere privatamente quale fascia va bene per loro. Se il gruppo si raggruppa attorno a una fascia, hai il tuo budget. Se c'è un'ampia variabilità, è un segnale importante da affrontare presto — non al terzo giorno quando qualcuno ordina un secondo da 45€.",
+        "Una volta che hai un totale approssimativo a persona, suddividilo per categoria. Una ripartizione realistica per un viaggio di 7 giorni potrebbe essere: alloggio (30-35% del budget), trasporti compresi voli e spostamenti locali (30-40%), cibo e bevande (20-25%), attività ed esperienze (10-15%) e un margine per i costi imprevisti (5-10%). Avere queste categorie messe per iscritto, anche in una nota condivisa, significa che tutti si calibrano sulle stesse aspettative.",
+        "Usa la funzionalità dei sondaggi di gruppo di WePlanify per votare le opzioni di alloggio e le attività prima di impegnarvi. Quando tutto il gruppo decide insieme cosa includere nel budget, non c'è una sola persona da incolpare se qualcosa risulta costoso — e tutti si sentono partecipi del piano. Le decisioni prese in modo democratico sono accettate più facilmente, comprese quelle finanziarie."
+      ]
+    },
+    "splitByCategory": {
+      "id": "split-by-category",
+      "title": "Dividi per categoria, non tutto",
+      "paragraphs": [
+        "Uno degli errori più comuni che i gruppi commettono è cercare di dividere assolutamente ogni spesa in parti uguali — o, al contrario, far pagare a ciascuno la propria parte tutto il tempo. Entrambi gli estremi creano attrito. Il primo porta al rancore quando il consumo è diverso. Il secondo fa sembrare ogni pasto una transazione e vanifica il senso di viaggiare insieme.",
+        "L'approccio più intelligente è dividere per categoria. Alcuni costi sono genuinamente condivisi e dovrebbero essere divisi in parti uguali. Altri sono personali e dovrebbero essere pagati individualmente. Tracciare chiaramente questa linea prima che il viaggio inizi elimina il 90% delle conversazioni imbarazzanti.",
+        "Le categorie qui sotto sono uno schema di partenza collaudato. Adattale al tuo gruppo, ma la chiave è concordarle prima di partire."
+      ],
+      "categories": [
+        {
+          "title": "Dividere in parti uguali (costi condivisi)",
+          "items": [
+            "Alloggio — Airbnb, hotel, dormitori in ostello. Tutti ne beneficiano allo stesso modo indipendentemente dalle dimensioni della loro stanza.",
+            "Trasporto di gruppo — auto a noleggio, biglietti del treno prenotati insieme, transfer dall'aeroporto per tutto il gruppo.",
+            "Attività di gruppo — tour, ingressi ai musei, biglietti per le esperienze a cui partecipa tutto il gruppo.",
+            "Spesa per i pasti condivisi — se il gruppo cucina insieme, dividi il conto della spesa."
+          ]
+        },
+        {
+          "title": "Pagare individualmente (costi personali)",
+          "items": [
+            "Pasti personali quando il gruppo mangia in ristoranti diversi o ordina cose diverse.",
+            "Bevande personali — soprattutto l'alcol, dove il consumo varia enormemente.",
+            "Souvenir, shopping personale e qualsiasi cosa che beneficia solo una persona.",
+            "Trasporto personale — taxi per un'attività separata, gite di un giorno in solitaria."
+          ]
+        }
+      ]
+    },
+    "onePayerSystem": {
+      "id": "one-payer-system",
+      "title": "Il sistema del pagatore unico",
+      "paragraphs": [
+        "Dividere il conto al momento del pagamento — tutti che armeggiano con le carte mentre il cameriere aspetta — è lento, imbarazzante e soggetto a errori. Un approccio molto più pulito è il sistema del pagatore unico: una persona paga una spesa condivisa, la registra immediatamente in un tracker condiviso e il gruppo salda i conti alla fine del viaggio.",
+        "La parola chiave è 'immediatamente.' Il sistema funziona solo se chi paga la registra sul momento, prima che qualcuno sia passato ad altro o abbia dimenticato l'importo. Questo significa avere un tracker del budget condiviso aperto e accessibile in ogni momento — non un appunto mentale da aggiungere al foglio di calcolo più tardi. Il tracker del budget condiviso di WePlanify è fatto esattamente per questo: un tocco per registrare una nuova spesa, selezionare chi ha pagato e per chi, e tutti la vedono all'istante.",
+        "Per mantenere l'equità, fate a turno per pagare nel corso del viaggio. Una persona copre la cena, un'altra copre l'attività successiva, una terza copre i biglietti del museo. Se gli importi sono registrati con precisione, gli squilibri si pareggeranno entro la fine — e se non lo fanno, il saldo finale sarà una manciata di bonifici invece di un esercizio di contabilità forense.",
+        "Una regola semplice: se paghi qualcosa di condiviso e non la registri entro cinque minuti, probabilmente l'hai persa. Crea l'abitudine presto, il primo giorno, così diventa automatica."
+      ]
+    },
+    "trackRealTime": {
+      "id": "track-real-time",
+      "title": "Tieni traccia in tempo reale, non alla fine",
+      "paragraphs": [
+        "Ogni gruppo che ha aspettato l'ultima sera per 'sistemare i soldi' se n'è pentito. I ricordi sono inaffidabili, gli importi vengono arrotondati e una persona si sente sempre come se avesse contribuito più di quanto mostrino i numeri. L'ultima sera di un viaggio è il momento peggiore possibile per una riconciliazione finanziaria — tutti sono stanchi, alcuni stanno già calcolando i loro voli e la buona disposizione emotiva del viaggio è al suo punto più fragile.",
+        "Il tracciamento in tempo reale risolve completamente la cosa. Quando ogni spesa viene registrata man mano che avviene, non c'è alcuna riconciliazione da fare alla fine. I numeri sono già lì. Tutti hanno tenuto d'occhio il totale progressivo per tutto il viaggio, quindi nulla coglie di sorpresa. Il saldo finale è una formalità, non una trattativa.",
+        "Il requisito pratico è un tracker che tutti possano vedere e a cui possano contribuire dal telefono. Un foglio di calcolo condiviso tecnicamente funziona ma richiede un livello di disciplina e di usabilità mobile che la maggior parte dei gruppi non mantiene. Strumenti dedicati come il tracker del budget di WePlanify sono progettati per questo: aggiungi una spesa in dieci secondi, vedi chi deve cosa in tempo reale, ottieni un riepilogo del saldo in qualsiasi momento. Elimina l'attrito che porta le persone a smettere di tracciare in primo luogo.",
+        "Crea l'abitudine di un controllo quotidiano o ogni due giorni in cui qualcuno guarda i totali progressivi e segnala eventuali spese dimenticate. In un viaggio di 7 giorni, una revisione di due minuti ogni due giorni intercetta eventuali lacune e tiene tutti allineati. Costruisce anche un senso condiviso di dove si trova il viaggio dal punto di vista finanziario — così nessuno ha uno shock alla fine.",
+        "Per i viaggi on the road in particolare, traccia carburante e pedaggi come spesa condivisa fin dall'inizio. I costi della benzina possono arrivare a 200-400€ per un viaggio on the road di una settimana e sono facili da dimenticare se chi guida continua a pagare dando per scontato che verrà rimborsato più tardi. Registra ogni rifornimento immediatamente. Dai un'occhiata alla nostra guida per organizzare un viaggio on the road per consigli più specifici sulla gestione dei costi condivisi su strada."
+      ]
+    },
+    "unequalBudgets": {
+      "id": "unequal-budgets",
+      "title": "Gestire budget diversi nel gruppo",
+      "paragraphs": [
+        "Quasi ogni gruppo di amici ha almeno una persona in una situazione finanziaria diversa dagli altri. Magari è tra un lavoro e l'altro, sta risparmiando per qualcosa di importante o semplicemente guadagna meno. Questo è normale, e non deve significare che venga lasciata fuori — ma richiede un po' di progettazione intenzionale nel modo in cui strutturate il viaggio.",
+        "La prima regola è fare spazio alla conversazione prima del viaggio, non durante. Se sai che qualcuno nel gruppo ha un budget più ristretto, contattalo privatamente e chiedi quale fascia gli risulta comoda. Non è carità — sono buone dinamiche di gruppo. Un viaggio in cui una persona è stressata per i soldi tutto il tempo è peggiore per tutti.",
+        "Per l'alloggio, cerca opzioni in cui il costo non vari da individuo a individuo. Affittare una casa o un grande Airbnb e dividerlo in parti uguali è spesso più economico a persona delle camere d'albergo individuali, e significa che nessuno paga più di un altro per la propria sistemazione. Quando tutti sono nello stesso spazio, non c'è alcun sistema di livelli visibile.",
+        "Per pasti e attività, progetta un mix. Pianifica alcuni pasti di gruppo in ristoranti di fascia media dove il conto si divide facilmente, e rendi il pagamento individuale l'opzione predefinita per qualsiasi cosa più di fascia alta. Se il gruppo vuole fare un'attività costosa — un corso di cucina, una gita in barca, una cena stellata Michelin — rendila opzionale e prevedi un'alternativa altrettanto valida per chi rinuncia. Questa struttura fa sì che nessuno debba giustificarsi o sentirsi sotto i riflettori.",
+        "Una tecnica pratica: all'inizio del viaggio, concordate un tetto giornaliero di spese condivise a persona. Qualcosa come 50€/giorno copre la quota di alloggio, il trasporto condiviso e un pasto di gruppo. Qualsiasi cosa al di sopra è scelta individuale e costo individuale. Questo tetto crea un livello prevedibile su cui tutti possono impegnarsi, lasciando spazio a chi vuole spendere di più di farlo liberamente."
+      ]
+    },
+    "settlingUp": {
+      "id": "settling-up",
+      "title": "Saldare i conti: il modo pulito",
+      "paragraphs": [
+        "Il momento ideale per saldare i conti è prima di partire per l'aeroporto o il giorno dopo essere tornati — mentre il viaggio è ancora fresco, i numeri sono ancora visibili e la buona disposizione è ancora intatta. Aspettare una settimana o più crea attrito: le persone sono impegnate, i ricordi sbiadiscono e un debito di 45€ inizia a sembrare o troppo piccolo da tirare fuori o troppo grande da ignorare.",
+        "L'obiettivo del saldo è ridurre al minimo il numero di bonifici. Se sei persone devono ciascuna importi diversi a persone diverse, l'approccio ingenuo richiederebbe fino a quindici transazioni separate. Un tracker intelligente calcola il numero minimo di bonifici necessari per portare tutti a zero — di solito due o tre a persona per un tipico viaggio di gruppo.",
+        "Ecco come leggere il saldo finale: il tracker mostra un saldo netto per ogni persona — positivo significa che ha del denaro da ricevere, negativo significa che deve. L'algoritmo di saldo trova poi il percorso più efficiente da ogni saldo negativo a ogni saldo positivo. La persona A deve 85€ e la persona B deve ricevere 90€, quindi A paga 85€ a B. Fatto. La persona C deve ricevere 40€, la persona D deve 15€, la persona E deve 25€: D paga 15€ a C, E paga 25€ a C. Tre transazioni invece di una rete ingarbugliata.",
+        "Il saldo funziona meglio quando tutti confermano la ricezione del loro bonifico il giorno stesso in cui avviene. Un semplice messaggio nella chat di gruppo — 'inviati 85€, fatto' — chiude il cerchio pubblicamente e impedisce a chiunque di chiedersi se deve sollecitare. Entro 48 ore dalla fine del viaggio, ogni saldo dovrebbe essere a zero.",
+        "Un'ultima nota: fai il saldo prima che i ricordi di chi ha pagato cosa inizino a svanire. La chiarezza finanziaria alla fine di un viaggio è ciò che ti fa davvero venire voglia di viaggiare di nuovo con queste persone."
+      ]
+    }
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Come si dividono equamente i costi di un viaggio tra amici?",
+        "a": "L'approccio più equo è dividere i costi condivisi (alloggio, trasporto di gruppo, attività di gruppo) in parti uguali e lasciare che ciascuno paghi individualmente le spese personali come i pasti e le bevande individuali. Concordate queste categorie prima che il viaggio inizi, registrate ogni spesa condivisa man mano che avviene usando un tracker condiviso e saldate i conti alla fine in base a chi ha pagato cosa. Questo evita i due estremi del dividere tutto in parti uguali (che penalizza chi spende poco) o del far pagare a ciascuno la propria parte (che rende il viaggio una transazione)."
+      },
+      {
+        "q": "Qual è la migliore app per tenere traccia delle spese di un viaggio di gruppo?",
+        "a": "Per un'esperienza dedicata ai viaggi di gruppo, il tracker del budget integrato di WePlanify è progettato specificamente per i gruppi di viaggio — registra le spese in tempo reale, tiene traccia di chi ha pagato e chi ha partecipato e calcola un saldo alla fine. Splitwise è il miglior strumento puro per dividere le spese e gestisce bene più valute. La chiave è usare qualcosa che tutti nel gruppo apriranno davvero sul telefono. Uno strumento che usano tre persone su sei è peggiore di uno più semplice che tutte e sei usano con costanza."
+      },
+      {
+        "q": "Tutti dovrebbero pagare la stessa cifra in un viaggio di gruppo?",
+        "a": "Per i costi condivisi come l'alloggio e il trasporto di gruppo, sì — dividere in parti uguali è il più equo perché tutti ne beneficiano allo stesso modo. Per le spese personali come i pasti, le bevande e le attività individuali, no — ciascuno dovrebbe pagare per sé. La soluzione pratica è tracciare le spese condivise in un fondo comune e lasciare che le spese personali siano individuali. Se ci sono differenze di reddito significative nel gruppo, imposta un tetto giornaliero per le spese condivise che tutti possano sostenere comodamente, e lascia che chi spende di più copra i propri extra."
+      },
+      {
+        "q": "Come si gestisce qualcuno che non paga la propria parte?",
+        "a": "Prevenire è meglio che curare: usa un tracker condiviso che tutti possano vedere così i saldi sono trasparenti per tutto il viaggio, non solo alla fine. Quando qualcuno vede in tempo reale che deve 200€, è più probabile che se ne occupi prima che diventi una cifra più grande. Se qualcuno davvero non può pagare dopo il viaggio, affronta la cosa in privato e in modo diretto — non nella chat di gruppo. Fissa una scadenza specifica ('puoi inviarlo entro domenica?') invece di un vago 'quando puoi'. Per i viaggi futuri, alcuni gruppi chiedono a tutti di contribuire a un fondo comune del viaggio prima della partenza, così non c'è alcun saldo da fare alla fine."
+      },
+      {
+        "q": "Quali costi dovresti dividere in parti uguali e quali individualmente?",
+        "a": "Da dividere in parti uguali: alloggio, auto a noleggio, trasporto di gruppo (treni, transfer dall'aeroporto), spesa condivisa per i pasti di gruppo e qualsiasi attività che tutto il gruppo fa insieme. Da pagare individualmente: pasti personali al ristorante, bevande alcoliche, souvenir, trasporto personale (un taxi in solitaria, un'attività extra) e qualsiasi cosa che beneficia solo una persona. La regola generale è: se sarebbe strano che una persona non vi partecipasse, dividilo. Se è una scelta personale, pagatelo da solo."
+      },
+      {
+        "q": "Quando dovresti saldare i conti in un viaggio di gruppo?",
+        "a": "Idealmente l'ultimo giorno del viaggio o entro 24-48 ore dal ritorno a casa, mentre tutto è ancora fresco e la buona disposizione del viaggio è intatta. Usa un tracker condiviso che calcoli il numero minimo di bonifici necessari — così resta rapido e indolore. Conferma ogni pagamento nella chat di gruppo così tutti sanno quando il loro saldo è azzerato. Aspettare più di una settimana rende la conversazione più difficile e i numeri più confusi. Fissa una scadenza precisa come gruppo prima di partire."
+      }
+    ]
+  },
+  "pollsTip": {
+    "text": "Consiglio: usa i sondaggi di gruppo di WePlanify per votare destinazioni e attività e allineare le aspettative prima di impegnarti in qualsiasi cosa.",
+    "link": "Prova i sondaggi di gruppo"
+  },
+  "trackerBox": {
+    "text": "Il tracker del budget condiviso di WePlanify permette a ogni membro del gruppo di aggiungere spese in pochi secondi, da qualsiasi dispositivo.",
+    "link": "Scopri il tracker del budget"
+  },
+  "cta": {
+    "title": "Pronto a eliminare lo stress dei soldi nei viaggi di gruppo?",
+    "text": "Il tracker del budget condiviso di WePlanify permette al tuo gruppo di registrare le spese in tempo reale, vedere chi deve cosa e saldare i conti in modo pulito alla fine — tutto nella stessa app in cui costruite l'itinerario, lanciate sondaggi e coordinate i bagagli.",
+    "button": "Iniziate a tracciare insieme"
+  },
+  "discoverMore": {
+    "heading": "Scopri di più",
+    "budget": {
+      "title": "Tracker del budget condiviso",
+      "text": "Registra le spese in tempo reale, vedi chi deve cosa e salda i conti in modo pulito con il tracker del budget di gruppo di WePlanify.",
+      "link": "Esplora il tracker"
+    },
+    "friends": {
+      "title": "Viaggio con gli amici",
+      "text": "Organizza un viaggio di gruppo con gli amici senza fatica — itinerario, sondaggi, budget e bagagli tutto in un unico posto."
+    },
+    "guide": {
+      "title": "Guida: organizzare un viaggio di gruppo",
+      "text": "La guida completa per organizzare un viaggio di gruppo dalla scelta della destinazione al giorno della partenza."
+    },
+    "apps": {
+      "title": "Migliori app per organizzare viaggi di gruppo",
+      "text": "Un confronto onesto delle migliori app per organizzare un viaggio di gruppo nel 2026."
+    }
+  },
+  "readMore": "Leggi di più"
+}

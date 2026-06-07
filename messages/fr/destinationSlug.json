@@ -1,0 +1,46 @@
+{
+  "home": "Accueil",
+  "destinations": "Destinations",
+  "daysUnit": "jours",
+  "daysShort": "j",
+  "dayInitial": "J",
+  "perPerson": "/ pers.",
+  "forkTrip": "Reprendre ce voyage",
+  "forkSubtext": "Crée ton voyage à partir de cet itinéraire — gratuit, 30 secondes.",
+  "itinerary": {
+    "heading": "Itinéraire jour par jour",
+    "subheading": "{days} jours, du matin au soir. Pensé pour un groupe, mais flexible."
+  },
+  "slot": {
+    "morning": "Matin",
+    "afternoon": "Après-midi",
+    "evening": "Soir"
+  },
+  "pois": {
+    "heading": "Les bonnes adresses",
+    "subheading": "Spots réels, vérifiés, repérés. Cliquez pour ouvrir dans Maps."
+  },
+  "budget": {
+    "heading": "Budget par personne",
+    "subheading": "Estimation honnête au sol — {days} jours.",
+    "total": "Total estimé"
+  },
+  "packing": {
+    "heading": "À ne pas oublier"
+  },
+  "season": {
+    "heading": "Quand y aller"
+  },
+  "related": {
+    "heading": "D'autres destinations à explorer",
+    "seeItinerary": "Voir l'itinéraire →"
+  },
+  "cta": {
+    "heading": "Pars à {city} avec ta team",
+    "body": "Reprends cet itinéraire dans WePlanify, invite ton groupe, et bosse le voyage à plusieurs. Itinéraire partagé, sondages, budget commun — gratuit.",
+    "button": "Reprendre ce voyage — gratuit"
+  },
+  "jsonld": {
+    "day": "Jour"
+  }
+}

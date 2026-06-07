@@ -3,15 +3,13 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { LiveVoting } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, {
+type Copy = {
   active: string;
   votes: string;
   endsIn: string;
@@ -24,75 +22,15 @@ const COPY: Record<Lang, {
   completedLabel: string;
   freeNoCard: string;
   showcasePolls: { question: string; options: string[]; winner: string; votes: number }[];
-}> = {
-  fr: {
-    active: "Actif",
-    votes: "votes",
-    endsIn: "Se termine",
-    endTime: "dans 2h",
-    livePollQuestion: "On mange où ce soir ? 🍽️",
-    livePollOptions: [
-      { option: "🍕 Pizza", votes: 4, voters: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
-      { option: "🍣 Sushi", votes: 3, voters: ['😊', '👨‍🦱', '🧑‍🦰'] },
-      { option: "🍔 Burger", votes: 2, voters: ['👩‍🦳', '🧑‍🎤'] },
-    ],
-    livePollTotal: 9,
-    multiPollsTitle: "De la destination au restaurant : tout se décide ensemble",
-    multiPollsSubtitle: "Destinations, activités, restaurants, dates… tout se décide ensemble.",
-    completedLabel: "terminé",
-    freeNoCard: "Inscription gratuite. Sans carte bancaire.",
-    showcasePolls: [
-      { question: "Quelle destination ?", options: ["🇪🇸 Espagne", "🇵🇹 Portugal", "🇮🇹 Italie"], winner: "🇵🇹 Portugal", votes: 12 },
-      { question: "Activité du jour 3 ?", options: ["🏄 Surf", "🚶 Randonnée", "🍷 Dégustation"], winner: "🏄 Surf", votes: 8 },
-      { question: "Hôtel ou Airbnb ?", options: ["🏨 Hôtel", "🏠 Airbnb"], winner: "🏠 Airbnb", votes: 10 },
-    ],
-  },
-  en: {
-    active: "Active",
-    votes: "votes",
-    endsIn: "Ends",
-    endTime: "in 2h",
-    livePollQuestion: "Where are we eating tonight? 🍽️",
-    livePollOptions: [
-      { option: "🍕 Pizza", votes: 4, voters: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
-      { option: "🍣 Sushi", votes: 3, voters: ['😊', '👨‍🦱', '🧑‍🦰'] },
-      { option: "🍔 Burger", votes: 2, voters: ['👩‍🦳', '🧑‍🎤'] },
-    ],
-    livePollTotal: 9,
-    multiPollsTitle: "From destination to restaurant: decide everything together",
-    multiPollsSubtitle: "Destinations, activities, restaurants, dates… everything can be decided together.",
-    completedLabel: "completed",
-    freeNoCard: "Free signup. No credit card required.",
-    showcasePolls: [
-      { question: "Which destination?", options: ["🇪🇸 Spain", "🇵🇹 Portugal", "🇮🇹 Italy"], winner: "🇵🇹 Portugal", votes: 12 },
-      { question: "Day 3 activity?", options: ["🏄 Surfing", "🚶 Hiking", "🍷 Wine tasting"], winner: "🏄 Surfing", votes: 8 },
-      { question: "Hotel or Airbnb?", options: ["🏨 Hotel", "🏠 Airbnb"], winner: "🏠 Airbnb", votes: 10 },
-    ],
-  },
 };
 
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
+// Non-translatable presentation values (moved off Sanity)
+const SLUG = "polls";
+const ICON = "🗳️";
+const ACCENT_COLOR = "#8B5CF6";
+
+type FaqItem = { question: string; answer: string };
+type Feature = { icon: string; title: string; description: string };
 
 // Poll option with live voting animation
 function PollOption({
@@ -229,19 +167,21 @@ function LivePoll({
   );
 }
 
-export default function PollsFeature({ data }: { data: FeaturePageData }) {
+export default function PollsFeature() {
   const locale = useLocale();
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const t = COPY[lang];
+  const t = useTranslations("pollsFeature");
+  const copy = t.raw("copy") as Copy;
+  const features = t.raw("page.features") as Feature[];
+  const faqItems = t.raw("page.faqItems") as FaqItem[];
 
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle}
-        featureDescription={data.seoDescription}
+        featureName={t("page.seoTitle")}
+        featureDescription={t("page.seoDescription")}
         locale={locale}
-        slug={data.slug}
-        faqItems={data.faqItems}
+        slug={SLUG}
+        faqItems={faqItems}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-[#8B5CF6]/10 via-[#FFFBF5] to-[#FFFBF5]">
@@ -256,8 +196,8 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                   animate={{ opacity: 1 }}
                   className="inline-flex items-center gap-2 px-4 py-1 bg-[#8B5CF6]/20 rounded-full mb-4"
                 >
-                  <span className="text-lg">{data.icon}</span>
-                  <span className="text-[#8B5CF6] font-karla text-sm">{data.heroBadge}</span>
+                  <span className="text-lg">{ICON}</span>
+                  <span className="text-[#8B5CF6] font-karla text-sm">{t("page.heroBadge")}</span>
                 </motion.div>
 
                 <motion.h1
@@ -266,9 +206,9 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                   transition={{ delay: 0.1 }}
                   className="text-4xl lg:text-6xl font-londrina-solid text-[#001E13] mb-6"
                 >
-                  {data.heroTitle}
+                  {t("page.heroTitle")}
                   <br />
-                  <span className="text-[#8B5CF6]">{data.heroTitleHighlight}</span>
+                  <span className="text-[#8B5CF6]">{t("page.heroTitleHighlight")}</span>
                 </motion.h1>
 
                 <motion.p
@@ -277,7 +217,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                   transition={{ delay: 0.2 }}
                   className="text-lg text-[#001E13]/70 font-karla mb-4 max-w-md"
                 >
-                  {data.heroSubtitle}
+                  {t("page.heroSubtitle")}
                 </motion.p>
 
                 <motion.p
@@ -286,7 +226,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                   transition={{ delay: 0.25 }}
                   className="text-sm text-[#8B5CF6] font-karla mb-8"
                 >
-                  {data.socialProofText}
+                  {t("page.socialProofText")}
                 </motion.p>
 
                 <motion.div
@@ -296,10 +236,10 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                 >
                   <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                     <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                      {data.heroCta}
+                      {t("page.heroCta")}
                     </PulsatingButton>
                   </Link>
-                  <p className="text-sm text-[#001E13]/50 mt-2 font-karla">{data.heroCtaSubtext}</p>
+                  <p className="text-sm text-[#001E13]/50 mt-2 font-karla">{t("page.heroCtaSubtext")}</p>
                 </motion.div>
               </div>
 
@@ -310,12 +250,12 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                 transition={{ delay: 0.3 }}
               >
                 <LivePoll
-                  question={t.livePollQuestion}
-                  options={t.livePollOptions}
-                  totalVotes={t.livePollTotal}
-                  endTime={t.endTime}
+                  question={copy.livePollQuestion}
+                  options={copy.livePollOptions}
+                  totalVotes={copy.livePollTotal}
+                  endTime={copy.endTime}
                   delay={0.4}
-                  labels={{ active: t.active, votes: t.votes, endsIn: t.endsIn }}
+                  labels={{ active: copy.active, votes: copy.votes, endsIn: copy.endsIn }}
                 />
               </motion.div>
             </div>
@@ -338,7 +278,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="text-3xl lg:text-4xl font-londrina-solid text-[#FFFBF5] text-center mb-4"
             >
-              {t.multiPollsTitle}
+              {copy.multiPollsTitle}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
@@ -347,11 +287,11 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
               transition={{ delay: 0.1 }}
               className="text-center text-[#FFFBF5]/60 font-karla mb-12 max-w-xl mx-auto"
             >
-              {t.multiPollsSubtitle}
+              {copy.multiPollsSubtitle}
             </motion.p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {t.showcasePolls.map((poll, i) => (
+              {copy.showcasePolls.map((poll, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -363,7 +303,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="font-londrina-solid text-lg text-[#FFFBF5]">{poll.question}</h3>
                     <span className="px-2 py-1 bg-[#FFFBF5]/10 text-[#FFFBF5]/60 text-xs rounded-full font-karla">
-                      {t.completedLabel}
+                      {copy.completedLabel}
                     </span>
                   </div>
                   <div className="flex items-center gap-3 mb-3">
@@ -371,7 +311,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
                     <span className="font-karla text-[#FFFBF5]">{poll.winner.split(' ').slice(1).join(' ')}</span>
                     <span className="ml-auto text-[#61DBD5] font-bold">✓</span>
                   </div>
-                  <p className="text-sm text-[#FFFBF5]/40 font-karla">{poll.votes} {t.votes}</p>
+                  <p className="text-sm text-[#FFFBF5]/40 font-karla">{poll.votes} {copy.votes}</p>
                 </motion.div>
               ))}
             </div>
@@ -382,7 +322,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
         <section className="px-4 lg:px-8 py-16">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
-              {data.features.map((f, i) => (
+              {features.map((f, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -401,7 +341,7 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
+        <FeatureFAQ items={faqItems} accentColor={ACCENT_COLOR} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-16">
@@ -412,19 +352,19 @@ export default function PollsFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="bg-gradient-to-r from-[#8B5CF6] to-[#F6391A] rounded-[32px] p-8 lg:p-12"
             >
-              <span className="text-5xl mb-4 block">{data.icon}</span>
+              <span className="text-5xl mb-4 block">{ICON}</span>
               <h2 className="text-3xl font-londrina-solid text-white mb-4">
-                {data.ctaTitle}
+                {t("page.ctaTitle")}
               </h2>
               <p className="text-white/80 font-karla mb-8 max-w-md mx-auto">
-                {data.ctaSubtitle}
+                {t("page.ctaSubtitle")}
               </p>
               <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <button className="bg-white text-[#001E13] font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
-                  {data.ctaButton}
+                  {t("page.ctaButton")}
                 </button>
               </Link>
-              <p className="text-sm text-white/60 mt-3 font-karla">{t.freeNoCard}</p>
+              <p className="text-sm text-white/60 mt-3 font-karla">{copy.freeNoCard}</p>
             </motion.div>
           </div>
         </section>

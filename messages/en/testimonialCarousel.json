@@ -1,0 +1,24 @@
+{
+  "testimonials": [
+    {
+      "quote": "I've been using WePlanify for a few weeks to plan a trip with friends. The interface is simple and sharing tasks is super handy.",
+      "author": "Eva",
+      "authorRole": "Passionate traveler"
+    },
+    {
+      "quote": "Great for tweaking stops as I travel. I can adjust my plans without redoing everything.",
+      "author": "Tom",
+      "authorRole": "Digital nomad"
+    },
+    {
+      "quote": "With polls, we agreed on the hotel in 10 minutes.",
+      "author": "Lucas",
+      "authorRole": "Friends trip"
+    },
+    {
+      "quote": "We finally have a clear itinerary for the whole family.",
+      "author": "Isabelle",
+      "authorRole": "Family trip"
+    }
+  ]
+}

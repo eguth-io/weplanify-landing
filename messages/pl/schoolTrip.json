@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Jak zaplanować wycieczkę szkolną — darmowy planer wycieczek dla nauczycieli | WePlanify",
+    "description": "Zaplanuj wycieczkę szkolną z WePlanify: wspólny plan podróży widoczny dla rodziców, liczba uczestników i potrzeby żywieniowe w jednym miejscu, ankiety na atrakcje, listy rzeczy do spakowania i przechowywanie dokumentów. Darmowe dla nauczycieli."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Wycieczka szkolna"
+  },
+  "hero": {
+    "tag": "Wycieczka szkolna",
+    "title": "Zaplanuj wycieczkę szkolną bez koszmaru z papierologią",
+    "readTime": "8 min czytania · Zaktualizowano 5 maja 2026 r."
+  },
+  "problem": {
+    "p1": "Wycieczka szkolna wygląda jak pojedyncze wydarzenie, ale w rzeczywistości jest trzema skoordynowanymi procesami biegnącymi równolegle: sama wycieczka (transport, nocleg, atrakcje), komunikacja z rodzicami (zgody, potrzeby żywieniowe, codzienne aktualizacje z trasy) oraz logistyka opiekunów (grupy, proporcje, kto odpowiada za którego ucznia). Gdy którekolwiek z tych trzech żyje w różnych narzędziach — papierowe formularze tu, wątek e-mailowy tam, grupa na WhatsAppie gdzie indziej — każda zmiana musi być propagowana trzykrotnie. Właśnie tam pojawiają się przecieki.",
+    "p2": "WePlanify umieszcza plan podróży, listę uczestników i przechowywanie dokumentów w jednym miejscu — widocznym dla opiekunów i dostępnym do wglądu dla rodziców bez konta."
+  },
+  "toc": {
+    "title": "Na tej stronie",
+    "approval": "Uzyskanie zgody administracji",
+    "logistics": "Anatomia wycieczki szkolnej",
+    "parentComms": "Komunikacja z rodzicami, która się skaluje",
+    "safety": "Bezpieczeństwo, proporcje i role opiekunów",
+    "faq": "Najczęściej zadawane pytania"
+  },
+  "approval": {
+    "title": "Uzyskanie zgody administracji",
+    "p1": "Większość szkół wymaga formalnej zgody 6–12 tygodni przed każdą wycieczką z noclegiem. Najszybsza droga przez biurokrację: jednostronicowa propozycja, która odpowiada na pytania, jakie zada dyrekcja, zanim je zada. Terminy i kierunek. Cele edukacyjne powiązane z programem nauczania. Orientacyjny koszt na ucznia. Proporcja dorosłych do uczniów. Ocena ryzyka. Zakres ubezpieczenia. Im czytelniejszy ten dokument, tym szybsza akceptacja."
+  },
+  "anatomy": {
+    "title": "Anatomia wycieczki szkolnej",
+    "subtitle": "Pięć ruchomych części. Ogarnij każdą z nich, a wycieczka poprowadzi się sama.",
+    "learnMore": "Dowiedz się więcej →",
+    "items": [
+      { "stop": "Lista uczestników", "desc": "Jedyne źródło prawdy o tym, kto jedzie. Każdy uczestnik ma swoje ograniczenia żywieniowe, alergie i kontakt alarmowy bezpośrednio w profilu. Gdy rodzic podpisze zgodę, liczba uczestników aktualizuje się na żywo — bez arkusza do uzgadniania.", "link": "/features/collaboration" },
+      { "stop": "Plan podróży", "desc": "Dzień po dniu, godzina po godzinie. Widoczny dla każdego opiekuna na telefonie i dla rodziców przez wspólny link. Gdy autobus spóźnia się 30 minut, wypychasz jedną aktualizację i wszyscy ją widzą — bez masowego e-maila, bez grupowego czatu rodziców do ogarnięcia.", "link": "/features/planning" },
+      { "stop": "Decyzje", "desc": "Niektóre wybory narzuca program nauczania. Inne są otwarte: które opcjonalne muzeum, która restauracja na grupową kolację, która wieczorna atrakcja. Przeprowadź ankiety z opiekunami (lub, jeśli wiek pozwala, z uczniami), a wynik wygrywa bez dyskusji.", "link": "/features/polls" },
+      { "stop": "Pieniądze", "desc": "Budżet na ucznia, zaliczki, pozostała kwota. Śledź płatności we wspólnym budżecie, by zawsze wiedzieć, kto zapłacił, a kto nie. W przypadku opcjonalnych dodatków (kieszonkowe na pamiątki, ulepszenia atrakcji) pozwól rodzicom zaznaczać pola — budżet przelicza się automatycznie.", "link": "/features/budget" },
+      { "stop": "Pakowanie", "desc": "Wspólna lista z dwiema kolumnami: obowiązkowe i zalecane. Rodzice widzą ją w chwili publikacji, dwa tygodnie przed wyjazdem. Pakują się odpowiednio. Mniej spanikowanych e-maili poprzedniego wieczoru, mniej dzieci, które zapomniały paszportu w miejscu zbiórki.", "link": "/features/packing" }
+    ]
+  },
+  "parentComms": {
+    "title": "Komunikacja z rodzicami, która się skaluje",
+    "p1": "Klasyczny scenariusz porażki komunikacji przy wycieczce szkolnej: 30 rodziców, 30 e-maili z nieco różnymi pytaniami i Ty piszesz wariacje tej samej odpowiedzi 30 razy. Rozwiązaniem nie jest „wysyłaj mniej e-maili” — lecz „umieść odpowiedź tam, gdzie sami ją znajdą”. Wspólny plan podróży, który mogą sprawdzić w każdej chwili, z miejscem zbiórki, codziennym harmonogramem, adresem noclegu i kontaktem alarmowym, eliminuje 80% pytań, zanim padną.",
+    "p2": "Co do pozostałych 20%, sztuczka polega na konsolidacji. Zamiast trzech osobnych e-maili (zgoda, dieta, kontakt alarmowy) jeden formularz obejmuje wszystkie trzy przy zapisie. Rodzice wypełniają go raz. Ty od razu widzisz dane na żywo. Pytania z dnia wycieczki trafiają do jednego wątku wyjazdu, a nie do Twojej osobistej skrzynki. Przy 5-dniowej wycieczce z noclegiem oszczędza to nauczycielowi 4–6 godzin pracy administracyjnej."
+  },
+  "safety": {
+    "title": "Bezpieczeństwo, proporcje i role opiekunów",
+    "p1": "Większość ministerstw edukacji publikuje wymagane proporcje dorosłych do uczniów — zwykle 1:10 przy wycieczkach z noclegiem w szkole podstawowej, 1:15 w średniej. Potwierdź swoje, zanim zadeklarujesz liczby rodzicom. Gdy masz już zespół opiekunów, przypisz każdego z nich do konkretnej podgrupy uczniów i uczyń te przydziały widocznymi wewnątrz wyjazdu. Każdy opiekun widzi wtedy na telefonie dokładnie, którzy uczniowie są jego, z wczytanymi z góry informacjami o diecie i kontaktami alarmowymi.",
+    "p2": "Przeliczanie uczestników przy każdym przejściu (wsiadanie do autobusu, wejście na obiekt, opuszczanie atrakcji) to najważniejszy nawyk na wycieczce szkolnej. Wbuduj je w harmonogram jako faktyczne punkty kontrolne, a nie coś, co nauczyciel zaimprowizuje. Przy wspólnej liście uczestników liczenie zajmuje 30 sekund, a każdy brakujący uczeń zostaje oznaczony natychmiast, a nie trzy przystanki później.",
+    "p3": "W przypadku poważnych alergii lub schorzeń dołącz dokumentację bezpośrednio do uczestnika. Opiekunowie mogą ją wyświetlić offline, jeśli ich telefon ma zasięg — a personel na miejscu (hotel, restauracja, przewodnik muzealny) może od razu zobaczyć istotne informacje. Ten jeden ruch zapobiegł niejednej wizycie na SOR w trakcie wycieczki."
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      { "q": "Z jakim wyprzedzeniem powinienem planować wycieczkę szkolną?", "a": "Przy wycieczkach jednodniowych zwykle wystarczą dwa do trzech tygodni. Przy wycieczkach z noclegiem lub zagranicznych zacznij od trzech do sześciu miesięcy wcześniej. Presja rezerwacyjna różni się w zależności od kierunku — popularne miasta wycieczek szkolnych, jak Rzym, Londyn czy Barcelona, szybko się zapełniają wiosną. Najpierw ustal transport i nocleg; atrakcje można potwierdzić później." },
+      { "q": "Jak sprawnie zebrać zgody i potrzeby żywieniowe?", "a": "Przestań gonić za papierowymi formularzami. Skorzystaj z jednej wspólnej podróży z listą uczestników — każdy rodzic potwierdza obecność, ograniczenia żywieniowe i kontakty alarmowe w jednym miejscu. WePlanify utrzymuje widoczną liczbę uczestników na żywo, więc zawsze wiesz, kto się zapisał, a kto nie." },
+      { "q": "Czy rodzice mogą zobaczyć plan podróży bez zakładania konta?", "a": "Tak. Udostępnij link do wyjazdu, a rodzice mogą zobaczyć pełny plan dzień po dniu, adres noclegu i kontakty alarmowe bez rejestracji. Poczują się spokojniej, a Ty dostaniesz mniej spanikowanych e-maili w przeddzień." },
+      { "q": "Jak radzić sobie z potrzebami żywieniowymi i alergiami?", "a": "Dodaj ograniczenia żywieniowe do profilu każdego uczestnika i oznacz je przy odpowiednich posiłkach lub atrakcjach. Informacja pozostaje widoczna dla opiekunów i dla zarezerwowanych przez Ciebie obiektów. W przypadku poważnych alergii dołącz dokument medyczny bezpośrednio do uczestnika, by był dostępny offline." },
+      { "q": "Jaki jest najlepszy sposób podziału obowiązków opiekunów?", "a": "Przypisz opiekunów do konkretnych grup uczniów wewnątrz wyjazdu. Każdy opiekun widzi na telefonie liczbę uczestników swojej grupy, informacje o diecie i kontakty alarmowe. Korzystajcie z ankiet, by głosować na atrakcje, o które opiekunowie się spierają — koniec z „nigdy nie ustaliliśmy, kto idzie do muzeum”." },
+      { "q": "Czy WePlanify nadaje się do wycieczek szkolnych z uczniami poniżej 13. roku życia?", "a": "Tak — uczniowie nie potrzebują konta. Do wyjazdu dołączają tylko nauczyciel prowadzący i opiekunowie (lub wyznaczeni rodzice). Dane uczniów są przechowywane jako uczestnicy, a nie konta użytkowników, co utrzymuje konfigurację zgodną z przepisami o prywatności dotyczącymi nieletnich." }
+    ]
+  },
+  "discover": {
+    "title": "Odkryj więcej",
+    "teamBuilding": { "title": "Integracja zespołu", "desc": "Na firmowe wyjazdy integracyjne." },
+    "familyTrip": { "title": "Wyjazd rodzinny", "desc": "Na wielopokoleniowe wypady." },
+    "groupGuide": { "title": "Poradnik wyjazdu grupowego", "desc": "Pełny przewodnik krok po kroku." },
+    "appComparison": { "title": "Porównanie aplikacji", "desc": "W porównaniu z innymi planerami." }
+  },
+  "cta": {
+    "title": "Poprowadź kolejną wycieczkę szkolną z jednego miejsca",
+    "subtitle": "Darmowe dla nauczycieli. Rodzice nie muszą instalować żadnej aplikacji. Skonfiguruj wyjazd w 5 minut.",
+    "button": "Rozpocznij wycieczkę szkolną"
+  },
+  "jsonld": {
+    "articleHeadline": "Jak zaplanować wycieczkę szkolną bez koszmaru z papierologią",
+    "howToName": "Jak zaplanować wycieczkę szkolną",
+    "howToDescription": "Od uzyskania zgody administracji po rozdanie ankiety po wycieczce — przewodnik krok po kroku dla nauczycieli organizujących wycieczkę klasową.",
+    "howToSteps": [
+      { "name": "Uzyskaj zielone światło od administracji", "text": "Zanim cokolwiek zarezerwujesz, uzyskaj formalną zgodę dyrekcji szkoły. Przygotuj jednostronicowy dokument: terminy, kierunek, cele edukacyjne, orientacyjny budżet na ucznia, proporcja opieki. Większość placówek wymaga tego 6–12 tygodni wcześniej przy wycieczkach z noclegiem." },
+      { "name": "Ustal transport, nocleg i atrakcje", "text": "Najpierw zarezerwuj najdroższe pozycje: autokar lub pociąg, nocleg z odpowiednią proporcją dorosłych do uczniów i kluczowe atrakcje. Skorzystaj ze wspólnego planu podróży, by współorganizatorzy widzieli ten sam plan i mogli zgłosić konflikty, zanim staną się problemami." },
+      { "name": "Zbierz zgody, potrzeby żywieniowe i kontakty alarmowe", "text": "Wyślij rodzicom link do wyjazdu. Potwierdzają obecność, deklarują ograniczenia żywieniowe i alergie oraz podają kontakty alarmowe w jednym formularzu. Liczba uczestników aktualizuje się na żywo, bez gonienia." },
+      { "name": "Zagłosujcie na atrakcje podlegające negocjacji", "text": "Niektóre wybory są ustalone (muzeum wymagane przez program nauczania). Inne nie (która wieczorna atrakcja, która restauracja na grupową kolację). Przeprowadź szybką ankietę z opiekunami — a tam, gdzie wiek na to pozwala, z uczniami — a wynik zadecyduje." },
+      { "name": "Opublikuj listę rzeczy do spakowania i odprawę przed wyjazdem", "text": "Dwa tygodnie przed wyjazdem opublikuj wspólną listę rzeczy do spakowania (podzieloną na „obowiązkowe” i „zalecane”) oraz odprawę przed wyjazdem obejmującą miejsce zbiórki, harmonogram, oczekiwania co do zachowania i procedurę awaryjną. Rodzice widzą dokładnie, czego potrzebuje ich dziecko." },
+      { "name": "Poprowadź wycieczkę ze wspólnym planem podróży na żywo", "text": "W dniu wycieczki każdy opiekun ma pełny plan na telefonie — adresy, godziny, liczbę uczestników, kontakty alarmowe. Aktualizuj plan podróży w czasie rzeczywistym, gdy coś się zmienia (spóźniony autobus, zamieniona atrakcja), a rodzice od razu widzą nowy plan. Bez łańcucha telefonicznego, bez paniki." }
+    ]
+  }
+}

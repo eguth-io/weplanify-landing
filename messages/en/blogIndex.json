@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Blog — Group Travel Tips",
+    "description": "Discover articles and tips for organizing unforgettable group trips. Travel hacks, destinations and practical guides."
+  },
+  "staticPosts": [
+    {
+      "title": "How to Organize an Unforgettable Bachelorette Trip — 2026 Guide",
+      "excerpt": "From picking the destination to coordinating the group: everything you need to organize a memorable bachelorette trip, stress-free."
+    },
+    {
+      "title": "Group Trip Budget — How to Split Costs Without Drama",
+      "excerpt": "Set a realistic budget, split costs fairly, track expenses in real time, and settle up cleanly when the trip is over."
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "copy": {
+    "hero": {
+      "title": "Przeglądaj, dodawaj, mapuj.",
+      "titleHighlight": "Razem.",
+      "subtitle": "Jeden ekran z hotelami, restauracjami, atrakcjami i transportem — dobrany pod Twój kierunek. Kliknij +, aby dodać do podróży, i obserwuj, jak pojawia się na wspólnej mapie.",
+      "cta": "Wypróbuj Explorer za darmo",
+      "ctaSubtext": "Za darmo · bez karty kredytowej · start w 30 sekund"
+    },
+    "intro": {
+      "title": "Droga od researchu do podróży — zepsuta.",
+      "paragraphs": [
+        "Planowanie grupowego wyjazdu powinno być rozmową, a nie arkuszem kalkulacyjnym. A jednak jesteś tu, gdzie jesteś: 47 otwartych kart w przeglądarce, trzy grupowe czaty z różnymi listami, dokument w Notion, którego nikt nie aktualizuje, i o 23:00 w przeddzień wyjazdu wciąż się kłócicie, czy bar na dachu jest wart wyprawy przez całe miasto. Pytanie „co robimy” — które miało być najfajniejszą częścią — zamienia się w to, co rozbija grupy.",
+        "Problemem nie jest brak informacji. Jest wręcz przeciwnie. Każde miasto ma 10 000 rzeczy do zrobienia, a internet obiecuje, że wszystkie są obowiązkowe. Oddzielenie sygnału od szumu — i zmuszenie czterech do piętnastu osób, by uzgodniły, co się zakwalifikowało — to moment, w którym większość wyjazdów po cichu się sypie.",
+        "Explorer jest stworzony właśnie na ten moment. Jeden ekran. Cztery zakładki: hotele, restauracje, atrakcje, transport. Dobrana siatka kart dla Twojego kierunku. Kliknij +, aby dodać do podróży, i zobacz, jak pojawia się na wspólnej mapie. Twoja grupa robi to samo, a najczęściej wybierane miejsca wypływają na wierzch. Dwadzieścia minut, jedna lista na mapie."
+      ]
+    },
+    "painPoints": {
+      "title": "Dlaczego odkrywanie jest zepsute",
+      "subtitle": "Większość grup spędza więcej czasu na walce z planowaniem niż na cieszeniu się podróżą.",
+      "items": [
+        {
+          "emoji": "🗂️",
+          "title": "Cmentarzysko kart",
+          "description": "Ponad 35 otwartych kart, każda obiecuje najlepszą wersję „co warto zobaczyć w [mieście]”. Zamkniesz je dziś wieczorem, otworzysz znów jutro. Nic nie zostało ustalone."
+        },
+        {
+          "emoji": "💬",
+          "title": "Lista na czacie grupowym, której nikt nie aktualizuje",
+          "description": "Sarah zaproponowała 6 miejsc, Marc dodał 3, Alex polubił wszystkie, a przyszła panna młoda nie widziała żadnego. Wrócisz do tego przy brunchu. Może."
+        },
+        {
+          "emoji": "🤔",
+          "title": "Czy to naprawdę dobre, czy tylko turystyczne?",
+          "description": "Tripadvisor pełen jest płatnych recenzji, wątki na Reddicie mają 4 lata, Instagram to #ad. Lądujesz w tej samej zatłoczonej restauracji, którą wybrali też wszyscy inni."
+        },
+        {
+          "emoji": "🕳️",
+          "title": "Czarna dziura „gdzieś to zapisałem”",
+          "description": "14 gwiazdek w Mapach, 28 zapisów na Instagramie, 6 zakładek na TikToku, zrzut ekranu w galerii. Nigdy nie znajdziesz żadnego z nich w dniu przyjazdu."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Jak Explorer to naprawia",
+      "subtitle": "Jeden ekran, cztery zakładki, prawdziwa wspólna lista na końcu.",
+      "items": [
+        {
+          "emoji": "🎯",
+          "title": "Cztery zakładki, a nie potop",
+          "description": "Przełączaj się między hotelami, restauracjami, atrakcjami i transportem jednym kliknięciem. Karty dostosowują się do zakładki — noclegi pokazują cenę za noc, transport trasę i czas przejazdu. Koniec z porównywaniem gruszek do biletów lotniczych."
+        },
+        {
+          "emoji": "➕",
+          "title": "Dodawaj jednym dotknięciem",
+          "description": "Każda karta ma przycisk +. Dotknij go, a miejsce trafia do Twojej podróży — zielony ptaszek, bez podwójnego potwierdzania. Twoje wybory synchronizują się z resztą grupy w czasie rzeczywistym."
+        },
+        {
+          "emoji": "🗺️",
+          "title": "Widok mapy obok siebie",
+          "description": "Karty po lewej, interaktywna mapa po prawej (lub poniżej na telefonie). Najedź na kartę, a pinezka zaświeci się na mapie. Wybieraj według bliskości, a nie kolejności zakładek."
+        },
+        {
+          "emoji": "🤝",
+          "title": "Konsensus grupy wypływa na wierzch",
+          "description": "Wszyscy widzą tego samego Explorera. Gdy kilka osób doda to samo miejsce, otrzymuje ono oznaczenie „faworyt grupy”. Miejsca, na które wszyscy po cichu się zgodzili, wypływają na samą górę — bez dyskusji."
+        }
+      ]
+    },
+    "animationShowcase": {
+      "title": "Zobacz to w akcji",
+      "subtitle": "Prawdziwy interfejs Explorera — te same zakładki, te same karty, ten sam przycisk +. Przełączaj typy i obserwuj, jak siatka się aktualizuje.",
+      "caption": "Demo odtwarzane automatycznie · właśnie tego będziesz używać"
+    },
+    "mapPreview": {
+      "title": "Wszystko, co dodałeś, na mapie",
+      "subtitle": "Każde dotknięcie + stawia pinezkę na wspólnej mapie. Otwórz ją w dniu przyjazdu, wybierz to, co najbliżej, i idź tam.",
+      "caption": "Interaktywna mapa · zsynchronizowana z Twoją podróżą"
+    },
+    "useCases": {
+      "title": "Kiedy Explorer się sprawdza",
+      "subtitle": "Stworzony do wyjazdów, w których „po prostu to sprawdź” się nie skaluje.",
+      "items": [
+        {
+          "emoji": "🏙️",
+          "title": "City break (3–5 dni)",
+          "description": "Długie weekendy w Lizbonie, Berlinie, Nowym Jorku. Nie masz czasu na research — masz czas na działanie. Explorer zawęża 500 pomysłów do 20 w piętnaście minut."
+        },
+        {
+          "emoji": "👥",
+          "title": "Wyjazdy grupowe (4–15 osób)",
+          "description": "Wieczory panieńskie, zjazdy znajomych, wyjazdy rodzinne. Każdy dodaje swoje typy z telefonu, a konsensus wypływa na wierzch. Pomiń demokrację z grupowego czatu."
+        },
+        {
+          "emoji": "🛣️",
+          "title": "Wyjazdy po kilku miastach i road tripy",
+          "description": "5 miast w 10 dni = 5 eksploracji. Zapisuj miejsca dla każdego miasta i odwiedzaj je po przyjeździe. Twój plan podróży buduje się sam wokół tego, czego grupa naprawdę chce."
+        }
+      ]
+    },
+    "categoriesTitle": "Odkrywaj według kategorii",
+    "mapPins": {
+      "hotel": "Hotel",
+      "restaurant": "Restauracja",
+      "activity": "Atrakcja"
+    }
+  },
+  "page": {
+    "heroBadge": "Tryb Odkrywania",
+    "seoTitle": "Explorer - Odkryj Cele Podróży | Weplanify",
+    "seoDescription": "Odkrywaj niesamowite miejsca dzięki naszemu trybowi eksploracji. Przesuwaj, aby odkrywać restauracje, muzea i atrakcje, zapisuj ulubione.",
+    "ctaTitle": "Gotowy do odkrywania?",
+    "ctaSubtitle": "Odkryj tysiące niesamowitych miejsc na swoją następną podróż",
+    "ctaButton": "Odkryj mój cel podróży",
+    "features": [
+      {
+        "title": "Restauracje",
+        "description": "Znajdź najlepsze lokalne jedzenie"
+      },
+      {
+        "title": "Muzea",
+        "description": "Kultura i historia"
+      },
+      {
+        "title": "Natura",
+        "description": "Parki i aktywności na świeżym powietrzu"
+      },
+      {
+        "title": "Punkty widokowe",
+        "description": "Najlepsze miejsca na zdjęcia"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Jak działa tryb Explore w Weplanify?",
+        "answer": "Tryb Explore pozwala odkrywać miejsca (restauracje, muzea, atrakcje) przez przesuwanie jak w aplikacji randkowej. Przesuń w prawo, aby zapisać, w lewo, aby pominąć."
+      },
+      {
+        "question": "Czy miejsca są filtrowane na podstawie mojego celu podróży?",
+        "answer": "Tak, Explorer pokazuje tylko miejsca odpowiednie dla Twojego celu podróży i dat wyjazdu."
+      },
+      {
+        "question": "Skąd pochodzą rekomendacje?",
+        "answer": "Nasze rekomendacje łączą wiele źródeł: opinie podróżnych Weplanify, dane Google Places, TripAdvisor oraz naszych lokalnych kuratorów."
+      },
+      {
+        "question": "Czy mogę używać Explorera offline?",
+        "answer": "Tak! Pobierz miejsca z celu podróży przed wyjazdem."
+      },
+      {
+        "question": "Jak dodać odkryte miejsce do mojego planu podróży?",
+        "answer": "Gdy przesuniesz w prawo (polubienie), miejsce zostanie zapisane w ulubionych. Jedno dotknięcie pozwala dodać je do planu podróży."
+      }
+    ],
+    "stats": [
+      {
+        "label": "odkrytych miejsc"
+      },
+      {
+        "label": "kategorie"
+      },
+      {
+        "label": "cele podróży"
+      }
+    ]
+  }
+}

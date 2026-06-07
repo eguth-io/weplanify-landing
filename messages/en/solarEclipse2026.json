@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "Total Solar Eclipse 12 Aug 2026: Spain & Iceland Trip Planner",
+    "description": "Everything for the 12 August 2026 total solar eclipse: path of totality across Iceland and northern Spain, when and where the totality is longest, ISO 12312-2 glasses, cruise options, and how to plan the trip from France with a group."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Solar Eclipse 2026 Trip Planner"
+  },
+  "hero": {
+    "tag": "Astrotourism guide & trip planner · August 2026",
+    "title": "Total Solar Eclipse, 12 August 2026: Iceland & Spain Trip Planner",
+    "readTime": "10 min read",
+    "ctaButton": "Plan our eclipse trip",
+    "ctaNote": "Free · built for groups · EN/FR",
+    "imageAlt": "Total solar eclipse of 12 August 2026 — eclipse glasses held up to the corona over a Spanish wheat field"
+  },
+  "facts": {
+    "heading": "Eclipse facts",
+    "dateLabel": "Date",
+    "dateValue": "Wed 12 Aug",
+    "totalityLabel": "Max totality",
+    "totalitySub": "off Iceland",
+    "pathLabel": "Path",
+    "pathSub": "+ Greenland",
+    "lastLabel": "Last in Europe",
+    "lastSub": "27 years ago"
+  },
+  "stakes": {
+    "p1": "Total solar eclipses visible from mainland Europe happen roughly once a generation. The last one was 11 August 1999, when an enormous swathe of France went dark for about two minutes in the middle of summer. The 2026 eclipse skips France entirely — its path of totality crosses eastern Greenland, west and south Iceland, then sweeps across northern Spain at sunset before ending in the Mediterranean. France, despite being so close, only sees a partial eclipse: deep (92-99.5%) but no corona, no darkness, and the sun stays unsafe to look at for the entire phase. To witness the actual total eclipse — and the silent, unforgettable corona — you have to cross into the Spanish path or fly north to Iceland. Two more total eclipses cross Spain after this one (2 August 2027, then an annular on 26 January 2028), making 2026-2028 the unique 'Spanish triple' of European astrotourism.",
+    "p2": "WePlanify is the free shared command center for groups chasing the eclipse — location poll, flight or train, accommodation, the day-J observation timeline, and shared budget in one place, in English or French."
+  },
+  "toc": {
+    "title": "On this page",
+    "path": "The path of totality",
+    "france": "Will France see the eclipse?",
+    "spainVsIceland": "Spain vs Iceland vs cruise",
+    "safety": "Safety & glasses",
+    "logistics": "Travel & accommodation",
+    "planning": "Planning the trip with the crew",
+    "budget": "Budget tips",
+    "faq": "Frequently asked questions"
+  },
+  "path": {
+    "title": "The Path of Totality",
+    "subtitle": "From Greenland's eastern fjords to the Mediterranean, in roughly 50 minutes. The duration varies wildly by where you stand.",
+    "items": [
+      { "stop": "Greenland — eastern fjords", "desc": "The shadow first touches Earth over the Blosseville Coast and crosses Scoresby Sound, with about 1 min 45 s of totality. The only village in the region, Ittoqqortoormiit, sits ~50 km south of the centerline and stays outside totality. Practical travel access is limited — this leg is for specialists." },
+      { "stop": "Iceland — Westfjords, Snæfellsnes, Reykjavík", "desc": "The shadow makes landfall at the Straumnes lighthouse in the Westfjords at 17:43:28 UTC. Látrabjarg gets 2 min 13 s. The Snæfellsnes peninsula, including the iconic Kirkjufell mountain, sits in the path. Reykjavík sees totality start at 17:48:12 UTC for about 1 minute, with the sun ~24.5° above the western horizon. Iceland's total in-shadow time is 6 min 48 s." },
+      { "stop": "Spain — Galicia to Mallorca", "desc": "The shadow reaches A Coruña around 20:26 CEST (sun ~11° high), Bilbao at 20:27 (~30 s of totality, sun ~8°), Zaragoza around the same window (~1 min 25 s), Valencia from 20:32 (~1 minute), and Palma de Mallorca at 20:31-20:32 (~1 min 36 s, sun ~4° above the horizon, roughly 10 minutes before sunset). Madrid and Barcelona sit just outside the band — they do not get totality." },
+      { "stop": "Inside the band but easy to miss", "desc": "Santander, Burgos, Valladolid, Palencia and León are all in the totality band. The further north and west you are, the slightly higher the sun — but the cloudier the climatology. The Ebro Valley (Huesca, Zaragoza) sits at the statistical sweet spot for August cloud cover and a flat western horizon." },
+      { "stop": "Greatest duration is over open ocean", "desc": "The point of greatest duration — 2 minutes 18.2 seconds — is roughly 45 km west of Látrabjarg, in open sea. No island, no port. The only ways to be there are an eclipse cruise or a chartered flight." }
+    ]
+  },
+  "france": {
+    "title": "Will France See the Eclipse?",
+    "subtitle": "A deep partial — but not a total. Important to be clear on this with the group, especially anyone who remembers the 1999 eclipse from France.",
+    "partialLabel": "Partial obscuration",
+    "partialTitle": "City by city",
+    "partialItems": [
+      "→ Biarritz: up to 99.5% (closest to the path)",
+      "→ Marseille / Nice: ~95%",
+      "→ Bordeaux / Toulouse: ~96-97%",
+      "→ Paris: 92.2%",
+      "→ Timing: ~19:30 to ~20:30 Paris time, low sun"
+    ],
+    "missLabel": "Why 99% is not 100%",
+    "missTitle": "What you miss",
+    "missItems": [
+      "→ The corona — only visible when the sun is 100% covered",
+      "→ The darkness — night does not actually fall at 99%",
+      "→ The naked-eye safe window — never at partial, always wear glasses",
+      "→ The temperature drop and the bird silence",
+      "→ The 360° sunset effect on the horizon"
+    ]
+  },
+  "spainVsIceland": {
+    "title": "Spain vs Iceland vs Cruise",
+    "subtitle": "Three honest options, each with a real trade-off. The right one depends on what you optimise for — clear sky odds, totality duration, or experience.",
+    "option1": {
+      "tag": "Option 1",
+      "title": "Inland northern Spain",
+      "desc": "The Ebro Valley, Huesca, Zaragoza and the plains around them — best August cloud-cover statistics on the entire path (~35% cloud risk). Flat western horizon, easy road access, mid-range hotels. Trade-off: totality is short (~1-1.5 min) and the sun is low (8-11°)."
+    },
+    "option2": {
+      "tag": "Option 2",
+      "title": "Mallorca",
+      "desc": "Palma sees ~1 min 36 s of totality, the longest of any easily reachable city. Beach setting with a clear western sea horizon. Trade-off: the sun is very low (~4°), ~10 min before sunset, so any cliff or building to the west kills the view. Hotel rates have already roughly tripled for the night of 11-12 August."
+    },
+    "option3": {
+      "tag": "Option 3",
+      "title": "Iceland or cruise",
+      "desc": "Iceland gives the most dramatic experience and the highest sun (~24° in Reykjavík) but pays in cloud risk (70-85% average August cover). A Mediterranean eclipse cruise (Costa from ~€450, CFC Renaissance from €1,279, Princess, Holland America) trades a fixed spot for meteorological flexibility on the day."
+    }
+  },
+  "midCta": {
+    "title": "Spain, Mallorca or Iceland?",
+    "subtitle": "Run the destination poll with the crew, then pre-fill flights and accommodation.",
+    "button": "Run the poll"
+  },
+  "safety": {
+    "title": "Safety & ISO 12312-2 Glasses",
+    "subtitle": "Solar retinopathy is silent — you don't feel the damage until it's done. Get the right glasses early and bring spares.",
+    "card1": {
+      "title": "The certification to look for",
+      "desc": "ISO 12312-2:2015 — printed on the inside of the glasses — plus the CE marking for Europe. Anything without both is unsafe, including very dark welder's glass below shade 14, X-ray film, smoked glass, fully exposed photographic negatives, or stacked sunglasses. Glasses older than three years should be replaced; the filter degrades."
+    },
+    "card2": {
+      "title": "Where to buy in France",
+      "desc": "Pharmacies (advance sales typically open in June), Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs), and MyEclipseGlasses or VOLTNGO on Amazon. Order before the June rush — supply gets tight in July as media coverage ramps up. One pair per person, plus a backup pair per group of four."
+    },
+    "card3": {
+      "title": "Smartphone & camera",
+      "desc": "Pointing a phone camera at the partial eclipse without a solar filter can damage the sensor and is not safe through the screen either. Use a screw-on or magnetic solar filter, or accept that the eclipse is one of the few events where keeping the phone in your pocket is the right call. During totality only (in the totality band) you can look at the sun and shoot freely."
+    }
+  },
+  "logistics": {
+    "title": "Travel & Accommodation",
+    "subtitle": "Headline cities are largely booked. The play is either to widen the search to smaller towns inside the path, or to accept a longer drive on the day.",
+    "gettingThere": "Getting there",
+    "spainLabel": "Spain",
+    "spainItems": [
+      "→ Paris → Bilbao: short direct flight, ~1h50",
+      "→ Paris → Bilbao by train: ~14-15h via Hendaye",
+      "→ Paris → Zaragoza / Valencia / Palma: direct flights from CDG/ORY",
+      "→ Drive from southwest France to Bilbao or Pamplona: ~3-5 h",
+      "→ Headline cities (Zaragoza, Valencia, Palma): hotels mostly gone — try Logroño, Tudela, Castellón"
+    ],
+    "icelandLabel": "Iceland & cruise",
+    "icelandItems": [
+      "→ Paris CDG → Reykjavík (KEF): ~3h30 direct, Icelandair (~16 flights/week) and easyJet",
+      "→ Rent a car at KEF to reach Snæfellsnes (~2h30 drive)",
+      "→ Reykjavík hotels: mostly sold out, Reykjavik Edition listed at $4,399/night",
+      "→ Costa Cruises eclipse cruise: 7 nights from ~€450/pers",
+      "→ CFC Renaissance: 6 nights from Marseille, from €1,279/pers"
+    ]
+  },
+  "planning": {
+    "title": "Planning the Trip with the Crew"
+  },
+  "budget": {
+    "title": "Budget Tips",
+    "p2": "A serviced apartment for 4-6 people in a smaller town inside the totality band (Logroño, Tudela, Castellón on the Spanish side; Borgarnes or Stykkishólmur on the Snæfellsnes peninsula in Iceland) routinely beats hotel rooms in headline cities by 40-60%, while keeping you fully inside totality. The trade-off is that the dinner options narrow — book restaurants for 13 August now, not on the day.",
+    "p3": "Don't skimp on the glasses. A €5-15 ISO 12312-2 pair per person plus a backup is one of the smallest lines in the entire budget, and it's the only line where shortcutting can actually injure someone in the group."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "When and where can I see the 12 August 2026 total solar eclipse?", "a": "Wednesday 12 August 2026. The path of totality crosses eastern Greenland, western Iceland (including the Westfjords, Snæfellsnes peninsula and Reykjavík) and a wide band across northern Spain (Galicia, Asturias, Cantabria, Castilla y León, the Ebro Valley, Valencia and Mallorca). Maximum totality is 2 minutes 18 seconds — but that maximum is over open ocean ~45 km west of Látrabjarg, Iceland. Inhabited locations get shorter totality: Reykjavík ~1 minute, Zaragoza ~1 min 25 s, Palma de Mallorca ~1 min 36 s, Bilbao ~30 seconds. Madrid and Barcelona are NOT in totality." },
+      { "q": "Will France see the total eclipse?", "a": "No. Mainland France only sees a partial eclipse — but it's deep. Paris reaches 92.2% obscuration, Marseille and Nice around 95%, and Biarritz, the closest French city to the path, gets up to 99.5%. The partial phase runs from ~19:30 to ~20:30 Paris time. Without totality you never get the corona, the darkness or the safe naked-eye window — and the sun stays dangerous to look at the entire time. To see the total eclipse you have to cross into Spain or fly to Iceland." },
+      { "q": "Iceland or Spain — which is the better trip?", "a": "Statistically, inland northern Spain (Ebro Valley, Huesca, Zaragoza) has the best August cloud-cover odds along the entire path — roughly 35% chance of clouds in the right zones. Iceland averages closer to 70-85% cloud cover even in August. The Spanish trade-off: the sun is very low (4-11° above the horizon — only ~1 hour before sunset), so you need a clear western view (the sea, or a plain, never a city street). Iceland's trade-off: cloudier and more expensive, but the sun is higher (~24° in Reykjavík) and the totality experience is more isolated and dramatic." },
+      { "q": "What about an eclipse cruise?", "a": "Several cruise lines have positioned ships in the western Mediterranean and around Mallorca to give passengers the freedom to move under clearer sky on the day. Costa Cruises runs a 7-night eclipse cruise from ~€450 per person. The French line CFC has positioned its 'Renaissance' between the Balearics and Sardinia, 6 nights from Marseille, from around €1,279. Princess Cruises and Holland America also have eclipse-themed itineraries. The advantage is meteorological flexibility; the downside is that a slow-moving ship can't always escape a cloud bank in time." },
+      { "q": "What kind of glasses do I need?", "a": "ISO 12312-2:2015 certified solar viewing glasses, with the CE marking. Regular sunglasses are not safe — even the darkest ones let through enough infrared and visible light to cause solar retinopathy. ISO 12312-2 glasses are sold at French pharmacies (advance sales typically open in June), Bresser.fr, Astronome.fr, Stelvision (Soleils Noirs), and through MyEclipseGlasses on Amazon. Buy one pair per person, check the date stamp (glasses older than 3 years should be replaced) and store them flat. During totality only — and only if you're actually IN totality — you can look with the naked eye." },
+      { "q": "Have hotels already sold out?", "a": "Many of the high-leverage spots have, yes. Hotels.com reported a 445% surge in searches for eclipse destinations. Palencia rooms have been listed up to €1,095 per night (about 10× normal). Mallorca rates have roughly tripled for the night of 11-12 August. The Reykjavik Edition has been quoted at $4,399/night. Tour operators booked Zaragoza, Valencia and Bilbao 18+ months in advance. If you're starting now, look slightly outside the headline cities — smaller towns inside the path are still bookable." },
+      { "q": "How do you organise an eclipse trip with a group of friends?", "a": "Eclipses are short — 30 seconds to 2 minutes depending on where you are — so the logistics matter more than for any normal trip. Decide as a group whether you optimise for cloud odds (Ebro Valley, inland Spain), totality duration (Mallorca), or experience (Iceland). Lock the location, the transport (flight to Bilbao or Reykjavík, or train + drive), and the exact observation spot before booking accommodation. WePlanify keeps the destination poll, the budget and the timeline for the day itself all in one shared place." }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "hellfest": { "title": "Hellfest 2026 Trip Planner", "desc": "Four days of metal in Clisson, France.", "cta": "Read more →" },
+    "tomorrowland": { "title": "Tomorrowland 2026 Trip Planner", "desc": "Two weekends in Boom, Belgium.", "cta": "Read more →" },
+    "tripWithFriends": { "title": "Trip with Friends", "desc": "Plan any group trip effortlessly.", "cta": "Read more →" },
+    "groupGuide": { "title": "Group Trip Guide", "desc": "The complete step-by-step guide.", "cta": "Read the guide →" }
+  },
+  "cta": {
+    "title": "Build Your Eclipse Trip",
+    "subtitle": "Destination poll, flights or train, accommodation in the totality band, day-J timeline, shared budget — one plan, your whole crew on the same page.",
+    "button": "Run the Spain vs Iceland poll"
+  },
+  "jsonld": {
+    "articleHeadline": "Total Solar Eclipse 12 August 2026: Trip Planner for Iceland & Spain",
+    "eventName": "Total Solar Eclipse of 12 August 2026",
+    "eventDescription": "Total solar eclipse on Wednesday 12 August 2026. Path of totality crosses eastern Greenland, western Iceland and northern Spain. Maximum totality 2 minutes 18 seconds off the Icelandic coast. First total solar eclipse visible from mainland Europe since 11 August 1999.",
+    "howToName": "How to plan a total solar eclipse 2026 trip",
+    "howToDescription": "Three months out, here is how to lock the trip: pick your location (cloud odds vs duration vs experience), book travel and accommodation before the next price hike, get ISO 12312-2 glasses, and plan the actual observation hour.",
+    "howToSteps": [
+      { "name": "Pick your location — and align the group on it", "text": "The three honest options are inland Spain (Ebro Valley, ~35% cloud risk, short totality), Mallorca (longer totality but sun very low, needs sea horizon), and Iceland (high cloud risk but dramatic experience). Run a group poll before booking anything — the trade-offs split families in real life." },
+      { "name": "Book transport and accommodation before the next hike", "text": "Paris-Reykjavík takes ~3h30 with Icelandair or easyJet from CDG. Paris-Bilbao is a short flight or a long train (14-15h via Hendaye). Accommodation in headline cities (Zaragoza, Reykjavík, Palma) is largely gone — look at smaller towns inside the path, or a serviced apartment for the group." },
+      { "name": "Order ISO 12312-2 glasses and the safety kit", "text": "One certified pair per person, ordered before the June rush. Add a smartphone solar filter if anyone wants to shoot the eclipse — regular phone optics are also unsafe pointed at the sun without filtering. Pack a backup pair per group of four: glasses get dropped." },
+      { "name": "Plan the observation hour by hour", "text": "Be at your spot at least 2 hours before totality. In Spain, totality lands around 20:27-20:32 CEST with the sun very low — practice locating it from your spot the day before. Block a clear meeting point in case the group splits, and time the drive back to accommodation: roads from observation spots clog within minutes of totality ending." }
+    ]
+  }
+}

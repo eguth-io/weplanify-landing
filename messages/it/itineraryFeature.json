@@ -1,0 +1,67 @@
+{
+  "copy": {
+    "calendarMonth": "Aprile 2024",
+    "weekdays": ["L", "M", "M", "G", "V", "S", "D"],
+    "dragHint": "Trascina per riorganizzare",
+    "days": [
+      {
+        "title": "Arrivo a Tokyo",
+        "items": [
+          { "time": "14:00", "icon": "✈️", "activity": "Arrivo all'aeroporto di Narita" },
+          { "time": "16:00", "icon": "🏨", "activity": "Check-in Hotel Shinjuku" },
+          { "time": "19:00", "icon": "🍜", "activity": "Cena a Omoide Yokocho" }
+        ]
+      },
+      {
+        "title": "Tokyo - Quartiere storico",
+        "items": [
+          { "time": "09:00", "icon": "⛩️", "activity": "Tempio Senso-ji, Asakusa" },
+          { "time": "12:00", "icon": "🍣", "activity": "Sushi al mercato di Tsukiji" },
+          { "time": "15:00", "icon": "🌸", "activity": "Passeggiata al parco Ueno" },
+          { "time": "20:00", "icon": "🌃", "activity": "Tokyo Skytree" }
+        ]
+      },
+      {
+        "title": "Tokyo - Città moderna",
+        "items": [
+          { "time": "10:00", "icon": "🛍️", "activity": "Shopping a Shibuya" },
+          { "time": "14:00", "icon": "🎮", "activity": "Akihabara" },
+          { "time": "18:00", "icon": "🌆", "activity": "Tramonto allo Shibuya Sky" }
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Timeline interattiva",
+    "heroTitle": "Pianificazione del viaggio",
+    "heroTitleHighlight": "che funziona davvero",
+    "heroSubtitle": "L'app calcola i tempi di percorrenza e ti avvisa se il ristorante delle 20 è a 2 ore dal museo delle 18. Zero sorprese sul posto.",
+    "socialProofText": "Oltre 5.000 itinerari creati",
+    "heroCta": "Crea il mio programma ottimizzato",
+    "heroCtaSubtext": "Gratis, senza carta di credito",
+    "featuresTitle": "Organizza come un professionista",
+    "features": [
+      { "icon": "✋", "title": "Trascina e rilascia", "description": "Riorganizza trascinando" },
+      { "icon": "🚗", "title": "Tempi di percorrenza automatici", "description": "Calcolati tra le tappe" },
+      { "icon": "⚠️", "title": "Avvisi", "description": "Conflitti di orario rilevati" },
+      { "icon": "📤", "title": "Esportazione PDF", "description": "Condividi il tuo programma" }
+    ],
+    "faqItems": [
+      { "question": "Come creo un itinerario di viaggio giorno per giorno?", "answer": "Con Weplanify, basta aggiungere le tue tappe (alloggi, attività, ristoranti) e appaiono automaticamente sulla timeline. Puoi poi riorganizzarle trascinandole." },
+      { "question": "L'app calcola i tempi di percorrenza?", "answer": "Sì, Weplanify calcola automaticamente i tempi di percorrenza tra ogni tappa del tuo itinerario, in auto, con i mezzi pubblici o a piedi." },
+      { "question": "Posso esportare l'itinerario in PDF?", "answer": "Assolutamente! Esporta il tuo itinerario completo in PDF per averlo offline o stamparlo." },
+      { "question": "Come riorganizzo le attività nell'itinerario?", "answer": "Basta usare il trascinamento! Sposta qualsiasi attività in un altro giorno o cambia l'ordine all'interno dello stesso giorno." },
+      { "question": "L'itinerario è condiviso con tutto il gruppo?", "answer": "Sì, tutti i partecipanti al viaggio vedono lo stesso itinerario in tempo reale." }
+    ],
+    "ctaTitle": "Dì addio ai fogli Excel disordinati",
+    "ctaSubtitle": "Trascina e rilascia, l'app ottimizza i tuoi spostamenti",
+    "ctaButton": "Crea il mio programma ottimizzato",
+    "seoTitle": "Itinerario di Viaggio - Pianificazione Giorno per Giorno | Weplanify",
+    "seoDescription": "Organizza il tuo viaggio giorno per giorno con la nostra timeline interattiva. Visualizza, riorganizza e ottimizza facilmente il programma delle tue vacanze.",
+    "stats": [
+      { "value": "Oltre 5.000", "label": "itinerari" },
+      { "value": "Auto", "label": "tempi di percorrenza" },
+      { "value": "PDF", "label": "esportazione" }
+    ]
+  }
+}

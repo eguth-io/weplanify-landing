@@ -2,15 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import { AiGlobeJourney } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-type Lang = "en" | "fr";
-
-const COPY: Record<Lang, {
+type Copy = {
   you: string;
   brand: string;
   chatBubbles: string[];
@@ -29,97 +27,18 @@ const COPY: Record<Lang, {
   visualTitle: string;
   capabilitiesSubtitle: string;
   freeNoCard: string;
-}> = {
-  fr: {
-    you: "Toi",
-    brand: "WePlanify IA",
-    chatBubbles: [
-      "Je veux passer 2 semaines au Japon en avril avec ma copine. On adore la nature, la cuisine et les temples. Budget moyen.",
-      "Excellent choix ! Le Japon en avril, c'est la saison des cerisiers. Je suggère un itinéraire Tokyo — Kyoto — Osaka avec des étapes à Nara et Hakone. Tu veux voir les options d'hébergement ?",
-      "Oui, plutôt des ryokans traditionnels si possible",
-      "Parfait ! J'ai sélectionné 3 ryokans avec onsen privé à Hakone et 2 machiya rénovées à Kyoto. Je calcule aussi les trajets JR Pass pour optimiser tes déplacements...",
-    ],
-    chips: ["Ajouter une rando", "Cours de sushi", "Voir le JR Pass", "Ajuster le budget"],
-    modesTitle: "Choisis ton style de planification",
-    modesSubtitle: "Que tu préfères tout maîtriser ou laisser l'IA s'en charger, WePlanify s'adapte à toi.",
-    manualTitle: "Planification manuelle",
-    manualSubtitle: "Contrôle total sur chaque détail. Idéal pour les voyageurs qui aiment construire leur propre aventure.",
-    manualSteps: [
-      { title: "Crée ton voyage", description: "Choisis la destination, les dates et invite tes compagnons de voyage." },
-      { title: "Ajoute des étapes", description: "Construis ton itinéraire étape par étape, avec plusieurs stops." },
-      { title: "Remplis chaque journée", description: "Glissez-déposez activités, restaurants et hébergements." },
-      { title: "Collabore", description: "Le groupe ajoute ses idées et vote sur les options." },
-    ],
-    aiTitle: "Planification par IA",
-    aiSubtitle: "Décris ton voyage de rêve et laisse l'IA créer un itinéraire personnalisé en quelques secondes.",
-    aiUserMsg: "2 semaines au Japon, saison des cerisiers, nature et temples",
-    aiAssistantMsg: "Création de ton itinéraire Tokyo → Kyoto → Osaka avec ryokans et visites de temples...",
-    aiTags: ["Itinéraire instantané", "Suggestions intelligentes", "Itinéraire optimisé"],
-    bestOfBoth: {
-      strong: "Le meilleur des deux mondes :",
-      rest: " commence avec l'IA puis ajuste manuellement. Ou planifie à la main et demande à l'IA de combler les vides.",
-    },
-    visualTitle: "L'IA visualise ton voyage",
-    capabilitiesSubtitle: "Plus qu'un simple assistant — une vraie expertise voyage propulsée par l'IA.",
-    freeNoCard: "Inscription gratuite. Sans carte bancaire.",
-  },
-  en: {
-    you: "You",
-    brand: "WePlanify AI",
-    chatBubbles: [
-      "I want to spend 2 weeks in Japan in April with my girlfriend. We love nature, food, and temples. Medium budget.",
-      "Great choice! Japan in April is cherry blossom season. I suggest a Tokyo — Kyoto — Osaka route with stops in Nara and Hakone. Want me to show you accommodation options?",
-      "Yes, preferably traditional ryokans if possible",
-      "Excellent choice! I've selected 3 ryokans with private onsen in Hakone and 2 renovated machiya in Kyoto. I'm also calculating JR Pass routes to optimize your travel...",
-    ],
-    chips: ["Add a hike", "Sushi class", "View JR Pass", "Adjust budget"],
-    modesTitle: "Choose your planning style",
-    modesSubtitle: "Whether you prefer hands-on control or AI-powered convenience, WePlanify adapts to you.",
-    manualTitle: "Manual Planning",
-    manualSubtitle: "Full control over every detail. Perfect for travelers who love crafting their own adventures.",
-    manualSteps: [
-      { title: "Create your trip", description: "Set destination, dates, and invite your travel companions." },
-      { title: "Add destinations", description: "Build your itinerary step by step with multiple stops." },
-      { title: "Fill each day", description: "Drag & drop activities, restaurants, and accommodations." },
-      { title: "Collaborate", description: "Your group adds ideas and votes on options." },
-    ],
-    aiTitle: "AI-Powered Planning",
-    aiSubtitle: "Describe your dream trip and let AI create a personalized itinerary in seconds.",
-    aiUserMsg: "2 weeks in Japan, cherry blossom season, nature and temples",
-    aiAssistantMsg: "Creating your Tokyo → Kyoto → Osaka itinerary with ryokans and temple visits...",
-    aiTags: ["Instant itinerary", "Smart suggestions", "Route optimization"],
-    bestOfBoth: {
-      strong: "Best of both worlds:",
-      rest: " start with AI suggestions, then fine-tune manually. Or plan manually and ask AI to fill gaps.",
-    },
-    visualTitle: "The AI visualizes your journey",
-    capabilitiesSubtitle: "More than just an assistant — real travel expertise powered by AI.",
-    freeNoCard: "Free signup. No credit card required.",
-  },
 };
 
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
+// Non-text, non-translatable presentation config (was Sanity data.*)
+const FEATURE = {
+  slug: "planning",
+  icon: "📋",
+  accentColor: "#61DBD5",
+  gradientFrom: "#61DBD5",
+} as const;
+
+// Emoji icons paired by index with page.features in the message files
+const FEATURE_ICONS = ["✍️", "📅", "✨", "🧠", "🔄", "👥"];
 
 // Chat bubble component
 function ChatBubble({
@@ -213,19 +132,23 @@ function ManualPlanningCard({
   );
 }
 
-export default function PlanningFeature({ data }: { data: FeaturePageData }) {
+export default function PlanningFeature() {
   const locale = useLocale();
-  const lang: Lang = locale === "fr" ? "fr" : "en";
-  const t = COPY[lang];
+  const tr = useTranslations("planningFeature");
+  const t = tr.raw("copy") as Copy;
+
+  const stats = tr.raw("page.stats") as { value: string; label: string }[];
+  const features = tr.raw("page.features") as { title: string; description: string }[];
+  const faqItems = tr.raw("page.faqItems") as { question: string; answer: string }[];
 
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle}
-        featureDescription={data.seoDescription}
+        featureName={tr("page.seoTitle")}
+        featureDescription={tr("page.seoDescription")}
         locale={locale}
-        slug={data.slug}
-        faqItems={data.faqItems}
+        slug={FEATURE.slug}
+        faqItems={faqItems}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-[#FFFBF5] via-[#61DBD5]/5 to-[#FFFBF5]">
@@ -252,30 +175,30 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               className="text-center mb-12"
             >
               <span className="inline-block px-4 py-1 bg-[#61DBD5]/20 text-[#001E13] rounded-full text-sm font-karla mb-4">
-                {data.heroBadge}
+                {tr("page.heroBadge")}
               </span>
               <h1 className="text-4xl lg:text-6xl font-londrina-solid text-[#001E13] mb-4">
-                {data.heroTitle}
+                {tr("page.heroTitle")}
                 <br />
-                <span className="text-[#F6391A]">{data.heroTitleHighlight}</span>
+                <span className="text-[#F6391A]">{tr("page.heroTitleHighlight")}</span>
               </h1>
               <p className="text-lg text-[#001E13]/70 font-karla max-w-xl mx-auto mb-6">
-                {data.heroSubtitle}
+                {tr("page.heroSubtitle")}
               </p>
               <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                  {data.heroCta}
+                  {tr("page.heroCta")}
                 </PulsatingButton>
               </Link>
-              <p className="text-sm text-[#001E13]/50 mt-2 font-karla">{data.heroCtaSubtext}</p>
+              <p className="text-sm text-[#001E13]/50 mt-2 font-karla">{tr("page.heroCtaSubtext")}</p>
 
               {/* Social proof */}
               <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-8 mt-8 text-sm font-karla">
-                {data.stats.map((stat, index) => (
+                {stats.map((stat, index) => (
                   <div key={index} className="flex items-center gap-2">
                     <span className="font-semibold text-[#001E13]">{stat.value}</span>
                     <span className="text-[#001E13]/60">{stat.label}</span>
-                    {index < data.stats.length - 1 && (
+                    {index < stats.length - 1 && (
                       <div className="w-px h-4 bg-[#001E13]/20 hidden sm:block ml-4" />
                     )}
                   </div>
@@ -438,7 +361,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] text-center mb-4"
             >
-              {data.featuresTitle}
+              {tr("page.featuresTitle")}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
@@ -451,7 +374,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
             </motion.p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {data.features.map((feature, index) => {
+              {features.map((feature, index) => {
                 const gradients = [
                   "from-[#61DBD5]/20 to-[#61DBD5]/5",
                   "from-[#F6391A]/20 to-[#F6391A]/5",
@@ -467,7 +390,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
                     transition={{ delay: index * 0.1 }}
                     className={`bg-gradient-to-br ${gradients[index % gradients.length]} rounded-3xl p-8 border border-white/50 hover:shadow-lg transition-shadow`}
                   >
-                    <span className="text-4xl mb-4 block">{feature.icon}</span>
+                    <span className="text-4xl mb-4 block">{FEATURE_ICONS[index % FEATURE_ICONS.length]}</span>
                     <h3 className="text-xl font-londrina-solid text-[#001E13] mb-2">{feature.title}</h3>
                     <p className="text-[#001E13]/70 font-karla">{feature.description}</p>
                   </motion.div>
@@ -478,7 +401,7 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
+        <FeatureFAQ items={faqItems} accentColor={FEATURE.accentColor} />
 
         {/* CTA Section */}
         <section className="px-4 lg:px-8 py-12 lg:py-16">
@@ -494,16 +417,16 @@ export default function PlanningFeature({ data }: { data: FeaturePageData }) {
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#61DBD5]/20 rounded-full blur-3xl" />
 
               <div className="relative z-10">
-                <span className="text-4xl mb-4 block">{data.icon}</span>
+                <span className="text-4xl mb-4 block">{FEATURE.icon}</span>
                 <h2 className="text-3xl lg:text-4xl font-londrina-solid text-[#FFFBF5] mb-4">
-                  {data.ctaTitle}
+                  {tr("page.ctaTitle")}
                 </h2>
                 <p className="text-[#FFFBF5]/70 font-karla mb-8 max-w-lg mx-auto">
-                  {data.ctaSubtitle}
+                  {tr("page.ctaSubtitle")}
                 </p>
                 <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                   <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                    {data.ctaButton}
+                    {tr("page.ctaButton")}
                   </PulsatingButton>
                 </Link>
                 <p className="text-sm text-[#FFFBF5]/50 mt-3 font-karla">{t.freeNoCard}</p>

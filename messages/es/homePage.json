@@ -1,0 +1,15 @@
+{
+  "reviews": {
+    "heading": "Opiniones de usuarios"
+  },
+  "hero": {
+    "affiliateTag": "Planifica tu viaje en grupo, juntos.",
+    "title": "El planificador de viajes en grupo que une a todos",
+    "description": "Planifica viajes con amigos o familia en un único espacio compartido. Crea tu itinerario día a día, vota las actividades, controla el presupuesto del grupo y prepárate para viajar — se acabaron los chats dispersos y las hojas de cálculo caóticas."
+  },
+  "worldSection": {
+    "title": "Planificar viajes en grupo\nde forma sencilla",
+    "description": "Desde las calles de Lisboa hasta los templos de Kioto, WePlanify ayuda a tu grupo a convertir las ideas de viaje en un itinerario claro y sin estrés.\n\n• Crea un itinerario en grupo día a día\n• Gestiona el presupuesto de viaje compartido\n• Vota destinos, actividades y restaurantes\n• Crea listas de equipaje compartidas y asigna tareas",
+    "ctaText": "Empieza a planificar juntos"
+  }
+}

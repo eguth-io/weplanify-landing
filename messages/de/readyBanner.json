@@ -1,0 +1,36 @@
+{
+  "title": "Bereit für deine nächste Reise?",
+  "description": "Schließ dich Tausenden Reisenden an, die gemeinsam besser planen.",
+  "socialProof": "Schließ dich 12.000+ Reisenden an, die schlauer planen",
+  "freeNote": "Kostenlose Anmeldung. Keine Kreditkarte erforderlich.",
+  "badges": [
+    {
+      "emoji": "📅",
+      "text": "Gestartet 2024",
+      "backgroundColor": "#E83F28",
+      "textColor": "#FFFBF5",
+      "position": "top-left"
+    },
+    {
+      "emoji": "⭐",
+      "text": "4,8/5 Zufriedenheit",
+      "backgroundColor": "#61DBD5",
+      "textColor": "#001E13",
+      "position": "bottom-left"
+    },
+    {
+      "emoji": "🌍",
+      "text": "Top 12 Reiseziele",
+      "backgroundColor": "#FFFBF5",
+      "textColor": "#001E13",
+      "position": "top-right"
+    },
+    {
+      "emoji": "✨",
+      "text": "500+ erstellte Reiserouten",
+      "backgroundColor": "#005939",
+      "textColor": "#FFFBF5",
+      "position": "bottom-right"
+    }
+  ]
+}

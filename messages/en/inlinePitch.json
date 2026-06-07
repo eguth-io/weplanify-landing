@@ -1,0 +1,14 @@
+{
+  "copy": {
+    "placeholder": "I want to chill on a Mexican beach with ruins nearby...",
+    "submit": "Plan it",
+    "submitting": "Crafting…",
+    "cta": "Save & invite friends",
+    "retry": "Another pitch",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorRateLimit": "Too many tries. Please wait a minute.",
+    "overline": "Tell us your dream trip",
+    "caption": "We'll generate a destination preview in seconds — free, no signup needed.",
+    "whatAbout": "What about…"
+  }
+}

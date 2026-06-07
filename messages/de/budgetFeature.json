@@ -1,0 +1,152 @@
+{
+  "copy": {
+    "paidBy": "Bezahlt von",
+    "toReceive": "zu erhalten",
+    "owes": "schuldet",
+    "total": "Gesamt",
+    "pieLabels": {
+      "accommodation": "Unterkunft",
+      "restaurants": "Restaurants",
+      "activities": "Aktivitäten",
+      "transport": "Transport"
+    },
+    "liveSplitTitle": "Probier es aus: Ausgabe hinzufügen",
+    "liveSplitSubtitle": "Reise nach Lissabon — 4 Freunde",
+    "quickAdd": "Schnell hinzufügen",
+    "recentExpenses": "Letzte Ausgaben",
+    "whoOwesWhat": "Wer schuldet wem was",
+    "toSettleUp": "Zum Ausgleichen",
+    "freeNoCard": "Kostenlose Anmeldung. Keine Kreditkarte erforderlich.",
+    "tryItHint": "👆 Klick auf einen Button, um eine Ausgabe hinzuzufügen, und sieh zu, wie sich die Salden in Echtzeit aktualisieren.",
+    "participants": [
+      {
+        "name": "Marie",
+        "avatar": "👩‍🎨"
+      },
+      {
+        "name": "Thomas",
+        "avatar": "🧔"
+      },
+      {
+        "name": "Emma",
+        "avatar": "👱‍♀️"
+      },
+      {
+        "name": "Lucas",
+        "avatar": "🧑‍💻"
+      }
+    ],
+    "expenses": [
+      {
+        "name": "Abendessen im Restaurant",
+        "amount": 156,
+        "paidBy": "Marie"
+      },
+      {
+        "name": "Mietwagen",
+        "amount": 320,
+        "paidBy": "Thomas"
+      },
+      {
+        "name": "Museumstickets",
+        "amount": 84,
+        "paidBy": "Emma"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Abendessen",
+        "amount": 80,
+        "emoji": "🍝"
+      },
+      {
+        "name": "Taxi",
+        "amount": 24,
+        "emoji": "🚕"
+      },
+      {
+        "name": "Führung",
+        "amount": 60,
+        "emoji": "🎨"
+      },
+      {
+        "name": "Brunch",
+        "amount": 48,
+        "emoji": "🥐"
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Ausgabenverwaltung",
+    "heroTitle": "Kosten teilen:",
+    "heroTitleHighlight": "wer schuldet wem wie viel?",
+    "heroSubtitle": "Marie hat das Restaurant bezahlt, Thomas die Miete. Wer schuldet am Ende der Reise was? Lass die App rechnen, während du die Party genießt.",
+    "heroCta": "Meine Ausgaben verwalten",
+    "heroCtaSubtext": "Kostenlos, keine Kreditkarte erforderlich",
+    "socialProofText": "2.450 € diesen Monat verwaltet",
+    "featuresTitle": "Intelligente Ausgabenverwaltung",
+    "ctaTitle": "Schluss mit Streit ums Geld",
+    "ctaSubtitle": "Lass die App die Abrechnung für dich übernehmen",
+    "ctaButton": "Berechnen, wer mir Geld schuldet",
+    "seoTitle": "Reisebudget - Gruppenkosten teilen | Weplanify",
+    "seoDescription": "Verwalte Gruppenreisekosten ganz einfach. Zahlungsverfolgung, automatische faire Aufteilung und vereinfachte Rückzahlungen für deinen Urlaub mit Freunden.",
+    "stats": [
+      {
+        "value": "2.450 €",
+        "label": "Gesamtausgaben"
+      },
+      {
+        "value": "6",
+        "label": "Teilnehmer"
+      },
+      {
+        "value": "23",
+        "label": "Transaktionen"
+      }
+    ],
+    "features": [
+      {
+        "icon": "📸",
+        "title": "Beleg scannen",
+        "description": "Foto = Ausgabe hinzugefügt"
+      },
+      {
+        "icon": "💱",
+        "title": "Mehrere Währungen",
+        "description": "Euro, Dollar, Yen..."
+      },
+      {
+        "icon": "🔄",
+        "title": "Cleveres Abrechnen",
+        "description": "Weniger Transaktionen"
+      },
+      {
+        "icon": "📊",
+        "title": "Statistiken",
+        "description": "Visualisiere deine Ausgaben"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Wie funktioniert das Teilen von Ausgaben bei Weplanify?",
+        "answer": "Füge jede Ausgabe hinzu und gib an, wer bezahlt hat und wer beteiligt war. Die App berechnet automatisch den Saldo aller und zeigt, wer wem wie viel schuldet, um am Ende der Reise auszugleichen."
+      },
+      {
+        "question": "Können mehrere Währungen verwaltet werden?",
+        "answer": "Ja, Weplanify unterstützt alle Währungen. Füge Ausgaben in Euro, Dollar, Yen oder jeder anderen Währung hinzu. Die App rechnet automatisch zum aktuellen Wechselkurs um."
+      },
+      {
+        "question": "Wie kann ich schnell eine Ausgabe hinzufügen?",
+        "answer": "Drei Möglichkeiten: den Betrag manuell eingeben, ein Foto des Belegs machen (automatische Erkennung) oder aus deiner Bank importieren."
+      },
+      {
+        "question": "Werden Rückzahlungen optimiert?",
+        "answer": "Ja! Der Algorithmus minimiert die Anzahl der Transaktionen, die zum Ausgleich der Konten nötig sind."
+      },
+      {
+        "question": "Können bestimmte Personen von einer Ausgabe ausgeschlossen werden?",
+        "answer": "Auf jeden Fall. Wähle für jede Ausgabe nur die beteiligten Teilnehmer aus."
+      }
+    ]
+  }
+}

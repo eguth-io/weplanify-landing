@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "title": "Alternativa ao Cruzmi para Viagens em Grupo: WePlanify (Gratuita, 2026)",
+    "description": "Alternativa ao Cruzmi para organizar viagens em grupo com amigos. A WePlanify oferece itinerários colaborativos, sondagens, orçamentos partilhados e listas de bagagem — gratuita, bilingue (EN/FR)."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "alternatives": "Alternativas"
+  },
+  "hero": {
+    "subtitle": "Comparação para o mercado francês",
+    "title": "WePlanify vs Cruzmi — O Melhor Planeador de Viagens em Grupo Francês?",
+    "intro": "À procura de um planeador de viagens em grupo que fale francês? O Cruzmi é uma app móvel em francês para organizar eventos de grupo, mas não foi concebido especificamente para viagens. A WePlanify é uma app web bilingue criada de raiz para o planeamento de viagens. Eis como se comparam."
+  },
+  "verdict": {
+    "title": "Veredicto Rápido",
+    "text": "O Cruzmi é uma app móvel francesa para a coordenação geral de eventos de grupo. Não tem itinerários dia a dia, descoberta de atividades nem listas de bagagem. A WePlanify é uma app web bilingue criada propositadamente para o planeamento de viagens, com itinerários colaborativos, sondagens em grupo, orçamentos partilhados e listas de bagagem."
+  },
+  "comparison": {
+    "title": "Comparação de Funcionalidades",
+    "featureHeader": "Funcionalidade",
+    "badges": {
+      "limited": "Limitado",
+      "basic": "Básico",
+      "yesBroad": "Sim (âmbito mais alargado)",
+      "yesMobile": "Sim (mobile-first)",
+      "webApp": "Aplicação web"
+    },
+    "rows": {
+      "collab_itinerary": "Itinerário colaborativo",
+      "polls": "Sondagens / votação em grupo",
+      "budget": "Gestor de orçamento partilhado",
+      "packing": "Listas de bagagem",
+      "discovery": "Descoberta de atividades",
+      "day_by_day": "Planeamento dia a dia",
+      "events": "Organização de eventos (não-viagem)",
+      "french": "Língua francesa",
+      "english": "Língua inglesa",
+      "free": "Gratuita",
+      "mobile": "Aplicação móvel",
+      "web": "Acesso web"
+    }
+  },
+  "midCta": "Experimentar a WePlanify grátis →",
+  "cruzmiShines": {
+    "title": "Onde o Cruzmi Brilha",
+    "points": [
+      {
+        "title": "Foco exclusivo no francês",
+        "desc": "O Cruzmi destina-se ao mercado francês. A interface e o apoio estão apenas em francês, o que significa que não há opção em inglês para grupos internacionais."
+      },
+      {
+        "title": "Aplicação móvel disponível",
+        "desc": "O Cruzmi tem uma app móvel nativa para iOS e Android. No entanto, o seu acesso web é limitado, o que pode ser uma limitação para sessões de planeamento no computador."
+      },
+      {
+        "title": "Âmbito de eventos mais alargado",
+        "desc": "O Cruzmi trata de eventos de grupo como festas, saídas e jantares. Esta abordagem generalista significa que funcionalidades específicas de viagem, como itinerários dia a dia e descoberta de atividades, estão ausentes."
+      }
+    ]
+  },
+  "weplanifyWins": {
+    "title": "Onde a WePlanify Vence",
+    "points": [
+      {
+        "title": "Criada propositadamente para viagens",
+        "desc": "Ao contrário da abordagem generalista de eventos do Cruzmi, a WePlanify foi concebida exclusivamente para o planeamento de viagens: itinerários dia a dia, descoberta de atividades, listas de bagagem e gestão de orçamento partilhado já vêm integrados."
+      },
+      {
+        "title": "Bilingue (EN / FR)",
+        "desc": "Totalmente disponível em inglês e francês — perfeita para grupos de amigos internacionais ou famílias com vários idiomas. O Cruzmi só suporta francês, deixando de fora os membros que falam inglês."
+      },
+      {
+        "title": "Acesso web instantâneo",
+        "desc": "Sem necessidade de descarregar nada de uma app store. A WePlanify funciona em qualquer navegador no computador, tablet ou telemóvel — partilhe um link e toda a gente pode juntar-se em segundos, seja qual for o dispositivo que utiliza."
+      },
+      {
+        "title": "Verdadeiros itinerários colaborativos",
+        "desc": "Construam em conjunto um plano de viagem detalhado, dia a dia, com sondagens, comentários e atualizações em tempo real. Toda a gente contribui, toda a gente vota e o grupo chega a decisões mais depressa."
+      }
+    ]
+  },
+  "who": {
+    "title": "Quem Deve Escolher Cada Um?",
+    "cruzmi": "Escolha o Cruzmi se está a organizar um evento de grupo em francês que não é uma viagem — uma festa de aniversário, uma saída de fim de semana ou um jantar com amigos. É uma ferramenta de eventos de uso geral, não um planeador de viagens.",
+    "weplanify": "Escolha a WePlanify se está a planear uma viagem propriamente dita — seja uma escapada de fim de semana ou uma aventura de duas semanas — e precisa de itinerários estruturados dia a dia, gestão de orçamento, listas de bagagem, descoberta de atividades e sondagens em grupo. Especialmente valiosa para grupos bilingues que precisam de inglês e francês."
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      {
+        "q": "O Cruzmi é melhor para eventos que não são viagens?",
+        "a": "O Cruzmi tem um âmbito mais alargado que inclui festas, saídas e jantares de grupo. Se o seu objetivo principal for a organização geral de eventos entre amigos que falam francês, e não o planeamento de viagens, o Cruzmi cobre esse caso de uso."
+      },
+      {
+        "q": "A WePlanify funciona no telemóvel?",
+        "a": "Sim. A WePlanify é uma aplicação web responsiva que funciona em qualquer navegador móvel. Não há uma app nativa para descarregar — basta abrir o link e começar a planear. Uma app móvel dedicada está no roteiro."
+      },
+      {
+        "q": "Que app é melhor para uma viagem com amigos?",
+        "a": "Para uma viagem especificamente, a WePlanify oferece mais funcionalidades focadas em viagens: itinerários colaborativos dia a dia, descoberta de atividades, listas de bagagem e orçamentos partilhados. É também bilingue, o que a torna ideal para grupos mistos de inglês/francês."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pronto para planear a sua próxima viagem em grupo?",
+    "button": "Começar gratuitamente"
+  },
+  "crossLinks": {
+    "title": "Compare com Outras Apps",
+    "back": "Ver todas as comparações"
+  }
+}

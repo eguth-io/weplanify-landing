@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "How to Plan a School Trip — Free Field Trip Planner for Teachers | WePlanify",
+    "description": "Plan a school trip with WePlanify: shared itinerary visible to parents, headcounts and dietary needs in one place, polls for activities, packing lists and document storage. Free for teachers."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "School Trip"
+  },
+  "hero": {
+    "tag": "School Trip",
+    "title": "Plan a School Trip Without the Paperwork Nightmare",
+    "readTime": "8 min read · Updated May 5, 2026"
+  },
+  "problem": {
+    "p1": "A school trip looks like a single event but is actually three coordinated workflows running in parallel: the trip itself (transport, accommodation, activities), the parent communication (permissions, dietary needs, daily updates from the road), and the chaperone logistics (groups, ratios, who's responsible for which student). When any of those three live in different tools — paper forms here, an email thread there, a WhatsApp group somewhere else — every change has to be propagated three times. That's where the leaks happen.",
+    "p2": "WePlanify puts the itinerary, the participant list, and the document storage in one place — visible to chaperones and viewable by parents without an account."
+  },
+  "toc": {
+    "title": "On this page",
+    "approval": "Getting administrative approval",
+    "logistics": "Anatomy of a school trip",
+    "parentComms": "Parent communication that scales",
+    "safety": "Safety, ratios and chaperone roles",
+    "faq": "Frequently asked questions"
+  },
+  "approval": {
+    "title": "Getting Administrative Approval",
+    "p1": "Most schools require formal approval 6-12 weeks before any overnight trip. The fastest path through the bureaucracy: a one-page proposal that answers the questions leadership will ask before they ask them. Dates and destination. Learning objectives mapped to your curriculum. Indicative cost per student. Adult-to-student ratio. Risk assessment. Insurance coverage. The cleaner this document, the faster the sign-off."
+  },
+  "anatomy": {
+    "title": "Anatomy of a School Trip",
+    "subtitle": "Five moving parts. Get each one right and the trip runs itself.",
+    "learnMore": "Learn more →",
+    "items": [
+      { "stop": "The Roster", "desc": "The single source of truth for who's going. Each participant carries their dietary restrictions, allergies, and emergency contact directly on their profile. When a parent signs the permission, the headcount updates live — no spreadsheet to reconcile.", "link": "/features/collaboration" },
+      { "stop": "The Itinerary", "desc": "Day by day, time by time. Visible to every chaperone on their phone and to parents through the shared link. When the bus is 30 minutes late, you push one update and everyone sees it — no broadcast email, no parent group chat to manage.", "link": "/features/planning" },
+      { "stop": "The Decisions", "desc": "Some choices are imposed by the curriculum. Others are open: which optional museum, which restaurant for the group dinner, which evening activity. Run polls with the chaperones (or, age-permitting, the students) and the result wins without debate.", "link": "/features/polls" },
+      { "stop": "The Money", "desc": "Per-student budget, deposits, balance due. Track payments in the shared budget so you always know who's paid and who hasn't. For optional add-ons (souvenir cash, activity upgrades), let parents tick boxes — the budget recalculates automatically.", "link": "/features/budget" },
+      { "stop": "The Packing", "desc": "A shared list with two columns: mandatory and recommended. Parents see it the moment you publish it, two weeks before departure. They pack accordingly. Fewer panicked emails the night before, fewer kids who forgot their passport at the meeting point.", "link": "/features/packing" }
+    ]
+  },
+  "parentComms": {
+    "title": "Parent Communication That Scales",
+    "p1": "The classic failure mode of school-trip communication: 30 parents, 30 emails with slightly different questions, and you typing variations of the same answer 30 times. The fix isn't 'send fewer emails' — it's 'put the answer somewhere they can find it themselves.' A shared itinerary they can consult anytime, with the meeting point, the daily schedule, the accommodation address and the emergency contact, eliminates 80% of the questions before they're asked.",
+    "p2": "For the remaining 20%, the trick is consolidation. Instead of three separate emails (permission, dietary, emergency contact), one form covers all three at signup. Parents fill it once. You see the live data immediately. Trip-day questions go in a single trip-thread, not your personal inbox. Over a 5-day overnight trip, this saves a teacher 4-6 hours of admin time."
+  },
+  "safety": {
+    "title": "Safety, Ratios and Chaperone Roles",
+    "p1": "Most education ministries publish required adult-to-student ratios — typically 1:10 for primary school overnight trips, 1:15 for secondary. Confirm yours before you commit numbers to the parents. Once you have the chaperone team, assign each of them to a specific subgroup of students and make those assignments visible inside the trip. Each chaperone then sees on their phone exactly which students are theirs, with dietary info and emergency contacts pre-loaded.",
+    "p2": "Headcounts at every transition (boarding the bus, entering a venue, leaving an activity) are the single most important habit on a school trip. Build them into the schedule as actual checkpoints, not as something a teacher will improvise. With a shared roster, the count takes 30 seconds and any missing student is flagged immediately, not three stops later.",
+    "p3": "For severe allergies or medical conditions, attach the documentation directly to the participant. Chaperones can pull it up offline if their phone has cell service — and the on-site venue staff (a hotel, a restaurant, a museum guide) can be shown the relevant info immediately. This single move has prevented more than one mid-trip ER visit."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      { "q": "How far in advance should I plan a school trip?", "a": "For day trips, two to three weeks is usually enough. For overnight or international trips, start three to six months ahead. Booking pressure varies by destination — popular school-trip cities like Rome, London or Barcelona fill up fast in spring. Lock in transport and accommodation first; activities can be confirmed later." },
+      { "q": "How do I collect permission slips and dietary needs efficiently?", "a": "Stop chasing paper forms. Use a single shared trip with a participants list — each parent confirms attendance, dietary restrictions, and emergency contacts in one place. WePlanify keeps the live headcount visible so you always know who's signed off and who hasn't." },
+      { "q": "Can parents see the itinerary without creating an account?", "a": "Yes. Share the trip link and parents can view the full day-by-day plan, accommodation address, and emergency contacts without signing up. They'll feel reassured, you'll get fewer panicked emails the day before." },
+      { "q": "How do you handle dietary needs and allergies?", "a": "Add dietary restrictions to each participant's profile and tag them on relevant meals or activities. The information stays visible to chaperones and to the venues you've booked. For severe allergies, attach the medical document directly to the participant so it's accessible offline." },
+      { "q": "What's the best way to split chaperone responsibilities?", "a": "Assign chaperones to specific groups of students inside the trip. Each chaperone sees their group's headcount, dietary info, and emergency contacts on their phone. Use polls to vote on activities the chaperones are debating — no more 'we never decided who goes to the museum.'" },
+      { "q": "Is WePlanify suitable for school trips with under-13 students?", "a": "Yes — students don't need an account. Only the lead teacher and chaperones (or designated parents) join the trip. Student details are stored as participants, not user accounts, which keeps the setup compliant with privacy rules around minors." }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "teamBuilding": { "title": "Team Building", "desc": "For corporate retreats." },
+    "familyTrip": { "title": "Family Trip", "desc": "For multi-generational getaways." },
+    "groupGuide": { "title": "Group Trip Guide", "desc": "The full step-by-step guide." },
+    "appComparison": { "title": "App Comparison", "desc": "Compared with other planners." }
+  },
+  "cta": {
+    "title": "Run Your Next School Trip From One Place",
+    "subtitle": "Free for teachers. No app for parents to install. Set up your trip in 5 minutes.",
+    "button": "Start a school trip"
+  },
+  "jsonld": {
+    "articleHeadline": "How to Plan a School Trip Without the Paperwork Nightmare",
+    "howToName": "How to plan a school trip",
+    "howToDescription": "From getting administrative approval to handing out the post-trip survey — a step-by-step playbook for teachers organizing a class trip.",
+    "howToSteps": [
+      { "name": "Get the administrative greenlight", "text": "Before booking anything, get formal sign-off from school leadership. Prepare a one-pager: dates, destination, learning objectives, indicative budget per student, supervision ratio. Most institutions require this 6-12 weeks in advance for overnight trips." },
+      { "name": "Lock in transport, accommodation, and activities", "text": "Book the big-ticket items first: coach or train, accommodation with the right adult-to-student ratio, and the marquee activities. Use a shared itinerary so co-organizers see the same plan and can flag conflicts before they become problems." },
+      { "name": "Collect permissions, dietary needs, and emergency contacts", "text": "Send parents the trip link. They confirm attendance, declare dietary restrictions and allergies, and provide emergency contacts in one form. The headcount updates live, no chasing required." },
+      { "name": "Vote on the negotiable activities", "text": "Some choices are fixed (the museum the curriculum requires). Others aren't (which evening activity, which restaurant for the group dinner). Run a quick poll with the chaperones — and where age-appropriate, the students — and the result decides." },
+      { "name": "Publish the packing list and pre-trip briefing", "text": "Two weeks before departure, publish a shared packing list (split into 'mandatory' and 'recommended') and a pre-trip briefing covering meeting point, schedule, behavior expectations, and emergency procedure. Parents see exactly what their child needs." },
+      { "name": "Run the trip with the live shared itinerary", "text": "On the day, every chaperone has the full plan on their phone — addresses, times, headcount, emergency contacts. Update the itinerary in real time when something changes (delayed bus, swapped activity), and parents see the new plan immediately. No phone tree, no panic." }
+    ]
+  }
+}

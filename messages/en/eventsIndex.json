@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "2026 Event Trip Planners — Free, for Groups",
+    "description": "Plan your 2026 event trip with WePlanify. Dedicated free planners for the FIFA World Cup, Champions League Final, Tomorrowland, Hellfest, Ultra Europe and the total solar eclipse — built for groups of fans who travel together."
+  },
+  "hero": {
+    "tag": "2026 Event Trip Planners",
+    "title": "Plan your 2026\nevent trip — together",
+    "description": "Six dedicated planners for the year's biggest events. Pick yours, build a shared itinerary, split costs and coordinate the squad — all free.",
+    "cta": "Start planning for free"
+  },
+  "intro": {
+    "title": "One planner per event, built for groups",
+    "body": "Big events bring big logistics: matches across host cities, festival passes for a 12-person crew, camping permits, last-minute date clashes. Each of our 2026 event pages is built for that specific event — host-city tables, real schedules, the gotchas only fans hit. Pick yours below."
+  },
+  "cardCta": "Open the planner →",
+  "cta": {
+    "title": "Not heading to one of these? Plan your own group trip.",
+    "description": "WePlanify works for any group trip — bachelorette, birthday, family, road trip, anything else. Same shared kitty, itinerary, polls and packing list.",
+    "button": "Start a free trip"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "events": "2026 Events"
+  },
+  "events": [
+    {
+      "title": "FIFA World Cup 2026",
+      "date": "Jun 11 – Jul 19, 2026",
+      "location": "USA · Canada · Mexico",
+      "description": "16 host cities across three countries. Plan your multi-city route, split costs by category, and coordinate the fan group across borders."
+    },
+    {
+      "title": "Champions League Final 2026",
+      "date": "May 30, 2026",
+      "location": "Budapest, Hungary",
+      "description": "The biggest club final of the year at the Puskás Aréna. Plan transport, hotel and pre-match meetup for the squad."
+    },
+    {
+      "title": "Hellfest 2026",
+      "date": "Jun 19 – 22, 2026",
+      "location": "Clisson, France",
+      "description": "Four days of metal in Clisson. Camping logistics, carpool, and the lineup-to-stage spreadsheet — all in one shared plan."
+    },
+    {
+      "title": "Tomorrowland 2026",
+      "date": "Jul 17 – 26, 2026",
+      "location": "Boom, Belgium",
+      "description": "DreamVille tickets, festival passes, train logistics. Coordinate the squad and the shared kitty so nobody chases anyone for €40 the week after."
+    },
+    {
+      "title": "Total Solar Eclipse — Aug 12, 2026",
+      "date": "August 12, 2026",
+      "location": "Iceland · Spain · Greenland",
+      "description": "The once-a-decade trip to totality. Best viewing spots, weather contingencies, accommodation that gets booked out 18 months ahead."
+    },
+    {
+      "title": "Ultra Europe 2026",
+      "date": "Jul 10 – 12, 2026",
+      "location": "Split, Croatia",
+      "description": "Three days on the Adriatic. Hotel vs Airbnb, festival pass logistics, and side trips around Dalmatia — for the squad that wants more than just the main stage."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "copyright": "保留所有权利。",
+  "privacyPolicy": "隐私政策",
+  "termsOfService": "服务条款",
+  "cookiePolicy": "Cookie 政策",
+  "columns": {
+    "features": {
+      "title": "功能",
+      "planning": "规划（手动或 AI）",
+      "polls": "团体投票",
+      "collaboration": "协作",
+      "discovery": "发现",
+      "itinerary": "行程",
+      "budget": "共享预算",
+      "packing": "打包清单",
+      "transport": "交通",
+      "memories": "回忆"
+    },
+    "company": {
+      "title": "公司",
+      "about": "关于",
+      "partnership": "合作"
+    },
+    "useCases": {
+      "title": "使用场景",
+      "friends": "与好友的旅行",
+      "bachelorette": "单身派对 / EVJF",
+      "birthday": "生日旅行",
+      "family": "家庭出游",
+      "roadTrip": "公路旅行",
+      "teamBuilding": "团队建设",
+      "school": "学校出游"
+    },
+    "resources": {
+      "title": "资源",
+      "guidePlanTrip": "指南：规划团体旅行",
+      "destinations": "目的地",
+      "travelGuides": "旅行指南",
+      "appComparison": "应用对比",
+      "events2026": "2026 活动 →"
+    }
+  },
+  "followUs": "关注我们",
+  "newsletter": {
+    "title": "获取每周旅行灵感",
+    "description": "贴士、隐藏好去处和出行妙招，直送你的收件箱。",
+    "thanks": "感谢订阅！",
+    "emailPlaceholder": "你的邮箱",
+    "subscribe": "订阅"
+  },
+  "chooseLanguage": "选择语言"
+}

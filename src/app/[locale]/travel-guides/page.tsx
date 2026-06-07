@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -33,56 +33,28 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-const indexContent = {
-  en: {
-    eyebrow: "Travel guides",
-    title: "Country guides,\nbuilt to plan from.",
-    intro:
-      "Opinionated, on-the-ground country guides: where to go, when to go, what to eat, honest budget, cultural do's and don'ts. Pick a country, build the trip with your group in WePlanify.",
-    metaTitle:
-      "Travel Guides — Country-by-Country Itineraries & Tips | WePlanify",
-    metaDescription:
-      "Real travel guides for every country we cover: best season, must-see places, regional food, honest 2026 budgets, cultural tips. Built for planning real trips, not Pinterest boards.",
-    cta: "Start a trip",
-    seeGuide: "Read the guide →",
-  },
-  fr: {
-    eyebrow: "Guides voyage",
-    title: "Des guides pays,\npour planifier vraiment.",
-    intro:
-      "Des guides pays sans bla-bla : où aller, quand y aller, quoi manger, budget honnête, codes culturels. Choisissez un pays, construisez le voyage avec votre groupe dans WePlanify.",
-    metaTitle:
-      "Guides voyage — Itinéraires et conseils pays par pays | WePlanify",
-    metaDescription:
-      "De vrais guides voyage pays par pays : meilleure saison, incontournables, cuisine régionale, budget 2026 honnête, codes culturels. Pensé pour planifier de vrais voyages, pas des moodboards.",
-    cta: "Commencer un voyage",
-    seeGuide: "Lire le guide →",
-  },
-};
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const loc: Locale = locale === "fr" ? "fr" : "en";
-  const c = indexContent[loc];
+  const t = await getTranslations({ locale, namespace: "travelGuidesIndex" });
   const baseMetadata = await generateMetadataFromSanity(locale, PATHNAME);
   const currentUrl = `${SITE_URL}/${locale}${PATHNAME}`;
 
   return {
     ...baseMetadata,
-    title: c.metaTitle,
-    description: c.metaDescription,
+    title: t("meta.title"),
+    description: t("meta.description"),
     authors: [{ name: "WePlanify" }],
     openGraph: {
       ...baseMetadata.openGraph,
-      title: c.metaTitle,
-      description: c.metaDescription,
+      title: t("meta.title"),
+      description: t("meta.description"),
       url: currentUrl,
       locale: locale === "fr" ? "fr_FR" : "en_US",
     },
     twitter: {
       ...baseMetadata.twitter,
-      title: c.metaTitle,
-      description: c.metaDescription,
+      title: t("meta.title"),
+      description: t("meta.description"),
     },
     alternates: {
       canonical: currentUrl,
@@ -100,7 +72,7 @@ export default async function TravelGuidesIndexPage({ params }: Props) {
   setRequestLocale(locale);
 
   const loc: Locale = locale === "fr" ? "fr" : "en";
-  const c = indexContent[loc];
+  const t = await getTranslations("travelGuidesIndex");
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -141,13 +113,13 @@ export default async function TravelGuidesIndexPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("breadcrumb.home"),
         item: `${SITE_URL}/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: c.eyebrow,
+        name: t("eyebrow"),
         item: `${SITE_URL}/${locale}${PATHNAME}`,
       },
     ],
@@ -169,26 +141,26 @@ export default async function TravelGuidesIndexPage({ params }: Props) {
               <Breadcrumb
                 items={[
                   {
-                    label: locale === "fr" ? "Accueil" : "Home",
+                    label: t("breadcrumb.home"),
                     href: `/${locale}`,
                   },
-                  { label: c.eyebrow },
+                  { label: t("eyebrow") },
                 ]}
               />
             </div>
 
             <span className="inline-block bg-[#EEF899] text-[#001E13] px-5 py-1.5 rounded-full text-sm lg:text-base font-nanum-pen mb-5">
-              {c.eyebrow}
+              {t("eyebrow")}
             </span>
             <h1 className="text-4xl lg:text-6xl xl:text-7xl font-londrina-solid text-[#001E13] leading-[1.05] mb-6 whitespace-pre-line">
-              {c.title}
+              {t("title")}
             </h1>
             <p className="text-base lg:text-lg font-karla text-[#001E13]/75 leading-relaxed max-w-2xl mb-8">
-              {c.intro}
+              {t("intro")}
             </p>
             <Link href={signupHref}>
               <PulsatingButton className="font-karla font-bold text-base lg:text-lg px-8 py-3">
-                {c.cta}
+                {t("cta")}
               </PulsatingButton>
             </Link>
           </div>
@@ -233,7 +205,7 @@ export default async function TravelGuidesIndexPage({ params }: Props) {
                               {g.meta.description[loc]}
                             </p>
                             <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-auto">
-                              {c.seeGuide}
+                              {t("seeGuide")}
                             </span>
                           </div>
                         </article>

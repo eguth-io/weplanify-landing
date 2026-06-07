@@ -1,0 +1,24 @@
+{
+  "testimonials": [
+    {
+      "quote": "我用 WePlanify 规划和朋友的旅行已经几周了。界面简单，分配任务超级方便。",
+      "author": "Eva",
+      "authorRole": "热爱旅行的人"
+    },
+    {
+      "quote": "旅途中调整站点很好用。我可以改计划，而不必从头再来一遍。",
+      "author": "Tom",
+      "authorRole": "数字游民"
+    },
+    {
+      "quote": "靠投票，我们 10 分钟就敲定了酒店。",
+      "author": "Lucas",
+      "authorRole": "好友旅行"
+    },
+    {
+      "quote": "我们终于为全家有了一份清晰的行程。",
+      "author": "Isabelle",
+      "authorRole": "家庭出游"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Loader2, MapPin, Utensils, Calendar, RotateCcw } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { trackEvent } from '@/lib/tracking';
 
 type UnsplashPhoto = {
@@ -40,46 +41,6 @@ type TripPreview = {
 
 type Lang = 'en' | 'fr';
 
-type Copy = {
-  affiliateTag: string;
-  h1: string;
-  placeholder: string;
-  submit: string;
-  submitting: string;
-  cta: string;
-  ctaNote: string;
-  retry: string;
-  errorGeneric: string;
-  errorRateLimit: string;
-};
-
-const COPY: Record<Lang, Copy> = {
-  en: {
-    affiliateTag: 'Your turn — what\'s your dream trip?',
-    h1: 'What\'s your dream trip?\nDescribe it, we\'ll turn it into a real plan.',
-    placeholder: 'I want to chill on a Mexican beach with ruins nearby...',
-    submit: 'Imagine it',
-    submitting: 'Crafting your trip...',
-    cta: 'Save & invite friends',
-    ctaNote: 'Free — no card. Invite the group, vote on dates, split the bill.',
-    retry: 'Another pitch',
-    errorGeneric: 'Something went wrong. Please try again.',
-    errorRateLimit: 'Too many tries. Please wait a minute.',
-  },
-  fr: {
-    affiliateTag: 'À toi — quel est ton voyage de rêve ?',
-    h1: 'Quel est ton voyage de rêve ?\nDécris-le, on t\'en fait un vrai plan.',
-    placeholder: 'Je veux chiller sur une plage mexicaine avec des ruines...',
-    submit: 'Imagine-le',
-    submitting: 'On prépare ton voyage...',
-    cta: 'Lancer & inviter mes amis',
-    ctaNote: 'Gratuit — sans carte. Invite la team, votez les dates, partagez l\'addition.',
-    retry: 'Un autre pitch',
-    errorGeneric: 'Une erreur est survenue. Réessaie.',
-    errorRateLimit: 'Trop de tentatives. Attends une minute.',
-  },
-};
-
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://api.weplanify.com';
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.weplanify.com';
 
@@ -99,24 +60,15 @@ type Bubble = {
   desktopOnly?: boolean;
 };
 
-const BUBBLES: Record<Lang, Bubble[]> = {
-  en: [
-    { text: 'Somewhere warm in March with 4 friends', color: 'lime', x: 6, y: 18, rotate: -4, delay: 0 },
-    { text: 'Honeymoon without the crowds', color: 'cream', x: 78, y: 14, rotate: 3, delay: 0.6 },
-    { text: 'Japan with kids, not exhausting', color: 'orange', x: 82, y: 58, rotate: -2, delay: 1.2, desktopOnly: true },
-    { text: 'Bachelorette in Lisbon, 3 days max', color: 'white', x: 4, y: 62, rotate: 2, delay: 0.3, desktopOnly: true },
-    { text: 'Road trip to see the auroras', color: 'lime', x: 70, y: 80, rotate: -3, delay: 1.6, desktopOnly: true },
-    { text: 'Change of scenery, close by, November', color: 'cream', x: 10, y: 84, rotate: 4, delay: 0.9, desktopOnly: true },
-  ],
-  fr: [
-    { text: 'Un truc chaud en mars avec 4 potes', color: 'lime', x: 6, y: 18, rotate: -4, delay: 0 },
-    { text: 'Honeymoon sans les touristes', color: 'cream', x: 78, y: 14, rotate: 3, delay: 0.6 },
-    { text: 'Japon en famille, sans s\'épuiser', color: 'orange', x: 82, y: 58, rotate: -2, delay: 1.2, desktopOnly: true },
-    { text: 'EVJF à Lisbonne, 3 jours max', color: 'white', x: 4, y: 62, rotate: 2, delay: 0.3, desktopOnly: true },
-    { text: 'Road trip voir les aurores', color: 'lime', x: 70, y: 80, rotate: -3, delay: 1.6, desktopOnly: true },
-    { text: 'Dépaysement en novembre, pas loin', color: 'cream', x: 10, y: 84, rotate: 4, delay: 0.9, desktopOnly: true },
-  ],
-};
+// Layout/animation data for the pitch bubbles; text comes from translations (merged by index).
+const BUBBLE_LAYOUT: Omit<Bubble, 'text'>[] = [
+  { color: 'lime', x: 6, y: 18, rotate: -4, delay: 0 },
+  { color: 'cream', x: 78, y: 14, rotate: 3, delay: 0.6 },
+  { color: 'orange', x: 82, y: 58, rotate: -2, delay: 1.2, desktopOnly: true },
+  { color: 'white', x: 4, y: 62, rotate: 2, delay: 0.3, desktopOnly: true },
+  { color: 'lime', x: 70, y: 80, rotate: -3, delay: 1.6, desktopOnly: true },
+  { color: 'cream', x: 10, y: 84, rotate: 4, delay: 0.9, desktopOnly: true },
+];
 
 const BUBBLE_CLASSES: Record<Bubble['color'], string> = {
   lime: 'bg-[#EEF899] text-[#001E13]',
@@ -139,7 +91,7 @@ interface Props {
 
 export default function HeroPitchWall({ locale = 'en', hero }: Props) {
   const lang: Lang = locale === 'fr' ? 'fr' : 'en';
-  const copy = COPY[lang];
+  const t = useTranslations('heroPitchWall');
 
   const [pitch, setPitchValue] = useState('');
   const [travelMonth, setTravelMonth] = useState<string | null>(null);
@@ -191,7 +143,10 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
     return () => { cancelled = true; };
   }, [lang]);
 
-  const bubbles = useMemo(() => BUBBLES[lang], [lang]);
+  const bubbles = useMemo(() => {
+    const texts = t.raw('bubbles') as string[];
+    return BUBBLE_LAYOUT.map((b, i) => ({ ...b, text: texts[i] }));
+  }, [t]);
 
   const monthOptions = useMemo(() => {
     const now = new Date();
@@ -218,12 +173,12 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
         body: JSON.stringify({ pitch: trimmed, locale: lang, travel_month: travelMonth }),
       });
       if (res.status === 429) {
-        setError(copy.errorRateLimit);
+        setError(t('errorRateLimit'));
         setStatus('error');
         return;
       }
       if (!res.ok) {
-        setError(copy.errorGeneric);
+        setError(t('errorGeneric'));
         setStatus('error');
         return;
       }
@@ -247,7 +202,7 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
       } catch {}
       trackEvent('hero_pitch_success', { destination: preview.destination });
     } catch {
-      setError(copy.errorGeneric);
+      setError(t('errorGeneric'));
       setStatus('error');
     }
   };
@@ -308,7 +263,7 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
                     transition={{ duration: 0.35 }}
                     className="w-full max-w-6xl"
                   >
-                    <LoadingDeck pitch={pitch} travelMonth={travelMonth} lang={lang} months={monthOptions} />
+                    <LoadingDeck pitch={pitch} travelMonth={travelMonth} months={monthOptions} />
                   </motion.div>
                 ) : status !== 'success' ? (
                   <motion.div
@@ -320,7 +275,7 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
                     className="w-full"
                   >
                     <h1 className="text-[#FFFBF5] text-3xl lg:text-5xl xl:text-[56px] font-londrina-solid leading-[1.05] whitespace-pre-line mb-6 drop-shadow-[0_2px_20px_rgba(0,0,0,0.35)]">
-                      {copy.h1}
+                      {t('h1')}
                     </h1>
 
                     <form
@@ -334,7 +289,7 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
                         <textarea
                           value={pitch}
                           onChange={(e) => setPitchValue(e.target.value)}
-                          placeholder={copy.placeholder}
+                          placeholder={t('placeholder')}
                           maxLength={500}
                           rows={3}
                           className="w-full resize-none rounded-[28px] lg:rounded-[36px] px-5 pt-5 pb-16 bg-transparent outline-none placeholder-gray-500 text-[#001E13] text-base lg:text-lg font-karla"
@@ -347,12 +302,11 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
                             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-orange hover:bg-orange/90 text-white font-karla font-bold text-sm lg:text-base transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-orange/30"
                           >
                             <Sparkles className="w-4 h-4" />
-                            {copy.submit}
+                            {t('submit')}
                           </button>
                         </div>
                       </div>
                       <MonthPicker
-                        lang={lang}
                         value={travelMonth}
                         onChange={setTravelMonth}
                         months={monthOptions}
@@ -377,7 +331,7 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
                                   onClick={() => {
                                     setPitchValue((prev) => {
                                       const trimmed = prev.trim();
-                                      const connector = lang === 'fr' ? ' — plutôt ' : ' — more like ';
+                                      const connector = t('connector');
                                       return trimmed ? `${trimmed}${connector}${s}` : s;
                                     });
                                     setClarification(null);
@@ -406,8 +360,6 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
                       <PolaroidDeckCard
                         preview={preview}
                         token={token}
-                        copy={copy}
-                        lang={lang}
                         onReset={reset}
                       />
                     )}
@@ -423,20 +375,19 @@ export default function HeroPitchWall({ locale = 'en', hero }: Props) {
 }
 
 function MonthPicker({
-  lang,
   value,
   onChange,
   months,
   disabled,
 }: {
-  lang: Lang;
   value: string | null;
   onChange: (v: string | null) => void;
   months: { value: string; label: string }[];
   disabled: boolean;
 }) {
-  const label = lang === 'fr' ? 'Quand ?' : 'When?';
-  const unknown = lang === 'fr' ? 'Je sais pas' : 'Not sure';
+  const t = useTranslations('heroPitchWall');
+  const label = t('monthPicker.label');
+  const unknown = t('monthPicker.unknown');
 
   const base =
     'flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-karla font-bold transition-colors border';
@@ -474,35 +425,19 @@ function MonthPicker({
   );
 }
 
-const LOADING_STEPS: Record<Lang, string[]> = {
-  en: [
-    'Reading your dream',
-    'Picking the perfect spot',
-    'Snapshotting the landscape',
-    'Uncovering local flavors',
-  ],
-  fr: [
-    'On capte ton rêve',
-    'On trouve le lieu parfait',
-    'On photographie le paysage',
-    'On déniche les spécialités',
-  ],
-};
-
 function LoadingDeck({
   pitch,
   travelMonth,
-  lang,
   months,
 }: {
   pitch: string;
   travelMonth: string | null;
-  lang: Lang;
   months: { value: string; label: string }[];
 }) {
+  const t = useTranslations('heroPitchWall');
   const monthLabel = travelMonth ? months.find((m) => m.value === travelMonth)?.label : null;
-  const overline = lang === 'fr' ? 'On cherche…' : 'Looking for…';
-  const dreamLabel = lang === 'fr' ? 'Ton rêve' : 'Your dream';
+  const overline = t('loading.overline');
+  const dreamLabel = t('loading.dreamLabel');
 
   return (
     <div className="grid lg:grid-cols-[minmax(0,460px)_1fr] gap-8 lg:gap-14 items-center text-left">
@@ -554,7 +489,7 @@ function LoadingDeck({
           </div>
         </div>
 
-        <LoadingSteps lang={lang} />
+        <LoadingSteps />
       </div>
     </div>
   );
@@ -604,8 +539,9 @@ function GhostPolaroid({
   );
 }
 
-function LoadingSteps({ lang }: { lang: Lang }) {
-  const steps = LOADING_STEPS[lang];
+function LoadingSteps() {
+  const t = useTranslations('heroPitchWall');
+  const steps = t.raw('loadingSteps') as string[];
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -709,26 +645,18 @@ function PitchBubble({ bubble, converging }: { bubble: Bubble; converging: boole
   );
 }
 
-const STICKY_TAGS: Record<Lang, string[]> = {
-  en: ['must-see!', 'love this', 'on the list'],
-  fr: ['à voir!', 'coup de cœur', 'à goûter!'],
-};
-
 function PolaroidDeckCard({
   preview,
   token,
-  copy,
-  lang,
   onReset,
 }: {
   preview: TripPreview;
   token: string | null;
-  copy: Copy;
-  lang: Lang;
   onReset: () => void;
 }) {
+  const t = useTranslations('heroPitchWall');
   const signupUrl = token ? `${APP_URL}/register?pitch=${token}` : `${APP_URL}/register`;
-  const tags = STICKY_TAGS[lang];
+  const tags = t.raw('stickyTags') as string[];
 
   const cover = preview.cover;
   const g1 = preview.gallery[0] ?? null;
@@ -809,7 +737,7 @@ function PolaroidDeckCard({
 
       <div className="text-center lg:text-left w-full">
         <div className="font-nanum-pen text-[#EEF899] text-xl lg:text-2xl mb-0">
-          {lang === 'fr' ? 'Et si tu découvrais…' : 'What about…'}
+          {t('whatAbout')}
         </div>
         <h2 className="font-londrina-solid text-[#FFFBF5] text-5xl lg:text-[88px] xl:text-[104px] leading-[0.9] mb-2 drop-shadow-[0_4px_28px_rgba(0,0,0,0.55)] break-words">
           {preview.destination}
@@ -864,7 +792,7 @@ function PolaroidDeckCard({
           ))}
         </div>
         {preview.itinerary && preview.itinerary.length > 1 && (
-          <ItineraryTimeline itinerary={preview.itinerary} lang={lang} />
+          <ItineraryTimeline itinerary={preview.itinerary} />
         )}
         <div className="flex items-center gap-3 lg:gap-4 lg:flex-wrap lg:justify-start justify-center">
           <Link
@@ -873,21 +801,21 @@ function PolaroidDeckCard({
             className="inline-flex flex-1 max-w-[280px] lg:max-w-none lg:flex-none items-center justify-center gap-2 px-6 py-3 rounded-full bg-orange hover:bg-orange/90 text-white font-karla font-bold text-base lg:text-lg transition-colors shadow-xl shadow-orange/40"
             rel="nofollow"
           >
-            {copy.cta}
+            {t('cta')}
             <ArrowRight className="w-4 h-4" />
           </Link>
           <button
             type="button"
             onClick={onReset}
-            aria-label={copy.retry}
+            aria-label={t('retry')}
             className="inline-flex items-center justify-center gap-1.5 text-[#FFFBF5]/90 hover:text-white font-karla font-semibold text-sm lg:underline lg:underline-offset-4 flex-shrink-0"
           >
             <RotateCcw className="w-5 h-5 lg:w-4 lg:h-4" />
-            <span className="hidden lg:inline">{copy.retry}</span>
+            <span className="hidden lg:inline">{t('retry')}</span>
           </button>
         </div>
         <p className="mt-3 font-nanum-pen text-[#FFFBF5]/75 text-base lg:text-lg text-center lg:text-left">
-          {copy.ctaNote}
+          {t('ctaNote')}
         </p>
       </div>
     </div>
@@ -961,10 +889,10 @@ function Polaroid({
   );
 }
 
-function ItineraryTimeline({ itinerary, lang }: { itinerary: ItineraryStop[]; lang: Lang }) {
-  const label = lang === 'fr' ? 'Itinéraire suggéré' : 'An itinerary idea';
-  const nightLabel = (n: number) =>
-    lang === 'fr' ? `${n} ${n > 1 ? 'nuits' : 'nuit'}` : `${n} ${n > 1 ? 'nights' : 'night'}`;
+function ItineraryTimeline({ itinerary }: { itinerary: ItineraryStop[] }) {
+  const t = useTranslations('heroPitchWall');
+  const label = t('itinerary.label');
+  const nightLabel = (n: number) => t('itinerary.nights', { n });
 
   return (
     <motion.div

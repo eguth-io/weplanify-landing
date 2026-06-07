@@ -1,0 +1,107 @@
+{
+  "copy": {
+    "heroTitle": "Organizza un viaggio con 10 amici",
+    "heroTitleHighlight": "senza un solo messaggio WhatsApp",
+    "heroSubtitle": "Modifiche in tempo reale, sondaggi integrati, cronologia chiara. Tutti sulla stessa pagina, letteralmente.",
+    "inviteMore": "Invita altri",
+    "liveLabel": "Live",
+    "fakeTripTitle": "Road Trip Portogallo",
+    "fakeDays": [
+      "Giorno 1 — Lisbona",
+      "Giorno 2 — Sintra",
+      "Giorno 3 — Porto"
+    ],
+    "editingTag": "Marie sta modificando…",
+    "feedTitle": "Non perderti nulla",
+    "feedSubtitle": "Il feed delle attività mostra tutto ciò che succede nel tuo viaggio. Chi ha aggiunto cosa, quando e dove.",
+    "recentActivity": "Attività recente",
+    "activities": [
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "action": "ha aggiunto \"Cena ad Alfama\"",
+        "time": "2 min fa"
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "action": "ha aggiornato l'hotel a Porto",
+        "time": "5 min fa"
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "action": "ha votato per il ristorante",
+        "time": "12 min fa"
+      },
+      {
+        "avatar": "🧑‍💻",
+        "name": "Lucas",
+        "action": "si è unito al viaggio",
+        "time": "1 h fa"
+      }
+    ],
+    "freeNoCard": "Registrazione gratuita. Nessuna carta di credito richiesta."
+  },
+  "page": {
+    "heroBadge": "3 persone stanno modificando in questo momento",
+    "heroTitle": "Pianifica un viaggio con 10 amici",
+    "heroTitleHighlight": "senza un solo messaggio WhatsApp",
+    "heroSubtitle": "Modifiche in tempo reale, sondaggi integrati, cronologia chiara. Tutti sulla stessa pagina, letteralmente.",
+    "heroCta": "Invita il mio primo amico - Gratis",
+    "heroCtaSubtext": "45 sec per invitare il tuo gruppo",
+    "socialProofText": "12.000+ viaggi pianificati",
+    "featuresTitle": "Collaborazione in tempo reale",
+    "features": [
+      {
+        "title": "Tempo reale",
+        "description": "Le modifiche appaiono istantaneamente per tutti i partecipanti al viaggio."
+      },
+      {
+        "title": "Commenti",
+        "description": "Discuti ogni elemento direttamente nell'app, senza bisogno di un gruppo WhatsApp."
+      },
+      {
+        "title": "Permessi",
+        "description": "Stabilisci chi può modificare e chi può solo visualizzare il viaggio."
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Come invito gli amici a collaborare a un viaggio?",
+        "answer": "Condividi un link di invito o invia un invito via email direttamente dall'app. I tuoi amici possono unirsi al viaggio con un clic, anche senza un account Weplanify."
+      },
+      {
+        "question": "Le modifiche sono davvero sincronizzate in tempo reale?",
+        "answer": "Sì, tutte le modifiche vengono sincronizzate istantaneamente grazie alla tecnologia WebSocket. Vedi le modifiche dei tuoi compagni di viaggio comparire in diretta."
+      },
+      {
+        "question": "Posso limitare i permessi di modifica?",
+        "answer": "Assolutamente. Il creatore del viaggio può impostare i ruoli: editor (accesso completo), collaboratore (può suggerire modifiche) o spettatore (sola lettura)."
+      },
+      {
+        "question": "C'è un limite al numero di partecipanti?",
+        "answer": "Nessun limite tecnico. Abbiamo viaggi con oltre 50 partecipanti che funzionano senza problemi."
+      },
+      {
+        "question": "Come gestite i conflitti di modifica?",
+        "answer": "Weplanify gestisce i conflitti automaticamente. Se due persone modificano lo stesso elemento, il sistema unisce le modifiche in modo intelligente."
+      }
+    ],
+    "ctaTitle": "Basta gruppi WhatsApp infiniti",
+    "ctaSubtitle": "Tutti sulla stessa pagina, in tempo reale",
+    "ctaButton": "Invita i miei amici ora",
+    "seoTitle": "Collaborazione in Tempo Reale - Pianificazione Viaggi di Gruppo | Weplanify",
+    "seoDescription": "Pianifica il tuo viaggio di gruppo con amici e familiari. Modifiche in tempo reale, conversazioni integrate e sincronizzazione perfetta per un'organizzazione collaborativa senza intoppi.",
+    "stats": [
+      {
+        "value": "12.000+",
+        "label": "viaggi pianificati"
+      },
+      {
+        "value": "45 sec",
+        "label": "per invitare il tuo gruppo"
+      }
+    ]
+  }
+}

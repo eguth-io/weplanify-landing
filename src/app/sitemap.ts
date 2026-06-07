@@ -4,8 +4,10 @@ import { seoSettingsQuery } from "@/sanity/lib/query";
 import { SeoSettings } from "@/sanity/lib/type";
 import { destinations } from "@/lib/destinations/data";
 import { countryGuides } from "@/lib/travel-guides/data";
+import { routing } from "@/i18n/routing";
 
-const locales = ["en", "fr"] as const;
+// Derive sitemap locales from the routing config so adding a language is one place.
+const locales = routing.locales;
 const featureSlugs = [
   "planning",
   "budget",
@@ -118,9 +120,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: "monthly",
         priority: 0.85,
       });
+      // Destination/guide content (and their localized slugs) only exist in en/fr;
+      // other locales render the en fallback, so they reuse the en slug.
+      const contentLocale = locale === "fr" ? "fr" : "en";
       for (const d of destinations) {
         entries.push({
-          url: `${siteUrl}/${locale}/destinations/${d.slug[locale]}`,
+          url: `${siteUrl}/${locale}/destinations/${d.slug[contentLocale]}`,
           lastModified: new Date(),
           changeFrequency: "monthly",
           priority: 0.85,
@@ -136,9 +141,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: "monthly",
         priority: 0.85,
       });
+      const contentLocale = locale === "fr" ? "fr" : "en";
       for (const g of countryGuides) {
         entries.push({
-          url: `${siteUrl}/${locale}/travel-guides/${g.slug[locale]}`,
+          url: `${siteUrl}/${locale}/travel-guides/${g.slug[contentLocale]}`,
           lastModified: new Date(),
           changeFrequency: "monthly",
           priority: 0.85,

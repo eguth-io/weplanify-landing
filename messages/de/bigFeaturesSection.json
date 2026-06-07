@@ -1,0 +1,38 @@
+{
+  "title": "Alles, was du für die Planung einer Gruppenreise brauchst",
+  "slides": [
+    {
+      "title": "Entdecke und schlage der Gruppe Ideen vor",
+      "description": "Finde Aktivitäten, Restaurants, Unterkünfte und Transport direkt in der App. Füge sie zur Reiseroute hinzu oder stelle sie der Gruppe zur Abstimmung vor.",
+      "ctaLabel": "Reiseziele entdecken",
+      "stats": [
+        {
+          "value": "190+",
+          "label": "mögliche Reiseziele"
+        }
+      ]
+    },
+    {
+      "title": "Entscheidet gemeinsam mit Umfragen",
+      "description": "Wo übernachten? Was unternehmen? Wann losfahren? Erstelle eine Umfrage, alle stimmen ab, die Entscheidung steht. Die Gruppe kommt voran, die Reise auch.",
+      "ctaLabel": "Umfrage starten",
+      "stats": [
+        {
+          "value": "1000+",
+          "label": "Umfragen pro Tag"
+        }
+      ]
+    },
+    {
+      "title": "Eine klare Reiseroute, Tag für Tag",
+      "description": "Jeder Reisetag ist durchgeplant: was unternehmen, wo essen, wo schlafen, wie sich fortbewegen. Alles ist für alle klar.",
+      "ctaLabel": "Meine Reiseroute erstellen",
+      "stats": [
+        {
+          "value": "10+",
+          "label": "Partner"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Ultra Europe 2026: planificador de viaje — Split, vuelos, entradas",
+    "description": "Todo para Ultra Europe 2026 (10–12 de julio, Split, Croacia): entradas y paquetes Destination Ultra, vuelos directos desde París, dónde alojarse, la semana de islas Hvar/Brač/Vis y presupuesto de grupo compartido."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Planificador de viaje a Ultra Europe 2026"
+  },
+  "hero": {
+    "tag": "Guía de festival y planificador de viaje · Split 2026",
+    "title": "Ultra Europe 2026: tu planificador de viaje a Split",
+    "readTime": "9 min de lectura",
+    "ctaButton": "Planificar nuestro viaje a Ultra Europe",
+    "ctaNote": "Gratis · hecho para grupos · EN/FR",
+    "imageAlt": "Ultra Europe 2026 — amigos en una fiesta de piscina infinita con el escenario EDM y el Adriático croata de fondo"
+  },
+  "facts": {
+    "heading": "Datos del festival",
+    "datesLabel": "Fechas",
+    "datesValue": "10–12 jul",
+    "siteLabel": "Recinto",
+    "stagesLabel": "Escenarios",
+    "stagesValue": "Main · RESISTANCE · Arcadia · UMF Radio",
+    "capacityLabel": "Aforo",
+    "capacityPerDay": "por día"
+  },
+  "stakes": {
+    "p1": "Tres noches de EDM en una ciudad romana de 200.000 habitantes, y luego una semana de fiestas en barco entre cuatro islas del Adriático. Ultra Europe cae en el verano croata en su punto álgido de calor (30°C de media) y de densidad turística — Split, Hvar y Brač triplican en conjunto su población a lo largo de julio. El cartel de la Fase 1 es el más amplio en años: Carl Cox y Sasha & John Digweed para los puristas del techno, Eric Prydz y Boris Brejcha para la vertiente melódica, DJ Snake y Major Lazer para las horas punta más comerciales, ILLENIUM y Excision para el bass, Hardwell y Armin van Buuren para las franjas de leyenda del trance, además de una sesión de Sebastian Ingrosso B2B Steve Angello que anticipa un momento extraoficial de Swedish House Mafia. Por debajo del cartel, el viaje en sí es el problema más difícil — vuelo desde París a medianoche, apartamento en Split compartido con cinco colegas, ferry a Hvar a las 7 de la mañana con resaca, última lanzadera desde Park Mladeži a las 5:30 de la mañana.",
+    "p2": "WePlanify es el centro de mando compartido y gratuito para los fans que van a Split — vuelos, apartamento en Split, fondo de Aircash, noches de festival y la semana de islas opcional en un solo lugar, en inglés o francés."
+  },
+  "toc": {
+    "title": "En esta página",
+    "lineup": "El cartel de 2026",
+    "tickets": "Entradas, precios y Destination Ultra",
+    "gettingThere": "Cómo llegar a Split",
+    "sleeping": "Dónde dormir en Split",
+    "destinationUltra": "La semana de islas (Brač, Hvar, Vis)",
+    "planning": "Planificar el viaje con el grupo",
+    "budget": "Consejos de presupuesto",
+    "faq": "Preguntas frecuentes"
+  },
+  "lineup": {
+    "title": "El cartel de 2026",
+    "subtitle": "Cuatro escenarios, el espectro más amplio en años. Los nombres por los que vale la pena volar a Split.",
+    "items": [
+      { "stop": "Los anclas del escenario principal", "desc": "Hardwell, Armin van Buuren, DJ Snake, Steve Aoki, Major Lazer, Sebastian Ingrosso B2B Steve Angello. Los pesos pesados de las horas punta del Main Stage que llenan el recinto. La sesión Ingrosso × Angello es el momento por el que todos estarán allí — territorio extraoficial de Swedish House Mafia." },
+      { "stop": "Los pesos pesados del techno de RESISTANCE", "desc": "Carl Cox, Eric Prydz, Sasha & John Digweed, Boris Brejcha, Adriatique, The Martinez Brothers, Miss Monique. La arena techno de Ultra se ha convertido en el cabeza de cartel silencioso del festival — Cox de vuelta, Prydz de nuevo en el circuito croata, Sasha & John Digweed como dúo de leyenda." },
+      { "stop": "Bass y dubstep", "desc": "Excision, ILLENIUM, ISOXO. Las franjas más contundentes en el escenario Arcadia Afterburner, el más ruidoso de los cuatro. ILLENIUM en particular atrae al doble público que viene tanto por lo melódico como por el bass — la franja que no conviene perderse si vas alternando." },
+      { "stop": "House y nombres emergentes", "desc": "John Summit, Marlon Hoffstadt, Vintage Culture, Eli Brown, la toma del sello Hekate de Sara Landry (techno), la toma del sello Dirty Workz (hardstyle). La curva de primera hora de la tarde donde el día realmente empieza — llegar tarde significa quemar tu mejor momento en la franja equivocada." },
+      { "stop": "La forma del programa", "desc": "El horario del festival va del viernes de 19:00 a 05:00, el sábado y el domingo de 20:00 a 05:00. Los cuatro escenarios se solapan mucho — los choques son constantes. Comparte el programa dentro del grupo pronto, especialmente en torno a las ventanas de conflicto de Cox / Prydz / Ingrosso." }
+    ]
+  },
+  "tickets": {
+    "title": "Entradas, precios y Destination Ultra",
+    "subtitle": "Tres niveles, dos formatos — fin de semana de festival o la semana de islas completa. El Cruise Tier 1 está agotado, el resto todavía se puede reservar en el portal oficial.",
+    "card1": {
+      "tag": "Fin de semana de festival",
+      "title": "Abonos de 1 y 3 días",
+      "desc": "GA Fan Pit de 1 día a 149 €, VIP Premium de 1 día a 199 €, VIP Premium de 3 días a 449 €, VIP ULTRA de 1 día a 249 €. Compra solo en ultraeurope.com — los anuncios de reventa se rechazan habitualmente en el escaneo de la puerta."
+    },
+    "card2": {
+      "tag": "Destination Ultra",
+      "title": "Abono de isla de 7 días",
+      "desc": "369 € General Admission, 669 € VIP. Incluye el festival más los eventos paralelos: regata de yates en Brač, Ultra Beach en el resort Amfora de Hvar (~5.000 de aforo) y la fiesta de cierre de RESISTANCE en la isla de Vis. La mejor relación calidad-precio para los fans que vienen de París si puedes permitirte los días extra."
+    },
+    "card3": {
+      "tag": "Paquete de crucero",
+      "title": "Crucero de 7 días (Tier 1 agotado)",
+      "desc": "El Tier 1 a 2.499 € está agotado. El Tier 2 a 2.999 € sigue disponible, todo incluido: camarote, abono de festival, todos los eventos de islas, traslados. La opción premium si quieres cero logística — pero recorta el presupuesto a la mitad."
+    }
+  },
+  "gettingThere": {
+    "title": "Cómo llegar a Split",
+    "subtitle": "El vuelo directo desde París es la única opción sensata. El tren y el coche no son realistas. Croacia está en Schengen y en la eurozona desde enero de 2023, así que no hay fricciones de frontera ni de moneda desde la UE.",
+    "parisLabel": "Desde París",
+    "parisItems": [
+      "→ Vuelo directo CDG → SPU en ~2h05",
+      "→ Croatia Airlines, easyJet, Air France",
+      "→ ~7 salidas semanales en verano",
+      "→ Tarifas anticipadas 40-80 €, pleno verano 150-300 €",
+      "→ París-Orly también opera servicios directos de temporada",
+      "→ De SPU al centro de Split: ~25 km, ~30 min en taxi o lanzadera"
+    ],
+    "otherLabel": "Otras rutas y visado",
+    "otherTitle": "Lo que necesitas saber",
+    "otherItems": [
+      "→ Tren París → Split: 24h+ vía Múnich/Viena/Zagreb — no realista",
+      "→ En coche: ~1.500 km / ~15h vía Milán-Trieste-Rijeka — solo para un road trip más largo por Dalmacia",
+      "→ Schengen desde el 1 de enero de 2023: sin control de fronteras desde la UE",
+      "→ Euro desde el 1 de enero de 2023: sin cambio de moneda",
+      "→ Reino Unido / EE. UU.: estancia corta Schengen sin visado (90/180)"
+    ]
+  },
+  "sleeping": {
+    "title": "Dónde dormir en Split",
+    "subtitle": "Tres zonas útiles, todas a pie del casco antiguo o del recinto del festival. Muchos hoteles se llenaron hace seis meses — la opción del apartamento es ahora la jugada más inteligente.",
+    "zone1": {
+      "tag": "Zona 1",
+      "title": "Palacio de Diocleciano y casco antiguo",
+      "desc": "A pie de todo (restaurantes, bares, puerto de ferris), la base con más ambiente. Hoteles boutique y apartamentos, precios premium en julio. ~2 km a pie o 5 min en taxi hasta Park Mladeži."
+    },
+    "zone2": {
+      "tag": "Zona 2",
+      "title": "Playa de Bačvice",
+      "desc": "A 10 min a pie del casco antiguo, ~14% por encima de la media de la ciudad de Split. La base natural para las noches de festival — el mar a cinco minutos del apartamento, chiringuitos abiertos hasta tarde, de camino a Park Mladeži."
+    },
+    "zone3": {
+      "tag": "Zona 3",
+      "title": "Apartamento entre el centro y Park Mladeži",
+      "desc": "Calles residenciales a ~2 km del centro, a pie en ambas direcciones. Un apartamento de 3-4 habitaciones repartido entre 4-6 amigos suele superar a las habitaciones de hotel en un 30-50% en julio, y te ahorras la guerra del taxi tras el festival a las 5 de la mañana."
+    }
+  },
+  "midCta": {
+    "title": "¿Solo el festival o la semana de islas completa?",
+    "subtitle": "Lanza la encuesta, cierra el vuelo París-Split y el fondo de Aircash en un solo plan compartido.",
+    "button": "Empezar el plan"
+  },
+  "destinationUltra": {
+    "title": "La semana de islas — Brač, Hvar, Vis",
+    "subtitle": "Lo que separa a Ultra Europe de cualquier otro festival del calendario: la semana de fiestas en barco por el Adriático que rodea al fin de semana principal.",
+    "day5": {
+      "title": "Día 5 — Regata de yates en Brač",
+      "desc": "Salidas de barcos desde el puerto de Split hasta la playa de Zlatni Rat, en Brač — una de las playas más fotografiadas del Mediterráneo. De día, a pleno sol, con pausas para nadar entre sesiones. Alternativas de ferry: Jadrolinija y Krilo conectan Split → Bol (Brač) varias veces al día, reserva con antelación durante la semana de Ultra."
+    },
+    "day6": {
+      "title": "Día 6 — Ultra Beach en Amfora, Hvar",
+      "desc": "El evento paralelo estrella. Ultra Beach toma la piscina del Amfora Grand Beach Resort en Hvar con un aforo de ~5.000 personas a pie de piscina. Fiesta de día que se prolonga hasta el atardecer. El propio pueblo de Hvar está a 10 min a pie del resort — reserva alojamiento allí o quédate en el barco para la vuelta."
+    },
+    "day7": {
+      "title": "Día 7 — Cierre de RESISTANCE en Vis",
+      "desc": "La parada más remota e íntima. Vis es la más lejana de las cuatro islas desde Split — más tranquila, menos desarrollada, la fiesta de cierre solo de techno que pone fin a la semana. Ferry una o dos veces al día, reserva muy pronto. El paquete de crucero Tier 2 gestiona todos los traslados automáticamente."
+    }
+  },
+  "planning": {
+    "title": "Planificar el viaje con el grupo"
+  },
+  "budget": {
+    "title": "Consejos de presupuesto",
+    "p2": "Los precios de los vuelos ya se han movido. El CDG-SPU a 40-80 € en invierno ahora ronda los 120-180 € para las salidas de principios de julio y los 200-300 € más cerca de la fecha. La vuelta del domingo es la franja más cara — una vuelta el lunes o el martes después de los eventos de islas suele salir más barata y encaja de forma natural con Destination Ultra.",
+    "p3": "El alojamiento en Split se ha duplicado más o menos para la semana de Ultra frente a un fin de semana de julio normal. Un apartamento de 3-4 habitaciones entre Bačvice y Park Mladeži, repartido entre 4-6 amigos, suele superar a las habitaciones de hotel en un 30-50% y te mantiene a pie tanto del festival como del puerto de ferris. Muchos apartamentos céntricos se llenaron hace seis meses — amplía la búsqueda a los distritos del este más allá de Bačvice."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Cuándo y dónde es Ultra Europe 2026?", "a": "Del viernes 10 al domingo 12 de julio de 2026 en el Stadion Park Mladeži de Split, Croacia. El recinto del festival acoge a unos 55.000 fans por día sobre una ampliación del estadio de Brodarica, con cuatro escenarios: Main Stage, RESISTANCE, Arcadia Afterburner y UMF Radio. Las puertas abren el viernes a las 19:00 y el sábado/domingo a las 20:00, con espectáculos hasta las 05:00 cada noche." },
+      { "q": "¿Cuál es el precio de una entrada de Ultra Europe 2026?", "a": "Precios oficiales de 2026 a través de la plataforma LIVE IT: General Admission Fan Pit de 1 día a 149 €, VIP Premium de 1 día a 199 €, VIP Premium de 3 días a 449 €, VIP ULTRA de 1 día a 249 €, y el abono Destination Ultra de 7 días en General Admission (que incluye el festival más las fiestas de islas en Brač, Hvar y Vis) a 369 €. El nivel VIP de 7 días está a 669 €. El paquete oficial de crucero de 7 días — Tier 1 agotado a 2.499 € — está ahora a 2.999 € para el Tier 2. Compra solo a través de ultraeurope.com; los anuncios de reventa en Telegram o Vinted conllevan riesgo de rechazo en la puerta." },
+      { "q": "¿Qué es la semana Destination Ultra?", "a": "Destination Ultra es la semana de eventos paralelos característica de Ultra Europe en torno al festival principal. El formato (de ediciones anteriores): una fiesta de apertura el Día 1 en Split, tres noches de festival en Park Mladeži (Días 2-4), una regata de yates a la playa de Zlatni Rat en Brač (Día 5), Ultra Beach en el resort Amfora de Hvar (Día 6, ~5.000 de aforo) y una fiesta de cierre de RESISTANCE en la isla de Vis (Día 7). El calendario exacto de 2026 en torno al 7-13 de julio está sin confirmar en el momento de escribir esto — consulta el sitio oficial antes de reservar los ferris." },
+      { "q": "¿Cómo llego a Split desde París?", "a": "Los vuelos directos de París CDG a Split (SPU) duran unas 2h05, operados por Croatia Airlines, easyJet y Air France con alrededor de siete salidas semanales en verano. Las tarifas anticipadas empiezan en 40-80 €; más cerca del festival, espera 150-300 €. París-Orly también opera servicios directos de temporada. El viaje en coche es de ~1.500 km / 15h vía Milán-Trieste-Rijeka y solo tiene sentido si planeas un road trip más largo por la costa de Dalmacia. La ruta en tren vía Múnich y Zagreb supera las 24 horas — no es realista." },
+      { "q": "¿Dónde debería alojarme en Split?", "a": "Tres zonas útiles. El Palacio de Diocleciano y el centro del casco antiguo, a pie de todo (hoteles boutique y apartamentos, precios premium en julio). La zona de la playa de Bačvice, a ~10 minutos a pie del casco antiguo, ~14% por encima de la media de la ciudad — la base natural para las noches de festival. Y las calles residenciales entre el centro y Park Mladeži (el recinto del festival), a ~2 km a pie. La ciudad de Split promedia unos 110-120 €/noche en julio; un 4 estrellas empieza en ~250+ €, un 5 estrellas en 900+ €. Muchos hoteles se llenaron hace 6+ meses — los alquileres de apartamentos repartidos entre 4-6 amigos suelen superar a las habitaciones de hotel en un 30-50%." },
+      { "q": "¿Cómo funciona el sistema cashless Aircash?", "a": "Ultra Europe usa las pulseras Aircash como pago principal in situ. Recarga la pulsera a través de la app de Aircash o con tarjeta antes de llegar para saltarte las colas en el recinto. Los principales puestos de pago también aceptan tarjetas. No se acepta efectivo dentro del recinto del festival. Recarga menos de lo que crees que necesitas el primer día — las recargas extra a mitad de festival son rápidas, pero los reembolsos de saldo no gastado se gestionan mediante una reclamación manual tras el festival." },
+      { "q": "¿Cómo se organiza un viaje a Ultra Europe con un grupo de amigos?", "a": "Las entradas y los paquetes son individuales — déjalos fuera del bote común. El bote común es para el vuelo París-Split, el alojamiento en Split, los billetes de ferry si os extendéis a las islas, los taxis hacia y desde Park Mladeži, los restaurantes del casco antiguo y el fondo de Aircash in situ. Fija categorías desde el primer día para que las cuentas no se derrumben de camino a casa. WePlanify mantiene cada categoría limpia a lo largo de los días de festival y la semana de islas opcional, y rota quién adelanta cada gasto." }
+    ]
+  },
+  "discover": {
+    "title": "Descubre más",
+    "tomorrowland": { "title": "Planificador de viaje a Tomorrowland 2026", "desc": "Dos fines de semana en Boom, Bélgica.", "cta": "Leer más →" },
+    "hellfest": { "title": "Planificador de viaje al Hellfest 2026", "desc": "Cuatro días de metal en Clisson, Francia.", "cta": "Leer más →" },
+    "eclipse": { "title": "Eclipse solar 12 ago 2026", "desc": "España, Islandia o crucero — el eclipse de agosto.", "cta": "Leer más →" },
+    "tripWithFriends": { "title": "Viaje con amigos", "desc": "Planifica cualquier viaje en grupo sin esfuerzo.", "cta": "Leer más →" }
+  },
+  "cta": {
+    "title": "Construye tu viaje a Ultra Europe",
+    "subtitle": "Vuelo París-Split, apartamento en Split, fondo de Aircash, noches de festival, semana de islas opcional — un plan, todo tu grupo en la misma página.",
+    "button": "Preparar el fondo de Aircash + el apartamento en Split"
+  },
+  "jsonld": {
+    "eventDescription": "Ultra Europe 2026, el festival de música electrónica de tres días en el Stadion Park Mladeži de Split, Croacia, del 10 al 12 de julio de 2026. Cuatro escenarios, ~55.000 fans por día, con Carl Cox, Eric Prydz, Hardwell, Armin van Buuren, DJ Snake, John Summit, ILLENIUM, Major Lazer y Steve Aoki como cabezas de cartel.",
+    "articleHeadline": "Ultra Europe 2026: planificador de viaje a Split, Croacia",
+    "howToName": "Cómo planificar un viaje a Ultra Europe 2026 a Split",
+    "howToDescription": "A dos meses vista, así es como cerrar el viaje: elige solo festival frente a la semana Destination Ultra, reserva los vuelos y el alojamiento en Split antes de la próxima subida, recarga Aircash y planifica las cuatro curvas de energía de día/noche.",
+    "howToSteps": [
+      { "name": "Solo festival o la semana Destination Ultra completa — haz una encuesta al grupo", "text": "Tres días de festival frente a siete días con las fiestas de islas de Brač/Hvar/Vis es un viaje muy distinto en presupuesto, logística y aguante. Lanza una encuesta rápida pronto para reservar los vuelos correctos (vuelta el domingo frente al martes siguiente) y el alojamiento adecuado (solo Split frente a Split + salto de islas)." },
+      { "name": "Reserva los vuelos directos París-Split y el alojamiento en Split antes de la próxima subida", "text": "El directo CDG-SPU dura ~2h05 con Croatia Airlines, easyJet y Air France. Las tarifas anticipadas eran de 40-80 €, el pleno verano empuja hasta los 150-300 €. Cierra una ida y una vuelta para todo el grupo, más un apartamento en Split entre el casco antiguo y Park Mladeži a pie de ambos." },
+      { "name": "Recarga Aircash en línea y fija un presupuesto compartido", "text": "Las entradas y los paquetes siguen siendo individuales. Todo lo demás (vuelo París-Split, apartamento en Split, ferris a Hvar/Brač si os extendéis, taxis, cenas en el casco antiguo, fondo de Aircash) va a un bote común con categorías. Recarga Aircash a través de la app para saltarte la cola del recinto." },
+      { "name": "Planifica las curvas de energía de día frente a noche", "text": "Ultra es de noche (viernes 19:00–05:00, sáb/dom 20:00–05:00), Destination Ultra es de día (regata de yates, fiestas de playa). Julio en Split está a 30°C con sol fuerte — bloquea las paradas diurnas con sombra, agua y protector solar, y luego echa una siesta antes del festival. Comparte el punto de encuentro por escenario con antelación; la red se colapsa cuando 55.000 personas llegan a la vez." }
+    ]
+  }
+}

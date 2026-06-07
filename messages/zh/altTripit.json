@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "TripIt 替代方案：免费团体旅行规划工具（2026）| WePlanify",
+    "description": "在找一款为团体旅行打造的 TripIt 替代方案？WePlanify 新增了实时协作、共享投票、团体预算和行程 —— 免费、双语（英语/法语）。"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "alternatives": "替代方案"
+  },
+  "heroTitle": "WePlanify 对比 TripIt",
+  "heroSubtitle": "最好用的团体旅行组织工具？（2026）",
+  "heroIntro": "TripIt 和 WePlanify 都能帮你规划旅行，但它们解决的是截然不同的问题。TripIt 把订单确认整理成个人行程。WePlanify 则从头开始为团体协作而打造。以下是两者的对比。",
+  "verdictTitle": "一句话总结",
+  "verdict": "TripIt 专注于整理旅行确认信息和个人行程。WePlanify 为团体协作而生 —— 投票、共享预算、一起规划。TripIt 以个人为先，WePlanify 以团体为先。",
+  "comparisonTitle": "逐项功能对比",
+  "featureLabel": "功能",
+  "limited": "仅共享查看",
+  "core": "核心功能",
+  "pro": "Pro 版（每年 49 美元）",
+  "freemium": "免费增值（Pro 版每年 49 美元）",
+  "webApp": "网页应用",
+  "rows": [
+    {
+      "key": "collab_itinerary",
+      "label": "协作行程",
+      "weplanify": true,
+      "tripit": "limited"
+    },
+    {
+      "key": "polls",
+      "label": "团体投票",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "budget",
+      "label": "共享预算追踪",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "booking_import",
+      "label": "订单导入（邮件）",
+      "weplanify": false,
+      "tripit": "core"
+    },
+    {
+      "key": "packing",
+      "label": "打包清单",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "flight_alerts",
+      "label": "机场 / 航班提醒",
+      "weplanify": false,
+      "tripit": "pro"
+    },
+    {
+      "key": "discovery",
+      "label": "活动发现",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "free",
+      "label": "免费",
+      "weplanify": true,
+      "tripit": "freemium"
+    },
+    {
+      "key": "french",
+      "label": "法语",
+      "weplanify": true,
+      "tripit": false
+    },
+    {
+      "key": "mobile",
+      "label": "手机应用",
+      "weplanify": "web_app",
+      "tripit": true
+    },
+    {
+      "key": "realtime",
+      "label": "实时协作",
+      "weplanify": true,
+      "tripit": false
+    }
+  ],
+  "midCtaLink": "免费试用 WePlanify →",
+  "tripitShinesTitle": "TripIt 的亮点",
+  "tripitShinesPoints": [
+    {
+      "title": "自动导入订单",
+      "desc": "转发你的确认邮件，TripIt 就会自动搭建你的行程。航班、酒店、租车 —— 全部整理在一条时间线上。"
+    },
+    {
+      "title": "航班和机场提醒",
+      "desc": "TripIt Pro 会发送登机口变更、延误通知和备选航班建议。对需要实时更新的常旅客很有用。"
+    },
+    {
+      "title": "带离线访问的手机应用",
+      "desc": "TripIt 提供原生手机应用，可离线查看行程，在没有流量的国际旅行中很有用。"
+    }
+  ],
+  "weplanifyWinsTitle": "WePlanify 的优势",
+  "weplanifyWinsPoints": [
+    {
+      "title": "真正的团体协作",
+      "desc": "团队中每个人都能实时添加目的地、推荐活动并编辑行程。TripIt 只能让你分享一个只读视图。"
+    },
+    {
+      "title": "投票和表决",
+      "desc": "在巴塞罗那和里斯本之间拿不定主意？发起一次投票，让团队来定。TripIt 没有任何投票功能。"
+    },
+    {
+      "title": "共享预算追踪",
+      "desc": "追踪团体花费、分摊费用，让每个人在财务上步调一致。TripIt 不追踪预算。"
+    },
+    {
+      "title": "活动发现",
+      "desc": "直接在 WePlanify 内浏览并添加活动、餐厅和体验。TripIt 专注于事务，而非发现。"
+    },
+    {
+      "title": "免费且双语",
+      "desc": "WePlanify 完全免费，且提供英语和法语。TripIt 最实用的功能每年收费 49 美元。"
+    }
+  ],
+  "whoShouldTitle": "谁该选哪一个？",
+  "whoTripit": "如果你是独自出行的商务旅客，想自动整理航班确认、获取登机口变更提醒，并保留一份可离线访问的个人行程，那就选 TripIt。",
+  "whoWeplanify": "如果你正和好友或家人规划一场旅行，需要所有人协作处理行程、对目的地投票并追踪共享花费 —— 而且全部免费 —— 那就选 WePlanify。",
+  "faqTitle": "常见问题",
+  "faqs": [
+    {
+      "q": "为什么要从 TripIt 换到 WePlanify？",
+      "a": "TripIt 是为管理订单的个人旅行者设计的。它不支持团体投票、共享预算、协作打包清单或实时团体编辑。如果你是和别人一起规划，WePlanify 提供了 TripIt 所缺的全部协调工具 —— 完全免费。"
+    },
+    {
+      "q": "对团体旅行来说，TripIt 缺少什么？",
+      "a": "TripIt 不提供团体投票、共享费用追踪、协作行程编辑、打包清单或活动发现。它的分享仅限于只读视图。WePlanify 则完全围绕团体协作而打造。"
+    },
+    {
+      "q": "WePlanify 真的免费吗？",
+      "a": "是的。所有核心功能 —— 协作行程、投票、预算追踪、打包清单和活动发现 —— 都免费，没有试用限制或隐藏付费墙。而 TripIt 的航班提醒等最实用功能每年收费 49 美元。"
+    }
+  ],
+  "ctaTitle": "准备好规划下一次团体旅行了吗？",
+  "ctaButton": "免费开始",
+  "crossLinksTitle": "对比其他替代方案",
+  "crossLinks": {
+    "comparison": {
+      "title": "2026 完整对比",
+      "desc": "查看所有替代方案的对比",
+      "cta": "查看对比"
+    },
+    "guide": {
+      "title": "指南：规划团体旅行",
+      "desc": "完整的分步指南",
+      "cta": "阅读指南"
+    }
+  }
+}

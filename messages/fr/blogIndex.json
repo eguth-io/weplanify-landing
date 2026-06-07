@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "Blog — Conseils Voyage de Groupe",
+    "description": "Decouvrez nos articles et conseils pour organiser des voyages de groupe inoubliables. Astuces, destinations et guides pratiques."
+  },
+  "staticPosts": [
+    {
+      "title": "Comment organiser un EVJF inoubliable — guide complet 2026",
+      "excerpt": "Du choix de la destination à la coordination du groupe : tout ce qu'il faut savoir pour organiser un enterrement de vie de jeune fille mémorable, sans stress."
+    },
+    {
+      "title": "Budget voyage de groupe — comment partager les frais sans drama",
+      "excerpt": "Établir un budget réaliste, répartir équitablement, suivre les dépenses en temps réel et solder proprement à la fin du voyage."
+    }
+  ]
+}

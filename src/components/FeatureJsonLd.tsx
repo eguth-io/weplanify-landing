@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 interface FAQItem {
   question: string;
   answer: string;
@@ -20,9 +22,10 @@ export default function FeatureJsonLd({
   slug,
   faqItems,
 }: FeatureJsonLdProps) {
+  const t = useTranslations("featureJsonLd");
   // Canonical, locale-aware URL — must match the page canonical for valid structured data
   const featureUrl = `${SITE_URL}/${locale}/features/${slug}`;
-  const homeLabel = locale === "fr" ? "Accueil" : "Home";
+  const homeLabel = t("homeLabel");
 
   // FAQPage Schema
   const faqSchema = {

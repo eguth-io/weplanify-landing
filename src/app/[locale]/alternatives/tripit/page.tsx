@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -16,6 +16,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+type Translator = Awaited<ReturnType<typeof getTranslations>>;
 
 // ---------------------------------------------------------------------------
 // Static params
@@ -33,41 +35,28 @@ const SITE_URL = "https://www.weplanify.com";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "altTripit" });
   const pathname = "/alternatives/tripit";
   const currentUrl = `${SITE_URL}/${locale}${pathname}`;
 
-  const meta = {
-    en: {
-      title:
-        "TripIt Alternative: Free Group Trip Planner (2026) | WePlanify",
-      description:
-        "Looking for a TripIt alternative built for group travel? WePlanify adds real-time collaboration, shared polls, group budgets and itineraries — free, bilingual (EN/FR).",
-    },
-    fr: {
-      title:
-        "Alternative à TripIt : Voyage de Groupe Collaboratif (2026)",
-      description:
-        "Cherche une alternative à TripIt pour organiser un voyage de groupe ? WePlanify : sondages, budget partagé, itinéraire collaboratif en temps réel. Gratuit, FR/EN.",
-    },
-  };
-
-  const loc = meta[locale as keyof typeof meta] ?? meta.en;
+  const title = t("meta.title");
+  const description = t("meta.description");
 
   return {
-    title: loc.title,
-    description: loc.description,
+    title,
+    description,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       url: currentUrl,
       siteName: "WePlanify",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     twitter: {
       card: "summary_large_image",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     alternates: {
       canonical: currentUrl,
@@ -81,252 +70,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // ---------------------------------------------------------------------------
-// Data
+// Data types
 // ---------------------------------------------------------------------------
 
 type ComparisonRow = {
   key: string;
-  en: string;
-  fr: string;
+  label: string;
   weplanify: string | boolean;
   tripit: string | boolean;
 };
 
-const rows: ComparisonRow[] = [
-  {
-    key: "collab_itinerary",
-    en: "Collaborative itinerary",
-    fr: "Itinéraire collaboratif",
-    weplanify: true,
-    tripit: "limited",
-  },
-  {
-    key: "polls",
-    en: "Group polls / voting",
-    fr: "Sondages / votes de groupe",
-    weplanify: true,
-    tripit: false,
-  },
-  {
-    key: "budget",
-    en: "Shared budget tracker",
-    fr: "Suivi de budget partagé",
-    weplanify: true,
-    tripit: false,
-  },
-  {
-    key: "booking_import",
-    en: "Booking import (email)",
-    fr: "Import de réservations (e-mail)",
-    weplanify: false,
-    tripit: "core",
-  },
-  {
-    key: "packing",
-    en: "Packing lists",
-    fr: "Listes de bagages",
-    weplanify: true,
-    tripit: false,
-  },
-  {
-    key: "flight_alerts",
-    en: "Airport / flight alerts",
-    fr: "Alertes aéroport / vol",
-    weplanify: false,
-    tripit: "pro",
-  },
-  {
-    key: "discovery",
-    en: "Activity discovery",
-    fr: "Découverte d'activités",
-    weplanify: true,
-    tripit: false,
-  },
-  {
-    key: "free",
-    en: "Free",
-    fr: "Gratuit",
-    weplanify: true,
-    tripit: "freemium",
-  },
-  {
-    key: "french",
-    en: "French language",
-    fr: "Disponible en français",
-    weplanify: true,
-    tripit: false,
-  },
-  {
-    key: "mobile",
-    en: "Mobile app",
-    fr: "Application mobile",
-    weplanify: "web_app",
-    tripit: true,
-  },
-  {
-    key: "realtime",
-    en: "Real-time collaboration",
-    fr: "Collaboration en temps réel",
-    weplanify: true,
-    tripit: false,
-  },
-];
+type Point = {
+  title: string;
+  desc: string;
+};
 
-const content = {
-  en: {
-    heroTitle: "WePlanify vs TripIt",
-    heroSubtitle: "Best Group Trip Organizer? (2026)",
-    heroIntro:
-      "TripIt and WePlanify both help you plan trips, but they solve very different problems. TripIt organizes booking confirmations into a personal itinerary. WePlanify is built from the ground up for group collaboration. Here is how they compare.",
-    verdictTitle: "TL;DR",
-    verdict:
-      "TripIt focuses on organizing travel confirmations and personal itineraries. WePlanify is built for group collaboration — polls, shared budgets, and planning together. TripIt is solo-first, WePlanify is group-first.",
-    comparisonTitle: "Feature-by-Feature Comparison",
-    tripitShinesTitle: "Where TripIt Shines",
-    tripitShinesPoints: [
-      {
-        title: "Automatic booking import",
-        desc: "Forward your confirmation emails and TripIt builds your itinerary automatically. Flights, hotels, car rentals — organized in one timeline.",
-      },
-      {
-        title: "Flight and airport alerts",
-        desc: "TripIt Pro sends gate changes, delay notifications, and alternative flight suggestions. Useful for frequent flyers who need real-time updates.",
-      },
-      {
-        title: "Mobile app with offline access",
-        desc: "TripIt offers a native mobile app with offline access to your itinerary, which can be useful when traveling internationally without data.",
-      },
-    ],
-    weplanifyWinsTitle: "Where WePlanify Wins",
-    weplanifyWinsPoints: [
-      {
-        title: "Real group collaboration",
-        desc: "Everyone in the group can add destinations, suggest activities, and edit the itinerary in real time. TripIt only lets you share a read-only view.",
-      },
-      {
-        title: "Polls and voting",
-        desc: "Can not decide between Barcelona and Lisbon? Create a poll and let the group vote. TripIt has no voting feature.",
-      },
-      {
-        title: "Shared budget tracker",
-        desc: "Track group expenses, split costs, and keep everyone on the same page financially. TripIt does not track budgets.",
-      },
-      {
-        title: "Activity discovery",
-        desc: "Browse and add activities, restaurants, and experiences directly inside WePlanify. TripIt focuses on logistics, not discovery.",
-      },
-      {
-        title: "Free and bilingual",
-        desc: "WePlanify is completely free and available in both English and French. TripIt charges $49/year for its most useful features.",
-      },
-    ],
-    whoShouldTitle: "Who Should Choose Which?",
-    whoTripit:
-      "Choose TripIt if you are a solo business traveler who wants to automatically organize flight confirmations, get gate-change alerts, and keep a personal itinerary with offline access.",
-    whoWeplanify:
-      "Choose WePlanify if you are planning a trip with friends or family and need everyone to collaborate on the itinerary, vote on destinations, and track shared expenses — all for free.",
-    faqTitle: "Frequently Asked Questions",
-    faqs: [
-      {
-        q: "Why switch from TripIt to WePlanify?",
-        a: "TripIt is designed for individual travelers managing bookings. It does not support group polls, shared budgets, collaborative packing lists, or real-time group editing. If you are planning with others, WePlanify provides all the coordination tools TripIt lacks — completely free.",
-      },
-      {
-        q: "What does TripIt lack for group trips?",
-        a: "TripIt does not offer group voting, shared expense tracking, collaborative itinerary editing, packing lists, or activity discovery. Its sharing is limited to read-only views. WePlanify is built entirely around group collaboration.",
-      },
-      {
-        q: "Is WePlanify really free?",
-        a: "Yes. All core features — collaborative itinerary, polls, budget tracker, packing lists, and activity discovery — are free with no trial limits or hidden paywalls. TripIt charges $49/year for its most useful features like flight alerts.",
-      },
-    ],
-    ctaTitle: "Ready to plan your next group trip?",
-    ctaButton: "Get started for free",
-    featureLabel: "Feature",
-    limited: "Shared view only",
-    core: "Core feature",
-    pro: "Pro ($49/yr)",
-    freemium: "Freemium ($49/yr Pro)",
-    webApp: "Web app",
-    crossLinksTitle: "Compare Other Alternatives",
-  },
-  fr: {
-    heroTitle: "WePlanify vs TripIt",
-    heroSubtitle: "Meilleur Organisateur de Voyage de Groupe ? (2026)",
-    heroIntro:
-      "TripIt et WePlanify t'aident tous les deux \u00e0 planifier des voyages, mais ils r\u00e9solvent des probl\u00e8mes tr\u00e8s diff\u00e9rents. TripIt organise les confirmations de r\u00e9servation en un itin\u00e9raire personnel. WePlanify est con\u00e7u de A \u00e0 Z pour la collaboration de groupe. Voici comment ils se comparent.",
-    verdictTitle: "En bref",
-    verdict:
-      "TripIt se concentre sur l\u2019organisation des confirmations de voyage et les itin\u00e9raires personnels. WePlanify est con\u00e7u pour la collaboration de groupe \u2014 sondages, budgets partag\u00e9s et planification ensemble. TripIt est orient\u00e9 solo, WePlanify est orient\u00e9 groupe.",
-    comparisonTitle: "Comparatif Fonctionnalité par Fonctionnalité",
-    tripitShinesTitle: "L\u00e0 o\u00f9 TripIt se distingue",
-    tripitShinesPoints: [
-      {
-        title: "Import automatique des r\u00e9servations",
-        desc: "Transf\u00e8re tes e-mails de confirmation et TripIt construit ton itin\u00e9raire automatiquement. Vols, h\u00f4tels, locations de voiture \u2014 organis\u00e9s dans une seule chronologie.",
-      },
-      {
-        title: "Alertes vol et a\u00e9roport",
-        desc: "TripIt Pro envoie les changements de porte, les notifications de retard et les suggestions de vols alternatifs. Utile pour les voyageurs fr\u00e9quents qui ont besoin de mises \u00e0 jour en temps r\u00e9el.",
-      },
-      {
-        title: "Application mobile avec acc\u00e8s hors ligne",
-        desc: "TripIt propose une application mobile native avec acc\u00e8s hors ligne \u00e0 ton itin\u00e9raire, ce qui peut \u00eatre utile lors de voyages internationaux sans donn\u00e9es.",
-      },
-    ],
-    weplanifyWinsTitle: "Là où WePlanify gagne",
-    weplanifyWinsPoints: [
-      {
-        title: "Vraie collaboration de groupe",
-        desc: "Tout le monde dans le groupe peut ajouter des destinations, suggérer des activités et modifier l'itinéraire en temps réel. TripIt ne permet que de partager une vue en lecture seule.",
-      },
-      {
-        title: "Sondages et votes",
-        desc: "Impossible de choisir entre Barcelone et Lisbonne ? Créez un sondage et laissez le groupe voter. TripIt n'a aucune fonction de vote.",
-      },
-      {
-        title: "Suivi de budget partagé",
-        desc: "Suis les dépenses du groupe, partage les coûts et garde tout le monde sur la même page financièrement. TripIt ne suit pas les budgets.",
-      },
-      {
-        title: "Découverte d'activités",
-        desc: "Parcourez et ajoutez des activités, restaurants et expériences directement dans WePlanify. TripIt se concentre sur la logistique, pas la découverte.",
-      },
-      {
-        title: "Gratuit et bilingue",
-        desc: "WePlanify est entièrement gratuit et disponible en anglais et en français. TripIt facture 49 $/an pour ses fonctionnalités les plus utiles.",
-      },
-    ],
-    whoShouldTitle: "Qui devrait choisir quoi ?",
-    whoTripit:
-      "Choisis TripIt si tu es un voyageur d'affaires solo qui veut organiser automatiquement les confirmations de vol, recevoir des alertes de changement de porte et garder un itinéraire personnel avec accès hors ligne.",
-    whoWeplanify:
-      "Choisis WePlanify si tu planifies un voyage entre amis ou en famille et as besoin que tout le monde collabore sur l'itinéraire, vote sur les destinations et suive les dépenses partagées — le tout gratuitement.",
-    faqTitle: "Questions Fréquentes",
-    faqs: [
-      {
-        q: "Pourquoi passer de TripIt \u00e0 WePlanify ?",
-        a: "TripIt est con\u00e7u pour les voyageurs individuels qui g\u00e8rent leurs r\u00e9servations. Il ne propose pas de sondages de groupe, de budgets partag\u00e9s, de listes de bagages collaboratives ni d\u2019\u00e9dition de groupe en temps r\u00e9el. Si tu planifies \u00e0 plusieurs, WePlanify fournit tous les outils de coordination qui manquent \u00e0 TripIt \u2014 enti\u00e8rement gratuitement.",
-      },
-      {
-        q: "Que manque-t-il \u00e0 TripIt pour les voyages de groupe ?",
-        a: "TripIt ne propose pas de votes de groupe, de suivi de d\u00e9penses partag\u00e9es, d\u2019\u00e9dition collaborative d\u2019itin\u00e9raire, de listes de bagages ni de d\u00e9couverte d\u2019activit\u00e9s. Son partage se limite \u00e0 des vues en lecture seule. WePlanify est enti\u00e8rement construit autour de la collaboration de groupe.",
-      },
-      {
-        q: "WePlanify est-il vraiment gratuit ?",
-        a: "Oui. Toutes les fonctionnalit\u00e9s principales \u2014 itin\u00e9raire collaboratif, sondages, suivi de budget, listes de bagages et d\u00e9couverte d\u2019activit\u00e9s \u2014 sont gratuites sans limite d\u2019essai ni mur payant cach\u00e9. TripIt facture 49 $/an pour ses fonctionnalit\u00e9s les plus utiles comme les alertes de vol.",
-      },
-    ],
-    ctaTitle: "Prêt à planifier ton prochain voyage de groupe ?",
-    ctaButton: "Commencer gratuitement",
-    featureLabel: "Fonctionnalité",
-    limited: "Vue partagée uniquement",
-    core: "Fonction principale",
-    pro: "Pro (49 $/an)",
-    freemium: "Freemium (49 $/an Pro)",
-    webApp: "App web",
-    crossLinksTitle: "Comparer d'autres alternatives",
-  },
+type Faq = {
+  q: string;
+  a: string;
 };
 
 // ---------------------------------------------------------------------------
@@ -369,42 +130,41 @@ function CrossIcon() {
 
 function CellValue({
   value,
-  locale,
+  t,
 }: {
   value: string | boolean;
-  locale: string;
+  t: Translator;
 }) {
-  const t = content[locale as keyof typeof content] ?? content.en;
   if (value === true) return <CheckIcon />;
   if (value === false) return <CrossIcon />;
   if (value === "limited")
     return (
       <span className="text-xs font-karla font-semibold text-amber-600 bg-amber-50 rounded-full px-2 py-0.5">
-        {t.limited}
+        {t("limited")}
       </span>
     );
   if (value === "core")
     return (
       <span className="text-xs font-karla font-semibold text-emerald-700 bg-emerald-50 rounded-full px-2 py-0.5">
-        {t.core}
+        {t("core")}
       </span>
     );
   if (value === "pro")
     return (
       <span className="text-xs font-karla font-semibold text-sky-700 bg-sky-50 rounded-full px-2 py-0.5">
-        {t.pro}
+        {t("pro")}
       </span>
     );
   if (value === "freemium")
     return (
       <span className="text-xs font-karla font-semibold text-sky-700 bg-sky-50 rounded-full px-2 py-0.5">
-        {t.freemium}
+        {t("freemium")}
       </span>
     );
   if (value === "web_app")
     return (
       <span className="text-xs font-karla font-semibold text-gray-600 bg-gray-100 rounded-full px-2 py-0.5">
-        {t.webApp}
+        {t("webApp")}
       </span>
     );
   return <span className="text-xs font-karla text-gray-500">{value}</span>;
@@ -418,7 +178,12 @@ export default async function TripItComparisonPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = content[locale as keyof typeof content] ?? content.en;
+  const t = await getTranslations("altTripit");
+
+  const rows = t.raw("rows") as ComparisonRow[];
+  const tripitShinesPoints = t.raw("tripitShinesPoints") as Point[];
+  const weplanifyWinsPoints = t.raw("weplanifyWinsPoints") as Point[];
+  const faqs = t.raw("faqs") as Faq[];
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -452,13 +217,13 @@ export default async function TripItComparisonPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("breadcrumb.home"),
         item: `https://www.weplanify.com/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Comparatif" : "Alternatives",
+        name: t("breadcrumb.alternatives"),
         item: `https://www.weplanify.com/${locale}/alternatives`,
       },
       {
@@ -476,7 +241,7 @@ export default async function TripItComparisonPage({ params }: Props) {
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: t.faqs.map((faq) => ({
+    mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
       acceptedAnswer: {
@@ -507,7 +272,7 @@ export default async function TripItComparisonPage({ params }: Props) {
             <div className="hidden lg:block mb-8">
               <Breadcrumb
                 items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: t("breadcrumb.home"), href: `/${locale}` },
                   { label: "Alternatives", href: `/${locale}/alternatives` },
                   { label: "vs TripIt" },
                 ]}
@@ -516,13 +281,13 @@ export default async function TripItComparisonPage({ params }: Props) {
           </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
-              {t.heroSubtitle}
+              {t("heroSubtitle")}
             </p>
             <h1 className="font-londrina-solid text-[#001E13] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-tight mb-6">
-              {t.heroTitle}
+              {t("heroTitle")}
             </h1>
             <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              {t.heroIntro}
+              {t("heroIntro")}
             </p>
           </div>
         </section>
@@ -534,10 +299,10 @@ export default async function TripItComparisonPage({ params }: Props) {
           <div className="max-w-3xl mx-auto">
             <div className="rounded-2xl border-2 border-[#EEF899] bg-[#EEF899]/20 p-6 lg:p-8">
               <h2 className="font-londrina-solid text-[#001E13] text-xl lg:text-2xl mb-3">
-                {t.verdictTitle}
+                {t("verdictTitle")}
               </h2>
               <p className="font-karla text-[#001E13]/85 text-sm lg:text-base leading-relaxed">
-                {t.verdict}
+                {t("verdict")}
               </p>
             </div>
           </div>
@@ -549,7 +314,7 @@ export default async function TripItComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.comparisonTitle}
+              {t("comparisonTitle")}
             </h2>
 
             {/* ---------- Desktop table ---------- */}
@@ -558,7 +323,7 @@ export default async function TripItComparisonPage({ params }: Props) {
                 <thead>
                   <tr className="bg-[#001E13]">
                     <th className="font-karla font-bold text-[#FFFBF5] px-6 py-4 text-sm min-w-[220px]">
-                      {t.featureLabel}
+                      {t("featureLabel")}
                     </th>
                     <th className="font-karla font-bold text-[#EEF899] text-center px-6 py-4 text-sm min-w-[180px]">
                       WePlanify
@@ -575,13 +340,13 @@ export default async function TripItComparisonPage({ params }: Props) {
                       className={i % 2 === 0 ? "bg-white" : "bg-[#FFFBF5]"}
                     >
                       <td className="font-karla text-sm text-[#001E13] px-6 py-3.5">
-                        {locale === "fr" ? row.fr : row.en}
+                        {row.label}
                       </td>
                       <td className="px-6 py-3.5 text-center bg-emerald-50/40">
-                        <CellValue value={row.weplanify} locale={locale} />
+                        <CellValue value={row.weplanify} t={t} />
                       </td>
                       <td className="px-6 py-3.5 text-center">
-                        <CellValue value={row.tripit} locale={locale} />
+                        <CellValue value={row.tripit} t={t} />
                       </td>
                     </tr>
                   ))}
@@ -617,10 +382,10 @@ export default async function TripItComparisonPage({ params }: Props) {
                         className="flex items-center justify-between text-sm font-karla"
                       >
                         <span className="text-[#001E13]/80">
-                          {locale === "fr" ? row.fr : row.en}
+                          {row.label}
                         </span>
                         <span className="ml-3 shrink-0">
-                          <CellValue value={row[app.field]} locale={locale} />
+                          <CellValue value={row[app.field]} t={t} />
                         </span>
                       </li>
                     ))}
@@ -636,7 +401,7 @@ export default async function TripItComparisonPage({ params }: Props) {
         {/* -------------------------------------------------------------- */}
         <div className="text-center py-8">
           <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="text-[#F6391A] font-karla font-bold hover:underline">
-            {locale === "fr" ? "Essaie WePlanify gratuitement \u2192" : "Try WePlanify free \u2192"}
+            {t("midCtaLink")}
           </Link>
         </div>
 
@@ -646,10 +411,10 @@ export default async function TripItComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.tripitShinesTitle}
+              {t("tripitShinesTitle")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-3">
-              {t.tripitShinesPoints.map((point, i) => (
+              {tripitShinesPoints.map((point, i) => (
                 <article
                   key={i}
                   className="rounded-2xl border border-[#001E13]/10 p-6 bg-[#FFFBF5]"
@@ -672,10 +437,10 @@ export default async function TripItComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-5xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-12">
-              {t.weplanifyWinsTitle}
+              {t("weplanifyWinsTitle")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {t.weplanifyWinsPoints.map((point, i) => (
+              {weplanifyWinsPoints.map((point, i) => (
                 <div
                   key={i}
                   className="rounded-2xl bg-[#001E13] p-6 lg:p-8 text-[#FFFBF5]"
@@ -703,7 +468,7 @@ export default async function TripItComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.whoShouldTitle}
+              {t("whoShouldTitle")}
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="rounded-2xl border border-[#001E13]/10 p-6 lg:p-8 bg-[#FFFBF5]">
@@ -711,7 +476,7 @@ export default async function TripItComparisonPage({ params }: Props) {
                   TripIt
                 </h3>
                 <p className="font-karla text-sm text-[#001E13]/75 leading-relaxed">
-                  {t.whoTripit}
+                  {t("whoTripit")}
                 </p>
               </div>
               <div className="rounded-2xl border-2 border-[#F6391A]/20 p-6 lg:p-8 bg-[#FFFBF5] ring-2 ring-[#F6391A]/10">
@@ -719,7 +484,7 @@ export default async function TripItComparisonPage({ params }: Props) {
                   WePlanify
                 </h3>
                 <p className="font-karla text-sm text-[#001E13]/75 leading-relaxed">
-                  {t.whoWeplanify}
+                  {t("whoWeplanify")}
                 </p>
               </div>
             </div>
@@ -732,10 +497,10 @@ export default async function TripItComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.faqTitle}
+              {t("faqTitle")}
             </h2>
             <div className="space-y-6">
-              {t.faqs.map((faq, i) => (
+              {faqs.map((faq, i) => (
                 <details
                   key={i}
                   className="group rounded-2xl border border-[#001E13]/10 bg-white overflow-hidden"
@@ -763,13 +528,13 @@ export default async function TripItComparisonPage({ params }: Props) {
         <section className="px-4 lg:px-8 pb-12 lg:pb-20">
           <div className="max-w-4xl mx-auto rounded-[24px] lg:rounded-[32px] bg-[#F6391A] px-8 py-12 lg:py-16 text-center">
             <h2 className="font-londrina-solid text-[#FFFBF5] text-2xl lg:text-4xl mb-4">
-              {t.ctaTitle}
+              {t("ctaTitle")}
             </h2>
             <Link
               href="https://app.weplanify.com"
               className="inline-block mt-4 px-8 py-3 bg-[#FFFBF5] text-[#F6391A] font-karla font-bold rounded-full text-base lg:text-lg hover:shadow-lg transition-shadow"
             >
-              {t.ctaButton}
+              {t("ctaButton")}
             </Link>
           </div>
         </section>
@@ -780,7 +545,7 @@ export default async function TripItComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-londrina-solid text-[#001E13] text-xl lg:text-2xl text-center mb-8">
-              {t.crossLinksTitle}
+              {t("crossLinksTitle")}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Link
@@ -788,17 +553,13 @@ export default async function TripItComparisonPage({ params }: Props) {
                 className="group rounded-2xl border border-[#001E13]/10 bg-white p-5 hover:shadow-lg transition-shadow"
               >
                 <h3 className="font-londrina-solid text-[#001E13] text-lg mb-1">
-                  {locale === "fr"
-                    ? "Comparatif Complet 2026"
-                    : "Full 2026 Comparison"}
+                  {t("crossLinks.comparison.title")}
                 </h3>
                 <p className="font-karla text-sm text-[#001E13]/70">
-                  {locale === "fr"
-                    ? "Voir toutes les alternatives comparées"
-                    : "See all alternatives compared"}
+                  {t("crossLinks.comparison.desc")}
                 </p>
                 <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-2 inline-block">
-                  {locale === "fr" ? "Voir le comparatif" : "View comparison"}{" "}
+                  {t("crossLinks.comparison.cta")}{" "}
                   &rarr;
                 </span>
               </Link>
@@ -807,17 +568,13 @@ export default async function TripItComparisonPage({ params }: Props) {
                 className="group rounded-2xl border border-[#001E13]/10 bg-white p-5 hover:shadow-lg transition-shadow"
               >
                 <h3 className="font-londrina-solid text-[#001E13] text-lg mb-1">
-                  {locale === "fr"
-                    ? "Guide : Organiser un Voyage de Groupe"
-                    : "Guide: Plan a Group Trip"}
+                  {t("crossLinks.guide.title")}
                 </h3>
                 <p className="font-karla text-sm text-[#001E13]/70">
-                  {locale === "fr"
-                    ? "Le guide complet étape par étape"
-                    : "The complete step-by-step guide"}
+                  {t("crossLinks.guide.desc")}
                 </p>
                 <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-2 inline-block">
-                  {locale === "fr" ? "Lire le guide" : "Read the guide"} &rarr;
+                  {t("crossLinks.guide.cta")} &rarr;
                 </span>
               </Link>
             </div>

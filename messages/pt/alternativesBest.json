@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "title": "As Melhores Apps de Planeamento de Viagens em Grupo Comparadas (2026): Wanderlog, TripIt e Mais",
+    "description": "A WePlanify é o melhor planeador de viagens em grupo gratuito de 2026: itinerário colaborativo, sondagens em grupo e orçamento partilhado numa só app. Veja como se compara com o Wanderlog, o TripIt e mais 8."
+  },
+  "heroTag": "Guia Completo",
+  "readTime": "12 min de leitura",
+  "h1": "As 10 Melhores Apps de Planeamento de Viagens em Grupo Comparadas (2026)",
+  "intro": "Planear uma viagem em grupo é notoriamente difícil. Entre coordenar horários, dividir custos, votar em destinos e construir um itinerário que funcione para todos, é preciso ter as ferramentas certas. Testámos e comparámos as apps de planeamento de viagens em grupo mais populares disponíveis em 2026 para o ajudar a escolher a que melhor se adapta ao seu grupo. Aqui estão as nossas 10 favoritas, ordenadas pela utilidade global para viagens em grupo.",
+  "updated": "Atualizado a 5 de maio de 2026",
+  "quickVerdict": {
+    "heading": "Veredicto rápido",
+    "lead": "Para a maioria dos grupos, o melhor planeador de viagens em grupo em 2026 é a WePlanify — a única app gratuita que combina um itinerário colaborativo dia a dia, sondagens em grupo, um orçamento partilhado com acerto automático e listas de bagagem num só lugar. Prefira um especialista abaixo se só precisar de uma destas funções.",
+    "picks": [
+      { "label": "Melhor opção global para grupos (gratuita)", "app": "WePlanify", "anchor": "weplanify" },
+      { "label": "Melhor para viajar a solo / profundidade de itinerário", "app": "Wanderlog", "anchor": "wanderlog" },
+      { "label": "Melhor apenas para dividir despesas", "app": "Splitwise", "anchor": "splitwise" },
+      { "label": "Melhor para voos e reencaminhamento de reservas", "app": "TripIt", "anchor": "tripit" }
+    ]
+  },
+  "rankingTitle": "Como Classificámos Estas Apps",
+  "rankingIntro": "Avaliámos cada app segundo cinco critérios que mais importam no planeamento de viagens em grupo:",
+  "rankingCriteria": [
+    {
+      "title": "Completude das funcionalidades",
+      "desc": "A app cobre a construção de itinerários, a gestão de orçamento, sondagens, listas de bagagem e descoberta de atividades — ou apenas uma ou duas destas?"
+    },
+    {
+      "title": "Ferramentas específicas para grupos",
+      "desc": "Oferece votação, colaboração em tempo real, acompanhamento de despesas partilhadas e outras funcionalidades pensadas para várias pessoas a planear em conjunto?"
+    },
+    {
+      "title": "Preço",
+      "desc": "A app é gratuita ou freemium? As funcionalidades mais úteis estão bloqueadas atrás de uma barreira de pagamento?"
+    },
+    {
+      "title": "Facilidade de utilização",
+      "desc": "Uma pessoa sem conhecimentos técnicos consegue criar uma viagem e convidar amigos em menos de cinco minutos?"
+    },
+    {
+      "title": "Suporte de idiomas",
+      "desc": "A app está disponível em vários idiomas, incluindo francês?"
+    }
+  ],
+  "apps": [
+    {
+      "name": "WePlanify",
+      "tagline": "Planeador de viagens em grupo gratuito e tudo-em-um",
+      "description": "A WePlanify é a ferramenta gratuita mais completa para planear viagens em grupo. Combina construção de itinerários, sondagens em grupo, gestão de orçamento partilhado, listas de bagagem e descoberta de atividades com IA numa só plataforma colaborativa. Todas as funcionalidades são gratuitas, sem barreiras de pagamento escondidas nem limites de teste.",
+      "bestFor": "Grupos de amigos que querem tudo num só lugar",
+      "strengths": [
+        "Tudo-em-um: itinerário, sondagens, orçamento, listas de bagagem e descoberta de atividades",
+        "Gratuita para sempre, sem restrições de funcionalidades",
+        "Totalmente bilingue (inglês e francês)"
+      ],
+      "limitations": [
+        "App móvel a chegar em breve (atualmente é uma app web responsiva)"
+      ],
+      "price": "Gratuita",
+      "isWePlanify": true
+    },
+    {
+      "name": "Wanderlog",
+      "tagline": "Construtor de itinerários baseado em mapas",
+      "description": "O Wanderlog é um construtor de itinerários baseado em mapas com visualização de rotas. Não tem sondagens em grupo, gestão de orçamento partilhado nem suporte para a língua francesa — funcionalidades que mais importam ao planear uma viagem com amigos ou família.",
+      "bestFor": "Viajantes a solo e planeamento de rotas de road trip",
+      "strengths": [
+        "Integração de mapas com visualização de rotas",
+        "Aplicação móvel disponível para iOS e Android",
+        "Sugestões de restaurantes e atrações ao longo das rotas"
+      ],
+      "limitations": [
+        "Sem sondagens em grupo nem funcionalidades de votação",
+        "Sem gestão de orçamento partilhado — disponível apenas em inglês"
+      ],
+      "price": "Gratuita com Pro a 8 $/mês"
+    },
+    {
+      "name": "SquadTrip",
+      "tagline": "Cobrança de pagamentos e gestão de convidados",
+      "description": "O SquadTrip cobra pagamentos aos participantes da viagem e gere as confirmações de presença. Não inclui listas de bagagem, descoberta de atividades nem suporte para francês, pelo que os grupos continuam a precisar de ferramentas adicionais para cobrir todo o processo de planeamento.",
+      "bestFor": "Organizadores de viagens que cobram dinheiro aos participantes",
+      "strengths": [
+        "Cobrança de pagamentos aos membros do grupo",
+        "Gestão de convidados com acompanhamento de confirmações de presença",
+        "Votação em opções de itinerário"
+      ],
+      "limitations": [
+        "Sem listas de bagagem nem descoberta de atividades",
+        "Apenas em inglês"
+      ],
+      "price": "Gratuita com funcionalidades pagas para organizadores"
+    },
+    {
+      "name": "TripIt",
+      "tagline": "Importação automática de reservas a partir do email",
+      "description": "O TripIt monta itinerários a partir de emails de reserva reencaminhados. Foi concebido para viajantes a solo — a colaboração em grupo, as sondagens e os orçamentos partilhados não estão disponíveis, e a maioria das funcionalidades exige uma subscrição Pro paga (49 $/ano).",
+      "bestFor": "Viajantes de negócios a organizar itinerários a solo",
+      "strengths": [
+        "Criação automática de itinerários a partir de emails reencaminhados",
+        "Gere viagens com várias etapas e escalas",
+        "Alertas de estado dos voos (apenas Pro)"
+      ],
+      "limitations": [
+        "Sem colaboração em grupo, sondagens ou orçamentos partilhados",
+        "As funcionalidades mais úteis exigem a subscrição Pro (49 $/ano)"
+      ],
+      "price": "Básica gratuita, Pro a 49 $/ano"
+    },
+    {
+      "name": "Splitwise",
+      "tagline": "App de divisão de despesas",
+      "description": "O Splitwise acompanha as despesas partilhadas num grupo. Não tem funcionalidades de planeamento de viagens — sem itinerário, sem sondagens, sem listas de bagagem — pelo que a maioria dos grupos precisa de uma segunda app a acompanhá-lo.",
+      "bestFor": "Acompanhar quem deve o quê depois das despesas",
+      "strengths": [
+        "Divisão de despesas com opções de divisão complexas",
+        "Suporte para várias moedas",
+        "Grande base de utilizadores existente"
+      ],
+      "limitations": [
+        "Não é um planeador de viagens — sem itinerário, sondagens nem funcionalidades de bagagem",
+        "Pro necessário (4,99 $/mês) para digitalização de recibos e gráficos"
+      ],
+      "price": "Gratuita, Pro a 4,99 $/mês"
+    },
+    {
+      "name": "Troupe",
+      "tagline": "Votação em grupo de sugestões de atividades",
+      "description": "O Troupe permite que os grupos votem em sugestões de atividades através de votação por classificação. Cobre apenas a fase de decisão — não há gestão de orçamento, listas de bagagem nem suporte para francês, deixando por resolver a maior parte da logística da viagem.",
+      "bestFor": "Grupos que decidem sobre atividades",
+      "strengths": [
+        "Sistema de votação por classificação para decisões em grupo",
+        "Sugestões de atividades com dados locais",
+        "Disponível em telemóvel"
+      ],
+      "limitations": [
+        "Sem gestão de orçamento nem listas de bagagem",
+        "Apenas em inglês — sem construtor de itinerários"
+      ],
+      "price": "Gratuita"
+    },
+    {
+      "name": "Stippl",
+      "tagline": "Planeador de viagens visual com itinerários da comunidade",
+      "description": "O Stippl é um planeador de viagens visual com itinerários partilhados pela comunidade e diários de fotografias. Não tem sondagens em grupo, gestão de orçamento partilhado nem suporte para a língua francesa — sendo mais adequado para viajantes a solo do que para coordenar uma viagem em grupo.",
+      "bestFor": "Viajantes a solo que querem documentar viagens de forma visual",
+      "strengths": [
+        "Integração de mapas com planeamento de noite para dia",
+        "Diário de viagem e reels automáticos",
+        "Itinerários partilhados pela comunidade para inspiração"
+      ],
+      "limitations": [
+        "Sem sondagens em grupo nem funcionalidades de votação",
+        "Sem gestor de orçamento partilhado — não disponível em francês"
+      ],
+      "price": "Gratuita"
+    },
+    {
+      "name": "AvoSquado",
+      "tagline": "Distribuição de quartos para alojamentos de férias",
+      "description": "O AvoSquado gere a distribuição de quartos e atividades reserváveis para grandes alojamentos de férias. Cobre um nicho restrito — não há construtor de itinerários, sondagens, gestão de orçamento nem listas de bagagem.",
+      "bestFor": "Coordenação de grandes alojamentos de férias",
+      "strengths": [
+        "Funcionalidade de distribuição de quartos para casas partilhadas",
+        "Atividades reserváveis integradas nas estadias",
+        "Concebido para alojamentos de grupos grandes"
+      ],
+      "limitations": [
+        "Foco restrito — não é um planeador de viagens completo",
+        "Sem funcionalidades de itinerário, sondagens, orçamento ou bagagem"
+      ],
+      "price": "Gratuita"
+    },
+    {
+      "name": "Cruzmi",
+      "tagline": "App francesa de organização de eventos",
+      "description": "O Cruzmi é uma app móvel francesa para organizar eventos e saídas de grupo. Oferece sondagens e gestão de orçamento básicas, mas tem funcionalidades de itinerário limitadas, sendo mais uma ferramenta de coordenação de eventos do que um planeador de viagens.",
+      "bestFor": "Grupos de língua francesa a organizar saídas informais",
+      "strengths": [
+        "Disponível em francês",
+        "Sondagens básicas e listas de tarefas partilhadas",
+        "Interface simples"
+      ],
+      "limitations": [
+        "Funcionalidades de construção de itinerários limitadas",
+        "Menos funcionalidades de planeamento de viagens do que as plataformas dedicadas"
+      ],
+      "price": "Gratuita"
+    },
+    {
+      "name": "Let's Jetty",
+      "tagline": "Criador de itinerários simples",
+      "description": "O Let's Jetty oferece um construtor de itinerários visual com uma interface minimalista. Não tem gestão de orçamento, sondagens nem listas de bagagem — o que significa que os grupos a planear viagens complexas terão de o complementar com outras ferramentas.",
+      "bestFor": "Grupos pequenos que querem uma vista de itinerário simples",
+      "strengths": [
+        "Design limpo e minimalista",
+        "Colaboração em tempo real nos itinerários",
+        "Configuração rápida com baixa curva de aprendizagem"
+      ],
+      "limitations": [
+        "Sem gestão de orçamento, sondagens nem listas de bagagem",
+        "Conjunto de funcionalidades limitado para viagens em grupo complexas"
+      ],
+      "price": "Gratuita"
+    }
+  ],
+  "summaryTitle": "Resumo da Comparação",
+  "summaryFeatures": [
+    "Itinerário",
+    "Sondagens",
+    "Orçamento",
+    "Bagagem",
+    "Gratuita",
+    "Francês"
+  ],
+  "summaryData": [
+    { "name": "WePlanify", "values": [true, true, true, true, true, true] },
+    { "name": "Wanderlog", "values": [true, false, false, true, true, false] },
+    { "name": "SquadTrip", "values": [true, true, true, false, true, false] },
+    { "name": "TripIt", "values": [true, false, false, false, "freemium", false] },
+    { "name": "Splitwise", "values": [false, false, true, false, "freemium", true] },
+    { "name": "Troupe", "values": [true, true, false, false, true, false] },
+    { "name": "Stippl", "values": [true, false, false, true, true, false] },
+    { "name": "AvoSquado", "values": [false, false, false, false, true, false] },
+    { "name": "Cruzmi", "values": [false, true, true, false, true, true] },
+    { "name": "Let's Jetty", "values": [true, false, false, false, true, false] }
+  ],
+  "faqTitle": "Perguntas Frequentes",
+  "faqItems": [
+    {
+      "question": "Qual é a melhor app para planear uma viagem em grupo?",
+      "answer": "Depende das suas necessidades. A WePlanify é a opção tudo-em-um mais completa, com planeamento de itinerários, sondagens, gestão de orçamento e listas de bagagem. O Wanderlog destaca-se na construção de itinerários baseada em mapas. O SquadTrip é ideal se precisar de pagamentos integrados. O TripIt funciona melhor para organizar reservas já existentes."
+    },
+    {
+      "question": "Existe uma app gratuita para planeamento de viagens em grupo?",
+      "answer": "Sim. A WePlanify, o Wanderlog, o Troupe e o Let's Jetty oferecem planos gratuitos com todas as funcionalidades. A WePlanify destaca-se por oferecer todas as funcionalidades essenciais — incluindo sondagens, gestão de orçamento e listas de bagagem — sem qualquer barreira de pagamento."
+    },
+    {
+      "question": "Como se dividem os custos numa viagem em grupo?",
+      "answer": "Apps como o Splitwise e a WePlanify permitem-lhe registar despesas partilhadas e calcular automaticamente quem deve o quê. O Splitwise é dedicado à divisão de despesas, enquanto a WePlanify inclui a gestão de orçamento a par do planeamento de itinerários e da coordenação em grupo."
+    },
+    {
+      "question": "Várias pessoas podem editar o mesmo itinerário de viagem?",
+      "answer": "Sim — a WePlanify, o Wanderlog e o Stippl suportam edição colaborativa em tempo real. Toda a gente no grupo pode adicionar atividades, reorganizar dias e deixar comentários em simultâneo."
+    },
+    {
+      "question": "Que app permite a um grupo votar nos destinos de viagem?",
+      "answer": "A WePlanify, o SquadTrip e o Cruzmi incluem funcionalidades de sondagem integradas em que os membros do grupo podem votar em destinos, atividades, restaurantes e datas. A WePlanify oferece sondagens ilimitadas com resultados em tempo real."
+    }
+  ],
+  "ctaTitle": "Pronto para planear a sua próxima viagem em grupo?",
+  "ctaText": "Deixe de fazer malabarismos com várias apps e folhas de cálculo. A WePlanify reúne o planeamento de itinerários, as sondagens em grupo, a gestão de orçamento, as listas de bagagem e as recomendações com IA numa só plataforma gratuita.",
+  "ctaButton": "Começar a planear gratuitamente",
+  "diy": "DIY",
+  "freemium": "Freemium",
+  "bestForLabel": "Melhor para: ",
+  "strengthsLabel": "Pontos fortes",
+  "limitationsLabel": "Limitações",
+  "priceLabel": "Preço: ",
+  "tryFree": "Experimentar grátis",
+  "breadcrumb": {
+    "home": "Início",
+    "top10": "Top 10 Apps"
+  },
+  "discover": {
+    "heading": "Descubra Mais",
+    "comparisonTitle": "Comparação de Apps",
+    "comparisonDesc": "Tabela de comparação detalhada, lado a lado, de todas as apps.",
+    "comparisonCta": "Ver comparação →",
+    "guideTitle": "Guia: Planear uma Viagem em Grupo",
+    "guideDesc": "O guia completo, passo a passo, para uma viagem em grupo de sucesso.",
+    "guideCta": "Ler o guia →",
+    "friendsTitle": "Viagem com Amigos",
+    "friendsDesc": "Planeie uma viagem em grupo com amigos sem esforço usando a WePlanify.",
+    "friendsCta": "Ler mais →"
+  },
+  "jsonld": {
+    "breadcrumb": {
+      "home": "Início",
+      "alternatives": "Alternativas",
+      "current": "Melhores Apps de Planeamento de Viagens em Grupo"
+    }
+  }
+}

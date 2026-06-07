@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Coupe du Monde 2026 entre Potes — Planificateur Gratuit | WePlanify",
+    "description": "Planificateur gratuit Coupe du Monde 2026 entre potes. Pas une agence, ton plan à toi : itinéraire multi-villes USA / Canada / Mexique, budget partagé par catégorie et logistique des 16 villes hôtes — sans pack tout fait, sans abonnement."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Planificateur Coupe du Monde 2026"
+  },
+  "hero": {
+    "tag": "Planificateur gratuit · Coupe du Monde 2026",
+    "title": "Coupe du Monde 2026 entre Potes : Ton Itinéraire, Pas un Pack Agence",
+    "readTime": "8 min de lecture"
+  },
+  "problem": {
+    "p1": "Une Coupe du Monde entre potes, ça fait rêver — jusqu'à ce que tu commences à griffonner ça au dos d'une serviette. Trois matchs de poule dans trois villes différentes, peut-être deux pays différents. Des éliminatoires impossibles à réserver avant les résultats. Visas, ESTA, AVE. Vols inter-villes qui doublent de prix la semaine d'un match. Six supporters, six budgets, six tolérances pour un vol matinal. Les agences te vendent un pack à 4 000 € la place et basta. Mais les vrais fans veulent choisir leur ville, leur hôtel, leur rythme — pas suivre un car de touristes. Le DIY revient bien moins cher et beaucoup plus libre — à condition d'avoir un plan que toute la bande peut voir.",
+    "p2": "WePlanify, c'est le poste de commandement partagé et gratuit pour la Coupe du Monde 2026 — matchs, vols, hôtels, budget et bagages au même endroit. L'alternative DIY aux packs d'agence."
+  },
+  "toc": {
+    "title": "Sur cette page",
+    "anatomy": "Anatomie d'un voyage Coupe du Monde",
+    "hostCities": "Les 16 villes hôtes",
+    "planning": "Planifier ton itinéraire étape par étape",
+    "budget": "Astuces budget pour les fans",
+    "faq": "Questions fréquentes"
+  },
+  "anatomy": {
+    "title": "Anatomie d'un Voyage Coupe du Monde",
+    "subtitle": "Cinq éléments que chaque groupe oublie au premier essai. Maîtrise-les et le voyage se déroule sans accroc.",
+    "items": [
+      { "stop": "Les Matchs", "desc": "Ton équipe joue trois matchs de poule dans trois villes potentielles, puis des éliminatoires imprévisibles. Verrouille la phase de groupes dans ton itinéraire comme points d'ancrage fixes. Mets les dates d'éliminatoires en placeholders — une fois le tableau rempli, tu sauras quelle ville ajouter. Ne réserve pas de vols non-remboursables au-delà des huitièmes avant les résultats.", "link": "/features/itinerary" },
+      { "stop": "La Bande", "desc": "Six supporters ont rarement le même plan. Certains prennent les 39 jours de congé, d'autres ne viennent qu'à un match. Utilise un sondage pour figer qui fait quel tronçon avant de réserver — ça t'évite quatre disputes et un vol annulé.", "link": "/features/polls" },
+      { "stop": "Les Frontières", "desc": "USA, Canada, Mexique : trois régimes d'immigration. ESTA / visa B-2 pour les USA, AVE / visa pour le Canada, carte FMM pour le Mexique. Chaque fan gère sa paperasse, mais le groupe a besoin d'une checklist partagée avec les deadlines pour que personne ne se pointe à l'aéroport sans ESTA valide.", "link": "/features/planning" },
+      { "stop": "L'Argent", "desc": "Billets de match payés individuellement via la FIFA. Hôtels partagés par chambre. Vols inter-villes partagés par voyageur. Restos partagés par repas. Cinq catégories qui ne se réconcilient pas toutes seules. Un budget partagé avec catégories dès le jour 1, c'est mieux qu'un tableur chaotique au jour 38.", "link": "/features/budget" },
+      { "stop": "Les Sacs", "desc": "Trois semaines entre été USA, été Canada, été Mexique — et un dress code stade. Fais léger pour respecter les franchises low-cost, mais avec maillots, écharpes, drapeaux et crème solaire de tout le monde. Une liste partagée avec objets communs assignés évite les trois drapeaux et zéro batterie externe.", "link": "/features/packing" }
+    ]
+  },
+  "hostCities": {
+    "title": "Les 16 Villes Hôtes",
+    "subtitle": "Onze villes aux USA, trois au Mexique, deux au Canada. Construis ton itinéraire en sachant quelles villes se relient bien — et lesquelles imposent un vol."
+  },
+  "matrix": {
+    "title": "Temps de Trajet entre Villes Hôtes",
+    "subtitle": "Temps de trajet aller indicatifs pour les routes fans les plus courantes. Les temps de vol excluent le transit aéroport (ajoute ~3h). Utilise-les pour dimensionner tes jours tampons entre matchs.",
+    "route": "Trajet",
+    "mode": "Mode",
+    "time": "Temps",
+    "notes": "Notes",
+    "rows": [
+      { "route": "Boston ↔ NYC", "mode": "Train (Acela)", "time": "~3h30", "note": "Porte-à-porte plus rapide que l'avion" },
+      { "route": "NYC ↔ Philadelphia", "mode": "Train / Bus", "time": "~1h30", "note": "Cluster le plus simple" },
+      { "route": "NYC ↔ Toronto", "mode": "Vol", "time": "~1h30", "note": "Passage de frontière — AVE requis" },
+      { "route": "Atlanta ↔ Miami", "mode": "Vol", "time": "~2h", "note": "10h+ en voiture, pas viable" },
+      { "route": "Dallas ↔ Houston", "mode": "Vol / Voiture", "time": "~1h / 4h", "note": "Voiture rentable à 2+" },
+      { "route": "LA ↔ San Francisco", "mode": "Vol", "time": "~1h30", "note": "Route US la moins chère en avion" },
+      { "route": "LA ↔ Seattle", "mode": "Vol", "time": "~3h", "note": "Réserver tôt — demande fans" },
+      { "route": "Seattle ↔ Vancouver", "mode": "Voiture / Train", "time": "~3h-4h", "note": "Frontière terrestre — passage rapide" },
+      { "route": "Toronto ↔ Vancouver", "mode": "Vol", "time": "~5h", "note": "Plus long vol intérieur Canada" },
+      { "route": "Dallas ↔ Mexico City", "mode": "Vol", "time": "~2h30", "note": "Meilleure porte d'entrée USA→MX" },
+      { "route": "Mexico City ↔ Guadalajara", "mode": "Vol / Bus", "time": "~1h30 / 7h", "note": "Bus de nuit, économique" },
+      { "route": "Mexico City ↔ Monterrey", "mode": "Vol", "time": "~1h30", "note": "10+ vols par jour" },
+      { "route": "LA ↔ Miami", "mode": "Vol", "time": "~5h", "note": "Coast-to-coast — cher" }
+    ]
+  },
+  "checklist": {
+    "title": "Checklist Essentiels Voyage Fan",
+    "subtitle": "Les choses que les groupes oublient toujours. Assigne chacune à une personne dans ta liste WePlanify.",
+    "items": [
+      "Billets de match (imprimés + sauvegarde dans l'appli FIFA)",
+      "Passeport valide (6+ mois après juillet 2026)",
+      "ESTA, AVE ou visa pour chaque frontière",
+      "Assurance voyage couvrant les trois pays",
+      "Maillot, écharpe, drapeau",
+      "Sac transparent conforme stade",
+      "Batterie externe (multi-ports pour le groupe)",
+      "Forfait data international ou eSIM locale",
+      "Crème solaire + casquette (la chaleur de juin est réelle)",
+      "Gourde réutilisable (autorisée en stade)",
+      "Cash en USD / CAD / MXN pour les petits frais",
+      "Bouchons d'oreille (pour après les célébrations)"
+    ]
+  },
+  "pullQuote": "Un voyage Coupe du Monde, ce n'est pas des vacances — c'est une opération de 39 jours. Traite la préparation comme l'équipe traite la sienne, le reste suit tout seul.",
+  "planning": {
+    "title": "Planifier Ton Itinéraire : Étape par Étape",
+    "p1": "Commence par les matchs. Le tirage au sort fixe la ville de chaque match — c'est ton squelette. Place les trois matchs de poule comme points d'ancrage dans l'itinéraire, puis ajoute un jour de repos de chaque côté. Les déplacements stade à stade avec passage de frontière prennent plus de temps que prévu ; ne planifie jamais un match le lendemain d'un vol long-courrier.",
+    "p4": "Fixe des deadlines au groupe, pas seulement au voyage. ESTA et AVE prennent plusieurs jours en pleine charge. Les forfaits data doivent être réglés avant le départ. Les fenêtres d'annulation des hôtels se referment plus tôt qu'on ne croit. Une liste de tâches partagée avec deadlines, visible par tous, évite que le voyage s'effondre sous la paperasse une semaine avant le coup d'envoi."
+  },
+  "budget": {
+    "title": "Astuces Budget pour Voyages de Supporters",
+    "p2": "Le transport inter-villes, c'est là que le budget se joue. Les vols intérieurs aux USA entre villes éloignées (LA → Miami, Boston → Dallas) sont à 250-400 € en réservant tôt, le double la semaine d'un match. Pour les trajets courts au Nord-Est (Boston → NYC → Philly), l'Amtrak Acela est plus rapide porte-à-porte et souvent moins cher. Traverser vers le Canada ou le Mexique implique presque toujours un vol — réserve dès que les matchs sont confirmés.",
+    "p3": "L'hébergement est le deuxième poste et le plus facile à optimiser. Les hôtels en ville hôte triplent leurs prix les jours de match — loge hors zone officielle. Un Airbnb trois chambres à 30 minutes du stade, partagé à quatre ou cinq, bat souvent les chambres d'hôtel individuelles de 40%. Regarde les villes voisines reliées par train ou vol court : Newark plutôt que Manhattan, Anaheim plutôt que LA, Mississauga plutôt que Toronto centre."
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "items": [
+      { "q": "Faut-il un visa pour assister à la Coupe du Monde 2026 ?", "a": "Ça dépend de ta nationalité et du pays hôte. Les USA exigent un ESTA ou un visa B-2, le Canada un AVE ou un visa, le Mexique autorise généralement l'entrée sans visa jusqu'à 180 jours pour la plupart des passeports occidentaux. Si ton équipe joue dans les trois pays, vérifie chaque pays séparément — être valide pour l'un ne donne pas accès à l'autre. Fais les démarches tôt, les délais s'allongent à l'approche de juin." },
+      { "q": "Comment planifier si le groupe de mon équipe n'est pas encore tiré ?", "a": "Construis une base flexible — réserve des vols remboursables vers un hub majeur (New York, Los Angeles, Mexico) et bloque l'hébergement uniquement pour la fenêtre du premier match. Une fois le tirage fixé, finalise le reste. WePlanify permet d'esquisser plusieurs scénarios d'itinéraire en parallèle et de choisir celui qui correspond aux vrais matchs." },
+      { "q": "Quel est le moyen le moins cher de voyager entre les villes hôtes ?", "a": "Aux USA, les vols intérieurs sont généralement plus rapides et moins chers que la voiture au-delà de 1000 km. Pour les trajets courts (ex. Boston-NYC), Amtrak ou les bus peuvent battre l'avion une fois le temps d'aéroport pris en compte. Traverser vers le Canada ou le Mexique implique presque toujours de voler — réserve ces tronçons tôt, la demande des fans va faire grimper les prix." },
+      { "q": "Combien de matchs peut-on raisonnablement enchaîner ?", "a": "La plupart des fans qui suivent une équipe arrivent à enchaîner 3 matchs de poule plus un huitième si l'équipe se qualifie. Les déplacements stade à stade prennent plus de temps que prévu — compte au moins une journée pleine de transport entre deux villes non adjacentes. Prévois des jours tampons pour le décalage horaire, les files d'attente sécurité et les fan zones incontournables." },
+      { "q": "Comment partager les frais à plusieurs supporters ?", "a": "Utilise un suivi de budget partagé dès le départ. Un voyage Coupe du Monde a une structure de coûts inhabituelle — billets de match payés individuellement via la FIFA, hôtels partagés par chambre, transport partagé par groupe, restos partagés par repas. WePlanify sépare ces catégories pour que chacun voie exactement ce qu'il doit, sans marathon de calculs en fin de voyage." },
+      { "q": "Quand faut-il réserver l'hébergement dans les villes hôtes ?", "a": "Maintenant, si possible. Les hôtels à Miami, NYC, LA, Toronto et Mexico ont commencé à se remplir dès début 2026 et les prix sont déjà 3 à 5 fois supérieurs à la normale sur les dates de matchs. Cherche en dehors des zones officielles (Airbnb en banlieue, villes voisines reliées par train) et réserve en remboursable si le parcours de ton équipe n'est pas encore fixé." },
+      { "q": "Les fan zones valent-elles le détour sans billet de match ?", "a": "Oui. Chaque ville hôte a une FIFA Fan Festival officielle avec retransmission géante, food et animations, plus les rassemblements de quartier non officiels qui ont souvent une meilleure ambiance. L'entrée est gratuite et c'est souvent le temps fort pour les fans sans billet. Ajoute-les à ton itinéraire comme plans B." }
+    ]
+  },
+  "discover": {
+    "title": "Découvrir aussi",
+    "roadTrip": { "title": "Road Trip", "desc": "Organise un road trip multi-étapes avec ta bande.", "cta": "En savoir plus →" },
+    "tripWithFriends": { "title": "Voyage entre Amis", "desc": "Organise n'importe quel voyage de groupe.", "cta": "En savoir plus →" },
+    "groupGuide": { "title": "Guide Voyage de Groupe", "desc": "Le guide complet étape par étape.", "cta": "Lire le guide →" },
+    "bestApps": { "title": "Meilleures Applis Voyage de Groupe", "desc": "Notre comparatif des meilleurs outils pour voyager en groupe.", "cta": "Lire l'article →" }
+  },
+  "cta": {
+    "title": "Construis Ton Voyage Coupe du Monde 2026",
+    "subtitle": "Matchs, vols, hôtels, budget — un seul plan partagé, toute ta bande alignée.",
+    "button": "Commencer"
+  },
+  "jsonld": {
+    "eventName": "Coupe du Monde de la FIFA 2026",
+    "eventDescription": "Coupe du Monde de la FIFA 2026 — 48 équipes nationales, 16 villes hôtes aux États-Unis, au Canada et au Mexique, du 11 juin au 19 juillet 2026. La première Coupe du Monde co-organisée par trois pays.",
+    "fifaPerformer": "Équipes nationales FIFA",
+    "subEventName": "Coupe du Monde 2026 — matchs à {city}",
+    "subEventDescription": "Matchs de la Coupe du Monde de la FIFA 2026 organisés à {city} entre le 11 juin et le 19 juillet 2026.",
+    "howToName": "Comment planifier un voyage Coupe du Monde 2026 en suivant son équipe",
+    "howToDescription": "Verrouille les matchs, construis l'itinéraire multi-villes, partage les frais, gère les visas et garde de la marge pour l'imprévu qui fait un voyage de Coupe du Monde.",
+    "howToSteps": [
+      { "name": "Caler le voyage sur les matchs de ton équipe", "text": "Commence par les trois matchs de poule. Verrouille les villes et les dates, puis cartographie les intervalles comme journées de transport. Planifie en détail uniquement la phase de groupes — les villes des éliminatoires dépendent des résultats." },
+      { "name": "Trancher le niveau d'engagement du groupe par sondage", "text": "Tout le monde n'a pas le même budget ni le même temps. Lance un sondage pour savoir qui est partant pour toute la phase de groupes, qui ne vient qu'à un match, et qui ne s'engage que si l'équipe passe. Le résultat dicte les réservations de vols et les répartitions d'hébergement." },
+      { "name": "Répartir les frais par catégorie dès le départ", "text": "Billets de match, vols inter-villes, hôtels en ville hôte, transport local et restos ne se répartissent pas de la même façon. Mets en place un budget partagé avec une catégorie pour chacun, pour que les comptes restent clairs même sur trois semaines." },
+      { "name": "Prévoir des jours tampons entre les villes", "text": "Trajets stade à stade, décalage horaire, files de sécurité et passages de frontière prennent du temps réel. Compte au moins une journée tampon entre deux villes non adjacentes et un jour de repos avant chaque match — tu te remercieras plus tard." }
+    ]
+  }
+}

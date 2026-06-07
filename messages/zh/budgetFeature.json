@@ -1,0 +1,152 @@
+{
+  "copy": {
+    "paidBy": "付款人",
+    "toReceive": "应收",
+    "owes": "欠",
+    "total": "总计",
+    "pieLabels": {
+      "accommodation": "住宿",
+      "restaurants": "餐厅",
+      "activities": "活动",
+      "transport": "交通"
+    },
+    "liveSplitTitle": "试试看：添加一笔花费",
+    "liveSplitSubtitle": "里斯本之旅 —— 4 位好友",
+    "quickAdd": "快速添加",
+    "recentExpenses": "近期花费",
+    "whoOwesWhat": "谁欠谁多少",
+    "toSettleUp": "待结清",
+    "freeNoCard": "免费注册，无需信用卡。",
+    "tryItHint": "👆 点击一个按钮添加花费，看着余额实时更新。",
+    "participants": [
+      {
+        "name": "Marie",
+        "avatar": "👩‍🎨"
+      },
+      {
+        "name": "Thomas",
+        "avatar": "🧔"
+      },
+      {
+        "name": "Emma",
+        "avatar": "👱‍♀️"
+      },
+      {
+        "name": "Lucas",
+        "avatar": "🧑‍💻"
+      }
+    ],
+    "expenses": [
+      {
+        "name": "餐厅晚餐",
+        "amount": 156,
+        "paidBy": "Marie"
+      },
+      {
+        "name": "租车",
+        "amount": 320,
+        "paidBy": "Thomas"
+      },
+      {
+        "name": "博物馆门票",
+        "amount": 84,
+        "paidBy": "Emma"
+      }
+    ],
+    "presets": [
+      {
+        "name": "晚餐",
+        "amount": 80,
+        "emoji": "🍝"
+      },
+      {
+        "name": "出租车",
+        "amount": 24,
+        "emoji": "🚕"
+      },
+      {
+        "name": "导览游",
+        "amount": 60,
+        "emoji": "🎨"
+      },
+      {
+        "name": "早午餐",
+        "amount": 48,
+        "emoji": "🥐"
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "费用管理",
+    "heroTitle": "费用分摊：",
+    "heroTitleHighlight": "谁该付给谁多少？",
+    "heroSubtitle": "Marie 付了餐厅的钱，Thomas 付了租车费。旅行结束时谁该付谁多少？让应用帮你算账，你只管尽情玩乐。",
+    "heroCta": "管理我的费用",
+    "heroCtaSubtext": "免费，无需信用卡",
+    "socialProofText": "本月已管理 2,450 欧元",
+    "featuresTitle": "智能费用管理",
+    "ctaTitle": "告别金钱纷争",
+    "ctaSubtitle": "让应用替你处理账目",
+    "ctaButton": "计算谁欠我钱",
+    "seoTitle": "旅行预算 - 团体费用分摊 | Weplanify",
+    "seoDescription": "轻松管理团体旅行费用。付款跟踪、自动公平分摊、简化报销，让你和朋友的假期更省心。",
+    "stats": [
+      {
+        "value": "2,450 €",
+        "label": "总费用"
+      },
+      {
+        "value": "6",
+        "label": "参与人数"
+      },
+      {
+        "value": "23",
+        "label": "交易笔数"
+      }
+    ],
+    "features": [
+      {
+        "icon": "📸",
+        "title": "扫描收据",
+        "description": "拍照即记账"
+      },
+      {
+        "icon": "💱",
+        "title": "多币种",
+        "description": "欧元、美元、日元……"
+      },
+      {
+        "icon": "🔄",
+        "title": "智能结算",
+        "description": "减少转账次数"
+      },
+      {
+        "icon": "📊",
+        "title": "统计",
+        "description": "可视化你的费用"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Weplanify 的费用分摊如何运作？",
+        "answer": "添加每笔费用时注明谁付款、谁参与。应用会自动计算每个人的余额，并显示在旅行结束时谁该付给谁多少以完成结算。"
+      },
+      {
+        "question": "可以管理多种货币吗？",
+        "answer": "可以，Weplanify 支持所有货币。用欧元、美元、日元或任何其他货币添加费用，应用会按当前汇率自动换算。"
+      },
+      {
+        "question": "如何快速添加一笔费用？",
+        "answer": "三种方式：手动输入金额、拍摄收据照片（自动识别）或从银行导入。"
+      },
+      {
+        "question": "报销会被优化吗？",
+        "answer": "会！算法会尽量减少结清账目所需的转账次数。"
+      },
+      {
+        "question": "可以将某些人排除在某笔费用之外吗？",
+        "answer": "当然可以。每笔费用只需选择相关的参与者即可。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "准备好你的下一次旅行了吗？",
+  "description": "加入成千上万一起把旅行规划得更好的旅行者。",
+  "socialProof": "加入 12,000+ 位更聪明地规划旅行的旅行者",
+  "freeNote": "免费注册，无需信用卡。",
+  "badges": [
+    {
+      "emoji": "📅",
+      "text": "2024 年上线",
+      "backgroundColor": "#E83F28",
+      "textColor": "#FFFBF5",
+      "position": "top-left"
+    },
+    {
+      "emoji": "⭐",
+      "text": "4.8/5 满意度",
+      "backgroundColor": "#61DBD5",
+      "textColor": "#001E13",
+      "position": "bottom-left"
+    },
+    {
+      "emoji": "🌍",
+      "text": "12 大热门目的地",
+      "backgroundColor": "#FFFBF5",
+      "textColor": "#001E13",
+      "position": "top-right"
+    },
+    {
+      "emoji": "✨",
+      "text": "已创建 500+ 份行程",
+      "backgroundColor": "#005939",
+      "textColor": "#FFFBF5",
+      "position": "bottom-right"
+    }
+  ]
+}

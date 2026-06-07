@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Come organizzare una gita scolastica — Pianificatore di gite gratuito per insegnanti | WePlanify",
+    "description": "Organizza una gita scolastica con WePlanify: itinerario condiviso visibile ai genitori, conteggio dei partecipanti ed esigenze alimentari in un unico posto, sondaggi per le attività, liste per i bagagli e archiviazione dei documenti. Gratis per gli insegnanti."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Gita scolastica"
+  },
+  "hero": {
+    "tag": "Gita scolastica",
+    "title": "Organizza una gita scolastica senza l'incubo della burocrazia",
+    "readTime": "8 min di lettura · Aggiornato il 5 maggio 2026"
+  },
+  "problem": {
+    "p1": "Una gita scolastica sembra un singolo evento ma in realtà sono tre flussi di lavoro coordinati che corrono in parallelo: la gita in sé (trasporti, alloggio, attività), la comunicazione con i genitori (autorizzazioni, esigenze alimentari, aggiornamenti quotidiani dal viaggio) e la logistica degli accompagnatori (gruppi, rapporti numerici, chi è responsabile di quale studente). Quando uno qualsiasi di questi tre vive in strumenti diversi — moduli cartacei qui, un thread di email là, un gruppo WhatsApp altrove — ogni modifica deve essere propagata tre volte. È lì che si verificano le falle.",
+    "p2": "WePlanify mette l'itinerario, la lista dei partecipanti e l'archiviazione dei documenti in un unico posto — visibile agli accompagnatori e consultabile dai genitori senza un account."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "approval": "Ottenere l'approvazione dalla dirigenza",
+    "logistics": "Anatomia di una gita scolastica",
+    "parentComms": "Comunicazione con i genitori che funziona su larga scala",
+    "safety": "Sicurezza, rapporti numerici e ruoli degli accompagnatori",
+    "faq": "Domande frequenti"
+  },
+  "approval": {
+    "title": "Ottenere l'approvazione dalla dirigenza",
+    "p1": "La maggior parte delle scuole richiede un'approvazione formale 6-12 settimane prima di qualsiasi gita con pernottamento. Il percorso più rapido attraverso la burocrazia: una proposta di una pagina che risponda alle domande che la dirigenza farà, prima ancora che le faccia. Date e destinazione. Obiettivi didattici collegati al programma. Costo indicativo per studente. Rapporto adulti-studenti. Valutazione dei rischi. Copertura assicurativa. Più questo documento è pulito, più rapida è l'approvazione."
+  },
+  "anatomy": {
+    "title": "Anatomia di una gita scolastica",
+    "subtitle": "Cinque elementi in movimento. Azzeccali tutti e la gita si gestisce da sola.",
+    "learnMore": "Scopri di più →",
+    "items": [
+      { "stop": "L'elenco dei partecipanti", "desc": "L'unica fonte di verità su chi parte. Ogni partecipante porta con sé le proprie restrizioni alimentari, le allergie e il contatto di emergenza direttamente nel profilo. Quando un genitore firma l'autorizzazione, il conteggio si aggiorna in tempo reale — nessun foglio di calcolo da riconciliare.", "link": "/features/collaboration" },
+      { "stop": "L'itinerario", "desc": "Giorno per giorno, orario per orario. Visibile a ogni accompagnatore sul telefono e ai genitori tramite il link condiviso. Quando il bus è in ritardo di 30 minuti, pubblichi un aggiornamento e tutti lo vedono — nessuna email di massa, nessun gruppo di genitori da gestire.", "link": "/features/planning" },
+      { "stop": "Le decisioni", "desc": "Alcune scelte sono imposte dal programma. Altre sono aperte: quale museo opzionale, quale ristorante per la cena di gruppo, quale attività serale. Lancia sondaggi con gli accompagnatori (o, se l'età lo consente, con gli studenti) e il risultato vince senza dibattiti.", "link": "/features/polls" },
+      { "stop": "I soldi", "desc": "Budget per studente, acconti, saldo dovuto. Tieni traccia dei pagamenti nel budget condiviso così sai sempre chi ha pagato e chi no. Per gli extra opzionali (soldi per souvenir, upgrade delle attività), lascia che i genitori spuntino le caselle — il budget si ricalcola automaticamente.", "link": "/features/budget" },
+      { "stop": "I bagagli", "desc": "Una lista condivisa con due colonne: obbligatorio e consigliato. I genitori la vedono nel momento in cui la pubblichi, due settimane prima della partenza. Preparano i bagagli di conseguenza. Meno email in preda al panico la sera prima, meno ragazzi che hanno dimenticato il passaporto al punto di ritrovo.", "link": "/features/packing" }
+    ]
+  },
+  "parentComms": {
+    "title": "Comunicazione con i genitori che funziona su larga scala",
+    "p1": "La classica modalità di fallimento della comunicazione di una gita scolastica: 30 genitori, 30 email con domande leggermente diverse, e tu che digiti variazioni della stessa risposta 30 volte. La soluzione non è 'inviare meno email' — è 'mettere la risposta in un posto dove possano trovarla da soli'. Un itinerario condiviso consultabile in qualsiasi momento, con il punto di ritrovo, il programma quotidiano, l'indirizzo dell'alloggio e il contatto di emergenza, elimina l'80% delle domande prima che vengano poste.",
+    "p2": "Per il restante 20%, il trucco è il consolidamento. Invece di tre email separate (autorizzazione, esigenze alimentari, contatto di emergenza), un solo modulo copre tutte e tre al momento dell'iscrizione. I genitori lo compilano una volta. Tu vedi i dati in tempo reale immediatamente. Le domande del giorno della gita vanno in un unico thread del viaggio, non nella tua casella personale. Su una gita di 5 giorni con pernottamento, questo fa risparmiare a un insegnante 4-6 ore di lavoro amministrativo."
+  },
+  "safety": {
+    "title": "Sicurezza, rapporti numerici e ruoli degli accompagnatori",
+    "p1": "La maggior parte dei ministeri dell'istruzione pubblica i rapporti adulti-studenti richiesti — tipicamente 1:10 per le gite con pernottamento della scuola primaria, 1:15 per la secondaria. Verifica il tuo prima di impegnarti con i genitori sui numeri. Una volta che hai il team di accompagnatori, assegna ciascuno di loro a uno specifico sottogruppo di studenti e rendi quelle assegnazioni visibili all'interno del viaggio. Ogni accompagnatore vede così sul telefono esattamente quali studenti sono i suoi, con le informazioni alimentari e i contatti di emergenza già caricati.",
+    "p2": "I conteggi a ogni transizione (salita sul bus, ingresso in una struttura, uscita da un'attività) sono l'abitudine più importante in assoluto durante una gita scolastica. Inseriscili nel programma come veri e propri punti di controllo, non come qualcosa che un insegnante improvviserà. Con un elenco dei partecipanti condiviso, il conteggio richiede 30 secondi e qualsiasi studente mancante viene segnalato immediatamente, non tre tappe dopo.",
+    "p3": "Per le allergie gravi o le condizioni mediche, allega la documentazione direttamente al partecipante. Gli accompagnatori possono consultarla offline se il telefono ha copertura — e al personale in loco (un hotel, un ristorante, una guida di un museo) si possono mostrare immediatamente le informazioni rilevanti. Questa sola mossa ha evitato più di una corsa al pronto soccorso a metà gita."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      { "q": "Con quanto anticipo dovrei organizzare una gita scolastica?", "a": "Per le gite di un giorno, due o tre settimane di solito bastano. Per le gite con pernottamento o internazionali, inizia con tre-sei mesi di anticipo. La pressione sulle prenotazioni varia a seconda della destinazione — città molto richieste per le gite come Roma, Londra o Barcellona si riempiono in fretta in primavera. Fissa prima trasporti e alloggio; le attività possono essere confermate più tardi." },
+      { "q": "Come raccolgo le autorizzazioni e le esigenze alimentari in modo efficiente?", "a": "Smetti di rincorrere i moduli cartacei. Usa un unico viaggio condiviso con una lista dei partecipanti — ogni genitore conferma la partecipazione, le restrizioni alimentari e i contatti di emergenza in un unico posto. WePlanify mantiene il conteggio visibile in tempo reale così sai sempre chi ha confermato e chi no." },
+      { "q": "I genitori possono vedere l'itinerario senza creare un account?", "a": "Sì. Condividi il link del viaggio e i genitori possono vedere il piano completo giorno per giorno, l'indirizzo dell'alloggio e i contatti di emergenza senza registrarsi. Si sentiranno rassicurati e tu riceverai meno email in preda al panico il giorno prima." },
+      { "q": "Come si gestiscono le esigenze alimentari e le allergie?", "a": "Aggiungi le restrizioni alimentari al profilo di ogni partecipante e contrassegnale sui pasti o sulle attività rilevanti. Le informazioni restano visibili agli accompagnatori e alle strutture che hai prenotato. Per le allergie gravi, allega il documento medico direttamente al partecipante così è accessibile offline." },
+      { "q": "Qual è il modo migliore per suddividere le responsabilità degli accompagnatori?", "a": "Assegna gli accompagnatori a gruppi specifici di studenti all'interno del viaggio. Ogni accompagnatore vede sul telefono il conteggio del proprio gruppo, le informazioni alimentari e i contatti di emergenza. Usa i sondaggi per votare le attività su cui gli accompagnatori sono indecisi — basta 'non abbiamo mai deciso chi va al museo'." },
+      { "q": "WePlanify è adatto alle gite scolastiche con studenti sotto i 13 anni?", "a": "Sì — gli studenti non hanno bisogno di un account. Solo l'insegnante responsabile e gli accompagnatori (o i genitori designati) si uniscono al viaggio. I dati degli studenti sono memorizzati come partecipanti, non come account utente, il che mantiene la configurazione conforme alle norme sulla privacy dei minori." }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "teamBuilding": { "title": "Team building", "desc": "Per i ritiri aziendali." },
+    "familyTrip": { "title": "Viaggio in famiglia", "desc": "Per le fughe multigenerazionali." },
+    "groupGuide": { "title": "Guida ai viaggi di gruppo", "desc": "La guida completa passo dopo passo." },
+    "appComparison": { "title": "Confronto tra app", "desc": "A confronto con altri pianificatori." }
+  },
+  "cta": {
+    "title": "Gestisci la tua prossima gita scolastica da un unico posto",
+    "subtitle": "Gratis per gli insegnanti. Nessuna app da installare per i genitori. Configura la tua gita in 5 minuti.",
+    "button": "Avvia una gita scolastica"
+  },
+  "jsonld": {
+    "articleHeadline": "Come organizzare una gita scolastica senza l'incubo della burocrazia",
+    "howToName": "Come organizzare una gita scolastica",
+    "howToDescription": "Dall'ottenere l'approvazione della dirigenza alla distribuzione del sondaggio post-gita — un manuale passo dopo passo per gli insegnanti che organizzano una gita di classe.",
+    "howToSteps": [
+      { "name": "Ottieni il via libera dalla dirigenza", "text": "Prima di prenotare qualsiasi cosa, ottieni l'approvazione formale della dirigenza scolastica. Prepara una pagina riassuntiva: date, destinazione, obiettivi didattici, budget indicativo per studente, rapporto di supervisione. La maggior parte degli istituti lo richiede con 6-12 settimane di anticipo per le gite con pernottamento." },
+      { "name": "Fissa trasporti, alloggio e attività", "text": "Prenota prima le voci più importanti: pullman o treno, alloggio con il giusto rapporto adulti-studenti e le attività principali. Usa un itinerario condiviso così i co-organizzatori vedono lo stesso piano e possono segnalare i conflitti prima che diventino problemi." },
+      { "name": "Raccogli autorizzazioni, esigenze alimentari e contatti di emergenza", "text": "Invia ai genitori il link del viaggio. Confermano la partecipazione, dichiarano restrizioni alimentari e allergie e forniscono i contatti di emergenza in un unico modulo. Il conteggio si aggiorna in tempo reale, senza dover rincorrere nessuno." },
+      { "name": "Vota le attività negoziabili", "text": "Alcune scelte sono fisse (il museo richiesto dal programma). Altre no (quale attività serale, quale ristorante per la cena di gruppo). Lancia un sondaggio veloce con gli accompagnatori — e, dove l'età lo consente, con gli studenti — e il risultato decide." },
+      { "name": "Pubblica la lista per i bagagli e il briefing pre-gita", "text": "Due settimane prima della partenza, pubblica una lista per i bagagli condivisa (suddivisa in 'obbligatorio' e 'consigliato') e un briefing pre-gita che copra punto di ritrovo, programma, aspettative di comportamento e procedura di emergenza. I genitori vedono esattamente di cosa ha bisogno il loro figlio." },
+      { "name": "Gestisci la gita con l'itinerario condiviso in tempo reale", "text": "Il giorno stesso, ogni accompagnatore ha il piano completo sul telefono — indirizzi, orari, conteggio, contatti di emergenza. Aggiorna l'itinerario in tempo reale quando qualcosa cambia (bus in ritardo, attività sostituita) e i genitori vedono subito il nuovo piano. Nessuna catena telefonica, nessun panico." }
+    ]
+  }
+}

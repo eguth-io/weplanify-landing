@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Kierunki — szablony wyjazdów grupowych według miasta i okazji | WePlanify",
+    "description": "Prawdziwe, gotowe do rezerwacji plany wyjazdów grupowych: wieczór panieński w Las Vegas i Nashville, Budapeszt, Marrakesz, road tripy po Toskanii i Andaluzji, weekend w Lizbonie. Plany dzień po dniu, prawdziwe miejsca, budżety."
+  },
+  "eyebrow": "Kierunki",
+  "title": "Szablony wyjazdów,\ngotowe do skopiowania.",
+  "intro": "Prawdziwe plany podróży na prawdziwe wyjazdy grupowe. Każdy kierunek poniżej to pełny szablon — plan dzień po dniu, sprawdzone miejsca, uczciwy budżet, lista rzeczy do spakowania. Skopiuj dowolny z nich do własnej podróży w WePlanify i dopasuj go do swojej grupy.",
+  "filters": {
+    "all": "Wszystkie wyjazdy",
+    "bachelorette": "Wieczór panieński",
+    "road-trip": "Road tripy",
+    "with-friends": "Ze znajomymi"
+  },
+  "cardCta": "Zobacz plan podróży →",
+  "ctaTitle": "Nie widzisz swojego kierunku?",
+  "ctaBody": "Załóż pustą podróż w WePlanify — zaproś znajomych, zbudujcie plan podróży razem, dzielcie budżet. Za darmo.",
+  "ctaButton": "Rozpocznij wyjazd za darmo",
+  "breadcrumb": {
+    "home": "Strona główna",
+    "destinations": "Kierunki"
+  },
+  "days": "dni",
+  "destinationsCount": "{count, plural, one {kierunek} few {kierunki} many {kierunków} other {kierunku}}"
+}

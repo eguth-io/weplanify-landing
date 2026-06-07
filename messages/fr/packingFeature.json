@@ -1,0 +1,175 @@
+{
+  "copy": {
+    "itemsReady": "14 / 20 articles",
+    "readyForTrip": "prêts pour le voyage",
+    "categories": [
+      {
+        "icon": "👕",
+        "title": "Vêtements",
+        "progress": 80,
+        "items": [
+          {
+            "name": "T-shirts (x5)",
+            "checked": true
+          },
+          {
+            "name": "Pantalons (x3)",
+            "checked": true
+          },
+          {
+            "name": "Veste légère",
+            "checked": true
+          },
+          {
+            "name": "Maillot de bain",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "icon": "🔌",
+        "title": "Électronique",
+        "progress": 60,
+        "items": [
+          {
+            "name": "Chargeur téléphone",
+            "checked": true
+          },
+          {
+            "name": "Adaptateur de prise",
+            "checked": true
+          },
+          {
+            "name": "Batterie externe",
+            "checked": false
+          },
+          {
+            "name": "Écouteurs",
+            "checked": false
+          }
+        ]
+      },
+      {
+        "icon": "🧴",
+        "title": "Trousse de toilette",
+        "progress": 100,
+        "items": [
+          {
+            "name": "Brosse à dents",
+            "checked": true
+          },
+          {
+            "name": "Crème solaire",
+            "checked": true
+          },
+          {
+            "name": "Shampoing",
+            "checked": true
+          }
+        ]
+      }
+    ],
+    "tipTitle": "Suggestion basée sur votre voyage",
+    "tipText": "Il fait en moyenne 28 °C à Lisbonne en avril. Pensez à prendre des vêtements légers et de la crème solaire !",
+    "packTitle": "Préparez vos bagages l'esprit tranquille",
+    "sharedTitle": "Qui apporte quoi ? Réglé une bonne fois pour toutes",
+    "sharedSubtitle": "Évitez les doublons en répartissant qui apporte quoi.",
+    "bringing": "Apporte :",
+    "people": [
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "items": [
+          "Crème solaire",
+          "Jeu de cartes",
+          "Guide de voyage"
+        ]
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "items": [
+          "Adaptateur de prise",
+          "Enceinte Bluetooth"
+        ]
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "items": [
+          "Trousse de secours",
+          "Jumelles"
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Bagages intelligents",
+    "heroTitle": "Liste de bagages intelligente",
+    "heroTitleHighlight": "",
+    "heroSubtitle": "L'IA sait qu'il fait 28°C à Lisbonne en avril et que vous avez prévu du surf. Elle vous rappelle la crème solaire ET la combinaison.",
+    "heroCta": "Créer ma checklist voyage",
+    "heroCtaSubtext": "Gratuit, sans carte bancaire",
+    "socialProofText": "Ne rien oublier, jamais",
+    "featuresTitle": "Fonctionnalités bagages intelligents",
+    "features": [
+      {
+        "title": "IA",
+        "description": "Suggestions personnalisées"
+      },
+      {
+        "title": "Météo",
+        "description": "Selon la destination"
+      },
+      {
+        "title": "Partage",
+        "description": "Répartition en groupe"
+      },
+      {
+        "title": "Rappels",
+        "description": "Avant le départ"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Comment Weplanify génère-t-il ma liste de bagages ?",
+        "answer": "L'appli analyse votre destination, dates de voyage, météo prévue et activités planifiées pour générer une liste personnalisée."
+      },
+      {
+        "question": "Peut-on partager des objets entre voyageurs ?",
+        "answer": "Oui ! La fonction 'Objets partagés' permet d'assigner des objets à des personnes spécifiques. Fini les doublons dans le groupe."
+      },
+      {
+        "question": "L'appli envoie-t-elle des rappels avant le départ ?",
+        "answer": "Absolument. Vous recevez des notifications configurables : 1 semaine avant, 3 jours avant et la veille du départ."
+      },
+      {
+        "question": "Puis-je créer mes propres catégories ?",
+        "answer": "Oui, vous pouvez créer vos propres catégories personnalisées et les réutiliser pour vos futurs voyages."
+      },
+      {
+        "question": "Ma liste est-elle sauvegardée pour les futurs voyages ?",
+        "answer": "Oui ! Vos listes sont sauvegardées et peuvent être dupliquées. Vous pouvez aussi créer des modèles."
+      }
+    ],
+    "ctaTitle": "Prêt à faire vos bagages ?",
+    "ctaSubtitle": "Ne plus jamais partir sans son chargeur",
+    "ctaButton": "Créer ma checklist voyage",
+    "seoTitle": "Liste de Bagages - Préparation Intelligente | Weplanify",
+    "seoDescription": "N'oubliez plus rien avec notre liste de bagages intelligente. Suggestions basées sur votre destination, météo et objets partagés.",
+    "stats": [
+      {
+        "value": "14/20",
+        "label": "articles prêts"
+      },
+      {
+        "value": "70%",
+        "label": "emballé"
+      },
+      {
+        "value": "IA",
+        "label": "suggestions"
+      }
+    ]
+  }
+}

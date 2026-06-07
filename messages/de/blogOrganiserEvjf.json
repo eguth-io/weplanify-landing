@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "title": "So planst du einen Junggesellinnenabschied – kompletter Guide 2026",
+    "description": "Alles, was du brauchst, um den perfekten Junggesellinnenabschied zu planen: Ideen für Reiseziele, Budgetaufteilung, Aktivitäten und wie man alle glücklich macht."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "So planst du einen Junggesellinnenabschied"
+  },
+  "links": {
+    "fourQuestions": {
+      "before": "Brauchst du eine Abstimmung, um euch auf Daten oder Reiseziel-Vorlieben zu einigen? ",
+      "linkText": "Die Abstimmungsfunktion von WePlanify",
+      "after": " klärt es in dreißig Sekunden."
+    },
+    "destinationTypes": {
+      "before": "Planst du einen Junggesellinnenabschied? ",
+      "linkText": "Sieh, wie WePlanify den ganzen JGA von Anfang bis Ende vereinfacht",
+      "after": "."
+    },
+    "budget": {
+      "before": "Der geteilte Budget-Tracker von WePlanify ist hier verfügbar: ",
+      "linkText": "Geteiltes Budget",
+      "after": " – Tracking in Echtzeit, automatische Erstattungsberechnung."
+    },
+    "activities": {
+      "before": "Koordiniert auch das Gruppenpacken mit ",
+      "linkText": "den geteilten Packlisten von WePlanify",
+      "after": " – keine Doppelungen oder vergessenen Dinge mehr."
+    }
+  },
+  "destinationBestForLabel": "Am besten für: ",
+  "cards": {
+    "bachelorette": {
+      "title": "Planer für den Junggesellinnenabschied",
+      "desc": "Alles, was du brauchst, um deinen Junggesellinnenabschied mit WePlanify zu planen: Abstimmungen, geteiltes Budget und kollaborative Reiseroute."
+    },
+    "friends": {
+      "title": "Reise mit Freunden",
+      "desc": "Plane mit WePlanify mühelos eine Gruppenreise mit Freunden."
+    },
+    "guide": {
+      "title": "Guide für die Gruppenreiseplanung",
+      "desc": "Wie man eine Gruppenreise von Anfang bis Ende plant, Schritt für Schritt."
+    },
+    "alternatives": {
+      "title": "Beste Apps für Gruppenreiseplanung",
+      "desc": "Ein ehrlicher Vergleich der besten Apps, um 2026 eine Gruppenreise zu planen."
+    }
+  },
+  "content": {
+    "readTime": "9 Min. Lesezeit",
+    "heroTag": "Kompletter Guide 2026",
+    "h1": "So planst du einen Junggesellinnenabschied – kompletter Guide 2026",
+    "intro": "Auf dem Papier klingt ein Junggesellinnenabschied unkompliziert: die engsten Freundinnen der Braut versammeln, ein Reiseziel wählen, eine tolle Zeit haben. In der Praxis koordinierst du sechs bis zwölf Personen mit völlig unterschiedlichen Terminen, Budgets, Geschmäckern und Vorstellungen davon, was als gute Zeit zählt – und versuchst dabei, die Braut selig ahnungslos vom Chaos hinter den Kulissen zu halten. Dieser Guide schneidet durch das Rauschen und gibt dir ein echtes Rahmenwerk, um einen Junggesellinnenabschied zu planen, den die Leute wirklich genießen, nicht nur überstehen.",
+    "tocTitle": "Inhaltsverzeichnis",
+    "toc": [
+      { "id": "why-hard", "label": "Warum die JGA-Planung schwerer ist, als sie aussieht" },
+      { "id": "four-questions", "label": "Die vier Fragen, die zuerst zu klären sind" },
+      { "id": "destination-types", "label": "Arten von Reisezielen" },
+      { "id": "budget-conversation", "label": "Das Budget-Gespräch, das niemand führen will" },
+      { "id": "timeline", "label": "Planungs-Zeitplan" },
+      { "id": "activities", "label": "Aktivitäten" },
+      { "id": "faq", "label": "FAQ" }
+    ],
+    "sections": {
+      "whyHard": {
+        "id": "why-hard",
+        "title": "Warum die JGA-Planung schwerer ist, als sie aussieht",
+        "paragraphs": [
+          "Das Problem ist nicht die Logistik – es sind die Menschen. Ein Junggesellinnenabschied bringt Frauen zusammen, die sich kaum kennen, vereint nur durch ihre Verbindung zur Braut. Da ist die Trauzeugin, die zu allem starke Meinungen hat, die Studienfreundin mit knappem Budget, der es zu peinlich ist, das zuzugeben, die Arbeitskollegin, die gerade erfahren hat, dass sie schwanger ist, und die Schwester, die in einer anderen Zeitzone lebt und immer spät auf Gruppennachrichten antwortet. Diese soziale Matrix zu managen und gleichzeitig Hotels zu buchen, Aktivitäten zu planen und Anzahlungen einzutreiben, ist wirklich erschöpfend.",
+          "Dann ist da der Druck der Perfektion. Anders als eine normale Reise mit Freunden trägt ein Junggesellinnenabschied emotionales Gewicht. Er soll ein Meilenstein sein, ein letztes großes Fest, eine Erinnerung, die die Braut für immer schätzt. Dieser Druck verwandelt kleine Pannen – ein ausgebuchtes Restaurant, ein verregneter Nachmittag, eine Meinungsverschiedenheit, wo gegessen wird – in unverhältnismäßige Stressfaktoren. Am Ende trägt die Organisatorin eine Last, für die sich niemand gemeldet hat.",
+          "Die dritte Ebene ist die soziale Dynamik. Pinterest hat ein Wettrüsten aufwendiger JGA-Ästhetik geschaffen – passende Schärpen, aufeinander abgestimmte Pastell-Outfits, sorgfältig kuratierte Reiserouten voller instagram-tauglicher Momente. Nicht jede Braut will das. Nicht jede Gruppe kann es sich leisten. Und manchmal verursacht die Kluft zwischen der Instagram-Version des JGA und dem, was die Leute tatsächlich machen wollen, echte Reibung. Die Lösung sind brutal ehrliche Gespräche früh – und die richtigen Tools, um die Gruppe auf Kurs zu halten, ohne den Planungsprozess selbst zur Konfliktquelle zu machen."
+        ]
+      },
+      "fourQuestions": {
+        "id": "four-questions",
+        "title": "Fang hier an: die vier Fragen, die zuerst zu klären sind",
+        "intro": "Bevor du dir ein einziges Hotel oder eine einzige Aktivität ansiehst, beantworte diese vier Fragen als Gruppe. Sie ersparen dir Wochen des Hin und Her.",
+        "questions": [
+          {
+            "title": "Wer ist tatsächlich in der Gruppe?",
+            "text": "Lass die finale Gästeliste bestätigen, bevor du irgendetwas anderes planst. Jede nachträglich hinzugefügte Person ändert die Budgetrechnung, die Unterkunftsoptionen und die Aktivitätslogistik. Sei realistisch: Nicht jeder, der in der anfänglichen Aufregung 'ja' sagt, zieht es durch. Setz eine feste Frist für Zu-/Absagen – zwei Wochen reichen reichlich – und plane um diejenigen, die bis zu diesem Datum zugesagt haben."
+          },
+          {
+            "title": "Was ist die ehrliche Budgetspanne?",
+            "text": "Lege kein Budget fest, basierend darauf, was du dir wünschst, dass alle ausgeben könnten. Frag jede Person privat, womit sie sich wohlfühlt, finde den Median und plane um diese Zahl. Wenn es eine große Streuung gibt, ziehe ein gestuftes Modell in Betracht: eine Kern-Reiseroute, die sich alle leisten können, mit optionalen Zusätzen für die, die mehr wollen. Nutze von Tag eins an einen geteilten Budget-Tracker, damit es keine Überraschungen gibt, wie die Summe pro Person aussieht."
+          },
+          {
+            "title": "Was will die Braut eigentlich?",
+            "text": "Nicht was Pinterest sagt, dass sie wollen sollte. Nicht was du an ihrer Stelle wollen würdest. Frag sie direkt oder frag die Person, die sie am besten kennt. Manche Bräute wollen ein wildes Wochenende in Ibiza; andere wollen wirklich eine gemütliche Spa-Auszeit mit ihren fünf engsten Freundinnen und keine Schärpe in Sicht. Du kannst keinen tollen JGA planen, ohne das zu wissen, und anzunehmen, dass du es weißt, ist der häufigste Fehler, den Organisatorinnen machen."
+          },
+          {
+            "title": "Wochenende oder länger?",
+            "text": "Ein dreitägiges Wochenende ist für die meisten Gruppen der ideale Mittelweg: lang genug, um sich wie eine echte Reise anzufühlen, kurz genug, dass sich alle freinehmen und es sich leisten können. Fünf bis sieben Tage funktionieren für Gruppen mit flexiblen Terminen und höheren Budgets – aber mehr Tage bedeuten mehr Koordination, mehr Mahlzeiten zu planen und mehr Gelegenheiten, dass die Gruppendynamik ausfranst. Sofern die Braut nicht ausdrücklich eine längere Reise will, halt es kompakt."
+          }
+        ]
+      },
+      "destinationTypes": {
+        "id": "destination-types",
+        "title": "Arten von Reisezielen",
+        "intro": "Das Reiseziel gibt den Ton für alles andere an. Hier sind die vier Hauptkategorien, was sie bieten und zu welcher Art von Braut jede am besten passt.",
+        "types": [
+          {
+            "title": "Städtetrip",
+            "text": "Ein langes Wochenende in einer lebendigen Stadt – Paris, Barcelona, Amsterdam, Lissabon, Nashville, New Orleans – gibt der Gruppe maximale Flexibilität. Tagesaktivitäten, Nachtleben, Restaurantoptionen und kulturelle Erlebnisse sind alle in Reichweite. Städtetrips passen zu Gruppen mit gemischtem Geschmack, weil es immer für alle etwas gibt. Die Herausforderung ist, dass die besten Städte für JGAs teuer sind, besonders bei der Unterkunft für eine große Gruppe. Bucht eine Wohnung mit Selbstverpflegung statt mehrerer Hotelzimmer – das ist günstiger, geselliger und gibt euch eine Basis zum Vorglühen vor den Abenden.",
+            "bestFor": "gemischte Gruppen, Bräute, die Kultur und Nachtleben lieben, Erstreisende"
+          },
+          {
+            "title": "Strandauszeit",
+            "text": "Sonne, ein Pool oder Strand, eine Villa oder ein Hotel. Die Strandauszeit ist nicht ohne Grund das klassische JGA-Format: wenig Planungsaufwand, viel Genuss. Die Tage organisieren sich um den Pool, Mahlzeiten sind einfach, und die Abende können so entspannt oder lebhaft sein, wie die Gruppe will. Die Algarve, Mallorca, Mykonos und die kroatische Küste sind europäische Favoriten. Für US-Gruppen schlägt Nashville Miami beim Preis-Leistungs-Verhältnis, aber die Florida Keys sind für eine kleine, eng verbundene Gruppe kaum zu schlagen. Das Hauptrisiko ist, dass Strandtrips nach Tag zwei eintönig werden können – sorg dafür, dass ihr ein oder zwei strukturierte Aktivitäten habt, um den Zeitplan zu verankern.",
+            "bestFor": "Bräute, die entspannen wollen, sonnenliebende Gruppen, lange Wochenenden"
+          },
+          {
+            "title": "Spa-Auszeit",
+            "text": "Nicht jeder JGA will ein lautes Wochenende. Manche Bräute wollen wirklich eine Spa-Auszeit: Massagen, Infrarotsaunen, Thermalbecken, gutes Essen und frühe Nächte. Dieses Format funktioniert großartig für kleinere, engere Gruppen – vier bis sechs Personen statt zwölf. Es ist auch budgettechnisch vorhersehbarer als ein Städtetrip, weil ihr größtenteils an einem Ort bleibt. Die Herausforderung ist, dass es die Zustimmung der ganzen Gruppe erfordert; wenn die Hälfte der Gäste Clubs erwartet und die andere Hälfte Stille, hat niemand eine gute Zeit.",
+            "bestFor": "introvertierte Bräute, wellness-orientierte Gruppen, kleinere intime Runden"
+          },
+          {
+            "title": "Abenteuerreise",
+            "text": "Surfen im Baskenland, Wandern in Slowenien, ein Radwochenende in der Toskana, Glamping in Wales. Abenteuer-JGAs werden immer beliebter, weil sie gemeinsame Erlebnisse schaffen, die die Gruppe auf eine Weise verbinden, wie es Nachtleben selten tut. Die Geschichten von dem Tag, an dem ihr alle vom Stand-up-Paddle gefallen seid, sind besser als jede Clubnacht. Der Haken: Abenteuerreisen erfordern mehr körperliche Planung, Versicherungsüberlegungen und ehrliche Gespräche über Fitnesslevel. Bucht keine anspruchsvolle Wanderung und hofft, dass alle sie schaffen.",
+            "bestFor": "aktive Bräute, Gruppen, die ohnehin gemeinsam Zeit draußen verbringen"
+          }
+        ]
+      },
+      "budgetConversation": {
+        "id": "budget-conversation",
+        "title": "Das Budget-Gespräch, das niemand führen will",
+        "paragraphs": [
+          "Beim Geld fallen JGA-Pläne auseinander. Nicht weil die Leute böswillig sind – sondern weil Organisatorinnen das echte Budget-Gespräch oft hinauszögern, bis Anzahlungen fällig und Flüge gebucht sind, woraufhin sich die Person, die es sich eigentlich nicht leisten kann, gefangen und verärgert fühlt. Das Budget-Gespräch früh und explizit zu führen, bevor irgendwelche Verpflichtungen eingegangen werden, ist das Wichtigste, was du für die Gruppendynamik tun kannst.",
+          "Die Braut zahlt traditionell ihren Anteil an Unterkunft und Aktivitäten nicht – diese Kosten werden unter den Gästen aufgeteilt. Sorg dafür, dass alle in der Gruppe das verstehen, bevor die Kosten festgelegt werden. Bei einer Reise für acht Personen, bei der die Unterkunft 1.500 € kostet, sind das 215 € pro Person statt 187 €. Nicht viel in absoluten Zahlen, aber es lohnt sich, das von Anfang an klarzustellen.",
+          "Zentralisiert, was ihr könnt. Bucht Unterkunft, Transfers und Gruppenaktivitäten über eine Person oder ein gemeinsames Planungstool vorab, damit das Geld klar fließt und niemand wochenlang draufzahlt. Nutzt einen geteilten Budget-Tracker, damit alle die laufende Summe sehen können – Gruppen, die Ausgaben unterwegs tracken, vermeiden die unangenehme Abrechnung am Ende der Reise, die den letzten Tag vermiesen kann."
+        ],
+        "tips": [
+          {
+            "title": "Setz ein Budget pro Person, kein Gesamtbudget",
+            "text": "Ein Gesamtbudget von 3.000 € klingt machbar, bis dir klar wird, dass die Gruppe fünfzehn Personen umfasst und das weniger als 200 € pro Person abdeckt. Denk von Anfang an immer pro Person."
+          },
+          {
+            "title": "Trenne Must-haves von Nice-to-haves",
+            "text": "Unterkunft und ein paar wichtige Aktivitäten sind nicht verhandelbar. Passende Outfits, individuelle Deko und aufwendige Geschenktüten sind optional. Kenn den Unterschied, bevor du anfängst, Geld auszugeben."
+          },
+          {
+            "title": "Geh elegant mit ungleichen Einkommen um",
+            "text": "Wenn jemand in der Gruppe ein knapperes Budget hat, lass ihn anders beitragen – ein Abendessen ausrichten, die Logistik koordinieren, kleinere Kosten übernehmen – statt sich über seine Mittel hinaus zu strecken oder sich ausgeschlossen zu fühlen. Großzügigkeit funktioniert besser als unangenehme Subventionsgespräche."
+          },
+          {
+            "title": "Nutze von Tag eins an einen geteilten Budget-Tracker",
+            "text": "Mit Tools wie dem integrierten Budget-Tracker von WePlanify sehen alle, was bezahlt wurde, was geschuldet wird und wie die endgültigen Kosten pro Person aussehen werden – ohne dass jemand am Ende der Reise Tabellen oder Venmo-Anfragen hinterherlaufen muss."
+          }
+        ]
+      },
+      "timeline": {
+        "id": "timeline",
+        "title": "Planungs-Zeitplan",
+        "intro": "Die JGA-Planung neigt dazu, sich auf jede Zeit auszudehnen, die du ihr gibst – oder sich in eine stressige Last-Minute-Hetze zu verdichten, wenn du sie zu lange aufschiebst. Hier ist ein realistischer Zeitplan, der die Dinge in Bewegung hält, ohne das Chaos.",
+        "steps": [
+          {
+            "when": "3 Monate vorher",
+            "tasks": [
+              "Die Gästeliste bestätigen und feste Zu-/Absagen einholen",
+              "Das ehrliche Budget-Gespräch mit der Gruppe führen",
+              "Sich auf Daten einigen – nutze eine Abstimmung, um zu finden, wann alle frei sind",
+              "Eine Reiseziel-Art basierend auf den tatsächlichen Vorlieben der Braut wählen",
+              "Die Unterkunft buchen (das legt alles andere fest)",
+              "Einen gemeinsamen Planungsraum starten, damit alle den Plan sehen"
+            ]
+          },
+          {
+            "when": "6 Wochen vorher",
+            "tasks": [
+              "Transport buchen – Flüge, Zug oder Gruppentransfer",
+              "Aktivitäten recherchieren und in die engere Wahl nehmen – nutze eine Gruppenabstimmung, um einzugrenzen",
+              "Alle Muss-Aktivitäten buchen, die eine Reservierung im Voraus erfordern",
+              "Einen geteilten Budget-Tracker einrichten und Anzahlungen laufend erfassen",
+              "Ernährungseinschränkungen und Barrierefreiheitsbedürfnisse jedes Gastes bestätigen"
+            ]
+          },
+          {
+            "when": "2 Wochen vorher",
+            "tasks": [
+              "Die finale Reiseroute an die Gruppe schicken – ein sauberes Dokument, kein Nachrichten-Thread",
+              "Restaurants für Gruppenabendessen buchen",
+              "Deko oder personalisierte Artikel (Schärpen usw.) kaufen, falls verwendet",
+              "Eine geteilte Packliste zuweisen, damit alle wissen, welche gemeinsamen Dinge abgedeckt sind",
+              "Offenen Zahlungen oder Zu-/Absagen nachgehen"
+            ]
+          },
+          {
+            "when": "Tag davor",
+            "tasks": [
+              "Die Check-in-Details der Unterkunft bestätigen und mit der Gruppe teilen",
+              "Ein kleines Notfallset packen: Pflaster, Schmerzmittel, Handy-Ladegerät, Snacks",
+              "Den Budget-Tracker offen und aktuell halten",
+              "Eine gute Nacht schlafen – du wirst sie brauchen"
+            ]
+          }
+        ]
+      },
+      "activities": {
+        "id": "activities",
+        "title": "Aktivitäten",
+        "paragraphs": [
+          "Die beste JGA-Reiseroute hat eine klare Struktur, aber reichlich Luft zum Atmen. Überplante Reisen fühlen sich wie eine Klassenfahrt an; unterplante driften in Diskussionen darüber ab, was als Nächstes zu tun ist. Zielt auf ein oder zwei verankernde Aktivitäten pro Tag, mit eingebauter freier Zeit für Spontaneität.",
+          "Die goldene Regel: Sorg dafür, dass mindestens eine Aktivität gezielt deshalb gewählt wird, weil die Braut sie liebt, nicht weil sie Standard-JGA-Programm ist. Wenn sie Cocktail-Kurse hasst, aber Töpfern liebt, buch Töpfern. Wenn sie Clubnächte nie mochte, aber für ein langes, gut gelauntes Abendessen mit ihren Lieblingsmenschen lebt, priorisiere das. Die Instagram-Version des JGA ist nicht der Punkt.",
+          "Vermeide erzwungenen Spaß. Passende Outfits, Schärpen und Spruchschilder sind in Ordnung, wenn die Braut darauf steht – aber wenn sie schon erwähnt hat, dass es ihr peinlich wäre, lass es. Genauso mit Strippern, Schnitzeljagden und Spielen, die darauf basieren, die Braut in Verlegenheit zu bringen. Spaß, der von allen verlangt, Glück vorzuspielen, fällt meist flach."
+        ],
+        "ideas": [
+          {
+            "category": "Tagsüber",
+            "items": [
+              "Private Segel- oder Bootstour",
+              "Wein- oder Cocktailverkostung (bucht eine private Session, nicht die Touristentour)",
+              "Spa-Vormittag mit individuellen Behandlungen",
+              "Töpfer-, Glasbläser- oder Kunst-Workshop",
+              "Stand-up-Paddling, Surfstunde oder Kajakfahren",
+              "Kochkurs mit einem lokalen Koch",
+              "Vintage-Shopping-Tag in einer neuen Stadt"
+            ]
+          },
+          {
+            "category": "Abends",
+            "items": [
+              "Dinner mit Privatkoch in eurer Unterkunft",
+              "Reservierung im Restaurant, das die Braut schon immer ausprobieren wollte",
+              "Cocktail-Kurs (aber nur, wenn sie das wirklich will)",
+              "Karaoke – für gemischte Gruppen ehrlich unterschätzt",
+              "Abend in der Oper, im Jazzclub oder bei einer Stand-up-Show",
+              "Casino-Abend (geringer Einsatz, hoher Unterhaltungswert)"
+            ]
+          },
+          {
+            "category": "Entspannt",
+            "items": [
+              "Filmabend in der Villa mit einem Film nach Wahl der Braut",
+              "Brettspielabend mit gutem Wein",
+              "Sonnenuntergangsspaziergang gefolgt von einem langen Abendessen",
+              "Morgendliche Yoga- oder Pilates-Session",
+              "Brunch auf dem Bauernmarkt"
+            ]
+          }
+        ],
+        "outro": "Stimmt mit einer Gruppenabstimmung über Aktivitäten ab, bevor ihr etwas bucht – das verhindert die klassische Situation, in der die Organisatorin etwas Teures bucht und zwei Leute es hassen. Die Abstimmungsfunktion von WePlanify ist in dreißig Sekunden eingerichtet und gibt allen eine gleichberechtigte Stimme, ohne eine Debatte mit sechzig Nachrichten im Gruppenchat."
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "items": [
+        {
+          "q": "Wie weit im Voraus sollte man einen Junggesellinnenabschied planen?",
+          "a": "Für eine Wochenendreise sind drei Monate angenehm – das gibt dir genug Zeit, die Daten aller abzustimmen, die Unterkunft zu buchen, bevor die Preise springen, und Aktivitäten ohne Hast zu organisieren. Wenn du etwas Aufwendigeres planst (internationale Flüge, Villenmiete, stark nachgefragte Reiseziele), sind vier bis fünf Monate sicherer. Für einen lokalen Abend oder eine einfache Staycation reichen meist sechs Wochen. Der größte Fehler ist, bis zwei Monate vor der Hochzeit zu warten, wenn die Termine aller bereits mit Kleideranproben und anderen Hochzeitsevents vollgepackt sind."
+        },
+        {
+          "q": "Wie geht man mit unterschiedlichen Budgets in der Gruppe um?",
+          "a": "Führt das Gespräch früh und privat. Frag jede Person einzeln, womit sie sich beim Ausgeben wohlfühlt – nicht in einer Gruppennachricht, wo sozialer Druck die Antworten verzerrt. Finde den Median und plane darum. Biete optionale Zusätze für die, die mehr ausgeben wollen, statt eine teure Reise zu planen und zu hoffen, dass alle einen Weg finden. Wenn jemand sich die Reise wie geplant wirklich nicht leisten kann, lass ihn anders beitragen – die Logistik koordinieren, die Kommunikation übernehmen, eine kleinere Ausgabe decken – statt ihn zu bitten, sich über seine Mittel hinaus zu strecken."
+        },
+        {
+          "q": "Was ist ein gutes JGA-Reisebudget pro Person?",
+          "a": "Für einen Städtetrip in Großbritannien oder Europa decken 300 bis 600 £ pro Person für eine Drei-Nächte-Reise Transport, Unterkunft und ein paar Aktivitäten ab, wenn du clever bist. Strand- oder Villenreisen in Südeuropa kosten 400 bis 800 € pro Person für ein langes Wochenende. US-Inlandsreisen variieren stark – Wochenenden in Nashville, Miami und New York können je nach Gruppengröße und Unterkunftsart 500 bis 1.200 $ pro Person kosten. Denk daran: Die Braut zahlt traditionell ihren Anteil nicht, also rechne diese Kosten von Anfang an in deine Pro-Person-Kalkulation ein."
+        },
+        {
+          "q": "Wie viele Personen sind zu viele für einen Junggesellinnenabschied?",
+          "a": "Acht bis zehn Personen sind die praktische Obergrenze für eine zusammenhängende Reise. Darüber werden Restaurantreservierungen zum Albtraum, Aktivitäten erfordern das Ausbuchen ganzer Locations, und die Gruppe zerfällt unweigerlich. Große Gruppen bedeuten auch mehr logistischen Aufwand – mehr Personen zu koordinieren, mehr Variablen zu managen, mehr Chancen, dass jemand in letzter Minute abspringt und das Budget durcheinanderbringt. Wenn die Gästeliste wirklich fünfzehn-plus umfasst, ziehe in Betracht, in zwei Gruppen mit getrennten Reisen aufzuteilen oder ein Format zu wählen, das für große Gruppen ausgelegt ist – eine Villa mit Privatkoch, ein gemietetes Boot, ein komplett gebuchter Veranstaltungsort."
+        },
+        {
+          "q": "Was, wenn die Braut keinen traditionellen Junggesellinnenabschied will?",
+          "a": "Plane, was sie tatsächlich will. Es gibt keine Regel, die besagt, dass ein JGA Schärpen, Stripper oder eine Clubnacht beinhalten muss. Wenn sie ein ruhiges Spa-Wochenende mit drei Freundinnen will, ist das der JGA. Wenn sie eine Wanderreise in den Bergen will, ist das der JGA. Am besten findest du es heraus, indem du sie direkt fragst – oder ihre engste Freundin oder Schwester. Die schlechtesten JGAs sind die, bei denen die Organisatorin die Reise geplant hat, auf die sie selbst gehen wollte, statt das, was der Braut wirklich am Herzen liegt."
+        },
+        {
+          "q": "Wie hält man auf einem Junggesellinnenabschied alle glücklich?",
+          "a": "Wirst du nicht – und der Versuch wird dich erschöpfen. Ziel darauf, dass alle die meiste Zeit eine gute Zeit haben, nicht auf universelles Glück in jedem Moment. Baue Abwechslung in den Zeitplan ein: aktiv und entspannt, Gruppe und freie Zeit, frühe Nächte und spätere. Nutze Abstimmungen, um Gruppenentscheidungen zu treffen, damit sich niemand überfahren fühlt. Setz klare Erwartungen vorab zu Budget, Förmlichkeit und dem, was geplant ist und was nicht. Und akzeptiere, dass manche Leute schwerer zufriedenzustellen sind als andere – das gilt für jede Gruppenreise, nicht nur für JGAs."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bereit, den perfekten Junggesellinnenabschied zu planen?",
+      "text": "WePlanify bringt deine ganze Gruppe an einen Ort – Reiseziel-Abstimmungen, geteilte Reiseroute, Budget-Tracker und Packlisten. Schluss damit, das Chaos in einem Gruppenchat zu managen, und fang an, wirklich gemeinsam zu planen.",
+      "button": "Den JGA planen"
+    },
+    "discoverMore": "Mehr entdecken",
+    "readMore": "Weiterlesen"
+  }
+}

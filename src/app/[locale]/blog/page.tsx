@@ -7,7 +7,7 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, blogPostsQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, BlogPostPreview, Footer as FooterType } from "@/sanity/lib/type";
 import Link from "next/link";
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { generateMetadataFromSanity } from "@/lib/metadata";
 
 type Props = {
@@ -16,20 +16,20 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "blogIndex" });
   const metadata = await generateMetadataFromSanity(locale, "/blog");
   return {
     ...metadata,
-    title: locale === "fr" ? "Blog — Conseils Voyage de Groupe" : "Blog — Group Travel Tips",
-    description:
-      locale === "fr"
-        ? "Decouvrez nos articles et conseils pour organiser des voyages de groupe inoubliables. Astuces, destinations et guides pratiques."
-        : "Discover articles and tips for organizing unforgettable group trips. Travel hacks, destinations and practical guides.",
+    title: t("meta.title"),
+    description: t("meta.description"),
   };
 }
 
 export default async function BlogPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  const t = await getTranslations("blogIndex");
 
   const [navData, navigationData, sanityPosts, footerData]: [NavType, Navigation | null, BlogPostPreview[], FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
@@ -56,51 +56,29 @@ export default async function BlogPage({ params }: Props) {
   // Hardcoded long-form articles that live as static routes outside Sanity.
   // They were invisible on /blog because the listing only queried the CMS;
   // we surface them inline so /blog reflects the full content catalog.
-  const staticPosts: BlogPostPreview[] = locale === "fr"
-    ? [
-        {
-          _id: "static-organiser-evjf",
-          title: "Comment organiser un EVJF inoubliable — guide complet 2026",
-          slug: { current: "organiser-evjf" },
-          excerpt: "Du choix de la destination à la coordination du groupe : tout ce qu'il faut savoir pour organiser un enterrement de vie de jeune fille mémorable, sans stress.",
-          readTime: "14 min",
-          heroImage: "https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          publishedAt: "2026-04-15",
-          author: { _id: "alex", firstName: "Alex", lastName: "Martin" },
-        },
-        {
-          _id: "static-group-trip-budget",
-          title: "Budget voyage de groupe — comment partager les frais sans drama",
-          slug: { current: "group-trip-budget" },
-          excerpt: "Établir un budget réaliste, répartir équitablement, suivre les dépenses en temps réel et solder proprement à la fin du voyage.",
-          readTime: "11 min",
-          heroImage: "https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          publishedAt: "2026-04-15",
-          author: { _id: "alex", firstName: "Alex", lastName: "Martin" },
-        },
-      ]
-    : [
-        {
-          _id: "static-organiser-evjf",
-          title: "How to Organize an Unforgettable Bachelorette Trip — 2026 Guide",
-          slug: { current: "organiser-evjf" },
-          excerpt: "From picking the destination to coordinating the group: everything you need to organize a memorable bachelorette trip, stress-free.",
-          readTime: "14 min",
-          heroImage: "https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          publishedAt: "2026-04-15",
-          author: { _id: "alex", firstName: "Alex", lastName: "Martin" },
-        },
-        {
-          _id: "static-group-trip-budget",
-          title: "Group Trip Budget — How to Split Costs Without Drama",
-          slug: { current: "group-trip-budget" },
-          excerpt: "Set a realistic budget, split costs fairly, track expenses in real time, and settle up cleanly when the trip is over.",
-          readTime: "11 min",
-          heroImage: "https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1200",
-          publishedAt: "2026-04-15",
-          author: { _id: "alex", firstName: "Alex", lastName: "Martin" },
-        },
-      ];
+  const staticPostsText = t.raw("staticPosts") as { title: string; excerpt: string }[];
+  const staticPosts: BlogPostPreview[] = [
+    {
+      _id: "static-organiser-evjf",
+      title: staticPostsText[0].title,
+      slug: { current: "organiser-evjf" },
+      excerpt: staticPostsText[0].excerpt,
+      readTime: "14 min",
+      heroImage: "https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      publishedAt: "2026-04-15",
+      author: { _id: "alex", firstName: "Alex", lastName: "Martin" },
+    },
+    {
+      _id: "static-group-trip-budget",
+      title: staticPostsText[1].title,
+      slug: { current: "group-trip-budget" },
+      excerpt: staticPostsText[1].excerpt,
+      readTime: "11 min",
+      heroImage: "https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      publishedAt: "2026-04-15",
+      author: { _id: "alex", firstName: "Alex", lastName: "Martin" },
+    },
+  ];
 
   // Merge Sanity posts with static ones, dedupe on slug, sort by publishedAt desc.
   const seenSlugs = new Set<string>();

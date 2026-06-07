@@ -1,0 +1,70 @@
+{
+  "copy": {
+    "you": "Toi",
+    "brand": "WePlanify IA",
+    "chatBubbles": [
+      "Je veux passer 2 semaines au Japon en avril avec ma copine. On adore la nature, la cuisine et les temples. Budget moyen.",
+      "Excellent choix ! Le Japon en avril, c'est la saison des cerisiers. Je suggère un itinéraire Tokyo — Kyoto — Osaka avec des étapes à Nara et Hakone. Tu veux voir les options d'hébergement ?",
+      "Oui, plutôt des ryokans traditionnels si possible",
+      "Parfait ! J'ai sélectionné 3 ryokans avec onsen privé à Hakone et 2 machiya rénovées à Kyoto. Je calcule aussi les trajets JR Pass pour optimiser tes déplacements..."
+    ],
+    "chips": ["Ajouter une rando", "Cours de sushi", "Voir le JR Pass", "Ajuster le budget"],
+    "modesTitle": "Choisis ton style de planification",
+    "modesSubtitle": "Que tu préfères tout maîtriser ou laisser l'IA s'en charger, WePlanify s'adapte à toi.",
+    "manualTitle": "Planification manuelle",
+    "manualSubtitle": "Contrôle total sur chaque détail. Idéal pour les voyageurs qui aiment construire leur propre aventure.",
+    "manualSteps": [
+      { "title": "Crée ton voyage", "description": "Choisis la destination, les dates et invite tes compagnons de voyage." },
+      { "title": "Ajoute des étapes", "description": "Construis ton itinéraire étape par étape, avec plusieurs stops." },
+      { "title": "Remplis chaque journée", "description": "Glissez-déposez activités, restaurants et hébergements." },
+      { "title": "Collabore", "description": "Le groupe ajoute ses idées et vote sur les options." }
+    ],
+    "aiTitle": "Planification par IA",
+    "aiSubtitle": "Décris ton voyage de rêve et laisse l'IA créer un itinéraire personnalisé en quelques secondes.",
+    "aiUserMsg": "2 semaines au Japon, saison des cerisiers, nature et temples",
+    "aiAssistantMsg": "Création de ton itinéraire Tokyo → Kyoto → Osaka avec ryokans et visites de temples...",
+    "aiTags": ["Itinéraire instantané", "Suggestions intelligentes", "Itinéraire optimisé"],
+    "bestOfBoth": {
+      "strong": "Le meilleur des deux mondes :",
+      "rest": " commence avec l'IA puis ajuste manuellement. Ou planifie à la main et demande à l'IA de combler les vides."
+    },
+    "visualTitle": "L'IA visualise ton voyage",
+    "capabilitiesSubtitle": "Plus qu'un simple assistant — une vraie expertise voyage propulsée par l'IA.",
+    "freeNoCard": "Inscription gratuite. Sans carte bancaire."
+  },
+  "page": {
+    "heroBadge": "Planification de voyage",
+    "heroTitle": "Planifiez votre voyage",
+    "heroTitleHighlight": "à votre façon",
+    "heroSubtitle": "Construisez votre itinéraire manuellement étape par étape, ou laissez notre assistant IA créer un plan personnalisé en quelques secondes.",
+    "heroCta": "Commencer gratuitement",
+    "heroCtaSubtext": "Sans carte bancaire",
+    "socialProofText": "12 000+ voyages planifiés",
+    "stats": [
+      { "value": "12 000+", "label": "voyages planifiés" },
+      { "value": "4.8/5", "label": "satisfaction" },
+      { "value": "2 modes", "label": "manuel + IA" }
+    ],
+    "featuresTitle": "Deux façons de planifier votre voyage idéal",
+    "features": [
+      { "title": "Planification manuelle", "description": "Créez votre voyage de zéro. Ajoutez des destinations, définissez les dates et construisez votre itinéraire jour par jour." },
+      { "title": "Constructeur jour par jour", "description": "Glissez-déposez activités, restaurants et hébergements. Organisez chaque journée visuellement sur une timeline." },
+      { "title": "Planification par IA", "description": "Décrivez votre voyage de rêve en langage naturel. Notre IA crée un itinéraire complet avec hôtels, activités et trajets optimisés." },
+      { "title": "Suggestions intelligentes", "description": "L'IA comprend le contexte — saison, budget, style de voyage — et adapte ses recommandations en temps réel." },
+      { "title": "Combinez les deux approches", "description": "Commencez avec les suggestions IA, puis affinez manuellement. Ou planifiez manuellement et demandez à l'IA de combler les lacunes." },
+      { "title": "Édition collaborative", "description": "Tout le groupe peut contribuer — ajouter des idées, voter sur les options et peaufiner le plan ensemble." }
+    ],
+    "faqItems": [
+      { "question": "Puis-je planifier un voyage sans utiliser l'IA ?", "answer": "Absolument ! Vous pouvez créer votre voyage entièrement manuellement. Ajoutez des destinations, définissez les dates et construisez votre itinéraire étape par étape." },
+      { "question": "Comment fonctionne l'assistant IA ?", "answer": "Décrivez simplement votre voyage en langage naturel — destination, budget, style de voyage. L'IA génère un itinéraire complet jour par jour avec hébergements, activités et trajets optimisés." },
+      { "question": "Puis-je modifier les suggestions de l'IA ?", "answer": "Oui ! Les suggestions de l'IA ne sont qu'un point de départ. Vous pouvez modifier, ajouter ou supprimer n'importe quel élément." },
+      { "question": "Puis-je combiner planification manuelle et IA ?", "answer": "Absolument. Commencez avec l'IA pour obtenir un itinéraire de base, puis affinez manuellement. Ou planifiez manuellement et demandez à l'IA de suggérer des activités." },
+      { "question": "Mon groupe peut-il aider à planifier ?", "answer": "Oui ! Invitez vos compagnons de voyage et tout le monde peut ajouter des suggestions, voter sur les options et collaborer en temps réel." }
+    ],
+    "ctaTitle": "Prêt à planifier votre prochaine aventure ?",
+    "ctaSubtitle": "Commencez à planifier — manuellement ou avec l'aide de l'IA",
+    "ctaButton": "Commencer gratuitement",
+    "seoTitle": "Outil de planification de voyage | Manuel & IA | WePlanify",
+    "seoDescription": "Planifiez votre voyage de groupe à votre façon. Créez des itinéraires manuellement ou laissez l'IA créer des plans personnalisés. Collaborez en temps réel. Gratuit."
+  }
+}

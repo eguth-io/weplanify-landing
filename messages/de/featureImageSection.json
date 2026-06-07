@@ -1,0 +1,13 @@
+{
+  "title": "Ein Planer für Gruppenreisen,\nvon Reisenden für Reisende gebaut.",
+  "bubbles": [
+    { "text": "Eigene Abstimmungen teilen", "subtitle": "Daten · Reiseziel · Budget" },
+    { "text": "Reisekosten verwalten", "subtitle": "Flüge · Airbnb · Essen" },
+    { "text": "Die Gruppe einladen", "subtitle": "Per E-Mail · Per Link" },
+    { "text": "Deine Reise verwalten", "subtitle": "Stopps · Tage · Notizen" },
+    { "text": "Nach Aktivitäten suchen", "subtitle": "Museen · Essen · Strände" },
+    { "text": "Unterkunft finden", "subtitle": "Hotel · Airbnb · Hostel" },
+    { "text": "Aufgaben verteilen", "subtitle": "Zu erledigen · In Arbeit · Erledigt" },
+    { "text": "Transport finden", "subtitle": "Flug · Zug · Auto" }
+  ]
+}

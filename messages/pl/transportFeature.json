@@ -1,0 +1,55 @@
+{
+  "copy": {
+    "heroTitle": "Loty, pociągi, samochody:",
+    "heroTitleHighlight": "koniec z zagubionymi biletami",
+    "heroSubtitle": "Prześlij dalej e-maile z potwierdzeniami, a my wyciągniemy wszystko automatycznie.",
+    "importTitle": "Automatyczny import",
+    "importSubtitle": "Połącz swoją skrzynkę e-mail lub zeskanuj potwierdzenia — wszystko zaimportuje się automatycznie.",
+    "tickets": [
+      { "type": "flight", "code": "AF1234", "details": "Paryż → Lizbona — 15 kwietnia" },
+      { "type": "train", "code": "CP5678", "details": "Lizbona → Porto — 18 kwietnia" },
+      { "type": "hotel", "code": "BOOKING-9012", "details": "Hotel Porto — 4 noce" }
+    ],
+    "syncTitle": "Synchronizuje się z Twoim planem podróży",
+    "syncSubtitle": "Transport automatycznie wpisuje się w Twój harmonogram.",
+    "timeline": [
+      { "time": "08:45", "event": "Lot CDG → LIS", "icon": "✈️", "color": "#61DBD5" },
+      { "time": "10:30", "event": "Przylot do Lizbony", "icon": "📍", "color": "#F6391A" },
+      { "time": "11:00", "event": "Transfer do hotelu", "icon": "🚕", "color": "#EEF899" },
+      { "time": "14:00", "event": "Zameldowanie w Hotel Alfama", "icon": "🏨", "color": "#8B5CF6" }
+    ]
+  },
+  "page": {
+    "heroBadge": "Zarządzanie transportem",
+    "heroTitle": "Loty, pociągi, samochody:",
+    "heroTitleHighlight": "koniec z zagubionymi biletami",
+    "heroSubtitle": "Prześlij dalej e-maile z potwierdzeniami, a my wyciągniemy wszystko automatycznie. Lot opóźniony? Dowiesz się przed linią lotniczą.",
+    "heroCta": "Scentralizuj moje podróże",
+    "heroCtaSubtext": "Za darmo, bez karty kredytowej",
+    "socialProofText": "Wszystkie Twoje podróże w jednym miejscu",
+    "featuresTitle": "Funkcje transportu",
+    "features": [
+      { "title": "Import z e-maila", "description": "Automatyczne skanowanie" },
+      { "title": "Powiadomienia", "description": "Opóźnienia i zmiany" },
+      { "title": "Offline", "description": "Dostęp bez połączenia" },
+      { "title": "Udostępnianie", "description": "Informacje dla grupy" }
+    ],
+    "faqItems": [
+      { "question": "Jak zaimportować moje rezerwacje transportu?", "answer": "Na trzy sposoby: przekaż dalej e-maile z potwierdzeniami, połącz Gmail/Outlook dla automatycznego importu lub zeskanuj kod QR ze swojego biletu." },
+      { "question": "Jakie rodzaje transportu są obsługiwane?", "answer": "Wszystkie! Loty, pociągi, autobusy, promy, wynajem samochodów, a nawet przejazdy współdzielone." },
+      { "question": "Czy otrzymam powiadomienia o opóźnieniach?", "answer": "Tak, Weplanify monitoruje Twoje loty i pociągi w czasie rzeczywistym. W razie opóźnienia otrzymasz natychmiastowe powiadomienie." },
+      { "question": "Czy moja grupa podróżna może zobaczyć szczegóły transportu?", "answer": "Tak! Wszyscy uczestnicy podróży widzą dodany transport." },
+      { "question": "Czy mogę uzyskać dostęp do biletów offline?", "answer": "Oczywiście. Pobierz swoje bilety, aby mieć do nich dostęp nawet bez połączenia z internetem." }
+    ],
+    "ctaTitle": "Nigdy więcej nie zgub biletu",
+    "ctaSubtitle": "Wszystkie Twoje podróże dostępne w 2 sekundy, nawet offline",
+    "ctaButton": "Znajdź wszystkie moje bilety",
+    "seoTitle": "Zarządzanie transportem - Loty, pociągi i podróże | Weplanify",
+    "seoDescription": "Zarządzaj wszystkimi swoimi podróżami w jednym miejscu. Automatyczny import lotów i pociągów, powiadomienia w czasie rzeczywistym i dostęp offline do biletów.",
+    "stats": [
+      { "value": "Auto", "label": "import" },
+      { "value": "Czas rzeczywisty", "label": "powiadomienia" },
+      { "value": "Offline", "label": "dostęp" }
+    ]
+  }
+}

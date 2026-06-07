@@ -1,0 +1,107 @@
+{
+  "copy": {
+    "heroTitle": "Plan a trip with 10 friends",
+    "heroTitleHighlight": "without a single WhatsApp message",
+    "heroSubtitle": "Real-time edits, built-in polls, clear history. Everyone on the same page, literally.",
+    "inviteMore": "Invite more",
+    "liveLabel": "Live",
+    "fakeTripTitle": "Road Trip Portugal",
+    "fakeDays": [
+      "Day 1 — Lisbon",
+      "Day 2 — Sintra",
+      "Day 3 — Porto"
+    ],
+    "editingTag": "Marie editing…",
+    "feedTitle": "Never miss a thing",
+    "feedSubtitle": "The activity feed shows everything happening on your trip. Who added what, when, and where.",
+    "recentActivity": "Recent activity",
+    "activities": [
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "action": "added \"Dinner in Alfama\"",
+        "time": "2 min ago"
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "action": "updated the hotel in Porto",
+        "time": "5 min ago"
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "action": "voted for the restaurant",
+        "time": "12 min ago"
+      },
+      {
+        "avatar": "🧑‍💻",
+        "name": "Lucas",
+        "action": "joined the trip",
+        "time": "1 h ago"
+      }
+    ],
+    "freeNoCard": "Free signup. No credit card required."
+  },
+  "page": {
+    "heroBadge": "3 people editing right now",
+    "heroTitle": "Plan a trip with 10 friends",
+    "heroTitleHighlight": "without a single WhatsApp message",
+    "heroSubtitle": "Real-time edits, built-in polls, clear history. Everyone on the same page, literally.",
+    "heroCta": "Invite my first friend - Free",
+    "heroCtaSubtext": "45 sec to invite your group",
+    "socialProofText": "12,000+ trips planned",
+    "featuresTitle": "Real-time collaboration",
+    "features": [
+      {
+        "title": "Real-time",
+        "description": "Changes appear instantly for all trip participants."
+      },
+      {
+        "title": "Comments",
+        "description": "Discuss each element directly in the app, no WhatsApp group needed."
+      },
+      {
+        "title": "Permissions",
+        "description": "Set who can edit and who can only view the trip."
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "How do I invite friends to collaborate on a trip?",
+        "answer": "Share an invite link or send an email invitation directly from the app. Your friends can join the trip in one click, even without a Weplanify account."
+      },
+      {
+        "question": "Are changes really synced in real-time?",
+        "answer": "Yes, all changes are synced instantly using WebSocket technology. You see your co-travelers' edits appear live."
+      },
+      {
+        "question": "Can I limit editing permissions?",
+        "answer": "Absolutely. The trip creator can set roles: editor (full access), contributor (can suggest changes), or viewer (read-only)."
+      },
+      {
+        "question": "Is there a limit to the number of participants?",
+        "answer": "No technical limit. We have trips with 50+ participants running smoothly."
+      },
+      {
+        "question": "How do you handle editing conflicts?",
+        "answer": "Weplanify handles conflicts automatically. If two people edit the same element, the system intelligently merges changes."
+      }
+    ],
+    "ctaTitle": "No more endless WhatsApp groups",
+    "ctaSubtitle": "Everyone on the same page, in real-time",
+    "ctaButton": "Invite my friends now",
+    "seoTitle": "Real-time Collaboration - Group Trip Planning | Weplanify",
+    "seoDescription": "Plan your group trip with friends and family. Real-time edits, integrated discussions, and perfect sync for seamless collaborative organization.",
+    "stats": [
+      {
+        "value": "12,000+",
+        "label": "trips planned"
+      },
+      {
+        "value": "45 sec",
+        "label": "to invite your group"
+      }
+    ]
+  }
+}

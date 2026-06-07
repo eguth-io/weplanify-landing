@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Wanderlog 替代方案：免费团体旅行规划工具（2026）| WePlanify",
+    "description": "在找一款用于团体旅行的 Wanderlog 替代方案？WePlanify 提供实时协作行程、共享预算、投票和打包清单 —— 免费、双语（英语/法语）。"
+  },
+  "breadcrumb": {
+    "home": "首页"
+  },
+  "hero": {
+    "subtitle": "完整对比 —— 2026",
+    "title": "WePlanify 对比 Wanderlog",
+    "intro": "Wanderlog 和 WePlanify 都能帮你规划旅行，但它们解决的是不同的问题。Wanderlog 是一款面向独自和情侣出行的行程搭建工具。WePlanify 则从头开始为团体而设计。以下是两款应用客观的并列对比，帮你决定哪一款适合你的下一次旅行。"
+  },
+  "verdict": {
+    "title": "一句话总结",
+    "body": "Wanderlog 专注于独自/情侣出行，提供基于地图的规划。WePlanify 专为团体打造，提供投票、共享预算和协作决策。两者都免费。"
+  },
+  "comparison": {
+    "title": "正面对决",
+    "featureHeader": "功能"
+  },
+  "features": {
+    "collab_itinerary": "协作行程",
+    "polls": "团体投票",
+    "budget": "共享预算追踪",
+    "packing": "打包清单",
+    "map": "集成地图",
+    "discovery": "活动发现",
+    "offline": "离线访问",
+    "mobile": "手机应用",
+    "free": "免费方案",
+    "french": "法语",
+    "realtime": "实时协作"
+  },
+  "cell": {
+    "basic": "基础",
+    "webApp": "网页应用"
+  },
+  "midCta": "免费试用 WePlanify →",
+  "wanderlogShines": {
+    "title": "Wanderlog 的亮点",
+    "points": [
+      "集成地图 —— 在交互式地图上规划路线，标出各站点之间的驾车/步行路线。",
+      "离线访问 —— 下载行程和地图，无需联网即可使用。",
+      "手机应用 —— 提供原生 iOS 和 Android 应用，随时随地访问。",
+      "餐厅和酒店搜索 —— 在应用内搜索、收藏并整理就餐和住宿的地点。"
+    ]
+  },
+  "weplanifyWins": {
+    "title": "WePlanify 的优势",
+    "points": [
+      "团体投票 —— 让每个人都能对目的地、日期和活动投票，没人会被冷落。",
+      "共享预算追踪 —— 追踪团体花费、分摊费用，让每个人在财务上步调一致。",
+      "打包清单 —— 协作式打包清单确保没有遗漏，也不会重复带物品。",
+      "双语（英语/法语）—— 完整支持英语和法语，这在旅行规划应用中实属罕见。"
+    ]
+  },
+  "chooseWanderlog": {
+    "title": "谁该选 Wanderlog？",
+    "points": [
+      "想要可视化、地图优先规划体验的独自旅行者或情侣。",
+      "需要离线地图和驾车路线的公路旅行规划者。",
+      "相比网页工具更偏好原生手机应用的旅行者。",
+      "专注于在规划工具内发现餐厅和酒店的人。"
+    ]
+  },
+  "chooseWeplanify": {
+    "title": "谁该选 WePlanify？",
+    "points": [
+      "需要协调日程、偏好和预算的 4 人及以上好友团队。",
+      "要在大群人意见中周旋的单身派对（含男方/女方）策划者。",
+      "想要投票和共享任务清单等内置团体决策工具的任何人。",
+      "需要完整法语体验的法语旅行者。"
+    ]
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": [
+      {
+        "q": "我能从 Wanderlog 换到 WePlanify 吗？",
+        "a": "可以！你能在几分钟内于 WePlanify 上开启一段新旅行。虽然没有自动导入，但 WePlanify 简洁的界面让你能快速重建行程 —— 而且你会立刻获得 Wanderlog 不提供的团体功能，比如投票和共享预算。"
+      },
+      {
+        "q": "为什么要从 Wanderlog 换到 WePlanify？",
+        "a": "如果你正和一个团体规划旅行，Wanderlog 缺少投票、共享预算和协作打包清单。WePlanify 开箱即提供所有这些工具，让团体协调浑然一体，而不必散落在多款应用里。"
+      },
+      {
+        "q": "对团体旅行来说，Wanderlog 缺少什么？",
+        "a": "Wanderlog 不提供团体投票、共享费用追踪或协作打包清单。它的协作功能仅限于分享行程，缺少面向团体的决策工具。WePlanify 完全填补了这一空白。"
+      },
+      {
+        "q": "对大团队来说哪款应用更好？",
+        "a": "对大团队而言，WePlanify 是明显的赢家。团体投票、共享预算和协作打包清单等功能正是为应对多名旅行者协调的复杂性而设计的。Wanderlog 的协作功能适合小团队，但缺少大团队所需的决策工具。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "免费试用 WePlanify —— 为团体而生",
+    "button": "免费开始"
+  },
+  "crossLinks": {
+    "title": "探索更多",
+    "all": {
+      "title": "所有替代方案",
+      "text": "将 WePlanify 与所有热门团体旅行规划应用一较高下。",
+      "cta": "查看对比 →"
+    },
+    "friends": {
+      "title": "与好友的旅行",
+      "text": "用 WePlanify 轻松规划和好友的团体旅行。",
+      "cta": "阅读更多 →"
+    },
+    "guide": {
+      "title": "指南：如何规划团体旅行",
+      "text": "成功规划团体旅行的完整分步指南。",
+      "cta": "阅读指南 →"
+    }
+  },
+  "jsonld": {
+    "breadcrumbAlternatives": "替代方案",
+    "articleHeadline": "WePlanify 对比 Wanderlog —— 哪款团体旅行规划工具更好？（2026）"
+  }
+}

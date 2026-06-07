@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "title": "Organizzare un viaggio con gli amici — Viaggi di gruppo senza pensieri | WePlanify",
+    "description": "Organizza un viaggio con gli amici senza fatica. WePlanify è l'app per organizzare viaggi di gruppo con itinerari collaborativi, sondaggi di gruppo, budget condivisi e liste per i bagagli. Gratis."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "currentLd": "Viaggio con gli amici",
+    "currentNav": "Viaggio con gli amici"
+  },
+  "jsonld": {
+    "articleHeadline": "Organizzare un viaggio con gli amici — Guida completa"
+  },
+  "readTime": "8 min di lettura",
+  "heroTag": "Viaggi di gruppo, semplificati",
+  "heroTitle": "Organizza un viaggio con gli amici\nsenza il caos",
+  "heroDescription": "Basta destreggiarti tra chat WhatsApp, fogli di calcolo e tentativi a caso. WePlanify riunisce tutto il tuo gruppo in un unico posto per organizzare il viaggio perfetto — dalla destinazione alla partenza.",
+  "heroGuideLink": "Leggi la nostra guida completa",
+  "heroCta": "Inizia a pianificare gratis",
+  "whyTitle": "Perché organizzare un viaggio di gruppo con gli amici?",
+  "whyParagraphs": [
+    "Viaggiare con gli amici è una delle esperienze più belle della vita. C'è qualcosa di insostituibile nell'esplorare una nuova città con le persone più care, condividere pasti in luoghi mai visti e creare storie che ci si racconterà per decenni. Gli studi dimostrano costantemente che le esperienze di viaggio condivise rafforzano le amicizie e creano legami più profondi di quasi ogni altra attività.",
+    "Ma ecco la realtà: la fase di pianificazione è il momento in cui la maggior parte dei viaggi di gruppo si sgretola. Quella che nasce come un'idea entusiasmante in una chat di gruppo si trasforma rapidamente in messaggi senza risposta, opinioni contrastanti e quell'amico che non si sbilancia mai. Più grande è il gruppo, più diventa difficile — e più è probabile che qualcuno finisca per fare tutto il lavoro mentre gli altri si limitano a presentarsi.",
+    "È esattamente per questo che esiste WePlanify. Invece di disperdere la pianificazione tra WhatsApp, Google Docs, Splitwise e una dozzina di schede del browser, hai un unico spazio collaborativo in cui tutti possono contribuire, votare e restare allineati. Il risultato? Meno stress per chi organizza, più entusiasmo per il gruppo e un viaggio che si realizza davvero."
+  ],
+  "painPointsTitle": "Ti suona familiare?",
+  "painPointsSubtitle": "Organizzare un viaggio di gruppo con gli amici è entusiasmante — finché non lo è più. Ecco i grattacapi che WePlanify elimina.",
+  "painPointsParagraphs": [
+    "Inizia sempre allo stesso modo. Qualcuno lancia l'idea nella chat di gruppo — \"Dovremmo fare un viaggio quest'estate\" — e in pochi minuti sono tutti su di giri. Ma poi inizia la vera pianificazione, ed è lì che le cose crollano. Le decisioni importanti si perdono in infinite chat WhatsApp. Scorri indietro tra 200 messaggi per ritrovare quel consiglio sul ristorante di martedì, ma è sparito — sepolto sotto meme e conversazioni parallele. Qualcuno si perde sempre il messaggio. Nessuno sa cosa sia stato deciso davvero. Dettagli fondamentali come orari di check-in, indirizzi e conferme di prenotazione svaniscono nel rumore.",
+    "Poi arriva il dibattito sulla destinazione. Metà del gruppo vuole il mare, l'altra metà la montagna. Senza un modo equo per decidere, alla fine sceglie la voce più forte nella chat mentre tre persone covano in silenzio il loro malcontento. O peggio — il dibattito si trascina così a lungo che i prezzi dei voli raddoppiano e tutti perdono completamente la motivazione. Intanto la situazione del budget è un disastro. Una persona anticipa l'alloggio, un'altra paga il noleggio dell'auto, qualcuno continua a offrire le cene di gruppo e alla fine del viaggio nessuno ricorda chi deve quanto a chi. Quella conversazione imbarazzante sui soldi può rovinare un viaggio altrimenti perfetto.",
+    "E poi c'è la preparazione dei bagagli. Tre persone portano l'asciugacapelli, nessuno porta il kit di pronto soccorso. Per i viaggi con attività specifiche — escursioni, snorkeling, sci — la mancanza di coordinamento fa sì che qualcuno si presenti sempre senza l'attrezzatura essenziale. Quando condividete un alloggio, nessuno pensa a portare le cose basilari come il cavatappi, le ciabatte elettriche o i giochi di carte finché non è troppo tardi. Ognuno di questi problemi è risolvibile — ma solo se il tuo gruppo ha un unico posto per pianificare, decidere e organizzare insieme."
+  ],
+  "solutionTitle": "Come WePlanify rende facili i viaggi di gruppo",
+  "solutionSubtitle": "Tutto ciò che serve al tuo gruppo di amici per pianificare, decidere e organizzare — in un'unica app bellissima.",
+  "solutions": [
+    {
+      "title": "Itinerario collaborativo",
+      "description": "Costruite insieme l'itinerario del viaggio in tempo reale. Tutti possono proporre attività, votare le idee e vedere il piano finale — basta botta e risposta. Trascina e rilascia le attività nel programma giorno per giorno, aggiungi note e link per ogni tappa e guarda il viaggio prendere forma mentre tutto il gruppo contribuisce. Le modifiche si sincronizzano all'istante, così tutti guardano sempre la versione più aggiornata.",
+      "linkText": "Scopri la pianificazione"
+    },
+    {
+      "title": "Sondaggi e votazioni di gruppo",
+      "description": "Non riuscite a scegliere tra Barcellona e Bali? Crea un sondaggio, fai votare tutti e decidi in modo democratico. Basta dibattiti infiniti. I sondaggi funzionano per tutto — destinazioni, date, ristoranti, attività, persino cosa cucinare per cena nell'Airbnb. Il voto anonimo elimina la pressione sociale, così le persone scelgono ciò che vogliono davvero, non ciò che pensano si aspetti il gruppo.",
+      "linkText": "Scopri i sondaggi"
+    },
+    {
+      "title": "Tracker del budget condiviso",
+      "description": "Tieni traccia di ogni spesa, dividi i costi in modo equo e vedi chi deve cosa — tutto aggiornato in tempo reale. Basta conversazioni imbarazzanti sui soldi. Registra le spese al volo, assegnale a singole persone o all'intero gruppo e lascia che WePlanify calcoli automaticamente i saldi finali. Alla fine del viaggio tutti sanno esattamente quanto devono — niente fogli di calcolo, niente discussioni, niente debiti in sospeso.",
+      "linkText": "Esplora gli strumenti per il budget"
+    },
+    {
+      "title": "Liste per i bagagli intelligenti",
+      "description": "Liste per i bagagli basate sull'IA, su misura per la tua destinazione, il meteo e le attività. Condividile con il gruppo, così nulla viene dimenticato o duplicato. Assegna gli oggetti condivisi a persone specifiche — uno porta il kit di pronto soccorso, un altro si occupa della cassa Bluetooth. Spunta gli oggetti man mano che prepari i bagagli e segui i progressi del gruppo in tempo reale, così sai che tutto è coperto prima di partire.",
+      "linkText": "Vedi le liste per i bagagli"
+    }
+  ],
+  "scenariosTitle": "Scenari reali",
+  "scenariosSubtitle": "Scopri come gruppi di amici come il tuo usano WePlanify per ogni tipo di viaggio.",
+  "scenarios": [
+    {
+      "title": "La fuga del weekend",
+      "description": "Cinque amici, un weekend lungo e una casa al mare a due ore di distanza. Crei il viaggio lunedì, tutti votano la casa entro mercoledì e la lista per i bagagli è condivisa entro venerdì. Il tracker del budget fa sì che chi ha prenotato la casa venga rimborsato automaticamente — senza dover rincorrere nessuno per i soldi. Semplice, veloce e senza stress."
+    },
+    {
+      "title": "L'avventura internazionale",
+      "description": "Otto amici sparsi in tre città, che pianificano due settimane nel Sud-est asiatico. Con WePlanify tutti propongono idee sulla destinazione, votano l'itinerario e collaborano a un programma dettagliato giorno per giorno. Il tracker del budget condiviso gestisce più valute e la lista per i bagagli assicura che nessuno dimentichi i documenti per il visto o l'adattatore di corrente."
+    },
+    {
+      "title": "Il viaggio al festival",
+      "description": "Un gruppo di dodici persone in partenza per un festival musicale. Coordinare biglietti, attrezzatura da campeggio, passaggi e cibo per così tante persone sarebbe un caos senza un punto di riferimento centrale. WePlanify tiene l'itinerario (orari, punti di ritrovo), il budget (spesa condivisa, soldi della benzina) e la lista per i bagagli (chi porta la tenda, chi porta la borsa frigo) tutto in un unico posto."
+    }
+  ],
+  "vsTitle": "Perché WePlanify e non altri strumenti?",
+  "vsSubtitle": "Forse ti starai chiedendo: ho davvero bisogno di uno strumento dedicato? Non posso usare quello che ho già?",
+  "vsParagraphs": [
+    "WhatsApp e iMessage sono ottimi per chattare, ma pessimi per pianificare. Le decisioni importanti si perdono, i link spariscono e non c'è modo di tenere traccia dei budget, costruire itinerari o lanciare sondaggi. Quando arriva il viaggio, metà del gruppo è confusa sui piani perché si è persa un messaggio tre settimane prima.",
+    "Google Sheets e Notion sono potenti ma eccessivi per un viaggio. Richiedono che qualcuno costruisca e mantenga la struttura, e la maggior parte degli amici semplicemente non li apre mai. Chi organizza finisce per fare tutto il lavoro da solo — che è esattamente il problema che cercavi di risolvere.",
+    "Le app per viaggi in solitaria come TripIt o Google Trips sono pensate per i singoli viaggiatori. Non supportano la collaborazione di gruppo, i budget condivisi o le decisioni collettive. WePlanify è stato costruito da zero per i gruppi — ogni funzionalità è progettata attorno alla realtà che pianificare con più persone è fondamentalmente diverso dal pianificare da soli."
+  ],
+  "vsComparisonLink": "Vedi il confronto completo tra le app →",
+  "stepsTitle": "3 passi per organizzare il tuo viaggio con gli amici",
+  "stepsSubtitle": "Dall'idea all'itinerario in pochi minuti — non settimane.",
+  "steps": [
+    {
+      "title": "Crea il tuo viaggio",
+      "description": "Dai un nome al viaggio, scegli le date e invita gli amici con un semplice link. Tutti si uniscono all'istante — nessun download, nessuna registrazione richiesta."
+    },
+    {
+      "title": "Pianificate insieme",
+      "description": "Proponete destinazioni, votate le attività, costruite l'itinerario e tenete traccia del budget condiviso — tutto in un unico posto, aggiornato in tempo reale."
+    },
+    {
+      "title": "Prepara i bagagli e parti",
+      "description": "Ottieni liste per i bagagli personalizzate, finalizza i piani e parti per l'avventura di una vita con il tuo gruppo."
+    }
+  ],
+  "faqTitle": "Domande frequenti",
+  "faqItems": [
+    {
+      "q": "Qual è la migliore app per organizzare un viaggio con gli amici?",
+      "a": "WePlanify è la migliore app gratuita per organizzare un viaggio con gli amici: combina un itinerario collaborativo giorno per giorno, sondaggi di gruppo perché tutti possano votare date e attività, un budget condiviso con saldo automatico e liste per i bagagli, tutto in un unico posto — invece di destreggiarti tra varie app monouso. Per un confronto diretto con Wanderlog, TripIt, Splitwise e altri, consulta la nostra comparazione delle migliori app per organizzare viaggi di gruppo."
+    },
+    {
+      "q": "Come si organizza un viaggio con gli amici, passo dopo passo?",
+      "a": "1) Crea un viaggio e invita tutti con un link — nessun account necessario per gli ospiti. 2) Lancia un sondaggio di gruppo per fissare date e destinazione con un voto. 3) Costruite insieme l'itinerario giorno per giorno, con tutti che aggiungono attività e ristoranti. 4) Tieni traccia del budget condiviso così tutti vedono chi deve cosa. 5) Condividi una lista per i bagagli così nulla viene dimenticato. WePlanify tiene tutti e cinque i passi in un unico spazio collaborativo."
+    },
+    {
+      "q": "WePlanify è davvero gratuito?",
+      "a": "Sì, al 100%. WePlanify è gratis per sempre — nessun costo nascosto, nessun limite di prova, nessuna carta di credito richiesta. Tutte le funzionalità principali (itinerari, sondaggi, budget, liste per i bagagli) sono incluse senza costi."
+    },
+    {
+      "q": "Quanti amici posso invitare?",
+      "a": "Non c'è limite. Che il tuo gruppo sia di 3 o 30 persone, tutti possono unirsi con un semplice link di invito e collaborare in tempo reale allo stesso viaggio."
+    },
+    {
+      "q": "Gruppi di amici diversi possono collaborare allo stesso viaggio?",
+      "a": "Sì! WePlanify supporta i sottogruppi all'interno di un singolo viaggio. Se il tuo viaggio coinvolge più cerchie di amici — ad esempio i compagni di università e i colleghi di lavoro — ogni sottogruppo può avere le proprie sezioni di pianificazione private pur condividendo l'itinerario principale, il budget e la lista per i bagagli. Tutti restano allineati senza intasare le conversazioni degli altri."
+    },
+    {
+      "q": "E se gli amici hanno budget molto diversi?",
+      "a": "Il tracker del budget di WePlanify ti permette di dividere i costi in modo flessibile. Puoi dividere in parti uguali, in percentuale o assegnare spese specifiche a persone specifiche. In questo modo gli amici con budget più ristretti possono rinunciare alle attività opzionali costose pur partecipando ai costi condivisi come l'alloggio."
+    },
+    {
+      "q": "Cosa succede se qualcuno si tira indietro durante la pianificazione?",
+      "a": "Nessun problema — WePlanify gestisce i cambiamenti del gruppo con disinvoltura. Puoi rimuovere un membro in qualsiasi momento e il budget condiviso si ricalcola automaticamente, così i saldi di tutti restano accurati. Eventuali compiti o oggetti assegnati a quella persona vengono segnalati per la riassegnazione, e il resto del gruppo continua a pianificare senza intoppi."
+    },
+    {
+      "q": "Come funzionano i sondaggi di gruppo?",
+      "a": "Crea un sondaggio con qualsiasi domanda — destinazione, date, ristoranti, attività — e condividilo con il gruppo. Tutti votano dal proprio dispositivo e i risultati si aggiornano in tempo reale. Puoi impostare scadenze, consentire scelte multiple e rendere i voti anonimi per evitare la pressione sociale."
+    }
+  ],
+  "ctaTitle": "La tua prossima avventura inizia qui",
+  "ctaDescription": "Unisciti a migliaia di gruppi di amici che organizzano i loro viaggi con WePlanify. È gratis, è divertente e funziona davvero.",
+  "ctaButton": "Inizia a pianificare il tuo viaggio",
+  "destinations": {
+    "tag": "Ispirazione per le destinazioni",
+    "heading": "Viaggi tra amici pronti da copiare",
+    "cards": [
+      {
+        "title": "Lisbona · 4 giorni",
+        "desc": "Miradouros, fado, Sintra, Time Out Market. Il weekend europeo che mantiene più di quanto promette."
+      },
+      {
+        "title": "Toscana · 7 giorni",
+        "desc": "Firenze, Siena, Val d'Orcia, Montalcino. Il viaggio on the road di cui parlerete ancora tra 20 anni."
+      },
+      {
+        "title": "Budapest · 3 giorni",
+        "desc": "Terme, ruin bar, Danubio. Breve, intenso, economico."
+      }
+    ],
+    "cardLink": "Vedi l'itinerario →",
+    "seeAll": "Vedi tutte le destinazioni →"
+  },
+  "discover": {
+    "heading": "Scopri di più",
+    "guide": {
+      "title": "Guida: come organizzare un viaggio di gruppo",
+      "desc": "La guida completa passo dopo passo per organizzare un viaggio di gruppo riuscito, dalla prima idea all'ultimo giorno.",
+      "link": "Leggi la guida →"
+    },
+    "worldCup": {
+      "title": "Pianificatore di viaggi per i Mondiali 2026",
+      "desc": "Segui la tua squadra attraverso le 16 città ospitanti di USA, Canada e Messico — gratis, senza pacchetto di agenzia.",
+      "link": "Apri il pianificatore →"
+    },
+    "comparison": {
+      "title": "Confronto tra app",
+      "desc": "Scopri come WePlanify si confronta con le altre app per organizzare viaggi di gruppo nel 2026.",
+      "link": "Vedi il confronto →"
+    }
+  }
+}

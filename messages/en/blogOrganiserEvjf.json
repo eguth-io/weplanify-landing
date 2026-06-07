@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "title": "How to Plan a Bachelorette Party — Complete Guide 2026",
+    "description": "Everything you need to plan the perfect bachelorette trip: destination ideas, budget splitting, activities, and keeping everyone happy."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "How to Plan a Bachelorette Party"
+  },
+  "links": {
+    "fourQuestions": {
+      "before": "Need a poll to align on dates or destination preferences? ",
+      "linkText": "WePlanify's polls feature",
+      "after": " settles it in thirty seconds."
+    },
+    "destinationTypes": {
+      "before": "Planning a bachelorette trip? ",
+      "linkText": "See how WePlanify simplifies the whole bachelorette from start to finish",
+      "after": "."
+    },
+    "budget": {
+      "before": "WePlanify's shared budget tracker is available here: ",
+      "linkText": "Shared budget",
+      "after": " — real-time tracking, automatic reimbursement calculation."
+    },
+    "activities": {
+      "before": "Coordinate group packing too with ",
+      "linkText": "WePlanify's shared packing lists",
+      "after": " — no more duplicates or forgotten items."
+    }
+  },
+  "destinationBestForLabel": "Best for: ",
+  "cards": {
+    "bachelorette": {
+      "title": "Bachelorette Trip Planner",
+      "desc": "Everything you need to plan your bachelorette trip with WePlanify: polls, shared budget, and collaborative itinerary."
+    },
+    "friends": {
+      "title": "Trip with Friends",
+      "desc": "Plan a group trip with friends effortlessly using WePlanify."
+    },
+    "guide": {
+      "title": "Group Trip Planning Guide",
+      "desc": "How to plan a group trip from start to finish, step by step."
+    },
+    "alternatives": {
+      "title": "Best Group Trip Planner Apps",
+      "desc": "An honest comparison of the best apps for planning a group trip in 2026."
+    }
+  },
+  "content": {
+    "readTime": "9 min read",
+    "heroTag": "Complete Guide 2026",
+    "h1": "How to Plan a Bachelorette Party — Complete Guide 2026",
+    "intro": "On paper, a bachelorette party sounds straightforward: gather the bride's closest friends, pick a destination, have a great time. In practice, you are coordinating six to twelve people with wildly different schedules, budgets, tastes, and opinions on what counts as a good time — all while trying to keep the bride blissfully unaware of the behind-the-scenes chaos. This guide cuts through the noise and gives you a real framework for planning a bachelorette trip that people will actually enjoy, not just survive.",
+    "tocTitle": "Table of Contents",
+    "toc": [
+      { "id": "why-hard", "label": "Why Bachelorette Planning Is Harder Than It Looks" },
+      { "id": "four-questions", "label": "The Four Questions to Settle First" },
+      { "id": "destination-types", "label": "Destination Types" },
+      { "id": "budget-conversation", "label": "The Budget Conversation Nobody Wants to Have" },
+      { "id": "timeline", "label": "Planning Timeline" },
+      { "id": "activities", "label": "Activities" },
+      { "id": "faq", "label": "FAQ" }
+    ],
+    "sections": {
+      "whyHard": {
+        "id": "why-hard",
+        "title": "Why Bachelorette Planning Is Harder Than It Looks",
+        "paragraphs": [
+          "The problem is not logistics — it is people. A bachelorette party brings together women who may barely know each other, united only by their connection to the bride. There is the maid of honor who has strong opinions about everything, the college friend who is on a tight budget and too embarrassed to say so, the work colleague who just found out she is pregnant, and the sister who lives in a different time zone and always replies late to group messages. Managing that social matrix while also booking hotels, planning activities, and chasing down deposits is genuinely exhausting.",
+          "There is also the pressure of perfection. Unlike a regular trip with friends, a bachelorette carries emotional weight. It is supposed to be a milestone, a last hurrah, a memory the bride cherishes forever. That pressure turns minor hiccups — a restaurant that is fully booked, a rainy afternoon, a disagreement about where to eat — into disproportionate stressors. The organizer ends up carrying a load that nobody signed up for.",
+          "The third layer is social dynamics. Pinterest has created an arms race of elaborate bachelorette aesthetics — matching sashes, coordinated pastel outfits, carefully curated itineraries full of instagrammable moments. Not every bride wants this. Not every group can afford it. And sometimes the gap between the Instagram version of the bachelorette and what people actually want to do causes real friction. The fix is brutally honest early conversations — and the right tools to keep the group aligned without turning the planning process itself into a source of conflict."
+        ]
+      },
+      "fourQuestions": {
+        "id": "four-questions",
+        "title": "Start Here: The Four Questions to Settle First",
+        "intro": "Before you look at a single hotel or activity, answer these four questions as a group. They will save you weeks of back-and-forth.",
+        "questions": [
+          {
+            "title": "Who is actually in the group?",
+            "text": "Get the final guest list confirmed before you plan anything else. Every person added after the fact changes the budget math, the accommodation options, and the activity logistics. Be realistic: not everyone who says 'yes' in the initial excitement will follow through. Build a firm deadline for RSVPs — two weeks is plenty — and plan around whoever committed by that date."
+          },
+          {
+            "title": "What is the honest budget range?",
+            "text": "Do not set a budget based on what you wish everyone could spend. Ask each person privately what they are comfortable with, find the median, and plan around that number. If there is a wide spread, consider a tiered model: a core itinerary everyone can afford, with optional add-ons for those who want more. Use a shared budget tracker from day one so there are no surprises about what the total will look like per person."
+          },
+          {
+            "title": "What does the bride actually want?",
+            "text": "Not what Pinterest says she should want. Not what you would want in her position. Ask her directly, or ask the person who knows her best. Some brides want a wild weekend in Ibiza; others genuinely want a cozy spa retreat with their five closest friends and no sashes in sight. You cannot plan a great bachelorette without knowing this, and assuming you know is the most common mistake organizers make."
+          },
+          {
+            "title": "Weekend or longer?",
+            "text": "A three-day weekend is the sweet spot for most groups: long enough to feel like a real trip, short enough that everyone can take time off work and afford it. Five to seven days works for groups with flexible schedules and higher budgets — but more days means more coordination, more meals to plan, and more opportunities for the group dynamic to fray. Unless the bride specifically wants an extended trip, keep it tight."
+          }
+        ]
+      },
+      "destinationTypes": {
+        "id": "destination-types",
+        "title": "Destination Types",
+        "intro": "The destination sets the tone for everything else. Here are the four main categories, what they deliver, and which type of bride each suits best.",
+        "types": [
+          {
+            "title": "City Break",
+            "text": "A long weekend in a vibrant city — Paris, Barcelona, Amsterdam, Lisbon, Nashville, New Orleans — gives the group maximum flexibility. Day activities, nightlife, restaurant options, and cultural experiences are all within reach. City breaks suit groups with mixed tastes because there is always something for everyone. The challenge is that the best cities for bachelorettes are expensive, especially for accommodation with a large group. Book a self-catered apartment rather than multiple hotel rooms — it is cheaper, more sociable, and gives you a base to pre-drink before nights out.",
+            "bestFor": "Mixed groups, brides who love culture and nightlife, first-time travelers"
+          },
+          {
+            "title": "Beach Escape",
+            "text": "Sun, a pool or beach, a villa or hotel. The beach escape is the classic bachelorette format for a reason: it is low-planning-effort, high-enjoyment. The days organize themselves around the pool, meals are easy, and nights can be as relaxed or as lively as the group wants. The Algarve, Mallorca, Mykonos, and the Croatian coast are European favourites. For US groups, Nashville beats Miami on value, but the Florida Keys are hard to beat for a small, close-knit group. The main risk is that beach trips can get repetitive after day two — make sure you have one or two structured activities to anchor the schedule.",
+            "bestFor": "Brides who want to relax, sun-loving groups, long weekends"
+          },
+          {
+            "title": "Spa Retreat",
+            "text": "Not every bachelorette wants a raucous weekend. Some brides genuinely want a spa retreat: massages, infrared saunas, thermal pools, good food, and early nights. This format works brilliantly for smaller, closer groups — four to six people rather than twelve. It is also more budget-predictable than a city break because you are largely staying in one place. The challenge is it requires buy-in from the whole group; if half the guests expect clubs and the other half expect silence, nobody has a good time.",
+            "bestFor": "Introverted brides, wellness-focused groups, smaller intimate gatherings"
+          },
+          {
+            "title": "Adventure Trip",
+            "text": "Surfing in the Basque Country, hiking in Slovenia, a cycling weekend in Tuscany, glamping in Wales. Adventure bachelorettes are growing in popularity because they create shared experiences that bond the group in a way that nightlife rarely does. The stories from the day you all fell off the paddleboards are better than any club night. The catch: adventure trips require more physical planning, insurance considerations, and honest conversations about fitness levels. Do not book a challenging hike and hope everyone can manage it.",
+            "bestFor": "Active brides, groups who already spend time outdoors together"
+          }
+        ]
+      },
+      "budgetConversation": {
+        "id": "budget-conversation",
+        "title": "The Budget Conversation Nobody Wants to Have",
+        "paragraphs": [
+          "Money is where bachelorette plans fall apart. Not because people are malicious — because organizers often delay the real budget conversation until deposits are due and flights are booked, at which point the person who cannot actually afford it feels trapped and resentful. Having the budget conversation early and explicitly, before any commitments are made, is the single most important thing you can do for the group dynamic.",
+          "The bride traditionally does not pay her share of accommodation and activities — that cost gets split among the guests. Make sure everyone in the group understands this before costs are finalized. On a trip for eight people where the accommodation is €1,500, that is €215 per person rather than €187. Not a lot in absolute terms, but worth being explicit about from the start.",
+          "Centralize what you can. Pre-book accommodation, transfers, and group activities through one person or a shared planning tool so money flows clearly and nobody is left out of pocket for weeks. Use a shared budget tracker so everyone can see the running total — groups that track spending as they go avoid the uncomfortable end-of-trip reconciliation that can sour the last day."
+        ],
+        "tips": [
+          {
+            "title": "Set a per-person budget, not a total budget",
+            "text": "A total budget of €3,000 sounds manageable until you realise the group is fifteen people and that covers less than €200 each. Always think in per-person terms from the start."
+          },
+          {
+            "title": "Separate must-haves from nice-to-haves",
+            "text": "Accommodation and a couple of key activities are non-negotiable. Matching outfits, custom decorations, and elaborate gift bags are optional. Know the difference before you start spending."
+          },
+          {
+            "title": "Handle unequal incomes gracefully",
+            "text": "If someone in the group is on a tighter budget, let them contribute differently — hosting a dinner, coordinating logistics, picking up smaller costs — rather than stretching beyond their means or feeling excluded. Generosity works better than awkward subsidy conversations."
+          },
+          {
+            "title": "Use a shared budget tracker from day one",
+            "text": "Tools like WePlanify's built-in budget tracker let everyone see what has been paid, what is owed, and what the final per-person cost will be — without anyone having to chase spreadsheets or Venmo requests at the end of the trip."
+          }
+        ]
+      },
+      "timeline": {
+        "id": "timeline",
+        "title": "Planning Timeline",
+        "intro": "Bachelorette planning has a way of expanding to fill whatever time you give it — or compressing into a stressful last-minute scramble if you leave it too late. Here is a realistic timeline that keeps things moving without the chaos.",
+        "steps": [
+          {
+            "when": "3 months out",
+            "tasks": [
+              "Confirm the guest list and get firm RSVPs",
+              "Have the honest budget conversation with the group",
+              "Agree on dates — use a poll to find when everyone is free",
+              "Choose a destination type based on the bride's actual preferences",
+              "Book accommodation (this locks in everything else)",
+              "Start a shared planning space so everyone can see the plan"
+            ]
+          },
+          {
+            "when": "6 weeks out",
+            "tasks": [
+              "Book transport — flights, train, or group transfer",
+              "Research and shortlist activities — use a group poll to narrow it down",
+              "Book any must-do activities that require advance reservations",
+              "Set up a shared budget tracker and log deposits as they go",
+              "Confirm dietary restrictions and accessibility needs for every guest"
+            ]
+          },
+          {
+            "when": "2 weeks out",
+            "tasks": [
+              "Send the final itinerary to the group — one clean document, not a thread of messages",
+              "Book restaurants for group dinners",
+              "Buy any decorations or personalised items (sashes, etc.) if using them",
+              "Assign a shared packing list so everyone knows what communal items are covered",
+              "Chase any outstanding payments or RSVPs"
+            ]
+          },
+          {
+            "when": "Day before",
+            "tasks": [
+              "Confirm accommodation check-in details and share with the group",
+              "Pack a small emergency kit: plasters, painkillers, phone charger, snacks",
+              "Have the budget tracker open and up to date",
+              "Get a good night's sleep — you are going to need it"
+            ]
+          }
+        ]
+      },
+      "activities": {
+        "id": "activities",
+        "title": "Activities",
+        "paragraphs": [
+          "The best bachelorette itinerary has a clear structure but plenty of breathing room. Overscheduled trips feel like a school trip; underscheduled ones drift into arguments about what to do next. Aim for one or two anchoring activities per day, with free time built in for spontaneity.",
+          "The golden rule: make sure at least one activity is specifically chosen because the bride loves it, not because it is standard bachelorette fare. If she hates cocktail-making classes but loves pottery, book pottery. If she has never liked club nights but lives for a long, boozy dinner with her favourite people, prioritise that. The Instagram version of the bachelorette is not the point.",
+          "Avoid forced fun. Matching outfits, sashes, and L-plates are fine if the bride is into it — but if she has already mentioned she would be mortified, do not do it. Same with strippers, scavenger hunts, and games based on embarrassing the bride. Fun that requires everyone to perform happiness tends to fall flat."
+        ],
+        "ideas": [
+          {
+            "category": "Daytime",
+            "items": [
+              "Private sailing or boat trip",
+              "Wine or cocktail tasting (book a private session, not the tourist tour)",
+              "Spa morning with individual treatments",
+              "Pottery, glassblowing, or art workshop",
+              "Paddleboarding, surfing lesson, or kayaking",
+              "Cooking class with a local chef",
+              "Vintage shopping day in a new city"
+            ]
+          },
+          {
+            "category": "Evening",
+            "items": [
+              "Private chef dinner at your accommodation",
+              "Reservation at the restaurant the bride has been wanting to try",
+              "Cocktail-making class (but only if she actually wants this)",
+              "Karaoke — genuinely underrated for mixed groups",
+              "Night at the opera, jazz club, or a stand-up show",
+              "Casino night (low-stakes, high entertainment value)"
+            ]
+          },
+          {
+            "category": "Low-key",
+            "items": [
+              "Movie night in the villa with film of the bride's choice",
+              "Board game evening with good wine",
+              "Sunset walk followed by a long dinner",
+              "Morning yoga or pilates session",
+              "Farmers' market brunch"
+            ]
+          }
+        ],
+        "outro": "Vote on activities using a group poll before you book anything — it prevents the classic situation where the organizer books something expensive and two people hate it. WePlanify's polls feature takes thirty seconds to set up and gives everyone an equal voice without a sixty-message debate in the group chat."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "How far in advance should you plan a bachelorette party?",
+          "a": "For a weekend trip, three months is comfortable — it gives you enough time to get everyone's dates aligned, book accommodation before prices jump, and organize activities without rush. If you are planning something more elaborate (international flights, villa rental, high-demand destinations), four to five months is safer. For a local night out or a simple staycation, six weeks is usually fine. The biggest mistake is waiting until two months before the wedding, when everyone's schedule is already packed with dress fittings and other wedding events."
+        },
+        {
+          "q": "How do you handle different budgets in the group?",
+          "a": "Have the conversation early and privately. Ask each person individually what they are comfortable spending — not in a group message where social pressure skews the answers. Find the median and plan around it. Offer optional add-ons for people who want to spend more, rather than planning an expensive trip and hoping everyone finds a way to manage. If someone genuinely cannot afford the trip as planned, let them contribute differently — coordinating logistics, handling communication, covering a smaller cost — rather than asking them to stretch beyond their means."
+        },
+        {
+          "q": "What is a good bachelorette trip budget per person?",
+          "a": "For a UK or European city break, £300 to £600 per person for a three-night trip covers transport, accommodation, and a couple of activities if you are smart about it. Beach or villa trips in southern Europe run €400 to €800 per person for a long weekend. US domestic trips vary wildly — Nashville, Miami, and New York weekends can run $500 to $1,200 per person depending on the group size and accommodation type. Remember: the bride traditionally does not pay her share, so factor that cost into your per-person calculation from the start."
+        },
+        {
+          "q": "How many people is too many for a bachelorette trip?",
+          "a": "Eight to ten people is the practical upper limit for a cohesive trip. Above that, restaurant reservations become a nightmare, activities require booking out entire venues, and the group inevitably fragments. Large groups also mean more logistical overhead — more people to coordinate, more variables to manage, more chances for someone to drop out last minute and throw the budget off. If the guest list is genuinely fifteen-plus, consider splitting into two groups with separate trips, or choosing a format that works for large groups by design — a villa with a private chef, a hired boat, a full venue buyout."
+        },
+        {
+          "q": "What if the bride doesn't want a traditional bachelorette?",
+          "a": "Plan what she actually wants. There is no rule that says a bachelorette has to involve sashes, strippers, or a club night. If she wants a quiet spa weekend with three friends, that is the bachelorette. If she wants a hiking trip in the mountains, that is the bachelorette. The best way to find out is to ask her directly — or ask her closest friend or sister. The worst bachelorettes are the ones where the organizer planned the trip they wanted to go on rather than what the bride actually cares about."
+        },
+        {
+          "q": "How do you keep everyone happy on a bachelorette trip?",
+          "a": "You will not — and trying to will exhaust you. Aim for everyone having a good time most of the time, not universal happiness at every moment. Build variety into the schedule: active and relaxed, group and free time, early nights and later ones. Use polls to make group decisions so nobody feels steamrolled. Set clear expectations upfront about budget, formality, and what is and is not planned. And accept that some people will be harder to please than others — that is true of every group trip, not just bachelorettes."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Plan the Perfect Bachelorette Trip?",
+      "text": "WePlanify brings your whole group into one place — destination polls, shared itinerary, budget tracker, and packing lists. Stop managing the chaos in a group chat and start actually planning together.",
+      "button": "Plan the Bachelorette"
+    },
+    "discoverMore": "Discover More",
+    "readMore": "Read more"
+  }
+}

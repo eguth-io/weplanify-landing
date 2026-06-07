@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "title": "Jak zaplanować wieczór panieński — kompletny przewodnik 2026",
+    "description": "Wszystko, czego potrzebujesz, by zaplanować idealny wyjazd na wieczór panieński: pomysły na kierunki, dzielenie budżetu, atrakcje i dbanie o zadowolenie wszystkich."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Jak zaplanować wieczór panieński"
+  },
+  "links": {
+    "fourQuestions": {
+      "before": "Potrzebujesz ankiety, by uzgodnić terminy lub preferencje co do kierunku? ",
+      "linkText": "Funkcja ankiet WePlanify",
+      "after": " rozstrzyga to w trzydzieści sekund."
+    },
+    "destinationTypes": {
+      "before": "Planujesz wyjazd na wieczór panieński? ",
+      "linkText": "Zobacz, jak WePlanify upraszcza cały wieczór panieński od początku do końca",
+      "after": "."
+    },
+    "budget": {
+      "before": "Wspólne narzędzie do śledzenia budżetu WePlanify jest dostępne tutaj: ",
+      "linkText": "Wspólny budżet",
+      "after": " — śledzenie w czasie rzeczywistym, automatyczne wyliczanie zwrotów."
+    },
+    "activities": {
+      "before": "Skoordynuj też grupowe pakowanie dzięki ",
+      "linkText": "wspólnym listom rzeczy do spakowania WePlanify",
+      "after": " — koniec z duplikatami i zapomnianymi rzeczami."
+    }
+  },
+  "destinationBestForLabel": "Najlepsze dla: ",
+  "cards": {
+    "bachelorette": {
+      "title": "Planer wyjazdu na wieczór panieński",
+      "desc": "Wszystko, czego potrzebujesz, by zaplanować wyjazd na wieczór panieński z WePlanify: ankiety, wspólny budżet i wspólny plan podróży."
+    },
+    "friends": {
+      "title": "Wyjazd ze znajomymi",
+      "desc": "Zaplanuj wyjazd grupowy ze znajomymi bez wysiłku dzięki WePlanify."
+    },
+    "guide": {
+      "title": "Poradnik planowania wyjazdu grupowego",
+      "desc": "Jak zaplanować wyjazd grupowy od początku do końca, krok po kroku."
+    },
+    "alternatives": {
+      "title": "Najlepsze aplikacje do planowania wyjazdów grupowych",
+      "desc": "Uczciwe porównanie najlepszych aplikacji do planowania wyjazdu grupowego w 2026 roku."
+    }
+  },
+  "content": {
+    "readTime": "9 min czytania",
+    "heroTag": "Kompletny przewodnik 2026",
+    "h1": "Jak zaplanować wieczór panieński — kompletny przewodnik 2026",
+    "intro": "Na papierze wieczór panieński brzmi prosto: zbierz najbliższe przyjaciółki panny młodej, wybierz kierunek, baw się świetnie. W praktyce koordynujesz sześć do dwunastu osób o diametralnie różnych harmonogramach, budżetach, gustach i opiniach na temat tego, co liczy się jako dobra zabawa — a wszystko to, próbując utrzymać pannę młodą w błogiej nieświadomości zakulisowego chaosu. Ten przewodnik przebija się przez szum i daje Ci prawdziwy schemat planowania wyjazdu na wieczór panieński, który ludzie naprawdę polubią, a nie tylko przetrwają.",
+    "tocTitle": "Spis treści",
+    "toc": [
+      { "id": "why-hard", "label": "Dlaczego planowanie wieczoru panieńskiego jest trudniejsze, niż się wydaje" },
+      { "id": "four-questions", "label": "Cztery pytania, które trzeba rozstrzygnąć najpierw" },
+      { "id": "destination-types", "label": "Rodzaje kierunków" },
+      { "id": "budget-conversation", "label": "Rozmowa o budżecie, której nikt nie chce odbyć" },
+      { "id": "timeline", "label": "Harmonogram planowania" },
+      { "id": "activities", "label": "Atrakcje" },
+      { "id": "faq", "label": "FAQ" }
+    ],
+    "sections": {
+      "whyHard": {
+        "id": "why-hard",
+        "title": "Dlaczego planowanie wieczoru panieńskiego jest trudniejsze, niż się wydaje",
+        "paragraphs": [
+          "Problemem nie jest logistyka — to ludzie. Wieczór panieński zbiera kobiety, które mogą się ledwo znać, połączone tylko więzią z panną młodą. Jest świadkowa, która ma mocne opinie na każdy temat, koleżanka ze studiów, która ma ciasny budżet i zbyt się wstydzi, by to powiedzieć, koleżanka z pracy, która właśnie dowiedziała się, że jest w ciąży, i siostra, która mieszka w innej strefie czasowej i zawsze późno odpisuje na grupowe wiadomości. Zarządzanie tą siatką społeczną, jednocześnie rezerwując hotele, planując atrakcje i ścigając zaliczki, jest naprawdę wyczerpujące.",
+          "Jest też presja perfekcji. W przeciwieństwie do zwykłego wyjazdu ze znajomymi wieczór panieński niesie emocjonalny ciężar. Ma być kamieniem milowym, ostatnim hurra, wspomnieniem, które panna młoda będzie pielęgnować na zawsze. Ta presja zamienia drobne wpadki — w pełni zarezerwowaną restaurację, deszczowe popołudnie, spór o to, gdzie zjeść — w nieproporcjonalne stresory. Organizatorka kończy, dźwigając ciężar, na który nikt się nie zapisał.",
+          "Trzecia warstwa to dynamika społeczna. Pinterest stworzył wyścig zbrojeń wymyślnych estetyk wieczorów panieńskich — jednakowe szarfy, skoordynowane pastelowe stroje, starannie dopracowane plany podróży pełne instagramowalnych momentów. Nie każda panna młoda tego chce. Nie każda grupa może sobie na to pozwolić. A czasem przepaść między instagramową wersją wieczoru panieńskiego a tym, co ludzie naprawdę chcą robić, powoduje realne tarcia. Rozwiązaniem są brutalnie szczere wczesne rozmowy — i odpowiednie narzędzia, by utrzymać grupę na bieżąco, nie zamieniając samego procesu planowania w źródło konfliktu."
+        ]
+      },
+      "fourQuestions": {
+        "id": "four-questions",
+        "title": "Zacznij tutaj: cztery pytania, które trzeba rozstrzygnąć najpierw",
+        "intro": "Zanim spojrzysz na jakikolwiek hotel czy atrakcję, odpowiedzcie na te cztery pytania jako grupa. Oszczędzą Wam tygodni przepychanek.",
+        "questions": [
+          {
+            "title": "Kto faktycznie jest w grupie?",
+            "text": "Potwierdź ostateczną listę gości, zanim zaplanujesz cokolwiek innego. Każda osoba dodana po fakcie zmienia matematykę budżetu, opcje noclegu i logistykę atrakcji. Bądź realistyczny: nie każdy, kto mówi „tak” w początkowej ekscytacji, dotrzyma słowa. Wyznacz twardy termin na potwierdzenia obecności — dwa tygodnie w zupełności wystarczą — i planuj wokół tych, którzy zadeklarowali się do tej daty."
+          },
+          {
+            "title": "Jaki jest uczciwy przedział budżetu?",
+            "text": "Nie ustalaj budżetu na podstawie tego, ile chciałabyś, żeby każdy mógł wydać. Zapytaj każdą osobę prywatnie, co jest dla niej komfortowe, znajdź medianę i planuj wokół tej liczby. Jeśli rozrzut jest duży, rozważ model na poziomach: podstawowy plan podróży, na który każdego stać, z opcjonalnymi dodatkami dla tych, którzy chcą więcej. Skorzystaj ze wspólnego narzędzia do śledzenia budżetu od pierwszego dnia, żeby nie było niespodzianek co do tego, ile wyjdzie na osobę."
+          },
+          {
+            "title": "Czego naprawdę chce panna młoda?",
+            "text": "Nie tego, co Pinterest mówi, że powinna chcieć. Nie tego, czego Ty chciałabyś na jej miejscu. Zapytaj ją bezpośrednio albo zapytaj osobę, która zna ją najlepiej. Niektóre panny młode chcą szalonego weekendu na Ibizie; inne naprawdę chcą przytulnego wypadu do spa z pięcioma najbliższymi przyjaciółkami i bez szarf w zasięgu wzroku. Nie da się zaplanować świetnego wieczoru panieńskiego bez wiedzy o tym, a zakładanie, że się wie, to najczęstszy błąd organizatorek."
+          },
+          {
+            "title": "Weekend czy dłużej?",
+            "text": "Trzydniowy weekend to złoty środek dla większości grup: na tyle długi, by czuć się jak prawdziwy wyjazd, na tyle krótki, by każdy mógł wziąć wolne z pracy i sobie na to pozwolić. Pięć do siedmiu dni sprawdza się przy grupach z elastycznymi harmonogramami i większymi budżetami — ale więcej dni oznacza więcej koordynacji, więcej posiłków do zaplanowania i więcej okazji, by dynamika grupy się zachwiała. Jeśli panna młoda nie chce konkretnie dłuższego wyjazdu, trzymaj się zwięzłości."
+          }
+        ]
+      },
+      "destinationTypes": {
+        "id": "destination-types",
+        "title": "Rodzaje kierunków",
+        "intro": "Kierunek nadaje ton wszystkiemu innemu. Oto cztery główne kategorie, co dają i do jakiego typu panny młodej każda pasuje najlepiej.",
+        "types": [
+          {
+            "title": "City break",
+            "text": "Długi weekend w tętniącym życiem mieście — Paryż, Barcelona, Amsterdam, Lizbona, Nashville, Nowy Orlean — daje grupie maksymalną elastyczność. Dzienne atrakcje, życie nocne, opcje restauracji i doświadczenia kulturalne są w zasięgu ręki. City breaki pasują grupom o różnych gustach, bo zawsze jest coś dla każdego. Wyzwaniem jest to, że najlepsze miasta na wieczory panieńskie są drogie, zwłaszcza jeśli chodzi o nocleg dla dużej grupy. Zarezerwuj mieszkanie z własną kuchnią zamiast kilku pokoi hotelowych — jest tańsze, bardziej towarzyskie i daje bazę na drinki przed wyjściami.",
+            "bestFor": "Grupy o różnych gustach, panny młode kochające kulturę i życie nocne, podróżujący po raz pierwszy"
+          },
+          {
+            "title": "Wypad na plażę",
+            "text": "Słońce, basen lub plaża, willa lub hotel. Wypad na plażę to klasyczny format wieczoru panieńskiego nie bez powodu: mały wysiłek planistyczny, dużo przyjemności. Dni układają się same wokół basenu, posiłki są łatwe, a noce mogą być tak spokojne lub tak żywe, jak grupa chce. Algarve, Majorka, Mykonos i chorwackie wybrzeże to europejskie faworyty. Dla grup z USA Nashville bije Miami wartością, ale Florida Keys trudno przebić dla małej, zżytej grupy. Główne ryzyko to, że wyjazdy na plażę mogą się powtarzać po drugim dniu — upewnij się, że masz jedną lub dwie zorganizowane atrakcje, by zakotwiczyć harmonogram.",
+            "bestFor": "Panny młode, które chcą odpocząć, grupy kochające słońce, długie weekendy"
+          },
+          {
+            "title": "Wypad do spa",
+            "text": "Nie każdy wieczór panieński chce hucznego weekendu. Niektóre panny młode naprawdę chcą wypadu do spa: masaże, sauny na podczerwień, baseny termalne, dobre jedzenie i wczesne noce. Ten format świetnie sprawdza się przy mniejszych, bliższych grupach — cztery do sześciu osób zamiast dwunastu. Jest też bardziej przewidywalny budżetowo niż city break, bo w dużej mierze zostajecie w jednym miejscu. Wyzwaniem jest to, że wymaga zaangażowania całej grupy; jeśli połowa gości oczekuje klubów, a druga połowa ciszy, nikt się dobrze nie bawi.",
+            "bestFor": "Introwertyczne panny młode, grupy nastawione na wellness, mniejsze kameralne spotkania"
+          },
+          {
+            "title": "Wyjazd przygodowy",
+            "text": "Surfing w Kraju Basków, wędrówki w Słowenii, rowerowy weekend w Toskanii, glamping w Walii. Przygodowe wieczory panieńskie zyskują na popularności, bo tworzą wspólne doświadczenia, które łączą grupę w sposób, w jaki rzadko robi to życie nocne. Historie z dnia, w którym wszystkie spadłyście z desek SUP, są lepsze niż jakakolwiek noc w klubie. Haczyk: wyjazdy przygodowe wymagają więcej fizycznego planowania, kwestii ubezpieczenia i szczerych rozmów o poziomach kondycji. Nie rezerwuj trudnej wędrówki i nie licz, że wszyscy dadzą radę.",
+            "bestFor": "Aktywne panny młode, grupy, które już razem spędzają czas na świeżym powietrzu"
+          }
+        ]
+      },
+      "budgetConversation": {
+        "id": "budget-conversation",
+        "title": "Rozmowa o budżecie, której nikt nie chce odbyć",
+        "paragraphs": [
+          "Pieniądze to moment, w którym plany wieczoru panieńskiego się rozpadają. Nie dlatego, że ludzie są złośliwi — dlatego, że organizatorki często odkładają prawdziwą rozmowę o budżecie, aż zaliczki trzeba wpłacić, a loty są zarezerwowane, w którym to momencie osoba, której naprawdę na to nie stać, czuje się uwięziona i pełna żalu. Odbycie rozmowy o budżecie wcześnie i wprost, zanim zostaną podjęte jakiekolwiek zobowiązania, to jedyna najważniejsza rzecz, jaką możesz zrobić dla dynamiki grupy.",
+          "Panna młoda tradycyjnie nie płaci swojej części noclegu i atrakcji — ten koszt rozkłada się między gości. Upewnij się, że wszyscy w grupie to rozumieją, zanim koszty zostaną sfinalizowane. Na wyjeździe dla ośmiu osób, gdzie nocleg kosztuje 1500 €, to 215 € na osobę zamiast 187 €. Niewiele w wartościach bezwzględnych, ale warto powiedzieć to wprost od początku.",
+          "Scentralizuj, co możesz. Zarezerwuj z góry nocleg, transfery i atrakcje grupowe przez jedną osobę lub wspólne narzędzie planistyczne, żeby pieniądze płynęły jasno i nikt nie był stratny przez tygodnie. Skorzystaj ze wspólnego narzędzia do śledzenia budżetu, by każdy widział bieżącą sumę — grupy, które śledzą wydatki na bieżąco, unikają niewygodnego rozliczenia na koniec wyjazdu, które potrafi popsuć ostatni dzień."
+        ],
+        "tips": [
+          {
+            "title": "Ustal budżet na osobę, a nie budżet całkowity",
+            "text": "Całkowity budżet 3000 € brzmi do ogarnięcia, dopóki nie zorientujesz się, że grupa to piętnaście osób, a to pokrywa mniej niż 200 € na osobę. Zawsze myśl w kategoriach na osobę od samego początku."
+          },
+          {
+            "title": "Oddziel rzeczy obowiązkowe od miłych dodatków",
+            "text": "Nocleg i kilka kluczowych atrakcji są niepodlegające negocjacji. Jednakowe stroje, niestandardowe dekoracje i wymyślne torby z prezentami są opcjonalne. Poznaj różnicę, zanim zaczniesz wydawać."
+          },
+          {
+            "title": "Z gracją radź sobie z nierównymi dochodami",
+            "text": "Jeśli ktoś w grupie ma ciaśniejszy budżet, pozwól mu dołożyć się inaczej — organizując kolację, koordynując logistykę, pokrywając mniejsze koszty — zamiast napinać się ponad stan lub czuć się wykluczonym. Hojność działa lepiej niż niezręczne rozmowy o dopłatach."
+          },
+          {
+            "title": "Korzystaj ze wspólnego narzędzia do śledzenia budżetu od pierwszego dnia",
+            "text": "Narzędzia takie jak wbudowane narzędzie do śledzenia budżetu WePlanify pozwalają każdemu zobaczyć, co zostało zapłacone, co jest należne i jaki będzie końcowy koszt na osobę — bez konieczności gonienia za arkuszami czy prośbami o przelew na koniec wyjazdu."
+          }
+        ]
+      },
+      "timeline": {
+        "id": "timeline",
+        "title": "Harmonogram planowania",
+        "intro": "Planowanie wieczoru panieńskiego ma to do siebie, że rozrasta się, by wypełnić każdy czas, jaki mu dasz — albo kompresuje się w stresową gorączkę na ostatnią chwilę, jeśli zostawisz to za późno. Oto realistyczny harmonogram, który utrzymuje sprawy w ruchu bez chaosu.",
+        "steps": [
+          {
+            "when": "3 miesiące przed",
+            "tasks": [
+              "Potwierdź listę gości i uzyskaj twarde potwierdzenia obecności",
+              "Odbądź szczerą rozmowę o budżecie z grupą",
+              "Uzgodnijcie terminy — skorzystaj z ankiety, by znaleźć, kiedy wszyscy są wolni",
+              "Wybierz typ kierunku na podstawie faktycznych preferencji panny młodej",
+              "Zarezerwuj nocleg (to ustala wszystko inne)",
+              "Załóż wspólną przestrzeń planowania, by każdy widział plan"
+            ]
+          },
+          {
+            "when": "6 tygodni przed",
+            "tasks": [
+              "Zarezerwuj transport — loty, pociąg lub transfer grupowy",
+              "Zbadaj i wybierz krótką listę atrakcji — skorzystaj z ankiety grupowej, by ją zawęzić",
+              "Zarezerwuj obowiązkowe atrakcje, które wymagają rezerwacji z wyprzedzeniem",
+              "Skonfiguruj wspólne narzędzie do śledzenia budżetu i rejestruj zaliczki na bieżąco",
+              "Potwierdź ograniczenia żywieniowe i potrzeby związane z dostępnością każdego gościa"
+            ]
+          },
+          {
+            "when": "2 tygodnie przed",
+            "tasks": [
+              "Wyślij grupie ostateczny plan podróży — jeden czysty dokument, a nie wątek wiadomości",
+              "Zarezerwuj restauracje na grupowe kolacje",
+              "Kup dekoracje lub spersonalizowane przedmioty (szarfy itp.), jeśli z nich korzystacie",
+              "Przypisz wspólną listę rzeczy do spakowania, by każdy wiedział, jakie wspólne rzeczy są ogarnięte",
+              "Dopilnuj zaległych płatności lub potwierdzeń obecności"
+            ]
+          },
+          {
+            "when": "Dzień przed",
+            "tasks": [
+              "Potwierdź szczegóły zameldowania w noclegu i udostępnij grupie",
+              "Spakuj mały zestaw awaryjny: plastry, środki przeciwbólowe, ładowarka do telefonu, przekąski",
+              "Miej narzędzie do śledzenia budżetu otwarte i aktualne",
+              "Wyśpij się dobrze — będziesz tego potrzebować"
+            ]
+          }
+        ]
+      },
+      "activities": {
+        "id": "activities",
+        "title": "Atrakcje",
+        "paragraphs": [
+          "Najlepszy plan podróży na wieczór panieński ma jasną strukturę, ale sporo przestrzeni na oddech. Przeładowane wyjazdy wydają się wycieczką szkolną; niedoplanowane dryfują w kłótnie o to, co robić dalej. Celuj w jedną lub dwie kotwiczące atrakcje dziennie, z wbudowanym wolnym czasem na spontaniczność.",
+          "Złota zasada: upewnij się, że co najmniej jedna atrakcja jest wybrana konkretnie dlatego, że panna młoda to uwielbia, a nie dlatego, że to standardowy repertuar wieczoru panieńskiego. Jeśli nienawidzi kursów robienia koktajli, ale kocha ceramikę, zarezerwuj ceramikę. Jeśli nigdy nie lubiła nocy w klubie, ale żyje dla długiej, zakrapianej kolacji z ulubionymi ludźmi, to postaw na to. Instagramowa wersja wieczoru panieńskiego nie jest celem.",
+          "Unikaj wymuszonej zabawy. Jednakowe stroje, szarfy i tabliczki „L” są w porządku, jeśli panna młoda to lubi — ale jeśli już wspomniała, że byłaby zażenowana, nie róbcie tego. Tak samo ze striptizerami, podchodami i grami opartymi na wprawianiu panny młodej w zakłopotanie. Zabawa, która wymaga, by wszyscy odgrywali radość, zwykle nie wypala."
+        ],
+        "ideas": [
+          {
+            "category": "W dzień",
+            "items": [
+              "Prywatny rejs żaglówką lub łodzią",
+              "Degustacja wina lub koktajli (zarezerwuj prywatną sesję, a nie wycieczkę turystyczną)",
+              "Poranek w spa z indywidualnymi zabiegami",
+              "Warsztaty ceramiki, wytwarzania szkła lub artystyczne",
+              "Lekcja SUP, surfingu lub kajakarstwa",
+              "Kurs gotowania z lokalnym kucharzem",
+              "Dzień zakupów w vintage w nowym mieście"
+            ]
+          },
+          {
+            "category": "Wieczorem",
+            "items": [
+              "Kolacja z prywatnym kucharzem w Waszym noclegu",
+              "Rezerwacja w restauracji, którą panna młoda chciała wypróbować",
+              "Kurs robienia koktajli (ale tylko jeśli naprawdę tego chce)",
+              "Karaoke — naprawdę niedoceniane przy grupach o różnych gustach",
+              "Wieczór w operze, klubie jazzowym lub na występie stand-up",
+              "Wieczór w kasynie (niskie stawki, wysoka wartość rozrywkowa)"
+            ]
+          },
+          {
+            "category": "Na spokojnie",
+            "items": [
+              "Wieczór filmowy w willi z filmem wybranym przez pannę młodą",
+              "Wieczór z grami planszowymi i dobrym winem",
+              "Spacer o zachodzie słońca, a po nim długa kolacja",
+              "Poranna sesja jogi lub pilatesu",
+              "Brunch na targu rolniczym"
+            ]
+          }
+        ],
+        "outro": "Zagłosujcie na atrakcje za pomocą ankiety grupowej, zanim cokolwiek zarezerwujecie — zapobiega to klasycznej sytuacji, w której organizatorka rezerwuje coś drogiego, a dwie osoby tego nienawidzą. Konfiguracja funkcji ankiet WePlanify zajmuje trzydzieści sekund i daje każdemu równy głos bez sześćdziesięciowiadomościowej debaty na grupowym czacie."
+      }
+    },
+    "faq": {
+      "title": "Najczęściej zadawane pytania",
+      "items": [
+        {
+          "q": "Z jakim wyprzedzeniem planować wieczór panieński?",
+          "a": "Na wyjazd weekendowy trzy miesiące to komfortowo — daje wystarczająco czasu, by uzgodnić terminy wszystkich, zarezerwować nocleg, zanim ceny skoczą, i zorganizować atrakcje bez pośpiechu. Jeśli planujesz coś bardziej wymyślnego (loty zagraniczne, wynajem willi, kierunki o wysokim popycie), cztery do pięciu miesięcy jest bezpieczniej. Na lokalne wyjście wieczorne lub prosty wypad bez wyjazdu zwykle wystarczy sześć tygodni. Największy błąd to czekanie do dwóch miesięcy przed ślubem, gdy harmonogram każdego jest już zapchany przymiarkami sukni i innymi wydarzeniami weselnymi."
+        },
+        {
+          "q": "Jak radzić sobie z różnymi budżetami w grupie?",
+          "a": "Odbądź rozmowę wcześnie i prywatnie. Zapytaj każdą osobę indywidualnie, ile jest jej komfortowo wydać — nie w grupowej wiadomości, gdzie presja społeczna wykrzywia odpowiedzi. Znajdź medianę i planuj wokół niej. Zaproponuj opcjonalne dodatki dla tych, którzy chcą wydać więcej, zamiast planować drogi wyjazd i liczyć, że wszyscy jakoś dadzą radę. Jeśli ktoś naprawdę nie może pozwolić sobie na wyjazd w planowanej formie, pozwól mu dołożyć się inaczej — koordynując logistykę, ogarniając komunikację, pokrywając mniejszy koszt — zamiast prosić go o napinanie się ponad stan."
+        },
+        {
+          "q": "Jaki jest dobry budżet na wyjazd na wieczór panieński na osobę?",
+          "a": "Na city break w Wielkiej Brytanii lub Europie 300 do 600 funtów na osobę na trzynocny wyjazd pokrywa transport, nocleg i kilka atrakcji, jeśli podejdziesz do tego sprytnie. Wyjazdy na plażę lub do willi w południowej Europie kosztują 400 do 800 € na osobę na długi weekend. Wyjazdy krajowe w USA bardzo się różnią — weekendy w Nashville, Miami i Nowym Jorku mogą kosztować 500 do 1200 $ na osobę w zależności od rozmiaru grupy i typu noclegu. Pamiętaj: panna młoda tradycyjnie nie płaci swojej części, więc uwzględnij ten koszt w wyliczeniu na osobę od początku."
+        },
+        {
+          "q": "Ile osób to za dużo na wyjazd na wieczór panieński?",
+          "a": "Osiem do dziesięciu osób to praktyczny górny limit dla spójnego wyjazdu. Powyżej tego rezerwacje restauracji stają się koszmarem, atrakcje wymagają wykupienia całych obiektów, a grupa nieuchronnie się fragmentuje. Duże grupy oznaczają też więcej narzutu logistycznego — więcej osób do skoordynowania, więcej zmiennych do ogarnięcia, więcej szans, że ktoś wypadnie na ostatnią chwilę i zaburzy budżet. Jeśli lista gości to naprawdę piętnaście plus, rozważ podział na dwie grupy z osobnymi wyjazdami albo wybór formatu, który z założenia działa dla dużych grup — willa z prywatnym kucharzem, wynajęta łódź, wykupienie całego obiektu."
+        },
+        {
+          "q": "Co jeśli panna młoda nie chce tradycyjnego wieczoru panieńskiego?",
+          "a": "Zaplanuj to, czego naprawdę chce. Nie ma reguły, która mówi, że wieczór panieński musi obejmować szarfy, striptizerów czy noc w klubie. Jeśli chce cichego weekendu w spa z trzema przyjaciółkami, to jest wieczór panieński. Jeśli chce wyjazdu na wędrówki w górach, to jest wieczór panieński. Najlepszy sposób, by się dowiedzieć, to zapytać ją bezpośrednio — albo zapytać jej najbliższą przyjaciółkę lub siostrę. Najgorsze wieczory panieńskie to te, na których organizatorka zaplanowała wyjazd, na który sama chciała pojechać, zamiast tego, na czym naprawdę zależy pannie młodej."
+        },
+        {
+          "q": "Jak zadbać o zadowolenie wszystkich na wyjeździe na wieczór panieński?",
+          "a": "Nie zadbasz — a próbowanie tego Cię wyczerpie. Celuj w to, by wszyscy dobrze się bawili przez większość czasu, a nie w powszechne szczęście w każdej chwili. Wbuduj różnorodność w harmonogram: aktywnie i na spokojnie, grupowo i wolny czas, wczesne noce i te późniejsze. Korzystaj z ankiet, by podejmować decyzje grupowe, żeby nikt nie czuł się przewalcowany. Ustal jasne oczekiwania z góry co do budżetu, formalności i tego, co jest, a co nie jest zaplanowane. I pogódź się z tym, że niektórym trudniej dogodzić niż innym — to prawda dla każdego wyjazdu grupowego, nie tylko wieczorów panieńskich."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Gotowa zaplanować idealny wyjazd na wieczór panieński?",
+      "text": "WePlanify zbiera całą Twoją grupę w jednym miejscu — ankiety o kierunek, wspólny plan podróży, narzędzie do śledzenia budżetu i listy rzeczy do spakowania. Przestań zarządzać chaosem na grupowym czacie i zacznij naprawdę planować razem.",
+      "button": "Zaplanuj wieczór panieński"
+    },
+    "discoverMore": "Odkryj więcej",
+    "readMore": "Czytaj dalej"
+  }
+}

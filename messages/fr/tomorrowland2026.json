@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Tomorrowland 2026 : Voyage Boom — Billets, DreamVille, Pearls",
+    "description": "Tout sur Tomorrowland 2026 à Boom (17-19 et 24-26 juillet) : Global Journey sold out, Eurostar depuis Paris, niveaux DreamVille, hôtels à Anvers, le cashless Pearl et le budget partagé pour les week-ends Consciencia."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Voyage Tomorrowland 2026"
+  },
+  "hero": {
+    "tag": "Guide du festival & planificateur · Boom 2026",
+    "title": "Tomorrowland 2026 : Le Guide Voyage à Boom",
+    "readTime": "9 min de lecture",
+    "ctaButton": "Cadre le Tomorrowland entre potes",
+    "ctaNote": "Gratuit · pensé pour le groupe · FR/EN",
+    "imageAlt": "Tomorrowland 2026 — des fans devant la Mainstage ornée avec pyrotechnies dans la forêt belge au crépuscule"
+  },
+  "facts": {
+    "heading": "Les chiffres du festival",
+    "weekendsLabel": "Week-ends",
+    "weekendsValue": "17-19 & 24-26 juil",
+    "siteLabel": "Site",
+    "stagesLabel": "Scènes",
+    "stagesValue": "500+ artistes",
+    "attendanceLabel": "Affluence",
+    "attendanceValue": "total"
+  },
+  "stakes": {
+    "p1": "Deux week-ends du festival électronique le plus over-produit de la planète, dans un parc provincial de 75 hectares entre Anvers et Bruxelles. Tomorrowland 2026 arrive sous le thème « Consciencia » — une narration méditative qui, fidèle à la maison, est surtout l'excuse à une Mainstage encore plus ambitieuse. Calvin Harris fait ses débuts au Tomorrowland Belgium, aux côtés de David Guetta, Martin Garrix, Armin van Buuren, Hardwell, des Chainsmokers, FISHER, John Summit et Sara Landry sur 16 scènes. Le festival est strictement +18, et l'opération autour de la musique — l'Eurostar depuis Paris-Nord, le bracelet Pearl, la tente DreamVille partagée à cinq, la file de navette retour à Anvers à 4h du matin — c'est autour de ça que 70 000 personnes par jour s'organisent vraiment.",
+    "p2": "WePlanify, c'est le poste de commandement gratuit et partagé pour les fans qui descendent à Boom — Eurostar, DreamVille ou appartement à Anvers, float Pearl, grille du festival et budget au même endroit, en français ou anglais."
+  },
+  "toc": {
+    "title": "Sur cette page",
+    "lineup": "L'affiche 2026",
+    "tickets": "Billetterie, Global Journey & revente",
+    "gettingThere": "Rejoindre Boom",
+    "sleeping": "DreamVille vs Anvers vs Bruxelles",
+    "pearls": "Pearls & pratique sur site",
+    "planning": "Organiser le voyage entre potes",
+    "budget": "Astuces budget",
+    "faq": "Questions fréquentes"
+  },
+  "lineup": {
+    "title": "L'Affiche 2026",
+    "subtitle": "16 scènes, plus de 500 artistes, deux week-ends. La ligne directrice des têtes d'affiche et les noms qui valent un voyage.",
+    "items": [
+      { "stop": "Calvin Harris — premier Tomorrowland Belgium", "desc": "La plus grosse annonce du cycle 2026. Calvin Harris a déjà joué l'édition Brasil mais jamais la Belgique — le créneau Mainstage, c'est celui devant lequel toute la foule sera, peu importe ce qu'il se passe sur les 15 autres scènes à la même heure." },
+      { "stop": "Les piliers grand public", "desc": "David Guetta, Martin Garrix, Armin van Buuren, Hardwell, The Chainsmokers, Dimitri Vegas & Like Mike — les habitués de la maison. Prévisibles, mais sur la production Mainstage de Tomorrowland, même les sets les plus joués reprennent un coup de neuf. Sebastian Ingrosso est aussi à l'affiche, souvent le véhicule favori du festival pour un moment Swedish House Mafia officieux." },
+      { "stop": "Les pointures techno et dubstep", "desc": "Sara Landry, REZZ, Subtronics, ILLENIUM, Miss Monique, Indira Paganotto. Le Core, Atmosphere et autres scènes secondaires tournent à un niveau qui dépasse souvent la Mainstage en qualité — la mécanique Tomorrowland, c'est accepter de quitter la tête d'affiche pour ces créneaux-là." },
+      { "stop": "Les ancrages future et house", "desc": "FISHER, John Summit, NERVO, Marlon Hoffstadt, Chase & Status. Les créneaux qui remplissent les débuts de soirée et définissent la courbe d'énergie de la journée — arriver tard, c'est les rater et brûler son pic sur le mauvais set." },
+      { "stop": "Les deux week-ends ne sont pas identiques", "desc": "La plupart des têtes d'affiche jouent les deux week-ends, mais les noms secondaires et les B2B diffèrent souvent. Vérifiez la grille par week-end avant de finaliser celui que vous visez — Week-end 1 (17-19 juillet) et Week-end 2 (24-26 juillet) ne sont pas des copies parfaites l'un de l'autre." }
+    ]
+  },
+  "tickets": {
+    "title": "Billetterie, Global Journey & Revente Officielle",
+    "subtitle": "Le calendrier de vente est passé — le seul chemin restant, c'est la plateforme de revente officielle. Le reste, c'est un scan d'entrée refusé.",
+    "card1": {
+      "tag": "Canal 1",
+      "title": "Global Journey (sold out)",
+      "desc": "Bundle vol ou train, hôtel à Bruxelles ou Anvers, pass festival et navette quotidienne. Sold out mondialement le 17 janvier 2026 — le seul retour, c'est des annulations, et il n'y a pas de liste d'attente publique. Surveillez le portail officiel."
+    },
+    "card2": {
+      "tag": "Canal 2",
+      "title": "Revente billet officielle",
+      "desc": "Pass jour (à partir de 138 €) et Full Madness week-end (à partir de 304 € pré-vente, 365 € vente mondiale) — les ventes classiques ont fermé fin janvier. La plateforme officielle de revente Tomorrowland est le seul marché secondaire légitime. Des annonces apparaissent ponctuellement, y compris la semaine du festival."
+    },
+    "card3": {
+      "tag": "À éviter",
+      "title": "Revente parallèle",
+      "desc": "Telegram, Marketplace Facebook, Vinted, Viagogo : les faux pass sont monnaie courante et le scan d'entrée Tomorrowland est strict. Les billets sont nominatifs et liés à votre nom sur le bracelet — vous ne pouvez pas transférer légalement en dehors du canal officiel."
+    }
+  },
+  "gettingThere": {
+    "title": "Rejoindre Boom",
+    "subtitle": "Eurostar jusqu'à Bruxelles-Midi, puis train SNCB jusqu'à Boom, puis navette festival gratuite jusqu'aux portes. Le train est l'évidence depuis Paris, Lille et Londres.",
+    "parisLabel": "Depuis Paris",
+    "parisItems": [
+      "→ Eurostar (ex-Thalys) depuis Paris-Nord vers Bruxelles-Midi",
+      "→ ~1h22 jusqu'à Bruxelles-Midi, à partir de ~30 € en avance",
+      "→ Train SNCB vers Boom : toutes les ~30 min, ~32 min, 6-10 €",
+      "→ Bus De Lijn depuis Antwerp Groenplaats : ~47 min, ~4 €",
+      "→ Navette festival gratuite de la gare de Boom aux portes"
+    ],
+    "otherLabel": "Depuis Lille, Londres ou en avion",
+    "otherTitle": "Autres routes",
+    "otherItems": [
+      "→ Lille-Europe → Bruxelles-Midi : 35-50 min en Eurostar",
+      "→ Londres St Pancras → Bruxelles-Midi : ~1h55 direct",
+      "→ Bruxelles-Zaventem (BRU) : 33 km / ~20 min par la route",
+      "→ Aéroport d'Anvers (ANR) : plus proche mais moins desservi",
+      "→ Les derniers trains depuis Boom partent avant le set de clôture — prévoyez hôtel proche ou taxi"
+    ]
+  },
+  "sleeping": {
+    "title": "DreamVille vs Anvers vs Bruxelles",
+    "subtitle": "Trois vraies options une fois le Global Journey hors jeu. La bonne dépend de si vous échangez confort contre proximité.",
+    "option1": {
+      "tag": "Option 1",
+      "desc": "Sur le site, à pied des portes, ouvert 5 jours du jeudi vers 11h au lundi. Niveaux de Magnificent Greens (tente perso) à Solara (nouveauté 2026, avec prises) et Marivela (clim + salle de bain privée) au-dessus de 2 700 € par personne. L'expérience Tomorrowland authentique — si vous trouvez encore un créneau sur la revente."
+    },
+    "option2": {
+      "tag": "Option 2",
+      "title": "Anvers",
+      "desc": "20 km au nord, 30 min de train jusqu'à Boom, hôtels 150-400 €/nuit sur les week-ends festival. La meilleure base si vous voulez vraie bouffe, vrais bars et une douche qui marche après chaque journée. Réservez à pied d'Antwerpen-Centraal — le train de 6h depuis Boom n'est pas une négociation taxi agréable."
+    },
+    "option3": {
+      "tag": "Option 3",
+      "title": "Bruxelles",
+      "desc": "30 km au sud, offre hôtelière plus large et meilleures connexions aéroport (BRU à 20 min de Bruxelles). Le trajet vers Boom est plus long (~45 min) mais Bruxelles a souvent des chambres quand Anvers est complet. À vérifier si votre vol atterrit à BRU."
+    }
+  },
+  "midCta": {
+    "title": "DreamVille ou Anvers, vous avez tranché ?",
+    "subtitle": "Verrouille l'Eurostar, l'hébergement et le float Pearl dans un plan partagé.",
+    "button": "Lance le plan"
+  },
+  "pearls": {
+    "title": "Pearls & Pratique sur Site",
+    "subtitle": "La monnaie Tomorrowland, c'est le Pearl — 1,82 € l'unité, vendu uniquement par le festival, dépensé uniquement au festival. Anticipez le float ou la file mangera votre set.",
+    "card1": {
+      "title": "Comment marche le Pearl",
+      "desc": "20 € achètent 11 Pearls — environ 1,82 € l'unité. Rechargez en ligne avant d'arriver : chaque 100 € en ligne donne un bonus de 2 Pearls, et le solde non utilisé est remboursé automatiquement après. Le rechargement sur place marche aussi, mais le solde non utilisé doit être réclamé manuellement avant la deadline. Désignez une personne du groupe responsable du float Pearl et faites tourner les tournées."
+    },
+    "card2": {
+      "title": "Interdictions & règles DreamVille",
+      "desc": "Pas de verre, pas d'armes, pas de drogue, pas d'animaux, pas d'objets feu, pas de bouffe ou boisson extérieure sur les zones principales. DreamVille est plus permissif : chaque campeur peut amener 12 bières, 12 sodas, 12 bouteilles d'eau et de la bouffe non périssable. Vérifiez la dernière liste sur le site officiel avant de faire le sac — les règles se durcissent d'année en année."
+    },
+    "card3": {
+      "title": "Météo fin juillet à Boom",
+      "desc": "Maxi moyen 23°C, mini 15°C. Il pleut environ 12 jours par mois — ~27 % de chance quotidienne pendant le festival. L'été belge oscille entre canicule et averse d'un jour à l'autre, donc emportez à la fois crème solaire et poncho. Des chaussures imperméables solides pour la boue DreamVille après une grosse pluie."
+    }
+  },
+  "planning": {
+    "title": "Organiser le Voyage entre Potes"
+  },
+  "budget": {
+    "title": "Astuces Budget",
+    "p2": "Les prix Eurostar grimpent vite sur le vendredi aller et le dimanche/lundi retour. Les créneaux off-peak (très tôt le vendredi matin, milieu de lundi pour le retour) restent réservables aux tarifs avancés. Réserver toute la bande sur le même train fait économiser à la fois en argent et en chaos à Bruxelles-Midi quand la correspondance SNCB est à quelques minutes seulement.",
+    "p3": "Le Pearl sur place, c'est le tueur silencieux du budget. Tournées, bouffe, merch — une journée Tomorrowland moyenne sort à 80-120 € par personne sur le bracelet même sur un rythme tranquille. Rechargez en ligne pour récupérer le bonus de 2 Pearls par 100 € et éviter la file sur place, mais rechargez 30 € de moins que ce que vous estimez : un rechargement à mi-parcours prend 10 minutes, alors qu'un gros remboursement post-festival, c'est de l'argent que vous n'aviez pas pendant le week-end."
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "items": [
+      { "q": "Quand et où se tient Tomorrowland 2026 ?", "a": "Deux week-ends à De Schorre à Boom, en Belgique, entre Anvers et Bruxelles. Week-end 1 du vendredi 17 au dimanche 19 juillet 2026 ; week-end 2 du vendredi 24 au dimanche 26 juillet 2026. Le festival est strictement +18 (né en 2008 ou avant) et le thème 2026 est « Consciencia ». 16 scènes, plus de 500 artistes sur les deux week-ends, environ 70 000 personnes par jour pour un total d'environ 400 000 sur les onze jours de festival." },
+      { "q": "Tomorrowland 2026 est-il sold out ?", "a": "Concrètement oui. Les Global Journey ont été sold out dans le monde entier le 17 janvier 2026, la vente belge le 24 janvier et la vente mondiale du 31 janvier partent habituellement en moins d'une heure. Le seul chemin restant, c'est la revente officielle sur la plateforme Tomorrowland — des billets réapparaissent quand des festivaliers annulent, parfois chaque jour, parfois quelques jours seulement avant l'ouverture. Les billets achetés hors canaux officiels (Telegram, Vinted, Marketplace) sont régulièrement refusés au scan, donc ne jouez pas avec le feu." },
+      { "q": "Comment rejoindre Boom depuis Paris, Lille ou Londres ?", "a": "Depuis Paris-Nord, Eurostar (qui a absorbé Thalys en 2023) rejoint Bruxelles-Midi en 1h22 environ, à partir de 30 € en réservant à l'avance. Depuis Lille-Europe, comptez 35 à 50 min. Depuis Londres St Pancras, train direct en ~1h55. De Bruxelles-Midi ou Anvers-Centraal, les trains SNCB partent toutes les ~30 min vers Boom (~32 min, 6-10 €), puis une navette festival gratuite relie la gare de Boom aux portes. En avion, Bruxelles-Zaventem (BRU) est à 33 km / 20 min ; l'aéroport d'Anvers est plus proche mais moins desservi." },
+      { "q": "Quels sont les niveaux de camping DreamVille ?", "a": "DreamVille, c'est le village de camping sur site, ouvert 5 jours du jeudi vers 11h au lundi. Nouveauté 2026, le tier Solara intègre des prises électriques — un vrai upgrade pour qui a déjà passé un festival à chasser une borne de charge. Marivela propose climatisation et salle de bain privée. Magnificent Greens, c'est l'option tente personnelle ; Easy Tent et Spectacular sont des tentes prémontées ; Relax et Cabana se situent entre les deux. Les tiers premium commencent autour de 2 700 € par personne pour le week-end ; la grille tarifaire varie d'une année sur l'autre." },
+      { "q": "Comment fonctionne le cashless Pearl ?", "a": "Sur site, la seule monnaie c'est le Pearl. 20 € achètent 11 Pearls (environ 1,82 € l'unité). Rechargez en ligne avant le festival — chaque 100 € rechargé en ligne donne un bonus de 2 Pearls, et le solde non utilisé est remboursé automatiquement après le festival. Le rechargement sur site est possible mais le solde non utilisé doit être réclamé manuellement avant la deadline annoncée. Prévoyez un plan B au rechargement, le réseau sur place rame souvent aux heures de pointe." },
+      { "q": "Où dormir si on n'a pas eu de Global Journey ?", "a": "Trois options honnêtes. DreamVille sur le site du festival (à pied des portes, l'expérience festival complète), Anvers centre (~20 km au nord, 30 min en train, hôtels 150-400 €/nuit sur le festival, beaux restos et bars), ou Bruxelles (~30 km au sud, offre hôtelière plus large mais trajet plus long). Un appartement partagé entre 4-6 potes à Anvers bat souvent les chambres d'hôtel de 30-50 %." },
+      { "q": "Quel est le prix d'un billet Tomorrowland 2026 ?", "a": "Tarifs pré-vente 2026 : Day Pass à partir de 138 €, pass week-end Full Madness à partir de 304 € en pré-vente et 365 € en vente mondiale, DreamVille Weekend à partir de 410 €. Les packages Global Journey (vol ou train + hôtel + pass Full Madness + navette) tournaient autour de 2 000 € pour les villes européennes — sold out mondialement le 17 janvier 2026. Les tiers DreamVille premium (Solara, Marivela) démarrent autour de 2 700 € par personne. Les billets sur la revente officielle restent proches du prix d'origine ; tout ce qui sort de ce canal est un risque d'arnaque." },
+      { "q": "Comment organiser un Tomorrowland entre potes ?", "a": "Les billets et packages sont individuels — gardez-les hors du pot commun. Le pot commun, c'est pour le transport (Eurostar, navette, taxi), l'hébergement, les restos avant et après, et le float Pearl sur place. Posez les catégories dès le départ (transport, hôtel, restos, Pearls) pour ne pas finir le calcul au retour. WePlanify garde chaque catégorie au propre sur les deux week-ends si votre groupe se sépare, et fait tourner les avances dans la bande." }
+    ]
+  },
+  "discover": {
+    "title": "Découvrir aussi",
+    "hellfest": { "title": "Voyage Hellfest 2026", "desc": "Quatre jours de metal à Clisson.", "cta": "En savoir plus →" },
+    "champions": { "title": "Finale Ligue des Champions", "desc": "PSG vs Arsenal à Budapest.", "cta": "En savoir plus →" },
+    "tripWithFriends": { "title": "Voyage entre Amis", "desc": "Organisez n'importe quel voyage de groupe.", "cta": "En savoir plus →" },
+    "groupGuide": { "title": "Guide Voyage de Groupe", "desc": "Le guide complet étape par étape.", "cta": "Lire le guide →" }
+  },
+  "cta": {
+    "title": "Construisez Votre Voyage Tomorrowland",
+    "subtitle": "Eurostar, DreamVille ou appartement à Anvers, float Pearl, grille du festival, budget partagé — un seul plan, toute votre bande alignée. Choisissez votre week-end ci-dessous.",
+    "buttonW1": "Cadre le Week-end 1 (17-19 juil)",
+    "buttonW2": "Ou Week-end 2 (24-26 juil) →"
+  },
+  "jsonld": {
+    "eventDescription": "Tomorrowland Belgium 2026, le festival électronique deux week-ends à De Schorre à Boom, les 17-19 juillet et 24-26 juillet 2026. Plus de 500 artistes sur 16 scènes, thème « Consciencia », têtes d'affiche Calvin Harris (première au Tomorrowland Belgium), David Guetta, Martin Garrix et Armin van Buuren.",
+    "articleHeadline": "Tomorrowland 2026 : Le Guide Voyage",
+    "howToName": "Comment organiser un voyage à Tomorrowland 2026 à Boom",
+    "howToDescription": "À deux mois, voici comment verrouiller le voyage : veille revente officielle, Eurostar depuis Paris, DreamVille vs Anvers, float Pearl et budget partagé.",
+    "howToSteps": [
+      { "name": "Identifier qui a un pass et qui en cherche encore", "text": "Le Global Journey est sold out et la vente mondiale a fermé en minutes — lancez un sondage dans le groupe pour distinguer qui est confirmé, qui est sur la revente officielle, et quel week-end (W1 17-19 ou W2 24-26 juillet) chacun cible. Se répartir sur les deux week-ends change tout : transport, hébergement, et si vous partez ensemble ou non." },
+      { "name": "Réserver Eurostar et hébergement avant la prochaine hausse", "text": "L'Eurostar Paris-Bruxelles à 30 € en avance grimpe vers 100-150 € sur le vendredi/samedi du festival et le retour du lundi. Verrouillez un même aller et un même retour pour la bande, plus DreamVille si vous l'avez ou un appartement à Anvers à pied d'Antwerpen-Centraal." },
+      { "name": "Recharger le float Pearl en ligne et poser un budget partagé", "text": "Les billets et packages restent individuels. Le reste (Eurostar, hébergement, taxis, restos à Anvers avant et après, rechargements Pearl) va dans un pot commun. Rechargez vos Pearls en ligne pour récupérer le bonus de 2 Pearls par 100 € et éviter la file sur place." },
+      { "name": "Planifier les trois jours scène par scène", "text": "16 scènes, plus de 500 artistes, des clashs partout — partagez la grille à l'avance pour que le groupe sache qui est à la Mainstage pour le closing vs qui est à Atmosphere ou Core. Bloquez aussi le retour vers Anvers dans la timeline : les dernières navettes se remplissent vite après les sets de fin." }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "breadcrumb": {
+    "home": "Inicio",
+    "travelGuides": "Guías de viaje"
+  },
+  "jsonld": {
+    "touristType": "Viajero de ocio"
+  },
+  "hero": {
+    "titleSuffix": "guía de viaje",
+    "perDay": " /día",
+    "cta": "Planificar mi viaje",
+    "ctaNote": "Construye tu itinerario con tu grupo — gratis, 30 segundos."
+  },
+  "quickFacts": {
+    "heading": "Datos rápidos",
+    "capital": "Capital",
+    "language": "Idioma",
+    "currency": "Moneda",
+    "timezone": "Zona horaria",
+    "plug": "Enchufe",
+    "driving": "Conducción",
+    "driveLeft": "Izquierda",
+    "driveRight": "Derecha",
+    "visa": "Visado"
+  },
+  "bestSeason": {
+    "heading": "Cuándo ir",
+    "subtitle": "Tres ventanas que conviene conocer: la mejor, la intermedia y la que hay que evitar.",
+    "best": "Mejor época",
+    "shoulder": "Temporada media",
+    "avoid": "Evitar"
+  },
+  "mustSee": {
+    "heading": "Lugares imprescindibles",
+    "subtitle": "Lugares que justifican el viaje por sí solos. Toca para abrir en Maps."
+  },
+  "specialties": {
+    "heading": "Especialidades que vale la pena probar",
+    "subtitle": "Comida, bebidas y experiencias que este país hace mejor que ningún otro."
+  },
+  "regions": {
+    "heading": "Regiones que conviene conocer",
+    "subtitle": "Para enfocar tu viaje según el tiempo que tengas y lo que busques."
+  },
+  "itineraries": {
+    "heading": "Itinerarios sugeridos",
+    "subtitle": "Tres duraciones, según el tiempo. Copia cualquiera a WePlanify.",
+    "daysSuffix": "d"
+  },
+  "budget": {
+    "heading": "Presupuesto diario",
+    "subtitle": "Por persona, sin vuelos. Tres niveles de comodidad.",
+    "perDay": "/día"
+  },
+  "tips": {
+    "heading": "Lo que se debe y no se debe hacer culturalmente",
+    "subtitle": "Pequeños gestos que importan — y los que hacen sentir incómodos a todos."
+  },
+  "cta": {
+    "heading": "Planifica tu viaje a {country} con tu grupo",
+    "body": "Lleva esta guía a WePlanify, invita al grupo y construid el viaje juntos. Mapa compartido, encuestas, presupuesto compartido — todo gratis.",
+    "button": "Empezar a planificar — gratis"
+  }
+}

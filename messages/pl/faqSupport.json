@@ -1,0 +1,37 @@
+{
+  "title": "Najczęściej zadawane\npytania",
+  "supportTitle": "Potrzebujesz pomocy w planowaniu podróży?",
+  "supportDescription": "Masz pytanie o jakąś funkcję?\nPotrzebujesz pomysłów na grupowy plan podróży?\nNasz zespół odpowiada szybko i pomoże Ci jak najlepiej wykorzystać WePlanify podczas kolejnej grupowej przygody.\n\nBo doświadczenie użytkownika jest dla nas priorytetem.",
+  "supportButtonText": "Skontaktuj się z naszym zespołem",
+  "supportButtonUrl": "/contact",
+  "items": [
+    {
+      "question": "Czy WePlanify jest darmowe?",
+      "answer": "Tak, WePlanify jest obecnie darmowe dla beta testerów. W przyszłości planujemy wprowadzić plany premium z zaawansowanymi funkcjami, ale podstawowe funkcje zawsze pozostaną darmowe."
+    },
+    {
+      "question": "Czy każdy może uczestniczyć w planowaniu podróży?",
+      "answer": "Oczywiście! Każdy uczestnik może zgłaszać pomysły, głosować na atrakcje, śledzić budżet i przeglądać plan podróży w czasie rzeczywistym. Goście nie potrzebują konta."
+    },
+    {
+      "question": "Jak założyć konto?",
+      "answer": "Wystarczy kliknąć „Zacznij teraz” i zarejestrować się przy użyciu adresu e-mail lub konta Google. Utworzenie pierwszej podróży zajmuje mniej niż 30 sekund."
+    },
+    {
+      "question": "Czy moje dane są bezpieczne?",
+      "answer": "Tak, traktujemy bezpieczeństwo poważnie. Twoje dane są szyfrowane i bezpiecznie przechowywane. Nigdy nie udostępniamy Twoich danych osobowych podmiotom trzecim."
+    },
+    {
+      "question": "Czy mogę korzystać z WePlanify na telefonie?",
+      "answer": "Tak! WePlanify działa na każdym urządzeniu — komputerze, tablecie czy smartfonie. Dostęp do swoich podróży masz wszędzie dzięki naszej responsywnej aplikacji internetowej."
+    },
+    {
+      "question": "Jak skontaktować się z pomocą techniczną?",
+      "answer": "Możesz się z nami skontaktować przez stronę kontaktową lub mailowo pod adresem support@weplanify.com. Zazwyczaj odpowiadamy w ciągu 24 godzin."
+    },
+    {
+      "question": "Jak zaprosić znajomych na moją podróż?",
+      "answer": "Udostępnij znajomym swój unikalny link do podróży przez e-mail, WhatsApp lub dowolny komunikator. Mogą dołączyć od razu, bez zakładania konta."
+    }
+  ]
+}

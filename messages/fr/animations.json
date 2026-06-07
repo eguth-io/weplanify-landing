@@ -1,0 +1,255 @@
+{
+  "explorerFilters": {
+    "activity": "Activités",
+    "restaurant": "Restaurants",
+    "hotel": "Hébergement",
+    "transport": "Transport"
+  },
+  "explorerBooked": "Réservé",
+  "liveVoting": {
+    "question": "Où dormir à Lisbonne ?",
+    "category": "Hébergement",
+    "creator": "Marie",
+    "createdLabel": "Créé le",
+    "endsLabel": "Termine le",
+    "createdDate": "14 mai",
+    "endsDate": "20 mai",
+    "dayRange": "15 → 17 mai",
+    "status": "Voter maintenant",
+    "single": "Choix unique",
+    "options": "options",
+    "yourVote": "Ton vote",
+    "votes": "votes",
+    "vote": "vote",
+    "sendReminders": "Rappels",
+    "seeOnTimeline": "Timeline",
+    "comments": "Commentaires",
+    "details": "Détails"
+  },
+  "swipeExplorer": {
+    "header": "Découvre Tokyo",
+    "category": {
+      "activity": "Activité",
+      "food": "Cuisine",
+      "hotel": "Hôtel"
+    },
+    "liked": "{count, plural, one {aimé} other {aimés}}",
+    "like": "J'AIME",
+    "nope": "NON"
+  },
+  "liveCollaboration": {
+    "dayOf": "Jour 2 sur 5",
+    "date": "Mer. 15 mai",
+    "city": "Paris",
+    "booked": "Réservé"
+  },
+  "explorerCards": {
+    "activity": [
+      {
+        "title": "Tour Eiffel — billet 2e étage",
+        "city": "Paris 7e",
+        "price": "29€",
+        "imageAlt": "Tour Eiffel"
+      },
+      {
+        "title": "Musée du Louvre — billet daté",
+        "city": "Paris 1er",
+        "price": "22€",
+        "imageAlt": "Pyramide du Louvre"
+      },
+      {
+        "title": "Croisière commentée sur la Seine",
+        "city": "Bateaux Parisiens",
+        "price": "15€",
+        "imageAlt": "Croisière sur la Seine"
+      },
+      {
+        "title": "Sainte-Chapelle — billet daté",
+        "city": "Île de la Cité",
+        "price": "13€",
+        "imageAlt": "Sainte-Chapelle"
+      }
+    ],
+    "restaurant": [
+      {
+        "title": "Le Mun",
+        "city": "Paris 8e · coréen-français",
+        "price": "€€€€",
+        "imageAlt": "Salle gastronomique"
+      },
+      {
+        "title": "Septime",
+        "city": "Paris 11e · bistronomie",
+        "price": "€€€",
+        "imageAlt": "Bistronomie"
+      },
+      {
+        "title": "Marché des Enfants Rouges",
+        "city": "Paris 3e · marché couvert",
+        "price": "€",
+        "imageAlt": "Marché couvert"
+      },
+      {
+        "title": "Du Pain et des Idées",
+        "city": "Paris 10e · boulangerie",
+        "price": "€",
+        "imageAlt": "Boulangerie"
+      }
+    ],
+    "hotel": [
+      {
+        "title": "Hôtel du Louvre",
+        "city": "Paris 1er · 5★",
+        "price": "180€/n",
+        "imageAlt": "Façade de l'hôtel",
+        "selectedDates": "15 → 17 mai"
+      },
+      {
+        "title": "Hôtel Particulier Montmartre",
+        "city": "Paris 18e · boutique",
+        "price": "320€/n",
+        "imageAlt": "Hôtel de charme à Montmartre"
+      },
+      {
+        "title": "Loft Canal Saint-Martin",
+        "city": "Paris 10e · entier",
+        "price": "120€/n",
+        "imageAlt": "Canal Saint-Martin"
+      },
+      {
+        "title": "Generator Paris",
+        "city": "Paris 10e · auberge",
+        "price": "45€/n",
+        "imageAlt": "Auberge"
+      }
+    ],
+    "transport": [
+      {
+        "title": "Eurostar",
+        "price": "95€",
+        "route": {
+          "from": "Paris · Gare du Nord",
+          "to": "Londres · St Pancras",
+          "operator": "Eurostar e320",
+          "duration": "2h 16min",
+          "distance": "374 km"
+        }
+      },
+      {
+        "title": "TGV INOUI 6611",
+        "price": "45€",
+        "route": {
+          "from": "Paris · Gare de Lyon",
+          "to": "Lyon · Part-Dieu",
+          "operator": "SNCF · TGV INOUI",
+          "duration": "1h 56min",
+          "distance": "466 km"
+        }
+      },
+      {
+        "title": "Air France AF1364",
+        "price": "78€",
+        "route": {
+          "from": "Paris CDG · T2F",
+          "to": "Nice Côte d’Azur",
+          "operator": "Air France · Airbus A320",
+          "duration": "1h 35min",
+          "distance": "689 km"
+        }
+      },
+      {
+        "title": "FlixBus N728",
+        "price": "14,99€",
+        "route": {
+          "from": "Paris · Bercy Seine",
+          "to": "Bruxelles · Gare du Nord",
+          "operator": "FlixBus N728",
+          "duration": "4h 20min",
+          "distance": "308 km"
+        }
+      }
+    ]
+  },
+  "pollChoices": [
+    {
+      "title": "Hôtel Bairro Alto",
+      "description": "Boutique hotel · vue ville",
+      "city": "Lisbonne",
+      "price": "145€/nuit"
+    },
+    {
+      "title": "Príncipe Real Loft",
+      "description": "Appartement entier · 4 voyageurs",
+      "city": "Lisbonne",
+      "price": "95€/nuit"
+    },
+    {
+      "title": "Lisbon Lounge Hostel",
+      "description": "Auberge · centre-ville",
+      "city": "Lisbonne",
+      "price": "35€/nuit"
+    }
+  ],
+  "packing": {
+    "title": "Ma liste de bagages",
+    "items": [
+      "T-shirts",
+      "Lunettes",
+      "Appareil photo",
+      "Snacks"
+    ]
+  },
+  "budgetSplit": {
+    "title": "Partage des dépenses",
+    "subtitle": "Dîner au restaurant",
+    "perPerson": "{amount} chacun"
+  },
+  "timelineCalendar": {
+    "dayBadge": "J3",
+    "date": "Mercredi 15",
+    "city": "Tokyo",
+    "items": [
+      "Check-out hôtel",
+      "Déjeuner ramen",
+      "Visite du temple"
+    ]
+  },
+  "aiChat": {
+    "title": "Assistant IA",
+    "online": "En ligne",
+    "placeholder": "Message...",
+    "userMessage": "Trouve-moi un restaurant à Tokyo",
+    "aiMessage": "J'ai trouvé 3 restaurants parfaits pour toi ! 🍜"
+  },
+  "transportJourney": {
+    "departure": "Départ",
+    "arrival": "Arrivée"
+  },
+  "heroPulseCta": {
+    "planTogether": "Planifiez ensemble",
+    "subtitle": "Voyagez sans stress",
+    "cta": "Commencer gratuitement"
+  },
+  "itineraryItems": [
+    {
+      "title": "Arrivée Eurostar",
+      "subtitle": "St Pancras → Gare du Nord"
+    },
+    {
+      "title": "Hôtel du Louvre",
+      "subtitle": "Dépose bagages · check-in"
+    },
+    {
+      "title": "Le Petit Bistrot",
+      "subtitle": "Déjeuner · français"
+    },
+    {
+      "title": "Musée du Louvre",
+      "subtitle": "Visite après-midi"
+    },
+    {
+      "title": "Tour Eiffel",
+      "subtitle": "Coucher de soleil · 2e étage"
+    }
+  ]
+}

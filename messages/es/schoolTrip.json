@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Cómo planificar un viaje escolar — Planificador de excursiones gratuito para profesores | WePlanify",
+    "description": "Planifica un viaje escolar con WePlanify: itinerario compartido visible para los padres, recuento de asistentes y necesidades alimentarias en un solo lugar, encuestas para las actividades, listas de equipaje y almacenamiento de documentos. Gratis para profesores."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Viaje escolar"
+  },
+  "hero": {
+    "tag": "Viaje escolar",
+    "title": "Planifica un viaje escolar sin la pesadilla del papeleo",
+    "readTime": "8 min de lectura · Actualizado el 5 de mayo de 2026"
+  },
+  "problem": {
+    "p1": "Un viaje escolar parece un solo evento pero en realidad son tres flujos de trabajo coordinados que corren en paralelo: el viaje en sí (transporte, alojamiento, actividades), la comunicación con los padres (autorizaciones, necesidades alimentarias, actualizaciones diarias desde el camino) y la logística de los acompañantes (grupos, ratios, quién es responsable de qué alumno). Cuando cualquiera de esos tres vive en herramientas distintas — formularios en papel aquí, un hilo de correo allá, un grupo de WhatsApp en otro sitio — cada cambio hay que propagarlo tres veces. Ahí es donde se producen las fugas.",
+    "p2": "WePlanify reúne el itinerario, la lista de participantes y el almacenamiento de documentos en un solo lugar — visible para los acompañantes y consultable por los padres sin necesidad de cuenta."
+  },
+  "toc": {
+    "title": "En esta página",
+    "approval": "Conseguir la aprobación administrativa",
+    "logistics": "Anatomía de un viaje escolar",
+    "parentComms": "Comunicación con los padres que escala",
+    "safety": "Seguridad, ratios y roles de los acompañantes",
+    "faq": "Preguntas frecuentes"
+  },
+  "approval": {
+    "title": "Conseguir la aprobación administrativa",
+    "p1": "La mayoría de los colegios exigen una aprobación formal de 6 a 12 semanas antes de cualquier viaje con pernocta. El camino más rápido a través de la burocracia: una propuesta de una página que responda a las preguntas que la dirección hará antes de que las haga. Fechas y destino. Objetivos de aprendizaje vinculados a tu plan de estudios. Coste indicativo por alumno. Ratio de adultos por alumno. Evaluación de riesgos. Cobertura del seguro. Cuanto más limpio sea este documento, más rápido será el visto bueno."
+  },
+  "anatomy": {
+    "title": "Anatomía de un viaje escolar",
+    "subtitle": "Cinco piezas en movimiento. Acierta con cada una y el viaje funciona solo.",
+    "learnMore": "Más información →",
+    "items": [
+      { "stop": "La lista", "desc": "La única fuente de verdad sobre quién va. Cada participante lleva sus restricciones alimentarias, alergias y contacto de emergencia directamente en su perfil. Cuando un padre firma la autorización, el recuento se actualiza en directo — sin hoja de cálculo que conciliar.", "link": "/features/collaboration" },
+      { "stop": "El itinerario", "desc": "Día a día, hora a hora. Visible para cada acompañante en su móvil y para los padres a través del enlace compartido. Cuando el autobús llega 30 minutos tarde, publicas una sola actualización y todos la ven — sin correo masivo, sin grupo de padres que gestionar.", "link": "/features/planning" },
+      { "stop": "Las decisiones", "desc": "Algunas elecciones las impone el plan de estudios. Otras están abiertas: qué museo opcional, qué restaurante para la cena de grupo, qué actividad nocturna. Lanza encuestas con los acompañantes (o, si la edad lo permite, los alumnos) y el resultado gana sin debate.", "link": "/features/polls" },
+      { "stop": "El dinero", "desc": "Presupuesto por alumno, depósitos, saldo pendiente. Lleva la cuenta de los pagos en el presupuesto compartido para saber siempre quién ha pagado y quién no. Para los extras opcionales (dinero para souvenirs, mejoras de actividades), deja que los padres marquen casillas — el presupuesto se recalcula automáticamente.", "link": "/features/budget" },
+      { "stop": "El equipaje", "desc": "Una lista compartida con dos columnas: obligatorio y recomendado. Los padres la ven en cuanto la publicas, dos semanas antes de la salida. Hacen las maletas en consecuencia. Menos correos de pánico la noche anterior, menos niños que olvidaron el pasaporte en el punto de encuentro.", "link": "/features/packing" }
+    ]
+  },
+  "parentComms": {
+    "title": "Comunicación con los padres que escala",
+    "p1": "El fallo clásico de la comunicación en los viajes escolares: 30 padres, 30 correos con preguntas ligeramente distintas y tú escribiendo variaciones de la misma respuesta 30 veces. La solución no es 'enviar menos correos' — es 'poner la respuesta en un sitio donde ellos mismos puedan encontrarla'. Un itinerario compartido que puedan consultar en cualquier momento, con el punto de encuentro, el horario diario, la dirección del alojamiento y el contacto de emergencia, elimina el 80% de las preguntas antes de que se formulen.",
+    "p2": "Para el 20% restante, el truco es la consolidación. En lugar de tres correos separados (autorización, dieta, contacto de emergencia), un solo formulario cubre los tres al inscribirse. Los padres lo rellenan una vez. Tú ves los datos en directo de inmediato. Las preguntas del día del viaje van en un único hilo del viaje, no en tu bandeja de entrada personal. A lo largo de un viaje de 5 días con pernocta, esto le ahorra a un profesor de 4 a 6 horas de tareas administrativas."
+  },
+  "safety": {
+    "title": "Seguridad, ratios y roles de los acompañantes",
+    "p1": "La mayoría de los ministerios de educación publican los ratios obligatorios de adultos por alumno — normalmente 1:10 para los viajes con pernocta de primaria, 1:15 para secundaria. Confirma el tuyo antes de comprometer cifras con los padres. Una vez que tengas el equipo de acompañantes, asigna a cada uno a un subgrupo concreto de alumnos y haz que esas asignaciones sean visibles dentro del viaje. Cada acompañante ve entonces en su móvil exactamente qué alumnos son los suyos, con la información alimentaria y los contactos de emergencia ya cargados.",
+    "p2": "Los recuentos en cada transición (subir al autobús, entrar en un recinto, salir de una actividad) son el hábito más importante de un viaje escolar. Incorpóralos al horario como puntos de control reales, no como algo que un profesor improvisará. Con una lista compartida, el recuento lleva 30 segundos y cualquier alumno que falte se señala de inmediato, no tres paradas después.",
+    "p3": "Para las alergias graves o las condiciones médicas, adjunta la documentación directamente al participante. Los acompañantes pueden consultarla sin conexión si su móvil tiene cobertura — y al personal del recinto in situ (un hotel, un restaurante, el guía de un museo) se le puede mostrar la información pertinente de inmediato. Este único gesto ha evitado más de una visita a urgencias a mitad del viaje."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Con cuánta antelación debo planificar un viaje escolar?", "a": "Para las excursiones de un día, dos o tres semanas suele ser suficiente. Para los viajes con pernocta o internacionales, empieza de tres a seis meses antes. La presión por reservar varía según el destino — las ciudades populares para viajes escolares como Roma, Londres o Barcelona se llenan rápido en primavera. Cierra primero el transporte y el alojamiento; las actividades se pueden confirmar más tarde." },
+      { "q": "¿Cómo recojo las autorizaciones y las necesidades alimentarias de forma eficiente?", "a": "Deja de perseguir formularios en papel. Usa un único viaje compartido con una lista de participantes — cada padre confirma la asistencia, las restricciones alimentarias y los contactos de emergencia en un solo lugar. WePlanify mantiene el recuento en directo visible para que sepas siempre quién ha dado el visto bueno y quién no." },
+      { "q": "¿Pueden los padres ver el itinerario sin crear una cuenta?", "a": "Sí. Comparte el enlace del viaje y los padres podrán ver el plan completo día a día, la dirección del alojamiento y los contactos de emergencia sin registrarse. Se sentirán tranquilos y tú recibirás menos correos de pánico la víspera." },
+      { "q": "¿Cómo se gestionan las necesidades alimentarias y las alergias?", "a": "Añade las restricciones alimentarias al perfil de cada participante y etiquétalas en las comidas o actividades pertinentes. La información permanece visible para los acompañantes y para los recintos que hayas reservado. Para las alergias graves, adjunta el documento médico directamente al participante para que sea accesible sin conexión." },
+      { "q": "¿Cuál es la mejor manera de repartir las responsabilidades de los acompañantes?", "a": "Asigna a los acompañantes a grupos concretos de alumnos dentro del viaje. Cada acompañante ve en su móvil el recuento de su grupo, la información alimentaria y los contactos de emergencia. Usa encuestas para votar las actividades que los acompañantes estén debatiendo — se acabó el 'nunca decidimos quién va al museo'." },
+      { "q": "¿Es WePlanify adecuado para viajes escolares con alumnos menores de 13 años?", "a": "Sí — los alumnos no necesitan cuenta. Solo el profesor responsable y los acompañantes (o los padres designados) se unen al viaje. Los datos de los alumnos se almacenan como participantes, no como cuentas de usuario, lo que mantiene la configuración conforme a las normas de privacidad relativas a los menores." }
+    ]
+  },
+  "discover": {
+    "title": "Descubre más",
+    "teamBuilding": { "title": "Team building", "desc": "Para retiros corporativos." },
+    "familyTrip": { "title": "Viaje en familia", "desc": "Para escapadas multigeneracionales." },
+    "groupGuide": { "title": "Guía de viajes en grupo", "desc": "La guía completa paso a paso." },
+    "appComparison": { "title": "Comparativa de apps", "desc": "Comparado con otros planificadores." }
+  },
+  "cta": {
+    "title": "Gestiona tu próximo viaje escolar desde un solo lugar",
+    "subtitle": "Gratis para profesores. Sin app que instalar para los padres. Configura tu viaje en 5 minutos.",
+    "button": "Empezar un viaje escolar"
+  },
+  "jsonld": {
+    "articleHeadline": "Cómo planificar un viaje escolar sin la pesadilla del papeleo",
+    "howToName": "Cómo planificar un viaje escolar",
+    "howToDescription": "Desde conseguir la aprobación administrativa hasta repartir la encuesta posterior al viaje — un manual paso a paso para profesores que organizan un viaje de clase.",
+    "howToSteps": [
+      { "name": "Consigue la luz verde administrativa", "text": "Antes de reservar nada, consigue el visto bueno formal de la dirección del colegio. Prepara una página: fechas, destino, objetivos de aprendizaje, presupuesto indicativo por alumno, ratio de supervisión. La mayoría de las instituciones lo exigen con 6-12 semanas de antelación para los viajes con pernocta." },
+      { "name": "Cierra el transporte, el alojamiento y las actividades", "text": "Reserva primero las partidas más importantes: autocar o tren, alojamiento con el ratio adecuado de adultos por alumno y las actividades principales. Usa un itinerario compartido para que los coorganizadores vean el mismo plan y puedan señalar los conflictos antes de que se conviertan en problemas." },
+      { "name": "Recoge las autorizaciones, las necesidades alimentarias y los contactos de emergencia", "text": "Envía a los padres el enlace del viaje. Confirman la asistencia, declaran las restricciones alimentarias y las alergias, y aportan los contactos de emergencia en un solo formulario. El recuento se actualiza en directo, sin tener que perseguir a nadie." },
+      { "name": "Vota las actividades negociables", "text": "Algunas elecciones son fijas (el museo que exige el plan de estudios). Otras no (qué actividad nocturna, qué restaurante para la cena de grupo). Lanza una encuesta rápida con los acompañantes — y cuando la edad lo permita, los alumnos — y el resultado decide." },
+      { "name": "Publica la lista de equipaje y la sesión informativa previa", "text": "Dos semanas antes de la salida, publica una lista de equipaje compartida (dividida en 'obligatorio' y 'recomendado') y una sesión informativa previa que cubra el punto de encuentro, el horario, las expectativas de comportamiento y el procedimiento de emergencia. Los padres ven exactamente lo que su hijo necesita." },
+      { "name": "Gestiona el viaje con el itinerario compartido en directo", "text": "El día del viaje, cada acompañante tiene el plan completo en su móvil — direcciones, horarios, recuento, contactos de emergencia. Actualiza el itinerario en tiempo real cuando algo cambie (autobús retrasado, actividad cambiada) y los padres ven el nuevo plan de inmediato. Sin cadena telefónica, sin pánico." }
+    ]
+  }
+}

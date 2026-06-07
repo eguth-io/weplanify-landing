@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "WM-2026-Reiseplaner – kostenlos, für Gruppen | WePlanify",
+    "description": "Kostenloser WM-2026-Reiseplaner für Fan-Gruppen. Baue deine Route über mehrere Städte in den USA, Kanada und Mexiko, teilt die Kosten nach Kategorie auf und koordiniert die Logistik über die 16 Austragungsstädte – ohne Agentur, ohne Abo."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "WM-2026-Reiseplaner"
+  },
+  "hero": {
+    "tag": "Kostenloser Reiseplaner · WM 2026",
+    "title": "WM-2026-Reiseplaner: Folge deinem Team durch 3 Länder",
+    "readTime": "8 Min. Lesezeit"
+  },
+  "problem": {
+    "p1": "Eine WM mit Freunden klingt wie ein Traum – bis du anfängst, sie auf der Rückseite einer Serviette zu skizzieren. Drei Gruppenspiele in drei verschiedenen Städten, möglicherweise zwei verschiedenen Ländern. K.-o.-Spiele, die du nicht buchen kannst, bis die Ergebnisse feststehen. Visa, ESTAs, eTAs. Inlandsflüge, die sich in der Woche eines Spiels verdoppeln. Sechs Fans, sechs Budgets, sechs Schmerzgrenzen für einen frühen Flug. Reisebüros verkaufen dir ein Paket und damit hat sich's. Die Fans, die die Reise wirklich wollen, bauen sie am Ende selbst – und sie brauchen einen Plan, den alle sehen können.",
+    "p2": "WePlanify ist die kostenlose gemeinsame Kommandozentrale für WM-2026-Reisen – Spielpläne, Flüge, Hotels, Budget und Packen an einem Ort, auf Englisch oder Französisch."
+  },
+  "toc": {
+    "title": "Auf dieser Seite",
+    "anatomy": "Anatomie einer WM-Reise",
+    "hostCities": "Die 16 Austragungsstädte",
+    "planning": "Deine Route Schritt für Schritt planen",
+    "budget": "Budget-Tipps für Fans",
+    "faq": "Häufig gestellte Fragen"
+  },
+  "anatomy": {
+    "title": "Anatomie einer WM-Reise",
+    "subtitle": "Fünf bewegliche Teile, die jede Gruppe beim ersten Versuch übersieht. Setz sie richtig um und die Reise läuft.",
+    "items": [
+      { "stop": "Die Spiele", "desc": "Dein Team spielt drei Gruppenspiele in drei möglichen Städten, dann K.-o.-Spiele, die du noch nicht vorhersagen kannst. Verankere die Gruppenphase als feste Anker in deiner Reiseroute. Markiere die K.-o.-Termine als Platzhalter – wenn sich der Spielplan füllt, weißt du, welche Stadt du hinzufügen musst. Buch keine nicht erstattbaren K.-o.-Flüge vor dem Achtelfinale.", "link": "/features/itinerary" },
+      { "stop": "Die Crew", "desc": "Sechs Fans haben selten denselben Plan. Manche nehmen alle 39 Tage frei, andere schaffen nur ein Spiel. Nutzt eine Abstimmung, um festzulegen, wer für welche Etappe dabei ist, bevor ihr etwas bucht – das erspart euch vier Streitereien und einen stornierten Flug.", "link": "/features/polls" },
+      { "stop": "Die Grenzen", "desc": "USA, Kanada, Mexiko sind drei Einwanderungsregime. ESTA / B-2 für die USA, eTA / Visum für Kanada, FMM-Touristenkarte für Mexiko. Jeder Fan kümmert sich um seinen eigenen Papierkram, aber die Gruppe braucht eine gemeinsame Checkliste mit Fristen, damit niemand ohne gültiges ESTA am Flughafen auftaucht.", "link": "/features/planning" },
+      { "stop": "Das Geld", "desc": "Spieltickets individuell über die FIFA bezahlt. Hotels nach Zimmer aufgeteilt. Inlandsflüge nach Reisendem aufgeteilt. Essen pro Mahlzeit aufgeteilt. Fünf Kategorien, die sich nicht von selbst abrechnen. Ein geteiltes Budget mit Kategorien ab Tag eins schlägt eine chaotische Tabelle an Tag 38.", "link": "/features/budget" },
+      { "stop": "Das Gepäck", "desc": "Drei Wochen quer durch den Sommer in den USA, den Sommer in Kanada, den Sommer in Mexiko – und eine Stadion-Kleiderordnung. Pack leicht genug für die Gewichtslimits der Billigflieger, aber mit Trikot, Schal, Flagge und Sonnencreme für alle eingeplant. Eine geteilte Liste mit zugewiesenen gemeinsamen Dingen verhindert drei Flaggen und null Powerbanks.", "link": "/features/packing" }
+    ]
+  },
+  "hostCities": {
+    "title": "Die 16 Austragungsstädte",
+    "subtitle": "Elf Städte in den USA, drei in Mexiko, zwei in Kanada. Baue deine Route mit dem Wissen, welche Cluster sich gut zusammen bereisen lassen – und welche einen Flug erfordern."
+  },
+  "matrix": {
+    "title": "Reisezeit zwischen den Austragungsstädten",
+    "subtitle": "Richtwerte für die Reisezeit (einfache Strecke) auf den gängigsten Fan-Routen. Flugzeiten ohne Flughafentransit (rechne ~3 Std. dazu). Nutze sie, um Pufftage zwischen Spielen einzuplanen.",
+    "route": "Route",
+    "mode": "Modus",
+    "time": "Zeit",
+    "notes": "Hinweise",
+    "rows": [
+      { "route": "Boston ↔ NYC", "mode": "Zug (Acela)", "time": "~3 Std. 30", "note": "Tür zu Tür schneller als Fliegen" },
+      { "route": "NYC ↔ Philadelphia", "mode": "Zug / Bus", "time": "~1 Std. 30", "note": "Einfachstes Cluster" },
+      { "route": "NYC ↔ Toronto", "mode": "Flug", "time": "~1 Std. 30", "note": "Grenzübertritt – eTA nötig" },
+      { "route": "Atlanta ↔ Miami", "mode": "Flug", "time": "~2 Std.", "note": "Fahren dauert 10+ Std., nicht machbar" },
+      { "route": "Dallas ↔ Houston", "mode": "Flug / Fahrt", "time": "~1 Std. / 4 Std.", "note": "Fahren bei mehr als 2 Fans" },
+      { "route": "LA ↔ San Francisco", "mode": "Flug", "time": "~1 Std. 30", "note": "Günstigste US-Route zum Fliegen" },
+      { "route": "LA ↔ Seattle", "mode": "Flug", "time": "~3 Std.", "note": "Früh buchen – Fan-Nachfrage" },
+      { "route": "Seattle ↔ Vancouver", "mode": "Fahrt / Zug", "time": "~3–4 Std.", "note": "Grenze auf dem Landweg – schnellster Übertritt" },
+      { "route": "Toronto ↔ Vancouver", "mode": "Flug", "time": "~5 Std.", "note": "Längster Inlandsflug in Kanada" },
+      { "route": "Dallas ↔ Mexiko-Stadt", "mode": "Flug", "time": "~2 Std. 30", "note": "Bestes Tor von den USA nach Mexiko" },
+      { "route": "Mexiko-Stadt ↔ Guadalajara", "mode": "Flug / Bus", "time": "~1 Std. 30 / 7 Std.", "note": "Bus nachts gut + günstig" },
+      { "route": "Mexiko-Stadt ↔ Monterrey", "mode": "Flug", "time": "~1 Std. 30", "note": "10+ tägliche Flüge" },
+      { "route": "LA ↔ Miami", "mode": "Flug", "time": "~5 Std.", "note": "Küste zu Küste – teuer" }
+    ]
+  },
+  "checklist": {
+    "title": "Checkliste für die Essentials der Fan-Reise",
+    "subtitle": "Die Dinge, die Gruppen immer vergessen. Weist jedes einer Person in eurer WePlanify-Packliste zu.",
+    "items": [
+      "Spieltickets (gedruckt + Backup in der FIFA-App)",
+      "Gültiger Reisepass (6+ Monate über Juli 2026 hinaus)",
+      "ESTA, eTA oder Visum für jede Grenze",
+      "Reiseversicherung, die alle drei Länder abdeckt",
+      "Team-Trikot, Schal, Flagge",
+      "Stadion-zugelassene durchsichtige Tasche",
+      "Powerbank (mit mehreren Ports für die Gruppe)",
+      "Internationaler Datentarif oder lokale eSIM",
+      "Sonnencreme + Kappe (die Juni-Hitze ist real)",
+      "Wiederverwendbare Wasserflasche (in Stadien erlaubt)",
+      "Bargeld in USD / CAD / MXN für kleine Ausgaben",
+      "Ohrstöpsel (für nach dem Feiern)"
+    ]
+  },
+  "pullQuote": "Eine WM-Reise ist kein Urlaub – sie ist eine 39-tägige Operation. Behandle die Planung so, wie das Team die Vorbereitung behandelt, und der Rest erledigt sich von selbst.",
+  "planning": {
+    "title": "Deine Route planen: Schritt für Schritt",
+    "p1": "Beginne mit den Spielen. Die Gruppenauslosung legt die Stadt jedes Spiels fest – das ist dein Skelett. Setz die drei Gruppenspiele als Anker in die Reiseroute und füge auf jeder Seite einen Ruhetag hinzu. Die Reise von Stadion zu Stadion durch die Einwanderung frisst mehr Zeit, als die Leute erwarten; plane nie ein Spiel am Tag nach einem Langstreckenflug.",
+    "p4": "Setzt Fristen für die Gruppe, nicht nur für die Reise. ESTAs und eTAs brauchen in Spitzenzeiten Tage zur Genehmigung. Internationale Datentarife müssen vor der Abreise geklärt sein. Stornofristen für Hotels schließen früher, als die Leute denken. Eine geteilte Aufgabenliste mit Fristen, für alle sichtbar, bewahrt die Reise davor, eine Woche vor dem Anpfiff an der Bürokratie zu zerbrechen."
+  },
+  "budget": {
+    "title": "Budget-Tipps für Fan-Reisen",
+    "p2": "Beim Transport zwischen den Städten öffnet oder schließt sich das Budget wirklich. US-Inlandsflüge zwischen weit entfernten Austragungsstädten (LA → Miami, Boston → Dallas) kosten im Schnitt 250–400 $ bei früher Buchung, das Doppelte in der Woche eines Spiels. Für kürzere Strecken im Nordosten (Boston → NYC → Philly) ist der Amtrak Acela von Tür zu Tür schneller und oft günstiger. Der Übertritt nach Kanada oder Mexiko bedeutet fast immer fliegen – bucht diese Etappen, sobald die Spiele feststehen.",
+    "p3": "Die Unterkunft ist der zweitgrößte Kostenpunkt und der am einfachsten zu optimierende. Hotels in den Austragungsstädten verdreifachen ihre Preise an Spieltagen – buch außerhalb der offiziellen Zone. Ein Drei-Zimmer-Airbnb 30 Minuten vom Stadion entfernt, zu viert oder fünft geteilt, schlägt einzelne Hotelzimmer oft um 40 %. Schau dir Nachbarstädte mit Bahn- oder Kurzflugverbindung an: in Newark statt Manhattan, in Anaheim statt LA, in Mississauga statt im Zentrum von Toronto übernachten."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      { "q": "Brauche ich ein Visum, um die WM 2026 zu besuchen?", "a": "Das hängt von deiner Nationalität und davon ab, welches Gastgeberland du besuchst. Die USA verlangen ein ESTA (Visa-Waiver) oder ein B-2-Visum, Kanada verlangt ein eTA oder Visum, Mexiko erlaubt die meisten westlichen Pässe in der Regel bis zu 180 Tage visumfrei. Wenn dein Team in allen drei Ländern spielt, prüfe die Anforderungen jedes Landes separat – die Gültigkeit für eines gewährt keine Einreise in ein anderes. Beantrage früh; die Bearbeitung verlangsamt sich, je näher der Juni rückt." },
+      { "q": "Wie plane ich eine Reise, wenn die Gruppe meines Teams noch nicht ausgelost ist?", "a": "Baue eine flexible Basis – buch erstattbare Flüge zu einem großen Drehkreuz (NYC, LA, Mexiko-Stadt) und sichere die Unterkunft nur für das erste Spielfenster. Sobald die Auslosung die Städte festlegt, finalisierst du den Rest. Mit WePlanify kannst du mehrere Szenario-Reiserouten nebeneinander skizzieren und die wählen, die zu den tatsächlichen Spielen passt." },
+      { "q": "Was ist die günstigste Art, zwischen den Austragungsstädten zu reisen?", "a": "Innerhalb der USA sind Inlandsflüge bei Entfernungen über 600 Meilen meist günstiger und schneller als Fahren. Für kürzere Strecken (z. B. Boston nach NYC) können Amtrak oder Busse das Fliegen schlagen, sobald du die Flughafenzeit einrechnest. Grenzübertritte nach Kanada oder Mexiko bedeuten fast immer fliegen – bucht diese Etappen früh, da die Fan-Nachfrage die Preise hochtreibt." },
+      { "q": "Wie viele Spiele sollte ich realistisch versuchen zu besuchen?", "a": "Die meisten Fans, die einem Team folgen, schaffen 3 Gruppenspiele plus ein K.-o.-Spiel, wenn ihr Team weiterkommt. Die Reise von Stadion zu Stadion frisst mehr Zeit, als die Leute erwarten – plane mindestens einen vollen Reisetag zwischen nicht benachbarten Städten ein. Baue Pufftage für Jetlag, Wartezeiten an der Sicherheit und die unverzichtbaren Fanzonen ein." },
+      { "q": "Wie teilt man die Kosten auf, wenn man mit einer Gruppe von Fans reist?", "a": "Nutzt von Tag eins an einen geteilten Budget-Tracker. WM-Reisen haben ungewöhnliche Kostenstrukturen – Spieltickets von Einzelnen über die FIFA bezahlt, Hotels nach Zimmer aufgeteilt, Transport nach Gruppe aufgeteilt, Essen pro Mahlzeit aufgeteilt. WePlanify trennt diese Kategorien, sodass jeder genau sieht, was er wem schuldet, ohne Rechenmarathon am Ende der Reise." },
+      { "q": "Wann sollte ich Unterkünfte in den Austragungsstädten buchen?", "a": "Jetzt, wenn du kannst. Hotels in den Austragungsstädten Miami, NYC, LA, Toronto und Mexiko-Stadt füllten sich für Spieltage schon Anfang 2026 und die Preise liegen bereits beim 3- bis 5-Fachen des Normalniveaus. Schau außerhalb der offiziellen Zonen (Airbnbs in Vororten, Nachbarstädte mit Bahnverbindung) und reserviere erstattbare Optionen, falls der Weg deines Teams noch nicht feststeht." },
+      { "q": "Lohnt sich der Besuch von Fanzonen, wenn ich kein Spielticket habe?", "a": "Ja. Jede Austragungsstadt hat ein offizielles FIFA Fan Festival mit Großbildübertragungen, Essen und Live-Unterhaltung, dazu die inoffiziellen Treffen in den Vierteln, die oft die bessere Atmosphäre haben. Der Eintritt ist frei und sie können das Highlight für Fans sein, die keine Spieltickets bekommen haben. Füge sie als Backup-Pläne zu deiner Reiseroute hinzu." }
+    ]
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "roadTrip": { "title": "Roadtrip", "desc": "Plane eine Fahrt mit mehreren Stopps mit der Crew.", "cta": "Weiterlesen →" },
+    "tripWithFriends": { "title": "Reise mit Freunden", "desc": "Plane mühelos jede Gruppenreise.", "cta": "Weiterlesen →" },
+    "groupGuide": { "title": "Guide für Gruppenreisen", "desc": "Der komplette Schritt-für-Schritt-Guide.", "cta": "Guide lesen →" },
+    "bestApps": { "title": "Beste Apps für Gruppenreisen", "desc": "Unser Vergleich der besten Tools für Gruppenreisen.", "cta": "Artikel lesen →" }
+  },
+  "cta": {
+    "title": "Baue deine WM-2026-Reise",
+    "subtitle": "Spielpläne, Flüge, Hotels, Budget – ein gemeinsamer Plan, deine ganze Crew auf dem gleichen Stand.",
+    "button": "Jetzt planen"
+  },
+  "jsonld": {
+    "eventName": "FIFA World Cup 2026",
+    "eventDescription": "FIFA World Cup 2026 – 48 Nationalmannschaften, 16 Austragungsstädte in den Vereinigten Staaten, Kanada und Mexiko, vom 11. Juni bis 19. Juli 2026. Die erste WM, die von drei Ländern gemeinsam ausgerichtet wird.",
+    "fifaPerformer": "FIFA-Nationalmannschaften",
+    "subEventName": "Spiele der WM 2026 in {city}",
+    "subEventDescription": "Spiele der FIFA World Cup 2026, die zwischen dem 11. Juni und 19. Juli 2026 in {city} ausgetragen werden.",
+    "howToName": "So planst du eine WM-2026-Reise, bei der du deinem Team folgst",
+    "howToDescription": "Legt die Spiele fest, baut die Route über mehrere Städte, teilt die Kosten, klärt die Visa und lasst Raum für die ungeplanten Momente, die eine WM-Reise ausmachen.",
+    "howToSteps": [
+      { "name": "Verankere die Reise an den Spielen deines Teams", "text": "Beginne mit den drei Gruppenspielen. Legt die Städte und Daten fest und plant dann die Lücken zwischen den Spielen als Reisetage. Plane nur die Gruppenphase im Detail – die K.-o.-Städte hängen von den Ergebnissen ab." },
+      { "name": "Entscheidet mit einer Abstimmung über das Engagement der Gruppe", "text": "Nicht jeder hat dasselbe Budget oder dieselbe Zeit. Startet eine Abstimmung, um herauszufinden, wer für die ganze Gruppenphase dabei ist, wer zu einem Spiel kommt und wer sich nur festlegt, wenn das Team weiterkommt. Das Ergebnis steuert die Flugbuchungen und die Aufteilung der Unterkünfte." },
+      { "name": "Teilt die Kosten ab Tag eins über Kategorien auf", "text": "Spieltickets, Inlandsflüge, Hotels in den Austragungsstädten, Transport vor Ort und Essen teilen sich nicht gleich auf. Richtet ein geteiltes Budget mit einer Kategorie für jedes ein, damit die Rechnung sauber bleibt, auch wenn die Reise drei Wochen dauert." },
+      { "name": "Baut Pufftage zwischen den Städten ein", "text": "Die Reise von Stadion zu Stadion, Jetlag, Sicherheitsschlangen und Grenzübertritte fressen echte Zeit. Plane mindestens einen vollen Pufftag zwischen nicht benachbarten Austragungsstädten und einen Ruhetag vor jedem Spiel – dein zukünftiges Ich wird es dir danken." }
+    ]
+  }
+}

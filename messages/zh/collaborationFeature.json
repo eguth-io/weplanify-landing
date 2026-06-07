@@ -1,0 +1,107 @@
+{
+  "copy": {
+    "heroTitle": "和 10 位好友规划一场旅行",
+    "heroTitleHighlight": "无需一条 WhatsApp 消息",
+    "heroSubtitle": "实时编辑、内置投票、清晰的历史记录。所有人步调一致，字面意义上的同一页面。",
+    "inviteMore": "邀请更多人",
+    "liveLabel": "实时",
+    "fakeTripTitle": "葡萄牙公路旅行",
+    "fakeDays": [
+      "第 1 天 —— 里斯本",
+      "第 2 天 —— 辛特拉",
+      "第 3 天 —— 波尔图"
+    ],
+    "editingTag": "Marie 正在编辑…",
+    "feedTitle": "不漏掉任何动态",
+    "feedSubtitle": "动态信息流展示你旅行中发生的一切。谁添加了什么、何时、在哪里。",
+    "recentActivity": "近期动态",
+    "activities": [
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "action": "添加了「阿尔法玛晚餐」",
+        "time": "2 分钟前"
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "action": "更新了波尔图的酒店",
+        "time": "5 分钟前"
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "action": "为餐厅投了票",
+        "time": "12 分钟前"
+      },
+      {
+        "avatar": "🧑‍💻",
+        "name": "Lucas",
+        "action": "加入了旅行",
+        "time": "1 小时前"
+      }
+    ],
+    "freeNoCard": "免费注册，无需信用卡。"
+  },
+  "page": {
+    "heroBadge": "3 人正在实时编辑",
+    "heroTitle": "和 10 位朋友一起规划旅行",
+    "heroTitleHighlight": "无需一条 WhatsApp 消息",
+    "heroSubtitle": "实时编辑、内置投票、清晰记录。所有人真正同步在一起。",
+    "heroCta": "邀请我的第一位朋友 - 免费",
+    "heroCtaSubtext": "45 秒邀请你的团队",
+    "socialProofText": "已规划 12,000+ 次旅行",
+    "featuresTitle": "实时协作",
+    "features": [
+      {
+        "title": "实时同步",
+        "description": "更改会立即向所有旅行参与者显示。"
+      },
+      {
+        "title": "评论",
+        "description": "直接在应用中讨论每个细节，无需 WhatsApp 群组。"
+      },
+      {
+        "title": "权限",
+        "description": "设置谁可以编辑、谁只能查看旅行。"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "如何邀请朋友共同规划旅行？",
+        "answer": "直接在应用中分享邀请链接或发送邮件邀请。你的朋友只需一键即可加入旅行，即使没有 Weplanify 账户也可以。"
+      },
+      {
+        "question": "更改真的会实时同步吗？",
+        "answer": "是的，所有更改都通过 WebSocket 技术即时同步。你可以实时看到旅伴的编辑出现。"
+      },
+      {
+        "question": "我可以限制编辑权限吗？",
+        "answer": "当然可以。旅行创建者可以设置角色：编辑者（完全访问）、贡献者（可建议更改）或查看者（只读）。"
+      },
+      {
+        "question": "参与人数有限制吗？",
+        "answer": "没有技术限制。我们有 50 多人参与的旅行也能顺畅运行。"
+      },
+      {
+        "question": "你们如何处理编辑冲突？",
+        "answer": "Weplanify 会自动处理冲突。如果两个人编辑同一元素，系统会智能合并更改。"
+      }
+    ],
+    "ctaTitle": "告别没完没了的 WhatsApp 群组",
+    "ctaSubtitle": "所有人实时同步在一起",
+    "ctaButton": "立即邀请我的朋友",
+    "seoTitle": "实时协作 - 团队旅行规划 | Weplanify",
+    "seoDescription": "与朋友和家人一起规划团队旅行。实时编辑、集成讨论、完美同步，让协作组织毫不费力。",
+    "stats": [
+      {
+        "value": "12,000+",
+        "label": "次旅行已规划"
+      },
+      {
+        "value": "45 秒",
+        "label": "邀请你的团队"
+      }
+    ]
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Planeador de Viagens de Aniversário — Planeie a Escapada de Aniversário Definitiva",
+    "description": "Planeie a sua viagem de aniversário com a WePlanify, o planeador de viagens de aniversário gratuito. Coordene datas com os seus amigos, votem no destino, dividam o orçamento e construam um itinerário dia a dia — perfeito para os marcos dos 30, 40, 50 anos ou qualquer escapada de aniversário."
+  },
+  "readTime": "9 min de leitura",
+  "hero": {
+    "tag": "Planeador de Viagens de Aniversário",
+    "title": "Planeie a Viagem\nde Aniversário Definitiva",
+    "description": "Faz 30, 40, 50 — ou só quer passar o seu aniversário num lugar inesquecível? A WePlanify é o planeador de viagens de aniversário gratuito que transforma o 'temos mesmo de fazer uma escapada pelo teu aniversário' numa viagem realmente reservada.",
+    "cta": "Começar a planear gratuitamente"
+  },
+  "guideIntro": {
+    "title": "O Guia Definitivo para Planear uma Viagem de Aniversário",
+    "paragraphs": [
+      "Uma viagem de aniversário é uma das melhores prendas que se pode dar a si próprio — ou a alguém que ama. Quer seja um aniversário marcante (30, 40, 50, 60) ou apenas uma escapada de fim de semana para assinalar mais um ano, fugir com as pessoas que importam supera qualquer festa em casa. Mas organizar uma viagem de aniversário para um grupo de 4 a 15 amigos traz o seu próprio caos silencioso: encontrar uma data que sirva, chegar a acordo sobre um destino, escolher um Airbnb que todos possam pagar e descobrir quem vai realmente fazer as reservas de jantar.",
+      "As melhores viagens de aniversário têm três coisas em comum: refletem o gosto real do aniversariante (não o que o grupo acha que ele deveria querer), respeitam o orçamento de todos para que ninguém desista na véspera e têm estrutura suficiente para que o grupo não esteja parado numa esquina às 20h a discutir onde comer. O objetivo não é planear cada hora — é eliminar o atrito para que a viagem em si possa ser espontânea.",
+      "Foi exatamente para isto que a WePlanify foi criada. Um único espaço partilhado onde o vosso grupo pode votar no destino, fixar uma data, acompanhar uma caixa partilhada e construir um itinerário dia a dia em conjunto. Quer seja o aniversariante a organizar a sua própria viagem com amigos ou um companheiro a planear secretamente uma escapada surpresa, tudo fica num só lugar — sem conversas dispersas no WhatsApp, sem folhas de cálculo, sem andar atrás de pessoas por 40 € três semanas depois."
+    ]
+  },
+  "painPoints": {
+    "title": "Porque é que Planear uma Viagem de Aniversário Fica Sempre para Trás",
+    "subtitle": "Disseste-o há meses: 'vamos fazer uma escapada pelos teus 30'. Faltam três semanas e nada está reservado.",
+    "items": [
+      {
+        "emoji": "📅",
+        "title": "Ninguém se Compromete com uma Data",
+        "description": "Lanças um fim de semana em outubro. Três amigos dizem 'talvez', dois dizem 'deixa-me ver' e um desaparece por completo. Quando toda a gente responde, os voos já duplicaram e o teu Airbnb favorito já não está disponível. As sondagens de datas da WePlanify dão ao grupo um prazo claro para votar, e o resultado é instantâneo — sem perseguições, sem mensagens de seguimento, apenas uma data com que todos concordaram."
+      },
+      {
+        "emoji": "🗺️",
+        "title": "Debate Interminável sobre o Destino",
+        "description": "Lisboa? Marraquexe? Uma cabana a duas horas? Toda a gente tem uma opinião e a conversa de grupo torna-se um fluxo de TikToks e reels do Instagram. Passam duas semanas e ainda não têm destino. Façam uma única sondagem com três a cinco opções reais, deixem toda a gente votar e reservem a vencedora. Decisão tomada em 48 horas em vez de um mês."
+      },
+      {
+        "emoji": "💸",
+        "title": "Conversas Constrangedoras sobre Dinheiro",
+        "description": "O aniversariante paga? Dividimos a parte dele? Quem paga o jantar? Um amigo transfere 120 €, outro paga o sinal do Airbnb, um terceiro compra o bolo — e três semanas depois da viagem ainda estão a tentar perceber quem deve o quê. A caixa partilhada da WePlanify regista cada despesa em tempo real e diz-vos instantaneamente quem deve a quem."
+      },
+      {
+        "emoji": "🍽️",
+        "title": "Caos no Próprio Dia",
+        "description": "Chegam sexta-feira à noite sem reserva para jantar. No sábado à tarde ninguém sabe a que horas parte o barco. Ao brunch de domingo metade do grupo está de ressaca e a outra metade quer fazer a caminhada que não reservaram. Um itinerário partilhado dia a dia faz com que toda a gente acorde a saber o plano — e ainda podem deixar espaço em branco para a espontaneidade."
+      }
+    ]
+  },
+  "features": {
+    "title": "A WePlanify Torna o Planeamento de Viagens de Aniversário Simples",
+    "subtitle": "Tudo o que precisa para planear uma escapada de aniversário com amigos — num só lugar, com zero stress.",
+    "items": [
+      {
+        "emoji": "🗳️",
+        "title": "Sondagens para Datas e Destinos",
+        "description": "Acabe com o ciclo interminável do 'quando é que serve a toda a gente'. Crie uma sondagem com os três fins de semana possíveis, partilhe-a com o grupo e veja as respostas a chegar. O mesmo para o destino — três a cinco opções, uma vencedora clara. A votação anónima faz com que até os amigos mais reservados se pronunciem. As preferências reais do grupo, não apenas a voz mais alta da conversa."
+      },
+      {
+        "emoji": "💰",
+        "title": "Caixa de Aniversário Partilhada",
+        "description": "Definam um orçamento partilhado, registem cada despesa à medida que acontece e deixem a WePlanify calcular quem deve o quê. Decidam logo à partida se o aniversariante paga por si ou se o grupo cobre a parte dele — ambas as opções funcionam. O sinal do Airbnb, a conta do restaurante, o bolo, a garrafa de champanhe: tudo registado, tudo acertado com um toque no fim da viagem."
+      },
+      {
+        "emoji": "🗓️",
+        "title": "Itinerário Dia a Dia",
+        "description": "Construam um horário partilhado para todo o fim de semana — jantar de sexta, brunch de sábado, o passeio de barco, o restaurante surpresa, a caminhada de domingo de manhã. Adicionem horas, locais, notas, links. Toda a gente acorda a saber o que vem a seguir, mas nada está gravado em pedra — arrastem e larguem se os planos mudarem. O itinerário é a única fonte de verdade, para que ninguém pergunte 'espera, onde nos vamos encontrar?'"
+      },
+      {
+        "emoji": "🎁",
+        "title": "Modo Privado para Surpresas",
+        "description": "A planear uma viagem de aniversário surpresa para o seu companheiro, pai/mãe ou melhor amigo? Crie um grupo de planeamento privado sem essa pessoa. Coordene datas, reserve o Airbnb, planeie atividades — tudo completamente escondido do aniversariante. Quando estiver pronto, revele a viagem e adicione-o ao espaço para que veja tudo o que foi organizado para ele."
+      }
+    ]
+  },
+  "tripIdeas": {
+    "title": "Ideias de Viagem de Aniversário por Estilo",
+    "subtitle": "Cinco estilos de escapada de aniversário para combinar com o aniversariante — e com o orçamento.",
+    "items": [
+      {
+        "emoji": "🌆",
+        "title": "Escapada à Cidade com Amigos",
+        "description": "Lisboa, Barcelona, Copenhaga, Cidade do México — escolham uma cidade com boa gastronomia, bairros pedonais e uns quantos bares no terraço. Perfeito para um fim de semana de 30 anos com 6 a 10 amigos. Reservem um apartamento central, planeiem dois grandes jantares de grupo e deixem as tardes livres para o que o grupo quiser. Logística fácil, muita energia, ótima para fotografias."
+      },
+      {
+        "emoji": "🏖️",
+        "title": "Praia e Casa com Piscina",
+        "description": "Aluguem uma vivenda com piscina no sul de França, na Costa Brava, em Tulum ou na Puglia. Manhãs preguiçosas, almoços demorados, cocktails ao pôr do sol. Funciona para qualquer idade, mas é especialmente bom para aniversários dos 35 aos 50, em que o grupo quer relaxar mais do que festejar. Contratem um chef privado numa noite para que pareça uma celebração a sério."
+      },
+      {
+        "emoji": "🍷",
+        "title": "Fim de Semana na Região dos Vinhos",
+        "description": "Toscana, Bordéus, Vale do Douro, Napa, Mendoza — uma viagem à região dos vinhos é o clássico para os 40 anos. Fiquem num agriturismo ou numa vinha boutique, reservem uma prova por dia e façam jantares demorados. Grupos mais pequenos (4 a 8) funcionam melhor. Usem a caixa partilhada para as provas e os jantares, já que as contas somam depressa."
+      },
+      {
+        "emoji": "🏔️",
+        "title": "Escapada de Aventura",
+        "description": "Caminhadas nas Dolomitas, uma road trip pela Islândia, esqui em Chamonix, surf em Portugal. Para o aniversariante ativo que prefere subir a um pico a apagar velas. Escolham um desafio marcante para a viagem — um trekking de vários dias, um dia de heli-ski, um campo de surf — e construam o resto do fim de semana em torno da recuperação e das boas refeições."
+      },
+      {
+        "emoji": "🎲",
+        "title": "Festança em Vegas / Grande Cidade",
+        "description": "Las Vegas, Miami, Ibiza, Berlim — a viagem de aniversário 'em grande'. Discotecas, dayclubs, jantares chiques, noitadas. Funciona melhor para aniversários de 21, 25 e 30 anos, ou qualquer marco em que o grupo esteja disposto a uma festa a sério. Reservem tudo com antecedência (mesas, transfers, a suite), porque a logística do dia numa cidade de festa vos vai comer vivos."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Quando Começar a Planear",
+    "subtitle": "Uma cronologia simples para fixar a sua viagem de aniversário sem pânico de última hora.",
+    "milestones": [
+      {
+        "time": "4 a 6 meses antes",
+        "title": "Fixem a Data e a Lista de Convidados",
+        "description": "Façam uma sondagem ao grupo sobre os fins de semana disponíveis. Finalizem quem vai. Criem a vossa viagem na WePlanify e convidem toda a gente — incluindo o aniversariante, se não for surpresa."
+      },
+      {
+        "time": "3 meses antes",
+        "title": "Escolham o Destino e Reservem",
+        "description": "Votem no destino. Reservem voos e alojamento enquanto os preços ainda são razoáveis. Configurem a caixa partilhada com os sinais iniciais."
+      },
+      {
+        "time": "1 mês antes",
+        "title": "Planeiem Atividades e Reservas",
+        "description": "Façam sondagens para as atividades. Reservem restaurantes (especialmente o grande jantar de aniversário). Construam o itinerário dia a dia. Encomendem quaisquer decorações, prendas ou conjuntos a condizer."
+      },
+      {
+        "time": "1 semana antes",
+        "title": "Confirmem Tudo",
+        "description": "Voltem a confirmar todas as reservas. Acertem as contribuições pendentes da caixa. Partilhem o itinerário final com o grupo. Garantam que alguém leva velas."
+      }
+    ]
+  },
+  "checklist": {
+    "title": "Lista de Verificação para Planear a Viagem de Aniversário",
+    "items": [
+      "Confirmar a data com o aniversariante (ou mantê-la em segredo se for surpresa)",
+      "Fazer uma sondagem ao grupo sobre os fins de semana disponíveis",
+      "Votar num destino que todos possam pagar",
+      "Reservar alojamento e transporte",
+      "Definir uma caixa partilhada e concordar como se trata da parte do aniversariante",
+      "Reservar o grande jantar de aniversário com bastante antecedência",
+      "Planear uma ou duas atividades marcantes (barco, spa, prova, caminhada)",
+      "Construir o itinerário dia a dia na WePlanify",
+      "Encomendar o bolo, as velas ou pequenas surpresas",
+      "Confirmar tudo uma semana antes e partilhar o plano final"
+    ]
+  },
+  "testimonial": {
+    "quote": "Fiz 40 anos na primavera passada e um grupo de nós foi à Toscana passar o fim de semana. Reservar a vivenda, dividir a rota de vinhos, a caixa do jantar, os transfers do aeroporto — fizemos tudo na WePlanify e ninguém teve de andar atrás de dinheiro depois. Muito melhor do que o caos do WhatsApp de todos os fins de semana de aniversário anteriores.",
+    "author": "Sophie L.",
+    "role": "Organizadora de viagem de aniversário, Londres"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      {
+        "q": "A WePlanify é gratuita para planear uma viagem de aniversário?",
+        "a": "Sim, 100% gratuita. Crie uma viagem, convide o grupo, faça sondagens, construa o itinerário, acompanhe a caixa partilhada — sem período de teste, sem cartão de crédito, sem taxas escondidas. Todo o planeador de viagens de aniversário funciona sem pagar nada."
+      },
+      {
+        "q": "Posso planear uma viagem de aniversário surpresa sem o aniversariante ver?",
+        "a": "Sim. Crie um grupo de planeamento privado e não convide o aniversariante. Coordene datas, votem no destino, reserve o Airbnb e planeie atividades — tudo completamente escondido. Quando estiver pronto para revelar, pode adicioná-lo à viagem para que veja o itinerário completo e o que foi planeado para ele."
+      },
+      {
+        "q": "Com quanta antecedência devemos começar a planear uma viagem de aniversário?",
+        "a": "Quatro a seis meses é o ideal para aniversários marcantes (30, 40, 50) em que querem um destino a sério. Dois a três meses funciona para fins de semana locais. Quanto mais cedo a data estiver fixada, mais baratos os voos e melhores as opções de alojamento. Comece uma viagem na WePlanify assim que a ideia surgir — mesmo que os detalhes sejam vagos."
+      },
+      {
+        "q": "Qual é um bom orçamento para uma viagem de aniversário?",
+        "a": "Depende do destino e do grupo. Um fim de semana numa cidade europeia custa normalmente 250 € a 500 € por pessoa, tudo incluído. Uma vivenda na Toscana ou no sul de França para uns 40 anos pode chegar a 600 € a 1200 € por pessoa. O essencial é concordarem com um orçamento-alvo logo à partida para que ninguém seja apanhado de surpresa — a caixa partilhada da WePlanify mantém toda a gente honesta à medida que as despesas vão entrando."
+      },
+      {
+        "q": "O aniversariante deve pagar por si próprio?",
+        "a": "Ambas as opções funcionam e é uma decisão do grupo. Muitos grupos cobrem a parte do aniversariante no Airbnb e no grande jantar como prenda; o aniversariante paga o seu próprio voo e as refeições informais. A WePlanify permite-lhe marcar despesas individuais como 'o grupo cobre' ou 'paga o próprio', para que a divisão seja automática. Decidam o que decidirem, acordem cedo — as conversas constrangedoras sobre dinheiro a meio da viagem são o pior."
+      },
+      {
+        "q": "Como decidimos as atividades quando toda a gente quer algo diferente?",
+        "a": "Façam uma sondagem com três a cinco opções concretas para cada grande período (sábado à tarde, domingo de manhã, etc.). Deixem o grupo votar e reservem a vencedora. Isto evita tanto o problema do impasse (ninguém decide) como o do ressentimento (uma pessoa decide tudo). Dá também aos amigos mais reservados uma palavra a dizer."
+      },
+      {
+        "q": "E se alguns amigos só puderem juntar-se a parte da viagem?",
+        "a": "Sem problema — e a WePlanify lida com isso de forma limpa. Marquem as datas reais de cada participante e, ao registar despesas, podem especificar quem participou. A caixa partilhada recalcula automaticamente, para que as pessoas só paguem as noites e atividades em que estiveram realmente. Sem folha de cálculo, sem negociações constrangedoras do tipo 'eu não estive no jantar'."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pronto para Planear a Melhor Viagem de Aniversário de Sempre?",
+    "description": "Não deixe que as viagens de aniversário passem do 'temos mesmo de fazer isto' a nada. Comece a sua viagem na WePlanify em 30 segundos — é grátis.",
+    "button": "Começar a planear — é grátis"
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Viagem de Aniversário"
+  },
+  "destinationsCrossLink": {
+    "tag": "Inspiração de destinos",
+    "heading": "Destinos que dão uma ótima viagem de aniversário",
+    "cards": {
+      "tuscany": {
+        "title": "Toscana · 5 dias",
+        "desc": "O clássico dos 40 anos. Vivenda com piscina, provas de vinho, jantares que duram horas. Grupo pequeno, grande ambiente."
+      },
+      "lisbon": {
+        "title": "Lisboa · 3 dias",
+        "desc": "Perfeita para uns 30 anos. Terraços, rotas gastronómicas, bairros pedonais, vida noturna sem o exagero de Vegas."
+      },
+      "andalusia": {
+        "title": "Andaluzia · 6 dias",
+        "desc": "Sevilha, Granada, Córdova. Pátios, flamenco, tapas até tarde. Uns ótimos 50 anos com um toque de cultura à mistura."
+      }
+    },
+    "cardLink": "Ver o itinerário →",
+    "allLink": "Ver todos os destinos →"
+  },
+  "discoverMore": {
+    "heading": "Descubra Mais",
+    "friends": {
+      "title": "Viagem com Amigos",
+      "desc": "Planeie uma viagem em grupo com amigos sem esforço usando a WePlanify.",
+      "link": "Ler mais →"
+    },
+    "bachelorette": {
+      "title": "Despedida de Solteira / EVJF",
+      "desc": "Planeie uma despedida de solteira surpresa sem que a noiva veja nada.",
+      "link": "Ver a página →"
+    },
+    "guide": {
+      "title": "Guia: Como Planear uma Viagem em Grupo",
+      "desc": "O guia completo, passo a passo, para planear uma viagem em grupo de sucesso.",
+      "link": "Ler o guia →"
+    }
+  }
+}

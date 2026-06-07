@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -19,8 +19,6 @@ type Props = {
 
 type Feature = {
   key: string;
-  en: string;
-  fr: string;
   weplanify: string | boolean;
   stippl: string | boolean;
 };
@@ -44,38 +42,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pathname = "/alternatives/stippl";
   const currentUrl = `${SITE_URL}/${locale}${pathname}`;
 
-  const meta = {
-    en: {
-      title:
-        "Stippl Alternative for Groups: Free Collaborative Planner (2026)",
-      description:
-        "Looking for a Stippl alternative built for group trips? WePlanify adds real-time collaboration, polls, shared budgets and packing lists \u2014 free, bilingual (EN/FR).",
-    },
-    fr: {
-      title:
-        "Alternative \u00e0 Stippl : Planificateur de Voyage de Groupe (2026)",
-      description:
-        "Alternative \u00e0 Stippl pour organiser un voyage de groupe. WePlanify : itin\u00e9raires collaboratifs, sondages, budget partag\u00e9, packing list. Gratuit, bilingue FR/EN.",
-    },
-  };
+  const t = await getTranslations({ locale, namespace: "altStippl" });
 
-  const loc = meta[locale as keyof typeof meta] ?? meta.en;
+  const title = t("meta.title");
+  const description = t("meta.description");
 
   return {
-    title: loc.title,
-    description: loc.description,
+    title,
+    description,
     openGraph: {
       type: "website",
       locale: locale === "fr" ? "fr_FR" : "en_US",
       url: currentUrl,
       siteName: "WePlanify",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     twitter: {
       card: "summary_large_image",
-      title: loc.title,
-      description: loc.description,
+      title,
+      description,
     },
     alternates: {
       canonical: currentUrl,
@@ -93,210 +79,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // ---------------------------------------------------------------------------
 
 const features: Feature[] = [
-  {
-    key: "collab_itinerary",
-    en: "Collaborative itinerary",
-    fr: "Itin\u00e9raire collaboratif",
-    weplanify: true,
-    stippl: true,
-  },
-  {
-    key: "polls",
-    en: "Group polls / voting",
-    fr: "Sondages / votes de groupe",
-    weplanify: true,
-    stippl: false,
-  },
-  {
-    key: "budget",
-    en: "Shared budget tracker",
-    fr: "Suivi de budget partag\u00e9",
-    weplanify: true,
-    stippl: false,
-  },
-  {
-    key: "packing",
-    en: "Packing lists",
-    fr: "Listes de bagages",
-    weplanify: true,
-    stippl: true,
-  },
-  {
-    key: "map",
-    en: "Map integration",
-    fr: "Int\u00e9gration cartographique",
-    weplanify: "basic",
-    stippl: true,
-  },
-  {
-    key: "discovery",
-    en: "Activity discovery",
-    fr: "D\u00e9couverte d\u2019activit\u00e9s",
-    weplanify: true,
-    stippl: true,
-  },
-  {
-    key: "journal",
-    en: "Travel journal / reels",
-    fr: "Carnet de voyage / reels",
-    weplanify: false,
-    stippl: true,
-  },
-  {
-    key: "community",
-    en: "Community itineraries",
-    fr: "Itin\u00e9raires communautaires",
-    weplanify: false,
-    stippl: true,
-  },
-  {
-    key: "free",
-    en: "Free plan",
-    fr: "Plan gratuit",
-    weplanify: true,
-    stippl: true,
-  },
-  {
-    key: "french",
-    en: "French language",
-    fr: "Disponible en fran\u00e7ais",
-    weplanify: true,
-    stippl: false,
-  },
-  {
-    key: "mobile",
-    en: "Mobile app",
-    fr: "Application mobile",
-    weplanify: "web_app",
-    stippl: true,
-  },
-  {
-    key: "realtime",
-    en: "Real-time collaboration",
-    fr: "Collaboration en temps r\u00e9el",
-    weplanify: true,
-    stippl: true,
-  },
+  { key: "collab_itinerary", weplanify: true, stippl: true },
+  { key: "polls", weplanify: true, stippl: false },
+  { key: "budget", weplanify: true, stippl: false },
+  { key: "packing", weplanify: true, stippl: true },
+  { key: "map", weplanify: "basic", stippl: true },
+  { key: "discovery", weplanify: true, stippl: true },
+  { key: "journal", weplanify: false, stippl: true },
+  { key: "community", weplanify: false, stippl: true },
+  { key: "free", weplanify: true, stippl: true },
+  { key: "french", weplanify: true, stippl: false },
+  { key: "mobile", weplanify: "web_app", stippl: true },
+  { key: "realtime", weplanify: true, stippl: true },
 ];
 
-const content = {
-  en: {
-    heroTitle: "WePlanify vs Stippl",
-    heroSubtitle: "Complete comparison \u2014 2026",
-    heroIntro:
-      "Stippl is a mobile-first travel planner with journals, automatic reels, and community-shared itineraries. WePlanify is designed from the ground up for group decision-making with polls, shared budgets, and collaborative planning. Here is a side-by-side look at both apps.",
-    verdictTitle: "TL;DR",
-    verdict:
-      "Stippl offers visual trip planning with travel journals, automatic reels, and community-shared itineraries. However, it lacks group polls, shared budget tracking, and French language support. WePlanify is built for group decision-making with polls, shared budgets, and collaborative planning. Choose Stippl for solo documentation, WePlanify for group coordination.",
-    comparisonTitle: "Head-to-Head Comparison",
-    stipplShinesTitle: "Where Stippl Shines",
-    stipplShinesPoints: [
-      "Night-to-day planning engine \u2014 an approach that connects accommodations with nearby activities for day-by-day planning. It does not include group polls or budget tracking.",
-      "Travel journals and automatic reels \u2014 document your trip with photos and the app generates reels. This is a post-trip feature, not a planning tool.",
-      "Community itineraries \u2014 browse and clone itineraries shared by other travellers. Useful for solo inspiration, less so for group decision-making.",
-      "Mobile-first experience \u2014 native iOS and Android apps for on-the-go planning. No French language support and no web-based desktop access.",
-    ],
-    weplanifyWinsTitle: "Where WePlanify Wins",
-    weplanifyWinsPoints: [
-      "Group polls and voting \u2014 let everyone vote on destinations, dates, and activities so no one feels left out. Stippl has no equivalent feature for group decisions.",
-      "Shared budget tracker \u2014 track group expenses, split costs, and keep everyone aligned financially throughout the trip. This is a feature Stippl does not offer.",
-      "Packing lists \u2014 collaborative packing lists ensure nothing gets forgotten and items are not duplicated across the group. A key advantage for group travel.",
-      "Bilingual (EN/FR) \u2014 fully available in English and French, making WePlanify accessible to francophone travellers who are underserved by English-only apps like Stippl.",
-    ],
-    chooseStipplTitle: "Who Should Choose Stippl?",
-    chooseStipplPoints: [
-      "Solo travellers or couples who want to document their trips with journals and reels.",
-      "Visual planners who prefer a mobile-first, map-based planning experience.",
-      "Travellers who want to discover and clone community-shared itineraries for inspiration.",
-      "People who value trip documentation and sharing as much as the planning itself.",
-    ],
-    chooseWeplanifyTitle: "Who Should Choose WePlanify?",
-    chooseWeplanifyPoints: [
-      "Friend groups of 4 or more who need to coordinate schedules, preferences, and budgets.",
-      "Bachelorette or bachelor party planners juggling opinions from a large group.",
-      "Anyone who wants built-in group decision tools like polls and shared task lists.",
-      "Francophone travellers who need a fully French-language experience.",
-    ],
-    faqTitle: "Frequently Asked Questions",
-    faqs: [
-      {
-        q: "Can I use Stippl for group trips?",
-        a: "Stippl supports collaborative itineraries and real-time collaboration, so multiple people can work on the same trip. However, it lacks group-specific features like polls, voting, and shared budget tracking that make coordinating opinions and expenses in larger groups much easier. For groups of 4 or more, WePlanify is the better choice.",
-      },
-      {
-        q: "Is Stippl free?",
-        a: "Yes, Stippl offers a free plan that includes its core features like itinerary planning, travel journals, and community itineraries. WePlanify is also free forever with no hidden paywalls or feature restrictions.",
-      },
-      {
-        q: "Which app is better for trip documentation?",
-        a: "Stippl has travel journal and automatic reel features for capturing trip memories. WePlanify focuses on the planning and coordination phase rather than post-trip documentation. If documentation is your priority over group planning tools, Stippl covers that use case.",
-      },
-    ],
-    ctaTitle: "Try WePlanify free \u2014 built for groups",
-    ctaButton: "Get started for free",
-    crossLinksTitle: "Explore More",
-    basic: "Basic",
-    webApp: "Web app",
-  },
-  fr: {
-    heroTitle: "WePlanify vs Stippl",
-    heroSubtitle: "Comparaison compl\u00e8te \u2014 2026",
-    heroIntro:
-      "Stippl est un planificateur de voyage visuel, mobile-first, avec des carnets de voyage, des reels automatiques et des itin\u00e9raires partag\u00e9s par la communaut\u00e9. WePlanify est con\u00e7u de A \u00e0 Z pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Voici un comparatif des deux applications.",
-    verdictTitle: "En bref",
-    verdict:
-      "Stippl propose une planification visuelle avec des carnets de voyage, des reels automatiques et des itin\u00e9raires communautaires. Cependant, il ne propose pas de sondages de groupe, de suivi de budget partag\u00e9, ni de support en fran\u00e7ais. WePlanify est con\u00e7u pour la prise de d\u00e9cision en groupe avec des sondages, des budgets partag\u00e9s et une planification collaborative. Choisis Stippl pour la documentation solo, WePlanify pour la coordination de groupe.",
-    comparisonTitle: "Comparatif Face \u00e0 Face",
-    stipplShinesTitle: "L\u00e0 o\u00f9 Stippl se D\u00e9marque",
-    stipplShinesPoints: [
-      "Moteur de planification nuit-jour \u2014 une approche qui relie les h\u00e9bergements aux activit\u00e9s \u00e0 proximit\u00e9 pour la planification jour par jour. Ne comprend pas de sondages de groupe ni de suivi de budget.",
-      "Carnets de voyage et reels automatiques \u2014 documente ton voyage en photos et l\u2019application g\u00e9n\u00e8re des reels. C\u2019est une fonctionnalit\u00e9 post-voyage, pas un outil de planification.",
-      "Itin\u00e9raires communautaires \u2014 parcourez et clonez les itin\u00e9raires partag\u00e9s par d\u2019autres voyageurs. Utile pour l\u2019inspiration solo, moins pour la prise de d\u00e9cision en groupe.",
-      "Exp\u00e9rience mobile-first \u2014 applications natives iOS et Android pour planifier en d\u00e9placement. Pas de support en fran\u00e7ais et pas d\u2019acc\u00e8s web sur ordinateur.",
-    ],
-    weplanifyWinsTitle: "L\u00e0 o\u00f9 WePlanify Gagne",
-    weplanifyWinsPoints: [
-      "Sondages et votes de groupe \u2014 laissez chacun voter sur les destinations, les dates et les activit\u00e9s pour que personne ne se sente exclu. Stippl ne propose pas d\u2019\u00e9quivalent pour les d\u00e9cisions de groupe.",
-      "Suivi de budget partag\u00e9 \u2014 suivez les d\u00e9penses du groupe, r\u00e9partissez les co\u00fbts et gardez tout le monde align\u00e9 financi\u00e8rement. Une fonctionnalit\u00e9 que Stippl ne propose pas.",
-      "Listes de bagages \u2014 des listes collaboratives pour ne rien oublier et \u00e9viter les doublons au sein du groupe. Un avantage cl\u00e9 pour les voyages de groupe.",
-      "Bilingue (EN/FR) \u2014 enti\u00e8rement disponible en anglais et en fran\u00e7ais, rendant WePlanify accessible aux voyageurs francophones mal desservis par les applications anglophones comme Stippl.",
-    ],
-    chooseStipplTitle: "Qui devrait choisir Stippl ?",
-    chooseStipplPoints: [
-      "Les voyageurs solo ou les couples qui veulent documenter leurs voyages avec des carnets et des reels.",
-      "Les planificateurs visuels qui pr\u00e9f\u00e8rent une exp\u00e9rience mobile-first centr\u00e9e sur la carte.",
-      "Les voyageurs qui veulent d\u00e9couvrir et cloner des itin\u00e9raires communautaires pour s\u2019inspirer.",
-      "Ceux qui accordent autant d\u2019importance \u00e0 la documentation du voyage qu\u2019\u00e0 la planification elle-m\u00eame.",
-    ],
-    chooseWeplanifyTitle: "Qui devrait choisir WePlanify ?",
-    chooseWeplanifyPoints: [
-      "Les groupes d\u2019amis de 4 personnes ou plus qui doivent coordonner emplois du temps, pr\u00e9f\u00e9rences et budgets.",
-      "Les organisateurs d\u2019EVJF ou d\u2019EVG qui jonglent avec les avis d\u2019un grand groupe.",
-      "Tous ceux qui veulent des outils de d\u00e9cision de groupe int\u00e9gr\u00e9s comme les sondages et les listes de t\u00e2ches partag\u00e9es.",
-      "Les voyageurs francophones qui ont besoin d\u2019une exp\u00e9rience enti\u00e8rement en fran\u00e7ais.",
-    ],
-    faqTitle: "Questions Fr\u00e9quentes",
-    faqs: [
-      {
-        q: "Peut-on utiliser Stippl pour les voyages de groupe ?",
-        a: "Stippl prend en charge les itin\u00e9raires collaboratifs et la collaboration en temps r\u00e9el, permettant \u00e0 plusieurs personnes de travailler sur le m\u00eame voyage. Cependant, il manque de fonctionnalit\u00e9s sp\u00e9cifiques au groupe comme les sondages, les votes et le suivi de budget partag\u00e9 qui facilitent grandement la coordination des avis et des d\u00e9penses dans les grands groupes. Pour les groupes de 4 personnes ou plus, WePlanify est le meilleur choix.",
-      },
-      {
-        q: "Stippl est-il gratuit ?",
-        a: "Oui, Stippl propose un plan gratuit qui inclut ses fonctionnalit\u00e9s principales comme la planification d\u2019itin\u00e9raires, les carnets de voyage et les itin\u00e9raires communautaires. WePlanify est \u00e9galement gratuit pour toujours, sans mur payant cach\u00e9 ni restriction de fonctionnalit\u00e9s.",
-      },
-      {
-        q: "Quelle application est meilleure pour documenter un voyage ?",
-        a: "Stippl propose des carnets de voyage et des reels automatiques pour capturer tes souvenirs. WePlanify se concentre sur la phase de planification et de coordination plut\u00f4t que sur la documentation post-voyage. Si la documentation est ta priorit\u00e9 plut\u00f4t que les outils de planification de groupe, Stippl couvre ce cas d\u2019usage.",
-      },
-    ],
-    ctaTitle: "Essaie WePlanify gratuitement \u2014 con\u00e7u pour les groupes",
-    ctaButton: "Commencer gratuitement",
-    crossLinksTitle: "D\u00e9couvrir aussi",
-    basic: "Basique",
-    webApp: "App web",
-  },
-};
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -340,24 +136,25 @@ function CrossIcon() {
 
 function CellValue({
   value,
-  locale,
+  basicLabel,
+  webAppLabel,
 }: {
   value: string | boolean;
-  locale: string;
+  basicLabel: string;
+  webAppLabel: string;
 }) {
-  const t = content[locale as keyof typeof content] ?? content.en;
   if (value === true) return <CheckIcon />;
   if (value === false) return <CrossIcon />;
   if (value === "basic")
     return (
       <span className="text-xs font-karla font-semibold text-amber-700 bg-amber-50 rounded-full px-2 py-0.5">
-        {t.basic}
+        {basicLabel}
       </span>
     );
   if (value === "web_app")
     return (
       <span className="text-xs font-karla font-semibold text-sky-700 bg-sky-50 rounded-full px-2 py-0.5">
-        {t.webApp}
+        {webAppLabel}
       </span>
     );
   return <span className="text-xs font-karla text-gray-500">{value}</span>;
@@ -371,7 +168,15 @@ export default async function StipplComparisonPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = content[locale as keyof typeof content] ?? content.en;
+  const t = await getTranslations("altStippl");
+
+  const basicLabel = t("basic");
+  const webAppLabel = t("webApp");
+  const stipplShinesPoints = t.raw("stipplShinesPoints") as string[];
+  const weplanifyWinsPoints = t.raw("weplanifyWinsPoints") as string[];
+  const chooseStipplPoints = t.raw("chooseStipplPoints") as string[];
+  const chooseWeplanifyPoints = t.raw("chooseWeplanifyPoints") as string[];
+  const faqs = t.raw("faqs") as { q: string; a: string }[];
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -405,13 +210,13 @@ export default async function StipplComparisonPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "fr" ? "Accueil" : "Home",
+        name: t("breadcrumb.home"),
         item: `https://www.weplanify.com/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "fr" ? "Comparatif" : "Alternatives",
+        name: t("breadcrumb.comparison"),
         item: `https://www.weplanify.com/${locale}/alternatives`,
       },
       {
@@ -429,7 +234,7 @@ export default async function StipplComparisonPage({ params }: Props) {
   const faqLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: t.faqs.map((faq) => ({
+    mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
       acceptedAnswer: {
@@ -460,7 +265,7 @@ export default async function StipplComparisonPage({ params }: Props) {
             <div className="hidden lg:block mb-8">
               <Breadcrumb
                 items={[
-                  { label: locale === "fr" ? "Accueil" : "Home", href: `/${locale}` },
+                  { label: t("breadcrumb.home"), href: `/${locale}` },
                   { label: "Alternatives", href: `/${locale}/alternatives` },
                   { label: "vs Stippl" },
                 ]}
@@ -469,13 +274,13 @@ export default async function StipplComparisonPage({ params }: Props) {
           </div>
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">
-              {t.heroSubtitle}
+              {t("heroSubtitle")}
             </p>
             <h1 className="font-londrina-solid text-[#001E13] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-tight mb-6">
-              {t.heroTitle}
+              {t("heroTitle")}
             </h1>
             <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
-              {t.heroIntro}
+              {t("heroIntro")}
             </p>
           </div>
         </section>
@@ -487,10 +292,10 @@ export default async function StipplComparisonPage({ params }: Props) {
           <div className="max-w-3xl mx-auto">
             <div className="rounded-2xl border-2 border-[#EEF899] bg-[#EEF899]/20 p-6 lg:p-8">
               <h2 className="font-londrina-solid text-[#001E13] text-xl lg:text-2xl mb-3">
-                {t.verdictTitle}
+                {t("verdictTitle")}
               </h2>
               <p className="font-karla text-[#001E13]/85 text-sm lg:text-base leading-relaxed">
-                {t.verdict}
+                {t("verdict")}
               </p>
             </div>
           </div>
@@ -502,7 +307,7 @@ export default async function StipplComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.comparisonTitle}
+              {t("comparisonTitle")}
             </h2>
 
             {/* ---------- Desktop table ---------- */}
@@ -511,7 +316,7 @@ export default async function StipplComparisonPage({ params }: Props) {
                 <thead>
                   <tr className="bg-[#001E13]">
                     <th className="font-karla font-bold text-[#FFFBF5] px-6 py-4 text-sm min-w-[220px]">
-                      {locale === "fr" ? "Fonctionnalit\u00e9" : "Feature"}
+                      {t("featureHeader")}
                     </th>
                     <th className="font-karla font-bold text-center px-6 py-4 text-sm text-[#EEF899] min-w-[160px]">
                       WePlanify
@@ -528,13 +333,13 @@ export default async function StipplComparisonPage({ params }: Props) {
                       className={i % 2 === 0 ? "bg-white" : "bg-[#FFFBF5]"}
                     >
                       <td className="font-karla text-sm text-[#001E13] px-6 py-3.5">
-                        {locale === "fr" ? feature.fr : feature.en}
+                        {t(`features.${feature.key}`)}
                       </td>
                       <td className="px-6 py-3.5 text-center bg-[#EEF899]/10">
-                        <CellValue value={feature.weplanify} locale={locale} />
+                        <CellValue value={feature.weplanify} basicLabel={basicLabel} webAppLabel={webAppLabel} />
                       </td>
                       <td className="px-6 py-3.5 text-center">
-                        <CellValue value={feature.stippl} locale={locale} />
+                        <CellValue value={feature.stippl} basicLabel={basicLabel} webAppLabel={webAppLabel} />
                       </td>
                     </tr>
                   ))}
@@ -556,10 +361,10 @@ export default async function StipplComparisonPage({ params }: Props) {
                       className="flex items-center justify-between text-sm font-karla"
                     >
                       <span className="text-[#001E13]/80">
-                        {locale === "fr" ? feature.fr : feature.en}
+                        {t(`features.${feature.key}`)}
                       </span>
                       <span className="ml-3 shrink-0">
-                        <CellValue value={feature.weplanify} locale={locale} />
+                        <CellValue value={feature.weplanify} basicLabel={basicLabel} webAppLabel={webAppLabel} />
                       </span>
                     </li>
                   ))}
@@ -577,10 +382,10 @@ export default async function StipplComparisonPage({ params }: Props) {
                       className="flex items-center justify-between text-sm font-karla"
                     >
                       <span className="text-[#001E13]/80">
-                        {locale === "fr" ? feature.fr : feature.en}
+                        {t(`features.${feature.key}`)}
                       </span>
                       <span className="ml-3 shrink-0">
-                        <CellValue value={feature.stippl} locale={locale} />
+                        <CellValue value={feature.stippl} basicLabel={basicLabel} webAppLabel={webAppLabel} />
                       </span>
                     </li>
                   ))}
@@ -595,7 +400,7 @@ export default async function StipplComparisonPage({ params }: Props) {
         {/* -------------------------------------------------------------- */}
         <div className="text-center py-8">
           <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="text-[#F6391A] font-karla font-bold hover:underline">
-            {locale === "fr" ? "Essayer WePlanify gratuitement →" : "Try WePlanify free →"}
+            {t("midCta")}
           </Link>
         </div>
 
@@ -607,10 +412,10 @@ export default async function StipplComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.stipplShinesTitle}
+              {t("stipplShinesTitle")}
             </h2>
             <div className="grid gap-5 sm:grid-cols-2">
-              {t.stipplShinesPoints.map((point, i) => (
+              {stipplShinesPoints.map((point, i) => (
                 <div
                   key={i}
                   className="rounded-2xl border border-[#001E13]/10 bg-[#FFFBF5] p-6"
@@ -628,10 +433,10 @@ export default async function StipplComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.weplanifyWinsTitle}
+              {t("weplanifyWinsTitle")}
             </h2>
             <div className="grid gap-5 sm:grid-cols-2">
-              {t.weplanifyWinsPoints.map((point, i) => (
+              {weplanifyWinsPoints.map((point, i) => (
                 <div
                   key={i}
                   className="rounded-2xl bg-[#001E13] p-6"
@@ -654,10 +459,10 @@ export default async function StipplComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-3xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-8">
-              {t.chooseStipplTitle}
+              {t("chooseStipplTitle")}
             </h2>
             <ul className="space-y-4">
-              {t.chooseStipplPoints.map((point, i) => (
+              {chooseStipplPoints.map((point, i) => (
                 <li
                   key={i}
                   className="flex items-start gap-3 font-karla text-sm text-[#001E13]/80 leading-relaxed"
@@ -676,10 +481,10 @@ export default async function StipplComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-8">
-              {t.chooseWeplanifyTitle}
+              {t("chooseWeplanifyTitle")}
             </h2>
             <ul className="space-y-4">
-              {t.chooseWeplanifyPoints.map((point, i) => (
+              {chooseWeplanifyPoints.map((point, i) => (
                 <li
                   key={i}
                   className="flex items-start gap-3 font-karla text-sm text-[#001E13]/80 leading-relaxed"
@@ -700,10 +505,10 @@ export default async function StipplComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
           <div className="max-w-3xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.faqTitle}
+              {t("faqTitle")}
             </h2>
             <div className="space-y-6">
-              {t.faqs.map((faq, i) => (
+              {faqs.map((faq, i) => (
                 <div
                   key={i}
                   className="rounded-2xl border border-[#001E13]/10 bg-[#FFFBF5] p-6"
@@ -726,13 +531,13 @@ export default async function StipplComparisonPage({ params }: Props) {
         <section className="px-4 lg:px-8 pb-12 lg:pb-20">
           <div className="max-w-4xl mx-auto rounded-[24px] lg:rounded-[32px] bg-[#F6391A] px-8 py-12 lg:py-16 text-center">
             <h2 className="font-londrina-solid text-[#FFFBF5] text-2xl lg:text-4xl mb-4">
-              {t.ctaTitle}
+              {t("ctaTitle")}
             </h2>
             <Link
               href="https://app.weplanify.com"
               className="inline-block mt-4 px-8 py-3 bg-[#FFFBF5] text-[#F6391A] font-karla font-bold rounded-full text-base lg:text-lg hover:shadow-lg transition-shadow"
             >
-              {t.ctaButton}
+              {t("ctaButton")}
             </Link>
           </div>
         </section>
@@ -743,40 +548,32 @@ export default async function StipplComparisonPage({ params }: Props) {
         <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-5xl mx-auto pt-16 lg:pt-20">
             <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
-              {t.crossLinksTitle}
+              {t("crossLinksTitle")}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Link href={`/${locale}/alternatives`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr"
-                      ? "Toutes les Alternatives"
-                      : "All Alternatives"}
+                    {t("crossLinks.allTitle")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Compare WePlanify avec toutes les applications de voyage de groupe populaires."
-                      : "Compare WePlanify with all popular group trip planning apps."}
+                    {t("crossLinks.allDesc")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Voir le comparatif \u2192" : "See comparison \u2192"}
+                    {t("crossLinks.allCta")}
                   </span>
                 </div>
               </Link>
               <Link href={`/${locale}/alternatives/wanderlog`} className="group">
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr"
-                      ? "WePlanify vs Wanderlog"
-                      : "WePlanify vs Wanderlog"}
+                    {t("crossLinks.wanderlogTitle")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Comparaison d\u00e9taill\u00e9e entre WePlanify et Wanderlog pour les voyages de groupe."
-                      : "Detailed comparison between WePlanify and Wanderlog for group travel."}
+                    {t("crossLinks.wanderlogDesc")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Voir le comparatif \u2192" : "See comparison \u2192"}
+                    {t("crossLinks.wanderlogCta")}
                   </span>
                 </div>
               </Link>
@@ -786,17 +583,13 @@ export default async function StipplComparisonPage({ params }: Props) {
               >
                 <div className="bg-white border border-[#001E13]/10 rounded-[24px] p-6 lg:p-8 hover:shadow-lg transition-shadow duration-300 h-full">
                   <h3 className="text-lg lg:text-xl font-londrina-solid text-[#001E13] mb-2">
-                    {locale === "fr"
-                      ? "Guide : Organiser un Voyage de Groupe"
-                      : "Guide: How to Plan a Group Trip"}
+                    {t("crossLinks.guideTitle")}
                   </h3>
                   <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4">
-                    {locale === "fr"
-                      ? "Le guide complet \u00e9tape par \u00e9tape pour organiser un voyage de groupe r\u00e9ussi."
-                      : "The complete step-by-step guide to planning a successful group trip."}
+                    {t("crossLinks.guideDesc")}
                   </p>
                   <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                    {locale === "fr" ? "Lire le guide \u2192" : "Read the guide \u2192"}
+                    {t("crossLinks.guideCta")}
                   </span>
                 </div>
               </Link>

@@ -1,0 +1,23 @@
+{
+  "badge": "了解应用",
+  "title": "3 个简单步骤规划你的团体旅行",
+  "description": "简单、协作，为团体而生。",
+  "card1": {
+    "title": "第 1 步：邀请你的团队",
+    "description": "填好基本信息。一键添加你的好友或家人。每个人看到的都是同一段旅行。",
+    "statValue": "1 分钟",
+    "statLabel": "邀请整个团队"
+  },
+  "card2": {
+    "title": "第 2 步：探索与发现",
+    "description": "滑动浏览活动、餐厅和酒店。把你的心头好加入行程。",
+    "statValue": "500+",
+    "statLabel": "个可发现的地点"
+  },
+  "card3": {
+    "title": "第 3 步：决定并敲定",
+    "description": "创建投票、管理预算，并一起为出发做准备。",
+    "statValue": "100%",
+    "statLabel": "一起决定"
+  }
+}

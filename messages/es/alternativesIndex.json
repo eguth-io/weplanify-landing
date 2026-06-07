@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Mejores apps para planificar viajes en grupo comparadas (2026) — WePlanify",
+    "description": "Comparativa lado a lado de las mejores apps de viajes en grupo: Wanderlog, SquadTrip, TripIt, Stippl, Splitwise. Elige la adecuada para tu próxima aventura en grupo."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "currentLd": "Alternativas",
+    "currentNav": "Alternativas"
+  },
+  "jsonld": {
+    "itemListName": "Mejores apps para planificar viajes en grupo 2026"
+  },
+  "featureColumnHeading": "Función",
+  "features": [
+    { "key": "collab_itinerary", "label": "Itinerario colaborativo" },
+    { "key": "polls", "label": "Encuestas / votaciones grupales" },
+    { "key": "budget", "label": "Control de presupuesto compartido" },
+    { "key": "packing", "label": "Listas de equipaje" },
+    { "key": "discovery", "label": "Descubrimiento de actividades" },
+    { "key": "free", "label": "Plan gratuito" },
+    { "key": "french", "label": "Disponible en francés" },
+    { "key": "realtime", "label": "Colaboración en tiempo real" },
+    { "key": "mobile", "label": "App móvil" }
+  ],
+  "competitorDetails": [
+    {
+      "name": "Wanderlog",
+      "text": "Wanderlog es un creador de itinerarios basado en mapas con visualización de rutas. Le faltan encuestas grupales, control de presupuesto compartido y soporte en francés — funciones esenciales para planificar viajes en grupo."
+    },
+    {
+      "name": "SquadTrip",
+      "text": "SquadTrip gestiona los pagos del grupo y la confirmación de asistencia. No incluye listas de equipaje, descubrimiento de actividades ni soporte en francés, por lo que los grupos siguen necesitando herramientas adicionales para planificar todo el viaje."
+    },
+    {
+      "name": "Troupe",
+      "text": "Troupe permite a los grupos votar sugerencias de actividades. Cubre solo la fase de decisión — no hay control de presupuesto, ni listas de equipaje, ni soporte en francés, dejando sin resolver la mayor parte de la logística del viaje."
+    },
+    {
+      "name": "TripIt",
+      "text": "TripIt reúne itinerarios a partir de correos de reserva reenviados. Está diseñado para viajeros en solitario — la colaboración en grupo, las encuestas y los presupuestos compartidos no están disponibles, y la mayoría de las funciones requieren una suscripción Pro de pago."
+    },
+    {
+      "name": "Splitwise",
+      "text": "Splitwise lleva la cuenta de los gastos compartidos de un grupo. No tiene funciones de planificación de viajes — sin itinerario, sin encuestas, sin listas de equipaje — por lo que la mayoría de los grupos necesitan una segunda app junto a ella. WePlanify incluye control de presupuesto integrado junto con todas las demás herramientas de planificación."
+    },
+    {
+      "name": "Stippl",
+      "text": "Stippl es un planificador de viajes visual con itinerarios compartidos por la comunidad y diarios fotográficos. Le faltan encuestas grupales, control de presupuesto compartido y soporte en francés — lo que lo hace más adecuado para viajeros en solitario que para coordinar un viaje en grupo."
+    }
+  ],
+  "heroTitle": "Mejores apps para planificar viajes en grupo en 2026",
+  "heroSubtitle": "Una comparativa completa, lado a lado",
+  "heroIntro": "Planificar un viaje con amigos o familia debería ser emocionante, no estresante. Comparamos las apps de viajes en grupo más populares para que puedas elegir la herramienta adecuada para tu próxima aventura. Funciones, precios y todo lo que necesitas para decidir.",
+  "comparisonTitle": "Comparativa de funciones",
+  "competitorsTitle": "Un vistazo más de cerca a cada app",
+  "whyTitle": "¿Por qué elegir WePlanify?",
+  "whyPoints": [
+    {
+      "title": "Plataforma todo en uno",
+      "desc": "Itinerario, presupuesto, encuestas, listas de equipaje y descubrimiento de actividades en una sola app. Sin necesidad de hacer malabares con tres herramientas distintas."
+    },
+    {
+      "title": "Gratis para siempre",
+      "desc": "Todas las funciones básicas son gratuitas, sin muros de pago ocultos ni límites de prueba. Planifica todos los viajes que quieras."
+    },
+    {
+      "title": "Bilingüe (EN / FR)",
+      "desc": "Totalmente disponible en inglés y francés — algo poco habitual entre las apps de planificación de viajes."
+    },
+    {
+      "title": "Pensada para decisiones de grupo",
+      "desc": "Encuestas, votaciones y colaboración en tiempo real garantizan que todos opinen sobre el plan."
+    }
+  ],
+  "ctaTitle": "¿Listo para planificar tu próximo viaje en grupo?",
+  "ctaButton": "Empezar gratis",
+  "comingSoon": "Próximamente",
+  "freemium": "Freemium",
+  "webApp": "App web",
+  "discoverMore": {
+    "heading": "Descubre más",
+    "cards": {
+      "friends": {
+        "title": "Viaje con amigos",
+        "desc": "Planifica un viaje en grupo con amigos sin esfuerzo usando WePlanify.",
+        "cta": "Leer más →"
+      },
+      "bachelorette": {
+        "title": "Planificar una despedida de soltera",
+        "desc": "Todo lo que necesitas para planificar una despedida de soltera inolvidable, sin estrés.",
+        "cta": "Leer más →"
+      },
+      "guide": {
+        "title": "Guía: cómo planificar un viaje en grupo",
+        "desc": "La guía completa paso a paso para planificar un viaje en grupo con éxito.",
+        "cta": "Leer la guía →"
+      }
+    }
+  }
+}

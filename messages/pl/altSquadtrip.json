@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "Alternatywa dla SquadTrip: darmowy planer wyjazdów grupowych (2026) | WePlanify",
+    "description": "Szukasz alternatywy dla SquadTrip? WePlanify oferuje plany podróży w czasie rzeczywistym, wspólne ankiety, grupowe budżety i listy rzeczy do spakowania — za darmo, dwujęzycznie (EN/FR)."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "alternatives": "Alternatywy"
+  },
+  "jsonld": {
+    "breadcrumbCurrent": "WePlanify vs SquadTrip"
+  },
+  "heroTitle": "WePlanify vs SquadTrip",
+  "heroSubtitle": "Najlepszy darmowy planer wyjazdów grupowych? (2026)",
+  "heroIntro": "Zarówno WePlanify, jak i SquadTrip pomagają grupom wspólnie organizować podróże, ale rozwiązują różne problemy. SquadTrip jest zbudowany wokół zbierania płatności i logistyki gości. WePlanify to wszechstronny wspólny planer z ankietami, wspólnymi budżetami i planami podróży — całkowicie za darmo.",
+  "verdictTitle": "Szybki werdykt",
+  "verdict": "SquadTrip skupia się na zbieraniu płatności i logistyce gości dla organizatorów wyjazdów. WePlanify skupia się na wspólnym planowaniu z ankietami, wspólnymi budżetami i planami podróży — całkowicie za darmo, bez prowizji za obsługę płatności.",
+  "comparisonTitle": "Porównanie funkcja po funkcji",
+  "featureHeader": "Funkcja",
+  "squadtripShinesTitle": "W czym SquadTrip błyszczy",
+  "squadtripShinesPoints": [
+    {
+      "title": "Zbieranie płatności",
+      "desc": "SquadTrip pozwala organizatorom zbierać płatności od uczestników wyjazdu. Jeśli Twój wyjazd grupowy wiąże się ze zbieraniem zaliczek, dzieleniem kosztów noclegu lub zarządzaniem oświadczeniami, SquadTrip to obsłuży."
+    },
+    {
+      "title": "Formularze i oświadczenia gości",
+      "desc": "Uczestnicy mogą podpisywać oświadczenia, podawać preferencje żywieniowe lub dane paszportowe. SquadTrip udostępnia uporządkowane formularze i narzędzia do zarządzania gośćmi, wykraczające poza zwykłe linki z zaproszeniem."
+    },
+    {
+      "title": "Profesjonalna organizacja wyjazdów",
+      "desc": "Jeśli prowadzisz biznes turystyczny lub zawodowo organizujesz wyjazdy grupowe, SquadTrip oferuje funkcje płatności i logistyki ukierunkowane na takie zastosowanie."
+    }
+  ],
+  "weplanifyWinsTitle": "W czym wygrywa WePlanify",
+  "weplanifyWinsPoints": [
+    {
+      "title": "Podejmowanie decyzji w grupie",
+      "desc": "WePlanify oferuje wbudowane ankiety i głosowanie, dzięki czemu Twoja grupa może wspólnie decydować o kierunkach, terminach i atrakcjach. Koniec z niekończącymi się wątkami na WhatsAppie — każdy głosuje, a grupa decyduje."
+    },
+    {
+      "title": "100% za darmo, bez ukrytych opłat",
+      "desc": "Każda podstawowa funkcja WePlanify jest darmowa. Bez prowizji za obsługę płatności, bez planów premium za niezbędne narzędzia. Planuj nieograniczoną liczbę podróży bez żadnych kosztów."
+    },
+    {
+      "title": "Kompletny zestaw narzędzi do planowania",
+      "desc": "Listy rzeczy do spakowania, odkrywanie atrakcji, wspólne budżety i wspólne plany podróży — wszystko w jednym miejscu. SquadTrip skupia się na logistyce, podczas gdy WePlanify obejmuje całą drogę planowania."
+    },
+    {
+      "title": "Wsparcie dwujęzyczne",
+      "desc": "WePlanify jest w pełni dostępne po angielsku i francusku. SquadTrip działa tylko po angielsku, co może być przeszkodą dla grup francuskojęzycznych."
+    }
+  ],
+  "whoShouldTitle": "Kto co powinien wybrać?",
+  "chooseSquadtrip": "Wybierz SquadTrip, jeśli",
+  "chooseSquadtripPoints": [
+    "Musisz zbierać płatności od uczestników wyjazdu",
+    "Organizujesz wyjazdy zawodowo i potrzebujesz formularzy/oświadczeń gości",
+    "Logistyka płatności to Twój największy problem przy planowaniu"
+  ],
+  "chooseWeplanify": "Wybierz WePlanify, jeśli",
+  "chooseWeplanifyPoints": [
+    "Chcesz, by cała Twoja grupa planowała wspólnie",
+    "Potrzebujesz ankiet, wspólnych budżetów i list rzeczy do spakowania w jednej aplikacji",
+    "Chcesz całkowicie darmowego rozwiązania bez opłat",
+    "W Twojej grupie są osoby francuskojęzyczne"
+  ],
+  "faqTitle": "Najczęściej zadawane pytania",
+  "faqs": [
+    {
+      "q": "Po co przesiadać się ze SquadTrip na WePlanify?",
+      "a": "SquadTrip jest zbudowany wokół zbierania płatności, co oznacza, że brakuje w nim narzędzi do planowania, takich jak ankiety, wspólne budżety i listy rzeczy do spakowania. Jeśli Twoja grupa musi wspólnie decydować o kierunkach, śledzić wydatki i organizować się razem, WePlanify obejmuje to wszystko — całkowicie za darmo."
+    },
+    {
+      "q": "Czego brakuje SquadTrip?",
+      "a": "SquadTrip nie oferuje głosowania grupowego ani ankiet, wspólnych list rzeczy do spakowania, odkrywania atrakcji ani obsługi języka francuskiego. Jego ukierunkowanie na obsługę płatności oznacza, że samo doświadczenie planowania jest ograniczone w porównaniu z WePlanify."
+    },
+    {
+      "q": "Czy SquadTrip jest naprawdę darmowy?",
+      "a": "SquadTrip oferuje darmowe strony wyjazdów, ale jego główną wartością jest zbieranie płatności, co wiąże się z prowizjami. WePlanify jest w 100% darmowe, bez prowizji od transakcji — każda funkcja jest dostępna bez opłat."
+    }
+  ],
+  "ctaTitle": "Gotowy, by zaplanować kolejny wyjazd grupowy?",
+  "ctaButton": "Zacznij za darmo",
+  "crossLinksTitle": "Odkryj więcej",
+  "badges": {
+    "free100": "100% za darmo",
+    "partialFees": "Opłaty od płatności",
+    "paymentCollection": "Ze zbieraniem płatności",
+    "coreFeature": "Funkcja podstawowa",
+    "basic": "Podstawowe",
+    "advanced": "Formularze, oświadczenia",
+    "webApp": "Aplikacja webowa"
+  },
+  "features": {
+    "collab_itinerary": "Wspólny plan podróży",
+    "polls": "Ankiety grupowe / głosowanie",
+    "budget": "Śledzenie wspólnego budżetu",
+    "payment": "Obsługa płatności",
+    "packing": "Listy rzeczy do spakowania",
+    "guest_mgmt": "Zarządzanie gośćmi",
+    "discovery": "Odkrywanie atrakcji",
+    "free": "Darmowe",
+    "french": "Język francuski",
+    "mobile": "Aplikacja mobilna",
+    "realtime": "Współpraca w czasie rzeczywistym"
+  },
+  "midCta": "Wypróbuj WePlanify za darmo →",
+  "crossLinks": {
+    "fullComparison": {
+      "title": "Pełne porównanie",
+      "text": "Porównaj WePlanify z Wanderlog, SquadTrip, Troupe i TripIt w naszym pełnym porównaniu.",
+      "link": "Zobacz porównanie →"
+    },
+    "tripWithFriends": {
+      "title": "Wyjazd ze znajomymi",
+      "text": "Zaplanuj wyjazd grupowy ze znajomymi bez wysiłku dzięki WePlanify.",
+      "link": "Czytaj dalej →"
+    },
+    "guide": {
+      "title": "Poradnik: jak zaplanować wyjazd grupowy",
+      "text": "Kompletny przewodnik krok po kroku po planowaniu udanego wyjazdu grupowego.",
+      "link": "Przeczytaj poradnik →"
+    }
+  }
+}

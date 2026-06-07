@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Polityka prywatności | WePlanify",
+    "description": "Dowiedz się, jak WePlanify gromadzi, wykorzystuje i chroni Twoje dane osobowe."
+  },
+  "title": "Polityka prywatności",
+  "lastUpdated": "Ostatnia aktualizacja: 5 kwietnia 2026 r.",
+  "breadcrumb": {
+    "home": "Strona główna"
+  },
+  "sections": [
+    {
+      "title": "1. Administrator danych",
+      "body": "WePlanify jest prowadzone przez WePlanify SAS. W przypadku jakichkolwiek pytań dotyczących Twoich danych osobowych możesz się z nami skontaktować pod adresem privacy@weplanify.com."
+    },
+    {
+      "title": "2. Dane, które gromadzimy",
+      "body": "Gromadzimy następujące dane w zależności od Twoich interakcji z naszymi usługami:",
+      "list": [
+        "Adres e-mail — gdy zapisujesz się do bety lub na powiadomienia o uruchomieniu.",
+        "Dane techniczne — adres IP i informacje o przeglądarce, gromadzone automatycznie, gdy korzystasz z naszego planera podróży opartego na AI lub odwiedzasz naszą stronę.",
+        "Dane o użytkowaniu — anonimowe statystyki gromadzone za pomocą plików cookie (za Twoją zgodą) w celu ulepszania naszej usługi."
+      ]
+    },
+    {
+      "title": "3. Jak wykorzystujemy Twoje dane",
+      "body": "Twoje dane są wykorzystywane wyłącznie w następujących celach:",
+      "list": [
+        "Aby powiadomić Cię o dostępie do bety i premierach produktu (tylko jeśli wyraziłeś na to zgodę).",
+        "Aby chronić nasze usługi przed botami i nadużyciami (za pomocą Cloudflare Turnstile).",
+        "Aby analizować anonimowe wzorce użytkowania i ulepszać doświadczenie użytkownika."
+      ]
+    },
+    {
+      "title": "4. Podstawa prawna (RODO)",
+      "body": "Przetwarzamy Twoje dane osobowe na podstawie:",
+      "list": [
+        "Twojej zgody — w przypadku powiadomień o zapisie do bety i plików cookie do analityki.",
+        "Prawnie uzasadnionego interesu — w celu zapewnienia bezpieczeństwa, ochrony przed botami i przeciwdziałania oszustwom."
+      ]
+    },
+    {
+      "title": "5. Udostępnianie danych",
+      "body": "Nigdy nie sprzedajemy Twoich danych osobowych. Udostępniamy dane następującym dostawcom usług, z których wszyscy są związani umowami o powierzeniu przetwarzania danych:",
+      "list": [
+        "Resend (USA) — dostarczanie e-maili transakcyjnych (otrzymuje Twój adres e-mail).",
+        "Google Analytics przez Google Tag Manager (USA) — anonimowa analityka użytkowania (za Twoją zgodą).",
+        "Cloudflare Turnstile (USA) — ochrona przed botami (otrzymuje Twój adres IP)."
+      ]
+    },
+    {
+      "title": "6. Międzynarodowe przekazywanie danych",
+      "body": "Niektórzy z naszych dostawców usług mają siedzibę w Stanach Zjednoczonych. W przypadku takich transferów opieramy się na ramach ochrony danych UE–USA (decyzja stwierdzająca odpowiedni stopień ochrony z lipca 2023 r.), gdy dostawca jest certyfikowany, lub na standardowych klauzulach umownych (art. 46 ust. 2 lit. c RODO) w pozostałych przypadkach."
+    },
+    {
+      "title": "7. Okres przechowywania danych",
+      "body": "Adresy e-mail z zapisu do bety są przechowywane do momentu uruchomienia bety oraz przez maksymalnie 12 miesięcy po nim, a następnie usuwane. Dane techniczne (adresy IP) gromadzone przez planer podróży oparty na AI są automatycznie usuwane po 90 dniach. Dane analityczne są anonimizowane i przechowywane bezterminowo."
+    },
+    {
+      "title": "8. Twoje prawa",
+      "body": "Zgodnie z RODO masz prawo do:",
+      "list": [
+        "Dostępu do swoich danych osobowych.",
+        "Sprostowania nieprawidłowych danych.",
+        "Żądania usunięcia swoich danych.",
+        "Wycofania zgody w dowolnym momencie.",
+        "Przenoszenia danych.",
+        "Wniesienia skargi do organu nadzorczego (CNIL we Francji)."
+      ],
+      "footer": "Aby skorzystać z któregokolwiek z tych praw, skontaktuj się z nami pod adresem privacy@weplanify.com."
+    },
+    {
+      "title": "9. Pliki cookie i pamięć lokalna",
+      "body": "Korzystamy z następujących technologii:",
+      "list": [
+        "Google Analytics (przez GTM) — anonimowa analityka użytkowania. Czas trwania: do 13 miesięcy. Wymaga Twojej zgody.",
+        "Cloudflare Turnstile — ochrona przed botami. Tylko na czas sesji. Nie wymaga zgody (prawnie uzasadniony interes: bezpieczeństwo).",
+        "weplanify_consent (localStorage) — przechowuje Twój wybór dotyczący zgody na pliki cookie. Trwałe. Nie wymaga zgody (ściśle niezbędne)."
+      ],
+      "footer": "W przypadku odwiedzających z EOG przed wyrażeniem zgody nie są ustawiane żadne pliki cookie do analityki. Zgodę możesz wycofać w dowolnym momencie, czyszcząc pamięć przeglądarki."
+    },
+    {
+      "title": "10. Bezpieczeństwo",
+      "body": "Wdrażamy odpowiednie środki techniczne i organizacyjne, aby chronić Twoje dane osobowe przed nieuprawnionym dostępem, zmianą, ujawnieniem lub zniszczeniem."
+    },
+    {
+      "title": "11. Zmiany w niniejszej polityce",
+      "body": "Od czasu do czasu możemy aktualizować niniejszą politykę prywatności. Wszelkie zmiany będą publikowane na tej stronie wraz ze zaktualizowaną datą rewizji."
+    }
+  ]
+}

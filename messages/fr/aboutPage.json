@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "title": "À Propos — Le Planificateur de Voyage de Groupe",
+    "description": "WePlanify est le planificateur de voyage de groupe gratuit et collaboratif pour amis, familles et équipes. Découvrez l'histoire, la mission et l'équipe derrière l'app."
+  },
+  "hero": {
+    "tag": "À propos de WePlanify",
+    "h1": "On fait que les voyages de groupe se réalisent."
+  },
+  "frustration": {
+    "p1": "Ça commence toujours de la même façon. Quelqu'un lâche « on devrait partir en voyage » dans le groupe. Tout le monde s'emballe. Et puis vient la partie difficile : le faire vraiment.",
+    "p2": "Les dates ne collent pas. Les budgets divergent. Les décisions se perdent dans WhatsApp. Une personne finit par tout organiser. Le voyage est repoussé. Encore.",
+    "p3": "On a construit WePlanify parce qu'on en avait marre de voir de bons voyages mourir dans des chats de groupe."
+  },
+  "pullQuote": "Un seul endroit pour voter, planifier, budgéter et préparer — pour que celui qui organise n'ait pas à tout porter seul.",
+  "whatWeDo": {
+    "heading": "Ce que fait WePlanify",
+    "items": [
+      ["Itinéraires collaboratifs", "Chacun ajoute ses idées. Le groupe construit le plan ensemble, jour par jour."],
+      ["Sondages de groupe", "Pas d'accord ? Votez. Destination, dates, restos — la démocratie l'emporte."],
+      ["Budgets partagés", "Suivez qui a payé quoi. Répartissez les frais. Sans tableur, sans conversation gênante après."],
+      ["Listes de bagages", "Coordonnez qui apporte quoi. Fini les trois tire-bouchons et zéro trousse de secours."],
+      ["4 langues", "Anglais, français, espagnol, italien. Votre groupe parle différentes langues ? Nous aussi."]
+    ]
+  },
+  "whyNot": {
+    "heading": "Pourquoi ne pas juste utiliser WhatsApp ?",
+    "p1": "Parce que WhatsApp, c'est fait pour discuter, pas pour planifier. Les décisions se perdent. Les liens disparaissent. La personne qui remonte le fil pour retrouver « ce resto dont quelqu'un a parlé mardi » ne devrait pas avoir besoin d'être archéologue.",
+    "p2": "Google Sheets est puissant mais personne ne l'ouvre. Splitwise suit l'argent mais pas les plans. TripIt est fait pour les voyageurs solo. Aucun d'entre eux ne résout le vrai problème : amener un groupe de personnes à prendre des décisions ensemble et à s'y tenir.",
+    "p3": "WePlanify est le seul outil conçu pour les groupes depuis le premier jour. Pas adapté aux groupes. Construit pour eux."
+  },
+  "cta": {
+    "heading": "Ton prochain voyage t'attend.",
+    "subtitle": "Arrête de planifier dans des chats de groupe. Commence à planifier ensemble.",
+    "button": "Commencer"
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "about": "À Propos"
+  }
+}

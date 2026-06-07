@@ -1,0 +1,65 @@
+{
+  "breadcrumb": {
+    "home": "首页",
+    "travelGuides": "旅行指南"
+  },
+  "jsonld": {
+    "touristType": "休闲旅行者"
+  },
+  "hero": {
+    "titleSuffix": "旅行指南",
+    "perDay": " /天",
+    "cta": "规划我的旅行",
+    "ctaNote": "和你的团队一起搭建行程 —— 免费，30 秒搞定。"
+  },
+  "quickFacts": {
+    "heading": "速览",
+    "capital": "首都",
+    "language": "语言",
+    "currency": "货币",
+    "timezone": "时区",
+    "plug": "插头",
+    "driving": "驾驶方向",
+    "driveLeft": "靠左",
+    "driveRight": "靠右",
+    "visa": "签证"
+  },
+  "bestSeason": {
+    "heading": "何时前往",
+    "subtitle": "三个要知道的时间窗口：最佳、平季和该避开的。",
+    "best": "最佳窗口",
+    "shoulder": "平季",
+    "avoid": "避开"
+  },
+  "mustSee": {
+    "heading": "必看之地",
+    "subtitle": "单凭它们就值得为之一行的地方。点击即可在地图中打开。"
+  },
+  "specialties": {
+    "heading": "值得一试的特色",
+    "subtitle": "这个国家做得比任何地方都好的美食、饮品和体验。"
+  },
+  "regions": {
+    "heading": "值得了解的地区",
+    "subtitle": "根据你有多少时间、追求什么，来框定你的旅行。"
+  },
+  "itineraries": {
+    "heading": "推荐行程",
+    "subtitle": "三种时长，视时间而定。把其中任意一份套用到 WePlanify。",
+    "daysSuffix": "天"
+  },
+  "budget": {
+    "heading": "每日预算",
+    "subtitle": "每人，不含机票。三个舒适档位。",
+    "perDay": "/天"
+  },
+  "tips": {
+    "heading": "文化上的宜与忌",
+    "subtitle": "那些重要的小举动 —— 以及那些会让大家都不自在的。"
+  },
+  "cta": {
+    "heading": "和你这帮人一起规划你的{country}之旅",
+    "body": "把这份指南带进 WePlanify、邀请团队，一起搭建旅行。共享地图、投票、共享预算 —— 全部免费。",
+    "button": "开始规划 —— 免费"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "SquadTrip 替代方案：免费团体旅行规划工具（2026）| WePlanify",
+    "description": "在找 SquadTrip 替代方案？WePlanify 提供实时行程、共享投票、团体预算和打包清单 —— 免费、双语（英语/法语）。"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "alternatives": "替代方案"
+  },
+  "jsonld": {
+    "breadcrumbCurrent": "WePlanify 对比 SquadTrip"
+  },
+  "heroTitle": "WePlanify 对比 SquadTrip",
+  "heroSubtitle": "最好用的免费团体旅行规划工具？（2026）",
+  "heroIntro": "WePlanify 和 SquadTrip 都能帮团体一起组织旅行，但它们解决的是不同的问题。SquadTrip 围绕收款和宾客事务展开。WePlanify 则是一款一站式协作规划工具，集投票、共享预算和行程于一身 —— 完全免费。",
+  "verdictTitle": "快速结论",
+  "verdict": "SquadTrip 专注于为行程组织者收款和处理宾客事务。WePlanify 专注于协作规划，集投票、共享预算和行程于一身 —— 完全免费，没有支付处理费。",
+  "comparisonTitle": "逐项功能对比",
+  "featureHeader": "功能",
+  "squadtripShinesTitle": "SquadTrip 的亮点",
+  "squadtripShinesPoints": [
+    {
+      "title": "收款",
+      "desc": "SquadTrip 让组织者向行程参与者收款。如果你的团体旅行涉及收押金、分摊住宿费或管理免责声明，SquadTrip 能搞定这些。"
+    },
+    {
+      "title": "宾客表单与免责声明",
+      "desc": "参与者可以签署免责声明、填写饮食偏好或提交护照信息。SquadTrip 提供超越简单邀请链接的结构化表单和宾客管理工具。"
+    },
+    {
+      "title": "专业旅行组织",
+      "desc": "如果你经营旅行业务或以专业方式组织团体旅行，SquadTrip 提供面向这类场景的收款和事务功能。"
+    }
+  ],
+  "weplanifyWinsTitle": "WePlanify 的优势",
+  "weplanifyWinsPoints": [
+    {
+      "title": "团体决策",
+      "desc": "WePlanify 内置投票和表决，让你的团体一起敲定目的地、日期和活动。不再有没完没了的 WhatsApp 接龙 —— 大家投票，团队决定。"
+    },
+    {
+      "title": "100% 免费，无隐藏费用",
+      "desc": "WePlanify 的每项核心功能都免费。没有支付处理费，必备工具也不分付费等级。零成本规划无限次旅行。"
+    },
+    {
+      "title": "完整的规划工具箱",
+      "desc": "打包清单、活动发现、共享预算和协作行程 —— 全部集于一处。SquadTrip 专注于事务，而 WePlanify 覆盖整段规划旅程。"
+    },
+    {
+      "title": "双语支持",
+      "desc": "WePlanify 完整支持英语和法语。SquadTrip 仅有英语，对法语团队来说可能是硬伤。"
+    }
+  ],
+  "whoShouldTitle": "谁该选哪一个？",
+  "chooseSquadtrip": "如果符合以下情况，请选 SquadTrip",
+  "chooseSquadtripPoints": [
+    "你需要向行程参与者收款",
+    "你以专业方式组织旅行，需要宾客表单/免责声明",
+    "支付事务是你最大的规划难题"
+  ],
+  "chooseWeplanify": "如果符合以下情况，请选 WePlanify",
+  "chooseWeplanifyPoints": [
+    "你希望整个团队协作式地一起规划",
+    "你需要投票、共享预算和打包清单集于一个应用",
+    "你想要一个完全免费、零费用的方案",
+    "你的团队中有说法语的成员"
+  ],
+  "faqTitle": "常见问题",
+  "faqs": [
+    {
+      "q": "为什么要从 SquadTrip 换到 WePlanify？",
+      "a": "SquadTrip 围绕收款展开，这意味着投票、共享预算和打包清单等规划工具一概没有。如果你的团队需要协作敲定目的地、追踪花费并一起组织，WePlanify 涵盖了这一切 —— 完全免费。"
+    },
+    {
+      "q": "SquadTrip 缺少什么？",
+      "a": "SquadTrip 不提供团体投票、协作打包清单、活动发现或法语支持。它聚焦于支付处理，意味着实际的规划体验相比 WePlanify 较为有限。"
+    },
+    {
+      "q": "SquadTrip 真的免费吗？",
+      "a": "SquadTrip 提供免费的行程页面，但其核心价值是收款，而这会涉及处理费。WePlanify 是 100% 免费的，没有任何交易费 —— 每项功能都免费包含在内。"
+    }
+  ],
+  "ctaTitle": "准备好规划下一次团体旅行了吗？",
+  "ctaButton": "免费开始",
+  "crossLinksTitle": "了解更多",
+  "badges": {
+    "free100": "100% 免费",
+    "partialFees": "收款收费",
+    "paymentCollection": "含收款",
+    "coreFeature": "核心功能",
+    "basic": "基础",
+    "advanced": "表单、免责声明",
+    "webApp": "网页应用"
+  },
+  "features": {
+    "collab_itinerary": "协作行程",
+    "polls": "团体投票",
+    "budget": "共享预算追踪",
+    "payment": "支付处理",
+    "packing": "打包清单",
+    "guest_mgmt": "宾客管理",
+    "discovery": "活动发现",
+    "free": "免费",
+    "french": "法语",
+    "mobile": "手机应用",
+    "realtime": "实时协作"
+  },
+  "midCta": "免费试用 WePlanify →",
+  "crossLinks": {
+    "fullComparison": {
+      "title": "完整对比",
+      "text": "在我们的完整对比中，将 WePlanify 与 Wanderlog、SquadTrip、Troupe 和 TripIt 一较高下。",
+      "link": "查看对比 →"
+    },
+    "tripWithFriends": {
+      "title": "与好友的旅行",
+      "text": "用 WePlanify 轻松规划和好友的团体旅行。",
+      "link": "阅读更多 →"
+    },
+    "guide": {
+      "title": "指南：如何规划团体旅行",
+      "text": "成功规划团体旅行的完整分步指南。",
+      "link": "阅读指南 →"
+    }
+  }
+}

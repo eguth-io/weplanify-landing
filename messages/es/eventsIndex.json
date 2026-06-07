@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Planificadores de viajes para eventos 2026 — Gratis, para grupos",
+    "description": "Planifica tu viaje a un evento de 2026 con WePlanify. Planificadores gratuitos dedicados al Mundial de la FIFA, la final de la Champions League, Tomorrowland, Hellfest, Ultra Europe y el eclipse solar total — pensados para grupos de fans que viajan juntos."
+  },
+  "hero": {
+    "tag": "Planificadores de viajes para eventos 2026",
+    "title": "Planifica tu viaje\na un evento de 2026 — juntos",
+    "description": "Seis planificadores dedicados a los mayores eventos del año. Elige el tuyo, construye un itinerario compartido, repartid los gastos y coordinad al grupo — todo gratis.",
+    "cta": "Empezar a planificar gratis"
+  },
+  "intro": {
+    "title": "Un planificador por evento, pensado para grupos",
+    "body": "Los grandes eventos traen grandes logísticas: partidos repartidos por las ciudades sede, pases de festival para un grupo de 12 personas, permisos de acampada, choques de fechas de última hora. Cada una de nuestras páginas de eventos 2026 está hecha para ese evento concreto — tablas de ciudades sede, calendarios reales, los detalles que solo los fans descubren. Elige el tuyo abajo."
+  },
+  "cardCta": "Abrir el planificador →",
+  "cta": {
+    "title": "¿No vas a ninguno de estos? Planifica tu propio viaje en grupo.",
+    "description": "WePlanify funciona para cualquier viaje en grupo — despedida de soltera, cumpleaños, familia, road trip, lo que sea. Mismo bote compartido, itinerario, encuestas y lista de equipaje.",
+    "button": "Empezar un viaje gratis"
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "events": "Eventos 2026"
+  },
+  "events": [
+    {
+      "title": "Mundial de la FIFA 2026",
+      "date": "11 jun – 19 jul, 2026",
+      "location": "EE. UU. · Canadá · México",
+      "description": "16 ciudades sede en tres países. Planifica tu ruta entre ciudades, reparte los gastos por categoría y coordina al grupo de fans a través de las fronteras."
+    },
+    {
+      "title": "Final de la Champions League 2026",
+      "date": "30 may, 2026",
+      "location": "Budapest, Hungría",
+      "description": "La mayor final de clubes del año en el Puskás Aréna. Planifica el transporte, el hotel y el encuentro previo al partido para el grupo."
+    },
+    {
+      "title": "Hellfest 2026",
+      "date": "19 – 22 jun, 2026",
+      "location": "Clisson, Francia",
+      "description": "Cuatro días de metal en Clisson. Logística de acampada, coche compartido y la hoja de cálculo de cartel y escenarios — todo en un plan compartido."
+    },
+    {
+      "title": "Tomorrowland 2026",
+      "date": "17 – 26 jul, 2026",
+      "location": "Boom, Bélgica",
+      "description": "Entradas para DreamVille, pases de festival, logística de tren. Coordina al grupo y el bote compartido para que nadie persiga a nadie por 40 € la semana siguiente."
+    },
+    {
+      "title": "Eclipse solar total — 12 ago, 2026",
+      "date": "12 de agosto de 2026",
+      "location": "Islandia · España · Groenlandia",
+      "description": "El viaje a la totalidad que solo ocurre una vez por década. Los mejores puntos de observación, planes de contingencia por el clima, alojamientos que se agotan con 18 meses de antelación."
+    },
+    {
+      "title": "Ultra Europe 2026",
+      "date": "10 – 12 jul, 2026",
+      "location": "Split, Croacia",
+      "description": "Tres días en el Adriático. Hotel o Airbnb, logística de pases de festival y excursiones por Dalmacia — para el grupo que quiere algo más que el escenario principal."
+    }
+  ]
+}

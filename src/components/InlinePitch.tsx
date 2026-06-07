@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { ArrowRight, Loader2, MapPin, RotateCcw, Sparkles } from "lucide-react";
 import { trackEvent } from "@/lib/tracking";
 
@@ -33,7 +34,7 @@ interface Props {
   location: string;
 }
 
-const COPY: Record<Lang, {
+type Copy = {
   placeholder: string;
   submit: string;
   submitting: string;
@@ -43,34 +44,12 @@ const COPY: Record<Lang, {
   errorRateLimit: string;
   overline: string;
   caption: string;
-}> = {
-  en: {
-    placeholder: "I want to chill on a Mexican beach with ruins nearby...",
-    submit: "Plan it",
-    submitting: "Crafting…",
-    cta: "Save & invite friends",
-    retry: "Another pitch",
-    errorGeneric: "Something went wrong. Please try again.",
-    errorRateLimit: "Too many tries. Please wait a minute.",
-    overline: "Tell us your dream trip",
-    caption: "We'll generate a destination preview in seconds — free, no signup needed.",
-  },
-  fr: {
-    placeholder: "Je veux chiller sur une plage mexicaine avec des ruines...",
-    submit: "Imagine-le",
-    submitting: "On prépare…",
-    cta: "Lancer & inviter mes amis",
-    retry: "Un autre pitch",
-    errorGeneric: "Une erreur est survenue. Réessaie.",
-    errorRateLimit: "Trop de tentatives. Attends une minute.",
-    overline: "Raconte ton voyage rêvé",
-    caption: "On te génère une preview de destination en quelques secondes — gratuit, sans inscription.",
-  },
+  whatAbout: string;
 };
 
 export default function InlinePitch({ locale = "en", variant = "dark", location }: Props) {
   const lang: Lang = locale === "fr" ? "fr" : "en";
-  const copy = COPY[lang];
+  const copy = useTranslations("inlinePitch").raw("copy") as Copy;
 
   const [pitch, setPitch] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -149,7 +128,7 @@ export default function InlinePitch({ locale = "en", variant = "dark", location 
         )}
         <div className="flex-1 p-4 flex flex-col justify-between gap-3 text-left">
           <div>
-            <div className="font-nanum-pen text-orange text-base leading-none mb-1">{lang === "fr" ? "Et si tu allais à…" : "What about…"}</div>
+            <div className="font-nanum-pen text-orange text-base leading-none mb-1">{copy.whatAbout}</div>
             <div className="font-londrina-solid text-2xl leading-none mb-1">{preview.destination}</div>
             {preview.country && (
               <div className={`inline-flex items-center gap-1 ${subtleText} text-xs font-karla font-bold`}>
