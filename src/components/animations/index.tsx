@@ -216,11 +216,6 @@ interface ExplorerSuggestion {
   };
 }
 
-interface ExplorerCategoryData {
-  suggestions: ExplorerSuggestion[];
-  // Mapbox tile center for the category — same for all 3 suggestions in it.
-  map: { lon: number; lat: number; zoom: number };
-}
 
 interface ExplorerFilterDef {
   key: ExplorerCategoryKey;
@@ -243,89 +238,79 @@ const EXPLORER_PHOTO = (id: string) =>
 // Booking / GetYourGuide / Viator / Google Places listing in Paris. The
 // first hotel carries a Selected-dates pill and the second is marked
 // Booked, mirroring how the real list looks once a trip is being built.
-const EXPLORER_CARDS_FR: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
+//
+// i18n: only the locale-independent fields (coords, rating, image src,
+// provider, route mode, booked/selected flags) live here. All user-facing
+// text (title, city, price, imageAlt, selectedDates label, route from/to/
+// operator/duration/distance) lives in `messages/<locale>/animations.json`
+// under `explorerCards.<category>` and is zipped by index at render time.
+interface ExplorerSuggestionData {
+  rating: number | null;
+  image?: string;
+  provider: ExplorerProvider;
+  lon: number;
+  lat: number;
+  booked?: boolean;
+  // When true, the localized `selectedDates` label is shown as a dates pill.
+  hasSelectedDates?: boolean;
+  // Only the transport mode lives in data; the rest of the route is localized.
+  route?: { mode: 'train' | 'plane' | 'metro' | 'bus' | 'car' };
+}
+
+interface ExplorerCategoryDataInternal {
+  suggestions: ExplorerSuggestionData[];
+  map: { lon: number; lat: number; zoom: number };
+}
+
+const EXPLORER_CARDS_DATA: Record<ExplorerCategoryKey, ExplorerCategoryDataInternal> = {
   activity: {
     suggestions: [
-      { title: 'Tour Eiffel — billet 2e étage', city: 'Paris 7e', price: '29€', rating: 4.8, image: '/explorer-mockup/eiffel.jpg', imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
-      { title: 'Musée du Louvre — billet daté', city: 'Paris 1er', price: '22€', rating: 4.7, image: '/explorer-mockup/louvre.jpg', imageAlt: 'Louvre pyramid', provider: 'viator', lon: 2.3376, lat: 48.8606 },
-      { title: 'Croisière commentée sur la Seine', city: 'Bateaux Parisiens', price: '15€', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.2933, lat: 48.8606 },
-      { title: 'Sainte-Chapelle — billet daté', city: 'Île de la Cité', price: '13€', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
+      { rating: 4.8, image: '/explorer-mockup/eiffel.jpg', provider: 'viator', lon: 2.2945, lat: 48.8584 },
+      { rating: 4.7, image: '/explorer-mockup/louvre.jpg', provider: 'viator', lon: 2.3376, lat: 48.8606 },
+      { rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', provider: 'viator', lon: 2.2933, lat: 48.8606 },
+      { rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', provider: 'viator', lon: 2.3450, lat: 48.8554 },
     ],
     map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   restaurant: {
     suggestions: [
-      { title: 'Le Mun', city: 'Paris 8e · coréen-français', price: '€€€€', rating: 4.8, image: '/explorer-mockup/le-mun.jpg', imageAlt: 'Salle gastronomique', provider: 'google', lon: 2.3245, lat: 48.8744 },
-      { title: 'Le Train Bleu', city: 'Gare de Lyon · Belle Époque', price: '€€€', rating: 4.6, image: '/explorer-mockup/le-train-bleu.jpg', imageAlt: 'Salle Belle Époque', provider: 'google', lon: 2.3735, lat: 48.8447 },
-      { title: 'Pierre Hermé', city: 'Saint-Germain · pâtisserie', price: '€€', rating: 4.8, image: '/explorer-mockup/pierre-herme.jpg', imageAlt: 'Macaron pistache', provider: 'google', lon: 2.3326, lat: 48.8536 },
-      { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market entrance', provider: 'google', lon: 2.3613, lat: 48.8639 },
+      { rating: 4.8, image: '/explorer-mockup/le-mun.jpg', provider: 'google', lon: 2.3245, lat: 48.8744 },
+      { rating: 4.7, image: '/explorer-mockup/petit-bistrot.jpg', provider: 'google', lon: 2.3747, lat: 48.8527 },
+      { rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', provider: 'google', lon: 2.3613, lat: 48.8639 },
+      { rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', provider: 'google', lon: 2.3636, lat: 48.8694 },
     ],
     map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   hotel: {
     suggestions: [
-      { title: 'Hôtel du Louvre', city: 'Paris 1er · 5★', price: '180€/n', rating: 4.4, image: '/explorer-mockup/hotel-louvre.jpg', imageAlt: 'Hotel facade', provider: 'booking', selectedDates: '15 → 17 mai', lon: 2.3376, lat: 48.8627 },
-      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18e · boutique', price: '320€/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3399, lat: 48.8867 },
-      { title: 'Loft Canal Saint-Martin', city: 'Paris 10e · entier', price: '120€/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
-      { title: 'Generator Paris', city: 'Paris 10e · auberge', price: '45€/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3692, lat: 48.8779 },
+      { rating: 4.4, image: '/explorer-mockup/hotel-louvre.jpg', provider: 'booking', hasSelectedDates: true, lon: 2.3376, lat: 48.8627 },
+      { rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', provider: 'booking', booked: true, lon: 2.3399, lat: 48.8867 },
+      { rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
+      { rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', provider: 'booking', lon: 2.3692, lat: 48.8779 },
     ],
     map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
   },
   transport: {
     suggestions: [
-      { title: 'Eurostar', city: '2h 16min · 374 km', price: '95€', rating: null, provider: 'eurostar', lon: 2.3553, lat: 48.8809, route: { from: 'Paris · Gare du Nord', to: 'London · St Pancras', duration: '2h 16min', distance: '374 km', operator: 'Eurostar e320', mode: 'train' } },
-      { title: 'TGV INOUI 6611', city: '1h 56min · 466 km', price: '45€', rating: null, provider: 'sncf', lon: 2.3733, lat: 48.8444, route: { from: 'Paris · Gare de Lyon', to: 'Lyon · Part-Dieu', duration: '1h 56min', distance: '466 km', operator: 'SNCF · TGV INOUI', mode: 'train' } },
-      { title: 'Air France AF1364', city: '1h 35min · 689 km', price: '78€', rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { from: 'Paris CDG · T2F', to: 'Nice Côte d’Azur', duration: '1h 35min', distance: '689 km', operator: 'Air France · Airbus A320', mode: 'plane' } },
-      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '14,99€', rating: null, provider: 'custom', lon: 2.3815, lat: 48.8378, route: { from: 'Paris · Bercy Seine', to: 'Bruxelles · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
+      { rating: null, provider: 'eurostar', lon: 2.3553, lat: 48.8809, route: { mode: 'train' } },
+      { rating: null, provider: 'sncf', lon: 2.3733, lat: 48.8444, route: { mode: 'train' } },
+      { rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { mode: 'plane' } },
+      { rating: null, provider: 'custom', lon: 2.3815, lat: 48.8378, route: { mode: 'bus' } },
     ],
     // Pin centered on Paris with CDG visible northeast for the Air France item.
     map: { lon: 2.4200, lat: 48.9200, zoom: 9 },
   },
 };
 
-const EXPLORER_CARDS_EN: Record<ExplorerCategoryKey, ExplorerCategoryData> = {
-  activity: {
-    suggestions: [
-      { title: 'Eiffel Tower — 2nd floor ticket', city: 'Paris 7th', price: '€29', rating: 4.8, image: '/explorer-mockup/eiffel.jpg', imageAlt: 'Eiffel Tower', provider: 'viator', lon: 2.2945, lat: 48.8584 },
-      { title: 'Louvre Museum — dated ticket', city: 'Paris 1st', price: '€22', rating: 4.7, image: '/explorer-mockup/louvre.jpg', imageAlt: 'Louvre pyramid', provider: 'viator', lon: 2.3376, lat: 48.8606 },
-      { title: 'Guided Seine river cruise', city: 'Bateaux Parisiens', price: '€15', rating: 4.5, image: '/explorer-mockup/seine-cruise.jpg', imageAlt: 'Seine river cruise', provider: 'viator', lon: 2.2933, lat: 48.8606 },
-      { title: 'Sainte-Chapelle — dated ticket', city: 'Île de la Cité', price: '€13', rating: 4.6, image: '/explorer-mockup/sainte-chapelle.jpg', imageAlt: 'Sainte-Chapelle', provider: 'viator', lon: 2.3450, lat: 48.8554 },
-    ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
-  },
-  restaurant: {
-    suggestions: [
-      { title: 'Le Mun', city: 'Paris 8th · Korean-French', price: '€€€€', rating: 4.8, image: '/explorer-mockup/le-mun.jpg', imageAlt: 'Fine dining room', provider: 'google', lon: 2.3245, lat: 48.8744 },
-      { title: 'Septime', city: 'Paris 11th · bistronomy', price: '€€€', rating: 4.7, image: '/explorer-mockup/petit-bistrot.jpg', imageAlt: 'Bistronomy', provider: 'google', lon: 2.3747, lat: 48.8527 },
-      { title: 'Marché des Enfants Rouges', city: 'Paris 3rd · covered market', price: '€', rating: 4.5, image: '/explorer-mockup/marche-enfants-rouges.jpg', imageAlt: 'Covered market', provider: 'google', lon: 2.3613, lat: 48.8639 },
-      { title: 'Du Pain et des Idées', city: 'Paris 10th · bakery', price: '€', rating: 4.8, image: '/explorer-mockup/du-pain-et-des-idees.jpg', imageAlt: 'Bakery', provider: 'google', lon: 2.3636, lat: 48.8694 },
-    ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
-  },
-  hotel: {
-    suggestions: [
-      { title: 'Hôtel du Louvre', city: 'Paris 1st · 5★', price: '€180/n', rating: 4.4, image: '/explorer-mockup/hotel-louvre.jpg', imageAlt: 'Hotel facade', provider: 'booking', selectedDates: 'May 15 → 17', lon: 2.3376, lat: 48.8627 },
-      { title: 'Hôtel Particulier Montmartre', city: 'Paris 18th · boutique', price: '€320/n', rating: 4.7, image: '/explorer-mockup/hotel-particulier-montmartre.jpg', imageAlt: 'Montmartre boutique hotel', provider: 'booking', booked: true, lon: 2.3399, lat: 48.8867 },
-      { title: 'Canal Saint-Martin Loft', city: 'Paris 10th · entire apartment', price: '€120/n', rating: 4.5, image: '/explorer-mockup/loft-canal-saint-martin.jpg', imageAlt: 'Canal Saint-Martin', provider: 'airbnb', lon: 2.3667, lat: 48.8744 },
-      { title: 'Generator Paris', city: 'Paris 10th · hostel', price: '€45/n', rating: 4.0, image: '/explorer-mockup/generator-paris.jpg', imageAlt: 'Hostel', provider: 'booking', lon: 2.3692, lat: 48.8779 },
-    ],
-    map: { lon: 2.3500, lat: 48.8700, zoom: 10 },
-  },
-  transport: {
-    suggestions: [
-      { title: 'Eurostar', city: '2h 16min · 374 km', price: '€95', rating: null, provider: 'eurostar', lon: 2.3553, lat: 48.8809, route: { from: 'Paris · Gare du Nord', to: 'London · St Pancras', duration: '2h 16min', distance: '374 km', operator: 'Eurostar e320', mode: 'train' } },
-      { title: 'TGV INOUI 6611', city: '1h 56min · 466 km', price: '€45', rating: null, provider: 'sncf', lon: 2.3733, lat: 48.8444, route: { from: 'Paris · Gare de Lyon', to: 'Lyon · Part-Dieu', duration: '1h 56min', distance: '466 km', operator: 'SNCF · TGV INOUI', mode: 'train' } },
-      { title: 'Air France AF1364', city: '1h 35min · 689 km', price: '€78', rating: null, provider: 'airfrance', lon: 2.5479, lat: 49.0097, route: { from: 'Paris CDG · T2F', to: 'Nice Côte d’Azur', duration: '1h 35min', distance: '689 km', operator: 'Air France · Airbus A320', mode: 'plane' } },
-      { title: 'FlixBus N728', city: '4h 20min · 308 km', price: '€14.99', rating: null, provider: 'custom', lon: 2.3815, lat: 48.8378, route: { from: 'Paris · Bercy Seine', to: 'Brussels · Gare du Nord', duration: '4h 20min', distance: '308 km', operator: 'FlixBus N728', mode: 'bus' } },
-    ],
-    map: { lon: 2.4200, lat: 48.9200, zoom: 9 },
-  },
-};
-
-const EXPLORER_CARDS_BY_LANG: Record<'en' | 'fr', Record<ExplorerCategoryKey, ExplorerCategoryData>> = {
-  en: EXPLORER_CARDS_EN,
-  fr: EXPLORER_CARDS_FR,
-};
+// Shape of one localized explorer suggestion entry in animations.json.
+interface ExplorerSuggestionText {
+  title: string;
+  city?: string;
+  price: string;
+  imageAlt?: string;
+  selectedDates?: string;
+  route?: { from: string; to: string; operator: string; duration: string; distance?: string };
+}
 
 // Tile dimensions match the right-pane panel aspect (roughly portrait,
 // height ~ width × 1.65). The HTML-pin projection uses these dims so the
@@ -373,12 +358,13 @@ function mercatorOffsetPct(
 }
 
 export function ExplorerCards({
-  locale = 'en',
   layout = 'grid',
 }: {
   // autoPlay is still accepted for API compatibility with the other animation
   // components, but no longer drives any motion since WP-317 (see below).
   autoPlay?: boolean;
+  // locale is kept in the signature for API compatibility, but card content is
+  // now resolved through next-intl's ambient locale (useTranslations) instead.
   locale?: string;
   layout?: 'grid' | 'list';
 }) {
@@ -392,15 +378,37 @@ export function ExplorerCards({
   // fade-in when it scrolls into view. All content (cards, map, pins, tabs) is
   // preserved — only the motion is toned down.
   const t = useTranslations('animations');
-  const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
   const [activeFilter, setActiveFilter] = useState<ExplorerCategoryKey>(EXPLORER_FILTER_KEYS[0]);
   const isList = layout === 'list';
   // No more auto-cycling / "added" pulse. The add button stays in its default
   // (un-added) state; tabs remain clickable so the panel is still explorable.
   const added = false;
 
-  const cards = EXPLORER_CARDS_BY_LANG[lang];
-  const category = cards[activeFilter];
+  // Zip the locale-independent data array with the localized text (by index)
+  // into the render shape the panel below expects.
+  const buildSuggestions = (cat: ExplorerCategoryKey): ExplorerSuggestion[] => {
+    const text = t.raw(`explorerCards.${cat}`) as ExplorerSuggestionText[];
+    return EXPLORER_CARDS_DATA[cat].suggestions.map((data, i) => {
+      const tx = text[i];
+      return {
+        title: tx.title,
+        city: tx.city ?? '',
+        price: tx.price,
+        rating: data.rating,
+        image: data.image,
+        imageAlt: tx.imageAlt,
+        provider: data.provider,
+        selectedDates: data.hasSelectedDates ? tx.selectedDates : undefined,
+        booked: data.booked,
+        lon: data.lon,
+        lat: data.lat,
+        route: data.route ? { ...(tx.route as NonNullable<ExplorerSuggestionText['route']>), mode: data.route.mode } : undefined,
+      };
+    });
+  };
+
+  const categoryData = EXPLORER_CARDS_DATA[activeFilter];
+  const suggestions = buildSuggestions(activeFilter);
 
   return (
     <motion.div
@@ -415,7 +423,7 @@ export function ExplorerCards({
       {/* Preload every suggestion thumbnail so cycle frames don't flash empty. */}
       <div aria-hidden className="hidden">
         {EXPLORER_FILTER_KEYS.flatMap((k) =>
-          cards[k].suggestions.map((s, i) => (
+          EXPLORER_CARDS_DATA[k].suggestions.map((s, i) => (
             <img key={`${k}-${i}`} src={s.image} alt="" loading="eager" />
           ))
         )}
@@ -458,7 +466,7 @@ export function ExplorerCards({
               isList ? 'grid-cols-1 gap-2' : 'grid-cols-2 gap-2 lg:gap-2.5'
             }`}
           >
-            {category.suggestions.map((sugg, idx) => {
+            {suggestions.map((sugg, idx) => {
               // WP-317: the headliner used to play a +→✓ add-to-trip pulse; it
               // now stays in its default (un-added) state since `added` is off.
               const isHeadliner = idx === 0;
@@ -781,7 +789,7 @@ export function ExplorerCards({
               the previous AnimatePresence crossfade. */}
           <img
             key={activeFilter}
-            src={MAP_TILE_FOR(category.map)}
+            src={MAP_TILE_FOR(categoryData.map)}
             alt={`Map — ${activeFilter}`}
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -791,8 +799,8 @@ export function ExplorerCards({
               the dots align with the underlying map. Smaller than any
               Static API marker (the smallest API pin is pin-s, still too
               chunky for this panel size). */}
-          {category.suggestions.map((s, i) => {
-            const pos = mercatorOffsetPct(s.lon, s.lat, category.map, MAP_TILE_W, MAP_TILE_H);
+          {suggestions.map((s, i) => {
+            const pos = mercatorOffsetPct(s.lon, s.lat, categoryData.map, MAP_TILE_W, MAP_TILE_H);
             if (pos.xPct < 0 || pos.xPct > 100 || pos.yPct < 0 || pos.yPct > 100) return null;
             return (
               // WP-317: static pin — no spring-pop entry animation.
@@ -825,7 +833,7 @@ export function ExplorerCards({
           {/* Suggestion count label (mirrors the real Explorer's '(N) results' label) */}
           <div className="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-white/95 shadow-md px-2 py-0.5 z-10">
             <Icons.MapPin className="w-3 h-3 text-slate-700" />
-            <span className="text-[10px] font-medium text-slate-800">{category.suggestions.length} {t(`explorerFilters.${activeFilter}`)}</span>
+            <span className="text-[10px] font-medium text-slate-800">{suggestions.length} {t(`explorerFilters.${activeFilter}`)}</span>
           </div>
         </div>
       </div>
@@ -869,16 +877,27 @@ const POLL_PROVIDER_LOGO: Record<PollProvider, { src: string; name: string }> = 
 const SLEEPING_COLOR = '#14B8A6';
 const AMBER_COLOR = '#D97706';
 
-const POLL_CHOICES_FR: PollChoice[] = [
-  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · vue ville', city: 'Lisbonne', rating: 4.6, price: '145€/nuit', provider: 'booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
-  { title: 'Príncipe Real Loft', description: 'Appartement entier · 4 voyageurs', city: 'Lisbonne', rating: 4.4, price: '95€/nuit', provider: 'airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
-  { title: 'Lisbon Lounge Hostel', description: 'Auberge · centre-ville', city: 'Lisbonne', rating: 4.0, price: '35€/nuit', provider: 'booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
-];
+// i18n: locale-independent poll fields only. The localized title/description/
+// city/price live in animations.json under `pollChoices` (an array zipped by
+// index at render time).
+interface PollChoiceData {
+  rating: number;
+  provider: PollProvider;
+  image: string;
+  isUserVote?: boolean;
+}
 
-const POLL_CHOICES_EN: PollChoice[] = [
-  { title: 'Hôtel Bairro Alto', description: 'Boutique hotel · city view', city: 'Lisbon', rating: 4.6, price: '$145/night', provider: 'booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
-  { title: 'Príncipe Real Loft', description: 'Entire apartment · 4 travellers', city: 'Lisbon', rating: 4.4, price: '$95/night', provider: 'airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
-  { title: 'Lisbon Lounge Hostel', description: 'Hostel · downtown', city: 'Lisbon', rating: 4.0, price: '$35/night', provider: 'booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
+interface PollChoiceText {
+  title: string;
+  description: string;
+  city: string;
+  price: string;
+}
+
+const POLL_CHOICES_DATA: PollChoiceData[] = [
+  { rating: 4.6, provider: 'booking', image: EXPLORER_PHOTO('1611892440504-42a792e24d32'), isUserVote: true },
+  { rating: 4.4, provider: 'airbnb', image: EXPLORER_PHOTO('1551776235-dde6d482980b') },
+  { rating: 4.0, provider: 'booking', image: EXPLORER_PHOTO('1568084680786-a84f91d1153c') },
 ];
 
 interface PollVoter { id: number; option: number; }
@@ -890,11 +909,11 @@ const POLL_VOTERS_SCRIPT: PollVoter[] = [
   { id: 5, option: 1 },
 ];
 
-export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
-  const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
+export function LiveVoting({ autoPlay = true }: { autoPlay?: boolean; locale?: string }) {
   const t = useTranslations('animations');
 
-  const choices = lang === 'fr' ? POLL_CHOICES_FR : POLL_CHOICES_EN;
+  const choicesText = t.raw('pollChoices') as PollChoiceText[];
+  const choices: PollChoice[] = POLL_CHOICES_DATA.map((data, i) => ({ ...data, ...choicesText[i] }));
   const [voters, setVoters] = useState<PollVoter[]>([]);
 
   useEffect(() => {
@@ -1142,12 +1161,14 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
 // 3. PACKING SUITCASE
 // ============================================================================
 export function PackingSuitcase({ autoPlay = true }: { autoPlay?: boolean }) {
+  const t = useTranslations('animations');
+  const itemNames = t.raw('packing.items') as string[];
   const items = [
-    { Icon: Icons.Shirt, name: 'T-shirts', color: '#4ECDC4', startX: -60, startY: -40 },
-    { Icon: Icons.Sunglasses, name: 'Lunettes', color: '#FF6B6B', startX: 80, startY: -30 },
-    { Icon: Icons.Camera, name: 'Appareil', color: '#45B7D1', startX: -50, startY: 60 },
-    { Icon: Icons.Utensils, name: 'Snacks', color: '#96CEB4', startX: 70, startY: 50 },
-  ];
+    { Icon: Icons.Shirt, color: '#4ECDC4', startX: -60, startY: -40 },
+    { Icon: Icons.Sunglasses, color: '#FF6B6B', startX: 80, startY: -30 },
+    { Icon: Icons.Camera, color: '#45B7D1', startX: -50, startY: 60 },
+    { Icon: Icons.Utensils, color: '#96CEB4', startX: 70, startY: 50 },
+  ].map((d, i) => ({ ...d, name: itemNames[i] }));
   const [packedItems, setPackedItems] = useState<number[]>([]);
 
   useEffect(() => {
@@ -1165,7 +1186,7 @@ export function PackingSuitcase({ autoPlay = true }: { autoPlay?: boolean }) {
           <div className="flex w-8 h-8 items-center justify-center rounded-xl" style={{ backgroundColor: colors.packing }}>
             <Icons.Luggage className="w-4 h-4 text-white" />
           </div>
-          <span className="text-sm font-semibold text-slate-800">My packing list</span>
+          <span className="text-sm font-semibold text-slate-800">{t('packing.title')}</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="h-2 w-20 overflow-hidden rounded-full bg-slate-200">
@@ -1248,6 +1269,7 @@ export function PackingSuitcase({ autoPlay = true }: { autoPlay?: boolean }) {
 // 4. BUDGET SPLIT
 // ============================================================================
 export function BudgetSplit({ autoPlay = true }: { autoPlay?: boolean }) {
+  const t = useTranslations('animations');
   const friends = [
     { name: 'Marie', avatar: 'M', color: '#FF6B6B' },
     { name: 'Alex', avatar: 'A', color: '#4ECDC4' },
@@ -1269,7 +1291,7 @@ export function BudgetSplit({ autoPlay = true }: { autoPlay?: boolean }) {
         <div className="flex w-8 h-8 items-center justify-center rounded-xl" style={{ backgroundColor: colors.budget }}>
           <Icons.CreditCard className="w-4 h-4 text-white" />
         </div>
-        <span className="text-sm font-semibold text-slate-800">Expense Splitting</span>
+        <span className="text-sm font-semibold text-slate-800">{t('budgetSplit.title')}</span>
       </div>
 
       <motion.div
@@ -1278,7 +1300,7 @@ export function BudgetSplit({ autoPlay = true }: { autoPlay?: boolean }) {
         className="mb-6 text-center"
       >
         <div className="text-3xl font-bold" style={{ color: colors.budget }}>450€</div>
-        <div className="text-xs text-slate-500">Restaurant dinner</div>
+        <div className="text-xs text-slate-500">{t('budgetSplit.subtitle')}</div>
       </motion.div>
 
       <div className="relative flex items-center justify-center">
@@ -1335,7 +1357,7 @@ export function BudgetSplit({ autoPlay = true }: { autoPlay?: boolean }) {
             style={{ backgroundColor: colors.budget }}
           >
             <Icons.Check className="w-4 h-4" />
-            150€ each
+            {t('budgetSplit.perPerson', { amount: '150€' })}
           </motion.div>
         )}
       </AnimatePresence>
@@ -1486,12 +1508,12 @@ export function SwipeExplorer({
 
               {isTop && swipeDirection === 'right' && (
                 <div className="absolute left-4 top-4 rounded-lg border-2 border-green-500 bg-green-500/20 px-3 py-1">
-                  <span className="font-bold text-green-600">LIKE</span>
+                  <span className="font-bold text-green-600">{t('swipeExplorer.like')}</span>
                 </div>
               )}
               {isTop && swipeDirection === 'left' && (
                 <div className="absolute right-4 top-4 rounded-lg border-2 border-red-500 bg-red-500/20 px-3 py-1">
-                  <span className="font-bold text-red-600">NOPE</span>
+                  <span className="font-bold text-red-600">{t('swipeExplorer.nope')}</span>
                 </div>
               )}
             </motion.div>
@@ -1515,12 +1537,14 @@ export function SwipeExplorer({
 // 6. TIMELINE CALENDAR
 // ============================================================================
 export function TimelineCalendar({ autoPlay = true }: { autoPlay?: boolean }) {
+  const t = useTranslations('animations');
   const hours = ['09:00', '12:00', '15:00', '19:00'];
+  const itemNames = t.raw('timelineCalendar.items') as string[];
   const items = [
-    { time: 0, name: 'Hotel checkout', Icon: Icons.Bed, color: colors.sleeping, duration: 1 },
-    { time: 1, name: 'Ramen lunch', Icon: Icons.Utensils, color: colors.food, duration: 1 },
-    { time: 2, name: 'Temple visit', Icon: Icons.Heart, color: colors.activities, duration: 2 },
-  ];
+    { time: 0, Icon: Icons.Bed, color: colors.sleeping, duration: 1 },
+    { time: 1, Icon: Icons.Utensils, color: colors.food, duration: 1 },
+    { time: 2, Icon: Icons.Heart, color: colors.activities, duration: 2 },
+  ].map((d, i) => ({ ...d, name: itemNames[i] }));
   const [visibleItems, setVisibleItems] = useState<number[]>([]);
 
   useEffect(() => {
@@ -1536,11 +1560,11 @@ export function TimelineCalendar({ autoPlay = true }: { autoPlay?: boolean }) {
       <div className="mb-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="flex w-7 h-7 items-center justify-center rounded-lg" style={{ backgroundColor: colors.primary }}>
-            <span className="text-xs font-bold text-white">J3</span>
+            <span className="text-xs font-bold text-white">{t('timelineCalendar.dayBadge')}</span>
           </div>
           <div>
-            <div className="text-sm font-semibold text-slate-800">Mercredi 15</div>
-            <div className="text-xs text-slate-500">Tokyo</div>
+            <div className="text-sm font-semibold text-slate-800">{t('timelineCalendar.date')}</div>
+            <div className="text-xs text-slate-500">{t('timelineCalendar.city')}</div>
           </div>
         </div>
       </div>
@@ -1612,6 +1636,21 @@ interface ItineraryItem {
   booked?: boolean;
 }
 
+// i18n: locale-independent itinerary fields only. The localized title/subtitle
+// live in animations.json under `itineraryItems` (zipped by index at render).
+interface ItineraryItemData {
+  kind: ItineraryKind;
+  startHour: number;
+  endHour: number;
+  participants: string[];
+  booked?: boolean;
+}
+
+interface ItineraryItemText {
+  title: string;
+  subtitle?: string;
+}
+
 const ITINERARY_KIND_STYLE: Record<ItineraryKind, { color: string; bg: string; icon: keyof typeof Icons }> = {
   transport: { color: '#0EA5E9', bg: '#E0F2FE', icon: 'Train' },
   activity: { color: '#F59E0B', bg: '#FEF3C7', icon: 'Camera' },
@@ -1622,20 +1661,12 @@ const ITINERARY_KIND_STYLE: Record<ItineraryKind, { color: string; bg: string; i
 // Realistic Day 2 in Paris: Eurostar morning, bag drop, lunch, Louvre in the
 // afternoon (closes 18:00 most days), sunset Eiffel — opening hours actually
 // hold up.
-const ITINERARY_ITEMS_EN: ItineraryItem[] = [
-  { kind: 'transport', title: 'Eurostar arrival', subtitle: 'St Pancras → Gare du Nord', startHour: 9, endHour: 11, participants: ['👩‍🎨', '🧔'] },
-  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Bag drop · check-in', startHour: 11.5, endHour: 12.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
-  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Lunch · French', startHour: 13, endHour: 14.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
-  { kind: 'activity', title: 'Louvre Museum', subtitle: 'Afternoon visit', startHour: 15, endHour: 17, participants: ['👱‍♀️', '🧑‍💻'], booked: true },
-  { kind: 'activity', title: 'Eiffel Tower', subtitle: 'Sunset · 2nd floor', startHour: 18, endHour: 19.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
-];
-
-const ITINERARY_ITEMS_FR: ItineraryItem[] = [
-  { kind: 'transport', title: 'Arrivée Eurostar', subtitle: 'St Pancras → Gare du Nord', startHour: 9, endHour: 11, participants: ['👩‍🎨', '🧔'] },
-  { kind: 'sleeping', title: 'Hôtel du Louvre', subtitle: 'Dépose bagages · check-in', startHour: 11.5, endHour: 12.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
-  { kind: 'food', title: 'Le Petit Bistrot', subtitle: 'Déjeuner · français', startHour: 13, endHour: 14.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
-  { kind: 'activity', title: 'Musée du Louvre', subtitle: 'Visite après-midi', startHour: 15, endHour: 17, participants: ['👱‍♀️', '🧑‍💻'], booked: true },
-  { kind: 'activity', title: 'Tour Eiffel', subtitle: 'Coucher de soleil · 2e étage', startHour: 18, endHour: 19.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
+const ITINERARY_ITEMS_DATA: ItineraryItemData[] = [
+  { kind: 'transport', startHour: 9, endHour: 11, participants: ['👩‍🎨', '🧔'] },
+  { kind: 'sleeping', startHour: 11.5, endHour: 12.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'food', startHour: 13, endHour: 14.5, participants: ['👩‍🎨', '🧔', '👱‍♀️'] },
+  { kind: 'activity', startHour: 15, endHour: 17, participants: ['👱‍♀️', '🧑‍💻'], booked: true },
+  { kind: 'activity', startHour: 18, endHour: 19.5, participants: ['👩‍🎨', '🧔', '👱‍♀️', '🧑‍💻'] },
 ];
 
 function fmtHour(h: number): string {
@@ -1644,11 +1675,11 @@ function fmtHour(h: number): string {
   return `${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`;
 }
 
-export function LiveCollaboration({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
-  const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
+export function LiveCollaboration({ autoPlay = true }: { autoPlay?: boolean; locale?: string }) {
   const t = useTranslations('animations');
 
-  const items = lang === 'fr' ? ITINERARY_ITEMS_FR : ITINERARY_ITEMS_EN;
+  const itemsText = t.raw('itineraryItems') as ItineraryItemText[];
+  const items: ItineraryItem[] = ITINERARY_ITEMS_DATA.map((data, i) => ({ ...data, ...itemsText[i] }));
   const [visibleCount, setVisibleCount] = useState(autoPlay ? 0 : items.length);
 
   useEffect(() => {
@@ -1786,6 +1817,7 @@ export function LiveCollaboration({ autoPlay = true, locale = 'en' }: { autoPlay
 // 8. AI CHAT
 // ============================================================================
 export function AiChat({ autoPlay = true }: { autoPlay?: boolean }) {
+  const t = useTranslations('animations');
   const [messages, setMessages] = useState<Array<{ type: 'user' | 'ai'; text: string }>>([]);
   const [isTyping, setIsTyping] = useState(false);
 
@@ -1793,14 +1825,14 @@ export function AiChat({ autoPlay = true }: { autoPlay?: boolean }) {
     if (!autoPlay) return;
 
     const flow = [
-      { delay: 500, action: () => setMessages([{ type: 'user', text: 'Find me a restaurant in Tokyo' }]) },
+      { delay: 500, action: () => setMessages([{ type: 'user' as const, text: t('aiChat.userMessage') }]) },
       { delay: 1200, action: () => setIsTyping(true) },
-      { delay: 2800, action: () => { setIsTyping(false); setMessages((m) => [...m, { type: 'ai', text: 'I found 3 perfect restaurants for you! 🍜' }]); }},
+      { delay: 2800, action: () => { setIsTyping(false); setMessages((m) => [...m, { type: 'ai' as const, text: t('aiChat.aiMessage') }]); }},
     ];
 
     const timers = flow.map((step) => setTimeout(step.action, step.delay));
     return () => timers.forEach(clearTimeout);
-  }, [autoPlay]);
+  }, [autoPlay, t]);
 
   return (
     <div className="relative flex h-full w-full flex-col overflow-hidden rounded-3xl bg-white">
@@ -1809,14 +1841,14 @@ export function AiChat({ autoPlay = true }: { autoPlay?: boolean }) {
           <Icons.Sparkles className="w-5 h-5 text-white" />
         </div>
         <div>
-          <div className="text-sm font-semibold text-slate-800">Assistant IA</div>
+          <div className="text-sm font-semibold text-slate-800">{t('aiChat.title')}</div>
           <div className="flex items-center gap-1">
             <motion.div
               animate={{ scale: [1, 1.3, 1] }}
               transition={{ duration: 1.5, repeat: Infinity }}
               className="w-1.5 h-1.5 rounded-full bg-green-500"
             />
-            <span className="text-xs text-slate-500">En ligne</span>
+            <span className="text-xs text-slate-500">{t('aiChat.online')}</span>
           </div>
         </div>
       </div>
@@ -1873,7 +1905,7 @@ export function AiChat({ autoPlay = true }: { autoPlay?: boolean }) {
 
       <div className="border-t border-slate-100 p-3">
         <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-2.5">
-          <span className="flex-1 text-sm text-slate-400">Message...</span>
+          <span className="flex-1 text-sm text-slate-400">{t('aiChat.placeholder')}</span>
           <div className="flex w-7 h-7 items-center justify-center rounded-full" style={{ backgroundColor: colors.primary }}>
             <Icons.Send className="w-4 h-4 text-white" />
           </div>
@@ -1887,6 +1919,7 @@ export function AiChat({ autoPlay = true }: { autoPlay?: boolean }) {
 // 9. TRANSPORT JOURNEY
 // ============================================================================
 export function TransportJourney({ autoPlay = true }: { autoPlay?: boolean }) {
+  const t = useTranslations('animations');
   const controls = useAnimation();
 
   useEffect(() => {
@@ -1949,7 +1982,7 @@ export function TransportJourney({ autoPlay = true }: { autoPlay?: boolean }) {
       >
         <div className="text-center">
           <div className="text-lg font-bold text-white">14:30</div>
-          <div className="text-xs text-white/60">Departure</div>
+          <div className="text-xs text-white/60">{t('transportJourney.departure')}</div>
         </div>
         <div className="flex items-center gap-1 text-white/40">
           <div className="h-px w-8 bg-white/40" />
@@ -1958,7 +1991,7 @@ export function TransportJourney({ autoPlay = true }: { autoPlay?: boolean }) {
         </div>
         <div className="text-center">
           <div className="text-lg font-bold text-white">16:45</div>
-          <div className="text-xs text-white/60">Arrival</div>
+          <div className="text-xs text-white/60">{t('transportJourney.arrival')}</div>
         </div>
       </motion.div>
     </div>
@@ -1969,6 +2002,7 @@ export function TransportJourney({ autoPlay = true }: { autoPlay?: boolean }) {
 // 10. HERO PULSE CTA
 // ============================================================================
 export function HeroPulseCta({ autoPlay = true }: { autoPlay?: boolean }) {
+  const t = useTranslations('animations');
   return (
     <div className="relative h-full w-full overflow-hidden rounded-3xl" style={{ backgroundColor: colors.dark }}>
       <motion.div
@@ -2002,10 +2036,10 @@ export function HeroPulseCta({ autoPlay = true }: { autoPlay?: boolean }) {
           className="text-center"
         >
           <h2 className="text-xl font-bold font-unbounded" style={{ color: colors.cream }}>
-            Plan together
+            {t('heroPulseCta.planTogether')}
           </h2>
           <p className="mt-1 text-sm" style={{ color: `${colors.cream}70` }}>
-            Travel stress-free
+            {t('heroPulseCta.subtitle')}
           </p>
         </motion.div>
 
@@ -2031,7 +2065,7 @@ export function HeroPulseCta({ autoPlay = true }: { autoPlay?: boolean }) {
             className="relative rounded-full px-6 py-2.5 text-sm font-semibold"
             style={{ backgroundColor: colors.primary, color: colors.cream }}
           >
-            Get started free
+            {t('heroPulseCta.cta')}
           </button>
         </motion.div>
       </div>

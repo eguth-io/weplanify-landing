@@ -33,12 +33,223 @@
       "food": "Cucina",
       "hotel": "Hotel"
     },
-    "liked": "mi piace"
+    "liked": "mi piace",
+    "like": "MI PIACE",
+    "nope": "NO"
   },
   "liveCollaboration": {
     "dayOf": "Giorno 2 di 5",
     "date": "Mer 15 mag",
     "city": "Parigi",
     "booked": "Prenotato"
-  }
+  },
+  "explorerCards": {
+    "activity": [
+      {
+        "title": "Torre Eiffel — biglietto 2° piano",
+        "city": "Parigi 7°",
+        "price": "29 €",
+        "imageAlt": "Torre Eiffel"
+      },
+      {
+        "title": "Museo del Louvre — biglietto con data",
+        "city": "Parigi 1°",
+        "price": "22 €",
+        "imageAlt": "Piramide del Louvre"
+      },
+      {
+        "title": "Crociera guidata sulla Senna",
+        "city": "Bateaux Parisiens",
+        "price": "15 €",
+        "imageAlt": "Crociera sulla Senna"
+      },
+      {
+        "title": "Sainte-Chapelle — biglietto con data",
+        "city": "Île de la Cité",
+        "price": "13 €",
+        "imageAlt": "Sainte-Chapelle"
+      }
+    ],
+    "restaurant": [
+      {
+        "title": "Le Mun",
+        "city": "Parigi 8° · coreano-francese",
+        "price": "€€€€",
+        "imageAlt": "Sala gastronomica"
+      },
+      {
+        "title": "Septime",
+        "city": "Parigi 11° · bistronomia",
+        "price": "€€€",
+        "imageAlt": "Bistronomia"
+      },
+      {
+        "title": "Marché des Enfants Rouges",
+        "city": "Parigi 3° · mercato coperto",
+        "price": "€",
+        "imageAlt": "Mercato coperto"
+      },
+      {
+        "title": "Du Pain et des Idées",
+        "city": "Parigi 10° · panetteria",
+        "price": "€",
+        "imageAlt": "Panetteria"
+      }
+    ],
+    "hotel": [
+      {
+        "title": "Hôtel du Louvre",
+        "city": "Parigi 1° · 5★",
+        "price": "180 €/n",
+        "imageAlt": "Facciata dell'hotel",
+        "selectedDates": "15 → 17 mag"
+      },
+      {
+        "title": "Hôtel Particulier Montmartre",
+        "city": "Parigi 18° · boutique",
+        "price": "320 €/n",
+        "imageAlt": "Boutique hotel a Montmartre"
+      },
+      {
+        "title": "Loft Canal Saint-Martin",
+        "city": "Parigi 10° · intero appartamento",
+        "price": "120 €/n",
+        "imageAlt": "Canal Saint-Martin"
+      },
+      {
+        "title": "Generator Paris",
+        "city": "Parigi 10° · ostello",
+        "price": "45 €/n",
+        "imageAlt": "Ostello"
+      }
+    ],
+    "transport": [
+      {
+        "title": "Eurostar",
+        "price": "95 €",
+        "route": {
+          "from": "Parigi · Gare du Nord",
+          "to": "Londra · St Pancras",
+          "operator": "Eurostar e320",
+          "duration": "2h 16min",
+          "distance": "374 km"
+        }
+      },
+      {
+        "title": "TGV INOUI 6611",
+        "price": "45 €",
+        "route": {
+          "from": "Parigi · Gare de Lyon",
+          "to": "Lione · Part-Dieu",
+          "operator": "SNCF · TGV INOUI",
+          "duration": "1h 56min",
+          "distance": "466 km"
+        }
+      },
+      {
+        "title": "Air France AF1364",
+        "price": "78 €",
+        "route": {
+          "from": "Parigi CDG · T2F",
+          "to": "Nizza Côte d’Azur",
+          "operator": "Air France · Airbus A320",
+          "duration": "1h 35min",
+          "distance": "689 km"
+        }
+      },
+      {
+        "title": "FlixBus N728",
+        "price": "14,99 €",
+        "route": {
+          "from": "Parigi · Bercy Seine",
+          "to": "Bruxelles · Gare du Nord",
+          "operator": "FlixBus N728",
+          "duration": "4h 20min",
+          "distance": "308 km"
+        }
+      }
+    ]
+  },
+  "pollChoices": [
+    {
+      "title": "Hôtel Bairro Alto",
+      "description": "Boutique hotel · vista città",
+      "city": "Lisbona",
+      "price": "145 €/notte"
+    },
+    {
+      "title": "Príncipe Real Loft",
+      "description": "Intero appartamento · 4 viaggiatori",
+      "city": "Lisbona",
+      "price": "95 €/notte"
+    },
+    {
+      "title": "Lisbon Lounge Hostel",
+      "description": "Ostello · centro",
+      "city": "Lisbona",
+      "price": "35 €/notte"
+    }
+  ],
+  "packing": {
+    "title": "La mia lista valigia",
+    "items": [
+      "T-shirt",
+      "Occhiali da sole",
+      "Fotocamera",
+      "Snack"
+    ]
+  },
+  "budgetSplit": {
+    "title": "Divisione spese",
+    "subtitle": "Cena al ristorante",
+    "perPerson": "{amount} a testa"
+  },
+  "timelineCalendar": {
+    "dayBadge": "G3",
+    "date": "Mercoledì 15",
+    "city": "Tokyo",
+    "items": [
+      "Check-out hotel",
+      "Pranzo ramen",
+      "Visita al tempio"
+    ]
+  },
+  "aiChat": {
+    "title": "Assistente IA",
+    "online": "Online",
+    "placeholder": "Messaggio...",
+    "userMessage": "Trovami un ristorante a Tokyo",
+    "aiMessage": "Ho trovato 3 ristoranti perfetti per te! 🍜"
+  },
+  "transportJourney": {
+    "departure": "Partenza",
+    "arrival": "Arrivo"
+  },
+  "heroPulseCta": {
+    "planTogether": "Pianificate insieme",
+    "subtitle": "Viaggia senza stress",
+    "cta": "Inizia gratis"
+  },
+  "itineraryItems": [
+    {
+      "title": "Arrivo Eurostar",
+      "subtitle": "St Pancras → Gare du Nord"
+    },
+    {
+      "title": "Hôtel du Louvre",
+      "subtitle": "Deposito bagagli · check-in"
+    },
+    {
+      "title": "Le Petit Bistrot",
+      "subtitle": "Pranzo · francese"
+    },
+    {
+      "title": "Museo del Louvre",
+      "subtitle": "Visita pomeridiana"
+    },
+    {
+      "title": "Torre Eiffel",
+      "subtitle": "Tramonto · 2° piano"
+    }
+  ]
 }

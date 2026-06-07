@@ -33,12 +33,223 @@
       "food": "美食",
       "hotel": "酒店"
     },
-    "liked": "喜欢"
+    "liked": "喜欢",
+    "like": "喜欢",
+    "nope": "跳过"
   },
   "liveCollaboration": {
     "dayOf": "第 2 天 / 共 5 天",
     "date": "5月15日 周三",
     "city": "巴黎",
     "booked": "已预订"
-  }
+  },
+  "explorerCards": {
+    "activity": [
+      {
+        "title": "埃菲尔铁塔 — 二层门票",
+        "city": "巴黎7区",
+        "price": "€29",
+        "imageAlt": "埃菲尔铁塔"
+      },
+      {
+        "title": "卢浮宫 — 指定日期门票",
+        "city": "巴黎1区",
+        "price": "€22",
+        "imageAlt": "卢浮宫金字塔"
+      },
+      {
+        "title": "塞纳河导览游船",
+        "city": "Bateaux Parisiens",
+        "price": "€15",
+        "imageAlt": "塞纳河游船"
+      },
+      {
+        "title": "圣礼拜堂 — 指定日期门票",
+        "city": "Île de la Cité",
+        "price": "€13",
+        "imageAlt": "圣礼拜堂"
+      }
+    ],
+    "restaurant": [
+      {
+        "title": "Le Mun",
+        "city": "巴黎8区 · 韩法料理",
+        "price": "€€€€",
+        "imageAlt": "高级餐厅"
+      },
+      {
+        "title": "Septime",
+        "city": "巴黎11区 · 小酒馆美食",
+        "price": "€€€",
+        "imageAlt": "小酒馆"
+      },
+      {
+        "title": "Marché des Enfants Rouges",
+        "city": "巴黎3区 · 室内市场",
+        "price": "€",
+        "imageAlt": "室内市场"
+      },
+      {
+        "title": "Du Pain et des Idées",
+        "city": "巴黎10区 · 面包店",
+        "price": "€",
+        "imageAlt": "面包店"
+      }
+    ],
+    "hotel": [
+      {
+        "title": "Hôtel du Louvre",
+        "city": "巴黎1区 · 5★",
+        "price": "€180/n",
+        "imageAlt": "酒店外观",
+        "selectedDates": "5月15日 → 17日"
+      },
+      {
+        "title": "Hôtel Particulier Montmartre",
+        "city": "巴黎18区 · 精品",
+        "price": "€320/n",
+        "imageAlt": "蒙马特精品酒店"
+      },
+      {
+        "title": "圣马丁运河阁楼",
+        "city": "巴黎10区 · 整套公寓",
+        "price": "€120/n",
+        "imageAlt": "圣马丁运河"
+      },
+      {
+        "title": "Generator Paris",
+        "city": "巴黎10区 · 青年旅舍",
+        "price": "€45/n",
+        "imageAlt": "青年旅舍"
+      }
+    ],
+    "transport": [
+      {
+        "title": "Eurostar",
+        "price": "€95",
+        "route": {
+          "from": "巴黎 · Gare du Nord",
+          "to": "伦敦 · St Pancras",
+          "operator": "Eurostar e320",
+          "duration": "2h 16min",
+          "distance": "374 km"
+        }
+      },
+      {
+        "title": "TGV INOUI 6611",
+        "price": "€45",
+        "route": {
+          "from": "巴黎 · Gare de Lyon",
+          "to": "里昂 · Part-Dieu",
+          "operator": "SNCF · TGV INOUI",
+          "duration": "1h 56min",
+          "distance": "466 km"
+        }
+      },
+      {
+        "title": "Air France AF1364",
+        "price": "€78",
+        "route": {
+          "from": "巴黎 CDG · T2F",
+          "to": "尼斯 Côte d’Azur",
+          "operator": "Air France · Airbus A320",
+          "duration": "1h 35min",
+          "distance": "689 km"
+        }
+      },
+      {
+        "title": "FlixBus N728",
+        "price": "€14.99",
+        "route": {
+          "from": "巴黎 · Bercy Seine",
+          "to": "布鲁塞尔 · Gare du Nord",
+          "operator": "FlixBus N728",
+          "duration": "4h 20min",
+          "distance": "308 km"
+        }
+      }
+    ]
+  },
+  "pollChoices": [
+    {
+      "title": "Hôtel Bairro Alto",
+      "description": "精品酒店 · 城市景观",
+      "city": "里斯本",
+      "price": "€145/晚"
+    },
+    {
+      "title": "Príncipe Real Loft",
+      "description": "整套公寓 · 4位旅客",
+      "city": "里斯本",
+      "price": "€95/晚"
+    },
+    {
+      "title": "Lisbon Lounge Hostel",
+      "description": "青年旅舍 · 市中心",
+      "city": "里斯本",
+      "price": "€35/晚"
+    }
+  ],
+  "packing": {
+    "title": "我的行李清单",
+    "items": [
+      "T恤",
+      "太阳镜",
+      "相机",
+      "零食"
+    ]
+  },
+  "budgetSplit": {
+    "title": "费用分摊",
+    "subtitle": "餐厅晚餐",
+    "perPerson": "每人{amount}"
+  },
+  "timelineCalendar": {
+    "dayBadge": "D3",
+    "date": "周三 15",
+    "city": "东京",
+    "items": [
+      "酒店退房",
+      "拉面午餐",
+      "参观寺庙"
+    ]
+  },
+  "aiChat": {
+    "title": "AI 助手",
+    "online": "在线",
+    "placeholder": "消息...",
+    "userMessage": "帮我在东京找一家餐厅",
+    "aiMessage": "我为你找到了3家完美的餐厅！🍜"
+  },
+  "transportJourney": {
+    "departure": "出发",
+    "arrival": "到达"
+  },
+  "heroPulseCta": {
+    "planTogether": "一起规划",
+    "subtitle": "无忧出行",
+    "cta": "免费开始"
+  },
+  "itineraryItems": [
+    {
+      "title": "欧洲之星抵达",
+      "subtitle": "St Pancras → Gare du Nord"
+    },
+    {
+      "title": "卢浮宫酒店",
+      "subtitle": "寄存行李 · 入住"
+    },
+    {
+      "title": "Le Petit Bistrot",
+      "subtitle": "午餐 · 法餐"
+    },
+    {
+      "title": "卢浮宫",
+      "subtitle": "下午参观"
+    },
+    {
+      "title": "埃菲尔铁塔",
+      "subtitle": "日落 · 二层"
+    }
+  ]
 }
