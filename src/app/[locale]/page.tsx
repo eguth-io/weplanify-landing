@@ -39,13 +39,24 @@ export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("homePage");
-  // Fetch all data from Sanity with locale filter
-  const [landingPageData, navigationData, footerData, instagramPosts] = await Promise.all([
+  // Fetch all data from Sanity with locale filter. Sanity content is authored
+  // per locale (currently en/fr); locales without their own document fall back
+  // to the English content so the page still renders fully.
+  const [landingPageRaw, navigationRaw, footerRaw, instagramPosts] = await Promise.all([
     client.fetch<LandingPage>(landingPageQuery, { locale }),
     client.fetch<Navigation>(navigationQuery, { locale }),
     client.fetch<FooterDataType>(footerQuery, { locale }),
     getInstagramPosts(),
   ]);
+
+  const [landingPageData, navigationData, footerData] =
+    locale === "en"
+      ? [landingPageRaw, navigationRaw, footerRaw]
+      : await Promise.all([
+          landingPageRaw ?? client.fetch<LandingPage>(landingPageQuery, { locale: "en" }),
+          navigationRaw ?? client.fetch<Navigation>(navigationQuery, { locale: "en" }),
+          footerRaw ?? client.fetch<FooterDataType>(footerQuery, { locale: "en" }),
+        ]);
 
   // Fallback if data is not yet filled in Sanity
   if (!landingPageData) {
