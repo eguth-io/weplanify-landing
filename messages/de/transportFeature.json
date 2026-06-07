@@ -18,5 +18,38 @@
       { "time": "11:00", "event": "Hoteltransfer", "icon": "🚕", "color": "#EEF899" },
       { "time": "14:00", "event": "Check-in Hotel Alfama", "icon": "🏨", "color": "#8B5CF6" }
     ]
+  },
+  "page": {
+    "heroBadge": "Transportverwaltung",
+    "heroTitle": "Flüge, Züge, Autos:",
+    "heroTitleHighlight": "keine verlorenen Tickets mehr",
+    "heroSubtitle": "Leite deine Bestätigungs-E-Mails weiter, wir extrahieren alles automatisch. Flug verspätet? Du weißt es vor der Fluggesellschaft.",
+    "heroCta": "Meine Reisen zentralisieren",
+    "heroCtaSubtext": "Kostenlos, keine Kreditkarte erforderlich",
+    "socialProofText": "Alle deine Reisen an einem Ort",
+    "featuresTitle": "Transport-Funktionen",
+    "features": [
+      { "title": "E-Mail-Import", "description": "Automatisches Scannen" },
+      { "title": "Benachrichtigungen", "description": "Verspätungen und Änderungen" },
+      { "title": "Offline", "description": "Zugriff ohne Verbindung" },
+      { "title": "Teilen", "description": "Infos für die Gruppe" }
+    ],
+    "faqItems": [
+      { "question": "Wie importiere ich meine Transportbuchungen?", "answer": "Drei Möglichkeiten: Leite deine Bestätigungs-E-Mails weiter, verbinde Gmail/Outlook für den automatischen Import oder scanne den QR-Code deines Tickets." },
+      { "question": "Welche Transportarten werden unterstützt?", "answer": "Alle! Flüge, Züge, Busse, Fähren, Mietwagen und sogar Fahrgemeinschaften." },
+      { "question": "Erhalte ich Benachrichtigungen bei Verspätungen?", "answer": "Ja, Weplanify überwacht deine Flüge und Züge in Echtzeit. Bei einer Verspätung erhältst du sofort eine Benachrichtigung." },
+      { "question": "Kann meine Reisegruppe die Transportdetails sehen?", "answer": "Ja! Alle Reiseteilnehmer können die hinzugefügten Transporte sehen." },
+      { "question": "Kann ich offline auf meine Tickets zugreifen?", "answer": "Auf jeden Fall. Lade deine Tickets herunter, um auch ohne Internetverbindung darauf zuzugreifen." }
+    ],
+    "ctaTitle": "Nie wieder ein Ticket verlieren",
+    "ctaSubtitle": "Alle deine Reisen in 2 Sekunden zugänglich, sogar offline",
+    "ctaButton": "Alle meine Tickets finden",
+    "seoTitle": "Transportverwaltung - Flüge, Züge & Reisen | Weplanify",
+    "seoDescription": "Verwalte alle deine Reisen an einem Ort. Automatischer Import von Flügen und Zügen, Echtzeit-Benachrichtigungen und Offline-Zugriff auf deine Tickets.",
+    "stats": [
+      { "value": "Auto", "label": "Import" },
+      { "value": "Echtzeit", "label": "Benachrichtigungen" },
+      { "value": "Offline", "label": "Zugriff" }
+    ]
   }
 }

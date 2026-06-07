@@ -18,5 +18,38 @@
       { "time": "11:00", "event": "Transfer para o hotel", "icon": "🚕", "color": "#EEF899" },
       { "time": "14:00", "event": "Check-in Hotel Alfama", "icon": "🏨", "color": "#8B5CF6" }
     ]
+  },
+  "page": {
+    "heroBadge": "Gestão de transportes",
+    "heroTitle": "Voos, comboios, carros:",
+    "heroTitleHighlight": "nunca mais perca um bilhete",
+    "heroSubtitle": "Reencaminhe os seus emails de confirmação, extraímos tudo automaticamente. Voo atrasado? Vai saber antes da companhia aérea.",
+    "heroCta": "Centralizar as minhas viagens",
+    "heroCtaSubtext": "Grátis, sem cartão de crédito",
+    "socialProofText": "Todas as suas viagens num só lugar",
+    "featuresTitle": "Funcionalidades de transporte",
+    "features": [
+      { "title": "Importação por email", "description": "Digitalização automática" },
+      { "title": "Alertas", "description": "Atrasos e alterações" },
+      { "title": "Offline", "description": "Acesso sem ligação" },
+      { "title": "Partilha", "description": "Informações para o grupo" }
+    ],
+    "faqItems": [
+      { "question": "Como importo as minhas reservas de transporte?", "answer": "Três formas: reencaminhe os seus emails de confirmação, ligue o Gmail/Outlook para a importação automática ou digitalize o código QR do seu bilhete." },
+      { "question": "Que tipos de transporte são suportados?", "answer": "Todos! Voos, comboios, autocarros, ferries, aluguer de automóveis e até boleias partilhadas." },
+      { "question": "Recebo alertas de atrasos?", "answer": "Sim, o Weplanify monitoriza os seus voos e comboios em tempo real. Em caso de atraso, recebe uma notificação instantânea." },
+      { "question": "O meu grupo de viagem pode ver os detalhes do transporte?", "answer": "Sim! Todos os participantes da viagem podem ver os transportes adicionados." },
+      { "question": "Posso aceder aos meus bilhetes offline?", "answer": "Com certeza. Descarregue os seus bilhetes para aceder a eles mesmo sem ligação à internet." }
+    ],
+    "ctaTitle": "Nunca mais perca um bilhete",
+    "ctaSubtitle": "Todas as suas viagens acessíveis em 2 segundos, mesmo offline",
+    "ctaButton": "Encontrar todos os meus bilhetes",
+    "seoTitle": "Gestão de transportes - Voos, comboios e viagens | Weplanify",
+    "seoDescription": "Faça a gestão de todas as suas viagens num só lugar. Importação automática de voos e comboios, alertas em tempo real e acesso offline aos seus bilhetes.",
+    "stats": [
+      { "value": "Auto", "label": "importação" },
+      { "value": "Tempo real", "label": "alertas" },
+      { "value": "Offline", "label": "acesso" }
+    ]
   }
 }

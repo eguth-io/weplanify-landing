@@ -104,5 +104,64 @@
       "restaurant": "Restaurante",
       "activity": "Atividade"
     }
+  },
+  "page": {
+    "heroBadge": "Modo Explorar",
+    "seoTitle": "Explorer - Descubra Destinos de Viagem | Weplanify",
+    "seoDescription": "Descubra lugares incríveis com o nosso modo de exploração. Deslize para explorar restaurantes, museus e atividades, guarde os seus favoritos.",
+    "ctaTitle": "Pronto para explorar?",
+    "ctaSubtitle": "Descubra milhares de lugares incríveis para a sua próxima viagem",
+    "ctaButton": "Explorar o meu destino",
+    "features": [
+      {
+        "title": "Restaurantes",
+        "description": "Encontre a melhor comida local"
+      },
+      {
+        "title": "Museus",
+        "description": "Cultura e história"
+      },
+      {
+        "title": "Natureza",
+        "description": "Parques e atividades ao ar livre"
+      },
+      {
+        "title": "Miradouros",
+        "description": "Os melhores locais para fotos"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Como funciona o modo Explore da Weplanify?",
+        "answer": "O modo Explore permite descobrir lugares (restaurantes, museus, atividades) deslizando como numa app de encontros. Deslize para a direita para guardar, para a esquerda para passar."
+      },
+      {
+        "question": "Os lugares são filtrados com base no meu destino?",
+        "answer": "Sim, o Explorer mostra apenas lugares relevantes para o seu destino e as suas datas de viagem."
+      },
+      {
+        "question": "De onde vêm as recomendações?",
+        "answer": "As nossas recomendações combinam várias fontes: avaliações de viajantes Weplanify, dados do Google Places, TripAdvisor e os nossos curadores locais."
+      },
+      {
+        "question": "Posso usar o Explorer offline?",
+        "answer": "Sim! Descarregue os lugares do seu destino antes de partir."
+      },
+      {
+        "question": "Como adiciono um lugar explorado ao meu itinerário?",
+        "answer": "Quando desliza para a direita (gosto), o lugar é guardado nos seus favoritos. Um simples toque permite adicioná-lo ao seu itinerário."
+      }
+    ],
+    "stats": [
+      {
+        "label": "lugares descobertos"
+      },
+      {
+        "label": "categorias"
+      },
+      {
+        "label": "destinos"
+      }
+    ]
   }
 }

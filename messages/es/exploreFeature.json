@@ -104,5 +104,64 @@
       "restaurant": "Restaurante",
       "activity": "Actividad"
     }
+  },
+  "page": {
+    "heroBadge": "Modo Exploración",
+    "seoTitle": "Explorer - Descubre Destinos de Viaje | Weplanify",
+    "seoDescription": "Descubre lugares increíbles con nuestro modo exploración. Desliza para explorar restaurantes, museos y actividades, guarda tus favoritos.",
+    "ctaTitle": "¿Listo para explorar?",
+    "ctaSubtitle": "Descubre miles de lugares increíbles para tu próximo viaje",
+    "ctaButton": "Explorar mi destino",
+    "features": [
+      {
+        "title": "Restaurantes",
+        "description": "Encuentra la mejor comida local"
+      },
+      {
+        "title": "Museos",
+        "description": "Cultura e historia"
+      },
+      {
+        "title": "Naturaleza",
+        "description": "Parques y actividades al aire libre"
+      },
+      {
+        "title": "Miradores",
+        "description": "Los mejores lugares para fotos"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "¿Cómo funciona el modo Explore de Weplanify?",
+        "answer": "El modo Explore te permite descubrir lugares (restaurantes, museos, actividades) deslizando como en una app de citas. Desliza a la derecha para guardar, a la izquierda para descartar."
+      },
+      {
+        "question": "¿Se filtran los lugares según mi destino?",
+        "answer": "Sí, el Explorer solo muestra lugares relevantes para tu destino y tus fechas de viaje."
+      },
+      {
+        "question": "¿De dónde vienen las recomendaciones?",
+        "answer": "Nuestras recomendaciones combinan varias fuentes: opiniones de viajeros de Weplanify, datos de Google Places, TripAdvisor y nuestros curadores locales."
+      },
+      {
+        "question": "¿Puedo usar Explorer sin conexión?",
+        "answer": "¡Sí! Descarga los lugares de tu destino antes de partir."
+      },
+      {
+        "question": "¿Cómo añado un lugar explorado a mi itinerario?",
+        "answer": "Cuando deslizas a la derecha (me gusta), el lugar se guarda en tus favoritos. Un simple toque te permite añadirlo a tu itinerario."
+      }
+    ],
+    "stats": [
+      {
+        "label": "lugares descubiertos"
+      },
+      {
+        "label": "categorías"
+      },
+      {
+        "label": "destinos"
+      }
+    ]
   }
 }

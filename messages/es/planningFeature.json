@@ -31,5 +31,40 @@
     "visualTitle": "La IA visualiza tu viaje",
     "capabilitiesSubtitle": "Más que un simple asistente — auténtica experiencia en viajes impulsada por IA.",
     "freeNoCard": "Registro gratuito. No se requiere tarjeta de crédito."
+  },
+  "page": {
+    "heroBadge": "Planificación de viajes",
+    "heroTitle": "Planifica tu viaje",
+    "heroTitleHighlight": "a tu manera",
+    "heroSubtitle": "Crea tu itinerario manualmente paso a paso, o deja que nuestro asistente de IA cree un plan personalizado en segundos. Tú eliges cómo planificar.",
+    "heroCta": "Empezar gratis",
+    "heroCtaSubtext": "No se requiere tarjeta de crédito",
+    "socialProofText": "Más de 12 000 viajes planificados",
+    "stats": [
+      { "value": "12 000+", "label": "viajes planificados" },
+      { "value": "4.8/5", "label": "satisfacción" },
+      { "value": "2 modos", "label": "manual + IA" }
+    ],
+    "featuresTitle": "Dos formas de planificar tu viaje perfecto",
+    "features": [
+      { "title": "Planificación manual", "description": "Crea tu viaje desde cero. Añade destinos, define las fechas y construye tu itinerario día a día exactamente como quieras." },
+      { "title": "Constructor día a día", "description": "Arrastra y suelta actividades, restaurantes y alojamientos. Organiza cada día visualmente en una línea de tiempo." },
+      { "title": "Planificación con IA", "description": "Describe tu viaje soñado en lenguaje natural. Nuestra IA crea un itinerario completo con hoteles, actividades y rutas optimizadas." },
+      { "title": "Sugerencias inteligentes", "description": "La IA entiende el contexto — temporada, presupuesto, estilo de viaje — y adapta sus recomendaciones en tiempo real." },
+      { "title": "Combina ambos enfoques", "description": "Empieza con las sugerencias de la IA y luego ajusta a mano. O planifica manualmente y pide a la IA que rellene los huecos." },
+      { "title": "Edición colaborativa", "description": "Todo el grupo puede contribuir — añadir ideas, votar opciones y pulir el plan juntos." }
+    ],
+    "faqItems": [
+      { "question": "¿Puedo planificar un viaje sin usar IA?", "answer": "¡Por supuesto! Puedes crear todo tu viaje manualmente. Añade destinos, define las fechas y construye tu itinerario paso a paso con nuestro planificador visual día a día." },
+      { "question": "¿Cómo funciona el asistente de IA?", "answer": "Simplemente describe tu viaje en lenguaje natural — destino, presupuesto, estilo de viaje, intereses. La IA genera un itinerario completo día a día con alojamientos, actividades y rutas optimizadas." },
+      { "question": "¿Puedo modificar las sugerencias de la IA?", "answer": "¡Sí! Las sugerencias de la IA son solo un punto de partida. Puedes editar, añadir o eliminar cualquier elemento. El plan es totalmente personalizable." },
+      { "question": "¿Puedo combinar la planificación manual y con IA?", "answer": "Sin duda. Empieza con la IA para obtener un itinerario base y luego ajústalo a mano. O planifica manualmente y pide a la IA que sugiera actividades para días concretos." },
+      { "question": "¿Puede mi grupo ayudar a planificar el viaje?", "answer": "¡Sí! Invita a tus compañeros de viaje y todos podrán añadir sugerencias, votar opciones y colaborar en el itinerario en tiempo real." }
+    ],
+    "ctaTitle": "¿Listo para planificar tu próxima aventura?",
+    "ctaSubtitle": "Empieza a planificar tu viaje — manualmente o con ayuda de la IA",
+    "ctaButton": "Empezar gratis",
+    "seoTitle": "Herramienta de planificación de viajes | Manual y con IA | WePlanify",
+    "seoDescription": "Planifica tu viaje en grupo a tu manera. Crea itinerarios manualmente o deja que la IA cree planes personalizados día a día. Colabora con amigos en tiempo real. Planificador de viajes gratis."
   }
 }

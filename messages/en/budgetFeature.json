@@ -19,21 +19,134 @@
     "freeNoCard": "Free signup. No credit card required.",
     "tryItHint": "👆 Click a button to add an expense and watch balances update in real time.",
     "participants": [
-      { "name": "Marie", "avatar": "👩‍🎨" },
-      { "name": "Thomas", "avatar": "🧔" },
-      { "name": "Emma", "avatar": "👱‍♀️" },
-      { "name": "Lucas", "avatar": "🧑‍💻" }
+      {
+        "name": "Marie",
+        "avatar": "👩‍🎨"
+      },
+      {
+        "name": "Thomas",
+        "avatar": "🧔"
+      },
+      {
+        "name": "Emma",
+        "avatar": "👱‍♀️"
+      },
+      {
+        "name": "Lucas",
+        "avatar": "🧑‍💻"
+      }
     ],
     "expenses": [
-      { "name": "Restaurant dinner", "amount": 156, "paidBy": "Marie" },
-      { "name": "Car rental", "amount": 320, "paidBy": "Thomas" },
-      { "name": "Museum tickets", "amount": 84, "paidBy": "Emma" }
+      {
+        "name": "Restaurant dinner",
+        "amount": 156,
+        "paidBy": "Marie"
+      },
+      {
+        "name": "Car rental",
+        "amount": 320,
+        "paidBy": "Thomas"
+      },
+      {
+        "name": "Museum tickets",
+        "amount": 84,
+        "paidBy": "Emma"
+      }
     ],
     "presets": [
-      { "name": "Dinner", "amount": 80, "emoji": "🍝" },
-      { "name": "Taxi", "amount": 24, "emoji": "🚕" },
-      { "name": "Guided tour", "amount": 60, "emoji": "🎨" },
-      { "name": "Brunch", "amount": 48, "emoji": "🥐" }
+      {
+        "name": "Dinner",
+        "amount": 80,
+        "emoji": "🍝"
+      },
+      {
+        "name": "Taxi",
+        "amount": 24,
+        "emoji": "🚕"
+      },
+      {
+        "name": "Guided tour",
+        "amount": 60,
+        "emoji": "🎨"
+      },
+      {
+        "name": "Brunch",
+        "amount": 48,
+        "emoji": "🥐"
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Expense Management",
+    "heroTitle": "Expense Splitting:",
+    "heroTitleHighlight": "who owes how much to whom?",
+    "heroSubtitle": "Marie paid for the restaurant, Thomas for the rental. Who owes what at the end of the trip? Let the app do the math while you enjoy the party.",
+    "heroCta": "Manage my expenses",
+    "heroCtaSubtext": "Free, no credit card required",
+    "socialProofText": "$2,450 managed this month",
+    "featuresTitle": "Smart expense management",
+    "ctaTitle": "No more money arguments",
+    "ctaSubtitle": "Let the app handle the accounts for you",
+    "ctaButton": "Calculate who owes me money",
+    "seoTitle": "Travel Budget - Group Expense Splitting | Weplanify",
+    "seoDescription": "Easily manage group travel expenses. Payment tracking, automatic fair splitting, and simplified reimbursements for your vacation with friends.",
+    "stats": [
+      {
+        "value": "$2,450",
+        "label": "Total expenses"
+      },
+      {
+        "value": "6",
+        "label": "Participants"
+      },
+      {
+        "value": "23",
+        "label": "Transactions"
+      }
+    ],
+    "features": [
+      {
+        "icon": "📸",
+        "title": "Scan receipt",
+        "description": "Photo = expense added"
+      },
+      {
+        "icon": "💱",
+        "title": "Multi-currency",
+        "description": "Euros, dollars, yen..."
+      },
+      {
+        "icon": "🔄",
+        "title": "Smart settling",
+        "description": "Fewer transactions"
+      },
+      {
+        "icon": "📊",
+        "title": "Statistics",
+        "description": "Visualize your expenses"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "How does expense splitting work on Weplanify?",
+        "answer": "Add each expense by indicating who paid and who participated. The app automatically calculates everyone's balance and shows who owes how much to whom to settle up at the end of the trip."
+      },
+      {
+        "question": "Can you manage multiple currencies?",
+        "answer": "Yes, Weplanify supports all currencies. Add expenses in euros, dollars, yen, or any other currency. The app automatically converts at the current exchange rate."
+      },
+      {
+        "question": "How can I add an expense quickly?",
+        "answer": "Three options: enter the amount manually, take a photo of the receipt (automatic recognition), or import from your bank."
+      },
+      {
+        "question": "Are reimbursements optimized?",
+        "answer": "Yes! The algorithm minimizes the number of transactions needed to settle accounts."
+      },
+      {
+        "question": "Can you exclude certain people from an expense?",
+        "answer": "Absolutely. For each expense, select only the participants involved."
+      }
     ]
   }
 }

@@ -104,5 +104,64 @@
       "restaurant": "Resto",
       "activity": "Activité"
     }
+  },
+  "page": {
+    "heroBadge": "Mode Exploration",
+    "seoTitle": "Explorer - Découvrez vos Destinations de Voyage | Weplanify",
+    "seoDescription": "Découvrez des lieux incroyables avec notre mode exploration. Swipez pour explorer restaurants, musées et activités.",
+    "ctaTitle": "Prêt à explorer ?",
+    "ctaSubtitle": "Découvrez des milliers de lieux incroyables pour votre prochain voyage",
+    "ctaButton": "Explorer ma destination",
+    "features": [
+      {
+        "title": "Restaurants",
+        "description": "Trouvez les meilleures adresses locales"
+      },
+      {
+        "title": "Musées",
+        "description": "Culture et histoire"
+      },
+      {
+        "title": "Nature",
+        "description": "Parcs et activités extérieures"
+      },
+      {
+        "title": "Points de vue",
+        "description": "Les meilleurs spots photo"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Comment fonctionne le mode Explore de Weplanify ?",
+        "answer": "Le mode Explore vous permet de découvrir des lieux en swipant comme une appli de rencontre. Swipez à droite pour sauvegarder, à gauche pour passer."
+      },
+      {
+        "question": "Les lieux sont-ils filtrés selon ma destination ?",
+        "answer": "Oui, l'Explorer ne montre que les lieux pertinents pour votre destination et vos dates de voyage."
+      },
+      {
+        "question": "D'où viennent les recommandations ?",
+        "answer": "Nos recommandations combinent plusieurs sources : avis des voyageurs Weplanify, données Google Places, TripAdvisor et nos curateurs locaux."
+      },
+      {
+        "question": "Puis-je utiliser Explorer hors ligne ?",
+        "answer": "Oui ! Téléchargez les lieux de votre destination avant de partir."
+      },
+      {
+        "question": "Comment ajouter un lieu exploré à mon itinéraire ?",
+        "answer": "Quand vous swipez à droite, le lieu est sauvegardé dans vos favoris. Un simple tap permet de l'ajouter à votre itinéraire."
+      }
+    ],
+    "stats": [
+      {
+        "label": "lieux découverts"
+      },
+      {
+        "label": "catégories"
+      },
+      {
+        "label": "destinations"
+      }
+    ]
   }
 }

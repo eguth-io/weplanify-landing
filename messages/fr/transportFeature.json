@@ -18,5 +18,38 @@
       { "time": "11:00", "event": "Transfert hôtel", "icon": "🚕", "color": "#EEF899" },
       { "time": "14:00", "event": "Check-in Hôtel Alfama", "icon": "🏨", "color": "#8B5CF6" }
     ]
+  },
+  "page": {
+    "heroBadge": "Gestion des transports",
+    "heroTitle": "Vols, trains, voitures :",
+    "heroTitleHighlight": "fini les billets perdus",
+    "heroSubtitle": "Transférez vos emails de confirmation, on extrait tout automatiquement. Vol retardé ? Vous le saurez avant la compagnie aérienne.",
+    "heroCta": "Centraliser mes trajets",
+    "heroCtaSubtext": "Gratuit, sans carte bancaire",
+    "socialProofText": "Tous vos trajets au même endroit",
+    "featuresTitle": "Fonctionnalités transport",
+    "features": [
+      { "title": "Import email", "description": "Scan automatique" },
+      { "title": "Alertes", "description": "Retards et changements" },
+      { "title": "Hors ligne", "description": "Accès sans connexion" },
+      { "title": "Partage", "description": "Infos pour le groupe" }
+    ],
+    "faqItems": [
+      { "question": "Comment importer mes réservations de transport ?", "answer": "Trois façons : transférer vos emails de confirmation, connecter Gmail/Outlook pour l'import automatique, ou scanner le QR code de votre billet." },
+      { "question": "Quels types de transport sont supportés ?", "answer": "Tous ! Vols, trains, bus, ferries, locations de voiture, et même covoiturage." },
+      { "question": "Reçois-je des alertes pour les retards ?", "answer": "Oui, Weplanify surveille vos vols et trains en temps réel. En cas de retard, vous recevez une notification instantanée." },
+      { "question": "Mon groupe de voyage peut-il voir les détails transport ?", "answer": "Oui ! Tous les participants du voyage peuvent voir les transports ajoutés." },
+      { "question": "Puis-je accéder à mes billets hors ligne ?", "answer": "Absolument. Téléchargez vos billets pour y accéder même sans connexion internet." }
+    ],
+    "ctaTitle": "Ne plus jamais perdre un billet",
+    "ctaSubtitle": "Tous vos trajets accessibles en 2 secondes, même hors ligne",
+    "ctaButton": "Retrouver tous mes billets",
+    "seoTitle": "Gestion des Transports - Vols, Trains & Trajets | Weplanify",
+    "seoDescription": "Gérez tous vos trajets de voyage au même endroit. Import automatique des vols et trains, alertes temps réel et accès hors ligne.",
+    "stats": [
+      { "value": "Auto", "label": "import" },
+      { "value": "Temps réel", "label": "alertes" },
+      { "value": "Hors ligne", "label": "accès" }
+    ]
   }
 }

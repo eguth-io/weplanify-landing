@@ -20,5 +20,31 @@
       { "question": "Activité du jour 3 ?", "options": ["🏄 Surf", "🚶 Randonnée", "🍷 Dégustation"], "winner": "🏄 Surf", "votes": 8 },
       { "question": "Hôtel ou Airbnb ?", "options": ["🏨 Hôtel", "🏠 Airbnb"], "winner": "🏠 Airbnb", "votes": 10 }
     ]
+  },
+  "page": {
+    "heroBadge": "Sondages en direct",
+    "heroTitle": "Décidez ensemble",
+    "heroTitleHighlight": "en 2 minutes",
+    "heroSubtitle": "Pizza ou sushi ? Hôtel ou Airbnb ? Un vote rapide remplace 47 messages WhatsApp.",
+    "socialProofText": "+50 000 décisions ce mois",
+    "heroCta": "Créer mon premier sondage",
+    "heroCtaSubtext": "Gratuit - Prêt en 30 secondes",
+    "features": [
+      { "icon": "⚡", "title": "Temps réel", "description": "Les votes apparaissent instantanément" },
+      { "icon": "🔒", "title": "Anonyme ou public", "description": "Choisissez si les votes sont visibles" },
+      { "icon": "🔔", "title": "Rappels", "description": "Relancez automatiquement ceux qui n'ont pas voté" }
+    ],
+    "faqItems": [
+      { "question": "Comment créer un sondage pour mon groupe de voyage ?", "answer": "En quelques secondes ! Choisissez un type de sondage, ajoutez vos options et partagez." },
+      { "question": "Les votes sont-ils anonymes ?", "answer": "À vous de choisir ! Vous pouvez créer des sondages publics ou anonymes." },
+      { "question": "Puis-je définir une date limite de vote ?", "answer": "Oui, vous pouvez programmer une date et heure de fin. Les non-votants reçoivent des rappels automatiques." },
+      { "question": "Que se passe-t-il en cas d'égalité ?", "answer": "Plusieurs options : faire un second tour, laisser le créateur décider, ou tirage au sort." },
+      { "question": "Puis-je voter pour plusieurs options ?", "answer": "Oui ! Vous pouvez autoriser les votes multiples ou le vote unique." }
+    ],
+    "ctaTitle": "Fini les débats interminables",
+    "ctaSubtitle": "Laissez le groupe décider, démocratiquement",
+    "ctaButton": "Trancher le débat maintenant",
+    "seoTitle": "Sondages Voyage - Décisions de Groupe | Weplanify",
+    "seoDescription": "Prenez des décisions de groupe facilement avec les sondages Weplanify. Votez en temps réel pour choisir destinations, activités et restaurants."
   }
 }

@@ -20,5 +20,31 @@
       { "question": "第 3 天的活动？", "options": ["🏄 冲浪", "🚶 徒步", "🍷 品酒"], "winner": "🏄 冲浪", "votes": 8 },
       { "question": "酒店还是 Airbnb？", "options": ["🏨 酒店", "🏠 Airbnb"], "winner": "🏠 Airbnb", "votes": 10 }
     ]
+  },
+  "page": {
+    "heroBadge": "实时投票",
+    "heroTitle": "一起做决定",
+    "heroTitleHighlight": "只需 2 分钟",
+    "heroSubtitle": "披萨还是寿司？酒店还是 Airbnb？一次快速投票胜过 47 条 WhatsApp 消息。",
+    "socialProofText": "本月已做出 +50,000 个决定",
+    "heroCta": "创建我的第一个投票",
+    "heroCtaSubtext": "免费 - 30 秒即可完成",
+    "features": [
+      { "icon": "⚡", "title": "实时", "description": "所有人都能即时看到投票" },
+      { "icon": "🔒", "title": "匿名或公开", "description": "选择投票是否可见" },
+      { "icon": "🔔", "title": "提醒", "description": "自动提醒尚未投票的人" }
+    ],
+    "faqItems": [
+      { "question": "如何为我的旅行团队创建投票？", "answer": "几秒钟即可！选择投票类型（目的地、餐厅、活动、日期），添加选项并分享。" },
+      { "question": "投票是匿名的吗？", "answer": "由你决定！你可以创建公开投票或匿名投票。" },
+      { "question": "可以设置投票截止时间吗？", "answer": "可以，你能设定结束日期和时间。未投票的人会收到自动提醒。" },
+      { "question": "出现平局怎么办？", "answer": "有多种选择：在平局选项间进行第二轮投票、由创建者决定，或随机选择。" },
+      { "question": "可以为多个选项投票吗？", "answer": "可以！你能允许多选或单选。" }
+    ],
+    "ctaTitle": "告别没完没了的争论",
+    "ctaSubtitle": "让团队民主地做决定",
+    "ctaButton": "立即结束争论",
+    "seoTitle": "旅行投票 - 团队决策 | Weplanify",
+    "seoDescription": "使用 Weplanify 投票轻松做出团队决策。实时投票，选择目的地、活动和餐厅。"
   }
 }

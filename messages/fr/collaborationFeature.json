@@ -6,17 +6,102 @@
     "inviteMore": "Inviter plus",
     "liveLabel": "En direct",
     "fakeTripTitle": "Road Trip Portugal",
-    "fakeDays": ["Jour 1 — Lisbonne", "Jour 2 — Sintra", "Jour 3 — Porto"],
+    "fakeDays": [
+      "Jour 1 — Lisbonne",
+      "Jour 2 — Sintra",
+      "Jour 3 — Porto"
+    ],
     "editingTag": "Marie modifie…",
     "feedTitle": "Ne ratez plus rien",
     "feedSubtitle": "Le fil d'activité montre tout ce qui se passe sur votre voyage. Qui a ajouté quoi, quand et où.",
     "recentActivity": "Activité récente",
     "activities": [
-      { "avatar": "👩‍🎨", "name": "Marie", "action": "a ajouté « Dîner à Alfama »", "time": "il y a 2 min" },
-      { "avatar": "🧔", "name": "Thomas", "action": "a modifié l'hôtel à Porto", "time": "il y a 5 min" },
-      { "avatar": "👱‍♀️", "name": "Emma", "action": "a voté pour le restaurant", "time": "il y a 12 min" },
-      { "avatar": "🧑‍💻", "name": "Lucas", "action": "a rejoint le voyage", "time": "il y a 1 h" }
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "action": "a ajouté « Dîner à Alfama »",
+        "time": "il y a 2 min"
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "action": "a modifié l'hôtel à Porto",
+        "time": "il y a 5 min"
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "action": "a voté pour le restaurant",
+        "time": "il y a 12 min"
+      },
+      {
+        "avatar": "🧑‍💻",
+        "name": "Lucas",
+        "action": "a rejoint le voyage",
+        "time": "il y a 1 h"
+      }
     ],
     "freeNoCard": "Inscription gratuite. Sans carte bancaire."
+  },
+  "page": {
+    "heroBadge": "3 personnes éditent en ce moment",
+    "heroTitle": "Planifier un voyage à 10",
+    "heroTitleHighlight": "sans un seul message WhatsApp",
+    "heroSubtitle": "Modifications en temps réel, sondages intégrés, historique clair. Tout le monde sur la même page, littéralement.",
+    "heroCta": "Inviter mon premier ami - Gratuit",
+    "heroCtaSubtext": "45 sec pour inviter votre groupe",
+    "socialProofText": "12 000+ voyages planifiés",
+    "featuresTitle": "Collaboration en temps réel",
+    "features": [
+      {
+        "title": "Temps réel",
+        "description": "Les modifications apparaissent instantanément pour tous les participants."
+      },
+      {
+        "title": "Commentaires",
+        "description": "Discutez de chaque élément directement dans l'appli."
+      },
+      {
+        "title": "Permissions",
+        "description": "Définissez qui peut éditer et qui peut seulement voir."
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Comment inviter des amis à collaborer sur un voyage ?",
+        "answer": "Partagez un lien d'invitation ou envoyez une invitation par email. Vos amis peuvent rejoindre en un clic, même sans compte Weplanify."
+      },
+      {
+        "question": "Les modifications sont-elles vraiment synchronisées en temps réel ?",
+        "answer": "Oui, toutes les modifications sont synchronisées instantanément grâce à la technologie WebSocket."
+      },
+      {
+        "question": "Puis-je limiter les droits d'édition ?",
+        "answer": "Absolument. Le créateur du voyage peut définir des rôles : éditeur, contributeur ou lecteur."
+      },
+      {
+        "question": "Y a-t-il une limite au nombre de participants ?",
+        "answer": "Aucune limite technique. Nous avons des voyages avec 50+ participants qui fonctionnent parfaitement."
+      },
+      {
+        "question": "Comment gérez-vous les conflits d'édition ?",
+        "answer": "Weplanify gère les conflits automatiquement. Le système fusionne intelligemment les modifications."
+      }
+    ],
+    "ctaTitle": "Fini les groupes WhatsApp interminables",
+    "ctaSubtitle": "Tout le monde sur la même page, en temps réel",
+    "ctaButton": "Inviter mes amis maintenant",
+    "seoTitle": "Collaboration Temps Réel - Planification de Voyage en Groupe | Weplanify",
+    "seoDescription": "Planifiez votre voyage de groupe avec amis et famille. Éditions en temps réel, discussions intégrées et synchronisation parfaite.",
+    "stats": [
+      {
+        "value": "12 000+",
+        "label": "voyages planifiés"
+      },
+      {
+        "value": "45 sec",
+        "label": "pour inviter votre groupe"
+      }
+    ]
   }
 }

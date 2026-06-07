@@ -104,5 +104,64 @@
       "restaurant": "Restaurant",
       "activity": "Aktivität"
     }
+  },
+  "page": {
+    "heroBadge": "Entdecken-Modus",
+    "seoTitle": "Explorer - Reiseziele entdecken | Weplanify",
+    "seoDescription": "Entdecke fantastische Orte mit unserem Entdecken-Modus. Wische, um Restaurants, Museen und Aktivitäten zu erkunden, und speichere deine Favoriten.",
+    "ctaTitle": "Bereit zu entdecken?",
+    "ctaSubtitle": "Entdecke Tausende fantastischer Orte für deine nächste Reise",
+    "ctaButton": "Mein Reiseziel entdecken",
+    "features": [
+      {
+        "title": "Restaurants",
+        "description": "Finde das beste lokale Essen"
+      },
+      {
+        "title": "Museen",
+        "description": "Kultur und Geschichte"
+      },
+      {
+        "title": "Natur",
+        "description": "Parks und Outdoor-Aktivitäten"
+      },
+      {
+        "title": "Aussichtspunkte",
+        "description": "Die besten Fotospots"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Wie funktioniert der Explore-Modus von Weplanify?",
+        "answer": "Im Explore-Modus entdeckst du Orte (Restaurants, Museen, Aktivitäten), indem du wie in einer Dating-App wischst. Nach rechts wischen zum Speichern, nach links zum Überspringen."
+      },
+      {
+        "question": "Werden Orte nach meinem Reiseziel gefiltert?",
+        "answer": "Ja, der Explorer zeigt nur Orte an, die für dein Reiseziel und deine Reisedaten relevant sind."
+      },
+      {
+        "question": "Woher kommen die Empfehlungen?",
+        "answer": "Unsere Empfehlungen kombinieren mehrere Quellen: Bewertungen von Weplanify-Reisenden, Google-Places-Daten, TripAdvisor und unsere lokalen Kuratoren."
+      },
+      {
+        "question": "Kann ich Explorer offline nutzen?",
+        "answer": "Ja! Lade die Orte deines Reiseziels herunter, bevor du losfährst."
+      },
+      {
+        "question": "Wie füge ich einen entdeckten Ort zu meiner Reiseroute hinzu?",
+        "answer": "Wenn du nach rechts wischst (Like), wird der Ort in deinen Favoriten gespeichert. Mit einem einfachen Tippen fügst du ihn deiner Reiseroute hinzu."
+      }
+    ],
+    "stats": [
+      {
+        "label": "entdeckte Orte"
+      },
+      {
+        "label": "Kategorien"
+      },
+      {
+        "label": "Reiseziele"
+      }
+    ]
   }
 }

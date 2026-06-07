@@ -31,5 +31,40 @@
     "visualTitle": "The AI visualizes your journey",
     "capabilitiesSubtitle": "More than just an assistant — real travel expertise powered by AI.",
     "freeNoCard": "Free signup. No credit card required."
+  },
+  "page": {
+    "heroBadge": "Trip Planning",
+    "heroTitle": "Plan your trip",
+    "heroTitleHighlight": "your way",
+    "heroSubtitle": "Build your itinerary manually step by step, or let our AI assistant create a personalized plan in seconds. You choose how to plan.",
+    "heroCta": "Start planning for free",
+    "heroCtaSubtext": "No credit card required",
+    "socialProofText": "12,000+ trips planned",
+    "stats": [
+      { "value": "12,000+", "label": "trips planned" },
+      { "value": "4.8/5", "label": "satisfaction" },
+      { "value": "2 modes", "label": "manual + AI" }
+    ],
+    "featuresTitle": "Two ways to plan your perfect trip",
+    "features": [
+      { "title": "Manual planning", "description": "Create your trip from scratch. Add destinations, set dates, and build your day-by-day itinerary exactly how you want it." },
+      { "title": "Day-by-day builder", "description": "Drag and drop activities, restaurants, and accommodations. Organize each day visually on a timeline." },
+      { "title": "AI-powered planning", "description": "Describe your dream trip in plain English. Our AI creates a complete itinerary with hotels, activities, and optimized routes." },
+      { "title": "Smart suggestions", "description": "The AI understands context — season, budget, travel style — and adapts recommendations in real-time." },
+      { "title": "Mix both approaches", "description": "Start with AI suggestions, then fine-tune manually. Or build manually and ask AI to fill gaps." },
+      { "title": "Collaborative editing", "description": "Everyone in the group can contribute — add ideas, vote on options, and refine the plan together." }
+    ],
+    "faqItems": [
+      { "question": "Can I plan a trip without using AI?", "answer": "Absolutely! You can create your entire trip manually. Add destinations, set dates, and build your itinerary step by step using our visual day-by-day planner." },
+      { "question": "How does the AI assistant work?", "answer": "Simply describe your trip in natural language — destination, budget, travel style, interests. The AI generates a complete day-by-day itinerary with accommodations, activities, and optimized routes." },
+      { "question": "Can I modify AI suggestions?", "answer": "Yes! AI suggestions are just a starting point. You can edit, add, or remove any element. The plan is fully customizable." },
+      { "question": "Can I combine manual and AI planning?", "answer": "Definitely. Start with AI to get a base itinerary, then refine manually. Or plan manually and ask AI to suggest activities for specific days." },
+      { "question": "Can my group help plan the trip?", "answer": "Yes! Invite your travel companions and everyone can add suggestions, vote on options, and collaborate on the itinerary in real-time." }
+    ],
+    "ctaTitle": "Ready to plan your next adventure?",
+    "ctaSubtitle": "Start planning your trip — manually or with AI assistance",
+    "ctaButton": "Start planning for free",
+    "seoTitle": "Trip Planning Tool | Manual & AI-Powered | WePlanify",
+    "seoDescription": "Plan your group trip your way. Build itineraries manually or let AI create personalized day-by-day plans. Collaborate with friends in real-time. Free trip planner."
   }
 }

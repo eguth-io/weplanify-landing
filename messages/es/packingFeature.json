@@ -8,10 +8,22 @@
         "title": "Ropa",
         "progress": 80,
         "items": [
-          { "name": "Camisetas (x5)", "checked": true },
-          { "name": "Pantalones (x3)", "checked": true },
-          { "name": "Chaqueta ligera", "checked": true },
-          { "name": "Bañador", "checked": false }
+          {
+            "name": "Camisetas (x5)",
+            "checked": true
+          },
+          {
+            "name": "Pantalones (x3)",
+            "checked": true
+          },
+          {
+            "name": "Chaqueta ligera",
+            "checked": true
+          },
+          {
+            "name": "Bañador",
+            "checked": false
+          }
         ]
       },
       {
@@ -19,10 +31,22 @@
         "title": "Electrónica",
         "progress": 60,
         "items": [
-          { "name": "Cargador del móvil", "checked": true },
-          { "name": "Adaptador de corriente", "checked": true },
-          { "name": "Batería externa", "checked": false },
-          { "name": "Auriculares", "checked": false }
+          {
+            "name": "Cargador del móvil",
+            "checked": true
+          },
+          {
+            "name": "Adaptador de corriente",
+            "checked": true
+          },
+          {
+            "name": "Batería externa",
+            "checked": false
+          },
+          {
+            "name": "Auriculares",
+            "checked": false
+          }
         ]
       },
       {
@@ -30,9 +54,18 @@
         "title": "Aseo",
         "progress": 100,
         "items": [
-          { "name": "Cepillo de dientes", "checked": true },
-          { "name": "Protector solar", "checked": true },
-          { "name": "Champú", "checked": true }
+          {
+            "name": "Cepillo de dientes",
+            "checked": true
+          },
+          {
+            "name": "Protector solar",
+            "checked": true
+          },
+          {
+            "name": "Champú",
+            "checked": true
+          }
         ]
       }
     ],
@@ -43,9 +76,100 @@
     "sharedSubtitle": "Evita duplicados asignando quién lleva cada cosa.",
     "bringing": "Lleva:",
     "people": [
-      { "avatar": "👩‍🎨", "name": "Marie", "items": ["Protector solar", "Juego de cartas", "Guía de viaje"] },
-      { "avatar": "🧔", "name": "Thomas", "items": ["Adaptador de corriente", "Altavoz Bluetooth"] },
-      { "avatar": "👱‍♀️", "name": "Emma", "items": ["Botiquín", "Prismáticos"] }
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "items": [
+          "Protector solar",
+          "Juego de cartas",
+          "Guía de viaje"
+        ]
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "items": [
+          "Adaptador de corriente",
+          "Altavoz Bluetooth"
+        ]
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "items": [
+          "Botiquín",
+          "Prismáticos"
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Equipaje inteligente",
+    "heroTitle": "Lista de equipaje inteligente",
+    "heroTitleHighlight": "",
+    "heroSubtitle": "La IA sabe que hace 28°C en Lisboa en abril y que has planeado hacer surf. Te recuerda el protector solar Y el neopreno.",
+    "heroCta": "Crear mi checklist de viaje",
+    "heroCtaSubtext": "Gratis, sin tarjeta de crédito",
+    "socialProofText": "No vuelvas a olvidar nada",
+    "featuresTitle": "Funciones de equipaje inteligente",
+    "features": [
+      {
+        "title": "IA",
+        "description": "Sugerencias personalizadas"
+      },
+      {
+        "title": "Clima",
+        "description": "Según el destino"
+      },
+      {
+        "title": "Compartir",
+        "description": "Reparto en grupo"
+      },
+      {
+        "title": "Recordatorios",
+        "description": "Antes de salir"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "¿Cómo genera Weplanify mi lista de equipaje?",
+        "answer": "La app analiza tu destino, las fechas de viaje, el clima previsto y las actividades planificadas para generar una lista personalizada."
+      },
+      {
+        "question": "¿Podemos compartir objetos entre viajeros?",
+        "answer": "¡Sí! La función 'Objetos compartidos' permite asignar objetos a personas concretas. Se acabaron los duplicados en el grupo."
+      },
+      {
+        "question": "¿La app envía recordatorios antes de salir?",
+        "answer": "Por supuesto. Recibes notificaciones configurables: 1 semana antes, 3 días antes y la víspera de la salida."
+      },
+      {
+        "question": "¿Puedo crear mis propias categorías?",
+        "answer": "Sí, puedes crear tus propias categorías personalizadas y reutilizarlas en futuros viajes."
+      },
+      {
+        "question": "¿Se guarda mi lista para futuros viajes?",
+        "answer": "¡Sí! Tus listas se guardan y se pueden duplicar. También puedes crear plantillas."
+      }
+    ],
+    "ctaTitle": "¿Listo para hacer las maletas?",
+    "ctaSubtitle": "Nunca más salgas sin tu cargador",
+    "ctaButton": "Crear mi checklist de viaje",
+    "seoTitle": "Lista de Equipaje - Equipaje Inteligente | Weplanify",
+    "seoDescription": "No olvides nada con nuestra lista de equipaje inteligente. Sugerencias según tu destino, el clima y los objetos compartidos con tu grupo.",
+    "stats": [
+      {
+        "value": "14/20",
+        "label": "artículos listos"
+      },
+      {
+        "value": "70%",
+        "label": "empacado"
+      },
+      {
+        "value": "IA",
+        "label": "sugerencias"
+      }
     ]
   }
 }

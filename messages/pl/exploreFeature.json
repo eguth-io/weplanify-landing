@@ -104,5 +104,64 @@
       "restaurant": "Restauracja",
       "activity": "Atrakcja"
     }
+  },
+  "page": {
+    "heroBadge": "Tryb Odkrywania",
+    "seoTitle": "Explorer - Odkryj Cele Podróży | Weplanify",
+    "seoDescription": "Odkrywaj niesamowite miejsca dzięki naszemu trybowi eksploracji. Przesuwaj, aby odkrywać restauracje, muzea i atrakcje, zapisuj ulubione.",
+    "ctaTitle": "Gotowy do odkrywania?",
+    "ctaSubtitle": "Odkryj tysiące niesamowitych miejsc na swoją następną podróż",
+    "ctaButton": "Odkryj mój cel podróży",
+    "features": [
+      {
+        "title": "Restauracje",
+        "description": "Znajdź najlepsze lokalne jedzenie"
+      },
+      {
+        "title": "Muzea",
+        "description": "Kultura i historia"
+      },
+      {
+        "title": "Natura",
+        "description": "Parki i aktywności na świeżym powietrzu"
+      },
+      {
+        "title": "Punkty widokowe",
+        "description": "Najlepsze miejsca na zdjęcia"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Jak działa tryb Explore w Weplanify?",
+        "answer": "Tryb Explore pozwala odkrywać miejsca (restauracje, muzea, atrakcje) przez przesuwanie jak w aplikacji randkowej. Przesuń w prawo, aby zapisać, w lewo, aby pominąć."
+      },
+      {
+        "question": "Czy miejsca są filtrowane na podstawie mojego celu podróży?",
+        "answer": "Tak, Explorer pokazuje tylko miejsca odpowiednie dla Twojego celu podróży i dat wyjazdu."
+      },
+      {
+        "question": "Skąd pochodzą rekomendacje?",
+        "answer": "Nasze rekomendacje łączą wiele źródeł: opinie podróżnych Weplanify, dane Google Places, TripAdvisor oraz naszych lokalnych kuratorów."
+      },
+      {
+        "question": "Czy mogę używać Explorera offline?",
+        "answer": "Tak! Pobierz miejsca z celu podróży przed wyjazdem."
+      },
+      {
+        "question": "Jak dodać odkryte miejsce do mojego planu podróży?",
+        "answer": "Gdy przesuniesz w prawo (polubienie), miejsce zostanie zapisane w ulubionych. Jedno dotknięcie pozwala dodać je do planu podróży."
+      }
+    ],
+    "stats": [
+      {
+        "label": "odkrytych miejsc"
+      },
+      {
+        "label": "kategorie"
+      },
+      {
+        "label": "cele podróży"
+      }
+    ]
   }
 }

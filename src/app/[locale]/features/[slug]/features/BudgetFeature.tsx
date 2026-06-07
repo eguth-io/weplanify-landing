@@ -9,28 +9,17 @@ import { BudgetSplit } from "@/components/animations";
 import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
+// Non-translatable presentation constants (formerly Sanity data.*).
+const FEATURE = {
+  slug: "budget",
+  icon: "💰",
+  accentColor: "#EEF899",
+  gradientFrom: "#EEF899",
+} as const;
+
+type Stat = { value: string; label: string };
+type FeatureItem = { icon: string; title: string; description: string };
+type FaqItem = { question: string; answer: string };
 
 type Participant = { name: string; avatar: string };
 type Expense = { name: string; amount: number; paidBy: string };
@@ -295,18 +284,23 @@ function LiveSplit({
   );
 }
 
-export default function BudgetFeature({ data }: { data: FeaturePageData }) {
+export default function BudgetFeature() {
   const locale = useLocale();
-  const t = useTranslations("budgetFeature").raw("copy") as Copy;
+  const tr = useTranslations("budgetFeature");
+  const t = tr.raw("copy") as Copy;
+
+  const stats = tr.raw("page.stats") as Stat[];
+  const features = tr.raw("page.features") as FeatureItem[];
+  const faqItems = tr.raw("page.faqItems") as FaqItem[];
 
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle}
-        featureDescription={data.seoDescription}
+        featureName={tr("page.seoTitle")}
+        featureDescription={tr("page.seoDescription")}
         locale={locale}
-        slug={data.slug}
-        faqItems={data.faqItems}
+        slug={FEATURE.slug}
+        faqItems={faqItems}
       />
 
       <div className="min-h-screen bg-[#FFFBF5]">
@@ -320,8 +314,8 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
                   animate={{ opacity: 1, y: 0 }}
                   className="inline-flex items-center gap-2 px-4 py-1 bg-[#EEF899]/20 rounded-full mb-4"
                 >
-                  <span className="text-lg">{data.icon}</span>
-                  <span className="text-[#EEF899] font-karla text-sm">{data.heroBadge}</span>
+                  <span className="text-lg">{FEATURE.icon}</span>
+                  <span className="text-[#EEF899] font-karla text-sm">{tr("page.heroBadge")}</span>
                 </motion.div>
 
                 <motion.h1
@@ -330,9 +324,9 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
                   transition={{ delay: 0.1 }}
                   className="text-4xl lg:text-6xl font-londrina-solid text-[#FFFBF5] mb-6"
                 >
-                  {data.heroTitle}
+                  {tr("page.heroTitle")}
                   <br />
-                  <span className="text-[#EEF899]">{data.heroTitleHighlight}</span>
+                  <span className="text-[#EEF899]">{tr("page.heroTitleHighlight")}</span>
                 </motion.h1>
 
                 <motion.p
@@ -341,17 +335,17 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
                   transition={{ delay: 0.2 }}
                   className="text-lg text-[#FFFBF5]/70 font-karla mb-8 max-w-md"
                 >
-                  {data.heroSubtitle}
+                  {tr("page.heroSubtitle")}
                 </motion.p>
 
-                {data.stats && (
+                {stats && (
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
                     className="flex flex-wrap gap-6 justify-center lg:justify-start mb-8"
                   >
-                    {data.stats.map((stat, i) => (
+                    {stats.map((stat, i) => (
                       <div key={i} className="text-center lg:text-left">
                         <p className="font-unbounded font-bold text-2xl text-[#FFFBF5]">{stat.value}</p>
                         <p className="text-sm text-[#FFFBF5]/50 font-karla">{stat.label}</p>
@@ -367,7 +361,7 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
                 >
                   <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                     <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                      {data.heroCta}
+                      {tr("page.heroCta")}
                     </PulsatingButton>
                   </Link>
                 </motion.div>
@@ -435,7 +429,7 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
         <section className="px-4 lg:px-8 py-16 bg-[#001E13]">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-6">
-              {data.features.map((f, i) => (
+              {features.map((f, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -454,7 +448,7 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
+        <FeatureFAQ items={faqItems} accentColor={FEATURE.accentColor} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-16">
@@ -465,12 +459,12 @@ export default function BudgetFeature({ data }: { data: FeaturePageData }) {
               viewport={{ once: true }}
               className="bg-gradient-to-r from-[#EEF899] to-[#61DBD5] rounded-[32px] p-8 lg:p-12"
             >
-              <span className="text-5xl mb-4 block">{data.icon}</span>
-              <h2 className="text-3xl font-londrina-solid text-[#001E13] mb-4">{data.ctaTitle}</h2>
-              <p className="text-[#001E13]/70 font-karla mb-8 max-w-md mx-auto">{data.ctaSubtitle}</p>
+              <span className="text-5xl mb-4 block">{FEATURE.icon}</span>
+              <h2 className="text-3xl font-londrina-solid text-[#001E13] mb-4">{tr("page.ctaTitle")}</h2>
+              <p className="text-[#001E13]/70 font-karla mb-8 max-w-md mx-auto">{tr("page.ctaSubtitle")}</p>
               <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <button className="bg-[#001E13] text-white font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
-                  {data.ctaButton}
+                  {tr("page.ctaButton")}
                 </button>
               </Link>
               <p className="text-sm text-[#001E13]/50 mt-3 font-karla">{t.freeNoCard}</p>

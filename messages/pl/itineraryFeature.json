@@ -1,0 +1,67 @@
+{
+  "copy": {
+    "calendarMonth": "Kwiecień 2024",
+    "weekdays": ["P", "W", "Ś", "C", "P", "S", "N"],
+    "dragHint": "Przeciągnij, aby zmienić kolejność",
+    "days": [
+      {
+        "title": "Przylot do Tokio",
+        "items": [
+          { "time": "14:00", "icon": "✈️", "activity": "Przylot na lotnisko Narita" },
+          { "time": "16:00", "icon": "🏨", "activity": "Zameldowanie w Hotel Shinjuku" },
+          { "time": "19:00", "icon": "🍜", "activity": "Kolacja w Omoide Yokocho" }
+        ]
+      },
+      {
+        "title": "Tokio - Dzielnica historyczna",
+        "items": [
+          { "time": "09:00", "icon": "⛩️", "activity": "Świątynia Senso-ji, Asakusa" },
+          { "time": "12:00", "icon": "🍣", "activity": "Sushi na targu Tsukiji" },
+          { "time": "15:00", "icon": "🌸", "activity": "Spacer po parku Ueno" },
+          { "time": "20:00", "icon": "🌃", "activity": "Tokyo Skytree" }
+        ]
+      },
+      {
+        "title": "Tokio - Nowoczesne miasto",
+        "items": [
+          { "time": "10:00", "icon": "🛍️", "activity": "Zakupy w Shibuya" },
+          { "time": "14:00", "icon": "🎮", "activity": "Akihabara" },
+          { "time": "18:00", "icon": "🌆", "activity": "Zachód słońca na Shibuya Sky" }
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Interaktywna oś czasu",
+    "heroTitle": "Planowanie podróży",
+    "heroTitleHighlight": "które naprawdę działa",
+    "heroSubtitle": "Aplikacja oblicza czasy przejazdów i ostrzega, jeśli restauracja o 20:00 jest 2 godziny drogi od muzeum o 18:00. Zero niespodzianek na miejscu.",
+    "socialProofText": "Ponad 5000 utworzonych planów podróży",
+    "heroCta": "Utwórz mój zoptymalizowany plan",
+    "heroCtaSubtext": "Za darmo, bez karty kredytowej",
+    "featuresTitle": "Organizuj jak profesjonalista",
+    "features": [
+      { "icon": "✋", "title": "Przeciągnij i upuść", "description": "Zmieniaj kolejność, przeciągając" },
+      { "icon": "🚗", "title": "Automatyczne czasy przejazdów", "description": "Obliczane między przystankami" },
+      { "icon": "⚠️", "title": "Alerty", "description": "Wykryte konflikty w harmonogramie" },
+      { "icon": "📤", "title": "Eksport do PDF", "description": "Udostępnij swój plan" }
+    ],
+    "faqItems": [
+      { "question": "Jak utworzyć plan podróży dzień po dniu?", "answer": "W Weplanify wystarczy dodać swoje przystanki (noclegi, atrakcje, restauracje), a pojawią się automatycznie na osi czasu. Następnie możesz zmieniać ich kolejność metodą przeciągnij i upuść." },
+      { "question": "Czy aplikacja oblicza czasy przejazdów?", "answer": "Tak, Weplanify automatycznie oblicza czasy przejazdów między każdym przystankiem na trasie, czy to samochodem, komunikacją miejską, czy pieszo." },
+      { "question": "Czy mogę wyeksportować plan podróży do PDF?", "answer": "Oczywiście! Wyeksportuj swój kompletny plan do PDF, aby mieć go offline lub wydrukować." },
+      { "question": "Jak zmienić kolejność aktywności w planie podróży?", "answer": "Wystarczy przeciągnąć i upuścić! Przenieś dowolną aktywność na inny dzień lub zmień kolejność w obrębie tego samego dnia." },
+      { "question": "Czy plan podróży jest udostępniany całej grupie?", "answer": "Tak, wszyscy uczestnicy podróży widzą ten sam plan w czasie rzeczywistym." }
+    ],
+    "ctaTitle": "Pożegnaj się z bałaganem w arkuszach Excela",
+    "ctaSubtitle": "Przeciągaj i upuszczaj, a aplikacja zoptymalizuje Twoje trasy",
+    "ctaButton": "Utwórz mój zoptymalizowany plan",
+    "seoTitle": "Plan Podróży - Planowanie Dzień po Dniu | Weplanify",
+    "seoDescription": "Zaplanuj swoją podróż dzień po dniu dzięki naszej interaktywnej osi czasu. Łatwo wizualizuj, zmieniaj kolejność i optymalizuj harmonogram wakacji.",
+    "stats": [
+      { "value": "Ponad 5000", "label": "planów podróży" },
+      { "value": "Auto", "label": "czasy przejazdów" },
+      { "value": "PDF", "label": "eksport" }
+    ]
+  }
+}

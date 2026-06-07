@@ -9,28 +9,19 @@ import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 import FadeIn from "@/components/FadeIn";
 
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
+// Non-text, non-translatable presentation values (migrated from Sanity).
+const FEATURE_META = {
+  slug: "explore",
+  icon: "🗺️",
+  accentColor: "#61DBD5",
+  gradientFrom: "#61DBD5",
+} as const;
+
+// Per-category emoji icons, index-aligned with page.features in messages.
+const CATEGORY_ICONS = ["🍽️", "🏛️", "🌳", "🌅"] as const;
+
+// Stat values, index-aligned with page.stats labels in messages.
+const STAT_VALUES = ["10,000+", "8", "100+"] as const;
 
 type ExploreSection = {
   title: string;
@@ -50,19 +41,25 @@ type ExploreCopy = {
   mapPins: { hotel: string; restaurant: string; activity: string };
 };
 
-export default function ExploreFeature({ data }: { data: FeaturePageData }) {
+export default function ExploreFeature() {
   const locale = useLocale();
   const lang = locale === "fr" ? "fr" : "en";
-  const copy = useTranslations("exploreFeature").raw("copy") as ExploreCopy;
+  const t = useTranslations("exploreFeature");
+  const copy = t.raw("copy") as ExploreCopy;
+
+  const features = t.raw("page.features") as { title: string; description: string }[];
+  const faqItems = t.raw("page.faqItems") as { question: string; answer: string }[];
+  const statLabels = t.raw("page.stats") as { label: string }[];
+  const stats = statLabels.map((s, i) => ({ value: STAT_VALUES[i] ?? "", label: s.label }));
 
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle}
-        featureDescription={data.seoDescription}
+        featureName={t("page.seoTitle")}
+        featureDescription={t("page.seoDescription")}
         locale={locale}
-        slug={data.slug}
-        faqItems={data.faqItems}
+        slug={FEATURE_META.slug}
+        faqItems={faqItems}
       />
 
       <div className="min-h-screen bg-gradient-to-b from-[#001E13] via-[#001E13] to-[#61DBD5]/20">
@@ -77,7 +74,7 @@ export default function ExploreFeature({ data }: { data: FeaturePageData }) {
                   animate={{ opacity: 1 }}
                   className="inline-block px-4 py-1 bg-[#61DBD5]/20 text-[#61DBD5] rounded-full text-sm font-karla mb-4"
                 >
-                  {data.heroBadge}
+                  {t("page.heroBadge")}
                 </motion.span>
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
@@ -116,14 +113,14 @@ export default function ExploreFeature({ data }: { data: FeaturePageData }) {
                 </motion.div>
 
                 {/* Inline stat trio */}
-                {data.stats && data.stats.length > 0 && (
+                {stats && stats.length > 0 && (
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5 }}
                     className="mt-10 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0"
                   >
-                    {data.stats.slice(0, 3).map((stat, i) => (
+                    {stats.slice(0, 3).map((stat, i) => (
                       <div key={i} className="text-center lg:text-left">
                         <div className="font-londrina-solid text-2xl lg:text-3xl text-[#61DBD5]">
                           {stat.value}
@@ -388,7 +385,7 @@ export default function ExploreFeature({ data }: { data: FeaturePageData }) {
               </h2>
 
               <div className="flex flex-wrap justify-center gap-3 lg:gap-4">
-                {data.features.map((feature, i) => (
+                {features.map((feature, i) => (
                   <motion.button
                     key={i}
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -398,7 +395,7 @@ export default function ExploreFeature({ data }: { data: FeaturePageData }) {
                     whileHover={{ scale: 1.05, y: -2 }}
                     className="px-5 py-3 bg-white border border-[#001E13]/10 hover:border-[#F6391A]/30 rounded-full flex items-center gap-2 transition-all shadow-sm hover:shadow-md"
                   >
-                    <span className="text-xl">{feature.icon}</span>
+                    <span className="text-xl">{CATEGORY_ICONS[i]}</span>
                     <span className="font-karla text-[#001E13]">{feature.title}</span>
                   </motion.button>
                 ))}
@@ -408,18 +405,18 @@ export default function ExploreFeature({ data }: { data: FeaturePageData }) {
         </FadeIn>
 
         {/* FAQ */}
-        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
+        <FeatureFAQ items={faqItems} accentColor={FEATURE_META.accentColor} />
 
         {/* Final CTA */}
         <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
           <div className="max-w-5xl mx-auto">
             <div className="bg-[#F6391A] rounded-3xl lg:rounded-[40px] p-8 lg:p-12 xl:p-16 text-center">
-              <span className="text-5xl lg:text-6xl mb-4 lg:mb-6 block">{data.icon}</span>
+              <span className="text-5xl lg:text-6xl mb-4 lg:mb-6 block">{FEATURE_META.icon}</span>
               <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#FFFBF5] leading-tight mb-4">
-                {data.ctaTitle}
+                {t("page.ctaTitle")}
               </h2>
               <p className="text-base lg:text-lg font-karla text-[#FFFBF5]/90 max-w-2xl mx-auto mb-8 leading-relaxed">
-                {data.ctaSubtitle}
+                {t("page.ctaSubtitle")}
               </p>
               <div className="flex justify-center">
                 <Link
@@ -427,7 +424,7 @@ export default function ExploreFeature({ data }: { data: FeaturePageData }) {
                   className="inline-block"
                 >
                   <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                    {data.ctaButton}
+                    {t("page.ctaButton")}
                   </PulsatingButton>
                 </Link>
               </div>

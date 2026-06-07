@@ -1,0 +1,67 @@
+{
+  "copy": {
+    "calendarMonth": "Abril de 2024",
+    "weekdays": ["S", "T", "Q", "Q", "S", "S", "D"],
+    "dragHint": "Arraste para reorganizar",
+    "days": [
+      {
+        "title": "Chegada a Tóquio",
+        "items": [
+          { "time": "14:00", "icon": "✈️", "activity": "Chegada ao aeroporto de Narita" },
+          { "time": "16:00", "icon": "🏨", "activity": "Check-in Hotel Shinjuku" },
+          { "time": "19:00", "icon": "🍜", "activity": "Jantar em Omoide Yokocho" }
+        ]
+      },
+      {
+        "title": "Tóquio - Bairro histórico",
+        "items": [
+          { "time": "09:00", "icon": "⛩️", "activity": "Templo Senso-ji, Asakusa" },
+          { "time": "12:00", "icon": "🍣", "activity": "Sushi no mercado de Tsukiji" },
+          { "time": "15:00", "icon": "🌸", "activity": "Passeio pelo parque Ueno" },
+          { "time": "20:00", "icon": "🌃", "activity": "Tokyo Skytree" }
+        ]
+      },
+      {
+        "title": "Tóquio - Cidade moderna",
+        "items": [
+          { "time": "10:00", "icon": "🛍️", "activity": "Compras em Shibuya" },
+          { "time": "14:00", "icon": "🎮", "activity": "Akihabara" },
+          { "time": "18:00", "icon": "🌆", "activity": "Pôr do sol no Shibuya Sky" }
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Linha do tempo interativa",
+    "heroTitle": "Planejamento de viagem",
+    "heroTitleHighlight": "que funciona de verdade",
+    "heroSubtitle": "O app calcula os tempos de deslocamento e avisa se o restaurante das 20h fica a 2 horas do museu das 18h. Zero surpresas no local.",
+    "socialProofText": "Mais de 5.000 itinerários criados",
+    "heroCta": "Criar meu roteiro otimizado",
+    "heroCtaSubtext": "Grátis, sem cartão de crédito",
+    "featuresTitle": "Organize como um profissional",
+    "features": [
+      { "icon": "✋", "title": "Arrastar e soltar", "description": "Reorganize arrastando" },
+      { "icon": "🚗", "title": "Tempos de deslocamento automáticos", "description": "Calculados entre as paradas" },
+      { "icon": "⚠️", "title": "Alertas", "description": "Conflitos de horário detectados" },
+      { "icon": "📤", "title": "Exportar PDF", "description": "Compartilhe seu roteiro" }
+    ],
+    "faqItems": [
+      { "question": "Como crio um itinerário de viagem dia a dia?", "answer": "Com o Weplanify, basta adicionar suas paradas (hospedagens, atividades, restaurantes) e elas aparecem automaticamente na linha do tempo. Depois você pode reorganizá-las arrastando e soltando." },
+      { "question": "O app calcula os tempos de deslocamento?", "answer": "Sim, o Weplanify calcula automaticamente os tempos de deslocamento entre cada parada do seu itinerário, seja de carro, transporte público ou a pé." },
+      { "question": "Posso exportar o itinerário em PDF?", "answer": "Com certeza! Exporte seu itinerário completo em PDF para tê-lo offline ou imprimi-lo." },
+      { "question": "Como reorganizo as atividades no itinerário?", "answer": "É só arrastar e soltar! Mova qualquer atividade para outro dia ou mude a ordem dentro do mesmo dia." },
+      { "question": "O itinerário é compartilhado com todo o grupo?", "answer": "Sim, todos os participantes da viagem veem o mesmo itinerário em tempo real." }
+    ],
+    "ctaTitle": "Diga adeus às planilhas de Excel bagunçadas",
+    "ctaSubtitle": "Arraste e solte, o app otimiza seus trajetos",
+    "ctaButton": "Criar meu roteiro otimizado",
+    "seoTitle": "Itinerário de Viagem - Planejamento Dia a Dia | Weplanify",
+    "seoDescription": "Organize sua viagem dia a dia com nossa linha do tempo interativa. Visualize, reorganize e otimize o roteiro das suas férias com facilidade.",
+    "stats": [
+      { "value": "Mais de 5.000", "label": "itinerários" },
+      { "value": "Auto", "label": "tempos de deslocamento" },
+      { "value": "PDF", "label": "exportação" }
+    ]
+  }
+}

@@ -8,10 +8,22 @@
         "title": "Ubrania",
         "progress": 80,
         "items": [
-          { "name": "Koszulki (x5)", "checked": true },
-          { "name": "Spodnie (x3)", "checked": true },
-          { "name": "Lekka kurtka", "checked": true },
-          { "name": "Strój kąpielowy", "checked": false }
+          {
+            "name": "Koszulki (x5)",
+            "checked": true
+          },
+          {
+            "name": "Spodnie (x3)",
+            "checked": true
+          },
+          {
+            "name": "Lekka kurtka",
+            "checked": true
+          },
+          {
+            "name": "Strój kąpielowy",
+            "checked": false
+          }
         ]
       },
       {
@@ -19,10 +31,22 @@
         "title": "Elektronika",
         "progress": 60,
         "items": [
-          { "name": "Ładowarka do telefonu", "checked": true },
-          { "name": "Adapter zasilania", "checked": true },
-          { "name": "Powerbank", "checked": false },
-          { "name": "Słuchawki", "checked": false }
+          {
+            "name": "Ładowarka do telefonu",
+            "checked": true
+          },
+          {
+            "name": "Adapter zasilania",
+            "checked": true
+          },
+          {
+            "name": "Powerbank",
+            "checked": false
+          },
+          {
+            "name": "Słuchawki",
+            "checked": false
+          }
         ]
       },
       {
@@ -30,9 +54,18 @@
         "title": "Kosmetyki",
         "progress": 100,
         "items": [
-          { "name": "Szczoteczka do zębów", "checked": true },
-          { "name": "Krem z filtrem", "checked": true },
-          { "name": "Szampon", "checked": true }
+          {
+            "name": "Szczoteczka do zębów",
+            "checked": true
+          },
+          {
+            "name": "Krem z filtrem",
+            "checked": true
+          },
+          {
+            "name": "Szampon",
+            "checked": true
+          }
         ]
       }
     ],
@@ -43,9 +76,100 @@
     "sharedSubtitle": "Unikaj duplikatów, przydzielając, kto co zabiera.",
     "bringing": "Zabiera:",
     "people": [
-      { "avatar": "👩‍🎨", "name": "Marie", "items": ["Krem z filtrem", "Gra karciana", "Przewodnik"] },
-      { "avatar": "🧔", "name": "Thomas", "items": ["Adapter zasilania", "Głośnik Bluetooth"] },
-      { "avatar": "👱‍♀️", "name": "Emma", "items": ["Apteczka", "Lornetka"] }
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "items": [
+          "Krem z filtrem",
+          "Gra karciana",
+          "Przewodnik"
+        ]
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "items": [
+          "Adapter zasilania",
+          "Głośnik Bluetooth"
+        ]
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "items": [
+          "Apteczka",
+          "Lornetka"
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Inteligentne pakowanie",
+    "heroTitle": "Inteligentna lista rzeczy do spakowania",
+    "heroTitleHighlight": "",
+    "heroSubtitle": "AI wie, że w kwietniu w Lizbonie jest 28°C i że planujesz surfing. Przypomni Ci o kremie z filtrem ORAZ o piance neoprenowej.",
+    "heroCta": "Stwórz moją listę podróżną",
+    "heroCtaSubtext": "Za darmo, bez karty kredytowej",
+    "socialProofText": "Już nigdy o niczym nie zapomnisz",
+    "featuresTitle": "Funkcje inteligentnego pakowania",
+    "features": [
+      {
+        "title": "AI",
+        "description": "Spersonalizowane sugestie"
+      },
+      {
+        "title": "Pogoda",
+        "description": "W zależności od celu podróży"
+      },
+      {
+        "title": "Udostępnianie",
+        "description": "Podział w grupie"
+      },
+      {
+        "title": "Przypomnienia",
+        "description": "Przed wyjazdem"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Jak Weplanify generuje moją listę rzeczy do spakowania?",
+        "answer": "Aplikacja analizuje Twój cel podróży, daty wyjazdu, przewidywaną pogodę i zaplanowane aktywności, aby wygenerować spersonalizowaną listę."
+      },
+      {
+        "question": "Czy możemy dzielić się przedmiotami między podróżnymi?",
+        "answer": "Tak! Funkcja „Wspólne przedmioty” pozwala przypisać przedmioty konkretnym osobom. Koniec z duplikatami w grupie."
+      },
+      {
+        "question": "Czy aplikacja wysyła przypomnienia przed wyjazdem?",
+        "answer": "Oczywiście. Otrzymujesz konfigurowalne powiadomienia: tydzień wcześniej, 3 dni wcześniej i wieczorem przed wyjazdem."
+      },
+      {
+        "question": "Czy mogę tworzyć własne kategorie?",
+        "answer": "Tak, możesz tworzyć własne, niestandardowe kategorie i wykorzystywać je w przyszłych podróżach."
+      },
+      {
+        "question": "Czy moja lista jest zapisywana na przyszłe podróże?",
+        "answer": "Tak! Twoje listy są zapisywane i można je powielać. Możesz też tworzyć szablony."
+      }
+    ],
+    "ctaTitle": "Gotowy, by się spakować?",
+    "ctaSubtitle": "Już nigdy nie wyjedziesz bez ładowarki",
+    "ctaButton": "Stwórz moją listę podróżną",
+    "seoTitle": "Lista rzeczy do spakowania - Inteligentne pakowanie | Weplanify",
+    "seoDescription": "Dzięki naszej inteligentnej liście rzeczy do spakowania o niczym nie zapomnisz. Sugestie na podstawie celu podróży, pogody i przedmiotów współdzielonych z grupą.",
+    "stats": [
+      {
+        "value": "14/20",
+        "label": "rzeczy gotowe"
+      },
+      {
+        "value": "70%",
+        "label": "spakowane"
+      },
+      {
+        "value": "AI",
+        "label": "sugestie"
+      }
     ]
   }
 }

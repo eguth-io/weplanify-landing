@@ -6,17 +6,102 @@
     "inviteMore": "Zaproś więcej osób",
     "liveLabel": "Na żywo",
     "fakeTripTitle": "Road trip po Portugalii",
-    "fakeDays": ["Dzień 1 — Lizbona", "Dzień 2 — Sintra", "Dzień 3 — Porto"],
+    "fakeDays": [
+      "Dzień 1 — Lizbona",
+      "Dzień 2 — Sintra",
+      "Dzień 3 — Porto"
+    ],
     "editingTag": "Marie edytuje…",
     "feedTitle": "Nic Cię nie ominie",
     "feedSubtitle": "Tablica aktywności pokazuje wszystko, co dzieje się podczas Twojej podróży. Kto co dodał, kiedy i gdzie.",
     "recentActivity": "Ostatnia aktywność",
     "activities": [
-      { "avatar": "👩‍🎨", "name": "Marie", "action": "dodała „Kolacja w Alfamie”", "time": "2 min temu" },
-      { "avatar": "🧔", "name": "Thomas", "action": "zaktualizował hotel w Porto", "time": "5 min temu" },
-      { "avatar": "👱‍♀️", "name": "Emma", "action": "zagłosowała na restaurację", "time": "12 min temu" },
-      { "avatar": "🧑‍💻", "name": "Lucas", "action": "dołączył do podróży", "time": "1 godz. temu" }
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "action": "dodała „Kolacja w Alfamie”",
+        "time": "2 min temu"
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "action": "zaktualizował hotel w Porto",
+        "time": "5 min temu"
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "action": "zagłosowała na restaurację",
+        "time": "12 min temu"
+      },
+      {
+        "avatar": "🧑‍💻",
+        "name": "Lucas",
+        "action": "dołączył do podróży",
+        "time": "1 godz. temu"
+      }
     ],
     "freeNoCard": "Darmowa rejestracja. Bez karty kredytowej."
+  },
+  "page": {
+    "heroBadge": "3 osoby edytują właśnie teraz",
+    "heroTitle": "Zaplanuj podróż z 10 znajomymi",
+    "heroTitleHighlight": "bez ani jednej wiadomości na WhatsAppie",
+    "heroSubtitle": "Edycja w czasie rzeczywistym, wbudowane ankiety, przejrzysta historia. Wszyscy dosłownie na tej samej stronie.",
+    "heroCta": "Zaproś pierwszego znajomego - Za darmo",
+    "heroCtaSubtext": "45 s, aby zaprosić swoją grupę",
+    "socialProofText": "Ponad 12 000 zaplanowanych podróży",
+    "featuresTitle": "Współpraca w czasie rzeczywistym",
+    "features": [
+      {
+        "title": "Czas rzeczywisty",
+        "description": "Zmiany pojawiają się natychmiast u wszystkich uczestników podróży."
+      },
+      {
+        "title": "Komentarze",
+        "description": "Omawiaj każdy element bezpośrednio w aplikacji, bez potrzeby grupy na WhatsAppie."
+      },
+      {
+        "title": "Uprawnienia",
+        "description": "Ustal, kto może edytować, a kto może tylko przeglądać podróż."
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Jak zaprosić znajomych do wspólnego planowania podróży?",
+        "answer": "Udostępnij link z zaproszeniem lub wyślij zaproszenie e-mailem bezpośrednio z aplikacji. Twoi znajomi mogą dołączyć do podróży jednym kliknięciem, nawet bez konta Weplanify."
+      },
+      {
+        "question": "Czy zmiany są naprawdę synchronizowane w czasie rzeczywistym?",
+        "answer": "Tak, wszystkie zmiany są synchronizowane natychmiast dzięki technologii WebSocket. Widzisz na żywo, jak pojawiają się edycje współtowarzyszy podróży."
+      },
+      {
+        "question": "Czy mogę ograniczyć uprawnienia do edycji?",
+        "answer": "Oczywiście. Twórca podróży może ustawić role: edytor (pełny dostęp), współtwórca (może sugerować zmiany) lub obserwator (tylko do odczytu)."
+      },
+      {
+        "question": "Czy istnieje limit liczby uczestników?",
+        "answer": "Brak ograniczeń technicznych. Mamy podróże z ponad 50 uczestnikami, które działają bez zarzutu."
+      },
+      {
+        "question": "Jak radzicie sobie z konfliktami edycji?",
+        "answer": "Weplanify obsługuje konflikty automatycznie. Jeśli dwie osoby edytują ten sam element, system inteligentnie scala zmiany."
+      }
+    ],
+    "ctaTitle": "Koniec z niekończącymi się grupami na WhatsAppie",
+    "ctaSubtitle": "Wszyscy na tej samej stronie, w czasie rzeczywistym",
+    "ctaButton": "Zaproś znajomych teraz",
+    "seoTitle": "Współpraca w Czasie Rzeczywistym - Planowanie Podróży Grupowych | Weplanify",
+    "seoDescription": "Zaplanuj grupową podróż z przyjaciółmi i rodziną. Edycja w czasie rzeczywistym, zintegrowane dyskusje i idealna synchronizacja dla bezproblemowej wspólnej organizacji.",
+    "stats": [
+      {
+        "value": "12 000+",
+        "label": "zaplanowanych podróży"
+      },
+      {
+        "value": "45 s",
+        "label": "aby zaprosić swoją grupę"
+      }
+    ]
   }
 }

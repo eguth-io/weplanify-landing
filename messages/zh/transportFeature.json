@@ -18,5 +18,38 @@
       { "time": "11:00", "event": "酒店接送", "icon": "🚕", "color": "#EEF899" },
       { "time": "14:00", "event": "入住阿尔法玛酒店", "icon": "🏨", "color": "#8B5CF6" }
     ]
+  },
+  "page": {
+    "heroBadge": "交通管理",
+    "heroTitle": "机票、火车、汽车：",
+    "heroTitleHighlight": "不再弄丢车票",
+    "heroSubtitle": "转发你的确认邮件，我们会自动提取一切。航班延误了？你会比航空公司更早知道。",
+    "heroCta": "集中管理我的行程",
+    "heroCtaSubtext": "免费，无需信用卡",
+    "socialProofText": "所有行程，集于一处",
+    "featuresTitle": "交通功能",
+    "features": [
+      { "title": "邮件导入", "description": "自动扫描" },
+      { "title": "提醒", "description": "延误和变更" },
+      { "title": "离线", "description": "无网络访问" },
+      { "title": "共享", "description": "群组信息" }
+    ],
+    "faqItems": [
+      { "question": "如何导入我的交通预订？", "answer": "三种方式：转发你的确认邮件、连接 Gmail/Outlook 实现自动导入，或扫描车票上的二维码。" },
+      { "question": "支持哪些交通方式？", "answer": "全部支持！航班、火车、巴士、渡轮、租车，甚至拼车。" },
+      { "question": "我会收到延误提醒吗？", "answer": "会的，Weplanify 实时监控你的航班和火车。一旦出现延误，你会立即收到通知。" },
+      { "question": "我的旅行同伴能看到交通详情吗？", "answer": "可以！所有旅行参与者都能看到添加的交通信息。" },
+      { "question": "我可以离线查看我的车票吗？", "answer": "当然可以。下载你的车票，即使没有网络连接也能随时查看。" }
+    ],
+    "ctaTitle": "再也不会弄丢车票",
+    "ctaSubtitle": "2 秒内访问所有行程，即使离线也行",
+    "ctaButton": "找回我的所有车票",
+    "seoTitle": "交通管理 - 机票、火车与行程 | Weplanify",
+    "seoDescription": "在一个地方管理你所有的旅行行程。自动导入航班和火车、实时提醒，并可离线访问你的车票。",
+    "stats": [
+      { "value": "自动", "label": "导入" },
+      { "value": "实时", "label": "提醒" },
+      { "value": "离线", "label": "访问" }
+    ]
   }
 }

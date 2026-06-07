@@ -8,10 +8,22 @@
         "title": "衣物",
         "progress": 80,
         "items": [
-          { "name": "T 恤（x5）", "checked": true },
-          { "name": "裤子（x3）", "checked": true },
-          { "name": "薄外套", "checked": true },
-          { "name": "泳衣", "checked": false }
+          {
+            "name": "T 恤（x5）",
+            "checked": true
+          },
+          {
+            "name": "裤子（x3）",
+            "checked": true
+          },
+          {
+            "name": "薄外套",
+            "checked": true
+          },
+          {
+            "name": "泳衣",
+            "checked": false
+          }
         ]
       },
       {
@@ -19,10 +31,22 @@
         "title": "电子设备",
         "progress": 60,
         "items": [
-          { "name": "手机充电器", "checked": true },
-          { "name": "电源转换插头", "checked": true },
-          { "name": "充电宝", "checked": false },
-          { "name": "耳机", "checked": false }
+          {
+            "name": "手机充电器",
+            "checked": true
+          },
+          {
+            "name": "电源转换插头",
+            "checked": true
+          },
+          {
+            "name": "充电宝",
+            "checked": false
+          },
+          {
+            "name": "耳机",
+            "checked": false
+          }
         ]
       },
       {
@@ -30,9 +54,18 @@
         "title": "洗漱用品",
         "progress": 100,
         "items": [
-          { "name": "牙刷", "checked": true },
-          { "name": "防晒霜", "checked": true },
-          { "name": "洗发水", "checked": true }
+          {
+            "name": "牙刷",
+            "checked": true
+          },
+          {
+            "name": "防晒霜",
+            "checked": true
+          },
+          {
+            "name": "洗发水",
+            "checked": true
+          }
         ]
       }
     ],
@@ -43,9 +76,100 @@
     "sharedSubtitle": "通过分配谁带什么，避免重复携带。",
     "bringing": "负责带：",
     "people": [
-      { "avatar": "👩‍🎨", "name": "Marie", "items": ["防晒霜", "纸牌游戏", "旅行指南"] },
-      { "avatar": "🧔", "name": "Thomas", "items": ["电源转换插头", "蓝牙音箱"] },
-      { "avatar": "👱‍♀️", "name": "Emma", "items": ["急救包", "望远镜"] }
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "items": [
+          "防晒霜",
+          "纸牌游戏",
+          "旅行指南"
+        ]
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "items": [
+          "电源转换插头",
+          "蓝牙音箱"
+        ]
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "items": [
+          "急救包",
+          "望远镜"
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "智能行李",
+    "heroTitle": "智能行李清单",
+    "heroTitleHighlight": "",
+    "heroSubtitle": "AI 知道四月里斯本是 28°C，也知道你打算去冲浪。它会提醒你带防晒霜，还有潜水衣。",
+    "heroCta": "创建我的旅行清单",
+    "heroCtaSubtext": "免费，无需信用卡",
+    "socialProofText": "再也不会忘带东西",
+    "featuresTitle": "智能行李功能",
+    "features": [
+      {
+        "title": "AI",
+        "description": "量身定制的建议"
+      },
+      {
+        "title": "天气",
+        "description": "根据目的地"
+      },
+      {
+        "title": "共享",
+        "description": "群组分配"
+      },
+      {
+        "title": "提醒",
+        "description": "出发前"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Weplanify 如何生成我的行李清单？",
+        "answer": "应用会分析你的目的地、出行日期、预计天气和计划的活动，生成个性化清单。"
+      },
+      {
+        "question": "我们可以在旅伴之间共享物品吗？",
+        "answer": "可以！“共享物品”功能让你把物品分配给特定的人。群组中不再有重复携带。"
+      },
+      {
+        "question": "应用会在出发前发送提醒吗？",
+        "answer": "当然。你会收到可自定义的通知：出发前 1 周、3 天以及前一晚。"
+      },
+      {
+        "question": "我可以创建自己的分类吗？",
+        "answer": "可以，你可以创建自己的自定义分类，并在以后的旅行中重复使用。"
+      },
+      {
+        "question": "我的清单会为以后的旅行保存吗？",
+        "answer": "会！你的清单会被保存并可复制。你还可以创建模板。"
+      }
+    ],
+    "ctaTitle": "准备好打包行李了吗？",
+    "ctaSubtitle": "再也不会忘带充电器",
+    "ctaButton": "创建我的旅行清单",
+    "seoTitle": "行李清单 - 智能打包 | Weplanify",
+    "seoDescription": "使用我们的智能行李清单，不再遗漏任何物品。根据你的目的地、天气以及与群组共享的物品提供建议。",
+    "stats": [
+      {
+        "value": "14/20",
+        "label": "已准备物品"
+      },
+      {
+        "value": "70%",
+        "label": "已打包"
+      },
+      {
+        "value": "AI",
+        "label": "建议"
+      }
     ]
   }
 }

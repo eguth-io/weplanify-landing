@@ -1,13 +1,11 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { client } from "@/sanity/lib/client";
-import { featurePageQuery } from "@/sanity/lib/query";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import RelatedFeatures from "@/components/RelatedFeatures";
 
-// Feature client components
+// Feature client components (each is self-sufficient — reads its copy from messages)
 import PollsFeature from "./features/PollsFeature";
 import BudgetFeature from "./features/BudgetFeature";
 import PlanningFeature from "./features/PlanningFeature";
@@ -17,30 +15,6 @@ import ItineraryFeature from "./features/ItineraryFeature";
 import PackingFeature from "./features/PackingFeature";
 import TransportFeature from "./features/TransportFeature";
 import MemoriesFeature from "./features/MemoriesFeature";
-
-// Types
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -70,94 +44,40 @@ export function generateStaticParams() {
   return params;
 }
 
-// SEO overrides — optimised titles & descriptions (take precedence over Sanity)
-const seoOverrides: Record<string, Record<string, { title: string; description: string }>> = {
-  planning: {
-    en: {
-      title: "Group Trip Planner — Build Itineraries with AI",
-      description:
-        "Create your group trip itinerary in minutes. Drag-and-drop planning, AI suggestions, and real-time sync with your travel crew.",
-    },
-    fr: {
-      title: "Planifier un Voyage de Groupe — Itinéraire IA",
-      description:
-        "Construisez votre itinéraire de groupe pas à pas ou laissez l'IA s'en charger. Collaboration en temps réel avec vos amis, prêt en quelques secondes.",
-    },
+// Memories is the only feature whose SEO copy isn't in a `<slug>Feature` page
+// namespace (its component is fully hardcoded). en/fr authored here; new locales
+// fall back to en.
+const MEMORIES_SEO: Record<string, { title: string; description: string }> = {
+  en: {
+    title: "Collaborative Travel Photo Album & AI Travel Book",
+    description:
+      "Share group travel photos and create a personalized Travel Book with AI. Collaborative album, interactive map and organized memories.",
   },
-  polls: {
-    en: {
-      title: "Group Trip Polls — Decide Together Instantly",
-      description:
-        "End the group chat chaos. Create polls to decide destinations, activities & restaurants together. Real-time voting, instant results.",
-    },
-    fr: {
-      title: "Sondages Voyage de Groupe — Décidez à Plusieurs",
-      description:
-        "Fini les débats sans fin. Créez un sondage, votez, c'est décidé. Destinations, dates, activités — tout le groupe donne son avis.",
-    },
-  },
-  collaboration: {
-    en: {
-      title: "Plan a Group Trip Together — Like Google Docs",
-      description:
-        "Everyone edits the same trip in real time. No more screenshots, no more \"did you see my message?\" — just smooth group trip planning.",
-    },
-    fr: {
-      title: "Planifier un Voyage à Plusieurs — Comme Google Docs",
-      description:
-        "Tout le groupe modifie le même voyage en temps réel. Fini les screenshots et les \"t'as vu mon message ?\". Planifiez enfin ensemble.",
-    },
-  },
-  memories: {
-    en: {
-      title: "Collaborative Travel Photo Album & AI Travel Book",
-      description:
-        "Share group travel photos and create a personalized Travel Book with AI. Collaborative album, interactive map and organized memories.",
-    },
-    fr: {
-      title: "Album Photo de Voyage Collaboratif & Travel Book IA",
-      description:
-        "Partagez vos photos de voyage en groupe et créez un Travel Book personnalisé grâce à l'IA. Album collaboratif, carte interactive et souvenirs organisés.",
-    },
+  fr: {
+    title: "Album Photo de Voyage Collaboratif & Travel Book IA",
+    description:
+      "Partagez vos photos de voyage en groupe et créez un Travel Book personnalisé grâce à l'IA. Album collaboratif, carte interactive et souvenirs organisés.",
   },
 };
 
-// Generate metadata with hreflang for SEO
+// Generate metadata with hreflang for SEO. Title/description come from the
+// feature's message namespace (`<slug>Feature` → `page.seoTitle/seoDescription`).
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
 
   const metadata = await generateMetadataFromSanity(locale, `/features/${slug}`);
-  // SEO overrides only exist in en/fr; new locales fall back to the en copy.
-  const override = seoOverrides[slug]?.[locale] ?? seoOverrides[slug]?.en;
 
-  // Memories page is fully hardcoded — skip Sanity
+  let title: string;
+  let description: string;
   if (slug === "memories") {
-    const title = override!.title;
-    const description = override!.description;
-    return {
-      ...metadata,
-      title,
-      description,
-      openGraph: { ...metadata.openGraph, title, description },
-      twitter: { ...metadata.twitter, title, description },
-    };
+    const seo = MEMORIES_SEO[locale] ?? MEMORIES_SEO.en;
+    title = seo.title;
+    description = seo.description;
+  } else {
+    const t = await getTranslations({ locale, namespace: `${slug}Feature` });
+    title = t("page.seoTitle");
+    description = t("page.seoDescription");
   }
-
-  // Fetch SEO data from Sanity (fall back to en content for locales not authored in Sanity)
-  let data = await client.fetch<FeaturePageData | null>(featurePageQuery, {
-    locale,
-    slug,
-  });
-  if (!data && locale !== "en") {
-    data = await client.fetch<FeaturePageData | null>(featurePageQuery, { locale: "en", slug });
-  }
-
-  if (!data) {
-    return { title: "Feature Not Found" };
-  }
-
-  const title = override?.title ?? data.seoTitle;
-  const description = override?.description ?? data.seoDescription;
 
   return {
     ...metadata,
@@ -169,60 +89,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // Map slug to feature component
-const featureComponents: Record<string, React.ComponentType<{ data: FeaturePageData }>> = {
-  "polls": PollsFeature,
-  "budget": BudgetFeature,
-  "planning": PlanningFeature,
-  "collaboration": CollaborationFeature,
-  "explore": ExploreFeature,
-  "itinerary": ItineraryFeature,
-  "packing": PackingFeature,
-  "transport": TransportFeature,
-  "memories": MemoriesFeature,
+const featureComponents: Record<string, React.ComponentType> = {
+  polls: PollsFeature,
+  budget: BudgetFeature,
+  planning: PlanningFeature,
+  collaboration: CollaborationFeature,
+  explore: ExploreFeature,
+  itinerary: ItineraryFeature,
+  packing: PackingFeature,
+  transport: TransportFeature,
+  memories: MemoriesFeature,
 };
 
 export default async function FeaturePage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  // Validate slug
   if (!validSlugs.includes(slug)) {
     notFound();
   }
 
-  // Memories page is fully hardcoded — skip Sanity
-  if (slug === "memories") {
-    return (
-      <>
-        <MemoriesFeature data={{} as FeaturePageData} />
-        <RelatedFeatures currentSlug={slug} locale={locale} />
-      </>
-    );
-  }
-
-  // Fetch feature page data from Sanity (fall back to en for locales not authored in Sanity)
-  let data = await client.fetch<FeaturePageData | null>(featurePageQuery, {
-    locale,
-    slug,
-  });
-  if (!data && locale !== "en") {
-    data = await client.fetch<FeaturePageData | null>(featurePageQuery, { locale: "en", slug });
-  }
-
-  if (!data) {
-    notFound();
-  }
-
-  // Get the appropriate feature component
   const FeatureComponent = featureComponents[slug];
-
   if (!FeatureComponent) {
     notFound();
   }
 
   return (
     <>
-      <FeatureComponent data={data} />
+      <FeatureComponent />
       <RelatedFeatures currentSlug={slug} locale={locale} />
     </>
   );

@@ -19,21 +19,134 @@
     "freeNoCard": "Darmowa rejestracja. Bez karty kredytowej.",
     "tryItHint": "👆 Kliknij przycisk, aby dodać wydatek i zobaczyć, jak salda aktualizują się w czasie rzeczywistym.",
     "participants": [
-      { "name": "Marie", "avatar": "👩‍🎨" },
-      { "name": "Thomas", "avatar": "🧔" },
-      { "name": "Emma", "avatar": "👱‍♀️" },
-      { "name": "Lucas", "avatar": "🧑‍💻" }
+      {
+        "name": "Marie",
+        "avatar": "👩‍🎨"
+      },
+      {
+        "name": "Thomas",
+        "avatar": "🧔"
+      },
+      {
+        "name": "Emma",
+        "avatar": "👱‍♀️"
+      },
+      {
+        "name": "Lucas",
+        "avatar": "🧑‍💻"
+      }
     ],
     "expenses": [
-      { "name": "Kolacja w restauracji", "amount": 156, "paidBy": "Marie" },
-      { "name": "Wynajem samochodu", "amount": 320, "paidBy": "Thomas" },
-      { "name": "Bilety do muzeum", "amount": 84, "paidBy": "Emma" }
+      {
+        "name": "Kolacja w restauracji",
+        "amount": 156,
+        "paidBy": "Marie"
+      },
+      {
+        "name": "Wynajem samochodu",
+        "amount": 320,
+        "paidBy": "Thomas"
+      },
+      {
+        "name": "Bilety do muzeum",
+        "amount": 84,
+        "paidBy": "Emma"
+      }
     ],
     "presets": [
-      { "name": "Kolacja", "amount": 80, "emoji": "🍝" },
-      { "name": "Taksówka", "amount": 24, "emoji": "🚕" },
-      { "name": "Zwiedzanie z przewodnikiem", "amount": 60, "emoji": "🎨" },
-      { "name": "Brunch", "amount": 48, "emoji": "🥐" }
+      {
+        "name": "Kolacja",
+        "amount": 80,
+        "emoji": "🍝"
+      },
+      {
+        "name": "Taksówka",
+        "amount": 24,
+        "emoji": "🚕"
+      },
+      {
+        "name": "Zwiedzanie z przewodnikiem",
+        "amount": 60,
+        "emoji": "🎨"
+      },
+      {
+        "name": "Brunch",
+        "amount": 48,
+        "emoji": "🥐"
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Zarządzanie wydatkami",
+    "heroTitle": "Podział kosztów:",
+    "heroTitleHighlight": "kto komu ile jest winien?",
+    "heroSubtitle": "Marie zapłaciła za restaurację, Thomas za wynajem. Kto komu co jest winien na koniec podróży? Pozwól aplikacji zająć się obliczeniami, a Ty baw się dobrze.",
+    "heroCta": "Zarządzaj moimi wydatkami",
+    "heroCtaSubtext": "Za darmo, bez karty kredytowej",
+    "socialProofText": "2450 € rozliczone w tym miesiącu",
+    "featuresTitle": "Inteligentne zarządzanie wydatkami",
+    "ctaTitle": "Koniec z kłótniami o pieniądze",
+    "ctaSubtitle": "Pozwól aplikacji zająć się rozliczeniami za Ciebie",
+    "ctaButton": "Oblicz, kto jest mi winien pieniądze",
+    "seoTitle": "Budżet podróży - Podział kosztów w grupie | Weplanify",
+    "seoDescription": "Łatwo zarządzaj wydatkami na wyjazd grupowy. Śledzenie płatności, automatyczny sprawiedliwy podział i uproszczone zwroty na wakacje ze znajomymi.",
+    "stats": [
+      {
+        "value": "2450 €",
+        "label": "Wydatki łącznie"
+      },
+      {
+        "value": "6",
+        "label": "Uczestnicy"
+      },
+      {
+        "value": "23",
+        "label": "Transakcje"
+      }
+    ],
+    "features": [
+      {
+        "icon": "📸",
+        "title": "Skanuj paragon",
+        "description": "Zdjęcie = dodany wydatek"
+      },
+      {
+        "icon": "💱",
+        "title": "Wiele walut",
+        "description": "Euro, dolary, jeny..."
+      },
+      {
+        "icon": "🔄",
+        "title": "Sprytne rozliczenie",
+        "description": "Mniej transakcji"
+      },
+      {
+        "icon": "📊",
+        "title": "Statystyki",
+        "description": "Wizualizuj swoje wydatki"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Jak działa podział kosztów w Weplanify?",
+        "answer": "Dodaj każdy wydatek, wskazując, kto zapłacił i kto brał udział. Aplikacja automatycznie oblicza saldo każdej osoby i pokazuje, kto komu ile jest winien, aby rozliczyć się na koniec podróży."
+      },
+      {
+        "question": "Czy można zarządzać wieloma walutami?",
+        "answer": "Tak, Weplanify obsługuje wszystkie waluty. Dodawaj wydatki w euro, dolarach, jenach lub dowolnej innej walucie. Aplikacja automatycznie przelicza po aktualnym kursie."
+      },
+      {
+        "question": "Jak mogę szybko dodać wydatek?",
+        "answer": "Trzy opcje: wpisać kwotę ręcznie, zrobić zdjęcie paragonu (automatyczne rozpoznawanie) lub zaimportować z banku."
+      },
+      {
+        "question": "Czy zwroty są optymalizowane?",
+        "answer": "Tak! Algorytm minimalizuje liczbę transakcji potrzebnych do rozliczenia kont."
+      },
+      {
+        "question": "Czy można wykluczyć niektóre osoby z wydatku?",
+        "answer": "Oczywiście. Przy każdym wydatku wybierz tylko zaangażowanych uczestników."
+      }
     ]
   }
 }

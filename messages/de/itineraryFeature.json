@@ -1,0 +1,67 @@
+{
+  "copy": {
+    "calendarMonth": "April 2024",
+    "weekdays": ["M", "D", "M", "D", "F", "S", "S"],
+    "dragHint": "Zum Umsortieren ziehen",
+    "days": [
+      {
+        "title": "Ankunft in Tokio",
+        "items": [
+          { "time": "14:00", "icon": "✈️", "activity": "Ankunft am Flughafen Narita" },
+          { "time": "16:00", "icon": "🏨", "activity": "Check-in Hotel Shinjuku" },
+          { "time": "19:00", "icon": "🍜", "activity": "Abendessen in Omoide Yokocho" }
+        ]
+      },
+      {
+        "title": "Tokio - Historisches Viertel",
+        "items": [
+          { "time": "09:00", "icon": "⛩️", "activity": "Senso-ji-Tempel, Asakusa" },
+          { "time": "12:00", "icon": "🍣", "activity": "Sushi auf dem Tsukiji-Markt" },
+          { "time": "15:00", "icon": "🌸", "activity": "Spaziergang durch den Ueno-Park" },
+          { "time": "20:00", "icon": "🌃", "activity": "Tokyo Skytree" }
+        ]
+      },
+      {
+        "title": "Tokio - Moderne Stadt",
+        "items": [
+          { "time": "10:00", "icon": "🛍️", "activity": "Shopping in Shibuya" },
+          { "time": "14:00", "icon": "🎮", "activity": "Akihabara" },
+          { "time": "18:00", "icon": "🌆", "activity": "Sonnenuntergang am Shibuya Sky" }
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Interaktive Timeline",
+    "heroTitle": "Reiseplanung",
+    "heroTitleHighlight": "die wirklich funktioniert",
+    "heroSubtitle": "Die App berechnet die Fahrtzeiten und warnt dich, wenn das Restaurant um 20 Uhr 2 Stunden vom Museum um 18 Uhr entfernt ist. Null Überraschungen vor Ort.",
+    "socialProofText": "Über 5.000 erstellte Reiserouten",
+    "heroCta": "Meinen optimierten Plan erstellen",
+    "heroCtaSubtext": "Kostenlos, keine Kreditkarte erforderlich",
+    "featuresTitle": "Organisiere wie ein Profi",
+    "features": [
+      { "icon": "✋", "title": "Drag & Drop", "description": "Per Ziehen umsortieren" },
+      { "icon": "🚗", "title": "Automatische Fahrtzeiten", "description": "Zwischen den Stationen berechnet" },
+      { "icon": "⚠️", "title": "Warnungen", "description": "Terminkonflikte erkannt" },
+      { "icon": "📤", "title": "PDF-Export", "description": "Teile deinen Plan" }
+    ],
+    "faqItems": [
+      { "question": "Wie erstelle ich eine Tag-für-Tag-Reiseroute?", "answer": "Mit Weplanify fügst du einfach deine Stationen (Unterkünfte, Aktivitäten, Restaurants) hinzu und sie erscheinen automatisch auf der Timeline. Anschließend kannst du sie per Drag & Drop umsortieren." },
+      { "question": "Berechnet die App die Fahrtzeiten?", "answer": "Ja, Weplanify berechnet automatisch die Fahrtzeiten zwischen jeder Station deiner Route – ob mit dem Auto, den öffentlichen Verkehrsmitteln oder zu Fuß." },
+      { "question": "Kann ich die Reiseroute als PDF exportieren?", "answer": "Auf jeden Fall! Exportiere deine komplette Reiseroute als PDF, um sie offline zu haben oder auszudrucken." },
+      { "question": "Wie sortiere ich die Aktivitäten in der Reiseroute um?", "answer": "Einfach per Drag & Drop! Verschiebe eine beliebige Aktivität auf einen anderen Tag oder ändere die Reihenfolge innerhalb desselben Tages." },
+      { "question": "Wird die Reiseroute mit der ganzen Gruppe geteilt?", "answer": "Ja, alle Reiseteilnehmer sehen dieselbe Reiseroute in Echtzeit." }
+    ],
+    "ctaTitle": "Sag chaotischen Excel-Tabellen Lebewohl",
+    "ctaSubtitle": "Ziehen und ablegen – die App optimiert deine Routen",
+    "ctaButton": "Meinen optimierten Plan erstellen",
+    "seoTitle": "Reiseroute - Tag-für-Tag-Planung | Weplanify",
+    "seoDescription": "Organisiere deine Reise Tag für Tag mit unserer interaktiven Timeline. Visualisiere, sortiere um und optimiere deinen Urlaubsplan ganz einfach.",
+    "stats": [
+      { "value": "Über 5.000", "label": "Reiserouten" },
+      { "value": "Auto", "label": "Fahrtzeiten" },
+      { "value": "PDF", "label": "Export" }
+    ]
+  }
+}

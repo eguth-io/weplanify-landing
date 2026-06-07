@@ -8,10 +8,22 @@
         "title": "Clothing",
         "progress": 80,
         "items": [
-          { "name": "T-shirts (x5)", "checked": true },
-          { "name": "Pants (x3)", "checked": true },
-          { "name": "Light jacket", "checked": true },
-          { "name": "Swimsuit", "checked": false }
+          {
+            "name": "T-shirts (x5)",
+            "checked": true
+          },
+          {
+            "name": "Pants (x3)",
+            "checked": true
+          },
+          {
+            "name": "Light jacket",
+            "checked": true
+          },
+          {
+            "name": "Swimsuit",
+            "checked": false
+          }
         ]
       },
       {
@@ -19,10 +31,22 @@
         "title": "Electronics",
         "progress": 60,
         "items": [
-          { "name": "Phone charger", "checked": true },
-          { "name": "Power adapter", "checked": true },
-          { "name": "Power bank", "checked": false },
-          { "name": "Earbuds", "checked": false }
+          {
+            "name": "Phone charger",
+            "checked": true
+          },
+          {
+            "name": "Power adapter",
+            "checked": true
+          },
+          {
+            "name": "Power bank",
+            "checked": false
+          },
+          {
+            "name": "Earbuds",
+            "checked": false
+          }
         ]
       },
       {
@@ -30,9 +54,18 @@
         "title": "Toiletries",
         "progress": 100,
         "items": [
-          { "name": "Toothbrush", "checked": true },
-          { "name": "Sunscreen", "checked": true },
-          { "name": "Shampoo", "checked": true }
+          {
+            "name": "Toothbrush",
+            "checked": true
+          },
+          {
+            "name": "Sunscreen",
+            "checked": true
+          },
+          {
+            "name": "Shampoo",
+            "checked": true
+          }
         ]
       }
     ],
@@ -43,9 +76,100 @@
     "sharedSubtitle": "Avoid duplicates by assigning who brings what.",
     "bringing": "Bringing:",
     "people": [
-      { "avatar": "👩‍🎨", "name": "Marie", "items": ["Sunscreen", "Card game", "Travel guide"] },
-      { "avatar": "🧔", "name": "Thomas", "items": ["Power adapter", "Bluetooth speaker"] },
-      { "avatar": "👱‍♀️", "name": "Emma", "items": ["First aid kit", "Binoculars"] }
+      {
+        "avatar": "👩‍🎨",
+        "name": "Marie",
+        "items": [
+          "Sunscreen",
+          "Card game",
+          "Travel guide"
+        ]
+      },
+      {
+        "avatar": "🧔",
+        "name": "Thomas",
+        "items": [
+          "Power adapter",
+          "Bluetooth speaker"
+        ]
+      },
+      {
+        "avatar": "👱‍♀️",
+        "name": "Emma",
+        "items": [
+          "First aid kit",
+          "Binoculars"
+        ]
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Smart Packing",
+    "heroTitle": "Smart packing list",
+    "heroTitleHighlight": "",
+    "heroSubtitle": "The AI knows it's 28°C in Lisbon in April and that you've planned surfing. It reminds you about sunscreen AND the wetsuit.",
+    "heroCta": "Create my travel checklist",
+    "heroCtaSubtext": "Free, no credit card required",
+    "socialProofText": "Never forget anything again",
+    "featuresTitle": "Smart packing features",
+    "features": [
+      {
+        "title": "AI",
+        "description": "Tailored suggestions"
+      },
+      {
+        "title": "Weather",
+        "description": "Based on destination"
+      },
+      {
+        "title": "Sharing",
+        "description": "Group distribution"
+      },
+      {
+        "title": "Reminders",
+        "description": "Before departure"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "How does Weplanify generate my packing list?",
+        "answer": "The app analyzes your destination, travel dates, expected weather, and planned activities to generate a personalized list."
+      },
+      {
+        "question": "Can we share items between travelers?",
+        "answer": "Yes! The 'Shared Items' feature lets you assign items to specific people. No more duplicates in the group."
+      },
+      {
+        "question": "Does the app send reminders before departure?",
+        "answer": "Absolutely. You receive configurable notifications: 1 week before, 3 days before, and the night before departure."
+      },
+      {
+        "question": "Can I create my own categories?",
+        "answer": "Yes, you can create your own custom categories and reuse them for future trips."
+      },
+      {
+        "question": "Is my list saved for future trips?",
+        "answer": "Yes! Your lists are saved and can be duplicated. You can also create templates."
+      }
+    ],
+    "ctaTitle": "Ready to pack your bags?",
+    "ctaSubtitle": "Never leave without your charger again",
+    "ctaButton": "Create my travel checklist",
+    "seoTitle": "Packing List - Smart Packing | Weplanify",
+    "seoDescription": "Never forget anything with our smart packing list. Suggestions based on your destination, weather, and shared items with your group.",
+    "stats": [
+      {
+        "value": "14/20",
+        "label": "items ready"
+      },
+      {
+        "value": "70%",
+        "label": "packed"
+      },
+      {
+        "value": "AI",
+        "label": "suggestions"
+      }
     ]
   }
 }

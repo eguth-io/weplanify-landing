@@ -9,29 +9,6 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
-
 type MemoriesContent = {
   badge: string;
   heroTitle1: string;
@@ -275,7 +252,7 @@ function TravelBook({ t }: { t: MemoriesContent }) {
   );
 }
 
-export default function MemoriesFeature({ data }: { data: FeaturePageData }) {
+export default function MemoriesFeature() {
   const [activePhoto, setActivePhoto] = useState(2);
   const pathname = usePathname();
   const locale = pathname?.split('/')[1] === 'en' ? 'en' : 'fr';
@@ -304,8 +281,8 @@ export default function MemoriesFeature({ data }: { data: FeaturePageData }) {
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle || t.seoTitleFallback}
-        featureDescription={data.seoDescription || t.heroDescription}
+        featureName={t.seoTitleFallback}
+        featureDescription={t.heroDescription}
         locale={locale}
         slug="memories"
         faqItems={t.faq}

@@ -24,28 +24,11 @@ type Copy = {
   freeNoCard: string;
 };
 
-interface FeaturePageData {
-  slug: string;
-  icon: string;
-  accentColor: string;
-  gradientFrom: string;
-  heroBadge: string;
-  heroTitle: string;
-  heroTitleHighlight: string;
-  heroSubtitle: string;
-  socialProofText: string;
-  heroCta: string;
-  heroCtaSubtext: string;
-  stats: { value: string; label: string }[];
-  featuresTitle: string;
-  features: { icon: string; title: string; description: string }[];
-  faqItems: { question: string; answer: string }[];
-  ctaTitle: string;
-  ctaSubtitle: string;
-  ctaButton: string;
-  seoTitle: string;
-  seoDescription: string;
-}
+// Non-translatable presentation values (formerly Sanity FeaturePageData)
+const SLUG = "collaboration";
+const ACCENT_COLOR = "#F6391A";
+// Per-feature emoji icons, paired with translated titles/descriptions from messages
+const FEATURE_ICONS = ["⚡", "💬", "🔐"];
 
 // Avatar component with cursor
 function CollaboratorAvatar({
@@ -134,18 +117,22 @@ function ActivityItem({
   );
 }
 
-export default function CollaborationFeature({ data }: { data: FeaturePageData }) {
+export default function CollaborationFeature() {
   const locale = useLocale();
-  const t = useTranslations("collaborationFeature").raw("copy") as Copy;
+  const t = useTranslations("collaborationFeature");
+  const copy = t.raw("copy") as Copy;
+  const stats = t.raw("page.stats") as { value: string; label: string }[];
+  const features = t.raw("page.features") as { title: string; description: string }[];
+  const faqItems = t.raw("page.faqItems") as { question: string; answer: string }[];
 
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle}
-        featureDescription={data.seoDescription}
+        featureName={t("page.seoTitle")}
+        featureDescription={t("page.seoDescription")}
         locale={locale}
-        slug={data.slug}
-        faqItems={data.faqItems}
+        slug={SLUG}
+        faqItems={faqItems}
       />
 
       <div className="min-h-screen bg-[#FFFBF5]">
@@ -161,7 +148,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                   className="flex items-center gap-2 mb-4"
                 >
                   <LiveDot />
-                  <span className="text-sm font-karla text-green-600">{data.heroBadge}</span>
+                  <span className="text-sm font-karla text-green-600">{t("page.heroBadge")}</span>
                 </motion.div>
 
                 <motion.h1
@@ -170,9 +157,9 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                   transition={{ delay: 0.1 }}
                   className="text-4xl lg:text-6xl font-londrina-solid text-[#001E13] mb-6"
                 >
-                  {t.heroTitle}
+                  {copy.heroTitle}
                   <br />
-                  <span className="text-[#F6391A]">{t.heroTitleHighlight}</span>
+                  <span className="text-[#F6391A]">{copy.heroTitleHighlight}</span>
                 </motion.h1>
 
                 <motion.p
@@ -181,7 +168,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                   transition={{ delay: 0.2 }}
                   className="text-lg text-[#001E13]/70 font-karla mb-4"
                 >
-                  {t.heroSubtitle}
+                  {copy.heroSubtitle}
                 </motion.p>
 
                 {/* Social proof */}
@@ -191,7 +178,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                   transition={{ delay: 0.25 }}
                   className="flex flex-wrap gap-4 mb-8 text-sm font-karla"
                 >
-                  {data.stats.map((stat, index) => (
+                  {stats.map((stat, index) => (
                     <span key={index} className="px-3 py-1 bg-[#61DBD5]/20 rounded-full text-[#001E13]">
                       {stat.value} {stat.label}
                     </span>
@@ -218,7 +205,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                   <button className="w-10 h-10 rounded-full bg-[#F6391A] text-white flex items-center justify-center text-xl hover:scale-105 transition-transform">
                     +
                   </button>
-                  <span className="text-sm text-[#001E13]/60 font-karla">{t.inviteMore}</span>
+                  <span className="text-sm text-[#001E13]/60 font-karla">{copy.inviteMore}</span>
                 </motion.div>
 
                 <motion.div
@@ -228,7 +215,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                 >
                   <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                     <PulsatingButton className="font-karla font-bold text-lg px-8 py-3">
-                      {data.heroCta}
+                      {t("page.heroCta")}
                     </PulsatingButton>
                   </Link>
                 </motion.div>
@@ -244,10 +231,10 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                 <div className="bg-white rounded-2xl shadow-2xl p-6 relative min-h-[400px]">
                   {/* Fake interface */}
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="font-londrina-solid text-xl text-[#001E13]">{t.fakeTripTitle}</h3>
+                    <h3 className="font-londrina-solid text-xl text-[#001E13]">{copy.fakeTripTitle}</h3>
                     <div className="flex items-center gap-2">
                       <LiveDot />
-                      <span className="text-xs text-[#001E13]/50">{t.liveLabel}</span>
+                      <span className="text-xs text-[#001E13]/50">{copy.liveLabel}</span>
                     </div>
                   </div>
 
@@ -258,18 +245,18 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                       transition={{ duration: 2, repeat: Infinity, delay: 1 }}
                       className="p-3 rounded-lg border border-[#61DBD5]"
                     >
-                      <span className="text-sm font-karla text-[#001E13]">{t.fakeDays[0]}</span>
+                      <span className="text-sm font-karla text-[#001E13]">{copy.fakeDays[0]}</span>
                     </motion.div>
                     <motion.div
                       animate={{ backgroundColor: ['#FFF', '#F6391A20', '#FFF'] }}
                       transition={{ duration: 2, repeat: Infinity, delay: 2 }}
                       className="p-3 rounded-lg border border-[#F6391A]"
                     >
-                      <span className="text-sm font-karla text-[#001E13]">{t.fakeDays[1]}</span>
-                      <span className="ml-2 text-xs bg-[#F6391A]/10 text-[#F6391A] px-2 py-0.5 rounded">{t.editingTag}</span>
+                      <span className="text-sm font-karla text-[#001E13]">{copy.fakeDays[1]}</span>
+                      <span className="ml-2 text-xs bg-[#F6391A]/10 text-[#F6391A] px-2 py-0.5 rounded">{copy.editingTag}</span>
                     </motion.div>
                     <div className="p-3 rounded-lg border border-gray-200">
-                      <span className="text-sm font-karla text-[#001E13]">{t.fakeDays[2]}</span>
+                      <span className="text-sm font-karla text-[#001E13]">{copy.fakeDays[2]}</span>
                     </div>
                   </div>
 
@@ -300,7 +287,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                   viewport={{ once: true }}
                   className="text-3xl lg:text-4xl font-londrina-solid text-[#FFFBF5] mb-4"
                 >
-                  {t.feedTitle}
+                  {copy.feedTitle}
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -309,7 +296,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                   transition={{ delay: 0.1 }}
                   className="text-[#FFFBF5]/70 font-karla mb-6"
                 >
-                  {t.feedSubtitle}
+                  {copy.feedSubtitle}
                 </motion.p>
               </div>
 
@@ -320,9 +307,9 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                 className="bg-white rounded-2xl p-6"
               >
                 <h4 className="font-londrina-solid text-lg text-[#001E13] mb-4 flex items-center gap-2">
-                  {t.recentActivity} <LiveDot />
+                  {copy.recentActivity} <LiveDot />
                 </h4>
-                {t.activities.map((act, i) => (
+                {copy.activities.map((act, i) => (
                   <ActivityItem
                     key={i}
                     avatar={act.avatar}
@@ -341,7 +328,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
         <section className="px-4 lg:px-8 py-16 lg:py-24">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {data.features.map((feature, index) => (
+              {features.map((feature, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -350,7 +337,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
                   transition={{ delay: index * 0.1 }}
                   className="text-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <span className="text-5xl mb-4 block">{feature.icon}</span>
+                  <span className="text-5xl mb-4 block">{FEATURE_ICONS[index]}</span>
                   <h3 className="text-xl font-londrina-solid text-[#001E13] mb-2">{feature.title}</h3>
                   <p className="text-[#001E13]/70 font-karla">{feature.description}</p>
                 </motion.div>
@@ -360,7 +347,7 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
         </section>
 
         {/* FAQ Section */}
-        <FeatureFAQ items={data.faqItems} accentColor={data.accentColor} />
+        <FeatureFAQ items={faqItems} accentColor={ACCENT_COLOR} />
 
         {/* CTA */}
         <section className="px-4 lg:px-8 py-12 lg:py-16">
@@ -372,17 +359,17 @@ export default function CollaborationFeature({ data }: { data: FeaturePageData }
               className="bg-gradient-to-r from-[#61DBD5] to-[#F6391A] rounded-[32px] p-8 lg:p-12"
             >
               <h2 className="text-3xl lg:text-4xl font-londrina-solid text-white mb-4">
-                {data.ctaTitle}
+                {t("page.ctaTitle")}
               </h2>
               <p className="text-white/90 font-karla mb-8 max-w-lg mx-auto">
-                {data.ctaSubtitle}
+                {t("page.ctaSubtitle")}
               </p>
               <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`} className="inline-block">
                 <button className="bg-white text-[#001E13] font-karla font-bold text-lg px-8 py-3 rounded-full hover:scale-105 transition-transform shadow-lg">
-                  {data.ctaButton}
+                  {t("page.ctaButton")}
                 </button>
               </Link>
-              <p className="text-sm text-white/60 mt-3 font-karla">{t.freeNoCard}</p>
+              <p className="text-sm text-white/60 mt-3 font-karla">{copy.freeNoCard}</p>
             </motion.div>
           </div>
         </section>

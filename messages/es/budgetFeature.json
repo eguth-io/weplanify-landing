@@ -19,21 +19,134 @@
     "freeNoCard": "Registro gratuito. No se requiere tarjeta de crédito.",
     "tryItHint": "👆 Haz clic en un botón para añadir un gasto y mira cómo se actualizan los saldos en tiempo real.",
     "participants": [
-      { "name": "Marie", "avatar": "👩‍🎨" },
-      { "name": "Thomas", "avatar": "🧔" },
-      { "name": "Emma", "avatar": "👱‍♀️" },
-      { "name": "Lucas", "avatar": "🧑‍💻" }
+      {
+        "name": "Marie",
+        "avatar": "👩‍🎨"
+      },
+      {
+        "name": "Thomas",
+        "avatar": "🧔"
+      },
+      {
+        "name": "Emma",
+        "avatar": "👱‍♀️"
+      },
+      {
+        "name": "Lucas",
+        "avatar": "🧑‍💻"
+      }
     ],
     "expenses": [
-      { "name": "Cena en restaurante", "amount": 156, "paidBy": "Marie" },
-      { "name": "Alquiler de coche", "amount": 320, "paidBy": "Thomas" },
-      { "name": "Entradas al museo", "amount": 84, "paidBy": "Emma" }
+      {
+        "name": "Cena en restaurante",
+        "amount": 156,
+        "paidBy": "Marie"
+      },
+      {
+        "name": "Alquiler de coche",
+        "amount": 320,
+        "paidBy": "Thomas"
+      },
+      {
+        "name": "Entradas al museo",
+        "amount": 84,
+        "paidBy": "Emma"
+      }
     ],
     "presets": [
-      { "name": "Cena", "amount": 80, "emoji": "🍝" },
-      { "name": "Taxi", "amount": 24, "emoji": "🚕" },
-      { "name": "Tour guiado", "amount": 60, "emoji": "🎨" },
-      { "name": "Brunch", "amount": 48, "emoji": "🥐" }
+      {
+        "name": "Cena",
+        "amount": 80,
+        "emoji": "🍝"
+      },
+      {
+        "name": "Taxi",
+        "amount": 24,
+        "emoji": "🚕"
+      },
+      {
+        "name": "Tour guiado",
+        "amount": 60,
+        "emoji": "🎨"
+      },
+      {
+        "name": "Brunch",
+        "amount": 48,
+        "emoji": "🥐"
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Gestión de gastos",
+    "heroTitle": "Reparto de gastos:",
+    "heroTitleHighlight": "¿quién debe cuánto a quién?",
+    "heroSubtitle": "Marie pagó el restaurante, Thomas el alquiler. ¿Quién debe qué al final del viaje? Deja que la app haga los cálculos mientras disfrutas de la fiesta.",
+    "heroCta": "Gestionar mis gastos",
+    "heroCtaSubtext": "Gratis, sin tarjeta de crédito",
+    "socialProofText": "2 450 € gestionados este mes",
+    "featuresTitle": "Gestión inteligente de gastos",
+    "ctaTitle": "Se acabaron las discusiones por dinero",
+    "ctaSubtitle": "Deja que la app se encargue de las cuentas por ti",
+    "ctaButton": "Calcular quién me debe dinero",
+    "seoTitle": "Presupuesto de viaje - Reparto de gastos en grupo | Weplanify",
+    "seoDescription": "Gestiona fácilmente los gastos de viaje en grupo. Seguimiento de pagos, reparto justo automático y reembolsos simplificados para tus vacaciones con amigos.",
+    "stats": [
+      {
+        "value": "2 450 €",
+        "label": "Gastos totales"
+      },
+      {
+        "value": "6",
+        "label": "Participantes"
+      },
+      {
+        "value": "23",
+        "label": "Transacciones"
+      }
+    ],
+    "features": [
+      {
+        "icon": "📸",
+        "title": "Escanear ticket",
+        "description": "Foto = gasto añadido"
+      },
+      {
+        "icon": "💱",
+        "title": "Multidivisa",
+        "description": "Euros, dólares, yenes..."
+      },
+      {
+        "icon": "🔄",
+        "title": "Reparto inteligente",
+        "description": "Menos transacciones"
+      },
+      {
+        "icon": "📊",
+        "title": "Estadísticas",
+        "description": "Visualiza tus gastos"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "¿Cómo funciona el reparto de gastos en Weplanify?",
+        "answer": "Añade cada gasto indicando quién pagó y quién participó. La app calcula automáticamente el saldo de cada persona y muestra quién debe cuánto a quién para saldar las cuentas al final del viaje."
+      },
+      {
+        "question": "¿Se pueden gestionar varias divisas?",
+        "answer": "Sí, Weplanify admite todas las divisas. Añade gastos en euros, dólares, yenes o cualquier otra moneda. La app convierte automáticamente al tipo de cambio actual."
+      },
+      {
+        "question": "¿Cómo puedo añadir un gasto rápidamente?",
+        "answer": "Tres opciones: introducir el importe manualmente, hacer una foto del ticket (reconocimiento automático) o importarlo desde tu banco."
+      },
+      {
+        "question": "¿Se optimizan los reembolsos?",
+        "answer": "¡Sí! El algoritmo minimiza el número de transacciones necesarias para saldar las cuentas."
+      },
+      {
+        "question": "¿Se pueden excluir ciertas personas de un gasto?",
+        "answer": "Por supuesto. Para cada gasto, selecciona solo a los participantes implicados."
+      }
     ]
   }
 }

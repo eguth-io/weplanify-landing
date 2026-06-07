@@ -18,5 +18,38 @@
       { "time": "11:00", "event": "Traslado al hotel", "icon": "🚕", "color": "#EEF899" },
       { "time": "14:00", "event": "Check-in Hotel Alfama", "icon": "🏨", "color": "#8B5CF6" }
     ]
+  },
+  "page": {
+    "heroBadge": "Gestión de transportes",
+    "heroTitle": "Vuelos, trenes, coches:",
+    "heroTitleHighlight": "se acabaron los billetes perdidos",
+    "heroSubtitle": "Reenvía tus correos de confirmación y extraemos todo automáticamente. ¿Vuelo retrasado? Lo sabrás antes que la aerolínea.",
+    "heroCta": "Centralizar mis trayectos",
+    "heroCtaSubtext": "Gratis, sin tarjeta de crédito",
+    "socialProofText": "Todos tus trayectos en un solo lugar",
+    "featuresTitle": "Funciones de transporte",
+    "features": [
+      { "title": "Importación por email", "description": "Escaneo automático" },
+      { "title": "Alertas", "description": "Retrasos y cambios" },
+      { "title": "Sin conexión", "description": "Acceso sin conexión" },
+      { "title": "Compartir", "description": "Información para el grupo" }
+    ],
+    "faqItems": [
+      { "question": "¿Cómo importo mis reservas de transporte?", "answer": "Tres formas: reenvía tus correos de confirmación, conecta Gmail/Outlook para la importación automática o escanea el código QR de tu billete." },
+      { "question": "¿Qué tipos de transporte son compatibles?", "answer": "¡Todos! Vuelos, trenes, autobuses, ferris, alquiler de coches e incluso viajes compartidos." },
+      { "question": "¿Recibo alertas por retrasos?", "answer": "Sí, Weplanify monitoriza tus vuelos y trenes en tiempo real. Si hay un retraso, recibes una notificación al instante." },
+      { "question": "¿Puede mi grupo de viaje ver los detalles del transporte?", "answer": "¡Sí! Todos los participantes del viaje pueden ver el transporte añadido." },
+      { "question": "¿Puedo acceder a mis billetes sin conexión?", "answer": "Por supuesto. Descarga tus billetes para acceder a ellos incluso sin conexión a internet." }
+    ],
+    "ctaTitle": "Nunca más pierdas un billete",
+    "ctaSubtitle": "Todos tus trayectos accesibles en 2 segundos, incluso sin conexión",
+    "ctaButton": "Encontrar todos mis billetes",
+    "seoTitle": "Gestión de transportes - Vuelos, trenes y trayectos | Weplanify",
+    "seoDescription": "Gestiona todos tus trayectos de viaje en un solo lugar. Importación automática de vuelos y trenes, alertas en tiempo real y acceso sin conexión a tus billetes.",
+    "stats": [
+      { "value": "Auto", "label": "importación" },
+      { "value": "Tiempo real", "label": "alertas" },
+      { "value": "Sin conexión", "label": "acceso" }
+    ]
   }
 }

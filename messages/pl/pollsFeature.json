@@ -20,5 +20,31 @@
       { "question": "Atrakcja na dzień 3?", "options": ["🏄 Surfing", "🚶 Wędrówka", "🍷 Degustacja wina"], "winner": "🏄 Surfing", "votes": 8 },
       { "question": "Hotel czy Airbnb?", "options": ["🏨 Hotel", "🏠 Airbnb"], "winner": "🏠 Airbnb", "votes": 10 }
     ]
+  },
+  "page": {
+    "heroBadge": "Ankiety na żywo",
+    "heroTitle": "Decydujcie razem",
+    "heroTitleHighlight": "w 2 minuty",
+    "heroSubtitle": "Pizza czy sushi? Hotel czy Airbnb? Jedno szybkie głosowanie zastępuje 47 wiadomości na WhatsAppie.",
+    "socialProofText": "+50 000 decyzji podjętych w tym miesiącu",
+    "heroCta": "Utwórz moją pierwszą ankietę",
+    "heroCtaSubtext": "Za darmo - Gotowe w 30 sekund",
+    "features": [
+      { "icon": "⚡", "title": "Na żywo", "description": "Głosy pojawiają się natychmiast dla wszystkich" },
+      { "icon": "🔒", "title": "Anonimowa lub publiczna", "description": "Wybierz, czy głosy są widoczne, czy ukryte" },
+      { "icon": "🔔", "title": "Przypomnienia", "description": "Automatycznie przypomina tym, którzy jeszcze nie zagłosowali" }
+    ],
+    "faqItems": [
+      { "question": "Jak utworzyć ankietę dla mojej grupy podróżnej?", "answer": "W kilka sekund! Wybierz typ ankiety (kierunek, restauracja, atrakcja, data), dodaj opcje i udostępnij." },
+      { "question": "Czy głosy są anonimowe?", "answer": "Twój wybór! Możesz tworzyć ankiety publiczne lub anonimowe." },
+      { "question": "Czy mogę ustawić termin głosowania?", "answer": "Tak, możesz zaplanować datę i godzinę zakończenia. Osoby, które nie zagłosowały, otrzymują automatyczne przypomnienia." },
+      { "question": "Co się dzieje w przypadku remisu?", "answer": "Kilka opcji: druga tura między remisującymi opcjami, decyzja twórcy lub losowy wybór." },
+      { "question": "Czy mogę głosować na kilka opcji?", "answer": "Tak! Możesz zezwolić na wiele głosów lub jeden głos." }
+    ],
+    "ctaTitle": "Koniec z niekończącymi się debatami",
+    "ctaSubtitle": "Pozwól grupie zdecydować, demokratycznie",
+    "ctaButton": "Rozstrzygnij debatę teraz",
+    "seoTitle": "Ankiety Podróżne - Decyzje Grupowe | Weplanify",
+    "seoDescription": "Podejmuj decyzje grupowe z łatwością dzięki ankietom Weplanify. Głosuj na żywo, aby wybrać kierunki, atrakcje i restauracje."
   }
 }

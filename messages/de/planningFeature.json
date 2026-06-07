@@ -31,5 +31,40 @@
     "visualTitle": "Die KI visualisiert deine Reise",
     "capabilitiesSubtitle": "Mehr als nur ein Assistent – echtes Reise-Know-how, angetrieben von KI.",
     "freeNoCard": "Kostenlose Anmeldung. Keine Kreditkarte erforderlich."
+  },
+  "page": {
+    "heroBadge": "Reiseplanung",
+    "heroTitle": "Plane deine Reise",
+    "heroTitleHighlight": "auf deine Art",
+    "heroSubtitle": "Baue deine Reiseroute manuell Schritt für Schritt auf oder lass unseren KI-Assistenten in Sekunden einen personalisierten Plan erstellen. Du entscheidest, wie du planst.",
+    "heroCta": "Kostenlos planen",
+    "heroCtaSubtext": "Keine Kreditkarte erforderlich",
+    "socialProofText": "Über 12.000 geplante Reisen",
+    "stats": [
+      { "value": "12.000+", "label": "geplante Reisen" },
+      { "value": "4.8/5", "label": "Zufriedenheit" },
+      { "value": "2 Modi", "label": "manuell + KI" }
+    ],
+    "featuresTitle": "Zwei Wege, deine perfekte Reise zu planen",
+    "features": [
+      { "title": "Manuelle Planung", "description": "Erstelle deine Reise von Grund auf. Füge Reiseziele hinzu, lege Daten fest und baue deine Reiseroute Tag für Tag genau so auf, wie du sie haben willst." },
+      { "title": "Tag-für-Tag-Builder", "description": "Zieh Aktivitäten, Restaurants und Unterkünfte per Drag & Drop hinein. Organisiere jeden Tag visuell auf einer Timeline." },
+      { "title": "KI-gestützte Planung", "description": "Beschreibe deine Traumreise in natürlicher Sprache. Unsere KI erstellt eine komplette Reiseroute mit Hotels, Aktivitäten und optimierten Strecken." },
+      { "title": "Smarte Vorschläge", "description": "Die KI versteht den Kontext — Jahreszeit, Budget, Reisestil — und passt ihre Empfehlungen in Echtzeit an." },
+      { "title": "Beide Ansätze kombinieren", "description": "Starte mit KI-Vorschlägen und feile dann manuell daran. Oder plane manuell und bitte die KI, Lücken zu füllen." },
+      { "title": "Gemeinsames Bearbeiten", "description": "Alle in der Gruppe können mitwirken — Ideen einbringen, über Optionen abstimmen und den Plan gemeinsam verfeinern." }
+    ],
+    "faqItems": [
+      { "question": "Kann ich eine Reise ohne KI planen?", "answer": "Absolut! Du kannst deine gesamte Reise manuell erstellen. Füge Reiseziele hinzu, lege Daten fest und baue deine Reiseroute mit unserem visuellen Tag-für-Tag-Planer Schritt für Schritt auf." },
+      { "question": "Wie funktioniert der KI-Assistent?", "answer": "Beschreibe deine Reise einfach in natürlicher Sprache — Reiseziel, Budget, Reisestil, Interessen. Die KI erstellt eine komplette Tag-für-Tag-Reiseroute mit Unterkünften, Aktivitäten und optimierten Strecken." },
+      { "question": "Kann ich KI-Vorschläge anpassen?", "answer": "Ja! KI-Vorschläge sind nur ein Ausgangspunkt. Du kannst jedes Element bearbeiten, hinzufügen oder entfernen. Der Plan ist vollständig anpassbar." },
+      { "question": "Kann ich manuelle und KI-Planung kombinieren?", "answer": "Auf jeden Fall. Starte mit der KI, um eine Basis-Reiseroute zu bekommen, und verfeinere sie dann manuell. Oder plane manuell und bitte die KI, Aktivitäten für bestimmte Tage vorzuschlagen." },
+      { "question": "Kann meine Gruppe bei der Reiseplanung helfen?", "answer": "Ja! Lade deine Reisebegleiter ein, und alle können Vorschläge hinzufügen, über Optionen abstimmen und in Echtzeit gemeinsam an der Reiseroute arbeiten." }
+    ],
+    "ctaTitle": "Bereit, dein nächstes Abenteuer zu planen?",
+    "ctaSubtitle": "Beginne mit der Planung deiner Reise — manuell oder mit KI-Unterstützung",
+    "ctaButton": "Kostenlos planen",
+    "seoTitle": "Reiseplanungs-Tool | Manuell & KI-gestützt | WePlanify",
+    "seoDescription": "Plane deine Gruppenreise auf deine Art. Erstelle Reiserouten manuell oder lass die KI personalisierte Tag-für-Tag-Pläne erstellen. Arbeite in Echtzeit mit Freunden zusammen. Kostenloser Reiseplaner."
   }
 }

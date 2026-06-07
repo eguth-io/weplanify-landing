@@ -19,21 +19,134 @@
     "freeNoCard": "Registrazione gratuita. Nessuna carta di credito richiesta.",
     "tryItHint": "👆 Clicca un pulsante per aggiungere una spesa e guarda i saldi aggiornarsi in tempo reale.",
     "participants": [
-      { "name": "Marie", "avatar": "👩‍🎨" },
-      { "name": "Thomas", "avatar": "🧔" },
-      { "name": "Emma", "avatar": "👱‍♀️" },
-      { "name": "Lucas", "avatar": "🧑‍💻" }
+      {
+        "name": "Marie",
+        "avatar": "👩‍🎨"
+      },
+      {
+        "name": "Thomas",
+        "avatar": "🧔"
+      },
+      {
+        "name": "Emma",
+        "avatar": "👱‍♀️"
+      },
+      {
+        "name": "Lucas",
+        "avatar": "🧑‍💻"
+      }
     ],
     "expenses": [
-      { "name": "Cena al ristorante", "amount": 156, "paidBy": "Marie" },
-      { "name": "Noleggio auto", "amount": 320, "paidBy": "Thomas" },
-      { "name": "Biglietti per il museo", "amount": 84, "paidBy": "Emma" }
+      {
+        "name": "Cena al ristorante",
+        "amount": 156,
+        "paidBy": "Marie"
+      },
+      {
+        "name": "Noleggio auto",
+        "amount": 320,
+        "paidBy": "Thomas"
+      },
+      {
+        "name": "Biglietti per il museo",
+        "amount": 84,
+        "paidBy": "Emma"
+      }
     ],
     "presets": [
-      { "name": "Cena", "amount": 80, "emoji": "🍝" },
-      { "name": "Taxi", "amount": 24, "emoji": "🚕" },
-      { "name": "Visita guidata", "amount": 60, "emoji": "🎨" },
-      { "name": "Brunch", "amount": 48, "emoji": "🥐" }
+      {
+        "name": "Cena",
+        "amount": 80,
+        "emoji": "🍝"
+      },
+      {
+        "name": "Taxi",
+        "amount": 24,
+        "emoji": "🚕"
+      },
+      {
+        "name": "Visita guidata",
+        "amount": 60,
+        "emoji": "🎨"
+      },
+      {
+        "name": "Brunch",
+        "amount": 48,
+        "emoji": "🥐"
+      }
+    ]
+  },
+  "page": {
+    "heroBadge": "Gestione delle spese",
+    "heroTitle": "Divisione delle spese:",
+    "heroTitleHighlight": "chi deve quanto a chi?",
+    "heroSubtitle": "Marie ha pagato il ristorante, Thomas il noleggio. Chi deve cosa alla fine del viaggio? Lascia che l'app faccia i conti mentre ti godi la festa.",
+    "heroCta": "Gestisci le mie spese",
+    "heroCtaSubtext": "Gratis, senza carta di credito",
+    "socialProofText": "2.450 € gestiti questo mese",
+    "featuresTitle": "Gestione intelligente delle spese",
+    "ctaTitle": "Basta litigi per i soldi",
+    "ctaSubtitle": "Lascia che sia l'app a gestire i conti per te",
+    "ctaButton": "Calcola chi mi deve dei soldi",
+    "seoTitle": "Budget di viaggio - Divisione delle spese di gruppo | Weplanify",
+    "seoDescription": "Gestisci facilmente le spese di viaggio di gruppo. Monitoraggio dei pagamenti, divisione equa automatica e rimborsi semplificati per le tue vacanze con gli amici.",
+    "stats": [
+      {
+        "value": "2.450 €",
+        "label": "Spese totali"
+      },
+      {
+        "value": "6",
+        "label": "Partecipanti"
+      },
+      {
+        "value": "23",
+        "label": "Transazioni"
+      }
+    ],
+    "features": [
+      {
+        "icon": "📸",
+        "title": "Scansiona scontrino",
+        "description": "Foto = spesa aggiunta"
+      },
+      {
+        "icon": "💱",
+        "title": "Multivaluta",
+        "description": "Euro, dollari, yen..."
+      },
+      {
+        "icon": "🔄",
+        "title": "Saldo intelligente",
+        "description": "Meno transazioni"
+      },
+      {
+        "icon": "📊",
+        "title": "Statistiche",
+        "description": "Visualizza le tue spese"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Come funziona la divisione delle spese su Weplanify?",
+        "answer": "Aggiungi ogni spesa indicando chi ha pagato e chi ha partecipato. L'app calcola automaticamente il saldo di ciascuno e mostra chi deve quanto a chi per pareggiare i conti alla fine del viaggio."
+      },
+      {
+        "question": "Si possono gestire più valute?",
+        "answer": "Sì, Weplanify supporta tutte le valute. Aggiungi spese in euro, dollari, yen o qualsiasi altra moneta. L'app converte automaticamente al tasso di cambio attuale."
+      },
+      {
+        "question": "Come posso aggiungere una spesa rapidamente?",
+        "answer": "Tre opzioni: inserire l'importo manualmente, scattare una foto dello scontrino (riconoscimento automatico) o importarla dalla tua banca."
+      },
+      {
+        "question": "I rimborsi sono ottimizzati?",
+        "answer": "Sì! L'algoritmo riduce al minimo il numero di transazioni necessarie per saldare i conti."
+      },
+      {
+        "question": "Si possono escludere alcune persone da una spesa?",
+        "answer": "Assolutamente. Per ogni spesa, seleziona solo i partecipanti coinvolti."
+      }
     ]
   }
 }

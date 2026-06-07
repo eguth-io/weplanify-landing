@@ -104,5 +104,64 @@
       "restaurant": "餐厅",
       "activity": "活动"
     }
+  },
+  "page": {
+    "heroBadge": "探索模式",
+    "seoTitle": "Explorer - 发现旅行目的地 | Weplanify",
+    "seoDescription": "通过我们的探索模式发现精彩的地方。滑动浏览餐厅、博物馆和活动，收藏你的最爱。",
+    "ctaTitle": "准备好探索了吗？",
+    "ctaSubtitle": "为你的下一次旅行发现成千上万的精彩地点",
+    "ctaButton": "探索我的目的地",
+    "features": [
+      {
+        "title": "餐厅",
+        "description": "找到最棒的当地美食"
+      },
+      {
+        "title": "博物馆",
+        "description": "文化与历史"
+      },
+      {
+        "title": "自然",
+        "description": "公园与户外活动"
+      },
+      {
+        "title": "观景点",
+        "description": "最佳拍照地点"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Weplanify 的探索模式如何运作？",
+        "answer": "探索模式让你像使用约会软件一样滑动发现各种地点（餐厅、博物馆、活动）。向右滑动收藏，向左滑动跳过。"
+      },
+      {
+        "question": "地点会根据我的目的地进行筛选吗？",
+        "answer": "是的，Explorer 只显示与你的目的地和旅行日期相关的地点。"
+      },
+      {
+        "question": "推荐内容来自哪里？",
+        "answer": "我们的推荐结合了多个来源：Weplanify 旅行者评价、Google Places 数据、TripAdvisor 以及我们的本地策展人。"
+      },
+      {
+        "question": "我可以离线使用 Explorer 吗？",
+        "answer": "可以！出发前下载你目的地的地点即可。"
+      },
+      {
+        "question": "如何将探索到的地点添加到我的行程？",
+        "answer": "当你向右滑动（喜欢）时，该地点会保存到你的收藏夹。轻轻一点即可将其添加到你的行程中。"
+      }
+    ],
+    "stats": [
+      {
+        "label": "已发现地点"
+      },
+      {
+        "label": "类别"
+      },
+      {
+        "label": "目的地"
+      }
+    ]
   }
 }

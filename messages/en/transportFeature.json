@@ -18,5 +18,38 @@
       { "time": "11:00", "event": "Hotel transfer", "icon": "🚕", "color": "#EEF899" },
       { "time": "14:00", "event": "Check-in Hotel Alfama", "icon": "🏨", "color": "#8B5CF6" }
     ]
+  },
+  "page": {
+    "heroBadge": "Transport Management",
+    "heroTitle": "Flights, trains, cars:",
+    "heroTitleHighlight": "no more lost tickets",
+    "heroSubtitle": "Forward your confirmation emails, we extract everything automatically. Flight delayed? You'll know before the airline tells you.",
+    "heroCta": "Centralize my journeys",
+    "heroCtaSubtext": "Free, no credit card required",
+    "socialProofText": "All your journeys in one place",
+    "featuresTitle": "Transport features",
+    "features": [
+      { "title": "Email Import", "description": "Automatic scanning" },
+      { "title": "Alerts", "description": "Delays and changes" },
+      { "title": "Offline", "description": "Access without connection" },
+      { "title": "Sharing", "description": "Info for the group" }
+    ],
+    "faqItems": [
+      { "question": "How do I import my transport bookings?", "answer": "Three ways: forward your confirmation emails, connect Gmail/Outlook for automatic import, or scan your ticket QR code." },
+      { "question": "What types of transport are supported?", "answer": "All of them! Flights, trains, buses, ferries, car rentals, and even rideshares." },
+      { "question": "Do I get alerts for delays?", "answer": "Yes, Weplanify monitors your flights and trains in real time. If there's a delay, you get an instant notification." },
+      { "question": "Can my travel group see the transport details?", "answer": "Yes! All trip participants can see the added transport." },
+      { "question": "Can I access my tickets offline?", "answer": "Absolutely. Download your tickets to access them even without an internet connection." }
+    ],
+    "ctaTitle": "Never lose a ticket again",
+    "ctaSubtitle": "All your journeys accessible in 2 seconds, even offline",
+    "ctaButton": "Find all my tickets",
+    "seoTitle": "Transport Management - Flights, Trains & Journeys | Weplanify",
+    "seoDescription": "Manage all your travel journeys in one place. Automatic import of flights and trains, real-time alerts, and offline access to your tickets.",
+    "stats": [
+      { "value": "Auto", "label": "import" },
+      { "value": "Real-time", "label": "alerts" },
+      { "value": "Offline", "label": "access" }
+    ]
   }
 }

@@ -104,5 +104,64 @@
       "restaurant": "Restaurant",
       "activity": "Activity"
     }
+  },
+  "page": {
+    "heroBadge": "Explore Mode",
+    "seoTitle": "Explorer - Discover Travel Destinations | Weplanify",
+    "seoDescription": "Discover amazing places with our exploration mode. Swipe to explore restaurants, museums, and activities, save your favorites.",
+    "ctaTitle": "Ready to explore?",
+    "ctaSubtitle": "Discover thousands of amazing places for your next trip",
+    "ctaButton": "Explore my destination",
+    "features": [
+      {
+        "title": "Restaurants",
+        "description": "Find the best local food"
+      },
+      {
+        "title": "Museums",
+        "description": "Culture and history"
+      },
+      {
+        "title": "Nature",
+        "description": "Parks and outdoor activities"
+      },
+      {
+        "title": "Viewpoints",
+        "description": "Best photo spots"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "How does Weplanify's Explore mode work?",
+        "answer": "Explore mode lets you discover places (restaurants, museums, activities) by swiping like a dating app. Swipe right to save, left to skip."
+      },
+      {
+        "question": "Are places filtered based on my destination?",
+        "answer": "Yes, the Explorer only shows places relevant to your destination and travel dates."
+      },
+      {
+        "question": "Where do the recommendations come from?",
+        "answer": "Our recommendations combine multiple sources: Weplanify traveler reviews, Google Places data, TripAdvisor, and our local curators."
+      },
+      {
+        "question": "Can I use Explorer offline?",
+        "answer": "Yes! Download places from your destination before you leave."
+      },
+      {
+        "question": "How do I add an explored place to my itinerary?",
+        "answer": "When you swipe right (like), the place is saved to your favorites. A simple tap lets you add it to your itinerary."
+      }
+    ],
+    "stats": [
+      {
+        "label": "places discovered"
+      },
+      {
+        "label": "categories"
+      },
+      {
+        "label": "destinations"
+      }
+    ]
   }
 }

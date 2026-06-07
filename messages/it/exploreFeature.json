@@ -104,5 +104,64 @@
       "restaurant": "Ristorante",
       "activity": "Attività"
     }
+  },
+  "page": {
+    "heroBadge": "Modalità Esplora",
+    "seoTitle": "Explorer - Scopri le Destinazioni di Viaggio | Weplanify",
+    "seoDescription": "Scopri luoghi incredibili con la nostra modalità esplorazione. Scorri per esplorare ristoranti, musei e attività, salva i tuoi preferiti.",
+    "ctaTitle": "Pronto a esplorare?",
+    "ctaSubtitle": "Scopri migliaia di luoghi incredibili per il tuo prossimo viaggio",
+    "ctaButton": "Esplora la mia destinazione",
+    "features": [
+      {
+        "title": "Ristoranti",
+        "description": "Trova la migliore cucina locale"
+      },
+      {
+        "title": "Musei",
+        "description": "Cultura e storia"
+      },
+      {
+        "title": "Natura",
+        "description": "Parchi e attività all'aperto"
+      },
+      {
+        "title": "Punti panoramici",
+        "description": "I migliori spot per le foto"
+      }
+    ],
+    "faqItems": [
+      {
+        "question": "Come funziona la modalità Explore di Weplanify?",
+        "answer": "La modalità Explore ti permette di scoprire luoghi (ristoranti, musei, attività) scorrendo come in un'app di incontri. Scorri a destra per salvare, a sinistra per saltare."
+      },
+      {
+        "question": "I luoghi sono filtrati in base alla mia destinazione?",
+        "answer": "Sì, l'Explorer mostra solo i luoghi pertinenti alla tua destinazione e alle tue date di viaggio."
+      },
+      {
+        "question": "Da dove provengono i consigli?",
+        "answer": "I nostri consigli combinano più fonti: recensioni dei viaggiatori Weplanify, dati di Google Places, TripAdvisor e i nostri curatori locali."
+      },
+      {
+        "question": "Posso usare Explorer offline?",
+        "answer": "Sì! Scarica i luoghi della tua destinazione prima di partire."
+      },
+      {
+        "question": "Come aggiungo un luogo esplorato al mio itinerario?",
+        "answer": "Quando scorri a destra (mi piace), il luogo viene salvato nei tuoi preferiti. Un semplice tocco ti permette di aggiungerlo al tuo itinerario."
+      }
+    ],
+    "stats": [
+      {
+        "label": "luoghi scoperti"
+      },
+      {
+        "label": "categorie"
+      },
+      {
+        "label": "destinazioni"
+      }
+    ]
   }
 }
