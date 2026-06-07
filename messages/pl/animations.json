@@ -1,0 +1,44 @@
+{
+  "explorerFilters": {
+    "activity": "Atrakcje",
+    "restaurant": "Restauracje",
+    "hotel": "Noclegi",
+    "transport": "Transport"
+  },
+  "explorerBooked": "Zarezerwowano",
+  "liveVoting": {
+    "question": "Gdzie się zatrzymać w Lizbonie?",
+    "category": "Nocleg",
+    "creator": "Marie",
+    "createdLabel": "Utworzono",
+    "endsLabel": "Kończy się",
+    "createdDate": "14 maja",
+    "endsDate": "20 maja",
+    "dayRange": "15 → 17 maja",
+    "status": "Zagłosuj",
+    "single": "Jeden wybór",
+    "options": "opcje",
+    "yourVote": "Twój głos",
+    "votes": "głosów",
+    "vote": "głos",
+    "sendReminders": "Przypomnienia",
+    "seeOnTimeline": "Oś czasu",
+    "comments": "Komentarze",
+    "details": "Szczegóły"
+  },
+  "swipeExplorer": {
+    "header": "Odkryj Tokio",
+    "category": {
+      "activity": "Atrakcja",
+      "food": "Jedzenie",
+      "hotel": "Hotel"
+    },
+    "liked": "{count, plural, one {polubienie} few {polubienia} many {polubień} other {polubień}}"
+  },
+  "liveCollaboration": {
+    "dayOf": "Dzień 2 z 5",
+    "date": "Śr, 15 maja",
+    "city": "Paryż",
+    "booked": "Zarezerwowano"
+  }
+}

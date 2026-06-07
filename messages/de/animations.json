@@ -1,0 +1,44 @@
+{
+  "explorerFilters": {
+    "activity": "Aktivitäten",
+    "restaurant": "Restaurants",
+    "hotel": "Unterkünfte",
+    "transport": "Transport"
+  },
+  "explorerBooked": "Gebucht",
+  "liveVoting": {
+    "question": "Wo in Lissabon übernachten?",
+    "category": "Unterkunft",
+    "creator": "Marie",
+    "createdLabel": "Erstellt am",
+    "endsLabel": "Endet am",
+    "createdDate": "14. Mai",
+    "endsDate": "20. Mai",
+    "dayRange": "15. → 17. Mai",
+    "status": "Jetzt abstimmen",
+    "single": "Einzelauswahl",
+    "options": "Optionen",
+    "yourVote": "Deine Stimme",
+    "votes": "Stimmen",
+    "vote": "Stimme",
+    "sendReminders": "Erinnerungen",
+    "seeOnTimeline": "Zeitplan",
+    "comments": "Kommentare",
+    "details": "Details"
+  },
+  "swipeExplorer": {
+    "header": "Tokio entdecken",
+    "category": {
+      "activity": "Aktivität",
+      "food": "Essen",
+      "hotel": "Hotel"
+    },
+    "liked": "{count, plural, one {Favorit} other {Favoriten}}"
+  },
+  "liveCollaboration": {
+    "dayOf": "Tag 2 von 5",
+    "date": "Mi., 15. Mai",
+    "city": "Paris",
+    "booked": "Gebucht"
+  }
+}

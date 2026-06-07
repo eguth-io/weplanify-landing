@@ -1,0 +1,57 @@
+{
+  "badge": "Erinnerungen",
+  "heroTitle1": "Deine Reisen verdienen es,",
+  "heroTitle2": "verewigt zu werden",
+  "heroDescription": "Kollaboratives Fotoalbum und automatische Erstellung deines personalisierten Travel Books.",
+  "ctaButton": "Mein kostenloses Album erstellen",
+  "seoTitleFallback": "Erinnerungen - Reise-Fotoalbum",
+  "stats": {
+    "km": "km zurückgelegt",
+    "photos": "Fotos",
+    "countries": "besuchte Länder",
+    "days": "Tage",
+    "contributors": "Mitwirkende"
+  },
+  "travelBook": {
+    "badge": "KI-generiert",
+    "title": "Dein persönliches Travel Book",
+    "subtitle": "Die KI fasst deine schönsten Momente in einem wunderschönen Reisebuch zusammen",
+    "coverTitle": "Unsere Reise nach Japan",
+    "coverSubtitle": "März 2024",
+    "introText": "12 unvergessliche Tage durch das Land der aufgehenden Sonne...",
+    "introStats": "4 Städte • 156 Fotos • 2847 km",
+    "day1": "Tag 1",
+    "day1Title": "Erster Kontakt",
+    "day1Text": "Kulturschock gleich beim Verlassen des Flughafens. Die Neonlichter von Shinjuku, die geordnete Menschenmenge und diese erste Ramen um 2 Uhr nachts...",
+    "day2": "Tag 2",
+    "day2Title": "Tempel und Traditionen",
+    "day2Text": "Aufstehen im Morgengrauen für den Senso-ji-Tempel. Der Weihrauch, die Morgengebete, dann weiter nach Harajuku für den ultimativen Kontrast...",
+    "day3": "Tag 3",
+    "day3Title": "Das majestätische Kyoto",
+    "day3Text": "Der Shinkansen rast mit 300 km/h. Ankunft in Kyoto bei leichtem Regen. Die Bambuswälder von Arashiyama im Nebel, ein Moment wie angehalten...",
+    "caption1": "Ankunft in Tokio",
+    "caption2": "Senso-ji-Tempel",
+    "caption5": "Bambuswälder von Arashiyama"
+  },
+  "features": {
+    "title": "Viel mehr als ein Fotoalbum",
+    "subtitle": "Die ganze Geschichte deiner Reise, automatisch organisiert",
+    "items": [
+      { "title": "Kollaboratives Album", "description": "Die ganze Gruppe trägt bei, das Album entsteht gemeinsam in Echtzeit" },
+      { "title": "Interaktive Karte", "description": "Visualisiere deine Route mit geolokalisierten Fotos" },
+      { "title": "KI-Travel-Book", "description": "Automatische Erstellung einer stilvollen Zusammenfassung deines Abenteuers" },
+      { "title": "Einfaches Teilen", "description": "Privat, in der Gruppe oder öffentlich – du entscheidest, wer deine Erinnerungen sieht" }
+    ]
+  },
+  "cta": {
+    "title": "Bereit, deine Abenteuer zu verewigen?",
+    "subtitle": "Schließe dich Tausenden von Reisenden an, die ihre Erinnerungen mit WePlanify bewahren."
+  },
+  "faq": [
+    { "question": "Wie füge ich Fotos zu meiner Reise hinzu?", "answer": "Während oder nach deiner Reise fügst du einfach deine Fotos und Videos zu jedem Tag oder Ort deiner Route hinzu. Die App organisiert deine Medien automatisch nach Datum und GPS-Standort." },
+    { "question": "Kann ich ein geteiltes Album mit meiner Gruppe erstellen?", "answer": "Ja! Alle Reiseteilnehmer können ihre Fotos beisteuern. Das kollaborative Album entsteht automatisch und alle können die Erinnerungen der anderen in Echtzeit sehen." },
+    { "question": "Wie funktioniert die automatische Zusammenfassung?", "answer": "Am Ende deiner Reise erstellt die KI ein 'Travel Book' mit deinen besten Fotos, einer Karte deiner Route, Statistiken (zurückgelegte km, besuchte Länder) und den Höhepunkten." },
+    { "question": "Kann ich meine Erinnerungen öffentlich teilen?", "answer": "Du entscheidest: Halte deine Erinnerungen privat, teile sie nur mit deiner Gruppe oder veröffentliche sie auf deinem öffentlichen Profil, um andere Reisende zu inspirieren." },
+    { "question": "Werden die Fotos in hoher Qualität gespeichert?", "answer": "Ja, wir bewahren deine Fotos in Originalqualität auf. Du kannst sie jederzeit herunterladen oder zu Google Photos, iCloud oder Dropbox exportieren." }
+  ]
+}

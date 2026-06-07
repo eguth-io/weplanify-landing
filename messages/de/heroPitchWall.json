@@ -1,0 +1,41 @@
+{
+  "affiliateTag": "Du bist dran — was ist deine Traumreise?",
+  "h1": "Was ist deine Traumreise?\nBeschreib sie, wir machen daraus einen echten Plan.",
+  "placeholder": "Ich will an einem mexikanischen Strand chillen, mit Ruinen in der Nähe...",
+  "submit": "Stell sie dir vor",
+  "submitting": "Wir planen deine Reise...",
+  "cta": "Speichern & Freunde einladen",
+  "ctaNote": "Kostenlos — ohne Karte. Lade die Gruppe ein, stimmt über Termine ab, teilt die Rechnung.",
+  "retry": "Noch eine Idee",
+  "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuch es erneut.",
+  "errorRateLimit": "Zu viele Versuche. Bitte warte eine Minute.",
+  "bubbles": [
+    "Im März irgendwo warm, mit 4 Freunden",
+    "Flitterwochen ohne Touristenmassen",
+    "Japan mit Kindern, ohne Stress",
+    "Junggesellinnenabschied in Lissabon, max. 3 Tage",
+    "Roadtrip, um die Polarlichter zu sehen",
+    "Tapetenwechsel im November, nicht weit weg"
+  ],
+  "loadingSteps": [
+    "Wir lesen deinen Traum",
+    "Wir finden den perfekten Ort",
+    "Wir fotografieren die Landschaft",
+    "Wir entdecken lokale Spezialitäten"
+  ],
+  "stickyTags": ["unbedingt!", "liebe ich", "auf der Liste"],
+  "monthPicker": {
+    "label": "Wann?",
+    "unknown": "Weiß nicht"
+  },
+  "loading": {
+    "overline": "Wir suchen…",
+    "dreamLabel": "Dein Traum"
+  },
+  "whatAbout": "Wie wäre es mit…",
+  "connector": " — eher ",
+  "itinerary": {
+    "label": "Eine Routen-Idee",
+    "nights": "{n, plural, one {# Nacht} other {# Nächte}}"
+  }
+}

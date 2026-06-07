@@ -1,0 +1,41 @@
+{
+  "affiliateTag": "À toi — quel est ton voyage de rêve ?",
+  "h1": "Quel est ton voyage de rêve ?\nDécris-le, on t'en fait un vrai plan.",
+  "placeholder": "Je veux chiller sur une plage mexicaine avec des ruines...",
+  "submit": "Imagine-le",
+  "submitting": "On prépare ton voyage...",
+  "cta": "Lancer & inviter mes amis",
+  "ctaNote": "Gratuit — sans carte. Invite la team, votez les dates, partagez l'addition.",
+  "retry": "Un autre pitch",
+  "errorGeneric": "Une erreur est survenue. Réessaie.",
+  "errorRateLimit": "Trop de tentatives. Attends une minute.",
+  "bubbles": [
+    "Un truc chaud en mars avec 4 potes",
+    "Honeymoon sans les touristes",
+    "Japon en famille, sans s'épuiser",
+    "EVJF à Lisbonne, 3 jours max",
+    "Road trip voir les aurores",
+    "Dépaysement en novembre, pas loin"
+  ],
+  "loadingSteps": [
+    "On capte ton rêve",
+    "On trouve le lieu parfait",
+    "On photographie le paysage",
+    "On déniche les spécialités"
+  ],
+  "stickyTags": ["à voir!", "coup de cœur", "à goûter!"],
+  "monthPicker": {
+    "label": "Quand ?",
+    "unknown": "Je sais pas"
+  },
+  "loading": {
+    "overline": "On cherche…",
+    "dreamLabel": "Ton rêve"
+  },
+  "whatAbout": "Et si tu découvrais…",
+  "connector": " — plutôt ",
+  "itinerary": {
+    "label": "Itinéraire suggéré",
+    "nights": "{n, plural, one {# nuit} other {# nuits}}"
+  }
+}

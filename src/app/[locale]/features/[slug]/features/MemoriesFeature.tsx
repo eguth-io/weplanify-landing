@@ -7,6 +7,7 @@ import FeatureFAQ from "@/components/FeatureFAQ";
 import FeatureJsonLd from "@/components/FeatureJsonLd";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 interface FeaturePageData {
   slug: string;
@@ -31,120 +32,51 @@ interface FeaturePageData {
   seoDescription: string;
 }
 
-// Translations (Memories page has special translations not in Sanity)
-const translations = {
-  fr: {
-    badge: "Souvenirs",
-    heroTitle1: "Vos voyages méritent",
-    heroTitle2: "d'être immortalisés",
-    heroDescription: "Album photo collaboratif et génération automatique de votre Travel Book personnalisé.",
-    ctaButton: "Créer mon album gratuit",
-    stats: {
-      km: "km parcourus",
-      photos: "photos",
-      countries: "pays visités",
-      days: "jours",
-      contributors: "contributeurs"
-    },
-    travelBook: {
-      badge: "Généré par IA",
-      title: "Ton Travel Book personnel",
-      subtitle: "L'IA compile tes meilleurs moments dans un magnifique livre de voyage",
-      coverTitle: "Notre voyage au Japon",
-      coverSubtitle: "Mars 2024",
-      introText: "12 jours inoubliables à travers le pays du soleil levant...",
-      introStats: "4 villes • 156 photos • 2847 km",
-      day1: "Jour 1",
-      day1Title: "Premier contact",
-      day1Text: "Le choc culturel dès la sortie de l'aéroport. Les néons de Shinjuku, la foule ordonnée, et ce premier ramen à 2h du matin...",
-      day2: "Jour 2",
-      day2Title: "Temples et traditions",
-      day2Text: "Réveil aux aurores pour le temple Senso-ji. L'encens, les prières du matin, puis direction Harajuku pour le contraste ultime...",
-      day3: "Jour 3",
-      day3Title: "Kyoto la majestueuse",
-      day3Text: "Le Shinkansen file à 300km/h. Arrivée à Kyoto sous la pluie fine. Les bambous d'Arashiyama dans la brume, un moment suspendu...",
-      caption1: "Arrivée à Tokyo",
-      caption2: "Temple Senso-ji",
-      caption5: "Bambous d'Arashiyama",
-    },
-    features: {
-      title: "Bien plus qu'un album photo",
-      subtitle: "Toute l'histoire de ton voyage, automatiquement organisée",
-      items: [
-        { title: "Album collaboratif", description: "Tout le groupe contribue, l'album se construit ensemble en temps réel" },
-        { title: "Carte interactive", description: "Visualise ton parcours avec les photos géolocalisées" },
-        { title: "Travel Book IA", description: "Génération automatique d'un récap stylé de ton aventure" },
-        { title: "Partage facile", description: "Privé, groupe ou public - tu choisis qui voit tes souvenirs" }
-      ]
-    },
-    cta: {
-      title: "Prêt à immortaliser tes aventures ?",
-      subtitle: "Rejoins des milliers de voyageurs qui préservent leurs souvenirs avec WePlanify."
-    },
-    faq: [
-      { question: "Comment ajouter des photos à mon voyage ?", answer: "Pendant ou après ton voyage, ajoute simplement tes photos et vidéos à chaque jour ou lieu de ton itinéraire. L'app organise automatiquement tes médias par date et localisation GPS." },
-      { question: "Puis-je créer un album partagé avec mon groupe ?", answer: "Oui ! Tous les participants du voyage peuvent contribuer leurs photos. L'album collaboratif se construit automatiquement et chacun peut voir les souvenirs des autres en temps réel." },
-      { question: "Comment fonctionne le récapitulatif automatique ?", answer: "À la fin de ton voyage, l'IA génère un 'Travel Book' avec tes meilleures photos, une carte de ton parcours, des statistiques (km parcourus, pays visités) et les moments forts." },
-      { question: "Puis-je partager mes souvenirs publiquement ?", answer: "Tu choisis : garde tes souvenirs privés, partage-les uniquement avec ton groupe, ou publie-les sur ton profil public pour inspirer d'autres voyageurs." },
-      { question: "Les photos sont-elles stockées en haute qualité ?", answer: "Oui, nous conservons tes photos en qualité originale. Tu peux les télécharger à tout moment ou les exporter vers Google Photos, iCloud ou Dropbox." }
-    ]
-  },
-  en: {
-    badge: "Memories",
-    heroTitle1: "Your travels deserve",
-    heroTitle2: "to be immortalized",
-    heroDescription: "Collaborative photo album and automatic generation of your personalized Travel Book.",
-    ctaButton: "Create my free album",
-    stats: {
-      km: "km traveled",
-      photos: "photos",
-      countries: "countries visited",
-      days: "days",
-      contributors: "contributors"
-    },
-    travelBook: {
-      badge: "AI Generated",
-      title: "Your personal Travel Book",
-      subtitle: "AI compiles your best moments into a beautiful travel book",
-      coverTitle: "Our trip to Japan",
-      coverSubtitle: "March 2024",
-      introText: "12 unforgettable days through the land of the rising sun...",
-      introStats: "4 cities • 156 photos • 2847 km",
-      day1: "Day 1",
-      day1Title: "First contact",
-      day1Text: "Culture shock right from the airport exit. The neons of Shinjuku, the orderly crowd, and that first ramen at 2am...",
-      day2: "Day 2",
-      day2Title: "Temples and traditions",
-      day2Text: "Early wake up for Senso-ji temple. The incense, the morning prayers, then off to Harajuku for the ultimate contrast...",
-      day3: "Day 3",
-      day3Title: "Majestic Kyoto",
-      day3Text: "The Shinkansen speeds at 300km/h. Arrival in Kyoto under light rain. The bamboos of Arashiyama in the mist, a suspended moment...",
-      caption1: "Arrival in Tokyo",
-      caption2: "Senso-ji Temple",
-      caption5: "Arashiyama bamboos",
-    },
-    features: {
-      title: "More than a photo album",
-      subtitle: "Your entire travel story, automatically organized",
-      items: [
-        { title: "Collaborative album", description: "The whole group contributes, the album builds together in real-time" },
-        { title: "Interactive map", description: "Visualize your journey with geolocated photos" },
-        { title: "AI Travel Book", description: "Automatic generation of a stylish recap of your adventure" },
-        { title: "Easy sharing", description: "Private, group or public - you choose who sees your memories" }
-      ]
-    },
-    cta: {
-      title: "Ready to immortalize your adventures?",
-      subtitle: "Join thousands of travelers who preserve their memories with WePlanify."
-    },
-    faq: [
-      { question: "How do I add photos to my trip?", answer: "During or after your trip, simply add your photos and videos to each day or place in your itinerary. The app automatically organizes your media by date and GPS location." },
-      { question: "Can I create a shared album with my group?", answer: "Yes! All trip participants can contribute their photos. The collaborative album builds automatically and everyone can see each other's memories in real-time." },
-      { question: "How does the automatic recap work?", answer: "At the end of your trip, AI generates a 'Travel Book' with your best photos, a map of your journey, statistics (km traveled, countries visited) and highlights." },
-      { question: "Can I share my memories publicly?", answer: "You choose: keep your memories private, share them only with your group, or publish them on your public profile to inspire other travelers." },
-      { question: "Are photos stored in high quality?", answer: "Yes, we keep your photos in original quality. You can download them at any time or export them to Google Photos, iCloud or Dropbox." }
-    ]
-  }
+type MemoriesContent = {
+  badge: string;
+  heroTitle1: string;
+  heroTitle2: string;
+  heroDescription: string;
+  ctaButton: string;
+  seoTitleFallback: string;
+  stats: {
+    km: string;
+    photos: string;
+    countries: string;
+    days: string;
+    contributors: string;
+  };
+  travelBook: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    coverTitle: string;
+    coverSubtitle: string;
+    introText: string;
+    introStats: string;
+    day1: string;
+    day1Title: string;
+    day1Text: string;
+    day2: string;
+    day2Title: string;
+    day2Text: string;
+    day3: string;
+    day3Title: string;
+    day3Text: string;
+    caption1: string;
+    caption2: string;
+    caption5: string;
+  };
+  features: {
+    title: string;
+    subtitle: string;
+    items: { title: string; description: string }[];
+  };
+  cta: {
+    title: string;
+    subtitle: string;
+  };
+  faq: { question: string; answer: string }[];
 };
 
 const samplePhotos = [
@@ -262,7 +194,7 @@ function TypewriterText({ text, delay = 0, className = "" }: { text: string; del
   );
 }
 
-function TravelBook({ t }: { t: typeof translations.fr }) {
+function TravelBook({ t }: { t: MemoriesContent }) {
   const [currentPage, setCurrentPage] = useState(0);
 
   const pages = [
@@ -347,7 +279,20 @@ export default function MemoriesFeature({ data }: { data: FeaturePageData }) {
   const [activePhoto, setActivePhoto] = useState(2);
   const pathname = usePathname();
   const locale = pathname?.split('/')[1] === 'en' ? 'en' : 'fr';
-  const t = translations[locale];
+  const tr = useTranslations("memoriesFeature");
+  const t: MemoriesContent = {
+    badge: tr("badge"),
+    heroTitle1: tr("heroTitle1"),
+    heroTitle2: tr("heroTitle2"),
+    heroDescription: tr("heroDescription"),
+    ctaButton: tr("ctaButton"),
+    seoTitleFallback: tr("seoTitleFallback"),
+    stats: tr.raw("stats") as MemoriesContent["stats"],
+    travelBook: tr.raw("travelBook") as MemoriesContent["travelBook"],
+    features: tr.raw("features") as MemoriesContent["features"],
+    cta: tr.raw("cta") as MemoriesContent["cta"],
+    faq: tr.raw("faq") as MemoriesContent["faq"],
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -359,7 +304,7 @@ export default function MemoriesFeature({ data }: { data: FeaturePageData }) {
   return (
     <>
       <FeatureJsonLd
-        featureName={data.seoTitle || (locale === 'en' ? "Memories - Travel Photo Album" : "Souvenirs - Album Photo de Voyage")}
+        featureName={data.seoTitle || t.seoTitleFallback}
         featureDescription={data.seoDescription || t.heroDescription}
         locale={locale}
         slug="memories"

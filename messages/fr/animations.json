@@ -1,0 +1,44 @@
+{
+  "explorerFilters": {
+    "activity": "Activités",
+    "restaurant": "Restaurants",
+    "hotel": "Hébergement",
+    "transport": "Transport"
+  },
+  "explorerBooked": "Réservé",
+  "liveVoting": {
+    "question": "Où dormir à Lisbonne ?",
+    "category": "Hébergement",
+    "creator": "Marie",
+    "createdLabel": "Créé le",
+    "endsLabel": "Termine le",
+    "createdDate": "14 mai",
+    "endsDate": "20 mai",
+    "dayRange": "15 → 17 mai",
+    "status": "Voter maintenant",
+    "single": "Choix unique",
+    "options": "options",
+    "yourVote": "Ton vote",
+    "votes": "votes",
+    "vote": "vote",
+    "sendReminders": "Rappels",
+    "seeOnTimeline": "Timeline",
+    "comments": "Commentaires",
+    "details": "Détails"
+  },
+  "swipeExplorer": {
+    "header": "Découvre Tokyo",
+    "category": {
+      "activity": "Activité",
+      "food": "Cuisine",
+      "hotel": "Hôtel"
+    },
+    "liked": "{count, plural, one {aimé} other {aimés}}"
+  },
+  "liveCollaboration": {
+    "dayOf": "Jour 2 sur 5",
+    "date": "Mer. 15 mai",
+    "city": "Paris",
+    "booked": "Réservé"
+  }
+}

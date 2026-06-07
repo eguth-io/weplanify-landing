@@ -1,0 +1,44 @@
+{
+  "explorerFilters": {
+    "activity": "Attività",
+    "restaurant": "Ristoranti",
+    "hotel": "Alloggi",
+    "transport": "Trasporti"
+  },
+  "explorerBooked": "Prenotato",
+  "liveVoting": {
+    "question": "Dove alloggiare a Lisbona?",
+    "category": "Alloggio",
+    "creator": "Marie",
+    "createdLabel": "Creato il",
+    "endsLabel": "Termina il",
+    "createdDate": "14 mag",
+    "endsDate": "20 mag",
+    "dayRange": "15 → 17 mag",
+    "status": "Vota ora",
+    "single": "Scelta singola",
+    "options": "opzioni",
+    "yourVote": "Il tuo voto",
+    "votes": "voti",
+    "vote": "voto",
+    "sendReminders": "Promemoria",
+    "seeOnTimeline": "Cronologia",
+    "comments": "Commenti",
+    "details": "Dettagli"
+  },
+  "swipeExplorer": {
+    "header": "Esplora Tokyo",
+    "category": {
+      "activity": "Attività",
+      "food": "Cucina",
+      "hotel": "Hotel"
+    },
+    "liked": "mi piace"
+  },
+  "liveCollaboration": {
+    "dayOf": "Giorno 2 di 5",
+    "date": "Mer 15 mag",
+    "city": "Parigi",
+    "booked": "Prenotato"
+  }
+}

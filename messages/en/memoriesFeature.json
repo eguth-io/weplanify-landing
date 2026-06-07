@@ -1,0 +1,57 @@
+{
+  "badge": "Memories",
+  "heroTitle1": "Your travels deserve",
+  "heroTitle2": "to be immortalized",
+  "heroDescription": "Collaborative photo album and automatic generation of your personalized Travel Book.",
+  "ctaButton": "Create my free album",
+  "seoTitleFallback": "Memories - Travel Photo Album",
+  "stats": {
+    "km": "km traveled",
+    "photos": "photos",
+    "countries": "countries visited",
+    "days": "days",
+    "contributors": "contributors"
+  },
+  "travelBook": {
+    "badge": "AI Generated",
+    "title": "Your personal Travel Book",
+    "subtitle": "AI compiles your best moments into a beautiful travel book",
+    "coverTitle": "Our trip to Japan",
+    "coverSubtitle": "March 2024",
+    "introText": "12 unforgettable days through the land of the rising sun...",
+    "introStats": "4 cities • 156 photos • 2847 km",
+    "day1": "Day 1",
+    "day1Title": "First contact",
+    "day1Text": "Culture shock right from the airport exit. The neons of Shinjuku, the orderly crowd, and that first ramen at 2am...",
+    "day2": "Day 2",
+    "day2Title": "Temples and traditions",
+    "day2Text": "Early wake up for Senso-ji temple. The incense, the morning prayers, then off to Harajuku for the ultimate contrast...",
+    "day3": "Day 3",
+    "day3Title": "Majestic Kyoto",
+    "day3Text": "The Shinkansen speeds at 300km/h. Arrival in Kyoto under light rain. The bamboos of Arashiyama in the mist, a suspended moment...",
+    "caption1": "Arrival in Tokyo",
+    "caption2": "Senso-ji Temple",
+    "caption5": "Arashiyama bamboos"
+  },
+  "features": {
+    "title": "More than a photo album",
+    "subtitle": "Your entire travel story, automatically organized",
+    "items": [
+      { "title": "Collaborative album", "description": "The whole group contributes, the album builds together in real-time" },
+      { "title": "Interactive map", "description": "Visualize your journey with geolocated photos" },
+      { "title": "AI Travel Book", "description": "Automatic generation of a stylish recap of your adventure" },
+      { "title": "Easy sharing", "description": "Private, group or public - you choose who sees your memories" }
+    ]
+  },
+  "cta": {
+    "title": "Ready to immortalize your adventures?",
+    "subtitle": "Join thousands of travelers who preserve their memories with WePlanify."
+  },
+  "faq": [
+    { "question": "How do I add photos to my trip?", "answer": "During or after your trip, simply add your photos and videos to each day or place in your itinerary. The app automatically organizes your media by date and GPS location." },
+    { "question": "Can I create a shared album with my group?", "answer": "Yes! All trip participants can contribute their photos. The collaborative album builds automatically and everyone can see each other's memories in real-time." },
+    { "question": "How does the automatic recap work?", "answer": "At the end of your trip, AI generates a 'Travel Book' with your best photos, a map of your journey, statistics (km traveled, countries visited) and highlights." },
+    { "question": "Can I share my memories publicly?", "answer": "You choose: keep your memories private, share them only with your group, or publish them on your public profile to inspire other travelers." },
+    { "question": "Are photos stored in high quality?", "answer": "Yes, we keep your photos in original quality. You can download them at any time or export them to Google Photos, iCloud or Dropbox." }
+  ]
+}

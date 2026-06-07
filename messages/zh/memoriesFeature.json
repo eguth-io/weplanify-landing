@@ -1,0 +1,57 @@
+{
+  "badge": "回忆",
+  "heroTitle1": "你的旅行值得",
+  "heroTitle2": "被永久珍藏",
+  "heroDescription": "协作式相册，自动生成你的专属 Travel Book。",
+  "ctaButton": "免费创建我的相册",
+  "seoTitleFallback": "回忆 - 旅行相册",
+  "stats": {
+    "km": "公里行程",
+    "photos": "张照片",
+    "countries": "个国家",
+    "days": "天",
+    "contributors": "位贡献者"
+  },
+  "travelBook": {
+    "badge": "AI 生成",
+    "title": "你的专属 Travel Book",
+    "subtitle": "AI 将你最美好的瞬间汇编成一本精美的旅行图册",
+    "coverTitle": "我们的日本之旅",
+    "coverSubtitle": "2024 年 3 月",
+    "introText": "在日出之国度过的 12 个难忘的日子……",
+    "introStats": "4 座城市 • 156 张照片 • 2847 公里",
+    "day1": "第 1 天",
+    "day1Title": "初次相遇",
+    "day1Text": "一出机场就受到文化冲击。新宿的霓虹灯、井然有序的人群，还有凌晨 2 点的第一碗拉面……",
+    "day2": "第 2 天",
+    "day2Title": "寺庙与传统",
+    "day2Text": "黎明时分起身前往浅草寺。线香、清晨的祈祷，随后前往原宿感受极致的反差……",
+    "day3": "第 3 天",
+    "day3Title": "壮丽的京都",
+    "day3Text": "新干线以 300 公里的时速飞驰。在细雨中抵达京都。雾中的岚山竹林，仿佛时间静止的一刻……",
+    "caption1": "抵达东京",
+    "caption2": "浅草寺",
+    "caption5": "岚山竹林"
+  },
+  "features": {
+    "title": "远不止是一本相册",
+    "subtitle": "你旅程的完整故事，自动整理成册",
+    "items": [
+      { "title": "协作相册", "description": "整个团队共同贡献，相册实时一起构建" },
+      { "title": "互动地图", "description": "用带地理位置的照片可视化你的行程" },
+      { "title": "AI Travel Book", "description": "自动生成一份风格十足的冒险回顾" },
+      { "title": "轻松分享", "description": "私密、群组或公开——由你决定谁能看到你的回忆" }
+    ]
+  },
+  "cta": {
+    "title": "准备好珍藏你的冒险了吗？",
+    "subtitle": "加入成千上万使用 WePlanify 保存回忆的旅行者。"
+  },
+  "faq": [
+    { "question": "如何为我的旅行添加照片？", "answer": "在旅行期间或之后，只需将照片和视频添加到行程的每一天或每个地点。应用会按日期和 GPS 位置自动整理你的素材。" },
+    { "question": "我可以和团队创建共享相册吗？", "answer": "可以！所有旅行参与者都能贡献自己的照片。协作相册会自动构建，每个人都能实时看到彼此的回忆。" },
+    { "question": "自动回顾是如何运作的？", "answer": "旅行结束时，AI 会生成一本 “Travel Book”，包含你最精彩的照片、行程地图、统计数据（行程公里数、到访国家）以及高光时刻。" },
+    { "question": "我可以公开分享我的回忆吗？", "answer": "由你选择：将回忆设为私密、仅与团队分享，或发布到你的公开主页以启发其他旅行者。" },
+    { "question": "照片会以高质量存储吗？", "answer": "会的，我们以原始质量保存你的照片。你可以随时下载，或导出到 Google Photos、iCloud 或 Dropbox。" }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "affiliateTag": "Your turn — what's your dream trip?",
+  "h1": "What's your dream trip?\nDescribe it, we'll turn it into a real plan.",
+  "placeholder": "I want to chill on a Mexican beach with ruins nearby...",
+  "submit": "Imagine it",
+  "submitting": "Crafting your trip...",
+  "cta": "Save & invite friends",
+  "ctaNote": "Free — no card. Invite the group, vote on dates, split the bill.",
+  "retry": "Another pitch",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "errorRateLimit": "Too many tries. Please wait a minute.",
+  "bubbles": [
+    "Somewhere warm in March with 4 friends",
+    "Honeymoon without the crowds",
+    "Japan with kids, not exhausting",
+    "Bachelorette in Lisbon, 3 days max",
+    "Road trip to see the auroras",
+    "Change of scenery, close by, November"
+  ],
+  "loadingSteps": [
+    "Reading your dream",
+    "Picking the perfect spot",
+    "Snapshotting the landscape",
+    "Uncovering local flavors"
+  ],
+  "stickyTags": ["must-see!", "love this", "on the list"],
+  "monthPicker": {
+    "label": "When?",
+    "unknown": "Not sure"
+  },
+  "loading": {
+    "overline": "Looking for…",
+    "dreamLabel": "Your dream"
+  },
+  "whatAbout": "What about…",
+  "connector": " — more like ",
+  "itinerary": {
+    "label": "An itinerary idea",
+    "nights": "{n, plural, one {# night} other {# nights}}"
+  }
+}

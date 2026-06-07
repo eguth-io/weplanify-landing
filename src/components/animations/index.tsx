@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useAnimation } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 // ============================================================================
 // DESIGN SYSTEM - Weplanify Brand Colors
@@ -223,15 +224,14 @@ interface ExplorerCategoryData {
 
 interface ExplorerFilterDef {
   key: ExplorerCategoryKey;
-  label: Record<'en' | 'fr', string>;
   icon: keyof typeof Icons;
 }
 
 const EXPLORER_FILTERS: ExplorerFilterDef[] = [
-  { key: 'activity', label: { en: 'Activities', fr: 'Activités' }, icon: 'Camera' },
-  { key: 'restaurant', label: { en: 'Restaurants', fr: 'Restaurants' }, icon: 'Utensils' },
-  { key: 'hotel', label: { en: 'Hotels', fr: 'Hébergement' }, icon: 'Bed' },
-  { key: 'transport', label: { en: 'Transport', fr: 'Transport' }, icon: 'Train' },
+  { key: 'activity', icon: 'Camera' },
+  { key: 'restaurant', icon: 'Utensils' },
+  { key: 'hotel', icon: 'Bed' },
+  { key: 'transport', icon: 'Train' },
 ];
 
 const EXPLORER_FILTER_KEYS: ExplorerCategoryKey[] = EXPLORER_FILTERS.map((f) => f.key);
@@ -391,6 +391,7 @@ export function ExplorerCards({
   // filter tabs to switch category, and the whole panel does one gentle
   // fade-in when it scrolls into view. All content (cards, map, pins, tabs) is
   // preserved — only the motion is toned down.
+  const t = useTranslations('animations');
   const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
   const [activeFilter, setActiveFilter] = useState<ExplorerCategoryKey>(EXPLORER_FILTER_KEYS[0]);
   const isList = layout === 'list';
@@ -439,7 +440,7 @@ export function ExplorerCards({
             >
               <Icon className={`w-3 h-3 ${isActive ? 'text-slate-900' : 'text-slate-500'}`} />
               <span className={`text-[11px] font-medium ${isActive ? 'text-slate-900' : 'text-slate-500'}`}>
-                {f.label[lang]}
+                {t(`explorerFilters.${f.key}`)}
               </span>
             </button>
           );
@@ -664,7 +665,7 @@ export function ExplorerCards({
                     {sugg.booked && (
                       <div className="absolute top-1.5 left-1.5 z-10 flex items-center gap-0.5 rounded-full bg-emerald-500/85 px-1.5 py-0.5">
                         <Icons.Check className="w-2.5 h-2.5 text-white" />
-                        <span className="text-[9px] font-semibold text-white">{lang === 'fr' ? 'Réservé' : 'Booked'}</span>
+                        <span className="text-[9px] font-semibold text-white">{t('explorerBooked')}</span>
                       </div>
                     )}
 
@@ -824,7 +825,7 @@ export function ExplorerCards({
           {/* Suggestion count label (mirrors the real Explorer's '(N) results' label) */}
           <div className="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-white/95 shadow-md px-2 py-0.5 z-10">
             <Icons.MapPin className="w-3 h-3 text-slate-700" />
-            <span className="text-[10px] font-medium text-slate-800">{category.suggestions.length} {EXPLORER_FILTERS.find(f => f.key === activeFilter)?.label[lang]}</span>
+            <span className="text-[10px] font-medium text-slate-800">{category.suggestions.length} {t(`explorerFilters.${activeFilter}`)}</span>
           </div>
         </div>
       </div>
@@ -891,47 +892,7 @@ const POLL_VOTERS_SCRIPT: PollVoter[] = [
 
 export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
   const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
-  const t = lang === 'fr'
-    ? {
-        question: 'Où dormir à Lisbonne ?',
-        category: 'Hébergement',
-        creator: 'Marie',
-        createdLabel: 'Créé le',
-        endsLabel: 'Termine le',
-        createdDate: '14 mai',
-        endsDate: '20 mai',
-        dayRange: '15 → 17 mai',
-        status: 'Voter maintenant',
-        single: 'Choix unique',
-        options: 'options',
-        yourVote: 'Ton vote',
-        votes: 'votes',
-        vote: 'vote',
-        sendReminders: 'Rappels',
-        seeOnTimeline: 'Timeline',
-        comments: 'Commentaires',
-        details: 'Détails',
-      }
-    : {
-        question: 'Where to stay in Lisbon?',
-        category: 'Accommodation',
-        creator: 'Marie',
-        createdLabel: 'Created on',
-        endsLabel: 'Ends on',
-        createdDate: 'May 14',
-        endsDate: 'May 20',
-        dayRange: 'May 15 → 17',
-        status: 'Vote now',
-        single: 'Single choice',
-        options: 'options',
-        yourVote: 'Your vote',
-        votes: 'votes',
-        vote: 'vote',
-        sendReminders: 'Reminders',
-        seeOnTimeline: 'Timeline',
-        comments: 'Comments',
-        details: 'Details',
-      };
+  const t = useTranslations('animations');
 
   const choices = lang === 'fr' ? POLL_CHOICES_FR : POLL_CHOICES_EN;
   const [voters, setVoters] = useState<PollVoter[]>([]);
@@ -961,22 +922,22 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
           <div className="relative w-9 h-9 lg:w-10 lg:h-10 shrink-0 rounded-full overflow-hidden ring-2 ring-white shadow-sm">
             <img
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&q=80&fit=crop"
-              alt={t.creator}
+              alt={t('liveVoting.creator')}
               className="absolute inset-0 w-full h-full object-cover"
               loading="eager"
             />
           </div>
           <div className="min-w-0 leading-tight">
-            <p className="text-[13px] font-semibold text-slate-900 truncate">{t.creator}</p>
+            <p className="text-[13px] font-semibold text-slate-900 truncate">{t('liveVoting.creator')}</p>
             {/* Created · Ends · Day range row */}
             <div className="flex items-center gap-1.5 text-[10px] text-slate-500 mt-0.5 flex-wrap">
               <Icons.Calendar className="w-2.5 h-2.5 shrink-0" />
-              <span>{t.createdLabel} {t.createdDate}</span>
+              <span>{t('liveVoting.createdLabel')} {t('liveVoting.createdDate')}</span>
               <span className="text-slate-300">•</span>
-              <span>{t.endsLabel} {t.endsDate}</span>
+              <span>{t('liveVoting.endsLabel')} {t('liveVoting.endsDate')}</span>
               <span className="text-slate-300">•</span>
               {/* Day-range badge — primary color, only renders when the poll is linked to event days */}
-              <span className="font-medium" style={{ color: colors.primary }}>{t.dayRange}</span>
+              <span className="font-medium" style={{ color: colors.primary }}>{t('liveVoting.dayRange')}</span>
             </div>
           </div>
         </div>
@@ -989,7 +950,7 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
             style={{ borderColor: `${SLEEPING_COLOR}4D`, backgroundColor: `${SLEEPING_COLOR}1A`, color: SLEEPING_COLOR }}
           >
             <Icons.Bed className="w-2.5 h-2.5" />
-            <span className="hidden lg:inline">{t.category}</span>
+            <span className="hidden lg:inline">{t('liveVoting.category')}</span>
           </span>
           {/* Status badge — amber "Vote now" with AlertCircle */}
           <span
@@ -1001,7 +962,7 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
               <line x1="12" y1="8" x2="12" y2="12" />
               <line x1="12" y1="16" x2="12.01" y2="16" />
             </svg>
-            <span>{t.status}</span>
+            <span>{t('liveVoting.status')}</span>
           </span>
           {/* 3-dots menu */}
           <button className="flex w-6 h-6 items-center justify-center rounded-full text-slate-400 hover:bg-slate-100" aria-label="More">
@@ -1016,12 +977,12 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
 
       {/* Question section — px-5 py-4 */}
       <div className="px-4 lg:px-5 py-3">
-        <h3 className="text-[15px] lg:text-base font-semibold text-slate-900 leading-snug">{t.question}</h3>
+        <h3 className="text-[15px] lg:text-base font-semibold text-slate-900 leading-snug">{t('liveVoting.question')}</h3>
         <div className="mt-1.5 flex items-center gap-2">
           <span className="inline-flex items-center rounded-full border border-slate-200 bg-white px-2 py-0.5 text-[10px] font-medium text-slate-600">
-            {t.single}
+            {t('liveVoting.single')}
           </span>
-          <span className="text-[10px] text-slate-500">{choices.length} {t.options}</span>
+          <span className="text-[10px] text-slate-500">{choices.length} {t('liveVoting.options')}</span>
         </div>
       </div>
 
@@ -1065,7 +1026,7 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
                     <h4 className="text-[12px] font-semibold text-slate-900 truncate leading-tight">{choice.title}</h4>
                     {isUserVote && (
                       <span className="text-[9px] font-medium" style={{ color: `${colors.poll}B3` }}>
-                        {t.yourVote}
+                        {t('liveVoting.yourVote')}
                       </span>
                     )}
                   </div>
@@ -1105,7 +1066,7 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
                     {percentage}%
                   </span>
                   <span className="text-[9px] text-slate-500 mt-1">
-                    {votesForChoice} {votesForChoice === 1 ? t.vote : t.votes}
+                    {votesForChoice} {votesForChoice === 1 ? t('liveVoting.vote') : t('liveVoting.votes')}
                   </span>
                 </div>
               </div>
@@ -1133,34 +1094,34 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
           <span className="font-medium text-slate-700">{totalVotes}</span>
           <span className="text-slate-300">/</span>
           <span>{totalParticipants}</span>
-          <span>{totalVotes !== 1 ? t.votes : t.vote}</span>
+          <span>{totalVotes !== 1 ? t('liveVoting.votes') : t('liveVoting.vote')}</span>
         </span>
         <div className="flex items-center gap-0.5">
           {/* Send Reminders */}
-          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.sendReminders}>
+          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t('liveVoting.sendReminders')}>
             <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
               <path d="M13.73 21a2 2 0 0 1-3.46 0" />
             </svg>
-            <span className="hidden lg:inline">{t.sendReminders}</span>
+            <span className="hidden lg:inline">{t('liveVoting.sendReminders')}</span>
           </button>
           {/* Timeline */}
-          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.seeOnTimeline}>
+          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t('liveVoting.seeOnTimeline')}>
             <Icons.Calendar className="w-3 h-3" />
-            <span className="hidden lg:inline">{t.seeOnTimeline}</span>
+            <span className="hidden lg:inline">{t('liveVoting.seeOnTimeline')}</span>
           </button>
           {/* Comments with unread badge */}
-          <button className="relative flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.comments}>
+          <button className="relative flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t('liveVoting.comments')}>
             <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
-            <span className="hidden lg:inline">{t.comments}</span>
+            <span className="hidden lg:inline">{t('liveVoting.comments')}</span>
             <span className="absolute -top-0.5 -right-0.5 flex h-3 min-w-3 items-center justify-center rounded-full px-0.5 text-[8px] font-bold text-white" style={{ backgroundColor: colors.primary }}>
               2
             </span>
           </button>
           {/* Details */}
-          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t.details}>
+          <button className="flex h-6 items-center gap-1 rounded-md px-1.5 text-[10px] text-slate-600 hover:bg-slate-100" aria-label={t('liveVoting.details')}>
             <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="8" y1="6" x2="21" y2="6" />
               <line x1="8" y1="12" x2="21" y2="12" />
@@ -1169,7 +1130,7 @@ export function LiveVoting({ autoPlay = true, locale = 'en' }: { autoPlay?: bool
               <line x1="3" y1="12" x2="3.01" y2="12" />
               <line x1="3" y1="18" x2="3.01" y2="18" />
             </svg>
-            <span className="hidden lg:inline">{t.details}</span>
+            <span className="hidden lg:inline">{t('liveVoting.details')}</span>
           </button>
         </div>
       </div>
@@ -1387,21 +1348,15 @@ export function BudgetSplit({ autoPlay = true }: { autoPlay?: boolean }) {
 // ============================================================================
 export function SwipeExplorer({
   autoPlay = true,
-  locale = 'en',
   size = 'compact',
 }: {
   autoPlay?: boolean;
   locale?: string;
   size?: 'compact' | 'large';
 }) {
-  const lang = locale === 'fr' ? 'fr' : 'en';
-  const headerLabel = lang === 'fr' ? 'Découvre Tokyo' : 'Explore Tokyo';
+  const t = useTranslations('animations');
+  const headerLabel = t('swipeExplorer.header');
   const isLarge = size === 'large';
-  const categoryLabels = {
-    activity: { en: 'Activity', fr: 'Activité' },
-    food: { en: 'Food', fr: 'Cuisine' },
-    hotel: { en: 'Hotel', fr: 'Hôtel' },
-  } as const;
   const places: Array<{ name: string; type: 'activity' | 'food' | 'hotel'; rating: number; color: string }> = [
     { name: 'Senso-ji Temple', type: 'activity', rating: 4.9, color: colors.activities },
     { name: 'Ichiran Ramen', type: 'food', rating: 4.8, color: colors.food },
@@ -1489,7 +1444,7 @@ export function SwipeExplorer({
           >
             <Icons.Heart className="w-3.5 h-3.5 text-red-500" />
             <span className="text-xs font-bold text-slate-700">
-              {likedCount} {lang === 'fr' ? 'aimé' + (likedCount > 1 ? 's' : '') : 'liked'}
+              {likedCount} {t('swipeExplorer.liked', { count: likedCount })}
             </span>
           </motion.div>
         )}
@@ -1499,7 +1454,7 @@ export function SwipeExplorer({
         {places.map((place, i) => {
           if (i < currentCard) return null;
           const isTop = i === currentCard;
-          const categoryLabel = categoryLabels[place.type][lang];
+          const categoryLabel = t(`swipeExplorer.category.${place.type}`);
 
           return (
             <motion.div
@@ -1691,9 +1646,7 @@ function fmtHour(h: number): string {
 
 export function LiveCollaboration({ autoPlay = true, locale = 'en' }: { autoPlay?: boolean; locale?: string }) {
   const lang: 'en' | 'fr' = locale === 'fr' ? 'fr' : 'en';
-  const t = lang === 'fr'
-    ? { dayOf: 'Jour 2 sur 5', date: 'Mer. 15 mai', city: 'Paris', booked: 'Réservé' }
-    : { dayOf: 'Day 2 of 5', date: 'Wed, May 15', city: 'Paris', booked: 'Booked' };
+  const t = useTranslations('animations');
 
   const items = lang === 'fr' ? ITINERARY_ITEMS_FR : ITINERARY_ITEMS_EN;
   const [visibleCount, setVisibleCount] = useState(autoPlay ? 0 : items.length);
@@ -1725,9 +1678,9 @@ export function LiveCollaboration({ autoPlay = true, locale = 'en' }: { autoPlay
           </svg>
         </button>
         <div className="text-center leading-tight">
-          <div className="text-[10px] uppercase tracking-wide text-slate-400 font-medium">{t.dayOf}</div>
-          <div className="text-[13px] font-semibold text-slate-900">{t.date}</div>
-          <div className="text-[10px] text-slate-500">{t.city}</div>
+          <div className="text-[10px] uppercase tracking-wide text-slate-400 font-medium">{t('liveCollaboration.dayOf')}</div>
+          <div className="text-[13px] font-semibold text-slate-900">{t('liveCollaboration.date')}</div>
+          <div className="text-[10px] text-slate-500">{t('liveCollaboration.city')}</div>
         </div>
         <button className="flex w-6 h-6 items-center justify-center rounded-full hover:bg-slate-100" aria-label="Next day">
           <svg className="w-3.5 h-3.5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -1797,7 +1750,7 @@ export function LiveCollaboration({ autoPlay = true, locale = 'en' }: { autoPlay
                     {item.booked && (
                       <span className="ml-auto flex items-center gap-0.5 rounded-full bg-emerald-100 px-1.5 py-0.5 text-[8px] font-semibold text-emerald-700">
                         <Icons.Check className="w-2 h-2" />
-                        {t.booked}
+                        {t('liveCollaboration.booked')}
                       </span>
                     )}
                   </div>

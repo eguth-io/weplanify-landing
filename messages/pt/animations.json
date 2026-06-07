@@ -1,0 +1,44 @@
+{
+  "explorerFilters": {
+    "activity": "Atividades",
+    "restaurant": "Restaurantes",
+    "hotel": "Alojamento",
+    "transport": "Transporte"
+  },
+  "explorerBooked": "Reservado",
+  "liveVoting": {
+    "question": "Onde ficar em Lisboa?",
+    "category": "Alojamento",
+    "creator": "Marie",
+    "createdLabel": "Criado em",
+    "endsLabel": "Termina em",
+    "createdDate": "14 mai",
+    "endsDate": "20 mai",
+    "dayRange": "15 → 17 mai",
+    "status": "Vote agora",
+    "single": "Escolha única",
+    "options": "opções",
+    "yourVote": "Seu voto",
+    "votes": "votos",
+    "vote": "voto",
+    "sendReminders": "Lembretes",
+    "seeOnTimeline": "Cronograma",
+    "comments": "Comentários",
+    "details": "Detalhes"
+  },
+  "swipeExplorer": {
+    "header": "Explore Tóquio",
+    "category": {
+      "activity": "Atividade",
+      "food": "Comida",
+      "hotel": "Hotel"
+    },
+    "liked": "{count, plural, one {curtido} other {curtidos}}"
+  },
+  "liveCollaboration": {
+    "dayOf": "Dia 2 de 5",
+    "date": "Qua, 15 mai",
+    "city": "Paris",
+    "booked": "Reservado"
+  }
+}

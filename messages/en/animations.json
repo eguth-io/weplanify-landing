@@ -1,0 +1,44 @@
+{
+  "explorerFilters": {
+    "activity": "Activities",
+    "restaurant": "Restaurants",
+    "hotel": "Hotels",
+    "transport": "Transport"
+  },
+  "explorerBooked": "Booked",
+  "liveVoting": {
+    "question": "Where to stay in Lisbon?",
+    "category": "Accommodation",
+    "creator": "Marie",
+    "createdLabel": "Created on",
+    "endsLabel": "Ends on",
+    "createdDate": "May 14",
+    "endsDate": "May 20",
+    "dayRange": "May 15 → 17",
+    "status": "Vote now",
+    "single": "Single choice",
+    "options": "options",
+    "yourVote": "Your vote",
+    "votes": "votes",
+    "vote": "vote",
+    "sendReminders": "Reminders",
+    "seeOnTimeline": "Timeline",
+    "comments": "Comments",
+    "details": "Details"
+  },
+  "swipeExplorer": {
+    "header": "Explore Tokyo",
+    "category": {
+      "activity": "Activity",
+      "food": "Food",
+      "hotel": "Hotel"
+    },
+    "liked": "liked"
+  },
+  "liveCollaboration": {
+    "dayOf": "Day 2 of 5",
+    "date": "Wed, May 15",
+    "city": "Paris",
+    "booked": "Booked"
+  }
+}

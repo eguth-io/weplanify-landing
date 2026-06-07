@@ -1,0 +1,44 @@
+{
+  "explorerFilters": {
+    "activity": "Actividades",
+    "restaurant": "Restaurantes",
+    "hotel": "Alojamiento",
+    "transport": "Transporte"
+  },
+  "explorerBooked": "Reservado",
+  "liveVoting": {
+    "question": "¿Dónde alojarse en Lisboa?",
+    "category": "Alojamiento",
+    "creator": "Marie",
+    "createdLabel": "Creado el",
+    "endsLabel": "Termina el",
+    "createdDate": "14 may",
+    "endsDate": "20 may",
+    "dayRange": "15 → 17 may",
+    "status": "Vota ahora",
+    "single": "Elección única",
+    "options": "opciones",
+    "yourVote": "Tu voto",
+    "votes": "votos",
+    "vote": "voto",
+    "sendReminders": "Recordatorios",
+    "seeOnTimeline": "Cronología",
+    "comments": "Comentarios",
+    "details": "Detalles"
+  },
+  "swipeExplorer": {
+    "header": "Explora Tokio",
+    "category": {
+      "activity": "Actividad",
+      "food": "Comida",
+      "hotel": "Hotel"
+    },
+    "liked": "me gusta"
+  },
+  "liveCollaboration": {
+    "dayOf": "Día 2 de 5",
+    "date": "Mié 15 may",
+    "city": "París",
+    "booked": "Reservado"
+  }
+}

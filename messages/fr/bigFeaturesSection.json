@@ -1,0 +1,38 @@
+{
+  "title": "Des fonctionnalités pensées pour voyager ensemble",
+  "slides": [
+    {
+      "title": "Explore et propose des idées au groupe",
+      "description": "Trouve activités, restaurants, hébergement et transport directement dans l'app. Ajoute-les à l'itinéraire ou soumets-les au vote du groupe.",
+      "ctaLabel": "Explorer les destinations",
+      "stats": [
+        {
+          "value": "+190",
+          "label": "destinations possibles"
+        }
+      ]
+    },
+    {
+      "title": "Décidez ensemble grâce aux sondages",
+      "description": "Où dormir ? Que faire ? Quand partir ? Créez un sondage, chacun vote, la décision est prise. Le groupe avance, le voyage aussi.",
+      "ctaLabel": "Lancer un sondage",
+      "stats": [
+        {
+          "value": "1000+",
+          "label": "sondages quotidiens"
+        }
+      ]
+    },
+    {
+      "title": "Un itinéraire clair, jour après jour",
+      "description": "Chaque journée du voyage est structurée : que faire, où manger, où dormir, comment se déplacer. Tout est clair pour tout le monde.",
+      "ctaLabel": "Construire l'itinéraire",
+      "stats": [
+        {
+          "value": "10+",
+          "label": "partenaires"
+        }
+      ]
+    }
+  ]
+}

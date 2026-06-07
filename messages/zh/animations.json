@@ -1,0 +1,44 @@
+{
+  "explorerFilters": {
+    "activity": "活动",
+    "restaurant": "餐厅",
+    "hotel": "住宿",
+    "transport": "交通"
+  },
+  "explorerBooked": "已预订",
+  "liveVoting": {
+    "question": "在里斯本住哪里？",
+    "category": "住宿",
+    "creator": "Marie",
+    "createdLabel": "创建于",
+    "endsLabel": "截止于",
+    "createdDate": "5月14日",
+    "endsDate": "5月20日",
+    "dayRange": "5月15日 → 17日",
+    "status": "立即投票",
+    "single": "单选",
+    "options": "个选项",
+    "yourVote": "你的投票",
+    "votes": "票",
+    "vote": "票",
+    "sendReminders": "提醒",
+    "seeOnTimeline": "时间线",
+    "comments": "评论",
+    "details": "详情"
+  },
+  "swipeExplorer": {
+    "header": "探索东京",
+    "category": {
+      "activity": "活动",
+      "food": "美食",
+      "hotel": "酒店"
+    },
+    "liked": "喜欢"
+  },
+  "liveCollaboration": {
+    "dayOf": "第 2 天 / 共 5 天",
+    "date": "5月15日 周三",
+    "city": "巴黎",
+    "booked": "已预订"
+  }
+}
