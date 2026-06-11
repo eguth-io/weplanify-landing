@@ -7,6 +7,7 @@ import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Breadcrumb from "@/components/Breadcrumb";
+import { hreflangLanguages } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -28,11 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: t("meta.description"),
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: `${SITE_URL}/en/privacy-policy`,
-        fr: `${SITE_URL}/fr/privacy-policy`,
-        "x-default": `${SITE_URL}/en/privacy-policy`,
-      },
+      languages: hreflangLanguages(SITE_URL, "/privacy-policy"),
     },
   };
 }

@@ -56,6 +56,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Hreflang must point at each locale's own slug.
   const enUrl = `${SITE_URL}/en/destinations/${destination.slug.en}`;
   const frUrl = `${SITE_URL}/fr/destinations/${destination.slug.fr}`;
+  // Destination content only exists in en/fr; the other locales serve the en
+  // fallback, so they must canonicalize to the en URL instead of declaring
+  // themselves as independent (duplicate) pages (WP-92).
+  const canonicalUrl = locale === "en" || locale === "fr" ? currentUrl : enUrl;
 
   return {
     ...baseMetadata,
@@ -85,7 +89,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [destination.hero.image],
     },
     alternates: {
-      canonical: currentUrl,
+      canonical: canonicalUrl,
       languages: {
         en: enUrl,
         fr: frUrl,

@@ -13,7 +13,7 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 
-import { generateMetadataFromSanity } from "@/lib/metadata";
+import { generateMetadataFromSanity, hreflangLanguages } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
 import {
   countryGuides,
@@ -58,11 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: `${SITE_URL}/en${PATHNAME}`,
-        fr: `${SITE_URL}/fr${PATHNAME}`,
-        "x-default": `${SITE_URL}/en${PATHNAME}`,
-      },
+      languages: hreflangLanguages(SITE_URL, PATHNAME),
     },
   };
 }

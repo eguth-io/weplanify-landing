@@ -8,6 +8,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import { hreflangLanguages } from "@/lib/metadata";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -60,11 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: `${SITE_URL}/en${pathname}`,
-        fr: `${SITE_URL}/fr${pathname}`,
-        "x-default": `${SITE_URL}/en${pathname}`,
-      },
+      languages: hreflangLanguages(SITE_URL, "${pathname}"),
     },
   };
 }
