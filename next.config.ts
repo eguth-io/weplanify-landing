@@ -20,6 +20,31 @@ const nextConfig: NextConfig = {
         destination: '/:locale/alternatives/best-group-trip-planner-apps',
         permanent: true,
       },
+      // WP-92: legacy article Google still requests (GSC 404). Same
+      // consolidation as WP-330. The bare (unprefixed) URL is the one Google
+      // indexed; it was a French article, hence the /fr destination.
+      {
+        source: '/:locale(en|fr)/blog/pourquoi-weplanify-est-plus-efficace',
+        destination: '/:locale/alternatives/best-group-trip-planner-apps',
+        permanent: true,
+      },
+      {
+        source: '/blog/pourquoi-weplanify-est-plus-efficace',
+        destination: '/fr/alternatives/best-group-trip-planner-apps',
+        permanent: true,
+      },
+      // WP-92: /features has no index page, so the middleware's locale
+      // redirect was landing on a 404. Features are showcased on the home.
+      {
+        source: '/:locale(en|es|fr|it|zh|de|pt|pl)/features',
+        destination: '/:locale',
+        permanent: true,
+      },
+      {
+        source: '/features',
+        destination: '/en',
+        permanent: true,
+      },
     ];
   },
   async headers() {

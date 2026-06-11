@@ -8,7 +8,7 @@ import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { generateMetadataFromSanity } from "@/lib/metadata";
+import { generateMetadataFromSanity, hreflangLanguages } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
 
 type Props = {
@@ -65,11 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: `${SITE_URL}/en${PATHNAME}`,
-        fr: `${SITE_URL}/fr${PATHNAME}`,
-        "x-default": `${SITE_URL}/en${PATHNAME}`,
-      },
+      languages: hreflangLanguages(SITE_URL, PATHNAME),
     },
   };
 }

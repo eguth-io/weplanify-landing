@@ -9,6 +9,7 @@ import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
+import { hreflangLanguages } from "@/lib/metadata";
 
 // ---------------------------------------------------------------------------
 // Static params
@@ -55,11 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: `${SITE_URL}/en${PATHNAME}`,
-        fr: `${SITE_URL}/fr${PATHNAME}`,
-        "x-default": `${SITE_URL}/en${PATHNAME}`,
-      },
+      languages: hreflangLanguages(SITE_URL, PATHNAME),
     },
   };
 }

@@ -4,10 +4,16 @@ import { seoSettingsQuery } from "@/sanity/lib/query";
 import { SeoSettings } from "@/sanity/lib/type";
 import { destinations } from "@/lib/destinations/data";
 import { countryGuides } from "@/lib/travel-guides/data";
-import { routing } from "@/i18n/routing";
+// WP-92: the sitemap only submits en/fr. The other 6 locales are served and
+// hreflang'd, but submitting all 8 (512 URLs) buried the en/fr pages Google
+// should crawl first (61 of them stuck in "Discovered - currently not
+// indexed"). Re-add a locale here once it has its own long-form content.
+const locales = ["en", "fr"] as const;
 
-// Derive sitemap locales from the routing config so adding a language is one place.
-const locales = routing.locales;
+// Stable fallback for pages without a real modification date. A `new Date()`
+// lastmod on every entry made the field meaningless to Google; bump this when
+// shipping a sweeping content change.
+const STATIC_LAST_MODIFIED = new Date("2026-06-11");
 const featureSlugs = [
   "planning",
   "budget",
@@ -39,7 +45,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const locale of locales) {
       entries.push({
         url: `${siteUrl}/${locale}`,
-        lastModified: new Date(),
+        lastModified: STATIC_LAST_MODIFIED,
         changeFrequency: "weekly",
         priority: 1,
       });
@@ -51,7 +57,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const page of useCasePages) {
         entries.push({
           url: `${siteUrl}/${locale}/${page}`,
-          lastModified: new Date(),
+          lastModified: STATIC_LAST_MODIFIED,
           changeFrequency: "monthly",
           priority: 0.9,
         });
@@ -68,7 +74,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const page of guidePages) {
         entries.push({
           url: `${siteUrl}/${locale}/${page}`,
-          lastModified: new Date(),
+          lastModified: STATIC_LAST_MODIFIED,
           changeFrequency: "monthly",
           priority: 0.8,
         });
@@ -81,7 +87,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const page of staticPages) {
         entries.push({
           url: `${siteUrl}/${locale}/${page}`,
-          lastModified: new Date(),
+          lastModified: STATIC_LAST_MODIFIED,
           changeFrequency: page === "blog" ? "weekly" : "monthly",
           priority: page === "blog" ? 0.8 : 0.7,
         });
@@ -93,7 +99,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const slug of featureSlugs) {
         entries.push({
           url: `${siteUrl}/${locale}/features/${slug}`,
-          lastModified: new Date(),
+          lastModified: STATIC_LAST_MODIFIED,
           changeFrequency: "monthly",
           priority: 0.8,
         });
@@ -105,7 +111,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const post of blogPosts) {
         entries.push({
           url: `${siteUrl}/${locale}/blog/${post.slug}`,
-          lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
+          lastModified: post.publishedAt ? new Date(post.publishedAt) : STATIC_LAST_MODIFIED,
           changeFrequency: "monthly",
           priority: 0.6,
         });
@@ -116,7 +122,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const locale of locales) {
       entries.push({
         url: `${siteUrl}/${locale}/destinations`,
-        lastModified: new Date(),
+        lastModified: STATIC_LAST_MODIFIED,
         changeFrequency: "monthly",
         priority: 0.85,
       });
@@ -126,7 +132,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const d of destinations) {
         entries.push({
           url: `${siteUrl}/${locale}/destinations/${d.slug[contentLocale]}`,
-          lastModified: new Date(),
+          lastModified: STATIC_LAST_MODIFIED,
           changeFrequency: "monthly",
           priority: 0.85,
         });
@@ -137,7 +143,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const locale of locales) {
       entries.push({
         url: `${siteUrl}/${locale}/travel-guides`,
-        lastModified: new Date(),
+        lastModified: STATIC_LAST_MODIFIED,
         changeFrequency: "monthly",
         priority: 0.85,
       });
@@ -145,7 +151,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const g of countryGuides) {
         entries.push({
           url: `${siteUrl}/${locale}/travel-guides/${g.slug[contentLocale]}`,
-          lastModified: new Date(),
+          lastModified: STATIC_LAST_MODIFIED,
           changeFrequency: "monthly",
           priority: 0.85,
         });
@@ -158,13 +164,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     return [
       {
         url: "https://www.weplanify.com/en",
-        lastModified: new Date(),
+        lastModified: STATIC_LAST_MODIFIED,
         changeFrequency: "weekly",
         priority: 1,
       },
       {
         url: "https://www.weplanify.com/fr",
-        lastModified: new Date(),
+        lastModified: STATIC_LAST_MODIFIED,
         changeFrequency: "weekly",
         priority: 1,
       },

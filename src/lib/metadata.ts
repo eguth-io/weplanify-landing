@@ -19,7 +19,9 @@ const OG_LOCALES: Record<string, string> = {
 };
 
 // Builds the hreflang `languages` map for every supported locale + x-default (en).
-function hreflangLanguages(baseUrl: string, pathname: string): Record<string, string> {
+// Shared by every page so a page always lists itself in its own hreflang set
+// (WP-92: hand-rolled en/fr-only maps left /es, /it... out of their own set).
+export function hreflangLanguages(baseUrl: string, pathname: string): Record<string, string> {
   const languages: Record<string, string> = {};
   for (const locale of routing.locales) {
     languages[locale] = `${baseUrl}/${locale}${pathname}`;

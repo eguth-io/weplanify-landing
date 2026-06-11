@@ -8,6 +8,7 @@ import Link from "next/link";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
+import { hreflangLanguages } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -41,11 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: { card: "summary_large_image", title, description },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: `${SITE_URL}/en${PATHNAME}`,
-        fr: `${SITE_URL}/fr${PATHNAME}`,
-        "x-default": `${SITE_URL}/en${PATHNAME}`,
-      },
+      languages: hreflangLanguages(SITE_URL, PATHNAME),
     },
   };
 }

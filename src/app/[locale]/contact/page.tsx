@@ -6,6 +6,7 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale, getTranslations } from 'next-intl/server';
+import { hreflangLanguages } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -38,11 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: `${SITE_URL}/en/contact`,
-        fr: `${SITE_URL}/fr/contact`,
-        "x-default": `${SITE_URL}/en/contact`,
-      },
+      languages: hreflangLanguages(SITE_URL, "/contact"),
     },
   };
 }

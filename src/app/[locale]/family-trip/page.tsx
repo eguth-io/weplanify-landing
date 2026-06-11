@@ -9,7 +9,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import ArticleTOC from "@/components/ArticleTOC";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { generateMetadataFromSanity } from "@/lib/metadata";
+import { generateMetadataFromSanity, hreflangLanguages } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
 import FadeIn from "@/components/FadeIn";
 import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: { ...metadata.twitter, title, description },
     alternates: {
       canonical: currentUrl,
-      languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` },
+      languages: hreflangLanguages(SITE_URL, PATHNAME),
     },
   };
 }
