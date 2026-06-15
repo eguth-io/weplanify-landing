@@ -85,6 +85,14 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
+  // i18n.ts loads message JSON at runtime via fs.readdirSync(process.cwd()/messages/<locale>).
+  // Next's static tracer can't follow that dynamic read, so the files were excluded from the
+  // serverless bundles -> messages resolved to {} at runtime -> MISSING_MESSAGE -> 500 (only on
+  // ISR/runtime renders, hence intermittent; build-time prerenders had the files on disk).
+  // Force the message files into every route bundle so the runtime fs read finds them.
+  outputFileTracingIncludes: {
+    "/**": ["./messages/**/*.json"],
+  },
 };
 
 export default withNextIntl(nextConfig);
