@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from 'next-intl/plugin';
+import { withSentryConfig } from '@sentry/nextjs';
 
 const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
@@ -85,13 +86,23 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
-  // next-intl loads the locale JSON via dynamic fs at request time, which Next's
-  // tracer can't follow — so dynamically-rendered pages (e.g. the cookie-bucketed
-  // home A/B) hit MISSING_MESSAGE on Vercel because the files aren't bundled.
-  // Force every route's serverless function to include the message catalogs.
+  // i18n.ts loads message JSON at runtime via fs.readdirSync(process.cwd()/messages/<locale>).
+  // Next's static tracer can't follow that dynamic read, so the files were excluded from the
+  // serverless bundles -> messages resolved to {} at runtime -> MISSING_MESSAGE -> 500 (only on
+  // ISR/runtime renders, hence intermittent; build-time prerenders had the files on disk).
+  // Force the message files into every route bundle so the runtime fs read finds them.
   outputFileTracingIncludes: {
-    '/**': ['./messages/**/*.json'],
+    "/**": ["./messages/**/*.json"],
   },
 };
 
-export default withNextIntl(nextConfig);
+export default withSentryConfig(withNextIntl(nextConfig), {
+  org: 'wp-f2',
+  project: 'landing',
+  sentryUrl: 'https://wp-f2.sentry.io/',
+  authToken: process.env.SENTRY_AUTH_TOKEN,
+  silent: !process.env.CI,
+  widenClientFileUpload: true,
+  disableLogger: true,
+  automaticVercelMonitors: false,
+});

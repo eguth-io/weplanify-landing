@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 
 // Derive sitemap locales from the routing config so adding a language is one place.
 const locales = routing.locales;
+const xDefaultLocale = routing.defaultLocale;
 const featureSlugs = [
   "planning",
   "budget",
@@ -19,6 +20,11 @@ const featureSlugs = [
   "transport",
   "memories",
 ];
+
+type EntryMeta = Pick<
+  MetadataRoute.Sitemap[number],
+  "lastModified" | "changeFrequency" | "priority"
+>;
 
 /**
  * Génère le sitemap.xml dynamiquement avec support i18n
@@ -35,121 +41,127 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const entries: MetadataRoute.Sitemap = [];
 
-    // Homepage for each locale
-    for (const locale of locales) {
-      entries.push({
-        url: `${siteUrl}/${locale}`,
+    // Emit one <url> per locale, each carrying the full hreflang cluster
+    // (every locale + x-default) via alternates.languages. This lets Google
+    // process the whole language set straight from the sitemap instead of
+    // crawling each page first — the lever for the "Discovered, not indexed"
+    // backlog on the translated pages.
+    // `pathFor` returns the path after siteUrl (with leading slash + locale),
+    // so localized slugs (destinations/guides) can vary per locale.
+    const pushLocalized = (
+      pathFor: (locale: string) => string,
+      meta: EntryMeta
+    ) => {
+      const languages: Record<string, string> = {};
+      for (const locale of locales) {
+        languages[locale] = `${siteUrl}${pathFor(locale)}`;
+      }
+      languages["x-default"] = `${siteUrl}${pathFor(xDefaultLocale)}`;
+
+      for (const locale of locales) {
+        entries.push({
+          url: `${siteUrl}${pathFor(locale)}`,
+          ...meta,
+          alternates: { languages },
+        });
+      }
+    };
+
+    // Homepage
+    pushLocalized((locale) => `/${locale}`, {
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    });
+
+    // Use case pages
+    const useCasePages = ["trip-with-friends", "bachelorette-trip", "birthday-trip", "family-trip", "road-trip", "team-building", "school-trip", "events", "world-cup-2026-trip-planner", "champions-league-final-2026-psg-arsenal", "hellfest-2026-trip-planner", "tomorrowland-2026-trip-planner", "solar-eclipse-2026-trip-planner", "ultra-europe-2026-trip-planner", "alternatives", "alternatives/wanderlog", "alternatives/squadtrip", "alternatives/tripit", "alternatives/cruzmi", "alternatives/best-group-trip-planner-apps", "alternatives/stippl"];
+    for (const page of useCasePages) {
+      pushLocalized((locale) => `/${locale}/${page}`, {
         lastModified: new Date(),
-        changeFrequency: "weekly",
-        priority: 1,
+        changeFrequency: "monthly",
+        priority: 0.9,
       });
     }
 
-    // Use case pages for each locale
-    const useCasePages = ["trip-with-friends", "bachelorette-trip", "birthday-trip", "family-trip", "road-trip", "team-building", "school-trip", "events", "world-cup-2026-trip-planner", "champions-league-final-2026-psg-arsenal", "hellfest-2026-trip-planner", "tomorrowland-2026-trip-planner", "solar-eclipse-2026-trip-planner", "ultra-europe-2026-trip-planner", "alternatives", "alternatives/wanderlog", "alternatives/squadtrip", "alternatives/tripit", "alternatives/cruzmi", "alternatives/best-group-trip-planner-apps", "alternatives/stippl"];
-    for (const locale of locales) {
-      for (const page of useCasePages) {
-        entries.push({
-          url: `${siteUrl}/${locale}/${page}`,
-          lastModified: new Date(),
-          changeFrequency: "monthly",
-          priority: 0.9,
-        });
-      }
-    }
-
-    // Guide & hardcoded blog pages for each locale
+    // Guide & hardcoded blog pages
     const guidePages = [
       "guides/plan-group-trip",
       "blog/organiser-evjf",
       "blog/group-trip-budget",
     ];
-    for (const locale of locales) {
-      for (const page of guidePages) {
-        entries.push({
-          url: `${siteUrl}/${locale}/${page}`,
-          lastModified: new Date(),
-          changeFrequency: "monthly",
-          priority: 0.8,
-        });
-      }
+    for (const page of guidePages) {
+      pushLocalized((locale) => `/${locale}/${page}`, {
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.8,
+      });
     }
 
-    // Static pages for each locale
+    // Static pages
     const staticPages = ["blog", "faq", "contact", "partnership", "about", "privacy-policy"];
-    for (const locale of locales) {
-      for (const page of staticPages) {
-        entries.push({
-          url: `${siteUrl}/${locale}/${page}`,
-          lastModified: new Date(),
-          changeFrequency: page === "blog" ? "weekly" : "monthly",
-          priority: page === "blog" ? 0.8 : 0.7,
-        });
-      }
+    for (const page of staticPages) {
+      pushLocalized((locale) => `/${locale}/${page}`, {
+        lastModified: new Date(),
+        changeFrequency: page === "blog" ? "weekly" : "monthly",
+        priority: page === "blog" ? 0.8 : 0.7,
+      });
     }
 
-    // Feature pages for each locale
-    for (const locale of locales) {
-      for (const slug of featureSlugs) {
-        entries.push({
-          url: `${siteUrl}/${locale}/features/${slug}`,
-          lastModified: new Date(),
-          changeFrequency: "monthly",
-          priority: 0.8,
-        });
-      }
-    }
-
-    // Blog posts for each locale
-    for (const locale of locales) {
-      for (const post of blogPosts) {
-        entries.push({
-          url: `${siteUrl}/${locale}/blog/${post.slug}`,
-          lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
-          changeFrequency: "monthly",
-          priority: 0.6,
-        });
-      }
-    }
-
-    // Destinations: index + one entry per (locale, localized slug).
-    for (const locale of locales) {
-      entries.push({
-        url: `${siteUrl}/${locale}/destinations`,
+    // Feature pages
+    for (const slug of featureSlugs) {
+      pushLocalized((locale) => `/${locale}/features/${slug}`, {
         lastModified: new Date(),
         changeFrequency: "monthly",
-        priority: 0.85,
+        priority: 0.8,
       });
-      // Destination/guide content (and their localized slugs) only exist in en/fr;
-      // other locales render the en fallback, so they reuse the en slug.
-      const contentLocale = locale === "fr" ? "fr" : "en";
-      for (const d of destinations) {
-        entries.push({
-          url: `${siteUrl}/${locale}/destinations/${d.slug[contentLocale]}`,
+    }
+
+    // Blog posts
+    for (const post of blogPosts) {
+      pushLocalized((locale) => `/${locale}/blog/${post.slug}`, {
+        lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
+        changeFrequency: "monthly",
+        priority: 0.6,
+      });
+    }
+
+    // Destination/guide content (and their localized slugs) only exist in en/fr;
+    // other locales render the en fallback, so they reuse the en slug.
+    const contentLocaleFor = (locale: string) => (locale === "fr" ? "fr" : "en");
+
+    // Destinations: index + one entry per localized slug.
+    pushLocalized((locale) => `/${locale}/destinations`, {
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    });
+    for (const d of destinations) {
+      pushLocalized(
+        (locale) => `/${locale}/destinations/${d.slug[contentLocaleFor(locale)]}`,
+        {
           lastModified: new Date(),
           changeFrequency: "monthly",
           priority: 0.85,
-        });
-      }
+        }
+      );
     }
 
-    // Travel guides: index + one entry per (locale, localized country slug).
-    for (const locale of locales) {
-      entries.push({
-        url: `${siteUrl}/${locale}/travel-guides`,
-        lastModified: new Date(),
-        changeFrequency: "monthly",
-        priority: 0.85,
-      });
-      const contentLocale = locale === "fr" ? "fr" : "en";
-      for (const g of countryGuides) {
-        entries.push({
-          url: `${siteUrl}/${locale}/travel-guides/${g.slug[contentLocale]}`,
+    // Travel guides: index + one entry per localized country slug.
+    pushLocalized((locale) => `/${locale}/travel-guides`, {
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    });
+    for (const g of countryGuides) {
+      pushLocalized(
+        (locale) => `/${locale}/travel-guides/${g.slug[contentLocaleFor(locale)]}`,
+        {
           lastModified: new Date(),
           changeFrequency: "monthly",
           priority: 0.85,
-        });
-      }
+        }
+      );
     }
 
     return entries;
