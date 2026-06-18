@@ -27,6 +27,10 @@ export type EventCatalog = {
   hero_pitch_success: { destination: string };
   hero_pitch_cta_click: { destination: string };
 
+  // Search hero (A/B variant B) — destination(s) + dates entry point.
+  // `stops` > 1 means a multi-destination road trip.
+  hero_search_submit: { destination: string; stops: number; hasDates: boolean; locale: string };
+
   // Pitch flow — inline (in-page sections)
   inline_pitch_submit: { location: string; length: number; locale: string };
   inline_pitch_success: { location: string; destination: string };

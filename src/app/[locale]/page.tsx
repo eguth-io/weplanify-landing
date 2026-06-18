@@ -5,6 +5,8 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 import HeroPitchWall from "@/components/HeroPitchWall";
+import HeroSearch from "@/components/HeroSearch";
+import HeroVariantSwitcher from "@/components/HeroVariantSwitcher";
 
 // Lazy-load below-the-fold components to reduce initial JS bundle
 const BigFeaturesSection = dynamic(() => import("@/components/BigFeaturesSection"));
@@ -25,14 +27,20 @@ import { routing } from '@/i18n/routing';
 
 type Props = {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ hero?: string }>;
 };
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function HomePage({ params }: Props) {
+export default async function HomePage({ params, searchParams }: Props) {
   const { locale } = await params;
+  const { hero: heroParam } = await searchParams;
+  // A/B hero variant: "search" = destination + dates entry (variant B).
+  // Default / "ai" = the current production AI-pitch hero (control, as on main).
+  const heroVariant: 'ai' | 'search' = heroParam === 'search' ? 'search' : 'ai';
+  const isDev = process.env.NODE_ENV === 'development';
   setRequestLocale(locale);
   const t = await getTranslations("homePage");
   // Homepage copy (hero, world section, and every section component) now comes
@@ -76,15 +84,30 @@ export default async function HomePage({ params }: Props) {
         navigationData={navigationData}
       />
 
-      <HeroPitchWall
-        locale={locale}
-        hero={{
-          affiliateTag: t("hero.affiliateTag"),
-          title: t("hero.title"),
-          description: t("hero.description"),
-          backgroundImage: HERO_BG,
-        }}
-      />
+      {heroVariant === "search" ? (
+        /* Variant B — destination + dates search hero. */
+        <HeroSearch
+          locale={locale}
+          hero={{
+            affiliateTag: t("hero.affiliateTag"),
+            backgroundImage: HERO_BG,
+          }}
+        />
+      ) : (
+        /* Control — production AI-pitch hero (as on main). */
+        <HeroPitchWall
+          locale={locale}
+          hero={{
+            affiliateTag: t("hero.affiliateTag"),
+            title: t("hero.title"),
+            description: t("hero.description"),
+            backgroundImage: HERO_BG,
+          }}
+        />
+      )}
+
+      {/* DEV-only A/B variant switcher (never rendered in production). */}
+      {isDev && <HeroVariantSwitcher current={heroVariant} />}
 
       {/* Testimonial & Stats Section */}
       <section id="reviews" className="px-4 lg:px-8 pb-8 lg:pb-12">
