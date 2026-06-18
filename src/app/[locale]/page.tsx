@@ -8,6 +8,7 @@ import HeroPitchWall from "@/components/HeroPitchWall";
 import HeroSearch from "@/components/HeroSearch";
 import HeroVariantSwitcher from "@/components/HeroVariantSwitcher";
 import { cookies } from "next/headers";
+import { getFlags } from "@/lib/flags";
 
 // Lazy-load below-the-fold components to reduce initial JS bundle
 const BigFeaturesSection = dynamic(() => import("@/components/BigFeaturesSection"));
@@ -38,15 +39,24 @@ export function generateStaticParams() {
 export default async function HomePage({ params, searchParams }: Props) {
   const { locale } = await params;
   const { hero: heroParam } = await searchParams;
-  // A/B hero variant. Precedence: explicit ?hero= (QA/dev override) > the cookie
-  // assigned 50/50 by middleware > "ai" (control). "search" = variant B.
-  const cookieVariant = (await cookies()).get('hero_variant')?.value;
-  const heroVariant: 'ai' | 'search' =
-    heroParam === 'search' || heroParam === 'ai'
-      ? heroParam
-      : cookieVariant === 'search'
-        ? 'search'
-        : 'ai';
+  // A/B hero variant. Precedence: explicit ?hero= (QA/dev override) > sticky
+  // override cookie > the `hero-search` feature flag (Vision, bucketed by the
+  // stable wp_vid set in middleware) > "ai" (control). "search" = variant B.
+  const cookieStore = await cookies();
+  const overrideCookie = cookieStore.get('hero_variant')?.value;
+  let heroVariant: 'ai' | 'search' = 'ai';
+  if (heroParam === 'search' || heroParam === 'ai') {
+    heroVariant = heroParam;
+  } else if (overrideCookie === 'search' || overrideCookie === 'ai') {
+    heroVariant = overrideCookie;
+  } else {
+    const visitorId = cookieStore.get('wp_vid')?.value;
+    if (visitorId) {
+      const flags = getFlags();
+      await flags.prefetch();
+      if (flags.isEnabled('hero-search', { userId: visitorId })) heroVariant = 'search';
+    }
+  }
   const isDev = process.env.NODE_ENV === 'development';
   setRequestLocale(locale);
   const t = await getTranslations("homePage");
