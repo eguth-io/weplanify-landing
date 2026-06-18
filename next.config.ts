@@ -85,6 +85,13 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: false,
+  // next-intl loads the locale JSON via dynamic fs at request time, which Next's
+  // tracer can't follow — so dynamically-rendered pages (e.g. the cookie-bucketed
+  // home A/B) hit MISSING_MESSAGE on Vercel because the files aren't bundled.
+  // Force every route's serverless function to include the message catalogs.
+  outputFileTracingIncludes: {
+    '/**': ['./messages/**/*.json'],
+  },
 };
 
 export default withNextIntl(nextConfig);
