@@ -14,6 +14,7 @@ import {
   ChevronsRight,
   X,
 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { trackEvent } from '@/lib/tracking';
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.weplanify.com';
@@ -50,47 +51,25 @@ interface MapboxFeature {
   context?: { id: string; text: string; short_code?: string }[];
 }
 
-// Self-contained copy so this experimental variant doesn't require touching the
-// 8 localized message files. Falls back to English for any non-FR locale.
-const COPY = {
-  en: {
-    affiliate: 'Plan your group trip, together.',
-    title: 'Where to next?',
-    subtitle: 'Pick a destination and your dates — we build the shared plan your whole group can edit.',
-    destinationLabel: 'Destination',
-    destinationPlaceholder: 'Search a city or country',
-    addStopPlaceholder: 'Add another stop',
-    fromLabel: 'From',
-    toLabel: 'To',
-    addDate: 'Add date',
-    cta: 'Start planning',
-    note: 'Join 300+ travelers planning their next trip',
-    weekdays: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
-  },
-  fr: {
-    affiliate: 'Planifiez votre voyage de groupe, ensemble.',
-    title: 'On part où ?',
-    subtitle: 'Choisis une destination et tes dates — on construit le plan partagé que tout le groupe peut éditer.',
-    destinationLabel: 'Destination',
-    destinationPlaceholder: 'Cherche une ville ou un pays',
-    addStopPlaceholder: 'Ajouter une étape',
-    fromLabel: 'Départ',
-    toLabel: 'Retour',
-    addDate: 'Ajouter',
-    cta: 'Commencer',
-    note: 'Rejoins 300+ voyageurs qui préparent leur prochain voyage',
-    weekdays: ['Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa', 'Di'],
-  },
-} as const;
+// BCP-47 locales for date formatting (calendar month names + range).
+const INTL_LOCALES: Record<string, string> = {
+  en: 'en-US',
+  fr: 'fr-FR',
+  de: 'de-DE',
+  es: 'es-ES',
+  it: 'it-IT',
+  pl: 'pl-PL',
+  pt: 'pt-PT',
+  zh: 'zh-CN',
+};
 
 const startOfDay = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
 const toISO = (d: Date) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 
 export default function HeroSearch({ hero, locale, variant }: Props) {
-  const lang = locale === 'fr' ? 'fr' : 'en';
-  const t = COPY[lang];
-  const intlLocale = lang === 'fr' ? 'fr-FR' : 'en-US';
+  const t = useTranslations('heroSearch');
+  const intlLocale = INTL_LOCALES[locale] ?? 'en-US';
 
   // --- Destinations (multi-stop / road trip) ---
   const [query, setQuery] = useState('');
@@ -139,7 +118,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
       try {
         const url =
           `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(q)}.json` +
-          `?types=place,region,country&limit=5&language=${lang}&access_token=${MAPBOX_TOKEN}`;
+          `?types=place,region,country&limit=5&language=${locale}&access_token=${MAPBOX_TOKEN}`;
         const res = await fetch(url);
         const data = await res.json();
         if (cancelled) return;
@@ -171,7 +150,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
       cancelled = true;
       clearTimeout(handle);
     };
-  }, [query, lang]);
+  }, [query, locale]);
 
   // Add a destination as a chip (supports multi-stop road trips), then reset
   // the input so the user can keep adding stops.
@@ -256,7 +235,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
       destination: stops.map((s) => s.name).join(' → '),
       stops: stops.length,
       hasDates: Boolean(start && end),
-      locale: lang,
+      locale: locale,
     });
 
     const startISO = start ? toISO(start) : null;
@@ -267,7 +246,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
       const res = await fetch(`${API_URL}/api/public/trip-preview/from-search`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ destinations: stops, start: startISO, end: endISO, locale: lang }),
+        body: JSON.stringify({ destinations: stops, start: startISO, end: endISO, locale: locale }),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const token = (await res.json())?.token as string | undefined;
@@ -294,7 +273,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
           <div className="absolute inset-0 z-0 overflow-hidden rounded-[24px] lg:rounded-[40px]">
             <Image
               src="/header-bg-mobile.webp"
-              alt={t.title}
+              alt={t('title')}
               fill
               sizes="100vw"
               className="object-cover lg:hidden"
@@ -303,7 +282,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
             />
             <Image
               src={hero.backgroundImage || '/header-bg.webp'}
-              alt={t.title}
+              alt={t('title')}
               fill
               sizes="100vw"
               className="object-cover hidden lg:block"
@@ -315,13 +294,13 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
 
           <div className="relative z-10 w-full min-h-[480px] lg:min-h-[600px] flex flex-col items-center justify-center text-center px-4 lg:px-8 py-12 lg:py-16">
             <div className="font-nanum-pen text-[#EEF899] text-xl lg:text-2xl mb-3 drop-shadow-[0_1px_8px_rgba(0,0,0,0.4)]">
-              {t.affiliate}
+              {t('affiliate')}
             </div>
             <h1 className="text-[#FFFBF5] text-4xl lg:text-6xl xl:text-[64px] font-londrina-solid leading-[1.05] max-w-4xl mb-4 drop-shadow-[0_2px_20px_rgba(0,0,0,0.35)]">
-              {t.title}
+              {t('title')}
             </h1>
             <p className="text-[#FFFBF5]/90 font-karla text-base lg:text-lg leading-relaxed max-w-2xl mb-8 drop-shadow-[0_1px_8px_rgba(0,0,0,0.4)]">
-              {t.subtitle}
+              {t('subtitle')}
             </p>
 
             {/* Search card */}
@@ -332,7 +311,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                   <MapPin className="w-5 h-5 text-orange shrink-0" />
                   <div className="flex flex-col items-start text-left w-full min-w-0">
                     <span className="text-[10px] font-karla font-bold uppercase tracking-[0.12em] text-[#001E13]/45">
-                      {t.destinationLabel}
+                      {t('destinationLabel')}
                     </span>
                     <input
                       ref={inputRef}
@@ -346,7 +325,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                           addPlace(suggestions[0]);
                         }
                       }}
-                      placeholder={destinations.length ? t.addStopPlaceholder : t.destinationPlaceholder}
+                      placeholder={destinations.length ? t('addStopPlaceholder') : t('destinationPlaceholder')}
                       className="w-full bg-transparent outline-none font-karla font-semibold text-[#001E13] placeholder:font-normal placeholder:text-[#001E13]/40 text-sm lg:text-base truncate"
                     />
                   </div>
@@ -393,14 +372,14 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                   <CalendarDays className="w-5 h-5 text-orange shrink-0" />
                   <span className="flex flex-col items-start min-w-0">
                     <span className="text-[10px] font-karla font-bold uppercase tracking-[0.12em] text-[#001E13]/45">
-                      {t.fromLabel}
+                      {t('fromLabel')}
                     </span>
                     <span
                       className={`font-karla text-sm lg:text-base truncate ${
                         start ? 'font-semibold text-[#001E13]' : 'text-[#001E13]/40'
                       }`}
                     >
-                      {start ? fmt(start) : t.addDate}
+                      {start ? fmt(start) : t('addDate')}
                     </span>
                   </span>
                 </button>
@@ -417,14 +396,14 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                 >
                   <span className="flex flex-col items-start min-w-0">
                     <span className="text-[10px] font-karla font-bold uppercase tracking-[0.12em] text-[#001E13]/45">
-                      {t.toLabel}
+                      {t('toLabel')}
                     </span>
                     <span
                       className={`font-karla text-sm lg:text-base truncate ${
                         end ? 'font-semibold text-[#001E13]' : 'text-[#001E13]/40'
                       }`}
                     >
-                      {end ? fmt(end) : t.addDate}
+                      {end ? fmt(end) : t('addDate')}
                     </span>
                   </span>
                 </button>
@@ -476,7 +455,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                     </div>
 
                     <div className="grid grid-cols-7 gap-y-1 mb-1">
-                      {t.weekdays.map((w) => (
+                      {(t.raw('weekdays') as string[]).map((w) => (
                         <span key={w} className="text-center text-[11px] font-karla font-bold text-[#001E13]/40">
                           {w}
                         </span>
@@ -523,7 +502,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                 ) : (
                   <>
                     <Search className="w-4 h-4 lg:hidden" />
-                    {t.cta}
+                    {t('cta')}
                     <ArrowRight className="w-4 h-4 hidden lg:block" />
                   </>
                 )}
@@ -553,7 +532,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
               </div>
             )}
 
-            <p className="mt-4 font-nanum-pen text-[#FFFBF5]/75 text-base lg:text-lg">{t.note}</p>
+            <p className="mt-4 font-nanum-pen text-[#FFFBF5]/75 text-base lg:text-lg">{t('note')}</p>
           </div>
         </section>
       </div>

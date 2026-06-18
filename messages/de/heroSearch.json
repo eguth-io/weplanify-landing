@@ -1,0 +1,22 @@
+{
+  "affiliate": "Plant eure Gruppenreise – gemeinsam.",
+  "title": "Wohin als Nächstes?",
+  "subtitle": "Wähle ein Reiseziel und eure Daten — wir erstellen den gemeinsamen Plan, den eure ganze Gruppe bearbeiten kann.",
+  "destinationLabel": "Reiseziel",
+  "destinationPlaceholder": "Stadt oder Land suchen",
+  "addStopPlaceholder": "Weiteren Stopp hinzufügen",
+  "fromLabel": "Von",
+  "toLabel": "Bis",
+  "addDate": "Datum",
+  "cta": "Losplanen",
+  "note": "Schließe dich 300+ Reisenden an, die ihre nächste Reise planen",
+  "weekdays": [
+    "Mo",
+    "Di",
+    "Mi",
+    "Do",
+    "Fr",
+    "Sa",
+    "So"
+  ]
+}
