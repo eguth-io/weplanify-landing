@@ -88,6 +88,9 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
   const [submitting, setSubmitting] = useState(false);
   const destRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  // Skip the next autocomplete fetch — set when we fill the bar programmatically
+  // (picking a destination) so it doesn't re-search the chosen name and reopen.
+  const skipSearch = useRef(false);
 
   // --- Date range ---
   const today = useMemo(() => startOfDay(new Date()), []);
@@ -115,6 +118,12 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
 
   // Debounced Mapbox geocoding autocomplete.
   useEffect(() => {
+    if (skipSearch.current) {
+      skipSearch.current = false;
+      setSuggestions([]);
+      setDestOpen(false);
+      return;
+    }
     const q = query.trim();
     if (q.length < 2 || !MAPBOX_TOKEN) {
       setSuggestions([]);
@@ -170,6 +179,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
       setQuery('');
       inputRef.current?.focus();
     } else {
+      skipSearch.current = true;
       setSelected(s);
       setQuery(s.name);
     }
@@ -361,7 +371,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                 </div>
 
                 {destOpen && suggestions.length > 0 && (
-                  <ul className="absolute z-50 left-0 bottom-full mb-3 w-[min(360px,90vw)] bg-white rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.18)] border border-black/5 overflow-hidden text-left py-1.5">
+                  <ul className="absolute z-50 left-0 top-full mt-3 lg:top-auto lg:bottom-full lg:mt-0 lg:mb-3 w-[min(360px,90vw)] bg-white rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.18)] border border-black/5 overflow-hidden text-left py-1.5">
                     {suggestions.map((s) => (
                       <li key={s.id}>
                         <button
@@ -437,7 +447,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                 </button>
 
                 {dateOpen && (
-                  <div className="absolute z-50 left-0 lg:left-auto lg:right-0 bottom-full mb-3 w-[320px] max-w-[90vw] bg-white rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.18)] border border-black/5 p-4">
+                  <div className="absolute z-50 left-0 lg:left-auto lg:right-0 top-full mt-3 lg:top-auto lg:bottom-full lg:mt-0 lg:mb-3 w-[320px] max-w-[90vw] bg-white rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.18)] border border-black/5 p-4">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-0.5">
                         <button
