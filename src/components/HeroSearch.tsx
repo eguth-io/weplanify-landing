@@ -88,6 +88,9 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
   const [submitting, setSubmitting] = useState(false);
   const destRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  // Skip the next autocomplete fetch — set when we fill the bar programmatically
+  // (picking a destination) so it doesn't re-search the chosen name and reopen.
+  const skipSearch = useRef(false);
 
   // --- Date range ---
   const today = useMemo(() => startOfDay(new Date()), []);
@@ -115,6 +118,12 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
 
   // Debounced Mapbox geocoding autocomplete.
   useEffect(() => {
+    if (skipSearch.current) {
+      skipSearch.current = false;
+      setSuggestions([]);
+      setDestOpen(false);
+      return;
+    }
     const q = query.trim();
     if (q.length < 2 || !MAPBOX_TOKEN) {
       setSuggestions([]);
@@ -170,6 +179,7 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
       setQuery('');
       inputRef.current?.focus();
     } else {
+      skipSearch.current = true;
       setSelected(s);
       setQuery(s.name);
     }
