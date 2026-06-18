@@ -7,6 +7,7 @@ import FadeIn from "@/components/FadeIn";
 import HeroPitchWall from "@/components/HeroPitchWall";
 import HeroSearch from "@/components/HeroSearch";
 import HeroVariantSwitcher from "@/components/HeroVariantSwitcher";
+import { cookies } from "next/headers";
 
 // Lazy-load below-the-fold components to reduce initial JS bundle
 const BigFeaturesSection = dynamic(() => import("@/components/BigFeaturesSection"));
@@ -37,9 +38,15 @@ export function generateStaticParams() {
 export default async function HomePage({ params, searchParams }: Props) {
   const { locale } = await params;
   const { hero: heroParam } = await searchParams;
-  // A/B hero variant: "search" = destination + dates entry (variant B).
-  // Default / "ai" = the current production AI-pitch hero (control, as on main).
-  const heroVariant: 'ai' | 'search' = heroParam === 'search' ? 'search' : 'ai';
+  // A/B hero variant. Precedence: explicit ?hero= (QA/dev override) > the cookie
+  // assigned 50/50 by middleware > "ai" (control). "search" = variant B.
+  const cookieVariant = (await cookies()).get('hero_variant')?.value;
+  const heroVariant: 'ai' | 'search' =
+    heroParam === 'search' || heroParam === 'ai'
+      ? heroParam
+      : cookieVariant === 'search'
+        ? 'search'
+        : 'ai';
   const isDev = process.env.NODE_ENV === 'development';
   setRequestLocale(locale);
   const t = await getTranslations("homePage");
@@ -84,10 +91,24 @@ export default async function HomePage({ params, searchParams }: Props) {
         navigationData={navigationData}
       />
 
+      {/* Publish the assigned A/B variant to the dataLayer before GTM tags fire,
+          so every event can be segmented by hero_variant. Inline (no client
+          component) to keep the chunk graph untouched. */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer=window.dataLayer||[];window.dataLayer.push({hero_variant:${JSON.stringify(
+            heroVariant,
+          )}});window.dataLayer.push({event:'experiment_view',experiment:'home_hero',hero_variant:${JSON.stringify(
+            heroVariant,
+          )}});`,
+        }}
+      />
+
       {heroVariant === "search" ? (
         /* Variant B — destination + dates search hero. */
         <HeroSearch
           locale={locale}
+          variant={heroVariant}
           hero={{
             affiliateTag: t("hero.affiliateTag"),
             backgroundImage: HERO_BG,

@@ -28,6 +28,7 @@ interface HeroData {
 interface Props {
   hero: HeroData;
   locale: string;
+  variant: 'ai' | 'search';
 }
 
 interface Suggestion {
@@ -86,7 +87,7 @@ const startOfDay = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDat
 const toISO = (d: Date) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 
-export default function HeroSearch({ hero, locale }: Props) {
+export default function HeroSearch({ hero, locale, variant }: Props) {
   const lang = locale === 'fr' ? 'fr' : 'en';
   const t = COPY[lang];
   const intlLocale = lang === 'fr' ? 'fr-FR' : 'en-US';
@@ -270,13 +271,13 @@ export default function HeroSearch({ hero, locale }: Props) {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const token = (await res.json())?.token as string | undefined;
-      const params = new URLSearchParams({ utm_source: 'hero_search' });
+      const params = new URLSearchParams({ utm_source: 'hero_search', hero_variant: variant });
       if (token) params.set('pitch', token);
       window.location.href = `${APP_URL}/register?${params.toString()}`;
     } catch {
       // Never leave the click as a dead end: if the preview API is unreachable,
       // fall back to register with the raw destinations as query params.
-      const params = new URLSearchParams({ utm_source: 'hero_search' });
+      const params = new URLSearchParams({ utm_source: 'hero_search', hero_variant: variant });
       stops.forEach((s) => params.append('destination', s.name));
       if (startISO) params.set('start', startISO);
       if (endISO) params.set('end', endISO);
