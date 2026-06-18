@@ -1,0 +1,23 @@
+{
+  "affiliate": "和大家一起规划你们的团体旅行。",
+  "title": "下一站去哪儿？",
+  "subtitle": "选择目的地和日期 —— 我们为你生成整个团队都能编辑的共享行程。",
+  "destinationLabel": "目的地",
+  "destinationPlaceholder": "搜索城市或国家",
+  "addStopPlaceholder": "添加另一站",
+  "fromLabel": "出发",
+  "toLabel": "返回",
+  "addDate": "选择日期",
+  "cta": "开始规划",
+  "note": "加入 300+ 位正在规划下一次旅行的旅行者",
+  "weekdays": [
+    "一",
+    "二",
+    "三",
+    "四",
+    "五",
+    "六",
+    "日"
+  ],
+  "addStop": "+ 添加一站"
+}

@@ -1,0 +1,23 @@
+{
+  "affiliate": "Zaplanujcie wspólną podróż grupową.",
+  "title": "Dokąd tym razem?",
+  "subtitle": "Wybierz cel i daty — stworzymy wspólny plan, który może edytować cała grupa.",
+  "destinationLabel": "Cel podróży",
+  "destinationPlaceholder": "Szukaj miasta lub kraju",
+  "addStopPlaceholder": "Dodaj kolejny przystanek",
+  "fromLabel": "Od",
+  "toLabel": "Do",
+  "addDate": "Dodaj datę",
+  "cta": "Zacznij planować",
+  "note": "Dołącz do ponad 300 podróżnych planujących kolejną podróż",
+  "weekdays": [
+    "Pn",
+    "Wt",
+    "Śr",
+    "Cz",
+    "Pt",
+    "So",
+    "Nd"
+  ],
+  "addStop": "+ Dodaj przystanek"
+}

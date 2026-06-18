@@ -1,0 +1,23 @@
+{
+  "affiliate": "Plan your group trip, together.",
+  "title": "Where to next?",
+  "subtitle": "Pick a destination and your dates — we build the shared plan your whole group can edit.",
+  "destinationLabel": "Destination",
+  "destinationPlaceholder": "Search a city or country",
+  "addStopPlaceholder": "Add another stop",
+  "fromLabel": "From",
+  "toLabel": "To",
+  "addDate": "Add date",
+  "cta": "Start planning",
+  "note": "Join 300+ travelers planning their next trip",
+  "weekdays": [
+    "Mo",
+    "Tu",
+    "We",
+    "Th",
+    "Fr",
+    "Sa",
+    "Su"
+  ],
+  "addStop": "+ Add a stop"
+}

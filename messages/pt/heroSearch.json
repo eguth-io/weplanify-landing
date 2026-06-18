@@ -1,0 +1,23 @@
+{
+  "affiliate": "Planeiem a vossa viagem em grupo, juntos.",
+  "title": "Para onde a seguir?",
+  "subtitle": "Escolha um destino e as suas datas — criamos o plano partilhado que todo o grupo pode editar.",
+  "destinationLabel": "Destino",
+  "destinationPlaceholder": "Procure uma cidade ou país",
+  "addStopPlaceholder": "Adicionar outra paragem",
+  "fromLabel": "De",
+  "toLabel": "Até",
+  "addDate": "Data",
+  "cta": "Começar a planear",
+  "note": "Junte-se a mais de 300 viajantes a planear a próxima viagem",
+  "weekdays": [
+    "Seg",
+    "Ter",
+    "Qua",
+    "Qui",
+    "Sex",
+    "Sáb",
+    "Dom"
+  ],
+  "addStop": "+ Adicionar paragem"
+}
