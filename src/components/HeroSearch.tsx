@@ -78,6 +78,9 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
 
   // --- Destinations (multi-stop / road trip) ---
   const [query, setQuery] = useState('');
+  // Single-trip destination kept in the bar; chips (`destinations`) only appear
+  // once the user explicitly turns it into a road trip via "+".
+  const [selected, setSelected] = useState<Suggestion | null>(null);
   const [destinations, setDestinations] = useState<Suggestion[]>([]);
   const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
   const [destOpen, setDestOpen] = useState(false);
@@ -157,10 +160,26 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
     };
   }, [query, locale]);
 
-  // Add a destination as a chip (supports multi-stop road trips), then reset
-  // the input so the user can keep adding stops.
+  // Picking a destination: in single-trip mode it just fills the bar (no chip);
+  // once it's already a road trip, each pick appends as the next stop.
   function addPlace(s: Suggestion) {
-    setDestinations((prev) => (prev.some((p) => p.id === s.id) ? prev : [...prev, s]));
+    setSuggestions([]);
+    setDestOpen(false);
+    if (destinations.length > 0) {
+      setDestinations((prev) => (prev.some((p) => p.id === s.id) ? prev : [...prev, s]));
+      setQuery('');
+      inputRef.current?.focus();
+    } else {
+      setSelected(s);
+      setQuery(s.name);
+    }
+  }
+
+  // "+" — promote the single chosen destination to the first stop of a road trip.
+  function promoteToRoadTrip() {
+    if (!selected) return;
+    setDestinations([selected]);
+    setSelected(null);
     setQuery('');
     setSuggestions([]);
     setDestOpen(false);
@@ -219,8 +238,9 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
   async function submit() {
     if (submitting) return;
 
-    // Confirmed chips, plus any free text still in the input that wasn't added.
-    const stops = destinations.map((d) => ({
+    // Road trip → the chips; single trip → the destination in the bar.
+    const picked = destinations.length > 0 ? destinations : selected ? [selected] : [];
+    const stops = picked.map((d) => ({
       name: d.name,
       latitude: d.latitude,
       longitude: d.longitude,
@@ -322,7 +342,10 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                       ref={inputRef}
                       type="text"
                       value={query}
-                      onChange={(e) => setQuery(e.target.value)}
+                      onChange={(e) => {
+                        setQuery(e.target.value);
+                        setSelected(null);
+                      }}
                       onFocus={() => suggestions.length > 0 && setDestOpen(true)}
                       onKeyDown={(e) => {
                         if (e.key === 'Enter' && suggestions[0]) {
@@ -514,8 +537,9 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
               </button>
             </div>
 
-            {/* Selected stops — multiple = road trip. */}
-            {destinations.length > 0 && (
+            {/* Road trip → numbered stop chips; single trip with a destination
+                chosen → a "+" to turn it into the first stop of a road trip. */}
+            {destinations.length > 0 ? (
               <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
                 {destinations.map((d, i) => (
                   <span
@@ -535,7 +559,17 @@ export default function HeroSearch({ hero, locale, variant }: Props) {
                   </span>
                 ))}
               </div>
-            )}
+            ) : selected ? (
+              <div className="mt-4 flex justify-center">
+                <button
+                  type="button"
+                  onClick={promoteToRoadTrip}
+                  className="inline-flex items-center rounded-full bg-[#FFFBF5]/10 backdrop-blur-sm border border-[#FFFBF5]/30 px-4 py-1.5 font-karla font-semibold text-sm text-[#FFFBF5] hover:bg-[#FFFBF5]/20 transition-colors"
+                >
+                  {t('addStop')}
+                </button>
+              </div>
+            ) : null}
 
             <p className="mt-4 font-nanum-pen text-[#FFFBF5]/75 text-base lg:text-lg">{t('note')}</p>
           </div>
