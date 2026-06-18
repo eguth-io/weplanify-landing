@@ -19,7 +19,12 @@ import { trackEvent } from '@/lib/tracking';
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.weplanify.com';
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://api.weplanify.com';
-const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
+// Public Mapbox token (pk.*, exposed client-side). Hardcoded fallback because
+// NEXT_PUBLIC_MAPBOX_TOKEN is only set in Vercel's Development env — same
+// convention as APP_URL/API_URL above.
+const MAPBOX_TOKEN =
+  process.env.NEXT_PUBLIC_MAPBOX_TOKEN ||
+  'pk.eyJ1IjoidGhlb2d1IiwiYSI6ImNtOWVxMXpzNzBxNjcycXM1eDhxMm03bmcifQ.GOt3xdrm4HGPX4ArqJGoRg';
 
 interface HeroData {
   affiliateTag?: string | null;
