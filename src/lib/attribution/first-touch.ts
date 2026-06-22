@@ -9,16 +9,22 @@
  * Two facts drive the design:
  *  1. localStorage is origin-scoped — the landing (`weplanify.com`) and the app
  *     (`app.weplanify.com`) do NOT share it. So the landing persists the
- *     original UTMs locally for the duration of the visit, and forwards them to
+ *     original source locally for the duration of the visit, and forwards it to
  *     the app via the register URL querystring (the only cross-origin channel).
- *  2. Attribution is "first-touch": once captured, the external source is never
+ *  2. Attribution is "first-touch": once captured, the original source is never
  *     overwritten by a later visit or an internal click.
  *
- * Model (option B):
- *  - `utm_*`        = the external acquisition source (instagram / tiktok / …),
- *                     or `landing` as a fallback for direct/organic visits.
+ * Source resolution, in priority order, captured once on the first page view:
+ *  1. Explicit `utm_*` params on the URL (paid/tagged campaigns) — they win.
+ *  2. Otherwise the visitor's `document.referrer`, classified into a known
+ *     channel (instagram / google / chatgpt / …) so untagged organic & social
+ *     traffic stops collapsing into the generic `landing` bucket.
+ *  3. Otherwise `direct` (no referrer / same-origin).
+ *
+ * Model:
+ *  - `utm_*`         = the acquisition origin (instagram / google / direct / …).
  *  - `signup_source` = the internal placement where the user converted
- *                     (e.g. `landing:world-cup-2026:hero`), always set.
+ *                      (e.g. `landing:world-cup-2026:hero`), always set.
  */
 
 export type Attribution = {
@@ -38,6 +44,91 @@ const clean = (value: string | null | undefined): string | undefined => {
 
 const hasWindow = (): boolean => typeof window !== 'undefined';
 
+/**
+ * Canonicalize common source shorthands to a single bucket so the value tagged
+ * on a link (e.g. the `?utm_source=ig` Instagram bio link) matches the value
+ * the referrer classifier emits (`instagram`). Without this, one channel splits
+ * across two buckets. Unknown sources pass through unchanged.
+ */
+const SOURCE_ALIASES: Readonly<Record<string, string>> = {
+	ig: 'instagram',
+	insta: 'instagram',
+	fb: 'facebook',
+	yt: 'youtube',
+	tt: 'tiktok',
+	li: 'linkedin',
+	x: 'twitter',
+};
+
+const normalizeSource = (source: string | undefined): string | undefined => {
+	if (!source) return source;
+	return SOURCE_ALIASES[source.toLowerCase()] ?? source;
+};
+
+/**
+ * Known referrer hosts → [source, medium]. Checked in order, matching the
+ * referrer hostname by exact value or as a subdomain (`*.host`). More specific
+ * entries (e.g. an AI assistant hosted on a search-engine domain) come first.
+ */
+const REFERRER_CHANNELS: ReadonlyArray<readonly [RegExp, string, string]> = [
+	// AI assistants (some live on a search-engine domain — match before search).
+	[/(^|\.)gemini\.google\.com$/, 'gemini', 'ai-assistant'],
+	[/(^|\.)chatgpt\.com$/, 'chatgpt', 'ai-assistant'],
+	[/(^|\.)chat\.openai\.com$/, 'chatgpt', 'ai-assistant'],
+	[/(^|\.)claude\.ai$/, 'claude', 'ai-assistant'],
+	[/(^|\.)perplexity\.ai$/, 'perplexity', 'ai-assistant'],
+	[/(^|\.)copilot\.microsoft\.com$/, 'copilot', 'ai-assistant'],
+	// Social.
+	[/(^|\.)instagram\.com$/, 'instagram', 'social'],
+	[/(^|\.)facebook\.com$/, 'facebook', 'social'],
+	[/(^|\.)fb\.(com|me)$/, 'facebook', 'social'],
+	[/(^|\.)tiktok\.com$/, 'tiktok', 'social'],
+	[/(^|\.)(twitter\.com|x\.com|t\.co)$/, 'twitter', 'social'],
+	[/(^|\.)(linkedin\.com|lnkd\.in)$/, 'linkedin', 'social'],
+	[/(^|\.)pinterest\.[a-z.]+$/, 'pinterest', 'social'],
+	[/(^|\.)reddit\.com$/, 'reddit', 'social'],
+	[/(^|\.)(youtube\.com|youtu\.be)$/, 'youtube', 'social'],
+	[/(^|\.)snapchat\.com$/, 'snapchat', 'social'],
+	[/(^|\.)(whatsapp\.com|wa\.me)$/, 'whatsapp', 'social'],
+	[/(^|\.)t\.me$/, 'telegram', 'social'],
+	// Search engines.
+	[/(^|\.)google\.[a-z.]+$/, 'google', 'organic'],
+	[/(^|\.)bing\.com$/, 'bing', 'organic'],
+	[/(^|\.)duckduckgo\.com$/, 'duckduckgo', 'organic'],
+	[/(^|\.)(yahoo\.com|search\.yahoo\.com)$/, 'yahoo', 'organic'],
+	[/(^|\.)ecosia\.org$/, 'ecosia', 'organic'],
+	[/(^|\.)qwant\.com$/, 'qwant', 'organic'],
+	[/(^|\.)brave\.com$/, 'brave', 'organic'],
+];
+
+/**
+ * Classify a `document.referrer` into a first-touch source. Returns `direct`
+ * for an empty or same-origin referrer, a known channel when the host matches,
+ * or the bare hostname with `referral` medium for any other external site.
+ */
+export const classifyReferrer = (referrer: string, currentHost: string): Attribution => {
+	if (!referrer) return { utm_source: 'direct' };
+
+	let host: string;
+	try {
+		host = new URL(referrer).hostname.toLowerCase();
+	} catch {
+		return { utm_source: 'direct' };
+	}
+
+	// Same site (incl. the app subdomain) — not an external acquisition source.
+	const root = currentHost.replace(/^www\./, '').replace(/^app\./, '');
+	if (host === currentHost || host === root || host.endsWith(`.${root}`)) {
+		return { utm_source: 'direct' };
+	}
+
+	for (const [pattern, source, medium] of REFERRER_CHANNELS) {
+		if (pattern.test(host)) return { utm_source: source, utm_medium: medium };
+	}
+
+	return { utm_source: clean(host.replace(/^www\./, '')) ?? 'direct', utm_medium: 'referral' };
+};
+
 /** Read the persisted first-touch attribution (client-only; {} on the server). */
 export const readFirstTouch = (): Attribution => {
 	if (!hasWindow()) return {};
@@ -50,28 +141,29 @@ export const readFirstTouch = (): Attribution => {
 };
 
 /**
- * Persist the UTMs from the current URL — but only the FIRST time we see any.
- * Subsequent visits (even with different UTMs) are ignored, so the original
- * source wins. A visit with no UTM at all stores nothing.
+ * Persist the acquisition source the FIRST time we see the visitor. Explicit
+ * URL `utm_*` win; otherwise we fall back to the classified `document.referrer`
+ * (down to `direct`). Subsequent visits or internal clicks are ignored, so the
+ * original source wins.
  */
 export const captureFirstTouch = (params: URLSearchParams | null): void => {
-	if (!hasWindow() || !params) return;
-
-	const incoming: Attribution = {
-		utm_source: clean(params.get('utm_source')),
-		utm_medium: clean(params.get('utm_medium')),
-		utm_campaign: clean(params.get('utm_campaign')),
-	};
-
-	if (!incoming.utm_source) return; // nothing meaningful to capture
+	if (!hasWindow()) return;
 	if (readFirstTouch().utm_source) return; // first-touch already set — keep it
 
+	const fromUrl = clean(params?.get('utm_source'));
+	const stored: Attribution = fromUrl
+		? {
+				utm_source: fromUrl,
+				utm_medium: clean(params?.get('utm_medium')),
+				utm_campaign: clean(params?.get('utm_campaign')),
+			}
+		: classifyReferrer(document.referrer, window.location.hostname);
+
 	try {
-		const stored: Attribution = {};
-		if (incoming.utm_source) stored.utm_source = incoming.utm_source;
-		if (incoming.utm_medium) stored.utm_medium = incoming.utm_medium;
-		if (incoming.utm_campaign) stored.utm_campaign = incoming.utm_campaign;
-		window.localStorage.setItem(STORAGE_KEY, JSON.stringify(stored));
+		const out: Attribution = { utm_source: normalizeSource(stored.utm_source) };
+		if (stored.utm_medium) out.utm_medium = stored.utm_medium;
+		if (stored.utm_campaign) out.utm_campaign = stored.utm_campaign;
+		window.localStorage.setItem(STORAGE_KEY, JSON.stringify(out));
 	} catch {
 		// ignore quota / private-mode errors
 	}
@@ -91,9 +183,9 @@ const APP_REGISTER = 'https://app.weplanify.com';
 
 /**
  * Build the register URL on the app subdomain, injecting first-touch
- * attribution. If an external source was captured it wins on `utm_*`; otherwise
- * we fall back to `utm_source=landing` plus the page's own medium/campaign.
- * `signup_source` always carries the internal placement context.
+ * attribution. The captured origin wins on `utm_source`; the page's own
+ * medium/campaign fill in only where first-touch has nothing. `signup_source`
+ * always carries the internal placement context.
  */
 export const buildRegisterHref = (opts: RegisterHrefOptions): string => {
 	const { locale, template, campaign, medium, placement } = opts;
@@ -101,17 +193,14 @@ export const buildRegisterHref = (opts: RegisterHrefOptions): string => {
 
 	const query = new URLSearchParams();
 
-	if (ft.utm_source) {
-		// External first-touch source wins.
-		query.set('utm_source', ft.utm_source);
-		if (ft.utm_medium) query.set('utm_medium', ft.utm_medium);
-		if (ft.utm_campaign) query.set('utm_campaign', ft.utm_campaign);
-	} else {
-		// Direct / organic landing visit.
-		query.set('utm_source', 'landing');
-		if (medium) query.set('utm_medium', medium);
-		if (campaign) query.set('utm_campaign', campaign);
-	}
+	// Acquisition origin: captured first-touch source, or `direct` as a safe
+	// default (server render / no JS / pre-capture). Never `landing` — that
+	// placement detail belongs in signup_source below.
+	query.set('utm_source', ft.utm_source ?? 'direct');
+	const utmMedium = ft.utm_medium ?? medium;
+	const utmCampaign = ft.utm_campaign ?? campaign;
+	if (utmMedium) query.set('utm_medium', utmMedium);
+	if (utmCampaign) query.set('utm_campaign', utmCampaign);
 
 	// Internal placement, regardless of external source.
 	const contextParts = ['landing', campaign ?? medium, placement].filter(Boolean);
