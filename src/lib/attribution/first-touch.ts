@@ -45,6 +45,27 @@ const clean = (value: string | null | undefined): string | undefined => {
 const hasWindow = (): boolean => typeof window !== 'undefined';
 
 /**
+ * Canonicalize common source shorthands to a single bucket so the value tagged
+ * on a link (e.g. the `?utm_source=ig` Instagram bio link) matches the value
+ * the referrer classifier emits (`instagram`). Without this, one channel splits
+ * across two buckets. Unknown sources pass through unchanged.
+ */
+const SOURCE_ALIASES: Readonly<Record<string, string>> = {
+	ig: 'instagram',
+	insta: 'instagram',
+	fb: 'facebook',
+	yt: 'youtube',
+	tt: 'tiktok',
+	li: 'linkedin',
+	x: 'twitter',
+};
+
+const normalizeSource = (source: string | undefined): string | undefined => {
+	if (!source) return source;
+	return SOURCE_ALIASES[source.toLowerCase()] ?? source;
+};
+
+/**
  * Known referrer hosts → [source, medium]. Checked in order, matching the
  * referrer hostname by exact value or as a subdomain (`*.host`). More specific
  * entries (e.g. an AI assistant hosted on a search-engine domain) come first.
@@ -139,7 +160,7 @@ export const captureFirstTouch = (params: URLSearchParams | null): void => {
 		: classifyReferrer(document.referrer, window.location.hostname);
 
 	try {
-		const out: Attribution = { utm_source: stored.utm_source };
+		const out: Attribution = { utm_source: normalizeSource(stored.utm_source) };
 		if (stored.utm_medium) out.utm_medium = stored.utm_medium;
 		if (stored.utm_campaign) out.utm_campaign = stored.utm_campaign;
 		window.localStorage.setItem(STORAGE_KEY, JSON.stringify(out));
