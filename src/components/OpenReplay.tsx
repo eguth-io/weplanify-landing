@@ -11,7 +11,8 @@ import { useEffect } from "react";
 //
 // Cloud setup needs only the project key; `ingestPoint` is for self-hosted.
 
-const PROJECT_KEY = process.env.NEXT_PUBLIC_OPENREPLAY_PROJECT_KEY;
+// Hardcoded fallback so replay works without setting the env var; env still wins if present.
+const PROJECT_KEY = process.env.NEXT_PUBLIC_OPENREPLAY_PROJECT_KEY ?? "FYlS2xW7GGUyPQYqzRpP";
 const INGEST_POINT = process.env.NEXT_PUBLIC_OPENREPLAY_INGEST_POINT; // optional, self-hosted only
 
 // Must match CookieConsent.tsx.
