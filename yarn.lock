@@ -5825,6 +5825,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@theogu/eguth-feature-flags@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@theogu/eguth-feature-flags@npm:0.2.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40theogu%2Feguth-feature-flags%2F0.2.0%2F5cfb9a68ee35de31f85db3c6f2f3e165a5d3a0f1"
+  checksum: 10c0/41c9afb76b97d2fac9040c9e65314061d6df0efcea284f96b87aeb3d0150e8d6634c185997e016de48abf285d963d83e2a3b28711b25e98c2322d35986c70aa6
+  languageName: node
+  linkType: hard
+
 "@tybys/wasm-util@npm:^0.10.0":
   version: 0.10.1
   resolution: "@tybys/wasm-util@npm:0.10.1"
@@ -16229,6 +16236,7 @@ __metadata:
     "@sanity/vision": "npm:^3.92.0"
     "@sentry/nextjs": "npm:latest"
     "@squoosh/cli": "npm:^0.7.3"
+    "@theogu/eguth-feature-flags": "npm:^0.2.0"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
