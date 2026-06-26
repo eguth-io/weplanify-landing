@@ -6,6 +6,7 @@ import { Analytics } from "@/components/Analytics";
 import { PageViewTracker } from "@/lib/analytics/page-view-tracker";
 import { FirstTouchTracker } from "@/lib/attribution/first-touch-tracker";
 import { FirstTouchLinkRewriter } from "@/lib/attribution/first-touch-link-rewriter";
+import { SignupConversionBeacon } from "@/lib/attribution/signup-conversion-beacon";
 import CookieConsent from "@/components/CookieConsent";
 import OpenReplay from "@/components/OpenReplay";
 import StickyCTA from "@/components/StickyCTA";
@@ -110,6 +111,8 @@ export default async function LocaleLayout({ children, params }: Props) {
           <FirstTouchTracker />
           {/* Rewrites in-content register CTAs to the first-touch source at click time */}
           <FirstTouchLinkRewriter />
+          {/* Records the home-hero A/B conversion when a register CTA is clicked */}
+          <SignupConversionBeacon />
         </NextIntlClientProvider>
       </body>
     </html>
