@@ -9,6 +9,7 @@ import HeroSearch from "@/components/HeroSearch";
 import HeroVariantSwitcher from "@/components/HeroVariantSwitcher";
 import { cookies } from "next/headers";
 import { getFlags } from "@/lib/flags";
+import { trackExposure } from "@/lib/vision-track";
 
 // Lazy-load below-the-fold components to reduce initial JS bundle
 const BigFeaturesSection = dynamic(() => import("@/components/BigFeaturesSection"));
@@ -55,6 +56,9 @@ export default async function HomePage({ params, searchParams }: Props) {
       const flags = getFlags();
       await flags.prefetch();
       if (flags.isEnabled('hero-search', { userId: visitorId })) heroVariant = 'search';
+      // Real bucketed visitor (not a QA/dev override) — record the exposure to
+      // Vision so the experiments dashboard can compute conversion per variant.
+      trackExposure(visitorId, heroVariant);
     }
   }
   const isDev = process.env.NODE_ENV === 'development';
