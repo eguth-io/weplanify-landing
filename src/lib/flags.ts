@@ -1,5 +1,4 @@
 import { EguthFlags } from '@theogu/eguth-feature-flags';
-import { after } from 'next/server';
 
 // Singleton feature-flag client (Vision-controlled). Server-side only — the API
 // key must never reach the browser. The home-hero A/B is driven by the
@@ -17,37 +16,38 @@ const EXPOSURE_API_KEY = process.env.EGUTH_TRACKER_API_KEY ?? '';
 
 /**
  * Record a feature-flag exposure in Vision (which user saw which variant).
- * Scheduled with `after()` so the serverless function stays alive until the
- * POST completes — otherwise Vercel may freeze the function once the response
- * is sent and silently drop the request. Fully best-effort: any failure is
- * swallowed so analytics can never break a render.
+ * Returns the in-flight POST so the caller can `await` it (the middleware does,
+ * to keep the edge function alive until ingest completes — Vercel may freeze
+ * the function once the response is sent and silently drop a fire-and-forget
+ * request). Fully best-effort: any failure is swallowed so analytics can never
+ * break a render.
+ *
+ * Deduplication is the CALLER's job (via the `wp_exp` cookie in middleware) —
+ * NOT the SDK's `onExposure` de-dupe, which only lives in the client instance's
+ * memory and resets on every Vercel cold start / new lambda instance, so the
+ * same visitor re-fired an exposure on every page load served by a fresh
+ * instance. The cookie sentinel makes "once per visitor per variant" durable.
  */
-function recordExposure(flagKey: string, variant: string, userId?: string): void {
+export async function recordExposure(flagKey: string, variant: string, userId?: string): Promise<void> {
   // Vision attributes exposures by userId; skip anonymous evaluations.
   if (!EXPOSURE_API_KEY || !userId) return;
 
   try {
-    after(async () => {
-      try {
-        await fetch(EXPOSURE_INGEST_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'X-API-Key': EXPOSURE_API_KEY },
-          body: JSON.stringify({
-            events: [
-              {
-                name: 'feature_flag.exposure',
-                userId,
-                properties: { flag: flagKey, variant },
-              },
-            ],
-          }),
-        });
-      } catch {
-        // Best-effort analytics — never surface ingest failures.
-      }
+    await fetch(EXPOSURE_INGEST_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-API-Key': EXPOSURE_API_KEY },
+      body: JSON.stringify({
+        events: [
+          {
+            name: 'feature_flag.exposure',
+            userId,
+            properties: { flag: flagKey, variant },
+          },
+        ],
+      }),
     });
   } catch {
-    // `after` is only available inside a request scope; ignore otherwise.
+    // Best-effort analytics — never surface ingest failures.
   }
 }
 
@@ -62,10 +62,11 @@ export function getFlags(): EguthFlags {
     // (control) rather than blocking the render.
     timeout: 1500,
     defaults: { 'hero-search': false },
-    // Record which users enter which variant so Vision can build per-variant
-    // analytics. The SDK de-dupes per (flag, user, variant), so this fires at
-    // most once per visitor per variant.
-    onExposure: (e) => recordExposure(e.flagKey, e.variant, e.userId),
+    // No `onExposure`: the SDK de-dupes exposures only in per-instance memory,
+    // which resets on every serverless cold start and floods Vision with
+    // duplicate `feature_flag.exposure` events. Exposures are recorded once per
+    // visitor by the middleware via a persistent cookie sentinel instead
+    // (see `recordExposure` above + `src/middleware.ts`).
   });
 
   return flags;
