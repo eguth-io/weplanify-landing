@@ -7,6 +7,20 @@
   "heroTag": "Complete Guide",
   "h1": "How to Plan a Group Trip: The Complete Step-by-Step Guide (2026)",
   "intro": "Planning a group trip is one of the most rewarding experiences you can share with friends, family, or colleagues — but it can also be one of the most chaotic. Between aligning schedules, managing budgets, and keeping everyone happy, group travel planning quickly becomes overwhelming. This guide walks you through every step of organizing a successful group trip, from the very first conversation to your last day on the road.",
+  "quickAnswer": {
+    "heading": "How do you plan a group trip?",
+    "answer": "To plan a group trip, agree on dates and a rough budget first, then vote on a destination everyone is happy with. Split costs fairly with a shared tracker, build the itinerary together, assign a few roles, and keep every decision in one collaborative app so nothing gets lost in the group chat.",
+    "stepsHeading": "The 7 steps at a glance",
+    "steps": [
+      "Define the group and set expectations",
+      "Choose a destination together with a vote",
+      "Set a budget and split costs fairly",
+      "Build the itinerary collaboratively",
+      "Coordinate logistics (transport, stays)",
+      "Pack smart with shared lists",
+      "Stay organized during the trip"
+    ]
+  },
   "tocTitle": "Table of Contents",
   "toc": [
     { "id": "define-group", "label": "Step 1: Define the Group & Set Expectations" },

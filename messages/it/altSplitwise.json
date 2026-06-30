@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Alternativa a Splitwise per i viaggi di gruppo (2026) | WePlanify",
+    "description": "Splitwise divide il conto — ma non organizza il viaggio. WePlanify unisce la divisione delle spese a itinerari collaborativi, sondaggi e budget condivisi. Gratis, bilingue (EN/FR)."
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "hero": {
+    "subtitle": "Confronto completo — 2026",
+    "title": "WePlanify vs Splitwise",
+    "intro": "Splitwise è l'app di riferimento per dividere le spese dopo che sono state fatte. Ma un viaggio di gruppo richiede più di una schermata per saldare i conti: date, una destinazione su cui tutti sono d'accordo, un itinerario e un budget da fissare prima di partire. WePlanify fa la divisione dei costi per cui Splitwise è famoso — e la pianificazione per cui non è mai stato pensato. Ecco uno sguardo onesto e affiancato."
+  },
+  "verdict": {
+    "title": "In breve",
+    "body": "Splitwise è lo strumento migliore per un solo compito: dividere e saldare le spese dopo che si sono verificate. Non è un pianificatore di viaggi. WePlanify copre pianificazione, sondaggi, budget condivisi e divisione delle spese in un unico posto — così il tuo gruppo non deve destreggiarsi tra due app e un foglio di calcolo."
+  },
+  "comparison": {
+    "title": "Confronto diretto",
+    "featureHeader": "Funzionalità"
+  },
+  "features": {
+    "trip_planning": "Pianificazione del viaggio (date + destinazione)",
+    "collab_itinerary": "Itinerario collaborativo",
+    "polls": "Sondaggi / votazioni di gruppo",
+    "expense_split": "Divisione delle spese",
+    "settle_up": "Saldo dei conti / chi deve cosa a chi",
+    "budget_ahead": "Pianifica il budget prima del viaggio",
+    "multi_currency": "Supporto multivaluta",
+    "packing": "Liste per i bagagli",
+    "discovery": "Scoperta di attività",
+    "free": "Piano gratuito",
+    "realtime": "Collaborazione in tempo reale"
+  },
+  "cell": {
+    "basic": "Base",
+    "webApp": "App web"
+  },
+  "midCta": "Prova WePlanify gratis →",
+  "splitwiseShines": {
+    "title": "Dove Splitwise eccelle",
+    "points": [
+      "Divisione delle spese — registra chi ha pagato cosa e Splitwise calcola all'istante chi deve cosa a chi, al centesimo.",
+      "Chiarezza nei saldi — saldi puliti e promemoria rendono indolore il rimborso reciproco dopo il viaggio.",
+      "Uso quotidiano — funziona per affitto, coinquilini e cene, non solo per i viaggi, quindi molti lo hanno già installato.",
+      "Multivaluta — registra le spese in valute diverse, comodo per i viaggi internazionali."
+    ]
+  },
+  "weplanifyWins": {
+    "title": "Dove WePlanify vince",
+    "points": [
+      "Organizza davvero il viaggio — date, destinazione, itinerario giorno per giorno, tutto in un unico spazio collaborativo.",
+      "Sondaggi e votazioni di gruppo — decidete democraticamente destinazione, date e attività prima che qualcuno prenoti.",
+      "Budget prima di partire — fissa un obiettivo e tienilo sotto controllo mentre pianifichi, invece di fare i conti solo dopo.",
+      "Tutto in un'unica app — itinerario, sondaggi, bagagli e budget condiviso, così il gruppo smette di destreggiarsi tra più strumenti."
+    ]
+  },
+  "chooseSplitwise": {
+    "title": "Chi dovrebbe scegliere Splitwise?",
+    "points": [
+      "Gruppi che hanno già un viaggio completamente organizzato e devono solo dividere i conti.",
+      "Coinquilini o coppie che tengono traccia delle spese quotidiane condivise oltre ai viaggi.",
+      "Chi vuole un registro dedicato ai saldi e ai debiti e nulla di più.",
+      "Chiunque abbia solo bisogno di un modo rapido per annotare chi ha pagato e chi deve."
+    ]
+  },
+  "chooseWeplanify": {
+    "title": "Chi dovrebbe scegliere WePlanify?",
+    "points": [
+      "Gruppi di amici che organizzano un viaggio da zero e devono decidere, pianificare e gestire il budget insieme.",
+      "Chiunque sia stanco di usare Splitwise più un pianificatore più una chat di gruppo più un foglio di calcolo.",
+      "Chi organizza addii al nubilato o al celibato coordinando opinioni e soldi in un grande gruppo.",
+      "Viaggiatori francofoni che vogliono un'esperienza di pianificazione interamente in lingua francese."
+    ]
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "WePlanify può dividere i costi come Splitwise?",
+        "a": "Sì. WePlanify include un budget condiviso e un tracker delle spese così puoi registrare chi ha pagato, dividere i costi tra il gruppo e vedere i saldi. La differenza è che tutto vive all'interno del piano del tuo viaggio, accanto all'itinerario e ai sondaggi, invece che in un'app separata."
+      },
+      {
+        "q": "Splitwise è un pianificatore di viaggi?",
+        "a": "No. Splitwise è un'app per dividere le spese e saldare i conti. Non ha itinerario, né votazioni sulla destinazione, né liste per i bagagli, né un modo per pianificare un budget prima del viaggio. È eccellente nell'unica cosa che fa, ma un gruppo ha comunque bisogno di un pianificatore al suo fianco."
+      },
+      {
+        "q": "Ho ancora bisogno di Splitwise se uso WePlanify?",
+        "a": "Di solito no. WePlanify gestisce la divisione dei costi e i saldi del tuo viaggio, quindi la maggior parte dei gruppi può rinunciare alla seconda app. Se il tuo gruppo divide anche spese non legate ai viaggi come l'affitto tutto l'anno, potresti tenere Splitwise per l'uso quotidiano e WePlanify per i viaggi."
+      },
+      {
+        "q": "WePlanify è gratuito come Splitwise?",
+        "a": "Sì, WePlanify è gratuito per organizzare viaggi di gruppo, comprese le funzionalità di budget condiviso e di spese. È anche completamente bilingue (inglese e francese), un aspetto che il caso d'uso di viaggio di Splitwise non affronta in modo specifico."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Organizzalo e dividilo — in un'unica app gratuita",
+    "button": "Inizia gratis"
+  },
+  "crossLinks": {
+    "title": "Scopri di più",
+    "all": {
+      "title": "Tutte le alternative",
+      "text": "Confronta WePlanify con tutte le app più popolari per organizzare viaggi di gruppo.",
+      "cta": "Vedi il confronto →"
+    },
+    "friends": {
+      "title": "Viaggio con gli amici",
+      "text": "Organizza un viaggio di gruppo con gli amici senza fatica usando WePlanify.",
+      "cta": "Leggi di più →"
+    },
+    "guide": {
+      "title": "Guida: come organizzare un viaggio di gruppo",
+      "text": "La guida completa passo dopo passo per organizzare un viaggio di gruppo riuscito.",
+      "cta": "Leggi la guida →"
+    }
+  },
+  "jsonld": {
+    "breadcrumbAlternatives": "Alternative",
+    "articleHeadline": "WePlanify vs Splitwise — Il modo migliore per dividere i costi in un viaggio di gruppo (2026)"
+  }
+}

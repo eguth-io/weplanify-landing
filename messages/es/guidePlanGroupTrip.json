@@ -7,6 +7,20 @@
   "heroTag": "Guía completa",
   "h1": "Cómo planificar un viaje en grupo: la guía completa paso a paso (2026)",
   "intro": "Planificar un viaje en grupo es una de las experiencias más gratificantes que puedes compartir con amigos, familia o compañeros — pero también puede ser una de las más caóticas. Entre cuadrar agendas, gestionar presupuestos y mantener a todos contentos, planificar un viaje en grupo se vuelve abrumador rápidamente. Esta guía te lleva por cada paso de la organización de un viaje en grupo con éxito, desde la primera conversación hasta tu último día de viaje.",
+  "quickAnswer": {
+    "heading": "¿Cómo se planifica un viaje en grupo?",
+    "answer": "Para planificar un viaje en grupo, acordad primero las fechas y un presupuesto aproximado, y luego votad un destino con el que todos estén contentos. Repartid los costes de forma justa con un control compartido, construid el itinerario juntos, asignad algunos roles y mantened cada decisión en una sola app colaborativa para que nada se pierda en el chat del grupo.",
+    "stepsHeading": "Los 7 pasos de un vistazo",
+    "steps": [
+      "Define el grupo y fija las expectativas",
+      "Elegid un destino juntos con una votación",
+      "Fija un presupuesto y reparte los costes de forma justa",
+      "Construid el itinerario de forma colaborativa",
+      "Coordina la logística (transporte, alojamiento)",
+      "Haz la maleta con cabeza usando listas compartidas",
+      "Mantente organizado durante el viaje"
+    ]
+  },
   "tocTitle": "Índice",
   "toc": [
     { "id": "define-group", "label": "Paso 1: Define el grupo y establece las expectativas" },
