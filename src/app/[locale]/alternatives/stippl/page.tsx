@@ -88,7 +88,7 @@ const features: Feature[] = [
   { key: "journal", weplanify: false, stippl: true },
   { key: "community", weplanify: false, stippl: true },
   { key: "free", weplanify: true, stippl: true },
-  { key: "french", weplanify: true, stippl: false },
+  { key: "languages", weplanify: true, stippl: false },
   { key: "mobile", weplanify: "web_app", stippl: true },
   { key: "realtime", weplanify: true, stippl: true },
 ];

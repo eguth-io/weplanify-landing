@@ -69,8 +69,8 @@
       "tripit": "freemium"
     },
     {
-      "key": "french",
-      "label": "Lingua francese",
+      "key": "languages",
+      "label": "Disponibile in 8 lingue (EN, FR, ES, IT, DE, PT, PL, ZH)",
       "weplanify": true,
       "tripit": false
     },
