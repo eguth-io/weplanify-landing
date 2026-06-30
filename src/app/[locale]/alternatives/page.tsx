@@ -24,6 +24,8 @@ type Feature = {
 
 type AppColumn = {
   name: string;
+  // slug of the dedicated head-to-head page under /alternatives, when one exists
+  slug?: string;
   features: Record<string, string | boolean>;
 };
 
@@ -98,6 +100,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "Wanderlog",
+    slug: "wanderlog",
     features: {
       collab_itinerary: true,
       polls: false,
@@ -112,6 +115,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "SquadTrip",
+    slug: "squadtrip",
     features: {
       collab_itinerary: true,
       polls: true,
@@ -140,6 +144,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "TripIt",
+    slug: "tripit",
     features: {
       collab_itinerary: true,
       polls: false,
@@ -154,6 +159,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "Splitwise",
+    slug: "splitwise",
     features: {
       collab_itinerary: false,
       polls: false,
@@ -168,6 +174,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "Stippl",
+    slug: "stippl",
     features: {
       collab_itinerary: true,
       polls: false,
@@ -259,6 +266,7 @@ export default async function AlternativesPage({ params }: Props) {
   const whyPoints = t.raw("whyPoints") as { title: string; desc: string }[];
   const comingSoon = t("comingSoon");
   const freemium = t("freemium");
+  const compareCta = t("compareCta");
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -382,7 +390,15 @@ export default async function AlternativesPage({ params }: Props) {
                             : "text-[#FFFBF5]"
                         }`}
                       >
-                        {app.name}
+                        <span className="block">{app.name}</span>
+                        {app.slug && (
+                          <Link
+                            href={`/${locale}/alternatives/${app.slug}`}
+                            className="mt-1.5 inline-block text-[11px] font-karla font-semibold text-[#EEF899] hover:text-[#F6391A] transition-colors"
+                          >
+                            {compareCta}
+                          </Link>
+                        )}
                       </th>
                     ))}
                   </tr>
@@ -431,15 +447,25 @@ export default async function AlternativesPage({ params }: Props) {
                       : "border-[#001E13]/10 bg-white"
                   }`}
                 >
-                  <h3
-                    className={`font-londrina-solid text-xl mb-4 ${
-                      app.name === "WePlanify"
-                        ? "text-[#F6391A]"
-                        : "text-[#001E13]"
-                    }`}
-                  >
-                    {app.name}
-                  </h3>
+                  <div className="flex items-baseline justify-between gap-3 mb-4">
+                    <h3
+                      className={`font-londrina-solid text-xl ${
+                        app.name === "WePlanify"
+                          ? "text-[#F6391A]"
+                          : "text-[#001E13]"
+                      }`}
+                    >
+                      {app.name}
+                    </h3>
+                    {app.slug && (
+                      <Link
+                        href={`/${locale}/alternatives/${app.slug}`}
+                        className="shrink-0 text-xs font-karla font-semibold text-[#F6391A] hover:underline"
+                      >
+                        {compareCta}
+                      </Link>
+                    )}
+                  </div>
                   <ul className="space-y-2.5">
                     {features.map((feature) => {
                       const val = app.features[feature.key];
