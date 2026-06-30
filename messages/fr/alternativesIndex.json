@@ -19,7 +19,7 @@
     { "key": "packing", "label": "Listes de bagages" },
     { "key": "discovery", "label": "Découverte d'activités" },
     { "key": "free", "label": "Plan gratuit" },
-    { "key": "french", "label": "Disponible en français" },
+    { "key": "languages", "label": "Disponible en 8 langues (EN, FR, ES, IT, DE, PT, PL, ZH)" },
     { "key": "realtime", "label": "Collaboration en temps réel" },
     { "key": "mobile", "label": "Application mobile" }
   ],

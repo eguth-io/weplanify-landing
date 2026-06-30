@@ -19,7 +19,7 @@
     { "key": "packing", "label": "Packing lists" },
     { "key": "discovery", "label": "Activity discovery" },
     { "key": "free", "label": "Free plan" },
-    { "key": "french", "label": "Available in French" },
+    { "key": "languages", "label": "Available in 8 languages (EN, FR, ES, IT, DE, PT, PL, ZH)" },
     { "key": "realtime", "label": "Real-time collaboration" },
     { "key": "mobile", "label": "Mobile app" }
   ],

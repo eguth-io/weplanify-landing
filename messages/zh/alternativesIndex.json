@@ -19,7 +19,7 @@
     { "key": "packing", "label": "打包清单" },
     { "key": "discovery", "label": "活动发现" },
     { "key": "free", "label": "免费方案" },
-    { "key": "french", "label": "提供法语" },
+    { "key": "languages", "label": "支持 8 种语言（EN、FR、ES、IT、DE、PT、PL、ZH）" },
     { "key": "realtime", "label": "实时协作" },
     { "key": "mobile", "label": "手机应用" }
   ],
