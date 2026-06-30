@@ -87,7 +87,7 @@ const features: Feature[] = [
   { key: "guest_mgmt", weplanify: "basic", squadtrip: "advanced" },
   { key: "discovery", weplanify: true, squadtrip: false },
   { key: "free", weplanify: "free_100", squadtrip: "partial_fees" },
-  { key: "french", weplanify: true, squadtrip: false },
+  { key: "languages", weplanify: true, squadtrip: false },
   { key: "mobile", weplanify: "web_app", squadtrip: "web_app" },
   { key: "realtime", weplanify: true, squadtrip: true },
 ];

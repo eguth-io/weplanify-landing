@@ -19,7 +19,7 @@
     { "key": "packing", "label": "Listy rzeczy do spakowania" },
     { "key": "discovery", "label": "Odkrywanie atrakcji" },
     { "key": "free", "label": "Darmowy plan" },
-    { "key": "french", "label": "Dostępne po francusku" },
+    { "key": "languages", "label": "Dostępne w 8 językach (EN, FR, ES, IT, DE, PT, PL, ZH)" },
     { "key": "realtime", "label": "Współpraca w czasie rzeczywistym" },
     { "key": "mobile", "label": "Aplikacja mobilna" }
   ],
