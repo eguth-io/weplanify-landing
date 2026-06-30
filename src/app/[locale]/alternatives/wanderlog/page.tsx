@@ -87,7 +87,7 @@ const features: Feature[] = [
   { key: "offline", weplanify: false, wanderlog: true },
   { key: "mobile", weplanify: "web_app", wanderlog: true },
   { key: "free", weplanify: true, wanderlog: true },
-  { key: "french", weplanify: true, wanderlog: false },
+  { key: "languages", weplanify: true, wanderlog: false },
   { key: "realtime", weplanify: true, wanderlog: true },
 ];
 
