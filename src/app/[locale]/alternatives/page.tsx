@@ -390,15 +390,7 @@ export default async function AlternativesPage({ params }: Props) {
                             : "text-[#FFFBF5]"
                         }`}
                       >
-                        <span className="block">{app.name}</span>
-                        {app.slug && (
-                          <Link
-                            href={`/${locale}/alternatives/${app.slug}`}
-                            className="mt-1.5 inline-block text-[11px] font-karla font-semibold text-[#EEF899] hover:text-[#F6391A] transition-colors"
-                          >
-                            {compareCta}
-                          </Link>
-                        )}
+                        {app.name}
                       </th>
                     ))}
                   </tr>
@@ -432,6 +424,27 @@ export default async function AlternativesPage({ params }: Props) {
                       ))}
                     </tr>
                   ))}
+                  {/* Compare CTA row */}
+                  <tr className="border-t-2 border-[#001E13]/10">
+                    <td className="px-6 py-5 sticky left-0 z-10 bg-white" />
+                    {apps.map((app) => (
+                      <td
+                        key={`compare-${app.name}`}
+                        className={`px-4 py-5 text-center ${
+                          app.name === "WePlanify" ? "bg-emerald-50/40" : ""
+                        }`}
+                      >
+                        {app.slug && (
+                          <Link
+                            href={`/${locale}/alternatives/${app.slug}`}
+                            className="inline-block rounded-full bg-[#F6391A] px-5 py-2 font-karla font-bold text-xs text-[#FFFBF5] hover:bg-[#d42d10] transition-colors whitespace-nowrap"
+                          >
+                            {compareCta}
+                          </Link>
+                        )}
+                      </td>
+                    ))}
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -447,25 +460,15 @@ export default async function AlternativesPage({ params }: Props) {
                       : "border-[#001E13]/10 bg-white"
                   }`}
                 >
-                  <div className="flex items-baseline justify-between gap-3 mb-4">
-                    <h3
-                      className={`font-londrina-solid text-xl ${
-                        app.name === "WePlanify"
-                          ? "text-[#F6391A]"
-                          : "text-[#001E13]"
-                      }`}
-                    >
-                      {app.name}
-                    </h3>
-                    {app.slug && (
-                      <Link
-                        href={`/${locale}/alternatives/${app.slug}`}
-                        className="shrink-0 text-xs font-karla font-semibold text-[#F6391A] hover:underline"
-                      >
-                        {compareCta}
-                      </Link>
-                    )}
-                  </div>
+                  <h3
+                    className={`font-londrina-solid text-xl mb-4 ${
+                      app.name === "WePlanify"
+                        ? "text-[#F6391A]"
+                        : "text-[#001E13]"
+                    }`}
+                  >
+                    {app.name}
+                  </h3>
                   <ul className="space-y-2.5">
                     {features.map((feature) => {
                       const val = app.features[feature.key];
@@ -488,6 +491,14 @@ export default async function AlternativesPage({ params }: Props) {
                       );
                     })}
                   </ul>
+                  {app.slug && (
+                    <Link
+                      href={`/${locale}/alternatives/${app.slug}`}
+                      className="mt-5 block w-full rounded-full bg-[#F6391A] px-5 py-2.5 text-center font-karla font-bold text-sm text-[#FFFBF5] hover:bg-[#d42d10] transition-colors"
+                    >
+                      {compareCta}
+                    </Link>
+                  )}
                 </div>
               ))}
             </div>
