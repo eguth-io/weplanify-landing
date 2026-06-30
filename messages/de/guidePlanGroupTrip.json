@@ -7,6 +7,20 @@
   "heroTag": "Kompletter Guide",
   "h1": "So planst du eine Gruppenreise: der komplette Schritt-für-Schritt-Guide (2026)",
   "intro": "Eine Gruppenreise zu planen ist eines der lohnendsten Erlebnisse, das du mit Freunden, Familie oder Kollegen teilen kannst – aber es kann auch eines der chaotischsten sein. Zwischen dem Abstimmen von Terminen, dem Verwalten von Budgets und dem Glücklichmachen aller wird die Gruppenreiseplanung schnell überwältigend. Dieser Guide führt dich durch jeden Schritt der Organisation einer gelungenen Gruppenreise, vom allerersten Gespräch bis zu deinem letzten Tag unterwegs.",
+  "quickAnswer": {
+    "heading": "Wie plant man eine Gruppenreise?",
+    "answer": "Um eine Gruppenreise zu planen, einigt euch zuerst auf Termine und ein grobes Budget, stimmt dann über ein Reiseziel ab, mit dem alle zufrieden sind. Teilt die Kosten fair mit einem geteilten Tracker, baut die Reiseroute gemeinsam, verteilt ein paar Rollen und haltet jede Entscheidung in einer kollaborativen App fest, damit im Gruppenchat nichts verloren geht.",
+    "stepsHeading": "Die 7 Schritte auf einen Blick",
+    "steps": [
+      "Die Gruppe definieren und Erwartungen festlegen",
+      "Gemeinsam per Abstimmung ein Reiseziel wählen",
+      "Ein Budget festlegen und Kosten fair aufteilen",
+      "Die Reiseroute gemeinsam bauen",
+      "Logistik koordinieren (Transport, Unterkünfte)",
+      "Schlau packen mit geteilten Listen",
+      "Während der Reise organisiert bleiben"
+    ]
+  },
   "tocTitle": "Inhaltsverzeichnis",
   "toc": [
     { "id": "define-group", "label": "Schritt 1: Die Gruppe definieren & Erwartungen festlegen" },

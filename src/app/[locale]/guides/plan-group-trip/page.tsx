@@ -212,6 +212,7 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
 
   const toc = t.raw("toc") as TocItem[];
   const steps = t.raw("steps") as Step[];
+  const quickSteps = t.raw("quickAnswer.steps") as string[];
   const tips = t.raw("proTips.tips") as ProTip[];
   const faqItems = t.raw("faq.items") as FaqItem[];
 
@@ -287,6 +288,33 @@ export default async function PlanGroupTripGuidePage({ params }: Props) {
             </a>
           </div>
         </header>
+
+        {/* Quick Answer (featured-snippet target) */}
+        <section className="px-4 lg:px-8 mb-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="rounded-2xl border-2 border-[#EEF899] bg-[#EEF899]/20 p-6 lg:p-8">
+              <h2 className="text-[#001E13] text-xl lg:text-2xl font-londrina-solid mb-3">
+                {t("quickAnswer.heading")}
+              </h2>
+              <p className="text-[#001E13]/85 text-base font-karla leading-relaxed mb-5">
+                {t("quickAnswer.answer")}
+              </p>
+              <p className="text-[#001E13] text-sm font-karla font-bold uppercase tracking-wide mb-3">
+                {t("quickAnswer.stepsHeading")}
+              </p>
+              <ol className="list-decimal list-inside space-y-1.5">
+                {quickSteps.map((step, i) => (
+                  <li
+                    key={i}
+                    className="text-[#001E13]/80 text-base font-karla leading-relaxed"
+                  >
+                    {step}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </section>
 
         {/* Author */}
         <div className="max-w-3xl mx-auto px-4 lg:px-8">

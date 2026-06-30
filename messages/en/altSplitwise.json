@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Splitwise Alternative for Group Trips (2026) | WePlanify",
+    "description": "Splitwise splits the bill — but it doesn't plan the trip. WePlanify combines expense splitting with collaborative itineraries, polls and shared budgets. Free, bilingual (EN/FR)."
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "hero": {
+    "subtitle": "Complete comparison — 2026",
+    "title": "WePlanify vs Splitwise",
+    "intro": "Splitwise is the go-to app for splitting expenses after the fact. But a group trip needs more than a settle-up screen: dates, a destination everyone agrees on, an itinerary, and a budget you set before you go. WePlanify does the cost-splitting Splitwise is known for — and the planning it was never built to do. Here is an honest, side-by-side look."
+  },
+  "verdict": {
+    "title": "TL;DR",
+    "body": "Splitwise is the best tool for one job: splitting and settling expenses after they happen. It is not a trip planner. WePlanify covers planning, polls, shared budgets and expense splitting in one place — so your group doesn't have to juggle two apps and a spreadsheet."
+  },
+  "comparison": {
+    "title": "Head-to-Head Comparison",
+    "featureHeader": "Feature"
+  },
+  "features": {
+    "trip_planning": "Trip planning (dates + destination)",
+    "collab_itinerary": "Collaborative itinerary",
+    "polls": "Group polls / voting",
+    "expense_split": "Expense splitting",
+    "settle_up": "Settle up / who owes whom",
+    "budget_ahead": "Plan the budget before the trip",
+    "multi_currency": "Multi-currency support",
+    "packing": "Packing lists",
+    "discovery": "Activity discovery",
+    "free": "Free plan",
+    "realtime": "Real-time collaboration"
+  },
+  "cell": {
+    "basic": "Basic",
+    "webApp": "Web app"
+  },
+  "midCta": "Try WePlanify free →",
+  "splitwiseShines": {
+    "title": "Where Splitwise Shines",
+    "points": [
+      "Expense splitting — log who paid what and Splitwise instantly works out who owes whom, down to the cent.",
+      "Settle-up clarity — clean balances and reminders make paying each other back painless after the trip.",
+      "Everyday use — it works for rent, housemates and dinners, not just travel, so people already have it installed.",
+      "Multi-currency — record expenses in different currencies, handy for international trips."
+    ]
+  },
+  "weplanifyWins": {
+    "title": "Where WePlanify Wins",
+    "points": [
+      "It actually plans the trip — dates, destination, day-by-day itinerary, all in one collaborative space.",
+      "Group polls and voting — settle the destination, dates and activities democratically before anyone books.",
+      "Budget before you go — set a target and track it as you plan, instead of only tallying the damage afterward.",
+      "Everything in one app — itinerary, polls, packing and shared budget, so the group stops juggling tools."
+    ]
+  },
+  "chooseSplitwise": {
+    "title": "Who Should Choose Splitwise?",
+    "points": [
+      "Groups who already have a fully planned trip and only need to split the bills.",
+      "Housemates or couples tracking shared everyday expenses beyond travel.",
+      "People who want a dedicated settle-up and IOU ledger and nothing more.",
+      "Anyone who just needs a quick way to record who paid and who owes."
+    ]
+  },
+  "chooseWeplanify": {
+    "title": "Who Should Choose WePlanify?",
+    "points": [
+      "Friend groups organising a trip from scratch who need to decide, plan and budget together.",
+      "Anyone tired of running Splitwise plus a planner plus a group chat plus a spreadsheet.",
+      "Bachelorette or bachelor party planners coordinating opinions and money across a big group.",
+      "Francophone travellers who want a fully French-language planning experience."
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Can WePlanify split costs like Splitwise?",
+        "a": "Yes. WePlanify includes a shared budget and expense tracker so you can record who paid, split costs across the group and see balances. The difference is that it lives inside your trip plan, alongside the itinerary and polls, instead of in a separate app."
+      },
+      {
+        "q": "Is Splitwise a trip planner?",
+        "a": "No. Splitwise is an expense-splitting and settle-up app. It has no itinerary, no destination voting, no packing lists and no way to plan a budget before the trip. It is excellent at the one thing it does, but a group still needs a planner alongside it."
+      },
+      {
+        "q": "Do I still need Splitwise if I use WePlanify?",
+        "a": "Usually not. WePlanify handles cost splitting and balances for your trip, so most groups can drop the second app. If your group also splits non-travel expenses like rent year-round, you might keep Splitwise for everyday use and WePlanify for trips."
+      },
+      {
+        "q": "Is WePlanify free like Splitwise?",
+        "a": "Yes, WePlanify is free to plan group trips, including the shared budget and expense features. It is also fully bilingual (English and French), which Splitwise's travel use case does not specifically address."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Plan it and split it — in one free app",
+    "button": "Get started for free"
+  },
+  "crossLinks": {
+    "title": "Explore More",
+    "all": {
+      "title": "All Alternatives",
+      "text": "Compare WePlanify with all popular group trip planning apps.",
+      "cta": "See comparison →"
+    },
+    "friends": {
+      "title": "Trip with Friends",
+      "text": "Plan a group trip with friends effortlessly using WePlanify.",
+      "cta": "Read more →"
+    },
+    "guide": {
+      "title": "Guide: How to Plan a Group Trip",
+      "text": "The complete step-by-step guide to planning a successful group trip.",
+      "cta": "Read the guide →"
+    }
+  },
+  "jsonld": {
+    "breadcrumbAlternatives": "Alternatives",
+    "articleHeadline": "WePlanify vs Splitwise — The Best Way to Split Costs on a Group Trip (2026)"
+  }
+}

@@ -24,6 +24,8 @@ type Feature = {
 
 type AppColumn = {
   name: string;
+  // slug of the dedicated head-to-head page under /alternatives, when one exists
+  slug?: string;
   features: Record<string, string | boolean>;
 };
 
@@ -98,6 +100,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "Wanderlog",
+    slug: "wanderlog",
     features: {
       collab_itinerary: true,
       polls: false,
@@ -112,6 +115,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "SquadTrip",
+    slug: "squadtrip",
     features: {
       collab_itinerary: true,
       polls: true,
@@ -140,6 +144,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "TripIt",
+    slug: "tripit",
     features: {
       collab_itinerary: true,
       polls: false,
@@ -154,6 +159,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "Splitwise",
+    slug: "splitwise",
     features: {
       collab_itinerary: false,
       polls: false,
@@ -168,6 +174,7 @@ const apps: AppColumn[] = [
   },
   {
     name: "Stippl",
+    slug: "stippl",
     features: {
       collab_itinerary: true,
       polls: false,
@@ -259,6 +266,7 @@ export default async function AlternativesPage({ params }: Props) {
   const whyPoints = t.raw("whyPoints") as { title: string; desc: string }[];
   const comingSoon = t("comingSoon");
   const freemium = t("freemium");
+  const compareCta = t("compareCta");
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -416,6 +424,27 @@ export default async function AlternativesPage({ params }: Props) {
                       ))}
                     </tr>
                   ))}
+                  {/* Compare CTA row */}
+                  <tr className="border-t-2 border-[#001E13]/10">
+                    <td className="px-6 py-5 sticky left-0 z-10 bg-white" />
+                    {apps.map((app) => (
+                      <td
+                        key={`compare-${app.name}`}
+                        className={`px-4 py-5 text-center ${
+                          app.name === "WePlanify" ? "bg-emerald-50/40" : ""
+                        }`}
+                      >
+                        {app.slug && (
+                          <Link
+                            href={`/${locale}/alternatives/${app.slug}`}
+                            className="inline-block rounded-full bg-[#F6391A] px-5 py-2 font-karla font-bold text-xs text-[#FFFBF5] hover:bg-[#d42d10] transition-colors whitespace-nowrap"
+                          >
+                            {compareCta}
+                          </Link>
+                        )}
+                      </td>
+                    ))}
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -462,6 +491,14 @@ export default async function AlternativesPage({ params }: Props) {
                       );
                     })}
                   </ul>
+                  {app.slug && (
+                    <Link
+                      href={`/${locale}/alternatives/${app.slug}`}
+                      className="mt-5 block w-full rounded-full bg-[#F6391A] px-5 py-2.5 text-center font-karla font-bold text-sm text-[#FFFBF5] hover:bg-[#d42d10] transition-colors"
+                    >
+                      {compareCta}
+                    </Link>
+                  )}
                 </div>
               ))}
             </div>
@@ -489,6 +526,35 @@ export default async function AlternativesPage({ params }: Props) {
                     {comp.text}
                   </p>
                 </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------------------------------------------------------- */}
+        {/* In-depth comparisons (links to each competitor page)            */}
+        {/* ---------------------------------------------------------------- */}
+        <section className="pb-16 lg:pb-24 px-4 lg:px-8 bg-white">
+          <div className="max-w-4xl mx-auto pt-16 lg:pt-20">
+            <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-3xl text-center mb-10">
+              {t("inDepthTitle")}
+            </h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                { name: "Wanderlog", slug: "wanderlog" },
+                { name: "TripIt", slug: "tripit" },
+                { name: "SquadTrip", slug: "squadtrip" },
+                { name: "Stippl", slug: "stippl" },
+                { name: "Splitwise", slug: "splitwise" },
+                { name: "Cruzmi", slug: "cruzmi" },
+              ].map((c) => (
+                <Link
+                  key={c.slug}
+                  href={`/${locale}/alternatives/${c.slug}`}
+                  className="rounded-full border border-[#001E13]/15 bg-[#FFFBF5] px-5 py-2.5 font-karla font-semibold text-sm text-[#001E13] hover:border-[#F6391A] hover:text-[#F6391A] transition-colors"
+                >
+                  WePlanify vs {c.name}
+                </Link>
               ))}
             </div>
           </div>

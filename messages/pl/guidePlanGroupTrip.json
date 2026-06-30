@@ -7,6 +7,20 @@
   "heroTag": "Kompletny przewodnik",
   "h1": "Jak zaplanować wyjazd grupowy: kompletny przewodnik krok po kroku (2026)",
   "intro": "Planowanie wyjazdu grupowego to jedno z najbardziej satysfakcjonujących doświadczeń, jakie możesz dzielić ze znajomymi, rodziną czy współpracownikami — ale może też być jednym z najbardziej chaotycznych. Między zgrywaniem terminów, zarządzaniem budżetami a dbaniem o zadowolenie wszystkich planowanie podróży grupowych szybko staje się przytłaczające. Ten przewodnik przeprowadzi Cię przez każdy etap organizacji udanego wyjazdu grupowego, od pierwszej rozmowy po ostatni dzień w drodze.",
+  "quickAnswer": {
+    "heading": "Jak zaplanować wyjazd grupowy?",
+    "answer": "Aby zaplanować wyjazd grupowy, najpierw ustalcie terminy i orientacyjny budżet, a potem przegłosujcie kierunek, który wszystkim odpowiada. Dzielcie koszty sprawiedliwie dzięki wspólnemu narzędziu do śledzenia wydatków, budujcie plan podróży razem, przydzielcie kilka ról i trzymajcie każdą decyzję w jednej wspólnej aplikacji, żeby nic nie zginęło w czacie grupowym.",
+    "stepsHeading": "7 kroków w pigułce",
+    "steps": [
+      "Określ grupę i ustal oczekiwania",
+      "Wybierzcie kierunek wspólnie w głosowaniu",
+      "Ustalcie budżet i dzielcie koszty sprawiedliwie",
+      "Budujcie plan podróży wspólnie",
+      "Skoordynujcie logistykę (transport, noclegi)",
+      "Pakujcie się sprytnie dzięki wspólnym listom",
+      "Bądźcie zorganizowani podczas podróży"
+    ]
+  },
   "tocTitle": "Spis treści",
   "toc": [
     { "id": "define-group", "label": "Krok 1: Określ grupę i ustal oczekiwania" },

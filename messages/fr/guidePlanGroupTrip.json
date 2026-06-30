@@ -7,6 +7,20 @@
   "heroTag": "Guide Complet",
   "h1": "Comment Organiser un Voyage de Groupe : Le Guide Complet Étape par Étape (2026)",
   "intro": "Organiser un voyage de groupe est l'une des expériences les plus enrichissantes que vous puissiez partager avec vos amis, votre famille ou vos collègues — mais cela peut aussi être l'une des plus chaotiques. Entre l'alignement des agendas, la gestion des budgets et la satisfaction de chacun, la planification d'un voyage de groupe devient vite écrasante. Ce guide vous accompagne à chaque étape de l'organisation d'un voyage de groupe réussi, de la toute première conversation jusqu'à votre dernier jour sur la route.",
+  "quickAnswer": {
+    "heading": "Comment organiser un voyage de groupe ?",
+    "answer": "Pour organiser un voyage de groupe, mettez-vous d'abord d'accord sur les dates et un budget approximatif, puis votez pour une destination qui convient à tous. Partagez les frais équitablement avec un suivi commun, construisez l'itinéraire ensemble, attribuez quelques rôles et gardez chaque décision dans une seule app collaborative pour ne rien perdre dans la conversation de groupe.",
+    "stepsHeading": "Les 7 étapes en un coup d'œil",
+    "steps": [
+      "Définir le groupe et les attentes",
+      "Choisir une destination ensemble par un vote",
+      "Fixer un budget et partager les frais équitablement",
+      "Construire l'itinéraire de façon collaborative",
+      "Coordonner la logistique (transport, hébergements)",
+      "Préparer les bagages avec des listes partagées",
+      "Rester organisé pendant le voyage"
+    ]
+  },
   "tocTitle": "Sommaire",
   "toc": [
     { "id": "define-group", "label": "Étape 1 : Définir le Groupe et les Attentes" },
