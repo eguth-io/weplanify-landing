@@ -94,32 +94,34 @@ Pages d'alternative dédiées. Déjà en place : `squadtrip`, `stippl`, `tripit`
 
 ## 4. Roadmap priorisée
 
-Légende canal : **[S]** = article blog Sanity (CMS, pas de PR de code) · **[P]** = page codée (React + i18n 8 langues, via PR).
+> **Note prod.** Tout le contenu se crée **via PR de code**. Les articles de blog sont des **pages React codées en dur** (ex. `src/app/[locale]/blog/group-trip-budget/page.tsx`) dont le texte vit dans un **namespace i18n** (`messages/<locale>/blog<Nom>.json`) sur les **8 langues** ; Sanity ne sert que pour la nav/footer/liste du blog, pas pour les articles. Chaque pièce = 1 route + 8 fichiers de locale + enregistrement sitemap.
+
+Légende canal : **[Art]** = article de blog (route `/blog/<slug>`) · **[Page]** = page de section (route `/<slug>`). Les deux = React + i18n 8 langues, via PR.
 
 ### P0 — Maintenant (impact × faisabilité max)
 
 | # | Action | Cible mot-clé | Canal | Pourquoi |
 |---|---|---|---|---|
 | 1 | **Backlinks vers `/alternatives/best-group-trip-planner-apps`** (annuaires AlternativeTo/G2/Capterra/SaaSHub/ProductHunt) | best group trip apps 2026 | off-page | Seule page qui perce (pos 9,3, 27k impr). Pousser sur top 5 = le meilleur ROI absolu. |
-| 2 | **Approfondir `/guides/plan-group-trip`** + viser le featured snippet (étapes numérotées, réponse directe en intro, FAQ schema) | how to plan a group trip | [P] | #1 actuel = Reddit. Aucun snippet pris. Une page structurée peut le rafler. |
-| 3 | **Page `/alternatives/splitwise`** — « WePlanify vs Splitwise pour les voyages de groupe » | splitwise alternative for trips, split costs group trip app | [P] | Splitwise = grosse marque, mais ne planifie pas. On a budget + split + planning. Intention très qualifiée. |
+| 2 | **Approfondir `/guides/plan-group-trip`** + viser le featured snippet (étapes numérotées, réponse directe en intro, FAQ schema) | how to plan a group trip | [Page] | #1 actuel = Reddit. Aucun snippet pris. Une page structurée peut le rafler. |
+| 3 | **Page `/alternatives/splitwise`** — « WePlanify vs Splitwise pour les voyages de groupe » | splitwise alternative for trips, split costs group trip app | [Page] | Splitwise = grosse marque, mais ne planifie pas. On a budget + split + planning. Intention très qualifiée. |
 
 ### P1 — Ensuite (le wedge pain-points)
 
 | # | Action | Cible mot-clé | Canal |
 |---|---|---|---|
-| 4 | Article « How to Plan a Trip With Friends Without Ruining the Friendship » | plan a trip with friends without ruining friendship | [S] |
-| 5 | Article « How to Split Costs on a Group Trip (Who Pays What) » | how to split costs group trip, who pays what group trip | [S] |
-| 6 | Article « How to Plan a Group Trip When No One Will Commit » | group trip no one commits / flaky friends trip | [S] |
-| 7 | Page outil « Group Trip Checklist / Template (Free) » (lead magnet) | group trip planning checklist / spreadsheet / template | [P] |
-| 8 | Pages `/alternatives/troupe` + `/alternatives/avosquado` | troupe alternative, avosquado alternative | [P] |
+| 4 | Article « How to Plan a Trip With Friends Without Ruining the Friendship » | plan a trip with friends without ruining friendship | [Art] |
+| 5 | Article « How to Split Costs on a Group Trip (Who Pays What) » | how to split costs group trip, who pays what group trip | [Art] |
+| 6 | Article « How to Plan a Group Trip When No One Will Commit » | group trip no one commits / flaky friends trip | [Art] |
+| 7 | Page outil « Group Trip Checklist / Template (Free) » (lead magnet) | group trip planning checklist / spreadsheet / template | [Page] |
+| 8 | Pages `/alternatives/troupe` + `/alternatives/avosquado` | troupe alternative, avosquado alternative | [Page] |
 
 ### P2 — Consolidation
 
 | # | Action | Cible | Canal |
 |---|---|---|---|
-| 9 | Versions FR des P1 (océan bleu FR : « organiser voyage entre amis sans prise de tête », « partager les frais voyage groupe ») | longue traîne FR | [S] |
-| 10 | Hub/pilier « Group Trip Planning » qui maille A+B+C et capte la requête tête `group trip planning` | group trip planning | [P] |
+| 9 | Versions FR des P1 (océan bleu FR : « organiser voyage entre amis sans prise de tête », « partager les frais voyage groupe ») | longue traîne FR | [Art] |
+| 10 | Hub/pilier « Group Trip Planning » qui maille A+B+C et capte la requête tête `group trip planning` | group trip planning | [Page] |
 
 ---
 
