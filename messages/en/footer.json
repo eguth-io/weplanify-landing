@@ -1,5 +1,10 @@
 {
   "copyright": "All rights reserved.",
+  "legal": {
+    "legalNotice": "Legal notice",
+    "privacyPolicy": "Privacy policy",
+    "termsOfUse": "Terms of use"
+  },
   "privacyPolicy": "Privacy Policy",
   "termsOfService": "Terms of Service",
   "cookiePolicy": "Cookie Policy",

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Aviso legal | WePlanify",
+    "description": "Aviso legal de WePlanify: editor, proveedor de alojamiento y condiciones que rigen el uso de este sitio web."
+  },
+  "title": "Aviso legal",
+  "lastUpdated": "Última actualización: 2 de julio de 2026",
+  "breadcrumb": {
+    "home": "Inicio"
+  },
+  "sections": [
+    {
+      "title": "1. Editor del sitio web",
+      "body": "Este sitio web está editado por WePlanify SAS, una sociedad por acciones simplificada (société par actions simplifiée) con un capital social de [POR COMPLETAR: capital social] €, inscrita en el Registro Mercantil y de Sociedades (RCS) de [POR COMPLETAR: ciudad] con el número [POR COMPLETAR: número SIREN/RCS].",
+      "list": [
+        "Domicilio social: [POR COMPLETAR: dirección completa del domicilio social]",
+        "Número de IVA intracomunitario: [POR COMPLETAR: número de IVA]",
+        "Correo electrónico: contact@weplanify.com"
+      ]
+    },
+    {
+      "title": "2. Director de la publicación",
+      "body": "El director de la publicación es [POR COMPLETAR: nombre del director de la publicación], en su calidad de representante legal de WePlanify SAS."
+    },
+    {
+      "title": "3. Proveedor de alojamiento",
+      "body": "Este sitio web está alojado por [POR COMPLETAR: nombre del proveedor de alojamiento], [POR COMPLETAR: dirección registrada del proveedor de alojamiento], [POR COMPLETAR: contacto / sitio web del proveedor de alojamiento]."
+    },
+    {
+      "title": "4. Propiedad intelectual",
+      "body": "La marca WePlanify, el logotipo, el diseño del sitio web, los textos, los gráficos y todos los demás contenidos son propiedad exclusiva de WePlanify SAS o de sus socios, y están protegidos por el derecho francés e internacional de propiedad intelectual. Queda prohibida cualquier reproducción, representación, modificación o distribución, total o parcial, sin autorización previa por escrito, y podrá constituir una infracción."
+    },
+    {
+      "title": "5. Responsabilidad",
+      "body": "WePlanify SAS se esfuerza por mantener la información de este sitio web precisa y actualizada, pero no puede garantizar que esté libre de errores u omisiones. La información se proporciona únicamente a título orientativo general y no constituye ningún compromiso contractual. WePlanify SAS no podrá ser considerada responsable de ningún daño directo o indirecto derivado del acceso a este sitio web o de su uso."
+    },
+    {
+      "title": "6. Enlaces de hipertexto",
+      "body": "Este sitio web puede contener enlaces a sitios web de terceros. WePlanify SAS no tiene control alguno sobre dichos sitios web y no asume responsabilidad alguna por su contenido ni por sus prácticas de privacidad."
+    },
+    {
+      "title": "7. Datos personales",
+      "body": "El tratamiento de los datos personales recabados a través de este sitio web se describe en nuestra Política de privacidad. Puede ejercer sus derechos en cualquier momento poniéndose en contacto con nosotros en privacy@weplanify.com."
+    },
+    {
+      "title": "8. Contacto",
+      "body": "Para cualquier consulta relativa a este aviso legal, puede ponerse en contacto con nosotros en contact@weplanify.com."
+    }
+  ]
+}

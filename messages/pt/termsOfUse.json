@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Termos de utilização | WePlanify",
+    "description": "Os termos de utilização que regem o seu acesso e utilização do sítio web e dos serviços WePlanify."
+  },
+  "title": "Termos de utilização",
+  "lastUpdated": "Última atualização: 2 de julho de 2026",
+  "breadcrumb": {
+    "home": "Início"
+  },
+  "sections": [
+    {
+      "title": "1. Aceitação dos termos",
+      "body": "Estes Termos de utilização regem o seu acesso e utilização do sítio web e dos serviços WePlanify (o \"Serviço\"), operados pela WePlanify SAS. Ao aceder ou utilizar o Serviço, o utilizador concorda em ficar vinculado por estes termos. Caso não concorde, não utilize o Serviço."
+    },
+    {
+      "title": "2. Descrição do Serviço",
+      "body": "A WePlanify é uma plataforma colaborativa de planeamento de viagens que ajuda grupos a organizar viagens, incluindo planeamento de itinerários assistido por IA, sondagens de grupo, orçamentos partilhados e funcionalidades relacionadas. O Serviço é atualmente disponibilizado numa base em evolução e algumas funcionalidades podem estar em versão beta."
+    },
+    {
+      "title": "3. Elegibilidade e conta",
+      "body": "Para utilizar o Serviço, o utilizador deve ter, no mínimo, 16 anos de idade ou a idade mínima exigida no seu país. Ao criar uma conta, o utilizador compromete-se a fornecer informações exatas e a manter as suas credenciais confidenciais. O utilizador é responsável por toda a atividade que ocorra na sua conta."
+    },
+    {
+      "title": "4. Utilização aceitável",
+      "body": "O utilizador compromete-se a utilizar o Serviço de forma lícita e respeitosa. Em particular, compromete-se a não:",
+      "list": [
+        "Utilizar o Serviço para qualquer fim ilegal, fraudulento ou prejudicial.",
+        "Tentar obter acesso não autorizado ao Serviço ou aos seus sistemas.",
+        "Interferir com ou perturbar a integridade ou o desempenho do Serviço.",
+        "Carregar conteúdos que sejam ilícitos, ofensivos ou que violem os direitos de terceiros.",
+        "Utilizar meios automatizados para extrair dados ou sobrecarregar o Serviço sem autorização."
+      ]
+    },
+    {
+      "title": "5. Conteúdos do utilizador",
+      "body": "O utilizador mantém a propriedade dos conteúdos que cria ou carrega (detalhes de viagens, mensagens, imagens, etc.). O utilizador concede à WePlanify uma licença limitada e não exclusiva para alojar, armazenar e apresentar esses conteúdos, exclusivamente para operar e fornecer o Serviço. O utilizador é responsável por garantir que detém os direitos sobre quaisquer conteúdos que partilha."
+    },
+    {
+      "title": "6. Propriedade intelectual",
+      "body": "O Serviço, incluindo o seu software, design, marca e logótipo, é e continua a ser propriedade exclusiva da WePlanify SAS. Estes termos não concedem ao utilizador qualquer direito sobre a marca ou a propriedade intelectual da WePlanify, para além do direito limitado de utilizar o Serviço conforme previsto."
+    },
+    {
+      "title": "7. Serviços de terceiros",
+      "body": "O Serviço pode integrar ou depender de serviços de terceiros (por exemplo, mapas, fornecedores de IA ou parceiros de reservas). A sua utilização de tais serviços pode estar sujeita aos respetivos termos e políticas de privacidade, sobre os quais a WePlanify não tem qualquer controlo."
+    },
+    {
+      "title": "8. Exclusão de garantias",
+      "body": "O Serviço é fornecido \"tal como está\" e \"conforme disponível\", sem garantia de qualquer tipo. As sugestões geradas por IA (itinerários, recomendações, orçamentos) são fornecidas a título meramente orientativo e podem conter imprecisões; o utilizador deve verificar de forma independente as informações importantes (tais como preços, horários de funcionamento e requisitos de viagem) antes de confiar nas mesmas."
+    },
+    {
+      "title": "9. Limitação de responsabilidade",
+      "body": "Na medida máxima permitida por lei, a WePlanify SAS não será responsável por quaisquer danos indiretos, incidentais ou consequenciais, nem por qualquer perda decorrente da utilização ou da impossibilidade de utilização do Serviço, incluindo a confiança em conteúdos gerados por IA ou em serviços de terceiros."
+    },
+    {
+      "title": "10. Modificações",
+      "body": "Podemos modificar o Serviço ou estes termos a qualquer momento. As alterações substanciais serão publicadas nesta página com uma data de revisão atualizada. A continuação da utilização do Serviço após a entrada em vigor das alterações constitui a aceitação dos termos revistos."
+    },
+    {
+      "title": "11. Cessação",
+      "body": "O utilizador pode deixar de utilizar o Serviço a qualquer momento. Podemos suspender ou cessar o seu acesso caso o utilizador viole estes termos ou utilize o Serviço de uma forma que possa prejudicar a WePlanify, outros utilizadores ou terceiros."
+    },
+    {
+      "title": "12. Lei aplicável",
+      "body": "Estes termos são regidos pela lei francesa. Qualquer litígio relativo ao Serviço fica sujeito à jurisdição exclusiva dos tribunais competentes de França, sem prejuízo de quaisquer normas imperativas de proteção do consumidor aplicáveis no seu país de residência."
+    },
+    {
+      "title": "13. Contacto",
+      "body": "Para qualquer questão relativa a estes Termos de utilização, pode contactar-nos através do endereço contact@weplanify.com."
+    }
+  ]
+}

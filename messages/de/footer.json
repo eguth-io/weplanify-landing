@@ -1,5 +1,10 @@
 {
   "copyright": "Alle Rechte vorbehalten.",
+  "legal": {
+    "legalNotice": "Impressum",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfUse": "Nutzungsbedingungen"
+  },
   "privacyPolicy": "Datenschutzerklärung",
   "termsOfService": "Nutzungsbedingungen",
   "cookiePolicy": "Cookie-Richtlinie",

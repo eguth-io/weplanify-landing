@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Nutzungsbedingungen | WePlanify",
+    "description": "Die Nutzungsbedingungen, die Ihren Zugriff auf und Ihre Nutzung der Website und Dienste von WePlanify regeln."
+  },
+  "title": "Nutzungsbedingungen",
+  "lastUpdated": "Zuletzt aktualisiert: 2. Juli 2026",
+  "breadcrumb": {
+    "home": "Startseite"
+  },
+  "sections": [
+    {
+      "title": "1. Annahme der Bedingungen",
+      "body": "Diese Nutzungsbedingungen regeln Ihren Zugriff auf und Ihre Nutzung der Website und Dienste von WePlanify (der „Dienst\"), die von der WePlanify SAS betrieben werden. Durch den Zugriff auf den Dienst oder dessen Nutzung erklären Sie sich mit diesen Bedingungen einverstanden. Wenn Sie nicht einverstanden sind, nutzen Sie den Dienst bitte nicht."
+    },
+    {
+      "title": "2. Beschreibung des Dienstes",
+      "body": "WePlanify ist eine kollaborative Plattform zur Reiseplanung, die Gruppen bei der Organisation von Reisen unterstützt, einschließlich KI-gestützter Reiseroutenplanung, Gruppenabstimmungen, gemeinsamer Budgets und damit verbundener Funktionen. Der Dienst wird derzeit auf einer sich weiterentwickelnden Basis angeboten, und einige Funktionen können sich in der Beta-Phase befinden."
+    },
+    {
+      "title": "3. Voraussetzungen und Konto",
+      "body": "Sie müssen mindestens 16 Jahre alt sein oder das in Ihrem Land erforderliche Mindestalter erreicht haben, um den Dienst nutzen zu können. Wenn Sie ein Konto erstellen, verpflichten Sie sich, korrekte Angaben zu machen und Ihre Zugangsdaten vertraulich zu behandeln. Sie sind für alle Aktivitäten verantwortlich, die unter Ihrem Konto stattfinden."
+    },
+    {
+      "title": "4. Zulässige Nutzung",
+      "body": "Sie verpflichten sich, den Dienst rechtmäßig und respektvoll zu nutzen. Insbesondere verpflichten Sie sich, Folgendes zu unterlassen:",
+      "list": [
+        "Den Dienst für rechtswidrige, betrügerische oder schädliche Zwecke zu nutzen.",
+        "Zu versuchen, sich unbefugten Zugang zum Dienst oder seinen Systemen zu verschaffen.",
+        "Die Integrität oder Leistung des Dienstes zu beeinträchtigen oder zu stören.",
+        "Inhalte hochzuladen, die rechtswidrig oder anstößig sind oder die Rechte Dritter verletzen.",
+        "Automatisierte Mittel einzusetzen, um den Dienst ohne Genehmigung auszulesen (Scraping) oder zu überlasten."
+      ]
+    },
+    {
+      "title": "5. Nutzerinhalte",
+      "body": "Sie behalten das Eigentum an den Inhalten, die Sie erstellen oder hochladen (Reisedetails, Nachrichten, Bilder usw.). Sie gewähren WePlanify eine beschränkte, nicht ausschließliche Lizenz, diese Inhalte ausschließlich zum Betrieb und zur Bereitstellung des Dienstes zu hosten, zu speichern und anzuzeigen. Sie sind dafür verantwortlich, sicherzustellen, dass Sie die Rechte an allen Inhalten besitzen, die Sie teilen."
+    },
+    {
+      "title": "6. Geistiges Eigentum",
+      "body": "Der Dienst, einschließlich seiner Software, seines Designs, seiner Marke und seines Logos, ist und bleibt ausschließliches Eigentum der WePlanify SAS. Diese Bedingungen gewähren Ihnen über das beschränkte Recht zur bestimmungsgemäßen Nutzung des Dienstes hinaus keinerlei Rechte an der Marke oder dem geistigen Eigentum von WePlanify."
+    },
+    {
+      "title": "7. Dienste Dritter",
+      "body": "Der Dienst kann Dienste Dritter einbinden oder auf diese zurückgreifen (zum Beispiel Karten, KI-Anbieter oder Buchungspartner). Ihre Nutzung solcher Dienste kann deren eigenen Bedingungen und Datenschutzrichtlinien unterliegen, auf die WePlanify keinen Einfluss hat."
+    },
+    {
+      "title": "8. Haftungsausschluss",
+      "body": "Der Dienst wird „wie besehen\" und „wie verfügbar\" bereitgestellt, ohne jegliche Gewährleistung. KI-generierte Vorschläge (Reiserouten, Empfehlungen, Budgets) dienen nur zur Orientierung und können Ungenauigkeiten enthalten; Sie sollten wichtige Informationen (wie Preise, Öffnungszeiten und Reisebestimmungen) eigenständig überprüfen, bevor Sie sich darauf verlassen."
+    },
+    {
+      "title": "9. Haftungsbeschränkung",
+      "body": "Soweit gesetzlich zulässig, haftet die WePlanify SAS nicht für indirekte, beiläufig entstandene oder Folgeschäden oder für Verluste, die sich aus Ihrer Nutzung oder Nichtnutzbarkeit des Dienstes ergeben, einschließlich des Vertrauens auf KI-generierte Inhalte oder Dienste Dritter."
+    },
+    {
+      "title": "10. Änderungen",
+      "body": "Wir können den Dienst oder diese Bedingungen jederzeit ändern. Wesentliche Änderungen werden auf dieser Seite mit einem aktualisierten Überarbeitungsdatum veröffentlicht. Ihre fortgesetzte Nutzung des Dienstes nach Inkrafttreten der Änderungen gilt als Annahme der überarbeiteten Bedingungen."
+    },
+    {
+      "title": "11. Kündigung",
+      "body": "Sie können die Nutzung des Dienstes jederzeit einstellen. Wir können Ihren Zugang aussetzen oder beenden, wenn Sie gegen diese Bedingungen verstoßen oder den Dienst in einer Weise nutzen, die WePlanify, anderen Nutzern oder Dritten schaden könnte."
+    },
+    {
+      "title": "12. Anwendbares Recht",
+      "body": "Diese Bedingungen unterliegen französischem Recht. Für alle Streitigkeiten im Zusammenhang mit dem Dienst sind ausschließlich die zuständigen Gerichte in Frankreich zuständig, vorbehaltlich zwingender verbraucherschutzrechtlicher Vorschriften, die in Ihrem Wohnsitzland gelten."
+    },
+    {
+      "title": "13. Kontakt",
+      "body": "Bei Fragen zu diesen Nutzungsbedingungen können Sie uns unter contact@weplanify.com kontaktieren."
+    }
+  ]
+}

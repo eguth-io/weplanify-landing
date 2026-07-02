@@ -200,6 +200,15 @@ export default function Footer({ footerData }: FooterProps) {
     ],
   };
 
+  // Legal links are hardcoded (not from Sanity) so they always resolve to real
+  // routes across all 8 locales. The Sanity `legalLinks` pointed at localized
+  // slugs (e.g. /fr/mentions-legales) that had no matching route and 404'd.
+  const legalLinks = [
+    { label: t("legal.legalNotice"), url: `/${locale}/legal-notice` },
+    { label: t("legal.privacyPolicy"), url: `/${locale}/privacy-policy` },
+    { label: t("legal.termsOfUse"), url: `/${locale}/terms-of-use` },
+  ];
+
   const resourcesColumn = {
     title: t("columns.resources.title"),
     links: [
@@ -364,19 +373,17 @@ export default function Footer({ footerData }: FooterProps) {
           </div>
 
           {/* Legal Links */}
-          {footerData?.legalLinks && footerData.legalLinks.length > 0 && (
-            <div className="flex flex-wrap justify-center md:justify-end items-center gap-4 md:gap-8 order-1 md:order-2">
-              {footerData.legalLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url || "#"}
-                  className="text-[#001E13] text-sm font-karla hover:underline"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          )}
+          <div className="flex flex-wrap justify-center md:justify-end items-center gap-4 md:gap-8 order-1 md:order-2">
+            {legalLinks.map((link) => (
+              <Link
+                key={link.url}
+                href={link.url}
+                className="text-[#001E13] text-sm font-karla hover:underline"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Copyright & Language Switcher */}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Impressum | WePlanify",
+    "description": "Impressum von WePlanify: Anbieter, Hosting-Anbieter und Bedingungen für die Nutzung dieser Website."
+  },
+  "title": "Impressum",
+  "lastUpdated": "Zuletzt aktualisiert: 2. Juli 2026",
+  "breadcrumb": {
+    "home": "Startseite"
+  },
+  "sections": [
+    {
+      "title": "1. Anbieter der Website",
+      "body": "Diese Website wird von WePlanify SAS herausgegeben, einer vereinfachten Aktiengesellschaft (société par actions simplifiée) mit einem Stammkapital von [AUSZUFÜLLEN: Stammkapital] €, eingetragen im Handels- und Gesellschaftsregister (RCS) von [AUSZUFÜLLEN: Stadt] unter der Nummer [AUSZUFÜLLEN: SIREN-/RCS-Nummer].",
+      "list": [
+        "Sitz der Gesellschaft: [AUSZUFÜLLEN: vollständige Anschrift des Sitzes]",
+        "Innergemeinschaftliche Umsatzsteuer-Identifikationsnummer: [AUSZUFÜLLEN: USt-IdNr.]",
+        "E-Mail: contact@weplanify.com"
+      ]
+    },
+    {
+      "title": "2. Verantwortlich für den Inhalt",
+      "body": "Verantwortlich für die Veröffentlichung ist [AUSZUFÜLLEN: Name des Verantwortlichen für die Veröffentlichung] in seiner Eigenschaft als gesetzlicher Vertreter der WePlanify SAS."
+    },
+    {
+      "title": "3. Hosting-Anbieter",
+      "body": "Diese Website wird gehostet von [AUSZUFÜLLEN: Name des Hosting-Anbieters], [AUSZUFÜLLEN: Anschrift des Hosting-Anbieters], [AUSZUFÜLLEN: Kontakt / Website des Hosting-Anbieters]."
+    },
+    {
+      "title": "4. Geistiges Eigentum",
+      "body": "Die Marke, das Logo, das Website-Design, die Texte, Grafiken und alle sonstigen Inhalte von WePlanify sind ausschließliches Eigentum der WePlanify SAS oder ihrer Partner und durch das französische und internationale Recht des geistigen Eigentums geschützt. Jede vollständige oder teilweise Vervielfältigung, Wiedergabe, Änderung oder Verbreitung ohne vorherige schriftliche Genehmigung ist untersagt und kann eine Rechtsverletzung darstellen."
+    },
+    {
+      "title": "5. Haftung",
+      "body": "Die WePlanify SAS bemüht sich, die Informationen auf dieser Website richtig und aktuell zu halten, kann jedoch nicht gewährleisten, dass sie frei von Fehlern oder Auslassungen sind. Die Informationen dienen nur zur allgemeinen Orientierung und stellen keine vertragliche Verpflichtung dar. Die WePlanify SAS kann nicht für direkte oder indirekte Schäden haftbar gemacht werden, die sich aus dem Zugriff auf oder der Nutzung dieser Website ergeben."
+    },
+    {
+      "title": "6. Hyperlinks",
+      "body": "Diese Website kann Links zu Websites Dritter enthalten. Die WePlanify SAS hat keinen Einfluss auf diese Websites und übernimmt keine Verantwortung für deren Inhalte oder deren Umgang mit dem Datenschutz."
+    },
+    {
+      "title": "7. Personenbezogene Daten",
+      "body": "Die Verarbeitung der über diese Website erhobenen personenbezogenen Daten ist in unserer Datenschutzerklärung beschrieben. Sie können Ihre Rechte jederzeit ausüben, indem Sie uns unter privacy@weplanify.com kontaktieren."
+    },
+    {
+      "title": "8. Kontakt",
+      "body": "Bei Fragen zu diesem Impressum erreichen Sie uns unter contact@weplanify.com."
+    }
+  ]
+}

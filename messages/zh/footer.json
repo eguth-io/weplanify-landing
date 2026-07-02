@@ -1,5 +1,10 @@
 {
   "copyright": "保留所有权利。",
+  "legal": {
+    "legalNotice": "法律声明",
+    "privacyPolicy": "隐私政策",
+    "termsOfUse": "使用条款"
+  },
   "privacyPolicy": "隐私政策",
   "termsOfService": "服务条款",
   "cookiePolicy": "Cookie 政策",

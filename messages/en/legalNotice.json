@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Legal Notice | WePlanify",
+    "description": "Legal notice for WePlanify: publisher, hosting provider and terms governing the use of this website."
+  },
+  "title": "Legal Notice",
+  "lastUpdated": "Last updated: July 2, 2026",
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "sections": [
+    {
+      "title": "1. Website Publisher",
+      "body": "This website is published by WePlanify SAS, a simplified joint-stock company (société par actions simplifiée) with a share capital of [TO FILL: share capital] €, registered with the Trade and Companies Register (RCS) of [TO FILL: city] under number [TO FILL: SIREN/RCS number].",
+      "list": [
+        "Registered office: [TO FILL: full registered address]",
+        "Intra-community VAT number: [TO FILL: VAT number]",
+        "Email: contact@weplanify.com"
+      ]
+    },
+    {
+      "title": "2. Publication Director",
+      "body": "The director of publication is [TO FILL: name of the publication director], in their capacity as legal representative of WePlanify SAS."
+    },
+    {
+      "title": "3. Hosting Provider",
+      "body": "This website is hosted by [TO FILL: hosting provider name], [TO FILL: hosting provider registered address], [TO FILL: hosting provider contact / website]."
+    },
+    {
+      "title": "4. Intellectual Property",
+      "body": "The WePlanify brand, logo, website design, texts, graphics and all other content are the exclusive property of WePlanify SAS or its partners, and are protected by French and international intellectual property law. Any reproduction, representation, modification or distribution, in whole or in part, without prior written authorization is prohibited and may constitute an infringement."
+    },
+    {
+      "title": "5. Liability",
+      "body": "WePlanify SAS strives to keep the information on this website accurate and up to date but cannot guarantee that it is free of errors or omissions. The information is provided for general guidance only and does not constitute contractual commitment. WePlanify SAS cannot be held liable for any direct or indirect damage arising from access to or use of this website."
+    },
+    {
+      "title": "6. Hyperlinks",
+      "body": "This website may contain links to third-party websites. WePlanify SAS has no control over these websites and accepts no responsibility for their content or their privacy practices."
+    },
+    {
+      "title": "7. Personal Data",
+      "body": "The processing of personal data collected through this website is described in our Privacy Policy. You may exercise your rights at any time by contacting us at privacy@weplanify.com."
+    },
+    {
+      "title": "8. Contact",
+      "body": "For any question regarding this legal notice, you can reach us at contact@weplanify.com."
+    }
+  ]
+}
