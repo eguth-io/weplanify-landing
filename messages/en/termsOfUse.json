@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Terms of Use | WePlanify",
+    "description": "The terms of use governing your access to and use of the WePlanify website and services."
+  },
+  "title": "Terms of Use",
+  "lastUpdated": "Last updated: July 2, 2026",
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "sections": [
+    {
+      "title": "1. Acceptance of the Terms",
+      "body": "These Terms of Use govern your access to and use of the WePlanify website and services (the \"Service\"), operated by WePlanify SAS. By accessing or using the Service, you agree to be bound by these terms. If you do not agree, please do not use the Service."
+    },
+    {
+      "title": "2. Description of the Service",
+      "body": "WePlanify is a collaborative trip-planning platform that helps groups organize trips, including AI-assisted itinerary planning, group polls, shared budgets and related features. The Service is currently offered on an evolving basis and some features may be in beta."
+    },
+    {
+      "title": "3. Eligibility and Account",
+      "body": "You must be at least 16 years old, or the minimum age required in your country, to use the Service. When you create an account, you agree to provide accurate information and to keep your credentials confidential. You are responsible for all activity that occurs under your account."
+    },
+    {
+      "title": "4. Acceptable Use",
+      "body": "You agree to use the Service lawfully and respectfully. In particular, you agree not to:",
+      "list": [
+        "Use the Service for any illegal, fraudulent or harmful purpose.",
+        "Attempt to gain unauthorized access to the Service or its systems.",
+        "Interfere with or disrupt the integrity or performance of the Service.",
+        "Upload content that is unlawful, offensive, or infringes the rights of others.",
+        "Use automated means to scrape or overload the Service without authorization."
+      ]
+    },
+    {
+      "title": "5. User Content",
+      "body": "You retain ownership of the content you create or upload (trip details, messages, images, etc.). You grant WePlanify a limited, non-exclusive license to host, store and display this content solely to operate and provide the Service. You are responsible for ensuring you have the rights to any content you share."
+    },
+    {
+      "title": "6. Intellectual Property",
+      "body": "The Service, including its software, design, brand and logo, is and remains the exclusive property of WePlanify SAS. These terms do not grant you any right in the WePlanify brand or intellectual property beyond the limited right to use the Service as intended."
+    },
+    {
+      "title": "7. Third-Party Services",
+      "body": "The Service may integrate or rely on third-party services (for example maps, AI providers, or booking partners). Your use of such services may be subject to their own terms and privacy policies, over which WePlanify has no control."
+    },
+    {
+      "title": "8. Disclaimer",
+      "body": "The Service is provided \"as is\" and \"as available\", without warranty of any kind. AI-generated suggestions (itineraries, recommendations, budgets) are provided for guidance only and may contain inaccuracies; you should verify important information (such as prices, opening hours and travel requirements) independently before relying on it."
+    },
+    {
+      "title": "9. Limitation of Liability",
+      "body": "To the fullest extent permitted by law, WePlanify SAS shall not be liable for any indirect, incidental or consequential damages, or for any loss arising from your use of, or inability to use, the Service, including reliance on AI-generated content or third-party services."
+    },
+    {
+      "title": "10. Modifications",
+      "body": "We may modify the Service or these terms at any time. Material changes will be posted on this page with an updated revision date. Your continued use of the Service after changes take effect constitutes acceptance of the revised terms."
+    },
+    {
+      "title": "11. Termination",
+      "body": "You may stop using the Service at any time. We may suspend or terminate your access if you breach these terms or use the Service in a way that could harm WePlanify, other users or third parties."
+    },
+    {
+      "title": "12. Governing Law",
+      "body": "These terms are governed by French law. Any dispute relating to the Service shall be subject to the exclusive jurisdiction of the competent courts of France, subject to any mandatory consumer protection rules applicable in your country of residence."
+    },
+    {
+      "title": "13. Contact",
+      "body": "For any question regarding these Terms of Use, you can contact us at contact@weplanify.com."
+    }
+  ]
+}

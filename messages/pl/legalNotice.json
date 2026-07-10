@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "title": "Nota prawna | WePlanify",
+    "description": "Nota prawna WePlanify: wydawca, dostawca hostingu oraz warunki regulujące korzystanie z tej witryny."
+  },
+  "title": "Nota prawna",
+  "lastUpdated": "Ostatnia aktualizacja: 2 lipca 2026",
+  "breadcrumb": {
+    "home": "Strona główna"
+  },
+  "sections": [
+    {
+      "title": "1. Wydawca witryny",
+      "body": "Niniejsza witryna jest wydawana przez WePlanify SAS, uproszczoną spółkę akcyjną (société par actions simplifiée) o kapitale zakładowym w wysokości [DO UZUPEŁNIENIA: kapitał zakładowy] €, wpisaną do Rejestru Handlowego i Spółek (RCS) w [DO UZUPEŁNIENIA: miasto] pod numerem [DO UZUPEŁNIENIA: numer SIREN/RCS].",
+      "list": [
+        "Siedziba: [DO UZUPEŁNIENIA: pełny adres siedziby]",
+        "Wewnątrzwspólnotowy numer VAT: [DO UZUPEŁNIENIA: numer VAT]",
+        "E-mail: contact@weplanify.com"
+      ]
+    },
+    {
+      "title": "2. Dyrektor ds. publikacji",
+      "body": "Dyrektorem ds. publikacji jest [DO UZUPEŁNIENIA: imię i nazwisko dyrektora ds. publikacji], działający jako przedstawiciel prawny WePlanify SAS."
+    },
+    {
+      "title": "3. Dostawca hostingu",
+      "body": "Niniejsza witryna jest hostowana przez [DO UZUPEŁNIENIA: nazwa dostawcy hostingu], [DO UZUPEŁNIENIA: adres siedziby dostawcy hostingu], [DO UZUPEŁNIENIA: kontakt / witryna dostawcy hostingu]."
+    },
+    {
+      "title": "4. Własność intelektualna",
+      "body": "Marka WePlanify, logo, projekt witryny, teksty, grafiki oraz wszelkie inne treści stanowią wyłączną własność WePlanify SAS lub jego partnerów i są chronione francuskim oraz międzynarodowym prawem własności intelektualnej. Wszelkie powielanie, przedstawianie, modyfikowanie lub rozpowszechnianie, w całości lub w części, bez uprzedniego pisemnego zezwolenia jest zabronione i może stanowić naruszenie praw."
+    },
+    {
+      "title": "5. Odpowiedzialność",
+      "body": "WePlanify SAS dokłada starań, aby informacje na tej witrynie były dokładne i aktualne, jednak nie może zagwarantować, że są one wolne od błędów lub pominięć. Informacje mają charakter wyłącznie ogólny i orientacyjny oraz nie stanowią zobowiązania umownego. WePlanify SAS nie ponosi odpowiedzialności za jakiekolwiek szkody bezpośrednie lub pośrednie wynikające z dostępu do tej witryny lub korzystania z niej."
+    },
+    {
+      "title": "6. Hiperłącza",
+      "body": "Niniejsza witryna może zawierać łącza do witryn osób trzecich. WePlanify SAS nie sprawuje kontroli nad tymi witrynami i nie ponosi odpowiedzialności za ich treść ani ich praktyki w zakresie prywatności."
+    },
+    {
+      "title": "7. Dane osobowe",
+      "body": "Przetwarzanie danych osobowych zbieranych za pośrednictwem tej witryny zostało opisane w naszej Polityce prywatności. Swoje prawa możesz w każdej chwili wykonać, kontaktując się z nami pod adresem privacy@weplanify.com."
+    },
+    {
+      "title": "8. Kontakt",
+      "body": "W przypadku jakichkolwiek pytań dotyczących niniejszej noty prawnej możesz skontaktować się z nami pod adresem contact@weplanify.com."
+    }
+  ]
+}
