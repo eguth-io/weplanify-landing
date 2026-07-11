@@ -10,11 +10,17 @@
  * stable photos for each city. If a photo ever 404s, swap via unsplash.com.
  */
 
+import { tripPlannerDestinations } from "./trip-planners";
+
 export type Locale = "en" | "fr";
 
 export type LocalizedString = { en: string; fr: string };
 
-export type DestinationUseCase = "bachelorette" | "road-trip" | "with-friends";
+export type DestinationUseCase =
+  | "bachelorette"
+  | "road-trip"
+  | "with-friends"
+  | "trip-planner";
 
 export type DestinationPoi = {
   name: string;
@@ -1824,6 +1830,7 @@ export const destinations: Destination[] = [
   lisbon,
   lasVegas,
   andalusia,
+  ...tripPlannerDestinations,
 ];
 
 /**
@@ -1866,6 +1873,7 @@ export function getUseCaseLabel(useCase: DestinationUseCase, locale: Locale): st
     bachelorette: { en: "Bachelorette", fr: "EVJF" },
     "road-trip": { en: "Road trip", fr: "Road trip" },
     "with-friends": { en: "With friends", fr: "Entre amis" },
+    "trip-planner": { en: "Trip planner", fr: "Que faire" },
   };
   return labels[useCase][locale];
 }

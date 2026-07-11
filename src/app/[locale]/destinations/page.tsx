@@ -94,7 +94,12 @@ export default async function DestinationsIndexPage({ params }: Props) {
   ]);
 
   // Group destinations by use case for the "by intent" sections.
-  const useCases: DestinationUseCase[] = ["bachelorette", "road-trip", "with-friends"];
+  const useCases: DestinationUseCase[] = [
+    "trip-planner",
+    "bachelorette",
+    "road-trip",
+    "with-friends",
+  ];
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
