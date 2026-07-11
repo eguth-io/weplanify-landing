@@ -21,6 +21,7 @@ import {
   type Locale,
   type DestinationUseCase,
 } from "@/lib/destinations/data";
+import { fetchPublishedDestinations } from "@/lib/destinations/api";
 
 const SITE_URL = "https://www.weplanify.com";
 const PATHNAME = "/destinations";
@@ -74,6 +75,9 @@ export default async function DestinationsIndexPage({ params }: Props) {
   const loc: Locale = locale === "fr" ? "fr" : "en";
   const t = await getTranslations("destinationsIndex");
   const filters = t.raw("filters") as Record<string, string>;
+
+  // API-driven destinations (city mini-guides). Resilient to an empty list.
+  const apiDestinations = await fetchPublishedDestinations(locale);
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -249,6 +253,70 @@ export default async function DestinationsIndexPage({ params }: Props) {
             </FadeIn>
           );
         })}
+
+        {/* API-driven destinations (city mini-guides) */}
+        {apiDestinations.length > 0 && (
+          <FadeIn>
+            <section className="py-12 lg:py-16 px-4 lg:px-8">
+              <div className="max-w-6xl mx-auto">
+                <div className="flex items-end justify-between gap-4 mb-8">
+                  <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13]">
+                    {t("apiSectionHeading")}
+                  </h2>
+                  <span className="text-sm lg:text-base font-karla text-[#001E13]/50">
+                    {apiDestinations.length}{" "}
+                    {t("destinationsCount", { count: apiDestinations.length })}
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {apiDestinations.map((item) => (
+                    <Link
+                      key={item.id}
+                      href={`/${locale}/destinations/${item.id}`}
+                      className="group"
+                    >
+                      <article className="bg-white border border-[#001E13]/10 rounded-3xl overflow-hidden hover:shadow-lg hover:border-[#F6391A]/30 transition-all duration-300 h-full flex flex-col">
+                        {item.cover && (
+                          <div className="relative aspect-[4/3] overflow-hidden">
+                            <Image
+                              src={item.cover.url}
+                              alt={item.city}
+                              fill
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              className="object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                          </div>
+                        )}
+                        <div className="p-6 flex-1 flex flex-col">
+                          <div className="flex gap-2 mb-3 flex-wrap">
+                            {item.country && (
+                              <span className="bg-[#EEF899] text-[#001E13] px-3 py-1 rounded-full text-xs font-karla font-bold">
+                                {item.flag ? `${item.flag} ` : ""}
+                                {item.country}
+                              </span>
+                            )}
+                          </div>
+                          <h3 className="text-2xl font-londrina-solid text-[#001E13] mb-2">
+                            {item.city}
+                          </h3>
+                          {item.tagline && (
+                            <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4 flex-1">
+                              {item.tagline}
+                            </p>
+                          )}
+                          <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-auto">
+                            {t("cardCta")}
+                          </span>
+                        </div>
+                      </article>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+          </FadeIn>
+        )}
 
         {/* CTA */}
         <section className="py-16 lg:py-24 px-4 lg:px-8">

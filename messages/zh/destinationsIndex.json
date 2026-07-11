@@ -22,5 +22,6 @@
     "destinations": "目的地"
   },
   "days": "天",
+  "apiSectionHeading": "探索城市",
   "destinationsCount": "{count, plural, one {个目的地} other {个目的地}}"
 }

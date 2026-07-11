@@ -1,0 +1,31 @@
+{
+  "home": "Início",
+  "destinations": "Destinos",
+  "tripPlanner": "O que fazer",
+  "forkTrip": "Copiar esta viagem",
+  "forkSubtext": "Começa a tua própria viagem a partir deste guia — grátis, 30 segundos.",
+  "photoCredit": "Foto: {name} / Unsplash",
+  "itinerary": "Itinerário",
+  "dayLabel": "Dia {day}",
+  "highlights": "Imperdíveis",
+  "neighbourhoods": "Bairros",
+  "food": "Onde comer",
+  "goodToKnow": "Bom saber",
+  "bestTime": "Quando ir",
+  "gettingAround": "Como circular",
+  "localTips": "Dicas locais",
+  "facts": {
+    "currency": "Moeda",
+    "languages": "Idiomas",
+    "plugs": "Tomadas",
+    "voltage": "Voltagem",
+    "drivingSide": "Sentido de trânsito",
+    "emergency": "Emergência"
+  },
+  "cta": {
+    "heading": "Conquista {city} com o teu grupo",
+    "body": "Copia este guia para o WePlanify, convida o grupo e planeiem a viagem juntos. Itinerário partilhado, sondagens, orçamento comum — tudo grátis.",
+    "button": "Copiar esta viagem — grátis"
+  },
+  "metaTitle": "O que fazer em {city}"
+}

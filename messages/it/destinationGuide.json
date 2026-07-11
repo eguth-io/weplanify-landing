@@ -1,0 +1,31 @@
+{
+  "home": "Home",
+  "destinations": "Destinazioni",
+  "tripPlanner": "Cosa vedere",
+  "forkTrip": "Copia questo viaggio",
+  "forkSubtext": "Inizia il tuo viaggio da questa guida — gratis, 30 secondi.",
+  "photoCredit": "Foto: {name} / Unsplash",
+  "itinerary": "Itinerario",
+  "dayLabel": "Giorno {day}",
+  "highlights": "Da non perdere",
+  "neighbourhoods": "Quartieri",
+  "food": "Dove mangiare",
+  "goodToKnow": "Buono a sapersi",
+  "bestTime": "Quando andare",
+  "gettingAround": "Come spostarsi",
+  "localTips": "Consigli locali",
+  "facts": {
+    "currency": "Valuta",
+    "languages": "Lingue",
+    "plugs": "Prese",
+    "voltage": "Voltaggio",
+    "drivingSide": "Guida",
+    "emergency": "Emergenze"
+  },
+  "cta": {
+    "heading": "Vivi {city} con il tuo gruppo",
+    "body": "Copia questa guida in WePlanify, invita il gruppo e pianificate il viaggio insieme. Itinerario condiviso, sondaggi, budget comune — tutto gratis.",
+    "button": "Copia questo viaggio — gratis"
+  },
+  "metaTitle": "Cosa vedere a {city}"
+}

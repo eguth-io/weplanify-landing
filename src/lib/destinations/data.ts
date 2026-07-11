@@ -10,8 +10,6 @@
  * stable photos for each city. If a photo ever 404s, swap via unsplash.com.
  */
 
-import { tripPlannerDestinations } from "./trip-planners";
-
 export type Locale = "en" | "fr";
 
 export type LocalizedString = { en: string; fr: string };
@@ -1830,7 +1828,6 @@ export const destinations: Destination[] = [
   lisbon,
   lasVegas,
   andalusia,
-  ...tripPlannerDestinations,
 ];
 
 /**

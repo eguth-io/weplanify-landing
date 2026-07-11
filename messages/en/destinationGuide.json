@@ -1,0 +1,31 @@
+{
+  "home": "Home",
+  "destinations": "Destinations",
+  "tripPlanner": "Trip planner",
+  "forkTrip": "Fork this trip",
+  "forkSubtext": "Start your own trip from this guide — free, 30 seconds.",
+  "photoCredit": "Photo: {name} / Unsplash",
+  "itinerary": "Itinerary",
+  "dayLabel": "Day {day}",
+  "highlights": "Highlights",
+  "neighbourhoods": "Neighbourhoods",
+  "food": "Where to eat",
+  "goodToKnow": "Good to know",
+  "bestTime": "Best time to visit",
+  "gettingAround": "Getting around",
+  "localTips": "Local tips",
+  "facts": {
+    "currency": "Currency",
+    "languages": "Languages",
+    "plugs": "Plugs",
+    "voltage": "Voltage",
+    "drivingSide": "Driving side",
+    "emergency": "Emergency"
+  },
+  "cta": {
+    "heading": "Take {city} on with your crew",
+    "body": "Fork this guide into WePlanify, invite the group, and plan the trip together. Shared itinerary, polls, shared budget — all free.",
+    "button": "Fork this trip — free"
+  },
+  "metaTitle": "{city} Trip Planner"
+}

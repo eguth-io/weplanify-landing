@@ -22,5 +22,6 @@
     "destinations": "Kierunki"
   },
   "days": "dni",
+  "apiSectionHeading": "Miasta do odkrycia",
   "destinationsCount": "{count, plural, one {kierunek} few {kierunki} many {kierunków} other {kierunku}}"
 }

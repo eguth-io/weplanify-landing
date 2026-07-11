@@ -15,6 +15,7 @@ import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 
 import { generateMetadataFromSanity } from "@/lib/metadata";
+import { routing } from "@/i18n/routing";
 import {
   destinations,
   findDestinationByLocalizedSlug,
@@ -22,6 +23,11 @@ import {
   getUseCaseLabel,
   type Locale,
 } from "@/lib/destinations/data";
+import {
+  fetchAllDestinationSlugs,
+  fetchDestinationGuide,
+} from "@/lib/destinations/api";
+import DestinationGuideView from "@/components/destinations/DestinationGuideView";
 
 const SITE_URL = "https://www.weplanify.com";
 
@@ -29,13 +35,32 @@ type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   // Build-time generation of every locale × slug combination.
+  const seen = new Set<string>();
   const params: Array<{ locale: string; slug: string }> = [];
+
+  const add = (locale: string, slug: string) => {
+    const key = `${locale}::${slug}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    params.push({ locale, slug });
+  };
+
+  // Local hardcoded destinations: en/fr localized slugs.
   for (const d of destinations) {
-    params.push({ locale: "en", slug: d.slug.en });
-    params.push({ locale: "fr", slug: d.slug.fr });
+    add("en", d.slug.en);
+    add("fr", d.slug.fr);
   }
+
+  // API destinations: one entry per locale (slugs are locale-agnostic).
+  const apiSlugs = await fetchAllDestinationSlugs();
+  for (const slug of apiSlugs) {
+    for (const locale of routing.locales) {
+      add(locale, slug);
+    }
+  }
+
   return params;
 }
 
@@ -43,19 +68,74 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const loc: Locale = locale === "fr" ? "fr" : "en";
   const destination = findDestinationByLocalizedSlug(slug, loc);
-  if (!destination) return {};
 
   const baseMetadata = await generateMetadataFromSanity(
     locale,
     `/destinations/${slug}`
   );
-  const title = destination.meta.title[loc];
-  const description = destination.meta.description[loc];
   const currentUrl = `${SITE_URL}/${locale}/destinations/${slug}`;
 
-  // Hreflang must point at each locale's own slug.
-  const enUrl = `${SITE_URL}/en/destinations/${destination.slug.en}`;
-  const frUrl = `${SITE_URL}/fr/destinations/${destination.slug.fr}`;
+  // ----- Local hardcoded destination -----
+  if (destination) {
+    const title = destination.meta.title[loc];
+    const description = destination.meta.description[loc];
+
+    // Hreflang must point at each locale's own slug.
+    const enUrl = `${SITE_URL}/en/destinations/${destination.slug.en}`;
+    const frUrl = `${SITE_URL}/fr/destinations/${destination.slug.fr}`;
+
+    return {
+      ...baseMetadata,
+      title,
+      description,
+      authors: [{ name: "WePlanify" }],
+      openGraph: {
+        ...baseMetadata.openGraph,
+        type: "article",
+        title,
+        description,
+        url: currentUrl,
+        locale: locale === "fr" ? "fr_FR" : "en_US",
+        images: [
+          {
+            url: destination.hero.image,
+            width: 1600,
+            height: 900,
+            alt: destination.hero.imageAlt[loc],
+          },
+        ],
+      },
+      twitter: {
+        ...baseMetadata.twitter,
+        title,
+        description,
+        images: [destination.hero.image],
+      },
+      alternates: {
+        canonical: currentUrl,
+        languages: {
+          en: enUrl,
+          fr: frUrl,
+          "x-default": enUrl,
+        },
+      },
+    };
+  }
+
+  // ----- API-driven destination -----
+  const guide = await fetchDestinationGuide(slug, locale);
+  if (!guide) return {};
+
+  const tg = await getTranslations({ locale, namespace: "destinationGuide" });
+  const title = tg("metaTitle", { city: guide.city });
+  const description = guide.tagline ?? guide.description ?? "";
+
+  // City slugs are locale-agnostic — same slug across all locales.
+  const languages: Record<string, string> = {};
+  for (const l of routing.locales) {
+    languages[l] = `${SITE_URL}/${l}/destinations/${slug}`;
+  }
+  languages["x-default"] = `${SITE_URL}/en/destinations/${slug}`;
 
   return {
     ...baseMetadata,
@@ -69,28 +149,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       url: currentUrl,
       locale: locale === "fr" ? "fr_FR" : "en_US",
-      images: [
-        {
-          url: destination.hero.image,
-          width: 1600,
-          height: 900,
-          alt: destination.hero.imageAlt[loc],
-        },
-      ],
+      images: guide.cover
+        ? [
+            {
+              url: guide.cover.url,
+              width: 1600,
+              height: 900,
+              alt: guide.city,
+            },
+          ]
+        : undefined,
     },
     twitter: {
       ...baseMetadata.twitter,
       title,
       description,
-      images: [destination.hero.image],
+      images: guide.cover ? [guide.cover.url] : undefined,
     },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: enUrl,
-        fr: frUrl,
-        "x-default": enUrl,
-      },
+      languages,
     },
   };
 }
@@ -98,11 +176,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function DestinationPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("destinationSlug");
 
   const loc: Locale = locale === "fr" ? "fr" : "en";
   const destination = findDestinationByLocalizedSlug(slug, loc);
-  if (!destination) notFound();
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -121,6 +197,22 @@ export default async function DestinationPage({ params }: Props) {
       tags: ["footer"],
     }),
   ]);
+
+  // ----- API-driven destination (no local match) -----
+  if (!destination) {
+    const guide = await fetchDestinationGuide(slug, locale);
+    if (!guide) notFound();
+
+    return (
+      <>
+        <Nav navData={navData} navigationData={navigationData} />
+        <DestinationGuideView guide={guide} locale={locale} />
+        <Footer footerData={footerData} />
+      </>
+    );
+  }
+
+  const t = await getTranslations("destinationSlug");
 
   const currentUrl = `${SITE_URL}/${locale}/destinations/${slug}`;
   const cityLabel = destination.city[loc];

@@ -22,5 +22,6 @@
     "destinations": "Destinations"
   },
   "days": "days",
+  "apiSectionHeading": "Cities to explore",
   "destinationsCount": "{count, plural, one {destination} other {destinations}}"
 }

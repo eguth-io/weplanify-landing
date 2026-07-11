@@ -1,0 +1,31 @@
+{
+  "home": "Startseite",
+  "destinations": "Reiseziele",
+  "tripPlanner": "Reiseplaner",
+  "forkTrip": "Diese Reise kopieren",
+  "forkSubtext": "Starte deine eigene Reise aus diesem Guide — kostenlos, 30 Sekunden.",
+  "photoCredit": "Foto: {name} / Unsplash",
+  "itinerary": "Reiseverlauf",
+  "dayLabel": "Tag {day}",
+  "highlights": "Highlights",
+  "neighbourhoods": "Viertel",
+  "food": "Wo essen",
+  "goodToKnow": "Gut zu wissen",
+  "bestTime": "Beste Reisezeit",
+  "gettingAround": "Fortbewegung",
+  "localTips": "Insidertipps",
+  "facts": {
+    "currency": "Währung",
+    "languages": "Sprachen",
+    "plugs": "Steckdosen",
+    "voltage": "Spannung",
+    "drivingSide": "Fahrseite",
+    "emergency": "Notruf"
+  },
+  "cta": {
+    "heading": "Erobere {city} mit deiner Crew",
+    "body": "Kopiere diesen Guide in WePlanify, lade die Gruppe ein und plant die Reise gemeinsam. Gemeinsamer Reiseverlauf, Umfragen, geteiltes Budget — alles kostenlos.",
+    "button": "Diese Reise kopieren — kostenlos"
+  },
+  "metaTitle": "Reiseplaner {city}"
+}
