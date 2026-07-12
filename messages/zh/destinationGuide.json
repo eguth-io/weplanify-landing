@@ -1,18 +1,18 @@
 {
   "home": "首页",
   "destinations": "目的地",
-  "tripPlanner": "旅行规划",
-  "forkTrip": "复制此行程",
-  "forkSubtext": "从这份指南开始你自己的旅程 — 免费，30 秒。",
-  "photoCredit": "照片：{name} / Unsplash",
+  "tripPlanner": "行程规划",
+  "forkTrip": "复制这次旅行",
+  "forkSubtext": "以这份指南为起点，开启你自己的旅程——免费，30 秒搞定。",
+  "photoCredit": "图片：{name} / Unsplash",
   "itinerary": "行程安排",
   "dayLabel": "第 {day} 天",
-  "highlights": "亮点",
+  "highlights": "亮点推荐",
   "neighbourhoods": "街区",
   "food": "美食去处",
   "goodToKnow": "实用信息",
-  "bestTime": "最佳出行时间",
-  "gettingAround": "交通出行",
+  "bestTime": "最佳旅行时间",
+  "gettingAround": "当地交通",
   "localTips": "当地贴士",
   "facts": {
     "currency": "货币",
@@ -23,9 +23,9 @@
     "emergency": "紧急电话"
   },
   "cta": {
-    "heading": "和你的伙伴一起玩转{city}",
-    "body": "把这份指南复制到 WePlanify，邀请大家一起规划旅程。共享行程、投票、共享预算 — 全部免费。",
-    "button": "复制此行程 — 免费"
+    "heading": "和你的伙伴一起玩转 {city}",
+    "body": "把这份指南复制到 WePlanify，邀请伙伴们一起规划行程。共享行程、投票、共享预算——全部免费。",
+    "button": "复制这次旅行——免费"
   },
-  "metaTitle": "{city}旅行规划"
+  "metaTitle": "{city}旅行攻略"
 }

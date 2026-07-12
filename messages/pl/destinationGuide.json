@@ -1,9 +1,9 @@
 {
   "home": "Strona główna",
   "destinations": "Kierunki",
-  "tripPlanner": "Co zobaczyć",
+  "tripPlanner": "Planer podróży",
   "forkTrip": "Skopiuj tę podróż",
-  "forkSubtext": "Zacznij własną podróż na podstawie tego przewodnika — za darmo, 30 sekund.",
+  "forkSubtext": "Zacznij własną podróż na podstawie tego przewodnika — za darmo, w 30 sekund.",
   "photoCredit": "Zdjęcie: {name} / Unsplash",
   "itinerary": "Plan podróży",
   "dayLabel": "Dzień {day}",
@@ -13,7 +13,7 @@
   "goodToKnow": "Warto wiedzieć",
   "bestTime": "Kiedy jechać",
   "gettingAround": "Jak się poruszać",
-  "localTips": "Wskazówki od lokalsów",
+  "localTips": "Rady od miejscowych",
   "facts": {
     "currency": "Waluta",
     "languages": "Języki",
@@ -27,5 +27,5 @@
     "body": "Skopiuj ten przewodnik do WePlanify, zaproś grupę i zaplanujcie podróż razem. Wspólny plan, ankiety, wspólny budżet — wszystko za darmo.",
     "button": "Skopiuj tę podróż — za darmo"
   },
-  "metaTitle": "Co zobaczyć w {city}"
+  "metaTitle": "{city} — co zobaczyć"
 }

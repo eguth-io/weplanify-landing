@@ -1,16 +1,16 @@
 {
   "home": "Inicio",
   "destinations": "Destinos",
-  "tripPlanner": "Qué ver",
+  "tripPlanner": "Planificador de viaje",
   "forkTrip": "Copiar este viaje",
-  "forkSubtext": "Empieza tu propio viaje a partir de esta guía — gratis, 30 segundos.",
+  "forkSubtext": "Empieza tu propio viaje a partir de esta guía — gratis, en 30 segundos.",
   "photoCredit": "Foto: {name} / Unsplash",
   "itinerary": "Itinerario",
   "dayLabel": "Día {day}",
   "highlights": "Imprescindibles",
   "neighbourhoods": "Barrios",
   "food": "Dónde comer",
-  "goodToKnow": "Bueno saber",
+  "goodToKnow": "Conviene saber",
   "bestTime": "Cuándo ir",
   "gettingAround": "Cómo moverse",
   "localTips": "Consejos locales",
@@ -19,7 +19,7 @@
     "languages": "Idiomas",
     "plugs": "Enchufes",
     "voltage": "Voltaje",
-    "drivingSide": "Sentido de circulación",
+    "drivingSide": "Conducción",
     "emergency": "Emergencias"
   },
   "cta": {
