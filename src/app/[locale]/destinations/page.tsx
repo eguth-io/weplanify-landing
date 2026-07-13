@@ -130,14 +130,23 @@ export default async function DestinationsIndexPage({ params }: Props) {
     name: t("meta.title"),
     description: t("meta.description"),
     url: `${SITE_URL}/${locale}${PATHNAME}`,
-    hasPart: destinations.map((d) => ({
-      "@type": "TouristTrip",
-      name: d.meta.title[loc],
-      description: d.meta.description[loc],
-      image: d.hero.image,
-      duration: `P${d.days}D`,
-      url: `${SITE_URL}/${locale}/destinations/${d.slug[loc]}`,
-    })),
+    hasPart: [
+      ...destinations.map((d) => ({
+        "@type": "TouristTrip",
+        name: d.meta.title[loc],
+        description: d.meta.description[loc],
+        image: d.hero.image,
+        duration: `P${d.days}D`,
+        url: `${SITE_URL}/${locale}/destinations/${d.slug[loc]}`,
+      })),
+      ...apiDestinations.map((d) => ({
+        "@type": "TouristTrip",
+        name: d.city,
+        ...(d.tagline ? { description: d.tagline } : {}),
+        ...(d.cover ? { image: d.cover.url } : {}),
+        url: `${SITE_URL}/${locale}/destinations/${d.id}`,
+      })),
+    ],
   };
 
   const signupHref = `https://app.weplanify.com/${locale}/register?utm_source=landing&utm_medium=destinations_index`;
