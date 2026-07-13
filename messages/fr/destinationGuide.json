@@ -35,5 +35,11 @@
     "body": "Copie ce guide dans WePlanify, invite le groupe et planifiez le voyage ensemble. Itinéraire partagé, sondages, budget commun — tout est gratuit.",
     "button": "Copier ce voyage — gratuit"
   },
+  "faq": {
+    "costQuestion": "Combien coûte un voyage à {city} ?",
+    "costAnswer": "Par personne et par jour, compte environ {budget} en mode routard, {mid} en milieu de gamme et {comfort} pour un voyage confort — hors vols internationaux.",
+    "bestTimeQuestion": "Quelle est la meilleure période pour visiter {city} ?",
+    "gettingAroundQuestion": "Comment se déplacer à {city} ?"
+  },
   "metaTitle": "Que faire à {city}"
 }

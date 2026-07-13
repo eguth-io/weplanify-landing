@@ -35,5 +35,11 @@
     "body": "Kopiere diesen Guide in WePlanify, lade die Gruppe ein und plant die Reise gemeinsam. Geteilter Reiseplan, Umfragen, gemeinsames Budget — alles kostenlos.",
     "button": "Reise kopieren — kostenlos"
   },
+  "faq": {
+    "costQuestion": "Wie viel kostet eine Reise nach {city}?",
+    "costAnswer": "Pro Person und Tag solltest du mit etwa {budget} sparsam, {mid} in der Mittelklasse und {comfort} für eine komfortable Reise rechnen — ohne internationale Flüge.",
+    "bestTimeQuestion": "Wann ist die beste Reisezeit für {city}?",
+    "gettingAroundQuestion": "Wie kommt man in {city} herum?"
+  },
   "metaTitle": "{city} Reiseplaner"
 }

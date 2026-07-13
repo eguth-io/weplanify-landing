@@ -203,8 +203,137 @@ export default async function DestinationPage({ params }: Props) {
     const guide = await fetchDestinationGuide(slug, locale);
     if (!guide) notFound();
 
+    const tg = await getTranslations("destinationGuide");
+    const currentUrl = `${SITE_URL}/${locale}/destinations/${slug}`;
+
+    const breadcrumbLd = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: tg("home"),
+          item: `${SITE_URL}/${locale}`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: tg("destinations"),
+          item: `${SITE_URL}/${locale}/destinations`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: guide.city,
+          item: currentUrl,
+        },
+      ],
+    };
+
+    // Trip-level cost range = per-person daily budget × itinerary length, from
+    // the frugal tier (min) to the comfort tier (max).
+    const days = guide.itinerary.length;
+    const budget = guide.estimated_budget;
+    const estimatedCost =
+      budget && budget.per_day.budget > 0 && days > 0
+        ? {
+            "@type": "MonetaryAmount",
+            currency: budget.currency ?? undefined,
+            minValue: budget.per_day.budget * days,
+            maxValue: budget.per_day.comfort * days,
+          }
+        : undefined;
+
+    const touristTripLd = {
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      name: tg("metaTitle", { city: guide.city }),
+      description: guide.tagline ?? guide.description ?? undefined,
+      ...(guide.cover ? { image: guide.cover.url } : {}),
+      ...(days > 0
+        ? {
+            itinerary: guide.itinerary.map((day) => ({
+              "@type": "ItemList",
+              name: `${tg("dayLabel", { day: day.day })}: ${day.title}`,
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: day.description,
+                },
+              ],
+            })),
+          }
+        : {}),
+      ...(estimatedCost ? { estimatedCost } : {}),
+      mainEntityOfPage: { "@type": "WebPage", "@id": currentUrl },
+    };
+
+    // FAQPage built from the guide's real content (budget, best time, getting
+    // around). Only questions whose data exists are emitted.
+    const budgetSymbol = budget?.currency_symbol ?? budget?.currency ?? "";
+    const formatAmount = (amount: number) =>
+      `${budgetSymbol}${amount.toLocaleString(locale)}`;
+
+    const faqEntities: Array<{
+      "@type": "Question";
+      name: string;
+      acceptedAnswer: { "@type": "Answer"; text: string };
+    }> = [];
+    if (budget && budget.per_day.budget > 0) {
+      faqEntities.push({
+        "@type": "Question",
+        name: tg("faq.costQuestion", { city: guide.city }),
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: tg("faq.costAnswer", {
+            budget: formatAmount(budget.per_day.budget),
+            mid: formatAmount(budget.per_day.mid),
+            comfort: formatAmount(budget.per_day.comfort),
+          }),
+        },
+      });
+    }
+    if (guide.best_time) {
+      faqEntities.push({
+        "@type": "Question",
+        name: tg("faq.bestTimeQuestion", { city: guide.city }),
+        acceptedAnswer: { "@type": "Answer", text: guide.best_time },
+      });
+    }
+    if (guide.getting_around) {
+      faqEntities.push({
+        "@type": "Question",
+        name: tg("faq.gettingAroundQuestion", { city: guide.city }),
+        acceptedAnswer: { "@type": "Answer", text: guide.getting_around },
+      });
+    }
+    const faqLd =
+      faqEntities.length > 0
+        ? {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqEntities,
+          }
+        : null;
+
     return (
       <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(touristTripLd) }}
+        />
+        {faqLd && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+          />
+        )}
         <Nav navData={navData} navigationData={navigationData} />
         <DestinationGuideView guide={guide} locale={locale} />
         <Footer footerData={footerData} />
