@@ -1,0 +1,49 @@
+{
+  "home": "Inicio",
+  "destinations": "Destinos",
+  "tripPlanner": "Planificador de viaje",
+  "forkTrip": "Copiar este viaje",
+  "forkSubtext": "Empieza tu propio viaje a partir de esta guía — gratis, en 30 segundos.",
+  "photoCredit": "Foto: {name} / Unsplash",
+  "itinerary": "Itinerario",
+  "dayLabel": "Día {day}",
+  "highlights": "Imprescindibles",
+  "neighbourhoods": "Barrios",
+  "food": "Dónde comer",
+  "goodToKnow": "Conviene saber",
+  "bestTime": "Cuándo ir",
+  "gettingAround": "Cómo moverse",
+  "localTips": "Consejos locales",
+  "facts": {
+    "currency": "Moneda",
+    "languages": "Idiomas",
+    "plugs": "Enchufes",
+    "voltage": "Voltaje",
+    "drivingSide": "Conducción",
+    "emergency": "Emergencias"
+  },
+  "budget": {
+    "heading": "¿Cuánto cuesta {city}?",
+    "subheading": "Un presupuesto diario realista por persona, en tres estilos.",
+    "budget": "Mochilero",
+    "mid": "Gama media",
+    "comfort": "Confort",
+    "perPersonPerDay": "por persona / día"
+  },
+  "cta": {
+    "heading": "Conquista {city} con tu grupo",
+    "body": "Copia esta guía en WePlanify, invita al grupo y planificad el viaje juntos. Itinerario compartido, encuestas, presupuesto común — todo gratis.",
+    "button": "Copiar este viaje — gratis"
+  },
+  "related": {
+    "heading": "Más destinos",
+    "viewGuide": "Ver guía"
+  },
+  "faq": {
+    "costQuestion": "¿Cuánto cuesta un viaje a {city}?",
+    "costAnswer": "Por persona y día, cuenta con unos {budget} en plan mochilero, {mid} en gama media y {comfort} para un viaje cómodo — sin incluir vuelos internacionales.",
+    "bestTimeQuestion": "¿Cuál es la mejor época para visitar {city}?",
+    "gettingAroundQuestion": "¿Cómo moverse por {city}?"
+  },
+  "metaTitle": "Qué ver en {city}"
+}

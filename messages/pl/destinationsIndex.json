@@ -10,7 +10,8 @@
     "all": "Wszystkie wyjazdy",
     "bachelorette": "Wieczór panieński",
     "road-trip": "Road tripy",
-    "with-friends": "Ze znajomymi"
+    "with-friends": "Ze znajomymi",
+    "trip-planner": "Plan podróży"
   },
   "cardCta": "Zobacz plan podróży →",
   "ctaTitle": "Nie widzisz swojego kierunku?",
@@ -21,5 +22,6 @@
     "destinations": "Kierunki"
   },
   "days": "dni",
+  "apiSectionHeading": "Miasta do odkrycia",
   "destinationsCount": "{count, plural, one {kierunek} few {kierunki} many {kierunków} other {kierunku}}"
 }

@@ -1,0 +1,49 @@
+{
+  "home": "Accueil",
+  "destinations": "Destinations",
+  "tripPlanner": "Que faire",
+  "forkTrip": "Copier ce voyage",
+  "forkSubtext": "Lance ton propre voyage à partir de ce guide — gratuit, 30 secondes.",
+  "photoCredit": "Photo : {name} / Unsplash",
+  "itinerary": "Itinéraire",
+  "dayLabel": "Jour {day}",
+  "highlights": "Incontournables",
+  "neighbourhoods": "Quartiers",
+  "food": "Où manger",
+  "goodToKnow": "Bon à savoir",
+  "bestTime": "Quand y aller",
+  "gettingAround": "Se déplacer",
+  "localTips": "Astuces de locaux",
+  "facts": {
+    "currency": "Monnaie",
+    "languages": "Langues",
+    "plugs": "Prises",
+    "voltage": "Voltage",
+    "drivingSide": "Conduite",
+    "emergency": "Urgences"
+  },
+  "budget": {
+    "heading": "Combien coûte un voyage à {city} ?",
+    "subheading": "Un budget journalier réaliste par personne, en trois styles.",
+    "budget": "Routard",
+    "mid": "Milieu de gamme",
+    "comfort": "Confort",
+    "perPersonPerDay": "par personne / jour"
+  },
+  "cta": {
+    "heading": "Pars à {city} avec ta bande",
+    "body": "Copie ce guide dans WePlanify, invite le groupe et planifiez le voyage ensemble. Itinéraire partagé, sondages, budget commun — tout est gratuit.",
+    "button": "Copier ce voyage — gratuit"
+  },
+  "related": {
+    "heading": "Autres destinations",
+    "viewGuide": "Voir le guide"
+  },
+  "faq": {
+    "costQuestion": "Combien coûte un voyage à {city} ?",
+    "costAnswer": "Par personne et par jour, compte environ {budget} en mode routard, {mid} en milieu de gamme et {comfort} pour un voyage confort — hors vols internationaux.",
+    "bestTimeQuestion": "Quelle est la meilleure période pour visiter {city} ?",
+    "gettingAroundQuestion": "Comment se déplacer à {city} ?"
+  },
+  "metaTitle": "Que faire à {city}"
+}

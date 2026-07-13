@@ -1,0 +1,49 @@
+{
+  "home": "Startseite",
+  "destinations": "Reiseziele",
+  "tripPlanner": "Reiseplaner",
+  "forkTrip": "Reise kopieren",
+  "forkSubtext": "Starte deine eigene Reise aus diesem Guide — kostenlos, in 30 Sekunden.",
+  "photoCredit": "Foto: {name} / Unsplash",
+  "itinerary": "Reiseverlauf",
+  "dayLabel": "Tag {day}",
+  "highlights": "Highlights",
+  "neighbourhoods": "Viertel",
+  "food": "Wo essen",
+  "goodToKnow": "Gut zu wissen",
+  "bestTime": "Beste Reisezeit",
+  "gettingAround": "Vor Ort unterwegs",
+  "localTips": "Insider-Tipps",
+  "facts": {
+    "currency": "Währung",
+    "languages": "Sprachen",
+    "plugs": "Steckdosen",
+    "voltage": "Spannung",
+    "drivingSide": "Fahrseite",
+    "emergency": "Notruf"
+  },
+  "budget": {
+    "heading": "Wie viel kostet {city}?",
+    "subheading": "Ein realistisches Tagesbudget pro Person, in drei Stilen.",
+    "budget": "Backpacker",
+    "mid": "Mittelklasse",
+    "comfort": "Komfort",
+    "perPersonPerDay": "pro Person / Tag"
+  },
+  "cta": {
+    "heading": "Erobere {city} mit deiner Crew",
+    "body": "Kopiere diesen Guide in WePlanify, lade die Gruppe ein und plant die Reise gemeinsam. Geteilter Reiseplan, Umfragen, gemeinsames Budget — alles kostenlos.",
+    "button": "Reise kopieren — kostenlos"
+  },
+  "related": {
+    "heading": "Weitere Reiseziele",
+    "viewGuide": "Zum Guide"
+  },
+  "faq": {
+    "costQuestion": "Wie viel kostet eine Reise nach {city}?",
+    "costAnswer": "Pro Person und Tag solltest du mit etwa {budget} sparsam, {mid} in der Mittelklasse und {comfort} für eine komfortable Reise rechnen — ohne internationale Flüge.",
+    "bestTimeQuestion": "Wann ist die beste Reisezeit für {city}?",
+    "gettingAroundQuestion": "Wie kommt man in {city} herum?"
+  },
+  "metaTitle": "{city} Reiseplaner"
+}

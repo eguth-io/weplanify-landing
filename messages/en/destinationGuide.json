@@ -1,0 +1,49 @@
+{
+  "home": "Home",
+  "destinations": "Destinations",
+  "tripPlanner": "Trip planner",
+  "forkTrip": "Fork this trip",
+  "forkSubtext": "Start your own trip from this guide — free, 30 seconds.",
+  "photoCredit": "Photo: {name} / Unsplash",
+  "itinerary": "Itinerary",
+  "dayLabel": "Day {day}",
+  "highlights": "Highlights",
+  "neighbourhoods": "Neighbourhoods",
+  "food": "Where to eat",
+  "goodToKnow": "Good to know",
+  "bestTime": "Best time to visit",
+  "gettingAround": "Getting around",
+  "localTips": "Local tips",
+  "facts": {
+    "currency": "Currency",
+    "languages": "Languages",
+    "plugs": "Plugs",
+    "voltage": "Voltage",
+    "drivingSide": "Driving side",
+    "emergency": "Emergency"
+  },
+  "budget": {
+    "heading": "How much does {city} cost?",
+    "subheading": "A realistic daily budget per person, in three styles.",
+    "budget": "Backpacker",
+    "mid": "Mid-range",
+    "comfort": "Comfort",
+    "perPersonPerDay": "per person / day"
+  },
+  "cta": {
+    "heading": "Take {city} on with your crew",
+    "body": "Fork this guide into WePlanify, invite the group, and plan the trip together. Shared itinerary, polls, shared budget — all free.",
+    "button": "Fork this trip — free"
+  },
+  "related": {
+    "heading": "More destinations",
+    "viewGuide": "View guide"
+  },
+  "faq": {
+    "costQuestion": "How much does a trip to {city} cost?",
+    "costAnswer": "Per person per day, expect around {budget} on a budget, {mid} mid-range and {comfort} for a comfortable trip — excluding international flights.",
+    "bestTimeQuestion": "When is the best time to visit {city}?",
+    "gettingAroundQuestion": "How do you get around {city}?"
+  },
+  "metaTitle": "{city} Trip Planner"
+}

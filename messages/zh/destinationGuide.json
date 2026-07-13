@@ -1,0 +1,49 @@
+{
+  "home": "首页",
+  "destinations": "目的地",
+  "tripPlanner": "行程规划",
+  "forkTrip": "复制这次旅行",
+  "forkSubtext": "以这份指南为起点，开启你自己的旅程——免费，30 秒搞定。",
+  "photoCredit": "图片：{name} / Unsplash",
+  "itinerary": "行程安排",
+  "dayLabel": "第 {day} 天",
+  "highlights": "亮点推荐",
+  "neighbourhoods": "街区",
+  "food": "美食去处",
+  "goodToKnow": "实用信息",
+  "bestTime": "最佳旅行时间",
+  "gettingAround": "当地交通",
+  "localTips": "当地贴士",
+  "facts": {
+    "currency": "货币",
+    "languages": "语言",
+    "plugs": "插座",
+    "voltage": "电压",
+    "drivingSide": "行车方向",
+    "emergency": "紧急电话"
+  },
+  "budget": {
+    "heading": "去{city}要花多少钱？",
+    "subheading": "每人每天的真实预算，分三种风格。",
+    "budget": "背包客",
+    "mid": "中档",
+    "comfort": "舒适",
+    "perPersonPerDay": "每人／天"
+  },
+  "cta": {
+    "heading": "和你的伙伴一起玩转 {city}",
+    "body": "把这份指南复制到 WePlanify，邀请伙伴们一起规划行程。共享行程、投票、共享预算——全部免费。",
+    "button": "复制这次旅行——免费"
+  },
+  "related": {
+    "heading": "更多目的地",
+    "viewGuide": "查看指南"
+  },
+  "faq": {
+    "costQuestion": "去{city}旅行要花多少钱？",
+    "costAnswer": "每人每天，背包客约{budget}，中档约{mid}，舒适型约{comfort}——不含国际机票。",
+    "bestTimeQuestion": "什么时候去{city}最合适？",
+    "gettingAroundQuestion": "在{city}怎么出行？"
+  },
+  "metaTitle": "{city}旅行攻略"
+}

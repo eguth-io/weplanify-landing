@@ -10,7 +10,8 @@
     "all": "Alle Reisen",
     "bachelorette": "Junggesellinnenabschied",
     "road-trip": "Roadtrips",
-    "with-friends": "Mit Freunden"
+    "with-friends": "Mit Freunden",
+    "trip-planner": "Reiseplaner"
   },
   "cardCta": "Reiseroute ansehen →",
   "ctaTitle": "Dein Reiseziel ist nicht dabei?",
@@ -21,5 +22,6 @@
     "destinations": "Reiseziele"
   },
   "days": "Tage",
+  "apiSectionHeading": "Städte zum Entdecken",
   "destinationsCount": "{count, plural, one {Reiseziel} other {Reiseziele}}"
 }

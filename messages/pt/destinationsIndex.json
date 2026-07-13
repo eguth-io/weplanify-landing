@@ -10,7 +10,8 @@
     "all": "Todas as viagens",
     "bachelorette": "Despedida de solteira",
     "road-trip": "Road trips",
-    "with-friends": "Com amigos"
+    "with-friends": "Com amigos",
+    "trip-planner": "Planeador de viagem"
   },
   "cardCta": "Ver o itinerário →",
   "ctaTitle": "Não vê o seu destino?",
@@ -21,5 +22,6 @@
     "destinations": "Destinos"
   },
   "days": "dias",
+  "apiSectionHeading": "Cidades para explorar",
   "destinationsCount": "{count, plural, one {destino} other {destinos}}"
 }

@@ -3,6 +3,7 @@ import { client } from "@/sanity/lib/client";
 import { seoSettingsQuery } from "@/sanity/lib/query";
 import { SeoSettings } from "@/sanity/lib/type";
 import { destinations } from "@/lib/destinations/data";
+import { fetchAllDestinationSlugs } from "@/lib/destinations/api";
 import { countryGuides } from "@/lib/travel-guides/data";
 import { routing } from "@/i18n/routing";
 
@@ -145,6 +146,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           priority: 0.85,
         }
       );
+    }
+
+    // API-driven destination mini-guides: one slug shared across all 8 locales
+    // (no localized slug), so the whole hreflang cluster is the same URL path.
+    // Degrades to [] when the backend is unreachable, so the sitemap never
+    // fails. Skip any slug already covered by a hardcoded destination above to
+    // avoid duplicate <url> entries.
+    const hardcodedSlugs = new Set(
+      destinations.flatMap((d) => [d.slug.en, d.slug.fr])
+    );
+    const apiSlugs = await fetchAllDestinationSlugs();
+    for (const slug of apiSlugs) {
+      if (hardcodedSlugs.has(slug)) continue;
+      pushLocalized((locale) => `/${locale}/destinations/${slug}`, {
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.85,
+      });
     }
 
     // Travel guides: index + one entry per localized country slug.

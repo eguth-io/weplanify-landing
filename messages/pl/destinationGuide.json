@@ -1,0 +1,49 @@
+{
+  "home": "Strona główna",
+  "destinations": "Kierunki",
+  "tripPlanner": "Planer podróży",
+  "forkTrip": "Skopiuj tę podróż",
+  "forkSubtext": "Zacznij własną podróż na podstawie tego przewodnika — za darmo, w 30 sekund.",
+  "photoCredit": "Zdjęcie: {name} / Unsplash",
+  "itinerary": "Plan podróży",
+  "dayLabel": "Dzień {day}",
+  "highlights": "Największe atrakcje",
+  "neighbourhoods": "Dzielnice",
+  "food": "Gdzie zjeść",
+  "goodToKnow": "Warto wiedzieć",
+  "bestTime": "Kiedy jechać",
+  "gettingAround": "Jak się poruszać",
+  "localTips": "Rady od miejscowych",
+  "facts": {
+    "currency": "Waluta",
+    "languages": "Języki",
+    "plugs": "Gniazdka",
+    "voltage": "Napięcie",
+    "drivingSide": "Ruch drogowy",
+    "emergency": "Numer alarmowy"
+  },
+  "budget": {
+    "heading": "Ile kosztuje {city}?",
+    "subheading": "Realistyczny dzienny budżet na osobę, w trzech wariantach.",
+    "budget": "Backpacker",
+    "mid": "Średnia półka",
+    "comfort": "Komfort",
+    "perPersonPerDay": "na osobę / dzień"
+  },
+  "cta": {
+    "heading": "Zdobądź {city} ze swoją ekipą",
+    "body": "Skopiuj ten przewodnik do WePlanify, zaproś grupę i zaplanujcie podróż razem. Wspólny plan, ankiety, wspólny budżet — wszystko za darmo.",
+    "button": "Skopiuj tę podróż — za darmo"
+  },
+  "related": {
+    "heading": "Więcej kierunków",
+    "viewGuide": "Zobacz przewodnik"
+  },
+  "faq": {
+    "costQuestion": "Ile kosztuje wyjazd do {city}?",
+    "costAnswer": "Na osobę dziennie licz około {budget} w wersji budżetowej, {mid} w średniej półce i {comfort} na komfortowy wyjazd — bez lotów międzynarodowych.",
+    "bestTimeQuestion": "Kiedy najlepiej odwiedzić {city}?",
+    "gettingAroundQuestion": "Jak poruszać się po {city}?"
+  },
+  "metaTitle": "{city} — co zobaczyć"
+}

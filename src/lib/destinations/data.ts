@@ -14,7 +14,11 @@ export type Locale = "en" | "fr";
 
 export type LocalizedString = { en: string; fr: string };
 
-export type DestinationUseCase = "bachelorette" | "road-trip" | "with-friends";
+export type DestinationUseCase =
+  | "bachelorette"
+  | "road-trip"
+  | "with-friends"
+  | "trip-planner";
 
 export type DestinationPoi = {
   name: string;
@@ -1866,6 +1870,7 @@ export function getUseCaseLabel(useCase: DestinationUseCase, locale: Locale): st
     bachelorette: { en: "Bachelorette", fr: "EVJF" },
     "road-trip": { en: "Road trip", fr: "Road trip" },
     "with-friends": { en: "With friends", fr: "Entre amis" },
+    "trip-planner": { en: "Trip planner", fr: "Que faire" },
   };
   return labels[useCase][locale];
 }

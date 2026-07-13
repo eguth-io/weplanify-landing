@@ -15,6 +15,7 @@ import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 
 import { generateMetadataFromSanity } from "@/lib/metadata";
+import { routing } from "@/i18n/routing";
 import {
   destinations,
   findDestinationByLocalizedSlug,
@@ -22,6 +23,12 @@ import {
   getUseCaseLabel,
   type Locale,
 } from "@/lib/destinations/data";
+import {
+  fetchAllDestinationSlugs,
+  fetchDestinationGuide,
+  fetchPublishedDestinations,
+} from "@/lib/destinations/api";
+import DestinationGuideView from "@/components/destinations/DestinationGuideView";
 
 const SITE_URL = "https://www.weplanify.com";
 
@@ -29,13 +36,32 @@ type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   // Build-time generation of every locale × slug combination.
+  const seen = new Set<string>();
   const params: Array<{ locale: string; slug: string }> = [];
+
+  const add = (locale: string, slug: string) => {
+    const key = `${locale}::${slug}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    params.push({ locale, slug });
+  };
+
+  // Local hardcoded destinations: en/fr localized slugs.
   for (const d of destinations) {
-    params.push({ locale: "en", slug: d.slug.en });
-    params.push({ locale: "fr", slug: d.slug.fr });
+    add("en", d.slug.en);
+    add("fr", d.slug.fr);
   }
+
+  // API destinations: one entry per locale (slugs are locale-agnostic).
+  const apiSlugs = await fetchAllDestinationSlugs();
+  for (const slug of apiSlugs) {
+    for (const locale of routing.locales) {
+      add(locale, slug);
+    }
+  }
+
   return params;
 }
 
@@ -43,19 +69,74 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const loc: Locale = locale === "fr" ? "fr" : "en";
   const destination = findDestinationByLocalizedSlug(slug, loc);
-  if (!destination) return {};
 
   const baseMetadata = await generateMetadataFromSanity(
     locale,
     `/destinations/${slug}`
   );
-  const title = destination.meta.title[loc];
-  const description = destination.meta.description[loc];
   const currentUrl = `${SITE_URL}/${locale}/destinations/${slug}`;
 
-  // Hreflang must point at each locale's own slug.
-  const enUrl = `${SITE_URL}/en/destinations/${destination.slug.en}`;
-  const frUrl = `${SITE_URL}/fr/destinations/${destination.slug.fr}`;
+  // ----- Local hardcoded destination -----
+  if (destination) {
+    const title = destination.meta.title[loc];
+    const description = destination.meta.description[loc];
+
+    // Hreflang must point at each locale's own slug.
+    const enUrl = `${SITE_URL}/en/destinations/${destination.slug.en}`;
+    const frUrl = `${SITE_URL}/fr/destinations/${destination.slug.fr}`;
+
+    return {
+      ...baseMetadata,
+      title,
+      description,
+      authors: [{ name: "WePlanify" }],
+      openGraph: {
+        ...baseMetadata.openGraph,
+        type: "article",
+        title,
+        description,
+        url: currentUrl,
+        locale: locale === "fr" ? "fr_FR" : "en_US",
+        images: [
+          {
+            url: destination.hero.image,
+            width: 1600,
+            height: 900,
+            alt: destination.hero.imageAlt[loc],
+          },
+        ],
+      },
+      twitter: {
+        ...baseMetadata.twitter,
+        title,
+        description,
+        images: [destination.hero.image],
+      },
+      alternates: {
+        canonical: currentUrl,
+        languages: {
+          en: enUrl,
+          fr: frUrl,
+          "x-default": enUrl,
+        },
+      },
+    };
+  }
+
+  // ----- API-driven destination -----
+  const guide = await fetchDestinationGuide(slug, locale);
+  if (!guide) return {};
+
+  const tg = await getTranslations({ locale, namespace: "destinationGuide" });
+  const title = tg("metaTitle", { city: guide.city });
+  const description = guide.tagline ?? guide.description ?? "";
+
+  // City slugs are locale-agnostic — same slug across all locales.
+  const languages: Record<string, string> = {};
+  for (const l of routing.locales) {
+    languages[l] = `${SITE_URL}/${l}/destinations/${slug}`;
+  }
+  languages["x-default"] = `${SITE_URL}/en/destinations/${slug}`;
 
   return {
     ...baseMetadata,
@@ -69,28 +150,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       url: currentUrl,
       locale: locale === "fr" ? "fr_FR" : "en_US",
-      images: [
-        {
-          url: destination.hero.image,
-          width: 1600,
-          height: 900,
-          alt: destination.hero.imageAlt[loc],
-        },
-      ],
+      images: guide.cover
+        ? [
+            {
+              url: guide.cover.url,
+              width: 1600,
+              height: 900,
+              alt: guide.city,
+            },
+          ]
+        : undefined,
     },
     twitter: {
       ...baseMetadata.twitter,
       title,
       description,
-      images: [destination.hero.image],
+      images: guide.cover ? [guide.cover.url] : undefined,
     },
     alternates: {
       canonical: currentUrl,
-      languages: {
-        en: enUrl,
-        fr: frUrl,
-        "x-default": enUrl,
-      },
+      languages,
     },
   };
 }
@@ -98,11 +177,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function DestinationPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("destinationSlug");
 
   const loc: Locale = locale === "fr" ? "fr" : "en";
   const destination = findDestinationByLocalizedSlug(slug, loc);
-  if (!destination) notFound();
 
   const [navData, navigationData, footerData]: [
     NavType,
@@ -121,6 +198,173 @@ export default async function DestinationPage({ params }: Props) {
       tags: ["footer"],
     }),
   ]);
+
+  // ----- API-driven destination (no local match) -----
+  if (!destination) {
+    const guide = await fetchDestinationGuide(slug, locale);
+    if (!guide) notFound();
+
+    // Related guides for internal linking: prefer same country, then shared
+    // vibe tags. Falls back to filling up to 3 with the rest of the catalog.
+    const published = await fetchPublishedDestinations(locale);
+    const guideTags = new Set(guide.tags ?? []);
+    const related = published
+      .filter((d) => d.id !== guide.id)
+      .map((d) => {
+        let score = 0;
+        if (
+          d.country_alpha2 &&
+          guide.country_alpha2 &&
+          d.country_alpha2 === guide.country_alpha2
+        ) {
+          score += 2;
+        }
+        score += (d.tags ?? []).filter((tag) => guideTags.has(tag)).length;
+        return { d, score };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map((x) => x.d);
+
+    const tg = await getTranslations("destinationGuide");
+    const currentUrl = `${SITE_URL}/${locale}/destinations/${slug}`;
+
+    const breadcrumbLd = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: tg("home"),
+          item: `${SITE_URL}/${locale}`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: tg("destinations"),
+          item: `${SITE_URL}/${locale}/destinations`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: guide.city,
+          item: currentUrl,
+        },
+      ],
+    };
+
+    // Trip-level cost range = per-person daily budget × itinerary length, from
+    // the frugal tier (min) to the comfort tier (max).
+    const days = guide.itinerary.length;
+    const budget = guide.estimated_budget;
+    const estimatedCost =
+      budget && budget.per_day.budget > 0 && days > 0
+        ? {
+            "@type": "MonetaryAmount",
+            currency: budget.currency ?? undefined,
+            minValue: budget.per_day.budget * days,
+            maxValue: budget.per_day.comfort * days,
+          }
+        : undefined;
+
+    const touristTripLd = {
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      name: tg("metaTitle", { city: guide.city }),
+      description: guide.tagline ?? guide.description ?? undefined,
+      ...(guide.cover ? { image: guide.cover.url } : {}),
+      ...(days > 0
+        ? {
+            itinerary: guide.itinerary.map((day) => ({
+              "@type": "ItemList",
+              name: `${tg("dayLabel", { day: day.day })}: ${day.title}`,
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: day.description,
+                },
+              ],
+            })),
+          }
+        : {}),
+      ...(estimatedCost ? { estimatedCost } : {}),
+      mainEntityOfPage: { "@type": "WebPage", "@id": currentUrl },
+    };
+
+    // FAQPage built from the guide's real content (budget, best time, getting
+    // around). Only questions whose data exists are emitted.
+    const budgetSymbol = budget?.currency_symbol ?? budget?.currency ?? "";
+    const formatAmount = (amount: number) =>
+      `${budgetSymbol}${amount.toLocaleString(locale)}`;
+
+    const faqEntities: Array<{
+      "@type": "Question";
+      name: string;
+      acceptedAnswer: { "@type": "Answer"; text: string };
+    }> = [];
+    if (budget && budget.per_day.budget > 0) {
+      faqEntities.push({
+        "@type": "Question",
+        name: tg("faq.costQuestion", { city: guide.city }),
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: tg("faq.costAnswer", {
+            budget: formatAmount(budget.per_day.budget),
+            mid: formatAmount(budget.per_day.mid),
+            comfort: formatAmount(budget.per_day.comfort),
+          }),
+        },
+      });
+    }
+    if (guide.best_time) {
+      faqEntities.push({
+        "@type": "Question",
+        name: tg("faq.bestTimeQuestion", { city: guide.city }),
+        acceptedAnswer: { "@type": "Answer", text: guide.best_time },
+      });
+    }
+    if (guide.getting_around) {
+      faqEntities.push({
+        "@type": "Question",
+        name: tg("faq.gettingAroundQuestion", { city: guide.city }),
+        acceptedAnswer: { "@type": "Answer", text: guide.getting_around },
+      });
+    }
+    const faqLd =
+      faqEntities.length > 0
+        ? {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqEntities,
+          }
+        : null;
+
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(touristTripLd) }}
+        />
+        {faqLd && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+          />
+        )}
+        <Nav navData={navData} navigationData={navigationData} />
+        <DestinationGuideView guide={guide} locale={locale} related={related} />
+        <Footer footerData={footerData} />
+      </>
+    );
+  }
+
+  const t = await getTranslations("destinationSlug");
 
   const currentUrl = `${SITE_URL}/${locale}/destinations/${slug}`;
   const cityLabel = destination.city[loc];
