@@ -444,8 +444,10 @@ export default async function DestinationPage({ params }: Props) {
     .map((relatedSlug) => destinations.find((d) => d.slug.en === relatedSlug))
     .filter((d): d is NonNullable<typeof d> => Boolean(d));
 
-  // App signup link with destination ref for GA attribution.
-  const signupHref = `https://app.weplanify.com/${locale}/register?utm_source=landing&utm_medium=destination&utm_campaign=${destination.slug.en}`;
+  // Fork = instantiate a real trip from the matching TripTemplate (slug ==
+  // destination slug), same mechanism the travel-guide pages use. Falls back to
+  // a plain register when no template exists for the slug.
+  const signupHref = `https://app.weplanify.com/${locale}/register?template=${destination.slug.en}&utm_source=landing&utm_medium=destination&utm_campaign=${destination.slug.en}`;
 
   return (
     <>

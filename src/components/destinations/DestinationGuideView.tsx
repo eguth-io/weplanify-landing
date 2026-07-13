@@ -29,7 +29,10 @@ export default async function DestinationGuideView({
 }: Props) {
   const t = await getTranslations("destinationGuide");
 
-  const signupHref = `https://app.weplanify.com/${locale}/register?utm_source=landing&utm_medium=destination&utm_campaign=${guide.id}`;
+  // Fork = instantiate a real trip from the matching TripTemplate (slug ==
+  // destination slug), same mechanism the travel-guide pages use. Falls back to
+  // a plain register when no template exists for the slug.
+  const signupHref = `https://app.weplanify.com/${locale}/register?template=${guide.id}&utm_source=landing&utm_medium=destination&utm_campaign=${guide.id}`;
 
   // Chips shown in the hero: the badge label first, then tag labels.
   const heroChips = [
