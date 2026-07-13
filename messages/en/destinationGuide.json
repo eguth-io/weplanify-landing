@@ -35,6 +35,10 @@
     "body": "Fork this guide into WePlanify, invite the group, and plan the trip together. Shared itinerary, polls, shared budget — all free.",
     "button": "Fork this trip — free"
   },
+  "related": {
+    "heading": "More destinations",
+    "viewGuide": "View guide"
+  },
   "faq": {
     "costQuestion": "How much does a trip to {city} cost?",
     "costAnswer": "Per person per day, expect around {budget} on a budget, {mid} mid-range and {comfort} for a comfortable trip — excluding international flights.",

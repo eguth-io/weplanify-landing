@@ -35,6 +35,10 @@
     "body": "把这份指南复制到 WePlanify，邀请伙伴们一起规划行程。共享行程、投票、共享预算——全部免费。",
     "button": "复制这次旅行——免费"
   },
+  "related": {
+    "heading": "更多目的地",
+    "viewGuide": "查看指南"
+  },
   "faq": {
     "costQuestion": "去{city}旅行要花多少钱？",
     "costAnswer": "每人每天，背包客约{budget}，中档约{mid}，舒适型约{comfort}——不含国际机票。",

@@ -35,6 +35,10 @@
     "body": "Copia este guia para o WePlanify, convida o grupo e planeiem a viagem juntos. Itinerário partilhado, sondagens, orçamento comum — tudo grátis.",
     "button": "Copiar esta viagem — grátis"
   },
+  "related": {
+    "heading": "Mais destinos",
+    "viewGuide": "Ver guia"
+  },
   "faq": {
     "costQuestion": "Quanto custa uma viagem a {city}?",
     "costAnswer": "Por pessoa por dia, conta com cerca de {budget} em modo mochileiro, {mid} em gama média e {comfort} para uma viagem confortável — sem incluir voos internacionais.",

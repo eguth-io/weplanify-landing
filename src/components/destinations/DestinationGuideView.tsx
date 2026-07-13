@@ -6,11 +6,15 @@ import FadeIn from "@/components/FadeIn";
 import Breadcrumb from "@/components/Breadcrumb";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
-import type { DestinationGuide } from "@/lib/destinations/api";
+import type {
+  DestinationGuide,
+  DestinationListItem,
+} from "@/lib/destinations/api";
 
 type Props = {
   guide: DestinationGuide;
   locale: string;
+  related?: DestinationListItem[];
 };
 
 /**
@@ -18,7 +22,11 @@ type Props = {
  * Renders an API-driven DestinationGuide in the WePlanify design language.
  * Every section guards against empty/null data so partial guides render cleanly.
  */
-export default async function DestinationGuideView({ guide, locale }: Props) {
+export default async function DestinationGuideView({
+  guide,
+  locale,
+  related = [],
+}: Props) {
   const t = await getTranslations("destinationGuide");
 
   const signupHref = `https://app.weplanify.com/${locale}/register?utm_source=landing&utm_medium=destination&utm_campaign=${guide.id}`;
@@ -460,6 +468,56 @@ export default async function DestinationGuideView({ guide, locale }: Props) {
                   </li>
                 ))}
               </ul>
+            </div>
+          </section>
+        </FadeIn>
+      )}
+
+      {/* Related destinations — internal linking to sibling guides */}
+      {related.length > 0 && (
+        <FadeIn>
+          <section className="py-16 lg:py-24 px-4 lg:px-8 bg-[#FFFBF5]">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] text-center mb-10">
+                {t("related.heading")}
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {related.map((r) => (
+                  <Link
+                    key={r.id}
+                    href={`/${locale}/destinations/${r.id}`}
+                    className="group"
+                  >
+                    <article className="bg-white border border-[#001E13]/10 rounded-3xl overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+                      {r.cover && (
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <Image
+                            src={r.cover.url}
+                            alt={r.city}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 33vw"
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                      )}
+                      <div className="p-6 flex-1 flex flex-col">
+                        <h3 className="text-xl font-londrina-solid text-[#001E13] mb-2">
+                          {r.flag ? `${r.flag} ` : ""}
+                          {r.city}
+                        </h3>
+                        {r.tagline && (
+                          <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4 flex-1">
+                            {r.tagline}
+                          </p>
+                        )}
+                        <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-auto">
+                          {t("related.viewGuide")}
+                        </span>
+                      </div>
+                    </article>
+                  </Link>
+                ))}
+              </div>
             </div>
           </section>
         </FadeIn>

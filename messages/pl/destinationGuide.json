@@ -35,6 +35,10 @@
     "body": "Skopiuj ten przewodnik do WePlanify, zaproś grupę i zaplanujcie podróż razem. Wspólny plan, ankiety, wspólny budżet — wszystko za darmo.",
     "button": "Skopiuj tę podróż — za darmo"
   },
+  "related": {
+    "heading": "Więcej kierunków",
+    "viewGuide": "Zobacz przewodnik"
+  },
   "faq": {
     "costQuestion": "Ile kosztuje wyjazd do {city}?",
     "costAnswer": "Na osobę dziennie licz około {budget} w wersji budżetowej, {mid} w średniej półce i {comfort} na komfortowy wyjazd — bez lotów międzynarodowych.",

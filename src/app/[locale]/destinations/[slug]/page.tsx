@@ -26,6 +26,7 @@ import {
 import {
   fetchAllDestinationSlugs,
   fetchDestinationGuide,
+  fetchPublishedDestinations,
 } from "@/lib/destinations/api";
 import DestinationGuideView from "@/components/destinations/DestinationGuideView";
 
@@ -203,6 +204,28 @@ export default async function DestinationPage({ params }: Props) {
     const guide = await fetchDestinationGuide(slug, locale);
     if (!guide) notFound();
 
+    // Related guides for internal linking: prefer same country, then shared
+    // vibe tags. Falls back to filling up to 3 with the rest of the catalog.
+    const published = await fetchPublishedDestinations(locale);
+    const guideTags = new Set(guide.tags ?? []);
+    const related = published
+      .filter((d) => d.id !== guide.id)
+      .map((d) => {
+        let score = 0;
+        if (
+          d.country_alpha2 &&
+          guide.country_alpha2 &&
+          d.country_alpha2 === guide.country_alpha2
+        ) {
+          score += 2;
+        }
+        score += (d.tags ?? []).filter((tag) => guideTags.has(tag)).length;
+        return { d, score };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map((x) => x.d);
+
     const tg = await getTranslations("destinationGuide");
     const currentUrl = `${SITE_URL}/${locale}/destinations/${slug}`;
 
@@ -335,7 +358,7 @@ export default async function DestinationPage({ params }: Props) {
           />
         )}
         <Nav navData={navData} navigationData={navigationData} />
-        <DestinationGuideView guide={guide} locale={locale} />
+        <DestinationGuideView guide={guide} locale={locale} related={related} />
         <Footer footerData={footerData} />
       </>
     );

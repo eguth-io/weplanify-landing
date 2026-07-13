@@ -35,6 +35,10 @@
     "body": "Copia questa guida in WePlanify, invita il gruppo e pianificate il viaggio insieme. Itinerario condiviso, sondaggi, budget comune — tutto gratis.",
     "button": "Copia questo viaggio — gratis"
   },
+  "related": {
+    "heading": "Altre destinazioni",
+    "viewGuide": "Vedi la guida"
+  },
   "faq": {
     "costQuestion": "Quanto costa un viaggio a {city}?",
     "costAnswer": "A persona al giorno, calcola circa {budget} in modalità zaino in spalla, {mid} in fascia media e {comfort} per un viaggio comodo — voli internazionali esclusi.",
