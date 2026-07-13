@@ -75,6 +75,21 @@ export default async function DestinationGuideView({ guide, locale }: Props) {
     Boolean(guide.getting_around) ||
     factRows.length > 0;
 
+  // AI-estimated per-person, per-day budget in three tiers. Only shown when the
+  // backend has generated it (per_day amounts > 0).
+  const budget = guide.estimated_budget;
+  const hasBudget = Boolean(budget && budget.per_day.budget > 0);
+  const budgetSymbol = budget?.currency_symbol ?? budget?.currency ?? "";
+  const formatAmount = (amount: number) =>
+    `${budgetSymbol}${amount.toLocaleString(locale)}`;
+  const budgetTiers = budget
+    ? [
+        { key: "budget", label: t("budget.budget"), amount: budget.per_day.budget },
+        { key: "mid", label: t("budget.mid"), amount: budget.per_day.mid },
+        { key: "comfort", label: t("budget.comfort"), amount: budget.per_day.comfort },
+      ]
+    : [];
+
   return (
     <main className="min-h-screen bg-[#FFFBF5]">
       {/* Hero */}
@@ -375,6 +390,49 @@ export default async function DestinationGuideView({ guide, locale }: Props) {
                   </div>
                 )}
               </div>
+            </div>
+          </section>
+        </FadeIn>
+      )}
+
+      {/* Budget (AI-estimated, per person per day, three tiers) */}
+      {hasBudget && (
+        <FadeIn>
+          <section className="py-16 lg:py-24 px-4 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl lg:text-5xl font-londrina-solid text-[#001E13] leading-tight mb-3">
+                  {t("budget.heading", { city: guide.city })}
+                </h2>
+                <p className="text-base lg:text-lg font-karla text-[#001E13]/70 max-w-2xl mx-auto">
+                  {t("budget.subheading")}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+                {budgetTiers.map((tier) => (
+                  <div
+                    key={tier.key}
+                    className="bg-white rounded-3xl p-6 lg:p-8 border border-[#001E13]/10 text-center"
+                  >
+                    <span className="block font-karla font-bold text-[#001E13]/60 text-xs uppercase tracking-wide mb-3">
+                      {tier.label}
+                    </span>
+                    <span className="block font-londrina-solid text-3xl lg:text-4xl text-[#F6391A] mb-1">
+                      {formatAmount(tier.amount)}
+                    </span>
+                    <span className="block font-karla text-[#001E13]/50 text-sm">
+                      {t("budget.perPersonPerDay")}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              {budget?.note && (
+                <p className="text-xs lg:text-sm font-karla text-[#001E13]/60 leading-relaxed text-center mt-6 max-w-2xl mx-auto">
+                  {budget.note}
+                </p>
+              )}
             </div>
           </section>
         </FadeIn>

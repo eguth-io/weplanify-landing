@@ -22,6 +22,14 @@
     "drivingSide": "Fahrseite",
     "emergency": "Notruf"
   },
+  "budget": {
+    "heading": "Wie viel kostet {city}?",
+    "subheading": "Ein realistisches Tagesbudget pro Person, in drei Stilen.",
+    "budget": "Backpacker",
+    "mid": "Mittelklasse",
+    "comfort": "Komfort",
+    "perPersonPerDay": "pro Person / Tag"
+  },
   "cta": {
     "heading": "Erobere {city} mit deiner Crew",
     "body": "Kopiere diesen Guide in WePlanify, lade die Gruppe ein und plant die Reise gemeinsam. Geteilter Reiseplan, Umfragen, gemeinsames Budget — alles kostenlos.",

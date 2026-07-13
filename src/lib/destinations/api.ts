@@ -68,6 +68,22 @@ export type DestinationFacts = {
   emergency_number: string | null;
 };
 
+/**
+ * AI-estimated per-person, per-day budget in three tiers (local currency).
+ * Covers accommodation, food, local transport and activities — not flights.
+ * Null when the backend hasn't generated it yet for this locale.
+ */
+export type DestinationEstimatedBudget = {
+  currency: string | null;
+  currency_symbol: string | null;
+  per_day: {
+    budget: number;
+    mid: number;
+    comfort: number;
+  };
+  note: string | null;
+};
+
 export type DestinationGuide = DestinationListItem & {
   description: string | null;
   highlights: DestinationHighlight[];
@@ -78,6 +94,7 @@ export type DestinationGuide = DestinationListItem & {
   itinerary: DestinationItineraryDay[];
   local_tips: string[];
   facts: DestinationFacts;
+  estimated_budget: DestinationEstimatedBudget | null;
 };
 
 /**

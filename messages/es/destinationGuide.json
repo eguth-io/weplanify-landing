@@ -22,6 +22,14 @@
     "drivingSide": "Conducción",
     "emergency": "Emergencias"
   },
+  "budget": {
+    "heading": "¿Cuánto cuesta {city}?",
+    "subheading": "Un presupuesto diario realista por persona, en tres estilos.",
+    "budget": "Mochilero",
+    "mid": "Gama media",
+    "comfort": "Confort",
+    "perPersonPerDay": "por persona / día"
+  },
   "cta": {
     "heading": "Conquista {city} con tu grupo",
     "body": "Copia esta guía en WePlanify, invita al grupo y planificad el viaje juntos. Itinerario compartido, encuestas, presupuesto común — todo gratis.",

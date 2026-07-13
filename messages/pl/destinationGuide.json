@@ -22,6 +22,14 @@
     "drivingSide": "Ruch drogowy",
     "emergency": "Numer alarmowy"
   },
+  "budget": {
+    "heading": "Ile kosztuje {city}?",
+    "subheading": "Realistyczny dzienny budżet na osobę, w trzech wariantach.",
+    "budget": "Backpacker",
+    "mid": "Średnia półka",
+    "comfort": "Komfort",
+    "perPersonPerDay": "na osobę / dzień"
+  },
   "cta": {
     "heading": "Zdobądź {city} ze swoją ekipą",
     "body": "Skopiuj ten przewodnik do WePlanify, zaproś grupę i zaplanujcie podróż razem. Wspólny plan, ankiety, wspólny budżet — wszystko za darmo.",

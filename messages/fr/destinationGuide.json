@@ -22,6 +22,14 @@
     "drivingSide": "Conduite",
     "emergency": "Urgences"
   },
+  "budget": {
+    "heading": "Combien coûte un voyage à {city} ?",
+    "subheading": "Un budget journalier réaliste par personne, en trois styles.",
+    "budget": "Routard",
+    "mid": "Milieu de gamme",
+    "comfort": "Confort",
+    "perPersonPerDay": "par personne / jour"
+  },
   "cta": {
     "heading": "Pars à {city} avec ta bande",
     "body": "Copie ce guide dans WePlanify, invite le groupe et planifiez le voyage ensemble. Itinéraire partagé, sondages, budget commun — tout est gratuit.",

@@ -22,6 +22,14 @@
     "drivingSide": "Driving side",
     "emergency": "Emergency"
   },
+  "budget": {
+    "heading": "How much does {city} cost?",
+    "subheading": "A realistic daily budget per person, in three styles.",
+    "budget": "Backpacker",
+    "mid": "Mid-range",
+    "comfort": "Comfort",
+    "perPersonPerDay": "per person / day"
+  },
   "cta": {
     "heading": "Take {city} on with your crew",
     "body": "Fork this guide into WePlanify, invite the group, and plan the trip together. Shared itinerary, polls, shared budget — all free.",
