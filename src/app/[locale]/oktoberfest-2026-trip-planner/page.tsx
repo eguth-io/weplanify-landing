@@ -78,9 +78,11 @@ export default async function Oktoberfest2026Page({ params }: Props) {
   // Inline-link chunks for t.rich() paragraphs — keeps every locale on the same
   // markup instead of hardcoding one language per branch.
   const inlineLink = (href: string, className: string) =>
-    (chunks: ReactNode) => (
-      <Link href={href} className={className}>{chunks}</Link>
-    );
+    function LinkChunk(chunks: ReactNode) {
+      return (
+        <Link href={href} className={className}>{chunks}</Link>
+      );
+    };
   const lightLink = "text-[#F6391A] hover:underline font-semibold";
   const darkLink = "text-[#EEF899] hover:underline font-semibold";
 
