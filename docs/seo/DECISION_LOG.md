@@ -40,6 +40,24 @@
 1. `AuthorBio.tsx` n'a que la copy `en`/`fr` → sur de/es/it/pl/pt/zh la bio s'affiche en anglais avec la date formatée `en-US` (« Veröffentlicht July 16, 2026 »). Touche **toutes** les pages localisées, pas seulement les events.
 2. Titres > 60 caractères une fois le « | WePlanify » ajouté (le template ne laisse que ~48 car. utiles) → troncature SERP sur la majorité des nouvelles pages et des anciennes.
 3. `StickyCTA.tsx` déduit la locale via `pathname.split("/")[1] === "fr" ? "fr" : "en"` → les 6 autres locales tombent sur `en`.
+4. **Poids de page : le catalogue i18n entier est sérialisé dans CHAQUE page.** `src/app/[locale]/layout.tsx:96` fait `<NextIntlClientProvider messages={messages}>` avec le `getMessages()` complet, dans le layout racine. Vérifié en **production** : `/en/events` = **463 KB de HTML** et contient « Puskás », « DreamVille », « Clisson » — des namespaces que la page n'affiche pas.
+   → Ces 5 landings ajoutent **115 KB par locale** au catalogue (oktoberfest 22 KB, christmasMarkets 21,7 KB, skiSeason 25,6 KB, solarEclipse2027 26,9 KB, rugby 19,2 KB), soit **~+25 % de HTML sur toutes les pages du site**, pas seulement les nouvelles. Impact LCP/TTI mobile = facteur de ranking.
+   → Problème **pré-existant** que ce lot aggrave nettement. Fix = ne passer au provider que les namespaces nécessaires (ou passer les pages event en 100 % Server Components, elles n'ont presque pas d'interactivité client). Changement transverse → ticket dédié, pas fait ici.
+
+**Calibrage : est-ce que les landings event rankent ? (SerpAPI, 16/07)**
+
+Mesure du taux de base sur les **6 landings event déjà en ligne depuis des mois** — meilleur prédicteur disponible pour les 5 nouvelles.
+
+- **Aucune n'est dans le top 20** de son propre mot-clé event (`hellfest 2026 trip planner`, `tomorrowland 2026 trip planner`, `ultra europe 2026 trip planner`, `world cup 2026 trip planner`, `solar eclipse 2026 trip planner`, + variantes FR).
+- Elles sont pourtant **bien indexées** : `site:weplanify.com/en/hellfest-2026-trip-planner` → 1 résultat ; idem `/fr/`. 548 pages indexées sur le domaine. Ce n'est donc PAS un problème d'indexation.
+- Elles ne remontent que sur des requêtes **de marque** : `weplanify hellfest` → #1.
+- La **seule** page qui gagne du non-brandé : `/fr/alternatives/best-group-trip-planner-apps` → **#8** sur `appli pour organiser un voyage entre amis`, **#5** sur `application voyage groupe cagnotte itinéraire`. Aucune page event.
+
+**Conclusion.** Le contenu n'est pas la contrainte : 6 landings event indexées, 0 visibilité non-brandée. Publier la 7e à la 11e ne lève pas le frein. Cohérent avec la décision du 30/06 (« reste = off-page ») et avec le constat « créée ≠ rankée ». Gain organique attendu de ce lot à 3 mois : **~0**. Ces pages sont des **options** (elles paieront si l'autorité monte) et sont utilisables **immédiatement hors SEO** via leur `template=` (social, PH, newsletter).
+
+⚠️ **Ne pas compter ce lot dans l'objectif 1K au 01/09** : les marchés de Noël pointent en nov-déc (après la deadline) et l'Oktoberfest du 19/09 au 04/10, or une page publiée le 16/07 sur un domaine sans visibilité event n'y sera pas.
+
+*Limite : SERP live SerpAPI (`gl=us`/`gl=fr`, sans personnalisation) ≠ position moyenne GSC ; `site:` `total_results` est notoirement approximatif.*
 
 **Limite méthodo assumée.** SerpAPI ne donne **pas** de volume de recherche absolu (`total_results` ≠ volume). Google Trends est **relatif au max du groupe comparé** — d'où le double run pour éviter d'écraser les petits termes. Aucun chiffre de volume absolu ici : il faudrait Keyword Planner ou GSC (SA MCP toujours 403 au 16/07).
 
