@@ -1,17 +1,17 @@
 {
   "meta": {
-    "title": "2026 Event Trip Planners — Free, for Groups",
-    "description": "Plan your 2026 event trip with WePlanify. Dedicated free planners for the FIFA World Cup, Champions League Final, Tomorrowland, Hellfest, Ultra Europe and the total solar eclipse — built for groups of fans who travel together."
+    "title": "2026-2027 Event Trip Planners — Free, for Groups",
+    "description": "Plan your 2026-2027 event trip with WePlanify. Dedicated free planners for the FIFA World Cup, Oktoberfest, Europe's Christmas markets, the 2027 total solar eclipse, the Rugby World Cup and more — built for groups of fans who travel together."
   },
   "hero": {
-    "tag": "2026 Event Trip Planners",
-    "title": "Plan your 2026\nevent trip — together",
-    "description": "Six dedicated planners for the year's biggest events. Pick yours, build a shared itinerary, split costs and coordinate the squad — all free.",
+    "tag": "2026-2027 Event Trip Planners",
+    "title": "Plan your 2026-2027\nevent trip — together",
+    "description": "Eleven dedicated planners for the biggest events of the next two years. Pick yours, build a shared itinerary, split costs and coordinate the squad — all free.",
     "cta": "Start planning for free"
   },
   "intro": {
     "title": "One planner per event, built for groups",
-    "body": "Big events bring big logistics: matches across host cities, festival passes for a 12-person crew, camping permits, last-minute date clashes. Each of our 2026 event pages is built for that specific event — host-city tables, real schedules, the gotchas only fans hit. Pick yours below."
+    "body": "Big events bring big logistics: matches across host cities, festival passes for a 12-person crew, camping permits, last-minute date clashes. Each of our 2026-2027 event pages is built for that specific event — host-city tables, real schedules, the gotchas only fans hit. Pick yours below."
   },
   "cardCta": "Open the planner →",
   "cta": {
@@ -21,26 +21,50 @@
   },
   "breadcrumb": {
     "home": "Home",
-    "events": "2026 Events"
+    "events": "Events"
   },
   "events": [
+    {
+      "title": "Total Solar Eclipse — Aug 12, 2026",
+      "date": "August 12, 2026",
+      "location": "Iceland · Spain · Greenland",
+      "description": "The once-a-decade trip to totality. Best viewing spots, weather contingencies, accommodation that gets booked out 18 months ahead."
+    },
+    {
+      "title": "Oktoberfest 2026",
+      "date": "Sep 19 – Oct 4, 2026",
+      "location": "Munich, Germany",
+      "description": "16 days, 191st edition, free entry — but the tents reserve in tables of 10, so the group has to lock it in early. Munich hotels spike for the run, and someone always fronts the Maß round."
+    },
+    {
+      "title": "Christmas Markets 2026",
+      "date": "Nov – Dec 2026",
+      "location": "Europe",
+      "description": "Vienna, Colmar, Nuremberg, Cologne, Prague, Brussels — each city runs its own dates, so picking the weekend picks the destination. Hotels sell out by September, so settle the vote early."
+    },
+    {
+      "title": "Ski Season 2026-27",
+      "date": "Nov 2026 – May 2027",
+      "location": "French Alps",
+      "description": "Tignes and Val Thorens open Nov 21 and close May 2. One person fronts the chalet while lift passes, rental and food split unevenly — and the February school-holiday weeks cost more."
+    },
+    {
+      "title": "Total Solar Eclipse — Aug 2, 2027",
+      "date": "August 2, 2027",
+      "location": "Egypt · Spain · Morocco",
+      "description": "6 min 23 s of totality near Luxor — the longest on accessible land this century. Twelve months to decide between a Nile cruise and a land base, and Luxor books out years ahead."
+    },
+    {
+      "title": "Rugby World Cup 2027",
+      "date": "Oct – Nov 2027",
+      "location": "Australia",
+      "description": "The first 24-team edition, pools already drawn. Long-haul fares book about 12 months out and the next ticket sale is Oct 1, 2026, first come first served — so settle the multi-city route before the Round-of-16 bracket even exists."
+    },
     {
       "title": "FIFA World Cup 2026",
       "date": "Jun 11 – Jul 19, 2026",
       "location": "USA · Canada · Mexico",
       "description": "16 host cities across three countries. Plan your multi-city route, split costs by category, and coordinate the fan group across borders."
-    },
-    {
-      "title": "Champions League Final 2026",
-      "date": "May 30, 2026",
-      "location": "Budapest, Hungary",
-      "description": "The biggest club final of the year at the Puskás Aréna. Plan transport, hotel and pre-match meetup for the squad."
-    },
-    {
-      "title": "Hellfest 2026",
-      "date": "Jun 19 – 22, 2026",
-      "location": "Clisson, France",
-      "description": "Four days of metal in Clisson. Camping logistics, carpool, and the lineup-to-stage spreadsheet — all in one shared plan."
     },
     {
       "title": "Tomorrowland 2026",
@@ -49,16 +73,22 @@
       "description": "DreamVille tickets, festival passes, train logistics. Coordinate the squad and the shared kitty so nobody chases anyone for €40 the week after."
     },
     {
-      "title": "Total Solar Eclipse — Aug 12, 2026",
-      "date": "August 12, 2026",
-      "location": "Iceland · Spain · Greenland",
-      "description": "The once-a-decade trip to totality. Best viewing spots, weather contingencies, accommodation that gets booked out 18 months ahead."
-    },
-    {
       "title": "Ultra Europe 2026",
       "date": "Jul 10 – 12, 2026",
       "location": "Split, Croatia",
       "description": "Three days on the Adriatic. Hotel vs Airbnb, festival pass logistics, and side trips around Dalmatia — for the squad that wants more than just the main stage."
+    },
+    {
+      "title": "Hellfest 2026",
+      "date": "Jun 19 – 22, 2026",
+      "location": "Clisson, France",
+      "description": "Four days of metal in Clisson. Camping logistics, carpool, and the lineup-to-stage spreadsheet — all in one shared plan."
+    },
+    {
+      "title": "Champions League Final 2026",
+      "date": "May 30, 2026",
+      "location": "Budapest, Hungary",
+      "description": "The biggest club final of the year at the Puskás Aréna. Plan transport, hotel and pre-match meetup for the squad."
     }
   ]
 }

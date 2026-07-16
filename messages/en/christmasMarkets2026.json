@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "Christmas Markets 2026 Trip Planner — Free, for Groups",
+    "description": "Free Christmas markets 2026 trip planner for groups. Confirmed opening dates for Colmar, Nuremberg, Cologne, Vienna, Prague and Brussels, one-city vs Alsace-loop routes, rail logistics and a shared budget for the vin chaud."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Christmas Markets 2026 Trip Planner"
+  },
+  "hero": {
+    "tag": "Free trip planner · Christmas markets 2026",
+    "title": "Christmas Markets 2026: Plan the Weekend Before the Hotels Go",
+    "intro": "A European Christmas market trip is the easiest group trip to imagine and one of the hardest to actually book. It's a two- or three-day city break, so the itinerary is dense and every hour is contested. Each market opens and closes on its own dates, which means your date choice quietly decides your destination. And hotel prices in Strasbourg and Vienna spike from late November and sell out months ahead. This is the planner: the real 2026 dates, the one-city vs multi-city call, the rail routes, and how to split a weekend of vin chaud across six people. If you're still picking your tools, see our <link>comparison of group travel apps</link>.",
+    "readTime": "9 min read",
+    "ctaButton": "Plan your market weekend",
+    "ctaNote": "Free, no card, no subscription."
+  },
+  "facts": {
+    "heading": "The 2026 season at a glance",
+    "windowLabel": "Season",
+    "windowValue": "13 Nov → 6 Jan",
+    "windowSub": "Earliest open to latest close",
+    "marketsLabel": "Markets",
+    "marketsValue": "8",
+    "marketsSub": "Compared below, 6 with confirmed dates",
+    "bookLabel": "Book by",
+    "bookValue": "September",
+    "bookSub": "Before the good beds are gone",
+    "modeLabel": "Best mode",
+    "modeValue": "Rail",
+    "modeSub": "TGV, ICE, ÖBB, RegioJet"
+  },
+  "stakes": {
+    "p1": "Here's the trap. Someone drops \"Christmas market weekend?\" in the group chat in October. Everyone says yes instantly — it's a cheap yes, nobody has to commit to anything. Then three weeks pass. By the time you actually compare weekends, half the markets you had in mind close on different days, the Strasbourg hotels under €200 are gone, and the group splits between \"just Colmar, relaxed\" and \"Vienna and Prague, we'll sleep on the train\". You end up booking in a panic in the third week of November, paying double, and spending the weekend arguing about which square to walk to next.",
+    "p2": "WePlanify is the free shared plan for Christmas market trips — dates, route, hotel, itinerary and who owes what for the vin chaud, all in one place your whole group can see."
+  },
+  "toc": {
+    "title": "On this page",
+    "markets": "The markets and their 2026 dates",
+    "routes": "One city or a multi-city route?",
+    "logistics": "Getting there: rail is the answer",
+    "planning": "Planning it with a group",
+    "budget": "Splitting a Christmas weekend",
+    "faq": "Frequently asked questions"
+  },
+  "markets": {
+    "title": "The Markets and Their Real 2026 Dates",
+    "subtitle": "This is the part everyone skips and then regrets. These markets do not run on the same calendar — the weekend you pick decides which ones are even open. Dates below are from the official organisers, checked in July 2026.",
+    "confirmedLabel": "Confirmed",
+    "typicalLabel": "Not yet confirmed",
+    "note": "Two markets have not published their 2026 dates yet. We've marked them clearly rather than guessing — check the official site before you book a weekend that depends on one of them.",
+    "items": [
+      {
+        "name": "Colmar — La Magie de Noël",
+        "dates": "23 November – 29 December 2026",
+        "desc": "Six markets across the old town, and the one that photographs like a postcard. It runs later than most, so it's your safest bet for a weekend between Christmas and New Year. The Gourmet Market stays open until 3 January 2027."
+      },
+      {
+        "name": "Strasbourg — Christkindelsmärik",
+        "dates": "Typically late November – 24 December",
+        "desc": "The oldest Christmas market in France, running since 1570, and the one your group will name first. The city had not published its 2026 dates when we checked in July 2026. It traditionally opens on the last Friday of November and closes on 24 December, with a few squares running to the end of the month — but do not book a late-December weekend on that assumption."
+      },
+      {
+        "name": "Nuremberg — Christkindlesmarkt",
+        "dates": "27 November – 24 December 2026",
+        "desc": "The most famous market in Germany and the most traditional: wooden stalls, no plastic, no piped music. Opens Friday 27 November at 17:30 with the Christkind prologue from the Frauenkirche balcony. Closes on Christmas Eve, and stalls shut at 14:00 that day."
+      },
+      {
+        "name": "Cologne — Weihnachtsmarkt am Kölner Dom",
+        "dates": "16 November – 23 December 2026",
+        "desc": "Opens earliest of the German big names, right at the foot of the cathedral, and closes before Christmas Eve. Note it is closed on Totensonntag, 22 November 2026. The best value option in this list if you want a market weekend in mid-November before prices climb."
+      },
+      {
+        "name": "Vienna — Christkindlmarkt am Rathausplatz",
+        "dates": "13 November – 26 December 2026",
+        "desc": "The longest season here: opens mid-November and is one of the very few still running on 26 December. Open daily 10:00–22:00, and 10:00–18:30 on 24 December. The Ice Dream skating rink runs on until 6 January 2027, which makes Vienna the strongest pick for a trip after Christmas."
+      },
+      {
+        "name": "Prague — Old Town Square & Wenceslas Square",
+        "dates": "28 November 2026 – 6 January 2027",
+        "desc": "Opens last of the group but runs the longest, all the way to Epiphany. Daily 10:00–22:00. The tree lighting is on opening night, 28 November. If your group can only do January, Prague is one of the only real options left."
+      },
+      {
+        "name": "Budapest — Advent Basilica & Vörösmarty Square",
+        "dates": "Dates not yet published for 2026",
+        "desc": "Two markets, both excellent, and the cheapest food and drink of anywhere on this list. Neither had confirmed 2026 dates when we checked in July 2026. Both have historically opened in mid-November and run into the first days of January — treat that as a pattern, not a booking."
+      },
+      {
+        "name": "Brussels — Winter Wonders / Plaisirs d'Hiver",
+        "dates": "27 November 2026 – 3 January 2027",
+        "desc": "More of a full winter festival than a pure market: chalets, a big wheel, the sound-and-light show on the Grand-Place. Runs deep into January, and it's the easiest one to reach from London, Paris or Amsterdam by direct train."
+      }
+    ]
+  },
+  "routes": {
+    "title": "One City or a Multi-City Route?",
+    "subtitle": "This is the fork your group has to take before booking anything, and the honest answer is that most groups over-reach. Three options that actually work over a weekend.",
+    "option1": {
+      "tag": "The safe one",
+      "title": "One city, properly",
+      "desc": "Pick a single market, arrive Friday evening, leave Sunday afternoon. You get two full evenings, time to eat properly, and nobody spends the weekend dragging a bag to a station. Best for Vienna, Nuremberg or Prague, where one city has more market than you can cover in two days anyway. If it's your group's first trip together, do this one."
+    },
+    "option2": {
+      "tag": "The good one",
+      "title": "The Alsace loop",
+      "desc": "Strasbourg plus Colmar, and one of the small villages if you have a car — Eguisheim or Riquewihr. The trains between Strasbourg and Colmar take about 30 minutes, so it's genuinely doable in a weekend. Sleep in one city, day-trip the other. The catch: it only works from late November, and Strasbourg's 2026 dates aren't out yet."
+    },
+    "option3": {
+      "tag": "The ambitious one",
+      "title": "Two capitals by rail",
+      "desc": "Vienna and Prague, roughly four hours apart by direct train. Both markets are big, both run late in the season, and the overlap window is 28 November to 26 December. Needs three nights minimum — do it over a long weekend or don't do it. Anything more than two cities in a weekend is a train tour, not a trip."
+    }
+  },
+  "midCta": {
+    "title": "Stop comparing dates in a group chat",
+    "subtitle": "Put the weekends side by side, let everyone vote, and lock the city in an afternoon.",
+    "button": "Start free"
+  },
+  "logistics": {
+    "title": "Getting There: Rail Is the Answer",
+    "subtitle": "Almost every market on this list is better reached by train than by plane. Short hops, city-centre to city-centre, no 5am airport run in the dark, and the group stays together the whole way.",
+    "westLabel": "Alsace & the west",
+    "eastLabel": "Central Europe",
+    "gettingThere": "How to get there",
+    "westItems": [
+      "Paris → Strasbourg: about 1h45 by TGV, direct, city centre to city centre. Cheaper than any flight once you count the airport transfers.",
+      "Strasbourg → Colmar: about 30 minutes by TER, trains all day. This is why the Alsace loop works — you don't need a car for the two big towns.",
+      "The Alsace villages (Eguisheim, Riquewihr) need a car or a bus. Decide this before booking: it changes whether you rent, and who drives after the vin chaud.",
+      "Brussels is direct from Paris (1h22), London (2h), Amsterdam (1h50). It's the lowest-effort market weekend on this list.",
+      "Cologne → Brussels is about 1h50 direct. Pairing them over three nights is one of the few multi-city routes that isn't a stretch.",
+      "Book rail 2–3 months out. Prices on the December weekends climb the same way flights do, and Saturday morning trains sell out first."
+    ],
+    "eastItems": [
+      "Vienna → Prague: about 4 hours direct, several times a day, on RegioJet or ÖBB. Cheap if booked ahead, painful if booked on the day.",
+      "Nuremberg → Prague: about 3h30 by direct bus, and often faster than the train. Not glamorous, genuinely efficient.",
+      "Nuremberg → Vienna: about 5 hours by rail via Passau. It's the weakest link if you're trying to chain German and Austrian markets.",
+      "Budapest → Vienna: about 2h30 by railjet, the easiest pairing in central Europe. Both cities are cheap to sleep in compared to Alsace.",
+      "For flights, aim for Vienna, Prague or Budapest airports — all three are well connected and have proper public transport into town.",
+      "Seat reservations matter on December weekends. A group of six standing in a corridor for four hours is a bad start to a weekend."
+    ]
+  },
+  "planning": {
+    "title": "Planning It With a Group",
+    "p1": "The date choice is the whole trip. Because these markets run on different calendars, picking a weekend is picking a destination — and most groups get this backwards, arguing about cities for three weeks before anyone checks who can actually take the Friday off. Do it the other way round: <pollLink>run a poll on the weekends first</pollLink>, get the two or three dates everyone can genuinely make, then look at which markets are open. The list shrinks fast, and the argument mostly disappears with it.",
+    "p2": "September to November is your planning window, and that's not padding. Strasbourg and Vienna hotels for December weekends are effectively gone by late September at any sane price. If you're reading this in October, book the beds this week and sort the itinerary later — accommodation is the only genuinely irreversible decision here. Everything else you can move.",
+    "p3": "Then keep the <itineraryLink>shared itinerary</itineraryLink> deliberately thin. This is the mistake groups make on short city breaks: two days, six people, and someone builds an hour-by-hour plan with nine squares on it. It never survives contact with the first Glühwein stand. Block the things that actually need blocking — the train, the check-in, one dinner reservation per night, and the one market or church everybody agreed they'd regret missing — and leave the rest of each evening genuinely empty. Two anchors a day is plenty. Agree on a meeting point and a time instead of trying to keep six people together in a crowd; the group will split anyway, and it's much more fun when that's the plan rather than an accident.",
+    "p4": "One small thing that saves a lot of grief: agree in advance on what happens if it's miserable. It will rain, or it'll be -4°C and someone will want to be indoors by 6pm. Have one museum, one long lunch or one thermal bath already on the list as a fallback, so the group isn't standing in the wet negotiating from scratch. The <guideLink>group trip guide</guideLink> has the full version of this if you want it."
+  },
+  "budget": {
+    "title": "Splitting a Christmas Weekend",
+    "p1": "Christmas market weekends have a genuinely annoying cost shape: one huge line (the hotel) and then two hundred tiny ones. Vin chaud at €4, a mug deposit, roasted chestnuts, one round of tartiflette, someone's third Glühwein, a wooden decoration for a sister-in-law. Nobody tracks any of it, everyone hands cash around all weekend, and on Sunday night nobody has any idea who's up and who's down. Set up a <budgetLink>shared budget</budgetLink> before you leave, with the accommodation as its own line and one loose \"market\" category for everything else. Then it's one settle at the end instead of forty little ones.",
+    "p2": "The hotel is where the real money is, and where the real decision is. A December weekend in central Strasbourg or Vienna runs two to three times the normal rate, and the sub-€150 rooms disappear around September. Two things fix this. First: a single apartment for six beats three double rooms almost every time, both on price and because you get somewhere to sit that isn't a crowded bar. Second: stay 15 or 20 minutes out on the tram line. Kehl across the German border from Strasbourg, or the outer districts of Vienna, are a fraction of the price and the market is still 20 minutes away.",
+    "p3": "For the rest, Budapest and Prague are meaningfully cheaper on food and drink than Vienna, Strasbourg or Cologne — enough that it can offset a more expensive train. Worth putting on the table if the group's budgets are uneven. And whatever you do, don't let one person front the whole weekend on their card. Rotate who pays for what, log each expense when it happens rather than from memory on the train home, and nobody has to be the accountant."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "When exactly do the 2026 Christmas markets open and close?",
+        "a": "It varies a lot by city, which is exactly why the date matters. Confirmed for 2026: Vienna Rathausplatz 13 November – 26 December; Cologne Cathedral 16 November – 23 December (closed 22 November for Totensonntag); Colmar 23 November – 29 December; Nuremberg 27 November – 24 December; Brussels Winter Wonders 27 November 2026 – 3 January 2027; Prague Old Town and Wenceslas Squares 28 November 2026 – 6 January 2027. Strasbourg and Budapest had not published their 2026 dates as of July 2026."
+      },
+      {
+        "q": "When should I book hotels for a Christmas market weekend?",
+        "a": "September, and that's not us being dramatic. December weekend rooms in Strasbourg, Vienna and Colmar are booked out months in advance, and what's left after October is either far out of town or two to three times the normal rate. Accommodation is the only decision on this trip you genuinely can't reverse later, so lock it first — you can argue about the itinerary in November."
+      },
+      {
+        "q": "Which Christmas market is best for a first group trip?",
+        "a": "Nuremberg or Vienna if you want the classic, big, dense market with everything in walking distance. Colmar if you want the prettiest one and don't mind that it's small. Brussels if the group is spread across several countries, because the direct trains from Paris, London and Amsterdam make it the easiest place to converge. Skip a multi-city route for a first trip — one city over two nights is more than enough, and it's the version people actually enjoy."
+      },
+      {
+        "q": "Can I do Strasbourg and Colmar in the same weekend?",
+        "a": "Yes, and it's the one multi-city route that genuinely works. The two are about 30 minutes apart by TER with trains all day, so you sleep in one and day-trip the other rather than moving hotels. Adding an Alsace village like Eguisheim or Riquewihr means renting a car — decide that before you book, since it also decides who's staying sober."
+      },
+      {
+        "q": "What's the cheapest way to do a Christmas market trip with friends?",
+        "a": "Three things, in order of impact. Take the train instead of flying — for Paris–Strasbourg or Paris–Brussels it's cheaper than a flight once you count the airport transfers, and it's city centre to city centre. Rent one apartment for the whole group instead of separate hotel rooms; six people in one place beats three doubles nearly every time. And go mid-November rather than mid-December — Cologne opens on 16 November and Vienna on 13 November, before the pricing turns nasty."
+      },
+      {
+        "q": "Are there Christmas markets still open after Christmas?",
+        "a": "A few, and they're worth knowing about because most groups assume the season ends on the 24th. Prague runs to 6 January, Brussels to 3 January, Colmar to 29 December, Vienna to 26 December. Nuremberg, Cologne and Strasbourg are done on or before Christmas Eve. If your group can only travel between Christmas and New Year, you're looking at Prague, Brussels or Colmar — and that's the whole list."
+      },
+      {
+        "q": "How many days do you need for a Christmas market trip?",
+        "a": "Two nights is the sweet spot for one city: arrive Friday evening, two full evenings at the market, home Sunday. The markets are evening things — they're at their best after dark, so daytime is for the city itself. Three nights if you're doing two cities. One night isn't a trip, it's a commute with mulled wine."
+      },
+      {
+        "q": "How do you split costs on a weekend of small purchases?",
+        "a": "Log them as they happen, not from memory on the train home. That's the whole trick. Christmas market weekends are death by a thousand €4 vin chauds, and the mug deposits alone will confuse everyone by Sunday. Use a shared budget with the hotel as one line and one catch-all category for market spending, rotate who pays each round, and settle once at the end. WePlanify does the maths so nobody has to be the group treasurer."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "tripWithFriends": {
+      "title": "Trip with Friends",
+      "desc": "Plan any group trip effortlessly.",
+      "cta": "Read more →"
+    },
+    "familyTrip": {
+      "title": "Family Trip",
+      "desc": "Markets are a family classic — plan it without the chaos.",
+      "cta": "Read more →"
+    },
+    "groupGuide": {
+      "title": "Group Trip Guide",
+      "desc": "The complete step-by-step guide.",
+      "cta": "Read the guide →"
+    },
+    "bestApps": {
+      "title": "Best Group Travel Apps",
+      "desc": "Our comparison of the top tools for group trips.",
+      "cta": "Read the article →"
+    }
+  },
+  "cta": {
+    "title": "Lock the Weekend Before the Hotels Go",
+    "subtitle": "Dates, city, hotel, itinerary and the vin chaud budget — one shared plan, your whole group on the same page.",
+    "button": "Start planning free"
+  },
+  "jsonld": {
+    "articleHeadline": "Christmas Markets 2026: The Group Trip Planner With the Real Dates",
+    "howToName": "How to plan a Christmas market trip with a group in 2026",
+    "howToDescription": "Pick the weekend first, let the dates decide the city, book the beds before September is out, keep the itinerary thin and split the vin chaud without a spreadsheet.",
+    "howToSteps": [
+      {
+        "name": "Poll the weekends before you argue about cities",
+        "text": "Every market runs on its own calendar, so the weekend you can all make is what actually decides the destination. Run a poll on two or three candidate weekends first, then look at which markets are open on those dates. The shortlist writes itself."
+      },
+      {
+        "name": "Book accommodation immediately — it's the only irreversible step",
+        "text": "December rooms in Strasbourg, Vienna and Colmar sell out by late September and run two to three times normal rates. Lock one apartment for the whole group, or stay 20 minutes out on the tram line. Everything else on this trip can be changed later."
+      },
+      {
+        "name": "Build a deliberately thin itinerary",
+        "text": "Two days, six people, and an hour-by-hour plan is a recipe for a bad weekend. Block the train, the check-in, one dinner per night and the one thing everybody agreed on. Two anchors a day, and leave the evenings genuinely open."
+      },
+      {
+        "name": "Set up the shared budget before you leave",
+        "text": "One huge line for the hotel and a hundred tiny ones for vin chaud, mug deposits and chestnuts. Put the accommodation on its own line, use one catch-all category for market spending, rotate who pays each round, and settle once at the end."
+      }
+    ]
+  }
+}

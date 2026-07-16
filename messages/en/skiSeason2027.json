@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Ski Season 2026-27 Trip Planner — Group Ski Trips",
+    "description": "Free planner for the 2026-27 group ski trip. Pick the right week (French February holidays run 6 Feb to 8 Mar 2027), compare resorts, and split the chalet, lift passes, rental and food fairly — without one person fronting everything."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Ski Season 2026-27 Trip Planner"
+  },
+  "hero": {
+    "tag": "Free trip planner · Ski season 2026-27",
+    "title": "Ski Season 2026-27: Plan the Group Trip Without the Money Mess",
+    "readTime": "9 min read"
+  },
+  "heroBody": "The Alps open on 21 November 2026 and the highest resorts stay open until 2 May 2027. Somewhere in those five months is your week with the crew — and picking it is the single decision that decides everything else. A group ski trip is the most logistically brutal trip there is: one chalet booked four to six months ahead, paid as one lump sum that somebody has to front, then lift passes, rental, food and fuel that all split differently because not everyone skis, not everyone rents, and not everyone drives. This is how to run it. Still picking your tools? See our <link>comparison of group travel apps</link>.",
+  "facts": {
+    "title": "The 2026-27 season in four numbers",
+    "seasonLabel": "Season",
+    "seasonValue": "21 Nov → 2 May",
+    "seasonNote": "Tignes, Val Thorens and Orelle open 21 Nov 2026; Tignes and Val Thorens plan to close 2 May 2027",
+    "holidaysLabel": "Peak weeks",
+    "holidaysValue": "6 Feb → 8 Mar",
+    "holidaysNote": "French February school holidays 2027 across zones C, A and B — the most expensive four weeks of the season",
+    "passLabel": "6-day pass",
+    "passValue": "€421",
+    "passNote": "3 Vallées adult 6-day pass from 19 Dec 2026 — €378.90 in the 5-18 Dec and 10-18 Apr windows",
+    "bookLabel": "Book by",
+    "bookValue": "Sep-Nov",
+    "bookNote": "Ski accommodation is booked 4-6 months ahead; the good chalets for February go in autumn"
+  },
+  "problem": {
+    "p1": "Here's how it actually goes. Someone finds a chalet in September. It sleeps eight, it's €X for the week, and the owner wants a deposit within 48 hours. One person puts down their card. By December two people have dropped out, one friend has invited a cousin nobody knows, and the person who fronted €2,400 is still waiting on four bank transfers. Then you get there: three people buy 6-day passes, one buys a 3-day, one doesn't ski at all and just wants the spa. Two people own their gear, four rent. Two cars split fuel and tolls unevenly. Everyone buys a round. And on the last night someone opens a notes app and tries to reconstruct a week of spending from memory.",
+    "p2": "It's not that the maths is hard. It's that nobody has the same picture of what was spent, by whom, for whom. A ski trip has more shared-but-unequal lines than any other kind of <link>trip with friends</link> — which is exactly why it falls apart.",
+    "p3": "WePlanify is the free shared plan for group ski trips: one place for the week you picked, the chalet, who's in, who owes what, and who's already paid."
+  },
+  "toc": {
+    "title": "On this page",
+    "when": "When to go: the price calendar",
+    "resorts": "Which resort for your group",
+    "budget": "What a ski week actually costs",
+    "group": "Planning it with a group",
+    "faq": "Frequently asked questions"
+  },
+  "when": {
+    "title": "When to Go: The 2026-27 Price Calendar",
+    "subtitle": "The week you pick moves your total cost more than the resort, the chalet or anything else you'll argue about. Here are the six windows of the season, in order.",
+    "priceLabel": "Price",
+    "windows": [
+      {
+        "window": "Opening weeks",
+        "dates": "21 Nov – 18 Dec 2026",
+        "price": "Lowest of the season",
+        "verdict": "Tignes, Val Thorens and Orelle open on 21 November, Val d'Isère, Les 2 Alpes and Chamonix follow on 28 November, Courchevel on 5 December, Méribel and Les Menuires on 6 December. High altitude only, and the lower half of most domains isn't running yet. But the 3 Vallées 6-day pass costs €378.90 instead of €421 in the 5-18 December window, and accommodation is at its cheapest all season. If your crew skis rather than sunbathes, this is the value week nobody books."
+      },
+      {
+        "window": "Christmas and New Year",
+        "dates": "19 Dec 2026 – early Jan 2027",
+        "price": "Peak",
+        "verdict": "Full-price passes (€421 for six days in the 3 Vallées from 19 December), peak accommodation, and family demand across all of Europe at once. Snow at low altitude is a lottery in December. Unless the group specifically wants to be in a resort at New Year, this window is money badly spent."
+      },
+      {
+        "window": "January",
+        "dates": "Early Jan – 5 Feb 2027",
+        "price": "Low accommodation, full-price pass",
+        "verdict": "The connoisseur's window. Every resort is fully open, the snow base is usually established, the slopes are empty, and accommodation prices collapse between the New Year crowd and the February holidays. The lift pass is full price, but the chalet — your biggest line — is at its cheapest with everything running. If your group has no school-age kids, this is the answer."
+      },
+      {
+        "window": "February school holidays",
+        "dates": "6 Feb – 8 Mar 2027",
+        "price": "Highest of the season",
+        "verdict": "Four consecutive weeks where the three French zones rotate through: zone C from 6 February, zone A from 13 February, zone B from 20 February, the last of them back at school on 8 March. Add the Swiss, British, Dutch and Belgian holidays and you get the full-price everything, queues at every lift, and chalets at two to three times a January rate. If you're a group of adults, avoid these four weeks and you've cut your budget more than any other decision on this page."
+      },
+      {
+        "window": "March",
+        "dates": "9 Mar – 9 Apr 2027",
+        "price": "Mid",
+        "verdict": "The underrated window. The snow base is at its deepest after a full winter, the days are long, the terraces are warm and the holiday crowds are gone. Accommodation drops back to shoulder rates the week after the last zone goes back to school. For a group that wants skiing plus actual daylight on the terrace, March beats February on every axis except powder odds."
+      },
+      {
+        "window": "End of season",
+        "dates": "10 Apr – 2 May 2027",
+        "price": "Lowest of the season",
+        "verdict": "The 3 Vallées 6-day pass drops back to €378.90 for 10-18 April, and Tignes and Val Thorens plan to run until 2 May 2027. Snow gets patchy below ~2,000m and lower resorts start closing sectors, so this window only works at altitude. But you'll ski in a t-shirt, pay opening-week prices, and have the mountain to yourselves."
+      }
+    ],
+    "zonesNote": "French school-holiday zones for 2027: zone C is Paris, Créteil, Versailles, Montpellier and Toulouse (6-22 February); zone A is Grenoble, Lyon, Bordeaux, Dijon, Besançon, Clermont-Ferrand, Limoges and Poitiers (13 February-1 March); zone B is Lille, Nice, Aix-Marseille, Nantes, Rennes, Strasbourg, Nancy-Metz, Reims, Amiens, Rouen/Caen and Orléans-Tours (20 February-8 March). If your group spans several zones, the overlap weeks are the ones everyone can do — and the ones everyone else is doing too. Opening dates and closing dates are the resorts' published plans and always move with the snow."
+  },
+  "resorts": {
+    "title": "Which Resort for Your Group",
+    "subtitle": "Three honest profiles. Pick the one that matches what your group actually optimises for — not the one with the best photos.",
+    "cards": [
+      {
+        "tag": "Option A",
+        "title": "High-altitude, big domain",
+        "subtitle": "Tignes, Val Thorens, Val d'Isère, Les 2 Alpes",
+        "pros": [
+          "Snow guaranteed from late November to late April",
+          "Open earliest (21-28 Nov 2026) and latest (to 2 May 2027)",
+          "Huge linked domains — mixed-ability groups all find terrain",
+          "Ski-in ski-out lodging is the norm, so no daily shuttle logistics"
+        ],
+        "cons": [
+          "Priciest lodging and priciest passes",
+          "Purpose-built architecture, not postcard villages",
+          "Above the treeline: a whiteout day means no visibility anywhere"
+        ],
+        "verdict": "The right call if you're going early, late, or if snow anxiety would ruin the trip."
+      },
+      {
+        "tag": "Option B",
+        "title": "Mid-altitude classic",
+        "subtitle": "Courchevel, Méribel, Les Menuires, La Plagne, Alpe d'Huez",
+        "pros": [
+          "Best balance of domain size, atmosphere and price",
+          "Tree-lined runs that stay skiable in bad visibility",
+          "Real villages, real restaurants, something to do off the snow",
+          "Wide range of lodging — the same resort can suit two budgets"
+        ],
+        "cons": [
+          "Opens later (5-6 Dec 2026 for the 3 Vallées villages)",
+          "Lower sectors depend on snowmaking in December and April",
+          "Peak-week queues in the linked-domain bottlenecks"
+        ],
+        "verdict": "The default for a January or March group week. Hard to get wrong."
+      },
+      {
+        "tag": "Option C",
+        "title": "Small resort, big savings",
+        "subtitle": "Smaller domains, valley villages, Pyrenees and Vosges",
+        "pros": [
+          "Lodging and passes a fraction of the marquee resorts",
+          "Short lift queues even in February",
+          "Drivable from more of France — fuel split beats flying",
+          "Beginners aren't paying for 600km of pistes they'll never ski"
+        ],
+        "cons": [
+          "Limited terrain — strong skiers get bored by day three",
+          "More snow risk, shorter season",
+          "Fewer options if the weather closes the top lifts"
+        ],
+        "verdict": "The smart pick when half the group is learning, or when the trip is really about the group."
+      }
+    ],
+    "levelsTitle": "The mixed-ability problem nobody plans for",
+    "levelsBody": "Every group has one person who wants to be first on the lift and off-piste by 10am, and one who's on skis for the third time in their life. Left alone, that gap ruins both their weeks: the strong skier spends five days on green runs resenting it, the beginner spends five days terrified and pretending not to be. Sort it before you book, not on the first chairlift. <link>Run a poll</link> on the actual questions — how many ski days does each person want, who wants lessons, who wants a rest day, is anybody not skiing at all — because the answers change the resort, the pass length everyone buys, and the budget. A person who skis two days out of six should not be buying a 6-day pass, and shouldn't be discovering that on day one."
+  },
+  "midCta": {
+    "title": "Get the week locked before the chalets go",
+    "subtitle": "Pick the dates, see who's actually in, and start the shared budget before anyone fronts a deposit.",
+    "button": "Start planning — free"
+  },
+  "budget": {
+    "title": "What a Ski Week Actually Costs",
+    "subtitle": "Five lines, five different ways of splitting. This is the section that decides whether your friendships survive the trip.",
+    "splitLabel": "Splits",
+    "lines": [
+      {
+        "item": "Lodging",
+        "amount": "Biggest line, by far",
+        "split": "By bed, not by head",
+        "gotcha": "Booked four to six months out, paid as one lump sum by one person. That person is now the group's bank with no repayment schedule. The same chalet can cost two to three times more in the February holidays than in January — the week you pick moves this number more than the resort does. Split by bed: the couple sharing a double and the person in the bunk room under the stairs are not paying the same."
+      },
+      {
+        "item": "Lift pass",
+        "amount": "€421 / 6 days",
+        "split": "Individually, never pooled",
+        "gotcha": "The 3 Vallées adult 6-day pass is €421 from 19 December 2026, and €378.90 in the 5-18 December and 10-18 April windows. Everyone buys their own, for their own number of days — this line must never go in the shared pot, because the person who skis two days ends up subsidising the person who skis six."
+      },
+      {
+        "item": "Equipment rental",
+        "amount": "€90-150 / week",
+        "split": "Individually",
+        "gotcha": "A standard adult pack — skis, boots, poles, helmet — runs roughly €90 to €150 for the week, more for performance gear. Half your group owns their kit and pays nothing here, which is exactly why it can't be a pooled cost. Book online before you leave: walking into a rental shop on the Saturday of a holiday week is the expensive way."
+      },
+      {
+        "item": "Food and drink",
+        "amount": "Rolling, unequal, endless",
+        "split": "Shared pot + individual",
+        "gotcha": "The one that quietly generates the most resentment. The big supermarket run at the bottom of the valley, the shared dinners at the chalet, the €18 tartiflette on the terrace, the rounds. Separate them: groceries and group dinners into the shared pot, everything on the mountain stays individual. Log each expense the day it happens, with who paid and who it covered."
+      },
+      {
+        "item": "Getting there",
+        "amount": "Depends entirely on how",
+        "split": "By car, not by person",
+        "gotcha": "Two cars, four passengers each, one drives a diesel estate and one drives an EV, tolls on one route only, and the person who drove also paid for the parking. Split fuel and tolls per vehicle among that vehicle's passengers. If some fly to Geneva or Lyon and take a transfer, that's their line — don't pool it with the drivers'."
+      }
+    ],
+    "p1": "The rule that saves ski trips: nothing goes in the shared pot unless every single person benefits equally from it. That's the chalet, the groceries, the group dinners, the fuel per car. Everything else — passes, rental, lessons, lunches on the mountain, the spa afternoon for the two who don't ski — is individual and stays individual. Set up a <link>shared budget</link> with a category per line before you leave, and let everyone log their own expenses as they happen. The friend who fronted the chalet deposit in October should not still be chasing transfers in March.",
+    "p2": "Deal with the deposit properly. Somebody puts €2,000 or more on their card in autumn for a trip that happens in February, and that's a real four-month loan between friends that nobody ever calls a loan. Log it as an expense on the day it's paid, with the other participants marked as owing their share, and ask for the transfers then — while the trip is exciting and everyone's motivated. Not in the airport car park on the way home.",
+    "p3": "Then agree the cancellation rule before anyone pays anything. Someone will drop out — that's not pessimism, that's every group trip ever. Decide, in writing, in the plan, whether their share is refunded, whether they cover it until a replacement is found, or whether the group absorbs it. Thirty seconds of agreement in September prevents the worst conversation of the year in January."
+  },
+  "pullQuote": "The week decides the budget. The split decides the friendships. Everything else is just skiing.",
+  "group": {
+    "title": "Planning It With a Group",
+    "p1": "Start in September, not in December. Ski accommodation is booked four to six months ahead — the good chalets for the February weeks are gone by autumn, and by December you're choosing between a place too far from the lifts, a resort nobody wanted, or paying a premium for both. But you can't book until you know who's coming, and you can't know who's coming until you've picked the week. So start there: <link>run a poll</link> on three or four candidate weeks, with the price context attached to each — people choose very differently when they can see that the February week costs double. Get real commitments, then book.",
+    "p2": "A ski week has a rhythm the group needs to agree on, not just a location. What time do we leave the chalet? Do we ski together or split by level and meet for lunch? Who's cooking on which night? Is there a rest day mid-week and does everyone take it? Put the whole thing in a <link>shared itinerary</link> — including the drive up, the Saturday changeover-day traffic on the way in, the rental shop appointment and the supermarket run. Ski resorts on a Saturday in the holidays are the worst traffic in Europe. Plan the arrival like a leg of the trip, because it is one.",
+    "p3": "Assign the shared kit like you'd assign anything else. One raclette machine, not four. Chains or winter tyres in each car — mandatory in the mountain communes, and the fine is not the point, the point is getting up the last 15 kilometres. Someone brings the speaker, someone brings the board games for the whiteout day, someone brings the first-aid kit. A shared list with names against items prevents the classic arrival where you have three cheese boards and no corkscrew.",
+    "p4": "Everything above is just the ski-specific version of the same problem every group trip has: too many decisions, too many payers, no shared source of truth. If you want the general method — how to get a group from a WhatsApp thread to a booked trip without one person doing all the work — we've written the whole thing up in our <link>complete guide to planning a group trip</link>."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "When does the 2026-27 ski season open in the Alps?",
+        "a": "Tignes, Val Thorens and Orelle plan to open first, on 21 November 2026, thanks to their glacier access and high-altitude exposure. Val d'Isère, Les 2 Alpes and Chamonix follow on 28 November, Courchevel and La Tania on 5 December, and Méribel and Les Menuires on 6 December 2026. Most other French resorts open through mid-December. At the other end, Tignes and Val Thorens plan to run until 2 May 2027, and Les 2 Alpes keeps its glacier open into the summer. All of these dates are the resorts' published plans and always move with the snow."
+      },
+      {
+        "q": "When are the French February school holidays in 2027?",
+        "a": "Zone C (Paris, Créteil, Versailles, Montpellier, Toulouse) runs from 6 to 22 February 2027. Zone A (Grenoble, Lyon, Bordeaux, Dijon, Besançon, Clermont-Ferrand, Limoges, Poitiers) runs from 13 February to 1 March. Zone B (Lille, Nice, Aix-Marseille, Nantes, Rennes, Strasbourg, Nancy-Metz, Reims, Amiens, Normandy, Orléans-Tours) runs from 20 February to 8 March. That means resorts are in peak mode for four straight weeks, from 6 February to 8 March 2027 — the most expensive stretch of the season."
+      },
+      {
+        "q": "What's the cheapest week to ski in 2026-27?",
+        "a": "Two windows. The opening weeks (5-18 December 2026) and the end of the season (10-18 April 2027) are when the 3 Vallées 6-day adult pass costs €378.90 instead of €421, and accommodation is at its cheapest. The catch is snow cover: in early December only the high-altitude resorts are fully open, and in mid-April the lower sectors are closing. Both work well if you go high — Tignes, Val Thorens, Val d'Isère, Les 2 Alpes. The third option, and the best all-round one, is January: full-price passes but cheap accommodation with every lift running."
+      },
+      {
+        "q": "How much does a group ski week cost per person?",
+        "a": "It depends almost entirely on the week and the lodging, which is why we won't give you a fake average. The fixed parts you can plan around: a 3 Vallées 6-day adult pass is €421 (€378.90 in the early-December and mid-April windows), and a standard rental pack of skis, boots, poles and helmet is roughly €90-150 for the week. Lodging is the biggest and most variable line — the same chalet can cost two to three times more during the February holidays than in January. Then food, fuel and lessons on top. Build it line by line in a shared budget rather than guessing a per-person number."
+      },
+      {
+        "q": "How do you split the cost of a chalet fairly?",
+        "a": "By bed, not by head. Someone in a private double with an en-suite and someone in a bunk in the converted attic are not getting the same thing and shouldn't pay the same. Agree the per-room allocation before you book, not after everyone's picked their room on arrival. And log the deposit as an expense on the day it's paid — the person who fronted €2,000 in October is a creditor from that day, not from the day you get home."
+      },
+      {
+        "q": "Should the lift pass go in the group budget?",
+        "a": "No. Never. It's the single most common ski-trip mistake. Lift passes vary by person — 6-day, 3-day, beginner area only, none at all for the person who came for the spa — so pooling them means the light skiers subsidise the heavy ones, and nobody says anything until the last night. Same for rental: half the group owns their gear. Passes, rental and lessons are individual lines. The shared pot is for the chalet, the groceries, the group dinners and the fuel."
+      },
+      {
+        "q": "How do you handle a group with very different skiing levels?",
+        "a": "Decide it before you book, because it changes the resort. A big high-altitude domain gives everyone terrain but costs the most; a smaller resort is cheaper and less intimidating for beginners but bores strong skiers by day three. Ask everyone up front how many days they actually want to ski and whether they want lessons — the answers usually reveal that the group is more mixed than anyone assumed. Then plan the week so people ski by level and meet for lunch, rather than forcing one group pace that suits nobody."
+      },
+      {
+        "q": "When should we book a ski trip for the 2026-27 season?",
+        "a": "September to November, and earlier for the February weeks. Ski accommodation is typically booked four to six months ahead, so the search starts in late summer and the best places for the school-holiday weeks are gone by autumn. The order matters: pick the week first, confirm who's actually in with a poll, then book — because a chalet booked before you know the numbers is how one person ends up carrying two empty beds."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "tripWithFriends": {
+      "title": "Trip with Friends",
+      "desc": "Plan any group trip without doing all the work yourself.",
+      "cta": "Read more →"
+    },
+    "groupGuide": {
+      "title": "Group Trip Guide",
+      "desc": "The complete step-by-step method, from group chat to booked.",
+      "cta": "Read the guide →"
+    },
+    "worldCup": {
+      "title": "World Cup 2026 Planner",
+      "desc": "Follow your team across 16 host cities with the crew.",
+      "cta": "Read more →"
+    },
+    "bestApps": {
+      "title": "Best Group Travel Apps",
+      "desc": "Our comparison of the top tools for group trips.",
+      "cta": "Read the article →"
+    }
+  },
+  "cta": {
+    "title": "Plan Your 2026-27 Ski Trip",
+    "subtitle": "The week, the chalet, who's in, who owes what — one shared plan your whole crew can see.",
+    "button": "Start planning — free"
+  },
+  "jsonld": {
+    "articleHeadline": "Ski Season 2026-27: How to Plan the Group Ski Trip",
+    "howToName": "How to plan a group ski trip for the 2026-27 season",
+    "howToDescription": "Pick the week using the season's price calendar, confirm who's really coming before booking, plan the week as a group, and split the chalet, passes, rental and food so nobody ends up fronting the trip.",
+    "howToSteps": [
+      {
+        "name": "Pick the week before anything else",
+        "text": "The week moves your total cost more than the resort does. The French February school holidays run from 6 February to 8 March 2027 across the three zones and are the season's peak; January and the opening weeks from 21 November 2026 are the value windows. Choose the week first — everything else follows from it."
+      },
+      {
+        "name": "Confirm who is actually coming, with a poll",
+        "text": "Never book a chalet before you know the numbers. Poll the group on candidate weeks with the price attached to each, ask how many ski days each person wants and who needs lessons, and get real commitments. A chalet booked on assumptions is how one person ends up paying for two empty beds."
+      },
+      {
+        "name": "Book in September to November",
+        "text": "Ski accommodation is booked four to six months ahead and the best places for the holiday weeks are gone by autumn. Book the lodging, then the rental online, then plan the drive up — a shared itinerary that includes the Saturday changeover traffic, the rental shop slot and the supermarket run."
+      },
+      {
+        "name": "Split by category, not by headcount",
+        "text": "Only the chalet, the groceries, the group dinners and the fuel per car go in the shared pot — the chalet split by bed, not by head. Lift passes, rental, lessons and lunches on the mountain stay individual, because not everyone skis the same number of days and not everyone rents. Log the deposit as an expense the day it's paid."
+      }
+    ]
+  }
+}

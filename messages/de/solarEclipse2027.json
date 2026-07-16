@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "title": "Sonnenfinsternis 2.8.2027: Reiseplaner Ägypten & Spanien",
+    "description": "Plant die totale Sonnenfinsternis am 2. August 2027 als Gruppe: 6 min 23 s Totalität über Luxor, Ägypten oder Spanien, Nilkreuzfahrt, Schutzbrillen und Budget."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "Reiseplaner Sonnenfinsternis 2027"
+  },
+  "hero": {
+    "tag": "Astrotourismus-Guide & Gruppenreiseplaner · August 2027",
+    "title": "Totale Sonnenfinsternis am 2. August 2027: Reiseplaner für Ägypten & Spanien",
+    "intro": "Montag, 2. August 2027. Der Mondschatten trifft im Atlantik auf, streift Südspanien und Gibraltar, zieht über Marokko, Algerien, Tunesien und Libyen und erreicht schließlich Oberägypten – wo die Totalität auf der Zentrallinie 6 Minuten 23 Sekunden dauert, mit der Sonne fast senkrecht über euch. Nach den Berechnungen von Fred Espenak ist das die längste Totalität, die bis zum 3. Juni 2114 von leicht erreichbarem Land aus zu sehen ist. Luxor ist das Herzstück – und bis dahin sind es nur noch rund zwölf Monate. Genau deshalb müssen die Entscheidungen in der Gruppe jetzt fallen und nicht erst im Frühjahr. Dieser Guide klärt alles: Ägypten oder Spanien, die Frage Nilkreuzfahrt, die Sicherheitsausrüstung und wie ihr eine Gruppe über ein ganzes Planungsjahr zusammenhaltet. Falls ihr noch nach dem passenden Tool sucht: hier unser <apps>Vergleich der Gruppenreise-Apps</apps>.",
+    "readTime": "12 Min. Lesezeit",
+    "ctaButton": "Unsere Finsternis-Reise planen",
+    "ctaNote": "Kostenlos · für Gruppen gemacht · 8 Sprachen"
+  },
+  "facts": {
+    "heading": "Fakten zur Finsternis",
+    "dateLabel": "Datum",
+    "dateValue": "Mo., 2. Aug.",
+    "totalityLabel": "Max. Totalität",
+    "totalitySub": "Zentrallinie, Oberägypten",
+    "pathLabel": "Pfad",
+    "pathSub": "insgesamt 10 Länder",
+    "nextLabel": "Nächste längere",
+    "nextSub": "3. Juni 2114"
+  },
+  "stakes": {
+    "p1": "Die meisten totalen Finsternisse geben dir zwei Minuten und eine Wette aufs Wetter. Diese hier ist in beiden Punkten anders. Auf der ägyptischen Zentrallinie dauert die Totalität 6 Minuten 23 Sekunden, in Luxor selbst 6 Minuten 22 Sekunden – bei einer Sonne 81,7° über dem Horizont, also fast im Zenit. Deshalb steht die Korona in einem wirklich dunklen Himmel und nicht in einem Sonnenuntergangsglühen. Die zweite Hälfte der Geschichte ist die Klimatologie: Finsternis-Meteorologe Jay Anderson schreibt, über Libyen und Ägypten seien „Wolken in den Sommermonaten nahezu unbekannt“ und die Bewölkung bei dieser Finsternis gehöre „zu den geringsten, die ich in den letzten 45 Jahren ausgewertet habe“. Der Haken: Jeder, der Finsternissen hinterherreist, weiß das längst. Premium-Veranstalter verkaufen Luxor seit 2024. Die andere ehrliche Option ist Südspanien – Tarifa, Algeciras, Gibraltar und Ceuta bekommen 4½ Minuten, zwei Flugstunden von fast überall in Europa, und es ist die natürliche Fortsetzung der <sibling>Finsternis vom 12. August 2026 über Island und Spanien</sibling>. Ägypten oder Spanien ist eine echte Weggabelung – und eine Gruppenentscheidung, keine Einzelentscheidung.",
+    "p2": "WePlanify ist die kostenlose gemeinsame Kommandozentrale für eure Jagd auf diese Finsternis: die Umfrage Ägypten gegen Spanien, das Budget, das wirklich alle stemmen können, Anzahlungen über zwölf Monate verteilt und der Minutenplan für den Finsternistag – alles an einem Ort."
+  },
+  "toc": {
+    "title": "Auf dieser Seite",
+    "path": "Der Pfad der Totalität",
+    "where": "Ägypten, Spanien oder Nilkreuzfahrt",
+    "safety": "Sicherheit, Brillen & Hitze",
+    "logistics": "Anreise & Unterkunft",
+    "planning": "Planung über 12 Monate",
+    "budget": "Budget-Tipps",
+    "faq": "Häufige Fragen"
+  },
+  "path": {
+    "title": "Der Pfad der Totalität",
+    "subtitle": "Der Kernschatten berührt die Erde erstmals um 08:23 UTC im Atlantik und verlässt den Planeten um 11:50 UTC über dem Indischen Ozean. Dazwischen liegen zehn Länder – und die Dauer verdreifacht sich von einem Ende zum anderen fast.",
+    "items": [
+      {
+        "stop": "Atlantik – erster Kontakt",
+        "desc": "Der Kernschatten setzt um 08:23:25 UTC auf dem offenen Atlantik auf, bei etwa 28°N 44°W. Dort gibt es nichts zu sehen außer Wasser; danach rast der Schatten nach Ostsüdost Richtung Straße von Gibraltar und gewinnt dabei die ganze Zeit an Dauer."
+      },
+      {
+        "stop": "Spanien & Gibraltar – das europäische Ende",
+        "desc": "Landfall in Andalusien gegen 10:47 MESZ, mit der Sonne rund 38° über dem Horizont. Ceuta bekommt 4 min 48 s, Tarifa 4 min 38 s, Algeciras 4 min 27 s, Gibraltar 4 min 25 s, Melilla 4 min 32 s. Weiter die Küste entlang fallen die Werte rasant: Marbella 3 min 16 s, Cádiz etwa 2 min 51 s, Málaga nur rund 1 min 49 s, Jerez etwa 1 min 36 s. Die Zentrallinie verfehlt das spanische Festland komplett – nur der Nordrand des Pfads streift Andalusien, eine kurze Autofahrt verändert das Ergebnis also enorm. Sevilla (98,4 %), Granada (99,2 %), Huelva (98,2 %) und die Stadt Almería sehen nur eine tiefe partielle Phase und überhaupt keine Totalität."
+      },
+      {
+        "stop": "Marokko – Tanger & Tétouan",
+        "desc": "Der Schatten überquert die Meerenge in Minuten. Tanger und Tétouan bekommen beide 4 min 50 s – etwas mehr als jeder Ort in Spanien – um 08:47 UTC bei einer Sonne von rund 38°. Chefchaouen bekommt 4 min 13 s, Al Hoceima 4 min 24 s, Nador 4 min 15 s. Rabat (98,1 %), Fès (97,9 %) und Casablanca (96,8 %) sehen nur eine partielle Phase. Achtung: Marokko ist im September 2026 ganzjährig zu GMT zurückgekehrt, die lokale Uhrzeit entspricht hier also UTC – etliche Finsternis-Seiten veröffentlichen diese Zeiten immer noch eine Stunde zu spät."
+      },
+      {
+        "stop": "Algerien, Tunesien & Libyen – die leere Mitte",
+        "desc": "Die Spur zieht sich durch ganz Nordafrika, und hier klettert die Dauer über fünf Minuten, während die Klimatologie fast absurd gut wird. Andersons Bemerkung, „Wolken sind in den Sommermonaten nahezu unbekannt“ über Libyen und Ägypten, gilt für diesen ganzen Abschnitt. In der Praxis sind es Zugang, Infrastruktur und Reisehinweise – nicht das Wetter –, die diesen Teil für eine normale Gruppe ausschließen."
+      },
+      {
+        "stop": "Ägypten – Luxor und die Zentrallinie (das Hauptereignis)",
+        "desc": "Luxor: Die Totalität beginnt um 13:02:14, Maximum 13:05:26, Ende 13:08:36 Ortszeit (EEST, UTC+3) – 6 Minuten 22 Sekunden bei einer Sonne 81,7° hoch. Die größte Dauer des gesamten Pfads, 6 min 23,2 s, liegt rund 195 km nordwestlich von Luxor nahe Sohag; der davon getrennte Punkt der größten Finsternis (6 min 22,6 s) liegt etwa 58 km ostsüdöstlich der Stadt. Der praktische Punkt: Luxor liegt bereits wenige Sekunden vom theoretischen Maximum entfernt – es gibt also keinen Grund, der Zentrallinie hinterherzujagen. Sohag bekommt ebenfalls 6 min 22 s, Qena 6 min 10 s, Asyut 6 min 06 s, Marsa Alam 5 min 28 s. Assuan liegt nicht im Pfad – dort sind maximal 99,83 % partiell drin, ebenso wie in Hurghada (98,5 %) und Kairo (94,8 %)."
+      },
+      {
+        "stop": "Sudan bis Indischer Ozean – das Ende",
+        "desc": "Der Pfad streift eine abgelegene, straßenlose Ecke im Nordosten des Sudan, überquert dann das Rote Meer nach Saudi-Arabien – Mekka liegt mit rund 5 Minuten Totalität im Pfad – und danach Jemen und Somalia. Über dem Indischen Ozean hebt der Kernschatten um 11:49:53 UTC von der Erde ab."
+      }
+    ]
+  },
+  "where": {
+    "title": "Ägypten, Spanien oder Nilkreuzfahrt",
+    "subtitle": "Drei ehrliche Optionen mit wirklich unterschiedlichen Kompromissen. An dieser einen Entscheidung hängt die ganze Reise – und sie spaltet Gruppen am ehesten. Trefft sie also bewusst.",
+    "option1": {
+      "tag": "Option 1",
+      "title": "Luxor, an Land",
+      "desc": "Das Maximum an Erlebnis: 6 min 22 s, Sonne 81,7° im Zenit und eine Klimatologie, die Anderson zu den wolkenärmsten zählt, die er in 45 Jahren ausgewertet hat – in Luxor beginnt der Bewölkungsanteil überhaupt erst, über null zu klettern. Dazu gibt es links und rechts der Finsternis das Tal der Könige und Karnak. Kompromisse: Langstrecke, im Schnitt 42 °C am 2. August, und das Premium-Segment der Unterkünfte verkauft bereits seit 2024."
+    },
+    "option2": {
+      "tag": "Option 2",
+      "title": "Nilkreuzfahrt",
+      "desc": "Ein Schiff ist ein schwimmendes Hotel – das umgeht den Zimmerengpass in Luxor elegant und ist zugleich die Sightseeing-Reise. Die gecharterte Finsternis-Kreuzfahrt von Sky & Telescope war für $6,950–$12,750 pro Person gelistet, und mehrere Veranstalter melden ihre Boote für 2027 bereits als ausgebucht. Kompromisse: mit Abstand die teuerste Stufe, feste Route, und die Gruppe muss sich sehr früh festlegen – inklusive Anzahlungen."
+    },
+    "option3": {
+      "tag": "Option 3",
+      "title": "Südspanien oder Tanger",
+      "desc": "Tarifa (4 min 38 s), Algeciras, Gibraltar (4 min 25 s) oder Ceuta (4 min 48 s) – Kurzstreckenflug, kein Visum für EU-Reisende, und in Cádiz scheint an rund 88 % der Tage Anfang August die Sonne. Tanger bekommt 4 min 50 s und liegt eine Fährstunde von Tarifa entfernt. Kompromisse: rund 90 Sekunden weniger Totalität, eine Sonne bei 38° statt im Zenit, und die Stadt Málaga selbst kommt auf unter zwei Minuten – ihr müsst nach Südwesten fahren."
+    },
+    "outro": "Es gibt hier keine falsche Antwort, nur die Lücke zwischen dem, was eine Gruppe zu wollen behauptet, und dem, was sie am Ende wirklich zahlt. Wenn die ehrliche Antwort lautet „wir wollen eine totale Finsternis, aber kein Langstreckenbudget“, dann ist Südspanien eine richtig gute Reise und kein Trostpreis. Und falls 2027 komplett außer Reichweite liegt: Die <sibling>Finsternis vom 12. August 2026 über Island und Nordspanien</sibling> kommt vorher und ist von Europa aus viel günstiger zu erreichen."
+  },
+  "midCta": {
+    "title": "Ägypten oder Spanien?",
+    "subtitle": "Legt der Gruppe jetzt beide Optionen vor – zwölf Monate vorher ändert die Antwort noch etwas.",
+    "button": "Umfrage starten"
+  },
+  "safety": {
+    "title": "Sicherheit, Brillen & Hitze",
+    "subtitle": "Zwei echte Gefahren auf dieser Reise – und keine davon ist die Finsternis selbst. Die eine ist der ungeschützte Blick in die partielle Phase. Die andere sind 42 °C mittags.",
+    "card1": {
+      "title": "ISO-12312-2-Brillen – das Einzige, was funktioniert",
+      "desc": "Ihr braucht Sonnenfinsternisbrillen nach ISO 12312-2:2015, gekennzeichnet direkt auf dem Filter, in Europa zusätzlich mit CE-Zeichen. Sonst qualifiziert sich nichts: keine zwei oder drei übereinandergelegten Sonnenbrillen, kein Rußglas, keine belichteten Fotonegative, kein Schweißerglas unter Schutzstufe 14. Eine Solar-Retinopathie ist schmerzfrei – die Netzhaut hat keine Schmerzrezeptoren –, es gibt also kein Warnsignal, das dich wegschauen lässt, und der Schaden kann bleiben. Brillen altern: Tauscht jedes Exemplar aus, das älter als drei Jahre ist, und prüft vor der Abreise auf Kratzer oder Löcher. Kauft eine zertifizierte Brille pro Person plus eine Ersatzbrille je vier Leute, bei einem Händler, den ihr benennen könnt – und lange vor dem Ansturm. Während der Totalität, und nur wenn ihr wirklich im Pfad steht, dürft und sollt ihr mit bloßem Auge schauen. In dem Moment, in dem der erste Sonnensplitter zurückkommt, kommt die Brille wieder auf."
+    },
+    "card2": {
+      "title": "Die Hitze in Oberägypten ist eine echte Gefahr",
+      "desc": "Andersons Wert für Luxor: im Schnitt 42,0 °C Höchsttemperatur am 2. August über die letzten 17 Jahre, mit sehr geringer Schwankung von Jahr zu Jahr und einem Rekord von 46 °C. Die Totalität fällt auf 13:05 Ortszeit – volle Mittagshitze, Sonne fast senkrecht, null Niederschlag, an einem Beobachtungsplatz in der Wüste praktisch kein Schatten. Der Rettungsanker: Die Luftfeuchtigkeit ist sehr niedrig, Schwitzen funktioniert also tatsächlich. Plant es sauber: viel mehr Wasser, als sich nötig anfühlt, Elektrolyte, Hut und leichte lange Ärmel statt nackter Haut, dazu ein Schattenplan für die zwei Stunden vor der Totalität, in denen ihr nur herumsteht und wartet. Die Luft kühlt während dieser sechs Minuten spürbar ab – einer der schönsten Momente einer langen Totalität –, aber das ist keine Hitzestrategie. Wenn jemand in der Gruppe hitzeempfindlich ist, älter ist oder Medikamente nimmt, die Hitze schlecht vertragen, gehört das in das Gespräch über das Ziel, nicht auf die Packliste."
+    },
+    "card3": {
+      "title": "Handys, Kameras und das Gruppenfoto-Problem",
+      "desc": "Ein ungefiltertes Handy oder eine Kamera auf die partielle Phase zu richten, kann den Sensor beschädigen – und durch Display oder Sucher zu blicken, ist ebenfalls kein sicherer Weg, in die Sonne zu schauen. Wer die partielle Phase fotografieren will, nimmt einen echten Schraub- oder Magnet-Sonnenfilter. Sagen wir es aber klar: Sechs Minuten sind lang genug, dass jemandem in der Gruppe ausdrücklich gesagt werden sollte, dass sein Job darin besteht, das Ganze nicht zu filmen. Eine lange Totalität ist genau deshalb so kostbar, weil sie euch Zeit zum echten Hinschauen gibt – und eine Gruppe, die alle sechs Minuten hinter Bildschirmen verbringt, hat eine teure Reise gebucht, um ein kleines Rechteck anzustarren."
+    }
+  },
+  "logistics": {
+    "title": "Anreise & Unterkunft",
+    "subtitle": "Zwölf Monate vorher habt ihr noch echte Auswahl. Der Engpass sind nicht die Flüge – sondern dass die bekanntesten Betten entlang der Zentrallinie zuerst weg sind und die Bewegungsfreiheit am Finsternistag begrenzt ist.",
+    "gettingThere": "Anreise",
+    "egyptLabel": "Ägypten",
+    "egyptItems": [
+      "→ Direkt nach Luxor (LXR) fliegen oder über Kairo (CAI) plus rund 1 h Inlandsflug",
+      "→ Die meisten Nationalitäten brauchen ein Visum für Ägypten – das E-Visum ist unkompliziert, aber nicht sofort da",
+      "→ Die Stadt Luxor bekommt 6 min 22 s: keine Jagd auf die Zentrallinie, keine Fahrt am Finsternismorgen nötig",
+      "→ Hurghada (HRG) ist ein beliebter Billigflug, aber nur 98,5 % partiell – ihr müsstet am Tag selbst weiterfahren",
+      "→ Premium-Kontingente (Sofitel Winter Palace, gecharterte Nilschiffe) sind bei Veranstaltern bereits als ausgebucht gelistet",
+      "→ Sohag (6 min 22 s) und Qena (6 min 10 s) sind Alternativen, falls in Luxor die Betten ausgehen"
+    ],
+    "spainLabel": "Spanien & Marokko",
+    "spainItems": [
+      "→ Málaga (AGP) oder Jerez (XRY), Kurzstrecke aus fast ganz Europa, dann nach Südwesten fahren",
+      "→ Tarifa 4 min 38 s, Algeciras 4 min 27 s, Gibraltar 4 min 25 s, Ceuta 4 min 48 s",
+      "→ Die Stadt Málaga nur ~1 min 49 s – dort bleiben und nicht fahren ist der Klassiker unter den Fehlern",
+      "→ Sevilla, Granada, Huelva und die Stadt Almería sehen nur eine partielle Phase, so nah sie auf der Karte auch wirken",
+      "→ Die Fähre Tarifa → Tanger dauert ~1 h, falls ihr Marokkos 4 min 50 s wollt",
+      "→ Anfang August ist Hochsaison in Andalusien – diese Küste ist auch ganz ohne Finsternis ausgebucht"
+    ]
+  },
+  "planning": {
+    "title": "Planung über ein Zeitfenster von 12 Monaten",
+    "p1": "Zwölf Monate Vorlauf klingen nach Luxus und sind in Wahrheit der schwierige Teil. Im zwölften Monat vorher spürt niemand Dringlichkeit, im zweiten bricht Panik aus – und die guten Entscheidungen liegen alle vorne. Fangt mit der einzigen Frage an, die zählt: Ägypten oder Spanien. Diskutiert das nicht im Gruppenchat, da wird es zum Zermürbungskrieg, den die hartnäckigste Person gewinnt. Startet eine <polls>Gruppenumfrage</polls> mit ausgeschriebenen Kompromissen – Langstrecke plus 42 °C plus ein echtes Budget für sechs Minuten und eine Sonne im Zenit, gegen ein Kurzstrecken-Wochenende für viereinhalb Minuten. Menschen entscheiden anders, sobald Kosten und Nutzen auf demselben Bildschirm stehen – und ihr findet früh heraus, wer wirklich mitkommt.",
+    "p2": "Legt dann die Budgetstufe fest, bevor irgendjemand irgendetwas bucht, denn bei dieser Reise ist die Stufe die Reise. Ein Aufenthalt an Land in Luxor und eine gecharterte Nilkreuzfahrt sind zwei verschiedene Urlaube zu zwei verschiedenen Preisen – und eine Gruppe, die sich nicht auf die Zahl geeinigt hat, entdeckt den Streit im denkbar schlechtesten Moment: nach den Anzahlungen. Holt euch Zusagen schriftlich, verteilt die Anzahlungen über das Jahr, statt sie in einen Monat zu packen, und sagt klar, was passiert, wenn jemand im dritten statt im elften Monat abspringt. Unser <guide>Guide für Gruppenreisen</guide> geht auf die unangenehmen Geldgespräche genauer ein – führt sie jetzt, solange sie billig sind.",
+    "p3": "Näher am Termin bekommt der Finsternistag seinen eigenen Plan. In Luxor läuft die Totalität von 13:02:14 bis 13:08:36 Ortszeit, und alles andere an diesem Tag rechnet sich von dort rückwärts: Stunden vorher am Platz sein, genau wissen, wo die Sonne stehen wird, einen Treffpunkt festlegen – und davon ausgehen, dass die Mobilfunknetze zusammenbrechen, wenn eine ganze Stadt gleichzeitig nach oben schaut. Packt das in eine <itinerary>gemeinsame Reiseroute</itinerary>, die alle offline sehen können. Sechs Minuten sind eine lange Totalität, aber es sind eben trotzdem nur sechs Minuten – der Plan existiert, damit niemand auch nur eine davon mit der Suche nach der Gruppe verbringt."
+  },
+  "budget": {
+    "title": "Budget-Tipps",
+    "p1": "Finsternisreisen brechen die übliche Budgetlogik: Der Preis entsteht durch Knappheit, nicht durch Entfernung. Die Stufen liegen hier weit auseinander – ein langes Wochenende in Spanien, ein Aufenthalt an Land in Luxor und eine gecharterte Finsternis-Kreuzfahrt sind drei Größenordnungen, und die Kreuzfahrt von Sky & Telescope war für $6,950 bis $12,750 pro Person gelistet. Richtet von Anfang an einen <budget>gemeinsamen Budget-Tracker</budget> ein, tragt die echte Zahl ein und lasst die Leute ehrlich zu- oder absagen, statt die Summe im zehnten Monat zu entdecken. Der teuerste Fehler bei so einer Reise ist nicht, zu viel zu zahlen – es ist eine Sechsergruppe, die still und leise zur Dreiergruppe wird, sobald die Anzahlungen nicht mehr erstattet werden.",
+    "p2": "Haltet über ein ganzes Jahr fest, wer was vorgestreckt hat – laufend, nicht am Ende. Anzahlungen, ein Inlandsflug, die Restzahlung fürs Schiff und sechs Brillensätze über zwölf Monate: Genau daran erinnert sich niemand korrekt, und das im Juli 2027 aus dem Gedächtnis zu rekonstruieren, ist der Weg, wie gute Reisen schlecht enden. Tragt jede Ausgabe am Tag ein, an dem sie anfällt, und rechnet einmal ab.",
+    "p3": "Spart nicht an den Brillen. Eine zertifizierte ISO-12312-2-Brille kostet ein paar Euro – ein Rundungsfehler gegen die Flüge – und ist die einzige Zeile im Budget, bei der Sparen jemanden dauerhaft verletzen kann. Kauft eine pro Person, legt Ersatz dazu und kauft früh bei einem Händler, den ihr benennen könnt."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Wann und wo findet die totale Sonnenfinsternis am 2. August 2027 statt?",
+        "a": "Montag, 2. August 2027. Der Kernschatten berührt die Erde erstmals um 08:23 UTC im Atlantik und verlässt sie um 11:50 UTC über dem Indischen Ozean. Dazwischen kreuzt der Pfad der Totalität zehn Länder: Spanien, Marokko, Algerien, Tunesien, Libyen, Ägypten, Sudan, Saudi-Arabien, Jemen und Somalia, dazu Gibraltar. Die maximale Totalität beträgt 6 Minuten 23 Sekunden auf der ägyptischen Zentrallinie. Luxor, das praktische Herzstück, bekommt 6 Minuten 22 Sekunden, mit Totalität von 13:02:14 bis 13:08:36 Ortszeit (EEST, UTC+3) und der Sonne 81,7° über dem Horizont."
+      },
+      {
+        "q": "Ist das wirklich die längste totale Sonnenfinsternis des Jahrhunderts?",
+        "a": "Nicht ganz – und der Unterschied ist wichtig. Die Finsternis vom 22. Juli 2009 war mit 6 Minuten 39 Sekunden länger – aber ihr Maximum lag über dem offenen Pazifik, das nächstgelegene Land war eine unbewohnte Insel. Richtig ist, und das stützen die Zahlen von Fred Espenak: Der 2. August 2027 bietet die längste Totalität, die im 21. Jahrhundert von leicht erreichbarem Land aus zu sehen ist, und eine längere kommt erst am 3. Juni 2114. Am saubersten formuliert es Sky & Telescope: Es ist die längste Totalitätsdauer für die nächsten 87 Jahre. Wenn du irgendwo „die längste Finsternis des Jahrhunderts“ ohne Einschränkung liest, ist diese Aussage falsch."
+      },
+      {
+        "q": "Ägypten oder Spanien – was soll unsere Gruppe nehmen?",
+        "a": "Ägypten, wenn die Finsternis selbst die Reise sein soll. Luxor gibt euch 6 Minuten 22 Sekunden mit der Sonne fast im Zenit, in einem Klima, in dem Wolken laut Jay Anderson im Sommer nahezu unbekannt sind – er stuft die Bewölkung bei dieser Finsternis als eine der geringsten ein, die er in 45 Jahren ausgewertet hat. Spanien, wenn Budget, Urlaubstage oder die Frage, ob sich acht Leute wirklich festlegen, der Engpass sind. Tarifa bekommt 4 Minuten 38 s und Ceuta 4 Minuten 48 s, per Kurzstreckenflug, und in Cádiz scheint an rund 88 % der Tage Anfang August die Sonne. Neunzig Sekunden Totalität sind ein echter Unterschied – aber der Preisunterschied eben auch. Der ehrliche Test: Hätte die Gruppe lieber einmal sechs Minuten oder viereinhalb Minuten und danach reden alle noch miteinander?"
+      },
+      {
+        "q": "Warum ist Luxor das Herzstück, wenn die Zentrallinie woanders liegt?",
+        "a": "Weil der Unterschied trivial ist – die Infrastruktur aber nicht. Der Punkt der größten Dauer – 6 min 23,2 s – liegt rund 195 km nordwestlich von Luxor nahe Sohag, und der davon getrennte Punkt der größten Finsternis (6 min 22,6 s) etwa 58 km ostsüdöstlich der Stadt. Luxor selbst bekommt 6 min 22 s. Ihr würdet also stundenlang in die Wüste fahren, um unter zwei Sekunden zu gewinnen – und dafür Hotels, Transport, Schatten und das Tal der Könige aufgeben. Bei dieser Finsternis der Zentrallinie hinterherzujagen, ist einer der wenigen Fälle, in denen die Mathematik klar sagt: lass es."
+      },
+      {
+        "q": "Nilkreuzfahrt oder an Land in Luxor?",
+        "a": "Eine Kreuzfahrt löst das Unterkunftsproblem, indem sie die Unterkunft mitbringt, und macht aus der Finsternis eine komplette Ägyptenreise statt eines einzelnen Ereignisses – die gecharterte Kreuzfahrt von Sky & Telescope war für $6,950 bis $12,750 pro Person gelistet, und mehrere Veranstalter melden ihre Boote für 2027 als ausgebucht. An Land in Luxor ist günstiger und flexibler, bringt euch ohnehin bis auf Sekunden ans Maximum und lässt euch den Beobachtungsplatz selbst wählen. Für eine Gruppe entscheiden meist Liquidität und Verbindlichkeit: Eine Kreuzfahrt verlangt früh eine hohe Anzahlung von allen – ein echter Test, ob die Gruppe wirklich mitkommt."
+      },
+      {
+        "q": "Wie heiß ist es Anfang August in Luxor wirklich?",
+        "a": "Jay Andersons Wert: im Schnitt 42,0 °C Höchsttemperatur am 2. August in Luxor über die letzten 17 Jahre, mit sehr geringer Schwankung von Jahr zu Jahr und einem Rekord von 46 °C. Die Totalität fällt auf 13:05 Ortszeit – die heißeste Zeit des Tages, mit fast senkrechter Sonne und ohne Niederschlag. Die Luftfeuchtigkeit ist sehr niedrig, was wirklich hilft, aber das ist kein Detail, das man erst bei der Ankunft entdecken sollte. Plant ernsthafte Hydration, Schatten für das Warten vor der Totalität und ein ehrliches Gespräch mit allen in der Gruppe, für die dauerhafte 42 °C ein medizinisches Problem sind und keine Unannehmlichkeit."
+      },
+      {
+        "q": "Welche Brillen brauchen wir – und wann sollten wir sie kaufen?",
+        "a": "Sonnenfinsternisbrillen nach ISO 12312-2:2015, mit der Zertifizierung auf dem Filter und, in Europa, einem CE-Zeichen. Sonnenbrillen funktionieren in keiner Tönung, Rußglas, Fotonegative oder Schweißerglas unter Schutzstufe 14 ebenfalls nicht. Eine Solar-Retinopathie ist schmerzfrei, es warnt euch also nichts, während sie passiert. Kauft eine zertifizierte Brille pro Person plus eine Ersatzbrille je vier Leute, bei einem klar identifizierbaren Händler, und kauft deutlich vor dem Ansturm – das Angebot wird knapp, sobald die Medien aufspringen. Tauscht alles über drei Jahre aus und prüft auf Löcher. Nur während der Totalität und nur im Pfad schaut ihr mit bloßem Auge."
+      },
+      {
+        "q": "Ist es zu spät, 2027 noch zu planen?",
+        "a": "Nein – aber das Premium-Segment geht gerade weg, es ist nicht weg. Veranstalter mit gecharterten Nilschiffen und die bekanntesten Hotels in Luxor nehmen seit 2024 Buchungen an, einige sind als ausgebucht gelistet. Das begrenzt die oberste Stufe, nicht die Reise: Luxor ist eine echte Stadt, Sohag bekommt 6 min 22 s und Qena 6 min 10 s, und das ganze spanisch-marokkanische Ende des Pfads ist eine normale Kurzstreckenreise, über die die meisten Gruppen noch gar nicht nachgedacht haben. Zwölf Monate vorher ist die knappe Ressource die Einigkeit in der Gruppe, nicht die Verfügbarkeit. Legt Ziel und Budgetstufe jetzt fest, der Rest folgt."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "eclipse2026": { "title": "Reiseplaner Sonnenfinsternis 2026", "desc": "Die Totalität vom 12. August 2026 über Island und Nordspanien – ein Jahr früher und viel näher an zu Hause.", "cta": "Mehr lesen →" },
+    "rugby2027": { "title": "Reiseplaner Rugby-WM 2027", "desc": "Die andere große Reise 2027: Australien, sechs Wochen, eine Gruppe und ein Spielplan.", "cta": "Mehr lesen →" },
+    "bestApps": { "title": "Die besten Apps für Gruppenreisen", "desc": "Ein ehrlicher Vergleich der Tools zum Planen einer Reise mit anderen.", "cta": "Apps vergleichen →" },
+    "groupGuide": { "title": "Guide für Gruppenreisen", "desc": "Die komplette Schritt-für-Schritt-Anleitung, um eine Reise mit einer Gruppe zu planen.", "cta": "Guide lesen →" }
+  },
+  "cta": {
+    "title": "Baut eure Finsternis-Reise 2027",
+    "subtitle": "Umfrage Ägypten gegen Spanien, eine Budgetstufe, der alle zustimmen, Anzahlungen über zwölf Monate im Blick und ein Minutenplan für den Finsternistag – ein Plan, eure ganze Crew auf demselben Stand.",
+    "button": "Umfrage Ägypten vs. Spanien starten"
+  },
+  "jsonld": {
+    "articleHeadline": "Totale Sonnenfinsternis am 2. August 2027: Reiseplaner für Ägypten & Spanien",
+    "eventName": "Totale Sonnenfinsternis vom 2. August 2027",
+    "eventDescription": "Totale Sonnenfinsternis am Montag, 2. August 2027. Der Pfad der Totalität kreuzt Südspanien, Gibraltar, Marokko, Algerien, Tunesien, Libyen, Ägypten, Sudan, Saudi-Arabien, Jemen und Somalia. Die maximale Totalität beträgt 6 Minuten 23 Sekunden auf der Zentrallinie in Oberägypten; Luxor sieht 6 Minuten 22 Sekunden mit der Sonne 81,7° über dem Horizont. Es ist die längste Totalität, die im 21. Jahrhundert von leicht erreichbarem Land aus zu sehen ist – die nächste längere fällt auf den 3. Juni 2114.",
+    "howToName": "So plant ihr als Gruppe eine Reise zur totalen Sonnenfinsternis 2027",
+    "howToDescription": "Zwölf Monate vorher fixiert ihr diese Reise so: Ägypten gegen Spanien als Gruppe entscheiden, die Budgetstufe festlegen, bevor jemand bucht, ISO-12312-2-Brillen und einen Hitzeplan besorgen und den Ablauf des Finsternistags um die Totalität herum bauen.",
+    "howToSteps": [
+      {
+        "name": "Ägypten gegen Südspanien früh als Gruppe entscheiden",
+        "text": "Die Gabelung: 6 min 22 s in Luxor mit einer Sonne bei 81,7° und einer Klimatologie nahe null Bewölkung, gegen 4 min 38 s in Tarifa per Kurzstreckenflug. Auf der einen Seite Langstrecke, im Schnitt 42 °C Höchsttemperatur und ein deutlich größeres Budget; auf der anderen ein günstiges, gut erreichbares Wochenende. Startet eine Gruppenumfrage mit ausgeschriebenen Kompromissen, statt den Gruppenchat per Zermürbung entscheiden zu lassen – und findet zwölf Monate vorher heraus, wer wirklich mitkommt."
+      },
+      {
+        "name": "Die Budgetstufe festlegen, bevor irgendjemand bucht",
+        "text": "Ein langes Wochenende in Spanien, ein Aufenthalt an Land in Luxor und eine gecharterte Nilkreuzfahrt (von Sky & Telescope für $6,950–$12,750 pro Person gelistet) sind drei verschiedene Reisen zu drei verschiedenen Preisen. Fixiert zuerst die Zahl, tragt sie in ein gemeinsames Budget ein, verteilt die Anzahlungen über die zwölf Monate statt auf einen brutalen Monat und klärt, was passiert, wenn jemand spät abspringt."
+      },
+      {
+        "name": "Betten und Flüge buchen, dann die Sicherheitsausrüstung bestellen",
+        "text": "Die Stadt Luxor selbst bekommt 6 min 22 s, eine Jagd auf die Zentrallinie ist also unnötig; Sohag (6 min 22 s) und Qena (6 min 10 s) sind die Rückfalloptionen, falls Luxor voll ist. In Spanien fliegt ihr nach Málaga oder Jerez und fahrt nach Südwesten – die Stadt Málaga kommt auf unter zwei Minuten. Bestellt eine nach ISO 12312-2 zertifizierte Brille pro Person plus Ersatz, deutlich vor dem Ansturm, und plant die Hitze: Trinken, Schatten und lange Ärmel für eine Totalität um 13:05 bei 42 °C."
+      },
+      {
+        "name": "Den Ablauf des Finsternistags um die Totalität herum bauen",
+        "text": "In Luxor läuft die Totalität von 13:02:14 bis 13:08:36 Ortszeit (EEST). Rechnet rückwärts: Stunden vorher am Platz sein, wissen, wo die Sonne stehen wird, einen Treffpunkt festlegen und mit überlasteten Mobilfunknetzen rechnen. Packt alles in eine gemeinsame Reiseroute, die die Gruppe offline öffnen kann, und entscheidet vorher, wer fotografiert und wer einfach nur schaut."
+      }
+    ]
+  }
+}

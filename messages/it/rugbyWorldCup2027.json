@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "title": "Rugby World Cup 2027: viaggio di gruppo",
+    "description": "Organizza gratis il viaggio alla Rugby World Cup 2027. Australia, 1° ott - 13 nov: 24 squadre, 7 città, 52 partite. Itinerario, budget e gruppo allineato."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Organizza il viaggio alla Rugby World Cup 2027"
+  },
+  "hero": {
+    "tag": "Organizza il viaggio gratis · Rugby World Cup 2027",
+    "title": "Rugby World Cup 2027: l'Australia si prenota con un anno d'anticipo",
+    "readTime": "9 min di lettura"
+  },
+  "heroBody": "Questo è lo strumento gratuito per organizzare il viaggio di gruppo alla Rugby World Cup 2027 — Australia, dal 1° ottobre al 13 novembre 2027, la prima edizione a 24 squadre. I gironi sono sorteggiati, quindi sai dove si gioca la fase a gironi. Quello che non sai è dove finirà la tua nazionale dopo. Ed è proprio questo il problema: i voli per l'Australia vanno prenotati con circa un anno d'anticipo, molto prima che esista il tabellone degli ottavi di finale. Ecco come impegnarsi presto senza inchiodare il gruppo a un itinerario di cui pentirsi. Stai ancora scegliendo gli strumenti? Guarda il nostro <link>confronto delle app per viaggi di gruppo</link>.",
+  "facts": {
+    "title": "Il torneo in breve",
+    "datesLabel": "Date del torneo",
+    "datesValue": "1 ott – 13 nov 2027",
+    "datesNote": "43 giorni in giro per l'Australia",
+    "teamsLabel": "Squadre",
+    "teamsValue": "24",
+    "teamsNote": "6 gironi da 4 — mai successo prima",
+    "citiesLabel": "Città ospitanti",
+    "citiesValue": "7",
+    "citiesNote": "8 stadi, 52 partite",
+    "finalLabel": "La finale",
+    "finalValue": "13 nov, Sydney",
+    "finalNote": "Stadium Australia, 82.000 posti"
+  },
+  "problem": {
+    "p1": "L'Australia è la Rugby World Cup più difficile da organizzare che un gruppo europeo o americano abbia mai affrontato. Sono più di 20 ore di volo, un viaggio da 3.000–5.000 € a testa e un calendario che copre un continente grande quanto l'Europa. I voli intercontinentali costano meno se prenotati con undici o dodici mesi d'anticipo — il che significa che la finestra giusta si apre prima che qualcuno sappia se la propria nazionale supererà il girone. Sei amici, sei budget, sei modi diversi di reagire all'idea di spendere quattro cifre su un forse.",
+    "p2": "WePlanify è il centro di comando condiviso e gratuito per i viaggi alla Rugby World Cup 2027 — calendario, voli, alloggi, budget e valigia in un unico piano che tutto il gruppo può vedere."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "hostCities": "Le 7 città ospitanti",
+    "route": "Seguire la squadra o scegliere una base?",
+    "tickets": "Biglietti e logistica",
+    "planning": "Organizzarsi in gruppo",
+    "budget": "Quanto costa davvero",
+    "faq": "Domande frequenti"
+  },
+  "hostCities": {
+    "title": "Le 7 città ospitanti",
+    "subtitle": "Otto stadi in sette città, sparsi su un continente. Da Perth a Townsville sono cinque ore di volo — più di Londra-Il Cairo. A dettare l'itinerario sono le distanze, più che il calendario.",
+    "stadiumLabel": "Stadio",
+    "items": [
+      {
+        "city": "Sydney",
+        "state": "Nuovo Galles del Sud",
+        "stadium": "Stadium Australia e Sydney Football Stadium",
+        "note": "Ospita la finale il 13 novembre. L'unica città con due impianti."
+      },
+      {
+        "city": "Melbourne",
+        "state": "Victoria",
+        "stadium": "Docklands Stadium",
+        "note": "L'unico impianto completamente coperto del torneo — il tetto resta chiuso a ogni partita. Zero rischio meteo."
+      },
+      {
+        "city": "Brisbane",
+        "state": "Queensland",
+        "stadium": "Brisbane Stadium",
+        "note": "Calda, tutta a piedi e porta d'accesso naturale alla Gold Coast se aggiungi qualche giorno di vacanza."
+      },
+      {
+        "city": "Perth",
+        "state": "Australia Occidentale",
+        "stadium": "Perth Stadium",
+        "note": "Ospita la partita inaugurale il 1° ottobre. Isolata — cinque ore di volo dalla costa est."
+      },
+      {
+        "city": "Adelaide",
+        "state": "Australia Meridionale",
+        "stadium": "Adelaide Oval",
+        "note": "Compatta ed economica per gli standard australiani. La zona vinicola della Barossa è a un'ora."
+      },
+      {
+        "city": "Newcastle",
+        "state": "Nuovo Galles del Sud",
+        "stadium": "Newcastle Stadium",
+        "note": "Per la prima volta ospita partite della Rugby World Cup. Due ore a nord di Sydney in treno."
+      },
+      {
+        "city": "Townsville",
+        "state": "Queensland",
+        "stadium": "North Queensland Stadium",
+        "note": "Estremo nord tropicale. Il trampolino di lancio per la Grande Barriera Corallina e Magnetic Island."
+      }
+    ]
+  },
+  "route": {
+    "title": "La decisione che cambia tutto: seguire o restare?",
+    "subtitle": "Ogni viaggio di gruppo in Australia si divide qui. Prendi questa decisione prima di prenotare un solo volo: determina il budget, l'itinerario e quanto del Paese vedrai davvero.",
+    "followTitle": "Segui la squadra",
+    "followSubtitle": "Insegui la tua nazionale di girone in girone, poi fino agli scontri diretti.",
+    "followPros": [
+      "Vedi tutte le partite della tua squadra",
+      "Atmosfera al massimo — viaggi con lo stesso tifo ospite",
+      "Il viaggio ha una narrazione naturale e un finale evidente"
+    ],
+    "followCons": [
+      "Minimo tre voli interni, spesso di più",
+      "Le tratte della fase a eliminazione si prenotano solo a tabellone completo",
+      "Se la tua squadra esce ai gironi, il piano crolla",
+      "I voli interni australiani schizzano nei giorni delle partite"
+    ],
+    "followVerdict": "Ideale per: gruppi con vero margine di budget e la pazienza di prenotare tardi a prezzi cattivi.",
+    "baseTitle": "Base in una sola città",
+    "baseSubtitle": "Scegli una città ospitante, restaci e guarda quello che ti capita davanti.",
+    "basePros": [
+      "Una sola prenotazione di alloggio, trattata a lungo termine, divisa senza discussioni",
+      "Zero voli interni — il risparmio più grosso in assoluto",
+      "Conosci davvero una città invece di un aeroporto",
+      "A prova di eliminazione anticipata della tua squadra"
+    ],
+    "baseCons": [
+      "Ti perdi le partite che la tua squadra gioca altrove",
+      "Meno varietà — stessa fan zone, stessi pub, per sei settimane",
+      "Gli affitti a Sydney o Melbourne non sono economici sul lungo periodo"
+    ],
+    "baseVerdict": "Ideale per: la maggior parte dei gruppi, onestamente — ed è l'unica versione che resta davvero sotto i 3.500 € a testa.",
+    "hybridTitle": "L'ibrido su cui finiscono quasi tutti",
+    "hybridBody": "Base a Sydney o Brisbane per gran parte del viaggio, uno o due voli in uscita per le partite che contano davvero, e gli scontri diretti trattati come un'opzione, non come un piano. Prenota subito l'alloggio della base e i voli interni dopo. Non è il viaggio del purista, ma regge l'impatto con la realtà — e con i conti in banca del gruppo."
+  },
+  "midCta": {
+    "title": "Decidi l'itinerario prima che i prezzi si muovano",
+    "subtitle": "Metti entrambe le opzioni davanti al gruppo, votate e bloccate il piano che vedono tutti.",
+    "button": "Inizia gratis"
+  },
+  "tickets": {
+    "title": "Biglietti e logistica",
+    "p1": "Le fasi di vendita più importanti sono già passate. La prevendita è partita il 18 febbraio 2026 per i tifosi registrati entro il 17 febbraio, e la fase di candidatura generale — un sorteggio mondiale per le partite con richieste in eccesso — è andata dal 19 maggio al 2 giugno 2026. Se le hai perse entrambe, non sei fuori.",
+    "p2": "La prossima vendita generale è il 1° ottobre 2026, a chi arriva prima. Questa è la data da mettere subito nel calendario condiviso del gruppo, perché \"chi prima arriva\" con una domanda così repressa significa che le categorie buone spariscono in pochi minuti. Decidete insieme, prima, quali partite volete e quanto siete disposti a pagare — litigare sulle categorie di prezzo mentre la coda è aperta è il modo in cui i gruppi restano a mani vuote.",
+    "p3": "Compra solo dal <ticketLink>sito ufficiale di biglietteria della Rugby World Cup</ticketLink>. Il mercato secondario per gli eventi sportivi australiani è fortemente limitato e i biglietti acquistati fuori dai canali ufficiali possono essere annullati all'ingresso. Se preferisci pagare in cambio di certezze, ci sono i pacchetti hospitality e viaggio del fornitore ufficiale.",
+    "p4": "Sulla logistica: l'Australia richiede un visto praticamente a tutti — la maggior parte dei possessori di passaporto europeo, britannico e statunitense può ottenere un ETA o eVisitor online in pochi giorni, ma non è automatico e ognuno se lo gestisce da solo. Trattalo come una scadenza di gruppo, non come un pensiero individuale dell'ultimo minuto. I voli interni sono la spina dorsale di qualsiasi piano multi-città: Qantas, Virgin Australia e Jetstar coprono tutte le città ospitanti, e le tariffe attorno alle date delle partite si comportano esattamente come temi. I cinque giorni minimi di riposo tra le partite fanno respirare il calendario — c'è spazio vero per vedere il Paese tra un match e l'altro."
+  },
+  "planning": {
+    "title": "Organizzarlo in gruppo",
+    "p1": "La parte difficile di questo viaggio non è l'itinerario. È convincere sei persone a impegnare quattromila euro a testa, con dodici mesi d'anticipo, per un piano di cui la seconda metà è imprevedibile. È un problema di fiducia prima ancora che di viaggio, ed è il motivo per cui questi viaggi muoiono nelle chat di gruppo.",
+    "p2": "Parti separando il certo dall'ipotetico. La fase a gironi è fissa — il sorteggio è fatto, le città si sanno, il calendario è pubblicato. Quella parte prenotala per bene. Gli scontri diretti sono un biglietto della lotteria. Metti date provvisorie nel tuo <itineraryLink>itinerario condiviso</itineraryLink> come segnaposto e non prenotare nulla di non rimborsabile finché gli ottavi di finale non sono definiti.",
+    "p3": "Poi metti l'impegno nero su bianco. Non un \"sì dai ci sto\" nella chat di gruppo a mezzanotte — una risposta vera a una domanda vera. <pollsLink>Lancia un sondaggio</pollsLink> sulle due cose che decidono tutto: seguire o restare, e torneo intero o solo fase a gironi. In un sondaggio le persone rispondono con un'onestà che non hanno mai in una chat dove leggono tutti. Scoprirai ora, non a marzo, che due dei tuoi amici non ci sono mai stati davvero.",
+    "p4": "Fissa scadenze che non riguardano il viaggio. Le domande di visto, la vendita dei biglietti del 1° ottobre, le date delle caparre, il momento in cui i voli economici svaniscono. Una lista di attività condivisa con date vere, visibile a tutti, è ciò che impedisce a un viaggio così grosso di sgretolarsi in silenzio mentre ognuno dà per scontato che se ne stia occupando qualcun altro. La nostra <guideLink>guida per organizzare un viaggio di gruppo</guideLink> spiega come farlo."
+  },
+  "budget": {
+    "title": "Quanto costa davvero",
+    "p1": "Sii onesto con il gruppo dalla prima conversazione: per un europeo questo è un viaggio da 3.000–5.000 € a testa, e la forbice dipende quasi solo dalle decisioni che prendi nei prossimi mesi, non da quanto sarai parsimonioso una volta atterrato.",
+    "p2": "I voli sono l'ostacolo immobile — un andata e ritorno dall'Europa all'Australia costa in genere 900–1.600 €, e ottobre è bassa stagione intermedia, il che aiuta. È nella finestra degli undici-dodici mesi che si gioca il vero risparmio: aspettare che il tabellone sia chiaro può costarti diverse centinaia di euro a testa. È l'argomento più forte a favore della strategia della città-base: ti permette di prenotare presto la parte cara e restare flessibile su quella economica.",
+    "p3": "I biglietti delle partite ognuno se li compra da solo — tienili completamente fuori dalla cassa comune. La cassa comune serve per alloggio, voli interni, trasporti a terra, cene di gruppo e la gita alla barriera corallina che qualcuno proporrà inevitabilmente. Crea un <budgetLink>tracker del budget condiviso</budgetLink> con una categoria per tipo di spesa e fate a turno su chi anticipa, così la carta di nessuno si carica il gruppo per sei settimane.",
+    "p4": "L'alloggio è dove la strategia della base rende. Una casa con cinque camere nell'inner west di Sydney per un mese, divisa in cinque, costa molto meno di cinque camere d'albergo per le stesse notti — e gli hotel vicini agli stadi moltiplicano comunque le tariffe nei giorni delle partite. Guarda i quartieri con buoni collegamenti ferroviari, non i codici postali che il torneo ti mette in vetrina."
+  },
+  "pullQuote": "Prenoterai questo viaggio prima di sapere come va a finire. Non è un difetto della tua organizzazione — è la natura della cosa. Pianifica per bene la parte certa e tieni il resto con presa leggera.",
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Quando si gioca la Rugby World Cup 2027 e dove?",
+        "a": "Il torneo va dal 1° ottobre al 13 novembre 2027 in Australia — 43 giorni, 52 partite, sette città ospitanti e otto stadi. La partita inaugurale è al Perth Stadium il 1° ottobre, la finale allo Stadium Australia di Sydney il 13 novembre. È la prima edizione a 24 squadre nella storia del torneo."
+      },
+      {
+        "q": "Come funziona il nuovo formato a 24 squadre?",
+        "a": "Le 24 squadre sono divise in sei gironi da quattro, al posto dei vecchi quattro gironi da cinque. Le prime due di ogni girone passano automaticamente, insieme alle quattro migliori terze, riempiendo i nuovi ottavi di finale — il primo cambio di formato sostanziale da decenni. Nonostante l'allargamento, chi vince il torneo gioca comunque sette partite: tre nella fase a gironi e quattro a eliminazione diretta. Tra una partita e l'altra ci sono minimo cinque giorni di riposo."
+      },
+      {
+        "q": "Posso ancora prendere i biglietti per la Rugby World Cup 2027?",
+        "a": "Sì. La prevendita di febbraio 2026 e il sorteggio delle candidature di maggio-giugno 2026 sono entrambi chiusi, ma la prossima vendita generale apre il 1° ottobre 2026 e va a chi arriva prima. Compra solo dal sito ufficiale di biglietteria della Rugby World Cup — le regole australiane sulla rivendita sono severe e i biglietti dei canali non ufficiali possono essere annullati all'ingresso. Nel frattempo restano disponibili i pacchetti ufficiali hospitality e viaggio."
+      },
+      {
+        "q": "Quando conviene prenotare i voli per l'Australia per la Rugby World Cup?",
+        "a": "Circa undici o dodici mesi prima: per un torneo di ottobre 2027 significa fine 2026. Un andata e ritorno dall'Europa costa in genere 900–1.600 € e ottobre cade in bassa stagione intermedia. La scomodità è che questa finestra si apre molto prima che esista il tabellone della fase a eliminazione, quindi ti impegni sulle date senza conoscere il percorso della tua squadra. È esattamente per questo che quasi tutti i gruppi prenotano presto una città-base e restano flessibili sui voli interni."
+      },
+      {
+        "q": "Meglio seguire la squadra in giro per l'Australia o fissare una base in una città?",
+        "a": "Base in una sola città, per la maggior parte dei gruppi. Seguire la tua squadra significa almeno tre voli interni, tratte della fase a eliminazione che non puoi prenotare in anticipo e un piano che crolla se esce ai gironi. Fare base a Sydney o Brisbane significa una sola prenotazione di alloggio, zero voli interni e un viaggio che sopravvive a un brutto risultato. Il compromesso classico: base in una città centrale e voli solo per le partite che contano davvero."
+      },
+      {
+        "q": "Quanto costa a persona un viaggio alla Rugby World Cup 2027?",
+        "a": "Metti in conto 3.000–5.000 € a persona dall'Europa per un viaggio di due o tre settimane. I voli sono 900–1.600 € andata e ritorno, i biglietti delle partite variano molto per categoria e l'alloggio dipende interamente dal fatto che ti sposti tra città o divida una casa. I gruppi che fanno base in una città e condividono un affitto restano stabilmente nella parte bassa della forbice; quelli che inseguono la squadra per il Paese arrivano in alto o oltre."
+      },
+      {
+        "q": "Serve un visto per andare in Australia per il torneo?",
+        "a": "Quasi sicuramente sì — l'Australia richiede un visto o un'autorizzazione di viaggio a praticamente ogni visitatore. La maggior parte dei possessori di passaporto britannico, europeo e statunitense può richiedere un ETA o eVisitor online e viene approvata in pochi giorni, ma non è automatico e ogni viaggiatore deve fare domanda per conto proprio. Trattalo come una scadenza di gruppo con una data precisa, perché è la classica cosa che qualcuno dimentica fino alla settimana della partenza."
+      },
+      {
+        "q": "Come si dividono i costi di un viaggio così caro in un gruppo?",
+        "a": "Separa ciò che è individuale da ciò che è condiviso. Biglietti delle partite e voli se li compra e se li paga ognuno. Alloggio, trasporti interni, spostamenti a terra e cene di gruppo vanno in una cassa comune, con una categoria ciascuno. Fate a turno su chi anticipa le grosse spese condivise, così una sola persona non si porta cinquemila euro di spese del gruppo sulla carta per sei settimane. WePlanify tiene traccia di chi ha pagato cosa e di chi deve cosa a chi, così alla fine non c'è nessuna resa dei conti."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "worldCup": {
+      "title": "Mondiali 2026",
+      "desc": "La versione calcio — 16 città ospitanti in tre Paesi.",
+      "cta": "Leggi di più →"
+    },
+    "tripWithFriends": {
+      "title": "Viaggio con gli amici",
+      "desc": "Organizza qualsiasi viaggio di gruppo senza fatica.",
+      "cta": "Leggi di più →"
+    },
+    "groupGuide": {
+      "title": "Guida al viaggio di gruppo",
+      "desc": "La guida completa passo dopo passo.",
+      "cta": "Leggi la guida →"
+    },
+    "bestApps": {
+      "title": "Le migliori app per viaggi di gruppo",
+      "desc": "Il nostro confronto dei migliori strumenti per i viaggi di gruppo.",
+      "cta": "Leggi l'articolo →"
+    }
+  },
+  "cta": {
+    "title": "Costruisci il tuo viaggio alla Rugby World Cup 2027",
+    "subtitle": "Calendario, voli, una casa a Sydney e un budget che torna — un unico piano condiviso, tutto il gruppo sulla stessa pagina.",
+    "button": "Inizia a pianificare"
+  },
+  "jsonld": {
+    "eventName": "Rugby World Cup 2027",
+    "eventDescription": "Rugby World Cup 2027 — 24 nazionali, sette città ospitanti e otto stadi in Australia, dal 1° ottobre al 13 novembre 2027. La prima edizione a 24 squadre, giocata in sei gironi da quattro con i nuovi ottavi di finale.",
+    "performer": "Nazionali della Rugby World Cup 2027",
+    "howToName": "Come organizzare un viaggio di gruppo alla Rugby World Cup 2027",
+    "howToDescription": "Decidi se seguire la tua squadra o fare base in una città, prenota presto i voli intercontinentali, dividi in modo pulito un budget di gruppo a cinque cifre e tieni la fase a eliminazione con presa leggera.",
+    "howToSteps": [
+      {
+        "name": "Scegli tra seguire la squadra e fare base in una città",
+        "text": "Questa singola decisione fissa il budget e l'itinerario. Seguire la tua squadra significa tre o più voli interni e tratte della fase a eliminazione che non puoi prenotare in anticipo; fare base a Sydney o Brisbane significa una sola prenotazione di alloggio e zero voli interni. Decidetelo prima di ogni altra cosa."
+      },
+      {
+        "name": "Metti nero su bianco l'impegno vero con un sondaggio",
+        "text": "Un viaggio da 3.000–5.000 € prenotato con un anno d'anticipo ha bisogno di risposte vere, non dell'entusiasmo da chat di gruppo. Fai votare il gruppo su seguire-o-restare e torneo-intero-o-solo-gironi. Scoprirai ora, e non tra sei mesi, chi non ci è mai stato davvero."
+      },
+      {
+        "name": "Prenota la parte certa e tieni il resto con presa leggera",
+        "text": "I gironi sono sorteggiati e il calendario della fase a gironi è pubblicato — prenota quella parte per bene, circa undici o dodici mesi prima, quando i voli intercontinentali costano meno. Lascia gli ottavi di finale come date segnaposto nell'itinerario e non prenotare nulla di non rimborsabile finché il tabellone non è completo."
+      },
+      {
+        "name": "Dividi le spese comuni per categoria dal primo giorno",
+        "text": "Biglietti delle partite e voli restano individuali. Alloggio, trasporti interni e cene di gruppo finiscono in un budget condiviso con una categoria ciascuno, facendo a turno su chi anticipa le spese grosse, così nessuno si porta il gruppo sulle spalle per sei settimane."
+      }
+    ]
+  }
+}

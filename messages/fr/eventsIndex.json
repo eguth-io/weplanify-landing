@@ -1,17 +1,17 @@
 {
   "meta": {
-    "title": "Planificateurs Voyage Événement 2026 — Gratuit, pour les Groupes",
-    "description": "Planifie ton voyage événement 2026 avec WePlanify. Planificateurs gratuits dédiés pour la Coupe du Monde FIFA, la finale Ligue des Champions, Tomorrowland, Hellfest, Ultra Europe et l'éclipse solaire totale — conçus pour les groupes de fans qui voyagent ensemble."
+    "title": "Planificateurs Voyage Événement 2026-2027 — Gratuit, pour les Groupes",
+    "description": "Planifie ton voyage événement 2026-2027 avec WePlanify. Planificateurs gratuits dédiés pour la Coupe du Monde FIFA, l'Oktoberfest, les marchés de Noël en Europe, l'éclipse solaire totale de 2027, la Coupe du Monde de Rugby et plus — conçus pour les groupes de fans qui voyagent ensemble."
   },
   "hero": {
-    "tag": "Planificateurs Événements 2026",
-    "title": "Planifie ton voyage\névénement 2026 — à plusieurs",
-    "description": "Six planificateurs dédiés pour les plus gros événements de l'année. Choisis le tien, construis un itinéraire partagé, splitte les frais et coordonne la team — c'est gratuit.",
+    "tag": "Planificateurs Événements 2026-2027",
+    "title": "Planifie ton voyage\névénement 2026-2027 — à plusieurs",
+    "description": "Onze planificateurs dédiés pour les plus gros événements des deux prochaines années. Choisis le tien, construis un itinéraire partagé, splitte les frais et coordonne la team — c'est gratuit.",
     "cta": "Commencer gratuitement"
   },
   "intro": {
     "title": "Un planificateur par événement, pensé groupe",
-    "body": "Les gros événements c'est de la grosse logistique : matchs entre villes hôtes, pass festival pour 12, permis camping, dates qui clashent au dernier moment. Chacune de nos pages 2026 est construite pour son événement — tableaux des villes hôtes, vrais calendriers, les pièges que seuls les fans connaissent. Choisis le tien ci-dessous."
+    "body": "Les gros événements c'est de la grosse logistique : matchs entre villes hôtes, pass festival pour 12, permis camping, dates qui clashent au dernier moment. Chacune de nos pages 2026-2027 est construite pour son événement — tableaux des villes hôtes, vrais calendriers, les pièges que seuls les fans connaissent. Choisis le tien ci-dessous."
   },
   "cardCta": "Ouvrir le planificateur →",
   "cta": {
@@ -21,26 +21,50 @@
   },
   "breadcrumb": {
     "home": "Accueil",
-    "events": "Événements 2026"
+    "events": "Événements"
   },
   "events": [
+    {
+      "title": "Éclipse Solaire Totale — 12 août 2026",
+      "date": "12 août 2026",
+      "location": "Islande · Espagne · Groenland",
+      "description": "Le voyage rare vers la totalité. Meilleurs spots, plans de secours météo, hébergement qui se réserve 18 mois à l'avance."
+    },
+    {
+      "title": "Oktoberfest 2026",
+      "date": "19 sept. – 4 oct. 2026",
+      "location": "Munich, Allemagne",
+      "description": "16 jours, 191e édition, entrée gratuite — mais les tentes se réservent par tablées de 10, donc il faut bloquer tôt. Les hôtels de Munich flambent pendant la fête, et il y a toujours quelqu'un qui avance la tournée de Maß."
+    },
+    {
+      "title": "Marchés de Noël 2026",
+      "date": "nov. – déc. 2026",
+      "location": "Europe",
+      "description": "Vienne, Colmar, Nuremberg, Cologne, Prague, Bruxelles — chaque ville a ses propres dates, donc choisir le week-end revient à choisir la destination. Les hôtels sont complets dès septembre : tranchez le sondage tôt."
+    },
+    {
+      "title": "Saison de Ski 2026-27",
+      "date": "nov. 2026 – mai 2027",
+      "location": "Alpes françaises",
+      "description": "Tignes et Val Thorens ouvrent le 21 novembre et ferment le 2 mai. Une personne avance le chalet pendant que forfaits, location et courses se répartissent de travers — et les semaines de vacances scolaires de février coûtent plus cher."
+    },
+    {
+      "title": "Éclipse Solaire Totale — 2 août 2027",
+      "date": "2 août 2027",
+      "location": "Égypte · Espagne · Maroc",
+      "description": "6 min 23 s de totalité près de Louxor — la plus longue du siècle sur une terre accessible. Douze mois pour trancher entre croisière sur le Nil et base à terre, et Louxor se réserve des années à l'avance."
+    },
+    {
+      "title": "Coupe du Monde de Rugby 2027",
+      "date": "oct. – nov. 2027",
+      "location": "Australie",
+      "description": "Première édition à 24 équipes, poules déjà tirées. Les long-courriers se réservent environ 12 mois avant et la prochaine vente de billets est le 1er octobre 2026, premier arrivé premier servi — donc cale la route multi-villes avant même que le tableau des huitièmes existe."
+    },
     {
       "title": "Coupe du Monde 2026",
       "date": "11 juin – 19 juillet 2026",
       "location": "USA · Canada · Mexique",
       "description": "16 villes hôtes sur trois pays. Planifie ton itinéraire multi-villes, partage les frais par catégorie et coordonne la team de fans à travers les frontières."
-    },
-    {
-      "title": "Finale Ligue des Champions 2026",
-      "date": "30 mai 2026",
-      "location": "Budapest, Hongrie",
-      "description": "La plus grande finale de club de l'année à la Puskás Aréna. Plan transport, hôtel et apéro pré-match pour la team."
-    },
-    {
-      "title": "Hellfest 2026",
-      "date": "19 – 22 juin 2026",
-      "location": "Clisson, France",
-      "description": "Quatre jours de métal à Clisson. Logistique camping, covoiturage et le tableur lineup-to-stage — tout dans un plan partagé."
     },
     {
       "title": "Tomorrowland 2026",
@@ -49,16 +73,22 @@
       "description": "Billets DreamVille, pass festival, logistique train. Coordonne la team et la cagnotte pour que personne ne court après 40 € la semaine d'après."
     },
     {
-      "title": "Éclipse Solaire Totale — 12 août 2026",
-      "date": "12 août 2026",
-      "location": "Islande · Espagne · Groenland",
-      "description": "Le voyage rare vers la totalité. Meilleurs spots, plans de secours météo, hébergement qui se réserve 18 mois à l'avance."
-    },
-    {
       "title": "Ultra Europe 2026",
       "date": "10 – 12 juillet 2026",
       "location": "Split, Croatie",
       "description": "Trois jours sur l'Adriatique. Hôtel vs Airbnb, logistique pass festival et escapades autour de la Dalmatie — pour la team qui veut plus que la mainstage."
+    },
+    {
+      "title": "Hellfest 2026",
+      "date": "19 – 22 juin 2026",
+      "location": "Clisson, France",
+      "description": "Quatre jours de métal à Clisson. Logistique camping, covoiturage et le tableur lineup-to-stage — tout dans un plan partagé."
+    },
+    {
+      "title": "Finale Ligue des Champions 2026",
+      "date": "30 mai 2026",
+      "location": "Budapest, Hongrie",
+      "description": "La plus grande finale de club de l'année à la Puskás Aréna. Plan transport, hôtel et apéro pré-match pour la team."
     }
   ]
 }

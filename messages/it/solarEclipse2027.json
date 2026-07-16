@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "title": "Eclissi totale 2 ago 2027: viaggio in Egitto e Spagna",
+    "description": "Organizza in gruppo l’eclissi totale del 2 agosto 2027: 6 min 23 s di totalità su Luxor, Egitto o Spagna, crociera sul Nilo e occhiali ISO 12312-2."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Eclissi solare 2027: pianifica il viaggio"
+  },
+  "hero": {
+    "tag": "Guida astroturismo e pianificatore di viaggi di gruppo · agosto 2027",
+    "title": "Eclissi solare totale, 2 agosto 2027: il viaggio tra Egitto e Spagna",
+    "intro": "Lunedì 2 agosto 2027. L’ombra della Luna tocca l’Atlantico, sfiora la Spagna meridionale e Gibilterra, attraversa Marocco, Algeria, Tunisia e Libia, poi arriva sull’Alto Egitto — dove la totalità raggiunge 6 minuti e 23 secondi sulla linea centrale, con il Sole quasi allo zenit. Secondo i calcoli di Fred Espenak è la totalità più lunga visibile da terra facilmente accessibile fino al 3 giugno 2114. Luxor è il pezzo forte, e mancano più o meno dodici mesi — motivo per cui le decisioni di gruppo vanno prese adesso, non la primavera prossima. Questa è la guida completa: Egitto o Spagna, la questione crociera sul Nilo, il kit di sicurezza e come tenere insieme un gruppo per un anno intero di preparativi. Se stai ancora scegliendo gli strumenti, guarda il nostro <apps>confronto tra le app per viaggi di gruppo</apps>.",
+    "readTime": "12 min di lettura",
+    "ctaButton": "Organizza il nostro viaggio-eclissi",
+    "ctaNote": "Gratis · pensato per i gruppi · 8 lingue"
+  },
+  "facts": {
+    "heading": "L’eclissi in numeri",
+    "dateLabel": "Data",
+    "dateValue": "Lun 2 ago",
+    "totalityLabel": "Totalità max",
+    "totalitySub": "linea centrale, Alto Egitto",
+    "pathLabel": "Percorso",
+    "pathSub": "10 Paesi in tutto",
+    "nextLabel": "Prossima più lunga",
+    "nextSub": "3 giugno 2114"
+  },
+  "stakes": {
+    "p1": "Quasi tutte le eclissi totali ti regalano due minuti e una scommessa sul meteo. Questa è diversa su entrambi i fronti. Sulla linea centrale egiziana la totalità dura 6 minuti e 23 secondi, e Luxor stessa arriva a 6 minuti e 22 secondi con il Sole a 81,7° sull’orizzonte — praticamente sopra la testa, ed è per questo che la corona si staglia su un cielo davvero scuro e non su un bagliore da tramonto. L’altra metà della storia è la climatologia: il meteorologo delle eclissi Jay Anderson scrive che su Libia ed Egitto “le nuvole sono praticamente sconosciute nei mesi estivi”, e che la copertura nuvolosa per questa eclissi è “tra le più basse che abbia analizzato negli ultimi 45 anni”. Il rovescio della medaglia è che chiunque insegua le eclissi lo sa già. I tour operator di fascia alta vendono Luxor dal 2024. L’altra opzione onesta è la Spagna del sud — Tarifa, Algeciras, Gibilterra e Ceuta ottengono 4 minuti e mezzo, a due ore di volo da gran parte d’Europa, ed è il seguito naturale dell’<sibling>eclissi del 12 agosto 2026 su Islanda e Spagna</sibling>. Egitto o Spagna è un bivio vero, ed è una decisione di gruppo, non da prendere da soli.",
+    "p2": "WePlanify è il quartier generale condiviso e gratuito per un gruppo che punta a questa eclissi — il sondaggio Egitto contro Spagna, la fascia di budget che tutti possono davvero permettersi, gli acconti spalmati su dodici mesi e il piano minuto per minuto del giorno dell’eclissi, tutto in un unico posto."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "path": "Il percorso della totalità",
+    "where": "Egitto, Spagna o crociera sul Nilo",
+    "safety": "Sicurezza, occhiali e caldo",
+    "logistics": "Voli e alloggi",
+    "planning": "Organizzarsi su 12 mesi",
+    "budget": "Consigli sul budget",
+    "faq": "Domande frequenti"
+  },
+  "path": {
+    "title": "Il percorso della totalità",
+    "subtitle": "L’ombra tocca la Terra nell’Atlantico alle 08:23 UTC e lascia il pianeta nell’Oceano Indiano alle 11:50 UTC. In mezzo, dieci Paesi — e la durata quasi triplica da un capo all’altro.",
+    "items": [
+      {
+        "stop": "Oceano Atlantico — primo contatto",
+        "desc": "L’ombra tocca l’Atlantico aperto alle 08:23:25 UTC, attorno a 28°N 44°O. Lì non c’è niente da vedere se non acqua; poi corre verso est-sudest fino allo Stretto di Gibilterra, guadagnando durata lungo tutto il tragitto."
+      },
+      {
+        "stop": "Spagna e Gibilterra — l’estremità europea",
+        "desc": "Arrivo sull’Andalusia verso le 10:47 CEST, con il Sole a circa 38° di altezza. Ceuta ottiene 4 min 48 s, Tarifa 4 min 38 s, Algeciras 4 min 27 s, Gibilterra 4 min 25 s, Melilla 4 min 32 s. Più avanti lungo la costa i numeri crollano in fretta: Marbella 3 min 16 s, Cádiz circa 2 min 51 s, Málaga solo circa 1 min 49 s, Jerez circa 1 min 36 s. La linea centrale manca del tutto la Spagna continentale — solo il bordo settentrionale della fascia sfiora l’Andalusia, quindi pochi chilometri di auto cambiano enormemente il risultato. Siviglia (98,4%), Granada (99,2%), Huelva (98,2%) e la città di Almería vedono una parziale profonda e nessuna totalità."
+      },
+      {
+        "stop": "Marocco — Tangeri e Tétouan",
+        "desc": "L’ombra attraversa lo stretto in pochi minuti. Tangeri e Tétouan ottengono entrambe 4 min 50 s — poco più di qualsiasi punto in Spagna — alle 08:47 UTC con il Sole attorno ai 38°. Chefchaouen arriva a 4 min 13 s, Al Hoceima 4 min 24 s, Nador 4 min 15 s. Rabat (98,1%), Fès (97,9%) e Casablanca (96,8%) vedono solo la parziale. Attenzione: il Marocco è tornato all’ora GMT tutto l’anno a settembre 2026, quindi qui l’ora locale coincide con UTC — diversi siti dedicati alle eclissi pubblicano ancora questi orari con un’ora di ritardo."
+      },
+      {
+        "stop": "Algeria, Tunisia e Libia — il vuoto centrale",
+        "desc": "Il tracciato percorre tutto il Nord Africa, ed è qui che la durata supera i cinque minuti e la climatologia diventa quasi assurdamente buona. La nota di Anderson secondo cui “le nuvole sono praticamente sconosciute nei mesi estivi” su Libia ed Egitto copre tutto questo tratto. In pratica, però, sono accessibilità, infrastrutture e avvisi di viaggio — non il meteo — a escludere quasi tutta questa tappa per un gruppo normale."
+      },
+      {
+        "stop": "Egitto — Luxor e la linea centrale (l’evento principale)",
+        "desc": "Luxor: la totalità inizia alle 13:02:14, massimo alle 13:05:26, fine alle 13:08:36 ora locale (EEST, UTC+3) — 6 minuti e 22 secondi con il Sole a 81,7°. La durata massima dell’intero percorso, 6 min 23,2 s, cade circa 195 km a nord-ovest di Luxor, vicino a Sohag; il punto di massima eclissi (6 min 22,6 s), che è un’altra cosa, si trova a circa 58 km a est-sudest della città. Il punto pratico: Luxor è già a pochi secondi dal massimo teorico, quindi non c’è alcun motivo di inseguire la linea centrale. Anche Sohag ottiene 6 min 22 s, Qena 6 min 10 s, Asyut 6 min 06 s, Marsa Alam 5 min 28 s. Assuan resta fuori dalla fascia — si ferma al 99,83% di parziale, come Hurghada (98,5%) e Il Cairo (94,8%)."
+      },
+      {
+        "stop": "Dal Sudan all’Oceano Indiano — la coda",
+        "desc": "Il percorso sfiora un angolo remoto e senza strade del Sudan nord-orientale, poi attraversa il Mar Rosso verso l’Arabia Saudita — La Mecca è dentro la fascia con circa 5 minuti di totalità — prima di Yemen e Somalia. L’ombra lascia la Terra sull’Oceano Indiano alle 11:49:53 UTC."
+      }
+    ]
+  },
+  "where": {
+    "title": "Egitto, Spagna o crociera sul Nilo",
+    "subtitle": "Tre opzioni oneste con compromessi davvero diversi. È la decisione da cui dipende tutto il viaggio, e quella che ha più probabilità di spaccare un gruppo — quindi prendila con consapevolezza.",
+    "option1": {
+      "tag": "Opzione 1",
+      "title": "Luxor, da terra",
+      "desc": "L’esperienza massima: 6 min 22 s, Sole a 81,7° sopra la testa e una climatologia che Anderson definisce tra le meno nuvolose analizzate in 45 anni — Luxor è il punto in cui la frazione di nuvole comincia appena a staccarsi da zero. In più hai la Valle dei Re e Karnak prima e dopo l’eclissi. Compromessi: è un lungo raggio, la massima media del 2 agosto è di 42 °C e la fascia alta degli alloggi vende dal 2024."
+    },
+    "option2": {
+      "tag": "Opzione 2",
+      "title": "Crociera sul Nilo",
+      "desc": "Una barca è un hotel galleggiante, il che aggira elegantemente la penuria di camere a Luxor e vale anche come viaggio turistico. La crociera-eclissi charter di Sky & Telescope è stata proposta a $6,950–$12,750 a persona, e diversi operatori danno le loro barche 2027 già sold out. Compromessi: è di gran lunga la fascia più cara, l’itinerario è fisso e il gruppo deve impegnarsi — e versare gli acconti — con largo anticipo."
+    },
+    "option3": {
+      "tag": "Opzione 3",
+      "title": "Spagna del sud o Tangeri",
+      "desc": "Tarifa (4 min 38 s), Algeciras, Gibilterra (4 min 25 s) o Ceuta (4 min 48 s) — volo corto, nessun visto per chi viaggia dall’UE, e a Cádiz c’è sole circa nell’88% dei giorni di inizio agosto. Tangeri ottiene 4 min 50 s ed è a un’ora di traghetto da Tarifa. Compromessi: circa 90 secondi di totalità in meno, un Sole a 38° invece che allo zenit, e la città di Málaga resta sotto i due minuti — devi metterti in auto verso sud-ovest."
+    },
+    "outro": "Qui non c’è una risposta sbagliata, solo il rischio che ciò che il gruppo dice di volere non coincida con ciò che è davvero disposto a pagare. Se la risposta onesta è “vogliamo un’eclissi totale ma non un budget da lungo raggio”, la Spagna del sud è un bel viaggio, non un premio di consolazione. E se il 2027 è del tutto fuori portata, l’<sibling>eclissi del 12 agosto 2026 tra Islanda e Spagna settentrionale</sibling> arriva prima ed è molto più economica da raggiungere dall’Europa."
+  },
+  "midCta": {
+    "title": "Egitto o Spagna?",
+    "subtitle": "Metti subito le due opzioni davanti al gruppo — a dodici mesi di distanza la risposta cambia ancora qualcosa.",
+    "button": "Lancia il sondaggio"
+  },
+  "safety": {
+    "title": "Sicurezza, occhiali e caldo",
+    "subtitle": "Due pericoli reali in questo viaggio, e nessuno dei due è l’eclissi in sé. Uno è guardare la fase parziale senza protezione. L’altro sono 42 °C a mezzogiorno.",
+    "card1": {
+      "title": "Occhiali ISO 12312-2 — l’unica cosa che funziona",
+      "desc": "Ti servono occhiali per l’osservazione solare certificati ISO 12312-2:2015, con la marcatura sul filtro stesso, più il marchio CE in Europa. Nient’altro va bene: né due o tre paia di occhiali da sole sovrapposti, né vetro affumicato, né negativi fotografici esposti, né vetro da saldatore sotto il grado 14. La retinopatia solare è indolore — la retina non ha recettori del dolore — quindi non c’è nessun segnale che ti dica di distogliere lo sguardo, e il danno può essere permanente. Gli occhiali si degradano: sostituisci qualsiasi paio con più di tre anni e controlla graffi o microfori prima di partire. Compra un paio certificato a testa più uno di scorta ogni quattro persone, prendili da un fornitore identificabile e fallo molto prima della corsa dell’ultimo momento. Durante la totalità — e solo se sei davvero dentro la fascia — puoi e devi guardare a occhio nudo. Nell’istante in cui riappare il primo spicchio di Sole, gli occhiali tornano su."
+    },
+    "card2": {
+      "title": "Il caldo dell’Alto Egitto è un pericolo vero",
+      "desc": "Il dato di Anderson per Luxor: una massima media di 42,0 °C il 2 agosto sugli ultimi 17 anni, con pochissima variabilità da un anno all’altro e un record di 46 °C. La totalità cade alle 13:05 locali — picco di calore, Sole quasi verticale, zero pioggia, praticamente nessuna ombra in un punto di osservazione nel deserto. La consolazione è che l’umidità è bassissima, quindi il sudore funziona davvero. Organizzati sul serio: molta più acqua di quanta ti sembri necessaria, elettroliti, cappello e maniche lunghe leggere invece della pelle scoperta, e un piano ombra per le due ore prima della totalità, quando sei lì in piedi ad aspettare. L’aria si rinfresca in modo percepibile durante quei sei minuti — è una delle parti migliori di una totalità lunga — ma non è una strategia contro il caldo. Se qualcuno del gruppo soffre il caldo, è anziano o prende farmaci sensibili alle alte temperature, il tema va affrontato quando si sceglie la destinazione, non nella lista dei bagagli."
+    },
+    "card3": {
+      "title": "Telefoni, fotocamere e il problema della foto di gruppo",
+      "desc": "Puntare un telefono o una fotocamera senza filtro sulla fase parziale può danneggiare il sensore, e inquadrare attraverso lo schermo o il mirino non è comunque un modo sicuro di guardare il Sole. Se vuoi fotografare la parziale, usa un vero filtro solare a vite o magnetico. Detto chiaramente, però: sei minuti sono abbastanza lunghi perché a qualcuno del gruppo vada detto, esplicitamente, che il suo compito è non filmare. Una totalità lunga è rara proprio perché ti dà il tempo di guardare davvero, e un gruppo che passa tutti e sei i minuti dietro uno schermo ha pagato un viaggio caro per fissare un piccolo rettangolo."
+    }
+  },
+  "logistics": {
+    "title": "Voli e alloggi",
+    "subtitle": "A dodici mesi hai ancora scelta vera. Il vincolo non sono i voli — è che i letti più noti lungo la linea centrale spariscono per primi, e il giorno dell’eclissi ci si muove poco.",
+    "gettingThere": "Come arrivarci",
+    "egyptLabel": "Egitto",
+    "egyptItems": [
+      "→ Volo diretto su Luxor (LXR), oppure via Il Cairo (CAI) più un salto interno di circa 1 h",
+      "→ Quasi tutte le nazionalità hanno bisogno del visto egiziano — l’e-visa è semplice ma non istantaneo",
+      "→ La città di Luxor ottiene 6 min 22 s: niente caccia alla linea centrale, niente trasferimento la mattina dell’eclissi",
+      "→ Hurghada (HRG) è un volo low cost frequente ma è solo al 98,5% di parziale — dovresti spostarti in giornata",
+      "→ Le sistemazioni premium per l’eclissi (Sofitel Winter Palace, barche charter sul Nilo) sono già date sold out dagli operatori",
+      "→ Sohag (6 min 22 s) e Qena (6 min 10 s) sono alternative se a Luxor finiscono i letti"
+    ],
+    "spainLabel": "Spagna e Marocco",
+    "spainItems": [
+      "→ Málaga (AGP) o Jerez (XRY), corto raggio da gran parte d’Europa, poi auto verso sud-ovest",
+      "→ Tarifa 4 min 38 s, Algeciras 4 min 27 s, Gibilterra 4 min 25 s, Ceuta 4 min 48 s",
+      "→ La città di Málaga solo ~1 min 49 s — restare lì senza muoversi è l’errore classico",
+      "→ Siviglia, Granada, Huelva e la città di Almería vedono solo la parziale, per quanto vicine sembrino sulla mappa",
+      "→ Il traghetto Tarifa → Tangeri è di circa 1 h, se vuoi i 4 min 50 s del Marocco",
+      "→ Inizio agosto è alta stagione in Andalusia — questa costa si riempie per motivi che con l’eclissi non c’entrano nulla"
+    ]
+  },
+  "planning": {
+    "title": "Organizzarsi su una finestra di 12 mesi",
+    "p1": "Dodici mesi di margine sembrano un lusso e sono in realtà la parte difficile. Al dodicesimo mese nessuno sente urgenza, al secondo sono tutti nel panico, e le decisioni buone stanno tutte all’inizio. Parti dall’unica domanda che conta: Egitto o Spagna. Non discuterne nella chat di gruppo, dove diventa una guerra di logoramento vinta dal più insistente. Lancia un <polls>sondaggio di gruppo</polls> con i compromessi messi nero su bianco — lungo raggio più 42 °C più un budget serio per sei minuti e un Sole allo zenit, contro un weekend corto per quattro minuti e mezzo. Le persone scelgono in modo diverso quando i costi e i vantaggi stanno sullo stesso schermo, e scopri subito chi viene davvero.",
+    "p2": "Poi fissa la fascia di budget prima che qualcuno prenoti qualsiasi cosa, perché in questo viaggio la fascia È il viaggio. Un soggiorno a Luxor da terra e una crociera charter sul Nilo sono due vacanze diverse a due prezzi diversi, e un gruppo che non ha concordato la cifra scoprirà il disaccordo nel momento peggiore possibile: dopo gli acconti. Metti gli impegni per iscritto, spalma gli acconti sull’anno invece di concentrarli in un mese solo, e sii esplicito su cosa succede se qualcuno si tira indietro al terzo mese invece che all’undicesimo. La nostra <guide>guida ai viaggi di gruppo</guide> affronta più nel dettaglio le conversazioni scomode sui soldi: fatele adesso, finché costano poco.",
+    "p3": "Avvicinandosi alla data, il giorno dell’eclissi merita un piano tutto suo. A Luxor la totalità va dalle 13:02:14 alle 13:08:36 locali, e tutto il resto della giornata si costruisce a ritroso da lì: essere in posizione con ore di anticipo, sapere esattamente dove sarà il Sole, concordare un punto di ritrovo e mettere in conto che le reti mobili andranno in crisi quando un’intera città guarda in alto nello stesso momento. Mettilo in un <itinerary>itinerario condiviso</itinerary> che tutti possano vedere offline. Sei minuti sono una totalità lunga, ma restano sei minuti — il piano serve perché nessuno ne sprechi neanche uno a cercare il gruppo."
+  },
+  "budget": {
+    "title": "Consigli sul budget",
+    "p1": "I viaggi per un’eclissi ribaltano la logica del budget: il prezzo lo fa la scarsità, non la distanza. Qui le fasce sono lontanissime tra loro — un weekend lungo in Spagna, un soggiorno a Luxor da terra e una crociera-eclissi charter sono tre ordini di grandezza diversi, e la crociera di Sky & Telescope è stata proposta a $6,950–$12,750 a persona. Apri subito un <budget>tracker del budget condiviso</budget>, mettici dentro la cifra vera e lascia che ognuno dica onestamente se ci sta o no, invece di scoprire il totale al decimo mese. L’errore più caro in un viaggio così non è pagare troppo — è un gruppo di sei che in silenzio diventa un gruppo di tre dopo che gli acconti non sono più rimborsabili.",
+    "p2": "Su una finestra di un anno, segna chi ha anticipato cosa mentre succede, non alla fine. Acconti, un volo interno, il saldo della barca e sei paia di occhiali distribuiti su dodici mesi sono esattamente il genere di cose che nessuno ricorda con precisione, e ricostruire tutto a memoria a luglio 2027 è il modo in cui viaggi ottimi finiscono male. Registra ogni spesa il giorno stesso e fate i conti una volta sola.",
+    "p3": "Non risparmiare sugli occhiali. Un paio certificato ISO 12312-2 costa pochi euro — un errore di arrotondamento rispetto ai voli — ed è l’unica voce del budget in cui tagliare può ferire qualcuno in modo permanente. Comprane uno a testa, aggiungi delle scorte e prendili in anticipo da un fornitore di cui sai il nome."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Quando e dove si vede l’eclissi solare totale del 2 agosto 2027?",
+        "a": "Lunedì 2 agosto 2027. L’ombra tocca la Terra nell’Atlantico alle 08:23 UTC e la lascia sull’Oceano Indiano alle 11:50 UTC. In mezzo, la fascia di totalità attraversa dieci Paesi: Spagna, Marocco, Algeria, Tunisia, Libia, Egitto, Sudan, Arabia Saudita, Yemen e Somalia, più Gibilterra. La totalità massima è di 6 minuti e 23 secondi sulla linea centrale egiziana. Luxor, il punto di riferimento pratico, ottiene 6 minuti e 22 secondi con la totalità dalle 13:02:14 alle 13:08:36 ora locale (EEST, UTC+3) e il Sole a 81,7° sull’orizzonte."
+      },
+      {
+        "q": "È davvero l’eclissi solare totale più lunga del secolo?",
+        "a": "Non proprio, e la distinzione conta. L’eclissi del 22 luglio 2009 è stata più lunga, 6 minuti e 39 secondi — ma il suo massimo è caduto sul Pacifico aperto, con la terra più vicina che era un’isola disabitata. Quello che è vero, e che i calcoli di Fred Espenak confermano, è che il 2 agosto 2027 offre la totalità più lunga visibile da terra facilmente accessibile nel XXI secolo, e che una più lunga non arriverà prima del 3 giugno 2114. La formula di Sky & Telescope è la più pulita: è la totalità più lunga dei prossimi 87 anni. Se leggi “l’eclissi più lunga del secolo” senza precisazioni, l’affermazione è sbagliata."
+      },
+      {
+        "q": "Egitto o Spagna — cosa dovrebbe scegliere il nostro gruppo?",
+        "a": "Egitto se vuoi che l’eclissi sia il viaggio. Luxor regala 6 minuti e 22 secondi con il Sole quasi allo zenit, in un clima dove Jay Anderson osserva che d’estate le nuvole sono praticamente sconosciute — valuta la copertura nuvolosa di questa eclissi tra le più basse analizzate in 45 anni. Spagna se il vincolo è il budget, le ferie o riuscire a far impegnare davvero un gruppo di otto. Tarifa ottiene 4 min 38 s e Ceuta 4 min 48 s, con un volo corto, e a Cádiz c’è sole circa nell’88% dei giorni di inizio agosto. Novanta secondi di totalità sono una differenza vera, ma lo è anche il divario di prezzo. La prova di onestà: il gruppo preferisce sei minuti una volta sola, o quattro minuti e mezzo con tutti che si parlano ancora?"
+      },
+      {
+        "q": "Perché Luxor è il posto giusto se la linea centrale è altrove?",
+        "a": "Perché la differenza è irrisoria e le infrastrutture no. Il punto di durata massima — 6 min 23,2 s — è a circa 195 km a nord-ovest di Luxor, vicino a Sohag, e il punto di massima eclissi (6 min 22,6 s), che è un’altra cosa, è a circa 58 km a est-sudest della città. Luxor stessa ottiene 6 min 22 s. Guideresti per ore nel deserto per guadagnare meno di due secondi, rinunciando ad alberghi, trasporti, ombra e Valle dei Re. Inseguire la linea centrale in questa eclissi è uno dei rari casi in cui la matematica dice chiaramente di no."
+      },
+      {
+        "q": "Crociera sul Nilo o base a terra a Luxor?",
+        "a": "Una crociera risolve il problema dell’alloggio portandosi dietro l’alloggio, e trasforma l’eclissi in un viaggio completo in Egitto invece che in un singolo evento — la crociera charter di Sky & Telescope è stata proposta a $6,950–$12,750 a persona, e diversi operatori danno le loro barche 2027 sold out. Restare a terra a Luxor costa meno ed è più flessibile, ti mette comunque a pochi secondi dal massimo e ti lascia scegliere il punto di osservazione. Per un gruppo, il fattore decisivo di solito è la liquidità e l’impegno: una crociera chiede a tutti un acconto grosso in anticipo, ed è una prova concreta di quanto il gruppo ci sia davvero."
+      },
+      {
+        "q": "Quanto fa caldo a Luxor a inizio agosto, davvero?",
+        "a": "Il dato di Jay Anderson è una massima media di 42,0 °C il 2 agosto a Luxor sugli ultimi 17 anni, con pochissima variazione da un anno all’altro e un record di 46 °C. La totalità cade alle 13:05 ora locale — la parte più calda della giornata, con il Sole quasi verticale e zero pioggia. L’umidità è bassissima, il che aiuta davvero, ma non è un dettaglio da scoprire all’arrivo. Prevedi idratazione seria, ombra per l’attesa prima della totalità e una conversazione onesta con chiunque nel gruppo per cui 42 °C prolungati siano un problema medico e non un fastidio."
+      },
+      {
+        "q": "Che occhiali servono e quando comprarli?",
+        "a": "Occhiali per l’osservazione solare certificati ISO 12312-2:2015, con la certificazione marcata sul filtro e, in Europa, il marchio CE. Gli occhiali da sole non vanno bene, per quanto scuri, e non vanno bene nemmeno vetro affumicato, negativi fotografici o vetro da saldatore sotto il grado 14. La retinopatia solare è indolore, quindi niente ti avverte che sta succedendo. Compra un paio certificato a testa più uno di scorta ogni quattro persone, da un fornitore identificabile, e fallo molto prima della corsa finale — le scorte si assottigliano man mano che i media ne parlano. Sostituisci tutto ciò che ha più di tre anni e controlla che non ci siano microfori. Solo durante la totalità, e solo dentro la fascia, si guarda a occhio nudo."
+      },
+      {
+        "q": "È troppo tardi per organizzarsi per il 2027?",
+        "a": "No — ma la fascia premium sta andando via, non è ancora andata. Gli operatori che vendono barche charter sul Nilo e gli hotel più noti di Luxor prendono prenotazioni dal 2024 e diversi risultano sold out. Questo limita la fascia alta, non il viaggio: Luxor è una città vera, Sohag ottiene 6 min 22 s e Qena 6 min 10 s, e tutto il tratto spagnolo e marocchino del percorso è un normale viaggio a corto raggio a cui la maggior parte dei gruppi non ha ancora pensato. A dodici mesi, la risorsa scarsa è l’accordo nel gruppo, non la disponibilità. Blocca adesso destinazione e fascia di budget e il resto viene da sé."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "eclipse2026": { "title": "Eclissi solare 2026: pianifica il viaggio", "desc": "La totalità del 12 agosto 2026 su Islanda e Spagna settentrionale — un anno prima e molto più vicina a casa.", "cta": "Leggi di più →" },
+    "rugby2027": { "title": "Coppa del Mondo di Rugby 2027: pianifica il viaggio", "desc": "L’altro grande viaggio del 2027: Australia, sei settimane, un gruppo e un calendario di partite.", "cta": "Leggi di più →" },
+    "bestApps": { "title": "Le migliori app per viaggi di gruppo", "desc": "Un confronto onesto tra gli strumenti per organizzare un viaggio con altre persone.", "cta": "Confronta le app →" },
+    "groupGuide": { "title": "Guida ai viaggi di gruppo", "desc": "La guida completa, passo dopo passo, per organizzare un viaggio in gruppo.", "cta": "Leggi la guida →" }
+  },
+  "cta": {
+    "title": "Costruisci il tuo viaggio-eclissi 2027",
+    "subtitle": "Sondaggio Egitto contro Spagna, fascia di budget su cui tutti sono d’accordo, acconti tracciati su dodici mesi e un piano minuto per minuto per il giorno dell’eclissi — un solo piano, tutta la tua crew allineata.",
+    "button": "Lancia il sondaggio Egitto o Spagna"
+  },
+  "jsonld": {
+    "articleHeadline": "Eclissi solare totale del 2 agosto 2027: pianifica il viaggio tra Egitto e Spagna",
+    "eventName": "Eclissi solare totale del 2 agosto 2027",
+    "eventDescription": "Eclissi solare totale di lunedì 2 agosto 2027. La fascia di totalità attraversa la Spagna meridionale, Gibilterra, il Marocco, l’Algeria, la Tunisia, la Libia, l’Egitto, il Sudan, l’Arabia Saudita, lo Yemen e la Somalia. La totalità massima è di 6 minuti e 23 secondi sulla linea centrale, nell’Alto Egitto; Luxor vede 6 minuti e 22 secondi con il Sole a 81,7° sull’orizzonte. È la totalità più lunga visibile da terra facilmente accessibile nel XXI secolo — la prossima più lunga cade il 3 giugno 2114.",
+    "howToName": "Come organizzare in gruppo un viaggio per l’eclissi solare totale del 2027",
+    "howToDescription": "A dodici mesi di distanza, ecco come chiudere questo viaggio: decidere in gruppo tra Egitto e Spagna, concordare la fascia di budget prima che qualcuno prenoti, procurarsi occhiali ISO 12312-2 e un piano anti-caldo, e costruire la tabella di marcia del giorno dell’eclissi attorno alla totalità.",
+    "howToSteps": [
+      {
+        "name": "Decidete tra Egitto e Spagna del sud — in gruppo e presto",
+        "text": "Il bivio è 6 min 22 s a Luxor con il Sole a 81,7° e una climatologia quasi senza nuvole, contro 4 min 38 s a Tarifa con un volo corto. Da una parte lungo raggio, massime medie di 42 °C e un budget molto più alto; dall’altra un weekend economico e accessibile. Lancia un sondaggio di gruppo con i compromessi messi per iscritto invece di lasciare che decida la chat per sfinimento, e scopri già al dodicesimo mese chi viene davvero."
+      },
+      {
+        "name": "Concordate la fascia di budget prima che qualcuno prenoti qualsiasi cosa",
+        "text": "Un weekend lungo in Spagna, un soggiorno a Luxor da terra e una crociera charter sul Nilo (proposta a $6,950–$12,750 a persona da Sky & Telescope) sono tre viaggi diversi a tre prezzi diversi. Fissate prima la cifra, mettetela in un budget condiviso, spalmate gli acconti sui dodici mesi invece di concentrarli in un mese brutale, e mettetevi d’accordo su cosa succede se qualcuno si tira indietro all’ultimo."
+      },
+      {
+        "name": "Prenotate letti e voli, poi ordinate il kit di sicurezza",
+        "text": "La città di Luxor ottiene 6 min 22 s, quindi non serve inseguire la linea centrale; Sohag (6 min 22 s) e Qena (6 min 10 s) sono i piani B se Luxor si riempie. In Spagna, vola su Málaga o Jerez e guida verso sud-ovest — la città di Málaga resta sotto i due minuti. Ordina un paio certificato ISO 12312-2 a testa più le scorte molto prima della corsa finale, e organizzati per il caldo: idratazione, ombra e maniche lunghe per una totalità alle 13:05 con 42 °C."
+      },
+      {
+        "name": "Costruite la tabella di marcia del giorno dell’eclissi attorno alla totalità",
+        "text": "A Luxor la totalità va dalle 13:02:14 alle 13:08:36 locali (EEST). Lavorate a ritroso: essere in posizione con ore di anticipo, sapere dove sarà il Sole, fissare un punto di ritrovo e mettere in conto reti mobili in difficoltà. Mettete tutto in un itinerario condiviso che il gruppo possa aprire offline, e decidete in anticipo chi fotografa e chi si limita a guardare."
+      }
+    ]
+  }
+}

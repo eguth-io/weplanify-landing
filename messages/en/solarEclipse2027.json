@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "title": "Total Solar Eclipse 2 Aug 2027: Egypt & Spain Trip Planner",
+    "description": "Plan the 2 Aug 2027 total solar eclipse with your group: 6 min 23 s over Luxor, the path across Spain and Egypt, Nile cruise vs land, and ISO 12312-2 glasses."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Solar Eclipse 2027 Trip Planner"
+  },
+  "hero": {
+    "tag": "Astrotourism guide & group trip planner · August 2027",
+    "title": "Total Solar Eclipse, 2 August 2027: Egypt & Spain Trip Planner",
+    "intro": "Monday 2 August 2027. The Moon’s shadow lands in the Atlantic, clips southern Spain and Gibraltar, crosses Morocco, Algeria, Tunisia and Libya, then reaches Upper Egypt — where totality runs to 6 minutes 23 seconds on the centreline, with the Sun almost straight overhead. Fred Espenak’s figures make this the longest totality visible from easily accessible land until 3 June 2114. Luxor is the centrepiece, and it is roughly twelve months away — which is exactly why the group decisions have to start now, not next spring. This is the complete guide to picking Egypt or Spain, the Nile cruise question, the safety kit, and holding a group together across a year-long planning window. If you’re still choosing your tools, see our <apps>comparison of group travel apps</apps>.",
+    "readTime": "12 min read",
+    "ctaButton": "Plan our eclipse trip",
+    "ctaNote": "Free · built for groups · 8 languages"
+  },
+  "facts": {
+    "heading": "Eclipse facts",
+    "dateLabel": "Date",
+    "dateValue": "Mon 2 Aug",
+    "totalityLabel": "Max totality",
+    "totalitySub": "centreline, Upper Egypt",
+    "pathLabel": "Path",
+    "pathSub": "10 countries in all",
+    "nextLabel": "Next longer",
+    "nextSub": "3 June 2114"
+  },
+  "stakes": {
+    "p1": "Most total eclipses hand you two minutes and a coin-flip on the weather. This one is different on both counts. On the Egyptian centreline totality lasts 6 minutes 23 seconds, and Luxor itself gets 6 minutes 22 seconds with the Sun 81.7° above the horizon — nearly straight up, which is why the corona sits in a genuinely dark sky rather than a sunset glow. The climatology is the other half of the story: eclipse meteorologist Jay Anderson writes that over Libya and Egypt “cloud is almost unknown in the summer months”, and that cloud cover for this eclipse is “among the lowest I’ve analyzed over the last 45 years”. The catch is that everyone who chases eclipses already knows this. Premium operators have been selling Luxor since 2024. The other honest option is southern Spain — Tarifa, Algeciras, Gibraltar and Ceuta get 4½ minutes, a two-hour flight from most of Europe, and it makes a natural sequel to the <sibling>12 August 2026 eclipse over Iceland and Spain</sibling>. Egypt or Spain is a real fork, and it is a group decision, not a solo one.",
+    "p2": "WePlanify is the free shared command centre for a group chasing this one — the Egypt-vs-Spain poll, the budget tier everyone can actually afford, deposits spread over twelve months, and the minute-by-minute plan for eclipse day, all in one place."
+  },
+  "toc": {
+    "title": "On this page",
+    "path": "The path of totality",
+    "where": "Egypt vs Spain vs Nile cruise",
+    "safety": "Safety, glasses & the heat",
+    "logistics": "Travel & accommodation",
+    "planning": "Planning across 12 months",
+    "budget": "Budget tips",
+    "faq": "Frequently asked questions"
+  },
+  "path": {
+    "title": "The Path of Totality",
+    "subtitle": "The umbra first touches Earth in the Atlantic at 08:23 UTC and leaves the planet in the Indian Ocean at 11:50 UTC. Ten countries in between — and the duration roughly triples from one end to the other.",
+    "items": [
+      {
+        "stop": "Atlantic Ocean — first contact",
+        "desc": "The umbra touches down in the open Atlantic at 08:23:25 UTC, around 28°N 44°W. Nothing to see there but water; the shadow then races east-southeast toward the Strait of Gibraltar, gaining duration the whole way."
+      },
+      {
+        "stop": "Spain & Gibraltar — the European end",
+        "desc": "Landfall in Andalusia around 10:47 CEST, with the Sun about 38° up. Ceuta gets 4 min 48 s, Tarifa 4 min 38 s, Algeciras 4 min 27 s, Gibraltar 4 min 25 s, Melilla 4 min 32 s. Further along the coast the numbers fall off fast: Marbella 3 min 16 s, Cádiz about 2 min 51 s, Málaga only about 1 min 49 s, Jerez about 1 min 36 s. The centreline misses mainland Spain entirely — only the northern edge of the path scrapes Andalusia, so a short drive changes your result enormously. Seville (98.4%), Granada (99.2%), Huelva (98.2%) and Almería city see a deep partial and no totality at all."
+      },
+      {
+        "stop": "Morocco — Tangier & Tétouan",
+        "desc": "The shadow crosses the strait in minutes. Tangier and Tétouan both get 4 min 50 s — slightly more than anywhere in Spain — at 08:47 UTC with the Sun around 38°. Chefchaouen gets 4 min 13 s, Al Hoceima 4 min 24 s, Nador 4 min 15 s. Rabat (98.1%), Fez (97.9%) and Casablanca (96.8%) are partial only. Note that Morocco returned to year-round GMT in September 2026, so local clock time here is UTC — several eclipse sites still publish these times an hour late."
+      },
+      {
+        "stop": "Algeria, Tunisia & Libya — the empty middle",
+        "desc": "The track runs the length of North Africa, and this is where duration climbs past five minutes and the climatology becomes almost absurdly good. Anderson’s note that “cloud is almost unknown in the summer months” over Libya and Egypt covers this whole stretch. In practice, access, infrastructure and travel advisories — not weather — are what rule most of this leg out for a normal group."
+      },
+      {
+        "stop": "Egypt — Luxor and the centreline (the main event)",
+        "desc": "Luxor: totality begins 13:02:14, maximum 13:05:26, ends 13:08:36 local time (EEST, UTC+3) — 6 minutes 22 seconds with the Sun 81.7° up. The greatest duration on the whole path, 6 min 23.2 s, falls about 195 km northwest of Luxor near Sohag; the separate point of greatest eclipse (6 min 22.6 s) sits roughly 58 km east-southeast of the city. The practical point: Luxor is already within a handful of seconds of the theoretical maximum, so there is no reason to chase the centreline. Sohag also gets 6 min 22 s, Qena 6 min 10 s, Asyut 6 min 06 s, Marsa Alam 5 min 28 s. Aswan is not in the path — it maxes out at 99.83% partial, as do Hurghada (98.5%) and Cairo (94.8%)."
+      },
+      {
+        "stop": "Sudan to the Indian Ocean — the tail",
+        "desc": "The path clips a remote, roadless corner of northeastern Sudan, then crosses the Red Sea into Saudi Arabia — Mecca sits in the path with roughly 5 minutes of totality — before Yemen and Somalia. The umbra lifts off the Earth over the Indian Ocean at 11:49:53 UTC."
+      }
+    ]
+  },
+  "where": {
+    "title": "Egypt vs Spain vs Nile Cruise",
+    "subtitle": "Three honest options with genuinely different trade-offs. This is the single decision the whole trip hangs on, and the one most likely to split a group — so make it deliberately.",
+    "option1": {
+      "tag": "Option 1",
+      "title": "Luxor, land-based",
+      "desc": "The maximum experience: 6 min 22 s, Sun 81.7° overhead, and climatology Anderson calls among the lowest cloud he has analysed in 45 years — Luxor is where the cloud fraction only just starts climbing above zero. You also get the Valley of the Kings and Karnak either side of the eclipse. Trade-offs: it’s long-haul, the average high on 2 August is 42°C, and the premium end of the accommodation market has been selling since 2024."
+    },
+    "option2": {
+      "tag": "Option 2",
+      "title": "Nile cruise",
+      "desc": "A boat is a floating hotel, which neatly sidesteps the Luxor room squeeze, and it doubles as the sightseeing trip. Sky & Telescope’s chartered eclipse cruise has listed at $6,950–$12,750 per person, and several operators show their 2027 boats already sold out. Trade-offs: it’s the priciest tier by a distance, the itinerary is fixed, and a group has to commit — and pay deposits — a long way out."
+    },
+    "option3": {
+      "tag": "Option 3",
+      "title": "Southern Spain or Tangier",
+      "desc": "Tarifa (4 min 38 s), Algeciras, Gibraltar (4 min 25 s) or Ceuta (4 min 48 s) — a short-haul flight, no visa for EU travellers, and Cádiz sees sun on about 88% of early-August days. Tangier gets 4 min 50 s and is a one-hour ferry from Tarifa. Trade-offs: about 90 seconds less totality, a 38° Sun rather than an overhead one, and Málaga city itself gets under two minutes — you must drive southwest."
+    },
+    "outro": "There is no wrong answer here, only a mismatch between what a group says it wants and what it will actually pay for. If the honest answer is “we want a total eclipse but not a long-haul budget”, southern Spain is a genuinely good trip and not a consolation prize. And if 2027 is out of reach entirely, the <sibling>12 August 2026 eclipse across Iceland and northern Spain</sibling> comes first and is much cheaper to reach from Europe."
+  },
+  "midCta": {
+    "title": "Egypt or Spain?",
+    "subtitle": "Put both options to the group now — twelve months out is when the answer still changes anything.",
+    "button": "Run the poll"
+  },
+  "safety": {
+    "title": "Safety, Glasses & the Heat",
+    "subtitle": "Two real hazards on this trip, and neither is the eclipse itself. One is looking at the partial phase unprotected. The other is 42°C at midday.",
+    "card1": {
+      "title": "ISO 12312-2 glasses — the only thing that works",
+      "desc": "You need solar viewing glasses certified to ISO 12312-2:2015, marked on the filter itself, plus the CE mark in Europe. Nothing else qualifies: not sunglasses stacked two or three deep, not smoked glass, not exposed photographic negatives, not welder’s glass below shade 14. Solar retinopathy is painless — the retina has no pain receptors — so there is no warning signal telling you to look away, and damage can be permanent. Glasses degrade: replace any pair more than three years old, and check for scratches or pinholes before you travel. Buy one certified pair per person plus a spare per four people, and buy them from a supplier you can identify, well before the pre-eclipse rush. During totality — and only if you are actually inside the path — you can and should look with the naked eye. The moment the first sliver of Sun returns, glasses go back on."
+    },
+    "card2": {
+      "title": "The heat in Upper Egypt is a genuine hazard",
+      "desc": "Anderson’s figure for Luxor: an average high of 42.0°C on 2 August across the past 17 years, with very little year-to-year spread and a record of 46°C. Totality lands at 13:05 local — peak heat, Sun near-vertical, zero rainfall, essentially no shade at a desert viewing site. The saving grace is that the humidity is very low, so sweat actually works. Plan it properly: far more water than feels necessary, electrolytes, a hat and light long sleeves rather than bare skin, and a shade plan for the two hours before totality when you are standing around waiting. The air does cool noticeably during those six minutes — that is one of the best parts of a long totality — but it is not a heat strategy. If anyone in the group is heat-sensitive, older, or on medication affected by heat, this belongs in the destination conversation, not the packing list."
+    },
+    "card3": {
+      "title": "Phones, cameras and the group photo problem",
+      "desc": "Pointing an unfiltered phone or camera at the partial phase can damage the sensor, and framing through the screen or a viewfinder is not a safe way to look at the Sun either. If you want to shoot the partial, use a proper screw-on or magnetic solar filter. Worth saying plainly, though: six minutes is long enough that someone in the group should be told, explicitly, that their job is to not film it. Long totality is rare precisely because it gives you time to actually look, and a group that spends all six minutes behind screens has bought an expensive trip to watch a small rectangle."
+    }
+  },
+  "logistics": {
+    "title": "Travel & Accommodation",
+    "subtitle": "Twelve months out you still have real choice. The constraint isn’t flights — it’s that the best-known beds along the centreline are the first to go, and eclipse-day movement is limited.",
+    "gettingThere": "Getting there",
+    "egyptLabel": "Egypt",
+    "egyptItems": [
+      "→ Fly to Luxor (LXR) direct, or via Cairo (CAI) plus a ~1 h domestic hop",
+      "→ Most nationalities need an Egyptian visa — the e-visa is straightforward but not instant",
+      "→ Luxor city gets 6 min 22 s: no centreline chase, no eclipse-morning drive needed",
+      "→ Hurghada (HRG) is a common cheap flight but only 98.5% partial — you’d have to move on the day",
+      "→ Premium eclipse inventory (Sofitel Winter Palace, chartered Nile boats) is already listed sold out by operators",
+      "→ Sohag (6 min 22 s) and Qena (6 min 10 s) are alternatives if Luxor beds run out"
+    ],
+    "spainLabel": "Spain & Morocco",
+    "spainItems": [
+      "→ Málaga (AGP) or Jerez (XRY), short-haul from most of Europe, then drive southwest",
+      "→ Tarifa 4 min 38 s, Algeciras 4 min 27 s, Gibraltar 4 min 25 s, Ceuta 4 min 48 s",
+      "→ Málaga city only ~1 min 49 s — staying there and not driving is the classic mistake",
+      "→ Seville, Granada, Huelva and Almería city are partial only, however close they look on a map",
+      "→ Tarifa → Tangier ferry is ~1 h if you want Morocco’s 4 min 50 s",
+      "→ Early August is peak Andalusian season — this coast books up for reasons unrelated to the eclipse"
+    ]
+  },
+  "planning": {
+    "title": "Planning Across a 12-Month Window",
+    "p1": "A twelve-month runway sounds like luxury and is actually the hard part. Nobody feels urgency at month twelve, everyone feels panic at month two, and the good decisions all live at the front. Start with the only question that matters: Egypt or Spain. Don’t debate it in a group chat, where it becomes a war of attrition that the most persistent person wins. Run a <polls>group poll</polls> with the trade-offs written out — long-haul plus 42°C plus a real budget for six minutes and an overhead Sun, versus a short-haul weekend for four and a half. People choose differently once the costs are on the same screen as the benefits, and you find out early who is actually coming.",
+    "p2": "Then set the budget tier before anyone books anything, because on this trip the tier is the trip. A land-based Luxor stay and a chartered Nile cruise are different holidays at different prices, and a group that hasn’t agreed the number will discover the disagreement at the worst possible moment — after deposits. Get commitments in writing, spread deposits across the year rather than landing them in one month, and be explicit about what happens if someone drops out at month three versus month eleven. Our <guide>group trip guide</guide> covers the awkward money conversations in more detail; have them now, while they are cheap.",
+    "p3": "Closer in, the eclipse day itself gets its own plan. Totality at Luxor runs 13:02:14 to 13:08:36 local, and everything else on that day works backwards from it: be in position hours early, know exactly where the Sun will be, agree a meeting point, and assume mobile networks will struggle when a whole city looks up at once. Put it in a <itinerary>shared itinerary</itinerary> everyone can see offline. Six minutes is a long totality, but it is still six minutes — the plan exists so that nobody spends any of them looking for the group."
+  },
+  "budget": {
+    "title": "Budget Tips",
+    "p1": "Eclipse trips break the usual budget shape: the trip is priced by scarcity, not by distance. The tiers here are far apart — a Spain long-weekend, a land-based Luxor stay, and a chartered eclipse cruise are three different orders of magnitude, and Sky & Telescope’s cruise has listed at $6,950 to $12,750 per person. Set up a <budget>shared budget tracker</budget> at the start, put the real number in it, and let people opt in or out honestly rather than discovering the total in month ten. The most expensive mistake on a trip like this isn’t overpaying — it’s a group of six quietly becoming a group of three after the deposits are non-refundable.",
+    "p2": "Over a year-long window, track who fronted what as it happens, not at the end. Deposits, an internal flight, a boat balance and six sets of glasses across twelve months is exactly the kind of thing nobody remembers accurately, and reconstructing it from memory in July 2027 is how otherwise good trips end badly. Log each expense the day it happens and settle up once.",
+    "p3": "Don’t economise on the glasses. A certified ISO 12312-2 pair costs a few euros — a rounding error against the flights — and it is the only line in the budget where cutting corners can permanently injure someone. Buy one per person, add spares, and buy them early from a supplier you can name."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "When and where is the total solar eclipse of 2 August 2027?",
+        "a": "Monday 2 August 2027. The umbra first touches Earth in the Atlantic at 08:23 UTC and leaves over the Indian Ocean at 11:50 UTC. In between, the path of totality crosses ten countries: Spain, Morocco, Algeria, Tunisia, Libya, Egypt, Sudan, Saudi Arabia, Yemen and Somalia, plus Gibraltar. Maximum totality is 6 minutes 23 seconds on the Egyptian centreline. Luxor, the practical centrepiece, gets 6 minutes 22 seconds with totality from 13:02:14 to 13:08:36 local time (EEST, UTC+3) and the Sun 81.7° above the horizon."
+      },
+      {
+        "q": "Is this really the longest total solar eclipse of the century?",
+        "a": "Not quite, and the distinction matters. The eclipse of 22 July 2009 was longer at 6 minutes 39 seconds — but its maximum fell over the open Pacific, with the nearest land an uninhabited island. What is true, and what Fred Espenak’s figures support, is that 2 August 2027 offers the longest totality visible from easily accessible land in the 21st century, and that a longer one won’t come until 3 June 2114. Sky & Telescope’s phrasing is the cleanest: it is the longest duration of totality for the next 87 years. If you see “the longest eclipse of the century” with no qualifier, that claim is wrong."
+      },
+      {
+        "q": "Egypt or Spain — which should our group pick?",
+        "a": "Egypt if you want the eclipse itself to be the trip. Luxor gives 6 minutes 22 seconds with the Sun nearly overhead, in a climate where Jay Anderson notes cloud is almost unknown in summer — he rates the cloud cover for this eclipse among the lowest he has analysed in 45 years. Spain if the constraint is budget, time off, or getting a group of eight to actually commit. Tarifa gets 4 minutes 38 s and Ceuta 4 minutes 48 s, on a short-haul flight, with Cádiz seeing sun on about 88% of early-August days. Ninety seconds of totality is a real difference, but so is the price gap. The honest test: would the group rather have six minutes once, or four and a half minutes and everyone still speaking to each other?"
+      },
+      {
+        "q": "Why is Luxor the centrepiece if the centreline is elsewhere?",
+        "a": "Because the difference is trivial and the infrastructure isn’t. The point of greatest duration — 6 min 23.2 s — is about 195 km northwest of Luxor near Sohag, and the separate point of greatest eclipse (6 min 22.6 s) is roughly 58 km east-southeast of the city. Luxor itself gets 6 min 22 s. You would drive hours into the desert to gain under two seconds, giving up hotels, transport, shade and the Valley of the Kings. Chasing the centreline on this eclipse is one of the few cases where the maths clearly says don’t."
+      },
+      {
+        "q": "Nile cruise or land-based in Luxor?",
+        "a": "A cruise solves the accommodation problem by bringing the accommodation, and it turns the eclipse into a full Egypt trip rather than a single event — Sky & Telescope’s chartered cruise has listed at $6,950 to $12,750 per person, and multiple operators show their 2027 boats sold out. Land-based in Luxor is cheaper and more flexible, puts you within seconds of the maximum anyway, and lets you choose your own viewing site. For a group, the deciding factor is usually cash flow and commitment: a cruise wants a large deposit early from everyone, which is a real test of whether the group is genuinely coming."
+      },
+      {
+        "q": "How hot is Luxor in early August, really?",
+        "a": "Jay Anderson’s figure is an average high of 42.0°C on 2 August at Luxor across the past 17 years, with very little variation year to year and a record of 46°C. Totality falls at 13:05 local time — the hottest part of the day, with the Sun near-vertical and no rainfall. The humidity is very low, which genuinely helps, but this is not a detail to discover on arrival. Plan for serious hydration, shade for the wait before totality, and an honest conversation with anyone in the group for whom sustained 42°C heat is a medical issue rather than an inconvenience."
+      },
+      {
+        "q": "What glasses do we need, and when should we buy them?",
+        "a": "Solar viewing glasses certified to ISO 12312-2:2015, with the certification marked on the filter and, in Europe, a CE mark. Sunglasses do not work at any darkness, and neither do smoked glass, photographic negatives or welder’s glass below shade 14. Solar retinopathy is painless, so nothing warns you it is happening. Buy one certified pair per person plus a spare per four, from an identifiable supplier, and buy well before the rush — supply tightens as media coverage builds. Replace anything over three years old and inspect for pinholes. During totality only, inside the path, you look with the naked eye."
+      },
+      {
+        "q": "Is it too late to plan for 2027?",
+        "a": "No — but the premium end is going, not gone. Operators selling chartered Nile boats and the best-known Luxor hotels have been taking bookings since 2024 and several list sold out. That constrains the top tier, not the trip: Luxor is a real city, Sohag gets 6 min 22 s and Qena 6 min 10 s, and the entire Spanish and Moroccan end of the path is a normal short-haul trip that most groups haven’t started thinking about. Twelve months out, the scarce resource is group agreement, not inventory. Lock the destination and the budget tier now and the rest follows."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "eclipse2026": { "title": "Solar Eclipse 2026 Trip Planner", "desc": "The 12 August 2026 totality over Iceland and northern Spain — a year earlier, and much closer to home.", "cta": "Read more →" },
+    "rugby2027": { "title": "Rugby World Cup 2027 Trip Planner", "desc": "The other big 2027 trip: Australia, six weeks, a group and a fixture list.", "cta": "Read more →" },
+    "bestApps": { "title": "Best Group Trip Planner Apps", "desc": "An honest comparison of the tools for planning a trip with other people.", "cta": "Compare apps →" },
+    "groupGuide": { "title": "Group Trip Guide", "desc": "The complete step-by-step guide to planning a trip with a group.", "cta": "Read the guide →" }
+  },
+  "cta": {
+    "title": "Build Your 2027 Eclipse Trip",
+    "subtitle": "Egypt-vs-Spain poll, budget tier everyone agrees on, deposits tracked across twelve months, and a minute-by-minute plan for eclipse day — one plan, your whole crew on the same page.",
+    "button": "Run the Egypt vs Spain poll"
+  },
+  "jsonld": {
+    "articleHeadline": "Total Solar Eclipse 2 August 2027: Trip Planner for Egypt & Spain",
+    "eventName": "Total Solar Eclipse of 2 August 2027",
+    "eventDescription": "Total solar eclipse on Monday 2 August 2027. The path of totality crosses southern Spain, Gibraltar, Morocco, Algeria, Tunisia, Libya, Egypt, Sudan, Saudi Arabia, Yemen and Somalia. Maximum totality is 6 minutes 23 seconds on the centreline in Upper Egypt; Luxor sees 6 minutes 22 seconds with the Sun 81.7° above the horizon. It is the longest totality visible from easily accessible land in the 21st century — the next longer one falls on 3 June 2114.",
+    "howToName": "How to plan a total solar eclipse 2027 trip with a group",
+    "howToDescription": "Twelve months out, here is how to lock this trip in: settle Egypt versus Spain as a group, agree the budget tier before anyone books, get ISO 12312-2 glasses and a heat plan, and build the eclipse-day timeline around totality.",
+    "howToSteps": [
+      {
+        "name": "Settle Egypt versus southern Spain — as a group, early",
+        "text": "The fork is 6 min 22 s at Luxor with an 81.7° Sun and near-zero cloud climatology, against 4 min 38 s at Tarifa on a short-haul flight. Long-haul, 42°C average highs and a much bigger budget on one side; a cheap accessible weekend on the other. Run a group poll with the trade-offs written down rather than letting a group chat decide by attrition, and find out at month twelve who is genuinely coming."
+      },
+      {
+        "name": "Agree the budget tier before anyone books anything",
+        "text": "A Spain long-weekend, a land-based Luxor stay and a chartered Nile cruise (listed at $6,950–$12,750 per person by Sky & Telescope) are three different trips at three different prices. Fix the number first, put it in a shared budget, spread deposits across the twelve months instead of one brutal month, and agree what happens if someone drops out late."
+      },
+      {
+        "name": "Book beds and flights, then order the safety kit",
+        "text": "Luxor city itself gets 6 min 22 s, so no centreline chase is needed; Sohag (6 min 22 s) and Qena (6 min 10 s) are fallbacks if Luxor fills. In Spain, fly to Málaga or Jerez and drive southwest — Málaga city gets under two minutes. Order one ISO 12312-2 certified pair per person plus spares well before the rush, and plan the heat: hydration, shade and long sleeves for a 13:05 totality at 42°C."
+      },
+      {
+        "name": "Build the eclipse-day timeline around totality",
+        "text": "At Luxor, totality runs 13:02:14 to 13:08:36 local (EEST). Work backwards: be in position hours early, know where the Sun will be, set a meeting point, and expect mobile networks to struggle. Put it all in a shared itinerary the group can open offline, and decide in advance who is photographing and who is simply watching."
+      }
+    ]
+  }
+}

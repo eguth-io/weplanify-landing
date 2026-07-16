@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "title": "Coupe du Monde de Rugby 2027 : organiser le voyage",
+    "description": "Planificateur gratuit pour la Coupe du Monde de Rugby 2027 entre potes. Australie, du 1er octobre au 13 novembre 2027 : 24 équipes, 7 villes hôtes, 52 matchs. Construis ton itinéraire, partage un budget long-courrier et garde ta bande alignée — sans agence, sans abonnement."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Coupe du Monde de Rugby 2027"
+  },
+  "hero": {
+    "tag": "Planificateur gratuit · Coupe du Monde de Rugby 2027",
+    "title": "Coupe du Monde de Rugby 2027 : réserver l'Australie un an à l'avance",
+    "readTime": "9 min de lecture"
+  },
+  "heroBody": "Voici un planificateur gratuit pour la Coupe du Monde de Rugby 2027 entre potes — l'Australie, du 1er octobre au 13 novembre 2027, la première édition à 24 équipes. Le tirage est fait : tu sais où se joue la phase de poules. Ce que tu ne sais pas, c'est où ton équipe ira après. Et c'est tout le problème : les vols pour l'Australie se réservent environ un an à l'avance, bien avant que le tableau des huitièmes existe. Voici comment s'engager tôt sans enfermer ta bande dans un itinéraire que vous regretterez. Tu hésites encore sur les outils ? Jette un œil à notre <link>comparatif d'applis de voyage en groupe</link>.",
+  "facts": {
+    "title": "Le tournoi en un coup d'œil",
+    "datesLabel": "Dates du tournoi",
+    "datesValue": "1er oct. – 13 nov. 2027",
+    "datesNote": "43 jours à travers l'Australie",
+    "teamsLabel": "Équipes",
+    "teamsValue": "24",
+    "teamsNote": "6 poules de 4 — une première",
+    "citiesLabel": "Villes hôtes",
+    "citiesValue": "7",
+    "citiesNote": "8 stades, 52 matchs",
+    "finalLabel": "La finale",
+    "finalValue": "13 nov., Sydney",
+    "finalNote": "Stadium Australia, 82 000 places"
+  },
+  "problem": {
+    "p1": "L'Australie, c'est la Coupe du Monde de Rugby la plus dure à organiser qu'un groupe européen ait jamais eu à gérer. Plus de 20 heures d'avion, un voyage à 3 000–5 000 € par personne, et un calendrier étalé sur un continent grand comme l'Europe. Les billets long-courriers sont au plus bas onze ou douze mois avant — autrement dit, la bonne fenêtre de réservation s'ouvre avant que quiconque sache si son équipe passe les poules. Six potes, six budgets, six niveaux d'envie de lâcher quatre chiffres sur un peut-être.",
+    "p2": "WePlanify, c'est le QG partagé et gratuit des voyages Coupe du Monde de Rugby 2027 — matchs, vols, logements, budget et valises dans un seul plan que toute ta bande voit."
+  },
+  "toc": {
+    "title": "Sur cette page",
+    "hostCities": "Les 7 villes hôtes",
+    "route": "Suivre l'équipe ou choisir un camp de base ?",
+    "tickets": "Billets & logistique",
+    "planning": "Organiser à plusieurs",
+    "budget": "Ce que ça coûte vraiment",
+    "faq": "Questions fréquentes"
+  },
+  "hostCities": {
+    "title": "Les 7 villes hôtes",
+    "subtitle": "Huit stades répartis dans sept villes, sur tout un continent. Perth–Townsville, c'est cinq heures d'avion — plus loin que Londres–Le Caire. Ce sont les distances qui dictent ton itinéraire, pas le calendrier.",
+    "stadiumLabel": "Stade",
+    "items": [
+      {
+        "city": "Sydney",
+        "state": "Nouvelle-Galles du Sud",
+        "stadium": "Stadium Australia & Sydney Football Stadium",
+        "note": "Accueille la finale le 13 novembre. La seule ville à avoir deux enceintes."
+      },
+      {
+        "city": "Melbourne",
+        "state": "Victoria",
+        "stadium": "Docklands Stadium",
+        "note": "Le seul stade entièrement couvert du tournoi — le toit reste fermé pour tous les matchs. Zéro risque météo."
+      },
+      {
+        "city": "Brisbane",
+        "state": "Queensland",
+        "stadium": "Brisbane Stadium",
+        "note": "Chaude, agréable à pied, et la porte d'entrée naturelle vers la Gold Coast si tu ajoutes des jours de vacances."
+      },
+      {
+        "city": "Perth",
+        "state": "Australie-Occidentale",
+        "stadium": "Perth Stadium",
+        "note": "Accueille le match d'ouverture le 1er octobre. Isolée — cinq heures d'avion de la côte est."
+      },
+      {
+        "city": "Adélaïde",
+        "state": "Australie-Méridionale",
+        "stadium": "Adelaide Oval",
+        "note": "Compacte et abordable pour l'Australie. La Barossa Valley et ses vignobles sont à une heure."
+      },
+      {
+        "city": "Newcastle",
+        "state": "Nouvelle-Galles du Sud",
+        "stadium": "Newcastle Stadium",
+        "note": "Accueille des matchs de Coupe du Monde pour la première fois. Deux heures au nord de Sydney en train."
+      },
+      {
+        "city": "Townsville",
+        "state": "Queensland",
+        "stadium": "North Queensland Stadium",
+        "note": "Grand nord tropical. Le point de départ pour la Grande Barrière de corail et Magnetic Island."
+      }
+    ]
+  },
+  "route": {
+    "title": "La décision qui commande tout : suivre, ou se poser ?",
+    "subtitle": "Tout voyage de groupe en Australie bifurque ici. Tranchez avant de réserver le moindre vol — ça détermine votre budget, votre itinéraire et ce que vous verrez vraiment du pays.",
+    "followTitle": "Suivre l'équipe",
+    "followSubtitle": "Suivre ton XV de match en match, puis dans les phases finales.",
+    "followPros": [
+      "Tu vois tous les matchs de ton équipe",
+      "Ambiance maximale — tu voyages avec les mêmes supporters",
+      "Le voyage a un récit naturel et une fin évidente"
+    ],
+    "followCons": [
+      "Trois vols intérieurs minimum, souvent plus",
+      "Les phases finales ne se réservent pas avant le tableau",
+      "Si ton équipe sort en poules, le plan s'écroule",
+      "Les tarifs intérieurs australiens flambent autour des matchs"
+    ],
+    "followVerdict": "Pour : les groupes qui ont du gras au budget et acceptent de réserver tard au mauvais prix.",
+    "baseTitle": "Se poser dans une ville",
+    "baseSubtitle": "Choisir une ville hôte, y rester, et regarder ce qui vient à toi.",
+    "basePros": [
+      "Une seule réservation de logement, négociée longue, partagée proprement",
+      "Zéro vol intérieur — la plus grosse économie possible",
+      "Tu découvres vraiment une ville au lieu d'un aéroport",
+      "Insensible à une élimination précoce"
+    ],
+    "baseCons": [
+      "Tu rateras les matchs joués ailleurs",
+      "Moins de variété — même fan zone, mêmes bars, six semaines durant",
+      "Les loyers à Sydney ou Melbourne ne sont pas donnés sur la durée"
+    ],
+    "baseVerdict": "Pour : la plupart des groupes, honnêtement — et la seule version qui passe sous les 3 500 € par tête.",
+    "hybridTitle": "L'hybride sur lequel la plupart des groupes atterrissent",
+    "hybridBody": "Se poser à Sydney ou Brisbane pour l'essentiel du séjour, ajouter un ou deux vols pour les matchs qui comptent, et traiter les phases finales comme une option plutôt qu'un plan. Réserve le logement de base maintenant, les vols intérieurs plus tard. Ce n'est pas le voyage du puriste, mais il survit au réel — et aux comptes en banque de ta bande."
+  },
+  "midCta": {
+    "title": "Tranchez l'itinéraire avant que les prix bougent",
+    "subtitle": "Mets les deux options sous les yeux du groupe, votez, et verrouillez un plan que tout le monde voit.",
+    "button": "Commencer gratuitement"
+  },
+  "tickets": {
+    "title": "Billets & logistique",
+    "p1": "Les phases de billetterie les plus importantes sont déjà passées. La prévente a ouvert le 18 février 2026 pour les fans inscrits avant le 17 février, et la phase de candidature mondiale — un tirage au sort pour les matchs sursouscrits — s'est tenue du 19 mai au 2 juin 2026. Si tu as raté les deux, tout n'est pas perdu.",
+    "p2": "La prochaine vente générale, c'est le 1er octobre 2026, premier arrivé premier servi. C'est LA date à mettre dans l'agenda partagé de ton groupe dès maintenant, parce qu'avec une telle demande accumulée, les bonnes catégories partent en quelques minutes. Décidez en amont quels matchs vous visez et jusqu'à combien vous montez — se disputer sur les catégories de prix pendant que la file d'attente tourne, c'est comme ça qu'un groupe finit sans rien.",
+    "p3": "Achète uniquement via le <ticketLink>site officiel de billetterie de la Coupe du Monde de Rugby</ticketLink>. La revente pour les événements sportifs australiens est très encadrée et un billet acheté hors canaux officiels peut être annulé à l'entrée. Des offres d'hospitalité et des packages voyage sont dispo chez le prestataire officiel si tu préfères payer pour de la certitude.",
+    "p4": "Côté logistique : l'Australie exige un visa pour quasiment tout le monde — la plupart des passeports européens, britanniques et américains obtiennent une ETA ou un eVisitor en ligne en quelques jours, mais ce n'est pas automatique et chacun gère le sien. Traite ça comme une deadline de groupe, pas comme un détail individuel. Les vols intérieurs sont la colonne vertébrale de tout plan multi-villes ; Qantas, Virgin Australia et Jetstar desservent les villes hôtes, et les tarifs autour des matchs se comportent exactement comme tu le crains. Cinq jours de repos minimum entre les matchs : le calendrier respire, il y a vraiment de la place pour visiter le pays entre deux rencontres."
+  },
+  "planning": {
+    "title": "Organiser ça à plusieurs",
+    "p1": "Le plus dur dans ce voyage, ce n'est pas l'itinéraire. C'est d'obtenir de six personnes qu'elles engagent quatre mille euros chacune, douze mois à l'avance, sur un plan dont la seconde moitié est inconnaissable. C'est un problème de confiance avant d'être un problème de voyage, et c'est pour ça que ces projets meurent dans les conversations de groupe.",
+    "p2": "Commence par séparer le certain du spéculatif. La phase de poules est fixée — le tirage est fait, les villes sont connues, le calendrier est publié. Réserve cette partie pour de bon. Les phases finales, c'est un ticket de loterie. Mets des dates indicatives dans ton <itineraryLink>itinéraire partagé</itineraryLink> et ne réserve rien de non remboursable dessus tant que les huitièmes ne sont pas fixés.",
+    "p3": "Ensuite, mets l'engagement noir sur blanc. Pas un « ouais chaud » balancé dans le groupe à minuit — une vraie réponse à une vraie question. <pollsLink>Lance un sondage</pollsLink> sur les deux points qui décident de tout : suivre ou se poser, et tournoi complet ou poules seulement. Les gens répondent honnêtement à un sondage comme ils ne le font jamais dans une conversation où tout le monde regarde. Tu sauras maintenant, pas en mars, que deux de tes potes n'ont jamais vraiment été partants.",
+    "p4": "Fixe des deadlines qui ne portent pas sur le voyage. Les demandes de visa, la vente de billets du 1er octobre, les dates d'acompte, le moment où les vols pas chers s'évaporent. Une liste de tâches partagée avec de vraies dates, visible par tous, c'est ce qui empêche un projet de cette taille de se déliter en silence pendant que chacun suppose qu'un autre s'en occupe. Notre <guideLink>guide pour organiser un voyage de groupe</guideLink> couvre la mécanique."
+  },
+  "budget": {
+    "title": "Ce que ça coûte vraiment",
+    "p1": "Sois honnête avec ton groupe dès la première conversation : c'est un voyage à 3 000–5 000 € par personne depuis l'Europe, et la fourchette dépend presque entièrement de décisions que vous prendrez dans les prochains mois, pas de votre frugalité une fois sur place.",
+    "p2": "Les vols sont l'obstacle incompressible — un aller-retour Europe–Australie tourne généralement entre 900 et 1 600 €, et octobre est une saison intermédiaire, ce qui aide. C'est dans la fenêtre onze-douze mois avant que se joue le vrai argent ; attendre que le tableau soit clair peut te coûter plusieurs centaines d'euros par tête. C'est l'argument le plus fort en faveur de la stratégie du camp de base : elle te permet de réserver tôt la partie chère et de rester flexible sur la partie pas chère.",
+    "p3": "Les billets de match, chacun les achète individuellement — garde-les complètement hors du pot commun. Le pot commun, c'est pour le logement, les vols intérieurs, les transports sur place, les repas de groupe et l'excursion sur la Grande Barrière que quelqu'un finira forcément par proposer. Mets en place un <budgetLink>budget partagé</budgetLink> avec une catégorie par type de dépense et fais tourner qui avance les frais, pour que la carte bleue d'un seul ne porte pas le groupe pendant six semaines.",
+    "p4": "Le logement, c'est là que la stratégie du camp de base paie. Une maison de cinq chambres dans l'inner west de Sydney pour un mois, divisée par cinq, revient largement moins cher que cinq chambres d'hôtel sur les mêmes nuits — et de toute façon, les hôtels près des stades multiplient leurs tarifs les jours de match. Regarde les quartiers bien desservis par le train plutôt que les codes postaux que le tournoi te vend."
+  },
+  "pullQuote": "Tu réserveras ce voyage avant de savoir comment il se termine. Ce n'est pas un défaut de ta planification — c'est la nature de la chose. Planifie bien la partie certaine, et tiens le reste sans serrer.",
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Quand a lieu la Coupe du Monde de Rugby 2027 et où ?",
+        "a": "Le tournoi se déroule du 1er octobre au 13 novembre 2027 à travers l'Australie — 43 jours, 52 matchs, sept villes hôtes et huit stades. Le match d'ouverture a lieu au Perth Stadium le 1er octobre, et la finale au Stadium Australia de Sydney le 13 novembre. C'est la première édition à 24 équipes de l'histoire du tournoi."
+      },
+      {
+        "q": "Comment fonctionne le nouveau format à 24 équipes ?",
+        "a": "Les 24 équipes sont réparties en six poules de quatre, remplaçant les anciennes quatre poules de cinq. Les deux premiers de chaque poule se qualifient automatiquement, rejoints par les quatre meilleurs troisièmes, ce qui remplit un nouveau tour : les huitièmes de finale — le premier vrai changement de format depuis des décennies. Malgré l'élargissement, l'équipe qui gagne le tournoi dispute toujours sept matchs : trois en poules et quatre en phases finales. Il y a un minimum de cinq jours de repos entre chaque match."
+      },
+      {
+        "q": "Peut-on encore avoir des billets pour la Coupe du Monde de Rugby 2027 ?",
+        "a": "Oui. La prévente de février 2026 et le tirage au sort de mai-juin 2026 sont clos, mais la prochaine vente générale ouvre le 1er octobre 2026, en premier arrivé premier servi. Achète uniquement via le site officiel de billetterie — la réglementation australienne sur la revente est stricte et les billets issus de canaux non officiels peuvent être invalidés à l'entrée. En attendant, des packages hospitalité et voyage officiels restent disponibles."
+      },
+      {
+        "q": "Quand faut-il réserver les vols pour l'Australie ?",
+        "a": "Environ onze à douze mois avant, ce qui pour un tournoi en octobre 2027 signifie fin 2026. Un aller-retour depuis l'Europe tourne généralement entre 900 et 1 600 €, et octobre tombe en saison intermédiaire. Le hic, c'est que cette fenêtre s'ouvre bien avant que le tableau des phases finales existe : tu t'engages sur des dates sans connaître le parcours de ton équipe. C'est exactement pour ça que la plupart des groupes réservent tôt une ville de base et gardent de la souplesse sur les vols intérieurs."
+      },
+      {
+        "q": "Faut-il suivre son équipe à travers l'Australie ou se poser dans une seule ville ?",
+        "a": "Se poser dans une ville, pour la plupart des groupes. Suivre son équipe, c'est au moins trois vols intérieurs, des phases finales impossibles à réserver à l'avance, et un plan qui s'effondre si elle sort en poules. Se poser à Sydney ou Brisbane, c'est une seule réservation de logement, aucun vol intérieur, et un voyage qui survit à un mauvais résultat. Le compromis courant : se baser dans un endroit central et ne prendre l'avion que pour les matchs qui comptent vraiment."
+      },
+      {
+        "q": "Combien coûte un voyage à la Coupe du Monde de Rugby 2027 par personne ?",
+        "a": "Compte 3 000 à 5 000 € par personne depuis l'Europe pour deux à trois semaines. Les vols représentent 900 à 1 600 € aller-retour, les billets de match varient beaucoup selon la catégorie, et le logement dépend entièrement de si vous bougez entre les villes ou partagez une maison. Les groupes qui se posent dans une ville et partagent une location atterrissent régulièrement en bas de la fourchette ; ceux qui poursuivent leur équipe à travers le pays finissent en haut, voire au-delà."
+      },
+      {
+        "q": "Faut-il un visa pour aller en Australie pour le tournoi ?",
+        "a": "Presque certainement oui — l'Australie exige un visa ou une autorisation de voyage de quasiment tous les visiteurs. La plupart des détenteurs de passeports européens, britanniques et américains peuvent demander une ETA ou un eVisitor en ligne et sont approuvés en quelques jours, mais ce n'est pas automatique et chaque voyageur doit faire sa propre demande. Traite ça comme une deadline de groupe avec une date, parce que c'est le grand classique que quelqu'un oublie jusqu'à la semaine du départ."
+      },
+      {
+        "q": "Comment partager les frais d'un voyage aussi cher dans un groupe ?",
+        "a": "Sépare l'individuel du partagé. Les billets de match et les vols, chacun les achète et les paie pour soi. Le logement, les transports intérieurs, les déplacements sur place et les repas de groupe vont dans un pot commun avec une catégorie chacun. Fais tourner qui avance les grosses dépenses partagées pour qu'une seule personne ne porte pas cinq mille euros de dépenses de groupe sur sa carte pendant six semaines. WePlanify suit qui a payé quoi et qui doit combien à qui, pour qu'il n'y ait pas de règlement de comptes à la fin."
+      }
+    ]
+  },
+  "discover": {
+    "title": "À découvrir aussi",
+    "worldCup": {
+      "title": "Coupe du Monde 2026",
+      "desc": "La version foot — 16 villes hôtes dans trois pays.",
+      "cta": "Lire la suite →"
+    },
+    "tripWithFriends": {
+      "title": "Voyage entre amis",
+      "desc": "Organise n'importe quel voyage de groupe sans prise de tête.",
+      "cta": "Lire la suite →"
+    },
+    "groupGuide": {
+      "title": "Guide du voyage de groupe",
+      "desc": "Le guide complet, étape par étape.",
+      "cta": "Lire le guide →"
+    },
+    "bestApps": {
+      "title": "Meilleures applis de voyage",
+      "desc": "Notre comparatif des meilleurs outils pour voyager à plusieurs.",
+      "cta": "Lire l'article →"
+    }
+  },
+  "cta": {
+    "title": "Construis ton voyage Coupe du Monde de Rugby 2027",
+    "subtitle": "Les matchs, les vols, une maison à Sydney et un budget qui tombe juste — un seul plan partagé, toute ta bande au même endroit.",
+    "button": "Commencer à planifier"
+  },
+  "jsonld": {
+    "eventName": "Coupe du Monde de Rugby 2027",
+    "eventDescription": "Coupe du Monde de Rugby 2027 — 24 équipes nationales, sept villes hôtes et huit stades à travers l'Australie, du 1er octobre au 13 novembre 2027. La première édition à 24 équipes, disputée en six poules de quatre avec de nouveaux huitièmes de finale.",
+    "performer": "Équipes nationales de la Coupe du Monde de Rugby 2027",
+    "howToName": "Comment organiser un voyage à la Coupe du Monde de Rugby 2027 en groupe",
+    "howToDescription": "Choisir entre suivre son équipe et se poser dans une ville, réserver les vols long-courriers tôt, partager proprement un budget de groupe à cinq chiffres, et garder les phases finales ouvertes.",
+    "howToSteps": [
+      {
+        "name": "Choisir entre suivre l'équipe et se poser dans une ville",
+        "text": "Cette seule décision fixe votre budget et votre itinéraire. Suivre son équipe, c'est trois vols intérieurs ou plus et des phases finales impossibles à réserver à l'avance ; se poser à Sydney ou Brisbane, c'est une seule réservation de logement et zéro vol intérieur. Tranchez ça avant tout le reste."
+      },
+      {
+        "name": "Obtenir un vrai engagement via un sondage",
+        "text": "Un voyage à 3 000–5 000 € réservé un an à l'avance exige de vraies réponses, pas de l'enthousiasme de conversation de groupe. Sonde ta bande sur suivre-ou-se-poser et tournoi-complet-ou-poules-seulement. Tu sauras maintenant, plutôt que dans six mois, qui n'était jamais vraiment partant."
+      },
+      {
+        "name": "Réserver la partie certaine et tenir le reste sans serrer",
+        "text": "Le tirage est fait et le calendrier des poules est publié — réserve cette partie pour de bon, environ onze à douze mois avant, quand les tarifs long-courriers sont au plus bas. Laisse les huitièmes en dates indicatives dans l'itinéraire et ne réserve rien de non remboursable dessus tant que le tableau n'est pas rempli."
+      },
+      {
+        "name": "Partager les frais communs par catégorie dès le premier jour",
+        "text": "Les billets de match et les vols restent individuels. Le logement, les transports intérieurs et les repas de groupe vont dans un budget partagé avec une catégorie chacun, en faisant tourner qui avance les grosses dépenses pour que personne ne porte le groupe pendant six semaines."
+      }
+    ]
+  }
+}

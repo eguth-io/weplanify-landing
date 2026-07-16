@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Pianificatore stagione sciistica 2026-27 — Settimane bianche di gruppo",
+    "description": "Pianificatore gratuito per la settimana bianca di gruppo 2026-27. Scegli la settimana giusta (le vacanze scolastiche francesi di febbraio vanno dal 6 febbraio all'8 marzo 2027), confronta i comprensori e dividi chalet, skipass, noleggio e spesa in modo equo — senza che una persona anticipi tutto."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Pianificatore stagione sciistica 2026-27"
+  },
+  "hero": {
+    "tag": "Pianificatore gratuito · Stagione sciistica 2026-27",
+    "title": "Stagione sciistica 2026-27: organizza la settimana bianca senza casini con i soldi",
+    "readTime": "9 min di lettura"
+  },
+  "heroBody": "Le Alpi aprono il 21 novembre 2026 e le stazioni più alte restano aperte fino al 2 maggio 2027. Da qualche parte in questi cinque mesi c'è la tua settimana con il gruppo — e sceglierla è l'unica decisione che determina tutto il resto. Una settimana bianca di gruppo è il viaggio più brutale a livello logistico: uno chalet prenotato quattro-sei mesi prima, pagato in un'unica soluzione che qualcuno deve anticipare, e poi skipass, noleggio, spesa e benzina che si dividono tutti in modo diverso perché non tutti sciano, non tutti noleggiano e non tutti guidano. Ecco come gestirla. Stai ancora scegliendo gli strumenti? Guarda il nostro <link>confronto delle app per viaggi di gruppo</link>.",
+  "facts": {
+    "title": "La stagione 2026-27 in quattro numeri",
+    "seasonLabel": "Stagione",
+    "seasonValue": "21 nov → 2 mag",
+    "seasonNote": "Tignes, Val Thorens e Orelle aprono il 21 nov 2026; Tignes e Val Thorens prevedono di chiudere il 2 mag 2027",
+    "holidaysLabel": "Settimane di punta",
+    "holidaysValue": "6 feb → 8 mar",
+    "holidaysNote": "Vacanze scolastiche francesi di febbraio 2027 sulle zone C, A e B — le quattro settimane più care della stagione",
+    "passLabel": "Skipass 6 giorni",
+    "passValue": "421 €",
+    "passNote": "Skipass adulto 6 giorni 3 Vallées dal 19 dic 2026 — 378,90 € nelle finestre 5-18 dic e 10-18 apr",
+    "bookLabel": "Prenota entro",
+    "bookValue": "Set-nov",
+    "bookNote": "Gli alloggi in montagna si prenotano 4-6 mesi prima; gli chalet buoni di febbraio spariscono in autunno"
+  },
+  "problem": {
+    "p1": "Ecco come va davvero. A settembre qualcuno trova uno chalet. Dorme otto persone, costa X € per la settimana e il proprietario vuole la caparra entro 48 ore. Una persona mette la propria carta. A dicembre due si sono tirati indietro, un amico ha invitato un cugino che nessuno conosce, e quello che ha anticipato 2.400 € sta ancora aspettando quattro bonifici. Poi arrivate: tre comprano lo skipass da 6 giorni, uno da 3 giorni, uno non scia affatto e vuole solo la spa. Due hanno l'attrezzatura, quattro noleggiano. Due auto si dividono benzina e pedaggi in modo squilibrato. Ognuno offre un giro. E l'ultima sera qualcuno apre le note del telefono e prova a ricostruire a memoria una settimana di spese.",
+    "p2": "Non è che i conti siano difficili. È che nessuno ha la stessa idea di quanto si è speso, da chi, per chi. Una settimana bianca ha più voci condivise-ma-non-uguali di qualunque altro <link>viaggio con gli amici</link> — ed è esattamente per questo che salta tutto.",
+    "p3": "WePlanify è il piano condiviso e gratuito per le settimane bianche di gruppo: un unico posto per la settimana scelta, lo chalet, chi c'è, chi deve cosa e chi ha già pagato."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "when": "Quando andare: il calendario dei prezzi",
+    "resorts": "Quale comprensorio per il tuo gruppo",
+    "budget": "Quanto costa davvero una settimana bianca",
+    "group": "Organizzarla in gruppo",
+    "faq": "Domande frequenti"
+  },
+  "when": {
+    "title": "Quando andare: il calendario prezzi 2026-27",
+    "subtitle": "La settimana che scegli sposta il costo totale più della stazione, dello chalet e di qualsiasi altra cosa su cui litigherete. Ecco le sei finestre della stagione, in ordine.",
+    "priceLabel": "Prezzo",
+    "windows": [
+      {
+        "window": "Settimane di apertura",
+        "dates": "21 nov – 18 dic 2026",
+        "price": "Il minimo della stagione",
+        "verdict": "Tignes, Val Thorens e Orelle aprono il 21 novembre, Val d'Isère, Les 2 Alpes e Chamonix seguono il 28 novembre, Courchevel il 5 dicembre, Méribel e Les Menuires il 6 dicembre. Solo alta quota, e la metà bassa della maggior parte dei comprensori non è ancora in funzione. Ma lo skipass 6 giorni delle 3 Vallées costa 378,90 € invece di 421 € nella finestra 5-18 dicembre, e gli alloggi sono ai minimi di tutta la stagione. Se il tuo gruppo scia invece di prendere il sole, è la settimana con il miglior rapporto qualità-prezzo che nessuno prenota."
+      },
+      {
+        "window": "Natale e Capodanno",
+        "dates": "19 dic 2026 – inizio gen 2027",
+        "price": "Alta stagione",
+        "verdict": "Skipass a prezzo pieno (421 € per sei giorni nelle 3 Vallées dal 19 dicembre), alloggi al massimo e la domanda delle famiglie di tutta Europa nello stesso momento. A dicembre la neve a bassa quota è una lotteria. A meno che il gruppo non voglia proprio passare il Capodanno in quota, questa finestra è soldi spesi male."
+      },
+      {
+        "window": "Gennaio",
+        "dates": "Inizio gen – 5 feb 2027",
+        "price": "Alloggi bassi, skipass pieno",
+        "verdict": "La finestra degli intenditori. Tutte le stazioni sono aperte al completo, il fondo neve di solito è assestato, le piste sono vuote e i prezzi degli alloggi crollano tra la folla di Capodanno e le vacanze di febbraio. Lo skipass è a prezzo pieno, ma lo chalet — la voce più pesante — è al minimo con tutti gli impianti aperti. Se nel gruppo non ci sono bambini in età scolare, la risposta è questa."
+      },
+      {
+        "window": "Vacanze scolastiche di febbraio",
+        "dates": "6 feb – 8 mar 2027",
+        "price": "Il massimo della stagione",
+        "verdict": "Quattro settimane consecutive in cui si alternano le tre zone francesi: zona C dal 6 febbraio, zona A dal 13 febbraio, zona B dal 20 febbraio, l'ultima rientra a scuola l'8 marzo. Aggiungi le vacanze svizzere, britanniche, olandesi e belghe e ottieni tutto a prezzo pieno, code a ogni impianto e chalet a due-tre volte la tariffa di gennaio. Se siete un gruppo di adulti, evitare queste quattro settimane taglia il budget più di qualsiasi altra scelta in questa pagina."
+      },
+      {
+        "window": "Marzo",
+        "dates": "9 mar – 9 apr 2027",
+        "price": "Media",
+        "verdict": "La finestra sottovalutata. Il fondo neve è al massimo dopo un inverno intero, le giornate sono lunghe, le terrazze sono calde e la folla delle vacanze è sparita. Gli alloggi tornano a tariffe di media stagione la settimana dopo il rientro dell'ultima zona. Per un gruppo che vuole sciare e godersi anche la luce sulla terrazza, marzo batte febbraio su ogni fronte tranne le probabilità di powder."
+      },
+      {
+        "window": "Fine stagione",
+        "dates": "10 apr – 2 mag 2027",
+        "price": "Il minimo della stagione",
+        "verdict": "Lo skipass 6 giorni delle 3 Vallées torna a 378,90 € dal 10 al 18 aprile, e Tignes e Val Thorens prevedono di restare aperte fino al 2 maggio 2027. Sotto i ~2.000 m la neve si fa a chiazze e le stazioni più basse iniziano a chiudere settori, quindi questa finestra funziona solo in quota. Ma scierai in maglietta, pagherai i prezzi di apertura e avrai la montagna tutta per te."
+      }
+    ],
+    "zonesNote": "Zone delle vacanze scolastiche francesi per il 2027: la zona C è Paris, Créteil, Versailles, Montpellier e Toulouse (6-22 febbraio); la zona A è Grenoble, Lyon, Bordeaux, Dijon, Besançon, Clermont-Ferrand, Limoges e Poitiers (13 febbraio-1 marzo); la zona B è Lille, Nice, Aix-Marseille, Nantes, Rennes, Strasbourg, Nancy-Metz, Reims, Amiens, Rouen/Caen e Orléans-Tours (20 febbraio-8 marzo). Se il tuo gruppo è sparso su più zone, le settimane di sovrapposizione sono quelle che vanno bene a tutti — e sono anche quelle che stanno facendo tutti gli altri. Le date di apertura e chiusura sono i programmi pubblicati dalle stazioni e si spostano sempre con la neve."
+  },
+  "resorts": {
+    "title": "Quale comprensorio per il tuo gruppo",
+    "subtitle": "Tre profili onesti. Scegli quello che corrisponde a ciò che il tuo gruppo vuole davvero — non quello con le foto più belle.",
+    "cards": [
+      {
+        "tag": "Opzione A",
+        "title": "Alta quota, comprensorio grande",
+        "subtitle": "Tignes, Val Thorens, Val d'Isère, Les 2 Alpes",
+        "pros": [
+          "Neve garantita da fine novembre a fine aprile",
+          "Aprono prima (21-28 nov 2026) e chiudono dopo (fino al 2 mag 2027)",
+          "Comprensori collegati enormi — ogni livello trova il suo terreno",
+          "Alloggi ski-in ski-out di serie, quindi niente navette da gestire ogni giorno"
+        ],
+        "cons": [
+          "Alloggi e skipass ai prezzi più alti",
+          "Architettura da stazione costruita a tavolino, non borghi da cartolina",
+          "Sopra il limite del bosco: una giornata di whiteout significa zero visibilità ovunque"
+        ],
+        "verdict": "La scelta giusta se vai presto, tardi, o se l'ansia da neve rovinerebbe il viaggio."
+      },
+      {
+        "tag": "Opzione B",
+        "title": "Il classico di media quota",
+        "subtitle": "Courchevel, Méribel, Les Menuires, La Plagne, Alpe d'Huez",
+        "pros": [
+          "Il miglior equilibrio tra dimensione del comprensorio, atmosfera e prezzo",
+          "Piste nel bosco, sciabili anche con poca visibilità",
+          "Paesi veri, ristoranti veri, qualcosa da fare anche giù dalle piste",
+          "Ampia scelta di alloggi — la stessa stazione va bene per due budget diversi"
+        ],
+        "cons": [
+          "Aprono più tardi (5-6 dic 2026 per i paesi delle 3 Vallées)",
+          "I settori bassi dipendono dall'innevamento programmato a dicembre e ad aprile",
+          "Code nelle settimane di punta ai colli di bottiglia tra i comprensori collegati"
+        ],
+        "verdict": "La scelta di default per una settimana di gruppo a gennaio o marzo. Difficile sbagliare."
+      },
+      {
+        "tag": "Opzione C",
+        "title": "Stazione piccola, grande risparmio",
+        "subtitle": "Comprensori piccoli, paesi di fondovalle, Pirenei e Vosgi",
+        "pros": [
+          "Alloggi e skipass a una frazione delle stazioni blasonate",
+          "Poche code agli impianti anche a febbraio",
+          "Raggiungibili in auto da mezza Francia — dividere la benzina batte l'aereo",
+          "I principianti non pagano per 600 km di piste che non scieranno mai"
+        ],
+        "cons": [
+          "Terreno limitato — chi scia bene si annoia dal terzo giorno",
+          "Più rischio neve, stagione più corta",
+          "Poche alternative se il meteo chiude gli impianti alti"
+        ],
+        "verdict": "La scelta furba quando metà gruppo sta imparando, o quando il viaggio in realtà è per stare insieme."
+      }
+    ],
+    "levelsTitle": "Il problema dei livelli misti che nessuno pianifica",
+    "levelsBody": "In ogni gruppo c'è quello che vuole essere il primo sull'impianto e in fuoripista entro le 10, e quello che ha gli sci ai piedi per la terza volta nella vita. Lasciata lì, quella distanza rovina la settimana a entrambi: chi scia forte passa cinque giorni sulle piste blu a rodersi, il principiante passa cinque giorni terrorizzato fingendo di non esserlo. Risolvilo prima di prenotare, non sulla prima seggiovia. <link>Lancia un sondaggio</link> sulle domande vere — quanti giorni di sci vuole fare ciascuno, chi vuole lezioni, chi vuole un giorno di riposo, se c'è qualcuno che non scia proprio — perché le risposte cambiano la stazione, la durata dello skipass che comprano tutti e il budget. Chi scia due giorni su sei non deve comprare uno skipass da 6 giorni, e non deve scoprirlo il primo giorno."
+  },
+  "midCta": {
+    "title": "Blocca la settimana prima che gli chalet spariscano",
+    "subtitle": "Scegli le date, vedi chi c'è davvero e apri il budget condiviso prima che qualcuno anticipi la caparra.",
+    "button": "Inizia a pianificare — gratis"
+  },
+  "budget": {
+    "title": "Quanto costa davvero una settimana bianca",
+    "subtitle": "Cinque voci, cinque modi diversi di dividere. Questa è la sezione che decide se le vostre amicizie sopravvivono al viaggio.",
+    "splitLabel": "Divisione",
+    "lines": [
+      {
+        "item": "Alloggio",
+        "amount": "La voce più pesante, di gran lunga",
+        "split": "Per letto, non per testa",
+        "gotcha": "Prenotato quattro-sei mesi prima, pagato in un'unica soluzione da una sola persona. Quella persona ora è la banca del gruppo, senza piano di rimborso. Lo stesso chalet può costare due-tre volte di più nelle vacanze di febbraio che a gennaio — la settimana che scegli sposta questo numero più della stazione. Dividi per letto: la coppia nella matrimoniale e quello nel castello sotto le scale non pagano uguale."
+      },
+      {
+        "item": "Skipass",
+        "amount": "421 € / 6 giorni",
+        "split": "Individuale, mai in cassa comune",
+        "gotcha": "Lo skipass adulto 6 giorni delle 3 Vallées costa 421 € dal 19 dicembre 2026 e 378,90 € nelle finestre 5-18 dicembre e 10-18 aprile. Ognuno compra il suo, per i giorni che fa davvero — questa voce non deve mai finire nella cassa comune, perché chi scia due giorni finisce per sovvenzionare chi ne scia sei."
+      },
+      {
+        "item": "Noleggio attrezzatura",
+        "amount": "90-150 € / settimana",
+        "split": "Individuale",
+        "gotcha": "Un pacchetto adulto standard — sci, scarponi, bastoncini, casco — sta più o meno tra 90 e 150 € a settimana, di più per il materiale performance. Metà del gruppo ha la propria attrezzatura e qui non paga niente, ed è esattamente per questo che non può essere una spesa comune. Prenota online prima di partire: presentarsi al noleggio il sabato di una settimana di vacanze è il modo caro di farlo."
+      },
+      {
+        "item": "Cibo e bevande",
+        "amount": "Continuo, squilibrato, infinito",
+        "split": "Cassa comune + individuale",
+        "gotcha": "Quella che genera in silenzio più malumori. La spesa grossa al supermercato a fondovalle, le cene condivise allo chalet, la tartiflette da 18 € in terrazza, i giri offerti. Separale: spesa e cene di gruppo nella cassa comune, tutto quello che si consuma in quota resta individuale. Registra ogni spesa il giorno stesso, con chi ha pagato e per chi."
+      },
+      {
+        "item": "Come arrivarci",
+        "amount": "Dipende tutto dal come",
+        "split": "Per auto, non per persona",
+        "gotcha": "Due auto, quattro passeggeri ciascuna, una è una diesel station wagon e l'altra un'elettrica, pedaggi solo su un percorso, e chi ha guidato ha pagato anche il parcheggio. Dividi benzina e pedaggi per veicolo, tra i passeggeri di quel veicolo. Se qualcuno vola su Genève o Lyon e prende un transfer, quella è la sua voce — non metterla insieme a quella di chi guida."
+      }
+    ],
+    "p1": "La regola che salva le settimane bianche: niente va nella cassa comune se non ne beneficiano tutti allo stesso modo. Quindi lo chalet, la spesa, le cene di gruppo, la benzina per auto. Tutto il resto — skipass, noleggio, lezioni, pranzi in quota, il pomeriggio alla spa per i due che non sciano — è individuale e resta individuale. Imposta un <link>budget condiviso</link> con una categoria per voce prima di partire, e lascia che ognuno registri le proprie spese man mano. L'amico che ha anticipato la caparra dello chalet a ottobre non dovrebbe rincorrere bonifici a marzo.",
+    "p2": "Gestisci la caparra come si deve. Qualcuno mette 2.000 € o più sulla propria carta in autunno per un viaggio che si fa a febbraio: è un prestito vero di quattro mesi tra amici che nessuno chiama mai prestito. Registralo come spesa il giorno in cui viene pagato, con gli altri partecipanti segnati come debitori della loro quota, e chiedi i bonifici in quel momento — mentre il viaggio è ancora eccitante e tutti sono motivati. Non nel parcheggio dell'aeroporto sulla via del ritorno.",
+    "p3": "Poi mettetevi d'accordo sulla regola di annullamento prima che qualcuno paghi qualcosa. Qualcuno si tirerà indietro — non è pessimismo, è ogni viaggio di gruppo mai fatto. Decidete, per iscritto, dentro il piano, se la sua quota viene rimborsata, se la copre lui finché non si trova un sostituto, o se se la accolla il gruppo. Trenta secondi di accordo a settembre evitano la peggiore conversazione dell'anno a gennaio."
+  },
+  "pullQuote": "La settimana decide il budget. La divisione decide le amicizie. Tutto il resto è solo sciare.",
+  "group": {
+    "title": "Organizzarla in gruppo",
+    "p1": "Comincia a settembre, non a dicembre. Gli alloggi in montagna si prenotano quattro-sei mesi prima — gli chalet buoni per le settimane di febbraio spariscono entro l'autunno, e a dicembre ti tocca scegliere tra un posto troppo lontano dagli impianti, una stazione che non voleva nessuno, o pagare un sovrapprezzo per entrambe le cose. Ma non puoi prenotare finché non sai chi viene, e non puoi sapere chi viene finché non hai scelto la settimana. Quindi parti da lì: <link>lancia un sondaggio</link> su tre o quattro settimane candidate, con il contesto di prezzo allegato a ciascuna — la gente sceglie in modo molto diverso quando vede che la settimana di febbraio costa il doppio. Raccogli impegni veri, poi prenota.",
+    "p2": "Una settimana bianca ha un ritmo su cui il gruppo deve mettersi d'accordo, non solo un posto. A che ora usciamo dallo chalet? Sciamo insieme o ci dividiamo per livello e ci vediamo a pranzo? Chi cucina e quale sera? C'è un giorno di riposo a metà settimana e lo fanno tutti? Metti tutto in un <link>itinerario condiviso</link> — compreso il viaggio in auto, il traffico del sabato di cambio turno all'andata, l'appuntamento al noleggio e la spesa al supermercato. Le stazioni di sci il sabato in periodo di vacanze sono il peggior traffico d'Europa. Pianifica l'arrivo come una tappa del viaggio, perché lo è.",
+    "p3": "Assegna il materiale comune come assegneresti qualsiasi altra cosa. Una macchina per la raclette, non quattro. Catene o gomme invernali in ogni auto — obbligatorie nei comuni di montagna, e il punto non è la multa, il punto è riuscire a fare gli ultimi 15 chilometri. Uno porta la cassa Bluetooth, uno i giochi da tavolo per la giornata di whiteout, uno il kit di primo soccorso. Una lista condivisa con i nomi accanto agli oggetti evita il classico arrivo con tre taglieri di formaggi e zero cavatappi.",
+    "p4": "Tutto quello che c'è qui sopra è solo la versione sciistica dello stesso problema di ogni viaggio di gruppo: troppe decisioni, troppi pagatori, nessuna fonte di verità condivisa. Se vuoi il metodo generale — come portare un gruppo da una chat WhatsApp a un viaggio prenotato senza che una persona faccia tutto il lavoro — l'abbiamo scritto per intero nella nostra <link>guida completa per organizzare un viaggio di gruppo</link>."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Quando apre la stagione sciistica 2026-27 sulle Alpi?",
+        "a": "Tignes, Val Thorens e Orelle prevedono di aprire per prime, il 21 novembre 2026, grazie all'accesso al ghiacciaio e all'esposizione d'alta quota. Val d'Isère, Les 2 Alpes e Chamonix seguono il 28 novembre, Courchevel e La Tania il 5 dicembre, Méribel e Les Menuires il 6 dicembre 2026. La maggior parte delle altre stazioni francesi apre entro metà dicembre. Dall'altra parte, Tignes e Val Thorens prevedono di restare aperte fino al 2 maggio 2027, e Les 2 Alpes tiene il ghiacciaio aperto fino all'estate. Tutte queste date sono i programmi pubblicati dalle stazioni e si spostano sempre con la neve."
+      },
+      {
+        "q": "Quando sono le vacanze scolastiche francesi di febbraio nel 2027?",
+        "a": "La zona C (Paris, Créteil, Versailles, Montpellier, Toulouse) va dal 6 al 22 febbraio 2027. La zona A (Grenoble, Lyon, Bordeaux, Dijon, Besançon, Clermont-Ferrand, Limoges, Poitiers) va dal 13 febbraio al 1 marzo. La zona B (Lille, Nice, Aix-Marseille, Nantes, Rennes, Strasbourg, Nancy-Metz, Reims, Amiens, Normandia, Orléans-Tours) va dal 20 febbraio all'8 marzo. Vuol dire che le stazioni sono in modalità alta stagione per quattro settimane di fila, dal 6 febbraio all'8 marzo 2027 — il periodo più caro della stagione."
+      },
+      {
+        "q": "Qual è la settimana più economica per sciare nel 2026-27?",
+        "a": "Due finestre. Le settimane di apertura (5-18 dicembre 2026) e la fine stagione (10-18 aprile 2027) sono i periodi in cui lo skipass adulto 6 giorni delle 3 Vallées costa 378,90 € invece di 421 €, e gli alloggi sono al minimo. Il rovescio della medaglia è l'innevamento: a inizio dicembre sono aperte al completo solo le stazioni d'alta quota, e a metà aprile i settori bassi stanno chiudendo. Entrambe funzionano bene se vai in alto — Tignes, Val Thorens, Val d'Isère, Les 2 Alpes. La terza opzione, e la migliore in assoluto, è gennaio: skipass a prezzo pieno ma alloggi economici con tutti gli impianti aperti."
+      },
+      {
+        "q": "Quanto costa a testa una settimana bianca di gruppo?",
+        "a": "Dipende quasi interamente dalla settimana e dall'alloggio, ed è per questo che non ti diamo una media finta. Le parti fisse su cui puoi ragionare: uno skipass adulto 6 giorni delle 3 Vallées costa 421 € (378,90 € nelle finestre di inizio dicembre e metà aprile), e un pacchetto noleggio standard con sci, scarponi, bastoncini e casco sta più o meno tra 90 e 150 € a settimana. L'alloggio è la voce più pesante e più variabile — lo stesso chalet può costare due-tre volte di più nelle vacanze di febbraio che a gennaio. Poi ci sono cibo, benzina e lezioni. Costruiscilo voce per voce in un budget condiviso, invece di tirare a indovinare un numero a testa."
+      },
+      {
+        "q": "Come si divide equamente il costo di uno chalet?",
+        "a": "Per letto, non per testa. Chi sta in una matrimoniale privata con bagno e chi dorme in un castello nella mansarda ricavata non ricevono la stessa cosa e non devono pagare uguale. Mettetevi d'accordo sull'assegnazione per camera prima di prenotare, non dopo che ognuno si è scelto la stanza all'arrivo. E registra la caparra come spesa il giorno in cui viene pagata — chi ha anticipato 2.000 € a ottobre è creditore da quel giorno, non dal giorno del rientro."
+      },
+      {
+        "q": "Lo skipass va messo nel budget di gruppo?",
+        "a": "No. Mai. È l'errore più comune in assoluto delle settimane bianche. Gli skipass variano da persona a persona — 6 giorni, 3 giorni, solo campo scuola, niente del tutto per chi è venuto per la spa — quindi metterli in comune significa che chi scia poco sovvenziona chi scia tanto, e nessuno dice niente fino all'ultima sera. Vale lo stesso per il noleggio: metà del gruppo ha la propria attrezzatura. Skipass, noleggio e lezioni sono voci individuali. La cassa comune è per lo chalet, la spesa, le cene di gruppo e la benzina."
+      },
+      {
+        "q": "Come si gestisce un gruppo con livelli di sci molto diversi?",
+        "a": "Decidilo prima di prenotare, perché cambia la stazione. Un grande comprensorio d'alta quota dà terreno a tutti ma costa di più; una stazione piccola è più economica e meno intimidatoria per i principianti, ma annoia chi scia forte dal terzo giorno. Chiedi a tutti fin da subito quanti giorni vogliono davvero sciare e se vogliono lezioni — le risposte di solito rivelano che il gruppo è più eterogeneo di quanto si pensasse. Poi organizza la settimana in modo che ognuno scii per livello e ci si trovi a pranzo, invece di imporre un unico ritmo di gruppo che non va bene a nessuno."
+      },
+      {
+        "q": "Quando conviene prenotare una settimana bianca per la stagione 2026-27?",
+        "a": "Da settembre a novembre, e prima ancora per le settimane di febbraio. Gli alloggi in montagna si prenotano di norma quattro-sei mesi prima, quindi la ricerca parte a fine estate e i posti migliori per le settimane di vacanze scolastiche spariscono entro l'autunno. L'ordine conta: scegli prima la settimana, conferma chi c'è davvero con un sondaggio, poi prenota — perché uno chalet prenotato prima di sapere i numeri è il modo in cui una persona si ritrova a pagare due letti vuoti."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "tripWithFriends": {
+      "title": "Viaggio con gli amici",
+      "desc": "Organizza qualsiasi viaggio di gruppo senza fare tutto da solo.",
+      "cta": "Leggi di più →"
+    },
+    "groupGuide": {
+      "title": "Guida ai viaggi di gruppo",
+      "desc": "Il metodo completo passo dopo passo, dalla chat di gruppo alla prenotazione.",
+      "cta": "Leggi la guida →"
+    },
+    "worldCup": {
+      "title": "Pianificatore Mondiali 2026",
+      "desc": "Segui la tua squadra tra le 16 città ospitanti con il gruppo.",
+      "cta": "Leggi di più →"
+    },
+    "bestApps": {
+      "title": "Migliori app per viaggi di gruppo",
+      "desc": "Il nostro confronto degli strumenti migliori per i viaggi di gruppo.",
+      "cta": "Leggi l'articolo →"
+    }
+  },
+  "cta": {
+    "title": "Organizza la tua settimana bianca 2026-27",
+    "subtitle": "La settimana, lo chalet, chi c'è, chi deve cosa — un unico piano condiviso che tutto il gruppo può vedere.",
+    "button": "Inizia a pianificare — gratis"
+  },
+  "jsonld": {
+    "articleHeadline": "Stagione sciistica 2026-27: come organizzare la settimana bianca di gruppo",
+    "howToName": "Come organizzare una settimana bianca di gruppo per la stagione 2026-27",
+    "howToDescription": "Scegli la settimana usando il calendario prezzi della stagione, conferma chi viene davvero prima di prenotare, pianifica la settimana in gruppo e dividi chalet, skipass, noleggio e cibo così nessuno finisce per anticipare il viaggio.",
+    "howToSteps": [
+      {
+        "name": "Scegli la settimana prima di ogni altra cosa",
+        "text": "La settimana sposta il costo totale più della stazione. Le vacanze scolastiche francesi di febbraio vanno dal 6 febbraio all'8 marzo 2027 sulle tre zone e sono il picco della stagione; gennaio e le settimane di apertura dal 21 novembre 2026 sono le finestre convenienti. Scegli prima la settimana — tutto il resto ne discende."
+      },
+      {
+        "name": "Conferma chi viene davvero, con un sondaggio",
+        "text": "Non prenotare mai uno chalet prima di sapere i numeri. Fai votare al gruppo le settimane candidate con il prezzo allegato a ciascuna, chiedi quanti giorni di sci vuole fare ognuno e chi ha bisogno di lezioni, e raccogli impegni veri. Uno chalet prenotato sulle supposizioni è il modo in cui una persona finisce per pagare due letti vuoti."
+      },
+      {
+        "name": "Prenota tra settembre e novembre",
+        "text": "Gli alloggi in montagna si prenotano quattro-sei mesi prima e i posti migliori per le settimane di vacanza spariscono entro l'autunno. Prenota l'alloggio, poi il noleggio online, poi pianifica il viaggio in auto — un itinerario condiviso che includa il traffico del sabato di cambio turno, lo slot al noleggio e la spesa al supermercato."
+      },
+      {
+        "name": "Dividi per categoria, non per numero di teste",
+        "text": "Nella cassa comune vanno solo lo chalet, la spesa, le cene di gruppo e la benzina per auto — con lo chalet diviso per letto, non per testa. Skipass, noleggio, lezioni e pranzi in quota restano individuali, perché non tutti sciano lo stesso numero di giorni e non tutti noleggiano. Registra la caparra come spesa il giorno in cui viene pagata."
+      }
+    ]
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Planer wyjazdu na sezon narciarski 2026-27 — wyjazdy grupowe",
+    "description": "Darmowy planer grupowego wyjazdu na narty 2026-27. Wybierz właściwy tydzień (francuskie ferie lutowe trwają od 6 lutego do 8 marca 2027 r.), porównaj ośrodki i podziel uczciwie koszt chatki, karnetów, sprzętu i jedzenia — bez tego, żeby jedna osoba zapłaciła za wszystko."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Planer wyjazdu na sezon narciarski 2026-27"
+  },
+  "hero": {
+    "tag": "Darmowy planer wyjazdu · Sezon narciarski 2026-27",
+    "title": "Sezon narciarski 2026-27: zaplanuj wyjazd grupowy bez bałaganu z pieniędzmi",
+    "readTime": "9 min czytania"
+  },
+  "heroBody": "Alpy otwierają się 21 listopada 2026 r., a najwyżej położone ośrodki jeżdżą do 2 maja 2027 r. Gdzieś w tych pięciu miesiącach jest Twój tydzień z ekipą — a jego wybór to jedyna decyzja, która przesądza o całej reszcie. Grupowy wyjazd na narty jest logistycznie najbardziej brutalnym wyjazdem, jaki istnieje: jedna chatka rezerwowana cztery do sześciu miesięcy wcześniej, płacona jedną wielką kwotą, którą ktoś musi wyłożyć, a potem karnety, wypożyczenie sprzętu, jedzenie i paliwo — każde dzielone inaczej, bo nie każdy jeździ, nie każdy wypożycza i nie każdy prowadzi. Oto jak to ogarnąć. Wciąż wybierasz narzędzia? Zajrzyj do naszego <link>porównania aplikacji do podróży grupowych</link>.",
+  "facts": {
+    "title": "Sezon 2026-27 w czterech liczbach",
+    "seasonLabel": "Sezon",
+    "seasonValue": "21 lis → 2 maj",
+    "seasonNote": "Tignes, Val Thorens i Orelle otwierają się 21 listopada 2026 r.; Tignes i Val Thorens planują zamknięcie 2 maja 2027 r.",
+    "holidaysLabel": "Szczyt sezonu",
+    "holidaysValue": "6 lut → 8 mar",
+    "holidaysNote": "Francuskie ferie lutowe 2027 w strefach C, A i B — najdroższe cztery tygodnie sezonu",
+    "passLabel": "Karnet 6-dniowy",
+    "passValue": "421 €",
+    "passNote": "Karnet 6-dniowy dla dorosłych w 3 Vallées od 19 grudnia 2026 r. — 378,90 € w oknach 5-18 grudnia i 10-18 kwietnia",
+    "bookLabel": "Rezerwuj do",
+    "bookValue": "wrz-lis",
+    "bookNote": "Noclegi w górach rezerwuje się 4-6 miesięcy wcześniej; dobre chatki na luty schodzą jesienią"
+  },
+  "problem": {
+    "p1": "Oto jak to wygląda naprawdę. Ktoś znajduje chatkę we wrześniu. Śpi w niej osiem osób, kosztuje X € za tydzień, a właściciel chce zadatek w 48 godzin. Jedna osoba podaje swoją kartę. Do grudnia dwie osoby się wypisują, jeden znajomy zaprosił kuzyna, którego nikt nie zna, a ta, która wyłożyła 2400 €, wciąż czeka na cztery przelewy. Potem docieracie na miejsce: trzy osoby kupują karnety 6-dniowe, jedna 3-dniowy, jedna w ogóle nie jeździ i chce tylko spa. Dwie mają własny sprzęt, cztery wypożyczają. Dwa auta dzielą paliwo i opłaty drogowe nierówno. Każdy stawia kolejkę. A ostatniego wieczoru ktoś otwiera notatnik i próbuje odtworzyć z pamięci cały tydzień wydatków.",
+    "p2": "Problem nie w tym, że matematyka jest trudna. Problem w tym, że nikt nie ma tego samego obrazu tego, co zostało wydane, przez kogo i za kogo. Wyjazd na narty ma więcej pozycji wspólnych-ale-nierównych niż jakikolwiek inny <link>wyjazd ze znajomymi</link> — i dokładnie dlatego się sypie.",
+    "p3": "WePlanify to darmowy wspólny plan grupowych wyjazdów na narty: jedno miejsce na wybrany tydzień, chatkę, listę uczestników, kto ile jest winien i kto już zapłacił."
+  },
+  "toc": {
+    "title": "Na tej stronie",
+    "when": "Kiedy jechać: kalendarz cen",
+    "resorts": "Który ośrodek dla Twojej grupy",
+    "budget": "Ile naprawdę kosztuje tydzień na nartach",
+    "group": "Planowanie z grupą",
+    "faq": "Najczęściej zadawane pytania"
+  },
+  "when": {
+    "title": "Kiedy jechać: kalendarz cen 2026-27",
+    "subtitle": "Wybrany tydzień rusza Twój całkowity koszt bardziej niż ośrodek, chatka i cokolwiek innego, o co będziecie się kłócić. Oto sześć okien sezonu, po kolei.",
+    "priceLabel": "Cena",
+    "windows": [
+      {
+        "window": "Tygodnie otwarcia",
+        "dates": "21 lis – 18 gru 2026",
+        "price": "Najniższa w sezonie",
+        "verdict": "Tignes, Val Thorens i Orelle otwierają się 21 listopada, Val d'Isère, Les 2 Alpes i Chamonix ruszają 28 listopada, Courchevel 5 grudnia, a Méribel i Les Menuires 6 grudnia. Tylko wysokie partie, dolna połowa większości terenów jeszcze nie działa. Ale karnet 6-dniowy w 3 Vallées kosztuje 378,90 € zamiast 421 € w oknie 5-18 grudnia, a noclegi są najtańsze w całym sezonie. Jeśli Twoja ekipa jeździ, a nie opala się, to jest ten tydzień okazji, którego nikt nie rezerwuje."
+      },
+      {
+        "window": "Boże Narodzenie i Nowy Rok",
+        "dates": "19 gru 2026 – początek stycznia 2027",
+        "price": "Szczyt",
+        "verdict": "Karnety w pełnej cenie (421 € za sześć dni w 3 Vallées od 19 grudnia), noclegi w szczycie i popyt rodzin z całej Europy naraz. Śnieg na niskich wysokościach w grudniu to loteria. Jeśli grupa nie chce koniecznie być w ośrodku na sylwestra, to okno oznacza źle wydane pieniądze."
+      },
+      {
+        "window": "Styczeń",
+        "dates": "Początek stycznia – 5 lut 2027",
+        "price": "Tanie noclegi, karnet w pełnej cenie",
+        "verdict": "Okno dla koneserów. Każdy ośrodek działa w pełni, baza śnieżna jest zwykle ułożona, stoki puste, a ceny noclegów walą się między noworocznym tłumem a feriami lutowymi. Karnet jest w pełnej cenie, ale chatka — Twoja największa pozycja — jest najtańsza przy wszystkim otwartym. Jeśli w grupie nie ma dzieci w wieku szkolnym, to jest odpowiedź."
+      },
+      {
+        "window": "Ferie lutowe",
+        "dates": "6 lut – 8 mar 2027",
+        "price": "Najwyższa w sezonie",
+        "verdict": "Cztery tygodnie z rzędu, przez które rotują trzy francuskie strefy: strefa C od 6 lutego, strefa A od 13 lutego, strefa B od 20 lutego, ostatnia z nich wraca do szkoły 8 marca. Dorzuć ferie szwajcarskie, brytyjskie, holenderskie i belgijskie, a dostaniesz pełne ceny wszystkiego, kolejki przy każdym wyciągu i chatki po dwa-trzy razy drożej niż w styczniu. Jeśli jesteście grupą dorosłych, omińcie te cztery tygodnie — obetniecie budżet bardziej niż jakąkolwiek inną decyzją z tej strony."
+      },
+      {
+        "window": "Marzec",
+        "dates": "9 mar – 9 kwi 2027",
+        "price": "Średnia",
+        "verdict": "Niedoceniane okno. Baza śnieżna jest najgrubsza po całej zimie, dni są długie, tarasy ciepłe, a wakacyjne tłumy zniknęły. Noclegi wracają do cen poza szczytem w tygodniu po powrocie ostatniej strefy do szkoły. Dla grupy, która chce jeździć i mieć realne słońce na tarasie, marzec bije luty na każdej osi poza szansą na puch."
+      },
+      {
+        "window": "Koniec sezonu",
+        "dates": "10 kwi – 2 maj 2027",
+        "price": "Najniższa w sezonie",
+        "verdict": "Karnet 6-dniowy w 3 Vallées spada z powrotem do 378,90 € na 10-18 kwietnia, a Tignes i Val Thorens planują jeździć do 2 maja 2027 r. Śnieg robi się dziurawy poniżej ok. 2000 m, a niższe ośrodki zaczynają zamykać sektory, więc to okno działa tylko na wysokości. Ale pojeździsz w koszulce, zapłacisz ceny z tygodni otwarcia i będziesz mieć górę dla siebie."
+      }
+    ],
+    "zonesNote": "Francuskie strefy ferii szkolnych na 2027 r.: strefa C to Paris, Créteil, Versailles, Montpellier i Toulouse (6-22 lutego); strefa A to Grenoble, Lyon, Bordeaux, Dijon, Besançon, Clermont-Ferrand, Limoges i Poitiers (13 lutego-1 marca); strefa B to Lille, Nice, Aix-Marseille, Nantes, Rennes, Strasbourg, Nancy-Metz, Reims, Amiens, Rouen/Caen i Orléans-Tours (20 lutego-8 marca). Jeśli Twoja grupa rozciąga się na kilka stref, tygodnie nakładania się to te, w których każdy może jechać — i te, w których jedzie cała reszta świata. Daty otwarcia i zamknięcia to opublikowane plany ośrodków i zawsze zmieniają się razem ze śniegiem."
+  },
+  "resorts": {
+    "title": "Który ośrodek dla Twojej grupy",
+    "subtitle": "Trzy uczciwe profile. Wybierz ten, który pasuje do tego, co Twoja grupa naprawdę optymalizuje — nie ten z najlepszymi zdjęciami.",
+    "cards": [
+      {
+        "tag": "Opcja A",
+        "title": "Wysoko położone, wielki teren",
+        "subtitle": "Tignes, Val Thorens, Val d'Isère, Les 2 Alpes",
+        "pros": [
+          "Śnieg gwarantowany od końca listopada do końca kwietnia",
+          "Otwierają się najwcześniej (21-28 lis 2026) i zamykają najpóźniej (do 2 maja 2027)",
+          "Ogromne połączone tereny — w grupie o mieszanym poziomie każdy znajdzie coś dla siebie",
+          "Noclegi ski-in ski-out to standard, więc zero codziennej logistyki ze skibusem"
+        ],
+        "cons": [
+          "Najdroższe noclegi i najdroższe karnety",
+          "Architektura kurortów z projektu, nie wioski z pocztówki",
+          "Powyżej granicy lasu: dzień w mleku oznacza zerową widoczność wszędzie"
+        ],
+        "verdict": "Właściwy wybór, jeśli jedziecie wcześnie, późno albo jeśli stres o śnieg zepsułby wam wyjazd."
+      },
+      {
+        "tag": "Opcja B",
+        "title": "Klasyk na średniej wysokości",
+        "subtitle": "Courchevel, Méribel, Les Menuires, La Plagne, Alpe d'Huez",
+        "pros": [
+          "Najlepszy balans wielkości terenu, klimatu i ceny",
+          "Trasy wśród drzew, jezdne nawet przy złej widoczności",
+          "Prawdziwe wioski, prawdziwe restauracje, coś do roboty poza stokiem",
+          "Szeroki wybór noclegów — ten sam ośrodek obsłuży dwa budżety"
+        ],
+        "cons": [
+          "Otwierają się później (5-6 gru 2026 dla wiosek 3 Vallées)",
+          "Niższe sektory zależą od naśnieżania w grudniu i kwietniu",
+          "Kolejki w szczycie sezonu w wąskich gardłach połączonego terenu"
+        ],
+        "verdict": "Domyślny wybór na styczniowy lub marcowy tydzień z grupą. Trudno się pomylić."
+      },
+      {
+        "tag": "Opcja C",
+        "title": "Mały ośrodek, duże oszczędności",
+        "subtitle": "Mniejsze tereny, wioski w dolinach, Pireneje i Wogezy",
+        "pros": [
+          "Noclegi i karnety to ułamek cen z topowych kurortów",
+          "Krótkie kolejki do wyciągów nawet w lutym",
+          "Dojazd autem z większej części Francji — podział paliwa bije samolot",
+          "Początkujący nie płacą za 600 km tras, których nigdy nie przejadą"
+        ],
+        "cons": [
+          "Ograniczony teren — mocni narciarze nudzą się trzeciego dnia",
+          "Większe ryzyko braku śniegu, krótszy sezon",
+          "Mniej opcji, gdy pogoda zamknie górne wyciągi"
+        ],
+        "verdict": "Sprytny wybór, gdy połowa grupy się uczy albo gdy wyjazd tak naprawdę jest o grupie."
+      }
+    ],
+    "levelsTitle": "Problem mieszanych poziomów, którego nikt nie planuje",
+    "levelsBody": "W każdej grupie jest jedna osoba, która chce być pierwsza na wyciągu i o 10:00 poza trasą, i jedna, która stoi na nartach trzeci raz w życiu. Zostawiona sama sobie, ta przepaść psuje tydzień obu: mocny narciarz spędza pięć dni na niebieskich, mając o to żal, początkujący spędza pięć dni przerażony i udając, że nie jest. Ogarnijcie to przed rezerwacją, a nie na pierwszej kanapie. <link>Zrób ankietę</link> o konkretach — ile dni jazdy chce każdy, kto chce lekcji, kto chce dnia odpoczynku, czy ktoś w ogóle nie jeździ — bo odpowiedzi zmieniają ośrodek, długość karnetu, który wszyscy kupują, i budżet. Osoba, która jeździ dwa dni z sześciu, nie powinna kupować karnetu 6-dniowego i nie powinna się o tym dowiadywać pierwszego dnia."
+  },
+  "midCta": {
+    "title": "Zaklep tydzień, zanim chatki znikną",
+    "subtitle": "Wybierz daty, zobacz, kto naprawdę jedzie, i zacznij wspólny budżet, zanim ktoś wyłoży zadatek.",
+    "button": "Zacznij planować — za darmo"
+  },
+  "budget": {
+    "title": "Ile naprawdę kosztuje tydzień na nartach",
+    "subtitle": "Pięć pozycji, pięć różnych sposobów dzielenia. To ta sekcja decyduje, czy Wasze przyjaźnie przetrwają wyjazd.",
+    "splitLabel": "Podział",
+    "lines": [
+      {
+        "item": "Nocleg",
+        "amount": "Największa pozycja, bez porównania",
+        "split": "Na łóżko, nie na głowę",
+        "gotcha": "Rezerwowany cztery do sześciu miesięcy wcześniej, płacony jedną kwotą przez jedną osobę. Ta osoba jest teraz bankiem grupy bez harmonogramu spłat. Ta sama chatka może kosztować dwa-trzy razy więcej w ferie lutowe niż w styczniu — wybrany tydzień rusza tę liczbę bardziej niż ośrodek. Dziel na łóżko: para w pokoju z podwójnym łóżkiem i osoba na piętrowym pod schodami nie płacą tyle samo."
+      },
+      {
+        "item": "Karnet",
+        "amount": "421 € / 6 dni",
+        "split": "Indywidualnie, nigdy do wspólnej puli",
+        "gotcha": "Karnet 6-dniowy dla dorosłych w 3 Vallées kosztuje 421 € od 19 grudnia 2026 r. i 378,90 € w oknach 5-18 grudnia i 10-18 kwietnia. Każdy kupuje swój, na swoją liczbę dni — ta pozycja nigdy nie może trafić do wspólnej puli, bo osoba jeżdżąca dwa dni kończy jako sponsor tej, która jeździ sześć."
+      },
+      {
+        "item": "Wypożyczenie sprzętu",
+        "amount": "90-150 € / tydzień",
+        "split": "Indywidualnie",
+        "gotcha": "Standardowy pakiet dla dorosłego — narty, buty, kijki, kask — to mniej więcej 90 do 150 € za tydzień, więcej za sprzęt wyczynowy. Połowa Twojej grupy ma własny sprzęt i nie płaci tu nic, i dokładnie dlatego to nie może być koszt wspólny. Rezerwuj online przed wyjazdem: wejście do wypożyczalni w sobotę tygodnia ferii to droga wersja."
+      },
+      {
+        "item": "Jedzenie i picie",
+        "amount": "Ciągłe, nierówne, bez końca",
+        "split": "Wspólna pula + indywidualnie",
+        "gotcha": "Ta pozycja po cichu generuje najwięcej żalu. Wielkie zakupy w markecie na dole doliny, wspólne kolacje w chatce, tartiflette za 18 € na tarasie, kolejki. Rozdzielcie je: zakupy i wspólne kolacje do wspólnej puli, wszystko na górze zostaje indywidualne. Zapisuj każdy wydatek tego dnia, w którym się wydarzył, z informacją, kto zapłacił i za kogo."
+      },
+      {
+        "item": "Dojazd",
+        "amount": "Zależy w całości od tego, jak",
+        "split": "Na auto, nie na osobę",
+        "gotcha": "Dwa auta, po czterech pasażerów, jedno na diesla i jedno elektryczne, opłaty drogowe tylko na jednej trasie, a osoba, która prowadziła, zapłaciła jeszcze za parking. Dziel paliwo i opłaty per pojazd, między pasażerów tego pojazdu. Jeśli część leci do Genève albo Lyonu i bierze transfer, to ich pozycja — nie wrzucaj jej do puli z kierowcami."
+      }
+    ],
+    "p1": "Zasada, która ratuje wyjazdy na narty: nic nie trafia do wspólnej puli, jeśli każda pojedyncza osoba nie korzysta z tego tak samo. To chatka, zakupy, wspólne kolacje i paliwo na auto. Cała reszta — karnety, wypożyczenie, lekcje, obiady na górze, popołudnie w spa dla dwóch osób, które nie jeżdżą — jest indywidualna i taka zostaje. Ustaw <link>wspólny budżet</link> z kategorią na każdą pozycję przed wyjazdem i pozwól każdemu zapisywać swoje wydatki na bieżąco. Znajomy, który wyłożył zadatek na chatkę w październiku, nie powinien w marcu wciąż gonić za przelewami.",
+    "p2": "Załatw kwestię zadatku porządnie. Ktoś kładzie 2000 € albo więcej na kartę jesienią za wyjazd, który jest w lutym — to realna czteromiesięczna pożyczka między znajomymi, której nikt nigdy nie nazywa pożyczką. Zapisz ją jako wydatek w dniu zapłaty, z pozostałymi uczestnikami oznaczonymi jako winni swoją część, i poproś o przelewy od razu — dopóki wyjazd ekscytuje i wszyscy są zmotywowani. Nie na parkingu lotniska w drodze powrotnej.",
+    "p3": "Potem ustalcie zasadę rezygnacji, zanim ktokolwiek cokolwiek zapłaci. Ktoś się wypisze — to nie pesymizm, to każdy wyjazd grupowy w historii. Zdecydujcie, na piśmie, w planie, czy jego część jest zwracana, czy pokrywa ją do czasu znalezienia zastępstwa, czy bierze ją na siebie grupa. Trzydzieści sekund ustaleń we wrześniu zapobiega najgorszej rozmowie roku w styczniu."
+  },
+  "pullQuote": "Tydzień decyduje o budżecie. Podział decyduje o przyjaźniach. Cała reszta to tylko jazda na nartach.",
+  "group": {
+    "title": "Planowanie z grupą",
+    "p1": "Zacznij we wrześniu, nie w grudniu. Noclegi w górach rezerwuje się cztery do sześciu miesięcy wcześniej — dobre chatki na tygodnie lutowe znikają jesienią, a w grudniu wybierasz już między miejscem za daleko od wyciągów, ośrodkiem, którego nikt nie chciał, albo dopłatą za jedno i drugie. Ale nie zarezerwujesz, dopóki nie wiesz, kto jedzie, a nie dowiesz się, kto jedzie, dopóki nie wybierzesz tygodnia. Więc zacznij właśnie tam: <link>zrób ankietę</link> o trzech-czterech kandydujących tygodniach, z kontekstem cenowym przy każdym — ludzie wybierają zupełnie inaczej, gdy widzą, że lutowy tydzień kosztuje dwa razy tyle. Zbierz realne deklaracje, potem rezerwuj.",
+    "p2": "Tydzień na nartach ma rytm, co do którego grupa musi się dogadać, a nie tylko lokalizację. O której wychodzimy z chatki? Jeździmy razem czy dzielimy się na poziomy i spotykamy na obiad? Kto gotuje którego wieczoru? Czy w środku tygodnia jest dzień odpoczynku i czy biorą go wszyscy? Wrzuć całość do <link>wspólnego planu podróży</link> — łącznie z dojazdem, sobotnimi korkami w dniu wymiany turnusów, wizytą w wypożyczalni i zakupami w markecie. Ośrodki narciarskie w sobotę w ferie to najgorszy ruch w Europie. Zaplanuj przyjazd jak etap wyjazdu, bo nim jest.",
+    "p3": "Przypisz wspólny sprzęt tak, jak przypisujesz wszystko inne. Jedno urządzenie do raclette, nie cztery. Łańcuchy albo opony zimowe w każdym aucie — obowiązkowe w gminach górskich, i nie chodzi o mandat, chodzi o to, żeby wjechać na ostatnie 15 kilometrów. Ktoś bierze głośnik, ktoś gry planszowe na dzień w mleku, ktoś apteczkę. Wspólna lista z nazwiskami przy rzeczach zapobiega klasycznemu przyjazdowi, na którym macie trzy deski serów i zero korkociągów.",
+    "p4": "Wszystko powyżej to tylko narciarska wersja tego samego problemu, który ma każdy wyjazd grupowy: za dużo decyzji, za wielu płacących, zero wspólnego źródła prawdy. Jeśli chcesz metody ogólnej — jak przeprowadzić grupę od wątku na WhatsAppie do zarezerwowanego wyjazdu bez tego, żeby jedna osoba robiła całą robotę — opisaliśmy to w całości w naszym <link>kompletnym poradniku planowania wyjazdu grupowego</link>."
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "q": "Kiedy zaczyna się sezon narciarski 2026-27 w Alpach?",
+        "a": "Tignes, Val Thorens i Orelle planują otworzyć się jako pierwsze, 21 listopada 2026 r., dzięki dostępowi do lodowca i wysokiemu położeniu. Val d'Isère, Les 2 Alpes i Chamonix ruszają 28 listopada, Courchevel i La Tania 5 grudnia, a Méribel i Les Menuires 6 grudnia 2026 r. Większość pozostałych francuskich ośrodków otwiera się do połowy grudnia. Na drugim końcu Tignes i Val Thorens planują jeździć do 2 maja 2027 r., a Les 2 Alpes trzyma lodowiec otwarty do lata. Wszystkie te daty to opublikowane plany ośrodków i zawsze zmieniają się razem ze śniegiem."
+      },
+      {
+        "q": "Kiedy wypadają francuskie ferie lutowe w 2027 r.?",
+        "a": "Strefa C (Paris, Créteil, Versailles, Montpellier, Toulouse) ma ferie od 6 do 22 lutego 2027 r. Strefa A (Grenoble, Lyon, Bordeaux, Dijon, Besançon, Clermont-Ferrand, Limoges, Poitiers) od 13 lutego do 1 marca. Strefa B (Lille, Nice, Aix-Marseille, Nantes, Rennes, Strasbourg, Nancy-Metz, Reims, Amiens, Normandia, Orléans-Tours) od 20 lutego do 8 marca. To znaczy, że ośrodki są w trybie szczytu przez cztery tygodnie z rzędu, od 6 lutego do 8 marca 2027 r. — najdroższy odcinek sezonu."
+      },
+      {
+        "q": "Który tydzień jest najtańszy na narty w sezonie 2026-27?",
+        "a": "Dwa okna. Tygodnie otwarcia (5-18 grudnia 2026 r.) i koniec sezonu (10-18 kwietnia 2027 r.), gdy karnet 6-dniowy dla dorosłych w 3 Vallées kosztuje 378,90 € zamiast 421 €, a noclegi są najtańsze. Haczykiem jest pokrywa śnieżna: na początku grudnia w pełni działają tylko ośrodki wysoko położone, a w połowie kwietnia niższe sektory się zamykają. Oba okna działają dobrze, jeśli jedziecie wysoko — Tignes, Val Thorens, Val d'Isère, Les 2 Alpes. Trzecia opcja, i najlepsza całościowo, to styczeń: karnety w pełnej cenie, ale tanie noclegi przy wszystkich wyciągach w ruchu."
+      },
+      {
+        "q": "Ile kosztuje grupowy tydzień na nartach w przeliczeniu na osobę?",
+        "a": "Zależy to niemal w całości od tygodnia i noclegu, i właśnie dlatego nie podamy Ci fałszywej średniej. Części stałe, wokół których możesz planować: karnet 6-dniowy dla dorosłych w 3 Vallées to 421 € (378,90 € w oknach z początku grudnia i połowy kwietnia), a standardowy pakiet wypożyczenia nart, butów, kijków i kasku to mniej więcej 90-150 € za tydzień. Nocleg to największa i najbardziej zmienna pozycja — ta sama chatka może kosztować dwa-trzy razy więcej w ferie lutowe niż w styczniu. Do tego jedzenie, paliwo i lekcje. Buduj to pozycja po pozycji we wspólnym budżecie, zamiast zgadywać kwotę na osobę."
+      },
+      {
+        "q": "Jak uczciwie podzielić koszt chatki?",
+        "a": "Na łóżko, nie na głowę. Osoba w prywatnym pokoju z podwójnym łóżkiem i łazienką oraz osoba na piętrowym łóżku na zaadaptowanym poddaszu nie dostają tego samego i nie powinny płacić tyle samo. Ustalcie podział per pokój przed rezerwacją, a nie po tym, jak każdy wybierze sobie pokój po przyjeździe. I zapisz zadatek jako wydatek w dniu zapłaty — osoba, która wyłożyła 2000 € w październiku, jest wierzycielem od tego dnia, a nie od dnia powrotu."
+      },
+      {
+        "q": "Czy karnet powinien wchodzić do budżetu grupowego?",
+        "a": "Nie. Nigdy. To najczęstszy błąd wyjazdów na narty. Karnety różnią się osoba po osobie — 6-dniowy, 3-dniowy, tylko strefa dla początkujących, zero dla osoby, która przyjechała do spa — więc wrzucenie ich do puli oznacza, że mało jeżdżący sponsorują dużo jeżdżących, i nikt nic nie mówi aż do ostatniego wieczoru. Tak samo z wypożyczeniem: połowa grupy ma własny sprzęt. Karnety, sprzęt i lekcje to pozycje indywidualne. Wspólna pula jest na chatkę, zakupy, wspólne kolacje i paliwo."
+      },
+      {
+        "q": "Jak ogarnąć grupę o bardzo różnych poziomach jazdy?",
+        "a": "Zdecydujcie o tym przed rezerwacją, bo to zmienia ośrodek. Duży, wysoko położony teren daje każdemu coś do jeżdżenia, ale kosztuje najwięcej; mniejszy ośrodek jest tańszy i mniej onieśmielający dla początkujących, ale nudzi mocnych narciarzy trzeciego dnia. Zapytaj wszystkich na wstępie, ile dni naprawdę chcą jeździć i czy chcą lekcji — odpowiedzi zwykle pokazują, że grupa jest bardziej wymieszana, niż ktokolwiek zakładał. Potem zaplanuj tydzień tak, żeby jeździć według poziomów i spotykać się na obiad, zamiast wymuszać jedno tempo grupowe, które nikomu nie pasuje."
+      },
+      {
+        "q": "Kiedy rezerwować wyjazd na narty na sezon 2026-27?",
+        "a": "Od września do listopada, a na tygodnie lutowe wcześniej. Noclegi w górach rezerwuje się zwykle cztery do sześciu miesięcy wcześniej, więc szukanie zaczyna się późnym latem, a najlepsze miejsca na tygodnie ferii znikają jesienią. Kolejność ma znaczenie: najpierw wybierz tydzień, potwierdź ankietą, kto naprawdę jedzie, a potem rezerwuj — bo chatka zarezerwowana, zanim znasz liczby, to sposób na to, żeby jedna osoba płaciła za dwa puste łóżka."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Odkryj więcej",
+    "tripWithFriends": {
+      "title": "Wyjazd ze znajomymi",
+      "desc": "Zaplanuj dowolny wyjazd grupowy bez robienia całej roboty samemu.",
+      "cta": "Czytaj dalej →"
+    },
+    "groupGuide": {
+      "title": "Poradnik wyjazdu grupowego",
+      "desc": "Kompletna metoda krok po kroku, od czatu grupowego do rezerwacji.",
+      "cta": "Przeczytaj poradnik →"
+    },
+    "worldCup": {
+      "title": "Planer Mistrzostw Świata 2026",
+      "desc": "Śledź swoją drużynę w 16 miastach gospodarzach razem z ekipą.",
+      "cta": "Czytaj dalej →"
+    },
+    "bestApps": {
+      "title": "Najlepsze aplikacje do podróży grupowych",
+      "desc": "Nasze porównanie najlepszych narzędzi do wyjazdów grupowych.",
+      "cta": "Przeczytaj artykuł →"
+    }
+  },
+  "cta": {
+    "title": "Zaplanuj swój wyjazd na narty 2026-27",
+    "subtitle": "Tydzień, chatka, kto jedzie, kto ile jest winien — jeden wspólny plan, który widzi cała Twoja ekipa.",
+    "button": "Zacznij planować — za darmo"
+  },
+  "jsonld": {
+    "articleHeadline": "Sezon narciarski 2026-27: jak zaplanować grupowy wyjazd na narty",
+    "howToName": "Jak zaplanować grupowy wyjazd na narty w sezonie 2026-27",
+    "howToDescription": "Wybierz tydzień, korzystając z kalendarza cen sezonu, potwierdź, kto naprawdę jedzie, zanim zarezerwujesz, zaplanuj tydzień razem z grupą i podziel chatkę, karnety, sprzęt i jedzenie tak, żeby nikt nie skończył, finansując wyjazd z własnej kieszeni.",
+    "howToSteps": [
+      {
+        "name": "Wybierz tydzień, zanim zrobisz cokolwiek innego",
+        "text": "Tydzień rusza Twój całkowity koszt bardziej niż ośrodek. Francuskie ferie lutowe trwają od 6 lutego do 8 marca 2027 r. w trzech strefach i są szczytem sezonu; styczeń oraz tygodnie otwarcia od 21 listopada 2026 r. to okna okazji. Najpierw wybierz tydzień — cała reszta z niego wynika."
+      },
+      {
+        "name": "Potwierdź ankietą, kto naprawdę jedzie",
+        "text": "Nigdy nie rezerwuj chatki, zanim poznasz liczby. Zrób ankietę o kandydujących tygodniach z ceną przy każdym, zapytaj, ile dni jazdy chce każda osoba i kto potrzebuje lekcji, i zbierz realne deklaracje. Chatka zarezerwowana na założeniach to sposób na to, żeby jedna osoba płaciła za dwa puste łóżka."
+      },
+      {
+        "name": "Rezerwuj od września do listopada",
+        "text": "Noclegi w górach rezerwuje się cztery do sześciu miesięcy wcześniej, a najlepsze miejsca na tygodnie ferii znikają jesienią. Zarezerwuj nocleg, potem sprzęt online, a potem zaplanuj dojazd — wspólny plan podróży, który obejmuje sobotnie korki w dniu wymiany turnusów, termin w wypożyczalni i zakupy w markecie."
+      },
+      {
+        "name": "Dziel według kategorii, nie po głowach",
+        "text": "Do wspólnej puli wchodzą tylko chatka, zakupy, wspólne kolacje i paliwo na auto — chatka dzielona na łóżko, nie na głowę. Karnety, wypożyczenie, lekcje i obiady na górze zostają indywidualne, bo nie każdy jeździ tyle samo dni i nie każdy wypożycza. Zapisz zadatek jako wydatek w dniu zapłaty."
+      }
+    ]
+  }
+}

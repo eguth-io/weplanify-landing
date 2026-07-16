@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "title": "Eclipse Total 2 ago. 2027: Planear a Viagem",
+    "description": "Eclipse solar total de 2 ago. 2027: 6 min 23 s em Luxor, faixa por Espanha e Egito, cruzeiro no Nilo ou terra firme, óculos ISO 12312-2 e planeamento em grupo."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Planeador de Viagem para o Eclipse Solar 2027"
+  },
+  "hero": {
+    "tag": "Guia de astroturismo e planeador de viagem em grupo · agosto de 2027",
+    "title": "Eclipse Solar Total, 2 de Agosto de 2027: Planeador de Viagem para o Egito e Espanha",
+    "intro": "Segunda-feira, 2 de agosto de 2027. A sombra da Lua cai no Atlântico, roça o sul de Espanha e Gibraltar, atravessa Marrocos, a Argélia, a Tunísia e a Líbia, e chega ao Alto Egito — onde a totalidade se estende até 6 minutos e 23 segundos na linha central, com o Sol quase na vertical. Os números de Fred Espenak fazem desta a totalidade mais longa visível a partir de terra de fácil acesso até 3 de junho de 2114. Luxor é a peça central, e falta cerca de um ano — que é precisamente por isso que as decisões de grupo têm de começar agora, e não na próxima primavera. Este é o guia completo para escolher entre o Egito e Espanha, resolver a questão do cruzeiro no Nilo, montar o kit de segurança e manter um grupo unido ao longo de um ano de planeamento. Se ainda estão a escolher as ferramentas, vejam a nossa <apps>comparação de apps de viagem em grupo</apps>.",
+    "readTime": "12 min de leitura",
+    "ctaButton": "Planear a nossa viagem ao eclipse",
+    "ctaNote": "Grátis · feito para grupos · 8 idiomas"
+  },
+  "facts": {
+    "heading": "Dados do eclipse",
+    "dateLabel": "Data",
+    "dateValue": "Seg. 2 de ago.",
+    "totalityLabel": "Totalidade máxima",
+    "totalitySub": "linha central, Alto Egito",
+    "pathLabel": "Faixa",
+    "pathSub": "10 países ao todo",
+    "nextLabel": "Próximo mais longo",
+    "nextSub": "3 de junho de 2114"
+  },
+  "stakes": {
+    "p1": "A maioria dos eclipses totais dá-vos dois minutos e uma moeda ao ar quanto ao tempo. Este é diferente nos dois pontos. Na linha central egípcia a totalidade dura 6 minutos e 23 segundos, e a própria Luxor recebe 6 minutos e 22 segundos com o Sol a 81,7° acima do horizonte — quase a pique, e é por isso que a coroa aparece num céu genuinamente escuro em vez de um brilho de pôr do sol. A climatologia é a outra metade da história: o meteorologista de eclipses Jay Anderson escreve que sobre a Líbia e o Egito “as nuvens são quase desconhecidas nos meses de verão”, e que a nebulosidade deste eclipse está “entre as mais baixas que analisei nos últimos 45 anos”. O senão é que toda a gente que persegue eclipses já sabe disto. Os operadores premium vendem Luxor desde 2024. A outra opção honesta é o sul de Espanha — Tarifa, Algeciras, Gibraltar e Ceuta apanham 4 minutos e meio, a duas horas de avião da maior parte da Europa, e é a sequela natural do <sibling>eclipse de 12 de agosto de 2026 sobre a Islândia e Espanha</sibling>. Egito ou Espanha é uma verdadeira bifurcação, e é uma decisão de grupo, não individual.",
+    "p2": "A WePlanify é o centro de comando partilhado e gratuito para um grupo que persegue este eclipse — a sondagem Egito vs Espanha, o nível de orçamento que todos conseguem mesmo pagar, os sinais distribuídos por doze meses e o plano minuto a minuto do dia do eclipse, tudo num só lugar."
+  },
+  "toc": {
+    "title": "Nesta página",
+    "path": "A faixa de totalidade",
+    "where": "Egito vs Espanha vs cruzeiro no Nilo",
+    "safety": "Segurança, óculos e o calor",
+    "logistics": "Viagem e alojamento",
+    "planning": "Planear ao longo de 12 meses",
+    "budget": "Dicas de orçamento",
+    "faq": "Perguntas frequentes"
+  },
+  "path": {
+    "title": "A Faixa de Totalidade",
+    "subtitle": "A umbra toca a Terra pela primeira vez no Atlântico às 08:23 UTC e abandona o planeta no Oceano Índico às 11:50 UTC. Dez países pelo meio — e a duração mais ou menos triplica de uma ponta à outra.",
+    "items": [
+      {
+        "stop": "Oceano Atlântico — primeiro contacto",
+        "desc": "A umbra pousa em pleno Atlântico às 08:23:25 UTC, por volta dos 28°N 44°O. Ali não há nada para ver senão água; a sombra corre depois para leste-sudeste rumo ao Estreito de Gibraltar, ganhando duração por todo o caminho."
+      },
+      {
+        "stop": "Espanha e Gibraltar — a ponta europeia",
+        "desc": "Chega a terra na Andaluzia por volta das 10:47 CEST, com o Sol a cerca de 38° de altura. Ceuta recebe 4 min 48 s, Tarifa 4 min 38 s, Algeciras 4 min 27 s, Gibraltar 4 min 25 s, Melilha 4 min 32 s. Mais ao longo da costa os números caem a pique: Marbelha 3 min 16 s, Cádiz cerca de 2 min 51 s, Málaga apenas cerca de 1 min 49 s, Jerez cerca de 1 min 36 s. A linha central falha por completo a Espanha continental — só o bordo norte da faixa raspa a Andaluzia, por isso um curto trajeto de carro muda enormemente o resultado. Sevilha (98,4%), Granada (99,2%), Huelva (98,2%) e a cidade de Almeria veem um parcial profundo e nenhuma totalidade."
+      },
+      {
+        "stop": "Marrocos — Tânger e Tetuão",
+        "desc": "A sombra atravessa o estreito em minutos. Tânger e Tetuão recebem ambas 4 min 50 s — ligeiramente mais do que qualquer ponto de Espanha — às 08:47 UTC com o Sol por volta dos 38°. Chefchaouen recebe 4 min 13 s, Alhucemas 4 min 24 s, Nador 4 min 15 s. Rabat (98,1%), Fez (97,9%) e Casablanca (96,8%) são só parcial. Atenção: Marrocos voltou ao GMT todo o ano em setembro de 2026, por isso a hora local aqui é UTC — vários sites de eclipses continuam a publicar estes horários uma hora atrasados."
+      },
+      {
+        "stop": "Argélia, Tunísia e Líbia — o meio vazio",
+        "desc": "O traçado percorre o Norte de África de ponta a ponta, e é aqui que a duração passa dos cinco minutos e a climatologia se torna quase absurdamente boa. A nota de Anderson de que “as nuvens são quase desconhecidas nos meses de verão” sobre a Líbia e o Egito cobre todo este troço. Na prática, é o acesso, as infraestruturas e os avisos de viagem — não o tempo — que põem de parte a maior parte desta etapa para um grupo normal."
+      },
+      {
+        "stop": "Egito — Luxor e a linha central (o prato principal)",
+        "desc": "Luxor: a totalidade começa às 13:02:14, o máximo é às 13:05:26 e termina às 13:08:36, hora local (EEST, UTC+3) — 6 minutos e 22 segundos com o Sol a 81,7° de altura. A maior duração de toda a faixa, 6 min 23,2 s, cai cerca de 195 km a noroeste de Luxor, perto de Sohag; o ponto distinto de maior eclipse (6 min 22,6 s) fica a cerca de 58 km a leste-sudeste da cidade. O que interessa na prática: Luxor está a escassos segundos do máximo teórico, por isso não há razão nenhuma para perseguir a linha central. Sohag também recebe 6 min 22 s, Qena 6 min 10 s, Assiute 6 min 06 s, Marsa Alam 5 min 28 s. Assuão não está na faixa — não passa dos 99,83% de parcial, tal como Hurghada (98,5%) e o Cairo (94,8%)."
+      },
+      {
+        "stop": "Do Sudão ao Oceano Índico — a cauda",
+        "desc": "A faixa roça um canto remoto e sem estradas do nordeste do Sudão, atravessa depois o Mar Vermelho até à Arábia Saudita — Meca fica na faixa com cerca de 5 minutos de totalidade — antes do Iémen e da Somália. A umbra levanta voo da Terra sobre o Oceano Índico às 11:49:53 UTC."
+      }
+    ]
+  },
+  "where": {
+    "title": "Egito vs Espanha vs Cruzeiro no Nilo",
+    "subtitle": "Três opções honestas com compromissos genuinamente diferentes. É a única decisão de que depende toda a viagem, e a que mais facilmente divide um grupo — por isso tomem-na de propósito.",
+    "option1": {
+      "tag": "Opção 1",
+      "title": "Luxor, em terra firme",
+      "desc": "A experiência máxima: 6 min 22 s, Sol a 81,7° por cima da cabeça, e uma climatologia que Anderson considera das menos nubladas que analisou em 45 anos — Luxor é onde a fração de nuvens só agora começa a subir acima de zero. E ainda apanham o Vale dos Reis e Karnak antes e depois do eclipse. O senão: é voo longo, a máxima média de 2 de agosto é de 42 °C, e a gama alta do alojamento vende desde 2024."
+    },
+    "option2": {
+      "tag": "Opção 2",
+      "title": "Cruzeiro no Nilo",
+      "desc": "Um barco é um hotel flutuante, o que contorna com elegância a falta de quartos em Luxor, e serve ao mesmo tempo de viagem turística. O cruzeiro fretado da Sky & Telescope esteve anunciado entre 6.950 $ e 12.750 $ por pessoa, e vários operadores mostram os barcos de 2027 já esgotados. O senão: é de longe o nível mais caro, o itinerário é fixo, e o grupo tem de se comprometer — e pagar sinais — com muita antecedência."
+    },
+    "option3": {
+      "tag": "Opção 3",
+      "title": "Sul de Espanha ou Tânger",
+      "desc": "Tarifa (4 min 38 s), Algeciras, Gibraltar (4 min 25 s) ou Ceuta (4 min 48 s) — voo curto, sem visto para quem viaja da UE, e Cádiz tem sol em cerca de 88% dos dias no início de agosto. Tânger recebe 4 min 50 s e fica a uma hora de ferry de Tarifa. O senão: cerca de 90 segundos a menos de totalidade, um Sol a 38° em vez de a pique, e a cidade de Málaga não chega aos dois minutos — têm mesmo de conduzir para sudoeste."
+    },
+    "outro": "Aqui não há resposta errada, só um desencontro entre o que um grupo diz que quer e aquilo que vai mesmo pagar. Se a resposta honesta for “queremos um eclipse total mas não temos orçamento para voo longo”, o sul de Espanha é uma viagem genuinamente boa e não um prémio de consolação. E se 2027 estiver mesmo fora de alcance, o <sibling>eclipse de 12 de agosto de 2026 pela Islândia e norte de Espanha</sibling> vem primeiro e é muito mais barato de alcançar a partir da Europa."
+  },
+  "midCta": {
+    "title": "Egito ou Espanha?",
+    "subtitle": "Ponham já as duas opções à votação do grupo — a doze meses é quando a resposta ainda muda alguma coisa.",
+    "button": "Fazer a sondagem"
+  },
+  "safety": {
+    "title": "Segurança, Óculos e o Calor",
+    "subtitle": "Há dois perigos reais nesta viagem, e nenhum deles é o eclipse em si. Um é olhar para a fase parcial sem proteção. O outro são 42 °C a meio do dia.",
+    "card1": {
+      "title": "Óculos ISO 12312-2 — a única coisa que funciona",
+      "desc": "Precisam de óculos de observação solar certificados ISO 12312-2:2015, com a marcação no próprio filtro, mais a marcação CE na Europa. Nada mais serve: nem óculos de sol empilhados dois ou três, nem vidro fumado, nem negativos fotográficos expostos, nem vidro de soldador abaixo do tom 14. A retinopatia solar é indolor — a retina não tem recetores de dor — por isso não há sinal de aviso a dizer-vos para desviar o olhar, e o dano pode ser permanente. Os óculos degradam-se: substituam qualquer par com mais de três anos e verifiquem se há riscos ou furos antes de viajar. Comprem um par certificado por pessoa mais um de reserva por cada quatro, a um fornecedor que consigam identificar, bem antes da correria pré-eclipse. Durante a totalidade — e só se estiverem mesmo dentro da faixa — podem e devem olhar a olho nu. Assim que reaparece a primeira réstia de Sol, os óculos voltam ao rosto."
+    },
+    "card2": {
+      "title": "O calor no Alto Egito é um perigo a sério",
+      "desc": "O número de Anderson para Luxor: uma máxima média de 42,0 °C a 2 de agosto ao longo dos últimos 17 anos, com muito pouca variação de ano para ano e um recorde de 46 °C. A totalidade cai às 13:05 locais — pico de calor, Sol quase na vertical, zero precipitação e praticamente nenhuma sombra num local de observação no deserto. A salvação é a humidade ser muito baixa, portanto o suor funciona mesmo. Planeiem a sério: muito mais água do que parece necessário, eletrólitos, chapéu e mangas compridas leves em vez de pele exposta, e um plano de sombra para as duas horas antes da totalidade, em que vão estar simplesmente à espera. O ar arrefece de forma notória durante esses seis minutos — é uma das melhores partes de uma totalidade longa — mas isso não é uma estratégia contra o calor. Se alguém do grupo for sensível ao calor, mais velho ou estiver a tomar medicação afetada pelo calor, isto entra na conversa sobre o destino, não na lista da mala."
+    },
+    "card3": {
+      "title": "Telemóveis, câmaras e o problema da foto de grupo",
+      "desc": "Apontar um telemóvel ou uma câmara sem filtro à fase parcial pode danificar o sensor, e enquadrar através do ecrã ou de um visor também não é forma segura de olhar para o Sol. Se quiserem fotografar o parcial, usem um filtro solar de enroscar ou magnético a sério. Vale a pena dizer sem rodeios: seis minutos é tempo suficiente para valer a pena dizer explicitamente a alguém do grupo que a função dele é não filmar nada. Uma totalidade longa é rara precisamente porque vos dá tempo para olhar de verdade, e um grupo que passa os seis minutos atrás de ecrãs pagou uma viagem cara para ver um retângulo pequeno."
+    }
+  },
+  "logistics": {
+    "title": "Viagem e Alojamento",
+    "subtitle": "A doze meses ainda há escolha a sério. O constrangimento não são os voos — é que as camas mais conhecidas ao longo da linha central são as primeiras a desaparecer, e no dia do eclipse mexerem-se é limitado.",
+    "gettingThere": "Como chegar",
+    "egyptLabel": "Egito",
+    "egyptItems": [
+      "→ Voar direto para Luxor (LXR), ou via Cairo (CAI) mais um salto doméstico de ~1 h",
+      "→ A maioria das nacionalidades precisa de visto egípcio — o e-visa é simples mas não é imediato",
+      "→ A cidade de Luxor recebe 6 min 22 s: sem caça à linha central, sem viagem de carro na manhã do eclipse",
+      "→ Hurghada (HRG) é um voo barato comum mas só apanha 98,5% de parcial — teriam de se deslocar no próprio dia",
+      "→ O inventário premium do eclipse (Sofitel Winter Palace, barcos fretados no Nilo) já aparece esgotado nos operadores",
+      "→ Sohag (6 min 22 s) e Qena (6 min 10 s) são alternativas se as camas de Luxor acabarem"
+    ],
+    "spainLabel": "Espanha e Marrocos",
+    "spainItems": [
+      "→ Málaga (AGP) ou Jerez (XRY), voo curto a partir da maior parte da Europa, depois conduzir para sudoeste",
+      "→ Tarifa 4 min 38 s, Algeciras 4 min 27 s, Gibraltar 4 min 25 s, Ceuta 4 min 48 s",
+      "→ A cidade de Málaga só apanha ~1 min 49 s — ficar por lá e não conduzir é o erro clássico",
+      "→ Sevilha, Granada, Huelva e a cidade de Almeria são só parcial, por muito perto que pareçam no mapa",
+      "→ O ferry Tarifa → Tânger demora ~1 h, se quiserem os 4 min 50 s de Marrocos",
+      "→ O início de agosto é época alta na Andaluzia — esta costa enche por razões que nada têm a ver com o eclipse"
+    ]
+  },
+  "planning": {
+    "title": "Planear ao Longo de uma Janela de 12 Meses",
+    "p1": "Uma pista de doze meses parece um luxo e é, na verdade, a parte difícil. Ninguém sente urgência ao mês doze, toda a gente entra em pânico ao mês dois, e as boas decisões vivem todas no início. Comecem pela única pergunta que interessa: Egito ou Espanha. Não a discutam num grupo de conversa, onde vira uma guerra de desgaste que ganha quem for mais insistente. Façam uma <polls>sondagem de grupo</polls> com os compromissos escritos por extenso — voo longo, mais 42 °C, mais um orçamento a sério por seis minutos e um Sol a pique, contra um fim de semana curto por quatro minutos e meio. As pessoas escolhem de outra maneira quando os custos aparecem no mesmo ecrã que os benefícios, e ficam a saber cedo quem vem mesmo.",
+    "p2": "Depois fixem o nível de orçamento antes de alguém reservar seja o que for, porque nesta viagem o nível é a viagem. Uma estadia em terra firme em Luxor e um cruzeiro fretado no Nilo são férias diferentes a preços diferentes, e um grupo que não acertou o número vai descobrir a discordância no pior momento possível — depois dos sinais. Ponham os compromissos por escrito, distribuam os sinais ao longo do ano em vez de os concentrarem num mês, e sejam explícitos sobre o que acontece se alguém desistir ao mês três ou ao mês onze. O nosso <guide>guia de viagem em grupo</guide> aprofunda as conversas incómodas sobre dinheiro; tenham-nas agora, enquanto são baratas.",
+    "p3": "Mais perto da data, o próprio dia do eclipse ganha um plano só dele. A totalidade em Luxor vai das 13:02:14 às 13:08:36 locais, e tudo o resto nesse dia se calcula de trás para a frente: estejam em posição horas antes, saibam exatamente onde vai estar o Sol, combinem um ponto de encontro e partam do princípio de que as redes móveis vão sofrer quando uma cidade inteira olhar para cima ao mesmo tempo. Ponham tudo num <itinerary>itinerário partilhado</itinerary> que todos consigam ver offline. Seis minutos é uma totalidade longa, mas continuam a ser seis minutos — o plano existe para que ninguém gaste nenhum deles à procura do grupo."
+  },
+  "budget": {
+    "title": "Dicas de Orçamento",
+    "p1": "As viagens de eclipse partem o formato habitual do orçamento: o preço vem da escassez, não da distância. Os níveis aqui estão muito afastados — um fim de semana prolongado em Espanha, uma estadia em terra firme em Luxor e um cruzeiro fretado de eclipse são três ordens de grandeza diferentes, e o cruzeiro da Sky & Telescope esteve anunciado entre 6.950 $ e 12.750 $ por pessoa. Montem um <budget>orçamento partilhado</budget> logo no início, ponham lá o número real e deixem que as pessoas entrem ou saiam com honestidade, em vez de descobrirem o total ao mês dez. O erro mais caro numa viagem destas não é pagar a mais — é um grupo de seis tornar-se caladinho um grupo de três depois de os sinais deixarem de ser reembolsáveis.",
+    "p2": "Numa janela de um ano, registem quem adiantou o quê à medida que acontece, e não no fim. Sinais, um voo interno, o saldo de um barco e seis pares de óculos ao longo de doze meses é exatamente o tipo de coisa de que ninguém se lembra com rigor, e reconstruir isso de cabeça em julho de 2027 é como viagens boas acabam mal. Registem cada despesa no dia em que acontece e acertem contas uma vez só.",
+    "p3": "Não poupem nos óculos. Um par certificado ISO 12312-2 custa uns euros — um erro de arredondamento face aos voos — e é a única linha do orçamento onde cortar pode magoar alguém de forma permanente. Comprem um por pessoa, juntem reservas, e comprem cedo a um fornecedor que consigam nomear."
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      {
+        "q": "Quando e onde é o eclipse solar total de 2 de agosto de 2027?",
+        "a": "Segunda-feira, 2 de agosto de 2027. A umbra toca a Terra pela primeira vez no Atlântico às 08:23 UTC e sai sobre o Oceano Índico às 11:50 UTC. Pelo meio, a faixa de totalidade atravessa dez países: Espanha, Marrocos, Argélia, Tunísia, Líbia, Egito, Sudão, Arábia Saudita, Iémen e Somália, mais Gibraltar. A totalidade máxima é de 6 minutos e 23 segundos na linha central egípcia. Luxor, a peça central na prática, recebe 6 minutos e 22 segundos, com a totalidade das 13:02:14 às 13:08:36, hora local (EEST, UTC+3), e o Sol a 81,7° acima do horizonte."
+      },
+      {
+        "q": "Este é mesmo o eclipse solar total mais longo do século?",
+        "a": "Não exatamente, e a distinção importa. O eclipse de 22 de julho de 2009 foi mais longo, com 6 minutos e 39 segundos — mas o seu máximo caiu em pleno Pacífico, com a terra mais próxima a ser uma ilha desabitada. O que é verdade, e o que os números de Fred Espenak sustentam, é que 2 de agosto de 2027 oferece a totalidade mais longa visível a partir de terra de fácil acesso no século XXI, e que só haverá uma mais longa a 3 de junho de 2114. A formulação da Sky & Telescope é a mais limpa: é a maior duração de totalidade dos próximos 87 anos. Se virem “o eclipse mais longo do século” sem qualquer ressalva, a afirmação está errada."
+      },
+      {
+        "q": "Egito ou Espanha — o que deve o nosso grupo escolher?",
+        "a": "Egito se querem que o eclipse em si seja a viagem. Luxor dá 6 minutos e 22 segundos com o Sol quase a pique, num clima em que Jay Anderson nota que as nuvens são quase desconhecidas no verão — classifica a nebulosidade deste eclipse entre as mais baixas que analisou em 45 anos. Espanha se o constrangimento for o orçamento, os dias de férias, ou conseguir que um grupo de oito se comprometa mesmo. Tarifa recebe 4 minutos e 38 s e Ceuta 4 minutos e 48 s, com um voo curto, e Cádiz tem sol em cerca de 88% dos dias do início de agosto. Noventa segundos de totalidade são uma diferença real, mas a diferença de preço também é. O teste honesto: o grupo prefere seis minutos uma vez, ou quatro minutos e meio e continuarem todos a falar uns com os outros?"
+      },
+      {
+        "q": "Porque é Luxor a peça central se a linha central é noutro sítio?",
+        "a": "Porque a diferença é irrisória e a infraestrutura não é. O ponto de maior duração — 6 min 23,2 s — fica a cerca de 195 km a noroeste de Luxor, perto de Sohag, e o ponto distinto de maior eclipse (6 min 22,6 s) fica a cerca de 58 km a leste-sudeste da cidade. A própria Luxor recebe 6 min 22 s. Conduziriam horas deserto adentro para ganhar menos de dois segundos, abdicando de hotéis, transportes, sombra e do Vale dos Reis. Perseguir a linha central neste eclipse é um dos raros casos em que a matemática diz claramente que não."
+      },
+      {
+        "q": "Cruzeiro no Nilo ou terra firme em Luxor?",
+        "a": "Um cruzeiro resolve o problema do alojamento trazendo o alojamento, e transforma o eclipse numa viagem completa ao Egito em vez de um evento isolado — o cruzeiro fretado da Sky & Telescope esteve anunciado entre 6.950 $ e 12.750 $ por pessoa, e vários operadores mostram os barcos de 2027 esgotados. Ficar em terra firme em Luxor é mais barato e mais flexível, deixa-vos na mesma a segundos do máximo, e permite escolherem o vosso próprio local de observação. Para um grupo, o fator decisivo costuma ser a tesouraria e o compromisso: um cruzeiro quer um sinal grande e cedo de toda a gente, o que é um verdadeiro teste a saber se o grupo vem mesmo."
+      },
+      {
+        "q": "Quanto calor faz mesmo em Luxor no início de agosto?",
+        "a": "O número de Jay Anderson é uma máxima média de 42,0 °C a 2 de agosto em Luxor ao longo dos últimos 17 anos, com muito pouca variação de ano para ano e um recorde de 46 °C. A totalidade cai às 13:05, hora local — a parte mais quente do dia, com o Sol quase na vertical e zero precipitação. A humidade é muito baixa, o que ajuda mesmo, mas isto não é um detalhe para descobrir à chegada. Contem com hidratação a sério, sombra para a espera antes da totalidade, e uma conversa honesta com quem, no grupo, tenha em 42 °C prolongados um problema médico e não um incómodo."
+      },
+      {
+        "q": "Que óculos precisamos, e quando os devemos comprar?",
+        "a": "Óculos de observação solar certificados ISO 12312-2:2015, com a certificação marcada no filtro e, na Europa, a marcação CE. Os óculos de sol não servem, por mais escuros que sejam, nem o vidro fumado, os negativos fotográficos ou o vidro de soldador abaixo do tom 14. A retinopatia solar é indolor, por isso nada vos avisa que está a acontecer. Comprem um par certificado por pessoa mais um de reserva por cada quatro, a um fornecedor identificável, e comprem bem antes da correria — a oferta aperta à medida que a cobertura mediática cresce. Substituam tudo o que tenha mais de três anos e verifiquem se há furos. Só durante a totalidade, e dentro da faixa, é que se olha a olho nu."
+      },
+      {
+        "q": "Já é tarde para planear 2027?",
+        "a": "Não — mas a gama alta está a acabar, não acabou. Os operadores que vendem barcos fretados no Nilo e os hotéis mais conhecidos de Luxor recebem reservas desde 2024 e vários aparecem esgotados. Isso limita o nível de topo, não a viagem: Luxor é uma cidade a sério, Sohag recebe 6 min 22 s e Qena 6 min 10 s, e toda a ponta espanhola e marroquina da faixa é uma viagem curta normal em que a maioria dos grupos ainda nem começou a pensar. A doze meses, o recurso escasso é o acordo do grupo, não o inventário. Fixem já o destino e o nível de orçamento e o resto vem atrás."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Descubra Mais",
+    "eclipse2026": { "title": "Planeador de Viagem para o Eclipse Solar 2026", "desc": "A totalidade de 12 de agosto de 2026 sobre a Islândia e o norte de Espanha — um ano antes, e muito mais perto de casa.", "cta": "Ler mais →" },
+    "rugby2027": { "title": "Planeador de Viagem para o Mundial de Râguebi 2027", "desc": "A outra grande viagem de 2027: Austrália, seis semanas, um grupo e um calendário de jogos.", "cta": "Ler mais →" },
+    "bestApps": { "title": "Melhores Apps para Planear Viagens em Grupo", "desc": "Uma comparação honesta das ferramentas para planear uma viagem com outras pessoas.", "cta": "Comparar apps →" },
+    "groupGuide": { "title": "Guia de Viagem em Grupo", "desc": "O guia completo, passo a passo, para planear uma viagem em grupo.", "cta": "Ler o guia →" }
+  },
+  "cta": {
+    "title": "Construa a Sua Viagem ao Eclipse de 2027",
+    "subtitle": "Sondagem Egito vs Espanha, nível de orçamento aceite por todos, sinais registados ao longo de doze meses e um plano minuto a minuto para o dia do eclipse — um plano, todo o vosso grupo na mesma página.",
+    "button": "Fazer a sondagem Egito vs Espanha"
+  },
+  "jsonld": {
+    "articleHeadline": "Eclipse Solar Total de 2 de Agosto de 2027: Planeador de Viagem para o Egito e Espanha",
+    "eventName": "Eclipse Solar Total de 2 de Agosto de 2027",
+    "eventDescription": "Eclipse solar total na segunda-feira, 2 de agosto de 2027. A faixa de totalidade atravessa o sul de Espanha, Gibraltar, Marrocos, a Argélia, a Tunísia, a Líbia, o Egito, o Sudão, a Arábia Saudita, o Iémen e a Somália. A totalidade máxima é de 6 minutos e 23 segundos na linha central, no Alto Egito; Luxor vê 6 minutos e 22 segundos com o Sol a 81,7° acima do horizonte. É a totalidade mais longa visível a partir de terra de fácil acesso no século XXI — a próxima mais longa cai a 3 de junho de 2114.",
+    "howToName": "Como planear uma viagem ao eclipse solar total de 2027 com um grupo",
+    "howToDescription": "A doze meses, eis como fixar esta viagem: decidam em grupo entre o Egito e Espanha, acertem o nível de orçamento antes de alguém reservar, arranjem óculos ISO 12312-2 e um plano para o calor, e montem a cronologia do dia do eclipse à volta da totalidade.",
+    "howToSteps": [
+      {
+        "name": "Decidam entre o Egito e o sul de Espanha — em grupo e cedo",
+        "text": "A bifurcação são 6 min 22 s em Luxor com um Sol a 81,7° e uma climatologia de nuvens quase nula, contra 4 min 38 s em Tarifa num voo curto. Voo longo, máximas médias de 42 °C e um orçamento muito maior de um lado; um fim de semana barato e acessível do outro. Façam uma sondagem de grupo com os compromissos escritos, em vez de deixar um grupo de conversa decidir por desgaste, e fiquem a saber ao mês doze quem vem mesmo."
+      },
+      {
+        "name": "Acertem o nível de orçamento antes de alguém reservar seja o que for",
+        "text": "Um fim de semana prolongado em Espanha, uma estadia em terra firme em Luxor e um cruzeiro fretado no Nilo (anunciado entre 6.950 $ e 12.750 $ por pessoa pela Sky & Telescope) são três viagens diferentes a três preços diferentes. Fixem primeiro o número, ponham-no num orçamento partilhado, distribuam os sinais pelos doze meses em vez de um mês brutal, e combinem o que acontece se alguém desistir tarde."
+      },
+      {
+        "name": "Reservem camas e voos, depois encomendem o kit de segurança",
+        "text": "A própria cidade de Luxor recebe 6 min 22 s, por isso não é preciso perseguir a linha central; Sohag (6 min 22 s) e Qena (6 min 10 s) são alternativas se Luxor encher. Em Espanha, voem para Málaga ou Jerez e conduzam para sudoeste — a cidade de Málaga não chega aos dois minutos. Encomendem um par certificado ISO 12312-2 por pessoa mais reservas bem antes da correria, e planeiem o calor: hidratação, sombra e mangas compridas para uma totalidade às 13:05 com 42 °C."
+      },
+      {
+        "name": "Montem a cronologia do dia do eclipse à volta da totalidade",
+        "text": "Em Luxor, a totalidade vai das 13:02:14 às 13:08:36 locais (EEST). Calculem de trás para a frente: estejam em posição horas antes, saibam onde vai estar o Sol, definam um ponto de encontro e contem com redes móveis a sofrer. Ponham tudo num itinerário partilhado que o grupo consiga abrir offline, e decidam com antecedência quem fotografa e quem simplesmente olha."
+      }
+    ]
+  }
+}

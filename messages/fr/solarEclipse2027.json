@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "title": "Éclipse totale 2 août 2027 : Égypte & Espagne",
+    "description": "Organise l’éclipse totale du 2 août 2027 en groupe : 6 min 23 s à Louxor, le tracé Espagne-Maroc-Égypte, croisière ou terre ferme, lunettes ISO 12312-2."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Organiser son voyage éclipse 2027"
+  },
+  "hero": {
+    "tag": "Guide astrotourisme & organisation de voyage en groupe · Août 2027",
+    "title": "Éclipse solaire totale du 2 août 2027 : organiser son voyage en Égypte ou en Espagne",
+    "intro": "Lundi 2 août 2027. L’ombre de la Lune touche l’Atlantique, effleure le sud de l’Espagne et Gibraltar, traverse le Maroc, l’Algérie, la Tunisie et la Libye, puis atteint la Haute-Égypte — où la totalité atteint 6 minutes 23 secondes sur la ligne centrale, Soleil quasiment à la verticale. D’après les calculs de Fred Espenak, c’est la plus longue totalité observable depuis une terre facilement accessible avant le 3 juin 2114. Louxor est la pièce maîtresse, et c’est dans douze mois environ — d’où l’urgence : les décisions de groupe se prennent maintenant, pas au printemps prochain. Voici le guide complet pour trancher entre l’Égypte et l’Espagne, régler la question de la croisière sur le Nil, préparer le kit sécurité et tenir un groupe soudé sur un an de préparation. Si tu cherches encore les bons outils, va voir notre <apps>comparatif des applis de voyage en groupe</apps>.",
+    "readTime": "12 min de lecture",
+    "ctaButton": "Organiser notre voyage éclipse",
+    "ctaNote": "Gratuit · pensé pour les groupes · 8 langues"
+  },
+  "facts": {
+    "heading": "L’éclipse en bref",
+    "dateLabel": "Date",
+    "dateValue": "Lun. 2 août",
+    "totalityLabel": "Totalité max",
+    "totalitySub": "ligne centrale, Haute-Égypte",
+    "pathLabel": "Tracé",
+    "pathSub": "10 pays au total",
+    "nextLabel": "Prochaine plus longue",
+    "nextSub": "3 juin 2114"
+  },
+  "stakes": {
+    "p1": "La plupart des éclipses totales t’offrent deux minutes et un pari sur la météo. Celle-ci change la donne sur les deux tableaux. Sur la ligne centrale égyptienne, la totalité dure 6 minutes 23 secondes, et Louxor décroche 6 minutes 22 secondes avec le Soleil à 81,7° au-dessus de l’horizon — presque à la verticale, ce qui place la couronne dans un ciel réellement noir plutôt que dans une lueur de coucher de soleil. La climatologie fait le reste : le météorologue spécialiste des éclipses Jay Anderson écrit qu’au-dessus de la Libye et de l’Égypte « les nuages sont quasiment inconnus pendant les mois d’été », et que la couverture nuageuse pour cette éclipse est « parmi les plus faibles que j’aie analysées ces 45 dernières années ». Le hic : tous ceux qui chassent les éclipses le savent déjà. Les tour-opérateurs haut de gamme vendent Louxor depuis 2024. L’autre option honnête, c’est le sud de l’Espagne — Tarifa, Algésiras, Gibraltar et Ceuta décrochent 4 minutes et demie, à deux heures d’avion de la majeure partie de l’Europe, et ça enchaîne naturellement avec l’<sibling>éclipse du 12 août 2026 sur l’Islande et l’Espagne</sibling>. Égypte ou Espagne, c’est un vrai carrefour — et une décision de groupe, pas une décision solo.",
+    "p2": "WePlanify, c’est le QG partagé et gratuit du groupe qui part sur celle-ci : le sondage Égypte contre Espagne, le budget que tout le monde peut vraiment assumer, les acomptes étalés sur douze mois et le plan minute par minute du jour J, au même endroit."
+  },
+  "toc": {
+    "title": "Au sommaire",
+    "path": "Le tracé de la totalité",
+    "where": "Égypte, Espagne ou croisière sur le Nil",
+    "safety": "Sécurité, lunettes & chaleur",
+    "logistics": "Transport & hébergement",
+    "planning": "S’organiser sur 12 mois",
+    "budget": "Conseils budget",
+    "faq": "Questions fréquentes"
+  },
+  "path": {
+    "title": "Le tracé de la totalité",
+    "subtitle": "L’ombre touche la Terre dans l’Atlantique à 08:23 UTC et quitte la planète au-dessus de l’océan Indien à 11:50 UTC. Dix pays entre les deux — et une durée qui triple presque d’un bout à l’autre.",
+    "items": [
+      {
+        "stop": "Océan Atlantique — premier contact",
+        "desc": "L’ombre se pose en plein Atlantique à 08:23:25 UTC, vers 28° N 44° O. Rien à voir là-bas à part de l’eau ; l’ombre file ensuite vers l’est-sud-est en direction du détroit de Gibraltar, en gagnant de la durée tout du long."
+      },
+      {
+        "stop": "Espagne & Gibraltar — l’extrémité européenne",
+        "desc": "Arrivée sur l’Andalousie vers 10:47 CEST, Soleil à environ 38°. Ceuta décroche 4 min 48 s, Tarifa 4 min 38 s, Algésiras 4 min 27 s, Gibraltar 4 min 25 s, Melilla 4 min 32 s. Plus loin sur la côte, ça chute vite : Marbella 3 min 16 s, Cádiz environ 2 min 51 s, Málaga à peine 1 min 49 s, Jerez environ 1 min 36 s. La ligne centrale rate complètement l’Espagne continentale — seul le bord nord du tracé effleure l’Andalousie, donc quelques kilomètres de route changent tout. Séville (98,4 %), Grenade (99,2 %), Huelva (98,2 %) et la ville d’Almería n’auront qu’une éclipse partielle très profonde, sans aucune totalité."
+      },
+      {
+        "stop": "Maroc — Tanger & Tétouan",
+        "desc": "L’ombre traverse le détroit en quelques minutes. Tanger et Tétouan décrochent toutes deux 4 min 50 s — un peu plus que partout en Espagne — à 08:47 UTC, Soleil autour de 38°. Chefchaouen obtient 4 min 13 s, Al Hoceïma 4 min 24 s, Nador 4 min 15 s. Rabat (98,1 %), Fès (97,9 %) et Casablanca (96,8 %) restent en partielle. Attention : le Maroc est repassé à l’heure GMT toute l’année en septembre 2026, donc l’heure locale ici, c’est l’heure UTC — plusieurs sites spécialisés publient encore ces horaires avec une heure de retard."
+      },
+      {
+        "stop": "Algérie, Tunisie & Libye — le milieu désert",
+        "desc": "Le tracé longe toute l’Afrique du Nord, et c’est là que la durée dépasse les cinq minutes et que la climatologie devient presque absurde de générosité. La remarque d’Anderson — « les nuages sont quasiment inconnus pendant les mois d’été » au-dessus de la Libye et de l’Égypte — couvre tout ce segment. En pratique, ce sont l’accès, les infrastructures et les recommandations aux voyageurs — pas la météo — qui écartent l’essentiel de cette portion pour un groupe normal."
+      },
+      {
+        "stop": "Égypte — Louxor et la ligne centrale (le clou du spectacle)",
+        "desc": "Louxor : la totalité commence à 13:02:14, maximum à 13:05:26, fin à 13:08:36 en heure locale (EEST, UTC+3) — 6 minutes 22 secondes, Soleil à 81,7°. La durée maximale de tout le tracé, 6 min 23,2 s, tombe à environ 195 km au nord-ouest de Louxor, près de Sohag ; le point du maximum d’éclipse (6 min 22,6 s), distinct, se situe à environ 58 km à l’est-sud-est de la ville. Le point pratique : Louxor est déjà à quelques secondes du maximum théorique, donc aucune raison de courir après la ligne centrale. Sohag obtient aussi 6 min 22 s, Qena 6 min 10 s, Assiout 6 min 06 s, Marsa Alam 5 min 28 s. Assouan n’est pas dans le tracé — elle plafonne à 99,83 % de partielle, tout comme Hurghada (98,5 %) et Le Caire (94,8 %)."
+      },
+      {
+        "stop": "Du Soudan à l’océan Indien — la queue du tracé",
+        "desc": "Le tracé effleure un coin reculé et sans routes du nord-est du Soudan, puis franchit la mer Rouge jusqu’en Arabie saoudite — La Mecque est dans le tracé avec environ 5 minutes de totalité — avant le Yémen et la Somalie. L’ombre quitte la Terre au-dessus de l’océan Indien à 11:49:53 UTC."
+      }
+    ]
+  },
+  "where": {
+    "title": "Égypte, Espagne ou croisière sur le Nil",
+    "subtitle": "Trois options honnêtes, avec des compromis vraiment différents. C’est LA décision dont dépend tout le voyage, et celle qui risque le plus de diviser un groupe — alors prends-la sérieusement.",
+    "option1": {
+      "tag": "Option 1",
+      "title": "Louxor, sur terre ferme",
+      "desc": "L’expérience maximale : 6 min 22 s, Soleil à 81,7° au-dessus de la tête, et une climatologie qu’Anderson classe parmi les couvertures nuageuses les plus faibles analysées en 45 ans — Louxor est l’endroit où la fraction nuageuse commence tout juste à décoller de zéro. Bonus : la Vallée des Rois et Karnak avant ou après l’éclipse. Les compromis : c’est du long-courrier, la température maximale moyenne du 2 août est de 42 °C, et le haut de gamme de l’hébergement se vend depuis 2024."
+    },
+    "option2": {
+      "tag": "Option 2",
+      "title": "Croisière sur le Nil",
+      "desc": "Un bateau, c’est un hôtel flottant : ça règle d’un coup la pénurie de chambres à Louxor et ça fait aussi office de voyage touristique. La croisière éclipse affrétée par Sky & Telescope a été affichée à $6,950–$12,750 par personne, et plusieurs opérateurs annoncent déjà leurs bateaux 2027 complets. Les compromis : c’est de loin le palier le plus cher, l’itinéraire est figé, et le groupe doit s’engager — et payer des acomptes — très longtemps à l’avance."
+    },
+    "option3": {
+      "tag": "Option 3",
+      "title": "Sud de l’Espagne ou Tanger",
+      "desc": "Tarifa (4 min 38 s), Algésiras, Gibraltar (4 min 25 s) ou Ceuta (4 min 48 s) — un vol court-courrier, pas de visa pour les voyageurs de l’UE, et Cádiz voit le soleil environ 88 % des journées de début août. Tanger décroche 4 min 50 s, à une heure de ferry de Tarifa. Les compromis : environ 90 secondes de totalité en moins, un Soleil à 38° plutôt qu’au zénith, et la ville de Málaga elle-même passe sous les deux minutes — il faut rouler vers le sud-ouest."
+    },
+    "outro": "Il n’y a pas de mauvaise réponse ici, seulement un décalage entre ce qu’un groupe dit vouloir et ce qu’il est prêt à payer. Si la réponse honnête, c’est « on veut une éclipse totale, mais pas un budget long-courrier », le sud de l’Espagne est un vrai beau voyage, pas un lot de consolation. Et si 2027 est hors de portée, l’<sibling>éclipse du 12 août 2026 sur l’Islande et le nord de l’Espagne</sibling> arrive avant et coûte bien moins cher depuis l’Europe."
+  },
+  "midCta": {
+    "title": "Égypte ou Espagne ?",
+    "subtitle": "Pose la question au groupe maintenant — à douze mois, la réponse change encore quelque chose.",
+    "button": "Lancer le sondage"
+  },
+  "safety": {
+    "title": "Sécurité, lunettes & chaleur",
+    "subtitle": "Deux vrais dangers sur ce voyage, et aucun des deux n’est l’éclipse elle-même. Le premier : regarder la phase partielle sans protection. Le second : 42 °C en plein midi.",
+    "card1": {
+      "title": "Lunettes ISO 12312-2 — la seule chose qui marche",
+      "desc": "Il te faut des lunettes d’observation solaire certifiées ISO 12312-2:2015, avec le marquage sur le filtre lui-même, plus le marquage CE en Europe. Rien d’autre ne fait l’affaire : ni deux ou trois paires de lunettes de soleil empilées, ni du verre fumé, ni des négatifs photo exposés, ni du verre de soudeur en dessous de la teinte 14. La rétinopathie solaire est indolore — la rétine n’a pas de récepteurs de la douleur — donc aucun signal ne te dit de détourner le regard, et les dégâts peuvent être définitifs. Les lunettes vieillissent : remplace toute paire de plus de trois ans et vérifie les rayures ou micro-trous avant de partir. Achète une paire certifiée par personne plus une de secours pour quatre, chez un fournisseur identifiable, et bien avant la ruée d’avant-éclipse. Pendant la totalité — et seulement si tu es réellement dans le tracé — tu peux et tu dois regarder à l’œil nu. Dès que le premier filet de Soleil réapparaît, les lunettes reviennent sur le nez."
+    },
+    "card2": {
+      "title": "La chaleur en Haute-Égypte est un vrai danger",
+      "desc": "Le chiffre d’Anderson pour Louxor : une température maximale moyenne de 42,0 °C le 2 août sur les 17 dernières années, avec très peu d’écart d’une année à l’autre et un record de 46 °C. La totalité tombe à 13:05 heure locale — pic de chaleur, Soleil quasi vertical, zéro précipitation, et pratiquement aucune ombre sur un site d’observation en plein désert. Seule consolation : l’humidité est très faible, donc la transpiration fait son travail. Prépare ça sérieusement : beaucoup plus d’eau que tu ne le crois nécessaire, des électrolytes, un chapeau et des manches longues légères plutôt que la peau nue, et un plan ombre pour les deux heures d’attente avant la totalité. L’air se rafraîchit nettement pendant ces six minutes — c’est l’un des meilleurs moments d’une longue totalité — mais ce n’est pas une stratégie anti-chaleur. Si quelqu’un dans le groupe supporte mal la chaleur, est âgé ou prend un traitement sensible à la chaleur, ça se discute au moment de choisir la destination, pas dans la liste de valise."
+    },
+    "card3": {
+      "title": "Téléphones, appareils photo et le piège de la photo de groupe",
+      "desc": "Pointer un téléphone ou un appareil photo sans filtre vers la phase partielle peut griller le capteur, et cadrer via l’écran ou le viseur n’est pas non plus une façon sûre de regarder le Soleil. Si tu veux photographier la partielle, utilise un vrai filtre solaire vissant ou magnétique. Mais soyons clairs : six minutes, c’est assez long pour qu’on dise explicitement à quelqu’un du groupe que son job, c’est de NE PAS filmer. Une longue totalité est rare justement parce qu’elle te laisse le temps de regarder pour de vrai — et un groupe qui passe les six minutes derrière un écran a payé cher pour contempler un petit rectangle."
+    }
+  },
+  "logistics": {
+    "title": "Transport & hébergement",
+    "subtitle": "À douze mois, tu as encore un vrai choix. La contrainte, ce ne sont pas les vols — ce sont les lits les plus connus le long de la ligne centrale, qui partent en premier, et les déplacements limités le jour J.",
+    "gettingThere": "Comment y aller",
+    "egyptLabel": "Égypte",
+    "egyptItems": [
+      "→ Vol direct pour Louxor (LXR), ou via Le Caire (CAI) plus ~1 h de vol intérieur",
+      "→ La plupart des nationalités ont besoin d’un visa égyptien — l’e-visa est simple, mais pas instantané",
+      "→ La ville de Louxor décroche 6 min 22 s : pas de course à la ligne centrale, pas de route à faire le matin de l’éclipse",
+      "→ Hurghada (HRG) est un vol pas cher classique, mais seulement 98,5 % de partielle — il faudrait bouger le jour J",
+      "→ L’offre éclipse haut de gamme (Sofitel Winter Palace, bateaux affrétés sur le Nil) est déjà annoncée complète par les opérateurs",
+      "→ Sohag (6 min 22 s) et Qena (6 min 10 s) sont des replis si Louxor est plein"
+    ],
+    "spainLabel": "Espagne & Maroc",
+    "spainItems": [
+      "→ Málaga (AGP) ou Jerez (XRY), court-courrier depuis presque toute l’Europe, puis route vers le sud-ouest",
+      "→ Tarifa 4 min 38 s, Algésiras 4 min 27 s, Gibraltar 4 min 25 s, Ceuta 4 min 48 s",
+      "→ La ville de Málaga plafonne à ~1 min 49 s — y rester sans prendre la route, c’est l’erreur classique",
+      "→ Séville, Grenade, Huelva et la ville d’Almería ne verront qu’une partielle, aussi proches paraissent-elles sur une carte",
+      "→ Le ferry Tarifa → Tanger prend ~1 h si tu veux les 4 min 50 s du Maroc",
+      "→ Début août, c’est la pleine saison andalouse — cette côte se remplit pour des raisons qui n’ont rien à voir avec l’éclipse"
+    ]
+  },
+  "planning": {
+    "title": "S’organiser sur douze mois",
+    "p1": "Douze mois devant soi, ça sonne comme un luxe : c’est en fait le plus dur. Personne ne ressent l’urgence au douzième mois, tout le monde panique au deuxième, et les bonnes décisions se prennent toutes au début. Commence par la seule question qui compte : Égypte ou Espagne. N’en débats pas dans une boucle de messages, où ça vire à la guerre d’usure que gagne le plus obstiné. Lance un <polls>sondage de groupe</polls> avec les compromis écrits noir sur blanc — long-courrier plus 42 °C plus un vrai budget pour six minutes et un Soleil au zénith, contre un week-end court-courrier pour quatre minutes et demie. Les gens choisissent autrement quand les coûts et les bénéfices sont sur le même écran, et tu découvres tôt qui vient vraiment.",
+    "p2": "Ensuite, fixe le palier de budget avant que qui que ce soit ne réserve, parce que sur ce voyage, le palier EST le voyage. Un séjour à Louxor sur terre ferme et une croisière affrétée sur le Nil, ce sont deux vacances différentes à deux prix différents — et un groupe qui n’a pas validé le chiffre découvrira le désaccord au pire moment : après les acomptes. Fais acter les engagements par écrit, étale les acomptes sur l’année au lieu de tout concentrer sur un mois, et dis clairement ce qui se passe si quelqu’un se désiste au troisième mois plutôt qu’au onzième. Notre <guide>guide du voyage en groupe</guide> détaille les conversations d’argent qui fâchent : lance-les maintenant, tant qu’elles ne coûtent rien.",
+    "p3": "En approchant, le jour de l’éclipse mérite son propre plan. À Louxor, la totalité court de 13:02:14 à 13:08:36 heure locale, et tout le reste de la journée se cale à rebours : être en place des heures à l’avance, savoir exactement où sera le Soleil, fixer un point de rendez-vous, et partir du principe que les réseaux mobiles vont saturer quand toute une ville lèvera les yeux en même temps. Mets tout ça dans un <itinerary>itinéraire partagé</itinerary> que chacun peut consulter hors ligne. Six minutes, c’est une longue totalité, mais ça reste six minutes — le plan existe pour que personne n’en passe une seule à chercher le groupe."
+  },
+  "budget": {
+    "title": "Conseils budget",
+    "p1": "Les voyages éclipse cassent la logique habituelle du budget : le prix vient de la rareté, pas de la distance. Les paliers sont très éloignés — un long week-end en Espagne, un séjour à Louxor sur terre ferme et une croisière éclipse affrétée, ce sont trois ordres de grandeur différents, et la croisière de Sky & Telescope a été affichée à $6,950–$12,750 par personne. Mets en place un <budget>suivi de budget partagé</budget> dès le départ, inscris-y le vrai chiffre, et laisse chacun dire oui ou non honnêtement plutôt que de découvrir le total au dixième mois. L’erreur la plus coûteuse sur ce type de voyage, ce n’est pas de payer trop cher — c’est un groupe de six qui devient discrètement un groupe de trois une fois les acomptes non remboursables.",
+    "p2": "Sur une année entière, note qui a avancé quoi au fur et à mesure, pas à la fin. Des acomptes, un vol intérieur, le solde d’un bateau et six paires de lunettes étalés sur douze mois, c’est exactement le genre de chose que personne ne retient correctement — et reconstituer tout ça de mémoire en juillet 2027, c’est comme ça que de bons voyages finissent mal. Enregistre chaque dépense le jour même et solde tout en une fois.",
+    "p3": "N’économise pas sur les lunettes. Une paire certifiée ISO 12312-2 coûte quelques euros — une erreur d’arrondi face aux vols — et c’est la seule ligne du budget où rogner peut blesser quelqu’un à vie. Une par personne, plus des paires de secours, achetées tôt chez un fournisseur que tu peux nommer."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Quand et où a lieu l’éclipse solaire totale du 2 août 2027 ?",
+        "a": "Lundi 2 août 2027. L’ombre touche la Terre dans l’Atlantique à 08:23 UTC et la quitte au-dessus de l’océan Indien à 11:50 UTC. Entre les deux, le tracé de la totalité traverse dix pays : Espagne, Maroc, Algérie, Tunisie, Libye, Égypte, Soudan, Arabie saoudite, Yémen et Somalie, plus Gibraltar. La totalité maximale est de 6 minutes 23 secondes sur la ligne centrale égyptienne. Louxor, la pièce maîtresse en pratique, décroche 6 minutes 22 secondes, avec une totalité de 13:02:14 à 13:08:36 heure locale (EEST, UTC+3) et le Soleil à 81,7° au-dessus de l’horizon."
+      },
+      {
+        "q": "Est-ce vraiment la plus longue éclipse solaire totale du siècle ?",
+        "a": "Pas tout à fait, et la nuance compte. L’éclipse du 22 juillet 2009 a été plus longue, avec 6 minutes 39 secondes — mais son maximum tombait en plein Pacifique, la terre la plus proche étant une île inhabitée. Ce qui est vrai, et ce que confirment les calculs de Fred Espenak, c’est que le 2 août 2027 offre la plus longue totalité observable depuis une terre facilement accessible au XXIe siècle, et qu’il faudra attendre le 3 juin 2114 pour faire mieux. La formulation de Sky & Telescope est la plus propre : c’est la totalité la plus longue des 87 prochaines années. Si tu lis « la plus longue éclipse du siècle » sans nuance, c’est faux."
+      },
+      {
+        "q": "Égypte ou Espagne — que choisir pour notre groupe ?",
+        "a": "L’Égypte si tu veux que l’éclipse soit LE voyage. Louxor offre 6 minutes 22 secondes avec le Soleil quasiment au zénith, dans un climat où Jay Anderson note que les nuages sont quasiment inconnus en été — il classe la couverture nuageuse de cette éclipse parmi les plus faibles qu’il ait analysées en 45 ans. L’Espagne si la contrainte, c’est le budget, les congés, ou faire s’engager pour de vrai un groupe de huit. Tarifa décroche 4 minutes 38 s et Ceuta 4 minutes 48 s, en vol court-courrier, avec du soleil à Cádiz environ 88 % des journées de début août. Quatre-vingt-dix secondes de totalité, c’est une vraie différence — l’écart de prix aussi. Le test honnête : le groupe préfère-t-il six minutes une fois, ou quatre minutes et demie et tout le monde qui se parle encore ?"
+      },
+      {
+        "q": "Pourquoi Louxor si la ligne centrale est ailleurs ?",
+        "a": "Parce que l’écart est dérisoire, contrairement à celui des infrastructures. Le point de durée maximale — 6 min 23,2 s — est à environ 195 km au nord-ouest de Louxor, près de Sohag, et le point du maximum d’éclipse (6 min 22,6 s), distinct, se trouve à environ 58 km à l’est-sud-est de la ville. Louxor, elle, décroche 6 min 22 s. Tu roulerais des heures en plein désert pour gagner moins de deux secondes, en renonçant aux hôtels, aux transports, à l’ombre et à la Vallée des Rois. Sur cette éclipse, courir après la ligne centrale fait partie des rares cas où les maths disent clairement non."
+      },
+      {
+        "q": "Croisière sur le Nil ou séjour à Louxor ?",
+        "a": "Une croisière règle le problème de l’hébergement en l’emmenant avec elle, et transforme l’éclipse en vrai voyage en Égypte plutôt qu’en événement isolé — la croisière affrétée de Sky & Telescope a été affichée à $6,950–$12,750 par personne, et plusieurs opérateurs annoncent leurs bateaux 2027 complets. Le séjour à Louxor sur terre ferme est moins cher et plus souple, te place de toute façon à quelques secondes du maximum, et te laisse choisir ton site d’observation. Pour un groupe, ce qui tranche, c’est souvent la trésorerie et l’engagement : une croisière réclame un gros acompte tôt, de la part de tout le monde — un vrai test pour savoir si le groupe vient vraiment."
+      },
+      {
+        "q": "Il fait vraiment si chaud que ça à Louxor début août ?",
+        "a": "Le chiffre de Jay Anderson : une température maximale moyenne de 42,0 °C le 2 août à Louxor sur les 17 dernières années, avec très peu de variation d’une année à l’autre et un record de 46 °C. La totalité tombe à 13:05 heure locale — le moment le plus chaud de la journée, Soleil quasi vertical et zéro précipitation. L’humidité est très faible, ce qui aide réellement, mais ce n’est pas un détail à découvrir en arrivant. Prévois une hydratation sérieuse, de l’ombre pour l’attente avant la totalité, et une discussion franche avec ceux du groupe pour qui 42 °C en continu est un problème médical et pas juste un inconfort."
+      },
+      {
+        "q": "Quelles lunettes nous faut-il, et quand les acheter ?",
+        "a": "Des lunettes d’observation solaire certifiées ISO 12312-2:2015, avec la certification marquée sur le filtre et, en Europe, un marquage CE. Les lunettes de soleil ne fonctionnent à aucun niveau de teinte, et le verre fumé, les négatifs photo ou le verre de soudeur en dessous de la teinte 14 non plus. La rétinopathie solaire est indolore : rien ne t’avertit qu’elle est en train de se produire. Achète une paire certifiée par personne plus une de secours pour quatre, chez un fournisseur identifiable, et bien avant la ruée — l’offre se tend à mesure que les médias en parlent. Remplace tout ce qui a plus de trois ans et vérifie l’absence de micro-trous. Uniquement pendant la totalité, et à l’intérieur du tracé, tu regardes à l’œil nu."
+      },
+      {
+        "q": "Est-il trop tard pour organiser 2027 ?",
+        "a": "Non — mais le haut de gamme est en train de partir, il n’est pas encore parti. Les opérateurs qui vendent des bateaux affrétés sur le Nil et les hôtels les plus connus de Louxor prennent des réservations depuis 2024, et plusieurs affichent complet. Ça bloque le palier supérieur, pas le voyage : Louxor est une vraie ville, Sohag décroche 6 min 22 s et Qena 6 min 10 s, et toute l’extrémité espagnole et marocaine du tracé reste un court-courrier banal auquel la plupart des groupes n’ont pas encore pensé. À douze mois, la ressource rare, c’est l’accord du groupe, pas les disponibilités. Verrouille la destination et le palier de budget maintenant, le reste suivra."
+      }
+    ]
+  },
+  "discover": {
+    "title": "À découvrir aussi",
+    "eclipse2026": { "title": "Organiser son voyage éclipse 2026", "desc": "La totalité du 12 août 2026 sur l’Islande et le nord de l’Espagne — un an plus tôt, et bien plus près de chez toi.", "cta": "Lire la suite →" },
+    "rugby2027": { "title": "Organiser son voyage Coupe du monde de rugby 2027", "desc": "L’autre grand voyage de 2027 : l’Australie, six semaines, un groupe et un calendrier de matchs.", "cta": "Lire la suite →" },
+    "bestApps": { "title": "Les meilleures applis de voyage en groupe", "desc": "Un comparatif honnête des outils pour organiser un voyage à plusieurs.", "cta": "Comparer les applis →" },
+    "groupGuide": { "title": "Guide du voyage en groupe", "desc": "Le guide complet, étape par étape, pour organiser un voyage à plusieurs.", "cta": "Lire le guide →" }
+  },
+  "cta": {
+    "title": "Construis ton voyage éclipse 2027",
+    "subtitle": "Sondage Égypte contre Espagne, budget validé par tout le monde, acomptes suivis sur douze mois et plan minute par minute du jour J — un seul plan, toute ta bande au même endroit.",
+    "button": "Lancer le sondage Égypte ou Espagne"
+  },
+  "jsonld": {
+    "articleHeadline": "Éclipse solaire totale du 2 août 2027 : organiser son voyage en Égypte et en Espagne",
+    "eventName": "Éclipse solaire totale du 2 août 2027",
+    "eventDescription": "Éclipse solaire totale le lundi 2 août 2027. Le tracé de la totalité traverse le sud de l’Espagne, Gibraltar, le Maroc, l’Algérie, la Tunisie, la Libye, l’Égypte, le Soudan, l’Arabie saoudite, le Yémen et la Somalie. La totalité maximale est de 6 minutes 23 secondes sur la ligne centrale, en Haute-Égypte ; Louxor voit 6 minutes 22 secondes avec le Soleil à 81,7° au-dessus de l’horizon. C’est la plus longue totalité observable depuis une terre facilement accessible au XXIe siècle — la prochaine plus longue tombe le 3 juin 2114.",
+    "howToName": "Comment organiser un voyage pour l’éclipse solaire totale de 2027 en groupe",
+    "howToDescription": "À douze mois de l’événement, voici comment verrouiller ce voyage : trancher entre l’Égypte et l’Espagne en groupe, valider le palier de budget avant toute réservation, se procurer des lunettes ISO 12312-2 et un plan anti-chaleur, puis construire le timing du jour J autour de la totalité.",
+    "howToSteps": [
+      {
+        "name": "Trancher entre l’Égypte et le sud de l’Espagne — en groupe, et tôt",
+        "text": "Le carrefour : 6 min 22 s à Louxor avec un Soleil à 81,7° et une climatologie quasi sans nuages, contre 4 min 38 s à Tarifa en vol court-courrier. D’un côté le long-courrier, 42 °C de moyenne maximale et un budget nettement plus élevé ; de l’autre un week-end accessible et pas cher. Lance un sondage de groupe avec les compromis écrits noir sur blanc plutôt que de laisser une boucle de messages trancher à l’usure, et découvre dès le douzième mois qui vient vraiment."
+      },
+      {
+        "name": "Valider le palier de budget avant que quiconque ne réserve",
+        "text": "Un long week-end en Espagne, un séjour à Louxor sur terre ferme et une croisière affrétée sur le Nil (affichée à $6,950–$12,750 par personne par Sky & Telescope), ce sont trois voyages différents à trois prix différents. Fixe le chiffre d’abord, mets-le dans un budget partagé, étale les acomptes sur les douze mois plutôt que sur un seul mois brutal, et décide de ce qui se passe si quelqu’un se désiste tard."
+      },
+      {
+        "name": "Réserver les lits et les vols, puis commander le kit sécurité",
+        "text": "La ville de Louxor décroche elle-même 6 min 22 s : aucune course à la ligne centrale n’est nécessaire ; Sohag (6 min 22 s) et Qena (6 min 10 s) servent de repli si Louxor se remplit. En Espagne, vole sur Málaga ou Jerez et roule vers le sud-ouest — la ville de Málaga passe sous les deux minutes. Commande une paire certifiée ISO 12312-2 par personne plus des paires de secours bien avant la ruée, et prépare la chaleur : hydratation, ombre et manches longues pour une totalité à 13:05 par 42 °C."
+      },
+      {
+        "name": "Construire le timing du jour J autour de la totalité",
+        "text": "À Louxor, la totalité court de 13:02:14 à 13:08:36 heure locale (EEST). Cale tout à rebours : être en place des heures à l’avance, savoir où sera le Soleil, fixer un point de rendez-vous et t’attendre à des réseaux mobiles saturés. Mets tout ça dans un itinéraire partagé que le groupe peut ouvrir hors ligne, et décide à l’avance qui photographie et qui se contente de regarder."
+      }
+    ]
+  }
+}

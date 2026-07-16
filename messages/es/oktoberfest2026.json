@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "title": "Planificador de viaje al Oktoberfest 2026 — Gratis, para grupos",
+    "description": "Planificador gratuito de viaje al Oktoberfest 2026 para grupos. Múnich, Theresienwiese, del 19 de septiembre al 4 de octubre. Reserva una mesa en una carpa para toda la pandilla, reparte la Maß y el hotel, y poneos de acuerdo en un día — sin agencia, sin suscripción."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Planificador de viaje al Oktoberfest 2026"
+  },
+  "hero": {
+    "tag": "Planificador de viaje gratuito · Oktoberfest 2026",
+    "title": "Planificador de viaje al Oktoberfest 2026: sienta a toda tu pandilla en la misma mesa",
+    "intro": "El 191.º Oktoberfest se celebra del sábado 19 de septiembre al domingo 4 de octubre de 2026 en la Theresienwiese de Múnich. La entrada es gratis, la cerveza no, y lo único que decide si vuestro viaje funciona es una mesa que hay que reservar con meses de antelación — en bloques de diez plazas, para un día concreto, en una carpa concreta. Eso es una decisión de grupo antes que una decisión de viaje. Aquí te contamos cómo tomarla sin perder a tres amigos por el camino en el chat del grupo. Si todavía estás eligiendo herramientas, mira nuestra <apps>comparativa de apps de viajes en grupo</apps>.",
+    "readTime": "9 min de lectura",
+    "ctaButton": "Planifica tu Wiesn",
+    "ctaNote": "Gratis. Sin tarjeta. Invita a la pandilla con un solo enlace."
+  },
+  "facts": {
+    "heading": "El Oktoberfest 2026 de un vistazo",
+    "datesLabel": "Fechas",
+    "datesValue": "19 sep – 4 oct",
+    "datesSub": "16 días, 191.ª edición",
+    "priceLabel": "Una Maß de cerveza",
+    "priceValue": "14,80–15,90 €",
+    "priceSub": "Horquilla oficial 2026",
+    "tentsLabel": "Carpas",
+    "tentsValue": "14 + 21",
+    "tentsSub": "Grandes y pequeñas",
+    "entryLabel": "Entrada",
+    "entryValue": "0 €",
+    "entrySub": "El recinto y las carpas son gratis"
+  },
+  "stakes": {
+    "p1": "El Oktoberfest parece el viaje en grupo más fácil de Europa. Entrada gratis, un único recinto, dieciséis días para elegir y seis millones de personas que lo consiguen cada año. Luego intentas organizar a ocho amigos de verdad y todo se cae de una forma muy concreta: la carpa que queríais abrió reservas en abril y vendió sus sábados en una tarde, las mesas van en bloques de diez, así que vuestro grupo de seis tiene que encontrar cuatro más o pagar sillas vacías, dos personas solo pueden el primer fin de semana y otras dos solo el segundo, una habitación en Múnich que en julio cuesta 130 € cuesta el triple el fin de semana de la Wiesn, y alguien ya ha adelantado 400 € de vales de consumición con su propia tarjeta y le gustaría bastante recuperarlos.",
+    "p2": "Nada de eso es un problema de cerveza. Es un problema de coordinación — y es exactamente para lo que se creó WePlanify: un plan compartido donde el día, la carpa, las camas y el dinero están a la vista de todos, gratis."
+  },
+  "toc": {
+    "title": "En esta página",
+    "howItWorks": "Cómo funciona la Wiesn de verdad",
+    "reservations": "Reservas de carpa: la trampa del grupo",
+    "logistics": "Cómo llegar y dónde dormir",
+    "planning": "Planificarlo con tu pandilla",
+    "budget": "Presupuesto y reparto de la cuenta",
+    "faq": "Preguntas frecuentes"
+  },
+  "howItWorks": {
+    "title": "Cómo funciona la Wiesn de verdad",
+    "subtitle": "Cinco cosas que todo grupo primerizo hace mal. Acierta con ellas y el resto es solo cerveza.",
+    "items": [
+      {
+        "stop": "La entrada es gratis — la moneda es la mesa",
+        "desc": "Nadie vende entradas para el Oktoberfest. La Theresienwiese está abierta, las carpas están abiertas y puedes entrar en cualquiera de ellas sin pagar nada. Lo que no puedes hacer es plantarte un sábado a las 18:00 y encontrar diez asientos juntos. La cerveza solo se sirve a quien está sentado, así que una mesa no es un extra de comodidad — es el viaje entero. Todo lo demás de vuestro plan depende de qué mesa y qué día.",
+        "link": "/features/itinerary"
+      },
+      {
+        "stop": "Las reservas van en bloques de diez",
+        "desc": "Las carpas reservan mesas enteras, no asientos sueltos — normalmente diez personas, a veces ocho. No hay un sistema de reservas centralizado: cada una de las 14 carpas grandes tiene su propio portal y abre en su propia fecha, más o menos a mediados o finales de abril las primeras (Schottenhamel, Hofbräu), entre principios y mediados de mayo la mayoría de las carpas de cervecería, y de finales de mayo a principios de junio las rezagadas (Augustiner, Käfer, Schützen, Weinzelt). Un grupo de seis o recluta a cuatro más, o se come el coste de cuatro sillas vacías.",
+        "link": "/features/polls"
+      },
+      {
+        "stop": "La reserva es gratis, los vales no",
+        "desc": "No pagas por bloquear la mesa. Pagas por adelantado los Verzehrgutscheine — vales de consumición para la cerveza y la comida que pedirá vuestra mesa. En los pasillos centrales el mínimo suele ser dos Maß y medio pollo asado por persona; los palcos y las galerías suman unos 18 € más de vales. Para diez personas eso es una cantidad seria saliendo de la cuenta de una sola persona, con meses de antelación, en nombre de todos los demás.",
+        "link": "/features/budget"
+      },
+      {
+        "stop": "Una cuarta parte de cada carpa es sin reserva, por ley",
+        "desc": "Múnich obliga a las carpas a dejar asientos libres. Por norma, un 25% de las plazas no se puede reservar en absoluto, y los fines de semana y festivos la mitad de la carpa queda sin reservar hasta las 15:00, bajando al 25% después. Ese es vuestro plan B y es un plan B real — pero implica llegar pronto, juntos, y acordar de antemano quién hace cola.",
+        "link": "/features/planning"
+      },
+      {
+        "stop": "Hay un segundo festival, más tranquilo, al lado",
+        "desc": "La Oide Wiesn es una zona histórica vallada con sus propias carpas, atracciones de antaño, bandas de metales y un público más calmado. La entrada cuesta 4 € — lo único de toda la Theresienwiese para lo que compras un ticket. Es la respuesta para quien en el grupo quiere el festival sin acabar aplastado en la Hofbräu-Festzelt a las nueve de la noche.",
+        "link": "/features/explore"
+      }
+    ]
+  },
+  "reservations": {
+    "title": "Reservas de carpa: la trampa del grupo",
+    "subtitle": "Dos formas de sentar a diez personas. Las dos funcionan. Y exigen cosas completamente distintas a tu pandilla.",
+    "reservedLabel": "Opción A",
+    "reservedTitle": "Reservar una mesa",
+    "reservedItems": [
+      "Reservas una mesa entera: diez plazas, a veces ocho. Seis no.",
+      "Reservar es gratis — pero pagas por adelantado los vales de consumición.",
+      "Cada carpa tiene su propio portal y su propio día de apertura. No hay sistema central.",
+      "Los sábados y el fin de semana de clausura vuelan. Los mediodías entre semana son asequibles.",
+      "Necesitas el número final de asistentes meses antes del viaje — esa es la parte difícil.",
+      "Los vales sin usar siguen siendo válidos todo el festival, se pueden canjear en los propios restaurantes del cáterin hasta al menos el 31 de octubre o reembolsar íntegramente."
+    ],
+    "walkInLabel": "Opción B",
+    "walkInTitle": "Entrar sin reserva, como todo el mundo",
+    "walkInItems": [
+      "Un 25% de las plazas nunca se puede reservar. Los fines de semana, el 50% queda libre hasta las 15:00.",
+      "Cero compromiso, cero pago por adelantado, cero problema de número de asistentes.",
+      "Hay que llegar pronto — las carpas abren a las 10:00 entre semana y a las 9:00 los fines de semana.",
+      "Los grupos grandes acaban separados. Diez personas rara vez se sientan juntas pasado el mediodía.",
+      "Las carpas cierran las puertas del todo cuando se llenan, a menudo a primera hora de la tarde los sábados.",
+      "Mejores opciones: de lunes a jueves, antes del mediodía, en una carpa pequeña."
+    ]
+  },
+  "midCta": {
+    "title": "Diez plazas, una fecha, ocho opiniones.",
+    "subtitle": "Vota el día, cierra la carpa, controla quién se apunta de verdad — antes de que abran las reservas.",
+    "button": "Empezar gratis"
+  },
+  "logistics": {
+    "title": "Cómo llegar y dónde dormir",
+    "subtitle": "Múnich es fácil. Múnich durante la Wiesn es otra ciudad — planifica lo aburrido y lo divertido se resuelve solo.",
+    "transportLabel": "Transporte",
+    "transportTitle": "Cómo llegar a la Theresienwiese",
+    "transportItems": [
+      "Las líneas U4 y U5 paran en la estación de Theresienwiese, justo en el recinto — y es la estación más congestionada de todo el festival.",
+      "Bájate mejor en Schwanthalerhöhe, una parada más allá en las mismas U4/U5: 10 minutos a pie y una fracción del agobio.",
+      "Goetheplatz o Poccistraße (U3/U6) dan acceso a las entradas sur y este, también a unos 10 minutos andando.",
+      "La app MVGO muestra la afluencia en tiempo real y te desvía de lo peor.",
+      "No vayáis en coche. No hay aparcamiento para visitantes en la Theresienwiese y, de todas formas, no vas a volver conduciendo.",
+      "La Hauptbahnhof de Múnich está a dos paradas de U-Bahn, lo que hace que llegar en tren sea sinceramente la opción más fácil."
+    ],
+    "stayLabel": "Alojamiento",
+    "stayTitle": "Dónde dormir, y cuándo reservar",
+    "stayItems": [
+      "Es vuestro mayor gasto y el que se mueve más rápido. Resérvalo antes que ninguna otra cosa.",
+      "En 2025 el precio medio de una habitación en Múnich llegó a rozar los 415 € por noche durante el festival — un 153% por encima de la media anual de la ciudad, aproximadamente.",
+      "Fuera de la temporada de la Wiesn, la misma ciudad se mueve más bien entre 80 y 150 € la noche. Esa diferencia es toda la conversación sobre el presupuesto.",
+      "Un apartamento repartido entre ocho gana casi siempre a cuatro habitaciones dobles — y os da un sitio donde reuniros antes de entrar.",
+      "No hace falta estar a distancia a pie. El U-Bahn de Múnich es rápido y va hasta tarde; un sitio a 20 minutos en línea directa es mucho mejor negocio que pagar un extra por la cercanía.",
+      "El primer y el último fin de semana y el 3 de octubre (Día de la Unidad Alemana) son los picos. Un viaje entre semana es un viaje mucho más barato."
+    ]
+  },
+  "planning": {
+    "title": "Planificarlo con tu pandilla",
+    "p1": "Empezad por el día, no por la carpa. Todas las demás decisiones — vuelos, camas, quién puede venir de verdad — salen de ahí, y es la decisión que los grupos dejan para el final porque es la que genera broncas. Uno quiere el sábado de apertura por el barrilazo. Otro solo puede el segundo fin de semana. Otro preferiría en silencio un martes, cuando de verdad podéis oíros. <polls>Lanza una encuesta</polls> con tres o cuatro fechas candidatas antes de que nadie mire un portal de carpas y tendrás un número de asistentes en vez de un quizá.",
+    "p2": "Luego, sinceridad con el número de asistentes, porque diez no es una sensación — es una cifra en un formulario de reserva. Las mesas van en bloques de diez, así que la diferencia entre \"seremos unos ocho, creo\" y ocho nombres confirmados es dinero. Mete el viaje en un <itinerary>itinerario compartido</itinerary> con la fecha puesta y deja que la gente se comprometa o se caiga a la vista de todos. Seis confirmados más cuatro amigos de amigos reclutados es una mesa. Ocho quizás son cuatro sillas vacías que has pagado.",
+    "p3": "Asigna la reserva a una sola persona y ponle un plazo. Los portales de las carpas abren a su ritmo a partir de abril y los sábados buenos desaparecen ese mismo día — eso no es un momento para el consenso del grupo, es un momento para una persona con la tarjeta y un mandato. El trabajo de los demás es haber contestado la encuesta antes. Nuestra <guide>guía para planificar un viaje en grupo</guide> aplica el mismo patrón al resto del viaje: decidid juntos, ejecutad solos.",
+    "p4": "Planificad el día en sí a grandes rasgos, pero planificad el reencuentro. Las baterías mueren, la carpa es ensordecedora y alguien se irá a la Oide Wiesn o a una atracción y perderá al grupo durante dos horas. Acordad un punto de encuentro fuera de la carpa y una hora, antes de entrar. Es lo menos glamuroso de este artículo y es lo que de verdad vais a usar."
+  },
+  "budget": {
+    "title": "Presupuesto y reparto de la cuenta",
+    "p1": "El Oktoberfest tiene una forma de gastar poco habitual: una persona gasta mucho, con meses de antelación, por todos. Los vales se pagan por adelantado con una tarjeta en primavera. El apartamento se reserva con otra tarjeta en junio. Y luego, en septiembre, diez personas se invitan a rondas a 15,80 € la Maß y nadie lleva la cuenta de nada. Monta un <budget>presupuesto compartido</budget> antes de comprar los vales, no después del viaje, y registra la reserva como gasto el mismo día que se paga — quien adelantó el dinero no debería ser quien persiga a nueve amigos en octubre.",
+    "p2": "Conoced las cifras reales antes de discutir sobre ellas. Una Maß cuesta entre 14,80 € y 15,90 € en 2026, una subida media del 2,38% respecto a 2025; la mayoría de las carpas grandes se sitúan entre 15,75 € y 15,90 €, con la Augustiner-Festhalle como excepción destacada a 14,90 €. Los refrescos tampoco son la vía de escape barata — unos 11,13 € el litro de agua embotellada y 12,84 € un Spezi. Un pollo asado, unas cuantas Maß y tu parte del mínimo de la mesa dejan un día realista de carpa en torno a los 80–120 € por cabeza, y eso sin haber dormido en ningún sitio.",
+    "p3": "Repartid por categorías, no por días. Las camas se reparten por persona y noche. La mesa se reparte entre diez, beban todos lo mismo o no. La comida y las rondas son individuales. Las atracciones y los 4 € de la entrada a la Oide Wiesn son dinero de bolsillo. Meterlo todo en una sola cifra es como los grupos acaban en la discusión clásica del Oktoberfest — el que se bebió tres Maß subvencionando al que se bebió nueve. Las categorías lo hacen visible, y con que se vea suele bastar."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Hace falta entrada para el Oktoberfest 2026?",
+        "a": "No. Entrar a la Theresienwiese y a todas las carpas de cerveza es completamente gratis — no existe tal cosa como una entrada oficial del Oktoberfest, y quien te venda una para acceder no te está vendiendo nada. Pagas la cerveza, la comida, las atracciones y los juegos. La única parte del festival con ticket es la Oide Wiesn, la zona histórica, que cuesta 4 €. Cuando la gente habla de \"entradas\" se refiere a una reserva de carpa, que es algo totalmente distinto: la reserva en sí es gratis, pero pagas por adelantado vales de consumición para lo que vuestra mesa vaya a comer y beber."
+      },
+      {
+        "q": "¿Cuándo abren las reservas de carpa del Oktoberfest 2026?",
+        "a": "No hay un único día de apertura, y eso es justo lo que pilla desprevenidos a los grupos. Cada una de las 14 carpas grandes gestiona su propio portal de reservas con su propio calendario. A grandes rasgos: las primeras carpas abren entre mediados y finales de abril — Schottenhamel y Hofbräu suelen ir por delante —, la mayoría de las carpas de cervecería siguen entre principios y mediados de mayo, y la última tanda (Augustiner-Festhalle, Käfer Wiesn-Schänke, Schützen-Festzelt, Weinzelt) cae entre finales de mayo y principios de junio. Los sábados populares pueden agotarse en cuestión de horas. Elegid vuestra carpa, buscad su portal y poned su fecha de apertura en el plan compartido con una persona concreta responsable de reservar."
+      },
+      {
+        "q": "¿Puede un grupo de seis reservar una mesa?",
+        "a": "En realidad no — y esta es la mayor trampa de planificación del Oktoberfest. Las carpas reservan mesas enteras, normalmente de diez plazas y a veces de ocho. No puedes reservar para seis. Tus opciones son reclutar a más gente hasta completar el bloque, aceptar pagar las sillas vacías (los vales son por mesa, no por persona, así que el coste es el mismo de una forma u otra), o saltarte la reserva e ir un día entre semana por la mañana, cuando sentarse sin reserva es realista. La mayoría de los grupos subestima con cuánta antelación necesitan un número firme de asistentes — la cifra hay que tenerla meses antes del viaje."
+      },
+      {
+        "q": "¿Cuánto cuesta una cerveza en el Oktoberfest 2026?",
+        "a": "Una Maß (un litro) cuesta entre 14,80 € y 15,90 € en la 191.ª Wiesn, una subida media de en torno al 2,38% respecto a 2025. La mayoría de las carpas grandes se agrupan entre 15,75 € y 15,90 € — Hacker, Hofbräu, Marstall, Paulaner y Schottenhamel rondan todas los 15,80 € —, mientras que la Augustiner-Festhalle se mantiene notablemente más barata a 14,90 €. Las bebidas sin alcohol no son ninguna ganga: cuenta con unos 11,13 € el litro de agua embotellada, 12,35 € la limonada y 12,84 € un Spezi. Presupuesta de forma realista y el día costará mucho menos en discusiones."
+      },
+      {
+        "q": "¿Qué pasa el día de apertura, el 19 de septiembre de 2026?",
+        "a": "Las carpas abren a las 9:00 y no se sirve nada hasta el mediodía, cuando el alcalde de Múnich pincha el primer barril en la carpa Schottenhamel y grita \"O'zapft is!\" — \"¡Está pinchado!\". La tradición es hacerlo con los menos martillazos posibles, y la cuenta es literalmente noticia en Baviera. Es el momento más atmosférico de los dieciséis días y también el más abarrotado: si vuestro grupo quiere estar dentro de la Schottenhamel para vivirlo sin reserva, vais a hacer cola desde primera hora de la mañana, juntos, en Tracht (el traje tradicional), y eso hay que decidirlo en grupo, no descubrirlo a las once de la mañana."
+      },
+      {
+        "q": "¿Cómo se llega a la Theresienwiese?",
+        "a": "En U-Bahn, y preferiblemente no en la línea obvia. La U4 y la U5 paran en la estación de Theresienwiese, justo en el recinto, que es exactamente por lo que es la estación más congestionada del festival. Seguid una parada más hasta Schwanthalerhöhe en las mismas líneas y caminad diez minutos. Goetheplatz y Poccistraße, en las U3/U6, dan acceso a las entradas sur y este, también a unos diez minutos a pie. La app MVGO muestra la afluencia en tiempo real. No vayáis en coche — no hay aparcamiento para visitantes, y de todas formas no vais a estar en condiciones de volver conduciendo."
+      },
+      {
+        "q": "¿Sale más barato ir entre semana?",
+        "a": "Bastante más, en todas las líneas del presupuesto. Los precios de las habitaciones en Múnich llegaron a rozar los 415 € por noche durante el festival de 2025 — un 153% por encima de la media anual de la ciudad, frente a los 80–150 € aproximados fuera de la temporada de la Wiesn —, y los picos son los dos fines de semana y el 3 de octubre, Día de la Unidad Alemana. Las reservas de carpa para los mediodías entre semana también son mucho más fáciles de conseguir, y sentarse sin reserva siendo diez es realista de verdad un lunes por la mañana de una forma que nunca lo es un sábado. Si tu pandilla tiene algo de flexibilidad, una Wiesn de martes a jueves es otro viaje a otro precio."
+      },
+      {
+        "q": "¿Cómo se reparten los gastos en grupo?",
+        "a": "Usad un presupuesto compartido con categorías separadas desde el principio, porque el dinero del Oktoberfest no se reparte de una sola manera. Una persona paga por adelantado los vales de la mesa en primavera por todos. Otra reserva el apartamento en verano. Y luego las rondas se pagan individualmente en septiembre a 15,80 € cada una. Si solo hacéis cuentas al final, quien adelantó 400 € en vales en abril acaba persiguiendo a nueve amigos en octubre y quien se bebió tres Maß está subvencionando en silencio a quien se bebió nueve. WePlanify separa las categorías, registra quién pagó qué y cuándo, y le dice a cada uno cuánto debe y a quién — sin hoja de cálculo y sin matemáticas de fin de viaje."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Descubre más",
+    "tomorrowland": {
+      "title": "Tomorrowland 2026",
+      "desc": "Planifica la peregrinación a Boom con la pandilla.",
+      "cta": "Leer más →"
+    },
+    "hellfest": {
+      "title": "Hellfest 2026",
+      "desc": "Clisson, cuatro días, un plan compartido.",
+      "cta": "Leer más →"
+    },
+    "tripWithFriends": {
+      "title": "Viaje con amigos",
+      "desc": "Planifica cualquier viaje en grupo sin esfuerzo.",
+      "cta": "Leer más →"
+    },
+    "bestApps": {
+      "title": "Mejores apps de viajes en grupo",
+      "desc": "Nuestra comparativa de las mejores herramientas para viajes en grupo.",
+      "cta": "Leer el artículo →"
+    }
+  },
+  "cta": {
+    "title": "Construye tu viaje al Oktoberfest 2026",
+    "subtitle": "El día, la carpa, las camas, el dinero — un plan compartido, toda tu pandilla en la misma página.",
+    "button": "Empezar a planificar"
+  },
+  "jsonld": {
+    "articleHeadline": "Planificador de viaje al Oktoberfest 2026: cómo organizar la Wiesn en grupo",
+    "eventName": "Oktoberfest 2026 (191.ª Wiesn de Múnich)",
+    "eventDescription": "El 191.º Oktoberfest se celebra en la Theresienwiese de Múnich del 19 de septiembre al 4 de octubre de 2026. Dieciséis días, 14 carpas de cerveza grandes y 21 pequeñas, entrada gratuita al recinto y a las carpas, y una Maß de cerveza a un precio de entre 14,80 € y 15,90 €. El festival arranca al mediodía del 19 de septiembre, cuando el alcalde de Múnich pincha el primer barril en la carpa Schottenhamel al grito de \"O'zapft is!\".",
+    "howToName": "Cómo planificar un viaje al Oktoberfest 2026 con un grupo de amigos",
+    "howToDescription": "Acordad el día, cerrad una mesa de carpa en bloque de diez, reservad las camas en Múnich antes de que se disparen los precios y repartid los vales y las rondas sin que nadie tenga que perseguir a nadie en octubre.",
+    "howToSteps": [
+      {
+        "name": "Vota la fecha antes de mirar ninguna carpa",
+        "text": "El Oktoberfest dura dieciséis días y cada uno de ellos es un viaje distinto. Propón al grupo tres o cuatro fechas candidatas y que todos voten antes de que nadie abra un portal de reservas. Los fines de semana y el 3 de octubre son los días con más gente y más caros; una visita entre semana sale más barata en alojamiento y es mucho más fácil para sentarse sin reserva."
+      },
+      {
+        "name": "Consigue un número firme de diez",
+        "text": "Las carpas reservan mesas enteras, normalmente de diez plazas, a veces de ocho — nunca de seis. Convierte los quizás en nombres confirmados en un itinerario compartido antes de que abran las reservas, y recluta a más gente si os falta. Las sillas vacías cuestan lo mismo que las llenas, porque los vales de consumición son por mesa."
+      },
+      {
+        "name": "Dale la reserva a una sola persona, con un plazo",
+        "text": "No hay un sistema de reservas central: cada una de las 14 carpas grandes abre su propio portal en su propia fecha, desde mediados o finales de abril hasta principios de junio, y los sábados populares se agotan en cuestión de horas. Nombra a una persona para reservar, pon la fecha de apertura de la carpa en el plan compartido y asegúrate de que la encuesta se ha cerrado antes de que llegue."
+      },
+      {
+        "name": "Reserva el alojamiento en Múnich pronto y repártelo por noche",
+        "text": "El alojamiento es la mayor partida del presupuesto de un Oktoberfest y la que se mueve más rápido. Los precios en Múnich llegaron a rozar los 415 € por noche durante el festival de 2025, un 153% por encima de la media anual aproximadamente. Un apartamento repartido entre todo el grupo suele ganar a las habitaciones individuales, y alojarse a 20 minutos en una línea directa de U-Bahn es mejor negocio que pagar por estar a distancia a pie."
+      },
+      {
+        "name": "Controla los vales y las rondas en un presupuesto compartido",
+        "text": "Una persona paga por adelantado los vales de la mesa con meses de antelación en nombre de todos, otra reserva las camas, y luego las rondas se pagan individualmente a unos 15,80 € la Maß. Registra cada una de estas cosas en su propia categoría el mismo día que se paga, para que las cuentas ya estén hechas cuando termine el viaje."
+      }
+    ]
+  }
+}
