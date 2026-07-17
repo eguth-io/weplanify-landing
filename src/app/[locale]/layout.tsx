@@ -13,6 +13,7 @@ import StickyCTA from "@/components/StickyCTA";
 import { StructuredData } from "@/components/StructuredData";
 import SoftwareApplicationSchema from "@/app/structured-data";
 import { NextIntlClientProvider } from 'next-intl';
+import { pickClientMessages } from '@/i18n/client-namespaces';
 import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -93,7 +94,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         {/* Structured Data (SoftwareApplication Schema) */}
         <SoftwareApplicationSchema />
 
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={pickClientMessages(messages)}>
           {children}
 
           {/* Sticky CTA — appears on scroll, all pages */}
