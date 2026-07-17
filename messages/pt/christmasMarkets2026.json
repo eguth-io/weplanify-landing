@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "Planeador de Viagem para os Mercados de Natal 2026 — Gratuito, para Grupos",
+    "description": "Planeador de viagem gratuito para os mercados de Natal 2026 em grupo. Datas de abertura confirmadas para Colmar, Nuremberga, Colónia, Viena, Praga e Bruxelas, rotas de uma cidade ou volta pela Alsácia, logística ferroviária e um orçamento partilhado para o vinho quente."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Planeador de Viagem para os Mercados de Natal 2026"
+  },
+  "hero": {
+    "tag": "Planeador de viagem gratuito · Mercados de Natal 2026",
+    "title": "Mercados de Natal 2026: Fechem o Fim de Semana Antes de os Hotéis Desaparecerem",
+    "intro": "Uma viagem aos mercados de Natal na Europa é a viagem em grupo mais fácil de imaginar e uma das mais difíceis de reservar a sério. São dois ou três dias numa cidade, portanto o itinerário é denso e cada hora é disputada. Cada mercado abre e fecha nas suas próprias datas, o que significa que a escolha da data decide discretamente o destino. E os preços dos hotéis em Estrasburgo e Viena disparam a partir do final de novembro e esgotam meses antes. Este é o planeador: as datas reais de 2026, a decisão entre uma cidade ou várias, as rotas de comboio e como dividir um fim de semana de vinho quente por seis pessoas. Se ainda estão a escolher as ferramentas, vejam a nossa <link>comparação de apps de viagens em grupo</link>.",
+    "readTime": "9 min de leitura",
+    "ctaButton": "Planeie o seu fim de semana nos mercados",
+    "ctaNote": "Gratuito, sem cartão, sem subscrição."
+  },
+  "facts": {
+    "heading": "A época de 2026 num relance",
+    "windowLabel": "Época",
+    "windowValue": "13 nov → 6 jan",
+    "windowSub": "Da abertura mais cedo ao fecho mais tarde",
+    "marketsLabel": "Mercados",
+    "marketsValue": "8",
+    "marketsSub": "Comparados abaixo, 6 com datas confirmadas",
+    "bookLabel": "Reservar até",
+    "bookValue": "Setembro",
+    "bookSub": "Antes de as boas camas desaparecerem",
+    "modeLabel": "Melhor meio",
+    "modeValue": "Comboio",
+    "modeSub": "TGV, ICE, ÖBB, RegioJet"
+  },
+  "stakes": {
+    "p1": "A armadilha é esta. Alguém atira \"fim de semana nos mercados de Natal?\" para a conversa do grupo em outubro. Toda a gente diz que sim na hora — é um sim barato, ninguém se compromete com nada. Depois passam três semanas. Quando finalmente comparam fins de semana, metade dos mercados que tinham em mente fecham em dias diferentes, os hotéis de Estrasburgo abaixo dos 200 € já não existem e o grupo divide-se entre \"só Colmar, com calma\" e \"Viena e Praga, dormimos no comboio\". Acabam a reservar em pânico na terceira semana de novembro, a pagar o dobro, e a passar o fim de semana a discutir para que praça caminhar a seguir.",
+    "p2": "A WePlanify é o plano partilhado e gratuito para viagens aos mercados de Natal — datas, rota, hotel, itinerário e quem deve o quê do vinho quente, tudo num só sítio que todo o grupo pode ver."
+  },
+  "toc": {
+    "title": "Nesta página",
+    "markets": "Os mercados e as suas datas de 2026",
+    "routes": "Uma cidade ou uma rota por várias?",
+    "logistics": "Como lá chegar: a resposta é o comboio",
+    "planning": "Planear em grupo",
+    "budget": "Dividir um fim de semana de Natal",
+    "faq": "Perguntas frequentes"
+  },
+  "markets": {
+    "title": "Os Mercados e as Suas Datas Reais de 2026",
+    "subtitle": "Esta é a parte que toda a gente salta e da qual depois se arrepende. Estes mercados não seguem o mesmo calendário — o fim de semana que escolherem decide quais é que estão sequer abertos. As datas abaixo vêm dos organizadores oficiais, verificadas em julho de 2026.",
+    "confirmedLabel": "Confirmado",
+    "typicalLabel": "Ainda não confirmado",
+    "note": "Dois mercados ainda não publicaram as datas de 2026. Assinalámo-los claramente em vez de adivinhar — verifiquem o site oficial antes de reservarem um fim de semana que dependa de um deles.",
+    "items": [
+      {
+        "name": "Colmar — La Magie de Noël",
+        "dates": "23 de novembro – 29 de dezembro de 2026",
+        "desc": "Seis mercados espalhados pelo centro histórico, e aquele que fotografa como um postal. Vai mais longe do que a maioria, por isso é a aposta mais segura para um fim de semana entre o Natal e o Ano Novo. O Mercado Gourmet fica aberto até 3 de janeiro de 2027."
+      },
+      {
+        "name": "Estrasburgo — Christkindelsmärik",
+        "dates": "Normalmente do final de novembro a 24 de dezembro",
+        "desc": "O mercado de Natal mais antigo de França, a decorrer desde 1570, e o primeiro que o vosso grupo vai nomear. A cidade ainda não tinha publicado as datas de 2026 quando verificámos, em julho de 2026. Tradicionalmente abre na última sexta-feira de novembro e fecha a 24 de dezembro, com algumas praças a prolongar-se até ao fim do mês — mas não reservem um fim de semana no final de dezembro partindo desse princípio."
+      },
+      {
+        "name": "Nuremberga — Christkindlesmarkt",
+        "dates": "27 de novembro – 24 de dezembro de 2026",
+        "desc": "O mercado mais famoso da Alemanha e o mais tradicional: bancas de madeira, nada de plástico, nada de música ambiente. Abre na sexta-feira, 27 de novembro, às 17:30, com o prólogo do Christkind na varanda da Frauenkirche. Fecha na véspera de Natal, e nesse dia as bancas encerram às 14:00."
+      },
+      {
+        "name": "Colónia — Weihnachtsmarkt am Kölner Dom",
+        "dates": "16 de novembro – 23 de dezembro de 2026",
+        "desc": "Abre mais cedo do que os outros grandes nomes alemães, mesmo aos pés da catedral, e fecha antes da véspera de Natal. Atenção: está encerrado no Totensonntag, 22 de novembro de 2026. A melhor relação qualidade-preço desta lista se quiserem um fim de semana de mercado em meados de novembro, antes de os preços subirem."
+      },
+      {
+        "name": "Viena — Christkindlmarkt am Rathausplatz",
+        "dates": "13 de novembro – 26 de dezembro de 2026",
+        "desc": "A época mais longa desta lista: abre em meados de novembro e é um dos pouquíssimos ainda a funcionar a 26 de dezembro. Aberto todos os dias das 10:00 às 22:00, e das 10:00 às 18:30 a 24 de dezembro. O ringue de patinagem Ice Dream continua até 6 de janeiro de 2027, o que faz de Viena a escolha mais forte para uma viagem depois do Natal."
+      },
+      {
+        "name": "Praga — Praça da Cidade Velha e Praça Venceslau",
+        "dates": "28 de novembro de 2026 – 6 de janeiro de 2027",
+        "desc": "É o último a abrir do grupo, mas o que dura mais tempo, até ao Dia de Reis. Todos os dias das 10:00 às 22:00. A iluminação da árvore é na noite de abertura, 28 de novembro. Se o vosso grupo só puder ir em janeiro, Praga é uma das poucas opções a sério que sobram."
+      },
+      {
+        "name": "Budapeste — Advent Basilica e Praça Vörösmarty",
+        "dates": "Datas ainda não publicadas para 2026",
+        "desc": "Dois mercados, ambos excelentes, e a comida e bebida mais baratas de toda esta lista. Nenhum tinha datas de 2026 confirmadas quando verificámos, em julho de 2026. Historicamente, ambos abrem em meados de novembro e prolongam-se pelos primeiros dias de janeiro — tratem isso como um padrão, não como uma reserva."
+      },
+      {
+        "name": "Bruxelas — Winter Wonders / Plaisirs d'Hiver",
+        "dates": "27 de novembro de 2026 – 3 de janeiro de 2027",
+        "desc": "Mais um festival de inverno completo do que um mercado puro: chalés, uma roda gigante, o espetáculo de som e luz na Grand-Place. Vai por janeiro dentro, e é o mais fácil de alcançar de Londres, Paris ou Amesterdão em comboio direto."
+      }
+    ]
+  },
+  "routes": {
+    "title": "Uma Cidade ou uma Rota por Várias?",
+    "subtitle": "Esta é a bifurcação que o vosso grupo tem de escolher antes de reservar seja o que for, e a resposta honesta é que a maioria dos grupos quer mais do que consegue. Três opções que funcionam mesmo num fim de semana.",
+    "option1": {
+      "tag": "A opção segura",
+      "title": "Uma cidade, bem feita",
+      "desc": "Escolham um único mercado, cheguem na sexta à noite, saiam no domingo à tarde. Ficam com duas noites inteiras, tempo para comer como deve ser, e ninguém passa o fim de semana a arrastar uma mala até à estação. Ideal para Viena, Nuremberga ou Praga, onde uma cidade tem mais mercado do que conseguem ver em dois dias. Se é a primeira viagem do grupo em conjunto, escolham esta."
+    },
+    "option2": {
+      "tag": "A opção boa",
+      "title": "A volta pela Alsácia",
+      "desc": "Estrasburgo mais Colmar, e uma das aldeias pequenas se tiverem carro — Eguisheim ou Riquewihr. Os comboios entre Estrasburgo e Colmar demoram cerca de 30 minutos, por isso dá mesmo para fazer num fim de semana. Dormem numa cidade e visitam a outra num dia. O senão: só funciona a partir do final de novembro, e as datas de 2026 de Estrasburgo ainda não saíram."
+    },
+    "option3": {
+      "tag": "A opção ambiciosa",
+      "title": "Duas capitais de comboio",
+      "desc": "Viena e Praga, a cerca de quatro horas uma da outra em comboio direto. Os dois mercados são grandes, os dois vão longe na época, e a janela em que se sobrepõem é de 28 de novembro a 26 de dezembro. Precisa de três noites no mínimo — façam num fim de semana prolongado ou não façam de todo. Mais do que duas cidades num fim de semana é uma digressão de comboio, não uma viagem."
+    }
+  },
+  "midCta": {
+    "title": "Parem de comparar datas na conversa do grupo",
+    "subtitle": "Ponham os fins de semana lado a lado, deixem toda a gente votar, e fechem a cidade numa tarde.",
+    "button": "Começar grátis"
+  },
+  "logistics": {
+    "title": "Como Lá Chegar: A Resposta É o Comboio",
+    "subtitle": "Quase todos os mercados desta lista se alcançam melhor de comboio do que de avião. Saltos curtos, centro a centro, sem corrida ao aeroporto às 5 da manhã no escuro, e o grupo fica junto o caminho todo.",
+    "westLabel": "Alsácia e o oeste",
+    "eastLabel": "Europa Central",
+    "gettingThere": "Como lá chegar",
+    "westItems": [
+      "Paris → Estrasburgo: cerca de 1h45 de TGV, direto, centro a centro. Mais barato do que qualquer voo depois de contar os transfers do aeroporto.",
+      "Estrasburgo → Colmar: cerca de 30 minutos de TER, comboios todo o dia. É por isto que a volta pela Alsácia funciona — não precisam de carro para as duas cidades grandes.",
+      "As aldeias da Alsácia (Eguisheim, Riquewihr) exigem carro ou autocarro. Decidam isto antes de reservar: muda se alugam ou não, e quem conduz depois do vinho quente.",
+      "Bruxelas é direta de Paris (1h22), Londres (2h) e Amesterdão (1h50). É o fim de semana de mercado com menos esforço desta lista.",
+      "Colónia → Bruxelas são cerca de 1h50 direto. Juntá-las em três noites é uma das poucas rotas por várias cidades que não é forçada.",
+      "Reservem o comboio com 2 a 3 meses de antecedência. Os preços dos fins de semana de dezembro sobem como os dos voos, e os comboios de sábado de manhã esgotam primeiro."
+    ],
+    "eastItems": [
+      "Viena → Praga: cerca de 4 horas direto, várias vezes por dia, na RegioJet ou na ÖBB. Barato se reservado com antecedência, doloroso se for no próprio dia.",
+      "Nuremberga → Praga: cerca de 3h30 em autocarro direto, e muitas vezes mais rápido do que o comboio. Nada glamoroso, mas genuinamente eficiente.",
+      "Nuremberga → Viena: cerca de 5 horas de comboio via Passau. É o elo mais fraco se estiverem a tentar encadear mercados alemães e austríacos.",
+      "Budapeste → Viena: cerca de 2h30 de railjet, a combinação mais fácil da Europa Central. Dormir nas duas cidades é barato em comparação com a Alsácia.",
+      "Para voos, apontem aos aeroportos de Viena, Praga ou Budapeste — os três estão bem ligados e têm transportes públicos a sério para o centro.",
+      "As reservas de lugar contam nos fins de semana de dezembro. Um grupo de seis de pé num corredor durante quatro horas é um mau começo de fim de semana."
+    ]
+  },
+  "planning": {
+    "title": "Planear em Grupo",
+    "p1": "A escolha da data é a viagem inteira. Como estes mercados seguem calendários diferentes, escolher um fim de semana é escolher um destino — e a maioria dos grupos faz isto ao contrário, discutindo cidades durante três semanas antes de alguém verificar quem consegue mesmo tirar a sexta. Façam ao contrário: <pollLink>lancem primeiro uma sondagem sobre os fins de semana</pollLink>, apurem as duas ou três datas em que toda a gente pode mesmo, e só depois vejam que mercados estão abertos. A lista encolhe depressa, e a discussão desaparece quase toda com ela.",
+    "p2": "De setembro a novembro é a vossa janela de planeamento, e isso não é exagero. Os hotéis de Estrasburgo e Viena para os fins de semana de dezembro estão praticamente esgotados no final de setembro a qualquer preço sensato. Se estão a ler isto em outubro, reservem as camas esta semana e tratem do itinerário depois — o alojamento é a única decisão verdadeiramente irreversível aqui. Todo o resto se pode mudar.",
+    "p3": "Depois mantenham o <itineraryLink>itinerário partilhado</itineraryLink> deliberadamente magro. É este o erro que os grupos cometem em escapadinhas curtas: dois dias, seis pessoas, e alguém constrói um plano hora a hora com nove praças. Nunca sobrevive ao contacto com a primeira banca de Glühwein. Bloqueiem o que precisa mesmo de ser bloqueado — o comboio, o check-in, uma reserva de jantar por noite, e o mercado ou a igreja que toda a gente concordou que se arrependeria de perder — e deixem o resto de cada noite genuinamente vazio. Duas âncoras por dia chegam e sobram. Combinem um ponto de encontro e uma hora em vez de tentarem manter seis pessoas juntas no meio da multidão; o grupo vai separar-se de qualquer forma, e é muito mais divertido quando isso é o plano e não um acidente.",
+    "p4": "Uma coisa pequena que evita muita chatice: combinem à partida o que fazer se estiver miserável. Vai chover, ou vão estar -4 °C e alguém vai querer estar dentro de portas às 18h. Tenham um museu, um almoço longo ou uns banhos termais já na lista como alternativa, para que o grupo não fique à chuva a negociar do zero. O <guideLink>guia de viagem em grupo</guideLink> tem a versão completa disto, se quiserem."
+  },
+  "budget": {
+    "title": "Dividir um Fim de Semana de Natal",
+    "p1": "Os fins de semana nos mercados de Natal têm uma estrutura de custos genuinamente irritante: uma linha enorme (o hotel) e depois duzentas minúsculas. Vinho quente a 4 €, o depósito da caneca, castanhas assadas, uma rodada de tartiflette, o terceiro Glühwein de alguém, um enfeite de madeira para a cunhada. Ninguém regista nada, toda a gente anda a passar dinheiro de mão em mão o fim de semana todo, e no domingo à noite ninguém faz ideia de quem está a mais e quem está a menos. Criem um <budgetLink>orçamento partilhado</budgetLink> antes de partir, com o alojamento numa linha própria e uma categoria solta de \"mercado\" para tudo o resto. Assim é um acerto no fim em vez de quarenta pequeninos.",
+    "p2": "O hotel é onde está o dinheiro a sério, e onde está a decisão a sério. Um fim de semana de dezembro no centro de Estrasburgo ou de Viena custa duas a três vezes o preço normal, e os quartos abaixo dos 150 € desaparecem por volta de setembro. Duas coisas resolvem isto. Primeira: um único apartamento para seis bate três quartos duplos quase sempre, tanto no preço como porque ficam com um sítio para se sentarem que não é um bar cheio. Segunda: fiquem a 15 ou 20 minutos, na linha do elétrico. Kehl, do outro lado da fronteira alemã junto a Estrasburgo, ou os bairros periféricos de Viena, custam uma fração do preço e o mercado continua a 20 minutos.",
+    "p3": "Quanto ao resto, Budapeste e Praga são bastante mais baratas na comida e na bebida do que Viena, Estrasburgo ou Colónia — o suficiente para compensar um comboio mais caro. Vale a pena pôr em cima da mesa se os orçamentos do grupo forem desiguais. E façam o que fizerem, não deixem uma pessoa adiantar o fim de semana inteiro no cartão dela. Alternem quem paga o quê, registem cada despesa quando acontece em vez de o fazerem de memória no comboio de volta, e ninguém tem de ser o contabilista."
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      {
+        "q": "Quando é que os mercados de Natal de 2026 abrem e fecham exatamente?",
+        "a": "Varia muito de cidade para cidade, e é precisamente por isso que a data importa. Confirmado para 2026: Viena Rathausplatz de 13 de novembro a 26 de dezembro; Catedral de Colónia de 16 de novembro a 23 de dezembro (encerrado a 22 de novembro por causa do Totensonntag); Colmar de 23 de novembro a 29 de dezembro; Nuremberga de 27 de novembro a 24 de dezembro; Bruxelas Winter Wonders de 27 de novembro de 2026 a 3 de janeiro de 2027; Praga, Praça da Cidade Velha e Praça Venceslau, de 28 de novembro de 2026 a 6 de janeiro de 2027. Estrasburgo e Budapeste ainda não tinham publicado as datas de 2026 em julho de 2026."
+      },
+      {
+        "q": "Quando devo reservar hotéis para um fim de semana nos mercados de Natal?",
+        "a": "Em setembro, e não estamos a ser dramáticos. Os quartos para os fins de semana de dezembro em Estrasburgo, Viena e Colmar esgotam com meses de antecedência, e o que sobra depois de outubro ou fica muito longe da cidade ou custa duas a três vezes o preço normal. O alojamento é a única decisão desta viagem que não conseguem mesmo reverter mais tarde, por isso fechem-no primeiro — podem discutir o itinerário em novembro."
+      },
+      {
+        "q": "Qual é o melhor mercado de Natal para uma primeira viagem em grupo?",
+        "a": "Nuremberga ou Viena se quiserem o mercado clássico, grande e denso, com tudo a pé. Colmar se quiserem o mais bonito e não se importarem que seja pequeno. Bruxelas se o grupo estiver espalhado por vários países, porque os comboios diretos de Paris, Londres e Amesterdão fazem dela o sítio mais fácil para todos convergirem. Deixem a rota por várias cidades para outra altura — uma cidade em duas noites é mais do que suficiente, e é a versão de que as pessoas realmente gostam."
+      },
+      {
+        "q": "Dá para fazer Estrasburgo e Colmar no mesmo fim de semana?",
+        "a": "Dá, e é a única rota por várias cidades que funciona mesmo. Estão a cerca de 30 minutos uma da outra de TER, com comboios todo o dia, por isso dormem numa e visitam a outra num dia, em vez de mudar de hotel. Acrescentar uma aldeia alsaciana como Eguisheim ou Riquewihr implica alugar um carro — decidam isso antes de reservar, porque também decide quem fica sóbrio."
+      },
+      {
+        "q": "Qual é a forma mais barata de fazer uma viagem aos mercados de Natal com amigos?",
+        "a": "Três coisas, por ordem de impacto. Vão de comboio em vez de avião — para Paris–Estrasburgo ou Paris–Bruxelas é mais barato do que um voo depois de contar os transfers do aeroporto, e é centro a centro. Aluguem um apartamento para o grupo todo em vez de quartos de hotel separados; seis pessoas num sítio bate três duplos quase sempre. E vão em meados de novembro em vez de meados de dezembro — Colónia abre a 16 de novembro e Viena a 13 de novembro, antes de os preços ficarem feios."
+      },
+      {
+        "q": "Há mercados de Natal ainda abertos depois do Natal?",
+        "a": "Alguns, e vale a pena saber quais, porque a maioria dos grupos assume que a época acaba no dia 24. Praga vai até 6 de janeiro, Bruxelas até 3 de janeiro, Colmar até 29 de dezembro, Viena até 26 de dezembro. Nuremberga, Colónia e Estrasburgo acabam na véspera de Natal ou antes. Se o vosso grupo só puder viajar entre o Natal e o Ano Novo, as opções são Praga, Bruxelas ou Colmar — e é essa a lista toda."
+      },
+      {
+        "q": "Quantos dias são precisos para uma viagem aos mercados de Natal?",
+        "a": "Duas noites é o ponto ideal para uma cidade: chegam na sexta à noite, duas noites inteiras no mercado, e regressam no domingo. Os mercados são coisa de noite — estão no seu melhor depois de escurecer, portanto o dia é para a cidade em si. Três noites se forem fazer duas cidades. Uma noite não é uma viagem, é uma deslocação com vinho quente."
+      },
+      {
+        "q": "Como se dividem os custos num fim de semana de pequenas compras?",
+        "a": "Registem-nas à medida que acontecem, não de memória no comboio de volta. É esse o truque todo. Os fins de semana nos mercados de Natal são morte por mil vinhos quentes de 4 €, e só os depósitos das canecas já baralham toda a gente até domingo. Usem um orçamento partilhado com o hotel numa linha e uma categoria genérica para os gastos no mercado, alternem quem paga cada rodada, e acertem contas uma vez no fim. A WePlanify faz as contas para que ninguém tenha de ser o tesoureiro do grupo."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Descubra Mais",
+    "tripWithFriends": {
+      "title": "Viagem com Amigos",
+      "desc": "Planeie qualquer viagem em grupo sem esforço.",
+      "cta": "Ler mais →"
+    },
+    "familyTrip": {
+      "title": "Viagem em Família",
+      "desc": "Os mercados são um clássico de família — planeie-a sem o caos.",
+      "cta": "Ler mais →"
+    },
+    "groupGuide": {
+      "title": "Guia de Viagem em Grupo",
+      "desc": "O guia completo, passo a passo.",
+      "cta": "Ler o guia →"
+    },
+    "bestApps": {
+      "title": "Melhores Apps de Viagens em Grupo",
+      "desc": "A nossa comparação das melhores ferramentas para viagens em grupo.",
+      "cta": "Ler o artigo →"
+    }
+  },
+  "cta": {
+    "title": "Fechem o Fim de Semana Antes de os Hotéis Desaparecerem",
+    "subtitle": "Datas, cidade, hotel, itinerário e o orçamento do vinho quente — um plano partilhado, todo o vosso grupo na mesma página.",
+    "button": "Começar a planear grátis"
+  },
+  "jsonld": {
+    "articleHeadline": "Mercados de Natal 2026: O Planeador de Viagem em Grupo Com as Datas Reais",
+    "howToName": "Como planear uma viagem aos mercados de Natal em grupo em 2026",
+    "howToDescription": "Escolham primeiro o fim de semana, deixem as datas decidir a cidade, reservem as camas antes de setembro acabar, mantenham o itinerário magro e dividam o vinho quente sem folha de cálculo.",
+    "howToSteps": [
+      {
+        "name": "Sondem os fins de semana antes de discutir cidades",
+        "text": "Cada mercado segue o seu próprio calendário, por isso o fim de semana em que todos podem é o que realmente decide o destino. Lancem primeiro uma sondagem sobre dois ou três fins de semana candidatos e depois vejam que mercados estão abertos nessas datas. A lista curta escreve-se sozinha."
+      },
+      {
+        "name": "Reservem o alojamento já — é o único passo irreversível",
+        "text": "Os quartos de dezembro em Estrasburgo, Viena e Colmar esgotam no final de setembro e custam duas a três vezes o preço normal. Fechem um apartamento para o grupo todo, ou fiquem a 20 minutos na linha do elétrico. Tudo o resto nesta viagem pode ser mudado depois."
+      },
+      {
+        "name": "Construam um itinerário deliberadamente magro",
+        "text": "Dois dias, seis pessoas e um plano hora a hora é a receita para um mau fim de semana. Bloqueiem o comboio, o check-in, um jantar por noite e aquela coisa em que todos concordaram. Duas âncoras por dia, e deixem as noites genuinamente livres."
+      },
+      {
+        "name": "Criem o orçamento partilhado antes de partir",
+        "text": "Uma linha enorme para o hotel e cem minúsculas para o vinho quente, os depósitos das canecas e as castanhas. Ponham o alojamento numa linha própria, usem uma categoria genérica para os gastos no mercado, alternem quem paga cada rodada, e acertem contas uma vez no fim."
+      }
+    ]
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "title": "Oktoberfest 2026 Trip Planner — Free, for Groups",
+    "description": "Free Oktoberfest 2026 trip planner for groups. Munich, Theresienwiese, 19 September to 4 October. Lock a tent table for the whole crew, split the Maß and the hotel, and agree on a day — no agency, no subscription."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Oktoberfest 2026 Trip Planner"
+  },
+  "hero": {
+    "tag": "Free trip planner · Oktoberfest 2026",
+    "title": "Oktoberfest 2026 Trip Planner: Get Your Whole Crew on One Table",
+    "intro": "The 191st Oktoberfest runs from Saturday 19 September to Sunday 4 October 2026 on Munich's Theresienwiese. Entry is free, the beer is not, and the one thing that decides whether your trip works is a table you have to book months in advance — in a block of ten seats, for a specific day, in one specific tent. That is a group decision before it is a travel decision. Here is how to make it without losing three friends to a group chat. If you're still picking your tools, see our <apps>comparison of group travel apps</apps>.",
+    "readTime": "9 min read",
+    "ctaButton": "Plan your Wiesn",
+    "ctaNote": "Free. No card. Invite the crew in one link."
+  },
+  "facts": {
+    "heading": "Oktoberfest 2026 at a glance",
+    "datesLabel": "Dates",
+    "datesValue": "19 Sep – 4 Oct",
+    "datesSub": "16 days, 191st edition",
+    "priceLabel": "A Maß of beer",
+    "priceValue": "€14.80–15.90",
+    "priceSub": "Official 2026 range",
+    "tentsLabel": "Tents",
+    "tentsValue": "14 + 21",
+    "tentsSub": "Large and small",
+    "entryLabel": "Entry",
+    "entryValue": "€0",
+    "entrySub": "Grounds and tents are free"
+  },
+  "stakes": {
+    "p1": "Oktoberfest looks like the easiest group trip in Europe. Free entry, one venue, sixteen days to choose from, six million people manage it every year. Then you actually try to organise eight friends and it falls apart in a very specific way: the tent you wanted opened reservations in April and sold its Saturdays in an afternoon, tables come in blocks of ten so your group of six has to find four more or pay for empty seats, two people can only do the first weekend and two can only do the second, a Munich hotel room that costs €130 in July costs three times that on Wiesn weekend, and somebody has already fronted €400 of consumption vouchers on their own card and would quite like it back.",
+    "p2": "None of that is a beer problem. It's a coordination problem — and it's exactly what WePlanify was built for: one shared plan where the day, the tent, the beds and the money are visible to everyone, for free."
+  },
+  "toc": {
+    "title": "On this page",
+    "howItWorks": "How the Wiesn actually works",
+    "reservations": "Tent reservations: the group trap",
+    "logistics": "Getting there and staying there",
+    "planning": "Planning it with your crew",
+    "budget": "Budget and splitting the bill",
+    "faq": "Frequently asked questions"
+  },
+  "howItWorks": {
+    "title": "How the Wiesn Actually Works",
+    "subtitle": "Five things every first-time group gets wrong. Get them right and the rest is just beer.",
+    "items": [
+      {
+        "stop": "Entry is free — the table is the currency",
+        "desc": "Nobody sells an Oktoberfest ticket. The Theresienwiese is open, the tents are open, and you can walk into any of them for nothing. What you cannot do is walk in at 6pm on a Saturday and find ten seats together. Beer is only served to people who are seated, so a table isn't a comfort upgrade — it's the whole trip. Everything else in your plan hangs off which table, which day.",
+        "link": "/features/itinerary"
+      },
+      {
+        "stop": "Reservations come in blocks of ten",
+        "desc": "Tents reserve whole tables, not seats — typically ten people, sometimes eight. There is no central booking system: each of the 14 large tents runs its own portal and opens on its own date, roughly mid/late April for the earliest (Schottenhamel, Hofbräu), early-to-mid May for most brewery tents, and late May to early June for the stragglers (Augustiner, Käfer, Schützen, Weinzelt). A group of six either recruits four more or eats the cost of four empty chairs.",
+        "link": "/features/polls"
+      },
+      {
+        "stop": "The reservation is free, the vouchers are not",
+        "desc": "You don't pay to hold a table. You prepay Verzehrgutscheine — consumption vouchers for the beer and food your table will order. In the main aisles the minimum is usually two Maß and half a roast chicken per person; boxes and galleries add around €18 of vouchers on top. For ten people that's a serious sum leaving one person's bank account, months early, on behalf of everyone else.",
+        "link": "/features/budget"
+      },
+      {
+        "stop": "A quarter of every tent is walk-in, by law",
+        "desc": "Munich forces the tents to keep seats free. As a rule 25% of seats can't be reserved at all, and on weekends and public holidays half the tent stays unreservable until 3pm, dropping to 25% after. That's your plan B and it's a real one — but it means arriving early, together, and agreeing in advance who queues.",
+        "link": "/features/planning"
+      },
+      {
+        "stop": "There's a second, quieter festival next door",
+        "desc": "The Oide Wiesn is a fenced historic section with its own tents, old-fashioned rides, brass bands and a calmer crowd. Entry costs €4 — the only thing on the whole Theresienwiese you buy a ticket for. It's the answer for anyone in the group who wants the festival without being crushed in the Hofbräu-Festzelt at 9pm.",
+        "link": "/features/explore"
+      }
+    ]
+  },
+  "reservations": {
+    "title": "Tent Reservations: The Group Trap",
+    "subtitle": "Two ways to get ten people seated. Both work. They demand completely different things from your crew.",
+    "reservedLabel": "Option A",
+    "reservedTitle": "Reserve a table",
+    "reservedItems": [
+      "You book a whole table: ten seats, sometimes eight. Not six.",
+      "Free to reserve — but you prepay consumption vouchers up front.",
+      "Each tent has its own portal and its own opening day. No central system.",
+      "Saturdays and the closing weekend go fastest. Weekday lunchtimes are gettable.",
+      "You need your final headcount months before the trip — that's the hard part.",
+      "Unused vouchers stay valid all festival, and can be redeemed at the caterer's own restaurants until at least 31 October or refunded in full."
+    ],
+    "walkInLabel": "Option B",
+    "walkInTitle": "Walk in like everyone else",
+    "walkInItems": [
+      "25% of seats can never be reserved. On weekends, 50% stay free until 3pm.",
+      "Zero commitment, zero prepayment, zero headcount problem.",
+      "You have to arrive early — tents open at 10am on weekdays, 9am at weekends.",
+      "Big groups get split up. Ten people rarely land together after midday.",
+      "Tents close their doors entirely when full, often by early afternoon on Saturdays.",
+      "Best odds: Monday to Thursday, before noon, in a smaller tent."
+    ]
+  },
+  "midCta": {
+    "title": "Ten seats, one date, eight opinions.",
+    "subtitle": "Poll the day, lock the tent, track who's actually in — before reservations open.",
+    "button": "Start free"
+  },
+  "logistics": {
+    "title": "Getting There and Staying There",
+    "subtitle": "Munich is easy. Munich during Wiesn is a different city — plan the boring parts and the fun parts take care of themselves.",
+    "transportLabel": "Transport",
+    "transportTitle": "How to reach the Theresienwiese",
+    "transportItems": [
+      "U4 and U5 stop at Theresienwiese station, directly at the grounds — and it is the single most congested station of the whole festival.",
+      "Get off at Schwanthalerhöhe instead, one stop further on the same U4/U5: a 10-minute walk, a fraction of the crush.",
+      "Goetheplatz or Poccistraße (U3/U6) serve the southern and eastern entrances, also about 10 minutes on foot.",
+      "The MVGO app shows live crowding and routes you around the worst of it.",
+      "Don't drive. There is no visitor parking at the Theresienwiese and you will not be driving home afterwards anyway.",
+      "Munich Hauptbahnhof is two U-Bahn stops away, which makes arriving by train genuinely the easiest option."
+    ],
+    "stayLabel": "Accommodation",
+    "stayTitle": "Where to sleep, and when to book",
+    "stayItems": [
+      "This is your biggest cost and the one that moves fastest. Book it before you book anything else.",
+      "In 2025 average Munich room rates peaked around €415 a night during the festival — roughly 153% above the city's annual average.",
+      "Outside Wiesn season the same city runs closer to €80–150 a night. That gap is the whole budget conversation.",
+      "One apartment split eight ways beats four twin rooms almost every time — and it gives you somewhere to gather before heading in.",
+      "You do not need to be walking distance. Munich's U-Bahn is fast and runs late; a place 20 minutes out on a direct line is a much better trade than a premium for proximity.",
+      "The first and last weekends and 3 October (German Unity Day) are the peaks. A midweek trip is a fundamentally cheaper trip."
+    ]
+  },
+  "planning": {
+    "title": "Planning It With Your Crew",
+    "p1": "Start with the day, not the tent. Every other decision — flights, beds, who can actually come — falls out of it, and it's the decision groups leave until last because it's the one that creates arguments. Somebody wants the opening Saturday for the tapping. Somebody can only do the second weekend. Somebody would quietly prefer a Tuesday when you can actually hear each other. <polls>Run a poll</polls> on three or four candidate dates before anyone looks at a tent portal, and you'll have a headcount instead of a maybe.",
+    "p2": "Then get the headcount honest, because ten is not a vibe — it's a hard number on a booking form. Tables come in blocks of ten, so the difference between \"about eight of us, probably\" and eight confirmed names is money. Put the trip in a <itinerary>shared itinerary</itinerary> with the date on it and let people commit or drop out visibly. Six confirmed and four friends-of-friends recruited is a table. Eight maybes is four empty seats you paid for.",
+    "p3": "Assign the reservation to one person and give them a deadline. Tent portals open on their own schedule from April onward and the good Saturdays are gone the same day — that's not a slot for group consensus, it's a slot for one person with the card and a mandate. Everyone else's job is to have answered the poll before then. Our <guide>guide to planning a group trip</guide> covers the same pattern for the rest of the trip: decide together, execute alone.",
+    "p4": "Plan the day itself lightly, but plan the rejoining. Phone batteries die, the tent is deafening, and somebody will wander off to the Oide Wiesn or a fairground ride and lose the group for two hours. Agree on one meeting point outside the tent and one time, before you go in. It's the least glamorous thing in this article and it's the thing you'll actually use."
+  },
+  "budget": {
+    "title": "Budget and Splitting the Bill",
+    "p1": "Oktoberfest has an unusual money shape: one person spends a lot, months early, for everybody. The vouchers get prepaid on one card in spring. The apartment gets booked on another card in June. Then in September ten people buy each other rounds at €15.80 a Maß and nobody is tracking anything. Set up a <budget>shared budget</budget> before the vouchers are bought, not after the trip, and log the reservation as an expense the day it's paid — the person who fronted it shouldn't be the one chasing nine friends in October.",
+    "p2": "Know the real numbers before you argue about them. A Maß costs between €14.80 and €15.90 in 2026, up an average of 2.38% on 2025; most large tents sit at €15.75–15.90, with the Augustiner-Festhalle the notable holdout at €14.90. Soft drinks are not the cheap escape hatch either — around €11.13 a litre for bottled water and €12.84 for a Spezi. A roast chicken, a few Maß and a share of the table minimum puts a realistic tent day somewhere around €80–120 a head before you've slept anywhere.",
+    "p3": "Split by category, not by day. Beds split per person per night. The table splits ten ways whether or not all ten drink the same. Food and rounds are individual. Rides and the €4 Oide Wiesn ticket are pocket money. Lumping it all into one number is how groups end up with the classic Oktoberfest argument — the person who drank three Maß subsidising the person who drank nine. Categories make that visible, and visible is usually enough."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Do you need a ticket for Oktoberfest 2026?",
+        "a": "No. Entry to the Theresienwiese and to all the beer tents is completely free — there is no such thing as an official Oktoberfest ticket, and anyone selling you one for entry is selling you nothing. You pay for beer, food, rides and games. The only ticketed part of the whole festival is the Oide Wiesn, the historic section, which costs €4. What people mean when they say \"tickets\" is a tent reservation, which is a different thing entirely: the reservation itself is free, but you prepay consumption vouchers for what your table will eat and drink."
+      },
+      {
+        "q": "When do Oktoberfest 2026 tent reservations open?",
+        "a": "There is no single opening day, which is the thing that catches groups out. Each of the 14 large tents runs its own booking portal on its own schedule. Broadly: the earliest tents open around mid to late April — Schottenhamel and Hofbräu typically lead — most brewery tents follow in early to mid May, and the last wave (Augustiner-Festhalle, Käfer Wiesn-Schänke, Schützen-Festzelt, Weinzelt) lands late May to early June. Popular Saturdays can be gone within hours. Pick your tent, find its portal, and put its opening date in your shared plan with one named person responsible for booking."
+      },
+      {
+        "q": "Can a group of six reserve a table?",
+        "a": "Not really — and this is the single biggest planning trap at Oktoberfest. Tents reserve whole tables, typically ten seats and sometimes eight. You cannot book six. Your options are to recruit more people until you fill the block, to accept paying for the empty seats (the vouchers are per table, not per person, so the cost is the same either way), or to skip the reservation and go on a weekday morning when walk-in seating is realistic. Most groups underestimate how early they need a firm headcount — the number is due months before the trip."
+      },
+      {
+        "q": "How much does a beer cost at Oktoberfest 2026?",
+        "a": "A Maß (one litre) costs between €14.80 and €15.90 at the 191st Wiesn, an average increase of about 2.38% on 2025. Most of the large tents cluster at €15.75 to €15.90 — Hacker, Hofbräu, Marstall, Paulaner and Schottenhamel all sit around €15.80 — while the Augustiner-Festhalle stays notably cheaper at €14.90. Non-alcoholic drinks aren't a bargain: expect roughly €11.13 per litre for bottled water, €12.35 for lemonade and €12.84 for a Spezi. Budget realistically and the day costs a lot less in arguments."
+      },
+      {
+        "q": "What happens on the opening day, 19 September 2026?",
+        "a": "The tents open at 9am and nothing is poured until noon, when Munich's Lord Mayor taps the first keg in the Schottenhamel tent and shouts \"O'zapft is!\" — \"It's tapped!\" The tradition is to do it in as few hammer blows as possible, and the count is genuinely news in Bavaria. It is the single most atmospheric moment of the entire sixteen days and also the single most crowded: if your group wants to be inside the Schottenhamel for it without a reservation, you are queueing from early morning, together, in Tracht, and you should decide that as a group rather than discover it at 11am."
+      },
+      {
+        "q": "How do you get to the Theresienwiese?",
+        "a": "U-Bahn, and preferably not the obvious one. The U4 and U5 stop at Theresienwiese station, right at the grounds, which is exactly why it's the most congested station of the festival. Ride one stop further to Schwanthalerhöhe on the same lines and walk ten minutes instead. Goetheplatz and Poccistraße on the U3/U6 serve the southern and eastern entrances, also about ten minutes on foot. The MVGO app shows live crowding. Don't drive — there's no visitor parking, and you won't be in a fit state to leave by car anyway."
+      },
+      {
+        "q": "Is it cheaper to go midweek?",
+        "a": "Substantially, on every line of the budget. Munich room rates peaked around €415 a night during the 2025 festival — about 153% above the city's annual average, against roughly €80–150 outside Wiesn season — and the peaks are the two weekends and 3 October, German Unity Day. Tent reservations for weekday lunchtimes are also far easier to get, and walk-in seating for a group of ten is genuinely realistic on a Monday morning in a way it never is on a Saturday. If your crew has any flexibility at all, a Tuesday-to-Thursday Wiesn is a different trip at a different price."
+      },
+      {
+        "q": "How do you split the cost across a group?",
+        "a": "Use a shared budget with separate categories from the start, because Oktoberfest money doesn't split one way. One person prepays the table vouchers in spring for everyone. Another books the apartment in summer. Then rounds get bought individually in September at €15.80 a go. If you only reconcile at the end, the person who fronted €400 of vouchers in April is chasing nine friends in October and someone who drank three Maß is quietly subsidising someone who drank nine. WePlanify separates the categories, logs who paid what when, and tells each person what they owe and to whom — no spreadsheet, no end-of-trip maths."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "tomorrowland": {
+      "title": "Tomorrowland 2026",
+      "desc": "Plan the Boom pilgrimage with the crew.",
+      "cta": "Read more →"
+    },
+    "hellfest": {
+      "title": "Hellfest 2026",
+      "desc": "Clisson, four days, one shared plan.",
+      "cta": "Read more →"
+    },
+    "tripWithFriends": {
+      "title": "Trip with Friends",
+      "desc": "Plan any group trip effortlessly.",
+      "cta": "Read more →"
+    },
+    "bestApps": {
+      "title": "Best Group Travel Apps",
+      "desc": "Our comparison of the top tools for group trips.",
+      "cta": "Read the article →"
+    }
+  },
+  "cta": {
+    "title": "Build Your Oktoberfest 2026 Trip",
+    "subtitle": "The day, the tent, the beds, the money — one shared plan, your whole crew on the same page.",
+    "button": "Start planning"
+  },
+  "jsonld": {
+    "articleHeadline": "Oktoberfest 2026 Trip Planner: How to Organise the Wiesn With a Group",
+    "eventName": "Oktoberfest 2026 (191st Munich Wiesn)",
+    "eventDescription": "The 191st Oktoberfest takes place on the Theresienwiese in Munich from 19 September to 4 October 2026. Sixteen days, 14 large beer tents and 21 small ones, free entry to the grounds and tents, and a Maß of beer priced between €14.80 and €15.90. The festival opens at noon on 19 September when Munich's Lord Mayor taps the first keg in the Schottenhamel tent with the cry of \"O'zapft is!\".",
+    "howToName": "How to plan an Oktoberfest 2026 trip with a group of friends",
+    "howToDescription": "Agree the day, lock a tent table in a block of ten, book Munich beds before prices spike, and split the vouchers and the rounds without anyone chasing anyone in October.",
+    "howToSteps": [
+      {
+        "name": "Poll the date before you look at any tent",
+        "text": "Oktoberfest runs sixteen days and every one of them is a different trip. Put three or four candidate dates to the group and let everyone vote before anyone opens a booking portal. Weekends and 3 October are the busiest and most expensive; a midweek visit is cheaper on beds and far easier for walk-in seating."
+      },
+      {
+        "name": "Get a firm headcount to ten",
+        "text": "Tents reserve whole tables of typically ten seats, sometimes eight — never six. Turn maybes into confirmed names in a shared itinerary before reservations open, and recruit extra people if you're short. Empty seats cost the same as full ones, because the consumption vouchers are per table."
+      },
+      {
+        "name": "Give one person the reservation and a deadline",
+        "text": "There is no central reservation system: each of the 14 large tents opens its own portal on its own date, from mid/late April through early June, and popular Saturdays sell out within hours. Name one person to book, put the tent's opening date in the shared plan, and make sure the poll has closed before it arrives."
+      },
+      {
+        "name": "Book Munich accommodation early and split it per night",
+        "text": "Accommodation is the biggest line of an Oktoberfest budget and the fastest-moving. Munich rates peaked around €415 a night during the 2025 festival, roughly 153% above the annual average. One apartment split across the group usually beats individual rooms, and staying 20 minutes out on a direct U-Bahn line is a better trade than paying for walking distance."
+      },
+      {
+        "name": "Track the vouchers and the rounds in a shared budget",
+        "text": "One person prepays the table vouchers months early on behalf of everyone, someone else books the beds, and then rounds get bought individually at around €15.80 a Maß. Log each of these as its own category the day it's paid so the reconciliation is already done when the trip ends."
+      }
+    ]
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "title": "Planeador de Viagem para a Oktoberfest 2026 — Gratuito, para Grupos",
+    "description": "Planeador de viagem gratuito para a Oktoberfest 2026 para grupos. Munique, Theresienwiese, de 19 de setembro a 4 de outubro. Reservem uma mesa numa tenda para o grupo todo, dividam a Maß e o hotel e ponham-se de acordo sobre o dia — sem agência, sem subscrição."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "current": "Planeador de Viagem para a Oktoberfest 2026"
+  },
+  "hero": {
+    "tag": "Planeador de viagem gratuito · Oktoberfest 2026",
+    "title": "Planeador de Viagem para a Oktoberfest 2026: Todo o Grupo na Mesma Mesa",
+    "intro": "A 191.ª Oktoberfest decorre de sábado, 19 de setembro, a domingo, 4 de outubro de 2026, na Theresienwiese, em Munique. A entrada é gratuita, a cerveja não é, e o que decide se a vossa viagem resulta é uma mesa que têm de reservar com meses de antecedência — num bloco de dez lugares, para um dia específico, numa tenda específica. Isso é uma decisão de grupo antes de ser uma decisão de viagem. Aqui fica como tomá-la sem perder três amigos pelo caminho num chat de grupo. Se ainda estão a escolher as ferramentas, vejam a nossa <apps>comparação de apps de viagens em grupo</apps>.",
+    "readTime": "9 min de leitura",
+    "ctaButton": "Planeiem a vossa Wiesn",
+    "ctaNote": "Gratuito. Sem cartão. Convidem o grupo com um só link."
+  },
+  "facts": {
+    "heading": "A Oktoberfest 2026 num relance",
+    "datesLabel": "Datas",
+    "datesValue": "19 set – 4 out",
+    "datesSub": "16 dias, 191.ª edição",
+    "priceLabel": "Uma Maß de cerveja",
+    "priceValue": "14,80–15,90 €",
+    "priceSub": "Intervalo oficial 2026",
+    "tentsLabel": "Tendas",
+    "tentsValue": "14 + 21",
+    "tentsSub": "Grandes e pequenas",
+    "entryLabel": "Entrada",
+    "entryValue": "0 €",
+    "entrySub": "Recinto e tendas são gratuitos"
+  },
+  "stakes": {
+    "p1": "A Oktoberfest parece a viagem de grupo mais fácil da Europa. Entrada gratuita, um único recinto, dezasseis dias à escolha, seis milhões de pessoas conseguem lá ir todos os anos. Depois tentam mesmo organizar oito amigos e a coisa desfaz-se de uma forma muito específica: a tenda que queriam abriu as reservas em abril e esgotou os sábados numa tarde, as mesas vêm em blocos de dez, por isso o vosso grupo de seis tem de arranjar mais quatro ou pagar lugares vazios, duas pessoas só podem no primeiro fim de semana e duas só no segundo, um quarto de hotel em Munique que custa 130 € em julho custa o triplo no fim de semana da Wiesn, e alguém já adiantou 400 € de vales de consumo no cartão pessoal e bem gostava de os ver de volta.",
+    "p2": "Nada disto é um problema de cerveja. É um problema de coordenação — e é exatamente para isso que a WePlanify foi feita: um plano partilhado onde o dia, a tenda, as camas e o dinheiro estão à vista de todos, de graça."
+  },
+  "toc": {
+    "title": "Nesta página",
+    "howItWorks": "Como a Wiesn funciona mesmo",
+    "reservations": "Reservas de tendas: a armadilha dos grupos",
+    "logistics": "Como lá chegar e onde ficar",
+    "planning": "Planear com o vosso grupo",
+    "budget": "Orçamento e divisão da conta",
+    "faq": "Perguntas frequentes"
+  },
+  "howItWorks": {
+    "title": "Como a Wiesn Funciona Mesmo",
+    "subtitle": "Cinco coisas que todos os grupos estreantes fazem mal. Acertem nelas e o resto é só cerveja.",
+    "items": [
+      {
+        "stop": "A entrada é gratuita — a moeda é a mesa",
+        "desc": "Ninguém vende bilhetes para a Oktoberfest. A Theresienwiese está aberta, as tendas estão abertas e podem entrar em qualquer uma sem pagar nada. O que não podem fazer é entrar às 18h de sábado e encontrar dez lugares juntos. A cerveja só é servida a quem está sentado, por isso uma mesa não é um extra de conforto — é a viagem inteira. Todo o resto do vosso plano depende de qual mesa, em que dia.",
+        "link": "/features/itinerary"
+      },
+      {
+        "stop": "As reservas vêm em blocos de dez",
+        "desc": "As tendas reservam mesas inteiras, não lugares — normalmente dez pessoas, às vezes oito. Não existe sistema central de reservas: cada uma das 14 tendas grandes gere o seu próprio portal e abre na sua própria data, mais ou menos em meados/finais de abril para as primeiras (Schottenhamel, Hofbräu), princípio a meados de maio para a maioria das tendas das cervejeiras, e finais de maio a princípio de junho para as retardatárias (Augustiner, Käfer, Schützen, Weinzelt). Um grupo de seis ou recruta mais quatro ou engole o custo de quatro cadeiras vazias.",
+        "link": "/features/polls"
+      },
+      {
+        "stop": "A reserva é gratuita, os vales não",
+        "desc": "Não pagam para segurar a mesa. O que pagam adiantado são os Verzehrgutscheine — vales de consumo para a cerveja e a comida que a vossa mesa vai pedir. Nos corredores principais o mínimo costuma ser duas Maß e meio frango assado por pessoa; camarotes e galerias acrescentam cerca de 18 € de vales por cima. Para dez pessoas, é uma quantia bem séria a sair da conta bancária de uma só pessoa, com meses de antecedência, em nome de todas as outras.",
+        "link": "/features/budget"
+      },
+      {
+        "stop": "Um quarto de cada tenda é walk-in, por lei",
+        "desc": "Munique obriga as tendas a manter lugares livres. Por regra, 25% dos lugares não podem ser reservados de todo e, aos fins de semana e feriados, metade da tenda fica sem reservas possíveis até às 15h, descendo para 25% depois disso. É o vosso plano B e é um plano a sério — mas implica chegar cedo, todos juntos, e combinar de antemão quem faz fila.",
+        "link": "/features/planning"
+      },
+      {
+        "stop": "Há um segundo festival, mais calmo, ao lado",
+        "desc": "A Oide Wiesn é uma zona histórica vedada, com tendas próprias, carrosséis à antiga, bandas de metais e um público mais tranquilo. A entrada custa 4 € — a única coisa em toda a Theresienwiese para a qual se compra bilhete. É a resposta para quem no grupo quer o festival sem ser esmagado na Hofbräu-Festzelt às 21h.",
+        "link": "/features/explore"
+      }
+    ]
+  },
+  "reservations": {
+    "title": "Reservas de Tendas: A Armadilha dos Grupos",
+    "subtitle": "Duas formas de sentar dez pessoas. As duas funcionam. Exigem coisas completamente diferentes do vosso grupo.",
+    "reservedLabel": "Opção A",
+    "reservedTitle": "Reservar uma mesa",
+    "reservedItems": [
+      "Reservam uma mesa inteira: dez lugares, às vezes oito. Nunca seis.",
+      "Reservar é gratuito — mas pagam os vales de consumo adiantado.",
+      "Cada tenda tem o seu portal e o seu dia de abertura. Não há sistema central.",
+      "Os sábados e o fim de semana de encerramento são os primeiros a ir. As horas de almoço durante a semana ainda se apanham.",
+      "Precisam do número final de pessoas com meses de antecedência — é essa a parte difícil.",
+      "Os vales não usados mantêm-se válidos durante todo o festival e podem ser trocados nos restaurantes do próprio caterer até pelo menos 31 de outubro ou reembolsados na totalidade."
+    ],
+    "walkInLabel": "Opção B",
+    "walkInTitle": "Entrar como toda a gente",
+    "walkInItems": [
+      "25% dos lugares nunca podem ser reservados. Aos fins de semana, 50% ficam livres até às 15h.",
+      "Zero compromisso, zero pagamento adiantado, zero problema de contagem.",
+      "Têm de chegar cedo — as tendas abrem às 10h nos dias de semana e às 9h aos fins de semana.",
+      "Os grupos grandes acabam separados. Dez pessoas raramente se sentam juntas depois do meio-dia.",
+      "As tendas fecham as portas por completo quando enchem, muitas vezes logo no início da tarde aos sábados.",
+      "Melhores hipóteses: de segunda a quinta, antes do meio-dia, numa tenda mais pequena."
+    ]
+  },
+  "midCta": {
+    "title": "Dez lugares, uma data, oito opiniões.",
+    "subtitle": "Votem o dia, fixem a tenda, vejam quem alinha mesmo — antes de as reservas abrirem.",
+    "button": "Começar grátis"
+  },
+  "logistics": {
+    "title": "Como Lá Chegar e Onde Ficar",
+    "subtitle": "Munique é fácil. Munique durante a Wiesn é outra cidade — tratem das partes chatas e as divertidas tratam de si mesmas.",
+    "transportLabel": "Transportes",
+    "transportTitle": "Como chegar à Theresienwiese",
+    "transportItems": [
+      "As linhas U4 e U5 param na estação Theresienwiese, mesmo à entrada do recinto — e é a estação mais congestionada de todo o festival.",
+      "Saiam antes em Schwanthalerhöhe, uma paragem mais à frente nas mesmas U4/U5: 10 minutos a pé e uma fração da confusão.",
+      "Goetheplatz ou Poccistraße (U3/U6) servem as entradas sul e este, também a uns 10 minutos a pé.",
+      "A app MVGO mostra a lotação em tempo real e desvia-vos do pior.",
+      "Não vão de carro. Não há estacionamento para visitantes na Theresienwiese e, de qualquer forma, não vão ser vocês a conduzir de volta.",
+      "A Munich Hauptbahnhof fica a duas paragens de U-Bahn, o que faz do comboio, sinceramente, a forma mais simples de chegar."
+    ],
+    "stayLabel": "Alojamento",
+    "stayTitle": "Onde dormir e quando reservar",
+    "stayItems": [
+      "É o vosso maior custo e o que se esgota mais depressa. Reservem-no antes de reservar seja o que for.",
+      "Em 2025, o preço médio dos quartos em Munique chegou aos 415 € por noite durante o festival — cerca de 153% acima da média anual da cidade.",
+      "Fora da época da Wiesn, a mesma cidade anda mais perto dos 80–150 € por noite. Essa diferença é toda a conversa do orçamento.",
+      "Um apartamento dividido por oito ganha a quatro quartos duplos quase sempre — e dá-vos um sítio para se juntarem antes de rumar ao recinto.",
+      "Não precisam de ficar a pé do recinto. O U-Bahn de Munique é rápido e anda até tarde; um sítio a 20 minutos numa linha direta é muito melhor negócio do que pagar um prémio pela proximidade.",
+      "O primeiro e o último fim de semana e o 3 de outubro (Dia da Unidade Alemã) são os picos. Uma viagem a meio da semana é uma viagem fundamentalmente mais barata."
+    ]
+  },
+  "planning": {
+    "title": "Planear Com o Vosso Grupo",
+    "p1": "Comecem pelo dia, não pela tenda. Todas as outras decisões — voos, camas, quem vem mesmo — saem daí, e é a decisão que os grupos deixam para o fim precisamente por ser a que gera discussões. Um quer o sábado de abertura por causa do barril. Outro só pode no segundo fim de semana. Outro preferia caladinho uma terça-feira, em que dá para se ouvirem uns aos outros. <polls>Lancem uma sondagem</polls> com três ou quatro datas candidatas antes de alguém abrir um portal de tenda e ficam com um número de pessoas em vez de um talvez.",
+    "p2": "Depois, sejam honestos com o número de pessoas, porque dez não é uma vibe — é um número fixo num formulário de reserva. As mesas vêm em blocos de dez, por isso a diferença entre «somos aí uns oito, se calhar» e oito nomes confirmados é dinheiro. Ponham a viagem num <itinerary>itinerário partilhado</itinerary> com a data e deixem que cada um confirme ou desista à vista de todos. Seis confirmados mais quatro amigos de amigos recrutados dão uma mesa. Oito talvez dão quatro lugares vazios que pagaram.",
+    "p3": "Atribuam a reserva a uma pessoa e deem-lhe um prazo. Os portais das tendas abrem cada um a seu tempo a partir de abril e os bons sábados desaparecem no mesmo dia — isso não é altura para consenso de grupo, é altura para uma pessoa com o cartão e um mandato. O trabalho de todos os outros é ter respondido à sondagem antes disso. O nosso <guide>guia de planeamento de viagens em grupo</guide> aplica o mesmo padrão ao resto da viagem: decidir juntos, executar sozinho.",
+    "p4": "Planeiem o dia em si de forma leve, mas planeiem o reencontro. As baterias dos telemóveis morrem, a tenda é ensurdecedora e alguém vai desaparecer para a Oide Wiesn ou para um carrossel e perder o grupo durante duas horas. Combinem um ponto de encontro à porta da tenda e uma hora, antes de entrarem. É a coisa menos glamorosa deste artigo e é a que vão mesmo usar."
+  },
+  "budget": {
+    "title": "Orçamento e Divisão da Conta",
+    "p1": "A Oktoberfest tem um formato de dinheiro invulgar: uma pessoa gasta muito, com meses de antecedência, por todos. Os vales são pagos adiantado num cartão na primavera. O apartamento é reservado noutro cartão em junho. Depois, em setembro, dez pessoas pagam rodadas umas às outras a 15,80 € a Maß e ninguém está a contabilizar nada. Criem um <budget>orçamento partilhado</budget> antes de comprar os vales, não depois da viagem, e registem a reserva como despesa no dia em que é paga — quem adiantou o dinheiro não devia ser quem anda atrás de nove amigos em outubro.",
+    "p2": "Saibam os números reais antes de discutir por causa deles. Uma Maß custa entre 14,80 € e 15,90 € em 2026, uma subida média de 2,38% face a 2025; a maioria das tendas grandes fica nos 15,75–15,90 €, com a Augustiner-Festhalle como exceção notória a 14,90 €. E os refrigerantes também não são a saída barata — cerca de 11,13 € o litro de água engarrafada e 12,84 € por um Spezi. Um frango assado, umas quantas Maß e a parte do mínimo da mesa põem um dia realista de tenda algures nos 80–120 € por cabeça, antes sequer de terem dormido em algum lado.",
+    "p3": "Dividam por categoria, não por dia. As camas dividem-se por pessoa e por noite. A mesa divide-se por dez, quer os dez bebam o mesmo ou não. Comida e rodadas são individuais. Os carrosséis e o bilhete de 4 € da Oide Wiesn são trocos. Meter tudo num único número é como os grupos acabam na discussão clássica da Oktoberfest — quem bebeu três Maß a subsidiar quem bebeu nove. As categorias tornam isso visível e, normalmente, visível é suficiente."
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "items": [
+      {
+        "q": "É preciso bilhete para a Oktoberfest 2026?",
+        "a": "Não. A entrada na Theresienwiese e em todas as tendas de cerveja é completamente gratuita — não existe bilhete oficial da Oktoberfest, e quem vos vender um para entrar está a vender-vos nada. Pagam a cerveja, a comida, os carrosséis e os jogos. A única parte de todo o festival com bilhete é a Oide Wiesn, a zona histórica, que custa 4 €. O que as pessoas querem dizer quando falam em «bilhetes» é uma reserva de tenda, que é outra coisa completamente diferente: a reserva em si é gratuita, mas pagam adiantado vales de consumo pelo que a vossa mesa vai comer e beber."
+      },
+      {
+        "q": "Quando abrem as reservas das tendas da Oktoberfest 2026?",
+        "a": "Não há um dia de abertura único, e é isso que apanha os grupos desprevenidos. Cada uma das 14 tendas grandes gere o seu próprio portal de reservas com o seu calendário. Em traços largos: as primeiras tendas abrem por volta de meados a finais de abril — a Schottenhamel e a Hofbräu costumam liderar —, a maioria das tendas das cervejeiras segue no princípio a meados de maio, e a última vaga (Augustiner-Festhalle, Käfer Wiesn-Schänke, Schützen-Festzelt, Weinzelt) chega entre finais de maio e princípio de junho. Os sábados populares podem esgotar em horas. Escolham a tenda, encontrem o portal e ponham a data de abertura no plano partilhado, com uma pessoa nomeada responsável pela reserva."
+      },
+      {
+        "q": "Um grupo de seis pode reservar uma mesa?",
+        "a": "Nem por isso — e esta é a maior armadilha de planeamento da Oktoberfest. As tendas reservam mesas inteiras, normalmente de dez lugares e às vezes de oito. Não dá para reservar seis. As vossas opções são recrutar mais gente até encher o bloco, aceitar pagar os lugares vazios (os vales são por mesa, não por pessoa, por isso o custo é o mesmo de qualquer forma) ou dispensar a reserva e ir numa manhã de dia útil, quando entrar sem reserva é realista. A maioria dos grupos subestima a antecedência com que precisa de um número firme — o número é preciso meses antes da viagem."
+      },
+      {
+        "q": "Quanto custa uma cerveja na Oktoberfest 2026?",
+        "a": "Uma Maß (um litro) custa entre 14,80 € e 15,90 € na 191.ª Wiesn, uma subida média de cerca de 2,38% face a 2025. A maioria das tendas grandes concentra-se entre os 15,75 € e os 15,90 € — Hacker, Hofbräu, Marstall, Paulaner e Schottenhamel andam todas à volta dos 15,80 € —, enquanto a Augustiner-Festhalle fica notoriamente mais barata, a 14,90 €. As bebidas sem álcool não são pechincha: contem com cerca de 11,13 € por litro de água engarrafada, 12,35 € pela limonada e 12,84 € por um Spezi. Façam um orçamento realista e o dia sai muito mais barato em discussões."
+      },
+      {
+        "q": "O que acontece no dia de abertura, 19 de setembro de 2026?",
+        "a": "As tendas abrem às 9h e não se serve nada até ao meio-dia, quando o Presidente da Câmara de Munique fura o primeiro barril na tenda Schottenhamel e grita «O'zapft is!» — «Está aberto!». A tradição manda fazê-lo com o menor número possível de marteladas, e a contagem é mesmo notícia na Baviera. É o momento com mais ambiente dos dezasseis dias e também o mais cheio: se o vosso grupo quer estar dentro da Schottenhamel para isso sem reserva, ficam em fila desde manhãzinha, todos juntos, de Tracht, e isso decide-se em grupo em vez de se descobrir às 11h."
+      },
+      {
+        "q": "Como se chega à Theresienwiese?",
+        "a": "De U-Bahn, e de preferência não pelo caminho óbvio. As linhas U4 e U5 param na estação Theresienwiese, mesmo à entrada do recinto, e é exatamente por isso que é a estação mais congestionada do festival. Sigam mais uma paragem, até Schwanthalerhöhe, nas mesmas linhas, e façam dez minutos a pé. Goetheplatz e Poccistraße, nas U3/U6, servem as entradas sul e este, também a uns dez minutos a pé. A app MVGO mostra a lotação em tempo real. Não vão de carro — não há estacionamento para visitantes e, além disso, não vão estar em condições de sair de carro."
+      },
+      {
+        "q": "Fica mais barato ir a meio da semana?",
+        "a": "Bastante, em todas as linhas do orçamento. Os preços dos quartos em Munique chegaram aos 415 € por noite durante o festival de 2025 — cerca de 153% acima da média anual da cidade, contra uns 80–150 € fora da época da Wiesn — e os picos são os dois fins de semana e o 3 de outubro, Dia da Unidade Alemã. As reservas de tenda para as horas de almoço nos dias úteis também são muito mais fáceis de conseguir, e entrar sem reserva com um grupo de dez é mesmo realista numa segunda de manhã, coisa que nunca é a um sábado. Se o vosso grupo tiver alguma flexibilidade, uma Wiesn de terça a quinta é outra viagem a outro preço."
+      },
+      {
+        "q": "Como se dividem os custos por um grupo?",
+        "a": "Usem um orçamento partilhado com categorias separadas desde o início, porque o dinheiro da Oktoberfest não se divide todo da mesma maneira. Uma pessoa paga adiantado os vales da mesa na primavera por todos. Outra reserva o apartamento no verão. Depois, em setembro, as rodadas são pagas individualmente a 15,80 € cada. Se só fizerem contas no fim, quem adiantou 400 € de vales em abril anda atrás de nove amigos em outubro e quem bebeu três Maß está caladinho a subsidiar quem bebeu nove. A WePlanify separa as categorias, regista quem pagou o quê e quando, e diz a cada pessoa o que deve e a quem — sem folha de cálculo, sem matemática no fim da viagem."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Descubra Mais",
+    "tomorrowland": {
+      "title": "Tomorrowland 2026",
+      "desc": "Planeiem a peregrinação a Boom com o grupo.",
+      "cta": "Ler mais →"
+    },
+    "hellfest": {
+      "title": "Hellfest 2026",
+      "desc": "Clisson, quatro dias, um plano partilhado.",
+      "cta": "Ler mais →"
+    },
+    "tripWithFriends": {
+      "title": "Viagem com Amigos",
+      "desc": "Planeie qualquer viagem em grupo sem esforço.",
+      "cta": "Ler mais →"
+    },
+    "bestApps": {
+      "title": "Melhores Apps de Viagens em Grupo",
+      "desc": "A nossa comparação das melhores ferramentas para viagens em grupo.",
+      "cta": "Ler o artigo →"
+    }
+  },
+  "cta": {
+    "title": "Construam a Vossa Viagem à Oktoberfest 2026",
+    "subtitle": "O dia, a tenda, as camas, o dinheiro — um plano partilhado, todo o vosso grupo na mesma página.",
+    "button": "Começar a planear"
+  },
+  "jsonld": {
+    "articleHeadline": "Planeador de Viagem para a Oktoberfest 2026: Como Organizar a Wiesn Com um Grupo",
+    "eventName": "Oktoberfest 2026 (191.ª Wiesn de Munique)",
+    "eventDescription": "A 191.ª Oktoberfest decorre na Theresienwiese, em Munique, de 19 de setembro a 4 de outubro de 2026. Dezasseis dias, 14 tendas de cerveja grandes e 21 pequenas, entrada gratuita no recinto e nas tendas, e uma Maß de cerveja a um preço entre 14,80 € e 15,90 €. O festival abre ao meio-dia de 19 de setembro, quando o Presidente da Câmara de Munique fura o primeiro barril na tenda Schottenhamel ao grito de «O'zapft is!».",
+    "howToName": "Como planear uma viagem à Oktoberfest 2026 com um grupo de amigos",
+    "howToDescription": "Combinem o dia, fixem uma mesa de tenda num bloco de dez, reservem as camas em Munique antes de os preços dispararem e dividam os vales e as rodadas sem ninguém andar atrás de ninguém em outubro.",
+    "howToSteps": [
+      {
+        "name": "Votem a data antes de olhar para qualquer tenda",
+        "text": "A Oktoberfest dura dezasseis dias e cada um deles é uma viagem diferente. Apresentem três ou quatro datas candidatas ao grupo e deixem toda a gente votar antes de alguém abrir um portal de reservas. Os fins de semana e o 3 de outubro são os mais cheios e mais caros; uma visita a meio da semana é mais barata no alojamento e muito mais fácil para entrar sem reserva."
+      },
+      {
+        "name": "Cheguem a um número firme de dez",
+        "text": "As tendas reservam mesas inteiras, normalmente de dez lugares, às vezes oito — nunca seis. Transformem os talvez em nomes confirmados num itinerário partilhado antes de as reservas abrirem e recrutem mais gente se faltar. Os lugares vazios custam o mesmo que os cheios, porque os vales de consumo são por mesa."
+      },
+      {
+        "name": "Deem a reserva a uma pessoa e um prazo",
+        "text": "Não existe sistema central de reservas: cada uma das 14 tendas grandes abre o seu portal na sua data, de meados/finais de abril até princípio de junho, e os sábados populares esgotam em horas. Nomeiem uma pessoa para reservar, ponham a data de abertura da tenda no plano partilhado e garantam que a sondagem já fechou quando ela chegar."
+      },
+      {
+        "name": "Reservem o alojamento em Munique cedo e dividam-no por noite",
+        "text": "O alojamento é a maior rubrica de um orçamento de Oktoberfest e a que se move mais depressa. Os preços em Munique chegaram aos 415 € por noite durante o festival de 2025, cerca de 153% acima da média anual. Um apartamento dividido pelo grupo costuma bater os quartos individuais, e ficar a 20 minutos numa linha direta de U-Bahn é melhor negócio do que pagar para estar a pé do recinto."
+      },
+      {
+        "name": "Registem os vales e as rodadas num orçamento partilhado",
+        "text": "Uma pessoa paga adiantado os vales da mesa com meses de antecedência em nome de todos, outra reserva as camas e depois as rodadas são pagas individualmente a cerca de 15,80 € a Maß. Registem cada uma destas coisas na sua própria categoria no dia em que é paga, para que as contas já estejam feitas quando a viagem acabar."
+      }
+    ]
+  }
+}

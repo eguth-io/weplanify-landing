@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "title": "Oktoberfest-2026-Reiseplaner – kostenlos, für Gruppen",
+    "description": "Kostenloser Oktoberfest-2026-Reiseplaner für Gruppen. München, Theresienwiese, 19. September bis 4. Oktober. Sichert euch einen Tisch im Festzelt für die ganze Crew, teilt die Maß und das Hotel auf und einigt euch auf einen Tag – ohne Agentur, ohne Abo."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "Oktoberfest-2026-Reiseplaner"
+  },
+  "hero": {
+    "tag": "Kostenloser Reiseplaner · Oktoberfest 2026",
+    "title": "Oktoberfest-2026-Reiseplaner: Die ganze Crew an einen Tisch",
+    "intro": "Das 191. Oktoberfest läuft von Samstag, 19. September, bis Sonntag, 4. Oktober 2026 auf der Münchner Theresienwiese. Der Eintritt ist frei, das Bier nicht, und über euren Trip entscheidet am Ende ein Tisch, den ihr Monate vorher reservieren müsst – als Block mit zehn Plätzen, für einen bestimmten Tag, in einem bestimmten Zelt. Das ist eine Gruppenentscheidung, bevor es eine Reiseentscheidung ist. So trefft ihr sie, ohne drei Freunde an den Gruppenchat zu verlieren. Falls ihr noch nach dem passenden Tool sucht: hier ist unser <apps>Vergleich der Apps für Gruppenreisen</apps>.",
+    "readTime": "9 Min. Lesezeit",
+    "ctaButton": "Plant eure Wiesn",
+    "ctaNote": "Kostenlos. Keine Karte. Die ganze Crew mit einem Link."
+  },
+  "facts": {
+    "heading": "Oktoberfest 2026 auf einen Blick",
+    "datesLabel": "Termin",
+    "datesValue": "19. Sep – 4. Okt",
+    "datesSub": "16 Tage, 191. Ausgabe",
+    "priceLabel": "Eine Maß Bier",
+    "priceValue": "14,80–15,90 €",
+    "priceSub": "Offizielle Spanne 2026",
+    "tentsLabel": "Zelte",
+    "tentsValue": "14 + 21",
+    "tentsSub": "Große und kleine",
+    "entryLabel": "Eintritt",
+    "entryValue": "0 €",
+    "entrySub": "Festgelände und Zelte gratis"
+  },
+  "stakes": {
+    "p1": "Das Oktoberfest sieht nach der einfachsten Gruppenreise Europas aus. Freier Eintritt, ein Ort, sechzehn Tage zur Auswahl, sechs Millionen Menschen kriegen es jedes Jahr hin. Und dann versuchst du, acht Freunde zu organisieren, und es zerbröselt auf sehr spezifische Weise: Das Zelt, das ihr wolltet, hat die Reservierungen im April geöffnet und seine Samstage an einem Nachmittag verkauft. Tische gibt es nur im Zehnerblock, also muss eure Sechsergruppe vier Leute auftreiben oder leere Plätze bezahlen. Zwei können nur am ersten Wochenende, zwei nur am zweiten. Ein Münchner Hotelzimmer, das im Juli 130 € kostet, kostet am Wiesn-Wochenende das Dreifache. Und einer hat längst 400 € Verzehrgutscheine auf seiner eigenen Karte vorgestreckt und hätte das Geld gern zurück.",
+    "p2": "Nichts davon ist ein Bierproblem. Es ist ein Koordinationsproblem – und genau dafür wurde WePlanify gebaut: ein gemeinsamer Plan, in dem Tag, Zelt, Betten und Geld für alle sichtbar sind. Kostenlos."
+  },
+  "toc": {
+    "title": "Auf dieser Seite",
+    "howItWorks": "Wie die Wiesn wirklich funktioniert",
+    "reservations": "Zeltreservierung: die Gruppenfalle",
+    "logistics": "Hinkommen und unterkommen",
+    "planning": "Mit der Crew planen",
+    "budget": "Budget und Abrechnung",
+    "faq": "Häufig gestellte Fragen"
+  },
+  "howItWorks": {
+    "title": "Wie die Wiesn wirklich funktioniert",
+    "subtitle": "Fünf Dinge, die jede Gruppe beim ersten Mal falsch macht. Macht sie richtig, und der Rest ist einfach nur Bier.",
+    "items": [
+      {
+        "stop": "Der Eintritt ist frei – die Währung ist der Tisch",
+        "desc": "Oktoberfest-Tickets verkauft niemand. Die Theresienwiese ist offen, die Zelte sind offen, und du kannst in jedes davon umsonst reinspazieren. Was du nicht kannst: samstags um 18 Uhr reinspazieren und zehn Plätze nebeneinander finden. Bier gibt es nur für Leute, die sitzen – ein Tisch ist also kein Komfort-Upgrade, sondern der ganze Trip. Alles andere in eurem Plan hängt daran, welcher Tisch an welchem Tag.",
+        "link": "/features/itinerary"
+      },
+      {
+        "stop": "Reserviert wird im Zehnerblock",
+        "desc": "Die Zelte reservieren ganze Tische, keine einzelnen Plätze – meist für zehn Personen, manchmal für acht. Ein zentrales Buchungssystem gibt es nicht: Jedes der 14 großen Zelte betreibt sein eigenes Portal und öffnet an seinem eigenen Termin, bei den frühesten grob Mitte/Ende April (Schottenhamel, Hofbräu), Anfang bis Mitte Mai bei den meisten Brauereizelten und Ende Mai bis Anfang Juni bei den Nachzüglern (Augustiner, Käfer, Schützen, Weinzelt). Eine Sechsergruppe wirbt entweder vier weitere Leute an oder schluckt die Kosten für vier leere Stühle.",
+        "link": "/features/polls"
+      },
+      {
+        "stop": "Die Reservierung ist gratis, die Gutscheine sind es nicht",
+        "desc": "Für den Tisch selbst zahlst du nichts. Du zahlst Verzehrgutscheine im Voraus – für das Bier und das Essen, das euer Tisch bestellen wird. Im Mittelschiff liegt das Minimum meist bei zwei Maß und einem halben Hendl pro Person; Logen und Galerien schlagen rund 18 € an Gutscheinen drauf. Bei zehn Leuten verlässt da eine ernsthafte Summe Monate vorher das Konto einer einzigen Person – stellvertretend für alle anderen.",
+        "link": "/features/budget"
+      },
+      {
+        "stop": "Ein Viertel jedes Zelts bleibt per Vorschrift frei",
+        "desc": "Die Stadt München zwingt die Zelte, Plätze freizuhalten. Grundsätzlich sind 25 % der Plätze gar nicht reservierbar, und an Wochenenden und Feiertagen bleibt bis 15 Uhr das halbe Zelt reservierungsfrei, danach 25 %. Das ist euer Plan B, und zwar ein echter – aber er bedeutet: früh da sein, gemeinsam, und vorher klären, wer sich anstellt.",
+        "link": "/features/planning"
+      },
+      {
+        "stop": "Nebenan läuft ein zweites, ruhigeres Fest",
+        "desc": "Die Oide Wiesn ist ein abgezäunter historischer Teil mit eigenen Zelten, nostalgischen Fahrgeschäften, Blasmusik und entspannterem Publikum. Der Eintritt kostet 4 € – das Einzige auf der ganzen Theresienwiese, wofür du ein Ticket kaufst. Sie ist die Antwort für alle in der Gruppe, die das Fest wollen, aber nicht um 21 Uhr im Hofbräu-Festzelt zerquetscht werden.",
+        "link": "/features/explore"
+      }
+    ]
+  },
+  "reservations": {
+    "title": "Zeltreservierung: die Gruppenfalle",
+    "subtitle": "Zwei Wege, zehn Leute auf eine Bank zu bekommen. Beide funktionieren. Sie verlangen von eurer Crew völlig unterschiedliche Dinge.",
+    "reservedLabel": "Option A",
+    "reservedTitle": "Tisch reservieren",
+    "reservedItems": [
+      "Ihr bucht einen ganzen Tisch: zehn Plätze, manchmal acht. Nicht sechs.",
+      "Die Reservierung ist gratis – aber die Verzehrgutscheine zahlt ihr im Voraus.",
+      "Jedes Zelt hat sein eigenes Portal und seinen eigenen Starttermin. Kein zentrales System.",
+      "Samstage und das Schlusswochenende gehen am schnellsten weg. Unter der Woche mittags ist machbar.",
+      "Ihr braucht die finale Personenzahl Monate vor dem Trip – das ist der harte Teil.",
+      "Nicht eingelöste Gutscheine bleiben das ganze Fest über gültig, sind in den eigenen Restaurants des Wirts mindestens bis 31. Oktober einlösbar oder werden voll erstattet."
+    ],
+    "walkInLabel": "Option B",
+    "walkInTitle": "Einfach reingehen wie alle anderen",
+    "walkInItems": [
+      "25 % der Plätze sind nie reservierbar. Am Wochenende bleiben 50 % bis 15 Uhr frei.",
+      "Null Verpflichtung, null Vorkasse, null Problem mit der Personenzahl.",
+      "Ihr müsst früh da sein – die Zelte öffnen werktags um 10 Uhr, am Wochenende um 9 Uhr.",
+      "Große Gruppen werden auseinandergerissen. Zehn Leute landen nach Mittag selten zusammen.",
+      "Zelte machen bei Überfüllung komplett dicht, samstags oft schon am frühen Nachmittag.",
+      "Beste Chancen: Montag bis Donnerstag, vor Mittag, in einem kleineren Zelt."
+    ]
+  },
+  "midCta": {
+    "title": "Zehn Plätze, ein Termin, acht Meinungen.",
+    "subtitle": "Stimmt über den Tag ab, legt das Zelt fest, seht, wer wirklich dabei ist – bevor die Reservierungen öffnen.",
+    "button": "Kostenlos starten"
+  },
+  "logistics": {
+    "title": "Hinkommen und unterkommen",
+    "subtitle": "München ist einfach. München während der Wiesn ist eine andere Stadt – plant die langweiligen Teile, dann laufen die schönen von allein.",
+    "transportLabel": "Anfahrt",
+    "transportTitle": "So kommt ihr zur Theresienwiese",
+    "transportItems": [
+      "U4 und U5 halten an der Station Theresienwiese, direkt am Festgelände – und genau das ist die mit Abstand vollste Station des ganzen Fests.",
+      "Steigt stattdessen an der Schwanthalerhöhe aus, eine Station weiter auf derselben U4/U5: 10 Minuten Fußweg, ein Bruchteil des Gedränges.",
+      "Goetheplatz oder Poccistraße (U3/U6) bedienen den Süd- und den Osteingang, ebenfalls rund 10 Minuten zu Fuß.",
+      "Die MVGO-App zeigt die Auslastung in Echtzeit und lotst euch um die schlimmsten Stellen herum.",
+      "Fahrt nicht mit dem Auto. An der Theresienwiese gibt es keine Besucherparkplätze – und heimfahren werdet ihr danach ohnehin nicht.",
+      "Der Münchner Hauptbahnhof ist zwei U-Bahn-Stationen entfernt, was die Anreise mit dem Zug tatsächlich zur einfachsten Option macht."
+    ],
+    "stayLabel": "Unterkunft",
+    "stayTitle": "Wo ihr schlaft – und wann ihr bucht",
+    "stayItems": [
+      "Das ist euer größter Kostenpunkt und der, der sich am schnellsten bewegt. Bucht ihn, bevor ihr irgendetwas anderes bucht.",
+      "2025 lagen die durchschnittlichen Münchner Zimmerpreise während des Fests bei bis zu rund 415 € pro Nacht – etwa 153 % über dem Jahresdurchschnitt der Stadt.",
+      "Außerhalb der Wiesn-Saison liegt dieselbe Stadt eher bei 80–150 € pro Nacht. Dieser Unterschied ist die ganze Budgetdiskussion.",
+      "Eine Wohnung, durch acht geteilt, schlägt vier Doppelzimmer fast immer – und ihr habt einen Ort, an dem ihr euch vorher sammeln könnt.",
+      "Ihr müsst nicht zu Fuß hinkommen. Münchens U-Bahn ist schnell und fährt lange; eine Bleibe 20 Minuten draußen an einer direkten Linie ist der viel bessere Deal als ein Aufschlag für Nähe.",
+      "Das erste und das letzte Wochenende sowie der 3. Oktober (Tag der Deutschen Einheit) sind die Spitzen. Ein Trip unter der Woche ist grundsätzlich ein günstigerer Trip."
+    ]
+  },
+  "planning": {
+    "title": "Mit der Crew planen",
+    "p1": "Fangt beim Tag an, nicht beim Zelt. Jede andere Entscheidung – Flüge, Betten, wer überhaupt kann – ergibt sich daraus, und genau die schieben Gruppen bis zuletzt auf, weil sie Streit produziert. Einer will den Eröffnungssamstag wegen des Anzapfens. Einer kann nur am zweiten Wochenende. Einer hätte insgeheim lieber einen Dienstag, an dem man sich noch hört. <polls>Startet eine Abstimmung</polls> über drei, vier mögliche Termine, bevor irgendwer ein Zeltportal aufmacht – dann habt ihr eine Personenzahl statt eines Vielleichts.",
+    "p2": "Dann macht die Personenzahl ehrlich, denn zehn ist kein Gefühl – es ist eine harte Zahl auf einem Buchungsformular. Tische kommen im Zehnerblock, also ist der Unterschied zwischen \"so acht von uns, wahrscheinlich\" und acht bestätigten Namen bares Geld. Packt den Trip mit Datum in eine <itinerary>gemeinsame Reiseroute</itinerary> und lasst die Leute sichtbar zusagen oder abspringen. Sechs Zusagen plus vier angeworbene Freunde von Freunden sind ein Tisch. Acht Vielleichts sind vier leere Plätze, die ihr bezahlt habt.",
+    "p3": "Gebt die Reservierung einer einzigen Person – mit Deadline. Die Zeltportale öffnen ab April nach ihrem eigenen Fahrplan, und die guten Samstage sind noch am selben Tag weg. Das ist kein Slot für Gruppenkonsens, das ist ein Slot für eine Person mit Karte und Mandat. Der Job aller anderen ist, vorher bei der Abstimmung geantwortet zu haben. Unser <guide>Guide zur Planung einer Gruppenreise</guide> beschreibt dasselbe Muster für den Rest der Reise: gemeinsam entscheiden, allein ausführen.",
+    "p4": "Plant den Tag selbst locker, aber plant das Wiederfinden. Handy-Akkus sterben, im Zelt versteht man kein Wort, und irgendwer verschwindet zur Oiden Wiesn oder auf ein Fahrgeschäft und ist zwei Stunden weg. Einigt euch vor dem Reingehen auf einen Treffpunkt draußen vor dem Zelt und eine Uhrzeit. Das ist das Unglamouröseste in diesem Artikel – und das Einzige, was ihr garantiert braucht."
+  },
+  "budget": {
+    "title": "Budget und Abrechnung",
+    "p1": "Beim Oktoberfest hat das Geld eine ungewöhnliche Form: Eine Person gibt Monate vorher viel aus – für alle. Die Gutscheine werden im Frühjahr auf einer Karte vorausbezahlt. Die Wohnung im Juni auf einer anderen. Und im September kaufen sich zehn Leute gegenseitig Runden zu 15,80 € die Maß, und niemand führt Buch. Legt ein <budget>gemeinsames Budget</budget> an, bevor die Gutscheine gekauft werden, nicht nach der Reise, und tragt die Reservierung als Ausgabe ein an dem Tag, an dem sie bezahlt wird – wer vorstreckt, sollte nicht auch noch derjenige sein, der im Oktober neun Freunden hinterherrennt.",
+    "p2": "Kennt die echten Zahlen, bevor ihr über sie streitet. Eine Maß kostet 2026 zwischen 14,80 € und 15,90 €, im Schnitt 2,38 % mehr als 2025; die meisten großen Zelte liegen bei 15,75–15,90 €, wobei die Augustiner-Festhalle mit 14,90 € der bemerkenswerte Ausreißer nach unten ist. Alkoholfrei ist auch kein Schlupfloch – rund 11,13 € pro Liter für Tafelwasser und 12,84 € für ein Spezi. Ein Hendl, ein paar Maß und der Anteil am Tischminimum bringen einen realistischen Zelttag auf etwa 80–120 € pro Kopf, bevor ihr überhaupt irgendwo geschlafen habt.",
+    "p3": "Teilt nach Kategorie auf, nicht nach Tag. Betten werden pro Person und Nacht geteilt. Der Tisch geht durch zehn, egal ob alle zehn gleich viel trinken. Essen und Runden sind individuell. Fahrgeschäfte und das 4-€-Ticket für die Oide Wiesn sind Taschengeld. Alles in eine Zahl zu werfen ist der Weg zum Klassiker unter den Oktoberfest-Streits: Wer drei Maß getrunken hat, subventioniert den, der neun hatte. Kategorien machen das sichtbar – und sichtbar reicht meistens schon."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "items": [
+      {
+        "q": "Braucht man ein Ticket für das Oktoberfest 2026?",
+        "a": "Nein. Der Eintritt auf die Theresienwiese und in alle Bierzelte ist komplett kostenlos – ein offizielles Oktoberfest-Ticket gibt es schlicht nicht, und wer dir eines für den Eintritt verkauft, verkauft dir nichts. Du zahlst für Bier, Essen, Fahrgeschäfte und Buden. Der einzige ticketpflichtige Teil des ganzen Fests ist die Oide Wiesn, der historische Bereich, und der kostet 4 €. Was Leute meinen, wenn sie von \"Tickets\" reden, ist eine Zeltreservierung – und das ist etwas völlig anderes: Die Reservierung selbst ist gratis, aber du zahlst Verzehrgutscheine für das, was euer Tisch essen und trinken wird, im Voraus."
+      },
+      {
+        "q": "Wann öffnen die Zeltreservierungen fürs Oktoberfest 2026?",
+        "a": "Es gibt keinen einheitlichen Starttermin – genau das erwischt Gruppen kalt. Jedes der 14 großen Zelte betreibt sein eigenes Buchungsportal nach eigenem Fahrplan. Grob: Die frühesten Zelte öffnen um Mitte bis Ende April – Schottenhamel und Hofbräu machen typischerweise den Anfang –, die meisten Brauereizelte folgen Anfang bis Mitte Mai, und die letzte Welle (Augustiner-Festhalle, Käfer Wiesn-Schänke, Schützen-Festzelt, Weinzelt) landet Ende Mai bis Anfang Juni. Beliebte Samstage können innerhalb von Stunden weg sein. Sucht euch euer Zelt, findet sein Portal und tragt den Öffnungstermin in euren gemeinsamen Plan ein – mit einer namentlich benannten Person, die bucht."
+      },
+      {
+        "q": "Kann eine Sechsergruppe einen Tisch reservieren?",
+        "a": "Eigentlich nicht – und das ist die größte Planungsfalle des Oktoberfests. Die Zelte reservieren ganze Tische, typischerweise zehn Plätze, manchmal acht. Sechs kannst du nicht buchen. Eure Optionen: mehr Leute anwerben, bis der Block voll ist; die leeren Plätze bezahlen (die Gutscheine gehen pro Tisch, nicht pro Person, die Kosten sind also so oder so gleich); oder die Reservierung sein lassen und an einem Werktagvormittag hingehen, wenn Plätze ohne Reservierung realistisch sind. Die meisten Gruppen unterschätzen, wie früh sie eine feste Personenzahl brauchen – die Zahl ist Monate vor der Reise fällig."
+      },
+      {
+        "q": "Was kostet ein Bier auf dem Oktoberfest 2026?",
+        "a": "Eine Maß (ein Liter) kostet auf der 191. Wiesn zwischen 14,80 € und 15,90 €, im Schnitt rund 2,38 % mehr als 2025. Die meisten großen Zelte liegen dicht beieinander zwischen 15,75 € und 15,90 € – Hacker, Hofbräu, Marstall, Paulaner und Schottenhamel alle um die 15,80 € –, während die Augustiner-Festhalle mit 14,90 € auffällig günstiger bleibt. Alkoholfreies ist kein Schnäppchen: Rechne mit etwa 11,13 € pro Liter Tafelwasser, 12,35 € für Limonade und 12,84 € für ein Spezi. Kalkuliert realistisch, dann kostet der Tag deutlich weniger Streit."
+      },
+      {
+        "q": "Was passiert am Eröffnungstag, dem 19. September 2026?",
+        "a": "Die Zelte öffnen um 9 Uhr, und ausgeschenkt wird erst um 12 Uhr, wenn Münchens Oberbürgermeister im Schottenhamel-Zelt das erste Fass anzapft und \"O'zapft is!\" ruft. Traditionell soll das mit möglichst wenigen Schlägen gelingen, und die Anzahl ist in Bayern tatsächlich eine Nachricht wert. Es ist der stimmungsvollste Moment der ganzen sechzehn Tage – und zugleich der vollste: Wenn eure Gruppe ohne Reservierung dabei im Schottenhamel sein will, steht ihr ab dem frühen Morgen gemeinsam in Tracht in der Schlange. Das solltet ihr als Gruppe entscheiden und nicht um 11 Uhr feststellen."
+      },
+      {
+        "q": "Wie kommt man zur Theresienwiese?",
+        "a": "Mit der U-Bahn – und am besten nicht mit der naheliegenden. U4 und U5 halten an der Station Theresienwiese, direkt am Gelände, und genau deshalb ist sie die vollste Station des Fests. Fahrt auf denselben Linien eine Station weiter bis Schwanthalerhöhe und geht die zehn Minuten zu Fuß. Goetheplatz und Poccistraße an der U3/U6 bedienen den Süd- und den Osteingang, ebenfalls rund zehn Minuten zu Fuß. Die MVGO-App zeigt die Auslastung in Echtzeit. Fahrt nicht mit dem Auto – es gibt keine Besucherparkplätze, und in der Verfassung, mit dem Auto wieder wegzufahren, bist du hinterher sowieso nicht."
+      },
+      {
+        "q": "Ist es unter der Woche günstiger?",
+        "a": "Deutlich, und zwar in jeder Zeile des Budgets. Die Münchner Zimmerpreise lagen während des Fests 2025 bei bis zu rund 415 € pro Nacht – etwa 153 % über dem Jahresdurchschnitt der Stadt, gegenüber rund 80–150 € außerhalb der Wiesn-Saison – und die Spitzen sind die beiden Wochenenden und der 3. Oktober, der Tag der Deutschen Einheit. Zeltreservierungen für die Mittagszeit unter der Woche sind außerdem viel leichter zu bekommen, und für eine Zehnergruppe sind Plätze ohne Reservierung an einem Montagvormittag wirklich realistisch – an einem Samstag niemals. Wenn eure Crew auch nur ein bisschen flexibel ist, ist eine Wiesn von Dienstag bis Donnerstag ein anderer Trip zu einem anderen Preis."
+      },
+      {
+        "q": "Wie teilt man die Kosten in einer Gruppe auf?",
+        "a": "Nutzt von Anfang an ein gemeinsames Budget mit getrennten Kategorien, denn Oktoberfest-Geld teilt sich nicht auf eine einzige Art. Einer zahlt im Frühjahr die Verzehrgutscheine für alle vor. Jemand anders bucht im Sommer die Wohnung. Und im September werden Runden einzeln gekauft, zu 15,80 € das Stück. Wenn ihr erst am Ende abrechnet, rennt derjenige, der im April 400 € Gutscheine vorgestreckt hat, im Oktober neun Freunden hinterher – und wer drei Maß getrunken hat, subventioniert klammheimlich den, der neun hatte. WePlanify trennt die Kategorien, hält fest, wer wann was gezahlt hat, und sagt jedem, was er wem schuldet – ohne Tabelle, ohne Rechnerei am Ende der Reise."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "tomorrowland": {
+      "title": "Tomorrowland 2026",
+      "desc": "Plant die Pilgerfahrt nach Boom mit der Crew.",
+      "cta": "Weiterlesen →"
+    },
+    "hellfest": {
+      "title": "Hellfest 2026",
+      "desc": "Clisson, vier Tage, ein gemeinsamer Plan.",
+      "cta": "Weiterlesen →"
+    },
+    "tripWithFriends": {
+      "title": "Reise mit Freunden",
+      "desc": "Plane mühelos jede Gruppenreise.",
+      "cta": "Weiterlesen →"
+    },
+    "bestApps": {
+      "title": "Beste Apps für Gruppenreisen",
+      "desc": "Unser Vergleich der besten Tools für Gruppenreisen.",
+      "cta": "Artikel lesen →"
+    }
+  },
+  "cta": {
+    "title": "Baut euren Oktoberfest-2026-Trip",
+    "subtitle": "Der Tag, das Zelt, die Betten, das Geld – ein gemeinsamer Plan, deine ganze Crew auf dem gleichen Stand.",
+    "button": "Jetzt planen"
+  },
+  "jsonld": {
+    "articleHeadline": "Oktoberfest-2026-Reiseplaner: So organisiert ihr die Wiesn als Gruppe",
+    "eventName": "Oktoberfest 2026 (191. Münchner Wiesn)",
+    "eventDescription": "Das 191. Oktoberfest findet vom 19. September bis 4. Oktober 2026 auf der Theresienwiese in München statt. Sechzehn Tage, 14 große Bierzelte und 21 kleine, freier Eintritt auf das Gelände und in die Zelte, und eine Maß Bier zwischen 14,80 € und 15,90 €. Eröffnet wird am 19. September um 12 Uhr, wenn Münchens Oberbürgermeister im Schottenhamel-Zelt das erste Fass anzapft und \"O'zapft is!\" ruft.",
+    "howToName": "So plant ihr eine Oktoberfest-2026-Reise mit einer Gruppe von Freunden",
+    "howToDescription": "Einigt euch auf den Tag, sichert einen Zelttisch im Zehnerblock, bucht die Münchner Betten, bevor die Preise explodieren, und teilt Gutscheine und Runden auf, ohne dass im Oktober jemand jemandem hinterherrennt.",
+    "howToSteps": [
+      {
+        "name": "Stimmt über den Termin ab, bevor ihr euch ein Zelt anschaut",
+        "text": "Das Oktoberfest läuft sechzehn Tage, und jeder davon ist ein anderer Trip. Legt der Gruppe drei oder vier mögliche Termine vor und lasst alle abstimmen, bevor irgendwer ein Buchungsportal öffnet. Die Wochenenden und der 3. Oktober sind am vollsten und teuersten; ein Besuch unter der Woche ist günstiger bei den Betten und viel einfacher, wenn ihr ohne Reservierung Plätze sucht."
+      },
+      {
+        "name": "Bringt die Personenzahl verbindlich auf zehn",
+        "text": "Die Zelte reservieren ganze Tische mit typischerweise zehn Plätzen, manchmal acht – nie sechs. Macht aus Vielleichts bestätigte Namen in einer gemeinsamen Reiseroute, bevor die Reservierungen öffnen, und werbt Leute an, wenn ihr zu wenige seid. Leere Plätze kosten genauso viel wie volle, denn die Verzehrgutscheine gehen pro Tisch."
+      },
+      {
+        "name": "Gebt einer Person die Reservierung – und eine Deadline",
+        "text": "Ein zentrales Reservierungssystem gibt es nicht: Jedes der 14 großen Zelte öffnet sein eigenes Portal an seinem eigenen Termin, von Mitte/Ende April bis Anfang Juni, und beliebte Samstage sind innerhalb von Stunden ausverkauft. Benennt eine Person, die bucht, tragt den Öffnungstermin des Zelts in den gemeinsamen Plan ein und sorgt dafür, dass die Abstimmung vorher abgeschlossen ist."
+      },
+      {
+        "name": "Bucht die Münchner Unterkunft früh und teilt sie pro Nacht",
+        "text": "Die Unterkunft ist der größte Posten eines Oktoberfest-Budgets und der schnelllebigste. Die Münchner Preise lagen während des Fests 2025 bei bis zu rund 415 € pro Nacht, etwa 153 % über dem Jahresdurchschnitt. Eine Wohnung, durch die Gruppe geteilt, schlägt meist einzelne Zimmer, und 20 Minuten draußen an einer direkten U-Bahn-Linie zu wohnen ist der bessere Deal, als für Fußnähe zu zahlen."
+      },
+      {
+        "name": "Verfolgt Gutscheine und Runden in einem gemeinsamen Budget",
+        "text": "Einer zahlt die Tischgutscheine Monate vorher für alle vor, jemand anders bucht die Betten, und dann werden Runden einzeln gekauft, zu rund 15,80 € die Maß. Tragt jedes davon als eigene Kategorie ein an dem Tag, an dem es bezahlt wird – dann ist die Abrechnung schon erledigt, wenn die Reise endet."
+      }
+    ]
+  }
+}

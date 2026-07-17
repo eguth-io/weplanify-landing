@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "title": "Rugby World Cup 2027 Trip Planner — Free, for Groups",
+    "description": "Free Rugby World Cup 2027 trip planner for groups. Australia, 1 October to 13 November 2027: 24 teams, 7 host cities, 52 matches. Build your route, split a long-haul budget and keep your crew aligned — no agency, no subscription."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Rugby World Cup 2027 Trip Planner"
+  },
+  "hero": {
+    "tag": "Free trip planner · Rugby World Cup 2027",
+    "title": "Rugby World Cup 2027 Trip Planner: Australia, Booked a Year Early",
+    "readTime": "9 min read"
+  },
+  "heroBody": "This is a free Rugby World Cup 2027 trip planner for groups — Australia, 1 October to 13 November 2027, the first 24-team edition. The pools are drawn, so you know where the group stage is played. What you don't know is where your team goes after it. And that's the problem: flights to Australia need booking roughly a year out, long before the Round of 16 bracket exists. Here's how to commit early without locking your crew into a route you'll regret. Still picking your tools? See our <link>comparison of group travel apps</link>.",
+  "facts": {
+    "title": "The tournament at a glance",
+    "datesLabel": "Tournament dates",
+    "datesValue": "1 Oct – 13 Nov 2027",
+    "datesNote": "43 days across Australia",
+    "teamsLabel": "Teams",
+    "teamsValue": "24",
+    "teamsNote": "6 pools of 4 — a first",
+    "citiesLabel": "Host cities",
+    "citiesValue": "7",
+    "citiesNote": "8 stadiums, 52 matches",
+    "finalLabel": "The final",
+    "finalValue": "13 Nov, Sydney",
+    "finalNote": "Stadium Australia, 82,000 seats"
+  },
+  "problem": {
+    "p1": "Australia is the hardest Rugby World Cup a European or American group has ever had to plan. It's 20-plus hours of flying, a €3,000–5,000 per-person trip, and a schedule that spans a continent the size of Europe. Long-haul fares are cheapest around eleven or twelve months out — which means the smart booking window opens before anyone knows whether their team survives the pool stage. Six mates, six budgets, six different appetites for spending four figures on a maybe.",
+    "p2": "WePlanify is the free shared command center for Rugby World Cup 2027 trips — fixtures, flights, hotels, budget and packing in one plan your whole crew can see."
+  },
+  "toc": {
+    "title": "On this page",
+    "hostCities": "The 7 host cities",
+    "route": "Follow the team, or pick a base?",
+    "tickets": "Tickets & logistics",
+    "planning": "Planning with a group",
+    "budget": "What it actually costs",
+    "faq": "Frequently asked questions"
+  },
+  "hostCities": {
+    "title": "The 7 Host Cities",
+    "subtitle": "Eight stadiums across seven cities, spread over a continent. Perth to Townsville is a five-hour flight — further than London to Cairo. Distances drive your route more than fixtures do.",
+    "stadiumLabel": "Stadium",
+    "items": [
+      {
+        "city": "Sydney",
+        "state": "New South Wales",
+        "stadium": "Stadium Australia & Sydney Football Stadium",
+        "note": "Hosts the final on 13 November. The only city with two venues."
+      },
+      {
+        "city": "Melbourne",
+        "state": "Victoria",
+        "stadium": "Docklands Stadium",
+        "note": "The tournament's only fully enclosed venue — the roof stays closed for every match. No weather risk."
+      },
+      {
+        "city": "Brisbane",
+        "state": "Queensland",
+        "stadium": "Brisbane Stadium",
+        "note": "Warm, walkable, and the natural gateway to the Gold Coast if you're adding holiday days."
+      },
+      {
+        "city": "Perth",
+        "state": "Western Australia",
+        "stadium": "Perth Stadium",
+        "note": "Hosts the opening match on 1 October. Isolated — a five-hour flight from the east coast."
+      },
+      {
+        "city": "Adelaide",
+        "state": "South Australia",
+        "stadium": "Adelaide Oval",
+        "note": "Compact and cheap by Australian standards. Barossa wine country is an hour away."
+      },
+      {
+        "city": "Newcastle",
+        "state": "New South Wales",
+        "stadium": "Newcastle Stadium",
+        "note": "Hosting Rugby World Cup matches for the first time. Two hours north of Sydney by train."
+      },
+      {
+        "city": "Townsville",
+        "state": "Queensland",
+        "stadium": "North Queensland Stadium",
+        "note": "Tropical far north. The jumping-off point for the Great Barrier Reef and Magnetic Island."
+      }
+    ]
+  },
+  "route": {
+    "title": "The Decision That Shapes Everything: Follow, or Base?",
+    "subtitle": "Every group trip to Australia forks here. Make this call before you book a single flight — it determines your budget, your route and how much of the country you actually see.",
+    "followTitle": "Follow the team",
+    "followSubtitle": "Chase your side pool match to pool match, then into the knockouts.",
+    "followPros": [
+      "You see every match your team plays",
+      "Maximum atmosphere — you travel with the same away support",
+      "The trip has a natural narrative and an obvious ending"
+    ],
+    "followCons": [
+      "Three domestic flights minimum, often more",
+      "Knockout legs can't be booked until the bracket fills",
+      "If your team goes out in the pool stage, the plan collapses",
+      "Domestic Australian fares spike hard around match dates"
+    ],
+    "followVerdict": "Best for: groups with real budget headroom and a tolerance for booking late at bad prices.",
+    "baseTitle": "Base in one city",
+    "baseSubtitle": "Pick a host city, stay put, and watch whatever comes to you.",
+    "basePros": [
+      "One accommodation booking, negotiated long, split cleanly",
+      "No internal flights — the single biggest saving available",
+      "You actually get to know a city instead of an airport",
+      "Bulletproof against your team's early exit"
+    ],
+    "baseCons": [
+      "You'll miss matches your team plays elsewhere",
+      "Less variety — same fan zone, same pubs, six weeks in",
+      "Sydney or Melbourne rents aren't cheap for a long stay"
+    ],
+    "baseVerdict": "Best for: most groups, honestly — and the only version that reliably lands under €3,500 a head.",
+    "hybridTitle": "The hybrid most groups land on",
+    "hybridBody": "Base in Sydney or Brisbane for the bulk of the trip, add one or two flights out for the matches that matter, and treat the knockouts as an option rather than a plan. Book the base accommodation now and the internal flights later. It's not the purist's trip, but it survives contact with reality — and with your group's bank balances."
+  },
+  "midCta": {
+    "title": "Settle the route before the fares move",
+    "subtitle": "Put both options in front of your group, vote, and lock the plan everyone can see.",
+    "button": "Start planning free"
+  },
+  "tickets": {
+    "title": "Tickets & Logistics",
+    "p1": "The ticket phases that mattered most have already run. The presale opened on 18 February 2026 for fans who registered by 17 February, and the general application phase — a worldwide ballot for oversubscribed matches — ran from 19 May to 2 June 2026. If you missed both, you're not out.",
+    "p2": "The next general sale is 1 October 2026, first come, first served. That is the date to put in your group's shared calendar right now, because first-come-first-served with this much pent-up demand means the good categories go in minutes. Decide as a group beforehand which matches you're chasing and what you'll pay — arguing about price categories while the queue is live is how groups end up with nothing.",
+    "p3": "Buy through the <ticketLink>official Rugby World Cup ticketing site</ticketLink> only. Resale markets for Australian sporting events are heavily restricted and tickets bought outside official channels can be cancelled at the gate. Hospitality and travel packages are available through the official provider if you'd rather trade money for certainty.",
+    "p4": "On the logistics: Australia requires a visa for almost everyone — most European, UK and US passport holders can get an ETA or eVisitor online in days, but it is not automatic and each person handles their own. Book it as a group deadline, not an individual afterthought. Domestic flights are the backbone of any multi-city plan; Qantas, Virgin Australia and Jetstar all serve the host cities, and fares around match dates behave exactly like you'd fear. Five minimum rest days between matches means the schedule breathes — there's genuine room to see the country between games."
+  },
+  "planning": {
+    "title": "Planning It With a Group",
+    "p1": "The hard part of this trip isn't the itinerary. It's getting six people to commit four thousand euros each, twelve months early, to a plan whose second half is unknowable. That's a trust problem before it's a travel problem, and it's why these trips die in group chats.",
+    "p2": "Start by separating the certain from the speculative. The pool stage is fixed — the draw is done, the cities are known, the schedule is published. Book that part properly. The knockouts are a lottery ticket. Put tentative dates in your <itineraryLink>shared itinerary</itineraryLink> as placeholders and book nothing non-refundable against them until the Round of 16 is set.",
+    "p3": "Then get the commitment on record. Not \"yeah I'm keen\" in a group chat at midnight — an actual answer to an actual question. <pollsLink>Run a poll</pollsLink> on the two things that decide everything: follow or base, and full tournament or pool stage only. People answer a poll honestly in a way they never do in a chat where everyone's watching. You'll find out now, not in March, that two of your mates were never really in.",
+    "p4": "Set deadlines that aren't about the trip. Visa applications, the 1 October ticket sale, deposit dates, the moment cheap fares evaporate. A shared task list with real dates, visible to everyone, is what stops a trip this big from quietly falling apart while everyone assumes someone else is handling it. Our <guideLink>guide to planning a group trip</guideLink> covers the mechanics."
+  },
+  "budget": {
+    "title": "What It Actually Costs",
+    "p1": "Be honest with your group from the first conversation: this is a €3,000–5,000 per-person trip for a European, and the range depends almost entirely on decisions you make in the next few months rather than on how frugal you are once you land.",
+    "p2": "Flights are the immovable object — return fares from Europe to Australia typically run €900–1,600, and October is shoulder season, which helps. The eleven-to-twelve-month booking window is where the real money is; waiting until the bracket is clear can cost you several hundred euros a head. This is the single strongest argument for the base-city strategy: it lets you book the expensive part early and stay flexible on the cheap part.",
+    "p3": "Match tickets each fan buys individually — keep them out of the shared pool entirely. The pool is for accommodation, internal flights, ground transport, group meals and the reef trip someone will inevitably propose. Set up a <budgetLink>shared budget tracker</budgetLink> with one category per cost type and rotate who fronts each expense, so nobody's credit card is carrying the group for six weeks.",
+    "p4": "Accommodation is where the base strategy pays out. A five-bedroom house in Sydney's inner west for a month, split five ways, lands well under what five hotel rooms cost for the same nights — and host-city hotels near stadiums multiply their rates on match dates regardless. Look at the suburbs with decent train links rather than the postcodes the tournament markets to you."
+  },
+  "pullQuote": "You will book this trip before you know how it ends. That's not a flaw in your planning — it's the shape of the thing. Plan the certain part properly and hold the rest loosely.",
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "When is the Rugby World Cup 2027 and where is it held?",
+        "a": "The tournament runs from 1 October to 13 November 2027 across Australia — 43 days, 52 matches, seven host cities and eight stadiums. The opening match is at Perth Stadium on 1 October, and the final is at Stadium Australia in Sydney on 13 November. It's the first 24-team edition in the tournament's history."
+      },
+      {
+        "q": "How does the new 24-team format work?",
+        "a": "The 24 teams are split into six pools of four, replacing the old four pools of five. The top two from each pool advance automatically, joined by the four best third-placed teams, which fills a new Round of 16 — the first substantial format change in decades. Despite the expansion, a team that wins the tournament still plays seven matches: three in the pool stage and four knockouts. There are a minimum of five rest days between matches."
+      },
+      {
+        "q": "Can I still get tickets for the Rugby World Cup 2027?",
+        "a": "Yes. The February 2026 presale and the May–June 2026 application ballot have both closed, but the next general sale opens on 1 October 2026 on a first-come, first-served basis. Buy only through the official Rugby World Cup ticketing site — Australian resale rules are strict and tickets from unofficial channels can be voided at the gate. Official hospitality and travel packages are available in the meantime."
+      },
+      {
+        "q": "When should I book flights to Australia for the Rugby World Cup?",
+        "a": "Roughly eleven to twelve months out, which for an October 2027 tournament means late 2026. Return fares from Europe generally run €900–1,600 and October falls in shoulder season. The awkward part is that this window opens long before the knockout bracket exists, so you're committing to dates before you know your team's path. That's exactly why most groups book a base city early and stay flexible on internal flights."
+      },
+      {
+        "q": "Should we follow our team around Australia or base ourselves in one city?",
+        "a": "Base in one city, for most groups. Following your team means at least three domestic flights, knockout legs you can't book in advance, and a plan that collapses if they go out in the pool stage. Basing yourself in Sydney or Brisbane means one accommodation booking, no internal fares, and a trip that survives a bad result. The common compromise: base somewhere central and fly out only for the matches that genuinely matter."
+      },
+      {
+        "q": "How much does a Rugby World Cup 2027 trip cost per person?",
+        "a": "Budget €3,000–5,000 per person from Europe for a two-to-three-week trip. Flights are €900–1,600 return, match tickets vary widely by category, and accommodation depends entirely on whether you're moving between cities or splitting one house. Groups that base in one city and share a rental reliably land at the lower end; groups chasing their team across the country land at the upper end or beyond."
+      },
+      {
+        "q": "Do I need a visa to travel to Australia for the tournament?",
+        "a": "Almost certainly yes — Australia requires a visa or travel authority from nearly every visitor. Most UK, European and US passport holders can apply for an ETA or eVisitor online and are approved within days, but it isn't automatic and each traveller must apply individually. Treat it as a group deadline with a date attached, because it's the classic thing one person forgets until the week of departure."
+      },
+      {
+        "q": "How do you split the costs of a trip this expensive across a group?",
+        "a": "Separate what's individual from what's shared. Match tickets and flights each person buys and pays for themselves. Accommodation, internal transport, ground travel and group meals go in a shared pool with a category each. Rotate who fronts the big shared expenses so one person isn't carrying five thousand euros of group spending on their card for six weeks. WePlanify tracks who paid what and who owes whom, so there's no reckoning at the end."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Discover More",
+    "worldCup": {
+      "title": "World Cup 2026 Planner",
+      "desc": "The football version — 16 host cities across three countries.",
+      "cta": "Read more →"
+    },
+    "tripWithFriends": {
+      "title": "Trip with Friends",
+      "desc": "Plan any group trip effortlessly.",
+      "cta": "Read more →"
+    },
+    "groupGuide": {
+      "title": "Group Trip Guide",
+      "desc": "The complete step-by-step guide.",
+      "cta": "Read the guide →"
+    },
+    "bestApps": {
+      "title": "Best Group Travel Apps",
+      "desc": "Our comparison of the top tools for group trips.",
+      "cta": "Read the article →"
+    }
+  },
+  "cta": {
+    "title": "Build Your Rugby World Cup 2027 Trip",
+    "subtitle": "Fixtures, flights, a house in Sydney, and a budget that adds up — one shared plan, your whole crew on the same page.",
+    "button": "Start planning"
+  },
+  "jsonld": {
+    "eventName": "Rugby World Cup 2027",
+    "eventDescription": "Rugby World Cup 2027 — 24 national teams, seven host cities and eight stadiums across Australia, from 1 October to 13 November 2027. The first 24-team edition, played in six pools of four with a new Round of 16.",
+    "performer": "Rugby World Cup 2027 national teams",
+    "howToName": "How to plan a Rugby World Cup 2027 trip with a group",
+    "howToDescription": "Decide whether to follow your team or base in one city, book the long-haul flights early, split a five-figure group budget cleanly, and hold the knockout stage loosely.",
+    "howToSteps": [
+      {
+        "name": "Choose between following the team and basing in one city",
+        "text": "This single decision sets your budget and your route. Following your team means three or more domestic flights and knockout legs you can't book in advance; basing in Sydney or Brisbane means one accommodation booking and no internal fares. Settle it before anything else."
+      },
+      {
+        "name": "Get real commitment on record with a poll",
+        "text": "A €3,000–5,000 trip booked a year early needs actual answers, not group-chat enthusiasm. Poll your crew on follow-or-base and full-tournament-or-pool-stage-only. You'll learn now, rather than in six months, who was never really in."
+      },
+      {
+        "name": "Book the certain part and hold the rest loosely",
+        "text": "The pools are drawn and the pool-stage schedule is published — book that properly, around eleven to twelve months out when long-haul fares are lowest. Leave the Round of 16 as placeholder dates in the itinerary and book nothing non-refundable against it until the bracket fills."
+      },
+      {
+        "name": "Split the shared costs by category from day one",
+        "text": "Match tickets and flights stay individual. Accommodation, internal transport and group meals go into a shared budget with a category each, rotating who fronts the big expenses so no one person carries the group for six weeks."
+      }
+    ]
+  }
+}

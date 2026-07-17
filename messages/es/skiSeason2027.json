@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Planificador de viaje de esquí 2026-27 — Viajes en grupo",
+    "description": "Planificador gratuito para el viaje de esquí en grupo 2026-27. Elige la semana adecuada (las vacaciones escolares francesas de febrero van del 6 de febrero al 8 de marzo de 2027), compara estaciones y reparte el chalet, los forfaits, el alquiler de material y la comida de forma justa — sin que una sola persona adelante todo."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Planificador de viaje de esquí 2026-27"
+  },
+  "hero": {
+    "tag": "Planificador de viaje gratuito · Temporada de esquí 2026-27",
+    "title": "Temporada de esquí 2026-27: planifica el viaje en grupo sin el lío del dinero",
+    "readTime": "9 min de lectura"
+  },
+  "heroBody": "Los Alpes abren el 21 de noviembre de 2026 y las estaciones más altas siguen abiertas hasta el 2 de mayo de 2027. En algún punto de esos cinco meses está tu semana con el grupo — y elegirla es la única decisión que determina todo lo demás. Un viaje de esquí en grupo es el más brutal en cuanto a logística: un chalet reservado con cuatro a seis meses de antelación, pagado de golpe por alguien que tiene que adelantar el dinero, y luego forfaits, alquiler de material, comida y gasolina que se reparten de forma distinta porque no todos esquían, no todos alquilan y no todos conducen. Así se gestiona. ¿Aún estás eligiendo herramientas? Mira nuestra <link>comparativa de apps de viajes en grupo</link>.",
+  "facts": {
+    "title": "La temporada 2026-27 en cuatro cifras",
+    "seasonLabel": "Temporada",
+    "seasonValue": "21 nov → 2 may",
+    "seasonNote": "Tignes, Val Thorens y Orelle abren el 21 nov 2026; Tignes y Val Thorens prevén cerrar el 2 may 2027",
+    "holidaysLabel": "Semanas punta",
+    "holidaysValue": "6 feb → 8 mar",
+    "holidaysNote": "Vacaciones escolares francesas de febrero de 2027 en las zonas C, A y B — las cuatro semanas más caras de la temporada",
+    "passLabel": "Forfait 6 días",
+    "passValue": "421 €",
+    "passNote": "Forfait adulto de 6 días de Les 3 Vallées desde el 19 dic 2026 — 378,90 € en las ventanas del 5-18 dic y del 10-18 abr",
+    "bookLabel": "Reserva antes de",
+    "bookValue": "Sep-Nov",
+    "bookNote": "El alojamiento en la nieve se reserva con 4-6 meses de antelación; los buenos chalets de febrero vuelan en otoño"
+  },
+  "problem": {
+    "p1": "Así es como acaba pasando siempre. Alguien encuentra un chalet en septiembre. Duerme a ocho, cuesta X € la semana y el propietario quiere una señal en 48 horas. Una persona pone su tarjeta. En diciembre dos se han caído, un amigo ha invitado a un primo que nadie conoce, y quien adelantó 2.400 € sigue esperando cuatro transferencias. Y luego llegáis: tres compran forfaits de 6 días, uno de 3 días, otro no esquía y solo quiere el spa. Dos tienen material propio, cuatro alquilan. Dos coches reparten gasolina y peajes de forma desigual. Todos pagan una ronda. Y la última noche alguien abre una app de notas e intenta reconstruir de memoria una semana de gastos.",
+    "p2": "No es que las cuentas sean difíciles. Es que nadie tiene la misma foto de lo que se gastó, quién lo pagó y para quién. Un viaje de esquí tiene más líneas compartidas-pero-desiguales que cualquier otro <link>viaje con amigos</link> — y por eso mismo se desmorona.",
+    "p3": "WePlanify es el plan compartido y gratuito para los viajes de esquí en grupo: un solo lugar para la semana que habéis elegido, el chalet, quién viene, quién debe qué y quién ya ha pagado."
+  },
+  "toc": {
+    "title": "En esta página",
+    "when": "Cuándo ir: el calendario de precios",
+    "resorts": "Qué estación para tu grupo",
+    "budget": "Lo que cuesta de verdad una semana de esquí",
+    "group": "Planificarlo en grupo",
+    "faq": "Preguntas frecuentes"
+  },
+  "when": {
+    "title": "Cuándo ir: el calendario de precios 2026-27",
+    "subtitle": "La semana que elijas mueve el coste total más que la estación, el chalet o cualquier otra cosa sobre la que vayáis a discutir. Estas son las seis ventanas de la temporada, en orden.",
+    "priceLabel": "Precio",
+    "windows": [
+      {
+        "window": "Semanas de apertura",
+        "dates": "21 nov – 18 dic 2026",
+        "price": "Lo más barato de la temporada",
+        "verdict": "Tignes, Val Thorens y Orelle abren el 21 de noviembre; Val d'Isère, Les 2 Alpes y Chamonix les siguen el 28 de noviembre; Courchevel el 5 de diciembre; Méribel y Les Menuires el 6 de diciembre. Solo alta montaña, y la mitad baja de casi todos los dominios aún no funciona. Pero el forfait de 6 días de Les 3 Vallées cuesta 378,90 € en lugar de 421 € en la ventana del 5-18 de diciembre, y el alojamiento está a su precio más bajo de toda la temporada. Si tu grupo va a esquiar y no a tomar el sol, esta es la semana con mejor relación calidad-precio que nadie reserva."
+      },
+      {
+        "window": "Navidad y Fin de Año",
+        "dates": "19 dic 2026 – principios de ene 2027",
+        "price": "Punta",
+        "verdict": "Forfaits a precio completo (421 € por seis días en Les 3 Vallées desde el 19 de diciembre), alojamiento en máximos y demanda familiar en toda Europa a la vez. La nieve a baja altitud es una lotería en diciembre. A menos que el grupo quiera específicamente estar en una estación en Fin de Año, esta ventana es dinero mal gastado."
+      },
+      {
+        "window": "Enero",
+        "dates": "Principios de ene – 5 feb 2027",
+        "price": "Alojamiento barato, forfait a precio completo",
+        "verdict": "La ventana de los entendidos. Todas las estaciones están abiertas al completo, la base de nieve suele estar asentada, las pistas están vacías y los precios del alojamiento se desploman entre la marea de Fin de Año y las vacaciones de febrero. El forfait está a precio completo, pero el chalet — tu mayor línea de gasto — está a su precio más bajo con todo funcionando. Si en tu grupo no hay niños en edad escolar, esta es la respuesta."
+      },
+      {
+        "window": "Vacaciones escolares de febrero",
+        "dates": "6 feb – 8 mar 2027",
+        "price": "Lo más caro de la temporada",
+        "verdict": "Cuatro semanas seguidas en las que rotan las tres zonas francesas: la zona C desde el 6 de febrero, la zona A desde el 13 de febrero, la zona B desde el 20 de febrero, y la última vuelve al cole el 8 de marzo. Súmale las vacaciones suizas, británicas, neerlandesas y belgas y tienes todo a precio completo, colas en cada remonte y chalets de dos a tres veces más caros que en enero. Si sois un grupo de adultos, evitar estas cuatro semanas recorta vuestro presupuesto más que cualquier otra decisión de esta página."
+      },
+      {
+        "window": "Marzo",
+        "dates": "9 mar – 9 abr 2027",
+        "price": "Medio",
+        "verdict": "La ventana infravalorada. La base de nieve está en su punto más profundo tras un invierno completo, los días son largos, las terrazas están calentitas y las multitudes de las vacaciones se han ido. El alojamiento vuelve a tarifas de temporada media la semana siguiente a que la última zona vuelva al cole. Para un grupo que quiere esquiar y además ver la luz del día en la terraza, marzo le gana a febrero en todos los ejes salvo en probabilidades de polvo."
+      },
+      {
+        "window": "Fin de temporada",
+        "dates": "10 abr – 2 may 2027",
+        "price": "Lo más barato de la temporada",
+        "verdict": "El forfait de 6 días de Les 3 Vallées vuelve a bajar a 378,90 € del 10 al 18 de abril, y Tignes y Val Thorens prevén funcionar hasta el 2 de mayo de 2027. La nieve se vuelve irregular por debajo de los ~2.000 m y las estaciones bajas empiezan a cerrar sectores, así que esta ventana solo funciona en altura. Pero esquiarás en camiseta, pagarás precios de semana de apertura y tendréis la montaña para vosotros."
+      }
+    ],
+    "zonesNote": "Zonas de vacaciones escolares francesas para 2027: la zona C es París, Créteil, Versailles, Montpellier y Toulouse (6-22 de febrero); la zona A es Grenoble, Lyon, Burdeos, Dijon, Besançon, Clermont-Ferrand, Limoges y Poitiers (13 de febrero-1 de marzo); la zona B es Lille, Niza, Aix-Marseille, Nantes, Rennes, Estrasburgo, Nancy-Metz, Reims, Amiens, Rouen/Caen y Orléans-Tours (20 de febrero-8 de marzo). Si tu grupo abarca varias zonas, las semanas que se solapan son las que todos pueden hacer — y también las que está haciendo todo el mundo. Las fechas de apertura y cierre son las previsiones publicadas por las estaciones y siempre se mueven con la nieve."
+  },
+  "resorts": {
+    "title": "Qué estación para tu grupo",
+    "subtitle": "Tres perfiles honestos. Elige el que encaje con lo que tu grupo realmente prioriza — no el que tenga las mejores fotos.",
+    "cards": [
+      {
+        "tag": "Opción A",
+        "title": "Alta montaña, gran dominio",
+        "subtitle": "Tignes, Val Thorens, Val d'Isère, Les 2 Alpes",
+        "pros": [
+          "Nieve garantizada desde finales de noviembre hasta finales de abril",
+          "Abren antes (21-28 nov 2026) y cierran después (hasta el 2 may 2027)",
+          "Dominios enlazados enormes — en grupos de niveles mixtos todos encuentran terreno",
+          "El alojamiento a pie de pista es la norma, así que nada de lanzaderas a diario"
+        ],
+        "cons": [
+          "El alojamiento y los forfaits más caros",
+          "Arquitectura funcional, no pueblos de postal",
+          "Por encima del límite del bosque: un día de niebla espesa significa cero visibilidad en todas partes"
+        ],
+        "verdict": "La elección correcta si vais pronto, tarde, o si la angustia por la nieve os arruinaría el viaje."
+      },
+      {
+        "tag": "Opción B",
+        "title": "Clásico de media montaña",
+        "subtitle": "Courchevel, Méribel, Les Menuires, La Plagne, Alpe d'Huez",
+        "pros": [
+          "El mejor equilibrio entre tamaño del dominio, ambiente y precio",
+          "Pistas entre árboles, esquiables con mala visibilidad",
+          "Pueblos de verdad, restaurantes de verdad, algo que hacer fuera de la nieve",
+          "Alojamiento muy variado — la misma estación puede servir a dos presupuestos"
+        ],
+        "cons": [
+          "Abre más tarde (5-6 dic 2026 en los pueblos de Les 3 Vallées)",
+          "Los sectores bajos dependen de la nieve artificial en diciembre y abril",
+          "Colas en semana punta en los cuellos de botella del dominio enlazado"
+        ],
+        "verdict": "La opción por defecto para una semana de grupo en enero o marzo. Difícil equivocarse."
+      },
+      {
+        "tag": "Opción C",
+        "title": "Estación pequeña, gran ahorro",
+        "subtitle": "Dominios pequeños, pueblos de valle, Pirineos franceses y Vosgos",
+        "pros": [
+          "Alojamiento y forfaits a una fracción de las estaciones de renombre",
+          "Colas cortas en los remontes incluso en febrero",
+          "Accesibles en coche desde más puntos de Francia — repartir gasolina le gana a volar",
+          "Los principiantes no pagan por 600 km de pistas que nunca van a esquiar"
+        ],
+        "cons": [
+          "Terreno limitado — los buenos esquiadores se aburren al tercer día",
+          "Más riesgo de nieve, temporada más corta",
+          "Menos opciones si el tiempo cierra los remontes altos"
+        ],
+        "verdict": "La elección inteligente cuando media grupo está aprendiendo, o cuando el viaje va en realidad del grupo."
+      }
+    ],
+    "levelsTitle": "El problema de los niveles mixtos que nadie planifica",
+    "levelsBody": "En todo grupo hay alguien que quiere ser el primero en el remonte y estar fuera de pista a las 10 de la mañana, y alguien que se pone los esquís por tercera vez en su vida. Si no haces nada, esa brecha arruina las dos semanas: el buen esquiador se pasa cinco días en pistas verdes echando pestes, y el principiante cinco días muerto de miedo disimulando. Resuélvelo antes de reservar, no en el primer telesilla. <link>Lanza una encuesta</link> con las preguntas de verdad — cuántos días de esquí quiere cada uno, quién quiere clases, quién quiere un día de descanso, si hay alguien que directamente no esquía — porque las respuestas cambian la estación, la duración del forfait que compra cada uno y el presupuesto. Quien esquíe dos días de seis no debería comprar un forfait de 6 días, ni descubrirlo el primer día."
+  },
+  "midCta": {
+    "title": "Cierra la semana antes de que vuelen los chalets",
+    "subtitle": "Elige las fechas, comprueba quién viene de verdad y arranca el presupuesto compartido antes de que nadie adelante una señal.",
+    "button": "Empezar a planificar — gratis"
+  },
+  "budget": {
+    "title": "Lo que cuesta de verdad una semana de esquí",
+    "subtitle": "Cinco líneas, cinco formas distintas de repartir. Esta es la sección que decide si vuestras amistades sobreviven al viaje.",
+    "splitLabel": "Reparto",
+    "lines": [
+      {
+        "item": "Alojamiento",
+        "amount": "La mayor línea, con diferencia",
+        "split": "Por cama, no por cabeza",
+        "gotcha": "Se reserva con cuatro a seis meses de antelación y lo paga de golpe una sola persona. Esa persona pasa a ser el banco del grupo sin calendario de devolución. El mismo chalet puede costar de dos a tres veces más en las vacaciones de febrero que en enero — la semana que elijas mueve esta cifra más que la estación. Reparte por cama: la pareja que comparte una habitación doble y quien duerme en la litera bajo la escalera no pagan lo mismo."
+      },
+      {
+        "item": "Forfait",
+        "amount": "421 € / 6 días",
+        "split": "Individual, nunca al bote",
+        "gotcha": "El forfait adulto de 6 días de Les 3 Vallées cuesta 421 € desde el 19 de diciembre de 2026, y 378,90 € en las ventanas del 5-18 de diciembre y del 10-18 de abril. Cada uno compra el suyo, para sus propios días — esta línea nunca debe ir al bote común, porque quien esquía dos días acaba subvencionando a quien esquía seis."
+      },
+      {
+        "item": "Alquiler de material",
+        "amount": "90-150 € / semana",
+        "split": "Individual",
+        "gotcha": "Un pack estándar de adulto — esquís, botas, bastones, casco — sale más o menos entre 90 y 150 € la semana, más si es material de gama alta. Media grupo tiene material propio y aquí no paga nada, y precisamente por eso no puede ser un gasto común. Reserva online antes de salir: entrar en una tienda de alquiler el sábado de una semana de vacaciones es la forma cara de hacerlo."
+      },
+      {
+        "item": "Comida y bebida",
+        "amount": "Continua, desigual, infinita",
+        "split": "Bote común + individual",
+        "gotcha": "La que genera más rencor en silencio. La gran compra en el súper al fondo del valle, las cenas compartidas en el chalet, la tartiflette de 18 € en la terraza, las rondas. Sepáralas: la compra y las cenas de grupo al bote común, todo lo que pase en la montaña queda individual. Registra cada gasto el mismo día, con quién pagó y a quién cubría."
+      },
+      {
+        "item": "Llegar hasta allí",
+        "amount": "Depende del todo de cómo",
+        "split": "Por coche, no por persona",
+        "gotcha": "Dos coches, cuatro pasajeros cada uno, uno lleva un familiar diésel y el otro un eléctrico, peajes solo en una ruta, y quien condujo también pagó el aparcamiento. Reparte gasolina y peajes por vehículo entre los pasajeros de ese vehículo. Si algunos vuelan a Ginebra o Lyon y cogen un traslado, esa es su línea — no la mezcles con la de los que van en coche."
+      }
+    ],
+    "p1": "La regla que salva los viajes de esquí: nada va al bote común salvo que absolutamente todos se beneficien por igual. Eso es el chalet, la compra, las cenas de grupo y la gasolina por coche. Todo lo demás — forfaits, alquiler, clases, comidas en la montaña, la tarde de spa de los dos que no esquían — es individual y sigue siendo individual. Monta un <link>presupuesto compartido</link> con una categoría por línea antes de salir, y deja que cada uno registre sus gastos sobre la marcha. Quien adelantó la señal del chalet en octubre no debería seguir persiguiendo transferencias en marzo.",
+    "p2": "Gestiona bien la señal. Alguien pone 2.000 € o más en su tarjeta en otoño para un viaje que ocurre en febrero, y eso es un préstamo real de cuatro meses entre amigos que nadie llama préstamo nunca. Regístralo como gasto el mismo día en que se paga, con el resto de participantes marcados como deudores de su parte, y pide las transferencias en ese momento — mientras el viaje ilusiona y todo el mundo está motivado. No en el aparcamiento del aeropuerto de vuelta a casa.",
+    "p3": "Y acordad la regla de cancelación antes de que nadie pague nada. Alguien se va a caer — no es pesimismo, es todos los viajes en grupo de la historia. Decidid, por escrito, dentro del plan, si se le devuelve su parte, si la cubre hasta que se encuentre un sustituto, o si el grupo la absorbe. Treinta segundos de acuerdo en septiembre evitan la peor conversación del año en enero."
+  },
+  "pullQuote": "La semana decide el presupuesto. El reparto decide las amistades. Todo lo demás es solo esquiar.",
+  "group": {
+    "title": "Planificarlo en grupo",
+    "p1": "Empieza en septiembre, no en diciembre. El alojamiento en la nieve se reserva con cuatro a seis meses de antelación — los buenos chalets de las semanas de febrero ya no están en otoño, y en diciembre eliges entre un sitio demasiado lejos de los remontes, una estación que nadie quería, o pagar un extra por ambas cosas. Pero no puedes reservar hasta saber quién viene, y no puedes saber quién viene hasta haber elegido la semana. Así que empieza por ahí: <link>lanza una encuesta</link> con tres o cuatro semanas candidatas, con el contexto de precio de cada una — la gente elige de forma muy distinta cuando ve que la semana de febrero cuesta el doble. Consigue compromisos reales y luego reserva.",
+    "p2": "Una semana de esquí tiene un ritmo que el grupo necesita acordar, no solo un lugar. ¿A qué hora salimos del chalet? ¿Esquiamos juntos o nos separamos por nivel y quedamos para comer? ¿Quién cocina cada noche? ¿Hay un día de descanso a mitad de semana y lo coge todo el mundo? Métedlo todo en un <link>itinerario compartido</link> — incluidos el viaje de subida, el tráfico del sábado de cambio de turno a la ida, la cita en la tienda de alquiler y la compra en el súper. Las estaciones de esquí un sábado de vacaciones son el peor tráfico de Europa. Planifica la llegada como una etapa más del viaje, porque lo es.",
+    "p3": "Reparte el material común como repartirías cualquier otra cosa. Una raclette, no cuatro. Cadenas o neumáticos de invierno en cada coche — obligatorios en los municipios de montaña, y la multa no es lo importante, lo importante es subir los últimos 15 kilómetros. Alguien lleva el altavoz, alguien los juegos de mesa para el día de niebla, alguien el botiquín. Una lista compartida con nombres asignados a cada cosa evita la llegada clásica en la que tenéis tres tablas de quesos y ningún sacacorchos.",
+    "p4": "Todo lo anterior no es más que la versión esquiadora del mismo problema que tiene cualquier viaje en grupo: demasiadas decisiones, demasiados pagadores, ninguna fuente de verdad compartida. Si quieres el método general — cómo llevar a un grupo de un hilo de WhatsApp a un viaje reservado sin que una sola persona haga todo el trabajo — lo hemos contado entero en nuestra <link>guía completa para planificar un viaje en grupo</link>."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Cuándo abre la temporada de esquí 2026-27 en los Alpes?",
+        "a": "Tignes, Val Thorens y Orelle prevén abrir las primeras, el 21 de noviembre de 2026, gracias a su acceso a glaciar y a su altitud. Val d'Isère, Les 2 Alpes y Chamonix les siguen el 28 de noviembre, Courchevel y La Tania el 5 de diciembre, y Méribel y Les Menuires el 6 de diciembre de 2026. La mayoría de las demás estaciones francesas abren a lo largo de la primera quincena de diciembre. Al otro extremo, Tignes y Val Thorens prevén funcionar hasta el 2 de mayo de 2027, y Les 2 Alpes mantiene su glaciar abierto hasta el verano. Todas estas fechas son las previsiones publicadas por las estaciones y siempre se mueven con la nieve."
+      },
+      {
+        "q": "¿Cuándo son las vacaciones escolares francesas de febrero de 2027?",
+        "a": "La zona C (París, Créteil, Versailles, Montpellier, Toulouse) va del 6 al 22 de febrero de 2027. La zona A (Grenoble, Lyon, Burdeos, Dijon, Besançon, Clermont-Ferrand, Limoges, Poitiers) va del 13 de febrero al 1 de marzo. La zona B (Lille, Niza, Aix-Marseille, Nantes, Rennes, Estrasburgo, Nancy-Metz, Reims, Amiens, Normandía, Orléans-Tours) va del 20 de febrero al 8 de marzo. Eso significa que las estaciones están en modo punta durante cuatro semanas seguidas, del 6 de febrero al 8 de marzo de 2027 — el tramo más caro de la temporada."
+      },
+      {
+        "q": "¿Cuál es la semana más barata para esquiar en 2026-27?",
+        "a": "Dos ventanas. Las semanas de apertura (5-18 de diciembre de 2026) y el fin de temporada (10-18 de abril de 2027) son cuando el forfait adulto de 6 días de Les 3 Vallées cuesta 378,90 € en lugar de 421 €, y el alojamiento está a su precio más bajo. La pega es la cobertura de nieve: a principios de diciembre solo las estaciones de altura están abiertas al completo, y a mediados de abril los sectores bajos van cerrando. Ambas funcionan bien si vas alto — Tignes, Val Thorens, Val d'Isère, Les 2 Alpes. La tercera opción, y la mejor en conjunto, es enero: forfaits a precio completo pero alojamiento barato con todos los remontes funcionando."
+      },
+      {
+        "q": "¿Cuánto cuesta por persona una semana de esquí en grupo?",
+        "a": "Depende casi por completo de la semana y del alojamiento, y por eso no te vamos a dar una media falsa. Las partes fijas con las que puedes contar: el forfait adulto de 6 días de Les 3 Vallées cuesta 421 € (378,90 € en las ventanas de principios de diciembre y mediados de abril), y un pack estándar de alquiler de esquís, botas, bastones y casco sale más o menos entre 90 y 150 € la semana. El alojamiento es la línea mayor y más variable — el mismo chalet puede costar de dos a tres veces más en las vacaciones de febrero que en enero. Luego, comida, gasolina y clases encima. Constrúyelo línea a línea en un presupuesto compartido en lugar de adivinar una cifra por persona."
+      },
+      {
+        "q": "¿Cómo se reparte el coste de un chalet de forma justa?",
+        "a": "Por cama, no por cabeza. Quien duerme en una doble privada con baño y quien duerme en una litera en el altillo reformado no reciben lo mismo y no deberían pagar lo mismo. Acordad el reparto por habitación antes de reservar, no después de que cada uno haya pillado su cuarto al llegar. Y registra la señal como gasto el mismo día en que se paga — quien adelantó 2.000 € en octubre es acreedor desde ese día, no desde el día de la vuelta a casa."
+      },
+      {
+        "q": "¿Debe entrar el forfait en el presupuesto del grupo?",
+        "a": "No. Nunca. Es el error más común de los viajes de esquí. Los forfaits varían según la persona — de 6 días, de 3 días, solo zona de debutantes, ninguno para quien vino por el spa — así que meterlos al bote significa que los que esquían poco subvencionan a los que esquían mucho, y nadie dice nada hasta la última noche. Lo mismo con el alquiler: media grupo tiene material propio. Forfaits, alquiler y clases son líneas individuales. El bote común es para el chalet, la compra, las cenas de grupo y la gasolina."
+      },
+      {
+        "q": "¿Cómo se gestiona un grupo con niveles de esquí muy distintos?",
+        "a": "Decídelo antes de reservar, porque cambia la estación. Un gran dominio de altura le da terreno a todo el mundo pero es lo más caro; una estación pequeña es más barata y menos intimidante para los principiantes, pero aburre a los buenos esquiadores al tercer día. Pregunta a todos de entrada cuántos días quieren esquiar de verdad y si quieren clases — las respuestas suelen revelar que el grupo es más mixto de lo que nadie suponía. Y luego planifica la semana para que la gente esquíe por nivel y quede para comer, en vez de forzar un ritmo de grupo que no le va bien a nadie."
+      },
+      {
+        "q": "¿Cuándo deberíamos reservar un viaje de esquí para la temporada 2026-27?",
+        "a": "De septiembre a noviembre, y antes para las semanas de febrero. El alojamiento en la nieve se reserva normalmente con cuatro a seis meses de antelación, así que la búsqueda empieza a finales de verano y los mejores sitios para las semanas de vacaciones escolares ya no están en otoño. El orden importa: elige primero la semana, confirma con una encuesta quién viene de verdad y luego reserva — porque un chalet reservado antes de saber los números es como una persona acaba cargando con dos camas vacías."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Descubre más",
+    "tripWithFriends": {
+      "title": "Viaje con amigos",
+      "desc": "Planifica cualquier viaje en grupo sin hacer todo el trabajo tú solo.",
+      "cta": "Leer más →"
+    },
+    "groupGuide": {
+      "title": "Guía de viajes en grupo",
+      "desc": "El método completo paso a paso, del chat de grupo a la reserva.",
+      "cta": "Leer la guía →"
+    },
+    "worldCup": {
+      "title": "Planificador del Mundial 2026",
+      "desc": "Sigue a tu selección por 16 ciudades sede con el grupo.",
+      "cta": "Leer más →"
+    },
+    "bestApps": {
+      "title": "Mejores apps de viajes en grupo",
+      "desc": "Nuestra comparativa de las mejores herramientas para viajes en grupo.",
+      "cta": "Leer el artículo →"
+    }
+  },
+  "cta": {
+    "title": "Planifica tu viaje de esquí 2026-27",
+    "subtitle": "La semana, el chalet, quién viene, quién debe qué — un plan compartido que todo tu grupo puede ver.",
+    "button": "Empezar a planificar — gratis"
+  },
+  "jsonld": {
+    "articleHeadline": "Temporada de esquí 2026-27: cómo planificar el viaje de esquí en grupo",
+    "howToName": "Cómo planificar un viaje de esquí en grupo para la temporada 2026-27",
+    "howToDescription": "Elige la semana con el calendario de precios de la temporada, confirma quién viene de verdad antes de reservar, planifica la semana en grupo y reparte el chalet, los forfaits, el alquiler y la comida para que nadie acabe adelantando el viaje.",
+    "howToSteps": [
+      {
+        "name": "Elige la semana antes que nada",
+        "text": "La semana mueve tu coste total más que la estación. Las vacaciones escolares francesas de febrero van del 6 de febrero al 8 de marzo de 2027 en las tres zonas y son el pico de la temporada; enero y las semanas de apertura desde el 21 de noviembre de 2026 son las ventanas con mejor relación calidad-precio. Elige primero la semana — todo lo demás se deriva de ahí."
+      },
+      {
+        "name": "Confirma quién viene de verdad, con una encuesta",
+        "text": "No reserves nunca un chalet antes de saber los números. Haz una encuesta al grupo sobre las semanas candidatas con el precio de cada una, pregunta cuántos días de esquí quiere cada persona y quién necesita clases, y consigue compromisos reales. Un chalet reservado sobre suposiciones es como una persona acaba pagando dos camas vacías."
+      },
+      {
+        "name": "Reserva entre septiembre y noviembre",
+        "text": "El alojamiento en la nieve se reserva con cuatro a seis meses de antelación y los mejores sitios para las semanas de vacaciones ya no están en otoño. Reserva el alojamiento, luego el alquiler de material online, y después planifica el viaje de subida — un itinerario compartido que incluya el tráfico del sábado de cambio de turno, la cita en la tienda de alquiler y la compra en el súper."
+      },
+      {
+        "name": "Reparte por categoría, no por número de personas",
+        "text": "Solo el chalet, la compra, las cenas de grupo y la gasolina por coche van al bote común — y el chalet se reparte por cama, no por cabeza. Los forfaits, el alquiler, las clases y las comidas en la montaña quedan individuales, porque no todos esquían los mismos días ni todos alquilan. Registra la señal como gasto el mismo día en que se paga."
+      }
+    ]
+  }
+}

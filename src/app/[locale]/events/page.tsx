@@ -24,13 +24,21 @@ export function generateStaticParams() {
 
 // Structural (non-translatable) event data; localized copy lives in messages
 // and is merged by index via t.raw("events").
+// Order: chronological by event date, upcoming first, past events last.
+// Must stay in sync (length + order) with the `events` array in every
+// messages/<locale>/eventsIndex.json — they are merged by index.
 const eventMeta = [
-  { slug: "world-cup-2026-trip-planner", emoji: "⚽" },
-  { slug: "champions-league-final-2026-psg-arsenal", emoji: "🏆" },
-  { slug: "hellfest-2026-trip-planner", emoji: "🤘" },
-  { slug: "tomorrowland-2026-trip-planner", emoji: "🎶" },
   { slug: "solar-eclipse-2026-trip-planner", emoji: "🌑" },
+  { slug: "oktoberfest-2026-trip-planner", emoji: "🍺" },
+  { slug: "christmas-markets-2026-trip-planner", emoji: "🎄" },
+  { slug: "ski-season-2027-trip-planner", emoji: "⛷️" },
+  { slug: "solar-eclipse-2027-trip-planner", emoji: "🌘" },
+  { slug: "rugby-world-cup-2027-trip-planner", emoji: "🏉" },
+  { slug: "world-cup-2026-trip-planner", emoji: "⚽" },
+  { slug: "tomorrowland-2026-trip-planner", emoji: "🎶" },
   { slug: "ultra-europe-2026-trip-planner", emoji: "🎉" },
+  { slug: "hellfest-2026-trip-planner", emoji: "🤘" },
+  { slug: "champions-league-final-2026-psg-arsenal", emoji: "🏆" },
 ];
 
 type EventCopy = {

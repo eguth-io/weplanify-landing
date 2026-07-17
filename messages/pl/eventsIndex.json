@@ -1,17 +1,17 @@
 {
   "meta": {
-    "title": "Planery wyjazdów na wydarzenia 2026 — za darmo, dla grup",
-    "description": "Zaplanuj wyjazd na wydarzenie 2026 z WePlanify. Dedykowane darmowe planery na Mistrzostwa Świata FIFA, finał Ligi Mistrzów, Tomorrowland, Hellfest, Ultra Europe i całkowite zaćmienie Słońca — stworzone dla grup fanów, którzy podróżują razem."
+    "title": "Planery wyjazdów na wydarzenia 2026-2027 — za darmo, dla grup",
+    "description": "Zaplanuj wyjazd na wydarzenie 2026-2027 z WePlanify. Dedykowane darmowe planery na Mistrzostwa Świata FIFA, Oktoberfest, europejskie jarmarki bożonarodzeniowe, całkowite zaćmienie Słońca w 2027, Puchar Świata w rugby i więcej — stworzone dla grup fanów, którzy podróżują razem."
   },
   "hero": {
-    "tag": "Planery wyjazdów na wydarzenia 2026",
-    "title": "Zaplanuj wyjazd na wydarzenie\n2026 — razem",
-    "description": "Sześć dedykowanych planerów na największe wydarzenia roku. Wybierz swój, zbuduj wspólny plan podróży, podziel koszty i skoordynuj ekipę — wszystko za darmo.",
+    "tag": "Planery wyjazdów na wydarzenia 2026-2027",
+    "title": "Zaplanuj wyjazd na wydarzenie\n2026-2027 — razem",
+    "description": "Jedenaście dedykowanych planerów na największe wydarzenia najbliższych dwóch lat. Wybierz swój, zbuduj wspólny plan podróży, podziel koszty i skoordynuj ekipę — wszystko za darmo.",
     "cta": "Zacznij planować za darmo"
   },
   "intro": {
     "title": "Jeden planer na wydarzenie, stworzony dla grup",
-    "body": "Duże wydarzenia niosą dużą logistykę: mecze w różnych miastach gospodarzach, festiwalowe karnety dla 12-osobowej ekipy, pozwolenia na kemping, kolizje terminów na ostatnią chwilę. Każda z naszych stron wydarzeń 2026 jest stworzona pod to konkretne wydarzenie — tabele miast gospodarzy, prawdziwe harmonogramy, kruczki, które dopadają tylko fanów. Wybierz swój poniżej."
+    "body": "Duże wydarzenia niosą dużą logistykę: mecze w różnych miastach gospodarzach, festiwalowe karnety dla 12-osobowej ekipy, pozwolenia na kemping, kolizje terminów na ostatnią chwilę. Każda z naszych stron wydarzeń 2026-2027 jest stworzona pod to konkretne wydarzenie — tabele miast gospodarzy, prawdziwe harmonogramy, kruczki, które dopadają tylko fanów. Wybierz swój poniżej."
   },
   "cardCta": "Otwórz planer →",
   "cta": {
@@ -21,26 +21,50 @@
   },
   "breadcrumb": {
     "home": "Strona główna",
-    "events": "Wydarzenia 2026"
+    "events": "Wydarzenia"
   },
   "events": [
+    {
+      "title": "Całkowite zaćmienie Słońca — 12 sie 2026",
+      "date": "12 sierpnia 2026",
+      "location": "Islandia · Hiszpania · Grenlandia",
+      "description": "Wyjazd raz na dekadę po całkowite zaćmienie. Najlepsze punkty obserwacyjne, plany awaryjne na pogodę, noclegi rezerwowane 18 miesięcy wcześniej."
+    },
+    {
+      "title": "Oktoberfest 2026",
+      "date": "19 wrz – 4 paź 2026",
+      "location": "Monachium, Niemcy",
+      "description": "16 dni, 191. edycja, wstęp za darmo — ale w namiotach rezerwuje się stoły dla 10 osób, więc ekipa musi zaklepać miejsca wcześnie. Ceny hoteli w Monachium na ten czas szybują, a kolejkę Maßów zawsze ktoś stawia z własnej kieszeni."
+    },
+    {
+      "title": "Jarmarki bożonarodzeniowe 2026",
+      "date": "lis – gru 2026",
+      "location": "Europa",
+      "description": "Wiedeń, Colmar, Norymberga, Kolonia, Praga, Bruksela — każde miasto ma własne terminy, więc wybór weekendu przesądza o kierunku. Hotele wyprzedają się do września: rozstrzygnijcie głosowanie wcześnie."
+    },
+    {
+      "title": "Sezon narciarski 2026/27",
+      "date": "lis 2026 – maj 2027",
+      "location": "Alpy Francuskie",
+      "description": "Tignes i Val Thorens otwierają się 21 listopada, a zamykają 2 maja. Jedna osoba wykłada kasę na chalet, a karnety, wypożyczenie sprzętu i jedzenie rozkładają się nierówno — do tego tygodnie ferii w lutym kosztują więcej."
+    },
+    {
+      "title": "Całkowite zaćmienie Słońca — 2 sie 2027",
+      "date": "2 sierpnia 2027",
+      "location": "Egipt · Hiszpania · Maroko",
+      "description": "6 min 22 s fazy całkowitej nad Luksorem — najdłuższa w tym stuleciu na łatwo dostępnym lądzie. Dwanaście miesięcy na wybór między rejsem po Nilu a bazą na lądzie — brakuje nie miejsc, tylko zgody w grupie."
+    },
+    {
+      "title": "Puchar Świata w Rugby 2027",
+      "date": "paź – lis 2027",
+      "location": "Australia",
+      "description": "Pierwsza edycja z 24 drużynami, grupy już wylosowane. Loty dalekiego zasięgu rezerwuje się jakieś 12 miesięcy wcześniej, a kolejna sprzedaż biletów rusza 1 października 2026 — kto pierwszy, ten lepszy, więc ustalcie trasę po miastach, zanim w ogóle powstanie drabinka 1/8 finału."
+    },
     {
       "title": "Mistrzostwa Świata FIFA 2026",
       "date": "11 cze – 19 lip 2026",
       "location": "USA · Kanada · Meksyk",
       "description": "16 miast gospodarzy w trzech krajach. Zaplanuj trasę po wielu miastach, podziel koszty według kategorii i skoordynuj grupę fanów ponad granicami."
-    },
-    {
-      "title": "Finał Ligi Mistrzów 2026",
-      "date": "30 maja 2026",
-      "location": "Budapeszt, Węgry",
-      "description": "Największy klubowy finał roku na Puskás Aréna. Zaplanuj transport, hotel i przedmeczowe spotkanie ekipy."
-    },
-    {
-      "title": "Hellfest 2026",
-      "date": "19 – 22 cze 2026",
-      "location": "Clisson, Francja",
-      "description": "Cztery dni metalu w Clisson. Logistyka kempingu, wspólne przejazdy i arkusz line-up-na-scenę — wszystko w jednym wspólnym planie."
     },
     {
       "title": "Tomorrowland 2026",
@@ -49,16 +73,22 @@
       "description": "Bilety DreamVille, festiwalowe karnety, logistyka pociągów. Skoordynuj ekipę i wspólną kasę, żeby nikt nie gonił nikogo za 40 € tydzień później."
     },
     {
-      "title": "Całkowite zaćmienie Słońca — 12 sie 2026",
-      "date": "12 sierpnia 2026",
-      "location": "Islandia · Hiszpania · Grenlandia",
-      "description": "Wyjazd raz na dekadę po całkowite zaćmienie. Najlepsze punkty obserwacyjne, plany awaryjne na pogodę, noclegi rezerwowane 18 miesięcy wcześniej."
-    },
-    {
       "title": "Ultra Europe 2026",
       "date": "10 – 12 lip 2026",
       "location": "Split, Chorwacja",
       "description": "Trzy dni nad Adriatykiem. Hotel kontra Airbnb, logistyka festiwalowych karnetów i wypady po Dalmacji — dla ekipy, która chce czegoś więcej niż tylko głównej sceny."
+    },
+    {
+      "title": "Hellfest 2026",
+      "date": "19 – 22 cze 2026",
+      "location": "Clisson, Francja",
+      "description": "Cztery dni metalu w Clisson. Logistyka kempingu, wspólne przejazdy i arkusz line-up-na-scenę — wszystko w jednym wspólnym planie."
+    },
+    {
+      "title": "Finał Ligi Mistrzów 2026",
+      "date": "30 maja 2026",
+      "location": "Budapeszt, Węgry",
+      "description": "Największy klubowy finał roku na Puskás Aréna. Zaplanuj transport, hotel i przedmeczowe spotkanie ekipy."
     }
   ]
 }

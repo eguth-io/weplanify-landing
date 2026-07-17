@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "Saison de ski 2026-27 : organiser le week-end au ski entre potes",
+    "description": "Le planificateur gratuit du séjour au ski en groupe 2026-27. Choisis la bonne semaine (vacances de février 2027 : du 6 février au 8 mars), compare les stations et partage le chalet, les forfaits, la location et la bouffe sans que quelqu'un avance tout."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Saison de ski 2026-27 : le planificateur"
+  },
+  "hero": {
+    "tag": "Planificateur gratuit · Saison de ski 2026-27",
+    "title": "Ski 2026-27 : organise le séjour entre potes sans le bordel des comptes",
+    "readTime": "9 min de lecture"
+  },
+  "heroBody": "Les Alpes ouvrent le 21 novembre 2026 et les stations les plus hautes tiennent jusqu'au 2 mai 2027. Quelque part dans ces cinq mois, il y a ta semaine avec la bande — et la choisir, c'est la décision qui détermine tout le reste. Un séjour au ski en groupe, c'est le voyage le plus brutal à organiser : un chalet réservé quatre à six mois à l'avance, payé en une fois par quelqu'un qui avance l'argent, puis des forfaits, de la location, de la bouffe et de l'essence qui se partagent tous différemment parce que tout le monde ne skie pas, tout le monde ne loue pas, et tout le monde ne conduit pas. Voilà comment le gérer. Tu hésites encore entre les outils ? Jette un œil à notre <link>comparatif d'applis de voyage en groupe</link>.",
+  "facts": {
+    "title": "La saison 2026-27 en quatre chiffres",
+    "seasonLabel": "Saison",
+    "seasonValue": "21 nov → 2 mai",
+    "seasonNote": "Tignes, Val Thorens et Orelle ouvrent le 21 novembre 2026 ; Tignes et Val Thorens prévoient de fermer le 2 mai 2027",
+    "holidaysLabel": "Semaines rouges",
+    "holidaysValue": "6 fév → 8 mars",
+    "holidaysNote": "Vacances de février 2027, zones C, A puis B — les quatre semaines les plus chères de la saison",
+    "passLabel": "Forfait 6 jours",
+    "passValue": "421 €",
+    "passNote": "Forfait 3 Vallées adulte 6 jours à partir du 19 décembre 2026 — 378,90 € du 5 au 18 déc. et du 10 au 18 avril",
+    "bookLabel": "Réserver",
+    "bookValue": "Sept-nov",
+    "bookNote": "L'hébergement au ski se réserve 4 à 6 mois à l'avance ; les bons chalets de février partent à l'automne"
+  },
+  "problem": {
+    "p1": "Voilà comment ça se passe vraiment. Quelqu'un trouve un chalet en septembre. Huit couchages, X € la semaine, et le proprio veut un acompte sous 48 heures. Une seule personne sort sa carte. En décembre, deux se sont désistés, un pote a invité un cousin que personne ne connaît, et celui qui a avancé 2 400 € attend toujours quatre virements. Puis vous arrivez : trois prennent un forfait 6 jours, un prend 3 jours, un ne skie pas du tout et veut juste le spa. Deux ont leur matos, quatre louent. Deux voitures se partagent l'essence et les péages n'importe comment. Tout le monde paie une tournée. Et le dernier soir, quelqu'un ouvre une appli de notes et essaie de reconstituer une semaine de dépenses de mémoire.",
+    "p2": "Le problème, ce n'est pas que les maths soient dures. C'est que personne n'a la même vision de ce qui a été dépensé, par qui, pour qui. Un séjour au ski a plus de lignes partagées-mais-inégales que n'importe quel autre <link>voyage entre amis</link> — et c'est exactement pour ça qu'il part en vrille.",
+    "p3": "WePlanify, c'est le plan partagé gratuit du séjour au ski en groupe : la semaine choisie, le chalet, qui vient, qui doit quoi et qui a déjà payé — au même endroit."
+  },
+  "toc": {
+    "title": "Sur cette page",
+    "when": "Quand partir : le calendrier des prix",
+    "resorts": "Quelle station pour ton groupe",
+    "budget": "Ce que coûte vraiment une semaine",
+    "group": "L'organiser à plusieurs",
+    "faq": "Questions fréquentes"
+  },
+  "when": {
+    "title": "Quand partir : le calendrier des prix 2026-27",
+    "subtitle": "La semaine que tu choisis fait bouger ton budget plus que la station, le chalet ou tout ce sur quoi vous allez vous engueuler. Voici les six fenêtres de la saison, dans l'ordre.",
+    "priceLabel": "Prix",
+    "windows": [
+      {
+        "window": "L'ouverture",
+        "dates": "21 nov – 18 déc 2026",
+        "price": "Le plus bas de la saison",
+        "verdict": "Tignes, Val Thorens et Orelle ouvrent le 21 novembre, Val d'Isère, Les 2 Alpes et Chamonix suivent le 28 novembre, Courchevel le 5 décembre, Méribel et Les Menuires le 6 décembre. Uniquement de l'altitude, et la moitié basse des domaines ne tourne pas encore. Mais le forfait 6 jours 3 Vallées est à 378,90 € au lieu de 421 € entre le 5 et le 18 décembre, et l'hébergement est au plus bas de la saison. Si ta bande vient pour skier et pas pour bronzer, c'est la fenêtre que personne ne réserve."
+      },
+      {
+        "window": "Noël et Nouvel An",
+        "dates": "19 déc 2026 – début janv. 2027",
+        "price": "Plein tarif partout",
+        "verdict": "Forfaits plein tarif (421 € les six jours en 3 Vallées à partir du 19 décembre), hébergement au maximum, et toute l'Europe en famille en même temps. La neige en bas est une loterie en décembre. À moins que le groupe veuille précisément être en station au Nouvel An, cette fenêtre, c'est de l'argent mal dépensé."
+      },
+      {
+        "window": "Janvier",
+        "dates": "Début janv. – 5 fév. 2027",
+        "price": "Hébergement bas, forfait plein tarif",
+        "verdict": "La fenêtre des connaisseurs. Tout est ouvert, le manteau neigeux est en place, les pistes sont vides, et les prix d'hébergement s'effondrent entre la foule du Nouvel An et les vacances de février. Le forfait est plein tarif, mais le chalet — ta plus grosse ligne — est au plus bas avec toutes les remontées qui tournent. Si personne dans le groupe n'a d'enfants scolarisés, c'est la réponse."
+      },
+      {
+        "window": "Vacances de février",
+        "dates": "6 fév – 8 mars 2027",
+        "price": "Le plus cher de la saison",
+        "verdict": "Quatre semaines d'affilée où les trois zones françaises défilent : zone C à partir du 6 février, zone A à partir du 13 février, zone B à partir du 20 février, la dernière rentre le 8 mars. Ajoute les vacances suisses, britanniques, néerlandaises et belges et tu obtiens : plein tarif sur tout, la queue à chaque remontée, et des chalets à deux ou trois fois le tarif de janvier. Si vous êtes un groupe d'adultes, éviter ces quatre semaines réduit votre budget plus que n'importe quelle autre décision de cette page."
+      },
+      {
+        "window": "Mars",
+        "dates": "9 mars – 9 avril 2027",
+        "price": "Intermédiaire",
+        "verdict": "La fenêtre sous-cotée. Le manteau neigeux est au plus épais après un hiver complet, les journées sont longues, les terrasses sont chaudes et les foules des vacances sont parties. Les prix d'hébergement redescendent en tarif intermédiaire dès la semaine qui suit la rentrée de la dernière zone. Pour un groupe qui veut skier et voir le soleil en terrasse, mars bat février sur tous les tableaux sauf les chances de poudreuse."
+      },
+      {
+        "window": "Fin de saison",
+        "dates": "10 avril – 2 mai 2027",
+        "price": "Le plus bas de la saison",
+        "verdict": "Le forfait 6 jours 3 Vallées redescend à 378,90 € du 10 au 18 avril, et Tignes et Val Thorens prévoient de tourner jusqu'au 2 mai 2027. La neige devient aléatoire sous ~2 000 m et les stations basses commencent à fermer des secteurs : cette fenêtre ne marche qu'en altitude. Mais tu skies en t-shirt, tu paies le tarif d'ouverture, et la montagne est à vous."
+      }
+    ],
+    "zonesNote": "Les zones scolaires françaises pour 2027 : la zone C, c'est Paris, Créteil, Versailles, Montpellier et Toulouse (du 6 au 22 février) ; la zone A, c'est Grenoble, Lyon, Bordeaux, Dijon, Besançon, Clermont-Ferrand, Limoges et Poitiers (du 13 février au 1er mars) ; la zone B, c'est Lille, Nice, Aix-Marseille, Nantes, Rennes, Strasbourg, Nancy-Metz, Reims, Amiens, la Normandie et Orléans-Tours (du 20 février au 8 mars). Si ton groupe est réparti sur plusieurs zones, les semaines de recoupement sont celles que tout le monde peut faire — et celles que tout le monde fait aussi. Les dates d'ouverture et de fermeture sont les prévisions annoncées par les stations et bougent toujours avec l'enneigement."
+  },
+  "resorts": {
+    "title": "Quelle station pour ton groupe",
+    "subtitle": "Trois profils honnêtes. Prends celui qui correspond à ce que ton groupe optimise vraiment — pas celui qui a les plus belles photos.",
+    "cards": [
+      {
+        "tag": "Option A",
+        "title": "Haute altitude, grand domaine",
+        "subtitle": "Tignes, Val Thorens, Val d'Isère, Les 2 Alpes",
+        "pros": [
+          "Neige garantie de fin novembre à fin avril",
+          "Ouvrent le plus tôt (21-28 nov. 2026) et ferment le plus tard (2 mai 2027)",
+          "Domaines liés immenses — chaque niveau trouve son terrain",
+          "Le skis-aux-pieds est la norme : zéro logistique de navette"
+        ],
+        "cons": [
+          "L'hébergement et les forfaits les plus chers",
+          "Architecture de station intégrée, pas de village carte postale",
+          "Au-dessus des arbres : un jour de brouillard, plus aucune visibilité nulle part"
+        ],
+        "verdict": "Le bon choix si vous partez tôt, tard, ou si l'angoisse du manque de neige gâcherait le séjour."
+      },
+      {
+        "tag": "Option B",
+        "title": "Le classique d'altitude moyenne",
+        "subtitle": "Courchevel, Méribel, Les Menuires, La Plagne, Alpe d'Huez",
+        "pros": [
+          "Le meilleur équilibre taille de domaine / ambiance / prix",
+          "Des pistes en forêt qui restent skiables par mauvaise visibilité",
+          "De vrais villages, de vrais restos, de quoi faire hors des pistes",
+          "Un large éventail de logements — la même station peut convenir à deux budgets"
+        ],
+        "cons": [
+          "Ouvre plus tard (5-6 déc. 2026 pour les villages des 3 Vallées)",
+          "Les secteurs bas dépendent de la neige de culture en décembre et en avril",
+          "La queue aux goulets d'étranglement du domaine lié en semaines rouges"
+        ],
+        "verdict": "L'option par défaut pour une semaine de groupe en janvier ou en mars. Difficile de se planter."
+      },
+      {
+        "tag": "Option C",
+        "title": "Petite station, grosses économies",
+        "subtitle": "Petits domaines, villages de vallée, Pyrénées et Vosges",
+        "pros": [
+          "Hébergement et forfaits à une fraction des stations vitrines",
+          "Pas de queue aux remontées, même en février",
+          "Accessible en voiture depuis plus de régions — l'essence partagée bat l'avion",
+          "Les débutants ne paient pas pour 600 km de pistes qu'ils ne skieront jamais"
+        ],
+        "cons": [
+          "Terrain limité — les bons skieurs s'ennuient au bout de trois jours",
+          "Plus de risque d'enneigement, saison plus courte",
+          "Peu d'alternatives si la météo ferme les remontées du haut"
+        ],
+        "verdict": "Le choix malin quand la moitié du groupe débute, ou quand le séjour est surtout une histoire de bande."
+      }
+    ],
+    "levelsTitle": "Le problème des niveaux que personne n'anticipe",
+    "levelsBody": "Chaque groupe a une personne qui veut être la première à la remontée et hors-piste à 10 h, et une autre qui met des skis pour la troisième fois de sa vie. Sans rien faire, cet écart gâche les deux semaines : le bon skieur passe cinq jours sur des vertes en le vivant mal, le débutant passe cinq jours terrifié en faisant semblant que non. Réglez ça avant de réserver, pas sur le premier télésiège. <link>Lance un sondage</link> sur les vraies questions — combien de jours de ski chacun veut, qui veut des cours, qui veut une journée off, est-ce que quelqu'un ne skie pas du tout — parce que les réponses changent la station, la durée du forfait que chacun achète, et le budget. Quelqu'un qui skie deux jours sur six ne devrait pas acheter un forfait 6 jours, et ne devrait pas le découvrir le jour 1."
+  },
+  "midCta": {
+    "title": "Verrouille la semaine avant que les chalets partent",
+    "subtitle": "Choisis les dates, vois qui est vraiment partant, et lance le budget partagé avant que quelqu'un avance l'acompte.",
+    "button": "Commencer — c'est gratuit"
+  },
+  "budget": {
+    "title": "Ce que coûte vraiment une semaine au ski",
+    "subtitle": "Cinq lignes, cinq façons différentes de partager. C'est la section qui décide si vos amitiés survivent au séjour.",
+    "splitLabel": "Se partage",
+    "lines": [
+      {
+        "item": "L'hébergement",
+        "amount": "La plus grosse ligne, de loin",
+        "split": "Au lit, pas à la tête",
+        "gotcha": "Réservé quatre à six mois avant, payé en une fois par une seule personne. Cette personne est devenue la banque du groupe, sans échéancier. Le même chalet peut coûter deux à trois fois plus cher pendant les vacances de février qu'en janvier — la semaine choisie fait bouger ce chiffre plus que la station. Partage au lit : le couple dans la chambre double et celui qui dort dans le lit superposé sous l'escalier ne paient pas pareil."
+      },
+      {
+        "item": "Le forfait",
+        "amount": "421 € / 6 jours",
+        "split": "Individuel, jamais dans le pot",
+        "gotcha": "Le forfait 3 Vallées adulte 6 jours est à 421 € à partir du 19 décembre 2026, et à 378,90 € du 5 au 18 décembre et du 10 au 18 avril. Chacun achète le sien, pour son propre nombre de jours — cette ligne ne doit jamais aller dans le pot commun, sinon celui qui skie deux jours subventionne celui qui en skie six."
+      },
+      {
+        "item": "La location de matos",
+        "amount": "90-150 € / semaine",
+        "split": "Individuel",
+        "gotcha": "Un pack adulte standard — skis, chaussures, bâtons, casque — tourne autour de 90 à 150 € la semaine, plus cher en matériel performance. La moitié du groupe a son propre matos et ne paie rien ici : c'est exactement pour ça que ça ne peut pas être une dépense commune. Réserve en ligne avant de partir : débarquer dans un magasin le samedi d'une semaine de vacances, c'est la version chère."
+      },
+      {
+        "item": "La bouffe et les verres",
+        "amount": "En continu, inégal, sans fin",
+        "split": "Pot commun + individuel",
+        "gotcha": "Celle qui génère le plus de rancune, en silence. Le gros plein de courses en bas de la vallée, les dîners au chalet, la tartiflette à 18 € en terrasse, les tournées. Sépare : courses et dîners de groupe dans le pot commun, tout ce qui se consomme sur la montagne reste individuel. Note chaque dépense le jour où elle tombe, avec qui a payé et pour qui."
+      },
+      {
+        "item": "Le trajet",
+        "amount": "Ça dépend entièrement du mode",
+        "split": "Par voiture, pas par personne",
+        "gotcha": "Deux voitures, quatre passagers chacune, l'un roule au diesel et l'autre en électrique, les péages sur un seul itinéraire, et celui qui a conduit a aussi payé le parking. Partage l'essence et les péages par véhicule, entre les passagers de ce véhicule. Si certains prennent l'avion vers Genève ou Lyon puis une navette, c'est leur ligne — ne la mélange pas avec celle des conducteurs."
+      }
+    ],
+    "p1": "La règle qui sauve les séjours au ski : rien ne va dans le pot commun sauf si chaque personne en profite exactement pareil. C'est le chalet, les courses, les dîners de groupe, l'essence par voiture. Tout le reste — forfaits, location, cours, déjeuners sur les pistes, l'après-midi spa des deux qui ne skient pas — est individuel et reste individuel. Mets en place un <link>budget partagé</link> avec une catégorie par ligne avant de partir, et laisse chacun saisir ses dépenses au fil de l'eau. Le pote qui a avancé l'acompte du chalet en octobre ne devrait pas encore courir après des virements en mars.",
+    "p2": "Traite l'acompte sérieusement. Quelqu'un pose 2 000 € ou plus sur sa carte à l'automne pour un séjour qui a lieu en février : c'est un vrai prêt de quatre mois entre potes que personne n'appelle jamais un prêt. Note-le comme une dépense le jour où il est payé, avec les autres participants marqués comme devant leur part, et demande les virements à ce moment-là — pendant que le séjour excite tout le monde. Pas sur le parking de l'aéroport au retour.",
+    "p3": "Ensuite, fixez la règle d'annulation avant que quiconque paie quoi que ce soit. Quelqu'un va se désister — ce n'est pas du pessimisme, c'est tous les voyages de groupe de l'histoire. Décidez, par écrit, dans le plan : est-ce que sa part est remboursée, est-ce qu'il la couvre jusqu'à trouver un remplaçant, ou est-ce que le groupe l'absorbe ? Trente secondes d'accord en septembre évitent la pire conversation de l'année en janvier."
+  },
+  "pullQuote": "La semaine décide du budget. Le partage décide des amitiés. Le reste, c'est juste du ski.",
+  "group": {
+    "title": "L'organiser à plusieurs",
+    "p1": "Commence en septembre, pas en décembre. L'hébergement au ski se réserve quatre à six mois à l'avance — les bons chalets des semaines de février sont partis dès l'automne, et en décembre tu choisis entre un logement trop loin des pistes, une station que personne ne voulait, ou payer le prix fort pour les deux. Sauf que tu ne peux pas réserver tant que tu ne sais pas qui vient, et tu ne sais pas qui vient tant que la semaine n'est pas choisie. Alors commence par là : <link>lance un sondage</link> sur trois ou quatre semaines candidates, avec le contexte prix pour chacune — les gens choisissent très différemment quand ils voient que la semaine de février coûte le double. Récupère de vrais engagements, puis réserve.",
+    "p2": "Une semaine au ski a un rythme sur lequel le groupe doit se mettre d'accord, pas juste un lieu. On part du chalet à quelle heure ? On skie ensemble ou on se sépare par niveau et on se retrouve au déjeuner ? Qui cuisine quel soir ? Est-ce qu'il y a une journée off en milieu de semaine et est-ce que tout le monde la prend ? Mets tout ça dans un <link>itinéraire partagé</link> — y compris la montée en voiture, les bouchons du samedi de changement de semaine à l'aller, le rendez-vous au magasin de location et le plein de courses. Une station de ski un samedi de vacances, c'est le pire trafic d'Europe. Planifie l'arrivée comme une étape du séjour, parce que c'en est une.",
+    "p3": "Attribue le matériel commun comme le reste. Un appareil à raclette, pas quatre. Chaînes ou pneus hiver dans chaque voiture — obligatoires dans les communes de montagne, et l'amende n'est pas le sujet : le sujet, c'est de monter les 15 derniers kilomètres. Quelqu'un prend l'enceinte, quelqu'un prend les jeux de société pour le jour de brouillard, quelqu'un prend la trousse à pharmacie. Une liste partagée avec un nom en face de chaque objet évite le grand classique de l'arrivée : trois planches à fromage et zéro tire-bouchon.",
+    "p4": "Tout ce qui précède, c'est juste la version ski du même problème que tous les voyages de groupe : trop de décisions, trop de payeurs, aucune source de vérité partagée. Si tu veux la méthode générale — comment faire passer un groupe d'une conversation WhatsApp à un voyage réservé sans qu'une seule personne fasse tout le boulot — on a tout écrit dans notre <link>guide complet pour organiser un voyage de groupe</link>."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Quand ouvrent les stations de ski pour la saison 2026-27 ?",
+        "a": "Tignes, Val Thorens et Orelle prévoient d'ouvrir en premier, le 21 novembre 2026, grâce à leur accès glacier et à leur altitude. Val d'Isère, Les 2 Alpes et Chamonix suivent le 28 novembre, Courchevel et La Tania le 5 décembre, Méribel et Les Menuires le 6 décembre 2026. La plupart des autres stations françaises ouvrent courant décembre. À l'autre bout, Tignes et Val Thorens prévoient de tourner jusqu'au 2 mai 2027, et Les 2 Alpes garde son glacier ouvert jusqu'à l'été. Toutes ces dates sont les prévisions publiées par les stations et bougent toujours avec l'enneigement."
+      },
+      {
+        "q": "Quelles sont les dates des vacances de février 2027 ?",
+        "a": "La zone C (Paris, Créteil, Versailles, Montpellier, Toulouse) part du 6 au 22 février 2027. La zone A (Grenoble, Lyon, Bordeaux, Dijon, Besançon, Clermont-Ferrand, Limoges, Poitiers) part du 13 février au 1er mars. La zone B (Lille, Nice, Aix-Marseille, Nantes, Rennes, Strasbourg, Nancy-Metz, Reims, Amiens, Normandie, Orléans-Tours) part du 20 février au 8 mars. Autrement dit, les stations sont en mode haute saison pendant quatre semaines d'affilée, du 6 février au 8 mars 2027 — la période la plus chère de la saison."
+      },
+      {
+        "q": "Quelle est la semaine la moins chère pour skier en 2026-27 ?",
+        "a": "Deux fenêtres. L'ouverture (5-18 décembre 2026) et la fin de saison (10-18 avril 2027) : le forfait 6 jours adulte 3 Vallées y est à 378,90 € au lieu de 421 €, et l'hébergement est au plus bas. Le hic, c'est l'enneigement : début décembre, seules les stations d'altitude sont vraiment ouvertes, et mi-avril les secteurs bas ferment. Les deux marchent bien si tu vises haut — Tignes, Val Thorens, Val d'Isère, Les 2 Alpes. La troisième option, et la meilleure globalement, c'est janvier : forfait plein tarif mais hébergement pas cher avec toutes les remontées qui tournent."
+      },
+      {
+        "q": "Combien coûte une semaine au ski en groupe, par personne ?",
+        "a": "Ça dépend presque entièrement de la semaine et de l'hébergement, c'est pour ça qu'on ne te donnera pas une fausse moyenne. Les parties fixes sur lesquelles tu peux t'appuyer : un forfait 3 Vallées adulte 6 jours est à 421 € (378,90 € début décembre et mi-avril), et un pack de location standard skis + chaussures + bâtons + casque tourne autour de 90-150 € la semaine. L'hébergement est la ligne la plus grosse et la plus variable — le même chalet peut coûter deux à trois fois plus cher pendant les vacances de février qu'en janvier. Puis la bouffe, l'essence et les cours par-dessus. Construis-le ligne par ligne dans un budget partagé plutôt que de deviner un montant par personne."
+      },
+      {
+        "q": "Comment partager le prix d'un chalet équitablement ?",
+        "a": "Au lit, pas à la tête. Quelqu'un dans une chambre double privée avec salle de bain et quelqu'un dans un lit superposé sous les combles n'ont pas la même chose et ne devraient pas payer pareil. Fixez la répartition par chambre avant de réserver, pas après que tout le monde ait choisi sa piaule à l'arrivée. Et note l'acompte comme une dépense le jour où il est payé — la personne qui a avancé 2 000 € en octobre est créancière à partir de ce jour-là, pas à partir du retour."
+      },
+      {
+        "q": "Le forfait doit-il aller dans le budget commun ?",
+        "a": "Non. Jamais. C'est l'erreur numéro un du séjour au ski. Les forfaits varient d'une personne à l'autre — 6 jours, 3 jours, espace débutant seulement, rien du tout pour celui qui est venu pour le spa — donc les mettre en commun revient à faire subventionner les gros skieurs par les petits, et personne ne dit rien jusqu'au dernier soir. Pareil pour la location : la moitié du groupe a son matos. Forfaits, location et cours sont des lignes individuelles. Le pot commun, c'est le chalet, les courses, les dîners de groupe et l'essence."
+      },
+      {
+        "q": "Comment gérer un groupe avec des niveaux de ski très différents ?",
+        "a": "Décidez-le avant de réserver, parce que ça change la station. Un grand domaine d'altitude donne du terrain à tout le monde mais coûte le plus cher ; une petite station est moins chère et moins intimidante pour les débutants mais ennuie les bons skieurs au bout de trois jours. Demandez à chacun, dès le départ, combien de jours il veut vraiment skier et s'il veut des cours — les réponses révèlent en général que le groupe est plus hétérogène que tout le monde le pensait. Ensuite, planifiez la semaine pour que les gens skient par niveau et se retrouvent au déjeuner, plutôt que d'imposer un rythme de groupe qui ne convient à personne."
+      },
+      {
+        "q": "Quand faut-il réserver un séjour au ski pour la saison 2026-27 ?",
+        "a": "De septembre à novembre, et plus tôt pour les semaines de février. L'hébergement au ski se réserve en général quatre à six mois à l'avance : les recherches démarrent en fin d'été et les meilleurs logements des semaines de vacances scolaires sont partis dès l'automne. L'ordre compte : choisis la semaine d'abord, confirme qui est vraiment partant avec un sondage, puis réserve — parce qu'un chalet réservé avant de connaître le nombre, c'est comme ça qu'une personne se retrouve à porter deux lits vides."
+      }
+    ]
+  },
+  "discover": {
+    "title": "À découvrir aussi",
+    "tripWithFriends": {
+      "title": "Voyage entre amis",
+      "desc": "Organise un voyage de groupe sans tout faire tout seul.",
+      "cta": "Lire la suite →"
+    },
+    "groupGuide": {
+      "title": "Guide du voyage de groupe",
+      "desc": "La méthode complète, de la conversation WhatsApp au voyage réservé.",
+      "cta": "Lire le guide →"
+    },
+    "worldCup": {
+      "title": "Planificateur Coupe du Monde 2026",
+      "desc": "Suis ton équipe à travers 16 villes hôtes avec la bande.",
+      "cta": "Lire la suite →"
+    },
+    "bestApps": {
+      "title": "Meilleures applis de voyage en groupe",
+      "desc": "Notre comparatif des meilleurs outils pour les voyages à plusieurs.",
+      "cta": "Lire l'article →"
+    }
+  },
+  "cta": {
+    "title": "Organise ton séjour au ski 2026-27",
+    "subtitle": "La semaine, le chalet, qui vient, qui doit quoi — un seul plan partagé que toute la bande peut voir.",
+    "button": "Commencer — c'est gratuit"
+  },
+  "jsonld": {
+    "articleHeadline": "Saison de ski 2026-27 : comment organiser le séjour au ski entre potes",
+    "howToName": "Comment organiser un séjour au ski en groupe pour la saison 2026-27",
+    "howToDescription": "Choisir la semaine grâce au calendrier des prix de la saison, confirmer qui vient vraiment avant de réserver, planifier la semaine à plusieurs, et partager le chalet, les forfaits, la location et la bouffe pour que personne ne finisse par avancer le séjour.",
+    "howToSteps": [
+      {
+        "name": "Choisir la semaine avant tout le reste",
+        "text": "La semaine fait bouger ton budget total plus que la station. Les vacances de février 2027 s'étalent du 6 février au 8 mars sur les trois zones et constituent le pic de la saison ; janvier et les semaines d'ouverture à partir du 21 novembre 2026 sont les fenêtres à bon rapport qualité-prix. Choisis la semaine d'abord — tout le reste en découle."
+      },
+      {
+        "name": "Confirmer qui vient vraiment, avec un sondage",
+        "text": "Ne réserve jamais un chalet avant de connaître le nombre. Sonde le groupe sur des semaines candidates avec le prix associé à chacune, demande combien de jours de ski chacun veut et qui a besoin de cours, et récupère de vrais engagements. Un chalet réservé sur des suppositions, c'est comme ça qu'une personne finit par payer deux lits vides."
+      },
+      {
+        "name": "Réserver entre septembre et novembre",
+        "text": "L'hébergement au ski se réserve quatre à six mois à l'avance et les meilleurs logements des semaines de vacances sont partis dès l'automne. Réserve le logement, puis la location en ligne, puis planifie la montée — un itinéraire partagé qui inclut les bouchons du samedi de changement de semaine, le créneau au magasin de location et le plein de courses."
+      },
+      {
+        "name": "Partager par catégorie, pas par nombre de têtes",
+        "text": "Seuls le chalet, les courses, les dîners de groupe et l'essence par voiture vont dans le pot commun — le chalet se partageant au lit, pas à la tête. Forfaits, location, cours et déjeuners sur les pistes restent individuels, parce que tout le monde ne skie pas le même nombre de jours et tout le monde ne loue pas. Note l'acompte comme une dépense le jour où il est payé."
+      }
+    ]
+  }
+}

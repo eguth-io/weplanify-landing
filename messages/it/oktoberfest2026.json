@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "title": "Pianificatore di viaggi per l'Oktoberfest 2026 — Gratis, per gruppi",
+    "description": "Pianificatore gratuito di viaggi per l'Oktoberfest 2026 per gruppi. Monaco di Baviera, Theresienwiese, dal 19 settembre al 4 ottobre. Blocca un tavolo in tenda per tutta la combriccola, dividi il Maß e l'hotel e mettetevi d'accordo su una data — nessuna agenzia, nessun abbonamento."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Pianificatore di viaggi per l'Oktoberfest 2026"
+  },
+  "hero": {
+    "tag": "Pianificatore di viaggi gratuito · Oktoberfest 2026",
+    "title": "Pianificatore di viaggi per l'Oktoberfest 2026: tutta la combriccola allo stesso tavolo",
+    "intro": "Il 191° Oktoberfest si tiene da sabato 19 settembre a domenica 4 ottobre 2026 sulla Theresienwiese di Monaco di Baviera. L'ingresso è gratuito, la birra no, e l'unica cosa che decide se il vostro viaggio funziona è un tavolo da prenotare con mesi di anticipo — in blocchi da dieci posti, per un giorno preciso, in una tenda precisa. Prima ancora di essere una decisione di viaggio, è una decisione di gruppo. Ecco come prenderla senza perdere tre amici per strada in una chat di gruppo. Se stai ancora scegliendo gli strumenti, guarda il nostro <apps>confronto delle app per viaggi di gruppo</apps>.",
+    "readTime": "9 min di lettura",
+    "ctaButton": "Organizza la tua Wiesn",
+    "ctaNote": "Gratis. Nessuna carta. Invita il gruppo con un link."
+  },
+  "facts": {
+    "heading": "Oktoberfest 2026 in breve",
+    "datesLabel": "Date",
+    "datesValue": "19 set – 4 ott",
+    "datesSub": "16 giorni, 191ª edizione",
+    "priceLabel": "Un Maß di birra",
+    "priceValue": "14,80–15,90 €",
+    "priceSub": "Forbice ufficiale 2026",
+    "tentsLabel": "Tende",
+    "tentsValue": "14 + 21",
+    "tentsSub": "Grandi e piccole",
+    "entryLabel": "Ingresso",
+    "entryValue": "0 €",
+    "entrySub": "Area e tende sono gratuite"
+  },
+  "stakes": {
+    "p1": "L'Oktoberfest sembra il viaggio di gruppo più facile d'Europa. Ingresso gratuito, un'unica location, sedici giorni tra cui scegliere, sei milioni di persone che ce la fanno ogni anno. Poi provi davvero a organizzare otto amici e crolla tutto in un modo molto preciso: la tenda che volevi ha aperto le prenotazioni ad aprile e ha bruciato i suoi sabati in un pomeriggio, i tavoli si prenotano a blocchi da dieci quindi il tuo gruppo da sei deve trovarne altri quattro o pagare posti vuoti, due persone possono solo il primo weekend e due solo il secondo, una camera d'hotel a Monaco che a luglio costa 130 € durante il weekend della Wiesn costa il triplo, e qualcuno ha già anticipato 400 € di buoni consumazione sulla propria carta e gradirebbe parecchio riaverli indietro.",
+    "p2": "Niente di tutto questo è un problema di birra. È un problema di coordinamento — ed è esattamente per questo che è nato WePlanify: un unico piano condiviso dove il giorno, la tenda, i letti e i soldi sono visibili a tutti, gratis."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "howItWorks": "Come funziona davvero la Wiesn",
+    "reservations": "Prenotazioni in tenda: la trappola dei gruppi",
+    "logistics": "Come arrivare e dove dormire",
+    "planning": "Organizzarla con il gruppo",
+    "budget": "Budget e divisione delle spese",
+    "faq": "Domande frequenti"
+  },
+  "howItWorks": {
+    "title": "Come funziona davvero la Wiesn",
+    "subtitle": "Cinque cose che ogni gruppo alle prime armi sbaglia. Azzeccale e il resto è solo birra.",
+    "items": [
+      {
+        "stop": "L'ingresso è gratuito — la vera moneta è il tavolo",
+        "desc": "Nessuno vende un biglietto per l'Oktoberfest. La Theresienwiese è aperta, le tende sono aperte, e puoi entrare in qualsiasi tenda senza pagare un centesimo. Quello che non puoi fare è presentarti alle 18 di sabato e trovare dieci posti insieme. La birra viene servita solo a chi è seduto, quindi un tavolo non è un lusso in più — è tutto il viaggio. Tutto il resto del piano dipende da quale tavolo, in quale giorno.",
+        "link": "/features/itinerary"
+      },
+      {
+        "stop": "Le prenotazioni si fanno a blocchi da dieci",
+        "desc": "Le tende prenotano tavoli interi, non singoli posti — di solito dieci persone, a volte otto. Non esiste un sistema di prenotazione centralizzato: ognuna delle 14 tende grandi ha il proprio portale e apre in una data propria, indicativamente tra metà e fine aprile per le prime (Schottenhamel, Hofbräu), tra inizio e metà maggio per la maggior parte delle tende dei birrifici, e tra fine maggio e inizio giugno per le ultime (Augustiner, Käfer, Schützen, Weinzelt). Un gruppo di sei o recluta altre quattro persone o si mangia il costo di quattro sedie vuote.",
+        "link": "/features/polls"
+      },
+      {
+        "stop": "La prenotazione è gratis, i buoni no",
+        "desc": "Non paghi per tenere il tavolo. Paghi in anticipo i Verzehrgutscheine — i buoni consumazione per la birra e il cibo che il tuo tavolo ordinerà. Nelle navate centrali il minimo è di solito due Maß e mezzo pollo arrosto a testa; palchetti e gallerie aggiungono circa 18 € di buoni. Per dieci persone è una bella cifra che esce dal conto in banca di una sola persona, con mesi di anticipo, per conto di tutti gli altri.",
+        "link": "/features/budget"
+      },
+      {
+        "stop": "Un quarto di ogni tenda è senza prenotazione, per legge",
+        "desc": "Monaco obbliga le tende a tenere dei posti liberi. Di regola il 25% dei posti non è prenotabile, e nei weekend e nei giorni festivi metà tenda resta non prenotabile fino alle 15, per poi scendere al 25%. È il tuo piano B ed è un piano B vero — ma significa arrivare presto, tutti insieme, e mettersi d'accordo prima su chi fa la fila.",
+        "link": "/features/planning"
+      },
+      {
+        "stop": "C'è un secondo festival, più tranquillo, proprio accanto",
+        "desc": "La Oide Wiesn è la sezione storica recintata, con le sue tende, le giostre d'epoca, le bande di ottoni e un pubblico più tranquillo. L'ingresso costa 4 € — l'unica cosa di tutta la Theresienwiese per cui si compra un biglietto. È la risposta per chi nel gruppo vuole la festa senza farsi schiacciare nell'Hofbräu-Festzelt alle 21.",
+        "link": "/features/explore"
+      }
+    ]
+  },
+  "reservations": {
+    "title": "Prenotazioni in tenda: la trappola dei gruppi",
+    "subtitle": "Due modi per far sedere dieci persone. Funzionano entrambi. Ma chiedono al gruppo cose completamente diverse.",
+    "reservedLabel": "Opzione A",
+    "reservedTitle": "Prenotare un tavolo",
+    "reservedItems": [
+      "Prenoti un tavolo intero: dieci posti, a volte otto. Non sei.",
+      "Prenotare è gratis — ma paghi in anticipo i buoni consumazione.",
+      "Ogni tenda ha il proprio portale e il proprio giorno di apertura. Nessun sistema centralizzato.",
+      "I sabati e il weekend di chiusura volano via per primi. I pranzi infrasettimanali si trovano.",
+      "Ti serve il numero definitivo di partecipanti mesi prima del viaggio — ed è lì la difficoltà.",
+      "I buoni non utilizzati restano validi per tutta la festa, e possono essere spesi nei ristoranti del catering almeno fino al 31 ottobre oppure rimborsati per intero."
+    ],
+    "walkInLabel": "Opzione B",
+    "walkInTitle": "Entrare come tutti gli altri",
+    "walkInItems": [
+      "Il 25% dei posti non è mai prenotabile. Nei weekend, il 50% resta libero fino alle 15.",
+      "Zero impegni, zero anticipi, zero problemi di conteggio.",
+      "Devi arrivare presto — le tende aprono alle 10 nei giorni feriali, alle 9 nei weekend.",
+      "I gruppi grandi vengono spezzati. Dieci persone raramente si siedono insieme dopo mezzogiorno.",
+      "Quando sono piene, le tende chiudono proprio le porte, spesso già nel primo pomeriggio di sabato.",
+      "Le probabilità migliori: da lunedì a giovedì, prima di mezzogiorno, in una tenda piccola."
+    ]
+  },
+  "midCta": {
+    "title": "Dieci posti, una data, otto opinioni.",
+    "subtitle": "Vota il giorno, blocca la tenda, tieni traccia di chi c'è davvero — prima che aprano le prenotazioni.",
+    "button": "Inizia gratis"
+  },
+  "logistics": {
+    "title": "Come arrivare e dove dormire",
+    "subtitle": "Monaco è facile. Monaco durante la Wiesn è un'altra città — organizza le parti noiose e quelle divertenti si sistemano da sole.",
+    "transportLabel": "Trasporti",
+    "transportTitle": "Come raggiungere la Theresienwiese",
+    "transportItems": [
+      "La U4 e la U5 fermano alla stazione Theresienwiese, direttamente all'ingresso dell'area — ed è la stazione più congestionata di tutta la festa.",
+      "Scendi invece a Schwanthalerhöhe, una fermata più avanti sulle stesse U4/U5: 10 minuti a piedi e una frazione della calca.",
+      "Goetheplatz o Poccistraße (U3/U6) servono gli ingressi sud e est, sempre a circa 10 minuti a piedi.",
+      "L'app MVGO mostra l'affollamento in tempo reale e ti fa evitare i punti peggiori.",
+      "Non venire in auto. Alla Theresienwiese non c'è parcheggio per i visitatori e comunque dopo non guiderai per tornare a casa.",
+      "La Hauptbahnhof di Monaco è a due fermate di U-Bahn, il che rende l'arrivo in treno davvero l'opzione più comoda."
+    ],
+    "stayLabel": "Alloggio",
+    "stayTitle": "Dove dormire, e quando prenotare",
+    "stayItems": [
+      "È la tua spesa più grande e quella che si muove più in fretta. Prenotala prima di qualsiasi altra cosa.",
+      "Nel 2025 le tariffe medie delle camere a Monaco hanno toccato circa 415 € a notte durante la festa — circa il 153% in più della media annuale della città.",
+      "Fuori dalla stagione della Wiesn la stessa città sta più vicina agli 80–150 € a notte. Quella differenza è tutta la discussione sul budget.",
+      "Un appartamento diviso in otto batte quattro camere doppie quasi sempre — e ti dà un posto dove ritrovarvi prima di andare alla festa.",
+      "Non serve stare a distanza di passeggiata. La U-Bahn di Monaco è veloce e va avanti fino a tardi; un posto a 20 minuti su una linea diretta è un affare molto migliore di un sovrapprezzo per la vicinanza.",
+      "Il primo e l'ultimo weekend e il 3 ottobre (Giorno dell'Unità tedesca) sono i picchi. Un viaggio infrasettimanale è un viaggio radicalmente più economico."
+    ]
+  },
+  "planning": {
+    "title": "Organizzarla con il gruppo",
+    "p1": "Parti dal giorno, non dalla tenda. Tutte le altre decisioni — voli, letti, chi può venire davvero — discendono da lì, ed è la decisione che i gruppi rimandano per ultima proprio perché è quella che fa litigare. Uno vuole il sabato di apertura per la spillatura. Uno può solo il secondo weekend. Uno preferirebbe in silenzio un martedì, quando si riesce a sentire quello che dicono gli altri. <polls>Lancia un sondaggio</polls> su tre o quattro date candidate prima che qualcuno apra il portale di una tenda, e ti ritroverai con un numero di partecipanti invece che con dei forse.",
+    "p2": "Poi rendi onesto quel numero, perché dieci non è un'atmosfera — è una cifra secca su un modulo di prenotazione. I tavoli si prenotano a blocchi da dieci, quindi la differenza tra \"siamo otto, credo\" e otto nomi confermati sono soldi. Metti il viaggio in un <itinerary>itinerario condiviso</itinerary> con la data sopra e lascia che ognuno si impegni o si sfili alla luce del sole. Sei confermati più quattro amici di amici reclutati fanno un tavolo. Otto forse fanno quattro posti vuoti che hai pagato.",
+    "p3": "Affida la prenotazione a una sola persona e dalle una scadenza. I portali delle tende aprono ognuno coi propri tempi da aprile in poi e i sabati buoni spariscono lo stesso giorno — quello non è un momento da consenso di gruppo, è un momento da una persona sola con la carta e un mandato. Il compito di tutti gli altri è aver risposto al sondaggio prima. La nostra <guide>guida per organizzare un viaggio di gruppo</guide> applica lo stesso schema al resto del viaggio: decidere insieme, eseguire da soli.",
+    "p4": "Organizza la giornata con leggerezza, ma organizza il ritrovo. Le batterie dei telefoni muoiono, in tenda non si sente niente, e qualcuno se ne andrà a spasso verso la Oide Wiesn o una giostra e perderà il gruppo per due ore. Mettetevi d'accordo su un punto di ritrovo fuori dalla tenda e su un orario, prima di entrare. È la cosa meno affascinante di tutto questo articolo ed è quella che userete davvero."
+  },
+  "budget": {
+    "title": "Budget e divisione delle spese",
+    "p1": "L'Oktoberfest ha una forma dei soldi insolita: una persona spende tanto, con mesi di anticipo, per tutti. I buoni si pagano in primavera su una carta. L'appartamento si prenota a giugno su un'altra carta. Poi a settembre dieci persone si offrono giri a vicenda a 15,80 € al Maß e nessuno tiene il conto di niente. Imposta un <budget>budget condiviso</budget> prima che si comprino i buoni, non dopo il viaggio, e registra la prenotazione come spesa il giorno stesso in cui viene pagata — chi ha anticipato non dovrebbe essere quello che a ottobre rincorre nove amici.",
+    "p2": "Conosci i numeri veri prima di litigarci sopra. Un Maß costa tra 14,80 € e 15,90 € nel 2026, con un aumento medio del 2,38% sul 2025; la maggior parte delle tende grandi sta sui 15,75–15,90 €, con l'Augustiner-Festhalle come eccezione notevole a 14,90 €. E le bibite analcoliche non sono la via di fuga economica: circa 11,13 € al litro per l'acqua in bottiglia e 12,84 € per una Spezi. Un pollo arrosto, qualche Maß e la propria quota del minimo del tavolo portano una giornata realistica in tenda intorno agli 80–120 € a testa, prima ancora di aver dormito da qualche parte.",
+    "p3": "Dividi per categoria, non per giorno. I letti si dividono per persona e per notte. Il tavolo si divide in dieci, che tutti e dieci bevano allo stesso modo o no. Cibo e giri sono individuali. Le giostre e il biglietto da 4 € della Oide Wiesn sono spiccioli. Buttare tutto in un unico numero è il modo in cui i gruppi arrivano al classico litigio da Oktoberfest — quello che ha bevuto tre Maß che sovvenziona quello che ne ha bevute nove. Le categorie rendono la cosa visibile, e visibile di solito basta."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Serve un biglietto per l'Oktoberfest 2026?",
+        "a": "No. L'ingresso alla Theresienwiese e a tutte le tende della birra è completamente gratuito — il biglietto ufficiale dell'Oktoberfest non esiste, e chi te ne vende uno per entrare ti sta vendendo il nulla. Paghi birra, cibo, giostre e giochi. L'unica parte di tutta la festa con un biglietto è la Oide Wiesn, la sezione storica, che costa 4 €. Quando la gente parla di \"biglietti\" intende in realtà la prenotazione di un tavolo, che è tutta un'altra cosa: la prenotazione in sé è gratuita, ma paghi in anticipo i buoni consumazione per quello che il tuo tavolo mangerà e berrà."
+      },
+      {
+        "q": "Quando aprono le prenotazioni delle tende dell'Oktoberfest 2026?",
+        "a": "Non esiste un'unica data di apertura, ed è proprio la cosa che frega i gruppi. Ognuna delle 14 tende grandi gestisce il proprio portale di prenotazione con i propri tempi. In generale: le prime tende aprono tra metà e fine aprile — di solito aprono le danze Schottenhamel e Hofbräu — la maggior parte delle tende dei birrifici segue tra inizio e metà maggio, e l'ultima ondata (Augustiner-Festhalle, Käfer Wiesn-Schänke, Schützen-Festzelt, Weinzelt) arriva tra fine maggio e inizio giugno. I sabati più gettonati possono sparire nel giro di poche ore. Scegli la tenda, trova il suo portale e metti la data di apertura nel piano condiviso, con una persona precisa responsabile della prenotazione."
+      },
+      {
+        "q": "Un gruppo di sei può prenotare un tavolo?",
+        "a": "Non proprio — ed è la più grossa trappola nell'organizzare l'Oktoberfest. Le tende prenotano tavoli interi, di solito dieci posti e a volte otto. Non puoi prenotarne sei. Le opzioni sono: reclutare altre persone finché non riempi il blocco, accettare di pagare i posti vuoti (i buoni sono per tavolo, non per persona, quindi il costo è lo stesso in entrambi i casi), oppure rinunciare alla prenotazione e andare una mattina infrasettimanale, quando sedersi senza prenotare è realistico. Quasi tutti i gruppi sottovalutano quanto presto serva un numero di partecipanti definitivo — quel numero va dato mesi prima del viaggio."
+      },
+      {
+        "q": "Quanto costa una birra all'Oktoberfest 2026?",
+        "a": "Un Maß (un litro) costa tra 14,80 € e 15,90 € alla 191ª Wiesn, con un aumento medio di circa il 2,38% sul 2025. Quasi tutte le tende grandi si concentrano tra 15,75 € e 15,90 € — Hacker, Hofbräu, Marstall, Paulaner e Schottenhamel stanno tutte intorno ai 15,80 € — mentre l'Augustiner-Festhalle resta decisamente più economica a 14,90 €. Le bibite analcoliche non sono un affare: metti in conto circa 11,13 € al litro per l'acqua in bottiglia, 12,35 € per una limonata e 12,84 € per una Spezi. Fai un budget realistico e la giornata ti costerà molto meno in litigi."
+      },
+      {
+        "q": "Cosa succede il giorno di apertura, il 19 settembre 2026?",
+        "a": "Le tende aprono alle 9 e non si versa niente fino a mezzogiorno, quando il sindaco di Monaco spilla il primo fusto nella tenda Schottenhamel e grida \"O'zapft is!\" — \"È spillata!\" La tradizione vuole che si faccia con meno colpi di martello possibile, e il conteggio in Baviera fa notizia sul serio. È il momento più suggestivo di tutti e sedici i giorni e anche il più affollato: se il tuo gruppo vuole essere dentro lo Schottenhamel senza prenotazione, si fa la fila dal mattino presto, tutti insieme, in Tracht (il costume tradizionale), ed è una cosa da decidere insieme e non da scoprire alle 11."
+      },
+      {
+        "q": "Come si arriva alla Theresienwiese?",
+        "a": "In U-Bahn, e possibilmente non con quella ovvia. La U4 e la U5 fermano alla stazione Theresienwiese, proprio all'ingresso dell'area, ed è esattamente per questo che è la stazione più congestionata della festa. Vai una fermata più avanti fino a Schwanthalerhöhe sulle stesse linee e fatti dieci minuti a piedi. Goetheplatz e Poccistraße sulla U3/U6 servono gli ingressi sud e est, sempre a circa dieci minuti a piedi. L'app MVGO mostra l'affollamento in tempo reale. Non venire in auto — non c'è parcheggio per i visitatori, e comunque non sarai in condizione di ripartire al volante."
+      },
+      {
+        "q": "Conviene andare infrasettimanale?",
+        "a": "Parecchio, su ogni voce del budget. Le tariffe delle camere a Monaco hanno toccato circa 415 € a notte durante la festa del 2025 — circa il 153% in più della media annuale della città, contro gli 80–150 € circa fuori dalla stagione della Wiesn — e i picchi sono i due weekend e il 3 ottobre, il Giorno dell'Unità tedesca. Anche le prenotazioni per i pranzi infrasettimanali sono molto più facili da ottenere, e trovare posto senza prenotare per un gruppo di dieci è davvero realistico un lunedì mattina come non lo è mai di sabato. Se il tuo gruppo ha un minimo di flessibilità, una Wiesn dal martedì al giovedì è un altro viaggio a un altro prezzo."
+      },
+      {
+        "q": "Come si dividono le spese in un gruppo?",
+        "a": "Usa un budget condiviso con categorie separate fin dall'inizio, perché i soldi dell'Oktoberfest non si dividono in un modo solo. Una persona paga in anticipo i buoni del tavolo in primavera per tutti. Un'altra prenota l'appartamento in estate. Poi a settembre i giri si pagano singolarmente a 15,80 € l'uno. Se fate i conti solo alla fine, chi ad aprile ha anticipato 400 € di buoni si ritrova a rincorrere nove amici a ottobre e chi ha bevuto tre Maß sta zitto zitto sovvenzionando chi ne ha bevute nove. WePlanify separa le categorie, registra chi ha pagato cosa e quando, e dice a ognuno quanto deve e a chi — niente foglio di calcolo, niente matematica a fine viaggio."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "tomorrowland": {
+      "title": "Tomorrowland 2026",
+      "desc": "Organizza il pellegrinaggio a Boom con il gruppo.",
+      "cta": "Leggi di più →"
+    },
+    "hellfest": {
+      "title": "Hellfest 2026",
+      "desc": "Clisson, quattro giorni, un unico piano condiviso.",
+      "cta": "Leggi di più →"
+    },
+    "tripWithFriends": {
+      "title": "Viaggio con gli amici",
+      "desc": "Organizza qualsiasi viaggio di gruppo senza fatica.",
+      "cta": "Leggi di più →"
+    },
+    "bestApps": {
+      "title": "Migliori app per viaggi di gruppo",
+      "desc": "Il nostro confronto degli strumenti migliori per i viaggi di gruppo.",
+      "cta": "Leggi l'articolo →"
+    }
+  },
+  "cta": {
+    "title": "Costruisci il tuo viaggio all'Oktoberfest 2026",
+    "subtitle": "Il giorno, la tenda, i letti, i soldi — un unico piano condiviso, tutto il tuo gruppo sulla stessa pagina.",
+    "button": "Inizia a pianificare"
+  },
+  "jsonld": {
+    "articleHeadline": "Pianificatore di viaggi per l'Oktoberfest 2026: come organizzare la Wiesn con un gruppo",
+    "eventName": "Oktoberfest 2026 (191ª Wiesn di Monaco)",
+    "eventDescription": "Il 191° Oktoberfest si svolge sulla Theresienwiese di Monaco di Baviera dal 19 settembre al 4 ottobre 2026. Sedici giorni, 14 grandi tende della birra e 21 piccole, ingresso gratuito all'area e alle tende, e un Maß di birra a un prezzo compreso tra 14,80 € e 15,90 €. La festa si apre a mezzogiorno del 19 settembre, quando il sindaco di Monaco spilla il primo fusto nella tenda Schottenhamel al grido di \"O'zapft is!\".",
+    "howToName": "Come organizzare un viaggio all'Oktoberfest 2026 con un gruppo di amici",
+    "howToDescription": "Mettetevi d'accordo sul giorno, bloccate un tavolo in tenda in un blocco da dieci, prenotate i letti a Monaco prima che i prezzi schizzino, e dividete i buoni e i giri senza che nessuno debba rincorrere nessuno a ottobre.",
+    "howToSteps": [
+      {
+        "name": "Vota la data prima di guardare qualsiasi tenda",
+        "text": "L'Oktoberfest dura sedici giorni e ognuno di questi è un viaggio diverso. Proponi al gruppo tre o quattro date candidate e fai votare tutti prima che qualcuno apra un portale di prenotazione. I weekend e il 3 ottobre sono i più affollati e i più cari; una visita infrasettimanale costa meno di alloggio ed è molto più facile per trovare posto senza prenotare."
+      },
+      {
+        "name": "Arriva a un numero definitivo di dieci",
+        "text": "Le tende prenotano tavoli interi, di solito da dieci posti, a volte otto — mai sei. Trasforma i forse in nomi confermati in un itinerario condiviso prima che aprano le prenotazioni, e recluta altre persone se sei corto. I posti vuoti costano come quelli pieni, perché i buoni consumazione sono per tavolo."
+      },
+      {
+        "name": "Affida la prenotazione a una persona sola, con una scadenza",
+        "text": "Non esiste un sistema di prenotazione centralizzato: ognuna delle 14 tende grandi apre il proprio portale in una data propria, da metà/fine aprile a inizio giugno, e i sabati più gettonati si esauriscono nel giro di poche ore. Nomina una persona che prenoti, metti la data di apertura della tenda nel piano condiviso e assicurati che il sondaggio si sia chiuso prima che arrivi."
+      },
+      {
+        "name": "Prenota l'alloggio a Monaco presto e dividilo per notte",
+        "text": "L'alloggio è la voce più grossa del budget dell'Oktoberfest e quella che si muove più in fretta. Le tariffe a Monaco hanno toccato circa 415 € a notte durante la festa del 2025, circa il 153% in più della media annuale. Un appartamento diviso tra tutto il gruppo di solito batte le camere individuali, e stare a 20 minuti su una linea diretta della U-Bahn è un affare migliore che pagare per la vicinanza a piedi."
+      },
+      {
+        "name": "Tieni traccia di buoni e giri in un budget condiviso",
+        "text": "Una persona paga in anticipo i buoni del tavolo con mesi di anticipo per conto di tutti, qualcun altro prenota i letti, e poi i giri si pagano singolarmente a circa 15,80 € al Maß. Registra ciascuna di queste voci come categoria a sé il giorno stesso in cui viene pagata, così a fine viaggio i conti sono già fatti."
+      }
+    ]
+  }
+}

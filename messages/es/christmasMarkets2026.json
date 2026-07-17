@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "Planificador de viajes a los mercados navideños 2026 — Gratis, para grupos",
+    "description": "Planificador gratuito de viajes a los mercados navideños 2026 para grupos. Fechas de apertura confirmadas de Colmar, Núremberg, Colonia, Viena, Praga y Bruselas, rutas de una ciudad o del circuito por Alsacia, logística en tren y un presupuesto compartido para el vino caliente."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Planificador de viajes a los mercados navideños 2026"
+  },
+  "hero": {
+    "tag": "Planificador de viajes gratis · Mercados navideños 2026",
+    "title": "Mercados navideños 2026: organiza el finde antes de que vuelen los hoteles",
+    "intro": "Un viaje a los mercados navideños europeos es el viaje en grupo más fácil de imaginar y uno de los más difíciles de reservar de verdad. Es una escapada urbana de dos o tres días, así que el itinerario va apretado y cada hora está disputada. Cada mercado abre y cierra en sus propias fechas, lo que significa que la fecha que elijáis decide en silencio vuestro destino. Y los precios de los hoteles en Estrasburgo y Viena se disparan desde finales de noviembre y se agotan con meses de antelación. Este es el planificador: las fechas reales de 2026, la decisión entre una ciudad o varias, las rutas en tren y cómo repartir un fin de semana de vino caliente entre seis personas. Si todavía estáis eligiendo herramientas, mira nuestra <link>comparativa de apps de viajes en grupo</link>.",
+    "readTime": "9 min de lectura",
+    "ctaButton": "Planifica tu finde de mercados",
+    "ctaNote": "Gratis, sin tarjeta, sin suscripción."
+  },
+  "facts": {
+    "heading": "La temporada 2026 de un vistazo",
+    "windowLabel": "Temporada",
+    "windowValue": "13 nov → 6 ene",
+    "windowSub": "De la apertura más temprana al cierre más tardío",
+    "marketsLabel": "Mercados",
+    "marketsValue": "8",
+    "marketsSub": "Comparados abajo, 6 con fechas confirmadas",
+    "bookLabel": "Reserva antes de",
+    "bookValue": "Septiembre",
+    "bookSub": "Antes de que vuelen las buenas camas",
+    "modeLabel": "Mejor transporte",
+    "modeValue": "Tren",
+    "modeSub": "TGV, ICE, ÖBB, RegioJet"
+  },
+  "stakes": {
+    "p1": "Aquí está la trampa. Alguien suelta \"¿finde de mercados navideños?\" en el grupo en octubre. Todos dicen que sí al instante: es un sí barato, nadie se compromete a nada. Y pasan tres semanas. Para cuando comparáis los findes de verdad, la mitad de los mercados que teníais en mente cierran en días distintos, los hoteles de Estrasburgo por debajo de 200 € ya no existen y el grupo se parte entre \"solo Colmar, tranquilos\" y \"Viena y Praga, ya dormiremos en el tren\". Acabáis reservando en pánico la tercera semana de noviembre, pagando el doble y pasando el fin de semana discutiendo a qué plaza ir ahora.",
+    "p2": "WePlanify es el plan compartido gratuito para viajes a los mercados navideños: fechas, ruta, hotel, itinerario y quién debe qué del vino caliente, todo en un sitio que todo el grupo puede ver."
+  },
+  "toc": {
+    "title": "En esta página",
+    "markets": "Los mercados y sus fechas 2026",
+    "routes": "¿Una ciudad o una ruta por varias?",
+    "logistics": "Cómo llegar: el tren es la respuesta",
+    "planning": "Organizarlo en grupo",
+    "budget": "Repartir un finde navideño",
+    "faq": "Preguntas frecuentes"
+  },
+  "markets": {
+    "title": "Los mercados y sus fechas reales de 2026",
+    "subtitle": "Esta es la parte que todo el mundo se salta y luego lamenta. Estos mercados no siguen el mismo calendario: el finde que elijáis decide cuáles están abiertos siquiera. Las fechas de abajo son de los organizadores oficiales, verificadas en julio de 2026.",
+    "confirmedLabel": "Confirmado",
+    "typicalLabel": "Sin confirmar todavía",
+    "note": "Dos mercados aún no han publicado sus fechas de 2026. Los hemos marcado claramente en vez de adivinar: consulta la web oficial antes de reservar un finde que dependa de uno de ellos.",
+    "items": [
+      {
+        "name": "Colmar — La Magie de Noël",
+        "dates": "23 de noviembre – 29 de diciembre de 2026",
+        "desc": "Seis mercados repartidos por el casco antiguo, y el que sale en las fotos como una postal. Dura más que la mayoría, así que es tu apuesta más segura para un finde entre Navidad y Año Nuevo. El Mercado Gourmet sigue abierto hasta el 3 de enero de 2027."
+      },
+      {
+        "name": "Estrasburgo — Christkindelsmärik",
+        "dates": "Normalmente finales de noviembre – 24 de diciembre",
+        "desc": "El mercado navideño más antiguo de Francia, desde 1570, y el primero que tu grupo va a nombrar. La ciudad no había publicado sus fechas de 2026 cuando lo comprobamos en julio de 2026. Tradicionalmente abre el último viernes de noviembre y cierra el 24 de diciembre, con algunas plazas que llegan hasta final de mes, pero no reserves un finde de finales de diciembre dando eso por hecho."
+      },
+      {
+        "name": "Núremberg — Christkindlesmarkt",
+        "dates": "27 de noviembre – 24 de diciembre de 2026",
+        "desc": "El mercado más famoso de Alemania y el más tradicional: puestos de madera, nada de plástico, nada de música enlatada. Abre el viernes 27 de noviembre a las 17:30 con el prólogo del Christkind desde el balcón de la Frauenkirche. Cierra en Nochebuena, y ese día los puestos bajan la persiana a las 14:00."
+      },
+      {
+        "name": "Colonia — Weihnachtsmarkt am Kölner Dom",
+        "dates": "16 de noviembre – 23 de diciembre de 2026",
+        "desc": "Abre el primero de los grandes nombres alemanes, justo a los pies de la catedral, y cierra antes de Nochebuena. Ojo: está cerrado el Totensonntag, 22 de noviembre de 2026. La opción con mejor relación calidad-precio de esta lista si quieres un finde de mercados a mediados de noviembre, antes de que los precios suban."
+      },
+      {
+        "name": "Viena — Christkindlmarkt am Rathausplatz",
+        "dates": "13 de noviembre – 26 de diciembre de 2026",
+        "desc": "La temporada más larga de aquí: abre a mediados de noviembre y es uno de los poquísimos que siguen en pie el 26 de diciembre. Abierto a diario de 10:00 a 22:00, y de 10:00 a 18:30 el 24 de diciembre. La pista de patinaje Ice Dream sigue hasta el 6 de enero de 2027, lo que convierte a Viena en la mejor opción para un viaje después de Navidad."
+      },
+      {
+        "name": "Praga — Plaza de la Ciudad Vieja y Plaza de Wenceslao",
+        "dates": "28 de noviembre de 2026 – 6 de enero de 2027",
+        "desc": "Abre el último del grupo pero es el que más dura, hasta Reyes. A diario de 10:00 a 22:00. El encendido del árbol es la noche de la apertura, el 28 de noviembre. Si tu grupo solo puede en enero, Praga es una de las pocas opciones reales que quedan."
+      },
+      {
+        "name": "Budapest — Advent Basilica y plaza Vörösmarty",
+        "dates": "Fechas aún no publicadas para 2026",
+        "desc": "Dos mercados, los dos excelentes, y la comida y la bebida más baratas de toda esta lista. Ninguno tenía fechas confirmadas para 2026 cuando lo comprobamos en julio de 2026. Históricamente los dos han abierto a mediados de noviembre y han llegado hasta los primeros días de enero: tómatelo como un patrón, no como una reserva."
+      },
+      {
+        "name": "Bruselas — Winter Wonders / Plaisirs d'Hiver",
+        "dates": "27 de noviembre de 2026 – 3 de enero de 2027",
+        "desc": "Más un festival de invierno completo que un mercado puro: chalets, una noria, el espectáculo de luz y sonido en la Grand-Place. Se alarga hasta bien entrado enero, y es el más fácil de alcanzar desde Londres, París o Ámsterdam en tren directo."
+      }
+    ]
+  },
+  "routes": {
+    "title": "¿Una ciudad o una ruta por varias?",
+    "subtitle": "Esta es la bifurcación que tu grupo tiene que resolver antes de reservar nada, y la respuesta honesta es que la mayoría de los grupos se pasa de ambiciosa. Tres opciones que funcionan de verdad en un fin de semana.",
+    "option1": {
+      "tag": "La segura",
+      "title": "Una ciudad, bien hecha",
+      "desc": "Elige un solo mercado, llega el viernes por la tarde, vuelve el domingo por la tarde. Te salen dos noches enteras, tiempo para comer en condiciones y nadie se pasa el finde arrastrando una maleta hasta una estación. Ideal para Viena, Núremberg o Praga, donde una sola ciudad ya tiene más mercado del que puedes cubrir en dos días. Si es el primer viaje juntos de tu grupo, haz este."
+    },
+    "option2": {
+      "tag": "La buena",
+      "title": "El circuito por Alsacia",
+      "desc": "Estrasburgo más Colmar, y uno de los pueblitos si tienes coche: Eguisheim o Riquewihr. Los trenes entre Estrasburgo y Colmar tardan unos 30 minutos, así que es realmente factible en un finde. Duerme en una ciudad y haz la otra en el día. El pero: solo funciona a partir de finales de noviembre, y las fechas de 2026 de Estrasburgo aún no han salido."
+    },
+    "option3": {
+      "tag": "La ambiciosa",
+      "title": "Dos capitales en tren",
+      "desc": "Viena y Praga, a unas cuatro horas en tren directo. Los dos mercados son grandes, los dos duran hasta tarde en la temporada, y la ventana en la que coinciden es del 28 de noviembre al 26 de diciembre. Necesita tres noches mínimo: hazlo en un puente o no lo hagas. Más de dos ciudades en un finde no es un viaje, es una gira ferroviaria."
+    }
+  },
+  "midCta": {
+    "title": "Deja de comparar fechas en el chat del grupo",
+    "subtitle": "Pon los findes uno al lado del otro, que todos voten y cierra la ciudad en una tarde.",
+    "button": "Empezar gratis"
+  },
+  "logistics": {
+    "title": "Cómo llegar: el tren es la respuesta",
+    "subtitle": "A casi todos los mercados de esta lista se llega mejor en tren que en avión. Trayectos cortos, de centro a centro, sin carreras al aeropuerto a las 5 de la mañana a oscuras, y el grupo se mantiene junto todo el camino.",
+    "westLabel": "Alsacia y el oeste",
+    "eastLabel": "Europa central",
+    "gettingThere": "Cómo llegar",
+    "westItems": [
+      "París → Estrasburgo: unas 1h45 en TGV, directo, de centro a centro. Más barato que cualquier vuelo en cuanto cuentas los traslados al aeropuerto.",
+      "Estrasburgo → Colmar: unos 30 minutos en TER, trenes todo el día. Por eso funciona el circuito por Alsacia: no necesitas coche para las dos ciudades grandes.",
+      "Los pueblos de Alsacia (Eguisheim, Riquewihr) requieren coche o autobús. Decidid esto antes de reservar: cambia si alquiláis o no, y quién conduce después del vino caliente.",
+      "Bruselas es directo desde París (1h22), Londres (2h) y Ámsterdam (1h50). Es el finde de mercados que menos esfuerzo pide de esta lista.",
+      "Colonia → Bruselas son unas 1h50 directo. Combinarlas en tres noches es una de las pocas rutas de varias ciudades que no es forzada.",
+      "Reserva el tren con 2–3 meses de antelación. Los precios de los findes de diciembre suben igual que los vuelos, y los trenes del sábado por la mañana son los primeros en agotarse."
+    ],
+    "eastItems": [
+      "Viena → Praga: unas 4 horas directo, varias veces al día, en RegioJet u ÖBB. Barato si lo reservas con tiempo, doloroso si lo compras el mismo día.",
+      "Núremberg → Praga: unas 3h30 en autobús directo, y a menudo más rápido que el tren. Nada glamuroso, pero realmente eficiente.",
+      "Núremberg → Viena: unas 5 horas en tren vía Passau. Es el eslabón débil si intentas encadenar mercados alemanes y austriacos.",
+      "Budapest → Viena: unas 2h30 en railjet, la combinación más fácil de Europa central. Dormir en las dos ciudades sale barato comparado con Alsacia.",
+      "Si vais en avión, apuntad a los aeropuertos de Viena, Praga o Budapest: los tres están bien conectados y tienen transporte público decente hasta el centro.",
+      "Las reservas de asiento importan en los findes de diciembre. Un grupo de seis de pie en un pasillo durante cuatro horas es un mal comienzo de fin de semana."
+    ]
+  },
+  "planning": {
+    "title": "Organizarlo en grupo",
+    "p1": "La fecha es el viaje entero. Como estos mercados van cada uno por su calendario, elegir un finde es elegir un destino, y la mayoría de los grupos lo hace al revés: discuten de ciudades durante tres semanas antes de que nadie compruebe quién puede pedir libre el viernes de verdad. Hazlo al contrario: <pollLink>haz primero una votación sobre los findes</pollLink>, saca las dos o tres fechas que todos pueden de verdad y luego mira qué mercados están abiertos. La lista se reduce rápido, y la discusión desaparece casi con ella.",
+    "p2": "De septiembre a noviembre es tu ventana de planificación, y no lo decimos por rellenar. Los hoteles de Estrasburgo y Viena para los findes de diciembre están prácticamente agotados a finales de septiembre a cualquier precio sensato. Si lees esto en octubre, reserva las camas esta semana y ya arreglarás el itinerario después: el alojamiento es la única decisión realmente irreversible aquí. Todo lo demás se puede mover.",
+    "p3": "Y luego mantén el <itineraryLink>itinerario compartido</itineraryLink> deliberadamente ligero. Este es el error que cometen los grupos en las escapadas cortas: dos días, seis personas, y alguien monta un plan hora por hora con nueve plazas dentro. Nunca sobrevive al contacto con el primer puesto de Glühwein. Bloquea lo que hay que bloquear de verdad —el tren, el check-in, una reserva para cenar por noche y el mercado o la iglesia que todos acordaron que lamentarían perderse— y deja el resto de cada tarde realmente vacío. Con dos anclas al día sobra. Poned un punto de encuentro y una hora en vez de intentar mantener a seis personas juntas entre la multitud; el grupo se va a separar igual, y es mucho más divertido cuando eso es el plan y no un accidente.",
+    "p4": "Una cosita que ahorra muchos disgustos: acordad de antemano qué pasa si el plan se tuerce. Va a llover, o va a hacer -4 °C y alguien va a querer estar bajo techo a las seis de la tarde. Ten ya en la lista un museo, una comida larga o unos baños termales como plan B, para que el grupo no acabe negociando desde cero bajo la lluvia. La <guideLink>guía de viajes en grupo</guideLink> tiene la versión completa de esto si te interesa."
+  },
+  "budget": {
+    "title": "Repartir un finde navideño",
+    "p1": "Los findes de mercados navideños tienen una estructura de gastos genuinamente molesta: una línea enorme (el hotel) y luego doscientas minúsculas. Vino caliente a 4 €, la fianza de la taza, castañas asadas, una ronda de tartiflette, el tercer Glühwein de alguien, un adorno de madera para la cuñada. Nadie apunta nada, todos se van pasando efectivo todo el finde, y el domingo por la noche nadie tiene ni idea de quién está arriba y quién abajo. Monta un <budgetLink>presupuesto compartido</budgetLink> antes de salir, con el alojamiento como línea propia y una categoría suelta de \"mercado\" para todo lo demás. Así es un solo ajuste al final en vez de cuarenta pequeños.",
+    "p2": "El hotel es donde está el dinero de verdad, y donde está la decisión de verdad. Un finde de diciembre en el centro de Estrasburgo o Viena cuesta dos o tres veces la tarifa normal, y las habitaciones por debajo de 150 € desaparecen hacia septiembre. Dos cosas lo arreglan. Primera: un solo apartamento para seis gana a tres habitaciones dobles casi siempre, tanto en precio como porque tienes un sitio donde sentarte que no es un bar a reventar. Segunda: alójate a 15 o 20 minutos en la línea del tranvía. Kehl, al otro lado de la frontera alemana desde Estrasburgo, o los distritos exteriores de Viena, cuestan una fracción y el mercado sigue estando a 20 minutos.",
+    "p3": "Para el resto, Budapest y Praga son bastante más baratas en comida y bebida que Viena, Estrasburgo o Colonia, lo suficiente como para compensar un tren más caro. Merece la pena ponerlo sobre la mesa si los presupuestos del grupo son desiguales. Y hagáis lo que hagáis, que no haya una sola persona adelantando el finde entero con su tarjeta. Id rotando quién paga cada cosa, apuntad cada gasto en el momento en vez de de memoria en el tren de vuelta, y nadie tiene que hacer de contable."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Cuándo abren y cierran exactamente los mercados navideños de 2026?",
+        "a": "Varía mucho según la ciudad, y por eso justamente la fecha importa. Confirmado para 2026: Viena Rathausplatz del 13 de noviembre al 26 de diciembre; catedral de Colonia del 16 de noviembre al 23 de diciembre (cerrado el 22 de noviembre por Totensonntag); Colmar del 23 de noviembre al 29 de diciembre; Núremberg del 27 de noviembre al 24 de diciembre; Bruselas Winter Wonders del 27 de noviembre de 2026 al 3 de enero de 2027; Praga, plazas de la Ciudad Vieja y de Wenceslao, del 28 de noviembre de 2026 al 6 de enero de 2027. Estrasburgo y Budapest no habían publicado sus fechas de 2026 a fecha de julio de 2026."
+      },
+      {
+        "q": "¿Cuándo debería reservar hotel para un finde de mercados navideños?",
+        "a": "En septiembre, y no es que estemos exagerando. Las habitaciones para los findes de diciembre en Estrasburgo, Viena y Colmar se agotan con meses de antelación, y lo que queda después de octubre está o muy lejos del centro o a dos o tres veces la tarifa normal. El alojamiento es la única decisión de este viaje que de verdad no puedes revertir después, así que ciérralo primero: ya discutiréis el itinerario en noviembre."
+      },
+      {
+        "q": "¿Qué mercado navideño es mejor para un primer viaje en grupo?",
+        "a": "Núremberg o Viena si quieres el mercado clásico, grande y denso, con todo a distancia caminando. Colmar si quieres el más bonito y no te importa que sea pequeño. Bruselas si el grupo está repartido por varios países, porque los trenes directos desde París, Londres y Ámsterdam la convierten en el sitio más fácil para juntarse. Sáltate la ruta de varias ciudades en un primer viaje: una ciudad y dos noches es más que suficiente, y es la versión que la gente disfruta de verdad."
+      },
+      {
+        "q": "¿Puedo hacer Estrasburgo y Colmar el mismo fin de semana?",
+        "a": "Sí, y es la única ruta de varias ciudades que funciona de verdad. Están a unos 30 minutos en TER con trenes todo el día, así que duermes en una y haces la otra en el día en vez de cambiar de hotel. Añadir un pueblo alsaciano como Eguisheim o Riquewihr implica alquilar coche: decidid eso antes de reservar, porque también decide quién se queda sin beber."
+      },
+      {
+        "q": "¿Cuál es la forma más barata de hacer un viaje a los mercados navideños con amigos?",
+        "a": "Tres cosas, por orden de impacto. Coge el tren en vez del avión: para París–Estrasburgo o París–Bruselas sale más barato que un vuelo en cuanto cuentas los traslados al aeropuerto, y es de centro a centro. Alquilad un apartamento para todo el grupo en vez de habitaciones de hotel sueltas; seis personas en un mismo sitio gana a tres dobles casi siempre. Y ve a mediados de noviembre en vez de a mediados de diciembre: Colonia abre el 16 de noviembre y Viena el 13 de noviembre, antes de que los precios se pongan feos."
+      },
+      {
+        "q": "¿Hay mercados navideños abiertos después de Navidad?",
+        "a": "Unos pocos, y conviene conocerlos porque casi todos los grupos dan por hecho que la temporada acaba el 24. Praga llega hasta el 6 de enero, Bruselas hasta el 3 de enero, Colmar hasta el 29 de diciembre y Viena hasta el 26 de diciembre. Núremberg, Colonia y Estrasburgo terminan en Nochebuena o antes. Si tu grupo solo puede viajar entre Navidad y Año Nuevo, tienes Praga, Bruselas o Colmar, y esa es la lista entera."
+      },
+      {
+        "q": "¿Cuántos días hacen falta para un viaje a los mercados navideños?",
+        "a": "Dos noches es el punto justo para una ciudad: llegas el viernes por la tarde, dos noches enteras de mercado, en casa el domingo. Los mercados son cosa de noche: están en su mejor momento cuando anochece, así que el día es para la ciudad en sí. Tres noches si vais a hacer dos ciudades. Una noche no es un viaje, es un desplazamiento con vino caliente."
+      },
+      {
+        "q": "¿Cómo se reparten los gastos en un finde de compras pequeñas?",
+        "a": "Apuntadlos según pasan, no de memoria en el tren de vuelta. Ese es todo el truco. Los findes de mercados navideños son la muerte por mil vinos calientes de 4 €, y solo las fianzas de las tazas ya lían a todo el mundo para el domingo. Usad un presupuesto compartido con el hotel como una línea y una categoría cajón de sastre para el gasto del mercado, id rotando quién paga cada ronda y ajustad cuentas una vez al final. WePlanify hace las cuentas para que nadie tenga que ser el tesorero del grupo."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Descubre más",
+    "tripWithFriends": {
+      "title": "Viaje con amigos",
+      "desc": "Organiza cualquier viaje en grupo sin esfuerzo.",
+      "cta": "Leer más →"
+    },
+    "familyTrip": {
+      "title": "Viaje en familia",
+      "desc": "Los mercados son un clásico familiar: organízalo sin el caos.",
+      "cta": "Leer más →"
+    },
+    "groupGuide": {
+      "title": "Guía de viajes en grupo",
+      "desc": "La guía completa paso a paso.",
+      "cta": "Leer la guía →"
+    },
+    "bestApps": {
+      "title": "Mejores apps de viajes en grupo",
+      "desc": "Nuestra comparativa de las mejores herramientas para viajes en grupo.",
+      "cta": "Leer el artículo →"
+    }
+  },
+  "cta": {
+    "title": "Cierra el finde antes de que vuelen los hoteles",
+    "subtitle": "Fechas, ciudad, hotel, itinerario y el presupuesto del vino caliente: un plan compartido, todo tu grupo en la misma página.",
+    "button": "Empieza a planificar gratis"
+  },
+  "jsonld": {
+    "articleHeadline": "Mercados navideños 2026: el planificador de viajes en grupo con las fechas reales",
+    "howToName": "Cómo organizar un viaje a los mercados navideños en grupo en 2026",
+    "howToDescription": "Elige primero el finde, deja que las fechas decidan la ciudad, reserva las camas antes de que acabe septiembre, mantén el itinerario ligero y reparte el vino caliente sin hojas de cálculo.",
+    "howToSteps": [
+      {
+        "name": "Vota los findes antes de discutir sobre ciudades",
+        "text": "Cada mercado va por su propio calendario, así que el finde en el que todos podéis es lo que decide de verdad el destino. Haz primero una votación con dos o tres findes candidatos y luego mira qué mercados están abiertos en esas fechas. La lista corta se escribe sola."
+      },
+      {
+        "name": "Reserva el alojamiento ya: es el único paso irreversible",
+        "text": "Las habitaciones de diciembre en Estrasburgo, Viena y Colmar se agotan a finales de septiembre y cuestan dos o tres veces la tarifa normal. Cierra un apartamento para todo el grupo, o alójate a 20 minutos en la línea del tranvía. Todo lo demás de este viaje se puede cambiar después."
+      },
+      {
+        "name": "Monta un itinerario deliberadamente ligero",
+        "text": "Dos días, seis personas y un plan hora por hora es la receta de un mal fin de semana. Bloquea el tren, el check-in, una cena por noche y la única cosa en la que todos estuvisteis de acuerdo. Dos anclas al día, y deja las tardes realmente libres."
+      },
+      {
+        "name": "Monta el presupuesto compartido antes de salir",
+        "text": "Una línea enorme para el hotel y cien minúsculas para el vino caliente, las fianzas de las tazas y las castañas. Pon el alojamiento en su propia línea, usa una categoría cajón de sastre para el gasto del mercado, id rotando quién paga cada ronda y ajustad cuentas una vez al final."
+      }
+    ]
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "Mercatini di Natale 2026: organizza il viaggio — gratis, per gruppi",
+    "description": "Pianificatore gratuito per i mercatini di Natale 2026 in gruppo. Date di apertura confermate per Colmar, Norimberga, Colonia, Vienna, Praga e Bruxelles, itinerari una città o giro dell'Alsazia, logistica in treno e un budget condiviso per il vin brulé."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Mercatini di Natale 2026: organizza il viaggio"
+  },
+  "hero": {
+    "tag": "Pianificatore gratuito · Mercatini di Natale 2026",
+    "title": "Mercatini di Natale 2026: organizza il weekend prima che spariscano gli hotel",
+    "intro": "Un viaggio ai mercatini di Natale in Europa è il viaggio di gruppo più facile da immaginare e uno dei più difficili da prenotare davvero. Sono due o tre giorni in città, quindi il programma è fitto e ogni ora è contesa. Ogni mercatino apre e chiude nelle sue date, il che significa che la scelta del weekend decide in silenzio la destinazione. E i prezzi degli hotel a Strasburgo e Vienna schizzano da fine novembre e vanno esauriti con mesi di anticipo. Questo è il piano: le date vere del 2026, la scelta tra una città o più città, i collegamenti ferroviari e come dividere un weekend di vin brulé tra sei persone. Se stai ancora scegliendo gli strumenti, guarda il nostro <link>confronto tra le app per viaggi di gruppo</link>.",
+    "readTime": "9 min di lettura",
+    "ctaButton": "Organizza il tuo weekend ai mercatini",
+    "ctaNote": "Gratis, senza carta, senza abbonamento."
+  },
+  "facts": {
+    "heading": "La stagione 2026 in breve",
+    "windowLabel": "Stagione",
+    "windowValue": "13 nov → 6 gen",
+    "windowSub": "Dalla prima apertura all'ultima chiusura",
+    "marketsLabel": "Mercatini",
+    "marketsValue": "8",
+    "marketsSub": "Confrontati qui sotto, 6 con date confermate",
+    "bookLabel": "Prenota entro",
+    "bookValue": "settembre",
+    "bookSub": "Prima che spariscano i letti buoni",
+    "modeLabel": "Come muoversi",
+    "modeValue": "Treno",
+    "modeSub": "TGV, ICE, ÖBB, RegioJet"
+  },
+  "stakes": {
+    "p1": "Ecco la trappola. A ottobre qualcuno lancia nella chat di gruppo: \"Weekend ai mercatini di Natale?\". Dicono tutti sì all'istante — è un sì che non costa niente, nessuno si impegna davvero. Poi passano tre settimane. Quando finalmente vi mettete a confrontare i weekend, metà dei mercatini che avevate in testa chiudono in giorni diversi, gli hotel a Strasburgo sotto i 200 € non ci sono più, e il gruppo si spacca tra \"solo Colmar, con calma\" e \"Vienna e Praga, dormiamo in treno\". Finisce che prenotate nel panico nella terza settimana di novembre, pagando il doppio, e passate il weekend a litigare su quale piazza raggiungere dopo.",
+    "p2": "WePlanify è il piano condiviso e gratuito per i viaggi ai mercatini di Natale — date, itinerario, hotel, programma e chi deve cosa per il vin brulé, tutto in un unico posto che tutto il gruppo può vedere."
+  },
+  "toc": {
+    "title": "In questa pagina",
+    "markets": "I mercatini e le loro date 2026",
+    "routes": "Una città o un itinerario tra più città?",
+    "logistics": "Come arrivarci: la risposta è il treno",
+    "planning": "Organizzarlo in gruppo",
+    "budget": "Dividere le spese di un weekend natalizio",
+    "faq": "Domande frequenti"
+  },
+  "markets": {
+    "title": "I mercatini e le loro vere date 2026",
+    "subtitle": "È la parte che tutti saltano e di cui poi si pentono. Questi mercatini non seguono lo stesso calendario — il weekend che scegli decide quali sono addirittura aperti. Le date qui sotto vengono dagli organizzatori ufficiali, verificate a luglio 2026.",
+    "confirmedLabel": "Confermato",
+    "typicalLabel": "Non ancora confermato",
+    "note": "Due mercatini non hanno ancora pubblicato le date 2026. Le abbiamo segnalate chiaramente invece di tirare a indovinare — controlla il sito ufficiale prima di prenotare un weekend che dipende da uno di loro.",
+    "items": [
+      {
+        "name": "Colmar — La Magie de Noël",
+        "dates": "23 novembre – 29 dicembre 2026",
+        "desc": "Sei mercatini sparsi per il centro storico, e quello che viene nelle foto come una cartolina. Va avanti più a lungo di quasi tutti gli altri, quindi è la scelta più sicura per un weekend tra Natale e Capodanno. Il Mercatino dei Golosi resta aperto fino al 3 gennaio 2027."
+      },
+      {
+        "name": "Strasburgo — Christkindelsmärik",
+        "dates": "Di solito da fine novembre al 24 dicembre",
+        "desc": "Il mercatino di Natale più antico di Francia, dal 1570, e il primo che il tuo gruppo nominerà. Quando abbiamo controllato, a luglio 2026, la città non aveva ancora pubblicato le date 2026. Tradizionalmente apre l'ultimo venerdì di novembre e chiude il 24 dicembre, con qualche piazza che tira avanti fino a fine mese — ma non prenotare un weekend di fine dicembre dando questo per scontato."
+      },
+      {
+        "name": "Norimberga — Christkindlesmarkt",
+        "dates": "27 novembre – 24 dicembre 2026",
+        "desc": "Il mercatino più famoso della Germania e il più tradizionale: casette di legno, niente plastica, niente musica diffusa. Apre venerdì 27 novembre alle 17:30 con il prologo del Christkind dal balcone della Frauenkirche. Chiude la vigilia di Natale, e quel giorno le casette abbassano la serranda alle 14:00."
+      },
+      {
+        "name": "Colonia — Weihnachtsmarkt am Kölner Dom",
+        "dates": "16 novembre – 23 dicembre 2026",
+        "desc": "Apre prima di tutti i grandi nomi tedeschi, proprio ai piedi della cattedrale, e chiude prima della vigilia. Attenzione: è chiuso per il Totensonntag, il 22 novembre 2026. È l'opzione col miglior rapporto qualità-prezzo della lista se vuoi un weekend ai mercatini a metà novembre, prima che i prezzi salgano."
+      },
+      {
+        "name": "Vienna — Christkindlmarkt am Rathausplatz",
+        "dates": "13 novembre – 26 dicembre 2026",
+        "desc": "La stagione più lunga di tutte: apre a metà novembre ed è uno dei pochissimi ancora aperti il 26 dicembre. Aperto tutti i giorni 10:00–22:00, e 10:00–18:30 il 24 dicembre. La pista di pattinaggio Ice Dream va avanti fino al 6 gennaio 2027, il che rende Vienna la scelta migliore per un viaggio dopo Natale."
+      },
+      {
+        "name": "Praga — Piazza della Città Vecchia e Piazza San Venceslao",
+        "dates": "28 novembre 2026 – 6 gennaio 2027",
+        "desc": "Apre per ultimo del gruppo ma dura di più, fino all'Epifania. Tutti i giorni 10:00–22:00. L'accensione dell'albero è la sera dell'inaugurazione, il 28 novembre. Se il tuo gruppo può andare solo a gennaio, Praga è una delle poche opzioni vere rimaste."
+      },
+      {
+        "name": "Budapest — Advent Basilica e Piazza Vörösmarty",
+        "dates": "Date 2026 non ancora pubblicate",
+        "desc": "Due mercatini, entrambi ottimi, e il cibo e le bevande più economiche di tutta questa lista. Nessuno dei due aveva date 2026 confermate quando abbiamo controllato, a luglio 2026. Storicamente aprono entrambi a metà novembre e arrivano ai primi giorni di gennaio — prendilo come una tendenza, non come una prenotazione."
+      },
+      {
+        "name": "Bruxelles — Winter Wonders / Plaisirs d'Hiver",
+        "dates": "27 novembre 2026 – 3 gennaio 2027",
+        "desc": "Più un festival invernale completo che un mercatino puro: chalet, una ruota panoramica, lo spettacolo di luci e suoni sulla Grand-Place. Va avanti fino a gennaio inoltrato, ed è il più facile da raggiungere da Londra, Parigi o Amsterdam con un treno diretto."
+      }
+    ]
+  },
+  "routes": {
+    "title": "Una città o un itinerario tra più città?",
+    "subtitle": "È il bivio che il gruppo deve affrontare prima di prenotare qualsiasi cosa, e la risposta onesta è che la maggior parte dei gruppi vuole strafare. Tre opzioni che funzionano davvero in un weekend.",
+    "option1": {
+      "tag": "Quella sicura",
+      "title": "Una città, fatta bene",
+      "desc": "Scegli un solo mercatino, arriva venerdì sera, riparti domenica pomeriggio. Ti prendi due serate piene, il tempo di mangiare come si deve, e nessuno passa il weekend a trascinare una valigia fino alla stazione. Ideale per Vienna, Norimberga o Praga, dove una sola città ha già più mercatino di quanto tu riesca a coprire in due giorni. Se è il primo viaggio insieme del gruppo, fai questa."
+    },
+    "option2": {
+      "tag": "Quella buona",
+      "title": "Il giro dell'Alsazia",
+      "desc": "Strasburgo più Colmar, e uno dei paesini se avete la macchina — Eguisheim o Riquewihr. I treni tra Strasburgo e Colmar ci mettono circa 30 minuti, quindi è fattibile davvero in un weekend. Dormi in una città e vai in giornata nell'altra. Il problema: funziona solo da fine novembre, e le date 2026 di Strasburgo non sono ancora uscite."
+    },
+    "option3": {
+      "tag": "Quella ambiziosa",
+      "title": "Due capitali in treno",
+      "desc": "Vienna e Praga, circa quattro ore di treno diretto. Due mercatini grandi, entrambi aperti fino a fine stagione, e la finestra in cui si sovrappongono va dal 28 novembre al 26 dicembre. Servono minimo tre notti — fallo in un weekend lungo o non farlo. Più di due città in un weekend è un tour ferroviario, non un viaggio."
+    }
+  },
+  "midCta": {
+    "title": "Basta confrontare date nella chat di gruppo",
+    "subtitle": "Metti i weekend uno accanto all'altro, fai votare tutti, e blocca la città in un pomeriggio.",
+    "button": "Inizia gratis"
+  },
+  "logistics": {
+    "title": "Come arrivarci: la risposta è il treno",
+    "subtitle": "Quasi tutti i mercatini di questa lista si raggiungono meglio in treno che in aereo. Tratte brevi, dal centro città al centro città, niente corsa all'aeroporto alle 5 del mattino al buio, e il gruppo resta insieme per tutto il tragitto.",
+    "westLabel": "Alsazia e ovest",
+    "eastLabel": "Europa centrale",
+    "gettingThere": "Come arrivarci",
+    "westItems": [
+      "Parigi → Strasburgo: circa 1h45 in TGV, diretto, dal centro al centro. Più economico di qualsiasi volo, una volta contati i trasferimenti dall'aeroporto.",
+      "Strasburgo → Colmar: circa 30 minuti in TER, treni tutto il giorno. È per questo che il giro dell'Alsazia funziona — per le due città grandi non serve la macchina.",
+      "Per i paesini dell'Alsazia (Eguisheim, Riquewihr) serve un'auto o un bus. Decidetelo prima di prenotare: cambia se noleggiate o no, e chi guida dopo il vin brulé.",
+      "Bruxelles è diretta da Parigi (1h22), Londra (2h), Amsterdam (1h50). È il weekend ai mercatini che richiede meno sforzo di tutta la lista.",
+      "Colonia → Bruxelles è circa 1h50 diretto. Abbinarle su tre notti è uno dei pochi itinerari tra più città che non sia forzato.",
+      "Prenota il treno con 2–3 mesi di anticipo. Sui weekend di dicembre i prezzi salgono esattamente come quelli dei voli, e i treni del sabato mattina vanno esauriti per primi."
+    ],
+    "eastItems": [
+      "Vienna → Praga: circa 4 ore diretto, più volte al giorno, con RegioJet o ÖBB. Economico se prenotato in anticipo, doloroso se prenotato in giornata.",
+      "Norimberga → Praga: circa 3h30 in bus diretto, e spesso più veloce del treno. Non è glamour, ma è davvero efficiente.",
+      "Norimberga → Vienna: circa 5 ore in treno via Passavia. È l'anello debole se stai provando a mettere in fila i mercatini tedeschi e austriaci.",
+      "Budapest → Vienna: circa 2h30 in railjet, l'abbinamento più facile dell'Europa centrale. Dormire costa poco in entrambe le città rispetto all'Alsazia.",
+      "Per i voli, punta agli aeroporti di Vienna, Praga o Budapest — tutti e tre sono ben collegati e hanno mezzi pubblici decenti per il centro.",
+      "Le prenotazioni dei posti contano, nei weekend di dicembre. Sei persone in piedi in un corridoio per quattro ore sono un pessimo inizio di weekend."
+    ]
+  },
+  "planning": {
+    "title": "Organizzarlo in gruppo",
+    "p1": "La scelta della data è tutto il viaggio. Siccome questi mercatini seguono calendari diversi, scegliere un weekend significa scegliere una destinazione — e la maggior parte dei gruppi lo fa al contrario, litigando sulle città per tre settimane prima che qualcuno controlli chi può davvero prendersi il venerdì libero. Fatelo nell'ordine giusto: <pollLink>fai prima un sondaggio sui weekend</pollLink>, tira fuori le due o tre date che tutti riescono davvero a fare, e poi guarda quali mercatini sono aperti. La lista si accorcia in fretta, e la discussione sparisce quasi del tutto con lei.",
+    "p2": "Da settembre a novembre è la tua finestra di pianificazione, e non è un'esagerazione. Gli hotel a Strasburgo e Vienna per i weekend di dicembre, a prezzi sensati, sono di fatto finiti entro fine settembre. Se stai leggendo questo a ottobre, prenota i letti questa settimana e sistema il programma dopo — l'alloggio è l'unica decisione davvero irreversibile qui. Tutto il resto si può spostare.",
+    "p3": "Poi tieni il <itineraryLink>programma condiviso</itineraryLink> volutamente leggero. È l'errore che i gruppi fanno nei weekend brevi in città: due giorni, sei persone, e qualcuno costruisce un piano ora per ora con nove piazze dentro. Non sopravvive mai all'impatto con il primo banco di Glühwein. Blocca le cose che vanno davvero bloccate — il treno, il check-in, una prenotazione a cena per sera, e l'unico mercatino o la chiesa che tutti hanno detto che si pentirebbero di perdere — e lascia il resto di ogni serata davvero vuoto. Due punti fissi al giorno bastano e avanzano. Mettetevi d'accordo su un punto e un orario di ritrovo invece di provare a tenere sei persone insieme nella folla; il gruppo si dividerà comunque, ed è molto più divertente quando è previsto invece che casuale.",
+    "p4": "Una piccola cosa che risparmia un sacco di rogne: mettetevi d'accordo in anticipo su cosa succede se va male. Pioverà, oppure ci saranno -4 °C e qualcuno vorrà stare al chiuso già alle 18. Tenete un museo, un pranzo lungo o una terma già sulla lista come piano B, così il gruppo non si ritrova sotto l'acqua a negoziare da zero. La <guideLink>guida ai viaggi di gruppo</guideLink> ha la versione completa, se ti interessa."
+  },
+  "budget": {
+    "title": "Dividere le spese di un weekend natalizio",
+    "p1": "I weekend ai mercatini di Natale hanno una struttura di costi davvero fastidiosa: una voce enorme (l'hotel) e poi duecento voci minuscole. Vin brulé a 4 €, la cauzione della tazza, le caldarroste, un giro di tartiflette, il terzo Glühwein di qualcuno, una decorazione di legno per la cognata. Nessuno tiene il conto di niente, tutti si passano contanti per tutto il weekend, e la domenica sera nessuno ha idea di chi sia in credito e chi in debito. Crea un <budgetLink>budget condiviso</budgetLink> prima di partire, con l'alloggio come voce a sé e una categoria generica \"mercatino\" per tutto il resto. Così fai un unico saldo alla fine invece di quaranta piccoli.",
+    "p2": "L'hotel è dove stanno i soldi veri, ed è lì che sta la decisione vera. Un weekend di dicembre nel centro di Strasburgo o Vienna costa due o tre volte la tariffa normale, e le camere sotto i 150 € spariscono intorno a settembre. Due cose risolvono. Primo: un unico appartamento per sei batte tre camere doppie quasi sempre, sia sul prezzo sia perché avete un posto dove sedervi che non sia un bar strapieno. Secondo: stai a 15 o 20 minuti fuori, sulla linea del tram. Kehl, appena oltre il confine tedesco da Strasburgo, o i quartieri esterni di Vienna, costano una frazione e il mercatino resta comunque a 20 minuti.",
+    "p3": "Per il resto, Budapest e Praga sono nettamente più economiche di Vienna, Strasburgo o Colonia su cibo e bevande — abbastanza da compensare un treno più caro. Vale la pena metterlo sul tavolo se i budget del gruppo sono diversi tra loro. E qualunque cosa facciate, non lasciate che una persona anticipi tutto il weekend con la sua carta. Fate a turno a pagare, registrate ogni spesa quando succede invece che a memoria sul treno di ritorno, e nessuno deve fare il contabile."
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Quando aprono e chiudono esattamente i mercatini di Natale 2026?",
+        "a": "Cambia parecchio da città a città, ed è proprio per questo che la data conta. Confermate per il 2026: Vienna Rathausplatz 13 novembre – 26 dicembre; Duomo di Colonia 16 novembre – 23 dicembre (chiuso il 22 novembre per il Totensonntag); Colmar 23 novembre – 29 dicembre; Norimberga 27 novembre – 24 dicembre; Bruxelles Winter Wonders 27 novembre 2026 – 3 gennaio 2027; Praga, Piazza della Città Vecchia e Piazza San Venceslao 28 novembre 2026 – 6 gennaio 2027. Strasburgo e Budapest non avevano pubblicato le date 2026 a luglio 2026."
+      },
+      {
+        "q": "Quando dovrei prenotare gli hotel per un weekend ai mercatini di Natale?",
+        "a": "A settembre, e non stiamo drammatizzando. Le camere per i weekend di dicembre a Strasburgo, Vienna e Colmar vanno esaurite con mesi di anticipo, e quello che resta dopo ottobre o è lontanissimo dal centro o costa due o tre volte la tariffa normale. L'alloggio è l'unica decisione di questo viaggio che davvero non puoi tornare indietro, quindi bloccalo per primo — sul programma potete litigare a novembre."
+      },
+      {
+        "q": "Qual è il mercatino di Natale migliore per un primo viaggio di gruppo?",
+        "a": "Norimberga o Vienna se vuoi il mercatino classico, grande, fitto, con tutto a portata di piedi. Colmar se vuoi il più bello e non ti dà fastidio che sia piccolo. Bruxelles se il gruppo è sparso tra più paesi, perché i treni diretti da Parigi, Londra e Amsterdam ne fanno il posto più facile in cui ritrovarsi. Lascia perdere gli itinerari tra più città per un primo viaggio — una città in due notti è più che sufficiente, ed è la versione che la gente si gode davvero."
+      },
+      {
+        "q": "Posso fare Strasburgo e Colmar nello stesso weekend?",
+        "a": "Sì, ed è l'unico itinerario tra più città che funziona davvero. Sono a circa 30 minuti l'una dall'altra in TER con treni tutto il giorno, quindi dormi in una e vai in giornata nell'altra invece di cambiare hotel. Aggiungere un paesino alsaziano tipo Eguisheim o Riquewihr significa noleggiare una macchina — decidetelo prima di prenotare, visto che decide anche chi resta sobrio."
+      },
+      {
+        "q": "Qual è il modo più economico per fare un viaggio ai mercatini di Natale con gli amici?",
+        "a": "Tre cose, in ordine di impatto. Prendi il treno invece dell'aereo — per Parigi–Strasburgo o Parigi–Bruxelles costa meno di un volo una volta contati i trasferimenti dall'aeroporto, ed è dal centro al centro. Affitta un unico appartamento per tutto il gruppo invece di camere d'hotel separate; sei persone in un posto solo battono tre doppie quasi sempre. E vai a metà novembre invece che a metà dicembre — Colonia apre il 16 novembre e Vienna il 13, prima che i prezzi diventino cattivi."
+      },
+      {
+        "q": "Ci sono mercatini di Natale ancora aperti dopo Natale?",
+        "a": "Qualcuno sì, ed è utile saperlo perché la maggior parte dei gruppi dà per scontato che la stagione finisca il 24. Praga va avanti fino al 6 gennaio, Bruxelles fino al 3 gennaio, Colmar fino al 29 dicembre, Vienna fino al 26 dicembre. Norimberga, Colonia e Strasburgo chiudono la vigilia o prima. Se il tuo gruppo può viaggiare solo tra Natale e Capodanno, le opzioni sono Praga, Bruxelles o Colmar — e la lista finisce lì."
+      },
+      {
+        "q": "Quanti giorni servono per un viaggio ai mercatini di Natale?",
+        "a": "Due notti sono la misura perfetta per una città: arrivi venerdì sera, due serate piene al mercatino, a casa domenica. I mercatini sono una cosa da sera — danno il meglio dopo il tramonto, quindi il giorno è per la città in sé. Tre notti se ne fai due, di città. Una notte non è un viaggio, è un pendolarismo con il vin brulé."
+      },
+      {
+        "q": "Come si dividono le spese in un weekend fatto di tanti piccoli acquisti?",
+        "a": "Registrale mentre succedono, non a memoria sul treno di ritorno. Il trucco è tutto lì. I weekend ai mercatini di Natale sono morte per mille vin brulé da 4 €, e già solo le cauzioni delle tazze confonderanno tutti entro domenica. Usa un budget condiviso con l'hotel come voce singola e una categoria generica per le spese al mercatino, fate a turno a pagare i giri, e saldate una volta sola alla fine. WePlanify fa i conti, così nessuno deve fare il tesoriere del gruppo."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Scopri di più",
+    "tripWithFriends": {
+      "title": "Viaggio con gli amici",
+      "desc": "Organizza qualsiasi viaggio di gruppo senza fatica.",
+      "cta": "Leggi di più →"
+    },
+    "familyTrip": {
+      "title": "Viaggio in famiglia",
+      "desc": "I mercatini sono un classico di famiglia — organizzalo senza il caos.",
+      "cta": "Leggi di più →"
+    },
+    "groupGuide": {
+      "title": "Guida ai viaggi di gruppo",
+      "desc": "La guida completa, passo dopo passo.",
+      "cta": "Leggi la guida →"
+    },
+    "bestApps": {
+      "title": "Le migliori app per viaggi di gruppo",
+      "desc": "Il nostro confronto tra i migliori strumenti per i viaggi di gruppo.",
+      "cta": "Leggi l'articolo →"
+    }
+  },
+  "cta": {
+    "title": "Blocca il weekend prima che spariscano gli hotel",
+    "subtitle": "Date, città, hotel, programma e il budget del vin brulé — un unico piano condiviso, tutto il gruppo sulla stessa pagina.",
+    "button": "Inizia a organizzare gratis"
+  },
+  "jsonld": {
+    "articleHeadline": "Mercatini di Natale 2026: il pianificatore di viaggi di gruppo con le date vere",
+    "howToName": "Come organizzare un viaggio ai mercatini di Natale in gruppo nel 2026",
+    "howToDescription": "Scegli prima il weekend, lascia che siano le date a decidere la città, prenota i letti entro fine settembre, tieni il programma leggero e dividi il vin brulé senza un foglio di calcolo.",
+    "howToSteps": [
+      {
+        "name": "Vota i weekend prima di litigare sulle città",
+        "text": "Ogni mercatino segue il suo calendario, quindi il weekend che riuscite a fare tutti è ciò che decide davvero la destinazione. Fai prima un sondaggio su due o tre weekend candidati, poi guarda quali mercatini sono aperti in quelle date. La rosa si scrive da sola."
+      },
+      {
+        "name": "Prenota subito l'alloggio — è l'unico passo irreversibile",
+        "text": "Le camere di dicembre a Strasburgo, Vienna e Colmar vanno esaurite entro fine settembre e costano due o tre volte la tariffa normale. Blocca un unico appartamento per tutto il gruppo, o stai a 20 minuti fuori sulla linea del tram. Tutto il resto di questo viaggio si può cambiare dopo."
+      },
+      {
+        "name": "Costruisci un programma volutamente leggero",
+        "text": "Due giorni, sei persone e un piano ora per ora sono la ricetta per un weekend andato male. Blocca il treno, il check-in, una cena a sera e l'unica cosa su cui erano tutti d'accordo. Due punti fissi al giorno, e lascia le serate davvero libere."
+      },
+      {
+        "name": "Crea il budget condiviso prima di partire",
+        "text": "Una voce enorme per l'hotel e cento minuscole per vin brulé, cauzioni delle tazze e caldarroste. Metti l'alloggio su una voce a sé, usa una categoria generica per le spese al mercatino, fate a turno a pagare i giri, e saldate una volta sola alla fine."
+      }
+    ]
+  }
+}

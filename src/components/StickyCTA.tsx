@@ -28,6 +28,11 @@ const PATH_TO_TEMPLATE: Record<string, { template: string; campaign: string }> =
   "/tomorrowland-2026-trip-planner": { template: "tomorrowland-2026", campaign: "tomorrowland-2026" },
   "/solar-eclipse-2026-trip-planner": { template: "solar-eclipse-2026", campaign: "solar-eclipse-2026" },
   "/ultra-europe-2026-trip-planner": { template: "ultra-europe-2026", campaign: "ultra-europe-2026" },
+  "/oktoberfest-2026-trip-planner": { template: "oktoberfest-2026", campaign: "oktoberfest-2026" },
+  "/christmas-markets-2026-trip-planner": { template: "christmas-markets-2026", campaign: "christmas-markets-2026" },
+  "/ski-season-2027-trip-planner": { template: "ski-season-2027", campaign: "ski-season-2027" },
+  "/solar-eclipse-2027-trip-planner": { template: "solar-eclipse-2027", campaign: "solar-eclipse-2027" },
+  "/rugby-world-cup-2027-trip-planner": { template: "rugby-world-cup-2027", campaign: "rugby-world-cup-2027" },
 };
 
 export default function StickyCTA({ text, href }: StickyCTAProps) {

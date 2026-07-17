@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "title": "Planer wyjazdu na Puchar Świata w Rugby 2027",
+    "description": "Darmowy planer wyjazdu grupowego na Puchar Świata w Rugby 2027. Australia, 1 października – 13 listopada: 24 drużyny, 7 miast, 52 mecze. Bez agencji."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Planer wyjazdu na Puchar Świata w Rugby 2027"
+  },
+  "hero": {
+    "tag": "Darmowy planer wyjazdu · Puchar Świata w Rugby 2027",
+    "title": "Planer wyjazdu na Puchar Świata w Rugby 2027: Australia, rezerwacja rok wcześniej",
+    "readTime": "9 min czytania"
+  },
+  "heroBody": "To darmowy planer wyjazdu grupowego na Puchar Świata w Rugby 2027 — Australia, od 1 października do 13 listopada 2027, pierwsza edycja z 24 drużynami. Losowanie grup już za nami, więc wiesz, gdzie rozegra się faza grupowa. Nie wiesz tylko, dokąd Twoja drużyna pojedzie później. I na tym polega problem: loty do Australii trzeba rezerwować mniej więcej rok wcześniej, długo zanim powstanie drabinka 1/8 finału. Oto jak zaklepać wszystko wcześnie, nie zamykając ekipy w trasie, której później pożałujesz. Wciąż wybierasz narzędzia? Zobacz nasze <link>porównanie aplikacji do podróży grupowych</link>.",
+  "facts": {
+    "title": "Turniej w pigułce",
+    "datesLabel": "Terminy turnieju",
+    "datesValue": "1 paź – 13 lis 2027",
+    "datesNote": "43 dni w całej Australii",
+    "teamsLabel": "Drużyny",
+    "teamsValue": "24",
+    "teamsNote": "6 grup po 4 — pierwszy raz",
+    "citiesLabel": "Miasta gospodarze",
+    "citiesValue": "7",
+    "citiesNote": "8 stadionów, 52 mecze",
+    "finalLabel": "Finał",
+    "finalValue": "13 lis, Sydney",
+    "finalNote": "Stadium Australia, 82 000 miejsc"
+  },
+  "problem": {
+    "p1": "Australia to najtrudniejszy Puchar Świata w Rugby, jaki kiedykolwiek musiała zaplanować europejska czy amerykańska ekipa. Ponad 20 godzin lotu, wyjazd za 3000–5000 € na osobę i terminarz rozciągnięty na kontynencie wielkości Europy. Loty dalekiego zasięgu są najtańsze jakieś jedenaście–dwanaście miesięcy wcześniej — czyli sensowne okno rezerwacji otwiera się, zanim ktokolwiek wie, czy jego drużyna wyjdzie z grupy. Sześciu kumpli, sześć budżetów, sześć różnych poziomów gotowości, żeby wydać czterocyfrową kwotę na „może”.",
+    "p2": "WePlanify to darmowe wspólne centrum dowodzenia wyjazdami na Puchar Świata w Rugby 2027 — terminarz, loty, hotele, budżet i pakowanie w jednym planie, który widzi cała ekipa."
+  },
+  "toc": {
+    "title": "Na tej stronie",
+    "hostCities": "7 miast gospodarzy",
+    "route": "Jechać za drużyną czy wybrać bazę?",
+    "tickets": "Bilety i logistyka",
+    "planning": "Planowanie w grupie",
+    "budget": "Ile to naprawdę kosztuje",
+    "faq": "Najczęstsze pytania"
+  },
+  "hostCities": {
+    "title": "7 miast gospodarzy",
+    "subtitle": "Osiem stadionów w siedmiu miastach, rozrzuconych po całym kontynencie. Z Perth do Townsville leci się pięć godzin — dalej niż z Londynu do Kairu. Trasę dyktują odległości, nie terminarz.",
+    "stadiumLabel": "Stadion",
+    "items": [
+      {
+        "city": "Sydney",
+        "state": "Nowa Południowa Walia",
+        "stadium": "Stadium Australia i Sydney Football Stadium",
+        "note": "Gospodarz finału 13 listopada. Jedyne miasto z dwoma obiektami."
+      },
+      {
+        "city": "Melbourne",
+        "state": "Wiktoria",
+        "stadium": "Docklands Stadium",
+        "note": "Jedyny w pełni zadaszony obiekt turnieju — dach pozostaje zamknięty na każdym meczu. Zero ryzyka pogodowego."
+      },
+      {
+        "city": "Brisbane",
+        "state": "Queensland",
+        "stadium": "Brisbane Stadium",
+        "note": "Ciepło, wszędzie blisko na piechotę i naturalna brama na Gold Coast, jeśli doklejasz dni wakacji."
+      },
+      {
+        "city": "Perth",
+        "state": "Australia Zachodnia",
+        "stadium": "Perth Stadium",
+        "note": "Gospodarz meczu otwarcia 1 października. Na uboczu — pięć godzin lotu od wschodniego wybrzeża."
+      },
+      {
+        "city": "Adelajda",
+        "state": "Australia Południowa",
+        "stadium": "Adelaide Oval",
+        "note": "Zwarta i tania jak na australijskie standardy. Kraina win Barossa godzinę drogi stąd."
+      },
+      {
+        "city": "Newcastle",
+        "state": "Nowa Południowa Walia",
+        "stadium": "Newcastle Stadium",
+        "note": "Pierwszy raz gości mecze Pucharu Świata w Rugby. Dwie godziny pociągiem na północ od Sydney."
+      },
+      {
+        "city": "Townsville",
+        "state": "Queensland",
+        "stadium": "North Queensland Stadium",
+        "note": "Tropikalna daleka północ. Punkt wypadowy na Wielką Rafę Koralową i Magnetic Island."
+      }
+    ]
+  },
+  "route": {
+    "title": "Decyzja, która przesądza o wszystkim: jechać za drużyną czy osiąść w bazie?",
+    "subtitle": "Każdy grupowy wyjazd do Australii rozwidla się w tym miejscu. Podejmijcie tę decyzję, zanim zarezerwujecie choć jeden lot — od niej zależy budżet, trasa i to, ile kraju naprawdę zobaczycie.",
+    "followTitle": "Jedź za drużyną",
+    "followSubtitle": "Goń swoich mecz po meczu w grupie, a potem w fazie pucharowej.",
+    "followPros": [
+      "Widzisz każdy mecz swojej drużyny",
+      "Maksymalna atmosfera — jedziesz z tą samą ekipą kibiców wyjazdowych",
+      "Wyjazd ma naturalną fabułę i oczywiste zakończenie"
+    ],
+    "followCons": [
+      "Minimum trzy loty krajowe, zwykle więcej",
+      "Meczów pucharowych nie zarezerwujesz, dopóki drabinka się nie zapełni",
+      "Jeśli drużyna odpadnie w grupie, cały plan się sypie",
+      "Ceny australijskich lotów krajowych mocno skaczą wokół terminów meczów"
+    ],
+    "followVerdict": "Najlepsze dla: grup z realnym zapasem w budżecie i tolerancją na rezerwowanie późno i drogo.",
+    "baseTitle": "Osiądź w jednym mieście",
+    "baseSubtitle": "Wybierz miasto gospodarza, zostań na miejscu i oglądaj to, co samo do Ciebie przyjedzie.",
+    "basePros": [
+      "Jedna rezerwacja noclegu, wynegocjowana na długo, podzielona po równo",
+      "Zero lotów krajowych — największa możliwa oszczędność",
+      "Naprawdę poznajesz miasto, a nie lotnisko",
+      "Odporne na wczesne odpadnięcie Twojej drużyny"
+    ],
+    "baseCons": [
+      "Przegapisz mecze, które Twoja drużyna zagra gdzie indziej",
+      "Mniej różnorodności — ta sama strefa kibica, te same puby przez sześć tygodni",
+      "Wynajem w Sydney czy Melbourne nie jest tani przy długim pobycie"
+    ],
+    "baseVerdict": "Najlepsze dla: szczerze mówiąc, większości grup — i to jedyny wariant, który regularnie mieści się poniżej 3500 € na głowę.",
+    "hybridTitle": "Hybryda, na której kończy większość grup",
+    "hybridBody": "Baza w Sydney lub Brisbane na większość wyjazdu, jeden albo dwa loty na mecze, które naprawdę się liczą, a faza pucharowa traktowana jako opcja, nie jako plan. Nocleg w bazie rezerwujesz teraz, loty krajowe później. To nie jest wyjazd purysty, ale przetrwa zderzenie z rzeczywistością — i ze stanem kont Twojej ekipy."
+  },
+  "midCta": {
+    "title": "Ustalcie trasę, zanim ceny ruszą w górę",
+    "subtitle": "Połóż obie opcje przed grupą, zagłosujcie i zaklep plan, który widzą wszyscy.",
+    "button": "Zacznij planować za darmo"
+  },
+  "tickets": {
+    "title": "Bilety i logistyka",
+    "p1": "Najważniejsze tury sprzedaży biletów już się odbyły. Przedsprzedaż ruszyła 18 lutego 2026 dla kibiców zarejestrowanych do 17 lutego, a ogólna faza aplikacji — światowe losowanie biletów na mecze z nadsubskrypcją — trwała od 19 maja do 2 czerwca 2026. Jeśli przegapiłeś obie, nie jesteś jeszcze spalony.",
+    "p2": "Kolejna sprzedaż ogólna to 1 października 2026, kto pierwszy, ten lepszy. Wpiszcie tę datę do wspólnego kalendarza grupy już teraz, bo przy takim nawisie popytu dobre kategorie znikają w kilka minut. Ustalcie wcześniej jako grupa, na które mecze polujecie i ile jesteście gotowi zapłacić — kłótnia o kategorie cenowe, gdy kolejka już trwa, to prosta droga do tego, żeby zostać z niczym.",
+    "p3": "Kupuj wyłącznie przez <ticketLink>oficjalną stronę biletową Pucharu Świata w Rugby</ticketLink>. Rynek odsprzedaży biletów na australijskie wydarzenia sportowe jest mocno ograniczony prawnie, a bilety kupione poza oficjalnymi kanałami mogą zostać anulowane przy bramce. Jeśli wolisz zapłacić za pewność, u oficjalnego partnera dostępne są pakiety hospitality i podróżne.",
+    "p4": "Co do logistyki: Australia wymaga wizy praktycznie od każdego — większość posiadaczy paszportów europejskich, brytyjskich i amerykańskich dostanie ETA albo eVisitor online w kilka dni, ale to nie dzieje się automatycznie i każdy załatwia to sam. Potraktujcie to jako grupowy deadline, nie jako indywidualną sprawę na później. Loty krajowe to kręgosłup każdego planu obejmującego kilka miast; Qantas, Virgin Australia i Jetstar obsługują wszystkie miasta gospodarzy, a ceny wokół terminów meczów zachowują się dokładnie tak, jak się obawiasz. Minimum pięć dni przerwy między meczami sprawia, że terminarz oddycha — jest naprawdę czas, żeby między meczami pozwiedzać kraj."
+  },
+  "planning": {
+    "title": "Jak to zaplanować w grupie",
+    "p1": "Najtrudniejszy w tym wyjeździe nie jest plan trasy. Najtrudniej jest namówić sześć osób, żeby zaklepały po cztery tysiące euro każda, dwanaście miesięcy wcześniej, na plan, którego druga połowa jest nie do przewidzenia. To problem zaufania, zanim stanie się problemem podróżniczym — i dlatego takie wyjazdy umierają w grupowych czatach.",
+    "p2": "Zacznij od oddzielenia pewnego od spekulacji. Faza grupowa jest ustalona — losowanie za nami, miasta znane, terminarz opublikowany. Tę część zarezerwujcie porządnie. Faza pucharowa to los na loterii. Wpiszcie orientacyjne daty do <itineraryLink>wspólnego planu podróży</itineraryLink> jako zaślepki i nie rezerwujcie pod nie niczego bezzwrotnego, dopóki nie ułoży się 1/8 finału.",
+    "p3": "Potem zbierzcie zobowiązania na piśmie. Nie „no jasne, jestem chętny” na grupowym czacie o północy — prawdziwą odpowiedź na prawdziwe pytanie. <pollsLink>Zrób ankietę</pollsLink> o dwóch rzeczach, które przesądzają o wszystkim: jechać za drużyną czy baza, i cały turniej czy tylko faza grupowa. W ankiecie ludzie odpowiadają szczerze, czego nigdy nie robią na czacie, gdzie wszyscy patrzą. Dowiesz się teraz, a nie w marcu, że dwóch kumpli tak naprawdę nigdy nie było na tak.",
+    "p4": "Ustawcie terminy, które nie dotyczą samego wyjazdu. Wnioski wizowe, sprzedaż biletów 1 października, daty zaliczek, moment, w którym tanie loty się ulotnią. Wspólna lista zadań z realnymi datami, widoczna dla wszystkich, to jedyne, co powstrzymuje tak duży wyjazd przed cichym rozsypaniem się, gdy każdy zakłada, że ktoś inny się tym zajmuje. Nasz <guideLink>przewodnik po planowaniu wyjazdu grupowego</guideLink> tłumaczy całą mechanikę."
+  },
+  "budget": {
+    "title": "Ile to naprawdę kosztuje",
+    "p1": "Bądź szczery ze swoją grupą od pierwszej rozmowy: dla Europejczyka to wyjazd za 3000–5000 € na osobę, a widełki zależą prawie wyłącznie od decyzji podjętych w najbliższych miesiącach, a nie od tego, jak oszczędnie żyjecie już na miejscu.",
+    "p2": "Loty to punkt stały — bilety powrotne z Europy do Australii kosztują zwykle 900–1600 €, a październik to sezon przejściowy, co pomaga. Prawdziwe pieniądze leżą w oknie jedenastu–dwunastu miesięcy przed wyjazdem; czekanie, aż drabinka się wyklaruje, może kosztować kilkaset euro na głowę. To najmocniejszy argument za strategią bazy w jednym mieście: pozwala zarezerwować drogą część wcześnie i zostać elastycznym w tej tańszej.",
+    "p3": "Bilety na mecze każdy kibic kupuje sam — trzymajcie je całkowicie poza wspólną kasą. Wspólna kasa jest na nocleg, loty krajowe, transport na miejscu, wspólne posiłki i wyjazd na rafę, który ktoś nieuchronnie zaproponuje. Załóżcie <budgetLink>wspólny licznik budżetu</budgetLink> z jedną kategorią na typ wydatku i zmieniajcie się w tym, kto płaci za co, żeby czyjaś karta nie finansowała całej grupy przez sześć tygodni.",
+    "p4": "Nocleg to miejsce, w którym strategia bazy się zwraca. Pięciopokojowy dom w inner west w Sydney na miesiąc, podzielony na pięć osób, wychodzi znacznie taniej niż pięć pokoi hotelowych na te same noce — a hotele przy stadionach w miastach gospodarzach i tak zwielokrotniają stawki w dni meczowe. Szukajcie w dzielnicach z porządnym dojazdem pociągiem, a nie w kodach pocztowych, które reklamuje Wam turniej."
+  },
+  "pullQuote": "Zarezerwujesz ten wyjazd, zanim dowiesz się, jak się skończy. To nie jest błąd w Twoim planowaniu — taka jest natura tej sprawy. Zaplanuj porządnie pewną część, a resztę trzymaj luźno.",
+  "faq": {
+    "title": "Najczęstsze pytania",
+    "items": [
+      {
+        "q": "Kiedy odbędzie się Puchar Świata w Rugby 2027 i gdzie?",
+        "a": "Turniej potrwa od 1 października do 13 listopada 2027 w całej Australii — 43 dni, 52 mecze, siedem miast gospodarzy i osiem stadionów. Mecz otwarcia zagrany zostanie na Perth Stadium 1 października, a finał na Stadium Australia w Sydney 13 listopada. To pierwsza w historii turnieju edycja z 24 drużynami."
+      },
+      {
+        "q": "Jak działa nowy format z 24 drużynami?",
+        "a": "24 drużyny podzielono na sześć grup po cztery, zamiast dawnych czterech grup po pięć. Po dwie najlepsze z każdej grupy awansują automatycznie, dołączają do nich cztery najlepsze zespoły z trzecich miejsc, co wypełnia nowe 1/8 finału — pierwsza poważna zmiana formatu od dekad. Mimo rozszerzenia zwycięzca turnieju wciąż rozgrywa siedem meczów: trzy w fazie grupowej i cztery w pucharowej. Między meczami jest minimum pięć dni przerwy."
+      },
+      {
+        "q": "Czy da się jeszcze zdobyć bilety na Puchar Świata w Rugby 2027?",
+        "a": "Tak. Przedsprzedaż z lutego 2026 i losowanie z fazy aplikacji z maja–czerwca 2026 już się zamknęły, ale kolejna sprzedaż ogólna rusza 1 października 2026 na zasadzie „kto pierwszy, ten lepszy”. Kupuj wyłącznie przez oficjalną stronę biletową Pucharu Świata w Rugby — australijskie przepisy o odsprzedaży są surowe, a bilety z nieoficjalnych kanałów mogą zostać unieważnione przy bramce. W międzyczasie dostępne są oficjalne pakiety hospitality i podróżne."
+      },
+      {
+        "q": "Kiedy rezerwować loty do Australii na Puchar Świata w Rugby?",
+        "a": "Mniej więcej jedenaście–dwanaście miesięcy wcześniej, co przy turnieju w październiku 2027 oznacza końcówkę 2026. Bilety powrotne z Europy kosztują zwykle 900–1600 €, a październik wypada w sezonie przejściowym. Kłopot w tym, że to okno otwiera się długo przed powstaniem drabinki pucharowej, więc zaklepujesz daty, nie znając ścieżki swojej drużyny. Właśnie dlatego większość grup rezerwuje wcześnie miasto bazowe i zostaje elastyczna przy lotach krajowych."
+      },
+      {
+        "q": "Jechać za drużyną po całej Australii czy osiąść w jednym mieście?",
+        "a": "Dla większości grup: baza w jednym mieście. Jazda za drużyną to minimum trzy loty krajowe, mecze pucharowe, których nie zarezerwujesz z wyprzedzeniem, i plan, który się sypie, jeśli odpadną w grupie. Baza w Sydney albo Brisbane to jedna rezerwacja noclegu, zero lotów krajowych i wyjazd, który przetrwa zły wynik. Typowy kompromis: baza gdzieś centralnie i loty tylko na te mecze, które naprawdę się liczą."
+      },
+      {
+        "q": "Ile kosztuje wyjazd na Puchar Świata w Rugby 2027 w przeliczeniu na osobę?",
+        "a": "Zaplanuj 3000–5000 € na osobę z Europy na dwu- lub trzytygodniowy wyjazd. Loty to 900–1600 € w obie strony, ceny biletów na mecze mocno różnią się w zależności od kategorii, a nocleg zależy całkowicie od tego, czy przemieszczacie się między miastami, czy dzielicie jeden dom. Grupy, które osiadają w jednym mieście i dzielą wynajem, regularnie lądują przy dolnej granicy; grupy goniące swoją drużynę po całym kraju — przy górnej albo powyżej."
+      },
+      {
+        "q": "Czy potrzebuję wizy, żeby pojechać na turniej do Australii?",
+        "a": "Niemal na pewno tak — Australia wymaga wizy lub zezwolenia na wjazd praktycznie od każdego odwiedzającego. Większość posiadaczy paszportów brytyjskich, europejskich i amerykańskich może złożyć wniosek o ETA albo eVisitor online i dostaje zgodę w kilka dni, ale nie dzieje się to automatycznie i każdy podróżny musi złożyć wniosek sam. Potraktujcie to jako grupowy deadline z konkretną datą, bo to klasyczna rzecz, o której jedna osoba zapomni do tygodnia przed wylotem."
+      },
+      {
+        "q": "Jak podzielić koszty tak drogiego wyjazdu w grupie?",
+        "a": "Oddzielcie to, co indywidualne, od tego, co wspólne. Bilety na mecze i loty każdy kupuje i opłaca sam. Nocleg, transport krajowy, dojazdy na miejscu i wspólne posiłki idą do wspólnej kasy, każde ze swoją kategorią. Zmieniajcie się w płaceniu za duże wspólne wydatki, żeby jedna osoba nie nosiła pięciu tysięcy euro grupowych kosztów na swojej karcie przez sześć tygodni. WePlanify śledzi, kto ile zapłacił i kto komu jest winien, więc na koniec nie ma żadnych rozliczeniowych niespodzianek."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Odkryj więcej",
+    "worldCup": {
+      "title": "Planer Mistrzostw Świata 2026",
+      "desc": "Wersja piłkarska — 16 miast gospodarzy w trzech krajach.",
+      "cta": "Czytaj więcej →"
+    },
+    "tripWithFriends": {
+      "title": "Wyjazd ze znajomymi",
+      "desc": "Zaplanuj każdy wyjazd grupowy bez wysiłku.",
+      "cta": "Czytaj więcej →"
+    },
+    "groupGuide": {
+      "title": "Przewodnik po wyjazdach grupowych",
+      "desc": "Kompletny przewodnik krok po kroku.",
+      "cta": "Przeczytaj przewodnik →"
+    },
+    "bestApps": {
+      "title": "Najlepsze aplikacje do podróży grupowych",
+      "desc": "Nasze porównanie najlepszych narzędzi do wyjazdów grupowych.",
+      "cta": "Przeczytaj artykuł →"
+    }
+  },
+  "cta": {
+    "title": "Zbuduj swój wyjazd na Puchar Świata w Rugby 2027",
+    "subtitle": "Terminarz, loty, dom w Sydney i budżet, który się spina — jeden wspólny plan, cała ekipa na tej samej stronie.",
+    "button": "Zacznij planować"
+  },
+  "jsonld": {
+    "eventName": "Puchar Świata w Rugby 2027",
+    "eventDescription": "Puchar Świata w Rugby 2027 — 24 reprezentacje narodowe, siedem miast gospodarzy i osiem stadionów w całej Australii, od 1 października do 13 listopada 2027. Pierwsza edycja z 24 drużynami, rozgrywana w sześciu grupach po cztery zespoły, z nowym 1/8 finału.",
+    "performer": "Reprezentacje narodowe Pucharu Świata w Rugby 2027",
+    "howToName": "Jak zaplanować grupowy wyjazd na Puchar Świata w Rugby 2027",
+    "howToDescription": "Zdecydujcie, czy jechać za drużyną, czy osiąść w jednym mieście, zarezerwujcie loty dalekiego zasięgu wcześnie, podzielcie pięciocyfrowy budżet grupy po równo i trzymajcie fazę pucharową luźno.",
+    "howToSteps": [
+      {
+        "name": "Wybierzcie: jechać za drużyną czy osiąść w jednym mieście",
+        "text": "Ta jedna decyzja ustawia Wasz budżet i trasę. Jazda za drużyną to trzy albo więcej lotów krajowych i mecze pucharowe, których nie da się zarezerwować z wyprzedzeniem; baza w Sydney albo Brisbane to jedna rezerwacja noclegu i zero lotów krajowych. Ustalcie to przed wszystkim innym."
+      },
+      {
+        "name": "Zbierzcie realne zobowiązania w ankiecie",
+        "text": "Wyjazd za 3000–5000 € rezerwowany rok wcześniej wymaga konkretnych odpowiedzi, a nie entuzjazmu z grupowego czatu. Zrób ekipie ankietę: za drużyną czy baza, cały turniej czy tylko faza grupowa. Dowiesz się teraz, a nie za pół roku, kto tak naprawdę nigdy nie był na tak."
+      },
+      {
+        "name": "Zarezerwujcie pewną część, resztę trzymajcie luźno",
+        "text": "Grupy są wylosowane, a terminarz fazy grupowej opublikowany — tę część zarezerwujcie porządnie, jakieś jedenaście–dwanaście miesięcy wcześniej, gdy loty dalekiego zasięgu są najtańsze. 1/8 finału zostawcie w planie jako daty-zaślepki i nie rezerwujcie pod nie niczego bezzwrotnego, dopóki drabinka się nie zapełni."
+      },
+      {
+        "name": "Dzielcie wspólne koszty według kategorii od pierwszego dnia",
+        "text": "Bilety na mecze i loty zostają indywidualne. Nocleg, transport krajowy i wspólne posiłki idą do wspólnego budżetu, każde ze swoją kategorią, a płacenie za duże wydatki krąży po grupie, żeby jedna osoba nie finansowała wszystkich przez sześć tygodni."
+      }
+    ]
+  }
+}

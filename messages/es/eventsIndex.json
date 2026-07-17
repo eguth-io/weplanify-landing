@@ -1,17 +1,17 @@
 {
   "meta": {
-    "title": "Planificadores de viajes para eventos 2026 — Gratis, para grupos",
-    "description": "Planifica tu viaje a un evento de 2026 con WePlanify. Planificadores gratuitos dedicados al Mundial de la FIFA, la final de la Champions League, Tomorrowland, Hellfest, Ultra Europe y el eclipse solar total — pensados para grupos de fans que viajan juntos."
+    "title": "Planificadores de viajes para eventos 2026-2027 — Gratis, para grupos",
+    "description": "Planifica tu viaje a un evento de 2026-2027 con WePlanify. Planificadores gratuitos dedicados al Mundial de la FIFA, el Oktoberfest, los mercados navideños de Europa, el eclipse solar total de 2027, el Mundial de Rugby y más — pensados para grupos de fans que viajan juntos."
   },
   "hero": {
-    "tag": "Planificadores de viajes para eventos 2026",
-    "title": "Planifica tu viaje\na un evento de 2026 — juntos",
-    "description": "Seis planificadores dedicados a los mayores eventos del año. Elige el tuyo, construye un itinerario compartido, repartid los gastos y coordinad al grupo — todo gratis.",
+    "tag": "Planificadores de viajes para eventos 2026-2027",
+    "title": "Planifica tu viaje\na un evento de 2026-2027 — juntos",
+    "description": "Once planificadores dedicados a los mayores eventos de los próximos dos años. Elige el tuyo, construye un itinerario compartido, repartid los gastos y coordinad al grupo — todo gratis.",
     "cta": "Empezar a planificar gratis"
   },
   "intro": {
     "title": "Un planificador por evento, pensado para grupos",
-    "body": "Los grandes eventos traen grandes logísticas: partidos repartidos por las ciudades sede, pases de festival para un grupo de 12 personas, permisos de acampada, choques de fechas de última hora. Cada una de nuestras páginas de eventos 2026 está hecha para ese evento concreto — tablas de ciudades sede, calendarios reales, los detalles que solo los fans descubren. Elige el tuyo abajo."
+    "body": "Los grandes eventos traen grandes logísticas: partidos repartidos por las ciudades sede, pases de festival para un grupo de 12 personas, permisos de acampada, choques de fechas de última hora. Cada una de nuestras páginas de eventos 2026-2027 está hecha para ese evento concreto — tablas de ciudades sede, calendarios reales, los detalles que solo los fans descubren. Elige el tuyo abajo."
   },
   "cardCta": "Abrir el planificador →",
   "cta": {
@@ -21,26 +21,50 @@
   },
   "breadcrumb": {
     "home": "Inicio",
-    "events": "Eventos 2026"
+    "events": "Eventos"
   },
   "events": [
+    {
+      "title": "Eclipse solar total — 12 ago, 2026",
+      "date": "12 de agosto de 2026",
+      "location": "Islandia · España · Groenlandia",
+      "description": "El viaje a la totalidad que solo ocurre una vez por década. Los mejores puntos de observación, planes de contingencia por el clima, alojamientos que se agotan con 18 meses de antelación."
+    },
+    {
+      "title": "Oktoberfest 2026",
+      "date": "19 sep – 4 oct, 2026",
+      "location": "Múnich, Alemania",
+      "description": "16 días, 191.ª edición, entrada gratis — pero las carpas se reservan en mesas de 10, así que el grupo tiene que cerrarlo pronto. Los hoteles de Múnich se disparan durante la fiesta, y siempre hay alguien que adelanta la ronda de Maß."
+    },
+    {
+      "title": "Mercados navideños 2026",
+      "date": "nov – dic, 2026",
+      "location": "Europa",
+      "description": "Viena, Colmar, Núremberg, Colonia, Praga, Bruselas — cada ciudad tiene sus propias fechas, así que elegir el finde es elegir el destino. Los hoteles se agotan en septiembre: zanjad la votación pronto."
+    },
+    {
+      "title": "Temporada de esquí 2026-27",
+      "date": "nov 2026 – may 2027",
+      "location": "Alpes franceses",
+      "description": "Tignes y Val Thorens abren el 21 de noviembre y cierran el 2 de mayo. Una persona adelanta el chalet mientras los forfaits, el alquiler y la comida se reparten de forma desigual — y las semanas de vacaciones escolares de febrero cuestan más."
+    },
+    {
+      "title": "Eclipse solar total — 2 ago, 2027",
+      "date": "2 de agosto de 2027",
+      "location": "Egipto · España · Marruecos",
+      "description": "6 min 22 s de totalidad sobre Luxor — la más larga del siglo en tierra accesible. Doce meses para decidir entre un crucero por el Nilo y una base en tierra, y lo escaso no son las camas, sino el acuerdo del grupo."
+    },
+    {
+      "title": "Mundial de Rugby 2027",
+      "date": "oct – nov, 2027",
+      "location": "Australia",
+      "description": "La primera edición con 24 selecciones, con los grupos ya sorteados. Los vuelos de larga distancia se reservan unos 12 meses antes y la próxima venta de entradas es el 1 de octubre de 2026, por orden de llegada — así que cerrad la ruta entre ciudades antes de que exista el cuadro de octavos."
+    },
     {
       "title": "Mundial de la FIFA 2026",
       "date": "11 jun – 19 jul, 2026",
       "location": "EE. UU. · Canadá · México",
       "description": "16 ciudades sede en tres países. Planifica tu ruta entre ciudades, reparte los gastos por categoría y coordina al grupo de fans a través de las fronteras."
-    },
-    {
-      "title": "Final de la Champions League 2026",
-      "date": "30 may, 2026",
-      "location": "Budapest, Hungría",
-      "description": "La mayor final de clubes del año en el Puskás Aréna. Planifica el transporte, el hotel y el encuentro previo al partido para el grupo."
-    },
-    {
-      "title": "Hellfest 2026",
-      "date": "19 – 22 jun, 2026",
-      "location": "Clisson, Francia",
-      "description": "Cuatro días de metal en Clisson. Logística de acampada, coche compartido y la hoja de cálculo de cartel y escenarios — todo en un plan compartido."
     },
     {
       "title": "Tomorrowland 2026",
@@ -49,16 +73,22 @@
       "description": "Entradas para DreamVille, pases de festival, logística de tren. Coordina al grupo y el bote compartido para que nadie persiga a nadie por 40 € la semana siguiente."
     },
     {
-      "title": "Eclipse solar total — 12 ago, 2026",
-      "date": "12 de agosto de 2026",
-      "location": "Islandia · España · Groenlandia",
-      "description": "El viaje a la totalidad que solo ocurre una vez por década. Los mejores puntos de observación, planes de contingencia por el clima, alojamientos que se agotan con 18 meses de antelación."
-    },
-    {
       "title": "Ultra Europe 2026",
       "date": "10 – 12 jul, 2026",
       "location": "Split, Croacia",
       "description": "Tres días en el Adriático. Hotel o Airbnb, logística de pases de festival y excursiones por Dalmacia — para el grupo que quiere algo más que el escenario principal."
+    },
+    {
+      "title": "Hellfest 2026",
+      "date": "19 – 22 jun, 2026",
+      "location": "Clisson, Francia",
+      "description": "Cuatro días de metal en Clisson. Logística de acampada, coche compartido y la hoja de cálculo de cartel y escenarios — todo en un plan compartido."
+    },
+    {
+      "title": "Final de la Champions League 2026",
+      "date": "30 may, 2026",
+      "location": "Budapest, Hungría",
+      "description": "La mayor final de clubes del año en el Puskás Aréna. Planifica el transporte, el hotel y el encuentro previo al partido para el grupo."
     }
   ]
 }

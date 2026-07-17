@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "title": "Planer wyjazdu na Oktoberfest 2026 — za darmo, dla grup",
+    "description": "Darmowy planer wyjazdu na Oktoberfest 2026 dla grup. Monachium, Theresienwiese, od 19 września do 4 października. Zaklepcie stół w namiocie dla całej ekipy, podzielcie się kosztem Maßów i hotelu i dogadajcie jeden termin — bez biura podróży, bez subskrypcji."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "current": "Planer wyjazdu na Oktoberfest 2026"
+  },
+  "hero": {
+    "tag": "Darmowy planer wyjazdu · Oktoberfest 2026",
+    "title": "Planer wyjazdu na Oktoberfest 2026: posadź całą ekipę przy jednym stole",
+    "intro": "191. Oktoberfest trwa od soboty 19 września do niedzieli 4 października 2026 roku na monachijskiej Theresienwiese. Wstęp jest darmowy, piwo już nie, a o powodzeniu całego wyjazdu decyduje jedna rzecz: stół, który trzeba zarezerwować wiele miesięcy wcześniej — w bloku dziesięciu miejsc, na konkretny dzień, w jednym konkretnym namiocie. To decyzja grupowa, zanim w ogóle stanie się decyzją podróżną. Oto jak ją podjąć, nie tracąc trojga znajomych w grupowym czacie. Jeśli wciąż dobierasz narzędzia, zobacz nasze <apps>porównanie aplikacji do podróży grupowych</apps>.",
+    "readTime": "9 min czytania",
+    "ctaButton": "Zaplanuj swoją Wiesn",
+    "ctaNote": "Za darmo. Bez karty. Zapraszasz ekipę jednym linkiem."
+  },
+  "facts": {
+    "heading": "Oktoberfest 2026 w skrócie",
+    "datesLabel": "Termin",
+    "datesValue": "19 wrz – 4 paź",
+    "datesSub": "16 dni, 191. edycja",
+    "priceLabel": "Maß piwa",
+    "priceValue": "14,80–15,90 €",
+    "priceSub": "Oficjalne widełki na 2026",
+    "tentsLabel": "Namioty",
+    "tentsValue": "14 + 21",
+    "tentsSub": "Duże i małe",
+    "entryLabel": "Wstęp",
+    "entryValue": "0 €",
+    "entrySub": "Teren i namioty za darmo"
+  },
+  "stakes": {
+    "p1": "Oktoberfest wygląda na najprostszy wyjazd grupowy w Europie. Darmowy wstęp, jedno miejsce, szesnaście dni do wyboru, sześć milionów ludzi ogarnia to co roku. A potem naprawdę próbujesz zorganizować ośmioro znajomych i wszystko sypie się w bardzo konkretny sposób: namiot, który chcieliście, otworzył rezerwacje w kwietniu i wyprzedał soboty w jedno popołudnie, stoły idą w blokach po dziesięć, więc wasza szóstka musi znaleźć czterech chętnych albo zapłacić za puste miejsca, dwie osoby mogą tylko w pierwszy weekend, a dwie tylko w drugi, pokój w monachijskim hotelu, który w lipcu kosztuje 130 €, w weekend Wiesn kosztuje trzy razy tyle, a ktoś już wyłożył 400 € na bony konsumpcyjne z własnej karty i chętnie zobaczyłby te pieniądze z powrotem.",
+    "p2": "Nic z tego nie jest problemem z piwem. To problem koordynacji — i dokładnie po to powstało WePlanify: jeden wspólny plan, w którym termin, namiot, łóżka i pieniądze widzi każdy, za darmo."
+  },
+  "toc": {
+    "title": "Na tej stronie",
+    "howItWorks": "Jak naprawdę działa Wiesn",
+    "reservations": "Rezerwacje namiotów: pułapka na grupy",
+    "logistics": "Jak dojechać i gdzie spać",
+    "planning": "Planowanie z ekipą",
+    "budget": "Budżet i dzielenie rachunku",
+    "faq": "Najczęściej zadawane pytania"
+  },
+  "howItWorks": {
+    "title": "Jak naprawdę działa Wiesn",
+    "subtitle": "Pięć rzeczy, które każda grupa za pierwszym razem robi źle. Ogarnij je, a reszta to już tylko piwo.",
+    "items": [
+      {
+        "stop": "Wstęp jest darmowy — walutą jest stół",
+        "desc": "Nikt nie sprzedaje biletu na Oktoberfest. Theresienwiese jest otwarta, namioty są otwarte i do każdego z nich wejdziesz za darmo. Czego nie zrobisz, to nie wejdziesz w sobotę o 18:00 i nie znajdziesz dziesięciu miejsc obok siebie. Piwo podaje się wyłącznie osobom siedzącym, więc stół to nie luksusowy dodatek — to cały wyjazd. Wszystko inne w planie zależy od tego, który stół i który dzień.",
+        "link": "/features/itinerary"
+      },
+      {
+        "stop": "Rezerwacje idą w blokach po dziesięć",
+        "desc": "Namioty rezerwują całe stoły, nie pojedyncze miejsca — zwykle dziesięć osób, czasem osiem. Nie ma centralnego systemu rezerwacji: każdy z 14 dużych namiotów prowadzi własny portal i otwiera go w swoim terminie, mniej więcej w połowie lub pod koniec kwietnia ci najszybsi (Schottenhamel, Hofbräu), na początku i w połowie maja większość namiotów browarnianych, a pod koniec maja lub na początku czerwca maruderzy (Augustiner, Käfer, Schützen, Weinzelt). Grupa sześciu osób albo dorekrutuje cztery kolejne, albo bierze na klatę koszt czterech pustych krzeseł.",
+        "link": "/features/polls"
+      },
+      {
+        "stop": "Rezerwacja jest darmowa, bony już nie",
+        "desc": "Za zaklepanie stołu nie płacisz. Płacisz z góry za Verzehrgutscheine — bony konsumpcyjne na piwo i jedzenie, które wasz stół zamówi. W głównych alejach minimum to zwykle dwa Maß i pół pieczonego kurczaka na osobę; loże i galerie dokładają jeszcze około 18 € bonów. Przy dziesięciu osobach to spora suma, która wychodzi z konta jednej osoby, wiele miesięcy wcześniej, w imieniu całej reszty.",
+        "link": "/features/budget"
+      },
+      {
+        "stop": "Jedna czwarta każdego namiotu jest bez rezerwacji, z mocy prawa",
+        "desc": "Monachium zmusza namioty do trzymania wolnych miejsc. Z zasady 25% miejsc w ogóle nie da się zarezerwować, a w weekendy i święta połowa namiotu pozostaje niedostępna dla rezerwacji do 15:00, po czym spada do 25%. To wasz plan B i to plan całkiem realny — ale oznacza przyjście wcześnie, razem, i ustalenie z góry, kto stoi w kolejce.",
+        "link": "/features/planning"
+      },
+      {
+        "stop": "Obok jest drugi, spokojniejszy festiwal",
+        "desc": "Oide Wiesn to ogrodzona historyczna część z własnymi namiotami, staroświeckimi karuzelami, orkiestrami dętymi i spokojniejszym tłumem. Wstęp kosztuje 4 € — to jedyna rzecz na całej Theresienwiese, na którą kupujesz bilet. To odpowiedź dla każdego w grupie, kto chce festiwalu bez zgniatania się w Hofbräu-Festzelt o 21:00.",
+        "link": "/features/explore"
+      }
+    ]
+  },
+  "reservations": {
+    "title": "Rezerwacje namiotów: pułapka na grupy",
+    "subtitle": "Dwa sposoby, żeby posadzić dziesięć osób. Oba działają. Wymagają od ekipy zupełnie czego innego.",
+    "reservedLabel": "Opcja A",
+    "reservedTitle": "Zarezerwuj stół",
+    "reservedItems": [
+      "Rezerwujesz cały stół: dziesięć miejsc, czasem osiem. Nie sześć.",
+      "Rezerwacja jest darmowa — ale bony konsumpcyjne płacisz z góry.",
+      "Każdy namiot ma własny portal i własny dzień otwarcia. Zero centralnego systemu.",
+      "Soboty i weekend zamknięcia schodzą najszybciej. Popołudnia w tygodniu są do wzięcia.",
+      "Ostateczną liczbę osób musisz znać wiele miesięcy przed wyjazdem — i to jest najtrudniejsze.",
+      "Niewykorzystane bony są ważne przez cały festiwal, można je zrealizować we własnych restauracjach cateringu co najmniej do 31 października albo odzyskać za nie pełny zwrot."
+    ],
+    "walkInLabel": "Opcja B",
+    "walkInTitle": "Wejdź z ulicy, jak wszyscy",
+    "walkInItems": [
+      "25% miejsc nigdy nie idzie na rezerwacje. W weekendy 50% zostaje wolne do 15:00.",
+      "Zero zobowiązań, zero przedpłat, zero problemu z liczbą osób.",
+      "Trzeba przyjść wcześnie — namioty otwierają się o 10:00 w dni robocze i o 9:00 w weekendy.",
+      "Duże grupy się rozdzielają. Dziesięć osób rzadko siada razem po południu.",
+      "Namioty całkiem zamykają drzwi, gdy są pełne, w soboty często już wczesnym popołudniem.",
+      "Największe szanse: od poniedziałku do czwartku, przed południem, w mniejszym namiocie."
+    ]
+  },
+  "midCta": {
+    "title": "Dziesięć miejsc, jeden termin, osiem opinii.",
+    "subtitle": "Zrób ankietę o dzień, zaklep namiot, sprawdź, kto faktycznie jedzie — zanim ruszą rezerwacje.",
+    "button": "Zacznij za darmo"
+  },
+  "logistics": {
+    "title": "Jak dojechać i gdzie spać",
+    "subtitle": "Monachium jest proste. Monachium w czasie Wiesn to inne miasto — zaplanuj nudne części, a te fajne załatwią się same.",
+    "transportLabel": "Transport",
+    "transportTitle": "Jak dotrzeć na Theresienwiese",
+    "transportItems": [
+      "U4 i U5 zatrzymują się na stacji Theresienwiese, prosto przy terenie festiwalu — i jest to najbardziej zatłoczona stacja całego Oktoberfest.",
+      "Wysiądź zamiast tego na Schwanthalerhöhe, jeden przystanek dalej tą samą U4/U5: 10 minut spacerem i ułamek tego ścisku.",
+      "Goetheplatz albo Poccistraße (U3/U6) obsługują wejścia południowe i wschodnie, też jakieś 10 minut pieszo.",
+      "Aplikacja MVGO pokazuje tłok na żywo i poprowadzi cię naokoło najgorszych miejsc.",
+      "Nie jedź autem. Na Theresienwiese nie ma parkingu dla odwiedzających, a i tak nie wrócisz potem samochodem do domu.",
+      "Monachijski Hauptbahnhof jest dwa przystanki metrem stąd, co sprawia, że przyjazd pociągiem jest naprawdę najprostszą opcją."
+    ],
+    "stayLabel": "Nocleg",
+    "stayTitle": "Gdzie spać i kiedy rezerwować",
+    "stayItems": [
+      "To wasz największy koszt i ten, który znika najszybciej. Zarezerwuj go, zanim zarezerwujesz cokolwiek innego.",
+      "W 2025 roku średnie ceny pokoi w Monachium sięgały w szczycie około 415 € za noc podczas festiwalu — mniej więcej 153% powyżej rocznej średniej dla miasta.",
+      "Poza sezonem Wiesn to samo miasto trzyma się bliżej 80–150 € za noc. Ta różnica to cała rozmowa o budżecie.",
+      "Jeden apartament podzielony na osiem osób bije cztery dwuosobowe pokoje niemal zawsze — a przy okazji daje wam miejsce, żeby się zebrać przed wyjściem.",
+      "Nie musicie mieć wszystkiego w zasięgu spaceru. Monachijskie metro jest szybkie i jeździ do późna; miejsce 20 minut dalej na bezpośredniej linii to o wiele lepszy deal niż dopłata za bliskość.",
+      "Pierwszy i ostatni weekend oraz 3 października (Dzień Jedności Niemiec) to szczyty. Wyjazd w środku tygodnia to z zasady tańszy wyjazd."
+    ]
+  },
+  "planning": {
+    "title": "Planowanie z ekipą",
+    "p1": "Zacznij od dnia, nie od namiotu. Każda kolejna decyzja — loty, łóżka, kto faktycznie może przyjechać — wynika właśnie z niego, a grupy zostawiają ją na koniec, bo to ta decyzja, która rodzi kłótnie. Ktoś chce sobotę otwarcia dla ceremonii odszpuntowania beczki. Ktoś może tylko w drugi weekend. Ktoś po cichu wolałby wtorek, kiedy da się siebie nawzajem usłyszeć. <polls>Zrób ankietę</polls> na trzy czy cztery kandydujące terminy, zanim ktokolwiek zajrzy do portalu namiotu, a zamiast „może” będziesz mieć konkretną liczbę osób.",
+    "p2": "Potem uczciwie policz ekipę, bo dziesięć to nie klimat — to twarda liczba w formularzu rezerwacji. Stoły idą w blokach po dziesięć, więc różnica między „no, chyba jakieś osiem osób” a ośmioma potwierdzonymi imionami to pieniądze. Wrzuć wyjazd do <itinerary>wspólnego planu podróży</itinerary> z datą i pozwól ludziom jawnie się zadeklarować albo odpaść. Sześć potwierdzeń plus czterech dorekrutowanych znajomych znajomych to stół. Osiem „może” to cztery puste miejsca, za które zapłaciliście.",
+    "p3": "Przypisz rezerwację jednej osobie i daj jej termin. Portale namiotów otwierają się według własnego harmonogramu od kwietnia w górę, a dobre soboty znikają tego samego dnia — to nie jest moment na grupowy konsensus, to moment dla jednej osoby z kartą i mandatem. Zadanie całej reszty to odpowiedzieć wcześniej na ankietę. Nasz <guide>poradnik planowania wyjazdu grupowego</guide> opisuje ten sam schemat dla reszty wyjazdu: decydujcie wspólnie, wykonujcie w pojedynkę.",
+    "p4": "Sam dzień planuj lekko, ale zaplanuj ponowne spotkanie. Baterie w telefonach padają, w namiocie jest ogłuszająco, a ktoś odpłynie na Oide Wiesn albo na karuzelę i zgubi grupę na dwie godziny. Ustalcie jeden punkt zbiórki na zewnątrz namiotu i jedną godzinę, zanim wejdziecie. To najmniej efektowna rzecz w tym artykule i dokładnie ta, z której naprawdę skorzystacie."
+  },
+  "budget": {
+    "title": "Budżet i dzielenie rachunku",
+    "p1": "Pieniądze na Oktoberfest mają nietypowy kształt: jedna osoba wydaje dużo, wiele miesięcy wcześniej, za wszystkich. Bony opłaca się z góry jedną kartą wiosną. Apartament rezerwuje się inną kartą w czerwcu. A potem we wrześniu dziesięć osób stawia sobie kolejki po 15,80 € za Maß i nikt niczego nie liczy. Załóż <budget>wspólny budżet</budget> przed kupnem bonów, a nie po wyjeździe, i zapisz rezerwację jako wydatek tego samego dnia, w którym została opłacona — osoba, która wyłożyła kasę, nie powinna być tą, która w październiku goni dziewięcioro znajomych.",
+    "p2": "Poznaj prawdziwe liczby, zanim zaczniesz się o nie kłócić. Maß kosztuje w 2026 roku od 14,80 € do 15,90 €, czyli średnio o 2,38% więcej niż w 2025; większość dużych namiotów siedzi w przedziale 15,75–15,90 €, a Augustiner-Festhalle to znany wyjątek z ceną 14,90 €. Napoje bezalkoholowe też nie są tanią furtką — jakieś 11,13 € za litr wody butelkowanej i 12,84 € za Spezi. Pieczony kurczak, kilka Maßów i udział w minimum na stół dają realistyczny dzień w namiocie w okolicach 80–120 € na głowę, zanim jeszcze gdziekolwiek prześpisz noc.",
+    "p3": "Dziel według kategorii, nie według dni. Łóżka dzielą się na osobę za noc. Stół dzieli się na dziesięć, niezależnie od tego, czy cała dziesiątka pije tyle samo. Jedzenie i kolejki są indywidualne. Karuzele i bilet na Oide Wiesn za 4 € to drobne. Wrzucanie wszystkiego do jednej liczby to prosta droga do klasycznej kłótni oktoberfestowej — osoba, która wypiła trzy Maß, dotuje tę, która wypiła dziewięć. Kategorie robią to widocznym, a widoczne zwykle wystarcza."
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "q": "Czy na Oktoberfest 2026 potrzebny jest bilet?",
+        "a": "Nie. Wstęp na Theresienwiese i do wszystkich namiotów piwnych jest całkowicie darmowy — coś takiego jak oficjalny bilet na Oktoberfest nie istnieje, a kto próbuje ci sprzedać wejściówkę, sprzedaje ci powietrze. Płacisz za piwo, jedzenie, karuzele i gry. Jedyna biletowana część całego festiwalu to Oide Wiesn, sekcja historyczna, gdzie wstęp kosztuje 4 €. To, co ludzie mają na myśli, mówiąc „bilety”, to rezerwacja namiotu, a to zupełnie inna sprawa: sama rezerwacja jest darmowa, ale z góry płacisz za bony konsumpcyjne na to, co wasz stół zje i wypije."
+      },
+      {
+        "q": "Kiedy ruszają rezerwacje namiotów na Oktoberfest 2026?",
+        "a": "Nie ma jednego dnia otwarcia i właśnie na tym grupy się przejeżdżają. Każdy z 14 dużych namiotów prowadzi własny portal rezerwacyjny według własnego harmonogramu. Z grubsza: najszybsze namioty otwierają się w okolicach połowy lub końca kwietnia — zwykle przodują Schottenhamel i Hofbräu — większość namiotów browarnianych rusza na początku i w połowie maja, a ostatnia fala (Augustiner-Festhalle, Käfer Wiesn-Schänke, Schützen-Festzelt, Weinzelt) ląduje pod koniec maja lub na początku czerwca. Popularne soboty potrafią zniknąć w kilka godzin. Wybierzcie namiot, znajdźcie jego portal i wpiszcie datę otwarcia do wspólnego planu, wskazując jedną osobę odpowiedzialną za rezerwację."
+      },
+      {
+        "q": "Czy grupa sześciu osób może zarezerwować stół?",
+        "a": "Właściwie nie — i to największa pułapka planistyczna Oktoberfest. Namioty rezerwują całe stoły, zwykle dziesięć miejsc, czasem osiem. Sześciu nie zarezerwujesz. Wasze opcje to dorekrutować ludzi, aż wypełnicie blok, pogodzić się z płaceniem za puste miejsca (bony są na stół, a nie na osobę, więc koszt i tak wychodzi taki sam) albo odpuścić rezerwację i pójść w dzień roboczy rano, kiedy wejście z ulicy jest realne. Większość grup nie docenia, jak wcześnie potrzebna jest twarda liczba osób — trzeba ją znać wiele miesięcy przed wyjazdem."
+      },
+      {
+        "q": "Ile kosztuje piwo na Oktoberfest 2026?",
+        "a": "Maß (jeden litr) kosztuje na 191. Wiesn od 14,80 € do 15,90 €, czyli średnio około 2,38% więcej niż w 2025 roku. Większość dużych namiotów gromadzi się w przedziale od 15,75 € do 15,90 € — Hacker, Hofbräu, Marstall, Paulaner i Schottenhamel trzymają się okolic 15,80 € — podczas gdy Augustiner-Festhalle zostaje wyraźnie taniej, przy 14,90 €. Napoje bezalkoholowe nie są okazją: licz się z jakimiś 11,13 € za litr wody butelkowanej, 12,35 € za lemoniadę i 12,84 € za Spezi. Zaplanuj budżet realistycznie, a dzień będzie kosztował dużo mniej kłótni."
+      },
+      {
+        "q": "Co dzieje się w dniu otwarcia, 19 września 2026?",
+        "a": "Namioty otwierają się o 9:00, ale nic się nie leje aż do południa, kiedy nadburmistrz Monachium odszpuntowuje pierwszą beczkę w namiocie Schottenhamel i krzyczy „O'zapft is!” — czyli „Odszpuntowane!”. Tradycja każe zrobić to w jak najmniejszej liczbie uderzeń młotkiem, a wynik to w Bawarii autentyczna wiadomość dnia. To najbardziej klimatyczny moment całych szesnastu dni i zarazem najbardziej zatłoczony: jeśli wasza grupa chce być wtedy w środku Schottenhamel bez rezerwacji, stoicie w kolejce od wczesnego rana, razem, w Tracht, czyli w strojach ludowych — i lepiej zdecydujcie o tym wspólnie, niż odkryjcie to o 11:00."
+      },
+      {
+        "q": "Jak dostać się na Theresienwiese?",
+        "a": "Metrem, i to najlepiej nie tym oczywistym. U4 i U5 zatrzymują się na stacji Theresienwiese, tuż przy terenie festiwalu, i właśnie dlatego jest to najbardziej zatłoczona stacja całej imprezy. Przejedź jeden przystanek dalej, do Schwanthalerhöhe, tymi samymi liniami, i przejdź się dziesięć minut. Goetheplatz i Poccistraße na U3/U6 obsługują wejścia południowe i wschodnie, też jakieś dziesięć minut pieszo. Aplikacja MVGO pokazuje tłok na żywo. Nie jedź autem — nie ma parkingu dla odwiedzających, a i tak nie będziesz w stanie odjechać stamtąd samochodem."
+      },
+      {
+        "q": "Czy taniej jest jechać w środku tygodnia?",
+        "a": "Zdecydowanie, i to w każdej linijce budżetu. Ceny pokoi w Monachium sięgały w szczycie około 415 € za noc podczas festiwalu w 2025 roku — jakieś 153% powyżej rocznej średniej miasta, wobec mniej więcej 80–150 € poza sezonem Wiesn — a szczyty to oba weekendy i 3 października, Dzień Jedności Niemiec. Rezerwacje namiotów na popołudnia w dni robocze są też o wiele łatwiej dostępne, a wejście z ulicy dla dziesięcioosobowej grupy jest w poniedziałek rano naprawdę realne, czego nie da się powiedzieć o sobocie. Jeśli wasza ekipa ma jakąkolwiek elastyczność, Wiesn od wtorku do czwartku to inny wyjazd w innej cenie."
+      },
+      {
+        "q": "Jak podzielić koszty w grupie?",
+        "a": "Od początku korzystajcie ze wspólnego budżetu z osobnymi kategoriami, bo pieniądze na Oktoberfest nie dzielą się w jeden sposób. Jedna osoba płaci wiosną z góry za bony na stół dla wszystkich. Ktoś inny rezerwuje latem apartament. A potem we wrześniu każdy kupuje kolejki indywidualnie, po 15,80 € za sztukę. Jeśli rozliczycie się dopiero na koniec, osoba, która w kwietniu wyłożyła 400 € na bony, goni w październiku dziewięcioro znajomych, a ktoś, kto wypił trzy Maß, po cichu dotuje kogoś, kto wypił dziewięć. WePlanify rozdziela kategorie, zapisuje, kto co i kiedy zapłacił, i mówi każdemu, ile i komu jest winien — bez arkusza, bez obliczeń na koniec wyjazdu."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Odkryj więcej",
+    "tomorrowland": {
+      "title": "Tomorrowland 2026",
+      "desc": "Zaplanuj pielgrzymkę do Boom z ekipą.",
+      "cta": "Czytaj dalej →"
+    },
+    "hellfest": {
+      "title": "Hellfest 2026",
+      "desc": "Clisson, cztery dni, jeden wspólny plan.",
+      "cta": "Czytaj dalej →"
+    },
+    "tripWithFriends": {
+      "title": "Wyjazd ze znajomymi",
+      "desc": "Zaplanuj dowolny wyjazd grupowy bez wysiłku.",
+      "cta": "Czytaj dalej →"
+    },
+    "bestApps": {
+      "title": "Najlepsze aplikacje do podróży grupowych",
+      "desc": "Nasze porównanie najlepszych narzędzi do wyjazdów grupowych.",
+      "cta": "Przeczytaj artykuł →"
+    }
+  },
+  "cta": {
+    "title": "Zbuduj swój wyjazd na Oktoberfest 2026",
+    "subtitle": "Dzień, namiot, łóżka, pieniądze — jeden wspólny plan, cała ekipa na bieżąco.",
+    "button": "Zacznij planować"
+  },
+  "jsonld": {
+    "articleHeadline": "Planer wyjazdu na Oktoberfest 2026: jak zorganizować Wiesn z grupą",
+    "eventName": "Oktoberfest 2026 (191. monachijska Wiesn)",
+    "eventDescription": "191. Oktoberfest odbywa się na Theresienwiese w Monachium od 19 września do 4 października 2026 roku. Szesnaście dni, 14 dużych namiotów piwnych i 21 małych, darmowy wstęp na teren i do namiotów oraz Maß piwa w cenie od 14,80 € do 15,90 €. Festiwal otwiera się w południe 19 września, gdy nadburmistrz Monachium odszpuntowuje pierwszą beczkę w namiocie Schottenhamel okrzykiem „O'zapft is!”.",
+    "howToName": "Jak zaplanować wyjazd na Oktoberfest 2026 z grupą znajomych",
+    "howToDescription": "Ustalcie dzień, zaklepcie stół w namiocie w bloku po dziesięć, zarezerwujcie nocleg w Monachium, zanim ceny wystrzelą, i podzielcie bony oraz kolejki tak, żeby w październiku nikt nikogo nie musiał gonić.",
+    "howToSteps": [
+      {
+        "name": "Zrób ankietę o termin, zanim spojrzysz na jakikolwiek namiot",
+        "text": "Oktoberfest trwa szesnaście dni i każdy z nich to inny wyjazd. Rzuć grupie trzy albo cztery kandydujące terminy i pozwól wszystkim zagłosować, zanim ktokolwiek otworzy portal rezerwacyjny. Weekendy i 3 października są najbardziej zatłoczone i najdroższe; wizyta w środku tygodnia jest tańsza pod względem noclegu i o wiele łatwiejsza, jeśli chodzi o miejsca bez rezerwacji."
+      },
+      {
+        "name": "Ustal twardą liczbę osób do dziesięciu",
+        "text": "Namioty rezerwują całe stoły, zwykle po dziesięć miejsc, czasem osiem — nigdy sześć. Zamień „może” na potwierdzone imiona we wspólnym planie podróży, zanim ruszą rezerwacje, a jeśli brakuje wam osób, dorekrutujcie. Puste miejsca kosztują tyle samo co zajęte, bo bony konsumpcyjne są na stół."
+      },
+      {
+        "name": "Powierz rezerwację jednej osobie i daj jej termin",
+        "text": "Nie ma centralnego systemu rezerwacji: każdy z 14 dużych namiotów otwiera własny portal w swoim terminie, od połowy lub końca kwietnia do początku czerwca, a popularne soboty wyprzedają się w kilka godzin. Wskaż jedną osobę do rezerwacji, wpisz datę otwarcia namiotu do wspólnego planu i dopilnuj, żeby ankieta zamknęła się wcześniej."
+      },
+      {
+        "name": "Zarezerwuj nocleg w Monachium wcześnie i podziel go na noce",
+        "text": "Nocleg to największa pozycja budżetu oktoberfestowego i ta, która zmienia się najszybciej. Ceny w Monachium sięgały w szczycie około 415 € za noc podczas festiwalu w 2025 roku, mniej więcej 153% powyżej rocznej średniej. Jeden apartament podzielony na całą grupę zwykle bije osobne pokoje, a nocowanie 20 minut dalej przy bezpośredniej linii metra to lepszy deal niż płacenie za bliskość."
+      },
+      {
+        "name": "Śledź bony i kolejki we wspólnym budżecie",
+        "text": "Jedna osoba płaci z góry za bony na stół wiele miesięcy wcześniej w imieniu wszystkich, ktoś inny rezerwuje łóżka, a potem kolejki kupuje się indywidualnie po jakieś 15,80 € za Maß. Zapisz każdą z tych rzeczy jako osobną kategorię tego samego dnia, w którym została opłacona, żeby na koniec wyjazdu rozliczenie było już gotowe."
+      }
+    ]
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "Marchés de Noël 2026 : le planificateur de week-end en groupe",
+    "description": "Planificateur gratuit pour les marchés de Noël 2026 en groupe. Les dates officielles de Colmar, Nuremberg, Cologne, Vienne, Prague et Bruxelles, le choix une ville ou boucle alsacienne, les trajets en train et le budget vin chaud partagé."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Marchés de Noël 2026"
+  },
+  "hero": {
+    "tag": "Planificateur gratuit · Marchés de Noël 2026",
+    "title": "Marchés de Noël 2026 : cale le week-end avant que les hôtels partent",
+    "intro": "Un week-end marchés de Noël, c'est le voyage de groupe le plus simple à imaginer et l'un des plus durs à réserver pour de vrai. Deux ou trois jours seulement : le programme est dense et chaque heure se négocie. Chaque marché ouvre et ferme à ses propres dates, donc ton choix de week-end décide en douce de ta destination. Et les prix des hôtels à Strasbourg et à Vienne s'envolent dès fin novembre et sont complets des mois à l'avance. Voici le plan : les vraies dates 2026, le choix une ville ou plusieurs, les trajets en train, et comment répartir un week-end de vin chaud entre six personnes. Si tu hésites encore entre les outils, jette un œil à notre <link>comparatif d'applis de voyage en groupe</link>.",
+    "readTime": "9 min de lecture",
+    "ctaButton": "Planifie ton week-end marchés",
+    "ctaNote": "Gratuit, sans carte, sans abonnement."
+  },
+  "facts": {
+    "heading": "La saison 2026 en un coup d'œil",
+    "windowLabel": "Saison",
+    "windowValue": "13 nov. → 6 janv.",
+    "windowSub": "Du premier ouvert au dernier fermé",
+    "marketsLabel": "Marchés",
+    "marketsValue": "8",
+    "marketsSub": "Comparés ci-dessous, 6 avec dates confirmées",
+    "bookLabel": "Réserve avant",
+    "bookValue": "Septembre",
+    "bookSub": "Avant que les bons lits disparaissent",
+    "modeLabel": "Le bon mode",
+    "modeValue": "Le train",
+    "modeSub": "TGV, ICE, ÖBB, RegioJet"
+  },
+  "stakes": {
+    "p1": "Voilà le piège. En octobre, quelqu'un lâche « week-end marché de Noël ? » dans la conv de groupe. Tout le monde dit oui direct — c'est un oui gratuit, personne ne s'engage à rien. Puis trois semaines passent. Le jour où vous comparez vraiment les week-ends, la moitié des marchés que vous aviez en tête ferment à des dates différentes, les hôtels à Strasbourg sous 200 € ont disparu, et le groupe se coupe en deux entre « juste Colmar, tranquille » et « Vienne et Prague, on dormira dans le train ». Vous finissez par réserver dans la panique la troisième semaine de novembre, à prix double, et vous passez le week-end à débattre de la prochaine place à rejoindre.",
+    "p2": "WePlanify, c'est le plan partagé gratuit pour les voyages marchés de Noël — dates, itinéraire, hôtel, programme et qui doit quoi sur le vin chaud, au même endroit, visible par tout le groupe."
+  },
+  "toc": {
+    "title": "Sur cette page",
+    "markets": "Les marchés et leurs dates 2026",
+    "routes": "Une ville ou un circuit ?",
+    "logistics": "Y aller : le train, évidemment",
+    "planning": "L'organiser en groupe",
+    "budget": "Répartir un week-end de Noël",
+    "faq": "Questions fréquentes"
+  },
+  "markets": {
+    "title": "Les marchés et leurs vraies dates 2026",
+    "subtitle": "C'est la partie que tout le monde saute et regrette ensuite. Ces marchés ne tournent pas sur le même calendrier — le week-end que tu choisis décide lesquels sont seulement ouverts. Dates ci-dessous issues des organisateurs officiels, vérifiées en juillet 2026.",
+    "confirmedLabel": "Confirmé",
+    "typicalLabel": "Pas encore confirmé",
+    "note": "Deux marchés n'ont pas encore publié leurs dates 2026. On les a signalés clairement plutôt que de deviner — vérifie le site officiel avant de réserver un week-end qui dépend de l'un d'eux.",
+    "items": [
+      {
+        "name": "Colmar — La Magie de Noël",
+        "dates": "23 novembre – 29 décembre 2026",
+        "desc": "Six marchés dans la vieille ville, et celui qui se photographie comme une carte postale. Il tourne plus tard que la plupart, c'est donc ton pari le plus sûr pour un week-end entre Noël et le Nouvel An. Le Marché Gourmand, lui, reste ouvert jusqu'au 3 janvier 2027."
+      },
+      {
+        "name": "Strasbourg — Christkindelsmärik",
+        "dates": "Typiquement fin novembre – 24 décembre",
+        "desc": "Le plus ancien marché de Noël de France, depuis 1570, et celui que ton groupe citera en premier. La ville n'avait pas publié ses dates 2026 au moment de notre vérification, en juillet 2026. Il ouvre traditionnellement le dernier vendredi de novembre et ferme le 24 décembre, avec quelques places prolongées jusqu'à fin décembre — mais ne réserve pas un week-end de fin décembre sur cette hypothèse."
+      },
+      {
+        "name": "Nuremberg — Christkindlesmarkt",
+        "dates": "27 novembre – 24 décembre 2026",
+        "desc": "Le marché le plus célèbre d'Allemagne et le plus traditionnel : chalets en bois, pas de plastique, pas de musique d'ambiance. Ouverture le vendredi 27 novembre à 17h30 avec le prologue du Christkind depuis le balcon de la Frauenkirche. Ferme le soir de Noël, et les stands baissent le rideau à 14h ce jour-là."
+      },
+      {
+        "name": "Cologne — Weihnachtsmarkt am Kölner Dom",
+        "dates": "16 novembre – 23 décembre 2026",
+        "desc": "Le premier à ouvrir parmi les grands noms allemands, juste au pied de la cathédrale, et il ferme avant le réveillon. Attention : fermé le Totensonntag, le 22 novembre 2026. La meilleure affaire de cette liste si tu veux un week-end marché mi-novembre, avant que les prix grimpent."
+      },
+      {
+        "name": "Vienne — Christkindlmarkt am Rathausplatz",
+        "dates": "13 novembre – 26 décembre 2026",
+        "desc": "La plus longue saison ici : ouverture mi-novembre et c'est l'un des très rares encore ouverts le 26 décembre. Tous les jours de 10h à 22h, et de 10h à 18h30 le 24 décembre. La patinoire Ice Dream continue jusqu'au 6 janvier 2027, ce qui fait de Vienne le meilleur choix pour un voyage après Noël."
+      },
+      {
+        "name": "Prague — Place de la Vieille-Ville & place Venceslas",
+        "dates": "28 novembre 2026 – 6 janvier 2027",
+        "desc": "Le dernier à ouvrir du groupe mais celui qui dure le plus longtemps, jusqu'à l'Épiphanie. Tous les jours de 10h à 22h. L'illumination du sapin se fait le soir de l'ouverture, le 28 novembre. Si ton groupe ne peut partir qu'en janvier, Prague est l'une des seules vraies options restantes."
+      },
+      {
+        "name": "Budapest — Advent Bazilika & place Vörösmarty",
+        "dates": "Dates 2026 pas encore publiées",
+        "desc": "Deux marchés, tous les deux excellents, et la bouffe et les boissons les moins chères de toute cette liste. Aucun des deux n'avait de dates 2026 confirmées lors de notre vérification en juillet 2026. Les deux ouvrent historiquement mi-novembre et tournent jusqu'aux premiers jours de janvier — considère ça comme une tendance, pas comme une réservation."
+      },
+      {
+        "name": "Bruxelles — Plaisirs d'Hiver / Winter Wonders",
+        "dates": "27 novembre 2026 – 3 janvier 2027",
+        "desc": "Plus un festival d'hiver complet qu'un pur marché : chalets, grande roue, spectacle son et lumière sur la Grand-Place. Ça dure jusqu'en janvier, et c'est le plus facile à rejoindre depuis Londres, Paris ou Amsterdam en train direct."
+      }
+    ]
+  },
+  "routes": {
+    "title": "Une ville ou un circuit ?",
+    "subtitle": "C'est l'embranchement que ton groupe doit prendre avant de réserver quoi que ce soit, et honnêtement, la plupart des groupes voient trop grand. Trois options qui marchent vraiment sur un week-end.",
+    "option1": {
+      "tag": "La sûre",
+      "title": "Une ville, bien faite",
+      "desc": "Un seul marché, arrivée vendredi soir, départ dimanche après-midi. Tu récupères deux soirées pleines, le temps de manger correctement, et personne ne passe le week-end à traîner un sac jusqu'à une gare. Parfait pour Vienne, Nuremberg ou Prague, où une seule ville offre déjà plus de marché que tu ne peux couvrir en deux jours. Si c'est le premier voyage du groupe ensemble, prends celle-là."
+    },
+    "option2": {
+      "tag": "La bonne",
+      "title": "La boucle alsacienne",
+      "desc": "Strasbourg plus Colmar, et un des petits villages si tu as une voiture — Eguisheim ou Riquewihr. Les trains entre Strasbourg et Colmar mettent environ 30 minutes, c'est donc vraiment faisable sur un week-end. Tu dors dans une ville, tu fais l'autre à la journée. Le hic : ça ne marche qu'à partir de fin novembre, et les dates 2026 de Strasbourg ne sont pas encore sorties."
+    },
+    "option3": {
+      "tag": "L'ambitieuse",
+      "title": "Deux capitales en train",
+      "desc": "Vienne et Prague, environ quatre heures en train direct. Les deux marchés sont grands, les deux tournent tard dans la saison, et la fenêtre commune va du 28 novembre au 26 décembre. Minimum trois nuits — fais-le sur un week-end prolongé ou ne le fais pas. Plus de deux villes sur un week-end, ce n'est plus un voyage, c'est une tournée ferroviaire."
+    }
+  },
+  "midCta": {
+    "title": "Arrête de comparer des dates dans une conv de groupe",
+    "subtitle": "Mets les week-ends côte à côte, laisse tout le monde voter, et cale la ville en un après-midi.",
+    "button": "Commencer gratuitement"
+  },
+  "logistics": {
+    "title": "Y aller : le train, évidemment",
+    "subtitle": "Presque tous les marchés de cette liste se rejoignent mieux en train qu'en avion. Trajets courts, centre-ville à centre-ville, pas de course à l'aéroport à 5h du mat dans le noir, et le groupe reste ensemble tout du long.",
+    "westLabel": "L'Alsace et l'ouest",
+    "eastLabel": "L'Europe centrale",
+    "gettingThere": "Comment y aller",
+    "westItems": [
+      "Paris → Strasbourg : environ 1h45 en TGV, direct, centre-ville à centre-ville. Moins cher que n'importe quel vol dès que tu comptes les navettes d'aéroport.",
+      "Strasbourg → Colmar : environ 30 minutes en TER, des trains toute la journée. C'est pour ça que la boucle alsacienne marche — pas besoin de voiture pour les deux grandes villes.",
+      "Les villages alsaciens (Eguisheim, Riquewihr) demandent une voiture ou un bus. Tranche ça avant de réserver : ça change si vous louez, et qui conduit après le vin chaud.",
+      "Bruxelles est direct depuis Paris (1h22), Londres (2h), Amsterdam (1h50). C'est le week-end marché le moins fatigant de cette liste.",
+      "Cologne → Bruxelles, c'est environ 1h50 en direct. Les combiner sur trois nuits est l'un des rares circuits multi-villes qui ne tire pas sur la corde.",
+      "Réserve le train 2 à 3 mois avant. Les prix des week-ends de décembre grimpent exactement comme ceux des vols, et les trains du samedi matin partent en premier."
+    ],
+    "eastItems": [
+      "Vienne → Prague : environ 4 heures en direct, plusieurs fois par jour, en RegioJet ou ÖBB. Pas cher si réservé à l'avance, douloureux si réservé le jour même.",
+      "Nuremberg → Prague : environ 3h30 en bus direct, et souvent plus rapide que le train. Pas glamour, vraiment efficace.",
+      "Nuremberg → Vienne : environ 5 heures en train via Passau. C'est le maillon faible si tu essaies d'enchaîner marchés allemands et autrichiens.",
+      "Budapest → Vienne : environ 2h30 en railjet, la combinaison la plus facile d'Europe centrale. Les deux villes sont bien moins chères à dormir que l'Alsace.",
+      "Pour l'avion, vise les aéroports de Vienne, Prague ou Budapest — tous les trois sont bien desservis et ont de vrais transports en commun vers le centre.",
+      "Les réservations de places comptent sur les week-ends de décembre. Un groupe de six debout dans un couloir pendant quatre heures, c'est un mauvais début de week-end."
+    ]
+  },
+  "planning": {
+    "title": "L'organiser en groupe",
+    "p1": "Le choix de la date, c'est tout le voyage. Comme ces marchés tournent sur des calendriers différents, choisir un week-end revient à choisir une destination — et la plupart des groupes prennent le problème à l'envers, débattant des villes pendant trois semaines avant que quiconque vérifie qui peut réellement poser le vendredi. Fais l'inverse : <pollLink>lance un sondage sur les week-ends d'abord</pollLink>, sors les deux ou trois dates que tout le monde peut vraiment tenir, puis regarde quels marchés sont ouverts. La liste se réduit vite, et le débat disparaît largement avec elle.",
+    "p2": "Septembre à novembre, c'est ta fenêtre de préparation, et ce n'est pas du remplissage. Les hôtels de Strasbourg et de Vienne pour les week-ends de décembre sont en pratique introuvables dès fin septembre à un prix sensé. Si tu lis ça en octobre, réserve les lits cette semaine et règle le programme plus tard — l'hébergement est la seule décision vraiment irréversible ici. Tout le reste, tu peux le bouger.",
+    "p3": "Ensuite, garde l'<itineraryLink>itinéraire partagé</itineraryLink> volontairement léger. C'est l'erreur classique des groupes sur les city breaks courts : deux jours, six personnes, et quelqu'un construit un planning heure par heure avec neuf places dessus. Ça ne survit jamais au premier stand de Glühwein. Bloque ce qui doit vraiment l'être — le train, le check-in, une réservation de dîner par soir, et le marché ou l'église que tout le monde regretterait de rater — et laisse le reste de chaque soirée vraiment vide. Deux points d'ancrage par jour, ça suffit largement. Convenez d'un point de rendez-vous et d'une heure plutôt que d'essayer de garder six personnes soudées dans la foule ; le groupe se séparera de toute façon, et c'est bien plus sympa quand c'est prévu plutôt que subi.",
+    "p4": "Un petit truc qui évite beaucoup de galère : décidez à l'avance de ce qui se passe s'il fait moche. Il pleuvra, ou il fera -4 °C et quelqu'un voudra être au chaud à 18h. Ayez déjà un musée, un long déjeuner ou des thermes sur la liste comme plan B, pour que le groupe ne négocie pas sous la flotte en repartant de zéro. Le <guideLink>guide du voyage en groupe</guideLink> a la version complète si tu la veux."
+  },
+  "budget": {
+    "title": "Répartir un week-end de Noël",
+    "p1": "Les week-ends marchés de Noël ont une structure de coûts franchement pénible : une grosse ligne (l'hôtel) et ensuite deux cents minuscules. Vin chaud à 4 €, consigne du mug, marrons chauds, une tournée de tartiflette, le troisième Glühwein de quelqu'un, une déco en bois pour une belle-sœur. Personne ne suit rien, tout le monde se refile du liquide tout le week-end, et le dimanche soir personne ne sait qui est en positif et qui est en négatif. Mets en place un <budgetLink>budget partagé</budgetLink> avant de partir, avec l'hébergement sur sa propre ligne et une catégorie « marché » fourre-tout pour tout le reste. Comme ça, c'est un seul règlement à la fin au lieu de quarante petits.",
+    "p2": "L'hôtel, c'est là qu'est le vrai argent, et là qu'est la vraie décision. Un week-end de décembre en centre-ville à Strasbourg ou à Vienne coûte deux à trois fois le tarif normal, et les chambres sous 150 € disparaissent vers septembre. Deux choses règlent ça. Un : un seul appartement pour six bat trois chambres doubles quasiment à chaque fois, sur le prix et parce que vous avez un endroit où vous asseoir qui n'est pas un bar bondé. Deux : logez à 15 ou 20 minutes sur la ligne de tram. Kehl, de l'autre côté de la frontière allemande depuis Strasbourg, ou les arrondissements extérieurs de Vienne, coûtent une fraction du prix et le marché reste à 20 minutes.",
+    "p3": "Pour le reste, Budapest et Prague sont nettement moins chers sur la bouffe et les boissons que Vienne, Strasbourg ou Cologne — assez pour compenser un train plus cher. Ça vaut le coup de le poser sur la table si les budgets du groupe sont inégaux. Et quoi qu'il arrive, ne laisse pas une seule personne avancer tout le week-end sur sa carte. Faites tourner qui paie quoi, notez chaque dépense au moment où elle tombe plutôt que de mémoire dans le train du retour, et personne n'a à jouer au comptable."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Quelles sont exactement les dates d'ouverture et de fermeture des marchés de Noël 2026 ?",
+        "a": "Ça varie beaucoup d'une ville à l'autre, et c'est précisément pour ça que la date compte. Confirmé pour 2026 : Vienne Rathausplatz du 13 novembre au 26 décembre ; Cologne cathédrale du 16 novembre au 23 décembre (fermé le 22 novembre pour le Totensonntag) ; Colmar du 23 novembre au 29 décembre ; Nuremberg du 27 novembre au 24 décembre ; Bruxelles Plaisirs d'Hiver du 27 novembre 2026 au 3 janvier 2027 ; Prague, place de la Vieille-Ville et place Venceslas, du 28 novembre 2026 au 6 janvier 2027. Strasbourg et Budapest n'avaient pas publié leurs dates 2026 en juillet 2026."
+      },
+      {
+        "q": "Quand faut-il réserver l'hôtel pour un week-end marché de Noël ?",
+        "a": "En septembre, et on n'exagère pas. Les chambres des week-ends de décembre à Strasbourg, Vienne et Colmar sont réservées des mois à l'avance, et ce qui reste après octobre est soit loin du centre, soit deux à trois fois le tarif normal. L'hébergement est la seule décision de ce voyage que tu ne peux vraiment pas annuler plus tard : cale-la en premier, tu débattras du programme en novembre."
+      },
+      {
+        "q": "Quel marché de Noël pour un premier voyage en groupe ?",
+        "a": "Nuremberg ou Vienne si tu veux le grand marché classique, dense, tout à pied. Colmar si tu veux le plus joli et que sa petite taille ne te dérange pas. Bruxelles si le groupe est éparpillé sur plusieurs pays, parce que les trains directs depuis Paris, Londres et Amsterdam en font le point de convergence le plus simple. Oublie le circuit multi-villes pour un premier voyage — une ville sur deux nuits suffit largement, et c'est la version que les gens apprécient vraiment."
+      },
+      {
+        "q": "Peut-on faire Strasbourg et Colmar sur le même week-end ?",
+        "a": "Oui, et c'est le seul circuit multi-villes qui marche vraiment. Les deux sont à environ 30 minutes en TER avec des trains toute la journée, donc tu dors dans l'une et tu fais l'autre à la journée plutôt que de changer d'hôtel. Ajouter un village alsacien comme Eguisheim ou Riquewihr implique de louer une voiture — tranche ça avant de réserver, puisque ça décide aussi qui reste sobre."
+      },
+      {
+        "q": "Comment faire un voyage marché de Noël pas cher entre amis ?",
+        "a": "Trois choses, par ordre d'impact. Prends le train plutôt que l'avion — pour Paris–Strasbourg ou Paris–Bruxelles c'est moins cher qu'un vol dès que tu comptes les navettes d'aéroport, et c'est centre-ville à centre-ville. Loue un seul appartement pour tout le groupe plutôt que des chambres séparées ; six personnes au même endroit bat trois doubles presque à chaque fois. Et pars mi-novembre plutôt que mi-décembre — Cologne ouvre le 16 novembre et Vienne le 13, avant que les prix deviennent méchants."
+      },
+      {
+        "q": "Y a-t-il des marchés de Noël encore ouverts après Noël ?",
+        "a": "Quelques-uns, et ça vaut le coup de le savoir parce que la plupart des groupes croient que la saison s'arrête le 24. Prague va jusqu'au 6 janvier, Bruxelles jusqu'au 3 janvier, Colmar jusqu'au 29 décembre, Vienne jusqu'au 26 décembre. Nuremberg, Cologne et Strasbourg sont pliés le soir de Noël ou avant. Si ton groupe ne peut voyager qu'entre Noël et le Nouvel An, ce sera Prague, Bruxelles ou Colmar — et c'est toute la liste."
+      },
+      {
+        "q": "Combien de jours faut-il pour un voyage marché de Noël ?",
+        "a": "Deux nuits, c'est le format idéal pour une ville : arrivée vendredi soir, deux soirées pleines au marché, retour dimanche. Les marchés sont des trucs du soir — ils sont à leur meilleur une fois la nuit tombée, donc la journée est pour la ville elle-même. Trois nuits si tu fais deux villes. Une nuit, ce n'est pas un voyage, c'est un aller-retour avec du vin chaud."
+      },
+      {
+        "q": "Comment partager les frais sur un week-end de petites dépenses ?",
+        "a": "Notez-les au fur et à mesure, pas de mémoire dans le train du retour. C'est tout le truc. Les week-ends marchés de Noël, c'est la mort par mille vins chauds à 4 €, et les consignes de mugs à elles seules auront perdu tout le monde d'ici dimanche. Utilisez un budget partagé avec l'hôtel sur une ligne et une catégorie fourre-tout pour les dépenses au marché, faites tourner qui paie chaque tournée, et réglez une fois à la fin. WePlanify fait les calculs pour que personne n'ait à jouer au trésorier du groupe."
+      }
+    ]
+  },
+  "discover": {
+    "title": "À découvrir aussi",
+    "tripWithFriends": {
+      "title": "Voyage entre amis",
+      "desc": "Organise n'importe quel voyage de groupe sans prise de tête.",
+      "cta": "Lire la suite →"
+    },
+    "familyTrip": {
+      "title": "Voyage en famille",
+      "desc": "Les marchés sont un classique en famille — organise-le sans le chaos.",
+      "cta": "Lire la suite →"
+    },
+    "groupGuide": {
+      "title": "Guide du voyage en groupe",
+      "desc": "Le guide complet, étape par étape.",
+      "cta": "Lire le guide →"
+    },
+    "bestApps": {
+      "title": "Meilleures applis de voyage en groupe",
+      "desc": "Notre comparatif des meilleurs outils pour les voyages de groupe.",
+      "cta": "Lire l'article →"
+    }
+  },
+  "cta": {
+    "title": "Cale le week-end avant que les hôtels partent",
+    "subtitle": "Dates, ville, hôtel, programme et budget vin chaud — un plan partagé, tout ton groupe sur la même page.",
+    "button": "Commencer gratuitement"
+  },
+  "jsonld": {
+    "articleHeadline": "Marchés de Noël 2026 : le planificateur de groupe avec les vraies dates",
+    "howToName": "Comment organiser un voyage marchés de Noël en groupe en 2026",
+    "howToDescription": "Choisis le week-end d'abord, laisse les dates décider de la ville, réserve les lits avant la fin septembre, garde le programme léger et répartis le vin chaud sans tableur.",
+    "howToSteps": [
+      {
+        "name": "Sonde les week-ends avant de débattre des villes",
+        "text": "Chaque marché tourne sur son propre calendrier, donc le week-end que vous pouvez tous tenir est ce qui décide vraiment de la destination. Lance d'abord un sondage sur deux ou trois week-ends candidats, puis regarde quels marchés sont ouverts à ces dates. La liste courte s'écrit toute seule."
+      },
+      {
+        "name": "Réserve l'hébergement tout de suite — c'est la seule étape irréversible",
+        "text": "Les chambres de décembre à Strasbourg, Vienne et Colmar sont complètes dès fin septembre et coûtent deux à trois fois le tarif normal. Cale un seul appartement pour tout le groupe, ou loge à 20 minutes sur la ligne de tram. Tout le reste de ce voyage peut être changé plus tard."
+      },
+      {
+        "name": "Construis un itinéraire volontairement léger",
+        "text": "Deux jours, six personnes et un planning heure par heure, c'est la recette d'un mauvais week-end. Bloque le train, le check-in, un dîner par soir et le truc sur lequel tout le monde était d'accord. Deux points d'ancrage par jour, et laisse les soirées vraiment ouvertes."
+      },
+      {
+        "name": "Mets en place le budget partagé avant de partir",
+        "text": "Une grosse ligne pour l'hôtel et cent minuscules pour le vin chaud, les consignes de mugs et les marrons. Mets l'hébergement sur sa propre ligne, utilise une catégorie fourre-tout pour les dépenses au marché, fais tourner qui paie chaque tournée, et règle une seule fois à la fin."
+      }
+    ]
+  }
+}

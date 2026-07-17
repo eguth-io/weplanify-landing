@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "Weihnachtsmärkte 2026: Trip-Planer für Gruppen",
+    "description": "Kostenloser Planer für Weihnachtsmarkt-Trips 2026 in der Gruppe. Bestätigte Termine für Colmar, Nürnberg, Köln, Wien, Prag und Brüssel, eine Stadt oder Elsass-Runde, Bahn-Logistik und ein gemeinsames Budget für den Glühwein."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "current": "Weihnachtsmärkte 2026"
+  },
+  "hero": {
+    "tag": "Kostenloser Trip-Planer · Weihnachtsmärkte 2026",
+    "title": "Weihnachtsmärkte 2026: Sichert das Wochenende, bevor die Hotels weg sind",
+    "intro": "Ein Weihnachtsmarkt-Trip ist der Gruppentrip, den man sich am leichtesten vorstellt — und einer der schwersten, die man wirklich gebucht bekommt. Es sind zwei, drei Tage, also ist das Programm dicht und jede Stunde umkämpft. Jeder Markt öffnet und schließt zu eigenen Terminen, das heißt: Eure Wochenendwahl entscheidet ganz nebenbei über das Ziel. Und die Hotelpreise in Straßburg und Wien schießen ab Ende November hoch und sind Monate vorher ausgebucht. Hier kommt der Plan: die echten Termine 2026, die Frage eine Stadt oder mehrere, die Bahnverbindungen, und wie ihr ein Wochenende Glühwein auf sechs Leute aufteilt. Wenn ihr noch beim Werkzeug schwankt, schaut in unseren <link>Vergleich der Gruppenreise-Apps</link>.",
+    "readTime": "9 Min. Lesezeit",
+    "ctaButton": "Marktwochenende planen",
+    "ctaNote": "Kostenlos, ohne Karte, ohne Abo."
+  },
+  "facts": {
+    "heading": "Die Saison 2026 auf einen Blick",
+    "windowLabel": "Saison",
+    "windowValue": "13. Nov. → 6. Jan.",
+    "windowSub": "Frühester Start bis spätestes Ende",
+    "marketsLabel": "Märkte",
+    "marketsValue": "8",
+    "marketsSub": "Unten verglichen, 6 mit bestätigten Terminen",
+    "bookLabel": "Buchen bis",
+    "bookValue": "September",
+    "bookSub": "Bevor die guten Betten weg sind",
+    "modeLabel": "Beste Anreise",
+    "modeValue": "Bahn",
+    "modeSub": "TGV, ICE, ÖBB, RegioJet"
+  },
+  "stakes": {
+    "p1": "Und so läuft man rein. Im Oktober wirft jemand „Weihnachtsmarkt-Wochenende?\" in den Gruppenchat. Alle sagen sofort ja — es ist ein billiges Ja, niemand muss sich zu irgendwas verpflichten. Dann vergehen drei Wochen. Wenn ihr dann wirklich Wochenenden vergleicht, schließt die Hälfte der Märkte, die ihr im Kopf hattet, an unterschiedlichen Tagen, die Straßburger Hotels unter 200 € sind weg, und die Gruppe spaltet sich zwischen „nur Colmar, entspannt\" und „Wien und Prag, wir schlafen im Zug\". Am Ende bucht ihr panisch in der dritten Novemberwoche, zahlt das Doppelte und verbringt das Wochenende mit der Debatte, zu welchem Platz ihr als Nächstes lauft.",
+    "p2": "WePlanify ist der kostenlose gemeinsame Plan für Weihnachtsmarkt-Trips — Termine, Route, Hotel, Programm und wer wem was für den Glühwein schuldet, alles an einem Ort, den die ganze Gruppe sieht."
+  },
+  "toc": {
+    "title": "Auf dieser Seite",
+    "markets": "Die Märkte und ihre Termine 2026",
+    "routes": "Eine Stadt oder eine Rundreise?",
+    "logistics": "Anreise: die Bahn ist die Antwort",
+    "planning": "Mit der Gruppe planen",
+    "budget": "Ein Weihnachtswochenende aufteilen",
+    "faq": "Häufige Fragen"
+  },
+  "markets": {
+    "title": "Die Märkte und ihre echten Termine 2026",
+    "subtitle": "Das ist der Teil, den alle überspringen und dann bereuen. Diese Märkte laufen nicht nach demselben Kalender — das Wochenende, das ihr wählt, entscheidet, welche überhaupt geöffnet haben. Termine unten von den offiziellen Veranstaltern, geprüft im Juli 2026.",
+    "confirmedLabel": "Bestätigt",
+    "typicalLabel": "Noch nicht bestätigt",
+    "note": "Zwei Märkte haben ihre Termine für 2026 noch nicht veröffentlicht. Wir haben sie klar gekennzeichnet, statt zu raten — schaut auf die offizielle Seite, bevor ihr ein Wochenende bucht, das von einem davon abhängt.",
+    "items": [
+      {
+        "name": "Colmar — La Magie de Noël",
+        "dates": "23. November – 29. Dezember 2026",
+        "desc": "Sechs Märkte in der Altstadt, und der eine, der sich fotografiert wie eine Postkarte. Er läuft länger als die meisten und ist damit die sicherste Wahl für ein Wochenende zwischen Weihnachten und Neujahr. Der Marché Gourmand hat sogar bis zum 3. Januar 2027 offen."
+      },
+      {
+        "name": "Straßburg — Christkindelsmärik",
+        "dates": "Üblicherweise Ende November – 24. Dezember",
+        "desc": "Der älteste Weihnachtsmarkt Frankreichs, seit 1570, und der, den eure Gruppe als Erstes nennen wird. Die Stadt hatte ihre Termine für 2026 noch nicht veröffentlicht, als wir im Juli 2026 nachgesehen haben. Traditionell öffnet er am letzten Freitag im November und schließt am 24. Dezember, einzelne Plätze laufen bis Monatsende — aber bucht kein Wochenende Ende Dezember auf diese Annahme hin."
+      },
+      {
+        "name": "Nürnberg — Christkindlesmarkt",
+        "dates": "27. November – 24. Dezember 2026",
+        "desc": "Der berühmteste Markt Deutschlands und der traditionellste: Holzbuden, kein Plastik, keine Dudelmusik. Eröffnung am Freitag, 27. November, um 17:30 Uhr mit dem Prolog des Christkinds von der Empore der Frauenkirche. Schließt an Heiligabend, die Stände machen an dem Tag schon um 14 Uhr zu."
+      },
+      {
+        "name": "Köln — Weihnachtsmarkt am Kölner Dom",
+        "dates": "16. November – 23. Dezember 2026",
+        "desc": "Öffnet am frühesten von den großen deutschen Namen, direkt am Fuß des Doms, und schließt vor Heiligabend. Achtung: am Totensonntag, dem 22. November 2026, geschlossen. Das beste Preis-Leistungs-Verhältnis dieser Liste, wenn ihr ein Marktwochenende Mitte November wollt, bevor die Preise klettern."
+      },
+      {
+        "name": "Wien — Christkindlmarkt am Rathausplatz",
+        "dates": "13. November – 26. Dezember 2026",
+        "desc": "Die längste Saison hier: öffnet Mitte November und ist einer der ganz wenigen, die am 26. Dezember noch laufen. Täglich 10–22 Uhr, am 24. Dezember 10–18:30 Uhr. Die Eislauffläche Ice Dream läuft bis zum 6. Januar 2027 weiter — damit ist Wien die stärkste Wahl für einen Trip nach Weihnachten."
+      },
+      {
+        "name": "Prag — Altstädter Ring & Wenzelsplatz",
+        "dates": "28. November 2026 – 6. Januar 2027",
+        "desc": "Öffnet als Letzter der Gruppe, läuft aber am längsten, bis Dreikönig. Täglich 10–22 Uhr. Das Anzünden des Baums ist am Eröffnungsabend, dem 28. November. Wenn eure Gruppe nur im Januar kann, ist Prag eine der wenigen echten Optionen, die bleiben."
+      },
+      {
+        "name": "Budapest — Advent Bazilika & Vörösmarty-Platz",
+        "dates": "Termine für 2026 noch nicht veröffentlicht",
+        "desc": "Zwei Märkte, beide hervorragend, und das günstigste Essen und Trinken auf dieser ganzen Liste. Keiner von beiden hatte bestätigte Termine für 2026, als wir im Juli 2026 nachgesehen haben. Beide öffnen historisch Mitte November und laufen in die ersten Januartage — nehmt das als Muster, nicht als Buchungsgrundlage."
+      },
+      {
+        "name": "Brüssel — Winterpret / Plaisirs d'Hiver",
+        "dates": "27. November 2026 – 3. Januar 2027",
+        "desc": "Eher ein komplettes Winterfestival als ein reiner Markt: Chalets, Riesenrad, die Ton-und-Licht-Show auf der Grand-Place. Läuft weit in den Januar, und er ist von London, Paris oder Amsterdam per Direktzug am einfachsten zu erreichen."
+      }
+    ]
+  },
+  "routes": {
+    "title": "Eine Stadt oder eine Rundreise?",
+    "subtitle": "Das ist die Weiche, die eure Gruppe stellen muss, bevor ihr irgendwas bucht — und ehrlich gesagt greifen die meisten Gruppen zu weit. Drei Varianten, die an einem Wochenende wirklich funktionieren.",
+    "option1": {
+      "tag": "Die sichere",
+      "title": "Eine Stadt, richtig gemacht",
+      "desc": "Ein einziger Markt, Freitagabend an, Sonntagnachmittag weg. Ihr bekommt zwei volle Abende, Zeit für ein ordentliches Essen, und niemand schleppt am Wochenende eine Tasche zum Bahnhof. Ideal für Wien, Nürnberg oder Prag, wo eine Stadt ohnehin mehr Markt hat, als ihr in zwei Tagen schafft. Wenn es der erste gemeinsame Trip der Gruppe ist: nehmt diese."
+    },
+    "option2": {
+      "tag": "Die gute",
+      "title": "Die Elsass-Runde",
+      "desc": "Straßburg plus Colmar, und eins der kleinen Dörfer, wenn ihr ein Auto habt — Eguisheim oder Riquewihr. Die Züge zwischen Straßburg und Colmar brauchen rund 30 Minuten, das ist an einem Wochenende wirklich machbar. In einer Stadt schlafen, die andere als Tagesausflug. Der Haken: Es geht erst ab Ende November, und Straßburgs Termine für 2026 sind noch nicht raus."
+    },
+    "option3": {
+      "tag": "Die ehrgeizige",
+      "title": "Zwei Hauptstädte per Bahn",
+      "desc": "Wien und Prag, rund vier Stunden per Direktzug auseinander. Beide Märkte sind groß, beide laufen spät in der Saison, und das gemeinsame Fenster reicht vom 28. November bis 26. Dezember. Mindestens drei Nächte — macht es über ein langes Wochenende oder gar nicht. Mehr als zwei Städte an einem Wochenende ist kein Trip mehr, das ist eine Bahntour."
+    }
+  },
+  "midCta": {
+    "title": "Hört auf, Termine im Gruppenchat zu vergleichen",
+    "subtitle": "Legt die Wochenenden nebeneinander, lasst alle abstimmen, und macht die Stadt an einem Nachmittag fest.",
+    "button": "Kostenlos starten"
+  },
+  "logistics": {
+    "title": "Anreise: die Bahn ist die Antwort",
+    "subtitle": "Fast jeder Markt auf dieser Liste ist mit der Bahn besser zu erreichen als mit dem Flieger. Kurze Strecken, Innenstadt zu Innenstadt, kein 5-Uhr-Rennen zum Flughafen im Dunkeln, und die Gruppe bleibt die ganze Zeit zusammen.",
+    "westLabel": "Elsass & Westen",
+    "eastLabel": "Mitteleuropa",
+    "gettingThere": "So kommt ihr hin",
+    "westItems": [
+      "Paris → Straßburg: rund 1:45 h mit dem TGV, direkt, Innenstadt zu Innenstadt. Günstiger als jeder Flug, sobald man die Flughafentransfers mitrechnet.",
+      "Straßburg → Colmar: rund 30 Minuten mit dem TER, Züge den ganzen Tag. Genau deshalb funktioniert die Elsass-Runde — für die zwei großen Städte braucht ihr kein Auto.",
+      "Die Elsass-Dörfer (Eguisheim, Riquewihr) brauchen Auto oder Bus. Klärt das vor der Buchung: Es entscheidet, ob ihr mietet — und wer nach dem Glühwein fährt.",
+      "Brüssel ist direkt erreichbar aus Paris (1:22 h), London (2 h), Amsterdam (1:50 h). Das ist das Marktwochenende mit dem geringsten Aufwand auf dieser Liste.",
+      "Köln → Brüssel sind rund 1:50 h direkt. Beide über drei Nächte zu kombinieren ist eine der wenigen Mehrstädte-Routen, die nicht überzogen ist.",
+      "Bucht die Bahn 2–3 Monate vorher. Die Preise an den Dezemberwochenenden klettern genauso wie Flugpreise, und die Samstagvormittagszüge sind zuerst weg."
+    ],
+    "eastItems": [
+      "Wien → Prag: rund 4 Stunden direkt, mehrmals täglich, mit RegioJet oder ÖBB. Günstig bei Vorausbuchung, schmerzhaft am selben Tag.",
+      "Nürnberg → Prag: rund 3:30 h mit dem Direktbus, oft schneller als die Bahn. Nicht glamourös, dafür wirklich effizient.",
+      "Nürnberg → Wien: rund 5 Stunden per Bahn über Passau. Das ist das schwache Glied, wenn ihr deutsche und österreichische Märkte verketten wollt.",
+      "Budapest → Wien: rund 2:30 h mit dem Railjet, die einfachste Kombination Mitteleuropas. In beiden Städten schläft man deutlich günstiger als im Elsass.",
+      "Für Flüge zielt auf Wien, Prag oder Budapest — alle drei sind gut angebunden und haben ordentlichen Nahverkehr in die Stadt.",
+      "Sitzplatzreservierungen zählen an Dezemberwochenenden. Eine Sechsergruppe, die vier Stunden im Gang steht, ist ein schlechter Wochenendstart."
+    ]
+  },
+  "planning": {
+    "title": "Mit der Gruppe planen",
+    "p1": "Die Terminwahl ist der ganze Trip. Weil diese Märkte nach unterschiedlichen Kalendern laufen, heißt ein Wochenende zu wählen: ein Ziel zu wählen — und die meisten Gruppen machen es genau falsch herum und streiten drei Wochen über Städte, bevor überhaupt jemand prüft, wer den Freitag wirklich freibekommt. Macht es andersrum: <pollLink>stimmt erst über die Wochenenden ab</pollLink>, holt die zwei, drei Termine raus, die alle wirklich schaffen, und schaut dann, welche Märkte offen haben. Die Liste schrumpft schnell — und der Streit größtenteils mit ihr.",
+    "p2": "September bis November ist euer Planungsfenster, und das ist keine Übertreibung. Hotels in Straßburg und Wien für Dezemberwochenenden sind ab Ende September zu einem vernünftigen Preis praktisch weg. Wenn ihr das im Oktober lest: bucht die Betten diese Woche und klärt das Programm später — die Unterkunft ist hier die einzige wirklich unumkehrbare Entscheidung. Alles andere lässt sich verschieben.",
+    "p3": "Und dann haltet das <itineraryLink>gemeinsame Programm</itineraryLink> bewusst dünn. Das ist der Fehler, den Gruppen bei kurzen Städtetrips machen: zwei Tage, sechs Leute, und jemand baut einen Stundenplan mit neun Plätzen drauf. Der überlebt den ersten Glühweinstand nie. Blockt, was wirklich geblockt gehört — den Zug, den Check-in, eine Tischreservierung pro Abend, und den einen Markt oder die eine Kirche, bei denen sich alle einig waren — und lasst den Rest jedes Abends wirklich leer. Zwei Ankerpunkte pro Tag reichen völlig. Vereinbart einen Treffpunkt und eine Uhrzeit, statt zu versuchen, sechs Leute im Gedränge zusammenzuhalten; die Gruppe teilt sich sowieso, und das macht viel mehr Spaß, wenn es der Plan ist statt ein Unfall.",
+    "p4": "Eine Kleinigkeit, die viel Ärger spart: Einigt euch vorher darauf, was passiert, wenn das Wetter mies ist. Es wird regnen, oder es hat -4 °C und jemand will um 18 Uhr drinnen sein. Habt ein Museum, ein langes Mittagessen oder eine Therme schon als Plan B auf der Liste, damit die Gruppe nicht im Nassen bei null anfängt zu verhandeln. Der <guideLink>Guide für Gruppenreisen</guideLink> hat die ausführliche Version, falls ihr sie wollt."
+  },
+  "budget": {
+    "title": "Ein Weihnachtswochenende aufteilen",
+    "p1": "Weihnachtsmarkt-Wochenenden haben eine ehrlich nervige Kostenstruktur: eine riesige Position (das Hotel) und danach zweihundert winzige. Glühwein für 4 €, Tassenpfand, gebrannte Mandeln, eine Runde Raclette, jemandes dritter Glühwein, eine Holzdeko für die Schwägerin. Niemand führt Buch, alle schieben das ganze Wochenende Bargeld hin und her, und am Sonntagabend hat keiner eine Ahnung, wer im Plus und wer im Minus ist. Richtet vor der Abfahrt ein <budgetLink>gemeinsames Budget</budgetLink> ein, mit der Unterkunft als eigener Position und einer lockeren Kategorie „Markt\" für alles andere. Dann ist es eine Abrechnung am Ende statt vierzig kleiner.",
+    "p2": "Beim Hotel liegt das echte Geld — und die echte Entscheidung. Ein Dezemberwochenende zentral in Straßburg oder Wien kostet das Zwei- bis Dreifache des Normalpreises, und die Zimmer unter 150 € verschwinden um den September herum. Zwei Dinge lösen das. Erstens: eine einzige Wohnung für sechs schlägt drei Doppelzimmer fast immer, beim Preis und weil ihr einen Ort zum Sitzen habt, der keine überfüllte Bar ist. Zweitens: wohnt 15 oder 20 Minuten draußen an der Straßenbahnlinie. Kehl, gleich hinter der deutschen Grenze bei Straßburg, oder die Wiener Außenbezirke kosten einen Bruchteil, und der Markt ist immer noch 20 Minuten entfernt.",
+    "p3": "Beim Rest sind Budapest und Prag beim Essen und Trinken spürbar günstiger als Wien, Straßburg oder Köln — genug, um eine teurere Bahnfahrt auszugleichen. Lohnt sich anzusprechen, wenn die Budgets in der Gruppe ungleich sind. Und lasst auf keinen Fall eine Person das ganze Wochenende auf ihrer Karte vorstrecken. Wechselt euch ab, wer was zahlt, tragt jede Ausgabe ein, wenn sie passiert, statt aus dem Gedächtnis im Zug nach Hause — dann muss niemand den Buchhalter spielen."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Wann genau öffnen und schließen die Weihnachtsmärkte 2026?",
+        "a": "Das ist von Stadt zu Stadt sehr unterschiedlich, und genau deshalb zählt der Termin. Bestätigt für 2026: Wien Rathausplatz 13. November – 26. Dezember; Köln am Dom 16. November – 23. Dezember (am 22. November zum Totensonntag geschlossen); Colmar 23. November – 29. Dezember; Nürnberg 27. November – 24. Dezember; Brüssel Winterpret 27. November 2026 – 3. Januar 2027; Prag Altstädter Ring und Wenzelsplatz 28. November 2026 – 6. Januar 2027. Straßburg und Budapest hatten ihre Termine für 2026 im Juli 2026 noch nicht veröffentlicht."
+      },
+      {
+        "q": "Wann sollte ich Hotels für ein Weihnachtsmarkt-Wochenende buchen?",
+        "a": "Im September, und das ist nicht dramatisiert. Zimmer für Dezemberwochenenden in Straßburg, Wien und Colmar sind Monate im Voraus ausgebucht, und was nach Oktober übrig ist, liegt entweder weit draußen oder kostet das Zwei- bis Dreifache. Die Unterkunft ist die einzige Entscheidung auf diesem Trip, die ihr später wirklich nicht mehr umdrehen könnt — macht sie zuerst fest, über das Programm könnt ihr im November streiten."
+      },
+      {
+        "q": "Welcher Weihnachtsmarkt eignet sich für den ersten Gruppentrip?",
+        "a": "Nürnberg oder Wien, wenn ihr den klassischen, großen, dichten Markt wollt, alles zu Fuß erreichbar. Colmar, wenn ihr den hübschesten wollt und es euch nichts ausmacht, dass er klein ist. Brüssel, wenn die Gruppe über mehrere Länder verstreut ist, weil die Direktzüge aus Paris, London und Amsterdam es zum einfachsten Treffpunkt machen. Lasst die Mehrstädte-Route beim ersten Trip weg — eine Stadt über zwei Nächte reicht dicke, und das ist die Version, die Leute wirklich genießen."
+      },
+      {
+        "q": "Kann man Straßburg und Colmar an einem Wochenende machen?",
+        "a": "Ja, und es ist die eine Mehrstädte-Route, die wirklich funktioniert. Die beiden liegen rund 30 Minuten per TER auseinander, Züge den ganzen Tag — ihr schlaft also in einer Stadt und macht die andere als Tagesausflug, statt das Hotel zu wechseln. Ein Elsass-Dorf wie Eguisheim oder Riquewihr dazuzunehmen heißt Auto mieten — klärt das vor der Buchung, denn es entscheidet auch, wer nüchtern bleibt."
+      },
+      {
+        "q": "Wie macht man einen Weihnachtsmarkt-Trip mit Freunden günstig?",
+        "a": "Drei Dinge, nach Wirkung sortiert. Nehmt die Bahn statt den Flieger — für Paris–Straßburg oder Paris–Brüssel ist sie günstiger als ein Flug, sobald die Flughafentransfers mitzählen, und sie fährt Innenstadt zu Innenstadt. Mietet eine Wohnung für die ganze Gruppe statt einzelner Hotelzimmer; sechs Leute an einem Ort schlagen drei Doppelzimmer fast immer. Und fahrt Mitte November statt Mitte Dezember — Köln öffnet am 16. November und Wien am 13., bevor die Preise fies werden."
+      },
+      {
+        "q": "Gibt es Weihnachtsmärkte, die nach Weihnachten noch offen haben?",
+        "a": "Ein paar, und das lohnt sich zu wissen, weil die meisten Gruppen annehmen, die Saison endet am 24. Prag läuft bis 6. Januar, Brüssel bis 3. Januar, Colmar bis 29. Dezember, Wien bis 26. Dezember. Nürnberg, Köln und Straßburg sind an Heiligabend oder davor durch. Wenn eure Gruppe nur zwischen Weihnachten und Neujahr kann, bleiben Prag, Brüssel oder Colmar — und das ist die komplette Liste."
+      },
+      {
+        "q": "Wie viele Tage braucht man für einen Weihnachtsmarkt-Trip?",
+        "a": "Zwei Nächte sind der Sweet Spot für eine Stadt: Freitagabend an, zwei volle Abende auf dem Markt, Sonntag heim. Märkte sind Abendsache — sie sind nach Einbruch der Dunkelheit am besten, der Tag gehört also der Stadt selbst. Drei Nächte, wenn ihr zwei Städte macht. Eine Nacht ist kein Trip, das ist Pendeln mit Glühwein."
+      },
+      {
+        "q": "Wie teilt man die Kosten an einem Wochenende voller Kleinausgaben?",
+        "a": "Tragt sie ein, wenn sie anfallen, nicht aus dem Gedächtnis im Zug nach Hause. Das ist der ganze Trick. Weihnachtsmarkt-Wochenenden sind Tod durch tausend Glühweine à 4 €, und allein das Tassenpfand bringt bis Sonntag alle durcheinander. Nutzt ein gemeinsames Budget mit dem Hotel als einer Position und einer Sammelkategorie für die Marktausgaben, wechselt euch bei den Runden ab, und rechnet einmal am Ende ab. WePlanify übernimmt die Rechnerei, damit niemand Gruppenkassenwart sein muss."
+      }
+    ]
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "tripWithFriends": {
+      "title": "Reise mit Freunden",
+      "desc": "Jeden Gruppentrip mühelos planen.",
+      "cta": "Weiterlesen →"
+    },
+    "familyTrip": {
+      "title": "Familienreise",
+      "desc": "Märkte sind ein Familienklassiker — plant es ohne das Chaos.",
+      "cta": "Weiterlesen →"
+    },
+    "groupGuide": {
+      "title": "Guide für Gruppenreisen",
+      "desc": "Der komplette Guide, Schritt für Schritt.",
+      "cta": "Guide lesen →"
+    },
+    "bestApps": {
+      "title": "Beste Gruppenreise-Apps",
+      "desc": "Unser Vergleich der besten Tools für Gruppenreisen.",
+      "cta": "Artikel lesen →"
+    }
+  },
+  "cta": {
+    "title": "Sichert das Wochenende, bevor die Hotels weg sind",
+    "subtitle": "Termine, Stadt, Hotel, Programm und das Glühwein-Budget — ein gemeinsamer Plan, die ganze Gruppe auf demselben Stand.",
+    "button": "Kostenlos planen"
+  },
+  "jsonld": {
+    "articleHeadline": "Weihnachtsmärkte 2026: Der Gruppen-Trip-Planer mit den echten Terminen",
+    "howToName": "So plant ihr 2026 einen Weihnachtsmarkt-Trip in der Gruppe",
+    "howToDescription": "Wählt zuerst das Wochenende, lasst die Termine die Stadt bestimmen, bucht die Betten noch im September, haltet das Programm dünn und teilt den Glühwein ohne Tabelle.",
+    "howToSteps": [
+      {
+        "name": "Stimmt über die Wochenenden ab, bevor ihr über Städte streitet",
+        "text": "Jeder Markt läuft nach eigenem Kalender, also entscheidet das Wochenende, das alle schaffen, in Wahrheit über das Ziel. Stimmt erst über zwei, drei mögliche Wochenenden ab und schaut dann, welche Märkte an diesen Terminen offen haben. Die engere Auswahl schreibt sich von selbst."
+      },
+      {
+        "name": "Bucht die Unterkunft sofort — das ist der einzige unumkehrbare Schritt",
+        "text": "Dezemberzimmer in Straßburg, Wien und Colmar sind bis Ende September ausgebucht und kosten das Zwei- bis Dreifache. Sichert eine Wohnung für die ganze Gruppe, oder wohnt 20 Minuten draußen an der Straßenbahnlinie. Alles andere auf diesem Trip lässt sich später ändern."
+      },
+      {
+        "name": "Baut ein bewusst dünnes Programm",
+        "text": "Zwei Tage, sechs Leute und ein Stundenplan sind das Rezept für ein schlechtes Wochenende. Blockt den Zug, den Check-in, ein Abendessen pro Abend und die eine Sache, bei der sich alle einig waren. Zwei Ankerpunkte pro Tag, und lasst die Abende wirklich offen."
+      },
+      {
+        "name": "Richtet das gemeinsame Budget vor der Abfahrt ein",
+        "text": "Eine riesige Position fürs Hotel und hundert winzige für Glühwein, Tassenpfand und gebrannte Mandeln. Setzt die Unterkunft auf eine eigene Position, nutzt eine Sammelkategorie für die Marktausgaben, wechselt euch bei den Runden ab, und rechnet einmal am Ende ab."
+      }
+    ]
+  }
+}
