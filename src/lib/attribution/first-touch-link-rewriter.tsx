@@ -49,6 +49,10 @@ export function FirstTouchLinkRewriter() {
 			if (ft.utm_campaign && !url.searchParams.get("utm_campaign")) {
 				url.searchParams.set("utm_campaign", ft.utm_campaign);
 			}
+			// Entry page + referrer: the cookie is the primary channel, these
+			// params are the fallback when cookies are unavailable.
+			if (ft.landing_page) url.searchParams.set("landing_page", ft.landing_page);
+			if (ft.referrer) url.searchParams.set("referrer", ft.referrer);
 
 			anchor.href = url.toString();
 		};
