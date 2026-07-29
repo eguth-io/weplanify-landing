@@ -31,10 +31,27 @@ export type Attribution = {
 	utm_source?: string;
 	utm_medium?: string;
 	utm_campaign?: string;
+	/** Page the visitor entered on, as `origin + pathname`. */
+	landing_page?: string;
+	/** Raw referrer, kept alongside the channel classified from it. */
+	referrer?: string;
 };
 
 const STORAGE_KEY = 'wp_first_touch';
+/**
+ * Cookie twin of the localStorage entry, scoped to the parent domain so the app
+ * on `app.weplanify.com` can read it. localStorage is origin-scoped and cannot
+ * cross that hop; the register querystring can, but only for links that point
+ * at `/register` — several CTAs (the home's, and both on
+ * `/alternatives/best-group-trip-planner-apps`) point at the bare app domain
+ * and carry no query string at all. The cookie is the only channel that covers
+ * them.
+ */
+const COOKIE_KEY = 'wp_ft';
+const COOKIE_MAX_AGE = 60 * 60 * 24 * 30;
 const MAX = 128;
+/** URLs need more room than a channel name, and match the API column width. */
+const URL_MAX = 512;
 
 const clean = (value: string | null | undefined): string | undefined => {
 	if (typeof value !== 'string') return undefined;
@@ -43,6 +60,45 @@ const clean = (value: string | null | undefined): string | undefined => {
 };
 
 const hasWindow = (): boolean => typeof window !== 'undefined';
+
+const cleanUrl = (value: string | null | undefined): string | undefined => {
+	if (typeof value !== 'string') return undefined;
+	const trimmed = value.trim();
+	return trimmed === '' ? undefined : trimmed.slice(0, URL_MAX);
+};
+
+/**
+ * The entry page, without query string or hash. Keeping the raw URL would
+ * explode the cardinality of the reporting `GROUP BY` and make "signups per
+ * entry page" unreadable — every UTM permutation would be its own row.
+ */
+const normalizeLandingPage = (): string | undefined => {
+	if (!hasWindow()) return undefined;
+	return cleanUrl(`${window.location.origin}${window.location.pathname}`);
+};
+
+/**
+ * Mirror the first-touch to a cookie on the parent domain. Not `httpOnly`: the
+ * app reads it from JS to build the register payload. The `domain` attribute is
+ * production-only — locally the landing (:3000) and the app (:3009) already
+ * share `localhost`, and `domain=localhost` is rejected by some browsers.
+ */
+const writeCookie = (attribution: Attribution): void => {
+	if (!hasWindow()) return;
+	const isProd = window.location.hostname.endsWith('weplanify.com');
+	const parts = [
+		`${COOKIE_KEY}=${encodeURIComponent(JSON.stringify(attribution))}`,
+		'path=/',
+		`max-age=${COOKIE_MAX_AGE}`,
+		'samesite=lax',
+	];
+	if (isProd) parts.push('domain=.weplanify.com', 'secure');
+	try {
+		document.cookie = parts.join('; ');
+	} catch {
+		// ignore
+	}
+};
 
 /**
  * Canonicalize common source shorthands to a single bucket so the value tagged
@@ -159,10 +215,21 @@ export const captureFirstTouch = (params: URLSearchParams | null): void => {
 			}
 		: classifyReferrer(document.referrer, window.location.hostname);
 
+	const out: Attribution = { utm_source: normalizeSource(stored.utm_source) };
+	if (stored.utm_medium) out.utm_medium = stored.utm_medium;
+	if (stored.utm_campaign) out.utm_campaign = stored.utm_campaign;
+
+	// Which page brought the visitor in — the whole point of the capture. The
+	// classified channel above answers "where from"; this answers "onto what",
+	// and no UTM can stand in for it on an organic click.
+	const landingPage = normalizeLandingPage();
+	if (landingPage) out.landing_page = landingPage;
+	const referrer = cleanUrl(document.referrer);
+	if (referrer) out.referrer = referrer;
+
+	writeCookie(out);
+
 	try {
-		const out: Attribution = { utm_source: normalizeSource(stored.utm_source) };
-		if (stored.utm_medium) out.utm_medium = stored.utm_medium;
-		if (stored.utm_campaign) out.utm_campaign = stored.utm_campaign;
 		window.localStorage.setItem(STORAGE_KEY, JSON.stringify(out));
 	} catch {
 		// ignore quota / private-mode errors
@@ -205,6 +272,11 @@ export const buildRegisterHref = (opts: RegisterHrefOptions): string => {
 	// Internal placement, regardless of external source.
 	const contextParts = ['landing', campaign ?? medium, placement].filter(Boolean);
 	query.set('signup_source', contextParts.join(':'));
+
+	// Fallback channel for the entry page: the cookie above is the primary one,
+	// these params only matter when cookies are unavailable.
+	if (ft.landing_page) query.set('landing_page', ft.landing_page);
+	if (ft.referrer) query.set('referrer', ft.referrer);
 
 	if (template) query.set('template', template);
 
