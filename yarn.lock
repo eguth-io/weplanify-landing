@@ -3395,25 +3395,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openreplay/network-proxy@npm:^1.2.5":
-  version: 1.2.5
-  resolution: "@openreplay/network-proxy@npm:1.2.5"
-  checksum: 10c0/3b039653b10f1799b7f2379f83f462924228672d79a1f4a7197175389d819afd169fdbe6a5f1a19027f4bb625e6dfb5a4c6877338fe2121a0b5285f1acc61efb
-  languageName: node
-  linkType: hard
-
-"@openreplay/tracker@npm:^18.0.17":
-  version: 18.0.17
-  resolution: "@openreplay/tracker@npm:18.0.17"
-  dependencies:
-    "@openreplay/network-proxy": "npm:^1.2.5"
-    error-stack-parser: "npm:^2.1.4"
-    error-stack-parser-es: "npm:^0.1.5"
-    web-vitals: "npm:^5.1.0"
-  checksum: 10c0/3bdfb5afbdc456b0974150d8f639da514577a312f79fc40a84eba9ed647b5923d02227f1f7515a47fbec520ac6b624970819cdd7affb5c02139bcb10f4614263
-  languageName: node
-  linkType: hard
-
 "@opentelemetry/api-logs@npm:0.214.0":
   version: 0.214.0
   resolution: "@opentelemetry/api-logs@npm:0.214.0"
@@ -8448,22 +8429,6 @@ __metadata:
   dependencies:
     is-arrayish: "npm:^0.2.1"
   checksum: 10c0/ba827f89369b4c93382cfca5a264d059dfefdaa56ecc5e338ffa58a6471f5ed93b71a20add1d52290a4873d92381174382658c885ac1a2305f7baca363ce9cce
-  languageName: node
-  linkType: hard
-
-"error-stack-parser-es@npm:^0.1.5":
-  version: 0.1.5
-  resolution: "error-stack-parser-es@npm:0.1.5"
-  checksum: 10c0/60331183269d5d5f2d80ce01be58387e7f7ef86ec821db7bba3e7aad201174b3f1b561973c678af7ec945542de8f2d1d23d5152ff8adf6154080eff02cd0e0b5
-  languageName: node
-  linkType: hard
-
-"error-stack-parser@npm:^2.1.4":
-  version: 2.1.4
-  resolution: "error-stack-parser@npm:2.1.4"
-  dependencies:
-    stackframe: "npm:^1.3.4"
-  checksum: 10c0/7679b780043c98b01fc546725484e0cfd3071bf5c906bbe358722972f04abf4fc3f0a77988017665bab367f6ef3fc2d0185f7528f45966b83e7c99c02d5509b9
   languageName: node
   linkType: hard
 
@@ -14695,13 +14660,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stackframe@npm:^1.3.4":
-  version: 1.3.4
-  resolution: "stackframe@npm:1.3.4"
-  checksum: 10c0/18410f7a1e0c5d211a4effa83bdbf24adbe8faa8c34db52e1cd3e89837518c592be60b60d8b7270ac53eeeb8b807cd11b399a41667f6c9abb41059c3ccc8a989
-  languageName: node
-  linkType: hard
-
 "stacktrace-parser@npm:^0.1.11":
   version: 0.1.11
   resolution: "stacktrace-parser@npm:0.1.11"
@@ -16201,13 +16159,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^5.1.0":
-  version: 5.3.0
-  resolution: "web-vitals@npm:5.3.0"
-  checksum: 10c0/a073c024d791bfac7a92f82607999b45be978ef3070f642f3cdd94c50d3e1651cf62b2475039248256b2d84651e16fa9bdcaa4b03f31af8bfeefb05832298b97
-  languageName: node
-  linkType: hard
-
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1
   resolution: "webidl-conversions@npm:3.0.1"
@@ -16227,7 +16178,6 @@ __metadata:
   resolution: "weplanify@workspace:."
   dependencies:
     "@next/swc-darwin-arm64": "npm:^16.1.6"
-    "@openreplay/tracker": "npm:^18.0.17"
     "@portabletext/react": "npm:^3.2.4"
     "@radix-ui/react-accordion": "npm:^1.2.11"
     "@sanity/client": "npm:^7.6.0"

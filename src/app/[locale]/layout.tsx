@@ -8,7 +8,6 @@ import { FirstTouchTracker } from "@/lib/attribution/first-touch-tracker";
 import { FirstTouchLinkRewriter } from "@/lib/attribution/first-touch-link-rewriter";
 import { SignupConversionBeacon } from "@/lib/attribution/signup-conversion-beacon";
 import CookieConsent from "@/components/CookieConsent";
-import OpenReplay from "@/components/OpenReplay";
 import StickyCTA from "@/components/StickyCTA";
 import { StructuredData } from "@/components/StructuredData";
 import SoftwareApplicationSchema from "@/app/structured-data";
@@ -103,8 +102,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           <CookieConsent />
           {/* Analytics Scripts — only loads after consent */}
           <Analytics />
-          {/* OpenReplay session replay — only starts after consent */}
-          <OpenReplay />
           {/* Tracks SPA navigations as page_view events */}
           <PageViewTracker />
           {/* Captures first-touch campaign source (utm_*) and persists it for the visit */}
