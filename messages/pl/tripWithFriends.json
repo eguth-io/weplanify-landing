@@ -12,6 +12,10 @@
     "articleHeadline": "Zaplanuj wyjazd ze znajomymi — kompletny przewodnik"
   },
   "readTime": "8 min czytania",
+  "quickAnswer": {
+    "heading": "Szybka odpowiedź",
+    "body": "Najprościej zaplanować wyjazd ze znajomymi w jednym wspólnym miejscu, w którym grupa decyduje razem: WePlanify łączy ankiety do ustalenia terminu i kierunku przez głosowanie, plan dzień po dniu, który każdy może edytować, wspólny budżet śledzący, kto za co zapłacił, i rozliczający wszystko automatycznie, oraz wspólną listę pakowania. Jest za darmo, zaproszeni znajomi nie potrzebują konta, a sprawdza się od weekendowego wypadu po podróż przez kilka miast."
+  },
   "heroTag": "Podróże grupowe, uproszczone",
   "heroTitle": "Zaplanuj wyjazd ze znajomymi\nbez chaosu",
   "heroDescription": "Przestań żonglować wątkami na WhatsAppie, arkuszami kalkulacyjnymi i domysłami. WePlanify zbiera całą Twoją grupę w jednym miejscu, by zaplanować idealny wyjazd — od kierunku po wyjazd.",
@@ -127,6 +131,18 @@
     {
       "q": "Jak działają ankiety grupowe?",
       "a": "Utwórz ankietę z dowolnym pytaniem — kierunek, terminy, restauracje, atrakcje — i udostępnij ją grupie. Każdy głosuje ze swojego urządzenia, a wyniki aktualizują się w czasie rzeczywistym. Możesz ustawiać terminy, dopuszczać wybór wielokrotny i ukrywać głosy, by uniknąć presji społecznej."
+    },
+    {
+      "q": "Jak sprawiedliwie podzielić koszty wyjazdu grupowego?",
+      "a": "Zapisuj każdy wydatek na bieżąco i zaznaczaj, kto naprawdę zapłacił — resztę policzy aplikacja. Wspólny budżet WePlanify rejestruje każdą płatność, radzi sobie z wydatkami dotyczącymi tylko części grupy i rozlicza wszystko na koniec przy jak najmniejszej liczbie przelewów, więc nikt nikogo nie musi ścigać z arkuszem kalkulacyjnym. Po równo, według udziałów albo co do kwoty — zależnie od tego, jak działa Twoja grupa."
+    },
+    {
+      "q": "Czy wszyscy w grupie mogą głosować na atrakcje?",
+      "a": "Tak. Każdy uczestnik może otworzyć ankietę o kierunku, terminie, restauracji lub atrakcji, a wszyscy głosują w aplikacji. Wynik widzi cała grupa, więc decyzję podejmuje się raz i zostaje ona podjęta — zamiast przewijać czat w poszukiwaniu tego, co zostało ustalone."
+    },
+    {
+      "q": "Czy sprawdzi się przy podróży przez kilka miast?",
+      "a": "Tak. Wyjazd może obejmować kilka etapów, każdy z własnymi datami, noclegiem i planem dnia, a budżet i lista uczestników pozostają wspólne dla całej trasy. Obejmuje to road tripy, interrail i każdą trasę przechodzącą z miasta do miasta."
     }
   ],
   "ctaTitle": "Twoja kolejna przygoda zaczyna się tutaj",

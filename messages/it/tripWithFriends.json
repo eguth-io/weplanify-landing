@@ -12,6 +12,10 @@
     "articleHeadline": "Organizzare un viaggio con gli amici — Guida completa"
   },
   "readTime": "8 min di lettura",
+  "quickAnswer": {
+    "heading": "Risposta rapida",
+    "body": "Il modo più semplice per organizzare un viaggio con gli amici è un unico spazio condiviso in cui il gruppo decide insieme: WePlanify unisce sondaggi per fissare date e destinazione con un voto, un itinerario giorno per giorno che tutti possono modificare, un budget comune che tiene traccia di chi ha pagato cosa e salda i conti automaticamente, e una lista bagagli condivisa. È gratis, i tuoi amici non hanno bisogno di un account per partecipare e funziona dal weekend al viaggio in più città."
+  },
   "heroTag": "Viaggi di gruppo, semplificati",
   "heroTitle": "Organizza un viaggio con gli amici\nsenza il caos",
   "heroDescription": "Basta destreggiarti tra chat WhatsApp, fogli di calcolo e tentativi a caso. WePlanify riunisce tutto il tuo gruppo in un unico posto per organizzare il viaggio perfetto — dalla destinazione alla partenza.",
@@ -127,6 +131,18 @@
     {
       "q": "Come funzionano i sondaggi di gruppo?",
       "a": "Crea un sondaggio con qualsiasi domanda — destinazione, date, ristoranti, attività — e condividilo con il gruppo. Tutti votano dal proprio dispositivo e i risultati si aggiornano in tempo reale. Puoi impostare scadenze, consentire scelte multiple e rendere i voti anonimi per evitare la pressione sociale."
+    },
+    {
+      "q": "Come dividere le spese di un viaggio di gruppo in modo equo?",
+      "a": "Annota ogni spesa mentre accade indicando chi ha pagato davvero, e lascia i calcoli all'app. Il budget condiviso di WePlanify registra ogni pagamento, gestisce le spese che riguardano solo una parte del gruppo e chiude i conti alla fine con il minor numero di bonifici, così nessuno deve rincorrere nessuno con un foglio di calcolo. Divisione in parti uguali, per quote o a importo esatto, a seconda di come funziona il tuo gruppo."
+    },
+    {
+      "q": "Tutti nel gruppo possono votare le attività?",
+      "a": "Sì. Qualsiasi partecipante può aprire un sondaggio su una destinazione, una data, un ristorante o un'attività, e tutti votano nell'app. Il risultato è visibile a tutto il gruppo, così una decisione si prende una volta e resta presa, invece di riscorrere la chat per capire cosa era stato deciso."
+    },
+    {
+      "q": "Funziona per un viaggio in più città?",
+      "a": "Sì. Un viaggio può contenere più tappe, ognuna con le sue date, il suo alloggio e il suo programma giorno per giorno, mentre il budget e l'elenco dei partecipanti restano condivisi su tutto il percorso. Vale per i road trip, l'interrail e qualsiasi itinerario che si sposta di città in città."
     }
   ],
   "ctaTitle": "La tua prossima avventura inizia qui",

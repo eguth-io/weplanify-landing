@@ -12,6 +12,10 @@
     "articleHeadline": "Plan a Trip with Friends — Complete Guide"
   },
   "readTime": "8 min read",
+  "quickAnswer": {
+    "heading": "Quick answer",
+    "body": "The easiest way to plan a trip with friends is one shared space where the group decides together: WePlanify combines group polls to settle dates and destination by vote, a collaborative day-by-day itinerary everyone can edit, a shared budget that tracks who paid what and settles up automatically, and a common packing list. It is free, needs no account for invited friends, and works for anything from a weekend away to a multi-city trip."
+  },
   "heroTag": "Group Travel, Simplified",
   "heroTitle": "Plan a Trip with Friends\nWithout the Chaos",
   "heroDescription": "Stop juggling WhatsApp threads, spreadsheets, and guesswork. WePlanify brings your entire group together in one place to plan the perfect trip — from destination to departure.",
@@ -127,6 +131,18 @@
     {
       "q": "How do group polls work?",
       "a": "Create a poll with any question — destination, dates, restaurants, activities — and share it with your group. Everyone votes from their device, and results update in real time. You can set deadlines, allow multiple choices, and make votes anonymous to avoid social pressure."
+    },
+    {
+      "q": "How do I split costs for a group trip fairly?",
+      "a": "Log every expense as it happens and record who actually paid, then let the app do the arithmetic. WePlanify's shared budget tracks each payment, handles expenses that only concern part of the group, and settles up at the end with the smallest number of transfers — so nobody chases anyone over a spreadsheet. Split evenly, by share, or by exact amount, whichever matches how your group works."
+    },
+    {
+      "q": "Can everyone in the group vote on the activities?",
+      "a": "Yes. Any member can open a poll on a destination, a date, a restaurant or an activity, and everyone votes in the app. The result is visible to the whole group, so decisions get made once and stay made — instead of scrolling back through a chat to work out what was agreed."
+    },
+    {
+      "q": "Does it work for a multi-city or multi-stop trip?",
+      "a": "Yes. A trip can hold several stops, each with its own dates, accommodation and day-by-day plan, while the budget and the participant list stay shared across the whole journey. That covers road trips, interrailing and any itinerary that moves between cities."
     }
   ],
   "ctaTitle": "Your Next Adventure Starts Here",

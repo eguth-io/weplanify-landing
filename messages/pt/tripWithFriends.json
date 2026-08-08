@@ -12,6 +12,10 @@
     "articleHeadline": "Planear uma Viagem com Amigos — Guia Completo"
   },
   "readTime": "8 min de leitura",
+  "quickAnswer": {
+    "heading": "Resposta rápida",
+    "body": "A forma mais simples de planear uma viagem com amigos é um único espaço partilhado onde o grupo decide em conjunto: o WePlanify junta sondagens para definir datas e destino por votação, um itinerário dia a dia que todos podem editar, um orçamento comum que regista quem pagou o quê e acerta as contas automaticamente, e uma lista de bagagem partilhada. É grátis, os amigos convidados não precisam de conta e funciona desde um fim de semana até uma viagem por várias cidades."
+  },
   "heroTag": "Viagens em Grupo, Simplificadas",
   "heroTitle": "Planeie uma Viagem com Amigos\nSem o Caos",
   "heroDescription": "Deixe de fazer malabarismos com conversas no WhatsApp, folhas de cálculo e suposições. A WePlanify reúne todo o seu grupo num só lugar para planearem a viagem perfeita — do destino à partida.",
@@ -127,6 +131,18 @@
     {
       "q": "Como funcionam as sondagens em grupo?",
       "a": "Crie uma sondagem com qualquer pergunta — destino, datas, restaurantes, atividades — e partilhe-a com o seu grupo. Toda a gente vota a partir do seu dispositivo e os resultados atualizam-se em tempo real. Pode definir prazos, permitir várias escolhas e tornar os votos anónimos para evitar a pressão social."
+    },
+    {
+      "q": "Como dividir de forma justa as despesas de uma viagem em grupo?",
+      "a": "Registe cada despesa à medida que acontece, indicando quem pagou de facto, e deixe as contas para a app. O orçamento partilhado do WePlanify regista cada pagamento, lida com despesas que só dizem respeito a parte do grupo e acerta as contas no fim com o menor número de transferências — ninguém tem de andar atrás de ninguém com uma folha de cálculo. Divisão por igual, por quotas ou por valor exato, conforme funcionar o seu grupo."
+    },
+    {
+      "q": "Todos no grupo podem votar nas atividades?",
+      "a": "Sim. Qualquer membro pode abrir uma sondagem sobre um destino, uma data, um restaurante ou uma atividade, e todos votam na app. O resultado fica visível para todo o grupo, por isso decide-se uma vez e fica decidido, em vez de percorrer a conversa à procura do que tinha sido combinado."
+    },
+    {
+      "q": "Funciona para uma viagem por várias cidades?",
+      "a": "Sim. Uma viagem pode ter várias etapas, cada uma com as suas datas, alojamento e plano diário, enquanto o orçamento e a lista de participantes continuam partilhados em todo o percurso. Serve para road trips, interrail e qualquer itinerário que mude de cidade."
     }
   ],
   "ctaTitle": "A Sua Próxima Aventura Começa Aqui",
