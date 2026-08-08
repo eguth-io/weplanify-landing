@@ -4,27 +4,27 @@
     "description": "Aviso legal da WePlanify: editor, fornecedor de alojamento e condições que regem a utilização deste sítio web."
   },
   "title": "Aviso legal",
-  "lastUpdated": "Última atualização: 2 de julho de 2026",
+  "lastUpdated": "Última atualização: 8 de agosto de 2026",
   "breadcrumb": {
     "home": "Início"
   },
   "sections": [
     {
       "title": "1. Editor do sítio web",
-      "body": "Este sítio web é editado pela WePlanify SAS, uma sociedade por ações simplificada (société par actions simplifiée) com um capital social de [A PREENCHER: capital social] €, registada no Registo Comercial e das Sociedades (RCS) de [A PREENCHER: cidade] sob o número [A PREENCHER: número SIREN/RCS].",
+      "body": "Este sítio web é editado pela WePlanify, sociedade por ações simplificada de direito francês (société par actions simplifiée) com um capital social de 1 000 €, registada no Registo Comercial e das Sociedades (RCS) de Paris sob o número 107 858 573.",
       "list": [
-        "Sede social: [A PREENCHER: morada completa da sede social]",
-        "Número de IVA intracomunitário: [A PREENCHER: número de IVA]",
+        "Sede social: 47 rue Vivienne, 75002 Paris, França",
+        "Número de IVA intracomunitário: FR27107858573",
         "Email: contact@weplanify.com"
       ]
     },
     {
       "title": "2. Diretor de publicação",
-      "body": "O diretor de publicação é [A PREENCHER: nome do diretor de publicação], na sua qualidade de representante legal da WePlanify SAS."
+      "body": "O diretor de publicação é Théo Guinebertier, na sua qualidade de presidente e representante legal da WePlanify."
     },
     {
       "title": "3. Fornecedor de alojamento",
-      "body": "Este sítio web está alojado por [A PREENCHER: nome do fornecedor de alojamento], [A PREENCHER: morada registada do fornecedor de alojamento], [A PREENCHER: contacto / sítio web do fornecedor de alojamento]."
+      "body": "O sítio web e a aplicação web são alojados pela Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, Estados Unidos (vercel.com). A infraestrutura aplicacional e os dados são alojados pela Amazon Web Services EMEA SARL, 38 avenue John F. Kennedy, L-1855 Luxemburgo (aws.amazon.com), em servidores localizados na União Europeia (região de Paris, eu-west-3)."
     },
     {
       "title": "4. Propriedade intelectual",

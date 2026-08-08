@@ -4,27 +4,27 @@
     "description": "Legal notice for WePlanify: publisher, hosting provider and terms governing the use of this website."
   },
   "title": "Legal Notice",
-  "lastUpdated": "Last updated: July 2, 2026",
+  "lastUpdated": "Last updated: 8 August 2026",
   "breadcrumb": {
     "home": "Home"
   },
   "sections": [
     {
       "title": "1. Website Publisher",
-      "body": "This website is published by WePlanify SAS, a simplified joint-stock company (société par actions simplifiée) with a share capital of [TO FILL: share capital] €, registered with the Trade and Companies Register (RCS) of [TO FILL: city] under number [TO FILL: SIREN/RCS number].",
+      "body": "This website is published by WePlanify, a French simplified joint-stock company (société par actions simplifiée) with a share capital of €1,000, registered with the Paris Trade and Companies Register (RCS) under number 107 858 573.",
       "list": [
-        "Registered office: [TO FILL: full registered address]",
-        "Intra-community VAT number: [TO FILL: VAT number]",
+        "Registered office: 47 rue Vivienne, 75002 Paris, France",
+        "Intra-community VAT number: FR27107858573",
         "Email: contact@weplanify.com"
       ]
     },
     {
       "title": "2. Publication Director",
-      "body": "The director of publication is [TO FILL: name of the publication director], in their capacity as legal representative of WePlanify SAS."
+      "body": "The director of publication is Théo Guinebertier, in his capacity as president and legal representative of WePlanify."
     },
     {
       "title": "3. Hosting Provider",
-      "body": "This website is hosted by [TO FILL: hosting provider name], [TO FILL: hosting provider registered address], [TO FILL: hosting provider contact / website]."
+      "body": "The website and web application are hosted by Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States (vercel.com). The application infrastructure and data are hosted by Amazon Web Services EMEA SARL, 38 avenue John F. Kennedy, L-1855 Luxembourg (aws.amazon.com), on servers located in the European Union (Paris region, eu-west-3)."
     },
     {
       "title": "4. Intellectual Property",
