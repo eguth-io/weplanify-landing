@@ -13,7 +13,6 @@ export interface SeoSettings {
   // General SEO
   siteName: string;
   defaultTitle: string;
-  titleTemplate: string;
   defaultDescription: string;
   keywords: string[];
   language: string;

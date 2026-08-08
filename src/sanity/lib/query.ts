@@ -7,7 +7,6 @@ export const seoSettingsQuery = groq`
   *[_type == "seoSettings"][0] {
     siteName,
     defaultTitle,
-    titleTemplate,
     defaultDescription,
     keywords,
     language,

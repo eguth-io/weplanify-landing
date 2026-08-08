@@ -71,8 +71,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: currentUrl,
       languages: {
-        en: `${SITE_URL}/en${pathname}`,
-        fr: `${SITE_URL}/fr${pathname}`,
+        ...Object.fromEntries(
+          routing.locales.map((l) => [l, `${SITE_URL}/${l}${pathname}`])
+        ),
         "x-default": `${SITE_URL}/en${pathname}`,
       },
     },

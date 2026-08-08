@@ -105,3 +105,23 @@ Constat aggravant : **le hub ne linkait pas la comparative**. Il pointait vers l
 **À mesurer.** Position de la comparative EN sur `group trip planner` (< 12 à 6 semaines), clics EN du cluster alternatives /28 j (> 100 vs 10), une seule URL EN servie sur le head-term.
 
 **Preuve.** GSC `sc-domain:weplanify.com` (90 j / 28 j / 7 j au 06/08, pull navigateur — SA MCP toujours 403) ; SerpAPI `gl=us` 08/08 ; `git log` sur `src/app/[locale]/alternatives/`.
+
+---
+
+## 2026-08-08 — Suppression du suffixe de marque dans les titles + hreflang complet (WP-136, suite)
+
+**Contexte.** Deux dettes techniques mises au jour en corrigeant la cannibalisation.
+
+**1. Titles tronqués en SERP.** `src/lib/metadata.ts` appliquait `template: "%s | WePlanify"` à toutes les pages enfants. Résultat : **178 titres sur 320 dépassaient 65 caractères** une fois le suffixe ajouté, donc étaient tronqués. Le suffixe coûtait 12 caractères sur chaque page pour une marque que Google coupait justement en fin de chaîne.
+
+**Décision.** Retirer le template : chaque page porte son titre complet. 178 → 83 titres trop longs, puis les **83 restants réécrits** (mot-clé principal conservé en tête, clause descriptive après le tiret supprimée). Les 4 titres `zh` restants ont été raccourcis à part, les idéogrammes comptant double en largeur d'affichage.
+
+Le champ Sanity `titleTemplate` (`initialValue: "%s | WePlanify"`) devenait mort — supprimé du schéma, du type, de la query et du fallback de `StructuredData`, pour ne pas laisser un réglage CMS sans effet.
+
+Écarté : garder le suffixe et réécrire les 178 — le budget serait tombé à 53 caractères par titre, intenable en pl/pt/es/it sans sacrifier le descriptif partout.
+
+**2. hreflang incomplet.** 28 pages déclaraient seulement `en`, `fr` et `x-default` alors que les 8 locales existent et figurent dans `sitemap.ts` — 6 locales sans cluster. Généralisation du patron `routing.locales.map(...)` déjà utilisé par `legal-notice` / `terms-of-use` : **31 pages corrigées**, la liste reste désormais synchronisée avec le routing.
+
+Volontairement **non traité** : `destinations/[slug]` et `travel-guides/[country]`. Leurs slugs sont typés `{ en: string; fr: string }` — ces pages n'existent qu'en EN et FR, déclarer 8 hreflang pointerait vers des 404.
+
+**Preuve.** Vérifié par script sur les 320 fichiers avec `meta.title` : 0 titre > 65 caractères, 0 doublon de marque, 0 titre `zh` > 32 caractères. `tsc --noEmit` clean.

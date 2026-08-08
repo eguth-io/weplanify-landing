@@ -96,10 +96,11 @@ export async function generateMetadataFromSanity(
     const description = localized.description;
 
     const metadata: Metadata = {
-      title: {
-        default: title,
-        template: seoSettings.titleTemplate || "%s | WePlanify",
-      },
+      // No title template: child pages own their full title and override this
+      // one. The former "%s | WePlanify" suffix cost 12 characters on every
+      // page and pushed 178 of 320 titles past the SERP truncation limit
+      // (WP-136).
+      title,
       description,
       authors: [{ name: seoSettings.organizationName || "WePlanify" }],
       creator: seoSettings.organizationName || "WePlanify",
@@ -183,10 +184,7 @@ function getDefaultMetadata(locale: string = "en", pathname: string = ""): Metad
   const localized = localizedDefaults[locale] || localizedDefaults.en;
 
   return {
-    title: {
-      default: localized.title,
-      template: "%s | WePlanify",
-    },
+    title: localized.title,
     description: localized.description,
     openGraph: {
       type: "website",

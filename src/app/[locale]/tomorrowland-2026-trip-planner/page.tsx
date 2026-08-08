@@ -36,7 +36,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     authors: [{ name: "Alex Martin" }],
     openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl, images: [{ url: ogImage, width: 1456, height: 816, alt: title }] },
     twitter: { ...metadata.twitter, title, description, images: [ogImage] },
-    alternates: { canonical: currentUrl, languages: { en: `${SITE_URL}/en${PATHNAME}`, fr: `${SITE_URL}/fr${PATHNAME}`, "x-default": `${SITE_URL}/en${PATHNAME}` } },
+    alternates: { canonical: currentUrl, languages: {
+   ...Object.fromEntries(
+     routing.locales.map((l) => [l, `${SITE_URL}/${l}${PATHNAME}`])
+   ),
+   "x-default": `${SITE_URL}/en${PATHNAME}`,
+ } },
   };
 }
 
