@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
 import Image from "next/image";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, blogPostsQuery, footerQuery } from "@/sanity/lib/query";
+import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
 import { NavType, Navigation, BlogPostPreview, Footer as FooterType } from "@/sanity/lib/type";
 import Link from "next/link";
 import { setRequestLocale, getTranslations } from 'next-intl/server';
@@ -31,7 +31,7 @@ export default async function BlogPage({ params }: Props) {
 
   const t = await getTranslations("blogIndex");
 
-  const [navData, navigationData, sanityPosts, footerData]: [NavType, Navigation | null, BlogPostPreview[], FooterType | null] = await Promise.all([
+  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] = await Promise.all([
     sanityFetch<NavType>({
       query: navQuery,
       params: { locale },
@@ -41,10 +41,6 @@ export default async function BlogPage({ params }: Props) {
       query: navigationQuery,
       params: { locale },
       tags: ["navigation"],
-    }),
-    sanityFetch<BlogPostPreview[]>({
-      query: blogPostsQuery,
-      tags: ["blogPost"],
     }),
     sanityFetch<FooterType>({
       query: footerQuery,
@@ -80,9 +76,9 @@ export default async function BlogPage({ params }: Props) {
     },
   ];
 
-  // Merge Sanity posts with static ones, dedupe on slug, sort by publishedAt desc.
+  // Dedupe on slug, sort by publishedAt desc.
   const seenSlugs = new Set<string>();
-  const blogPosts = [...sanityPosts, ...staticPosts]
+  const blogPosts = [...staticPosts]
     .filter((post) => {
       const slug = post.slug?.current;
       if (!slug || seenSlugs.has(slug)) return false;
