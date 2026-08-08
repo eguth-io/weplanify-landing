@@ -4,6 +4,52 @@
 
 ---
 
+## 2026-08-08 — Suppression du suffixe de marque dans les titles + hreflang complet (WP-136, suite)
+
+**Contexte.** Deux dettes techniques mises au jour en corrigeant la cannibalisation.
+
+**1. Titles tronqués en SERP.** `src/lib/metadata.ts` appliquait `template: "%s | WePlanify"` à toutes les pages enfants. Résultat : **178 titres sur 320 dépassaient 65 caractères** une fois le suffixe ajouté, donc étaient tronqués. Le suffixe coûtait 12 caractères sur chaque page pour une marque que Google coupait justement en fin de chaîne.
+
+**Décision.** Retirer le template : chaque page porte son titre complet. 178 → 83 titres trop longs, puis les **83 restants réécrits** (mot-clé principal conservé en tête, clause descriptive après le tiret supprimée). Les 4 titres `zh` restants ont été raccourcis à part, les idéogrammes comptant double en largeur d'affichage.
+
+Le champ Sanity `titleTemplate` (`initialValue: "%s | WePlanify"`) devenait mort — supprimé du schéma, du type, de la query et du fallback de `StructuredData`, pour ne pas laisser un réglage CMS sans effet.
+
+Écarté : garder le suffixe et réécrire les 178 — le budget serait tombé à 53 caractères par titre, intenable en pl/pt/es/it sans sacrifier le descriptif partout.
+
+**2. hreflang incomplet.** 28 pages déclaraient seulement `en`, `fr` et `x-default` alors que les 8 locales existent et figurent dans `sitemap.ts` — 6 locales sans cluster. Généralisation du patron `routing.locales.map(...)` déjà utilisé par `legal-notice` / `terms-of-use` : **31 pages corrigées**, la liste reste désormais synchronisée avec le routing.
+
+Volontairement **non traité** : `destinations/[slug]` et `travel-guides/[country]`. Leurs slugs sont typés `{ en: string; fr: string }` — ces pages n'existent qu'en EN et FR, déclarer 8 hreflang pointerait vers des 404.
+
+**Preuve.** Vérifié par script sur les 320 fichiers avec `meta.title` : 0 titre > 65 caractères, 0 doublon de marque, 0 titre `zh` > 32 caractères. `tsc --noEmit` clean.
+
+---
+
+## 2026-08-08 — Le hub `/alternatives` redevient un index de navigation (WP-136)
+
+**Contexte.** Audit GSC/SerpAPI. `/en/alternatives/best-group-trip-planner-apps`, levier head-term #1, s'effondre : **pos 10,3 → 28,6**, 179 → 10 clics, cassure datée **13–15/07/2026**. WePlanify sort du top 20 US sur `group trip planner` et `best group trip planner apps` (SerpAPI, `gl=us`).
+
+**Constat.** Cannibalisation interne entre deux pages qui coexistent depuis mars 2026 (`fd51d09`) :
+- `/en/alternatives` — « Best Group Trip Plan**ning** Apps Compared (2026) » → pos 6,5
+- `/en/alternatives/best-group-trip-planner-apps` — « Best Group Trip Plan**ner** Apps Compared (2026) » → pos 28,6
+
+Déclencheur probable : les 4 commits du **30/06** (`0d4c14d`, `8c1ca9b`, `b53abd3`, `761925d`) qui renforcent le hub (bloc featured-snippet, CTA « Compare » par concurrent, colonne 8 langues). Google bascule l'intent deux semaines plus tard. Aggravé par le core update de juillet (clos le 09/07) mais **pas causé par lui** : FR (8,2), IT (8,0), DE (6,5–8,9) et ES (7,6) tiennent toutes leur position — seul l'EN décroche.
+
+Constat aggravant : **le hub ne linkait pas la comparative**. Il pointait vers les 6 pages head-to-head, laissant orpheline la page qui porte le head-term.
+
+**Décision.** Différencier plutôt que fusionner. Le hub devient un **index de navigation** (title/H1 « Compare WePlanify to other trip planners », ItemList JSON-LD dé-brandé du head-term) et renvoie explicitement vers la comparative, qui reste la **seule cible** de « best group trip planner apps ». Appliqué aux 8 locales.
+
+Écarté : (a) consolider dans le hub — sacrifie une URL à 28,4k impressions d'historique et forcerait à déplacer les 4 locales qui fonctionnent ; (b) 301 du hub — impossible proprement, c'est le parent de 6 sous-pages et il est linké depuis le footer.
+
+**Effet de bord corrigé (site-wide).** `src/lib/metadata.ts` applique `template: "%s | WePlanify"` aux pages enfants (pas à `title.default`, donc la home était saine). Tout `meta.title` contenant déjà la marque produisait un doublon — 18 namespaces concernés, ex. `/en/road-trip` → « … Group Route Planner | WePlanify | WePlanify ». **132 titres nettoyés** : suppression du suffixe de marque, `altCruzmi` réaligné sur le patron de ses pages sœurs (`altTripit`, `altWanderlog`), et le `meta.title` du hub reformulé sans la marque (le H1 la garde). Vérifié : 0 titre rendu ne contient deux fois « WePlanify ».
+
+**Reste ouvert.** 178 titres dépassent 65 caractères une fois le suffixe ajouté (risque de troncature SERP) — non traité ici.
+
+**À mesurer.** Position de la comparative EN sur `group trip planner` (< 12 à 6 semaines), clics EN du cluster alternatives /28 j (> 100 vs 10), une seule URL EN servie sur le head-term.
+
+**Preuve.** GSC `sc-domain:weplanify.com` (90 j / 28 j / 7 j au 06/08, pull navigateur — SA MCP toujours 403) ; SerpAPI `gl=us` 08/08 ; `git log` sur `src/app/[locale]/alternatives/`.
+
+---
+
 ## 2026-07-16 — Étendre le cluster `/events` sur H2 2026 + 2027 (5 nouvelles landings)
 
 **Contexte.** Le cluster event existant est daté : la Coupe du monde FIFA se termine le 19/07, la finale UCL (30/05), Hellfest (juin), Ultra Europe (10-12/07) et Tomorrowland (17-26/07) sont passés ou en cours. Seule `solar-eclipse-2026` reste devant nous. Besoin de réamorcer le cluster sur des events dont la **fenêtre de planification est encore ouverte**.
@@ -79,29 +125,3 @@ Mesure du taux de base sur les **6 landings event déjà en ligne depuis des moi
 **Détail + roadmap priorisée :** [`2026-06-group-trip-battle-plan.md`](./2026-06-group-trip-battle-plan.md).
 
 **Preuve.** GSC `sc-domain:weplanify.com` 90 j au 29/06 ; SerpAPI `gl=us` 30/06 ; inventaire pages sur `origin/main`.
-
----
-
-## 2026-08-08 — Le hub `/alternatives` redevient un index de navigation (WP-136)
-
-**Contexte.** Audit GSC/SerpAPI. `/en/alternatives/best-group-trip-planner-apps`, levier head-term #1, s'effondre : **pos 10,3 → 28,6**, 179 → 10 clics, cassure datée **13–15/07/2026**. WePlanify sort du top 20 US sur `group trip planner` et `best group trip planner apps` (SerpAPI, `gl=us`).
-
-**Constat.** Cannibalisation interne entre deux pages qui coexistent depuis mars 2026 (`fd51d09`) :
-- `/en/alternatives` — « Best Group Trip Plan**ning** Apps Compared (2026) » → pos 6,5
-- `/en/alternatives/best-group-trip-planner-apps` — « Best Group Trip Plan**ner** Apps Compared (2026) » → pos 28,6
-
-Déclencheur probable : les 4 commits du **30/06** (`0d4c14d`, `8c1ca9b`, `b53abd3`, `761925d`) qui renforcent le hub (bloc featured-snippet, CTA « Compare » par concurrent, colonne 8 langues). Google bascule l'intent deux semaines plus tard. Aggravé par le core update de juillet (clos le 09/07) mais **pas causé par lui** : FR (8,2), IT (8,0), DE (6,5–8,9) et ES (7,6) tiennent toutes leur position — seul l'EN décroche.
-
-Constat aggravant : **le hub ne linkait pas la comparative**. Il pointait vers les 6 pages head-to-head, laissant orpheline la page qui porte le head-term.
-
-**Décision.** Différencier plutôt que fusionner. Le hub devient un **index de navigation** (title/H1 « Compare WePlanify to other trip planners », ItemList JSON-LD dé-brandé du head-term) et renvoie explicitement vers la comparative, qui reste la **seule cible** de « best group trip planner apps ». Appliqué aux 8 locales.
-
-Écarté : (a) consolider dans le hub — sacrifie une URL à 28,4k impressions d'historique et forcerait à déplacer les 4 locales qui fonctionnent ; (b) 301 du hub — impossible proprement, c'est le parent de 6 sous-pages et il est linké depuis le footer.
-
-**Effet de bord corrigé (site-wide).** `src/lib/metadata.ts` applique `template: "%s | WePlanify"` aux pages enfants (pas à `title.default`, donc la home était saine). Tout `meta.title` contenant déjà la marque produisait un doublon — 18 namespaces concernés, ex. `/en/road-trip` → « … Group Route Planner | WePlanify | WePlanify ». **132 titres nettoyés** : suppression du suffixe de marque, `altCruzmi` réaligné sur le patron de ses pages sœurs (`altTripit`, `altWanderlog`), et le `meta.title` du hub reformulé sans la marque (le H1 la garde). Vérifié : 0 titre rendu ne contient deux fois « WePlanify ».
-
-**Reste ouvert.** 178 titres dépassent 65 caractères une fois le suffixe ajouté (risque de troncature SERP) — non traité ici.
-
-**À mesurer.** Position de la comparative EN sur `group trip planner` (< 12 à 6 semaines), clics EN du cluster alternatives /28 j (> 100 vs 10), une seule URL EN servie sur le head-term.
-
-**Preuve.** GSC `sc-domain:weplanify.com` (90 j / 28 j / 7 j au 06/08, pull navigateur — SA MCP toujours 403) ; SerpAPI `gl=us` 08/08 ; `git log` sur `src/app/[locale]/alternatives/`.

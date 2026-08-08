@@ -7,7 +7,6 @@ export const seoSettingsQuery = groq`
   *[_type == "seoSettings"][0] {
     siteName,
     defaultTitle,
-    titleTemplate,
     defaultDescription,
     keywords,
     language,
@@ -323,62 +322,7 @@ export const landingPageQuery = groq`
   }
 `;
 
-// ============================================
-// Blog Post Query (Single)
-// ============================================
-export const blogPostQuery = groq`
-  *[_type == "blogPost" && slug.current == $slug][0] {
-    _id,
-    title,
-    "slug": slug.current,
-    excerpt,
-    readTime,
-    content,
-    "heroImage": heroImage.asset->url,
-    "heroImageAlt": heroImage.alt,
-    publishedAt,
-    author->{
-      name,
-      "image": image.asset->url,
-      "imageAlt": image.alt,
-      bio
-    },
-    relatedArticles[]->{
-      _id,
-      title,
-      "slug": slug.current,
-      excerpt,
-      readTime,
-      "heroImage": heroImage.asset->url,
-      "heroImageAlt": heroImage.alt,
-      publishedAt
-    },
-    seo {
-      metaTitle,
-      metaDescription
-    }
-  }
-`;
 
-// ============================================
-// Blog Posts Query (List)
-// ============================================
-export const blogPostsQuery = groq`
-  *[_type == "blogPost"] | order(publishedAt desc) {
-    _id,
-    title,
-    "slug": slug.current,
-    excerpt,
-    readTime,
-    "heroImage": heroImage.asset->url,
-    "heroImageAlt": heroImage.alt,
-    publishedAt,
-    author->{
-      name,
-      "image": image.asset->url
-    }
-  }
-`;
 
 // ============================================
 // FAQ Query (with locale filter)

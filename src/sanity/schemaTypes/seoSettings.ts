@@ -48,14 +48,6 @@ export const seoSettings = defineType({
       validation: (Rule) => Rule.required().max(60),
     },
     {
-      name: "titleTemplate",
-      title: "Title Template",
-      type: "string",
-      description: "Template for page titles. Use %s for page title (e.g., '%s | WePlanify')",
-      group: "general",
-      initialValue: "%s | WePlanify",
-    },
-    {
       name: "defaultDescription",
       title: "Default Meta Description",
       type: "text",

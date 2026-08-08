@@ -13,7 +13,6 @@ export interface SeoSettings {
   // General SEO
   siteName: string;
   defaultTitle: string;
-  titleTemplate: string;
   defaultDescription: string;
   keywords: string[];
   language: string;
@@ -292,29 +291,6 @@ export interface LandingPage {
   };
 }
 
-export interface BlogPost {
-  _id: string;
-  title: string;
-  slug: {
-    current: string;
-  };
-  excerpt: string;
-  readTime: string;
-  content: string;
-  heroImage: string;
-  publishedAt: string;
-  author?: {
-    _id: string;
-    firstName: string;
-    lastName: string;
-    avatar?: string;
-  };
-  relatedArticles?: BlogPostPreview[];
-  seo?: {
-    metaTitle?: string;
-    metaDescription?: string;
-  };
-}
 
 export interface BlogPostPreview {
   _id: string;

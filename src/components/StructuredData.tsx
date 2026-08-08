@@ -17,7 +17,6 @@ export async function StructuredData() {
     const fallbackSettings: SeoSettings = {
       siteName: "WePlanify",
       defaultTitle: "WePlanify — Free Group Trip Planner | Plan Together",
-      titleTemplate: "%s | WePlanify",
       defaultDescription: "Free collaborative group trip planner. Plan itineraries together, vote with group polls, track shared budgets.",
       keywords: ["group trip planner", "collaborative travel app"],
       language: "en",

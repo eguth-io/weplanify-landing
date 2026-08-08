@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { trackEvent } from "@/lib/tracking";
 import Image from "next/image";
-import { BlogPost, BlogPostPreview } from "@/sanity/lib/type";
+import { BlogPostPreview } from "@/sanity/lib/type";
 
 interface ArticleCardProps {
-  article: BlogPost | BlogPostPreview;
+  article: BlogPostPreview;
   locale?: string;
 }
 

@@ -35,11 +35,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
     const siteUrl = seoSettings?.siteUrl || "https://www.weplanify.com";
 
-    // Fetch blog post slugs for sitemap
-    const blogPosts: { slug: string; publishedAt: string }[] = await client.fetch(
-      `*[_type == "blogPost"]{ "slug": slug.current, publishedAt }`
-    );
-
     const entries: MetadataRoute.Sitemap = [];
 
     // Emit one <url> per locale, each carrying the full hreflang cluster
@@ -115,15 +110,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: new Date(),
         changeFrequency: "monthly",
         priority: 0.8,
-      });
-    }
-
-    // Blog posts
-    for (const post of blogPosts) {
-      pushLocalized((locale) => `/${locale}/blog/${post.slug}`, {
-        lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
-        changeFrequency: "monthly",
-        priority: 0.6,
       });
     }
 
