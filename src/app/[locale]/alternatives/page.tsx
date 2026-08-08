@@ -361,6 +361,18 @@ export default async function AlternativesPage({ params }: Props) {
             <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
               {t("heroIntro")}
             </p>
+
+            {/* Hands the "best group trip planner apps" intent over to the
+                ranking page instead of competing with it (WP-136). */}
+            <p className="font-karla text-[#001E13]/70 text-sm lg:text-base mt-6">
+              {t("fullRanking.text")}{" "}
+              <Link
+                href={`/${locale}/alternatives/best-group-trip-planner-apps`}
+                className="font-semibold text-[#F6391A] underline underline-offset-4 hover:no-underline"
+              >
+                {t("fullRanking.cta")}
+              </Link>
+            </p>
           </div>
         </section>
 

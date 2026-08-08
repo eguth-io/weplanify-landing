@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Die besten Apps für die Gruppenreiseplanung im Vergleich (2026) – WePlanify",
-    "description": "Direkter Vergleich der besten Apps für Gruppenreisen: Wanderlog, SquadTrip, TripIt, Stippl, Splitwise. Finde die richtige für dein nächstes Gruppenabenteuer."
+    "title": "Direkte Vergleiche mit anderen Reiseplanern",
+    "description": "So schneidet WePlanify im Vergleich zu Wanderlog, TripIt, SquadTrip, Stippl, Splitwise und Cruzmi ab – Funktion für Funktion, mit einer eigenen Seite pro App."
   },
   "breadcrumb": {
     "home": "Startseite",
@@ -9,7 +9,7 @@
     "currentNav": "Alternativen"
   },
   "jsonld": {
-    "itemListName": "Die besten Apps für Gruppenreiseplanung 2026"
+    "itemListName": "WePlanify im direkten Vergleich"
   },
   "featureColumnHeading": "Funktion",
   "features": [
@@ -49,9 +49,13 @@
       "text": "Stippl ist ein visueller Reiseplaner mit von der Community geteilten Reiserouten und Foto-Tagebüchern. Es fehlen Gruppenabstimmungen, ein geteilter Budget-Tracker und Französisch-Unterstützung – damit eignet es sich eher für Alleinreisende als für die Koordination einer Gruppenreise."
     }
   ],
-  "heroTitle": "Die besten Apps für Gruppenreiseplanung im Jahr 2026",
-  "heroSubtitle": "Ein vollständiger, direkter Vergleich",
-  "heroIntro": "Eine Reise mit Freunden oder Familie zu planen sollte aufregend sein, nicht stressig. Wir haben die beliebtesten Apps für Gruppenreisen verglichen, damit du das richtige Tool für dein nächstes Abenteuer findest. Funktionen, Preise und alles, was du zum Entscheiden brauchst.",
+  "heroTitle": "WePlanify mit anderen Reiseplanern vergleichen",
+  "heroSubtitle": "Funktion für Funktion",
+  "heroIntro": "Du fragst dich, worin sich WePlanify von der App unterscheidet, die deine Gruppe schon nutzt? Hier ist der Vergleich Funktion für Funktion – mit einer eigenen Detailseite für jedes Tool.",
+  "fullRanking": {
+    "text": "Suchst du eher ein Ranking der besten Apps für Gruppenreiseplanung 2026?",
+    "cta": "Zum vollständigen Vergleich →"
+  },
   "comparisonTitle": "Funktionsvergleich",
   "competitorsTitle": "Jede App im Detail",
   "inDepthTitle": "WePlanify im direkten Vergleich",
@@ -67,8 +71,8 @@
       "desc": "Jede Kernfunktion ist kostenlos, ohne versteckte Paywalls oder Testlimits. Plane so viele Reisen, wie du willst."
     },
     {
-      "title": "Zweisprachig (EN / FR)",
-      "desc": "Vollständig auf Englisch und Französisch verfügbar – eine Seltenheit unter Reiseplanungs-Apps."
+      "title": "In 8 Sprachen verfügbar",
+      "desc": "Vollständig auf Englisch, Französisch, Spanisch, Italienisch, Deutsch, Portugiesisch, Polnisch und Chinesisch verfügbar – eine Seltenheit unter Reiseplanungs-Apps."
     },
     {
       "title": "Für Gruppenentscheidungen gemacht",
