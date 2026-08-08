@@ -4,27 +4,28 @@
     "description": "Mentions légales de WePlanify : éditeur, hébergeur et conditions régissant l'utilisation de ce site web."
   },
   "title": "Mentions légales",
-  "lastUpdated": "Dernière mise à jour : 2 juillet 2026",
+  "lastUpdated": "Dernière mise à jour : 8 août 2026",
   "breadcrumb": {
     "home": "Accueil"
   },
   "sections": [
     {
       "title": "1. Éditeur du site",
-      "body": "Ce site est édité par WePlanify SAS, société par actions simplifiée au capital social de [À COMPLÉTER : capital social] €, immatriculée au Registre du commerce et des sociétés (RCS) de [À COMPLÉTER : ville] sous le numéro [À COMPLÉTER : numéro SIREN/RCS].",
+      "body": "Ce site est édité par WePlanify, société par actions simplifiée au capital social de 1 000 €, immatriculée au Registre du commerce et des sociétés (RCS) de Paris sous le numéro 107 858 573.",
       "list": [
-        "Siège social : [À COMPLÉTER : adresse complète du siège social]",
-        "Numéro de TVA intracommunautaire : [À COMPLÉTER : numéro de TVA]",
+        "Siège social : 47 rue Vivienne, 75002 Paris, France",
+        "SIRET : 107 858 573 00010 — Code APE : 6201Z (Programmation informatique)",
+        "Numéro de TVA intracommunautaire : FR27107858573",
         "E-mail : contact@weplanify.com"
       ]
     },
     {
       "title": "2. Directeur de la publication",
-      "body": "Le directeur de la publication est [À COMPLÉTER : nom du directeur de la publication], en sa qualité de représentant légal de WePlanify SAS."
+      "body": "Le directeur de la publication est Théo Guinebertier, en sa qualité de président et représentant légal de WePlanify."
     },
     {
       "title": "3. Hébergeur",
-      "body": "Ce site est hébergé par [À COMPLÉTER : nom de l'hébergeur], [À COMPLÉTER : adresse du siège de l'hébergeur], [À COMPLÉTER : contact / site web de l'hébergeur]."
+      "body": "Le site et l'application web sont hébergés par Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis (vercel.com). L'infrastructure applicative et les données sont hébergées par Amazon Web Services EMEA SARL, 38 avenue John F. Kennedy, L-1855 Luxembourg (aws.amazon.com), sur des serveurs situés dans l'Union européenne (région Paris, eu-west-3)."
     },
     {
       "title": "4. Propriété intellectuelle",

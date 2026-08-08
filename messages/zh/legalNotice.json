@@ -4,27 +4,28 @@
     "description": "WePlanify 的法律声明：发布方、托管服务商以及管辖本网站使用的相关条款。"
   },
   "title": "法律声明",
-  "lastUpdated": "最后更新：2026年7月2日",
+  "lastUpdated": "最后更新：2026年8月8日",
   "breadcrumb": {
     "home": "首页"
   },
   "sections": [
     {
       "title": "1. 网站发布方",
-      "body": "本网站由 WePlanify SAS 发布，该公司为一家简易股份公司（société par actions simplifiée），注册资本为 [待填写：注册资本] 欧元，已在 [待填写：城市] 的贸易与公司注册处（RCS）注册，注册号为 [待填写：SIREN/RCS 编号]。",
+      "body": "本网站由 WePlanify 发布，该公司为一家法国简易股份公司（société par actions simplifiée），注册资本为 1 000 欧元，已在巴黎贸易与公司注册处（RCS）注册，注册号为 107 858 573。",
       "list": [
-        "注册办公地址：[待填写：完整注册地址]",
-        "欧盟内部增值税号：[待填写：增值税号]",
+        "注册办公地址：47 rue Vivienne, 75002 Paris, France（法国巴黎）",
+        "SIRET：107 858 573 00010 — APE/NAF 代码：6201Z（计算机编程）",
+        "欧盟内部增值税号：FR27107858573",
         "电子邮箱：contact@weplanify.com"
       ]
     },
     {
       "title": "2. 出版负责人",
-      "body": "出版负责人为 [待填写：出版负责人姓名]，以 WePlanify SAS 法定代表人的身份担任。"
+      "body": "出版负责人为 Théo Guinebertier，以 WePlanify 总裁及法定代表人的身份担任。"
     },
     {
       "title": "3. 托管服务商",
-      "body": "本网站由 [待填写：托管服务商名称] 托管，地址为 [待填写：托管服务商注册地址]，联系方式为 [待填写：托管服务商联系方式 / 网站]。"
+      "body": "本网站及网页应用由 Vercel Inc. 托管，地址为 440 N Barranca Avenue #4133, Covina, CA 91723, United States（vercel.com）。应用基础设施及数据由 Amazon Web Services EMEA SARL 托管，地址为 38 avenue John F. Kennedy, L-1855 Luxembourg（aws.amazon.com），服务器位于欧盟境内（巴黎区域 eu-west-3）。"
     },
     {
       "title": "4. 知识产权",

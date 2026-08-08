@@ -4,27 +4,28 @@
     "description": "Nota prawna WePlanify: wydawca, dostawca hostingu oraz warunki regulujące korzystanie z tej witryny."
   },
   "title": "Nota prawna",
-  "lastUpdated": "Ostatnia aktualizacja: 2 lipca 2026",
+  "lastUpdated": "Ostatnia aktualizacja: 8 sierpnia 2026",
   "breadcrumb": {
     "home": "Strona główna"
   },
   "sections": [
     {
       "title": "1. Wydawca witryny",
-      "body": "Niniejsza witryna jest wydawana przez WePlanify SAS, uproszczoną spółkę akcyjną (société par actions simplifiée) o kapitale zakładowym w wysokości [DO UZUPEŁNIENIA: kapitał zakładowy] €, wpisaną do Rejestru Handlowego i Spółek (RCS) w [DO UZUPEŁNIENIA: miasto] pod numerem [DO UZUPEŁNIENIA: numer SIREN/RCS].",
+      "body": "Niniejsza witryna jest wydawana przez WePlanify, uproszczoną spółkę akcyjną prawa francuskiego (société par actions simplifiée) o kapitale zakładowym w wysokości 1 000 €, wpisaną do Rejestru Handlowego i Spółek (RCS) w Paryżu pod numerem 107 858 573.",
       "list": [
-        "Siedziba: [DO UZUPEŁNIENIA: pełny adres siedziby]",
-        "Wewnątrzwspólnotowy numer VAT: [DO UZUPEŁNIENIA: numer VAT]",
+        "Siedziba: 47 rue Vivienne, 75002 Paryż, Francja",
+        "SIRET: 107 858 573 00010 — Kod APE/NAF: 6201Z (Działalność związana z oprogramowaniem)",
+        "Wewnątrzwspólnotowy numer VAT: FR27107858573",
         "E-mail: contact@weplanify.com"
       ]
     },
     {
       "title": "2. Dyrektor ds. publikacji",
-      "body": "Dyrektorem ds. publikacji jest [DO UZUPEŁNIENIA: imię i nazwisko dyrektora ds. publikacji], działający jako przedstawiciel prawny WePlanify SAS."
+      "body": "Dyrektorem ds. publikacji jest Théo Guinebertier, działający jako prezes i przedstawiciel prawny WePlanify."
     },
     {
       "title": "3. Dostawca hostingu",
-      "body": "Niniejsza witryna jest hostowana przez [DO UZUPEŁNIENIA: nazwa dostawcy hostingu], [DO UZUPEŁNIENIA: adres siedziby dostawcy hostingu], [DO UZUPEŁNIENIA: kontakt / witryna dostawcy hostingu]."
+      "body": "Witryna i aplikacja internetowa są hostowane przez Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, Stany Zjednoczone (vercel.com). Infrastruktura aplikacji i dane są hostowane przez Amazon Web Services EMEA SARL, 38 avenue John F. Kennedy, L-1855 Luksemburg (aws.amazon.com), na serwerach znajdujących się w Unii Europejskiej (region Paryż, eu-west-3)."
     },
     {
       "title": "4. Własność intelektualna",

@@ -4,27 +4,28 @@
     "description": "Aviso legal de WePlanify: editor, proveedor de alojamiento y condiciones que rigen el uso de este sitio web."
   },
   "title": "Aviso legal",
-  "lastUpdated": "Última actualización: 2 de julio de 2026",
+  "lastUpdated": "Última actualización: 8 de agosto de 2026",
   "breadcrumb": {
     "home": "Inicio"
   },
   "sections": [
     {
       "title": "1. Editor del sitio web",
-      "body": "Este sitio web está editado por WePlanify SAS, una sociedad por acciones simplificada (société par actions simplifiée) con un capital social de [POR COMPLETAR: capital social] €, inscrita en el Registro Mercantil y de Sociedades (RCS) de [POR COMPLETAR: ciudad] con el número [POR COMPLETAR: número SIREN/RCS].",
+      "body": "Este sitio web está editado por WePlanify, sociedad por acciones simplificada de derecho francés (société par actions simplifiée) con un capital social de 1.000 €, inscrita en el Registro Mercantil y de Sociedades (RCS) de París con el número 107 858 573.",
       "list": [
-        "Domicilio social: [POR COMPLETAR: dirección completa del domicilio social]",
-        "Número de IVA intracomunitario: [POR COMPLETAR: número de IVA]",
+        "Domicilio social: 47 rue Vivienne, 75002 París, Francia",
+        "SIRET: 107 858 573 00010 — Código APE/NAF: 6201Z (Programación informática)",
+        "Número de IVA intracomunitario: FR27107858573",
         "Correo electrónico: contact@weplanify.com"
       ]
     },
     {
       "title": "2. Director de la publicación",
-      "body": "El director de la publicación es [POR COMPLETAR: nombre del director de la publicación], en su calidad de representante legal de WePlanify SAS."
+      "body": "El director de la publicación es Théo Guinebertier, en su calidad de presidente y representante legal de WePlanify."
     },
     {
       "title": "3. Proveedor de alojamiento",
-      "body": "Este sitio web está alojado por [POR COMPLETAR: nombre del proveedor de alojamiento], [POR COMPLETAR: dirección registrada del proveedor de alojamiento], [POR COMPLETAR: contacto / sitio web del proveedor de alojamiento]."
+      "body": "El sitio web y la aplicación web están alojados por Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, Estados Unidos (vercel.com). La infraestructura de la aplicación y los datos están alojados por Amazon Web Services EMEA SARL, 38 avenue John F. Kennedy, L-1855 Luxemburgo (aws.amazon.com), en servidores ubicados en la Unión Europea (región de París, eu-west-3)."
     },
     {
       "title": "4. Propiedad intelectual",

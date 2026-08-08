@@ -4,27 +4,28 @@
     "description": "Impressum von WePlanify: Anbieter, Hosting-Anbieter und Bedingungen für die Nutzung dieser Website."
   },
   "title": "Impressum",
-  "lastUpdated": "Zuletzt aktualisiert: 2. Juli 2026",
+  "lastUpdated": "Zuletzt aktualisiert: 8. August 2026",
   "breadcrumb": {
     "home": "Startseite"
   },
   "sections": [
     {
       "title": "1. Anbieter der Website",
-      "body": "Diese Website wird von WePlanify SAS herausgegeben, einer vereinfachten Aktiengesellschaft (société par actions simplifiée) mit einem Stammkapital von [AUSZUFÜLLEN: Stammkapital] €, eingetragen im Handels- und Gesellschaftsregister (RCS) von [AUSZUFÜLLEN: Stadt] unter der Nummer [AUSZUFÜLLEN: SIREN-/RCS-Nummer].",
+      "body": "Diese Website wird von WePlanify herausgegeben, einer vereinfachten Aktiengesellschaft französischen Rechts (société par actions simplifiée) mit einem Stammkapital von 1.000 €, eingetragen im Handels- und Gesellschaftsregister (RCS) von Paris unter der Nummer 107 858 573.",
       "list": [
-        "Sitz der Gesellschaft: [AUSZUFÜLLEN: vollständige Anschrift des Sitzes]",
-        "Innergemeinschaftliche Umsatzsteuer-Identifikationsnummer: [AUSZUFÜLLEN: USt-IdNr.]",
+        "Sitz der Gesellschaft: 47 rue Vivienne, 75002 Paris, Frankreich",
+        "SIRET: 107 858 573 00010 — APE/NAF-Code: 6201Z (Programmierungstätigkeiten)",
+        "Innergemeinschaftliche Umsatzsteuer-Identifikationsnummer: FR27107858573",
         "E-Mail: contact@weplanify.com"
       ]
     },
     {
       "title": "2. Verantwortlich für den Inhalt",
-      "body": "Verantwortlich für die Veröffentlichung ist [AUSZUFÜLLEN: Name des Verantwortlichen für die Veröffentlichung] in seiner Eigenschaft als gesetzlicher Vertreter der WePlanify SAS."
+      "body": "Verantwortlich für die Veröffentlichung ist Théo Guinebertier in seiner Eigenschaft als Präsident und gesetzlicher Vertreter der WePlanify."
     },
     {
       "title": "3. Hosting-Anbieter",
-      "body": "Diese Website wird gehostet von [AUSZUFÜLLEN: Name des Hosting-Anbieters], [AUSZUFÜLLEN: Anschrift des Hosting-Anbieters], [AUSZUFÜLLEN: Kontakt / Website des Hosting-Anbieters]."
+      "body": "Die Website und die Web-Anwendung werden gehostet von Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, USA (vercel.com). Die Anwendungsinfrastruktur und die Daten werden von Amazon Web Services EMEA SARL, 38 avenue John F. Kennedy, L-1855 Luxemburg (aws.amazon.com), auf Servern in der Europäischen Union (Region Paris, eu-west-3) gehostet."
     },
     {
       "title": "4. Geistiges Eigentum",

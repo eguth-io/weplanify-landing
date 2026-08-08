@@ -4,27 +4,28 @@
     "description": "Note legali di WePlanify: editore, provider di hosting e condizioni che regolano l'uso di questo sito web."
   },
   "title": "Note legali",
-  "lastUpdated": "Ultimo aggiornamento: 2 luglio 2026",
+  "lastUpdated": "Ultimo aggiornamento: 8 agosto 2026",
   "breadcrumb": {
     "home": "Home"
   },
   "sections": [
     {
       "title": "1. Editore del sito web",
-      "body": "Questo sito web è pubblicato da WePlanify SAS, società per azioni semplificata (société par actions simplifiée) con un capitale sociale di [DA COMPLETARE: capitale sociale] €, iscritta al Registro delle imprese (RCS) di [DA COMPLETARE: città] con il numero [DA COMPLETARE: numero SIREN/RCS].",
+      "body": "Questo sito web è pubblicato da WePlanify, società per azioni semplificata di diritto francese (société par actions simplifiée) con un capitale sociale di 1.000 €, iscritta al Registro delle imprese (RCS) di Parigi con il numero 107 858 573.",
       "list": [
-        "Sede legale: [DA COMPLETARE: indirizzo completo della sede legale]",
-        "Numero di partita IVA intracomunitaria: [DA COMPLETARE: numero di partita IVA]",
+        "Sede legale: 47 rue Vivienne, 75002 Parigi, Francia",
+        "SIRET: 107 858 573 00010 — Codice APE/NAF: 6201Z (Programmazione informatica)",
+        "Numero di partita IVA intracomunitaria: FR27107858573",
         "Email: contact@weplanify.com"
       ]
     },
     {
       "title": "2. Direttore della pubblicazione",
-      "body": "Il direttore della pubblicazione è [DA COMPLETARE: nome del direttore della pubblicazione], in qualità di rappresentante legale di WePlanify SAS."
+      "body": "Il direttore della pubblicazione è Théo Guinebertier, in qualità di presidente e rappresentante legale di WePlanify."
     },
     {
       "title": "3. Provider di hosting",
-      "body": "Questo sito web è ospitato da [DA COMPLETARE: nome del provider di hosting], [DA COMPLETARE: indirizzo registrato del provider di hosting], [DA COMPLETARE: contatto / sito web del provider di hosting]."
+      "body": "Il sito web e l'applicazione web sono ospitati da Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, Stati Uniti (vercel.com). L'infrastruttura applicativa e i dati sono ospitati da Amazon Web Services EMEA SARL, 38 avenue John F. Kennedy, L-1855 Lussemburgo (aws.amazon.com), su server situati nell'Unione europea (regione di Parigi, eu-west-3)."
     },
     {
       "title": "4. Proprietà intellettuale",
