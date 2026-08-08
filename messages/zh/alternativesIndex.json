@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "最佳团体旅行规划应用对比（2026）—— WePlanify",
-    "description": "最佳团体旅行应用并列对比：Wanderlog、SquadTrip、TripIt、Stippl、Splitwise。为你的下一次团体冒险挑出最合适的一款。"
+    "title": "与其他旅行规划应用的逐项对比",
+    "description": "看看 WePlanify 与 Wanderlog、TripIt、SquadTrip、Stippl、Splitwise 和 Cruzmi 的逐项功能对比 —— 每款应用都有专门的对比页面。"
   },
   "breadcrumb": {
     "home": "首页",
@@ -9,7 +9,7 @@
     "currentNav": "替代方案"
   },
   "jsonld": {
-    "itemListName": "2026 年最佳团体旅行规划应用"
+    "itemListName": "WePlanify 逐项对比"
   },
   "featureColumnHeading": "功能",
   "features": [
@@ -49,9 +49,13 @@
       "text": "Stippl 是一款可视化旅行规划工具，带有社区共享行程和图文游记。它缺少团体投票、共享预算追踪和法语支持 —— 因此更适合独自旅行者，而非协调团体旅行。"
     }
   ],
-  "heroTitle": "2026 年最佳团体旅行规划应用",
-  "heroSubtitle": "一份完整的并列对比",
-  "heroIntro": "和好友或家人一起规划旅行本该令人兴奋，而不是充满压力。我们对比了最受欢迎的几款团体旅行应用，让你为下一次冒险挑出合适的工具。功能、价格，以及你做决定所需的一切。",
+  "heroTitle": "将 WePlanify 与其他旅行规划应用对比",
+  "heroSubtitle": "逐项功能对比",
+  "heroIntro": "想知道 WePlanify 和你的团队正在使用的应用有什么不同？这里是逐项功能对比，每款工具都有专门的对比页面。",
+  "fullRanking": {
+    "text": "想找 2026 年最佳团体旅行规划应用的排行榜？",
+    "cta": "阅读完整对比 →"
+  },
   "comparisonTitle": "功能对比",
   "competitorsTitle": "逐一细看每款应用",
   "inDepthTitle": "深入对比 WePlanify",
@@ -67,8 +71,8 @@
       "desc": "每项核心功能都免费，没有隐藏付费墙或试用限制。想规划多少次旅行都可以。"
     },
     {
-      "title": "双语（英语/法语）",
-      "desc": "完整支持英语和法语 —— 在旅行规划应用中实属罕见。"
+      "title": "支持 8 种语言",
+      "desc": "完整支持英语、法语、西班牙语、意大利语、德语、葡萄牙语、波兰语和中文 —— 在旅行规划应用中实属罕见。"
     },
     {
       "title": "为团体决策而生",

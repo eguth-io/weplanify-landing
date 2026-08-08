@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Best Group Trip Planning Apps Compared (2026) — WePlanify",
-    "description": "Side-by-side comparison of the best group travel apps: Wanderlog, SquadTrip, TripIt, Stippl, Splitwise. Pick the right one for your next group adventure."
+    "title": "Head-to-Head Comparisons With Other Trip Planners",
+    "description": "See how WePlanify compares to Wanderlog, TripIt, SquadTrip, Stippl, Splitwise and Cruzmi, feature by feature — with a dedicated head-to-head page for each app."
   },
   "breadcrumb": {
     "home": "Home",
@@ -9,7 +9,7 @@
     "currentNav": "Alternatives"
   },
   "jsonld": {
-    "itemListName": "Best Group Trip Planner Apps 2026"
+    "itemListName": "WePlanify head-to-head comparisons"
   },
   "featureColumnHeading": "Feature",
   "features": [
@@ -49,9 +49,13 @@
       "text": "Stippl is a visual travel planner with community-shared itineraries and photo journals. It lacks group polls, shared budget tracking, and French language support — making it more suited for solo travelers than for coordinating a group trip."
     }
   ],
-  "heroTitle": "Best Group Trip Planning Apps in 2026",
-  "heroSubtitle": "A complete, side-by-side comparison",
-  "heroIntro": "Planning a trip with friends or family should be exciting, not stressful. We compared the most popular group travel apps so you can pick the right tool for your next adventure. Features, pricing, and everything you need to decide.",
+  "heroTitle": "Compare WePlanify to other trip planners",
+  "heroSubtitle": "Feature by feature",
+  "heroIntro": "Wondering how WePlanify differs from the app your group already uses? Here is the feature-by-feature breakdown, with a dedicated head-to-head page for each tool.",
+  "fullRanking": {
+    "text": "Looking for a ranking of the best group trip planner apps in 2026?",
+    "cta": "Read the full comparison →"
+  },
   "comparisonTitle": "Feature Comparison",
   "competitorsTitle": "A Closer Look at Each App",
   "inDepthTitle": "Compare WePlanify head-to-head",
@@ -67,8 +71,8 @@
       "desc": "Every core feature is free with no hidden paywalls or trial limits. Plan as many trips as you want."
     },
     {
-      "title": "Bilingual (EN / FR)",
-      "desc": "Fully available in English and French — a rare find among travel planning apps."
+      "title": "Available in 8 languages",
+      "desc": "Fully available in English, French, Spanish, Italian, German, Portuguese, Polish and Chinese — a rare find among travel planning apps."
     },
     {
       "title": "Built for group decisions",
