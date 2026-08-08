@@ -12,6 +12,10 @@
     "articleHeadline": "Eine Reise mit Freunden planen – kompletter Guide"
   },
   "readTime": "8 Min. Lesezeit",
+  "quickAnswer": {
+    "heading": "Kurze Antwort",
+    "body": "Am einfachsten planst du eine Reise mit Freunden in einem gemeinsamen Raum, in dem die Gruppe zusammen entscheidet: WePlanify vereint Abstimmungen für Termine und Ziel, einen Tag-für-Tag-Reiseplan, den alle bearbeiten können, ein gemeinsames Budget, das festhält, wer was bezahlt hat, und automatisch abrechnet, sowie eine geteilte Packliste. Es ist kostenlos, eingeladene Freunde brauchen kein Konto, und es funktioniert vom Wochenendtrip bis zur Reise durch mehrere Städte."
+  },
   "heroTag": "Gruppenreisen, vereinfacht",
   "heroTitle": "Plane eine Reise mit Freunden\nohne das Chaos",
   "heroDescription": "Schluss mit dem Jonglieren von WhatsApp-Threads, Tabellen und Rätselraten. WePlanify bringt deine ganze Gruppe an einem Ort zusammen, um die perfekte Reise zu planen – vom Reiseziel bis zur Abreise.",
@@ -127,6 +131,18 @@
     {
       "q": "Wie funktionieren Gruppenabstimmungen?",
       "a": "Erstelle eine Abstimmung mit einer beliebigen Frage – Reiseziel, Daten, Restaurants, Aktivitäten – und teil sie mit deiner Gruppe. Jeder stimmt von seinem Gerät ab, und die Ergebnisse aktualisieren sich in Echtzeit. Du kannst Fristen setzen, Mehrfachauswahl erlauben und Stimmen anonym machen, um sozialen Druck zu vermeiden."
+    },
+    {
+      "q": "Wie teilt man die Kosten einer Gruppenreise fair auf?",
+      "a": "Trag jede Ausgabe direkt ein und halte fest, wer tatsächlich bezahlt hat — den Rest rechnet die App. Das geteilte Budget von WePlanify erfasst jede Zahlung, kommt mit Ausgaben klar, die nur einen Teil der Gruppe betreffen, und rechnet am Ende mit möglichst wenigen Überweisungen ab. Niemand muss jemandem mit einer Tabelle hinterherlaufen. Gleichmäßig, nach Anteilen oder mit exakten Beträgen — je nachdem, wie eure Gruppe tickt."
+    },
+    {
+      "q": "Können alle in der Gruppe über die Aktivitäten abstimmen?",
+      "a": "Ja. Jedes Mitglied kann eine Abstimmung zu Ziel, Termin, Restaurant oder Aktivität starten, und alle stimmen in der App ab. Das Ergebnis sieht die ganze Gruppe, also wird einmal entschieden und bleibt entschieden — statt im Chat zurückzuscrollen, um herauszufinden, was eigentlich vereinbart war."
+    },
+    {
+      "q": "Funktioniert das für eine Reise durch mehrere Städte?",
+      "a": "Ja. Eine Reise kann mehrere Etappen enthalten, jede mit eigenen Daten, eigener Unterkunft und eigenem Tagesplan, während Budget und Teilnehmerliste über die gesamte Reise hinweg geteilt bleiben. Das deckt Roadtrips, Interrail und jede Route ab, die von Stadt zu Stadt führt."
     }
   ],
   "ctaTitle": "Dein nächstes Abenteuer beginnt hier",

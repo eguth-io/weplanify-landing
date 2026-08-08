@@ -1,0 +1,113 @@
+{
+  "measuredAt": "2026-08-08T20:32:11.214Z",
+  "domain": "weplanify.com",
+  "market": "gl=us / hl=en",
+  "summary": {
+    "queries": 10,
+    "withAiOverview": 10,
+    "citedInAiOverview": 4,
+    "rankingInTop20": 2
+  },
+  "results": [
+    {
+      "query": "best travel planning apps for group vacations 2026?",
+      "gscPosition": 1.4,
+      "organicPosition": null,
+      "organicUrl": null,
+      "aiOverview": true,
+      "aiOverviewCitesUs": false,
+      "aiOverviewSourceCount": 17,
+      "redditInTop5": false
+    },
+    {
+      "query": "which platforms allow collaborative trip planning for dubai, where friends can vote on experiences?",
+      "gscPosition": 1.7,
+      "organicPosition": 4,
+      "organicUrl": "https://www.weplanify.com/en/trip-with-friends",
+      "aiOverview": true,
+      "aiOverviewCitesUs": true,
+      "aiOverviewSourceCount": 6,
+      "redditInTop5": true
+    },
+    {
+      "query": "best group trip planning apps split expenses itinerary polls 2026",
+      "gscPosition": 2,
+      "organicPosition": null,
+      "organicUrl": null,
+      "aiOverview": true,
+      "aiOverviewCitesUs": false,
+      "aiOverviewSourceCount": 8,
+      "redditInTop5": true
+    },
+    {
+      "query": "how do i split costs for a group trip fairly?",
+      "gscPosition": 2.4,
+      "organicPosition": null,
+      "organicUrl": null,
+      "aiOverview": true,
+      "aiOverviewCitesUs": false,
+      "aiOverviewSourceCount": 8,
+      "redditInTop5": true
+    },
+    {
+      "query": "best group itinerary builder for team-building trips",
+      "gscPosition": 2.4,
+      "organicPosition": 6,
+      "organicUrl": "https://www.weplanify.com/en/team-building",
+      "aiOverview": true,
+      "aiOverviewCitesUs": true,
+      "aiOverviewSourceCount": 29,
+      "redditInTop5": true
+    },
+    {
+      "query": "travel planners with collaborative features for group trips?",
+      "gscPosition": 3.3,
+      "organicPosition": null,
+      "organicUrl": null,
+      "aiOverview": true,
+      "aiOverviewCitesUs": true,
+      "aiOverviewSourceCount": 8,
+      "redditInTop5": true
+    },
+    {
+      "query": "best mobile apps for group travel planning 2025 2026",
+      "gscPosition": 6.2,
+      "organicPosition": null,
+      "organicUrl": null,
+      "aiOverview": true,
+      "aiOverviewCitesUs": false,
+      "aiOverviewSourceCount": 7,
+      "redditInTop5": false
+    },
+    {
+      "query": "best collaborative trip planning apps 2026",
+      "gscPosition": 8.1,
+      "organicPosition": null,
+      "organicUrl": null,
+      "aiOverview": true,
+      "aiOverviewCitesUs": false,
+      "aiOverviewSourceCount": 19,
+      "redditInTop5": false
+    },
+    {
+      "query": "best apps to plan a group trip with friends",
+      "gscPosition": null,
+      "organicPosition": null,
+      "organicUrl": null,
+      "aiOverview": true,
+      "aiOverviewCitesUs": true,
+      "aiOverviewSourceCount": 12,
+      "redditInTop5": true
+    },
+    {
+      "query": "app to plan a trip with friends",
+      "gscPosition": 22.4,
+      "organicPosition": null,
+      "organicUrl": null,
+      "aiOverview": true,
+      "aiOverviewCitesUs": false,
+      "aiOverviewSourceCount": 21,
+      "redditInTop5": true
+    }
+  ]
+}

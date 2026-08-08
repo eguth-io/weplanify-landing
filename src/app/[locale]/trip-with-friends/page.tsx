@@ -253,6 +253,21 @@ export default async function TripWithFriendsPage({ params }: Props) {
           <AuthorBio locale={locale} publishedDate="2026-03-19" modifiedDate="2026-03-26" />
         </div>
 
+        {/* Quick answer — this page is already cited in AI Overviews for
+            "best apps to plan a group trip with friends", so the direct,
+            self-contained answer goes first, before any narrative copy an
+            extractive engine would have to wade through (WP-137). */}
+        <section className="max-w-[900px] mx-auto px-4 lg:px-8 pt-8">
+          <div className="rounded-2xl border border-[#001E13]/10 bg-[#FFFBF5] p-6 lg:p-8">
+            <h2 className="font-londrina-solid text-[#001E13] text-xl lg:text-2xl mb-3">
+              {t("quickAnswer.heading")}
+            </h2>
+            <p className="font-karla text-[#001E13]/85 text-base lg:text-lg leading-relaxed">
+              {t("quickAnswer.body")}
+            </p>
+          </div>
+        </section>
+
         {/* Why Section */}
         <section className="pt-10 lg:pt-14 pb-16 lg:pb-24 px-4 lg:px-8">
           <div className="max-w-[900px] mx-auto">

@@ -13,11 +13,17 @@ const AI_CRAWLERS = [
   "ClaudeBot",
   "anthropic-ai",
   "Claude-Web",
+  "Claude-SearchBot",
   "PerplexityBot",
   "Perplexity-User",
   "Google-Extended",
   "Applebot-Extended",
   "CCBot",
+  "meta-externalagent",
+  "Amazonbot",
+  "Bytespider",
+  "cohere-ai",
+  "YouBot",
 ];
 
 /**
