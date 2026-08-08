@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Planificador de viaje de cumpleaños — Gratis, en grupo",
-    "description": "Planifica tu viaje de cumpleaños con WePlanify, el planificador gratuito de viajes de cumpleaños. Coordina las fechas con tus amigos, vota el destino, reparte el presupuesto y construye un itinerario día a día — perfecto para los 30, 40, 50 o cualquier escapada de cumpleaños."
+    "title": "Cómo planificar un viaje de cumpleaños — Planificador gratis",
+    "description": "Fija la fecha antes que el destino, acordad el presupuesto y votad. WePlanify es el planificador gratuito: encuestas, itinerario y presupuesto compartidos."
   },
   "readTime": "9 min de lectura",
   "hero": {
@@ -16,7 +16,9 @@
       "Un viaje de cumpleaños es uno de los mejores regalos que puedes hacerte — o hacerle a alguien a quien quieres. Tanto si es un cumpleaños señalado (30, 40, 50, 60) como una simple escapada de fin de semana para marcar un año más, escaparte con la gente que importa supera a cualquier fiesta en casa. Pero organizar un viaje de cumpleaños para un grupo de 4 a 15 amigos viene con su propio caos silencioso: encontrar una fecha que funcione, ponerse de acuerdo en un destino, elegir un Airbnb que todos puedan pagar y averiguar quién va a reservar realmente las cenas.",
       "Los mejores viajes de cumpleaños comparten tres cosas: reflejan el gusto real del cumpleañero (no lo que el grupo cree que debería querer), respetan el presupuesto de todos para que nadie se baje la semana antes y tienen la estructura justa para que el grupo no esté en una esquina a las 8 de la tarde discutiendo dónde comer. El objetivo no es planificar cada hora — es eliminar la fricción para que el viaje en sí pueda ser espontáneo.",
       "Para eso exactamente se creó WePlanify. Un único espacio compartido donde tu grupo puede votar el destino, fijar una fecha, llevar la cuenta de un bote común y construir juntos un itinerario día a día. Tanto si el cumpleañero organiza su propio viaje con amigos como si una pareja planifica en secreto una escapada sorpresa, todo vive en un solo lugar — sin hilos de WhatsApp dispersos, sin hojas de cálculo, sin perseguir a la gente por 40 € tres semanas después."
-    ]
+    ],
+    "generalGuidePrompt": "¿Necesitas una guía más general? Consulta nuestra",
+    "generalGuideLink": "guía completa para organizar un viaje en grupo"
   },
   "painPoints": {
     "title": "Por qué planificar un viaje de cumpleaños siempre se escapa",
@@ -226,5 +228,26 @@
       "desc": "La guía completa paso a paso para planificar un viaje en grupo con éxito.",
       "link": "Leer la guía →"
     }
+  },
+  "quickAnswer": {
+    "heading": "Respuesta rápida",
+    "body": "Para planificar un viaje de cumpleaños, fija la fecha antes que el destino, acordad en voz alta un presupuesto por persona y luego dejad que el grupo vote el lugar. WePlanify hace las tres cosas en un único espacio gratuito: encuestas para elegir fechas y destino, un itinerario día a día compartido y un presupuesto común que registra quién pagó qué y salda las cuentas al final, para que la persona homenajeada no acabe organizando su propio viaje."
+  },
+  "howTo": {
+    "title": "Cómo hacerlo, paso a paso",
+    "sections": [
+      {
+        "title": "Cómo planificar una escapada de cumpleaños",
+        "body": "Empieza por la fecha, no por el destino: busca el fin de semana que le va bien a la gente que de verdad importa y deja que el grupo vote el lugar. Anuncia un presupuesto por persona antes de que nadie reserve, o alguien se caerá más tarde por dinero. Construid el itinerario juntos, dejad libre la noche del cumpleaños y mantened fechas, gastos y reservas en un sitio que todos puedan ver."
+      },
+      {
+        "title": "Cómo planificar un road trip de cumpleaños",
+        "body": "Un road trip de cumpleaños se decide en la ruta. Elige un circuito de dos o tres paradas separadas por unas horas, reserva pronto la primera y la última noche y deja el medio flexible. Acordad desde el principio cómo se reparten gasolina, peajes y alojamiento, y turnaos al volante. Planificad las paradas día a día para que nadie pase su cumpleaños discutiendo el siguiente desvío."
+      },
+      {
+        "title": "Cómo organizar una fiesta de cumpleaños en otro destino",
+        "body": "Una fiesta de cumpleaños fuera es un viaje en grupo con un punto fijo: la celebración. Cierra primero el local o el restaurante y construye el viaje alrededor. Manda la invitación pronto, con las fechas y un coste por persona honesto, para que cada uno pueda confirmar o declinar mientras aún sirve. Recoge los gastos comunes antes de salir, no después."
+      }
+    ]
   }
 }

@@ -68,6 +68,10 @@ export default async function BirthdayTrip({ params }: Props) {
   const t = await getTranslations("birthdayTrip");
 
   const guideParagraphs = t.raw("guideIntro.paragraphs") as string[];
+  const howToSections = t.raw("howTo.sections") as {
+    title: string;
+    body: string;
+  }[];
   const painPointItems = t.raw("painPoints.items") as {
     emoji: string;
     title: string;
@@ -216,6 +220,41 @@ export default async function BirthdayTrip({ params }: Props) {
           <AuthorBio locale={locale} publishedDate="2026-05-24" modifiedDate="2026-05-24" />
         </div>
 
+        {/* Quick answer — the three queries this page ranks for are "how to"
+            questions sitting at position ~10 with zero clicks, so the direct
+            answer goes above the narrative rather than after it (WP-138). */}
+        <section className="max-w-3xl mx-auto px-4 lg:px-8 pt-8">
+          <div className="rounded-2xl border border-[#001E13]/10 bg-[#FFFBF5] p-6 lg:p-8">
+            <h2 className="font-londrina-solid text-[#001E13] text-xl lg:text-2xl mb-3">
+              {t("quickAnswer.heading")}
+            </h2>
+            <p className="font-karla text-[#001E13]/85 text-base lg:text-lg leading-relaxed">
+              {t("quickAnswer.body")}
+            </p>
+          </div>
+        </section>
+
+        {/* One section per query, worded as users type it. */}
+        <section className="py-12 lg:py-16 px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13] mb-8 text-center">
+              {t("howTo.title")}
+            </h2>
+            <div className="space-y-8">
+              {howToSections.map((section, i) => (
+                <div key={i}>
+                  <h3 className="font-karla font-bold text-[#001E13] text-lg lg:text-xl mb-2">
+                    {section.title}
+                  </h3>
+                  <p className="text-[#001E13]/80 text-base lg:text-lg font-karla leading-relaxed">
+                    {section.body}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Guide Intro Section */}
         <section className="py-12 lg:py-16 px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
@@ -230,12 +269,17 @@ export default async function BirthdayTrip({ params }: Props) {
               ))}
             </div>
             <div className="mt-6 text-center">
+              {/* Was a locale === "fr" ternary, which served English to the six
+                  other locales on a page we are trying to rank in all of them. */}
               <p className="text-[#001E13]/60 font-karla text-sm">
-                {locale === "fr" ? (
-                  <>Besoin d&apos;un guide plus général ? Consultez notre <Link href={`/${locale}/guides/plan-group-trip`} className="text-[#F6391A] underline underline-offset-4 hover:opacity-70">guide complet pour organiser un voyage de groupe</Link>.</>
-                ) : (
-                  <>Need a more general guide? Check out our <Link href={`/${locale}/guides/plan-group-trip`} className="text-[#F6391A] underline underline-offset-4 hover:opacity-70">complete group trip planning guide</Link>.</>
-                )}
+                {t("guideIntro.generalGuidePrompt")}{" "}
+                <Link
+                  href={`/${locale}/guides/plan-group-trip`}
+                  className="text-[#F6391A] underline underline-offset-4 hover:opacity-70"
+                >
+                  {t("guideIntro.generalGuideLink")}
+                </Link>
+                .
               </p>
             </div>
           </div>

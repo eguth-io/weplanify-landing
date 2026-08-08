@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Voyage Anniversaire — Organise un Anniversaire Inoubliable",
-    "description": "Organise ton voyage anniversaire avec WePlanify, l'application gratuite pour planifier un week-end anniversaire entre amis. Coordonne les dates, vote pour la destination, gère la cagnotte commune et crée un programme jour par jour — idéal pour les 30, 40, 50 ans ou n'importe quel anniversaire à fêter ailleurs."
+    "title": "Organiser un voyage d'anniversaire — Planificateur gratuit",
+    "description": "Fixe la date avant la destination, mets-toi d'accord sur le budget, puis votez. WePlanify est le planificateur gratuit : sondages, itinéraire et budget partagés."
   },
   "readTime": "9 min de lecture",
   "hero": {
@@ -16,7 +16,9 @@
       "Un voyage anniversaire est l'un des meilleurs cadeaux qu'on puisse se faire — ou faire à quelqu'un qu'on aime. Anniversaire-clé (30, 40, 50, 60 ans) ou simple week-end pour marquer le coup, partir avec les bonnes personnes vaut largement la fête à la maison. Mais organiser un voyage anniversaire pour un groupe de 4 à 15 amis vient avec son lot de chaos discret : trouver une date qui convient, se mettre d'accord sur la destination, choisir un Airbnb que tout le monde peut se payer, et déterminer qui va vraiment réserver le restaurant.",
       "Les meilleurs voyages anniversaire partagent trois choses : ils reflètent les goûts réels de la personne fêtée (pas ce que le groupe croit qu'elle devrait vouloir), ils respectent le budget de chacun pour que personne ne se désiste à la dernière minute, et ils ont juste assez de structure pour éviter qu'on se retrouve à 20h au coin d'une rue à débattre de l'endroit où manger. L'objectif n'est pas de planifier chaque heure — c'est d'enlever les frictions pour que le voyage lui-même reste spontané.",
       "C'est exactement pour ça que WePlanify a été conçu. Un seul espace partagé où ton groupe peut voter pour la destination, fixer une date, suivre une cagnotte commune et construire un programme jour par jour. Que la personne fêtée organise son propre voyage avec ses amis ou qu'un conjoint planifie une surprise en secret, tout vit au même endroit — pas de discussions éparpillées sur WhatsApp, pas de tableurs, pas besoin de courir après 40 € trois semaines plus tard."
-    ]
+    ],
+    "generalGuidePrompt": "Besoin d'un guide plus général ? Consulte notre",
+    "generalGuideLink": "guide complet pour organiser un voyage de groupe"
   },
   "painPoints": {
     "title": "Pourquoi les Voyages Anniversaire Finissent Toujours Aux Oubliettes",
@@ -226,5 +228,26 @@
       "desc": "Le guide complet étape par étape pour organiser un voyage de groupe réussi.",
       "link": "Lire le guide →"
     }
+  },
+  "quickAnswer": {
+    "heading": "Réponse rapide",
+    "body": "Pour organiser un voyage d'anniversaire, fixe la date avant la destination, annonce un budget par personne, puis laisse le groupe voter sur le lieu. WePlanify fait les trois dans un seul espace gratuit : des sondages pour choisir les dates et la destination, un itinéraire jour par jour partagé, et un budget commun qui suit qui a payé quoi et solde les comptes à la fin — pour que la personne dont c'est l'anniversaire n'ait pas à organiser son propre voyage."
+  },
+  "howTo": {
+    "title": "Comment s'y prendre, étape par étape",
+    "sections": [
+      {
+        "title": "Comment organiser un voyage d'anniversaire",
+        "body": "Commence par la date, pas par la destination : trouve le week-end qui convient aux gens qui comptent vraiment, puis fais voter le groupe sur le lieu. Annonce un budget par personne avant que quiconque réserve, sinon certains se désisteront plus tard pour une question d'argent. Construisez l'itinéraire ensemble, laissez la soirée d'anniversaire libre, et gardez dates, coûts et réservations au même endroit, visibles par tous."
+      },
+      {
+        "title": "Comment organiser un road trip d'anniversaire",
+        "body": "Un road trip d'anniversaire se joue sur l'itinéraire. Choisis une boucle de deux ou trois étapes à quelques heures l'une de l'autre, réserve tôt la première et la dernière nuit, et garde le milieu souple. Mettez-vous d'accord dès le départ sur le partage de l'essence, des péages et du logement, et alternez au volant. Planifiez les étapes jour par jour, pour que personne ne passe son anniversaire à débattre du prochain virage."
+      },
+      {
+        "title": "Comment organiser une fête d'anniversaire à l'étranger",
+        "body": "Une fête d'anniversaire à l'étranger, c'est un voyage de groupe avec un point fixe : la célébration elle-même. Bloque d'abord le lieu ou le restaurant, puis construis le voyage autour. Envoie l'invitation tôt, avec les dates et un coût par personne honnête, pour que chacun puisse s'engager ou décliner tant que c'est utile. Collecte les frais communs avant de partir, pas après."
+      }
+    ]
   }
 }

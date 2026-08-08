@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Planeador de Viagens de Aniversário — Grátis, em Grupo",
-    "description": "Planeie a sua viagem de aniversário com a WePlanify, o planeador de viagens de aniversário gratuito. Coordene datas com os seus amigos, votem no destino, dividam o orçamento e construam um itinerário dia a dia — perfeito para os marcos dos 30, 40, 50 anos ou qualquer escapada de aniversário."
+    "title": "Como planear uma viagem de aniversário — Grátis",
+    "description": "Marque a data antes do destino, combinem o orçamento e votem. O WePlanify é o planeador gratuito: sondagens, itinerário e orçamento partilhados."
   },
   "readTime": "9 min de leitura",
   "hero": {
@@ -16,7 +16,9 @@
       "Uma viagem de aniversário é uma das melhores prendas que se pode dar a si próprio — ou a alguém que ama. Quer seja um aniversário marcante (30, 40, 50, 60) ou apenas uma escapada de fim de semana para assinalar mais um ano, fugir com as pessoas que importam supera qualquer festa em casa. Mas organizar uma viagem de aniversário para um grupo de 4 a 15 amigos traz o seu próprio caos silencioso: encontrar uma data que sirva, chegar a acordo sobre um destino, escolher um Airbnb que todos possam pagar e descobrir quem vai realmente fazer as reservas de jantar.",
       "As melhores viagens de aniversário têm três coisas em comum: refletem o gosto real do aniversariante (não o que o grupo acha que ele deveria querer), respeitam o orçamento de todos para que ninguém desista na véspera e têm estrutura suficiente para que o grupo não esteja parado numa esquina às 20h a discutir onde comer. O objetivo não é planear cada hora — é eliminar o atrito para que a viagem em si possa ser espontânea.",
       "Foi exatamente para isto que a WePlanify foi criada. Um único espaço partilhado onde o vosso grupo pode votar no destino, fixar uma data, acompanhar uma caixa partilhada e construir um itinerário dia a dia em conjunto. Quer seja o aniversariante a organizar a sua própria viagem com amigos ou um companheiro a planear secretamente uma escapada surpresa, tudo fica num só lugar — sem conversas dispersas no WhatsApp, sem folhas de cálculo, sem andar atrás de pessoas por 40 € três semanas depois."
-    ]
+    ],
+    "generalGuidePrompt": "Precisa de um guia mais geral? Veja o nosso",
+    "generalGuideLink": "guia completo para organizar uma viagem em grupo"
   },
   "painPoints": {
     "title": "Porque é que Planear uma Viagem de Aniversário Fica Sempre para Trás",
@@ -226,5 +228,26 @@
       "desc": "O guia completo, passo a passo, para planear uma viagem em grupo de sucesso.",
       "link": "Ler o guia →"
     }
+  },
+  "quickAnswer": {
+    "heading": "Resposta rápida",
+    "body": "Para planear uma viagem de aniversário, marque a data antes do destino, combinem em voz alta um orçamento por pessoa e depois deixem o grupo votar no sítio. O WePlanify faz as três coisas num único espaço gratuito: sondagens para escolher datas e destino, um itinerário dia a dia partilhado e um orçamento comum que regista quem pagou o quê e acerta as contas no fim — para que o aniversariante não acabe a organizar a sua própria viagem."
+  },
+  "howTo": {
+    "title": "Como fazer, passo a passo",
+    "sections": [
+      {
+        "title": "Como planear uma escapadinha de aniversário",
+        "body": "Comece pela data, não pelo destino: encontre o fim de semana que serve às pessoas que realmente contam e deixe o grupo votar no sítio. Anuncie um orçamento por pessoa antes de alguém reservar, ou alguém desiste mais tarde por causa do dinheiro. Construam o itinerário juntos, deixem a noite do aniversário livre e mantenham datas, custos e reservas num só lugar visível para todos."
+      },
+      {
+        "title": "Como planear uma road trip de aniversário",
+        "body": "Uma road trip de aniversário decide-se no percurso. Escolha um circuito de duas ou três paragens a poucas horas umas das outras, reserve cedo a primeira e a última noite e deixe o meio flexível. Combinem à partida como se dividem combustível, portagens e alojamento, e revezem-se ao volante. Planeiem as paragens dia a dia, para ninguém passar o aniversário a discutir a próxima saída."
+      },
+      {
+        "title": "Como organizar uma festa de aniversário noutro destino",
+        "body": "Uma festa de aniversário fora é uma viagem em grupo com um ponto fixo: a celebração. Feche primeiro o espaço ou o restaurante e construa a viagem à volta disso. Envie o convite cedo, com as datas e um custo por pessoa honesto, para que cada um possa confirmar ou recusar enquanto ainda ajuda. Recolha os custos comuns antes de partir, não depois."
+      }
+    ]
   }
 }

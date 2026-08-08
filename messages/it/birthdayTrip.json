@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Pianificatore di viaggi di compleanno — Gratis, di gruppo",
-    "description": "Organizza il tuo viaggio di compleanno con WePlanify, il pianificatore gratuito di viaggi di compleanno. Coordina le date con gli amici, vota la destinazione, dividi il budget e costruisci un itinerario giorno per giorno — perfetto per i 30, 40, 50 anni o qualsiasi fuga di compleanno."
+    "title": "Come organizzare un viaggio di compleanno — Gratis",
+    "description": "Fissa prima la data, poi il budget, infine votate la meta. WePlanify è il pianificatore gratuito: sondaggi, itinerario e budget condivisi in un solo posto."
   },
   "readTime": "9 min di lettura",
   "hero": {
@@ -16,7 +16,9 @@
       "Un viaggio di compleanno è uno dei regali migliori che puoi farti — o fare a qualcuno che ami. Che sia un compleanno importante (30, 40, 50, 60 anni) o semplicemente una fuga di un weekend per festeggiare un altro anno, partire con le persone che contano batte qualsiasi festa a casa. Ma organizzare un viaggio di compleanno per un gruppo di 4-15 amici porta con sé il suo silenzioso caos: trovare una data che vada bene, mettersi d'accordo sulla destinazione, scegliere un Airbnb che tutti possano permettersi e capire chi prenoterà davvero il tavolo per la cena.",
       "I migliori viaggi di compleanno hanno tre cose in comune: rispecchiano i gusti reali del festeggiato (non ciò che il gruppo pensa dovrebbe volere), rispettano il budget di tutti così nessuno si tira indietro la settimana prima e hanno giusto la struttura necessaria perché il gruppo non si ritrovi all'angolo di una strada alle 20 a discutere su dove mangiare. L'obiettivo non è pianificare ogni ora — è eliminare gli attriti così il viaggio vero possa essere spontaneo.",
       "È esattamente per questo che è nato WePlanify. Un unico spazio condiviso in cui il tuo gruppo può votare la destinazione, fissare una data, tenere traccia della cassa comune e costruire insieme un itinerario giorno per giorno. Che sia il festeggiato a organizzare il proprio viaggio con gli amici o un partner a pianificare di nascosto una fuga a sorpresa, tutto vive in un unico posto — niente chat WhatsApp sparse, niente fogli di calcolo, niente rincorse per 40 euro tre settimane dopo."
-    ]
+    ],
+    "generalGuidePrompt": "Ti serve una guida più generale? Leggi la nostra",
+    "generalGuideLink": "guida completa per organizzare un viaggio di gruppo"
   },
   "painPoints": {
     "title": "Perché organizzare un viaggio di compleanno slitta sempre",
@@ -226,5 +228,26 @@
       "desc": "La guida completa passo dopo passo per organizzare un viaggio di gruppo riuscito.",
       "link": "Leggi la guida →"
     }
+  },
+  "quickAnswer": {
+    "heading": "Risposta rapida",
+    "body": "Per organizzare un viaggio di compleanno, fissa la data prima della destinazione, dichiarate un budget a testa e poi lasciate che il gruppo voti il posto. WePlanify fa tutte e tre le cose in un unico spazio gratuito: sondaggi per scegliere date e meta, un itinerario giorno per giorno condiviso e un budget comune che tiene traccia di chi ha pagato cosa e chiude i conti alla fine, così il festeggiato non finisce a organizzarsi il viaggio da solo."
+  },
+  "howTo": {
+    "title": "Come farlo, passo dopo passo",
+    "sections": [
+      {
+        "title": "Come organizzare una fuga di compleanno",
+        "body": "Parti dalla data, non dalla destinazione: trova il weekend che funziona per le persone che contano davvero, poi fai votare al gruppo il posto. Dichiara un budget a testa prima che qualcuno prenoti, altrimenti qualcuno si tirerà indietro più avanti per una questione di soldi. Costruite insieme l'itinerario, lasciate libera la sera del compleanno e tenete date, spese e prenotazioni in un unico posto visibile a tutti."
+      },
+      {
+        "title": "Come organizzare un viaggio on the road per il compleanno",
+        "body": "Un viaggio on the road di compleanno si gioca sul percorso. Scegli un anello di due o tre tappe a poche ore l'una dall'altra, prenota presto la prima e l'ultima notte e lascia flessibile la parte centrale. Mettetevi d'accordo subito su come dividere benzina, pedaggi e alloggio, e datevi il cambio alla guida. Pianificate le tappe giorno per giorno, così nessuno passa il compleanno a discutere della prossima svolta."
+      },
+      {
+        "title": "Come organizzare una festa di compleanno all'estero",
+        "body": "Una festa di compleanno all'estero è un viaggio di gruppo con un punto fisso: la celebrazione. Blocca prima il locale o il ristorante, poi costruisci il viaggio attorno. Manda l'invito presto, con le date e un costo a testa onesto, così ognuno può confermare o rinunciare finché serve. Raccogli le spese comuni prima di partire, non dopo."
+      }
+    ]
   }
 }
