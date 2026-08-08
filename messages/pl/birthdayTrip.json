@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Planer wyjazdu urodzinowego — zaplanuj wymarzony urodzinowy wypad",
-    "description": "Zaplanuj wyjazd urodzinowy z WePlanify, darmowym planerem wyjazdów urodzinowych. Uzgodnij terminy ze znajomymi, zagłosujcie na kierunek, podziel budżet i zbuduj plan podróży dzień po dniu — idealny na 30., 40., 50. urodziny lub dowolny urodzinowy wypad."
+    "title": "Jak zaplanować wyjazd urodzinowy — darmowy planer",
+    "description": "Najpierw termin, potem budżet, na końcu głosowanie nad kierunkiem. WePlanify to darmowy planer: ankiety, wspólny plan podróży i wspólny budżet."
   },
   "readTime": "9 min czytania",
   "hero": {
@@ -16,7 +16,9 @@
       "Wyjazd urodzinowy to jeden z najlepszych prezentów, jaki możesz sprawić sobie — lub komuś, kogo kochasz. Niezależnie od tego, czy są to okrągłe urodziny (30., 40., 50., 60.), czy po prostu weekendowa ucieczka, by uczcić kolejny rok, wyjazd z ludźmi, którzy się liczą, bije każdą imprezę w domu. Ale organizacja wyjazdu urodzinowego dla grupy 4 do 15 znajomych ma swój własny cichy chaos: znalezienie pasującego terminu, uzgodnienie kierunku, wybór Airbnb, na które każdego stać, i ustalenie, kto właściwie zarezerwuje stolik na kolację.",
       "Najlepsze wyjazdy urodzinowe mają trzy wspólne cechy: odzwierciedlają prawdziwy gust solenizanta (a nie to, co grupa uważa, że powinien chcieć), szanują budżet każdego, więc nikt nie wypada tydzień wcześniej, i mają akurat tyle struktury, że grupa nie stoi na rogu ulicy o 20:00, kłócąc się, gdzie zjeść. Celem nie jest rozplanowanie każdej godziny — chodzi o usunięcie tarć, by sam wyjazd mógł być spontaniczny.",
       "Właśnie do tego stworzono WePlanify. Jedna wspólna przestrzeń, w której Twoja ekipa może głosować na kierunek, ustalić termin, śledzić wspólną kasę i wspólnie budować plan podróży dzień po dniu. Niezależnie od tego, czy solenizant organizuje własny wyjazd ze znajomymi, czy partner po cichu planuje urodzinową niespodziankę, wszystko mieści się w jednym miejscu — bez porozrzucanych wątków na WhatsAppie, bez arkuszy kalkulacyjnych, bez gonienia ludzi za 40 € trzy tygodnie później."
-    ]
+    ],
+    "generalGuidePrompt": "Potrzebujesz bardziej ogólnego poradnika? Zajrzyj do naszego",
+    "generalGuideLink": "kompletnego przewodnika po organizacji wyjazdu grupowego"
   },
   "painPoints": {
     "title": "Dlaczego planowanie wyjazdu urodzinowego zawsze się przeciąga",
@@ -226,5 +228,26 @@
       "desc": "Kompletny przewodnik krok po kroku po planowaniu udanego wyjazdu grupowego.",
       "link": "Przeczytaj poradnik →"
     }
+  },
+  "quickAnswer": {
+    "heading": "Szybka odpowiedź",
+    "body": "Żeby zaplanować wyjazd urodzinowy, ustalcie najpierw termin, a nie kierunek, powiedzcie wprost, jaki jest budżet na osobę, a potem niech grupa zagłosuje nad miejscem. WePlanify robi wszystkie trzy rzeczy w jednym darmowym miejscu: ankiety do wyboru terminu i kierunku, wspólny plan dzień po dniu oraz wspólny budżet, który śledzi, kto za co zapłacił, i rozlicza wszystko na koniec — żeby solenizant nie musiał organizować własnego wyjazdu."
+  },
+  "howTo": {
+    "title": "Krok po kroku",
+    "sections": [
+      {
+        "title": "Jak zaplanować wyjazd urodzinowy",
+        "body": "Zacznij od terminu, nie od kierunku: znajdź weekend, który pasuje osobom, na których naprawdę zależy, a potem niech grupa zagłosuje nad miejscem. Podaj budżet na osobę, zanim ktokolwiek zarezerwuje — inaczej ktoś się później wycofa z powodu pieniędzy. Zbudujcie plan razem, zostawcie wolny wieczór urodzinowy i trzymajcie terminy, koszty i rezerwacje w jednym miejscu widocznym dla wszystkich."
+      },
+      {
+        "title": "Jak zaplanować urodzinowy road trip",
+        "body": "Urodzinowy road trip zależy od trasy. Wybierz pętlę z dwoma lub trzema przystankami oddalonymi o kilka godzin, zarezerwuj wcześnie pierwszą i ostatnią noc, a środek zostaw elastyczny. Ustalcie od razu, jak dzielicie paliwo, opłaty drogowe i nocleg, i zmieniajcie się za kierownicą. Rozpiszcie przystanki dzień po dniu, żeby nikt nie spędził urodzin na sporach o następny zjazd."
+      },
+      {
+        "title": "Jak zorganizować przyjęcie urodzinowe za granicą",
+        "body": "Przyjęcie urodzinowe za granicą to wyjazd grupowy z jednym stałym punktem: samą uroczystością. Najpierw zaklep lokal albo restaurację, a podróż zbuduj wokół tego. Wyślij zaproszenie wcześnie, z terminami i uczciwym kosztem na osobę, żeby każdy mógł potwierdzić albo odmówić, póki to jeszcze coś zmienia. Zbierz wspólne koszty przed wyjazdem, nie po nim."
+      }
+    ]
   }
 }

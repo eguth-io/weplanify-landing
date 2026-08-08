@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Birthday Trip Planner — Plan the Ultimate Birthday Getaway",
-    "description": "Plan your birthday trip with WePlanify, the free birthday trip planner. Coordinate dates with your friends, vote on the destination, split the budget, and build a day-by-day itinerary — perfect for 30th, 40th, 50th milestones or any birthday getaway."
+    "title": "How to Plan a Birthday Getaway — Free Group Planner",
+    "description": "Settle the date first, agree a budget, then vote on where to go. WePlanify is the free birthday trip planner: polls, shared itinerary and common budget."
   },
   "readTime": "9 min read",
   "hero": {
@@ -16,7 +16,9 @@
       "A birthday trip is one of the best gifts you can give yourself — or someone you love. Whether it's a milestone birthday (30th, 40th, 50th, 60th) or just a weekend escape to mark another year, getting away with the people who matter beats any party at home. But organizing a birthday trip for a group of 4 to 15 friends comes with its own quiet chaos: finding a date that works, agreeing on a destination, picking an Airbnb everyone can afford, and figuring out who's actually going to book the dinner reservations.",
       "The best birthday trips share three things: they reflect the birthday person's actual taste (not what the group thinks they should want), they respect everyone's budget so nobody drops out the week before, and they have just enough structure that the group isn't standing on a street corner at 8pm arguing about where to eat. The goal isn't to plan every hour — it's to remove the friction so the actual trip can be spontaneous.",
       "That's exactly what WePlanify was built for. One shared space where your crew can vote on the destination, lock in a date, track a shared kitty, and build a day-by-day itinerary together. Whether the birthday person is organizing their own trip with friends or a partner is secretly planning a surprise getaway, everything lives in one place — no scattered WhatsApp threads, no spreadsheets, no chasing people for €40 three weeks later."
-    ]
+    ],
+    "generalGuidePrompt": "Need a more general guide? Check out our",
+    "generalGuideLink": "complete group trip planning guide"
   },
   "painPoints": {
     "title": "Why Planning a Birthday Trip Always Slips",
@@ -226,5 +228,26 @@
       "desc": "The complete step-by-step guide to planning a successful group trip.",
       "link": "Read the guide →"
     }
+  },
+  "quickAnswer": {
+    "heading": "Quick answer",
+    "body": "To plan a birthday trip, settle the date before the destination, agree a per-person budget out loud, then let the group vote on where to go. WePlanify does all three in one free space: polls to pick the dates and the destination, a shared day-by-day itinerary, and a common budget that tracks who paid what and settles up at the end — so the birthday person doesn't end up organising their own trip."
+  },
+  "howTo": {
+    "title": "Planning it, step by step",
+    "sections": [
+      {
+        "title": "How to plan a birthday getaway",
+        "body": "Start with the date, not the destination: find the weekend that works for the people who actually matter, then let the group vote on where to go. Set a per-person budget out loud before anyone books, so nobody drops out later over money. Build the itinerary together, leave the birthday evening free, and keep dates, costs and bookings in one place everyone can see."
+      },
+      {
+        "title": "How to plan a birthday road trip",
+        "body": "A birthday road trip lives or dies on the route. Pick a loop of two or three stops a few hours apart, book the first and last nights early, and leave the middle flexible. Agree upfront on how fuel, tolls and accommodation get split, and share the driving. Map the stops day by day so nobody spends the birthday arguing about the next turn."
+      },
+      {
+        "title": "How to plan a destination birthday party",
+        "body": "A destination birthday party is a group trip with one fixed point: the celebration itself. Lock the venue or the restaurant first, then build the travel around it. Send the invitation early with the dates and an honest per-person cost, so people can commit or decline while it still helps. Collect the shared costs before you leave, not after."
+      }
+    ]
   }
 }

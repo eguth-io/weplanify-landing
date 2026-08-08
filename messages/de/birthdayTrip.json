@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Geburtstagsreise-Planer – Plane die ultimative Geburtstagsauszeit",
-    "description": "Plane deine Geburtstagsreise mit WePlanify, dem kostenlosen Geburtstagsreise-Planer. Stimmt Termine mit deinen Freunden ab, votet über das Reiseziel, teilt das Budget und baut eine Tag-für-Tag-Reiseroute – perfekt für runde Geburtstage wie den 30., 40., 50. oder jede Geburtstagsauszeit."
+    "title": "Geburtstagsreise planen — kostenloser Gruppenplaner",
+    "description": "Erst das Datum, dann das Budget, dann per Abstimmung das Ziel. WePlanify ist der kostenlose Planer: Abstimmungen, gemeinsamer Reiseplan und Budget."
   },
   "readTime": "9 Min. Lesezeit",
   "hero": {
@@ -16,7 +16,9 @@
       "Eine Geburtstagsreise ist eines der besten Geschenke, die du dir – oder jemandem, den du liebst – machen kannst. Ob runder Geburtstag (30., 40., 50., 60.) oder einfach eine Wochenend-Auszeit, um ein weiteres Jahr zu feiern: mit den Menschen wegzufahren, die zählen, schlägt jede Feier zu Hause. Aber eine Geburtstagsreise für eine Gruppe von 4 bis 15 Freunden zu organisieren bringt ihr eigenes leises Chaos mit sich: einen passenden Termin finden, sich auf ein Reiseziel einigen, ein Airbnb wählen, das sich alle leisten können, und herausfinden, wer eigentlich die Restaurantreservierungen macht.",
       "Die besten Geburtstagsreisen haben drei Dinge gemeinsam: Sie spiegeln den tatsächlichen Geschmack des Geburtstagskindes wider (nicht das, was die Gruppe meint, dass es wollen sollte), sie respektieren das Budget aller, sodass niemand eine Woche vorher abspringt, und sie haben gerade genug Struktur, damit die Gruppe nicht um 20 Uhr an einer Straßenecke steht und darüber streitet, wo gegessen wird. Das Ziel ist nicht, jede Stunde zu planen – sondern die Reibung zu beseitigen, damit die eigentliche Reise spontan sein kann.",
       "Genau dafür wurde WePlanify gebaut. Ein gemeinsamer Raum, in dem deine Crew über das Reiseziel abstimmen, einen Termin festlegen, eine gemeinsame Kasse verfolgen und gemeinsam eine Tag-für-Tag-Reiseroute bauen kann. Ob das Geburtstagskind seine eigene Reise mit Freunden organisiert oder ein Partner heimlich eine Überraschungs-Auszeit plant – alles liegt an einem Ort: keine verstreuten WhatsApp-Threads, keine Tabellen, kein Hinterherlaufen wegen 40 € drei Wochen später."
-    ]
+    ],
+    "generalGuidePrompt": "Brauchst du einen allgemeineren Leitfaden? Sieh dir unseren",
+    "generalGuideLink": "kompletten Guide zur Planung einer Gruppenreise"
   },
   "painPoints": {
     "title": "Warum die Planung einer Geburtstagsreise immer verrutscht",
@@ -226,5 +228,26 @@
       "desc": "Der komplette Schritt-für-Schritt-Guide für die Planung einer gelungenen Gruppenreise.",
       "link": "Guide lesen →"
     }
+  },
+  "quickAnswer": {
+    "heading": "Kurze Antwort",
+    "body": "Für eine Geburtstagsreise legt ihr zuerst das Datum fest, nicht das Ziel, sprecht ein Budget pro Person offen aus und lasst die Gruppe dann über den Ort abstimmen. WePlanify erledigt alle drei Schritte in einem kostenlosen Raum: Abstimmungen für Termin und Ziel, ein geteilter Tag-für-Tag-Reiseplan und ein gemeinsames Budget, das festhält, wer was bezahlt hat, und am Ende abrechnet — damit das Geburtstagskind nicht seine eigene Reise organisieren muss."
+  },
+  "howTo": {
+    "title": "Schritt für Schritt",
+    "sections": [
+      {
+        "title": "Wie plant man eine Geburtstagsreise?",
+        "body": "Fang mit dem Datum an, nicht mit dem Ziel: Finde das Wochenende, das für die Menschen passt, auf die es ankommt, und lass die Gruppe dann über den Ort abstimmen. Nenne ein Budget pro Person, bevor jemand bucht — sonst springt später jemand wegen des Geldes ab. Baut den Reiseplan gemeinsam, haltet den Geburtstagsabend frei und sammelt Termine, Kosten und Buchungen an einem Ort, den alle sehen."
+      },
+      {
+        "title": "Wie plant man einen Geburtstags-Roadtrip?",
+        "body": "Ein Geburtstags-Roadtrip steht und fällt mit der Route. Wähl eine Runde mit zwei oder drei Stopps, die wenige Stunden auseinanderliegen, buche die erste und die letzte Nacht früh und lass die Mitte flexibel. Klärt vorab, wie Sprit, Maut und Unterkunft geteilt werden, und wechselt euch am Steuer ab. Plant die Stopps Tag für Tag, damit niemand seinen Geburtstag mit Diskussionen über die nächste Abzweigung verbringt."
+      },
+      {
+        "title": "Wie plant man eine Geburtstagsfeier im Ausland?",
+        "body": "Eine Geburtstagsfeier im Ausland ist eine Gruppenreise mit einem festen Punkt: der Feier selbst. Sichert zuerst die Location oder das Restaurant, dann baut ihr die Anreise darum herum. Verschickt die Einladung früh, mit Terminen und einem ehrlichen Preis pro Person, damit alle zusagen oder absagen können, solange es noch hilft. Sammelt die gemeinsamen Kosten vor der Abreise ein, nicht danach."
+      }
+    ]
   }
 }
