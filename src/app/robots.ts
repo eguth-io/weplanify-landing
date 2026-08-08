@@ -6,6 +6,15 @@ import { SeoSettings } from "@/sanity/lib/type";
 // AI / LLM crawlers we explicitly welcome so our content can be indexed and
 // cited by generative search engines (GEO). Notably Google-Extended controls
 // whether Google can use the content for AI Overviews / Gemini grounding.
+//
+// Two kinds live here and the distinction matters when adding one:
+//  - Crawlers that CITE (OAI-SearchBot, Claude-SearchBot, PerplexityBot,
+//    Google-Extended, YouBot, Applebot-Extended, meta-externalagent) fetch to
+//    answer a live query and link back — those are the ones WP-137 is about.
+//  - Crawlers that only TRAIN (GPTBot, ClaudeBot, CCBot) give no attribution.
+//    Allowing them is a deliberate bet on being in the weights, not a traffic
+//    play. Don't add one without that reason: cohere-ai and Bytespider were
+//    dropped because they cost bandwidth and cite nothing back to us.
 const AI_CRAWLERS = [
   "GPTBot",
   "OAI-SearchBot",
@@ -21,8 +30,6 @@ const AI_CRAWLERS = [
   "CCBot",
   "meta-externalagent",
   "Amazonbot",
-  "Bytespider",
-  "cohere-ai",
   "YouBot",
 ];
 
