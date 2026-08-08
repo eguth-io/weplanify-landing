@@ -38,9 +38,9 @@
     "title": "Porque um grupo precisa de uma IA diferente",
     "body": "Uma IA para uma pessoa otimiza o gosto dessa pessoa. Um grupo tem de conciliar seis, mais um orçamento que ninguém quer levantar e três pessoas que respondem tarde. É um problema de coordenação, não de geração. O WePlanify trata o itinerário gerado como ponto de partida e depois dá ao grupo o que é preciso para fechá-lo: sondagens para decidir, um orçamento partilhado que regista quem pagou o quê, e um plano que todos veem mudar em tempo real."
   },
-  "honest": {
-    "title": "No que a IA é boa aqui — e no que não é",
-    "body": "A IA é mesmo boa perante a página em branco: uma rota plausível, um ritmo sensato, uma lista curta para uma cidade que nunca visitou. É bem mais fraca em tudo o que não consegue verificar: horários atuais, se um restaurante senta nove pessoas, quanto custa o ferry este mês. Use o rascunho como uma primeira passagem a corrigir, confirme as reservas você mesmo e deixe o grupo apanhar o que o modelo errou."
+  "handover": {
+    "title": "Onde acaba o rascunho e o grupo assume",
+    "body": "O plano gerado é um ponto de partida por opção, não uma reserva. A IA dá o seu melhor perante a página em branco: uma rota plausível, um ritmo sensato, uma lista curta para uma cidade que ninguém do grupo conhece. O que muda de semana para semana — os horários de hoje, se um restaurante senta nove pessoas, quanto custa o ferry neste momento — é precisamente o que o seu grupo está em melhor posição para resolver. O WePlanify deixa-lhe isso em vez de adivinhar: o plano continua editável, todos veem cada alteração e as decisões acontecem onde devem."
   },
   "faq": {
     "title": "Perguntas frequentes",

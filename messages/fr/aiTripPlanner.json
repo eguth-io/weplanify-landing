@@ -38,9 +38,9 @@
     "title": "Pourquoi un groupe a besoin d'une IA différente",
     "body": "Une IA solo optimise le goût d'une seule personne. Un groupe doit en concilier six, plus un budget que personne n'ose aborder et trois personnes qui répondent en retard. C'est un problème de coordination, pas de génération. WePlanify traite l'itinéraire généré comme un point de départ, puis donne au groupe de quoi trancher : des sondages pour décider, un budget commun qui suit qui a payé quoi, et un plan que tout le monde voit évoluer en direct."
   },
-  "honest": {
-    "title": "Ce que l'IA fait bien ici — et ce qu'elle fait mal",
-    "body": "L'IA est vraiment bonne face à la page blanche : un parcours plausible, un rythme tenable, une short-list pour une ville que tu ne connais pas. Elle est beaucoup plus faible sur tout ce qu'elle ne peut pas vérifier — horaires du moment, capacité d'un restaurant à asseoir neuf personnes, prix du ferry ce mois-ci. Prends le brouillon comme une première passe à corriger, confirme les réservations toi-même, et laisse le groupe rattraper ce que le modèle a raté."
+  "handover": {
+    "title": "Où s'arrête le brouillon, où le groupe prend le relais",
+    "body": "Le plan généré est un point de départ par construction, pas une réservation. L'IA est à son meilleur face à la page blanche : un parcours plausible, un rythme tenable, une short-list pour une ville que personne du groupe ne connaît. Ce qui bouge d'une semaine à l'autre — les horaires du jour, la capacité d'un restaurant à asseoir neuf personnes, le prix du ferry en ce moment — c'est justement ce que ton groupe est le mieux placé pour trancher. WePlanify le lui laisse plutôt que de deviner : le plan reste modifiable, chacun voit chaque changement, et les décisions se prennent là où il faut."
   },
   "faq": {
     "title": "Questions fréquentes",

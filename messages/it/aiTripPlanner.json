@@ -38,9 +38,9 @@
     "title": "Perché un gruppo ha bisogno di un'AI diversa",
     "body": "Un'AI pensata per il singolo ottimizza il gusto di una persona. Un gruppo deve conciliarne sei, più un budget che nessuno vuole tirare fuori e tre persone che rispondono in ritardo. È un problema di coordinamento, non di generazione. WePlanify tratta l'itinerario generato come un punto di partenza, poi dà al gruppo gli strumenti per chiuderlo: sondaggi per decidere, un budget condiviso che tiene traccia di chi ha pagato cosa e un piano che tutti vedono cambiare in tempo reale."
   },
-  "honest": {
-    "title": "In cosa l'AI è brava qui — e in cosa no",
-    "body": "L'AI è davvero brava davanti alla pagina bianca: un percorso plausibile, un ritmo sensato, una lista breve per una città che non conosci. È molto più debole su tutto ciò che non può verificare: orari attuali, se un ristorante fa sedere nove persone, quanto costa il traghetto questo mese. Prendi la bozza come una prima passata da correggere, conferma tu le prenotazioni e lascia che il gruppo intercetti quello che il modello ha sbagliato."
+  "handover": {
+    "title": "Dove finisce la bozza e subentra il gruppo",
+    "body": "Il piano generato è un punto di partenza per scelta, non una prenotazione. L'AI dà il meglio davanti alla pagina bianca: un percorso plausibile, un ritmo sensato, una lista breve per una città che nessuno del gruppo conosce. Ciò che cambia di settimana in settimana — gli orari di oggi, se un ristorante fa sedere nove persone, quanto costa il traghetto adesso — è esattamente ciò che il tuo gruppo è nella posizione migliore per decidere. WePlanify glielo lascia invece di tirare a indovinare: il piano resta modificabile, tutti vedono ogni cambiamento e le decisioni si prendono dove devono."
   },
   "faq": {
     "title": "Domande frequenti",

@@ -205,13 +205,17 @@ export default async function AiTripPlannerPage({ params }: Props) {
           </section>
         </FadeIn>
 
-        {/* Naming the limits is what makes the rest credible — and quotable. */}
+        {/* Being concrete about where generation ends is what makes the rest
+            credible and quotable — framed as the product's division of labour,
+            not as a caveat about our own AI. */}
         <FadeIn>
           <section className="pb-14 lg:pb-20 px-6 lg:px-12">
             <div className="max-w-3xl mx-auto rounded-2xl bg-[#001E13] p-6 lg:p-10 text-[#FFFBF5]">
-              <h2 className="font-londrina-solid text-2xl lg:text-3xl mb-4">{t("honest.title")}</h2>
+              <h2 className="font-londrina-solid text-2xl lg:text-3xl mb-4">
+                {t("handover.title")}
+              </h2>
               <p className="font-karla text-[#FFFBF5]/85 text-base lg:text-lg leading-relaxed">
-                {t("honest.body")}
+                {t("handover.body")}
               </p>
             </div>
           </section>

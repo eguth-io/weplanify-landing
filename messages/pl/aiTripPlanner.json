@@ -38,9 +38,9 @@
     "title": "Dlaczego grupa potrzebuje innej AI",
     "body": "AI dla jednej osoby optymalizuje gust tej osoby. Grupa musi pogodzić sześć, plus budżet, którego nikt nie chce poruszać, i trzy osoby odpisujące z opóźnieniem. To problem koordynacji, nie generowania. WePlanify traktuje wygenerowany plan jako punkt wyjścia, a potem daje grupie narzędzia, by go domknąć: ankiety do decydowania, wspólny budżet śledzący, kto za co zapłacił, i plan, który wszyscy widzą na żywo."
   },
-  "honest": {
-    "title": "W czym AI jest tu dobra — a w czym nie",
-    "body": "AI naprawdę dobrze radzi sobie z pustą kartką: sensowna trasa, realne tempo, krótka lista dla miasta, którego nie znasz. Znacznie słabiej wypada we wszystkim, czego nie może sprawdzić: aktualne godziny otwarcia, czy restauracja posadzi dziewięć osób, ile kosztuje prom w tym miesiącu. Potraktuj szkic jako pierwsze podejście do poprawienia, rezerwacje potwierdź sam, a grupie pozwól wyłapać to, co model pomylił."
+  "handover": {
+    "title": "Gdzie kończy się szkic, a zaczyna grupa",
+    "body": "Wygenerowany plan jest z założenia punktem wyjścia, a nie rezerwacją. AI jest najmocniejsza wobec pustej kartki: sensowna trasa, realne tempo, krótka lista dla miasta, którego nikt w grupie nie zna. To, co zmienia się z tygodnia na tydzień — dzisiejsze godziny otwarcia, czy restauracja posadzi dziewięć osób, ile kosztuje prom właśnie teraz — najlepiej rozstrzygnie Twoja grupa. WePlanify zostawia to jej, zamiast zgadywać: plan pozostaje edytowalny, każdy widzi każdą zmianę, a decyzje zapadają tam, gdzie powinny."
   },
   "faq": {
     "title": "Najczęstsze pytania",
