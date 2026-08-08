@@ -254,9 +254,17 @@ const APP_REGISTER = 'https://app.weplanify.com';
  * medium/campaign fill in only where first-touch has nothing. `signup_source`
  * always carries the internal placement context.
  */
-export const buildRegisterHref = (opts: RegisterHrefOptions): string => {
+export const buildRegisterHref = (
+	opts: RegisterHrefOptions,
+	/**
+	 * The first-touch to inject. Defaults to the persisted one. Callers that
+	 * render on both the server and the client pass `{}` for the first render,
+	 * so both sides agree before the effect swaps in the stored value — see
+	 * `useRegisterHref`.
+	 */
+	ft: Attribution = readFirstTouch()
+): string => {
 	const { locale, template, campaign, medium, placement } = opts;
-	const ft = readFirstTouch();
 
 	const query = new URLSearchParams();
 
