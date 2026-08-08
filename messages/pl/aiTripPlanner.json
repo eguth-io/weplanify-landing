@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Planer podróży AI dla grup — za darmo",
+    "description": "Opisz wyjazd, dostań plan dzień po dniu w kilka sekund, a potem pozwól grupie zagłosować i go poprawić. WePlanify — planer AI stworzony dla grup."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Planer podróży AI"
+  },
+  "hero": {
+    "tag": "Planer podróży AI",
+    "title": "Planer AI\nstworzony dla grup",
+    "subtitle": "Większość AI pisze plan dla jednej osoby. Twój musi przetrwać sześć opinii.",
+    "cta": "Zaplanuj wyjazd za darmo"
+  },
+  "quickAnswer": {
+    "heading": "Szybka odpowiedź",
+    "body": "Planer podróży AI zamienia opis zwykłym językiem — dokąd, kiedy, na jak długo, co lubi grupa — w plan dzień po dniu w kilka sekund: zaczynasz od szkicu, a nie od pustej kartki. WePlanify robi dokładnie to, a potem oddaje szkic Twojej grupie: każdy może go edytować, zagłosować, co zostaje, i śledzić wspólny budżet. Jest za darmo, a zaproszeni znajomi nie potrzebują konta."
+  },
+  "how": {
+    "title": "Jak to działa",
+    "steps": [
+      {
+        "title": "Opisz wyjazd jednym zdaniem",
+        "body": "Dokąd jedziecie, mniej więcej kiedy i co lubi grupa. Bez wypełniania formularza na start."
+      },
+      {
+        "title": "Dostań szkic dzień po dniu",
+        "body": "AI proponuje plan z atrakcjami i realnym tempem — coś konkretnego, o czym można się spierać, i o to właśnie chodzi."
+      },
+      {
+        "title": "Przekaż go grupie",
+        "body": "Każdy edytuje, komentuje i głosuje. Plan się dogaduje, zamiast leżeć w notatkach jednej osoby."
+      }
+    ]
+  },
+  "groups": {
+    "title": "Dlaczego grupa potrzebuje innej AI",
+    "body": "AI dla jednej osoby optymalizuje gust tej osoby. Grupa musi pogodzić sześć, plus budżet, którego nikt nie chce poruszać, i trzy osoby odpisujące z opóźnieniem. To problem koordynacji, nie generowania. WePlanify traktuje wygenerowany plan jako punkt wyjścia, a potem daje grupie narzędzia, by go domknąć: ankiety do decydowania, wspólny budżet śledzący, kto za co zapłacił, i plan, który wszyscy widzą na żywo."
+  },
+  "honest": {
+    "title": "W czym AI jest tu dobra — a w czym nie",
+    "body": "AI naprawdę dobrze radzi sobie z pustą kartką: sensowna trasa, realne tempo, krótka lista dla miasta, którego nie znasz. Znacznie słabiej wypada we wszystkim, czego nie może sprawdzić: aktualne godziny otwarcia, czy restauracja posadzi dziewięć osób, ile kosztuje prom w tym miesiącu. Potraktuj szkic jako pierwsze podejście do poprawienia, rezerwacje potwierdź sam, a grupie pozwól wyłapać to, co model pomylił."
+  },
+  "faq": {
+    "title": "Najczęstsze pytania",
+    "items": [
+      {
+        "q": "Czy planer podróży AI jest darmowy?",
+        "a": "Tak. Generowanie planów jest częścią darmowego pakietu — bez limitu na wyjazd i bez karty. Zaproszeni znajomi mogą dołączyć i edytować bez zakładania konta."
+      },
+      {
+        "q": "Czy mogę zmienić to, co proponuje AI?",
+        "a": "Tak, i tego się oczekuje. Wygenerowany plan to zwykły edytowalny plan: przestaw dni, usuń to, co nie pasuje, dodaj własne przystanki. Nic nie jest zablokowane."
+      },
+      {
+        "q": "Czy to działa dla grupy, a nie tylko dla jednej osoby?",
+        "a": "Po to powstało. Gdy szkic już istnieje, cała grupa może go edytować, uruchamiać ankiety, żeby rozstrzygnąć spory, i śledzić wspólny budżet, który wylicza, kto komu ile jest winien."
+      },
+      {
+        "q": "Czym to się różni od poproszenia ChatGPT o plan?",
+        "a": "Czat daje tekst, który potem musisz gdzieś wkleić i ręcznie skoordynować. Tutaj plan jest żywy: grupa edytuje go razem, głosuje i podpina do niego budżet — i wciąż tam jest, gdy ktoś zmieni zdanie trzy tygodnie później."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Zacznij od szkicu, nie od pustej kartki",
+    "button": "Zaplanuj wyjazd za darmo"
+  },
+  "discover": {
+    "title": "Zobacz też",
+    "friends": {
+      "title": "Wyjazd ze znajomymi",
+      "desc": "Jak zaplanować wyjazd grupowy ze znajomymi bez chaosu."
+    },
+    "comparison": {
+      "title": "Porównanie aplikacji",
+      "desc": "Jak WePlanify wypada na tle Wanderlog, TripIt i reszty."
+    },
+    "guide": {
+      "title": "Poradnik: wyjazd grupowy",
+      "desc": "Kompletny przewodnik krok po kroku po organizacji wyjazdu grupowego."
+    }
+  }
+}

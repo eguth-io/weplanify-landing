@@ -71,7 +71,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
 
     // Use case pages
-    const useCasePages = ["trip-with-friends", "bachelorette-trip", "birthday-trip", "family-trip", "road-trip", "team-building", "school-trip", "events", "oktoberfest-2026-trip-planner", "christmas-markets-2026-trip-planner", "ski-season-2027-trip-planner", "solar-eclipse-2027-trip-planner", "rugby-world-cup-2027-trip-planner", "world-cup-2026-trip-planner", "champions-league-final-2026-psg-arsenal", "hellfest-2026-trip-planner", "tomorrowland-2026-trip-planner", "solar-eclipse-2026-trip-planner", "ultra-europe-2026-trip-planner", "alternatives", "alternatives/wanderlog", "alternatives/squadtrip", "alternatives/tripit", "alternatives/cruzmi", "alternatives/best-group-trip-planner-apps", "alternatives/stippl", "alternatives/splitwise"];
+    const useCasePages = ["trip-with-friends", "ai-trip-planner", "bachelorette-trip", "birthday-trip", "family-trip", "road-trip", "team-building", "school-trip", "events", "oktoberfest-2026-trip-planner", "christmas-markets-2026-trip-planner", "ski-season-2027-trip-planner", "solar-eclipse-2027-trip-planner", "rugby-world-cup-2027-trip-planner", "world-cup-2026-trip-planner", "champions-league-final-2026-psg-arsenal", "hellfest-2026-trip-planner", "tomorrowland-2026-trip-planner", "solar-eclipse-2026-trip-planner", "ultra-europe-2026-trip-planner", "alternatives", "alternatives/wanderlog", "alternatives/squadtrip", "alternatives/tripit", "alternatives/cruzmi", "alternatives/best-group-trip-planner-apps", "alternatives/stippl", "alternatives/splitwise"];
     for (const page of useCasePages) {
       pushLocalized((locale) => `/${locale}/${page}`, {
         lastModified: new Date(),

@@ -4,6 +4,27 @@
 
 ---
 
+## 2026-08-08 — Nouvelle surface `/ai-trip-planner`, et pourquoi elle ne cannibalise rien (WP-141)
+
+**Contexte.** Le cluster « AI travel agent / AI trip planner » pèse ~33× notre head term historique `group trip planner` (Trends 12 mois : 23,2 contre 0,7) et croît de **+90 % sur l'année** pendant que le nôtre stagne. La SERP US est tenue par des startups (layla.ai, mindtrip.ai) et Reddit — pas par Booking ni TripAdvisor. Nous en sommes **absents**.
+
+**La question qui comptait : nouvelle page ou extension d'une existante ?** On sort de WP-136, où deux pages quasi jumelles se sont neutralisées ; créer une URL de plus méritait une preuve, pas une intuition.
+
+**Preuve.** GSC 90 j, filtre sur les requêtes contenant « ai trip » : **1 impression au total**. Aucune page du site n'est associée à ce cluster. Une nouvelle surface comble donc un trou réel — elle ne peut pas cannibaliser ce que nous n'avons pas. *(Détail savoureux : cette unique requête est « ai trip planner tools for group travel booking corporate offsites », position 13 — déjà l'angle groupe.)*
+
+**Décision.** Créer `/ai-trip-planner`, distincte des trois surfaces voisines par l'intention :
+- `/trip-with-friends` → « plan a trip with friends » (collaboration)
+- `/alternatives/best-group-trip-planner-apps` → « best group trip planner apps » (comparaison)
+- `/ai-trip-planner` → « ai trip planner » (**génération**)
+
+**Angle assumé.** Les concurrents génèrent un itinéraire solo ; notre différenciateur est la **décision de groupe**. La page pose la génération comme un point de départ, puis parle sondages, budget partagé et convergence. Un bloc nomme aussi explicitement **les limites de l'IA** (horaires, disponibilités, prix qu'elle ne peut pas vérifier) : c'est ce qui rend le reste crédible, et c'est très citable en AI Overview.
+
+**Vérifié avant d'écrire la promesse.** L'IA est réelle et utilisée en production : **112 utilisateurs sur 739 (15,2 %)**, 148 conversations. La landing la revendiquait déjà sur `/features/planning`.
+
+**Non fait.** Les volumes absolus restent indisponibles (Keyword Planner bloqué : compte Ads manager sans sous-compte). Les cibles chiffrées du ticket sont donc à re-dimensionner ensuite ; le classement relatif suffisait à décider, pas à prévoir.
+
+**Preuve.** Trends 12 mois (monde) ; SerpAPI `gl=us` 08/08 ; GSC `sc-domain:weplanify.com` 90 j filtré ; MCP WePlanify `ai_adoption`.
+
 ## 2026-08-08 — Suppression du suffixe de marque dans les titles + hreflang complet (WP-136, suite)
 
 **Contexte.** Deux dettes techniques mises au jour en corrigeant la cannibalisation.

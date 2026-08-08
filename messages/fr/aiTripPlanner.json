@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Planificateur de voyage IA pour groupes — Gratuit",
+    "description": "Décris le voyage, obtiens un itinéraire jour par jour en quelques secondes, puis laisse le groupe voter et l'ajuster. WePlanify, le planificateur IA pensé pour les groupes."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Planificateur de voyage IA"
+  },
+  "hero": {
+    "tag": "Planificateur de voyage IA",
+    "title": "Le planificateur IA\npensé pour les groupes",
+    "subtitle": "La plupart des IA écrivent un itinéraire pour une personne. Le tien doit survivre à six avis.",
+    "cta": "Planifier un voyage gratuitement"
+  },
+  "quickAnswer": {
+    "heading": "Réponse rapide",
+    "body": "Un planificateur de voyage IA transforme une consigne en langage courant — où, quand, combien de temps, ce que le groupe aime — en un itinéraire jour par jour en quelques secondes : tu pars d'un brouillon plutôt que d'une page blanche. WePlanify fait ça, puis confie le brouillon à ton groupe : chacun peut le modifier, voter sur ce qu'on garde et suivre un budget commun. C'est gratuit, et les amis invités n'ont pas besoin de compte."
+  },
+  "how": {
+    "title": "Comment ça marche",
+    "steps": [
+      {
+        "title": "Décris le voyage en une phrase",
+        "body": "Où vous allez, à peu près quand, et ce qui plaît au groupe. Aucun formulaire à remplir d'abord."
+      },
+      {
+        "title": "Reçois un brouillon jour par jour",
+        "body": "L'IA propose un itinéraire avec des activités et un rythme réaliste — quelque chose de concret sur quoi réagir, et c'est tout l'intérêt."
+      },
+      {
+        "title": "Passe-le au groupe",
+        "body": "Chacun modifie, commente et vote. Le plan converge au lieu de dormir dans les notes d'une seule personne."
+      }
+    ]
+  },
+  "groups": {
+    "title": "Pourquoi un groupe a besoin d'une IA différente",
+    "body": "Une IA solo optimise le goût d'une seule personne. Un groupe doit en concilier six, plus un budget que personne n'ose aborder et trois personnes qui répondent en retard. C'est un problème de coordination, pas de génération. WePlanify traite l'itinéraire généré comme un point de départ, puis donne au groupe de quoi trancher : des sondages pour décider, un budget commun qui suit qui a payé quoi, et un plan que tout le monde voit évoluer en direct."
+  },
+  "honest": {
+    "title": "Ce que l'IA fait bien ici — et ce qu'elle fait mal",
+    "body": "L'IA est vraiment bonne face à la page blanche : un parcours plausible, un rythme tenable, une short-list pour une ville que tu ne connais pas. Elle est beaucoup plus faible sur tout ce qu'elle ne peut pas vérifier — horaires du moment, capacité d'un restaurant à asseoir neuf personnes, prix du ferry ce mois-ci. Prends le brouillon comme une première passe à corriger, confirme les réservations toi-même, et laisse le groupe rattraper ce que le modèle a raté."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Le planificateur de voyage IA est-il gratuit ?",
+        "a": "Oui. La génération d'itinéraires fait partie de l'offre gratuite — sans limite par voyage, sans carte bancaire. Les amis invités peuvent rejoindre et modifier sans créer de compte."
+      },
+      {
+        "q": "Puis-je modifier ce que l'IA propose ?",
+        "a": "Oui, et c'est même attendu. L'itinéraire généré est un plan modifiable comme un autre : déplace les jours, supprime ce qui ne colle pas, ajoute tes propres étapes. Rien n'est verrouillé."
+      },
+      {
+        "q": "Est-ce que ça marche pour un groupe, pas juste un voyageur ?",
+        "a": "C'est fait pour ça. Une fois le brouillon créé, tout le groupe peut le modifier, lancer des sondages pour trancher les désaccords, et suivre un budget commun qui calcule qui doit quoi à qui."
+      },
+      {
+        "q": "En quoi c'est différent de demander un itinéraire à ChatGPT ?",
+        "a": "Un chat te donne du texte qu'il faut ensuite recopier quelque part et coordonner à la main. Ici l'itinéraire est un plan vivant que ton groupe modifie ensemble, sur lequel il vote et auquel il rattache un budget — et il est toujours là quand quelqu'un change d'avis trois semaines plus tard."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pars d'un brouillon, pas d'une page blanche",
+    "button": "Planifier un voyage gratuitement"
+  },
+  "discover": {
+    "title": "À découvrir",
+    "friends": {
+      "title": "Voyage entre amis",
+      "desc": "Organiser un voyage de groupe entre amis sans le chaos."
+    },
+    "comparison": {
+      "title": "Comparatif des apps",
+      "desc": "Comment WePlanify se compare à Wanderlog, TripIt et les autres."
+    },
+    "guide": {
+      "title": "Guide : organiser un voyage de groupe",
+      "desc": "Le guide complet, étape par étape, pour organiser un voyage de groupe."
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "KI-Reiseplaner für Gruppen — kostenlos",
+    "description": "Beschreib die Reise, bekomm in Sekunden einen Tag-für-Tag-Plan, und lass die Gruppe abstimmen und nachjustieren. WePlanify, der KI-Reiseplaner für Gruppen."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "KI-Reiseplaner"
+  },
+  "hero": {
+    "tag": "KI-Reiseplaner",
+    "title": "Der KI-Reiseplaner\nfür Gruppen",
+    "subtitle": "Die meisten KIs schreiben einen Reiseplan für eine Person. Deiner muss sechs Meinungen überstehen.",
+    "cta": "Kostenlos eine Reise planen"
+  },
+  "quickAnswer": {
+    "heading": "Kurze Antwort",
+    "body": "Ein KI-Reiseplaner macht aus einer Beschreibung in normaler Sprache — wohin, wann, wie lange, worauf die Gruppe steht — in Sekunden einen Tag-für-Tag-Plan: Du startest mit einem Entwurf statt mit einem leeren Blatt. WePlanify macht genau das und übergibt den Entwurf dann deiner Gruppe: alle können ihn bearbeiten, abstimmen, was bleibt, und ein gemeinsames Budget verfolgen. Es ist kostenlos, und eingeladene Freunde brauchen kein Konto."
+  },
+  "how": {
+    "title": "So funktioniert es",
+    "steps": [
+      {
+        "title": "Beschreib die Reise in einem Satz",
+        "body": "Wohin es geht, ungefähr wann, und worauf die Gruppe Lust hat. Kein Formular vorab."
+      },
+      {
+        "title": "Bekomm einen Tag-für-Tag-Entwurf",
+        "body": "Die KI schlägt einen Plan mit Aktivitäten und realistischem Tempo vor — etwas Konkretes, an dem man sich reiben kann, und genau darum geht es."
+      },
+      {
+        "title": "Gib ihn an die Gruppe",
+        "body": "Alle bearbeiten, kommentieren und stimmen ab. Der Plan wächst zusammen, statt in den Notizen einer einzigen Person zu versauern."
+      }
+    ]
+  },
+  "groups": {
+    "title": "Warum eine Gruppe eine andere KI braucht",
+    "body": "Eine Solo-KI optimiert den Geschmack einer Person. Eine Gruppe muss sechs davon zusammenbringen, dazu ein Budget, das niemand ansprechen will, und drei Leute, die spät antworten. Das ist ein Koordinationsproblem, kein Generierungsproblem. WePlanify behandelt den generierten Plan als Ausgangspunkt und gibt der Gruppe dann das Werkzeug, ihn zu klären: Abstimmungen zum Entscheiden, ein gemeinsames Budget, das festhält, wer was bezahlt hat, und einen Plan, den alle in Echtzeit wachsen sehen."
+  },
+  "honest": {
+    "title": "Worin KI hier gut ist — und worin nicht",
+    "body": "KI ist wirklich gut gegen das leere Blatt: eine plausible Route, ein vernünftiges Tempo, eine Auswahl für eine Stadt, die du nicht kennst. Deutlich schwächer ist sie bei allem, was sie nicht prüfen kann — aktuelle Öffnungszeiten, ob ein Restaurant neun Leute setzt, was die Fähre diesen Monat kostet. Nimm den Entwurf als ersten Aufschlag zum Korrigieren, bestätige Buchungen selbst, und lass die Gruppe finden, was das Modell falsch hatte."
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Ist der KI-Reiseplaner kostenlos?",
+        "a": "Ja. Das Erzeugen von Reiseplänen gehört zum kostenlosen Angebot — kein Limit pro Reise, keine Kreditkarte. Eingeladene Freunde können ohne Konto mitmachen und bearbeiten."
+      },
+      {
+        "q": "Kann ich ändern, was die KI vorschlägt?",
+        "a": "Ja, und das ist auch so gedacht. Der erzeugte Plan ist ein ganz normaler bearbeitbarer Reiseplan: Tage verschieben, Unpassendes löschen, eigene Stopps ergänzen. Nichts ist festgezurrt."
+      },
+      {
+        "q": "Funktioniert das für eine Gruppe, nicht nur für eine Person?",
+        "a": "Dafür ist es gebaut. Sobald der Entwurf steht, kann die ganze Gruppe ihn bearbeiten, per Abstimmung Streitpunkte klären und einem gemeinsamen Budget folgen, das ausrechnet, wer wem was schuldet."
+      },
+      {
+        "q": "Was ist der Unterschied dazu, ChatGPT nach einem Reiseplan zu fragen?",
+        "a": "Ein Chat liefert Text, den du danach irgendwohin kopierst und von Hand koordinierst. Hier ist der Reiseplan ein lebendiges Dokument, das deine Gruppe gemeinsam bearbeitet, über das sie abstimmt und an das sie ein Budget hängt — und es ist noch da, wenn jemand drei Wochen später seine Meinung ändert."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Starte mit einem Entwurf, nicht mit einem leeren Blatt",
+    "button": "Kostenlos eine Reise planen"
+  },
+  "discover": {
+    "title": "Mehr entdecken",
+    "friends": {
+      "title": "Reise mit Freunden",
+      "desc": "Wie man eine Gruppenreise mit Freunden ohne Chaos plant."
+    },
+    "comparison": {
+      "title": "App-Vergleich",
+      "desc": "Wie WePlanify im Vergleich zu Wanderlog, TripIt und dem Rest abschneidet."
+    },
+    "guide": {
+      "title": "Guide: Gruppenreise planen",
+      "desc": "Der komplette Schritt-für-Schritt-Guide zur Planung einer Gruppenreise."
+    }
+  }
+}

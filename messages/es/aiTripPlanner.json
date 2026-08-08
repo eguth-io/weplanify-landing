@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "Planificador de viajes con IA para grupos — Gratis",
+    "description": "Describe el viaje, obtén un itinerario día a día en segundos y deja que el grupo vote y lo ajuste. WePlanify, el planificador con IA pensado para grupos."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Planificador de viajes con IA"
+  },
+  "hero": {
+    "tag": "Planificador de viajes con IA",
+    "title": "El planificador con IA\npensado para grupos",
+    "subtitle": "La mayoría de las IA escriben un itinerario para una persona. El tuyo tiene que sobrevivir a seis opiniones.",
+    "cta": "Planificar un viaje gratis"
+  },
+  "quickAnswer": {
+    "heading": "Respuesta rápida",
+    "body": "Un planificador de viajes con IA convierte una indicación en lenguaje normal — dónde, cuándo, cuánto tiempo, qué le gusta al grupo — en un itinerario día a día en segundos: empiezas desde un borrador y no desde una hoja en blanco. WePlanify hace eso y luego entrega el borrador a tu grupo: todos pueden editarlo, votar qué se queda y seguir un presupuesto compartido. Es gratis, y los amigos invitados no necesitan cuenta."
+  },
+  "how": {
+    "title": "Cómo funciona",
+    "steps": [
+      {
+        "title": "Describe el viaje en una frase",
+        "body": "Adónde vais, más o menos cuándo y qué le gusta al grupo. Sin formularios que rellenar primero."
+      },
+      {
+        "title": "Recibe un borrador día a día",
+        "body": "La IA propone un itinerario con actividades y un ritmo realista: algo concreto sobre lo que discutir, que es justo de lo que se trata."
+      },
+      {
+        "title": "Pásaselo al grupo",
+        "body": "Todos editan, comentan y votan. El plan converge en vez de quedarse en las notas de una sola persona."
+      }
+    ]
+  },
+  "groups": {
+    "title": "Por qué un grupo necesita otra IA",
+    "body": "Una IA en solitario optimiza el gusto de una persona. Un grupo tiene que conciliar seis, más un presupuesto que nadie quiere sacar y tres personas que responden tarde. Es un problema de coordinación, no de generación. WePlanify trata el itinerario generado como un punto de partida y luego da al grupo con qué cerrarlo: encuestas para decidir, un presupuesto compartido que registra quién pagó qué y un plan que todos ven cambiar en directo."
+  },
+  "honest": {
+    "title": "En qué es buena la IA aquí — y en qué no",
+    "body": "La IA es realmente buena ante la hoja en blanco: una ruta plausible, un ritmo sensato, una lista corta para una ciudad que no conoces. Es mucho más floja en todo lo que no puede comprobar: horarios actuales, si un restaurante sienta a nueve, cuánto cuesta el ferry este mes. Toma el borrador como una primera pasada que corregir, confirma tú las reservas y deja que el grupo detecte lo que el modelo falló."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿El planificador de viajes con IA es gratis?",
+        "a": "Sí. Generar itinerarios forma parte del plan gratuito: sin límite por viaje y sin tarjeta. Los amigos invitados pueden unirse y editar sin crear cuenta."
+      },
+      {
+        "q": "¿Puedo cambiar lo que propone la IA?",
+        "a": "Sí, y se espera que lo hagas. El itinerario generado es un plan editable normal: mueve días, borra lo que no encaja, añade tus propias paradas. Nada queda bloqueado."
+      },
+      {
+        "q": "¿Sirve para un grupo y no solo para un viajero?",
+        "a": "Está hecho para eso. Una vez existe el borrador, todo el grupo puede editarlo, lanzar encuestas para zanjar las discusiones y seguir un presupuesto compartido que calcula quién debe a quién."
+      },
+      {
+        "q": "¿En qué se diferencia de pedirle un itinerario a ChatGPT?",
+        "a": "Un chat te da texto que luego tienes que pegar en algún sitio y coordinar a mano. Aquí el itinerario es un plan vivo que tu grupo edita junto, vota y al que añade un presupuesto — y sigue ahí cuando alguien cambia de idea tres semanas después."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Empieza con un borrador, no con una hoja en blanco",
+    "button": "Planificar un viaje gratis"
+  },
+  "discover": {
+    "title": "Descubre más",
+    "friends": {
+      "title": "Viaje con amigos",
+      "desc": "Cómo organizar un viaje en grupo con amigos sin el caos."
+    },
+    "comparison": {
+      "title": "Comparativa de apps",
+      "desc": "Cómo se compara WePlanify con Wanderlog, TripIt y el resto."
+    },
+    "guide": {
+      "title": "Guía: organizar un viaje en grupo",
+      "desc": "La guía completa, paso a paso, para organizar un viaje en grupo."
+    }
+  }
+}

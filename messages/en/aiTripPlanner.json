@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "title": "AI Trip Planner for Groups — Free",
+    "description": "Describe the trip, get a day-by-day itinerary in seconds, then let the group vote and adjust it together. WePlanify is the free AI trip planner built for groups."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "AI Trip Planner"
+  },
+  "hero": {
+    "tag": "AI Trip Planner",
+    "title": "The AI trip planner\nbuilt for groups",
+    "subtitle": "Most AI planners write an itinerary for one person. Yours has to survive six opinions.",
+    "cta": "Plan a trip for free"
+  },
+  "quickAnswer": {
+    "heading": "Quick answer",
+    "body": "An AI trip planner turns a plain-language brief — where, when, how long, what the group likes — into a day-by-day itinerary in seconds, so you start from a draft instead of a blank page. WePlanify does that and then hands the draft to your group: everyone can edit it, vote on what stays, and follow a shared budget. It is free, and invited friends don't need an account."
+  },
+  "how": {
+    "title": "How it works",
+    "steps": [
+      {
+        "title": "Describe the trip in a sentence",
+        "body": "Where you're going, roughly when, and what the group is into. No form to fill in first."
+      },
+      {
+        "title": "Get a day-by-day draft",
+        "body": "The AI proposes an itinerary with activities and a realistic pace — something concrete to react to, which is the whole point."
+      },
+      {
+        "title": "Hand it to the group",
+        "body": "Everyone edits, comments and votes. The plan converges instead of sitting in one person's notes app."
+      }
+    ]
+  },
+  "groups": {
+    "title": "Why a group needs a different AI planner",
+    "body": "A solo AI planner optimises one person's taste. A group has to reconcile six of them, plus a budget nobody wants to bring up and three people who reply late. That's a coordination problem, not a generation problem. WePlanify treats the generated itinerary as a starting draft, then gives the group what it takes to settle it: polls to decide, a shared budget that tracks who paid what, and a plan everyone watches change in real time."
+  },
+  "honest": {
+    "title": "What AI is good at here — and what it isn't",
+    "body": "AI is genuinely good at the blank page: a plausible route, a sensible pace, a shortlist for a city you've never visited. It's much weaker on anything it can't check — current opening hours, whether a restaurant seats nine, what the ferry costs this month. Treat the draft as a first pass to react to, confirm the bookings yourself, and let the group catch what the model got wrong."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Is the AI trip planner free?",
+        "a": "Yes. Generating itineraries is part of the free plan — no per-trip limit, no credit card. Invited friends can join and edit without creating an account."
+      },
+      {
+        "q": "Can I change what the AI suggests?",
+        "a": "Yes, and you're expected to. The generated itinerary is a normal editable plan: move days around, delete what doesn't fit, add your own stops. Nothing is locked."
+      },
+      {
+        "q": "Does it work for a group, not just one traveller?",
+        "a": "That's what it's built for. Once the draft exists, the whole group can edit it, run polls to settle the disagreements, and follow a shared budget that works out who owes whom."
+      },
+      {
+        "q": "How is this different from asking ChatGPT for an itinerary?",
+        "a": "A chat gives you text you then have to paste somewhere and coordinate by hand. Here the itinerary is a live plan your group edits together, votes on and attaches a budget to — and it's still there when someone changes their mind three weeks later."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start from a draft, not a blank page",
+    "button": "Plan a trip for free"
+  },
+  "discover": {
+    "title": "Discover More",
+    "friends": {
+      "title": "Trip with Friends",
+      "desc": "How to plan a group trip with friends without the chaos."
+    },
+    "comparison": {
+      "title": "App Comparison",
+      "desc": "How WePlanify compares to Wanderlog, TripIt and the rest."
+    },
+    "guide": {
+      "title": "Guide: Plan a Group Trip",
+      "desc": "The complete step-by-step guide to planning a group trip."
+    }
+  }
+}
