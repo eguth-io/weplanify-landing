@@ -45,5 +45,14 @@
     "bestTimeQuestion": "Qual è il periodo migliore per visitare {city}?",
     "gettingAroundQuestion": "Come muoversi a {city}?"
   },
-  "metaTitle": "Cosa vedere a {city}"
+  "metaTitle": "Cosa vedere a {city}",
+  "esim": {
+    "badge": "Resta connesso",
+    "heading": "Prendi una eSIM prima di atterrare",
+    "headingCountry": "Prendi una eSIM per {country}",
+    "body": "Niente bolletta di roaming, niente code a un chiosco. Installa il tuo piano dati prima di partire e {city} ha campo appena disattivi la modalità aereo.",
+    "cta": "Vedi i piani eSIM",
+    "ctaCountry": "Vedi le eSIM per {country}",
+    "disclosure": "Link di affiliazione — riceviamo una commissione se acquisti, senza costi aggiuntivi per te."
+  }
 }

@@ -45,5 +45,14 @@
     "bestTimeQuestion": "Kiedy najlepiej odwiedzić {city}?",
     "gettingAroundQuestion": "Jak poruszać się po {city}?"
   },
-  "metaTitle": "{city} — co zobaczyć"
+  "metaTitle": "{city} — co zobaczyć",
+  "esim": {
+    "badge": "Bądź online",
+    "heading": "Kup eSIM, zanim wylądujesz",
+    "headingCountry": "Kup eSIM na {country}",
+    "body": "Żadnego rachunku za roaming ani kolejki w kiosku. Zainstaluj pakiet danych przed wyjazdem, a {city} ma zasięg, gdy tylko wyłączysz tryb samolotowy.",
+    "cta": "Zobacz pakiety eSIM",
+    "ctaCountry": "Zobacz eSIM na {country}",
+    "disclosure": "Link afiliacyjny — dostajemy prowizję, jeśli kupisz, bez dodatkowych kosztów dla ciebie."
+  }
 }
