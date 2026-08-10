@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "title": "Planer podróży AI dla grup — za darmo",
+    "description": "Opisz wyjazd, dostań plan dzień po dniu w kilka sekund, a potem pozwól grupie zagłosować i go poprawić. WePlanify — planer AI stworzony dla grup."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Planer podróży AI"
+  },
+  "hero": {
+    "tag": "Planer podróży AI",
+    "title": "Planer AI\nstworzony dla grup",
+    "subtitle": "Większość AI pisze plan dla jednej osoby. Twój musi przetrwać sześć opinii.",
+    "cta": "Zaplanuj wyjazd za darmo"
+  },
+  "quickAnswer": {
+    "heading": "Szybka odpowiedź",
+    "body": "Planer podróży AI zamienia opis zwykłym językiem — dokąd, kiedy, na jak długo, co lubi grupa — w plan dzień po dniu w kilka sekund: zaczynasz od szkicu, a nie od pustej kartki. WePlanify robi dokładnie to, a potem oddaje szkic Twojej grupie: każdy może go edytować, zagłosować, co zostaje, i śledzić wspólny budżet. Jest za darmo, a zaproszeni znajomi nie potrzebują konta."
+  },
+  "how": {
+    "title": "Jak to działa",
+    "steps": [
+      {
+        "title": "Opisz wyjazd jednym zdaniem",
+        "body": "Dokąd jedziecie, mniej więcej kiedy i co lubi grupa. Bez wypełniania formularza na start."
+      },
+      {
+        "title": "Dostań szkic dzień po dniu",
+        "body": "AI proponuje plan z atrakcjami i realnym tempem — coś konkretnego, o czym można się spierać, i o to właśnie chodzi."
+      },
+      {
+        "title": "Przekaż go grupie",
+        "body": "Każdy edytuje, komentuje i głosuje. Plan się dogaduje, zamiast leżeć w notatkach jednej osoby."
+      }
+    ]
+  },
+  "groups": {
+    "title": "Dlaczego grupa potrzebuje innej AI",
+    "body": "AI dla jednej osoby optymalizuje gust tej osoby. Grupa musi pogodzić sześć, plus budżet, którego nikt nie chce poruszać, i trzy osoby odpisujące z opóźnieniem. To problem koordynacji, nie generowania. WePlanify traktuje wygenerowany plan jako punkt wyjścia, a potem daje grupie narzędzia, by go domknąć: ankiety do decydowania, wspólny budżet śledzący, kto za co zapłacił, i plan, który wszyscy widzą na żywo."
+  },
+  "handover": {
+    "title": "Gdzie kończy się szkic, a zaczyna grupa",
+    "body": "Wygenerowany plan jest z założenia punktem wyjścia, a nie rezerwacją. AI jest najmocniejsza wobec pustej kartki: sensowna trasa, realne tempo, krótka lista dla miasta, którego nikt w grupie nie zna. To, co zmienia się z tygodnia na tydzień — dzisiejsze godziny otwarcia, czy restauracja posadzi dziewięć osób, ile kosztuje prom właśnie teraz — najlepiej rozstrzygnie Twoja grupa. WePlanify zostawia to jej, zamiast zgadywać: plan pozostaje edytowalny, każdy widzi każdą zmianę, a decyzje zapadają tam, gdzie powinny."
+  },
+  "faq": {
+    "title": "Najczęstsze pytania",
+    "items": [
+      {
+        "q": "Czy planer podróży AI jest darmowy?",
+        "a": "Tak. Generowanie planów jest częścią darmowego pakietu — bez limitu na wyjazd i bez karty. Zaproszeni znajomi mogą dołączyć i edytować bez zakładania konta."
+      },
+      {
+        "q": "Czy mogę zmienić to, co proponuje AI?",
+        "a": "Tak, i tego się oczekuje. Wygenerowany plan to zwykły edytowalny plan: przestaw dni, usuń to, co nie pasuje, dodaj własne przystanki. Nic nie jest zablokowane."
+      },
+      {
+        "q": "Czy to działa dla grupy, a nie tylko dla jednej osoby?",
+        "a": "Po to powstało. Gdy szkic już istnieje, cała grupa może go edytować, uruchamiać ankiety, żeby rozstrzygnąć spory, i śledzić wspólny budżet, który wylicza, kto komu ile jest winien."
+      },
+      {
+        "q": "Czym to się różni od poproszenia ChatGPT o plan?",
+        "a": "Czat daje tekst, który potem musisz gdzieś wkleić i ręcznie skoordynować. Tutaj plan jest żywy: grupa edytuje go razem, głosuje i podpina do niego budżet — i wciąż tam jest, gdy ktoś zmieni zdanie trzy tygodnie później."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Zacznij od szkicu, nie od pustej kartki",
+    "button": "Zaplanuj wyjazd za darmo"
+  },
+  "discover": {
+    "title": "Zobacz też",
+    "friends": {
+      "title": "Wyjazd ze znajomymi",
+      "desc": "Jak zaplanować wyjazd grupowy ze znajomymi bez chaosu."
+    },
+    "comparison": {
+      "title": "Porównanie aplikacji",
+      "desc": "Jak WePlanify wypada na tle Wanderlog, TripIt i reszty."
+    },
+    "guide": {
+      "title": "Poradnik: wyjazd grupowy",
+      "desc": "Kompletny przewodnik krok po kroku po organizacji wyjazdu grupowego."
+    }
+  },
+  "preview": {
+    "promptLabel": "Co wpisujesz",
+    "prompt": "„Lizbona w 6 osób, 3 dni w maju — dobre jedzenie, nic zbyt turystycznego.”",
+    "label": "Przykładowy plan",
+    "trip": {
+      "title": "Lizbona",
+      "meta": "3 dni · 6 podróżnych"
+    },
+    "days": [
+      {
+        "label": "Dzień 1",
+        "title": "Alfama i rzeka",
+        "items": [
+          {
+            "time": "09:30",
+            "title": "Miradouro de Santa Luzia"
+          },
+          {
+            "time": "12:30",
+            "title": "Obiad w Time Out Market"
+          },
+          {
+            "time": "20:00",
+            "title": "Fado w A Baiuca"
+          }
+        ]
+      },
+      {
+        "label": "Dzień 2",
+        "title": "Belém i LX Factory",
+        "items": [
+          {
+            "time": "10:00",
+            "title": "Mosteiro dos Jerónimos"
+          },
+          {
+            "time": "15:00",
+            "title": "LX Factory"
+          },
+          {
+            "time": "19:30",
+            "title": "Zachód słońca przy Ponte 25 de Abril"
+          }
+        ]
+      },
+      {
+        "label": "Dzień 3",
+        "title": "Sintra",
+        "items": [
+          {
+            "time": "08:45",
+            "title": "Pociąg z Rossio"
+          },
+          {
+            "time": "10:30",
+            "title": "Quinta da Regaleira"
+          },
+          {
+            "time": "16:00",
+            "title": "Cabo da Roca"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "votes": "4 za",
+      "vote": "Głosuj",
+      "edit": "Edytuj"
+    },
+    "caption": "Przykład tego, co zwraca planer. Każdy plan pozostaje edytowalny dla całej grupy."
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "title": "AI Trip Planner for Groups — Free",
+    "description": "Describe the trip, get a day-by-day itinerary in seconds, then let the group vote and adjust it together. WePlanify is the free AI trip planner built for groups."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "AI Trip Planner"
+  },
+  "hero": {
+    "tag": "AI Trip Planner",
+    "title": "The AI trip planner\nbuilt for groups",
+    "subtitle": "Most AI planners write an itinerary for one person. Yours has to survive six opinions.",
+    "cta": "Plan a trip for free"
+  },
+  "quickAnswer": {
+    "heading": "Quick answer",
+    "body": "An AI trip planner turns a plain-language brief — where, when, how long, what the group likes — into a day-by-day itinerary in seconds, so you start from a draft instead of a blank page. WePlanify does that and then hands the draft to your group: everyone can edit it, vote on what stays, and follow a shared budget. It is free, and invited friends don't need an account."
+  },
+  "how": {
+    "title": "How it works",
+    "steps": [
+      {
+        "title": "Describe the trip in a sentence",
+        "body": "Where you're going, roughly when, and what the group is into. No form to fill in first."
+      },
+      {
+        "title": "Get a day-by-day draft",
+        "body": "The AI proposes an itinerary with activities and a realistic pace — something concrete to react to, which is the whole point."
+      },
+      {
+        "title": "Hand it to the group",
+        "body": "Everyone edits, comments and votes. The plan converges instead of sitting in one person's notes app."
+      }
+    ]
+  },
+  "groups": {
+    "title": "Why a group needs a different AI planner",
+    "body": "A solo AI planner optimises one person's taste. A group has to reconcile six of them, plus a budget nobody wants to bring up and three people who reply late. That's a coordination problem, not a generation problem. WePlanify treats the generated itinerary as a starting draft, then gives the group what it takes to settle it: polls to decide, a shared budget that tracks who paid what, and a plan everyone watches change in real time."
+  },
+  "handover": {
+    "title": "Where the draft stops and the group takes over",
+    "body": "The generated plan is a starting point by design, not a booking. AI is at its strongest against the blank page: a plausible route, a sensible pace, a shortlist for a city nobody in the group knows. The things that move week to week — today's opening hours, whether a restaurant seats nine, what the ferry costs right now — are exactly what your group is best placed to settle. So WePlanify hands those over rather than guessing: the plan stays editable, everyone sees each change, and the decisions land where they belong."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "Is the AI trip planner free?",
+        "a": "Yes. Generating itineraries is part of the free plan — no per-trip limit, no credit card. Invited friends can join and edit without creating an account."
+      },
+      {
+        "q": "Can I change what the AI suggests?",
+        "a": "Yes, and you're expected to. The generated itinerary is a normal editable plan: move days around, delete what doesn't fit, add your own stops. Nothing is locked."
+      },
+      {
+        "q": "Does it work for a group, not just one traveller?",
+        "a": "That's what it's built for. Once the draft exists, the whole group can edit it, run polls to settle the disagreements, and follow a shared budget that works out who owes whom."
+      },
+      {
+        "q": "How is this different from asking ChatGPT for an itinerary?",
+        "a": "A chat gives you text you then have to paste somewhere and coordinate by hand. Here the itinerary is a live plan your group edits together, votes on and attaches a budget to — and it's still there when someone changes their mind three weeks later."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start from a draft, not a blank page",
+    "button": "Plan a trip for free"
+  },
+  "discover": {
+    "title": "Discover More",
+    "friends": {
+      "title": "Trip with Friends",
+      "desc": "How to plan a group trip with friends without the chaos."
+    },
+    "comparison": {
+      "title": "App Comparison",
+      "desc": "How WePlanify compares to Wanderlog, TripIt and the rest."
+    },
+    "guide": {
+      "title": "Guide: Plan a Group Trip",
+      "desc": "The complete step-by-step guide to planning a group trip."
+    }
+  },
+  "preview": {
+    "promptLabel": "What you type",
+    "prompt": "“Lisbon with 6 friends, 3 days in May — good food, nothing too touristy.”",
+    "label": "Example itinerary",
+    "trip": {
+      "title": "Lisbon",
+      "meta": "3 days · 6 travellers"
+    },
+    "days": [
+      {
+        "label": "Day 1",
+        "title": "Alfama & the river",
+        "items": [
+          {
+            "time": "09:30",
+            "title": "Miradouro de Santa Luzia"
+          },
+          {
+            "time": "12:30",
+            "title": "Lunch at Time Out Market"
+          },
+          {
+            "time": "20:00",
+            "title": "Fado at A Baiuca"
+          }
+        ]
+      },
+      {
+        "label": "Day 2",
+        "title": "Belém & LX Factory",
+        "items": [
+          {
+            "time": "10:00",
+            "title": "Mosteiro dos Jerónimos"
+          },
+          {
+            "time": "15:00",
+            "title": "LX Factory"
+          },
+          {
+            "time": "19:30",
+            "title": "Sunset at Ponte 25 de Abril"
+          }
+        ]
+      },
+      {
+        "label": "Day 3",
+        "title": "Sintra",
+        "items": [
+          {
+            "time": "08:45",
+            "title": "Train from Rossio"
+          },
+          {
+            "time": "10:30",
+            "title": "Quinta da Regaleira"
+          },
+          {
+            "time": "16:00",
+            "title": "Cabo da Roca"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "votes": "4 in favour",
+      "vote": "Vote",
+      "edit": "Edit"
+    },
+    "caption": "An example of what the planner returns. Every plan stays editable by the whole group."
+  }
+}

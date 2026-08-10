@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "title": "Planificateur de voyage IA pour groupes — Gratuit",
+    "description": "Décris le voyage, obtiens un itinéraire jour par jour en quelques secondes, puis laisse le groupe voter et l'ajuster. WePlanify, le planificateur IA pensé pour les groupes."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Planificateur de voyage IA"
+  },
+  "hero": {
+    "tag": "Planificateur de voyage IA",
+    "title": "Le planificateur IA\npensé pour les groupes",
+    "subtitle": "La plupart des IA écrivent un itinéraire pour une personne. Le tien doit survivre à six avis.",
+    "cta": "Planifier un voyage gratuitement"
+  },
+  "quickAnswer": {
+    "heading": "Réponse rapide",
+    "body": "Un planificateur de voyage IA transforme une consigne en langage courant — où, quand, combien de temps, ce que le groupe aime — en un itinéraire jour par jour en quelques secondes : tu pars d'un brouillon plutôt que d'une page blanche. WePlanify fait ça, puis confie le brouillon à ton groupe : chacun peut le modifier, voter sur ce qu'on garde et suivre un budget commun. C'est gratuit, et les amis invités n'ont pas besoin de compte."
+  },
+  "how": {
+    "title": "Comment ça marche",
+    "steps": [
+      {
+        "title": "Décris le voyage en une phrase",
+        "body": "Où vous allez, à peu près quand, et ce qui plaît au groupe. Aucun formulaire à remplir d'abord."
+      },
+      {
+        "title": "Reçois un brouillon jour par jour",
+        "body": "L'IA propose un itinéraire avec des activités et un rythme réaliste — quelque chose de concret sur quoi réagir, et c'est tout l'intérêt."
+      },
+      {
+        "title": "Passe-le au groupe",
+        "body": "Chacun modifie, commente et vote. Le plan converge au lieu de dormir dans les notes d'une seule personne."
+      }
+    ]
+  },
+  "groups": {
+    "title": "Pourquoi un groupe a besoin d'une IA différente",
+    "body": "Une IA solo optimise le goût d'une seule personne. Un groupe doit en concilier six, plus un budget que personne n'ose aborder et trois personnes qui répondent en retard. C'est un problème de coordination, pas de génération. WePlanify traite l'itinéraire généré comme un point de départ, puis donne au groupe de quoi trancher : des sondages pour décider, un budget commun qui suit qui a payé quoi, et un plan que tout le monde voit évoluer en direct."
+  },
+  "handover": {
+    "title": "Où s'arrête le brouillon, où le groupe prend le relais",
+    "body": "Le plan généré est un point de départ par construction, pas une réservation. L'IA est à son meilleur face à la page blanche : un parcours plausible, un rythme tenable, une short-list pour une ville que personne du groupe ne connaît. Ce qui bouge d'une semaine à l'autre — les horaires du jour, la capacité d'un restaurant à asseoir neuf personnes, le prix du ferry en ce moment — c'est justement ce que ton groupe est le mieux placé pour trancher. WePlanify le lui laisse plutôt que de deviner : le plan reste modifiable, chacun voit chaque changement, et les décisions se prennent là où il faut."
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Le planificateur de voyage IA est-il gratuit ?",
+        "a": "Oui. La génération d'itinéraires fait partie de l'offre gratuite — sans limite par voyage, sans carte bancaire. Les amis invités peuvent rejoindre et modifier sans créer de compte."
+      },
+      {
+        "q": "Puis-je modifier ce que l'IA propose ?",
+        "a": "Oui, et c'est même attendu. L'itinéraire généré est un plan modifiable comme un autre : déplace les jours, supprime ce qui ne colle pas, ajoute tes propres étapes. Rien n'est verrouillé."
+      },
+      {
+        "q": "Est-ce que ça marche pour un groupe, pas juste un voyageur ?",
+        "a": "C'est fait pour ça. Une fois le brouillon créé, tout le groupe peut le modifier, lancer des sondages pour trancher les désaccords, et suivre un budget commun qui calcule qui doit quoi à qui."
+      },
+      {
+        "q": "En quoi c'est différent de demander un itinéraire à ChatGPT ?",
+        "a": "Un chat te donne du texte qu'il faut ensuite recopier quelque part et coordonner à la main. Ici l'itinéraire est un plan vivant que ton groupe modifie ensemble, sur lequel il vote et auquel il rattache un budget — et il est toujours là quand quelqu'un change d'avis trois semaines plus tard."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Pars d'un brouillon, pas d'une page blanche",
+    "button": "Planifier un voyage gratuitement"
+  },
+  "discover": {
+    "title": "À découvrir",
+    "friends": {
+      "title": "Voyage entre amis",
+      "desc": "Organiser un voyage de groupe entre amis sans le chaos."
+    },
+    "comparison": {
+      "title": "Comparatif des apps",
+      "desc": "Comment WePlanify se compare à Wanderlog, TripIt et les autres."
+    },
+    "guide": {
+      "title": "Guide : organiser un voyage de groupe",
+      "desc": "Le guide complet, étape par étape, pour organiser un voyage de groupe."
+    }
+  },
+  "preview": {
+    "promptLabel": "Ce que tu écris",
+    "prompt": "« Lisbonne à 6, 3 jours en mai — bien manger, rien de trop touristique. »",
+    "label": "Exemple d'itinéraire",
+    "trip": {
+      "title": "Lisbonne",
+      "meta": "3 jours · 6 voyageurs"
+    },
+    "days": [
+      {
+        "label": "Jour 1",
+        "title": "Alfama et le fleuve",
+        "items": [
+          {
+            "time": "09:30",
+            "title": "Miradouro de Santa Luzia"
+          },
+          {
+            "time": "12:30",
+            "title": "Déjeuner au Time Out Market"
+          },
+          {
+            "time": "20:00",
+            "title": "Fado à A Baiuca"
+          }
+        ]
+      },
+      {
+        "label": "Jour 2",
+        "title": "Belém et LX Factory",
+        "items": [
+          {
+            "time": "10:00",
+            "title": "Mosteiro dos Jerónimos"
+          },
+          {
+            "time": "15:00",
+            "title": "LX Factory"
+          },
+          {
+            "time": "19:30",
+            "title": "Coucher de soleil sur le Ponte 25 de Abril"
+          }
+        ]
+      },
+      {
+        "label": "Jour 3",
+        "title": "Sintra",
+        "items": [
+          {
+            "time": "08:45",
+            "title": "Train depuis Rossio"
+          },
+          {
+            "time": "10:30",
+            "title": "Quinta da Regaleira"
+          },
+          {
+            "time": "16:00",
+            "title": "Cabo da Roca"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "votes": "4 pour",
+      "vote": "Voter",
+      "edit": "Modifier"
+    },
+    "caption": "Un exemple de ce que le planificateur renvoie. Chaque plan reste modifiable par tout le groupe."
+  }
+}
