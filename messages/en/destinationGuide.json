@@ -45,5 +45,14 @@
     "bestTimeQuestion": "When is the best time to visit {city}?",
     "gettingAroundQuestion": "How do you get around {city}?"
   },
-  "metaTitle": "{city} Trip Planner"
+  "metaTitle": "{city} Trip Planner",
+  "esim": {
+    "badge": "Stay connected",
+    "heading": "Get an eSIM before you land",
+    "headingCountry": "Get an eSIM for {country}",
+    "body": "No roaming bill, no queue at a kiosk. Install a data plan before you leave and {city} has mobile data the second you switch off airplane mode.",
+    "cta": "See eSIM plans",
+    "ctaCountry": "See {country} eSIM plans",
+    "disclosure": "Affiliate link — at no extra cost to you."
+  }
 }

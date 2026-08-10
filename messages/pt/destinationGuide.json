@@ -45,5 +45,14 @@
     "bestTimeQuestion": "Qual é a melhor altura para visitar {city}?",
     "gettingAroundQuestion": "Como se deslocar em {city}?"
   },
-  "metaTitle": "O que ver em {city}"
+  "metaTitle": "O que ver em {city}",
+  "esim": {
+    "badge": "Fica ligado",
+    "heading": "Compra um eSIM antes de aterrar",
+    "headingCountry": "Compra um eSIM para {country}",
+    "body": "Sem fatura de roaming nem filas num quiosque. Instala o teu plano de dados antes de partir e {city} tem rede assim que desligas o modo avião.",
+    "cta": "Ver planos eSIM",
+    "ctaCountry": "Ver eSIM para {country}",
+    "disclosure": "Link de afiliado — sem custo adicional para ti."
+  }
 }

@@ -45,5 +45,14 @@
     "bestTimeQuestion": "Wann ist die beste Reisezeit für {city}?",
     "gettingAroundQuestion": "Wie kommt man in {city} herum?"
   },
-  "metaTitle": "{city} Reiseplaner"
+  "metaTitle": "{city} Reiseplaner",
+  "esim": {
+    "badge": "Verbunden bleiben",
+    "heading": "Hol dir eine eSIM vor der Landung",
+    "headingCountry": "Hol dir eine eSIM für {country}",
+    "body": "Keine Roaming-Rechnung, kein Anstehen am Kiosk. Installiere dein Datenpaket vor der Abreise und {city} hat Netz, sobald du den Flugmodus ausschaltest.",
+    "cta": "eSIM-Tarife ansehen",
+    "ctaCountry": "eSIM-Tarife für {country}",
+    "disclosure": "Affiliate-Link — ohne Mehrkosten für dich."
+  }
 }

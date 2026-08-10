@@ -5,6 +5,7 @@ import { getTranslations } from "next-intl/server";
 import FadeIn from "@/components/FadeIn";
 import Breadcrumb from "@/components/Breadcrumb";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
+import EsimBlock from "@/components/destinations/EsimBlock";
 
 import type {
   DestinationGuide,
@@ -402,6 +403,16 @@ export default async function DestinationGuideView({
           </section>
         </FadeIn>
       )}
+
+      {/* eSIM (Saily affiliate) — sits with the practical section on purpose */}
+      <FadeIn>
+        <EsimBlock
+          city={guide.city}
+          country={guide.country}
+          countryAlpha2={guide.country_alpha2}
+          destinationSlug={guide.id}
+        />
+      </FadeIn>
 
       {/* Budget (AI-estimated, per person per day, three tiers) */}
       {hasBudget && (

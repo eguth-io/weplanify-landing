@@ -41,6 +41,15 @@ export type EventCatalog = {
   related_feature_click: { from: string; to: string };
   blog_article_click: { title: string };
 
+  // Outbound affiliate links. `partner` is the programme (e.g. "saily"),
+  // `placement` the surface the link sits on. No user-identifying data.
+  affiliate_click: {
+    partner: string;
+    placement: string;
+    destination: string;
+    country: string | null;
+  };
+
   // Forms (legacy names — to be unified in Niveau 2)
   contact_form_submit: { status: FormStatus };
   launch_notification_submit: { status: FormStatus };
