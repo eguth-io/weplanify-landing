@@ -124,7 +124,9 @@ export default async function AiTripPlannerPage({ params }: Props) {
               />
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,420px)] gap-10 lg:gap-14 items-center">
+            {/* Top-aligned: the itinerary card is much taller than the copy, and
+                centring the two left a dead half-screen above the headline. */}
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,420px)] gap-10 lg:gap-14 items-start">
               <div>
                 <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">{t("hero.tag")}</p>
                 <h1 className="font-londrina-solid text-[#001E13] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-tight mb-5 whitespace-pre-line">
