@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Features, Logiciel } from "@/sanity/lib/type";
+import { Features, Logiciel } from "@/lib/content-types";
 import { Safari } from "@/components/magicui/safari";
 
 interface LogicielSectionProps {

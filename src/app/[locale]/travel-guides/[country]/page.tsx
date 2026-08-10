@@ -10,9 +10,6 @@ import FadeIn from "@/components/FadeIn";
 import Breadcrumb from "@/components/Breadcrumb";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import {
@@ -22,6 +19,7 @@ import {
   specialtyCategoryLabel,
   type Locale,
 } from "@/lib/travel-guides/data";
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 const SITE_URL = "https://www.weplanify.com";
 
@@ -103,23 +101,9 @@ export default async function TravelGuidePage({ params }: Props) {
 
   const t = await getTranslations("travelGuideCountry");
 
-  const [navData, navigationData, footerData]: [
-    NavType,
-    Navigation | null,
-    FooterType | null,
-  ] = await Promise.all([
-    sanityFetch<NavType>({ query: navQuery, params: { locale }, tags: ["nav"] }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const navData = NAV_CONTENT;
+  const navigationData = null;
+  const footerData = getFooterContent(locale);
 
   const currentUrl = `${SITE_URL}/${locale}/travel-guides/${country}`;
   const countryLabel = guide.country[loc];

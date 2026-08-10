@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { trackEvent } from "@/lib/tracking";
 import Image from "next/image";
-import { BlogPostPreview } from "@/sanity/lib/type";
+import { BlogPostPreview } from "@/lib/content-types";
 
 interface ArticleCardProps {
   article: BlogPostPreview;

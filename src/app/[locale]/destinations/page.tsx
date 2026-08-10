@@ -9,9 +9,6 @@ import FadeIn from "@/components/FadeIn";
 import Breadcrumb from "@/components/Breadcrumb";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
@@ -22,6 +19,7 @@ import {
   type DestinationUseCase,
 } from "@/lib/destinations/data";
 import { fetchPublishedDestinations } from "@/lib/destinations/api";
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 const SITE_URL = "https://www.weplanify.com";
 const PATHNAME = "/destinations";
@@ -80,23 +78,9 @@ export default async function DestinationsIndexPage({ params }: Props) {
   // API-driven destinations (city mini-guides). Resilient to an empty list.
   const apiDestinations = await fetchPublishedDestinations(locale);
 
-  const [navData, navigationData, footerData]: [
-    NavType,
-    Navigation | null,
-    FooterType | null,
-  ] = await Promise.all([
-    sanityFetch<NavType>({ query: navQuery, params: { locale }, tags: ["nav"] }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const navData = NAV_CONTENT;
+  const navigationData = null;
+  const footerData = getFooterContent(locale);
 
   // Group destinations by use case for the "by intent" sections.
   const useCases: DestinationUseCase[] = [

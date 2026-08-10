@@ -1,9 +1,6 @@
 import { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -13,6 +10,7 @@ import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
 import FadeIn from "@/components/FadeIn";
 import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -58,12 +56,9 @@ export default async function FamilyTripPage({ params }: Props) {
   const isEn = locale === "en";
   const t = await getTranslations("familyTrip");
 
-  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] =
-    await Promise.all([
-      sanityFetch<NavType>({ query: navQuery, params: { locale }, tags: ["nav"] }),
-      sanityFetch<Navigation>({ query: navigationQuery, params: { locale }, tags: ["navigation"] }),
-      sanityFetch<FooterType>({ query: footerQuery, params: { locale }, tags: ["footer"] }),
-    ]);
+  const navData = NAV_CONTENT;
+  const navigationData = null;
+  const footerData = getFooterContent(locale);
 
   const byAgeItems = t.raw("byAge.items") as { age: string; title: string; text: string; color: string }[];
   const howHelpsItems = t.raw("howHelps.items") as { title: string; desc: string; link: string }[];

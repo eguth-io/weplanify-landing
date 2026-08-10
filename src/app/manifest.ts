@@ -1,14 +1,12 @@
 import { MetadataRoute } from "next";
-import { client } from "@/sanity/lib/client";
-import { seoSettingsQuery } from "@/sanity/lib/query";
-import { SeoSettings } from "@/sanity/lib/type";
+import { SEO_SETTINGS } from "@/lib/site-content";
 
 /**
- * Génère le manifest.json dynamiquement depuis Sanity pour PWA
+ * Génère le manifest.json PWA à partir des réglages SEO locaux
  */
 export default async function manifest(): Promise<MetadataRoute.Manifest> {
   try {
-    const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
+    const seoSettings = SEO_SETTINGS;
 
     return {
       name: seoSettings?.siteName || "WePlanify",

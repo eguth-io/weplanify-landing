@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { client } from "@/sanity/lib/client";
-import { seoSettingsQuery } from "@/sanity/lib/query";
-import { SeoSettings } from "@/sanity/lib/type";
+import { SEO_SETTINGS } from "@/lib/site-content";
 import { routing } from "@/i18n/routing";
 
 const SITE_URL = "https://www.weplanify.com";
@@ -81,7 +79,7 @@ export async function generateMetadataFromSanity(
   pathname: string = ""
 ): Promise<Metadata> {
   try {
-    const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
+    const seoSettings = SEO_SETTINGS;
 
     if (!seoSettings) {
       console.warn("SEO Settings not found in Sanity, using defaults");
@@ -216,7 +214,7 @@ function normalizeUrl(url: string): string {
 /**
  * Organization JSON-LD schema
  */
-export function generateOrganizationSchema(seoSettings: SeoSettings) {
+export function generateOrganizationSchema(seoSettings: typeof SEO_SETTINGS) {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -241,7 +239,7 @@ export function generateOrganizationSchema(seoSettings: SeoSettings) {
 /**
  * Website JSON-LD schema
  */
-export function generateWebsiteSchema(seoSettings: SeoSettings) {
+export function generateWebsiteSchema(seoSettings: typeof SEO_SETTINGS) {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",

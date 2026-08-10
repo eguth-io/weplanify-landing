@@ -1,7 +1,5 @@
 import { MetadataRoute } from "next";
-import { client } from "@/sanity/lib/client";
-import { seoSettingsQuery } from "@/sanity/lib/query";
-import { SeoSettings } from "@/sanity/lib/type";
+import { SEO_SETTINGS } from "@/lib/site-content";
 
 // AI / LLM crawlers we explicitly welcome so our content can be indexed and
 // cited by generative search engines (GEO). Notably Google-Extended controls
@@ -34,7 +32,7 @@ const AI_CRAWLERS = [
 ];
 
 /**
- * Génère le robots.txt dynamiquement depuis Sanity.
+ * Génère le robots.txt à partir des réglages SEO locaux.
  * En plus de la règle `*`, on autorise explicitement les crawlers IA/LLM (GEO).
  */
 export default async function robots(): Promise<MetadataRoute.Robots> {
@@ -56,7 +54,7 @@ export default async function robots(): Promise<MetadataRoute.Robots> {
   };
 
   try {
-    const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
+    const seoSettings = SEO_SETTINGS;
 
     const allowIndexing = seoSettings?.robotsSettings?.allowIndexing ?? true;
     const siteUrl = seoSettings?.siteUrl || "https://www.weplanify.com";

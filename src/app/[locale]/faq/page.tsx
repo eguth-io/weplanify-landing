@@ -1,14 +1,12 @@
 import { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, faqQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Navigation, FAQType, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import Breadcrumb from "@/components/Breadcrumb";
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -29,32 +27,13 @@ export default async function FAQPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const [navData, navigationData, faqData, footerData]: [NavType, Navigation | null, FAQType, FooterType | null] = await Promise.all([
-    sanityFetch<NavType>({
-      query: navQuery,
-      params: { locale },
-      tags: ["nav"],
-    }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FAQType>({
-      query: faqQuery,
-      params: { locale },
-      tags: ["faq"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const navData = NAV_CONTENT;
+  const navigationData = null;
+  const footerData = getFooterContent(locale);
 
   const t = await getTranslations("faqPage");
-  // Use localized default if Sanity is empty
-  const faq = faqData || (t.raw("defaultFaq") as FAQType);
+  // The CMS never held an `faq` document type, so this always came from i18n.
+  const faq = t.raw("defaultFaq") as { items: { question: string; answer: string }[] };
 
   const SITE_URL = "https://www.weplanify.com";
 

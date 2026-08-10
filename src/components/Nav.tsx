@@ -1,5 +1,5 @@
 "use client";
-import { NavType, Navigation } from "@/sanity/lib/type";
+import { NAV_CONTENT } from "@/lib/site-content";
 import Image from "next/image";
 import Link from "next/link";
 import { useRegisterHref } from "@/lib/attribution/use-register-href";
@@ -11,13 +11,9 @@ import { routing } from "@/i18n/routing";
 import LanguageModal from "./LanguageModal";
 import { useImmersiveMode } from "@/lib/hooks/use-immersive-mode";
 
-const DEFAULT_NAV_DATA: NavType = {
-  logo: "/logo.webp",
-  logoMobile: "/logo.webp",
-  ctaButton: "Get started",
-  ctaLink: "/contact",
-  connexionLink: "/login",
-};
+// The nav only ever read `logo` off the CMS document; everything else here is
+// i18n-driven, so the prop is now just the logo (WP-140).
+const DEFAULT_NAV_DATA = NAV_CONTENT;
 
 type Locale = string;
 type DropdownItem = {
@@ -143,8 +139,9 @@ function isDropdownActive(dropdown: Dropdown, locale: Locale, pathname: string |
 }
 
 interface NavProps {
-  navData: NavType | null;
-  navigationData?: Navigation | null;
+  navData?: { logo: string } | null;
+  /** Kept so the 43 call sites don't all have to change; never read. */
+  navigationData?: unknown;
 }
 
 export default function Nav({ navData }: NavProps) {

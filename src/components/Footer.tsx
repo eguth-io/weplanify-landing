@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { Footer as FooterType } from "@/sanity/lib/type";
+import type { FooterContent } from "@/lib/site-content";
 import { useState } from "react";
 import { trackEvent } from "@/lib/tracking";
 import { useRegisterHref } from "@/lib/attribution/use-register-href";
@@ -85,7 +85,7 @@ function SocialLinks({ className = "" }: { className?: string }) {
 }
 
 interface FooterProps {
-  footerData?: FooterType | null;
+  footerData?: FooterContent | null;
 }
 
 export default function Footer({ footerData }: FooterProps) {
@@ -256,7 +256,7 @@ export default function Footer({ footerData }: FooterProps) {
             <Link href="/" aria-label="WePlanify - Home">
               <Image
                 src={footerData.logo}
-                alt={footerData.tagline || "WePlanify logo"}
+                alt={footerData.logoAlt}
                 width={155}
                 height={66}
               />

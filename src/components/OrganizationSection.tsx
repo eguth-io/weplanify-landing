@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PulsatingButtonWhite } from "@/components/magicui/pulsating-button-white-black";
-import { CtaType, Organization } from "@/sanity/lib/type";
+import { CtaType, Organization } from "@/lib/content-types";
 import Org from "@/components/Org";
 import { useRegisterHref } from "@/lib/attribution/use-register-href";
 

@@ -1,14 +1,12 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 // ---------------------------------------------------------------------------
 // Static params
@@ -194,27 +192,9 @@ export default async function GroupTripBudgetPage({ params }: Props) {
   const settlingUp = t.raw("sections.settlingUp") as Section;
   const faqItems = t.raw("faq.items") as FaqItem[];
 
-  const [navData, navigationData, footerData]: [
-    NavType,
-    Navigation | null,
-    FooterType | null,
-  ] = await Promise.all([
-    sanityFetch<NavType>({
-      query: navQuery,
-      params: { locale },
-      tags: ["nav"],
-    }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const navData = NAV_CONTENT;
+  const navigationData = null;
+  const footerData = getFooterContent(locale);
 
   return (
     <>

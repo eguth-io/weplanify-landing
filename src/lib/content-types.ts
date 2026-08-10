@@ -1,3 +1,12 @@
+/**
+ * Content shapes for the presentational components, carried over verbatim from
+ * the Sanity type module when the CMS was removed (WP-140).
+ *
+ * These are interfaces only — nothing fetches them any more, they just describe
+ * props. Kept whole rather than pruned so the move is a pure relocation and any
+ * regression is easy to attribute; trimming the unused ones is a separate pass.
+ */
+
 // ============================================
 // SEO Types
 // ============================================

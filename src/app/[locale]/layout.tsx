@@ -50,7 +50,7 @@ const nanumPenFont = Nanum_Pen_Script({
   display: "swap",
 });
 
-// Generate metadata dynamically from Sanity with hreflang
+// Generate metadata from the local SEO settings, with hreflang
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   return generateMetadataFromSanity(locale, "");
@@ -84,8 +84,6 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale}>
       <head>
-        <link rel="preconnect" href="https://cdn.sanity.io" />
-        <link rel="dns-prefetch" href="https://cdn.sanity.io" />
       </head>
       <body className={`${ralewayFont.variable} ${UnboundedFont.variable} ${londrinaSolidFont.variable} ${karlaFont.variable} ${nanumPenFont.variable}`}>
         {/* Structured Data (Organization & Website Schema) */}

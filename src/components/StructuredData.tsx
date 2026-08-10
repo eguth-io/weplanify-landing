@@ -1,6 +1,4 @@
-import { client } from "@/sanity/lib/client";
-import { seoSettingsQuery } from "@/sanity/lib/query";
-import { SeoSettings } from "@/sanity/lib/type";
+import { SEO_SETTINGS } from "@/lib/site-content";
 import {
   generateOrganizationSchema,
   generateWebsiteSchema,
@@ -12,32 +10,10 @@ import {
  */
 export async function StructuredData() {
   try {
-    const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
-
-    const fallbackSettings: SeoSettings = {
-      siteName: "WePlanify",
-      defaultTitle: "WePlanify — Free Group Trip Planner | Plan Together",
-      defaultDescription: "Free collaborative group trip planner. Plan itineraries together, vote with group polls, track shared budgets.",
-      keywords: ["group trip planner", "collaborative travel app"],
-      language: "en",
-      ogImage: "",
-      ogType: "website",
-      twitterCard: "summary_large_image",
-      organizationName: "WePlanify",
-      organizationLogo: "https://www.weplanify.com/logo.webp",
-      organizationUrl: "https://www.weplanify.com",
-      organizationSocialLinks: [
-        { platform: "Instagram", url: "https://www.instagram.com/weplanify" },
-        { platform: "TikTok", url: "https://www.tiktok.com/@weplanify" },
-      ],
-      siteUrl: "https://www.weplanify.com",
-      robotsSettings: { allowIndexing: true },
-      favicon: "/favicon.ico",
-      appleTouchIcon: "/apple-touch-icon.png",
-      manifest: { themeColor: "#f6391a", backgroundColor: "#ffffff" },
-    } as SeoSettings;
-
-    const settings = seoSettings || fallbackSettings;
+    // The CMS document always existed, so the old `|| fallbackSettings`
+    // branch was dead — including its Instagram/TikTok links, which were
+    // therefore never emitted. Behaviour preserved: no `sameAs` for now.
+    const settings = SEO_SETTINGS;
 
     const organizationSchema = generateOrganizationSchema(settings);
     const websiteSchema = generateWebsiteSchema(settings);
