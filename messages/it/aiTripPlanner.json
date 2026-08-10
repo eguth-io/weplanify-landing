@@ -81,5 +81,76 @@
       "title": "Guida: organizzare un viaggio di gruppo",
       "desc": "La guida completa, passo dopo passo, per organizzare un viaggio di gruppo."
     }
+  },
+  "preview": {
+    "promptLabel": "Quello che scrivi",
+    "prompt": "«Lisbona in 6, 3 giorni a maggio — si mangia bene, niente di troppo turistico.»",
+    "label": "Itinerario di esempio",
+    "trip": {
+      "title": "Lisbona",
+      "meta": "3 giorni · 6 viaggiatori"
+    },
+    "days": [
+      {
+        "label": "Giorno 1",
+        "title": "Alfama e il fiume",
+        "items": [
+          {
+            "time": "09:30",
+            "title": "Miradouro de Santa Luzia"
+          },
+          {
+            "time": "12:30",
+            "title": "Pranzo al Time Out Market"
+          },
+          {
+            "time": "20:00",
+            "title": "Fado da A Baiuca"
+          }
+        ]
+      },
+      {
+        "label": "Giorno 2",
+        "title": "Belém e LX Factory",
+        "items": [
+          {
+            "time": "10:00",
+            "title": "Mosteiro dos Jerónimos"
+          },
+          {
+            "time": "15:00",
+            "title": "LX Factory"
+          },
+          {
+            "time": "19:30",
+            "title": "Tramonto sul Ponte 25 de Abril"
+          }
+        ]
+      },
+      {
+        "label": "Giorno 3",
+        "title": "Sintra",
+        "items": [
+          {
+            "time": "08:45",
+            "title": "Treno da Rossio"
+          },
+          {
+            "time": "10:30",
+            "title": "Quinta da Regaleira"
+          },
+          {
+            "time": "16:00",
+            "title": "Cabo da Roca"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "votes": "4 a favore",
+      "vote": "Vota",
+      "edit": "Modifica"
+    },
+    "caption": "Un esempio di ciò che restituisce il planner. Ogni piano resta modificabile da tutto il gruppo."
   }
 }

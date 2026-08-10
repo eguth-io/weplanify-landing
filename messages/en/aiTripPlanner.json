@@ -81,5 +81,76 @@
       "title": "Guide: Plan a Group Trip",
       "desc": "The complete step-by-step guide to planning a group trip."
     }
+  },
+  "preview": {
+    "promptLabel": "What you type",
+    "prompt": "“Lisbon with 6 friends, 3 days in May — good food, nothing too touristy.”",
+    "label": "Example itinerary",
+    "trip": {
+      "title": "Lisbon",
+      "meta": "3 days · 6 travellers"
+    },
+    "days": [
+      {
+        "label": "Day 1",
+        "title": "Alfama & the river",
+        "items": [
+          {
+            "time": "09:30",
+            "title": "Miradouro de Santa Luzia"
+          },
+          {
+            "time": "12:30",
+            "title": "Lunch at Time Out Market"
+          },
+          {
+            "time": "20:00",
+            "title": "Fado at A Baiuca"
+          }
+        ]
+      },
+      {
+        "label": "Day 2",
+        "title": "Belém & LX Factory",
+        "items": [
+          {
+            "time": "10:00",
+            "title": "Mosteiro dos Jerónimos"
+          },
+          {
+            "time": "15:00",
+            "title": "LX Factory"
+          },
+          {
+            "time": "19:30",
+            "title": "Sunset at Ponte 25 de Abril"
+          }
+        ]
+      },
+      {
+        "label": "Day 3",
+        "title": "Sintra",
+        "items": [
+          {
+            "time": "08:45",
+            "title": "Train from Rossio"
+          },
+          {
+            "time": "10:30",
+            "title": "Quinta da Regaleira"
+          },
+          {
+            "time": "16:00",
+            "title": "Cabo da Roca"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "votes": "4 in favour",
+      "vote": "Vote",
+      "edit": "Edit"
+    },
+    "caption": "An example of what the planner returns. Every plan stays editable by the whole group."
   }
 }

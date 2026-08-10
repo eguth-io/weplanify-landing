@@ -81,5 +81,76 @@
       "title": "指南：规划团体旅行",
       "desc": "规划团体旅行的完整分步指南。"
     }
+  },
+  "preview": {
+    "promptLabel": "你输入的内容",
+    "prompt": "「6 个人去里斯本，5 月待 3 天——吃得好，别太游客化。」",
+    "label": "行程示例",
+    "trip": {
+      "title": "里斯本",
+      "meta": "3 天 · 6 人"
+    },
+    "days": [
+      {
+        "label": "第 1 天",
+        "title": "阿尔法玛与河岸",
+        "items": [
+          {
+            "time": "09:30",
+            "title": "Miradouro de Santa Luzia 观景台"
+          },
+          {
+            "time": "12:30",
+            "title": "Time Out Market 午餐"
+          },
+          {
+            "time": "20:00",
+            "title": "A Baiuca 法多演出"
+          }
+        ]
+      },
+      {
+        "label": "第 2 天",
+        "title": "贝伦与 LX Factory",
+        "items": [
+          {
+            "time": "10:00",
+            "title": "热罗尼莫斯修道院"
+          },
+          {
+            "time": "15:00",
+            "title": "LX Factory"
+          },
+          {
+            "time": "19:30",
+            "title": "四月二十五日大桥看日落"
+          }
+        ]
+      },
+      {
+        "label": "第 3 天",
+        "title": "辛特拉",
+        "items": [
+          {
+            "time": "08:45",
+            "title": "从 Rossio 站坐火车"
+          },
+          {
+            "time": "10:30",
+            "title": "雷加莱拉庄园"
+          },
+          {
+            "time": "16:00",
+            "title": "罗卡角"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "votes": "4 人赞成",
+      "vote": "投票",
+      "edit": "编辑"
+    },
+    "caption": "这是行程规划器输出的一个示例。每份计划都可以由整个小组编辑。"
   }
 }

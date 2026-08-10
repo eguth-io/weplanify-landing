@@ -81,5 +81,76 @@
       "title": "Poradnik: wyjazd grupowy",
       "desc": "Kompletny przewodnik krok po kroku po organizacji wyjazdu grupowego."
     }
+  },
+  "preview": {
+    "promptLabel": "Co wpisujesz",
+    "prompt": "„Lizbona w 6 osób, 3 dni w maju — dobre jedzenie, nic zbyt turystycznego.”",
+    "label": "Przykładowy plan",
+    "trip": {
+      "title": "Lizbona",
+      "meta": "3 dni · 6 podróżnych"
+    },
+    "days": [
+      {
+        "label": "Dzień 1",
+        "title": "Alfama i rzeka",
+        "items": [
+          {
+            "time": "09:30",
+            "title": "Miradouro de Santa Luzia"
+          },
+          {
+            "time": "12:30",
+            "title": "Obiad w Time Out Market"
+          },
+          {
+            "time": "20:00",
+            "title": "Fado w A Baiuca"
+          }
+        ]
+      },
+      {
+        "label": "Dzień 2",
+        "title": "Belém i LX Factory",
+        "items": [
+          {
+            "time": "10:00",
+            "title": "Mosteiro dos Jerónimos"
+          },
+          {
+            "time": "15:00",
+            "title": "LX Factory"
+          },
+          {
+            "time": "19:30",
+            "title": "Zachód słońca przy Ponte 25 de Abril"
+          }
+        ]
+      },
+      {
+        "label": "Dzień 3",
+        "title": "Sintra",
+        "items": [
+          {
+            "time": "08:45",
+            "title": "Pociąg z Rossio"
+          },
+          {
+            "time": "10:30",
+            "title": "Quinta da Regaleira"
+          },
+          {
+            "time": "16:00",
+            "title": "Cabo da Roca"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "votes": "4 za",
+      "vote": "Głosuj",
+      "edit": "Edytuj"
+    },
+    "caption": "Przykład tego, co zwraca planer. Każdy plan pozostaje edytowalny dla całej grupy."
   }
 }

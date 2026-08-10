@@ -81,5 +81,76 @@
       "title": "Guia: planear uma viagem em grupo",
       "desc": "O guia completo, passo a passo, para planear uma viagem em grupo."
     }
+  },
+  "preview": {
+    "promptLabel": "O que escreves",
+    "prompt": "«Lisboa com 6 amigos, 3 dias em maio — comer bem, nada demasiado turístico.»",
+    "label": "Itinerário de exemplo",
+    "trip": {
+      "title": "Lisboa",
+      "meta": "3 dias · 6 viajantes"
+    },
+    "days": [
+      {
+        "label": "Dia 1",
+        "title": "Alfama e o rio",
+        "items": [
+          {
+            "time": "09:30",
+            "title": "Miradouro de Santa Luzia"
+          },
+          {
+            "time": "12:30",
+            "title": "Almoço no Time Out Market"
+          },
+          {
+            "time": "20:00",
+            "title": "Fado na A Baiuca"
+          }
+        ]
+      },
+      {
+        "label": "Dia 2",
+        "title": "Belém e LX Factory",
+        "items": [
+          {
+            "time": "10:00",
+            "title": "Mosteiro dos Jerónimos"
+          },
+          {
+            "time": "15:00",
+            "title": "LX Factory"
+          },
+          {
+            "time": "19:30",
+            "title": "Pôr do sol na Ponte 25 de Abril"
+          }
+        ]
+      },
+      {
+        "label": "Dia 3",
+        "title": "Sintra",
+        "items": [
+          {
+            "time": "08:45",
+            "title": "Comboio a partir do Rossio"
+          },
+          {
+            "time": "10:30",
+            "title": "Quinta da Regaleira"
+          },
+          {
+            "time": "16:00",
+            "title": "Cabo da Roca"
+          }
+        ]
+      }
+    ],
+    "footer": {
+      "votes": "4 a favor",
+      "vote": "Votar",
+      "edit": "Editar"
+    },
+    "caption": "Um exemplo do que o planeador devolve. Cada plano continua editável por todo o grupo."
   }
 }

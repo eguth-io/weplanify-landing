@@ -11,7 +11,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
 import FadeIn from "@/components/FadeIn";
-import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
+import ItineraryPreview from "@/components/ai-trip-planner/ItineraryPreview";
 
 type Props = { params: Promise<{ locale: string }> };
 const SITE_URL = "https://www.weplanify.com";
@@ -32,8 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...metadata,
     title,
     description,
-    authors: [{ name: "Alex Martin" }],
-    openGraph: { ...metadata.openGraph, type: "article", title, description, url: currentUrl },
+    openGraph: { ...metadata.openGraph, type: "website", title, description, url: currentUrl },
     twitter: { ...metadata.twitter, title, description },
     alternates: {
       canonical: currentUrl,
@@ -69,16 +68,16 @@ export default async function AiTripPlannerPage({ params }: Props) {
     ],
   };
 
-  const articleLd = {
+  // WebPage, not Article: this is a product page, and marking it up as an
+  // authored article means claiming a byline it doesn't have.
+  const pageLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: t("meta.title"),
+    "@type": "WebPage",
+    name: t("meta.title"),
     description: t("meta.description"),
-    author: { "@type": "Person", name: "Alex Martin", jobTitle: "Travel Editor" },
+    url: `${SITE_URL}/${locale}${PATHNAME}`,
     publisher: { "@type": "Organization", name: "WePlanify", url: SITE_URL },
-    datePublished: "2026-08-08",
-    dateModified: "2026-08-08",
-    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/${locale}${PATHNAME}` },
+    inLanguage: locale,
   };
 
   const faqLd = {
@@ -105,17 +104,17 @@ export default async function AiTripPlannerPage({ params }: Props) {
 
   return (
     <>
-      <AuthorJsonLd />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }} />
       <Nav navData={navData} navigationData={navigationData} />
 
       <main className="min-h-screen bg-[#FFFBF5]">
-        {/* Hero */}
+        {/* Hero — the copy claims the planner turns a sentence into a day-by-day
+            itinerary, so the itinerary sits right next to the claim. */}
         <section className="pt-[140px] lg:pt-[180px] pb-10 lg:pb-14 px-6 lg:px-12">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="hidden lg:block mb-8">
               <Breadcrumb
                 items={[
@@ -124,22 +123,25 @@ export default async function AiTripPlannerPage({ params }: Props) {
                 ]}
               />
             </div>
-            <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">{t("hero.tag")}</p>
-            <h1 className="font-londrina-solid text-[#001E13] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-tight mb-5 whitespace-pre-line">
-              {t("hero.title")}
-            </h1>
-            <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed mb-8">
-              {t("hero.subtitle")}
-            </p>
-            <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`}>
-              <PulsatingButton className="font-karla font-bold">{t("hero.cta")}</PulsatingButton>
-            </Link>
+
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,420px)] gap-10 lg:gap-14 items-center">
+              <div>
+                <p className="font-nanum-pen text-[#F6391A] text-lg lg:text-xl mb-3">{t("hero.tag")}</p>
+                <h1 className="font-londrina-solid text-[#001E13] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-tight mb-5 whitespace-pre-line">
+                  {t("hero.title")}
+                </h1>
+                <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed mb-8">
+                  {t("hero.subtitle")}
+                </p>
+                <Link href={`https://app.weplanify.com/${locale}/register?utm_source=landing`}>
+                  <PulsatingButton className="font-karla font-bold">{t("hero.cta")}</PulsatingButton>
+                </Link>
+              </div>
+
+              <ItineraryPreview />
+            </div>
           </div>
         </section>
-
-        <div className="max-w-3xl mx-auto px-6 lg:px-12">
-          <AuthorBio locale={locale} publishedDate="2026-08-08" modifiedDate="2026-08-08" />
-        </div>
 
         {/* Quick answer — self-contained, extractable, ahead of the narrative (WP-137). */}
         <section className="max-w-3xl mx-auto px-6 lg:px-12 pt-8">
@@ -156,22 +158,25 @@ export default async function AiTripPlannerPage({ params }: Props) {
         {/* How it works */}
         <FadeIn>
           <section className="py-14 lg:py-20 px-6 lg:px-12">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <h2 className="font-londrina-solid text-[#001E13] text-2xl lg:text-4xl mb-10 text-center">
                 {t("how.title")}
               </h2>
-              <ol className="space-y-8">
+              {/* Three abreast rather than a stacked list: the steps are short,
+                  and side by side they read as one flow instead of three walls. */}
+              <ol className="grid gap-5 md:grid-cols-3">
                 {steps.map((step, i) => (
-                  <li key={i} className="flex gap-5">
-                    <span className="shrink-0 w-9 h-9 rounded-full bg-[#F6391A] text-[#FFFBF5] font-karla font-bold flex items-center justify-center">
+                  <li
+                    key={i}
+                    className="rounded-2xl border border-[#001E13]/10 bg-white p-6 flex flex-col"
+                  >
+                    <span className="w-9 h-9 rounded-full bg-[#F6391A] text-[#FFFBF5] font-karla font-bold flex items-center justify-center mb-4">
                       {i + 1}
                     </span>
-                    <div>
-                      <h3 className="font-karla font-bold text-[#001E13] text-lg mb-1">{step.title}</h3>
-                      <p className="font-karla text-[#001E13]/80 text-base lg:text-lg leading-relaxed">
-                        {step.body}
-                      </p>
-                    </div>
+                    <h3 className="font-karla font-bold text-[#001E13] text-lg mb-2">{step.title}</h3>
+                    <p className="font-karla text-[#001E13]/80 text-base leading-relaxed">
+                      {step.body}
+                    </p>
                   </li>
                 ))}
               </ol>
