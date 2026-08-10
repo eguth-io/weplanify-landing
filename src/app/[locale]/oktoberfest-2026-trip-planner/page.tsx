@@ -2,9 +2,6 @@ import { Metadata } from "next";
 import { ReactNode } from "react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -14,6 +11,7 @@ import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
 import FadeIn from "@/components/FadeIn";
 import { AuthorBio, AuthorJsonLd } from "@/components/AuthorBio";
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 type Props = { params: Promise<{ locale: string }> };
 const SITE_URL = "https://www.weplanify.com";
@@ -53,12 +51,9 @@ export default async function Oktoberfest2026Page({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("oktoberfest2026");
 
-  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] =
-    await Promise.all([
-      sanityFetch<NavType>({ query: navQuery, params: { locale }, tags: ["nav"] }),
-      sanityFetch<Navigation>({ query: navigationQuery, params: { locale }, tags: ["navigation"] }),
-      sanityFetch<FooterType>({ query: footerQuery, params: { locale }, tags: ["footer"] }),
-    ]);
+  const navData = NAV_CONTENT;
+  const navigationData = null;
+  const footerData = getFooterContent(locale);
 
   const howItWorksItems = t.raw("howItWorks.items") as { stop: string; desc: string; link: string }[];
   const reservedItems = t.raw("reservations.reservedItems") as string[];

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
-import { CtaType, Organization } from "@/sanity/lib/type";
+import { CtaType, Organization } from "@/lib/content-types";
 import { useRegisterHref } from "@/lib/attribution/use-register-href";
 
 interface MobileCTASectionProps {

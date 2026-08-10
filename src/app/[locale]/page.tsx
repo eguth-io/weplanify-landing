@@ -21,11 +21,9 @@ const InstagramSlider = dynamic(() => import("@/components/InstagramSlider"));
 import Image from "next/image";
 import { getInstagramPosts } from "@/lib/instagram";
 import Link from "next/link";
-import { client } from "@/sanity/lib/client";
-import { navigationQuery, footerQuery } from "@/sanity/lib/query";
-import { Navigation, Footer as FooterDataType } from "@/sanity/lib/type";
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -63,43 +61,25 @@ export default async function HomePage({ params, searchParams }: Props) {
   // Homepage copy (hero, world section, and every section component) now comes
   // from next-intl message files. Only nav/footer config is still sourced from
   // Sanity, with an en fallback for locales not authored there.
-  const [navRaw, footerRaw, instagramPosts] = await Promise.all([
-    client.fetch<Navigation>(navigationQuery, { locale }),
-    client.fetch<FooterDataType>(footerQuery, { locale }),
-    getInstagramPosts(),
-  ]);
-  const [navigationData, footerData] =
-    locale === "en"
-      ? [navRaw, footerRaw]
-      : await Promise.all([
-          navRaw ?? client.fetch<Navigation>(navigationQuery, { locale: "en" }),
-          footerRaw ?? client.fetch<FooterDataType>(footerQuery, { locale: "en" }),
-        ]);
+  const instagramPosts = await getInstagramPosts();
+  const navData = NAV_CONTENT;
+  const footerData = getFooterContent(locale);
 
   // Images are served from the CDN; only the copy is localized via messages.
   const HERO_BG =
-    "https://cdn.sanity.io/images/pkczubdf/production/dead4cd1121015e8d63c0f347ee08005b5d835ee-1379x751.png";
+    "/home/home-hero-desktop.png";
   const WORLD_CTA_URL = "https://app.weplanify.com/";
   const WORLD_IMAGES = [
-    "https://cdn.sanity.io/images/pkczubdf/production/91d610ed547e46f33608d6de1617202522cf85cd-1024x1536.heif",
-    "https://cdn.sanity.io/images/pkczubdf/production/5d3652d63dd35237cf7710904f13fb295a091892-1024x1536.heif",
-    "https://cdn.sanity.io/images/pkczubdf/production/5da7a2e647b07fc2b2bb9100bb5d93d84142f1fa-1024x1536.heif",
-    "https://cdn.sanity.io/images/pkczubdf/production/3ad15779ae62ac56c662c8dd4b384a188bbd767c-1024x1536.heif",
+    "/home/home-card-1.heif",
+    "/home/home-card-3.heif",
+    "/home/home-card-2.heif",
+    "/home/home-card-4.heif",
   ];
 
   return (
     <main className="landing-page" id="main-content">
       {/* Navigation */}
-      <Nav
-        navData={{
-          logo: navigationData?.logo || "/logo.webp",
-          logoMobile: navigationData?.logo || "/logo.webp",
-          connexionLink: navigationData?.connectionButton?.url || "/connexion",
-          ctaButton: navigationData?.ctaButton?.text || "Get started",
-          ctaLink: navigationData?.ctaButton?.url || "/contact",
-        }}
-        navigationData={navigationData}
-      />
+      <Nav navData={navData} />
 
       {/* Publish the assigned A/B variant to the dataLayer before GTM tags fire,
           so every event can be segmented by hero_variant. Inline (no client

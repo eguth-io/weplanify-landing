@@ -1,7 +1,5 @@
 import { MetadataRoute } from "next";
-import { client } from "@/sanity/lib/client";
-import { seoSettingsQuery } from "@/sanity/lib/query";
-import { SeoSettings } from "@/sanity/lib/type";
+import { SEO_SETTINGS } from "@/lib/site-content";
 import { destinations } from "@/lib/destinations/data";
 import { fetchAllDestinationSlugs } from "@/lib/destinations/api";
 import { countryGuides } from "@/lib/travel-guides/data";
@@ -32,7 +30,7 @@ type EntryMeta = Pick<
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
-    const seoSettings: SeoSettings = await client.fetch(seoSettingsQuery);
+    const seoSettings = SEO_SETTINGS;
     const siteUrl = seoSettings?.siteUrl || "https://www.weplanify.com";
 
     const entries: MetadataRoute.Sitemap = [];

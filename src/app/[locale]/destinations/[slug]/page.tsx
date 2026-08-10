@@ -10,9 +10,6 @@ import FadeIn from "@/components/FadeIn";
 import Breadcrumb from "@/components/Breadcrumb";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
@@ -29,6 +26,7 @@ import {
   fetchPublishedDestinations,
 } from "@/lib/destinations/api";
 import DestinationGuideView from "@/components/destinations/DestinationGuideView";
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 const SITE_URL = "https://www.weplanify.com";
 
@@ -181,23 +179,9 @@ export default async function DestinationPage({ params }: Props) {
   const loc: Locale = locale === "fr" ? "fr" : "en";
   const destination = findDestinationByLocalizedSlug(slug, loc);
 
-  const [navData, navigationData, footerData]: [
-    NavType,
-    Navigation | null,
-    FooterType | null,
-  ] = await Promise.all([
-    sanityFetch<NavType>({ query: navQuery, params: { locale }, tags: ["nav"] }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const navData = NAV_CONTENT;
+  const navigationData = null;
+  const footerData = getFooterContent(locale);
 
   // ----- API-driven destination (no local match) -----
   if (!destination) {

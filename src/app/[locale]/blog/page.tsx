@@ -3,12 +3,11 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
 import Image from "next/image";
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Navigation, BlogPostPreview, Footer as FooterType } from "@/sanity/lib/type";
+import { BlogPostPreview } from "@/lib/content-types";
 import Link from "next/link";
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { generateMetadataFromSanity } from "@/lib/metadata";
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -31,23 +30,9 @@ export default async function BlogPage({ params }: Props) {
 
   const t = await getTranslations("blogIndex");
 
-  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] = await Promise.all([
-    sanityFetch<NavType>({
-      query: navQuery,
-      params: { locale },
-      tags: ["nav"],
-    }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const navData = NAV_CONTENT;
+  const navigationData = null;
+  const footerData = getFooterContent(locale);
 
   // Hardcoded long-form articles that live as static routes outside Sanity.
   // They were invisible on /blog because the listing only queried the CMS;

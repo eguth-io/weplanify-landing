@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import InlinePitch from "@/components/InlinePitch";
 
 const BACKGROUND_IMAGE =
-  "https://cdn.sanity.io/images/pkczubdf/production/94d61b2dee776c88dcf45ecfc9101b536b0fe1e2-1389x747.png";
+  "/home/home-hero-alt.png";
 
 interface CTABannerProps {
   locale?: string;

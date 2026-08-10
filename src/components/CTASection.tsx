@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CtaType } from "@/sanity/lib/type";
+import { CtaType } from "@/lib/content-types";
 import InlinePitch from "@/components/InlinePitch";
 
 interface CTASectionProps {

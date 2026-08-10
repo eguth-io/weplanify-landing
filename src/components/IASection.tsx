@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IA } from "@/sanity/lib/type";
+import { IA } from "@/lib/content-types";
 
 interface IASectionProps {
   ia: IA;

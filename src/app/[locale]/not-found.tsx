@@ -1,32 +1,16 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { sanityFetch } from "@/sanity/lib/fetch";
-import { navQuery, navigationQuery, footerQuery } from "@/sanity/lib/query";
-import { NavType, Navigation, Footer as FooterType } from "@/sanity/lib/type";
 import Link from "next/link";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
+import { NAV_CONTENT, getFooterContent } from "@/lib/site-content";
 
 export default async function NotFound() {
   // Not-found pages don't have access to params, default to 'en'
   const locale = 'en';
 
-  const [navData, navigationData, footerData]: [NavType, Navigation | null, FooterType | null] = await Promise.all([
-    sanityFetch<NavType>({
-      query: navQuery,
-      params: { locale },
-      tags: ["nav"],
-    }),
-    sanityFetch<Navigation>({
-      query: navigationQuery,
-      params: { locale },
-      tags: ["navigation"],
-    }),
-    sanityFetch<FooterType>({
-      query: footerQuery,
-      params: { locale },
-      tags: ["footer"],
-    }),
-  ]);
+  const navData = NAV_CONTENT;
+  const navigationData = null;
+  const footerData = getFooterContent(locale);
 
   return (
     <>
