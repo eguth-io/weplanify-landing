@@ -4,7 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-import type { DestinationListItem } from "@/lib/destinations/api";
+export type ExplorerItem = {
+  /** Unique key and search target. */
+  id: string;
+  href: string;
+  city: string;
+  /** Null for the editorial regions (Tuscany, Andalusia) — they span cities. */
+  country: string | null;
+  flag: string | null;
+  tagline: string | null;
+  image: string | null;
+  imageAlt: string;
+  /** Extra pills on the card, e.g. "7 days" or a budget range. */
+  badges: string[];
+  /** Filter keys this item matches — API tags and/or a use case. */
+  tags: string[];
+};
 
 export type ExplorerLabels = {
   searchPlaceholder: string;
@@ -23,7 +38,9 @@ export type ExplorerLabels = {
 };
 
 type Props = {
-  items: DestinationListItem[];
+  items: ExplorerItem[];
+  /** Chips to offer, in display order. Labels are already translated. */
+  tagOptions: Array<{ key: string; label: string }>;
   locale: string;
   labels: ExplorerLabels;
 };
@@ -37,15 +54,23 @@ function normalize(value: string): string {
 }
 
 /**
- * Browsable list of the API destinations: search, country and tag filters.
+ * The whole destinations index: search, country and tag filters over one grid.
  *
- * The list grew past a hundred cities, which as a plain grid was several
- * screens of scrolling with no way to get to a given place. Filtering happens
- * in the browser on the already-loaded list: it keeps every card in the server
- * HTML — so all the guide links stay crawlable — and reacts instantly, which a
- * server round trip per keystroke would not.
+ * The page used to be four editorial rails followed by a hundred-plus card
+ * grid — several screens of scrolling with no way to reach a given place. Both
+ * sources now feed this one list, so the curated itineraries stay linked from
+ * the index (they carry their use case as a chip) instead of being dropped.
+ *
+ * Filtering happens in the browser on the already-loaded list: it keeps every
+ * card in the server HTML — so all the guide links stay crawlable — and reacts
+ * instantly, which a server round trip per keystroke would not.
  */
-export default function DestinationExplorer({ items, locale, labels }: Props) {
+export default function DestinationExplorer({
+  items,
+  tagOptions,
+  locale,
+  labels,
+}: Props) {
   const [query, setQuery] = useState("");
   const [country, setCountry] = useState("");
   const [tags, setTags] = useState<string[]>([]);
@@ -57,34 +82,17 @@ export default function DestinationExplorer({ items, locale, labels }: Props) {
       if (!item.country) continue;
       counts.set(item.country, (counts.get(item.country) ?? 0) + 1);
     }
-    return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0], locale));
+    return [...counts.entries()].sort((a, b) =>
+      a[0].localeCompare(b[0], locale)
+    );
   }, [items, locale]);
-
-  // Tags come from the API already translated; keep the key for the filter and
-  // the label for the chip. Most common first — that is the useful order here.
-  const availableTags = useMemo(() => {
-    const counts = new Map<string, { label: string; count: number }>();
-    for (const item of items) {
-      item.tags?.forEach((tag, index) => {
-        const existing = counts.get(tag);
-        if (existing) {
-          existing.count += 1;
-        } else {
-          counts.set(tag, { label: item.tag_labels?.[index] ?? tag, count: 1 });
-        }
-      });
-    }
-    return [...counts.entries()]
-      .sort((a, b) => b[1].count - a[1].count)
-      .map(([tag, { label }]) => ({ tag, label }));
-  }, [items]);
 
   const filtered = useMemo(() => {
     const needle = normalize(query.trim());
     return items.filter((item) => {
       if (country && item.country !== country) return false;
       // Every selected tag must match: chips narrow the list rather than widen it.
-      if (tags.length > 0 && !tags.every((tag) => item.tags?.includes(tag))) {
+      if (tags.length > 0 && !tags.every((tag) => item.tags.includes(tag))) {
         return false;
       }
       if (!needle) return true;
@@ -154,13 +162,13 @@ export default function DestinationExplorer({ items, locale, labels }: Props) {
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          {availableTags.map(({ tag, label }) => {
-            const active = tags.includes(tag);
+          {tagOptions.map(({ key, label }) => {
+            const active = tags.includes(key);
             return (
               <button
-                key={tag}
+                key={key}
                 type="button"
-                onClick={() => toggleTag(tag)}
+                onClick={() => toggleTag(key)}
                 aria-pressed={active}
                 className={`px-3 py-1 rounded-full text-xs font-karla font-bold border transition-colors ${
                   active
@@ -209,17 +217,13 @@ export default function DestinationExplorer({ items, locale, labels }: Props) {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map((item) => (
-            <Link
-              key={item.id}
-              href={`/${locale}/destinations/${item.id}`}
-              className="group"
-            >
+            <Link key={item.id} href={item.href} className="group">
               <article className="bg-white border border-[#001E13]/10 rounded-3xl overflow-hidden hover:shadow-lg hover:border-[#F6391A]/30 transition-all duration-300 h-full flex flex-col">
-                {item.cover && (
+                {item.image && (
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
-                      src={item.cover.url}
-                      alt={item.city}
+                      src={item.image}
+                      alt={item.imageAlt}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -234,6 +238,14 @@ export default function DestinationExplorer({ items, locale, labels }: Props) {
                         {item.country}
                       </span>
                     )}
+                    {item.badges.map((badge) => (
+                      <span
+                        key={badge}
+                        className="bg-[#001E13]/5 text-[#001E13] px-3 py-1 rounded-full text-xs font-karla"
+                      >
+                        {badge}
+                      </span>
+                    ))}
                   </div>
                   <h3 className="text-2xl font-londrina-solid text-[#001E13] mb-2">
                     {item.city}
