@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Reiseziele – Vorlagen für Gruppenreisen nach Stadt & Anlass",
-    "description": "Echte, buchbare Reiserouten für Gruppenreisen: Junggesellinnenabschied in Las Vegas & Nashville, Budapest, Marrakesch, Roadtrips durch die Toskana & Andalusien, Wochenende in Lissabon. Tag-für-Tag-Pläne, echte Orte, Budgets."
+    "title": "Reiseziele — Wohin, mit Budget und bester Reisezeit",
+    "description": "Stöbere durch unsere Reiseziel-Guides: was du machst, was ein Tag kostet, wann du fahren solltest. Filtere nach Land oder Vibe und mach daraus eine Gruppenreise."
   },
   "eyebrow": "Reiseziele",
-  "title": "Reisevorlagen,\nbereit zum Forken.",
-  "intro": "Echte Reiserouten für echte Gruppenreisen. Jedes Reiseziel unten ist eine komplette Vorlage – Tag-für-Tag-Plan, geprüfte Orte, ehrliches Budget, Packliste. Forke jede davon in deine eigene WePlanify-Reise und pass sie an deine Gruppe an.",
+  "title": "Also, wohin\ngeht's?",
+  "intro": "{count} Reiseziele, mit dem Praktischen: beste Reisezeit, wie du dich fortbewegst, was ein Tag wirklich kostet. Filtern, Guide öffnen, und daraus eine Reise machen, die ihr gemeinsam plant.",
   "filters": {
     "all": "Alle Reisen",
     "bachelorette": "Junggesellinnenabschied",
@@ -35,6 +35,7 @@
     "noResultsBody": "Versuch einen anderen Suchbegriff oder entferne ein paar Filter.",
     "reset": "Filter zurücksetzen",
     "countryEmpty": "Kein Land gefunden",
-    "budgetCaption": "pro Person"
+    "budgetCaption": "pro Person",
+    "cardCtaGuide": "Guide ansehen →"
   }
 }

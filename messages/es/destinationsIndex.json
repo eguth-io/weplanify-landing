@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Destinos — Plantillas de viajes en grupo por ciudad y ocasión",
-    "description": "Itinerarios de viajes en grupo reales y reservables: despedidas en Las Vegas y Nashville, Budapest, Marrakech, road trips por la Toscana y Andalucía, escapada a Lisboa. Planes día a día, lugares reales, presupuestos."
+    "title": "Destinos — Adónde ir, con presupuesto y mejor época",
+    "description": "Explora nuestras guías de destinos: qué hacer, cuánto cuesta un día, cuándo ir. Filtra por país o por ambiente y convierte cualquiera en un viaje en grupo."
   },
   "eyebrow": "Destinos",
-  "title": "Plantillas de viaje,\nlistas para copiar.",
-  "intro": "Itinerarios reales para viajes en grupo reales. Cada destino de abajo es una plantilla completa: plan día a día, lugares contrastados, presupuesto honesto, lista de equipaje. Copia cualquiera a tu propio viaje en WePlanify y adáptalo a tu grupo.",
+  "title": "Entonces,\n¿adónde vamos?",
+  "intro": "{count} destinos, con lo práctico: mejor época, cómo moverte, cuánto cuesta de verdad un día. Filtra, abre una guía y conviértela en un viaje que planificáis juntos.",
   "filters": {
     "all": "Todos los viajes",
     "bachelorette": "Despedida de soltera",
@@ -35,6 +35,7 @@
     "noResultsBody": "Prueba otra búsqueda o quita algún filtro.",
     "reset": "Borrar filtros",
     "countryEmpty": "Ningún país encontrado",
-    "budgetCaption": "por persona"
+    "budgetCaption": "por persona",
+    "cardCtaGuide": "Ver la guía →"
   }
 }

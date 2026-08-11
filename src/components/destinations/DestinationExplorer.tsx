@@ -24,6 +24,8 @@ export type ExplorerItem = {
   budget: { amount: string; caption: string } | null;
   /** Filter keys this item matches — API tags and/or a use case. */
   tags: string[];
+  /** Link wording: a curated itinerary and a city guide promise different things. */
+  cta: string;
 };
 
 export type ExplorerLabels = {
@@ -40,7 +42,6 @@ export type ExplorerLabels = {
   noResults: string;
   noResultsBody: string;
   reset: string;
-  cardCta: string;
 };
 
 type Props = {
@@ -260,7 +261,7 @@ export default function DestinationExplorer({
                       </div>
                     )}
                     <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
-                      {labels.cardCta}
+                      {item.cta}
                     </span>
                   </div>
                 </div>

@@ -104,6 +104,7 @@ export default async function DestinationsIndexPage({ params }: Props) {
       image: d.hero.image,
       imageAlt: d.hero.imageAlt[loc],
       badges: [getUseCaseLabel(d.useCase, loc), `${d.days} ${t("days")}`],
+      cta: t("cardCta"),
       budget: {
         amount: `${symbol}${d.budget.perPerson.low}–${symbol}${d.budget.perPerson.high}`,
         caption: t("explorer.budgetCaption"),
@@ -124,6 +125,7 @@ export default async function DestinationsIndexPage({ params }: Props) {
     badges: [],
     // The list endpoint carries no budget; only the guide itself has one.
     budget: null,
+    cta: t("explorer.cardCtaGuide"),
     tags: item.tags ?? [],
   }));
 
@@ -230,7 +232,7 @@ export default async function DestinationsIndexPage({ params }: Props) {
                 {t("title")}
               </h1>
               <p className="text-base lg:text-lg font-karla text-[#001E13]/75 max-w-2xl mx-auto leading-relaxed">
-                {t("intro")}
+                {t("intro", { count: explorerItems.length })}
               </p>
             </div>
           </div>
@@ -253,7 +255,6 @@ export default async function DestinationsIndexPage({ params }: Props) {
                   noResults: t("explorer.noResults"),
                   noResultsBody: t("explorer.noResultsBody"),
                   reset: t("explorer.reset"),
-                  cardCta: t("cardCta"),
                 }}
               />
             </div>

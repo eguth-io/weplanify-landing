@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Destinations — Templates de voyage de groupe par ville",
-    "description": "De vrais itinéraires de voyage de groupe : EVJF Las Vegas, Nashville, Budapest, Marrakech, road trips Toscane et Andalousie, Lisbonne entre amis. Programmes jour par jour, vraies adresses, budgets."
+    "title": "Destinations — Où partir, avec budget et meilleure saison",
+    "description": "Parcours nos guides destination : quoi faire, ce que coûte une journée, quand y aller. Filtre par pays ou par ambiance, puis transforme-en un en voyage de groupe."
   },
   "eyebrow": "Destinations",
-  "title": "Des templates de voyage,\nprêts à reprendre.",
-  "intro": "De vrais itinéraires pour de vrais voyages de groupe. Chaque destination ci-dessous est un template complet — programme jour par jour, bonnes adresses, budget honnête, liste à emporter. Reprends-en un dans ton WePlanify et adapte-le à ta team.",
+  "title": "Bon, on part\noù ?",
+  "intro": "{count} destinations, avec le concret : meilleure saison, comment se déplacer, ce que coûte vraiment une journée. Filtre, ouvre un guide, et transforme-le en voyage que ta team planifie ensemble.",
   "filters": {
     "all": "Tous les voyages",
     "bachelorette": "EVJF",
@@ -35,6 +35,7 @@
     "noResultsBody": "Essaie une autre recherche, ou enlève un filtre ou deux.",
     "reset": "Effacer les filtres",
     "countryEmpty": "Aucun pays trouvé",
-    "budgetCaption": "par personne"
+    "budgetCaption": "par personne",
+    "cardCtaGuide": "Voir le guide →"
   }
 }

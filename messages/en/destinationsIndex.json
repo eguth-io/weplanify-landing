@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Destinations — Group Trip Templates by City & Use Case",
-    "description": "Real, bookable group trip itineraries: Las Vegas & Nashville bachelorette, Budapest, Marrakech, Tuscany & Andalusia road trips, Lisbon weekend. Day-by-day plans, real spots, budgets."
+    "title": "Destinations — Where to Go, With Budgets and Best Season",
+    "description": "Browse our destination guides: what to do, what a day costs, when to go. Filter by country or vibe, then turn any of them into a group trip you plan together."
   },
   "eyebrow": "Destinations",
-  "title": "Trip templates,\nready to fork.",
-  "intro": "Real itineraries for real group trips. Each destination below is a full template — day-by-day plan, vetted spots, honest budget, packing list. Fork any of them into your own WePlanify trip and bend it to your group.",
+  "title": "So, where\nare we going?",
+  "intro": "{count} destinations, with the practical part: best season, getting around, what a day actually costs. Filter, open a guide, and fork it into a trip your group plans together.",
   "filters": {
     "all": "All trips",
     "bachelorette": "Bachelorette",
@@ -35,6 +35,7 @@
     "noResultsBody": "Try another search, or drop a filter or two.",
     "reset": "Clear filters",
     "countryEmpty": "No country found",
-    "budgetCaption": "per person"
+    "budgetCaption": "per person",
+    "cardCtaGuide": "See the guide →"
   }
 }
