@@ -7,6 +7,12 @@ import { routing } from "@/i18n/routing";
 
 // Derive sitemap locales from the routing config so adding a language is one place.
 const locales = routing.locales;
+/**
+ * Locales the hand-written catalogues (destinations/data.ts, travel guides)
+ * actually exist in. Everything else falls back to English at render time, so
+ * those URLs must not be advertised as translations.
+ */
+const WRITTEN_LOCALES = ["en", "fr"] as const;
 const xDefaultLocale = routing.defaultLocale;
 const featureSlugs = [
   "planning",
@@ -42,17 +48,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // backlog on the translated pages.
     // `pathFor` returns the path after siteUrl (with leading slash + locale),
     // so localized slugs (destinations/guides) can vary per locale.
+    // `onlyLocales` restricts the cluster to the languages a page is actually
+    // written in. Emitting the other six for an English-only page asked Google
+    // to index English content under /zh/, /pt/, /it/… — which it did.
     const pushLocalized = (
       pathFor: (locale: string) => string,
-      meta: EntryMeta
+      meta: EntryMeta,
+      onlyLocales: readonly string[] = locales
     ) => {
       const languages: Record<string, string> = {};
-      for (const locale of locales) {
+      for (const locale of onlyLocales) {
         languages[locale] = `${siteUrl}${pathFor(locale)}`;
       }
-      languages["x-default"] = `${siteUrl}${pathFor(xDefaultLocale)}`;
+      const xDefault = onlyLocales.includes(xDefaultLocale)
+        ? xDefaultLocale
+        : onlyLocales[0];
+      languages["x-default"] = `${siteUrl}${pathFor(xDefault)}`;
 
-      for (const locale of locales) {
+      for (const locale of onlyLocales) {
         entries.push({
           url: `${siteUrl}${pathFor(locale)}`,
           ...meta,
@@ -128,7 +141,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           lastModified: new Date(),
           changeFrequency: "monthly",
           priority: 0.85,
-        }
+        },
+        WRITTEN_LOCALES
       );
     }
 
@@ -163,7 +177,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           lastModified: new Date(),
           changeFrequency: "monthly",
           priority: 0.85,
-        }
+        },
+        WRITTEN_LOCALES
       );
     }
 

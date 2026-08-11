@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { setRequestLocale, getTranslations } from "next-intl/server";
@@ -178,6 +178,15 @@ export default async function DestinationPage({ params }: Props) {
 
   const loc: Locale = locale === "fr" ? "fr" : "en";
   const destination = findDestinationByLocalizedSlug(slug, loc);
+
+  // The curated itineraries only exist in English and French. Every other
+  // locale used to render them in English under its own prefix — and the
+  // sitemap advertised those URLs, so Google indexed them (20 impressions on
+  // /zh/destinations/las-vegas-bachelorette alone). Send them to the language
+  // the content is actually written in rather than serving a lie.
+  if (destination && locale !== "en" && locale !== "fr") {
+    permanentRedirect(`/en/destinations/${destination.slug.en}`);
+  }
 
   const navData = NAV_CONTENT;
   const navigationData = null;
