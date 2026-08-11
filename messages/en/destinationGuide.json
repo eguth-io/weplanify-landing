@@ -46,6 +46,10 @@
     "gettingAroundQuestion": "How do you get around {city}?"
   },
   "metaTitle": "{city} Trip Planner",
+  "beforeYouGo": {
+    "heading": "Before you go",
+    "disclosure": "Affiliate links — at no extra cost to you."
+  },
   "esim": {
     "badge": "Stay connected",
     "heading": "Get an eSIM before you land",
@@ -53,6 +57,13 @@
     "body": "No roaming bill, no queue at a kiosk. Install a data plan before you leave and {city} has mobile data the second you switch off airplane mode.",
     "cta": "See eSIM plans",
     "ctaCountry": "See {country} eSIM plans",
+    "disclosure": "Affiliate link — at no extra cost to you."
+  },
+  "vpn": {
+    "badge": "Stay private",
+    "heading": "Travel with a VPN",
+    "body": "Hotel, café and airport Wi-Fi is shared with strangers. A VPN encrypts your connection — your banking, your inbox and the streaming you already pay for keep working in {city} just like at home.",
+    "cta": "See NordVPN plans",
     "disclosure": "Affiliate link — at no extra cost to you."
   }
 }

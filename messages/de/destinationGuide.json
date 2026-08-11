@@ -46,6 +46,10 @@
     "gettingAroundQuestion": "Wie kommt man in {city} herum?"
   },
   "metaTitle": "{city} Reiseplaner",
+  "beforeYouGo": {
+    "heading": "Vor der Abreise",
+    "disclosure": "Affiliate-Links — ohne Mehrkosten für dich."
+  },
   "esim": {
     "badge": "Verbunden bleiben",
     "heading": "Hol dir eine eSIM vor der Landung",
@@ -53,6 +57,13 @@
     "body": "Keine Roaming-Rechnung, kein Anstehen am Kiosk. Installiere dein Datenpaket vor der Abreise und {city} hat Netz, sobald du den Flugmodus ausschaltest.",
     "cta": "eSIM-Tarife ansehen",
     "ctaCountry": "eSIM-Tarife für {country}",
+    "disclosure": "Affiliate-Link — ohne Mehrkosten für dich."
+  },
+  "vpn": {
+    "badge": "Privat bleiben",
+    "heading": "Mit VPN unterwegs",
+    "body": "Das WLAN im Hotel, im Café und am Flughafen teilst du dir mit Fremden. Ein VPN verschlüsselt deine Verbindung — Banking, Mails und deine Streaming-Abos funktionieren in {city} wie zu Hause.",
+    "cta": "NordVPN ansehen",
     "disclosure": "Affiliate-Link — ohne Mehrkosten für dich."
   }
 }

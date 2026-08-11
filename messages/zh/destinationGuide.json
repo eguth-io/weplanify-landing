@@ -46,6 +46,10 @@
     "gettingAroundQuestion": "在{city}怎么出行？"
   },
   "metaTitle": "{city}旅行攻略",
+  "beforeYouGo": {
+    "heading": "出发前",
+    "disclosure": "联盟链接——你无需支付额外费用。"
+  },
   "esim": {
     "badge": "保持联网",
     "heading": "落地前先备好 eSIM",
@@ -53,6 +57,13 @@
     "body": "不用付漫游费，也不用在柜台排队。出发前装好流量套餐，一到{city}关掉飞行模式就有网。",
     "cta": "查看 eSIM 套餐",
     "ctaCountry": "查看{country} eSIM 套餐",
+    "disclosure": "联盟链接——你无需支付额外费用。"
+  },
+  "vpn": {
+    "badge": "保护隐私",
+    "heading": "带上 VPN 再出发",
+    "body": "酒店、咖啡馆和机场的 Wi-Fi 都与陌生人共用。VPN 会加密你的连接——在{city}，网银、邮箱和你已经付费的流媒体都能像在家一样正常使用。",
+    "cta": "查看 NordVPN 套餐",
     "disclosure": "联盟链接——你无需支付额外费用。"
   }
 }
