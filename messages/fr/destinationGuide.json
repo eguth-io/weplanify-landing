@@ -46,6 +46,10 @@
     "gettingAroundQuestion": "Comment se déplacer à {city} ?"
   },
   "metaTitle": "Que faire à {city}",
+  "beforeYouGo": {
+    "heading": "Avant de partir",
+    "disclosure": "Liens affiliés — sans surcoût pour toi."
+  },
   "esim": {
     "badge": "Rester connecté",
     "heading": "Prends une eSIM avant d'atterrir",
@@ -53,6 +57,13 @@
     "body": "Pas de facture d'itinérance, pas de file d'attente à un kiosque. Installe ton forfait data avant de partir et {city} a du réseau dès que tu coupes le mode avion.",
     "cta": "Voir les forfaits eSIM",
     "ctaCountry": "Voir les eSIM pour {country}",
+    "disclosure": "Lien affilié — sans surcoût pour toi."
+  },
+  "vpn": {
+    "badge": "Rester protégé",
+    "heading": "Voyager avec un VPN",
+    "body": "Le wifi de l'hôtel, du café et de l'aéroport, tu le partages avec des inconnus. Un VPN chiffre ta connexion : ta banque, tes mails et le streaming que tu paies déjà marchent à {city} comme à la maison.",
+    "cta": "Voir les offres NordVPN",
     "disclosure": "Lien affilié — sans surcoût pour toi."
   }
 }

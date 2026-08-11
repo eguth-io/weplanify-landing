@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 import FadeIn from "@/components/FadeIn";
 import Breadcrumb from "@/components/Breadcrumb";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
-import EsimBlock from "@/components/destinations/EsimBlock";
+import BeforeYouGoBlock from "@/components/destinations/BeforeYouGoBlock";
 
 import type {
   DestinationGuide,
@@ -404,14 +404,23 @@ export default async function DestinationGuideView({
         </FadeIn>
       )}
 
-      {/* eSIM (Saily affiliate) — sits with the practical section on purpose */}
+      {/* Before you go (eSIM + VPN affiliates) — shares the practical section's
+          background so it reads as the last item of "Good to know" */}
       <FadeIn>
-        <EsimBlock
-          city={guide.city}
-          country={guide.country}
-          countryAlpha2={guide.country_alpha2}
-          destinationSlug={guide.id}
-        />
+        <section
+          className={`${
+            hasPractical ? "pt-0" : "pt-16 lg:pt-24"
+          } pb-16 lg:pb-24 px-4 lg:px-8 bg-[#FFFBF5]`}
+        >
+          <div className="max-w-5xl mx-auto">
+            <BeforeYouGoBlock
+              city={guide.city}
+              country={guide.country}
+              countryAlpha2={guide.country_alpha2}
+              destinationSlug={guide.id}
+            />
+          </div>
+        </section>
       </FadeIn>
 
       {/* Budget (AI-estimated, per person per day, three tiers) */}

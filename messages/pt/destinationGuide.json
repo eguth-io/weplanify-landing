@@ -46,6 +46,10 @@
     "gettingAroundQuestion": "Como se deslocar em {city}?"
   },
   "metaTitle": "O que ver em {city}",
+  "beforeYouGo": {
+    "heading": "Antes de partires",
+    "disclosure": "Links de afiliado — sem custo adicional para ti."
+  },
   "esim": {
     "badge": "Fica ligado",
     "heading": "Compra um eSIM antes de aterrar",
@@ -53,6 +57,13 @@
     "body": "Sem fatura de roaming nem filas num quiosque. Instala o teu plano de dados antes de partir e {city} tem rede assim que desligas o modo avião.",
     "cta": "Ver planos eSIM",
     "ctaCountry": "Ver eSIM para {country}",
+    "disclosure": "Link de afiliado — sem custo adicional para ti."
+  },
+  "vpn": {
+    "badge": "Fica protegido",
+    "heading": "Viaja com VPN",
+    "body": "O wi-fi do hotel, do café e do aeroporto é partilhado com desconhecidos. Uma VPN encripta a tua ligação: o banco, o email e o streaming que já pagas continuam a funcionar em {city} como em casa.",
+    "cta": "Ver planos NordVPN",
     "disclosure": "Link de afiliado — sem custo adicional para ti."
   }
 }

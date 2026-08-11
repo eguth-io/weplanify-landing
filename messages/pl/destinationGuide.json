@@ -46,6 +46,10 @@
     "gettingAroundQuestion": "Jak poruszać się po {city}?"
   },
   "metaTitle": "{city} — co zobaczyć",
+  "beforeYouGo": {
+    "heading": "Zanim wyruszysz",
+    "disclosure": "Linki afiliacyjne — bez dodatkowych kosztów dla ciebie."
+  },
   "esim": {
     "badge": "Bądź online",
     "heading": "Kup eSIM, zanim wylądujesz",
@@ -53,6 +57,13 @@
     "body": "Żadnego rachunku za roaming ani kolejki w kiosku. Zainstaluj pakiet danych przed wyjazdem, a {city} ma zasięg, gdy tylko wyłączysz tryb samolotowy.",
     "cta": "Zobacz pakiety eSIM",
     "ctaCountry": "Zobacz eSIM na {country}",
+    "disclosure": "Link afiliacyjny — bez dodatkowych kosztów dla ciebie."
+  },
+  "vpn": {
+    "badge": "Zadbaj o prywatność",
+    "heading": "Podróżuj z VPN",
+    "body": "Wi-Fi w hotelu, kawiarni i na lotnisku dzielisz z obcymi. VPN szyfruje połączenie — bank, poczta i streaming, za który już płacisz, działają w {city} tak jak w domu.",
+    "cta": "Zobacz oferty NordVPN",
     "disclosure": "Link afiliacyjny — bez dodatkowych kosztów dla ciebie."
   }
 }
