@@ -7,6 +7,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 import Breadcrumb from "@/components/Breadcrumb";
+import DestinationExplorer from "@/components/destinations/DestinationExplorer";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
 
@@ -263,50 +264,22 @@ export default async function DestinationsIndexPage({ params }: Props) {
                   </span>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {apiDestinations.map((item) => (
-                    <Link
-                      key={item.id}
-                      href={`/${locale}/destinations/${item.id}`}
-                      className="group"
-                    >
-                      <article className="bg-white border border-[#001E13]/10 rounded-3xl overflow-hidden hover:shadow-lg hover:border-[#F6391A]/30 transition-all duration-300 h-full flex flex-col">
-                        {item.cover && (
-                          <div className="relative aspect-[4/3] overflow-hidden">
-                            <Image
-                              src={item.cover.url}
-                              alt={item.city}
-                              fill
-                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                              className="object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                          </div>
-                        )}
-                        <div className="p-6 flex-1 flex flex-col">
-                          <div className="flex gap-2 mb-3 flex-wrap">
-                            {item.country && (
-                              <span className="bg-[#EEF899] text-[#001E13] px-3 py-1 rounded-full text-xs font-karla font-bold">
-                                {item.flag ? `${item.flag} ` : ""}
-                                {item.country}
-                              </span>
-                            )}
-                          </div>
-                          <h3 className="text-2xl font-londrina-solid text-[#001E13] mb-2">
-                            {item.city}
-                          </h3>
-                          {item.tagline && (
-                            <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4 flex-1">
-                              {item.tagline}
-                            </p>
-                          )}
-                          <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-auto">
-                            {t("cardCta")}
-                          </span>
-                        </div>
-                      </article>
-                    </Link>
-                  ))}
-                </div>
+                <DestinationExplorer
+                  items={apiDestinations}
+                  locale={locale}
+                  labels={{
+                    searchPlaceholder: t("explorer.searchPlaceholder"),
+                    allCountries: t("explorer.allCountries"),
+                    results: t.raw("explorer.results") as Record<
+                      string,
+                      string
+                    >,
+                    noResults: t("explorer.noResults"),
+                    noResultsBody: t("explorer.noResultsBody"),
+                    reset: t("explorer.reset"),
+                    cardCta: t("cardCta"),
+                  }}
+                />
               </div>
             </section>
           </FadeIn>

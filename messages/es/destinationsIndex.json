@@ -23,5 +23,16 @@
   },
   "days": "días",
   "apiSectionHeading": "Ciudades para explorar",
-  "destinationsCount": "{count, plural, one {destino} other {destinos}}"
+  "destinationsCount": "{count, plural, one {destino} other {destinos}}",
+  "explorer": {
+    "searchPlaceholder": "Busca una ciudad o un país",
+    "allCountries": "Todos los países",
+    "results": {
+      "one": "resultado",
+      "other": "resultados"
+    },
+    "noResults": "Nada por aquí",
+    "noResultsBody": "Prueba otra búsqueda o quita algún filtro.",
+    "reset": "Borrar filtros"
+  }
 }

@@ -23,5 +23,18 @@
   },
   "days": "dni",
   "apiSectionHeading": "Miasta do odkrycia",
-  "destinationsCount": "{count, plural, one {kierunek} few {kierunki} many {kierunków} other {kierunku}}"
+  "destinationsCount": "{count, plural, one {kierunek} few {kierunki} many {kierunków} other {kierunku}}",
+  "explorer": {
+    "searchPlaceholder": "Szukaj miasta lub kraju",
+    "allCountries": "Wszystkie kraje",
+    "results": {
+      "one": "wynik",
+      "few": "wyniki",
+      "many": "wyników",
+      "other": "wyniku"
+    },
+    "noResults": "Nic tu nie ma",
+    "noResultsBody": "Spróbuj innego hasła albo usuń któryś filtr.",
+    "reset": "Wyczyść filtry"
+  }
 }

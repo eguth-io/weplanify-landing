@@ -23,5 +23,16 @@
   },
   "days": "Tage",
   "apiSectionHeading": "Städte zum Entdecken",
-  "destinationsCount": "{count, plural, one {Reiseziel} other {Reiseziele}}"
+  "destinationsCount": "{count, plural, one {Reiseziel} other {Reiseziele}}",
+  "explorer": {
+    "searchPlaceholder": "Stadt oder Land suchen",
+    "allCountries": "Alle Länder",
+    "results": {
+      "one": "Ergebnis",
+      "other": "Ergebnisse"
+    },
+    "noResults": "Nichts gefunden",
+    "noResultsBody": "Versuch einen anderen Suchbegriff oder entferne ein paar Filter.",
+    "reset": "Filter zurücksetzen"
+  }
 }

@@ -23,5 +23,15 @@
   },
   "days": "天",
   "apiSectionHeading": "探索城市",
-  "destinationsCount": "{count, plural, one {个目的地} other {个目的地}}"
+  "destinationsCount": "{count, plural, one {个目的地} other {个目的地}}",
+  "explorer": {
+    "searchPlaceholder": "搜索城市或国家",
+    "allCountries": "所有国家",
+    "results": {
+      "other": "个结果"
+    },
+    "noResults": "这里什么都没有",
+    "noResultsBody": "换个关键词试试，或者去掉一两个筛选条件。",
+    "reset": "清除筛选"
+  }
 }
