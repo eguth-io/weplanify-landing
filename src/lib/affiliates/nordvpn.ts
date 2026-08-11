@@ -6,15 +6,19 @@
  * link must be built here. Note the affiliate id differs from the Saily one —
  * they are two separate accounts on two separate tracking domains.
  *
- * Unlike Saily there is no per-country landing page to pick from: NordVPN gave
- * us a single url_id, so the only reporting we get is through the sub ids.
+ * No `url_id` on purpose. The one we were emailed (1172) pins every reader to
+ * the French page, which is wrong on seven of our eight locales, and the rest
+ * of the dashboard list is other publishers' coupon pages — not ours to use.
+ * The default URL localises itself, so the only reporting we get is the sub ids.
  */
 
 const TRACKING_BASE = "https://go.nordvpn.net/aff_c";
 
 const OFFER_ID = "15";
-const AFFILIATE_ID = "15541";
-const LANDING_PAGE_ID = "1172";
+// Read off the dashboard's own tracking link. The affiliate manager's email
+// gave 15541, one digit short, which 404s — check this against the dashboard,
+// never against the email, if links ever stop redirecting.
+const AFFILIATE_ID = "154541";
 
 export type NordvpnLinkParams = {
   /** Destination slug — reported as sub id 2 so we can rank pages by revenue. */
@@ -31,7 +35,6 @@ export function buildNordvpnUrl({
   const params = new URLSearchParams({
     offer_id: OFFER_ID,
     aff_id: AFFILIATE_ID,
-    url_id: LANDING_PAGE_ID,
   });
 
   // Sub ids are our own reporting dimensions in the NordVPN performance report.
