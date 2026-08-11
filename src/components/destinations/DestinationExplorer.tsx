@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
+import CountryFilter from "@/components/destinations/CountryFilter";
+import { normalizeText } from "@/lib/normalize-text";
+
 export type ExplorerItem = {
   /** Unique key and search target. */
   id: string;
@@ -15,8 +18,10 @@ export type ExplorerItem = {
   tagline: string | null;
   image: string | null;
   imageAlt: string;
-  /** Extra pills on the card, e.g. "7 days" or a budget range. */
+  /** Extra pills on the card, e.g. "7 days" or the use case. */
   badges: string[];
+  /** Headline budget, when we have one: shown as a figure, not a pill. */
+  budget: { amount: string; caption: string } | null;
   /** Filter keys this item matches — API tags and/or a use case. */
   tags: string[];
 };
@@ -31,6 +36,7 @@ export type ExplorerLabels = {
    * than the catalogue this page deliberately keeps server-side.
    */
   results: Record<string, string>;
+  countryEmpty: string;
   noResults: string;
   noResultsBody: string;
   reset: string;
@@ -44,14 +50,6 @@ type Props = {
   locale: string;
   labels: ExplorerLabels;
 };
-
-/** Lowercase and strip accents so "malaga" matches "Málaga". */
-function normalize(value: string): string {
-  return value
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-}
 
 /**
  * The whole destinations index: search, country and tag filters over one grid.
@@ -83,12 +81,12 @@ export default function DestinationExplorer({
       counts.set(item.country, (counts.get(item.country) ?? 0) + 1);
     }
     return [...counts.entries()].sort((a, b) =>
-      a[0].localeCompare(b[0], locale)
+      a[0].localeCompare(b[0], locale),
     );
   }, [items, locale]);
 
   const filtered = useMemo(() => {
-    const needle = normalize(query.trim());
+    const needle = normalizeText(query.trim());
     return items.filter((item) => {
       if (country && item.country !== country) return false;
       // Every selected tag must match: chips narrow the list rather than widen it.
@@ -96,8 +94,8 @@ export default function DestinationExplorer({
         return false;
       }
       if (!needle) return true;
-      const haystack = normalize(
-        [item.city, item.country ?? "", item.tagline ?? ""].join(" ")
+      const haystack = normalizeText(
+        [item.city, item.country ?? "", item.tagline ?? ""].join(" "),
       );
       return haystack.includes(needle);
     });
@@ -114,7 +112,7 @@ export default function DestinationExplorer({
     setTags((current) =>
       current.includes(tag)
         ? current.filter((t) => t !== tag)
-        : [...current, tag]
+        : [...current, tag],
     );
   }
 
@@ -127,74 +125,69 @@ export default function DestinationExplorer({
   return (
     <div>
       {/* Filter bar — sticks under the nav so it stays reachable while scrolling */}
-      <div className="sticky top-[72px] z-20 -mx-4 lg:-mx-8 px-4 lg:px-8 py-4 bg-[#FFFBF5]/95 backdrop-blur-sm border-b border-[#001E13]/10 mb-8">
-        <div className="flex flex-col lg:flex-row lg:items-center gap-3 mb-3">
-          <label className="flex-1 relative">
-            <span className="sr-only">{labels.searchPlaceholder}</span>
-            <span
-              aria-hidden="true"
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-[#001E13]/40"
-            >
-              ⌕
-            </span>
-            <input
-              type="search"
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder={labels.searchPlaceholder}
-              className="w-full font-karla text-base bg-white border border-[#001E13]/15 rounded-full pl-10 pr-4 py-2.5 text-[#001E13] placeholder:text-[#001E13]/40 focus:outline-none focus:border-[#F6391A]"
+      <div className="sticky top-[78px] lg:top-[98px] z-30 mb-8">
+        <div className="bg-white/95 backdrop-blur-sm border border-[#001E13]/10 rounded-3xl shadow-sm p-4">
+          <div className="flex flex-col lg:flex-row lg:items-center gap-3 mb-3">
+            <label className="flex-1 relative">
+              <span className="sr-only">{labels.searchPlaceholder}</span>
+              <span
+                aria-hidden="true"
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-[#001E13]/40"
+              >
+                ⌕
+              </span>
+              <input
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder={labels.searchPlaceholder}
+                className="w-full font-karla text-base bg-white border border-[#001E13]/15 rounded-full pl-10 pr-4 py-2.5 text-[#001E13] placeholder:text-[#001E13]/40 focus:outline-none focus:border-[#F6391A]"
+              />
+            </label>
+
+            <CountryFilter
+              countries={countries}
+              value={country}
+              onChange={setCountry}
+              labels={{ all: labels.allCountries, empty: labels.countryEmpty }}
             />
-          </label>
+          </div>
 
-          <select
-            value={country}
-            onChange={(event) => setCountry(event.target.value)}
-            aria-label={labels.allCountries}
-            className="font-karla text-base bg-white border border-[#001E13]/15 rounded-full px-4 py-2.5 text-[#001E13] focus:outline-none focus:border-[#F6391A] lg:w-64"
-          >
-            <option value="">{labels.allCountries}</option>
-            {countries.map(([name, count]) => (
-              <option key={name} value={name}>
-                {name} ({count})
-              </option>
-            ))}
-          </select>
-        </div>
+          <div className="flex flex-wrap items-center gap-2">
+            {tagOptions.map(({ key, label }) => {
+              const active = tags.includes(key);
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  onClick={() => toggleTag(key)}
+                  aria-pressed={active}
+                  className={`px-3 py-1 rounded-full text-xs font-karla font-bold border transition-colors ${
+                    active
+                      ? "bg-[#001E13] text-[#FFFBF5] border-[#001E13]"
+                      : "bg-white text-[#001E13] border-[#001E13]/15 hover:border-[#001E13]/40"
+                  }`}
+                >
+                  {label}
+                </button>
+              );
+            })}
 
-        <div className="flex flex-wrap items-center gap-2">
-          {tagOptions.map(({ key, label }) => {
-            const active = tags.includes(key);
-            return (
-              <button
-                key={key}
-                type="button"
-                onClick={() => toggleTag(key)}
-                aria-pressed={active}
-                className={`px-3 py-1 rounded-full text-xs font-karla font-bold border transition-colors ${
-                  active
-                    ? "bg-[#001E13] text-[#FFFBF5] border-[#001E13]"
-                    : "bg-white text-[#001E13] border-[#001E13]/15 hover:border-[#001E13]/40"
-                }`}
-              >
-                {label}
-              </button>
-            );
-          })}
-
-          <span className="ml-auto flex items-center gap-3 text-sm font-karla text-[#001E13]/60">
-            <span aria-live="polite">
-              {filtered.length} {resultsLabel}
+            <span className="ml-auto flex items-center gap-3 text-sm font-karla text-[#001E13]/60">
+              <span aria-live="polite">
+                {filtered.length} {resultsLabel}
+              </span>
+              {hasFilters && (
+                <button
+                  type="button"
+                  onClick={reset}
+                  className="font-bold text-[#F6391A] hover:underline"
+                >
+                  {labels.reset}
+                </button>
+              )}
             </span>
-            {hasFilters && (
-              <button
-                type="button"
-                onClick={reset}
-                className="font-bold text-[#F6391A] hover:underline"
-              >
-                {labels.reset}
-              </button>
-            )}
-          </span>
+          </div>
         </div>
       </div>
 
@@ -255,9 +248,21 @@ export default function DestinationExplorer({
                       {item.tagline}
                     </p>
                   )}
-                  <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-auto">
-                    {labels.cardCta}
-                  </span>
+                  <div className="mt-auto">
+                    {item.budget && (
+                      <div className="flex items-baseline gap-2 pt-4 mb-3 border-t border-[#001E13]/10">
+                        <span className="text-2xl font-londrina-solid text-[#001E13] leading-none">
+                          {item.budget.amount}
+                        </span>
+                        <span className="font-karla text-xs text-[#001E13]/55">
+                          {item.budget.caption}
+                        </span>
+                      </div>
+                    )}
+                    <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline">
+                      {labels.cardCta}
+                    </span>
+                  </div>
                 </div>
               </article>
             </Link>

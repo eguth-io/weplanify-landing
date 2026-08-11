@@ -33,6 +33,8 @@
     },
     "noResults": "Nada por aqui",
     "noResultsBody": "Tenta outra pesquisa, ou tira um filtro ou dois.",
-    "reset": "Limpar filtros"
+    "reset": "Limpar filtros",
+    "countryEmpty": "Nenhum país encontrado",
+    "budgetCaption": "por pessoa"
   }
 }

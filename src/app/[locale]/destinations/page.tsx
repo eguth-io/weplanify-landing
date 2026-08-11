@@ -11,7 +11,6 @@ import DestinationExplorer, {
 } from "@/components/destinations/DestinationExplorer";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
 
-
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
 import {
@@ -61,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: currentUrl,
       languages: {
         ...Object.fromEntries(
-          routing.locales.map((l) => [l, `${SITE_URL}/${l}${PATHNAME}`])
+          routing.locales.map((l) => [l, `${SITE_URL}/${l}${PATHNAME}`]),
         ),
         "x-default": `${SITE_URL}/en${PATHNAME}`,
       },
@@ -104,11 +103,11 @@ export default async function DestinationsIndexPage({ params }: Props) {
       tagline: d.meta.description[loc],
       image: d.hero.image,
       imageAlt: d.hero.imageAlt[loc],
-      badges: [
-        getUseCaseLabel(d.useCase, loc),
-        `${d.days} ${t("days")}`,
-        `${symbol}${d.budget.perPerson.low}–${symbol}${d.budget.perPerson.high}`,
-      ],
+      badges: [getUseCaseLabel(d.useCase, loc), `${d.days} ${t("days")}`],
+      budget: {
+        amount: `${symbol}${d.budget.perPerson.low}–${symbol}${d.budget.perPerson.high}`,
+        caption: t("explorer.budgetCaption"),
+      },
       tags: [d.useCase],
     };
   });
@@ -123,6 +122,8 @@ export default async function DestinationsIndexPage({ params }: Props) {
     image: item.cover?.url ?? null,
     imageAlt: item.city,
     badges: [],
+    // The list endpoint carries no budget; only the guide itself has one.
+    budget: null,
     tags: item.tags ?? [],
   }));
 
@@ -247,6 +248,7 @@ export default async function DestinationsIndexPage({ params }: Props) {
                 labels={{
                   searchPlaceholder: t("explorer.searchPlaceholder"),
                   allCountries: t("explorer.allCountries"),
+                  countryEmpty: t("explorer.countryEmpty"),
                   results: t.raw("explorer.results") as Record<string, string>,
                   noResults: t("explorer.noResults"),
                   noResultsBody: t("explorer.noResultsBody"),

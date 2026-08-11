@@ -32,6 +32,8 @@
     },
     "noResults": "这里什么都没有",
     "noResultsBody": "换个关键词试试，或者去掉一两个筛选条件。",
-    "reset": "清除筛选"
+    "reset": "清除筛选",
+    "countryEmpty": "未找到国家",
+    "budgetCaption": "每人"
   }
 }
