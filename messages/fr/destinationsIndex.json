@@ -4,7 +4,7 @@
     "description": "Parcours nos guides destination : quoi faire, ce que coûte une journée, quand y aller. Filtre par pays ou par ambiance, puis transforme-en un en voyage de groupe."
   },
   "eyebrow": "Destinations",
-  "title": "Bon, on part\noù ?",
+  "title": "On part où ?",
   "intro": "{count} destinations, avec le concret : meilleure saison, comment se déplacer, ce que coûte vraiment une journée. Filtre, ouvre un guide, et transforme-le en voyage que ta team planifie ensemble.",
   "filters": {
     "all": "Tous les voyages",

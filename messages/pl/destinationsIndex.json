@@ -4,7 +4,7 @@
     "description": "Przeglądaj nasze przewodniki: co robić, ile kosztuje dzień, kiedy jechać. Filtruj po kraju lub klimacie i zamień dowolny kierunek we wspólny wyjazd."
   },
   "eyebrow": "Kierunki",
-  "title": "No to dokąd\njedziemy?",
+  "title": "Dokąd jedziemy?",
   "intro": "{count} kierunków i konkrety: najlepsza pora, jak się poruszać, ile naprawdę kosztuje dzień. Filtruj, otwórz przewodnik i zrób z niego wyjazd, który planujecie razem.",
   "filters": {
     "all": "Wszystkie wyjazdy",

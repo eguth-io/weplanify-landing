@@ -4,7 +4,7 @@
     "description": "Sfoglia le nostre guide alle destinazioni: cosa fare, quanto costa una giornata, quando andare. Filtra per paese o atmosfera e trasformale in un viaggio di gruppo."
   },
   "eyebrow": "Destinazioni",
-  "title": "Allora, dove\nandiamo?",
+  "title": "Dove andiamo?",
   "intro": "{count} destinazioni, con il concreto: periodo migliore, come muoverti, quanto costa davvero una giornata. Filtra, apri una guida e trasformala in un viaggio da organizzare insieme.",
   "filters": {
     "all": "Tutti i viaggi",

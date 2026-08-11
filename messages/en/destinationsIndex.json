@@ -4,7 +4,7 @@
     "description": "Browse our destination guides: what to do, what a day costs, when to go. Filter by country or vibe, then turn any of them into a group trip you plan together."
   },
   "eyebrow": "Destinations",
-  "title": "So, where\nare we going?",
+  "title": "Where are we going?",
   "intro": "{count} destinations, with the practical part: best season, getting around, what a day actually costs. Filter, open a guide, and fork it into a trip your group plans together.",
   "filters": {
     "all": "All trips",
