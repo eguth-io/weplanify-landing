@@ -85,6 +85,12 @@ const COUNTRY_LANDING_PAGES: Record<string, number> = {
   ZA: 651,
 };
 
+/**
+ * Discount Saily gave us for our audience. Shown next to the link so the block
+ * offers a reason to click rather than a bare outbound link.
+ */
+export const SAILY_COUPON = "WEPLANIFY";
+
 export type SailyLinkParams = {
   /** ISO alpha-2 of the destination country, as returned by the public API. */
   countryAlpha2: string | null;

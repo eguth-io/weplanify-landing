@@ -57,7 +57,8 @@
     "body": "Keine Roaming-Rechnung, kein Anstehen am Kiosk. Installiere dein Datenpaket vor der Abreise und {city} hat Netz, sobald du den Flugmodus ausschaltest.",
     "cta": "eSIM-Tarife ansehen",
     "ctaCountry": "eSIM-Tarife für {country}",
-    "disclosure": "Affiliate-Link — ohne Mehrkosten für dich."
+    "disclosure": "Affiliate-Link — ohne Mehrkosten für dich.",
+    "promo": "10 % Rabatt mit dem Code {code}"
   },
   "vpn": {
     "badge": "Privat bleiben",

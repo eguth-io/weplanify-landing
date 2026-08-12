@@ -57,7 +57,8 @@
     "body": "Żadnego rachunku za roaming ani kolejki w kiosku. Zainstaluj pakiet danych przed wyjazdem, a {city} ma zasięg, gdy tylko wyłączysz tryb samolotowy.",
     "cta": "Zobacz pakiety eSIM",
     "ctaCountry": "Zobacz eSIM na {country}",
-    "disclosure": "Link afiliacyjny — bez dodatkowych kosztów dla ciebie."
+    "disclosure": "Link afiliacyjny — bez dodatkowych kosztów dla ciebie.",
+    "promo": "10% taniej z kodem {code}"
   },
   "vpn": {
     "badge": "Zadbaj o prywatność",
