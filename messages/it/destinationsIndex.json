@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Destinazioni — Modelli di viaggio di gruppo per città e occasione",
-    "description": "Itinerari di viaggio di gruppo reali e prenotabili: addio al nubilato a Las Vegas e Nashville, Budapest, Marrakech, viaggi on the road in Toscana e Andalusia, weekend a Lisbona. Piani giorno per giorno, luoghi reali, budget."
+    "title": "Destinazioni — Dove andare, con budget e periodo migliore",
+    "description": "Sfoglia le nostre guide alle destinazioni: cosa fare, quanto costa una giornata, quando andare. Filtra per paese o atmosfera e trasformale in un viaggio di gruppo."
   },
   "eyebrow": "Destinazioni",
-  "title": "Modelli di viaggio,\npronti da copiare.",
-  "intro": "Itinerari reali per veri viaggi di gruppo. Ogni destinazione qui sotto è un modello completo — piano giorno per giorno, luoghi selezionati, budget onesto, lista per i bagagli. Copia uno qualsiasi nel tuo viaggio su WePlanify e adattalo al tuo gruppo.",
+  "title": "Dove andiamo?",
+  "intro": "{count} destinazioni, con il concreto: periodo migliore, come muoverti, quanto costa davvero una giornata. Filtra, apri una guida e trasformala in un viaggio da organizzare insieme.",
   "filters": {
     "all": "Tutti i viaggi",
     "bachelorette": "Addio al nubilato",
@@ -23,5 +23,19 @@
   },
   "days": "giorni",
   "apiSectionHeading": "Città da esplorare",
-  "destinationsCount": "{count, plural, one {destinazione} other {destinazioni}}"
+  "destinationsCount": "{count, plural, one {destinazione} other {destinazioni}}",
+  "explorer": {
+    "searchPlaceholder": "Cerca una città o un paese",
+    "allCountries": "Tutti i paesi",
+    "results": {
+      "one": "risultato",
+      "other": "risultati"
+    },
+    "noResults": "Niente qui",
+    "noResultsBody": "Prova un'altra ricerca, o togli un filtro o due.",
+    "reset": "Cancella i filtri",
+    "countryEmpty": "Nessun paese trovato",
+    "budgetCaption": "a persona",
+    "cardCtaGuide": "Vedi la guida →"
+  }
 }

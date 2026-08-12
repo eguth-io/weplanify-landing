@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 
@@ -7,8 +6,10 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 import Breadcrumb from "@/components/Breadcrumb";
+import DestinationExplorer, {
+  type ExplorerItem,
+} from "@/components/destinations/DestinationExplorer";
 import { PulsatingButton } from "@/components/magicui/pulsating-button";
-
 
 import { generateMetadataFromSanity } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
@@ -59,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: currentUrl,
       languages: {
         ...Object.fromEntries(
-          routing.locales.map((l) => [l, `${SITE_URL}/${l}${PATHNAME}`])
+          routing.locales.map((l) => [l, `${SITE_URL}/${l}${PATHNAME}`]),
         ),
         "x-default": `${SITE_URL}/en${PATHNAME}`,
       },
@@ -82,12 +83,75 @@ export default async function DestinationsIndexPage({ params }: Props) {
   const navigationData = null;
   const footerData = getFooterContent(locale);
 
-  // Group destinations by use case for the "by intent" sections.
   const useCases: DestinationUseCase[] = [
     "trip-planner",
     "bachelorette",
     "road-trip",
     "with-friends",
+  ];
+
+  // Both catalogues feed one grid. The curated itineraries keep their use case
+  // as a filter key so the index still links to them and they stay reachable.
+  const editorialItems: ExplorerItem[] = destinations.map((d) => {
+    const symbol = d.budget.perPerson.currency === "USD" ? "$" : "€";
+    return {
+      id: `editorial-${d.slug.en}`,
+      href: `/${locale}/destinations/${d.slug[loc]}`,
+      city: d.city[loc],
+      country: null,
+      flag: null,
+      tagline: d.meta.description[loc],
+      image: d.hero.image,
+      imageAlt: d.hero.imageAlt[loc],
+      badges: [getUseCaseLabel(d.useCase, loc), `${d.days} ${t("days")}`],
+      cta: t("cardCta"),
+      budget: {
+        amount: `${symbol}${d.budget.perPerson.low}–${symbol}${d.budget.perPerson.high}`,
+        caption: t("explorer.budgetCaption"),
+      },
+      tags: [d.useCase],
+    };
+  });
+
+  const apiItems: ExplorerItem[] = apiDestinations.map((item) => ({
+    id: item.id,
+    href: `/${locale}/destinations/${item.id}`,
+    city: item.city,
+    country: item.country,
+    flag: item.flag,
+    tagline: item.tagline,
+    image: item.cover?.url ?? null,
+    imageAlt: item.city,
+    badges: [],
+    // The list endpoint carries no budget; only the guide itself has one.
+    budget: null,
+    cta: t("explorer.cardCtaGuide"),
+    tags: item.tags ?? [],
+  }));
+
+  const explorerItems = [...editorialItems, ...apiItems];
+
+  // Use cases first — they are the editorial angles we rank on — then the
+  // vibe tags the API already returns translated, most common first.
+  const apiTagCounts = new Map<string, { label: string; count: number }>();
+  for (const item of apiDestinations) {
+    item.tags?.forEach((tag, index) => {
+      const existing = apiTagCounts.get(tag);
+      if (existing) existing.count += 1;
+      else
+        apiTagCounts.set(tag, {
+          label: item.tag_labels?.[index] ?? tag,
+          count: 1,
+        });
+    });
+  }
+  const tagOptions = [
+    ...useCases
+      .filter((useCase) => destinations.some((d) => d.useCase === useCase))
+      .map((useCase) => ({ key: useCase, label: filters[useCase] })),
+    ...[...apiTagCounts.entries()]
+      .sort((a, b) => b[1].count - a[1].count)
+      .map(([key, { label }]) => ({ key, label })),
   ];
 
   const breadcrumbLd = {
@@ -168,149 +232,34 @@ export default async function DestinationsIndexPage({ params }: Props) {
                 {t("title")}
               </h1>
               <p className="text-base lg:text-lg font-karla text-[#001E13]/75 max-w-2xl mx-auto leading-relaxed">
-                {t("intro")}
+                {t("intro", { count: explorerItems.length })}
               </p>
             </div>
           </div>
         </section>
 
-        {/* Sections grouped by use case */}
-        {useCases.map((useCase) => {
-          const items = destinations.filter((d) => d.useCase === useCase);
-          if (items.length === 0) return null;
-
-          return (
-            <FadeIn key={useCase}>
-              <section className="py-12 lg:py-16 px-4 lg:px-8">
-                <div className="max-w-6xl mx-auto">
-                  <div className="flex items-end justify-between gap-4 mb-8">
-                    <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13]">
-                      {filters[useCase]}
-                    </h2>
-                    <span className="text-sm lg:text-base font-karla text-[#001E13]/50">
-                      {items.length}{" "}
-                      {t("destinationsCount", { count: items.length })}
-                    </span>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {items.map((d) => {
-                      const currencySymbol =
-                        d.budget.perPerson.currency === "USD" ? "$" : "€";
-                      return (
-                        <Link
-                          key={d.slug.en}
-                          href={`/${locale}/destinations/${d.slug[loc]}`}
-                          className="group"
-                        >
-                          <article className="bg-white border border-[#001E13]/10 rounded-3xl overflow-hidden hover:shadow-lg hover:border-[#F6391A]/30 transition-all duration-300 h-full flex flex-col">
-                            <div className="relative aspect-[4/3] overflow-hidden">
-                              <Image
-                                src={d.hero.image}
-                                alt={d.hero.imageAlt[loc]}
-                                fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                              />
-                            </div>
-                            <div className="p-6 flex-1 flex flex-col">
-                              <div className="flex gap-2 mb-3 flex-wrap">
-                                <span className="bg-[#EEF899] text-[#001E13] px-3 py-1 rounded-full text-xs font-karla font-bold">
-                                  {getUseCaseLabel(d.useCase, loc)}
-                                </span>
-                                <span className="bg-[#001E13]/5 text-[#001E13] px-3 py-1 rounded-full text-xs font-karla">
-                                  {d.days} {t("days")}
-                                </span>
-                                <span className="bg-[#001E13]/5 text-[#001E13] px-3 py-1 rounded-full text-xs font-karla">
-                                  {currencySymbol}
-                                  {d.budget.perPerson.low}–{currencySymbol}
-                                  {d.budget.perPerson.high}
-                                </span>
-                              </div>
-                              <h3 className="text-2xl font-londrina-solid text-[#001E13] mb-2">
-                                {d.city[loc]}
-                              </h3>
-                              <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4 flex-1">
-                                {d.meta.description[loc]}
-                              </p>
-                              <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-auto">
-                                {t("cardCta")}
-                              </span>
-                            </div>
-                          </article>
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              </section>
-            </FadeIn>
-          );
-        })}
-
-        {/* API-driven destinations (city mini-guides) */}
-        {apiDestinations.length > 0 && (
-          <FadeIn>
-            <section className="py-12 lg:py-16 px-4 lg:px-8">
-              <div className="max-w-6xl mx-auto">
-                <div className="flex items-end justify-between gap-4 mb-8">
-                  <h2 className="text-2xl lg:text-4xl font-londrina-solid text-[#001E13]">
-                    {t("apiSectionHeading")}
-                  </h2>
-                  <span className="text-sm lg:text-base font-karla text-[#001E13]/50">
-                    {apiDestinations.length}{" "}
-                    {t("destinationsCount", { count: apiDestinations.length })}
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {apiDestinations.map((item) => (
-                    <Link
-                      key={item.id}
-                      href={`/${locale}/destinations/${item.id}`}
-                      className="group"
-                    >
-                      <article className="bg-white border border-[#001E13]/10 rounded-3xl overflow-hidden hover:shadow-lg hover:border-[#F6391A]/30 transition-all duration-300 h-full flex flex-col">
-                        {item.cover && (
-                          <div className="relative aspect-[4/3] overflow-hidden">
-                            <Image
-                              src={item.cover.url}
-                              alt={item.city}
-                              fill
-                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                              className="object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                          </div>
-                        )}
-                        <div className="p-6 flex-1 flex flex-col">
-                          <div className="flex gap-2 mb-3 flex-wrap">
-                            {item.country && (
-                              <span className="bg-[#EEF899] text-[#001E13] px-3 py-1 rounded-full text-xs font-karla font-bold">
-                                {item.flag ? `${item.flag} ` : ""}
-                                {item.country}
-                              </span>
-                            )}
-                          </div>
-                          <h3 className="text-2xl font-londrina-solid text-[#001E13] mb-2">
-                            {item.city}
-                          </h3>
-                          {item.tagline && (
-                            <p className="text-[#001E13]/70 font-karla text-sm leading-relaxed mb-4 flex-1">
-                              {item.tagline}
-                            </p>
-                          )}
-                          <span className="text-[#F6391A] font-karla font-bold text-sm group-hover:underline mt-auto">
-                            {t("cardCta")}
-                          </span>
-                        </div>
-                      </article>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </section>
-          </FadeIn>
-        )}
+        {/* Everything the index links to, in one browsable grid: the curated
+            itineraries and the API city guides share the same filters */}
+        <FadeIn>
+          <section className="pb-12 lg:pb-16 px-4 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <DestinationExplorer
+                items={explorerItems}
+                tagOptions={tagOptions}
+                locale={locale}
+                labels={{
+                  searchPlaceholder: t("explorer.searchPlaceholder"),
+                  allCountries: t("explorer.allCountries"),
+                  countryEmpty: t("explorer.countryEmpty"),
+                  results: t.raw("explorer.results") as Record<string, string>,
+                  noResults: t("explorer.noResults"),
+                  noResultsBody: t("explorer.noResultsBody"),
+                  reset: t("explorer.reset"),
+                }}
+              />
+            </div>
+          </section>
+        </FadeIn>
 
         {/* CTA */}
         <section className="py-16 lg:py-24 px-4 lg:px-8">

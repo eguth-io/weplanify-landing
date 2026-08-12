@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "目的地 —— 按城市与场景划分的团体旅行模板",
-    "description": "真实可订的团体旅行行程：拉斯维加斯和纳什维尔单身派对、布达佩斯、马拉喀什、托斯卡纳和安达卢西亚公路旅行、里斯本周末。逐日计划、真实地点、预算一应俱全。"
+    "title": "目的地 — 去哪儿，附预算与最佳季节",
+    "description": "浏览我们的目的地指南：玩什么、一天花多少、什么时候去。按国家或风格筛选，然后把任意一个变成大家一起规划的团队旅行。"
   },
   "eyebrow": "目的地",
-  "title": "旅行模板，\n拿来即用。",
-  "intro": "为真实团体旅行准备的真实行程。下面每个目的地都是一份完整模板 —— 逐日计划、精选地点、诚实预算、打包清单。把其中任意一份套用到你自己的 WePlanify 旅行中，再按你这帮人的需求调整。",
+  "title": "我们去哪儿？",
+  "intro": "{count} 个目的地，全是实用信息：最佳季节、怎么出行、一天到底要花多少。筛选、打开指南，把它变成你们一起规划的旅行。",
   "filters": {
     "all": "所有旅行",
     "bachelorette": "单身派对",
@@ -23,5 +23,18 @@
   },
   "days": "天",
   "apiSectionHeading": "探索城市",
-  "destinationsCount": "{count, plural, one {个目的地} other {个目的地}}"
+  "destinationsCount": "{count, plural, one {个目的地} other {个目的地}}",
+  "explorer": {
+    "searchPlaceholder": "搜索城市或国家",
+    "allCountries": "所有国家",
+    "results": {
+      "other": "个结果"
+    },
+    "noResults": "这里什么都没有",
+    "noResultsBody": "换个关键词试试，或者去掉一两个筛选条件。",
+    "reset": "清除筛选",
+    "countryEmpty": "未找到国家",
+    "budgetCaption": "每人",
+    "cardCtaGuide": "查看指南 →"
+  }
 }

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Destinos — Modelos de Viagem em Grupo por Cidade e Caso de Uso",
-    "description": "Itinerários reais e reserváveis para viagens em grupo: despedidas de solteira em Las Vegas e Nashville, Budapeste, Marraquexe, road trips pela Toscana e Andaluzia, fim de semana em Lisboa. Planos dia a dia, locais reais, orçamentos."
+    "title": "Destinos — Para onde ir, com orçamento e melhor época",
+    "description": "Explora os nossos guias de destinos: o que fazer, quanto custa um dia, quando ir. Filtra por país ou ambiente e transforma qualquer um numa viagem de grupo."
   },
   "eyebrow": "Destinos",
-  "title": "Modelos de viagem,\nprontos a copiar.",
-  "intro": "Itinerários reais para viagens em grupo reais. Cada destino abaixo é um modelo completo — plano dia a dia, locais verificados, orçamento honesto, lista de bagagem. Copie qualquer um deles para a sua própria viagem na WePlanify e adapte-o ao seu grupo.",
+  "title": "Para onde vamos?",
+  "intro": "{count} destinos, com o concreto: melhor época, como te deslocares, quanto custa mesmo um dia. Filtra, abre um guia e transforma-o numa viagem que planeiam juntos.",
   "filters": {
     "all": "Todas as viagens",
     "bachelorette": "Despedida de solteira",
@@ -23,5 +23,19 @@
   },
   "days": "dias",
   "apiSectionHeading": "Cidades para explorar",
-  "destinationsCount": "{count, plural, one {destino} other {destinos}}"
+  "destinationsCount": "{count, plural, one {destino} other {destinos}}",
+  "explorer": {
+    "searchPlaceholder": "Procura uma cidade ou um país",
+    "allCountries": "Todos os países",
+    "results": {
+      "one": "resultado",
+      "other": "resultados"
+    },
+    "noResults": "Nada por aqui",
+    "noResultsBody": "Tenta outra pesquisa, ou tira um filtro ou dois.",
+    "reset": "Limpar filtros",
+    "countryEmpty": "Nenhum país encontrado",
+    "budgetCaption": "por pessoa",
+    "cardCtaGuide": "Ver o guia →"
+  }
 }
