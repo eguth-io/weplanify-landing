@@ -2,7 +2,11 @@ import { getTranslations } from "next-intl/server";
 
 import AffiliateLink from "@/components/destinations/AffiliateLink";
 import { buildNordvpnUrl } from "@/lib/affiliates/nordvpn";
-import { buildSailyUrl, hasSailyCountryPage } from "@/lib/affiliates/saily";
+import {
+  buildSailyUrl,
+  hasSailyCountryPage,
+  SAILY_COUPON,
+} from "@/lib/affiliates/saily";
 
 type Props = {
   city: string;
@@ -57,6 +61,7 @@ export default async function BeforeYouGoBlock({
         : t("esim.cta"),
       href: esimHref,
       partner: "saily",
+      promo: t("esim.promo", { code: SAILY_COUPON }),
     },
     {
       key: "vpn",
@@ -66,6 +71,7 @@ export default async function BeforeYouGoBlock({
       cta: t("vpn.cta"),
       href: vpnHref,
       partner: "nordvpn",
+      promo: null,
     },
   ];
 
@@ -99,6 +105,11 @@ export default async function BeforeYouGoBlock({
               <p className="font-karla text-[#001E13]/70 text-sm leading-relaxed">
                 {row.body}
               </p>
+              {row.promo && (
+                <p className="mt-2 inline-flex items-center bg-[#EEF899] text-[#001E13] px-2.5 py-1 rounded-full text-xs font-karla font-bold">
+                  {row.promo}
+                </p>
+              )}
             </div>
             <AffiliateLink
               href={row.href}

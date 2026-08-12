@@ -57,7 +57,8 @@
     "body": "Niente bolletta di roaming, niente code a un chiosco. Installa il tuo piano dati prima di partire e {city} ha campo appena disattivi la modalità aereo.",
     "cta": "Vedi i piani eSIM",
     "ctaCountry": "Vedi le eSIM per {country}",
-    "disclosure": "Link di affiliazione — senza costi aggiuntivi per te."
+    "disclosure": "Link di affiliazione — senza costi aggiuntivi per te.",
+    "promo": "10% di sconto con il codice {code}"
   },
   "vpn": {
     "badge": "Resta protetto",
